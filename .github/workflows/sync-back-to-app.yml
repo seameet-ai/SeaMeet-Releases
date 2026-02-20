@@ -107,8 +107,8 @@ jobs:
           PREOF
 
           # Substitute the runtime values into the temp file
-          sed -i "s|SHA_PLACEHOLDER|${{ github.sha }}|g" /tmp/pr-body.md
-          sed -i "s|CHANGED_PLACEHOLDER|${{ steps.changed.outputs.files }}|g" /tmp/pr-body.md
+          sed -i "s|SHA_PLACEHOLDER|\${{ github.sha }}|g" /tmp/pr-body.md
+          sed -i "s|CHANGED_PLACEHOLDER|\${{ steps.changed.outputs.files }}|g" /tmp/pr-body.md
 
           # Create PR using GitHub CLI
           gh pr create \
