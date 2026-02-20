@@ -8,12 +8,13 @@
 
 | | | | |
 |---|---|---|---|
-| 🇬🇧 [English](#english) | 🇸🇦 [العربية](#العربية-arabic) | 🇩🇰 [Dansk](#dansk-danish) | 🇩🇪 [Deutsch](#deutsch-german) |
-| 🇪🇸 [Español](#español-spanish) | 🇮🇷 [فارسی](#فارسی-persian) | 🇵🇭 [Filipino](#filipino) | 🇫🇷 [Français](#français-french) |
-| 🇮🇳 [हिन्दी](#हिन्दी-hindi) | 🇮🇩 [Bahasa Indonesia](#bahasa-indonesia-indonesian) | 🇮🇹 [Italiano](#italiano-italian) | 🇯🇵 [日本語](#日本語-japanese) |
-| 🇰🇷 [한국어](#한국어-korean) | 🇲🇾 [Bahasa Melayu](#bahasa-melayu-malay) | 🇵🇱 [Polski](#polski-polish) | 🇧🇷 [Português](#português-portuguese) |
-| 🇷🇴 [Română](#română-romanian) | 🇷🇺 [Русский](#русский-russian) | 🇮🇳 [தமிழ்](#தமிழ்-tamil) | 🇹🇭 [ภาษาไทย](#ภาษาไทย-thai) |
-| 🇻🇳 [Tiếng Việt](#tiếng-việt-vietnamese) | 🇨🇳 [简体中文](#简体中文-chinese-simplified) | 🇹🇼 [繁體中文](#繁體中文-chinese-traditional) | |
+| 🇬🇧   [English](#-english) | 🇸🇦   [العربية](#-العربية-arabic) | 🇩🇰   [Dansk](#-dansk-danish) | 🇩🇪   [Deutsch](#-deutsch-german) |
+| 🇪🇸   [Español](#-español-spanish) | 🇮🇷   [فارسی](#-فارسی-persian) | 🇵🇭   [Filipino](#-filipino) | 🇫🇷   [Français](#-français-french) |
+| 🇮🇳   [हिन्दी](#-हिन्दी-hindi) | 🇮🇩   [Bahasa Indonesia](#-bahasa-indonesia-indonesian) | 🇮🇹   [Italiano](#-italiano-italian) | 🇯🇵   [日本語](#-日本語-japanese) |
+| 🇰🇷   [한국어](#-한국어-korean) | 🇲🇾   [Bahasa Melayu](#-bahasa-melayu-malay) | 🇵🇱   [Polski](#-polski-polish) | 🇧🇷   [Português](#-português-portuguese) |
+| 🇷🇴   [Română](#-română-romanian) | 🇷🇺   [Русский](#-русский-russian) | 🇮🇳   [தமிழ்](#-தமிழ்-tamil) | 🇹🇭   [ภาษาไทย](#-ภาษาไทย-thai) |
+| 🇻🇳   [Tiếng Việt](#-tiếng-việt-vietnamese) | 🇨🇳   [简体中文](#-简体中文-chinese-simplified) | 🇹🇼   [繁體
+中文](#-繁體中文-chinese-traditional) | |
 
 ---
 
