@@ -86,29 +86,25 @@ jobs:
           git commit -m "i18n: sync community translations from SeaMeet-Releases@${SHORT_SHA}"
           git push origin "${BRANCH}"
 
-          # Write PR body to a temp file — avoids all YAML multi-line quoting issues.
-          # GitHub expressions are expanded by Actions before the shell runs.
-          cat > /tmp/pr-body.md << 'PREOF'
-          ## Community Translation Sync
-
-          This PR was automatically created by the SeaMeet-Releases sync-back workflow.
-
-          **Source:** [SeaMeet-Releases@SHA_PLACEHOLDER](https://github.com/seameet-ai/SeaMeet-Releases/commit/SHA_PLACEHOLDER)
-
-          **Changed files:**
-          CHANGED_PLACEHOLDER
-
-          ### Review checklist
-          - [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files
-          - [ ] Run `npm run i18n:validate` locally to confirm no integrity failures
-          - [ ] Merge when satisfied
-
-          The CI `i18n-check` workflow will run automatically on this PR.
-          PREOF
-
-          # Substitute the runtime values into the temp file
-          sed -i "s|SHA_PLACEHOLDER|\${{ github.sha }}|g" /tmp/pr-body.md
-          sed -i "s|CHANGED_PLACEHOLDER|\${{ steps.changed.outputs.files }}|g" /tmp/pr-body.md
+          # Build PR body with printf — no heredoc, no YAML indentation issues.
+          # Actions expands ${{ }} expressions before the shell runs, so the
+          # SHA and changed-files values land directly in the single-quoted strings.
+          printf '%s\n' \
+            '## Community Translation Sync' \
+            '' \
+            'This PR was automatically created by the SeaMeet-Releases sync-back workflow.' \
+            '' \
+            '**Source:** [SeaMeet-Releases@${{ github.sha }}](https://github.com/seameet-ai/SeaMeet-Releases/commit/${{ github.sha }})' \
+            '' \
+            '**Changed files:** ${{ steps.changed.outputs.files }}' \
+            '' \
+            '### Review checklist' \
+            '- [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files' \
+            '- [ ] Run `npm run i18n:validate` locally to confirm no integrity failures' \
+            '- [ ] Merge when satisfied' \
+            '' \
+            'The CI `i18n-check` workflow will run automatically on this PR.' \
+            > /tmp/pr-body.md
 
           # Create PR using GitHub CLI
           gh pr create \
