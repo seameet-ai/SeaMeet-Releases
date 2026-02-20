@@ -86,23 +86,29 @@ jobs:
           git commit -m "i18n: sync community translations from SeaMeet-Releases@${SHORT_SHA}"
           git push origin "${BRANCH}"
 
-          # Build PR body as a variable — ${{ }} expressions are expanded by Actions
-          # before the shell runs, so they work correctly here.
-          PR_BODY="## Community Translation Sync
+          # Write PR body to a temp file — avoids all YAML multi-line quoting issues.
+          # ${{ }} expressions are expanded by Actions before the shell runs.
+          cat > /tmp/pr-body.md << 'PREOF'
+## Community Translation Sync
 
 This PR was automatically created by the SeaMeet-Releases sync-back workflow.
 
-**Source:** [SeaMeet-Releases@${{ github.sha }}](https://github.com/seameet-ai/SeaMeet-Releases/commit/${{ github.sha }})
+**Source:** [SeaMeet-Releases@SHA_PLACEHOLDER](https://github.com/seameet-ai/SeaMeet-Releases/commit/SHA_PLACEHOLDER)
 
 **Changed files:**
-${{ steps.changed.outputs.files }}
+CHANGED_PLACEHOLDER
 
 ### Review checklist
 - [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files
-- [ ] Run \`npm run i18n:validate\` locally to confirm no integrity failures
+- [ ] Run `npm run i18n:validate` locally to confirm no integrity failures
 - [ ] Merge when satisfied
 
-The CI \`i18n-check\` workflow will run automatically on this PR."
+The CI `i18n-check` workflow will run automatically on this PR.
+PREOF
+
+          # Substitute the runtime values into the temp file
+          sed -i "s|SHA_PLACEHOLDER|${{ github.sha }}|g" /tmp/pr-body.md
+          sed -i "s|CHANGED_PLACEHOLDER|${{ steps.changed.outputs.files }}|g" /tmp/pr-body.md
 
           # Create PR using GitHub CLI
           gh pr create \
@@ -110,6 +116,6 @@ The CI \`i18n-check\` workflow will run automatically on this PR."
             --base main \
             --head "${BRANCH}" \
             --title "i18n: sync community translations from SeaMeet-Releases@${SHORT_SHA}" \
-            --body "${PR_BODY}"
+            --body-file /tmp/pr-body.md
         env:
           GH_TOKEN: ${{ secrets.SEAMEET_APP_TOKEN }}
