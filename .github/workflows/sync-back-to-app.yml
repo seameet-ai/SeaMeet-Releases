@@ -30,8 +30,21 @@ jobs:
           token: ${{ secrets.SEAMEET_APP_TOKEN }}
           path: seameet-app-desktop
 
+      - name: Check for skip token
+        id: guard
+        run: |
+          MSG=$(git log -1 --pretty=%s)
+          echo "Last commit: $MSG"
+          if echo "$MSG" | grep -q '\[skip sync\]'; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Commit from publish-i18n — skipping sync-back to avoid loop."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Detect changed i18n files
         id: changed
+        if: steps.guard.outputs.skip == 'false'
         run: |
           BEFORE="${{ github.event.before }}"
           AFTER="${{ github.event.after }}"
@@ -44,6 +57,7 @@ jobs:
           echo "Changed files: $CHANGED"
 
       - name: Copy changed files to seameet-app-desktop
+        if: steps.guard.outputs.skip == 'false'
         run: |
           for f in i18n/*.json; do
             fname=$(basename "$f")
@@ -59,6 +73,7 @@ jobs:
           fi
 
       - name: Create PR in seameet-app-desktop
+        if: steps.guard.outputs.skip == 'false'
         env:
           GH_TOKEN: ${{ secrets.SEAMEET_APP_TOKEN }}
           RELEASES_SHA: ${{ github.sha }}
