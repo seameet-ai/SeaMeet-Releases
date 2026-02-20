@@ -89,22 +89,22 @@ jobs:
           # Write PR body to a temp file — avoids all YAML multi-line quoting issues.
           # ${{ }} expressions are expanded by Actions before the shell runs.
           cat > /tmp/pr-body.md << 'PREOF'
-## Community Translation Sync
+          ## Community Translation Sync
 
-This PR was automatically created by the SeaMeet-Releases sync-back workflow.
+          This PR was automatically created by the SeaMeet-Releases sync-back workflow.
 
-**Source:** [SeaMeet-Releases@SHA_PLACEHOLDER](https://github.com/seameet-ai/SeaMeet-Releases/commit/SHA_PLACEHOLDER)
+          **Source:** [SeaMeet-Releases@SHA_PLACEHOLDER](https://github.com/seameet-ai/SeaMeet-Releases/commit/SHA_PLACEHOLDER)
 
-**Changed files:**
-CHANGED_PLACEHOLDER
+          **Changed files:**
+          CHANGED_PLACEHOLDER
 
-### Review checklist
-- [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files
-- [ ] Run `npm run i18n:validate` locally to confirm no integrity failures
-- [ ] Merge when satisfied
+          ### Review checklist
+          - [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files
+          - [ ] Run `npm run i18n:validate` locally to confirm no integrity failures
+          - [ ] Merge when satisfied
 
-The CI `i18n-check` workflow will run automatically on this PR.
-PREOF
+          The CI `i18n-check` workflow will run automatically on this PR.
+          PREOF
 
           # Substitute the runtime values into the temp file
           sed -i "s|SHA_PLACEHOLDER|${{ github.sha }}|g" /tmp/pr-body.md
