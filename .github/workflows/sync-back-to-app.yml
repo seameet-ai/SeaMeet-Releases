@@ -33,49 +33,46 @@ jobs:
       - name: Detect changed i18n files
         id: changed
         run: |
-          # Use the full push range so multi-commit pushes are handled correctly.
-          # github.event.before is the SHA before the push; github.event.after is the tip.
           BEFORE="${{ github.event.before }}"
           AFTER="${{ github.event.after }}"
-          # Fall back to HEAD~1..HEAD if before is the null SHA (e.g. first push to branch)
           if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
             CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'i18n/*.json' 'i18n/terminology/*.json' | tr '\n' ' ')
           else
             CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" -- 'i18n/*.json' 'i18n/terminology/*.json' | tr '\n' ' ')
           fi
-          echo "files=${CHANGED}" >> "$GITHUB_OUTPUT"
-          echo "Changed files: ${CHANGED}"
+          echo "files=$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "Changed files: $CHANGED"
 
       - name: Copy changed files to seameet-app-desktop
         run: |
-          # Copy locale JSON files (i18n/*.json → src/i18n/)
           for f in i18n/*.json; do
             fname=$(basename "$f")
             if [ "$fname" != "README.md" ]; then
-              cp "$f" "seameet-app-desktop/src/i18n/${fname}"
+              cp "$f" "seameet-app-desktop/src/i18n/$fname"
             fi
           done
-
-          # Copy terminology files (i18n/terminology/*.json → .jta/)
           if [ -d i18n/terminology ]; then
             for f in i18n/terminology/terminology*.json; do
               fname=$(basename "$f")
-              cp "$f" "seameet-app-desktop/.jta/${fname}"
+              cp "$f" "seameet-app-desktop/.jta/$fname"
             done
           fi
 
       - name: Create PR in seameet-app-desktop
+        env:
+          GH_TOKEN: ${{ secrets.SEAMEET_APP_TOKEN }}
+          RELEASES_SHA: ${{ github.sha }}
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
         run: |
           cd seameet-app-desktop
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          RELEASES_SHA="${{ github.sha }}"
-          SHORT_SHA="${RELEASES_SHA:0:7}"
-          BRANCH="i18n-sync/${SHORT_SHA}"
+          SHORT_SHA=$(echo "$RELEASES_SHA" | cut -c1-7)
+          BRANCH="i18n-sync/$SHORT_SHA"
 
-          git checkout -b "${BRANCH}"
+          git checkout -b "$BRANCH"
           git add src/i18n/ .jta/
 
           if git diff --staged --quiet; then
@@ -83,20 +80,17 @@ jobs:
             exit 0
           fi
 
-          git commit -m "i18n: sync community translations from SeaMeet-Releases@${SHORT_SHA}"
-          git push origin "${BRANCH}"
+          git commit -m "i18n: sync community translations from SeaMeet-Releases@$SHORT_SHA"
+          git push origin "$BRANCH"
 
-          # Build PR body with printf — no heredoc, no YAML indentation issues.
-          # Actions expands ${{ }} expressions before the shell runs, so the
-          # SHA and changed-files values land directly in the single-quoted strings.
           printf '%s\n' \
             '## Community Translation Sync' \
             '' \
             'This PR was automatically created by the SeaMeet-Releases sync-back workflow.' \
             '' \
-            '**Source:** [SeaMeet-Releases@${{ github.sha }}](https://github.com/seameet-ai/SeaMeet-Releases/commit/${{ github.sha }})' \
+            "**Source:** [SeaMeet-Releases@$RELEASES_SHA](https://github.com/seameet-ai/SeaMeet-Releases/commit/$RELEASES_SHA)" \
             '' \
-            '**Changed files:** ${{ steps.changed.outputs.files }}' \
+            "**Changed files:** $CHANGED_FILES" \
             '' \
             '### Review checklist' \
             '- [ ] Check that placeholder variables (double-brace tokens) are intact in changed locale files' \
@@ -106,12 +100,9 @@ jobs:
             'The CI `i18n-check` workflow will run automatically on this PR.' \
             > /tmp/pr-body.md
 
-          # Create PR using GitHub CLI
           gh pr create \
             --repo seasalt-ai/seameet-app-desktop \
             --base main \
-            --head "${BRANCH}" \
-            --title "i18n: sync community translations from SeaMeet-Releases@${SHORT_SHA}" \
+            --head "$BRANCH" \
+            --title "i18n: sync community translations from SeaMeet-Releases@$SHORT_SHA" \
             --body-file /tmp/pr-body.md
-        env:
-          GH_TOKEN: ${{ secrets.SEAMEET_APP_TOKEN }}
