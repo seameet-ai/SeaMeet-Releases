@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Pangunahing menu",
-    "ClearSearch": "Linisin ang search"
+    "ClearSearch": "Linisin ang search",
+    "AgentPanel": "Ahente ng AI"
   },
   "SidebarTabs": {
     "Audios": "Audio",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Isara ang navigation menu",
     "OpenNavigationMenu": "Buksan ang navigation menu",
+    "MainNavigation": "Pangunahing nabigasyon",
+    "Record": "Itala",
+    "Recording": "Pagre-record",
+    "Files": "Mga file",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Nagpoproseso...",
     "Starting": "Nagsisimula na...",
     "FileNameCopiedWithRenameHint": "{{fileName}} nakopya sa clipboard. I-double click upang baguhin ang pangalan ng file.",
-    "ApplyName": "Ilapat ang pangalan"
+    "ApplyName": "Ilapat ang pangalan",
+    "Send": "Ipadala"
   },
   "RecordingControls": {
     "StartRecording": "Simulan ang pagre-rekord",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Nabigo ang pag-save ng flashback buffer.",
     "SavedFlashback": "Na-save ang flashback sa mga pagre-record.",
     "StillCharging": "Ang flashback buffer ay patuloy na nagcha-charge."
+  },
+  "AISummary": {
+    "TabTitle": "Buod ng AI",
+    "SetupRequired": "I-configure ang iyong Gemini API key sa Mga Setting → Mga Tampok ng AI upang paganahin ang mga buod ng AI.",
+    "EnableRequired": "Paganahin ang Mga Feature ng AI sa Mga Setting → Mga Tampok ng AI upang makita ang mga buod ng AI.",
+    "ExportMarkdown": "Kopyahin bilang Markdown",
+    "ExportSrt": "Kopyahin bilang SRT",
+    "ExportJson": "Kopyahin bilang JSON",
+    "Regenerate": "Buuin muli ang buod",
+    "Minimize": "I-minimize",
+    "Maximize": "Palawakin sa buong view",
+    "Queued": "Nakapila para sa pagproseso...",
+    "Processing": "Bumubuo ng buod...",
+    "Error": "Nabigong i-load ang buod: {{error}}",
+    "PipelineError": "Nabigo ang pagproseso ng AI. Subukang mag-regenerate.",
+    "Retry": "Subukan muli",
+    "NoSummary": "Wala pang buod ng AI.",
+    "Generate": "Bumuo ng Buod",
+    "Copy": "Kopyahin",
+    "NoSummaryText": "Hindi available ang buod.",
+    "Topics": "Mga Paksa:",
+    "NoTranscript": "Hindi available ang transcript.",
+    "NoActions": "Walang natukoy na item ng pagkilos.",
+    "NoDecisions": "Walang natukoy na mahahalagang desisyon.",
+    "Export": {
+      "HeadingSummary": "Buod",
+      "HeadingActionItems": "Mga Aksyon na Item",
+      "HeadingKeyDecisions": "Mga Pangunahing Desisyon",
+      "HeadingTranscription": "Transkripsyon"
+    },
+    "Tab": {
+      "Summary": "Buod",
+      "Transcription": "Transcript",
+      "ActionItems": "Mga aksyon",
+      "KeyDecisions": "Mga desisyon",
+      "Agent": "Ahente"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Mga Tampok ng AI",
+    "MenuItem": "AI-Powered Summaries",
+    "PageTitle": "Mga Tampok ng AI",
+    "EnableToggle": "Paganahin ang mga buod na pinapagana ng AI",
+    "EnableToggleDesc": "Nangangailangan ng libreng Gemini API key",
+    "ApiKeySection": "Gemini API Key",
+    "ApiKeyLabel": "Gemini API Key",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (na-save)",
+    "ShowKey": "Ipakita ang susi",
+    "HideKey": "Itago ang susi",
+    "TestKey": "I-save at I-verify",
+    "Saving": "Nagse-save...",
+    "GetKeyLink": "Kumuha ng libreng API key mula sa Google AI Studio →",
+    "ClearKey": "Alisin ang naka-save na key",
+    "KeyVerified": "Na-verify ang susi",
+    "KeyInvalid": "Di-wastong key",
+    "KeyTesting": "Pagsubok...",
+    "KeyNotConfigured": "Walang key na na-configure",
+    "ModelSection": "Modelo ng AI",
+    "ModelLabel": "Modelo ng Gemini",
+    "SelectedModel": "Napili: {{model}}",
+    "AutomationSection": "Automation",
+    "AutoSummary": "Awtomatikong bumuo ng buod",
+    "AutoSummaryDesc": "Tumatakbo pagkatapos ng bawat pag-record",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Inirerekomenda · Mabilis + may kakayahang",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Ang pinakamurang stable na opsyon",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Sobrang mura",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Pinakamataas na kakayahan",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Pinakamahusay na matatag na pangangatwiran"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API Key (Agent)",
+      "SourceLabel": "Aktibong pinagmulan:",
+      "SourceByok": "Ang iyong API key (BYOK)",
+      "SourceKeyServer": "Pinamamahalaan ng SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Hindi naka-configure",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (naka-save)",
+      "ShowKey": "Ipakita ang susi",
+      "HideKey": "Itago ang susi",
+      "TestKey": "I-save at I-verify",
+      "Saving": "Nagse-save...",
+      "ClearKey": "Alisin ang naka-save na key",
+      "KeyVerified": "Na-verify ang susi",
+      "KeyInvalid": "Di-wastong key",
+      "KeyTesting": "Pagsubok...",
+      "KeyNotConfigured": "Walang key na na-configure",
+      "GetKeyLink": "Kumuha ng API key mula sa Anthropic Console →",
+      "QuotaSection": "Pangunahing Quota ng Server",
+      "QuotaRemaining": "{{remaining}} / {{limit}} na token ang natitira",
+      "QuotaResetDate": "Nagre-reset sa {{date}}",
+      "QuotaLoading": "Nilo-load ang quota...",
+      "QuotaRefresh": "I-refresh ang quota",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Naka-install ({{version}})",
+      "CliNotInstalled": "Claude CLI ay hindi natagpuan",
+      "CliInstallLink": "I-install ang Claude Code →",
+      "ModelSection": "Default na Modelo ng Claude",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Mabilis at mura",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Inirerekomenda · Balanse",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Pinaka may kakayahan"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Ahente ng AI at Katrabaho",
+    "PageTitle": "Ahente ng AI at Katrabaho",
+    "SectionTitle": "Ahente ng AI at Katrabaho",
+    "EnableToggle": "I-enable ang AI Agent at Cowork",
+    "EnableToggleDesc": "Nangangailangan ng Claude API Key",
+    "DisabledBadge": "Hindi pinagana",
+    "DisabledMsg": "Naka-disable ang AI Agent & Cowork. Paganahin ito sa Mga Setting → AI Agent at Cowork.",
+    "DisabledTabHint": "Ang AI Agent ay hindi pinagana — paganahin ito sa Mga Setting → AI Agent at Cowork",
+    "NotConfiguredMsg": "Walang Claude API key na na-configure. Mag-set up ng isa sa Mga Setting → AI Agent at Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Nakapila ang buod...",
+    "Running": "Bumubuo ng buod...",
+    "Progress": "Pinoproseso ang tipak {{current}} ng {{total}}",
+    "Done": "Handa na ang buod",
+    "Error": "Nabigo ang pagproseso"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Proseso gamit ang AI",
+    "Queuing": "Nakapila...",
+    "ProcessingWithTime": "Pinoproseso... {{sec}}s",
+    "Describe": "Ilarawan ang larawan",
+    "DescribeSub": "Ano ang nasa screenshot na ito?",
+    "Ocr": "I-extract ang text (OCR)",
+    "OcrSub": "Basahin ang lahat ng nakikitang teksto",
+    "Custom": "Custom na prompt",
+    "CustomPlaceholder": "Magtanong ng anuman tungkol sa larawang ito...",
+    "ResultLabel": "Resulta ng AI",
+    "Description": "Paglalarawan",
+    "ExtractedText": "Na-extract na Teksto",
+    "Analysis": "Pagsusuri",
+    "PipelineError": "Nabigo ang pagproseso ng AI. Pakisubukang muli.",
+    "UnknownError": "Hindi kilalang error"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Binabasa ang file...",
+      "Executing": "Isinasagawa...",
+      "Running": "Tumatakbo...",
+      "Input": "Input",
+      "Output": "Output",
+      "Pattern": "Pattern:",
+      "ShowDetails": "Ipakita ang mga detalye",
+      "AndMoreLines": "... at {{count}} pang linya"
+    },
+    "Streaming": {
+      "Thinking": "Iniisip...",
+      "LongRunning": "Tumatakbo nang mas mahaba kaysa karaniwan",
+      "ToolStuck": "Maaaring natigil ang tool",
+      "ForceStop": "Pilit na huminto",
+      "GeneratingResponse": "Bumubuo ng tugon...",
+      "RunningTool": "Tumatakbo {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Kahilingan ng Pahintulot sa Tool",
+      "Allow": "Payagan Minsan",
+      "AllowSession": "Payagan para sa Session",
+      "Deny": "Tanggihan",
+      "Allowed": "Pinayagan",
+      "Denied": "Tinanggihan"
+    },
+    "Title": "Ahente ng AI",
+    "GlobalTitle": "Ahente ng AI",
+    "NewSession": "Bagong session",
+    "Sessions": "Mga session",
+    "NoSessions": "Wala pang session. Magsimula ng pag-uusap sa ibaba.",
+    "SendPlaceholder": "Magtanong ng kahit ano... (Enter para ipadala, Shift+Enter para sa bagong linya)",
+    "SendButton": "Ipadala",
+    "StopButton": "Tumigil ka",
+    "NotConfigured": "Mag-configure ng Claude API key sa Mga Setting → Mga Feature ng AI para magamit ang Ahente.",
+    "GoToSettings": "Buksan ang Mga Setting",
+    "SessionCost": "Session: {inputTokens}_ in /{outputTokens}_ out token",
+    "CommandHelp": "Mga utos: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Magtanong",
+      "Code": "Code",
+      "Plan": "Plano"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Soneto",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Ibuod ang recording na ito",
+      "ActionItems": "Maghanap ng mga item ng aksyon",
+      "DraftEmail": "Draft follow-up na email"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Ano ang maitutulong mo sa akin?",
+      "HelpAnalyze": "Tulungan akong suriin ang aking mga kamakailang pag-record"
+    },
+    "AssetContext": "Konteksto: {{name}}"
   }
 }

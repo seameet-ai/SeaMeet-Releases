@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "主要导航",
-    "ClearSearch": "清除搜索"
+    "ClearSearch": "清除搜索",
+    "AgentPanel": "人工智能代理"
   },
   "SidebarTabs": {
     "Audios": "音频",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "关闭导航菜单",
     "OpenNavigationMenu": "打开导航菜单",
+    "MainNavigation": "主导航",
+    "Record": "记录",
+    "Recording": "记录",
+    "Files": "文件",
+    "Agent": "Agent",
     "Terminal": "终端"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "处理中…",
     "Starting": "正在启动……",
     "FileNameCopiedWithRenameHint": "{{fileName}} 已复制到剪贴板。双击以更改文件名。",
-    "ApplyName": "应用名称"
+    "ApplyName": "应用名称",
+    "Send": "发送"
   },
   "RecordingControls": {
     "StartRecording": "开始录音",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "保存回放缓冲区失败。",
     "SavedFlashback": "已将回放保存到录音中。",
     "StillCharging": "回放缓冲区仍在准备。"
+  },
+  "AISummary": {
+    "TabTitle": "人工智能总结",
+    "SetupRequired": "在“设置”→“AI 功能”中配置您的 Gemini API 密钥以启用 AI 摘要。",
+    "EnableRequired": "在“设置”→“AI 功能”中启用 AI 功能即可查看 AI 摘要。",
+    "ExportMarkdown": "复制为 Markdown",
+    "ExportSrt": "复制为 SRT",
+    "ExportJson": "复制为 JSON",
+    "Regenerate": "重新生成摘要",
+    "Minimize": "最小化",
+    "Maximize": "展开至全视图",
+    "Queued": "排队等待处理...",
+    "Processing": "正在生成摘要...",
+    "Error": "无法加载摘要：{{error}}",
+    "PipelineError": "AI处理失败。尝试再生。",
+    "Retry": "重试",
+    "NoSummary": "还没有AI总结。",
+    "Generate": "生成摘要",
+    "Copy": "复制",
+    "NoSummaryText": "摘要不可用。",
+    "Topics": "主题：",
+    "NoTranscript": "成绩单不可用。",
+    "NoActions": "没有确定行动项目。",
+    "NoDecisions": "没有确定关键决策。",
+    "Export": {
+      "HeadingSummary": "概括",
+      "HeadingActionItems": "行动项目",
+      "HeadingKeyDecisions": "关键决策",
+      "HeadingTranscription": "转录"
+    },
+    "Tab": {
+      "Summary": "概括",
+      "Transcription": "成绩单",
+      "ActionItems": "行动",
+      "KeyDecisions": "决定",
+      "Agent": "代理人"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "人工智能特点",
+    "MenuItem": "人工智能驱动的摘要",
+    "PageTitle": "人工智能特点",
+    "EnableToggle": "启用人工智能驱动的摘要",
+    "EnableToggleDesc": "需要免费的 Gemini API 密钥",
+    "ApiKeySection": "双子座 API 密钥",
+    "ApiKeyLabel": "双子座 API 密钥",
+    "KeyPlaceholder": "艾扎西...",
+    "KeyPlaceholderSaved": "••••••••（已保存）",
+    "ShowKey": "显示密钥",
+    "HideKey": "隐藏键",
+    "TestKey": "保存并验证",
+    "Saving": "保存...",
+    "GetKeyLink": "从 Google AI Studio 获取免费的 API 密钥 →",
+    "ClearKey": "删除已保存的密钥",
+    "KeyVerified": "密钥已验证",
+    "KeyInvalid": "密钥无效",
+    "KeyTesting": "测试...",
+    "KeyNotConfigured": "没有配置密钥",
+    "ModelSection": "人工智能模型",
+    "ModelLabel": "双子座模型",
+    "SelectedModel": "已选择：{{model}}",
+    "AutomationSection": "自动化",
+    "AutoSummary": "自动生成摘要",
+    "AutoSummaryDesc": "每次录制完成后运行",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "推荐·快速+有能力",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "最便宜的稳定选择",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "超便宜",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "最大能力",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "最佳稳定推理"
+    },
+    "ClaudeKey": {
+      "Section": "克劳德 API 密钥（代理）",
+      "SourceLabel": "活跃来源：",
+      "SourceByok": "您的 API 密钥 (BYOK)",
+      "SourceKeyServer": "由 SeaMeet 管理",
+      "SourceCli": "克劳德·代码 CLI",
+      "SourceNone": "未配置",
+      "KeyPlaceholder": "sk-蚂蚁-...",
+      "KeyPlaceholderSaved": "••••••••（已保存）",
+      "ShowKey": "显示密钥",
+      "HideKey": "隐藏键",
+      "TestKey": "保存并验证",
+      "Saving": "保存...",
+      "ClearKey": "删除已保存的密钥",
+      "KeyVerified": "密钥已验证",
+      "KeyInvalid": "密钥无效",
+      "KeyTesting": "测试...",
+      "KeyNotConfigured": "没有配置密钥",
+      "GetKeyLink": "从 Anthropic 控制台获取 API 密钥 →",
+      "QuotaSection": "密钥服务器配额",
+      "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
+      "QuotaResetDate": "在 {{date}} 上重置",
+      "QuotaLoading": "加载配额...",
+      "QuotaRefresh": "刷新配额",
+      "CliSection": "克劳德·代码 CLI",
+      "CliInstalled": "已安装 ({{version}})",
+      "CliNotInstalled": "克劳德 CLI 未找到",
+      "CliInstallLink": "安装克劳德代码 →",
+      "ModelSection": "默认克劳德模型",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "又快又便宜",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "推荐·平衡",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "最有能力"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "人工智能代理与协作",
+    "PageTitle": "人工智能代理与协作",
+    "SectionTitle": "人工智能代理与协作",
+    "EnableToggle": "启用人工智能代理和协同工作",
+    "EnableToggleDesc": "需要克劳德 API 密钥",
+    "DisabledBadge": "残疾人",
+    "DisabledMsg": "AI Agent & Cowork 已禁用。在设置 → AI Agent & Cowork 中启用它。",
+    "DisabledTabHint": "AI Agent 已禁用 - 在设置 → AI Agent & Cowork 中启用它",
+    "NotConfiguredMsg": "未配置 Claude API 密钥。在“设置”→“AI Agent 和 Cowork”中进行设置。"
+  },
+  "PipelineStatus": {
+    "Queued": "摘要已排队...",
+    "Running": "正在生成摘要...",
+    "Progress": "处理 {{total}} 的块 {{current}}",
+    "Done": "总结已准备好",
+    "Error": "处理失败"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "人工智能处理",
+    "Queuing": "排队...",
+    "ProcessingWithTime": "正在处理... {{sec}}s",
+    "Describe": "描述图像",
+    "DescribeSub": "这张截图里有什么？",
+    "Ocr": "提取文本（OCR）",
+    "OcrSub": "读取所有可见文本",
+    "Custom": "自定义提示",
+    "CustomPlaceholder": "询问有关此图像的任何问题...",
+    "ResultLabel": "人工智能结果",
+    "Description": "描述",
+    "ExtractedText": "提取的文本",
+    "Analysis": "分析",
+    "PipelineError": "AI处理失败。请再试一次。",
+    "UnknownError": "未知错误"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "正在读取文件...",
+      "Executing": "正在执行...",
+      "Running": "跑步...",
+      "Input": "输入",
+      "Output": "输出",
+      "Pattern": "图案：",
+      "ShowDetails": "显示详情",
+      "AndMoreLines": "...以及 {{count}} 更多行"
+    },
+    "Streaming": {
+      "Thinking": "思维...",
+      "LongRunning": "跑的时间比平常长",
+      "ToolStuck": "工具可能被卡住",
+      "ForceStop": "强制停止",
+      "GeneratingResponse": "正在生成响应...",
+      "RunningTool": "运行 {{tool}}..."
+    },
+    "Permission": {
+      "Title": "工具权限请求",
+      "Allow": "允许一次",
+      "AllowSession": "允许会话",
+      "Deny": "否定",
+      "Allowed": "允许",
+      "Denied": "被拒绝"
+    },
+    "Title": "人工智能代理",
+    "GlobalTitle": "人工智能代理",
+    "NewSession": "新会话",
+    "Sessions": "会议",
+    "NoSessions": "还没有会议。下面开始对话。",
+    "SendPlaceholder": "询问任何内容...（Enter 发送，Shift+Enter 换行）",
+    "SendButton": "发送",
+    "StopButton": "停止",
+    "NotConfigured": "在“设置”→“AI 功能”中配置 Claude API 密钥以使用代理。",
+    "GoToSettings": "打开设置",
+    "SessionCost": "会话：{inputTokens}_ in /{outputTokens}_ out 令牌",
+    "CommandHelp": "命令：/new·/clear·/cost·/help",
+    "Mode": {
+      "Ask": "问",
+      "Code": "代码",
+      "Plan": "计划"
+    },
+    "Model": {
+      "Haiku": "俳句",
+      "Sonnet": "十四行诗",
+      "Opus": "作品"
+    },
+    "QuickAction": {
+      "Summarize": "总结一下本次录音",
+      "ActionItems": "查找行动项目",
+      "DraftEmail": "后续电子邮件草稿"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "你能帮我什么？",
+      "HelpAnalyze": "帮我分析一下我最近的录音"
+    },
+    "AssetContext": "上下文：{{name}}"
   }
 }

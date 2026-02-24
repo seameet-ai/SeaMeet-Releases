@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "主要ナビゲーション",
-    "ClearSearch": "検索結果をクリア"
+    "ClearSearch": "検索結果をクリア",
+    "AgentPanel": "AIエージェント"
   },
   "SidebarTabs": {
     "Audios": "オーディオ",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "ナビゲーション Menuを閉じる",
     "OpenNavigationMenu": "ナビゲーション Menuを開く",
+    "MainNavigation": "メインナビゲーション",
+    "Record": "記録",
+    "Recording": "録音",
+    "Files": "ファイル",
+    "Agent": "Agent",
     "Terminal": "ターミナル"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "処理中...",
     "Starting": "起動中...",
     "FileNameCopiedWithRenameHint": "{{fileName}} をクリップボードにコピーしました。必要に応じてダブルクリックでファイル名を変更してください。",
-    "ApplyName": "名前を設定"
+    "ApplyName": "名前を設定",
+    "Send": "送信"
   },
   "RecordingControls": {
     "StartRecording": "録音を開始",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "フラッシュバックバッファの保存に失敗しました",
     "SavedFlashback": "フラッシュバックを録音に保存しました",
     "StillCharging": "フラッシュバックバッファはまだ充電中です"
+  },
+  "AISummary": {
+    "TabTitle": "AIの概要",
+    "SetupRequired": "[設定] → [AI 機能] で Gemini API キーを設定し、AI サマリーを有効にします。",
+    "EnableRequired": "AI の概要を表示するには、[設定] → [AI 機能] で AI 機能を有効にします。",
+    "ExportMarkdown": "マークダウンとしてコピー",
+    "ExportSrt": "SRT としてコピー",
+    "ExportJson": "JSONとしてコピー",
+    "Regenerate": "概要を再生成する",
+    "Minimize": "最小化する",
+    "Maximize": "拡大して全体表示する",
+    "Queued": "処理のためにキューに入れられています...",
+    "Processing": "概要を生成中...",
+    "Error": "概要のロードに失敗しました: {{error}}",
+    "PipelineError": "AI処理に失敗しました。再生してみてください。",
+    "Retry": "リトライ",
+    "NoSummary": "AI の概要はまだありません。",
+    "Generate": "概要の生成",
+    "Copy": "コピー",
+    "NoSummaryText": "概要は利用できません。",
+    "Topics": "トピック:",
+    "NoTranscript": "トランスクリプトは利用できません。",
+    "NoActions": "アクションアイテムは特定されていません。",
+    "NoDecisions": "重要な決定は特定されていない。",
+    "Export": {
+      "HeadingSummary": "まとめ",
+      "HeadingActionItems": "アクションアイテム",
+      "HeadingKeyDecisions": "重要な決定事項",
+      "HeadingTranscription": "転写"
+    },
+    "Tab": {
+      "Summary": "まとめ",
+      "Transcription": "成績証明書",
+      "ActionItems": "アクション",
+      "KeyDecisions": "決定",
+      "Agent": "エージェント"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "AIの機能",
+    "MenuItem": "AI を活用した要約",
+    "PageTitle": "AIの機能",
+    "EnableToggle": "AI を活用した要約を有効にする",
+    "EnableToggleDesc": "無料の Gemini API キーが必要です",
+    "ApiKeySection": "Gemini API キー",
+    "ApiKeyLabel": "Gemini API キー",
+    "KeyPlaceholder": "アイザシ...",
+    "KeyPlaceholderSaved": "•••••••••（保存済み）",
+    "ShowKey": "キーを表示",
+    "HideKey": "キーを隠す",
+    "TestKey": "保存して確認",
+    "Saving": "保存中...",
+    "GetKeyLink": "Google AI Studio から無料の API キーを取得 →",
+    "ClearKey": "保存されたキーを削除する",
+    "KeyVerified": "キーが検証されました",
+    "KeyInvalid": "無効なキー",
+    "KeyTesting": "テスト中...",
+    "KeyNotConfigured": "キーが設定されていません",
+    "ModelSection": "AIモデル",
+    "ModelLabel": "ジェミニモデル",
+    "SelectedModel": "選択済み: {{model}}",
+    "AutomationSection": "オートメーション",
+    "AutoSummary": "概要を自動生成",
+    "AutoSummaryDesc": "すべての記録が終了した後に実行されます",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "推奨 · 高速 + 有能",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "最も安価な安定したオプション",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "超格安",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "最大能力",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "最も安定した推論"
+    },
+    "ClaudeKey": {
+      "Section": "クロード API キー (エージェント)",
+      "SourceLabel": "アクティブなソース:",
+      "SourceByok": "API キー (BYOK)",
+      "SourceKeyServer": "SeaMeet が管理",
+      "SourceCli": "クロードコード CLI",
+      "SourceNone": "未設定",
+      "KeyPlaceholder": "スク-アリ-...",
+      "KeyPlaceholderSaved": "•••••••••（保存済み）",
+      "ShowKey": "キーを表示",
+      "HideKey": "キーを隠す",
+      "TestKey": "保存して確認する",
+      "Saving": "保存中...",
+      "ClearKey": "保存されたキーを削除する",
+      "KeyVerified": "キーが検証されました",
+      "KeyInvalid": "無効なキー",
+      "KeyTesting": "テスト中...",
+      "KeyNotConfigured": "キーが設定されていません",
+      "GetKeyLink": "Anthropic Console から API キーを取得 →",
+      "QuotaSection": "キーサーバーの割り当て",
+      "QuotaRemaining": "{{remaining}} / {{limit}} トークンが残っています",
+      "QuotaResetDate": "{{date}} でリセット",
+      "QuotaLoading": "クォータを読み込み中...",
+      "QuotaRefresh": "クォータの更新",
+      "CliSection": "クロードコード CLI",
+      "CliInstalled": "インストール済み ({{version}})",
+      "CliNotInstalled": "クロード CLI が見つかりません",
+      "CliInstallLink": "クロードコードをインストール →",
+      "ModelSection": "デフォルトのクロードモデル",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "早くて安い",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "推奨・バランス型",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "最も有能な"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AIエージェント&コワーク",
+    "PageTitle": "AIエージェント&コワーク",
+    "SectionTitle": "AIエージェント&コワーク",
+    "EnableToggle": "AI エージェントとコワークを有効にする",
+    "EnableToggleDesc": "Claude API キーが必要です",
+    "DisabledBadge": "無効",
+    "DisabledMsg": "AI エージェントとコワークは無効になっています。 [設定] → [AI Agent & Cowork] で有効にします。",
+    "DisabledTabHint": "AI エージェントが無効になっています - [設定] → [AI エージェントとコワーク] で有効にします",
+    "NotConfiguredMsg": "クロード API キーが設定されていません。 「設定」→「AI Agent & Cowork」で設定します。"
+  },
+  "PipelineStatus": {
+    "Queued": "サマリーがキューにあります...",
+    "Running": "概要を生成中...",
+    "Progress": "{{total}} のチャンク {{current}} を処理しています",
+    "Done": "概要の準備ができました",
+    "Error": "処理に失敗しました"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "AIによる処理",
+    "Queuing": "キューイング中...",
+    "ProcessingWithTime": "処理中... {{sec}}s",
+    "Describe": "画像の説明",
+    "DescribeSub": "このスクリーンショットには何が映っているのでしょうか?",
+    "Ocr": "テキストの抽出 (OCR)",
+    "OcrSub": "表示されているすべてのテキストを読む",
+    "Custom": "カスタムプロンプト",
+    "CustomPlaceholder": "この画像について何でも質問してください...",
+    "ResultLabel": "AIの結果",
+    "Description": "説明",
+    "ExtractedText": "抽出されたテキスト",
+    "Analysis": "分析",
+    "PipelineError": "AI処理に失敗しました。もう一度試してください。",
+    "UnknownError": "不明なエラー"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "ファイルを読み取り中...",
+      "Executing": "実行中...",
+      "Running": "走っています...",
+      "Input": "入力",
+      "Output": "出力",
+      "Pattern": "パターン：",
+      "ShowDetails": "詳細を表示",
+      "AndMoreLines": "...あと {{count}} 行"
+    },
+    "Streaming": {
+      "Thinking": "考え...",
+      "LongRunning": "いつもより長く走る",
+      "ToolStuck": "ツールが固着している可能性があります",
+      "ForceStop": "強制停止",
+      "GeneratingResponse": "応答を生成中...",
+      "RunningTool": "{{tool}} を実行中..."
+    },
+    "Permission": {
+      "Title": "ツール許可リクエスト",
+      "Allow": "1 回だけ許可",
+      "AllowSession": "セッションを許可する",
+      "Deny": "拒否",
+      "Allowed": "許可された",
+      "Denied": "拒否されました"
+    },
+    "Title": "AIエージェント",
+    "GlobalTitle": "AIエージェント",
+    "NewSession": "新しいセッション",
+    "Sessions": "セッション",
+    "NoSessions": "まだセッションはありません。以下で会話を始めてください。",
+    "SendPlaceholder": "何でも聞いてください... (Enter で送信、Shift+Enter で改行)",
+    "SendButton": "送信",
+    "StopButton": "停止",
+    "NotConfigured": "エージェントを使用するには、[設定] → [AI 機能] で Claude API キーを設定します。",
+    "GoToSettings": "設定を開く",
+    "SessionCost": "セッション: {inputTokens}_ 入力 /{outputTokens}_ 出力トークン",
+    "CommandHelp": "コマンド: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "聞く",
+      "Code": "コード",
+      "Plan": "プラン"
+    },
+    "Model": {
+      "Haiku": "俳句",
+      "Sonnet": "ソネット",
+      "Opus": "オーパス"
+    },
+    "QuickAction": {
+      "Summarize": "この記録を要約する",
+      "ActionItems": "アクションアイテムを見つける",
+      "DraftEmail": "フォローアップメールの下書き"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "何を手伝ってもらえますか？",
+      "HelpAnalyze": "最近の録音の分析を手伝ってください"
+    },
+    "AssetContext": "コンテキスト: {{name}}"
   }
 }

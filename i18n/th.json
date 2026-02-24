@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "การนำทางหลัก",
-    "ClearSearch": "ล้างการค้นหา"
+    "ClearSearch": "ล้างการค้นหา",
+    "AgentPanel": "ตัวแทนเอไอ"
   },
   "SidebarTabs": {
     "Audios": "ไฟล์เสียง",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "ปิดเมนูนำทาง",
     "OpenNavigationMenu": "เปิดเมนูนำทาง",
+    "MainNavigation": "การนำทางหลัก",
+    "Record": "บันทึก",
+    "Recording": "การบันทึก",
+    "Files": "ไฟล์",
+    "Agent": "Agent",
     "Terminal": "เทอร์มินัล"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "กำลังดำเนินการ…",
     "Starting": "กำลังเริ่ม…",
     "FileNameCopiedWithRenameHint": "{{fileName}} คัดลอกไปยังคลิปบอร์ดแล้ว กรุณาดับเบิลคลิกเพื่อเปลี่ยนชื่อไฟล์",
-    "ApplyName": "ตั้งชื่อ"
+    "ApplyName": "ตั้งชื่อ",
+    "Send": "ส่ง"
   },
   "RecordingControls": {
     "StartRecording": "เริ่มการบันทึกเสียง",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "บันทึกภาพย้อนความทรงจำล้มเหลว",
     "SavedFlashback": "บันทึกภาพย้อนความทรงจำใน Recordings แล้ว",
     "StillCharging": "บัฟเฟอร์ภาพย้อนความทรงจำยังคงกำลังชาร์จอยู่"
+  },
+  "AISummary": {
+    "TabTitle": "สรุป AI",
+    "SetupRequired": "กำหนดค่าคีย์ Gemini API ของคุณในการตั้งค่า → คุณสมบัติ AI เพื่อเปิดใช้งานการสรุป AI",
+    "EnableRequired": "เปิดใช้งานคุณสมบัติ AI ในการตั้งค่า → คุณสมบัติ AI เพื่อดูสรุป AI",
+    "ExportMarkdown": "คัดลอกเป็น Markdown",
+    "ExportSrt": "คัดลอกเป็น SRT",
+    "ExportJson": "คัดลอกเป็น JSON",
+    "Regenerate": "สร้างข้อมูลสรุปอีกครั้ง",
+    "Minimize": "ย่อเล็กสุด",
+    "Maximize": "ขยายให้ดูแบบเต็มๆ",
+    "Queued": "เข้าคิวเพื่อประมวลผล...",
+    "Processing": "กำลังสร้างสรุป...",
+    "Error": "ไม่สามารถโหลดสรุป: {{error}}",
+    "PipelineError": "การประมวลผล AI ล้มเหลว ลองสร้างใหม่",
+    "Retry": "ลองอีกครั้ง",
+    "NoSummary": "ยังไม่มีสรุป AI",
+    "Generate": "สร้างบทสรุป",
+    "Copy": "สำเนา",
+    "NoSummaryText": "สรุปไม่พร้อมใช้งาน",
+    "Topics": "หัวข้อ:",
+    "NoTranscript": "ไม่สามารถใช้การถอดเสียงได้",
+    "NoActions": "ไม่มีการระบุรายการการดำเนินการ",
+    "NoDecisions": "ไม่มีการระบุการตัดสินใจที่สำคัญ",
+    "Export": {
+      "HeadingSummary": "สรุป",
+      "HeadingActionItems": "รายการการกระทำ",
+      "HeadingKeyDecisions": "การตัดสินใจที่สำคัญ",
+      "HeadingTranscription": "การถอดเสียง"
+    },
+    "Tab": {
+      "Summary": "สรุป",
+      "Transcription": "การถอดเสียง",
+      "ActionItems": "การดำเนินการ",
+      "KeyDecisions": "การตัดสินใจ",
+      "Agent": "ตัวแทน"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "คุณสมบัติเอไอ",
+    "MenuItem": "บทสรุปที่ขับเคลื่อนโดย AI",
+    "PageTitle": "คุณสมบัติเอไอ",
+    "EnableToggle": "เปิดใช้งานการสรุปที่ขับเคลื่อนโดย AI",
+    "EnableToggleDesc": "ต้องใช้คีย์ Gemini API ฟรี",
+    "ApiKeySection": "คีย์ API ของราศีเมถุน",
+    "ApiKeyLabel": "คีย์ API ของราศีเมถุน",
+    "KeyPlaceholder": "ไอซ่าซี่...",
+    "KeyPlaceholderSaved": "••••••••• (บันทึกแล้ว)",
+    "ShowKey": "แสดงกุญแจ",
+    "HideKey": "ซ่อนกุญแจ",
+    "TestKey": "บันทึกและยืนยัน",
+    "Saving": "ประหยัด...",
+    "GetKeyLink": "รับคีย์ API ฟรีจาก Google AI Studio →",
+    "ClearKey": "ลบคีย์ที่บันทึกไว้",
+    "KeyVerified": "คีย์ได้รับการตรวจสอบแล้ว",
+    "KeyInvalid": "รหัสไม่ถูกต้อง",
+    "KeyTesting": "กำลังทดสอบ...",
+    "KeyNotConfigured": "ไม่มีการกำหนดค่าคีย์",
+    "ModelSection": "โมเดลเอไอ",
+    "ModelLabel": "โมเดลราศีเมถุน",
+    "SelectedModel": "เลือกแล้ว: {{model}}",
+    "AutomationSection": "ระบบอัตโนมัติ",
+    "AutoSummary": "สรุปสร้างอัตโนมัติ",
+    "AutoSummaryDesc": "ทำงานหลังจากการบันทึกทุกครั้งเสร็จสิ้น",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "แนะนำ · รวดเร็ว + มีความสามารถ",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "ตัวเลือกที่มีเสถียรภาพที่ถูกที่สุด",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "ราคาถูกสุดๆ",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "ความสามารถสูงสุด",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "การใช้เหตุผลที่มั่นคงดีที่สุด"
+    },
+    "ClaudeKey": {
+      "Section": "คีย์ Claude API (ตัวแทน)",
+      "SourceLabel": "แหล่งที่มาที่ใช้งานอยู่:",
+      "SourceByok": "รหัส API ของคุณ (BYOK)",
+      "SourceKeyServer": "บริหารงานโดยซีมีท",
+      "SourceCli": "คล็อดรหัส CLI",
+      "SourceNone": "ไม่ได้กำหนดค่า",
+      "KeyPlaceholder": "SK-มด-...",
+      "KeyPlaceholderSaved": "••••••••• (บันทึกแล้ว)",
+      "ShowKey": "แสดงกุญแจ",
+      "HideKey": "ซ่อนกุญแจ",
+      "TestKey": "บันทึกและยืนยัน",
+      "Saving": "ประหยัด...",
+      "ClearKey": "ลบคีย์ที่บันทึกไว้",
+      "KeyVerified": "คีย์ได้รับการตรวจสอบแล้ว",
+      "KeyInvalid": "รหัสไม่ถูกต้อง",
+      "KeyTesting": "กำลังทดสอบ...",
+      "KeyNotConfigured": "ไม่มีการกำหนดค่าคีย์",
+      "GetKeyLink": "รับคีย์ API จาก Anthropic Console →",
+      "QuotaSection": "โควต้าเซิร์ฟเวอร์คีย์",
+      "QuotaRemaining": "{{remaining}} / {{limit}} โทเค็นที่เหลืออยู่",
+      "QuotaResetDate": "รีเซ็ตเมื่อ {{date}}",
+      "QuotaLoading": "กำลังโหลดโควต้า...",
+      "QuotaRefresh": "รีเฟรชโควต้า",
+      "CliSection": "คล็อดรหัส CLI",
+      "CliInstalled": "ติดตั้งแล้ว ({{version}})",
+      "CliNotInstalled": "ไม่พบโคลด CLI",
+      "CliInstallLink": "ติดตั้งรหัสคลอดด์ →",
+      "ModelSection": "โมเดล Claude เริ่มต้น",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "รวดเร็วและราคาถูก",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "แนะนำ · สมดุล",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "มีความสามารถมากที่สุด"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "ตัวแทน AI และโคเวิร์ก",
+    "PageTitle": "ตัวแทน AI และโคเวิร์ก",
+    "SectionTitle": "ตัวแทน AI และโคเวิร์ก",
+    "EnableToggle": "เปิดใช้งาน AI Agent และ Cowork",
+    "EnableToggleDesc": "ต้องใช้คีย์ Claude API",
+    "DisabledBadge": "พิการ",
+    "DisabledMsg": "AI Agent & Cowork ถูกปิดใช้งาน เปิดใช้งานได้ในการตั้งค่า → AI Agent & Cowork",
+    "DisabledTabHint": "AI Agent ถูกปิดใช้งาน — เปิดใช้งานได้ในการตั้งค่า → AI Agent และ Cowork",
+    "NotConfiguredMsg": "ไม่มีการกำหนดค่าคีย์ Claude API ตั้งค่าในการตั้งค่า → AI Agent & Cowork"
+  },
+  "PipelineStatus": {
+    "Queued": "สรุปอยู่ในคิว...",
+    "Running": "กำลังสร้างสรุป...",
+    "Progress": "กำลังประมวลผลก้อน {{current}} จาก {{total}}",
+    "Done": "สรุปพร้อม.",
+    "Error": "การประมวลผลล้มเหลว"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "ประมวลผลด้วยเอไอ",
+    "Queuing": "กำลังเข้าคิว...",
+    "ProcessingWithTime": "กำลังประมวลผล... {{sec}}s",
+    "Describe": "อธิบายภาพ",
+    "DescribeSub": "อะไรอยู่ในภาพหน้าจอนี้?",
+    "Ocr": "แยกข้อความ (OCR)",
+    "OcrSub": "อ่านข้อความที่มองเห็นทั้งหมด",
+    "Custom": "พรอมต์ที่กำหนดเอง",
+    "CustomPlaceholder": "ถามอะไรเกี่ยวกับภาพนี้...",
+    "ResultLabel": "ผลลัพธ์เอไอ",
+    "Description": "คำอธิบาย",
+    "ExtractedText": "ข้อความที่แยกออกมา",
+    "Analysis": "การวิเคราะห์",
+    "PipelineError": "การประมวลผล AI ล้มเหลว โปรดลองอีกครั้ง",
+    "UnknownError": "ข้อผิดพลาดที่ไม่รู้จัก"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "กำลังอ่านไฟล์...",
+      "Executing": "กำลังดำเนินการ...",
+      "Running": "วิ่ง...",
+      "Input": "ป้อนข้อมูล",
+      "Output": "เอาท์พุต",
+      "Pattern": "ลวดลาย:",
+      "ShowDetails": "แสดงรายละเอียด",
+      "AndMoreLines": "... และ {{count}} บรรทัดเพิ่มเติม"
+    },
+    "Streaming": {
+      "Thinking": "กำลังคิด...",
+      "LongRunning": "วิ่งได้นานกว่าปกติ",
+      "ToolStuck": "เครื่องมืออาจติดขัด",
+      "ForceStop": "บังคับให้หยุด",
+      "GeneratingResponse": "กำลังสร้างการตอบกลับ...",
+      "RunningTool": "กำลังดำเนินการ {{tool}}..."
+    },
+    "Permission": {
+      "Title": "คำขออนุญาตเครื่องมือ",
+      "Allow": "อนุญาตครั้งเดียว",
+      "AllowSession": "อนุญาตให้มีเซสชัน",
+      "Deny": "ปฏิเสธ",
+      "Allowed": "อนุญาต",
+      "Denied": "ถูกปฏิเสธ"
+    },
+    "Title": "ตัวแทนเอไอ",
+    "GlobalTitle": "ตัวแทนเอไอ",
+    "NewSession": "เซสชันใหม่",
+    "Sessions": "เซสชัน",
+    "NoSessions": "ยังไม่มีเซสชัน เริ่มการสนทนาด้านล่าง",
+    "SendPlaceholder": "ถามอะไรก็ได้... (Enter เพื่อส่ง, Shift+Enter เพื่อขึ้นบรรทัดใหม่)",
+    "SendButton": "ส่ง",
+    "StopButton": "หยุด",
+    "NotConfigured": "กำหนดค่าคีย์ Claude API ในการตั้งค่า → คุณสมบัติ AI เพื่อใช้ตัวแทน",
+    "GoToSettings": "เปิดการตั้งค่า",
+    "SessionCost": "เซสชัน: {inputTokens}_ ใน /{outputTokens}_ โทเค็นออก",
+    "CommandHelp": "คำสั่ง: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "ถาม",
+      "Code": "รหัส",
+      "Plan": "วางแผน"
+    },
+    "Model": {
+      "Haiku": "ไฮกุ",
+      "Sonnet": "โคลง",
+      "Opus": "บทประพันธ์"
+    },
+    "QuickAction": {
+      "Summarize": "สรุปบันทึกนี้",
+      "ActionItems": "ค้นหารายการการกระทำ",
+      "DraftEmail": "อีเมลติดตามผลฉบับร่าง"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "คุณช่วยฉันเรื่องอะไรได้บ้าง?",
+      "HelpAnalyze": "ช่วยฉันวิเคราะห์การบันทึกล่าสุดของฉัน"
+    },
+    "AssetContext": "บริบท: {{name}}"
   }
 }

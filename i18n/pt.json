@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "navegação principal",
-    "ClearSearch": "Limpar pesquisa"
+    "ClearSearch": "Limpar pesquisa",
+    "AgentPanel": "Agente de IA"
   },
   "SidebarTabs": {
     "Audios": "Áudios",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Fechar menu de navegação",
     "OpenNavigationMenu": "Abrir menu de navegação",
+    "MainNavigation": "Navegação principal",
+    "Record": "Registro",
+    "Recording": "Gravação",
+    "Files": "Arquivos",
+    "Agent": "Agent",
     "Terminal": "terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Processando…",
     "Starting": "Iniciando...",
     "FileNameCopiedWithRenameHint": "{{fileName}} copiado para a área de transferência. Clique duas vezes para alterar o nome do arquivo.",
-    "ApplyName": "Aplicar nome"
+    "ApplyName": "Aplicar nome",
+    "Send": "Enviar"
   },
   "RecordingControls": {
     "StartRecording": "Iniciar gravação",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Falha ao salvar o buffer de retrô.",
     "SavedFlashback": "Salvo retrô em gravações.",
     "StillCharging": "O buffer de retrô ainda está carregando."
+  },
+  "AISummary": {
+    "TabTitle": "Resumo de IA",
+    "SetupRequired": "Configure sua chave API Gemini em Configurações → Recursos de IA para ativar resumos de IA.",
+    "EnableRequired": "Ative os recursos de IA em Configurações → Recursos de IA para ver resumos de IA.",
+    "ExportMarkdown": "Copiar como Markdown",
+    "ExportSrt": "Copiar como SRT",
+    "ExportJson": "Copiar como JSON",
+    "Regenerate": "Regenerar resumo",
+    "Minimize": "Minimizar",
+    "Maximize": "Expandir para visualização completa",
+    "Queued": "Na fila para processamento...",
+    "Processing": "Gerando resumo...",
+    "Error": "Falha ao carregar o resumo: {{error}}",
+    "PipelineError": "O processamento de IA falhou. Tente regenerar.",
+    "Retry": "Tentar novamente",
+    "NoSummary": "Nenhum resumo de IA ainda.",
+    "Generate": "Gerar Resumo",
+    "Copy": "Cópia",
+    "NoSummaryText": "Resumo não disponível.",
+    "Topics": "Tópicos:",
+    "NoTranscript": "Transcrição não disponível.",
+    "NoActions": "Nenhum item de ação identificado.",
+    "NoDecisions": "Nenhuma decisão importante identificada.",
+    "Export": {
+      "HeadingSummary": "Resumo",
+      "HeadingActionItems": "Itens de ação",
+      "HeadingKeyDecisions": "Principais decisões",
+      "HeadingTranscription": "Transcrição"
+    },
+    "Tab": {
+      "Summary": "Resumo",
+      "Transcription": "Transcrição",
+      "ActionItems": "Ações",
+      "KeyDecisions": "Decisões",
+      "Agent": "Agente"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Recursos de IA",
+    "MenuItem": "Resumos baseados em IA",
+    "PageTitle": "Recursos de IA",
+    "EnableToggle": "Habilite resumos baseados em IA",
+    "EnableToggleDesc": "Requer uma chave API Gemini gratuita",
+    "ApiKeySection": "Chave de API Gemini",
+    "ApiKeyLabel": "Chave de API Gemini",
+    "KeyPlaceholder": "AizaSy...",
+    "KeyPlaceholderSaved": "••••••••• (salvo)",
+    "ShowKey": "Mostrar chave",
+    "HideKey": "Ocultar chave",
+    "TestKey": "Salvar e verificar",
+    "Saving": "Salvando...",
+    "GetKeyLink": "Obtenha uma chave de API gratuita do Google AI Studio →",
+    "ClearKey": "Remover chave salva",
+    "KeyVerified": "Chave verificada",
+    "KeyInvalid": "Chave inválida",
+    "KeyTesting": "Testando...",
+    "KeyNotConfigured": "Nenhuma chave configurada",
+    "ModelSection": "Modelo de IA",
+    "ModelLabel": "Modelo Gêmeos",
+    "SelectedModel": "Selecionado: {{model}}",
+    "AutomationSection": "Automação",
+    "AutoSummary": "Gerar resumo automaticamente",
+    "AutoSummaryDesc": "É executado após o término de cada gravação",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Recomendado · Rápido + capaz",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Opção estável mais barata",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra barato",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Capacidade máxima",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Melhor raciocínio estável"
+    },
+    "ClaudeKey": {
+      "Section": "Chave API Claude (Agente)",
+      "SourceLabel": "Fonte ativa:",
+      "SourceByok": "Sua chave de API (BYOK)",
+      "SourceKeyServer": "Gerenciado por SeaMeet",
+      "SourceCli": "Claude Código CLI",
+      "SourceNone": "Não configurado",
+      "KeyPlaceholder": "sk-formiga-...",
+      "KeyPlaceholderSaved": "••••••••• (salvo)",
+      "ShowKey": "Mostrar chave",
+      "HideKey": "Ocultar chave",
+      "TestKey": "Salvar e verificar",
+      "Saving": "Salvando...",
+      "ClearKey": "Remover chave salva",
+      "KeyVerified": "Chave verificada",
+      "KeyInvalid": "Chave inválida",
+      "KeyTesting": "Testando...",
+      "KeyNotConfigured": "Nenhuma chave configurada",
+      "GetKeyLink": "Obtenha uma chave de API do Anthropic Console →",
+      "QuotaSection": "Cota de servidor chave",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens restantes",
+      "QuotaResetDate": "Reinicia em {{date}}",
+      "QuotaLoading": "Carregando cota...",
+      "QuotaRefresh": "Atualizar cota",
+      "CliSection": "Claude Código CLI",
+      "CliInstalled": "Instalado ({{version}})",
+      "CliNotInstalled": "Claude CLI não encontrado",
+      "CliInstallLink": "Instale o Código Claude →",
+      "ModelSection": "Modelo Claude padrão",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Rápido e barato",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recomendado · Equilibrado",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Mais capaz"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Agente de IA e Cowork",
+    "PageTitle": "Agente de IA e Cowork",
+    "SectionTitle": "Agente de IA e Cowork",
+    "EnableToggle": "Habilitar Agente de IA e Cowork",
+    "EnableToggleDesc": "Requer uma chave de API Claude",
+    "DisabledBadge": "Desabilitado",
+    "DisabledMsg": "Agente AI e Cowork estão desativados. Ative-o em Configurações → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent está desativado – habilite-o em Configurações → AI Agent & Cowork",
+    "NotConfiguredMsg": "Nenhuma chave de API Claude configurada. Configure um em Configurações → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Resumo na fila...",
+    "Running": "Gerando resumo...",
+    "Progress": "Processando parte {{current}} de {{total}}",
+    "Done": "Resumo pronto",
+    "Error": "Falha no processamento"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Processo com IA",
+    "Queuing": "Na fila...",
+    "ProcessingWithTime": "Processando... {{sec}}s",
+    "Describe": "Descrever imagem",
+    "DescribeSub": "O que há nesta captura de tela?",
+    "Ocr": "Extrair texto (OCR)",
+    "OcrSub": "Leia todo o texto visível",
+    "Custom": "Solicitação personalizada",
+    "CustomPlaceholder": "Pergunte qualquer coisa sobre esta imagem...",
+    "ResultLabel": "Resultado de IA",
+    "Description": "Descrição",
+    "ExtractedText": "Texto extraído",
+    "Analysis": "Análise",
+    "PipelineError": "O processamento de IA falhou. Por favor, tente novamente.",
+    "UnknownError": "Erro desconhecido"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Lendo arquivo...",
+      "Executing": "Executando...",
+      "Running": "Correndo...",
+      "Input": "Entrada",
+      "Output": "Saída",
+      "Pattern": "Padrão:",
+      "ShowDetails": "Mostrar detalhes",
+      "AndMoreLines": "... e {{count}} mais linhas"
+    },
+    "Streaming": {
+      "Thinking": "Pensamento...",
+      "LongRunning": "Correndo mais que o normal",
+      "ToolStuck": "A ferramenta pode estar presa",
+      "ForceStop": "Forçar parada",
+      "GeneratingResponse": "Gerando resposta...",
+      "RunningTool": "Executando {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Solicitação de permissão de ferramenta",
+      "Allow": "Permitir uma vez",
+      "AllowSession": "Permitir sessão",
+      "Deny": "Negar",
+      "Allowed": "Permitido",
+      "Denied": "Negado"
+    },
+    "Title": "Agente de IA",
+    "GlobalTitle": "Agente de IA",
+    "NewSession": "Nova sessão",
+    "Sessions": "Sessões",
+    "NoSessions": "Ainda não há sessões. Inicie uma conversa abaixo.",
+    "SendPlaceholder": "Pergunte qualquer coisa... (Enter para enviar, Shift+Enter para nova linha)",
+    "SendButton": "Enviar",
+    "StopButton": "Parar",
+    "NotConfigured": "Configure uma chave API Claude em Configurações → Recursos de IA para usar o Agente.",
+    "GoToSettings": "Abra Configurações",
+    "SessionCost": "Sessão: {inputTokens}_ em /{outputTokens}_ tokens de saída",
+    "CommandHelp": "Comandos: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Perguntar",
+      "Code": "Código",
+      "Plan": "Plano"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Soneto",
+      "Opus": "obra"
+    },
+    "QuickAction": {
+      "Summarize": "Resuma esta gravação",
+      "ActionItems": "Encontre itens de ação",
+      "DraftEmail": "Rascunho de e-mail de acompanhamento"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Em que você pode me ajudar?",
+      "HelpAnalyze": "Ajude-me a analisar minhas gravações recentes"
+    },
+    "AssetContext": "Contexto: {{name}}"
   }
 }

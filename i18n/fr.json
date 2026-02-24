@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "navigation principale",
-    "ClearSearch": "Effacer la recherche"
+    "ClearSearch": "Effacer la recherche",
+    "AgentPanel": "Agent IA"
   },
   "SidebarTabs": {
     "Audios": "Audios",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Fermer le menu de navigation",
     "OpenNavigationMenu": "Ouvrir le menu de navigation",
+    "MainNavigation": "Navigation principale",
+    "Record": "Enregistrer",
+    "Recording": "Enregistrement",
+    "Files": "Fichiers",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "En traitement…",
     "Starting": "Démarrage…",
     "FileNameCopiedWithRenameHint": "{{fileName}} copié dans le presse-papiers. Double-cliquez pour changer le nom du fichier",
-    "ApplyName": "Confirmer le nom"
+    "ApplyName": "Confirmer le nom",
+    "Send": "Envoyer"
   },
   "RecordingControls": {
     "StartRecording": "démarrer l'enregistrement",
@@ -1008,7 +1015,7 @@
     "WaitingForSpeech": "En attente de voix...",
     "UnknownSpeaker": "Intervenant",
     "SegmentCount": "{{count}} segment",
-    "SegmentCount_plural": "{{count}} segments",
+    "SegmentCount_plural": "{count} segments",
     "ConnectionError": "Impossible de se connecter à SeaMeet",
     "Reconnecting": "Reconnexion...",
     "Connected": "Connecté à SeaMeet",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Impossible de sauvegarder le tampon de rétrospective.",
     "SavedFlashback": "Rétrospective sauvegardée dans enregistrements.",
     "StillCharging": "Le tampon de rétrospective est toujours en cours de chargement."
+  },
+  "AISummary": {
+    "TabTitle": "Résumé de l'IA",
+    "SetupRequired": "Configurez votre clé API Gemini dans Paramètres → Fonctionnalités IA pour activer les résumés IA.",
+    "EnableRequired": "Activez les fonctionnalités IA dans Paramètres → Fonctionnalités IA pour voir les résumés IA.",
+    "ExportMarkdown": "Copier en Markdown",
+    "ExportSrt": "Copier en tant que SRT",
+    "ExportJson": "Copier en JSON",
+    "Regenerate": "Régénérer le résumé",
+    "Minimize": "Minimiser",
+    "Maximize": "Agrandir en vue complète",
+    "Queued": "En file d'attente pour traitement...",
+    "Processing": "Génération du résumé...",
+    "Error": "Échec du chargement du résumé : {{error}}",
+    "PipelineError": "Le traitement de l'IA a échoué. Essayez de vous régénérer.",
+    "Retry": "Réessayer",
+    "NoSummary": "Pas encore de résumé de l'IA.",
+    "Generate": "Générer un résumé",
+    "Copy": "Copie",
+    "NoSummaryText": "Résumé non disponible.",
+    "Topics": "Sujets :",
+    "NoTranscript": "Transcription non disponible.",
+    "NoActions": "Aucune action identifiée.",
+    "NoDecisions": "Aucune décision clé identifiée.",
+    "Export": {
+      "HeadingSummary": "Résumé",
+      "HeadingActionItems": "Éléments d'action",
+      "HeadingKeyDecisions": "Décisions clés",
+      "HeadingTranscription": "Transcription"
+    },
+    "Tab": {
+      "Summary": "Résumé",
+      "Transcription": "Transcription",
+      "ActionItems": "Actes",
+      "KeyDecisions": "Décisions",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Fonctionnalités IA",
+    "MenuItem": "Résumés alimentés par l'IA",
+    "PageTitle": "Fonctionnalités IA",
+    "EnableToggle": "Activer les résumés basés sur l'IA",
+    "EnableToggleDesc": "Nécessite une clé API Gemini gratuite",
+    "ApiKeySection": "Clé API Gémeaux",
+    "ApiKeyLabel": "Clé API Gémeaux",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (enregistré)",
+    "ShowKey": "Afficher la clé",
+    "HideKey": "Masquer la clé",
+    "TestKey": "Enregistrer et vérifier",
+    "Saving": "Économie...",
+    "GetKeyLink": "Obtenez une clé API gratuite de Google AI Studio →",
+    "ClearKey": "Supprimer la clé enregistrée",
+    "KeyVerified": "Clé vérifiée",
+    "KeyInvalid": "Clé invalide",
+    "KeyTesting": "Essai...",
+    "KeyNotConfigured": "Aucune clé configurée",
+    "ModelSection": "Modèle d'IA",
+    "ModelLabel": "Modèle Gémeaux",
+    "SelectedModel": "Sélectionné : {{model}}",
+    "AutomationSection": "Automation",
+    "AutoSummary": "Résumé généré automatiquement",
+    "AutoSummaryDesc": "S'exécute après la fin de chaque enregistrement",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Recommandé · Rapide + performant",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Option stable la moins chère",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra bon marché",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Capacité maximale",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Meilleur raisonnement stable"
+    },
+    "ClaudeKey": {
+      "Section": "Clé API Claude (Agent)",
+      "SourceLabel": "Source active :",
+      "SourceByok": "Votre clé API (BYOK)",
+      "SourceKeyServer": "Géré par SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Non configuré",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (enregistré)",
+      "ShowKey": "Afficher la clé",
+      "HideKey": "Masquer la clé",
+      "TestKey": "Enregistrer et vérifier",
+      "Saving": "Économie...",
+      "ClearKey": "Supprimer la clé enregistrée",
+      "KeyVerified": "Clé vérifiée",
+      "KeyInvalid": "Clé invalide",
+      "KeyTesting": "Essai...",
+      "KeyNotConfigured": "Aucune clé configurée",
+      "GetKeyLink": "Obtenez une clé API depuis Anthropic Console →",
+      "QuotaSection": "Quota de serveur de clés",
+      "QuotaRemaining": "{{remaining}} / {{limit}} jetons restants",
+      "QuotaResetDate": "Réinitialisation sur {{date}}",
+      "QuotaLoading": "Chargement du quota...",
+      "QuotaRefresh": "Actualiser le quota",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Installé (__PR__PRÉSERVE_1___)",
+      "CliNotInstalled": "Claude CLI introuvable",
+      "CliInstallLink": "Installer Claude Code →",
+      "ModelSection": "Modèle Claude par défaut",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Rapide et pas cher",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recommandé · Équilibré",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Le plus capable"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Agent IA et collègue",
+    "PageTitle": "Agent IA et collègue",
+    "SectionTitle": "Agent IA et collègue",
+    "EnableToggle": "Activer l'agent IA et le travail collaboratif",
+    "EnableToggleDesc": "Nécessite une clé API Claude",
+    "DisabledBadge": "Désactivé",
+    "DisabledMsg": "AI Agent & Cowork est désactivé. Activez-le dans Paramètres → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent est désactivé - activez-le dans Paramètres → AI Agent & Cowork",
+    "NotConfiguredMsg": "Aucune clé API Claude configurée. Configurez-en un dans Paramètres → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Résumé en file d'attente...",
+    "Running": "Génération du résumé...",
+    "Progress": "Bloc de traitement {{current}} de {{total}}",
+    "Done": "Résumé prêt",
+    "Error": "Échec du traitement"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Processus avec l'IA",
+    "Queuing": "Faire la queue...",
+    "ProcessingWithTime": "Traitement en cours... {{sec}}s",
+    "Describe": "Décrire l'image",
+    "DescribeSub": "Qu'y a-t-il dans cette capture d'écran ?",
+    "Ocr": "Extraire le texte (OCR)",
+    "OcrSub": "Lire tout le texte visible",
+    "Custom": "Invite personnalisée",
+    "CustomPlaceholder": "Demandez n'importe quoi à propos de cette image...",
+    "ResultLabel": "Résultat IA",
+    "Description": "Description",
+    "ExtractedText": "Texte extrait",
+    "Analysis": "Analyse",
+    "PipelineError": "Le traitement de l'IA a échoué. Veuillez réessayer.",
+    "UnknownError": "Erreur inconnue"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Lecture du fichier...",
+      "Executing": "Exécution...",
+      "Running": "En cours d'exécution...",
+      "Input": "Saisir",
+      "Output": "Sortir",
+      "Pattern": "Modèle:",
+      "ShowDetails": "Afficher les détails",
+      "AndMoreLines": "... et {count} lignes supplémentaires"
+    },
+    "Streaming": {
+      "Thinking": "Pensée...",
+      "LongRunning": "Courir plus longtemps que d’habitude",
+      "ToolStuck": "L'outil est peut-être bloqué",
+      "ForceStop": "Forcer l'arrêt",
+      "GeneratingResponse": "Générer une réponse...",
+      "RunningTool": "Exécution de __PRESE{tool}..."
+    },
+    "Permission": {
+      "Title": "Demande d'autorisation d'outil",
+      "Allow": "Autoriser une fois",
+      "AllowSession": "Autoriser la session",
+      "Deny": "Refuser",
+      "Allowed": "Autorisé",
+      "Denied": "Refusé"
+    },
+    "Title": "Agent IA",
+    "GlobalTitle": "Agent IA",
+    "NewSession": "Nouvelle séance",
+    "Sessions": "Séances",
+    "NoSessions": "Aucune séance pour l'instant. Démarrez une conversation ci-dessous.",
+    "SendPlaceholder": "Demandez n'importe quoi... (Entrée pour envoyer, Maj+Entrée pour une nouvelle ligne)",
+    "SendButton": "Envoyer",
+    "StopButton": "Arrêt",
+    "NotConfigured": "Configurez une clé API Claude dans Paramètres → Fonctionnalités IA pour utiliser l'agent.",
+    "GoToSettings": "Ouvrir les paramètres",
+    "SessionCost": "Session : {inputTokens}_ dans /{outputTokens}_ jetons sortants",
+    "CommandHelp": "Commandes : /nouveau · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Demander",
+      "Code": "Code",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haïku",
+      "Sonnet": "Sonnet",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Résumer cet enregistrement",
+      "ActionItems": "Rechercher des éléments d'action",
+      "DraftEmail": "Projet d'e-mail de suivi"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "En quoi pouvez-vous m'aider ?",
+      "HelpAnalyze": "Aidez-moi à analyser mes enregistrements récents"
+    },
+    "AssetContext": "Contexte : __PRESE__PRÉSERVE_1___"
   }
 }

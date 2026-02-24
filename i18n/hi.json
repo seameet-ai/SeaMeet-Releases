@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "प्राथमिक नेविगेशन",
-    "ClearSearch": "खोज साफ़ करें"
+    "ClearSearch": "खोज साफ़ करें",
+    "AgentPanel": "एआई एजेंट"
   },
   "SidebarTabs": {
     "Audios": "ऑडियोज़",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "नेविगेशन मेनू बंद करें",
     "OpenNavigationMenu": "नेविगेशन मेनू खोलें",
+    "MainNavigation": "मुख्य नेविगेशन",
+    "Record": "अभिलेख",
+    "Recording": "रिकॉर्डिंग",
+    "Files": "फ़ाइलें",
+    "Agent": "Agent",
     "Terminal": "टर्मिनल"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "प्रक्रिया में है…",
     "Starting": "शुरू हो रहा है…",
     "FileNameCopiedWithRenameHint": "{{fileName}} क्लिपबोर्ड पर कॉपी किया गया है। फ़ाइल नाम बदलने के लिए डबल क्लिक करें।",
-    "ApplyName": "नाम लागू करें"
+    "ApplyName": "नाम लागू करें",
+    "Send": "भेजना"
   },
   "RecordingControls": {
     "StartRecording": "रिकॉर्डिंग शुरू करें",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "फ्लैशबैक बफ़र को सहेजने में विफल।",
     "SavedFlashback": "रिकॉर्डिंग में फ्लैशबैक सहेजा गया है।",
     "StillCharging": "फ्लैशबैक बफ़र अभी भी चार्जिंग में है।"
+  },
+  "AISummary": {
+    "TabTitle": "एआई सारांश",
+    "SetupRequired": "एआई सारांश सक्षम करने के लिए सेटिंग्स → एआई फीचर्स में अपनी जेमिनी एपीआई कुंजी कॉन्फ़िगर करें।",
+    "EnableRequired": "सेटिंग्स में AI सुविधाएँ सक्षम करें → AI सारांश देखने के लिए AI सुविधाएँ।",
+    "ExportMarkdown": "मार्कडाउन के रूप में कॉपी करें",
+    "ExportSrt": "एसआरटी के रूप में कॉपी करें",
+    "ExportJson": "JSON के रूप में कॉपी करें",
+    "Regenerate": "सारांश पुन: उत्पन्न करें",
+    "Minimize": "छोटा करना",
+    "Maximize": "पूर्ण दृश्य तक विस्तृत करें",
+    "Queued": "प्रसंस्करण के लिए कतारबद्ध...",
+    "Processing": "सारांश तैयार किया जा रहा है...",
+    "Error": "सारांश लोड करने में विफल: {{error}}",
+    "PipelineError": "एआई प्रोसेसिंग विफल रही. पुन: उत्पन्न करने का प्रयास करें.",
+    "Retry": "पुन: प्रयास करें",
+    "NoSummary": "अभी तक कोई AI सारांश नहीं.",
+    "Generate": "सारांश उत्पन्न करें",
+    "Copy": "प्रतिलिपि",
+    "NoSummaryText": "सारांश उपलब्ध नहीं है.",
+    "Topics": "विषय:",
+    "NoTranscript": "प्रतिलेख उपलब्ध नहीं है.",
+    "NoActions": "कोई कार्रवाई आइटम की पहचान नहीं की गई.",
+    "NoDecisions": "कोई प्रमुख निर्णय चिन्हित नहीं किया गया.",
+    "Export": {
+      "HeadingSummary": "सारांश",
+      "HeadingActionItems": "एक्शन आइटम्स",
+      "HeadingKeyDecisions": "मुख्य निर्णय",
+      "HeadingTranscription": "प्रतिलिपि"
+    },
+    "Tab": {
+      "Summary": "सारांश",
+      "Transcription": "प्रतिलिपि",
+      "ActionItems": "कार्रवाई",
+      "KeyDecisions": "फैसले",
+      "Agent": "प्रतिनिधि"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "एआई विशेषताएं",
+    "MenuItem": "एआई-संचालित सारांश",
+    "PageTitle": "एआई विशेषताएं",
+    "EnableToggle": "एआई-संचालित सारांश सक्षम करें",
+    "EnableToggleDesc": "एक निःशुल्क जेमिनी एपीआई कुंजी की आवश्यकता है",
+    "ApiKeySection": "जेमिनी एपीआई कुंजी",
+    "ApiKeyLabel": "जेमिनी एपीआई कुंजी",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
+    "ShowKey": "कुंजी दिखाएँ",
+    "HideKey": "कुंजी छिपाएँ",
+    "TestKey": "सहेजें और सत्यापित करें",
+    "Saving": "सहेजा जा रहा है...",
+    "GetKeyLink": "Google AI स्टूडियो से निःशुल्क API कुंजी प्राप्त करें →",
+    "ClearKey": "सहेजी गई कुंजी हटाएँ",
+    "KeyVerified": "कुंजी सत्यापित",
+    "KeyInvalid": "अमान्य कुंजी",
+    "KeyTesting": "परीक्षण...",
+    "KeyNotConfigured": "कोई कुंजी कॉन्फ़िगर नहीं की गई",
+    "ModelSection": "एआई मॉडल",
+    "ModelLabel": "मिथुन मॉडल",
+    "SelectedModel": "चयनित: {{model}}",
+    "AutomationSection": "स्वचालन",
+    "AutoSummary": "स्वतः-उत्पन्न सारांश",
+    "AutoSummaryDesc": "प्रत्येक रिकॉर्डिंग समाप्त होने के बाद चलता है",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "अनुशंसित · तेज़ + सक्षम",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "सबसे सस्ता स्थिर विकल्प",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "अल्ट्रा सस्ते",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "अधिकतम क्षमता",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "सर्वोत्तम स्थिर तर्क"
+    },
+    "ClaudeKey": {
+      "Section": "क्लाउड एपीआई कुंजी (एजेंट)",
+      "SourceLabel": "सक्रिय स्रोत:",
+      "SourceByok": "आपकी एपीआई कुंजी (BYOK)",
+      "SourceKeyServer": "SeaMeet द्वारा प्रबंधित",
+      "SourceCli": "क्लाउड कोड सीएलआई",
+      "SourceNone": "कॉन्फ़िगर नहीं किया गया",
+      "KeyPlaceholder": "एसके-चींटी-...",
+      "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
+      "ShowKey": "कुंजी दिखाएँ",
+      "HideKey": "कुंजी छिपाएँ",
+      "TestKey": "सहेजें और सत्यापित करें",
+      "Saving": "सहेजा जा रहा है...",
+      "ClearKey": "सहेजी गई कुंजी हटाएँ",
+      "KeyVerified": "कुंजी सत्यापित",
+      "KeyInvalid": "अमान्य कुंजी",
+      "KeyTesting": "परीक्षण...",
+      "KeyNotConfigured": "कोई कुंजी कॉन्फ़िगर नहीं की गई",
+      "GetKeyLink": "एंथ्रोपिक कंसोल से एपीआई कुंजी प्राप्त करें →",
+      "QuotaSection": "कुंजी सर्वर कोटा",
+      "QuotaRemaining": "{{remaining}} / {{limit}} टोकन शेष",
+      "QuotaResetDate": "{{date}} पर रीसेट होता है",
+      "QuotaLoading": "कोटा लोड हो रहा है...",
+      "QuotaRefresh": "ताज़ा कोटा",
+      "CliSection": "क्लाउड कोड सीएलआई",
+      "CliInstalled": "स्थापित ({{version}})",
+      "CliNotInstalled": "क्लाउड सीएलआई नहीं मिला",
+      "CliInstallLink": "क्लाउड कोड स्थापित करें →",
+      "ModelSection": "डिफ़ॉल्ट क्लाउड मॉडल",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "तेज़ और सस्ता",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "अनुशंसित · संतुलित",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "सबसे सक्षम"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "एआई एजेंट और सहकर्मी",
+    "PageTitle": "एआई एजेंट और सहकर्मी",
+    "SectionTitle": "एआई एजेंट और सहकर्मी",
+    "EnableToggle": "एआई एजेंट और सहकर्मी सक्षम करें",
+    "EnableToggleDesc": "क्लाउड एपीआई कुंजी की आवश्यकता है",
+    "DisabledBadge": "अक्षम",
+    "DisabledMsg": "एआई एजेंट और सहकर्मी अक्षम है। इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें।",
+    "DisabledTabHint": "एआई एजेंट अक्षम है - इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें",
+    "NotConfiguredMsg": "कोई क्लाउड एपीआई कुंजी कॉन्फ़िगर नहीं की गई। सेटिंग्स → एआई एजेंट और सहकर्मी में एक सेट अप करें।"
+  },
+  "PipelineStatus": {
+    "Queued": "सारांश पंक्तिबद्ध...",
+    "Running": "सारांश तैयार किया जा रहा है...",
+    "Progress": "{{total}} का प्रसंस्करण भाग {{current}}",
+    "Done": "सारांश तैयार",
+    "Error": "प्रसंस्करण विफल रहा"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "एआई के साथ प्रक्रिया",
+    "Queuing": "कतारबद्ध...",
+    "ProcessingWithTime": "प्रसंस्करण... {{sec}}s",
+    "Describe": "छवि का वर्णन करें",
+    "DescribeSub": "इस स्क्रीनशॉट में क्या है?",
+    "Ocr": "पाठ निकालें (ओसीआर)",
+    "OcrSub": "सभी दृश्यमान पाठ पढ़ें",
+    "Custom": "कस्टम प्रॉम्प्ट",
+    "CustomPlaceholder": "इस छवि के बारे में कुछ भी पूछें...",
+    "ResultLabel": "एआई परिणाम",
+    "Description": "विवरण",
+    "ExtractedText": "निकाला गया पाठ",
+    "Analysis": "विश्लेषण",
+    "PipelineError": "एआई प्रोसेसिंग विफल रही. कृपया पुन: प्रयास करें।",
+    "UnknownError": "अज्ञात त्रुटि"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "फ़ाइल पढ़ रहा है...",
+      "Executing": "क्रियान्वयन...",
+      "Running": "दौड़ना...",
+      "Input": "इनपुट",
+      "Output": "उत्पादन",
+      "Pattern": "नमूना:",
+      "ShowDetails": "प्रदर्शन का विवरण",
+      "AndMoreLines": "... और {{count}} अधिक पंक्तियाँ"
+    },
+    "Streaming": {
+      "Thinking": "सोच...",
+      "LongRunning": "सामान्य से अधिक समय तक चलना",
+      "ToolStuck": "उपकरण अटक सकता है",
+      "ForceStop": "जबर्दस्ती बंद करें",
+      "GeneratingResponse": "प्रतिक्रिया उत्पन्न हो रही है...",
+      "RunningTool": "चल रहा है {{tool}}..."
+    },
+    "Permission": {
+      "Title": "उपकरण अनुमति अनुरोध",
+      "Allow": "एक बार की अनुमति दें",
+      "AllowSession": "सत्र के लिए अनुमति दें",
+      "Deny": "अस्वीकार करना",
+      "Allowed": "अनुमत",
+      "Denied": "अस्वीकृत"
+    },
+    "Title": "एआई एजेंट",
+    "GlobalTitle": "एआई एजेंट",
+    "NewSession": "नया सत्र",
+    "Sessions": "सत्र",
+    "NoSessions": "अभी तक कोई सत्र नहीं. नीचे बातचीत शुरू करें.",
+    "SendPlaceholder": "कुछ भी पूछें... (भेजने के लिए एंटर करें, न्यूलाइन के लिए Shift+Enter)",
+    "SendButton": "भेजना",
+    "StopButton": "रुकना",
+    "NotConfigured": "एजेंट का उपयोग करने के लिए सेटिंग्स → एआई फीचर्स में क्लाउड एपीआई कुंजी कॉन्फ़िगर करें।",
+    "GoToSettings": "खुली सेटिंग",
+    "SessionCost": "सत्र: {inputTokens}_ इन /{outputTokens}_ आउट टोकन",
+    "CommandHelp": "आदेश: /नया · /स्पष्ट · /लागत · /सहायता",
+    "Mode": {
+      "Ask": "पूछना",
+      "Code": "कोड",
+      "Plan": "योजना"
+    },
+    "Model": {
+      "Haiku": "हाइकू",
+      "Sonnet": "गाथा",
+      "Opus": "ओपुस"
+    },
+    "QuickAction": {
+      "Summarize": "इस रिकॉर्डिंग को संक्षेप में प्रस्तुत करें",
+      "ActionItems": "कार्रवाई आइटम ढूंढें",
+      "DraftEmail": "ड्राफ्ट अनुवर्ती ईमेल"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "आप मेरी क्या मदद कर सकते हैं?",
+      "HelpAnalyze": "मेरी हाल की रिकॉर्डिंग का विश्लेषण करने में मेरी सहायता करें"
+    },
+    "AssetContext": "संदर्भ: {{name}}"
   }
 }

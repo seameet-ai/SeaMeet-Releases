@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Hauptnavigation",
-    "ClearSearch": "Suche löschen"
+    "ClearSearch": "Suche löschen",
+    "AgentPanel": "KI-Agent"
   },
   "SidebarTabs": {
     "Audios": "Audios",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Navigationsmenü schließen",
     "OpenNavigationMenu": "Navigationsmenü öffnen",
+    "MainNavigation": "Hauptnavigation",
+    "Record": "Aufzeichnen",
+    "Recording": "Aufnahme",
+    "Files": "Dateien",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Verarbeiten…",
     "Starting": "Starten...",
     "FileNameCopiedWithRenameHint": "{{fileName}} in Zwischenablage kopiert. Doppelklicken Sie, um den Dateinamen zu ändern.",
-    "ApplyName": "Namen anwenden"
+    "ApplyName": "Namen anwenden",
+    "Send": "Schicken"
   },
   "RecordingControls": {
     "StartRecording": "Aufnahme starten",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Flashback-Puffer konnte nicht gespeichert werden.",
     "SavedFlashback": "Flashback in Aufnahmen gespeichert.",
     "StillCharging": "Flashback-Puffer lädt noch."
+  },
+  "AISummary": {
+    "TabTitle": "KI-Zusammenfassung",
+    "SetupRequired": "Konfigurieren Sie Ihren Gemini-API-Schlüssel unter Einstellungen → KI-Funktionen, um KI-Zusammenfassungen zu aktivieren.",
+    "EnableRequired": "Aktivieren Sie KI-Funktionen unter Einstellungen → KI-Funktionen, um KI-Zusammenfassungen anzuzeigen.",
+    "ExportMarkdown": "Als Markdown kopieren",
+    "ExportSrt": "Als SRT kopieren",
+    "ExportJson": "Als JSON kopieren",
+    "Regenerate": "Zusammenfassung neu generieren",
+    "Minimize": "Minimieren",
+    "Maximize": "Zur Vollansicht erweitern",
+    "Queued": "In der Warteschlange zur Bearbeitung...",
+    "Processing": "Zusammenfassung wird erstellt...",
+    "Error": "Zusammenfassung konnte nicht geladen werden: {{error}}",
+    "PipelineError": "Die KI-Verarbeitung ist fehlgeschlagen. Versuchen Sie, sich zu regenerieren.",
+    "Retry": "Wiederholen",
+    "NoSummary": "Noch keine KI-Zusammenfassung.",
+    "Generate": "Zusammenfassung erstellen",
+    "Copy": "Kopie",
+    "NoSummaryText": "Zusammenfassung nicht verfügbar.",
+    "Topics": "Themen:",
+    "NoTranscript": "Transkript nicht verfügbar.",
+    "NoActions": "Keine Aktionselemente identifiziert.",
+    "NoDecisions": "Keine wichtigen Entscheidungen identifiziert.",
+    "Export": {
+      "HeadingSummary": "Zusammenfassung",
+      "HeadingActionItems": "Aktionselemente",
+      "HeadingKeyDecisions": "Wichtige Entscheidungen",
+      "HeadingTranscription": "Transkription"
+    },
+    "Tab": {
+      "Summary": "Zusammenfassung",
+      "Transcription": "Transkript",
+      "ActionItems": "Aktionen",
+      "KeyDecisions": "Entscheidungen",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "KI-Funktionen",
+    "MenuItem": "KI-gestützte Zusammenfassungen",
+    "PageTitle": "KI-Funktionen",
+    "EnableToggle": "Aktivieren Sie KI-gestützte Zusammenfassungen",
+    "EnableToggleDesc": "Erfordert einen kostenlosen Gemini-API-Schlüssel",
+    "ApiKeySection": "Gemini-API-Schlüssel",
+    "ApiKeyLabel": "Gemini-API-Schlüssel",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (gespeichert)",
+    "ShowKey": "Schlüssel anzeigen",
+    "HideKey": "Schlüssel verstecken",
+    "TestKey": "Speichern und überprüfen",
+    "Saving": "Sparen...",
+    "GetKeyLink": "Holen Sie sich einen kostenlosen API-Schlüssel von Google AI Studio →",
+    "ClearKey": "Gespeicherten Schlüssel entfernen",
+    "KeyVerified": "Schlüssel verifiziert",
+    "KeyInvalid": "Ungültiger Schlüssel",
+    "KeyTesting": "Testen...",
+    "KeyNotConfigured": "Kein Schlüssel konfiguriert",
+    "ModelSection": "KI-Modell",
+    "ModelLabel": "Zwillingsmodell",
+    "SelectedModel": "Ausgewählt: {{model}}",
+    "AutomationSection": "Automatisierung",
+    "AutoSummary": "Zusammenfassung automatisch erstellen",
+    "AutoSummaryDesc": "Wird ausgeführt, nachdem jede Aufnahme beendet ist",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Empfohlen · Schnell + leistungsfähig",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Günstigste stabile Option",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultragünstig",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maximale Leistungsfähigkeit",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Beste stabile Argumentation"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API-Schlüssel (Agent)",
+      "SourceLabel": "Aktive Quelle:",
+      "SourceByok": "Ihr API-Schlüssel (BYOK)",
+      "SourceKeyServer": "Verwaltet von SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Nicht konfiguriert",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (gespeichert)",
+      "ShowKey": "Schlüssel anzeigen",
+      "HideKey": "Schlüssel verstecken",
+      "TestKey": "Speichern und überprüfen",
+      "Saving": "Sparen...",
+      "ClearKey": "Gespeicherten Schlüssel entfernen",
+      "KeyVerified": "Schlüssel verifiziert",
+      "KeyInvalid": "Ungültiger Schlüssel",
+      "KeyTesting": "Testen...",
+      "KeyNotConfigured": "Kein Schlüssel konfiguriert",
+      "GetKeyLink": "Holen Sie sich einen API-Schlüssel von der Anthropic Console →",
+      "QuotaSection": "Schlüsselserverkontingent",
+      "QuotaRemaining": "{{remaining}} / {{limit}} verbleibende Token",
+      "QuotaResetDate": "Wird am {{date}} zurückgesetzt",
+      "QuotaLoading": "Kontingent wird geladen...",
+      "QuotaRefresh": "Kontingent aktualisieren",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Installiert ({{version}})",
+      "CliNotInstalled": "Claude CLI nicht gefunden",
+      "CliInstallLink": "Claude Code installieren →",
+      "ModelSection": "Standard-Claude-Modell",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Schnell und günstig",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Empfohlen · Ausgewogen",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Am fähigsten"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "KI-Agent & Cowork",
+    "PageTitle": "KI-Agent & Cowork",
+    "SectionTitle": "KI-Agent & Cowork",
+    "EnableToggle": "Aktivieren Sie AI Agent & Cowork",
+    "EnableToggleDesc": "Erfordert einen Claude-API-Schlüssel",
+    "DisabledBadge": "Deaktiviert",
+    "DisabledMsg": "AI Agent & Cowork ist deaktiviert. Aktivieren Sie es unter Einstellungen → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent ist deaktiviert – aktivieren Sie es unter Einstellungen → AI Agent & Cowork",
+    "NotConfiguredMsg": "Kein Claude-API-Schlüssel konfiguriert. Richten Sie einen unter Einstellungen → AI Agent & Cowork ein."
+  },
+  "PipelineStatus": {
+    "Queued": "Zusammenfassung in der Warteschlange...",
+    "Running": "Zusammenfassung wird erstellt...",
+    "Progress": "Verarbeitungsblock {{current}} von {{total}}",
+    "Done": "Zusammenfassung fertig",
+    "Error": "Die Verarbeitung ist fehlgeschlagen"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Prozess mit KI",
+    "Queuing": "Warteschlange...",
+    "ProcessingWithTime": "Wird verarbeitet... {{sec}}s",
+    "Describe": "Bild beschreiben",
+    "DescribeSub": "Was ist in diesem Screenshot?",
+    "Ocr": "Text extrahieren (OCR)",
+    "OcrSub": "Lesen Sie den gesamten sichtbaren Text",
+    "Custom": "Benutzerdefinierte Eingabeaufforderung",
+    "CustomPlaceholder": "Fragen Sie etwas zu diesem Bild ...",
+    "ResultLabel": "KI-Ergebnis",
+    "Description": "Beschreibung",
+    "ExtractedText": "Extrahierter Text",
+    "Analysis": "Analyse",
+    "PipelineError": "Die KI-Verarbeitung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "UnknownError": "Unbekannter Fehler"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Datei wird gelesen...",
+      "Executing": "Ausführen...",
+      "Running": "Läuft...",
+      "Input": "Eingang",
+      "Output": "Ausgabe",
+      "Pattern": "Muster:",
+      "ShowDetails": "Details anzeigen",
+      "AndMoreLines": "... und {{count}} weitere Zeilen"
+    },
+    "Streaming": {
+      "Thinking": "Denken...",
+      "LongRunning": "Läuft länger als gewöhnlich",
+      "ToolStuck": "Möglicherweise steckt das Werkzeug fest",
+      "ForceStop": "Stopp erzwingen",
+      "GeneratingResponse": "Antwort generieren...",
+      "RunningTool": "Ausführen von {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Antrag auf Werkzeuggenehmigung",
+      "Allow": "Einmal zulassen",
+      "AllowSession": "Sitzung zulassen",
+      "Deny": "Leugnen",
+      "Allowed": "Erlaubt",
+      "Denied": "Bestritten"
+    },
+    "Title": "KI-Agent",
+    "GlobalTitle": "KI-Agent",
+    "NewSession": "Neue Sitzung",
+    "Sessions": "Sitzungen",
+    "NoSessions": "Noch keine Sitzungen. Beginnen Sie unten ein Gespräch.",
+    "SendPlaceholder": "Alles fragen... (Eingabetaste zum Senden, Umschalt+Eingabetaste für Zeilenumbruch)",
+    "SendButton": "Schicken",
+    "StopButton": "Stoppen",
+    "NotConfigured": "Konfigurieren Sie unter Einstellungen → AI-Funktionen einen Claude-API-Schlüssel, um den Agenten zu verwenden.",
+    "GoToSettings": "Öffnen Sie Einstellungen",
+    "SessionCost": "Sitzung: {inputTokens}_ ein /{outputTokens}_ ausgegebene Token",
+    "CommandHelp": "Befehle: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Fragen",
+      "Code": "Code",
+      "Plan": "Planen"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonett",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Fassen Sie diese Aufnahme zusammen",
+      "ActionItems": "Finden Sie Aktionselemente",
+      "DraftEmail": "Entwurf einer Folge-E-Mail"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Wobei können Sie mir helfen?",
+      "HelpAnalyze": "Helfen Sie mir, meine letzten Aufnahmen zu analysieren"
+    },
+    "AssetContext": "Kontext: {{name}}"
   }
 }

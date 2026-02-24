@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "메인 내비게이션",
-    "ClearSearch": "검색 초기화"
+    "ClearSearch": "검색 초기화",
+    "AgentPanel": "AI 에이전트"
   },
   "SidebarTabs": {
     "Audios": "오디오",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "탐색 메뉴 닫기",
     "OpenNavigationMenu": "탐색 메뉴 열기",
+    "MainNavigation": "메인 네비게이션",
+    "Record": "기록",
+    "Recording": "녹음",
+    "Files": "파일",
+    "Agent": "Agent",
     "Terminal": "터미널"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "처리 중…",
     "Starting": "시작 중...",
     "FileNameCopiedWithRenameHint": "{{fileName}}이(가) 클립보드에 복사되었습니다. 파일 이름을 변경하려면 더블 클릭하세요.",
-    "ApplyName": "이름 적용"
+    "ApplyName": "이름 적용",
+    "Send": "보내다"
   },
   "RecordingControls": {
     "StartRecording": "녹음 시작",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "회상 버퍼 저장에 실패하였습니다.",
     "SavedFlashback": "회상을 녹화에 저장하였습니다.",
     "StillCharging": "회상 버퍼가 아직 충전 중입니다."
+  },
+  "AISummary": {
+    "TabTitle": "AI 요약",
+    "SetupRequired": "AI 요약을 활성화하려면 설정 → AI 기능에서 Gemini API 키를 구성하세요.",
+    "EnableRequired": "AI 요약을 보려면 설정 → AI 기능에서 AI 기능을 활성화하세요.",
+    "ExportMarkdown": "마크다운으로 복사",
+    "ExportSrt": "SRT로 복사",
+    "ExportJson": "JSON으로 복사",
+    "Regenerate": "요약 재생성",
+    "Minimize": "최소화",
+    "Maximize": "전체 보기로 확장",
+    "Queued": "처리 대기 중...",
+    "Processing": "요약 생성 중...",
+    "Error": "요약을 로드하지 못했습니다: {{error}}",
+    "PipelineError": "AI 처리에 실패했습니다. 재생성해 보세요.",
+    "Retry": "다시 해 보다",
+    "NoSummary": "아직 AI 요약이 없습니다.",
+    "Generate": "요약 생성",
+    "Copy": "복사",
+    "NoSummaryText": "요약을 사용할 수 없습니다.",
+    "Topics": "주제:",
+    "NoTranscript": "성적표를 사용할 수 없습니다.",
+    "NoActions": "식별된 작업 항목이 없습니다.",
+    "NoDecisions": "확인된 주요 결정이 없습니다.",
+    "Export": {
+      "HeadingSummary": "요약",
+      "HeadingActionItems": "조치 항목",
+      "HeadingKeyDecisions": "주요 결정",
+      "HeadingTranscription": "전사"
+    },
+    "Tab": {
+      "Summary": "요약",
+      "Transcription": "성적 증명서",
+      "ActionItems": "행위",
+      "KeyDecisions": "결정",
+      "Agent": "대리인"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "AI 기능",
+    "MenuItem": "AI 기반 요약",
+    "PageTitle": "AI 기능",
+    "EnableToggle": "AI 기반 요약 활성화",
+    "EnableToggleDesc": "무료 Gemini API 키가 필요합니다",
+    "ApiKeySection": "제미니 API 키",
+    "ApiKeyLabel": "제미니 API 키",
+    "KeyPlaceholder": "아이자시...",
+    "KeyPlaceholderSaved": "••••••••• (저장됨)",
+    "ShowKey": "키 표시",
+    "HideKey": "키 숨기기",
+    "TestKey": "저장 및 확인",
+    "Saving": "절약...",
+    "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
+    "ClearKey": "저장된 키 삭제",
+    "KeyVerified": "키 확인됨",
+    "KeyInvalid": "잘못된 키",
+    "KeyTesting": "테스트 중...",
+    "KeyNotConfigured": "구성된 키가 없습니다.",
+    "ModelSection": "AI 모델",
+    "ModelLabel": "쌍둥이자리 모델",
+    "SelectedModel": "선택됨: {{model}}",
+    "AutomationSection": "오토메이션",
+    "AutoSummary": "요약 자동 생성",
+    "AutoSummaryDesc": "모든 녹음이 완료된 후 실행됩니다.",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "권장됨 · 빠르며 가능함",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "가장 저렴한 안정적인 옵션",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "매우 저렴함",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "최대 용량",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "최고의 안정적인 추론"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API 키(에이전트)",
+      "SourceLabel": "활성 소스:",
+      "SourceByok": "API 키(BYOK)",
+      "SourceKeyServer": "SeaMeet에서 관리함",
+      "SourceCli": "클로드 코드 CLI",
+      "SourceNone": "구성되지 않음",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (저장됨)",
+      "ShowKey": "키 표시",
+      "HideKey": "키 숨기기",
+      "TestKey": "저장 및 확인",
+      "Saving": "절약...",
+      "ClearKey": "저장된 키 삭제",
+      "KeyVerified": "키 확인됨",
+      "KeyInvalid": "잘못된 키",
+      "KeyTesting": "테스트 중...",
+      "KeyNotConfigured": "구성된 키가 없습니다.",
+      "GetKeyLink": "Anthropic Console에서 API 키 받기 →",
+      "QuotaSection": "키 서버 할당량",
+      "QuotaRemaining": "{{remaining}} / {{limit}} 토큰 남음",
+      "QuotaResetDate": "{{date}}에 재설정됩니다.",
+      "QuotaLoading": "할당량 로드 중...",
+      "QuotaRefresh": "할당량 새로 고침",
+      "CliSection": "클로드 코드 CLI",
+      "CliInstalled": "설치됨({{version}})",
+      "CliNotInstalled": "클로드 CLI를 찾을 수 없습니다",
+      "CliInstallLink": "클로드 코드 설치 →",
+      "ModelSection": "기본 클로드 모델",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "빠르고 저렴함",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "권장 · 균형",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "가장 유능한"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI 에이전트 및 동료",
+    "PageTitle": "AI 에이전트 및 동료",
+    "SectionTitle": "AI 에이전트 및 동료",
+    "EnableToggle": "AI Agent 및 Cowork 활성화",
+    "EnableToggleDesc": "Claude API 키가 필요합니다",
+    "DisabledBadge": "장애가 있는",
+    "DisabledMsg": "AI Agent & Cowork가 비활성화되었습니다. 설정 → AI Agent & Cowork에서 활성화하세요.",
+    "DisabledTabHint": "AI Agent가 비활성화되었습니다. 설정 → AI Agent & Cowork에서 활성화하세요.",
+    "NotConfiguredMsg": "Claude API 키가 구성되지 않았습니다. 설정 → AI Agent & Cowork에서 설정하세요."
+  },
+  "PipelineStatus": {
+    "Queued": "요약이 대기 중입니다...",
+    "Running": "요약 생성 중...",
+    "Progress": "{{total}}의 청크 {{current}} 처리 중",
+    "Done": "요약 준비됨",
+    "Error": "처리 실패"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "AI로 처리",
+    "Queuing": "대기 중...",
+    "ProcessingWithTime": "처리 중... {{sec}}s",
+    "Describe": "이미지 설명",
+    "DescribeSub": "이 스크린샷에는 무엇이 있나요?",
+    "Ocr": "텍스트 추출(OCR)",
+    "OcrSub": "보이는 모든 텍스트 읽기",
+    "Custom": "맞춤 프롬프트",
+    "CustomPlaceholder": "이미지이거 무엇이든 물어보세요...",
+    "ResultLabel": "AI 결과",
+    "Description": "설명",
+    "ExtractedText": "추출된 텍스트",
+    "Analysis": "분석",
+    "PipelineError": "AI 처리에 실패했습니다. 다시 시도해 주세요.",
+    "UnknownError": "알 수 없는 오류"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "파일을 읽는 중...",
+      "Executing": "실행 중...",
+      "Running": "달리기...",
+      "Input": "입력",
+      "Output": "산출",
+      "Pattern": "무늬:",
+      "ShowDetails": "세부정보 표시",
+      "AndMoreLines": "... 그리고 {{count}} 줄 더 보기"
+    },
+    "Streaming": {
+      "Thinking": "생각...",
+      "LongRunning": "평소보다 오래 달리는 중",
+      "ToolStuck": "도구가 막혔을 수 있음",
+      "ForceStop": "강제 정지",
+      "GeneratingResponse": "응답 생성 중...",
+      "RunningTool": "{{tool}} 실행 중..."
+    },
+    "Permission": {
+      "Title": "도구 권한 요청",
+      "Allow": "한 번만 허용",
+      "AllowSession": "세션 허용",
+      "Deny": "부인하다",
+      "Allowed": "허용된",
+      "Denied": "거부됨"
+    },
+    "Title": "AI 에이전트",
+    "GlobalTitle": "AI 에이전트",
+    "NewSession": "새 세션",
+    "Sessions": "세션",
+    "NoSessions": "아직 세션이 없습니다. 아래에서 대화를 시작해 보세요.",
+    "SendPlaceholder": "무엇이든 물어보세요... (보내려면 Enter, 줄 바꿈하려면 Shift+Enter)",
+    "SendButton": "보내다",
+    "StopButton": "멈추다",
+    "NotConfigured": "에이전트를 사용하려면 설정 → AI 기능에서 Claude API 키를 구성하세요.",
+    "GoToSettings": "설정 열기",
+    "SessionCost": "세션: {inputTokens}_ in /{outputTokens}_ out 토큰",
+    "CommandHelp": "명령: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "묻다",
+      "Code": "암호",
+      "Plan": "계획"
+    },
+    "Model": {
+      "Haiku": "하이쿠",
+      "Sonnet": "소네트",
+      "Opus": "작"
+    },
+    "QuickAction": {
+      "Summarize": "이 녹음을 요약해 보세요",
+      "ActionItems": "작업 항목 찾기",
+      "DraftEmail": "후속 이메일 초안"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "무엇을 도와주실 수 있나요?",
+      "HelpAnalyze": "최근 녹음을 분석하는 데 도움을 주세요"
+    },
+    "AssetContext": "컨텍스트: {{name}}"
   }
 }

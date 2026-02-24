@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "ناوبری اصلی",
-    "ClearSearch": "پاک‌سازی جستجو"
+    "ClearSearch": "پاک‌سازی جستجو",
+    "AgentPanel": "عامل هوش مصنوعی"
   },
   "SidebarTabs": {
     "Audios": "صداها",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "بستن منوی ناوبری",
     "OpenNavigationMenu": "منوی ناوبری را باز کنید",
+    "MainNavigation": "ناوبری اصلی",
+    "Record": "ضبط کنید",
+    "Recording": "در حال ضبط",
+    "Files": "فایل ها",
+    "Agent": "Agent",
     "Terminal": "ترمینال"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "در حال پردازش…",
     "Starting": "شروع...",
     "FileNameCopiedWithRenameHint": "{{fileName}} به کلیپ‌بورد کپی شد. برای تغییر نام، دوباره کلیک کنید.",
-    "ApplyName": "نام را اعمال کنید"
+    "ApplyName": "نام را اعمال کنید",
+    "Send": "ارسال کنید"
   },
   "RecordingControls": {
     "StartRecording": "شروع ضبط",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "بافر فلاش بک ذخیره نشد.",
     "SavedFlashback": "بازگشت به خاطرات ذخیره‌شده در ضبط‌ها",
     "StillCharging": "بافر بازگشت به خاطرات هنوز در حال شارژ است"
+  },
+  "AISummary": {
+    "TabTitle": "خلاصه هوش مصنوعی",
+    "SetupRequired": "کلید Gemini API خود را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا خلاصه‌های هوش مصنوعی فعال شود.",
+    "EnableRequired": "برای مشاهده خلاصه‌های هوش مصنوعی، ویژگی‌های AI را در تنظیمات → ویژگی‌های هوش مصنوعی فعال کنید.",
+    "ExportMarkdown": "به عنوان Markdown کپی کنید",
+    "ExportSrt": "به عنوان SRT کپی کنید",
+    "ExportJson": "به صورت JSON کپی کنید",
+    "Regenerate": "خلاصه بازسازی",
+    "Minimize": "به حداقل رساندن",
+    "Maximize": "به نمای کامل باز کنید",
+    "Queued": "در صف پردازش...",
+    "Processing": "در حال تولید خلاصه...",
+    "Error": "خلاصه بارگیری نشد: {{error}}",
+    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. بازسازی را امتحان کنید.",
+    "Retry": "دوباره امتحان کنید",
+    "NoSummary": "هنوز خلاصه ای از هوش مصنوعی وجود ندارد.",
+    "Generate": "ایجاد خلاصه",
+    "Copy": "کپی کنید",
+    "NoSummaryText": "خلاصه در دسترس نیست.",
+    "Topics": "موضوعات:",
+    "NoTranscript": "رونوشت در دسترس نیست.",
+    "NoActions": "هیچ مورد اقدامی شناسایی نشد.",
+    "NoDecisions": "هیچ تصمیم کلیدی مشخص نشده است.",
+    "Export": {
+      "HeadingSummary": "خلاصه",
+      "HeadingActionItems": "موارد اقدام",
+      "HeadingKeyDecisions": "تصمیمات کلیدی",
+      "HeadingTranscription": "رونویسی"
+    },
+    "Tab": {
+      "Summary": "خلاصه",
+      "Transcription": "رونوشت",
+      "ActionItems": "اقدامات",
+      "KeyDecisions": "تصمیمات",
+      "Agent": "عامل"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "ویژگی های هوش مصنوعی",
+    "MenuItem": "خلاصه های مبتنی بر هوش مصنوعی",
+    "PageTitle": "ویژگی های هوش مصنوعی",
+    "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
+    "EnableToggleDesc": "به یک کلید Gemini API رایگان نیاز دارد",
+    "ApiKeySection": "کلید API Gemini",
+    "ApiKeyLabel": "کلید API Gemini",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
+    "ShowKey": "نمایش کلید",
+    "HideKey": "پنهان کردن کلید",
+    "TestKey": "ذخیره و تأیید کنید",
+    "Saving": "در حال ذخیره...",
+    "GetKeyLink": "یک کلید API رایگان از Google AI Studio → دریافت کنید",
+    "ClearKey": "حذف کلید ذخیره شده",
+    "KeyVerified": "کلید تأیید شد",
+    "KeyInvalid": "کلید نامعتبر است",
+    "KeyTesting": "تست کردن...",
+    "KeyNotConfigured": "هیچ کلیدی پیکربندی نشده است",
+    "ModelSection": "مدل هوش مصنوعی",
+    "ModelLabel": "مدل جمینی",
+    "SelectedModel": "انتخاب شده: {{model}}",
+    "AutomationSection": "اتوماسیون",
+    "AutoSummary": "خلاصه تولید خودکار",
+    "AutoSummaryDesc": "پس از اتمام هر ضبط اجرا می شود",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "توصیه شده · سریع + دارای قابلیت",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "ارزان ترین گزینه پایدار",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "فوق العاده ارزان",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "حداکثر توانایی",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "بهترین استدلال پایدار"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API Key (Agent)",
+      "SourceLabel": "منبع فعال:",
+      "SourceByok": "کلید API شما (BYOK)",
+      "SourceKeyServer": "مدیریت شده توسط SeaMeet",
+      "SourceCli": "کد کلود CLI",
+      "SourceNone": "پیکربندی نشده است",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
+      "ShowKey": "نمایش کلید",
+      "HideKey": "پنهان کردن کلید",
+      "TestKey": "ذخیره و تأیید کنید",
+      "Saving": "در حال ذخیره...",
+      "ClearKey": "حذف کلید ذخیره شده",
+      "KeyVerified": "کلید تأیید شد",
+      "KeyInvalid": "کلید نامعتبر است",
+      "KeyTesting": "تست کردن...",
+      "KeyNotConfigured": "هیچ کلیدی پیکربندی نشده است",
+      "GetKeyLink": "یک کلید API از Anthropic Console دریافت کنید",
+      "QuotaSection": "سهمیه سرور کلید",
+      "QuotaRemaining": "{{remaining}} / {{limit}} توکن باقی مانده است",
+      "QuotaResetDate": "بازنشانی در {{date}}",
+      "QuotaLoading": "در حال بارگیری سهمیه...",
+      "QuotaRefresh": "بازخوانی سهمیه",
+      "CliSection": "کد کلود CLI",
+      "CliInstalled": "نصب شده ({{version}})",
+      "CliNotInstalled": "Claude CLI یافت نشد",
+      "CliInstallLink": "Claude Code → را نصب کنید",
+      "ModelSection": "مدل کلود پیش فرض",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "سریع و ارزان",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "توصیه شده · متعادل",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "تواناترین"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork",
+    "EnableToggle": "AI Agent & Cowork را فعال کنید",
+    "EnableToggleDesc": "به یک کلید API Claude نیاز دارد",
+    "DisabledBadge": "از کار افتاده است",
+    "DisabledMsg": "AI Agent & Cowork غیرفعال است. آن را در تنظیمات → AI Agent & Cowork فعال کنید.",
+    "DisabledTabHint": "عامل هوش مصنوعی غیرفعال است - آن را در تنظیمات → عامل هوش مصنوعی و همکاری فعال کنید",
+    "NotConfiguredMsg": "کلید Claude API پیکربندی نشده است. یکی را در تنظیمات → AI Agent & Cowork تنظیم کنید."
+  },
+  "PipelineStatus": {
+    "Queued": "خلاصه در صف...",
+    "Running": "در حال تولید خلاصه...",
+    "Progress": "پردازش تکه {{current}} از {{total}}",
+    "Done": "خلاصه آماده است",
+    "Error": "پردازش انجام نشد"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "پردازش با هوش مصنوعی",
+    "Queuing": "در صف...",
+    "ProcessingWithTime": "در حال پردازش... {{sec}}s",
+    "Describe": "تصویر را توصیف کنید",
+    "DescribeSub": "در این اسکرین شات چیست؟",
+    "Ocr": "استخراج متن (OCR)",
+    "OcrSub": "تمام متن های قابل مشاهده را بخوانید",
+    "Custom": "درخواست سفارشی",
+    "CustomPlaceholder": "هر چیزی در مورد این تصویر بپرسید ...",
+    "ResultLabel": "نتیجه هوش مصنوعی",
+    "Description": "توضیحات",
+    "ExtractedText": "متن استخراج شده",
+    "Analysis": "تجزیه و تحلیل",
+    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. لطفا دوباره امتحان کنید.",
+    "UnknownError": "خطای ناشناخته"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "خواندن فایل...",
+      "Executing": "در حال اجرا...",
+      "Running": "در حال دویدن...",
+      "Input": "ورودی",
+      "Output": "خروجی",
+      "Pattern": "الگو:",
+      "ShowDetails": "نمایش جزئیات",
+      "AndMoreLines": "... و {{count}} خطوط دیگر"
+    },
+    "Streaming": {
+      "Thinking": "فکر کردن...",
+      "LongRunning": "دویدن طولانی تر از حد معمول",
+      "ToolStuck": "ممکن است ابزار گیر کرده باشد",
+      "ForceStop": "توقف اجباری",
+      "GeneratingResponse": "در حال ایجاد پاسخ...",
+      "RunningTool": "در حال اجرا {{tool}}..."
+    },
+    "Permission": {
+      "Title": "درخواست مجوز ابزار",
+      "Allow": "یک بار اجازه دهید",
+      "AllowSession": "اجازه دادن به جلسه",
+      "Deny": "تکذیب کنید",
+      "Allowed": "مجاز است",
+      "Denied": "تکذیب شد"
+    },
+    "Title": "عامل هوش مصنوعی",
+    "GlobalTitle": "عامل هوش مصنوعی",
+    "NewSession": "جلسه جدید",
+    "Sessions": "جلسات",
+    "NoSessions": "هنوز جلسه ای وجود ندارد. یک مکالمه را در زیر شروع کنید.",
+    "SendPlaceholder": "هر چیزی بپرسید... (برای ارسال وارد کنید، برای خط جدید Shift+Enter)",
+    "SendButton": "ارسال کنید",
+    "StopButton": "توقف کنید",
+    "NotConfigured": "یک کلید Claude API را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا از Agent استفاده کنید.",
+    "GoToSettings": "تنظیمات را باز کنید",
+    "SessionCost": "جلسه: {inputTokens}_ در /{outputTokens}_ توکن های خروجی",
+    "CommandHelp": "دستورات: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "بپرسید",
+      "Code": "کد",
+      "Plan": "برنامه ریزی کنید"
+    },
+    "Model": {
+      "Haiku": "هایکو",
+      "Sonnet": "غزل",
+      "Opus": "اپوس"
+    },
+    "QuickAction": {
+      "Summarize": "این ضبط را خلاصه کنید",
+      "ActionItems": "موارد اقدام را پیدا کنید",
+      "DraftEmail": "پیش نویس ایمیل پیگیری"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "در چه زمینه ای می توانید به من کمک کنید؟",
+      "HelpAnalyze": "به من کمک کنید ضبط های اخیرم را تجزیه و تحلیل کنم"
+    },
+    "AssetContext": "زمینه: {{name}}"
   }
 }

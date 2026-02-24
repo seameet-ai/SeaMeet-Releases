@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Navigasi utama",
-    "ClearSearch": "Bersihkan pencarian"
+    "ClearSearch": "Bersihkan pencarian",
+    "AgentPanel": "Agen AI"
   },
   "SidebarTabs": {
     "Audios": "Audio",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Tutup menu navigasi",
     "OpenNavigationMenu": "Buka menu navigasi",
+    "MainNavigation": "Navigasi utama",
+    "Record": "Catatan",
+    "Recording": "Rekaman",
+    "Files": "File",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Sedang diproses…",
     "Starting": "Sedang Memulai...",
     "FileNameCopiedWithRenameHint": "{{fileName}} disalin ke clipboard. Klik dua kali untuk mengganti nama file.",
-    "ApplyName": "Terapkan nama"
+    "ApplyName": "Terapkan nama",
+    "Send": "Mengirim"
   },
   "RecordingControls": {
     "StartRecording": "Mulai perekaman",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Gagal menyimpan buffer kilas balik.",
     "SavedFlashback": "Kilasan balik yang disimpan ke Recordings.",
     "StillCharging": "buffer kilas balik masih pengisian daya."
+  },
+  "AISummary": {
+    "TabTitle": "Ringkasan AI",
+    "SetupRequired": "Konfigurasikan kunci API Gemini Anda di Pengaturan → Fitur AI untuk mengaktifkan ringkasan AI.",
+    "EnableRequired": "Aktifkan Fitur AI di Pengaturan → Fitur AI untuk melihat ringkasan AI.",
+    "ExportMarkdown": "Salin sebagai Penurunan Harga",
+    "ExportSrt": "Salin sebagai SRT",
+    "ExportJson": "Salin sebagai JSON",
+    "Regenerate": "Buat kembali ringkasan",
+    "Minimize": "Memperkecil",
+    "Maximize": "Perluas ke tampilan penuh",
+    "Queued": "Mengantri untuk diproses...",
+    "Processing": "Membuat ringkasan...",
+    "Error": "Gagal memuat ringkasan: {{error}}",
+    "PipelineError": "Pemrosesan AI gagal. Coba regenerasi.",
+    "Retry": "Mencoba kembali",
+    "NoSummary": "Belum ada ringkasan AI.",
+    "Generate": "Hasilkan Ringkasan",
+    "Copy": "Menyalin",
+    "NoSummaryText": "Ringkasan tidak tersedia.",
+    "Topics": "Topik:",
+    "NoTranscript": "Transkrip tidak tersedia.",
+    "NoActions": "Tidak ada item tindakan yang teridentifikasi.",
+    "NoDecisions": "Tidak ada keputusan penting yang teridentifikasi.",
+    "Export": {
+      "HeadingSummary": "Ringkasan",
+      "HeadingActionItems": "Item Tindakan",
+      "HeadingKeyDecisions": "Keputusan Penting",
+      "HeadingTranscription": "Transkripsi"
+    },
+    "Tab": {
+      "Summary": "Ringkasan",
+      "Transcription": "Salinan",
+      "ActionItems": "Tindakan",
+      "KeyDecisions": "Keputusan",
+      "Agent": "Agen"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Fitur AI",
+    "MenuItem": "Ringkasan yang Didukung AI",
+    "PageTitle": "Fitur AI",
+    "EnableToggle": "Aktifkan ringkasan yang didukung AI",
+    "EnableToggleDesc": "Memerlukan kunci API Gemini gratis",
+    "ApiKeySection": "Kunci API Gemini",
+    "ApiKeyLabel": "Kunci API Gemini",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (disimpan)",
+    "ShowKey": "Tampilkan kunci",
+    "HideKey": "Sembunyikan kunci",
+    "TestKey": "Simpan & Verifikasi",
+    "Saving": "Penghematan...",
+    "GetKeyLink": "Dapatkan kunci API gratis dari Google AI Studio →",
+    "ClearKey": "Hapus kunci yang disimpan",
+    "KeyVerified": "Kunci terverifikasi",
+    "KeyInvalid": "Kunci tidak valid",
+    "KeyTesting": "Menguji...",
+    "KeyNotConfigured": "Tidak ada kunci yang dikonfigurasi",
+    "ModelSection": "Model AI",
+    "ModelLabel": "Model Gemini",
+    "SelectedModel": "Terpilih: {{model}}",
+    "AutomationSection": "Otomatisasi",
+    "AutoSummary": "Ringkasan yang dibuat secara otomatis",
+    "AutoSummaryDesc": "Berjalan setelah setiap rekaman selesai",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Direkomendasikan · Cepat + mumpuni",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Opsi stabil termurah",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Sangat murah",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Kemampuan maksimal",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Alasan stabil terbaik"
+    },
+    "ClaudeKey": {
+      "Section": "Kunci API Claude (Agen)",
+      "SourceLabel": "Sumber aktif:",
+      "SourceByok": "Kunci API Anda (BYOK)",
+      "SourceKeyServer": "Dikelola oleh SeaMeet",
+      "SourceCli": "Kode Claude CLI",
+      "SourceNone": "Tidak dikonfigurasi",
+      "KeyPlaceholder": "sk-semut-...",
+      "KeyPlaceholderSaved": "••••••••• (disimpan)",
+      "ShowKey": "Tampilkan kunci",
+      "HideKey": "Sembunyikan kunci",
+      "TestKey": "Simpan & Verifikasi",
+      "Saving": "Penghematan...",
+      "ClearKey": "Hapus kunci yang disimpan",
+      "KeyVerified": "Kunci terverifikasi",
+      "KeyInvalid": "Kunci tidak valid",
+      "KeyTesting": "Menguji...",
+      "KeyNotConfigured": "Tidak ada kunci yang dikonfigurasi",
+      "GetKeyLink": "Dapatkan kunci API dari Anthropic Console →",
+      "QuotaSection": "Kuota Server Kunci",
+      "QuotaRemaining": "{{remaining}} / {{limit}} token tersisa",
+      "QuotaResetDate": "Direset pada {{date}}",
+      "QuotaLoading": "Memuat kuota...",
+      "QuotaRefresh": "Segarkan kuota",
+      "CliSection": "Kode Claude CLI",
+      "CliInstalled": "Terpasang ({{version}})",
+      "CliNotInstalled": "Claude CLI tidak ditemukan",
+      "CliInstallLink": "Instal Kode Claude →",
+      "ModelSection": "Model Claude Bawaan",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Cepat & murah",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Direkomendasikan · Seimbang",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Paling mampu"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Agen AI & Rekan Kerja",
+    "PageTitle": "Agen AI & Rekan Kerja",
+    "SectionTitle": "Agen AI & Rekan Kerja",
+    "EnableToggle": "Aktifkan Agen AI & Rekan Kerja",
+    "EnableToggleDesc": "Memerlukan Kunci API Claude",
+    "DisabledBadge": "Dengan disabilitas",
+    "DisabledMsg": "Agen AI & Rekan Kerja dinonaktifkan. Aktifkan di Pengaturan → Agen AI & Rekan Kerja.",
+    "DisabledTabHint": "Agen AI dinonaktifkan — aktifkan di Pengaturan → Agen AI & Rekan Kerja",
+    "NotConfiguredMsg": "Tidak ada kunci API Claude yang dikonfigurasi. Siapkan satu di Pengaturan → Agen AI & Rekan Kerja."
+  },
+  "PipelineStatus": {
+    "Queued": "Ringkasan diantrekan...",
+    "Running": "Membuat ringkasan...",
+    "Progress": "Memproses potongan {{current}} dari {{total}}",
+    "Done": "Ringkasan sudah siap",
+    "Error": "Pemrosesan gagal"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Proses dengan AI",
+    "Queuing": "Mengantri...",
+    "ProcessingWithTime": "Memproses... {{sec}}s",
+    "Describe": "Jelaskan gambar",
+    "DescribeSub": "Apa yang ada di tangkapan layar ini?",
+    "Ocr": "Ekstrak teks (OCR)",
+    "OcrSub": "Baca semua teks yang terlihat",
+    "Custom": "Perintah khusus",
+    "CustomPlaceholder": "Tanyakan apa pun tentang gambar ini...",
+    "ResultLabel": "Hasil AI",
+    "Description": "Keterangan",
+    "ExtractedText": "Teks yang Diekstraksi",
+    "Analysis": "Analisa",
+    "PipelineError": "Pemrosesan AI gagal. Silakan coba lagi.",
+    "UnknownError": "Kesalahan tidak diketahui"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Membaca berkas...",
+      "Executing": "Menjalankan...",
+      "Running": "Berlari...",
+      "Input": "Masukan",
+      "Output": "Keluaran",
+      "Pattern": "Pola:",
+      "ShowDetails": "Tampilkan detailnya",
+      "AndMoreLines": "... dan {{count}} baris lainnya"
+    },
+    "Streaming": {
+      "Thinking": "Pemikiran...",
+      "LongRunning": "Berjalan lebih lama dari biasanya",
+      "ToolStuck": "Alat mungkin macet",
+      "ForceStop": "Paksa berhenti",
+      "GeneratingResponse": "Menghasilkan respons...",
+      "RunningTool": "Menjalankan {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Permintaan Izin Alat",
+      "Allow": "Izinkan Sekali",
+      "AllowSession": "Izinkan untuk Sesi",
+      "Deny": "Membantah",
+      "Allowed": "Diizinkan",
+      "Denied": "Ditolak"
+    },
+    "Title": "Agen AI",
+    "GlobalTitle": "Agen AI",
+    "NewSession": "Sesi baru",
+    "Sessions": "Sesi",
+    "NoSessions": "Belum ada sesi. Mulailah percakapan di bawah ini.",
+    "SendPlaceholder": "Tanyakan apa saja... (Enter untuk mengirim, Shift+Enter untuk baris baru)",
+    "SendButton": "Mengirim",
+    "StopButton": "Berhenti",
+    "NotConfigured": "Konfigurasikan kunci API Claude di Pengaturan → Fitur AI untuk menggunakan Agen.",
+    "GoToSettings": "Buka Pengaturan",
+    "SessionCost": "Sesi: {inputTokens}_ masuk /{outputTokens}_ token keluar",
+    "CommandHelp": "Perintah: /baru · /hapus · /biaya · /bantuan",
+    "Mode": {
+      "Ask": "Bertanya",
+      "Code": "Kode",
+      "Plan": "Rencana"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonet",
+      "Opus": "Karya"
+    },
+    "QuickAction": {
+      "Summarize": "Ringkaslah rekaman ini",
+      "ActionItems": "Temukan item tindakan",
+      "DraftEmail": "Draf email tindak lanjut"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Apa yang bisa Anda bantu?",
+      "HelpAnalyze": "Bantu saya menganalisis rekaman terbaru saya"
+    },
+    "AssetContext": "Konteks: {{name}}"
   }
 }

@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Основная навигация",
-    "ClearSearch": "Очистить поиск"
+    "ClearSearch": "Очистить поиск",
+    "AgentPanel": "ИИ-агент"
   },
   "SidebarTabs": {
     "Audios": "Аудио",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Закрыть меню навигации",
     "OpenNavigationMenu": "Открыть меню навигации",
+    "MainNavigation": "Основная навигация",
+    "Record": "Записывать",
+    "Recording": "Запись",
+    "Files": "Файлы",
+    "Agent": "Agent",
     "Terminal": "Терминал"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Обработка…",
     "Starting": "Запуск…",
     "FileNameCopiedWithRenameHint": "{{fileName}} скопировано в буфер обмена. Дважды щёлкните, чтобы изменить имя файла.",
-    "ApplyName": "Применить имя"
+    "ApplyName": "Применить имя",
+    "Send": "Отправлять"
   },
   "RecordingControls": {
     "StartRecording": "Начать запись",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Не удалось сохранить буфер флэшбэк.",
     "SavedFlashback": "Сохранено в Записях.",
     "StillCharging": "Буфер флэшбэк всё ещё заряжается."
+  },
+  "AISummary": {
+    "TabTitle": "Обзор ИИ",
+    "SetupRequired": "Настройте ключ API Gemini в «Настройки» → «Функции AI», чтобы включить сводки AI.",
+    "EnableRequired": "Включите функции ИИ в «Настройки» → «Функции ИИ», чтобы увидеть сводные данные по ИИ.",
+    "ExportMarkdown": "Скопировать как Markdown",
+    "ExportSrt": "Копировать как SRT",
+    "ExportJson": "Скопировать как JSON",
+    "Regenerate": "Восстановить сводку",
+    "Minimize": "Свернуть",
+    "Maximize": "Развернуть до полного просмотра",
+    "Queued": "В очереди на обработку...",
+    "Processing": "Создание сводки...",
+    "Error": "Не удалось загрузить сводку: {{error}}.",
+    "PipelineError": "Обработка ИИ не удалась. Попробуйте регенерировать.",
+    "Retry": "Повторить попытку",
+    "NoSummary": "Резюме по ИИ пока нет.",
+    "Generate": "Создать сводку",
+    "Copy": "Копировать",
+    "NoSummaryText": "Резюме недоступно.",
+    "Topics": "Темы:",
+    "NoTranscript": "Стенограмма недоступна.",
+    "NoActions": "Действия не определены.",
+    "NoDecisions": "Ключевые решения не определены.",
+    "Export": {
+      "HeadingSummary": "Краткое содержание",
+      "HeadingActionItems": "Действия",
+      "HeadingKeyDecisions": "Ключевые решения",
+      "HeadingTranscription": "Транскрипция"
+    },
+    "Tab": {
+      "Summary": "Краткое содержание",
+      "Transcription": "Стенограмма",
+      "ActionItems": "Действия",
+      "KeyDecisions": "Решения",
+      "Agent": "Агент"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Возможности искусственного интеллекта",
+    "MenuItem": "Резюме на основе искусственного интеллекта",
+    "PageTitle": "Возможности искусственного интеллекта",
+    "EnableToggle": "Включите сводки на основе искусственного интеллекта",
+    "EnableToggleDesc": "Требуется бесплатный ключ Gemini API.",
+    "ApiKeySection": "API-ключ Близнецов",
+    "ApiKeyLabel": "API-ключ Близнецов",
+    "KeyPlaceholder": "АизаСы...",
+    "KeyPlaceholderSaved": "••••••••• (сохранено)",
+    "ShowKey": "Показать ключ",
+    "HideKey": "Скрыть ключ",
+    "TestKey": "Сохранить и проверить",
+    "Saving": "Сохранение...",
+    "GetKeyLink": "Получите бесплатный ключ API от Google AI Studio →",
+    "ClearKey": "Удалить сохраненный ключ",
+    "KeyVerified": "Ключ проверен",
+    "KeyInvalid": "Неверный ключ",
+    "KeyTesting": "Тестирование...",
+    "KeyNotConfigured": "Ключ не настроен",
+    "ModelSection": "Модель ИИ",
+    "ModelLabel": "Модель Близнецов",
+    "SelectedModel": "Выбрано: {{model}}",
+    "AutomationSection": "Автоматизация",
+    "AutoSummary": "Автоматическое создание сводки",
+    "AutoSummaryDesc": "Запускается после завершения каждой записи",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Рекомендуется · Быстрый + мощный",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Самый дешевый стабильный вариант",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ультра-дешевый",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Максимальная возможность",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Лучшее устойчивое рассуждение"
+    },
+    "ClaudeKey": {
+      "Section": "Ключ API Клода (Агент)",
+      "SourceLabel": "Активный источник:",
+      "SourceByok": "Ваш API-ключ (BYOK)",
+      "SourceKeyServer": "Под управлением SeaMeet",
+      "SourceCli": "Клод Код CLI",
+      "SourceNone": "Не настроено",
+      "KeyPlaceholder": "ск-муравей-...",
+      "KeyPlaceholderSaved": "••••••••• (сохранено)",
+      "ShowKey": "Показать ключ",
+      "HideKey": "Скрыть ключ",
+      "TestKey": "Сохранить и проверить",
+      "Saving": "Сохранение...",
+      "ClearKey": "Удалить сохраненный ключ",
+      "KeyVerified": "Ключ проверен",
+      "KeyInvalid": "Неверный ключ",
+      "KeyTesting": "Тестирование...",
+      "KeyNotConfigured": "Ключ не настроен",
+      "GetKeyLink": "Получите ключ API из Anthropic Console →",
+      "QuotaSection": "Ключевая квота сервера",
+      "QuotaRemaining": "Осталось {{remaining}} / {{limit}} токенов",
+      "QuotaResetDate": "Сбрасывается {{date}}",
+      "QuotaLoading": "Загрузка квоты...",
+      "QuotaRefresh": "Обновить квоту",
+      "CliSection": "Клод Код CLI",
+      "CliInstalled": "Установлено ({{version}})",
+      "CliNotInstalled": "Клод CLI не найден",
+      "CliInstallLink": "Установить Клод Код →",
+      "ModelSection": "Модель Клода по умолчанию",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Быстро и дешево",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Рекомендуется · Сбалансированный",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Самый способный"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI-агент и совместная работа",
+    "PageTitle": "AI-агент и совместная работа",
+    "SectionTitle": "AI-агент и совместная работа",
+    "EnableToggle": "Включить AI Agent и Cowork",
+    "EnableToggleDesc": "Требуется ключ API Claude.",
+    "DisabledBadge": "Неполноценный",
+    "DisabledMsg": "AI Agent & Cowork отключены. Включите его в «Настройки» → «AI Agent & Cowork».",
+    "DisabledTabHint": "AI Agent отключен — включите его в «Настройки» → AI Agent & Cowork.",
+    "NotConfiguredMsg": "Ключ API Claude не настроен. Настройте его в «Настройки» → «AI Agent & Cowork»."
+  },
+  "PipelineStatus": {
+    "Queued": "Сводка в очереди...",
+    "Running": "Создание сводки...",
+    "Progress": "Обработка фрагмента {{current}} из {{total}}",
+    "Done": "Резюме готово",
+    "Error": "Обработка не удалась"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Процесс с ИИ",
+    "Queuing": "Очередь...",
+    "ProcessingWithTime": "Обработка... {{sec}}s",
+    "Describe": "Опишите изображение",
+    "DescribeSub": "Что изображено на этом скриншоте?",
+    "Ocr": "Извлечь текст (OCR)",
+    "OcrSub": "Читать весь видимый текст",
+    "Custom": "Пользовательское приглашение",
+    "CustomPlaceholder": "Спросите что-нибудь об этом изображении...",
+    "ResultLabel": "Результат ИИ",
+    "Description": "Описание",
+    "ExtractedText": "Извлеченный текст",
+    "Analysis": "Анализ",
+    "PipelineError": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз.",
+    "UnknownError": "Неизвестная ошибка"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Чтение файла...",
+      "Executing": "Выполнение...",
+      "Running": "Бег...",
+      "Input": "Вход",
+      "Output": "Выход",
+      "Pattern": "Шаблон:",
+      "ShowDetails": "Показать детали",
+      "AndMoreLines": "... и еще {{count}} строк"
+    },
+    "Streaming": {
+      "Thinking": "Думая...",
+      "LongRunning": "Бег дольше обычного",
+      "ToolStuck": "Инструмент может застрять",
+      "ForceStop": "Принудительная остановка",
+      "GeneratingResponse": "Генерация ответа...",
+      "RunningTool": "Запуск {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Запрос разрешения инструмента",
+      "Allow": "Разрешить один раз",
+      "AllowSession": "Разрешить сеанс",
+      "Deny": "Отрицать",
+      "Allowed": "Допустимый",
+      "Denied": "Отклонен"
+    },
+    "Title": "ИИ-агент",
+    "GlobalTitle": "ИИ-агент",
+    "NewSession": "Новая сессия",
+    "Sessions": "Сессии",
+    "NoSessions": "Сеансов пока нет. Начните разговор ниже.",
+    "SendPlaceholder": "Спросите что угодно... (Enter для отправки, Shift+Enter для перехода на новую строку)",
+    "SendButton": "Отправлять",
+    "StopButton": "Останавливаться",
+    "NotConfigured": "Настройте ключ API Claude в «Настройки» → «Функции AI», чтобы использовать Агента.",
+    "GoToSettings": "Открыть настройки",
+    "SessionCost": "Сеанс: {inputTokens}_ в /{outputTokens}_ токенов",
+    "CommandHelp": "Команды: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Просить",
+      "Code": "Код",
+      "Plan": "План"
+    },
+    "Model": {
+      "Haiku": "Хайку",
+      "Sonnet": "Сонет",
+      "Opus": "Опус"
+    },
+    "QuickAction": {
+      "Summarize": "Подведите итог этой записи",
+      "ActionItems": "Найдите предметы для действий",
+      "DraftEmail": "Черновик последующего письма"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Чем вы можете мне помочь?",
+      "HelpAnalyze": "Помогите мне проанализировать мои последние записи"
+    },
+    "AssetContext": "Контекст: {{name}}"
   }
 }

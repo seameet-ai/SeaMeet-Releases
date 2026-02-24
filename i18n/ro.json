@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Navigare principală",
-    "ClearSearch": "Șterge căutarea"
+    "ClearSearch": "Șterge căutarea",
+    "AgentPanel": "Agent AI"
   },
   "SidebarTabs": {
     "Audios": "Audio",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Închide meniul de navigare",
     "OpenNavigationMenu": "Deschide meniul de navigare",
+    "MainNavigation": "Navigație principală",
+    "Record": "Înregistra",
+    "Recording": "Înregistrare",
+    "Files": "Fișiere",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Procesare…",
     "Starting": "Se inițiază...",
     "FileNameCopiedWithRenameHint": "{{fileName}} a fost copiat în clipboard. Faceți dublu clic pentru a schimba numele fișierului.",
-    "ApplyName": "Aplică numele"
+    "ApplyName": "Aplică numele",
+    "Send": "Trimite"
   },
   "RecordingControls": {
     "StartRecording": "Începe înregistrarea",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Eșuat la salvarea buffer-ului de retrogradă.",
     "SavedFlashback": "Retrogradă salvată în Recordings.",
     "StillCharging": "Buffer-ul retrogradă se încarcă încă."
+  },
+  "AISummary": {
+    "TabTitle": "Rezumat AI",
+    "SetupRequired": "Configurați-vă cheia API Gemini în Setări → Funcții AI pentru a activa rezumatele AI.",
+    "EnableRequired": "Activați funcțiile AI în Setări → Funcții AI pentru a vedea rezumatele AI.",
+    "ExportMarkdown": "Copiați ca Markdown",
+    "ExportSrt": "Copiați ca SRT",
+    "ExportJson": "Copiați ca JSON",
+    "Regenerate": "Regenerează rezumatul",
+    "Minimize": "Minimizați",
+    "Maximize": "Extindeți la vizualizarea completă",
+    "Queued": "În coadă pentru procesare...",
+    "Processing": "Se generează rezumatul...",
+    "Error": "Rezumatul nu a putut fi încărcat: {{error}}",
+    "PipelineError": "Procesarea AI a eșuat. Încearcă să te regenerezi.",
+    "Retry": "Reîncercați",
+    "NoSummary": "Nu există încă un rezumat AI.",
+    "Generate": "Generați un rezumat",
+    "Copy": "Copie",
+    "NoSummaryText": "Rezumatul nu este disponibil.",
+    "Topics": "Subiecte:",
+    "NoTranscript": "Transcrierea nu este disponibilă.",
+    "NoActions": "Nu s-au identificat elemente de acțiune.",
+    "NoDecisions": "Nu au fost identificate decizii cheie.",
+    "Export": {
+      "HeadingSummary": "Rezumat",
+      "HeadingActionItems": "Elemente de acțiune",
+      "HeadingKeyDecisions": "Decizii cheie",
+      "HeadingTranscription": "Transcriere"
+    },
+    "Tab": {
+      "Summary": "Rezumat",
+      "Transcription": "Transcriere",
+      "ActionItems": "Acțiuni",
+      "KeyDecisions": "Deciziile",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Caracteristici AI",
+    "MenuItem": "Rezumate bazate pe inteligență artificială",
+    "PageTitle": "Caracteristici AI",
+    "EnableToggle": "Activați rezumatele bazate pe inteligență artificială",
+    "EnableToggleDesc": "Necesită o cheie API Gemini gratuită",
+    "ApiKeySection": "Cheia API Gemini",
+    "ApiKeyLabel": "Cheia API Gemini",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "•••••••••• (salvat)",
+    "ShowKey": "Afișați cheia",
+    "HideKey": "Ascunde cheia",
+    "TestKey": "Salvați și verificați",
+    "Saving": "Economisire...",
+    "GetKeyLink": "Obțineți o cheie API gratuită de la Google AI Studio →",
+    "ClearKey": "Eliminați cheia salvată",
+    "KeyVerified": "Cheie verificată",
+    "KeyInvalid": "Cheie nevalidă",
+    "KeyTesting": "Testare...",
+    "KeyNotConfigured": "Nicio cheie configurată",
+    "ModelSection": "Model AI",
+    "ModelLabel": "Modelul Gemeni",
+    "SelectedModel": "Selectat: {{model}}",
+    "AutomationSection": "Automatizare",
+    "AutoSummary": "Rezumat generat automat",
+    "AutoSummaryDesc": "Se rulează după ce fiecare înregistrare se termină",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Recomandat · Rapid + capabil",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Cea mai ieftină opțiune stabilă",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-ieftin",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Capacitate maximă",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Cel mai bun raționament stabil"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API Key (agent)",
+      "SourceLabel": "Sursa activă:",
+      "SourceByok": "Cheia dvs. API (BYOK)",
+      "SourceKeyServer": "Gestionat de SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Neconfigurat",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "•••••••••• (salvat)",
+      "ShowKey": "Afișați cheia",
+      "HideKey": "Ascunde cheia",
+      "TestKey": "Salvați și verificați",
+      "Saving": "Economisire...",
+      "ClearKey": "Eliminați cheia salvată",
+      "KeyVerified": "Cheie verificată",
+      "KeyInvalid": "Cheie nevalidă",
+      "KeyTesting": "Testare...",
+      "KeyNotConfigured": "Nicio cheie configurată",
+      "GetKeyLink": "Obțineți o cheie API de la Anthropic Console →",
+      "QuotaSection": "Cota de server cheie",
+      "QuotaRemaining": "{remaining}_ / {{limit}} jetoane rămase",
+      "QuotaResetDate": "Se resetează pe {{date}}",
+      "QuotaLoading": "Se încarcă cota...",
+      "QuotaRefresh": "Actualizează cota",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Instalat ({{version}})",
+      "CliNotInstalled": "Claude CLI nu a fost găsit",
+      "CliInstallLink": "Instalați Claude Code →",
+      "ModelSection": "Model Claude implicit",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Rapid și ieftin",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recomandat · Echilibrat",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Cel mai capabil"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Agent AI și cowork",
+    "PageTitle": "Agent AI și cowork",
+    "SectionTitle": "Agent AI și cowork",
+    "EnableToggle": "Activați AI Agent & Cowork",
+    "EnableToggleDesc": "Necesită o cheie API Claude",
+    "DisabledBadge": "Dezactivat",
+    "DisabledMsg": "AI Agent & Cowork este dezactivat. Activați-l în Setări → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent este dezactivat — activați-l în Setări → AI Agent & Cowork",
+    "NotConfiguredMsg": "Nu a fost configurată nicio cheie API Claude. Configurați unul în Setări → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Rezumat în coadă...",
+    "Running": "Se generează rezumatul...",
+    "Progress": "Prelucrare bucată {{current}} din {{total}}",
+    "Done": "Rezumatul este gata",
+    "Error": "Procesarea nu a reușit"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Procesați cu AI",
+    "Queuing": "În coadă...",
+    "ProcessingWithTime": "Se procesează... {{sec}}s",
+    "Describe": "Descrie imaginea",
+    "DescribeSub": "Ce este în această captură de ecran?",
+    "Ocr": "Extrage text (OCR)",
+    "OcrSub": "Citiți tot textul vizibil",
+    "Custom": "Solicitare personalizată",
+    "CustomPlaceholder": "Întreabă orice despre această imagine...",
+    "ResultLabel": "Rezultat AI",
+    "Description": "Descriere",
+    "ExtractedText": "Text extras",
+    "Analysis": "Analiză",
+    "PipelineError": "Procesarea AI a eșuat. Vă rugăm să încercați din nou.",
+    "UnknownError": "Eroare necunoscută"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Se citește fișierul...",
+      "Executing": "Se execută...",
+      "Running": "Funcţionare...",
+      "Input": "Intrare",
+      "Output": "Ieșire",
+      "Pattern": "Model:",
+      "ShowDetails": "Afișați detalii",
+      "AndMoreLines": "... și încă {{count}} rânduri"
+    },
+    "Streaming": {
+      "Thinking": "Gândire...",
+      "LongRunning": "Alergă mai mult decât de obicei",
+      "ToolStuck": "Instrumentul poate fi blocat",
+      "ForceStop": "Oprire forțată",
+      "GeneratingResponse": "Se generează răspuns...",
+      "RunningTool": "Se execută {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Solicitare permisiunea instrumentului",
+      "Allow": "Permite o dată",
+      "AllowSession": "Permite sesiune",
+      "Deny": "Negați",
+      "Allowed": "Permis",
+      "Denied": "Negat"
+    },
+    "Title": "Agent AI",
+    "GlobalTitle": "Agent AI",
+    "NewSession": "Sesiune nouă",
+    "Sessions": "Sesiuni",
+    "NoSessions": "Nicio sesiune încă. Începeți o conversație de mai jos.",
+    "SendPlaceholder": "Întrebați orice... (Enter pentru a trimite, Shift+Enter pentru noua linie)",
+    "SendButton": "Trimite",
+    "StopButton": "Stop",
+    "NotConfigured": "Configurați o cheie API Claude în Setări → Funcții AI pentru a utiliza agentul.",
+    "GoToSettings": "Deschide Setări",
+    "SessionCost": "Sesiune: {inputTokens}_ în /{outputTokens}_ jetoane",
+    "CommandHelp": "Comenzi: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Întreabă",
+      "Code": "Cod",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonet",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Rezumați această înregistrare",
+      "ActionItems": "Găsiți elemente de acțiune",
+      "DraftEmail": "Schiță de e-mail de urmărire"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Cu ce ​​mă poți ajuta?",
+      "HelpAnalyze": "Ajută-mă să analizez înregistrările mele recente"
+    },
+    "AssetContext": "Context: {{name}}"
   }
 }

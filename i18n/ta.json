@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "முதன்மை வழிசெலுத்தல்",
-    "ClearSearch": "தெளிவான தேடல்"
+    "ClearSearch": "தெளிவான தேடல்",
+    "AgentPanel": "AI முகவர்"
   },
   "SidebarTabs": {
     "Audios": "ஒலிகள்",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "வழிசெலுத்தல் மெனுவை மூடு",
     "OpenNavigationMenu": "வழிசெலுத்தல் மெனுவை திற",
+    "MainNavigation": "முக்கிய வழிசெலுத்தல்",
+    "Record": "பதிவு",
+    "Recording": "பதிவு செய்தல்",
+    "Files": "கோப்புகள்",
+    "Agent": "Agent",
     "Terminal": "டெர்மினல்"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "செயலாக்கம் நடைபெற்று வருகிறது…",
     "Starting": "தொடங்குகிறது...",
     "FileNameCopiedWithRenameHint": "{{fileName}} காப்பியிடப்பட்டது. இரட்டு கிளிக் செய்து கோப்பு பெயரை மாற்றவும்.",
-    "ApplyName": "பெயரைச் சேர்க்கவும்"
+    "ApplyName": "பெயரைச் சேர்க்கவும்",
+    "Send": "அனுப்பு"
   },
   "RecordingControls": {
     "StartRecording": "பதிவைத் தொடக்கம்",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "flashback பைபர் சேமிக்க இயலவில்லை.",
     "SavedFlashback": "சேமிக்கப்பட்ட flashback-ஐ பதிவுகளில் சேமிக்கவும்.",
     "StillCharging": "Flashback பைபர் இன்னும் சார்ஜ் செய்கிறது."
+  },
+  "AISummary": {
+    "TabTitle": "AI சுருக்கம்",
+    "SetupRequired": "AI சுருக்கங்களை இயக்க, உங்கள் ஜெமினி API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
+    "EnableRequired": "AI சுருக்கங்களைப் பார்க்க, AI அம்சங்களை அமைப்புகள் → AI அம்சங்களில் இயக்கவும்.",
+    "ExportMarkdown": "மார்க் டவுனாக நகலெடுக்கவும்",
+    "ExportSrt": "SRT ஆக நகலெடுக்கவும்",
+    "ExportJson": "JSON ஆக நகலெடுக்கவும்",
+    "Regenerate": "சுருக்கத்தை மீண்டும் உருவாக்கவும்",
+    "Minimize": "குறைக்கவும்",
+    "Maximize": "முழு பார்வைக்கு விரிவாக்கு",
+    "Queued": "செயலாக்கத்திற்கு வரிசையில் உள்ளது...",
+    "Processing": "சுருக்கத்தை உருவாக்குகிறது...",
+    "Error": "சுருக்கத்தை ஏற்றுவதில் தோல்வி: {{error}}",
+    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் உருவாக்க முயற்சிக்கவும்.",
+    "Retry": "மீண்டும் முயற்சிக்கவும்",
+    "NoSummary": "இதுவரை AI சுருக்கம் இல்லை.",
+    "Generate": "சுருக்கத்தை உருவாக்கவும்",
+    "Copy": "நகலெடுக்கவும்",
+    "NoSummaryText": "சுருக்கம் கிடைக்கவில்லை.",
+    "Topics": "தலைப்புகள்:",
+    "NoTranscript": "டிரான்ஸ்கிரிப்ட் கிடைக்கவில்லை.",
+    "NoActions": "செயல் உருப்படிகள் எதுவும் அடையாளம் காணப்படவில்லை.",
+    "NoDecisions": "முக்கிய முடிவுகள் எதுவும் அடையாளம் காணப்படவில்லை.",
+    "Export": {
+      "HeadingSummary": "சுருக்கம்",
+      "HeadingActionItems": "செயல் பொருட்கள்",
+      "HeadingKeyDecisions": "முக்கிய முடிவுகள்",
+      "HeadingTranscription": "படியெடுத்தல்"
+    },
+    "Tab": {
+      "Summary": "சுருக்கம்",
+      "Transcription": "டிரான்ஸ்கிரிப்ட்",
+      "ActionItems": "செயல்கள்",
+      "KeyDecisions": "முடிவுகள்",
+      "Agent": "முகவர்"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "AI அம்சங்கள்",
+    "MenuItem": "AI-இயக்கப்படும் சுருக்கங்கள்",
+    "PageTitle": "AI அம்சங்கள்",
+    "EnableToggle": "AI-இயங்கும் சுருக்கங்களை இயக்கு",
+    "EnableToggleDesc": "இலவச ஜெமினி API விசை தேவை",
+    "ApiKeySection": "ஜெமினி API விசை",
+    "ApiKeyLabel": "ஜெமினி API விசை",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
+    "ShowKey": "விசையைக் காட்டு",
+    "HideKey": "விசையை மறை",
+    "TestKey": "சேமித்து சரிபார்க்கவும்",
+    "Saving": "சேமிக்கிறது...",
+    "GetKeyLink": "Google AI Studio → இலிருந்து இலவச API விசையைப் பெறுங்கள்",
+    "ClearKey": "சேமித்த விசையை அகற்று",
+    "KeyVerified": "விசை சரிபார்க்கப்பட்டது",
+    "KeyInvalid": "தவறான விசை",
+    "KeyTesting": "சோதனை...",
+    "KeyNotConfigured": "விசை எதுவும் கட்டமைக்கப்படவில்லை",
+    "ModelSection": "AI மாதிரி",
+    "ModelLabel": "ஜெமினி மாதிரி",
+    "SelectedModel": "தேர்ந்தெடுக்கப்பட்டது: {{model}}",
+    "AutomationSection": "ஆட்டோமேஷன்",
+    "AutoSummary": "தானாக உருவாக்கும் சுருக்கம்",
+    "AutoSummaryDesc": "ஒவ்வொரு பதிவு முடிந்ததும் இயங்கும்",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "பரிந்துரைக்கப்படுகிறது · வேகமாக + திறன்",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "மலிவான நிலையான விருப்பம்",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "மிக மலிவானது",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "அதிகபட்ச திறன்",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "சிறந்த நிலையான பகுத்தறிவு"
+    },
+    "ClaudeKey": {
+      "Section": "கிளாட் API விசை (முகவர்)",
+      "SourceLabel": "செயலில் உள்ள ஆதாரம்:",
+      "SourceByok": "உங்கள் API விசை (BYOK)",
+      "SourceKeyServer": "சீமீட்டால் நிர்வகிக்கப்படுகிறது",
+      "SourceCli": "கிளாட் குறியீடு CLI",
+      "SourceNone": "கட்டமைக்கப்படவில்லை",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
+      "ShowKey": "விசையைக் காட்டு",
+      "HideKey": "விசையை மறை",
+      "TestKey": "சேமித்து சரிபார்க்கவும்",
+      "Saving": "சேமிக்கிறது...",
+      "ClearKey": "சேமித்த விசையை அகற்று",
+      "KeyVerified": "விசை சரிபார்க்கப்பட்டது",
+      "KeyInvalid": "தவறான விசை",
+      "KeyTesting": "சோதனை...",
+      "KeyNotConfigured": "விசை எதுவும் கட்டமைக்கப்படவில்லை",
+      "GetKeyLink": "ஆந்த்ரோபிக் கன்சோலில் இருந்து API விசையைப் பெறவும் →",
+      "QuotaSection": "முக்கிய சேவையக ஒதுக்கீடு",
+      "QuotaRemaining": "{{remaining}} / {{limit}} டோக்கன்கள் மீதமுள்ளன",
+      "QuotaResetDate": "{{date}} இல் மீட்டமைக்கப்படுகிறது",
+      "QuotaLoading": "ஒதுக்கீட்டை ஏற்றுகிறது...",
+      "QuotaRefresh": "ஒதுக்கீட்டைப் புதுப்பிக்கவும்",
+      "CliSection": "கிளாட் குறியீடு CLI",
+      "CliInstalled": "நிறுவப்பட்டது ({{version}})",
+      "CliNotInstalled": "கிளாட் CLI கிடைக்கவில்லை",
+      "CliInstallLink": "கிளாட் குறியீட்டை நிறுவவும் →",
+      "ModelSection": "இயல்புநிலை கிளாட் மாதிரி",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "வேகமான & மலிவான",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "பரிந்துரைக்கப்படுகிறது · சமப்படுத்தப்பட்டது",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "மிகவும் திறமையானவர்"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI முகவர் & சகப்பணி",
+    "PageTitle": "AI முகவர் & சகப்பணி",
+    "SectionTitle": "AI முகவர் & சகப்பணி",
+    "EnableToggle": "AI முகவர் & சகப்பணியை இயக்கவும்",
+    "EnableToggleDesc": "Claude API விசை தேவை",
+    "DisabledBadge": "முடக்கப்பட்டது",
+    "DisabledMsg": "AI முகவர் & சகப்பணி முடக்கப்பட்டுள்ளது. அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்.",
+    "DisabledTabHint": "AI முகவர் முடக்கப்பட்டுள்ளது - அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்",
+    "NotConfiguredMsg": "Claude API விசை எதுவும் கட்டமைக்கப்படவில்லை. அமைப்புகள் → AI ஏஜென்ட் & கோவொர்க்கில் ஒன்றை அமைக்கவும்."
+  },
+  "PipelineStatus": {
+    "Queued": "சுருக்கம் வரிசையில் உள்ளது...",
+    "Running": "சுருக்கத்தை உருவாக்குகிறது...",
+    "Progress": "{{total}} இல் {{current}} பகுதியை செயலாக்குகிறது",
+    "Done": "சுருக்கம் தயார்",
+    "Error": "செயலாக்கம் தோல்வியடைந்தது"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "AI உடன் செயல்முறை",
+    "Queuing": "வரிசையில் நிற்கிறது...",
+    "ProcessingWithTime": "செயலாக்குகிறது... {{sec}}s",
+    "Describe": "படத்தை விவரிக்கவும்",
+    "DescribeSub": "இந்த ஸ்கிரீன்ஷாட்டில் என்ன இருக்கிறது?",
+    "Ocr": "உரையை பிரித்தெடுக்கவும் (OCR)",
+    "OcrSub": "காணக்கூடிய அனைத்து உரைகளையும் படிக்கவும்",
+    "Custom": "தனிப்பயன் உடனடி",
+    "CustomPlaceholder": "இந்தப் படத்தைப் பற்றி ஏதாவது கேளுங்கள்...",
+    "ResultLabel": "AI முடிவு",
+    "Description": "விளக்கம்",
+    "ExtractedText": "பிரித்தெடுக்கப்பட்ட உரை",
+    "Analysis": "பகுப்பாய்வு",
+    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.",
+    "UnknownError": "அறியப்படாத பிழை"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "கோப்பைப் படிக்கிறது...",
+      "Executing": "செயல்படுத்துகிறது...",
+      "Running": "இயங்குகிறது...",
+      "Input": "உள்ளீடு",
+      "Output": "வெளியீடு",
+      "Pattern": "முறை:",
+      "ShowDetails": "விவரங்களைக் காட்டு",
+      "AndMoreLines": "... மேலும் {{count}} வரிகள்"
+    },
+    "Streaming": {
+      "Thinking": "நினைத்து...",
+      "LongRunning": "வழக்கத்தை விட அதிக நேரம் ஓடுகிறது",
+      "ToolStuck": "கருவி சிக்கியிருக்கலாம்",
+      "ForceStop": "கட்டாயம் நிறுத்து",
+      "GeneratingResponse": "பதிலை உருவாக்குகிறது...",
+      "RunningTool": "{{tool}} இயங்குகிறது..."
+    },
+    "Permission": {
+      "Title": "கருவி அனுமதி கோரிக்கை",
+      "Allow": "ஒருமுறை அனுமதிக்கவும்",
+      "AllowSession": "அமர்வுக்கு அனுமதி",
+      "Deny": "மறுக்கவும்",
+      "Allowed": "அனுமதிக்கப்பட்டது",
+      "Denied": "மறுக்கப்பட்டது"
+    },
+    "Title": "AI முகவர்",
+    "GlobalTitle": "AI முகவர்",
+    "NewSession": "புதிய அமர்வு",
+    "Sessions": "அமர்வுகள்",
+    "NoSessions": "இன்னும் அமர்வுகள் இல்லை. கீழே உரையாடலைத் தொடங்கவும்.",
+    "SendPlaceholder": "எதையும் கேள்... (அனுப்புவதற்கு உள்ளிடவும், புதிய வரிக்கு Shift+Enter)",
+    "SendButton": "அனுப்பு",
+    "StopButton": "நிறுத்து",
+    "NotConfigured": "முகவரைப் பயன்படுத்த, Claude API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
+    "GoToSettings": "அமைப்புகளைத் திறக்கவும்",
+    "SessionCost": "அமர்வு: {inputTokens}_ இல் /{outputTokens}_ டோக்கன்கள்",
+    "CommandHelp": "கட்டளைகள்: /புதிய · /தெளிவு · /செலவு · /உதவி",
+    "Mode": {
+      "Ask": "கேள்",
+      "Code": "குறியீடு",
+      "Plan": "திட்டம்"
+    },
+    "Model": {
+      "Haiku": "ஹைக்கூ",
+      "Sonnet": "சொனட்",
+      "Opus": "ஓபஸ்"
+    },
+    "QuickAction": {
+      "Summarize": "இந்தப் பதிவைச் சுருக்கவும்",
+      "ActionItems": "செயல் உருப்படிகளைக் கண்டறியவும்",
+      "DraftEmail": "வரைவு பின்தொடர்தல் மின்னஞ்சல்"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "நீங்கள் எனக்கு என்ன உதவி செய்யலாம்?",
+      "HelpAnalyze": "எனது சமீபத்திய பதிவுகளை பகுப்பாய்வு செய்ய எனக்கு உதவுங்கள்"
+    },
+    "AssetContext": "சூழல்: {{name}}"
   }
 }

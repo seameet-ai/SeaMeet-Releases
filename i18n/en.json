@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Primary navigation",
-    "ClearSearch": "Clear search"
+    "ClearSearch": "Clear search",
+    "AgentPanel": "AI Agent"
   },
   "SidebarTabs": {
     "Audios": "Audios",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Close navigation menu",
     "OpenNavigationMenu": "Open navigation menu",
+    "MainNavigation": "Main navigation",
+    "Record": "Record",
+    "Recording": "Recording",
+    "Files": "Files",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Processing…",
     "Starting": "Starting...",
     "FileNameCopiedWithRenameHint": "{{fileName}} copied to clipboard. Double click to change file name.",
-    "ApplyName": "Apply name"
+    "ApplyName": "Apply name",
+    "Send": "Send"
   },
   "RecordingControls": {
     "StartRecording": "Start Recording",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Failed to save flashback buffer.",
     "SavedFlashback": "Saved flashback to Recordings.",
     "StillCharging": "Flashback buffer is still charging."
+  },
+  "AISummary": {
+    "TabTitle": "AI Extraction & Summary",
+    "SetupRequired": "Configure your Gemini API key in Settings → AI Features to enable AI summaries.",
+    "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
+    "ExportMarkdown": "Copy as Markdown",
+    "ExportSrt": "Copy as SRT",
+    "ExportJson": "Copy as JSON",
+    "Regenerate": "Regenerate summary",
+    "Minimize": "Minimize",
+    "Maximize": "Expand to full view",
+    "Queued": "Queued for processing...",
+    "Processing": "Generating summary...",
+    "Error": "Failed to load summary: {{error}}",
+    "PipelineError": "AI processing failed. Try regenerating.",
+    "Retry": "Retry",
+    "NoSummary": "No AI summary yet.",
+    "Generate": "Generate Summary",
+    "Copy": "Copy",
+    "NoSummaryText": "Summary not available.",
+    "Topics": "Topics:",
+    "NoTranscript": "Transcript not available.",
+    "NoActions": "No action items identified.",
+    "NoDecisions": "No key decisions identified.",
+    "Export": {
+      "HeadingSummary": "Summary",
+      "HeadingActionItems": "Action Items",
+      "HeadingKeyDecisions": "Key Decisions",
+      "HeadingTranscription": "Transcription"
+    },
+    "Tab": {
+      "Summary": "Summary",
+      "Transcription": "Transcript",
+      "ActionItems": "Actions",
+      "KeyDecisions": "Decisions",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "AI Features",
+    "MenuItem": "AI Extraction & Summary",
+    "PageTitle": "AI Extraction & Summary",
+    "EnableToggle": "Enable AI-powered summaries",
+    "EnableToggleDesc": "Requires a free Gemini API key",
+    "ApiKeySection": "Gemini API Key",
+    "ApiKeyLabel": "Gemini API Key",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (saved)",
+    "ShowKey": "Show key",
+    "HideKey": "Hide key",
+    "TestKey": "Save & Verify",
+    "Saving": "Saving...",
+    "GetKeyLink": "Get a free API key from Google AI Studio →",
+    "ClearKey": "Remove saved key",
+    "KeyVerified": "Key verified",
+    "KeyInvalid": "Invalid key",
+    "KeyTesting": "Testing...",
+    "KeyNotConfigured": "No key configured",
+    "ModelSection": "AI Model",
+    "ModelLabel": "Gemini Model",
+    "SelectedModel": "Selected: {{model}}",
+    "AutomationSection": "Automation",
+    "AutoSummary": "Auto-generate summary",
+    "AutoSummaryDesc": "Runs after every recording finishes",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Recommended · Fast + capable",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Cheapest stable option",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-cheap",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maximum capability",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Best stable reasoning"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API Key (Agent)",
+      "SourceLabel": "Active source:",
+      "SourceByok": "Your API key (BYOK)",
+      "SourceKeyServer": "Managed by SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Not configured",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (saved)",
+      "ShowKey": "Show key",
+      "HideKey": "Hide key",
+      "TestKey": "Save & Verify",
+      "Saving": "Saving...",
+      "ClearKey": "Remove saved key",
+      "KeyVerified": "Key verified",
+      "KeyInvalid": "Invalid key",
+      "KeyTesting": "Testing...",
+      "KeyNotConfigured": "No key configured",
+      "GetKeyLink": "Get an API key from Anthropic Console →",
+      "QuotaSection": "Key Server Quota",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens remaining",
+      "QuotaResetDate": "Resets on {{date}}",
+      "QuotaLoading": "Loading quota...",
+      "QuotaRefresh": "Refresh quota",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Installed ({{version}})",
+      "CliNotInstalled": "Claude CLI not found",
+      "CliInstallLink": "Install Claude Code →",
+      "ModelSection": "Default Claude Model",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Fast & cheap",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recommended · Balanced",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Most capable"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork",
+    "EnableToggle": "Enable AI Agent & Cowork",
+    "EnableToggleDesc": "Requires a Claude API Key",
+    "DisabledBadge": "Disabled",
+    "DisabledMsg": "AI Agent & Cowork is disabled. Enable it in Settings → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent is disabled — enable it in Settings → AI Agent & Cowork",
+    "NotConfiguredMsg": "No Claude API key configured. Set one up in Settings → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Summary queued...",
+    "Running": "Generating summary...",
+    "Progress": "Processing chunk {{current}} of {{total}}",
+    "Done": "Summary ready",
+    "Error": "Processing failed"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Process with AI",
+    "Queuing": "Queuing...",
+    "ProcessingWithTime": "Processing... {{sec}}s",
+    "Describe": "Describe image",
+    "DescribeSub": "What is in this screenshot?",
+    "Ocr": "Extract text (OCR)",
+    "OcrSub": "Read all visible text",
+    "Custom": "Custom prompt",
+    "CustomPlaceholder": "Ask anything about this image...",
+    "ResultLabel": "AI Result",
+    "Description": "Description",
+    "ExtractedText": "Extracted Text",
+    "Analysis": "Analysis",
+    "PipelineError": "AI processing failed. Please try again.",
+    "UnknownError": "Unknown error"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Reading file...",
+      "Executing": "Executing...",
+      "Running": "Running...",
+      "Input": "Input",
+      "Output": "Output",
+      "Pattern": "Pattern:",
+      "ShowDetails": "Show details",
+      "AndMoreLines": "... and {{count}} more lines"
+    },
+    "Streaming": {
+      "Thinking": "Thinking...",
+      "LongRunning": "Running longer than usual",
+      "ToolStuck": "Tool may be stuck",
+      "ForceStop": "Force stop",
+      "GeneratingResponse": "Generating response...",
+      "RunningTool": "Running {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Tool Permission Request",
+      "Allow": "Allow Once",
+      "AllowSession": "Allow for Session",
+      "Deny": "Deny",
+      "Allowed": "Allowed",
+      "Denied": "Denied"
+    },
+    "Title": "AI Agent",
+    "GlobalTitle": "AI Agent",
+    "NewSession": "New session",
+    "Sessions": "Sessions",
+    "NoSessions": "No sessions yet. Start a conversation below.",
+    "SendPlaceholder": "Ask anything... (Enter to send, Shift+Enter for newline)",
+    "SendButton": "Send",
+    "StopButton": "Stop",
+    "NotConfigured": "Configure a Claude API key in Settings → AI Features to use the Agent.",
+    "GoToSettings": "Open Settings",
+    "SessionCost": "Session: {{inputTokens}} in / {{outputTokens}} out tokens",
+    "CommandHelp": "Commands: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Ask",
+      "Code": "Code",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonnet",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Summarize this recording",
+      "ActionItems": "Find action items",
+      "DraftEmail": "Draft follow-up email"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "What can you help me with?",
+      "HelpAnalyze": "Help me analyze my recent recordings"
+    },
+    "AssetContext": "Context: {{name}}"
   }
 }

@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Nawigacja główna",
-    "ClearSearch": "Wyczyść wyszukiwanie"
+    "ClearSearch": "Wyczyść wyszukiwanie",
+    "AgentPanel": "Agent AI"
   },
   "SidebarTabs": {
     "Audios": "Audio",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Zamknij menu nawigacyjne",
     "OpenNavigationMenu": "Otwórz menu nawigacyjne",
+    "MainNavigation": "Główna nawigacja",
+    "Record": "Nagrywać",
+    "Recording": "Nagranie",
+    "Files": "Akta",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Przetwarzanie…",
     "Starting": "Rozpoczynam…",
     "FileNameCopiedWithRenameHint": "{{fileName}} skopiowano do schowka. Kliknij dwukrotnie, aby zmienić nazwę pliku.",
-    "ApplyName": "Apply name → Zastosuj nazwę"
+    "ApplyName": "Apply name → Zastosuj nazwę",
+    "Send": "Wysłać"
   },
   "RecordingControls": {
     "StartRecording": "Rozpocznij nagrywanie",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Nie udało się zapisać wspomnienia.",
     "SavedFlashback": "Zapisano wspomnienie do nagrań.",
     "StillCharging": "Bufor wspomnienia nadal się ładuje."
+  },
+  "AISummary": {
+    "TabTitle": "Podsumowanie sztucznej inteligencji",
+    "SetupRequired": "Skonfiguruj klucz API Gemini w Ustawieniach → Funkcje AI, aby włączyć podsumowania AI.",
+    "EnableRequired": "Włącz funkcje AI w Ustawieniach → Funkcje AI, aby wyświetlić podsumowania AI.",
+    "ExportMarkdown": "Skopiuj jako Markdown",
+    "ExportSrt": "Skopiuj jako SRT",
+    "ExportJson": "Skopiuj jako JSON",
+    "Regenerate": "Regeneruj podsumowanie",
+    "Minimize": "Zminimalizować",
+    "Maximize": "Rozwiń do pełnego widoku",
+    "Queued": "W kolejce do przetworzenia...",
+    "Processing": "Generuję podsumowanie...",
+    "Error": "Nie udało się załadować podsumowania: {{error}}",
+    "PipelineError": "Przetwarzanie AI nie powiodło się. Spróbuj regeneracji.",
+    "Retry": "Spróbować ponownie",
+    "NoSummary": "Nie ma jeszcze podsumowania AI.",
+    "Generate": "Wygeneruj podsumowanie",
+    "Copy": "Kopia",
+    "NoSummaryText": "Podsumowanie niedostępne.",
+    "Topics": "Tematy:",
+    "NoTranscript": "Transkrypcja niedostępna.",
+    "NoActions": "Nie zidentyfikowano żadnych elementów działania.",
+    "NoDecisions": "Nie zidentyfikowano żadnych kluczowych decyzji.",
+    "Export": {
+      "HeadingSummary": "Streszczenie",
+      "HeadingActionItems": "Przedmioty akcji",
+      "HeadingKeyDecisions": "Kluczowe decyzje",
+      "HeadingTranscription": "Transkrypcja"
+    },
+    "Tab": {
+      "Summary": "Streszczenie",
+      "Transcription": "Transkrypcja",
+      "ActionItems": "Działania",
+      "KeyDecisions": "Decyzje",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Funkcje sztucznej inteligencji",
+    "MenuItem": "Podsumowania oparte na sztucznej inteligencji",
+    "PageTitle": "Funkcje sztucznej inteligencji",
+    "EnableToggle": "Włącz podsumowania oparte na sztucznej inteligencji",
+    "EnableToggleDesc": "Wymaga darmowego klucza API Gemini",
+    "ApiKeySection": "Klucz API Gemini",
+    "ApiKeyLabel": "Klucz API Gemini",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (zapisano)",
+    "ShowKey": "Pokaż klucz",
+    "HideKey": "Ukryj klucz",
+    "TestKey": "Zapisz i zweryfikuj",
+    "Saving": "Oszczędność...",
+    "GetKeyLink": "Uzyskaj bezpłatny klucz API z Google AI Studio →",
+    "ClearKey": "Usuń zapisany klucz",
+    "KeyVerified": "Klucz zweryfikowany",
+    "KeyInvalid": "Nieprawidłowy klucz",
+    "KeyTesting": "Testowanie...",
+    "KeyNotConfigured": "Nie skonfigurowano klucza",
+    "ModelSection": "Model AI",
+    "ModelLabel": "Model Bliźniąt",
+    "SelectedModel": "Wybrano: {{model}}",
+    "AutomationSection": "Automatyzacja",
+    "AutoSummary": "Automatyczne generowanie podsumowania",
+    "AutoSummaryDesc": "Uruchamia się po zakończeniu każdego nagrania",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Zalecane · Szybki + sprawny",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Najtańsza stabilna opcja",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-tani",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maksymalna wydajność",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Najlepsze stabilne rozumowanie"
+    },
+    "ClaudeKey": {
+      "Section": "Klucz API Claude (Agent)",
+      "SourceLabel": "Aktywne źródło:",
+      "SourceByok": "Twój klucz API (BYOK)",
+      "SourceKeyServer": "Zarządzane przez SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Nie skonfigurowano",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (zapisano)",
+      "ShowKey": "Pokaż klucz",
+      "HideKey": "Ukryj klucz",
+      "TestKey": "Zapisz i zweryfikuj",
+      "Saving": "Oszczędność...",
+      "ClearKey": "Usuń zapisany klucz",
+      "KeyVerified": "Klucz zweryfikowany",
+      "KeyInvalid": "Nieprawidłowy klucz",
+      "KeyTesting": "Testowanie...",
+      "KeyNotConfigured": "Nie skonfigurowano klucza",
+      "GetKeyLink": "Uzyskaj klucz API z Anthropic Console →",
+      "QuotaSection": "Limit serwera kluczy",
+      "QuotaRemaining": "{{remaining}} / {{limit}} pozostałych tokenów",
+      "QuotaResetDate": "Resetuje się {{date}}",
+      "QuotaLoading": "Ładowanie limitu...",
+      "QuotaRefresh": "Odśwież limit",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Zainstalowano ({{version}})",
+      "CliNotInstalled": "Nie znaleziono Claude CLI",
+      "CliInstallLink": "Zainstaluj Kod Claude’a →",
+      "ModelSection": "Domyślny model Claude'a",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Szybko i tanio",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Zalecane · Zrównoważony",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Najbardziej zdolny"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Agent AI i współpraca",
+    "PageTitle": "Agent AI i współpraca",
+    "SectionTitle": "Agent AI i współpraca",
+    "EnableToggle": "Włącz agenta AI i współpracę",
+    "EnableToggleDesc": "Wymaga klucza API Claude",
+    "DisabledBadge": "Wyłączony",
+    "DisabledMsg": "Opcja AI Agent & Cowork jest wyłączona. Włącz tę opcję w Ustawieniach → Agent AI i Cowork.",
+    "DisabledTabHint": "Agent AI jest wyłączony — włącz go w Ustawieniach → Agent AI i współpraca",
+    "NotConfiguredMsg": "Nie skonfigurowano klucza API Claude. Skonfiguruj je w Ustawieniach → Agent AI i współpraca."
+  },
+  "PipelineStatus": {
+    "Queued": "Podsumowanie w kolejce...",
+    "Running": "Generuję podsumowanie...",
+    "Progress": "Przetwarzanie fragmentu {{current}} z {{total}}",
+    "Done": "Podsumowanie gotowe",
+    "Error": "Przetwarzanie nie powiodło się"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Przetwarzaj za pomocą sztucznej inteligencji",
+    "Queuing": "Kolejka...",
+    "ProcessingWithTime": "Przetwarzanie... {{sec}}s",
+    "Describe": "Opisz obraz",
+    "DescribeSub": "Co jest na tym zrzucie ekranu?",
+    "Ocr": "Wyodrębnij tekst (OCR)",
+    "OcrSub": "Przeczytaj cały widoczny tekst",
+    "Custom": "Niestandardowy monit",
+    "CustomPlaceholder": "Zapytaj o cokolwiek na temat tego obrazu...",
+    "ResultLabel": "Wynik AI",
+    "Description": "Opis",
+    "ExtractedText": "Wyodrębniony tekst",
+    "Analysis": "Analiza",
+    "PipelineError": "Przetwarzanie AI nie powiodło się. Spróbuj ponownie.",
+    "UnknownError": "Nieznany błąd"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Czytanie pliku...",
+      "Executing": "Wykonywanie...",
+      "Running": "Działanie...",
+      "Input": "Wejście",
+      "Output": "Wyjście",
+      "Pattern": "Wzór:",
+      "ShowDetails": "Pokaż szczegóły",
+      "AndMoreLines": "... i {{count}} więcej linii"
+    },
+    "Streaming": {
+      "Thinking": "Myślący...",
+      "LongRunning": "Bieganie dłużej niż zwykle",
+      "ToolStuck": "Narzędzie może się zablokować",
+      "ForceStop": "Wymuś zatrzymanie",
+      "GeneratingResponse": "Generuję odpowiedź...",
+      "RunningTool": "Uruchamiam {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Prośba o pozwolenie na narzędzie",
+      "Allow": "Zezwól raz",
+      "AllowSession": "Zezwól na sesję",
+      "Deny": "Zaprzeczyć",
+      "Allowed": "Dozwolony",
+      "Denied": "Zaprzeczony"
+    },
+    "Title": "Agent AI",
+    "GlobalTitle": "Agent AI",
+    "NewSession": "Nowa sesja",
+    "Sessions": "Sesje",
+    "NoSessions": "Nie ma jeszcze sesji. Rozpocznij rozmowę poniżej.",
+    "SendPlaceholder": "Zapytaj o cokolwiek... (Enter, aby wysłać, Shift+Enter, aby przejść do nowej linii)",
+    "SendButton": "Wysłać",
+    "StopButton": "Zatrzymywać się",
+    "NotConfigured": "Skonfiguruj klucz API Claude w Ustawieniach → Funkcje AI, aby móc korzystać z Agenta.",
+    "GoToSettings": "Otwórz Ustawienia",
+    "SessionCost": "Sesja: {inputTokens}_ w /{outputTokens}_ tokenach",
+    "CommandHelp": "Polecenia: /nowy · /wyczyść · /koszt · /pomoc",
+    "Mode": {
+      "Ask": "Zapytać",
+      "Code": "Kod",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonet",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Podsumuj to nagranie",
+      "ActionItems": "Znajdź elementy akcji",
+      "DraftEmail": "Projekt e-maila uzupełniającego"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "W czym możesz mi pomóc?",
+      "HelpAnalyze": "Pomóż mi przeanalizować moje ostatnie nagrania"
+    },
+    "AssetContext": "Kontekst: {{name}}"
   }
 }

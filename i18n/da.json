@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Primær navigation",
-    "ClearSearch": "Ryd søgning"
+    "ClearSearch": "Ryd søgning",
+    "AgentPanel": "AI-agent"
   },
   "SidebarTabs": {
     "Audios": "Lyde",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Luk navigationsmenu",
     "OpenNavigationMenu": "Åbn navigationsmenu",
+    "MainNavigation": "Hovednavigation",
+    "Record": "Optage",
+    "Recording": "Indspilning",
+    "Files": "Filer",
+    "Agent": "Agent",
     "Terminal": "Terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Behandler...",
     "Starting": "Starter...",
     "FileNameCopiedWithRenameHint": "{{fileName}} kopieret til udklipsholder. Dobbeltklik for at ændre filnavn.",
-    "ApplyName": "Anvend navn"
+    "ApplyName": "Anvend navn",
+    "Send": "Sende"
   },
   "RecordingControls": {
     "StartRecording": "Start optagelse",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Kunne ikke gemme flashback-bufferen.",
     "SavedFlashback": "Flashback gemt i Optagelser.",
     "StillCharging": "Flashback-bufferen indlæser stadig."
+  },
+  "AISummary": {
+    "TabTitle": "AI oversigt",
+    "SetupRequired": "Konfigurer din Gemini API-nøgle i Indstillinger → AI-funktioner for at aktivere AI-oversigter.",
+    "EnableRequired": "Aktiver AI-funktioner i Indstillinger → AI-funktioner for at se AI-oversigter.",
+    "ExportMarkdown": "Kopiér som Markdown",
+    "ExportSrt": "Kopiér som SRT",
+    "ExportJson": "Kopiér som JSON",
+    "Regenerate": "Gendan oversigt",
+    "Minimize": "Minimer",
+    "Maximize": "Udvid til fuld visning",
+    "Queued": "I kø til behandling...",
+    "Processing": "Genererer oversigt...",
+    "Error": "Kunne ikke indlæse oversigt: {{error}}",
+    "PipelineError": "AI-behandling mislykkedes. Prøv at regenerere.",
+    "Retry": "Prøv igen",
+    "NoSummary": "Ingen AI-oversigt endnu.",
+    "Generate": "Generer oversigt",
+    "Copy": "Kopi",
+    "NoSummaryText": "Resumé er ikke tilgængelig.",
+    "Topics": "Emner:",
+    "NoTranscript": "Udskrift ikke tilgængelig.",
+    "NoActions": "Ingen handlingspunkter identificeret.",
+    "NoDecisions": "Ingen nøglebeslutninger identificeret.",
+    "Export": {
+      "HeadingSummary": "Oversigt",
+      "HeadingActionItems": "Handlingspunkter",
+      "HeadingKeyDecisions": "Nøglebeslutninger",
+      "HeadingTranscription": "Transskription"
+    },
+    "Tab": {
+      "Summary": "Oversigt",
+      "Transcription": "Afskrift",
+      "ActionItems": "Handlinger",
+      "KeyDecisions": "Beslutninger",
+      "Agent": "Agent"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "AI funktioner",
+    "MenuItem": "AI-drevne resuméer",
+    "PageTitle": "AI funktioner",
+    "EnableToggle": "Aktiver AI-drevne oversigter",
+    "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
+    "ApiKeySection": "Gemini API nøgle",
+    "ApiKeyLabel": "Gemini API nøgle",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (gemt)",
+    "ShowKey": "Vis nøgle",
+    "HideKey": "Skjul nøgle",
+    "TestKey": "Gem og bekræft",
+    "Saving": "Gemmer...",
+    "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
+    "ClearKey": "Fjern gemt nøgle",
+    "KeyVerified": "Nøgle bekræftet",
+    "KeyInvalid": "Ugyldig nøgle",
+    "KeyTesting": "Tester...",
+    "KeyNotConfigured": "Ingen nøgle konfigureret",
+    "ModelSection": "AI model",
+    "ModelLabel": "Gemini model",
+    "SelectedModel": "Valgt: {{model}}",
+    "AutomationSection": "Automatisering",
+    "AutoSummary": "Autogenerer oversigt",
+    "AutoSummaryDesc": "Kører efter hver optagelse er færdig",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Anbefalet · Hurtig + stand",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Billigste stabil mulighed",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-billig",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maksimal kapacitet",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Bedste stabile ræsonnement"
+    },
+    "ClaudeKey": {
+      "Section": "Claude API-nøgle (agent)",
+      "SourceLabel": "Aktiv kilde:",
+      "SourceByok": "Din API-nøgle (BYOK)",
+      "SourceKeyServer": "Administreret af SeaMeet",
+      "SourceCli": "Claude Code CLI",
+      "SourceNone": "Ikke konfigureret",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (gemt)",
+      "ShowKey": "Vis nøgle",
+      "HideKey": "Skjul nøgle",
+      "TestKey": "Gem og bekræft",
+      "Saving": "Gemmer...",
+      "ClearKey": "Fjern gemt nøgle",
+      "KeyVerified": "Nøgle bekræftet",
+      "KeyInvalid": "Ugyldig nøgle",
+      "KeyTesting": "Tester...",
+      "KeyNotConfigured": "Ingen nøgle konfigureret",
+      "GetKeyLink": "Få en API-nøgle fra Anthropic Console →",
+      "QuotaSection": "Nøgleserverkvote",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
+      "QuotaResetDate": "Nulstiller på {{date}}",
+      "QuotaLoading": "Indlæser kvote...",
+      "QuotaRefresh": "Opdater kvote",
+      "CliSection": "Claude Code CLI",
+      "CliInstalled": "Installeret ({{version}})",
+      "CliNotInstalled": "Claude CLI ikke fundet",
+      "CliInstallLink": "Installer Claude Code →",
+      "ModelSection": "Standard Claude Model",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Hurtigt & billigt",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Anbefalet · Afbalanceret",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Mest dygtige"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork",
+    "EnableToggle": "Aktiver AI Agent & Cowork",
+    "EnableToggleDesc": "Kræver en Claude API-nøgle",
+    "DisabledBadge": "Handicappet",
+    "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent er deaktiveret — aktiver den i Indstillinger → AI Agent & Cowork",
+    "NotConfiguredMsg": "Ingen Claude API-nøgle konfigureret. Konfigurer en i Indstillinger → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Resumé i kø...",
+    "Running": "Genererer oversigt...",
+    "Progress": "Behandler del {{current}} af {{total}}",
+    "Done": "Opsummering klar",
+    "Error": "Behandlingen mislykkedes"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Proces med AI",
+    "Queuing": "I kø...",
+    "ProcessingWithTime": "Behandler... {{sec}}s",
+    "Describe": "Beskriv billede",
+    "DescribeSub": "Hvad er der i dette skærmbillede?",
+    "Ocr": "Udtræk tekst (OCR)",
+    "OcrSub": "Læs al synlig tekst",
+    "Custom": "Brugerdefineret prompt",
+    "CustomPlaceholder": "Spørg noget om dette billede...",
+    "ResultLabel": "AI resultat",
+    "Description": "Beskrivelse",
+    "ExtractedText": "Udtrukket tekst",
+    "Analysis": "Analyse",
+    "PipelineError": "AI-behandling mislykkedes. Prøv venligst igen.",
+    "UnknownError": "Ukendt fejl"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Læser fil...",
+      "Executing": "Udfører...",
+      "Running": "Kører...",
+      "Input": "Input",
+      "Output": "Produktion",
+      "Pattern": "Mønster:",
+      "ShowDetails": "Vis detaljer",
+      "AndMoreLines": "... og {{count}} flere linjer"
+    },
+    "Streaming": {
+      "Thinking": "Tænker...",
+      "LongRunning": "Løber længere end normalt",
+      "ToolStuck": "Værktøjet kan sidde fast",
+      "ForceStop": "Tving stop",
+      "GeneratingResponse": "Genererer svar...",
+      "RunningTool": "Kører {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Anmodning om værktøjstilladelse",
+      "Allow": "Tillad én gang",
+      "AllowSession": "Tillad session",
+      "Deny": "Nægte",
+      "Allowed": "Tilladt",
+      "Denied": "Afvist"
+    },
+    "Title": "AI-agent",
+    "GlobalTitle": "AI-agent",
+    "NewSession": "Ny session",
+    "Sessions": "Sessioner",
+    "NoSessions": "Ingen sessioner endnu. Start en samtale nedenfor.",
+    "SendPlaceholder": "Spørg hvad som helst... (Enter for at sende, Shift+Enter for ny linje)",
+    "SendButton": "Sende",
+    "StopButton": "Stop",
+    "NotConfigured": "Konfigurer en Claude API-nøgle i Indstillinger → AI-funktioner for at bruge agenten.",
+    "GoToSettings": "Åbn Indstillinger",
+    "SessionCost": "Session: {inputTokens}_ ind /{outputTokens}_ ud tokens",
+    "CommandHelp": "Kommandoer: /ny · /ryd · /pris · /hjælp",
+    "Mode": {
+      "Ask": "Spørge",
+      "Code": "Kode",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Sonnet": "Sonnet",
+      "Opus": "Opus"
+    },
+    "QuickAction": {
+      "Summarize": "Opsummer denne optagelse",
+      "ActionItems": "Find handlingspunkter",
+      "DraftEmail": "Udkast til opfølgningsmail"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Hvad kan du hjælpe mig med?",
+      "HelpAnalyze": "Hjælp mig med at analysere mine seneste optagelser"
+    },
+    "AssetContext": "Kontekst: {{name}}"
   }
 }

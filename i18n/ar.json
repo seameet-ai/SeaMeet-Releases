@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "التنقل الأساسي",
-    "ClearSearch": "مسح البحث"
+    "ClearSearch": "مسح البحث",
+    "AgentPanel": "وكيل منظمة العفو الدولية"
   },
   "SidebarTabs": {
     "Audios": "الصوتيات",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "إغلاق قائمة التنقل",
     "OpenNavigationMenu": "فتح قائمة التنقل",
+    "MainNavigation": "الملاحة الرئيسية",
+    "Record": "سِجِلّ",
+    "Recording": "تسجيل",
+    "Files": "ملفات",
+    "Agent": "Agent",
     "Terminal": "واجهة طرفية"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "جار المعالجة…",
     "Starting": "جار البدء...",
     "FileNameCopiedWithRenameHint": "تم نسخ {{fileName}} إلى الحافظة. انقر مرتين لتغيير اسم الملف.",
-    "ApplyName": "تطبيق الاسم"
+    "ApplyName": "تطبيق الاسم",
+    "Send": "يرسل"
   },
   "RecordingControls": {
     "StartRecording": "ابدأ تسجيل الفيديو",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "فشل في حفظ ذاكرة العودة إلى الماضي",
     "SavedFlashback": "تم حفظ العودة إلى الماضي في التسجيلات",
     "StillCharging": "ذاكرة العودة إلى الماضي لا تزال تتشحن."
+  },
+  "AISummary": {
+    "TabTitle": "ملخص الذكاء الاصطناعي",
+    "SetupRequired": "قم بتكوين مفتاح Gemini API الخاص بك في الإعدادات → ميزات الذكاء الاصطناعي لتمكين ملخصات الذكاء الاصطناعي.",
+    "EnableRequired": "قم بتمكين ميزات الذكاء الاصطناعي في الإعدادات → ميزات الذكاء الاصطناعي لرؤية ملخصات الذكاء الاصطناعي.",
+    "ExportMarkdown": "نسخ كتخفيض السعر",
+    "ExportSrt": "انسخ كـ SRT",
+    "ExportJson": "انسخ كـ JSON",
+    "Regenerate": "إعادة إنشاء الملخص",
+    "Minimize": "تصغير",
+    "Maximize": "قم بالتوسيع إلى العرض الكامل",
+    "Queued": "في قائمة الانتظار للمعالجة...",
+    "Processing": "جارٍ إنشاء الملخص...",
+    "Error": "فشل تحميل الملخص: {{error}}",
+    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. حاول التجديد.",
+    "Retry": "أعد المحاولة",
+    "NoSummary": "لا يوجد ملخص لمنظمة العفو الدولية حتى الآن.",
+    "Generate": "إنشاء ملخص",
+    "Copy": "ينسخ",
+    "NoSummaryText": "الملخص غير متوفر.",
+    "Topics": "المواضيع:",
+    "NoTranscript": "النص غير متوفر.",
+    "NoActions": "لم يتم تحديد أي عناصر عمل.",
+    "NoDecisions": "لم يتم تحديد أي قرارات رئيسية.",
+    "Export": {
+      "HeadingSummary": "ملخص",
+      "HeadingActionItems": "عناصر العمل",
+      "HeadingKeyDecisions": "القرارات الرئيسية",
+      "HeadingTranscription": "النسخ"
+    },
+    "Tab": {
+      "Summary": "ملخص",
+      "Transcription": "نص",
+      "ActionItems": "الإجراءات",
+      "KeyDecisions": "القرارات",
+      "Agent": "عامل"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "ميزات الذكاء الاصطناعي",
+    "MenuItem": "ملخصات مدعومة بالذكاء الاصطناعي",
+    "PageTitle": "ميزات الذكاء الاصطناعي",
+    "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
+    "EnableToggleDesc": "يتطلب مفتاح Gemini API مجاني",
+    "ApiKeySection": "الجوزاء API مفتاح",
+    "ApiKeyLabel": "الجوزاء API مفتاح",
+    "KeyPlaceholder": "ايزاسي...",
+    "KeyPlaceholderSaved": "••••••••• (أنقذ)",
+    "ShowKey": "إظهار المفتاح",
+    "HideKey": "إخفاء المفتاح",
+    "TestKey": "حفظ والتحقق",
+    "Saving": "توفير...",
+    "GetKeyLink": "احصل على مفتاح API مجاني من Google AI Studio →",
+    "ClearKey": "إزالة المفتاح المحفوظ",
+    "KeyVerified": "تم التحقق من المفتاح",
+    "KeyInvalid": "مفتاح غير صالح",
+    "KeyTesting": "اختبار...",
+    "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
+    "ModelSection": "نموذج الذكاء الاصطناعي",
+    "ModelLabel": "نموذج الجوزاء",
+    "SelectedModel": "تم التحديد: {{model}}_",
+    "AutomationSection": "الأتمتة",
+    "AutoSummary": "إنشاء ملخص تلقائيًا",
+    "AutoSummaryDesc": "يتم تشغيله بعد انتهاء كل تسجيل",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "موصى به · سريع + قادر",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "أرخص خيار مستقر",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "رخيصة للغاية",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "القدرة القصوى",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "أفضل المنطق المستقر"
+    },
+    "ClaudeKey": {
+      "Section": "مفتاح Claude API (الوكيل)",
+      "SourceLabel": "المصدر النشط:",
+      "SourceByok": "مفتاح API الخاص بك (BYOK)",
+      "SourceKeyServer": "تحت إدارة SeaMeet",
+      "SourceCli": "كلود كود CLI",
+      "SourceNone": "لم يتم تكوينه",
+      "KeyPlaceholder": "سك-النمل-...",
+      "KeyPlaceholderSaved": "••••••••• (أنقذ)",
+      "ShowKey": "إظهار المفتاح",
+      "HideKey": "إخفاء المفتاح",
+      "TestKey": "حفظ والتحقق",
+      "Saving": "توفير...",
+      "ClearKey": "إزالة المفتاح المحفوظ",
+      "KeyVerified": "تم التحقق من المفتاح",
+      "KeyInvalid": "مفتاح غير صالح",
+      "KeyTesting": "اختبار...",
+      "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
+      "GetKeyLink": "احصل على مفتاح API من Anthropic Console →",
+      "QuotaSection": "حصة الخادم الرئيسية",
+      "QuotaRemaining": "{{remaining}} / {limit}_ الرموز المميزة المتبقية",
+      "QuotaResetDate": "إعادة التعيين على {{date}}",
+      "QuotaLoading": "جارٍ تحميل الحصة...",
+      "QuotaRefresh": "تحديث الحصة",
+      "CliSection": "كلود كود CLI",
+      "CliInstalled": "تم التثبيت ({{version}})",
+      "CliNotInstalled": "لم يتم العثور على كلود CLI",
+      "CliInstallLink": "قم بتثبيت كود كلود →",
+      "ModelSection": "نموذج كلود الافتراضي",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "سريع ورخيص",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "موصى به · متوازن",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "الأكثر قدرة"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "وكيل الذكاء الاصطناعي والعمل المشترك",
+    "PageTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
+    "SectionTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
+    "EnableToggle": "تمكين وكيل الذكاء الاصطناعي والعمل المشترك",
+    "EnableToggleDesc": "يتطلب مفتاح Claude API",
+    "DisabledBadge": "عاجز",
+    "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
+    "DisabledTabHint": "تم تعطيل AI Agent — قم بتمكينه في الإعدادات → AI Agent & Cowork",
+    "NotConfiguredMsg": "لم يتم تكوين مفتاح Claude API. قم بإعداد واحد في الإعدادات → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "الملخص في قائمة الانتظار...",
+    "Running": "جارٍ إنشاء الملخص...",
+    "Progress": "مجموعة المعالجة {{current}}_ من {{total}}",
+    "Done": "ملخص جاهز",
+    "Error": "فشلت المعالجة"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "العملية مع الذكاء الاصطناعي",
+    "Queuing": "انتظار...",
+    "ProcessingWithTime": "جارٍ المعالجة... {{sec}}s",
+    "Describe": "وصف الصورة",
+    "DescribeSub": "ماذا يوجد في لقطة الشاشة هذه؟",
+    "Ocr": "استخراج النص (التعرف الضوئي على الحروف)",
+    "OcrSub": "قراءة كل النص المرئي",
+    "Custom": "موجه مخصص",
+    "CustomPlaceholder": "اسأل أي شيء عن هذه الصورة...",
+    "ResultLabel": "نتيجة الذكاء الاصطناعي",
+    "Description": "وصف",
+    "ExtractedText": "النص المستخرج",
+    "Analysis": "تحليل",
+    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
+    "UnknownError": "خطأ غير معروف"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "قراءة الملف...",
+      "Executing": "جاري التنفيذ...",
+      "Running": "جري...",
+      "Input": "مدخل",
+      "Output": "الإخراج",
+      "Pattern": "نمط:",
+      "ShowDetails": "إظهار التفاصيل",
+      "AndMoreLines": "... و{{count}} أسطر أخرى"
+    },
+    "Streaming": {
+      "Thinking": "أفكر...",
+      "LongRunning": "الجري لفترة أطول من المعتاد",
+      "ToolStuck": "قد تكون الأداة عالقة",
+      "ForceStop": "توقف بالقوة",
+      "GeneratingResponse": "جارٍ إنشاء الاستجابة...",
+      "RunningTool": "جارٍ تشغيل {{tool}}_..."
+    },
+    "Permission": {
+      "Title": "طلب إذن الأداة",
+      "Allow": "السماح مرة واحدة",
+      "AllowSession": "السماح للجلسة",
+      "Deny": "ينكر",
+      "Allowed": "مسموح",
+      "Denied": "رفض"
+    },
+    "Title": "وكيل منظمة العفو الدولية",
+    "GlobalTitle": "وكيل منظمة العفو الدولية",
+    "NewSession": "جلسة جديدة",
+    "Sessions": "الجلسات",
+    "NoSessions": "لا توجد جلسات بعد. ابدأ محادثة أدناه.",
+    "SendPlaceholder": "اسأل أي شيء... (أدخل للإرسال، Shift+Enter للسطر الجديد)",
+    "SendButton": "يرسل",
+    "StopButton": "قف",
+    "NotConfigured": "قم بتكوين مفتاح Claude API في الإعدادات → ميزات الذكاء الاصطناعي لاستخدام الوكيل.",
+    "GoToSettings": "افتح الإعدادات",
+    "SessionCost": "الجلسة: {inputTokens}_ في /{outputTokens}_ الرموز المميزة",
+    "CommandHelp": "الأوامر: /جديد · /واضح · /التكلفة · /مساعدة",
+    "Mode": {
+      "Ask": "بسأل",
+      "Code": "شفرة",
+      "Plan": "يخطط"
+    },
+    "Model": {
+      "Haiku": "هايكو",
+      "Sonnet": "السوناتة",
+      "Opus": "التأليف"
+    },
+    "QuickAction": {
+      "Summarize": "تلخيص هذا التسجيل",
+      "ActionItems": "البحث عن عناصر العمل",
+      "DraftEmail": "مسودة البريد الإلكتروني للمتابعة"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "ما الذي يمكنك مساعدتي به؟",
+      "HelpAnalyze": "ساعدني في تحليل تسجيلاتي الأخيرة"
+    },
+    "AssetContext": "السياق: {{name}}"
   }
 }

@@ -683,7 +683,8 @@
   },
   "Sidebar": {
     "PrimaryNavigation": "Điều hướng chính",
-    "ClearSearch": "Xóa tìm kiếm"
+    "ClearSearch": "Xóa tìm kiếm",
+    "AgentPanel": "Đặc vụ AI"
   },
   "SidebarTabs": {
     "Audios": "Âm thanh và ghi âm",
@@ -698,6 +699,11 @@
   "TopNav": {
     "CloseNavigationMenu": "Dong menu danh sach",
     "OpenNavigationMenu": "Mo menu danh sach",
+    "MainNavigation": "Điều hướng chính",
+    "Record": "Ghi",
+    "Recording": "ghi âm",
+    "Files": "Tập tin",
+    "Agent": "Agent",
     "Terminal": "Cua so terminal"
   },
   "Tray": {
@@ -876,7 +882,8 @@
     "Processing": "Đang xử lý…",
     "Starting": "Đang khởi động…",
     "FileNameCopiedWithRenameHint": "{{fileName}} đã sao chép vào clipboard. Nhấn đúp để đổi tên tệp.",
-    "ApplyName": "Áp dụng tên"
+    "ApplyName": "Áp dụng tên",
+    "Send": "Gửi"
   },
   "RecordingControls": {
     "StartRecording": "Bắt đầu ghi",
@@ -1045,5 +1052,212 @@
     "FailedToSave": "Không thể lưu bộ đệm hồi tưởng.",
     "SavedFlashback": "Hồi tưởng đã được lưu vào Recordings.",
     "StillCharging": "Bộ đệm hồi tưởng vẫn đang sạc."
+  },
+  "AISummary": {
+    "TabTitle": "Tóm tắt AI",
+    "SetupRequired": "Định cấu hình khóa API Gemini của bạn trong Cài đặt → Tính năng AI để bật tóm tắt AI.",
+    "EnableRequired": "Bật Tính năng AI trong Cài đặt → Tính năng AI để xem tóm tắt AI.",
+    "ExportMarkdown": "Sao chép dưới dạng Markdown",
+    "ExportSrt": "Sao chép dưới dạng SRT",
+    "ExportJson": "Sao chép dưới dạng JSON",
+    "Regenerate": "Tạo lại tóm tắt",
+    "Minimize": "Giảm thiểu",
+    "Maximize": "Mở rộng sang chế độ xem đầy đủ",
+    "Queued": "Xếp hàng chờ xử lý...",
+    "Processing": "Đang tạo bản tóm tắt...",
+    "Error": "Không tải được bản tóm tắt: {{error}}",
+    "PipelineError": "Quá trình xử lý AI không thành công. Hãy thử tái tạo.",
+    "Retry": "Thử lại",
+    "NoSummary": "Chưa có bản tóm tắt AI nào.",
+    "Generate": "Tạo Tóm tắt",
+    "Copy": "Sao chép",
+    "NoSummaryText": "Tóm tắt không có sẵn.",
+    "Topics": "chủ đề:",
+    "NoTranscript": "Bản ghi không có sẵn.",
+    "NoActions": "Không có mục hành động nào được xác định.",
+    "NoDecisions": "Không có quyết định quan trọng nào được xác định.",
+    "Export": {
+      "HeadingSummary": "Bản tóm tắt",
+      "HeadingActionItems": "Mục hành động",
+      "HeadingKeyDecisions": "Các quyết định quan trọng",
+      "HeadingTranscription": "Phiên âm"
+    },
+    "Tab": {
+      "Summary": "Bản tóm tắt",
+      "Transcription": "bảng điểm",
+      "ActionItems": "hành động",
+      "KeyDecisions": "Quyết định",
+      "Agent": "Đại lý"
+    }
+  },
+  "AIFeatures": {
+    "GroupTitle": "Tính năng AI",
+    "MenuItem": "Tóm tắt được hỗ trợ bởi AI",
+    "PageTitle": "Tính năng AI",
+    "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
+    "EnableToggleDesc": "Yêu cầu khóa API Gemini miễn phí",
+    "ApiKeySection": "Khóa API Song Tử",
+    "ApiKeyLabel": "Khóa API Song Tử",
+    "KeyPlaceholder": "AizaSy...",
+    "KeyPlaceholderSaved": "•································ Đã lưu)",
+    "ShowKey": "Hiển thị phím",
+    "HideKey": "Ẩn phím",
+    "TestKey": "Lưu & Xác minh",
+    "Saving": "Đang lưu...",
+    "GetKeyLink": "Nhận khóa API miễn phí từ Google AI Studio →",
+    "ClearKey": "Xóa khóa đã lưu",
+    "KeyVerified": "Đã xác minh khóa",
+    "KeyInvalid": "Khóa không hợp lệ",
+    "KeyTesting": "Đang thử nghiệm...",
+    "KeyNotConfigured": "Không có khóa nào được cấu hình",
+    "ModelSection": "Mô hình AI",
+    "ModelLabel": "Người Mẫu Song Tử",
+    "SelectedModel": "Đã chọn: {{model}}",
+    "AutomationSection": "Tự động hóa",
+    "AutoSummary": "Tự động tạo bản tóm tắt",
+    "AutoSummaryDesc": "Chạy sau mỗi lần ghi âm kết thúc",
+    "Models": {
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Được đề xuất · Nhanh + có khả năng",
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashSub": "Tùy chọn ổn định rẻ nhất",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Siêu rẻ",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Công suất tối đa",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Lý luận ổn định tốt nhất"
+    },
+    "ClaudeKey": {
+      "Section": "Khóa API Claude (Đại lý)",
+      "SourceLabel": "Nguồn hoạt động:",
+      "SourceByok": "Khóa API của bạn (BYOK)",
+      "SourceKeyServer": "Được quản lý bởi SeaMeet",
+      "SourceCli": "Mã Claude CLI",
+      "SourceNone": "Chưa được định cấu hình",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "•································ Đã lưu)",
+      "ShowKey": "Hiển thị phím",
+      "HideKey": "Ẩn phím",
+      "TestKey": "Lưu & Xác minh",
+      "Saving": "Đang lưu...",
+      "ClearKey": "Xóa khóa đã lưu",
+      "KeyVerified": "Đã xác minh khóa",
+      "KeyInvalid": "Khóa không hợp lệ",
+      "KeyTesting": "Đang thử nghiệm...",
+      "KeyNotConfigured": "Không có khóa nào được cấu hình",
+      "GetKeyLink": "Nhận khóa API từ Bảng điều khiển Anthropic →",
+      "QuotaSection": "Hạn ngạch máy chủ khóa",
+      "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
+      "QuotaResetDate": "Đặt lại vào {{date}}",
+      "QuotaLoading": "Đang tải hạn ngạch...",
+      "QuotaRefresh": "Làm mới hạn ngạch",
+      "CliSection": "Mã Claude CLI",
+      "CliInstalled": "Đã cài đặt ({{version}})",
+      "CliNotInstalled": "Không tìm thấy Claude CLI",
+      "CliInstallLink": "Cài đặt mã Claude →",
+      "ModelSection": "Mô hình Claude mặc định",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Nhanh và rẻ",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Được đề xuất · Cân bằng",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Có khả năng nhất"
+    }
+  },
+  "AIAgent": {
+    "MenuItem": "Đại lý AI & Cowork",
+    "PageTitle": "Đại lý AI & Cowork",
+    "SectionTitle": "Đại lý AI & Cowork",
+    "EnableToggle": "Kích hoạt AI Agent & Cowork",
+    "EnableToggleDesc": "Yêu cầu khóa API Claude",
+    "DisabledBadge": "Tàn tật",
+    "DisabledMsg": "AI Agent & Cowork bị vô hiệu hóa. Kích hoạt nó trong Cài đặt → AI Agent & Cowork.",
+    "DisabledTabHint": "Tác nhân AI bị tắt — bật nó trong Cài đặt → Tác nhân AI & Cowork",
+    "NotConfiguredMsg": "Không có khóa API Claude nào được định cấu hình. Thiết lập một cái trong Cài đặt → AI Agent & Cowork."
+  },
+  "PipelineStatus": {
+    "Queued": "Bản tóm tắt được xếp hàng đợi...",
+    "Running": "Đang tạo bản tóm tắt...",
+    "Progress": "Đang xử lý đoạn {{current}} của {{total}}",
+    "Done": "Bản tóm tắt đã sẵn sàng",
+    "Error": "Xử lý không thành công"
+  },
+  "ScreenshotProcessing": {
+    "ButtonLabel": "Quy trình với AI",
+    "Queuing": "Đang xếp hàng...",
+    "ProcessingWithTime": "Đang xử lý... {{sec}}s",
+    "Describe": "Mô tả hình ảnh",
+    "DescribeSub": "Trong ảnh chụp màn hình này có gì?",
+    "Ocr": "Trích xuất văn bản (OCR)",
+    "OcrSub": "Đọc tất cả văn bản hiển thị",
+    "Custom": "Lời nhắc tùy chỉnh",
+    "CustomPlaceholder": "Hỏi bất cứ điều gì về hình ảnh này...",
+    "ResultLabel": "Kết quả AI",
+    "Description": "Sự miêu tả",
+    "ExtractedText": "Văn bản được trích xuất",
+    "Analysis": "Phân tích",
+    "PipelineError": "Quá trình xử lý AI không thành công. Vui lòng thử lại.",
+    "UnknownError": "Lỗi không xác định"
+  },
+  "AgentPanel": {
+    "ToolCall": {
+      "Reading": "Đang đọc tập tin...",
+      "Executing": "Đang thực hiện...",
+      "Running": "Đang chạy...",
+      "Input": "đầu vào",
+      "Output": "đầu ra",
+      "Pattern": "Mẫu:",
+      "ShowDetails": "Hiển thị chi tiết",
+      "AndMoreLines": "... và {{count}} dòng khác"
+    },
+    "Streaming": {
+      "Thinking": "Đang suy nghĩ...",
+      "LongRunning": "Chạy lâu hơn bình thường",
+      "ToolStuck": "Công cụ có thể bị kẹt",
+      "ForceStop": "Buộc dừng",
+      "GeneratingResponse": "Đang tạo phản hồi...",
+      "RunningTool": "Đang chạy {{tool}}..."
+    },
+    "Permission": {
+      "Title": "Yêu cầu cấp phép công cụ",
+      "Allow": "Cho phép một lần",
+      "AllowSession": "Cho phép phiên",
+      "Deny": "Từ chối",
+      "Allowed": "Cho phép",
+      "Denied": "Từ chối"
+    },
+    "Title": "Đặc vụ AI",
+    "GlobalTitle": "Đặc vụ AI",
+    "NewSession": "Phiên mới",
+    "Sessions": "Phiên",
+    "NoSessions": "Chưa có phiên nào. Bắt đầu một cuộc trò chuyện dưới đây.",
+    "SendPlaceholder": "Hỏi bất cứ điều gì... (Enter để gửi, Shift+Enter để xuống dòng)",
+    "SendButton": "Gửi",
+    "StopButton": "Dừng lại",
+    "NotConfigured": "Định cấu hình khóa API Claude trong Cài đặt → Tính năng AI để sử dụng Tác nhân.",
+    "GoToSettings": "Mở cài đặt",
+    "SessionCost": "Phiên: {inputTokens}_ vào /{outputTokens}_ ra mã thông báo",
+    "CommandHelp": "Các lệnh: /new · /clear · /cost · /help",
+    "Mode": {
+      "Ask": "Hỏi",
+      "Code": "Mã số",
+      "Plan": "Kế hoạch"
+    },
+    "Model": {
+      "Haiku": "thơ haiku",
+      "Sonnet": "bài sonnet",
+      "Opus": "tác phẩm"
+    },
+    "QuickAction": {
+      "Summarize": "Tóm tắt bản ghi này",
+      "ActionItems": "Tìm mục hành động",
+      "DraftEmail": "Dự thảo email theo dõi"
+    },
+    "SuggestedPrompt": {
+      "WhatCanYouDo": "Bạn có thể giúp gì cho tôi?",
+      "HelpAnalyze": "Giúp tôi phân tích các bản ghi gần đây của tôi"
+    },
+    "AssetContext": "Bối cảnh: {{name}}"
   }
 }
