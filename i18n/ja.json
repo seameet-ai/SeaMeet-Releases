@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "App Store版",
     "DirectBuild": "ダイレクトビルド",
-    "SubtitleBadge": "Snapレコーダー＆エージェント",
-    "Version": "バージョン {{version}}",
+    "HelpTranslate": "SeaMeet の翻訳にご協力ください →",
     "Loading": "読み込み中...",
-    "HelpTranslate": "SeaMeet の翻訳にご協力ください →"
+    "SubtitleBadge": "Snapレコーダー＆エージェント",
+    "Version": "バージョン {{version}}"
   },
-  "Activities": {
-    "Productivity": "生産性",
-    "Social": "ソーシャル",
-    "Gaming": "ゲーム",
-    "Recording": "録画",
-    "Browsers": "ウェブブラウザ",
-    "BrowserBased": "ブラウザベース"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "他の",
+      "Skip": "スキップ",
+      "Submit": "提出する",
+      "Title": "質問",
+      "TypeResponse": "応答を入力してください..."
+    },
+    "AssetContext": "コンテキスト: {{name}}",
+    "CommandHelp": "コマンド: /new · /clear · /cost · /help",
+    "GlobalTitle": "AIエージェント",
+    "GoToSettings": "設定を開く",
+    "Mode": {
+      "Ask": "聞く",
+      "Code": "コード",
+      "Plan": "プラン"
+    },
+    "Model": {
+      "Haiku": "俳句",
+      "Opus": "オーパス",
+      "Sonnet": "ソネット"
+    },
+    "NewSession": "新しいセッション",
+    "NoSessions": "まだセッションはありません。以下で会話を始めてください。",
+    "NotConfigured": "エージェントを使用するには、[設定] → [AI 機能] で Claude API キーを設定します。",
+    "Permission": {
+      "Allow": "1 回だけ許可",
+      "Allowed": "許可された",
+      "AllowSession": "セッションを許可する",
+      "Denied": "拒否されました",
+      "Deny": "拒否",
+      "Title": "ツール許可リクエスト"
+    },
+    "Plan": {
+      "Approve": "計画の承認",
+      "DefaultFeedback": "ユーザーが変更を要求した",
+      "Description": "エージェントは上記の計画を準備しており、続行するにはあなたの承認が必要です。",
+      "FeedbackPlaceholder": "どのような変更が必要かを説明してください...",
+      "PlanDetails": "プラン詳細",
+      "RequestChanges": "変更のリクエスト",
+      "RequestedPermissions": "要求された権限:",
+      "SendFeedback": "フィードバックを送信する",
+      "Title": "計画のレビュー"
+    },
+    "QuickAction": {
+      "ActionItems": "アクションアイテムを見つける",
+      "DraftEmail": "フォローアップメールの下書き",
+      "Summarize": "この記録を要約する"
+    },
+    "SendButton": "送信",
+    "SendPlaceholder": "何でも聞いてください... (Enter で送信、Shift+Enter で改行)",
+    "SessionCost": "セッション: {{inputTokens}} 入力 /{{outputTokens}} 出力トークン",
+    "Sessions": "セッション",
+    "StopButton": "停止",
+    "Streaming": {
+      "ForceStop": "強制停止",
+      "GeneratingResponse": "応答を生成中...",
+      "LongRunning": "いつもより長く走る",
+      "RunningTool": "{{tool}} を実行中...",
+      "Thinking": "考え...",
+      "ToolStuck": "ツールが固着している可能性があります"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "最近の録音の分析を手伝ってください",
+      "WhatCanYouDo": "何を手伝ってもらえますか？"
+    },
+    "Title": "AIエージェント",
+    "ToolCall": {
+      "AndMoreLines_one": "...あと {{count}} 行",
+      "AndMoreLines_other": "...あと {{count}} 行",
+      "Executing": "実行中...",
+      "Input": "入力",
+      "Output": "出力",
+      "Pattern": "パターン：",
+      "Reading": "ファイルを読み取り中...",
+      "ShowDetails": "詳細を表示"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} アクション",
+      "Actions_other": "{{count}} アクション",
+      "Completed_one": "{{count}} 完了しました",
+      "Completed_other": "{{count}} 完了しました",
+      "Running_one": "{{count}} 実行中",
+      "Running_other": "{{count}} 実行中"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "無効",
+    "DisabledMsg": "AI エージェントとコワークは無効になっています。 [設定] → [AI Agent & Cowork] で有効にします。",
+    "DisabledTabHint": "AI エージェントが無効になっています - [設定] → [AI エージェントとコワーク] で有効にします",
+    "EnableToggle": "AI エージェントとコワークを有効にする",
+    "EnableToggleDesc": "Claude API キーが必要です",
+    "MenuItem": "AIエージェント&コワーク",
+    "PageTitle": "AIエージェント&コワーク",
+    "SectionTitle": "AIエージェント&コワーク"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Gemini API キー",
+    "ApiKeySection": "Gemini API キー",
+    "AutomationSection": "オートメーション",
+    "AutoSummary": "概要を自動生成",
+    "AutoSummaryDesc": "すべての記録が終了した後に実行されます",
+    "ClaudeKey": {
+      "ClearKey": "保存されたキーを削除する",
+      "CliInstalled": "インストール済み ({{version}})",
+      "CliInstallLink": "クロードコードをインストール →",
+      "CliNotInstalled": "クロード CLI が見つかりません",
+      "CliSection": "クロードコード CLI",
+      "GetKeyLink": "Anthropic Console から API キーを取得 →",
+      "HideKey": "キーを隠す",
+      "KeyInvalid": "無効なキー",
+      "KeyPlaceholder": "スク-アリ-...",
+      "KeyPlaceholderSaved": "•••••••••（保存済み）",
+      "KeyTesting": "テスト中...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "早くて安い",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "最も有能な",
+      "ModelSection": "デフォルトのクロードモデル",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "推奨・バランス型",
+      "QuotaLoading": "クォータを読み込み中...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} トークンが残っています",
+      "QuotaResetDate": "{{date}} でリセット",
+      "Saving": "保存中...",
+      "Section": "クロード API キー (エージェント)",
+      "ShowKey": "キーを表示",
+      "SourceByok": "API キー (BYOK)",
+      "SourceCli": "クロードコード CLI",
+      "SourceKeyServer": "SeaMeet が管理",
+      "SourceLabel": "アクティブなソース:",
+      "SourceNone": "未設定",
+      "TestKey": "保存して確認する"
+    },
+    "ClearKey": "保存されたキーを削除する",
+    "EnableToggle": "AI を活用した要約を有効にする",
+    "EnableToggleDesc": "無料の Gemini API キーが必要です",
+    "GetKeyLink": "Google AI Studio から無料の API キーを取得 →",
+    "GroupTitle": "AIの機能",
+    "HideKey": "キーを隠す",
+    "KeyInvalid": "無効なキー",
+    "KeyNotConfigured": "キーが設定されていません",
+    "KeyPlaceholder": "アイザシ...",
+    "KeyPlaceholderSaved": "•••••••••（保存済み）",
+    "KeyTesting": "テスト中...",
+    "KeyVerified": "キーが検証されました",
+    "ManagedKeyDesc": "API キーは自動的にプロビジョニングされます。設定は必要ありません。",
+    "ManagedKeyStatus": "マネージド キー — SeaMeet によって提供される",
+    "MenuItem": "AI を活用した要約",
+    "ModelLabel": "ジェミニモデル",
+    "Models": {
+      "Gemini25Flash": "ジェミニ 2. フラッシュ",
+      "Gemini25FlashLite": "ジェミニ 2.5 フラッシュ ライト",
+      "Gemini25FlashLiteSub": "超格安",
+      "Gemini25FlashSub": "最も安価な安定したオプション",
+      "Gemini25Pro": "ジェミニ 2.5 プロ",
+      "Gemini25ProSub": "最も安定した推論",
+      "Gemini3Flash": "ジェミニ 3 フラッシュ",
+      "Gemini3FlashSub": "推奨 · 高速 + 有能",
+      "Gemini3Pro": "ジェミニ 3 プロ",
+      "Gemini3ProSub": "最大能力"
+    },
+    "ModelSection": "AIモデル",
+    "PageTitle": "AIの機能",
+    "QuotaLoading": "クォータを読み込み中...",
+    "QuotaRefresh": "クォータを更新する",
+    "QuotaRemaining": "{{remaining}} / {{limit}} トークンが残っています",
+    "QuotaResetDate": "{{date}} でリセット",
+    "QuotaSection": "使用量割り当て",
+    "Saving": "保存中...",
+    "SelectedModel": "選択済み: {{model}}",
+    "ShowKey": "キーを表示",
+    "TestKey": "保存して確認"
+  },
+  "AISummary": {
+    "Copy": "コピー",
+    "EnableRequired": "AI の概要を表示するには、[設定] → [AI 機能] で AI 機能を有効にします。",
+    "Error": "概要のロードに失敗しました: {{error}}",
+    "Export": {
+      "HeadingActionItems": "アクションアイテム",
+      "HeadingKeyDecisions": "重要な決定事項",
+      "HeadingSummary": "まとめ",
+      "HeadingTranscription": "転写"
+    },
+    "ExportJson": "JSONとしてコピー",
+    "ExportMarkdown": "マークダウンとしてコピー",
+    "ExportSrt": "SRT としてコピー",
+    "GeminiLiveTranscript": "ジェミニライブ",
+    "Generate": "概要の生成",
+    "Maximize": "拡大して全体表示する",
+    "Minimize": "最小化する",
+    "NoActions": "アクションアイテムは特定されていません。",
+    "NoChapters": "利用可能な章はありません。",
+    "NoDecisions": "重要な決定は特定されていない。",
+    "NoSummary": "AI の概要はまだありません。",
+    "NoSummaryText": "概要は利用できません。",
+    "NoTranscript": "トランスクリプトは利用できません。",
+    "PipelineError": "AI処理に失敗しました。再生してみてください。",
+    "PipelineTranscript": "AI パイプライン",
+    "Processing": "概要を生成中...",
+    "Queued": "処理のためにキューに入れられています...",
+    "Regenerate": "概要を再生成する",
+    "Retry": "リトライ",
+    "SeekToTimestamp": "このタイムスタンプまでシークします",
+    "SetupRequired": "[設定] → [AI 機能] で Gemini API キーを設定し、AI サマリーを有効にします。",
+    "Tab": {
+      "ActionItems": "アクション",
+      "Chapters": "章",
+      "KeyDecisions": "決定",
+      "Summary": "まとめ",
+      "Transcription": "成績証明書"
+    },
+    "TabTitle": "AIの概要",
+    "Topics": "トピック:",
+    "Speakers": "スピーカー",
+    "MergeInto": "マージ先…",
+    "ApplyMerge": "適用",
+    "EditSegmentSpeaker": "このセグメントを再割り当てするにはクリックしてください"
   },
   "App": {
     "FailedToEnableFlashback": "フラッシュバックを有効にできませんでした: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "すべてのアプリ",
-    "Teams": "Microsoft Teams (仕事/学校)",
-    "TeamsConsumer": "Microsoft Teams (個人)",
-    "TeamsWeb": "Microsoft Teams (Web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Braveブラウザ",
+    "CallOfDuty": "コール オブ デューティ",
     "Chrome": "Chromeブラウザ",
-    "Edge": "Edgeブラウザ",
-    "Firefox": "Firefoxブラウザ",
-    "WhatsApp": "WhatsApp",
-    "Line": "LINE",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord（ウェブ）",
+    "Edge": "Edgeブラウザ",
+    "EpicGames": "Epic Gamesランチャー",
+    "Firefox": "Firefoxブラウザ",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "LINE",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Operaブラウザ",
+    "Other": "その他のアプリ",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (ウェブ)",
-    "WindowsSoundRecorder": "Windows サウンドレコーダー",
-    "Other": "その他のアプリ",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox ゲームバー",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Gamesランチャー",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steamチャット",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Operaブラウザ",
-    "Brave": "Braveブラウザ",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "コール オブ デューティ",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (仕事/学校)",
+    "TeamsConsumer": "Microsoft Teams (個人)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (Web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (ウェブ)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows サウンドレコーダー",
+    "XboxGameBar": "Xbox ゲームバー",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "音声キャプチャ",
+    "AudioMix": "オーディオミックス",
+    "AudioSource": "オーディオソース：",
+    "Microphone": "マイクロフォン",
+    "MicrophoneGainWarning": "高いマイクロフォンゲインは、「システムオーディオ」がオフでもスピーカープレイバックを拾うことがあります。ヘッドフォンを使用するか、マイクロフォンゲインを下げてマイクのみの録音にしてください。",
+    "RecordingDefaultMicrophone": "デフォルトのマイクロフォン",
+    "RecordingSettings": "録音設定",
+    "RefreshMicrophoneList": "マイクロフォンリストの更新"
   },
   "AutoDetectInfoModal": {
-    "Title": "ミーティングの自動検出",
-    "Subtitle": "すべてのミーティングを見逃さない",
-    "Description": "自動検出はミーティング参加時に自動的に録音を開始します。録音を押し忘れる心配はありません。",
-    "PopularAppsTitle": "検出された人気アプリ",
-    "MoreApps": "40以上",
-    "HowItWorksTitle": "動作の仕組み",
-    "Step1Title": "自動検出を有効にする",
-    "Step1Desc": "トグルをオンにし、監視するアプリを選択してください",
-    "Step2Title": "ミーティングに参加",
-    "Step2Desc": "Zoom、Teams、Meet、またはサポートされているアプリを開く",
-    "Step3Title": "自動録音開始",
-    "Step3Desc": "SeaMeetは自動的に録音を開始します。完了です！",
-    "Tip1Title": "アプリごとの設定",
-    "Tip1Desc": "「常に録音」を仕事の会議に設定、「毎回確認」を個人通話に設定",
-    "Tip2Title": "複数の検出方法",
-    "Tip2Desc": "正確性を高めるためにマイクの活動、ウィンドウタイトル、ブラウザのURLを使用します",
-    "GotIt": "了解しました",
-    "OpenSettings": "設定を開く",
     "ControlLabel": "自動検出",
-    "LearnAbout": "自動検出について学ぶ"
+    "Description": "自動検出はミーティング参加時に自動的に録音を開始します。録音を押し忘れる心配はありません。",
+    "GotIt": "了解しました",
+    "HowItWorksTitle": "動作の仕組み",
+    "LearnAbout": "自動検出について学ぶ",
+    "MoreApps": "40以上",
+    "OpenSettings": "設定を開く",
+    "PopularAppsTitle": "検出された人気アプリ",
+    "Step1Desc": "トグルをオンにし、監視するアプリを選択してください",
+    "Step1Title": "自動検出を有効にする",
+    "Step2Desc": "Zoom、Teams、Meet、またはサポートされているアプリを開く",
+    "Step2Title": "ミーティングに参加",
+    "Step3Desc": "SeaMeetは自動的に録音を開始します。完了です！",
+    "Step3Title": "自動録音開始",
+    "Subtitle": "すべてのミーティングを見逃さない",
+    "Tip1Desc": "「常に録音」を仕事の会議に設定、「毎回確認」を個人通話に設定",
+    "Tip1Title": "アプリごとの設定",
+    "Tip2Desc": "正確性を高めるためにマイクの活動、ウィンドウタイトル、ブラウザのURLを使用します",
+    "Tip2Title": "複数の検出方法",
+    "Title": "ミーティングの自動検出"
   },
   "AutoRecording": {
-    "Title": "会議を自動検出",
-    "DetectApps": "会議の検出対象：",
-    "Enabled": "自動検出を有効にしています",
-    "Disabled": "自動検出が無効になっています",
-    "MeetingDetected": "{{{app}}}会議が検出されました！",
-    "MeetingEnded": "会議は終了しました",
-    "MeetingFallbackName": "会議",
     "BugReport": "バグを見つけましたか？ seameet@seasalt.aiに報告してください",
     "BugReportTitle": "バグ報告",
+    "Disabled": "自動検出が無効になっています",
+    "Enabled": "自動検出を有効にしています",
     "HelpWanted": "ご意見・ご要望をお寄せください。アプリの追加リクエストや動作確認済みのアプリについては seameet@seasalt.ai までご連絡ください。ご協力ありがとうございます。",
-    "HelpWantedTitle": "ご協力をお願いいたします"
+    "HelpWantedTitle": "ご協力をお願いいたします",
+    "MeetingDetected": "{{{app}}}会議が検出されました！",
+    "MeetingEnded": "会議は終了しました",
+    "MeetingFallbackName": "会議"
   },
   "BlackHole": {
-    "NotInstalled": "システムオーディオを録音するには、BlackHoleバーチャルオーディオドライバーをインストールする必要があります",
-    "InstallInstructions": "BlackHoleバーチャルオーディオドライバーをインストールする必要があります",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "コピーコマンド",
-    "Or": "または",
-    "DownloadManually": "existential.audio からダウンロード",
-    "SetupTitle": "マルチ出力デバイスの設定",
-    "SetupStep1": "Audio MIDI設定を開く（アプリケーション → ユーティリティ）",
-    "SetupStep2": "「＋」をクリックし、「マルチ出力デバイスを作成」を選択してください",
-    "SetupStep3": "スピーカー/ヘッドフォンと 'BlackHole 2ch' の両方を確認してください",
-    "SetupStep4": "マルチ出力を右クリックして、「このデバイスを音声出力に使用」を選択してください",
-    "SetupStep5": "BlackHole がデバイスリストに表示されない場合は、再起動してください",
-    "SetupStep6": "このアプリで音声入力ソースとして 'BlackHole 2ch' を選択してください",
-    "CheckAgain": "再確認",
     "Cancel": "キャンセル",
-    "LearnMore": "マルチ出力デバイスについて詳しく見る"
+    "CheckAgain": "再確認",
+    "CopyCommand": "コピーコマンド",
+    "DownloadManually": "existential.audio からダウンロード",
+    "InstallInstructions": "BlackHoleバーチャルオーディオドライバーをインストールする必要があります",
+    "LearnMore": "マルチ出力デバイスについて詳しく見る",
+    "NotInstalled": "システムオーディオを録音するには、BlackHoleバーチャルオーディオドライバーをインストールする必要があります",
+    "Or": "または",
+    "SetupTitle": "マルチ出力デバイスの設定"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Bluetoothマイクが検出されました",
-    "Description": "Bluetoothマイクを使用する際、OSがオーディオを「通信モード」に強制する場合があり、録音中に音声の歪みや音量の問題が発生する可能性があります。",
-    "RecommendationLabel": "推奨：",
-    "Recommendation": "より良い録音品質のため、Bluetooth以外のマイク（内蔵マイクやUSBマイクなど）に切り替えてください。",
+    "CloseAriaLabel": "Bluetooth警告を閉じる",
     "CloseTitle": "警告を閉じる",
-    "CloseAriaLabel": "Bluetooth警告を閉じる"
+    "Description": "Bluetoothマイクを使用する際、OSがオーディオを「通信モード」に強制する場合があり、録音中に音声の歪みや音量の問題が発生する可能性があります。",
+    "Recommendation": "より良い録音品質のため、Bluetooth以外のマイク（内蔵マイクやUSBマイクなど）に切り替えてください。",
+    "RecommendationLabel": "推奨：",
+    "Title": "⚠️ Bluetoothマイクが検出されました"
+  },
+  "Common": {
+    "ApplyName": "名前を設定",
+    "Cancel": "キャンセル",
+    "Close": "閉じる",
+    "Configure": "設定",
+    "Delete": "削除",
+    "Done": "完了しました",
+    "Expand": "拡大",
+    "FileNameCopiedWithRenameHint": "{{fileName}} をクリップボードにコピーしました。必要に応じてダブルクリックでファイル名を変更してください。",
+    "Loading": "ローディング中...",
+    "Minimize": "円形に最小化",
+    "Open": "開く",
+    "Or": "または",
+    "Processing": "処理中...",
+    "Recording": "録音中",
+    "Save": "保存する",
+    "Saved": "保存されました",
+    "Saving": "保存しています",
+    "Screenshot": "スクリーンショット",
+    "Send": "送信",
+    "Starting": "起動中...",
+    "UnknownApp": "不明なアプリケーション"
   },
   "DeletePrompt": {
-    "Title": "ファイルを削除",
-    "Message": "このファイルを削除してよろしいですか？この操作は取り消すことができません。",
     "Cancel": "キャンセル",
-    "Confirm": "削除"
+    "Confirm": "削除",
+    "Message": "このファイルを削除してよろしいですか？この操作は取り消すことができません。",
+    "Title": "ファイルを削除"
   },
   "Errors": {
-    "NoAudioSources": "オーディオソースが利用できません",
-    "NoSystemAudioSources": "システムのオーディオソースが利用できません",
+    "AutoRecordingFailed": "自動録音の切り替えに失敗しました",
     "FailedToStartRecording": "録音の開始に失敗しました：{{message}}",
     "FailedToStartVideoRecording": "ビデオ録音の開始に失敗しました：{{message}}",
-    "AutoRecordingFailed": "自動録音の切り替えに失敗しました"
+    "NoAudioSources": "オーディオソースが利用できません",
+    "NoSystemAudioSources": "システムのオーディオソースが利用できません",
+    "SaveFailed": "録音の保存に失敗しました: {{message}}"
   },
   "Events": {
-    "Title": "イベント",
-    "MarkToolbarButton": "マーク済みイベント",
+    "EmptyWhenNotRecording": "この録音には登録されているイベントがありません。",
+    "EmptyWhileRecording": "イベントはまだありません。録音中に‘マーク’をクリックして追加してください。",
+    "EventLabel": "イベント {{number}}",
     "MarkButton": "マーク",
     "Marked": "マークしました！",
-    "EventLabel": "イベント {{number}}",
-    "EmptyWhileRecording": "イベントはまだありません。録音中に‘マーク’をクリックして追加してください。",
-    "EmptyWhenNotRecording": "この録音には登録されているイベントがありません。",
-    "DeletePrompt": {
-      "Title": "イベントを削除",
-      "Message": "このイベントを削除しますか？この操作は元に戻せません。",
-      "Cancel": "キャンセル",
-      "Confirm": "削除"
-    }
+    "MarkToolbarButton": "マーク済みイベント",
+    "Title": "イベント"
+  },
+  "FileImport": {
+    "BrowseFiles": "ファイルを参照",
+    "DragDropFiles": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
+    "DragDropSubtitle": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
+    "ImportMedia": "メディアをインポート",
+    "Supported": "サポートされている",
+    "SupportedFormats": "サポートされている: MP3、WAV、M4A、WebM、OGG、PNG、JPGなど",
+    "VideoImportCopying": "動画ファイルをコピー中...",
+    "VideoImportSaving": "動画ファイルを保存中...",
+    "VideoUnsupported": "この動画形式はアプリで再生できない場合があります。ファイルはインポートされます。"
   },
   "FlashbackControls": {
+    "AudioFlashback": "オーディオフラッシュバック",
+    "CannotChangeWhileRecording": "録音中はフラッシュバックモードを変更できません",
+    "DisableFlashback": "フラッシュバックを無効にする",
     "Label": "フラッシュバック",
     "LearnAbout": "フラッシュバックについて",
-    "DisableFlashback": "フラッシュバックを無効にする",
-    "AudioFlashback": "オーディオフラッシュバック",
-    "ScreenFlashback": "画面のフラッシュバック",
-    "TitleReady": "クリックしてフラッシュバックUIを表示",
-    "TitleCharging": "フラッシュバック充電中",
-    "TitleInit": "充電を開始するにはクリックしてください",
+    "Off": "オフ",
     "Ready": "準備完了",
     "ReadyQuestion": "準備できましたか？",
-    "Off": "オフ",
-    "CannotChangeWhileRecording": "録音中はフラッシュバックモードを変更できません",
-    "ToggleLabel": "フラッシュバックを切り替え",
-    "SettingsLabel": "フラッシュバック録音"
+    "ScreenFlashback": "画面のフラッシュバック",
+    "SettingsLabel": "フラッシュバック録音",
+    "TitleCharging": "フラッシュバック充電中",
+    "TitleInit": "充電を開始するにはクリックしてください",
+    "TitleReady": "クリックしてフラッシュバックUIを表示",
+    "ToggleLabel": "フラッシュバックを切り替え"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "オーディオ",
+    "Buffering": "バッファリング中",
+    "BufferingMoment": "バッファリング中...",
+    "Capturing": "キャプチャ中...",
+    "DescCharging": "{{duration}}秒間のウィンドウをプライミング中…まもなく見逃すかもしれない内容をキャッチします。{{progress}}% 完了。",
+    "DescInit": "「準備できましたか？」をクリックして、SeaMeet に過去を「覚える」よう指示してください。",
+    "DescNone": "画面やオーディオを録画するか、スクリーンショットを撮ります。上記のフラッシュバックモードを選択して瞬間保存を有効にしてください。",
+    "DescReady": "フラッシュバックは準備完了しています。録音を開始すると、過去 {{duration}} 秒の {{type}} が含まれます。もう見逃すことはありません。",
+    "FillingBuffer": "{{duration}}秒間のフラッシュバックバッファを満たしています… {{progress}}%",
+    "FlashbackBuffering": "バッファリング中...",
+    "FlashbackCharging": "{{seconds}}秒のバッファを埋めています… {{percent}}%",
+    "FlashbackChargingDescription": "{{seconds}}秒のウィンドウを準備中... {{percent}}% 完了しました。",
+    "FlashbackInitAudio": "音声を守る準備はできましたか？",
+    "FlashbackInitDescription": "「Ready?」をクリックして、SeaMeetに過去を「記憶」させ始めてください。",
+    "FlashbackInitScreen": "画面を守る準備はできましたか？",
+    "FlashbackMismatch": "フラッシュバックモードの不一致です。オーディオ録音はされているのに、ビデオフラッシュバックが有効です。ビデオフラッシュバックを無効にしてください。",
+    "FlashbackOff": "フラッシュバックは現在オフです。いつでも通常の録音を開始するか、上記のオーディオまたはスクリーンのフラッシュバックモードを選択して、ヒーローの瞬間保存を有効にしてください。",
+    "FlashbackPrivacy": "RAM内に保存されており、プライバシーは保護されています。",
+    "FlashbackReady": "一瞬も逃さずに。",
+    "FlashbackReadyDescription": "フラッシュバックは有効になっています。録音時に過去{{seconds}}秒の{{type}}が含まれます。",
+    "FlashbackReadyQuestion": "よろしいですか？",
+    "KeepWindowVisible": "スクリーンショットを撮るときは SeaMeet ウィンドウを表示したままにしてください",
+    "NeverMissAMoment": "決して瞬間を逃さない。",
+    "OpenFloater": "フロートウィンドウを開く",
+    "OpenLauncher": "ランチャーを開く",
+    "PrivacyDesc": "SeaMeetは過去{{duration}}秒の{{type}}をローカルのコンピュータのRAMのリングバッファに保存します。",
+    "PrivacyProtected": "プライバシーは保護されています。",
+    "Ready": "準備はいいですか？",
+    "ReadyToCapture": "SeaMeet はキャプチャの準備ができています。",
+    "ReadyToGuard": "{{type}}の保護準備はできましたか？",
+    "RecordWithFlashback": "フラッシュバックを使った録音",
+    "SaveFlashback": "最後の{{seconds}}秒のフラッシュバックを保存",
+    "SaveLastFlashback": "最後の {{duration}} 秒のフラッシュバックを保存",
+    "SavingFlashback": "フラッシュバックを保存中…",
+    "Screen": "スクリーン",
+    "StartRecording": "録音開始",
+    "TakeScreenshot": "スクリーンショットを取る"
   },
   "FlashbackIndicator": {
     "Buffering": "バッファリング中",
@@ -183,138 +463,145 @@
     "VideoReady": "ビデオ準備完了"
   },
   "FlashbackInfoModal": {
-    "Title": "Flashback録音",
-    "Close": "閉じる",
-    "Subtitle": "あなた専用のタイムマシン",
-    "SubtitleDesc": "重要な瞬間を逃さない—過去最大2分間を記録でき、後からでもキャプチャ可能です。",
+    "Benefits": {
+      "AlwaysReady": "いつでも準備万端",
+      "LocalOnly": "ローカル限定（プライバシー完全保障）",
+      "MultipleCaptures": "複数回録音可能：バッファは常に動作中",
+      "NoPlan": "計画は不要",
+      "Offline": "オフラインで動作",
+      "Title": "主な利点"
+    },
     "BestFor": "用途例：",
-    "VisualStates": {
-      "Title": "視覚的ステータスインジケーター",
-      "OffLabel": "オフ",
-      "Off": "灰色、静的な波形",
-      "ChargingLabel": "充電中",
-      "Charging": "琥珀色/黄色、バッファ充填中",
-      "ReadyLabel": "準備完了",
-      "Ready": "緑色、バッファ満杯"
-    },
-    "SpecLabel": {
-      "Buffer": "バッファ容量：",
-      "Memory": "メモリー容量：",
-      "Captures": "記録内容："
-    },
-    "Modes": {
-      "Title": "二つのフラッシュバックモード",
-      "Audio": {
-        "Title": "オーディオフラッシュバック",
-        "Buffer": "30秒（固定）",
-        "Memory": "約30-50 MB RAM",
-        "Captures": "マイクロフォンおよび/またはシステムオーディオ",
-        "BestFor": "会議、通話、ボイスチャットの録音やキャプチャ"
-      },
-      "Video": {
-        "Title": "ビデオ・フラッシュバック",
-        "Buffer": "10秒、30秒、60秒、90秒、または120秒に設定可能",
-        "Memory": "50-600 MB RAM",
-        "Captures": "スクリーンビデオとオーディオ",
-        "BestFor": "プレゼンテーション、ゲームのハイライト、スクリーンシェアセッション、ビジュアルコンテンツ"
-      }
-    },
-    "HowItWorks": {
-      "Title": "仕組みと操作方法",
-      "Step1": {
-        "Title": "フラッシュバックを有効にする",
-        "Desc": "FLASHBACKボタンをクリックして有効にします。バッファは自動的に充填され始めます。"
-      },
-      "Step2": {
-        "Title": "準備完了を待つ",
-        "Desc": "緑色の状態を確認してください。過去のキャプチャには、バッファが90％に満たなければなりません。"
-      },
-      "Step3": {
-        "Title": "録音を開始",
-        "Desc": "重要な出来事が発生したら、「録音を開始」を押してください。フラッシュバックはバッファを取得し、そのまま録音を続けます。"
-      }
-    },
-    "Scenarios": {
-      "Title": "実践的なシナリオ",
-      "OhNo": {
-        "Title": "「あっと！」という瞬間",
-        "Desc": "同僚が何か重要なことを言いました。録音したいと気づきます。録音を押す → フラッシュバックは最後の30秒間をキャプチャします（その瞬間を含む！）。"
-      },
-      "Gaming": {
-        "Title": "ゲームのハイライト",
-        "Desc": "信じられないほどのコンボを決める。すぐに録音を押す。フラッシュバックはそのコンボまでのゲームプレイとあなたの反応をキャプチャします。"
-      },
-      "Decision": {
-        "Title": "重要な決定",
-        "Desc": "弁護士が契約条項を説明します。録音を押して説明をキャプチャします。後で確認するための完全で正確な記録を残せます。"
-      }
-    },
+    "Close": "閉じる",
     "Comparison": {
-      "Title": "フラッシュバックと従来の録画の比較",
+      "Capture": {
+        "Feature": "瞬間のキャプチャ",
+        "Flashback": "瞬間の後に開始できる",
+        "Traditional": "忘れると失われてしまいます"
+      },
       "Header": {
         "Feature": "機能",
-        "Traditional": "従来の録画",
-        "Flashback": "フラッシュバック録画"
+        "Flashback": "フラッシュバック録画",
+        "Traditional": "従来の録画"
       },
       "Planning": {
         "Feature": "計画",
-        "Traditional": "瞬間の前に開始する必要があります",
-        "Flashback": "計画は必要ありません"
-      },
-      "Capture": {
-        "Feature": "瞬間のキャプチャ",
-        "Traditional": "忘れると失われてしまいます",
-        "Flashback": "瞬間の後に開始できる"
+        "Flashback": "計画は必要ありません",
+        "Traditional": "瞬間の前に開始する必要があります"
       },
       "Result": {
         "Feature": "結果",
-        "Traditional": "あのとき録音していればよかった",
-        "Flashback": "あの瞬間をキャプチャできてよかった"
-      }
-    },
-    "Benefits": {
-      "Title": "主な利点",
-      "NoPlan": "計画は不要",
-      "AlwaysReady": "いつでも準備万端",
-      "Offline": "オフラインで動作",
-      "LocalOnly": "ローカル限定（プライバシー完全保障）",
-      "MultipleCaptures": "複数回録音可能：バッファは常に動作中"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "日常使用のためのオーディオフラッシュバック",
-        "Desc": "会議や通話には30秒のオーディオフラッシュバックを利用。低メモリ消費で信頼性高く動作します。"
+        "Flashback": "あの瞬間をキャプチャできてよかった",
+        "Traditional": "あのとき録音していればよかった"
       },
-      "VideoSpecial": {
-        "Title": "重要な瞬間のためのビデオフラッシュバック",
-        "Desc": "プレゼンテーションやゲームのハイライト、保存したいビジュアルコンテンツにはVideo Flashback（30秒バッファ）を有効にしてください。"
-      },
-      "Memory": {
-        "Title": "メモリ管理",
-        "Desc": "2分間のビデオフラッシュバック機能付き：この設定で、アプリ全体が1GB未満のRAMを消費します。"
-      }
+      "Title": "フラッシュバックと従来の録画の比較"
     },
     "GotIt": "わかりました",
-    "OpenSettings": "設定を開く"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "FLASHBACKボタンをクリックして有効にします。バッファは自動的に充填され始めます。",
+        "Title": "フラッシュバックを有効にする"
+      },
+      "Step2": {
+        "Desc": "緑色の状態を確認してください。過去のキャプチャには、バッファが90％に満たなければなりません。",
+        "Title": "準備完了を待つ"
+      },
+      "Step3": {
+        "Desc": "重要な出来事が発生したら、「録音を開始」を押してください。フラッシュバックはバッファを取得し、そのまま録音を続けます。",
+        "Title": "録音を開始"
+      },
+      "Title": "仕組みと操作方法"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "会議、通話、ボイスチャットの録音やキャプチャ",
+        "Buffer": "30秒（固定）",
+        "Captures": "マイクロフォンおよび/またはシステムオーディオ",
+        "Memory": "約30-50 MB RAM",
+        "Title": "オーディオフラッシュバック"
+      },
+      "Title": "二つのフラッシュバックモード",
+      "Video": {
+        "BestFor": "プレゼンテーション、ゲームのハイライト、スクリーンシェアセッション、ビジュアルコンテンツ",
+        "Buffer": "10秒、30秒、60秒、90秒、または120秒に設定可能",
+        "Captures": "スクリーンビデオとオーディオ",
+        "Memory": "50-600 MB RAM",
+        "Title": "ビデオ・フラッシュバック"
+      }
+    },
+    "OpenSettings": "設定を開く",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "弁護士が契約条項を説明します。録音を押して説明をキャプチャします。後で確認するための完全で正確な記録を残せます。",
+        "Title": "重要な決定"
+      },
+      "Gaming": {
+        "Desc": "信じられないほどのコンボを決める。すぐに録音を押す。フラッシュバックはそのコンボまでのゲームプレイとあなたの反応をキャプチャします。",
+        "Title": "ゲームのハイライト"
+      },
+      "OhNo": {
+        "Desc": "同僚が何か重要なことを言いました。録音したいと気づきます。録音を押す → フラッシュバックは最後の30秒間をキャプチャします（その瞬間を含む！）。",
+        "Title": "「あっと！」という瞬間"
+      },
+      "Title": "実践的なシナリオ"
+    },
+    "SpecLabel": {
+      "Buffer": "バッファ容量：",
+      "Captures": "記録内容：",
+      "Memory": "メモリー容量："
+    },
+    "Subtitle": "あなた専用のタイムマシン",
+    "SubtitleDesc": "重要な瞬間を逃さない—過去最大2分間を記録でき、後からでもキャプチャ可能です。",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "会議や通話には30秒のオーディオフラッシュバックを利用。低メモリ消費で信頼性高く動作します。",
+        "Title": "日常使用のためのオーディオフラッシュバック"
+      },
+      "Memory": {
+        "Desc": "2分間のビデオフラッシュバック機能付き：この設定で、アプリ全体が1GB未満のRAMを消費します。",
+        "Title": "メモリ管理"
+      },
+      "VideoSpecial": {
+        "Desc": "プレゼンテーションやゲームのハイライト、保存したいビジュアルコンテンツにはVideo Flashback（30秒バッファ）を有効にしてください。",
+        "Title": "重要な瞬間のためのビデオフラッシュバック"
+      }
+    },
+    "Title": "Flashback録音",
+    "VisualStates": {
+      "Charging": "琥珀色/黄色、バッファ充填中",
+      "ChargingLabel": "充電中",
+      "Off": "灰色、静的な波形",
+      "OffLabel": "オフ",
+      "Ready": "緑色、バッファ満杯",
+      "ReadyLabel": "準備完了",
+      "Title": "視覚的ステータスインジケーター"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "起動",
-    "AutoStartLabel": "自動スタートオーディオフラッシュバック",
+    "AutoStartAudio": "オーディオフラッシュバック",
     "AutoStartDesc": "アプリ起動時にフラッシュバックを開始",
     "AutoStartDisable": "自動スタートを無効にする",
-    "AutoStartAudio": "オーディオフラッシュバック",
+    "AutoStartLabel": "自動スタートオーディオフラッシュバック",
     "AutoStartScreen": "スクリーンフラッシュバック",
-    "BufferTitle": "バッファ",
-    "BufferDurationLabel": "バッファ時間",
     "BufferDurationDesc": "バッファを保持する時間",
-    "DurationOption": "{{duration}}秒"
+    "BufferDurationLabel": "バッファ時間",
+    "BufferTitle": "バッファ",
+    "DurationOption": "{{duration}}秒",
+    "StartupTitle": "起動"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "フラッシュバックバッファは空です。しばらく待ってからもう一度お試しください。",
+    "EnableFlashback": "フラッシュバックを有効にして、瞬間を保存します",
+    "FailedToSave": "フラッシュバックバッファの保存に失敗しました",
+    "SavedFlashback": "フラッシュバックを録音に保存しました",
+    "StillCharging": "フラッシュバックバッファはまだ充電中です"
   },
   "FloatingStartBar": {
-    "CloseTooltip": "ツールチップを閉じる",
-    "BluetoothMicTitle": "⚠️ Bluetoothマイク",
     "BluetoothMicDesc": "お使いのOSが「通信モード」を強制することがあり、歪みが生じることがあります。",
     "BluetoothMicTipLabel": "ヒント：",
     "BluetoothMicTipText": "より良い音質のために、Bluetooth非対応のマイクロフォンを使用してください。",
+    "BluetoothMicTitle": "⚠️ Bluetoothマイク",
+    "CloseTooltip": "ツールチップを閉じる",
     "FailedToLoadScreens": "画面の読み込みに失敗しました。再試行してください。",
     "FailedToLoadWindows": "ウィンドウの読み込みに失敗しました。再試行してください。",
     "MicrophoneMuted": "マイクロフォン：ミュート",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "マイクロフォンが検出されません",
     "NoScreensDetected": "スクリーンが検出されません。",
     "NoWindowsDetected": "ウィンドウが検出されません。アプリウィンドウを開いて更新してください。",
+    "RegionReady": "領域の準備完了",
+    "RegionRequired": "録音前に領域を選択してください",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "このプラットフォームでは画面の選択は利用できません。",
     "SelectMicrophone": "マイクロフォンを選択",
+    "SelectRegion": "領域を選択",
+    "SelectScreen": "画面を選択",
+    "SelectWindow": "ウィンドウを選択",
     "StartRecording": "録音開始",
     "SystemAudioOff": "システムオーディオ：オフ",
     "SystemAudioOn": "システムオーディオ：オン",
     "WaitingForRegion": "領域を待機中…",
     "WindowNotAvailable": "このプラットフォームではウィンドウの選択は利用できません。",
-    "SelectScreen": "画面を選択",
-    "SelectWindow": "ウィンドウを選択",
-    "WindowRequired": "録音前にウィンドウを選択してください",
-    "RegionReady": "領域の準備完了",
-    "SelectRegion": "領域を選択",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "録音前に領域を選択してください"
+    "WindowRequired": "録音前にウィンドウを選択してください"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "フルスクリーンが選択されました",
-    "ClickToRecord": "選択した領域を録音するには、フローティングバーの「録音開始」をクリックしてください"
+    "ClickToRecord": "選択した領域を録音するには、フローティングバーの「録音開始」をクリックしてください",
+    "FullscreenSelected": "フルスクリーンが選択されました"
+  },
+  "GeminiLive": {
+    "AITranscription": "AI文字起こし",
+    "CollapseNowSpeaking": "崩壊",
+    "EnableDescription": "録音中の Gemini によるリアルタイム文字起こし",
+    "EnableIntegration": "ライブ AI 文字起こしを有効にする",
+    "Error": "エラー",
+    "ExpandNowSpeaking": "拡大する",
+    "NowSpeaking": "今話しています...",
+    "SegmentCount_one": "{{count}} セグメント",
+    "SegmentCount_other": "{{count}} セグメント",
+    "WaitingForConnection": "接続中...",
+    "WaitingForSpeech": "スピーチを待っています..."
   },
   "IdleCompactView": {
     "ArmFlashback": "フラッシュバックを準備",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  メールをコピー",
     "EmailCopied": "✅  メールをクリップボードにコピーしました"
   },
-  "JumpList": {
-    "RecordAudio": "オーディオを録音",
-    "RecordAudioDesc": "オーディオの録音を開始（ミックス）",
-    "RecordFullscreen": "全画面録画",
-    "RecordFullscreenDesc": "全画面ビデオの録音を開始",
-    "RecordRegion": "録音する領域をスナップ",
-    "RecordRegionDesc": "録音する画面領域を選択",
-    "TakeScreenshot": "スクリーンショットを撮る",
-    "TakeScreenshotDesc": "画面の一部をキャプチャ",
-    "OpenRecordingsFolder": "録音フォルダを開く",
-    "OpenRecordingsFolderDesc": "デフォルトの録音フォルダを開く"
-  },
   "MeetingPrompt": {
-    "StartTitle": "ミーティングを検出しました",
-    "StartMessage": "{{appName}}でミーティングを始めますか？今すぐ録音を開始しますか？",
     "BrowserHint": "💡 ヒント: ブラウザ会議（Google Meet、Zoom、Teams）の場合、ブラウザだけを検出し、特定のウェブサイトは検出できません。",
-    "RememberChoice": "設定を記憶して、次回からは表示しない",
-    "Yes": "録音を開始",
-    "No": "キャンセル",
-    "EndTitle": "ミーティング終了",
-    "EndMessage": "{{appName}}でのミーティングが終了したことを検出しました。録音を停止しますか？",
     "ContinueRecording": "録音を続ける",
+    "EndMessage": "{{appName}}でのミーティングが終了したことを検出しました。録音を停止しますか？",
+    "EndTitle": "ミーティング終了",
+    "No": "キャンセル",
     "Pause": "一時停止",
-    "Resume": "再開",
-    "Stop": "停止",
+    "PlayRecording": "録音を再生",
     "RecordingSaved": "録音を保存しました。",
     "RecordingSavedWithFilename": "{{fileName}} を保存しました",
+    "RememberChoice": "設定を記憶して、次回からは表示しない",
     "RenameFile": "名前を変更",
     "ShowInFolder": "フォルダで表示",
-    "PlayRecording": "録音を再生",
+    "StartMessage": "{{appName}}でミーティングを始めますか？今すぐ録音を開始しますか？",
+    "StartTitle": "ミーティングを検出しました",
     "StopRecording": "録音を停止",
-    "Saving": "保存中..."
+    "Yes": "録音を開始"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "アクションアイテム",
+    "CollapseNowSpeaking": "現在話している内容を折りたたむ",
+    "ConnectionError": "SeaMeetへの接続に失敗しました",
+    "Content": "SeaMeetコンテンツ",
+    "DueDate": "締切日: {{date}}",
+    "EnableIntegration": "SeaMeetの文字起こしを有効にする",
+    "ExpandNowSpeaking": "今話している内容を拡大表示",
+    "FetchError": "文字起こしの読み込みに失敗しました",
+    "LanguageHint": "録音中に言語設定を変更できます",
+    "LiveTranscription": "ライブ書き起こし",
+    "LoadingContent": "SeaMeetコンテンツを読み込み中...",
+    "LoadingTranscript": "文字起こしを読み込み中...",
+    "NoActionItems": "アクションアイテムがありません",
+    "NoNotes": "メモがありません",
+    "NoSummary": "要約はまだ利用できません。",
+    "Notes": "メモ",
+    "NoTranscript": "利用可能な文字起こしはありません",
+    "NoTranslation": "翻訳なし",
+    "NowSpeaking": "現在話している最中です...",
+    "Retry": "再試行",
+    "SeekToTime": "この時点から再生するにはクリック",
+    "SegmentCount_one": "{{count}} セグメント",
+    "SegmentCount_other": "{{count}} セグメント",
+    "SignInRequired": "サインインが必要です",
+    "Summary": "要約",
+    "Transcribed": "文字起こし済み",
+    "Transcript": "文字起こし",
+    "TranscriptionLanguage": "音声書き起こし言語",
+    "TranslationLanguage": "翻訳対象の言語",
+    "UnknownSpeaker": "話者",
+    "WaitingForSpeech": "音声を待機中..."
   },
   "MinimizedView": {
     "ActionRequired": "アクションが必要（自動録音）",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "スクリーン・フラッシュバック充電中…",
     "ScreenRecording": "画面録画（{{time}}）"
   },
+  "Pause": "一時停止",
   "Permissions": {
-    "AutoRecordNextTime": "次回このアプリを自動録音しますか？",
     "AlwaysAutoRecord": "常に自動録音を有効にする",
-    "NeverRecord": "録音しない",
     "AskEveryTime": "毎回許可を求める",
-    "AutoRecordStarted": "自動録音開始済み",
+    "AutoRecordNextTime": "次回このアプリを自動録音しますか？",
     "AutoRecordReason": "{{app}}は常に自動録音を有効にしています。設定画面の自動スタートからアプリの録音許可を変更してください。",
-    "ChangeInSettings": "設定の変更",
-    "GuidanceTitle": "アプリの許可タイプ",
+    "AutoRecordStarted": "自動録音開始済み",
+    "AutoStartAudioRule": "デフォルトの録音モードがオーディオの場合、SeaMeetは確認なしで自動的に録音を開始します。",
+    "AutoStartFallbackRule": "それ以外の場合、SeaMeetは録音モードセレクターを表示して選択できます。",
+    "AutoStartFullscreenRule": "接続されているモニターが1つで、デフォルトの録音モードがフルスクリーンの場合、SeaMeetは自動的に録音を開始します。",
+    "AutoStartHeuristicsTitle": "自動開始の動作（常に自動録音）",
     "GuidanceAlways": ": SeaMeetは確認なしで自動的に録音します",
     "GuidanceAsk": ": SeaMeetは毎回許可を求めます",
     "GuidanceNever": ": SeaMeetは録音を促しません",
-    "AutoStartHeuristicsTitle": "自動開始の動作（常に自動録音）",
-    "AutoStartAudioRule": "デフォルトの録音モードがオーディオの場合、SeaMeetは確認なしで自動的に録音を開始します。",
-    "AutoStartFullscreenRule": "接続されているモニターが1つで、デフォルトの録音モードがフルスクリーンの場合、SeaMeetは自動的に録音を開始します。",
-    "AutoStartFallbackRule": "それ以外の場合、SeaMeetは録音モードセレクターを表示して選択できます。"
+    "GuidanceTitle": "アプリの許可タイプ",
+    "NeverRecord": "録音しない"
+  },
+  "PipelineStatus": {
+    "Done": "概要の準備ができました",
+    "Error": "処理に失敗しました",
+    "Progress": "{{total}} のチャンク {{current}} を処理しています",
+    "Queued": "サマリーがキューにあります...",
+    "Running": "概要を生成中..."
   },
   "Player": {
     "Mute": "ミュート",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "再生を停止",
-    "MoreOptions": "その他の設定",
-    "CodecInfo": "コーデック情報"
+    "CodecInfo": "コーデック情報",
+    "MoreOptions": "その他の設定"
+  },
+  "RecordingControls": {
+    "AudioRecording": "オーディオ録音",
+    "ContinueRecording": "録音を続ける",
+    "RecordingAudio": "オーディオを録音中...",
+    "RecordingMode": "録音モード",
+    "RecordingPreview": "録音プレビュー",
+    "RecordingScreen": "画面を録音中...",
+    "StartRecording": "録音を開始",
+    "Stop": "停止",
+    "StopRecording": "録音を停止",
+    "VideoRecording": "ビデオ録音"
+  },
+  "RecordingModes": {
+    "AreaCapture": "領域キャプチャ",
+    "CaptureMode": "キャプチャモード",
+    "FullScreen": "全画面",
+    "RecordAudio": "オーディオ",
+    "RecordAudioTip": "オーディオのみ",
+    "RecordFullscreen": "全画面",
+    "RecordFullscreenTip": "画面全体をキャプチャ",
+    "RecordRegion": "領域",
+    "RecordRegionTip": "カスタム領域をキャプチャ",
+    "RecordWindow": "ウィンドウ",
+    "RecordWindowTip": "アプリのウィンドウを1つキャプチャ"
+  },
+  "RecordingsList": {
+    "CopyFileName": "ファイル名をコピー",
+    "CopyFilePath": "ファイルパスをクリップボードにコピー",
+    "FileNameCopied": "{{fileName}} をクリップボードにコピーしました",
+    "FilePathCopied": "ファイルパスをクリップボードにコピーしました",
+    "OpenSaveFolder": "フォルダーを開く",
+    "RecentCaptures": "最近のキャプチャ",
+    "Recovered_one": "{{count}} 録画が回復されました",
+    "Recovered_other": "{{count}} 件の録音が回復されました",
+    "RefreshRecordings": "更新",
+    "SaveAs": "名前を付けて保存",
+    "SearchRecordingsOrSnapshots": "録音とスナップショットを検索",
+    "ShowInFolder": "フォルダーで表示"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "ファイル",
-    "Microphone": "マイク",
-    "App": "{{appName}}"
+    "Microphone": "マイク"
   },
   "RegionSelector": {
     "CaptureButton": "画面をキャプチャするか、Enterキーを押してください",
@@ -443,84 +807,73 @@
     "Monitor": "ディスプレイ",
     "PrimaryMonitor": "メインモニター"
   },
-  "Reliability": {
-    "Stable": "安定",
-    "Experimental": "実験的",
-    "NotTested": "未テスト"
-  },
+  "Resume": "再開する",
   "RingMenu": {
+    "AutoDetectOff": "自動検出: オフ",
+    "AutoDetectOn": "自動検出: オン",
     "FlashbackCharging": "フラッシュバック充電中...",
     "FlashbackNotCharged": "フラッシュバックは未充電です。シングルクリックでオーディオフラッシュバックを充電、ダブルクリックでスクリーンフラッシュバックを充電します",
     "FlashbackSaveTooltip": "シングルクリックで最後の{{duration}}秒の{{mode}}フラッシュバックを保存。ダブルクリックでここから録音を続けます。",
-    "RecordRegion": "領域録画",
-    "RecordFullscreen": "全画面録画",
-    "TakeScreenshot": "スクリーンショット",
-    "AutoDetectOn": "自動検出: オン",
-    "AutoDetectOff": "自動検出: オフ",
     "RecordAudio": "オーディオ録音",
-    "RecordWindow": "ウィンドウ録画"
+    "RecordFullscreen": "全画面録画",
+    "RecordRegion": "領域録画",
+    "RecordWindow": "ウィンドウ録画",
+    "TakeScreenshot": "スクリーンショット"
   },
   "ScreenPicker": {
-    "Title": "画面を選択",
     "Instruction": "フルスクリーン録音のために、記録するディスプレイを選択してください。",
-    "Refresh": "更新",
-    "Refreshing": "更新中…",
     "Loading": "ディスプレイを読み込み中…",
     "None": "ディスプレイが見つかりません。",
+    "Refresh": "更新",
+    "Refreshing": "更新中…",
+    "Title": "画面を選択",
     "Unknown": "無題のディスプレイ"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "分析",
+    "ButtonLabel": "AIによる処理",
+    "Custom": "カスタムプロンプト",
+    "CustomPlaceholder": "この画像について何でも質問してください...",
+    "Describe": "画像の説明",
+    "DescribeSub": "このスクリーンショットには何が映っているのでしょうか?",
+    "Description": "説明",
+    "ExtractedText": "抽出されたテキスト",
+    "Ocr": "テキストの抽出 (OCR)",
+    "OcrSub": "表示されているすべてのテキストを読む",
+    "PipelineError": "AI処理に失敗しました。もう一度試してください。",
+    "ProcessingWithTime": "処理中... {{sec}}s",
+    "Queuing": "キューイング中...",
+    "ResultLabel": "AIの結果",
+    "UnknownError": "不明なエラー"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "コピーしました！",
     "CopyFailed": "スクリーンショットのクリップボードへのコピーに失敗しました",
     "CopyToClipboard": "クリップボードにコピー",
     "CopyToClipboardWithHint": "{{action}}（Ctrl/Cmd+C）",
-    "Delete": "削除",
     "Dimensions": "サイズ",
     "FileSize": "ファイルサイズ",
-    "Filename": "ファイル名",
     "OpenInSystemViewer": "システムビューアーで開く",
-    "Rename": "名前を変更",
     "ScreenshotCopied": "スクリーンショットがクリップボードにコピーされました",
     "Share": "共有",
     "ShareCompleted": "共有完了",
     "ShareFailed": "このブラウザでは共有はサポートされていません。",
-    "ShareNotSupported": "このプラットフォームでは共有はサポートされていません。",
     "Sharing": "共有中...",
-    "Timestamp": "タイムスタンプ",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "設定",
     "About": {
       "CheckForUpdates": "アップデートを確認",
       "CheckingUpdates": "アップデートを確認中...",
-      "UpdateAvailable": "新バージョン {{version}} が利用可能です",
-      "UpdateReady": "バージョン {{version}} のインストール準備が完了しました",
-      "NoUpdatesAvailable": "アップデートはありません",
       "InstallNow": "今すぐインストール",
-      "TermsOfService": "利用規約",
-      "PrivacyPolicy": "プライバシーポリシー",
       "LegalToggle": {
+        "FullVersion": "全文",
         "OneSentence": "一文要約",
-        "TLDR": "TLDR",
-        "FullVersion": "全文"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeetは無料のプライバシー重視のレコーダーです。ローカル利用にはアカウントは不要で、あなたのデータはあなたのものであり、クラウド機能はオプションです。録音前に同意を得てください。",
-        "TLDRTitle": "SeaMeet 利用規約 — 忙しい方のためのTLDR",
-        "TLDRItems": [
-          "SeaMeet Desktopは無料です — すべての非AI機能はアカウントやログインなしで動作します。",
-          "録音前に同意を得てください — SeaMeetはこれを確認しません。",
-          "あなたの録音と文字起こしはあなたのものであり，SeaMeetはそれらをサービスとして実行するためにのみ処理します。",
-          "クラウド機能を利用するにはアカウントが必要で、データはSeaMeetのサーバーに保存されます。",
-          "匿名診断はオプションであり、いつでも無効にできます。",
-          "アプリの誤用（違法行為やハッキング行為など）をしないでください。",
-          "サービス内容は変更されることがあり、責任は限定されます。"
-        ]
-      },
+      "NoUpdatesAvailable": "アップデートはありません",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktopはすべての録音をデバイス上で完全にローカルかつプライベートに保ち、アカウントは不要です。クラウド機能はオプションで、暗号化され、完全にあなたの管理下にあります。",
-        "TLDRTitle": "SeaMeet プライバシー — 忙しい方のためのTLDR",
         "TLDRItems": [
           "SeaMeet Desktopはプライバシー重視で設計されています：すべてはデバイス上に残り、音声、ビデオ、画面内容、会議データは収集しません。",
           "デスクトップアプリの非AI機能を使用するのにアカウントは不要です。",
@@ -530,734 +883,299 @@
           "サードパーティ連携はオプションで、いつでも取り消し可能です。",
           "データを販売せず、クラウド録音は暗号化されます。",
           "あなたのデータはあなたが管理します — 録音をいつでも削除するか、完全な削除をリクエストできます。"
-        ]
+        ],
+        "TLDRTitle": "SeaMeet プライバシー — 忙しい方のためのTLDR"
       },
+      "PrivacyPolicy": "プライバシーポリシー",
       "PrivacySecurity": {
-        "Title": "プライバシーとセキュリティ",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Auto-detectは、あなたの明示的な承認なしに自動的に録音を開始しません。",
+            "Title": "明示的承認が必要"
+          },
           "MicrophoneActivity": {
-            "Title": "マイクロフォン活動のみ",
-            "Description": "Auto-detectはあなたのマイクロフォンの使用を自動的に検出し、どのアプリが使用しているか推測します。データは収集されません。"
+            "Description": "Auto-detectはあなたのマイクロフォンの使用を自動的に検出し、どのアプリが使用しているか推測します。データは収集されません。",
+            "Title": "マイクロフォン活動のみ"
           },
           "NoDataAccess": {
-            "Title": "データアクセスなし",
-            "Description": "Auto-detectはマイクロフォンの使用有無のみを検出し、録音データにはアクセスしません。"
-          },
-          "ExplicitApproval": {
-            "Title": "明示的承認が必要",
-            "Description": "Auto-detectは、あなたの明示的な承認なしに自動的に録音を開始しません。"
+            "Description": "Auto-detectはマイクロフォンの使用有無のみを検出し、録音データにはアクセスしません。",
+            "Title": "データアクセスなし"
           },
           "NoDataCollection": {
-            "Title": "データ収集なし",
-            "Description": "SeaMeetは、あなたの同意なくauto-detect機能からいかなるデータも収集しません。"
+            "Description": "SeaMeetは、あなたの同意なくauto-detect機能からいかなるデータも収集しません。",
+            "Title": "データ収集なし"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% ローカル",
-            "Description": "Flashbackは完全にあなたのローカルマシン上で動作します。クラウドには同期しません。"
+          "EthicalUse": {
+            "Description": "Flashbackを使用して他者を録音する前に、必ず通知し、同意を得てください。",
+            "Title": "倫理的使用"
           },
-          "RAMOnly": {
-            "Title": "RAMのみ",
-            "Description": "すべてのデータはメモリ内に保持されます。保存しなければディスクに書き込みません。"
+          "LocalOnly": {
+            "Description": "Flashbackは完全にあなたのローカルマシン上で動作します。クラウドには同期しません。",
+            "Title": "100% ローカル"
           },
           "Protected": {
-            "Title": "保護済み",
-            "Description": "あなたのプライバシーとセキュリティを最優先に考えています。あなたのデータは決してデバイス外に出ません。"
+            "Description": "あなたのプライバシーとセキュリティを最優先に考えています。あなたのデータは決してデバイス外に出ません。",
+            "Title": "保護済み"
           },
-          "EthicalUse": {
-            "Title": "倫理的使用",
-            "Description": "Flashbackを使用して他者を録音する前に、必ず通知し、同意を得てください。"
+          "RAMOnly": {
+            "Description": "すべてのデータはメモリ内に保持されます。保存しなければディスクに書き込みません。",
+            "Title": "RAMのみ"
           }
-        }
-      }
+        },
+        "Title": "プライバシーとセキュリティ"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeetは無料のプライバシー重視のレコーダーです。ローカル利用にはアカウントは不要で、あなたのデータはあなたのものであり、クラウド機能はオプションです。録音前に同意を得てください。",
+        "TLDRItems": [
+          "SeaMeet Desktopは無料です — すべての非AI機能はアカウントやログインなしで動作します。",
+          "録音前に同意を得てください — SeaMeetはこれを確認しません。",
+          "あなたの録音と文字起こしはあなたのものであり，SeaMeetはそれらをサービスとして実行するためにのみ処理します。",
+          "クラウド機能を利用するにはアカウントが必要で、データはSeaMeetのサーバーに保存されます。",
+          "匿名診断はオプションであり、いつでも無効にできます。",
+          "アプリの誤用（違法行為やハッキング行為など）をしないでください。",
+          "サービス内容は変更されることがあり、責任は限定されます。"
+        ],
+        "TLDRTitle": "SeaMeet 利用規約 — 忙しい方のためのTLDR"
+      },
+      "TermsOfService": "利用規約",
+      "UpdateAvailable": "新バージョン {{version}} が利用可能です",
+      "UpdateReady": "バージョン {{version}} のインストール準備が完了しました"
     },
-    "General": "一般",
-    "Storage": {
-      "Title": "ストレージ設定",
-      "Description": "SeaMeetが自動的に録音を保存するときに使用するデフォルトのフォルダーを選択してください。",
-      "DefaultPathLabel": "デフォルト保存フォルダー",
-      "Browse": "ブラウズ…",
-      "Save": "保存する",
-      "RecordingNameLabel": "録音名"
+    "AppPermissions": {
+      "DefaultRecordingMode": "デフォルト録音モード",
+      "DeleteTooltip": "リストから削除（「毎回確認する」にリセット）",
+      "EmptyState": "まだアプリが検出されていません。SeaMeetがマイクを使用しているアプリを検出すると、ここに表示されます。",
+      "PathCopied": "パスをクリップボードにコピーしました",
+      "PermissionHeader": "アプリ権限",
+      "Title": "アプリ権限"
     },
-    "ProfileSettings": "プロフィール設定",
-    "AccountPreferences": "アカウント設定",
-    "ProfileSettingsDescription": "プロフィール情報を管理",
-    "AccountPreferencesDescription": "アカウント設定を管理",
-    "SettingsFileLocation": "設定ファイルの場所",
-    "SettingsFileDescription": "設定はバックアップと管理が容易な単一のJSONファイルに保存されます。",
     "Back": "戻る",
-    "OpenFolder": "フォルダーを開く",
     "DefaultUserName": "SeaMeetユーザー",
-    "UserAvatarAlt": "ユーザー",
+    "FailedToCheckForUpdates": "アップデートの確認に失敗しました",
     "GroupTitle": {
-      "Account": "アカウント",
-      "General": "一般",
-      "Automation": "自動化",
-      "RecordingStorage": "録音ストレージ",
-      "Configuration": "設定",
       "ApplicationInfo": "アプリ情報",
-      "Legal": "法的情報"
+      "Automation": "自動化",
+      "Configuration": "設定",
+      "General": "一般",
+      "Legal": "法的情報",
+      "RecordingStorage": "録音ストレージ"
     },
     "Item": {
-      "EditProfile": "プロフィール編集",
-      "Account": "アカウント",
-      "LogOut": "ログアウト",
-      "Language": "言語",
+      "AutoRecording": "自動録音",
+      "Copyright": "著作権",
       "ImproveTranslationHint": "GitHub でこの翻訳の改善にご協力ください →",
-      "Theme": "テーマ",
-      "KeyboardShortcuts": "キーボードショートカット",
+      "Language": "言語",
       "MicrophoneGain": "マイクゲイン",
       "StartAtLogin": "ログイン時に起動",
-      "AutoRecording": "自動録音",
       "Storage": "ストレージ",
-      "Copyright": "著作権"
+      "Theme": "テーマ"
     },
     "MicGain": {
-      "Minimal": "最小 (0.1x)",
-      "Quiet": "小音量 (0.5x)",
-      "Normal": "通常 (1x)",
       "Loud": "大音量 (5x)",
-      "Louder": "さらに大音量 (10x)"
+      "Louder": "さらに大音量 (10x)",
+      "Minimal": "最小 (0.1x)",
+      "Normal": "通常 (1x)",
+      "Quiet": "小音量 (0.5x)"
+    },
+    "OpenFolder": "フォルダーを開く",
+    "PageTitle": {
+      "About": "アプリについて",
+      "AutoRecording": "自動録音",
+      "Flashback": "フラッシュバック録画",
+      "Storage": "ストレージ"
+    },
+    "SettingsFileLocation": "設定ファイルの場所",
+    "Storage": {
+      "Browse": "ブラウズ…",
+      "DefaultPathLabel": "デフォルト保存フォルダー",
+      "Description": "SeaMeetが自動的に録音を保存するときに使用するデフォルトのフォルダーを選択してください。",
+      "Save": "保存する",
+      "Title": "ストレージ設定"
     },
     "Theme": {
+      "AdobeSand": "アドビサンド",
+      "AdobeSandDesc": "温かみのあるアースカラーのライトモード",
+      "AzureLight": "アジュール",
+      "AzureLightDesc": "爽やかなブルーのライトモード",
+      "CloudCanvas": "クラウドキャンバス",
+      "CloudCanvasDesc": "さわやかなミントのライトモード",
+      "ColumnDark": "ダーク",
+      "ColumnLight": "ライト",
+      "CyberCobalt": "サイバーコバルト",
+      "CyberCobaltDesc": "ネオンシアンのダークモード",
+      "Dark": "ダーク",
+      "DarkDesc": "ダークモード",
       "Device": "デバイス",
       "DeviceDesc": "システム設定に従う",
       "Light": "ライト",
       "LightDesc": "ライトモード",
-      "Dark": "ダーク",
-      "DarkDesc": "ダークモード",
-      "Pink": "ダークピンク",
-      "PinkDesc": "ダークピンクモード",
       "LightPink": "ライトピンク",
       "LightPinkDesc": "ライトピンクモード",
-      "ColumnLight": "ライト",
-      "ColumnDark": "ダーク",
-      "AzureLight": "アジュール",
-      "AzureLightDesc": "爽やかなブルーのライトモード",
-      "WarmPaper": "ウォームペーパー",
-      "WarmPaperDesc": "温かみのある紙調ライトモード",
-      "SynthwaveLight": "シンセウェーブライト",
-      "SynthwaveLightDesc": "鮮やかなシンセウェーブライトモード",
       "MidnightBlue": "ミッドナイトブルー",
       "MidnightBlueDesc": "深いブルーのダークモード",
-      "CloudCanvas": "クラウドキャンバス",
-      "CloudCanvasDesc": "さわやかなミントのライトモード",
-      "CyberCobalt": "サイバーコバルト",
-      "CyberCobaltDesc": "ネオンシアンのダークモード",
-      "AdobeSand": "アドビサンド",
-      "AdobeSandDesc": "温かみのあるアースカラーのライトモード"
+      "Pink": "ダークピンク",
+      "PinkDesc": "ダークピンクモード",
+      "SynthwaveLight": "シンセウェーブライト",
+      "SynthwaveLightDesc": "鮮やかなシンセウェーブライトモード",
+      "WarmPaper": "ウォームペーパー",
+      "WarmPaperDesc": "温かみのある紙調ライトモード"
     },
-    "PageTitle": {
-      "Flashback": "フラッシュバック録画",
-      "About": "アプリについて",
-      "AutoRecording": "自動録音",
-      "Storage": "ストレージ"
-    },
-    "FailedToCheckForUpdates": "アップデートの確認に失敗しました",
-    "AppPermissions": {
-      "Title": "アプリ権限",
-      "Description": "マイクの使用が検出されたときに自動録音できるアプリを管理します。",
-      "EmptyState": "まだアプリが検出されていません。SeaMeetがマイクを使用しているアプリを検出すると、ここに表示されます。",
-      "DeleteTooltip": "リストから削除（「毎回確認する」にリセット）",
-      "PathCopied": "パスをクリップボードにコピーしました",
-      "PermissionHeader": "アプリ権限",
-      "DefaultRecordingMode": "デフォルト録音モード"
-    }
+    "Title": "設定",
+    "UserAvatarAlt": "ユーザー"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "浮動ウィンドウを表示",
-    "OpenLauncher": "ランチャーを起動",
-    "RecordAudio": "オーディオを録音",
-    "RecordFullscreen": "全画面を録音",
-    "RecordWindow": "ウィンドウを録音",
-    "RecordRegion": "範囲を録音",
     "CaptureScreenshot": "スクリーンショットをキャプチャ",
-    "RestoreDefaults": "初期設定にリセット",
-    "RecordingPrompt": "待機中…新しいショートカットを押してください",
     "ConflictWarning": "他のアプリで既に使用されているため、登録できません。",
     "GenericError": "ショートカットを設定できませんでした。",
     "None": "未設定",
-    "SpaceKey": "スペース"
+    "OpenLauncher": "ランチャーを起動",
+    "RecordAudio": "オーディオを録音",
+    "RecordFullscreen": "全画面を録音",
+    "RecordingPrompt": "待機中…新しいショートカットを押してください",
+    "RecordRegion": "範囲を録音",
+    "RecordWindow": "ウィンドウを録音",
+    "RestoreDefaults": "初期設定にリセット",
+    "SpaceKey": "スペース",
+    "ToggleFloatingWindow": "浮動ウィンドウを表示"
   },
   "Sidebar": {
-    "PrimaryNavigation": "主要ナビゲーション",
     "ClearSearch": "検索結果をクリア",
-    "AgentPanel": "AIエージェント"
-  },
-  "SidebarTabs": {
-    "Audios": "オーディオ",
-    "AutoDetect": "自動検出"
+    "PrimaryNavigation": "主要ナビゲーション"
   },
   "TakeSnapshot": {
-    "Title": "スナップショットを撮影しました",
+    "GoToSnapshot": "新しいスナップショットへ移動",
     "Message": "スナップショットを撮影し、保存しました：",
     "StayAtVideo": "現在のビデオに留まる",
-    "GoToSnapshot": "新しいスナップショットへ移動"
+    "Title": "スナップショットを撮影しました"
   },
   "TopNav": {
-    "CloseNavigationMenu": "ナビゲーション Menuを閉じる",
-    "OpenNavigationMenu": "ナビゲーション Menuを開く",
-    "MainNavigation": "メインナビゲーション",
-    "Record": "記録",
-    "Recording": "録音",
-    "Files": "ファイル",
     "Agent": "Agent",
-    "Terminal": "ターミナル"
+    "CloseNavigationMenu": "ナビゲーション Menuを閉じる",
+    "Files": "ファイル",
+    "MainNavigation": "メインナビゲーション",
+    "OpenNavigationMenu": "ナビゲーション Menuを開く",
+    "Record": "記録",
+    "Recording": "録音"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeetはまだシステムトレイ（右下）で実行中です。",
-    "ShowLauncher": "ランチャーを表示",
-    "ShowFloatingWindow": "フローティングウィンドウを表示",
-    "ShowMainWindow": "メインウィンドウを表示",
-    "ExitSeaMeet": "SeaMeetを終了",
-    "QuickRecording": "簡易録音",
-    "RecordAudio": "オーディオを録音",
-    "RecordFullscreen": "全画面の録音",
-    "RecordRegion": "録音範囲のスナップ",
-    "OpenRecordingsFolder": "録音フォルダーを開く",
-    "TakeScreenshot": "スクリーンショットを取る",
-    "Close": "閉じる",
-    "OpenSeaMeet": "SeaMeetを開く",
-    "OpenSaveFolder": "保存フォルダーを開く",
-    "ReportIssues": "問題を報告"
+    "MinimizedHint": "SeaMeetはまだシステムトレイ（右下）で実行中です。"
   },
   "Types": {
-    "Microphone": "マイクロフォン",
-    "System": "システムオーディオ出力",
     "Both": "両方（混合）",
     "File": "ファイル",
+    "Microphone": "マイクロフォン",
+    "System": "システムオーディオ出力",
     "Video": "動画"
   },
   "UpdateQuitModal": {
-    "Title": "アップデートがあります",
-    "ReadyToInstall": "SeaMeet {{version}} のインストール準備ができました",
-    "InstallBeforeQuitting": "終了前にインストールしますか？",
     "InstallAndQuit": "インストールして終了",
-    "QuitWithoutInstalling": "インストールせずに終了"
+    "InstallBeforeQuitting": "終了前にインストールしますか？",
+    "QuitWithoutInstalling": "インストールせずに終了",
+    "ReadyToInstall": "SeaMeet {{version}} のインストール準備ができました",
+    "Title": "アップデートがあります"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} のインストール準備完了",
-    "Downloading": "SeaMeet {{version}} のダウンロード中（{{percent}}%）",
     "Available": "SeaMeet {{version}} のアップデートがあります",
-    "WhatsNewInVersion": "{{version}} の新機能",
-    "WhatsNew": "新機能・更新内容：",
+    "Dismiss": "閉じる",
+    "Downloading": "SeaMeet {{version}} のダウンロード中（{{percent}}%）",
     "Hide": "非表示",
+    "ReadyToInstall": "SeaMeet {{version}} のインストール準備完了",
     "RestartNow": "今すぐ再起動",
     "ViewRelease": "リリースノートを確認",
     "ViewReleaseTitle": "「GitHubでリリースノートを確認」",
-    "Dismiss": "閉じる"
+    "WhatsNew": "新機能・更新内容：",
+    "WhatsNewInVersion": "{{version}} の新機能"
   },
   "UserMenu": {
+    "AboutSeaMeet": "SeaMeet について",
     "DisplayName": "ユーザー",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "プロフィール設定",
-    "AccountPreferences": "アカウント設定",
-    "BillingPlans": "請求とプラン",
-    "StorageSettings": "ストレージ設定",
-    "HelpSupport": "ヘルプ＆サポート",
-    "KeyboardShortcuts": "キーボードショートカット",
-    "SignIn": "サインイン",
-    "SignOut": "ログアウト",
-    "SeaMeetSignedOut": "SeaMeet：未サインイン",
-    "SeaMeetSignedIn": "SeaMeet：ログイン済み",
-    "AboutSeaMeet": "SeaMeet について",
     "Exit": "終了",
+    "HelpSupport": "ヘルプ＆サポート",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "SeaMeet のドキュメントやガイドについては、Wiki をご覧ください。",
-      "VisitWiki": "Wiki をご覧ください",
-      "Issues": "ご意見・ご要望",
-      "IssuesDesc": "バグ報告と機能リクエスト（GitHubアカウントが必要です）",
-      "SubmitIssue": "Issueを送信",
       "Discussion": "ディスカッション",
       "DiscussionDesc": "コミュニティディスカッションに参加（GitHubアカウントが必要です）",
-      "JoinDiscussion": "Discussionに参加",
+      "DogfoodingDesc": "SeaMeetを使用して問題を記録し、Issueまたはメールで送信することをお勧めします！",
       "Email": "メール",
       "EmailDesc": "チームに直接ご連絡ください。",
-      "SendEmail": "メールを送信",
-      "Dogfooding": "自社製品活用",
-      "DogfoodingDesc": "SeaMeetを使用して問題を記録し、Issueまたはメールで送信することをお勧めします！",
-      "CheckForUpdates": "アップデートを確認",
-      "CheckingUpdates": "アップデートを確認中...",
-      "UpdateAvailable": "新バージョン {{version}} が利用可能です",
-      "UpdateReady": "バージョン {{version}} のインストール準備が完了しました",
-      "InstallNow": "今すぐインストール",
-      "TermsOfService": "利用規約",
-      "PrivacyPolicy": "プライバシーポリシー",
       "ImproveTranslation": "翻訳を改善する",
-      "ImproveTranslationDesc": "GitHub での翻訳の改善や新しい言語のリクエストにご協力ください。"
-    }
+      "ImproveTranslationDesc": "GitHub での翻訳の改善や新しい言語のリクエストにご協力ください。",
+      "Issues": "ご意見・ご要望",
+      "IssuesDesc": "バグ報告と機能リクエスト（GitHubアカウントが必要です）",
+      "JoinDiscussion": "Discussionに参加",
+      "SendEmail": "メールを送信",
+      "SubmitIssue": "Issueを送信",
+      "VisitWiki": "Wiki をご覧ください",
+      "Wiki": "Wiki",
+      "WikiDesc": "SeaMeet のドキュメントやガイドについては、Wiki をご覧ください。"
+    },
+    "KeyboardShortcuts": "キーボードショートカット",
+    "SeaMeetSignedIn": "SeaMeet：ログイン済み",
+    "SeaMeetSignedOut": "SeaMeet：未サインイン",
+    "SignIn": "サインイン",
+    "SignOut": "ログアウト"
   },
   "VideoSettings": {
-    "Title": "ビデオ録画設定",
-    "Mode": "録音モード",
-    "ModeOff": "オフ",
-    "ModeFullscreen": "全画面表示",
-    "ModeWindow": "ウィンドウ",
-    "ModeRegion": "領域",
+    "AudioSettings": "オーディオ設定",
+    "CodecTooltip": {
+      "VP8": "このビデオは VP8 を使用して最高品質を実現します。Windows Media Player や macOS の QuickTime など一部の標準ビデオプレイヤーはこのフォーマットに対応していない場合があります。信頼性の高い再生には、ChromeやEdgeなどのモダンブラウザや、VLCのような互換性のあるプレイヤーをご利用ください。",
+      "VP9": "このビデオは VP9 を使用して最高品質を実現します。Windows Media Player や macOS の QuickTime など一部の標準ビデオプレイヤーはこのフォーマットに対応していない場合があります。信頼性の高い再生には、ChromeやEdgeなどのモダンブラウザや、VLCのような互換性のあるプレイヤーをご利用ください。"
+    },
+    "Detecting": "検出中...",
+    "FlashbackArmedNotice": "{{seconds}}秒のフラッシュバックバッファを持つ録音です",
+    "FramesPerSecond": "FPS（フレーム毎秒）",
+    "FullHD": "フルHD",
+    "GBPerHour": "~{{gb}} GB/時間",
+    "HD": "HD",
+    "HideWindow": "範囲選択時にSeaMeetウィンドウを非表示にします",
+    "Internal": "内部",
+    "MBPerMin": "~{{mb}} MB/min、",
     "ModeAudioOnly": "オーディオのみ",
-    "SelectScreen": "スクリーンを選択",
-    "SelectWindow": "スクリーンを選択",
-    "Refresh": "更新",
+    "ModeFullscreen": "全画面表示",
+    "ModeRegion": "領域",
+    "ModeWindow": "ウィンドウ",
+    "Native": "ネイティブ（標準）",
     "NoScreens": "スクリーンが検出されません",
     "NoWindows": "ウィンドウが検出されません",
-    "RegionInfo": "録音開始時にスクリーンやウィンドウを選択する必要があります",
-    "HideWindow": "範囲選択時にSeaMeetウィンドウを非表示にします",
-    "VideoQuality": "ビデオ品質",
-    "Quality": "品質",
-    "QualityOriginal": "原画質",
-    "QualityHigh": "高品質",
-    "QualityMedium": "中品質",
-    "QualityLow": "低品質",
-    "FramesPerSecond": "FPS（フレーム毎秒）",
-    "FrameRate": "フレームレート",
-    "SourceResolution": "ソース解像度",
-    "Native": "ネイティブ（標準）",
-    "FullHD": "フルHD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "上のソースを選択してください",
-    "ZeroSize": "推定値（0MB/min、0GB/時）",
-    "MBPerMin": "~{{mb}} MB/min、",
-    "GBPerHour": "~{{gb}} GB/時間",
     "Primary": "プライマリ",
-    "Internal": "内部",
-    "Detecting": "検出中...",
-    "ResolutionUnknown": "解像度不明",
-    "AudioSettings": "オーディオ設定",
-    "RecordModeTitle": "オーディオまたはビデオの録音をしますか？",
+    "QualityHigh": "高品質",
+    "QualityLow": "低品質",
+    "QualityMedium": "中品質",
+    "QualityOriginal": "原画質",
     "Record": "録画",
-    "RecordWithoutFlashback": "フラッシュバックなしで録音",
+    "RecordModeTitle": "オーディオまたはビデオの録音をしますか？",
     "RecordWithFlashback": "フラッシュバックと併用して録画",
+    "RecordWithoutFlashback": "フラッシュバックなしで録音",
+    "Refresh": "更新",
+    "ResolutionUnknown": "解像度不明",
+    "SD": "SD",
+    "SelectScreen": "スクリーンを選択",
+    "SelectSourceAbove": "上のソースを選択してください",
+    "SelectWindow": "スクリーンを選択",
+    "SourceResolution": "ソース解像度",
+    "Title": "ビデオ録画設定",
     "VideoFlashbackArmedNotice": "スクリーンフラッシュバック準備完了（{{seconds}}秒）",
-    "FlashbackArmedNotice": "{{seconds}}秒のフラッシュバックバッファを持つ録音です",
-    "CodecTooltip": {
-      "VP9": "このビデオは VP9 を使用して最高品質を実現します。Windows Media Player や macOS の QuickTime など一部の標準ビデオプレイヤーはこのフォーマットに対応していない場合があります。信頼性の高い再生には、ChromeやEdgeなどのモダンブラウザや、VLCのような互換性のあるプレイヤーをご利用ください。",
-      "VP8": "このビデオは VP8 を使用して最高品質を実現します。Windows Media Player や macOS の QuickTime など一部の標準ビデオプレイヤーはこのフォーマットに対応していない場合があります。信頼性の高い再生には、ChromeやEdgeなどのモダンブラウザや、VLCのような互換性のあるプレイヤーをご利用ください。"
-    }
+    "VideoQuality": "ビデオ品質",
+    "ZeroSize": "推定値（0MB/min、0GB/時）"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "領域を選択しました",
     "CustomRegion": "カスタム領域: {{width}} × {{height}} ピクセル",
-    "ReselectRegion": "領域を再選択",
-    "SelectCustomRegion": "カスタム領域を選択",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "領域を選択しました",
+    "ReselectRegion": "領域を再選択",
+    "SelectCustomRegion": "カスタム領域を選択"
   },
   "WindowPicker": {
-    "Title": "ウィンドウを選択",
     "Instruction": "ウィンドウ録画用にキャプチャするウィンドウを選択してください。",
-    "Refresh": "更新",
-    "Refreshing": "更新中…",
     "Loading": "ウィンドウを読み込み中…",
     "None": "ウィンドウが検出されません。アプリケーションを開いて更新してください。",
+    "Refresh": "更新",
+    "Refreshing": "更新中…",
+    "Title": "ウィンドウを選択",
     "Unknown": "無題のウィンドウ"
-  },
-  "Common": {
-    "Configure": "設定",
-    "Cancel": "キャンセル",
-    "Apply": "適用します",
-    "Close": "閉じる",
-    "Open": "開く",
-    "Minimize": "円形に最小化",
-    "Recording": "録音中",
-    "UnknownApp": "不明なアプリケーション",
-    "Done": "完了しました",
-    "Save": "保存する",
-    "Saving": "保存しています",
-    "Delete": "削除",
-    "Or": "または",
-    "Loading": "ローディング中...",
-    "Expand": "拡大",
-    "PlannedFeature": "計画中の機能",
-    "Screen": "スクリーン",
-    "Window": "ウィンドウ",
-    "Region": "リージョン",
-    "AppTitle": "SeaMeet スクリーン＆オーディオレコーダー",
-    "AppSubtitle": "デバイスの入力と出力オーディオを記録",
-    "Screenshot": "スクリーンショット",
-    "Saved": "保存されました",
-    "Processing": "処理中...",
-    "Starting": "起動中...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} をクリップボードにコピーしました。必要に応じてダブルクリックでファイル名を変更してください。",
-    "ApplyName": "名前を設定",
-    "Send": "送信"
-  },
-  "RecordingControls": {
-    "StartRecording": "録音を開始",
-    "StopRecording": "録音を停止",
-    "ContinueRecording": "録音を続ける",
-    "Pause": "一時停止",
-    "Resume": "再開",
-    "Stop": "停止",
-    "RecordingScreen": "画面を録音中...",
-    "RecordingAudio": "オーディオを録音中...",
-    "AudioRecording": "オーディオ録音",
-    "VideoRecording": "ビデオ録音",
-    "RecordingPreview": "録音プレビュー",
-    "RecordingMode": "録音モード"
-  },
-  "RecordingModes": {
-    "RecordAudio": "オーディオ",
-    "RecordAudioTip": "オーディオのみ",
-    "RecordWindow": "ウィンドウ",
-    "RecordWindowTip": "アプリのウィンドウを1つキャプチャ",
-    "RecordFullscreen": "全画面",
-    "RecordFullscreenTip": "画面全体をキャプチャ",
-    "RecordRegion": "領域",
-    "RecordRegionTip": "カスタム領域をキャプチャ",
-    "CaptureMode": "キャプチャモード",
-    "FullScreen": "全画面",
-    "AreaCapture": "領域キャプチャ"
-  },
-  "RecordingsList": {
-    "NoRecordings": "まだ録音がありません。録音を開始するとここに表示されます。",
-    "RecentRecordings": "最近の録音",
-    "RecentCaptures": "最近のキャプチャ",
-    "RefreshRecordings": "更新",
-    "SearchRecordingsOrSnapshots": "録音とスナップショットを検索",
-    "SearchRecordingsPlaceholder": "録音を探す",
-    "ShowInFolder": "フォルダーで表示",
-    "CopyFileName": "ファイル名をコピー",
-    "CopyFilePath": "ファイルパスをクリップボードにコピー",
-    "FileNameCopied": "{{fileName}} をクリップボードにコピーしました",
-    "FilePathCopied": "ファイルパスをクリップボードにコピーしました",
-    "SaveAs": "名前を付けて保存",
-    "OpenSaveFolder": "フォルダーを開く",
-    "Title": "録音一覧",
-    "Recovered": "{{count}}件の録音を復元しました"
-  },
-  "FileImport": {
-    "ImportMedia": "メディアをインポート",
-    "DragDropFiles": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
-    "DragDropSubtitle": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
-    "BrowseFiles": "ファイルを参照",
-    "Supported": "サポートされている",
-    "SupportedFormats": "サポートされている: MP3、WAV、M4A、WebM、OGG、PNG、JPGなど",
-    "VideoImportCopying": "動画ファイルをコピー中...",
-    "VideoImportSaving": "動画ファイルを保存中...",
-    "VideoUnsupported": "この動画形式はアプリで再生できない場合があります。ファイルはインポートされます。"
-  },
-  "AudioControls": {
-    "AudioCapture": "音声キャプチャ",
-    "AudioMix": "オーディオミックス",
-    "AudioSessionsLog": "オーディオセッションログ",
-    "AudioSource": "オーディオソース：",
-    "InputDevice": "入力デバイス:",
-    "Microphone": "マイクロフォン",
-    "MicrophoneLabel": "マイクロフォン {{id}}",
-    "RecordingDefaultMicrophone": "デフォルトのマイクロフォン",
-    "RecordingInputLabel": "入力: {{name}}",
-    "RecordingSettings": "録音設定",
-    "RecordingType": "録音タイプ：",
-    "RefreshMicrophoneList": "マイクロフォンリストの更新",
-    "MicrophoneGainWarning": "高いマイクロフォンゲインは、「システムオーディオ」がオフでもスピーカープレイバックを拾うことがあります。ヘッドフォンを使用するか、マイクロフォンゲインを下げてマイクのみの録音にしてください。"
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "録音開始",
-    "Ready": "準備はいいですか？",
-    "BufferingMoment": "バッファリング中...",
-    "RecordWithFlashback": "フラッシュバックを使った録音",
-    "NeverMissAMoment": "決して瞬間を逃さない。",
-    "ReadyToGuard": "{{type}}の保護準備はできましたか？",
-    "FillingBuffer": "{{duration}}秒間のフラッシュバックバッファを満たしています… {{progress}}%",
-    "ReadyToCapture": "SeaMeet はキャプチャの準備ができています。",
-    "DescNone": "画面やオーディオを録画するか、スクリーンショットを撮ります。上記のフラッシュバックモードを選択して瞬間保存を有効にしてください。",
-    "DescInit": "「準備できましたか？」をクリックして、SeaMeet に過去を「覚える」よう指示してください。",
-    "DescCharging": "{{duration}}秒間のウィンドウをプライミング中…まもなく見逃すかもしれない内容をキャッチします。{{progress}}% 完了。",
-    "DescReady": "フラッシュバックは準備完了しています。録音を開始すると、過去 {{duration}} 秒の {{type}} が含まれます。もう見逃すことはありません。",
-    "Screen": "スクリーン",
-    "Audio": "オーディオ",
-    "OpenLauncher": "ランチャーを開く",
-    "OpenFloater": "フロートウィンドウを開く",
-    "TakeScreenshot": "スクリーンショットを取る",
-    "Buffering": "バッファリング中",
-    "SavingFlashback": "フラッシュバックを保存中…",
-    "SaveLastFlashback": "最後の {{duration}} 秒のフラッシュバックを保存",
-    "PrivacyProtected": "プライバシーは保護されています。",
-    "PrivacyDesc": "SeaMeetは過去{{duration}}秒の{{type}}をローカルのコンピュータのRAMのリングバッファに保存します。",
-    "FlashbackOff": "フラッシュバックは現在オフです。いつでも通常の録音を開始するか、上記のオーディオまたはスクリーンのフラッシュバックモードを選択して、ヒーローの瞬間保存を有効にしてください。",
-    "FlashbackInitAudio": "音声を守る準備はできましたか？",
-    "FlashbackInitScreen": "画面を守る準備はできましたか？",
-    "FlashbackInitDescription": "「Ready?」をクリックして、SeaMeetに過去を「記憶」させ始めてください。",
-    "FlashbackCharging": "{{seconds}}秒のバッファを埋めています… {{percent}}%",
-    "FlashbackChargingDescription": "{{seconds}}秒のウィンドウを準備中... {{percent}}% 完了しました。",
-    "FlashbackReadyQuestion": "よろしいですか？",
-    "FlashbackReady": "一瞬も逃さずに。",
-    "FlashbackReadyDescription": "フラッシュバックは有効になっています。録音時に過去{{seconds}}秒の{{type}}が含まれます。",
-    "FlashbackBuffering": "バッファリング中...",
-    "SaveFlashback": "最後の{{seconds}}秒のフラッシュバックを保存",
-    "FlashbackPrivacy": "RAM内に保存されており、プライバシーは保護されています。",
-    "Capturing": "キャプチャ中...",
-    "CaptureMode": "キャプチャモード",
-    "FullScreen": "フルスクリーン",
-    "AreaCapture": "エリアキャプチャ",
-    "KeepWindowVisible": "スクリーンショットを撮るときは SeaMeet ウィンドウを表示したままにしてください",
-    "FlashbackMismatch": "フラッシュバックモードの不一致です。オーディオ録音はされているのに、ビデオフラッシュバックが有効です。ビデオフラッシュバックを無効にしてください。"
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "SeaMeetの文字起こしを有効にする",
-    "SignInRequired": "サインインが必要です",
-    "ProcessingMode": "処理モード",
-    "Realtime": "リアルタイム",
-    "RealtimeDescription": "録音中にリアルタイムで文字起こし",
-    "Diarized": "音声の識別済み",
-    "DiarizedDescription": "音声をアップロードして話者識別を行う",
-    "ComingSoon": "（近日公開）",
-    "TranscriptionLanguage": "音声書き起こし言語",
-    "TranslationLanguage": "翻訳対象の言語",
-    "NoTranslation": "翻訳なし",
-    "LanguageHint": "録音中に言語設定を変更できます",
-    "LiveTranscription": "ライブ書き起こし",
-    "WaitingForSpeech": "音声を待機中...",
-    "UnknownSpeaker": "話者",
-    "SegmentCount": "{{count}} セグメント",
-    "SegmentCount_plural": "{{count}} セグメント",
-    "ConnectionError": "SeaMeetへの接続に失敗しました",
-    "Reconnecting": "再接続中...",
-    "Connected": "SeaMeetに接続しました",
-    "Disconnected": "SeaMeetとの接続が切断されました",
-    "NowSpeaking": "現在話している最中です...",
-    "Transcript": "文字起こし",
-    "LoadingTranscript": "文字起こしを読み込み中...",
-    "NoTranscript": "利用可能な文字起こしはありません",
-    "FetchError": "文字起こしの読み込みに失敗しました",
-    "Retry": "再試行",
-    "Transcribed": "文字起こし済み",
-    "Content": "SeaMeetコンテンツ",
-    "Tab": {
-      "transcription": "文字起こし",
-      "summary": "要約",
-      "actionItems": "アクションアイテム",
-      "notes": "メモ"
-    },
-    "Summary": "要約",
-    "NoSummary": "要約はまだ利用できません。",
-    "ActionItems": "アクションアイテム",
-    "NoActionItems": "アクションアイテムがありません",
-    "DueDate": "締切日: {{date}}",
-    "Notes": "メモ",
-    "NoNotes": "メモがありません",
-    "LoadingContent": "SeaMeetコンテンツを読み込み中...",
-    "SeekToTime": "この時点から再生するにはクリック",
-    "CollapseNowSpeaking": "現在話している内容を折りたたむ",
-    "ExpandNowSpeaking": "今話している内容を拡大表示"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "フラッシュバックバッファは空です。しばらく待ってからもう一度お試しください。",
-    "EnableFlashback": "フラッシュバックを有効にして、瞬間を保存します",
-    "FailedToSave": "フラッシュバックバッファの保存に失敗しました",
-    "SavedFlashback": "フラッシュバックを録音に保存しました",
-    "StillCharging": "フラッシュバックバッファはまだ充電中です"
-  },
-  "AISummary": {
-    "TabTitle": "AIの概要",
-    "SetupRequired": "[設定] → [AI 機能] で Gemini API キーを設定し、AI サマリーを有効にします。",
-    "EnableRequired": "AI の概要を表示するには、[設定] → [AI 機能] で AI 機能を有効にします。",
-    "ExportMarkdown": "マークダウンとしてコピー",
-    "ExportSrt": "SRT としてコピー",
-    "ExportJson": "JSONとしてコピー",
-    "Regenerate": "概要を再生成する",
-    "Minimize": "最小化する",
-    "Maximize": "拡大して全体表示する",
-    "Queued": "処理のためにキューに入れられています...",
-    "Processing": "概要を生成中...",
-    "Error": "概要のロードに失敗しました: {{error}}",
-    "PipelineError": "AI処理に失敗しました。再生してみてください。",
-    "Retry": "リトライ",
-    "NoSummary": "AI の概要はまだありません。",
-    "Generate": "概要の生成",
-    "Copy": "コピー",
-    "NoSummaryText": "概要は利用できません。",
-    "Topics": "トピック:",
-    "NoTranscript": "トランスクリプトは利用できません。",
-    "NoActions": "アクションアイテムは特定されていません。",
-    "NoDecisions": "重要な決定は特定されていない。",
-    "Export": {
-      "HeadingSummary": "まとめ",
-      "HeadingActionItems": "アクションアイテム",
-      "HeadingKeyDecisions": "重要な決定事項",
-      "HeadingTranscription": "転写"
-    },
-    "Tab": {
-      "Summary": "まとめ",
-      "Transcription": "成績証明書",
-      "ActionItems": "アクション",
-      "KeyDecisions": "決定",
-      "Agent": "エージェント"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "AIの機能",
-    "MenuItem": "AI を活用した要約",
-    "PageTitle": "AIの機能",
-    "EnableToggle": "AI を活用した要約を有効にする",
-    "EnableToggleDesc": "無料の Gemini API キーが必要です",
-    "ApiKeySection": "Gemini API キー",
-    "ApiKeyLabel": "Gemini API キー",
-    "KeyPlaceholder": "アイザシ...",
-    "KeyPlaceholderSaved": "•••••••••（保存済み）",
-    "ShowKey": "キーを表示",
-    "HideKey": "キーを隠す",
-    "TestKey": "保存して確認",
-    "Saving": "保存中...",
-    "GetKeyLink": "Google AI Studio から無料の API キーを取得 →",
-    "ClearKey": "保存されたキーを削除する",
-    "KeyVerified": "キーが検証されました",
-    "KeyInvalid": "無効なキー",
-    "KeyTesting": "テスト中...",
-    "KeyNotConfigured": "キーが設定されていません",
-    "ModelSection": "AIモデル",
-    "ModelLabel": "ジェミニモデル",
-    "SelectedModel": "選択済み: {{model}}",
-    "AutomationSection": "オートメーション",
-    "AutoSummary": "概要を自動生成",
-    "AutoSummaryDesc": "すべての記録が終了した後に実行されます",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "推奨 · 高速 + 有能",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "最も安価な安定したオプション",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "超格安",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "最大能力",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "最も安定した推論"
-    },
-    "ClaudeKey": {
-      "Section": "クロード API キー (エージェント)",
-      "SourceLabel": "アクティブなソース:",
-      "SourceByok": "API キー (BYOK)",
-      "SourceKeyServer": "SeaMeet が管理",
-      "SourceCli": "クロードコード CLI",
-      "SourceNone": "未設定",
-      "KeyPlaceholder": "スク-アリ-...",
-      "KeyPlaceholderSaved": "•••••••••（保存済み）",
-      "ShowKey": "キーを表示",
-      "HideKey": "キーを隠す",
-      "TestKey": "保存して確認する",
-      "Saving": "保存中...",
-      "ClearKey": "保存されたキーを削除する",
-      "KeyVerified": "キーが検証されました",
-      "KeyInvalid": "無効なキー",
-      "KeyTesting": "テスト中...",
-      "KeyNotConfigured": "キーが設定されていません",
-      "GetKeyLink": "Anthropic Console から API キーを取得 →",
-      "QuotaSection": "キーサーバーの割り当て",
-      "QuotaRemaining": "{{remaining}} / {{limit}} トークンが残っています",
-      "QuotaResetDate": "{{date}} でリセット",
-      "QuotaLoading": "クォータを読み込み中...",
-      "QuotaRefresh": "クォータの更新",
-      "CliSection": "クロードコード CLI",
-      "CliInstalled": "インストール済み ({{version}})",
-      "CliNotInstalled": "クロード CLI が見つかりません",
-      "CliInstallLink": "クロードコードをインストール →",
-      "ModelSection": "デフォルトのクロードモデル",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "早くて安い",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "推奨・バランス型",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "最も有能な"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AIエージェント&コワーク",
-    "PageTitle": "AIエージェント&コワーク",
-    "SectionTitle": "AIエージェント&コワーク",
-    "EnableToggle": "AI エージェントとコワークを有効にする",
-    "EnableToggleDesc": "Claude API キーが必要です",
-    "DisabledBadge": "無効",
-    "DisabledMsg": "AI エージェントとコワークは無効になっています。 [設定] → [AI Agent & Cowork] で有効にします。",
-    "DisabledTabHint": "AI エージェントが無効になっています - [設定] → [AI エージェントとコワーク] で有効にします",
-    "NotConfiguredMsg": "クロード API キーが設定されていません。 「設定」→「AI Agent & Cowork」で設定します。"
-  },
-  "PipelineStatus": {
-    "Queued": "サマリーがキューにあります...",
-    "Running": "概要を生成中...",
-    "Progress": "{{total}} のチャンク {{current}} を処理しています",
-    "Done": "概要の準備ができました",
-    "Error": "処理に失敗しました"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "AIによる処理",
-    "Queuing": "キューイング中...",
-    "ProcessingWithTime": "処理中... {{sec}}s",
-    "Describe": "画像の説明",
-    "DescribeSub": "このスクリーンショットには何が映っているのでしょうか?",
-    "Ocr": "テキストの抽出 (OCR)",
-    "OcrSub": "表示されているすべてのテキストを読む",
-    "Custom": "カスタムプロンプト",
-    "CustomPlaceholder": "この画像について何でも質問してください...",
-    "ResultLabel": "AIの結果",
-    "Description": "説明",
-    "ExtractedText": "抽出されたテキスト",
-    "Analysis": "分析",
-    "PipelineError": "AI処理に失敗しました。もう一度試してください。",
-    "UnknownError": "不明なエラー"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "ファイルを読み取り中...",
-      "Executing": "実行中...",
-      "Running": "走っています...",
-      "Input": "入力",
-      "Output": "出力",
-      "Pattern": "パターン：",
-      "ShowDetails": "詳細を表示",
-      "AndMoreLines": "...あと {{count}} 行"
-    },
-    "Streaming": {
-      "Thinking": "考え...",
-      "LongRunning": "いつもより長く走る",
-      "ToolStuck": "ツールが固着している可能性があります",
-      "ForceStop": "強制停止",
-      "GeneratingResponse": "応答を生成中...",
-      "RunningTool": "{{tool}} を実行中..."
-    },
-    "Permission": {
-      "Title": "ツール許可リクエスト",
-      "Allow": "1 回だけ許可",
-      "AllowSession": "セッションを許可する",
-      "Deny": "拒否",
-      "Allowed": "許可された",
-      "Denied": "拒否されました"
-    },
-    "Title": "AIエージェント",
-    "GlobalTitle": "AIエージェント",
-    "NewSession": "新しいセッション",
-    "Sessions": "セッション",
-    "NoSessions": "まだセッションはありません。以下で会話を始めてください。",
-    "SendPlaceholder": "何でも聞いてください... (Enter で送信、Shift+Enter で改行)",
-    "SendButton": "送信",
-    "StopButton": "停止",
-    "NotConfigured": "エージェントを使用するには、[設定] → [AI 機能] で Claude API キーを設定します。",
-    "GoToSettings": "設定を開く",
-    "SessionCost": "セッション: {inputTokens}_ 入力 /{outputTokens}_ 出力トークン",
-    "CommandHelp": "コマンド: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "聞く",
-      "Code": "コード",
-      "Plan": "プラン"
-    },
-    "Model": {
-      "Haiku": "俳句",
-      "Sonnet": "ソネット",
-      "Opus": "オーパス"
-    },
-    "QuickAction": {
-      "Summarize": "この記録を要約する",
-      "ActionItems": "アクションアイテムを見つける",
-      "DraftEmail": "フォローアップメールの下書き"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "何を手伝ってもらえますか？",
-      "HelpAnalyze": "最近の録音の分析を手伝ってください"
-    },
-    "AssetContext": "コンテキスト: {{name}}"
   }
 }

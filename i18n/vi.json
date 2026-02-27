@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "Phiên bản App Store",
     "DirectBuild": "Xây dựng trực tiếp",
-    "SubtitleBadge": "Snap Recorder & Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Hãy giúp chúng tôi dịch SeaMeet →",
     "Loading": "Đang tải...",
-    "HelpTranslate": "Hãy giúp chúng tôi dịch SeaMeet →"
+    "SubtitleBadge": "Snap Recorder & Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Năng suất",
-    "Social": "Mạng xã hội",
-    "Gaming": "Chơi game",
-    "Recording": "Ghi hình",
-    "Browsers": "Trình duyệt",
-    "BrowserBased": "Hoạt động dựa trên trình duyệt"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Khác",
+      "Skip": "Nhảy",
+      "Submit": "Nộp",
+      "Title": "Câu hỏi",
+      "TypeResponse": "Nhập câu trả lời của bạn..."
+    },
+    "AssetContext": "Bối cảnh: {{name}}",
+    "CommandHelp": "Các lệnh: /new · /clear · /cost · /help",
+    "GlobalTitle": "Đặc vụ AI",
+    "GoToSettings": "Mở cài đặt",
+    "Mode": {
+      "Ask": "Hỏi",
+      "Code": "Mã số",
+      "Plan": "Kế hoạch"
+    },
+    "Model": {
+      "Haiku": "thơ haiku",
+      "Opus": "tác phẩm",
+      "Sonnet": "bài sonnet"
+    },
+    "NewSession": "Phiên mới",
+    "NoSessions": "Chưa có phiên nào. Bắt đầu một cuộc trò chuyện dưới đây.",
+    "NotConfigured": "Định cấu hình khóa API Claude trong Cài đặt → Tính năng AI để sử dụng Tác nhân.",
+    "Permission": {
+      "Allow": "Cho phép một lần",
+      "Allowed": "Cho phép",
+      "AllowSession": "Cho phép phiên",
+      "Denied": "Từ chối",
+      "Deny": "Từ chối",
+      "Title": "Yêu cầu cấp phép công cụ"
+    },
+    "Plan": {
+      "Approve": "Phê duyệt kế hoạch",
+      "DefaultFeedback": "Người dùng yêu cầu thay đổi",
+      "Description": "Đại lý đã chuẩn bị một kế hoạch ở trên và cần sự chấp thuận của bạn để tiến hành.",
+      "FeedbackPlaceholder": "Hãy mô tả những thay đổi mà bạn mong muốn...",
+      "PlanDetails": "Chi tiết kế hoạch",
+      "RequestChanges": "Yêu cầu thay đổi",
+      "RequestedPermissions": "Quyền được yêu cầu:",
+      "SendFeedback": "Gửi phản hồi",
+      "Title": "Đánh giá kế hoạch"
+    },
+    "QuickAction": {
+      "ActionItems": "Tìm mục hành động",
+      "DraftEmail": "Dự thảo email theo dõi",
+      "Summarize": "Tóm tắt bản ghi này"
+    },
+    "SendButton": "Gửi",
+    "SendPlaceholder": "Hỏi bất cứ điều gì... (Enter để gửi, Shift+Enter để xuống dòng)",
+    "SessionCost": "Phiên: {{inputTokens}} vào /{{outputTokens}} ra mã thông báo",
+    "Sessions": "Phiên",
+    "StopButton": "Dừng lại",
+    "Streaming": {
+      "ForceStop": "Buộc dừng",
+      "GeneratingResponse": "Đang tạo phản hồi...",
+      "LongRunning": "Chạy lâu hơn bình thường",
+      "RunningTool": "Đang chạy {{tool}}...",
+      "Thinking": "Đang suy nghĩ...",
+      "ToolStuck": "Công cụ có thể bị kẹt"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Giúp tôi phân tích các bản ghi gần đây của tôi",
+      "WhatCanYouDo": "Bạn có thể giúp gì cho tôi?"
+    },
+    "Title": "Đặc vụ AI",
+    "ToolCall": {
+      "AndMoreLines_one": "... và {{count}} dòng khác",
+      "AndMoreLines_other": "... và {{count}} dòng khác",
+      "Executing": "Đang thực hiện...",
+      "Input": "đầu vào",
+      "Output": "đầu ra",
+      "Pattern": "Mẫu:",
+      "Reading": "Đang đọc tập tin...",
+      "ShowDetails": "Hiển thị chi tiết"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} hành động",
+      "Actions_other": "{{count}} hành động",
+      "Completed_one": "{{count}} đã hoàn thành",
+      "Completed_other": "{{count}} đã hoàn thành",
+      "Running_one": "{{count}} đang chạy",
+      "Running_other": "{{count}} đang chạy"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Tàn tật",
+    "DisabledMsg": "AI Agent & Cowork bị vô hiệu hóa. Kích hoạt nó trong Cài đặt → AI Agent & Cowork.",
+    "DisabledTabHint": "Tác nhân AI bị tắt — bật nó trong Cài đặt → Tác nhân AI & Cowork",
+    "EnableToggle": "Kích hoạt AI Agent & Cowork",
+    "EnableToggleDesc": "Yêu cầu khóa API Claude",
+    "MenuItem": "Đại lý AI & Cowork",
+    "PageTitle": "Đại lý AI & Cowork",
+    "SectionTitle": "Đại lý AI & Cowork"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Khóa API Song Tử",
+    "ApiKeySection": "Khóa API Song Tử",
+    "AutomationSection": "Tự động hóa",
+    "AutoSummary": "Tự động tạo bản tóm tắt",
+    "AutoSummaryDesc": "Chạy sau mỗi lần ghi âm kết thúc",
+    "ClaudeKey": {
+      "ClearKey": "Xóa khóa đã lưu",
+      "CliInstalled": "Đã cài đặt ({{version}})",
+      "CliInstallLink": "Cài đặt mã Claude →",
+      "CliNotInstalled": "Không tìm thấy Claude CLI",
+      "CliSection": "Mã Claude CLI",
+      "GetKeyLink": "Nhận khóa API từ Bảng điều khiển Anthropic →",
+      "HideKey": "Ẩn phím",
+      "KeyInvalid": "Khóa không hợp lệ",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "•································ Đã lưu)",
+      "KeyTesting": "Đang thử nghiệm...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Nhanh và rẻ",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Có khả năng nhất",
+      "ModelSection": "Mô hình Claude mặc định",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Được đề xuất · Cân bằng",
+      "QuotaLoading": "Đang tải hạn ngạch...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
+      "QuotaResetDate": "Đặt lại vào {{date}}",
+      "Saving": "Đang lưu...",
+      "Section": "Khóa API Claude (Đại lý)",
+      "ShowKey": "Hiển thị phím",
+      "SourceByok": "Khóa API của bạn (BYOK)",
+      "SourceCli": "Mã Claude CLI",
+      "SourceKeyServer": "Được quản lý bởi SeaMeet",
+      "SourceLabel": "Nguồn hoạt động:",
+      "SourceNone": "Chưa được định cấu hình",
+      "TestKey": "Lưu & Xác minh"
+    },
+    "ClearKey": "Xóa khóa đã lưu",
+    "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
+    "EnableToggleDesc": "Yêu cầu khóa API Gemini miễn phí",
+    "GetKeyLink": "Nhận khóa API miễn phí từ Google AI Studio →",
+    "GroupTitle": "Tính năng AI",
+    "HideKey": "Ẩn phím",
+    "KeyInvalid": "Khóa không hợp lệ",
+    "KeyNotConfigured": "Không có khóa nào được cấu hình",
+    "KeyPlaceholder": "AizaSy...",
+    "KeyPlaceholderSaved": "•································ Đã lưu)",
+    "KeyTesting": "Đang thử nghiệm...",
+    "KeyVerified": "Đã xác minh khóa",
+    "ManagedKeyDesc": "Khóa API của bạn được cung cấp tự động. Không cần cấu hình.",
+    "ManagedKeyStatus": "Khóa được quản lý — do SeaMeet cung cấp",
+    "MenuItem": "Tóm tắt được hỗ trợ bởi AI",
+    "ModelLabel": "Người Mẫu Song Tử",
+    "Models": {
+      "Gemini25Flash": "Song Tử 2. Flash",
+      "Gemini25FlashLite": "Song Tử 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Siêu rẻ",
+      "Gemini25FlashSub": "Tùy chọn ổn định rẻ nhất",
+      "Gemini25Pro": "Song Tử 2.5 Pro",
+      "Gemini25ProSub": "Lý luận ổn định tốt nhất",
+      "Gemini3Flash": "Song Tử 3 Flash",
+      "Gemini3FlashSub": "Được đề xuất · Nhanh + có khả năng",
+      "Gemini3Pro": "Song Tử 3 Pro",
+      "Gemini3ProSub": "Công suất tối đa"
+    },
+    "ModelSection": "Mô hình AI",
+    "PageTitle": "Tính năng AI",
+    "QuotaLoading": "Đang tải hạn ngạch...",
+    "QuotaRefresh": "Làm mới hạn ngạch",
+    "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
+    "QuotaResetDate": "Đặt lại vào {{date}}",
+    "QuotaSection": "Hạn mức sử dụng",
+    "Saving": "Đang lưu...",
+    "SelectedModel": "Đã chọn: {{model}}",
+    "ShowKey": "Hiển thị phím",
+    "TestKey": "Lưu & Xác minh"
+  },
+  "AISummary": {
+    "Copy": "Sao chép",
+    "EnableRequired": "Bật Tính năng AI trong Cài đặt → Tính năng AI để xem tóm tắt AI.",
+    "Error": "Không tải được bản tóm tắt: {{error}}",
+    "Export": {
+      "HeadingActionItems": "Mục hành động",
+      "HeadingKeyDecisions": "Các quyết định quan trọng",
+      "HeadingSummary": "Bản tóm tắt",
+      "HeadingTranscription": "Phiên âm"
+    },
+    "ExportJson": "Sao chép dưới dạng JSON",
+    "ExportMarkdown": "Sao chép dưới dạng Markdown",
+    "ExportSrt": "Sao chép dưới dạng SRT",
+    "GeminiLiveTranscript": "Song Tử sống",
+    "Generate": "Tạo Tóm tắt",
+    "Maximize": "Mở rộng sang chế độ xem đầy đủ",
+    "Minimize": "Giảm thiểu",
+    "NoActions": "Không có mục hành động nào được xác định.",
+    "NoChapters": "Không có chương nào có sẵn.",
+    "NoDecisions": "Không có quyết định quan trọng nào được xác định.",
+    "NoSummary": "Chưa có bản tóm tắt AI nào.",
+    "NoSummaryText": "Tóm tắt không có sẵn.",
+    "NoTranscript": "Bản ghi không có sẵn.",
+    "PipelineError": "Quá trình xử lý AI không thành công. Hãy thử tái tạo.",
+    "PipelineTranscript": "Đường dẫn AI",
+    "Processing": "Đang tạo bản tóm tắt...",
+    "Queued": "Xếp hàng chờ xử lý...",
+    "Regenerate": "Tạo lại tóm tắt",
+    "Retry": "Thử lại",
+    "SeekToTimestamp": "Tìm kiếm dấu thời gian này",
+    "SetupRequired": "Định cấu hình khóa API Gemini của bạn trong Cài đặt → Tính năng AI để bật tóm tắt AI.",
+    "Tab": {
+      "ActionItems": "hành động",
+      "Chapters": "chương",
+      "KeyDecisions": "Quyết định",
+      "Summary": "Bản tóm tắt",
+      "Transcription": "bảng điểm"
+    },
+    "TabTitle": "Tóm tắt AI",
+    "Topics": "chủ đề:",
+    "Speakers": "Người phát biểu",
+    "MergeInto": "Hợp nhất vào…",
+    "ApplyMerge": "Áp dụng",
+    "EditSegmentSpeaker": "Nhấp để gán lại đoạn này"
   },
   "App": {
     "FailedToEnableFlashback": "Không thể bật chế độ hồi tưởng: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "Tất cả các ứng dụng",
-    "Teams": "Microsoft Teams (Công việc/Học tập)",
-    "TeamsConsumer": "Microsoft Teams (Personal) → Microsoft Teams (Personal)",
-    "TeamsWeb": "Microsoft Teams (Trang web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net → Battle.net",
+    "Brave": "Brave Browser → Brave Browser",
+    "CallOfDuty": "Cuộc gọi của nhiệm vụ",
     "Chrome": "Trình duyệt Chrome",
-    "Edge": "Edge Browser → Trình duyệt Edge",
-    "Firefox": "Trình duyệt Firefox",
-    "WhatsApp": "WhatsApp → WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat → WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Bất hòa (Web)",
+    "Edge": "Edge Browser → Trình duyệt Edge",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Trình duyệt Firefox",
+    "Fortnite": "Fortnite → Fortnite",
+    "GoogleMeet": "Google Meet → Google Meet",
+    "KakaoTalk": "Kakao Talk → Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Trình duyệt Opera",
+    "Other": "Other apps → Ứng dụng khác",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype → Skype",
     "Slack": "Slack → Slack",
     "SlackWeb": "Slack (Web) → Slack (Trên Web)",
-    "GoogleMeet": "Google Meet → Google Meet",
-    "WebexWeb": "Webex (Web) → Webex (Trên Web)",
-    "WindowsSoundRecorder": "Bộ ghi âm thanh Windows",
-    "Other": "Other apps → Ứng dụng khác",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch → Twitch",
-    "XboxGameBar": "Thanh trò chơi Xbox",
-    "Battlenet": "Battle.net → Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam Chat → Steam Chat",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk → Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Trình duyệt Opera",
-    "Brave": "Brave Browser → Brave Browser",
-    "Valorant": "Valorant → Valorant",
-    "Fortnite": "Fortnite → Fortnite",
-    "CallOfDuty": "Cuộc gọi của nhiệm vụ",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak → TeamSpeak",
     "Streamlabs": "Bảng điều khiển Streamlabs",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Công việc/Học tập)",
+    "TeamsConsumer": "Microsoft Teams (Personal) → Microsoft Teams (Personal)",
+    "TeamSpeak": "TeamSpeak → TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (Trang web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch → Twitch",
+    "Valorant": "Valorant → Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (Web) → Webex (Trên Web)",
+    "WeChat": "WeChat → WeChat",
+    "WhatsApp": "WhatsApp → WhatsApp",
+    "WindowsSoundRecorder": "Bộ ghi âm thanh Windows",
+    "XboxGameBar": "Thanh trò chơi Xbox",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Ghi am am thanh",
+    "AudioMix": "Mix am thanh",
+    "AudioSource": "Nguon am thanh:",
+    "Microphone": "Mic",
+    "MicrophoneGainWarning": "Cuong do microphone cao co the ghi lai phat loa ngay ca khi \"Am thanh he thong\" tat. Su dung tai nghe hoac giam cuong do microphone de chi ghi am micro.",
+    "RecordingDefaultMicrophone": "Mic mac dinh",
+    "RecordingSettings": "Cai dat ghi am",
+    "RefreshMicrophoneList": "Lam moi danh sach microphone"
   },
   "AutoDetectInfoModal": {
-    "Title": "Tự động phát hiện cuộc họp",
-    "Subtitle": "Không bỏ lỡ buổi họp nào lần nào",
-    "Description": "Tính năng Auto-Detect sẽ tự động bắt đầu quay phim khi bạn tham gia cuộc họp, giúp bạn không bao giờ quên nhấn ghi.",
-    "PopularAppsTitle": "Các ứng dụng phổ biến đã phát hiện",
-    "MoreApps": "+40 thêm nữa",
-    "HowItWorksTitle": "Cách hoạt động",
-    "Step1Title": "Kích hoạt Auto-Detect",
-    "Step1Desc": "Bật toggle và chọn các ứng dụng cần theo dõi",
-    "Step2Title": "Tham gia cuộc họp",
-    "Step2Desc": "Mở Zoom, Teams, Meet hoặc bất kỳ ứng dụng nào được hỗ trợ",
-    "Step3Title": "Quay phim tự động",
-    "Step3Desc": "SeaMeet tự động bắt đầu quay phim. Hoàn tất!",
-    "Tip1Title": "Cấu hình theo từng Ứng dụng",
-    "Tip1Desc": "Chọn \"Quay phim luôn\" cho các cuộc họp công việc, \"Hỏi mỗi lần\" cho các cuộc gọi cá nhân",
-    "Tip2Title": "Phương pháp phát hiện đa dạng",
-    "Tip2Desc": "Sử dụng hoạt động của microphone, tiêu đề cửa sổ và URL trình duyệt để đảm bảo chính xác",
-    "GotIt": "Tôi đã hiểu rồi",
-    "OpenSettings": "Mở Cài đặt",
     "ControlLabel": "TỰ ĐỘNG PHÁT HIỆN",
-    "LearnAbout": "Tìm hiểu về tính năng tự động phát hiện"
+    "Description": "Tính năng Auto-Detect sẽ tự động bắt đầu quay phim khi bạn tham gia cuộc họp, giúp bạn không bao giờ quên nhấn ghi.",
+    "GotIt": "Tôi đã hiểu rồi",
+    "HowItWorksTitle": "Cách hoạt động",
+    "LearnAbout": "Tìm hiểu về tính năng tự động phát hiện",
+    "MoreApps": "+40 thêm nữa",
+    "OpenSettings": "Mở Cài đặt",
+    "PopularAppsTitle": "Các ứng dụng phổ biến đã phát hiện",
+    "Step1Desc": "Bật toggle và chọn các ứng dụng cần theo dõi",
+    "Step1Title": "Kích hoạt Auto-Detect",
+    "Step2Desc": "Mở Zoom, Teams, Meet hoặc bất kỳ ứng dụng nào được hỗ trợ",
+    "Step2Title": "Tham gia cuộc họp",
+    "Step3Desc": "SeaMeet tự động bắt đầu quay phim. Hoàn tất!",
+    "Step3Title": "Quay phim tự động",
+    "Subtitle": "Không bỏ lỡ buổi họp nào lần nào",
+    "Tip1Desc": "Chọn \"Quay phim luôn\" cho các cuộc họp công việc, \"Hỏi mỗi lần\" cho các cuộc gọi cá nhân",
+    "Tip1Title": "Cấu hình theo từng Ứng dụng",
+    "Tip2Desc": "Sử dụng hoạt động của microphone, tiêu đề cửa sổ và URL trình duyệt để đảm bảo chính xác",
+    "Tip2Title": "Phương pháp phát hiện đa dạng",
+    "Title": "Tự động phát hiện cuộc họp"
   },
   "AutoRecording": {
-    "Title": "Tu dong nhan dien cuoc hop",
-    "DetectApps": "Phat hien cuoc hop tu:",
-    "Enabled": "Tu dong phat hien da bat",
-    "Disabled": "Tu dong phat hien bi tat",
-    "MeetingDetected": "{{{app}}} cuoc hop da duoc phat hien!",
-    "MeetingEnded": "Cuoc hop ket thuc",
-    "MeetingFallbackName": "Cuoc hop",
     "BugReport": "Gap loi? Bao cao toi seameet@seasalt.ai",
     "BugReportTitle": "Bao loi",
+    "Disabled": "Tu dong phat hien bi tat",
+    "Enabled": "Tu dong phat hien da bat",
     "HelpWanted": "Neu ban muon yeu cau them ung dung moi, hoac ban da xac nhan ung dung hoat dong, vui long lien he voi chung toi tai seameet@seasalt.ai. Cam on su dong gop cua ban de lam ung dung tot hon!",
-    "HelpWantedTitle": "Giúp chúng tôi cải thiện"
+    "HelpWantedTitle": "Giúp chúng tôi cải thiện",
+    "MeetingDetected": "{{{app}}} cuoc hop da duoc phat hien!",
+    "MeetingEnded": "Cuoc hop ket thuc",
+    "MeetingFallbackName": "Cuoc hop"
   },
   "BlackHole": {
-    "NotInstalled": "Yêu cầu cài đặt BlackHole cho Âm thanh hệ thống",
-    "InstallInstructions": "Để ghi âm âm thanh hệ thống trên macOS, bạn cần cài đặt trình điều khiển âm thanh ảo BlackHole:",
-    "HomebrewCommand": "Chạy lệnh sau để cài đặt: brew install blackhole-2ch",
-    "CopyCommand": "Sao chép lệnh",
-    "Or": "hoặc",
-    "DownloadManually": "Tải xuống từ existential.audio",
-    "SetupTitle": "Cấu hình Thiết bị Đầu ra Nhiều",
-    "SetupStep1": "Mở Cấu hình Âm thanh MIDI (Ứng dụng → Tiện ích)",
-    "SetupStep2": "Nhấn '+' và chọn 'Tạo Thiết bị Đầu ra Nhiều'",
-    "SetupStep3": "Kiểm tra loa hoặc tai nghe và 'BlackHole 2ch'",
-    "SetupStep4": "Nhấn chuột phải vào Multi-Output và chọn 'Use This Device For Sound Output'",
-    "SetupStep5": "Khởi động lại hệ thống nếu BlackHole không hiển thị trong danh sách thiết bị",
-    "SetupStep6": "Chọn 'BlackHole 2ch' làm thiết bị phát âm trong ứng dụng này",
-    "CheckAgain": "Kiểm tra lại",
     "Cancel": "Hủy",
-    "LearnMore": "Tìm hiểu thêm về Thiết bị Đầu ra Nhiều"
+    "CheckAgain": "Kiểm tra lại",
+    "CopyCommand": "Sao chép lệnh",
+    "DownloadManually": "Tải xuống từ existential.audio",
+    "InstallInstructions": "Để ghi âm âm thanh hệ thống trên macOS, bạn cần cài đặt trình điều khiển âm thanh ảo BlackHole:",
+    "LearnMore": "Tìm hiểu thêm về Thiết bị Đầu ra Nhiều",
+    "NotInstalled": "Yêu cầu cài đặt BlackHole cho Âm thanh hệ thống",
+    "Or": "hoặc",
+    "SetupTitle": "Cấu hình Thiết bị Đầu ra Nhiều"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Phát hiện Microphone Bluetooth",
-    "Description": "Hệ điều hành của bạn có thể tự chuyển microphone Bluetooth sang \"Chế độ liên lạc\", gây méo tiếng hoặc tiếng quá lớn trong quá trình ghi.",
-    "RecommendationLabel": "Gợi ý:",
-    "Recommendation": "Chuyển sang microphone không Bluetooth (như microphone tích hợp hoặc microphone USB) để có chất lượng ghi âm tốt hơn.",
+    "CloseAriaLabel": "Đóng cảnh báo Bluetooth",
     "CloseTitle": "Đóng cảnh báo",
-    "CloseAriaLabel": "Đóng cảnh báo Bluetooth"
+    "Description": "Hệ điều hành của bạn có thể tự chuyển microphone Bluetooth sang \"Chế độ liên lạc\", gây méo tiếng hoặc tiếng quá lớn trong quá trình ghi.",
+    "Recommendation": "Chuyển sang microphone không Bluetooth (như microphone tích hợp hoặc microphone USB) để có chất lượng ghi âm tốt hơn.",
+    "RecommendationLabel": "Gợi ý:",
+    "Title": "⚠️ Phát hiện Microphone Bluetooth"
+  },
+  "Common": {
+    "ApplyName": "Áp dụng tên",
+    "Cancel": "Hủy bỏ",
+    "Close": "Đóng",
+    "Configure": "Cấu hình",
+    "Delete": "Xóa",
+    "Done": "Hoàn thành",
+    "Expand": "Mở rộng",
+    "FileNameCopiedWithRenameHint": "{{fileName}} đã sao chép vào clipboard. Nhấn đúp để đổi tên tệp.",
+    "Loading": "Đang tải...",
+    "Minimize": "Thu nhỏ xuống hình tròn",
+    "Open": "Mở",
+    "Or": "Hoặc",
+    "Processing": "Đang xử lý…",
+    "Recording": "Ghi hình",
+    "Save": "Lưu",
+    "Saved": "Đã lưu",
+    "Saving": "Đang lưu...",
+    "Screenshot": "Ảnh chụp màn hình",
+    "Send": "Gửi",
+    "Starting": "Đang khởi động…",
+    "UnknownApp": "Ứng dụng không xác định"
   },
   "DeletePrompt": {
-    "Title": "Xoa tap tin",
-    "Message": "Ban co chan muon xoa tap tin nay? Hanh dong nay khong the hoan tac.",
     "Cancel": "Huy",
-    "Confirm": "Xac nhan"
+    "Confirm": "Xac nhan",
+    "Message": "Ban co chan muon xoa tap tin nay? Hanh dong nay khong the hoan tac.",
+    "Title": "Xoa tap tin"
   },
   "Errors": {
-    "NoAudioSources": "Không có nguồn âm thanh khả dụng",
-    "NoSystemAudioSources": "Không có nguồn âm thanh hệ thống khả dụng",
+    "AutoRecordingFailed": "Không thể chuyển đổi tự động ghi",
     "FailedToStartRecording": "Không thể bắt đầu ghi: {{message}}",
     "FailedToStartVideoRecording": "Không thể bắt đầu ghi video: {{message}}",
-    "AutoRecordingFailed": "Không thể chuyển đổi tự động ghi"
+    "NoAudioSources": "Không có nguồn âm thanh khả dụng",
+    "NoSystemAudioSources": "Không có nguồn âm thanh hệ thống khả dụng",
+    "SaveFailed": "Không lưu được bản ghi: {{message}}"
   },
   "Events": {
-    "Title": "Sự kiện",
-    "MarkToolbarButton": "Sự kiện đã đánh dấu",
+    "EmptyWhenNotRecording": "Không có sự kiện nào cho quay phim này.",
+    "EmptyWhileRecording": "Chưa có sự kiện nào. Nhấn 'Đánh dấu' khi quay phim để thêm một sự kiện.",
+    "EventLabel": "Sự kiện {{number}}",
     "MarkButton": "Đánh dấu",
     "Marked": "Đã đánh dấu!",
-    "EventLabel": "Sự kiện {{number}}",
-    "EmptyWhileRecording": "Chưa có sự kiện nào. Nhấn 'Đánh dấu' khi quay phim để thêm một sự kiện.",
-    "EmptyWhenNotRecording": "Không có sự kiện nào cho quay phim này.",
-    "DeletePrompt": {
-      "Title": "Xóa sự kiện",
-      "Message": "Bạn có chắc muốn xóa sự kiện này? Thao tác này không thể hoàn tác.",
-      "Cancel": "Hủy",
-      "Confirm": "Xóa"
-    }
+    "MarkToolbarButton": "Sự kiện đã đánh dấu",
+    "Title": "Sự kiện"
+  },
+  "FileImport": {
+    "BrowseFiles": "Duyệt Tệp",
+    "DragDropFiles": "Kéo và thả các tệp âm thanh, video, hình ảnh của bạn vào đây",
+    "DragDropSubtitle": "Kéo và thả các tệp âm thanh, video, hình ảnh vào đây để nhập",
+    "ImportMedia": "Nhập Media",
+    "Supported": "Hỗ trợ",
+    "SupportedFormats": "Được hỗ trợ: MP3, WAV, M4A, WebM, OGG, PNG, JPG và nhiều định dạng khác",
+    "VideoImportCopying": "Đang sao chép tệp video...",
+    "VideoImportSaving": "Đang lưu tệp video...",
+    "VideoUnsupported": "Định dạng video này có thể không phát được trong ứng dụng. Tệp vẫn sẽ được nhập."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Hoi tuong am thanh",
+    "CannotChangeWhileRecording": "Khong the thay doi che do flashback trong khi ghi",
+    "DisableFlashback": "Vo hieu hoa Flashback",
     "Label": "QUAY LẠI",
     "LearnAbout": "Tim hieu ve Flashback",
-    "DisableFlashback": "Vo hieu hoa Flashback",
-    "AudioFlashback": "Hoi tuong am thanh",
-    "ScreenFlashback": "Hoi tuong man hinh",
-    "TitleReady": "Nhap de hien thi giao dien Flashback",
-    "TitleCharging": "Dang sac flashback",
-    "TitleInit": "Nhap de bat dau sac",
+    "Off": "Tat",
     "Ready": "San sang",
     "ReadyQuestion": "San sang?",
-    "Off": "Tat",
-    "CannotChangeWhileRecording": "Khong the thay doi che do flashback trong khi ghi",
-    "ToggleLabel": "Chuyen doi che do flashback",
-    "SettingsLabel": "Ghi hinh flashback"
+    "ScreenFlashback": "Hoi tuong man hinh",
+    "SettingsLabel": "Ghi hinh flashback",
+    "TitleCharging": "Dang sac flashback",
+    "TitleInit": "Nhap de bat dau sac",
+    "TitleReady": "Nhap de hien thi giao dien Flashback",
+    "ToggleLabel": "Chuyen doi che do flashback"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "am thanh",
+    "Buffering": "Dang buffer",
+    "BufferingMoment": "Dang buffer Khoanh khac...",
+    "Capturing": "Dang ghi...",
+    "DescCharging": "Chuan bi cua so {{duration}} giay... gan san sang de bat nhung gi ban co the bo lo. {{progress}}% hoan thanh.",
+    "DescInit": "Nhan 'San sang?' de yeu cau SeaMeet bat dau 'nho' qua khu.",
+    "DescNone": "Ghi man hinh, am thanh, hoac chup anh man hinh. Chon che do hoi tuong ben tren de bat dau luu khoanh khac.",
+    "DescReady": "Hoi tuong da duoc kich hoat. Bat cu khi nao ban nhan Ghi, {{duration}} giay {{type}} trong qua khu se duoc bao gom — khong bao gio phai tiec bui mot khoanh khac nao nua.",
+    "FillingBuffer": "Dang nap buffer hoi tuong {{duration}}s... {{progress}}%",
+    "FlashbackBuffering": "Dang buffer...",
+    "FlashbackCharging": "Dang nap buffer {{seconds}}s... {{percent}}%",
+    "FlashbackChargingDescription": "Chuan bi cua so {{seconds}} giay... {{percent}}% hoan thanh.",
+    "FlashbackInitAudio": "Ban da san sang de bao ve am thanh cua minh chua?",
+    "FlashbackInitDescription": "Nhan 'San sang?' de yeu cau SeaMeet bat dau 'nho' qua khu.",
+    "FlashbackInitScreen": "San sang de bao ve man hinh cua ban?",
+    "FlashbackMismatch": "Che do hoi tuong khong phu hop. Ghi am thanh nhung hoi tuong video dang hoat dong. Vui long tat hoi tuong video.",
+    "FlashbackOff": "Hoi tuong hien tai dang tat. Bat dau ghi binh thuong bat cu luc nao, hoac chon che do hoi tuong (am thanh hoac man hinh) ben tren de luu khoanh khac anh hung.",
+    "FlashbackPrivacy": "Quyen rieng tu cua ban duoc bao ve. Duoc luu tru cuc bo trong RAM.",
+    "FlashbackReady": "Khong bao gio bo lo mot khoanh khac nao.",
+    "FlashbackReadyDescription": "Hoi tuong da san sang. {{seconds}} giay cua {{type}} se duoc bao gom khi ban ghi.",
+    "FlashbackReadyQuestion": "San sang?",
+    "KeepWindowVisible": "Giu cua so SeaMeet hien thi khi chup anh man hinh",
+    "NeverMissAMoment": "Khong bao gio bo lo khoanh khac.",
+    "OpenFloater": "Mo Floater",
+    "OpenLauncher": "Mo Launcher",
+    "PrivacyDesc": "SeaMeet chup anh {{duration}}s trong qua khu cua {{type}} trong buffer vong tren RAM may tinh cua ban.",
+    "PrivacyProtected": "Quyen rieng tu cua ban duoc bao ve.",
+    "Ready": "Ban da san sang?",
+    "ReadyToCapture": "SeaMeet da san sang de ghi lai.",
+    "ReadyToGuard": "San sang de bao ve {{type}} cua ban?",
+    "RecordWithFlashback": "Ghi voi hoi tuong",
+    "SaveFlashback": "Luu hoi tuong {{seconds}} giay cuoi",
+    "SaveLastFlashback": "Luu hoi tuong {{duration}}s cuoi",
+    "SavingFlashback": "Dang luu hoi tuong...",
+    "Screen": "man hinh",
+    "StartRecording": "Bat dau ghi",
+    "TakeScreenshot": "Chup anh man hinh"
   },
   "FlashbackIndicator": {
     "Buffering": "Đang chờ",
@@ -183,138 +463,145 @@
     "VideoReady": "Video đã sẵn sàng"
   },
   "FlashbackInfoModal": {
-    "Title": "Ghi hồi tưởng",
-    "Close": "Đóng",
-    "Subtitle": "Dựng làm việc của bạn",
-    "SubtitleDesc": "Không cần bỏ lỡ khoảnh khắc quan trọng — ghi lại tới 2 phút từ quá khứ, ngay cả sau khi đã diễn ra.",
+    "Benefits": {
+      "AlwaysReady": "Luôn sẵn sàng",
+      "LocalOnly": "Chỉ nội bộ — đảm bảo bảo mật tuyệt đối",
+      "MultipleCaptures": "Nhiều khả năng bắt — bộ đệm vẫn tiếp tục hoạt động",
+      "NoPlan": "Không cần lập kế hoạch",
+      "Offline": "Làm việc ngoại tuyến",
+      "Title": "Lợi ích chính"
+    },
     "BestFor": "Tốt nhất cho:",
-    "VisualStates": {
-      "Title": "Chỉ số trạng thái trực quan",
-      "OffLabel": "TẮT",
-      "Off": "Hình dạng sóng tĩnh, màu xám",
-      "ChargingLabel": "ĐANG SẠC",
-      "Charging": "Màu hổ phách/vàng, bộ đệm đang đầy",
-      "ReadyLabel": "SẴN SÀNG",
-      "Ready": "Màu xanh lục, bộ đệm đầy"
-    },
-    "SpecLabel": {
-      "Buffer": "Bộ đệm:",
-      "Memory": "Bộ nhớ:",
-      "Captures": "Ghi lại:"
-    },
-    "Modes": {
-      "Title": "Hai chế độ hồi tưởng",
-      "Audio": {
-        "Title": "Âm thanh hồi tưởng",
-        "Buffer": "Dung lượng bộ đệm cố định 30 giây",
-        "Memory": "Khoảng 30-50 MB RAM",
-        "Captures": "Microphone và/hoặc âm thanh hệ thống",
-        "BestFor": "Ghi lại các cuộc họp, cuộc gọi, hội thoại thoại"
-      },
-      "Video": {
-        "Title": "Video hồi tưởng",
-        "Buffer": "10 giây, 30 giây, 60 giây, 90 giây hoặc 120 giây",
-        "Memory": "50-600 MB RAM",
-        "Captures": "Quay phim video + âm thanh",
-        "BestFor": "Trình chiếu, điểm nổi bật trong game, chia sẻ màn hình, nội dung trực quan"
-      }
-    },
-    "HowItWorks": {
-      "Title": "Cách hoạt động",
-      "Step1": {
-        "Title": "Kích hoạt hồi tưởng",
-        "Desc": "Nhấn nút FLASHBACK để kích hoạt. Bộ đệm bắt đầu tự động điền."
-      },
-      "Step2": {
-        "Title": "Chờ sẵn sàng",
-        "Desc": "Chờ trạng thái xanh. Bộ đệm phải đầy 90% trước khi bạn có thể bắt quá khứ."
-      },
-      "Step3": {
-        "Title": "Nhấn Ghi",
-        "Desc": "Khi có chuyện quan trọng xảy ra, nhấn Ghi. Hồi tưởng sẽ truy bắt bộ đệm và tiếp tục ghi."
-      }
-    },
-    "Scenarios": {
-      "Title": "Các tình huống thực tế",
-      "OhNo": {
-        "Title": "Khoảnh khắc \"Ô không!\"",
-        "Desc": "Bạn nhận ra mình muốn ghi lại điều gì đó sâu sắc. Nhấn Ghi → hồi tưởng ghi lại 30 giây cuối cùng (bao gồm cả khoảnh khắc đó!)."
-      },
-      "Gaming": {
-        "Title": "Điểm nổi bật trong game",
-        "Desc": "Thực hiện combo ấn tượng. Nhấn Ghi ngay lập tức. Hồi tưởng ghi lại quá trình chơi trước đó + phản ứng của bạn."
-      },
-      "Decision": {
-        "Title": "Quyết định quan trọng",
-        "Desc": "Luật sư giải thích điều khoản hợp đồng. Nhấn Ghi để bắt đầu quay phim lời giải thích. Có bản ghi chính xác và đầy đủ để xem lại sau."
-      }
-    },
+    "Close": "Đóng",
     "Comparison": {
-      "Title": "Hồi tưởng vs. Quay phim truyền thống",
+      "Capture": {
+        "Feature": "Cảnh bạn ghi nhớ",
+        "Flashback": "Có thể bắt đầu SAU khi khoảnh khắc xảy ra",
+        "Traditional": "Nếu bạn quên, nó sẽ bị mất"
+      },
       "Header": {
         "Feature": "Tính năng",
-        "Traditional": "Quay phim truyền thống",
-        "Flashback": "Hồi tưởng Quay phim"
+        "Flashback": "Hồi tưởng Quay phim",
+        "Traditional": "Quay phim truyền thống"
       },
       "Planning": {
         "Feature": "Lập kế hoạch",
-        "Traditional": "Phải bắt đầu TRƯỚC khi khoảnh khắc diễn ra",
-        "Flashback": "Không cần lập kế hoạch"
-      },
-      "Capture": {
-        "Feature": "Cảnh bạn ghi nhớ",
-        "Traditional": "Nếu bạn quên, nó sẽ bị mất",
-        "Flashback": "Có thể bắt đầu SAU khi khoảnh khắc xảy ra"
+        "Flashback": "Không cần lập kế hoạch",
+        "Traditional": "Phải bắt đầu TRƯỚC khi khoảnh khắc diễn ra"
       },
       "Result": {
         "Feature": "Kết quả",
-        "Traditional": "\"Tôi ước mình đã quay phim điều đó\"",
-        "Flashback": "\"Tôi vui vì đã chụp nhanh điều đó\""
-      }
-    },
-    "Benefits": {
-      "Title": "Lợi ích chính",
-      "NoPlan": "Không cần lập kế hoạch",
-      "AlwaysReady": "Luôn sẵn sàng",
-      "Offline": "Làm việc ngoại tuyến",
-      "LocalOnly": "Chỉ nội bộ — đảm bảo bảo mật tuyệt đối",
-      "MultipleCaptures": "Nhiều khả năng bắt — bộ đệm vẫn tiếp tục hoạt động"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "hồi tưởng Âm thanh hàng ngày",
-        "Desc": "Sử dụng hồi tưởng Âm thanh 30 giây cho các cuộc họp và cuộc gọi. Tiêu thụ bộ nhớ thấp, hoạt động ổn định."
+        "Flashback": "\"Tôi vui vì đã chụp nhanh điều đó\"",
+        "Traditional": "\"Tôi ước mình đã quay phim điều đó\""
       },
-      "VideoSpecial": {
-        "Title": "Hồi tưởng Video cho những khoảnh khắc đặc biệt",
-        "Desc": "Bật hồi tưởng Video (bộ đệm 30 giây) cho các bài thuyết trình, điểm nổi bật về game hoặc bất kỳ nội dung hình ảnh nào bạn muốn bảo lưu."
-      },
-      "Memory": {
-        "Title": "Quản lý bộ nhớ",
-        "Desc": "Với 2 phút hồi tưởng Video: toàn bộ ứng dụng sử dụng ít hơn 1GB RAM."
-      }
+      "Title": "Hồi tưởng vs. Quay phim truyền thống"
     },
     "GotIt": "Hiểu rồi",
-    "OpenSettings": "Mở Cài đặt"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Nhấn nút FLASHBACK để kích hoạt. Bộ đệm bắt đầu tự động điền.",
+        "Title": "Kích hoạt hồi tưởng"
+      },
+      "Step2": {
+        "Desc": "Chờ trạng thái xanh. Bộ đệm phải đầy 90% trước khi bạn có thể bắt quá khứ.",
+        "Title": "Chờ sẵn sàng"
+      },
+      "Step3": {
+        "Desc": "Khi có chuyện quan trọng xảy ra, nhấn Ghi. Hồi tưởng sẽ truy bắt bộ đệm và tiếp tục ghi.",
+        "Title": "Nhấn Ghi"
+      },
+      "Title": "Cách hoạt động"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Ghi lại các cuộc họp, cuộc gọi, hội thoại thoại",
+        "Buffer": "Dung lượng bộ đệm cố định 30 giây",
+        "Captures": "Microphone và/hoặc âm thanh hệ thống",
+        "Memory": "Khoảng 30-50 MB RAM",
+        "Title": "Âm thanh hồi tưởng"
+      },
+      "Title": "Hai chế độ hồi tưởng",
+      "Video": {
+        "BestFor": "Trình chiếu, điểm nổi bật trong game, chia sẻ màn hình, nội dung trực quan",
+        "Buffer": "10 giây, 30 giây, 60 giây, 90 giây hoặc 120 giây",
+        "Captures": "Quay phim video + âm thanh",
+        "Memory": "50-600 MB RAM",
+        "Title": "Video hồi tưởng"
+      }
+    },
+    "OpenSettings": "Mở Cài đặt",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "Luật sư giải thích điều khoản hợp đồng. Nhấn Ghi để bắt đầu quay phim lời giải thích. Có bản ghi chính xác và đầy đủ để xem lại sau.",
+        "Title": "Quyết định quan trọng"
+      },
+      "Gaming": {
+        "Desc": "Thực hiện combo ấn tượng. Nhấn Ghi ngay lập tức. Hồi tưởng ghi lại quá trình chơi trước đó + phản ứng của bạn.",
+        "Title": "Điểm nổi bật trong game"
+      },
+      "OhNo": {
+        "Desc": "Bạn nhận ra mình muốn ghi lại điều gì đó sâu sắc. Nhấn Ghi → hồi tưởng ghi lại 30 giây cuối cùng (bao gồm cả khoảnh khắc đó!).",
+        "Title": "Khoảnh khắc \"Ô không!\""
+      },
+      "Title": "Các tình huống thực tế"
+    },
+    "SpecLabel": {
+      "Buffer": "Bộ đệm:",
+      "Captures": "Ghi lại:",
+      "Memory": "Bộ nhớ:"
+    },
+    "Subtitle": "Dựng làm việc của bạn",
+    "SubtitleDesc": "Không cần bỏ lỡ khoảnh khắc quan trọng — ghi lại tới 2 phút từ quá khứ, ngay cả sau khi đã diễn ra.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Sử dụng hồi tưởng Âm thanh 30 giây cho các cuộc họp và cuộc gọi. Tiêu thụ bộ nhớ thấp, hoạt động ổn định.",
+        "Title": "hồi tưởng Âm thanh hàng ngày"
+      },
+      "Memory": {
+        "Desc": "Với 2 phút hồi tưởng Video: toàn bộ ứng dụng sử dụng ít hơn 1GB RAM.",
+        "Title": "Quản lý bộ nhớ"
+      },
+      "VideoSpecial": {
+        "Desc": "Bật hồi tưởng Video (bộ đệm 30 giây) cho các bài thuyết trình, điểm nổi bật về game hoặc bất kỳ nội dung hình ảnh nào bạn muốn bảo lưu.",
+        "Title": "Hồi tưởng Video cho những khoảnh khắc đặc biệt"
+      }
+    },
+    "Title": "Ghi hồi tưởng",
+    "VisualStates": {
+      "Charging": "Màu hổ phách/vàng, bộ đệm đang đầy",
+      "ChargingLabel": "ĐANG SẠC",
+      "Off": "Hình dạng sóng tĩnh, màu xám",
+      "OffLabel": "TẮT",
+      "Ready": "Màu xanh lục, bộ đệm đầy",
+      "ReadyLabel": "SẴN SÀNG",
+      "Title": "Chỉ số trạng thái trực quan"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "Khởi động",
-    "AutoStartLabel": "Hồi tưởng tự động khởi động",
+    "AutoStartAudio": "Hồi tưởng âm thanh",
     "AutoStartDesc": "Khởi đầu hồi tưởng khi ứng dụng mở",
     "AutoStartDisable": "Vô hiệu hóa Khởi động tự động",
-    "AutoStartAudio": "Hồi tưởng âm thanh",
+    "AutoStartLabel": "Hồi tưởng tự động khởi động",
     "AutoStartScreen": "Hồi tưởng màn hình",
-    "BufferTitle": "Bộ đệm",
-    "BufferDurationLabel": "Thời lượng bộ đệm",
     "BufferDurationDesc": "Thời gian giữ âm thanh/video trong bộ đệm là bao lâu",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "Thời lượng bộ đệm",
+    "BufferTitle": "Bộ đệm",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "Khởi động"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Bộ đệm hồi tưởng đang trống. Thử lại sau một chút.",
+    "EnableFlashback": "Bật hồi tưởng để lưu khoảnh khắc.",
+    "FailedToSave": "Không thể lưu bộ đệm hồi tưởng.",
+    "SavedFlashback": "Hồi tưởng đã được lưu vào Recordings.",
+    "StillCharging": "Bộ đệm hồi tưởng vẫn đang sạc."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Dong chu thich",
-    "BluetoothMicTitle": "⚠️ Microphone Bluetooth",
     "BluetoothMicDesc": "He dieu hanh cua ban co the tu dong kich hoat che do \"Communications Mode\", gay nhieu hoac bien dang am thanh.",
     "BluetoothMicTipLabel": "Meo:",
     "BluetoothMicTipText": "Su dung microphone khong Bluetooth de co chat luong tot hon.",
+    "BluetoothMicTitle": "⚠️ Microphone Bluetooth",
+    "CloseTooltip": "Dong chu thich",
     "FailedToLoadScreens": "Khong tai duoc man hinh. Vui long thu lai.",
     "FailedToLoadWindows": "Khong tai duoc cua so. Vui long thu lai.",
     "MicrophoneMuted": "Microphone: Tat tieng",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "Khong tim thay microphone nao",
     "NoScreensDetected": "Khong tim thay man hinh nao.",
     "NoWindowsDetected": "Khong tim thay cua so nao. Mo cua so ung dung va lam moi.",
+    "RegionReady": "Vung da san sang",
+    "RegionRequired": "Vui long chon vung truoc khi ghi",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "Chon man hinh khong kha dung tren nen tang nay.",
     "SelectMicrophone": "Chon Microphone",
+    "SelectRegion": "Chon vung",
+    "SelectScreen": "Chon man hinh",
+    "SelectWindow": "Chon cua so",
     "StartRecording": "Bat dau ghi",
     "SystemAudioOff": "Am thanh he thong: TAT",
     "SystemAudioOn": "Am thanh he thong: BAT",
     "WaitingForRegion": "Dang cho vung...",
     "WindowNotAvailable": "Chon cua so khong kha dung tren nen tang nay.",
-    "SelectScreen": "Chon man hinh",
-    "SelectWindow": "Chon cua so",
-    "WindowRequired": "Vui long chon mot cua so truoc khi bat dau ghi",
-    "RegionReady": "Vung da san sang",
-    "SelectRegion": "Chon vung",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "Vui long chon vung truoc khi ghi"
+    "WindowRequired": "Vui long chon mot cua so truoc khi bat dau ghi"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Chọn chế độ toàn màn hình",
-    "ClickToRecord": "Nhấn Bắt đầu ghi trong thanh nổi để ghi vùng đã chọn"
+    "ClickToRecord": "Nhấn Bắt đầu ghi trong thanh nổi để ghi vùng đã chọn",
+    "FullscreenSelected": "Chọn chế độ toàn màn hình"
+  },
+  "GeminiLive": {
+    "AITranscription": "Phiên âm AI",
+    "CollapseNowSpeaking": "Sụp đổ",
+    "EnableDescription": "Phiên âm thời gian thực được cung cấp bởi Gemini trong quá trình ghi",
+    "EnableIntegration": "Bật phiên âm AI trực tiếp",
+    "Error": "Lỗi",
+    "ExpandNowSpeaking": "Mở rộng",
+    "NowSpeaking": "Bây giờ đang nói...",
+    "SegmentCount_one": "{{count}} phân đoạn",
+    "SegmentCount_other": "{{count}} phân đoạn",
+    "WaitingForConnection": "Đang kết nối...",
+    "WaitingForSpeech": "Đang chờ phát biểu..."
   },
   "IdleCompactView": {
     "ArmFlashback": "Kích hoạt hồi tưởng",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Sao chép Email",
     "EmailCopied": "✅ Email đã được sao chép vào clipboard"
   },
-  "JumpList": {
-    "RecordAudio": "Ghi âm",
-    "RecordAudioDesc": "Bắt đầu ghi âm (kết hợp microphone và âm thanh hệ thống)",
-    "RecordFullscreen": "Ghi toàn màn hình",
-    "RecordFullscreenDesc": "Ghi màn hình toàn bộ",
-    "RecordRegion": "Chụp vùng để ghi",
-    "RecordRegionDesc": "Chọn vùng màn hình để ghi",
-    "TakeScreenshot": "Chụp ảnh màn hình",
-    "TakeScreenshotDesc": "Chụp vùng màn hình",
-    "OpenRecordingsFolder": "Mở thư mục ghi hình",
-    "OpenRecordingsFolderDesc": "Mở thư mục ghi âm mặc định"
-  },
   "MeetingPrompt": {
-    "StartTitle": "Đã phát hiện cuộc họp",
-    "StartMessage": "Bạn có đang họp trên {{appName}} không? Bạn có cần tôi quay phim cuộc họp ngay bây giờ không?",
     "BrowserHint": "💡 Mẹo: Đối với các cuộc họp trình duyệt (Google Meet, Zoom, Teams), tôi chỉ phát hiện trình duyệt, không riêng trang web.",
-    "RememberChoice": "Remember my choice and don't prompt again → Nhớ lựa chọn của tôi và không hỏi lại",
-    "Yes": "Bắt đầu ghi cuộc họp",
-    "No": "Không",
-    "EndTitle": "Cuộc họp đã kết thúc",
-    "EndMessage": "I detected meeting on {{appName}} just ended. Would you like me to stop recording? → Tôi phát hiện cuộc họp trên {{appName}} vừa kết thúc. Bạn có muốn tôi dừng ghi không?",
     "ContinueRecording": "Tiếp tục ghi",
+    "EndMessage": "I detected meeting on {{appName}} just ended. Would you like me to stop recording? → Tôi phát hiện cuộc họp trên {{appName}} vừa kết thúc. Bạn có muốn tôi dừng ghi không?",
+    "EndTitle": "Cuộc họp đã kết thúc",
+    "No": "Không",
     "Pause": "Tạm dừng",
-    "Resume": "Tiếp tục ghi",
-    "Stop": "Dừng",
+    "PlayRecording": "Phát",
     "RecordingSaved": "Bản ghi đã lưu",
     "RecordingSavedWithFilename": "{{fileName}} đã lưu",
+    "RememberChoice": "Remember my choice and don't prompt again → Nhớ lựa chọn của tôi và không hỏi lại",
     "RenameFile": "Đổi tên file",
     "ShowInFolder": "Hiển thị trong thư mục",
-    "PlayRecording": "Phát",
+    "StartMessage": "Bạn có đang họp trên {{appName}} không? Bạn có cần tôi quay phim cuộc họp ngay bây giờ không?",
+    "StartTitle": "Đã phát hiện cuộc họp",
     "StopRecording": "Dừng ghi",
-    "Saving": "Đang lưu..."
+    "Yes": "Bắt đầu ghi cuộc họp"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Mục hành động",
+    "CollapseNowSpeaking": "Thu nhỏ \"Now Speaking\"",
+    "ConnectionError": "Không thể kết nối với SeaMeet",
+    "Content": "Nội dung SeaMeet",
+    "DueDate": "Ngày hết hạn: {{date}}",
+    "EnableIntegration": "Bật chức năng phiên âm SeaMeet",
+    "ExpandNowSpeaking": "Mở rộng phần đang trình bày",
+    "FetchError": "Không thể tải phiên âm / phiên âm transcription",
+    "LanguageHint": "Bạn có thể thay đổi ngôn ngữ trong quá trình ghi",
+    "LiveTranscription": "Phiên âm trực tiếp",
+    "LoadingContent": "Đang tải nội dung SeaMeet...",
+    "LoadingTranscript": "Đang tải phiên âm...",
+    "NoActionItems": "Không có mục hành động cho cuộc họp này",
+    "NoNotes": "Không có ghi chú cho cuộc họp này",
+    "NoSummary": "Chưa có tóm tắt.",
+    "Notes": "Ghi chú",
+    "NoTranscript": "Không có phiên âm khả dụng",
+    "NoTranslation": "Không có bản dịch",
+    "NowSpeaking": "Đang nói...",
+    "Retry": "Thử lại",
+    "SeekToTime": "Nhấn để phát từ thời điểm này",
+    "SegmentCount_one": "{{count}} phân đoạn",
+    "SegmentCount_other": "{{count}} phân đoạn",
+    "SignInRequired": "Yêu cầu đăng nhập",
+    "Summary": "Tóm tắt",
+    "Transcribed": "Đã ghi âm lại",
+    "Transcript": "Bản ghi chép",
+    "TranscriptionLanguage": "Ngôn ngữ phiên âm",
+    "TranslationLanguage": "Ngôn ngữ dịch thuật",
+    "UnknownSpeaker": "Người phát biểu",
+    "WaitingForSpeech": "Đang chờ lời nói..."
   },
   "MinimizedView": {
     "ActionRequired": "Yeu cau hanh dong (Tu dong ghi)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Dang sac hoi tuong man hinh...",
     "ScreenRecording": "Ghi man hinh ({{time}})"
   },
+  "Pause": "Tạm dừng",
   "Permissions": {
-    "AutoRecordNextTime": "Bạn có muốn tự động ghi lại ứng dụng này vào lần tới không?",
     "AlwaysAutoRecord": "Chế độ tự động ghi liên tục",
-    "NeverRecord": "Không ghi lại",
     "AskEveryTime": "Hỏi mỗi lần",
-    "AutoRecordStarted": "Đã bắt đầu tự động ghi",
+    "AutoRecordNextTime": "Bạn có muốn tự động ghi lại ứng dụng này vào lần tới không?",
     "AutoRecordReason": "{{app}} đã được đặt thành Luôn tự động ghi. Thay đổi quyền ghi của ứng dụng trong Cài đặt -> Tự động ghi.",
-    "ChangeInSettings": "Thay đổi trong Cài đặt",
-    "GuidanceTitle": "Loại quyền của Ứng dụng",
+    "AutoRecordStarted": "Đã bắt đầu tự động ghi",
+    "AutoStartAudioRule": "Nếu chế độ Ghi âm Mặc định là Âm thanh, SeaMeet sẽ bắt đầu quay ngay lập tức mà không hỏi.",
+    "AutoStartFallbackRule": "Ở mọi trường hợp khác, SeaMeet sẽ hiển thị bộ chọn chế độ ghi để bạn có thể lựa chọn.",
+    "AutoStartFullscreenRule": "Nếu chế độ Ghi âm Mặc định là Video Toàn màn hình và chỉ có một màn hình kết nối, SeaMeet sẽ bắt đầu quay ngay lập tức.",
+    "AutoStartHeuristicsTitle": "Hành vi khởi động tự động (Luôn tự động ghi)",
     "GuidanceAlways": ": SeaMeet sẽ tự động quay phim mà không cần xác nhận",
     "GuidanceAsk": ": SeaMeet sẽ yêu cầu quyền của bạn để quay mỗi lần",
     "GuidanceNever": ": SeaMeet sẽ không yêu cầu ghi lại",
-    "AutoStartHeuristicsTitle": "Hành vi khởi động tự động (Luôn tự động ghi)",
-    "AutoStartAudioRule": "Nếu chế độ Ghi âm Mặc định là Âm thanh, SeaMeet sẽ bắt đầu quay ngay lập tức mà không hỏi.",
-    "AutoStartFullscreenRule": "Nếu chế độ Ghi âm Mặc định là Video Toàn màn hình và chỉ có một màn hình kết nối, SeaMeet sẽ bắt đầu quay ngay lập tức.",
-    "AutoStartFallbackRule": "Ở mọi trường hợp khác, SeaMeet sẽ hiển thị bộ chọn chế độ ghi để bạn có thể lựa chọn."
+    "GuidanceTitle": "Loại quyền của Ứng dụng",
+    "NeverRecord": "Không ghi lại"
+  },
+  "PipelineStatus": {
+    "Done": "Bản tóm tắt đã sẵn sàng",
+    "Error": "Xử lý không thành công",
+    "Progress": "Đang xử lý đoạn {{current}} của {{total}}",
+    "Queued": "Bản tóm tắt được xếp hàng đợi...",
+    "Running": "Đang tạo bản tóm tắt..."
   },
   "Player": {
     "Mute": "Tắt tiếng",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Thoát phát lại",
-    "MoreOptions": "Thêm tùy chọn",
-    "CodecInfo": "Thông tin Codec"
+    "CodecInfo": "Thông tin Codec",
+    "MoreOptions": "Thêm tùy chọn"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Ghi âm",
+    "ContinueRecording": "Tiếp tục ghi",
+    "RecordingAudio": "Đang ghi âm...",
+    "RecordingMode": "Chế độ ghi",
+    "RecordingPreview": "Xem trước quay phim",
+    "RecordingScreen": "Đang ghi màn hình",
+    "StartRecording": "Bắt đầu ghi",
+    "Stop": "Dừng",
+    "StopRecording": "Dừng ghi",
+    "VideoRecording": "Ghi hình"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Chụp vùng",
+    "CaptureMode": "Chế độ ghi",
+    "FullScreen": "Toàn màn hình",
+    "RecordAudio": "Âm thanh",
+    "RecordAudioTip": "Chỉ audio",
+    "RecordFullscreen": "Toàn màn hình",
+    "RecordFullscreenTip": "Chụp toàn bộ màn hình của bạn",
+    "RecordRegion": "Vùng",
+    "RecordRegionTip": "Chụp vùng tùy chỉnh",
+    "RecordWindow": "Chọn cửa sổ",
+    "RecordWindowTip": "Chụp cửa sổ ứng dụng riêng lẻ"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Sao chép tên file",
+    "CopyFilePath": "Sao chép đường dẫn tệp",
+    "FileNameCopied": "{{fileName}} đã được sao chép vào clipboard",
+    "FilePathCopied": "Đường dẫn tệp đã được sao chép vào clipboard",
+    "OpenSaveFolder": "Mở Thư mục",
+    "RecentCaptures": "Các đoạn ghi gần đây",
+    "Recovered_one": "Đã khôi phục bản ghi {{count}}",
+    "Recovered_other": "Đã khôi phục {{count}} bản ghi",
+    "RefreshRecordings": "Làm mới danh sách",
+    "SaveAs": "Lưu thành",
+    "SearchRecordingsOrSnapshots": "Tìm kiếm bản ghi và snapshots",
+    "ShowInFolder": "Hiển thị trong thư mục"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "Tap tin",
-    "Microphone": "Mic",
-    "App": "{{appName}}"
+    "Microphone": "Mic"
   },
   "RegionSelector": {
     "CaptureButton": "Chụp màn hình hoặc Nhấn Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Giám sát",
     "PrimaryMonitor": "Monitor chính"
   },
-  "Reliability": {
-    "Stable": "Ổn định",
-    "Experimental": "Thử nghiệm",
-    "NotTested": "Chưa thử nghiệm"
-  },
+  "Resume": "Bản tóm tắt",
   "RingMenu": {
+    "AutoDetectOff": "Phát hiện tự động: TẮT",
+    "AutoDetectOn": "Phát hiện tự động: BẬT",
     "FlashbackCharging": "Flashback đang sạc...",
     "FlashbackNotCharged": "Cần sạc flashback, nhấn một lần để sạc flashback âm thanh, nhấn đúp để sạc flashback màn hình",
     "FlashbackSaveTooltip": "Nhấn một lần để lưu lại {{duration}}s {{mode}} hồi tưởng cuối cùng. Nhấn đúp để tiếp tục ghi từ đây.",
-    "RecordRegion": "Ghi khu vực",
-    "RecordFullscreen": "Ghi toàn bộ màn hình",
-    "TakeScreenshot": "Chụp ảnh màn hình",
-    "AutoDetectOn": "Phát hiện tự động: BẬT",
-    "AutoDetectOff": "Phát hiện tự động: TẮT",
     "RecordAudio": "Ghi âm thanh",
-    "RecordWindow": "Ghi cửa sổ"
+    "RecordFullscreen": "Ghi toàn bộ màn hình",
+    "RecordRegion": "Ghi khu vực",
+    "RecordWindow": "Ghi cửa sổ",
+    "TakeScreenshot": "Chụp ảnh màn hình"
   },
   "ScreenPicker": {
-    "Title": "Chọn màn hình",
     "Instruction": "Chọn hiển thị để quay phim toàn màn hình.",
-    "Refresh": "Làm mới",
-    "Refreshing": "Đang làm mới…",
     "Loading": "Đang tải hiển thị…",
     "None": "Không phát hiện hiển thị nào.",
+    "Refresh": "Làm mới",
+    "Refreshing": "Đang làm mới…",
+    "Title": "Chọn màn hình",
     "Unknown": "Không xác định"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Phân tích",
+    "ButtonLabel": "Quy trình với AI",
+    "Custom": "Lời nhắc tùy chỉnh",
+    "CustomPlaceholder": "Hỏi bất cứ điều gì về hình ảnh này...",
+    "Describe": "Mô tả hình ảnh",
+    "DescribeSub": "Trong ảnh chụp màn hình này có gì?",
+    "Description": "Sự miêu tả",
+    "ExtractedText": "Văn bản được trích xuất",
+    "Ocr": "Trích xuất văn bản (OCR)",
+    "OcrSub": "Đọc tất cả văn bản hiển thị",
+    "PipelineError": "Quá trình xử lý AI không thành công. Vui lòng thử lại.",
+    "ProcessingWithTime": "Đang xử lý... {{sec}}s",
+    "Queuing": "Đang xếp hàng...",
+    "ResultLabel": "Kết quả AI",
+    "UnknownError": "Lỗi không xác định"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Đã sao chép!",
     "CopyFailed": "Không thể sao chép ảnh chụp màn hình vào clipboard",
     "CopyToClipboard": "Sao chép vào clipboard",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Xóa",
     "Dimensions": "Kích thước",
     "FileSize": "Kích thước tệp",
-    "Filename": "Tên tệp",
     "OpenInSystemViewer": "Mở trong trình xem hệ thống",
-    "Rename": "Đổi tên",
     "ScreenshotCopied": "Ảnh chụp màn hình đã sao chép vào clipboard",
     "Share": "Chia sẻ",
     "ShareCompleted": "Chia sẻ hoàn tất",
     "ShareFailed": "Chia sẻ không được hỗ trợ trên trình duyệt này. Mở ảnh chụp màn hình thủ công để chia sẻ.",
-    "ShareNotSupported": "Chia sẻ tích hợp không hỗ trợ trên nền tảng này. Thay vào đó, hãy sử dụng Sao chép vào clipboard.",
     "Sharing": "Đang chia sẻ...",
-    "Timestamp": "Dấu thời gian",
     "ZeroBytes": "0 byte"
   },
   "Settings": {
-    "Title": "Cài đặt",
     "About": {
       "CheckForUpdates": "Kiểm tra cập nhật",
       "CheckingUpdates": "Đang kiểm tra cập nhật...",
-      "UpdateAvailable": "Phiên bản {{version}} đã sẵn sàng",
-      "UpdateReady": "Phiên bản {{version}} đã sẵn sàng để cài đặt",
-      "NoUpdatesAvailable": "Không có bản cập nhật mới",
       "InstallNow": "Cài đặt ngay",
-      "TermsOfService": "Điều khoản Dịch vụ",
-      "PrivacyPolicy": "Chính sách Bảo mật",
       "LegalToggle": {
+        "FullVersion": "Phiên bản đầy đủ",
         "OneSentence": "1‑Câu",
-        "TLDR": "Tóm tắt",
-        "FullVersion": "Phiên bản đầy đủ"
+        "TLDR": "Tóm tắt"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet là một recorder miễn phí, chú trọng quyền riêng tư, nơi sử dụng cục bộ không yêu cầu tài khoản, dữ liệu của bạn thuộc về bạn, tính năng đám mây tùy chọn, và bạn phải lấy sự đồng ý trước khi ghi.",
-        "TLDRTitle": "Điều khoản của SeaMeet — Tóm tắt cho Người bận rộn",
-        "TLDRItems": [
-          "SeaMeet Desktop miễn phí — tất cả các tính năng không‑AI hoạt động mà không cần tài khoản hoặc đăng nhập.",
-          "Cần sự đồng ý trước khi quay phim — SeaMeet không kiểm tra điều này cho bạn.",
-          "Các bản ghi và phiên âm của bạn là của riêng bạn; SeaMeet chỉ xử lý chúng để cung cấp dịch vụ.",
-          "Tính năng đám mây yêu cầu có tài khoản và lưu dữ liệu trên máy chủ SeaMeet.",
-          "Chẩn đoán ẩn danh là tùy chọn và có thể tắt bất kỳ lúc nào.",
-          "Không lạm dụng ứng dụng (không sử dụng trái pháp luật, không hack).",
-          "Dịch vụ có thể thay đổi, và trách nhiệm pháp lý có hạn."
-        ]
-      },
+      "NoUpdatesAvailable": "Không có bản cập nhật mới",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop giữ tất cả các ghi âm hoàn toàn cục bộ và riêng tư trên thiết bị của bạn, không yêu cầu tài khoản. Tính năng đám mây là tùy chọn, mã hóa, và hoàn toàn do bạn kiểm soát.",
-        "TLDRTitle": "SeaMeet Privacy — Tóm tắt cho Người bận rộn",
         "TLDRItems": [
           "SeaMeet Desktop được thiết kế riêng tư: mọi thứ đều ở trên thiết bị của bạn; chúng tôi không thu thập âm thanh, video, nội dung màn hình hoặc dữ liệu cuộc họp.",
           "Không cần tài khoản để sử dụng các tính năng không AI của ứng dụng desktop.",
@@ -530,734 +883,299 @@
           "Tích hợp bên thứ ba là tùy chọn và có thể thu hồi hoàn toàn.",
           "Chúng tôi không bán dữ liệu, và các ghi âm đám mây được mã hóa.",
           "Bạn kiểm soát dữ liệu của mình — xóa ghi âm bất kỳ lúc nào hoặc yêu cầu xóa hoàn toàn."
-        ]
+        ],
+        "TLDRTitle": "SeaMeet Privacy — Tóm tắt cho Người bận rộn"
       },
+      "PrivacyPolicy": "Chính sách Bảo mật",
       "PrivacySecurity": {
-        "Title": "Quyền riêng tư và An ninh",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Chức năng tự động phát hiện sẽ KHÔNG bắt đầu ghi âm tự động nếu chưa có sự chấp thuận rõ ràng của bạn.",
+            "Title": "Cần sự chấp thuận rõ ràng"
+          },
           "MicrophoneActivity": {
-            "Title": "Chỉ theo dõi hoạt động microphone",
-            "Description": "Auto-detect theo dõi việc sử dụng microphone của bạn để xác định ứng dụng nào đang sử dụng nó. Không dữ liệu nào được thu thập."
+            "Description": "Auto-detect theo dõi việc sử dụng microphone của bạn để xác định ứng dụng nào đang sử dụng nó. Không dữ liệu nào được thu thập.",
+            "Title": "Chỉ theo dõi hoạt động microphone"
           },
           "NoDataAccess": {
-            "Title": "Không Truy cập Dữ liệu",
-            "Description": "Auto-detect chỉ phát hiện xem microphone có được sử dụng hay không. Nó không truy cập vào bất kỳ dữ liệu đã ghi nào."
-          },
-          "ExplicitApproval": {
-            "Title": "Cần sự chấp thuận rõ ràng",
-            "Description": "Chức năng tự động phát hiện sẽ KHÔNG bắt đầu ghi âm tự động nếu chưa có sự chấp thuận rõ ràng của bạn."
+            "Description": "Auto-detect chỉ phát hiện xem microphone có được sử dụng hay không. Nó không truy cập vào bất kỳ dữ liệu đã ghi nào.",
+            "Title": "Không Truy cập Dữ liệu"
           },
           "NoDataCollection": {
-            "Title": "Không Thu Thập Dữ Liệu",
-            "Description": "SeaMeet không thu thập bất kỳ dữ liệu nào từ chức năng tự động phát hiện nếu không có sự đồng ý của bạn."
+            "Description": "SeaMeet không thu thập bất kỳ dữ liệu nào từ chức năng tự động phát hiện nếu không có sự đồng ý của bạn.",
+            "Title": "Không Thu Thập Dữ Liệu"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "Hoàn toàn trong máy",
-            "Description": "Flashback chạy hoàn toàn trên máy của bạn. Không có gì được đồng bộ lên đám mây."
+          "EthicalUse": {
+            "Description": "Luôn thông báo và xin phép người khác trước khi sử dụng Flashback để ghi lại họ.",
+            "Title": "Đạo Đức trong Sử dụng"
           },
-          "RAMOnly": {
-            "Title": "Chỉ trong bộ nhớ RAM",
-            "Description": "Tất cả dữ liệu đều nằm trong bộ nhớ RAM. Không có dữ liệu nào được ghi vào đĩa trừ khi bạn lưu bản ghi Flashback."
+          "LocalOnly": {
+            "Description": "Flashback chạy hoàn toàn trên máy của bạn. Không có gì được đồng bộ lên đám mây.",
+            "Title": "Hoàn toàn trong máy"
           },
           "Protected": {
-            "Title": "Bảo vệ",
-            "Description": "Quyền riêng tư và bảo mật của bạn là ưu tiên hàng đầu. Dữ liệu của bạn không bao giờ rời khỏi thiết bị."
+            "Description": "Quyền riêng tư và bảo mật của bạn là ưu tiên hàng đầu. Dữ liệu của bạn không bao giờ rời khỏi thiết bị.",
+            "Title": "Bảo vệ"
           },
-          "EthicalUse": {
-            "Title": "Đạo Đức trong Sử dụng",
-            "Description": "Luôn thông báo và xin phép người khác trước khi sử dụng Flashback để ghi lại họ."
+          "RAMOnly": {
+            "Description": "Tất cả dữ liệu đều nằm trong bộ nhớ RAM. Không có dữ liệu nào được ghi vào đĩa trừ khi bạn lưu bản ghi Flashback.",
+            "Title": "Chỉ trong bộ nhớ RAM"
           }
-        }
-      }
+        },
+        "Title": "Quyền riêng tư và An ninh"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet là một recorder miễn phí, chú trọng quyền riêng tư, nơi sử dụng cục bộ không yêu cầu tài khoản, dữ liệu của bạn thuộc về bạn, tính năng đám mây tùy chọn, và bạn phải lấy sự đồng ý trước khi ghi.",
+        "TLDRItems": [
+          "SeaMeet Desktop miễn phí — tất cả các tính năng không‑AI hoạt động mà không cần tài khoản hoặc đăng nhập.",
+          "Cần sự đồng ý trước khi quay phim — SeaMeet không kiểm tra điều này cho bạn.",
+          "Các bản ghi và phiên âm của bạn là của riêng bạn; SeaMeet chỉ xử lý chúng để cung cấp dịch vụ.",
+          "Tính năng đám mây yêu cầu có tài khoản và lưu dữ liệu trên máy chủ SeaMeet.",
+          "Chẩn đoán ẩn danh là tùy chọn và có thể tắt bất kỳ lúc nào.",
+          "Không lạm dụng ứng dụng (không sử dụng trái pháp luật, không hack).",
+          "Dịch vụ có thể thay đổi, và trách nhiệm pháp lý có hạn."
+        ],
+        "TLDRTitle": "Điều khoản của SeaMeet — Tóm tắt cho Người bận rộn"
+      },
+      "TermsOfService": "Điều khoản Dịch vụ",
+      "UpdateAvailable": "Phiên bản {{version}} đã sẵn sàng",
+      "UpdateReady": "Phiên bản {{version}} đã sẵn sàng để cài đặt"
     },
-    "General": "Chung",
-    "Storage": {
-      "Title": "Cài đặt lưu trữ",
-      "Description": "Chọn thư mục mặc định SeaMeet sử dụng để tự động lưu các ghi âm.",
-      "DefaultPathLabel": "Thư mục lưu mặc định",
-      "Browse": "Duyệt...",
-      "Save": "Lưu",
-      "RecordingNameLabel": "Tên ghi âm"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Chế độ ghi mặc định",
+      "DeleteTooltip": "Xóa khỏi danh sách (đặt lại thành \"Hỏi mỗi lần\")",
+      "EmptyState": "Chưa phát hiện ứng dụng nào. Khi SeaMeet phát hiện một ứng dụng sử dụng microphone của bạn, nó sẽ xuất hiện ở đây.",
+      "PathCopied": "Đường dẫn đã sao chép vào clipboard",
+      "PermissionHeader": "Quyền của ứng dụng",
+      "Title": "Quyền của ứng dụng"
     },
-    "ProfileSettings": "Cài đặt hồ sơ",
-    "AccountPreferences": "Tùy chọn tài khoản",
-    "ProfileSettingsDescription": "Quản lý thông tin hồ sơ của bạn",
-    "AccountPreferencesDescription": "Quản lý tùy chọn tài khoản của bạn",
-    "SettingsFileLocation": "Vị trí tập tin cài đặt",
-    "SettingsFileDescription": "Cài đặt được lưu trong một tệp JSON duy nhất để dễ sao lưu và quản lý",
     "Back": "Quay lại",
-    "OpenFolder": "Mở Folder",
     "DefaultUserName": "Nguoi dung SeaMeet",
-    "UserAvatarAlt": "Người dùng",
+    "FailedToCheckForUpdates": "Không thể kiểm tra cập nhật",
     "GroupTitle": {
-      "Account": "Tài khoản",
-      "General": "Chung",
-      "Automation": "Tự động hóa",
-      "RecordingStorage": "Bộ lưu trữ ghi",
-      "Configuration": "Cấu hình",
       "ApplicationInfo": "Thông tin về ứng dụng",
-      "Legal": "Thông tin pháp lý"
+      "Automation": "Tự động hóa",
+      "Configuration": "Cấu hình",
+      "General": "Chung",
+      "Legal": "Thông tin pháp lý",
+      "RecordingStorage": "Bộ lưu trữ ghi"
     },
     "Item": {
-      "EditProfile": "Chỉnh sửa hồ sơ",
-      "Account": "Tài khoản",
-      "LogOut": "Đăng xuất",
-      "Language": "Ngôn ngữ",
+      "AutoRecording": "Tự động ghi hình",
+      "Copyright": "Bản quyền",
       "ImproveTranslationHint": "Giúp cải thiện bản dịch này trên GitHub →",
-      "Theme": "Giao diện",
-      "KeyboardShortcuts": "Phím tắt",
+      "Language": "Ngôn ngữ",
       "MicrophoneGain": "Tăng giảm microphone",
       "StartAtLogin": "Khởi động khi đăng nhập",
-      "AutoRecording": "Tự động ghi hình",
       "Storage": "Lưu trữ",
-      "Copyright": "Bản quyền"
+      "Theme": "Giao diện"
     },
     "MicGain": {
-      "Minimal": "Tối thiểu (0.1x)",
-      "Quiet": "Yên tĩnh (0,5x)",
-      "Normal": "Bình thường (1x)",
       "Loud": "Lớn (5x)",
-      "Louder": "Lớn hơn (10x)"
+      "Louder": "Lớn hơn (10x)",
+      "Minimal": "Tối thiểu (0.1x)",
+      "Normal": "Bình thường (1x)",
+      "Quiet": "Yên tĩnh (0,5x)"
+    },
+    "OpenFolder": "Mở Folder",
+    "PageTitle": {
+      "About": "Giới thiệu",
+      "AutoRecording": "Ghi tự động",
+      "Flashback": "Hồi tưởng quay phim",
+      "Storage": "Lưu trữ"
+    },
+    "SettingsFileLocation": "Vị trí tập tin cài đặt",
+    "Storage": {
+      "Browse": "Duyệt...",
+      "DefaultPathLabel": "Thư mục lưu mặc định",
+      "Description": "Chọn thư mục mặc định SeaMeet sử dụng để tự động lưu các ghi âm.",
+      "Save": "Lưu",
+      "Title": "Cài đặt lưu trữ"
     },
     "Theme": {
+      "AdobeSand": "Cát Adobe",
+      "AdobeSandDesc": "Chế độ sáng tông đất ấm",
+      "AzureLight": "Xanh Da Trời",
+      "AzureLightDesc": "Chế độ sáng màu xanh mát",
+      "CloudCanvas": "Canvas Mây",
+      "CloudCanvasDesc": "Chế độ sáng màu xanh bạc hà tươi",
+      "ColumnDark": "Tối",
+      "ColumnLight": "Sáng",
+      "CyberCobalt": "Cobalt Điện Tử",
+      "CyberCobaltDesc": "Chế độ tối xanh lục lam neon",
+      "Dark": "Tối",
+      "DarkDesc": "Chế độ tối",
       "Device": "Thiết bị",
       "DeviceDesc": "Theo cài đặt hệ thống",
       "Light": "Sáng",
       "LightDesc": "Chế độ sáng",
-      "Dark": "Tối",
-      "DarkDesc": "Chế độ tối",
-      "Pink": "Hồng Tối",
-      "PinkDesc": "Chế độ màu hồng tối",
       "LightPink": "Chế độ Pink sáng",
       "LightPinkDesc": "Chế độ màu hồng sáng",
-      "ColumnLight": "Sáng",
-      "ColumnDark": "Tối",
-      "AzureLight": "Xanh Da Trời",
-      "AzureLightDesc": "Chế độ sáng màu xanh mát",
-      "WarmPaper": "Giấy Ấm",
-      "WarmPaperDesc": "Chế độ sáng tông giấy ấm",
-      "SynthwaveLight": "Synthwave Sáng",
-      "SynthwaveLightDesc": "Chế độ sáng synthwave rực rỡ",
       "MidnightBlue": "Xanh Nửa Đêm",
       "MidnightBlueDesc": "Chế độ tối xanh đậm",
-      "CloudCanvas": "Canvas Mây",
-      "CloudCanvasDesc": "Chế độ sáng màu xanh bạc hà tươi",
-      "CyberCobalt": "Cobalt Điện Tử",
-      "CyberCobaltDesc": "Chế độ tối xanh lục lam neon",
-      "AdobeSand": "Cát Adobe",
-      "AdobeSandDesc": "Chế độ sáng tông đất ấm"
+      "Pink": "Hồng Tối",
+      "PinkDesc": "Chế độ màu hồng tối",
+      "SynthwaveLight": "Synthwave Sáng",
+      "SynthwaveLightDesc": "Chế độ sáng synthwave rực rỡ",
+      "WarmPaper": "Giấy Ấm",
+      "WarmPaperDesc": "Chế độ sáng tông giấy ấm"
     },
-    "PageTitle": {
-      "Flashback": "Hồi tưởng quay phim",
-      "About": "Giới thiệu",
-      "AutoRecording": "Ghi tự động",
-      "Storage": "Lưu trữ"
-    },
-    "FailedToCheckForUpdates": "Không thể kiểm tra cập nhật",
-    "AppPermissions": {
-      "Title": "Quyền của ứng dụng",
-      "Description": "Quản lý các ứng dụng có thể tự động ghi khi phát hiện bằng microphone của bạn.",
-      "EmptyState": "Chưa phát hiện ứng dụng nào. Khi SeaMeet phát hiện một ứng dụng sử dụng microphone của bạn, nó sẽ xuất hiện ở đây.",
-      "DeleteTooltip": "Xóa khỏi danh sách (đặt lại thành \"Hỏi mỗi lần\")",
-      "PathCopied": "Đường dẫn đã sao chép vào clipboard",
-      "PermissionHeader": "Quyền của ứng dụng",
-      "DefaultRecordingMode": "Chế độ ghi mặc định"
-    }
+    "Title": "Cài đặt",
+    "UserAvatarAlt": "Người dùng"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Hiển thị Cửa sổ nổi",
-    "OpenLauncher": "Mở Launcher",
-    "RecordAudio": "Ghi âm thanh",
-    "RecordFullscreen": "Ghi toàn màn hình",
-    "RecordWindow": "Ghi cửa sổ",
-    "RecordRegion": "Vùng ghi",
     "CaptureScreenshot": "Chụp ảnh màn hình",
-    "RestoreDefaults": "Khôi phục mặc định",
-    "RecordingPrompt": "Đang nghe... nhấn phím tắt mới",
     "ConflictWarning": "Phím tắt này đã được sử dụng bởi ứng dụng khác và không thể đăng ký.",
     "GenericError": "Không thể cập nhật phím tắt.",
     "None": "Không có",
-    "SpaceKey": "Không gian"
+    "OpenLauncher": "Mở Launcher",
+    "RecordAudio": "Ghi âm thanh",
+    "RecordFullscreen": "Ghi toàn màn hình",
+    "RecordingPrompt": "Đang nghe... nhấn phím tắt mới",
+    "RecordRegion": "Vùng ghi",
+    "RecordWindow": "Ghi cửa sổ",
+    "RestoreDefaults": "Khôi phục mặc định",
+    "SpaceKey": "Không gian",
+    "ToggleFloatingWindow": "Hiển thị Cửa sổ nổi"
   },
   "Sidebar": {
-    "PrimaryNavigation": "Điều hướng chính",
     "ClearSearch": "Xóa tìm kiếm",
-    "AgentPanel": "Đặc vụ AI"
-  },
-  "SidebarTabs": {
-    "Audios": "Âm thanh và ghi âm",
-    "AutoDetect": "Tự động phát hiện"
+    "PrimaryNavigation": "Điều hướng chính"
   },
   "TakeSnapshot": {
-    "Title": "Ảnh chụp nhanh Đã chụp",
+    "GoToSnapshot": "Chuyển tới ảnh chụp nhanh",
     "Message": "Ảnh chụp nhanh đã được lưu vào:",
     "StayAtVideo": "Ở lại video hiện tại",
-    "GoToSnapshot": "Chuyển tới ảnh chụp nhanh"
+    "Title": "Ảnh chụp nhanh Đã chụp"
   },
   "TopNav": {
-    "CloseNavigationMenu": "Dong menu danh sach",
-    "OpenNavigationMenu": "Mo menu danh sach",
-    "MainNavigation": "Điều hướng chính",
-    "Record": "Ghi",
-    "Recording": "ghi âm",
-    "Files": "Tập tin",
     "Agent": "Agent",
-    "Terminal": "Cua so terminal"
+    "CloseNavigationMenu": "Dong menu danh sach",
+    "Files": "Tập tin",
+    "MainNavigation": "Điều hướng chính",
+    "OpenNavigationMenu": "Mo menu danh sach",
+    "Record": "Ghi",
+    "Recording": "ghi âm"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet vẫn đang chạy trong khay hệ thống (góc dưới bên phải).",
-    "ShowLauncher": "Hiển thị Trình khởi chạy",
-    "ShowFloatingWindow": "Hiển thị cửa sổ nổi",
-    "ShowMainWindow": "Hiển thị cửa sổ chính",
-    "ExitSeaMeet": "Thoát SeaMeet",
-    "QuickRecording": "Quay phim nhanh",
-    "RecordAudio": "Ghi âm",
-    "RecordFullscreen": "Ghi toàn màn hình",
-    "RecordRegion": "Chụp vùng để quay phim",
-    "OpenRecordingsFolder": "Mở thư mục quay phim",
-    "TakeScreenshot": "Chụp màn hình",
-    "Close": "Đóng",
-    "OpenSeaMeet": "Mở SeaMeet",
-    "OpenSaveFolder": "Mở thư mục lưu",
-    "ReportIssues": "Báo cáo vấn đề"
+    "MinimizedHint": "SeaMeet vẫn đang chạy trong khay hệ thống (góc dưới bên phải)."
   },
   "Types": {
-    "Microphone": "Mic",
-    "System": "Am thanh he thong",
     "Both": "Ca hai (Ket hop)",
     "File": "Tap tin",
-    "Video": "Video"
+    "Microphone": "Mic",
+    "System": "Am thanh he thong",
+    "Video": "Băng hình"
   },
   "UpdateQuitModal": {
-    "Title": "Cập nhật mới có sẵn",
-    "ReadyToInstall": "SeaMeet {{version}} đã sẵn sàng để cài đặt.",
-    "InstallBeforeQuitting": "Bạn có muốn cài đặt trước khi thoát không?",
     "InstallAndQuit": "Cài đặt và thoát",
-    "QuitWithoutInstalling": "Thoát mà không cài đặt"
+    "InstallBeforeQuitting": "Bạn có muốn cài đặt trước khi thoát không?",
+    "QuitWithoutInstalling": "Thoát mà không cài đặt",
+    "ReadyToInstall": "SeaMeet {{version}} đã sẵn sàng để cài đặt.",
+    "Title": "Cập nhật mới có sẵn"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} đã sẵn sàng để cài đặt",
-    "Downloading": "Đang tải xuống SeaMeet {{version}} ({{percent}}%)",
     "Available": "Cập nhật có sẵn: SeaMeet {{version}}",
-    "WhatsNewInVersion": "Các tính năng mới trong {{version}}?",
-    "WhatsNew": "Các tính năng mới:",
+    "Dismiss": "Bỏ qua",
+    "Downloading": "Đang tải xuống SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Ẩn",
+    "ReadyToInstall": "SeaMeet {{version}} đã sẵn sàng để cài đặt",
     "RestartNow": "Khởi động lại ngay bây giờ",
     "ViewRelease": "Xem Nhật ký phát hành",
     "ViewReleaseTitle": "Xem Release Notes trên GitHub",
-    "Dismiss": "Bỏ qua"
+    "WhatsNew": "Các tính năng mới:",
+    "WhatsNewInVersion": "Các tính năng mới trong {{version}}?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "Giới thiệu SeaMeet",
     "DisplayName": "Người dùng",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Cài đặt hồ sơ",
-    "AccountPreferences": "Tuỳ chọn tài khoản",
-    "BillingPlans": "Thanh toán & Gói",
-    "StorageSettings": "Cài đặt lưu trữ",
-    "HelpSupport": "Hỗ trợ và trợ giúp",
-    "KeyboardShortcuts": "Phím tắt bàn phím",
-    "SignIn": "Đăng nhập",
-    "SignOut": "Đăng xuất",
-    "SeaMeetSignedOut": "SeaMeet: Chưa đăng nhập",
-    "SeaMeetSignedIn": "SeaMeet: Đã đăng nhập",
-    "AboutSeaMeet": "Giới thiệu SeaMeet",
     "Exit": "Thoát",
+    "HelpSupport": "Hỗ trợ và trợ giúp",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Tham khảo wiki SeaMeet để có tài liệu hướng dẫn và các hướng dẫn khác.",
-      "VisitWiki": "Thăm Wiki",
-      "Issues": "Vấn đề",
-      "IssuesDesc": "Báo cáo lỗi và yêu cầu tính năng (cần tài khoản GitHub).",
-      "SubmitIssue": "Gửi báo cáo lỗi",
       "Discussion": "Thảo luận",
       "DiscussionDesc": "Tham gia thảo luận cộng đồng (cần tài khoản GitHub).",
-      "JoinDiscussion": "Tham gia thảo luận",
+      "DogfoodingDesc": "Chúng tôi khuyến khích bạn sử dụng SeaMeet để ghi lại sự cố và đăng tải trong mục Issues hoặc gửi Email cho chúng tôi!",
       "Email": "E-mail",
       "EmailDesc": "Liên hệ trực tiếp với nhóm của chúng tôi.",
-      "SendEmail": "Gửi Email",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "Chúng tôi khuyến khích bạn sử dụng SeaMeet để ghi lại sự cố và đăng tải trong mục Issues hoặc gửi Email cho chúng tôi!",
-      "CheckForUpdates": "Kiểm tra cập nhật",
-      "CheckingUpdates": "Đang kiểm tra cập nhật...",
-      "UpdateAvailable": "Phiên bản {{version}} đã sẵn sàng",
-      "UpdateReady": "Sẵn sàng cài đặt phiên bản {{version}}",
-      "InstallNow": "Cài đặt ngay",
-      "TermsOfService": "Điều khoản sử dụng",
-      "PrivacyPolicy": "Chính sách bảo mật",
       "ImproveTranslation": "Cải thiện bản dịch",
-      "ImproveTranslationDesc": "Hãy giúp chúng tôi cải thiện bản dịch hoặc yêu cầu ngôn ngữ mới trên GitHub."
-    }
+      "ImproveTranslationDesc": "Hãy giúp chúng tôi cải thiện bản dịch hoặc yêu cầu ngôn ngữ mới trên GitHub.",
+      "Issues": "Vấn đề",
+      "IssuesDesc": "Báo cáo lỗi và yêu cầu tính năng (cần tài khoản GitHub).",
+      "JoinDiscussion": "Tham gia thảo luận",
+      "SendEmail": "Gửi Email",
+      "SubmitIssue": "Gửi báo cáo lỗi",
+      "VisitWiki": "Thăm Wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Tham khảo wiki SeaMeet để có tài liệu hướng dẫn và các hướng dẫn khác."
+    },
+    "KeyboardShortcuts": "Phím tắt bàn phím",
+    "SeaMeetSignedIn": "SeaMeet: Đã đăng nhập",
+    "SeaMeetSignedOut": "SeaMeet: Chưa đăng nhập",
+    "SignIn": "Đăng nhập",
+    "SignOut": "Đăng xuất"
   },
   "VideoSettings": {
-    "Title": "Cài đặt Ghi Video",
-    "Mode": "Chế độ ghi",
-    "ModeOff": "Tắt",
-    "ModeFullscreen": "Toàn màn hình",
-    "ModeWindow": "Chế độ cửa sổ",
-    "ModeRegion": "Chế độ theo vùng",
+    "AudioSettings": "Cài đặt Âm thanh",
+    "CodecTooltip": {
+      "VP8": "Quay phim này sử dụng VP8 để đảm bảo chất lượng tốt nhất. Một số trình phát video mặc định — như Windows Media Player và QuickTime trên macOS — có thể không hỗ trợ định dạng này. Để phát ổn định, vui lòng sử dụng trình duyệt hiện đại (Chrome hoặc Edge) hoặc trình phát tương thích như VLC.",
+      "VP9": "Quay phim này sử dụng VP9 để đạt chất lượng tốt nhất. Một số trình phát video mặc định — như Windows Media Player và QuickTime trên macOS — có thể không hỗ trợ định dạng này. Để phát ổn định, vui lòng sử dụng trình duyệt hiện đại (Chrome hoặc Edge) hoặc trình phát tương thích như VLC."
+    },
+    "Detecting": "Đang phát hiện...",
+    "FlashbackArmedNotice": "Bạn đang ghi với bộ đệm hồi tưởng {{seconds}} giây",
+    "FramesPerSecond": "Số khung hình trên giây",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} GB/giờ",
+    "HD": "HD",
+    "HideWindow": "Ẩn cửa sổ SeaMeet khi chọn vùng",
+    "Internal": "Nội bộ",
+    "MBPerMin": "~{{mb}} MB/phút",
     "ModeAudioOnly": "Chỉ âm thanh",
-    "SelectScreen": "Chọn Màn hình",
-    "SelectWindow": "Chọn cửa sổ",
-    "Refresh": "Làm mới",
+    "ModeFullscreen": "Toàn màn hình",
+    "ModeRegion": "Chế độ theo vùng",
+    "ModeWindow": "Chế độ cửa sổ",
+    "Native": "Bản gốc",
     "NoScreens": "Không phát hiện được màn hình",
     "NoWindows": "Không có cửa sổ nào",
-    "RegionInfo": "Khi bắt đầu ghi, bạn sẽ được nhắc chọn màn hình hoặc cửa sổ.",
-    "HideWindow": "Ẩn cửa sổ SeaMeet khi chọn vùng",
-    "VideoQuality": "Chất lượng Video",
-    "Quality": "Chất lượng video",
-    "QualityOriginal": "Chất lượng gốc",
-    "QualityHigh": "Chất lượng cao",
-    "QualityMedium": "Chất lượng trung bình",
-    "QualityLow": "Chất lượng thấp",
-    "FramesPerSecond": "Số khung hình trên giây",
-    "FrameRate": "Tốc độ khung hình",
-    "SourceResolution": "Độ phân giải nguồn",
-    "Native": "Bản gốc",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Chọn nguồn phía trên",
-    "ZeroSize": "~0 MB/phút, ~0 GB/giờ",
-    "MBPerMin": "~{{mb}} MB/phút",
-    "GBPerHour": "~{{gb}} GB/giờ",
     "Primary": "Chính",
-    "Internal": "Nội bộ",
-    "Detecting": "Đang phát hiện...",
-    "ResolutionUnknown": "Độ phân giải không xác định",
-    "AudioSettings": "Cài đặt Âm thanh",
-    "RecordModeTitle": "Ghi âm hay Ghi video?",
+    "QualityHigh": "Chất lượng cao",
+    "QualityLow": "Chất lượng thấp",
+    "QualityMedium": "Chất lượng trung bình",
+    "QualityOriginal": "Chất lượng gốc",
     "Record": "Bắt đầu ghi",
-    "RecordWithoutFlashback": "Quay phim không hồi tưởng",
+    "RecordModeTitle": "Ghi âm hay Ghi video?",
     "RecordWithFlashback": "Quay phim với hồi tưởng",
+    "RecordWithoutFlashback": "Quay phim không hồi tưởng",
+    "Refresh": "Làm mới",
+    "ResolutionUnknown": "Độ phân giải không xác định",
+    "SD": "SD",
+    "SelectScreen": "Chọn Màn hình",
+    "SelectSourceAbove": "Chọn nguồn phía trên",
+    "SelectWindow": "Chọn cửa sổ",
+    "SourceResolution": "Độ phân giải nguồn",
+    "Title": "Cài đặt Ghi Video",
     "VideoFlashbackArmedNotice": "Bảo vệ màn hình flashback ({{seconds}}s)",
-    "FlashbackArmedNotice": "Bạn đang ghi với bộ đệm hồi tưởng {{seconds}} giây",
-    "CodecTooltip": {
-      "VP9": "Quay phim này sử dụng VP9 để đạt chất lượng tốt nhất. Một số trình phát video mặc định — như Windows Media Player và QuickTime trên macOS — có thể không hỗ trợ định dạng này. Để phát ổn định, vui lòng sử dụng trình duyệt hiện đại (Chrome hoặc Edge) hoặc trình phát tương thích như VLC.",
-      "VP8": "Quay phim này sử dụng VP8 để đảm bảo chất lượng tốt nhất. Một số trình phát video mặc định — như Windows Media Player và QuickTime trên macOS — có thể không hỗ trợ định dạng này. Để phát ổn định, vui lòng sử dụng trình duyệt hiện đại (Chrome hoặc Edge) hoặc trình phát tương thích như VLC."
-    }
+    "VideoQuality": "Chất lượng Video",
+    "ZeroSize": "~0 MB/phút, ~0 GB/giờ"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Đã chọn Khu vực",
     "CustomRegion": "Khu vực tùy chỉnh: {{width}} × {{height}} pixels",
-    "ReselectRegion": "Chọn lại Khu vực",
-    "SelectCustomRegion": "Chọn Khu vực tùy chỉnh",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Đã chọn Khu vực",
+    "ReselectRegion": "Chọn lại Khu vực",
+    "SelectCustomRegion": "Chọn Khu vực tùy chỉnh"
   },
   "WindowPicker": {
-    "Title": "Chọn cửa sổ",
     "Instruction": "Chọn cửa sổ để quay phim.",
-    "Refresh": "Cập nhật",
-    "Refreshing": "Đang cập nhật…",
     "Loading": "Đang tải các cửa sổ…",
     "None": "Không tìm thấy cửa sổ nào. Mở một ứng dụng và làm mới.",
+    "Refresh": "Cập nhật",
+    "Refreshing": "Đang cập nhật…",
+    "Title": "Chọn cửa sổ",
     "Unknown": "Cửa sổ chưa có tên"
-  },
-  "Common": {
-    "Configure": "Cấu hình",
-    "Cancel": "Hủy bỏ",
-    "Apply": "Áp dụng",
-    "Close": "Đóng",
-    "Open": "Mở",
-    "Minimize": "Thu nhỏ xuống hình tròn",
-    "Recording": "Ghi hình",
-    "UnknownApp": "Ứng dụng không xác định",
-    "Done": "Hoàn thành",
-    "Save": "Lưu",
-    "Saving": "Đang lưu...",
-    "Delete": "Xóa",
-    "Or": "Hoặc",
-    "Loading": "Đang tải...",
-    "Expand": "Mở rộng",
-    "PlannedFeature": "Tính năng dự kiến",
-    "Screen": "Màn hình",
-    "Window": "Cửa sổ",
-    "Region": "Vùng",
-    "AppTitle": "SeaMeet Ghi âm màn hình & âm thanh",
-    "AppSubtitle": "Ghi âm âm thanh đầu vào và đầu ra của thiết bị",
-    "Screenshot": "Ảnh chụp màn hình",
-    "Saved": "Đã lưu",
-    "Processing": "Đang xử lý…",
-    "Starting": "Đang khởi động…",
-    "FileNameCopiedWithRenameHint": "{{fileName}} đã sao chép vào clipboard. Nhấn đúp để đổi tên tệp.",
-    "ApplyName": "Áp dụng tên",
-    "Send": "Gửi"
-  },
-  "RecordingControls": {
-    "StartRecording": "Bắt đầu ghi",
-    "StopRecording": "Dừng ghi",
-    "ContinueRecording": "Tiếp tục ghi",
-    "Pause": "Tạm dừng",
-    "Resume": "Tiếp tục ghi",
-    "Stop": "Dừng",
-    "RecordingScreen": "Đang ghi màn hình",
-    "RecordingAudio": "Đang ghi âm...",
-    "AudioRecording": "Ghi âm",
-    "VideoRecording": "Ghi hình",
-    "RecordingPreview": "Xem trước quay phim",
-    "RecordingMode": "Chế độ ghi"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Âm thanh",
-    "RecordAudioTip": "Chỉ audio",
-    "RecordWindow": "Chọn cửa sổ",
-    "RecordWindowTip": "Chụp cửa sổ ứng dụng riêng lẻ",
-    "RecordFullscreen": "Toàn màn hình",
-    "RecordFullscreenTip": "Chụp toàn bộ màn hình của bạn",
-    "RecordRegion": "Vùng",
-    "RecordRegionTip": "Chụp vùng tùy chỉnh",
-    "CaptureMode": "Chế độ ghi",
-    "FullScreen": "Toàn màn hình",
-    "AreaCapture": "Chụp vùng"
-  },
-  "RecordingsList": {
-    "NoRecordings": "Chưa có bản ghi. Bắt đầu ghi để xem chúng ở đây.",
-    "RecentRecordings": "Các bản ghi gần đây",
-    "RecentCaptures": "Các đoạn ghi gần đây",
-    "RefreshRecordings": "Làm mới danh sách",
-    "SearchRecordingsOrSnapshots": "Tìm kiếm bản ghi và snapshots",
-    "SearchRecordingsPlaceholder": "Tìm kiếm bản ghi",
-    "ShowInFolder": "Hiển thị trong thư mục",
-    "CopyFileName": "Sao chép tên file",
-    "CopyFilePath": "Sao chép đường dẫn tệp",
-    "FileNameCopied": "{{fileName}} đã được sao chép vào clipboard",
-    "FilePathCopied": "Đường dẫn tệp đã được sao chép vào clipboard",
-    "SaveAs": "Lưu thành",
-    "OpenSaveFolder": "Mở Thư mục",
-    "Title": "Quay phim",
-    "Recovered": "{{count}} bản ghi đã phục hồi"
-  },
-  "FileImport": {
-    "ImportMedia": "Nhập Media",
-    "DragDropFiles": "Kéo và thả các tệp âm thanh, video, hình ảnh của bạn vào đây",
-    "DragDropSubtitle": "Kéo và thả các tệp âm thanh, video, hình ảnh vào đây để nhập",
-    "BrowseFiles": "Duyệt Tệp",
-    "Supported": "Hỗ trợ",
-    "SupportedFormats": "Được hỗ trợ: MP3, WAV, M4A, WebM, OGG, PNG, JPG và nhiều định dạng khác",
-    "VideoImportCopying": "Đang sao chép tệp video...",
-    "VideoImportSaving": "Đang lưu tệp video...",
-    "VideoUnsupported": "Định dạng video này có thể không phát được trong ứng dụng. Tệp vẫn sẽ được nhập."
-  },
-  "AudioControls": {
-    "AudioCapture": "Ghi am am thanh",
-    "AudioMix": "Mix am thanh",
-    "AudioSessionsLog": "Nhat ky Phien am",
-    "AudioSource": "Nguon am thanh:",
-    "InputDevice": "Thiet bi nhap:",
-    "Microphone": "Mic",
-    "MicrophoneLabel": "Mic {{id}}",
-    "RecordingDefaultMicrophone": "Mic mac dinh",
-    "RecordingInputLabel": "Nhap: {{name}}",
-    "RecordingSettings": "Cai dat ghi am",
-    "RecordingType": "Loai ghi am:",
-    "RefreshMicrophoneList": "Lam moi danh sach microphone",
-    "MicrophoneGainWarning": "Cuong do microphone cao co the ghi lai phat loa ngay ca khi \"Am thanh he thong\" tat. Su dung tai nghe hoac giam cuong do microphone de chi ghi am micro."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Bat dau ghi",
-    "Ready": "Ban da san sang?",
-    "BufferingMoment": "Dang buffer Khoanh khac...",
-    "RecordWithFlashback": "Ghi voi hoi tuong",
-    "NeverMissAMoment": "Khong bao gio bo lo khoanh khac.",
-    "ReadyToGuard": "San sang de bao ve {{type}} cua ban?",
-    "FillingBuffer": "Dang nap buffer hoi tuong {{duration}}s... {{progress}}%",
-    "ReadyToCapture": "SeaMeet da san sang de ghi lai.",
-    "DescNone": "Ghi man hinh, am thanh, hoac chup anh man hinh. Chon che do hoi tuong ben tren de bat dau luu khoanh khac.",
-    "DescInit": "Nhan 'San sang?' de yeu cau SeaMeet bat dau 'nho' qua khu.",
-    "DescCharging": "Chuan bi cua so {{duration}} giay... gan san sang de bat nhung gi ban co the bo lo. {{progress}}% hoan thanh.",
-    "DescReady": "Hoi tuong da duoc kich hoat. Bat cu khi nao ban nhan Ghi, {{duration}} giay {{type}} trong qua khu se duoc bao gom — khong bao gio phai tiec bui mot khoanh khac nao nua.",
-    "Screen": "man hinh",
-    "Audio": "am thanh",
-    "OpenLauncher": "Mo Launcher",
-    "OpenFloater": "Mo Floater",
-    "TakeScreenshot": "Chup anh man hinh",
-    "Buffering": "Dang buffer",
-    "SavingFlashback": "Dang luu hoi tuong...",
-    "SaveLastFlashback": "Luu hoi tuong {{duration}}s cuoi",
-    "PrivacyProtected": "Quyen rieng tu cua ban duoc bao ve.",
-    "PrivacyDesc": "SeaMeet chup anh {{duration}}s trong qua khu cua {{type}} trong buffer vong tren RAM may tinh cua ban.",
-    "FlashbackOff": "Hoi tuong hien tai dang tat. Bat dau ghi binh thuong bat cu luc nao, hoac chon che do hoi tuong (am thanh hoac man hinh) ben tren de luu khoanh khac anh hung.",
-    "FlashbackInitAudio": "Ban da san sang de bao ve am thanh cua minh chua?",
-    "FlashbackInitScreen": "San sang de bao ve man hinh cua ban?",
-    "FlashbackInitDescription": "Nhan 'San sang?' de yeu cau SeaMeet bat dau 'nho' qua khu.",
-    "FlashbackCharging": "Dang nap buffer {{seconds}}s... {{percent}}%",
-    "FlashbackChargingDescription": "Chuan bi cua so {{seconds}} giay... {{percent}}% hoan thanh.",
-    "FlashbackReadyQuestion": "San sang?",
-    "FlashbackReady": "Khong bao gio bo lo mot khoanh khac nao.",
-    "FlashbackReadyDescription": "Hoi tuong da san sang. {{seconds}} giay cua {{type}} se duoc bao gom khi ban ghi.",
-    "FlashbackBuffering": "Dang buffer...",
-    "SaveFlashback": "Luu hoi tuong {{seconds}} giay cuoi",
-    "FlashbackPrivacy": "Quyen rieng tu cua ban duoc bao ve. Duoc luu tru cuc bo trong RAM.",
-    "Capturing": "Dang ghi...",
-    "CaptureMode": "Che do ghi",
-    "FullScreen": "Che do toan man hinh",
-    "AreaCapture": "Chup vung",
-    "KeepWindowVisible": "Giu cua so SeaMeet hien thi khi chup anh man hinh",
-    "FlashbackMismatch": "Che do hoi tuong khong phu hop. Ghi am thanh nhung hoi tuong video dang hoat dong. Vui long tat hoi tuong video."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Bật chức năng phiên âm SeaMeet",
-    "SignInRequired": "Yêu cầu đăng nhập",
-    "ProcessingMode": "Chế độ xử lý",
-    "Realtime": "Thời gian thực",
-    "RealtimeDescription": "phiên âm trực tiếp trong khi bạn ghi",
-    "Diarized": "Đã phân loại speaker",
-    "DiarizedDescription": "Tải lên âm thanh sau khi quay phim để xác định speaker",
-    "ComingSoon": "OK",
-    "TranscriptionLanguage": "Ngôn ngữ phiên âm",
-    "TranslationLanguage": "Ngôn ngữ dịch thuật",
-    "NoTranslation": "Không có bản dịch",
-    "LanguageHint": "Bạn có thể thay đổi ngôn ngữ trong quá trình ghi",
-    "LiveTranscription": "Phiên âm trực tiếp",
-    "WaitingForSpeech": "Đang chờ lời nói...",
-    "UnknownSpeaker": "Người phát biểu",
-    "SegmentCount": "{{count}} đoạn",
-    "SegmentCount_plural": "{{count}} đoạn",
-    "ConnectionError": "Không thể kết nối với SeaMeet",
-    "Reconnecting": "Đang kết nối lại...",
-    "Connected": "Đã kết nối với SeaMeet",
-    "Disconnected": "Đã ngắt kết nối khỏi SeaMeet",
-    "NowSpeaking": "Đang nói...",
-    "Transcript": "Bản ghi chép",
-    "LoadingTranscript": "Đang tải phiên âm...",
-    "NoTranscript": "Không có phiên âm khả dụng",
-    "FetchError": "Không thể tải phiên âm / phiên âm transcription",
-    "Retry": "Thử lại",
-    "Transcribed": "Đã ghi âm lại",
-    "Content": "Nội dung SeaMeet",
-    "Tab": {
-      "transcription": "Phiên âm và ghi chú",
-      "summary": "Tóm tắt",
-      "actionItems": "Mục hành động",
-      "notes": "Ghi chú"
-    },
-    "Summary": "Tóm tắt",
-    "NoSummary": "Chưa có tóm tắt.",
-    "ActionItems": "Mục hành động",
-    "NoActionItems": "Không có mục hành động cho cuộc họp này",
-    "DueDate": "Ngày hết hạn: {{date}}",
-    "Notes": "Ghi chú",
-    "NoNotes": "Không có ghi chú cho cuộc họp này",
-    "LoadingContent": "Đang tải nội dung SeaMeet...",
-    "SeekToTime": "Nhấn để phát từ thời điểm này",
-    "CollapseNowSpeaking": "Thu nhỏ \"Now Speaking\"",
-    "ExpandNowSpeaking": "Mở rộng phần đang trình bày"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Bộ đệm hồi tưởng đang trống. Thử lại sau một chút.",
-    "EnableFlashback": "Bật hồi tưởng để lưu khoảnh khắc.",
-    "FailedToSave": "Không thể lưu bộ đệm hồi tưởng.",
-    "SavedFlashback": "Hồi tưởng đã được lưu vào Recordings.",
-    "StillCharging": "Bộ đệm hồi tưởng vẫn đang sạc."
-  },
-  "AISummary": {
-    "TabTitle": "Tóm tắt AI",
-    "SetupRequired": "Định cấu hình khóa API Gemini của bạn trong Cài đặt → Tính năng AI để bật tóm tắt AI.",
-    "EnableRequired": "Bật Tính năng AI trong Cài đặt → Tính năng AI để xem tóm tắt AI.",
-    "ExportMarkdown": "Sao chép dưới dạng Markdown",
-    "ExportSrt": "Sao chép dưới dạng SRT",
-    "ExportJson": "Sao chép dưới dạng JSON",
-    "Regenerate": "Tạo lại tóm tắt",
-    "Minimize": "Giảm thiểu",
-    "Maximize": "Mở rộng sang chế độ xem đầy đủ",
-    "Queued": "Xếp hàng chờ xử lý...",
-    "Processing": "Đang tạo bản tóm tắt...",
-    "Error": "Không tải được bản tóm tắt: {{error}}",
-    "PipelineError": "Quá trình xử lý AI không thành công. Hãy thử tái tạo.",
-    "Retry": "Thử lại",
-    "NoSummary": "Chưa có bản tóm tắt AI nào.",
-    "Generate": "Tạo Tóm tắt",
-    "Copy": "Sao chép",
-    "NoSummaryText": "Tóm tắt không có sẵn.",
-    "Topics": "chủ đề:",
-    "NoTranscript": "Bản ghi không có sẵn.",
-    "NoActions": "Không có mục hành động nào được xác định.",
-    "NoDecisions": "Không có quyết định quan trọng nào được xác định.",
-    "Export": {
-      "HeadingSummary": "Bản tóm tắt",
-      "HeadingActionItems": "Mục hành động",
-      "HeadingKeyDecisions": "Các quyết định quan trọng",
-      "HeadingTranscription": "Phiên âm"
-    },
-    "Tab": {
-      "Summary": "Bản tóm tắt",
-      "Transcription": "bảng điểm",
-      "ActionItems": "hành động",
-      "KeyDecisions": "Quyết định",
-      "Agent": "Đại lý"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "Tính năng AI",
-    "MenuItem": "Tóm tắt được hỗ trợ bởi AI",
-    "PageTitle": "Tính năng AI",
-    "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
-    "EnableToggleDesc": "Yêu cầu khóa API Gemini miễn phí",
-    "ApiKeySection": "Khóa API Song Tử",
-    "ApiKeyLabel": "Khóa API Song Tử",
-    "KeyPlaceholder": "AizaSy...",
-    "KeyPlaceholderSaved": "•································ Đã lưu)",
-    "ShowKey": "Hiển thị phím",
-    "HideKey": "Ẩn phím",
-    "TestKey": "Lưu & Xác minh",
-    "Saving": "Đang lưu...",
-    "GetKeyLink": "Nhận khóa API miễn phí từ Google AI Studio →",
-    "ClearKey": "Xóa khóa đã lưu",
-    "KeyVerified": "Đã xác minh khóa",
-    "KeyInvalid": "Khóa không hợp lệ",
-    "KeyTesting": "Đang thử nghiệm...",
-    "KeyNotConfigured": "Không có khóa nào được cấu hình",
-    "ModelSection": "Mô hình AI",
-    "ModelLabel": "Người Mẫu Song Tử",
-    "SelectedModel": "Đã chọn: {{model}}",
-    "AutomationSection": "Tự động hóa",
-    "AutoSummary": "Tự động tạo bản tóm tắt",
-    "AutoSummaryDesc": "Chạy sau mỗi lần ghi âm kết thúc",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Được đề xuất · Nhanh + có khả năng",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Tùy chọn ổn định rẻ nhất",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Siêu rẻ",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Công suất tối đa",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Lý luận ổn định tốt nhất"
-    },
-    "ClaudeKey": {
-      "Section": "Khóa API Claude (Đại lý)",
-      "SourceLabel": "Nguồn hoạt động:",
-      "SourceByok": "Khóa API của bạn (BYOK)",
-      "SourceKeyServer": "Được quản lý bởi SeaMeet",
-      "SourceCli": "Mã Claude CLI",
-      "SourceNone": "Chưa được định cấu hình",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "•································ Đã lưu)",
-      "ShowKey": "Hiển thị phím",
-      "HideKey": "Ẩn phím",
-      "TestKey": "Lưu & Xác minh",
-      "Saving": "Đang lưu...",
-      "ClearKey": "Xóa khóa đã lưu",
-      "KeyVerified": "Đã xác minh khóa",
-      "KeyInvalid": "Khóa không hợp lệ",
-      "KeyTesting": "Đang thử nghiệm...",
-      "KeyNotConfigured": "Không có khóa nào được cấu hình",
-      "GetKeyLink": "Nhận khóa API từ Bảng điều khiển Anthropic →",
-      "QuotaSection": "Hạn ngạch máy chủ khóa",
-      "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
-      "QuotaResetDate": "Đặt lại vào {{date}}",
-      "QuotaLoading": "Đang tải hạn ngạch...",
-      "QuotaRefresh": "Làm mới hạn ngạch",
-      "CliSection": "Mã Claude CLI",
-      "CliInstalled": "Đã cài đặt ({{version}})",
-      "CliNotInstalled": "Không tìm thấy Claude CLI",
-      "CliInstallLink": "Cài đặt mã Claude →",
-      "ModelSection": "Mô hình Claude mặc định",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Nhanh và rẻ",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Được đề xuất · Cân bằng",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "Có khả năng nhất"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "Đại lý AI & Cowork",
-    "PageTitle": "Đại lý AI & Cowork",
-    "SectionTitle": "Đại lý AI & Cowork",
-    "EnableToggle": "Kích hoạt AI Agent & Cowork",
-    "EnableToggleDesc": "Yêu cầu khóa API Claude",
-    "DisabledBadge": "Tàn tật",
-    "DisabledMsg": "AI Agent & Cowork bị vô hiệu hóa. Kích hoạt nó trong Cài đặt → AI Agent & Cowork.",
-    "DisabledTabHint": "Tác nhân AI bị tắt — bật nó trong Cài đặt → Tác nhân AI & Cowork",
-    "NotConfiguredMsg": "Không có khóa API Claude nào được định cấu hình. Thiết lập một cái trong Cài đặt → AI Agent & Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "Bản tóm tắt được xếp hàng đợi...",
-    "Running": "Đang tạo bản tóm tắt...",
-    "Progress": "Đang xử lý đoạn {{current}} của {{total}}",
-    "Done": "Bản tóm tắt đã sẵn sàng",
-    "Error": "Xử lý không thành công"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Quy trình với AI",
-    "Queuing": "Đang xếp hàng...",
-    "ProcessingWithTime": "Đang xử lý... {{sec}}s",
-    "Describe": "Mô tả hình ảnh",
-    "DescribeSub": "Trong ảnh chụp màn hình này có gì?",
-    "Ocr": "Trích xuất văn bản (OCR)",
-    "OcrSub": "Đọc tất cả văn bản hiển thị",
-    "Custom": "Lời nhắc tùy chỉnh",
-    "CustomPlaceholder": "Hỏi bất cứ điều gì về hình ảnh này...",
-    "ResultLabel": "Kết quả AI",
-    "Description": "Sự miêu tả",
-    "ExtractedText": "Văn bản được trích xuất",
-    "Analysis": "Phân tích",
-    "PipelineError": "Quá trình xử lý AI không thành công. Vui lòng thử lại.",
-    "UnknownError": "Lỗi không xác định"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Đang đọc tập tin...",
-      "Executing": "Đang thực hiện...",
-      "Running": "Đang chạy...",
-      "Input": "đầu vào",
-      "Output": "đầu ra",
-      "Pattern": "Mẫu:",
-      "ShowDetails": "Hiển thị chi tiết",
-      "AndMoreLines": "... và {{count}} dòng khác"
-    },
-    "Streaming": {
-      "Thinking": "Đang suy nghĩ...",
-      "LongRunning": "Chạy lâu hơn bình thường",
-      "ToolStuck": "Công cụ có thể bị kẹt",
-      "ForceStop": "Buộc dừng",
-      "GeneratingResponse": "Đang tạo phản hồi...",
-      "RunningTool": "Đang chạy {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Yêu cầu cấp phép công cụ",
-      "Allow": "Cho phép một lần",
-      "AllowSession": "Cho phép phiên",
-      "Deny": "Từ chối",
-      "Allowed": "Cho phép",
-      "Denied": "Từ chối"
-    },
-    "Title": "Đặc vụ AI",
-    "GlobalTitle": "Đặc vụ AI",
-    "NewSession": "Phiên mới",
-    "Sessions": "Phiên",
-    "NoSessions": "Chưa có phiên nào. Bắt đầu một cuộc trò chuyện dưới đây.",
-    "SendPlaceholder": "Hỏi bất cứ điều gì... (Enter để gửi, Shift+Enter để xuống dòng)",
-    "SendButton": "Gửi",
-    "StopButton": "Dừng lại",
-    "NotConfigured": "Định cấu hình khóa API Claude trong Cài đặt → Tính năng AI để sử dụng Tác nhân.",
-    "GoToSettings": "Mở cài đặt",
-    "SessionCost": "Phiên: {inputTokens}_ vào /{outputTokens}_ ra mã thông báo",
-    "CommandHelp": "Các lệnh: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "Hỏi",
-      "Code": "Mã số",
-      "Plan": "Kế hoạch"
-    },
-    "Model": {
-      "Haiku": "thơ haiku",
-      "Sonnet": "bài sonnet",
-      "Opus": "tác phẩm"
-    },
-    "QuickAction": {
-      "Summarize": "Tóm tắt bản ghi này",
-      "ActionItems": "Tìm mục hành động",
-      "DraftEmail": "Dự thảo email theo dõi"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "Bạn có thể giúp gì cho tôi?",
-      "HelpAnalyze": "Giúp tôi phân tích các bản ghi gần đây của tôi"
-    },
-    "AssetContext": "Bối cảnh: {{name}}"
   }
 }

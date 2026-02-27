@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "Build mula sa App Store",
     "DirectBuild": "Direktang Build",
-    "SubtitleBadge": "Snap Recorder at Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Tulungan kaming isalin ang SeaMeet →",
     "Loading": "Naglo-load...",
-    "HelpTranslate": "Tulungan kaming isalin ang SeaMeet →"
+    "SubtitleBadge": "Snap Recorder at Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Produktibidad",
-    "Social": "Panlipunan",
-    "Gaming": "Paglalaro",
-    "Recording": "Pagre-record",
-    "Browsers": "Mga browser",
-    "BrowserBased": "Base sa browser"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Iba pa",
+      "Skip": "Laktawan",
+      "Submit": "Isumite",
+      "Title": "Tanong",
+      "TypeResponse": "I-type ang iyong tugon..."
+    },
+    "AssetContext": "Konteksto: {{name}}",
+    "CommandHelp": "Mga utos: /new · /clear · /cost · /help",
+    "GlobalTitle": "Ahente ng AI",
+    "GoToSettings": "Buksan ang Mga Setting",
+    "Mode": {
+      "Ask": "Magtanong",
+      "Code": "Code",
+      "Plan": "Plano"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Soneto"
+    },
+    "NewSession": "Bagong session",
+    "NoSessions": "Wala pang session. Magsimula ng pag-uusap sa ibaba.",
+    "NotConfigured": "Mag-configure ng Claude API key sa Mga Setting → Mga Feature ng AI para magamit ang Ahente.",
+    "Permission": {
+      "Allow": "Payagan Minsan",
+      "Allowed": "Pinayagan",
+      "AllowSession": "Payagan para sa Session",
+      "Denied": "Tinanggihan",
+      "Deny": "Tanggihan",
+      "Title": "Kahilingan ng Pahintulot sa Tool"
+    },
+    "Plan": {
+      "Approve": "Aprubahan ang Plano",
+      "DefaultFeedback": "Hiniling ng user ang mga pagbabago",
+      "Description": "Ang ahente ay naghanda ng isang plano sa itaas at kailangan ng iyong pag-apruba upang magpatuloy.",
+      "FeedbackPlaceholder": "Ilarawan kung anong mga pagbabago ang gusto mo...",
+      "PlanDetails": "Mga detalye ng plano",
+      "RequestChanges": "Humiling ng mga Pagbabago",
+      "RequestedPermissions": "Hiniling na mga pahintulot:",
+      "SendFeedback": "Magpadala ng Feedback",
+      "Title": "Pagsusuri ng Plano"
+    },
+    "QuickAction": {
+      "ActionItems": "Maghanap ng mga item ng aksyon",
+      "DraftEmail": "Draft follow-up na email",
+      "Summarize": "Ibuod ang recording na ito"
+    },
+    "SendButton": "Ipadala",
+    "SendPlaceholder": "Magtanong ng kahit ano... (Enter para ipadala, Shift+Enter para sa bagong linya)",
+    "SessionCost": "Session: {{inputTokens}} in /{{outputTokens}} out token",
+    "Sessions": "Mga session",
+    "StopButton": "Tumigil ka",
+    "Streaming": {
+      "ForceStop": "Pilit na huminto",
+      "GeneratingResponse": "Bumubuo ng tugon...",
+      "LongRunning": "Tumatakbo nang mas mahaba kaysa karaniwan",
+      "RunningTool": "Tumatakbo {{tool}}...",
+      "Thinking": "Iniisip...",
+      "ToolStuck": "Maaaring natigil ang tool"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Tulungan akong suriin ang aking mga kamakailang pag-record",
+      "WhatCanYouDo": "Ano ang maitutulong mo sa akin?"
+    },
+    "Title": "Ahente ng AI",
+    "ToolCall": {
+      "AndMoreLines_one": "... at {{count}} pang linya",
+      "AndMoreLines_other": "... at {{count}} pang linya",
+      "Executing": "Isinasagawa...",
+      "Input": "Input",
+      "Output": "Output",
+      "Pattern": "Pattern:",
+      "Reading": "Binabasa ang file...",
+      "ShowDetails": "Ipakita ang mga detalye"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} na mga aksyon",
+      "Actions_other": "{{count}} na mga aksyon",
+      "Completed_one": "{{count}} natapos",
+      "Completed_other": "{{count}} natapos",
+      "Running_one": "{{count}} tumatakbo",
+      "Running_other": "{{count}} tumatakbo"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Hindi pinagana",
+    "DisabledMsg": "Naka-disable ang AI Agent & Cowork. Paganahin ito sa Mga Setting → AI Agent at Cowork.",
+    "DisabledTabHint": "Ang AI Agent ay hindi pinagana — paganahin ito sa Mga Setting → AI Agent at Cowork",
+    "EnableToggle": "I-enable ang AI Agent at Cowork",
+    "EnableToggleDesc": "Nangangailangan ng Claude API Key",
+    "MenuItem": "Ahente ng AI at Katrabaho",
+    "PageTitle": "Ahente ng AI at Katrabaho",
+    "SectionTitle": "Ahente ng AI at Katrabaho"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Gemini API Key",
+    "ApiKeySection": "Gemini API Key",
+    "AutomationSection": "Automation",
+    "AutoSummary": "Awtomatikong bumuo ng buod",
+    "AutoSummaryDesc": "Tumatakbo pagkatapos ng bawat pag-record",
+    "ClaudeKey": {
+      "ClearKey": "Alisin ang naka-save na key",
+      "CliInstalled": "Naka-install ({{version}})",
+      "CliInstallLink": "I-install ang Claude Code →",
+      "CliNotInstalled": "Claude CLI ay hindi natagpuan",
+      "CliSection": "Claude Code CLI",
+      "GetKeyLink": "Kumuha ng API key mula sa Anthropic Console →",
+      "HideKey": "Itago ang susi",
+      "KeyInvalid": "Di-wastong key",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (naka-save)",
+      "KeyTesting": "Pagsubok...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Mabilis at mura",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Pinaka may kakayahan",
+      "ModelSection": "Default na Modelo ng Claude",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Inirerekomenda · Balanse",
+      "QuotaLoading": "Nilo-load ang quota...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} na token ang natitira",
+      "QuotaResetDate": "Nagre-reset sa {{date}}",
+      "Saving": "Nagse-save...",
+      "Section": "Claude API Key (Agent)",
+      "ShowKey": "Ipakita ang susi",
+      "SourceByok": "Ang iyong API key (BYOK)",
+      "SourceCli": "Claude Code CLI",
+      "SourceKeyServer": "Pinamamahalaan ng SeaMeet",
+      "SourceLabel": "Aktibong pinagmulan:",
+      "SourceNone": "Hindi naka-configure",
+      "TestKey": "I-save at I-verify"
+    },
+    "ClearKey": "Alisin ang naka-save na key",
+    "EnableToggle": "Paganahin ang mga buod na pinapagana ng AI",
+    "EnableToggleDesc": "Nangangailangan ng libreng Gemini API key",
+    "GetKeyLink": "Kumuha ng libreng API key mula sa Google AI Studio →",
+    "GroupTitle": "Mga Tampok ng AI",
+    "HideKey": "Itago ang susi",
+    "KeyInvalid": "Di-wastong key",
+    "KeyNotConfigured": "Walang key na na-configure",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (na-save)",
+    "KeyTesting": "Pagsubok...",
+    "KeyVerified": "Na-verify ang susi",
+    "ManagedKeyDesc": "Awtomatikong ibinibigay ang iyong API key. Walang kinakailangang configuration.",
+    "ManagedKeyStatus": "Pinamamahalaang key — ibinigay ng SeaMeet",
+    "MenuItem": "AI-Powered Summaries",
+    "ModelLabel": "Modelo ng Gemini",
+    "Models": {
+      "Gemini25Flash": "Gemini 2. Kidlat",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Sobrang mura",
+      "Gemini25FlashSub": "Ang pinakamurang stable na opsyon",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Pinakamahusay na matatag na pangangatwiran",
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Inirerekomenda · Mabilis + may kakayahang",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Pinakamataas na kakayahan"
+    },
+    "ModelSection": "Modelo ng AI",
+    "PageTitle": "Mga Tampok ng AI",
+    "QuotaLoading": "Nilo-load ang quota...",
+    "QuotaRefresh": "I-refresh ang quota",
+    "QuotaRemaining": "{{remaining}} / {{limit}} na token ang natitira",
+    "QuotaResetDate": "Nagre-reset sa {{date}}",
+    "QuotaSection": "Quota sa Paggamit",
+    "Saving": "Nagse-save...",
+    "SelectedModel": "Napili: {{model}}",
+    "ShowKey": "Ipakita ang susi",
+    "TestKey": "I-save at I-verify"
+  },
+  "AISummary": {
+    "Copy": "Kopyahin",
+    "EnableRequired": "Paganahin ang Mga Feature ng AI sa Mga Setting → Mga Tampok ng AI upang makita ang mga buod ng AI.",
+    "Error": "Nabigong i-load ang buod: {{error}}",
+    "Export": {
+      "HeadingActionItems": "Mga Aksyon na Item",
+      "HeadingKeyDecisions": "Mga Pangunahing Desisyon",
+      "HeadingSummary": "Buod",
+      "HeadingTranscription": "Transkripsyon"
+    },
+    "ExportJson": "Kopyahin bilang JSON",
+    "ExportMarkdown": "Kopyahin bilang Markdown",
+    "ExportSrt": "Kopyahin bilang SRT",
+    "GeminiLiveTranscript": "Gemini Live",
+    "Generate": "Bumuo ng Buod",
+    "Maximize": "Palawakin sa buong view",
+    "Minimize": "I-minimize",
+    "NoActions": "Walang natukoy na item ng pagkilos.",
+    "NoChapters": "Walang available na mga kabanata.",
+    "NoDecisions": "Walang natukoy na mahahalagang desisyon.",
+    "NoSummary": "Wala pang buod ng AI.",
+    "NoSummaryText": "Hindi available ang buod.",
+    "NoTranscript": "Hindi available ang transcript.",
+    "PipelineError": "Nabigo ang pagproseso ng AI. Subukang mag-regenerate.",
+    "PipelineTranscript": "AI Pipeline",
+    "Processing": "Bumubuo ng buod...",
+    "Queued": "Nakapila para sa pagproseso...",
+    "Regenerate": "Buuin muli ang buod",
+    "Retry": "Subukan muli",
+    "SeekToTimestamp": "Hanapin ang timestamp na ito",
+    "SetupRequired": "I-configure ang iyong Gemini API key sa Mga Setting → Mga Tampok ng AI upang paganahin ang mga buod ng AI.",
+    "Tab": {
+      "ActionItems": "Mga aksyon",
+      "Chapters": "Mga kabanata",
+      "KeyDecisions": "Mga desisyon",
+      "Summary": "Buod",
+      "Transcription": "Transcript"
+    },
+    "TabTitle": "Buod ng AI",
+    "Topics": "Mga Paksa:",
+    "Speakers": "Mga Nagsasalita",
+    "MergeInto": "Pagsama sa…",
+    "ApplyMerge": "Ilapat",
+    "EditSegmentSpeaker": "I-click upang muling italaga ang segment na ito"
   },
   "App": {
     "FailedToEnableFlashback": "Hindi ma-enable ang balik-tanaw: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "Lahat ng apps",
-    "Teams": "Microsoft Teams (Trabaho at Paaralan)",
-    "TeamsConsumer": "Microsoft Teams (Pansarili)",
-    "TeamsWeb": "Microsoft Teams (Web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Matapang na Browser",
+    "CallOfDuty": "Tawag ng Tungkulin",
     "Chrome": "Chrome Browser",
-    "Edge": "Edge Browser",
-    "Firefox": "Firefox Browser",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord (Web)",
+    "Edge": "Edge Browser",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Firefox Browser",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera Browser",
+    "Other": "Ibang apps",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (Web)",
-    "WindowsSoundRecorder": "Windows Sound Recorder",
-    "Other": "Ibang apps",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox Game Bar",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam Chat",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera Browser",
-    "Brave": "Matapang na Browser",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "Tawag ng Tungkulin",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Trabaho at Paaralan)",
+    "TeamsConsumer": "Microsoft Teams (Pansarili)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (Web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (Web)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows Sound Recorder",
+    "XboxGameBar": "Xbox Game Bar",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Pagkuha ng audio",
+    "AudioMix": "Mix ng Audio",
+    "AudioSource": "Pinagmulan ng Audio:",
+    "Microphone": "Mikropono",
+    "MicrophoneGainWarning": "Ang mataas na gain ng mikropono ay maaaring makahuli ng tunog mula sa speaker kahit nakapatay ang \"System Audio\". Gamitin ang headphones o bawasan ang microphone gain para sa mga pagre-record na audio lang.",
+    "RecordingDefaultMicrophone": "Default na Mikropono",
+    "RecordingSettings": "Mga setting ng pagre-record",
+    "RefreshMicrophoneList": "I-refresh ang listahan ng mikropono"
   },
   "AutoDetectInfoModal": {
-    "Title": "Auto-Detect ng mga miting",
-    "Subtitle": "Huwag Mamiss ang Meeting Muli",
-    "Description": "Ang Auto-Detect ay awtomatikong nagsisimula sa pagre-record kapag sumali ka sa mga miting, kaya hindi mo kailangang kalimutan ang pindutin ang record.",
-    "PopularAppsTitle": "Mga Popular na Apps na Natuklasan",
-    "MoreApps": "+40 pa",
-    "HowItWorksTitle": "Paano Ito Gumagana",
-    "Step1Title": "I-activate ang Auto-Detect",
-    "Step1Desc": "I-on ang toggle at piliin kung aling mga app ang dapat imonitor",
-    "Step2Title": "Sumali sa isang miting",
-    "Step2Desc": "I-open ang Zoom, Teams, Meet, o anumang suportadong app",
-    "Step3Title": "Auto-ire-record",
-    "Step3Desc": "Ang SeaMeet ay awtomatikong nagsisimula sa pagre-record. Tapos na!",
-    "Tip1Title": "I-configure bawat App",
-    "Tip1Desc": "I-set ang \"Always Record\" para sa mga trabaho, \"Ask Every Time\" para sa mga personal na tawag",
-    "Tip2Title": "Maramihang Paraan ng Deteksyon",
-    "Tip2Desc": "Ginagamit ang mikropono, mga pamagat ng bintana, at browser na URL para sa katumpakan",
-    "GotIt": "Naiintindihan ko na",
-    "OpenSettings": "Buksan ang Settings",
     "ControlLabel": "AUTO DETECT",
-    "LearnAbout": "Alamin ang tungkol sa Auto-Detect"
+    "Description": "Ang Auto-Detect ay awtomatikong nagsisimula sa pagre-record kapag sumali ka sa mga miting, kaya hindi mo kailangang kalimutan ang pindutin ang record.",
+    "GotIt": "Naiintindihan ko na",
+    "HowItWorksTitle": "Paano Ito Gumagana",
+    "LearnAbout": "Alamin ang tungkol sa Auto-Detect",
+    "MoreApps": "+40 pa",
+    "OpenSettings": "Buksan ang Settings",
+    "PopularAppsTitle": "Mga Popular na Apps na Natuklasan",
+    "Step1Desc": "I-on ang toggle at piliin kung aling mga app ang dapat imonitor",
+    "Step1Title": "I-activate ang Auto-Detect",
+    "Step2Desc": "I-open ang Zoom, Teams, Meet, o anumang suportadong app",
+    "Step2Title": "Sumali sa isang miting",
+    "Step3Desc": "Ang SeaMeet ay awtomatikong nagsisimula sa pagre-record. Tapos na!",
+    "Step3Title": "Auto-ire-record",
+    "Subtitle": "Huwag Mamiss ang Meeting Muli",
+    "Tip1Desc": "I-set ang \"Always Record\" para sa mga trabaho, \"Ask Every Time\" para sa mga personal na tawag",
+    "Tip1Title": "I-configure bawat App",
+    "Tip2Desc": "Ginagamit ang mikropono, mga pamagat ng bintana, at browser na URL para sa katumpakan",
+    "Tip2Title": "Maramihang Paraan ng Deteksyon",
+    "Title": "Auto-Detect ng mga miting"
   },
   "AutoRecording": {
-    "Title": "Awtomatikong matukoy ang mga miting",
-    "DetectApps": "Matukoy ang mga miting mula sa:",
-    "Enabled": "Naka-awtomatikong matukoy",
-    "Disabled": "Hindi awtomatikong matukoy",
-    "MeetingDetected": "Natuklasan ang miting ng {{{app}}}",
-    "MeetingEnded": "Natapos na ang miting",
-    "MeetingFallbackName": "Pagtitipon",
     "BugReport": "Nakakita ng bug? Iulat ito sa seameet@seasalt.ai",
     "BugReportTitle": "Mag-ulat ng isang bug",
+    "Disabled": "Hindi awtomatikong matukoy",
+    "Enabled": "Naka-awtomatikong matukoy",
     "HelpWanted": "Kung nais mong humiling ng bagong app na idagdag, o napatunayan mong gumagana ang isang app, ipagbigay-alam sa amin sa seameet@seasalt.ai. Maraming salamat sa iyong tulong upang mapabuti pa ang app na ito!",
-    "HelpWantedTitle": "Tulungan Mo Kaming Mapabuti"
+    "HelpWantedTitle": "Tulungan Mo Kaming Mapabuti",
+    "MeetingDetected": "Natuklasan ang miting ng {{{app}}}",
+    "MeetingEnded": "Natapos na ang miting",
+    "MeetingFallbackName": "Pagtitipon"
   },
   "BlackHole": {
-    "NotInstalled": "Kailangan ang BlackHole para sa System Audio",
-    "InstallInstructions": "Upang makarecord ng system audio sa macOS, kailangan mong i-install ang BlackHole virtual audio driver:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "Kopyahin ang utos",
-    "Or": "o",
-    "DownloadManually": "I-download mula sa existential.audio",
-    "SetupTitle": "I-set up ang Multi-Output Device",
-    "SetupStep1": "Buksan ang Audio MIDI Setup (sa Applications → Utilities)",
-    "SetupStep2": "I-click ang '+' para piliin ang 'Create Multi-Output Device'",
-    "SetupStep3": "Suriin ang iyong mga speaker/headphones AT ang 'BlackHole 2ch'",
-    "SetupStep4": "I-right click ang Multi-Output at piliin ang 'Use This Device For Sound Output'",
-    "SetupStep5": "Reboot kung ang BlackHole ay hindi lilitaw sa listahan ng device",
-    "SetupStep6": "Piliin ang 'BlackHole 2ch' bilang iyong pinagkukunan ng audio sa app na ito",
-    "CheckAgain": "Suriin Muli",
     "Cancel": "Kanselahin",
-    "LearnMore": "Matuto pa tungkol sa Multi-Output Devices"
+    "CheckAgain": "Suriin Muli",
+    "CopyCommand": "Kopyahin ang utos",
+    "DownloadManually": "I-download mula sa existential.audio",
+    "InstallInstructions": "Upang makarecord ng system audio sa macOS, kailangan mong i-install ang BlackHole virtual audio driver:",
+    "LearnMore": "Matuto pa tungkol sa Multi-Output Devices",
+    "NotInstalled": "Kailangan ang BlackHole para sa System Audio",
+    "Or": "o",
+    "SetupTitle": "I-set up ang Multi-Output Device"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Natuklasan ang Bluetooth mikropono",
-    "Description": "Maaaring pilitin ng iyong OS ang iyong audio sa \"Modo para sa Komunikasyon\" kapag gumagamit ng Bluetooth mikropono, na maaaring magdulot ng ingay na baluktot o problema sa lakas habang nagre-record.",
-    "RecommendationLabel": "Rekomendasyon:",
-    "Recommendation": "Lumipat sa isang mikropono na hindi Bluetooth (tulad ng built-in na mikropono o isang USB mikropono) para sa mas mahusay na kalidad ng pagre-record.",
+    "CloseAriaLabel": "Isara ang Bluetooth na babala",
     "CloseTitle": "Isara ang babala",
-    "CloseAriaLabel": "Isara ang Bluetooth na babala"
+    "Description": "Maaaring pilitin ng iyong OS ang iyong audio sa \"Modo para sa Komunikasyon\" kapag gumagamit ng Bluetooth mikropono, na maaaring magdulot ng ingay na baluktot o problema sa lakas habang nagre-record.",
+    "Recommendation": "Lumipat sa isang mikropono na hindi Bluetooth (tulad ng built-in na mikropono o isang USB mikropono) para sa mas mahusay na kalidad ng pagre-record.",
+    "RecommendationLabel": "Rekomendasyon:",
+    "Title": "⚠️ Natuklasan ang Bluetooth mikropono"
+  },
+  "Common": {
+    "ApplyName": "Ilapat ang pangalan",
+    "Cancel": "Kanselahin",
+    "Close": "Isara",
+    "Configure": "I-configure",
+    "Delete": "Burahin",
+    "Done": "Tapos na",
+    "Expand": "Palawakin",
+    "FileNameCopiedWithRenameHint": "{{fileName}} nakopya sa clipboard. I-double click upang baguhin ang pangalan ng file.",
+    "Loading": "Naglo-load…",
+    "Minimize": "I-minimize sa bilog",
+    "Open": "Buksan",
+    "Or": "O",
+    "Processing": "Nagpoproseso...",
+    "Recording": "Pagre-rekord",
+    "Save": "I-save",
+    "Saved": "Naka-save",
+    "Saving": "Nagsi-save…",
+    "Screenshot": "Screenshot",
+    "Send": "Ipadala",
+    "Starting": "Nagsisimula na...",
+    "UnknownApp": "Hindi kilalang app"
   },
   "DeletePrompt": {
-    "Title": "Burahin ang file",
-    "Message": "Sigurado ka bang nais mong burahin ang file na ito? Hindi na maaaring balikan ang aksyong ito.",
     "Cancel": "Kanselahin",
-    "Confirm": "Burahin"
+    "Confirm": "Burahin",
+    "Message": "Sigurado ka bang nais mong burahin ang file na ito? Hindi na maaaring balikan ang aksyong ito.",
+    "Title": "Burahin ang file"
   },
   "Errors": {
-    "NoAudioSources": "Walang available na audio source",
-    "NoSystemAudioSources": "Walang magagamit na system audio source",
+    "AutoRecordingFailed": "Nabigong i-toggle ang auto-recording",
     "FailedToStartRecording": "Nabigong simulan ang pagre-record: {{message}}",
     "FailedToStartVideoRecording": "Nabigong simulan ang pagre-record ng video: {{message}}",
-    "AutoRecordingFailed": "Nabigong i-toggle ang auto-recording"
+    "NoAudioSources": "Walang available na audio source",
+    "NoSystemAudioSources": "Walang magagamit na system audio source",
+    "SaveFailed": "Nabigong i-save ang recording: {{message}}"
   },
   "Events": {
-    "Title": "Mga kaganapan",
-    "MarkToolbarButton": "Mga Nakasaad na Kaganapan",
+    "EmptyWhenNotRecording": "Walang mga kaganapan na magagamit para sa eentong ito.",
+    "EmptyWhileRecording": "\"Wala pang mga kaganapan. Pindutin ang 'Mark' habang nagre-record upang magdagdag.\"",
+    "EventLabel": "\"Event {{number}}\"",
     "MarkButton": "Markahan",
     "Marked": "Nakalagay!",
-    "EventLabel": "\"Event {{number}}\"",
-    "EmptyWhileRecording": "\"Wala pang mga kaganapan. Pindutin ang 'Mark' habang nagre-record upang magdagdag.\"",
-    "EmptyWhenNotRecording": "Walang mga kaganapan na magagamit para sa eentong ito.",
-    "DeletePrompt": {
-      "Title": "Burahin ang kaganapan",
-      "Message": "\"Sigurado Ka bang gusto mong burahin ang kaganapan na ito? Hindi na ito maibabalik.\"",
-      "Cancel": "Kanselahin",
-      "Confirm": "Burahin"
-    }
+    "MarkToolbarButton": "Mga Nakasaad na Kaganapan",
+    "Title": "Mga kaganapan"
+  },
+  "FileImport": {
+    "BrowseFiles": "Mag-browse ng mga file",
+    "DragDropFiles": "I-drag at i-drop ang iyong audio, video, at mga larawan dito",
+    "DragDropSubtitle": "I-drag at i-drop ang audio, video, at mga larawan dito",
+    "ImportMedia": "Mag-import ng Media",
+    "Supported": "Suportado",
+    "SupportedFormats": "Ang sinusuportahan: MP3, WAV, M4A, WebM, OGG, PNG, JPG, at higit pa",
+    "VideoImportCopying": "Kinokopya ang video file...",
+    "VideoImportSaving": "Sine-save ang video file...",
+    "VideoUnsupported": "Maaaring hindi ma-play ang format ng video na ito sa app. Ia-import pa rin ang file."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Audio balik-tanaw",
+    "CannotChangeWhileRecording": "Hindi maaaring baguhin ang mode ng balik-tanaw habang nagre-record",
+    "DisableFlashback": "I-disable ang balik-tanaw",
     "Label": "FLASHBACK",
     "LearnAbout": "Matuto tungkol sa Flashback",
-    "DisableFlashback": "I-disable ang balik-tanaw",
-    "AudioFlashback": "Audio balik-tanaw",
-    "ScreenFlashback": "Screen balik-tanaw",
-    "TitleReady": "I-click upang ipakita ang Flashback UI",
-    "TitleCharging": "Pagcha-charge ng balik-tanaw",
-    "TitleInit": "I-click upang simulan ang pag-charge",
+    "Off": "Patay",
     "Ready": "Handa",
     "ReadyQuestion": "Handa na?",
-    "Off": "Patay",
-    "CannotChangeWhileRecording": "Hindi maaaring baguhin ang mode ng balik-tanaw habang nagre-record",
-    "ToggleLabel": "I-toggle ang balik-tanaw",
-    "SettingsLabel": "Pagre-record ng balik-tanaw"
+    "ScreenFlashback": "Screen balik-tanaw",
+    "SettingsLabel": "Pagre-record ng balik-tanaw",
+    "TitleCharging": "Pagcha-charge ng balik-tanaw",
+    "TitleInit": "I-click upang simulan ang pag-charge",
+    "TitleReady": "I-click upang ipakita ang Flashback UI",
+    "ToggleLabel": "I-toggle ang balik-tanaw"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "audio",
+    "Buffering": "Buffer",
+    "BufferingMoment": "Sandali ng buffer...",
+    "Capturing": "Kinukunan...",
+    "DescCharging": "Inihahanda ang iyong {{duration}}-segundong bintana... halos handa nang kunin ang maaaring mong makaligtaan. {{progress}}% na tapos.",
+    "DescInit": "I-click ang 'Ready?' upang sabihan ang SeaMeet na simulan ang 'pag-alaala' sa nakaraan.",
+    "DescNone": "Pumili sa mga mode ng balik-tanaw sa itaas upang paganahin ang pagre-record ng sandali.",
+    "DescReady": "Ang flashback ay nakatutok. Kapag pinindot mo ang Record, kasali ang nakalipas na {{duration}} segundo ng {{type}} — huwag nang magsisi sa isang nawalang sandali.",
+    "FillingBuffer": "Pinupuno ang {{duration}}s balak-tanaw buffer... {{progress}}%",
+    "FlashbackBuffering": "Buffering...",
+    "FlashbackCharging": "Nilalagay ang {{seconds}}s buffer… {{percent}}%",
+    "FlashbackChargingDescription": "Inihahanda ang iyong {{seconds}}-segundong window... {{percent}}% na tapos.",
+    "FlashbackInitAudio": "Ready to guard your audio? → Handa nang magbantay ng iyong audio?",
+    "FlashbackInitDescription": "I-click ang 'Ready?' upang sabihan ang SeaMeet na simulan ang 'pag-alaala' sa nakaraan.",
+    "FlashbackInitScreen": "Handa nang magbantay ng iyong screen?",
+    "FlashbackMismatch": "Hindi tugma ang mode ng flashback. Naka-record ang audio pero aktibo ang video na flashback. I-disable ang video na flashback.",
+    "FlashbackOff": "Naka-off ang balik-tanaw. Maaari kang magsimula ng normal na pagre-record anumang oras, o piliin ang mode ng balik-tanaw (audio o screen) sa itaas upang paganahin ang pag-iimbak ng heroikong sandali.",
+    "FlashbackPrivacy": "Your privacy is protected. Stored locally in RAM. → Protektado ang iyong pribasiya. Nakalocal nang nangyayari sa RAM.",
+    "FlashbackReady": "Huwag palampasin ang isang sandali.",
+    "FlashbackReadyDescription": "Naka-akyat ang balik-tanaw. Kasama ang nakaraang {{seconds}}s ng {{type}} kapag nagre-record ka.",
+    "FlashbackReadyQuestion": "Handa na?",
+    "KeepWindowVisible": "Panatilihing nakikita ang SeaMeet window kapag kumuha ng screenshot",
+    "NeverMissAMoment": "Huwag nang palampasin ang anumang sandali.",
+    "OpenFloater": "Open Floater → Buksan ang Floater",
+    "OpenLauncher": "Buksan ang Launcher",
+    "PrivacyDesc": "SeaMeet snapshots the past {{duration}}s of {{type}} in a ring buffer locally on your computer's RAM. → Sinusilip ng SeaMeet ang nakaraang {{duration}}s ng {{type}} sa isang ring buffer nang lokal sa RAM ng iyong computer.",
+    "PrivacyProtected": "Protektado ang iyong pribasiya.",
+    "Ready": "Ready? → Handa na?",
+    "ReadyToCapture": "Handang mangalap ang SeaMeet.",
+    "ReadyToGuard": "Handa ka nang magbantay sa iyong {{type}}?",
+    "RecordWithFlashback": "Magre-record gamit ang balik-tanaw",
+    "SaveFlashback": "I-save ang huling {{seconds}}-segundong flashback",
+    "SaveLastFlashback": "I-save ang huling {{duration}}-segundong flashback",
+    "SavingFlashback": "Nilalakad ang balik-tanaw…",
+    "Screen": "screen → screen",
+    "StartRecording": "Simulan ang Pagre-rekord",
+    "TakeScreenshot": "Kuhanan ng Screenshot"
   },
   "FlashbackIndicator": {
     "Buffering": "Buffering",
@@ -183,138 +463,145 @@
     "VideoReady": "Handang-handa na ang Bideo"
   },
   "FlashbackInfoModal": {
-    "Title": "balik-tanaw Pagre-record",
-    "Close": "Isara",
-    "Subtitle": "Ang Iyong Personal na Makina ng Panahon",
-    "SubtitleDesc": "Huwag palampasin muli ang isang mahalagang sandali—kumuha hanggang 2 minuto mula sa nakaraan, kahit na pagkatapos mangyari ito.",
+    "Benefits": {
+      "AlwaysReady": "Palaging handa",
+      "LocalOnly": "Local lamang (pribadong lokal lamang)",
+      "MultipleCaptures": "Maramihang mga kuha — nagpapatuloy ang buffer",
+      "NoPlan": "Walang kinakailangang plano",
+      "Offline": "Gumagana offline",
+      "Title": "Mga benepisyo"
+    },
     "BestFor": "Pinakamainam para sa:",
-    "VisualStates": {
-      "Title": "Mga Tagapagpahiwatig ng Katayuang Visual",
-      "OffLabel": "NAKA-OFF",
-      "Off": "Gray, static na huwad na anyo",
-      "ChargingLabel": "NAGCHA-CHARGE",
-      "Charging": "Amber/Pilak, napupuno ang buffer",
-      "ReadyLabel": "HANDANG",
-      "Ready": "Berde, punong buffer"
-    },
-    "SpecLabel": {
-      "Buffer": "Buffer",
-      "Memory": "Memory",
-      "Captures": "Mga kuha"
-    },
-    "Modes": {
-      "Title": "Dalawang mode ng balik-tanaw",
-      "Audio": {
-        "Title": "Balik-tanaw ng Audio",
-        "Buffer": "30 segundo (naka-set)",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "mikropono at/o system audio",
-        "BestFor": "Pagtitipon, tawag sa telepono, pakikipag-usap sa boses na pagre-record"
-      },
-      "Video": {
-        "Title": "Video Balik-tanaw",
-        "Buffer": "10s, 30s, 60s, 90s, o 120s",
-        "Memory": "50-600 MB RAM",
-        "Captures": "I-screen ang video + audio",
-        "BestFor": "Presentasyon, mga highlight sa paglalaro, sesyon ng screen sharing, nilalaman ng biswal"
-      }
-    },
-    "HowItWorks": {
-      "Title": "Paano Ito Gumagana",
-      "Step1": {
-        "Title": "I-activate ang Flashback",
-        "Desc": "Pindutin ang button na FLASHBACK upang i-activate. Ang buffer ay awtomatikong magsisimulang mapuno."
-      },
-      "Step2": {
-        "Title": "Maghintay para sa Paghahanda",
-        "Desc": "Hintayin ang berdeng status. Dapat mapuno ang buffer hanggang 90% bago ka makapag-capture ng nakalipas."
-      },
-      "Step3": {
-        "Title": "Pindutin ang pagre-record",
-        "Desc": "Kapag may mahalagang nangyari, pindutin ang pagre-record. Kinukuha ng Flashback ang buffer at nagpapatuloy sa pagre-record pasulong."
-      }
-    },
-    "Scenarios": {
-      "Title": "Mga Praktikal na Sitwasyon",
-      "OhNo": {
-        "Title": "Ang \"Oh no!\" Na Sandali",
-        "Desc": "Sinasabi ng kasamahan ang isang malalim na bagay. Napapagtanto mong nais mong i-record ito. Pindutin ang Record → kinukuha ng Flashback ang huling 30 segundo (kasama na ang napaka-moment na iyon!)."
-      },
-      "Gaming": {
-        "Title": "Highlight sa paglalaro",
-        "Desc": "Magtagumpay sa isang kamangha-manghang combo. Agad na pindutin ang Record. Kinukuha ng Flashback ang gameplay bago ang combo + ang iyong reaksyon."
-      },
-      "Decision": {
-        "Title": "Mahahalagang Desisyon",
-        "Desc": "Ipinaliwanag ng abogado ang bahagi ng kontrata. Pindutin ang Record para makuha ang paliwanag. Maging isang buong, tumpak na tala na maaari mong i-replay later."
-      }
-    },
+    "Close": "Isara",
     "Comparison": {
-      "Title": "Flashback vs. Tradisyunal na Pagre-record",
+      "Capture": {
+        "Feature": "Kapitin ang Mga Sandali",
+        "Flashback": "Maaaring magsimula PAGKATAPOS ng sandali",
+        "Traditional": "Kung makalimutan, mawawala ito"
+      },
       "Header": {
         "Feature": "Mga katangian",
-        "Traditional": "Tradisyunal na Pagre-record",
-        "Flashback": "Flashback"
+        "Flashback": "Flashback",
+        "Traditional": "Tradisyunal na Pagre-record"
       },
       "Planning": {
         "Feature": "Pagpaplano",
-        "Traditional": "Dapat magsimula BAGO ang sandali",
-        "Flashback": "Hindi kailangan ng plano"
-      },
-      "Capture": {
-        "Feature": "Kapitin ang Mga Sandali",
-        "Traditional": "Kung makalimutan, mawawala ito",
-        "Flashback": "Maaaring magsimula PAGKATAPOS ng sandali"
+        "Flashback": "Hindi kailangan ng plano",
+        "Traditional": "Dapat magsimula BAGO ang sandali"
       },
       "Result": {
         "Feature": "Resulta",
-        "Traditional": "\"Sana na-record ko 'yan\"",
-        "Flashback": "\"Masaya ako na na-capture ko 'yan\""
-      }
-    },
-    "Benefits": {
-      "Title": "Mga benepisyo",
-      "NoPlan": "Walang kinakailangang plano",
-      "AlwaysReady": "Palaging handa",
-      "Offline": "Gumagana offline",
-      "LocalOnly": "Local lamang (pribadong lokal lamang)",
-      "MultipleCaptures": "Maramihang mga kuha — nagpapatuloy ang buffer"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "Audio Balik-tanaw para sa Araw-araw na Paggamit",
-        "Desc": "Gamitin ang 30-segundong Audio Balik-tanaw para sa mga pagtitipon at tawag. Mababang paggamit ng memorya, maaasahang nagtatrabaho."
+        "Flashback": "\"Masaya ako na na-capture ko 'yan\"",
+        "Traditional": "\"Sana na-record ko 'yan\""
       },
-      "VideoSpecial": {
-        "Title": "Video Balik-tanaw para sa mga Natatanging Sandali",
-        "Desc": "I-enable ang Video Balik-tanaw (30s buffer) para sa mga presentasyon, mga highlight sa paglalaro, o anumang nilalaman ng biswal na nais mong panatilihin."
-      },
-      "Memory": {
-        "Title": "Pamamahala ng Memorya",
-        "Desc": "Sa 2 minutong video balik-tanaw: ang buong aplikasyon ay gumagamit ng mas mababa sa 1 GB RAM."
-      }
+      "Title": "Flashback vs. Tradisyunal na Pagre-record"
     },
     "GotIt": "Naiintindihan ko",
-    "OpenSettings": "Buksan ang settings"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Pindutin ang button na FLASHBACK upang i-activate. Ang buffer ay awtomatikong magsisimulang mapuno.",
+        "Title": "I-activate ang Flashback"
+      },
+      "Step2": {
+        "Desc": "Hintayin ang berdeng status. Dapat mapuno ang buffer hanggang 90% bago ka makapag-capture ng nakalipas.",
+        "Title": "Maghintay para sa Paghahanda"
+      },
+      "Step3": {
+        "Desc": "Kapag may mahalagang nangyari, pindutin ang pagre-record. Kinukuha ng Flashback ang buffer at nagpapatuloy sa pagre-record pasulong.",
+        "Title": "Pindutin ang pagre-record"
+      },
+      "Title": "Paano Ito Gumagana"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Pagtitipon, tawag sa telepono, pakikipag-usap sa boses na pagre-record",
+        "Buffer": "30 segundo (naka-set)",
+        "Captures": "mikropono at/o system audio",
+        "Memory": "~30-50 MB RAM",
+        "Title": "Balik-tanaw ng Audio"
+      },
+      "Title": "Dalawang mode ng balik-tanaw",
+      "Video": {
+        "BestFor": "Presentasyon, mga highlight sa paglalaro, sesyon ng screen sharing, nilalaman ng biswal",
+        "Buffer": "10s, 30s, 60s, 90s, o 120s",
+        "Captures": "I-screen ang video + audio",
+        "Memory": "50-600 MB RAM",
+        "Title": "Video Balik-tanaw"
+      }
+    },
+    "OpenSettings": "Buksan ang settings",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "Ipinaliwanag ng abogado ang bahagi ng kontrata. Pindutin ang Record para makuha ang paliwanag. Maging isang buong, tumpak na tala na maaari mong i-replay later.",
+        "Title": "Mahahalagang Desisyon"
+      },
+      "Gaming": {
+        "Desc": "Magtagumpay sa isang kamangha-manghang combo. Agad na pindutin ang Record. Kinukuha ng Flashback ang gameplay bago ang combo + ang iyong reaksyon.",
+        "Title": "Highlight sa paglalaro"
+      },
+      "OhNo": {
+        "Desc": "Sinasabi ng kasamahan ang isang malalim na bagay. Napapagtanto mong nais mong i-record ito. Pindutin ang Record → kinukuha ng Flashback ang huling 30 segundo (kasama na ang napaka-moment na iyon!).",
+        "Title": "Ang \"Oh no!\" Na Sandali"
+      },
+      "Title": "Mga Praktikal na Sitwasyon"
+    },
+    "SpecLabel": {
+      "Buffer": "Buffer",
+      "Captures": "Mga kuha",
+      "Memory": "Memory"
+    },
+    "Subtitle": "Ang Iyong Personal na Makina ng Panahon",
+    "SubtitleDesc": "Huwag palampasin muli ang isang mahalagang sandali—kumuha hanggang 2 minuto mula sa nakaraan, kahit na pagkatapos mangyari ito.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Gamitin ang 30-segundong Audio Balik-tanaw para sa mga pagtitipon at tawag. Mababang paggamit ng memorya, maaasahang nagtatrabaho.",
+        "Title": "Audio Balik-tanaw para sa Araw-araw na Paggamit"
+      },
+      "Memory": {
+        "Desc": "Sa 2 minutong video balik-tanaw: ang buong aplikasyon ay gumagamit ng mas mababa sa 1 GB RAM.",
+        "Title": "Pamamahala ng Memorya"
+      },
+      "VideoSpecial": {
+        "Desc": "I-enable ang Video Balik-tanaw (30s buffer) para sa mga presentasyon, mga highlight sa paglalaro, o anumang nilalaman ng biswal na nais mong panatilihin.",
+        "Title": "Video Balik-tanaw para sa mga Natatanging Sandali"
+      }
+    },
+    "Title": "balik-tanaw Pagre-record",
+    "VisualStates": {
+      "Charging": "Amber/Pilak, napupuno ang buffer",
+      "ChargingLabel": "NAGCHA-CHARGE",
+      "Off": "Gray, static na huwad na anyo",
+      "OffLabel": "NAKA-OFF",
+      "Ready": "Berde, punong buffer",
+      "ReadyLabel": "HANDANG",
+      "Title": "Mga Tagapagpahiwatig ng Katayuang Visual"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "\"Pagsisimula\"",
-    "AutoStartLabel": "\"Auto-start ng balik-tanaw\"",
+    "AutoStartAudio": "\"Balik-tanaw ng audio\"",
     "AutoStartDesc": "\"Kapag nagbukas ang app, awtomatikong simulan ang balik-tanaw\"",
     "AutoStartDisable": "\"I-disable ang auto-start\"",
-    "AutoStartAudio": "\"Balik-tanaw ng audio\"",
+    "AutoStartLabel": "\"Auto-start ng balik-tanaw\"",
     "AutoStartScreen": "\"Balik-tanaw na bideo\"",
-    "BufferTitle": "\"Buffer\"",
-    "BufferDurationLabel": "\"Tagal ng buffer\"",
     "BufferDurationDesc": "\"Kung gaano katagal panatilihin ang buffered na audio at bideo\"",
-    "DurationOption": "\"{{duration}}s\""
+    "BufferDurationLabel": "\"Tagal ng buffer\"",
+    "BufferTitle": "\"Buffer\"",
+    "DurationOption": "\"{{duration}}s\"",
+    "StartupTitle": "\"Pagsisimula\""
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Ang flashback buffer ay walang laman. Subukan muli sa isang sandali.",
+    "EnableFlashback": "I-enable ang flashback upang mag-save ng isang sandali.",
+    "FailedToSave": "Nabigo ang pag-save ng flashback buffer.",
+    "SavedFlashback": "Na-save ang flashback sa mga pagre-record.",
+    "StillCharging": "Ang flashback buffer ay patuloy na nagcha-charge."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Isara ang tooltip",
-    "BluetoothMicTitle": "⚠️ Bluetooth na Mikropono",
     "BluetoothMicDesc": "Maaaring pilitin ng iyong OS ang \"Communications Mode,\" na maaaring magdulot ng distortion.",
     "BluetoothMicTipLabel": "Tip:",
     "BluetoothMicTipText": "Gamitin ang mikrofono na hindi Bluetooth para sa mas magandang kalidad",
+    "BluetoothMicTitle": "⚠️ Bluetooth na Mikropono",
+    "CloseTooltip": "Isara ang tooltip",
     "FailedToLoadScreens": "Nabigo ang pag-load ng mga screen. Pakisubukang muli.",
     "FailedToLoadWindows": "Nabigo ang pag-load ng mga window. Pakisubukang muli.",
     "MicrophoneMuted": "Mikropono: Naka-mute",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "Walang nakitang mikropono",
     "NoScreensDetected": "Walang mga screen na natuklasan",
     "NoWindowsDetected": "Walang nahanap na mga window. Buksan ang isang window ng app at i-refresh.",
+    "RegionReady": "Handa na ang rehiyon",
+    "RegionRequired": "Pumili ng rehiyon",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "Hindi available ang pagpili ng screen sa platform na ito.",
     "SelectMicrophone": "Piliin ang mikrofono",
+    "SelectRegion": "Pumili ng rehiyon",
+    "SelectScreen": "Pumili ng isang display",
+    "SelectWindow": "Pumili ng isang window",
     "StartRecording": "Simulan ang pagre-record",
     "SystemAudioOff": "Sistema ng audio: OFF",
     "SystemAudioOn": "System Audio: NAKA-ON",
     "WaitingForRegion": "Naghihintay sa region…",
     "WindowNotAvailable": "Hindi available ang pagpili ng window sa platform na ito.",
-    "SelectScreen": "Pumili ng isang display",
-    "SelectWindow": "Pumili ng isang window",
-    "WindowRequired": "Piliin ang isang window bago mag-umpisa ng pagre-record",
-    "RegionReady": "Handa na ang rehiyon",
-    "SelectRegion": "Pumili ng rehiyon",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "Pumili ng rehiyon"
+    "WindowRequired": "Piliin ang isang window bago mag-umpisa ng pagre-record"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Fullscreen Pinili",
-    "ClickToRecord": "Pindutin ang Start Recording sa floating bar upang simulang i-record ang napiling bahagi"
+    "ClickToRecord": "Pindutin ang Start Recording sa floating bar upang simulang i-record ang napiling bahagi",
+    "FullscreenSelected": "Fullscreen Pinili"
+  },
+  "GeminiLive": {
+    "AITranscription": "Transkripsyon ng AI",
+    "CollapseNowSpeaking": "I-collapse",
+    "EnableDescription": "Real-time na transkripsyon na pinapagana ng Gemini habang nagre-record",
+    "EnableIntegration": "Paganahin ang Live AI Transcription",
+    "Error": "Error",
+    "ExpandNowSpeaking": "Palawakin",
+    "NowSpeaking": "Ngayon Nagsasalita...",
+    "SegmentCount_one": "{{count}} na mga segment",
+    "SegmentCount_other": "{{count}} na mga segment",
+    "WaitingForConnection": "Kumokonekta...",
+    "WaitingForSpeech": "Naghihintay ng talumpati..."
   },
   "IdleCompactView": {
     "ArmFlashback": "\"I-arm ang balik-tanaw\"",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Kopyahin ang Email",
     "EmailCopied": "✅  Naka-kopya na ang Email sa clipboard"
   },
-  "JumpList": {
-    "RecordAudio": "Mag-record ng Audio",
-    "RecordAudioDesc": "Simulan ang pagre-record ng audio (halo-halong)",
-    "RecordFullscreen": "Mag-record ng buong screen",
-    "RecordFullscreenDesc": "Mag-record ng buong video sa screen",
-    "RecordRegion": "I-snap ang isang bahagi upang i-record",
-    "RecordRegionDesc": "Piliin ang bahagi ng screen na ire-record",
-    "TakeScreenshot": "Kuhanan ng Screenshot",
-    "TakeScreenshotDesc": "Kuhanan ng larawan ang bahagi ng screen",
-    "OpenRecordingsFolder": "Buksan ang Folder ng Recordings",
-    "OpenRecordingsFolderDesc": "Buksan ang default na folder ng mga pagre-record"
-  },
   "MeetingPrompt": {
-    "StartTitle": "\"Nadetect ang pagpupulong\"",
-    "StartMessage": "May pulong ka ba sa {{appName}}? Kailangan mo bang i-record ang pulong ngayon?",
     "BrowserHint": "\"💡 Tip: Para sa mga pagpupulong sa browser (Google Meet, Zoom, Teams), hiningi ko lang na madetect ang browser, hindi ang partikular na website.\"",
-    "RememberChoice": "\"Alalahanin ang aking desisyon at huwag na muling magpakita ng prompt\"",
-    "Yes": "\"Simulan ang pagre-record\"",
-    "No": "Kanselahin",
-    "EndTitle": "Nagtapos na ang Pulong",
-    "EndMessage": "Natuklasan ko na natapos na ang pulong sa {{appName}}. Gusto mo bang itigil ko ang pagre-record?",
     "ContinueRecording": "\"Ipagpatuloy ang pagre-record\"",
+    "EndMessage": "Natuklasan ko na natapos na ang pulong sa {{appName}}. Gusto mo bang itigil ko ang pagre-record?",
+    "EndTitle": "Nagtapos na ang Pulong",
+    "No": "Kanselahin",
     "Pause": "Ipahinto",
-    "Resume": "\"Ipagpatuloy\"",
-    "Stop": "Itigil",
+    "PlayRecording": "Pakinggan",
     "RecordingSaved": "Na-save na ang pagre-record",
     "RecordingSavedWithFilename": "{{fileName}} na na-save",
+    "RememberChoice": "\"Alalahanin ang aking desisyon at huwag na muling magpakita ng prompt\"",
     "RenameFile": "Palitan ng Pangalan",
     "ShowInFolder": "Ipakita sa Folder",
-    "PlayRecording": "Pakinggan",
+    "StartMessage": "May pulong ka ba sa {{appName}}? Kailangan mo bang i-record ang pulong ngayon?",
+    "StartTitle": "\"Nadetect ang pagpupulong\"",
     "StopRecording": "Itigil ang pagre-record",
-    "Saving": "Nagse-save..."
+    "Yes": "\"Simulan ang pagre-record\""
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Mga action items",
+    "CollapseNowSpeaking": "Isara ang nagsasalita ngayon",
+    "ConnectionError": "Nabigong kumonekta sa SeaMeet",
+    "Content": "Nilalaman ng SeaMeet",
+    "DueDate": "Nakatakda: {{date}}",
+    "EnableIntegration": "Paganahin ang SeaMeet transkripsyon",
+    "ExpandNowSpeaking": "Palawakin ang nagsasalita ngayon",
+    "FetchError": "Nabigo ang pag-load ng mga transkripsyon",
+    "LanguageHint": "Maaari mong palitan ang wika habang nagre-record",
+    "LiveTranscription": "Live na pagtitipon",
+    "LoadingContent": "Naglo-load ng nilalaman ng SeaMeet…",
+    "LoadingTranscript": "Naglo-load ng pagtitipon...",
+    "NoActionItems": "Walang action items para sa pagtitipong ito",
+    "NoNotes": "Walang tala para sa pulong na ito",
+    "NoSummary": "Wala pang buod.",
+    "Notes": "Mga tala",
+    "NoTranscript": "Walang magagamit na transkripsyon",
+    "NoTranslation": "Walang Pagsasalin",
+    "NowSpeaking": "Ngayon ay nagsasalita...",
+    "Retry": "Muling subukan",
+    "SeekToTime": "I-click upang pakinggan mula sa oras na ito",
+    "SegmentCount_one": "{{count}} na mga segment",
+    "SegmentCount_other": "{{count}} na mga segment",
+    "SignInRequired": "Kailangan mag-sign in",
+    "Summary": "Buod",
+    "Transcribed": "Na-transcribe",
+    "Transcript": "Pagtitipon",
+    "TranscriptionLanguage": "Wika ng pagtitipon",
+    "TranslationLanguage": "Wika ng pagtitipon",
+    "UnknownSpeaker": "Tagapagsalita",
+    "WaitingForSpeech": "Naghihintay sa pagsasalita..."
   },
   "MinimizedView": {
     "ActionRequired": "Kailangan ng aksyon (Auto-Record)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Nagcha-charge ang screen balik-tanaw...",
     "ScreenRecording": "Screen balik-tanaw ({{time}})"
   },
+  "Pause": "I-pause",
   "Permissions": {
-    "AutoRecordNextTime": "Nais mo bang i-auto record ang app na ito sa susunod?",
     "AlwaysAutoRecord": "Palaging Auto Record",
-    "NeverRecord": "Huwag magre-record kailanman",
     "AskEveryTime": "Magtanong tuwing kailangan",
-    "AutoRecordStarted": "Nagsimula na ang auto-record",
+    "AutoRecordNextTime": "Nais mo bang i-auto record ang app na ito sa susunod?",
     "AutoRecordReason": "Ang {{app}} ay nakatakda sa Always Auto Record. Baguhin ang pahintulot sa pag-record ng app sa Settings -> Auto Record.",
-    "ChangeInSettings": "Pagbabago sa Mga Setting",
-    "GuidanceTitle": "Mga Uri ng Pahintulot sa App",
+    "AutoRecordStarted": "Nagsimula na ang auto-record",
+    "AutoStartAudioRule": "Kung ang Default Recording Mode ay Audio, agad magsisimula ang SeaMeet ng pagre-record nang hindi nagtatanong.",
+    "AutoStartFallbackRule": "Sa lahat ng ibang kaso, ipapakita ng SeaMeet ang recorder mode selector para mapili mo.",
+    "AutoStartFullscreenRule": "Kung ang Default Recording Mode ay Fullscreen at isang screen lang ang nakakonekta, agad na magsisimula ang SeaMeet sa pagre-record.",
+    "AutoStartHeuristicsTitle": "Pag-uugali ng auto-start (Laging Auto-Record)",
     "GuidanceAlways": ": Awtomatikong magre-record ang SeaMeet nang hindi humihingi ng kumpirmasyon",
     "GuidanceAsk": ": Magtatanong ang SeaMeet ng iyong pahintulot upang magre-record tuwing kailangan",
     "GuidanceNever": ": Hindi magpapakita ang SeaMeet ng prompt upang mag-rekord",
-    "AutoStartHeuristicsTitle": "Pag-uugali ng auto-start (Laging Auto-Record)",
-    "AutoStartAudioRule": "Kung ang Default Recording Mode ay Audio, agad magsisimula ang SeaMeet ng pagre-record nang hindi nagtatanong.",
-    "AutoStartFullscreenRule": "Kung ang Default Recording Mode ay Fullscreen at isang screen lang ang nakakonekta, agad na magsisimula ang SeaMeet sa pagre-record.",
-    "AutoStartFallbackRule": "Sa lahat ng ibang kaso, ipapakita ng SeaMeet ang recorder mode selector para mapili mo."
+    "GuidanceTitle": "Mga Uri ng Pahintulot sa App",
+    "NeverRecord": "Huwag magre-record kailanman"
+  },
+  "PipelineStatus": {
+    "Done": "Handa na ang buod",
+    "Error": "Nabigo ang pagproseso",
+    "Progress": "Pinoproseso ang tipak {{current}} ng {{total}}",
+    "Queued": "Nakapila ang buod...",
+    "Running": "Bumubuo ng buod..."
   },
   "Player": {
     "Mute": "I-mute",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Isara ang pag-playback",
-    "MoreOptions": "Maraming opsyon",
-    "CodecInfo": "Impormasyon ng codec"
+    "CodecInfo": "Impormasyon ng codec",
+    "MoreOptions": "Maraming opsyon"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Audio ng pagre-rekord",
+    "ContinueRecording": "Ipagpatuloy ang pagre-rekord",
+    "RecordingAudio": "Audio ng pagre-rekord..",
+    "RecordingMode": "Mode ng pagre-rekord",
+    "RecordingPreview": "Preview ng pagre-rekord",
+    "RecordingScreen": "Screen ng pagpaparecord.",
+    "StartRecording": "Simulan ang pagre-rekord",
+    "Stop": "Itigil",
+    "StopRecording": "Itigil ang pagre-rekord",
+    "VideoRecording": "Bideo ng pagre-rekord"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Pagkuha ng Lugar",
+    "CaptureMode": "Paraang Pangkuha",
+    "FullScreen": "Buong Bisyon",
+    "RecordAudio": "Audio",
+    "RecordAudioTip": "Audio lang",
+    "RecordFullscreen": "Buong Bisyon",
+    "RecordFullscreenTip": "Kinuhanan ang buong screen",
+    "RecordRegion": "Rehiyon",
+    "RecordRegionTip": "Kuhanan ang isang pasadyang rehiyon",
+    "RecordWindow": "Bintana",
+    "RecordWindowTip": "Kuhanan ng isang window ng app"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Kopyahin ang pangalan ng file",
+    "CopyFilePath": "Kopyahin ang landas ng file",
+    "FileNameCopied": "{{fileName}} na-kopya sa clipboard",
+    "FilePathCopied": "Nakopya na ang landas ng file sa clipboard",
+    "OpenSaveFolder": "Buksan ang Folder",
+    "RecentCaptures": "Kamakailang mga larawang di-makikita",
+    "Recovered_one": "Nabawi ang {{count}} recording",
+    "Recovered_other": "{{count}} recording na-recover",
+    "RefreshRecordings": "I-refresh",
+    "SaveAs": "I-save bilang",
+    "SearchRecordingsOrSnapshots": "Maghanap ng mga pagre-record at larawan di-makikita",
+    "ShowInFolder": "Ipakita sa folder"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "file",
-    "Microphone": "Mikropono",
-    "App": "{{appName}}"
+    "Microphone": "Mikropono"
   },
   "RegionSelector": {
     "CaptureButton": "Kukunan ng Screen o Pindutin ang Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Subaybayan",
     "PrimaryMonitor": "Pangunahing Monitor"
   },
-  "Reliability": {
-    "Stable": "Matatag",
-    "Experimental": "Eksperimental",
-    "NotTested": "Hindi Nasubukan"
-  },
+  "Resume": "Ipagpatuloy",
   "RingMenu": {
+    "AutoDetectOff": "Auto Detect: NAKA-OFF",
+    "AutoDetectOn": "Auto Detect: NAKA-ON",
     "FlashbackCharging": "Nagcha-charge ang balik-tanaw",
     "FlashbackNotCharged": "Ang balik-tanaw ay hindi pa na-charge, i-click nang isang beses para i-charge ang audio balik-tanaw, double click para i-charge ang larawang di-makita",
     "FlashbackSaveTooltip": "Isang pag-click upang i-save ang huling {{duration}}s {{mode}} balik-tanaw. Dalawang pag-click upang ipagpatuloy ang pagre-record mula dito.",
-    "RecordRegion": "Rehiyon ng Record",
-    "RecordFullscreen": "I-record ang Buong Screen",
-    "TakeScreenshot": "Kumuha ng Screenshot",
-    "AutoDetectOn": "Auto Detect: NAKA-ON",
-    "AutoDetectOff": "Auto Detect: NAKA-OFF",
     "RecordAudio": "I-record ang Audio",
-    "RecordWindow": "Window ng Record"
+    "RecordFullscreen": "I-record ang Buong Screen",
+    "RecordRegion": "Rehiyon ng Record",
+    "RecordWindow": "Window ng Record",
+    "TakeScreenshot": "Kumuha ng Screenshot"
   },
   "ScreenPicker": {
-    "Title": "Pumili ng display",
     "Instruction": "Pumili kung aling display ang i-re-record para sa fullscreen recordings.",
-    "Refresh": "I-refresh",
-    "Refreshing": "Nagre-refresh…",
     "Loading": "Naglo-load ng mga display…",
     "None": "Walang nakitang display.",
+    "Refresh": "I-refresh",
+    "Refreshing": "Nagre-refresh…",
+    "Title": "Pumili ng display",
     "Unknown": "Walang pamagat na display"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Pagsusuri",
+    "ButtonLabel": "Proseso gamit ang AI",
+    "Custom": "Custom na prompt",
+    "CustomPlaceholder": "Magtanong ng anuman tungkol sa larawang ito...",
+    "Describe": "Ilarawan ang larawan",
+    "DescribeSub": "Ano ang nasa screenshot na ito?",
+    "Description": "Paglalarawan",
+    "ExtractedText": "Na-extract na Teksto",
+    "Ocr": "I-extract ang text (OCR)",
+    "OcrSub": "Basahin ang lahat ng nakikitang teksto",
+    "PipelineError": "Nabigo ang pagproseso ng AI. Pakisubukang muli.",
+    "ProcessingWithTime": "Pinoproseso... {{sec}}s",
+    "Queuing": "Nakapila...",
+    "ResultLabel": "Resulta ng AI",
+    "UnknownError": "Hindi kilalang error"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Nakopya na!",
     "CopyFailed": "Nabigo ang pagkopya ng screenshot sa clipboard",
     "CopyToClipboard": "Kopyahin sa Clipboard",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Tanggalin",
     "Dimensions": "Mga sukat",
     "FileSize": "Laki ng file",
-    "Filename": "Pangalan ng file",
     "OpenInSystemViewer": "Buksan sa system viewer",
-    "Rename": "Palitan ang pangalan",
     "ScreenshotCopied": "Nakopya na ang screenshot sa clipboard",
     "Share": "I-share",
     "ShareCompleted": "Tapos na ang pagbabahagi",
     "ShareFailed": "Hindi sinusuportahan ang sharing sa browser na ito. Buksan ang screenshot nang manu-mano upang mag-share.",
-    "ShareNotSupported": "Hindi suportado ang native sharing sa platform na ito. Gamitin ang Copy to clipboard sa halip.",
     "Sharing": "Nagse-share...",
-    "Timestamp": "Oras",
     "ZeroBytes": "OK na ito"
   },
   "Settings": {
-    "Title": "Mga setting",
     "About": {
       "CheckForUpdates": "Mag-check ng mga update",
       "CheckingUpdates": "Nagsusuri para sa mga update...",
-      "UpdateAvailable": "May bagong bersyon {{version}} na available",
-      "UpdateReady": "Ang bersyon {{version}} ay handa nang i-install",
-      "NoUpdatesAvailable": "Walang update na available",
       "InstallNow": "Mag-install ngayon",
-      "TermsOfService": "Mga Tuntunin ng Serbisyo",
-      "PrivacyPolicy": "Patakaran sa Privacy",
       "LegalToggle": {
+        "FullVersion": "Buong Bersyon",
         "OneSentence": "1 - Pangungusap",
-        "TLDR": "Maikling Pagsusuma",
-        "FullVersion": "Buong Bersyon"
+        "TLDR": "Maikling Pagsusuma"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet ay isang libreng, privacy‑unang recorder kung saan ang lokal na paggamit ay hindi nangangailangan ng account, nananatili ang iyong data sa iyo; opsyonal ang cloud features, at kailangang kumuha ng pahintulot bago mag-record.",
-        "TLDRTitle": "SeaMeet Terms — TLDR para sa Mga Abala sa Tao",
-        "TLDRItems": [
-          "Libre ang SeaMeet Desktop — lahat ng non‑AI na mga tampok ay gumagana nang walang account o pag-login.",
-          "Kumuha ng pahintulot bago magre-record — hindi ito awtomatikong sine-verify ng SeaMeet.",
-          "Ang iyong mga pagre-record at transcript ay sa iyo; tanging pinoproseso lang ng SeaMeet ang mga ito upang tumakbo bilang serbisyo.",
-          "Ang mga cloud features ay nangangailangan ng account at nag-iimbak ng data sa mga server ng SeaMeet.",
-          "Ang anonymous diagnostics ay opsyonal at maaaring patayin kahit kailan.",
-          "Huwag abusuhin ang app (walang iligal na paggamit at hacking).",
-          "Maaaring magbago ang serbisyo, at limitadong ang pananagutan."
-        ]
-      },
+      "NoUpdatesAvailable": "Walang update na available",
       "Privacy": {
         "OneSentenceSummary": "Ang SeaMeet Desktop ay nananatili ang lahat ng mga recording sa iyong device na ganap na nasa lokal at pribado, na hindi nangangailangan ng account. Ang mga tampok sa cloud ay opsyonal, naka-encrypt, at ganap na maaaring bawiin.",
-        "TLDRTitle": "SeaMeet Privacy — TLDR para sa Mga Abalang Tao",
         "TLDRItems": [
           "Ang SeaMeet Desktop ay pribado sa disenyo: lahat ay nananatili sa iyong device; hindi kami nangongolekta ng audio, video, nilalaman ng screen, o datos ng pagpupulong.",
           "Hindi kailangan ng account para magamit ang desktop app na may non-AI na mga tampok.",
@@ -530,734 +883,299 @@
           "Ang mga integrasyon sa third-party ay opsyonal at ganap na maaaring bawiin.",
           "Hindi namin ibinebenta ang datos, at ang cloud recordings ay naka-encrypt.",
           "You control your data — delete recordings anytime or request full deletion."
-        ]
+        ],
+        "TLDRTitle": "SeaMeet Privacy — TLDR para sa Mga Abalang Tao"
       },
+      "PrivacyPolicy": "Patakaran sa Privacy",
       "PrivacySecurity": {
-        "Title": "PRIBASIYAT at SEGURIDAD",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Ang auto-detect ay HINDI kailanman magsisimula ng pagre-record nang awtomatiko nang walang iyong tiyak na pahintulot.",
+            "Title": "Kailangan ang Tiyak na Pahintulot"
+          },
           "MicrophoneActivity": {
-            "Title": "Aktibidad lamang ng mikropono",
-            "Description": "Ang auto-detect ay nagbabantay sa iyong mikropono upang tukuyin kung aling app ang ginagamit. Walang data ang kinokolekta."
+            "Description": "Ang auto-detect ay nagbabantay sa iyong mikropono upang tukuyin kung aling app ang ginagamit. Walang data ang kinokolekta.",
+            "Title": "Aktibidad lamang ng mikropono"
           },
           "NoDataAccess": {
-            "Title": "Walang Access sa Data",
-            "Description": "Ang auto-detect ay tanging tumutukoy kung ginagamit ang mikropono o hindi. Hindi nito ina-access ang anumang data na nare-record."
-          },
-          "ExplicitApproval": {
-            "Title": "Kailangan ang Tiyak na Pahintulot",
-            "Description": "Ang auto-detect ay HINDI kailanman magsisimula ng pagre-record nang awtomatiko nang walang iyong tiyak na pahintulot."
+            "Description": "Ang auto-detect ay tanging tumutukoy kung ginagamit ang mikropono o hindi. Hindi nito ina-access ang anumang data na nare-record.",
+            "Title": "Walang Access sa Data"
           },
           "NoDataCollection": {
-            "Title": "Walang Koleksyon ng Data",
-            "Description": "Hindi kumokolekta ang SeaMeet ng ANUMANG data mula sa auto-detect na tampok nang walang iyong pahintulot."
+            "Description": "Hindi kumokolekta ang SeaMeet ng ANUMANG data mula sa auto-detect na tampok nang walang iyong pahintulot.",
+            "Title": "Walang Koleksyon ng Data"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% Lokal",
-            "Description": "Ang balik-tanaw ay tatakbo nang ganap sa iyong lokal na makina. Wala itong isinesynchronize sa cloud."
+          "EthicalUse": {
+            "Description": "Laging ipaalam at kunin ang pahintulot bago gamitin ang Flashback para i-record sila.",
+            "Title": "Etikal na Paggamit"
           },
-          "RAMOnly": {
-            "Title": "RAM Lamang",
-            "Description": "Ang lahat ng data ay nananatili sa memorya. Wala itong isinusulat sa disk maliban kung mag-save ka ng isang balik-tanaw na pagre-record."
+          "LocalOnly": {
+            "Description": "Ang balik-tanaw ay tatakbo nang ganap sa iyong lokal na makina. Wala itong isinesynchronize sa cloud.",
+            "Title": "100% Lokal"
           },
           "Protected": {
-            "Title": "Protektado",
-            "Description": "Ang iyong privacy at kaligtasan ay napakahalaga. Ang iyong data ay hindi kailanman umaalis sa iyong device."
+            "Description": "Ang iyong privacy at kaligtasan ay napakahalaga. Ang iyong data ay hindi kailanman umaalis sa iyong device.",
+            "Title": "Protektado"
           },
-          "EthicalUse": {
-            "Title": "Etikal na Paggamit",
-            "Description": "Laging ipaalam at kunin ang pahintulot bago gamitin ang Flashback para i-record sila."
+          "RAMOnly": {
+            "Description": "Ang lahat ng data ay nananatili sa memorya. Wala itong isinusulat sa disk maliban kung mag-save ka ng isang balik-tanaw na pagre-record.",
+            "Title": "RAM Lamang"
           }
-        }
-      }
+        },
+        "Title": "PRIBASIYAT at SEGURIDAD"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet ay isang libreng, privacy‑unang recorder kung saan ang lokal na paggamit ay hindi nangangailangan ng account, nananatili ang iyong data sa iyo; opsyonal ang cloud features, at kailangang kumuha ng pahintulot bago mag-record.",
+        "TLDRItems": [
+          "Libre ang SeaMeet Desktop — lahat ng non‑AI na mga tampok ay gumagana nang walang account o pag-login.",
+          "Kumuha ng pahintulot bago magre-record — hindi ito awtomatikong sine-verify ng SeaMeet.",
+          "Ang iyong mga pagre-record at transcript ay sa iyo; tanging pinoproseso lang ng SeaMeet ang mga ito upang tumakbo bilang serbisyo.",
+          "Ang mga cloud features ay nangangailangan ng account at nag-iimbak ng data sa mga server ng SeaMeet.",
+          "Ang anonymous diagnostics ay opsyonal at maaaring patayin kahit kailan.",
+          "Huwag abusuhin ang app (walang iligal na paggamit at hacking).",
+          "Maaaring magbago ang serbisyo, at limitadong ang pananagutan."
+        ],
+        "TLDRTitle": "SeaMeet Terms — TLDR para sa Mga Abala sa Tao"
+      },
+      "TermsOfService": "Mga Tuntunin ng Serbisyo",
+      "UpdateAvailable": "May bagong bersyon {{version}} na available",
+      "UpdateReady": "Ang bersyon {{version}} ay handa nang i-install"
     },
-    "General": "Heneral",
-    "Storage": {
-      "Title": "Mga Setting ng Storage",
-      "Description": "Piliin ang default na folder na ginagamit ng SeaMeet kapag awtomatikong nagse-save ng mga recording.",
-      "DefaultPathLabel": "Default na Save Folder",
-      "Browse": "Mag-browse...",
-      "Save": "I-save",
-      "RecordingNameLabel": "Pangalan ng pagre-record"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Default na mode ng pagre-record",
+      "DeleteTooltip": "Alisin sa listahan (muling i-set sa 'Ask Every Time')",
+      "EmptyState": "Wala pang na-dedetect na mga app. Kapag nadetect ng SeaMeet ang isang app na gumagamit ng iyong mikropono, lalabas ito dito.",
+      "PathCopied": "Nakopya ang landas sa clipboard",
+      "PermissionHeader": "Mga Pahintulot ng Aplikasyon",
+      "Title": "Mga Pahintulot ng Aplikasyon"
     },
-    "ProfileSettings": "Mga Setting ng Profile",
-    "AccountPreferences": "Mga kagustuhan sa account",
-    "ProfileSettingsDescription": "Pamahalaan ang impormasyon sa iyong profile",
-    "AccountPreferencesDescription": "Pamahalaan ang iyong mga kagustuhan sa account",
-    "SettingsFileLocation": "Lokasyon ng File ng mga Setting",
-    "SettingsFileDescription": "Ang mga setting ay iniimbak sa isang JSON file para sa madaling pag-backup at pamamahala",
     "Back": "Bumalik",
-    "OpenFolder": "Buksan ang Folder",
     "DefaultUserName": "Gumagamit ng SeaMeet",
-    "UserAvatarAlt": "gumagamit",
+    "FailedToCheckForUpdates": "Nabigo sa pagsusuri ng mga update",
     "GroupTitle": {
-      "Account": "Account",
-      "General": "Pangkalahatan",
-      "Automation": "Automation",
-      "RecordingStorage": "Storage ng Recordings",
-      "Configuration": "Configuration",
       "ApplicationInfo": "Impormasyon ng Application",
-      "Legal": "Legal"
+      "Automation": "Automation",
+      "Configuration": "Configuration",
+      "General": "Pangkalahatan",
+      "Legal": "Legal",
+      "RecordingStorage": "Storage ng Recordings"
     },
     "Item": {
-      "EditProfile": "I-edit ang Profile",
-      "Account": "Account",
-      "LogOut": "Lumabas",
-      "Language": "Wika",
+      "AutoRecording": "Awtomatikong pagre-record",
+      "Copyright": "Karapatang-ari",
       "ImproveTranslationHint": "Tumulong na pahusayin ang pagsasaling ito sa GitHub →",
-      "Theme": "Tema",
-      "KeyboardShortcuts": "Mga keyboard shortcut",
+      "Language": "Wika",
       "MicrophoneGain": "Pag-angat ng mikropono",
       "StartAtLogin": "Pagsimula sa Pagsingil",
-      "AutoRecording": "Awtomatikong pagre-record",
       "Storage": "Imbak",
-      "Copyright": "Karapatang-ari"
+      "Theme": "Tema"
     },
     "MicGain": {
-      "Minimal": "Minimal (0.1x)",
-      "Quiet": "Tahimik (0.5x)",
-      "Normal": "Normal (1x)",
       "Loud": "Malakas (5x)",
-      "Louder": "Mas malakas (10x)"
+      "Louder": "Mas malakas (10x)",
+      "Minimal": "Minimal (0.1x)",
+      "Normal": "Normal (1x)",
+      "Quiet": "Tahimik (0.5x)"
+    },
+    "OpenFolder": "Buksan ang Folder",
+    "PageTitle": {
+      "About": "Tungkol sa",
+      "AutoRecording": "Auto Recording",
+      "Flashback": "Balik-tanaw na Pagre-record",
+      "Storage": "Imbakan"
+    },
+    "SettingsFileLocation": "Lokasyon ng File ng mga Setting",
+    "Storage": {
+      "Browse": "Mag-browse...",
+      "DefaultPathLabel": "Default na Save Folder",
+      "Description": "Piliin ang default na folder na ginagamit ng SeaMeet kapag awtomatikong nagse-save ng mga recording.",
+      "Save": "I-save",
+      "Title": "Mga Setting ng Storage"
     },
     "Theme": {
+      "AdobeSand": "Adobe Buhangin",
+      "AdobeSandDesc": "Maliwanag na mode sa mainit na lupa",
+      "AzureLight": "Asul na Langit",
+      "AzureLightDesc": "Maliwanag na mode sa malamig na asul",
+      "CloudCanvas": "Ulap na Canvas",
+      "CloudCanvasDesc": "Maliwanag na mode sa sariwang mint",
+      "ColumnDark": "Madilim",
+      "ColumnLight": "Maliwanag",
+      "CyberCobalt": "Cyber ​​Cobalt",
+      "CyberCobaltDesc": "Madilim na mode sa neon cyan",
+      "Dark": "Madilim",
+      "DarkDesc": "Madilim na mode",
       "Device": "Device",
       "DeviceDesc": "Sundin ang mga setting ng sistema",
       "Light": "Liwanag",
       "LightDesc": "Liwanag na mode",
-      "Dark": "Madilim",
-      "DarkDesc": "Madilim na mode",
-      "Pink": "Madhilim na Pink",
-      "PinkDesc": "Madilim na pink na mode",
       "LightPink": "Maliwanag na Pink",
       "LightPinkDesc": "Ligtas na pink na mode",
-      "ColumnLight": "Maliwanag",
-      "ColumnDark": "Madilim",
-      "AzureLight": "Asul na Langit",
-      "AzureLightDesc": "Maliwanag na mode sa malamig na asul",
-      "WarmPaper": "Mainit na Papel",
-      "WarmPaperDesc": "Maliwanag na mode sa tono ng mainit na papel",
-      "SynthwaveLight": "Synthwave Maliwanag",
-      "SynthwaveLightDesc": "Maliwanag na mode na synthwave",
       "MidnightBlue": "Hatinggabing Asul",
       "MidnightBlueDesc": "Madilim na mode sa malalim na asul",
-      "CloudCanvas": "Ulap na Canvas",
-      "CloudCanvasDesc": "Maliwanag na mode sa sariwang mint",
-      "CyberCobalt": "Cyber ​​Cobalt",
-      "CyberCobaltDesc": "Madilim na mode sa neon cyan",
-      "AdobeSand": "Adobe Buhangin",
-      "AdobeSandDesc": "Maliwanag na mode sa mainit na lupa"
+      "Pink": "Madhilim na Pink",
+      "PinkDesc": "Madilim na pink na mode",
+      "SynthwaveLight": "Synthwave Maliwanag",
+      "SynthwaveLightDesc": "Maliwanag na mode na synthwave",
+      "WarmPaper": "Mainit na Papel",
+      "WarmPaperDesc": "Maliwanag na mode sa tono ng mainit na papel"
     },
-    "PageTitle": {
-      "Flashback": "Balik-tanaw na Pagre-record",
-      "About": "Tungkol sa",
-      "AutoRecording": "Auto Recording",
-      "Storage": "Imbakan"
-    },
-    "FailedToCheckForUpdates": "Nabigo sa pagsusuri ng mga update",
-    "AppPermissions": {
-      "Title": "Mga Pahintulot ng Aplikasyon",
-      "Description": "Pamahalaan kung aling mga app ang maaaring awtomatikong mag-record kapag nadetect gamit ang iyong mikropono.",
-      "EmptyState": "Wala pang na-dedetect na mga app. Kapag nadetect ng SeaMeet ang isang app na gumagamit ng iyong mikropono, lalabas ito dito.",
-      "DeleteTooltip": "Alisin sa listahan (muling i-set sa 'Ask Every Time')",
-      "PathCopied": "Nakopya ang landas sa clipboard",
-      "PermissionHeader": "Mga Pahintulot ng Aplikasyon",
-      "DefaultRecordingMode": "Default na mode ng pagre-record"
-    }
+    "Title": "Mga setting",
+    "UserAvatarAlt": "gumagamit"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Ipakita ang Puwang na Pang-awain",
-    "OpenLauncher": "Buksan ang Launcher",
-    "RecordAudio": "Pagre-record ng audio",
-    "RecordFullscreen": "Pagre-record ng buong screen",
-    "RecordWindow": "Pagre-record ng Puwang na pang-awain",
-    "RecordRegion": "Mag-record ng Rehiyon",
     "CaptureScreenshot": "Kunan ang larawan di-makikita",
-    "RestoreDefaults": "Ibalik sa mga default",
-    "RecordingPrompt": "Nakikinig… pindutin ang bagong shortcut",
     "ConflictWarning": "Ang shortcut na ito ay kasalukuyang ginagamit na ng ibang app at hindi maaaring mairehistro.",
     "GenericError": "Hindi ma-update ang shortcut.",
     "None": "Walang",
-    "SpaceKey": "Puwang"
+    "OpenLauncher": "Buksan ang Launcher",
+    "RecordAudio": "Pagre-record ng audio",
+    "RecordFullscreen": "Pagre-record ng buong screen",
+    "RecordingPrompt": "Nakikinig… pindutin ang bagong shortcut",
+    "RecordRegion": "Mag-record ng Rehiyon",
+    "RecordWindow": "Pagre-record ng Puwang na pang-awain",
+    "RestoreDefaults": "Ibalik sa mga default",
+    "SpaceKey": "Puwang",
+    "ToggleFloatingWindow": "Ipakita ang Puwang na Pang-awain"
   },
   "Sidebar": {
-    "PrimaryNavigation": "Pangunahing menu",
     "ClearSearch": "Linisin ang search",
-    "AgentPanel": "Ahente ng AI"
-  },
-  "SidebarTabs": {
-    "Audios": "Audio",
-    "AutoDetect": "Auto detect"
+    "PrimaryNavigation": "Pangunahing menu"
   },
   "TakeSnapshot": {
-    "Title": "Nakuhang snapshot",
+    "GoToSnapshot": "Pumunta sa bagong snapshot",
     "Message": "Ang snapshot ay kinuha at sine-save sa:",
     "StayAtVideo": "Manatili sa kasalukuyang bideo",
-    "GoToSnapshot": "Pumunta sa bagong snapshot"
+    "Title": "Nakuhang snapshot"
   },
   "TopNav": {
-    "CloseNavigationMenu": "Isara ang navigation menu",
-    "OpenNavigationMenu": "Buksan ang navigation menu",
-    "MainNavigation": "Pangunahing nabigasyon",
-    "Record": "Itala",
-    "Recording": "Pagre-record",
-    "Files": "Mga file",
     "Agent": "Agent",
-    "Terminal": "Terminal"
+    "CloseNavigationMenu": "Isara ang navigation menu",
+    "Files": "Mga file",
+    "MainNavigation": "Pangunahing nabigasyon",
+    "OpenNavigationMenu": "Buksan ang navigation menu",
+    "Record": "Itala",
+    "Recording": "Pagre-record"
   },
   "Tray": {
-    "MinimizedHint": "Ang SeaMeet ay naka-run pa rin sa system tray (ibabang-kanan).",
-    "ShowLauncher": "Ipakita ang launcher",
-    "ShowFloatingWindow": "Ipakita ang Floating Window",
-    "ShowMainWindow": "Ipakita ang Main Window",
-    "ExitSeaMeet": "Lumabas sa SeaMeet",
-    "QuickRecording": "Mabilis na Pagre-record",
-    "RecordAudio": "Mag-record ng audio",
-    "RecordFullscreen": "Mag-record ng Full Screen",
-    "RecordRegion": "Mag-snap ng Rehiyon para I-record",
-    "OpenRecordingsFolder": "Buksan ang Recordings Folder",
-    "TakeScreenshot": "Kumuha ng Screenshot",
-    "Close": "Isara",
-    "OpenSeaMeet": "Buksan ang SeaMeet",
-    "OpenSaveFolder": "Buksan ang Save Folder",
-    "ReportIssues": "I-report ang mga Isyu"
+    "MinimizedHint": "Ang SeaMeet ay naka-run pa rin sa system tray (ibabang-kanan)."
   },
   "Types": {
-    "Microphone": "mikropono",
-    "System": "Sistema na output ng audio",
     "Both": "Pareho (Pinagsama)",
     "File": "file",
+    "Microphone": "mikropono",
+    "System": "Sistema na output ng audio",
     "Video": "Video"
   },
   "UpdateQuitModal": {
-    "Title": "May bagong update na available",
-    "ReadyToInstall": "Ang SeaMeet {{version}} ay handa nang i-install.",
-    "InstallBeforeQuitting": "Mas malinaw kung \"Gusto mo bang i-install ito bago mag-quit?\" kaysa sa \"Gusto mong i-install ito bago mag-quit?\" para sa mas natural na tono.",
     "InstallAndQuit": "I-install at Lumabas",
-    "QuitWithoutInstalling": "Lumabas nang hindi nag-i-install"
+    "InstallBeforeQuitting": "Mas malinaw kung \"Gusto mo bang i-install ito bago mag-quit?\" kaysa sa \"Gusto mong i-install ito bago mag-quit?\" para sa mas natural na tono.",
+    "QuitWithoutInstalling": "Lumabas nang hindi nag-i-install",
+    "ReadyToInstall": "Ang SeaMeet {{version}} ay handa nang i-install.",
+    "Title": "May bagong update na available"
   },
   "UpdateToast": {
-    "ReadyToInstall": "Ang SeaMeet {{version}} ay handa nang i-install",
-    "Downloading": "Nagda-download ang SeaMeet {{version}} ({{percent}}%)",
     "Available": "Maaaring i-update: SeaMeet {{version}}",
-    "WhatsNewInVersion": "Mga Bagong Kaganapan sa {{version}}?",
-    "WhatsNew": "Mga Bagong Kaganapan:",
+    "Dismiss": "I-dismiss",
+    "Downloading": "Nagda-download ang SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Itago",
+    "ReadyToInstall": "Ang SeaMeet {{version}} ay handa nang i-install",
     "RestartNow": "Muling i-restart Ngayon",
     "ViewRelease": "Tingnan ang Paglabas",
     "ViewReleaseTitle": "Tingnan ang Release Notes sa GitHub",
-    "Dismiss": "I-dismiss"
+    "WhatsNew": "Mga Bagong Kaganapan:",
+    "WhatsNewInVersion": "Mga Bagong Kaganapan sa {{version}}?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "Tungkol sa SeaMeet",
     "DisplayName": "Gumagamit",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Mga setting ng profile",
-    "AccountPreferences": "Mga setting ng account",
-    "BillingPlans": "Singilin at mga plano",
-    "StorageSettings": "Mga setting ng storage",
-    "HelpSupport": "Tulong at Suporta",
-    "KeyboardShortcuts": "Mga keyboard shortcut",
-    "SignIn": "Mag-sign in",
-    "SignOut": "Mag-sign out",
-    "SeaMeetSignedOut": "SeaMeet: Hindi naka-log in",
-    "SeaMeetSignedIn": "SeaMeet: Nakalog-in",
-    "AboutSeaMeet": "Tungkol sa SeaMeet",
     "Exit": "Lumabas",
+    "HelpSupport": "Tulong at Suporta",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Tingnan ang SeaMeet wiki para sa dokumentasyon at gabay.",
-      "VisitWiki": "Bisitahin ang Wiki",
-      "Issues": "Mga isyu",
-      "IssuesDesc": "I-report ang mga bug at humiling ng mga tampok (nangangailangan ng GitHub account).",
-      "SubmitIssue": "Mag-submit ng isyu",
       "Discussion": "Makibahagi sa diskusyon",
       "DiscussionDesc": "Makibahagi sa diskusyon ng komunidad (nangangailangan ng GitHub account).",
-      "JoinDiscussion": "Makilahok sa diskusyon",
+      "DogfoodingDesc": "Hinihikayat naming gamitin ang SeaMeet upang i-report ang isang isyu at i-post ito sa Mga Isyu o mag-email sa amin!",
       "Email": "Email",
       "EmailDesc": "Makipag-ugnayan nang direkta sa aming koponan.",
-      "SendEmail": "Magpadala ng email",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "Hinihikayat naming gamitin ang SeaMeet upang i-report ang isang isyu at i-post ito sa Mga Isyu o mag-email sa amin!",
-      "CheckForUpdates": "Suriin ang mga update",
-      "CheckingUpdates": "Nagsusuri para sa mga update.",
-      "UpdateAvailable": "May bagong bersyon {{version}} na available",
-      "UpdateReady": "Handang i-install ang bersyon {{version}}",
-      "InstallNow": "I-install ngayon",
-      "TermsOfService": "Mga Tuntunin ng Serbisyo",
-      "PrivacyPolicy": "Patakaran sa privacidad",
       "ImproveTranslation": "Pagbutihin ang Mga Pagsasalin",
-      "ImproveTranslationDesc": "Tulungan kaming pagbutihin ang mga pagsasalin o humiling ng bagong wika sa GitHub."
-    }
+      "ImproveTranslationDesc": "Tulungan kaming pagbutihin ang mga pagsasalin o humiling ng bagong wika sa GitHub.",
+      "Issues": "Mga isyu",
+      "IssuesDesc": "I-report ang mga bug at humiling ng mga tampok (nangangailangan ng GitHub account).",
+      "JoinDiscussion": "Makilahok sa diskusyon",
+      "SendEmail": "Magpadala ng email",
+      "SubmitIssue": "Mag-submit ng isyu",
+      "VisitWiki": "Bisitahin ang Wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Tingnan ang SeaMeet wiki para sa dokumentasyon at gabay."
+    },
+    "KeyboardShortcuts": "Mga keyboard shortcut",
+    "SeaMeetSignedIn": "SeaMeet: Nakalog-in",
+    "SeaMeetSignedOut": "SeaMeet: Hindi naka-log in",
+    "SignIn": "Mag-sign in",
+    "SignOut": "Mag-sign out"
   },
   "VideoSettings": {
-    "Title": "Mga setting para sa pagre-record ng video",
-    "Mode": "Naaangkop na mode",
-    "ModeOff": "Patay",
-    "ModeFullscreen": "Buong Screen",
-    "ModeWindow": "Bintana",
-    "ModeRegion": "Sa rehiyon",
+    "AudioSettings": "Mga setting ng audio",
+    "CodecTooltip": {
+      "VP8": "Ang pagre-record na ito ay gumagamit ng VP8 para sa pinakamahusay na kalidad. Ang ilang karaniwang mga manlalaro ng video — gaya ng Windows Media Player at QuickTime sa macOS — ay maaaring hindi sumuporta sa format na ito. Para sa maaasahang pag-playback, mangyaring gumamit ng isang makabagong browser (Chrome o Edge) o isang compatible na manlalaro gaya ng VLC.",
+      "VP9": "Ang pagre-record na ito ay gumagamit ng VP9 para sa pinakamahusay na kalidad. Ang ilang karaniwang mga manlalaro ng video — gaya ng Windows Media Player at QuickTime sa macOS — ay maaaring hindi sumuporta sa format na ito. Para sa maaasahang pag-playback, mangyaring gumamit ng isang makabagong browser (Chrome o Edge) o isang compatible na manlalaro gaya ng VLC."
+    },
+    "Detecting": "Nakatuklas...",
+    "FlashbackArmedNotice": "Nagre-record ka gamit ang {{seconds}}s na balik-tanaw na buffer",
+    "FramesPerSecond": "Mga Frame kada Segundo",
+    "FullHD": "Full HD",
+    "GBPerHour": "Halos {{gb}} GB/oras",
+    "HD": "HD",
+    "HideWindow": "Itago ang SeaMeet window kapag pumipili ng rehiyon",
+    "Internal": "Katutubong",
+    "MBPerMin": "Halos {{mb}} MB/min,",
     "ModeAudioOnly": "Audio lamang",
-    "SelectScreen": "Piliin ang Screen",
-    "SelectWindow": "Piliin ang window",
-    "Refresh": "I-rehistro",
+    "ModeFullscreen": "Buong Screen",
+    "ModeRegion": "Sa rehiyon",
+    "ModeWindow": "Bintana",
+    "Native": "Katutubong",
     "NoScreens": "Walang nakita na mga screen",
     "NoWindows": "Walang mga window na available",
-    "RegionInfo": "Ipapakita ang isang prompt na pumili ng screen o window kapag nagsimula ang pagre-record.",
-    "HideWindow": "Itago ang SeaMeet window kapag pumipili ng rehiyon",
-    "VideoQuality": "Kalidad ng Bideo",
-    "Quality": "Kahusayan",
-    "QualityOriginal": "Orihinal",
-    "QualityHigh": "Mataas",
-    "QualityMedium": "Katamtaman",
-    "QualityLow": "Mababang kalidad",
-    "FramesPerSecond": "Mga Frame kada Segundo",
-    "FrameRate": "Bilis ng Frame",
-    "SourceResolution": "Resolisyon ng Pinagmulan",
-    "Native": "Katutubong",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Piliin ang isang source sa itaas",
-    "ZeroSize": "~0 MB/min, ~0 GB/oras",
-    "MBPerMin": "Halos {{mb}} MB/min,",
-    "GBPerHour": "Halos {{gb}} GB/oras",
     "Primary": "Pangunahing",
-    "Internal": "Katutubong",
-    "Detecting": "Nakatuklas...",
-    "ResolutionUnknown": "Hindi kilalang resolution",
-    "AudioSettings": "Mga setting ng audio",
-    "RecordModeTitle": "Magre-record ng Audio o Video?",
+    "QualityHigh": "Mataas",
+    "QualityLow": "Mababang kalidad",
+    "QualityMedium": "Katamtaman",
+    "QualityOriginal": "Orihinal",
     "Record": "Ire-record",
-    "RecordWithoutFlashback": "Magre-record nang walang balik-tanaw",
+    "RecordModeTitle": "Magre-record ng Audio o Video?",
     "RecordWithFlashback": "Magre-record gamit ang balik-tanaw",
+    "RecordWithoutFlashback": "Magre-record nang walang balik-tanaw",
+    "Refresh": "I-rehistro",
+    "ResolutionUnknown": "Hindi kilalang resolution",
+    "SD": "SD",
+    "SelectScreen": "Piliin ang Screen",
+    "SelectSourceAbove": "Piliin ang isang source sa itaas",
+    "SelectWindow": "Piliin ang window",
+    "SourceResolution": "Resolisyon ng Pinagmulan",
+    "Title": "Mga setting para sa pagre-record ng video",
     "VideoFlashbackArmedNotice": "Naka-arm ang screen flashback ({{seconds}}s)",
-    "FlashbackArmedNotice": "Nagre-record ka gamit ang {{seconds}}s na balik-tanaw na buffer",
-    "CodecTooltip": {
-      "VP9": "Ang pagre-record na ito ay gumagamit ng VP9 para sa pinakamahusay na kalidad. Ang ilang karaniwang mga manlalaro ng video — gaya ng Windows Media Player at QuickTime sa macOS — ay maaaring hindi sumuporta sa format na ito. Para sa maaasahang pag-playback, mangyaring gumamit ng isang makabagong browser (Chrome o Edge) o isang compatible na manlalaro gaya ng VLC.",
-      "VP8": "Ang pagre-record na ito ay gumagamit ng VP8 para sa pinakamahusay na kalidad. Ang ilang karaniwang mga manlalaro ng video — gaya ng Windows Media Player at QuickTime sa macOS — ay maaaring hindi sumuporta sa format na ito. Para sa maaasahang pag-playback, mangyaring gumamit ng isang makabagong browser (Chrome o Edge) o isang compatible na manlalaro gaya ng VLC."
-    }
+    "VideoQuality": "Kalidad ng Bideo",
+    "ZeroSize": "~0 MB/min, ~0 GB/oras"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Napiling rehiyon",
     "CustomRegion": "Pasadyang rehiyon: {{width}} × {{height}} pixels",
-    "ReselectRegion": "Muling piliin ang Rehiyon",
-    "SelectCustomRegion": "Piliin ang Custom na Rehiyon",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Napiling rehiyon",
+    "ReselectRegion": "Muling piliin ang Rehiyon",
+    "SelectCustomRegion": "Piliin ang Custom na Rehiyon"
   },
   "WindowPicker": {
-    "Title": "Pumili ng isang bintana",
     "Instruction": "Pumili ng bintana para sa pagre-record ng window.",
-    "Refresh": "I-refresh",
-    "Refreshing": "Nagre-refresh…",
     "Loading": "Naglo-load ng mga bintana…",
     "None": "Walang natagpuang mga bintana. Magbukas ng isang aplikasyon at i-refresh.",
+    "Refresh": "I-refresh",
+    "Refreshing": "Nagre-refresh…",
+    "Title": "Pumili ng isang bintana",
     "Unknown": "Bintanang walang pamagat"
-  },
-  "Common": {
-    "Configure": "I-configure",
-    "Cancel": "Kanselahin",
-    "Apply": "I-apply",
-    "Close": "Isara",
-    "Open": "Buksan",
-    "Minimize": "I-minimize sa bilog",
-    "Recording": "Pagre-rekord",
-    "UnknownApp": "Hindi kilalang app",
-    "Done": "Tapos na",
-    "Save": "I-save",
-    "Saving": "Nagsi-save…",
-    "Delete": "Burahin",
-    "Or": "O",
-    "Loading": "Naglo-load…",
-    "Expand": "Palawakin",
-    "PlannedFeature": "Nakatakdang tampok",
-    "Screen": "Screen",
-    "Window": "Bintana",
-    "Region": "OK",
-    "AppTitle": "SeaMeet Screen at Audio Recorder",
-    "AppSubtitle": "I-re-record ang input at output na audio ng device",
-    "Screenshot": "Screenshot",
-    "Saved": "Naka-save",
-    "Processing": "Nagpoproseso...",
-    "Starting": "Nagsisimula na...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} nakopya sa clipboard. I-double click upang baguhin ang pangalan ng file.",
-    "ApplyName": "Ilapat ang pangalan",
-    "Send": "Ipadala"
-  },
-  "RecordingControls": {
-    "StartRecording": "Simulan ang pagre-rekord",
-    "StopRecording": "Itigil ang pagre-rekord",
-    "ContinueRecording": "Ipagpatuloy ang pagre-rekord",
-    "Pause": "Ipa-pause",
-    "Resume": "Ipadudulots",
-    "Stop": "Itigil",
-    "RecordingScreen": "Screen ng pagpaparecord.",
-    "RecordingAudio": "Audio ng pagre-rekord..",
-    "AudioRecording": "Audio ng pagre-rekord",
-    "VideoRecording": "Bideo ng pagre-rekord",
-    "RecordingPreview": "Preview ng pagre-rekord",
-    "RecordingMode": "Mode ng pagre-rekord"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Audio",
-    "RecordAudioTip": "Audio lang",
-    "RecordWindow": "Bintana",
-    "RecordWindowTip": "Kuhanan ng isang window ng app",
-    "RecordFullscreen": "Buong Bisyon",
-    "RecordFullscreenTip": "Kinuhanan ang buong screen",
-    "RecordRegion": "Rehiyon",
-    "RecordRegionTip": "Kuhanan ang isang pasadyang rehiyon",
-    "CaptureMode": "Paraang Pangkuha",
-    "FullScreen": "Buong Bisyon",
-    "AreaCapture": "Pagkuha ng Lugar"
-  },
-  "RecordingsList": {
-    "NoRecordings": "Wala pang mga pagre-record. Mag-umpisa ng pagre-record para makita sila dito.",
-    "RecentRecordings": "Kamakailang mga pagre-record",
-    "RecentCaptures": "Kamakailang mga larawang di-makikita",
-    "RefreshRecordings": "I-refresh",
-    "SearchRecordingsOrSnapshots": "Maghanap ng mga pagre-record at larawan di-makikita",
-    "SearchRecordingsPlaceholder": "Maghanap ng mga pagre-record",
-    "ShowInFolder": "Ipakita sa folder",
-    "CopyFileName": "Kopyahin ang pangalan ng file",
-    "CopyFilePath": "Kopyahin ang landas ng file",
-    "FileNameCopied": "{{fileName}} na-kopya sa clipboard",
-    "FilePathCopied": "Nakopya na ang landas ng file sa clipboard",
-    "SaveAs": "I-save bilang",
-    "OpenSaveFolder": "Buksan ang Folder",
-    "Title": "Mga pagre-record",
-    "Recovered": "{{count}} na pagre-record ang narekober"
-  },
-  "FileImport": {
-    "ImportMedia": "Mag-import ng Media",
-    "DragDropFiles": "I-drag at i-drop ang iyong audio, video, at mga larawan dito",
-    "DragDropSubtitle": "I-drag at i-drop ang audio, video, at mga larawan dito",
-    "BrowseFiles": "Mag-browse ng mga file",
-    "Supported": "Suportado",
-    "SupportedFormats": "Ang sinusuportahan: MP3, WAV, M4A, WebM, OGG, PNG, JPG, at higit pa",
-    "VideoImportCopying": "Kinokopya ang video file...",
-    "VideoImportSaving": "Sine-save ang video file...",
-    "VideoUnsupported": "Maaaring hindi ma-play ang format ng video na ito sa app. Ia-import pa rin ang file."
-  },
-  "AudioControls": {
-    "AudioCapture": "Pagkuha ng audio",
-    "AudioMix": "Mix ng Audio",
-    "AudioSessionsLog": "Talaan ng mga Session ng Audio",
-    "AudioSource": "Pinagmulan ng Audio:",
-    "InputDevice": "Device ng Input:",
-    "Microphone": "Mikropono",
-    "MicrophoneLabel": "Mikropono {{id}}",
-    "RecordingDefaultMicrophone": "Default na Mikropono",
-    "RecordingInputLabel": "Input: {{name}}",
-    "RecordingSettings": "Mga setting ng pagre-record",
-    "RecordingType": "Uri ng Pagre-record:",
-    "RefreshMicrophoneList": "I-refresh ang listahan ng mikropono",
-    "MicrophoneGainWarning": "Ang mataas na gain ng mikropono ay maaaring makahuli ng tunog mula sa speaker kahit nakapatay ang \"System Audio\". Gamitin ang headphones o bawasan ang microphone gain para sa mga pagre-record na audio lang."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Simulan ang Pagre-rekord",
-    "Ready": "Ready? → Handa na?",
-    "BufferingMoment": "Sandali ng buffer...",
-    "RecordWithFlashback": "Magre-record gamit ang balik-tanaw",
-    "NeverMissAMoment": "Huwag nang palampasin ang anumang sandali.",
-    "ReadyToGuard": "Handa ka nang magbantay sa iyong {{type}}?",
-    "FillingBuffer": "Pinupuno ang {{duration}}s balak-tanaw buffer... {{progress}}%",
-    "ReadyToCapture": "Handang mangalap ang SeaMeet.",
-    "DescNone": "Pumili sa mga mode ng balik-tanaw sa itaas upang paganahin ang pagre-record ng sandali.",
-    "DescInit": "I-click ang 'Ready?' upang sabihan ang SeaMeet na simulan ang 'pag-alaala' sa nakaraan.",
-    "DescCharging": "Inihahanda ang iyong {{duration}}-segundong bintana... halos handa nang kunin ang maaaring mong makaligtaan. {{progress}}% na tapos.",
-    "DescReady": "Ang flashback ay nakatutok. Kapag pinindot mo ang Record, kasali ang nakalipas na {{duration}} segundo ng {{type}} — huwag nang magsisi sa isang nawalang sandali.",
-    "Screen": "screen → screen",
-    "Audio": "audio",
-    "OpenLauncher": "Buksan ang Launcher",
-    "OpenFloater": "Open Floater → Buksan ang Floater",
-    "TakeScreenshot": "Kuhanan ng Screenshot",
-    "Buffering": "Buffer",
-    "SavingFlashback": "Nilalakad ang balik-tanaw…",
-    "SaveLastFlashback": "I-save ang huling {{duration}}-segundong flashback",
-    "PrivacyProtected": "Protektado ang iyong pribasiya.",
-    "PrivacyDesc": "SeaMeet snapshots the past {{duration}}s of {{type}} in a ring buffer locally on your computer's RAM. → Sinusilip ng SeaMeet ang nakaraang {{duration}}s ng {{type}} sa isang ring buffer nang lokal sa RAM ng iyong computer.",
-    "FlashbackOff": "Naka-off ang balik-tanaw. Maaari kang magsimula ng normal na pagre-record anumang oras, o piliin ang mode ng balik-tanaw (audio o screen) sa itaas upang paganahin ang pag-iimbak ng heroikong sandali.",
-    "FlashbackInitAudio": "Ready to guard your audio? → Handa nang magbantay ng iyong audio?",
-    "FlashbackInitScreen": "Handa nang magbantay ng iyong screen?",
-    "FlashbackInitDescription": "I-click ang 'Ready?' upang sabihan ang SeaMeet na simulan ang 'pag-alaala' sa nakaraan.",
-    "FlashbackCharging": "Nilalagay ang {{seconds}}s buffer… {{percent}}%",
-    "FlashbackChargingDescription": "Inihahanda ang iyong {{seconds}}-segundong window... {{percent}}% na tapos.",
-    "FlashbackReadyQuestion": "Handa na?",
-    "FlashbackReady": "Huwag palampasin ang isang sandali.",
-    "FlashbackReadyDescription": "Naka-akyat ang balik-tanaw. Kasama ang nakaraang {{seconds}}s ng {{type}} kapag nagre-record ka.",
-    "FlashbackBuffering": "Buffering...",
-    "SaveFlashback": "I-save ang huling {{seconds}}-segundong flashback",
-    "FlashbackPrivacy": "Your privacy is protected. Stored locally in RAM. → Protektado ang iyong pribasiya. Nakalocal nang nangyayari sa RAM.",
-    "Capturing": "Kinukunan...",
-    "CaptureMode": "Mode ng Pagre-rekord",
-    "FullScreen": "Ganap na Pangkalahatang",
-    "AreaCapture": "Pagtanggap sa Lugar",
-    "KeepWindowVisible": "Panatilihing nakikita ang SeaMeet window kapag kumuha ng screenshot",
-    "FlashbackMismatch": "Hindi tugma ang mode ng flashback. Naka-record ang audio pero aktibo ang video na flashback. I-disable ang video na flashback."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Paganahin ang SeaMeet transkripsyon",
-    "SignInRequired": "Kailangan mag-sign in",
-    "ProcessingMode": "Mode ng pagpoproseso",
-    "Realtime": "Real-time",
-    "RealtimeDescription": "Live na pagtitipon habang nagre-record",
-    "Diarized": "Na-diary",
-    "DiarizedDescription": "I-upload ang audio pagkatapos mag-record para sa pagkakakilanlan ng tagapagsalita",
-    "ComingSoon": "(Malapit nang dumating)",
-    "TranscriptionLanguage": "Wika ng pagtitipon",
-    "TranslationLanguage": "Wika ng pagtitipon",
-    "NoTranslation": "Walang Pagsasalin",
-    "LanguageHint": "Maaari mong palitan ang wika habang nagre-record",
-    "LiveTranscription": "Live na pagtitipon",
-    "WaitingForSpeech": "Naghihintay sa pagsasalita...",
-    "UnknownSpeaker": "Tagapagsalita",
-    "SegmentCount": "{{count}} mga segmento",
-    "SegmentCount_plural": "{{count}} mga segmento",
-    "ConnectionError": "Nabigong kumonekta sa SeaMeet",
-    "Reconnecting": "Nakikipag-ugnayan muli...",
-    "Connected": "Nakakonekta sa SeaMeet",
-    "Disconnected": "Nakahiwalay mula sa SeaMeet",
-    "NowSpeaking": "Ngayon ay nagsasalita...",
-    "Transcript": "Pagtitipon",
-    "LoadingTranscript": "Naglo-load ng pagtitipon...",
-    "NoTranscript": "Walang magagamit na transkripsyon",
-    "FetchError": "Nabigo ang pag-load ng mga transkripsyon",
-    "Retry": "Muling subukan",
-    "Transcribed": "Na-transcribe",
-    "Content": "Nilalaman ng SeaMeet",
-    "Tab": {
-      "transcription": "pagtitipon",
-      "summary": "Buod",
-      "actionItems": "Mga Action Items",
-      "notes": "Mga tala"
-    },
-    "Summary": "Buod",
-    "NoSummary": "Wala pang buod.",
-    "ActionItems": "Mga action items",
-    "NoActionItems": "Walang action items para sa pagtitipong ito",
-    "DueDate": "Nakatakda: {{date}}",
-    "Notes": "Mga tala",
-    "NoNotes": "Walang tala para sa pulong na ito",
-    "LoadingContent": "Naglo-load ng nilalaman ng SeaMeet…",
-    "SeekToTime": "I-click upang pakinggan mula sa oras na ito",
-    "CollapseNowSpeaking": "Isara ang nagsasalita ngayon",
-    "ExpandNowSpeaking": "Palawakin ang nagsasalita ngayon"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Ang flashback buffer ay walang laman. Subukan muli sa isang sandali.",
-    "EnableFlashback": "I-enable ang flashback upang mag-save ng isang sandali.",
-    "FailedToSave": "Nabigo ang pag-save ng flashback buffer.",
-    "SavedFlashback": "Na-save ang flashback sa mga pagre-record.",
-    "StillCharging": "Ang flashback buffer ay patuloy na nagcha-charge."
-  },
-  "AISummary": {
-    "TabTitle": "Buod ng AI",
-    "SetupRequired": "I-configure ang iyong Gemini API key sa Mga Setting → Mga Tampok ng AI upang paganahin ang mga buod ng AI.",
-    "EnableRequired": "Paganahin ang Mga Feature ng AI sa Mga Setting → Mga Tampok ng AI upang makita ang mga buod ng AI.",
-    "ExportMarkdown": "Kopyahin bilang Markdown",
-    "ExportSrt": "Kopyahin bilang SRT",
-    "ExportJson": "Kopyahin bilang JSON",
-    "Regenerate": "Buuin muli ang buod",
-    "Minimize": "I-minimize",
-    "Maximize": "Palawakin sa buong view",
-    "Queued": "Nakapila para sa pagproseso...",
-    "Processing": "Bumubuo ng buod...",
-    "Error": "Nabigong i-load ang buod: {{error}}",
-    "PipelineError": "Nabigo ang pagproseso ng AI. Subukang mag-regenerate.",
-    "Retry": "Subukan muli",
-    "NoSummary": "Wala pang buod ng AI.",
-    "Generate": "Bumuo ng Buod",
-    "Copy": "Kopyahin",
-    "NoSummaryText": "Hindi available ang buod.",
-    "Topics": "Mga Paksa:",
-    "NoTranscript": "Hindi available ang transcript.",
-    "NoActions": "Walang natukoy na item ng pagkilos.",
-    "NoDecisions": "Walang natukoy na mahahalagang desisyon.",
-    "Export": {
-      "HeadingSummary": "Buod",
-      "HeadingActionItems": "Mga Aksyon na Item",
-      "HeadingKeyDecisions": "Mga Pangunahing Desisyon",
-      "HeadingTranscription": "Transkripsyon"
-    },
-    "Tab": {
-      "Summary": "Buod",
-      "Transcription": "Transcript",
-      "ActionItems": "Mga aksyon",
-      "KeyDecisions": "Mga desisyon",
-      "Agent": "Ahente"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "Mga Tampok ng AI",
-    "MenuItem": "AI-Powered Summaries",
-    "PageTitle": "Mga Tampok ng AI",
-    "EnableToggle": "Paganahin ang mga buod na pinapagana ng AI",
-    "EnableToggleDesc": "Nangangailangan ng libreng Gemini API key",
-    "ApiKeySection": "Gemini API Key",
-    "ApiKeyLabel": "Gemini API Key",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (na-save)",
-    "ShowKey": "Ipakita ang susi",
-    "HideKey": "Itago ang susi",
-    "TestKey": "I-save at I-verify",
-    "Saving": "Nagse-save...",
-    "GetKeyLink": "Kumuha ng libreng API key mula sa Google AI Studio →",
-    "ClearKey": "Alisin ang naka-save na key",
-    "KeyVerified": "Na-verify ang susi",
-    "KeyInvalid": "Di-wastong key",
-    "KeyTesting": "Pagsubok...",
-    "KeyNotConfigured": "Walang key na na-configure",
-    "ModelSection": "Modelo ng AI",
-    "ModelLabel": "Modelo ng Gemini",
-    "SelectedModel": "Napili: {{model}}",
-    "AutomationSection": "Automation",
-    "AutoSummary": "Awtomatikong bumuo ng buod",
-    "AutoSummaryDesc": "Tumatakbo pagkatapos ng bawat pag-record",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Inirerekomenda · Mabilis + may kakayahang",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Ang pinakamurang stable na opsyon",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Sobrang mura",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Pinakamataas na kakayahan",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Pinakamahusay na matatag na pangangatwiran"
-    },
-    "ClaudeKey": {
-      "Section": "Claude API Key (Agent)",
-      "SourceLabel": "Aktibong pinagmulan:",
-      "SourceByok": "Ang iyong API key (BYOK)",
-      "SourceKeyServer": "Pinamamahalaan ng SeaMeet",
-      "SourceCli": "Claude Code CLI",
-      "SourceNone": "Hindi naka-configure",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••• (naka-save)",
-      "ShowKey": "Ipakita ang susi",
-      "HideKey": "Itago ang susi",
-      "TestKey": "I-save at I-verify",
-      "Saving": "Nagse-save...",
-      "ClearKey": "Alisin ang naka-save na key",
-      "KeyVerified": "Na-verify ang susi",
-      "KeyInvalid": "Di-wastong key",
-      "KeyTesting": "Pagsubok...",
-      "KeyNotConfigured": "Walang key na na-configure",
-      "GetKeyLink": "Kumuha ng API key mula sa Anthropic Console →",
-      "QuotaSection": "Pangunahing Quota ng Server",
-      "QuotaRemaining": "{{remaining}} / {{limit}} na token ang natitira",
-      "QuotaResetDate": "Nagre-reset sa {{date}}",
-      "QuotaLoading": "Nilo-load ang quota...",
-      "QuotaRefresh": "I-refresh ang quota",
-      "CliSection": "Claude Code CLI",
-      "CliInstalled": "Naka-install ({{version}})",
-      "CliNotInstalled": "Claude CLI ay hindi natagpuan",
-      "CliInstallLink": "I-install ang Claude Code →",
-      "ModelSection": "Default na Modelo ng Claude",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Mabilis at mura",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Inirerekomenda · Balanse",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "Pinaka may kakayahan"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "Ahente ng AI at Katrabaho",
-    "PageTitle": "Ahente ng AI at Katrabaho",
-    "SectionTitle": "Ahente ng AI at Katrabaho",
-    "EnableToggle": "I-enable ang AI Agent at Cowork",
-    "EnableToggleDesc": "Nangangailangan ng Claude API Key",
-    "DisabledBadge": "Hindi pinagana",
-    "DisabledMsg": "Naka-disable ang AI Agent & Cowork. Paganahin ito sa Mga Setting → AI Agent at Cowork.",
-    "DisabledTabHint": "Ang AI Agent ay hindi pinagana — paganahin ito sa Mga Setting → AI Agent at Cowork",
-    "NotConfiguredMsg": "Walang Claude API key na na-configure. Mag-set up ng isa sa Mga Setting → AI Agent at Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "Nakapila ang buod...",
-    "Running": "Bumubuo ng buod...",
-    "Progress": "Pinoproseso ang tipak {{current}} ng {{total}}",
-    "Done": "Handa na ang buod",
-    "Error": "Nabigo ang pagproseso"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Proseso gamit ang AI",
-    "Queuing": "Nakapila...",
-    "ProcessingWithTime": "Pinoproseso... {{sec}}s",
-    "Describe": "Ilarawan ang larawan",
-    "DescribeSub": "Ano ang nasa screenshot na ito?",
-    "Ocr": "I-extract ang text (OCR)",
-    "OcrSub": "Basahin ang lahat ng nakikitang teksto",
-    "Custom": "Custom na prompt",
-    "CustomPlaceholder": "Magtanong ng anuman tungkol sa larawang ito...",
-    "ResultLabel": "Resulta ng AI",
-    "Description": "Paglalarawan",
-    "ExtractedText": "Na-extract na Teksto",
-    "Analysis": "Pagsusuri",
-    "PipelineError": "Nabigo ang pagproseso ng AI. Pakisubukang muli.",
-    "UnknownError": "Hindi kilalang error"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Binabasa ang file...",
-      "Executing": "Isinasagawa...",
-      "Running": "Tumatakbo...",
-      "Input": "Input",
-      "Output": "Output",
-      "Pattern": "Pattern:",
-      "ShowDetails": "Ipakita ang mga detalye",
-      "AndMoreLines": "... at {{count}} pang linya"
-    },
-    "Streaming": {
-      "Thinking": "Iniisip...",
-      "LongRunning": "Tumatakbo nang mas mahaba kaysa karaniwan",
-      "ToolStuck": "Maaaring natigil ang tool",
-      "ForceStop": "Pilit na huminto",
-      "GeneratingResponse": "Bumubuo ng tugon...",
-      "RunningTool": "Tumatakbo {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Kahilingan ng Pahintulot sa Tool",
-      "Allow": "Payagan Minsan",
-      "AllowSession": "Payagan para sa Session",
-      "Deny": "Tanggihan",
-      "Allowed": "Pinayagan",
-      "Denied": "Tinanggihan"
-    },
-    "Title": "Ahente ng AI",
-    "GlobalTitle": "Ahente ng AI",
-    "NewSession": "Bagong session",
-    "Sessions": "Mga session",
-    "NoSessions": "Wala pang session. Magsimula ng pag-uusap sa ibaba.",
-    "SendPlaceholder": "Magtanong ng kahit ano... (Enter para ipadala, Shift+Enter para sa bagong linya)",
-    "SendButton": "Ipadala",
-    "StopButton": "Tumigil ka",
-    "NotConfigured": "Mag-configure ng Claude API key sa Mga Setting → Mga Feature ng AI para magamit ang Ahente.",
-    "GoToSettings": "Buksan ang Mga Setting",
-    "SessionCost": "Session: {inputTokens}_ in /{outputTokens}_ out token",
-    "CommandHelp": "Mga utos: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "Magtanong",
-      "Code": "Code",
-      "Plan": "Plano"
-    },
-    "Model": {
-      "Haiku": "Haiku",
-      "Sonnet": "Soneto",
-      "Opus": "Opus"
-    },
-    "QuickAction": {
-      "Summarize": "Ibuod ang recording na ito",
-      "ActionItems": "Maghanap ng mga item ng aksyon",
-      "DraftEmail": "Draft follow-up na email"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "Ano ang maitutulong mo sa akin?",
-      "HelpAnalyze": "Tulungan akong suriin ang aking mga kamakailang pag-record"
-    },
-    "AssetContext": "Konteksto: {{name}}"
   }
 }

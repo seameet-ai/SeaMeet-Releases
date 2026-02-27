@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "ऐप स्टोर बिल्ड",
     "DirectBuild": "डायरेक्ट बिल्ड",
-    "SubtitleBadge": "स्नैप रिकॉर्डर और एजेंट",
-    "Version": "v{{version}}",
+    "HelpTranslate": "SeaMeet का अनुवाद करने में हमारी सहायता करें →",
     "Loading": "लोड हो रहा है...",
-    "HelpTranslate": "SeaMeet का अनुवाद करने में हमारी सहायता करें →"
+    "SubtitleBadge": "स्नैप रिकॉर्डर और एजेंट",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "उत्पादकता",
-    "Social": "सोशल",
-    "Gaming": "गेमिंग",
-    "Recording": "रिकॉर्डिंग",
-    "Browsers": "ब्राउज़र",
-    "BrowserBased": "ब्राउज़र-आधारित"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "अन्य",
+      "Skip": "छोडना",
+      "Submit": "जमा करना",
+      "Title": "सवाल",
+      "TypeResponse": "अपनी प्रतिक्रिया लिखें..."
+    },
+    "AssetContext": "संदर्भ: {{name}}",
+    "CommandHelp": "आदेश: /नया · /स्पष्ट · /लागत · /सहायता",
+    "GlobalTitle": "एआई एजेंट",
+    "GoToSettings": "खुली सेटिंग",
+    "Mode": {
+      "Ask": "पूछना",
+      "Code": "कोड",
+      "Plan": "योजना"
+    },
+    "Model": {
+      "Haiku": "हाइकू",
+      "Opus": "ओपुस",
+      "Sonnet": "गाथा"
+    },
+    "NewSession": "नया सत्र",
+    "NoSessions": "अभी तक कोई सत्र नहीं. नीचे बातचीत शुरू करें.",
+    "NotConfigured": "एजेंट का उपयोग करने के लिए सेटिंग्स → एआई फीचर्स में क्लाउड एपीआई कुंजी कॉन्फ़िगर करें।",
+    "Permission": {
+      "Allow": "एक बार की अनुमति दें",
+      "Allowed": "अनुमत",
+      "AllowSession": "सत्र के लिए अनुमति दें",
+      "Denied": "अस्वीकृत",
+      "Deny": "अस्वीकार करना",
+      "Title": "उपकरण अनुमति अनुरोध"
+    },
+    "Plan": {
+      "Approve": "योजना स्वीकृत करें",
+      "DefaultFeedback": "उपयोगकर्ता ने परिवर्तन का अनुरोध किया",
+      "Description": "एजेंट ने उपरोक्त एक योजना तैयार की है और आगे बढ़ने के लिए उसे आपकी मंजूरी की आवश्यकता है।",
+      "FeedbackPlaceholder": "वर्णन करें कि आप क्या परिवर्तन चाहते हैं...",
+      "PlanDetails": "योजना विवरण",
+      "RequestChanges": "परिवर्तन का अनुरोध करें",
+      "RequestedPermissions": "अनुरोधित अनुमतियाँ:",
+      "SendFeedback": "प्रतिक्रिया भेजें",
+      "Title": "योजना की समीक्षा"
+    },
+    "QuickAction": {
+      "ActionItems": "कार्रवाई आइटम ढूंढें",
+      "DraftEmail": "ड्राफ्ट अनुवर्ती ईमेल",
+      "Summarize": "इस रिकॉर्डिंग को संक्षेप में प्रस्तुत करें"
+    },
+    "SendButton": "भेजना",
+    "SendPlaceholder": "कुछ भी पूछें... (भेजने के लिए एंटर करें, न्यूलाइन के लिए Shift+Enter)",
+    "SessionCost": "सत्र: {{inputTokens}} इन /{{outputTokens}} आउट टोकन",
+    "Sessions": "सत्र",
+    "StopButton": "रुकना",
+    "Streaming": {
+      "ForceStop": "जबर्दस्ती बंद करें",
+      "GeneratingResponse": "प्रतिक्रिया उत्पन्न हो रही है...",
+      "LongRunning": "सामान्य से अधिक समय तक चलना",
+      "RunningTool": "चल रहा है {{tool}}...",
+      "Thinking": "सोच...",
+      "ToolStuck": "उपकरण अटक सकता है"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "मेरी हाल की रिकॉर्डिंग का विश्लेषण करने में मेरी सहायता करें",
+      "WhatCanYouDo": "आप मेरी क्या मदद कर सकते हैं?"
+    },
+    "Title": "एआई एजेंट",
+    "ToolCall": {
+      "AndMoreLines_one": "... और {{count}} अधिक पंक्तियाँ",
+      "AndMoreLines_other": "... और {{count}} अधिक पंक्तियाँ",
+      "Executing": "क्रियान्वयन...",
+      "Input": "इनपुट",
+      "Output": "उत्पादन",
+      "Pattern": "नमूना:",
+      "Reading": "फ़ाइल पढ़ रहा है...",
+      "ShowDetails": "प्रदर्शन का विवरण"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} क्रियाएँ",
+      "Actions_other": "{{count}} क्रियाएँ",
+      "Completed_one": "{{count}} पूरा हुआ",
+      "Completed_other": "{{count}} पूरा हुआ",
+      "Running_one": "{{count}} चल रहा है",
+      "Running_other": "{{count}} चल रहा है"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "अक्षम",
+    "DisabledMsg": "एआई एजेंट और सहकर्मी अक्षम है। इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें।",
+    "DisabledTabHint": "एआई एजेंट अक्षम है - इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें",
+    "EnableToggle": "एआई एजेंट और सहकर्मी सक्षम करें",
+    "EnableToggleDesc": "क्लाउड एपीआई कुंजी की आवश्यकता है",
+    "MenuItem": "एआई एजेंट और सहकर्मी",
+    "PageTitle": "एआई एजेंट और सहकर्मी",
+    "SectionTitle": "एआई एजेंट और सहकर्मी"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "जेमिनी एपीआई कुंजी",
+    "ApiKeySection": "जेमिनी एपीआई कुंजी",
+    "AutomationSection": "स्वचालन",
+    "AutoSummary": "स्वतः-उत्पन्न सारांश",
+    "AutoSummaryDesc": "प्रत्येक रिकॉर्डिंग समाप्त होने के बाद चलता है",
+    "ClaudeKey": {
+      "ClearKey": "सहेजी गई कुंजी हटाएँ",
+      "CliInstalled": "स्थापित ({{version}})",
+      "CliInstallLink": "क्लाउड कोड स्थापित करें →",
+      "CliNotInstalled": "क्लाउड सीएलआई नहीं मिला",
+      "CliSection": "क्लाउड कोड सीएलआई",
+      "GetKeyLink": "एंथ्रोपिक कंसोल से एपीआई कुंजी प्राप्त करें →",
+      "HideKey": "कुंजी छिपाएँ",
+      "KeyInvalid": "अमान्य कुंजी",
+      "KeyPlaceholder": "एसके-चींटी-...",
+      "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
+      "KeyTesting": "परीक्षण...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "तेज़ और सस्ता",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "सबसे सक्षम",
+      "ModelSection": "डिफ़ॉल्ट क्लाउड मॉडल",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "अनुशंसित · संतुलित",
+      "QuotaLoading": "कोटा लोड हो रहा है...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} टोकन शेष",
+      "QuotaResetDate": "{{date}} पर रीसेट होता है",
+      "Saving": "सहेजा जा रहा है...",
+      "Section": "क्लाउड एपीआई कुंजी (एजेंट)",
+      "ShowKey": "कुंजी दिखाएँ",
+      "SourceByok": "आपकी एपीआई कुंजी (BYOK)",
+      "SourceCli": "क्लाउड कोड सीएलआई",
+      "SourceKeyServer": "SeaMeet द्वारा प्रबंधित",
+      "SourceLabel": "सक्रिय स्रोत:",
+      "SourceNone": "कॉन्फ़िगर नहीं किया गया",
+      "TestKey": "सहेजें और सत्यापित करें"
+    },
+    "ClearKey": "सहेजी गई कुंजी हटाएँ",
+    "EnableToggle": "एआई-संचालित सारांश सक्षम करें",
+    "EnableToggleDesc": "एक निःशुल्क जेमिनी एपीआई कुंजी की आवश्यकता है",
+    "GetKeyLink": "Google AI स्टूडियो से निःशुल्क API कुंजी प्राप्त करें →",
+    "GroupTitle": "एआई विशेषताएं",
+    "HideKey": "कुंजी छिपाएँ",
+    "KeyInvalid": "अमान्य कुंजी",
+    "KeyNotConfigured": "कोई कुंजी कॉन्फ़िगर नहीं की गई",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
+    "KeyTesting": "परीक्षण...",
+    "KeyVerified": "कुंजी सत्यापित",
+    "ManagedKeyDesc": "आपकी एपीआई कुंजी स्वचालित रूप से प्रावधानित है। किसी कॉन्फ़िगरेशन की आवश्यकता नहीं है.",
+    "ManagedKeyStatus": "प्रबंधित कुंजी - SeaMeet द्वारा प्रदान की गई",
+    "MenuItem": "एआई-संचालित सारांश",
+    "ModelLabel": "मिथुन मॉडल",
+    "Models": {
+      "Gemini25Flash": "मिथुन 2. फ़्लैश",
+      "Gemini25FlashLite": "जेमिनी 2.5 फ्लैश लाइट",
+      "Gemini25FlashLiteSub": "अल्ट्रा सस्ते",
+      "Gemini25FlashSub": "सबसे सस्ता स्थिर विकल्प",
+      "Gemini25Pro": "जेमिनी 2.5 प्रो",
+      "Gemini25ProSub": "सर्वोत्तम स्थिर तर्क",
+      "Gemini3Flash": "मिथुन 3 फ्लैश",
+      "Gemini3FlashSub": "अनुशंसित · तेज़ + सक्षम",
+      "Gemini3Pro": "मिथुन 3 प्रो",
+      "Gemini3ProSub": "अधिकतम क्षमता"
+    },
+    "ModelSection": "एआई मॉडल",
+    "PageTitle": "एआई विशेषताएं",
+    "QuotaLoading": "कोटा लोड हो रहा है...",
+    "QuotaRefresh": "ताज़ा कोटा",
+    "QuotaRemaining": "{{remaining}} / {{limit}} टोकन शेष",
+    "QuotaResetDate": "{{date}} पर रीसेट होता है",
+    "QuotaSection": "उपयोग कोटा",
+    "Saving": "सहेजा जा रहा है...",
+    "SelectedModel": "चयनित: {{model}}",
+    "ShowKey": "कुंजी दिखाएँ",
+    "TestKey": "सहेजें और सत्यापित करें"
+  },
+  "AISummary": {
+    "Copy": "प्रतिलिपि",
+    "EnableRequired": "सेटिंग्स में AI सुविधाएँ सक्षम करें → AI सारांश देखने के लिए AI सुविधाएँ।",
+    "Error": "सारांश लोड करने में विफल: {{error}}",
+    "Export": {
+      "HeadingActionItems": "एक्शन आइटम्स",
+      "HeadingKeyDecisions": "मुख्य निर्णय",
+      "HeadingSummary": "सारांश",
+      "HeadingTranscription": "प्रतिलिपि"
+    },
+    "ExportJson": "JSON के रूप में कॉपी करें",
+    "ExportMarkdown": "मार्कडाउन के रूप में कॉपी करें",
+    "ExportSrt": "एसआरटी के रूप में कॉपी करें",
+    "GeminiLiveTranscript": "मिथुन लाइव",
+    "Generate": "सारांश उत्पन्न करें",
+    "Maximize": "पूर्ण दृश्य तक विस्तृत करें",
+    "Minimize": "छोटा करना",
+    "NoActions": "कोई कार्रवाई आइटम की पहचान नहीं की गई.",
+    "NoChapters": "कोई अध्याय उपलब्ध नहीं है.",
+    "NoDecisions": "कोई प्रमुख निर्णय चिन्हित नहीं किया गया.",
+    "NoSummary": "अभी तक कोई AI सारांश नहीं.",
+    "NoSummaryText": "सारांश उपलब्ध नहीं है.",
+    "NoTranscript": "प्रतिलेख उपलब्ध नहीं है.",
+    "PipelineError": "एआई प्रोसेसिंग विफल रही. पुन: उत्पन्न करने का प्रयास करें.",
+    "PipelineTranscript": "एआई पाइपलाइन",
+    "Processing": "सारांश तैयार किया जा रहा है...",
+    "Queued": "प्रसंस्करण के लिए कतारबद्ध...",
+    "Regenerate": "सारांश पुन: उत्पन्न करें",
+    "Retry": "पुन: प्रयास करें",
+    "SeekToTimestamp": "इस टाइमस्टैम्प को खोजें",
+    "SetupRequired": "एआई सारांश सक्षम करने के लिए सेटिंग्स → एआई फीचर्स में अपनी जेमिनी एपीआई कुंजी कॉन्फ़िगर करें।",
+    "Tab": {
+      "ActionItems": "कार्रवाई",
+      "Chapters": "अध्याय",
+      "KeyDecisions": "फैसले",
+      "Summary": "सारांश",
+      "Transcription": "प्रतिलिपि"
+    },
+    "TabTitle": "एआई सारांश",
+    "Topics": "विषय:",
+    "Speakers": "वक्ता",
+    "MergeInto": "इसमें मिलाएं…",
+    "ApplyMerge": "लागू करें",
+    "EditSegmentSpeaker": "इस खंड को पुनः असाइन करने के लिए क्लिक करें"
   },
   "App": {
     "FailedToEnableFlashback": "फ्लैशबैक सक्षम करने में विफल: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "सभी ऐप्स",
-    "Teams": "Microsoft टीमें (कार्य/विद्यालय)",
-    "TeamsConsumer": "Microsoft Teams (व्यक्तिगत)",
-    "TeamsWeb": "Microsoft Teams (वेब)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (वेब)",
+    "Battlenet": "Battle.net",
+    "Brave": "Brave ब्राउज़र",
+    "CallOfDuty": "कर्तव्य",
     "Chrome": "Chrome ब्राउज़र",
-    "Edge": "Edge ब्राउज़र",
-    "Firefox": "Firefox ब्राउज़र",
-    "WhatsApp": "व्हाट्सएप",
-    "Line": "लाइन",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord (वेब)",
+    "Edge": "Edge ब्राउज़र",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Firefox ब्राउज़र",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "लाइन",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera ब्राउज़र",
+    "Other": "अन्य ऐप्स",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (वेब)",
-    "WindowsSoundRecorder": "विंडोज़ साउंड रिकॉर्डर",
-    "Other": "अन्य ऐप्स",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox गेम बार",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam चैट",
-    "Viber": "वाइबर",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera ब्राउज़र",
-    "Brave": "Brave ब्राउज़र",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "कर्तव्य",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft टीमें (कार्य/विद्यालय)",
+    "TeamsConsumer": "Microsoft Teams (व्यक्तिगत)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (वेब)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "वाइबर",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (वेब)",
+    "WeChat": "WeChat",
+    "WhatsApp": "व्हाट्सएप",
+    "WindowsSoundRecorder": "विंडोज़ साउंड रिकॉर्डर",
+    "XboxGameBar": "Xbox गेम बार",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (वेब)"
+  },
+  "AudioControls": {
+    "AudioCapture": "ऑडियो कैप्चर",
+    "AudioMix": "ऑडियो मिक्स",
+    "AudioSource": "ऑडियो स्रोत:",
+    "Microphone": "माइक्रोफोन",
+    "MicrophoneGainWarning": "उच्च माइक्रोफोन गेन speaker playback भी \"System Audio\" बंद होने पर उठा सकता है। हेडफ़ोन का उपयोग करें या माइक्रोफोन गेन कम करें ताकि केवल माइक्रोफोन रिकॉर्डिंग हो सके।",
+    "RecordingDefaultMicrophone": "डिफ़ॉल्ट माइक्रोफोन",
+    "RecordingSettings": "रिकॉर्डिंग सेटिंग्स",
+    "RefreshMicrophoneList": "माइक्रोफोन सूची पुनः लोड करें"
   },
   "AutoDetectInfoModal": {
-    "Title": "मीटिंग स्वतः पहचानें",
-    "Subtitle": "अब कभी भी मीटिंग न चूकें",
-    "Description": "ऑटो-डिटैक्ट मीटिंग में शामिल होते ही स्वचालित रूप से रिकॉर्डिंग शुरू कर देता है, ताकि आप कभी भी रिकॉर्ड बटन दबाना न भूलें।",
-    "PopularAppsTitle": "लोकप्रिय ऐप्स पाई गईं",
-    "MoreApps": "+40 और अधिक",
-    "HowItWorksTitle": "यह कैसे काम करता है",
-    "Step1Title": "ऑटो-डिटेक्ट सक्षम करें",
-    "Step1Desc": "टॉगल चालू करें और मॉनिटर करने वाले ऐप्स का चयन करें",
-    "Step2Title": "मीटिंग में शामिल हों",
-    "Step2Desc": "Zoom, Teams, Meet, या कोई भी समर्थित ऐप खोलें",
-    "Step3Title": "ऑटो-रिकॉर्डिंग",
-    "Step3Desc": "SeaMeet स्वचालित रूप से रिकॉर्डिंग शुरू कर देता है। पूर्ण हो गया!",
-    "Tip1Title": "Configure Per-App → प्रति-ऐप सेटिंग्स",
-    "Tip1Desc": "कार्य की बैठक के लिए \"हमेशा रिकॉर्ड करें\" सेट करें, व्यक्तिगत कॉल के लिए \"हर बार पूछें\"",
-    "Tip2Title": "कई पता लगाने के तरीके",
-    "Tip2Desc": "माइक्रोफ़ोन एक्टिविटी, विंडो टाइटल्स, और ब्राउज़र यूआरएल का उपयोग करता है ताकि सटीकता बनी रहे",
-    "GotIt": "समझ गया",
-    "OpenSettings": "सेटिंग्स खोलें",
     "ControlLabel": "ऑटो डिटेक्ट",
-    "LearnAbout": "Auto Detect के बारे में जानें"
+    "Description": "ऑटो-डिटैक्ट मीटिंग में शामिल होते ही स्वचालित रूप से रिकॉर्डिंग शुरू कर देता है, ताकि आप कभी भी रिकॉर्ड बटन दबाना न भूलें।",
+    "GotIt": "समझ गया",
+    "HowItWorksTitle": "यह कैसे काम करता है",
+    "LearnAbout": "Auto Detect के बारे में जानें",
+    "MoreApps": "+40 और अधिक",
+    "OpenSettings": "सेटिंग्स खोलें",
+    "PopularAppsTitle": "लोकप्रिय ऐप्स पाई गईं",
+    "Step1Desc": "टॉगल चालू करें और मॉनिटर करने वाले ऐप्स का चयन करें",
+    "Step1Title": "ऑटो-डिटेक्ट सक्षम करें",
+    "Step2Desc": "Zoom, Teams, Meet, या कोई भी समर्थित ऐप खोलें",
+    "Step2Title": "मीटिंग में शामिल हों",
+    "Step3Desc": "SeaMeet स्वचालित रूप से रिकॉर्डिंग शुरू कर देता है। पूर्ण हो गया!",
+    "Step3Title": "ऑटो-रिकॉर्डिंग",
+    "Subtitle": "अब कभी भी मीटिंग न चूकें",
+    "Tip1Desc": "कार्य की बैठक के लिए \"हमेशा रिकॉर्ड करें\" सेट करें, व्यक्तिगत कॉल के लिए \"हर बार पूछें\"",
+    "Tip1Title": "Configure Per-App → प्रति-ऐप सेटिंग्स",
+    "Tip2Desc": "माइक्रोफ़ोन एक्टिविटी, विंडो टाइटल्स, और ब्राउज़र यूआरएल का उपयोग करता है ताकि सटीकता बनी रहे",
+    "Tip2Title": "कई पता लगाने के तरीके",
+    "Title": "मीटिंग स्वतः पहचानें"
   },
   "AutoRecording": {
-    "Title": "ऑटो-डिटेक्ट मीटिंग्स",
-    "DetectApps": "Detect meetings from: → मीटिंग्स का पता लगाएं:",
-    "Enabled": "ऑटो डिटेक्ट सक्षम है",
-    "Disabled": "ऑटो-डिटेक निष्क्रिय है",
-    "MeetingDetected": "{{{app}}} की बैठक का पता चला!",
-    "MeetingEnded": "Meeting ended → मीटिंग समाप्त हुई",
-    "MeetingFallbackName": "बैठक",
     "BugReport": "See a bug? Report it to seameet@seasalt.ai → कोई बग देख रहे हैं? इसे seameet@seasalt.ai पर रिपोर्ट करें",
     "BugReportTitle": "बग रिपोर्ट करें",
+    "Disabled": "ऑटो-डिटेक निष्क्रिय है",
+    "Enabled": "ऑटो डिटेक्ट सक्षम है",
     "HelpWanted": "यदि आप नई ऐप जोड़ने का अनुरोध करना चाहते हैं, या आपने किसी ऐप के सही ढंग से काम करने की पुष्टि की है, तो कृपया हमें seameet@seasalt.ai पर सूचित करें।",
-    "HelpWantedTitle": "Help Us Improve → हमें बेहतर बनाने में मदद करें"
+    "HelpWantedTitle": "Help Us Improve → हमें बेहतर बनाने में मदद करें",
+    "MeetingDetected": "{{{app}}} की बैठक का पता चला!",
+    "MeetingEnded": "Meeting ended → मीटिंग समाप्त हुई",
+    "MeetingFallbackName": "बैठक"
   },
   "BlackHole": {
-    "NotInstalled": "सिस्टम ऑडियो के लिए BlackHole आवश्यक है",
-    "InstallInstructions": "macOS में सिस्टम ऑडियो रिकॉर्ड करने के लिए, आपको BlackHole वर्चुअल ऑडियो ड्राइवर इंस्टॉल करना होगा:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "कमांड कॉपी करें",
-    "Or": "या",
-    "DownloadManually": "existential.audio से डाउनलोड करें",
-    "SetupTitle": "मल्टी-आउटपुट डिवाइस को कॉन्फ़िगर करें",
-    "SetupStep1": "ऑडियो MIDI सेटअप खोलें (एप्लिकेशन → यूटिलिटीज़)",
-    "SetupStep2": "'+' पर क्लिक करें और 'Create Multi-Output Device' चुनें",
-    "SetupStep3": "अपने स्पीकर्स/हेडफ़ोन और 'BlackHole 2ch' दोनों को जांचें",
-    "SetupStep4": "मल्टी-आउटपुट पर राइट-क्लिक करें और 'Use This Device For Sound Output' चुनें",
-    "SetupStep5": "यदि डिवाइस सूची में BlackHole नहीं दिखाई दे तो पुनः प्रारंभ करें",
-    "SetupStep6": "इस ऐप में अपने ऑडियो स्रोत के रूप में 'BlackHole 2ch' चुनें",
-    "CheckAgain": "कृपया पुनः जांचें",
     "Cancel": "रद्द करें",
-    "LearnMore": "मल्टी-आउटपुट डिवाइसेस के बारे में अधिक जानें"
+    "CheckAgain": "कृपया पुनः जांचें",
+    "CopyCommand": "कमांड कॉपी करें",
+    "DownloadManually": "existential.audio से डाउनलोड करें",
+    "InstallInstructions": "macOS में सिस्टम ऑडियो रिकॉर्ड करने के लिए, आपको BlackHole वर्चुअल ऑडियो ड्राइवर इंस्टॉल करना होगा:",
+    "LearnMore": "मल्टी-आउटपुट डिवाइसेस के बारे में अधिक जानें",
+    "NotInstalled": "सिस्टम ऑडियो के लिए BlackHole आवश्यक है",
+    "Or": "या",
+    "SetupTitle": "मल्टी-आउटपुट डिवाइस को कॉन्फ़िगर करें"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Bluetooth माइक्रोफोन पाया गया।",
-    "Description": "आपका OS Bluetooth माइक्रोफोन का उपयोग करने पर ऑडियो को \"Communications Mode\" में बदल सकता है, जिससे रिकॉर्डिंग के दौरान आवाज की विकृति या ध्वनि मात्रा में समस्या हो सकती है।",
-    "RecommendationLabel": "सिफारिश:",
-    "Recommendation": "बेहतर रिकॉर्डिंग गुणवत्ता के लिए Bluetooth के बिना माइक्रोफोन (जैसे आपका बिल्ट-इन माइक्रोफोन या USB माइक्रोफोन) का उपयोग करें।",
+    "CloseAriaLabel": "Bluetooth चेतावनी बंद करें",
     "CloseTitle": "चेतावनी बंद करें",
-    "CloseAriaLabel": "Bluetooth चेतावनी बंद करें"
+    "Description": "आपका OS Bluetooth माइक्रोफोन का उपयोग करने पर ऑडियो को \"Communications Mode\" में बदल सकता है, जिससे रिकॉर्डिंग के दौरान आवाज की विकृति या ध्वनि मात्रा में समस्या हो सकती है।",
+    "Recommendation": "बेहतर रिकॉर्डिंग गुणवत्ता के लिए Bluetooth के बिना माइक्रोफोन (जैसे आपका बिल्ट-इन माइक्रोफोन या USB माइक्रोफोन) का उपयोग करें।",
+    "RecommendationLabel": "सिफारिश:",
+    "Title": "⚠️ Bluetooth माइक्रोफोन पाया गया।"
+  },
+  "Common": {
+    "ApplyName": "नाम लागू करें",
+    "Cancel": "रद्द करें",
+    "Close": "बंद करें",
+    "Configure": "कॉन्फ़िगरेशन करें",
+    "Delete": "हटाएँ",
+    "Done": "पूर्ण",
+    "Expand": "विस्तार करें",
+    "FileNameCopiedWithRenameHint": "{{fileName}} क्लिपबोर्ड पर कॉपी किया गया है। फ़ाइल नाम बदलने के लिए डबल क्लिक करें।",
+    "Loading": "लोड हो रहा है...",
+    "Minimize": "मिनिमाइज़ करें to सर्कल",
+    "Open": "खोलें",
+    "Or": "या",
+    "Processing": "प्रक्रिया में है…",
+    "Recording": "रिकॉर्डिंग चल रही है",
+    "Save": "सहेजें",
+    "Saved": "सहेजा गया",
+    "Saving": "सहेजा जा रहा है…",
+    "Screenshot": "स्क्रीनशॉट",
+    "Send": "भेजना",
+    "Starting": "शुरू हो रहा है…",
+    "UnknownApp": "अज्ञात ऐप"
   },
   "DeletePrompt": {
-    "Title": "फ़ाइल हटाएँ",
-    "Message": "क्या आप सुनिश्चित हैं कि आप इस फ़ाइल को हटाना चाहते हैं? यह क्रिया वापस नहीं ली जा सकती।",
     "Cancel": "रद्द करें",
-    "Confirm": "हटाएं"
+    "Confirm": "हटाएं",
+    "Message": "क्या आप सुनिश्चित हैं कि आप इस फ़ाइल को हटाना चाहते हैं? यह क्रिया वापस नहीं ली जा सकती।",
+    "Title": "फ़ाइल हटाएँ"
   },
   "Errors": {
-    "NoAudioSources": "कोई ऑडियो स्रोत उपलब्ध नहीं हैं",
-    "NoSystemAudioSources": "कोई सिस्टम ऑडियो स्रोत उपलब्ध नहीं हैं",
+    "AutoRecordingFailed": "ऑटो-रिकॉर्डिंग टॉगल करने में विफल",
     "FailedToStartRecording": "रिकॉर्डिंग शुरू करने में विफल: {{message}}",
     "FailedToStartVideoRecording": "वीडियो रिकॉर्डिंग शुरू करने में असमर्थ: {{message}}",
-    "AutoRecordingFailed": "ऑटो-रिकॉर्डिंग टॉगल करने में विफल"
+    "NoAudioSources": "कोई ऑडियो स्रोत उपलब्ध नहीं हैं",
+    "NoSystemAudioSources": "कोई सिस्टम ऑडियो स्रोत उपलब्ध नहीं हैं",
+    "SaveFailed": "रिकॉर्डिंग सहेजने में विफल: {{message}}"
   },
   "Events": {
-    "Title": "इवेंट्स",
-    "MarkToolbarButton": "मार्क की गई घटनाएँ",
+    "EmptyWhenNotRecording": "इस रिकॉर्डिंग के लिए कोई घटना उपलब्ध नहीं है।",
+    "EmptyWhileRecording": "कोई घटनाएं अभी तक नहीं। रिकॉर्डिंग के दौरान 'Mark' बटन पर क्लिक करें ताकि वे जुड़ सकें।",
+    "EventLabel": "इवेंट {{number}}",
     "MarkButton": "मार्क",
     "Marked": "मार्क की गई!",
-    "EventLabel": "इवेंट {{number}}",
-    "EmptyWhileRecording": "कोई घटनाएं अभी तक नहीं। रिकॉर्डिंग के दौरान 'Mark' बटन पर क्लिक करें ताकि वे जुड़ सकें।",
-    "EmptyWhenNotRecording": "इस रिकॉर्डिंग के लिए कोई घटना उपलब्ध नहीं है।",
-    "DeletePrompt": {
-      "Title": "इवेंट डिलीट करें",
-      "Message": "क्या आप सुनिश्चित हैं कि आप इस इवेंट को हटाना चाहते हैं? यह क्रिया वापस नहीं ली जा सकती।",
-      "Cancel": "रद्द करें",
-      "Confirm": "डिलीट करें"
-    }
+    "MarkToolbarButton": "मार्क की गई घटनाएँ",
+    "Title": "इवेंट्स"
+  },
+  "FileImport": {
+    "BrowseFiles": "फ़ाइलें ब्राउज़ करें",
+    "DragDropFiles": "अपने ऑडियो, वीडियो, और इमेज फ़ाइलें यहाँ ड्रैग और ड्रॉप करें",
+    "DragDropSubtitle": "यहाँ ऑडियो, वीडियो, और इमेज फ़ाइलें खींचें और छोड़ें",
+    "ImportMedia": "मीडिया आयात करें",
+    "Supported": "समर्थित फ़ॉर्मेट",
+    "SupportedFormats": "समर्थित फ़ॉर्मेट्स: MP3, WAV, M4A, WebM, OGG, PNG, JPG, और अधिक",
+    "VideoImportCopying": "वीडियो फ़ाइल कॉपी की जा रही है...",
+    "VideoImportSaving": "वीडियो फ़ाइल सहेजी जा रही है...",
+    "VideoUnsupported": "यह वीडियो फ़ॉर्मेट ऐप में चलाने योग्य नहीं हो सकता। फ़ाइल फिर भी आयात की जाएगी।"
   },
   "FlashbackControls": {
+    "AudioFlashback": "ऑडियो फ्लैशबैक",
+    "CannotChangeWhileRecording": "रिकॉर्डिंग के दौरान फ्लैशबैक मोड नहीं बदला जा सकता",
+    "DisableFlashback": "फ्लैशबैक बंद करें",
     "Label": "फ्लैशबैक",
     "LearnAbout": "\"Flashback\" के बारे में जानने के लिए",
-    "DisableFlashback": "फ्लैशबैक बंद करें",
-    "AudioFlashback": "ऑडियो फ्लैशबैक",
-    "ScreenFlashback": "स्क्रीन का फ्लैशबैक",
-    "TitleReady": "फ्लैशबैक UI दिखाने के लिए क्लिक करें",
-    "TitleCharging": "फ्लैशबैक चार्ज हो रहा है",
-    "TitleInit": "चार्जिंग शुरू करने के लिए क्लिक करें",
+    "Off": "बंद",
     "Ready": "रेडी",
     "ReadyQuestion": "क्या आप तैयार हैं?",
-    "Off": "बंद",
-    "CannotChangeWhileRecording": "रिकॉर्डिंग के दौरान फ्लैशबैक मोड नहीं बदला जा सकता",
-    "ToggleLabel": "फ्लैशबैक टॉगल करें",
-    "SettingsLabel": "फ्लैशबैक रिकॉर्डिंग सेटिंग्स"
+    "ScreenFlashback": "स्क्रीन का फ्लैशबैक",
+    "SettingsLabel": "फ्लैशबैक रिकॉर्डिंग सेटिंग्स",
+    "TitleCharging": "फ्लैशबैक चार्ज हो रहा है",
+    "TitleInit": "चार्जिंग शुरू करने के लिए क्लिक करें",
+    "TitleReady": "फ्लैशबैक UI दिखाने के लिए क्लिक करें",
+    "ToggleLabel": "फ्लैशबैक टॉगल करें"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "ऑडियो",
+    "Buffering": "बफ़रिंग",
+    "BufferingMoment": "बफ़रिंग पल...",
+    "Capturing": "कैप्चर कर रहा है...",
+    "DescCharging": "अपने {{duration}}-सेकंड के विंडो को तैयार कर रहा है... जिससे आप जो मिस कर सकते हैं, उसे पकड़ने के लिए तैयार हो जाएं। {{progress}}% पूर्ण।",
+    "DescInit": "'Ready?' पर क्लिक करें ताकि SeaMeet को अभी 'याद कर रहा है' कहें।",
+    "DescNone": "अपनी स्क्रीन, ऑडियो रिकॉर्ड करें, या स्क्रीनशॉट लें। ऊपर दिए गए फ़्लैशबैक मोड का चयन करें ताकि पल-को सहेजना सक्षम हो सके।",
+    "DescReady": "फ़्लैशबैक सुसज्जित है। जब भी आप रिकॉर्ड करें, तो बीते {{duration}} सेकंड का {{type}} शामिल होगा — फिर कभी भी चूके हुए पल पर अफ़सोस न करें।",
+    "FillingBuffer": "{{duration}}स फ़्लैशबैक बफ़र भर रहा है... {{progress}}%",
+    "FlashbackBuffering": "बफ़रिंग हो रहा है...",
+    "FlashbackCharging": "{{seconds}}s बफ़र भर रहा है... {{percent}}%",
+    "FlashbackChargingDescription": "अपने {{seconds}}-सेकंड विंडो को तैयार कर रहा है... {{percent}}% पूरा।",
+    "FlashbackInitAudio": "क्या आप अपने ऑडियो की रक्षा के लिए तैयार हैं?",
+    "FlashbackInitDescription": "'Ready?' पर क्लिक करें ताकि SeaMeet को बताएँ कि 'याद रखने' शुरू करें।",
+    "FlashbackInitScreen": "क्या आप अपनी स्क्रीन को सुरक्षित करने के लिए तैयार हैं?",
+    "FlashbackMismatch": "फ़्लैशबैक मोड मेल नहीं खाता। ऑडियो रिकॉर्डिंग है लेकिन वीडियो फ़्लैशबैक सक्रिय है। कृपया वीडियो फ़्लैशबैक को निष्क्रिय करें।",
+    "FlashbackOff": "फ़्लैशबैक अभी बंद है। आप कभी भी सामान्य रिकॉर्डिंग शुरू कर सकते हैं, या ऊपर दिए गए फ़्लैशबैक मोड (ऑडियो या स्क्रीन) का चयन करके हीरो-मोमेंट सेविंग सक्षम कर सकते हैं।",
+    "FlashbackPrivacy": "आपकी गोपनीयता सुरक्षित है। यह स्थानीय रूप से RAM में संग्रहित है।",
+    "FlashbackReady": "कभी भी एक पल को मत चूकें।",
+    "FlashbackReadyDescription": "फ्लैशबैक सक्रिय है। जब आप रिकॉर्डिंग कर रहे हैं, तो आपका {{type}} {{seconds}} सेकंड का समय शामिल किया जाता है।",
+    "FlashbackReadyQuestion": "क्या आप तैयार हैं?",
+    "KeepWindowVisible": "स्क्रीनशॉट लेते समय SeaMeet विंडो को दृश्य में रखें",
+    "NeverMissAMoment": "कभी भी एक पल मिस न करें।",
+    "OpenFloater": "फ्लोटर खोलें",
+    "OpenLauncher": "लॉन्चर खोलें",
+    "PrivacyDesc": "SeaMeet आपके कंप्यूटर की RAM पर, {{duration}}स का {{type}} का अतीत का स्नैपशॉट एक रिंग बफ़र में संग्रहित करता है।",
+    "PrivacyProtected": "आपकी गोपनीयता सुरक्षित है।",
+    "Ready": "तैयार?",
+    "ReadyToCapture": "SeaMeet कैप्चर के लिए तैयार है।",
+    "ReadyToGuard": "क्या आप अपना {{type}} Guard करने के लिए तैयार हैं?",
+    "RecordWithFlashback": "फ़्लैशबैक के साथ रिकॉर्ड कर रहे हैं",
+    "SaveFlashback": "पिछले {{seconds}}s का फ्लैशबैक सहेजें",
+    "SaveLastFlashback": "अंतिम {{duration}} सेकंड का फ़्लैशबैक सहेजें",
+    "SavingFlashback": "फ़्लैशबैक सहेजा जा रहा है।",
+    "Screen": "स्क्रीन",
+    "StartRecording": "रिकॉर्डिंग शुरू करें",
+    "TakeScreenshot": "स्क्रीनशॉट लें"
   },
   "FlashbackIndicator": {
     "Buffering": "बफ़र हो रहा है",
@@ -183,138 +463,145 @@
     "VideoReady": "वीडियो तैयार"
   },
   "FlashbackInfoModal": {
-    "Title": "फ्लैशबैक रिकॉर्डिंग",
-    "Close": "बंद करें",
-    "Subtitle": "आपका व्यक्तिगत टाइम मशीन",
-    "SubtitleDesc": "कभी भी कोई महत्वपूर्ण क्षण न चूकें—अतीत से 2 मिनट तक कैप्चर करें, भले ही वह हो चुका हो।",
+    "Benefits": {
+      "AlwaysReady": "सदैव तैयार",
+      "LocalOnly": "केवल लोकल (पूर्ण गोपनीयता)",
+      "MultipleCaptures": "कई कैप्चर - बफ़र चलता रहता है",
+      "NoPlan": "कोई योजना आवश्यक नहीं",
+      "Offline": "ऑफलाइन काम करता है",
+      "Title": "प्रमुख लाभ"
+    },
     "BestFor": "के लिए श्रेष्ठ:",
-    "VisualStates": {
-      "Title": "दृश्य स्थिति संकेतक",
-      "OffLabel": "बंद",
-      "Off": "ग्रे, स्थैतिक वेवफॉर्म",
-      "ChargingLabel": "चार्जिंग",
-      "Charging": "एम्बर/पीला, बफ़र भर रहा है",
-      "ReadyLabel": "तैयार",
-      "Ready": "हरा, बफ़र भरा हुआ"
-    },
-    "SpecLabel": {
-      "Buffer": "बफ़र:",
-      "Memory": "मेमोरी:",
-      "Captures": "कैप्चर:"
-    },
-    "Modes": {
-      "Title": "दो फ्लैशबैक मोड",
-      "Audio": {
-        "Title": "ऑडियो फ्लैशबैक",
-        "Buffer": "30 सेकंड (स्थिर)",
-        "Memory": "लगभग 30-50 एमबी मेमोरी",
-        "Captures": "माइक्रोफोन और/या सिस्टम ऑडियो",
-        "BestFor": "बैठकों, फोन कॉल, वॉयस कनवर्सेशन की रिकॉर्डिंग के लिए"
-      },
-      "Video": {
-        "Title": "वीडियो फ्लैशबैक",
-        "Buffer": "10s, 30s, 60s, 90s, या 120s",
-        "Memory": "50-600 MB RAM",
-        "Captures": "स्क्रीन वीडियो + ऑडियो",
-        "BestFor": "प्रस्तुतियाँ, गेमिंग हाइलाइट्स, स्क्रीन शेयरिंग सैशन्स, दृश्य सामग्री"
-      }
-    },
-    "HowItWorks": {
-      "Title": "यह कैसे काम करता है",
-      "Step1": {
-        "Title": "फ्लैशबैक सक्षम करें",
-        "Desc": "फ्लैशबैक बटन पर क्लिक करें ऑन करने के लिए। बफ़र स्वचालित रूप से भरने लगेगा।"
-      },
-      "Step2": {
-        "Title": "तैयार होने का इंतज़ार करें",
-        "Desc": "हरे स्टेटस का ध्यान रखें। बफ़र 90% तक भरना जरूरी है ताकि आप अतीत को कैप्चर कर सकें।"
-      },
-      "Step3": {
-        "Title": "रिकॉर्डिंग शुरू करें",
-        "Desc": "जब कुछ महत्वपूर्ण होता है, तो रिकॉर्ड करें। Flashback बफ़र को ग्रैब करता है और आगे रिकॉर्डिंग जारी रखता है।"
-      }
-    },
-    "Scenarios": {
-      "Title": "व्यावहारिक परिदृश्य",
-      "OhNo": {
-        "Title": "\"अरे नहीं!\" पल",
-        "Desc": "सहकर्मी कुछ महत्वपूर्ण कहता है। आप समझ जाते हैं कि इसे रिकॉर्ड करना है। रिकॉर्ड बटन दबाएँ → फ्लैशबैक अंतिम 30 सेकंड तक का रिकॉर्ड करता है (उस पल सहित)।"
-      },
-      "Gaming": {
-        "Title": "गेमिंग हाइलाइट",
-        "Desc": "एक शानदार कॉम्बो पूरा करें। तुरंत रिकॉर्ड बटन दबाएँ। फ्लैशबैक उस गेमप्ले को उस कॉम्बो और आपकी प्रतिक्रिया तक कैप्चर करता है।"
-      },
-      "Decision": {
-        "Title": "महत्वपूर्ण निर्णय",
-        "Desc": "वकील अनुबंध की क्लॉज़ समझाते हैं। स्पष्टीकरण को रिकॉर्ड करने के लिए रिकॉर्ड बटन दबाएँ। ऐसा करके आपके पास एक पूरी, सटीक रिकॉर्ड रहेगा जिसे बाद में समीक्षा किया जा सके।"
-      }
-    },
+    "Close": "बंद करें",
     "Comparison": {
-      "Title": "फ़्लैशबैक बनाम पारंपरिक रिकॉर्डिंग",
+      "Capture": {
+        "Feature": "क्षण कैप्चर करें",
+        "Flashback": "आप के पास |moment| के बाद शुरू कर सकते हैं",
+        "Traditional": "यदि आप भूल जाएं, तो यह खो जाएगा"
+      },
       "Header": {
         "Feature": "विशेषता",
-        "Traditional": "\"पारंपरिक रिकॉर्डिंग\"",
-        "Flashback": "फ़्लैशबैक रिकॉर्डिंग"
+        "Flashback": "फ़्लैशबैक रिकॉर्डिंग",
+        "Traditional": "\"पारंपरिक रिकॉर्डिंग\""
       },
       "Planning": {
         "Feature": "योजना",
-        "Traditional": "|moment| से पहले शुरू करना जरूरी है",
-        "Flashback": "कोई योजना की आवश्यकता नहीं है"
-      },
-      "Capture": {
-        "Feature": "क्षण कैप्चर करें",
-        "Traditional": "यदि आप भूल जाएं, तो यह खो जाएगा",
-        "Flashback": "आप के पास |moment| के बाद शुरू कर सकते हैं"
+        "Flashback": "कोई योजना की आवश्यकता नहीं है",
+        "Traditional": "|moment| से पहले शुरू करना जरूरी है"
       },
       "Result": {
         "Feature": "परिणाम",
-        "Traditional": "\"काश मैंने उसे रिकॉर्ड किया होता\"",
-        "Flashback": "\"मुझे खुशी है कि मैंने इसे कैप्चर किया\""
-      }
-    },
-    "Benefits": {
-      "Title": "प्रमुख लाभ",
-      "NoPlan": "कोई योजना आवश्यक नहीं",
-      "AlwaysReady": "सदैव तैयार",
-      "Offline": "ऑफलाइन काम करता है",
-      "LocalOnly": "केवल लोकल (पूर्ण गोपनीयता)",
-      "MultipleCaptures": "कई कैप्चर - बफ़र चलता रहता है"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "दैनिक उपयोग के लिए ऑडियो फ़्लैशबैक",
-        "Desc": "बैठकें और कॉल के लिए 30 सेकंड का ऑडियो फ़्लैशबैक का प्रयोग करें। कम मेमोरी उपयोग, विश्वसनीयता से काम करता है।"
+        "Flashback": "\"मुझे खुशी है कि मैंने इसे कैप्चर किया\"",
+        "Traditional": "\"काश मैंने उसे रिकॉर्ड किया होता\""
       },
-      "VideoSpecial": {
-        "Title": "विशेष पलों के लिए वीडियो फ़्लैशबैक",
-        "Desc": "\"प्रस्तुतियों, गेमिंग हाइलाइट्स या किसी भी दृश्य सामग्री को संरक्षित करने के लिए Video Flashback (30 सेकंड बफ़र) सक्षम करें।\""
-      },
-      "Memory": {
-        "Title": "मेमोरी प्रबंधन",
-        "Desc": "2 मिनट के वीडियो फ़्लैशबैक के साथ: पूरी एप्लिकेशन 1GB RAM से कम लेती है।"
-      }
+      "Title": "फ़्लैशबैक बनाम पारंपरिक रिकॉर्डिंग"
     },
     "GotIt": "समझ गया",
-    "OpenSettings": "सेटिंग्स खोलें"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "फ्लैशबैक बटन पर क्लिक करें ऑन करने के लिए। बफ़र स्वचालित रूप से भरने लगेगा।",
+        "Title": "फ्लैशबैक सक्षम करें"
+      },
+      "Step2": {
+        "Desc": "हरे स्टेटस का ध्यान रखें। बफ़र 90% तक भरना जरूरी है ताकि आप अतीत को कैप्चर कर सकें।",
+        "Title": "तैयार होने का इंतज़ार करें"
+      },
+      "Step3": {
+        "Desc": "जब कुछ महत्वपूर्ण होता है, तो रिकॉर्ड करें। Flashback बफ़र को ग्रैब करता है और आगे रिकॉर्डिंग जारी रखता है।",
+        "Title": "रिकॉर्डिंग शुरू करें"
+      },
+      "Title": "यह कैसे काम करता है"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "बैठकों, फोन कॉल, वॉयस कनवर्सेशन की रिकॉर्डिंग के लिए",
+        "Buffer": "30 सेकंड (स्थिर)",
+        "Captures": "माइक्रोफोन और/या सिस्टम ऑडियो",
+        "Memory": "लगभग 30-50 एमबी मेमोरी",
+        "Title": "ऑडियो फ्लैशबैक"
+      },
+      "Title": "दो फ्लैशबैक मोड",
+      "Video": {
+        "BestFor": "प्रस्तुतियाँ, गेमिंग हाइलाइट्स, स्क्रीन शेयरिंग सैशन्स, दृश्य सामग्री",
+        "Buffer": "10s, 30s, 60s, 90s, या 120s",
+        "Captures": "स्क्रीन वीडियो + ऑडियो",
+        "Memory": "50-600 MB RAM",
+        "Title": "वीडियो फ्लैशबैक"
+      }
+    },
+    "OpenSettings": "सेटिंग्स खोलें",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "वकील अनुबंध की क्लॉज़ समझाते हैं। स्पष्टीकरण को रिकॉर्ड करने के लिए रिकॉर्ड बटन दबाएँ। ऐसा करके आपके पास एक पूरी, सटीक रिकॉर्ड रहेगा जिसे बाद में समीक्षा किया जा सके।",
+        "Title": "महत्वपूर्ण निर्णय"
+      },
+      "Gaming": {
+        "Desc": "एक शानदार कॉम्बो पूरा करें। तुरंत रिकॉर्ड बटन दबाएँ। फ्लैशबैक उस गेमप्ले को उस कॉम्बो और आपकी प्रतिक्रिया तक कैप्चर करता है।",
+        "Title": "गेमिंग हाइलाइट"
+      },
+      "OhNo": {
+        "Desc": "सहकर्मी कुछ महत्वपूर्ण कहता है। आप समझ जाते हैं कि इसे रिकॉर्ड करना है। रिकॉर्ड बटन दबाएँ → फ्लैशबैक अंतिम 30 सेकंड तक का रिकॉर्ड करता है (उस पल सहित)।",
+        "Title": "\"अरे नहीं!\" पल"
+      },
+      "Title": "व्यावहारिक परिदृश्य"
+    },
+    "SpecLabel": {
+      "Buffer": "बफ़र:",
+      "Captures": "कैप्चर:",
+      "Memory": "मेमोरी:"
+    },
+    "Subtitle": "आपका व्यक्तिगत टाइम मशीन",
+    "SubtitleDesc": "कभी भी कोई महत्वपूर्ण क्षण न चूकें—अतीत से 2 मिनट तक कैप्चर करें, भले ही वह हो चुका हो।",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "बैठकें और कॉल के लिए 30 सेकंड का ऑडियो फ़्लैशबैक का प्रयोग करें। कम मेमोरी उपयोग, विश्वसनीयता से काम करता है।",
+        "Title": "दैनिक उपयोग के लिए ऑडियो फ़्लैशबैक"
+      },
+      "Memory": {
+        "Desc": "2 मिनट के वीडियो फ़्लैशबैक के साथ: पूरी एप्लिकेशन 1GB RAM से कम लेती है।",
+        "Title": "मेमोरी प्रबंधन"
+      },
+      "VideoSpecial": {
+        "Desc": "\"प्रस्तुतियों, गेमिंग हाइलाइट्स या किसी भी दृश्य सामग्री को संरक्षित करने के लिए Video Flashback (30 सेकंड बफ़र) सक्षम करें।\"",
+        "Title": "विशेष पलों के लिए वीडियो फ़्लैशबैक"
+      }
+    },
+    "Title": "फ्लैशबैक रिकॉर्डिंग",
+    "VisualStates": {
+      "Charging": "एम्बर/पीला, बफ़र भर रहा है",
+      "ChargingLabel": "चार्जिंग",
+      "Off": "ग्रे, स्थैतिक वेवफॉर्म",
+      "OffLabel": "बंद",
+      "Ready": "हरा, बफ़र भरा हुआ",
+      "ReadyLabel": "तैयार",
+      "Title": "दृश्य स्थिति संकेतक"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "प्रारंभ",
-    "AutoStartLabel": "ऑटो-स्टार्ट फ़्लैशबैक",
+    "AutoStartAudio": "ऑडियो फ़्लैशबैक",
     "AutoStartDesc": "ऐप लॉन्च होने पर फ़्लैशबैक शुरू करें",
     "AutoStartDisable": "ऑटो-स्टार्ट निष्क्रिय करें",
-    "AutoStartAudio": "ऑडियो फ़्लैशबैक",
+    "AutoStartLabel": "ऑटो-स्टार्ट फ़्लैशबैक",
     "AutoStartScreen": "स्क्रीन फ़्लैशबैक",
-    "BufferTitle": "बफ़र",
-    "BufferDurationLabel": "बफ़र अवधि",
     "BufferDurationDesc": "ऑडियो/वीडियो बफ़र की अवधि कितनी लंबी रखनी है",
-    "DurationOption": "{{duration}} सेकंड"
+    "BufferDurationLabel": "बफ़र अवधि",
+    "BufferTitle": "बफ़र",
+    "DurationOption": "{{duration}} सेकंड",
+    "StartupTitle": "प्रारंभ"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "फ्लैशबैक बफ़र खाली है। कृपया कुछ समय बाद पुनः प्रयास करें।",
+    "EnableFlashback": "एक पल को सुरक्षित करने के लिए फ्लैशबैक को सक्षम करें।",
+    "FailedToSave": "फ्लैशबैक बफ़र को सहेजने में विफल।",
+    "SavedFlashback": "रिकॉर्डिंग में फ्लैशबैक सहेजा गया है।",
+    "StillCharging": "फ्लैशबैक बफ़र अभी भी चार्जिंग में है।"
   },
   "FloatingStartBar": {
-    "CloseTooltip": "टूलटिप बंद करें",
-    "BluetoothMicTitle": "⚠️ ब्लूटूथ माइक्रोफ़ोन",
     "BluetoothMicDesc": "आपका OS \"कम्युनिकेशन मोड\" फोर्स कर सकता है, जिससे विकृतियाँ हो सकती हैं।",
     "BluetoothMicTipLabel": "सुझाव:",
     "BluetoothMicTipText": "बेहतर गुणवत्ता के लिए नॉन-ब्लूटूथ माइक्रोफ़ोन का उपयोग करें।",
+    "BluetoothMicTitle": "⚠️ ब्लूटूथ माइक्रोफ़ोन",
+    "CloseTooltip": "टूलटिप बंद करें",
     "FailedToLoadScreens": "स्क्रीन लोड करने में विफल। कृपया पुनः प्रयास करें।",
     "FailedToLoadWindows": "विंडोज लोड करने में विफल। कृपया पुनः प्रयास करें।",
     "MicrophoneMuted": "माइक्रोफ़ोन: म्यूट",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "कोई माइक्रोफ़ोन नहीं मिला",
     "NoScreensDetected": "कोई स्क्रीन नहीं मिली।",
     "NoWindowsDetected": "कोई विंडो नहीं मिली। कृपया कोई एप्लिकेशन विंडो खोलें और पुनः प्रयास करें।",
+    "RegionReady": "क्षेत्र तैयार",
+    "RegionRequired": "रिकॉर्डिंग से पहले क्षेत्र का चयन आवश्यक है।",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "इस प्लेटफ़ॉर्म पर स्क्रीन विकल्प उपलब्ध नहीं है।",
     "SelectMicrophone": "माइक्रोफ़ोन चुनें",
+    "SelectRegion": "क्षेत्र चुनें",
+    "SelectScreen": "एक डिस्प्ले चुनें",
+    "SelectWindow": "एक विंडो का चयन करें",
     "StartRecording": "रिकॉर्डिंग शुरू करें",
     "SystemAudioOff": "सिस्टम ऑडियो निष्क्रिय",
     "SystemAudioOn": "सिस्टम ऑडियो: चालू",
     "WaitingForRegion": "क्षेत्र का इंतजार कर रहा है…",
     "WindowNotAvailable": "इस प्लेटफ़ॉर्म पर विंडो का चयन उपलब्ध नहीं है।",
-    "SelectScreen": "एक डिस्प्ले चुनें",
-    "SelectWindow": "एक विंडो का चयन करें",
-    "WindowRequired": "रिकॉर्डिंग के लिए एक विंडो का चयन आवश्यक है।",
-    "RegionReady": "क्षेत्र तैयार",
-    "SelectRegion": "क्षेत्र चुनें",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "रिकॉर्डिंग से पहले क्षेत्र का चयन आवश्यक है।"
+    "WindowRequired": "रिकॉर्डिंग के लिए एक विंडो का चयन आवश्यक है।"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "फुलस्क्रीन चयनित",
-    "ClickToRecord": "फ़्लोटिंग बार में स्टार्ट रिकॉर्डिंग पर क्लिक करें ताकि चुनी गई क्षेत्र को रिकॉर्ड किया जा सके"
+    "ClickToRecord": "फ़्लोटिंग बार में स्टार्ट रिकॉर्डिंग पर क्लिक करें ताकि चुनी गई क्षेत्र को रिकॉर्ड किया जा सके",
+    "FullscreenSelected": "फुलस्क्रीन चयनित"
+  },
+  "GeminiLive": {
+    "AITranscription": "एआई प्रतिलेखन",
+    "CollapseNowSpeaking": "गिर जाना",
+    "EnableDescription": "रिकॉर्डिंग के दौरान जेमिनी द्वारा संचालित वास्तविक समय प्रतिलेखन",
+    "EnableIntegration": "लाइव एआई ट्रांसक्रिप्शन सक्षम करें",
+    "Error": "गलती",
+    "ExpandNowSpeaking": "बढ़ाना",
+    "NowSpeaking": "अब बोल रहा हूँ...",
+    "SegmentCount_one": "{{count}} खंड",
+    "SegmentCount_other": "{{count}} खंड",
+    "WaitingForConnection": "कनेक्ट हो रहा है...",
+    "WaitingForSpeech": "भाषण की प्रतीक्षा में..."
   },
   "IdleCompactView": {
     "ArmFlashback": "आर्म फ़्लैशबैक",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  ईमेल कॉपी करें",
     "EmailCopied": "✅  ईमेल क्लिपबोर्ड पर कॉपी हो गया"
   },
-  "JumpList": {
-    "RecordAudio": "ऑडियो रिकॉर्डिंग शुरू करें",
-    "RecordAudioDesc": "ऑडियो (मिक्स्ड) रिकॉर्डिंग शुरू करें",
-    "RecordFullscreen": "पूर्णपर्ण स्क्रीन रिकॉर्ड करें",
-    "RecordFullscreenDesc": "पूर्ण स्क्रीन वीडियो रिकॉर्डिंग शुरू करें",
-    "RecordRegion": "रिकॉर्ड करने के लिए क्षेत्र स्नैप करें",
-    "RecordRegionDesc": "रिकॉर्ड करने के लिए स्क्रीन क्षेत्र चुनें",
-    "TakeScreenshot": "स्क्रीनशॉट लें",
-    "TakeScreenshotDesc": "स्क्रीन का एक क्षेत्र कैप्चर करें",
-    "OpenRecordingsFolder": "रिकॉर्डिंग फ़ोल्डर खोलें",
-    "OpenRecordingsFolderDesc": "डिफ़ॉल्ट रिकॉर्डिंग फ़ोल्डर खोलें"
-  },
   "MeetingPrompt": {
-    "StartTitle": "बैठक का पता चला",
-    "StartMessage": "क्या आप {{appName}} पर बैठक कर रहे हैं? क्या मैं अभी बैठक रिकॉर्ड करूँ?",
     "BrowserHint": "💡 टिप: ब्राउज़र बैठकों (Google Meet, Zoom, Teams) के लिए, मैं केवल ब्राउज़र का पता लगा सकता हूँ, विशेष वेबसाइट का नहीं।",
-    "RememberChoice": "मेरा विकल्प याद रखें और फिर संकेत न करें",
-    "Yes": "रिकॉडिंग शुरू करें",
-    "No": "रद्द करें",
-    "EndTitle": "बैठक समाप्त",
-    "EndMessage": "मुझे {{appName}} पर बैठक समाप्त होने का पता चला है। क्या आप चाहेंगे कि मैं रिकॉर्डिंग रोक दूँ?",
     "ContinueRecording": "रिकॉर्डिंग जारी रखें",
+    "EndMessage": "मुझे {{appName}} पर बैठक समाप्त होने का पता चला है। क्या आप चाहेंगे कि मैं रिकॉर्डिंग रोक दूँ?",
+    "EndTitle": "बैठक समाप्त",
+    "No": "रद्द करें",
     "Pause": "पॉज़ करें",
-    "Resume": "फिर से शुरू करें",
-    "Stop": "रोकें",
+    "PlayRecording": "चलाएँ",
     "RecordingSaved": "रिकॉर्डिंग सहेजी गई",
     "RecordingSavedWithFilename": "{{fileName}} सहेजा गया",
+    "RememberChoice": "मेरा विकल्प याद रखें और फिर संकेत न करें",
     "RenameFile": "पुनः नामकरण करें",
     "ShowInFolder": "फ़ोल्डर में दिखाएँ",
-    "PlayRecording": "चलाएँ",
+    "StartMessage": "क्या आप {{appName}} पर बैठक कर रहे हैं? क्या मैं अभी बैठक रिकॉर्ड करूँ?",
+    "StartTitle": "बैठक का पता चला",
     "StopRecording": "रिकॉर्डिंग रोकें",
-    "Saving": "सेव हो रहा है..."
+    "Yes": "रिकॉडिंग शुरू करें"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "क्रिया आइटम",
+    "CollapseNowSpeaking": "अभी बोलना संक्षेप करें",
+    "ConnectionError": "SeaMeet से जुड़ने में विफल रहा",
+    "Content": "SeaMeet सामग्री",
+    "DueDate": "अंतिम तिथि: {{date}}",
+    "EnableIntegration": "SeaMeet ट्रांसक्रिप्शन सक्षम करें",
+    "ExpandNowSpeaking": "अभी बोलना बढ़ाएँ",
+    "FetchError": "ट्रांसक्रिप्शन लोड करने में विफल",
+    "LanguageHint": "आप रिकॉर्डिंग के दौरान आप भाषा बदल सकते हैं",
+    "LiveTranscription": "लाइव ट्रांसक्रिप्शन",
+    "LoadingContent": "SeaMeet सामग्री लोड हो रहा है...",
+    "LoadingTranscript": "ट्रांसक्रिप्शन लोड हो रहा है",
+    "NoActionItems": "इस बैठक के लिए कोई कार्यवाही आइटम नहीं हैं",
+    "NoNotes": "इस बैठक के लिए कोई नोट्स नहीं",
+    "NoSummary": "सारांश अभी उपलब्ध नहीं है।",
+    "Notes": "नोट्स",
+    "NoTranscript": "कोई ट्रांसक्रिप्शन उपलब्ध नहीं",
+    "NoTranslation": "कोई अनुवाद उपलब्ध नहीं",
+    "NowSpeaking": "वर्तमान में बोल रहे हैं...",
+    "Retry": "पुनः प्रयास करें",
+    "SeekToTime": "इस समय से प्ले करने के लिए क्लिक करें",
+    "SegmentCount_one": "{{count}} खंड",
+    "SegmentCount_other": "{{count}} खंड",
+    "SignInRequired": "Sign in required → साइन इन आवश्यक है",
+    "Summary": "सारांश",
+    "Transcribed": "ट्रांसक्रिप्ट किया गया",
+    "Transcript": "ट्रांसक्रिप्ट",
+    "TranscriptionLanguage": "ट्रांसक्रिप्शन माध्यम",
+    "TranslationLanguage": "अनुवाद भाषा",
+    "UnknownSpeaker": "वक्ता",
+    "WaitingForSpeech": "भाषण का इंतजार हो रहा है..."
   },
   "MinimizedView": {
     "ActionRequired": "कार्यवाही आवश्यक (ऑटो-रिकॉर्ड)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "स्क्रीन फ्लैशबैक चार्जिंग...",
     "ScreenRecording": "स्क्रीन रिकॉर्डिंग ({{time}})"
   },
+  "Pause": "विराम",
   "Permissions": {
-    "AutoRecordNextTime": "क्या आप अगले बार इस ऐप को ऑटो रिकॉर्ड करना चाहते हैं?",
     "AlwaysAutoRecord": "हमेशा ऑटो रिकॉर्ड",
-    "NeverRecord": "कभी न रिकॉर्ड करें",
     "AskEveryTime": "हर बार पूछें",
-    "AutoRecordStarted": "ऑटो-रिकॉर्डिंग शुरू हुई",
+    "AutoRecordNextTime": "क्या आप अगले बार इस ऐप को ऑटो रिकॉर्ड करना चाहते हैं?",
     "AutoRecordReason": "{{app}} को हमेशा ऑटो रिकॉर्ड पर सेट किया गया है। Settings -> Auto Record में ऐप रिकॉर्ड अनुमति बदलें।",
-    "ChangeInSettings": "सेटिंग्स में बदलाव",
-    "GuidanceTitle": ": SeaMeet हर बार रिकॉर्ड करने के लिए आपसे अनुमति मांगेगा",
+    "AutoRecordStarted": "ऑटो-रिकॉर्डिंग शुरू हुई",
+    "AutoStartAudioRule": "यदि डिफ़ॉल्ट रिकॉर्डिंग मोड ऑडियो है, तो SeaMeet बिना पूछे ही तुरंत रिकॉर्डिंग शुरू कर देगा।",
+    "AutoStartFallbackRule": "सभी अन्य मामलों में, SeaMeet रिकॉर्डिंग मोड सेलेक्टर दिखाएगा ताकि आप चुन सकें।",
+    "AutoStartFullscreenRule": "यदि डिफ़ॉल्ट रिकॉर्डिंग मोड फुलस्क्रीन है और केवल एक स्क्रीन कनेक्टेड है, तो SeaMeet तुरंत रिकॉर्डिंग शुरू कर देगा।",
+    "AutoStartHeuristicsTitle": "ऑटो-स्टार्ट व्यवहार (हमेशा ऑटो रिकॉर्ड)",
     "GuidanceAlways": ": SeaMeet बिना पुष्टि मांगे ही ऑटो रिकॉर्ड करेगा।",
     "GuidanceAsk": ": SeaMeet आपसे हर बार रिकॉर्डिंग के लिए अनुमति मांगेगा",
     "GuidanceNever": ": SeaMeet आपको रिकॉर्ड करने के लिए प्रॉम्प्ट नहीं करेगा",
-    "AutoStartHeuristicsTitle": "ऑटो-स्टार्ट व्यवहार (हमेशा ऑटो रिकॉर्ड)",
-    "AutoStartAudioRule": "यदि डिफ़ॉल्ट रिकॉर्डिंग मोड ऑडियो है, तो SeaMeet बिना पूछे ही तुरंत रिकॉर्डिंग शुरू कर देगा।",
-    "AutoStartFullscreenRule": "यदि डिफ़ॉल्ट रिकॉर्डिंग मोड फुलस्क्रीन है और केवल एक स्क्रीन कनेक्टेड है, तो SeaMeet तुरंत रिकॉर्डिंग शुरू कर देगा।",
-    "AutoStartFallbackRule": "सभी अन्य मामलों में, SeaMeet रिकॉर्डिंग मोड सेलेक्टर दिखाएगा ताकि आप चुन सकें।"
+    "GuidanceTitle": ": SeaMeet हर बार रिकॉर्ड करने के लिए आपसे अनुमति मांगेगा",
+    "NeverRecord": "कभी न रिकॉर्ड करें"
+  },
+  "PipelineStatus": {
+    "Done": "सारांश तैयार",
+    "Error": "प्रसंस्करण विफल रहा",
+    "Progress": "{{total}} का प्रसंस्करण भाग {{current}}",
+    "Queued": "सारांश पंक्तिबद्ध...",
+    "Running": "सारांश तैयार किया जा रहा है..."
   },
   "Player": {
     "Mute": "म्यूट करें",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "प्लेबैक बंद करें",
-    "MoreOptions": "अधिक विकल्प",
-    "CodecInfo": "Codec जानकारी"
+    "CodecInfo": "Codec जानकारी",
+    "MoreOptions": "अधिक विकल्प"
+  },
+  "RecordingControls": {
+    "AudioRecording": "ऑडियो रिकॉर्डिंग",
+    "ContinueRecording": "रिकॉर्डिंग जारी रखें",
+    "RecordingAudio": "ऑडियो रिकॉर्डिंग",
+    "RecordingMode": "रिकार्डिंग मोड",
+    "RecordingPreview": "रिकॉर्डिंग का पूर्वावलोकन",
+    "RecordingScreen": "स्क्रीन की रिकॉर्डिंग..",
+    "StartRecording": "रिकॉर्डिंग शुरू करें",
+    "Stop": "रोकें",
+    "StopRecording": "रिकॉर्डिंग रोकें",
+    "VideoRecording": "वीडियो रिकॉर्डिंग"
+  },
+  "RecordingModes": {
+    "AreaCapture": "क्षेत्र कैप्चर",
+    "CaptureMode": "कैप्चर मोड",
+    "FullScreen": "पूरा स्क्रीन",
+    "RecordAudio": "ऑडियो",
+    "RecordAudioTip": "केवल ऑडियो",
+    "RecordFullscreen": "पूरा स्क्रीन",
+    "RecordFullscreenTip": "अपने पूरे स्क्रीन को कैप्चर करें",
+    "RecordRegion": "क्षेत्र",
+    "RecordRegionTip": "कस्टम क्षेत्र पकड़ें",
+    "RecordWindow": "विंडो",
+    "RecordWindowTip": "एक व्यक्तिगत ऐप विंडो को कैप्चर करें"
+  },
+  "RecordingsList": {
+    "CopyFileName": "फ़ाइल नाम कॉपी करें",
+    "CopyFilePath": "फ़ाइल पथ कॉपी करें",
+    "FileNameCopied": "{{fileName}} कॉपी किया गया।",
+    "FilePathCopied": "फ़ाइल पथ कॉपी किया गया।",
+    "OpenSaveFolder": "फ़ोल्डर खोलें",
+    "RecentCaptures": "हाल की कैप्चरें",
+    "Recovered_one": "{{count}} रिकॉर्डिंग बरामद हुई",
+    "Recovered_other": "{{count}} रिकॉर्डिंग बरामद की गईं",
+    "RefreshRecordings": "रीफ़्रेश करें",
+    "SaveAs": "के रूप में सहेजें",
+    "SearchRecordingsOrSnapshots": "रिकॉर्डिंगें और स्नैपशॉट्स खोजें",
+    "ShowInFolder": "फ़ोल्डर में दिखाएँ"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "फ़ाइल",
-    "Microphone": "माइक्रोफोन",
-    "App": "{{appName}}"
+    "Microphone": "माइक्रोफोन"
   },
   "RegionSelector": {
     "CaptureButton": "स्क्रीन का स्नैपशॉट लें या Enter दबाएँ",
@@ -443,84 +807,73 @@
     "Monitor": "मॉनिटर",
     "PrimaryMonitor": "प्राथमिक मॉनिटर"
   },
-  "Reliability": {
-    "Stable": "स्थिर",
-    "Experimental": "प्रयोगात्मक",
-    "NotTested": "परीक्षण नहीं किया गया"
-  },
+  "Resume": "फिर शुरू करना",
   "RingMenu": {
+    "AutoDetectOff": "ऑटो डिटेक्ट: OFF",
+    "AutoDetectOn": "ऑटो डिटेक्ट: ON",
     "FlashbackCharging": "फ्लैशबैक चार्ज हो रहा है...",
     "FlashbackNotCharged": "फ्लैशबैक चार्ज नहीं है। ऑडियो फ्लैशबैक के लिए एक बार क्लिक करें, और स्क्रीन फ्लैशबैक के लिए दो बार।",
     "FlashbackSaveTooltip": "अंतिम {{duration}} सेकंड {{mode}} का फ्लैशबैक सहेजें, एक बार क्लिक करें। रिकॉर्डिंग यहाँ से जारी रखने के लिए डबल क्लिक करें।",
-    "RecordRegion": "क्षेत्र रिकॉर्ड करें",
-    "RecordFullscreen": "पूर्ण स्क्रीन रिकॉर्डिंग",
-    "TakeScreenshot": "स्नैपशॉट लें",
-    "AutoDetectOn": "ऑटो डिटेक्ट: ON",
-    "AutoDetectOff": "ऑटो डिटेक्ट: OFF",
     "RecordAudio": "ऑडियो रिकॉर्ड करें",
-    "RecordWindow": "विंडो में रिकॉर्डिंग"
+    "RecordFullscreen": "पूर्ण स्क्रीन रिकॉर्डिंग",
+    "RecordRegion": "क्षेत्र रिकॉर्ड करें",
+    "RecordWindow": "विंडो में रिकॉर्डिंग",
+    "TakeScreenshot": "स्नैपशॉट लें"
   },
   "ScreenPicker": {
-    "Title": "डिस्प्ले चुनें",
     "Instruction": "पूर्णस्क्रीन रिकॉर्डिंग के लिए डिस्प्ले चुनें।",
-    "Refresh": "रिफ्रेश",
-    "Refreshing": "रिफ्रेश कर रहा है…",
     "Loading": "डिस्प्ले लोड हो रहे हैं…",
     "None": "कोई डिस्प्ले नहीं मिला।",
+    "Refresh": "रिफ्रेश",
+    "Refreshing": "रिफ्रेश कर रहा है…",
+    "Title": "डिस्प्ले चुनें",
     "Unknown": "अनाम डिस्प्ले"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "विश्लेषण",
+    "ButtonLabel": "एआई के साथ प्रक्रिया",
+    "Custom": "कस्टम प्रॉम्प्ट",
+    "CustomPlaceholder": "इस छवि के बारे में कुछ भी पूछें...",
+    "Describe": "छवि का वर्णन करें",
+    "DescribeSub": "इस स्क्रीनशॉट में क्या है?",
+    "Description": "विवरण",
+    "ExtractedText": "निकाला गया पाठ",
+    "Ocr": "पाठ निकालें (ओसीआर)",
+    "OcrSub": "सभी दृश्यमान पाठ पढ़ें",
+    "PipelineError": "एआई प्रोसेसिंग विफल रही. कृपया पुन: प्रयास करें।",
+    "ProcessingWithTime": "प्रसंस्करण... {{sec}}s",
+    "Queuing": "कतारबद्ध...",
+    "ResultLabel": "एआई परिणाम",
+    "UnknownError": "अज्ञात त्रुटि"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "कॉपी किया!",
     "CopyFailed": "स्क्रीनशॉट को क्लिपबोर्ड पर कॉपी करने में विफल",
     "CopyToClipboard": "क्लिपबोर्ड पर कॉपी करें",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C) करें।",
-    "Delete": "मिटाएँ",
     "Dimensions": "आयाम",
     "FileSize": "फ़ाइल का आकार",
-    "Filename": "फ़ाइल नाम",
     "OpenInSystemViewer": "सिस्टम व्यूअर में खोलें",
-    "Rename": "नाम बदलें",
     "ScreenshotCopied": "स्क्रीनशॉट क्लिपबोर्ड पर कॉपी किया गया",
     "Share": "साझा करें",
     "ShareCompleted": "साझा करना पूर्ण हुआ",
     "ShareFailed": "स्नैपशॉट साझा करने में समर्थ नहीं है। कृपया मैनुअली खोलें और साझा करें।",
-    "ShareNotSupported": "इस प्लेटफ़ॉर्म पर स्थानीय शेयरिंग समर्थित नहीं है। इसके बजाय, कॉपी-टू क्लिपबोर्ड का उपयोग करें।",
     "Sharing": "शेयरिंग...",
-    "Timestamp": "समयचिह्न",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "सेटिंग्स",
     "About": {
       "CheckForUpdates": "अपडेट जांचें",
       "CheckingUpdates": "अपडेट जांच रहा है…",
-      "UpdateAvailable": "नया संस्करण {{version}} उपलब्ध है",
-      "UpdateReady": "संस्करण {{version}} इंस्टॉल के लिए तैयार है",
-      "NoUpdatesAvailable": "कोई अपडेट उपलब्ध नहीं है",
       "InstallNow": "अभी इंस्टॉल करें",
-      "TermsOfService": "सेवा की शर्तें",
-      "PrivacyPolicy": "गोपनीयता नीति",
       "LegalToggle": {
+        "FullVersion": "पूर्ण संस्करण",
         "OneSentence": "1‑वाक्य",
-        "TLDR": "TLDR",
-        "FullVersion": "पूर्ण संस्करण"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet एक मुफ्त, प्राइवेसी-फर्स्ट रिकॉर्डर है जहाँ स्थानीय उपयोग के लिए कोई खाता आवश्यक नहीं है, आपका डेटा आपका ही रहता है, क्लाउड सुविधाएँ वैकल्पिक हैं, और रिकॉर्डिंग से पहले अनुमति लेनी आवश्यक है।",
-        "TLDRTitle": "SeaMeet Terms — बिज़ी ह्यूमंस के लिए संक्षेप",
-        "TLDRItems": [
-          "SeaMeet Desktop मुफ्त है — सभी गैर-AI सुविधाएँ बिना किसी खाता या लॉगिन के काम करती हैं।",
-          "रिकॉर्डिंग से पहले अनुमति लें — SeaMeet यह जांच नहीं करता।",
-          "आपके रिकॉर्डिंग और ट्रांसक्रिप्शन आपकी हैं; SeaMeet केवल उन्हें सेवाएँ चलाने के लिए संसाधित करता है।",
-          "SeaMeet क्लाउड वैकल्पिक है: यदि आप क्लाउड पर अपलोड या रिकॉर्ड करना चुनते हैं, तो हम ऑडियो, ट्रांसक्रिप्शन और मीटिंग मेटाडेटा संसाधित करते हैं।",
-          "अनाम डायग्नॉस्टिक्स वैकल्पिक हैं और कभी भी बंद किए जा सकते हैं।",
-          "ऐप का दुरुपयोग न करें (गैरकानूनी उपयोग, हैकिंग नहीं)।",
-          "सेवा में परिवर्तन हो सकता है, और जिम्मेदारी सीमित है।"
-        ]
-      },
+      "NoUpdatesAvailable": "कोई अपडेट उपलब्ध नहीं है",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop आपके डिवाइस पर सभी रिकॉर्डिंग को पूरी तरह से लोकल और गोपनीय रखता है, और इसमें कोई खाता आवश्यक नहीं है। क्लाउड फीचर्स वैकल्पिक, एन्क्रिप्टेड हैं, और पूरी तरह आपके नियंत्रण में हैं।",
-        "TLDRTitle": "SeaMeet Privacy — व्यस्त मनुष्यों के लिए TLDR",
         "TLDRItems": [
           "SeaMeet Desktop प्राइवेट डिज़ाइन किया गया है: सभी डाटा आपके डिवाइस पर रहता है; हम ऑडियो, वीडियो, स्क्रीन सामग्री, या मीटिंग डेटा संग्रहित नहीं करते।",
           "डेस्कटॉप ऐप की नॉन‑AI फीचर्स उपयोग करने के लिए खाता आवश्यक नहीं है।",
@@ -530,734 +883,299 @@
           "आप अपना डेटा नियंत्रित कर सकते हैं — कभी भी रिकॉर्डिंग हटा सकते हैं या पूर्ण रूप से हटाने का अनुरोध कर सकते हैं।",
           "हम डेटा नहीं बेचते हैं, और क्लाउड रिकॉर्डिंग्स एन्क्रिप्टेड हैं।",
           "आप अपना डेटा नियंत्रित करते हैं — कभी भी रिकॉर्डिंग हटाएं या पूर्ण हटाने का अनुरोध करें।"
-        ]
+        ],
+        "TLDRTitle": "SeaMeet Privacy — व्यस्त मनुष्यों के लिए TLDR"
       },
+      "PrivacyPolicy": "गोपनीयता नीति",
       "PrivacySecurity": {
-        "Title": "गोपनीयता और सुरक्षा",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "ऑटो-डिटेक्ट बिना आपकी स्पष्ट अनुमति के कभी भी रिकॉर्डिंग स्वचालित रूप से शुरू नहीं करेगा।",
+            "Title": "स्पष्ट अनुमति आवश्यक"
+          },
           "MicrophoneActivity": {
-            "Title": "माइक्रोफ़ोन गतिविधि केवल",
-            "Description": "ऑटो-डिटेक्ट आपकी माइक्रोफ़ोन उपयोग का पता लगाता है ताकि यह निर्धारित किया जा सके कि किस ऐप का उपयोग हो रहा है। कोई डेटा नहीं लिया जाता है।"
+            "Description": "ऑटो-डिटेक्ट आपकी माइक्रोफ़ोन उपयोग का पता लगाता है ताकि यह निर्धारित किया जा सके कि किस ऐप का उपयोग हो रहा है। कोई डेटा नहीं लिया जाता है।",
+            "Title": "माइक्रोफ़ोन गतिविधि केवल"
           },
           "NoDataAccess": {
-            "Title": "कोई डेटा नहीं पहुँच",
-            "Description": "ऑटो-डिटेक्ट केवल यह पता लगाता है कि माइक्रोफ़ोन का उपयोग हो रहा है या नहीं। यह किसी भी रिकॉर्ड किए गए डेटा तक पहुँच नहीं रखता।"
-          },
-          "ExplicitApproval": {
-            "Title": "स्पष्ट अनुमति आवश्यक",
-            "Description": "ऑटो-डिटेक्ट बिना आपकी स्पष्ट अनुमति के कभी भी रिकॉर्डिंग स्वचालित रूप से शुरू नहीं करेगा।"
+            "Description": "ऑटो-डिटेक्ट केवल यह पता लगाता है कि माइक्रोफ़ोन का उपयोग हो रहा है या नहीं। यह किसी भी रिकॉर्ड किए गए डेटा तक पहुँच नहीं रखता।",
+            "Title": "कोई डेटा नहीं पहुँच"
           },
           "NoDataCollection": {
-            "Title": "डेटा संग्रह नहीं",
-            "Description": "SeaMeet कोई भी डेटा बिना आपकी अनुमति के ऑटो-डिटेक्ट फीचर से नहीं एकत्र करता।"
+            "Description": "SeaMeet कोई भी डेटा बिना आपकी अनुमति के ऑटो-डिटेक्ट फीचर से नहीं एकत्र करता।",
+            "Title": "डेटा संग्रह नहीं"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% स्थानीय",
-            "Description": "Flashback पूरी तरह से आपके स्थानीय मशीन पर चलता है। कुछ भी क्लाउड में सिंक नहीं किया जाता है।"
+          "EthicalUse": {
+            "Description": "दूसरों को रिकॉर्डिंग करने से पहले हमेशा सूचित करें और अनुमति प्राप्त करें।",
+            "Title": "नैतिक उपयोग"
           },
-          "RAMOnly": {
-            "Title": "RAM केवल",
-            "Description": "सभी डेटा मेमोरी में रहता है। जब तक आप Flashback रिकॉर्डिंग सहेजते हैं, कोई डेटा डिस्क पर नहीं लिखा जाता।"
+          "LocalOnly": {
+            "Description": "Flashback पूरी तरह से आपके स्थानीय मशीन पर चलता है। कुछ भी क्लाउड में सिंक नहीं किया जाता है।",
+            "Title": "100% स्थानीय"
           },
           "Protected": {
-            "Title": "संरक्षित",
-            "Description": "आपकी गोपनीयता और सुरक्षा सर्वोपरि हैं। आपका डेटा कभी भी आपके डिवाइस से बाहर नहीं जाता।"
+            "Description": "आपकी गोपनीयता और सुरक्षा सर्वोपरि हैं। आपका डेटा कभी भी आपके डिवाइस से बाहर नहीं जाता।",
+            "Title": "संरक्षित"
           },
-          "EthicalUse": {
-            "Title": "नैतिक उपयोग",
-            "Description": "दूसरों को रिकॉर्डिंग करने से पहले हमेशा सूचित करें और अनुमति प्राप्त करें।"
+          "RAMOnly": {
+            "Description": "सभी डेटा मेमोरी में रहता है। जब तक आप Flashback रिकॉर्डिंग सहेजते हैं, कोई डेटा डिस्क पर नहीं लिखा जाता।",
+            "Title": "RAM केवल"
           }
-        }
-      }
+        },
+        "Title": "गोपनीयता और सुरक्षा"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet एक मुफ्त, प्राइवेसी-फर्स्ट रिकॉर्डर है जहाँ स्थानीय उपयोग के लिए कोई खाता आवश्यक नहीं है, आपका डेटा आपका ही रहता है, क्लाउड सुविधाएँ वैकल्पिक हैं, और रिकॉर्डिंग से पहले अनुमति लेनी आवश्यक है।",
+        "TLDRItems": [
+          "SeaMeet Desktop मुफ्त है — सभी गैर-AI सुविधाएँ बिना किसी खाता या लॉगिन के काम करती हैं।",
+          "रिकॉर्डिंग से पहले अनुमति लें — SeaMeet यह जांच नहीं करता।",
+          "आपके रिकॉर्डिंग और ट्रांसक्रिप्शन आपकी हैं; SeaMeet केवल उन्हें सेवाएँ चलाने के लिए संसाधित करता है।",
+          "SeaMeet क्लाउड वैकल्पिक है: यदि आप क्लाउड पर अपलोड या रिकॉर्ड करना चुनते हैं, तो हम ऑडियो, ट्रांसक्रिप्शन और मीटिंग मेटाडेटा संसाधित करते हैं।",
+          "अनाम डायग्नॉस्टिक्स वैकल्पिक हैं और कभी भी बंद किए जा सकते हैं।",
+          "ऐप का दुरुपयोग न करें (गैरकानूनी उपयोग, हैकिंग नहीं)।",
+          "सेवा में परिवर्तन हो सकता है, और जिम्मेदारी सीमित है।"
+        ],
+        "TLDRTitle": "SeaMeet Terms — बिज़ी ह्यूमंस के लिए संक्षेप"
+      },
+      "TermsOfService": "सेवा की शर्तें",
+      "UpdateAvailable": "नया संस्करण {{version}} उपलब्ध है",
+      "UpdateReady": "संस्करण {{version}} इंस्टॉल के लिए तैयार है"
     },
-    "General": "सामान्य",
-    "Storage": {
-      "Title": "संग्रहण सेटिंग्स",
-      "Description": "वह डिफ़ॉल्ट फ़ोल्डर चुनें जिसमें SeaMeet स्वचालित रूप से रिकॉर्डिंग्स सहेजता है।",
-      "DefaultPathLabel": "डिफ़ॉल्ट Save Folder",
-      "Browse": "ब्राउज़ करें...",
-      "Save": "सहेजें",
-      "RecordingNameLabel": "रिकॉर्डिंग का नाम"
+    "AppPermissions": {
+      "DefaultRecordingMode": "डिफ़ॉल्ट रिकॉर्डिंग मोड",
+      "DeleteTooltip": "सूचि से निकालें (पुनः 'प्रत्येक बार पूछें' पर रीसेट होता है)",
+      "EmptyState": "अभी तक कोई ऐप्स का पता नहीं चला है। जब SeaMeet किसी ऐप को आपके माइक्रोफोन का उपयोग करते हुए पाएगा, यह यहाँ दिखेगा।",
+      "PathCopied": "पथ क्लिपबोर्ड पर कॉपी किया गया",
+      "PermissionHeader": "ऐप अनुमति",
+      "Title": "ऐप अनुमतियां"
     },
-    "ProfileSettings": "प्रोफ़ाइल सेटिंग्स",
-    "AccountPreferences": "खाता प्राथमिकताएँ",
-    "ProfileSettingsDescription": "अपनी प्रोफ़ाइल की जानकारी प्रबंधित करें",
-    "AccountPreferencesDescription": "अपना खाता वरीयताएँ प्रबंधित करें",
-    "SettingsFileLocation": "सेटिंग्स फ़ाइल स्थान",
-    "SettingsFileDescription": "सेटिंग्स एकल JSON फाइल में संग्रहीत की जाती हैं ताकि बैकअप और प्रबंधन आसान हो सके",
     "Back": "पीछे",
-    "OpenFolder": "फ़ोल्डर खोलें",
     "DefaultUserName": "SeaMeet उपयोगकर्ता",
-    "UserAvatarAlt": "उपयोगकर्ता",
+    "FailedToCheckForUpdates": "अपडेट जांचना विफल रहा",
     "GroupTitle": {
-      "Account": "खाता",
-      "General": "सामान्य",
-      "Automation": "ऑटोमेशन",
-      "RecordingStorage": "रिकॉर्डिंग स्टोरेज",
-      "Configuration": "कॉन्फ़िगरेशन",
       "ApplicationInfo": "ऐप जानकारी",
-      "Legal": "कानूनी जानकारी"
+      "Automation": "ऑटोमेशन",
+      "Configuration": "कॉन्फ़िगरेशन",
+      "General": "सामान्य",
+      "Legal": "कानूनी जानकारी",
+      "RecordingStorage": "रिकॉर्डिंग स्टोरेज"
     },
     "Item": {
-      "EditProfile": "प्रोफ़ाइल संपादित करें",
-      "Account": "खाता",
-      "LogOut": "लॉग आउट",
-      "Language": "भाषा",
+      "AutoRecording": "ऑटो रिकॉर्डिंग",
+      "Copyright": "कॉपीराइट",
       "ImproveTranslationHint": "GitHub पर इस अनुवाद को बेहतर बनाने में सहायता करें →",
-      "Theme": "थीम",
-      "KeyboardShortcuts": "कीबोर्ड शॉर्टकट",
+      "Language": "भाषा",
       "MicrophoneGain": "माइक्रोफोन गेन",
       "StartAtLogin": "लॉगिन पर शुरू करें",
-      "AutoRecording": "ऑटो रिकॉर्डिंग",
       "Storage": "संग्रहण",
-      "Copyright": "कॉपीराइट"
+      "Theme": "थीम"
     },
     "MicGain": {
-      "Minimal": "न्यूनतम (0.1x)",
-      "Quiet": "शांत (0.5x)",
-      "Normal": "सामान्य (1x)",
       "Loud": "तेज (5x)",
-      "Louder": "अधिक आवाज़ (10 गुना)"
+      "Louder": "अधिक आवाज़ (10 गुना)",
+      "Minimal": "न्यूनतम (0.1x)",
+      "Normal": "सामान्य (1x)",
+      "Quiet": "शांत (0.5x)"
+    },
+    "OpenFolder": "फ़ोल्डर खोलें",
+    "PageTitle": {
+      "About": "के बारे में",
+      "AutoRecording": "ऑटो रिकॉर्डिंग",
+      "Flashback": "फ्लैशबैक रिकॉर्डिंग",
+      "Storage": "स्टोरेज"
+    },
+    "SettingsFileLocation": "सेटिंग्स फ़ाइल स्थान",
+    "Storage": {
+      "Browse": "ब्राउज़ करें...",
+      "DefaultPathLabel": "डिफ़ॉल्ट Save Folder",
+      "Description": "वह डिफ़ॉल्ट फ़ोल्डर चुनें जिसमें SeaMeet स्वचालित रूप से रिकॉर्डिंग्स सहेजता है।",
+      "Save": "सहेजें",
+      "Title": "संग्रहण सेटिंग्स"
     },
     "Theme": {
+      "AdobeSand": "एडोबी रेत",
+      "AdobeSandDesc": "गर्म मिट्टी के रंगों का हल्का मोड",
+      "AzureLight": "नीला हल्का",
+      "AzureLightDesc": "ठंडे नीले रंग का हल्का मोड",
+      "CloudCanvas": "बादल कैनवास",
+      "CloudCanvasDesc": "ताज़े पुदीने का हल्का मोड",
+      "ColumnDark": "गहरा",
+      "ColumnLight": "हल्का",
+      "CyberCobalt": "साइबर कोबाल्ट",
+      "CyberCobaltDesc": "नियॉन सियान डार्क मोड",
+      "Dark": "डार्क",
+      "DarkDesc": "डार्क मोड",
       "Device": "डिवाइस",
       "DeviceDesc": "सिस्टम सेटिंग्स का पालन करें",
       "Light": "लाइट",
       "LightDesc": "लाइट मोड",
-      "Dark": "डार्क",
-      "DarkDesc": "डार्क मोड",
-      "Pink": "डार्क पिंक",
-      "PinkDesc": "डार्क पिंक मोड",
       "LightPink": "लाइट पिंक",
       "LightPinkDesc": "लाइट पिंक मोड",
-      "ColumnLight": "हल्का",
-      "ColumnDark": "गहरा",
-      "AzureLight": "नीला हल्का",
-      "AzureLightDesc": "ठंडे नीले रंग का हल्का मोड",
-      "WarmPaper": "गर्म कागज़",
-      "WarmPaperDesc": "गर्म कागज़ी रंगों का हल्का मोड",
-      "SynthwaveLight": "सिंथवेव हल्का",
-      "SynthwaveLightDesc": "जीवंत सिंथवेव हल्का मोड",
       "MidnightBlue": "मध्यरात्रि नीला",
       "MidnightBlueDesc": "गहरे नीले रंग का डार्क मोड",
-      "CloudCanvas": "बादल कैनवास",
-      "CloudCanvasDesc": "ताज़े पुदीने का हल्का मोड",
-      "CyberCobalt": "साइबर कोबाल्ट",
-      "CyberCobaltDesc": "नियॉन सियान डार्क मोड",
-      "AdobeSand": "एडोबी रेत",
-      "AdobeSandDesc": "गर्म मिट्टी के रंगों का हल्का मोड"
+      "Pink": "डार्क पिंक",
+      "PinkDesc": "डार्क पिंक मोड",
+      "SynthwaveLight": "सिंथवेव हल्का",
+      "SynthwaveLightDesc": "जीवंत सिंथवेव हल्का मोड",
+      "WarmPaper": "गर्म कागज़",
+      "WarmPaperDesc": "गर्म कागज़ी रंगों का हल्का मोड"
     },
-    "PageTitle": {
-      "Flashback": "फ्लैशबैक रिकॉर्डिंग",
-      "About": "के बारे में",
-      "AutoRecording": "ऑटो रिकॉर्डिंग",
-      "Storage": "स्टोरेज"
-    },
-    "FailedToCheckForUpdates": "अपडेट जांचना विफल रहा",
-    "AppPermissions": {
-      "Title": "ऐप अनुमतियां",
-      "Description": "प्रबंधित करें कि कौन-कौन से ऐप्स आपके माइक्रोफोन का उपयोग करके ऑटो-रिकॉर्ड कर सकते हैं।",
-      "EmptyState": "अभी तक कोई ऐप्स का पता नहीं चला है। जब SeaMeet किसी ऐप को आपके माइक्रोफोन का उपयोग करते हुए पाएगा, यह यहाँ दिखेगा।",
-      "DeleteTooltip": "सूचि से निकालें (पुनः 'प्रत्येक बार पूछें' पर रीसेट होता है)",
-      "PathCopied": "पथ क्लिपबोर्ड पर कॉपी किया गया",
-      "PermissionHeader": "ऐप अनुमति",
-      "DefaultRecordingMode": "डिफ़ॉल्ट रिकॉर्डिंग मोड"
-    }
+    "Title": "सेटिंग्स",
+    "UserAvatarAlt": "उपयोगकर्ता"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "फ़्लोटिंग विंडो दिखाएँ",
-    "OpenLauncher": "launcher खोलें",
-    "RecordAudio": "ऑडियो रिकॉर्ड करें",
-    "RecordFullscreen": "सम्पूर्ण स्क्रीन रिकॉर्ड करें",
-    "RecordWindow": "विंडो रिकॉर्ड करें",
-    "RecordRegion": "क्षेत्र रिकॉर्ड करें",
     "CaptureScreenshot": "स्क्रीनशॉट कैप्चर करें",
-    "RestoreDefaults": "डिफ़ॉल्ट पुनर्स्थापित करें",
-    "RecordingPrompt": "सुन रहे हैं… नया शॉर्टकट दबाएँ",
     "ConflictWarning": "यह शॉर्टकट पहले से ही किसी अन्य ऐप द्वारा उपयोग में है और इसे दर्ज नहीं किया जा सकता।",
     "GenericError": "शॉर्टकट अपडेट नहीं किया जा सका।",
     "None": "कोई नहीं",
-    "SpaceKey": "स्पेस"
+    "OpenLauncher": "launcher खोलें",
+    "RecordAudio": "ऑडियो रिकॉर्ड करें",
+    "RecordFullscreen": "सम्पूर्ण स्क्रीन रिकॉर्ड करें",
+    "RecordingPrompt": "सुन रहे हैं… नया शॉर्टकट दबाएँ",
+    "RecordRegion": "क्षेत्र रिकॉर्ड करें",
+    "RecordWindow": "विंडो रिकॉर्ड करें",
+    "RestoreDefaults": "डिफ़ॉल्ट पुनर्स्थापित करें",
+    "SpaceKey": "स्पेस",
+    "ToggleFloatingWindow": "फ़्लोटिंग विंडो दिखाएँ"
   },
   "Sidebar": {
-    "PrimaryNavigation": "प्राथमिक नेविगेशन",
     "ClearSearch": "खोज साफ़ करें",
-    "AgentPanel": "एआई एजेंट"
-  },
-  "SidebarTabs": {
-    "Audios": "ऑडियोज़",
-    "AutoDetect": "ऑटो डिटेक्शन"
+    "PrimaryNavigation": "प्राथमिक नेविगेशन"
   },
   "TakeSnapshot": {
-    "Title": "स्नैपशॉट लिया गया है",
+    "GoToSnapshot": "नए स्नैपशॉट पर जाएं",
     "Message": "स्नैपशॉट लिया गया है और सहेजा गया है:",
     "StayAtVideo": "वर्तमान वीडियो पर रहें",
-    "GoToSnapshot": "नए स्नैपशॉट पर जाएं"
+    "Title": "स्नैपशॉट लिया गया है"
   },
   "TopNav": {
-    "CloseNavigationMenu": "नेविगेशन मेनू बंद करें",
-    "OpenNavigationMenu": "नेविगेशन मेनू खोलें",
-    "MainNavigation": "मुख्य नेविगेशन",
-    "Record": "अभिलेख",
-    "Recording": "रिकॉर्डिंग",
-    "Files": "फ़ाइलें",
     "Agent": "Agent",
-    "Terminal": "टर्मिनल"
+    "CloseNavigationMenu": "नेविगेशन मेनू बंद करें",
+    "Files": "फ़ाइलें",
+    "MainNavigation": "मुख्य नेविगेशन",
+    "OpenNavigationMenu": "नेविगेशन मेनू खोलें",
+    "Record": "अभिलेख",
+    "Recording": "रिकॉर्डिंग"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet अभी भी सिस्टम ट्रे (निचले-दाएं) में चल रहा है।",
-    "ShowLauncher": "लॉन्चर दिखाएँ",
-    "ShowFloatingWindow": "फ़्लोटिंग विंडो दिखाएँ",
-    "ShowMainWindow": "मुख्य विंडो दिखाएँ",
-    "ExitSeaMeet": "SeaMeet से बाहर निकलें",
-    "QuickRecording": "त्वरित रिकॉर्डिंग",
-    "RecordAudio": "ऑडियो रिकॉर्ड करें",
-    "RecordFullscreen": "पूर्ण स्क्रीन रिकॉर्ड करें",
-    "RecordRegion": "रिकॉर्ड करने के लिए क्षेत्र स्नैप करें",
-    "OpenRecordingsFolder": "रिकॉर्डिंग्स फ़ोल्डर खोलें",
-    "TakeScreenshot": "स्क्रीनशॉट लें",
-    "Close": "बंद करें",
-    "OpenSeaMeet": "SeaMeet खोलें",
-    "OpenSaveFolder": "सेव फ़ोल्डर खोलें",
-    "ReportIssues": "समस्याएँ रिपोर्ट करें"
+    "MinimizedHint": "SeaMeet अभी भी सिस्टम ट्रे (निचले-दाएं) में चल रहा है।"
   },
   "Types": {
-    "Microphone": "माइक्रोफ़ोन",
-    "System": "सिस्टम ऑडियो आउटपुट",
     "Both": "दोनों (मिश्रित)",
     "File": "फ़ाइल",
+    "Microphone": "माइक्रोफ़ोन",
+    "System": "सिस्टम ऑडियो आउटपुट",
     "Video": "वीडियो"
   },
   "UpdateQuitModal": {
-    "Title": "अपडेट उपलब्ध है",
-    "ReadyToInstall": "SeaMeet {{version}} इंस्टॉल के लिए तैयार है।",
-    "InstallBeforeQuitting": "क्या आप इसे बाहर निकलने से पहले इंस्टॉल करना चाहेंगे?",
     "InstallAndQuit": "इंस्टॉल करें एवं बाहर निकलें",
-    "QuitWithoutInstalling": "बिना इंस्टॉल किए बंद करें"
+    "InstallBeforeQuitting": "क्या आप इसे बाहर निकलने से पहले इंस्टॉल करना चाहेंगे?",
+    "QuitWithoutInstalling": "बिना इंस्टॉल किए बंद करें",
+    "ReadyToInstall": "SeaMeet {{version}} इंस्टॉल के लिए तैयार है।",
+    "Title": "अपडेट उपलब्ध है"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} इंस्टॉल करने के लिए तैयार है",
-    "Downloading": "SeaMeet {{version}} ({{percent}})% डाउनलोड हो रहा है",
     "Available": "अपडेट उपलब्ध: SeaMeet {{version}}",
-    "WhatsNewInVersion": "{{version}} में नई बातें?",
-    "WhatsNew": "क्या नया है:",
+    "Dismiss": "खारिज करें",
+    "Downloading": "SeaMeet {{version}} ({{percent}})% डाउनलोड हो रहा है",
     "Hide": "छुपाएँ",
+    "ReadyToInstall": "SeaMeet {{version}} इंस्टॉल करने के लिए तैयार है",
     "RestartNow": "अभी पुनः शुरू करें",
     "ViewRelease": "रिलीज़ देखें",
     "ViewReleaseTitle": "GitHub पर रिलीज़ नोट्स देखें",
-    "Dismiss": "खारिज करें"
+    "WhatsNew": "क्या नया है:",
+    "WhatsNewInVersion": "{{version}} में नई बातें?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "SeaMeet के बारे में",
     "DisplayName": "उपयोगकर्ता",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "प्रोफ़ाइल सेटिंग्स",
-    "AccountPreferences": "खाते की प्राथमिकताएँ",
-    "BillingPlans": "बिलिंग और योजना",
-    "StorageSettings": "संग्रह सेटिंग्स",
-    "HelpSupport": "सहायता एवं समर्थन",
-    "KeyboardShortcuts": "कीबोर्ड शॉर्टकट",
-    "SignIn": "साइन इन करें",
-    "SignOut": "साइन आउट",
-    "SeaMeetSignedOut": "SeaMeet: साइन इन नहीं है",
-    "SeaMeetSignedIn": "SeaMeet: साइन इन किया हुआ है",
-    "AboutSeaMeet": "SeaMeet के बारे में",
     "Exit": "बाहर निकलें",
+    "HelpSupport": "सहायता एवं समर्थन",
     "HelpSupportSection": {
-      "Wiki": "विकी",
-      "WikiDesc": "SeaMeet विकि देखें",
-      "VisitWiki": "विकी पर जाएं",
-      "Issues": "मुद्दे",
-      "IssuesDesc": "बग रिपोर्ट करें और फीचर अनुरोध करें (GitHub खाता आवश्यक है)।",
-      "SubmitIssue": "मुद्दा जमा करें",
       "Discussion": "चर्चा",
       "DiscussionDesc": "समुदाय चर्चा में शामिल हों (GitHub खाता आवश्यक है)।",
-      "JoinDiscussion": "चर्चा में शामिल हों",
+      "DogfoodingDesc": "हम आपको प्रोत्साहित करते हैं कि आप SeaMeet का उपयोग कर मुद्दा रिकॉर्ड करें और उसे Issues या ईमेल करें!",
       "Email": "ईमेल",
       "EmailDesc": "हमारी टीम से सीधे संपर्क करें।",
-      "SendEmail": "ईमेल भेजें",
-      "Dogfooding": "डॉगफूडिंग",
-      "DogfoodingDesc": "हम आपको प्रोत्साहित करते हैं कि आप SeaMeet का उपयोग कर मुद्दा रिकॉर्ड करें और उसे Issues या ईमेल करें!",
-      "CheckForUpdates": "अपडेट के लिए जाँच करें",
-      "CheckingUpdates": "अपडेट की जाँच की जा रही है।",
-      "UpdateAvailable": "नया संस्करण {{version}} उपलब्ध है",
-      "UpdateReady": "संस्करण {{version}} इंस्टॉल के लिए तैयार है",
-      "InstallNow": "अभी इंस्टॉल करें",
-      "TermsOfService": "सेवा के नियम",
-      "PrivacyPolicy": "गोपनीयता नीति",
       "ImproveTranslation": "अनुवाद सुधारें",
-      "ImproveTranslationDesc": "अनुवाद को बेहतर बनाने या GitHub पर एक नई भाषा का अनुरोध करने में हमारी सहायता करें।"
-    }
+      "ImproveTranslationDesc": "अनुवाद को बेहतर बनाने या GitHub पर एक नई भाषा का अनुरोध करने में हमारी सहायता करें।",
+      "Issues": "मुद्दे",
+      "IssuesDesc": "बग रिपोर्ट करें और फीचर अनुरोध करें (GitHub खाता आवश्यक है)।",
+      "JoinDiscussion": "चर्चा में शामिल हों",
+      "SendEmail": "ईमेल भेजें",
+      "SubmitIssue": "मुद्दा जमा करें",
+      "VisitWiki": "विकी पर जाएं",
+      "Wiki": "विकी",
+      "WikiDesc": "SeaMeet विकि देखें"
+    },
+    "KeyboardShortcuts": "कीबोर्ड शॉर्टकट",
+    "SeaMeetSignedIn": "SeaMeet: साइन इन किया हुआ है",
+    "SeaMeetSignedOut": "SeaMeet: साइन इन नहीं है",
+    "SignIn": "साइन इन करें",
+    "SignOut": "साइन आउट"
   },
   "VideoSettings": {
-    "Title": "वीडियो रिकॉर्डिंग सेटिंग्स",
-    "Mode": "रिकॉर्डिंग मोड",
-    "ModeOff": "बंद",
-    "ModeFullscreen": "पूर्णस्क्रीन",
-    "ModeWindow": "विंडोज़",
-    "ModeRegion": "क्षेत्र",
+    "AudioSettings": "ऑडियो सेटिंग्स",
+    "CodecTooltip": {
+      "VP8": "यह रिकॉर्डिंग बेहतर गुणवत्ता के लिए VP8 का उपयोग करती है। कुछ डिफ़ॉल्ट वीडियो प्लेयर्स — जैसे Windows Media Player और macOS पर QuickTime — इस प्रारूप का समर्थन नहीं कर सकते। विश्वसनीय प्लेबैक के लिए, कृपया एक आधुनिक ब्राउज़र (Chrome या Edge) या VLC जैसे संगत प्लेयर का उपयोग करें।",
+      "VP9": "यह रिकॉर्डिंग बेहतर गुणवत्ता के लिए VP9 का उपयोग करती है। कुछ डिफ़ॉल्ट वीडियो प्लेयर्स — जैसे Windows Media Player और macOS पर QuickTime — इस प्रारूप का समर्थन नहीं कर सकते। विश्वसनीय प्लेबैक के लिए, कृपया एक आधुनिक ब्राउज़र (Chrome या Edge) या VLC जैसे संगत प्लेयर का उपयोग करें।"
+    },
+    "Detecting": "पता लगा रहा है...",
+    "FlashbackArmedNotice": "आप {{seconds}}स के फ्लैशबैक बफ़र के साथ रिकॉर्डिंग कर रहे हैं",
+    "FramesPerSecond": "फ्रेम प्रति सेकंड",
+    "FullHD": "फुल HD",
+    "GBPerHour": "~{{gb}} जीबी/घंटा।",
+    "HD": "HD",
+    "HideWindow": "क्षेत्र का चयन करते समय SeaMeet विंडो छुपाएँ",
+    "Internal": "आंतरिक",
+    "MBPerMin": "~{{mb}} एमबी/मिनट,",
     "ModeAudioOnly": "केवल ऑडियो",
-    "SelectScreen": "स्क्रीन चुनें",
-    "SelectWindow": "विंडो चुनें",
-    "Refresh": "रिफ्रेश",
+    "ModeFullscreen": "पूर्णस्क्रीन",
+    "ModeRegion": "क्षेत्र",
+    "ModeWindow": "विंडोज़",
+    "Native": "मूल",
     "NoScreens": "कोई स्क्रीन नहीं मिली",
     "NoWindows": "कोई विंडोज़ उपलब्ध नहीं",
-    "RegionInfo": "रिकॉर्डिंग शुरू होने पर आपसे स्क्रीन या विंडो चुनने को कहा जाएगा।",
-    "HideWindow": "क्षेत्र का चयन करते समय SeaMeet विंडो छुपाएँ",
-    "VideoQuality": "वीडियो गुणवत्ता",
-    "Quality": "गुणवत्ता",
-    "QualityOriginal": "मूल",
-    "QualityHigh": "उच्च",
-    "QualityMedium": "मध्यम",
-    "QualityLow": "कम",
-    "FramesPerSecond": "फ्रेम प्रति सेकंड",
-    "FrameRate": "फ्रेम दर",
-    "SourceResolution": "स्रोत रिज़ोल्यूशन",
-    "Native": "मूल",
-    "FullHD": "फुल HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "ऊपर एक स्रोत चुनें",
-    "ZeroSize": "~0 MB/मिनट, ~0 GB/घंटा",
-    "MBPerMin": "~{{mb}} एमबी/मिनट,",
-    "GBPerHour": "~{{gb}} जीबी/घंटा।",
     "Primary": "प्राथमिक",
-    "Internal": "आंतरिक",
-    "Detecting": "पता लगा रहा है...",
-    "ResolutionUnknown": "ज्ञात नहीं",
-    "AudioSettings": "ऑडियो सेटिंग्स",
-    "RecordModeTitle": "ऑडियो या वीडियो रिकॉर्ड करें?",
+    "QualityHigh": "उच्च",
+    "QualityLow": "कम",
+    "QualityMedium": "मध्यम",
+    "QualityOriginal": "मूल",
     "Record": "रिकॉर्ड करें",
-    "RecordWithoutFlashback": "फ़्लैशबैक के बिना रिकॉर्ड करें।",
+    "RecordModeTitle": "ऑडियो या वीडियो रिकॉर्ड करें?",
     "RecordWithFlashback": "फ़्लैशबैक के साथ रिकॉर्ड करें।",
+    "RecordWithoutFlashback": "फ़्लैशबैक के बिना रिकॉर्ड करें।",
+    "Refresh": "रिफ्रेश",
+    "ResolutionUnknown": "ज्ञात नहीं",
+    "SD": "SD",
+    "SelectScreen": "स्क्रीन चुनें",
+    "SelectSourceAbove": "ऊपर एक स्रोत चुनें",
+    "SelectWindow": "विंडो चुनें",
+    "SourceResolution": "स्रोत रिज़ोल्यूशन",
+    "Title": "वीडियो रिकॉर्डिंग सेटिंग्स",
     "VideoFlashbackArmedNotice": "स्क्रीन फ्लैशबैक Armed ({{seconds}}s)",
-    "FlashbackArmedNotice": "आप {{seconds}}स के फ्लैशबैक बफ़र के साथ रिकॉर्डिंग कर रहे हैं",
-    "CodecTooltip": {
-      "VP9": "यह रिकॉर्डिंग बेहतर गुणवत्ता के लिए VP9 का उपयोग करती है। कुछ डिफ़ॉल्ट वीडियो प्लेयर्स — जैसे Windows Media Player और macOS पर QuickTime — इस प्रारूप का समर्थन नहीं कर सकते। विश्वसनीय प्लेबैक के लिए, कृपया एक आधुनिक ब्राउज़र (Chrome या Edge) या VLC जैसे संगत प्लेयर का उपयोग करें।",
-      "VP8": "यह रिकॉर्डिंग बेहतर गुणवत्ता के लिए VP8 का उपयोग करती है। कुछ डिफ़ॉल्ट वीडियो प्लेयर्स — जैसे Windows Media Player और macOS पर QuickTime — इस प्रारूप का समर्थन नहीं कर सकते। विश्वसनीय प्लेबैक के लिए, कृपया एक आधुनिक ब्राउज़र (Chrome या Edge) या VLC जैसे संगत प्लेयर का उपयोग करें।"
-    }
+    "VideoQuality": "वीडियो गुणवत्ता",
+    "ZeroSize": "~0 MB/मिनट, ~0 GB/घंटा"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "क्षेत्र चयनित है।",
     "CustomRegion": "कस्टम क्षेत्र: {{width}} × {{height}} पिक्सेल",
-    "ReselectRegion": "क्षेत्र पुनः चुनें",
-    "SelectCustomRegion": "कस्टम क्षेत्र चुनें",
     "FPS15": "15 एफपीएस",
     "FPS30": "30 एफपीएस",
-    "FPS60": "60 एफपीएस"
+    "FPS60": "60 एफपीएस",
+    "RegionSelected": "क्षेत्र चयनित है।",
+    "ReselectRegion": "क्षेत्र पुनः चुनें",
+    "SelectCustomRegion": "कस्टम क्षेत्र चुनें"
   },
   "WindowPicker": {
-    "Title": "एक विंडोजन चुनें",
     "Instruction": "विंडोज़ रिकॉर्डिंग के लिए एक विंडो चुनें।",
-    "Refresh": "ताज़ा करें",
-    "Refreshing": "रिफ्रेश किया जा रहा है…",
     "Loading": "विंडोज़ लोड किया जा रहा है…",
     "None": "कोई एप्लिकेशन खोलें और फिर रिफ्रेश करें।",
+    "Refresh": "ताज़ा करें",
+    "Refreshing": "रिफ्रेश किया जा रहा है…",
+    "Title": "एक विंडोजन चुनें",
     "Unknown": "अनाम विंडो"
-  },
-  "Common": {
-    "Configure": "कॉन्फ़िगरेशन करें",
-    "Cancel": "रद्द करें",
-    "Apply": "लागू करें",
-    "Close": "बंद करें",
-    "Open": "खोलें",
-    "Minimize": "मिनिमाइज़ करें to सर्कल",
-    "Recording": "रिकॉर्डिंग चल रही है",
-    "UnknownApp": "अज्ञात ऐप",
-    "Done": "पूर्ण",
-    "Save": "सहेजें",
-    "Saving": "सहेजा जा रहा है…",
-    "Delete": "हटाएँ",
-    "Or": "या",
-    "Loading": "लोड हो रहा है...",
-    "Expand": "विस्तार करें",
-    "PlannedFeature": "योजना की गई विशेषता",
-    "Screen": "स्क्रीन",
-    "Window": "खिड़की",
-    "Region": "क्षेत्र",
-    "AppTitle": "SeaMeet स्क्रीन और ऑडियो रिकॉर्डर",
-    "AppSubtitle": "डिवाइस के इनपुट और आउटपुट ऑडियो रिकॉर्ड करें",
-    "Screenshot": "स्क्रीनशॉट",
-    "Saved": "सहेजा गया",
-    "Processing": "प्रक्रिया में है…",
-    "Starting": "शुरू हो रहा है…",
-    "FileNameCopiedWithRenameHint": "{{fileName}} क्लिपबोर्ड पर कॉपी किया गया है। फ़ाइल नाम बदलने के लिए डबल क्लिक करें।",
-    "ApplyName": "नाम लागू करें",
-    "Send": "भेजना"
-  },
-  "RecordingControls": {
-    "StartRecording": "रिकॉर्डिंग शुरू करें",
-    "StopRecording": "रिकॉर्डिंग रोकें",
-    "ContinueRecording": "रिकॉर्डिंग जारी रखें",
-    "Pause": "रोकें",
-    "Resume": "फिर से शुरू करें",
-    "Stop": "रोकें",
-    "RecordingScreen": "स्क्रीन की रिकॉर्डिंग..",
-    "RecordingAudio": "ऑडियो रिकॉर्डिंग",
-    "AudioRecording": "ऑडियो रिकॉर्डिंग",
-    "VideoRecording": "वीडियो रिकॉर्डिंग",
-    "RecordingPreview": "रिकॉर्डिंग का पूर्वावलोकन",
-    "RecordingMode": "रिकार्डिंग मोड"
-  },
-  "RecordingModes": {
-    "RecordAudio": "ऑडियो",
-    "RecordAudioTip": "केवल ऑडियो",
-    "RecordWindow": "विंडो",
-    "RecordWindowTip": "एक व्यक्तिगत ऐप विंडो को कैप्चर करें",
-    "RecordFullscreen": "पूरा स्क्रीन",
-    "RecordFullscreenTip": "अपने पूरे स्क्रीन को कैप्चर करें",
-    "RecordRegion": "क्षेत्र",
-    "RecordRegionTip": "कस्टम क्षेत्र पकड़ें",
-    "CaptureMode": "कैप्चर मोड",
-    "FullScreen": "पूरा स्क्रीन",
-    "AreaCapture": "क्षेत्र कैप्चर"
-  },
-  "RecordingsList": {
-    "NoRecordings": "अभी तक कोई रिकॉर्डिंग नहीं हैं। यहाँ देखने के लिए रिकॉर्डिंग शुरू करें।",
-    "RecentRecordings": "हाल की रिकॉर्डिंगें",
-    "RecentCaptures": "हाल की कैप्चरें",
-    "RefreshRecordings": "रीफ़्रेश करें",
-    "SearchRecordingsOrSnapshots": "रिकॉर्डिंगें और स्नैपशॉट्स खोजें",
-    "SearchRecordingsPlaceholder": "रिकॉर्डिंग्स खोजें",
-    "ShowInFolder": "फ़ोल्डर में दिखाएँ",
-    "CopyFileName": "फ़ाइल नाम कॉपी करें",
-    "CopyFilePath": "फ़ाइल पथ कॉपी करें",
-    "FileNameCopied": "{{fileName}} कॉपी किया गया।",
-    "FilePathCopied": "फ़ाइल पथ कॉपी किया गया।",
-    "SaveAs": "के रूप में सहेजें",
-    "OpenSaveFolder": "फ़ोल्डर खोलें",
-    "Title": "रिकॉर्डिंगें",
-    "Recovered": "{{count}} रिकॉर्डिंग रिकवर की गईं"
-  },
-  "FileImport": {
-    "ImportMedia": "मीडिया आयात करें",
-    "DragDropFiles": "अपने ऑडियो, वीडियो, और इमेज फ़ाइलें यहाँ ड्रैग और ड्रॉप करें",
-    "DragDropSubtitle": "यहाँ ऑडियो, वीडियो, और इमेज फ़ाइलें खींचें और छोड़ें",
-    "BrowseFiles": "फ़ाइलें ब्राउज़ करें",
-    "Supported": "समर्थित फ़ॉर्मेट",
-    "SupportedFormats": "समर्थित फ़ॉर्मेट्स: MP3, WAV, M4A, WebM, OGG, PNG, JPG, और अधिक",
-    "VideoImportCopying": "वीडियो फ़ाइल कॉपी की जा रही है...",
-    "VideoImportSaving": "वीडियो फ़ाइल सहेजी जा रही है...",
-    "VideoUnsupported": "यह वीडियो फ़ॉर्मेट ऐप में चलाने योग्य नहीं हो सकता। फ़ाइल फिर भी आयात की जाएगी।"
-  },
-  "AudioControls": {
-    "AudioCapture": "ऑडियो कैप्चर",
-    "AudioMix": "ऑडियो मिक्स",
-    "AudioSessionsLog": "ऑडियों सत्र लॉग",
-    "AudioSource": "ऑडियो स्रोत:",
-    "InputDevice": "इनपुट डिवाइस:",
-    "Microphone": "माइक्रोफोन",
-    "MicrophoneLabel": "माइक्रोफोन {{id}}",
-    "RecordingDefaultMicrophone": "डिफ़ॉल्ट माइक्रोफोन",
-    "RecordingInputLabel": "इनपुट: {{name}}",
-    "RecordingSettings": "रिकॉर्डिंग सेटिंग्स",
-    "RecordingType": "रिकॉर्डिंग प्रकार:",
-    "RefreshMicrophoneList": "माइक्रोफोन सूची पुनः लोड करें",
-    "MicrophoneGainWarning": "उच्च माइक्रोफोन गेन speaker playback भी \"System Audio\" बंद होने पर उठा सकता है। हेडफ़ोन का उपयोग करें या माइक्रोफोन गेन कम करें ताकि केवल माइक्रोफोन रिकॉर्डिंग हो सके।"
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "रिकॉर्डिंग शुरू करें",
-    "Ready": "तैयार?",
-    "BufferingMoment": "बफ़रिंग पल...",
-    "RecordWithFlashback": "फ़्लैशबैक के साथ रिकॉर्ड कर रहे हैं",
-    "NeverMissAMoment": "कभी भी एक पल मिस न करें।",
-    "ReadyToGuard": "क्या आप अपना {{type}} Guard करने के लिए तैयार हैं?",
-    "FillingBuffer": "{{duration}}स फ़्लैशबैक बफ़र भर रहा है... {{progress}}%",
-    "ReadyToCapture": "SeaMeet कैप्चर के लिए तैयार है।",
-    "DescNone": "अपनी स्क्रीन, ऑडियो रिकॉर्ड करें, या स्क्रीनशॉट लें। ऊपर दिए गए फ़्लैशबैक मोड का चयन करें ताकि पल-को सहेजना सक्षम हो सके।",
-    "DescInit": "'Ready?' पर क्लिक करें ताकि SeaMeet को अभी 'याद कर रहा है' कहें।",
-    "DescCharging": "अपने {{duration}}-सेकंड के विंडो को तैयार कर रहा है... जिससे आप जो मिस कर सकते हैं, उसे पकड़ने के लिए तैयार हो जाएं। {{progress}}% पूर्ण।",
-    "DescReady": "फ़्लैशबैक सुसज्जित है। जब भी आप रिकॉर्ड करें, तो बीते {{duration}} सेकंड का {{type}} शामिल होगा — फिर कभी भी चूके हुए पल पर अफ़सोस न करें।",
-    "Screen": "स्क्रीन",
-    "Audio": "ऑडियो",
-    "OpenLauncher": "लॉन्चर खोलें",
-    "OpenFloater": "फ्लोटर खोलें",
-    "TakeScreenshot": "स्क्रीनशॉट लें",
-    "Buffering": "बफ़रिंग",
-    "SavingFlashback": "फ़्लैशबैक सहेजा जा रहा है।",
-    "SaveLastFlashback": "अंतिम {{duration}} सेकंड का फ़्लैशबैक सहेजें",
-    "PrivacyProtected": "आपकी गोपनीयता सुरक्षित है।",
-    "PrivacyDesc": "SeaMeet आपके कंप्यूटर की RAM पर, {{duration}}स का {{type}} का अतीत का स्नैपशॉट एक रिंग बफ़र में संग्रहित करता है।",
-    "FlashbackOff": "फ़्लैशबैक अभी बंद है। आप कभी भी सामान्य रिकॉर्डिंग शुरू कर सकते हैं, या ऊपर दिए गए फ़्लैशबैक मोड (ऑडियो या स्क्रीन) का चयन करके हीरो-मोमेंट सेविंग सक्षम कर सकते हैं।",
-    "FlashbackInitAudio": "क्या आप अपने ऑडियो की रक्षा के लिए तैयार हैं?",
-    "FlashbackInitScreen": "क्या आप अपनी स्क्रीन को सुरक्षित करने के लिए तैयार हैं?",
-    "FlashbackInitDescription": "'Ready?' पर क्लिक करें ताकि SeaMeet को बताएँ कि 'याद रखने' शुरू करें।",
-    "FlashbackCharging": "{{seconds}}s बफ़र भर रहा है... {{percent}}%",
-    "FlashbackChargingDescription": "अपने {{seconds}}-सेकंड विंडो को तैयार कर रहा है... {{percent}}% पूरा।",
-    "FlashbackReadyQuestion": "क्या आप तैयार हैं?",
-    "FlashbackReady": "कभी भी एक पल को मत चूकें।",
-    "FlashbackReadyDescription": "फ्लैशबैक सक्रिय है। जब आप रिकॉर्डिंग कर रहे हैं, तो आपका {{type}} {{seconds}} सेकंड का समय शामिल किया जाता है।",
-    "FlashbackBuffering": "बफ़रिंग हो रहा है...",
-    "SaveFlashback": "पिछले {{seconds}}s का फ्लैशबैक सहेजें",
-    "FlashbackPrivacy": "आपकी गोपनीयता सुरक्षित है। यह स्थानीय रूप से RAM में संग्रहित है।",
-    "Capturing": "कैप्चर कर रहा है...",
-    "CaptureMode": "कैप्चर मोड",
-    "FullScreen": "पूर्ण स्क्रीन मोड",
-    "AreaCapture": "क्षेत्र कैप्चर",
-    "KeepWindowVisible": "स्क्रीनशॉट लेते समय SeaMeet विंडो को दृश्य में रखें",
-    "FlashbackMismatch": "फ़्लैशबैक मोड मेल नहीं खाता। ऑडियो रिकॉर्डिंग है लेकिन वीडियो फ़्लैशबैक सक्रिय है। कृपया वीडियो फ़्लैशबैक को निष्क्रिय करें।"
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "SeaMeet ट्रांसक्रिप्शन सक्षम करें",
-    "SignInRequired": "Sign in required → साइन इन आवश्यक है",
-    "ProcessingMode": "प्रोसेसिंग मोड",
-    "Realtime": "रियल-टाइम",
-    "RealtimeDescription": "रिकॉर्डिंग के दौरान लाइव ट्रांसक्रिप्शन",
-    "Diarized": "डायरीज्ड",
-    "DiarizedDescription": "स्पीकर पहचान के लिए रिकॉर्डिंग के बाद ऑडियो अपलोड करें",
-    "ComingSoon": "(जल्द ही आएगा)",
-    "TranscriptionLanguage": "ट्रांसक्रिप्शन माध्यम",
-    "TranslationLanguage": "अनुवाद भाषा",
-    "NoTranslation": "कोई अनुवाद उपलब्ध नहीं",
-    "LanguageHint": "आप रिकॉर्डिंग के दौरान आप भाषा बदल सकते हैं",
-    "LiveTranscription": "लाइव ट्रांसक्रिप्शन",
-    "WaitingForSpeech": "भाषण का इंतजार हो रहा है...",
-    "UnknownSpeaker": "वक्ता",
-    "SegmentCount": "{{count}} खंड",
-    "SegmentCount_plural": "{{count}} खंड",
-    "ConnectionError": "SeaMeet से जुड़ने में विफल रहा",
-    "Reconnecting": "पुनः कनेक्ट कर रहे हैं...",
-    "Connected": "SeaMeet से जुड़ा हुआ",
-    "Disconnected": "SeaMeet से डिसकनेक्ट हो गया",
-    "NowSpeaking": "वर्तमान में बोल रहे हैं...",
-    "Transcript": "ट्रांसक्रिप्ट",
-    "LoadingTranscript": "ट्रांसक्रिप्शन लोड हो रहा है",
-    "NoTranscript": "कोई ट्रांसक्रिप्शन उपलब्ध नहीं",
-    "FetchError": "ट्रांसक्रिप्शन लोड करने में विफल",
-    "Retry": "पुनः प्रयास करें",
-    "Transcribed": "ट्रांसक्रिप्ट किया गया",
-    "Content": "SeaMeet सामग्री",
-    "Tab": {
-      "transcription": "ट्रांसक्रिप्शन",
-      "summary": "सारांश",
-      "actionItems": "कार्यकालिका",
-      "notes": "नोट्स"
-    },
-    "Summary": "सारांश",
-    "NoSummary": "सारांश अभी उपलब्ध नहीं है।",
-    "ActionItems": "क्रिया आइटम",
-    "NoActionItems": "इस बैठक के लिए कोई कार्यवाही आइटम नहीं हैं",
-    "DueDate": "अंतिम तिथि: {{date}}",
-    "Notes": "नोट्स",
-    "NoNotes": "इस बैठक के लिए कोई नोट्स नहीं",
-    "LoadingContent": "SeaMeet सामग्री लोड हो रहा है...",
-    "SeekToTime": "इस समय से प्ले करने के लिए क्लिक करें",
-    "CollapseNowSpeaking": "अभी बोलना संक्षेप करें",
-    "ExpandNowSpeaking": "अभी बोलना बढ़ाएँ"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "फ्लैशबैक बफ़र खाली है। कृपया कुछ समय बाद पुनः प्रयास करें।",
-    "EnableFlashback": "एक पल को सुरक्षित करने के लिए फ्लैशबैक को सक्षम करें।",
-    "FailedToSave": "फ्लैशबैक बफ़र को सहेजने में विफल।",
-    "SavedFlashback": "रिकॉर्डिंग में फ्लैशबैक सहेजा गया है।",
-    "StillCharging": "फ्लैशबैक बफ़र अभी भी चार्जिंग में है।"
-  },
-  "AISummary": {
-    "TabTitle": "एआई सारांश",
-    "SetupRequired": "एआई सारांश सक्षम करने के लिए सेटिंग्स → एआई फीचर्स में अपनी जेमिनी एपीआई कुंजी कॉन्फ़िगर करें।",
-    "EnableRequired": "सेटिंग्स में AI सुविधाएँ सक्षम करें → AI सारांश देखने के लिए AI सुविधाएँ।",
-    "ExportMarkdown": "मार्कडाउन के रूप में कॉपी करें",
-    "ExportSrt": "एसआरटी के रूप में कॉपी करें",
-    "ExportJson": "JSON के रूप में कॉपी करें",
-    "Regenerate": "सारांश पुन: उत्पन्न करें",
-    "Minimize": "छोटा करना",
-    "Maximize": "पूर्ण दृश्य तक विस्तृत करें",
-    "Queued": "प्रसंस्करण के लिए कतारबद्ध...",
-    "Processing": "सारांश तैयार किया जा रहा है...",
-    "Error": "सारांश लोड करने में विफल: {{error}}",
-    "PipelineError": "एआई प्रोसेसिंग विफल रही. पुन: उत्पन्न करने का प्रयास करें.",
-    "Retry": "पुन: प्रयास करें",
-    "NoSummary": "अभी तक कोई AI सारांश नहीं.",
-    "Generate": "सारांश उत्पन्न करें",
-    "Copy": "प्रतिलिपि",
-    "NoSummaryText": "सारांश उपलब्ध नहीं है.",
-    "Topics": "विषय:",
-    "NoTranscript": "प्रतिलेख उपलब्ध नहीं है.",
-    "NoActions": "कोई कार्रवाई आइटम की पहचान नहीं की गई.",
-    "NoDecisions": "कोई प्रमुख निर्णय चिन्हित नहीं किया गया.",
-    "Export": {
-      "HeadingSummary": "सारांश",
-      "HeadingActionItems": "एक्शन आइटम्स",
-      "HeadingKeyDecisions": "मुख्य निर्णय",
-      "HeadingTranscription": "प्रतिलिपि"
-    },
-    "Tab": {
-      "Summary": "सारांश",
-      "Transcription": "प्रतिलिपि",
-      "ActionItems": "कार्रवाई",
-      "KeyDecisions": "फैसले",
-      "Agent": "प्रतिनिधि"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "एआई विशेषताएं",
-    "MenuItem": "एआई-संचालित सारांश",
-    "PageTitle": "एआई विशेषताएं",
-    "EnableToggle": "एआई-संचालित सारांश सक्षम करें",
-    "EnableToggleDesc": "एक निःशुल्क जेमिनी एपीआई कुंजी की आवश्यकता है",
-    "ApiKeySection": "जेमिनी एपीआई कुंजी",
-    "ApiKeyLabel": "जेमिनी एपीआई कुंजी",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
-    "ShowKey": "कुंजी दिखाएँ",
-    "HideKey": "कुंजी छिपाएँ",
-    "TestKey": "सहेजें और सत्यापित करें",
-    "Saving": "सहेजा जा रहा है...",
-    "GetKeyLink": "Google AI स्टूडियो से निःशुल्क API कुंजी प्राप्त करें →",
-    "ClearKey": "सहेजी गई कुंजी हटाएँ",
-    "KeyVerified": "कुंजी सत्यापित",
-    "KeyInvalid": "अमान्य कुंजी",
-    "KeyTesting": "परीक्षण...",
-    "KeyNotConfigured": "कोई कुंजी कॉन्फ़िगर नहीं की गई",
-    "ModelSection": "एआई मॉडल",
-    "ModelLabel": "मिथुन मॉडल",
-    "SelectedModel": "चयनित: {{model}}",
-    "AutomationSection": "स्वचालन",
-    "AutoSummary": "स्वतः-उत्पन्न सारांश",
-    "AutoSummaryDesc": "प्रत्येक रिकॉर्डिंग समाप्त होने के बाद चलता है",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "अनुशंसित · तेज़ + सक्षम",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "सबसे सस्ता स्थिर विकल्प",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "अल्ट्रा सस्ते",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "अधिकतम क्षमता",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "सर्वोत्तम स्थिर तर्क"
-    },
-    "ClaudeKey": {
-      "Section": "क्लाउड एपीआई कुंजी (एजेंट)",
-      "SourceLabel": "सक्रिय स्रोत:",
-      "SourceByok": "आपकी एपीआई कुंजी (BYOK)",
-      "SourceKeyServer": "SeaMeet द्वारा प्रबंधित",
-      "SourceCli": "क्लाउड कोड सीएलआई",
-      "SourceNone": "कॉन्फ़िगर नहीं किया गया",
-      "KeyPlaceholder": "एसके-चींटी-...",
-      "KeyPlaceholderSaved": "••••••••• (बचाया गया)",
-      "ShowKey": "कुंजी दिखाएँ",
-      "HideKey": "कुंजी छिपाएँ",
-      "TestKey": "सहेजें और सत्यापित करें",
-      "Saving": "सहेजा जा रहा है...",
-      "ClearKey": "सहेजी गई कुंजी हटाएँ",
-      "KeyVerified": "कुंजी सत्यापित",
-      "KeyInvalid": "अमान्य कुंजी",
-      "KeyTesting": "परीक्षण...",
-      "KeyNotConfigured": "कोई कुंजी कॉन्फ़िगर नहीं की गई",
-      "GetKeyLink": "एंथ्रोपिक कंसोल से एपीआई कुंजी प्राप्त करें →",
-      "QuotaSection": "कुंजी सर्वर कोटा",
-      "QuotaRemaining": "{{remaining}} / {{limit}} टोकन शेष",
-      "QuotaResetDate": "{{date}} पर रीसेट होता है",
-      "QuotaLoading": "कोटा लोड हो रहा है...",
-      "QuotaRefresh": "ताज़ा कोटा",
-      "CliSection": "क्लाउड कोड सीएलआई",
-      "CliInstalled": "स्थापित ({{version}})",
-      "CliNotInstalled": "क्लाउड सीएलआई नहीं मिला",
-      "CliInstallLink": "क्लाउड कोड स्थापित करें →",
-      "ModelSection": "डिफ़ॉल्ट क्लाउड मॉडल",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "तेज़ और सस्ता",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "अनुशंसित · संतुलित",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "सबसे सक्षम"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "एआई एजेंट और सहकर्मी",
-    "PageTitle": "एआई एजेंट और सहकर्मी",
-    "SectionTitle": "एआई एजेंट और सहकर्मी",
-    "EnableToggle": "एआई एजेंट और सहकर्मी सक्षम करें",
-    "EnableToggleDesc": "क्लाउड एपीआई कुंजी की आवश्यकता है",
-    "DisabledBadge": "अक्षम",
-    "DisabledMsg": "एआई एजेंट और सहकर्मी अक्षम है। इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें।",
-    "DisabledTabHint": "एआई एजेंट अक्षम है - इसे सेटिंग्स → एआई एजेंट और कोवर्क में सक्षम करें",
-    "NotConfiguredMsg": "कोई क्लाउड एपीआई कुंजी कॉन्फ़िगर नहीं की गई। सेटिंग्स → एआई एजेंट और सहकर्मी में एक सेट अप करें।"
-  },
-  "PipelineStatus": {
-    "Queued": "सारांश पंक्तिबद्ध...",
-    "Running": "सारांश तैयार किया जा रहा है...",
-    "Progress": "{{total}} का प्रसंस्करण भाग {{current}}",
-    "Done": "सारांश तैयार",
-    "Error": "प्रसंस्करण विफल रहा"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "एआई के साथ प्रक्रिया",
-    "Queuing": "कतारबद्ध...",
-    "ProcessingWithTime": "प्रसंस्करण... {{sec}}s",
-    "Describe": "छवि का वर्णन करें",
-    "DescribeSub": "इस स्क्रीनशॉट में क्या है?",
-    "Ocr": "पाठ निकालें (ओसीआर)",
-    "OcrSub": "सभी दृश्यमान पाठ पढ़ें",
-    "Custom": "कस्टम प्रॉम्प्ट",
-    "CustomPlaceholder": "इस छवि के बारे में कुछ भी पूछें...",
-    "ResultLabel": "एआई परिणाम",
-    "Description": "विवरण",
-    "ExtractedText": "निकाला गया पाठ",
-    "Analysis": "विश्लेषण",
-    "PipelineError": "एआई प्रोसेसिंग विफल रही. कृपया पुन: प्रयास करें।",
-    "UnknownError": "अज्ञात त्रुटि"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "फ़ाइल पढ़ रहा है...",
-      "Executing": "क्रियान्वयन...",
-      "Running": "दौड़ना...",
-      "Input": "इनपुट",
-      "Output": "उत्पादन",
-      "Pattern": "नमूना:",
-      "ShowDetails": "प्रदर्शन का विवरण",
-      "AndMoreLines": "... और {{count}} अधिक पंक्तियाँ"
-    },
-    "Streaming": {
-      "Thinking": "सोच...",
-      "LongRunning": "सामान्य से अधिक समय तक चलना",
-      "ToolStuck": "उपकरण अटक सकता है",
-      "ForceStop": "जबर्दस्ती बंद करें",
-      "GeneratingResponse": "प्रतिक्रिया उत्पन्न हो रही है...",
-      "RunningTool": "चल रहा है {{tool}}..."
-    },
-    "Permission": {
-      "Title": "उपकरण अनुमति अनुरोध",
-      "Allow": "एक बार की अनुमति दें",
-      "AllowSession": "सत्र के लिए अनुमति दें",
-      "Deny": "अस्वीकार करना",
-      "Allowed": "अनुमत",
-      "Denied": "अस्वीकृत"
-    },
-    "Title": "एआई एजेंट",
-    "GlobalTitle": "एआई एजेंट",
-    "NewSession": "नया सत्र",
-    "Sessions": "सत्र",
-    "NoSessions": "अभी तक कोई सत्र नहीं. नीचे बातचीत शुरू करें.",
-    "SendPlaceholder": "कुछ भी पूछें... (भेजने के लिए एंटर करें, न्यूलाइन के लिए Shift+Enter)",
-    "SendButton": "भेजना",
-    "StopButton": "रुकना",
-    "NotConfigured": "एजेंट का उपयोग करने के लिए सेटिंग्स → एआई फीचर्स में क्लाउड एपीआई कुंजी कॉन्फ़िगर करें।",
-    "GoToSettings": "खुली सेटिंग",
-    "SessionCost": "सत्र: {inputTokens}_ इन /{outputTokens}_ आउट टोकन",
-    "CommandHelp": "आदेश: /नया · /स्पष्ट · /लागत · /सहायता",
-    "Mode": {
-      "Ask": "पूछना",
-      "Code": "कोड",
-      "Plan": "योजना"
-    },
-    "Model": {
-      "Haiku": "हाइकू",
-      "Sonnet": "गाथा",
-      "Opus": "ओपुस"
-    },
-    "QuickAction": {
-      "Summarize": "इस रिकॉर्डिंग को संक्षेप में प्रस्तुत करें",
-      "ActionItems": "कार्रवाई आइटम ढूंढें",
-      "DraftEmail": "ड्राफ्ट अनुवर्ती ईमेल"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "आप मेरी क्या मदद कर सकते हैं?",
-      "HelpAnalyze": "मेरी हाल की रिकॉर्डिंग का विश्लेषण करने में मेरी सहायता करें"
-    },
-    "AssetContext": "संदर्भ: {{name}}"
   }
 }

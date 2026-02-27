@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "Сборка для App Store",
     "DirectBuild": "Прямая сборка",
-    "SubtitleBadge": "Snap Recorder & Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Помогите нам перевести SeaMeet →",
     "Loading": "Загрузка...",
-    "HelpTranslate": "Помогите нам перевести SeaMeet →"
+    "SubtitleBadge": "Snap Recorder & Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Производительность",
-    "Social": "Социальные сети",
-    "Gaming": "Игры",
-    "Recording": "Запись",
-    "Browsers": "Браузеры",
-    "BrowserBased": "На основе браузера"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Другой",
+      "Skip": "Пропускать",
+      "Submit": "Представлять на рассмотрение",
+      "Title": "Вопрос",
+      "TypeResponse": "Введите ответ..."
+    },
+    "AssetContext": "Контекст: {{name}}",
+    "CommandHelp": "Команды: /new · /clear · /cost · /help",
+    "GlobalTitle": "ИИ-агент",
+    "GoToSettings": "Открыть настройки",
+    "Mode": {
+      "Ask": "Просить",
+      "Code": "Код",
+      "Plan": "План"
+    },
+    "Model": {
+      "Haiku": "Хайку",
+      "Opus": "Опус",
+      "Sonnet": "Сонет"
+    },
+    "NewSession": "Новая сессия",
+    "NoSessions": "Сеансов пока нет. Начните разговор ниже.",
+    "NotConfigured": "Настройте ключ API Claude в «Настройки» → «Функции AI», чтобы использовать Агента.",
+    "Permission": {
+      "Allow": "Разрешить один раз",
+      "Allowed": "Допустимый",
+      "AllowSession": "Разрешить сеанс",
+      "Denied": "Отклонен",
+      "Deny": "Отрицать",
+      "Title": "Запрос разрешения инструмента"
+    },
+    "Plan": {
+      "Approve": "Утвердить план",
+      "DefaultFeedback": "Пользователь запросил изменения",
+      "Description": "Агент подготовил план, указанный выше, и для продолжения ему необходимо ваше одобрение.",
+      "FeedbackPlaceholder": "Опишите, каких изменений вы бы хотели...",
+      "PlanDetails": "Детали плана",
+      "RequestChanges": "Запросить изменения",
+      "RequestedPermissions": "Запрошенные разрешения:",
+      "SendFeedback": "Отправить отзыв",
+      "Title": "Обзор плана"
+    },
+    "QuickAction": {
+      "ActionItems": "Найдите предметы для действий",
+      "DraftEmail": "Черновик последующего письма",
+      "Summarize": "Подведите итог этой записи"
+    },
+    "SendButton": "Отправлять",
+    "SendPlaceholder": "Спросите что угодно... (Enter для отправки, Shift+Enter для перехода на новую строку)",
+    "SessionCost": "Сеанс: {{inputTokens}} в /{{outputTokens}} токенов",
+    "Sessions": "Сессии",
+    "StopButton": "Останавливаться",
+    "Streaming": {
+      "ForceStop": "Принудительная остановка",
+      "GeneratingResponse": "Генерация ответа...",
+      "LongRunning": "Бег дольше обычного",
+      "RunningTool": "Запуск {{tool}}...",
+      "Thinking": "Думая...",
+      "ToolStuck": "Инструмент может застрять"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Помогите мне проанализировать мои последние записи",
+      "WhatCanYouDo": "Чем вы можете мне помочь?"
+    },
+    "Title": "ИИ-агент",
+    "ToolCall": {
+      "AndMoreLines_one": "... и еще {{count}} строк",
+      "AndMoreLines_other": "... и еще {{count}} строк",
+      "Executing": "Выполнение...",
+      "Input": "Вход",
+      "Output": "Выход",
+      "Pattern": "Шаблон:",
+      "Reading": "Чтение файла...",
+      "ShowDetails": "Показать детали"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} действий",
+      "Actions_other": "{{count}} действий",
+      "Completed_one": "{{count}} завершено",
+      "Completed_other": "{{count}} завершено",
+      "Running_one": "{{count}} работает",
+      "Running_other": "{{count}} работает"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Неполноценный",
+    "DisabledMsg": "AI Agent & Cowork отключены. Включите его в «Настройки» → «AI Agent & Cowork».",
+    "DisabledTabHint": "AI Agent отключен — включите его в «Настройки» → AI Agent & Cowork.",
+    "EnableToggle": "Включить AI Agent и Cowork",
+    "EnableToggleDesc": "Требуется ключ API Claude.",
+    "MenuItem": "AI-агент и совместная работа",
+    "PageTitle": "AI-агент и совместная работа",
+    "SectionTitle": "AI-агент и совместная работа"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "API-ключ Близнецов",
+    "ApiKeySection": "API-ключ Близнецов",
+    "AutomationSection": "Автоматизация",
+    "AutoSummary": "Автоматическое создание сводки",
+    "AutoSummaryDesc": "Запускается после завершения каждой записи",
+    "ClaudeKey": {
+      "ClearKey": "Удалить сохраненный ключ",
+      "CliInstalled": "Установлено ({{version}})",
+      "CliInstallLink": "Установить Клод Код →",
+      "CliNotInstalled": "Клод CLI не найден",
+      "CliSection": "Клод Код CLI",
+      "GetKeyLink": "Получите ключ API из Anthropic Console →",
+      "HideKey": "Скрыть ключ",
+      "KeyInvalid": "Неверный ключ",
+      "KeyPlaceholder": "ск-муравей-...",
+      "KeyPlaceholderSaved": "••••••••• (сохранено)",
+      "KeyTesting": "Тестирование...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Быстро и дешево",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Самый способный",
+      "ModelSection": "Модель Клода по умолчанию",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Рекомендуется · Сбалансированный",
+      "QuotaLoading": "Загрузка квоты...",
+      "QuotaRemaining": "Осталось {{remaining}} / {{limit}} токенов",
+      "QuotaResetDate": "Сбрасывается {{date}}",
+      "Saving": "Сохранение...",
+      "Section": "Ключ API Клода (Агент)",
+      "ShowKey": "Показать ключ",
+      "SourceByok": "Ваш API-ключ (BYOK)",
+      "SourceCli": "Клод Код CLI",
+      "SourceKeyServer": "Под управлением SeaMeet",
+      "SourceLabel": "Активный источник:",
+      "SourceNone": "Не настроено",
+      "TestKey": "Сохранить и проверить"
+    },
+    "ClearKey": "Удалить сохраненный ключ",
+    "EnableToggle": "Включите сводки на основе искусственного интеллекта",
+    "EnableToggleDesc": "Требуется бесплатный ключ Gemini API.",
+    "GetKeyLink": "Получите бесплатный ключ API от Google AI Studio →",
+    "GroupTitle": "Возможности искусственного интеллекта",
+    "HideKey": "Скрыть ключ",
+    "KeyInvalid": "Неверный ключ",
+    "KeyNotConfigured": "Ключ не настроен",
+    "KeyPlaceholder": "АизаСы...",
+    "KeyPlaceholderSaved": "••••••••• (сохранено)",
+    "KeyTesting": "Тестирование...",
+    "KeyVerified": "Ключ проверен",
+    "ManagedKeyDesc": "Ваш ключ API предоставляется автоматически. Никакой конфигурации не требуется.",
+    "ManagedKeyStatus": "Управляемый ключ — предоставлен SeaMeet.",
+    "MenuItem": "Резюме на основе искусственного интеллекта",
+    "ModelLabel": "Модель Близнецов",
+    "Models": {
+      "Gemini25Flash": "Близнецы 2. Флэш",
+      "Gemini25FlashLite": "Близнецы 2.5 Флэш Лайт",
+      "Gemini25FlashLiteSub": "Ультра-дешевый",
+      "Gemini25FlashSub": "Самый дешевый стабильный вариант",
+      "Gemini25Pro": "Близнецы 2.5 Про",
+      "Gemini25ProSub": "Лучшее устойчивое рассуждение",
+      "Gemini3Flash": "Близнецы 3 Флэш",
+      "Gemini3FlashSub": "Рекомендуется · Быстрый + мощный",
+      "Gemini3Pro": "Близнецы 3 Про",
+      "Gemini3ProSub": "Максимальная возможность"
+    },
+    "ModelSection": "Модель ИИ",
+    "PageTitle": "Возможности искусственного интеллекта",
+    "QuotaLoading": "Загрузка квоты...",
+    "QuotaRefresh": "Обновить квоту",
+    "QuotaRemaining": "Осталось {{remaining}} / {{limit}} токенов",
+    "QuotaResetDate": "Сбрасывается {{date}}",
+    "QuotaSection": "Квота использования",
+    "Saving": "Сохранение...",
+    "SelectedModel": "Выбрано: {{model}}",
+    "ShowKey": "Показать ключ",
+    "TestKey": "Сохранить и проверить"
+  },
+  "AISummary": {
+    "Copy": "Копировать",
+    "EnableRequired": "Включите функции ИИ в «Настройки» → «Функции ИИ», чтобы увидеть сводные данные по ИИ.",
+    "Error": "Не удалось загрузить сводку: {{error}}.",
+    "Export": {
+      "HeadingActionItems": "Действия",
+      "HeadingKeyDecisions": "Ключевые решения",
+      "HeadingSummary": "Краткое содержание",
+      "HeadingTranscription": "Транскрипция"
+    },
+    "ExportJson": "Скопировать как JSON",
+    "ExportMarkdown": "Скопировать как Markdown",
+    "ExportSrt": "Копировать как SRT",
+    "GeminiLiveTranscript": "Близнецы в прямом эфире",
+    "Generate": "Создать сводку",
+    "Maximize": "Развернуть до полного просмотра",
+    "Minimize": "Свернуть",
+    "NoActions": "Действия не определены.",
+    "NoChapters": "Нет доступных глав.",
+    "NoDecisions": "Ключевые решения не определены.",
+    "NoSummary": "Резюме по ИИ пока нет.",
+    "NoSummaryText": "Резюме недоступно.",
+    "NoTranscript": "Стенограмма недоступна.",
+    "PipelineError": "Обработка ИИ не удалась. Попробуйте регенерировать.",
+    "PipelineTranscript": "Конвейер искусственного интеллекта",
+    "Processing": "Создание сводки...",
+    "Queued": "В очереди на обработку...",
+    "Regenerate": "Восстановить сводку",
+    "Retry": "Повторить попытку",
+    "SeekToTimestamp": "Ищите эту временную метку",
+    "SetupRequired": "Настройте ключ API Gemini в «Настройки» → «Функции AI», чтобы включить сводки AI.",
+    "Tab": {
+      "ActionItems": "Действия",
+      "Chapters": "Главы",
+      "KeyDecisions": "Решения",
+      "Summary": "Краткое содержание",
+      "Transcription": "Стенограмма"
+    },
+    "TabTitle": "Обзор ИИ",
+    "Topics": "Темы:",
+    "Speakers": "Докладчики",
+    "MergeInto": "Объединить в…",
+    "ApplyMerge": "Применить",
+    "EditSegmentSpeaker": "Нажмите, чтобы переназначить этот сегмент"
   },
   "App": {
     "FailedToEnableFlashback": "Не удалось включить флэшбэк: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "Все приложения",
-    "Teams": "Microsoft Teams (Работа/Учеба)",
-    "TeamsConsumer": "Команды Microsoft (личные)",
-    "TeamsWeb": "Microsoft Teams (Интернет)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Храбрый браузер",
+    "CallOfDuty": "Чувство долга",
     "Chrome": "Браузер Chrome",
-    "Edge": "Краевой браузер",
-    "Firefox": "Браузер Firefox",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Дискорд (Интернет)",
+    "Edge": "Краевой браузер",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Браузер Firefox",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Браузер Опера",
+    "Other": "Другие приложения",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Вебекс (Интернет)",
-    "WindowsSoundRecorder": "Звукозапись Windows",
-    "Other": "Другие приложения",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Игровая панель Xbox",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam Чат",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Браузер Опера",
-    "Brave": "Храбрый браузер",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "Чувство долга",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Работа/Учеба)",
+    "TeamsConsumer": "Команды Microsoft (личные)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (Интернет)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Вебекс (Интернет)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Звукозапись Windows",
+    "XboxGameBar": "Игровая панель Xbox",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Захват аудио",
+    "AudioMix": "График волны",
+    "AudioSource": "Источник аудио:",
+    "Microphone": "Микрофон",
+    "MicrophoneGainWarning": "Высокий уровень усиления микрофона может захватывать воспроизведение динамика, даже если «System Audio» отключено. Используйте наушники или снизьте усиление микрофона для записи только с микрофона.",
+    "RecordingDefaultMicrophone": "Микрофон по умолчанию",
+    "RecordingSettings": "Настройки записи",
+    "RefreshMicrophoneList": "Обновить список микрофонов"
   },
   "AutoDetectInfoModal": {
-    "Title": "Автообнаружение встреч",
-    "Subtitle": "Больше не пропустите ни одну встречу",
-    "Description": "Автообнаружение автоматически начинает запись, когда вы присоединяетесь к встречам, чтобы вы никогда не забыли нажать кнопку \"Запись\".",
-    "PopularAppsTitle": "Обнаружены популярные приложения",
-    "MoreApps": "+40 еще",
-    "HowItWorksTitle": "Как это работает",
-    "Step1Title": "Включить автообнаружение",
-    "Step1Desc": "Включите переключатель и выберите приложения для мониторинга",
-    "Step2Title": "Присоединиться к встрече",
-    "Step2Desc": "Откройте Zoom, Teams, Meet или любое другое поддерживаемое приложение",
-    "Step3Title": "Автоматическая запись",
-    "Step3Desc": "Автообнаружение автоматически начинает запись. Готово!",
-    "Tip1Title": "Настройка Per-App",
-    "Tip1Desc": "Установите \"Всегда запись\" для рабочих встреч, \"Спрашивать каждый раз\" для личных звонков",
-    "Tip2Title": "Множественные методы обнаружения",
-    "Tip2Desc": "Использует микрофон, заголовки окон и URL-адреса браузеров для точности",
-    "GotIt": "Понял",
-    "OpenSettings": "Открыть настройки",
     "ControlLabel": "АВТО ОБНАРУЖЕНИЕ",
-    "LearnAbout": "Узнать о автообнаружении"
+    "Description": "Автообнаружение автоматически начинает запись, когда вы присоединяетесь к встречам, чтобы вы никогда не забыли нажать кнопку \"Запись\".",
+    "GotIt": "Понял",
+    "HowItWorksTitle": "Как это работает",
+    "LearnAbout": "Узнать о автообнаружении",
+    "MoreApps": "+40 еще",
+    "OpenSettings": "Открыть настройки",
+    "PopularAppsTitle": "Обнаружены популярные приложения",
+    "Step1Desc": "Включите переключатель и выберите приложения для мониторинга",
+    "Step1Title": "Включить автообнаружение",
+    "Step2Desc": "Откройте Zoom, Teams, Meet или любое другое поддерживаемое приложение",
+    "Step2Title": "Присоединиться к встрече",
+    "Step3Desc": "Автообнаружение автоматически начинает запись. Готово!",
+    "Step3Title": "Автоматическая запись",
+    "Subtitle": "Больше не пропустите ни одну встречу",
+    "Tip1Desc": "Установите \"Всегда запись\" для рабочих встреч, \"Спрашивать каждый раз\" для личных звонков",
+    "Tip1Title": "Настройка Per-App",
+    "Tip2Desc": "Использует микрофон, заголовки окон и URL-адреса браузеров для точности",
+    "Tip2Title": "Множественные методы обнаружения",
+    "Title": "Автообнаружение встреч"
   },
   "AutoRecording": {
-    "Title": "Автоопределение встреч",
-    "DetectApps": "Обнаруживать встречи из:",
-    "Enabled": "Автоопределение включено",
-    "Disabled": "Автоопределение отключено",
-    "MeetingDetected": "Обнаружена {{{app}}} встреча!",
-    "MeetingEnded": "Встреча завершена",
-    "MeetingFallbackName": "Встреча",
     "BugReport": "Нашли баг? Сообщите по адресу seameet@seasalt.ai",
     "BugReportTitle": "Сообщить об ошибке",
+    "Disabled": "Автоопределение отключено",
+    "Enabled": "Автоопределение включено",
     "HelpWanted": "Если вы хотите добавить новое приложение или подтвердили его работу, пожалуйста, сообщите нам на seameet@seasalt.ai. Благодарим за помощь в улучшении этого приложения!",
-    "HelpWantedTitle": "Помогите нам улучшить"
+    "HelpWantedTitle": "Помогите нам улучшить",
+    "MeetingDetected": "Обнаружена {{{app}}} встреча!",
+    "MeetingEnded": "Встреча завершена",
+    "MeetingFallbackName": "Встреча"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole необходим для системного аудио",
-    "InstallInstructions": "Для записи системного аудио на macOS необходимо установить виртуальный аудиодрайвер BlackHole",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "Копировать команду",
-    "Or": "или",
-    "DownloadManually": "Скачать с existential.audio",
-    "SetupTitle": "Настроить Multi-Output Device",
-    "SetupStep1": "Открыть Audio MIDI Setup (Приложения → Утилиты)",
-    "SetupStep2": "Нажмите '+' и выберите 'Create Multi-Output Device'",
-    "SetupStep3": "Проверьте и ваши колонки/наушники, и 'BlackHole 2ch'",
-    "SetupStep4": "Щелкните правой кнопкой по Multi-Output и выберите «Использовать это устройство для вывода звука»",
-    "SetupStep5": "Перезагрузите систему, если BlackHole не появляется в списке устройств",
-    "SetupStep6": "В этом приложении выберите «BlackHole 2ch» в списке источников звука",
-    "CheckAgain": "Проверить снова",
     "Cancel": "Отмена",
-    "LearnMore": "Подробнее о устройствах Multi-Output"
+    "CheckAgain": "Проверить снова",
+    "CopyCommand": "Копировать команду",
+    "DownloadManually": "Скачать с existential.audio",
+    "InstallInstructions": "Для записи системного аудио на macOS необходимо установить виртуальный аудиодрайвер BlackHole",
+    "LearnMore": "Подробнее о устройствах Multi-Output",
+    "NotInstalled": "BlackHole необходим для системного аудио",
+    "Or": "или",
+    "SetupTitle": "Настроить Multi-Output Device"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Обнаружен Bluetooth-микрофон",
-    "Description": "Ваша ОС может принудительно переводить аудио в режим \"Коммуникации\" при использовании Bluetooth-микрофонов, что может вызывать искажения звука или проблемы с громкостью во время записи.",
-    "RecommendationLabel": "Рекомендуется:",
-    "Recommendation": "Переключитесь на не-Bluetooth-микрофон (например, встроенный или USB-микрофон) для лучшего качества записи.",
+    "CloseAriaLabel": "Закрыть предупреждение Bluetooth",
     "CloseTitle": "Закрыть предупреждение",
-    "CloseAriaLabel": "Закрыть предупреждение Bluetooth"
+    "Description": "Ваша ОС может принудительно переводить аудио в режим \"Коммуникации\" при использовании Bluetooth-микрофонов, что может вызывать искажения звука или проблемы с громкостью во время записи.",
+    "Recommendation": "Переключитесь на не-Bluetooth-микрофон (например, встроенный или USB-микрофон) для лучшего качества записи.",
+    "RecommendationLabel": "Рекомендуется:",
+    "Title": "⚠️ Обнаружен Bluetooth-микрофон"
+  },
+  "Common": {
+    "ApplyName": "Применить имя",
+    "Cancel": "Отменить",
+    "Close": "Закрыть",
+    "Configure": "Настройка",
+    "Delete": "Удалить",
+    "Done": "Готово",
+    "Expand": "Развернуть",
+    "FileNameCopiedWithRenameHint": "{{fileName}} скопировано в буфер обмена. Дважды щёлкните, чтобы изменить имя файла.",
+    "Loading": "Загрузка…",
+    "Minimize": "Свернуть в кружок",
+    "Open": "Открыть",
+    "Or": "Или",
+    "Processing": "Обработка…",
+    "Recording": "Запись",
+    "Save": "Сохранить",
+    "Saved": "Сохранено",
+    "Saving": "Сохранение…",
+    "Screenshot": "Скриншот",
+    "Send": "Отправлять",
+    "Starting": "Запуск…",
+    "UnknownApp": "Неизвестное приложение"
   },
   "DeletePrompt": {
-    "Title": "Удалить файл",
-    "Message": "Вы уверены, что хотите удалить этот файл? Эта операция отмене не подлежит.",
     "Cancel": "Отмена",
-    "Confirm": "Удалить"
+    "Confirm": "Удалить",
+    "Message": "Вы уверены, что хотите удалить этот файл? Эта операция отмене не подлежит.",
+    "Title": "Удалить файл"
   },
   "Errors": {
-    "NoAudioSources": "Нет доступных аудиоисточников",
-    "NoSystemAudioSources": "Нет системных аудиоисточников",
+    "AutoRecordingFailed": "Не удалось включить автозапуск записи",
     "FailedToStartRecording": "Не удалось начать запись: {{message}}",
     "FailedToStartVideoRecording": "Не удалось начать видеозапись: {{message}}",
-    "AutoRecordingFailed": "Не удалось включить автозапуск записи"
+    "NoAudioSources": "Нет доступных аудиоисточников",
+    "NoSystemAudioSources": "Нет системных аудиоисточников",
+    "SaveFailed": "Не удалось сохранить запись: {{message}}."
   },
   "Events": {
-    "Title": "События",
-    "MarkToolbarButton": "Отмеченные события",
+    "EmptyWhenNotRecording": "Нет событий для этой записи.",
+    "EmptyWhileRecording": "Пока нет событий. Нажмите \"Марк\" во время записи, чтобы добавить.",
+    "EventLabel": "Событие {{number}}",
     "MarkButton": "Отметить",
     "Marked": "Отмечено!",
-    "EventLabel": "Событие {{number}}",
-    "EmptyWhileRecording": "Пока нет событий. Нажмите \"Марк\" во время записи, чтобы добавить.",
-    "EmptyWhenNotRecording": "Нет событий для этой записи.",
-    "DeletePrompt": {
-      "Title": "Удалить событие",
-      "Message": "Вы уверены, что хотите удалить это событие? Это действие невозможно отменить.",
-      "Cancel": "Отмена",
-      "Confirm": "Удалить"
-    }
+    "MarkToolbarButton": "Отмеченные события",
+    "Title": "События"
+  },
+  "FileImport": {
+    "BrowseFiles": "Обзор файлов",
+    "DragDropFiles": "Перетащите сюда ваши аудио-, видео- и изображенческие файлы",
+    "DragDropSubtitle": "Перетащите сюда аудио-, видео- и изображенческие файлы",
+    "ImportMedia": "Импортировать медиафайлы",
+    "Supported": "Поддерживаются: MP3, WAV, M4A, WebM, OGG, PNG, JPG и другие",
+    "SupportedFormats": "Поддерживаются: MP3, WAV, M4A, WebM, OGG, PNG, JPG и другие",
+    "VideoImportCopying": "Копирование видеофайла...",
+    "VideoImportSaving": "Сохранение видеофайла...",
+    "VideoUnsupported": "Этот формат видео может не поддерживаться в приложении. Файл всё равно будет импортирован."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Аудио флэшбэк",
+    "CannotChangeWhileRecording": "Невозможно изменить режим флэшбэк во время записи",
+    "DisableFlashback": "Отключить флэшбэк",
     "Label": "ФЛЕШБЕК",
     "LearnAbout": "Подробнее о Flashback",
-    "DisableFlashback": "Отключить флэшбэк",
-    "AudioFlashback": "Аудио флэшбэк",
-    "ScreenFlashback": "Экранный флэшбэк",
-    "TitleReady": "Нажмите для показа интерфейса Flashback",
-    "TitleCharging": "Зарядка флэшбэк",
-    "TitleInit": "Нажмите для начала зарядки",
+    "Off": "Выкл",
     "Ready": "Готово",
     "ReadyQuestion": "Готовы?",
-    "Off": "Выкл",
-    "CannotChangeWhileRecording": "Невозможно изменить режим флэшбэк во время записи",
-    "ToggleLabel": "Переключить флэшбэк",
-    "SettingsLabel": "Запись флэшбэк"
+    "ScreenFlashback": "Экранный флэшбэк",
+    "SettingsLabel": "Запись флэшбэк",
+    "TitleCharging": "Зарядка флэшбэк",
+    "TitleInit": "Нажмите для начала зарядки",
+    "TitleReady": "Нажмите для показа интерфейса Flashback",
+    "ToggleLabel": "Переключить флэшбэк"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "звуковое",
+    "Buffering": "Буферизация",
+    "BufferingMoment": "Буферизация момента...",
+    "Capturing": "Захват...",
+    "DescCharging": "Заполняется буфер длительностью {{duration}} с... завершено {{progress}}%",
+    "DescInit": "Нажмите «Готовы?», чтобы сказать SeaMeet начать «флэшбэк» прошлого.",
+    "DescNone": "Запишите ваш экран, аудио или сделайте снимок экрана. Выберите режим флэшбэк выше для сохранения моментов.",
+    "DescReady": "Флэшбэк активирован и готов к использованию. Каждый раз, когда вы нажимаете Запись, включается {{duration}} секунд прошлого {{type}} — больше никогда не сожалеть о упущенном моменте.",
+    "FillingBuffer": "Заполняется буфер флэшбэка в течение {{duration}} с... {{progress}}%",
+    "FlashbackBuffering": "Буферизация...",
+    "FlashbackCharging": "Буфер заполняется {{seconds}} с... завершено {{percent}}%",
+    "FlashbackChargingDescription": "Подготовка вашего {{seconds}}-секундного окна... {{percent}}% завершено.",
+    "FlashbackInitAudio": "Готовы защитить ваше аудио?",
+    "FlashbackInitDescription": "Нажмите 'Ready?', чтобы SeaMeet запустил 'воспоминание' о прошлом.",
+    "FlashbackInitScreen": "Готовы защитить ваш экран?",
+    "FlashbackMismatch": "Несовпадение режима флэшбэк: активирована запись аудио, а флэшбэк видео включен. Пожалуйста, отключите видео флэшбэк.",
+    "FlashbackOff": "Flashback в настоящее время отключен. Начинайте обычную запись или выберите режим flashback (аудио или экран) выше для сохранения героического момента.",
+    "FlashbackPrivacy": "Ваша конфиденциальность защищена. Хранится локально в RAM.",
+    "FlashbackReady": "Никогда не пропустите момент.",
+    "FlashbackReadyDescription": "Flashback активирован. Прошлое {{seconds}} с {{type}} включено при записи.",
+    "FlashbackReadyQuestion": "Готовы?",
+    "KeepWindowVisible": "Держите окно SeaMeet видимым при создании снимка",
+    "NeverMissAMoment": "Никогда не пропустите момент.",
+    "OpenFloater": "Открыть Float",
+    "OpenLauncher": "Открыть лаунчер",
+    "PrivacyDesc": "SeaMeet сохраняет в кольцевом буфере локально в RAM вашего компьютера {{duration}} секунд {{type}}.",
+    "PrivacyProtected": "Ваша конфиденциальность защищена.",
+    "Ready": "Готовы?",
+    "ReadyToCapture": "SeaMeet готов к захвату.",
+    "ReadyToGuard": "Готовы защитить ваш {{type}}?",
+    "RecordWithFlashback": "Запись с флэшбэком",
+    "SaveFlashback": "Сохранить последний {{seconds}} секунд флэшбэка",
+    "SaveLastFlashback": "Сохранить последний {{duration}}-секундный флэшбэк",
+    "SavingFlashback": "Сохраняем запись флэшбэка…",
+    "Screen": "экран",
+    "StartRecording": "Начать запись",
+    "TakeScreenshot": "Сделать снимок"
   },
   "FlashbackIndicator": {
     "Buffering": "Буферизация",
@@ -183,138 +463,145 @@
     "VideoReady": "Видео готово"
   },
   "FlashbackInfoModal": {
-    "Title": "Флэшбэк-запись",
-    "Close": "Закрыть",
-    "Subtitle": "Ваша личная машина времени",
-    "SubtitleDesc": "Запечатлевайте до 2 минут из прошлого, даже после его события.",
+    "Benefits": {
+      "AlwaysReady": "Всегда готов к записи",
+      "LocalOnly": "Только локально (полная приватность)",
+      "MultipleCaptures": "Множество захватов — буфер продолжает работу",
+      "NoPlan": "Не требуется планирование",
+      "Offline": "Работает офлайн",
+      "Title": "Основные преимущества"
+    },
     "BestFor": "лучше для:",
-    "VisualStates": {
-      "Title": "Визуальные индикаторы состояния",
-      "OffLabel": "ВЫКЛ",
-      "Off": "Серый, статический формат волны",
-      "ChargingLabel": "ЗАРЯДКА",
-      "Charging": "Янтарный/Жёлтый, идет заполнение буфера",
-      "ReadyLabel": "ГОТОВО",
-      "Ready": "Зеленый, буфер полон"
-    },
-    "SpecLabel": {
-      "Buffer": "Буфер:",
-      "Memory": "Память:",
-      "Captures": "Захваты:"
-    },
-    "Modes": {
-      "Title": "Два режима флэшбэка",
-      "Audio": {
-        "Title": "Аудио флэшбэк",
-        "Buffer": "30 секунд",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "Микрофон и/или системное аудио",
-        "BestFor": "Запись встреч, звонков, голосовых разговоров — желательно оставить \"телефонных звонков\" или \"звонков и голосовых разговоров\" для более точного соответствия."
-      },
-      "Video": {
-        "Title": "Видео флэшбэк",
-        "Buffer": "10s, 30s, 60s, 90s или 120s",
-        "Memory": "Использует 50-600 MB RAM",
-        "Captures": "Скриншоты видео + аудио",
-        "BestFor": "Презентации, игровые моменты, сеансы совместного экрана, визуальный контент"
-      }
-    },
-    "HowItWorks": {
-      "Title": "Как это работает",
-      "Step1": {
-        "Title": "Включить режим флэшбэк",
-        "Desc": "Нажмите кнопку FLASHBACK, чтобы включить режим. Буфер начнёт заполняться автоматически."
-      },
-      "Step2": {
-        "Title": "Ожидание готовности",
-        "Desc": "Обратите внимание на зелёный статус. Буфер должен заполниться до 90%, чтобы можно было захватить прошлое."
-      },
-      "Step3": {
-        "Title": "Нажмите «Запись»",
-        "Desc": "Когда происходит что-то важное, нажмите начать запись. Flashback захватывает буфер и продолжает запись вперёд."
-      }
-    },
-    "Scenarios": {
-      "Title": "Практические сценарии",
-      "OhNo": {
-        "Title": "Момент \"О нет!\"",
-        "Desc": "Коллега говорит что-то важное. Вы понимаете, что хотите его записать. Нажмите Запись → Флэшбэк сохраняет последние 30 секунд (включая этот момент!)."
-      },
-      "Gaming": {
-        "Title": "Игровой момент",
-        "Desc": "Выполните невероятный комбо. Нажмите Запись сразу же. Флэшбэк захватывает геймплей, предшествующий этому комбо, и вашу реакцию."
-      },
-      "Decision": {
-        "Title": "Важное решение",
-        "Desc": "Юрист объясняет пункт контракта. Нажмите Запись, чтобы зафиксировать объяснение. Создайте полный, точный рекорд для последующего анализа."
-      }
-    },
+    "Close": "Закрыть",
     "Comparison": {
-      "Title": "Flashback vs. Традиционная запись",
+      "Capture": {
+        "Feature": "захват моментов",
+        "Flashback": "Можно начать после этого момента",
+        "Traditional": "если забудете — оно будет потеряно"
+      },
       "Header": {
         "Feature": "особенность",
-        "Traditional": "Традиционная запись",
-        "Flashback": "Запись Flashback"
+        "Flashback": "Запись Flashback",
+        "Traditional": "Традиционная запись"
       },
       "Planning": {
         "Feature": "планирование",
-        "Traditional": "Должно начаться ДО момента",
-        "Flashback": "Планирование не требуется"
-      },
-      "Capture": {
-        "Feature": "захват моментов",
-        "Traditional": "если забудете — оно будет потеряно",
-        "Flashback": "Можно начать после этого момента"
+        "Flashback": "Планирование не требуется",
+        "Traditional": "Должно начаться ДО момента"
       },
       "Result": {
         "Feature": "результат",
-        "Traditional": "\"Жаль, я не записал это\"",
-        "Flashback": "\"Рад, что поймал это\""
-      }
-    },
-    "Benefits": {
-      "Title": "Основные преимущества",
-      "NoPlan": "Не требуется планирование",
-      "AlwaysReady": "Всегда готов к записи",
-      "Offline": "Работает офлайн",
-      "LocalOnly": "Только локально (полная приватность)",
-      "MultipleCaptures": "Множество захватов — буфер продолжает работу"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "Аудио флэшбэк для ежедневного применения",
-        "Desc": "Используйте 30-секундный аудио флэшбэк для встреч и звонков. Меньшее использование памяти, работает надежно."
+        "Flashback": "\"Рад, что поймал это\"",
+        "Traditional": "\"Жаль, я не записал это\""
       },
-      "VideoSpecial": {
-        "Title": "Видео флэшбэк для особых моментов",
-        "Desc": "Включите Видео флэшбэк (буфер 30 сек.) для презентаций, игровых моментов или любого другого визуального контента, который хотите сохранить."
-      },
-      "Memory": {
-        "Title": "управление памятью",
-        "Desc": "С при 2 минутах видео флэшбэка: все приложение занимает менее 1 ГБ ОЗУ."
-      }
+      "Title": "Flashback vs. Традиционная запись"
     },
     "GotIt": "Понятно",
-    "OpenSettings": "Открыть настройки"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Нажмите кнопку FLASHBACK, чтобы включить режим. Буфер начнёт заполняться автоматически.",
+        "Title": "Включить режим флэшбэк"
+      },
+      "Step2": {
+        "Desc": "Обратите внимание на зелёный статус. Буфер должен заполниться до 90%, чтобы можно было захватить прошлое.",
+        "Title": "Ожидание готовности"
+      },
+      "Step3": {
+        "Desc": "Когда происходит что-то важное, нажмите начать запись. Flashback захватывает буфер и продолжает запись вперёд.",
+        "Title": "Нажмите «Запись»"
+      },
+      "Title": "Как это работает"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Запись встреч, звонков, голосовых разговоров — желательно оставить \"телефонных звонков\" или \"звонков и голосовых разговоров\" для более точного соответствия.",
+        "Buffer": "30 секунд",
+        "Captures": "Микрофон и/или системное аудио",
+        "Memory": "~30-50 MB RAM",
+        "Title": "Аудио флэшбэк"
+      },
+      "Title": "Два режима флэшбэка",
+      "Video": {
+        "BestFor": "Презентации, игровые моменты, сеансы совместного экрана, визуальный контент",
+        "Buffer": "10s, 30s, 60s, 90s или 120s",
+        "Captures": "Скриншоты видео + аудио",
+        "Memory": "Использует 50-600 MB RAM",
+        "Title": "Видео флэшбэк"
+      }
+    },
+    "OpenSettings": "Открыть настройки",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "Юрист объясняет пункт контракта. Нажмите Запись, чтобы зафиксировать объяснение. Создайте полный, точный рекорд для последующего анализа.",
+        "Title": "Важное решение"
+      },
+      "Gaming": {
+        "Desc": "Выполните невероятный комбо. Нажмите Запись сразу же. Флэшбэк захватывает геймплей, предшествующий этому комбо, и вашу реакцию.",
+        "Title": "Игровой момент"
+      },
+      "OhNo": {
+        "Desc": "Коллега говорит что-то важное. Вы понимаете, что хотите его записать. Нажмите Запись → Флэшбэк сохраняет последние 30 секунд (включая этот момент!).",
+        "Title": "Момент \"О нет!\""
+      },
+      "Title": "Практические сценарии"
+    },
+    "SpecLabel": {
+      "Buffer": "Буфер:",
+      "Captures": "Захваты:",
+      "Memory": "Память:"
+    },
+    "Subtitle": "Ваша личная машина времени",
+    "SubtitleDesc": "Запечатлевайте до 2 минут из прошлого, даже после его события.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Используйте 30-секундный аудио флэшбэк для встреч и звонков. Меньшее использование памяти, работает надежно.",
+        "Title": "Аудио флэшбэк для ежедневного применения"
+      },
+      "Memory": {
+        "Desc": "С при 2 минутах видео флэшбэка: все приложение занимает менее 1 ГБ ОЗУ.",
+        "Title": "управление памятью"
+      },
+      "VideoSpecial": {
+        "Desc": "Включите Видео флэшбэк (буфер 30 сек.) для презентаций, игровых моментов или любого другого визуального контента, который хотите сохранить.",
+        "Title": "Видео флэшбэк для особых моментов"
+      }
+    },
+    "Title": "Флэшбэк-запись",
+    "VisualStates": {
+      "Charging": "Янтарный/Жёлтый, идет заполнение буфера",
+      "ChargingLabel": "ЗАРЯДКА",
+      "Off": "Серый, статический формат волны",
+      "OffLabel": "ВЫКЛ",
+      "Ready": "Зеленый, буфер полон",
+      "ReadyLabel": "ГОТОВО",
+      "Title": "Визуальные индикаторы состояния"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "Запуск",
-    "AutoStartLabel": "Автостарт флэшбэк",
+    "AutoStartAudio": "автообеспечение запуска флэшбэка аудио",
     "AutoStartDesc": "Запускать флэшбэк при запуске приложения",
     "AutoStartDisable": "Отключить автообеспечение запуска",
-    "AutoStartAudio": "автообеспечение запуска флэшбэка аудио",
+    "AutoStartLabel": "Автостарт флэшбэк",
     "AutoStartScreen": "автообеспечение запуска флэшбэка видео",
-    "BufferTitle": "Длительность буфера",
-    "BufferDurationLabel": "Время буфера",
     "BufferDurationDesc": "Как долго сохранять буфер аудио/видео",
-    "DurationOption": "{{duration}} с"
+    "BufferDurationLabel": "Время буфера",
+    "BufferTitle": "Длительность буфера",
+    "DurationOption": "{{duration}} с",
+    "StartupTitle": "Запуск"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Буфер флэшбэк пуст. Попробуйте повторить через некоторое время.",
+    "EnableFlashback": "Включить флэшбэк для сохранения момента.",
+    "FailedToSave": "Не удалось сохранить буфер флэшбэк.",
+    "SavedFlashback": "Сохранено в Записях.",
+    "StillCharging": "Буфер флэшбэк всё ещё заряжается."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Закрыть подсказку",
-    "BluetoothMicTitle": "⚠️ Bluetooth-микрофон",
     "BluetoothMicDesc": "Ваша ОС может принудительно включить \"Режим коммуникаций\", что может вызвать искажения.",
     "BluetoothMicTipLabel": "Советы:",
     "BluetoothMicTipText": "Используйте микрофон без Bluetooth для лучшего качества.",
+    "BluetoothMicTitle": "⚠️ Bluetooth-микрофон",
+    "CloseTooltip": "Закрыть подсказку",
     "FailedToLoadScreens": "Не удалось загрузить экраны. Пожалуйста, попробуйте снова.",
     "FailedToLoadWindows": "Не удалось загрузить окна. Пожалуйста, попробуйте снова.",
     "MicrophoneMuted": "Микрофон: отключен",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "Микрофоны не обнаружены",
     "NoScreensDetected": "Экранов не обнаружено.",
     "NoWindowsDetected": "Окна не обнаружены. Откройте окно приложения и обновите список.",
+    "RegionReady": "Регион готов",
+    "RegionRequired": "Выберите регион перед началом записи",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "Выбор экрана недоступен на этой платформе.",
     "SelectMicrophone": "Выбрать микрофон",
+    "SelectRegion": "Выберите регион",
+    "SelectScreen": "Выберите дисплей",
+    "SelectWindow": "Выберите окно",
     "StartRecording": "Начать запись",
     "SystemAudioOff": "Аудио системы: ВЫКЛЮЧЕНО",
     "SystemAudioOn": "Аудио системы: Включено",
     "WaitingForRegion": "Ожидание региона…",
     "WindowNotAvailable": "Выбор окна недоступен на этой платформе.",
-    "SelectScreen": "Выберите дисплей",
-    "SelectWindow": "Выберите окно",
-    "WindowRequired": "Выберите окно перед началом записи",
-    "RegionReady": "Регион готов",
-    "SelectRegion": "Выберите регион",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "Выберите регион перед началом записи"
+    "WindowRequired": "Выберите окно перед началом записи"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Полный экран выбран",
-    "ClickToRecord": "Нажмите «Начать запись» на плавающей панели, чтобы записать выбранную область"
+    "ClickToRecord": "Нажмите «Начать запись» на плавающей панели, чтобы записать выбранную область",
+    "FullscreenSelected": "Полный экран выбран"
+  },
+  "GeminiLive": {
+    "AITranscription": "ИИ-транскрипция",
+    "CollapseNowSpeaking": "Крах",
+    "EnableDescription": "Транскрипция в реальном времени с помощью Gemini во время записи",
+    "EnableIntegration": "Включить живую транскрипцию AI",
+    "Error": "Ошибка",
+    "ExpandNowSpeaking": "Расширять",
+    "NowSpeaking": "Сейчас говорю...",
+    "SegmentCount_one": "{{count}} сегментов",
+    "SegmentCount_other": "{{count}} сегментов",
+    "WaitingForConnection": "Подключение...",
+    "WaitingForSpeech": "Жду речи..."
   },
   "IdleCompactView": {
     "ArmFlashback": "Включить флэшбэк",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Копировать Email",
     "EmailCopied": "✅  Email скопирован в буфер обмена"
   },
-  "JumpList": {
-    "RecordAudio": "Запись аудио",
-    "RecordAudioDesc": "Начать запись аудио (смешанное)",
-    "RecordFullscreen": "Записать весь экран",
-    "RecordFullscreenDesc": "Начать запись видео полного экрана",
-    "RecordRegion": "Сделать снимок региона для записи",
-    "RecordRegionDesc": "Выберите регион экрана для записи",
-    "TakeScreenshot": "Сделать снимок экрана",
-    "TakeScreenshotDesc": "Захватить регион экрана",
-    "OpenRecordingsFolder": "Открыть папку записей",
-    "OpenRecordingsFolderDesc": "Открыть папку с записями по умолчанию"
-  },
   "MeetingPrompt": {
-    "StartTitle": "Обнаружена встреча",
-    "StartMessage": "У вас запланирована встреча на {{appName}}? Нужно ли мне сейчас начать запись?",
     "BrowserHint": "💡 Совет: Для встреч в браузере (Google Meet, Zoom, Teams) я могу определить только браузер, а не конкретный сайт.",
-    "RememberChoice": "Запомнить мой выбор и не показывать снова",
-    "Yes": "Начать запись",
-    "No": "Отмена",
-    "EndTitle": "Встреча завершена",
-    "EndMessage": "Я заметил, что встреча на {{appName}} только что завершилась. Хотите остановить запись?",
     "ContinueRecording": "Продолжить запись",
+    "EndMessage": "Я заметил, что встреча на {{appName}} только что завершилась. Хотите остановить запись?",
+    "EndTitle": "Встреча завершена",
+    "No": "Отмена",
     "Pause": "Приостановить",
-    "Resume": "Возобновить",
-    "Stop": "Остановить",
+    "PlayRecording": "Воспроизвести",
     "RecordingSaved": "Запись сохранена",
     "RecordingSavedWithFilename": "{{fileName}} сохранена",
+    "RememberChoice": "Запомнить мой выбор и не показывать снова",
     "RenameFile": "Переименовать",
     "ShowInFolder": "Показать в папке",
-    "PlayRecording": "Воспроизвести",
+    "StartMessage": "У вас запланирована встреча на {{appName}}? Нужно ли мне сейчас начать запись?",
+    "StartTitle": "Обнаружена встреча",
     "StopRecording": "Остановить запись",
-    "Saving": "Сохранение..."
+    "Yes": "Начать запись"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Задачи",
+    "CollapseNowSpeaking": "Свернуть \"Now Speaking\"",
+    "ConnectionError": "Не удалось подключиться к SeaMeet",
+    "Content": "Контент SeaMeet",
+    "DueDate": "Дата: {{date}}",
+    "EnableIntegration": "Включить транскрипцию SeaMeet",
+    "ExpandNowSpeaking": "Расширить: сейчас говорит",
+    "FetchError": "Не удалось загрузить транскрипции",
+    "LanguageHint": "Вы можете изменить язык во время записи",
+    "LiveTranscription": "транскрипция в реальном времени",
+    "LoadingContent": "Загрузка содержимого SeaMeet...",
+    "LoadingTranscript": "Загрузка транскрипта...",
+    "NoActionItems": "Нет пунктов действий для этой встречи",
+    "NoNotes": "Нет заметок для этой встречи",
+    "NoSummary": "Итог ещё не доступен.",
+    "Notes": "Заметки",
+    "NoTranscript": "Нет доступных транскрипций",
+    "NoTranslation": "Нет перевода",
+    "NowSpeaking": "Сейчас говорит...",
+    "Retry": "Повторить",
+    "SeekToTime": "Кликните для воспроизведения с этого момента",
+    "SegmentCount_one": "{{count}} сегментов",
+    "SegmentCount_other": "{{count}} сегментов",
+    "SignInRequired": "Требуется вход в систему",
+    "Summary": "Итоги",
+    "Transcribed": "Текст транскрипции готов",
+    "Transcript": "Транскрипция",
+    "TranscriptionLanguage": "Язык транскрипции",
+    "TranslationLanguage": "Язык перевода",
+    "UnknownSpeaker": "Спикер",
+    "WaitingForSpeech": "Ожидание речи…"
   },
   "MinimizedView": {
     "ActionRequired": "Требуется действие (Авто-запись)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Идет зарядка экранного флэшбэка...",
     "ScreenRecording": "Запись экрана ({{time}})"
   },
+  "Pause": "Пауза",
   "Permissions": {
-    "AutoRecordNextTime": "Хотите, чтобы эта программа автоматически записывалась при следующем использовании?",
     "AlwaysAutoRecord": "Всегда автозапись",
-    "NeverRecord": "Никогда не записывать",
     "AskEveryTime": "Спрашивать каждый раз",
-    "AutoRecordStarted": "Автоматическая запись начата",
+    "AutoRecordNextTime": "Хотите, чтобы эта программа автоматически записывалась при следующем использовании?",
     "AutoRecordReason": "{{app}} настроено на автоматическую запись (Always Auto Record). Измените разрешения для записи приложения в Настройках -> Auto Record.",
-    "ChangeInSettings": "Изменения в настройках",
-    "GuidanceTitle": "Типы разрешений приложения",
+    "AutoRecordStarted": "Автоматическая запись начата",
+    "AutoStartAudioRule": "Если режим по умолчанию — Аудио, SeaMeet начнет запись сразу без запроса.",
+    "AutoStartFallbackRule": "Во всех остальных случаях SeaMeet отобразит меню выбора режима записи, чтобы вы могли выбрать.",
+    "AutoStartFullscreenRule": "Если режим по умолчанию — полноэкранный и подключен только один дисплей, SeaMeet начнет запись сразу.",
+    "AutoStartHeuristicsTitle": "Автообеспечение запуска (Всегда включено)",
     "GuidanceAlways": ": SeaMeet будет автоматически начинать запись без подтверждения",
     "GuidanceAsk": ": SeaMeet запросит ваше разрешение на запись каждый раз",
     "GuidanceNever": ": SeaMeet не будет запрашивать разрешение на запись",
-    "AutoStartHeuristicsTitle": "Автообеспечение запуска (Всегда включено)",
-    "AutoStartAudioRule": "Если режим по умолчанию — Аудио, SeaMeet начнет запись сразу без запроса.",
-    "AutoStartFullscreenRule": "Если режим по умолчанию — полноэкранный и подключен только один дисплей, SeaMeet начнет запись сразу.",
-    "AutoStartFallbackRule": "Во всех остальных случаях SeaMeet отобразит меню выбора режима записи, чтобы вы могли выбрать."
+    "GuidanceTitle": "Типы разрешений приложения",
+    "NeverRecord": "Никогда не записывать"
+  },
+  "PipelineStatus": {
+    "Done": "Резюме готово",
+    "Error": "Обработка не удалась",
+    "Progress": "Обработка фрагмента {{current}} из {{total}}",
+    "Queued": "Сводка в очереди...",
+    "Running": "Создание сводки..."
   },
   "Player": {
     "Mute": "Отключить звук",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Закрыть воспроизведение",
-    "MoreOptions": "Больше опций",
-    "CodecInfo": "Информация о кодеке (Данные о кодеке)"
+    "CodecInfo": "Информация о кодеке (Данные о кодеке)",
+    "MoreOptions": "Больше опций"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Запись аудио",
+    "ContinueRecording": "Продолжить запись",
+    "RecordingAudio": "Запись аудио…",
+    "RecordingMode": "Режим записи",
+    "RecordingPreview": "Просмотр записи",
+    "RecordingScreen": "Экран записи",
+    "StartRecording": "Начать запись",
+    "Stop": "Остановить",
+    "StopRecording": "Остановить запись",
+    "VideoRecording": "Видео-запись"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Захват области",
+    "CaptureMode": "Режим захвата",
+    "FullScreen": "Полный экран",
+    "RecordAudio": "Запись только аудио",
+    "RecordAudioTip": "Запись только аудио",
+    "RecordFullscreen": "Весь экран",
+    "RecordFullscreenTip": "Запись всего экрана",
+    "RecordRegion": "Область записи",
+    "RecordRegionTip": "Захватить пользовательскую область",
+    "RecordWindow": "Окно",
+    "RecordWindowTip": "Запись одного окна приложения"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Копировать имя файла",
+    "CopyFilePath": "Копировать путь к файлу",
+    "FileNameCopied": "{{fileName}} скопировано в буфер обмена",
+    "FilePathCopied": "Путь к файлу скопирован в буфер обмена",
+    "OpenSaveFolder": "Открыть папку",
+    "RecentCaptures": "Последние снимки",
+    "Recovered_one": "{{count}} запись восстановлена",
+    "Recovered_other": "Восстановлено {{count}} записей.",
+    "RefreshRecordings": "Обновить",
+    "SaveAs": "Сохранить как",
+    "SearchRecordingsOrSnapshots": "Искать записи и снимки",
+    "ShowInFolder": "Показать в папке"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "Файл",
-    "Microphone": "Микрофон",
-    "App": "{{appName}}"
+    "Microphone": "Микрофон"
   },
   "RegionSelector": {
     "CaptureButton": "Захват экрана или нажмите Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Монитор",
     "PrimaryMonitor": "Основной монитор"
   },
-  "Reliability": {
-    "Stable": "Стабильный",
-    "Experimental": "Экспериментальный",
-    "NotTested": "Не тестировался"
-  },
+  "Resume": "Резюме",
   "RingMenu": {
+    "AutoDetectOff": "Автоопределение: ВЫКЛ",
+    "AutoDetectOn": "Автоопределение: ВКЛ",
     "FlashbackCharging": "Загрузка флешбэка...",
     "FlashbackNotCharged": "Флешбэк не загружен, нажмите один раз для загрузки аудио флешбэка, дважды для загрузки экранного флешбэка",
     "FlashbackSaveTooltip": "Одинарный клик для сохранения последних {{duration}}с {{mode}} флешбэка. Двойной клик для продолжения записи отсюда.",
-    "RecordRegion": "Записать область",
-    "RecordFullscreen": "Записать весь экран",
-    "TakeScreenshot": "Сделать снимок",
-    "AutoDetectOn": "Автоопределение: ВКЛ",
-    "AutoDetectOff": "Автоопределение: ВЫКЛ",
     "RecordAudio": "Записать аудио",
-    "RecordWindow": "Записать окно"
+    "RecordFullscreen": "Записать весь экран",
+    "RecordRegion": "Записать область",
+    "RecordWindow": "Записать окно",
+    "TakeScreenshot": "Сделать снимок"
   },
   "ScreenPicker": {
-    "Title": "Выберите дисплей",
     "Instruction": "Выберите дисплей для записи полноэкранных видео.",
-    "Refresh": "Обновить",
-    "Refreshing": "Обновляется…",
     "Loading": "Отображение загрузки…",
     "None": "Дисплеи не обнаружены.",
+    "Refresh": "Обновить",
+    "Refreshing": "Обновляется…",
+    "Title": "Выберите дисплей",
     "Unknown": "дисплей без имени"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Анализ",
+    "ButtonLabel": "Процесс с ИИ",
+    "Custom": "Пользовательское приглашение",
+    "CustomPlaceholder": "Спросите что-нибудь об этом изображении...",
+    "Describe": "Опишите изображение",
+    "DescribeSub": "Что изображено на этом скриншоте?",
+    "Description": "Описание",
+    "ExtractedText": "Извлеченный текст",
+    "Ocr": "Извлечь текст (OCR)",
+    "OcrSub": "Читать весь видимый текст",
+    "PipelineError": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз.",
+    "ProcessingWithTime": "Обработка... {{sec}}s",
+    "Queuing": "Очередь...",
+    "ResultLabel": "Результат ИИ",
+    "UnknownError": "Неизвестная ошибка"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Скопировано!",
     "CopyFailed": "Не удалось скопировать снимок в буфер обмена",
     "CopyToClipboard": "Копировать в буфер обмена",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Удалить",
     "Dimensions": "Размеры",
     "FileSize": "Размер файла",
-    "Filename": "Имя файла",
     "OpenInSystemViewer": "Открыть в системном просмотрщике",
-    "Rename": "Переименовать",
     "ScreenshotCopied": "Снимок скопирован в буфер обмена",
     "Share": "Поделиться",
     "ShareCompleted": "Поделиться завершено",
     "ShareFailed": "Совместное использование не поддерживается в этом браузере. Откройте снимок вручную для совместного доступа.",
-    "ShareNotSupported": "Нативное совместное использование не поддерживается на этой платформе. Используйте копирование в буфер обмена.",
     "Sharing": "Совместное использование...",
-    "Timestamp": "Метка времени",
     "ZeroBytes": "0 байт"
   },
   "Settings": {
-    "Title": "Настройки",
     "About": {
       "CheckForUpdates": "Проверить обновления",
       "CheckingUpdates": "Проверка обновлений...",
-      "UpdateAvailable": "Доступна новая версия {{version}}",
-      "UpdateReady": "Версия {{version}} готова к установке",
-      "NoUpdatesAvailable": "Обновлений нет",
       "InstallNow": "Установить сейчас",
-      "TermsOfService": "Условия использования",
-      "PrivacyPolicy": "Политика конфиденциальности",
       "LegalToggle": {
+        "FullVersion": "Полная версия",
         "OneSentence": "1‑предложение",
-        "TLDR": "TLDR",
-        "FullVersion": "Полная версия"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet — бесплатный, конфиденциальный рекордер, при локальном использовании не требующий аккаунта. Ваши данные остаются у вас, облачные функции — опциональны, перед записью необходимо получить согласие.",
-        "TLDRTitle": "Используйте «условия SeaMeet» — кратко для занятых людей",
-        "TLDRItems": [
-          "SeaMeet Desktop бесплатен — все не‑AI функции работают без аккаунта или авторизации.",
-          "Получите согласие перед записью — SeaMeet этого не проверяет, делайте это предварительно.",
-          "Ваши записи и транскрипции — ваши. SeaMeet обрабатывает их только для оказания сервиса.",
-          "Облачные функции требуют аккаунта и хранения данных на серверах SeaMeet.",
-          "Анонимная диагностика — опциональна и может быть отключена в любой момент.",
-          "Не злоупотребляйте приложением (нелегальное использование, взлом).",
-          "Сервис может изменяться, и ответственность ограничена."
-        ]
-      },
+      "NoUpdatesAvailable": "Обновлений нет",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop хранит все записи полностью локально и конфиденциально, без необходимости в аккаунте. Функции облака являются опциональными, зашифрованы и полностью под вашим контролем.",
-        "TLDRTitle": "Используйте «SeaMeet Privacy» — кратко для занятых людей",
         "TLDRItems": [
           "SeaMeet Desktop настроен на приватность: всё остаётся на вашем устройстве; мы не собираем аудио, видео, содержимое экрана или данные встреч.",
           "Для использования не‑AI функций desktop‑приложения аккаунт не нужен.",
@@ -530,734 +883,299 @@
           "Интеграции с сторонними сервисами являются опциональными и полностью отменяемыми.",
           "Мы не продаём данные, а облачные записи зашифрованы.",
           "Вы контролируете свои данные — удаляйте записи в любое время или запрашивайте их полное удаление."
-        ]
+        ],
+        "TLDRTitle": "Используйте «SeaMeet Privacy» — кратко для занятых людей"
       },
+      "PrivacyPolicy": "Политика конфиденциальности",
       "PrivacySecurity": {
-        "Title": "ПРИВАТНОСТЬ И БЕЗОПАСНОСТЬ",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Автоопределение НИКОГДА не начнёт запись автоматически без вашего явного согласия.",
+            "Title": "Требуется явное согласие"
+          },
           "MicrophoneActivity": {
-            "Title": "Только активность микрофона",
-            "Description": "Автоопределение следит за использованием микрофона, чтобы определить, какое приложение его использует. Никакие данные не захватываются."
+            "Description": "Автоопределение следит за использованием микрофона, чтобы определить, какое приложение его использует. Никакие данные не захватываются.",
+            "Title": "Только активность микрофона"
           },
           "NoDataAccess": {
-            "Title": "Нет доступа к данным",
-            "Description": "Автоопределение только определяет, используется микрофон или нет. Оно НЕ имеет доступа к каким-либо записанным данным."
-          },
-          "ExplicitApproval": {
-            "Title": "Требуется явное согласие",
-            "Description": "Автоопределение НИКОГДА не начнёт запись автоматически без вашего явного согласия."
+            "Description": "Автоопределение только определяет, используется микрофон или нет. Оно НЕ имеет доступа к каким-либо записанным данным.",
+            "Title": "Нет доступа к данным"
           },
           "NoDataCollection": {
-            "Title": "Нет сбора данных",
-            "Description": "SeaMeet не собирает НИКАКИХ данных из функции автоопределения без вашего согласия."
+            "Description": "SeaMeet не собирает НИКАКИХ данных из функции автоопределения без вашего согласия.",
+            "Title": "Нет сбора данных"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "Только локально",
-            "Description": "Flashback работает полностью на вашем локальном устройстве. Ничего не синхронизируется с облаком."
+          "EthicalUse": {
+            "Description": "Всегда информируйте и получайте согласие других перед использованием Flashback для их записи.",
+            "Title": "Этичное использование"
           },
-          "RAMOnly": {
-            "Title": "Только RAM",
-            "Description": "Весь данные остаются в памяти. Нечто записывается на диск только если вы сохраняете запись Flashback."
+          "LocalOnly": {
+            "Description": "Flashback работает полностью на вашем локальном устройстве. Ничего не синхронизируется с облаком.",
+            "Title": "Только локально"
           },
           "Protected": {
-            "Title": "Защищено",
-            "Description": "Ваша приватность и безопасность — на первом месте. Ваши данные никогда не покидают ваше устройство."
+            "Description": "Ваша приватность и безопасность — на первом месте. Ваши данные никогда не покидают ваше устройство.",
+            "Title": "Защищено"
           },
-          "EthicalUse": {
-            "Title": "Этичное использование",
-            "Description": "Всегда информируйте и получайте согласие других перед использованием Flashback для их записи."
+          "RAMOnly": {
+            "Description": "Весь данные остаются в памяти. Нечто записывается на диск только если вы сохраняете запись Flashback.",
+            "Title": "Только RAM"
           }
-        }
-      }
+        },
+        "Title": "ПРИВАТНОСТЬ И БЕЗОПАСНОСТЬ"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet — бесплатный, конфиденциальный рекордер, при локальном использовании не требующий аккаунта. Ваши данные остаются у вас, облачные функции — опциональны, перед записью необходимо получить согласие.",
+        "TLDRItems": [
+          "SeaMeet Desktop бесплатен — все не‑AI функции работают без аккаунта или авторизации.",
+          "Получите согласие перед записью — SeaMeet этого не проверяет, делайте это предварительно.",
+          "Ваши записи и транскрипции — ваши. SeaMeet обрабатывает их только для оказания сервиса.",
+          "Облачные функции требуют аккаунта и хранения данных на серверах SeaMeet.",
+          "Анонимная диагностика — опциональна и может быть отключена в любой момент.",
+          "Не злоупотребляйте приложением (нелегальное использование, взлом).",
+          "Сервис может изменяться, и ответственность ограничена."
+        ],
+        "TLDRTitle": "Используйте «условия SeaMeet» — кратко для занятых людей"
+      },
+      "TermsOfService": "Условия использования",
+      "UpdateAvailable": "Доступна новая версия {{version}}",
+      "UpdateReady": "Версия {{version}} готова к установке"
     },
-    "General": "Общее",
-    "Storage": {
-      "Title": "Настройки хранилища",
-      "Description": "Выберите папку по умолчанию для автоматического сохранения записей SeaMeet",
-      "DefaultPathLabel": "Папка для сохранения по умолчанию",
-      "Browse": "Обзор...",
-      "Save": "Сохранить",
-      "RecordingNameLabel": "Имя записи"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Тип записи по умолчанию",
+      "DeleteTooltip": "Удалить из списка (сброс до «Спрашивать каждый раз»)",
+      "EmptyState": "Пока не обнаружено приложений. Как только SeaMeet выявит приложение, использующее микрофон, оно появится здесь.",
+      "PathCopied": "Путь скопирован в буфер обмена",
+      "PermissionHeader": "Разрешения приложения",
+      "Title": "Разрешения приложения"
     },
-    "ProfileSettings": "Настройки профиля",
-    "AccountPreferences": "Предпочтения аккаунта",
-    "ProfileSettingsDescription": "Управление информацией о профиле",
-    "AccountPreferencesDescription": "Управляйте своими настройками аккаунта",
-    "SettingsFileLocation": "Расположение файла настроек",
-    "SettingsFileDescription": "Настройки сохраняются в отдельном JSON-файле для удобства резервного копирования и управления",
     "Back": "Назад",
-    "OpenFolder": "Открыть папку",
     "DefaultUserName": "SeaMeet пользователь",
-    "UserAvatarAlt": "пользователь",
+    "FailedToCheckForUpdates": "Не удалось проверить обновления",
     "GroupTitle": {
-      "Account": "Аккаунт",
-      "General": "Общее",
-      "Automation": "Автоматизация",
-      "RecordingStorage": "Хранение записи",
-      "Configuration": "Конфигурация",
       "ApplicationInfo": "Информация о приложении — оставить без изменений",
-      "Legal": "Юридическая информация"
+      "Automation": "Автоматизация",
+      "Configuration": "Конфигурация",
+      "General": "Общее",
+      "Legal": "Юридическая информация",
+      "RecordingStorage": "Хранение записи"
     },
     "Item": {
-      "EditProfile": "Редактировать профиль",
-      "Account": "Аккаунт",
-      "LogOut": "Выйти",
-      "Language": "Язык",
+      "AutoRecording": "Автоматическая запись",
+      "Copyright": "Авторские права",
       "ImproveTranslationHint": "Помогите улучшить этот перевод на GitHub →",
-      "Theme": "Тема",
-      "KeyboardShortcuts": "Горячие клавиши",
+      "Language": "Язык",
       "MicrophoneGain": "Усиление микрофона",
       "StartAtLogin": "Автоматический запуск при входе",
-      "AutoRecording": "Автоматическая запись",
       "Storage": "Хранение",
-      "Copyright": "Авторские права"
+      "Theme": "Тема"
     },
     "MicGain": {
-      "Minimal": "Минимальный (0.1x)",
-      "Quiet": "Тихий (0.5x)",
-      "Normal": "Обычный (1x)",
       "Loud": "Громкий (5x)",
-      "Louder": "Еще громче (10x)"
+      "Louder": "Еще громче (10x)",
+      "Minimal": "Минимальный (0.1x)",
+      "Normal": "Обычный (1x)",
+      "Quiet": "Тихий (0.5x)"
+    },
+    "OpenFolder": "Открыть папку",
+    "PageTitle": {
+      "About": "О программе",
+      "AutoRecording": "Автоматическая запись",
+      "Flashback": "Запись флэшбэка",
+      "Storage": "Хранилище"
+    },
+    "SettingsFileLocation": "Расположение файла настроек",
+    "Storage": {
+      "Browse": "Обзор...",
+      "DefaultPathLabel": "Папка для сохранения по умолчанию",
+      "Description": "Выберите папку по умолчанию для автоматического сохранения записей SeaMeet",
+      "Save": "Сохранить",
+      "Title": "Настройки хранилища"
     },
     "Theme": {
+      "AdobeSand": "Саманный Песок",
+      "AdobeSandDesc": "Светлый режим в тёплых землистых тонах",
+      "AzureLight": "Лазурная",
+      "AzureLightDesc": "Светлый режим в прохладных голубых тонах",
+      "CloudCanvas": "Облачный Холст",
+      "CloudCanvasDesc": "Светлый режим в свежих мятных тонах",
+      "ColumnDark": "Тёмная",
+      "ColumnLight": "Светлая",
+      "CyberCobalt": "Кибер-Кобальт",
+      "CyberCobaltDesc": "Тёмный режим в неоновых бирюзовых тонах",
+      "Dark": "Тёмный",
+      "DarkDesc": "Тёмный режим",
       "Device": "Устройство",
       "DeviceDesc": "Следовать системным настройкам",
       "Light": "Светлый",
       "LightDesc": "Светлый режим",
-      "Dark": "Тёмный",
-      "DarkDesc": "Тёмный режим",
-      "Pink": "Тёмно-розовый",
-      "PinkDesc": "Режим тёмно-розового",
       "LightPink": "Светло-розовый",
       "LightPinkDesc": "Режим светло-розового",
-      "ColumnLight": "Светлая",
-      "ColumnDark": "Тёмная",
-      "AzureLight": "Лазурная",
-      "AzureLightDesc": "Светлый режим в прохладных голубых тонах",
-      "WarmPaper": "Тёплая Бумага",
-      "WarmPaperDesc": "Светлый режим в тёплых бумажных тонах",
-      "SynthwaveLight": "Синтвейв Светлый",
-      "SynthwaveLightDesc": "Яркий светлый режим в стиле синтвейв",
       "MidnightBlue": "Полуночно-Синий",
       "MidnightBlueDesc": "Тёмный режим в глубоких синих тонах",
-      "CloudCanvas": "Облачный Холст",
-      "CloudCanvasDesc": "Светлый режим в свежих мятных тонах",
-      "CyberCobalt": "Кибер-Кобальт",
-      "CyberCobaltDesc": "Тёмный режим в неоновых бирюзовых тонах",
-      "AdobeSand": "Саманный Песок",
-      "AdobeSandDesc": "Светлый режим в тёплых землистых тонах"
+      "Pink": "Тёмно-розовый",
+      "PinkDesc": "Режим тёмно-розового",
+      "SynthwaveLight": "Синтвейв Светлый",
+      "SynthwaveLightDesc": "Яркий светлый режим в стиле синтвейв",
+      "WarmPaper": "Тёплая Бумага",
+      "WarmPaperDesc": "Светлый режим в тёплых бумажных тонах"
     },
-    "PageTitle": {
-      "Flashback": "Запись флэшбэка",
-      "About": "О программе",
-      "AutoRecording": "Автоматическая запись",
-      "Storage": "Хранилище"
-    },
-    "FailedToCheckForUpdates": "Не удалось проверить обновления",
-    "AppPermissions": {
-      "Title": "Разрешения приложения",
-      "Description": "Управляйте приложениями, которые могут автоматически записывать при обнаружении использования вашего микрофона.",
-      "EmptyState": "Пока не обнаружено приложений. Как только SeaMeet выявит приложение, использующее микрофон, оно появится здесь.",
-      "DeleteTooltip": "Удалить из списка (сброс до «Спрашивать каждый раз»)",
-      "PathCopied": "Путь скопирован в буфер обмена",
-      "PermissionHeader": "Разрешения приложения",
-      "DefaultRecordingMode": "Тип записи по умолчанию"
-    }
+    "Title": "Настройки",
+    "UserAvatarAlt": "пользователь"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Показать плавающее окно",
-    "OpenLauncher": "Открыть лаунчер",
-    "RecordAudio": "Запись аудио",
-    "RecordFullscreen": "Записать весь экран",
-    "RecordWindow": "Записать окно",
-    "RecordRegion": "Записать область",
     "CaptureScreenshot": "Захватить снимок экрана",
-    "RestoreDefaults": "Восстановить настройки по умолчанию",
-    "RecordingPrompt": "В слушании… нажмите новую горячую клавишу",
     "ConflictWarning": "Эта горячая клавиша уже используется другим приложением и не может быть зарегистрирована.",
     "GenericError": "Не удалось обновить горячую клавишу.",
     "None": "Нет",
-    "SpaceKey": "Пространство"
+    "OpenLauncher": "Открыть лаунчер",
+    "RecordAudio": "Запись аудио",
+    "RecordFullscreen": "Записать весь экран",
+    "RecordingPrompt": "В слушании… нажмите новую горячую клавишу",
+    "RecordRegion": "Записать область",
+    "RecordWindow": "Записать окно",
+    "RestoreDefaults": "Восстановить настройки по умолчанию",
+    "SpaceKey": "Пространство",
+    "ToggleFloatingWindow": "Показать плавающее окно"
   },
   "Sidebar": {
-    "PrimaryNavigation": "Основная навигация",
     "ClearSearch": "Очистить поиск",
-    "AgentPanel": "ИИ-агент"
-  },
-  "SidebarTabs": {
-    "Audios": "Аудио",
-    "AutoDetect": "Автоопределение"
+    "PrimaryNavigation": "Основная навигация"
   },
   "TakeSnapshot": {
-    "Title": "Снимок сделан",
+    "GoToSnapshot": "Перейти к новому снимку",
     "Message": "Снимок сохранён в:",
     "StayAtVideo": "Оставаться на текущем видео",
-    "GoToSnapshot": "Перейти к новому снимку"
+    "Title": "Снимок сделан"
   },
   "TopNav": {
-    "CloseNavigationMenu": "Закрыть меню навигации",
-    "OpenNavigationMenu": "Открыть меню навигации",
-    "MainNavigation": "Основная навигация",
-    "Record": "Записывать",
-    "Recording": "Запись",
-    "Files": "Файлы",
     "Agent": "Agent",
-    "Terminal": "Терминал"
+    "CloseNavigationMenu": "Закрыть меню навигации",
+    "Files": "Файлы",
+    "MainNavigation": "Основная навигация",
+    "OpenNavigationMenu": "Открыть меню навигации",
+    "Record": "Записывать",
+    "Recording": "Запись"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet всё ещё запущен в системном лотке (в правом нижнем углу).",
-    "ShowLauncher": "Показать лаунчер",
-    "ShowFloatingWindow": "Показать плавающее окно",
-    "ShowMainWindow": "Показать главное окно",
-    "ExitSeaMeet": "Выйти из SeaMeet",
-    "QuickRecording": "Быстрая запись",
-    "RecordAudio": "Запись аудио",
-    "RecordFullscreen": "Записать на весь экран",
-    "RecordRegion": "Захват области для записи",
-    "OpenRecordingsFolder": "Папка записей",
-    "TakeScreenshot": "Сделать скриншот",
-    "Close": "Закрыть",
-    "OpenSeaMeet": "Открыть SeaMeet",
-    "OpenSaveFolder": "Открыть папку сохранённой записи",
-    "ReportIssues": "Сообщить об ошибках"
+    "MinimizedHint": "SeaMeet всё ещё запущен в системном лотке (в правом нижнем углу)."
   },
   "Types": {
-    "Microphone": "Микрофон",
-    "System": "Системное аудио",
     "Both": "Оба (смешанный)",
     "File": "Файл",
+    "Microphone": "Микрофон",
+    "System": "Системное аудио",
     "Video": "Видео"
   },
   "UpdateQuitModal": {
-    "Title": "Доступно обновление",
-    "ReadyToInstall": "SeaMeet {{version}} готов к установке.",
-    "InstallBeforeQuitting": "Хотите установить его перед выходом?",
     "InstallAndQuit": "Установить и выйти",
-    "QuitWithoutInstalling": "Выйти без установки"
+    "InstallBeforeQuitting": "Хотите установить его перед выходом?",
+    "QuitWithoutInstalling": "Выйти без установки",
+    "ReadyToInstall": "SeaMeet {{version}} готов к установке.",
+    "Title": "Доступно обновление"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} готова к установке",
-    "Downloading": "Загрузка SeaMeet {{version}} ({{percent}}%)",
     "Available": "Обновление доступно: SeaMeet {{version}}",
-    "WhatsNewInVersion": "Что нового в {{version}}?",
-    "WhatsNew": "Что нового:",
+    "Dismiss": "Закрыть",
+    "Downloading": "Загрузка SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Скрыть",
+    "ReadyToInstall": "SeaMeet {{version}} готова к установке",
     "RestartNow": "Перезапустить сейчас",
     "ViewRelease": "Просмотр релиза",
     "ViewReleaseTitle": "Посмотреть заметки о релизе",
-    "Dismiss": "Закрыть"
+    "WhatsNew": "Что нового:",
+    "WhatsNewInVersion": "Что нового в {{version}}?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "Об SeaMeet",
     "DisplayName": "Пользователь",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Настройки профиля",
-    "AccountPreferences": "Настройки аккаунта",
-    "BillingPlans": "Планы оплаты и выставление счетов",
-    "StorageSettings": "Настройки хранилища",
-    "HelpSupport": "Помощь и поддержка",
-    "KeyboardShortcuts": "горячие клавиши",
-    "SignIn": "Войти",
-    "SignOut": "Выйти",
-    "SeaMeetSignedOut": "SeaMeet: не вошли в систему",
-    "SeaMeetSignedIn": "SeaMeet: вошли в систему",
-    "AboutSeaMeet": "Об SeaMeet",
     "Exit": "выход",
+    "HelpSupport": "Помощь и поддержка",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Ознакомьтесь с Wiki SeaMeet для документации и руководств.",
-      "VisitWiki": "Посетить Wiki",
-      "Issues": "Проблемы",
-      "IssuesDesc": "Сообщить о багах и предложить новые функции (требуется аккаунт GitHub).",
-      "SubmitIssue": "Сообщить о проблеме",
       "Discussion": "Обсуждение",
       "DiscussionDesc": "Присоединяйтесь к обсуждению сообщества (требуется аккаунт GitHub).",
-      "JoinDiscussion": "Присоединиться к обсуждению",
+      "DogfoodingDesc": "Мы рекомендуем использовать SeaMeet для регистрации проблемы и размещения её либо в разделе \"Issues\", либо отправьте нам по электронной почте!",
       "Email": "Электронная почта",
       "EmailDesc": "Свяжитесь с нашей командой напрямую.",
-      "SendEmail": "Отправить Email",
-      "Dogfooding": "Собственное использование",
-      "DogfoodingDesc": "Мы рекомендуем использовать SeaMeet для регистрации проблемы и размещения её либо в разделе \"Issues\", либо отправьте нам по электронной почте!",
-      "CheckForUpdates": "Проверить обновления",
-      "CheckingUpdates": "Проверка обновлений...",
-      "UpdateAvailable": "Доступна новая версия {{version}}",
-      "UpdateReady": "Версия {{version}} готова к установке",
-      "InstallNow": "Установить сейчас",
-      "TermsOfService": "Условия использования",
-      "PrivacyPolicy": "Политика конфиденциальности",
       "ImproveTranslation": "Улучшите переводы",
-      "ImproveTranslationDesc": "Помогите нам улучшить переводы или запросите новый язык на GitHub."
-    }
+      "ImproveTranslationDesc": "Помогите нам улучшить переводы или запросите новый язык на GitHub.",
+      "Issues": "Проблемы",
+      "IssuesDesc": "Сообщить о багах и предложить новые функции (требуется аккаунт GitHub).",
+      "JoinDiscussion": "Присоединиться к обсуждению",
+      "SendEmail": "Отправить Email",
+      "SubmitIssue": "Сообщить о проблеме",
+      "VisitWiki": "Посетить Wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Ознакомьтесь с Wiki SeaMeet для документации и руководств."
+    },
+    "KeyboardShortcuts": "горячие клавиши",
+    "SeaMeetSignedIn": "SeaMeet: вошли в систему",
+    "SeaMeetSignedOut": "SeaMeet: не вошли в систему",
+    "SignIn": "Войти",
+    "SignOut": "Выйти"
   },
   "VideoSettings": {
-    "Title": "Настройки видеозаписи",
-    "Mode": "Режим записи",
-    "ModeOff": "Выключено",
-    "ModeFullscreen": "Полноэкранный режим",
-    "ModeWindow": "Режим окна",
-    "ModeRegion": "Область записи",
+    "AudioSettings": "Настройки аудио",
+    "CodecTooltip": {
+      "VP8": "Эта запись использует VP8 для достижения наилучшего качества. Некоторые стандартные видеоплееры — такие как Windows Media Player и QuickTime на macOS — могут не поддерживать этот формат. Для надежного воспроизведения используйте современный браузер (Chrome или Edge) или совместимый плеер, например VLC.",
+      "VP9": "Эта запись использует VP9 для достижения наилучшего качества. Некоторые стандартные видеоплееры — такие как Windows Media Player и QuickTime на macOS — могут не поддерживать этот формат. Для надежного воспроизведения используйте современный браузер (Chrome или Edge) или совместимый плеер, например VLC."
+    },
+    "Detecting": "Обнаружение...",
+    "FlashbackArmedNotice": "Вы активно записываете с {{seconds}}с буфера флэшбэка",
+    "FramesPerSecond": "Фреймы в секунду",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} ГБ/час",
+    "HD": "HD",
+    "HideWindow": "Скрывать окно SeaMeet при выборе области",
+    "Internal": "Внутренний режим",
+    "MBPerMin": "~{{mb}} МБ/мин",
     "ModeAudioOnly": "Только аудио",
-    "SelectScreen": "Выбрать экран",
-    "SelectWindow": "Выберите окно",
-    "Refresh": "Обновить",
+    "ModeFullscreen": "Полноэкранный режим",
+    "ModeRegion": "Область записи",
+    "ModeWindow": "Режим окна",
+    "Native": "Нативный режим",
     "NoScreens": "Экранов не обнаружено",
     "NoWindows": "Окна недоступны",
-    "RegionInfo": "Перед началом записи вам будет предложено выбрать экран или окно.",
-    "HideWindow": "Скрывать окно SeaMeet при выборе области",
-    "VideoQuality": "Качество видео",
-    "Quality": "Качество",
-    "QualityOriginal": "Оригинальное качество",
-    "QualityHigh": "Высокое качество",
-    "QualityMedium": "Среднее качество",
-    "QualityLow": "Низкое качество",
-    "FramesPerSecond": "Фреймы в секунду",
-    "FrameRate": "Частота кадров",
-    "SourceResolution": "Разрешение источника",
-    "Native": "Нативный режим",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Выберите источник выше",
-    "ZeroSize": "~0 МБ/мин, ~0 ГБ/час",
-    "MBPerMin": "~{{mb}} МБ/мин",
-    "GBPerHour": "~{{gb}} ГБ/час",
     "Primary": "Основной",
-    "Internal": "Внутренний режим",
-    "Detecting": "Обнаружение...",
-    "ResolutionUnknown": "Неизвестное разрешение",
-    "AudioSettings": "Настройки аудио",
-    "RecordModeTitle": "Записывать аудио или видео?",
+    "QualityHigh": "Высокое качество",
+    "QualityLow": "Низкое качество",
+    "QualityMedium": "Среднее качество",
+    "QualityOriginal": "Оригинальное качество",
     "Record": "Записать",
-    "RecordWithoutFlashback": "Запись без флэшбэка",
+    "RecordModeTitle": "Записывать аудио или видео?",
     "RecordWithFlashback": "Запись с флэшбэком",
+    "RecordWithoutFlashback": "Запись без флэшбэка",
+    "Refresh": "Обновить",
+    "ResolutionUnknown": "Неизвестное разрешение",
+    "SD": "SD",
+    "SelectScreen": "Выбрать экран",
+    "SelectSourceAbove": "Выберите источник выше",
+    "SelectWindow": "Выберите окно",
+    "SourceResolution": "Разрешение источника",
+    "Title": "Настройки видеозаписи",
     "VideoFlashbackArmedNotice": "Включен флэшбэк экрана ({{seconds}}с)",
-    "FlashbackArmedNotice": "Вы активно записываете с {{seconds}}с буфера флэшбэка",
-    "CodecTooltip": {
-      "VP9": "Эта запись использует VP9 для достижения наилучшего качества. Некоторые стандартные видеоплееры — такие как Windows Media Player и QuickTime на macOS — могут не поддерживать этот формат. Для надежного воспроизведения используйте современный браузер (Chrome или Edge) или совместимый плеер, например VLC.",
-      "VP8": "Эта запись использует VP8 для достижения наилучшего качества. Некоторые стандартные видеоплееры — такие как Windows Media Player и QuickTime на macOS — могут не поддерживать этот формат. Для надежного воспроизведения используйте современный браузер (Chrome или Edge) или совместимый плеер, например VLC."
-    }
+    "VideoQuality": "Качество видео",
+    "ZeroSize": "~0 МБ/мин, ~0 ГБ/час"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Регион выбран",
     "CustomRegion": "Пользовательский регион: {{width}} × {{height}} пикселей",
-    "ReselectRegion": "Перевыбрать регион",
-    "SelectCustomRegion": "Выбрать пользовательский регион",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Регион выбран",
+    "ReselectRegion": "Перевыбрать регион",
+    "SelectCustomRegion": "Выбрать пользовательский регион"
   },
   "WindowPicker": {
-    "Title": "Выберите окно",
     "Instruction": "Выберите окно для захвата при оконной записи.",
-    "Refresh": "Обновить",
-    "Refreshing": "Обновление…",
     "Loading": "Загрузка окон…",
     "None": "Окна не обнаружены. Откройте приложение и обновите список.",
+    "Refresh": "Обновить",
+    "Refreshing": "Обновление…",
+    "Title": "Выберите окно",
     "Unknown": "Окно без названия"
-  },
-  "Common": {
-    "Configure": "Настройка",
-    "Cancel": "Отменить",
-    "Apply": "Применить",
-    "Close": "Закрыть",
-    "Open": "Открыть",
-    "Minimize": "Свернуть в кружок",
-    "Recording": "Запись",
-    "UnknownApp": "Неизвестное приложение",
-    "Done": "Готово",
-    "Save": "Сохранить",
-    "Saving": "Сохранение…",
-    "Delete": "Удалить",
-    "Or": "Или",
-    "Loading": "Загрузка…",
-    "Expand": "Развернуть",
-    "PlannedFeature": "Планируемая функция",
-    "Screen": "Экран",
-    "Window": "Окно",
-    "Region": "Регион",
-    "AppTitle": "SeaMeet: Запись экрана и аудио",
-    "AppSubtitle": "Записать аудио входных и выходных устройств",
-    "Screenshot": "Скриншот",
-    "Saved": "Сохранено",
-    "Processing": "Обработка…",
-    "Starting": "Запуск…",
-    "FileNameCopiedWithRenameHint": "{{fileName}} скопировано в буфер обмена. Дважды щёлкните, чтобы изменить имя файла.",
-    "ApplyName": "Применить имя",
-    "Send": "Отправлять"
-  },
-  "RecordingControls": {
-    "StartRecording": "Начать запись",
-    "StopRecording": "Остановить запись",
-    "ContinueRecording": "Продолжить запись",
-    "Pause": "Приостановить",
-    "Resume": "Возобновить",
-    "Stop": "Остановить",
-    "RecordingScreen": "Экран записи",
-    "RecordingAudio": "Запись аудио…",
-    "AudioRecording": "Запись аудио",
-    "VideoRecording": "Видео-запись",
-    "RecordingPreview": "Просмотр записи",
-    "RecordingMode": "Режим записи"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Запись только аудио",
-    "RecordAudioTip": "Запись только аудио",
-    "RecordWindow": "Окно",
-    "RecordWindowTip": "Запись одного окна приложения",
-    "RecordFullscreen": "Весь экран",
-    "RecordFullscreenTip": "Запись всего экрана",
-    "RecordRegion": "Область записи",
-    "RecordRegionTip": "Захватить пользовательскую область",
-    "CaptureMode": "Режим захвата",
-    "FullScreen": "Полный экран",
-    "AreaCapture": "Захват области"
-  },
-  "RecordingsList": {
-    "NoRecordings": "Еще нет записей. Начните запись, чтобы увидеть её тут.",
-    "RecentRecordings": "Последние записи",
-    "RecentCaptures": "Последние снимки",
-    "RefreshRecordings": "Обновить",
-    "SearchRecordingsOrSnapshots": "Искать записи и снимки",
-    "SearchRecordingsPlaceholder": "Поиск записей",
-    "ShowInFolder": "Показать в папке",
-    "CopyFileName": "Копировать имя файла",
-    "CopyFilePath": "Копировать путь к файлу",
-    "FileNameCopied": "{{fileName}} скопировано в буфер обмена",
-    "FilePathCopied": "Путь к файлу скопирован в буфер обмена",
-    "SaveAs": "Сохранить как",
-    "OpenSaveFolder": "Открыть папку",
-    "Title": "Записи",
-    "Recovered": "Восстановлено {{count}} запи(й)"
-  },
-  "FileImport": {
-    "ImportMedia": "Импортировать медиафайлы",
-    "DragDropFiles": "Перетащите сюда ваши аудио-, видео- и изображенческие файлы",
-    "DragDropSubtitle": "Перетащите сюда аудио-, видео- и изображенческие файлы",
-    "BrowseFiles": "Обзор файлов",
-    "Supported": "Поддерживаются: MP3, WAV, M4A, WebM, OGG, PNG, JPG и другие",
-    "SupportedFormats": "Поддерживаются: MP3, WAV, M4A, WebM, OGG, PNG, JPG и другие",
-    "VideoImportCopying": "Копирование видеофайла...",
-    "VideoImportSaving": "Сохранение видеофайла...",
-    "VideoUnsupported": "Этот формат видео может не поддерживаться в приложении. Файл всё равно будет импортирован."
-  },
-  "AudioControls": {
-    "AudioCapture": "Захват аудио",
-    "AudioMix": "График волны",
-    "AudioSessionsLog": "Журнал аудио-сессий",
-    "AudioSource": "Источник аудио:",
-    "InputDevice": "Устройство ввода:",
-    "Microphone": "Микрофон",
-    "MicrophoneLabel": "Микрофон {{id}}",
-    "RecordingDefaultMicrophone": "Микрофон по умолчанию",
-    "RecordingInputLabel": "Ввод: {{name}}",
-    "RecordingSettings": "Настройки записи",
-    "RecordingType": "Тип записи:",
-    "RefreshMicrophoneList": "Обновить список микрофонов",
-    "MicrophoneGainWarning": "Высокий уровень усиления микрофона может захватывать воспроизведение динамика, даже если «System Audio» отключено. Используйте наушники или снизьте усиление микрофона для записи только с микрофона."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Начать запись",
-    "Ready": "Готовы?",
-    "BufferingMoment": "Буферизация момента...",
-    "RecordWithFlashback": "Запись с флэшбэком",
-    "NeverMissAMoment": "Никогда не пропустите момент.",
-    "ReadyToGuard": "Готовы защитить ваш {{type}}?",
-    "FillingBuffer": "Заполняется буфер флэшбэка в течение {{duration}} с... {{progress}}%",
-    "ReadyToCapture": "SeaMeet готов к захвату.",
-    "DescNone": "Запишите ваш экран, аудио или сделайте снимок экрана. Выберите режим флэшбэк выше для сохранения моментов.",
-    "DescInit": "Нажмите «Готовы?», чтобы сказать SeaMeet начать «флэшбэк» прошлого.",
-    "DescCharging": "Заполняется буфер длительностью {{duration}} с... завершено {{progress}}%",
-    "DescReady": "Флэшбэк активирован и готов к использованию. Каждый раз, когда вы нажимаете Запись, включается {{duration}} секунд прошлого {{type}} — больше никогда не сожалеть о упущенном моменте.",
-    "Screen": "экран",
-    "Audio": "звуковое",
-    "OpenLauncher": "Открыть лаунчер",
-    "OpenFloater": "Открыть Float",
-    "TakeScreenshot": "Сделать снимок",
-    "Buffering": "Буферизация",
-    "SavingFlashback": "Сохраняем запись флэшбэка…",
-    "SaveLastFlashback": "Сохранить последний {{duration}}-секундный флэшбэк",
-    "PrivacyProtected": "Ваша конфиденциальность защищена.",
-    "PrivacyDesc": "SeaMeet сохраняет в кольцевом буфере локально в RAM вашего компьютера {{duration}} секунд {{type}}.",
-    "FlashbackOff": "Flashback в настоящее время отключен. Начинайте обычную запись или выберите режим flashback (аудио или экран) выше для сохранения героического момента.",
-    "FlashbackInitAudio": "Готовы защитить ваше аудио?",
-    "FlashbackInitScreen": "Готовы защитить ваш экран?",
-    "FlashbackInitDescription": "Нажмите 'Ready?', чтобы SeaMeet запустил 'воспоминание' о прошлом.",
-    "FlashbackCharging": "Буфер заполняется {{seconds}} с... завершено {{percent}}%",
-    "FlashbackChargingDescription": "Подготовка вашего {{seconds}}-секундного окна... {{percent}}% завершено.",
-    "FlashbackReadyQuestion": "Готовы?",
-    "FlashbackReady": "Никогда не пропустите момент.",
-    "FlashbackReadyDescription": "Flashback активирован. Прошлое {{seconds}} с {{type}} включено при записи.",
-    "FlashbackBuffering": "Буферизация...",
-    "SaveFlashback": "Сохранить последний {{seconds}} секунд флэшбэка",
-    "FlashbackPrivacy": "Ваша конфиденциальность защищена. Хранится локально в RAM.",
-    "Capturing": "Захват...",
-    "CaptureMode": "Режим захвата",
-    "FullScreen": "Полный экран",
-    "AreaCapture": "Захват области",
-    "KeepWindowVisible": "Держите окно SeaMeet видимым при создании снимка",
-    "FlashbackMismatch": "Несовпадение режима флэшбэк: активирована запись аудио, а флэшбэк видео включен. Пожалуйста, отключите видео флэшбэк."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Включить транскрипцию SeaMeet",
-    "SignInRequired": "Требуется вход в систему",
-    "ProcessingMode": "Режим обработки",
-    "Realtime": "В реальном времени",
-    "RealtimeDescription": "Живая транскрипция во время записи",
-    "Diarized": "Диализированный",
-    "DiarizedDescription": "Загрузите аудио после записи для идентификации спикера",
-    "ComingSoon": "(Скоро в разработке)",
-    "TranscriptionLanguage": "Язык транскрипции",
-    "TranslationLanguage": "Язык перевода",
-    "NoTranslation": "Нет перевода",
-    "LanguageHint": "Вы можете изменить язык во время записи",
-    "LiveTranscription": "транскрипция в реальном времени",
-    "WaitingForSpeech": "Ожидание речи…",
-    "UnknownSpeaker": "Спикер",
-    "SegmentCount": "{{count}} сегментов",
-    "SegmentCount_plural": "{{count}} сегментов",
-    "ConnectionError": "Не удалось подключиться к SeaMeet",
-    "Reconnecting": "Повторное подключение…",
-    "Connected": "Успешно подключено к SeaMeet",
-    "Disconnected": "Отключено",
-    "NowSpeaking": "Сейчас говорит...",
-    "Transcript": "Транскрипция",
-    "LoadingTranscript": "Загрузка транскрипта...",
-    "NoTranscript": "Нет доступных транскрипций",
-    "FetchError": "Не удалось загрузить транскрипции",
-    "Retry": "Повторить",
-    "Transcribed": "Текст транскрипции готов",
-    "Content": "Контент SeaMeet",
-    "Tab": {
-      "transcription": "Транскрипция",
-      "summary": "итоги",
-      "actionItems": "Задачи",
-      "notes": "Заметки"
-    },
-    "Summary": "Итоги",
-    "NoSummary": "Итог ещё не доступен.",
-    "ActionItems": "Задачи",
-    "NoActionItems": "Нет пунктов действий для этой встречи",
-    "DueDate": "Дата: {{date}}",
-    "Notes": "Заметки",
-    "NoNotes": "Нет заметок для этой встречи",
-    "LoadingContent": "Загрузка содержимого SeaMeet...",
-    "SeekToTime": "Кликните для воспроизведения с этого момента",
-    "CollapseNowSpeaking": "Свернуть \"Now Speaking\"",
-    "ExpandNowSpeaking": "Расширить: сейчас говорит"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Буфер флэшбэк пуст. Попробуйте повторить через некоторое время.",
-    "EnableFlashback": "Включить флэшбэк для сохранения момента.",
-    "FailedToSave": "Не удалось сохранить буфер флэшбэк.",
-    "SavedFlashback": "Сохранено в Записях.",
-    "StillCharging": "Буфер флэшбэк всё ещё заряжается."
-  },
-  "AISummary": {
-    "TabTitle": "Обзор ИИ",
-    "SetupRequired": "Настройте ключ API Gemini в «Настройки» → «Функции AI», чтобы включить сводки AI.",
-    "EnableRequired": "Включите функции ИИ в «Настройки» → «Функции ИИ», чтобы увидеть сводные данные по ИИ.",
-    "ExportMarkdown": "Скопировать как Markdown",
-    "ExportSrt": "Копировать как SRT",
-    "ExportJson": "Скопировать как JSON",
-    "Regenerate": "Восстановить сводку",
-    "Minimize": "Свернуть",
-    "Maximize": "Развернуть до полного просмотра",
-    "Queued": "В очереди на обработку...",
-    "Processing": "Создание сводки...",
-    "Error": "Не удалось загрузить сводку: {{error}}.",
-    "PipelineError": "Обработка ИИ не удалась. Попробуйте регенерировать.",
-    "Retry": "Повторить попытку",
-    "NoSummary": "Резюме по ИИ пока нет.",
-    "Generate": "Создать сводку",
-    "Copy": "Копировать",
-    "NoSummaryText": "Резюме недоступно.",
-    "Topics": "Темы:",
-    "NoTranscript": "Стенограмма недоступна.",
-    "NoActions": "Действия не определены.",
-    "NoDecisions": "Ключевые решения не определены.",
-    "Export": {
-      "HeadingSummary": "Краткое содержание",
-      "HeadingActionItems": "Действия",
-      "HeadingKeyDecisions": "Ключевые решения",
-      "HeadingTranscription": "Транскрипция"
-    },
-    "Tab": {
-      "Summary": "Краткое содержание",
-      "Transcription": "Стенограмма",
-      "ActionItems": "Действия",
-      "KeyDecisions": "Решения",
-      "Agent": "Агент"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "Возможности искусственного интеллекта",
-    "MenuItem": "Резюме на основе искусственного интеллекта",
-    "PageTitle": "Возможности искусственного интеллекта",
-    "EnableToggle": "Включите сводки на основе искусственного интеллекта",
-    "EnableToggleDesc": "Требуется бесплатный ключ Gemini API.",
-    "ApiKeySection": "API-ключ Близнецов",
-    "ApiKeyLabel": "API-ключ Близнецов",
-    "KeyPlaceholder": "АизаСы...",
-    "KeyPlaceholderSaved": "••••••••• (сохранено)",
-    "ShowKey": "Показать ключ",
-    "HideKey": "Скрыть ключ",
-    "TestKey": "Сохранить и проверить",
-    "Saving": "Сохранение...",
-    "GetKeyLink": "Получите бесплатный ключ API от Google AI Studio →",
-    "ClearKey": "Удалить сохраненный ключ",
-    "KeyVerified": "Ключ проверен",
-    "KeyInvalid": "Неверный ключ",
-    "KeyTesting": "Тестирование...",
-    "KeyNotConfigured": "Ключ не настроен",
-    "ModelSection": "Модель ИИ",
-    "ModelLabel": "Модель Близнецов",
-    "SelectedModel": "Выбрано: {{model}}",
-    "AutomationSection": "Автоматизация",
-    "AutoSummary": "Автоматическое создание сводки",
-    "AutoSummaryDesc": "Запускается после завершения каждой записи",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Рекомендуется · Быстрый + мощный",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Самый дешевый стабильный вариант",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Ультра-дешевый",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Максимальная возможность",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Лучшее устойчивое рассуждение"
-    },
-    "ClaudeKey": {
-      "Section": "Ключ API Клода (Агент)",
-      "SourceLabel": "Активный источник:",
-      "SourceByok": "Ваш API-ключ (BYOK)",
-      "SourceKeyServer": "Под управлением SeaMeet",
-      "SourceCli": "Клод Код CLI",
-      "SourceNone": "Не настроено",
-      "KeyPlaceholder": "ск-муравей-...",
-      "KeyPlaceholderSaved": "••••••••• (сохранено)",
-      "ShowKey": "Показать ключ",
-      "HideKey": "Скрыть ключ",
-      "TestKey": "Сохранить и проверить",
-      "Saving": "Сохранение...",
-      "ClearKey": "Удалить сохраненный ключ",
-      "KeyVerified": "Ключ проверен",
-      "KeyInvalid": "Неверный ключ",
-      "KeyTesting": "Тестирование...",
-      "KeyNotConfigured": "Ключ не настроен",
-      "GetKeyLink": "Получите ключ API из Anthropic Console →",
-      "QuotaSection": "Ключевая квота сервера",
-      "QuotaRemaining": "Осталось {{remaining}} / {{limit}} токенов",
-      "QuotaResetDate": "Сбрасывается {{date}}",
-      "QuotaLoading": "Загрузка квоты...",
-      "QuotaRefresh": "Обновить квоту",
-      "CliSection": "Клод Код CLI",
-      "CliInstalled": "Установлено ({{version}})",
-      "CliNotInstalled": "Клод CLI не найден",
-      "CliInstallLink": "Установить Клод Код →",
-      "ModelSection": "Модель Клода по умолчанию",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Быстро и дешево",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Рекомендуется · Сбалансированный",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "Самый способный"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AI-агент и совместная работа",
-    "PageTitle": "AI-агент и совместная работа",
-    "SectionTitle": "AI-агент и совместная работа",
-    "EnableToggle": "Включить AI Agent и Cowork",
-    "EnableToggleDesc": "Требуется ключ API Claude.",
-    "DisabledBadge": "Неполноценный",
-    "DisabledMsg": "AI Agent & Cowork отключены. Включите его в «Настройки» → «AI Agent & Cowork».",
-    "DisabledTabHint": "AI Agent отключен — включите его в «Настройки» → AI Agent & Cowork.",
-    "NotConfiguredMsg": "Ключ API Claude не настроен. Настройте его в «Настройки» → «AI Agent & Cowork»."
-  },
-  "PipelineStatus": {
-    "Queued": "Сводка в очереди...",
-    "Running": "Создание сводки...",
-    "Progress": "Обработка фрагмента {{current}} из {{total}}",
-    "Done": "Резюме готово",
-    "Error": "Обработка не удалась"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Процесс с ИИ",
-    "Queuing": "Очередь...",
-    "ProcessingWithTime": "Обработка... {{sec}}s",
-    "Describe": "Опишите изображение",
-    "DescribeSub": "Что изображено на этом скриншоте?",
-    "Ocr": "Извлечь текст (OCR)",
-    "OcrSub": "Читать весь видимый текст",
-    "Custom": "Пользовательское приглашение",
-    "CustomPlaceholder": "Спросите что-нибудь об этом изображении...",
-    "ResultLabel": "Результат ИИ",
-    "Description": "Описание",
-    "ExtractedText": "Извлеченный текст",
-    "Analysis": "Анализ",
-    "PipelineError": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз.",
-    "UnknownError": "Неизвестная ошибка"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Чтение файла...",
-      "Executing": "Выполнение...",
-      "Running": "Бег...",
-      "Input": "Вход",
-      "Output": "Выход",
-      "Pattern": "Шаблон:",
-      "ShowDetails": "Показать детали",
-      "AndMoreLines": "... и еще {{count}} строк"
-    },
-    "Streaming": {
-      "Thinking": "Думая...",
-      "LongRunning": "Бег дольше обычного",
-      "ToolStuck": "Инструмент может застрять",
-      "ForceStop": "Принудительная остановка",
-      "GeneratingResponse": "Генерация ответа...",
-      "RunningTool": "Запуск {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Запрос разрешения инструмента",
-      "Allow": "Разрешить один раз",
-      "AllowSession": "Разрешить сеанс",
-      "Deny": "Отрицать",
-      "Allowed": "Допустимый",
-      "Denied": "Отклонен"
-    },
-    "Title": "ИИ-агент",
-    "GlobalTitle": "ИИ-агент",
-    "NewSession": "Новая сессия",
-    "Sessions": "Сессии",
-    "NoSessions": "Сеансов пока нет. Начните разговор ниже.",
-    "SendPlaceholder": "Спросите что угодно... (Enter для отправки, Shift+Enter для перехода на новую строку)",
-    "SendButton": "Отправлять",
-    "StopButton": "Останавливаться",
-    "NotConfigured": "Настройте ключ API Claude в «Настройки» → «Функции AI», чтобы использовать Агента.",
-    "GoToSettings": "Открыть настройки",
-    "SessionCost": "Сеанс: {inputTokens}_ в /{outputTokens}_ токенов",
-    "CommandHelp": "Команды: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "Просить",
-      "Code": "Код",
-      "Plan": "План"
-    },
-    "Model": {
-      "Haiku": "Хайку",
-      "Sonnet": "Сонет",
-      "Opus": "Опус"
-    },
-    "QuickAction": {
-      "Summarize": "Подведите итог этой записи",
-      "ActionItems": "Найдите предметы для действий",
-      "DraftEmail": "Черновик последующего письма"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "Чем вы можете мне помочь?",
-      "HelpAnalyze": "Помогите мне проанализировать мои последние записи"
-    },
-    "AssetContext": "Контекст: {{name}}"
   }
 }

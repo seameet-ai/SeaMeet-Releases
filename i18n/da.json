@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "App Store-version",
     "DirectBuild": "Direkte version",
-    "SubtitleBadge": "Snap-optager og Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Hjælp os med at oversætte SeaMeet →",
     "Loading": "Indlæser...",
-    "HelpTranslate": "Hjælp os med at oversætte SeaMeet →"
+    "SubtitleBadge": "Snap-optager og Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Produktivitet",
-    "Social": "Social",
-    "Gaming": "Spil",
-    "Recording": "Optagelse",
-    "Browsers": "Browsere",
-    "BrowserBased": "Browserbaseret"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Andre",
+      "Skip": "Springe",
+      "Submit": "Indsend",
+      "Title": "Spørgsmål",
+      "TypeResponse": "Skriv dit svar..."
+    },
+    "AssetContext": "Kontekst: {{name}}",
+    "CommandHelp": "Kommandoer: /ny · /ryd · /pris · /hjælp",
+    "GlobalTitle": "AI-agent",
+    "GoToSettings": "Åbn Indstillinger",
+    "Mode": {
+      "Ask": "Spørge",
+      "Code": "Kode",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Sonnet"
+    },
+    "NewSession": "Ny session",
+    "NoSessions": "Ingen sessioner endnu. Start en samtale nedenfor.",
+    "NotConfigured": "Konfigurer en Claude API-nøgle i Indstillinger → AI-funktioner for at bruge agenten.",
+    "Permission": {
+      "Allow": "Tillad én gang",
+      "Allowed": "Tilladt",
+      "AllowSession": "Tillad session",
+      "Denied": "Afvist",
+      "Deny": "Nægte",
+      "Title": "Anmodning om værktøjstilladelse"
+    },
+    "Plan": {
+      "Approve": "Godkend plan",
+      "DefaultFeedback": "Brugeren anmodede om ændringer",
+      "Description": "Agenten har udarbejdet en plan ovenfor og har brug for din godkendelse for at fortsætte.",
+      "FeedbackPlaceholder": "Beskriv hvilke ændringer du gerne vil have...",
+      "PlanDetails": "Plan detaljer",
+      "RequestChanges": "Anmod om ændringer",
+      "RequestedPermissions": "Anmodede tilladelser:",
+      "SendFeedback": "Send feedback",
+      "Title": "Plangennemgang"
+    },
+    "QuickAction": {
+      "ActionItems": "Find handlingspunkter",
+      "DraftEmail": "Udkast til opfølgningsmail",
+      "Summarize": "Opsummer denne optagelse"
+    },
+    "SendButton": "Sende",
+    "SendPlaceholder": "Spørg hvad som helst... (Enter for at sende, Shift+Enter for ny linje)",
+    "SessionCost": "Session: {{inputTokens}} ind /{{outputTokens}} ud tokens",
+    "Sessions": "Sessioner",
+    "StopButton": "Stop",
+    "Streaming": {
+      "ForceStop": "Tving stop",
+      "GeneratingResponse": "Genererer svar...",
+      "LongRunning": "Løber længere end normalt",
+      "RunningTool": "Kører {{tool}}...",
+      "Thinking": "Tænker...",
+      "ToolStuck": "Værktøjet kan sidde fast"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Hjælp mig med at analysere mine seneste optagelser",
+      "WhatCanYouDo": "Hvad kan du hjælpe mig med?"
+    },
+    "Title": "AI-agent",
+    "ToolCall": {
+      "AndMoreLines_one": "... og {{count}} flere linjer",
+      "AndMoreLines_other": "... og {{count}} flere linjer",
+      "Executing": "Udfører...",
+      "Input": "Input",
+      "Output": "Produktion",
+      "Pattern": "Mønster:",
+      "Reading": "Læser fil...",
+      "ShowDetails": "Vis detaljer"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} handlinger",
+      "Actions_other": "{{count}} handlinger",
+      "Completed_one": "{{count}} fuldført",
+      "Completed_other": "{{count}} fuldført",
+      "Running_one": "{{count}} kører",
+      "Running_other": "{{count}} kører"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Handicappet",
+    "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent er deaktiveret — aktiver den i Indstillinger → AI Agent & Cowork",
+    "EnableToggle": "Aktiver AI Agent & Cowork",
+    "EnableToggleDesc": "Kræver en Claude API-nøgle",
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Gemini API nøgle",
+    "ApiKeySection": "Gemini API nøgle",
+    "AutomationSection": "Automatisering",
+    "AutoSummary": "Autogenerer oversigt",
+    "AutoSummaryDesc": "Kører efter hver optagelse er færdig",
+    "ClaudeKey": {
+      "ClearKey": "Fjern gemt nøgle",
+      "CliInstalled": "Installeret ({{version}})",
+      "CliInstallLink": "Installer Claude Code →",
+      "CliNotInstalled": "Claude CLI ikke fundet",
+      "CliSection": "Claude Code CLI",
+      "GetKeyLink": "Få en API-nøgle fra Anthropic Console →",
+      "HideKey": "Skjul nøgle",
+      "KeyInvalid": "Ugyldig nøgle",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (gemt)",
+      "KeyTesting": "Tester...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Hurtigt & billigt",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Mest dygtige",
+      "ModelSection": "Standard Claude Model",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Anbefalet · Afbalanceret",
+      "QuotaLoading": "Indlæser kvote...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
+      "QuotaResetDate": "Nulstiller på {{date}}",
+      "Saving": "Gemmer...",
+      "Section": "Claude API-nøgle (agent)",
+      "ShowKey": "Vis nøgle",
+      "SourceByok": "Din API-nøgle (BYOK)",
+      "SourceCli": "Claude Code CLI",
+      "SourceKeyServer": "Administreret af SeaMeet",
+      "SourceLabel": "Aktiv kilde:",
+      "SourceNone": "Ikke konfigureret",
+      "TestKey": "Gem og bekræft"
+    },
+    "ClearKey": "Fjern gemt nøgle",
+    "EnableToggle": "Aktiver AI-drevne oversigter",
+    "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
+    "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
+    "GroupTitle": "AI funktioner",
+    "HideKey": "Skjul nøgle",
+    "KeyInvalid": "Ugyldig nøgle",
+    "KeyNotConfigured": "Ingen nøgle konfigureret",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (gemt)",
+    "KeyTesting": "Tester...",
+    "KeyVerified": "Nøgle bekræftet",
+    "ManagedKeyDesc": "Din API-nøgle leveres automatisk. Ingen konfiguration nødvendig.",
+    "ManagedKeyStatus": "Administreret nøgle — leveret af SeaMeet",
+    "MenuItem": "AI-drevne resuméer",
+    "ModelLabel": "Gemini model",
+    "Models": {
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-billig",
+      "Gemini25FlashSub": "Billigste stabil mulighed",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Bedste stabile ræsonnement",
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Anbefalet · Hurtig + stand",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maksimal kapacitet"
+    },
+    "ModelSection": "AI model",
+    "PageTitle": "AI funktioner",
+    "QuotaLoading": "Indlæser kvote...",
+    "QuotaRefresh": "Opdater kvote",
+    "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
+    "QuotaResetDate": "Nulstiller på {{date}}",
+    "QuotaSection": "Brugskvote",
+    "Saving": "Gemmer...",
+    "SelectedModel": "Valgt: {{model}}",
+    "ShowKey": "Vis nøgle",
+    "TestKey": "Gem og bekræft"
+  },
+  "AISummary": {
+    "Copy": "Kopi",
+    "EnableRequired": "Aktiver AI-funktioner i Indstillinger → AI-funktioner for at se AI-oversigter.",
+    "Error": "Kunne ikke indlæse oversigt: {{error}}",
+    "Export": {
+      "HeadingActionItems": "Handlingspunkter",
+      "HeadingKeyDecisions": "Nøglebeslutninger",
+      "HeadingSummary": "Oversigt",
+      "HeadingTranscription": "Transskription"
+    },
+    "ExportJson": "Kopiér som JSON",
+    "ExportMarkdown": "Kopiér som Markdown",
+    "ExportSrt": "Kopiér som SRT",
+    "GeminiLiveTranscript": "Gemini Live",
+    "Generate": "Generer oversigt",
+    "Maximize": "Udvid til fuld visning",
+    "Minimize": "Minimer",
+    "NoActions": "Ingen handlingspunkter identificeret.",
+    "NoChapters": "Ingen tilgængelige kapitler.",
+    "NoDecisions": "Ingen nøglebeslutninger identificeret.",
+    "NoSummary": "Ingen AI-oversigt endnu.",
+    "NoSummaryText": "Resumé er ikke tilgængelig.",
+    "NoTranscript": "Udskrift ikke tilgængelig.",
+    "PipelineError": "AI-behandling mislykkedes. Prøv at regenerere.",
+    "PipelineTranscript": "AI rørledning",
+    "Processing": "Genererer oversigt...",
+    "Queued": "I kø til behandling...",
+    "Regenerate": "Gendan oversigt",
+    "Retry": "Prøv igen",
+    "SeekToTimestamp": "Søg efter dette tidsstempel",
+    "SetupRequired": "Konfigurer din Gemini API-nøgle i Indstillinger → AI-funktioner for at aktivere AI-oversigter.",
+    "Tab": {
+      "ActionItems": "Handlinger",
+      "Chapters": "kapitler",
+      "KeyDecisions": "Beslutninger",
+      "Summary": "Oversigt",
+      "Transcription": "Afskrift"
+    },
+    "TabTitle": "AI oversigt",
+    "Topics": "Emner:",
+    "Speakers": "Højttalere",
+    "MergeInto": "Flet til…",
+    "ApplyMerge": "Anvend",
+    "EditSegmentSpeaker": "Klik for at gentildele dette segment"
   },
   "App": {
     "FailedToEnableFlashback": "Fejl under aktivering af flashback: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "Alle apps",
-    "Teams": "Microsoft Teams (Arbejde/Skole)",
-    "TeamsConsumer": "Microsoft Teams (Privat)",
-    "TeamsWeb": "Microsoft Teams (web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Modig browser",
+    "CallOfDuty": "Call of Duty",
     "Chrome": "Chrome-browser",
-    "Edge": "Edge Browser",
-    "Firefox": "Firefox browser",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord (web)",
+    "Edge": "Edge Browser",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Firefox browser",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera browser",
+    "Other": "Andre apps",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (web)",
-    "WindowsSoundRecorder": "Windows Lydoptager",
-    "Other": "Andre apps",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox Game Bar",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam chat",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera browser",
-    "Brave": "Modig browser",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "Call of Duty",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Arbejde/Skole)",
+    "TeamsConsumer": "Microsoft Teams (Privat)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (web)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows Lydoptager",
+    "XboxGameBar": "Xbox Game Bar",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Lydoptagelse",
+    "AudioMix": "Lyd-mix",
+    "AudioSource": "Lydkilde:",
+    "Microphone": "Mikrofon",
+    "MicrophoneGainWarning": "Høj mikrofonforstærkning kan opfange lyd fra højttalerafspilning selv når \"Systemlyd\" er slået fra. Brug hovedtelefoner eller sænk mikrofonforstærkning ved mikrofonbaseret optagelse.",
+    "RecordingDefaultMicrophone": "Standardmikrofon",
+    "RecordingSettings": "Optagelsesindstillinger",
+    "RefreshMicrophoneList": "Opdater mikrofonliste"
   },
   "AutoDetectInfoModal": {
-    "Title": "Møder automatisk registreret",
-    "Subtitle": "Gå aldrig glip af et møde igen",
-    "Description": "Auto-detektering starter optagelse automatisk når du deltager i møder, så du aldrig glemmer at trykke på optag.",
-    "PopularAppsTitle": "Populære apps fundet",
-    "MoreApps": "+40 flere",
-    "HowItWorksTitle": "Sådan fungerer det",
-    "Step1Title": "Aktiver auto-detektering",
-    "Step1Desc": "Slå funktionen til og vælg hvilke apps der skal overvåges",
-    "Step2Title": "Deltag i et møde",
-    "Step2Desc": "Åbn Zoom, Teams, Meet eller en understøttet app",
-    "Step3Title": "Auto-optagelse",
-    "Step3Desc": "SeaMeet starter optagelsen automatisk. Færdig!",
-    "Tip1Title": "Konfigurer pr. app",
-    "Tip1Desc": "Indstil \"Altid optag\" til arbejdsmøder, \"Spørg hver gang\" til personlige opkald",
-    "Tip2Title": "Flere detektionsmetoder",
-    "Tip2Desc": "Bruger mikrofonaktivitet, vinduestitler og browser-URL'er til nøjagtighed",
-    "GotIt": "Forstået",
-    "OpenSettings": "Åbn indstillinger",
     "ControlLabel": "AUTO-DETEKTERING",
-    "LearnAbout": "Lær om auto-detektering"
+    "Description": "Auto-detektering starter optagelse automatisk når du deltager i møder, så du aldrig glemmer at trykke på optag.",
+    "GotIt": "Forstået",
+    "HowItWorksTitle": "Sådan fungerer det",
+    "LearnAbout": "Lær om auto-detektering",
+    "MoreApps": "+40 flere",
+    "OpenSettings": "Åbn indstillinger",
+    "PopularAppsTitle": "Populære apps fundet",
+    "Step1Desc": "Slå funktionen til og vælg hvilke apps der skal overvåges",
+    "Step1Title": "Aktiver auto-detektering",
+    "Step2Desc": "Åbn Zoom, Teams, Meet eller en understøttet app",
+    "Step2Title": "Deltag i et møde",
+    "Step3Desc": "SeaMeet starter optagelsen automatisk. Færdig!",
+    "Step3Title": "Auto-optagelse",
+    "Subtitle": "Gå aldrig glip af et møde igen",
+    "Tip1Desc": "Indstil \"Altid optag\" til arbejdsmøder, \"Spørg hver gang\" til personlige opkald",
+    "Tip1Title": "Konfigurer pr. app",
+    "Tip2Desc": "Bruger mikrofonaktivitet, vinduestitler og browser-URL'er til nøjagtighed",
+    "Tip2Title": "Flere detektionsmetoder",
+    "Title": "Møder automatisk registreret"
   },
   "AutoRecording": {
-    "Title": "Automatisk detektering af møder",
-    "DetectApps": "Opdag møder fra:",
-    "Enabled": "Automatisk detektering aktiveret",
-    "Disabled": "Automatisk detektering deaktiveret",
-    "MeetingDetected": "{{{app}}} møde opdaget!",
-    "MeetingEnded": "Mødet er afsluttet",
-    "MeetingFallbackName": "Møde",
     "BugReport": "Har du fundet en fejl? Rapportér den til seameet@seasalt.ai",
     "BugReportTitle": "Rapportér en fejl",
+    "Disabled": "Automatisk detektering deaktiveret",
+    "Enabled": "Automatisk detektering aktiveret",
     "HelpWanted": "Hvis du ønsker at anmode om tilføjelse af en ny app, eller du har bekræftet at en app fungerer, så kontakt os venligst på seameet@seasalt.ai. Vi værdsætter din hjælp til at forbedre denne app!",
-    "HelpWantedTitle": "Hjælp os med at forbedre"
+    "HelpWantedTitle": "Hjælp os med at forbedre",
+    "MeetingDetected": "{{{app}}} møde opdaget!",
+    "MeetingEnded": "Mødet er afsluttet",
+    "MeetingFallbackName": "Møde"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole er påkrævet for systemlyd",
-    "InstallInstructions": "For at optage systemlyd på macOS skal du installere BlackHole virtuel lyddriver:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "Kopiér kommandoen",
-    "Or": "eller",
-    "DownloadManually": "Download fra existential.audio",
-    "SetupTitle": "Konfigurer Multi-Output-enhed",
-    "SetupStep1": "Åbn Audio MIDI Setup (Programmer → Hjælpeprogrammer)",
-    "SetupStep2": "Klik på '+' og vælg 'Opret Multi-Output-enhed'",
-    "SetupStep3": "Tjek både dine højttalere eller headsets og 'BlackHole 2ch'",
-    "SetupStep4": "Højreklik på Multi-Output og vælg 'Brug denne enhed til lydudgang'",
-    "SetupStep5": "Genstart hvis BlackHole ikke vises i enhedslisten",
-    "SetupStep6": "Vælg 'BlackHole 2ch' som din lydkilde i denne app",
-    "CheckAgain": "Tjek igen",
     "Cancel": "Annuller",
-    "LearnMore": "Lær mere om Multi-Output-enheder"
+    "CheckAgain": "Tjek igen",
+    "CopyCommand": "Kopiér kommandoen",
+    "DownloadManually": "Download fra existential.audio",
+    "InstallInstructions": "For at optage systemlyd på macOS skal du installere BlackHole virtuel lyddriver:",
+    "LearnMore": "Lær mere om Multi-Output-enheder",
+    "NotInstalled": "BlackHole er påkrævet for systemlyd",
+    "Or": "eller",
+    "SetupTitle": "Konfigurer Multi-Output-enhed"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Bluetooth-mikrofon fundet",
-    "Description": "Dit operativsystem kan tvinge din lyd til \"Kommunikationstilstand\" når du bruger Bluetooth-mikrofoner, hvilket kan forårsage lydforvrængning eller lydstyrkeproblemer under optagelse.",
-    "RecommendationLabel": "Anbefaling:",
-    "Recommendation": "Skift til en ikke-Bluetooth-mikrofon (f.eks. din indbyggede mikrofon eller en USB-mikrofon) for bedre optagelseskvalitet.",
+    "CloseAriaLabel": "Luk Bluetooth-advarsel",
     "CloseTitle": "Luk advarsel",
-    "CloseAriaLabel": "Luk Bluetooth-advarsel"
+    "Description": "Dit operativsystem kan tvinge din lyd til \"Kommunikationstilstand\" når du bruger Bluetooth-mikrofoner, hvilket kan forårsage lydforvrængning eller lydstyrkeproblemer under optagelse.",
+    "Recommendation": "Skift til en ikke-Bluetooth-mikrofon (f.eks. din indbyggede mikrofon eller en USB-mikrofon) for bedre optagelseskvalitet.",
+    "RecommendationLabel": "Anbefaling:",
+    "Title": "⚠️ Bluetooth-mikrofon fundet"
+  },
+  "Common": {
+    "ApplyName": "Anvend navn",
+    "Cancel": "Annuller",
+    "Close": "Luk",
+    "Configure": "Konfigurer",
+    "Delete": "Slet",
+    "Done": "Færdig",
+    "Expand": "Udvid",
+    "FileNameCopiedWithRenameHint": "{{fileName}} kopieret til udklipsholder. Dobbeltklik for at ændre filnavn.",
+    "Loading": "Indlæser...",
+    "Minimize": "Minimer til cirkel",
+    "Open": "Åbn",
+    "Or": "Eller",
+    "Processing": "Behandler...",
+    "Recording": "Optagelse",
+    "Save": "Gem",
+    "Saved": "Gemt",
+    "Saving": "Gemmer...",
+    "Screenshot": "Skærmbillede",
+    "Send": "Sende",
+    "Starting": "Starter...",
+    "UnknownApp": "Ukendt app"
   },
   "DeletePrompt": {
-    "Title": "Slet fil",
-    "Message": "Er du sikker på, at du vil slette denne fil? Denne handling kan ikke fortrydes.",
     "Cancel": "Annuller",
-    "Confirm": "Slet"
+    "Confirm": "Slet",
+    "Message": "Er du sikker på, at du vil slette denne fil? Denne handling kan ikke fortrydes.",
+    "Title": "Slet fil"
   },
   "Errors": {
-    "NoAudioSources": "Ingen lydkilder tilgængelige",
-    "NoSystemAudioSources": "Ingen systemlydkilder tilgængelige",
+    "AutoRecordingFailed": "Kunne ikke aktivere automatisk optagelse",
     "FailedToStartRecording": "Kunne ikke starte optagelse: {{message}}",
     "FailedToStartVideoRecording": "Kunne ikke starte videooptagelse: {{message}}",
-    "AutoRecordingFailed": "Kunne ikke aktivere automatisk optagelse"
+    "NoAudioSources": "Ingen lydkilder tilgængelige",
+    "NoSystemAudioSources": "Ingen systemlydkilder tilgængelige",
+    "SaveFailed": "Kunne ikke gemme optagelsen: {{message}}"
   },
   "Events": {
-    "Title": "Begivenheder",
-    "MarkToolbarButton": "Markerede begivenheder",
+    "EmptyWhenNotRecording": "Ingen begivenheder tilgængelige for denne optagelse.",
+    "EmptyWhileRecording": "Ingen begivenheder endnu. Klik på 'Markér' under optagelse for at tilføje en.",
+    "EventLabel": "Begivenhed {{number}}",
     "MarkButton": "Markér",
     "Marked": "Markeret!",
-    "EventLabel": "Begivenhed {{number}}",
-    "EmptyWhileRecording": "Ingen begivenheder endnu. Klik på 'Markér' under optagelse for at tilføje en.",
-    "EmptyWhenNotRecording": "Ingen begivenheder tilgængelige for denne optagelse.",
-    "DeletePrompt": {
-      "Title": "Slet begivenhed",
-      "Message": "Er du sikker på, at du vil slette denne begivenhed? Denne handling kan ikke fortrydes.",
-      "Cancel": "Annuller",
-      "Confirm": "Slet"
-    }
+    "MarkToolbarButton": "Markerede begivenheder",
+    "Title": "Begivenheder"
+  },
+  "FileImport": {
+    "BrowseFiles": "Gennemse filer",
+    "DragDropFiles": "Træk og slip dine lyd-, video- og billedfiler her",
+    "DragDropSubtitle": "Træk og slip lyd-, video- og billedfiler her",
+    "ImportMedia": "Importér medier",
+    "Supported": "Understøttet",
+    "SupportedFormats": "Understøttet: MP3, WAV, M4A, WebM, OGG, PNG, JPG og mere",
+    "VideoImportCopying": "Kopierer videofil...",
+    "VideoImportSaving": "Gemmer videofil...",
+    "VideoUnsupported": "Dette videoformat understøttes muligvis ikke i appen. Filen importeres alligevel."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Lyd Flashback",
+    "CannotChangeWhileRecording": "Kan ikke ændre flashback-tilstand under optagelse",
+    "DisableFlashback": "Deaktiver Flashback",
     "Label": "TILBAGEBLIK",
     "LearnAbout": "Lær om Flashback",
-    "DisableFlashback": "Deaktiver Flashback",
-    "AudioFlashback": "Lyd Flashback",
-    "ScreenFlashback": "Skærm Flashback",
-    "TitleReady": "Klik for at vise Flashback-brugergrænsefladen",
-    "TitleCharging": "Flashback indlæses",
-    "TitleInit": "Klik for at starte indlæsning",
+    "Off": "Fra",
     "Ready": "Klar",
     "ReadyQuestion": "Klar?",
-    "Off": "Fra",
-    "CannotChangeWhileRecording": "Kan ikke ændre flashback-tilstand under optagelse",
-    "ToggleLabel": "Skift flashback",
-    "SettingsLabel": "Flashback-optagelse"
+    "ScreenFlashback": "Skærm Flashback",
+    "SettingsLabel": "Flashback-optagelse",
+    "TitleCharging": "Flashback indlæses",
+    "TitleInit": "Klik for at starte indlæsning",
+    "TitleReady": "Klik for at vise Flashback-brugergrænsefladen",
+    "ToggleLabel": "Skift flashback"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "lyd",
+    "Buffering": "Indlæser",
+    "BufferingMoment": "Indlæser øjeblik...",
+    "Capturing": "Optager...",
+    "DescCharging": "Klargør dit {{duration}}-sekunders vindue... næsten klar til at fange det du måske går glip af. {{progress}}% færdigt.",
+    "DescInit": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
+    "DescNone": "Optag din skærm, lyd eller tag et skærmbillede. Vælg en flashback-tilstand ovenfor for at aktivere øjebliks-lagring.",
+    "DescReady": "Flashback er aktiveret. Hver gang du trykker Optag, inkluderes de sidste {{duration}} sekunder af {{type}} — beklag aldrig et gået øjeblik igen.",
+    "FillingBuffer": "Udfylder {{duration}}s flashback-buffer... {{progress}}%",
+    "FlashbackBuffering": "Indlæser...",
+    "FlashbackCharging": "Udfylder {{seconds}}s buffer... {{percent}}%",
+    "FlashbackChargingDescription": "Klargør dit {{seconds}}-sekunders vindue... {{percent}}% færdigt.",
+    "FlashbackInitAudio": "Klar til at beskytte din lyd?",
+    "FlashbackInitDescription": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
+    "FlashbackInitScreen": "Klar til at beskytte din skærm?",
+    "FlashbackMismatch": "Flashback-tilstandskonflikt. Lydoptagelse men video-flashback er aktiv. Deaktiver venligst video-flashback.",
+    "FlashbackOff": "Flashback er i øjeblikket fra. Start en normal optagelse når som helst, eller vælg en flashback-tilstand (lyd eller skærm) ovenfor for at aktivere heroisk øjebliks-lagring.",
+    "FlashbackPrivacy": "Dit privatliv er beskyttet. Gemmes lokalt i RAM.",
+    "FlashbackReady": "Gå aldrig glip af et øjeblik.",
+    "FlashbackReadyDescription": "Flashback er aktiveret. De sidste {{seconds}}s af {{type}} inkluderes når du optager.",
+    "FlashbackReadyQuestion": "Klar?",
+    "KeepWindowVisible": "Hold SeaMeet-vinduet synligt ved skærmbillede",
+    "NeverMissAMoment": "Gå aldrig glip af et øjeblik.",
+    "OpenFloater": "Åbn Floater",
+    "OpenLauncher": "Åbn Launcher",
+    "PrivacyDesc": "SeaMeet tager øjebliksbilleder af de sidste {{duration}}s af {{type}} i en ring-buffer lokalt på din computers RAM.",
+    "PrivacyProtected": "Dit privatliv er beskyttet.",
+    "Ready": "Klar?",
+    "ReadyToCapture": "SeaMeet er klar til at optage.",
+    "ReadyToGuard": "Klar til at beskytte din {{type}}?",
+    "RecordWithFlashback": "Optag med Flashback",
+    "SaveFlashback": "Gem de sidste {{seconds}}s flashback",
+    "SaveLastFlashback": "Gem de sidste {{duration}}s flashback",
+    "SavingFlashback": "Gemmer flashback...",
+    "Screen": "skærm",
+    "StartRecording": "Start optagelse",
+    "TakeScreenshot": "Tag skærmbillede"
   },
   "FlashbackIndicator": {
     "Buffering": "Indlæser",
@@ -183,138 +463,145 @@
     "VideoReady": "Video klar"
   },
   "FlashbackInfoModal": {
-    "Title": "Flashback-optagelse",
-    "Close": "Luk",
-    "Subtitle": "Din Personlige Tidsmaskine",
-    "SubtitleDesc": "Gå aldrig glip af et vigtigt øjeblik igen—optag op til 2 minutter fra fortiden, selv efter det er sket.",
+    "Benefits": {
+      "AlwaysReady": "Altid klar",
+      "LocalOnly": "Kun lokalt (fuldt privatliv)",
+      "MultipleCaptures": "Flere optagelser – bufferen kører videre",
+      "NoPlan": "Ingen planlægning nødvendig",
+      "Offline": "Fungerer offline",
+      "Title": "Vigtigste fordele"
+    },
     "BestFor": "Bedst til:",
-    "VisualStates": {
-      "Title": "Visuelle statusindikatorer",
-      "OffLabel": "FRA",
-      "Off": "Grå, statisk bølgeform",
-      "ChargingLabel": "INDLÆSER",
-      "Charging": "Rav/Gul, buffer fyldes",
-      "ReadyLabel": "KLAR",
-      "Ready": "Grøn, buffer fuld"
-    },
-    "SpecLabel": {
-      "Buffer": "Buffer:",
-      "Memory": "Hukommelse:",
-      "Captures": "Optagelser:"
-    },
-    "Modes": {
-      "Title": "To Flashback-tilstande",
-      "Audio": {
-        "Title": "Lyd Flashback",
-        "Buffer": "30 sekunder (fast)",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "Mikrofon og/eller systemlyd",
-        "BestFor": "Optag møder, telefonopkald og stemmesamtaler"
-      },
-      "Video": {
-        "Title": "Video Flashback",
-        "Buffer": "10s, 30s, 60s, 90s eller 120s",
-        "Memory": "50-600 MB RAM",
-        "Captures": "Skærmvideo + lyd",
-        "BestFor": "Præsentationer, gaming-højdepunkter, skærmdelingssessioner, visuelt indhold"
-      }
-    },
-    "HowItWorks": {
-      "Title": "Sådan virker det",
-      "Step1": {
-        "Title": "Aktiver Flashback",
-        "Desc": "Klik på FLASHBACK-knappen for at tænde. Bufferen begynder automatisk at blive fyldt."
-      },
-      "Step2": {
-        "Title": "Vent på klar",
-        "Desc": "Vent på grøn status. Bufferen skal være fyldt til 90%, før du kan fange fortiden."
-      },
-      "Step3": {
-        "Title": "Tryk på Optag",
-        "Desc": "Når noget vigtigt sker, tryk på Optag. Flashback griber bufferen og fortsætter optagelsen fremad."
-      }
-    },
-    "Scenarios": {
-      "Title": "Praktiske scenarier",
-      "OhNo": {
-        "Title": "\"Åh nej!\"-øjeblikket",
-        "Desc": "Kollega siger noget dybt. Du indser, at du vil optage det. Tryk på Optag → Flashback fanger de sidste 30 sekunder (inklusive det øjeblik!)."
-      },
-      "Gaming": {
-        "Title": "Gaming-højdepunkt",
-        "Desc": "Udfør et utroligt combo. Tryk straks på Optag. Flashback fanger gameplay op til det combo + din reaktion."
-      },
-      "Decision": {
-        "Title": "Vigtig beslutning",
-        "Desc": "Advokaten forklarer en kontraktbestemmelse. Tryk på Optag for at fange forklaringen. Hav en komplet, nøjagtig optegnelse til senere gennemgang."
-      }
-    },
+    "Close": "Luk",
     "Comparison": {
-      "Title": "Flashback vs. Traditionel optagelse",
+      "Capture": {
+        "Feature": "Fang øjeblikke",
+        "Flashback": "Kan starte EFTER øjeblikket",
+        "Traditional": "Hvis du glemmer det, er det tabt"
+      },
       "Header": {
         "Feature": "Funktion",
-        "Traditional": "Traditionel optagelse",
-        "Flashback": "Flashback-optagelse"
+        "Flashback": "Flashback-optagelse",
+        "Traditional": "Traditionel optagelse"
       },
       "Planning": {
         "Feature": "Planlægning",
-        "Traditional": "Skal startes FØR øjeblikket",
-        "Flashback": "Ingen planlægning nødvendig"
-      },
-      "Capture": {
-        "Feature": "Fang øjeblikke",
-        "Traditional": "Hvis du glemmer det, er det tabt",
-        "Flashback": "Kan starte EFTER øjeblikket"
+        "Flashback": "Ingen planlægning nødvendig",
+        "Traditional": "Skal startes FØR øjeblikket"
       },
       "Result": {
         "Feature": "Resultat",
-        "Traditional": "\"Jeg ville ønske, jeg havde optaget det\"",
-        "Flashback": "\"Jeg er glad for, at jeg fangede det\""
-      }
-    },
-    "Benefits": {
-      "Title": "Vigtigste fordele",
-      "NoPlan": "Ingen planlægning nødvendig",
-      "AlwaysReady": "Altid klar",
-      "Offline": "Fungerer offline",
-      "LocalOnly": "Kun lokalt (fuldt privatliv)",
-      "MultipleCaptures": "Flere optagelser – bufferen kører videre"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "Lyd Flashback til daglig brug",
-        "Desc": "Brug 30-sekunders Lyd Flashback til møder og opkald. Lav hukommelsesforbrug og fungerer pålideligt."
+        "Flashback": "\"Jeg er glad for, at jeg fangede det\"",
+        "Traditional": "\"Jeg ville ønske, jeg havde optaget det\""
       },
-      "VideoSpecial": {
-        "Title": "Video Flashback til særlige øjeblikke",
-        "Desc": "Aktiver Video Flashback (30s buffer) til præsentationer, gaming-højdepunkter eller andet visuelt indhold, du ønsker at bevare."
-      },
-      "Memory": {
-        "Title": "Hukommelsesstyring",
-        "Desc": "Med 2 minutters Video Flashback bruger hele applikationen mindre end 1 GB RAM."
-      }
+      "Title": "Flashback vs. Traditionel optagelse"
     },
     "GotIt": "Forstået",
-    "OpenSettings": "Åbn indstillinger"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Klik på FLASHBACK-knappen for at tænde. Bufferen begynder automatisk at blive fyldt.",
+        "Title": "Aktiver Flashback"
+      },
+      "Step2": {
+        "Desc": "Vent på grøn status. Bufferen skal være fyldt til 90%, før du kan fange fortiden.",
+        "Title": "Vent på klar"
+      },
+      "Step3": {
+        "Desc": "Når noget vigtigt sker, tryk på Optag. Flashback griber bufferen og fortsætter optagelsen fremad.",
+        "Title": "Tryk på Optag"
+      },
+      "Title": "Sådan virker det"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Optag møder, telefonopkald og stemmesamtaler",
+        "Buffer": "30 sekunder (fast)",
+        "Captures": "Mikrofon og/eller systemlyd",
+        "Memory": "~30-50 MB RAM",
+        "Title": "Lyd Flashback"
+      },
+      "Title": "To Flashback-tilstande",
+      "Video": {
+        "BestFor": "Præsentationer, gaming-højdepunkter, skærmdelingssessioner, visuelt indhold",
+        "Buffer": "10s, 30s, 60s, 90s eller 120s",
+        "Captures": "Skærmvideo + lyd",
+        "Memory": "50-600 MB RAM",
+        "Title": "Video Flashback"
+      }
+    },
+    "OpenSettings": "Åbn indstillinger",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "Advokaten forklarer en kontraktbestemmelse. Tryk på Optag for at fange forklaringen. Hav en komplet, nøjagtig optegnelse til senere gennemgang.",
+        "Title": "Vigtig beslutning"
+      },
+      "Gaming": {
+        "Desc": "Udfør et utroligt combo. Tryk straks på Optag. Flashback fanger gameplay op til det combo + din reaktion.",
+        "Title": "Gaming-højdepunkt"
+      },
+      "OhNo": {
+        "Desc": "Kollega siger noget dybt. Du indser, at du vil optage det. Tryk på Optag → Flashback fanger de sidste 30 sekunder (inklusive det øjeblik!).",
+        "Title": "\"Åh nej!\"-øjeblikket"
+      },
+      "Title": "Praktiske scenarier"
+    },
+    "SpecLabel": {
+      "Buffer": "Buffer:",
+      "Captures": "Optagelser:",
+      "Memory": "Hukommelse:"
+    },
+    "Subtitle": "Din Personlige Tidsmaskine",
+    "SubtitleDesc": "Gå aldrig glip af et vigtigt øjeblik igen—optag op til 2 minutter fra fortiden, selv efter det er sket.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Brug 30-sekunders Lyd Flashback til møder og opkald. Lav hukommelsesforbrug og fungerer pålideligt.",
+        "Title": "Lyd Flashback til daglig brug"
+      },
+      "Memory": {
+        "Desc": "Med 2 minutters Video Flashback bruger hele applikationen mindre end 1 GB RAM.",
+        "Title": "Hukommelsesstyring"
+      },
+      "VideoSpecial": {
+        "Desc": "Aktiver Video Flashback (30s buffer) til præsentationer, gaming-højdepunkter eller andet visuelt indhold, du ønsker at bevare.",
+        "Title": "Video Flashback til særlige øjeblikke"
+      }
+    },
+    "Title": "Flashback-optagelse",
+    "VisualStates": {
+      "Charging": "Rav/Gul, buffer fyldes",
+      "ChargingLabel": "INDLÆSER",
+      "Off": "Grå, statisk bølgeform",
+      "OffLabel": "FRA",
+      "Ready": "Grøn, buffer fuld",
+      "ReadyLabel": "KLAR",
+      "Title": "Visuelle statusindikatorer"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "Opstart",
-    "AutoStartLabel": "Autostart Flashback",
+    "AutoStartAudio": "Lyd Flashback",
     "AutoStartDesc": "Start flashback når appen starter",
     "AutoStartDisable": "Deaktiver auto-start",
-    "AutoStartAudio": "Lyd Flashback",
+    "AutoStartLabel": "Autostart Flashback",
     "AutoStartScreen": "Skærm Flashback",
-    "BufferTitle": "Buffer",
-    "BufferDurationLabel": "Buffer-varighed",
     "BufferDurationDesc": "Hvor lang tid lyd/video skal holdes i buffer",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "Buffer-varighed",
+    "BufferTitle": "Buffer",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "Opstart"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Flashback-bufferen er tom. Prøv igen om et øjeblik.",
+    "EnableFlashback": "Aktiver flashback for at gemme et øjeblik.",
+    "FailedToSave": "Kunne ikke gemme flashback-bufferen.",
+    "SavedFlashback": "Flashback gemt i Optagelser.",
+    "StillCharging": "Flashback-bufferen indlæser stadig."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Luk værktøjstip",
-    "BluetoothMicTitle": "⚠️ Bluetooth-mikrofon",
     "BluetoothMicDesc": "Dit operativsystem kan gennemtvinge \"Kommunikationstilstand\", hvilket kan forårsage forvrængning.",
     "BluetoothMicTipLabel": "Tip:",
     "BluetoothMicTipText": "Brug en ikke-Bluetooth-mikrofon for bedre kvalitet.",
+    "BluetoothMicTitle": "⚠️ Bluetooth-mikrofon",
+    "CloseTooltip": "Luk værktøjstip",
     "FailedToLoadScreens": "Kunne ikke indlæse skærme. Prøv igen.",
     "FailedToLoadWindows": "Kunne ikke indlæse vinduer. Prøv igen.",
     "MicrophoneMuted": "Mikrofon: Lydløs",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "Ingen mikrofoner fundet",
     "NoScreensDetected": "Ingen skærme fundet.",
     "NoWindowsDetected": "Ingen vinduer fundet. Åbn et app-vindue og opdater.",
+    "RegionReady": "Område klar",
+    "RegionRequired": "Vælg et område før optagelse",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "Skærmvalg er ikke tilgængeligt på denne platform.",
     "SelectMicrophone": "Vælg mikrofon",
+    "SelectRegion": "Vælg område",
+    "SelectScreen": "Vælg en skærm",
+    "SelectWindow": "Vælg et vindue",
     "StartRecording": "Start optagelse",
     "SystemAudioOff": "Systemlyd: FRA",
     "SystemAudioOn": "Systemlyd: TIL",
     "WaitingForRegion": "Venter på område...",
     "WindowNotAvailable": "Vinduesvalg er ikke tilgængeligt på denne platform.",
-    "SelectScreen": "Vælg en skærm",
-    "SelectWindow": "Vælg et vindue",
-    "WindowRequired": "Vælg et vindue før optagelse",
-    "RegionReady": "Område klar",
-    "SelectRegion": "Vælg område",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "Vælg et område før optagelse"
+    "WindowRequired": "Vælg et vindue før optagelse"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Fuld skærm valgt",
-    "ClickToRecord": "Klik på Start Optagelse i den flydende bjælke for at optage det valgte område"
+    "ClickToRecord": "Klik på Start Optagelse i den flydende bjælke for at optage det valgte område",
+    "FullscreenSelected": "Fuld skærm valgt"
+  },
+  "GeminiLive": {
+    "AITranscription": "AI-transskription",
+    "CollapseNowSpeaking": "Bryde sammen",
+    "EnableDescription": "Realtidstransskription drevet af Gemini under optagelse",
+    "EnableIntegration": "Aktiver Live AI-transskription",
+    "Error": "Fejl",
+    "ExpandNowSpeaking": "Udvide",
+    "NowSpeaking": "Nu taler...",
+    "SegmentCount_one": "{{count}} segmenter",
+    "SegmentCount_other": "{{count}} segmenter",
+    "WaitingForConnection": "Opretter forbindelse...",
+    "WaitingForSpeech": "Venter på tale..."
   },
   "IdleCompactView": {
     "ArmFlashback": "Aktiver Flashback",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Kopiér e-mail",
     "EmailCopied": "✅  E-mail kopieret til udklipsholder"
   },
-  "JumpList": {
-    "RecordAudio": "Optag lyd",
-    "RecordAudioDesc": "Start optagelse af blandet lyd",
-    "RecordFullscreen": "Start fuldskærmsvideooptagelse",
-    "RecordFullscreenDesc": "Start fuldskærms videooptagelse",
-    "RecordRegion": "Vælg et område for at optage",
-    "RecordRegionDesc": "Vælg et skærmområde til optagelse",
-    "TakeScreenshot": "Tag skærmbillede",
-    "TakeScreenshotDesc": "Optag et område af skærmen",
-    "OpenRecordingsFolder": "Åbn optagelsesmappe",
-    "OpenRecordingsFolderDesc": "Åbn standard-optagelsesmappen"
-  },
   "MeetingPrompt": {
-    "StartTitle": "Møde opdaget",
-    "StartMessage": "Har du et møde på {{appName}}? Skal jeg registrere mødet lige nu?",
     "BrowserHint": "💡 Tip: Ved browsermøder (Google Meet, Zoom, Teams) kan jeg kun registrere browseren, ikke den specifikke hjemmeside.",
-    "RememberChoice": "Husk mit valg og spørg ikke igen",
-    "Yes": "Start optagelse",
-    "No": "Annuller",
-    "EndTitle": "Mødet er afsluttet",
-    "EndMessage": "Jeg opdagede, at mødet på {{appName}} netop er afsluttet. Vil du have, at jeg stopper optagelsen?",
     "ContinueRecording": "Fortsæt optagelse",
+    "EndMessage": "Jeg opdagede, at mødet på {{appName}} netop er afsluttet. Vil du have, at jeg stopper optagelsen?",
+    "EndTitle": "Mødet er afsluttet",
+    "No": "Annuller",
     "Pause": "Pause",
-    "Resume": "Genoptag",
-    "Stop": "Stop",
+    "PlayRecording": "Afspil",
     "RecordingSaved": "Optagelse gemt",
     "RecordingSavedWithFilename": "{{fileName}} gemt",
+    "RememberChoice": "Husk mit valg og spørg ikke igen",
     "RenameFile": "Omdøb",
     "ShowInFolder": "Vis i mappe",
-    "PlayRecording": "Afspil",
+    "StartMessage": "Har du et møde på {{appName}}? Skal jeg registrere mødet lige nu?",
+    "StartTitle": "Møde opdaget",
     "StopRecording": "Stop optagelse",
-    "Saving": "Gemmer..."
+    "Yes": "Start optagelse"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Handlingspunkter",
+    "CollapseNowSpeaking": "Skjul taler nu",
+    "ConnectionError": "Kunne ikke forbinde til SeaMeet",
+    "Content": "SeaMeet-indhold",
+    "DueDate": "Forfald: {{date}}",
+    "EnableIntegration": "Aktivér SeaMeet-transkription",
+    "ExpandNowSpeaking": "Udvid taler nu",
+    "FetchError": "Kunne ikke indlæse transkriptioner",
+    "LanguageHint": "Du kan ændre sproget under optagelse",
+    "LiveTranscription": "Live transkription",
+    "LoadingContent": "Indlæser SeaMeet-indhold...",
+    "LoadingTranscript": "Indlæser transkript...",
+    "NoActionItems": "Ingen handlingspunkter for dette møde",
+    "NoNotes": "Ingen noter for dette møde",
+    "NoSummary": "Resumé er endnu ikke tilgængeligt",
+    "Notes": "Noter",
+    "NoTranscript": "Ingen transkriptioner tilgængelige",
+    "NoTranslation": "Ingen oversættelse",
+    "NowSpeaking": "Taler nu...",
+    "Retry": "Prøv igen",
+    "SeekToTime": "Klik for at afspille fra dette tidspunkt",
+    "SegmentCount_one": "{{count}} segmenter",
+    "SegmentCount_other": "{{count}} segmenter",
+    "SignInRequired": "Login påkrævet",
+    "Summary": "Resumé",
+    "Transcribed": "Transkriberet",
+    "Transcript": "Transkript",
+    "TranscriptionLanguage": "Transkriptionssprog",
+    "TranslationLanguage": "Oversættelsessprog",
+    "UnknownSpeaker": "Taler",
+    "WaitingForSpeech": "Venter på tale..."
   },
   "MinimizedView": {
     "ActionRequired": "Handling påkrævet (Auto-optag)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Skærm-flashback indlæser...",
     "ScreenRecording": "Skærmoptagelse ({{time}})"
   },
+  "Pause": "Pause",
   "Permissions": {
-    "AutoRecordNextTime": "Vil du automatisk optage denne app næste gang?",
     "AlwaysAutoRecord": "Optag altid automatisk",
-    "NeverRecord": "Optag aldrig",
     "AskEveryTime": "Spørg hver gang",
-    "AutoRecordStarted": "Auto-optagelse startet",
+    "AutoRecordNextTime": "Vil du automatisk optage denne app næste gang?",
     "AutoRecordReason": "{{app}} er indstillet til Optag altid automatisk. Ændr app-optagelsestilladelse i Indstillinger -> Auto-optag.",
-    "ChangeInSettings": "Ændr i Indstillinger",
-    "GuidanceTitle": "App-tilladelsestyper",
+    "AutoRecordStarted": "Auto-optagelse startet",
+    "AutoStartAudioRule": "Hvis standard optagelsestilstand er Lyd, starter SeaMeet optagelsen straks uden at spørge.",
+    "AutoStartFallbackRule": "I alle andre tilfælde viser SeaMeet optagelsestilstand-vælgeren så du kan vælge.",
+    "AutoStartFullscreenRule": "Hvis standard optagelsestilstand er Fuldskærm og kun én skærm er tilsluttet, starter SeaMeet optagelsen straks.",
+    "AutoStartHeuristicsTitle": "Auto-start adfærd (Optag altid automatisk)",
     "GuidanceAlways": ": SeaMeet optager automatisk uden at bede om bekræftelse",
     "GuidanceAsk": ": SeaMeet spørger hver gang om din tilladelse til at optage",
     "GuidanceNever": ": SeaMeet vil ikke spørge om at optage",
-    "AutoStartHeuristicsTitle": "Auto-start adfærd (Optag altid automatisk)",
-    "AutoStartAudioRule": "Hvis standard optagelsestilstand er Lyd, starter SeaMeet optagelsen straks uden at spørge.",
-    "AutoStartFullscreenRule": "Hvis standard optagelsestilstand er Fuldskærm og kun én skærm er tilsluttet, starter SeaMeet optagelsen straks.",
-    "AutoStartFallbackRule": "I alle andre tilfælde viser SeaMeet optagelsestilstand-vælgeren så du kan vælge."
+    "GuidanceTitle": "App-tilladelsestyper",
+    "NeverRecord": "Optag aldrig"
+  },
+  "PipelineStatus": {
+    "Done": "Opsummering klar",
+    "Error": "Behandlingen mislykkedes",
+    "Progress": "Behandler del {{current}} af {{total}}",
+    "Queued": "Resumé i kø...",
+    "Running": "Genererer oversigt..."
   },
   "Player": {
     "Mute": "Lydløs",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Luk afspilning",
-    "MoreOptions": "Flere muligheder",
-    "CodecInfo": "Codec-information"
+    "CodecInfo": "Codec-information",
+    "MoreOptions": "Flere muligheder"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Lydoptagelse",
+    "ContinueRecording": "Fortsæt optagelse",
+    "RecordingAudio": "Optager lyd...",
+    "RecordingMode": "Optagelsestilstand",
+    "RecordingPreview": "Optagelsesforhåndsvisning",
+    "RecordingScreen": "Optager skærm...",
+    "StartRecording": "Start optagelse",
+    "Stop": "Stop",
+    "StopRecording": "Stop optagelse",
+    "VideoRecording": "Videooptagelse"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Områdeoptagelse",
+    "CaptureMode": "Optagelsestilstand",
+    "FullScreen": "Fuld skærm",
+    "RecordAudio": "Lyd",
+    "RecordAudioTip": "Kun lyd",
+    "RecordFullscreen": "Fuld skærm",
+    "RecordFullscreenTip": "Optag hele skærmen",
+    "RecordRegion": "Område",
+    "RecordRegionTip": "Optag et tilpasset område",
+    "RecordWindow": "Vindue",
+    "RecordWindowTip": "Optag et enkelt app-vindue"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Kopiér filnavn",
+    "CopyFilePath": "Kopiér filsti",
+    "FileNameCopied": "{{fileName}} kopieret til udklipsholder",
+    "FilePathCopied": "Filsti kopieret til udklipsholder",
+    "OpenSaveFolder": "Åbn mappe",
+    "RecentCaptures": "Nylige skærmbilleder",
+    "Recovered_one": "{{count}} optagelse gendannet",
+    "Recovered_other": "{{count}} optagelser gendannet",
+    "RefreshRecordings": "Opdater",
+    "SaveAs": "Gem som",
+    "SearchRecordingsOrSnapshots": "Søg optagelser og skærmbilleder",
+    "ShowInFolder": "Vis i mappe"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "Fil",
-    "Microphone": "Mikrofon",
-    "App": "{{appName}}"
+    "Microphone": "Mikrofon"
   },
   "RegionSelector": {
     "CaptureButton": "Optag skærm eller tryk Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Skærm",
     "PrimaryMonitor": "Primær skærm"
   },
-  "Reliability": {
-    "Stable": "Stabil",
-    "Experimental": "Eksperimentel",
-    "NotTested": "Ikke testet"
-  },
+  "Resume": "Genoptage",
   "RingMenu": {
+    "AutoDetectOff": "Auto-detektering: FRA",
+    "AutoDetectOn": "Auto-detektering: TIL",
     "FlashbackCharging": "Flashback indlæser...",
     "FlashbackNotCharged": "Flashback ikke indlæst, klik én gang for at indlæse lyd-flashback, dobbeltklik for at indlæse skærm-flashback",
     "FlashbackSaveTooltip": "Enkelt klik for at gemme de sidste {{duration}}s {{mode}} flashback. Dobbeltklik for at fortsætte optagelse herfra.",
-    "RecordRegion": "Optag område",
-    "RecordFullscreen": "Optag fuld skærm",
-    "TakeScreenshot": "Tag skærmbillede",
-    "AutoDetectOn": "Auto-detektering: TIL",
-    "AutoDetectOff": "Auto-detektering: FRA",
     "RecordAudio": "Optag lyd",
-    "RecordWindow": "Optag vindue"
+    "RecordFullscreen": "Optag fuld skærm",
+    "RecordRegion": "Optag område",
+    "RecordWindow": "Optag vindue",
+    "TakeScreenshot": "Tag skærmbillede"
   },
   "ScreenPicker": {
-    "Title": "Vælg en skærm",
     "Instruction": "Vælg hvilken skærm der skal optages til fuldskærmsoptagelser.",
-    "Refresh": "Opdater",
-    "Refreshing": "Opdaterer...",
     "Loading": "Indlæser skærme...",
     "None": "Ingen skærme fundet.",
+    "Refresh": "Opdater",
+    "Refreshing": "Opdaterer...",
+    "Title": "Vælg en skærm",
     "Unknown": "Unavngivet skærm"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Analyse",
+    "ButtonLabel": "Proces med AI",
+    "Custom": "Brugerdefineret prompt",
+    "CustomPlaceholder": "Spørg noget om dette billede...",
+    "Describe": "Beskriv billede",
+    "DescribeSub": "Hvad er der i dette skærmbillede?",
+    "Description": "Beskrivelse",
+    "ExtractedText": "Udtrukket tekst",
+    "Ocr": "Udtræk tekst (OCR)",
+    "OcrSub": "Læs al synlig tekst",
+    "PipelineError": "AI-behandling mislykkedes. Prøv venligst igen.",
+    "ProcessingWithTime": "Behandler... {{sec}}s",
+    "Queuing": "I kø...",
+    "ResultLabel": "AI resultat",
+    "UnknownError": "Ukendt fejl"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Kopieret!",
     "CopyFailed": "Kunne ikke kopiere skærmbillede til udklipsholder",
     "CopyToClipboard": "Kopiér til udklipsholder",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Slet",
     "Dimensions": "Dimensioner",
     "FileSize": "Filstørrelse",
-    "Filename": "Filnavn",
     "OpenInSystemViewer": "Åbn i systemfremviser",
-    "Rename": "Omdøb",
     "ScreenshotCopied": "Skærmbillede kopieret til udklipsholder",
     "Share": "Del",
     "ShareCompleted": "Deling fuldført",
     "ShareFailed": "Deling understøttes ikke i denne browser. Åbn skærmbilledet manuelt for at dele.",
-    "ShareNotSupported": "Indbygget deling understøttes ikke på denne platform. Brug Kopiér til udklipsholder i stedet.",
     "Sharing": "Deler...",
-    "Timestamp": "Tidsstempel",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "Indstillinger",
     "About": {
       "CheckForUpdates": "Søg efter opdateringer",
       "CheckingUpdates": "Søger efter opdateringer...",
-      "UpdateAvailable": "Ny version {{version}} er tilgængelig",
-      "UpdateReady": "Version {{version}} er klar til installation",
-      "NoUpdatesAvailable": "Ingen opdateringer tilgængelige",
       "InstallNow": "Installer nu",
-      "TermsOfService": "Brugsbetingelser",
-      "PrivacyPolicy": "Privatlivspolitik",
       "LegalToggle": {
+        "FullVersion": "Fuld version",
         "OneSentence": "1-sætning",
-        "TLDR": "TLDR",
-        "FullVersion": "Fuld version"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet er en gratis, privatlivsorienteret optager hvor lokal brug ikke kræver konto, dine data forbliver dine, cloud-funktioner er valgfrie, og du skal indhente samtykke før optagelse.",
-        "TLDRTitle": "SeaMeet Vilkår — TLDR for travle mennesker",
-        "TLDRItems": [
-          "SeaMeet Desktop er gratis — alle ikke-AI funktioner virker uden konto eller login.",
-          "Indhent samtykke før optagelse — SeaMeet tjekker ikke dette for dig.",
-          "Dine optagelser og transkriptioner er dine; SeaMeet behandler dem kun for at drive tjenesten.",
-          "Cloud-funktioner kræver en konto og gemmer data på SeaMeet-servere.",
-          "Anonym diagnostik er valgfri og kan slås fra når som helst.",
-          "Misbrug ikke appen (ingen ulovlig brug, ingen hacking).",
-          "Tjenesten kan ændres, og ansvar er begrænset."
-        ]
-      },
+      "NoUpdatesAvailable": "Ingen opdateringer tilgængelige",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop gemmer alle optagelser fuldt lokalt og privat på din enhed og kræver ingen konto. Cloud-funktioner er valgfrie, krypterede og fuldt under din kontrol.",
-        "TLDRTitle": "SeaMeet Privatliv — TLDR for travle mennesker",
         "TLDRItems": [
           "SeaMeet Desktop er privatlivsorienteret: alt forbliver på din enhed; vi indsamler ikke lyd, video, skærmindhold eller mødedata.",
           "Ingen konto nødvendig for at bruge desktop-appens ikke-AI funktioner.",
@@ -530,734 +883,299 @@
           "Tredjeparts-integrationer er valgfrie og fuldt tilbagekaldelige.",
           "Vi sælger ikke data, og cloud-optagelser er krypterede.",
           "Du kontrollerer dine data — slet optagelser når som helst eller anmod om fuld sletning."
-        ]
+        ],
+        "TLDRTitle": "SeaMeet Privatliv — TLDR for travle mennesker"
       },
+      "PrivacyPolicy": "Privatlivspolitik",
       "PrivacySecurity": {
-        "Title": "PRIVATLIV OG SIKKERHED",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Auto-detektering vil ALDRIG automatisk starte en optagelse uden din eksplicitte godkendelse.",
+            "Title": "Eksplicit godkendelse påkrævet"
+          },
           "MicrophoneActivity": {
-            "Title": "Kun mikrofonaktivitet",
-            "Description": "Auto-detektering overvåger din mikrofonbrug for at udlede hvilken app der bruger den. Ingen data fanges."
+            "Description": "Auto-detektering overvåger din mikrofonbrug for at udlede hvilken app der bruger den. Ingen data fanges.",
+            "Title": "Kun mikrofonaktivitet"
           },
           "NoDataAccess": {
-            "Title": "Ingen dataadgang",
-            "Description": "Auto-detektering registrerer kun om mikrofonen bruges eller ej. Den får IKKE adgang til nogen optagede data."
-          },
-          "ExplicitApproval": {
-            "Title": "Eksplicit godkendelse påkrævet",
-            "Description": "Auto-detektering vil ALDRIG automatisk starte en optagelse uden din eksplicitte godkendelse."
+            "Description": "Auto-detektering registrerer kun om mikrofonen bruges eller ej. Den får IKKE adgang til nogen optagede data.",
+            "Title": "Ingen dataadgang"
           },
           "NoDataCollection": {
-            "Title": "Ingen dataindsamling",
-            "Description": "SeaMeet indsamler INGEN data fra auto-detekteringsfunktionen uden dit samtykke."
+            "Description": "SeaMeet indsamler INGEN data fra auto-detekteringsfunktionen uden dit samtykke.",
+            "Title": "Ingen dataindsamling"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% Lokalt",
-            "Description": "Flashback kører udelukkende på din lokale maskine. Intet synkroniseres til cloud."
+          "EthicalUse": {
+            "Description": "Informér altid og indhent samtykke fra andre før du bruger Flashback til at optage dem.",
+            "Title": "Etisk brug"
           },
-          "RAMOnly": {
-            "Title": "Kun RAM",
-            "Description": "Alle data forbliver i hukommelsen. Intet skrives til disk medmindre du gemmer en Flashback-optagelse."
+          "LocalOnly": {
+            "Description": "Flashback kører udelukkende på din lokale maskine. Intet synkroniseres til cloud.",
+            "Title": "100% Lokalt"
           },
           "Protected": {
-            "Title": "Beskyttet",
-            "Description": "Dit privatliv og sikkerhed er af yderste vigtighed. Dine data forlader aldrig din enhed."
+            "Description": "Dit privatliv og sikkerhed er af yderste vigtighed. Dine data forlader aldrig din enhed.",
+            "Title": "Beskyttet"
           },
-          "EthicalUse": {
-            "Title": "Etisk brug",
-            "Description": "Informér altid og indhent samtykke fra andre før du bruger Flashback til at optage dem."
+          "RAMOnly": {
+            "Description": "Alle data forbliver i hukommelsen. Intet skrives til disk medmindre du gemmer en Flashback-optagelse.",
+            "Title": "Kun RAM"
           }
-        }
-      }
+        },
+        "Title": "PRIVATLIV OG SIKKERHED"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet er en gratis, privatlivsorienteret optager hvor lokal brug ikke kræver konto, dine data forbliver dine, cloud-funktioner er valgfrie, og du skal indhente samtykke før optagelse.",
+        "TLDRItems": [
+          "SeaMeet Desktop er gratis — alle ikke-AI funktioner virker uden konto eller login.",
+          "Indhent samtykke før optagelse — SeaMeet tjekker ikke dette for dig.",
+          "Dine optagelser og transkriptioner er dine; SeaMeet behandler dem kun for at drive tjenesten.",
+          "Cloud-funktioner kræver en konto og gemmer data på SeaMeet-servere.",
+          "Anonym diagnostik er valgfri og kan slås fra når som helst.",
+          "Misbrug ikke appen (ingen ulovlig brug, ingen hacking).",
+          "Tjenesten kan ændres, og ansvar er begrænset."
+        ],
+        "TLDRTitle": "SeaMeet Vilkår — TLDR for travle mennesker"
+      },
+      "TermsOfService": "Brugsbetingelser",
+      "UpdateAvailable": "Ny version {{version}} er tilgængelig",
+      "UpdateReady": "Version {{version}} er klar til installation"
     },
-    "General": "Generelt",
-    "Storage": {
-      "Title": "Lagerindstillinger",
-      "Description": "Vælg standardmappen som SeaMeet bruger ved automatisk gemning af optagelser.",
-      "DefaultPathLabel": "Standard gemmemappe",
-      "Browse": "Gennemse...",
-      "Save": "Gem",
-      "RecordingNameLabel": "Optagelsesnavn"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Standard optagelsestilstand",
+      "DeleteTooltip": "Fjern fra listen (nulstiller til 'Spørg hver gang')",
+      "EmptyState": "Ingen apps registreret endnu. Når SeaMeet registrerer en app der bruger din mikrofon, vil den vises her.",
+      "PathCopied": "Sti kopieret til udklipsholder",
+      "PermissionHeader": "App-tilladelser",
+      "Title": "App-tilladelser"
     },
-    "ProfileSettings": "Profilindstillinger",
-    "AccountPreferences": "Kontoindstillinger",
-    "ProfileSettingsDescription": "Administrer dine profiloplysninger",
-    "AccountPreferencesDescription": "Administrer dine kontoindstillinger",
-    "SettingsFileLocation": "Indstillingsfil placering",
-    "SettingsFileDescription": "Indstillinger gemmes i en enkelt JSON-fil for nem backup og administration",
     "Back": "Tilbage",
-    "OpenFolder": "Åbn mappe",
     "DefaultUserName": "SeaMeet-bruger",
-    "UserAvatarAlt": "bruger",
+    "FailedToCheckForUpdates": "Kunne ikke søge efter opdateringer",
     "GroupTitle": {
-      "Account": "Konto",
-      "General": "Generelt",
-      "Automation": "Automatisering",
-      "RecordingStorage": "Optagelseslagring",
-      "Configuration": "Konfiguration",
       "ApplicationInfo": "App-information",
-      "Legal": "Juridisk"
+      "Automation": "Automatisering",
+      "Configuration": "Konfiguration",
+      "General": "Generelt",
+      "Legal": "Juridisk",
+      "RecordingStorage": "Optagelseslagring"
     },
     "Item": {
-      "EditProfile": "Rediger profil",
-      "Account": "Konto",
-      "LogOut": "Log ud",
-      "Language": "Sprog",
+      "AutoRecording": "Auto-optagelse",
+      "Copyright": "Ophavsret",
       "ImproveTranslationHint": "Hjælp med at forbedre denne oversættelse på GitHub →",
-      "Theme": "Tema",
-      "KeyboardShortcuts": "Tastaturgenveje",
+      "Language": "Sprog",
       "MicrophoneGain": "Mikrofonforstærkning",
       "StartAtLogin": "Start ved login",
-      "AutoRecording": "Auto-optagelse",
       "Storage": "Lager",
-      "Copyright": "Ophavsret"
+      "Theme": "Tema"
     },
     "MicGain": {
-      "Minimal": "Minimal (0,1x)",
-      "Quiet": "Stille (0.5x)",
-      "Normal": "Normal (1x)",
       "Loud": "Høj (5x)",
-      "Louder": "Højere (10x)"
+      "Louder": "Højere (10x)",
+      "Minimal": "Minimal (0,1x)",
+      "Normal": "Normal (1x)",
+      "Quiet": "Stille (0.5x)"
+    },
+    "OpenFolder": "Åbn mappe",
+    "PageTitle": {
+      "About": "Om",
+      "AutoRecording": "Auto-optagelse",
+      "Flashback": "Flashback-optagelse",
+      "Storage": "Lager"
+    },
+    "SettingsFileLocation": "Indstillingsfil placering",
+    "Storage": {
+      "Browse": "Gennemse...",
+      "DefaultPathLabel": "Standard gemmemappe",
+      "Description": "Vælg standardmappen som SeaMeet bruger ved automatisk gemning af optagelser.",
+      "Save": "Gem",
+      "Title": "Lagerindstillinger"
     },
     "Theme": {
+      "AdobeSand": "Adobe Sand",
+      "AdobeSandDesc": "Lys tilstand i varme jordfarver",
+      "AzureLight": "Azurblå",
+      "AzureLightDesc": "Lys tilstand i kølige blå nuancer",
+      "CloudCanvas": "Skylærred",
+      "CloudCanvasDesc": "Lys tilstand i frisk myntengrøn",
+      "ColumnDark": "Mørk",
+      "ColumnLight": "Lys",
+      "CyberCobalt": "Cyber Kobolt",
+      "CyberCobaltDesc": "Mørk tilstand i neon cyan",
+      "Dark": "Mørk",
+      "DarkDesc": "Mørk tilstand",
       "Device": "Enhed",
       "DeviceDesc": "Følg systemindstillinger",
       "Light": "Lys",
       "LightDesc": "Lys tilstand",
-      "Dark": "Mørk",
-      "DarkDesc": "Mørk tilstand",
-      "Pink": "Mørk lyserød",
-      "PinkDesc": "Mørk lyserød tilstand",
       "LightPink": "Lyserød",
       "LightPinkDesc": "Lyserød tilstand",
-      "ColumnLight": "Lys",
-      "ColumnDark": "Mørk",
-      "AzureLight": "Azurblå",
-      "AzureLightDesc": "Lys tilstand i kølige blå nuancer",
-      "WarmPaper": "Varmt Papir",
-      "WarmPaperDesc": "Lys tilstand i varme papirnuancer",
-      "SynthwaveLight": "Synthwave Lys",
-      "SynthwaveLightDesc": "Levende lys synthwave-tilstand",
       "MidnightBlue": "Midnatsblå",
       "MidnightBlueDesc": "Mørk tilstand i dybe blå nuancer",
-      "CloudCanvas": "Skylærred",
-      "CloudCanvasDesc": "Lys tilstand i frisk myntengrøn",
-      "CyberCobalt": "Cyber Kobolt",
-      "CyberCobaltDesc": "Mørk tilstand i neon cyan",
-      "AdobeSand": "Adobe Sand",
-      "AdobeSandDesc": "Lys tilstand i varme jordfarver"
+      "Pink": "Mørk lyserød",
+      "PinkDesc": "Mørk lyserød tilstand",
+      "SynthwaveLight": "Synthwave Lys",
+      "SynthwaveLightDesc": "Levende lys synthwave-tilstand",
+      "WarmPaper": "Varmt Papir",
+      "WarmPaperDesc": "Lys tilstand i varme papirnuancer"
     },
-    "PageTitle": {
-      "Flashback": "Flashback-optagelse",
-      "About": "Om",
-      "AutoRecording": "Auto-optagelse",
-      "Storage": "Lager"
-    },
-    "FailedToCheckForUpdates": "Kunne ikke søge efter opdateringer",
-    "AppPermissions": {
-      "Title": "App-tilladelser",
-      "Description": "Administrer hvilke apps der kan auto-optage når de registreres ved brug af din mikrofon.",
-      "EmptyState": "Ingen apps registreret endnu. Når SeaMeet registrerer en app der bruger din mikrofon, vil den vises her.",
-      "DeleteTooltip": "Fjern fra listen (nulstiller til 'Spørg hver gang')",
-      "PathCopied": "Sti kopieret til udklipsholder",
-      "PermissionHeader": "App-tilladelser",
-      "DefaultRecordingMode": "Standard optagelsestilstand"
-    }
+    "Title": "Indstillinger",
+    "UserAvatarAlt": "bruger"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Vis flydende vindue",
-    "OpenLauncher": "Åbn launcher",
-    "RecordAudio": "Optag lyd",
-    "RecordFullscreen": "Optag fuld skærm",
-    "RecordWindow": "Optag vindue",
-    "RecordRegion": "Optag område",
     "CaptureScreenshot": "Tag skærmbillede",
-    "RestoreDefaults": "Gendan standarder",
-    "RecordingPrompt": "Lytter... tryk på den nye genvej",
     "ConflictWarning": "Denne genvej bruges allerede af en anden app og kan ikke registreres.",
     "GenericError": "Kunne ikke opdatere genvej.",
     "None": "Ingen",
-    "SpaceKey": "Mellemrum"
-  },
-  "Sidebar": {
-    "PrimaryNavigation": "Primær navigation",
-    "ClearSearch": "Ryd søgning",
-    "AgentPanel": "AI-agent"
-  },
-  "SidebarTabs": {
-    "Audios": "Lyde",
-    "AutoDetect": "Auto-detektering"
-  },
-  "TakeSnapshot": {
-    "Title": "Skærmbillede taget",
-    "Message": "Skærmbillede taget og gemt i:",
-    "StayAtVideo": "Bliv ved nuværende video",
-    "GoToSnapshot": "Gå til nyt skærmbillede"
-  },
-  "TopNav": {
-    "CloseNavigationMenu": "Luk navigationsmenu",
-    "OpenNavigationMenu": "Åbn navigationsmenu",
-    "MainNavigation": "Hovednavigation",
-    "Record": "Optage",
-    "Recording": "Indspilning",
-    "Files": "Filer",
-    "Agent": "Agent",
-    "Terminal": "Terminal"
-  },
-  "Tray": {
-    "MinimizedHint": "SeaMeet kører stadig i systembakken (nederst til højre).",
-    "ShowLauncher": "Vis launcher",
-    "ShowFloatingWindow": "Vis flydende vindue",
-    "ShowMainWindow": "Vis hovedvindue",
-    "ExitSeaMeet": "Afslut SeaMeet",
-    "QuickRecording": "Hurtig optagelse",
+    "OpenLauncher": "Åbn launcher",
     "RecordAudio": "Optag lyd",
     "RecordFullscreen": "Optag fuld skærm",
-    "RecordRegion": "Vælg område for at optage",
-    "OpenRecordingsFolder": "Åbn optagelsesmappe",
-    "TakeScreenshot": "Tag skærmbillede",
-    "Close": "Luk",
-    "OpenSeaMeet": "Åbn SeaMeet",
-    "OpenSaveFolder": "Åbn gemmemappe",
-    "ReportIssues": "Rapportér problemer"
+    "RecordingPrompt": "Lytter... tryk på den nye genvej",
+    "RecordRegion": "Optag område",
+    "RecordWindow": "Optag vindue",
+    "RestoreDefaults": "Gendan standarder",
+    "SpaceKey": "Mellemrum",
+    "ToggleFloatingWindow": "Vis flydende vindue"
+  },
+  "Sidebar": {
+    "ClearSearch": "Ryd søgning",
+    "PrimaryNavigation": "Primær navigation"
+  },
+  "TakeSnapshot": {
+    "GoToSnapshot": "Gå til nyt skærmbillede",
+    "Message": "Skærmbillede taget og gemt i:",
+    "StayAtVideo": "Bliv ved nuværende video",
+    "Title": "Skærmbillede taget"
+  },
+  "TopNav": {
+    "Agent": "Agent",
+    "CloseNavigationMenu": "Luk navigationsmenu",
+    "Files": "Filer",
+    "MainNavigation": "Hovednavigation",
+    "OpenNavigationMenu": "Åbn navigationsmenu",
+    "Record": "Optage",
+    "Recording": "Indspilning"
+  },
+  "Tray": {
+    "MinimizedHint": "SeaMeet kører stadig i systembakken (nederst til højre)."
   },
   "Types": {
-    "Microphone": "Mikrofon",
-    "System": "Systemlyd-output",
     "Both": "Begge (Blandet)",
     "File": "Fil",
+    "Microphone": "Mikrofon",
+    "System": "Systemlyd-output",
     "Video": "Video"
   },
   "UpdateQuitModal": {
-    "Title": "Opdatering tilgængelig",
-    "ReadyToInstall": "SeaMeet {{version}} er klar til installation.",
-    "InstallBeforeQuitting": "Vil du installere den før du afslutter?",
     "InstallAndQuit": "Installer og afslut",
-    "QuitWithoutInstalling": "Afslut uden installation"
+    "InstallBeforeQuitting": "Vil du installere den før du afslutter?",
+    "QuitWithoutInstalling": "Afslut uden installation",
+    "ReadyToInstall": "SeaMeet {{version}} er klar til installation.",
+    "Title": "Opdatering tilgængelig"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} er klar til installation",
-    "Downloading": "Downloader SeaMeet {{version}} ({{percent}}%)",
     "Available": "Opdatering tilgængelig: SeaMeet {{version}}",
-    "WhatsNewInVersion": "Nyheder i {{version}}?",
-    "WhatsNew": "Nyheder:",
+    "Dismiss": "Afvis",
+    "Downloading": "Downloader SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Skjul",
+    "ReadyToInstall": "SeaMeet {{version}} er klar til installation",
     "RestartNow": "Genstart nu",
     "ViewRelease": "Se udgivelse",
     "ViewReleaseTitle": "Se udgivelsesnoter på GitHub",
-    "Dismiss": "Afvis"
+    "WhatsNew": "Nyheder:",
+    "WhatsNewInVersion": "Nyheder i {{version}}?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "Om SeaMeet",
     "DisplayName": "Bruger",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Profilindstillinger",
-    "AccountPreferences": "Kontoindstillinger",
-    "BillingPlans": "Fakturering & Planer",
-    "StorageSettings": "Lagerindstillinger",
-    "HelpSupport": "Hjælp & Support",
-    "KeyboardShortcuts": "Tastaturgenveje",
-    "SignIn": "Log ind",
-    "SignOut": "Log ud",
-    "SeaMeetSignedOut": "SeaMeet: Ikke logget ind",
-    "SeaMeetSignedIn": "SeaMeet: Logget ind",
-    "AboutSeaMeet": "Om SeaMeet",
     "Exit": "Afslut",
+    "HelpSupport": "Hjælp & Support",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Tjek SeaMeet-wikien for dokumentation og vejledninger.",
-      "VisitWiki": "Besøg Wiki",
-      "Issues": "Problemer",
-      "IssuesDesc": "Rapportér fejl og anmod om funktioner (kræver GitHub-konto).",
-      "SubmitIssue": "Indsend problem",
       "Discussion": "Diskussion",
       "DiscussionDesc": "Deltag i fællesskabsdiskussionen (kræver GitHub-konto).",
-      "JoinDiscussion": "Deltag i diskussion",
+      "DogfoodingDesc": "Vi opfordrer dig til at bruge SeaMeet til at registrere problemer og poste dem i enten Problemer eller sende os en e-mail!",
       "Email": "E-mail",
       "EmailDesc": "Kontakt vores team direkte.",
-      "SendEmail": "Send e-mail",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "Vi opfordrer dig til at bruge SeaMeet til at registrere problemer og poste dem i enten Problemer eller sende os en e-mail!",
-      "CheckForUpdates": "Søg efter opdateringer",
-      "CheckingUpdates": "Søger efter opdateringer...",
-      "UpdateAvailable": "Ny version {{version}} er tilgængelig",
-      "UpdateReady": "Version {{version}} er klar til installation",
-      "InstallNow": "Installer nu",
-      "TermsOfService": "Brugsbetingelser",
-      "PrivacyPolicy": "Privatlivspolitik",
       "ImproveTranslation": "Forbedre oversættelser",
-      "ImproveTranslationDesc": "Hjælp os med at forbedre oversættelser eller anmod om et nyt sprog på GitHub."
-    }
+      "ImproveTranslationDesc": "Hjælp os med at forbedre oversættelser eller anmod om et nyt sprog på GitHub.",
+      "Issues": "Problemer",
+      "IssuesDesc": "Rapportér fejl og anmod om funktioner (kræver GitHub-konto).",
+      "JoinDiscussion": "Deltag i diskussion",
+      "SendEmail": "Send e-mail",
+      "SubmitIssue": "Indsend problem",
+      "VisitWiki": "Besøg Wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Tjek SeaMeet-wikien for dokumentation og vejledninger."
+    },
+    "KeyboardShortcuts": "Tastaturgenveje",
+    "SeaMeetSignedIn": "SeaMeet: Logget ind",
+    "SeaMeetSignedOut": "SeaMeet: Ikke logget ind",
+    "SignIn": "Log ind",
+    "SignOut": "Log ud"
   },
   "VideoSettings": {
-    "Title": "Videooptagelsesindstillinger",
-    "Mode": "Optagelsestilstand",
-    "ModeOff": "Fra",
-    "ModeFullscreen": "Fuldskærm",
-    "ModeWindow": "Vindue",
-    "ModeRegion": "Område",
+    "AudioSettings": "Lydindstillinger",
+    "CodecTooltip": {
+      "VP8": "Denne optagelse bruger VP8 til bedste kvalitet. Nogle standard videoplayere — såsom Windows Media Player og QuickTime på macOS — understøtter muligvis ikke dette format. For pålidelig afspilning, brug venligst en moderne browser (Chrome eller Edge) eller en kompatibel afspiller som VLC.",
+      "VP9": "Denne optagelse bruger VP9 til bedste kvalitet. Nogle standard videoplayere — såsom Windows Media Player og QuickTime på macOS — understøtter muligvis ikke dette format. For pålidelig afspilning, brug venligst en moderne browser (Chrome eller Edge) eller en kompatibel afspiller som VLC."
+    },
+    "Detecting": "Registrerer...",
+    "FlashbackArmedNotice": "Du optager med {{seconds}}s flashback-buffer",
+    "FramesPerSecond": "Billeder pr. sekund",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} GB/time",
+    "HD": "HD",
+    "HideWindow": "Skjul SeaMeet-vindue ved valg af område",
+    "Internal": "Intern",
+    "MBPerMin": "~{{mb}} MB/min,",
     "ModeAudioOnly": "Kun lyd",
-    "SelectScreen": "Vælg skærm",
-    "SelectWindow": "Vælg vindue",
-    "Refresh": "Opdater",
+    "ModeFullscreen": "Fuldskærm",
+    "ModeRegion": "Område",
+    "ModeWindow": "Vindue",
+    "Native": "Oprindelig",
     "NoScreens": "Ingen skærme fundet",
     "NoWindows": "Ingen vinduer tilgængelige",
-    "RegionInfo": "Du vil blive bedt om at vælge en skærm eller et vindue når optagelsen starter.",
-    "HideWindow": "Skjul SeaMeet-vindue ved valg af område",
-    "VideoQuality": "Videokvalitet",
-    "Quality": "Kvalitet",
-    "QualityOriginal": "Original",
-    "QualityHigh": "Høj",
-    "QualityMedium": "Medium",
-    "QualityLow": "Lav",
-    "FramesPerSecond": "Billeder pr. sekund",
-    "FrameRate": "Billedrate",
-    "SourceResolution": "Kildeopløsning",
-    "Native": "Oprindelig",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Vælg en kilde ovenfor",
-    "ZeroSize": "~0 MB/min, ~0 GB/time",
-    "MBPerMin": "~{{mb}} MB/min,",
-    "GBPerHour": "~{{gb}} GB/time",
     "Primary": "Primær",
-    "Internal": "Intern",
-    "Detecting": "Registrerer...",
-    "ResolutionUnknown": "Ukendt opløsning",
-    "AudioSettings": "Lydindstillinger",
-    "RecordModeTitle": "Optag lyd eller video?",
+    "QualityHigh": "Høj",
+    "QualityLow": "Lav",
+    "QualityMedium": "Medium",
+    "QualityOriginal": "Original",
     "Record": "Optag",
-    "RecordWithoutFlashback": "Optag uden flashback",
+    "RecordModeTitle": "Optag lyd eller video?",
     "RecordWithFlashback": "Optag med flashback",
+    "RecordWithoutFlashback": "Optag uden flashback",
+    "Refresh": "Opdater",
+    "ResolutionUnknown": "Ukendt opløsning",
+    "SD": "SD",
+    "SelectScreen": "Vælg skærm",
+    "SelectSourceAbove": "Vælg en kilde ovenfor",
+    "SelectWindow": "Vælg vindue",
+    "SourceResolution": "Kildeopløsning",
+    "Title": "Videooptagelsesindstillinger",
     "VideoFlashbackArmedNotice": "Skærm-flashback aktiveret ({{seconds}}s)",
-    "FlashbackArmedNotice": "Du optager med {{seconds}}s flashback-buffer",
-    "CodecTooltip": {
-      "VP9": "Denne optagelse bruger VP9 til bedste kvalitet. Nogle standard videoplayere — såsom Windows Media Player og QuickTime på macOS — understøtter muligvis ikke dette format. For pålidelig afspilning, brug venligst en moderne browser (Chrome eller Edge) eller en kompatibel afspiller som VLC.",
-      "VP8": "Denne optagelse bruger VP8 til bedste kvalitet. Nogle standard videoplayere — såsom Windows Media Player og QuickTime på macOS — understøtter muligvis ikke dette format. For pålidelig afspilning, brug venligst en moderne browser (Chrome eller Edge) eller en kompatibel afspiller som VLC."
-    }
+    "VideoQuality": "Videokvalitet",
+    "ZeroSize": "~0 MB/min, ~0 GB/time"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Område valgt",
     "CustomRegion": "Tilpasset område: {{width}} × {{height}} pixels",
-    "ReselectRegion": "Vælg område igen",
-    "SelectCustomRegion": "Vælg tilpasset område",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Område valgt",
+    "ReselectRegion": "Vælg område igen",
+    "SelectCustomRegion": "Vælg tilpasset område"
   },
   "WindowPicker": {
-    "Title": "Vælg et vindue",
     "Instruction": "Vælg et vindue til vinduesoptagelser.",
-    "Refresh": "Opdater",
-    "Refreshing": "Opdaterer...",
     "Loading": "Indlæser vinduer...",
     "None": "Ingen vinduer fundet. Åbn et program og opdater.",
+    "Refresh": "Opdater",
+    "Refreshing": "Opdaterer...",
+    "Title": "Vælg et vindue",
     "Unknown": "Unavngivet vindue"
-  },
-  "Common": {
-    "Configure": "Konfigurer",
-    "Cancel": "Annuller",
-    "Apply": "Anvend",
-    "Close": "Luk",
-    "Open": "Åbn",
-    "Minimize": "Minimer til cirkel",
-    "Recording": "Optagelse",
-    "UnknownApp": "Ukendt app",
-    "Done": "Færdig",
-    "Save": "Gem",
-    "Saving": "Gemmer...",
-    "Delete": "Slet",
-    "Or": "Eller",
-    "Loading": "Indlæser...",
-    "Expand": "Udvid",
-    "PlannedFeature": "Planlagt funktion",
-    "Screen": "Skærm",
-    "Window": "Vindue",
-    "Region": "Område",
-    "AppTitle": "SeaMeet Skærm- og Lydoptager",
-    "AppSubtitle": "Optag enhedens input- og outputlyd",
-    "Screenshot": "Skærmbillede",
-    "Saved": "Gemt",
-    "Processing": "Behandler...",
-    "Starting": "Starter...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} kopieret til udklipsholder. Dobbeltklik for at ændre filnavn.",
-    "ApplyName": "Anvend navn",
-    "Send": "Sende"
-  },
-  "RecordingControls": {
-    "StartRecording": "Start optagelse",
-    "StopRecording": "Stop optagelse",
-    "ContinueRecording": "Fortsæt optagelse",
-    "Pause": "Pause",
-    "Resume": "Genoptag",
-    "Stop": "Stop",
-    "RecordingScreen": "Optager skærm...",
-    "RecordingAudio": "Optager lyd...",
-    "AudioRecording": "Lydoptagelse",
-    "VideoRecording": "Videooptagelse",
-    "RecordingPreview": "Optagelsesforhåndsvisning",
-    "RecordingMode": "Optagelsestilstand"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Lyd",
-    "RecordAudioTip": "Kun lyd",
-    "RecordWindow": "Vindue",
-    "RecordWindowTip": "Optag et enkelt app-vindue",
-    "RecordFullscreen": "Fuld skærm",
-    "RecordFullscreenTip": "Optag hele skærmen",
-    "RecordRegion": "Område",
-    "RecordRegionTip": "Optag et tilpasset område",
-    "CaptureMode": "Optagelsestilstand",
-    "FullScreen": "Fuld skærm",
-    "AreaCapture": "Områdeoptagelse"
-  },
-  "RecordingsList": {
-    "NoRecordings": "Ingen optagelser endnu. Start optagelse for at se dem her.",
-    "RecentRecordings": "Seneste optagelser",
-    "RecentCaptures": "Nylige skærmbilleder",
-    "RefreshRecordings": "Opdater",
-    "SearchRecordingsOrSnapshots": "Søg optagelser og skærmbilleder",
-    "SearchRecordingsPlaceholder": "Søg optagelser",
-    "ShowInFolder": "Vis i mappe",
-    "CopyFileName": "Kopiér filnavn",
-    "CopyFilePath": "Kopiér filsti",
-    "FileNameCopied": "{{fileName}} kopieret til udklipsholder",
-    "FilePathCopied": "Filsti kopieret til udklipsholder",
-    "SaveAs": "Gem som",
-    "OpenSaveFolder": "Åbn mappe",
-    "Title": "Optagelser",
-    "Recovered": "{{count}} optagelse(r) gendannet"
-  },
-  "FileImport": {
-    "ImportMedia": "Importér medier",
-    "DragDropFiles": "Træk og slip dine lyd-, video- og billedfiler her",
-    "DragDropSubtitle": "Træk og slip lyd-, video- og billedfiler her",
-    "BrowseFiles": "Gennemse filer",
-    "Supported": "Understøttet",
-    "SupportedFormats": "Understøttet: MP3, WAV, M4A, WebM, OGG, PNG, JPG og mere",
-    "VideoImportCopying": "Kopierer videofil...",
-    "VideoImportSaving": "Gemmer videofil...",
-    "VideoUnsupported": "Dette videoformat understøttes muligvis ikke i appen. Filen importeres alligevel."
-  },
-  "AudioControls": {
-    "AudioCapture": "Lydoptagelse",
-    "AudioMix": "Lyd-mix",
-    "AudioSessionsLog": "Log over lydsessioner",
-    "AudioSource": "Lydkilde:",
-    "InputDevice": "Input-enhed:",
-    "Microphone": "Mikrofon",
-    "MicrophoneLabel": "Mikrofon {{id}}",
-    "RecordingDefaultMicrophone": "Standardmikrofon",
-    "RecordingInputLabel": "Input: {{name}}",
-    "RecordingSettings": "Optagelsesindstillinger",
-    "RecordingType": "Optagelsestype:",
-    "RefreshMicrophoneList": "Opdater mikrofonliste",
-    "MicrophoneGainWarning": "Høj mikrofonforstærkning kan opfange lyd fra højttalerafspilning selv når \"Systemlyd\" er slået fra. Brug hovedtelefoner eller sænk mikrofonforstærkning ved mikrofonbaseret optagelse."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Start optagelse",
-    "Ready": "Klar?",
-    "BufferingMoment": "Indlæser øjeblik...",
-    "RecordWithFlashback": "Optag med Flashback",
-    "NeverMissAMoment": "Gå aldrig glip af et øjeblik.",
-    "ReadyToGuard": "Klar til at beskytte din {{type}}?",
-    "FillingBuffer": "Udfylder {{duration}}s flashback-buffer... {{progress}}%",
-    "ReadyToCapture": "SeaMeet er klar til at optage.",
-    "DescNone": "Optag din skærm, lyd eller tag et skærmbillede. Vælg en flashback-tilstand ovenfor for at aktivere øjebliks-lagring.",
-    "DescInit": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
-    "DescCharging": "Klargør dit {{duration}}-sekunders vindue... næsten klar til at fange det du måske går glip af. {{progress}}% færdigt.",
-    "DescReady": "Flashback er aktiveret. Hver gang du trykker Optag, inkluderes de sidste {{duration}} sekunder af {{type}} — beklag aldrig et gået øjeblik igen.",
-    "Screen": "skærm",
-    "Audio": "lyd",
-    "OpenLauncher": "Åbn Launcher",
-    "OpenFloater": "Åbn Floater",
-    "TakeScreenshot": "Tag skærmbillede",
-    "Buffering": "Indlæser",
-    "SavingFlashback": "Gemmer flashback...",
-    "SaveLastFlashback": "Gem de sidste {{duration}}s flashback",
-    "PrivacyProtected": "Dit privatliv er beskyttet.",
-    "PrivacyDesc": "SeaMeet tager øjebliksbilleder af de sidste {{duration}}s af {{type}} i en ring-buffer lokalt på din computers RAM.",
-    "FlashbackOff": "Flashback er i øjeblikket fra. Start en normal optagelse når som helst, eller vælg en flashback-tilstand (lyd eller skærm) ovenfor for at aktivere heroisk øjebliks-lagring.",
-    "FlashbackInitAudio": "Klar til at beskytte din lyd?",
-    "FlashbackInitScreen": "Klar til at beskytte din skærm?",
-    "FlashbackInitDescription": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
-    "FlashbackCharging": "Udfylder {{seconds}}s buffer... {{percent}}%",
-    "FlashbackChargingDescription": "Klargør dit {{seconds}}-sekunders vindue... {{percent}}% færdigt.",
-    "FlashbackReadyQuestion": "Klar?",
-    "FlashbackReady": "Gå aldrig glip af et øjeblik.",
-    "FlashbackReadyDescription": "Flashback er aktiveret. De sidste {{seconds}}s af {{type}} inkluderes når du optager.",
-    "FlashbackBuffering": "Indlæser...",
-    "SaveFlashback": "Gem de sidste {{seconds}}s flashback",
-    "FlashbackPrivacy": "Dit privatliv er beskyttet. Gemmes lokalt i RAM.",
-    "Capturing": "Optager...",
-    "CaptureMode": "Optagelsestilstand",
-    "FullScreen": "Fuld skærm",
-    "AreaCapture": "Områdeoptagelse",
-    "KeepWindowVisible": "Hold SeaMeet-vinduet synligt ved skærmbillede",
-    "FlashbackMismatch": "Flashback-tilstandskonflikt. Lydoptagelse men video-flashback er aktiv. Deaktiver venligst video-flashback."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Aktivér SeaMeet-transkription",
-    "SignInRequired": "Login påkrævet",
-    "ProcessingMode": "Behandlingstilstand",
-    "Realtime": "Realtid",
-    "RealtimeDescription": "Live transkription mens du optager",
-    "Diarized": "Diariseret",
-    "DiarizedDescription": "Upload lyd efter optagelse for taleridentifikation",
-    "ComingSoon": "(kommer snart)",
-    "TranscriptionLanguage": "Transkriptionssprog",
-    "TranslationLanguage": "Oversættelsessprog",
-    "NoTranslation": "Ingen oversættelse",
-    "LanguageHint": "Du kan ændre sproget under optagelse",
-    "LiveTranscription": "Live transkription",
-    "WaitingForSpeech": "Venter på tale...",
-    "UnknownSpeaker": "Taler",
-    "SegmentCount": "{{count}} segmenter",
-    "SegmentCount_plural": "{{count}} segmenter",
-    "ConnectionError": "Kunne ikke forbinde til SeaMeet",
-    "Reconnecting": "Genforbinder...",
-    "Connected": "Tilsluttet SeaMeet",
-    "Disconnected": "Frakoblet SeaMeet",
-    "NowSpeaking": "Taler nu...",
-    "Transcript": "Transkript",
-    "LoadingTranscript": "Indlæser transkript...",
-    "NoTranscript": "Ingen transkriptioner tilgængelige",
-    "FetchError": "Kunne ikke indlæse transkriptioner",
-    "Retry": "Prøv igen",
-    "Transcribed": "Transkriberet",
-    "Content": "SeaMeet-indhold",
-    "Tab": {
-      "transcription": "Transkription",
-      "summary": "Resumé",
-      "actionItems": "Handlingspunkter",
-      "notes": "Noter"
-    },
-    "Summary": "Resumé",
-    "NoSummary": "Resumé er endnu ikke tilgængeligt",
-    "ActionItems": "Handlingspunkter",
-    "NoActionItems": "Ingen handlingspunkter for dette møde",
-    "DueDate": "Forfald: {{date}}",
-    "Notes": "Noter",
-    "NoNotes": "Ingen noter for dette møde",
-    "LoadingContent": "Indlæser SeaMeet-indhold...",
-    "SeekToTime": "Klik for at afspille fra dette tidspunkt",
-    "CollapseNowSpeaking": "Skjul taler nu",
-    "ExpandNowSpeaking": "Udvid taler nu"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Flashback-bufferen er tom. Prøv igen om et øjeblik.",
-    "EnableFlashback": "Aktiver flashback for at gemme et øjeblik.",
-    "FailedToSave": "Kunne ikke gemme flashback-bufferen.",
-    "SavedFlashback": "Flashback gemt i Optagelser.",
-    "StillCharging": "Flashback-bufferen indlæser stadig."
-  },
-  "AISummary": {
-    "TabTitle": "AI oversigt",
-    "SetupRequired": "Konfigurer din Gemini API-nøgle i Indstillinger → AI-funktioner for at aktivere AI-oversigter.",
-    "EnableRequired": "Aktiver AI-funktioner i Indstillinger → AI-funktioner for at se AI-oversigter.",
-    "ExportMarkdown": "Kopiér som Markdown",
-    "ExportSrt": "Kopiér som SRT",
-    "ExportJson": "Kopiér som JSON",
-    "Regenerate": "Gendan oversigt",
-    "Minimize": "Minimer",
-    "Maximize": "Udvid til fuld visning",
-    "Queued": "I kø til behandling...",
-    "Processing": "Genererer oversigt...",
-    "Error": "Kunne ikke indlæse oversigt: {{error}}",
-    "PipelineError": "AI-behandling mislykkedes. Prøv at regenerere.",
-    "Retry": "Prøv igen",
-    "NoSummary": "Ingen AI-oversigt endnu.",
-    "Generate": "Generer oversigt",
-    "Copy": "Kopi",
-    "NoSummaryText": "Resumé er ikke tilgængelig.",
-    "Topics": "Emner:",
-    "NoTranscript": "Udskrift ikke tilgængelig.",
-    "NoActions": "Ingen handlingspunkter identificeret.",
-    "NoDecisions": "Ingen nøglebeslutninger identificeret.",
-    "Export": {
-      "HeadingSummary": "Oversigt",
-      "HeadingActionItems": "Handlingspunkter",
-      "HeadingKeyDecisions": "Nøglebeslutninger",
-      "HeadingTranscription": "Transskription"
-    },
-    "Tab": {
-      "Summary": "Oversigt",
-      "Transcription": "Afskrift",
-      "ActionItems": "Handlinger",
-      "KeyDecisions": "Beslutninger",
-      "Agent": "Agent"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "AI funktioner",
-    "MenuItem": "AI-drevne resuméer",
-    "PageTitle": "AI funktioner",
-    "EnableToggle": "Aktiver AI-drevne oversigter",
-    "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
-    "ApiKeySection": "Gemini API nøgle",
-    "ApiKeyLabel": "Gemini API nøgle",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (gemt)",
-    "ShowKey": "Vis nøgle",
-    "HideKey": "Skjul nøgle",
-    "TestKey": "Gem og bekræft",
-    "Saving": "Gemmer...",
-    "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
-    "ClearKey": "Fjern gemt nøgle",
-    "KeyVerified": "Nøgle bekræftet",
-    "KeyInvalid": "Ugyldig nøgle",
-    "KeyTesting": "Tester...",
-    "KeyNotConfigured": "Ingen nøgle konfigureret",
-    "ModelSection": "AI model",
-    "ModelLabel": "Gemini model",
-    "SelectedModel": "Valgt: {{model}}",
-    "AutomationSection": "Automatisering",
-    "AutoSummary": "Autogenerer oversigt",
-    "AutoSummaryDesc": "Kører efter hver optagelse er færdig",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Anbefalet · Hurtig + stand",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Billigste stabil mulighed",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Ultra-billig",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Maksimal kapacitet",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Bedste stabile ræsonnement"
-    },
-    "ClaudeKey": {
-      "Section": "Claude API-nøgle (agent)",
-      "SourceLabel": "Aktiv kilde:",
-      "SourceByok": "Din API-nøgle (BYOK)",
-      "SourceKeyServer": "Administreret af SeaMeet",
-      "SourceCli": "Claude Code CLI",
-      "SourceNone": "Ikke konfigureret",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••• (gemt)",
-      "ShowKey": "Vis nøgle",
-      "HideKey": "Skjul nøgle",
-      "TestKey": "Gem og bekræft",
-      "Saving": "Gemmer...",
-      "ClearKey": "Fjern gemt nøgle",
-      "KeyVerified": "Nøgle bekræftet",
-      "KeyInvalid": "Ugyldig nøgle",
-      "KeyTesting": "Tester...",
-      "KeyNotConfigured": "Ingen nøgle konfigureret",
-      "GetKeyLink": "Få en API-nøgle fra Anthropic Console →",
-      "QuotaSection": "Nøgleserverkvote",
-      "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
-      "QuotaResetDate": "Nulstiller på {{date}}",
-      "QuotaLoading": "Indlæser kvote...",
-      "QuotaRefresh": "Opdater kvote",
-      "CliSection": "Claude Code CLI",
-      "CliInstalled": "Installeret ({{version}})",
-      "CliNotInstalled": "Claude CLI ikke fundet",
-      "CliInstallLink": "Installer Claude Code →",
-      "ModelSection": "Standard Claude Model",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Hurtigt & billigt",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Anbefalet · Afbalanceret",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "Mest dygtige"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AI Agent & Cowork",
-    "PageTitle": "AI Agent & Cowork",
-    "SectionTitle": "AI Agent & Cowork",
-    "EnableToggle": "Aktiver AI Agent & Cowork",
-    "EnableToggleDesc": "Kræver en Claude API-nøgle",
-    "DisabledBadge": "Handicappet",
-    "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
-    "DisabledTabHint": "AI Agent er deaktiveret — aktiver den i Indstillinger → AI Agent & Cowork",
-    "NotConfiguredMsg": "Ingen Claude API-nøgle konfigureret. Konfigurer en i Indstillinger → AI Agent & Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "Resumé i kø...",
-    "Running": "Genererer oversigt...",
-    "Progress": "Behandler del {{current}} af {{total}}",
-    "Done": "Opsummering klar",
-    "Error": "Behandlingen mislykkedes"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Proces med AI",
-    "Queuing": "I kø...",
-    "ProcessingWithTime": "Behandler... {{sec}}s",
-    "Describe": "Beskriv billede",
-    "DescribeSub": "Hvad er der i dette skærmbillede?",
-    "Ocr": "Udtræk tekst (OCR)",
-    "OcrSub": "Læs al synlig tekst",
-    "Custom": "Brugerdefineret prompt",
-    "CustomPlaceholder": "Spørg noget om dette billede...",
-    "ResultLabel": "AI resultat",
-    "Description": "Beskrivelse",
-    "ExtractedText": "Udtrukket tekst",
-    "Analysis": "Analyse",
-    "PipelineError": "AI-behandling mislykkedes. Prøv venligst igen.",
-    "UnknownError": "Ukendt fejl"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Læser fil...",
-      "Executing": "Udfører...",
-      "Running": "Kører...",
-      "Input": "Input",
-      "Output": "Produktion",
-      "Pattern": "Mønster:",
-      "ShowDetails": "Vis detaljer",
-      "AndMoreLines": "... og {{count}} flere linjer"
-    },
-    "Streaming": {
-      "Thinking": "Tænker...",
-      "LongRunning": "Løber længere end normalt",
-      "ToolStuck": "Værktøjet kan sidde fast",
-      "ForceStop": "Tving stop",
-      "GeneratingResponse": "Genererer svar...",
-      "RunningTool": "Kører {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Anmodning om værktøjstilladelse",
-      "Allow": "Tillad én gang",
-      "AllowSession": "Tillad session",
-      "Deny": "Nægte",
-      "Allowed": "Tilladt",
-      "Denied": "Afvist"
-    },
-    "Title": "AI-agent",
-    "GlobalTitle": "AI-agent",
-    "NewSession": "Ny session",
-    "Sessions": "Sessioner",
-    "NoSessions": "Ingen sessioner endnu. Start en samtale nedenfor.",
-    "SendPlaceholder": "Spørg hvad som helst... (Enter for at sende, Shift+Enter for ny linje)",
-    "SendButton": "Sende",
-    "StopButton": "Stop",
-    "NotConfigured": "Konfigurer en Claude API-nøgle i Indstillinger → AI-funktioner for at bruge agenten.",
-    "GoToSettings": "Åbn Indstillinger",
-    "SessionCost": "Session: {inputTokens}_ ind /{outputTokens}_ ud tokens",
-    "CommandHelp": "Kommandoer: /ny · /ryd · /pris · /hjælp",
-    "Mode": {
-      "Ask": "Spørge",
-      "Code": "Kode",
-      "Plan": "Plan"
-    },
-    "Model": {
-      "Haiku": "Haiku",
-      "Sonnet": "Sonnet",
-      "Opus": "Opus"
-    },
-    "QuickAction": {
-      "Summarize": "Opsummer denne optagelse",
-      "ActionItems": "Find handlingspunkter",
-      "DraftEmail": "Udkast til opfølgningsmail"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "Hvad kan du hjælpe mig med?",
-      "HelpAnalyze": "Hjælp mig med at analysere mine seneste optagelser"
-    },
-    "AssetContext": "Kontekst: {{name}}"
   }
 }

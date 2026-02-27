@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "செயலி கடை கட்டமைப்பு",
     "DirectBuild": "நேரடி கட்டமைப்பு",
-    "SubtitleBadge": "Snap பதிவி மற்றும் முகவர்",
-    "Version": "v{{version}}",
+    "HelpTranslate": "SeaMeet → ஐ மொழிபெயர்க்க எங்களுக்கு உதவவும்",
     "Loading": "ஏற்றப்படுகிறது...",
-    "HelpTranslate": "SeaMeet → ஐ மொழிபெயர்க்க எங்களுக்கு உதவவும்"
+    "SubtitleBadge": "Snap பதிவி மற்றும் முகவர்",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "தொழில்நுட்பம்",
-    "Social": "சமூக",
-    "Gaming": "விளையாட்டு",
-    "Recording": "பதிவு",
-    "Browsers": "உலாவிகள்",
-    "BrowserBased": "உலாவி சார்ந்த"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "மற்றவை",
+      "Skip": "தவிர்க்கவும்",
+      "Submit": "சமர்ப்பிக்கவும்",
+      "Title": "கேள்வி",
+      "TypeResponse": "உங்கள் பதிலை உள்ளிடவும்..."
+    },
+    "AssetContext": "சூழல்: {{name}}",
+    "CommandHelp": "கட்டளைகள்: /புதிய · /தெளிவு · /செலவு · /உதவி",
+    "GlobalTitle": "AI முகவர்",
+    "GoToSettings": "அமைப்புகளைத் திறக்கவும்",
+    "Mode": {
+      "Ask": "கேள்",
+      "Code": "குறியீடு",
+      "Plan": "திட்டம்"
+    },
+    "Model": {
+      "Haiku": "ஹைக்கூ",
+      "Opus": "ஓபஸ்",
+      "Sonnet": "சொனட்"
+    },
+    "NewSession": "புதிய அமர்வு",
+    "NoSessions": "இன்னும் அமர்வுகள் இல்லை. கீழே உரையாடலைத் தொடங்கவும்.",
+    "NotConfigured": "முகவரைப் பயன்படுத்த, Claude API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
+    "Permission": {
+      "Allow": "ஒருமுறை அனுமதிக்கவும்",
+      "Allowed": "அனுமதிக்கப்பட்டது",
+      "AllowSession": "அமர்வுக்கு அனுமதி",
+      "Denied": "மறுக்கப்பட்டது",
+      "Deny": "மறுக்கவும்",
+      "Title": "கருவி அனுமதி கோரிக்கை"
+    },
+    "Plan": {
+      "Approve": "திட்டத்தை அங்கீகரிக்கவும்",
+      "DefaultFeedback": "பயனர் மாற்றங்களைக் கோரினார்",
+      "Description": "முகவர் மேலே ஒரு திட்டத்தைத் தயாரித்துள்ளார், மேலும் தொடர உங்கள் ஒப்புதல் தேவை.",
+      "FeedbackPlaceholder": "நீங்கள் விரும்பும் மாற்றங்களை விவரிக்கவும்...",
+      "PlanDetails": "திட்ட விவரங்கள்",
+      "RequestChanges": "மாற்றங்களைக் கோருங்கள்",
+      "RequestedPermissions": "கோரப்பட்ட அனுமதிகள்:",
+      "SendFeedback": "கருத்தை அனுப்பவும்",
+      "Title": "திட்ட மதிப்பாய்வு"
+    },
+    "QuickAction": {
+      "ActionItems": "செயல் உருப்படிகளைக் கண்டறியவும்",
+      "DraftEmail": "வரைவு பின்தொடர்தல் மின்னஞ்சல்",
+      "Summarize": "இந்தப் பதிவைச் சுருக்கவும்"
+    },
+    "SendButton": "அனுப்பு",
+    "SendPlaceholder": "எதையும் கேள்... (அனுப்புவதற்கு உள்ளிடவும், புதிய வரிக்கு Shift+Enter)",
+    "SessionCost": "அமர்வு: {{inputTokens}} இல் /{{outputTokens}} டோக்கன்கள்",
+    "Sessions": "அமர்வுகள்",
+    "StopButton": "நிறுத்து",
+    "Streaming": {
+      "ForceStop": "கட்டாயம் நிறுத்து",
+      "GeneratingResponse": "பதிலை உருவாக்குகிறது...",
+      "LongRunning": "வழக்கத்தை விட அதிக நேரம் ஓடுகிறது",
+      "RunningTool": "{{tool}} இயங்குகிறது...",
+      "Thinking": "நினைத்து...",
+      "ToolStuck": "கருவி சிக்கியிருக்கலாம்"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "எனது சமீபத்திய பதிவுகளை பகுப்பாய்வு செய்ய எனக்கு உதவுங்கள்",
+      "WhatCanYouDo": "நீங்கள் எனக்கு என்ன உதவி செய்யலாம்?"
+    },
+    "Title": "AI முகவர்",
+    "ToolCall": {
+      "AndMoreLines_one": "... மேலும் {{count}} வரிகள்",
+      "AndMoreLines_other": "... மேலும் {{count}} வரிகள்",
+      "Executing": "செயல்படுத்துகிறது...",
+      "Input": "உள்ளீடு",
+      "Output": "வெளியீடு",
+      "Pattern": "முறை:",
+      "Reading": "கோப்பைப் படிக்கிறது...",
+      "ShowDetails": "விவரங்களைக் காட்டு"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} செயல்கள்",
+      "Actions_other": "{{count}} செயல்கள்",
+      "Completed_one": "{{count}} முடிந்தது",
+      "Completed_other": "{{count}} முடிந்தது",
+      "Running_one": "{{count}} இயங்குகிறது",
+      "Running_other": "{{count}} இயங்குகிறது"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "முடக்கப்பட்டது",
+    "DisabledMsg": "AI முகவர் & சகப்பணி முடக்கப்பட்டுள்ளது. அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்.",
+    "DisabledTabHint": "AI முகவர் முடக்கப்பட்டுள்ளது - அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்",
+    "EnableToggle": "AI முகவர் & சகப்பணியை இயக்கவும்",
+    "EnableToggleDesc": "Claude API விசை தேவை",
+    "MenuItem": "AI முகவர் & சகப்பணி",
+    "PageTitle": "AI முகவர் & சகப்பணி",
+    "SectionTitle": "AI முகவர் & சகப்பணி"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "ஜெமினி API விசை",
+    "ApiKeySection": "ஜெமினி API விசை",
+    "AutomationSection": "ஆட்டோமேஷன்",
+    "AutoSummary": "தானாக உருவாக்கும் சுருக்கம்",
+    "AutoSummaryDesc": "ஒவ்வொரு பதிவு முடிந்ததும் இயங்கும்",
+    "ClaudeKey": {
+      "ClearKey": "சேமித்த விசையை அகற்று",
+      "CliInstalled": "நிறுவப்பட்டது ({{version}})",
+      "CliInstallLink": "கிளாட் குறியீட்டை நிறுவவும் →",
+      "CliNotInstalled": "கிளாட் CLI கிடைக்கவில்லை",
+      "CliSection": "கிளாட் குறியீடு CLI",
+      "GetKeyLink": "ஆந்த்ரோபிக் கன்சோலில் இருந்து API விசையைப் பெறவும் →",
+      "HideKey": "விசையை மறை",
+      "KeyInvalid": "தவறான விசை",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
+      "KeyTesting": "சோதனை...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "வேகமான & மலிவான",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "மிகவும் திறமையானவர்",
+      "ModelSection": "இயல்புநிலை கிளாட் மாதிரி",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "பரிந்துரைக்கப்படுகிறது · சமப்படுத்தப்பட்டது",
+      "QuotaLoading": "ஒதுக்கீட்டை ஏற்றுகிறது...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} டோக்கன்கள் மீதமுள்ளன",
+      "QuotaResetDate": "{{date}} இல் மீட்டமைக்கப்படுகிறது",
+      "Saving": "சேமிக்கிறது...",
+      "Section": "கிளாட் API விசை (முகவர்)",
+      "ShowKey": "விசையைக் காட்டு",
+      "SourceByok": "உங்கள் API விசை (BYOK)",
+      "SourceCli": "கிளாட் குறியீடு CLI",
+      "SourceKeyServer": "சீமீட்டால் நிர்வகிக்கப்படுகிறது",
+      "SourceLabel": "செயலில் உள்ள ஆதாரம்:",
+      "SourceNone": "கட்டமைக்கப்படவில்லை",
+      "TestKey": "சேமித்து சரிபார்க்கவும்"
+    },
+    "ClearKey": "சேமித்த விசையை அகற்று",
+    "EnableToggle": "AI-இயங்கும் சுருக்கங்களை இயக்கு",
+    "EnableToggleDesc": "இலவச ஜெமினி API விசை தேவை",
+    "GetKeyLink": "Google AI Studio → இலிருந்து இலவச API விசையைப் பெறுங்கள்",
+    "GroupTitle": "AI அம்சங்கள்",
+    "HideKey": "விசையை மறை",
+    "KeyInvalid": "தவறான விசை",
+    "KeyNotConfigured": "விசை எதுவும் கட்டமைக்கப்படவில்லை",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
+    "KeyTesting": "சோதனை...",
+    "KeyVerified": "விசை சரிபார்க்கப்பட்டது",
+    "ManagedKeyDesc": "உங்கள் API விசை தானாகவே வழங்கப்படுகிறது. கட்டமைப்பு தேவையில்லை.",
+    "ManagedKeyStatus": "நிர்வகிக்கப்படும் விசை - SeaMeet ஆல் வழங்கப்படுகிறது",
+    "MenuItem": "AI-இயக்கப்படும் சுருக்கங்கள்",
+    "ModelLabel": "ஜெமினி மாதிரி",
+    "Models": {
+      "Gemini25Flash": "ஜெமினி 2. ஃப்ளாஷ்",
+      "Gemini25FlashLite": "ஜெமினி 2.5 ஃப்ளாஷ் லைட்",
+      "Gemini25FlashLiteSub": "மிக மலிவானது",
+      "Gemini25FlashSub": "மலிவான நிலையான விருப்பம்",
+      "Gemini25Pro": "ஜெமினி 2.5 ப்ரோ",
+      "Gemini25ProSub": "சிறந்த நிலையான பகுத்தறிவு",
+      "Gemini3Flash": "ஜெமினி 3 ஃப்ளாஷ்",
+      "Gemini3FlashSub": "பரிந்துரைக்கப்படுகிறது · வேகமாக + திறன்",
+      "Gemini3Pro": "ஜெமினி 3 ப்ரோ",
+      "Gemini3ProSub": "அதிகபட்ச திறன்"
+    },
+    "ModelSection": "AI மாதிரி",
+    "PageTitle": "AI அம்சங்கள்",
+    "QuotaLoading": "ஒதுக்கீட்டை ஏற்றுகிறது...",
+    "QuotaRefresh": "ஒதுக்கீட்டைப் புதுப்பிக்கவும்",
+    "QuotaRemaining": "{{remaining}} / {{limit}} டோக்கன்கள் மீதமுள்ளன",
+    "QuotaResetDate": "{{date}} இல் மீட்டமைக்கப்படுகிறது",
+    "QuotaSection": "பயன்பாட்டு ஒதுக்கீடு",
+    "Saving": "சேமிக்கிறது...",
+    "SelectedModel": "தேர்ந்தெடுக்கப்பட்டது: {{model}}",
+    "ShowKey": "விசையைக் காட்டு",
+    "TestKey": "சேமித்து சரிபார்க்கவும்"
+  },
+  "AISummary": {
+    "Copy": "நகலெடுக்கவும்",
+    "EnableRequired": "AI சுருக்கங்களைப் பார்க்க, AI அம்சங்களை அமைப்புகள் → AI அம்சங்களில் இயக்கவும்.",
+    "Error": "சுருக்கத்தை ஏற்றுவதில் தோல்வி: {{error}}",
+    "Export": {
+      "HeadingActionItems": "செயல் பொருட்கள்",
+      "HeadingKeyDecisions": "முக்கிய முடிவுகள்",
+      "HeadingSummary": "சுருக்கம்",
+      "HeadingTranscription": "படியெடுத்தல்"
+    },
+    "ExportJson": "JSON ஆக நகலெடுக்கவும்",
+    "ExportMarkdown": "மார்க் டவுனாக நகலெடுக்கவும்",
+    "ExportSrt": "SRT ஆக நகலெடுக்கவும்",
+    "GeminiLiveTranscript": "ஜெமினி லைவ்",
+    "Generate": "சுருக்கத்தை உருவாக்கவும்",
+    "Maximize": "முழு பார்வைக்கு விரிவாக்கு",
+    "Minimize": "குறைக்கவும்",
+    "NoActions": "செயல் உருப்படிகள் எதுவும் அடையாளம் காணப்படவில்லை.",
+    "NoChapters": "அத்தியாயங்கள் எதுவும் கிடைக்கவில்லை.",
+    "NoDecisions": "முக்கிய முடிவுகள் எதுவும் அடையாளம் காணப்படவில்லை.",
+    "NoSummary": "இதுவரை AI சுருக்கம் இல்லை.",
+    "NoSummaryText": "சுருக்கம் கிடைக்கவில்லை.",
+    "NoTranscript": "டிரான்ஸ்கிரிப்ட் கிடைக்கவில்லை.",
+    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் உருவாக்க முயற்சிக்கவும்.",
+    "PipelineTranscript": "AI பைப்லைன்",
+    "Processing": "சுருக்கத்தை உருவாக்குகிறது...",
+    "Queued": "செயலாக்கத்திற்கு வரிசையில் உள்ளது...",
+    "Regenerate": "சுருக்கத்தை மீண்டும் உருவாக்கவும்",
+    "Retry": "மீண்டும் முயற்சிக்கவும்",
+    "SeekToTimestamp": "இந்த நேர முத்திரையைத் தேடுங்கள்",
+    "SetupRequired": "AI சுருக்கங்களை இயக்க, உங்கள் ஜெமினி API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
+    "Tab": {
+      "ActionItems": "செயல்கள்",
+      "Chapters": "அத்தியாயங்கள்",
+      "KeyDecisions": "முடிவுகள்",
+      "Summary": "சுருக்கம்",
+      "Transcription": "டிரான்ஸ்கிரிப்ட்"
+    },
+    "TabTitle": "AI சுருக்கம்",
+    "Topics": "தலைப்புகள்:",
+    "Speakers": "பேச்சாளர்கள்",
+    "MergeInto": "இணைத்தல்…",
+    "ApplyMerge": "பயன்படுத்து",
+    "EditSegmentSpeaker": "இந்த பிரிவை மீண்டும் ஒதுக்க கிளிக் செய்யவும்"
   },
   "App": {
     "FailedToEnableFlashback": "Flashback இயங்குவதில் தோல்வியாகியுள்ளது: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "அனைத்து பயன்பாடுகளும்",
-    "Teams": "Microsoft குழுமம்",
-    "TeamsConsumer": "தனிப்பட்ட Microsoft குழுமம்",
-    "TeamsWeb": "Microsoft குழுமம் (Web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Brave உலாவி",
+    "CallOfDuty": "கால் ஆஃப் டூட்டி",
     "Chrome": "Chrome உலாவி",
-    "Edge": "Edge உலாவி",
-    "Firefox": "Firefox உலாவி",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord (இணைய)",
+    "Edge": "Edge உலாவி",
+    "EpicGames": "Epic Games துவக்கி",
+    "Firefox": "Firefox உலாவி",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera பிரைவு பிரௌசர்",
+    "Other": "மற்ற பயன்பாடுகள்",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "சிக்னல்",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (இணைய)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (வலைக்காட்சி)",
-    "WindowsSoundRecorder": "Windows இசை பதிவு சாதனம்",
-    "Other": "மற்ற பயன்பாடுகள்",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "எக்ஸ்பாக்ஸ் கேம் பார்",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games துவக்கி",
-    "Signal": "சிக்னல்",
-    "Telegram": "Telegram",
     "SteamChat": "Steam சந்தா",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera பிரைவு பிரௌசர்",
-    "Brave": "Brave உலாவி",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "கால் ஆஃப் டூட்டி",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft குழுமம்",
+    "TeamsConsumer": "தனிப்பட்ட Microsoft குழுமம்",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft குழுமம் (Web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (வலைக்காட்சி)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows இசை பதிவு சாதனம்",
+    "XboxGameBar": "எக்ஸ்பாக்ஸ் கேம் பார்",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "ஆಡಿಯோ பிடித்து",
+    "AudioMix": "ஓலி கலப்பு",
+    "AudioSource": "அசையல் மூலம்:",
+    "Microphone": "மைக்ரோபோன்",
+    "MicrophoneGainWarning": "உயர்ந்த மைக்ரோபோன் gain பக்க விளைவாக speaker playஐ பிடிக்க வாய்ப்பு உள்ளது. ஹேட்ஃபோன்கள் பயன்படுத்தவும் அல்லது மைக்ரோபோன் gain-ஐ குறைக்கவும்.",
+    "RecordingDefaultMicrophone": "இயல்பான மைக்ரோபோன்",
+    "RecordingSettings": "பதிவுசெய்யும் அமைப்புகள்",
+    "RefreshMicrophoneList": "மைக்ரோபோன் பட்டியலை புதுப்பிக்கவும்"
   },
   "AutoDetectInfoModal": {
-    "Title": "Auto-Detect கூட்டங்கள்",
-    "Subtitle": "ஒரு சந்திப்பையும் தவறமுற விடாதீர்கள்",
-    "Description": "தானியங்கி செயற்பாட்டால், உங்கள் கூட்டங்களுக்குப் சேர்ந்ததும் பதிவு துவங்கும், எனவே பதிவு பிரேஸ் செய்ய தேவையில்லை.",
-    "PopularAppsTitle": "பரவலாக பயன்படும் செயலிகள் கண்டறியப்பட்டது",
-    "MoreApps": "+40 மேலும்",
-    "HowItWorksTitle": "இது எப்படி வேலை செய்கிறது",
-    "Step1Title": "தானியங்கி துவக்கம் இயற்ப்புமாறு செயற்படுத்து",
-    "Step1Desc": "பணிகளை இயக்கவும், கண்காணிக்க வேண்டிய செயலிகளை தெரிவு செய்க",
-    "Step2Title": "ஒரு சந்திப்பில் இணை",
-    "Step2Desc": "ஆதரவு தரும் Zoom, Teams, Meet அல்லது பிற செயலிகளைத் திறக்கவும்",
-    "Step3Title": "தானியங்கி பதிவு",
-    "Step3Desc": "SeaMeet தானாகவே பதிவு துவங்கியது. முடிந்தது!",
-    "Tip1Title": "ஆப்-அடிப்படையிலான அமைப்புக்கு",
-    "Tip1Desc": "\"எப்போதும் பதிவு\" அமைக்கவும், தனிப்பட்ட அழைப்புகளுக்கு \"எந்த நேரத்தையும் கேள்\" அல்லது \"ஒவ்வொரு முறை கேட்டுக்கள்\" என்று அமைக்கவும்",
-    "Tip2Title": "பல கண்டறிதல் முறைகள்",
-    "Tip2Desc": "துல்லியத்திற்கான மைக்ரோபோன் செயல்பாடு, சாளர தலைப்புகள் மற்றும் வலை ஊடக URL களை பயன்படுத்துகிறது",
-    "GotIt": "புரிந்துகொண்டேன்",
-    "OpenSettings": "அமைப்புகளைத் திறக்க",
     "ControlLabel": "தானாக கண்டறிதல்",
-    "LearnAbout": "Auto Detect பற்றி மேலும் அறிந்து கொள்ள"
+    "Description": "தானியங்கி செயற்பாட்டால், உங்கள் கூட்டங்களுக்குப் சேர்ந்ததும் பதிவு துவங்கும், எனவே பதிவு பிரேஸ் செய்ய தேவையில்லை.",
+    "GotIt": "புரிந்துகொண்டேன்",
+    "HowItWorksTitle": "இது எப்படி வேலை செய்கிறது",
+    "LearnAbout": "Auto Detect பற்றி மேலும் அறிந்து கொள்ள",
+    "MoreApps": "+40 மேலும்",
+    "OpenSettings": "அமைப்புகளைத் திறக்க",
+    "PopularAppsTitle": "பரவலாக பயன்படும் செயலிகள் கண்டறியப்பட்டது",
+    "Step1Desc": "பணிகளை இயக்கவும், கண்காணிக்க வேண்டிய செயலிகளை தெரிவு செய்க",
+    "Step1Title": "தானியங்கி துவக்கம் இயற்ப்புமாறு செயற்படுத்து",
+    "Step2Desc": "ஆதரவு தரும் Zoom, Teams, Meet அல்லது பிற செயலிகளைத் திறக்கவும்",
+    "Step2Title": "ஒரு சந்திப்பில் இணை",
+    "Step3Desc": "SeaMeet தானாகவே பதிவு துவங்கியது. முடிந்தது!",
+    "Step3Title": "தானியங்கி பதிவு",
+    "Subtitle": "ஒரு சந்திப்பையும் தவறமுற விடாதீர்கள்",
+    "Tip1Desc": "\"எப்போதும் பதிவு\" அமைக்கவும், தனிப்பட்ட அழைப்புகளுக்கு \"எந்த நேரத்தையும் கேள்\" அல்லது \"ஒவ்வொரு முறை கேட்டுக்கள்\" என்று அமைக்கவும்",
+    "Tip1Title": "ஆப்-அடிப்படையிலான அமைப்புக்கு",
+    "Tip2Desc": "துல்லியத்திற்கான மைக்ரோபோன் செயல்பாடு, சாளர தலைப்புகள் மற்றும் வலை ஊடக URL களை பயன்படுத்துகிறது",
+    "Tip2Title": "பல கண்டறிதல் முறைகள்",
+    "Title": "Auto-Detect கூட்டங்கள்"
   },
   "AutoRecording": {
-    "Title": "தானியங்கி கூட்டம் அடையாளம் காண்",
-    "DetectApps": "கண்டறியும் இடங்கள்:",
-    "Enabled": "தானாக கண்டறிதல் இயக்கு",
-    "Disabled": "தானாக கண்டறிதல் இயக்கு முடக்கப்பட்டது",
-    "MeetingDetected": "{{{app}}} கூட்டம் கண்டறியப்பட்டது!",
-    "MeetingEnded": "கூட்டம் முடிவடைந்தது",
-    "MeetingFallbackName": "கூட்டம்",
     "BugReport": "பிழை கண்டறிதலையா? seameet@seasalt.ai க்கு அறிக்கை செய்க",
     "BugReportTitle": "பிழை அறிக்கை",
+    "Disabled": "தானாக கண்டறிதல் இயக்கு முடக்கப்பட்டது",
+    "Enabled": "தானாக கண்டறிதல் இயக்கு",
     "HelpWanted": "புதிய பயன்பாட்டை சேர்க்க விருப்பமா? அல்லது நீங்கள் வேலைசெய்கிற பயன்பாட்டை சரிபார்த்திருந்தால், தயவுசெய்து seameet@seasalt.ai என்ற இ-மெய்லுக்கு எங்களிடம் தெரிவிக்கவும். இந்த பயன்பாட்டை சிறப்பாக்க உதவியதற்காக நன்றி!",
-    "HelpWantedTitle": "நமக்கு உதவி செய்யவும்"
+    "HelpWantedTitle": "நமக்கு உதவி செய்யவும்",
+    "MeetingDetected": "{{{app}}} கூட்டம் கண்டறியப்பட்டது!",
+    "MeetingEnded": "கூட்டம் முடிவடைந்தது",
+    "MeetingFallbackName": "கூட்டம்"
   },
   "BlackHole": {
-    "NotInstalled": "System Audioக்காக BlackHole தேவையாகும்",
-    "InstallInstructions": "macOSஇல் system audio பதிவுசெய்ய, BlackHole virtual audio driver ஐ நிறுவ வேண்டும்:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "கட்டளை நகலை நகலெடுக்கவும்",
-    "Or": "அல்லது",
-    "DownloadManually": "existential.audio இல் இருந்து தரவிறக்கம் செய்யவும்",
-    "SetupTitle": "பல-வெளி சாதனத்தை அமைக்கவும்",
-    "SetupStep1": "Audio MIDI Setup (Applications → Utilities) ஐ திறக்கவும்",
-    "SetupStep2": "'+' ஐ கிளிக் செய்து 'Create Multi-Output Device' ஐத் தேர்வு செய்யவும்",
-    "SetupStep3": "உங்கள் ஸ்பீக்கர்கள்/ஹெட்ஃபோன்கள் மற்றும் 'BlackHole 2ch' இரண்டையும் சரிபார்க்கவும்",
-    "SetupStep4": "பல-வெளியை Right-click செய்து 'Use This Device For Sound Output' ஐ தேர்வு செய்யவும்",
-    "SetupStep5": "BlackHole சாதன பட்டியலில் தெரியாமல் இருந்தால், மீண்டும் தொடங்கி பார்க்கவும்",
-    "SetupStep6": "இந்த பயன்பாட்டில் 'BlackHole 2ch' ஐ உங்கள் ஆடியோ மூலமாக தேர்வு செய்யவும்",
-    "CheckAgain": "மீண்டும் சரிபார்க்கவும்",
     "Cancel": "இரத்து செய்யவும்",
-    "LearnMore": "Multiple-Output சாதனங்கள் பற்றி மேலும் அறிவதற்கு"
+    "CheckAgain": "மீண்டும் சரிபார்க்கவும்",
+    "CopyCommand": "கட்டளை நகலை நகலெடுக்கவும்",
+    "DownloadManually": "existential.audio இல் இருந்து தரவிறக்கம் செய்யவும்",
+    "InstallInstructions": "macOSஇல் system audio பதிவுசெய்ய, BlackHole virtual audio driver ஐ நிறுவ வேண்டும்:",
+    "LearnMore": "Multiple-Output சாதனங்கள் பற்றி மேலும் அறிவதற்கு",
+    "NotInstalled": "System Audioக்காக BlackHole தேவையாகும்",
+    "Or": "அல்லது",
+    "SetupTitle": "பல-வெளி சாதனத்தை அமைக்கவும்"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Bluetooth மைக்ரோபோன் கண்டுபிடிக்கப்பட்டது",
-    "Description": "உங்கள் OS Bluetooth மைக்ரோபோன்களை பயன்படுத்தும் போது \"Communications Mode\" သို့ ပြောင်းလဲနိုင်သည်၊ ဤအရာကြောင့် ஒலி மறைவு அல்லது சத்த மாற்றங்கள் ஏற்படலாம்.",
-    "RecommendationLabel": "பரிந்துரைகள்:",
-    "Recommendation": "சிறந்த பதிவு தரத்திற்கு Bluetooth தவிர மற்றொரு மைக் (உதாரணம்: உங்கள் உட்பொதுத்த மைக் அல்லது USB மைக்) க்கு மாறவும்.",
+    "CloseAriaLabel": "Bluetooth எச்சரிக்கை மூடு",
     "CloseTitle": "எச்சரிக்கை ပိတ်မည်။",
-    "CloseAriaLabel": "Bluetooth எச்சரிக்கை மூடு"
+    "Description": "உங்கள் OS Bluetooth மைக்ரோபோன்களை பயன்படுத்தும் போது \"Communications Mode\" သို့ ပြောင်းလဲနိုင်သည်၊ ဤအရာကြောင့် ஒலி மறைவு அல்லது சத்த மாற்றங்கள் ஏற்படலாம்.",
+    "Recommendation": "சிறந்த பதிவு தரத்திற்கு Bluetooth தவிர மற்றொரு மைக் (உதாரணம்: உங்கள் உட்பொதுத்த மைக் அல்லது USB மைக்) க்கு மாறவும்.",
+    "RecommendationLabel": "பரிந்துரைகள்:",
+    "Title": "⚠️ Bluetooth மைக்ரோபோன் கண்டுபிடிக்கப்பட்டது"
+  },
+  "Common": {
+    "ApplyName": "பெயரைச் சேர்க்கவும்",
+    "Cancel": "ரத்து செய்",
+    "Close": "மூடு",
+    "Configure": "அமைக்கவும்",
+    "Delete": "நீக்கு",
+    "Done": "முடிந்தது",
+    "Expand": "விரிவாக்கு",
+    "FileNameCopiedWithRenameHint": "{{fileName}} காப்பியிடப்பட்டது. இரட்டு கிளிக் செய்து கோப்பு பெயரை மாற்றவும்.",
+    "Loading": "ஏற்றப்படுகிறது...",
+    "Minimize": "சிறியபடுத்தி நுழை",
+    "Open": "திற",
+    "Or": "அல்லது",
+    "Processing": "செயலாக்கம் நடைபெற்று வருகிறது…",
+    "Recording": "பதிவு",
+    "Save": "சேமி",
+    "Saved": "சேமிக்கப்பட்டது",
+    "Saving": "சேமித்து வருகிறது...",
+    "Screenshot": "படம் பிடி",
+    "Send": "அனுப்பு",
+    "Starting": "தொடங்குகிறது...",
+    "UnknownApp": "அறியப்படாத பயன்பாடு"
   },
   "DeletePrompt": {
-    "Title": "கோப்பை நீக்குக",
-    "Message": "நீங்கள் இந்த கோப்பை நீக்க விரும்புகிறீர்களா? இந்த செயல் மீள முடியாது.",
     "Cancel": "ரத்து செய்யவும்",
-    "Confirm": "நீக்குக"
+    "Confirm": "நீக்குக",
+    "Message": "நீங்கள் இந்த கோப்பை நீக்க விரும்புகிறீர்களா? இந்த செயல் மீள முடியாது.",
+    "Title": "கோப்பை நீக்குக"
   },
   "Errors": {
-    "NoAudioSources": "ஒலி மூலங்கள் கிடைக்கவில்லை",
-    "NoSystemAudioSources": "கணினி அல்லது இயந்திரத்தின் ஒலி மூலங்கள் இல்லை",
+    "AutoRecordingFailed": "தானியங்கி பதிவு மாற்றம் தோல்வி",
     "FailedToStartRecording": "பதிவை துவக்கமுடியவில்லை: {{message}}",
     "FailedToStartVideoRecording": "வீடியோ பதிவு துவக்கமிட முடியவில்லை: {{message}}",
-    "AutoRecordingFailed": "தானியங்கி பதிவு மாற்றம் தோல்வி"
+    "NoAudioSources": "ஒலி மூலங்கள் கிடைக்கவில்லை",
+    "NoSystemAudioSources": "கணினி அல்லது இயந்திரத்தின் ஒலி மூலங்கள் இல்லை",
+    "SaveFailed": "பதிவைச் சேமிக்க முடியவில்லை: {{message}}"
   },
   "Events": {
-    "Title": "நிகழ்வுகள்",
-    "MarkToolbarButton": "குறியிடப்பட்ட நிகழ்வுகள்",
+    "EmptyWhenNotRecording": "இந்த பதிவுக்கு எந்த நிகழ்வுகளும் இல்லை. \"Mark\" ஐ அழுத்தி சேர்க்கவும்.",
+    "EmptyWhileRecording": "இப்போது எந்த நிகழ்வும் இல்லை. பதிவு செய்வதற்கு \"Mark\" ஐ அழுத்தவும்.",
+    "EventLabel": "நிகழ்வு {{number}}",
     "MarkButton": "குறியிடு",
     "Marked": "குறியிடப்பட்டது!",
-    "EventLabel": "நிகழ்வு {{number}}",
-    "EmptyWhileRecording": "இப்போது எந்த நிகழ்வும் இல்லை. பதிவு செய்வதற்கு \"Mark\" ஐ அழுத்தவும்.",
-    "EmptyWhenNotRecording": "இந்த பதிவுக்கு எந்த நிகழ்வுகளும் இல்லை. \"Mark\" ஐ அழுத்தி சேர்க்கவும்.",
-    "DeletePrompt": {
-      "Title": "நிகழ்வை நீக்கு",
-      "Message": "ဤအဖြစ်အပျက်ကို မျှော်ဝါစွာဖျက်မည်လား? ပြုလုပ်ချက်သည် မပြန်လည် ပြင်ဆင်နိုင်ပါ။",
-      "Cancel": "ரத்து",
-      "Confirm": "நீக்கு"
-    }
+    "MarkToolbarButton": "குறியிடப்பட்ட நிகழ்வுகள்",
+    "Title": "நிகழ்வுகள்"
+  },
+  "FileImport": {
+    "BrowseFiles": "கோப்புகளை உலாவி",
+    "DragDropFiles": "உங்கள் ஒலி, வீடியோ மற்றும் படங்களை இங்கே இழுத்து விடவும்",
+    "DragDropSubtitle": "ஒலி, வீடியோ மற்றும் படங்களை இங்கே இடவும்",
+    "ImportMedia": "மீடியா இறக்கு",
+    "Supported": "ஆதரிக்கப்படுகிறது",
+    "SupportedFormats": "ஆதரிக்கப்படும்: MP3, WAV, M4A, WebM, OGG, PNG, JPG மற்றும் மேலும்",
+    "VideoImportCopying": "வீடியோ கோப்பை நகலெடுக்கிறது...",
+    "VideoImportSaving": "வீடியோ கோப்பை சேமிக்கிறது...",
+    "VideoUnsupported": "இந்த வீடியோ வடிவம் செயலியில் இயக்க முடியாமல் போகலாம். கோப்பு இன்னும் இறக்குமதி செய்யப்படும்."
   },
   "FlashbackControls": {
+    "AudioFlashback": "ஆடியோ ஃப்ளாஷ்பேக்",
+    "CannotChangeWhileRecording": "பதிவு செய்யும் போது ஃப்ளாஷ்பேக் பயன்முறையை மாற்ற முடியாது",
+    "DisableFlashback": "ஃப்ளாஷ்பேக்கை முடக்கு",
     "Label": "ஃப்ளாஷ்பேக்",
     "LearnAbout": "ஃப்ளாஷ்பேக் பற்றி அறிக",
-    "DisableFlashback": "ஃப்ளாஷ்பேக்கை முடக்கு",
-    "AudioFlashback": "ஆடியோ ஃப்ளாஷ்பேக்",
-    "ScreenFlashback": "திரை ஃப்ளாஷ்பேக்",
-    "TitleReady": "ஃப்ளாஷ்பேக் UIஐக் காட்ட கிளிக் செய்யவும்",
-    "TitleCharging": "ஃப்ளாஷ்பேக் சார்ஜிங்",
-    "TitleInit": "சார்ஜ் செய்யத் தொடங்க கிளிக் செய்யவும்",
+    "Off": "ஆஃப்",
     "Ready": "தயார்",
     "ReadyQuestion": "தயாரா?",
-    "Off": "ஆஃப்",
-    "CannotChangeWhileRecording": "பதிவு செய்யும் போது ஃப்ளாஷ்பேக் பயன்முறையை மாற்ற முடியாது",
-    "ToggleLabel": "ஃப்ளாஷ்பேக்கை நிலைமாற்று",
-    "SettingsLabel": "பிளாஷ்பேக் பதிவு"
+    "ScreenFlashback": "திரை ஃப்ளாஷ்பேக்",
+    "SettingsLabel": "பிளாஷ்பேக் பதிவு",
+    "TitleCharging": "ஃப்ளாஷ்பேக் சார்ஜிங்",
+    "TitleInit": "சார்ஜ் செய்யத் தொடங்க கிளிக் செய்யவும்",
+    "TitleReady": "ஃப்ளாஷ்பேக் UIஐக் காட்ட கிளிக் செய்யவும்",
+    "ToggleLabel": "ஃப்ளாஷ்பேக்கை நிலைமாற்று"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "ஆடியோ",
+    "Buffering": "பைபர் நிரப்பு",
+    "BufferingMoment": "நொடி படப்பிடிப்பு...",
+    "Capturing": "பிடித்து வருகிறது...",
+    "DescCharging": "உங்கள் {{duration}}-விநாடி வாள்தளத்தை தயாராக்கும்... மறக்க வேண்டிய தருணங்களை பிடிக்க தயாராக உள்ளது. {{progress}}% நிறைவு.",
+    "DescInit": "SeaMeet-ஐ 'பதிவு' துவக்கவும் என்று சொல்ல 'Ready?' என்பதை கிளிக் செய்யவும்.",
+    "DescNone": "உங்கள் திரைப் பிரதேசம், ஒலி அல்லது ஸ்க்ரீன்ஷாட் எடு. மேலே ஒரு flashback பயன்முறையை தேர்வு செய்து சிண்டையிடுங்கள்.",
+    "DescReady": "Flashback ஆயுதப்படுத்தப்பட்டு உள்ளது. நீங்கள் பதிவு शुरू করলে, கடந்த {{duration}} விநாடிகள் {{type}} இல் சேர்க்கப்படும் — தவறவிட்ட தருணங்களை மீண்டும் கவலைப்பட வேண்டாம்.",
+    "FillingBuffer": "{{duration}}-விநாடி Flashback பைபரை நிரப்பிவருகிறது... {{progress}}%.",
+    "FlashbackBuffering": "பைபர்...",
+    "FlashbackCharging": "{{seconds}} வினாடிகளின் பைபர் நிரப்பு... {{percent}}%",
+    "FlashbackChargingDescription": "உங்கள் {{seconds}}-விநாடி சாளரத்தை தயார் செய்து கொண்டிருக்கிறது... {{percent}}% முடிந்தது.",
+    "FlashbackInitAudio": "உங்கள் குரலை பாதுகாக்க தயாரா?",
+    "FlashbackInitDescription": "SeaMeet-ஐ 'பதிவு' துவக்கவனது என்பதை கூற 'Ready?' என்பதை கிளிக் செய்யவும்.",
+    "FlashbackInitScreen": "உங்கள் திரையை பாதுகாக்க தயாரா?",
+    "FlashbackMismatch": "பின்ந farmland இயங்கு மாறுபடுகிறது. குரல் பதிவும் செயல் படுத்தப்பட்டிருக்கையில் வீடியோ பின்ந farmland இயங்கு செயல் படுத்தப்பட்டுள்ளது. தயவுசெய்து வீடியோ பின்ந farmland-ஐ முடக்கவும்.",
+    "FlashbackOff": "பின்ந farmland தற்போது இயங்கி வழியில்லை. எந்த நேரத்திலும் சாதாரண பதிவைத் தொடங்கலாம் அல்லது மேலே பின்ந farmland இயங்கும் (குரல் அல்லது திரை) முறையை தேர்வு செய்து வீர இட வசதியைச் சேமிக்கவும்.",
+    "FlashbackPrivacy": "உங்கள் தனியுரிமை பாதுகாக்கப்படுகிறது. உள்ளீடு RAM-ல் உள்ளூர் சேமிக்கப்படுகிறது.",
+    "FlashbackReady": "நீங்களும் மறக்க முடியாது போகும் தருணங்களையும் தவற விட முடியாமல் கவனமாக இருங்கள்.",
+    "FlashbackReadyDescription": "பின்ந farmland நினைவு இயங்கியுள்ளது. நீங்கள் பதிவுக்கு {{seconds}} வினாடிகள் மற்றும் {{type}} உள்ளடக்கம் சேர்க்கப்படும்.",
+    "FlashbackReadyQuestion": "தயாரா?",
+    "KeepWindowVisible": "ஸ்கிரீன் சான்று எடுத்தபோது SeaMeet ஜ விண்டோவை காணத்தக்கதாக்கு",
+    "NeverMissAMoment": "ஒரு தருணத்தையும் தவறவிடவேண்டாம்.",
+    "OpenFloater": "புகுந்து திற",
+    "OpenLauncher": "லாஞ்சரை திற",
+    "PrivacyDesc": "SeaMeet சிவில் உள் கணினியின் RAM இல் உள்ள சுற்றுச்சுழற்சி பைபரில் கடந்த {{duration}} {{type}} வை ஸ்நாப்சுட் செய்கிறது.",
+    "PrivacyProtected": "உங்கள் தனிப்பட்ட தகவல் பாதுகாக்கப்பட்டது.",
+    "Ready": "தயார்?",
+    "ReadyToCapture": "SeaMeet பதிவு செய்ய தயாராக உள்ளது.",
+    "ReadyToGuard": "உங்கள் {{type}} பாதுகாப்பதற்கு தயார்?",
+    "RecordWithFlashback": "பதிவுடன் பின்ந farmland நினைவு",
+    "SaveFlashback": "கடைசிக் {{seconds}} வினாடிகள் பின்புல நினைவைக் சேமிக்கவும்",
+    "SaveLastFlashback": "கடைசிக் {{duration}} வினாடிகள் பின்புற நினைவைக் சேமிக்கவும்",
+    "SavingFlashback": "பின்னணி நினைவு சேமித்தல்…",
+    "Screen": "திரை",
+    "StartRecording": "பதிவு தொடங்கு",
+    "TakeScreenshot": "ஸ்கிரீனம் எடு"
   },
   "FlashbackIndicator": {
     "Buffering": "பைபர் ஏற்றப்பட்டுள்ளது",
@@ -183,138 +463,145 @@
     "VideoReady": "வீடியோ தயாராகியது"
   },
   "FlashbackInfoModal": {
-    "Title": "பின்பக்கம் நினைவுகள் பதிவு",
-    "Close": "மூடு",
-    "Subtitle": "உங்கள் தனிப்பட்ட நேரக்காட்சி இயந்திரம்",
-    "SubtitleDesc": "மற்றவரும் நடந்து முன்கே எடுத்துக்கொள்ளும் முக்கிய தருணங்களை தவற விடாதீர்கள்—படிந்தால் கூட 2 நிமிடங்கள் முன் வரை பிடிக்கலாம்.",
+    "Benefits": {
+      "AlwaysReady": "எப்போதும் தயார்",
+      "LocalOnly": "உள்ளூர் மட்டும் (முழு தனியுரிமை)",
+      "MultipleCaptures": "பல பிடிப்புகள் - தாங்கல் தொடர்ந்து இயங்கும்",
+      "NoPlan": "திட்டமிடல் தேவையில்லை",
+      "Offline": "ஆஃப்லைனில் வேலை செய்கிறது",
+      "Title": "முக்கிய நன்மைகள்"
+    },
     "BestFor": "சிறந்தது:",
-    "VisualStates": {
-      "Title": "மதிப்பீடு நிலைச் சின்னங்கள்",
-      "OffLabel": "நிறுத்தப்பட்டது",
-      "Off": "சாம்பல், நிலையான நடைகோடு",
-      "ChargingLabel": "சுறுசுறுப்பு",
-      "Charging": "அம்பர்/மஞ்சள், பைபர் நிரம்பிய நிலையில்",
-      "ReadyLabel": "தயார்",
-      "Ready": "பச்சை, பைபர் நிரம்பி உள்ளது"
-    },
-    "SpecLabel": {
-      "Buffer": "புலம்",
-      "Memory": "நினைவு",
-      "Captures": "பிடித்தல்கள்"
-    },
-    "Modes": {
-      "Title": "இரண்டு ஃப்ளாஷ்பேக் முறைகள்",
-      "Audio": {
-        "Title": "ஆடியோ ஃப்ளாஷ்பேக்",
-        "Buffer": "30 வினாடிகள் (நிலையானது)",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "மைக்ரோஃபோன் மற்றும்/அல்லது சிஸ்டம் ஆடியோ",
-        "BestFor": "கூட்டங்கள், தொலைபேசி அழைப்புகள், குரல் உரையாடல்களை பதிவு செய்தல்"
-      },
-      "Video": {
-        "Title": "வீடியோ பின்பிணைவு",
-        "Buffer": "10கள், 30கள், 60கள், 90கள் அல்லது 120கள்",
-        "Memory": "50-600 MB RAM",
-        "Captures": "திரை வீடியோ மற்றும் ஒலி",
-        "BestFor": "பேச்சுக்கள், விளையாட்டுத் தொகுப்புகள், திரை பகிர்வு அமர்வுகள், காட்சி உள்ளடக்கம்"
-      }
-    },
-    "HowItWorks": {
-      "Title": "எப்படி வேலை செய்கிறது",
-      "Step1": {
-        "Title": "பயனுள்ள பின்னணி நினைவகத்தை இயக்கவும்",
-        "Desc": "FLASHBACK பொத்தானை அழுத்தவும். பைபர் தானாகவே நிரப்பத் தொடங்கும்."
-      },
-      "Step2": {
-        "Title": "தயாராகும் வரை காத்திருக்கவும்",
-        "Desc": "பைபர் 90% ஆகும் வரை,படர்வு பூர்த்தி செய்யவும்."
-      },
-      "Step3": {
-        "Title": "பதிவுசெய்",
-        "Desc": "முக்கியமான நிகழ்வுகள் நடக்கும்போது, பதிவுசெய். Flashback பைபரை பிடித்து எதிர்கால பதிவை தொடரும்."
-      }
-    },
-    "Scenarios": {
-      "Title": "பயன்பாட்டு நிலைமை",
-      "OhNo": {
-        "Title": "\"அய்யோ!\" என்று தருணம்",
-        "Desc": "கூட்டாளி ஒரு ஆழமானதை கூறுகிறார். அதைக் கண்டறிய விரும்புகிறீர்கள். பதிவுசெய் → Flashback கடைசிக்க 30 seconds (அந்த தருணம் உடன்!) பைபரை பிடிக்கும்."
-      },
-      "Gaming": {
-        "Title": "கேமிங் கிளைப்",
-        "Desc": "ஒரு விசித்திர கம்போவைச் செய். உடனே பதிவுசெய். Flashback அந்த கேம்போ மற்றும் உங்கள் எதிர்ப்பு விந்துவை பிடிக்கிறது"
-      },
-      "Decision": {
-        "Title": "முக்கிய முடிவு",
-        "Desc": "வக்கீடு ஒப்பந்த புனிதத்தை விளக்குகிறார். விளக்கத்தை பிடிக்க பதிவுசெய். முழுமையாக, நம்பகமான பதிவை வைத்துக் கொண்டு பின்னர் சீரமைக்கவும்."
-      }
-    },
+    "Close": "மூடு",
     "Comparison": {
-      "Title": "Flashback மற்றும் பாரம்பரிய பதிவுசெய்தல் முறை",
+      "Capture": {
+        "Feature": "தருணங்களைப் பிடிக்கவும்",
+        "Flashback": "நொடிக்குப் பிறகு தொடங்கலாம்",
+        "Traditional": "மறந்தால் தொலைந்துவிட்டது"
+      },
       "Header": {
         "Feature": "விவரக்குறிப்பு",
-        "Traditional": "பாரம்பரிய பதிவு",
-        "Flashback": "Flashback பதிவு"
+        "Flashback": "Flashback பதிவு",
+        "Traditional": "பாரம்பரிய பதிவு"
       },
       "Planning": {
         "Feature": "திட்டமிடல்",
-        "Traditional": "கணத்திற்கு முன்பே தொடங்க வேண்டும்",
-        "Flashback": "யோசனைத் தேவை இல்லை"
-      },
-      "Capture": {
-        "Feature": "தருணங்களைப் பிடிக்கவும்",
-        "Traditional": "மறந்தால் தொலைந்துவிட்டது",
-        "Flashback": "நொடிக்குப் பிறகு தொடங்கலாம்"
+        "Flashback": "யோசனைத் தேவை இல்லை",
+        "Traditional": "கணத்திற்கு முன்பே தொடங்க வேண்டும்"
       },
       "Result": {
         "Feature": "முடிவு",
-        "Traditional": "நான் அதை பதிவு செய்யவேண்டும்",
-        "Flashback": "நான் அதை பிடித்துவேிருந்தேன்"
-      }
-    },
-    "Benefits": {
-      "Title": "முக்கிய நன்மைகள்",
-      "NoPlan": "திட்டமிடல் தேவையில்லை",
-      "AlwaysReady": "எப்போதும் தயார்",
-      "Offline": "ஆஃப்லைனில் வேலை செய்கிறது",
-      "LocalOnly": "உள்ளூர் மட்டும் (முழு தனியுரிமை)",
-      "MultipleCaptures": "பல பிடிப்புகள் - தாங்கல் தொடர்ந்து இயங்கும்"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "தினந்திருப்புப் பயன்பாட்டுக்கான ஒலி பின்னணி நினைவு",
-        "Desc": "கூட்டங்கள் மற்றும் அழைப்புகளுக்கான 30 விநாடி ஒலி பின்னணி நினைவை பயன்படுத்துக. குறைந்த நினைவக பயன்பாடு, நம்பகமாக செயல்படும்."
+        "Flashback": "நான் அதை பிடித்துவேிருந்தேன்",
+        "Traditional": "நான் அதை பதிவு செய்யவேண்டும்"
       },
-      "VideoSpecial": {
-        "Title": "சிறப்பு தருணங்களுக்கான வீடியோ பின்பிணைவு",
-        "Desc": "பயன்படுத்து Video Flashback (30s பைபர்) — விளக்கப்படங்கள், விளையாட்டு ஹைலைட்கள், அல்லது எந்தவொரு காட்சி உள்ளடக்கம் பாதுகாக்க விரும்பும் போது."
-      },
-      "Memory": {
-        "Title": "நினைவக மேலாண்மை",
-        "Desc": "2 நிமிட வீடியோ பின்னணி நினைவுடன்: முழுமையாக பயன்பாடு 1GB நினைவகத்துக்கு கீழே இயங்கும்."
-      }
+      "Title": "Flashback மற்றும் பாரம்பரிய பதிவுசெய்தல் முறை"
     },
     "GotIt": "கிடைத்தது",
-    "OpenSettings": "அமைப்புகள் திறக்கவும்"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "FLASHBACK பொத்தானை அழுத்தவும். பைபர் தானாகவே நிரப்பத் தொடங்கும்.",
+        "Title": "பயனுள்ள பின்னணி நினைவகத்தை இயக்கவும்"
+      },
+      "Step2": {
+        "Desc": "பைபர் 90% ஆகும் வரை,படர்வு பூர்த்தி செய்யவும்.",
+        "Title": "தயாராகும் வரை காத்திருக்கவும்"
+      },
+      "Step3": {
+        "Desc": "முக்கியமான நிகழ்வுகள் நடக்கும்போது, பதிவுசெய். Flashback பைபரை பிடித்து எதிர்கால பதிவை தொடரும்.",
+        "Title": "பதிவுசெய்"
+      },
+      "Title": "எப்படி வேலை செய்கிறது"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "கூட்டங்கள், தொலைபேசி அழைப்புகள், குரல் உரையாடல்களை பதிவு செய்தல்",
+        "Buffer": "30 வினாடிகள் (நிலையானது)",
+        "Captures": "மைக்ரோஃபோன் மற்றும்/அல்லது சிஸ்டம் ஆடியோ",
+        "Memory": "~30-50 MB RAM",
+        "Title": "ஆடியோ ஃப்ளாஷ்பேக்"
+      },
+      "Title": "இரண்டு ஃப்ளாஷ்பேக் முறைகள்",
+      "Video": {
+        "BestFor": "பேச்சுக்கள், விளையாட்டுத் தொகுப்புகள், திரை பகிர்வு அமர்வுகள், காட்சி உள்ளடக்கம்",
+        "Buffer": "10கள், 30கள், 60கள், 90கள் அல்லது 120கள்",
+        "Captures": "திரை வீடியோ மற்றும் ஒலி",
+        "Memory": "50-600 MB RAM",
+        "Title": "வீடியோ பின்பிணைவு"
+      }
+    },
+    "OpenSettings": "அமைப்புகள் திறக்கவும்",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "வக்கீடு ஒப்பந்த புனிதத்தை விளக்குகிறார். விளக்கத்தை பிடிக்க பதிவுசெய். முழுமையாக, நம்பகமான பதிவை வைத்துக் கொண்டு பின்னர் சீரமைக்கவும்.",
+        "Title": "முக்கிய முடிவு"
+      },
+      "Gaming": {
+        "Desc": "ஒரு விசித்திர கம்போவைச் செய். உடனே பதிவுசெய். Flashback அந்த கேம்போ மற்றும் உங்கள் எதிர்ப்பு விந்துவை பிடிக்கிறது",
+        "Title": "கேமிங் கிளைப்"
+      },
+      "OhNo": {
+        "Desc": "கூட்டாளி ஒரு ஆழமானதை கூறுகிறார். அதைக் கண்டறிய விரும்புகிறீர்கள். பதிவுசெய் → Flashback கடைசிக்க 30 seconds (அந்த தருணம் உடன்!) பைபரை பிடிக்கும்.",
+        "Title": "\"அய்யோ!\" என்று தருணம்"
+      },
+      "Title": "பயன்பாட்டு நிலைமை"
+    },
+    "SpecLabel": {
+      "Buffer": "புலம்",
+      "Captures": "பிடித்தல்கள்",
+      "Memory": "நினைவு"
+    },
+    "Subtitle": "உங்கள் தனிப்பட்ட நேரக்காட்சி இயந்திரம்",
+    "SubtitleDesc": "மற்றவரும் நடந்து முன்கே எடுத்துக்கொள்ளும் முக்கிய தருணங்களை தவற விடாதீர்கள்—படிந்தால் கூட 2 நிமிடங்கள் முன் வரை பிடிக்கலாம்.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "கூட்டங்கள் மற்றும் அழைப்புகளுக்கான 30 விநாடி ஒலி பின்னணி நினைவை பயன்படுத்துக. குறைந்த நினைவக பயன்பாடு, நம்பகமாக செயல்படும்.",
+        "Title": "தினந்திருப்புப் பயன்பாட்டுக்கான ஒலி பின்னணி நினைவு"
+      },
+      "Memory": {
+        "Desc": "2 நிமிட வீடியோ பின்னணி நினைவுடன்: முழுமையாக பயன்பாடு 1GB நினைவகத்துக்கு கீழே இயங்கும்.",
+        "Title": "நினைவக மேலாண்மை"
+      },
+      "VideoSpecial": {
+        "Desc": "பயன்படுத்து Video Flashback (30s பைபர்) — விளக்கப்படங்கள், விளையாட்டு ஹைலைட்கள், அல்லது எந்தவொரு காட்சி உள்ளடக்கம் பாதுகாக்க விரும்பும் போது.",
+        "Title": "சிறப்பு தருணங்களுக்கான வீடியோ பின்பிணைவு"
+      }
+    },
+    "Title": "பின்பக்கம் நினைவுகள் பதிவு",
+    "VisualStates": {
+      "Charging": "அம்பர்/மஞ்சள், பைபர் நிரம்பிய நிலையில்",
+      "ChargingLabel": "சுறுசுறுப்பு",
+      "Off": "சாம்பல், நிலையான நடைகோடு",
+      "OffLabel": "நிறுத்தப்பட்டது",
+      "Ready": "பச்சை, பைபர் நிரம்பி உள்ளது",
+      "ReadyLabel": "தயார்",
+      "Title": "மதிப்பீடு நிலைச் சின்னங்கள்"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "துவக்கம்",
-    "AutoStartLabel": "தானியங்கி துவக்கம்",
+    "AutoStartAudio": "ஒலி பின்னணி நினைவு",
     "AutoStartDesc": "பயன்படும் போது பின்னணி நினைவு ஆரம்பிக்கவும்",
     "AutoStartDisable": "தானியங்கி துவக்கம் அணைக்கவும்",
-    "AutoStartAudio": "ஒலி பின்னணி நினைவு",
+    "AutoStartLabel": "தானியங்கி துவக்கம்",
     "AutoStartScreen": "ஸ்க्रीनின் பின்னணி நினைவு",
-    "BufferTitle": "பைபர்",
-    "BufferDurationLabel": "பைபர் காலம்",
     "BufferDurationDesc": "கேட்கும் / வீடியோ பைபர் எவ்வளவு நேரம் பைபருக்கு வைக்க வேண்டும்",
-    "DurationOption": "{{duration}} வினாடிகள்"
+    "BufferDurationLabel": "பைபர் காலம்",
+    "BufferTitle": "பைபர்",
+    "DurationOption": "{{duration}} வினாடிகள்",
+    "StartupTitle": "துவக்கம்"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Flashback பைபர் காலியாக உள்ளது. சில நிமிடங்களில் மீண்டும் முயற்சிக்கவும்.",
+    "EnableFlashback": "ஒரு தருணத்தை சேமிக்கும் வகையில் flashback ஐ இயங்கச் செய்கிறது.",
+    "FailedToSave": "flashback பைபர் சேமிக்க இயலவில்லை.",
+    "SavedFlashback": "சேமிக்கப்பட்ட flashback-ஐ பதிவுகளில் சேமிக்கவும்.",
+    "StillCharging": "Flashback பைபர் இன்னும் சார்ஜ் செய்கிறது."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "கருவி விளக்கத்தை மூடு",
-    "BluetoothMicTitle": "⚠️ புளூடூத் மைக்ரோஃபோன்",
     "BluetoothMicDesc": "உங்கள் OS \"கம்யூனிகேஷன் மொட்டு\" ஐ தள்ளக்கூடும், இது குழப்பம் உண்டாக்கலாம்.",
     "BluetoothMicTipLabel": "குறிப்பு:",
     "BluetoothMicTipText": "சிறந்த தரத்திற்கு புளூடூத் அல்லாத மைக்ரோஃபோனைப் பயன்படுத்தவும்.",
+    "BluetoothMicTitle": "⚠️ புளூடூத் மைக்ரோஃபோன்",
+    "CloseTooltip": "கருவி விளக்கத்தை மூடு",
     "FailedToLoadScreens": "திரைகள் ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
     "FailedToLoadWindows": "விண்டோவ்ஸ் ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
     "MicrophoneMuted": "மைக்ரோபோன்: மியூட்",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "மைக்ரோபோன்கள் கண்டுபிடிக்கப்படவில்லை",
     "NoScreensDetected": "திரைகள் கண்டுபிடிக்கப்படவில்லை.",
     "NoWindowsDetected": "எந்த செயலி ஜிட்வின்டோவும் கண்டுபிடிக்கப்படவில்லை. ஒரு செயலி ஜிட்வின்டோவை திறக்கவும், புதுப்பிக்கவும்.",
+    "RegionReady": "பகுதி தயாராக உள்ளது",
+    "RegionRequired": "பகுதி தேர்வு செய்யவும்",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "இந்த தளத்தில் திரைத் தேர்வு கிடைக்காது.",
     "SelectMicrophone": "மைக்ரோபோனியை தேர்வு செய்யவும்",
+    "SelectRegion": "ஒரு பகுதியை தேர்வு செய்யவும்",
+    "SelectScreen": "ஒரு display ஐ தேர்வு செய்யவும்",
+    "SelectWindow": "ஒரு விண்டோவை தேர்வு செய்யவும்",
     "StartRecording": "பதிவைத் தொடங்கவும்",
     "SystemAudioOff": "சிஸ்டம் ஒலி: ஆஃப்",
     "SystemAudioOn": "சிஸ்டம் ஒலி: ஆன்",
     "WaitingForRegion": "பிரேமைக்கு காத்திருக்கிறது…",
     "WindowNotAvailable": "இந்த தளத்தில் விண்டோ தேர்வு கிடைக்காது.",
-    "SelectScreen": "ஒரு display ஐ தேர்வு செய்யவும்",
-    "SelectWindow": "ஒரு விண்டோவை தேர்வு செய்யவும்",
-    "WindowRequired": "பதிவைத் தொடங்குவதற்கு முன் செயலி ஜிட்வின்டோவை தேர்ந்தெடுக்கவும்",
-    "RegionReady": "பகுதி தயாராக உள்ளது",
-    "SelectRegion": "ஒரு பகுதியை தேர்வு செய்யவும்",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "பகுதி தேர்வு செய்யவும்"
+    "WindowRequired": "பதிவைத் தொடங்குவதற்கு முன் செயலி ஜிட்வின்டோவை தேர்ந்தெடுக்கவும்"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "பரந்த திரை தேர்வு செய்யப்பட்டது",
-    "ClickToRecord": "தேர்ந்தபகுதியை பதிவு செய்ய, பிளவுன் பட்டியில் 'பதிவைத் தொடக்கம்' என்பதை கிளிக் செய்க"
+    "ClickToRecord": "தேர்ந்தபகுதியை பதிவு செய்ய, பிளவுன் பட்டியில் 'பதிவைத் தொடக்கம்' என்பதை கிளிக் செய்க",
+    "FullscreenSelected": "பரந்த திரை தேர்வு செய்யப்பட்டது"
+  },
+  "GeminiLive": {
+    "AITranscription": "AI டிரான்ஸ்கிரிப்ஷன்",
+    "CollapseNowSpeaking": "சுருக்கு",
+    "EnableDescription": "ரெக்கார்டிங்கின் போது ஜெமினியால் இயக்கப்படும் நிகழ்நேர டிரான்ஸ்கிரிப்ஷன்",
+    "EnableIntegration": "நேரடி AI டிரான்ஸ்கிரிப்ஷனை இயக்கு",
+    "Error": "பிழை",
+    "ExpandNowSpeaking": "விரிவாக்கு",
+    "NowSpeaking": "இப்போது பேசுவது...",
+    "SegmentCount_one": "{{count}} பிரிவுகள்",
+    "SegmentCount_other": "{{count}} பிரிவுகள்",
+    "WaitingForConnection": "இணைக்கிறது...",
+    "WaitingForSpeech": "பேச்சுக்காக காத்திருக்கிறேன்..."
   },
   "IdleCompactView": {
     "ArmFlashback": "பின்பின்னல் நினைவகத்தை அணுகு",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  இமெய்லை நகலெடு",
     "EmailCopied": "✅  இமெய்லை கிளிப்போர்டுக்கு நகலெற்றது"
   },
-  "JumpList": {
-    "RecordAudio": "ஆடியோ பதிவு",
-    "RecordAudioDesc": "ஆடியோ பதிவைத் தொடங்கு (கலவலை)",
-    "RecordFullscreen": "முழு திரை வீடியோக்களை பதிவு செய்",
-    "RecordFullscreenDesc": "முழு திரை பதிவைத் தொடங்கு",
-    "RecordRegion": "பதிவு செய்ய பிரதேசத்தைத் தேர்வு செய்",
-    "RecordRegionDesc": "பதிவு செய்ய ஒரு திரை பிரதேசத்தை தேர்வு செய்",
-    "TakeScreenshot": "திரை படம் எடு",
-    "TakeScreenshotDesc": "திரையின் ஒரு பகுதியை பிடி",
-    "OpenRecordingsFolder": "பதிவுகளின் கோப்புறை திற",
-    "OpenRecordingsFolderDesc": "இயல்பான பதிவுகள் கோப்புறையை திற"
-  },
   "MeetingPrompt": {
-    "StartTitle": "கூட்டம் கண்டறியப்பட்டது",
-    "StartMessage": "நீங்கள் {{appName}} இல் கூட்டம் நடத்துகிறீரா? நான் இப்போது கூட்டத்தை எழுத முடிவுக்குக் கொண்டு வர வேண்டுமா?",
     "BrowserHint": "💡 குறிப்பு: புரவலர் கூட்டங்கள் (Google Meet, Zoom, Teams) ஆகியவற்றுக்கு, நான் பிரத்தியேக இணையதளத்தைத் தெரியாது; நான் புரவலரை மட்டும் அடையாளப்படுத்த முடியும்.",
-    "RememberChoice": "எனது தேர்வு நினைவில் வைத்துக்கொள்ளவும் மேலும் prompt செய்யவேண்டாம்",
-    "Yes": "பதிவு தொடங்கு",
-    "No": "ரத்துசெய்",
-    "EndTitle": "கூட்டம் முடிந்தது",
-    "EndMessage": "நான் {{appName}} இல் கூட்டம் தற்போது முடிந்ததை கண்டறிந்தேன். நீங்கள் பதிவை நிறுத்த விரும்புகிறீர்களா?",
     "ContinueRecording": "தொடர்ச்சி பதிவு",
+    "EndMessage": "நான் {{appName}} இல் கூட்டம் தற்போது முடிந்ததை கண்டறிந்தேன். நீங்கள் பதிவை நிறுத்த விரும்புகிறீர்களா?",
+    "EndTitle": "கூட்டம் முடிந்தது",
+    "No": "ரத்துசெய்",
     "Pause": "இடைநிறுத்து",
-    "Resume": "மீண்டும் தொடக்கம்",
-    "Stop": "நிறுத்து",
+    "PlayRecording": "கிளிக் செய்து கேளுங்கள்",
     "RecordingSaved": "பதிவு சேமிக்கப்பட்டது",
     "RecordingSavedWithFilename": "{{fileName}} பாதுகாக்கப்பட்டது",
+    "RememberChoice": "எனது தேர்வு நினைவில் வைத்துக்கொள்ளவும் மேலும் prompt செய்யவேண்டாம்",
     "RenameFile": "புதிய பெயர்",
     "ShowInFolder": "கோப்புறையில் காட்டு",
-    "PlayRecording": "கிளிக் செய்து கேளுங்கள்",
+    "StartMessage": "நீங்கள் {{appName}} இல் கூட்டம் நடத்துகிறீரா? நான் இப்போது கூட்டத்தை எழுத முடிவுக்குக் கொண்டு வர வேண்டுமா?",
+    "StartTitle": "கூட்டம் கண்டறியப்பட்டது",
     "StopRecording": "பதிவு நிறுத்து",
-    "Saving": "செயலாக்கப்படுகிறது"
+    "Yes": "பதிவு தொடங்கு"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "நடவடிக்கை பொருட்கள்",
+    "CollapseNowSpeaking": "தற்போது பேசும் பகுதியை ஒதுக்குக",
+    "ConnectionError": "SeaMeet-க்கு இணைய முடியவில்லை",
+    "Content": "SeaMeet உள்ளடக்கம்",
+    "DueDate": "கடைசி தேதி: {{date}}",
+    "EnableIntegration": "SeaMeet உரையாடலை இயற்ப்புமாறு செயற்படுத்து",
+    "ExpandNowSpeaking": "தற்போது பேசும் பகுதியை விரிவாக்கு",
+    "FetchError": "பார்வைமுறையை ஏற்றுவதில் தவறு",
+    "LanguageHint": "பதிவுசெய்யும் போது நீங்கள் மொழியை மாற்றலாம்",
+    "LiveTranscription": "நேரடி பார்வைமுறை",
+    "LoadingContent": "SeaMeet உள்ளடக்கம் ஏற்றப்படுகிறது...",
+    "LoadingTranscript": "ஒளிபரப்பை ஏற்றிக் கொள்ளப்படுகிறது...",
+    "NoActionItems": "இந்த கூட்டத்திற்கான நடவடிக்கைகள் இல்லை",
+    "NoNotes": "இந்த கூடுதலுக்கு குறிப்புகள் எதுவும் இல்லை",
+    "NoSummary": "சுருக்கம் இன்னும் கிடைக்கவில்லை.",
+    "Notes": "குறிப்பு",
+    "NoTranscript": "பார்வைமுறை இல்லை",
+    "NoTranslation": "Translation இல்லை",
+    "NowSpeaking": "இப்போது பேசுகின்றனர்...",
+    "Retry": "மீள முயற்சி செய்க",
+    "SeekToTime": "இந்த நேரத்திலிருந்து play செய்ய கிளிக் செய்க",
+    "SegmentCount_one": "{{count}} பிரிவுகள்",
+    "SegmentCount_other": "{{count}} பிரிவுகள்",
+    "SignInRequired": "உள்நுழைய வேண்டும்",
+    "Summary": "சுருக்கம்",
+    "Transcribed": "தமிழில் தொகுக்கப்பட்டது",
+    "Transcript": "ஒளிபரப்பைத் தமிழில் மாற்றியது",
+    "TranscriptionLanguage": "பார்வைமுறை மொழி",
+    "TranslationLanguage": "மொழி",
+    "UnknownSpeaker": "பேச்சாளர்",
+    "WaitingForSpeech": "பேசுவதற்காக காத்திருக்கின்றது..."
   },
   "MinimizedView": {
     "ActionRequired": "பணிபெருக்கும் பணி தேவை (Auto-Record)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "திரை பரவல் சார்ஜ் செய்து வருகிறது...",
     "ScreenRecording": "स्क्रीन பதிவு ({{time}})"
   },
+  "Pause": "இடைநிறுத்தம்",
   "Permissions": {
-    "AutoRecordNextTime": "நீங்கள் அடுத்த முறையாக இந்த பயன்பாட்டை தானாக பதிவு செய்ய விரும்புகிறீர்களா?",
     "AlwaysAutoRecord": "எப்போதும் தானாக பதிவு செய்யும்",
-    "NeverRecord": "பதிவு செய்யாதே",
     "AskEveryTime": "ஒவ்வொரு முறையும் கேளுங்கள்",
-    "AutoRecordStarted": "தானாக பதிவு தொடங்கியது",
+    "AutoRecordNextTime": "நீங்கள் அடுத்த முறையாக இந்த பயன்பாட்டை தானாக பதிவு செய்ய விரும்புகிறீர்களா?",
     "AutoRecordReason": "{{app}} எப்போதும் தானாக பதிவு செய்யும் அமைப்பில் உள்ளது. Setting -> Auto Record இல் பயன்பாட்டின் அனுமதியை மாற்றுக.",
-    "ChangeInSettings": "அமைப்புகளில் மாற்றம்",
-    "GuidanceTitle": "பயன்பாட்டின் அனுமதி வகைகள்",
+    "AutoRecordStarted": "தானாக பதிவு தொடங்கியது",
+    "AutoStartAudioRule": "இயல்பான பதிவு முறை ஆடியோ என்றால், SeaMeet கேட்காமல் தானாக பதிவு தொடங்கும்",
+    "AutoStartFallbackRule": "மற்ற அனைத்து நிலைகளிலும், SeaMeet பதிவு முறையை தெரிவிக்கும் சாளரத்தை காட்டும், நீங்கள் அதைத் தேர்வு செய்யலாம்.",
+    "AutoStartFullscreenRule": "இயல்பான பதிவு முறை முழுத் திரை பதிவாக இருந்தால், மற்றும் ஒரு திரை மட்டுமே இணைக்கப்பட்டிருந்தால், SeaMeet தானாகப் பதிவு தொடங்கும்.",
+    "AutoStartHeuristicsTitle": "Auto-start நடத்தைகள் (தானாக பதிவு செய்யும்)",
     "GuidanceAlways": ": SeaMeet கேட்காமல் தன்னிச்சையாக பதிவு செய்யும்",
     "GuidanceAsk": ": SeaMeet உங்கள் அனுமதி கேட்கும், ஒவ்வொரு முறையும் கேட்கும்",
     "GuidanceNever": ": SeaMeet பதிவு செய்யும் விண்ணப்பத்தை காட்டாது",
-    "AutoStartHeuristicsTitle": "Auto-start நடத்தைகள் (தானாக பதிவு செய்யும்)",
-    "AutoStartAudioRule": "இயல்பான பதிவு முறை ஆடியோ என்றால், SeaMeet கேட்காமல் தானாக பதிவு தொடங்கும்",
-    "AutoStartFullscreenRule": "இயல்பான பதிவு முறை முழுத் திரை பதிவாக இருந்தால், மற்றும் ஒரு திரை மட்டுமே இணைக்கப்பட்டிருந்தால், SeaMeet தானாகப் பதிவு தொடங்கும்.",
-    "AutoStartFallbackRule": "மற்ற அனைத்து நிலைகளிலும், SeaMeet பதிவு முறையை தெரிவிக்கும் சாளரத்தை காட்டும், நீங்கள் அதைத் தேர்வு செய்யலாம்."
+    "GuidanceTitle": "பயன்பாட்டின் அனுமதி வகைகள்",
+    "NeverRecord": "பதிவு செய்யாதே"
+  },
+  "PipelineStatus": {
+    "Done": "சுருக்கம் தயார்",
+    "Error": "செயலாக்கம் தோல்வியடைந்தது",
+    "Progress": "{{total}} இல் {{current}} பகுதியை செயலாக்குகிறது",
+    "Queued": "சுருக்கம் வரிசையில் உள்ளது...",
+    "Running": "சுருக்கத்தை உருவாக்குகிறது..."
   },
   "Player": {
     "Mute": "முத்தடி",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Playback- ஐ மூடு",
-    "MoreOptions": "மேலதிக விருப்பங்கள்",
-    "CodecInfo": "Codec தகவல்"
+    "CodecInfo": "Codec தகவல்",
+    "MoreOptions": "மேலதிக விருப்பங்கள்"
+  },
+  "RecordingControls": {
+    "AudioRecording": "ஆடியோ பதிவு",
+    "ContinueRecording": "பதிவை தொடரவும்",
+    "RecordingAudio": "ஆடியோ பதிவேடு..",
+    "RecordingMode": "பதிவு அமைப்புகள்",
+    "RecordingPreview": "பதிவு முன்னோட்டம்",
+    "RecordingScreen": "பதிவு திரை",
+    "StartRecording": "பதிவைத் தொடக்கம்",
+    "Stop": "நிறுத்து",
+    "StopRecording": "பதிவை நிறுத்து",
+    "VideoRecording": "வீடியோ பதிவு"
+  },
+  "RecordingModes": {
+    "AreaCapture": "பகுதி பிடிப்பு",
+    "CaptureMode": "பிடிப்பு பயன்பாடு",
+    "FullScreen": "முழு திரை",
+    "RecordAudio": "கால்",
+    "RecordAudioTip": "பொது கேட்கும்",
+    "RecordFullscreen": "முழுமையாக",
+    "RecordFullscreenTip": "உங்கள் முழு திரைக்குப் பதிவு செய்க",
+    "RecordRegion": "பகுதி",
+    "RecordRegionTip": "தனிப்பயன் பகுதியை பிடிக்கவும்",
+    "RecordWindow": "ஜன்னல்",
+    "RecordWindowTip": "ஒரு பயன்பாட்டு ஜன்னலைப் பதிவு செய்க"
+  },
+  "RecordingsList": {
+    "CopyFileName": "கோப்பின் பெயரை நகலெடுக்கவும்",
+    "CopyFilePath": "கோப்புறையின் பாதையை நகலெடுக்கவும்",
+    "FileNameCopied": "{{fileName}} கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+    "FilePathCopied": "கோப்புறையின் பாதை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+    "OpenSaveFolder": "கோப்புறையை திறக்கவும்",
+    "RecentCaptures": "சமீபத்திய பிடிப்புகள்",
+    "Recovered_one": "{{count}} பதிவு மீட்டெடுக்கப்பட்டது",
+    "Recovered_other": "{{count}} பதிவுகள் மீட்டெடுக்கப்பட்டன",
+    "RefreshRecordings": "பதிவுகளைப் புதுப்பிக்கவும்",
+    "SaveAs": "சேமிக்கவும் (பதிவிடவும்)",
+    "SearchRecordingsOrSnapshots": "பதிவுகள் மற்றும் ஸ்னாப்ஷாட்கள் தேடுக",
+    "ShowInFolder": "கோப்புறைப் பாதையில் காட்டுக"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "படம்",
-    "Microphone": "மைக்ரோபோன்",
-    "App": "{{appName}}"
+    "Microphone": "மைக்ரோபோன்"
   },
   "RegionSelector": {
     "CaptureButton": "திரையை படம் பிடி அல்லது Enter கீயை அழுத்தவும்",
@@ -443,84 +807,73 @@
     "Monitor": "கணினிப் பார்",
     "PrimaryMonitor": "முதன்மை கணினி"
   },
-  "Reliability": {
-    "Stable": "நிலையானது",
-    "Experimental": "பரிசோதனை நிலை",
-    "NotTested": "சோதனை செய்யப்படவில்லை"
-  },
+  "Resume": "ரெஸ்யூம்",
   "RingMenu": {
+    "AutoDetectOff": "தானியங்கி கண்டுபிடிப்பு: OFF",
+    "AutoDetectOn": "தானியங்கி கண்டுபிடிப்பு: ON",
     "FlashbackCharging": "Flashback சுறுசுறுப்பு முழுவதும்",
     "FlashbackNotCharged": "Flashback சார்ஜ் செய்யப்படவில்லை, சார்ஜ் செய்ய ஒரு கிளிக், பூரணம்செய்க்க இரட்டை கிளிக்",
     "FlashbackSaveTooltip": "கடைசி {{duration}}s {{mode}} பின்னணியைச் சேமிக்க ஒரே கிளிக். இங்கே இருந்து தொடர தயாராக இரட்டை கிளிக் செய்யவும்.",
-    "RecordRegion": "பகுதி பதிவு",
-    "RecordFullscreen": "முழு திரை பதிவை",
-    "TakeScreenshot": "ஸ்கிரீன்ஷாட்டை எடு",
-    "AutoDetectOn": "தானியங்கி கண்டுபிடிப்பு: ON",
-    "AutoDetectOff": "தானியங்கி கண்டுபிடிப்பு: OFF",
     "RecordAudio": "ஆடியோ பதிவைத் தொடக்கம்",
-    "RecordWindow": "விண்டோ பதிவு"
+    "RecordFullscreen": "முழு திரை பதிவை",
+    "RecordRegion": "பகுதி பதிவு",
+    "RecordWindow": "விண்டோ பதிவு",
+    "TakeScreenshot": "ஸ்கிரீன்ஷாட்டை எடு"
   },
   "ScreenPicker": {
-    "Title": "ஒரு திரை தேர்ந்தெடு",
     "Instruction": "முழு திரை பதிவுக்காக எந்த திரையைப் பதிவு செய்வது என்பதை தேர்ந்தெடுங்கள்.",
-    "Refresh": "புதுப்பிக்க",
-    "Refreshing": "புதுப்பிக்கிறது…",
     "Loading": "படம் ஏற்றப்படுகிறது…",
     "None": "கண்டறியப்படவில்லை.",
+    "Refresh": "புதுப்பிக்க",
+    "Refreshing": "புதுப்பிக்கிறது…",
+    "Title": "ஒரு திரை தேர்ந்தெடு",
     "Unknown": "பெயரிடப்படாத காட்சி"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "பகுப்பாய்வு",
+    "ButtonLabel": "AI உடன் செயல்முறை",
+    "Custom": "தனிப்பயன் உடனடி",
+    "CustomPlaceholder": "இந்தப் படத்தைப் பற்றி ஏதாவது கேளுங்கள்...",
+    "Describe": "படத்தை விவரிக்கவும்",
+    "DescribeSub": "இந்த ஸ்கிரீன்ஷாட்டில் என்ன இருக்கிறது?",
+    "Description": "விளக்கம்",
+    "ExtractedText": "பிரித்தெடுக்கப்பட்ட உரை",
+    "Ocr": "உரையை பிரித்தெடுக்கவும் (OCR)",
+    "OcrSub": "காணக்கூடிய அனைத்து உரைகளையும் படிக்கவும்",
+    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.",
+    "ProcessingWithTime": "செயலாக்குகிறது... {{sec}}s",
+    "Queuing": "வரிசையில் நிற்கிறது...",
+    "ResultLabel": "AI முடிவு",
+    "UnknownError": "அறியப்படாத பிழை"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "நகலெடுக்கப்பட்டது!",
     "CopyFailed": "ஸ்கிரீன் ஷாட்டை நகலெடுக்க முடியவில்லை",
     "CopyToClipboard": "Clipboardக்கு நகலெடு",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "நீக்கு",
     "Dimensions": "பரிமாணங்கள்",
     "FileSize": "கோப்பின் அளவு",
-    "Filename": "பெயர்",
     "OpenInSystemViewer": "சிஸ்டம் பார்வையிடலில் திற",
-    "Rename": "மறுநிரல்",
     "ScreenshotCopied": "ஸ்கிரீன் ஷாட்டை களஞ்சியத்திற்கு நகலெடுக்கப்பட்டது",
     "Share": "பகிர்",
     "ShareCompleted": "பகிர்வு முடிந்தது",
     "ShareFailed": "இப்பயன்பாட்டில் பகிர்வு ஆதர்க்கப்படவில்லை. ஸ்கிரீன் ஷாட்டை கைதடவையாக திறந்து பகிரவும்.",
-    "ShareNotSupported": "இந்த மேடையில் native sharing ஆதர்க்கப்படவில்லை. பதிலாக, Copy to clipboard பயன்படுத்தவும்.",
     "Sharing": "பகிர்வு...",
-    "Timestamp": "நேரம்",
     "ZeroBytes": "0 பைட்டுகள்"
   },
   "Settings": {
-    "Title": "அமைப்புகள்",
     "About": {
       "CheckForUpdates": "புதுப்பிப்புகளைச் சரிபார்க்கிறது...",
       "CheckingUpdates": "புதுப்பிப்புகளைச் சரிபார்க்கிறது...",
-      "UpdateAvailable": "புதிய பதிப்பு {{version}} தற்போது கிடைக்க உள்ளது",
-      "UpdateReady": "Version {{version}} நிறுவ தயாராக உள்ளமைவு",
-      "NoUpdatesAvailable": "எந்தபுதுப்பிப்பும் இல்லை",
       "InstallNow": "இப்போது நிறுவவும்",
-      "TermsOfService": "சேவையின் விதிகள்",
-      "PrivacyPolicy": "தனிப்பட்டதன்மை கொள்கை",
       "LegalToggle": {
+        "FullVersion": "முழுமை பதிப்பு",
         "OneSentence": "1‑வாக்கியம்",
-        "TLDR": "சுருக்கம்",
-        "FullVersion": "முழுமை பதிப்பு"
+        "TLDR": "சுருக்கம்"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet இலவச, தனிப்பட்ட முதல் பதிவேட்டான், உள்ளூர் பயன்பாட்டை கணக்கு தேவையின்றி, உங்கள் தரவை நீங்கள் வைத்துக்கொள்ளலாம்; கிளவூட் அம்சங்கள் விருப்பமானவை; பட்டியலில் பெறுவதற்கு முன்பே அனுமதி பெற வேண்டும்.",
-        "TLDRTitle": "SeaMeet விதிகள் — பிஸியாக உள்ள ľ மக்களுக்கு TLDR",
-        "TLDRItems": [
-          "SeaMeet Desktop இலவசம் — அனைத்தும் non‑AI அம்சங்கள் கணக்கு அல்லது உள்நுழைவுகாரணம் இல்லாமல் வேலை செய்கின்றன.",
-          "பதிவேற்றுவதற்கு முன்பு அனுமதி பெறவும் — SeaMeet இதை உங்களுக்காகச் சோதனை செய்யவில்லை.",
-          "நீங்கள் செய்யும் பதிவு மற்றும் உரையைப் படிக்கின்றது உங்களுடையது; SeaMeet அவற்றை சேவை நடக்கonly பயன்படுத்தும்.",
-          "மேக அம்சங்கள் கணக்கின் தேவையும் SeaMeet சேவையகங்களில் தரவை சேமிப்பதும் ஆகும்.",
-          "Anonymous diagnostics ஆகியவை விருப்பமானவை மற்றும் எப்போது வேண்டுமானாலும் அணைத்து முடிவிடலாம்.",
-          "செயலியை தவறாக பயன்படுத்தாதீர்கள் (தனருவை பயன்படுத்தவேண்டாம், ஹேக்கிங் தடுக்கும்).",
-          "சேவை மாற்றக்கூடும், மற்றும் பொறுப்புக் கட்டுப்பாடுகள் வரையறுக்கப்பட்டுள்ளன."
-        ]
-      },
+      "NoUpdatesAvailable": "எந்தபுதுப்பிப்பும் இல்லை",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop அனைத்து பதிவுகளையும் உங்கள் சாதனத்தில் முழுமையாக, தனிப்பட்ட முறையில் வைத்திருக்கிறது, மற்றும் எந்த கணக்குமின்றி இயங்கும். மேக அம்சங்கள் விருப்பமானவை, குறியாக்கபட்டவை, மற்றும் முழுமையாக உங்கள் கட்டுப்பாட்டில்.",
-        "TLDRTitle": "SeaMeet தனிப்பட்டதன்மை — பிஸியான மனிதர்களுக்கான TLDR",
         "TLDRItems": [
           "SeaMeet Desktop என்பது உருவாக்கப்படப்பட்டதனால் தனிப்பட்டது: அனைத்தும் உங்கள் சாதனத்தில் மட்டும் இருக்கும்; நாம் இழிவு, வீடியோ, திரை உள்ளடக்கம் அல்லது கூட்டமிட்த தரவுகளை சேகரிப்போம் இல்லை.",
           "desktop செயலியின் non‑AI அம்சங்களை பயன்படுத்த கணக்கு தேவையில்லை.",
@@ -530,734 +883,299 @@
           "மூன்றாம் பக்கம் ஒருங்கிணைப்புகள் விருப்பமானவை மற்றும் முழுமையாக பின்வாங்கக்கூடியவை.",
           "நாங்கள் தரவுகளை விற்கமாட்டோம், மற்றும் மேக பதிவுகள் குறியாக்கப்பட்டவை.",
           "நீங்களே உங்கள் தரவுகளை கட்டுப்பாடு செய்ய வேண்டும் — 언제든ும் பதிவுகளை நீக்கவும் அல்லது முழுமையான அழிப்பை கோரவும்."
-        ]
+        ],
+        "TLDRTitle": "SeaMeet தனிப்பட்டதன்மை — பிஸியான மனிதர்களுக்கான TLDR"
       },
+      "PrivacyPolicy": "தனிப்பட்டதன்மை கொள்கை",
       "PrivacySecurity": {
-        "Title": "தனியுரிமை மற்றும் பாதுகாப்பு",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Auto-detect எந்நாளும் உங்கள் தெளிவான அனுமதி இல்லாமல் முறையாக பதிவை தானாகத் துவங்காது.",
+            "Title": "தெளிவான அனுமதி தேவையானது"
+          },
           "MicrophoneActivity": {
-            "Title": "மைக்ரோபோன் செயல்பாடு மட்டுமே",
-            "Description": "аўto-detect, இதுவரை பயன்படுத்தப்படும் microphone-ஐ கணிக்கிறது, அது பயன்படுத்தும் முன் எந்த data-ஐயும் பிடிப்பதில்லை."
+            "Description": "аўto-detect, இதுவரை பயன்படுத்தப்படும் microphone-ஐ கணிக்கிறது, அது பயன்படுத்தும் முன் எந்த data-ஐயும் பிடிப்பதில்லை.",
+            "Title": "மைக்ரோபோன் செயல்பாடு மட்டுமே"
           },
           "NoDataAccess": {
-            "Title": "டேட்டா அணுகலை இல்லை",
-            "Description": "auto-detect, மட்டுமே microphone பயன்பாட்டை கண்டறிதல். இதால் எந்த பதிவும் அணுகமுடியாது."
-          },
-          "ExplicitApproval": {
-            "Title": "தெளிவான அனுமதி தேவையானது",
-            "Description": "Auto-detect எந்நாளும் உங்கள் தெளிவான அனுமதி இல்லாமல் முறையாக பதிவை தானாகத் துவங்காது."
+            "Description": "auto-detect, மட்டுமே microphone பயன்பாட்டை கண்டறிதல். இதால் எந்த பதிவும் அணுகமுடியாது.",
+            "Title": "டேட்டா அணுகலை இல்லை"
           },
           "NoDataCollection": {
-            "Title": "டேட்டா அணுகலை இல்லை",
-            "Description": "SeaMeet, உங்களது அனுமதி இல்லாமல் auto-detect அம்சம் மூலம் எவ்விதத் தரவையும் சேகரிக்கவில்லை."
+            "Description": "SeaMeet, உங்களது அனுமதி இல்லாமல் auto-detect அம்சம் மூலம் எவ்விதத் தரவையும் சேகரிக்கவில்லை.",
+            "Title": "டேட்டா அணுகலை இல்லை"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% உள்ளூர்",
-            "Description": "Flashback, முழுமையாக உங்கள் உள்ளூர் கணினியில் மட்டுமே இயங்கும். எந்தவொரு கிளவுடுடன் ஒத்திசைக்கப்படுகிறது என்பதைத் தவிர."
+          "EthicalUse": {
+            "Description": "மற்றவர்களைப் பயன்படுத்துவதற்கு முன், எப்போதும் அவர்களுக்கு தெரிவித்து, அனுமதி பெற்றுவிடவும்.",
+            "Title": "நெறிமுறைகள்"
           },
-          "RAMOnly": {
-            "Title": "RAM மட்டும்",
-            "Description": "அனைத்து தரவுகளும் நினைவகத்தில் மட்டுமே இருக்கும். நீங்கள் Flashback பதிவை சேமிக்காத வரை, எந்தத் தரவும் டிஸ்க் மீது எழுதப்பட மாட்டாது."
+          "LocalOnly": {
+            "Description": "Flashback, முழுமையாக உங்கள் உள்ளூர் கணினியில் மட்டுமே இயங்கும். எந்தவொரு கிளவுடுடன் ஒத்திசைக்கப்படுகிறது என்பதைத் தவிர.",
+            "Title": "100% உள்ளூர்"
           },
           "Protected": {
-            "Title": "பாதுகாக்கப்பட்டது",
-            "Description": "உங்கள் தனிப்பட்ட உரிமையும் பாதுகாப்பும் மிக முக்கியம். உங்கள் தரவு எப்போதும் உங்கள் கருவியில் இருக்‌கும், வெளியே போகவில்லை."
+            "Description": "உங்கள் தனிப்பட்ட உரிமையும் பாதுகாப்பும் மிக முக்கியம். உங்கள் தரவு எப்போதும் உங்கள் கருவியில் இருக்‌கும், வெளியே போகவில்லை.",
+            "Title": "பாதுகாக்கப்பட்டது"
           },
-          "EthicalUse": {
-            "Title": "நெறிமுறைகள்",
-            "Description": "மற்றவர்களைப் பயன்படுத்துவதற்கு முன், எப்போதும் அவர்களுக்கு தெரிவித்து, அனுமதி பெற்றுவிடவும்."
+          "RAMOnly": {
+            "Description": "அனைத்து தரவுகளும் நினைவகத்தில் மட்டுமே இருக்கும். நீங்கள் Flashback பதிவை சேமிக்காத வரை, எந்தத் தரவும் டிஸ்க் மீது எழுதப்பட மாட்டாது.",
+            "Title": "RAM மட்டும்"
           }
-        }
-      }
+        },
+        "Title": "தனியுரிமை மற்றும் பாதுகாப்பு"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet இலவச, தனிப்பட்ட முதல் பதிவேட்டான், உள்ளூர் பயன்பாட்டை கணக்கு தேவையின்றி, உங்கள் தரவை நீங்கள் வைத்துக்கொள்ளலாம்; கிளவூட் அம்சங்கள் விருப்பமானவை; பட்டியலில் பெறுவதற்கு முன்பே அனுமதி பெற வேண்டும்.",
+        "TLDRItems": [
+          "SeaMeet Desktop இலவசம் — அனைத்தும் non‑AI அம்சங்கள் கணக்கு அல்லது உள்நுழைவுகாரணம் இல்லாமல் வேலை செய்கின்றன.",
+          "பதிவேற்றுவதற்கு முன்பு அனுமதி பெறவும் — SeaMeet இதை உங்களுக்காகச் சோதனை செய்யவில்லை.",
+          "நீங்கள் செய்யும் பதிவு மற்றும் உரையைப் படிக்கின்றது உங்களுடையது; SeaMeet அவற்றை சேவை நடக்கonly பயன்படுத்தும்.",
+          "மேக அம்சங்கள் கணக்கின் தேவையும் SeaMeet சேவையகங்களில் தரவை சேமிப்பதும் ஆகும்.",
+          "Anonymous diagnostics ஆகியவை விருப்பமானவை மற்றும் எப்போது வேண்டுமானாலும் அணைத்து முடிவிடலாம்.",
+          "செயலியை தவறாக பயன்படுத்தாதீர்கள் (தனருவை பயன்படுத்தவேண்டாம், ஹேக்கிங் தடுக்கும்).",
+          "சேவை மாற்றக்கூடும், மற்றும் பொறுப்புக் கட்டுப்பாடுகள் வரையறுக்கப்பட்டுள்ளன."
+        ],
+        "TLDRTitle": "SeaMeet விதிகள் — பிஸியாக உள்ள ľ மக்களுக்கு TLDR"
+      },
+      "TermsOfService": "சேவையின் விதிகள்",
+      "UpdateAvailable": "புதிய பதிப்பு {{version}} தற்போது கிடைக்க உள்ளது",
+      "UpdateReady": "Version {{version}} நிறுவ தயாராக உள்ளமைவு"
     },
-    "General": "பொது",
-    "Storage": {
-      "Title": "சேமிப்பு அமைப்புகள்",
-      "Description": "தானாக சேமிக்கும் போது SeaMeet பயன்படுத்தும் முன்னிட அமைப்பை தேர்வு செய்யவும்",
-      "DefaultPathLabel": "பொதுவான சேமிப்பு கோப்பு",
-      "Browse": "தினை...",
-      "Save": "சேமி",
-      "RecordingNameLabel": "பதிவுக்கு பெயர்"
+    "AppPermissions": {
+      "DefaultRecordingMode": "இயல்பான பதிவு முறை",
+      "DeleteTooltip": "பட்டியிலிலிருந்து அகற்று (பயன்பாட்டை 'ஒவ்வொரு முறை கேட்க' என்று மாற்றும்)",
+      "EmptyState": "இன்னும் எந்த செயலிகளும் கண்டுபிடிக்கப்படவில்லை. SeaMeet உங்கள் மைக்ரோபோன் பயன்படுத்தும் செயலி கண்டறியபோது, அது இங்கே காட்டப்படும்.",
+      "PathCopied": "பாதை கிளிப்போர்டுக்கு நகல் செய்யப்பட்டது",
+      "PermissionHeader": "செயலி அனுமதிகள்",
+      "Title": "செயலி அனுமதிகள்"
     },
-    "ProfileSettings": "சுயவிவர அமைப்புகள்",
-    "AccountPreferences": "கணக்கு விருப்பங்கள்",
-    "ProfileSettingsDescription": "உங்கள் சுயவிவரத் தகவல்களை நிர்வகிக்கவும்",
-    "AccountPreferencesDescription": "உங்கள் கணக்கு விருப்பங்களை நிர்வகிக்கவும்",
-    "SettingsFileLocation": "அமைப்புகள் கோப்பு இடம்",
-    "SettingsFileDescription": "அமைப்புகளை எளிதாகப் போக்கி மற்றும் மேலாண்மை செய்ய உதவ இது ஒரு JSON கோப்பில் சேமிக்கப்பட்டது",
     "Back": "ಹಿಂದுகு",
-    "OpenFolder": "கோப்புறையைத் திறக்கவும்",
     "DefaultUserName": "SeaMeet பயனர்",
-    "UserAvatarAlt": "பயனர்",
+    "FailedToCheckForUpdates": "புதுப்பிப்புகள் சரிபார்க்க முடியவில்லை",
     "GroupTitle": {
-      "Account": "கணக்கு",
-      "General": "பொதுவானவை",
-      "Automation": "தானியங்கி",
-      "RecordingStorage": "பதிவு சேமிப்பு",
-      "Configuration": "அமைப்புகள்",
       "ApplicationInfo": "பயன்பாட்டு தகவல்",
-      "Legal": "சட்டத்துவ விவரங்கள்"
+      "Automation": "தானியங்கி",
+      "Configuration": "அமைப்புகள்",
+      "General": "பொதுவானவை",
+      "Legal": "சட்டத்துவ விவரங்கள்",
+      "RecordingStorage": "பதிவு சேமிப்பு"
     },
     "Item": {
-      "EditProfile": "சுயவிபரம் திருத்து",
-      "Account": "கணக்கு",
-      "LogOut": "வெளியேறு",
-      "Language": "மொழி",
+      "AutoRecording": "தானியங்கி பதிவு",
+      "Copyright": "காப்புரிமை",
       "ImproveTranslationHint": "GitHub → இல் இந்த மொழிபெயர்ப்பை மேம்படுத்த உதவுங்கள்",
-      "Theme": "தீம்",
-      "KeyboardShortcuts": "விசைச்சார் சுருக்கங்கள்",
+      "Language": "மொழி",
       "MicrophoneGain": "மைக்ரோபோன் அளவு",
       "StartAtLogin": "துவக்கம் போது தொடங்கு",
-      "AutoRecording": "தானியங்கி பதிவு",
       "Storage": "சேமிப்பு",
-      "Copyright": "காப்புரிமை"
+      "Theme": "தீம்"
     },
     "MicGain": {
-      "Minimal": "குறைந்தபட்சம் (0.1x)",
-      "Quiet": "அமைதியான (0.5x)",
-      "Normal": "சாதாரண (1x)",
       "Loud": "மிகப் பெரியது (5x)",
-      "Louder": "அதிகமாக (10x)"
+      "Louder": "அதிகமாக (10x)",
+      "Minimal": "குறைந்தபட்சம் (0.1x)",
+      "Normal": "சாதாரண (1x)",
+      "Quiet": "அமைதியான (0.5x)"
+    },
+    "OpenFolder": "கோப்புறையைத் திறக்கவும்",
+    "PageTitle": {
+      "About": "பற்றி",
+      "AutoRecording": "தானியங்கி பதிவு",
+      "Flashback": "பின்னணி நினைவு பதிவு",
+      "Storage": "சேமிப்பு"
+    },
+    "SettingsFileLocation": "அமைப்புகள் கோப்பு இடம்",
+    "Storage": {
+      "Browse": "தினை...",
+      "DefaultPathLabel": "பொதுவான சேமிப்பு கோப்பு",
+      "Description": "தானாக சேமிக்கும் போது SeaMeet பயன்படுத்தும் முன்னிட அமைப்பை தேர்வு செய்யவும்",
+      "Save": "சேமி",
+      "Title": "சேமிப்பு அமைப்புகள்"
     },
     "Theme": {
+      "AdobeSand": "அடோபி மணல்",
+      "AdobeSandDesc": "வெப்ப மண் வெளிர் பயன்முறை",
+      "AzureLight": "வானம்",
+      "AzureLightDesc": "குளிர் நீல வெளிர் பயன்முறை",
+      "CloudCanvas": "மேக கேன்வாஸ்",
+      "CloudCanvasDesc": "புத்துணர்வான புதினா வெளிர் பயன்முறை",
+      "ColumnDark": "இருண்ட",
+      "ColumnLight": "வெளிர்",
+      "CyberCobalt": "சைபர் கோபால்ட்",
+      "CyberCobaltDesc": "நியான் சயான் இருண்ட பயன்முறை",
+      "Dark": "இருண் முறை",
+      "DarkDesc": "இருண் முறை",
       "Device": "சாதனம்",
       "DeviceDesc": "செயல்சி அமைப்புக்களுக்கு பின்பற்று",
       "Light": "வெளிச்சம்",
       "LightDesc": "வெளிச்சம் முறை",
-      "Dark": "இருண் முறை",
-      "DarkDesc": "இருண் முறை",
-      "Pink": "பிங்க்",
-      "PinkDesc": "பிங்க் முறை",
       "LightPink": "வெள φωர் பிங்க்",
       "LightPinkDesc": "வெளிர் பிங்க் முறை",
-      "ColumnLight": "வெளிர்",
-      "ColumnDark": "இருண்ட",
-      "AzureLight": "வானம்",
-      "AzureLightDesc": "குளிர் நீல வெளிர் பயன்முறை",
-      "WarmPaper": "வெப்ப காகிதம்",
-      "WarmPaperDesc": "வெப்ப காகித தொனி வெளிர் பயன்முறை",
-      "SynthwaveLight": "சிந்வேவ் வெளிர்",
-      "SynthwaveLightDesc": "துடிப்பான சிந்வேவ் வெளிர் பயன்முறை",
       "MidnightBlue": "நள்ளிரவு நீலம்",
       "MidnightBlueDesc": "ஆழ்ந்த நீல இருண்ட பயன்முறை",
-      "CloudCanvas": "மேக கேன்வாஸ்",
-      "CloudCanvasDesc": "புத்துணர்வான புதினா வெளிர் பயன்முறை",
-      "CyberCobalt": "சைபர் கோபால்ட்",
-      "CyberCobaltDesc": "நியான் சயான் இருண்ட பயன்முறை",
-      "AdobeSand": "அடோபி மணல்",
-      "AdobeSandDesc": "வெப்ப மண் வெளிர் பயன்முறை"
+      "Pink": "பிங்க்",
+      "PinkDesc": "பிங்க் முறை",
+      "SynthwaveLight": "சிந்வேவ் வெளிர்",
+      "SynthwaveLightDesc": "துடிப்பான சிந்வேவ் வெளிர் பயன்முறை",
+      "WarmPaper": "வெப்ப காகிதம்",
+      "WarmPaperDesc": "வெப்ப காகித தொனி வெளிர் பயன்முறை"
     },
-    "PageTitle": {
-      "Flashback": "பின்னணி நினைவு பதிவு",
-      "About": "பற்றி",
-      "AutoRecording": "தானியங்கி பதிவு",
-      "Storage": "சேமிப்பு"
-    },
-    "FailedToCheckForUpdates": "புதுப்பிப்புகள் சரிபார்க்க முடியவில்லை",
-    "AppPermissions": {
-      "Title": "செயலி அனுமதிகள்",
-      "Description": "உங்கள் மைக்ரோபோன் பயன்படுத்தும் போது எந்த செயலிகள் தானியங்கி பாதுகாப்பை வழங்கவோ, அதை எப்படி நிர்வகிக்கவும் என்பதை எனக்கு செய்யவும்.",
-      "EmptyState": "இன்னும் எந்த செயலிகளும் கண்டுபிடிக்கப்படவில்லை. SeaMeet உங்கள் மைக்ரோபோன் பயன்படுத்தும் செயலி கண்டறியபோது, அது இங்கே காட்டப்படும்.",
-      "DeleteTooltip": "பட்டியிலிலிருந்து அகற்று (பயன்பாட்டை 'ஒவ்வொரு முறை கேட்க' என்று மாற்றும்)",
-      "PathCopied": "பாதை கிளிப்போர்டுக்கு நகல் செய்யப்பட்டது",
-      "PermissionHeader": "செயலி அனுமதிகள்",
-      "DefaultRecordingMode": "இயல்பான பதிவு முறை"
-    }
+    "Title": "அமைப்புகள்",
+    "UserAvatarAlt": "பயனர்"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "காணும் ஜன்னலைக் காட்டவும்",
-    "OpenLauncher": "launcher-ஐ துவக்கவும்",
-    "RecordAudio": "ஒலி பதிவிடு",
-    "RecordFullscreen": "முழு sceபை பதிவு செய்",
-    "RecordWindow": "ஜன்னல் பதிவிடு",
-    "RecordRegion": "பிரிவு பதிவு",
     "CaptureScreenshot": "ஸ்கிரின் ஷாட் எடு",
-    "RestoreDefaults": "இயல்புகளுக்கு மீட்டமைக்கவும்",
-    "RecordingPrompt": "கேட்கிறேன்… புதிய சுருக்கியை அழுத்தவும்",
     "ConflictWarning": "இந்த சுருக்கி மற்றொரு பயன்பாட்டால் ஏற்கனவே பயன்படுத்தப்படுகிறது, பதிவு செய்ய முடியாது.",
     "GenericError": "சுருக்கியை புதுப்பிப்பதில் பிழை",
     "None": "ஏதும் இல்லை",
-    "SpaceKey": "வெற்று இடம்"
+    "OpenLauncher": "launcher-ஐ துவக்கவும்",
+    "RecordAudio": "ஒலி பதிவிடு",
+    "RecordFullscreen": "முழு sceபை பதிவு செய்",
+    "RecordingPrompt": "கேட்கிறேன்… புதிய சுருக்கியை அழுத்தவும்",
+    "RecordRegion": "பிரிவு பதிவு",
+    "RecordWindow": "ஜன்னல் பதிவிடு",
+    "RestoreDefaults": "இயல்புகளுக்கு மீட்டமைக்கவும்",
+    "SpaceKey": "வெற்று இடம்",
+    "ToggleFloatingWindow": "காணும் ஜன்னலைக் காட்டவும்"
   },
   "Sidebar": {
-    "PrimaryNavigation": "முதன்மை வழிசெலுத்தல்",
     "ClearSearch": "தெளிவான தேடல்",
-    "AgentPanel": "AI முகவர்"
-  },
-  "SidebarTabs": {
-    "Audios": "ஒலிகள்",
-    "AutoDetect": "தானியம் கண்டறிதல்"
+    "PrimaryNavigation": "முதன்மை வழிசெலுத்தல்"
   },
   "TakeSnapshot": {
-    "Title": "ஸ்னாப் ஷாட்டை பிடித்தது",
+    "GoToSnapshot": "புதிய ஸ்னாப் ஷாட்டுக்கு செல்லவும்",
     "Message": "ஸ்னாப் ஷாட்டை எடுத்து சேமிக்கப்பட்டது:",
     "StayAtVideo": "தற்போதைய வீடியோவீல் தங்கவும்",
-    "GoToSnapshot": "புதிய ஸ்னாப் ஷாட்டுக்கு செல்லவும்"
+    "Title": "ஸ்னாப் ஷாட்டை பிடித்தது"
   },
   "TopNav": {
-    "CloseNavigationMenu": "வழிசெலுத்தல் மெனுவை மூடு",
-    "OpenNavigationMenu": "வழிசெலுத்தல் மெனுவை திற",
-    "MainNavigation": "முக்கிய வழிசெலுத்தல்",
-    "Record": "பதிவு",
-    "Recording": "பதிவு செய்தல்",
-    "Files": "கோப்புகள்",
     "Agent": "Agent",
-    "Terminal": "டெர்மினல்"
+    "CloseNavigationMenu": "வழிசெலுத்தல் மெனுவை மூடு",
+    "Files": "கோப்புகள்",
+    "MainNavigation": "முக்கிய வழிசெலுத்தல்",
+    "OpenNavigationMenu": "வழிசெலுத்தல் மெனுவை திற",
+    "Record": "பதிவு",
+    "Recording": "பதிவு செய்தல்"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet இன்னும் செயல்படுகின்றது, கீழ்க்காணும் சாளரத்தில் (கீழ்வலது) இயங்கி வருகிறது.",
-    "ShowLauncher": "தேர்வுப்பலகையை காட்டு",
-    "ShowFloatingWindow": "மேலதிக சாளரத்தை காட்டுக",
-    "ShowMainWindow": "முக்கிய விண்டோவை காட்டுக",
-    "ExitSeaMeet": "SeaMeet-ஐ வெளியேறு",
-    "QuickRecording": "விரைவு பதிவிட",
-    "RecordAudio": "ஆடியோ பதிவிட",
-    "RecordFullscreen": "முழு திரை பதிவுக்கு செல்",
-    "RecordRegion": "பதிவிட பகுதியை சுருட்டு",
-    "OpenRecordingsFolder": "பதிவுகள் அடைவைக் திற",
-    "TakeScreenshot": "படத்தை எடு",
-    "Close": "மூடு",
-    "OpenSeaMeet": "SeaMeet-ஐ திற",
-    "OpenSaveFolder": "கோப்புறையை திறக்கவும்",
-    "ReportIssues": "பிழைகளை அறிக்கை செய்க"
+    "MinimizedHint": "SeaMeet இன்னும் செயல்படுகின்றது, கீழ்க்காணும் சாளரத்தில் (கீழ்வலது) இயங்கி வருகிறது."
   },
   "Types": {
-    "Microphone": "மைக்ரோபோன்",
-    "System": "சிஸ்டம் ஒலி வெளியீடு",
     "Both": "இரண்டும் (கலந்தது)",
     "File": "கோப்பு",
+    "Microphone": "மைக்ரோபோன்",
+    "System": "சிஸ்டம் ஒலி வெளியீடு",
     "Video": "வீடியோ"
   },
   "UpdateQuitModal": {
-    "Title": "புதுப்பிப்பு கிடைத்தது",
-    "ReadyToInstall": "SeaMeet {{version}} நிறுவ தயாராக உள்ளது.",
-    "InstallBeforeQuitting": "நிறுத்துமுன் நிறுவ வேண்டுமா?",
     "InstallAndQuit": "நிறுவி வெளியேறு",
-    "QuitWithoutInstalling": "நிறுவாமல் வெளியேறு"
+    "InstallBeforeQuitting": "நிறுத்துமுன் நிறுவ வேண்டுமா?",
+    "QuitWithoutInstalling": "நிறுவாமல் வெளியேறு",
+    "ReadyToInstall": "SeaMeet {{version}} நிறுவ தயாராக உள்ளது.",
+    "Title": "புதுப்பிப்பு கிடைத்தது"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} நிறுவ தயாராக உள்ளது",
-    "Downloading": "SeaMeet {{version}} ({{percent}}%) பதிவிறக்கம் செய்கிறது",
     "Available": "புதிய புதுப்பிப்பு கிடைக்கிறது: SeaMeet {{version}}",
-    "WhatsNewInVersion": "{{version}} இல் புதிய அம்சங்கள்",
-    "WhatsNew": "புதிய அம்சங்கள்:",
+    "Dismiss": "மறை",
+    "Downloading": "SeaMeet {{version}} ({{percent}}%) பதிவிறக்கம் செய்கிறது",
     "Hide": "மறை",
+    "ReadyToInstall": "SeaMeet {{version}} நிறுவ தயாராக உள்ளது",
     "RestartNow": "இப்போது மறுநுஆக்கம் செய்யவும்",
     "ViewRelease": "வெளியீட்டைக் காண்க",
     "ViewReleaseTitle": "GitHub-இில் வெளியீட்டு விவரங்கள்",
-    "Dismiss": "மறை"
+    "WhatsNew": "புதிய அம்சங்கள்:",
+    "WhatsNewInVersion": "{{version}} இல் புதிய அம்சங்கள்"
   },
   "UserMenu": {
+    "AboutSeaMeet": "SeaMeet பற்றி",
     "DisplayName": "பயனர்",
     "EmailPlaceholder": "உங்கள் மின்னஞ்சல்",
-    "ProfileSettings": "சுயவிவர அமைப்புகள்",
-    "AccountPreferences": "கணக்கு விருப்பத்தேர்வுகள்",
-    "BillingPlans": "பில்லிங் & திட்டங்கள்",
-    "StorageSettings": "சேமிப்பு அமைப்புகள்",
-    "HelpSupport": "உதவி & ஆதரவு",
-    "KeyboardShortcuts": "விசைப்பலகை குறுக்குவழிகள்",
-    "SignIn": "உள்நுழையவும்",
-    "SignOut": "வெளியேறு",
-    "SeaMeetSignedOut": "SeaMeet: உள்நுழையவில்லை",
-    "SeaMeetSignedIn": "SeaMeet: உள்நுழைந்துள்ளீர்கள்",
-    "AboutSeaMeet": "SeaMeet பற்றி",
     "Exit": "வெளியேறு",
+    "HelpSupport": "உதவி & ஆதரவு",
     "HelpSupportSection": {
-      "Wiki": "விகி",
-      "WikiDesc": "தயாரிப்படக்க மற்றும் வழிகாட்டல்களுக்கு SeaMeet விகியைக் காணுங்கள்.",
-      "VisitWiki": "விகி பார்வையிடவும்",
-      "Issues": "பிரச்சனைகள்",
-      "IssuesDesc": "பிழைகள் அல்லது அம்சங்களை கோரவும்: (GitHub கணக்கு தேவை).",
-      "SubmitIssue": "பிரச்சனைச் சுமாறு சமர்ப்பிக்கவும்",
       "Discussion": "விவாதம்",
       "DiscussionDesc": "சமூக விவாதத்தில் சேரவும் (GitHub கணக்கு தேவை).",
-      "JoinDiscussion": "விவாதத்தில் சேரவும்",
+      "DogfoodingDesc": "SeaMeet-ஐப் பயன்படுத்தி பிரச்சனையை பதிவு செய்து, அம்சங்கள் அல்லது நம்முடன் மின்‌ஞ‌சலில் சொல்லும் வகையில் ஊக்கம் அளிப்போம்!",
       "Email": "மின்னஞ்சல்",
       "EmailDesc": "எங்களது அணியுடன் நேரடியாக தொடர்பு கொள்ளவும்.",
-      "SendEmail": "மின்னஞ்சல் அனுப்பவும்",
-      "Dogfooding": "Dogfooding (செயலாக்கம் அல்லது பயன்பாடு பிழைகள் மற்றும் அம்சங்கள் அறிந்து கொள்ள பயன்படுத்தப்படும் செயலி)",
-      "DogfoodingDesc": "SeaMeet-ஐப் பயன்படுத்தி பிரச்சனையை பதிவு செய்து, அம்சங்கள் அல்லது நம்முடன் மின்‌ஞ‌சலில் சொல்லும் வகையில் ஊக்கம் அளிப்போம்!",
-      "CheckForUpdates": "புதுப்பிப்புகளைச் சரிபார்க்கவும்",
-      "CheckingUpdates": "புதுப்பிப்புக்கள் சரிபார்கிறேன்...",
-      "UpdateAvailable": "புதிய பதிப்பு {{version}} கிடைகிறது",
-      "UpdateReady": "பதிப்பு {{version}} நிறுவ தயாராக உள்ளது",
-      "InstallNow": "இப்போது நிறுவவும்",
-      "TermsOfService": "சேவை நிபந்தனைகள்",
-      "PrivacyPolicy": "தனியுரிமைக் கொள்கை",
       "ImproveTranslation": "மொழிபெயர்ப்புகளை மேம்படுத்தவும்",
-      "ImproveTranslationDesc": "GitHub இல் மொழிபெயர்ப்புகளை மேம்படுத்த அல்லது புதிய மொழியைக் கோர எங்களுக்கு உதவவும்."
-    }
+      "ImproveTranslationDesc": "GitHub இல் மொழிபெயர்ப்புகளை மேம்படுத்த அல்லது புதிய மொழியைக் கோர எங்களுக்கு உதவவும்.",
+      "Issues": "பிரச்சனைகள்",
+      "IssuesDesc": "பிழைகள் அல்லது அம்சங்களை கோரவும்: (GitHub கணக்கு தேவை).",
+      "JoinDiscussion": "விவாதத்தில் சேரவும்",
+      "SendEmail": "மின்னஞ்சல் அனுப்பவும்",
+      "SubmitIssue": "பிரச்சனைச் சுமாறு சமர்ப்பிக்கவும்",
+      "VisitWiki": "விகி பார்வையிடவும்",
+      "Wiki": "விகி",
+      "WikiDesc": "தயாரிப்படக்க மற்றும் வழிகாட்டல்களுக்கு SeaMeet விகியைக் காணுங்கள்."
+    },
+    "KeyboardShortcuts": "விசைப்பலகை குறுக்குவழிகள்",
+    "SeaMeetSignedIn": "SeaMeet: உள்நுழைந்துள்ளீர்கள்",
+    "SeaMeetSignedOut": "SeaMeet: உள்நுழையவில்லை",
+    "SignIn": "உள்நுழையவும்",
+    "SignOut": "வெளியேறு"
   },
   "VideoSettings": {
-    "Title": "வீடியோ பதிவு அமைப்புகள்",
-    "Mode": "பதிவு முறை",
-    "ModeOff": "ஆஃப்",
-    "ModeFullscreen": "முழு திரை",
-    "ModeWindow": "சாளரம்",
-    "ModeRegion": "பிராந்தியம்",
+    "AudioSettings": "ஆடியோ அமைப்புகள்",
+    "CodecTooltip": {
+      "VP8": "இந்த பதிவு சிறந்த தரத்துடன் VP8 பயன்படுத்துகிறது. சில இயல்புநிலை வீடியோ பிளேயர்கள் — உதாரணமாக Windows Media Player மற்றும் macOS இல் QuickTime — இந்த வடிவமைப்பை ஆதரிக்காவிட்டால், நம்பகமான பிளேபேக்குக் க்காக நவீன உலாவியை (Chrome அல்லது Edge) அல்லது VLC போன்ற பிளேயரை பயன்படுத்த பரிந்துரைக்கின்றோம்.",
+      "VP9": "இந்த பதிவு சிறந்த தரத்துடன் VP9 பயன்படுத்துகிறது. சில இயல்புநிலை வீடியோ பிளேயர்கள் — உதாரணமாக Windows Media Player மற்றும் macOS இல் QuickTime — இந்த வடிவமைப்பை ஆதரிக்காவிட்டால், நம்பகமான பிளேபேக்குக்காக நவீன உலாவியை (Chrome அல்லது Edge) அல்லது VLC போன்ற பிளேயரை பயன்படுத்த பரிந்துரைக்கிறோம்."
+    },
+    "Detecting": "கண்டுபிடிக்கிறது...",
+    "FlashbackArmedNotice": "நீங்கள் {{seconds}} வினாக்களுக்கு இடையிலான flashback பையரைப் பயன்படுத்திக் கொண்டு பதிவு செய்கிறீர்கள்",
+    "FramesPerSecond": "வினாடிக்கு பிரேம்கள்",
+    "FullHD": "முழுமையான HD",
+    "GBPerHour": "~{{gb}} GB/மணி",
+    "HD": "HD",
+    "HideWindow": "பகுதியைத் தேர்ந்தெடுக்கும்போது SeaMeet சாளரத்தை மறை",
+    "Internal": "உள்ளிடப்பட்டமை",
+    "MBPerMin": "~{{mb}} MB/min,",
     "ModeAudioOnly": "ஒலி בלבד",
-    "SelectScreen": "திரையைத் தேர்ந்தெடுக்கவும்",
-    "SelectWindow": "சாளரத்தைத் தேர்ந்தெடுக்கவும்",
-    "Refresh": "புதுப்பிக்கவும்",
+    "ModeFullscreen": "முழு திரை",
+    "ModeRegion": "பிராந்தியம்",
+    "ModeWindow": "சாளரம்",
+    "Native": "உள்ளூர்",
     "NoScreens": "திரைகள் எதுவும் கண்டறியப்படவில்லை",
     "NoWindows": "ஜன்னல்கள் இல்லை",
-    "RegionInfo": "பதிவு தொடங்கும் போது திரை அல்லது சாளரத்தைத் தேர்ந்தெடுக்கும்படி கேட்கப்படுவீர்கள்.",
-    "HideWindow": "பகுதியைத் தேர்ந்தெடுக்கும்போது SeaMeet சாளரத்தை மறை",
-    "VideoQuality": "வீடியோ தரம்",
-    "Quality": "தரம்",
-    "QualityOriginal": "அசல்",
-    "QualityHigh": "உயர்",
-    "QualityMedium": "நடுத்தர",
-    "QualityLow": "தரத்தள்ளு",
-    "FramesPerSecond": "வினாடிக்கு பிரேம்கள்",
-    "FrameRate": "படி விகிதம்",
-    "SourceResolution": "மூலம் தீர்வு",
-    "Native": "உள்ளூர்",
-    "FullHD": "முழுமையான HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "மேலே ஒரு ஆதாரத்தை தேர்ந்தெடு",
-    "ZeroSize": "~0 MB/min, ~0 GB/hour",
-    "MBPerMin": "~{{mb}} MB/min,",
-    "GBPerHour": "~{{gb}} GB/மணி",
     "Primary": "முதன்மை",
-    "Internal": "உள்ளிடப்பட்டமை",
-    "Detecting": "கண்டுபிடிக்கிறது...",
-    "ResolutionUnknown": "தீர்வு தெரியவில்லை",
-    "AudioSettings": "ஆடியோ அமைப்புகள்",
-    "RecordModeTitle": "ஒலி அல்லது வீடியோ பதிவிடலாமா?",
+    "QualityHigh": "உயர்",
+    "QualityLow": "தரத்தள்ளு",
+    "QualityMedium": "நடுத்தர",
+    "QualityOriginal": "அசல்",
     "Record": "பதிவு செய்க",
-    "RecordWithoutFlashback": "Flashback இல்லாமல் பதிவு செய்க",
+    "RecordModeTitle": "ஒலி அல்லது வீடியோ பதிவிடலாமா?",
     "RecordWithFlashback": "Flashback உடன் பதிவு செய்",
+    "RecordWithoutFlashback": "Flashback இல்லாமல் பதிவு செய்க",
+    "Refresh": "புதுப்பிக்கவும்",
+    "ResolutionUnknown": "தீர்வு தெரியவில்லை",
+    "SD": "SD",
+    "SelectScreen": "திரையைத் தேர்ந்தெடுக்கவும்",
+    "SelectSourceAbove": "மேலே ஒரு ஆதாரத்தை தேர்ந்தெடு",
+    "SelectWindow": "சாளரத்தைத் தேர்ந்தெடுக்கவும்",
+    "SourceResolution": "மூலம் தீர்வு",
+    "Title": "வீடியோ பதிவு அமைப்புகள்",
     "VideoFlashbackArmedNotice": "திரை ஃப்ளாஷ்பேக் ஆயுதம் ({{seconds}}s)",
-    "FlashbackArmedNotice": "நீங்கள் {{seconds}} வினாக்களுக்கு இடையிலான flashback பையரைப் பயன்படுத்திக் கொண்டு பதிவு செய்கிறீர்கள்",
-    "CodecTooltip": {
-      "VP9": "இந்த பதிவு சிறந்த தரத்துடன் VP9 பயன்படுத்துகிறது. சில இயல்புநிலை வீடியோ பிளேயர்கள் — உதாரணமாக Windows Media Player மற்றும் macOS இல் QuickTime — இந்த வடிவமைப்பை ஆதரிக்காவிட்டால், நம்பகமான பிளேபேக்குக்காக நவீன உலாவியை (Chrome அல்லது Edge) அல்லது VLC போன்ற பிளேயரை பயன்படுத்த பரிந்துரைக்கிறோம்.",
-      "VP8": "இந்த பதிவு சிறந்த தரத்துடன் VP8 பயன்படுத்துகிறது. சில இயல்புநிலை வீடியோ பிளேயர்கள் — உதாரணமாக Windows Media Player மற்றும் macOS இல் QuickTime — இந்த வடிவமைப்பை ஆதரிக்காவிட்டால், நம்பகமான பிளேபேக்குக் க்காக நவீன உலாவியை (Chrome அல்லது Edge) அல்லது VLC போன்ற பிளேயரை பயன்படுத்த பரிந்துரைக்கின்றோம்."
-    }
+    "VideoQuality": "வீடியோ தரம்",
+    "ZeroSize": "~0 MB/min, ~0 GB/hour"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "பகுதி தேர்வு செய்யப்பட்டது",
     "CustomRegion": "தனிப்பயன் பகுதி: {{width}} × {{height}} பிக்சல்ஸ்",
-    "ReselectRegion": "பகுதியை மீண்டும் தேர்வு செய்யவும்",
-    "SelectCustomRegion": "தனிப்பயன் பகுதியை தேர்வு செய்யவும்",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "பகுதி தேர்வு செய்யப்பட்டது",
+    "ReselectRegion": "பகுதியை மீண்டும் தேர்வு செய்யவும்",
+    "SelectCustomRegion": "தனிப்பயன் பகுதியை தேர்வு செய்யவும்"
   },
   "WindowPicker": {
-    "Title": "ஒரு சாளரத்தைத் தேர்ந்தெடுக்கவும்",
     "Instruction": "சாளர பதிவுகளைப் பிடிக்க ஒரு சாளரத்தைத் தேர்ந்தெடுக்கவும்.",
-    "Refresh": "புதுப்பிக்கவும்",
-    "Refreshing": "புத்துணர்ச்சியளிக்கிறது…",
     "Loading": "சாளரங்களை ஏற்றுகிறது…",
     "None": "சாளரங்கள் எதுவும் கண்டறியப்படவில்லை. பயன்பாட்டைத் திறந்து புதுப்பிக்கவும்.",
+    "Refresh": "புதுப்பிக்கவும்",
+    "Refreshing": "புத்துணர்ச்சியளிக்கிறது…",
+    "Title": "ஒரு சாளரத்தைத் தேர்ந்தெடுக்கவும்",
     "Unknown": "பெயரிடப்படாத சாளரம்"
-  },
-  "Common": {
-    "Configure": "அமைக்கவும்",
-    "Cancel": "ரத்து செய்",
-    "Apply": "பயன்படுத்துஅ",
-    "Close": "மூடு",
-    "Open": "திற",
-    "Minimize": "சிறியபடுத்தி நுழை",
-    "Recording": "பதிவு",
-    "UnknownApp": "அறியப்படாத பயன்பாடு",
-    "Done": "முடிந்தது",
-    "Save": "சேமி",
-    "Saving": "சேமித்து வருகிறது...",
-    "Delete": "நீக்கு",
-    "Or": "அல்லது",
-    "Loading": "ஏற்றப்படுகிறது...",
-    "Expand": "விரிவாக்கு",
-    "PlannedFeature": "திட்டமிடப்பட்ட அம்சம்",
-    "Screen": "திரை",
-    "Window": "சாளரம்",
-    "Region": "பிரிவு",
-    "AppTitle": "SeaMeet திரையரங்கி & ஒலி பதிவி",
-    "AppSubtitle": "சாதனத்தின் உள்ளீட்டு மற்றும் வெளியீட்டு ஆடியோவுகளை பதிவு செய்",
-    "Screenshot": "படம் பிடி",
-    "Saved": "சேமிக்கப்பட்டது",
-    "Processing": "செயலாக்கம் நடைபெற்று வருகிறது…",
-    "Starting": "தொடங்குகிறது...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} காப்பியிடப்பட்டது. இரட்டு கிளிக் செய்து கோப்பு பெயரை மாற்றவும்.",
-    "ApplyName": "பெயரைச் சேர்க்கவும்",
-    "Send": "அனுப்பு"
-  },
-  "RecordingControls": {
-    "StartRecording": "பதிவைத் தொடக்கம்",
-    "StopRecording": "பதிவை நிறுத்து",
-    "ContinueRecording": "பதிவை தொடரவும்",
-    "Pause": "இடைநிறுத்தல்",
-    "Resume": "பதிவை மீண்டும் தொடங்கவும்",
-    "Stop": "நிறுத்து",
-    "RecordingScreen": "பதிவு திரை",
-    "RecordingAudio": "ஆடியோ பதிவேடு..",
-    "AudioRecording": "ஆடியோ பதிவு",
-    "VideoRecording": "வீடியோ பதிவு",
-    "RecordingPreview": "பதிவு முன்னோட்டம்",
-    "RecordingMode": "பதிவு அமைப்புகள்"
-  },
-  "RecordingModes": {
-    "RecordAudio": "கால்",
-    "RecordAudioTip": "பொது கேட்கும்",
-    "RecordWindow": "ஜன்னல்",
-    "RecordWindowTip": "ஒரு பயன்பாட்டு ஜன்னலைப் பதிவு செய்க",
-    "RecordFullscreen": "முழுமையாக",
-    "RecordFullscreenTip": "உங்கள் முழு திரைக்குப் பதிவு செய்க",
-    "RecordRegion": "பகுதி",
-    "RecordRegionTip": "தனிப்பயன் பகுதியை பிடிக்கவும்",
-    "CaptureMode": "பிடிப்பு பயன்பாடு",
-    "FullScreen": "முழு திரை",
-    "AreaCapture": "பகுதி பிடிப்பு"
-  },
-  "RecordingsList": {
-    "NoRecordings": "இதுவரை பதிவுகள் இல்லை. அவற்றை இங்கே பார்க்க பதிவைத் தொடங்கவும்.",
-    "RecentRecordings": "சமீபத்திய பதிவுகள்",
-    "RecentCaptures": "சமீபத்திய பிடிப்புகள்",
-    "RefreshRecordings": "பதிவுகளைப் புதுப்பிக்கவும்",
-    "SearchRecordingsOrSnapshots": "பதிவுகள் மற்றும் ஸ்னாப்ஷாட்கள் தேடுக",
-    "SearchRecordingsPlaceholder": "பதிவுகள் தேடுக",
-    "ShowInFolder": "கோப்புறைப் பாதையில் காட்டுக",
-    "CopyFileName": "கோப்பின் பெயரை நகலெடுக்கவும்",
-    "CopyFilePath": "கோப்புறையின் பாதையை நகலெடுக்கவும்",
-    "FileNameCopied": "{{fileName}} கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
-    "FilePathCopied": "கோப்புறையின் பாதை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
-    "SaveAs": "சேமிக்கவும் (பதிவிடவும்)",
-    "OpenSaveFolder": "கோப்புறையை திறக்கவும்",
-    "Title": "பதிப்புகள்",
-    "Recovered": "{{count}} பதிவுகள் மீட்டெடுக்கப்பட்டன"
-  },
-  "FileImport": {
-    "ImportMedia": "மீடியா இறக்கு",
-    "DragDropFiles": "உங்கள் ஒலி, வீடியோ மற்றும் படங்களை இங்கே இழுத்து விடவும்",
-    "DragDropSubtitle": "ஒலி, வீடியோ மற்றும் படங்களை இங்கே இடவும்",
-    "BrowseFiles": "கோப்புகளை உலாவி",
-    "Supported": "ஆதரிக்கப்படுகிறது",
-    "SupportedFormats": "ஆதரிக்கப்படும்: MP3, WAV, M4A, WebM, OGG, PNG, JPG மற்றும் மேலும்",
-    "VideoImportCopying": "வீடியோ கோப்பை நகலெடுக்கிறது...",
-    "VideoImportSaving": "வீடியோ கோப்பை சேமிக்கிறது...",
-    "VideoUnsupported": "இந்த வீடியோ வடிவம் செயலியில் இயக்க முடியாமல் போகலாம். கோப்பு இன்னும் இறக்குமதி செய்யப்படும்."
-  },
-  "AudioControls": {
-    "AudioCapture": "ஆಡಿಯோ பிடித்து",
-    "AudioMix": "ஓலி கலப்பு",
-    "AudioSessionsLog": "பாப்பணிக்கட்டுகள்",
-    "AudioSource": "அசையல் மூலம்:",
-    "InputDevice": "உள்ளீடு சாதனம்:",
-    "Microphone": "மைக்ரோபோன்",
-    "MicrophoneLabel": "மைக்ரோபோன் {{id}}",
-    "RecordingDefaultMicrophone": "இயல்பான மைக்ரோபோன்",
-    "RecordingInputLabel": "உள்ளீடு: {{name}}",
-    "RecordingSettings": "பதிவுசெய்யும் அமைப்புகள்",
-    "RecordingType": "பதிவு வகை:",
-    "RefreshMicrophoneList": "மைக்ரோபோன் பட்டியலை புதுப்பிக்கவும்",
-    "MicrophoneGainWarning": "உயர்ந்த மைக்ரோபோன் gain பக்க விளைவாக speaker playஐ பிடிக்க வாய்ப்பு உள்ளது. ஹேட்ஃபோன்கள் பயன்படுத்தவும் அல்லது மைக்ரோபோன் gain-ஐ குறைக்கவும்."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "பதிவு தொடங்கு",
-    "Ready": "தயார்?",
-    "BufferingMoment": "நொடி படப்பிடிப்பு...",
-    "RecordWithFlashback": "பதிவுடன் பின்ந farmland நினைவு",
-    "NeverMissAMoment": "ஒரு தருணத்தையும் தவறவிடவேண்டாம்.",
-    "ReadyToGuard": "உங்கள் {{type}} பாதுகாப்பதற்கு தயார்?",
-    "FillingBuffer": "{{duration}}-விநாடி Flashback பைபரை நிரப்பிவருகிறது... {{progress}}%.",
-    "ReadyToCapture": "SeaMeet பதிவு செய்ய தயாராக உள்ளது.",
-    "DescNone": "உங்கள் திரைப் பிரதேசம், ஒலி அல்லது ஸ்க்ரீன்ஷாட் எடு. மேலே ஒரு flashback பயன்முறையை தேர்வு செய்து சிண்டையிடுங்கள்.",
-    "DescInit": "SeaMeet-ஐ 'பதிவு' துவக்கவும் என்று சொல்ல 'Ready?' என்பதை கிளிக் செய்யவும்.",
-    "DescCharging": "உங்கள் {{duration}}-விநாடி வாள்தளத்தை தயாராக்கும்... மறக்க வேண்டிய தருணங்களை பிடிக்க தயாராக உள்ளது. {{progress}}% நிறைவு.",
-    "DescReady": "Flashback ஆயுதப்படுத்தப்பட்டு உள்ளது. நீங்கள் பதிவு शुरू করলে, கடந்த {{duration}} விநாடிகள் {{type}} இல் சேர்க்கப்படும் — தவறவிட்ட தருணங்களை மீண்டும் கவலைப்பட வேண்டாம்.",
-    "Screen": "திரை",
-    "Audio": "ஆடியோ",
-    "OpenLauncher": "லாஞ்சரை திற",
-    "OpenFloater": "புகுந்து திற",
-    "TakeScreenshot": "ஸ்கிரீனம் எடு",
-    "Buffering": "பைபர் நிரப்பு",
-    "SavingFlashback": "பின்னணி நினைவு சேமித்தல்…",
-    "SaveLastFlashback": "கடைசிக் {{duration}} வினாடிகள் பின்புற நினைவைக் சேமிக்கவும்",
-    "PrivacyProtected": "உங்கள் தனிப்பட்ட தகவல் பாதுகாக்கப்பட்டது.",
-    "PrivacyDesc": "SeaMeet சிவில் உள் கணினியின் RAM இல் உள்ள சுற்றுச்சுழற்சி பைபரில் கடந்த {{duration}} {{type}} வை ஸ்நாப்சுட் செய்கிறது.",
-    "FlashbackOff": "பின்ந farmland தற்போது இயங்கி வழியில்லை. எந்த நேரத்திலும் சாதாரண பதிவைத் தொடங்கலாம் அல்லது மேலே பின்ந farmland இயங்கும் (குரல் அல்லது திரை) முறையை தேர்வு செய்து வீர இட வசதியைச் சேமிக்கவும்.",
-    "FlashbackInitAudio": "உங்கள் குரலை பாதுகாக்க தயாரா?",
-    "FlashbackInitScreen": "உங்கள் திரையை பாதுகாக்க தயாரா?",
-    "FlashbackInitDescription": "SeaMeet-ஐ 'பதிவு' துவக்கவனது என்பதை கூற 'Ready?' என்பதை கிளிக் செய்யவும்.",
-    "FlashbackCharging": "{{seconds}} வினாடிகளின் பைபர் நிரப்பு... {{percent}}%",
-    "FlashbackChargingDescription": "உங்கள் {{seconds}}-விநாடி சாளரத்தை தயார் செய்து கொண்டிருக்கிறது... {{percent}}% முடிந்தது.",
-    "FlashbackReadyQuestion": "தயாரா?",
-    "FlashbackReady": "நீங்களும் மறக்க முடியாது போகும் தருணங்களையும் தவற விட முடியாமல் கவனமாக இருங்கள்.",
-    "FlashbackReadyDescription": "பின்ந farmland நினைவு இயங்கியுள்ளது. நீங்கள் பதிவுக்கு {{seconds}} வினாடிகள் மற்றும் {{type}} உள்ளடக்கம் சேர்க்கப்படும்.",
-    "FlashbackBuffering": "பைபர்...",
-    "SaveFlashback": "கடைசிக் {{seconds}} வினாடிகள் பின்புல நினைவைக் சேமிக்கவும்",
-    "FlashbackPrivacy": "உங்கள் தனியுரிமை பாதுகாக்கப்படுகிறது. உள்ளீடு RAM-ல் உள்ளூர் சேமிக்கப்படுகிறது.",
-    "Capturing": "பிடித்து வருகிறது...",
-    "CaptureMode": "பிடிப்பு முறை",
-    "FullScreen": "முழு திரை",
-    "AreaCapture": "பிரதேச பதிவு",
-    "KeepWindowVisible": "ஸ்கிரீன் சான்று எடுத்தபோது SeaMeet ஜ விண்டோவை காணத்தக்கதாக்கு",
-    "FlashbackMismatch": "பின்ந farmland இயங்கு மாறுபடுகிறது. குரல் பதிவும் செயல் படுத்தப்பட்டிருக்கையில் வீடியோ பின்ந farmland இயங்கு செயல் படுத்தப்பட்டுள்ளது. தயவுசெய்து வீடியோ பின்ந farmland-ஐ முடக்கவும்."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "SeaMeet உரையாடலை இயற்ப்புமாறு செயற்படுத்து",
-    "SignInRequired": "உள்நுழைய வேண்டும்",
-    "ProcessingMode": "செயலாக்கை நிலை",
-    "Realtime": "நேரடி",
-    "RealtimeDescription": "நீங்கள் பதிவு செய்யும் போது நடைபெறும் நேரடி ஒளிபரப்பு",
-    "Diarized": "பிரிப்புச் செய்யப்பட்டது",
-    "DiarizedDescription": "பேசுபவர் அடையாளத்துக்காக ஆடியோ பதிவை பதிவேற்றவும்",
-    "ComingSoon": "(இறுதியாக வருவதாக உள்ளது)",
-    "TranscriptionLanguage": "பார்வைமுறை மொழி",
-    "TranslationLanguage": "மொழி",
-    "NoTranslation": "Translation இல்லை",
-    "LanguageHint": "பதிவுசெய்யும் போது நீங்கள் மொழியை மாற்றலாம்",
-    "LiveTranscription": "நேரடி பார்வைமுறை",
-    "WaitingForSpeech": "பேசுவதற்காக காத்திருக்கின்றது...",
-    "UnknownSpeaker": "பேச்சாளர்",
-    "SegmentCount": "{{count}} பகுதி",
-    "SegmentCount_plural": "{{count}} பகுதி",
-    "ConnectionError": "SeaMeet-க்கு இணைய முடியவில்லை",
-    "Reconnecting": "மீள்கூட்டப்படுத்தல் Bookmark...",
-    "Connected": "SeaMeet இக்கு இணைக்கப்பட்டது",
-    "Disconnected": "SeaMeet இல் இருந்து துண்டிக்கப்பட்டது",
-    "NowSpeaking": "இப்போது பேசுகின்றனர்...",
-    "Transcript": "ஒளிபரப்பைத் தமிழில் மாற்றியது",
-    "LoadingTranscript": "ஒளிபரப்பை ஏற்றிக் கொள்ளப்படுகிறது...",
-    "NoTranscript": "பார்வைமுறை இல்லை",
-    "FetchError": "பார்வைமுறையை ஏற்றுவதில் தவறு",
-    "Retry": "மீள முயற்சி செய்க",
-    "Transcribed": "தமிழில் தொகுக்கப்பட்டது",
-    "Content": "SeaMeet உள்ளடக்கம்",
-    "Tab": {
-      "transcription": "பார்வைமுறை",
-      "summary": "சுருக்கம்",
-      "actionItems": "நடவடிக்கை பொருட்கள்",
-      "notes": "குறிப்புகள்"
-    },
-    "Summary": "சுருக்கம்",
-    "NoSummary": "சுருக்கம் இன்னும் கிடைக்கவில்லை.",
-    "ActionItems": "நடவடிக்கை பொருட்கள்",
-    "NoActionItems": "இந்த கூட்டத்திற்கான நடவடிக்கைகள் இல்லை",
-    "DueDate": "கடைசி தேதி: {{date}}",
-    "Notes": "குறிப்பு",
-    "NoNotes": "இந்த கூடுதலுக்கு குறிப்புகள் எதுவும் இல்லை",
-    "LoadingContent": "SeaMeet உள்ளடக்கம் ஏற்றப்படுகிறது...",
-    "SeekToTime": "இந்த நேரத்திலிருந்து play செய்ய கிளிக் செய்க",
-    "CollapseNowSpeaking": "தற்போது பேசும் பகுதியை ஒதுக்குக",
-    "ExpandNowSpeaking": "தற்போது பேசும் பகுதியை விரிவாக்கு"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Flashback பைபர் காலியாக உள்ளது. சில நிமிடங்களில் மீண்டும் முயற்சிக்கவும்.",
-    "EnableFlashback": "ஒரு தருணத்தை சேமிக்கும் வகையில் flashback ஐ இயங்கச் செய்கிறது.",
-    "FailedToSave": "flashback பைபர் சேமிக்க இயலவில்லை.",
-    "SavedFlashback": "சேமிக்கப்பட்ட flashback-ஐ பதிவுகளில் சேமிக்கவும்.",
-    "StillCharging": "Flashback பைபர் இன்னும் சார்ஜ் செய்கிறது."
-  },
-  "AISummary": {
-    "TabTitle": "AI சுருக்கம்",
-    "SetupRequired": "AI சுருக்கங்களை இயக்க, உங்கள் ஜெமினி API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
-    "EnableRequired": "AI சுருக்கங்களைப் பார்க்க, AI அம்சங்களை அமைப்புகள் → AI அம்சங்களில் இயக்கவும்.",
-    "ExportMarkdown": "மார்க் டவுனாக நகலெடுக்கவும்",
-    "ExportSrt": "SRT ஆக நகலெடுக்கவும்",
-    "ExportJson": "JSON ஆக நகலெடுக்கவும்",
-    "Regenerate": "சுருக்கத்தை மீண்டும் உருவாக்கவும்",
-    "Minimize": "குறைக்கவும்",
-    "Maximize": "முழு பார்வைக்கு விரிவாக்கு",
-    "Queued": "செயலாக்கத்திற்கு வரிசையில் உள்ளது...",
-    "Processing": "சுருக்கத்தை உருவாக்குகிறது...",
-    "Error": "சுருக்கத்தை ஏற்றுவதில் தோல்வி: {{error}}",
-    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் உருவாக்க முயற்சிக்கவும்.",
-    "Retry": "மீண்டும் முயற்சிக்கவும்",
-    "NoSummary": "இதுவரை AI சுருக்கம் இல்லை.",
-    "Generate": "சுருக்கத்தை உருவாக்கவும்",
-    "Copy": "நகலெடுக்கவும்",
-    "NoSummaryText": "சுருக்கம் கிடைக்கவில்லை.",
-    "Topics": "தலைப்புகள்:",
-    "NoTranscript": "டிரான்ஸ்கிரிப்ட் கிடைக்கவில்லை.",
-    "NoActions": "செயல் உருப்படிகள் எதுவும் அடையாளம் காணப்படவில்லை.",
-    "NoDecisions": "முக்கிய முடிவுகள் எதுவும் அடையாளம் காணப்படவில்லை.",
-    "Export": {
-      "HeadingSummary": "சுருக்கம்",
-      "HeadingActionItems": "செயல் பொருட்கள்",
-      "HeadingKeyDecisions": "முக்கிய முடிவுகள்",
-      "HeadingTranscription": "படியெடுத்தல்"
-    },
-    "Tab": {
-      "Summary": "சுருக்கம்",
-      "Transcription": "டிரான்ஸ்கிரிப்ட்",
-      "ActionItems": "செயல்கள்",
-      "KeyDecisions": "முடிவுகள்",
-      "Agent": "முகவர்"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "AI அம்சங்கள்",
-    "MenuItem": "AI-இயக்கப்படும் சுருக்கங்கள்",
-    "PageTitle": "AI அம்சங்கள்",
-    "EnableToggle": "AI-இயங்கும் சுருக்கங்களை இயக்கு",
-    "EnableToggleDesc": "இலவச ஜெமினி API விசை தேவை",
-    "ApiKeySection": "ஜெமினி API விசை",
-    "ApiKeyLabel": "ஜெமினி API விசை",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
-    "ShowKey": "விசையைக் காட்டு",
-    "HideKey": "விசையை மறை",
-    "TestKey": "சேமித்து சரிபார்க்கவும்",
-    "Saving": "சேமிக்கிறது...",
-    "GetKeyLink": "Google AI Studio → இலிருந்து இலவச API விசையைப் பெறுங்கள்",
-    "ClearKey": "சேமித்த விசையை அகற்று",
-    "KeyVerified": "விசை சரிபார்க்கப்பட்டது",
-    "KeyInvalid": "தவறான விசை",
-    "KeyTesting": "சோதனை...",
-    "KeyNotConfigured": "விசை எதுவும் கட்டமைக்கப்படவில்லை",
-    "ModelSection": "AI மாதிரி",
-    "ModelLabel": "ஜெமினி மாதிரி",
-    "SelectedModel": "தேர்ந்தெடுக்கப்பட்டது: {{model}}",
-    "AutomationSection": "ஆட்டோமேஷன்",
-    "AutoSummary": "தானாக உருவாக்கும் சுருக்கம்",
-    "AutoSummaryDesc": "ஒவ்வொரு பதிவு முடிந்ததும் இயங்கும்",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "பரிந்துரைக்கப்படுகிறது · வேகமாக + திறன்",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "மலிவான நிலையான விருப்பம்",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "மிக மலிவானது",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "அதிகபட்ச திறன்",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "சிறந்த நிலையான பகுத்தறிவு"
-    },
-    "ClaudeKey": {
-      "Section": "கிளாட் API விசை (முகவர்)",
-      "SourceLabel": "செயலில் உள்ள ஆதாரம்:",
-      "SourceByok": "உங்கள் API விசை (BYOK)",
-      "SourceKeyServer": "சீமீட்டால் நிர்வகிக்கப்படுகிறது",
-      "SourceCli": "கிளாட் குறியீடு CLI",
-      "SourceNone": "கட்டமைக்கப்படவில்லை",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••••(சேமிக்கப்பட்ட)",
-      "ShowKey": "விசையைக் காட்டு",
-      "HideKey": "விசையை மறை",
-      "TestKey": "சேமித்து சரிபார்க்கவும்",
-      "Saving": "சேமிக்கிறது...",
-      "ClearKey": "சேமித்த விசையை அகற்று",
-      "KeyVerified": "விசை சரிபார்க்கப்பட்டது",
-      "KeyInvalid": "தவறான விசை",
-      "KeyTesting": "சோதனை...",
-      "KeyNotConfigured": "விசை எதுவும் கட்டமைக்கப்படவில்லை",
-      "GetKeyLink": "ஆந்த்ரோபிக் கன்சோலில் இருந்து API விசையைப் பெறவும் →",
-      "QuotaSection": "முக்கிய சேவையக ஒதுக்கீடு",
-      "QuotaRemaining": "{{remaining}} / {{limit}} டோக்கன்கள் மீதமுள்ளன",
-      "QuotaResetDate": "{{date}} இல் மீட்டமைக்கப்படுகிறது",
-      "QuotaLoading": "ஒதுக்கீட்டை ஏற்றுகிறது...",
-      "QuotaRefresh": "ஒதுக்கீட்டைப் புதுப்பிக்கவும்",
-      "CliSection": "கிளாட் குறியீடு CLI",
-      "CliInstalled": "நிறுவப்பட்டது ({{version}})",
-      "CliNotInstalled": "கிளாட் CLI கிடைக்கவில்லை",
-      "CliInstallLink": "கிளாட் குறியீட்டை நிறுவவும் →",
-      "ModelSection": "இயல்புநிலை கிளாட் மாதிரி",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "வேகமான & மலிவான",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "பரிந்துரைக்கப்படுகிறது · சமப்படுத்தப்பட்டது",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "மிகவும் திறமையானவர்"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AI முகவர் & சகப்பணி",
-    "PageTitle": "AI முகவர் & சகப்பணி",
-    "SectionTitle": "AI முகவர் & சகப்பணி",
-    "EnableToggle": "AI முகவர் & சகப்பணியை இயக்கவும்",
-    "EnableToggleDesc": "Claude API விசை தேவை",
-    "DisabledBadge": "முடக்கப்பட்டது",
-    "DisabledMsg": "AI முகவர் & சகப்பணி முடக்கப்பட்டுள்ளது. அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்.",
-    "DisabledTabHint": "AI முகவர் முடக்கப்பட்டுள்ளது - அமைப்புகள் → AI முகவர் & சகப்பணியில் அதை இயக்கவும்",
-    "NotConfiguredMsg": "Claude API விசை எதுவும் கட்டமைக்கப்படவில்லை. அமைப்புகள் → AI ஏஜென்ட் & கோவொர்க்கில் ஒன்றை அமைக்கவும்."
-  },
-  "PipelineStatus": {
-    "Queued": "சுருக்கம் வரிசையில் உள்ளது...",
-    "Running": "சுருக்கத்தை உருவாக்குகிறது...",
-    "Progress": "{{total}} இல் {{current}} பகுதியை செயலாக்குகிறது",
-    "Done": "சுருக்கம் தயார்",
-    "Error": "செயலாக்கம் தோல்வியடைந்தது"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "AI உடன் செயல்முறை",
-    "Queuing": "வரிசையில் நிற்கிறது...",
-    "ProcessingWithTime": "செயலாக்குகிறது... {{sec}}s",
-    "Describe": "படத்தை விவரிக்கவும்",
-    "DescribeSub": "இந்த ஸ்கிரீன்ஷாட்டில் என்ன இருக்கிறது?",
-    "Ocr": "உரையை பிரித்தெடுக்கவும் (OCR)",
-    "OcrSub": "காணக்கூடிய அனைத்து உரைகளையும் படிக்கவும்",
-    "Custom": "தனிப்பயன் உடனடி",
-    "CustomPlaceholder": "இந்தப் படத்தைப் பற்றி ஏதாவது கேளுங்கள்...",
-    "ResultLabel": "AI முடிவு",
-    "Description": "விளக்கம்",
-    "ExtractedText": "பிரித்தெடுக்கப்பட்ட உரை",
-    "Analysis": "பகுப்பாய்வு",
-    "PipelineError": "AI செயலாக்கம் தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.",
-    "UnknownError": "அறியப்படாத பிழை"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "கோப்பைப் படிக்கிறது...",
-      "Executing": "செயல்படுத்துகிறது...",
-      "Running": "இயங்குகிறது...",
-      "Input": "உள்ளீடு",
-      "Output": "வெளியீடு",
-      "Pattern": "முறை:",
-      "ShowDetails": "விவரங்களைக் காட்டு",
-      "AndMoreLines": "... மேலும் {{count}} வரிகள்"
-    },
-    "Streaming": {
-      "Thinking": "நினைத்து...",
-      "LongRunning": "வழக்கத்தை விட அதிக நேரம் ஓடுகிறது",
-      "ToolStuck": "கருவி சிக்கியிருக்கலாம்",
-      "ForceStop": "கட்டாயம் நிறுத்து",
-      "GeneratingResponse": "பதிலை உருவாக்குகிறது...",
-      "RunningTool": "{{tool}} இயங்குகிறது..."
-    },
-    "Permission": {
-      "Title": "கருவி அனுமதி கோரிக்கை",
-      "Allow": "ஒருமுறை அனுமதிக்கவும்",
-      "AllowSession": "அமர்வுக்கு அனுமதி",
-      "Deny": "மறுக்கவும்",
-      "Allowed": "அனுமதிக்கப்பட்டது",
-      "Denied": "மறுக்கப்பட்டது"
-    },
-    "Title": "AI முகவர்",
-    "GlobalTitle": "AI முகவர்",
-    "NewSession": "புதிய அமர்வு",
-    "Sessions": "அமர்வுகள்",
-    "NoSessions": "இன்னும் அமர்வுகள் இல்லை. கீழே உரையாடலைத் தொடங்கவும்.",
-    "SendPlaceholder": "எதையும் கேள்... (அனுப்புவதற்கு உள்ளிடவும், புதிய வரிக்கு Shift+Enter)",
-    "SendButton": "அனுப்பு",
-    "StopButton": "நிறுத்து",
-    "NotConfigured": "முகவரைப் பயன்படுத்த, Claude API விசையை அமைப்புகள் → AI அம்சங்களில் உள்ளமைக்கவும்.",
-    "GoToSettings": "அமைப்புகளைத் திறக்கவும்",
-    "SessionCost": "அமர்வு: {inputTokens}_ இல் /{outputTokens}_ டோக்கன்கள்",
-    "CommandHelp": "கட்டளைகள்: /புதிய · /தெளிவு · /செலவு · /உதவி",
-    "Mode": {
-      "Ask": "கேள்",
-      "Code": "குறியீடு",
-      "Plan": "திட்டம்"
-    },
-    "Model": {
-      "Haiku": "ஹைக்கூ",
-      "Sonnet": "சொனட்",
-      "Opus": "ஓபஸ்"
-    },
-    "QuickAction": {
-      "Summarize": "இந்தப் பதிவைச் சுருக்கவும்",
-      "ActionItems": "செயல் உருப்படிகளைக் கண்டறியவும்",
-      "DraftEmail": "வரைவு பின்தொடர்தல் மின்னஞ்சல்"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "நீங்கள் எனக்கு என்ன உதவி செய்யலாம்?",
-      "HelpAnalyze": "எனது சமீபத்திய பதிவுகளை பகுப்பாய்வு செய்ய எனக்கு உதவுங்கள்"
-    },
-    "AssetContext": "சூழல்: {{name}}"
   }
 }

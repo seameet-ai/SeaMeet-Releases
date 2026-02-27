@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "إصدار متجر التطبيقات",
     "DirectBuild": "إصدار مباشر",
-    "SubtitleBadge": "مسجل سريع ووكيل",
-    "Version": "v{{version}}",
+    "HelpTranslate": "ساعدنا في ترجمة SeaMeet →",
     "Loading": "جار التحميل...",
-    "HelpTranslate": "ساعدنا في ترجمة SeaMeet →"
+    "SubtitleBadge": "مسجل سريع ووكيل",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "الإنتاجية",
-    "Social": "اجتماعي",
-    "Gaming": "الألعاب",
-    "Recording": "التسجيل",
-    "Browsers": "المتصفحات",
-    "BrowserBased": "قائم على المتصفح"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "آخر",
+      "Skip": "يتخطى",
+      "Submit": "يُقدِّم",
+      "Title": "سؤال",
+      "TypeResponse": "اكتب ردك..."
+    },
+    "AssetContext": "السياق: {{name}}",
+    "CommandHelp": "الأوامر: /جديد · /واضح · /التكلفة · /مساعدة",
+    "GlobalTitle": "وكيل منظمة العفو الدولية",
+    "GoToSettings": "افتح الإعدادات",
+    "Mode": {
+      "Ask": "بسأل",
+      "Code": "شفرة",
+      "Plan": "يخطط"
+    },
+    "Model": {
+      "Haiku": "هايكو",
+      "Opus": "التأليف",
+      "Sonnet": "السوناتة"
+    },
+    "NewSession": "جلسة جديدة",
+    "NoSessions": "لا توجد جلسات بعد. ابدأ محادثة أدناه.",
+    "NotConfigured": "قم بتكوين مفتاح Claude API في الإعدادات → ميزات الذكاء الاصطناعي لاستخدام الوكيل.",
+    "Permission": {
+      "Allow": "السماح مرة واحدة",
+      "Allowed": "مسموح",
+      "AllowSession": "السماح للجلسة",
+      "Denied": "رفض",
+      "Deny": "ينكر",
+      "Title": "طلب إذن الأداة"
+    },
+    "Plan": {
+      "Approve": "الموافقة على الخطة",
+      "DefaultFeedback": "طلب المستخدم التغييرات",
+      "Description": "لقد قام الوكيل بإعداد خطة أعلاه ويحتاج إلى موافقتك للمضي قدمًا.",
+      "FeedbackPlaceholder": "قم بوصف التغييرات التي تريدها...",
+      "PlanDetails": "تفاصيل الخطة",
+      "RequestChanges": "طلب التغييرات",
+      "RequestedPermissions": "الأذونات المطلوبة:",
+      "SendFeedback": "إرسال الملاحظات",
+      "Title": "مراجعة الخطة"
+    },
+    "QuickAction": {
+      "ActionItems": "البحث عن عناصر العمل",
+      "DraftEmail": "مسودة البريد الإلكتروني للمتابعة",
+      "Summarize": "تلخيص هذا التسجيل"
+    },
+    "SendButton": "يرسل",
+    "SendPlaceholder": "اسأل أي شيء... (أدخل للإرسال، Shift+Enter للسطر الجديد)",
+    "SessionCost": "الجلسة: {{inputTokens}} في /{{outputTokens}} الرموز المميزة",
+    "Sessions": "الجلسات",
+    "StopButton": "قف",
+    "Streaming": {
+      "ForceStop": "توقف بالقوة",
+      "GeneratingResponse": "جارٍ إنشاء الاستجابة...",
+      "LongRunning": "الجري لفترة أطول من المعتاد",
+      "RunningTool": "جارٍ تشغيل {{tool}}...",
+      "Thinking": "أفكر...",
+      "ToolStuck": "قد تكون الأداة عالقة"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "ساعدني في تحليل تسجيلاتي الأخيرة",
+      "WhatCanYouDo": "ما الذي يمكنك مساعدتي به؟"
+    },
+    "Title": "وكيل منظمة العفو الدولية",
+    "ToolCall": {
+      "AndMoreLines_one": "... و{{count}} أسطر أخرى",
+      "AndMoreLines_other": "... و{{count}} أسطر أخرى",
+      "Executing": "جاري التنفيذ...",
+      "Input": "مدخل",
+      "Output": "الإخراج",
+      "Pattern": "نمط:",
+      "Reading": "قراءة الملف...",
+      "ShowDetails": "إظهار التفاصيل"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} الإجراءات",
+      "Actions_other": "{{count}} الإجراءات",
+      "Completed_one": "اكتمل {{count}}",
+      "Completed_other": "اكتمل {{count}}",
+      "Running_one": "{{count}} قيد التشغيل",
+      "Running_other": "{{count}} قيد التشغيل"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "عاجز",
+    "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
+    "DisabledTabHint": "تم تعطيل AI Agent — قم بتمكينه في الإعدادات → AI Agent & Cowork",
+    "EnableToggle": "تمكين وكيل الذكاء الاصطناعي والعمل المشترك",
+    "EnableToggleDesc": "يتطلب مفتاح Claude API",
+    "MenuItem": "وكيل الذكاء الاصطناعي والعمل المشترك",
+    "PageTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
+    "SectionTitle": "وكيل الذكاء الاصطناعي والعمل المشترك"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "الجوزاء API مفتاح",
+    "ApiKeySection": "الجوزاء API مفتاح",
+    "AutomationSection": "الأتمتة",
+    "AutoSummary": "إنشاء ملخص تلقائيًا",
+    "AutoSummaryDesc": "يتم تشغيله بعد انتهاء كل تسجيل",
+    "ClaudeKey": {
+      "ClearKey": "إزالة المفتاح المحفوظ",
+      "CliInstalled": "تم التثبيت ({{version}})",
+      "CliInstallLink": "قم بتثبيت كود كلود →",
+      "CliNotInstalled": "لم يتم العثور على كلود CLI",
+      "CliSection": "كلود كود CLI",
+      "GetKeyLink": "احصل على مفتاح API من Anthropic Console →",
+      "HideKey": "إخفاء المفتاح",
+      "KeyInvalid": "مفتاح غير صالح",
+      "KeyPlaceholder": "سك-النمل-...",
+      "KeyPlaceholderSaved": "••••••••• (أنقذ)",
+      "KeyTesting": "اختبار...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "سريع ورخيص",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "الأكثر قدرة",
+      "ModelSection": "نموذج كلود الافتراضي",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "موصى به · متوازن",
+      "QuotaLoading": "جارٍ تحميل الحصة...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} الرموز المميزة المتبقية",
+      "QuotaResetDate": "إعادة التعيين على {{date}}",
+      "Saving": "توفير...",
+      "Section": "مفتاح Claude API (الوكيل)",
+      "ShowKey": "إظهار المفتاح",
+      "SourceByok": "مفتاح API الخاص بك (BYOK)",
+      "SourceCli": "كلود كود CLI",
+      "SourceKeyServer": "تحت إدارة SeaMeet",
+      "SourceLabel": "المصدر النشط:",
+      "SourceNone": "لم يتم تكوينه",
+      "TestKey": "حفظ والتحقق"
+    },
+    "ClearKey": "إزالة المفتاح المحفوظ",
+    "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
+    "EnableToggleDesc": "يتطلب مفتاح Gemini API مجاني",
+    "GetKeyLink": "احصل على مفتاح API مجاني من Google AI Studio →",
+    "GroupTitle": "ميزات الذكاء الاصطناعي",
+    "HideKey": "إخفاء المفتاح",
+    "KeyInvalid": "مفتاح غير صالح",
+    "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
+    "KeyPlaceholder": "ايزاسي...",
+    "KeyPlaceholderSaved": "••••••••• (أنقذ)",
+    "KeyTesting": "اختبار...",
+    "KeyVerified": "تم التحقق من المفتاح",
+    "ManagedKeyDesc": "يتم توفير مفتاح API الخاص بك تلقائيًا. لا حاجة للتكوين.",
+    "ManagedKeyStatus": "المفتاح المُدار - مقدم من SeaMeet",
+    "MenuItem": "ملخصات مدعومة بالذكاء الاصطناعي",
+    "ModelLabel": "نموذج الجوزاء",
+    "Models": {
+      "Gemini25Flash": "الجوزاء 2. فلاش",
+      "Gemini25FlashLite": "الجوزاء 2.5 فلاش لايت",
+      "Gemini25FlashLiteSub": "رخيصة للغاية",
+      "Gemini25FlashSub": "أرخص خيار مستقر",
+      "Gemini25Pro": "الجوزاء 2.5 برو",
+      "Gemini25ProSub": "أفضل المنطق المستقر",
+      "Gemini3Flash": "الجوزاء 3 فلاش",
+      "Gemini3FlashSub": "موصى به · سريع + قادر",
+      "Gemini3Pro": "الجوزاء 3 برو",
+      "Gemini3ProSub": "القدرة القصوى"
+    },
+    "ModelSection": "نموذج الذكاء الاصطناعي",
+    "PageTitle": "ميزات الذكاء الاصطناعي",
+    "QuotaLoading": "جارٍ تحميل الحصة...",
+    "QuotaRefresh": "تحديث الحصة",
+    "QuotaRemaining": "{{remaining}} / {{limit}} الرموز المميزة المتبقية",
+    "QuotaResetDate": "إعادة التعيين على {{date}}",
+    "QuotaSection": "حصة الاستخدام",
+    "Saving": "توفير...",
+    "SelectedModel": "تم التحديد: {{model}}",
+    "ShowKey": "إظهار المفتاح",
+    "TestKey": "حفظ والتحقق"
+  },
+  "AISummary": {
+    "Copy": "ينسخ",
+    "EnableRequired": "قم بتمكين ميزات الذكاء الاصطناعي في الإعدادات → ميزات الذكاء الاصطناعي لرؤية ملخصات الذكاء الاصطناعي.",
+    "Error": "فشل تحميل الملخص: {{error}}",
+    "Export": {
+      "HeadingActionItems": "عناصر العمل",
+      "HeadingKeyDecisions": "القرارات الرئيسية",
+      "HeadingSummary": "ملخص",
+      "HeadingTranscription": "النسخ"
+    },
+    "ExportJson": "انسخ كـ JSON",
+    "ExportMarkdown": "نسخ كتخفيض السعر",
+    "ExportSrt": "انسخ كـ SRT",
+    "GeminiLiveTranscript": "الجوزاء لايف",
+    "Generate": "إنشاء ملخص",
+    "Maximize": "قم بالتوسيع إلى العرض الكامل",
+    "Minimize": "تصغير",
+    "NoActions": "لم يتم تحديد أي عناصر عمل.",
+    "NoChapters": "لا توجد فصول متاحة.",
+    "NoDecisions": "لم يتم تحديد أي قرارات رئيسية.",
+    "NoSummary": "لا يوجد ملخص لمنظمة العفو الدولية حتى الآن.",
+    "NoSummaryText": "الملخص غير متوفر.",
+    "NoTranscript": "النص غير متوفر.",
+    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. حاول التجديد.",
+    "PipelineTranscript": "خط أنابيب الذكاء الاصطناعي",
+    "Processing": "جارٍ إنشاء الملخص...",
+    "Queued": "في قائمة الانتظار للمعالجة...",
+    "Regenerate": "إعادة إنشاء الملخص",
+    "Retry": "أعد المحاولة",
+    "SeekToTimestamp": "تسعى إلى هذا الطابع الزمني",
+    "SetupRequired": "قم بتكوين مفتاح Gemini API الخاص بك في الإعدادات → ميزات الذكاء الاصطناعي لتمكين ملخصات الذكاء الاصطناعي.",
+    "Tab": {
+      "ActionItems": "الإجراءات",
+      "Chapters": "فصول",
+      "KeyDecisions": "القرارات",
+      "Summary": "ملخص",
+      "Transcription": "نص"
+    },
+    "TabTitle": "ملخص الذكاء الاصطناعي",
+    "Topics": "المواضيع:",
+    "Speakers": "المتحدثون",
+    "MergeInto": "دمج مع…",
+    "ApplyMerge": "تطبيق",
+    "EditSegmentSpeaker": "انقر لإعادة تعيين هذا القطاع"
   },
   "App": {
     "FailedToEnableFlashback": "فشل في تفعيل العودة للماضي: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "جميع التطبيقات",
-    "Teams": "Microsoft Teams (للعمل/المدرسة)",
-    "TeamsConsumer": "Microsoft Teams (شخصي)",
-    "TeamsWeb": "فريق Microsoft (نسخة الويب)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (الويب)",
+    "Battlenet": "باتل.نت",
+    "Brave": "متصفح برِيف",
+    "CallOfDuty": "كوول أوف دوتي",
     "Chrome": "متصفح Chrome",
-    "Edge": "متصفح Edge",
-    "Firefox": "متصفح فايرفوكس",
-    "WhatsApp": "WhatsApp",
-    "Line": "لاين",
-    "WeChat": "ويشات",
     "Discord": "Discord",
     "DiscordWeb": "Discord (الويب)",
+    "Edge": "متصفح Edge",
+    "EpicGames": "مشغل Epic Games",
+    "Firefox": "متصفح فايرفوكس",
+    "Fortnite": "Fortnite (فورتنايت)",
+    "GoogleMeet": "اجتماع Google",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "لاين",
+    "Medal": "Medal.tv",
+    "Obs": "ستوديو OBS",
+    "Opera": "متصفح أوبرا",
+    "Other": "تطبيقات أخرى",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "سكراولك (نسخة الويب)",
-    "GoogleMeet": "اجتماع Google",
-    "WebexWeb": "ويبكس (نسخة الويب)",
-    "WindowsSoundRecorder": "مسجل الصوت في Windows",
-    "Other": "تطبيقات أخرى",
-    "Obs": "ستوديو OBS",
-    "Twitch": "تويتش",
-    "XboxGameBar": "شريط ألعاب Xbox",
-    "Battlenet": "باتل.نت",
-    "EpicGames": "مشغل Epic Games",
-    "Signal": "Signal",
-    "Telegram": "تليجرام",
     "SteamChat": "دردشة ستيم",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "متصفح أوبرا",
-    "Brave": "متصفح برِيف",
-    "Valorant": "فالورنت",
-    "Fortnite": "Fortnite (فورتنايت)",
-    "CallOfDuty": "كوول أوف دوتي",
-    "Roblox": "Roblox",
-    "TeamSpeak": "تيم سبيك",
     "Streamlabs": "سطح مكتب Streamlabs",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (للعمل/المدرسة)",
+    "TeamsConsumer": "Microsoft Teams (شخصي)",
+    "TeamSpeak": "تيم سبيك",
+    "TeamsWeb": "فريق Microsoft (نسخة الويب)",
+    "Telegram": "تليجرام",
+    "Twitch": "تويتش",
+    "Valorant": "فالورنت",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "ويبكس (نسخة الويب)",
+    "WeChat": "ويشات",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "مسجل الصوت في Windows",
+    "XboxGameBar": "شريط ألعاب Xbox",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (الويب)"
+  },
+  "AudioControls": {
+    "AudioCapture": "التقاط الصوت",
+    "AudioMix": "مزج الصوت",
+    "AudioSource": "مصدر الصوت:",
+    "Microphone": "ميكروفون",
+    "MicrophoneGainWarning": "مستوى الميكروفون العالي يمكن أن يلتقط صوت السماعات حتى عند إيقاف \"صوت النظام\". استخدم سماعات الرأس أو خفض مستوى الميكروفون للتسجيلات التي تقتصر على الميكروفون فقط.",
+    "RecordingDefaultMicrophone": "الميكروفون الافتراضي",
+    "RecordingSettings": "إعدادات التسجيل",
+    "RefreshMicrophoneList": "تحديث قائمة الميكروفونات"
   },
   "AutoDetectInfoModal": {
-    "Title": "الكشف التلقائي عن الاجتماعات",
-    "Subtitle": "لن تفوت اجتماعًا مرة أخرى",
-    "Description": "يبدأ الـ Auto-Detect التسجيل تلقائيًا عند الانضمام إلى الاجتماعات، لذلك لن تنسى الضغط على زر التسجيل.",
-    "PopularAppsTitle": "التطبيقات الشائعة التي تم اكتشافها",
-    "MoreApps": "+40 تطبيقًا آخر",
-    "HowItWorksTitle": "كيف تعمل",
-    "Step1Title": "فعّل الكشف التلقائي",
-    "Step1Desc": "قم بتفعيل الزر واختر التطبيقات التي تريد مراقبتها",
-    "Step2Title": "الانضمام إلى اجتماع",
-    "Step2Desc": "افتح Zoom أو Teams أو Meet أو أي تطبيق مدعوم",
-    "Step3Title": "البدء في التسجيل تلقائيًا",
-    "Step3Desc": "SeaMeet يبدأ التسجيل تلقائيًا. تم!",
-    "Tip1Title": "إعدادات التطبيق",
-    "Tip1Desc": "اضبط \"التسجيل دائمًا\" للاجتماعات العمل و\"اطرح السؤال في كل مرة\" للمكالمات الشخصية",
-    "Tip2Title": "طرق كشف متعددة",
-    "Tip2Desc": "يستخدم نشاط الميكروفون، عناوين النوافذ، وروابط المتصفح لتحقيق أعلى دقة",
-    "GotIt": "فهمت",
-    "OpenSettings": "فتح الإعدادات",
     "ControlLabel": "الكشف التلقائي",
-    "LearnAbout": "تعرف على الكشف التلقائي"
+    "Description": "يبدأ الـ Auto-Detect التسجيل تلقائيًا عند الانضمام إلى الاجتماعات، لذلك لن تنسى الضغط على زر التسجيل.",
+    "GotIt": "فهمت",
+    "HowItWorksTitle": "كيف تعمل",
+    "LearnAbout": "تعرف على الكشف التلقائي",
+    "MoreApps": "+40 تطبيقًا آخر",
+    "OpenSettings": "فتح الإعدادات",
+    "PopularAppsTitle": "التطبيقات الشائعة التي تم اكتشافها",
+    "Step1Desc": "قم بتفعيل الزر واختر التطبيقات التي تريد مراقبتها",
+    "Step1Title": "فعّل الكشف التلقائي",
+    "Step2Desc": "افتح Zoom أو Teams أو Meet أو أي تطبيق مدعوم",
+    "Step2Title": "الانضمام إلى اجتماع",
+    "Step3Desc": "SeaMeet يبدأ التسجيل تلقائيًا. تم!",
+    "Step3Title": "البدء في التسجيل تلقائيًا",
+    "Subtitle": "لن تفوت اجتماعًا مرة أخرى",
+    "Tip1Desc": "اضبط \"التسجيل دائمًا\" للاجتماعات العمل و\"اطرح السؤال في كل مرة\" للمكالمات الشخصية",
+    "Tip1Title": "إعدادات التطبيق",
+    "Tip2Desc": "يستخدم نشاط الميكروفون، عناوين النوافذ، وروابط المتصفح لتحقيق أعلى دقة",
+    "Tip2Title": "طرق كشف متعددة",
+    "Title": "الكشف التلقائي عن الاجتماعات"
   },
   "AutoRecording": {
-    "Title": "كشف الاجتماعات تلقائيًا",
-    "DetectApps": "الكشف عن الاجتماعات من:",
-    "Enabled": "تم تفعيل الكشف التلقائي",
-    "Disabled": "تم تعطيل الكشف التلقائي",
-    "MeetingDetected": "تم اكتشاف اجتماع بـ“{{{app}}}”!",
-    "MeetingEnded": "انتهى الاجتماع",
-    "MeetingFallbackName": "الاجتماع",
     "BugReport": "هل رأيت خطأ؟ أبلغ عنه إلى ‎seameet@seasalt.ai‎",
     "BugReportTitle": "الإبلاغ عن خطأ",
+    "Disabled": "تم تعطيل الكشف التلقائي",
+    "Enabled": "تم تفعيل الكشف التلقائي",
     "HelpWanted": "إذا رغبت في طلب إضافة تطبيق جديد، أو كنت قد وصلت إلى عمل تطبيق معين، يرجى إبلاغنا على ‎seameet@seasalt.ai‎. نحن نقدر مساعدتك في تحسين هذا التطبيق!",
-    "HelpWantedTitle": "ساعدنا على تحسينه"
+    "HelpWantedTitle": "ساعدنا على تحسينه",
+    "MeetingDetected": "تم اكتشاف اجتماع بـ“{{{app}}}”!",
+    "MeetingEnded": "انتهى الاجتماع",
+    "MeetingFallbackName": "الاجتماع"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole مطلوب لصوت النظام",
-    "InstallInstructions": "لتسجيل صوت النظام على macOS، يجب تثبيت برنامج التشغيل الافتراضي BlackHole للصوت:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "نسخ الأمر",
-    "Or": "أو",
-    "DownloadManually": "التحميل من existential.audio",
-    "SetupTitle": "إعداد BlackHole",
-    "SetupStep1": "افتح إعدادات MIDI الصوتية عبر (التطبيقات → الأدوات المساعدة)",
-    "SetupStep2": "انقر على '+' واختر \"إعداد جهاز إخراج متعدد\"",
-    "SetupStep3": "تحقق من سماعاتك أو سماعات الرأس و 'BlackHole 2ch'",
-    "SetupStep4": "انقر بزر الماوس الأيمن على Multi-Output واختر 'استخدم هذا الجهاز لإخراج الصوت'",
-    "SetupStep5": "أعد تشغيل الجهاز بعد إتمام الإعداد إذا لم يظهر BlackHole في قائمة الأجهزة",
-    "SetupStep6": "اختر 'BlackHole 2ch' كمصدر الصوت في هذا التطبيق",
-    "CheckAgain": "التحقق مرة أخرى",
     "Cancel": "إلغاء",
-    "LearnMore": "اطلع على المزيد حول Multi-Output Devices"
+    "CheckAgain": "التحقق مرة أخرى",
+    "CopyCommand": "نسخ الأمر",
+    "DownloadManually": "التحميل من existential.audio",
+    "InstallInstructions": "لتسجيل صوت النظام على macOS، يجب تثبيت برنامج التشغيل الافتراضي BlackHole للصوت:",
+    "LearnMore": "اطلع على المزيد حول Multi-Output Devices",
+    "NotInstalled": "BlackHole مطلوب لصوت النظام",
+    "Or": "أو",
+    "SetupTitle": "إعداد BlackHole"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ تم اكتشاف ميكروفون Bluetooth",
-    "Description": "قد يجبر نظام التشغيل الخاص بك الصوت على وضع \"الاتصالات\" عند استخدام ميكروفونات Bluetooth، مما قد يتسبب في تشويه الصوت أو مشاكل في مستويات الصوت أثناء التسجيل.",
-    "RecommendationLabel": "التوصية:",
-    "Recommendation": "استخدم ميكروفون غير Bluetooth (مثل الميكروفون المدمج أو ميكروفون USB) لتحصل على جودة تسجيل أفضل.",
+    "CloseAriaLabel": "إغلاق تحذير Bluetooth",
     "CloseTitle": "إغلاق التحذير",
-    "CloseAriaLabel": "إغلاق تحذير Bluetooth"
+    "Description": "قد يجبر نظام التشغيل الخاص بك الصوت على وضع \"الاتصالات\" عند استخدام ميكروفونات Bluetooth، مما قد يتسبب في تشويه الصوت أو مشاكل في مستويات الصوت أثناء التسجيل.",
+    "Recommendation": "استخدم ميكروفون غير Bluetooth (مثل الميكروفون المدمج أو ميكروفون USB) لتحصل على جودة تسجيل أفضل.",
+    "RecommendationLabel": "التوصية:",
+    "Title": "⚠️ تم اكتشاف ميكروفون Bluetooth"
+  },
+  "Common": {
+    "ApplyName": "تطبيق الاسم",
+    "Cancel": "إلغاء",
+    "Close": "إغلاق",
+    "Configure": "تكوين",
+    "Delete": "حذف",
+    "Done": "تم",
+    "Expand": "توسيع",
+    "FileNameCopiedWithRenameHint": "تم نسخ {{fileName}} إلى الحافظة. انقر مرتين لتغيير اسم الملف.",
+    "Loading": "جار التحميل...",
+    "Minimize": "تصغير إلى دائرة",
+    "Open": "فتح",
+    "Or": "أو",
+    "Processing": "جار المعالجة…",
+    "Recording": "التسجيل",
+    "Save": "حفظ",
+    "Saved": "تم الحفظ",
+    "Saving": "جار الحفظ...",
+    "Screenshot": "لقطة شاشة",
+    "Send": "يرسل",
+    "Starting": "جار البدء...",
+    "UnknownApp": "تطبيق غير معروف"
   },
   "DeletePrompt": {
-    "Title": "حذف الملف",
-    "Message": "هل أنت متأكد من حذف هذا الملف؟ لا يمكن التراجع عن هذا الإجراء.",
     "Cancel": "إلغاء",
-    "Confirm": "حذف"
+    "Confirm": "حذف",
+    "Message": "هل أنت متأكد من حذف هذا الملف؟ لا يمكن التراجع عن هذا الإجراء.",
+    "Title": "حذف الملف"
   },
   "Errors": {
-    "NoAudioSources": "لا توجد مصادر صوت متاحة",
-    "NoSystemAudioSources": "لا توجد مصادر صوت نظام متاحة",
+    "AutoRecordingFailed": "فشل في تبديل التسجيل التلقائي",
     "FailedToStartRecording": "فشل في بدء التسجيل: {{message}}",
     "FailedToStartVideoRecording": "فشل في بدء تسجيل الفيديو: {{message}}",
-    "AutoRecordingFailed": "فشل في تبديل التسجيل التلقائي"
+    "NoAudioSources": "لا توجد مصادر صوت متاحة",
+    "NoSystemAudioSources": "لا توجد مصادر صوت نظام متاحة",
+    "SaveFailed": "فشل حفظ التسجيل: {{message}}"
   },
   "Events": {
-    "Title": "قائمة الأحداث",
-    "MarkToolbarButton": "الأحداث المميزة",
+    "EmptyWhenNotRecording": "لا تتوفر أحداث لهذا التسجيل.",
+    "EmptyWhileRecording": "لا توجد أحداث حتى الآن. انقر على 'علامة' أثناء التسجيل لإضافة واحدة.",
+    "EventLabel": "حدث {{number}}",
     "MarkButton": "علامة",
     "Marked": "مُعلمة!",
-    "EventLabel": "حدث {{number}}",
-    "EmptyWhileRecording": "لا توجد أحداث حتى الآن. انقر على 'علامة' أثناء التسجيل لإضافة واحدة.",
-    "EmptyWhenNotRecording": "لا تتوفر أحداث لهذا التسجيل.",
-    "DeletePrompt": {
-      "Title": "حذف الحدث",
-      "Message": "هل أنت متأكد من رغبتك في حذف هذا الحدث؟ لا يمكن استعادته مرة أخرى.",
-      "Cancel": "إلغاء",
-      "Confirm": "حذف الحدث"
-    }
+    "MarkToolbarButton": "الأحداث المميزة",
+    "Title": "قائمة الأحداث"
+  },
+  "FileImport": {
+    "BrowseFiles": "تصفح الملفات",
+    "DragDropFiles": "اسحب وأفلت ملفات الصوت أو الفيديو أو الصور هنا",
+    "DragDropSubtitle": "اسحب وأفلت ملفات الصوت أو الفيديو أو الصور هنا",
+    "ImportMedia": "استيراد وسائط",
+    "Supported": "مدعوم",
+    "SupportedFormats": "مدعوم: MP3، WAV، M4A، WebM، OGG، PNG، JPG وغيرها",
+    "VideoImportCopying": "جارٍ نسخ ملف الفيديو...",
+    "VideoImportSaving": "جارٍ حفظ ملف الفيديو...",
+    "VideoUnsupported": "قد لا يكون هذا التنسيق قابلاً للتشغيل في التطبيق. سيتم استيراد الملف على أي حال."
   },
   "FlashbackControls": {
+    "AudioFlashback": "العودة للماضي الصوتية",
+    "CannotChangeWhileRecording": "لا يمكن تغيير وضع العودة للماضي أثناء التسجيل",
+    "DisableFlashback": "تعطيل العودة للماضي",
     "Label": "العودة للماضي",
     "LearnAbout": "تعرف على العودة للماضي",
-    "DisableFlashback": "تعطيل العودة للماضي",
-    "AudioFlashback": "العودة للماضي الصوتية",
-    "ScreenFlashback": "العودة للماضي للشاشة",
-    "TitleReady": "انقر لإظهار واجهة العودة للماضي",
-    "TitleCharging": "جار شحن العودة للماضي",
-    "TitleInit": "انقر لبدء الشحن",
+    "Off": "إيقاف",
     "Ready": "جاهز",
     "ReadyQuestion": "هل أنت جاهز؟",
-    "Off": "إيقاف",
-    "CannotChangeWhileRecording": "لا يمكن تغيير وضع العودة للماضي أثناء التسجيل",
-    "ToggleLabel": "تبديل العودة للماضي",
-    "SettingsLabel": "تسجيل العودة للماضي"
+    "ScreenFlashback": "العودة للماضي للشاشة",
+    "SettingsLabel": "تسجيل العودة للماضي",
+    "TitleCharging": "جار شحن العودة للماضي",
+    "TitleInit": "انقر لبدء الشحن",
+    "TitleReady": "انقر لإظهار واجهة العودة للماضي",
+    "ToggleLabel": "تبديل العودة للماضي"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "الصوت",
+    "Buffering": "جارٍ التحميل",
+    "BufferingMoment": "لحظة التخزين المؤقت...",
+    "Capturing": "جارٍ الالتقاط...",
+    "DescCharging": "تحضير نافذتك التي تستغرق {{duration}} ثوانٍ... على وشك التقاط ما قد تفوته. {{progress}}% مكتمل.",
+    "DescInit": "انقر على 'هل أنت مستعد؟' ليبدأ SeaMeet في 'تذكر' الماضي.",
+    "DescNone": "قم بتسجيل شاشتك أو صوتك أو التقاط لقطة شاشة. اختر وضع العودة إلى الماضي أعلاه لتمكين حفظ اللحظة.",
+    "DescReady": "وضع العودة إلى الماضي مفعّل. كلما بدأت التسجيل، سيتم تضمين {{duration}} ثانية من {{type}} الماضية — لا تندم على لحظة فاتتك مرة أخرى.",
+    "FillingBuffer": "ملء ذاكرة التخزين المؤقت للعودة إلى الماضي لمدة {{duration}}s... {{progress}}%",
+    "FlashbackBuffering": "جارٍ التحميل...",
+    "FlashbackCharging": "ملء ذاكرة التخزين المؤقت لمدة {{seconds}}s... {{percent}}%",
+    "FlashbackChargingDescription": "تحضير نافذتك التي تستغرق {{seconds}} ثانية... {{percent}}% مكتمل.",
+    "FlashbackInitAudio": "هل أنت جاهز لحماية صوتك؟",
+    "FlashbackInitDescription": "انقر على 'هل أنت جاهز؟' لطلب من SeaMeet أن يبدأ 'تذكر' الماضي.",
+    "FlashbackInitScreen": "هل أنت مستعد لحماية شاشتك؟",
+    "FlashbackMismatch": "عدم تطابق وضع العودة إلى الماضي. تسجيل الصوت ولكن وضع العودة إلى الماضي للفيديو مفعّل. يرجى تعطيل وضع العودة إلى الماضي للفيديو.",
+    "FlashbackOff": "وضع العودة إلى الماضي غير مفعّل حاليًا. ابدأ تسجيلًا عاديًا في أي وقت، أو اختر وضع العودة إلى الماضي (صوتي أو شاشة) أعلاه لتمكين حفظ اللحظة البطولية.",
+    "FlashbackPrivacy": "تم حماية خصوصيتك. مخزنة محليًا في الذاكرة العشوائية.",
+    "FlashbackReady": "لا تفوت أي لحظة.",
+    "FlashbackReadyDescription": "العودة إلى الماضي مفعلة. يتم تضمين {{seconds}}s من {{type}} عند التسجيل.",
+    "FlashbackReadyQuestion": "جاهز؟",
+    "KeepWindowVisible": "احتفظ بنافذة SeaMeet مرئية عند التقاط لقطة شاشة",
+    "NeverMissAMoment": "لا تفوّت أي لحظة.",
+    "OpenFloater": "فتح Floater",
+    "OpenLauncher": "فتح المشغل",
+    "PrivacyDesc": "SeaMeet يلتقط صورًا لماضي {{duration}} ثوانٍ من {{type}} في مخزن دائري محلي على ذاكرة وصول عشوائي جهازك.",
+    "PrivacyProtected": "خصوصيتك محمية.",
+    "Ready": "هل أنت جاهز؟",
+    "ReadyToCapture": "SeaMeet جاهز للالتقاط.",
+    "ReadyToGuard": "هل أنت مستعد لحماية نوع {{type}} الخاص بك؟",
+    "RecordWithFlashback": "سجل باستخدام العودة إلى الماضي",
+    "SaveFlashback": "حفظ آخر {{seconds}}s من العودة إلى الماضي",
+    "SaveLastFlashback": "حفظ آخر {{duration}}s من العودة إلى الماضي",
+    "SavingFlashback": "جارٍ حفظ العودة إلى الماضي...",
+    "Screen": "الشاشة",
+    "StartRecording": "ابدأ التسجيل",
+    "TakeScreenshot": "لقطة شاشة"
   },
   "FlashbackIndicator": {
     "Buffering": "جارٍ تحميل الشكل الموجي",
@@ -183,138 +463,145 @@
     "VideoReady": "الفيديو جاهز"
   },
   "FlashbackInfoModal": {
-    "Title": "تسجيل العودة للماضي",
-    "Close": "إغلاق",
-    "Subtitle": "آلتك الزمنية الشخصية",
-    "SubtitleDesc": "لن تفوت لحظة مهمة أبداً—التقط ما يصل إلى دقيقتين من الماضي، حتى بعد حدوثه.",
+    "Benefits": {
+      "AlwaysReady": "دائماً جاهز",
+      "LocalOnly": "محلي فقط (خصوصية كاملة)",
+      "MultipleCaptures": "عمليات التقاط متعددة - المخزن المؤقت يستمر في العمل",
+      "NoPlan": "لا يتطلب التخطيط",
+      "Offline": "يعمل بدون اتصال",
+      "Title": "الفوائد الرئيسية"
+    },
     "BestFor": "الأفضل لِـ:",
-    "VisualStates": {
-      "Title": "مؤشرات الحالة المرئية",
-      "OffLabel": "إيقاف",
-      "Off": "رمادي، موجة ثابتة",
-      "ChargingLabel": "جار الشحن",
-      "Charging": "كهرماني/أصفر، المخزن المؤقت يمتلئ",
-      "ReadyLabel": "جاهز",
-      "Ready": "أخضر، المخزن المؤقت ممتلئ"
-    },
-    "SpecLabel": {
-      "Buffer": "المخزن المؤقت:",
-      "Memory": "الذاكرة:",
-      "Captures": "الالتقاطات:"
-    },
-    "Modes": {
-      "Title": "وضعان للعودة للماضي",
-      "Audio": {
-        "Title": "العودة للماضي الصوتية",
-        "Buffer": "30 ثانية (ثابتة)",
-        "Memory": "~30-50 ميجابايت ذاكرة",
-        "Captures": "الميكروفون و/أو صوت النظام",
-        "BestFor": "تسجيل الاجتماعات، المكالمات الهاتفية، المحادثات الصوتية"
-      },
-      "Video": {
-        "Title": "العودة للماضي للفيديو",
-        "Buffer": "10ث، 30ث، 60ث، 90ث، أو 120ث",
-        "Memory": "50-600 ميجابايت ذاكرة",
-        "Captures": "فيديو الشاشة + الصوت",
-        "BestFor": "العروض التقديمية، أبرز الألعاب، جلسات مشاركة الشاشة، المحتوى المرئي"
-      }
-    },
-    "HowItWorks": {
-      "Title": "كيف يعمل",
-      "Step1": {
-        "Title": "تفعيل العودة للماضي",
-        "Desc": "انقر على زر العودة للماضي لتشغيله. يبدأ المخزن المؤقت بالملء تلقائياً."
-      },
-      "Step2": {
-        "Title": "انتظر الاستعداد",
-        "Desc": "انتظر الحالة الخضراء. يجب أن يمتلئ المخزن المؤقت إلى 90% قبل أن تتمكن من التقاط الماضي."
-      },
-      "Step3": {
-        "Title": "اضغط تسجيل",
-        "Desc": "عندما يحدث شيء مهم، اضغط تسجيل. العودة للماضي تلتقط المخزن المؤقت وتستمر في التسجيل للأمام."
-      }
-    },
-    "Scenarios": {
-      "Title": "سيناريوهات عملية",
-      "OhNo": {
-        "Title": "لحظة \"يا إلهي!\"",
-        "Desc": "يقول الزميل شيئاً عميقاً. تدرك أنك تريد تسجيله. اضغط تسجيل → العودة للماضي تلتقط آخر 30 ثانية (بما في ذلك تلك اللحظة!)."
-      },
-      "Gaming": {
-        "Title": "إبراز الألعاب",
-        "Desc": "قم بتنفيذ كومبو مذهل. اضغط على تسجيل فوراً. العودة للماضي تلتقط طريقة اللعب قبل ذلك الكومبو + رد فعلك."
-      },
-      "Decision": {
-        "Title": "قرار هام",
-        "Desc": "يشرح المحامي بند العقد. اضغط على تسجيل لالتقاط الشرح. لديك سجل كامل ودقيق للمراجعة لاحقاً."
-      }
-    },
+    "Close": "إغلاق",
     "Comparison": {
-      "Title": "العودة للماضي مقابل التسجيل التقليدي",
+      "Capture": {
+        "Feature": "التقاط اللحظات",
+        "Flashback": "يمكن أن يبدأ بعد تلك اللحظة",
+        "Traditional": "إذا نسيت، فسيُفقد"
+      },
       "Header": {
         "Feature": "الميزة",
-        "Traditional": "التسجيل التقليدي",
-        "Flashback": "تسجيل العودة للماضي"
+        "Flashback": "تسجيل العودة للماضي",
+        "Traditional": "التسجيل التقليدي"
       },
       "Planning": {
         "Feature": "التخطيط",
-        "Traditional": "يجب أن يبدأ قبل تلك اللحظة",
-        "Flashback": "لا يتطلب التخطيط"
-      },
-      "Capture": {
-        "Feature": "التقاط اللحظات",
-        "Traditional": "إذا نسيت، فسيُفقد",
-        "Flashback": "يمكن أن يبدأ بعد تلك اللحظة"
+        "Flashback": "لا يتطلب التخطيط",
+        "Traditional": "يجب أن يبدأ قبل تلك اللحظة"
       },
       "Result": {
         "Feature": "النتيجة",
-        "Traditional": "\"أتمنى أنني سجلت ذلك\"",
-        "Flashback": "\"أنا سعيد لأنني التقطت ذلك\""
-      }
-    },
-    "Benefits": {
-      "Title": "الفوائد الرئيسية",
-      "NoPlan": "لا يتطلب التخطيط",
-      "AlwaysReady": "دائماً جاهز",
-      "Offline": "يعمل بدون اتصال",
-      "LocalOnly": "محلي فقط (خصوصية كاملة)",
-      "MultipleCaptures": "عمليات التقاط متعددة - المخزن المؤقت يستمر في العمل"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "العودة للماضي الصوتية للاستخدام اليومي",
-        "Desc": "استخدم العودة للماضي الصوتية لمدة 30 ثانية للاجتماعات والمكالمات. استخدام منخفض للذاكرة، يعمل بشكل موثوق."
+        "Flashback": "\"أنا سعيد لأنني التقطت ذلك\"",
+        "Traditional": "\"أتمنى أنني سجلت ذلك\""
       },
-      "VideoSpecial": {
-        "Title": "العودة للماضي للفيديو لللحظات الخاصة",
-        "Desc": "فعّل العودة للماضي للفيديو (مخزن مؤقت 30ث) للعروض التقديمية، أبرز الألعاب، أو أي محتوى مرئي تريد الحفاظ عليه."
-      },
-      "Memory": {
-        "Title": "إدارة الذاكرة",
-        "Desc": "مع دقيقتين من العودة للماضي للفيديو: التطبيق بأكمله يستخدم أقل من 1 جيجابايت من الذاكرة."
-      }
+      "Title": "العودة للماضي مقابل التسجيل التقليدي"
     },
     "GotIt": "فهمت",
-    "OpenSettings": "فتح الإعدادات"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "انقر على زر العودة للماضي لتشغيله. يبدأ المخزن المؤقت بالملء تلقائياً.",
+        "Title": "تفعيل العودة للماضي"
+      },
+      "Step2": {
+        "Desc": "انتظر الحالة الخضراء. يجب أن يمتلئ المخزن المؤقت إلى 90% قبل أن تتمكن من التقاط الماضي.",
+        "Title": "انتظر الاستعداد"
+      },
+      "Step3": {
+        "Desc": "عندما يحدث شيء مهم، اضغط تسجيل. العودة للماضي تلتقط المخزن المؤقت وتستمر في التسجيل للأمام.",
+        "Title": "اضغط تسجيل"
+      },
+      "Title": "كيف يعمل"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "تسجيل الاجتماعات، المكالمات الهاتفية، المحادثات الصوتية",
+        "Buffer": "30 ثانية (ثابتة)",
+        "Captures": "الميكروفون و/أو صوت النظام",
+        "Memory": "~30-50 ميجابايت ذاكرة",
+        "Title": "العودة للماضي الصوتية"
+      },
+      "Title": "وضعان للعودة للماضي",
+      "Video": {
+        "BestFor": "العروض التقديمية، أبرز الألعاب، جلسات مشاركة الشاشة، المحتوى المرئي",
+        "Buffer": "10ث، 30ث، 60ث، 90ث، أو 120ث",
+        "Captures": "فيديو الشاشة + الصوت",
+        "Memory": "50-600 ميجابايت ذاكرة",
+        "Title": "العودة للماضي للفيديو"
+      }
+    },
+    "OpenSettings": "فتح الإعدادات",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "يشرح المحامي بند العقد. اضغط على تسجيل لالتقاط الشرح. لديك سجل كامل ودقيق للمراجعة لاحقاً.",
+        "Title": "قرار هام"
+      },
+      "Gaming": {
+        "Desc": "قم بتنفيذ كومبو مذهل. اضغط على تسجيل فوراً. العودة للماضي تلتقط طريقة اللعب قبل ذلك الكومبو + رد فعلك.",
+        "Title": "إبراز الألعاب"
+      },
+      "OhNo": {
+        "Desc": "يقول الزميل شيئاً عميقاً. تدرك أنك تريد تسجيله. اضغط تسجيل → العودة للماضي تلتقط آخر 30 ثانية (بما في ذلك تلك اللحظة!).",
+        "Title": "لحظة \"يا إلهي!\""
+      },
+      "Title": "سيناريوهات عملية"
+    },
+    "SpecLabel": {
+      "Buffer": "المخزن المؤقت:",
+      "Captures": "الالتقاطات:",
+      "Memory": "الذاكرة:"
+    },
+    "Subtitle": "آلتك الزمنية الشخصية",
+    "SubtitleDesc": "لن تفوت لحظة مهمة أبداً—التقط ما يصل إلى دقيقتين من الماضي، حتى بعد حدوثه.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "استخدم العودة للماضي الصوتية لمدة 30 ثانية للاجتماعات والمكالمات. استخدام منخفض للذاكرة، يعمل بشكل موثوق.",
+        "Title": "العودة للماضي الصوتية للاستخدام اليومي"
+      },
+      "Memory": {
+        "Desc": "مع دقيقتين من العودة للماضي للفيديو: التطبيق بأكمله يستخدم أقل من 1 جيجابايت من الذاكرة.",
+        "Title": "إدارة الذاكرة"
+      },
+      "VideoSpecial": {
+        "Desc": "فعّل العودة للماضي للفيديو (مخزن مؤقت 30ث) للعروض التقديمية، أبرز الألعاب، أو أي محتوى مرئي تريد الحفاظ عليه.",
+        "Title": "العودة للماضي للفيديو لللحظات الخاصة"
+      }
+    },
+    "Title": "تسجيل العودة للماضي",
+    "VisualStates": {
+      "Charging": "كهرماني/أصفر، المخزن المؤقت يمتلئ",
+      "ChargingLabel": "جار الشحن",
+      "Off": "رمادي، موجة ثابتة",
+      "OffLabel": "إيقاف",
+      "Ready": "أخضر، المخزن المؤقت ممتلئ",
+      "ReadyLabel": "جاهز",
+      "Title": "مؤشرات الحالة المرئية"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "بدء التشغيل",
-    "AutoStartLabel": "بدء تلقائي للعودة إلى الماضي",
+    "AutoStartAudio": "العودة إلى الماضي بالصوت",
     "AutoStartDesc": "يبدأ العودة إلى الماضي عند تشغيل التطبيق",
     "AutoStartDisable": "تعطيل البدء التلقائي في العودة إلى الماضي",
-    "AutoStartAudio": "العودة إلى الماضي بالصوت",
+    "AutoStartLabel": "بدء تلقائي للعودة إلى الماضي",
     "AutoStartScreen": "البدء التلقائي في العودة إلى الماضي",
-    "BufferTitle": "حجم الذاكرة المؤقتة",
-    "BufferDurationLabel": "مدة التخزين المؤقت",
     "BufferDurationDesc": "مدة الاحتفاظ بالصوت والفيديو في الذاكرة المؤقتة",
-    "DurationOption": "{{duration}} ثوانٍ"
+    "BufferDurationLabel": "مدة التخزين المؤقت",
+    "BufferTitle": "حجم الذاكرة المؤقتة",
+    "DurationOption": "{{duration}} ثوانٍ",
+    "StartupTitle": "بدء التشغيل"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "ذاكرة العودة إلى الماضي فارغة. حاول مرة أخرى لاحقًا.",
+    "EnableFlashback": "فعّل العودة إلى الماضي لحفظ لحظة",
+    "FailedToSave": "فشل في حفظ ذاكرة العودة إلى الماضي",
+    "SavedFlashback": "تم حفظ العودة إلى الماضي في التسجيلات",
+    "StillCharging": "ذاكرة العودة إلى الماضي لا تزال تتشحن."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "إغلاق التلميح",
-    "BluetoothMicTitle": "⚠️ ميكروفون بلوتوث",
     "BluetoothMicDesc": "قد يجبر نظام التشغيل الخاص بك وضع \"الاتصالات\"، مما قد يسبب التشويش.",
     "BluetoothMicTipLabel": "نصيحة:",
     "BluetoothMicTipText": "استخدم ميكروفون غير بلوتوث لجودة أفضل.",
+    "BluetoothMicTitle": "⚠️ ميكروفون بلوتوث",
+    "CloseTooltip": "إغلاق التلميح",
     "FailedToLoadScreens": "عذراً، لم نتمكن من تحميل الشاشات. يرجى المحاولة مرة أخرى.",
     "FailedToLoadWindows": "عذراً، لم نتلقَ استجابة في تحميل النوافذ. يرجى المحاولة مرة أخرى.",
     "MicrophoneMuted": "الميكروفون: صامت",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "لم يتم اكتشاف ميكروفونات",
     "NoScreensDetected": "لم يتم العثور على شاشات.",
     "NoWindowsDetected": "لم يتم الكشف عن نوافذ. افتح نافذة تطبيق وقم بالتحديث.",
+    "RegionReady": "المنطقة جاهزة",
+    "RegionRequired": "يرجى اختيار منطقة قبل التسجيل",
+    "RegionSize": "{{width}}×{{height}} بكسل",
     "ScreenNotAvailable": "اختيار الشاشة غير متاح على هذا النظام الأساسي.",
     "SelectMicrophone": "اختر الميكروفون",
+    "SelectRegion": "اختر منطقة",
+    "SelectScreen": "اختر شاشة",
+    "SelectWindow": "اختر نافذة التطبيق",
     "StartRecording": "ابدأ التسجيل الآن",
     "SystemAudioOff": "صوت النظام: إيقاف",
     "SystemAudioOn": "صوت النظام: تشغيل",
     "WaitingForRegion": "في انتظار المنطقة…",
     "WindowNotAvailable": "اختيار النافذة غير متاح على هذا النظام الأساسي.",
-    "SelectScreen": "اختر شاشة",
-    "SelectWindow": "اختر نافذة التطبيق",
-    "WindowRequired": "اختر نافذة قبل التسجيل",
-    "RegionReady": "المنطقة جاهزة",
-    "SelectRegion": "اختر منطقة",
-    "RegionSize": "{{width}}×{{height}} بكسل",
-    "RegionRequired": "يرجى اختيار منطقة قبل التسجيل"
+    "WindowRequired": "اختر نافذة قبل التسجيل"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "تم الاختيار: وضع ملء الشاشة",
-    "ClickToRecord": "انقر على 'ابدأ التسجيل' في الشريط العائم لبدء التسجيل"
+    "ClickToRecord": "انقر على 'ابدأ التسجيل' في الشريط العائم لبدء التسجيل",
+    "FullscreenSelected": "تم الاختيار: وضع ملء الشاشة"
+  },
+  "GeminiLive": {
+    "AITranscription": "النسخ بالذكاء الاصطناعي",
+    "CollapseNowSpeaking": "ينهار",
+    "EnableDescription": "النسخ في الوقت الحقيقي مدعوم من Gemini أثناء التسجيل",
+    "EnableIntegration": "تمكين النسخ المباشر بالذكاء الاصطناعي",
+    "Error": "خطأ",
+    "ExpandNowSpeaking": "يوسع",
+    "NowSpeaking": "تحدث الآن...",
+    "SegmentCount_one": "{{count}} المقاطع",
+    "SegmentCount_other": "{{count}} المقاطع",
+    "WaitingForConnection": "جارٍ الاتصال...",
+    "WaitingForSpeech": "في انتظار الكلام..."
   },
   "IdleCompactView": {
     "ArmFlashback": "تفعيل خاصية العودة إلى الماضي",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  نسخ البريد الإلكتروني",
     "EmailCopied": "✅  تم نسخ البريد الإلكتروني إلى الحافظة"
   },
-  "JumpList": {
-    "RecordAudio": "تسجيل الصوت",
-    "RecordAudioDesc": "بدء تسجيل الصوت (مختلط)",
-    "RecordFullscreen": "تسجيل الشاشة الكاملة",
-    "RecordFullscreenDesc": "بدء تسجيل فيديو الشاشة الكاملة",
-    "RecordRegion": "التقاط منطقة للتسجيل",
-    "RecordRegionDesc": "اختر منطقة من الشاشة للتسجيل",
-    "TakeScreenshot": "أخذ لقطة شاشة",
-    "TakeScreenshotDesc": "التقاط منطقة من الشاشة",
-    "OpenRecordingsFolder": "فتح مجلد التسجيلات",
-    "OpenRecordingsFolderDesc": "فتح مجلد التسجيلات الافتراضي"
-  },
   "MeetingPrompt": {
-    "StartTitle": "تم اكتشاف اجتماع",
-    "StartMessage": "هل لديك اجتماع على {{appName}}؟ هل تحتاج مني تسجيل الاجتماع الآن؟",
     "BrowserHint": "💡 نصيحة: للاجتماعات عبر المتصفح (Google Meet، Zoom، Teams)، يمكنني فقط اكتشاف المتصفح، وليس الموقع المحدد.",
-    "RememberChoice": "تذكر اختياري ولا تسأل مرة أخرى",
-    "Yes": "بدء التسجيل",
-    "No": "إلغاء",
-    "EndTitle": "انتهى الاجتماع",
-    "EndMessage": "اكتشفت أن اجتماع {{appName}} قد انتهى للتو. هل تريد مني إيقاف التسجيل؟",
     "ContinueRecording": "متابعة التسجيل",
+    "EndMessage": "اكتشفت أن اجتماع {{appName}} قد انتهى للتو. هل تريد مني إيقاف التسجيل؟",
+    "EndTitle": "انتهى الاجتماع",
+    "No": "إلغاء",
     "Pause": "إيقاف مؤقت",
-    "Resume": "استئناف",
-    "Stop": "إيقاف",
+    "PlayRecording": "تشغيل",
     "RecordingSaved": "تم حفظ التسجيل",
     "RecordingSavedWithFilename": "تم حفظ {{fileName}}",
+    "RememberChoice": "تذكر اختياري ولا تسأل مرة أخرى",
     "RenameFile": "إعادة تسمية",
     "ShowInFolder": "عرض في المجلد",
-    "PlayRecording": "تشغيل",
+    "StartMessage": "هل لديك اجتماع على {{appName}}؟ هل تحتاج مني تسجيل الاجتماع الآن؟",
+    "StartTitle": "تم اكتشاف اجتماع",
     "StopRecording": "إيقاف التسجيل",
-    "Saving": "جار الحفظ..."
+    "Yes": "بدء التسجيل"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "عناصر الإجراء",
+    "CollapseNowSpeaking": "طي المتحدث الآن",
+    "ConnectionError": "فشل الاتصال بـ SeaMeet",
+    "Content": "محتوى SeaMeet",
+    "DueDate": "موعد الاستحقاق: {{date}}",
+    "EnableIntegration": "تفعيل نسخ SeaMeet",
+    "ExpandNowSpeaking": "توسيع المتحدث الآن",
+    "FetchError": "فشل تحميل النسخ",
+    "LanguageHint": "يمكنك تغيير اللغة أثناء التسجيل",
+    "LiveTranscription": "نسخ مباشر",
+    "LoadingContent": "جار تحميل محتوى SeaMeet...",
+    "LoadingTranscript": "جار تحميل النسخ...",
+    "NoActionItems": "لا توجد عناصر إجراء لهذا الاجتماع",
+    "NoNotes": "لا توجد ملاحظات لهذا الاجتماع",
+    "NoSummary": "الملخص غير متاح بعد.",
+    "Notes": "ملاحظات",
+    "NoTranscript": "لا توجد نسخ متاحة",
+    "NoTranslation": "لا توجد ترجمة",
+    "NowSpeaking": "يتحدث الآن...",
+    "Retry": "إعادة المحاولة",
+    "SeekToTime": "انقر للتشغيل من هذا الوقت",
+    "SegmentCount_one": "{{count}} المقاطع",
+    "SegmentCount_other": "{{count}} المقاطع",
+    "SignInRequired": "تسجيل الدخول مطلوب",
+    "Summary": "ملخص",
+    "Transcribed": "تم النسخ",
+    "Transcript": "النسخة",
+    "TranscriptionLanguage": "لغة النسخ",
+    "TranslationLanguage": "لغة الترجمة",
+    "UnknownSpeaker": "المتحدث",
+    "WaitingForSpeech": "في انتظار الكلام..."
   },
   "MinimizedView": {
     "ActionRequired": "يتطلب إجراء (التسجيل التلقائي)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "جارٍ شحن شاشة العودة إلى الماضي...",
     "ScreenRecording": "تسجيل الشاشة ({{time}})"
   },
+  "Pause": "يوقف",
   "Permissions": {
-    "AutoRecordNextTime": "هل ترغب في التسجيل تلقائيًا لهذا التطبيق في المرة القادمة؟",
     "AlwaysAutoRecord": "التسجيل التلقائي دائمًا",
-    "NeverRecord": "لا تسجّل أبدًا",
     "AskEveryTime": "اسأل في كل مرة",
-    "AutoRecordStarted": "بدأ التسجيل التلقائي",
+    "AutoRecordNextTime": "هل ترغب في التسجيل تلقائيًا لهذا التطبيق في المرة القادمة؟",
     "AutoRecordReason": "تم تعيين {{app}} على التسجيل التلقائي دائمًا. غيّر إذن تسجيل التطبيق في الإعدادات -> التسجيل التلقائي.",
-    "ChangeInSettings": "التغيير في الإعدادات",
-    "GuidanceTitle": "أنواع أذونات التطبيق",
+    "AutoRecordStarted": "بدأ التسجيل التلقائي",
+    "AutoStartAudioRule": "إذا كانت وضعية التسجيل الافتراضية صوتي، يبدأ SeaMeet التسجيل مباشرةً دون طلب.",
+    "AutoStartFallbackRule": "في جميع الحالات الأخرى، سيعرض SeaMeet محدد وضع التسجيل لتختاري.",
+    "AutoStartFullscreenRule": "إذا كانت وضعية التسجيل الافتراضية كاملة الشاشة وكان هناك شاشة واحدة فقط، يبدأ SeaMeet التسجيل مباشرةً.",
+    "AutoStartHeuristicsTitle": "سلوك البدء التلقائي (التسجيل التلقائي دائمًا)",
     "GuidanceAlways": ": سيقوم بالتسجيل تلقائيًا دون طلب تأكيد",
     "GuidanceAsk": ": سيطلب SeaMeet إذنك للتسجيل في كل مرة.",
     "GuidanceNever": ": لن يطلب SeaMeet إذنًا للتسجيل",
-    "AutoStartHeuristicsTitle": "سلوك البدء التلقائي (التسجيل التلقائي دائمًا)",
-    "AutoStartAudioRule": "إذا كانت وضعية التسجيل الافتراضية صوتي، يبدأ SeaMeet التسجيل مباشرةً دون طلب.",
-    "AutoStartFullscreenRule": "إذا كانت وضعية التسجيل الافتراضية كاملة الشاشة وكان هناك شاشة واحدة فقط، يبدأ SeaMeet التسجيل مباشرةً.",
-    "AutoStartFallbackRule": "في جميع الحالات الأخرى، سيعرض SeaMeet محدد وضع التسجيل لتختاري."
+    "GuidanceTitle": "أنواع أذونات التطبيق",
+    "NeverRecord": "لا تسجّل أبدًا"
+  },
+  "PipelineStatus": {
+    "Done": "ملخص جاهز",
+    "Error": "فشلت المعالجة",
+    "Progress": "مجموعة المعالجة {{current}} من {{total}}",
+    "Queued": "الملخص في قائمة الانتظار...",
+    "Running": "جارٍ إنشاء الملخص..."
   },
   "Player": {
     "Mute": "كتم الصوت",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "إغلاق التشغيل",
-    "MoreOptions": "خيارات إضافية",
-    "CodecInfo": "معلومات الترميز"
+    "CodecInfo": "معلومات الترميز",
+    "MoreOptions": "خيارات إضافية"
+  },
+  "RecordingControls": {
+    "AudioRecording": "تسجيل صوتي",
+    "ContinueRecording": "استمر في التسجيل",
+    "RecordingAudio": "تسجيل الصوت..",
+    "RecordingMode": "وضع التسجيل",
+    "RecordingPreview": "معاينة التسجيل",
+    "RecordingScreen": "شاشة التسجيل..",
+    "StartRecording": "ابدأ تسجيل الفيديو",
+    "Stop": "إيقاف",
+    "StopRecording": "إيقاف التسجيل",
+    "VideoRecording": "تسجيل فيديو"
+  },
+  "RecordingModes": {
+    "AreaCapture": "تحديد المنطقة",
+    "CaptureMode": "وضع الالتقاط",
+    "FullScreen": "التصوير بالشاشة الكاملة",
+    "RecordAudio": "الصوتي",
+    "RecordAudioTip": "الصوت فقط",
+    "RecordFullscreen": "وضع ملء الشاشة",
+    "RecordFullscreenTip": "إعطاء الأمر لالتقاط الشاشة بالكامل",
+    "RecordRegion": "وضع الالتقاط",
+    "RecordRegionTip": "التقاط المنطقة المخصصة",
+    "RecordWindow": "تسجيل النافذة",
+    "RecordWindowTip": "التقاط نافذة تطبيق واحدة"
+  },
+  "RecordingsList": {
+    "CopyFileName": "نسخ اسم الملف",
+    "CopyFilePath": "نسخ مسار الملف",
+    "FileNameCopied": "تم نسخ {{fileName}} إلى الحافظة",
+    "FilePathCopied": "تم نسخ مسار الملف إلى الحافظة",
+    "OpenSaveFolder": "عرض المجلد",
+    "RecentCaptures": "اللقطات الأخيرة",
+    "Recovered_one": "{{count}} تم استرداد التسجيل",
+    "Recovered_other": "{{count}} تم استرداد التسجيلات",
+    "RefreshRecordings": "تحديث",
+    "SaveAs": "حفظ باسم",
+    "SearchRecordingsOrSnapshots": "ابحث في التسجيلات واللقطات",
+    "ShowInFolder": "عرض في المجلد"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "ملف تسجيل",
-    "Microphone": "ميكروفون",
-    "App": "{{appName}}"
+    "Microphone": "ميكروفون"
   },
   "RegionSelector": {
     "CaptureButton": "التقاط الشاشة أو اضغط على Enter",
@@ -443,84 +807,73 @@
     "Monitor": "الشاشة (المراقبة)",
     "PrimaryMonitor": "الشاشة الأساسية"
   },
-  "Reliability": {
-    "Stable": "مستقر وثابت",
-    "Experimental": "تجريبي",
-    "NotTested": "لم يُختبر بعد"
-  },
+  "Resume": "سيرة ذاتية",
   "RingMenu": {
+    "AutoDetectOff": "الكشف التلقائي: إيقاف",
+    "AutoDetectOn": "الكشف التلقائي: تشغيل",
     "FlashbackCharging": "جار شحن العودة للماضي...",
     "FlashbackNotCharged": "العودة للماضي غير مشحونة، انقر مرة لشحن العودة للماضي الصوتية، انقر مرتين لشحن العودة للماضي للشاشة",
     "FlashbackSaveTooltip": "نقرة واحدة لحفظ آخر {{duration}}ث {{mode}} عودة للماضي. نقرة مزدوجة للاستمرار في التسجيل من هنا.",
-    "RecordRegion": "تسجيل المنطقة",
-    "RecordFullscreen": "تسجيل الشاشة الكاملة",
-    "TakeScreenshot": "أخذ لقطة شاشة",
-    "AutoDetectOn": "الكشف التلقائي: تشغيل",
-    "AutoDetectOff": "الكشف التلقائي: إيقاف",
     "RecordAudio": "تسجيل الصوت",
-    "RecordWindow": "تسجيل النافذة"
+    "RecordFullscreen": "تسجيل الشاشة الكاملة",
+    "RecordRegion": "تسجيل المنطقة",
+    "RecordWindow": "تسجيل النافذة",
+    "TakeScreenshot": "أخذ لقطة شاشة"
   },
   "ScreenPicker": {
-    "Title": "اختر شاشة",
     "Instruction": "اختر الشاشة التي تريد تسجيلها للشاشات الكاملة.",
-    "Refresh": "تحديث العرض",
-    "Refreshing": "جارٍ التحديث...",
     "Loading": "جارٍ تحميل الشاشات…",
     "None": "لم تُكتشف أي شاشات",
+    "Refresh": "تحديث العرض",
+    "Refreshing": "جارٍ التحديث...",
+    "Title": "اختر شاشة",
     "Unknown": "شاشة غير معرفة"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "تحليل",
+    "ButtonLabel": "العملية مع الذكاء الاصطناعي",
+    "Custom": "موجه مخصص",
+    "CustomPlaceholder": "اسأل أي شيء عن هذه الصورة...",
+    "Describe": "وصف الصورة",
+    "DescribeSub": "ماذا يوجد في لقطة الشاشة هذه؟",
+    "Description": "وصف",
+    "ExtractedText": "النص المستخرج",
+    "Ocr": "استخراج النص (التعرف الضوئي على الحروف)",
+    "OcrSub": "قراءة كل النص المرئي",
+    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
+    "ProcessingWithTime": "جارٍ المعالجة... {{sec}}s",
+    "Queuing": "انتظار...",
+    "ResultLabel": "نتيجة الذكاء الاصطناعي",
+    "UnknownError": "خطأ غير معروف"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "تم النسخ إلى الحافظة!",
     "CopyFailed": "فشل في نسخ لقطة الشاشة إلى الحافظة",
     "CopyToClipboard": "نسخ إلى الحافظة",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "حذف",
     "Dimensions": "الأبعاد",
     "FileSize": "حجم الملف",
-    "Filename": "اسم الملف",
     "OpenInSystemViewer": "فتح في عارض النظام",
-    "Rename": "إعادة تسمية",
     "ScreenshotCopied": "تم نسخ لقطة الشاشة إلى الحافظة",
     "Share": "مشاركة",
     "ShareCompleted": "تمت المشاركة بنجاح",
     "ShareFailed": "لم يتم دعم المشاركة في هذا المتصفح. افتح لقطة الشاشة يدويًا للمشاركة.",
-    "ShareNotSupported": "لا يدعم النظام المشاركة الأصلية. استخدم \"نسخ إلى الحافظة\" بدلاً من ذلك.",
     "Sharing": "جارٍ المشاركة...",
-    "Timestamp": "التاريخ والوقت",
     "ZeroBytes": "0 بايت"
   },
   "Settings": {
-    "Title": "الإعدادات",
     "About": {
       "CheckForUpdates": "التحقق من التحديثات",
       "CheckingUpdates": "جاري التحقق من التحديثات...",
-      "UpdateAvailable": "إصدار جديد {{version}} متاح",
-      "UpdateReady": "الإصدار {{version}} جاهز للتثبيت",
-      "NoUpdatesAvailable": "لا توجد تحديثات متوفرة",
       "InstallNow": "تثبيت الآن",
-      "TermsOfService": "شروط الخدمة",
-      "PrivacyPolicy": "سياسة الخصوصية",
       "LegalToggle": {
+        "FullVersion": "النسخة الكاملة",
         "OneSentence": "جملة واحدة",
-        "TLDR": "ملخص سريع",
-        "FullVersion": "النسخة الكاملة"
+        "TLDR": "ملخص سريع"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet مسجل مجاني يركز على الخصوصية، يتيح الاستخدام المحلي بدون حساب، بياناتك تظل ملكك، ميزات السحابة اختيارية، ويجب الحصول على موافقتك قبل التسجيل.",
-        "TLDRTitle": "شروط SeaMeet — ملخص سريع للمشغولين",
-        "TLDRItems": [
-          "SeaMeet Desktop مجاني — جميع الميزات غير الذكية تعمل بدون حساب أو تسجيل دخول.",
-          "احصل على الموافقة قبل التسجيل — SeaMeet لا يتحقق من ذلك نيابة عنك.",
-          "تسجيلاتك ونسخك ملكك؛ SeaMeet يعالجها فقط لتشغيل الخدمة.",
-          "ميزات السحابة تتطلب حساباً وتخزن البيانات على خوادم SeaMeet.",
-          "التشخيصات المجهولة اختيارية ويمكن إيقافها في أي وقت.",
-          "لا تسيء استخدام التطبيق (لا استخدام غير قانوني، لا اختراق).",
-          "الخدمة قد تتغير، والمسؤولية محدودة."
-        ]
-      },
+      "NoUpdatesAvailable": "لا توجد تحديثات متوفرة",
       "Privacy": {
         "OneSentenceSummary": "يحتفظ SeaMeet Desktop بجميع التسجيلات على جهازك بشكل كامل ومحلي وخاص، ولا يتطلب حساباً. ميزات السحابة اختيارية، مشفرة، وتحت سيطرتك بالكامل.",
-        "TLDRTitle": "خصوصية SeaMeet — ملخص سريع للمشغولين",
         "TLDRItems": [
           "SeaMeet Desktop مصمم للخصوصية: كل شيء يبقى على جهازك؛ نحن لا نجمع صوتاً، فيديو، محتوى شاشة، أو بيانات اجتماع.",
           "لا حاجة لحساب لاستخدام ميزات التطبيق غير الذكية.",
@@ -530,734 +883,299 @@
           "التكامل مع الطرف الثالث اختياري وقابل للإلغاء بالكامل.",
           "نحن لا نبيع البيانات، وتسجيلات السحابة مشفرة.",
           "تتحكم في بياناتك — يمكنك حذف التسجيلات في أي وقت أو طلب الحذف الكامل."
-        ]
+        ],
+        "TLDRTitle": "خصوصية SeaMeet — ملخص سريع للمشغولين"
       },
+      "PrivacyPolicy": "سياسة الخصوصية",
       "PrivacySecurity": {
-        "Title": "الخصوصية والأمان",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "الكشف التلقائي لن يبدأ أبداً تسجيلاً تلقائياً بدون موافقتك الصريحة.",
+            "Title": "الموافقة الصريحة مطلوبة"
+          },
           "MicrophoneActivity": {
-            "Title": "نشاط الميكروفون فقط",
-            "Description": "الكشف التلقائي يراقب استخدام ميكروفونك لاستنتاج أي تطبيق يستخدمه. لا يتم التقاط أي بيانات."
+            "Description": "الكشف التلقائي يراقب استخدام ميكروفونك لاستنتاج أي تطبيق يستخدمه. لا يتم التقاط أي بيانات.",
+            "Title": "نشاط الميكروفون فقط"
           },
           "NoDataAccess": {
-            "Title": "لا وصول للبيانات",
-            "Description": "الكشف التلقائي يكتشف فقط ما إذا كان الميكروفون مستخدماً أم لا. لا يصل إلى أي بيانات مسجلة."
-          },
-          "ExplicitApproval": {
-            "Title": "الموافقة الصريحة مطلوبة",
-            "Description": "الكشف التلقائي لن يبدأ أبداً تسجيلاً تلقائياً بدون موافقتك الصريحة."
+            "Description": "الكشف التلقائي يكتشف فقط ما إذا كان الميكروفون مستخدماً أم لا. لا يصل إلى أي بيانات مسجلة.",
+            "Title": "لا وصول للبيانات"
           },
           "NoDataCollection": {
-            "Title": "لا جمع للبيانات",
-            "Description": "SeaMeet لا يجمع أي بيانات من ميزة الكشف التلقائي بدون موافقتك."
+            "Description": "SeaMeet لا يجمع أي بيانات من ميزة الكشف التلقائي بدون موافقتك.",
+            "Title": "لا جمع للبيانات"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% محلي",
-            "Description": "العودة للماضي تعمل بالكامل على جهازك المحلي. لا شيء يتم مزامنته مع السحابة."
+          "EthicalUse": {
+            "Description": "دائماً أبلغ واحصل على موافقة الآخرين قبل استخدام العودة للماضي لتسجيلهم.",
+            "Title": "الاستخدام الأخلاقي"
           },
-          "RAMOnly": {
-            "Title": "الذاكرة فقط",
-            "Description": "جميع البيانات تبقى في الذاكرة. لا شيء يُكتب على القرص إلا إذا حفظت تسجيل عودة للماضي."
+          "LocalOnly": {
+            "Description": "العودة للماضي تعمل بالكامل على جهازك المحلي. لا شيء يتم مزامنته مع السحابة.",
+            "Title": "100% محلي"
           },
           "Protected": {
-            "Title": "محمي",
-            "Description": "خصوصيتك وأمانك في غاية الأهمية. بياناتك لا تغادر جهازك أبداً."
+            "Description": "خصوصيتك وأمانك في غاية الأهمية. بياناتك لا تغادر جهازك أبداً.",
+            "Title": "محمي"
           },
-          "EthicalUse": {
-            "Title": "الاستخدام الأخلاقي",
-            "Description": "دائماً أبلغ واحصل على موافقة الآخرين قبل استخدام العودة للماضي لتسجيلهم."
+          "RAMOnly": {
+            "Description": "جميع البيانات تبقى في الذاكرة. لا شيء يُكتب على القرص إلا إذا حفظت تسجيل عودة للماضي.",
+            "Title": "الذاكرة فقط"
           }
-        }
-      }
+        },
+        "Title": "الخصوصية والأمان"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet مسجل مجاني يركز على الخصوصية، يتيح الاستخدام المحلي بدون حساب، بياناتك تظل ملكك، ميزات السحابة اختيارية، ويجب الحصول على موافقتك قبل التسجيل.",
+        "TLDRItems": [
+          "SeaMeet Desktop مجاني — جميع الميزات غير الذكية تعمل بدون حساب أو تسجيل دخول.",
+          "احصل على الموافقة قبل التسجيل — SeaMeet لا يتحقق من ذلك نيابة عنك.",
+          "تسجيلاتك ونسخك ملكك؛ SeaMeet يعالجها فقط لتشغيل الخدمة.",
+          "ميزات السحابة تتطلب حساباً وتخزن البيانات على خوادم SeaMeet.",
+          "التشخيصات المجهولة اختيارية ويمكن إيقافها في أي وقت.",
+          "لا تسيء استخدام التطبيق (لا استخدام غير قانوني، لا اختراق).",
+          "الخدمة قد تتغير، والمسؤولية محدودة."
+        ],
+        "TLDRTitle": "شروط SeaMeet — ملخص سريع للمشغولين"
+      },
+      "TermsOfService": "شروط الخدمة",
+      "UpdateAvailable": "إصدار جديد {{version}} متاح",
+      "UpdateReady": "الإصدار {{version}} جاهز للتثبيت"
     },
-    "General": "الإعدادات العامة",
-    "Storage": {
-      "Title": "إعدادات التخزين",
-      "Description": "اختر المجلد الافتراضي الذي يستخدمه SeaMeet عند حفظ التسجيلات تلقائيًا.",
-      "DefaultPathLabel": "المسار الافتراضي للحفظ",
-      "Browse": "تصفح...",
-      "Save": "حفظ",
-      "RecordingNameLabel": "اسم التسجيل"
+    "AppPermissions": {
+      "DefaultRecordingMode": "وضع التسجيل الافتراضي",
+      "DeleteTooltip": "إزالته من القائمة (يعيدها إلى \"اسأل كل مرة\")",
+      "EmptyState": "لم يُكتشف تطبيقات بعد. عندما يكتشف SeaMeet تطبيقًا يستخدم ميكروفونك، سيظهر هنا.",
+      "PathCopied": "تم نسخ المسار إلى الحافظة",
+      "PermissionHeader": "أذونات التطبيق",
+      "Title": "أذونات التطبيق"
     },
-    "ProfileSettings": "إعدادات الملف الشخصي",
-    "AccountPreferences": "تفضيلات الحساب",
-    "ProfileSettingsDescription": "إدارة إعدادات ملفك الشخصي",
-    "AccountPreferencesDescription": "ضبط تفضيلات حسابك",
-    "SettingsFileLocation": "موقع ملف الإعدادات",
-    "SettingsFileDescription": "تُخزن الإعدادات في ملف JSON واحد لسهولة النسخ الاحتياطي والإدارة",
     "Back": "السابق",
-    "OpenFolder": "افتح المجلد",
     "DefaultUserName": "SeaMeet المستخدم",
-    "UserAvatarAlt": "صورة المستخدم",
+    "FailedToCheckForUpdates": "فشل في التحقق من التحديثات",
     "GroupTitle": {
-      "Account": "إعدادات الحساب",
-      "General": "الإعدادات العامة",
-      "Automation": "إعدادات التشغيل الآلي",
-      "RecordingStorage": "مخزن التسجيل",
-      "Configuration": "إعدادات التكوين",
       "ApplicationInfo": "معلومات التطبيق",
-      "Legal": "الشؤون القانونية"
+      "Automation": "إعدادات التشغيل الآلي",
+      "Configuration": "إعدادات التكوين",
+      "General": "الإعدادات العامة",
+      "Legal": "الشؤون القانونية",
+      "RecordingStorage": "مخزن التسجيل"
     },
     "Item": {
-      "EditProfile": "تعديل الملف الشخصي",
-      "Account": "حساب",
-      "LogOut": "تسجيل الخروج من الحساب",
-      "Language": "اختيار اللغة",
+      "AutoRecording": "ميزة التسجيل التلقائي",
+      "Copyright": "حقوق الملكية الفكرية",
       "ImproveTranslationHint": "ساعد في تحسين هذه الترجمة على GitHub →",
-      "Theme": "السمة",
-      "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
+      "Language": "اختيار اللغة",
       "MicrophoneGain": "مستوى ميكروفون",
       "StartAtLogin": "بدء تلقائي عند تسجيل الدخول",
-      "AutoRecording": "ميزة التسجيل التلقائي",
       "Storage": "خيارات التخزين",
-      "Copyright": "حقوق الملكية الفكرية"
+      "Theme": "السمة"
     },
     "MicGain": {
-      "Minimal": "الحد الأدنى (0.1x)",
-      "Quiet": "هادئ (0.5x)",
-      "Normal": "وضع طبيعي (1x)",
       "Loud": "عالي (5x)",
-      "Louder": "أعلى صوت (10x)"
+      "Louder": "أعلى صوت (10x)",
+      "Minimal": "الحد الأدنى (0.1x)",
+      "Normal": "وضع طبيعي (1x)",
+      "Quiet": "هادئ (0.5x)"
+    },
+    "OpenFolder": "افتح المجلد",
+    "PageTitle": {
+      "About": "حول",
+      "AutoRecording": "التسجيل التلقائي",
+      "Flashback": "تسجيل العودة إلى الماضي",
+      "Storage": "التخزين"
+    },
+    "SettingsFileLocation": "موقع ملف الإعدادات",
+    "Storage": {
+      "Browse": "تصفح...",
+      "DefaultPathLabel": "المسار الافتراضي للحفظ",
+      "Description": "اختر المجلد الافتراضي الذي يستخدمه SeaMeet عند حفظ التسجيلات تلقائيًا.",
+      "Save": "حفظ",
+      "Title": "إعدادات التخزين"
     },
     "Theme": {
+      "AdobeSand": "رمل أدوبي",
+      "AdobeSandDesc": "وضع فاتح بألوان ترابية دافئة",
+      "AzureLight": "أزرق سماوي",
+      "AzureLightDesc": "وضع فاتح بلون أزرق بارد",
+      "CloudCanvas": "لوحة السحاب",
+      "CloudCanvasDesc": "وضع فاتح بلون النعناع المنعش",
+      "ColumnDark": "داكن",
+      "ColumnLight": "فاتح",
+      "CyberCobalt": "كوبالت إلكتروني",
+      "CyberCobaltDesc": "وضع داكن بلون السيان النيوني",
+      "Dark": "الوضع الداكن",
+      "DarkDesc": "الوضع الداكن",
       "Device": "جهاز",
       "DeviceDesc": "اتبع إعدادات النظام",
       "Light": "الوضع الفاتح",
       "LightDesc": "السمة الفاتحة",
-      "Dark": "الوضع الداكن",
-      "DarkDesc": "الوضع الداكن",
-      "Pink": "لون وردي داكن",
-      "PinkDesc": "الوضع الوردي الداكن",
       "LightPink": "اللون الوردي الفاتح",
       "LightPinkDesc": "الوضع الوردي الفاتح",
-      "ColumnLight": "فاتح",
-      "ColumnDark": "داكن",
-      "AzureLight": "أزرق سماوي",
-      "AzureLightDesc": "وضع فاتح بلون أزرق بارد",
-      "WarmPaper": "ورق دافئ",
-      "WarmPaperDesc": "وضع فاتح بألوان الورق الدافئة",
-      "SynthwaveLight": "سينثويف فاتح",
-      "SynthwaveLightDesc": "وضع فاتح بأسلوب سينثويف نابض",
       "MidnightBlue": "أزرق منتصف الليل",
       "MidnightBlueDesc": "وضع داكن بلون أزرق عميق",
-      "CloudCanvas": "لوحة السحاب",
-      "CloudCanvasDesc": "وضع فاتح بلون النعناع المنعش",
-      "CyberCobalt": "كوبالت إلكتروني",
-      "CyberCobaltDesc": "وضع داكن بلون السيان النيوني",
-      "AdobeSand": "رمل أدوبي",
-      "AdobeSandDesc": "وضع فاتح بألوان ترابية دافئة"
+      "Pink": "لون وردي داكن",
+      "PinkDesc": "الوضع الوردي الداكن",
+      "SynthwaveLight": "سينثويف فاتح",
+      "SynthwaveLightDesc": "وضع فاتح بأسلوب سينثويف نابض",
+      "WarmPaper": "ورق دافئ",
+      "WarmPaperDesc": "وضع فاتح بألوان الورق الدافئة"
     },
-    "PageTitle": {
-      "Flashback": "تسجيل العودة إلى الماضي",
-      "About": "حول",
-      "AutoRecording": "التسجيل التلقائي",
-      "Storage": "التخزين"
-    },
-    "FailedToCheckForUpdates": "فشل في التحقق من التحديثات",
-    "AppPermissions": {
-      "Title": "أذونات التطبيق",
-      "Description": "إدارة التطبيقات التي يمكنها التسجيل تلقائيًا عند اكتشاف استخدامها لميكروفونك.",
-      "EmptyState": "لم يُكتشف تطبيقات بعد. عندما يكتشف SeaMeet تطبيقًا يستخدم ميكروفونك، سيظهر هنا.",
-      "DeleteTooltip": "إزالته من القائمة (يعيدها إلى \"اسأل كل مرة\")",
-      "PathCopied": "تم نسخ المسار إلى الحافظة",
-      "PermissionHeader": "أذونات التطبيق",
-      "DefaultRecordingMode": "وضع التسجيل الافتراضي"
-    }
+    "Title": "الإعدادات",
+    "UserAvatarAlt": "صورة المستخدم"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "عرض النافذة العائمة",
-    "OpenLauncher": "فتح المُشغل",
-    "RecordAudio": "تسجيل صوتي",
-    "RecordFullscreen": "تسجيل كامل الشاشة",
-    "RecordWindow": "تسجيل النافذة",
-    "RecordRegion": "تسجيل المنطقة",
     "CaptureScreenshot": "التقاط لقطة شاشة",
-    "RestoreDefaults": "استعادة الإعدادات الافتراضية",
-    "RecordingPrompt": "ترقب… اضغط على الاختصار الجديد",
     "ConflictWarning": "هذا الاختصار يستخدم بالفعل من قبل تطبيق آخر ولا يمكن تسجيله.",
     "GenericError": "غير قادر على تحديث الاختصار.",
     "None": "لا شيء",
-    "SpaceKey": "مساحة"
+    "OpenLauncher": "فتح المُشغل",
+    "RecordAudio": "تسجيل صوتي",
+    "RecordFullscreen": "تسجيل كامل الشاشة",
+    "RecordingPrompt": "ترقب… اضغط على الاختصار الجديد",
+    "RecordRegion": "تسجيل المنطقة",
+    "RecordWindow": "تسجيل النافذة",
+    "RestoreDefaults": "استعادة الإعدادات الافتراضية",
+    "SpaceKey": "مساحة",
+    "ToggleFloatingWindow": "عرض النافذة العائمة"
   },
   "Sidebar": {
-    "PrimaryNavigation": "التنقل الأساسي",
     "ClearSearch": "مسح البحث",
-    "AgentPanel": "وكيل منظمة العفو الدولية"
-  },
-  "SidebarTabs": {
-    "Audios": "الصوتيات",
-    "AutoDetect": "الكشف التلقائي"
+    "PrimaryNavigation": "التنقل الأساسي"
   },
   "TakeSnapshot": {
-    "Title": "تم أخذ لقطة شاشة",
+    "GoToSnapshot": "الانتقال إلى لقطة جديدة",
     "Message": "تم أخذ اللقطة وحفظها في:",
     "StayAtVideo": "البقاء على الفيديو الحالي",
-    "GoToSnapshot": "الانتقال إلى لقطة جديدة"
+    "Title": "تم أخذ لقطة شاشة"
   },
   "TopNav": {
-    "CloseNavigationMenu": "إغلاق قائمة التنقل",
-    "OpenNavigationMenu": "فتح قائمة التنقل",
-    "MainNavigation": "الملاحة الرئيسية",
-    "Record": "سِجِلّ",
-    "Recording": "تسجيل",
-    "Files": "ملفات",
     "Agent": "Agent",
-    "Terminal": "واجهة طرفية"
+    "CloseNavigationMenu": "إغلاق قائمة التنقل",
+    "Files": "ملفات",
+    "MainNavigation": "الملاحة الرئيسية",
+    "OpenNavigationMenu": "فتح قائمة التنقل",
+    "Record": "سِجِلّ",
+    "Recording": "تسجيل"
   },
   "Tray": {
-    "MinimizedHint": "لا تزال SeaMeet تعمل في علبة النظام (في أسفل اليمين)",
-    "ShowLauncher": "عرض المُشغّل",
-    "ShowFloatingWindow": "عرض النافذة العائمة",
-    "ShowMainWindow": "عرض النافذة الرئيسية لـ SeaMeet",
-    "ExitSeaMeet": "الخروج من SeaMeet",
-    "QuickRecording": "تسجيل سريع",
-    "RecordAudio": "تسجيل الصوت",
-    "RecordFullscreen": "تسجيل كامل الشاشة",
-    "RecordRegion": "تسجيل منطقة محددة",
-    "OpenRecordingsFolder": "فتح مجلد التسجيلات",
-    "TakeScreenshot": "لقطة شاشة (OK)",
-    "Close": "إغلاق",
-    "OpenSeaMeet": "افتح SeaMeet",
-    "OpenSaveFolder": "فتح مجلد الحفظ",
-    "ReportIssues": "الإبلاغ عن المشكلات"
+    "MinimizedHint": "لا تزال SeaMeet تعمل في علبة النظام (في أسفل اليمين)"
   },
   "Types": {
-    "Microphone": "ميكروفون",
-    "System": "مخرجات الصوت النظامي",
     "Both": "كلاهما (ممزوج)",
     "File": "ملف",
+    "Microphone": "ميكروفون",
+    "System": "مخرجات الصوت النظامي",
     "Video": "فيديو"
   },
   "UpdateQuitModal": {
-    "Title": "تحديث متوفر",
-    "ReadyToInstall": "SeaMeet {{version}} جاهز للتثبيت",
-    "InstallBeforeQuitting": "هل تريد تثبيته قبل الخروج؟",
     "InstallAndQuit": "تثبيت وخرج",
-    "QuitWithoutInstalling": "الخروج دون تثبيت"
+    "InstallBeforeQuitting": "هل تريد تثبيته قبل الخروج؟",
+    "QuitWithoutInstalling": "الخروج دون تثبيت",
+    "ReadyToInstall": "SeaMeet {{version}} جاهز للتثبيت",
+    "Title": "تحديث متوفر"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} جاهز للتثبيت",
-    "Downloading": "جار تحميل SeaMeet {{version}} ({{percent}}%)",
     "Available": "تحديث متاح: SeaMeet {{version}}",
-    "WhatsNewInVersion": "الجديد في {{version}}؟",
-    "WhatsNew": "الجديد:",
+    "Dismiss": "رفض",
+    "Downloading": "جار تحميل SeaMeet {{version}} ({{percent}}%)",
     "Hide": "إخفاء",
+    "ReadyToInstall": "SeaMeet {{version}} جاهز للتثبيت",
     "RestartNow": "إعادة التشغيل الآن",
     "ViewRelease": "عرض الإصدار",
     "ViewReleaseTitle": "عرض ملاحظات الإصدار على GitHub",
-    "Dismiss": "رفض"
+    "WhatsNew": "الجديد:",
+    "WhatsNewInVersion": "الجديد في {{version}}؟"
   },
   "UserMenu": {
+    "AboutSeaMeet": "عن SeaMeet",
     "DisplayName": "اسم المستخدم",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "إعدادات الملف الشخصي",
-    "AccountPreferences": "تفضيلات الحساب",
-    "BillingPlans": "الفوترة والخطط",
-    "StorageSettings": "إعدادات التخزين",
-    "HelpSupport": "المساعدة والدعم",
-    "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
-    "SignIn": "تسجيل الدخول",
-    "SignOut": "تسجيل الخروج",
-    "SeaMeetSignedOut": "SeaMeet: غير مسجل الدخول",
-    "SeaMeetSignedIn": "SeaMeet: مسجل الدخول",
-    "AboutSeaMeet": "عن SeaMeet",
     "Exit": "خروج",
+    "HelpSupport": "المساعدة والدعم",
     "HelpSupportSection": {
-      "Wiki": "الويكي",
-      "WikiDesc": "تحقق من ويكي SeaMeet للتوثيق والأدلة.",
-      "VisitWiki": "زيارة الويكي",
-      "Issues": "المشاكل",
-      "IssuesDesc": "الإبلاغ عن الأخطاء وطلب الميزات (يتطلب حساب GitHub).",
-      "SubmitIssue": "إرسال مشكلة",
       "Discussion": "المناقشة",
       "DiscussionDesc": "انضم إلى مناقشة المجتمع (يتطلب حساب GitHub).",
-      "JoinDiscussion": "انضم إلى المناقشة",
+      "DogfoodingDesc": "نشجعك على استخدام SeaMeet لتسجيل مشكلة ونشرها في المشاكل أو مراسلتنا عبر البريد الإلكتروني!",
       "Email": "البريد الإلكتروني",
       "EmailDesc": "تواصل مع فريقنا مباشرة.",
-      "SendEmail": "إرسال بريد إلكتروني",
-      "Dogfooding": "الاستخدام الداخلي",
-      "DogfoodingDesc": "نشجعك على استخدام SeaMeet لتسجيل مشكلة ونشرها في المشاكل أو مراسلتنا عبر البريد الإلكتروني!",
-      "CheckForUpdates": "التحقق من التحديثات",
-      "CheckingUpdates": "جاري التحقق من التحديثات...",
-      "UpdateAvailable": "الإصدار الجديد {{version}} متاح",
-      "UpdateReady": "الإصدار {{version}} جاهز للتثبيت",
-      "InstallNow": "تثبيت الآن",
-      "TermsOfService": "شروط الخدمة",
-      "PrivacyPolicy": "سياسة الخصوصية",
       "ImproveTranslation": "تحسين الترجمات",
-      "ImproveTranslationDesc": "ساعدنا في تحسين الترجمات أو طلب لغة جديدة على GitHub."
-    }
+      "ImproveTranslationDesc": "ساعدنا في تحسين الترجمات أو طلب لغة جديدة على GitHub.",
+      "Issues": "المشاكل",
+      "IssuesDesc": "الإبلاغ عن الأخطاء وطلب الميزات (يتطلب حساب GitHub).",
+      "JoinDiscussion": "انضم إلى المناقشة",
+      "SendEmail": "إرسال بريد إلكتروني",
+      "SubmitIssue": "إرسال مشكلة",
+      "VisitWiki": "زيارة الويكي",
+      "Wiki": "الويكي",
+      "WikiDesc": "تحقق من ويكي SeaMeet للتوثيق والأدلة."
+    },
+    "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
+    "SeaMeetSignedIn": "SeaMeet: مسجل الدخول",
+    "SeaMeetSignedOut": "SeaMeet: غير مسجل الدخول",
+    "SignIn": "تسجيل الدخول",
+    "SignOut": "تسجيل الخروج"
   },
   "VideoSettings": {
-    "Title": "إعدادات تسجيل الفيديو",
-    "Mode": "وضع التسجيل",
-    "ModeOff": "إيقاف",
-    "ModeFullscreen": "ملء الشاشة",
-    "ModeWindow": "وضع النافذة",
-    "ModeRegion": "المنطقة",
+    "AudioSettings": "إعدادات الصوت",
+    "CodecTooltip": {
+      "VP8": "يستخدم هذا التسجيل VP8 لأفضل جودة. قد لا تدعم بعض مشغلات الفيديو الافتراضية — مثل Windows Media Player و QuickTime على macOS — هذا التنسيق. لضمان التشغيل الموثوق، يُرجى استخدام متصفح حديث (Chrome أو Edge) أو مشغل متوافق مثل VLC.",
+      "VP9": "يستخدم هذا التسجيل VP9 لأفضل جودة. قد لا تدعم بعض مشغلات الفيديو الافتراضية — مثل Windows Media Player و QuickTime على macOS — هذا التنسيق. لضمان التشغيل الموثوق، يُرجى استخدام متصفح حديث (Chrome أو Edge) أو مشغل متوافق مثل VLC."
+    },
+    "Detecting": "جار الكشف...",
+    "FlashbackArmedNotice": "أنت تسجل بـ {{seconds}} ثانية من ذاكرة التراجع.",
+    "FramesPerSecond": "الإطارات في الثانية",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} جيجابايت/ساعة",
+    "HD": "HD",
+    "HideWindow": "إخفاء نافذة SeaMeet عند اختيار المنطقة",
+    "Internal": "داخلي",
+    "MBPerMin": "~{{mb}} ميجابايت/دقيقة،",
     "ModeAudioOnly": "صوتي فقط",
-    "SelectScreen": "اختر الشاشة أو المنطقة",
-    "SelectWindow": "اختر النافذة",
-    "Refresh": "تحديث",
+    "ModeFullscreen": "ملء الشاشة",
+    "ModeRegion": "المنطقة",
+    "ModeWindow": "وضع النافذة",
+    "Native": "أصلي",
     "NoScreens": "لم يتم اكتشاف أي شاشات",
     "NoWindows": "لا توجد نوافذ متاحة",
-    "RegionInfo": "عند بدء التسجيل، ستتم مطالبتك باختيار شاشة أو نافذة.",
-    "HideWindow": "إخفاء نافذة SeaMeet عند اختيار المنطقة",
-    "VideoQuality": "جودة الفيديو",
-    "Quality": "جودة الفيديو",
-    "QualityOriginal": "الجودة الأصلية",
-    "QualityHigh": "الجودة العالية",
-    "QualityMedium": "متوسط",
-    "QualityLow": "منخفض",
-    "FramesPerSecond": "الإطارات في الثانية",
-    "FrameRate": "معدل الإطارات",
-    "SourceResolution": "دقة المصدر",
-    "Native": "أصلي",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "اختر المصدر من أعلى",
-    "ZeroSize": "~0 ميجابايت/دقيقة، ~0 جيجابايت/ساعة",
-    "MBPerMin": "~{{mb}} ميجابايت/دقيقة،",
-    "GBPerHour": "~{{gb}} جيجابايت/ساعة",
     "Primary": "أساسي",
-    "Internal": "داخلي",
-    "Detecting": "جار الكشف...",
-    "ResolutionUnknown": "الدقة غير معروفة",
-    "AudioSettings": "إعدادات الصوت",
-    "RecordModeTitle": "هل تريد تسجيل صوتي أو فيديو؟",
+    "QualityHigh": "الجودة العالية",
+    "QualityLow": "منخفض",
+    "QualityMedium": "متوسط",
+    "QualityOriginal": "الجودة الأصلية",
     "Record": "تسجيل",
-    "RecordWithoutFlashback": "تسجيل بدون العودة إلى الماضي",
+    "RecordModeTitle": "هل تريد تسجيل صوتي أو فيديو؟",
     "RecordWithFlashback": "التسجيل باستخدام العودة إلى الماضي",
+    "RecordWithoutFlashback": "تسجيل بدون العودة إلى الماضي",
+    "Refresh": "تحديث",
+    "ResolutionUnknown": "الدقة غير معروفة",
+    "SD": "SD",
+    "SelectScreen": "اختر الشاشة أو المنطقة",
+    "SelectSourceAbove": "اختر المصدر من أعلى",
+    "SelectWindow": "اختر النافذة",
+    "SourceResolution": "دقة المصدر",
+    "Title": "إعدادات تسجيل الفيديو",
     "VideoFlashbackArmedNotice": "شاشة العودة إلى الماضي مفعلة ({{seconds}}ث)",
-    "FlashbackArmedNotice": "أنت تسجل بـ {{seconds}} ثانية من ذاكرة التراجع.",
-    "CodecTooltip": {
-      "VP9": "يستخدم هذا التسجيل VP9 لأفضل جودة. قد لا تدعم بعض مشغلات الفيديو الافتراضية — مثل Windows Media Player و QuickTime على macOS — هذا التنسيق. لضمان التشغيل الموثوق، يُرجى استخدام متصفح حديث (Chrome أو Edge) أو مشغل متوافق مثل VLC.",
-      "VP8": "يستخدم هذا التسجيل VP8 لأفضل جودة. قد لا تدعم بعض مشغلات الفيديو الافتراضية — مثل Windows Media Player و QuickTime على macOS — هذا التنسيق. لضمان التشغيل الموثوق، يُرجى استخدام متصفح حديث (Chrome أو Edge) أو مشغل متوافق مثل VLC."
-    }
+    "VideoQuality": "جودة الفيديو",
+    "ZeroSize": "~0 ميجابايت/دقيقة، ~0 جيجابايت/ساعة"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "المنطقة تم اختيارها",
     "CustomRegion": "المنطقة المخصصة: {{width}} × {{height}} بكسل",
-    "ReselectRegion": "إعادة تحديد المنطقة",
-    "SelectCustomRegion": "حدد المنطقة المخصصة",
     "FPS15": "15 إطارًا في الثانية",
     "FPS30": "30 إطارًا في الثانية",
-    "FPS60": "60 إطارًا في الثانية"
+    "FPS60": "60 إطارًا في الثانية",
+    "RegionSelected": "المنطقة تم اختيارها",
+    "ReselectRegion": "إعادة تحديد المنطقة",
+    "SelectCustomRegion": "حدد المنطقة المخصصة"
   },
   "WindowPicker": {
-    "Title": "اختر نافذة",
     "Instruction": "اختر نافذة لتسجيلها لالتقاط نوافذ الشاشة",
-    "Refresh": "تحديث",
-    "Refreshing": "جارِ التحديث…",
     "Loading": "جارِ تحميل النوافذ…",
     "None": "لم يتم اكتشاف نوافذ. افتح تطبيقًا وقم بالتحديث.",
+    "Refresh": "تحديث",
+    "Refreshing": "جارِ التحديث…",
+    "Title": "اختر نافذة",
     "Unknown": "نافذة بدون عنوان"
-  },
-  "Common": {
-    "Configure": "تكوين",
-    "Cancel": "إلغاء",
-    "Apply": "تطبيق",
-    "Close": "إغلاق",
-    "Open": "فتح",
-    "Minimize": "تصغير إلى دائرة",
-    "Recording": "التسجيل",
-    "UnknownApp": "تطبيق غير معروف",
-    "Done": "تم",
-    "Save": "حفظ",
-    "Saving": "جار الحفظ...",
-    "Delete": "حذف",
-    "Or": "أو",
-    "Loading": "جار التحميل...",
-    "Expand": "توسيع",
-    "PlannedFeature": "ميزة مخططة",
-    "Screen": "الشاشة",
-    "Window": "النافذة",
-    "Region": "المنطقة",
-    "AppTitle": "مسجل شاشة وصوت SeaMeet",
-    "AppSubtitle": "تسجيل إدخال وإخراج صوت الجهاز",
-    "Screenshot": "لقطة شاشة",
-    "Saved": "تم الحفظ",
-    "Processing": "جار المعالجة…",
-    "Starting": "جار البدء...",
-    "FileNameCopiedWithRenameHint": "تم نسخ {{fileName}} إلى الحافظة. انقر مرتين لتغيير اسم الملف.",
-    "ApplyName": "تطبيق الاسم",
-    "Send": "يرسل"
-  },
-  "RecordingControls": {
-    "StartRecording": "ابدأ تسجيل الفيديو",
-    "StopRecording": "إيقاف التسجيل",
-    "ContinueRecording": "استمر في التسجيل",
-    "Pause": "إيقاف مؤقت للتسجيل",
-    "Resume": "استئناف",
-    "Stop": "إيقاف",
-    "RecordingScreen": "شاشة التسجيل..",
-    "RecordingAudio": "تسجيل الصوت..",
-    "AudioRecording": "تسجيل صوتي",
-    "VideoRecording": "تسجيل فيديو",
-    "RecordingPreview": "معاينة التسجيل",
-    "RecordingMode": "وضع التسجيل"
-  },
-  "RecordingModes": {
-    "RecordAudio": "الصوتي",
-    "RecordAudioTip": "الصوت فقط",
-    "RecordWindow": "تسجيل النافذة",
-    "RecordWindowTip": "التقاط نافذة تطبيق واحدة",
-    "RecordFullscreen": "وضع ملء الشاشة",
-    "RecordFullscreenTip": "إعطاء الأمر لالتقاط الشاشة بالكامل",
-    "RecordRegion": "وضع الالتقاط",
-    "RecordRegionTip": "التقاط المنطقة المخصصة",
-    "CaptureMode": "وضع الالتقاط",
-    "FullScreen": "التصوير بالشاشة الكاملة",
-    "AreaCapture": "تحديد المنطقة"
-  },
-  "RecordingsList": {
-    "NoRecordings": "لا توجد تسجيلات بعد. ابدأ التسجيل لعرضها هنا.",
-    "RecentRecordings": "التسجيلات الحديثة",
-    "RecentCaptures": "اللقطات الأخيرة",
-    "RefreshRecordings": "تحديث",
-    "SearchRecordingsOrSnapshots": "ابحث في التسجيلات واللقطات",
-    "SearchRecordingsPlaceholder": "ابحث عن التسجيلات واللقطات",
-    "ShowInFolder": "عرض في المجلد",
-    "CopyFileName": "نسخ اسم الملف",
-    "CopyFilePath": "نسخ مسار الملف",
-    "FileNameCopied": "تم نسخ {{fileName}} إلى الحافظة",
-    "FilePathCopied": "تم نسخ مسار الملف إلى الحافظة",
-    "SaveAs": "حفظ باسم",
-    "OpenSaveFolder": "عرض المجلد",
-    "Title": "قائمة التسجيلات",
-    "Recovered": "تم استعادة {{count}} تسجيل"
-  },
-  "FileImport": {
-    "ImportMedia": "استيراد وسائط",
-    "DragDropFiles": "اسحب وأفلت ملفات الصوت أو الفيديو أو الصور هنا",
-    "DragDropSubtitle": "اسحب وأفلت ملفات الصوت أو الفيديو أو الصور هنا",
-    "BrowseFiles": "تصفح الملفات",
-    "Supported": "مدعوم",
-    "SupportedFormats": "مدعوم: MP3، WAV، M4A، WebM، OGG، PNG، JPG وغيرها",
-    "VideoImportCopying": "جارٍ نسخ ملف الفيديو...",
-    "VideoImportSaving": "جارٍ حفظ ملف الفيديو...",
-    "VideoUnsupported": "قد لا يكون هذا التنسيق قابلاً للتشغيل في التطبيق. سيتم استيراد الملف على أي حال."
-  },
-  "AudioControls": {
-    "AudioCapture": "التقاط الصوت",
-    "AudioMix": "مزج الصوت",
-    "AudioSessionsLog": "سجل جلسات الصوت",
-    "AudioSource": "مصدر الصوت:",
-    "InputDevice": "جهاز الإدخال:",
-    "Microphone": "ميكروفون",
-    "MicrophoneLabel": "ميكروفون {{id}}",
-    "RecordingDefaultMicrophone": "الميكروفون الافتراضي",
-    "RecordingInputLabel": "الإدخال: {{name}}",
-    "RecordingSettings": "إعدادات التسجيل",
-    "RecordingType": "نوع التسجيل:",
-    "RefreshMicrophoneList": "تحديث قائمة الميكروفونات",
-    "MicrophoneGainWarning": "مستوى الميكروفون العالي يمكن أن يلتقط صوت السماعات حتى عند إيقاف \"صوت النظام\". استخدم سماعات الرأس أو خفض مستوى الميكروفون للتسجيلات التي تقتصر على الميكروفون فقط."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "ابدأ التسجيل",
-    "Ready": "هل أنت جاهز؟",
-    "BufferingMoment": "لحظة التخزين المؤقت...",
-    "RecordWithFlashback": "سجل باستخدام العودة إلى الماضي",
-    "NeverMissAMoment": "لا تفوّت أي لحظة.",
-    "ReadyToGuard": "هل أنت مستعد لحماية نوع {{type}} الخاص بك؟",
-    "FillingBuffer": "ملء ذاكرة التخزين المؤقت للعودة إلى الماضي لمدة {{duration}}s... {{progress}}%",
-    "ReadyToCapture": "SeaMeet جاهز للالتقاط.",
-    "DescNone": "قم بتسجيل شاشتك أو صوتك أو التقاط لقطة شاشة. اختر وضع العودة إلى الماضي أعلاه لتمكين حفظ اللحظة.",
-    "DescInit": "انقر على 'هل أنت مستعد؟' ليبدأ SeaMeet في 'تذكر' الماضي.",
-    "DescCharging": "تحضير نافذتك التي تستغرق {{duration}} ثوانٍ... على وشك التقاط ما قد تفوته. {{progress}}% مكتمل.",
-    "DescReady": "وضع العودة إلى الماضي مفعّل. كلما بدأت التسجيل، سيتم تضمين {{duration}} ثانية من {{type}} الماضية — لا تندم على لحظة فاتتك مرة أخرى.",
-    "Screen": "الشاشة",
-    "Audio": "الصوت",
-    "OpenLauncher": "فتح المشغل",
-    "OpenFloater": "فتح Floater",
-    "TakeScreenshot": "لقطة شاشة",
-    "Buffering": "جارٍ التحميل",
-    "SavingFlashback": "جارٍ حفظ العودة إلى الماضي...",
-    "SaveLastFlashback": "حفظ آخر {{duration}}s من العودة إلى الماضي",
-    "PrivacyProtected": "خصوصيتك محمية.",
-    "PrivacyDesc": "SeaMeet يلتقط صورًا لماضي {{duration}} ثوانٍ من {{type}} في مخزن دائري محلي على ذاكرة وصول عشوائي جهازك.",
-    "FlashbackOff": "وضع العودة إلى الماضي غير مفعّل حاليًا. ابدأ تسجيلًا عاديًا في أي وقت، أو اختر وضع العودة إلى الماضي (صوتي أو شاشة) أعلاه لتمكين حفظ اللحظة البطولية.",
-    "FlashbackInitAudio": "هل أنت جاهز لحماية صوتك؟",
-    "FlashbackInitScreen": "هل أنت مستعد لحماية شاشتك؟",
-    "FlashbackInitDescription": "انقر على 'هل أنت جاهز؟' لطلب من SeaMeet أن يبدأ 'تذكر' الماضي.",
-    "FlashbackCharging": "ملء ذاكرة التخزين المؤقت لمدة {{seconds}}s... {{percent}}%",
-    "FlashbackChargingDescription": "تحضير نافذتك التي تستغرق {{seconds}} ثانية... {{percent}}% مكتمل.",
-    "FlashbackReadyQuestion": "جاهز؟",
-    "FlashbackReady": "لا تفوت أي لحظة.",
-    "FlashbackReadyDescription": "العودة إلى الماضي مفعلة. يتم تضمين {{seconds}}s من {{type}} عند التسجيل.",
-    "FlashbackBuffering": "جارٍ التحميل...",
-    "SaveFlashback": "حفظ آخر {{seconds}}s من العودة إلى الماضي",
-    "FlashbackPrivacy": "تم حماية خصوصيتك. مخزنة محليًا في الذاكرة العشوائية.",
-    "Capturing": "جارٍ الالتقاط...",
-    "CaptureMode": "وضع الالتقاط",
-    "FullScreen": "وضع الشاشة الكاملة",
-    "AreaCapture": "التقاط المنطقة",
-    "KeepWindowVisible": "احتفظ بنافذة SeaMeet مرئية عند التقاط لقطة شاشة",
-    "FlashbackMismatch": "عدم تطابق وضع العودة إلى الماضي. تسجيل الصوت ولكن وضع العودة إلى الماضي للفيديو مفعّل. يرجى تعطيل وضع العودة إلى الماضي للفيديو."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "تفعيل نسخ SeaMeet",
-    "SignInRequired": "تسجيل الدخول مطلوب",
-    "ProcessingMode": "وضع المعالجة",
-    "Realtime": "في الوقت الحقيقي",
-    "RealtimeDescription": "نسخ مباشر أثناء التسجيل",
-    "Diarized": "مُميّز",
-    "DiarizedDescription": "ارفع الصوت بعد التسجيل لتحديد المتحدث",
-    "ComingSoon": "(قريباً)",
-    "TranscriptionLanguage": "لغة النسخ",
-    "TranslationLanguage": "لغة الترجمة",
-    "NoTranslation": "لا توجد ترجمة",
-    "LanguageHint": "يمكنك تغيير اللغة أثناء التسجيل",
-    "LiveTranscription": "نسخ مباشر",
-    "WaitingForSpeech": "في انتظار الكلام...",
-    "UnknownSpeaker": "المتحدث",
-    "SegmentCount": "{{count}} مقاطع",
-    "SegmentCount_plural": "{{count}} مقاطع",
-    "ConnectionError": "فشل الاتصال بـ SeaMeet",
-    "Reconnecting": "جار إعادة الاتصال...",
-    "Connected": "متصل بـ SeaMeet",
-    "Disconnected": "غير متصل بـ SeaMeet",
-    "NowSpeaking": "يتحدث الآن...",
-    "Transcript": "النسخة",
-    "LoadingTranscript": "جار تحميل النسخ...",
-    "NoTranscript": "لا توجد نسخ متاحة",
-    "FetchError": "فشل تحميل النسخ",
-    "Retry": "إعادة المحاولة",
-    "Transcribed": "تم النسخ",
-    "Content": "محتوى SeaMeet",
-    "Tab": {
-      "transcription": "النسخ",
-      "summary": "ملخص",
-      "actionItems": "عناصر الإجراء",
-      "notes": "ملاحظات"
-    },
-    "Summary": "ملخص",
-    "NoSummary": "الملخص غير متاح بعد.",
-    "ActionItems": "عناصر الإجراء",
-    "NoActionItems": "لا توجد عناصر إجراء لهذا الاجتماع",
-    "DueDate": "موعد الاستحقاق: {{date}}",
-    "Notes": "ملاحظات",
-    "NoNotes": "لا توجد ملاحظات لهذا الاجتماع",
-    "LoadingContent": "جار تحميل محتوى SeaMeet...",
-    "SeekToTime": "انقر للتشغيل من هذا الوقت",
-    "CollapseNowSpeaking": "طي المتحدث الآن",
-    "ExpandNowSpeaking": "توسيع المتحدث الآن"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "ذاكرة العودة إلى الماضي فارغة. حاول مرة أخرى لاحقًا.",
-    "EnableFlashback": "فعّل العودة إلى الماضي لحفظ لحظة",
-    "FailedToSave": "فشل في حفظ ذاكرة العودة إلى الماضي",
-    "SavedFlashback": "تم حفظ العودة إلى الماضي في التسجيلات",
-    "StillCharging": "ذاكرة العودة إلى الماضي لا تزال تتشحن."
-  },
-  "AISummary": {
-    "TabTitle": "ملخص الذكاء الاصطناعي",
-    "SetupRequired": "قم بتكوين مفتاح Gemini API الخاص بك في الإعدادات → ميزات الذكاء الاصطناعي لتمكين ملخصات الذكاء الاصطناعي.",
-    "EnableRequired": "قم بتمكين ميزات الذكاء الاصطناعي في الإعدادات → ميزات الذكاء الاصطناعي لرؤية ملخصات الذكاء الاصطناعي.",
-    "ExportMarkdown": "نسخ كتخفيض السعر",
-    "ExportSrt": "انسخ كـ SRT",
-    "ExportJson": "انسخ كـ JSON",
-    "Regenerate": "إعادة إنشاء الملخص",
-    "Minimize": "تصغير",
-    "Maximize": "قم بالتوسيع إلى العرض الكامل",
-    "Queued": "في قائمة الانتظار للمعالجة...",
-    "Processing": "جارٍ إنشاء الملخص...",
-    "Error": "فشل تحميل الملخص: {{error}}",
-    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. حاول التجديد.",
-    "Retry": "أعد المحاولة",
-    "NoSummary": "لا يوجد ملخص لمنظمة العفو الدولية حتى الآن.",
-    "Generate": "إنشاء ملخص",
-    "Copy": "ينسخ",
-    "NoSummaryText": "الملخص غير متوفر.",
-    "Topics": "المواضيع:",
-    "NoTranscript": "النص غير متوفر.",
-    "NoActions": "لم يتم تحديد أي عناصر عمل.",
-    "NoDecisions": "لم يتم تحديد أي قرارات رئيسية.",
-    "Export": {
-      "HeadingSummary": "ملخص",
-      "HeadingActionItems": "عناصر العمل",
-      "HeadingKeyDecisions": "القرارات الرئيسية",
-      "HeadingTranscription": "النسخ"
-    },
-    "Tab": {
-      "Summary": "ملخص",
-      "Transcription": "نص",
-      "ActionItems": "الإجراءات",
-      "KeyDecisions": "القرارات",
-      "Agent": "عامل"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "ميزات الذكاء الاصطناعي",
-    "MenuItem": "ملخصات مدعومة بالذكاء الاصطناعي",
-    "PageTitle": "ميزات الذكاء الاصطناعي",
-    "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
-    "EnableToggleDesc": "يتطلب مفتاح Gemini API مجاني",
-    "ApiKeySection": "الجوزاء API مفتاح",
-    "ApiKeyLabel": "الجوزاء API مفتاح",
-    "KeyPlaceholder": "ايزاسي...",
-    "KeyPlaceholderSaved": "••••••••• (أنقذ)",
-    "ShowKey": "إظهار المفتاح",
-    "HideKey": "إخفاء المفتاح",
-    "TestKey": "حفظ والتحقق",
-    "Saving": "توفير...",
-    "GetKeyLink": "احصل على مفتاح API مجاني من Google AI Studio →",
-    "ClearKey": "إزالة المفتاح المحفوظ",
-    "KeyVerified": "تم التحقق من المفتاح",
-    "KeyInvalid": "مفتاح غير صالح",
-    "KeyTesting": "اختبار...",
-    "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
-    "ModelSection": "نموذج الذكاء الاصطناعي",
-    "ModelLabel": "نموذج الجوزاء",
-    "SelectedModel": "تم التحديد: {{model}}_",
-    "AutomationSection": "الأتمتة",
-    "AutoSummary": "إنشاء ملخص تلقائيًا",
-    "AutoSummaryDesc": "يتم تشغيله بعد انتهاء كل تسجيل",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "موصى به · سريع + قادر",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "أرخص خيار مستقر",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "رخيصة للغاية",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "القدرة القصوى",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "أفضل المنطق المستقر"
-    },
-    "ClaudeKey": {
-      "Section": "مفتاح Claude API (الوكيل)",
-      "SourceLabel": "المصدر النشط:",
-      "SourceByok": "مفتاح API الخاص بك (BYOK)",
-      "SourceKeyServer": "تحت إدارة SeaMeet",
-      "SourceCli": "كلود كود CLI",
-      "SourceNone": "لم يتم تكوينه",
-      "KeyPlaceholder": "سك-النمل-...",
-      "KeyPlaceholderSaved": "••••••••• (أنقذ)",
-      "ShowKey": "إظهار المفتاح",
-      "HideKey": "إخفاء المفتاح",
-      "TestKey": "حفظ والتحقق",
-      "Saving": "توفير...",
-      "ClearKey": "إزالة المفتاح المحفوظ",
-      "KeyVerified": "تم التحقق من المفتاح",
-      "KeyInvalid": "مفتاح غير صالح",
-      "KeyTesting": "اختبار...",
-      "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
-      "GetKeyLink": "احصل على مفتاح API من Anthropic Console →",
-      "QuotaSection": "حصة الخادم الرئيسية",
-      "QuotaRemaining": "{{remaining}} / {limit}_ الرموز المميزة المتبقية",
-      "QuotaResetDate": "إعادة التعيين على {{date}}",
-      "QuotaLoading": "جارٍ تحميل الحصة...",
-      "QuotaRefresh": "تحديث الحصة",
-      "CliSection": "كلود كود CLI",
-      "CliInstalled": "تم التثبيت ({{version}})",
-      "CliNotInstalled": "لم يتم العثور على كلود CLI",
-      "CliInstallLink": "قم بتثبيت كود كلود →",
-      "ModelSection": "نموذج كلود الافتراضي",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "سريع ورخيص",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "موصى به · متوازن",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "الأكثر قدرة"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "وكيل الذكاء الاصطناعي والعمل المشترك",
-    "PageTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
-    "SectionTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
-    "EnableToggle": "تمكين وكيل الذكاء الاصطناعي والعمل المشترك",
-    "EnableToggleDesc": "يتطلب مفتاح Claude API",
-    "DisabledBadge": "عاجز",
-    "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
-    "DisabledTabHint": "تم تعطيل AI Agent — قم بتمكينه في الإعدادات → AI Agent & Cowork",
-    "NotConfiguredMsg": "لم يتم تكوين مفتاح Claude API. قم بإعداد واحد في الإعدادات → AI Agent & Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "الملخص في قائمة الانتظار...",
-    "Running": "جارٍ إنشاء الملخص...",
-    "Progress": "مجموعة المعالجة {{current}}_ من {{total}}",
-    "Done": "ملخص جاهز",
-    "Error": "فشلت المعالجة"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "العملية مع الذكاء الاصطناعي",
-    "Queuing": "انتظار...",
-    "ProcessingWithTime": "جارٍ المعالجة... {{sec}}s",
-    "Describe": "وصف الصورة",
-    "DescribeSub": "ماذا يوجد في لقطة الشاشة هذه؟",
-    "Ocr": "استخراج النص (التعرف الضوئي على الحروف)",
-    "OcrSub": "قراءة كل النص المرئي",
-    "Custom": "موجه مخصص",
-    "CustomPlaceholder": "اسأل أي شيء عن هذه الصورة...",
-    "ResultLabel": "نتيجة الذكاء الاصطناعي",
-    "Description": "وصف",
-    "ExtractedText": "النص المستخرج",
-    "Analysis": "تحليل",
-    "PipelineError": "فشلت معالجة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
-    "UnknownError": "خطأ غير معروف"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "قراءة الملف...",
-      "Executing": "جاري التنفيذ...",
-      "Running": "جري...",
-      "Input": "مدخل",
-      "Output": "الإخراج",
-      "Pattern": "نمط:",
-      "ShowDetails": "إظهار التفاصيل",
-      "AndMoreLines": "... و{{count}} أسطر أخرى"
-    },
-    "Streaming": {
-      "Thinking": "أفكر...",
-      "LongRunning": "الجري لفترة أطول من المعتاد",
-      "ToolStuck": "قد تكون الأداة عالقة",
-      "ForceStop": "توقف بالقوة",
-      "GeneratingResponse": "جارٍ إنشاء الاستجابة...",
-      "RunningTool": "جارٍ تشغيل {{tool}}_..."
-    },
-    "Permission": {
-      "Title": "طلب إذن الأداة",
-      "Allow": "السماح مرة واحدة",
-      "AllowSession": "السماح للجلسة",
-      "Deny": "ينكر",
-      "Allowed": "مسموح",
-      "Denied": "رفض"
-    },
-    "Title": "وكيل منظمة العفو الدولية",
-    "GlobalTitle": "وكيل منظمة العفو الدولية",
-    "NewSession": "جلسة جديدة",
-    "Sessions": "الجلسات",
-    "NoSessions": "لا توجد جلسات بعد. ابدأ محادثة أدناه.",
-    "SendPlaceholder": "اسأل أي شيء... (أدخل للإرسال، Shift+Enter للسطر الجديد)",
-    "SendButton": "يرسل",
-    "StopButton": "قف",
-    "NotConfigured": "قم بتكوين مفتاح Claude API في الإعدادات → ميزات الذكاء الاصطناعي لاستخدام الوكيل.",
-    "GoToSettings": "افتح الإعدادات",
-    "SessionCost": "الجلسة: {inputTokens}_ في /{outputTokens}_ الرموز المميزة",
-    "CommandHelp": "الأوامر: /جديد · /واضح · /التكلفة · /مساعدة",
-    "Mode": {
-      "Ask": "بسأل",
-      "Code": "شفرة",
-      "Plan": "يخطط"
-    },
-    "Model": {
-      "Haiku": "هايكو",
-      "Sonnet": "السوناتة",
-      "Opus": "التأليف"
-    },
-    "QuickAction": {
-      "Summarize": "تلخيص هذا التسجيل",
-      "ActionItems": "البحث عن عناصر العمل",
-      "DraftEmail": "مسودة البريد الإلكتروني للمتابعة"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "ما الذي يمكنك مساعدتي به؟",
-      "HelpAnalyze": "ساعدني في تحليل تسجيلاتي الأخيرة"
-    },
-    "AssetContext": "السياق: {{name}}"
   }
 }

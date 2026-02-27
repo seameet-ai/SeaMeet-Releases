@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "App Store 构建",
     "DirectBuild": "直接构建",
-    "SubtitleBadge": "OK",
-    "Version": "v{{version}}",
+    "HelpTranslate": "帮助我们翻译 SeaMeet →",
     "Loading": "加载中……",
-    "HelpTranslate": "帮助我们翻译 SeaMeet →"
+    "SubtitleBadge": "OK",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "生产力",
-    "Social": "社交",
-    "Gaming": "游戏",
-    "Recording": "录制",
-    "Browsers": "浏览器",
-    "BrowserBased": "基于浏览器"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "其他",
+      "Skip": "跳过",
+      "Submit": "提交",
+      "Title": "问题",
+      "TypeResponse": "输入您的回复..."
+    },
+    "AssetContext": "上下文：{{name}}",
+    "CommandHelp": "命令：/new·/clear·/cost·/help",
+    "GlobalTitle": "人工智能代理",
+    "GoToSettings": "打开设置",
+    "Mode": {
+      "Ask": "问",
+      "Code": "代码",
+      "Plan": "计划"
+    },
+    "Model": {
+      "Haiku": "俳句",
+      "Opus": "作品",
+      "Sonnet": "十四行诗"
+    },
+    "NewSession": "新会话",
+    "NoSessions": "还没有会议。下面开始对话。",
+    "NotConfigured": "在“设置”→“AI 功能”中配置 Claude API 密钥以使用代理。",
+    "Permission": {
+      "Allow": "允许一次",
+      "Allowed": "允许",
+      "AllowSession": "允许会话",
+      "Denied": "被拒绝",
+      "Deny": "否定",
+      "Title": "工具权限请求"
+    },
+    "Plan": {
+      "Approve": "批准计划",
+      "DefaultFeedback": "用户请求更改",
+      "Description": "代理已准备好上述计划，需要您的批准才能继续。",
+      "FeedbackPlaceholder": "描述一下您想要进行哪些更改...",
+      "PlanDetails": "计划详情",
+      "RequestChanges": "请求更改",
+      "RequestedPermissions": "请求的权限：",
+      "SendFeedback": "发送反馈",
+      "Title": "计划审查"
+    },
+    "QuickAction": {
+      "ActionItems": "查找行动项目",
+      "DraftEmail": "后续电子邮件草稿",
+      "Summarize": "总结一下本次录音"
+    },
+    "SendButton": "发送",
+    "SendPlaceholder": "询问任何内容...（Enter 发送，Shift+Enter 换行）",
+    "SessionCost": "会话：{{inputTokens}} in /{{outputTokens}} out 令牌",
+    "Sessions": "会议",
+    "StopButton": "停止",
+    "Streaming": {
+      "ForceStop": "强制停止",
+      "GeneratingResponse": "正在生成响应...",
+      "LongRunning": "跑的时间比平常长",
+      "RunningTool": "运行 {{tool}}...",
+      "Thinking": "思维...",
+      "ToolStuck": "工具可能被卡住"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "帮我分析一下我最近的录音",
+      "WhatCanYouDo": "你能帮我什么？"
+    },
+    "Title": "人工智能代理",
+    "ToolCall": {
+      "AndMoreLines_one": "...以及 {{count}} 更多行",
+      "AndMoreLines_other": "...以及 {{count}} 更多行",
+      "Executing": "正在执行...",
+      "Input": "输入",
+      "Output": "输出",
+      "Pattern": "图案：",
+      "Reading": "正在读取文件...",
+      "ShowDetails": "显示详情"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} 操作",
+      "Actions_other": "{{count}} 操作",
+      "Completed_one": "{{count}} 已完成",
+      "Completed_other": "{{count}} 已完成",
+      "Running_one": "{{count}} 正在运行",
+      "Running_other": "{{count}} 正在运行"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "残疾人",
+    "DisabledMsg": "AI Agent & Cowork 已禁用。在设置 → AI Agent & Cowork 中启用它。",
+    "DisabledTabHint": "AI Agent 已禁用 - 在设置 → AI Agent & Cowork 中启用它",
+    "EnableToggle": "启用人工智能代理和协同工作",
+    "EnableToggleDesc": "需要克劳德 API 密钥",
+    "MenuItem": "人工智能代理与协作",
+    "PageTitle": "人工智能代理与协作",
+    "SectionTitle": "人工智能代理与协作"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "双子座 API 密钥",
+    "ApiKeySection": "双子座 API 密钥",
+    "AutomationSection": "自动化",
+    "AutoSummary": "自动生成摘要",
+    "AutoSummaryDesc": "每次录制完成后运行",
+    "ClaudeKey": {
+      "ClearKey": "删除已保存的密钥",
+      "CliInstalled": "已安装 ({{version}})",
+      "CliInstallLink": "安装克劳德代码 →",
+      "CliNotInstalled": "克劳德 CLI 未找到",
+      "CliSection": "克劳德·代码 CLI",
+      "GetKeyLink": "从 Anthropic 控制台获取 API 密钥 →",
+      "HideKey": "隐藏键",
+      "KeyInvalid": "密钥无效",
+      "KeyPlaceholder": "sk-蚂蚁-...",
+      "KeyPlaceholderSaved": "••••••••（已保存）",
+      "KeyTesting": "测试...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "又快又便宜",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "最有能力",
+      "ModelSection": "默认克劳德模型",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "推荐·平衡",
+      "QuotaLoading": "加载配额...",
+      "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
+      "QuotaResetDate": "在 {{date}} 上重置",
+      "Saving": "保存...",
+      "Section": "克劳德 API 密钥（代理）",
+      "ShowKey": "显示密钥",
+      "SourceByok": "您的 API 密钥 (BYOK)",
+      "SourceCli": "克劳德·代码 CLI",
+      "SourceKeyServer": "由 SeaMeet 管理",
+      "SourceLabel": "活跃来源：",
+      "SourceNone": "未配置",
+      "TestKey": "保存并验证"
+    },
+    "ClearKey": "删除已保存的密钥",
+    "EnableToggle": "启用人工智能驱动的摘要",
+    "EnableToggleDesc": "需要免费的 Gemini API 密钥",
+    "GetKeyLink": "从 Google AI Studio 获取免费的 API 密钥 →",
+    "GroupTitle": "人工智能特点",
+    "HideKey": "隐藏键",
+    "KeyInvalid": "密钥无效",
+    "KeyNotConfigured": "没有配置密钥",
+    "KeyPlaceholder": "艾扎西...",
+    "KeyPlaceholderSaved": "••••••••（已保存）",
+    "KeyTesting": "测试...",
+    "KeyVerified": "密钥已验证",
+    "ManagedKeyDesc": "您的 API 密钥会自动配置。无需配置。",
+    "ManagedKeyStatus": "托管密钥 — 由 SeaMeet 提供",
+    "MenuItem": "人工智能驱动的摘要",
+    "ModelLabel": "双子座模型",
+    "Models": {
+      "Gemini25Flash": "双子座2.闪光",
+      "Gemini25FlashLite": "双子座 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "超便宜",
+      "Gemini25FlashSub": "最便宜的稳定选择",
+      "Gemini25Pro": "双子座2.5专业版",
+      "Gemini25ProSub": "最佳稳定推理",
+      "Gemini3Flash": "双子座3闪光",
+      "Gemini3FlashSub": "推荐·快速+有能力",
+      "Gemini3Pro": "双子座 3 专业版",
+      "Gemini3ProSub": "最大能力"
+    },
+    "ModelSection": "人工智能模型",
+    "PageTitle": "人工智能特点",
+    "QuotaLoading": "加载配额...",
+    "QuotaRefresh": "刷新配额",
+    "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
+    "QuotaResetDate": "在 {{date}} 上重置",
+    "QuotaSection": "使用配额",
+    "Saving": "保存...",
+    "SelectedModel": "已选择：{{model}}",
+    "ShowKey": "显示密钥",
+    "TestKey": "保存并验证"
+  },
+  "AISummary": {
+    "Copy": "复制",
+    "EnableRequired": "在“设置”→“AI 功能”中启用 AI 功能即可查看 AI 摘要。",
+    "Error": "无法加载摘要：{{error}}",
+    "Export": {
+      "HeadingActionItems": "行动项目",
+      "HeadingKeyDecisions": "关键决策",
+      "HeadingSummary": "概括",
+      "HeadingTranscription": "转录"
+    },
+    "ExportJson": "复制为 JSON",
+    "ExportMarkdown": "复制为 Markdown",
+    "ExportSrt": "复制为 SRT",
+    "GeminiLiveTranscript": "双子座现场",
+    "Generate": "生成摘要",
+    "Maximize": "展开至全视图",
+    "Minimize": "最小化",
+    "NoActions": "没有确定行动项目。",
+    "NoChapters": "没有可用的章节。",
+    "NoDecisions": "没有确定关键决策。",
+    "NoSummary": "还没有AI总结。",
+    "NoSummaryText": "摘要不可用。",
+    "NoTranscript": "成绩单不可用。",
+    "PipelineError": "AI处理失败。尝试再生。",
+    "PipelineTranscript": "人工智能管道",
+    "Processing": "正在生成摘要...",
+    "Queued": "排队等待处理...",
+    "Regenerate": "重新生成摘要",
+    "Retry": "重试",
+    "SeekToTimestamp": "寻找这个时间戳",
+    "SetupRequired": "在“设置”→“AI 功能”中配置您的 Gemini API 密钥以启用 AI 摘要。",
+    "Tab": {
+      "ActionItems": "行动",
+      "Chapters": "章节",
+      "KeyDecisions": "决定",
+      "Summary": "概括",
+      "Transcription": "成绩单"
+    },
+    "TabTitle": "人工智能总结",
+    "Topics": "主题：",
+    "Speakers": "演讲者",
+    "MergeInto": "合并到…",
+    "ApplyMerge": "应用",
+    "EditSegmentSpeaker": "单击以重新分配此段"
   },
   "App": {
     "FailedToEnableFlashback": "无法启用闪回：{{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "所有应用",
-    "Teams": "Microsoft Teams（工作/学校）",
-    "TeamsConsumer": "Microsoft Teams（个人）",
-    "TeamsWeb": "Microsoft Teams（Web）",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom（Web版）",
+    "Battlenet": "Battle.net",
+    "Brave": "Brave 浏览器",
+    "CallOfDuty": "使命召唤",
     "Chrome": "Chrome 浏览器",
-    "Edge": "Edge 浏览器",
-    "Firefox": "Firefox 浏览器",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "不和谐（网络）",
+    "Edge": "Edge 浏览器",
+    "EpicGames": "Epic Games 启动器",
+    "Firefox": "Firefox 浏览器",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera 浏览器",
+    "Other": "其他应用程序",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack（网页）",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "网讯（网络）",
-    "WindowsSoundRecorder": "Windows 音频录制",
-    "Other": "其他应用程序",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox 游戏栏",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games 启动器",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam 聊天",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera 浏览器",
-    "Brave": "Brave 浏览器",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "使命召唤",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs 直播软件",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams（工作/学校）",
+    "TeamsConsumer": "Microsoft Teams（个人）",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams（Web）",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "网讯（网络）",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows 音频录制",
+    "XboxGameBar": "Xbox 游戏栏",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom（Web版）"
+  },
+  "AudioControls": {
+    "AudioCapture": "音频捕获",
+    "AudioMix": "音频混音",
+    "AudioSource": "音频来源：",
+    "Microphone": "麦克风",
+    "MicrophoneGainWarning": "高麦克风增益可能会在“系统音频”关闭时拾取扬声器播放内容。请使用耳机或降低麦克风增益，以仅录制麦克风。",
+    "RecordingDefaultMicrophone": "默认麦克风",
+    "RecordingSettings": "录制设置",
+    "RefreshMicrophoneList": "刷新麦克风列表"
   },
   "AutoDetectInfoModal": {
-    "Title": "自动检测会议",
-    "Subtitle": "再也不遗漏会议",
-    "Description": "自动检测会在你加入会议时自动开始录制，确保你不会忘记按下 录制。",
-    "PopularAppsTitle": "检测到的热门应用",
-    "MoreApps": "+40 种其他应用",
-    "HowItWorksTitle": "工作原理",
-    "Step1Title": "启用 自动检测",
-    "Step1Desc": "打开开关，并选择要监控的应用",
-    "Step2Title": "加入 会议",
-    "Step2Desc": "打开 Zoom、Teams、Meet 或任何支持的应用程序",
-    "Step3Title": "自动录制",
-    "Step3Desc": "SeaMeet 会自动开始录制。完成！",
-    "Tip1Title": "为每个应用配置",
-    "Tip1Desc": "将“始终录制”设置于工作会议，将“每次询问”用于个人通话",
-    "Tip2Title": "多种检测方式",
-    "Tip2Desc": "使用麦克风活动、窗口标题和浏览器 URL 以确保检测的准确性",
-    "GotIt": "我知道了",
-    "OpenSettings": "打开 设置",
     "ControlLabel": "自动检测",
-    "LearnAbout": "了解自动检测功能"
+    "Description": "自动检测会在你加入会议时自动开始录制，确保你不会忘记按下 录制。",
+    "GotIt": "我知道了",
+    "HowItWorksTitle": "工作原理",
+    "LearnAbout": "了解自动检测功能",
+    "MoreApps": "+40 种其他应用",
+    "OpenSettings": "打开 设置",
+    "PopularAppsTitle": "检测到的热门应用",
+    "Step1Desc": "打开开关，并选择要监控的应用",
+    "Step1Title": "启用 自动检测",
+    "Step2Desc": "打开 Zoom、Teams、Meet 或任何支持的应用程序",
+    "Step2Title": "加入 会议",
+    "Step3Desc": "SeaMeet 会自动开始录制。完成！",
+    "Step3Title": "自动录制",
+    "Subtitle": "再也不遗漏会议",
+    "Tip1Desc": "将“始终录制”设置于工作会议，将“每次询问”用于个人通话",
+    "Tip1Title": "为每个应用配置",
+    "Tip2Desc": "使用麦克风活动、窗口标题和浏览器 URL 以确保检测的准确性",
+    "Tip2Title": "多种检测方式",
+    "Title": "自动检测会议"
   },
   "AutoRecording": {
-    "Title": "自动检测会议",
-    "DetectApps": "检测来自：",
-    "Enabled": "自动检测已启用",
-    "Disabled": "自动检测已禁用",
-    "MeetingDetected": "已检测到 {{{app}}} 会议！",
-    "MeetingEnded": "会议结束",
-    "MeetingFallbackName": "会议",
     "BugReport": "看到错误？向 seameet@seasalt.ai 报告",
     "BugReportTitle": "报告问题",
+    "Disabled": "自动检测已禁用",
+    "Enabled": "自动检测已启用",
     "HelpWanted": "如果您想请求新增应用，或已验证应用正常工作，请通过 seameet@seasalt.ai 告知我们。感谢您的帮助！",
-    "HelpWantedTitle": "帮助我们改进"
+    "HelpWantedTitle": "帮助我们改进",
+    "MeetingDetected": "已检测到 {{{app}}} 会议！",
+    "MeetingEnded": "会议结束",
+    "MeetingFallbackName": "会议"
   },
   "BlackHole": {
-    "NotInstalled": "需要 BlackHole 实现系统音频",
-    "InstallInstructions": "在 macOS 上录制系统音频，你需要安装 BlackHole 虚拟音频驱动：",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "复制命令",
-    "Or": "或者",
-    "DownloadManually": "从 BlackHole 官网手动下载",
-    "SetupTitle": "配置多输出设备",
-    "SetupStep1": "打开音频 MIDI 设置（应用程序 → 实用工具）",
-    "SetupStep2": "点击 '+' 并选择 ‘创建多输出设备’",
-    "SetupStep3": "同时检查你的扬声器/耳机和 ‘BlackHole 2ch’",
-    "SetupStep4": "右键点击多输出设备并选择“为声音输出使用此设备”",
-    "SetupStep5": "如果 BlackHole 未出现在设备列表中，请重启",
-    "SetupStep6": "在此应用中选择 ‘BlackHole 2ch’ 作为音频源",
-    "CheckAgain": "再次检查",
     "Cancel": "取消",
-    "LearnMore": "了解更多关于多输出设备"
+    "CheckAgain": "再次检查",
+    "CopyCommand": "复制命令",
+    "DownloadManually": "从 BlackHole 官网手动下载",
+    "InstallInstructions": "在 macOS 上录制系统音频，你需要安装 BlackHole 虚拟音频驱动：",
+    "LearnMore": "了解更多关于多输出设备",
+    "NotInstalled": "需要 BlackHole 实现系统音频",
+    "Or": "或者",
+    "SetupTitle": "配置多输出设备"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ 侦测到蓝牙麦克风",
-    "Description": "当使用蓝牙麦克风时，您的操作系统可能会将音频强制切换至“通信模式”，这可能导致录制时音频失真或音量异常。",
-    "RecommendationLabel": "推荐：",
-    "Recommendation": "切换到非蓝牙麦克风（如内置麦克风或USB麦克风）以获得更佳的录制质量。",
+    "CloseAriaLabel": "关闭蓝牙警告",
     "CloseTitle": "关闭警告",
-    "CloseAriaLabel": "关闭蓝牙警告"
+    "Description": "当使用蓝牙麦克风时，您的操作系统可能会将音频强制切换至“通信模式”，这可能导致录制时音频失真或音量异常。",
+    "Recommendation": "切换到非蓝牙麦克风（如内置麦克风或USB麦克风）以获得更佳的录制质量。",
+    "RecommendationLabel": "推荐：",
+    "Title": "⚠️ 侦测到蓝牙麦克风"
+  },
+  "Common": {
+    "ApplyName": "应用名称",
+    "Cancel": "取消",
+    "Close": "关闭",
+    "Configure": "配置",
+    "Delete": "删除",
+    "Done": "完成",
+    "Expand": "展开",
+    "FileNameCopiedWithRenameHint": "{{fileName}} 已复制到剪贴板。双击以更改文件名。",
+    "Loading": "加载中...",
+    "Minimize": "最小化",
+    "Open": "打开",
+    "Or": "或者",
+    "Processing": "处理中…",
+    "Recording": "录制",
+    "Save": "保存",
+    "Saved": "已保存",
+    "Saving": "保存中...",
+    "Screenshot": "截图",
+    "Send": "发送",
+    "Starting": "正在启动……",
+    "UnknownApp": "未知应用"
   },
   "DeletePrompt": {
-    "Title": "删除文件",
-    "Message": "您确定要删除该文件吗？此操作无法撤消。",
     "Cancel": "取消",
-    "Confirm": "删除"
+    "Confirm": "删除",
+    "Message": "您确定要删除该文件吗？此操作无法撤消。",
+    "Title": "删除文件"
   },
   "Errors": {
-    "NoAudioSources": "没有音频源可用",
-    "NoSystemAudioSources": "没有系统音频源可用",
+    "AutoRecordingFailed": "切换自动录制失败",
     "FailedToStartRecording": "启动录制失败：{{message}}",
     "FailedToStartVideoRecording": "启动视频录制失败：{{message}}",
-    "AutoRecordingFailed": "切换自动录制失败"
+    "NoAudioSources": "没有音频源可用",
+    "NoSystemAudioSources": "没有系统音频源可用",
+    "SaveFailed": "无法保存录音：{{message}}"
   },
   "Events": {
-    "Title": "事件",
-    "MarkToolbarButton": "标记事件",
+    "EmptyWhenNotRecording": "此录制暂无事件。",
+    "EmptyWhileRecording": "暂无事件。录制时点击“标记”以添加。",
+    "EventLabel": "事件 {{number}}",
     "MarkButton": "标记",
     "Marked": "已标记！",
-    "EventLabel": "事件 {{number}}",
-    "EmptyWhileRecording": "暂无事件。录制时点击“标记”以添加。",
-    "EmptyWhenNotRecording": "此录制暂无事件。",
-    "DeletePrompt": {
-      "Title": "删除事件",
-      "Message": "你确定要删除此事件吗？此操作无法撤销。",
-      "Cancel": "取消",
-      "Confirm": "删除"
-    }
+    "MarkToolbarButton": "标记事件",
+    "Title": "事件"
+  },
+  "FileImport": {
+    "BrowseFiles": "浏览文件",
+    "DragDropFiles": "在此处拖放您的音频、视频和图片文件",
+    "DragDropSubtitle": "将音频、视频和图片文件拖放到这里",
+    "ImportMedia": "拖放您的音频、视频和图片文件",
+    "Supported": "支持",
+    "SupportedFormats": "支持：MP3、WAV、M4A、WebM、OGG、PNG、JPG 等",
+    "VideoImportCopying": "正在复制视频文件...",
+    "VideoImportSaving": "正在保存视频文件...",
+    "VideoUnsupported": "此视频格式可能无法在应用中播放。文件仍将被导入。"
   },
   "FlashbackControls": {
+    "AudioFlashback": "音频闪回",
+    "CannotChangeWhileRecording": "录制时无法更改闪回模式",
+    "DisableFlashback": "禁用闪回",
     "Label": "倒叙",
     "LearnAbout": "了解闪回",
-    "DisableFlashback": "禁用闪回",
-    "AudioFlashback": "音频闪回",
-    "ScreenFlashback": "画面闪回",
-    "TitleReady": "单击以显示闪回 UI",
-    "TitleCharging": "闪回充电",
-    "TitleInit": "点击开始充电",
+    "Off": "离开",
     "Ready": "准备好",
     "ReadyQuestion": "准备好？",
-    "Off": "离开",
-    "CannotChangeWhileRecording": "录制时无法更改闪回模式",
-    "ToggleLabel": "切换闪回",
-    "SettingsLabel": "闪回录音"
+    "ScreenFlashback": "画面闪回",
+    "SettingsLabel": "闪回录音",
+    "TitleCharging": "闪回充电",
+    "TitleInit": "点击开始充电",
+    "TitleReady": "单击以显示闪回 UI",
+    "ToggleLabel": "切换闪回"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "声音的",
+    "Buffering": "缓冲中",
+    "BufferingMoment": "缓冲瞬间……",
+    "Capturing": "捕捉...",
+    "DescCharging": "准备好您的 {{duration}} 第二个窗口...几乎准备好捕捉您可能错过的内容。 {{progress}}% 已完成。",
+    "DescInit": "点击“准备好了吗？”告诉 SeaMeet 开始“回忆”过去。",
+    "DescNone": "录制您的屏幕、音频或截取屏幕截图。选择上面的闪回模式以节省时间。",
+    "DescReady": "Flashback 已激活。每次点击录制时，将包括过去 {{duration}} 秒的 {{type}}——再也不用担心错过任何瞬间。",
+    "FillingBuffer": "正在填充 {{duration}}s 的回放缓冲区…… {{progress}}%",
+    "FlashbackBuffering": "正在缓冲...",
+    "FlashbackCharging": "填充 {{seconds}}秒缓冲区…… {{percent}}%",
+    "FlashbackChargingDescription": "准备 {{seconds}} 第二个窗口... {{percent}}% 已完成。",
+    "FlashbackInitAudio": "准备好守护您的音频吗？",
+    "FlashbackInitDescription": "点击 'Ready?' 命令 SeaMeet 开始“记忆”过去。",
+    "FlashbackInitScreen": "准备好保护您的屏幕了吗？",
+    "FlashbackMismatch": "Flashback 模式不匹配。音频录制已开启，但视频 flashback 正在运行。请禁用视频 flashback。",
+    "FlashbackOff": "Flashback 目前已关闭。随时开始普通录制，或在上方选择 flashback 模式（音频或屏幕）以保存英雄时刻。",
+    "FlashbackPrivacy": "您的隐私受到保护。本地存储在 RAM 中。",
+    "FlashbackReady": "永远不要错过瞬间。",
+    "FlashbackReadyDescription": "Flashback 已激活。在录制时，会包括过去 {{seconds}}s 的 {{type}}。",
+    "FlashbackReadyQuestion": "准备好了吗？",
+    "KeepWindowVisible": "截图时保持 SeaMeet 窗口可见",
+    "NeverMissAMoment": "永远不要错过瞬间。",
+    "OpenFloater": "打开浮动窗口",
+    "OpenLauncher": "打开 Launcher",
+    "PrivacyDesc": "SeaMeet 在您的计算机 RAM 的环形缓冲区内，本地记录过去 {{duration}}s 的 {{type}}。",
+    "PrivacyProtected": "您的隐私受到保护。",
+    "Ready": "准备好？",
+    "ReadyToCapture": "SeaMeet 已准备好进行捕获。",
+    "ReadyToGuard": "准备好守护您的 {{type}} 吗？",
+    "RecordWithFlashback": "使用Flashback录制",
+    "SaveFlashback": "保存最后 {{seconds}}s 闪回",
+    "SaveLastFlashback": "保存最后 {{duration}}s 闪回",
+    "SavingFlashback": "正在保存 flashback…",
+    "Screen": "屏幕",
+    "StartRecording": "开始录音",
+    "TakeScreenshot": "截屏"
   },
   "FlashbackIndicator": {
     "Buffering": "缓冲中",
@@ -183,138 +463,145 @@
     "VideoReady": "视频已就绪"
   },
   "FlashbackInfoModal": {
-    "Title": "闪回录音",
-    "Close": "关闭",
-    "Subtitle": "您的个人时间机器",
-    "SubtitleDesc": "再也不会错过重要时刻 - 捕捉过去最多 2 分钟的时间，即使是在事情发生之后。",
+    "Benefits": {
+      "AlwaysReady": "时刻准备着",
+      "LocalOnly": "仅限本地（完全隐私）",
+      "MultipleCaptures": "多次捕获 - 缓冲区保持运行",
+      "NoPlan": "无需规划",
+      "Offline": "离线工作",
+      "Title": "主要优点"
+    },
     "BestFor": "最适合：",
-    "VisualStates": {
-      "Title": "视觉状态指示器",
-      "OffLabel": "离开",
-      "Off": "灰色、静态波形",
-      "ChargingLabel": "收费",
-      "Charging": "琥珀色/黄色，缓冲填充",
-      "ReadyLabel": "准备好",
-      "Ready": "绿色，缓冲区已满"
-    },
-    "SpecLabel": {
-      "Buffer": "缓冲：",
-      "Memory": "记忆：",
-      "Captures": "捕获："
-    },
-    "Modes": {
-      "Title": "两种闪回模式",
-      "Audio": {
-        "Title": "音频闪回",
-        "Buffer": "30秒（固定）",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "麦克风和/或系统音频",
-        "BestFor": "录制会议、电话、语音对话"
-      },
-      "Video": {
-        "Title": "视频闪回",
-        "Buffer": "10 秒、30 秒、60 秒、90 秒或 120 秒",
-        "Memory": "50-600 MB RAM",
-        "Captures": "屏幕视频+音频",
-        "BestFor": "演示、游戏亮点、屏幕共享会议、视觉内容"
-      }
-    },
-    "HowItWorks": {
-      "Title": "它是如何运作的",
-      "Step1": {
-        "Title": "启用闪回",
-        "Desc": "单击 FLASHBACK 按钮打开。缓冲区开始自动填充。"
-      },
-      "Step2": {
-        "Title": "等待准备就绪",
-        "Desc": "注意绿色状态。缓冲区必须填充到 90% 才能捕获过去。"
-      },
-      "Step3": {
-        "Title": "新闻记录",
-        "Desc": "当重要的事情发生时，按“录制”。 Flashback 抓取缓冲区并继续向前录制。"
-      }
-    },
-    "Scenarios": {
-      "Title": "实际场景",
-      "OhNo": {
-        "Title": "“哦不！”片刻",
-        "Desc": "同事说了一句深奥的话。你意识到你想把它记录下来。按录制 → 闪回捕捉最后 30 秒（包括那一刻！）。"
-      },
-      "Gaming": {
-        "Title": "游戏亮点",
-        "Desc": "完成令人难以置信的组合。立即按录音。闪回捕捉导致该组合的游戏玩法+你的反应。"
-      },
-      "Decision": {
-        "Title": "重要决定",
-        "Desc": "律师解释合同条款。按“录制”以捕获解释。拥有完整、准确的记录以供日后查看。"
-      }
-    },
+    "Close": "关闭",
     "Comparison": {
-      "Title": "闪回与传统录音",
+      "Capture": {
+        "Feature": "捕捉精彩瞬间",
+        "Flashback": "可以稍后开始",
+        "Traditional": "如果你忘记了，它就丢失了"
+      },
       "Header": {
         "Feature": "特征",
-        "Traditional": "传统录音",
-        "Flashback": "闪回录音"
+        "Flashback": "闪回录音",
+        "Traditional": "传统录音"
       },
       "Planning": {
         "Feature": "规划",
-        "Traditional": "必须在时刻之前开始",
-        "Flashback": "无需规划"
-      },
-      "Capture": {
-        "Feature": "捕捉精彩瞬间",
-        "Traditional": "如果你忘记了，它就丢失了",
-        "Flashback": "可以稍后开始"
+        "Flashback": "无需规划",
+        "Traditional": "必须在时刻之前开始"
       },
       "Result": {
         "Feature": "结果",
-        "Traditional": "“我希望我能记录下来”",
-        "Flashback": "“我很高兴我捕捉到了这一点”"
-      }
-    },
-    "Benefits": {
-      "Title": "主要优点",
-      "NoPlan": "无需规划",
-      "AlwaysReady": "时刻准备着",
-      "Offline": "离线工作",
-      "LocalOnly": "仅限本地（完全隐私）",
-      "MultipleCaptures": "多次捕获 - 缓冲区保持运行"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "日常使用的音频闪回",
-        "Desc": "在会议和通话中使用 30 秒音频闪回。内存占用低，工作可靠。"
+        "Flashback": "“我很高兴我捕捉到了这一点”",
+        "Traditional": "“我希望我能记录下来”"
       },
-      "VideoSpecial": {
-        "Title": "特殊时刻的视频闪回",
-        "Desc": "为演示、游戏精彩片段或您想要保留的任何视觉内容启用视频闪回（30 秒缓冲）。"
-      },
-      "Memory": {
-        "Title": "内存管理",
-        "Desc": "2 分钟视频闪回：整个应用程序占用内存不到 1GB。"
-      }
+      "Title": "闪回与传统录音"
     },
     "GotIt": "知道了",
-    "OpenSettings": "打开设置"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "单击 FLASHBACK 按钮打开。缓冲区开始自动填充。",
+        "Title": "启用闪回"
+      },
+      "Step2": {
+        "Desc": "注意绿色状态。缓冲区必须填充到 90% 才能捕获过去。",
+        "Title": "等待准备就绪"
+      },
+      "Step3": {
+        "Desc": "当重要的事情发生时，按“录制”。 Flashback 抓取缓冲区并继续向前录制。",
+        "Title": "新闻记录"
+      },
+      "Title": "它是如何运作的"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "录制会议、电话、语音对话",
+        "Buffer": "30秒（固定）",
+        "Captures": "麦克风和/或系统音频",
+        "Memory": "~30-50 MB RAM",
+        "Title": "音频闪回"
+      },
+      "Title": "两种闪回模式",
+      "Video": {
+        "BestFor": "演示、游戏亮点、屏幕共享会议、视觉内容",
+        "Buffer": "10 秒、30 秒、60 秒、90 秒或 120 秒",
+        "Captures": "屏幕视频+音频",
+        "Memory": "50-600 MB RAM",
+        "Title": "视频闪回"
+      }
+    },
+    "OpenSettings": "打开设置",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "律师解释合同条款。按“录制”以捕获解释。拥有完整、准确的记录以供日后查看。",
+        "Title": "重要决定"
+      },
+      "Gaming": {
+        "Desc": "完成令人难以置信的组合。立即按录音。闪回捕捉导致该组合的游戏玩法+你的反应。",
+        "Title": "游戏亮点"
+      },
+      "OhNo": {
+        "Desc": "同事说了一句深奥的话。你意识到你想把它记录下来。按录制 → 闪回捕捉最后 30 秒（包括那一刻！）。",
+        "Title": "“哦不！”片刻"
+      },
+      "Title": "实际场景"
+    },
+    "SpecLabel": {
+      "Buffer": "缓冲：",
+      "Captures": "捕获：",
+      "Memory": "记忆："
+    },
+    "Subtitle": "您的个人时间机器",
+    "SubtitleDesc": "再也不会错过重要时刻 - 捕捉过去最多 2 分钟的时间，即使是在事情发生之后。",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "在会议和通话中使用 30 秒音频闪回。内存占用低，工作可靠。",
+        "Title": "日常使用的音频闪回"
+      },
+      "Memory": {
+        "Desc": "2 分钟视频闪回：整个应用程序占用内存不到 1GB。",
+        "Title": "内存管理"
+      },
+      "VideoSpecial": {
+        "Desc": "为演示、游戏精彩片段或您想要保留的任何视觉内容启用视频闪回（30 秒缓冲）。",
+        "Title": "特殊时刻的视频闪回"
+      }
+    },
+    "Title": "闪回录音",
+    "VisualStates": {
+      "Charging": "琥珀色/黄色，缓冲填充",
+      "ChargingLabel": "收费",
+      "Off": "灰色、静态波形",
+      "OffLabel": "离开",
+      "Ready": "绿色，缓冲区已满",
+      "ReadyLabel": "准备好",
+      "Title": "视觉状态指示器"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "启动",
-    "AutoStartLabel": "自动启动闪回",
+    "AutoStartAudio": "音频闪回",
     "AutoStartDesc": "应用程序启动时开始闪回",
     "AutoStartDisable": "禁用自动启动",
-    "AutoStartAudio": "音频闪回",
+    "AutoStartLabel": "自动启动闪回",
     "AutoStartScreen": "画面闪回",
-    "BufferTitle": "缓冲",
-    "BufferDurationLabel": "缓冲时间",
     "BufferDurationDesc": "音频/视频缓冲多长时间",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "缓冲时间",
+    "BufferTitle": "缓冲",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "启动"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "回放缓冲区为空。请稍后再试。",
+    "EnableFlashback": "启用回放以保存片段。",
+    "FailedToSave": "保存回放缓冲区失败。",
+    "SavedFlashback": "已将回放保存到录音中。",
+    "StillCharging": "回放缓冲区仍在准备。"
   },
   "FloatingStartBar": {
-    "CloseTooltip": "关闭提示",
-    "BluetoothMicTitle": "⚠️ Bluetooth 麦克风",
     "BluetoothMicDesc": "你的操作系统可能会强制启用“通讯模式”，这可能导致失真。",
     "BluetoothMicTipLabel": "提示：",
     "BluetoothMicTipText": "为获得更好画质，建议使用非 Bluetooth 麦克风。",
+    "BluetoothMicTitle": "⚠️ Bluetooth 麦克风",
+    "CloseTooltip": "关闭提示",
     "FailedToLoadScreens": "加载屏幕失败。请重试。",
     "FailedToLoadWindows": "加载窗口失败，请重试。",
     "MicrophoneMuted": "麦克风：静音",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "未找到麦克风",
     "NoScreensDetected": "未检测到屏幕。",
     "NoWindowsDetected": "未检测到窗口。请打开应用窗口后刷新。",
+    "RegionReady": "区域已就绪",
+    "RegionRequired": "在录制前请选择区域",
+    "RegionSize": "{{width}}×{{height}} 像素",
     "ScreenNotAvailable": "此平台上暂不支持屏幕选择。",
     "SelectMicrophone": "选择麦克风",
+    "SelectRegion": "选择区域",
+    "SelectScreen": "选择屏幕",
+    "SelectWindow": "选择窗口",
     "StartRecording": "开始录制",
     "SystemAudioOff": "系统音频：关闭",
     "SystemAudioOn": "系统音频：开启",
     "WaitingForRegion": "等待区域…",
     "WindowNotAvailable": "在此平台上不可选择窗口。",
-    "SelectScreen": "选择屏幕",
-    "SelectWindow": "选择窗口",
-    "WindowRequired": "在录制前请选择窗口",
-    "RegionReady": "区域已就绪",
-    "SelectRegion": "选择区域",
-    "RegionSize": "{{width}}×{{height}} 像素",
-    "RegionRequired": "在录制前请选择区域"
+    "WindowRequired": "在录制前请选择窗口"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "已选择全屏",
-    "ClickToRecord": "点击悬浮栏中的“开始录制”以录制所选区域"
+    "ClickToRecord": "点击悬浮栏中的“开始录制”以录制所选区域",
+    "FullscreenSelected": "已选择全屏"
+  },
+  "GeminiLive": {
+    "AITranscription": "人工智能转录",
+    "CollapseNowSpeaking": "坍塌",
+    "EnableDescription": "录音期间由 Gemini 提供支持的实时转录",
+    "EnableIntegration": "启用实时 AI 转录",
+    "Error": "错误",
+    "ExpandNowSpeaking": "扩张",
+    "NowSpeaking": "现在讲...",
+    "SegmentCount_one": "{{count}} 段",
+    "SegmentCount_other": "{{count}} 段",
+    "WaitingForConnection": "正在连接...",
+    "WaitingForSpeech": "等待演讲..."
   },
   "IdleCompactView": {
     "ArmFlashback": "开启回放",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  复制电子邮箱",
     "EmailCopied": "✅ 电子邮箱已复制到剪贴板"
   },
-  "JumpList": {
-    "RecordAudio": "录制音频",
-    "RecordAudioDesc": "开始录制音频（混合）",
-    "RecordFullscreen": "全屏录制",
-    "RecordFullscreenDesc": "开始录制全屏视频",
-    "RecordRegion": "捕捉要录制的区域",
-    "RecordRegionDesc": "选择要录制的屏幕区域",
-    "TakeScreenshot": "截图",
-    "TakeScreenshotDesc": "捕获屏幕的一个区域",
-    "OpenRecordingsFolder": "打开录音文件夹",
-    "OpenRecordingsFolderDesc": "打开默认录音文件夹"
-  },
   "MeetingPrompt": {
-    "StartTitle": "会议已开始",
-    "StartMessage": "你是否在 {{appName}} 上有会议？我需要立即开始录制吗？",
     "BrowserHint": "💡 温馨提示：对于浏览器会议（Google Meet、Zoom、Teams），我只能检测到浏览器，而不能识别具体网站。",
-    "RememberChoice": "记住我的选择，不再提示",
-    "Yes": "开始录制",
-    "No": "取消",
-    "EndTitle": "会议已结束",
-    "EndMessage": "检测到{{appName}}上的会议刚结束，是否停止录制？",
     "ContinueRecording": "继续录制",
+    "EndMessage": "检测到{{appName}}上的会议刚结束，是否停止录制？",
+    "EndTitle": "会议已结束",
+    "No": "取消",
     "Pause": "暂停",
-    "Resume": "继续",
-    "Stop": "停止",
+    "PlayRecording": "播放录制",
     "RecordingSaved": "录制已保存",
     "RecordingSavedWithFilename": "{{fileName}} 已保存",
+    "RememberChoice": "记住我的选择，不再提示",
     "RenameFile": "重命名",
     "ShowInFolder": "显示在文件夹中",
-    "PlayRecording": "播放录制",
+    "StartMessage": "你是否在 {{appName}} 上有会议？我需要立即开始录制吗？",
+    "StartTitle": "会议已开始",
     "StopRecording": "停止录制",
-    "Saving": "正在保存…"
+    "Yes": "开始录制"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "行动项目",
+    "CollapseNowSpeaking": "现在说话折叠",
+    "ConnectionError": "无法联接到SeaMeet",
+    "Content": "海会内容",
+    "DueDate": "截止日期：{{date}}",
+    "EnableIntegration": "启用 SeaMeet 转录",
+    "ExpandNowSpeaking": "展开现在说话",
+    "FetchError": "无法加载转录",
+    "LanguageHint": "您可以在录制过程中更改语言",
+    "LiveTranscription": "实时转录",
+    "LoadingContent": "正在加载 SeaMeet 内容...",
+    "LoadingTranscript": "正在加载成绩单...",
+    "NoActionItems": "本次会议没有行动项目",
+    "NoNotes": "本次会议没有备注",
+    "NoSummary": "摘要尚未公布。",
+    "Notes": "笔记",
+    "NoTranscript": "没有可用的转录",
+    "NoTranslation": "无翻译",
+    "NowSpeaking": "现在讲...",
+    "Retry": "重试",
+    "SeekToTime": "点击此时开始播放",
+    "SegmentCount_one": "{{count}} 段",
+    "SegmentCount_other": "{{count}} 段",
+    "SignInRequired": "需要登录",
+    "Summary": "概括",
+    "Transcribed": "转录",
+    "Transcript": "成绩单",
+    "TranscriptionLanguage": "转录语言",
+    "TranslationLanguage": "翻译语言",
+    "UnknownSpeaker": "扬声器",
+    "WaitingForSpeech": "等待语音输入..."
   },
   "MinimizedView": {
     "ActionRequired": "需要采取的行动（自动记录）",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "屏幕闪退充电...",
     "ScreenRecording": "屏幕录制 ({{time}})"
   },
+  "Pause": "暂停",
   "Permissions": {
-    "AutoRecordNextTime": "你是否希望下次自动录制此应用？",
     "AlwaysAutoRecord": "始终自动录制",
-    "NeverRecord": "从不录制",
     "AskEveryTime": "每次询问",
-    "AutoRecordStarted": "自动录制开始",
+    "AutoRecordNextTime": "你是否希望下次自动录制此应用？",
     "AutoRecordReason": "{{app}} 被设置为始终自动录制。请在 设置 -> 自动录制 中更改应用的录制权限",
-    "ChangeInSettings": "设置更改",
-    "GuidanceTitle": "应用权限类别",
+    "AutoRecordStarted": "自动录制开始",
+    "AutoStartAudioRule": "如果默认录制模式为音频，SeaMeet 会在默认模式为音频时立即开始录制，不会弹出提示。",
+    "AutoStartFallbackRule": "在其他所有情况下，SeaMeet 会显示录制模式选择器，供你选择。",
+    "AutoStartFullscreenRule": "如果默认录制模式为全屏，并且只连接一台屏幕，SeaMeet 会立即开始录制。",
+    "AutoStartHeuristicsTitle": "自动启动规则（始终自动录制）",
     "GuidanceAlways": "：SeaMeet 将在不需要确认的情况下自动录制",
     "GuidanceAsk": "：SeaMeet 会每次请求你的录制权限",
     "GuidanceNever": "：SeaMeet 不会提示请求录制权限",
-    "AutoStartHeuristicsTitle": "自动启动规则（始终自动录制）",
-    "AutoStartAudioRule": "如果默认录制模式为音频，SeaMeet 会在默认模式为音频时立即开始录制，不会弹出提示。",
-    "AutoStartFullscreenRule": "如果默认录制模式为全屏，并且只连接一台屏幕，SeaMeet 会立即开始录制。",
-    "AutoStartFallbackRule": "在其他所有情况下，SeaMeet 会显示录制模式选择器，供你选择。"
+    "GuidanceTitle": "应用权限类别",
+    "NeverRecord": "从不录制"
+  },
+  "PipelineStatus": {
+    "Done": "总结已准备好",
+    "Error": "处理失败",
+    "Progress": "处理 {{total}} 的块 {{current}}",
+    "Queued": "摘要已排队...",
+    "Running": "正在生成摘要..."
   },
   "Player": {
     "Mute": "沉默的",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "关闭播放",
-    "MoreOptions": "更多选项",
-    "CodecInfo": "编解码器信息"
+    "CodecInfo": "编解码器信息",
+    "MoreOptions": "更多选项"
+  },
+  "RecordingControls": {
+    "AudioRecording": "录音",
+    "ContinueRecording": "继续录音",
+    "RecordingAudio": "录制音频..",
+    "RecordingMode": "录音模式",
+    "RecordingPreview": "录音预览",
+    "RecordingScreen": "录屏..",
+    "StartRecording": "开始录音",
+    "Stop": "停止",
+    "StopRecording": "停止录音",
+    "VideoRecording": "视频录制"
+  },
+  "RecordingModes": {
+    "AreaCapture": "区域捕获",
+    "CaptureMode": "捕获模式",
+    "FullScreen": "全屏",
+    "RecordAudio": "仅音频录制",
+    "RecordAudioTip": "仅音频录制",
+    "RecordFullscreen": "全屏",
+    "RecordFullscreenTip": "捕获整个屏幕",
+    "RecordRegion": "区域",
+    "RecordRegionTip": "捕获自定义区域",
+    "RecordWindow": "窗口",
+    "RecordWindowTip": "捕获单个应用窗口"
+  },
+  "RecordingsList": {
+    "CopyFileName": "复制文件名",
+    "CopyFilePath": "复制文件路径",
+    "FileNameCopied": "{{fileName}} 已复制到剪贴板",
+    "FilePathCopied": "文件路径已复制到剪贴板",
+    "OpenSaveFolder": "打开文件夹",
+    "RecentCaptures": "最近捕获",
+    "Recovered_one": "{{count}} 录音已恢复",
+    "Recovered_other": "{{count}} 录音已恢复",
+    "RefreshRecordings": "刷新录制",
+    "SaveAs": "另存为",
+    "SearchRecordingsOrSnapshots": "搜索录制和快照",
+    "ShowInFolder": "在文件夹中显示"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "文件",
-    "Microphone": "麦克风",
-    "App": "{{appName}}"
+    "Microphone": "麦克风"
   },
   "RegionSelector": {
     "CaptureButton": "捕获屏幕或按 Enter 键",
@@ -443,84 +807,73 @@
     "Monitor": "监视器",
     "PrimaryMonitor": "主监视器"
   },
-  "Reliability": {
-    "Stable": "稳定的",
-    "Experimental": "实验性的",
-    "NotTested": "未测试"
-  },
+  "Resume": "恢复",
   "RingMenu": {
+    "AutoDetectOff": "自动检测：关闭",
+    "AutoDetectOn": "自动检测：开启",
     "FlashbackCharging": "回放充电中",
     "FlashbackNotCharged": "回放未充电，单击以充电音频回放，双击充电屏幕回放",
     "FlashbackSaveTooltip": "单击以保存最后{{duration}}秒的{{mode}}回放，双击从此处继续录制。",
-    "RecordRegion": "录制区域",
-    "RecordFullscreen": "录制全屏",
-    "TakeScreenshot": "截取截图",
-    "AutoDetectOn": "自动检测：开启",
-    "AutoDetectOff": "自动检测：关闭",
     "RecordAudio": "录制音频",
-    "RecordWindow": "记录窗口"
+    "RecordFullscreen": "录制全屏",
+    "RecordRegion": "录制区域",
+    "RecordWindow": "记录窗口",
+    "TakeScreenshot": "截取截图"
   },
   "ScreenPicker": {
-    "Title": "选择显示器",
     "Instruction": "选择要录制全屏录制的显示。",
-    "Refresh": "刷新",
-    "Refreshing": "清爽…",
     "Loading": "正在加载显示...",
     "None": "未检测到显示器。",
+    "Refresh": "刷新",
+    "Refreshing": "清爽…",
+    "Title": "选择显示器",
     "Unknown": "无标题显示"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "分析",
+    "ButtonLabel": "人工智能处理",
+    "Custom": "自定义提示",
+    "CustomPlaceholder": "询问有关此图像的任何问题...",
+    "Describe": "描述图像",
+    "DescribeSub": "这张截图里有什么？",
+    "Description": "描述",
+    "ExtractedText": "提取的文本",
+    "Ocr": "提取文本（OCR）",
+    "OcrSub": "读取所有可见文本",
+    "PipelineError": "AI处理失败。请再试一次。",
+    "ProcessingWithTime": "正在处理... {{sec}}s",
+    "Queuing": "排队...",
+    "ResultLabel": "人工智能结果",
+    "UnknownError": "未知错误"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "复制了！",
     "CopyFailed": "无法将屏幕截图复制到剪贴板",
     "CopyToClipboard": "复制到剪贴板",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "删除",
     "Dimensions": "方面",
     "FileSize": "文件大小",
-    "Filename": "文件名",
     "OpenInSystemViewer": "在系统查看器中打开",
-    "Rename": "重命名",
     "ScreenshotCopied": "屏幕截图已复制到剪贴板",
     "Share": "分享",
     "ShareCompleted": "分享完成",
     "ShareFailed": "此浏览器不支持共享。手动打开截图进行分享。",
-    "ShareNotSupported": "此平台不支持本机共享。请改用复制到剪贴板。",
     "Sharing": "分享...",
-    "Timestamp": "时间戳",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "设置",
     "About": {
       "CheckForUpdates": "检查更新",
       "CheckingUpdates": "正在检查更新...",
-      "UpdateAvailable": "新版本 {{version}} 可用",
-      "UpdateReady": "版本 {{version}} 已准备好安装",
-      "NoUpdatesAvailable": "暂无更新",
       "InstallNow": "立即安装",
-      "TermsOfService": "服务条款",
-      "PrivacyPolicy": "隐私政策",
       "LegalToggle": {
+        "FullVersion": "完整版本",
         "OneSentence": "1‑Sentence → 1 句",
-        "TLDR": "TLDR → 忙人简明版",
-        "FullVersion": "完整版本"
+        "TLDR": "TLDR → 忙人简明版"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet 是一款免费、注重隐私的录制工具，本地使用无需账户，您的数据归您所有，云端功能为选项，录制前须获得同意。",
-        "TLDRTitle": "SeaMeet 条款——简明版",
-        "TLDRItems": [
-          "SeaMeet Desktop 免费——所有非人工智能功能无需账户或登录即可使用。",
-          "录制前请获得同意——SeaMeet 不会为您验证此事项。",
-          "您的录制和转录属您所有；SeaMeet 仅对其进行处理以提供服务。",
-          "云端功能需要账户，并存储在SeaMeet服务器上。",
-          "匿名诊断可选，且可随时关闭。",
-          "请勿滥用应用（禁止非法用途或黑客行为）。",
-          "服务可能变更，责任有限。"
-        ]
-      },
+      "NoUpdatesAvailable": "暂无更新",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop 将所有录音完全本地且私密地存储在您的设备上，无需账户。云端功能是可选的、加密的，并且完全由您控制。",
-        "TLDRTitle": "SeaMeet 隐私——简明版",
         "TLDRItems": [
           "SeaMeet Desktop 为隐私设计：所有内容均在您的设备上，且我们不收集音频、视频、屏幕内容或会议数据。",
           "使用桌面应用的非‑AI功能无需账户。",
@@ -530,734 +883,299 @@
           "第三方集成是可选的，且可以随时撤销。",
           "我们不贩卖数据，云端录音会被加密。",
           "你可以随时删除录音或申请全部删除，以完全掌控你的数据。"
-        ]
+        ],
+        "TLDRTitle": "SeaMeet 隐私——简明版"
       },
+      "PrivacyPolicy": "隐私政策",
       "PrivacySecurity": {
-        "Title": "隐私与安全",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "除非得到您的明确授权，自动检测**绝不**会自动开始录制。",
+            "Title": "需要明确授权"
+          },
           "MicrophoneActivity": {
-            "Title": "仅检测麦克风活动",
-            "Description": "自动检测监控您的麦克风使用，以推断哪个应用在使用它。不会捕获任何数据。"
+            "Description": "自动检测监控您的麦克风使用，以推断哪个应用在使用它。不会捕获任何数据。",
+            "Title": "仅检测麦克风活动"
           },
           "NoDataAccess": {
-            "Title": "无数据访问",
-            "Description": "自动检测仅检测是否使用麦克风。它**不**访问任何录制的数据。"
-          },
-          "ExplicitApproval": {
-            "Title": "需要明确授权",
-            "Description": "除非得到您的明确授权，自动检测**绝不**会自动开始录制。"
+            "Description": "自动检测仅检测是否使用麦克风。它**不**访问任何录制的数据。",
+            "Title": "无数据访问"
           },
           "NoDataCollection": {
-            "Title": "无数据收集",
-            "Description": "SeaMeet**不会**在未经您同意的情况下，从自动检测功能收集任何数据。"
+            "Description": "SeaMeet**不会**在未经您同意的情况下，从自动检测功能收集任何数据。",
+            "Title": "无数据收集"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% 本地",
-            "Description": "Flashback 完全在您的本地机器上运行，数据不会同步到云端。"
+          "EthicalUse": {
+            "Description": "在使用 Flashback 录制他人之前，请务必告知并获得他们的同意。",
+            "Title": "道德使用"
           },
-          "RAMOnly": {
-            "Title": "只用 RAM",
-            "Description": "所有数据仅驻留在内存中，除非你保存了 Flashback 录音，否则不会写入磁盘。"
+          "LocalOnly": {
+            "Description": "Flashback 完全在您的本地机器上运行，数据不会同步到云端。",
+            "Title": "100% 本地"
           },
           "Protected": {
-            "Title": "隐私保护",
-            "Description": "您的隐私和安全至关重要，您的数据绝不会离开您的设备。"
+            "Description": "您的隐私和安全至关重要，您的数据绝不会离开您的设备。",
+            "Title": "隐私保护"
           },
-          "EthicalUse": {
-            "Title": "道德使用",
-            "Description": "在使用 Flashback 录制他人之前，请务必告知并获得他们的同意。"
+          "RAMOnly": {
+            "Description": "所有数据仅驻留在内存中，除非你保存了 Flashback 录音，否则不会写入磁盘。",
+            "Title": "只用 RAM"
           }
-        }
-      }
+        },
+        "Title": "隐私与安全"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet 是一款免费、注重隐私的录制工具，本地使用无需账户，您的数据归您所有，云端功能为选项，录制前须获得同意。",
+        "TLDRItems": [
+          "SeaMeet Desktop 免费——所有非人工智能功能无需账户或登录即可使用。",
+          "录制前请获得同意——SeaMeet 不会为您验证此事项。",
+          "您的录制和转录属您所有；SeaMeet 仅对其进行处理以提供服务。",
+          "云端功能需要账户，并存储在SeaMeet服务器上。",
+          "匿名诊断可选，且可随时关闭。",
+          "请勿滥用应用（禁止非法用途或黑客行为）。",
+          "服务可能变更，责任有限。"
+        ],
+        "TLDRTitle": "SeaMeet 条款——简明版"
+      },
+      "TermsOfService": "服务条款",
+      "UpdateAvailable": "新版本 {{version}} 可用",
+      "UpdateReady": "版本 {{version}} 已准备好安装"
     },
-    "General": "通用",
-    "Storage": {
-      "Title": "存储设置",
-      "Description": "选择SeaMeet自动保存录制时使用的默认文件夹。",
-      "DefaultPathLabel": "默认保存文件夹",
-      "Browse": "浏览",
-      "Save": "保存",
-      "RecordingNameLabel": "录制名称"
+    "AppPermissions": {
+      "DefaultRecordingMode": "默认录制模式",
+      "DeleteTooltip": "从列表中移除（重置为“Ask Every Time”）",
+      "EmptyState": "尚未检测到任何应用。当SeaMeet检测到使用麦克风的应用时，会显示在这里。",
+      "PathCopied": "路径已复制到剪贴板",
+      "PermissionHeader": "应用权限",
+      "Title": "应用权限"
     },
-    "ProfileSettings": "配置文件设置",
-    "AccountPreferences": "账户偏好设置",
-    "ProfileSettingsDescription": "管理您的个人资料信息",
-    "AccountPreferencesDescription": "管理您的账户偏好设置",
-    "SettingsFileLocation": "设置文件位置",
-    "SettingsFileDescription": "设置存储在单个 JSON 文件中，以便于备份和管理",
     "Back": "返回",
-    "OpenFolder": "打开文件夹",
     "DefaultUserName": "SeaMeet 用户",
-    "UserAvatarAlt": "用户",
+    "FailedToCheckForUpdates": "检查更新失败",
     "GroupTitle": {
-      "Account": "账户",
-      "General": "常规",
-      "Automation": "自动化",
-      "RecordingStorage": "录制存储",
-      "Configuration": "配置",
       "ApplicationInfo": "应用信息",
-      "Legal": "法律声明"
+      "Automation": "自动化",
+      "Configuration": "配置",
+      "General": "常规",
+      "Legal": "法律声明",
+      "RecordingStorage": "录制存储"
     },
     "Item": {
-      "EditProfile": "编辑个人资料",
-      "Account": "账户",
-      "LogOut": "退出登录",
-      "Language": "语言",
+      "AutoRecording": "自动录制",
+      "Copyright": "版权声明",
       "ImproveTranslationHint": "在 GitHub 上帮助改进此翻译 →",
-      "Theme": "主题",
-      "KeyboardShortcuts": "键盘快捷键",
+      "Language": "语言",
       "MicrophoneGain": "麦克风增益",
       "StartAtLogin": "启动时登录",
-      "AutoRecording": "自动录制",
       "Storage": "存储",
-      "Copyright": "版权声明"
+      "Theme": "主题"
     },
     "MicGain": {
-      "Minimal": "最小 (0.1x)",
-      "Quiet": "安静 (0.5x)",
-      "Normal": "正常 (1x)",
       "Loud": "响亮 (5x)",
-      "Louder": "音量更大（10倍）"
+      "Louder": "音量更大（10倍）",
+      "Minimal": "最小 (0.1x)",
+      "Normal": "正常 (1x)",
+      "Quiet": "安静 (0.5x)"
+    },
+    "OpenFolder": "打开文件夹",
+    "PageTitle": {
+      "About": "关于",
+      "AutoRecording": "自动录制",
+      "Flashback": "回放录制",
+      "Storage": "存储"
+    },
+    "SettingsFileLocation": "设置文件位置",
+    "Storage": {
+      "Browse": "浏览",
+      "DefaultPathLabel": "默认保存文件夹",
+      "Description": "选择SeaMeet自动保存录制时使用的默认文件夹。",
+      "Save": "保存",
+      "Title": "存储设置"
     },
     "Theme": {
+      "AdobeSand": "土坯砂",
+      "AdobeSandDesc": "暖色泥土光模式",
+      "AzureLight": "天蓝",
+      "AzureLightDesc": "酷蓝光模式",
+      "CloudCanvas": "云彩画布",
+      "CloudCanvasDesc": "清新薄荷光模式",
+      "ColumnDark": "深色",
+      "ColumnLight": "浅色",
+      "CyberCobalt": "网络钴",
+      "CyberCobaltDesc": "霓虹青色暗色模式",
+      "Dark": "暗色",
+      "DarkDesc": "暗色模式",
       "Device": "设备",
       "DeviceDesc": "跟随系统设置",
       "Light": "亮色",
       "LightDesc": "浅色模式",
-      "Dark": "暗色",
-      "DarkDesc": "暗色模式",
-      "Pink": "深粉色",
-      "PinkDesc": "粉色暗色模式",
       "LightPink": "浅粉色",
       "LightPinkDesc": "淡粉色光模式",
-      "ColumnLight": "浅色",
-      "ColumnDark": "深色",
-      "AzureLight": "天蓝",
-      "AzureLightDesc": "酷蓝光模式",
-      "WarmPaper": "暖色纸张",
-      "WarmPaperDesc": "暖色纸调光模式",
-      "SynthwaveLight": "合成波亮色",
-      "SynthwaveLightDesc": "充满活力的Synthwave光模式",
       "MidnightBlue": "午夜蓝",
       "MidnightBlueDesc": "深蓝色暗色模式",
-      "CloudCanvas": "云彩画布",
-      "CloudCanvasDesc": "清新薄荷光模式",
-      "CyberCobalt": "网络钴",
-      "CyberCobaltDesc": "霓虹青色暗色模式",
-      "AdobeSand": "土坯砂",
-      "AdobeSandDesc": "暖色泥土光模式"
+      "Pink": "深粉色",
+      "PinkDesc": "粉色暗色模式",
+      "SynthwaveLight": "合成波亮色",
+      "SynthwaveLightDesc": "充满活力的Synthwave光模式",
+      "WarmPaper": "暖色纸张",
+      "WarmPaperDesc": "暖色纸调光模式"
     },
-    "PageTitle": {
-      "Flashback": "回放录制",
-      "About": "关于",
-      "AutoRecording": "自动录制",
-      "Storage": "存储"
-    },
-    "FailedToCheckForUpdates": "检查更新失败",
-    "AppPermissions": {
-      "Title": "应用权限",
-      "Description": "管理应用在检测到使用麦克风时的自动录制权限。",
-      "EmptyState": "尚未检测到任何应用。当SeaMeet检测到使用麦克风的应用时，会显示在这里。",
-      "DeleteTooltip": "从列表中移除（重置为“Ask Every Time”）",
-      "PathCopied": "路径已复制到剪贴板",
-      "PermissionHeader": "应用权限",
-      "DefaultRecordingMode": "默认录制模式"
-    }
+    "Title": "设置",
+    "UserAvatarAlt": "用户"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "显示浮动窗口",
-    "OpenLauncher": "打开启动器",
-    "RecordAudio": "录制音频",
-    "RecordFullscreen": "全屏录制",
-    "RecordWindow": "开始录制窗口",
-    "RecordRegion": "区域录制",
     "CaptureScreenshot": "截图",
-    "RestoreDefaults": "还原为默认设置",
-    "RecordingPrompt": "正在监听……请按新的快捷键",
     "ConflictWarning": "此快捷方式已被其他应用使用，无法注册。",
     "GenericError": "无法更新快捷键。",
     "None": "无",
-    "SpaceKey": "空格键"
-  },
-  "Sidebar": {
-    "PrimaryNavigation": "主要导航",
-    "ClearSearch": "清除搜索",
-    "AgentPanel": "人工智能代理"
-  },
-  "SidebarTabs": {
-    "Audios": "音频",
-    "AutoDetect": "自动检测"
-  },
-  "TakeSnapshot": {
-    "Title": "已拍摄快照",
-    "Message": "已拍摄快照，已保存到：",
-    "StayAtVideo": "留在当前视频界面",
-    "GoToSnapshot": "跳转到新快照"
-  },
-  "TopNav": {
-    "CloseNavigationMenu": "关闭导航菜单",
-    "OpenNavigationMenu": "打开导航菜单",
-    "MainNavigation": "主导航",
-    "Record": "记录",
-    "Recording": "记录",
-    "Files": "文件",
-    "Agent": "Agent",
-    "Terminal": "终端"
-  },
-  "Tray": {
-    "MinimizedHint": "SeaMeet 仍在系统托盘中运行（右下角）。",
-    "ShowLauncher": "显示启动器",
-    "ShowFloatingWindow": "显示浮动窗口",
-    "ShowMainWindow": "显示主窗口",
-    "ExitSeaMeet": "退出 SeaMeet",
-    "QuickRecording": "快速录音",
+    "OpenLauncher": "打开启动器",
     "RecordAudio": "录制音频",
     "RecordFullscreen": "全屏录制",
-    "RecordRegion": "捕捉要录制的区域",
-    "OpenRecordingsFolder": "打开录制文件夹",
-    "TakeScreenshot": "截图",
-    "Close": "关闭",
-    "OpenSeaMeet": "开放海会",
-    "OpenSaveFolder": "打开保存文件夹",
-    "ReportIssues": "报告问题"
+    "RecordingPrompt": "正在监听……请按新的快捷键",
+    "RecordRegion": "区域录制",
+    "RecordWindow": "开始录制窗口",
+    "RestoreDefaults": "还原为默认设置",
+    "SpaceKey": "空格键",
+    "ToggleFloatingWindow": "显示浮动窗口"
+  },
+  "Sidebar": {
+    "ClearSearch": "清除搜索",
+    "PrimaryNavigation": "主要导航"
+  },
+  "TakeSnapshot": {
+    "GoToSnapshot": "跳转到新快照",
+    "Message": "已拍摄快照，已保存到：",
+    "StayAtVideo": "留在当前视频界面",
+    "Title": "已拍摄快照"
+  },
+  "TopNav": {
+    "Agent": "Agent",
+    "CloseNavigationMenu": "关闭导航菜单",
+    "Files": "文件",
+    "MainNavigation": "主导航",
+    "OpenNavigationMenu": "打开导航菜单",
+    "Record": "记录",
+    "Recording": "记录"
+  },
+  "Tray": {
+    "MinimizedHint": "SeaMeet 仍在系统托盘中运行（右下角）。"
   },
   "Types": {
-    "Microphone": "麦克风",
-    "System": "系统音频输出",
     "Both": "两者（混合）",
     "File": "文件",
+    "Microphone": "麦克风",
+    "System": "系统音频输出",
     "Video": "视频"
   },
   "UpdateQuitModal": {
-    "Title": "可用更新",
-    "ReadyToInstall": "SeaMeet {{version}} 已准备好安装。",
-    "InstallBeforeQuitting": "您想在退出之前安装它吗？",
     "InstallAndQuit": "安装和退出",
-    "QuitWithoutInstalling": "退出而不安装"
+    "InstallBeforeQuitting": "您想在退出之前安装它吗？",
+    "QuitWithoutInstalling": "退出而不安装",
+    "ReadyToInstall": "SeaMeet {{version}} 已准备好安装。",
+    "Title": "可用更新"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} 已准备好安装",
-    "Downloading": "正在下载 SeaMeet {{version}} ({{percent}}%)",
     "Available": "有新版本：SeaMeet {{version}}",
-    "WhatsNewInVersion": "{{version}} 中的新功能：",
-    "WhatsNew": "新内容：",
+    "Dismiss": "关闭",
+    "Downloading": "正在下载 SeaMeet {{version}} ({{percent}}%)",
     "Hide": "隐藏",
+    "ReadyToInstall": "SeaMeet {{version}} 已准备好安装",
     "RestartNow": "立即重启",
     "ViewRelease": "查看发布",
     "ViewReleaseTitle": "在 GitHub 查看发布说明",
-    "Dismiss": "关闭"
+    "WhatsNew": "新内容：",
+    "WhatsNewInVersion": "{{version}} 中的新功能："
   },
   "UserMenu": {
+    "AboutSeaMeet": "关于 SeaMeet",
     "DisplayName": "用户",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "个人资料设置",
-    "AccountPreferences": "账户偏好",
-    "BillingPlans": "账单与计划",
-    "StorageSettings": "存储设置",
-    "HelpSupport": "帮助与支持",
-    "KeyboardShortcuts": "键盘快捷键",
-    "SignIn": "登录",
-    "SignOut": "登出",
-    "SeaMeetSignedOut": "SeaMeet：尚未登录",
-    "SeaMeetSignedIn": "SeaMeet：已登录",
-    "AboutSeaMeet": "关于 SeaMeet",
     "Exit": "退出",
+    "HelpSupport": "帮助与支持",
     "HelpSupportSection": {
-      "Wiki": "维基",
-      "WikiDesc": "查看 SeaMeet 维基以获取文档和指南。",
-      "VisitWiki": "访问 Wiki",
-      "Issues": "反馈问题",
-      "IssuesDesc": "报告漏洞和反馈（需要 GitHub 账户）。",
-      "SubmitIssue": "提交反馈",
       "Discussion": "讨论",
       "DiscussionDesc": "参与社区交流",
-      "JoinDiscussion": "加入社区讨论",
+      "DogfoodingDesc": "我们鼓励您使用 SeaMeet 录制问题，并提交到议题或通过电子邮件联系我们。",
       "Email": "邮箱",
       "EmailDesc": "与我们的团队直接联系。",
-      "SendEmail": "联系我们",
-      "Dogfooding": "内测体验",
-      "DogfoodingDesc": "我们鼓励您使用 SeaMeet 录制问题，并提交到议题或通过电子邮件联系我们。",
-      "CheckForUpdates": "检查更新",
-      "CheckingUpdates": "正在检查更新...",
-      "UpdateAvailable": "新版本 {{version}} 可用",
-      "UpdateReady": "版本 {{version}} 已可以安装",
-      "InstallNow": "立即安装",
-      "TermsOfService": "服务条款",
-      "PrivacyPolicy": "隐私政策",
       "ImproveTranslation": "改进翻译",
-      "ImproveTranslationDesc": "帮助我们改进翻译或在 GitHub 上请求新语言。"
-    }
+      "ImproveTranslationDesc": "帮助我们改进翻译或在 GitHub 上请求新语言。",
+      "Issues": "反馈问题",
+      "IssuesDesc": "报告漏洞和反馈（需要 GitHub 账户）。",
+      "JoinDiscussion": "加入社区讨论",
+      "SendEmail": "联系我们",
+      "SubmitIssue": "提交反馈",
+      "VisitWiki": "访问 Wiki",
+      "Wiki": "维基",
+      "WikiDesc": "查看 SeaMeet 维基以获取文档和指南。"
+    },
+    "KeyboardShortcuts": "键盘快捷键",
+    "SeaMeetSignedIn": "SeaMeet：已登录",
+    "SeaMeetSignedOut": "SeaMeet：尚未登录",
+    "SignIn": "登录",
+    "SignOut": "登出"
   },
   "VideoSettings": {
-    "Title": "视频录制设置",
-    "Mode": "录音模式",
-    "ModeOff": "离开",
-    "ModeFullscreen": "全屏",
-    "ModeWindow": "窗户",
-    "ModeRegion": "区域",
+    "AudioSettings": "音频设置",
+    "CodecTooltip": {
+      "VP8": "此录制使用 VP8 以获得最佳质量。一些默认视频播放器——例如 Windows Media Player 和 macOS 上的 QuickTime——可能不支持此格式。为确保可靠播放，请使用现代浏览器（Chrome 或 Edge）或支持的播放器如 VLC。",
+      "VP9": "此录制使用 VP9 以获得最佳质量。一些默认视频播放器——例如 Windows Media Player 和 macOS 上的 QuickTime——可能不支持此格式。为确保可靠播放，请使用现代浏览器（Chrome 或 Edge）或支持的播放器如 VLC。"
+    },
+    "Detecting": "正在检测...",
+    "FlashbackArmedNotice": "你正在使用 {{seconds}}s 的回放缓冲区进行录制",
+    "FramesPerSecond": "帧率",
+    "FullHD": "全高清",
+    "GBPerHour": "~{{gb}} GB/小时",
+    "HD": "HD",
+    "HideWindow": "选择区域时隐藏SeaMeet窗口",
+    "Internal": "内部",
+    "MBPerMin": "~{{mb}} MB/分钟，",
     "ModeAudioOnly": "仅音频",
-    "SelectScreen": "选择屏幕或窗口",
-    "SelectWindow": "选择窗口",
-    "Refresh": "刷新",
+    "ModeFullscreen": "全屏",
+    "ModeRegion": "区域",
+    "ModeWindow": "窗户",
+    "Native": "原生",
     "NoScreens": "未检测到屏幕",
     "NoWindows": "没有可用的窗口",
-    "RegionInfo": "录制开始时，将提示您选择屏幕或窗口。",
-    "HideWindow": "选择区域时隐藏SeaMeet窗口",
-    "VideoQuality": "视频质量",
-    "Quality": "质量",
-    "QualityOriginal": "原来的",
-    "QualityHigh": "高",
-    "QualityMedium": "中等的",
-    "QualityLow": "低",
-    "FramesPerSecond": "帧率",
-    "FrameRate": "帧率",
-    "SourceResolution": "来源分辨率",
-    "Native": "原生",
-    "FullHD": "全高清",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "在上方选择一个来源",
-    "ZeroSize": "~0 MB/分钟，~0 GB/小时",
-    "MBPerMin": "~{{mb}} MB/分钟，",
-    "GBPerHour": "~{{gb}} GB/小时",
     "Primary": "主要",
-    "Internal": "内部",
-    "Detecting": "正在检测...",
-    "ResolutionUnknown": "分辨率未知",
-    "AudioSettings": "音频设置",
-    "RecordModeTitle": "录制音频或视频？",
+    "QualityHigh": "高",
+    "QualityLow": "低",
+    "QualityMedium": "中等的",
+    "QualityOriginal": "原来的",
     "Record": "录制",
-    "RecordWithoutFlashback": "无回放录制",
+    "RecordModeTitle": "录制音频或视频？",
     "RecordWithFlashback": "使用回放录制",
+    "RecordWithoutFlashback": "无回放录制",
+    "Refresh": "刷新",
+    "ResolutionUnknown": "分辨率未知",
+    "SD": "SD",
+    "SelectScreen": "选择屏幕或窗口",
+    "SelectSourceAbove": "在上方选择一个来源",
+    "SelectWindow": "选择窗口",
+    "SourceResolution": "来源分辨率",
+    "Title": "视频录制设置",
     "VideoFlashbackArmedNotice": "屏幕回放已就绪（{{seconds}}秒）",
-    "FlashbackArmedNotice": "你正在使用 {{seconds}}s 的回放缓冲区进行录制",
-    "CodecTooltip": {
-      "VP9": "此录制使用 VP9 以获得最佳质量。一些默认视频播放器——例如 Windows Media Player 和 macOS 上的 QuickTime——可能不支持此格式。为确保可靠播放，请使用现代浏览器（Chrome 或 Edge）或支持的播放器如 VLC。",
-      "VP8": "此录制使用 VP8 以获得最佳质量。一些默认视频播放器——例如 Windows Media Player 和 macOS 上的 QuickTime——可能不支持此格式。为确保可靠播放，请使用现代浏览器（Chrome 或 Edge）或支持的播放器如 VLC。"
-    }
+    "VideoQuality": "视频质量",
+    "ZeroSize": "~0 MB/分钟，~0 GB/小时"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "已选择区域",
     "CustomRegion": "自定义区域：{{width}} × {{height}} 像素",
-    "ReselectRegion": "重新选择区域",
-    "SelectCustomRegion": "选择自定义区域",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "已选择区域",
+    "ReselectRegion": "重新选择区域",
+    "SelectCustomRegion": "选择自定义区域"
   },
   "WindowPicker": {
-    "Title": "选择窗口",
     "Instruction": "选择用于窗口录制的窗口",
-    "Refresh": "刷新",
-    "Refreshing": "正在刷新……",
     "Loading": "正在加载窗口……",
     "None": "未检测到窗口。请打开应用程序并刷新。",
+    "Refresh": "刷新",
+    "Refreshing": "正在刷新……",
+    "Title": "选择窗口",
     "Unknown": "未命名窗口"
-  },
-  "Common": {
-    "Configure": "配置",
-    "Cancel": "取消",
-    "Apply": "应用",
-    "Close": "关闭",
-    "Open": "打开",
-    "Minimize": "最小化",
-    "Recording": "录制",
-    "UnknownApp": "未知应用",
-    "Done": "完成",
-    "Save": "保存",
-    "Saving": "保存中...",
-    "Delete": "删除",
-    "Or": "或者",
-    "Loading": "加载中...",
-    "Expand": "展开",
-    "PlannedFeature": "预定功能",
-    "Screen": "屏幕",
-    "Window": "窗口",
-    "Region": "区域",
-    "AppTitle": "SeaMeet 屏幕和录音机",
-    "AppSubtitle": "录制设备输入和输出音频",
-    "Screenshot": "截图",
-    "Saved": "已保存",
-    "Processing": "处理中…",
-    "Starting": "正在启动……",
-    "FileNameCopiedWithRenameHint": "{{fileName}} 已复制到剪贴板。双击以更改文件名。",
-    "ApplyName": "应用名称",
-    "Send": "发送"
-  },
-  "RecordingControls": {
-    "StartRecording": "开始录音",
-    "StopRecording": "停止录音",
-    "ContinueRecording": "继续录音",
-    "Pause": "暂停",
-    "Resume": "恢复",
-    "Stop": "停止",
-    "RecordingScreen": "录屏..",
-    "RecordingAudio": "录制音频..",
-    "AudioRecording": "录音",
-    "VideoRecording": "视频录制",
-    "RecordingPreview": "录音预览",
-    "RecordingMode": "录音模式"
-  },
-  "RecordingModes": {
-    "RecordAudio": "仅音频录制",
-    "RecordAudioTip": "仅音频录制",
-    "RecordWindow": "窗口",
-    "RecordWindowTip": "捕获单个应用窗口",
-    "RecordFullscreen": "全屏",
-    "RecordFullscreenTip": "捕获整个屏幕",
-    "RecordRegion": "区域",
-    "RecordRegionTip": "捕获自定义区域",
-    "CaptureMode": "捕获模式",
-    "FullScreen": "全屏",
-    "AreaCapture": "区域捕获"
-  },
-  "RecordingsList": {
-    "NoRecordings": "尚无录制，开始录制即可在此查看。",
-    "RecentRecordings": "最近的录制",
-    "RecentCaptures": "最近捕获",
-    "RefreshRecordings": "刷新录制",
-    "SearchRecordingsOrSnapshots": "搜索录制和快照",
-    "SearchRecordingsPlaceholder": "搜索录制",
-    "ShowInFolder": "在文件夹中显示",
-    "CopyFileName": "复制文件名",
-    "CopyFilePath": "复制文件路径",
-    "FileNameCopied": "{{fileName}} 已复制到剪贴板",
-    "FilePathCopied": "文件路径已复制到剪贴板",
-    "SaveAs": "另存为",
-    "OpenSaveFolder": "打开文件夹",
-    "Title": "录制列表",
-    "Recovered": "已恢复 {{count}} 个录制"
-  },
-  "FileImport": {
-    "ImportMedia": "拖放您的音频、视频和图片文件",
-    "DragDropFiles": "在此处拖放您的音频、视频和图片文件",
-    "DragDropSubtitle": "将音频、视频和图片文件拖放到这里",
-    "BrowseFiles": "浏览文件",
-    "Supported": "支持",
-    "SupportedFormats": "支持：MP3、WAV、M4A、WebM、OGG、PNG、JPG 等",
-    "VideoImportCopying": "正在复制视频文件...",
-    "VideoImportSaving": "正在保存视频文件...",
-    "VideoUnsupported": "此视频格式可能无法在应用中播放。文件仍将被导入。"
-  },
-  "AudioControls": {
-    "AudioCapture": "音频捕获",
-    "AudioMix": "音频混音",
-    "AudioSessionsLog": "音频会话日志",
-    "AudioSource": "音频来源：",
-    "InputDevice": "输入设备：",
-    "Microphone": "麦克风",
-    "MicrophoneLabel": "麦克风 {{id}}",
-    "RecordingDefaultMicrophone": "默认麦克风",
-    "RecordingInputLabel": "输入：{{name}}",
-    "RecordingSettings": "录制设置",
-    "RecordingType": "录制类型：",
-    "RefreshMicrophoneList": "刷新麦克风列表",
-    "MicrophoneGainWarning": "高麦克风增益可能会在“系统音频”关闭时拾取扬声器播放内容。请使用耳机或降低麦克风增益，以仅录制麦克风。"
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "开始录音",
-    "Ready": "准备好？",
-    "BufferingMoment": "缓冲瞬间……",
-    "RecordWithFlashback": "使用Flashback录制",
-    "NeverMissAMoment": "永远不要错过瞬间。",
-    "ReadyToGuard": "准备好守护您的 {{type}} 吗？",
-    "FillingBuffer": "正在填充 {{duration}}s 的回放缓冲区…… {{progress}}%",
-    "ReadyToCapture": "SeaMeet 已准备好进行捕获。",
-    "DescNone": "录制您的屏幕、音频或截取屏幕截图。选择上面的闪回模式以节省时间。",
-    "DescInit": "点击“准备好了吗？”告诉 SeaMeet 开始“回忆”过去。",
-    "DescCharging": "准备好您的 {{duration}} 第二个窗口...几乎准备好捕捉您可能错过的内容。 {{progress}}% 已完成。",
-    "DescReady": "Flashback 已激活。每次点击录制时，将包括过去 {{duration}} 秒的 {{type}}——再也不用担心错过任何瞬间。",
-    "Screen": "屏幕",
-    "Audio": "声音的",
-    "OpenLauncher": "打开 Launcher",
-    "OpenFloater": "打开浮动窗口",
-    "TakeScreenshot": "截屏",
-    "Buffering": "缓冲中",
-    "SavingFlashback": "正在保存 flashback…",
-    "SaveLastFlashback": "保存最后 {{duration}}s 闪回",
-    "PrivacyProtected": "您的隐私受到保护。",
-    "PrivacyDesc": "SeaMeet 在您的计算机 RAM 的环形缓冲区内，本地记录过去 {{duration}}s 的 {{type}}。",
-    "FlashbackOff": "Flashback 目前已关闭。随时开始普通录制，或在上方选择 flashback 模式（音频或屏幕）以保存英雄时刻。",
-    "FlashbackInitAudio": "准备好守护您的音频吗？",
-    "FlashbackInitScreen": "准备好保护您的屏幕了吗？",
-    "FlashbackInitDescription": "点击 'Ready?' 命令 SeaMeet 开始“记忆”过去。",
-    "FlashbackCharging": "填充 {{seconds}}秒缓冲区…… {{percent}}%",
-    "FlashbackChargingDescription": "准备 {{seconds}} 第二个窗口... {{percent}}% 已完成。",
-    "FlashbackReadyQuestion": "准备好了吗？",
-    "FlashbackReady": "永远不要错过瞬间。",
-    "FlashbackReadyDescription": "Flashback 已激活。在录制时，会包括过去 {{seconds}}s 的 {{type}}。",
-    "FlashbackBuffering": "正在缓冲...",
-    "SaveFlashback": "保存最后 {{seconds}}s 闪回",
-    "FlashbackPrivacy": "您的隐私受到保护。本地存储在 RAM 中。",
-    "Capturing": "捕捉...",
-    "CaptureMode": "捕获模式",
-    "FullScreen": "全屏",
-    "AreaCapture": "区域捕获",
-    "KeepWindowVisible": "截图时保持 SeaMeet 窗口可见",
-    "FlashbackMismatch": "Flashback 模式不匹配。音频录制已开启，但视频 flashback 正在运行。请禁用视频 flashback。"
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "启用 SeaMeet 转录",
-    "SignInRequired": "需要登录",
-    "ProcessingMode": "加工方式",
-    "Realtime": "即时的",
-    "RealtimeDescription": "录制时的实时转录",
-    "Diarized": "日记化",
-    "DiarizedDescription": "录音后上传音频以识别说话人",
-    "ComingSoon": "敬请期待",
-    "TranscriptionLanguage": "转录语言",
-    "TranslationLanguage": "翻译语言",
-    "NoTranslation": "无翻译",
-    "LanguageHint": "您可以在录制过程中更改语言",
-    "LiveTranscription": "实时转录",
-    "WaitingForSpeech": "等待语音输入...",
-    "UnknownSpeaker": "扬声器",
-    "SegmentCount": "{{count}} 段",
-    "SegmentCount_plural": "{{count}} 段",
-    "ConnectionError": "无法联接到SeaMeet",
-    "Reconnecting": "正在重新连接...",
-    "Connected": "连接到 SeaMeet",
-    "Disconnected": "与 SeaMeet 断开连接",
-    "NowSpeaking": "现在讲...",
-    "Transcript": "成绩单",
-    "LoadingTranscript": "正在加载成绩单...",
-    "NoTranscript": "没有可用的转录",
-    "FetchError": "无法加载转录",
-    "Retry": "重试",
-    "Transcribed": "转录",
-    "Content": "海会内容",
-    "Tab": {
-      "transcription": "转录",
-      "summary": "概括",
-      "actionItems": "行动项目",
-      "notes": "笔记"
-    },
-    "Summary": "概括",
-    "NoSummary": "摘要尚未公布。",
-    "ActionItems": "行动项目",
-    "NoActionItems": "本次会议没有行动项目",
-    "DueDate": "截止日期：{{date}}",
-    "Notes": "笔记",
-    "NoNotes": "本次会议没有备注",
-    "LoadingContent": "正在加载 SeaMeet 内容...",
-    "SeekToTime": "点击此时开始播放",
-    "CollapseNowSpeaking": "现在说话折叠",
-    "ExpandNowSpeaking": "展开现在说话"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "回放缓冲区为空。请稍后再试。",
-    "EnableFlashback": "启用回放以保存片段。",
-    "FailedToSave": "保存回放缓冲区失败。",
-    "SavedFlashback": "已将回放保存到录音中。",
-    "StillCharging": "回放缓冲区仍在准备。"
-  },
-  "AISummary": {
-    "TabTitle": "人工智能总结",
-    "SetupRequired": "在“设置”→“AI 功能”中配置您的 Gemini API 密钥以启用 AI 摘要。",
-    "EnableRequired": "在“设置”→“AI 功能”中启用 AI 功能即可查看 AI 摘要。",
-    "ExportMarkdown": "复制为 Markdown",
-    "ExportSrt": "复制为 SRT",
-    "ExportJson": "复制为 JSON",
-    "Regenerate": "重新生成摘要",
-    "Minimize": "最小化",
-    "Maximize": "展开至全视图",
-    "Queued": "排队等待处理...",
-    "Processing": "正在生成摘要...",
-    "Error": "无法加载摘要：{{error}}",
-    "PipelineError": "AI处理失败。尝试再生。",
-    "Retry": "重试",
-    "NoSummary": "还没有AI总结。",
-    "Generate": "生成摘要",
-    "Copy": "复制",
-    "NoSummaryText": "摘要不可用。",
-    "Topics": "主题：",
-    "NoTranscript": "成绩单不可用。",
-    "NoActions": "没有确定行动项目。",
-    "NoDecisions": "没有确定关键决策。",
-    "Export": {
-      "HeadingSummary": "概括",
-      "HeadingActionItems": "行动项目",
-      "HeadingKeyDecisions": "关键决策",
-      "HeadingTranscription": "转录"
-    },
-    "Tab": {
-      "Summary": "概括",
-      "Transcription": "成绩单",
-      "ActionItems": "行动",
-      "KeyDecisions": "决定",
-      "Agent": "代理人"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "人工智能特点",
-    "MenuItem": "人工智能驱动的摘要",
-    "PageTitle": "人工智能特点",
-    "EnableToggle": "启用人工智能驱动的摘要",
-    "EnableToggleDesc": "需要免费的 Gemini API 密钥",
-    "ApiKeySection": "双子座 API 密钥",
-    "ApiKeyLabel": "双子座 API 密钥",
-    "KeyPlaceholder": "艾扎西...",
-    "KeyPlaceholderSaved": "••••••••（已保存）",
-    "ShowKey": "显示密钥",
-    "HideKey": "隐藏键",
-    "TestKey": "保存并验证",
-    "Saving": "保存...",
-    "GetKeyLink": "从 Google AI Studio 获取免费的 API 密钥 →",
-    "ClearKey": "删除已保存的密钥",
-    "KeyVerified": "密钥已验证",
-    "KeyInvalid": "密钥无效",
-    "KeyTesting": "测试...",
-    "KeyNotConfigured": "没有配置密钥",
-    "ModelSection": "人工智能模型",
-    "ModelLabel": "双子座模型",
-    "SelectedModel": "已选择：{{model}}",
-    "AutomationSection": "自动化",
-    "AutoSummary": "自动生成摘要",
-    "AutoSummaryDesc": "每次录制完成后运行",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "推荐·快速+有能力",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "最便宜的稳定选择",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "超便宜",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "最大能力",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "最佳稳定推理"
-    },
-    "ClaudeKey": {
-      "Section": "克劳德 API 密钥（代理）",
-      "SourceLabel": "活跃来源：",
-      "SourceByok": "您的 API 密钥 (BYOK)",
-      "SourceKeyServer": "由 SeaMeet 管理",
-      "SourceCli": "克劳德·代码 CLI",
-      "SourceNone": "未配置",
-      "KeyPlaceholder": "sk-蚂蚁-...",
-      "KeyPlaceholderSaved": "••••••••（已保存）",
-      "ShowKey": "显示密钥",
-      "HideKey": "隐藏键",
-      "TestKey": "保存并验证",
-      "Saving": "保存...",
-      "ClearKey": "删除已保存的密钥",
-      "KeyVerified": "密钥已验证",
-      "KeyInvalid": "密钥无效",
-      "KeyTesting": "测试...",
-      "KeyNotConfigured": "没有配置密钥",
-      "GetKeyLink": "从 Anthropic 控制台获取 API 密钥 →",
-      "QuotaSection": "密钥服务器配额",
-      "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
-      "QuotaResetDate": "在 {{date}} 上重置",
-      "QuotaLoading": "加载配额...",
-      "QuotaRefresh": "刷新配额",
-      "CliSection": "克劳德·代码 CLI",
-      "CliInstalled": "已安装 ({{version}})",
-      "CliNotInstalled": "克劳德 CLI 未找到",
-      "CliInstallLink": "安装克劳德代码 →",
-      "ModelSection": "默认克劳德模型",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "又快又便宜",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "推荐·平衡",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "最有能力"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "人工智能代理与协作",
-    "PageTitle": "人工智能代理与协作",
-    "SectionTitle": "人工智能代理与协作",
-    "EnableToggle": "启用人工智能代理和协同工作",
-    "EnableToggleDesc": "需要克劳德 API 密钥",
-    "DisabledBadge": "残疾人",
-    "DisabledMsg": "AI Agent & Cowork 已禁用。在设置 → AI Agent & Cowork 中启用它。",
-    "DisabledTabHint": "AI Agent 已禁用 - 在设置 → AI Agent & Cowork 中启用它",
-    "NotConfiguredMsg": "未配置 Claude API 密钥。在“设置”→“AI Agent 和 Cowork”中进行设置。"
-  },
-  "PipelineStatus": {
-    "Queued": "摘要已排队...",
-    "Running": "正在生成摘要...",
-    "Progress": "处理 {{total}} 的块 {{current}}",
-    "Done": "总结已准备好",
-    "Error": "处理失败"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "人工智能处理",
-    "Queuing": "排队...",
-    "ProcessingWithTime": "正在处理... {{sec}}s",
-    "Describe": "描述图像",
-    "DescribeSub": "这张截图里有什么？",
-    "Ocr": "提取文本（OCR）",
-    "OcrSub": "读取所有可见文本",
-    "Custom": "自定义提示",
-    "CustomPlaceholder": "询问有关此图像的任何问题...",
-    "ResultLabel": "人工智能结果",
-    "Description": "描述",
-    "ExtractedText": "提取的文本",
-    "Analysis": "分析",
-    "PipelineError": "AI处理失败。请再试一次。",
-    "UnknownError": "未知错误"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "正在读取文件...",
-      "Executing": "正在执行...",
-      "Running": "跑步...",
-      "Input": "输入",
-      "Output": "输出",
-      "Pattern": "图案：",
-      "ShowDetails": "显示详情",
-      "AndMoreLines": "...以及 {{count}} 更多行"
-    },
-    "Streaming": {
-      "Thinking": "思维...",
-      "LongRunning": "跑的时间比平常长",
-      "ToolStuck": "工具可能被卡住",
-      "ForceStop": "强制停止",
-      "GeneratingResponse": "正在生成响应...",
-      "RunningTool": "运行 {{tool}}..."
-    },
-    "Permission": {
-      "Title": "工具权限请求",
-      "Allow": "允许一次",
-      "AllowSession": "允许会话",
-      "Deny": "否定",
-      "Allowed": "允许",
-      "Denied": "被拒绝"
-    },
-    "Title": "人工智能代理",
-    "GlobalTitle": "人工智能代理",
-    "NewSession": "新会话",
-    "Sessions": "会议",
-    "NoSessions": "还没有会议。下面开始对话。",
-    "SendPlaceholder": "询问任何内容...（Enter 发送，Shift+Enter 换行）",
-    "SendButton": "发送",
-    "StopButton": "停止",
-    "NotConfigured": "在“设置”→“AI 功能”中配置 Claude API 密钥以使用代理。",
-    "GoToSettings": "打开设置",
-    "SessionCost": "会话：{inputTokens}_ in /{outputTokens}_ out 令牌",
-    "CommandHelp": "命令：/new·/clear·/cost·/help",
-    "Mode": {
-      "Ask": "问",
-      "Code": "代码",
-      "Plan": "计划"
-    },
-    "Model": {
-      "Haiku": "俳句",
-      "Sonnet": "十四行诗",
-      "Opus": "作品"
-    },
-    "QuickAction": {
-      "Summarize": "总结一下本次录音",
-      "ActionItems": "查找行动项目",
-      "DraftEmail": "后续电子邮件草稿"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "你能帮我什么？",
-      "HelpAnalyze": "帮我分析一下我最近的录音"
-    },
-    "AssetContext": "上下文：{{name}}"
   }
 }

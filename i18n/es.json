@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "Versión de App Store",
     "DirectBuild": "Compilación directa",
-    "SubtitleBadge": "Grabador Rápido y Agente",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Ayúdanos a traducir SeaMeet →",
     "Loading": "Cargando...",
-    "HelpTranslate": "Ayúdanos a traducir SeaMeet →"
+    "SubtitleBadge": "Grabador Rápido y Agente",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Productividad",
-    "Social": "Social",
-    "Gaming": "Juegos",
-    "Recording": "Grabación",
-    "Browsers": "Navegadores",
-    "BrowserBased": "basado en navegador"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Otro",
+      "Skip": "Saltar",
+      "Submit": "Entregar",
+      "Title": "Pregunta",
+      "TypeResponse": "Escribe tu respuesta..."
+    },
+    "AssetContext": "Contexto: {{name}}",
+    "CommandHelp": "Comandos: /nuevo · /clear · /coste · /ayuda",
+    "GlobalTitle": "Agente de IA",
+    "GoToSettings": "Abrir configuración",
+    "Mode": {
+      "Ask": "Preguntar",
+      "Code": "Código",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "haikus",
+      "Opus": "Opus",
+      "Sonnet": "Soneto"
+    },
+    "NewSession": "Nueva sesión",
+    "NoSessions": "Aún no hay sesiones. Inicie una conversación a continuación.",
+    "NotConfigured": "Configure una clave API de Claude en Configuración → Funciones de IA para usar el Agente.",
+    "Permission": {
+      "Allow": "Permitir una vez",
+      "Allowed": "Permitido",
+      "AllowSession": "Permitir sesión",
+      "Denied": "Denegado",
+      "Deny": "Denegar",
+      "Title": "Solicitud de permiso de herramienta"
+    },
+    "Plan": {
+      "Approve": "Aprobar plan",
+      "DefaultFeedback": "Cambios solicitados por el usuario",
+      "Description": "El agente ha preparado un plan arriba y necesita su aprobación para continuar.",
+      "FeedbackPlaceholder": "Describe qué cambios te gustaría...",
+      "PlanDetails": "Detalles del plano",
+      "RequestChanges": "Solicitar cambios",
+      "RequestedPermissions": "Permisos solicitados:",
+      "SendFeedback": "Enviar comentarios",
+      "Title": "Revisión del plan"
+    },
+    "QuickAction": {
+      "ActionItems": "Encuentra elementos de acción",
+      "DraftEmail": "Borrador de correo electrónico de seguimiento",
+      "Summarize": "Resumir esta grabación"
+    },
+    "SendButton": "Enviar",
+    "SendPlaceholder": "Pregunta cualquier cosa... (Intro para enviar, Mayús+Intro para nueva línea)",
+    "SessionCost": "Sesión: {{inputTokens}} entrada /{{outputTokens}} tokens de salida",
+    "Sessions": "Sesiones",
+    "StopButton": "Detener",
+    "Streaming": {
+      "ForceStop": "Forzar parada",
+      "GeneratingResponse": "Generando respuesta...",
+      "LongRunning": "Correr más de lo habitual",
+      "RunningTool": "Ejecutando {{tool}}...",
+      "Thinking": "Pensamiento...",
+      "ToolStuck": "La herramienta puede estar atascada"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Ayúdame a analizar mis grabaciones recientes.",
+      "WhatCanYouDo": "¿En qué puedes ayudarme?"
+    },
+    "Title": "Agente de IA",
+    "ToolCall": {
+      "AndMoreLines_one": "... y {{count}} líneas más",
+      "AndMoreLines_other": "... y {{count}} líneas más",
+      "Executing": "Ejecutando...",
+      "Input": "Aporte",
+      "Output": "Producción",
+      "Pattern": "Patrón:",
+      "Reading": "Leyendo archivo...",
+      "ShowDetails": "Mostrar detalles"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} acciones",
+      "Actions_other": "{{count}} acciones",
+      "Completed_one": "{{count}} completado",
+      "Completed_other": "{{count}} completado",
+      "Running_one": "{{count}} en ejecución",
+      "Running_other": "{{count}} en ejecución"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Desactivado",
+    "DisabledMsg": "El agente AI y el cowork están deshabilitados. Habilítelo en Configuración → Agente AI y Cowork.",
+    "DisabledTabHint": "El Agente AI está deshabilitado: habilítelo en Configuración → Agente AI y Cowork",
+    "EnableToggle": "Habilitar agente de IA y cowork",
+    "EnableToggleDesc": "Requiere una clave API de Claude",
+    "MenuItem": "Agente de IA y cowork",
+    "PageTitle": "Agente de IA y cowork",
+    "SectionTitle": "Agente de IA y cowork"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Clave API de Géminis",
+    "ApiKeySection": "Clave API de Géminis",
+    "AutomationSection": "Automatización",
+    "AutoSummary": "Resumen generado automáticamente",
+    "AutoSummaryDesc": "Se ejecuta después de que finaliza cada grabación.",
+    "ClaudeKey": {
+      "ClearKey": "Eliminar clave guardada",
+      "CliInstalled": "Instalado ({{version}})",
+      "CliInstallLink": "Instalar código Claude →",
+      "CliNotInstalled": "Claude CLI no encontrado",
+      "CliSection": "Código Claude CLI",
+      "GetKeyLink": "Obtenga una clave API de Anthropic Console →",
+      "HideKey": "Ocultar clave",
+      "KeyInvalid": "Clave no válida",
+      "KeyPlaceholder": "sk-hormiga-...",
+      "KeyPlaceholderSaved": "••••••••• (guardado)",
+      "KeyTesting": "Pruebas...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Rápido y barato",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "más capaz",
+      "ModelSection": "Modelo Claude predeterminado",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recomendado · Equilibrado",
+      "QuotaLoading": "Cargando cuota...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens restantes",
+      "QuotaResetDate": "Se reinicia en {{date}}",
+      "Saving": "Ahorro...",
+      "Section": "Clave API de Claude (Agente)",
+      "ShowKey": "Mostrar clave",
+      "SourceByok": "Su clave API (BYOK)",
+      "SourceCli": "Código Claude CLI",
+      "SourceKeyServer": "Gestionado por SeaMeet",
+      "SourceLabel": "Fuente activa:",
+      "SourceNone": "No configurado",
+      "TestKey": "Guardar y verificar"
+    },
+    "ClearKey": "Eliminar clave guardada",
+    "EnableToggle": "Habilite resúmenes impulsados ​​por IA",
+    "EnableToggleDesc": "Requiere una clave API Gemini gratuita",
+    "GetKeyLink": "Obtenga una clave API gratuita de Google AI Studio →",
+    "GroupTitle": "Funciones de IA",
+    "HideKey": "Ocultar clave",
+    "KeyInvalid": "Clave no válida",
+    "KeyNotConfigured": "Ninguna clave configurada",
+    "KeyPlaceholder": "AizaSy...",
+    "KeyPlaceholderSaved": "••••••••• (guardado)",
+    "KeyTesting": "Pruebas...",
+    "KeyVerified": "Clave verificada",
+    "ManagedKeyDesc": "Su clave API se proporciona automáticamente. No se necesita configuración.",
+    "ManagedKeyStatus": "Clave administrada: proporcionada por SeaMeet",
+    "MenuItem": "Resúmenes impulsados ​​por IA",
+    "ModelLabel": "Modelo Géminis",
+    "Models": {
+      "Gemini25Flash": "Géminis 2. Destello",
+      "Gemini25FlashLite": "Géminis 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra barato",
+      "Gemini25FlashSub": "Opción estable más barata",
+      "Gemini25Pro": "Géminis 2.5 Pro",
+      "Gemini25ProSub": "Mejor razonamiento estable",
+      "Gemini3Flash": "Géminis 3 Destello",
+      "Gemini3FlashSub": "Recomendado · Rápido + capaz",
+      "Gemini3Pro": "Géminis 3 Pro",
+      "Gemini3ProSub": "Capacidad máxima"
+    },
+    "ModelSection": "Modelo de IA",
+    "PageTitle": "Funciones de IA",
+    "QuotaLoading": "Cargando cuota...",
+    "QuotaRefresh": "Actualizar cuota",
+    "QuotaRemaining": "{{remaining}} / {{limit}} tokens restantes",
+    "QuotaResetDate": "Se reinicia en {{date}}",
+    "QuotaSection": "Cuota de uso",
+    "Saving": "Ahorro...",
+    "SelectedModel": "Seleccionado: {{model}}",
+    "ShowKey": "Mostrar clave",
+    "TestKey": "Guardar y verificar"
+  },
+  "AISummary": {
+    "Copy": "Copiar",
+    "EnableRequired": "Habilite las funciones de IA en Configuración → Funciones de IA para ver resúmenes de IA.",
+    "Error": "No se pudo cargar el resumen: {{error}}",
+    "Export": {
+      "HeadingActionItems": "Elementos de acción",
+      "HeadingKeyDecisions": "Decisiones clave",
+      "HeadingSummary": "Resumen",
+      "HeadingTranscription": "Transcripción"
+    },
+    "ExportJson": "Copiar como JSON",
+    "ExportMarkdown": "Copiar como descuento",
+    "ExportSrt": "Copiar como SRT",
+    "GeminiLiveTranscript": "Géminis en vivo",
+    "Generate": "Generar resumen",
+    "Maximize": "Ampliar a vista completa",
+    "Minimize": "Minimizar",
+    "NoActions": "No se identificaron elementos de acción.",
+    "NoChapters": "No hay capítulos disponibles.",
+    "NoDecisions": "No se identificaron decisiones clave.",
+    "NoSummary": "Aún no hay resumen de IA.",
+    "NoSummaryText": "Resumen no disponible.",
+    "NoTranscript": "Transcripción no disponible.",
+    "PipelineError": "El procesamiento de IA falló. Intenta regenerarte.",
+    "PipelineTranscript": "Canalización de IA",
+    "Processing": "Generando resumen...",
+    "Queued": "En cola para procesamiento...",
+    "Regenerate": "Regenerar resumen",
+    "Retry": "Rever",
+    "SeekToTimestamp": "Buscar esta marca de tiempo",
+    "SetupRequired": "Configure su clave API de Gemini en Configuración → Funciones de IA para habilitar resúmenes de IA.",
+    "Tab": {
+      "ActionItems": "Comportamiento",
+      "Chapters": "Capítulos",
+      "KeyDecisions": "Decisiones",
+      "Summary": "Resumen",
+      "Transcription": "Transcripción"
+    },
+    "TabTitle": "Resumen de IA",
+    "Topics": "Temas:",
+    "Speakers": "Oradores",
+    "MergeInto": "Combinar con…",
+    "ApplyMerge": "Aplicar",
+    "EditSegmentSpeaker": "Haga clic para reasignar este segmento"
   },
   "App": {
     "FailedToEnableFlashback": "No se pudo habilitar la retrospectiva: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "Todas las aplicaciones",
-    "Teams": "Microsoft Teams (Trabajo/Escuela)",
-    "TeamsConsumer": "Equipos de Microsoft (personales)",
-    "TeamsWeb": "Equipos de Microsoft (Web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Navegador Brave",
+    "CallOfDuty": "Obligaciones",
     "Chrome": "Navegador Chrome",
-    "Edge": "Navegador Edge",
-    "Firefox": "Navegador Firefox",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discordia (web)",
+    "Edge": "Navegador Edge",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Navegador Firefox",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Navegador Opera",
+    "Other": "Otras aplicaciones",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (web)",
-    "WindowsSoundRecorder": "Grabadora de sonidos de Windows",
-    "Other": "Otras aplicaciones",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Barra de juegos de Xbox",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Chat de Steam",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Navegador Opera",
-    "Brave": "Navegador Brave",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "Obligaciones",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Trabajo/Escuela)",
+    "TeamsConsumer": "Equipos de Microsoft (personales)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Equipos de Microsoft (Web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (web)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Grabadora de sonidos de Windows",
+    "XboxGameBar": "Barra de juegos de Xbox",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Captura de audio",
+    "AudioMix": "Mezcla de audio",
+    "AudioSource": "Fuente de audio:",
+    "Microphone": "micrófono",
+    "MicrophoneGainWarning": "Un nivel alto de ganancia en el micrófono puede captar la reproducción del altavoz incluso cuando \"Audio del sistema\" está apagado. Usa auriculares o reduce la ganancia del micrófono para grabaciones solo con micrófono.",
+    "RecordingDefaultMicrophone": "Micrófono predeterminado",
+    "RecordingSettings": "Configuración de grabación",
+    "RefreshMicrophoneList": "Actualizar lista de micrófonos"
   },
   "AutoDetectInfoModal": {
-    "Title": "Detección automática de reuniones",
-    "Subtitle": "Nunca Más Pierdas una Reunión",
-    "Description": "La detección automática inicia la grabación al unirte a reuniones, para que nunca olvides presionar grabar.",
-    "PopularAppsTitle": "Aplicaciones populares detectadas",
-    "MoreApps": "+40 más",
-    "HowItWorksTitle": "Cómo Funciona",
-    "Step1Title": "Habilitar Detección Automática",
-    "Step1Desc": "Activa el interruptor y selecciona qué aplicaciones monitorear",
-    "Step2Title": "Únete a una Reunión",
-    "Step2Desc": "Abre Zoom, Teams, Meet, o cualquier aplicación compatible",
-    "Step3Title": "Auto-Grabar",
-    "Step3Desc": "SeaMeet inicia la grabación automáticamente. ¡Listo!",
-    "Tip1Title": "Configurar por Aplicación",
-    "Tip1Desc": "Configura \"Siempre Grabar\" para reuniones de trabajo, \"Preguntar Cada Vez\" para llamadas personales",
-    "Tip2Title": "Múltiples Métodos de Detección",
-    "Tip2Desc": "Usa actividad del micrófono, títulos de ventana y URLs del navegador para precisión",
-    "GotIt": "Entendido",
-    "OpenSettings": "Abrir Configuración",
     "ControlLabel": "DETECCIÓN AUTOMÁTICA",
-    "LearnAbout": "Aprender sobre Detección Automática"
+    "Description": "La detección automática inicia la grabación al unirte a reuniones, para que nunca olvides presionar grabar.",
+    "GotIt": "Entendido",
+    "HowItWorksTitle": "Cómo Funciona",
+    "LearnAbout": "Aprender sobre Detección Automática",
+    "MoreApps": "+40 más",
+    "OpenSettings": "Abrir Configuración",
+    "PopularAppsTitle": "Aplicaciones populares detectadas",
+    "Step1Desc": "Activa el interruptor y selecciona qué aplicaciones monitorear",
+    "Step1Title": "Habilitar Detección Automática",
+    "Step2Desc": "Abre Zoom, Teams, Meet, o cualquier aplicación compatible",
+    "Step2Title": "Únete a una Reunión",
+    "Step3Desc": "SeaMeet inicia la grabación automáticamente. ¡Listo!",
+    "Step3Title": "Auto-Grabar",
+    "Subtitle": "Nunca Más Pierdas una Reunión",
+    "Tip1Desc": "Configura \"Siempre Grabar\" para reuniones de trabajo, \"Preguntar Cada Vez\" para llamadas personales",
+    "Tip1Title": "Configurar por Aplicación",
+    "Tip2Desc": "Usa actividad del micrófono, títulos de ventana y URLs del navegador para precisión",
+    "Tip2Title": "Múltiples Métodos de Detección",
+    "Title": "Detección automática de reuniones"
   },
   "AutoRecording": {
-    "Title": "Detectar reuniones automáticamente",
-    "DetectApps": "Detectar reuniones desde:",
-    "Enabled": "Detección automática activada",
-    "Disabled": "Detección automática desactivada",
-    "MeetingDetected": "¡Se detectó una reunión en {{{app}}}!",
-    "MeetingEnded": "Reunión finalizada",
-    "MeetingFallbackName": "Reunión",
     "BugReport": "¿Ves un error? Repórtalo a seameet@seasalt.ai",
     "BugReportTitle": "Reportar un error",
+    "Disabled": "Detección automática desactivada",
+    "Enabled": "Detección automática activada",
     "HelpWanted": "Si quieres solicitar que se agregue una nueva app, o ya verificaste que una app funciona, avísanos en seameet@seasalt.ai. ¡Agradecemos tu ayuda para mejorar esta app!",
-    "HelpWantedTitle": "Ayúdanos a mejorar"
+    "HelpWantedTitle": "Ayúdanos a mejorar",
+    "MeetingDetected": "¡Se detectó una reunión en {{{app}}}!",
+    "MeetingEnded": "Reunión finalizada",
+    "MeetingFallbackName": "Reunión"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole necesario para el audio del sistema",
-    "InstallInstructions": "Para grabar el audio del sistema en macOS, necesitas instalar el driver de audio virtual BlackHole:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "Copiar comando",
-    "Or": "o",
-    "DownloadManually": "Descarga manual desde existential.audio",
-    "SetupTitle": "Configurar dispositivo de salida múltiple",
-    "SetupStep1": "Abrir Configuración de audio MIDI (Aplicaciones → Utilidades)",
-    "SetupStep2": "Haz clic en '+' y selecciona 'Crear dispositivo de salida múltiple'",
-    "SetupStep3": "Verifica tanto tus altavoces/auriculares como 'BlackHole 2ch'",
-    "SetupStep4": "Haz clic derecho en el dispositivo de salida múltiple y selecciona 'Usar este dispositivo para salida de sonido'",
-    "SetupStep5": "Reinicia la computadora si BlackHole no aparece en la lista de dispositivos",
-    "SetupStep6": "Selecciona 'BlackHole 2ch' como tu fuente de audio en esta aplicación",
-    "CheckAgain": "Verificar de nuevo",
     "Cancel": "Cancelar",
-    "LearnMore": "Más información sobre Dispositivos de salida múltiple"
+    "CheckAgain": "Verificar de nuevo",
+    "CopyCommand": "Copiar comando",
+    "DownloadManually": "Descarga manual desde existential.audio",
+    "InstallInstructions": "Para grabar el audio del sistema en macOS, necesitas instalar el driver de audio virtual BlackHole:",
+    "LearnMore": "Más información sobre Dispositivos de salida múltiple",
+    "NotInstalled": "BlackHole necesario para el audio del sistema",
+    "Or": "o",
+    "SetupTitle": "Configurar dispositivo de salida múltiple"
   },
   "BluetoothWarningToast": {
-    "Title": "Micrófono Bluetooth detectado",
-    "Description": "Tu sistema operativo puede forzar tu audio a \"Modo de Comunicaciones\" al usar micrófonos Bluetooth, lo que puede causar distorsión o problemas de volumen durante la grabación.",
-    "RecommendationLabel": "Recomendación:",
-    "Recommendation": "Utiliza un micrófono que no sea Bluetooth (como tu micrófono integrado o un micrófono USB) para mejorar la calidad de grabación.",
+    "CloseAriaLabel": "Cerrar advertencia de Bluetooth",
     "CloseTitle": "Cerrar advertencia",
-    "CloseAriaLabel": "Cerrar advertencia de Bluetooth"
+    "Description": "Tu sistema operativo puede forzar tu audio a \"Modo de Comunicaciones\" al usar micrófonos Bluetooth, lo que puede causar distorsión o problemas de volumen durante la grabación.",
+    "Recommendation": "Utiliza un micrófono que no sea Bluetooth (como tu micrófono integrado o un micrófono USB) para mejorar la calidad de grabación.",
+    "RecommendationLabel": "Recomendación:",
+    "Title": "Micrófono Bluetooth detectado"
+  },
+  "Common": {
+    "ApplyName": "OK",
+    "Cancel": "Cancelar",
+    "Close": "Cerrar",
+    "Configure": "Configurar",
+    "Delete": "Eliminar",
+    "Done": "Listo",
+    "Expand": "Expandir",
+    "FileNameCopiedWithRenameHint": "{{fileName}} copiado al portapapeles. Haz doble clic para cambiar el nombre del archivo.",
+    "Loading": "Cargando…",
+    "Minimize": "Minimizar a icono circular",
+    "Open": "Abrir",
+    "Or": "O",
+    "Processing": "Procesando…",
+    "Recording": "Grabación",
+    "Save": "Guardar",
+    "Saved": "Guardado",
+    "Saving": "Guardando...",
+    "Screenshot": "Instantánea",
+    "Send": "Enviar",
+    "Starting": "Iniciando...",
+    "UnknownApp": "App desconocida"
   },
   "DeletePrompt": {
-    "Title": "Eliminar archivo",
-    "Message": "¿Estás seguro de que quieres eliminar este archivo? Esta acción no se puede deshacer.",
     "Cancel": "Cancelar",
-    "Confirm": "Eliminar"
+    "Confirm": "Eliminar",
+    "Message": "¿Estás seguro de que quieres eliminar este archivo? Esta acción no se puede deshacer.",
+    "Title": "Eliminar archivo"
   },
   "Errors": {
-    "NoAudioSources": "No hay fuentes de audio disponibles",
-    "NoSystemAudioSources": "No hay fuentes de audio del sistema disponibles",
+    "AutoRecordingFailed": "Error al alternar la auto-grabación",
     "FailedToStartRecording": "Error al iniciar la grabación: {{message}}",
     "FailedToStartVideoRecording": "Error al iniciar la grabación de video: {{message}}",
-    "AutoRecordingFailed": "Error al alternar la auto-grabación"
+    "NoAudioSources": "No hay fuentes de audio disponibles",
+    "NoSystemAudioSources": "No hay fuentes de audio del sistema disponibles",
+    "SaveFailed": "No se pudo guardar la grabación: {{message}}"
   },
   "Events": {
-    "Title": "Eventos",
-    "MarkToolbarButton": "Eventos destacados",
+    "EmptyWhenNotRecording": "No hay eventos disponibles para esta grabación.",
+    "EmptyWhileRecording": "Aún no hay eventos. Haz clic en 'Marca' durante la grabación para agregar uno.",
+    "EventLabel": "Evento {{number}}",
     "MarkButton": "Marca",
     "Marked": "Marcado",
-    "EventLabel": "Evento {{number}}",
-    "EmptyWhileRecording": "Aún no hay eventos. Haz clic en 'Marca' durante la grabación para agregar uno.",
-    "EmptyWhenNotRecording": "No hay eventos disponibles para esta grabación.",
-    "DeletePrompt": {
-      "Title": "Eliminar evento",
-      "Message": "¿Estás seguro de que deseas eliminar este evento? Esta acción no se podrá deshacer.",
-      "Cancel": "Cancelar",
-      "Confirm": "Eliminar"
-    }
+    "MarkToolbarButton": "Eventos destacados",
+    "Title": "Eventos"
+  },
+  "FileImport": {
+    "BrowseFiles": "Buscar archivos",
+    "DragDropFiles": "Arrastra y suelta tus archivos de audio, video e imágenes aquí",
+    "DragDropSubtitle": "Arrastra y suelta archivos de audio, video e imágenes aquí",
+    "ImportMedia": "Importar media",
+    "Supported": "Soportados: MP3, WAV, M4A, WebM, OGG, PNG, JPG y más",
+    "SupportedFormats": "Soportados: MP3, WAV, M4A, WebM, OGG, PNG, JPG y más",
+    "VideoImportCopying": "Copiando archivo de vídeo...",
+    "VideoImportSaving": "Guardando archivo de vídeo...",
+    "VideoUnsupported": "Es posible que este formato de vídeo no sea compatible con la aplicación. El archivo se importará de todas formas."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Retrospectiva de Audio",
+    "CannotChangeWhileRecording": "No se puede cambiar el modo de retrospectiva mientras se graba",
+    "DisableFlashback": "Desactivar Retrospectiva",
     "Label": "RETROSPECTIVA",
     "LearnAbout": "Aprender sobre Retrospectiva",
-    "DisableFlashback": "Desactivar Retrospectiva",
-    "AudioFlashback": "Retrospectiva de Audio",
-    "ScreenFlashback": "Retrospectiva de Pantalla",
-    "TitleReady": "Haz clic para mostrar la interfaz de Retrospectiva",
-    "TitleCharging": "Cargando retrospectiva",
-    "TitleInit": "Haz clic para empezar a cargar",
+    "Off": "Apagado",
     "Ready": "Listo",
     "ReadyQuestion": "¿Listo?",
-    "Off": "Apagado",
-    "CannotChangeWhileRecording": "No se puede cambiar el modo de retrospectiva mientras se graba",
-    "ToggleLabel": "Alternar retrospectiva",
-    "SettingsLabel": "Grabación Retrospectiva"
+    "ScreenFlashback": "Retrospectiva de Pantalla",
+    "SettingsLabel": "Grabación Retrospectiva",
+    "TitleCharging": "Cargando retrospectiva",
+    "TitleInit": "Haz clic para empezar a cargar",
+    "TitleReady": "Haz clic para mostrar la interfaz de Retrospectiva",
+    "ToggleLabel": "Alternar retrospectiva"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "Audio",
+    "Buffering": "Cargando",
+    "BufferingMoment": "Cargando momento…",
+    "Capturing": "Capturando…",
+    "DescCharging": "Preparando tu ventana de {{duration}} segundos... casi listo para capturar lo que puedas perder. Progreso {{progress}}%.",
+    "DescInit": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
+    "DescNone": "Graba tu pantalla, audio o toma una instantánea. Elige un modo de retrospectiva arriba para habilitar la conservación de momentos.",
+    "DescReady": "La retrospectiva está lista. Cada vez que presiones Grabar, se incluirán los últimos {{duration}} segundos de {{type}} — nunca vuelvas a lamentar un momento perdido.",
+    "FillingBuffer": "Rellenando buffer de retrospectiva de {{duration}}s... {{progress}}%",
+    "FlashbackBuffering": "Buffer...",
+    "FlashbackCharging": "Llenando buffer de {{seconds}}s... {{percent}}%",
+    "FlashbackChargingDescription": "Preparando tu ventana de {{seconds}}-retrospectiva... {{percent}}% completo.",
+    "FlashbackInitAudio": "¿Listo para guardar tu audio?",
+    "FlashbackInitDescription": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
+    "FlashbackInitScreen": "¿Listo para hacer una captura de pantalla?",
+    "FlashbackMismatch": "Desajuste en modo retrospectiva: la grabación de audio está activa, pero también lo está la retrospectiva de video. Por favor, desactiva la retrospectiva de video.",
+    "FlashbackOff": "La retrospectiva está actualmente desactivada. Inicia una grabación normal en cualquier momento, o:",
+    "FlashbackPrivacy": "Tu privacidad está protegida. Se almacena localmente en RAM.",
+    "FlashbackReady": "No te pierdas ningún momento.",
+    "FlashbackReadyDescription": "La retrospectiva está lista. Los últimos {{seconds}} de {{type}} están incluidos cuando grabas.",
+    "FlashbackReadyQuestion": "¿Listo?",
+    "KeepWindowVisible": "Mantener visible la ventana de SeaMeet al tomar una captura de pantalla.",
+    "NeverMissAMoment": "Nunca te pierdas un momento.",
+    "OpenFloater": "Abrir flotador",
+    "OpenLauncher": "Abrir lanzador",
+    "PrivacyDesc": "SeaMeet captura los últimos {{duration}}s de {{type}} en un buffer circular almacenado en la memoria RAM de tu computadora.",
+    "PrivacyProtected": "Tu privacidad está protegida.",
+    "Ready": "¿Listo?",
+    "ReadyToCapture": "SeaMeet está listo para capturar.",
+    "ReadyToGuard": "¿Listo para guardar tu {{type}}?",
+    "RecordWithFlashback": "Grabar con SeaMeet Flashback",
+    "SaveFlashback": "Guardar los últimos {{seconds}} segundos de retrospectiva",
+    "SaveLastFlashback": "Guardar los últimos {{duration}}s de retrospectiva",
+    "SavingFlashback": "Guardando retrospectiva…",
+    "Screen": "Pantalla",
+    "StartRecording": "Iniciar grabación",
+    "TakeScreenshot": "Tomar una captura de pantalla"
   },
   "FlashbackIndicator": {
     "Buffering": "Cargando",
@@ -183,138 +463,145 @@
     "VideoReady": "Video listo"
   },
   "FlashbackInfoModal": {
-    "Title": "Grabación Retrospectiva",
-    "Close": "Cerrar",
-    "Subtitle": "Tu máquina del tiempo personal",
-    "SubtitleDesc": "Nunca vuelvas a perder un momento importante—captura hasta 2 minutos del pasado, incluso después de que ocurrió.",
+    "Benefits": {
+      "AlwaysReady": "Siempre listo",
+      "LocalOnly": "Solo local (privacidad total)",
+      "MultipleCaptures": "Múltiples capturas - el búfer sigue ejecutándose",
+      "NoPlan": "No se requiere planificación",
+      "Offline": "Funciona sin conexión",
+      "Title": "Beneficios principales"
+    },
     "BestFor": "Mejor para:",
-    "VisualStates": {
-      "Title": "Indicadores visuales de estado",
-      "OffLabel": "APAGADO",
-      "Off": "Gris, forma de onda estática",
-      "ChargingLabel": "CARGANDO",
-      "Charging": "Ámbar/Amarillo, búfer en llenado",
-      "ReadyLabel": "LISTO",
-      "Ready": "Verde, búfer lleno"
-    },
-    "SpecLabel": {
-      "Buffer": "Búfer:",
-      "Memory": "Memoria:",
-      "Captures": "Capturas:"
-    },
-    "Modes": {
-      "Title": "Dos modos de retrospectiva",
-      "Audio": {
-        "Title": "Retrospectiva de Audio",
-        "Buffer": "30 segundos (fijo)",
-        "Memory": "~30-50 MB de RAM",
-        "Captures": "micrófono y/o audio del sistema",
-        "BestFor": "Para grabar reuniones, llamadas telefónicas y conversaciones de voz"
-      },
-      "Video": {
-        "Title": "Retrospectiva de Video",
-        "Buffer": "10s, 30s, 60s, 90s o 120s",
-        "Memory": "50-600 MB de memoria RAM",
-        "Captures": "Video de pantalla + audio",
-        "BestFor": "Presentaciones, momentos destacados de juegos, sesiones de compartir pantalla, contenido visual"
-      }
-    },
-    "HowItWorks": {
-      "Title": "Cómo funciona",
-      "Step1": {
-        "Title": "Habilitar Retrospectiva",
-        "Desc": "Haz clic en el botón RETROSPECTIVA para activarlo. El búfer empezará a llenarse automáticamente."
-      },
-      "Step2": {
-        "Title": "Espera a estar listo",
-        "Desc": "Observa el estado verde. El búfer debe llenarse hasta el 90% antes de que puedas capturar lo anterior."
-      },
-      "Step3": {
-        "Title": "Presiona Grabar",
-        "Desc": "Cuando ocurra algo importante, presiona Grabar. La retrospectiva captura el búfer y continúa grabando hacia adelante."
-      }
-    },
-    "Scenarios": {
-      "Title": "Escenarios prácticos",
-      "OhNo": {
-        "Title": "El momento \"¡Oh no!\"",
-        "Desc": "Un colega dice algo profundo. Te das cuenta de que quieres grabarlo. Presiona Grabación → la retrospectiva captura los últimos 30 segundos (¡incluyendo ese momento!)."
-      },
-      "Gaming": {
-        "Title": "Destacado de juego",
-        "Desc": "Logra un combo increíble. Presiona Grabación inmediatamente. La retrospectiva captura la jugabilidad hasta ese momento + tu reacción."
-      },
-      "Decision": {
-        "Title": "Decisión importante",
-        "Desc": "El abogado explica la cláusula del contrato. Presiona Grabación para capturar la explicación. Ten un registro completo y preciso para revisar después."
-      }
-    },
+    "Close": "Cerrar",
     "Comparison": {
-      "Title": "Retrospectiva vs. Grabación tradicional",
+      "Capture": {
+        "Feature": "Capturar momentos",
+        "Flashback": "Puede comenzar después del momento",
+        "Traditional": "Si olvidas, se pierde"
+      },
       "Header": {
         "Feature": "Característica",
-        "Traditional": "Grabación tradicional",
-        "Flashback": "Grabación retrospectiva"
+        "Flashback": "Grabación retrospectiva",
+        "Traditional": "Grabación tradicional"
       },
       "Planning": {
         "Feature": "Planificación",
-        "Traditional": "Debe comenzar antes del momento",
-        "Flashback": "No hace falta planificación"
-      },
-      "Capture": {
-        "Feature": "Capturar momentos",
-        "Traditional": "Si olvidas, se pierde",
-        "Flashback": "Puede comenzar después del momento"
+        "Flashback": "No hace falta planificación",
+        "Traditional": "Debe comenzar antes del momento"
       },
       "Result": {
         "Feature": "Resultado",
-        "Traditional": "\"Ojalá hubiera grabado eso\"",
-        "Flashback": "\"Me alegra haber capturado eso\""
-      }
-    },
-    "Benefits": {
-      "Title": "Beneficios principales",
-      "NoPlan": "No se requiere planificación",
-      "AlwaysReady": "Siempre listo",
-      "Offline": "Funciona sin conexión",
-      "LocalOnly": "Solo local (privacidad total)",
-      "MultipleCaptures": "Múltiples capturas - el búfer sigue ejecutándose"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "Retrospectiva de audio para uso diario",
-        "Desc": "Usa retrospectiva de audio de 30 segundos para reuniones y llamadas. Bajo consumo de memoria y funciona de manera confiable."
+        "Flashback": "\"Me alegra haber capturado eso\"",
+        "Traditional": "\"Ojalá hubiera grabado eso\""
       },
-      "VideoSpecial": {
-        "Title": "Retrospectiva de video para momentos especiales",
-        "Desc": "Habilita Retrospectiva de video (búfer de 30s) para presentaciones, momentos destacados de juegos o cualquier contenido visual que desees conservar."
-      },
-      "Memory": {
-        "Title": "Gestión de memoria",
-        "Desc": "Con 2 minutos de retrospectiva de video, toda la aplicación usa menos de 1 GB de RAM."
-      }
+      "Title": "Retrospectiva vs. Grabación tradicional"
     },
     "GotIt": "Entendido",
-    "OpenSettings": "Abrir Configuración"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Haz clic en el botón RETROSPECTIVA para activarlo. El búfer empezará a llenarse automáticamente.",
+        "Title": "Habilitar Retrospectiva"
+      },
+      "Step2": {
+        "Desc": "Observa el estado verde. El búfer debe llenarse hasta el 90% antes de que puedas capturar lo anterior.",
+        "Title": "Espera a estar listo"
+      },
+      "Step3": {
+        "Desc": "Cuando ocurra algo importante, presiona Grabar. La retrospectiva captura el búfer y continúa grabando hacia adelante.",
+        "Title": "Presiona Grabar"
+      },
+      "Title": "Cómo funciona"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Para grabar reuniones, llamadas telefónicas y conversaciones de voz",
+        "Buffer": "30 segundos (fijo)",
+        "Captures": "micrófono y/o audio del sistema",
+        "Memory": "~30-50 MB de RAM",
+        "Title": "Retrospectiva de Audio"
+      },
+      "Title": "Dos modos de retrospectiva",
+      "Video": {
+        "BestFor": "Presentaciones, momentos destacados de juegos, sesiones de compartir pantalla, contenido visual",
+        "Buffer": "10s, 30s, 60s, 90s o 120s",
+        "Captures": "Video de pantalla + audio",
+        "Memory": "50-600 MB de memoria RAM",
+        "Title": "Retrospectiva de Video"
+      }
+    },
+    "OpenSettings": "Abrir Configuración",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "El abogado explica la cláusula del contrato. Presiona Grabación para capturar la explicación. Ten un registro completo y preciso para revisar después.",
+        "Title": "Decisión importante"
+      },
+      "Gaming": {
+        "Desc": "Logra un combo increíble. Presiona Grabación inmediatamente. La retrospectiva captura la jugabilidad hasta ese momento + tu reacción.",
+        "Title": "Destacado de juego"
+      },
+      "OhNo": {
+        "Desc": "Un colega dice algo profundo. Te das cuenta de que quieres grabarlo. Presiona Grabación → la retrospectiva captura los últimos 30 segundos (¡incluyendo ese momento!).",
+        "Title": "El momento \"¡Oh no!\""
+      },
+      "Title": "Escenarios prácticos"
+    },
+    "SpecLabel": {
+      "Buffer": "Búfer:",
+      "Captures": "Capturas:",
+      "Memory": "Memoria:"
+    },
+    "Subtitle": "Tu máquina del tiempo personal",
+    "SubtitleDesc": "Nunca vuelvas a perder un momento importante—captura hasta 2 minutos del pasado, incluso después de que ocurrió.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Usa retrospectiva de audio de 30 segundos para reuniones y llamadas. Bajo consumo de memoria y funciona de manera confiable.",
+        "Title": "Retrospectiva de audio para uso diario"
+      },
+      "Memory": {
+        "Desc": "Con 2 minutos de retrospectiva de video, toda la aplicación usa menos de 1 GB de RAM.",
+        "Title": "Gestión de memoria"
+      },
+      "VideoSpecial": {
+        "Desc": "Habilita Retrospectiva de video (búfer de 30s) para presentaciones, momentos destacados de juegos o cualquier contenido visual que desees conservar.",
+        "Title": "Retrospectiva de video para momentos especiales"
+      }
+    },
+    "Title": "Grabación Retrospectiva",
+    "VisualStates": {
+      "Charging": "Ámbar/Amarillo, búfer en llenado",
+      "ChargingLabel": "CARGANDO",
+      "Off": "Gris, forma de onda estática",
+      "OffLabel": "APAGADO",
+      "Ready": "Verde, búfer lleno",
+      "ReadyLabel": "LISTO",
+      "Title": "Indicadores visuales de estado"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "Inicio",
-    "AutoStartLabel": "Retroalimentación de inicio automático",
+    "AutoStartAudio": "Función de retrospectiva de audio",
     "AutoStartDesc": "Iniciar la retrospectiva al lanzar la app",
     "AutoStartDisable": "Deshabilitar inicio automático",
-    "AutoStartAudio": "Función de retrospectiva de audio",
+    "AutoStartLabel": "Retroalimentación de inicio automático",
     "AutoStartScreen": "Retroalimentación de pantalla",
-    "BufferTitle": "Buffer",
-    "BufferDurationLabel": "Duración del buffer",
     "BufferDurationDesc": "Cuánto tiempo mantener el audio/video bufferizado",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "Duración del buffer",
+    "BufferTitle": "Buffer",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "Inicio"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "El buffer de retrospectiva está vacío. Inténtalo de nuevo en un momento.",
+    "EnableFlashback": "Habilitar retrospectiva para guardar un momento.",
+    "FailedToSave": "No se pudo guardar el buffer de retrospectiva.",
+    "SavedFlashback": "Retrospectiva guardada en Grabaciones.",
+    "StillCharging": "El buffer de retrospectiva todavía se está cargando."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Cerrar tooltip",
-    "BluetoothMicTitle": "⚠️ Microphone Bluetooth",
     "BluetoothMicDesc": "Tu sistema operativo puede forzar \"Modo de comunicaciones\", lo cual puede causar distorsión.",
     "BluetoothMicTipLabel": "Consejo:",
     "BluetoothMicTipText": "Utiliza un micrófono no Bluetooth para mejor calidad.",
+    "BluetoothMicTitle": "⚠️ Microphone Bluetooth",
+    "CloseTooltip": "Cerrar tooltip",
     "FailedToLoadScreens": "No se pudo cargar pantallas. Por favor, inténtalo de nuevo.",
     "FailedToLoadWindows": "No se pudo cargar las ventanas. Por favor, intente nuevamente.",
     "MicrophoneMuted": "Micrófono silenciado",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "No se encontraron micrófonos",
     "NoScreensDetected": "No se detectaron pantallas.",
     "NoWindowsDetected": "No se detectaron ventanas. Abra una ventana de la aplicación y actualice para volver a detectar.",
+    "RegionReady": "Región lista",
+    "RegionRequired": "Elija una región antes de grabar",
+    "RegionSize": "{{width}} × {{height}} px",
     "ScreenNotAvailable": "La selección de pantalla no está disponible en esta plataforma.",
     "SelectMicrophone": "Seleccione un micrófono",
+    "SelectRegion": "Seleccione una región",
+    "SelectScreen": "Selecciona una pantalla",
+    "SelectWindow": "Seleccione una ventana",
     "StartRecording": "Iniciar grabación",
     "SystemAudioOff": "Audio del sistema: APAGADO",
     "SystemAudioOn": "Audio del sistema: ENCENDIDO",
     "WaitingForRegion": "Esperando por la región…",
     "WindowNotAvailable": "La selección de ventana no está disponible en esta plataforma.",
-    "SelectScreen": "Selecciona una pantalla",
-    "SelectWindow": "Seleccione una ventana",
-    "WindowRequired": "Seleccione una ventana antes de grabar",
-    "RegionReady": "Región lista",
-    "SelectRegion": "Seleccione una región",
-    "RegionSize": "{{width}} × {{height}} px",
-    "RegionRequired": "Elija una región antes de grabar"
+    "WindowRequired": "Seleccione una ventana antes de grabar"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Pantalla completa seleccionada",
-    "ClickToRecord": "Haz clic en 'Iniciar grabación' en la barra flotante para grabar la región seleccionada"
+    "ClickToRecord": "Haz clic en 'Iniciar grabación' en la barra flotante para grabar la región seleccionada",
+    "FullscreenSelected": "Pantalla completa seleccionada"
+  },
+  "GeminiLive": {
+    "AITranscription": "Transcripción de IA",
+    "CollapseNowSpeaking": "Colapsar",
+    "EnableDescription": "Transcripción en tiempo real impulsada por Gemini durante la grabación",
+    "EnableIntegration": "Habilitar la transcripción de IA en vivo",
+    "Error": "Error",
+    "ExpandNowSpeaking": "Expandir",
+    "NowSpeaking": "Ahora hablando...",
+    "SegmentCount_one": "{{count}} segmentos",
+    "SegmentCount_other": "{{count}} segmentos",
+    "WaitingForConnection": "Conectando...",
+    "WaitingForSpeech": "Esperando discurso..."
   },
   "IdleCompactView": {
     "ArmFlashback": "Iniciar retrospectiva",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Copiar email",
     "EmailCopied": "✅ Email copiado al portapapeles"
   },
-  "JumpList": {
-    "RecordAudio": "Grabar audio",
-    "RecordAudioDesc": "Grabar audio (mezclado)",
-    "RecordFullscreen": "Comenzar grabación de pantalla completa",
-    "RecordFullscreenDesc": "Iniciar grabación de video en pantalla completa",
-    "RecordRegion": "Seleccionar una región de la pantalla para grabar",
-    "RecordRegionDesc": "Selecciona una región de la pantalla para grabar",
-    "TakeScreenshot": "Tomar captura",
-    "TakeScreenshotDesc": "Capturar una región de la pantalla",
-    "OpenRecordingsFolder": "Abrir la carpeta de grabaciones",
-    "OpenRecordingsFolderDesc": "Abrir la carpeta predeterminada de grabaciones"
-  },
   "MeetingPrompt": {
-    "StartTitle": "Reunión detectada",
-    "StartMessage": "¿Tienes una reunión en {{appName}}? ¿Quieres que inicie la grabación ahora mismo?",
     "BrowserHint": "💡 Consejo: para reuniones en navegador (Google Meet, Zoom, Teams), solo puedo detectar el navegador, no el sitio web específico.",
-    "RememberChoice": "Recuerda mi elección y no volver a preguntar",
-    "Yes": "\"Iniciar grabación\"",
-    "No": "Cancelar",
-    "EndTitle": "\"Reunión terminada\"",
-    "EndMessage": "He detectado que la reunión en {{appName}} terminó. ¿Quieres que detenga la grabación?",
     "ContinueRecording": "\"Seguir grabando\"",
+    "EndMessage": "He detectado que la reunión en {{appName}} terminó. ¿Quieres que detenga la grabación?",
+    "EndTitle": "\"Reunión terminada\"",
+    "No": "Cancelar",
     "Pause": "Pausar",
-    "Resume": "Reanudar",
-    "Stop": "Parar",
+    "PlayRecording": "Reproducir la grabación",
     "RecordingSaved": "Grabación guardada",
     "RecordingSavedWithFilename": "{{fileName}} guardado",
+    "RememberChoice": "Recuerda mi elección y no volver a preguntar",
     "RenameFile": "\"Renombrar archivo\"",
     "ShowInFolder": "Mostrar en carpeta",
-    "PlayRecording": "Reproducir la grabación",
+    "StartMessage": "¿Tienes una reunión en {{appName}}? ¿Quieres que inicie la grabación ahora mismo?",
+    "StartTitle": "Reunión detectada",
     "StopRecording": "Detener grabación",
-    "Saving": "Guardando..."
+    "Yes": "\"Iniciar grabación\""
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Elementos de acción",
+    "CollapseNowSpeaking": "Minimizar ahora hablando",
+    "ConnectionError": "No se pudo conectar a SeaMeet",
+    "Content": "Contenido de SeaMeet",
+    "DueDate": "Fecha límite: {{date}}",
+    "EnableIntegration": "Habilitar transcripción de SeaMeet",
+    "ExpandNowSpeaking": "Expandir para hablar ahora",
+    "FetchError": "No se pudieron cargar las transcripciones",
+    "LanguageHint": "Puedes cambiar el idioma durante la grabación",
+    "LiveTranscription": "Transcripción en tiempo real",
+    "LoadingContent": "Cargando contenido de SeaMeet...",
+    "LoadingTranscript": "Cargando transcripción...",
+    "NoActionItems": "Sin acciones para esta reunión",
+    "NoNotes": "Sin notas para esta reunión",
+    "NoSummary": "El resumen aún no está disponible.",
+    "Notes": "Notas",
+    "NoTranscript": "No hay transcripciones disponibles",
+    "NoTranslation": "Sin traducción",
+    "NowSpeaking": "Ahora hablando...",
+    "Retry": "Reintentar",
+    "SeekToTime": "Haz clic para reproducir desde este momento",
+    "SegmentCount_one": "{{count}} segmentos",
+    "SegmentCount_other": "{{count}} segmentos",
+    "SignInRequired": "Se requiere iniciar sesión",
+    "Summary": "Resumen",
+    "Transcribed": "Transcripción completa",
+    "Transcript": "Transcripción",
+    "TranscriptionLanguage": "Idioma de transcripción",
+    "TranslationLanguage": "Idioma de traducción",
+    "UnknownSpeaker": "Ponente",
+    "WaitingForSpeech": "Esperando hablar..."
   },
   "MinimizedView": {
     "ActionRequired": "Acción requerida (Auto-Record)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Cargando la retrospectiva de pantalla…",
     "ScreenRecording": "Grabación de pantalla ({{time}})"
   },
+  "Pause": "Pausa",
   "Permissions": {
-    "AutoRecordNextTime": "¿Quieres autograbar esta app la próxima vez?",
     "AlwaysAutoRecord": "Siempre auto grabación",
-    "NeverRecord": "Nunca grabar",
     "AskEveryTime": "Preguntar siempre",
-    "AutoRecordStarted": "grabación automática iniciada",
+    "AutoRecordNextTime": "¿Quieres autograbar esta app la próxima vez?",
     "AutoRecordReason": "{{app}} está configurado para grabar automáticamente en Todo momento. Cambia el permiso de grabación en Configuración -> Autograbar.",
-    "ChangeInSettings": "Cambio en Configuración",
-    "GuidanceTitle": "Tipos de permisos de la app",
+    "AutoRecordStarted": "grabación automática iniciada",
+    "AutoStartAudioRule": "Si el modo de grabación predeterminado es audio, SeaMeet comenzará a grabar inmediatamente sin solicitar permiso.",
+    "AutoStartFallbackRule": "En todos los demás casos, SeaMeet mostrará el selector de modo de grabación para que puedas elegir.",
+    "AutoStartFullscreenRule": "Si el modo de grabación predeterminado es Pantalla completa y solo hay una pantalla conectada, SeaMeet comienza a grabar automáticamente.",
+    "AutoStartHeuristicsTitle": "Comportamiento de autoinicio (Siempre Autograbar)",
     "GuidanceAlways": ": SeaMeet grabará automáticamente sin solicitar confirmación",
     "GuidanceAsk": ": SeaMeet te pedirá permiso para grabar cada vez",
     "GuidanceNever": "SeaMeet no solicitará permisos para grabar",
-    "AutoStartHeuristicsTitle": "Comportamiento de autoinicio (Siempre Autograbar)",
-    "AutoStartAudioRule": "Si el modo de grabación predeterminado es audio, SeaMeet comenzará a grabar inmediatamente sin solicitar permiso.",
-    "AutoStartFullscreenRule": "Si el modo de grabación predeterminado es Pantalla completa y solo hay una pantalla conectada, SeaMeet comienza a grabar automáticamente.",
-    "AutoStartFallbackRule": "En todos los demás casos, SeaMeet mostrará el selector de modo de grabación para que puedas elegir."
+    "GuidanceTitle": "Tipos de permisos de la app",
+    "NeverRecord": "Nunca grabar"
+  },
+  "PipelineStatus": {
+    "Done": "Resumen listo",
+    "Error": "Error de procesamiento",
+    "Progress": "Procesando fragmento {{current}} de {{total}}",
+    "Queued": "Resumen en cola...",
+    "Running": "Generando resumen..."
   },
   "Player": {
     "Mute": "Silenciar",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Cerrar reproducción",
-    "MoreOptions": "Más opciones",
-    "CodecInfo": "Información del códec"
+    "CodecInfo": "Información del códec",
+    "MoreOptions": "Más opciones"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Grabación de audio",
+    "ContinueRecording": "Continuar grabación",
+    "RecordingAudio": "grabando audio…",
+    "RecordingMode": "Modo de grabación",
+    "RecordingPreview": "Vista previa de grabación",
+    "RecordingScreen": "grabando pantalla…",
+    "StartRecording": "Iniciar grabación",
+    "Stop": "Detener",
+    "StopRecording": "Detener grabación",
+    "VideoRecording": "Grabación de video"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Captura de área",
+    "CaptureMode": "Modo de captura",
+    "FullScreen": "Pantalla completa",
+    "RecordAudio": "Audio",
+    "RecordAudioTip": "Solo audio",
+    "RecordFullscreen": "Pantalla completa",
+    "RecordFullscreenTip": "Captura toda tu pantalla",
+    "RecordRegion": "Región",
+    "RecordRegionTip": "Captura una región personalizada",
+    "RecordWindow": "Ventana",
+    "RecordWindowTip": "Captura de una ventana de aplicación individual"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Copiar nombre del archivo",
+    "CopyFilePath": "Copiar ruta del archivo",
+    "FileNameCopied": "{{fileName}} copiado al portapapeles",
+    "FilePathCopied": "Ruta del archivo copiada al portapapeles",
+    "OpenSaveFolder": "Abrir carpeta",
+    "RecentCaptures": "Capturas recientes",
+    "Recovered_one": "{{count}} grabación recuperada",
+    "Recovered_other": "{{count}} grabaciones recuperadas",
+    "RefreshRecordings": "Refrescar",
+    "SaveAs": "Guardar como",
+    "SearchRecordingsOrSnapshots": "Buscar grabaciones y instantáneas",
+    "ShowInFolder": "Mostrar en carpeta"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "Archivo",
-    "Microphone": "Micrófono",
-    "App": "{{appName}}"
+    "Microphone": "Micrófono"
   },
   "RegionSelector": {
     "CaptureButton": "Capturar pantalla o presionar Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Monitor",
     "PrimaryMonitor": "Monitor principal"
   },
-  "Reliability": {
-    "Stable": "Estable",
-    "Experimental": "En fase experimental",
-    "NotTested": "No probado"
-  },
+  "Resume": "Reanudar",
   "RingMenu": {
+    "AutoDetectOff": "Detección automática: DESACTIVADA",
+    "AutoDetectOn": "Detección automática: ACTIVADA",
     "FlashbackCharging": "Retrospectiva cargando...",
     "FlashbackNotCharged": "Flashback no cargada; haz clic una vez para cargar la retrospectiva de audio, doble clic para cargar la retrospectiva de pantalla",
     "FlashbackSaveTooltip": "Haz clic simple para guardar la última {{duration}}s {{mode}} retrospectiva. Doble clic para continuar grabando desde aquí.",
-    "RecordRegion": "Grabar región",
-    "RecordFullscreen": "Grabación de pantalla completa",
-    "TakeScreenshot": "Tomar instantánea",
-    "AutoDetectOn": "Detección automática: ACTIVADA",
-    "AutoDetectOff": "Detección automática: DESACTIVADA",
     "RecordAudio": "Grabar audio",
-    "RecordWindow": "Ventana de grabación"
+    "RecordFullscreen": "Grabación de pantalla completa",
+    "RecordRegion": "Grabar región",
+    "RecordWindow": "Ventana de grabación",
+    "TakeScreenshot": "Tomar instantánea"
   },
   "ScreenPicker": {
-    "Title": "Selecciona una pantalla",
     "Instruction": "Selecciona la pantalla que deseas grabar para grabaciones en pantalla completa.",
-    "Refresh": "Actualizar",
-    "Refreshing": "Actualizando…",
     "Loading": "Cargando pantallas…",
     "None": "No se detectaron pantallas. Por favor, abre una aplicación y actualiza.",
+    "Refresh": "Actualizar",
+    "Refreshing": "Actualizando…",
+    "Title": "Selecciona una pantalla",
     "Unknown": "Pantalla sin título"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Análisis",
+    "ButtonLabel": "Proceso con IA",
+    "Custom": "Mensaje personalizado",
+    "CustomPlaceholder": "Pregunta cualquier cosa sobre esta imagen...",
+    "Describe": "Describir imagen",
+    "DescribeSub": "¿Qué hay en esta captura de pantalla?",
+    "Description": "Descripción",
+    "ExtractedText": "Texto extraído",
+    "Ocr": "Extraer texto (OCR)",
+    "OcrSub": "Leer todo el texto visible",
+    "PipelineError": "El procesamiento de IA falló. Por favor inténtalo de nuevo.",
+    "ProcessingWithTime": "Procesando... {{sec}}s",
+    "Queuing": "Cola...",
+    "ResultLabel": "Resultado de IA",
+    "UnknownError": "Error desconocido"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "¡Copiado!",
     "CopyFailed": "Error al copiar la captura de pantalla al portapapeles",
     "CopyToClipboard": "OK",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Eliminar",
     "Dimensions": "OK",
     "FileSize": "Tamaño del archivo",
-    "Filename": "OK",
     "OpenInSystemViewer": "Abrir en visor del sistema",
-    "Rename": "Renombrar",
     "ScreenshotCopied": "¡Captura copiada al portapapeles",
     "Share": "Compartir",
     "ShareCompleted": "Compartir completado",
     "ShareFailed": "La función de compartir no es compatible en este navegador. Abre la captura de pantalla manualmente para compartir.",
-    "ShareNotSupported": "La función de compartir nativa no es compatible en esta plataforma. Usa \"Copiar al portapapeles\" en su lugar.",
     "Sharing": "Compartiendo...",
-    "Timestamp": "OK",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "Configuraciones",
     "About": {
       "CheckForUpdates": "Comprobar actualizaciones",
       "CheckingUpdates": "Comprobando actualizaciones...",
-      "UpdateAvailable": "Nueva versión {{version}} disponible",
-      "UpdateReady": "La versión {{version}} está lista para instalarse",
-      "NoUpdatesAvailable": "No hay actualizaciones disponibles",
       "InstallNow": "Instalar ahora",
-      "TermsOfService": "Términos del servicio",
-      "PrivacyPolicy": "Política de privacidad",
       "LegalToggle": {
+        "FullVersion": "Versión completa",
         "OneSentence": "1‑Oración",
-        "TLDR": "TLDR",
-        "FullVersion": "Versión completa"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet es una grabadora gratuita, enfocada en la privacidad, que no requiere cuenta para uso local, tus datos permanecen tuyos, las funciones en la nube son opcionales, y debes obtener el consentimiento antes de grabar.",
-        "TLDRTitle": "Términos de SeaMeet — Resumen rápido para Humanos Ocupados",
-        "TLDRItems": [
-          "SeaMeet Desktop es gratis — todas las funciones no‑IA funcionan sin necesidad de cuenta ni inicio de sesión.",
-          "Obtén consentimiento antes de realizar grabaciones — SeaMeet no verifica esto por ti.",
-          "Tus grabaciones y transcripciones son de tu propiedad; SeaMeet solo las procesa para funcionar como servicio.",
-          "Las funciones en la nube requieren una cuenta de usuario y almacenan datos en los servidores de SeaMeet.",
-          "Los diagnósticos anónimos son opcionales y pueden ser desactivados en cualquier momento.",
-          "No hagas un uso indebido de la aplicación (sin uso ilegal, sin hacking).",
-          "El servicio puede cambiar, y la responsabilidad es limitada."
-        ]
-      },
+      "NoUpdatesAvailable": "No hay actualizaciones disponibles",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop mantiene todo lo relacionado con las grabaciones en tu dispositivo, completamente local y privado, y no requiere cuenta. Las funciones en la nube son opcionales, encriptadas y completamente bajo tu control.",
-        "TLDRTitle": "Privacidad de SeaMeet — Resumen rápido para personas ocupadas",
         "TLDRItems": [
           "SeaMeet Desktop es privada por diseño: todo se mantiene en tu dispositivo; no recopilamos audio, video, contenido de pantalla ni datos de reuniones.",
           "No es necesario tener cuenta para usar las funciones no‑IA de la aplicación de escritorio.",
@@ -530,734 +883,299 @@
           "Las integraciones de terceros son opcionales y completamente revocables.",
           "No comercializamos datos, y las grabaciones en la nube están encriptadas.",
           "Tú controlas tus datos — elimina grabaciones en cualquier momento o solicita eliminación total."
-        ]
+        ],
+        "TLDRTitle": "Privacidad de SeaMeet — Resumen rápido para personas ocupadas"
       },
+      "PrivacyPolicy": "Política de privacidad",
       "PrivacySecurity": {
-        "Title": "PRIVACIDAD Y SEGURIDAD",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Auto-detecta nunca iniciará una grabación automáticamente sin tu aprobación explícita.",
+            "Title": "Se requiere aprobación explícita"
+          },
           "MicrophoneActivity": {
-            "Title": "Solo uso del micrófono",
-            "Description": "Auto-detecta y monitoriza el uso de tu micrófono para inferir qué app lo utiliza. No se captura ningún dato."
+            "Description": "Auto-detecta y monitoriza el uso de tu micrófono para inferir qué app lo utiliza. No se captura ningún dato.",
+            "Title": "Solo uso del micrófono"
           },
           "NoDataAccess": {
-            "Title": "Sin acceso a datos",
-            "Description": "auto-detecta solo detecta si el micrófono está siendo utilizado o no. NO accede a ningún dato grabado."
-          },
-          "ExplicitApproval": {
-            "Title": "Se requiere aprobación explícita",
-            "Description": "Auto-detecta nunca iniciará una grabación automáticamente sin tu aprobación explícita."
+            "Description": "auto-detecta solo detecta si el micrófono está siendo utilizado o no. NO accede a ningún dato grabado.",
+            "Title": "Sin acceso a datos"
           },
           "NoDataCollection": {
-            "Title": "Sin recopilación de datos",
-            "Description": "SeaMeet no recopila ningún dato de la función de detección automática sin tu consentimiento."
+            "Description": "SeaMeet no recopila ningún dato de la función de detección automática sin tu consentimiento.",
+            "Title": "Sin recopilación de datos"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "Solo local",
-            "Description": "retrospective funciona completamente en tu máquina local. Nada se sincroniza con la nube."
+          "EthicalUse": {
+            "Description": "Siempre informa y obtiene el consentimiento de otros antes de usar Flashback para grabarlos.",
+            "Title": "Uso ético"
           },
-          "RAMOnly": {
-            "Title": "Solo RAM / RAM únicamente",
-            "Description": "Todos los datos permanecen en memoria. Nada se escribe en el disco a menos que guardes una retrospectiva grabación."
+          "LocalOnly": {
+            "Description": "retrospective funciona completamente en tu máquina local. Nada se sincroniza con la nube.",
+            "Title": "Solo local"
           },
           "Protected": {
-            "Title": "Protegido",
-            "Description": "Tu privacidad y seguridad son primordiales. Tus datos nunca salen de tu dispositivo."
+            "Description": "Tu privacidad y seguridad son primordiales. Tus datos nunca salen de tu dispositivo.",
+            "Title": "Protegido"
           },
-          "EthicalUse": {
-            "Title": "Uso ético",
-            "Description": "Siempre informa y obtiene el consentimiento de otros antes de usar Flashback para grabarlos."
+          "RAMOnly": {
+            "Description": "Todos los datos permanecen en memoria. Nada se escribe en el disco a menos que guardes una retrospectiva grabación.",
+            "Title": "Solo RAM / RAM únicamente"
           }
-        }
-      }
+        },
+        "Title": "PRIVACIDAD Y SEGURIDAD"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet es una grabadora gratuita, enfocada en la privacidad, que no requiere cuenta para uso local, tus datos permanecen tuyos, las funciones en la nube son opcionales, y debes obtener el consentimiento antes de grabar.",
+        "TLDRItems": [
+          "SeaMeet Desktop es gratis — todas las funciones no‑IA funcionan sin necesidad de cuenta ni inicio de sesión.",
+          "Obtén consentimiento antes de realizar grabaciones — SeaMeet no verifica esto por ti.",
+          "Tus grabaciones y transcripciones son de tu propiedad; SeaMeet solo las procesa para funcionar como servicio.",
+          "Las funciones en la nube requieren una cuenta de usuario y almacenan datos en los servidores de SeaMeet.",
+          "Los diagnósticos anónimos son opcionales y pueden ser desactivados en cualquier momento.",
+          "No hagas un uso indebido de la aplicación (sin uso ilegal, sin hacking).",
+          "El servicio puede cambiar, y la responsabilidad es limitada."
+        ],
+        "TLDRTitle": "Términos de SeaMeet — Resumen rápido para Humanos Ocupados"
+      },
+      "TermsOfService": "Términos del servicio",
+      "UpdateAvailable": "Nueva versión {{version}} disponible",
+      "UpdateReady": "La versión {{version}} está lista para instalarse"
     },
-    "General": "General",
-    "Storage": {
-      "Title": "Configuración de almacenamiento",
-      "Description": "Elija la carpeta predeterminada que SeaMeet usa para guardar grabaciones automáticamente.",
-      "DefaultPathLabel": "Carpeta de almacenamiento predeterminada",
-      "Browse": "Buscar...",
-      "Save": "Guardar",
-      "RecordingNameLabel": "Nombre de grabación"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Modo de grabación predeterminado",
+      "DeleteTooltip": "Resta a \"Preguntar siempre\"",
+      "EmptyState": "Aún no se detectaron aplicaciones. Cuando SeaMeet detecte una app usando tu micrófono, aparecerá aquí.",
+      "PathCopied": "Ruta copiada al portapapeles",
+      "PermissionHeader": "Permisos de la aplicación",
+      "Title": "Permisos de la aplicación"
     },
-    "ProfileSettings": "Configuraciones del perfil",
-    "AccountPreferences": "Preferencias de la cuenta",
-    "ProfileSettingsDescription": "Administra la información de tu perfil",
-    "AccountPreferencesDescription": "Administrar tus preferencias de usuario",
-    "SettingsFileLocation": "Ubicación del archivo de configuración",
-    "SettingsFileDescription": "La configuración se almacena en un archivo JSON único para facilitar su copia de seguridad y gestión",
     "Back": "Atrás",
-    "OpenFolder": "Abrir carpeta",
     "DefaultUserName": "Usuario de SeaMeet",
-    "UserAvatarAlt": "Avatar de usuario",
+    "FailedToCheckForUpdates": "No se pudo verificar si hay actualizaciones disponibles",
     "GroupTitle": {
-      "Account": "Cuenta",
-      "General": "General",
-      "Automation": "Automatización",
-      "RecordingStorage": "Almacenamiento de grabaciones",
-      "Configuration": "Configuración",
       "ApplicationInfo": "Información de la aplicación",
-      "Legal": "Legal"
+      "Automation": "Automatización",
+      "Configuration": "Configuración",
+      "General": "General",
+      "Legal": "Legal",
+      "RecordingStorage": "Almacenamiento de grabaciones"
     },
     "Item": {
-      "EditProfile": "Editar perfil",
-      "Account": "Cuenta",
-      "LogOut": "Cerrar sesión",
-      "Language": "Idioma",
+      "AutoRecording": "Grabación automática",
+      "Copyright": "Derechos de autor",
       "ImproveTranslationHint": "Ayuda a mejorar esta traducción en GitHub →",
-      "Theme": "Tema",
-      "KeyboardShortcuts": "Atajos de teclado",
+      "Language": "Idioma",
       "MicrophoneGain": "Ganancia del micrófono",
       "StartAtLogin": "Iniciar automáticamente al abrir",
-      "AutoRecording": "Grabación automática",
       "Storage": "Almacenamiento",
-      "Copyright": "Derechos de autor"
+      "Theme": "Tema"
     },
     "MicGain": {
-      "Minimal": "Mínimo (0.1x)",
-      "Quiet": "Silencioso (0,5x)",
-      "Normal": "Normal (1x)",
       "Loud": "Fuerte (5x)",
-      "Louder": "Aumentar (10x)"
+      "Louder": "Aumentar (10x)",
+      "Minimal": "Mínimo (0.1x)",
+      "Normal": "Normal (1x)",
+      "Quiet": "Silencioso (0,5x)"
+    },
+    "OpenFolder": "Abrir carpeta",
+    "PageTitle": {
+      "About": "Acerca de",
+      "AutoRecording": "Grabación automática",
+      "Flashback": "Grabación retrospectiva",
+      "Storage": "Almacenamiento"
+    },
+    "SettingsFileLocation": "Ubicación del archivo de configuración",
+    "Storage": {
+      "Browse": "Buscar...",
+      "DefaultPathLabel": "Carpeta de almacenamiento predeterminada",
+      "Description": "Elija la carpeta predeterminada que SeaMeet usa para guardar grabaciones automáticamente.",
+      "Save": "Guardar",
+      "Title": "Configuración de almacenamiento"
     },
     "Theme": {
+      "AdobeSand": "Arena Adobe",
+      "AdobeSandDesc": "Modo claro con tonos terrosos cálidos",
+      "AzureLight": "Azul Claro",
+      "AzureLightDesc": "Modo claro azul fresco",
+      "CloudCanvas": "Lienzo Nube",
+      "CloudCanvasDesc": "Modo claro menta fresca",
+      "ColumnDark": "Oscuro",
+      "ColumnLight": "Claro",
+      "CyberCobalt": "Cobalto Cyber",
+      "CyberCobaltDesc": "Modo oscuro cian neón",
+      "Dark": "Oscuro",
+      "DarkDesc": "Modo oscuro",
       "Device": "Dispositivo",
       "DeviceDesc": "Seguir configuración del sistema operativo",
       "Light": "Claro",
       "LightDesc": "Modo claro",
-      "Dark": "Oscuro",
-      "DarkDesc": "Modo oscuro",
-      "Pink": "Rosa oscuro",
-      "PinkDesc": "Modo rosa oscuro",
       "LightPink": "Rosa claro",
       "LightPinkDesc": "Modo rosa claro",
-      "ColumnLight": "Claro",
-      "ColumnDark": "Oscuro",
-      "AzureLight": "Azul Claro",
-      "AzureLightDesc": "Modo claro azul fresco",
-      "WarmPaper": "Papel Cálido",
-      "WarmPaperDesc": "Modo claro con tonos de papel cálido",
-      "SynthwaveLight": "Synthwave Claro",
-      "SynthwaveLightDesc": "Modo claro synthwave vibrante",
       "MidnightBlue": "Azul Medianoche",
       "MidnightBlueDesc": "Modo oscuro azul profundo",
-      "CloudCanvas": "Lienzo Nube",
-      "CloudCanvasDesc": "Modo claro menta fresca",
-      "CyberCobalt": "Cobalto Cyber",
-      "CyberCobaltDesc": "Modo oscuro cian neón",
-      "AdobeSand": "Arena Adobe",
-      "AdobeSandDesc": "Modo claro con tonos terrosos cálidos"
+      "Pink": "Rosa oscuro",
+      "PinkDesc": "Modo rosa oscuro",
+      "SynthwaveLight": "Synthwave Claro",
+      "SynthwaveLightDesc": "Modo claro synthwave vibrante",
+      "WarmPaper": "Papel Cálido",
+      "WarmPaperDesc": "Modo claro con tonos de papel cálido"
     },
-    "PageTitle": {
-      "Flashback": "Grabación retrospectiva",
-      "About": "Acerca de",
-      "AutoRecording": "Grabación automática",
-      "Storage": "Almacenamiento"
-    },
-    "FailedToCheckForUpdates": "No se pudo verificar si hay actualizaciones disponibles",
-    "AppPermissions": {
-      "Title": "Permisos de la aplicación",
-      "Description": "Gestiona qué aplicaciones pueden grabar automáticamente cuando se detecte el uso de tu micrófono.",
-      "EmptyState": "Aún no se detectaron aplicaciones. Cuando SeaMeet detecte una app usando tu micrófono, aparecerá aquí.",
-      "DeleteTooltip": "Resta a \"Preguntar siempre\"",
-      "PathCopied": "Ruta copiada al portapapeles",
-      "PermissionHeader": "Permisos de la aplicación",
-      "DefaultRecordingMode": "Modo de grabación predeterminado"
-    }
+    "Title": "Configuraciones",
+    "UserAvatarAlt": "Avatar de usuario"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Mostrar ventana flotante",
-    "OpenLauncher": "Abrir lanzador",
-    "RecordAudio": "Grabación de audio",
-    "RecordFullscreen": "Grabar en pantalla completa",
-    "RecordWindow": "Grabar ventana activa",
-    "RecordRegion": "Grabación de región",
     "CaptureScreenshot": "Capturar pantalla",
-    "RestoreDefaults": "Restaurar valores por defecto",
-    "RecordingPrompt": "Escuchando… presiona la nueva tecla rápida",
     "ConflictWarning": "Este atajo ya está en uso por otra aplicación y no puede registrarse.",
     "GenericError": "No se pudo actualizar el acceso directo.",
     "None": "Nada",
-    "SpaceKey": "Tecla Espacio"
+    "OpenLauncher": "Abrir lanzador",
+    "RecordAudio": "Grabación de audio",
+    "RecordFullscreen": "Grabar en pantalla completa",
+    "RecordingPrompt": "Escuchando… presiona la nueva tecla rápida",
+    "RecordRegion": "Grabación de región",
+    "RecordWindow": "Grabar ventana activa",
+    "RestoreDefaults": "Restaurar valores por defecto",
+    "SpaceKey": "Tecla Espacio",
+    "ToggleFloatingWindow": "Mostrar ventana flotante"
   },
   "Sidebar": {
-    "PrimaryNavigation": "Navegación principal",
     "ClearSearch": "Borrar búsqueda",
-    "AgentPanel": "Agente de IA"
-  },
-  "SidebarTabs": {
-    "Audios": "Audios",
-    "AutoDetect": "Detección automática"
+    "PrimaryNavigation": "Navegación principal"
   },
   "TakeSnapshot": {
-    "Title": "Instantánea capturada",
+    "GoToSnapshot": "Ir a la nueva instantánea",
     "Message": "Instantánea tomada y guardada en:",
     "StayAtVideo": "Permanece en el video actual",
-    "GoToSnapshot": "Ir a la nueva instantánea"
+    "Title": "Instantánea capturada"
   },
   "TopNav": {
-    "CloseNavigationMenu": "Cerrar menú de navegación",
-    "OpenNavigationMenu": "Abrir menú de navegación",
-    "MainNavigation": "Navegación principal",
-    "Record": "Registro",
-    "Recording": "Grabación",
-    "Files": "Archivos",
     "Agent": "Agent",
-    "Terminal": "Terminal"
+    "CloseNavigationMenu": "Cerrar menú de navegación",
+    "Files": "Archivos",
+    "MainNavigation": "Navegación principal",
+    "OpenNavigationMenu": "Abrir menú de navegación",
+    "Record": "Registro",
+    "Recording": "Grabación"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet sigue ejecutándose en la bandeja del sistema (esquina inferior derecha).",
-    "ShowLauncher": "Mostrar lanzador",
-    "ShowFloatingWindow": "Mostrar ventana flotante",
-    "ShowMainWindow": "Mostrar ventana principal",
-    "ExitSeaMeet": "Salir de SeaMeet",
-    "QuickRecording": "Grabación rápida",
-    "RecordAudio": "Grabar audio",
-    "RecordFullscreen": "Grabar pantalla completa",
-    "RecordRegion": "Seleccionar región para grabar",
-    "OpenRecordingsFolder": "Abrir carpeta de grabaciones",
-    "TakeScreenshot": "Tomar captura de pantalla",
-    "Close": "Cerrar",
-    "OpenSeaMeet": "Abrir SeaMeet",
-    "OpenSaveFolder": "Abrir carpeta de guardado",
-    "ReportIssues": "Reportar problemas"
+    "MinimizedHint": "SeaMeet sigue ejecutándose en la bandeja del sistema (esquina inferior derecha)."
   },
   "Types": {
-    "Microphone": "Micrófono",
-    "System": "Salida de audio del sistema",
     "Both": "Ambos (Mezclado)",
     "File": "Archivo",
+    "Microphone": "Micrófono",
+    "System": "Salida de audio del sistema",
     "Video": "Vídeo"
   },
   "UpdateQuitModal": {
-    "Title": "Actualización disponible",
-    "ReadyToInstall": "SeaMeet {{version}} está listo para instalar.",
-    "InstallBeforeQuitting": "¿Desea instalarlo antes de salir?",
     "InstallAndQuit": "Instalar y salir",
-    "QuitWithoutInstalling": "Salir sin instalar"
+    "InstallBeforeQuitting": "¿Desea instalarlo antes de salir?",
+    "QuitWithoutInstalling": "Salir sin instalar",
+    "ReadyToInstall": "SeaMeet {{version}} está listo para instalar.",
+    "Title": "Actualización disponible"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} está lista para instalar",
-    "Downloading": "Descargando SeaMeet {{version}} ({{percent}}%)",
     "Available": "Actualización disponible: SeaMeet {{version}}",
-    "WhatsNewInVersion": "Novedades en {{version}}",
-    "WhatsNew": "Lo nuevo:",
+    "Dismiss": "Desechar",
+    "Downloading": "Descargando SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Ocultar",
+    "ReadyToInstall": "SeaMeet {{version}} está lista para instalar",
     "RestartNow": "Reiniciar ahora",
     "ViewRelease": "Ver lanzamiento",
     "ViewReleaseTitle": "Ver notas de la versión en GitHub",
-    "Dismiss": "Desechar"
+    "WhatsNew": "Lo nuevo:",
+    "WhatsNewInVersion": "Novedades en {{version}}"
   },
   "UserMenu": {
+    "AboutSeaMeet": "Acerca de SeaMeet",
     "DisplayName": "Usuario",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Configuración del perfil",
-    "AccountPreferences": "Preferencias de cuenta",
-    "BillingPlans": "Facturación y planes",
-    "StorageSettings": "Configuración de almacenamiento",
-    "HelpSupport": "Ayuda y soporte",
-    "KeyboardShortcuts": "Atajos de teclado",
-    "SignIn": "Iniciar sesión",
-    "SignOut": "Cerrar sesión",
-    "SeaMeetSignedOut": "SeaMeet: No has iniciado sesión",
-    "SeaMeetSignedIn": "SeaMeet: Con sesión iniciada",
-    "AboutSeaMeet": "Acerca de SeaMeet",
     "Exit": "Salir",
+    "HelpSupport": "Ayuda y soporte",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Consulta la wiki de SeaMeet para documentación y guías.",
-      "VisitWiki": "Visitar el wiki",
-      "Issues": "Problemas",
-      "IssuesDesc": "Reporta errores y solicita funcionalidades (requiere cuenta de GitHub).",
-      "SubmitIssue": "Enviar incidencia",
       "Discussion": "Discusión",
       "DiscussionDesc": "Únete a la discusión en la comunidad (requiere cuenta de GitHub).",
-      "JoinDiscussion": "Unirse a la discusión",
+      "DogfoodingDesc": "¡Te animamos a usar SeaMeet para registrar un problema y publicarlo en Issues o enviarnos un correo!",
       "Email": "Correo electrónico",
       "EmailDesc": "Ponte en contacto directamente con nuestro equipo",
-      "SendEmail": "Enviar correo electrónico",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "¡Te animamos a usar SeaMeet para registrar un problema y publicarlo en Issues o enviarnos un correo!",
-      "CheckForUpdates": "Buscar actualizaciones",
-      "CheckingUpdates": "Comprobando actualizaciones...",
-      "UpdateAvailable": "Ya está disponible la nueva versión {{version}}",
-      "UpdateReady": "La versión {{version}} está lista para instalar",
-      "InstallNow": "Instalar ahora",
-      "TermsOfService": "Términos de servicio",
-      "PrivacyPolicy": "Política de privacidad",
       "ImproveTranslation": "Mejorar las traducciones",
-      "ImproveTranslationDesc": "Ayúdanos a mejorar las traducciones o solicita un nuevo idioma en GitHub."
-    }
+      "ImproveTranslationDesc": "Ayúdanos a mejorar las traducciones o solicita un nuevo idioma en GitHub.",
+      "Issues": "Problemas",
+      "IssuesDesc": "Reporta errores y solicita funcionalidades (requiere cuenta de GitHub).",
+      "JoinDiscussion": "Unirse a la discusión",
+      "SendEmail": "Enviar correo electrónico",
+      "SubmitIssue": "Enviar incidencia",
+      "VisitWiki": "Visitar el wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Consulta la wiki de SeaMeet para documentación y guías."
+    },
+    "KeyboardShortcuts": "Atajos de teclado",
+    "SeaMeetSignedIn": "SeaMeet: Con sesión iniciada",
+    "SeaMeetSignedOut": "SeaMeet: No has iniciado sesión",
+    "SignIn": "Iniciar sesión",
+    "SignOut": "Cerrar sesión"
   },
   "VideoSettings": {
-    "Title": "Configuración de grabación de vídeo",
-    "Mode": "Modo de grabación",
-    "ModeOff": "Apagado",
-    "ModeFullscreen": "Pantalla completa",
-    "ModeWindow": "Ventana",
-    "ModeRegion": "Región",
+    "AudioSettings": "Configuración de audio",
+    "CodecTooltip": {
+      "VP8": "Esta grabación utiliza VP8 para la mejor calidad. Algunos reproductores de video predeterminados — como Windows Media Player y QuickTime en macOS — podrían no soportar este formato. Para una reproducción confiable, usa un navegador moderno (Chrome o Edge) o un reproductor compatible como VLC.",
+      "VP9": "Esta grabación utiliza VP9 para la mejor calidad. Algunos reproductores multimedia — como Windows Media Player y QuickTime en macOS — podrían no soportar este formato. Para una reproducción confiable, usa un navegador moderno (Chrome o Edge) o un reproductor compatible como VLC."
+    },
+    "Detecting": "Detectando...",
+    "FlashbackArmedNotice": "Estás grabando con un buffer de retrospectiva de {{seconds}} segundos",
+    "FramesPerSecond": "Cuadros por segundo",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} GB/hora",
+    "HD": "HD",
+    "HideWindow": "Ocultar ventana de SeaMeet al seleccionar una región",
+    "Internal": "Interno",
+    "MBPerMin": "~{{mb}} MB/min,",
     "ModeAudioOnly": "Solo audio",
-    "SelectScreen": "Seleccionar pantalla",
-    "SelectWindow": "Seleccionar ventana",
-    "Refresh": "Refrescar",
+    "ModeFullscreen": "Pantalla completa",
+    "ModeRegion": "Región",
+    "ModeWindow": "Ventana",
+    "Native": "Nativo",
     "NoScreens": "No se detectaron pantallas disponibles",
     "NoWindows": "No hay ventanas disponibles",
-    "RegionInfo": "Se le pedirá que seleccione una pantalla o ventana cuando comience la grabación.",
-    "HideWindow": "Ocultar ventana de SeaMeet al seleccionar una región",
-    "VideoQuality": "Calidad de vídeo",
-    "Quality": "Calidad",
-    "QualityOriginal": "Original",
-    "QualityHigh": "Calidad alta",
-    "QualityMedium": "Medio",
-    "QualityLow": "Bajo",
-    "FramesPerSecond": "Cuadros por segundo",
-    "FrameRate": "Velocidad de fotogramas",
-    "SourceResolution": "Resolución de fuente",
-    "Native": "Nativo",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Seleccione una fuente arriba",
-    "ZeroSize": "~0 MB/min, ~0 GB/hour",
-    "MBPerMin": "~{{mb}} MB/min,",
-    "GBPerHour": "~{{gb}} GB/hora",
     "Primary": "Primario",
-    "Internal": "Interno",
-    "Detecting": "Detectando...",
-    "ResolutionUnknown": "Resolución desconocida",
-    "AudioSettings": "Configuración de audio",
-    "RecordModeTitle": "¿Grabar audio o vídeo?",
+    "QualityHigh": "Calidad alta",
+    "QualityLow": "Bajo",
+    "QualityMedium": "Medio",
+    "QualityOriginal": "Original",
     "Record": "Registro",
-    "RecordWithoutFlashback": "Grabación sin retrospectiva",
+    "RecordModeTitle": "¿Grabar audio o vídeo?",
     "RecordWithFlashback": "Grabar con retrospectiva",
+    "RecordWithoutFlashback": "Grabación sin retrospectiva",
+    "Refresh": "Refrescar",
+    "ResolutionUnknown": "Resolución desconocida",
+    "SD": "SD",
+    "SelectScreen": "Seleccionar pantalla",
+    "SelectSourceAbove": "Seleccione una fuente arriba",
+    "SelectWindow": "Seleccionar ventana",
+    "SourceResolution": "Resolución de fuente",
+    "Title": "Configuración de grabación de vídeo",
     "VideoFlashbackArmedNotice": "Flashback de pantalla activado ({{seconds}}s)",
-    "FlashbackArmedNotice": "Estás grabando con un buffer de retrospectiva de {{seconds}} segundos",
-    "CodecTooltip": {
-      "VP9": "Esta grabación utiliza VP9 para la mejor calidad. Algunos reproductores multimedia — como Windows Media Player y QuickTime en macOS — podrían no soportar este formato. Para una reproducción confiable, usa un navegador moderno (Chrome o Edge) o un reproductor compatible como VLC.",
-      "VP8": "Esta grabación utiliza VP8 para la mejor calidad. Algunos reproductores de video predeterminados — como Windows Media Player y QuickTime en macOS — podrían no soportar este formato. Para una reproducción confiable, usa un navegador moderno (Chrome o Edge) o un reproductor compatible como VLC."
-    }
+    "VideoQuality": "Calidad de vídeo",
+    "ZeroSize": "~0 MB/min, ~0 GB/hour"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Región seleccionada",
     "CustomRegion": "Región personalizada: {{width}} × {{height}} píxeles",
-    "ReselectRegion": "Cambiar de región / Re-seleccionar Región",
-    "SelectCustomRegion": "Seleccionar región personalizada",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Región seleccionada",
+    "ReselectRegion": "Cambiar de región / Re-seleccionar Región",
+    "SelectCustomRegion": "Seleccionar región personalizada"
   },
   "WindowPicker": {
-    "Title": "Selecciona una ventana",
     "Instruction": "Elige una ventana para capturar en grabaciones de ventana.",
-    "Refresh": "Actualizar",
-    "Refreshing": "Actualizando…",
     "Loading": "Cargando ventanas…",
     "None": "No se detectaron ventanas. Abre una aplicación y actualiza los listados.",
+    "Refresh": "Actualizar",
+    "Refreshing": "Actualizando…",
+    "Title": "Selecciona una ventana",
     "Unknown": "Ventana sin título"
-  },
-  "Common": {
-    "Configure": "Configurar",
-    "Cancel": "Cancelar",
-    "Apply": "Aplicar",
-    "Close": "Cerrar",
-    "Open": "Abrir",
-    "Minimize": "Minimizar a icono circular",
-    "Recording": "Grabación",
-    "UnknownApp": "App desconocida",
-    "Done": "Listo",
-    "Save": "Guardar",
-    "Saving": "Guardando...",
-    "Delete": "Eliminar",
-    "Or": "O",
-    "Loading": "Cargando…",
-    "Expand": "Expandir",
-    "PlannedFeature": "Función prevista",
-    "Screen": "Pantalla",
-    "Window": "Ventana",
-    "Region": "Región",
-    "AppTitle": "Grabador de pantalla y audio SeaMeet",
-    "AppSubtitle": "Grabar entrada y salida de audio del dispositivo",
-    "Screenshot": "Instantánea",
-    "Saved": "Guardado",
-    "Processing": "Procesando…",
-    "Starting": "Iniciando...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} copiado al portapapeles. Haz doble clic para cambiar el nombre del archivo.",
-    "ApplyName": "OK",
-    "Send": "Enviar"
-  },
-  "RecordingControls": {
-    "StartRecording": "Iniciar grabación",
-    "StopRecording": "Detener grabación",
-    "ContinueRecording": "Continuar grabación",
-    "Pause": "Pausar",
-    "Resume": "Reanudar",
-    "Stop": "Detener",
-    "RecordingScreen": "grabando pantalla…",
-    "RecordingAudio": "grabando audio…",
-    "AudioRecording": "Grabación de audio",
-    "VideoRecording": "Grabación de video",
-    "RecordingPreview": "Vista previa de grabación",
-    "RecordingMode": "Modo de grabación"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Audio",
-    "RecordAudioTip": "Solo audio",
-    "RecordWindow": "Ventana",
-    "RecordWindowTip": "Captura de una ventana de aplicación individual",
-    "RecordFullscreen": "Pantalla completa",
-    "RecordFullscreenTip": "Captura toda tu pantalla",
-    "RecordRegion": "Región",
-    "RecordRegionTip": "Captura una región personalizada",
-    "CaptureMode": "Modo de captura",
-    "FullScreen": "Pantalla completa",
-    "AreaCapture": "Captura de área"
-  },
-  "RecordingsList": {
-    "NoRecordings": "Aún no hay grabaciones. Comienza a grabar para verlas aquí.",
-    "RecentRecordings": "Grabaciones recientes",
-    "RecentCaptures": "Capturas recientes",
-    "RefreshRecordings": "Refrescar",
-    "SearchRecordingsOrSnapshots": "Buscar grabaciones y instantáneas",
-    "SearchRecordingsPlaceholder": "Buscar grabaciones",
-    "ShowInFolder": "Mostrar en carpeta",
-    "CopyFileName": "Copiar nombre del archivo",
-    "CopyFilePath": "Copiar ruta del archivo",
-    "FileNameCopied": "{{fileName}} copiado al portapapeles",
-    "FilePathCopied": "Ruta del archivo copiada al portapapeles",
-    "SaveAs": "Guardar como",
-    "OpenSaveFolder": "Abrir carpeta",
-    "Title": "Grabaciones",
-    "Recovered": "{{count}} grabación(es) recuperada(s)"
-  },
-  "FileImport": {
-    "ImportMedia": "Importar media",
-    "DragDropFiles": "Arrastra y suelta tus archivos de audio, video e imágenes aquí",
-    "DragDropSubtitle": "Arrastra y suelta archivos de audio, video e imágenes aquí",
-    "BrowseFiles": "Buscar archivos",
-    "Supported": "Soportados: MP3, WAV, M4A, WebM, OGG, PNG, JPG y más",
-    "SupportedFormats": "Soportados: MP3, WAV, M4A, WebM, OGG, PNG, JPG y más",
-    "VideoImportCopying": "Copiando archivo de vídeo...",
-    "VideoImportSaving": "Guardando archivo de vídeo...",
-    "VideoUnsupported": "Es posible que este formato de vídeo no sea compatible con la aplicación. El archivo se importará de todas formas."
-  },
-  "AudioControls": {
-    "AudioCapture": "Captura de audio",
-    "AudioMix": "Mezcla de audio",
-    "AudioSessionsLog": "Registro de sesiones de audio",
-    "AudioSource": "Fuente de audio:",
-    "InputDevice": "Dispositivo de entrada:",
-    "Microphone": "micrófono",
-    "MicrophoneLabel": "Micrófono {{id}}",
-    "RecordingDefaultMicrophone": "Micrófono predeterminado",
-    "RecordingInputLabel": "Entrada de: {{name}}",
-    "RecordingSettings": "Configuración de grabación",
-    "RecordingType": "Tipo de grabación:",
-    "RefreshMicrophoneList": "Actualizar lista de micrófonos",
-    "MicrophoneGainWarning": "Un nivel alto de ganancia en el micrófono puede captar la reproducción del altavoz incluso cuando \"Audio del sistema\" está apagado. Usa auriculares o reduce la ganancia del micrófono para grabaciones solo con micrófono."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Iniciar grabación",
-    "Ready": "¿Listo?",
-    "BufferingMoment": "Cargando momento…",
-    "RecordWithFlashback": "Grabar con SeaMeet Flashback",
-    "NeverMissAMoment": "Nunca te pierdas un momento.",
-    "ReadyToGuard": "¿Listo para guardar tu {{type}}?",
-    "FillingBuffer": "Rellenando buffer de retrospectiva de {{duration}}s... {{progress}}%",
-    "ReadyToCapture": "SeaMeet está listo para capturar.",
-    "DescNone": "Graba tu pantalla, audio o toma una instantánea. Elige un modo de retrospectiva arriba para habilitar la conservación de momentos.",
-    "DescInit": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
-    "DescCharging": "Preparando tu ventana de {{duration}} segundos... casi listo para capturar lo que puedas perder. Progreso {{progress}}%.",
-    "DescReady": "La retrospectiva está lista. Cada vez que presiones Grabar, se incluirán los últimos {{duration}} segundos de {{type}} — nunca vuelvas a lamentar un momento perdido.",
-    "Screen": "Pantalla",
-    "Audio": "Audio",
-    "OpenLauncher": "Abrir lanzador",
-    "OpenFloater": "Abrir flotador",
-    "TakeScreenshot": "Tomar una captura de pantalla",
-    "Buffering": "Cargando",
-    "SavingFlashback": "Guardando retrospectiva…",
-    "SaveLastFlashback": "Guardar los últimos {{duration}}s de retrospectiva",
-    "PrivacyProtected": "Tu privacidad está protegida.",
-    "PrivacyDesc": "SeaMeet captura los últimos {{duration}}s de {{type}} en un buffer circular almacenado en la memoria RAM de tu computadora.",
-    "FlashbackOff": "La retrospectiva está actualmente desactivada. Inicia una grabación normal en cualquier momento, o:",
-    "FlashbackInitAudio": "¿Listo para guardar tu audio?",
-    "FlashbackInitScreen": "¿Listo para hacer una captura de pantalla?",
-    "FlashbackInitDescription": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
-    "FlashbackCharging": "Llenando buffer de {{seconds}}s... {{percent}}%",
-    "FlashbackChargingDescription": "Preparando tu ventana de {{seconds}}-retrospectiva... {{percent}}% completo.",
-    "FlashbackReadyQuestion": "¿Listo?",
-    "FlashbackReady": "No te pierdas ningún momento.",
-    "FlashbackReadyDescription": "La retrospectiva está lista. Los últimos {{seconds}} de {{type}} están incluidos cuando grabas.",
-    "FlashbackBuffering": "Buffer...",
-    "SaveFlashback": "Guardar los últimos {{seconds}} segundos de retrospectiva",
-    "FlashbackPrivacy": "Tu privacidad está protegida. Se almacena localmente en RAM.",
-    "Capturing": "Capturando…",
-    "CaptureMode": "Modo de captura",
-    "FullScreen": "Pantalla completa",
-    "AreaCapture": "Captura de área",
-    "KeepWindowVisible": "Mantener visible la ventana de SeaMeet al tomar una captura de pantalla.",
-    "FlashbackMismatch": "Desajuste en modo retrospectiva: la grabación de audio está activa, pero también lo está la retrospectiva de video. Por favor, desactiva la retrospectiva de video."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Habilitar transcripción de SeaMeet",
-    "SignInRequired": "Se requiere iniciar sesión",
-    "ProcessingMode": "Modo de procesamiento",
-    "Realtime": "En tiempo real",
-    "RealtimeDescription": "transcripción en vivo mientras grabas",
-    "Diarized": "OK",
-    "DiarizedDescription": "Sube el audio después de grabar para identificación del altavoz",
-    "ComingSoon": "(Próximamente)",
-    "TranscriptionLanguage": "Idioma de transcripción",
-    "TranslationLanguage": "Idioma de traducción",
-    "NoTranslation": "Sin traducción",
-    "LanguageHint": "Puedes cambiar el idioma durante la grabación",
-    "LiveTranscription": "Transcripción en tiempo real",
-    "WaitingForSpeech": "Esperando hablar...",
-    "UnknownSpeaker": "Ponente",
-    "SegmentCount": "{{count}} segmentos",
-    "SegmentCount_plural": "{{count}} segmentos",
-    "ConnectionError": "No se pudo conectar a SeaMeet",
-    "Reconnecting": "Reconectando...",
-    "Connected": "Conectado con SeaMeet",
-    "Disconnected": "OK",
-    "NowSpeaking": "Ahora hablando...",
-    "Transcript": "Transcripción",
-    "LoadingTranscript": "Cargando transcripción...",
-    "NoTranscript": "No hay transcripciones disponibles",
-    "FetchError": "No se pudieron cargar las transcripciones",
-    "Retry": "Reintentar",
-    "Transcribed": "Transcripción completa",
-    "Content": "Contenido de SeaMeet",
-    "Tab": {
-      "transcription": "Transcripción",
-      "summary": "Resumen",
-      "actionItems": "Elementos de acción",
-      "notes": "Notas"
-    },
-    "Summary": "Resumen",
-    "NoSummary": "El resumen aún no está disponible.",
-    "ActionItems": "Elementos de acción",
-    "NoActionItems": "Sin acciones para esta reunión",
-    "DueDate": "Fecha límite: {{date}}",
-    "Notes": "Notas",
-    "NoNotes": "Sin notas para esta reunión",
-    "LoadingContent": "Cargando contenido de SeaMeet...",
-    "SeekToTime": "Haz clic para reproducir desde este momento",
-    "CollapseNowSpeaking": "Minimizar ahora hablando",
-    "ExpandNowSpeaking": "Expandir para hablar ahora"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "El buffer de retrospectiva está vacío. Inténtalo de nuevo en un momento.",
-    "EnableFlashback": "Habilitar retrospectiva para guardar un momento.",
-    "FailedToSave": "No se pudo guardar el buffer de retrospectiva.",
-    "SavedFlashback": "Retrospectiva guardada en Grabaciones.",
-    "StillCharging": "El buffer de retrospectiva todavía se está cargando."
-  },
-  "AISummary": {
-    "TabTitle": "Resumen de IA",
-    "SetupRequired": "Configure su clave API de Gemini en Configuración → Funciones de IA para habilitar resúmenes de IA.",
-    "EnableRequired": "Habilite las funciones de IA en Configuración → Funciones de IA para ver resúmenes de IA.",
-    "ExportMarkdown": "Copiar como descuento",
-    "ExportSrt": "Copiar como SRT",
-    "ExportJson": "Copiar como JSON",
-    "Regenerate": "Regenerar resumen",
-    "Minimize": "Minimizar",
-    "Maximize": "Ampliar a vista completa",
-    "Queued": "En cola para procesamiento...",
-    "Processing": "Generando resumen...",
-    "Error": "No se pudo cargar el resumen: {{error}}",
-    "PipelineError": "El procesamiento de IA falló. Intenta regenerarte.",
-    "Retry": "Rever",
-    "NoSummary": "Aún no hay resumen de IA.",
-    "Generate": "Generar resumen",
-    "Copy": "Copiar",
-    "NoSummaryText": "Resumen no disponible.",
-    "Topics": "Temas:",
-    "NoTranscript": "Transcripción no disponible.",
-    "NoActions": "No se identificaron elementos de acción.",
-    "NoDecisions": "No se identificaron decisiones clave.",
-    "Export": {
-      "HeadingSummary": "Resumen",
-      "HeadingActionItems": "Elementos de acción",
-      "HeadingKeyDecisions": "Decisiones clave",
-      "HeadingTranscription": "Transcripción"
-    },
-    "Tab": {
-      "Summary": "Resumen",
-      "Transcription": "Transcripción",
-      "ActionItems": "Comportamiento",
-      "KeyDecisions": "Decisiones",
-      "Agent": "Agente"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "Funciones de IA",
-    "MenuItem": "Resúmenes impulsados ​​por IA",
-    "PageTitle": "Funciones de IA",
-    "EnableToggle": "Habilite resúmenes impulsados ​​por IA",
-    "EnableToggleDesc": "Requiere una clave API Gemini gratuita",
-    "ApiKeySection": "Clave API de Géminis",
-    "ApiKeyLabel": "Clave API de Géminis",
-    "KeyPlaceholder": "AizaSy...",
-    "KeyPlaceholderSaved": "••••••••• (guardado)",
-    "ShowKey": "Mostrar clave",
-    "HideKey": "Ocultar clave",
-    "TestKey": "Guardar y verificar",
-    "Saving": "Ahorro...",
-    "GetKeyLink": "Obtenga una clave API gratuita de Google AI Studio →",
-    "ClearKey": "Eliminar clave guardada",
-    "KeyVerified": "Clave verificada",
-    "KeyInvalid": "Clave no válida",
-    "KeyTesting": "Pruebas...",
-    "KeyNotConfigured": "Ninguna clave configurada",
-    "ModelSection": "Modelo de IA",
-    "ModelLabel": "Modelo Géminis",
-    "SelectedModel": "Seleccionado: {{model}}",
-    "AutomationSection": "Automatización",
-    "AutoSummary": "Resumen generado automáticamente",
-    "AutoSummaryDesc": "Se ejecuta después de que finaliza cada grabación.",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Recomendado · Rápido + capaz",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Opción estable más barata",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Ultra barato",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Capacidad máxima",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Mejor razonamiento estable"
-    },
-    "ClaudeKey": {
-      "Section": "Clave API de Claude (Agente)",
-      "SourceLabel": "Fuente activa:",
-      "SourceByok": "Su clave API (BYOK)",
-      "SourceKeyServer": "Gestionado por SeaMeet",
-      "SourceCli": "Código Claude CLI",
-      "SourceNone": "No configurado",
-      "KeyPlaceholder": "sk-hormiga-...",
-      "KeyPlaceholderSaved": "••••••••• (guardado)",
-      "ShowKey": "Mostrar clave",
-      "HideKey": "Ocultar clave",
-      "TestKey": "Guardar y verificar",
-      "Saving": "Ahorro...",
-      "ClearKey": "Eliminar clave guardada",
-      "KeyVerified": "Clave verificada",
-      "KeyInvalid": "Clave no válida",
-      "KeyTesting": "Pruebas...",
-      "KeyNotConfigured": "Ninguna clave configurada",
-      "GetKeyLink": "Obtenga una clave API de Anthropic Console →",
-      "QuotaSection": "Cuota de servidor clave",
-      "QuotaRemaining": "{{remaining}} / {{limit}} tokens restantes",
-      "QuotaResetDate": "Se reinicia en {{date}}",
-      "QuotaLoading": "Cargando cuota...",
-      "QuotaRefresh": "Actualizar cuota",
-      "CliSection": "Código Claude CLI",
-      "CliInstalled": "Instalado ({{version}})",
-      "CliNotInstalled": "Claude CLI no encontrado",
-      "CliInstallLink": "Instalar código Claude →",
-      "ModelSection": "Modelo Claude predeterminado",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Rápido y barato",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Recomendado · Equilibrado",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "más capaz"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "Agente de IA y cowork",
-    "PageTitle": "Agente de IA y cowork",
-    "SectionTitle": "Agente de IA y cowork",
-    "EnableToggle": "Habilitar agente de IA y cowork",
-    "EnableToggleDesc": "Requiere una clave API de Claude",
-    "DisabledBadge": "Desactivado",
-    "DisabledMsg": "El agente AI y el cowork están deshabilitados. Habilítelo en Configuración → Agente AI y Cowork.",
-    "DisabledTabHint": "El Agente AI está deshabilitado: habilítelo en Configuración → Agente AI y Cowork",
-    "NotConfiguredMsg": "No hay ninguna clave API de Claude configurada. Configure uno en Configuración → Agente AI y Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "Resumen en cola...",
-    "Running": "Generando resumen...",
-    "Progress": "Procesando fragmento {{current}} de {{total}}",
-    "Done": "Resumen listo",
-    "Error": "Error de procesamiento"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Proceso con IA",
-    "Queuing": "Cola...",
-    "ProcessingWithTime": "Procesando... {{sec}}s",
-    "Describe": "Describir imagen",
-    "DescribeSub": "¿Qué hay en esta captura de pantalla?",
-    "Ocr": "Extraer texto (OCR)",
-    "OcrSub": "Leer todo el texto visible",
-    "Custom": "Mensaje personalizado",
-    "CustomPlaceholder": "Pregunta cualquier cosa sobre esta imagen...",
-    "ResultLabel": "Resultado de IA",
-    "Description": "Descripción",
-    "ExtractedText": "Texto extraído",
-    "Analysis": "Análisis",
-    "PipelineError": "El procesamiento de IA falló. Por favor inténtalo de nuevo.",
-    "UnknownError": "Error desconocido"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Leyendo archivo...",
-      "Executing": "Ejecutando...",
-      "Running": "Correr...",
-      "Input": "Aporte",
-      "Output": "Producción",
-      "Pattern": "Patrón:",
-      "ShowDetails": "Mostrar detalles",
-      "AndMoreLines": "... y {{count}} líneas más"
-    },
-    "Streaming": {
-      "Thinking": "Pensamiento...",
-      "LongRunning": "Correr más de lo habitual",
-      "ToolStuck": "La herramienta puede estar atascada",
-      "ForceStop": "Forzar parada",
-      "GeneratingResponse": "Generando respuesta...",
-      "RunningTool": "Ejecutando {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Solicitud de permiso de herramienta",
-      "Allow": "Permitir una vez",
-      "AllowSession": "Permitir sesión",
-      "Deny": "Denegar",
-      "Allowed": "Permitido",
-      "Denied": "Denegado"
-    },
-    "Title": "Agente de IA",
-    "GlobalTitle": "Agente de IA",
-    "NewSession": "Nueva sesión",
-    "Sessions": "Sesiones",
-    "NoSessions": "Aún no hay sesiones. Inicie una conversación a continuación.",
-    "SendPlaceholder": "Pregunta cualquier cosa... (Intro para enviar, Mayús+Intro para nueva línea)",
-    "SendButton": "Enviar",
-    "StopButton": "Detener",
-    "NotConfigured": "Configure una clave API de Claude en Configuración → Funciones de IA para usar el Agente.",
-    "GoToSettings": "Abrir configuración",
-    "SessionCost": "Sesión: {inputTokens}_ entrada /{outputTokens}_ tokens de salida",
-    "CommandHelp": "Comandos: /nuevo · /clear · /coste · /ayuda",
-    "Mode": {
-      "Ask": "Preguntar",
-      "Code": "Código",
-      "Plan": "Plan"
-    },
-    "Model": {
-      "Haiku": "haikus",
-      "Sonnet": "Soneto",
-      "Opus": "Opus"
-    },
-    "QuickAction": {
-      "Summarize": "Resumir esta grabación",
-      "ActionItems": "Encuentra elementos de acción",
-      "DraftEmail": "Borrador de correo electrónico de seguimiento"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "¿En qué puedes ayudarme?",
-      "HelpAnalyze": "Ayúdame a analizar mis grabaciones recientes."
-    },
-    "AssetContext": "Contexto: {{name}}"
   }
 }

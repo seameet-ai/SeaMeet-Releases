@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "App Store Build",
     "DirectBuild": "Direct Build",
-    "SubtitleBadge": "Snap Recorder & Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "Help us translate SeaMeet →",
     "Loading": "Loading...",
-    "HelpTranslate": "Help us translate SeaMeet →"
+    "SubtitleBadge": "Snap Recorder & Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "Productivity",
-    "Social": "Social",
-    "Gaming": "Gaming",
-    "Recording": "Recording",
-    "Browsers": "Browsers",
-    "BrowserBased": "Browser-based"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "Other",
+      "Skip": "Skip",
+      "Submit": "Submit",
+      "Title": "Question",
+      "TypeResponse": "Type your response..."
+    },
+    "AssetContext": "Context: {{name}}",
+    "CommandHelp": "Commands: /new · /clear · /cost · /help",
+    "GlobalTitle": "AI Agent",
+    "GoToSettings": "Open Settings",
+    "Mode": {
+      "Ask": "Ask",
+      "Code": "Code",
+      "Plan": "Plan"
+    },
+    "Model": {
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Sonnet"
+    },
+    "NewSession": "New session",
+    "NoSessions": "No sessions yet. Start a conversation below.",
+    "NotConfigured": "Configure a Claude API key in Settings → AI Features to use the Agent.",
+    "Permission": {
+      "Allow": "Allow Once",
+      "Allowed": "Allowed",
+      "AllowSession": "Allow for Session",
+      "Denied": "Denied",
+      "Deny": "Deny",
+      "Title": "Tool Permission Request"
+    },
+    "Plan": {
+      "Approve": "Approve Plan",
+      "DefaultFeedback": "User requested changes",
+      "Description": "The agent has prepared a plan above and needs your approval to proceed.",
+      "FeedbackPlaceholder": "Describe what changes you'd like...",
+      "PlanDetails": "Plan details",
+      "RequestChanges": "Request Changes",
+      "RequestedPermissions": "Requested permissions:",
+      "SendFeedback": "Send Feedback",
+      "Title": "Plan Review"
+    },
+    "QuickAction": {
+      "ActionItems": "Find action items",
+      "DraftEmail": "Draft follow-up email",
+      "Summarize": "Summarize this recording"
+    },
+    "SendButton": "Send",
+    "SendPlaceholder": "Ask anything... (Enter to send, Shift+Enter for newline)",
+    "SessionCost": "Session: {{inputTokens}} in / {{outputTokens}} out tokens",
+    "Sessions": "Sessions",
+    "StopButton": "Stop",
+    "Streaming": {
+      "ForceStop": "Force stop",
+      "GeneratingResponse": "Generating response...",
+      "LongRunning": "Running longer than usual",
+      "RunningTool": "Running {{tool}}...",
+      "Thinking": "Thinking...",
+      "ToolStuck": "Tool may be stuck"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "Help me analyze my recent recordings",
+      "WhatCanYouDo": "What can you help me with?"
+    },
+    "Title": "AI Agent",
+    "ToolCall": {
+      "AndMoreLines_one": "... and {{count}} more lines",
+      "AndMoreLines_other": "... and {{count}} more lines",
+      "Executing": "Executing...",
+      "Input": "Input",
+      "Output": "Output",
+      "Pattern": "Pattern:",
+      "Reading": "Reading file...",
+      "ShowDetails": "Show details"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} actions",
+      "Actions_other": "{{count}} actions",
+      "Completed_one": "{{count}} completed",
+      "Completed_other": "{{count}} completed",
+      "Running_one": "{{count}} running",
+      "Running_other": "{{count}} running"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "Disabled",
+    "DisabledMsg": "AI Agent & Cowork is disabled. Enable it in Settings → AI Agent & Cowork.",
+    "DisabledTabHint": "AI Agent is disabled — enable it in Settings → AI Agent & Cowork",
+    "EnableToggle": "Enable AI Agent & Cowork",
+    "EnableToggleDesc": "Requires a Claude API Key",
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Gemini API Key",
+    "ApiKeySection": "Gemini API Key",
+    "AutomationSection": "Automation",
+    "AutoSummary": "Auto-generate summary",
+    "AutoSummaryDesc": "Runs after every recording finishes",
+    "ClaudeKey": {
+      "ClearKey": "Remove saved key",
+      "CliInstalled": "Installed ({{version}})",
+      "CliInstallLink": "Install Claude Code →",
+      "CliNotInstalled": "Claude CLI not found",
+      "CliSection": "Claude Code CLI",
+      "GetKeyLink": "Get an API key from Anthropic Console →",
+      "HideKey": "Hide key",
+      "KeyInvalid": "Invalid key",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (saved)",
+      "KeyTesting": "Testing...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "Fast & cheap",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "Most capable",
+      "ModelSection": "Default Claude Model",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "Recommended · Balanced",
+      "QuotaLoading": "Loading quota...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} tokens remaining",
+      "QuotaResetDate": "Resets on {{date}}",
+      "Saving": "Saving...",
+      "Section": "Claude API Key (Agent)",
+      "ShowKey": "Show key",
+      "SourceByok": "Your API key (BYOK)",
+      "SourceCli": "Claude Code CLI",
+      "SourceKeyServer": "Managed by SeaMeet",
+      "SourceLabel": "Active source:",
+      "SourceNone": "Not configured",
+      "TestKey": "Save & Verify"
+    },
+    "ClearKey": "Remove saved key",
+    "EnableToggle": "Enable AI-powered summaries",
+    "EnableToggleDesc": "Requires a free Gemini API key",
+    "GetKeyLink": "Get a free API key from Google AI Studio →",
+    "GroupTitle": "AI Features",
+    "HideKey": "Hide key",
+    "KeyInvalid": "Invalid key",
+    "KeyNotConfigured": "No key configured",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (saved)",
+    "KeyTesting": "Testing...",
+    "KeyVerified": "Key verified",
+    "ManagedKeyDesc": "Your API key is automatically provisioned. No configuration needed.",
+    "ManagedKeyStatus": "Managed key — provided by SeaMeet",
+    "MenuItem": "AI Extraction & Summary",
+    "ModelLabel": "Gemini Model",
+    "Models": {
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "Ultra-cheap",
+      "Gemini25FlashSub": "Cheapest stable option",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "Best stable reasoning",
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "Recommended · Fast + capable",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "Maximum capability"
+    },
+    "ModelSection": "AI Model",
+    "PageTitle": "AI Extraction & Summary",
+    "QuotaLoading": "Loading quota...",
+    "QuotaRefresh": "Refresh quota",
+    "QuotaRemaining": "{{remaining}} / {{limit}} tokens remaining",
+    "QuotaResetDate": "Resets on {{date}}",
+    "QuotaSection": "Usage Quota",
+    "Saving": "Saving...",
+    "SelectedModel": "Selected: {{model}}",
+    "ShowKey": "Show key",
+    "TestKey": "Save & Verify"
+  },
+  "AISummary": {
+    "Copy": "Copy",
+    "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
+    "Error": "Failed to load summary: {{error}}",
+    "Export": {
+      "HeadingActionItems": "Action Items",
+      "HeadingKeyDecisions": "Key Decisions",
+      "HeadingSummary": "Summary",
+      "HeadingTranscription": "Transcription"
+    },
+    "ExportJson": "Copy as JSON",
+    "ExportMarkdown": "Copy as Markdown",
+    "ExportSrt": "Copy as SRT",
+    "GeminiLiveTranscript": "Gemini Live",
+    "Generate": "Generate Summary",
+    "Maximize": "Expand to full view",
+    "Minimize": "Minimize",
+    "NoActions": "No action items identified.",
+    "NoChapters": "No chapters available.",
+    "NoDecisions": "No key decisions identified.",
+    "NoSummary": "No AI summary yet.",
+    "NoSummaryText": "Summary not available.",
+    "NoTranscript": "Transcript not available.",
+    "PipelineError": "AI processing failed. Try regenerating.",
+    "PipelineTranscript": "AI Pipeline",
+    "Processing": "Generating summary...",
+    "Queued": "Queued for processing...",
+    "Regenerate": "Regenerate summary",
+    "Retry": "Retry",
+    "SeekToTimestamp": "Seek to this timestamp",
+    "SetupRequired": "Configure your Gemini API key in Settings → AI Features to enable AI summaries.",
+    "Tab": {
+      "ActionItems": "Actions",
+      "Chapters": "Chapters",
+      "KeyDecisions": "Decisions",
+      "Summary": "Summary",
+      "Transcription": "Transcript"
+    },
+    "TabTitle": "AI Extraction & Summary",
+    "Topics": "Topics:",
+    "Speakers": "Speakers",
+    "MergeInto": "Merge into…",
+    "ApplyMerge": "Apply",
+    "EditSegmentSpeaker": "Click to reassign this segment"
   },
   "App": {
     "FailedToEnableFlashback": "Failed to enable flashback: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "All apps",
-    "Teams": "Microsoft Teams (Work/School)",
-    "TeamsConsumer": "Microsoft Teams (Personal)",
-    "TeamsWeb": "Microsoft Teams (Web)",
-    "Zoom": "Zoom",
-    "ZoomWeb": "Zoom (Web)",
+    "Battlenet": "Battle.net",
+    "Brave": "Brave Browser",
+    "CallOfDuty": "Call of Duty",
     "Chrome": "Chrome Browser",
-    "Edge": "Edge Browser",
-    "Firefox": "Firefox Browser",
-    "WhatsApp": "WhatsApp",
-    "Line": "Line",
-    "WeChat": "WeChat",
     "Discord": "Discord",
     "DiscordWeb": "Discord (Web)",
+    "Edge": "Edge Browser",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "Firefox Browser",
+    "Fortnite": "Fortnite",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS Studio",
+    "Opera": "Opera Browser",
+    "Other": "Other apps",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "Signal",
     "Skype": "Skype",
     "Slack": "Slack",
     "SlackWeb": "Slack (Web)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "Webex (Web)",
-    "WindowsSoundRecorder": "Windows Sound Recorder",
-    "Other": "Other apps",
-    "Obs": "OBS Studio",
-    "Twitch": "Twitch",
-    "XboxGameBar": "Xbox Game Bar",
-    "Battlenet": "Battle.net",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "Signal",
-    "Telegram": "Telegram",
     "SteamChat": "Steam Chat",
-    "Viber": "Viber",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "Cisco Webex",
-    "Opera": "Opera Browser",
-    "Brave": "Brave Browser",
-    "Valorant": "Valorant",
-    "Fortnite": "Fortnite",
-    "CallOfDuty": "Call of Duty",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "Streamlabs Desktop",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "Microsoft Teams (Work/School)",
+    "TeamsConsumer": "Microsoft Teams (Personal)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "Microsoft Teams (Web)",
+    "Telegram": "Telegram",
+    "Twitch": "Twitch",
+    "Valorant": "Valorant",
+    "Viber": "Viber",
+    "Webex": "Cisco Webex",
+    "WebexWeb": "Webex (Web)",
+    "WeChat": "WeChat",
+    "WhatsApp": "WhatsApp",
+    "WindowsSoundRecorder": "Windows Sound Recorder",
+    "XboxGameBar": "Xbox Game Bar",
+    "Zoom": "Zoom",
+    "ZoomWeb": "Zoom (Web)"
+  },
+  "AudioControls": {
+    "AudioCapture": "Audio Capture",
+    "AudioMix": "Audio Mix",
+    "AudioSource": "Audio Source:",
+    "Microphone": "Microphone",
+    "MicrophoneGainWarning": "High microphone gain can pick up speaker playback even when \"System Audio\" is off. Use headphones or lower microphone gain for mic-only recordings.",
+    "RecordingDefaultMicrophone": "Default Microphone",
+    "RecordingSettings": "Recording settings",
+    "RefreshMicrophoneList": "Refresh microphone list"
   },
   "AutoDetectInfoModal": {
-    "Title": "Auto-Detect Meetings",
-    "Subtitle": "Never Miss a Meeting Again",
-    "Description": "Auto-Detect automatically starts recording when you join meetings, so you never forget to press record.",
-    "PopularAppsTitle": "Popular Apps Detected",
-    "MoreApps": "+40 more",
-    "HowItWorksTitle": "How It Works",
-    "Step1Title": "Enable Auto-Detect",
-    "Step1Desc": "Turn on the toggle and select which apps to monitor",
-    "Step2Title": "Join a Meeting",
-    "Step2Desc": "Open Zoom, Teams, Meet, or any supported app",
-    "Step3Title": "Auto-Record",
-    "Step3Desc": "SeaMeet automatically starts recording. Done!",
-    "Tip1Title": "Configure Per-App",
-    "Tip1Desc": "Set \"Always Record\" for work meetings, \"Ask Every Time\" for personal calls",
-    "Tip2Title": "Multiple Detection Methods",
-    "Tip2Desc": "Uses microphone activity, window titles, and browser URLs for accuracy",
-    "GotIt": "Got It",
-    "OpenSettings": "Open Settings",
     "ControlLabel": "AUTO DETECT",
-    "LearnAbout": "Learn about Auto Detect"
+    "Description": "Auto-Detect automatically starts recording when you join meetings, so you never forget to press record.",
+    "GotIt": "Got It",
+    "HowItWorksTitle": "How It Works",
+    "LearnAbout": "Learn about Auto Detect",
+    "MoreApps": "+40 more",
+    "OpenSettings": "Open Settings",
+    "PopularAppsTitle": "Popular Apps Detected",
+    "Step1Desc": "Turn on the toggle and select which apps to monitor",
+    "Step1Title": "Enable Auto-Detect",
+    "Step2Desc": "Open Zoom, Teams, Meet, or any supported app",
+    "Step2Title": "Join a Meeting",
+    "Step3Desc": "SeaMeet automatically starts recording. Done!",
+    "Step3Title": "Auto-Record",
+    "Subtitle": "Never Miss a Meeting Again",
+    "Tip1Desc": "Set \"Always Record\" for work meetings, \"Ask Every Time\" for personal calls",
+    "Tip1Title": "Configure Per-App",
+    "Tip2Desc": "Uses microphone activity, window titles, and browser URLs for accuracy",
+    "Tip2Title": "Multiple Detection Methods",
+    "Title": "Auto-Detect Meetings"
   },
   "AutoRecording": {
-    "Title": "Auto Detect Meetings",
-    "DetectApps": "Detect meetings from:",
-    "Enabled": "Auto detect enabled",
-    "Disabled": "Auto detect disabled",
-    "MeetingDetected": "{{{app}}} meeting detected!",
-    "MeetingEnded": "Meeting ended",
-    "MeetingFallbackName": "Meeting",
     "BugReport": "See a bug? Report it to seameet@seasalt.ai",
     "BugReportTitle": "Report a Bug",
+    "Disabled": "Auto detect disabled",
+    "Enabled": "Auto detect enabled",
     "HelpWanted": "If you'd like to request a new app added, or you have verified an app working, please let us know at seameet@seasalt.ai. We appreciate your help to make this app better!",
-    "HelpWantedTitle": "Help Us Improve"
+    "HelpWantedTitle": "Help Us Improve",
+    "MeetingDetected": "{{{app}}} meeting detected!",
+    "MeetingEnded": "Meeting ended",
+    "MeetingFallbackName": "Meeting"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole Required for System Audio",
-    "InstallInstructions": "To record system audio on macOS, you need to install BlackHole virtual audio driver:",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "Copy command",
-    "Or": "or",
-    "DownloadManually": "Download from existential.audio",
-    "SetupTitle": "Configure Multi-Output Device",
-    "SetupStep1": "Open Audio MIDI Setup (Applications → Utilities)",
-    "SetupStep2": "Click '+' and select 'Create Multi-Output Device'",
-    "SetupStep3": "Check both your speakers/headphones AND 'BlackHole 2ch'",
-    "SetupStep4": "Right-click the Multi-Output and select 'Use This Device For Sound Output'",
-    "SetupStep5": "Reboot if BlackHole doesn't appear in the device list",
-    "SetupStep6": "Select 'BlackHole 2ch' as your audio source in this app",
-    "CheckAgain": "Check Again",
     "Cancel": "Cancel",
-    "LearnMore": "Learn more about Multi-Output Devices"
+    "CheckAgain": "Check Again",
+    "CopyCommand": "Copy command",
+    "DownloadManually": "Download from existential.audio",
+    "InstallInstructions": "To record system audio on macOS, you need to install BlackHole virtual audio driver:",
+    "LearnMore": "Learn more about Multi-Output Devices",
+    "NotInstalled": "BlackHole Required for System Audio",
+    "Or": "or",
+    "SetupTitle": "Configure Multi-Output Device"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ Bluetooth Microphone Detected",
-    "Description": "Your OS may force your audio to \"Communications Mode\" when using Bluetooth microphones, which can cause audio distortion or loudness issues during recording.",
-    "RecommendationLabel": "Recommendation:",
-    "Recommendation": "Switch to a non-Bluetooth microphone (like your built-in mic or a USB microphone) for better recording quality.",
+    "CloseAriaLabel": "Close Bluetooth warning",
     "CloseTitle": "Close warning",
-    "CloseAriaLabel": "Close Bluetooth warning"
+    "Description": "Your OS may force your audio to \"Communications Mode\" when using Bluetooth microphones, which can cause audio distortion or loudness issues during recording.",
+    "Recommendation": "Switch to a non-Bluetooth microphone (like your built-in mic or a USB microphone) for better recording quality.",
+    "RecommendationLabel": "Recommendation:",
+    "Title": "⚠️ Bluetooth Microphone Detected"
+  },
+  "Common": {
+    "ApplyName": "Apply name",
+    "Cancel": "Cancel",
+    "Close": "Close",
+    "Configure": "Configure",
+    "Delete": "Delete",
+    "Done": "Done",
+    "Expand": "Expand",
+    "FileNameCopiedWithRenameHint": "{{fileName}} copied to clipboard. Double click to change file name.",
+    "Loading": "Loading...",
+    "Minimize": "Minimize to circle",
+    "Open": "Open",
+    "Or": "Or",
+    "Processing": "Processing…",
+    "Recording": "Recording",
+    "Save": "Save",
+    "Saved": "Saved",
+    "Saving": "Saving...",
+    "Screenshot": "Screenshot",
+    "Send": "Send",
+    "Starting": "Starting...",
+    "UnknownApp": "Unknown App"
   },
   "DeletePrompt": {
-    "Title": "Delete file",
-    "Message": "Are you sure you want to delete this file? This action cannot be undone.",
     "Cancel": "Cancel",
-    "Confirm": "Delete"
+    "Confirm": "Delete",
+    "Message": "Are you sure you want to delete this file? This action cannot be undone.",
+    "Title": "Delete file"
   },
   "Errors": {
-    "NoAudioSources": "No audio sources available",
-    "NoSystemAudioSources": "No system audio sources available",
+    "AutoRecordingFailed": "Failed to toggle auto-recording",
     "FailedToStartRecording": "Failed to start recording: {{message}}",
     "FailedToStartVideoRecording": "Failed to start video recording: {{message}}",
-    "AutoRecordingFailed": "Failed to toggle auto-recording"
+    "NoAudioSources": "No audio sources available",
+    "NoSystemAudioSources": "No system audio sources available",
+    "SaveFailed": "Failed to save recording: {{message}}"
   },
   "Events": {
-    "Title": "Events",
-    "MarkToolbarButton": "Marked Events",
+    "EmptyWhenNotRecording": "No events available for this recording.",
+    "EmptyWhileRecording": "No events yet. Click 'Mark' while recording to add one.",
+    "EventLabel": "Event {{number}}",
     "MarkButton": "Mark",
     "Marked": "Marked!",
-    "EventLabel": "Event {{number}}",
-    "EmptyWhileRecording": "No events yet. Click 'Mark' while recording to add one.",
-    "EmptyWhenNotRecording": "No events available for this recording.",
-    "DeletePrompt": {
-      "Title": "Delete event",
-      "Message": "Are you sure you want to delete this event? This action cannot be undone.",
-      "Cancel": "Cancel",
-      "Confirm": "Delete"
-    }
+    "MarkToolbarButton": "Marked Events",
+    "Title": "Events"
+  },
+  "FileImport": {
+    "BrowseFiles": "Browse Files",
+    "DragDropFiles": "Drag and drop your audio, video, and image files here",
+    "DragDropSubtitle": "Drag and drop audio, video, and image files here",
+    "ImportMedia": "Import Media",
+    "Supported": "Supported",
+    "SupportedFormats": "Supported: MP3, WAV, M4A, WebM, OGG, PNG, JPG, and more",
+    "VideoImportCopying": "Copying video file...",
+    "VideoImportSaving": "Saving video file...",
+    "VideoUnsupported": "This video format may not be playable in the app. The file will still be imported."
   },
   "FlashbackControls": {
+    "AudioFlashback": "Audio Flashback",
+    "CannotChangeWhileRecording": "Cannot change flashback mode while recording",
+    "DisableFlashback": "Disable Flashback",
     "Label": "FLASHBACK",
     "LearnAbout": "Learn about Flashback",
-    "DisableFlashback": "Disable Flashback",
-    "AudioFlashback": "Audio Flashback",
-    "ScreenFlashback": "Screen Flashback",
-    "TitleReady": "Click to show Flashback UI",
-    "TitleCharging": "Flashback charging",
-    "TitleInit": "Click to start charging",
+    "Off": "Off",
     "Ready": "Ready",
     "ReadyQuestion": "Ready?",
-    "Off": "Off",
-    "CannotChangeWhileRecording": "Cannot change flashback mode while recording",
-    "ToggleLabel": "Toggle flashback",
-    "SettingsLabel": "Flashback Recording"
+    "ScreenFlashback": "Screen Flashback",
+    "SettingsLabel": "Flashback Recording",
+    "TitleCharging": "Flashback charging",
+    "TitleInit": "Click to start charging",
+    "TitleReady": "Click to show Flashback UI",
+    "ToggleLabel": "Toggle flashback"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "audio",
+    "Buffering": "Buffering",
+    "BufferingMoment": "Buffering Moment...",
+    "Capturing": "Capturing...",
+    "DescCharging": "Priming your {{duration}}-second window... almost ready to catch what you might miss. {{progress}}% complete.",
+    "DescInit": "Click 'Ready?' to tell SeaMeet to start 'remembering' the past.",
+    "DescNone": "Record your screen, audio, or take a screenshot. Choose a flashback mode above to enable moment saving.",
+    "DescReady": "Flashback is armed. Whenever you hit Record, the past {{duration}} seconds of {{type}} is included — never regret a missed moment again.",
+    "FillingBuffer": "Filling {{duration}}s flashback buffer... {{progress}}%",
+    "FlashbackBuffering": "Buffering...",
+    "FlashbackCharging": "Filling {{seconds}}s buffer... {{percent}}%",
+    "FlashbackChargingDescription": "Priming your {{seconds}}-second window... {{percent}}% complete.",
+    "FlashbackInitAudio": "Ready to guard your audio?",
+    "FlashbackInitDescription": "Click 'Ready?' to tell SeaMeet to start 'remembering' the past.",
+    "FlashbackInitScreen": "Ready to guard your screen?",
+    "FlashbackMismatch": "Flashback mode mismatch. Audio recording but video flashback is active. Please disable video flashback.",
+    "FlashbackOff": "Flashback is currently off. Start a normal recording anytime, or choose a flashback mode (audio or screen) above to enable heroic moment saving.",
+    "FlashbackPrivacy": "Your privacy is protected. Stored locally in RAM.",
+    "FlashbackReady": "Never miss a moment.",
+    "FlashbackReadyDescription": "Flashback is armed. The past {{seconds}}s of {{type}} is included when you record.",
+    "FlashbackReadyQuestion": "Ready?",
+    "KeepWindowVisible": "Keep SeaMeet window visible when taking screenshot",
+    "NeverMissAMoment": "Never miss a moment.",
+    "OpenFloater": "Open Floater",
+    "OpenLauncher": "Open Launcher",
+    "PrivacyDesc": "SeaMeet snapshots the past {{duration}}s of {{type}} in a ring buffer locally on your computer's RAM.",
+    "PrivacyProtected": "Your privacy is protected.",
+    "Ready": "Ready?",
+    "ReadyToCapture": "SeaMeet is ready to capture.",
+    "ReadyToGuard": "Ready to guard your {{type}}?",
+    "RecordWithFlashback": "Record with Flashback",
+    "SaveFlashback": "Save last {{seconds}}s flashback",
+    "SaveLastFlashback": "Save last {{duration}}s flashback",
+    "SavingFlashback": "Saving flashback…",
+    "Screen": "screen",
+    "StartRecording": "Start Recording",
+    "TakeScreenshot": "Take Screenshot"
   },
   "FlashbackIndicator": {
     "Buffering": "Buffering",
@@ -183,138 +463,145 @@
     "VideoReady": "Video Ready"
   },
   "FlashbackInfoModal": {
-    "Title": "Flashback Recording",
-    "Close": "Close",
-    "Subtitle": "Your Personal Time Machine",
-    "SubtitleDesc": "Never miss an important moment again—capture up to 2 minutes from the past, even after it happened.",
+    "Benefits": {
+      "AlwaysReady": "Always ready",
+      "LocalOnly": "Local only (complete privacy)",
+      "MultipleCaptures": "Multiple captures - buffer keeps running",
+      "NoPlan": "No planning required",
+      "Offline": "Works offline",
+      "Title": "Key Benefits"
+    },
     "BestFor": "Best for:",
-    "VisualStates": {
-      "Title": "Visual Status Indicators",
-      "OffLabel": "OFF",
-      "Off": "Gray, static waveform",
-      "ChargingLabel": "CHARGING",
-      "Charging": "Amber/Yellow, buffer filling",
-      "ReadyLabel": "READY",
-      "Ready": "Green, buffer full"
-    },
-    "SpecLabel": {
-      "Buffer": "Buffer:",
-      "Memory": "Memory:",
-      "Captures": "Captures:"
-    },
-    "Modes": {
-      "Title": "Two Flashback Modes",
-      "Audio": {
-        "Title": "Audio Flashback",
-        "Buffer": "30 seconds (fixed)",
-        "Memory": "~30-50 MB RAM",
-        "Captures": "Microphone and/or system audio",
-        "BestFor": "Recording meetings, phone calls, voice conversations"
-      },
-      "Video": {
-        "Title": "Video Flashback",
-        "Buffer": "10s, 30s, 60s, 90s, or 120s",
-        "Memory": "50-600 MB RAM",
-        "Captures": "Screen video + audio",
-        "BestFor": "Presentations, gaming highlights, screen sharing sessions, visual content"
-      }
-    },
-    "HowItWorks": {
-      "Title": "How It Works",
-      "Step1": {
-        "Title": "Enable Flashback",
-        "Desc": "Click FLASHBACK button to turn on. Buffer starts filling automatically."
-      },
-      "Step2": {
-        "Title": "Wait for Ready",
-        "Desc": "Watch for green status. Buffer must fill to 90% before you can capture past."
-      },
-      "Step3": {
-        "Title": "Press Record",
-        "Desc": "When something important happens, press Record. Flashback grabs the buffer and continues recording forward."
-      }
-    },
-    "Scenarios": {
-      "Title": "Practical Scenarios",
-      "OhNo": {
-        "Title": "The \"Oh no!\" Moment",
-        "Desc": "Colleague says something profound. You realize you want to record it. Press Record → Flashback captures the last 30 seconds (including that moment!)."
-      },
-      "Gaming": {
-        "Title": "Gaming Highlight",
-        "Desc": "Pull off an incredible combo. Press Record immediately. Flashback captures gameplay leading up to that combo + your reaction."
-      },
-      "Decision": {
-        "Title": "Important Decision",
-        "Desc": "Lawyer explains contract clause. Press Record to capture explanation. Have a complete, accurate record to review later."
-      }
-    },
+    "Close": "Close",
     "Comparison": {
-      "Title": "Flashback vs. Traditional Recording",
+      "Capture": {
+        "Feature": "Capture Moments",
+        "Flashback": "Can start AFTER moment",
+        "Traditional": "If you forget, it's lost"
+      },
       "Header": {
         "Feature": "Feature",
-        "Traditional": "Traditional Recording",
-        "Flashback": "Flashback Recording"
+        "Flashback": "Flashback Recording",
+        "Traditional": "Traditional Recording"
       },
       "Planning": {
         "Feature": "Planning",
-        "Traditional": "Must start BEFORE moment",
-        "Flashback": "No planning needed"
-      },
-      "Capture": {
-        "Feature": "Capture Moments",
-        "Traditional": "If you forget, it's lost",
-        "Flashback": "Can start AFTER moment"
+        "Flashback": "No planning needed",
+        "Traditional": "Must start BEFORE moment"
       },
       "Result": {
         "Feature": "Result",
-        "Traditional": "\"I wish I recorded that\"",
-        "Flashback": "\"I'm glad I captured that\""
-      }
-    },
-    "Benefits": {
-      "Title": "Key Benefits",
-      "NoPlan": "No planning required",
-      "AlwaysReady": "Always ready",
-      "Offline": "Works offline",
-      "LocalOnly": "Local only (complete privacy)",
-      "MultipleCaptures": "Multiple captures - buffer keeps running"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "Audio Flashback for Daily Use",
-        "Desc": "Use 30-second Audio Flashback for meetings and calls. Low memory usage, works reliably."
+        "Flashback": "\"I'm glad I captured that\"",
+        "Traditional": "\"I wish I recorded that\""
       },
-      "VideoSpecial": {
-        "Title": "Video Flashback for Special Moments",
-        "Desc": "Enable Video Flashback (30s buffer) for presentations, gaming highlights, or any visual content you want to preserve."
-      },
-      "Memory": {
-        "Title": "Memory Management",
-        "Desc": "With 2 minutes of video flashback: entire application takes less than1GB of RAM."
-      }
+      "Title": "Flashback vs. Traditional Recording"
     },
     "GotIt": "Got It",
-    "OpenSettings": "Open Settings"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "Click FLASHBACK button to turn on. Buffer starts filling automatically.",
+        "Title": "Enable Flashback"
+      },
+      "Step2": {
+        "Desc": "Watch for green status. Buffer must fill to 90% before you can capture past.",
+        "Title": "Wait for Ready"
+      },
+      "Step3": {
+        "Desc": "When something important happens, press Record. Flashback grabs the buffer and continues recording forward.",
+        "Title": "Press Record"
+      },
+      "Title": "How It Works"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "Recording meetings, phone calls, voice conversations",
+        "Buffer": "30 seconds (fixed)",
+        "Captures": "Microphone and/or system audio",
+        "Memory": "~30-50 MB RAM",
+        "Title": "Audio Flashback"
+      },
+      "Title": "Two Flashback Modes",
+      "Video": {
+        "BestFor": "Presentations, gaming highlights, screen sharing sessions, visual content",
+        "Buffer": "10s, 30s, 60s, 90s, or 120s",
+        "Captures": "Screen video + audio",
+        "Memory": "50-600 MB RAM",
+        "Title": "Video Flashback"
+      }
+    },
+    "OpenSettings": "Open Settings",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "Lawyer explains contract clause. Press Record to capture explanation. Have a complete, accurate record to review later.",
+        "Title": "Important Decision"
+      },
+      "Gaming": {
+        "Desc": "Pull off an incredible combo. Press Record immediately. Flashback captures gameplay leading up to that combo + your reaction.",
+        "Title": "Gaming Highlight"
+      },
+      "OhNo": {
+        "Desc": "Colleague says something profound. You realize you want to record it. Press Record → Flashback captures the last 30 seconds (including that moment!).",
+        "Title": "The \"Oh no!\" Moment"
+      },
+      "Title": "Practical Scenarios"
+    },
+    "SpecLabel": {
+      "Buffer": "Buffer:",
+      "Captures": "Captures:",
+      "Memory": "Memory:"
+    },
+    "Subtitle": "Your Personal Time Machine",
+    "SubtitleDesc": "Never miss an important moment again—capture up to 2 minutes from the past, even after it happened.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "Use 30-second Audio Flashback for meetings and calls. Low memory usage, works reliably.",
+        "Title": "Audio Flashback for Daily Use"
+      },
+      "Memory": {
+        "Desc": "With 2 minutes of video flashback: entire application takes less than1GB of RAM.",
+        "Title": "Memory Management"
+      },
+      "VideoSpecial": {
+        "Desc": "Enable Video Flashback (30s buffer) for presentations, gaming highlights, or any visual content you want to preserve.",
+        "Title": "Video Flashback for Special Moments"
+      }
+    },
+    "Title": "Flashback Recording",
+    "VisualStates": {
+      "Charging": "Amber/Yellow, buffer filling",
+      "ChargingLabel": "CHARGING",
+      "Off": "Gray, static waveform",
+      "OffLabel": "OFF",
+      "Ready": "Green, buffer full",
+      "ReadyLabel": "READY",
+      "Title": "Visual Status Indicators"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "Startup",
-    "AutoStartLabel": "Auto-start Flashback",
+    "AutoStartAudio": "Audio Flashback",
     "AutoStartDesc": "Start flashback when app launches",
     "AutoStartDisable": "Disable Auto-start",
-    "AutoStartAudio": "Audio Flashback",
+    "AutoStartLabel": "Auto-start Flashback",
     "AutoStartScreen": "Screen Flashback",
-    "BufferTitle": "Buffer",
-    "BufferDurationLabel": "Buffer Duration",
     "BufferDurationDesc": "How long to keep audio/video buffered",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "Buffer Duration",
+    "BufferTitle": "Buffer",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "Startup"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "Flashback buffer is empty. Try again in a moment.",
+    "EnableFlashback": "Enable flashback to save a moment.",
+    "FailedToSave": "Failed to save flashback buffer.",
+    "SavedFlashback": "Saved flashback to Recordings.",
+    "StillCharging": "Flashback buffer is still charging."
   },
   "FloatingStartBar": {
-    "CloseTooltip": "Close tooltip",
-    "BluetoothMicTitle": "⚠️ Bluetooth Microphone",
     "BluetoothMicDesc": "Your OS may force \"Communications Mode\" which can cause distortion.",
     "BluetoothMicTipLabel": "Tip:",
     "BluetoothMicTipText": "Use a non-Bluetooth microphone for better quality.",
+    "BluetoothMicTitle": "⚠️ Bluetooth Microphone",
+    "CloseTooltip": "Close tooltip",
     "FailedToLoadScreens": "Failed to load screens. Please try again.",
     "FailedToLoadWindows": "Failed to load windows. Please try again.",
     "MicrophoneMuted": "Microphone: Muted",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "No microphones found",
     "NoScreensDetected": "No screens detected.",
     "NoWindowsDetected": "No windows detected. Open an app window and refresh.",
+    "RegionReady": "Region ready",
+    "RegionRequired": "Choose a region before recording",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "Screen selection is not available on this platform.",
     "SelectMicrophone": "Select Microphone",
+    "SelectRegion": "Select a region",
+    "SelectScreen": "Select a display",
+    "SelectWindow": "Select a window",
     "StartRecording": "Start Recording",
     "SystemAudioOff": "System Audio: OFF",
     "SystemAudioOn": "System Audio: ON",
     "WaitingForRegion": "Waiting for region…",
     "WindowNotAvailable": "Window selection is not available on this platform.",
-    "SelectScreen": "Select a display",
-    "SelectWindow": "Select a window",
-    "WindowRequired": "Select a window before recording",
-    "RegionReady": "Region ready",
-    "SelectRegion": "Select a region",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "Choose a region before recording"
+    "WindowRequired": "Select a window before recording"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "Fullscreen Selected",
-    "ClickToRecord": "Click Start Recording in the floating bar to record the selected region"
+    "ClickToRecord": "Click Start Recording in the floating bar to record the selected region",
+    "FullscreenSelected": "Fullscreen Selected"
+  },
+  "GeminiLive": {
+    "AITranscription": "AI Transcription",
+    "CollapseNowSpeaking": "Collapse",
+    "EnableDescription": "Real-time transcription powered by Gemini during recording",
+    "EnableIntegration": "Enable Live AI Transcription",
+    "Error": "Error",
+    "ExpandNowSpeaking": "Expand",
+    "NowSpeaking": "Now Speaking...",
+    "SegmentCount_one": "{{count}} segments",
+    "SegmentCount_other": "{{count}} segments",
+    "WaitingForConnection": "Connecting...",
+    "WaitingForSpeech": "Waiting for speech..."
   },
   "IdleCompactView": {
     "ArmFlashback": "Arm Flashback",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  Copy Email",
     "EmailCopied": "✅  Email copied to clipboard"
   },
-  "JumpList": {
-    "RecordAudio": "Record Audio",
-    "RecordAudioDesc": "Start recording audio (mixed)",
-    "RecordFullscreen": "Record Full Screen",
-    "RecordFullscreenDesc": "Start recording full screen video",
-    "RecordRegion": "Snap a Region to Record",
-    "RecordRegionDesc": "Select a screen region to record",
-    "TakeScreenshot": "Take Screenshot",
-    "TakeScreenshotDesc": "Capture a region of the screen",
-    "OpenRecordingsFolder": "Open Recordings Folder",
-    "OpenRecordingsFolderDesc": "Open the default recordings folder"
-  },
   "MeetingPrompt": {
-    "StartTitle": "Meeting Detected",
-    "StartMessage": "Are you having a meeting on {{appName}}? Do you need me to record the meeting right now?",
     "BrowserHint": "💡 Tip: For browser meetings (Google Meet, Zoom, Teams), I can only detect the browser, not the specific website.",
-    "RememberChoice": "Remember my choice and don't prompt again",
-    "Yes": "Start Recording",
-    "No": "Cancel",
-    "EndTitle": "Meeting Ended",
-    "EndMessage": "I detected meeting on {{appName}} just ended. Would you like me to stop recording?",
     "ContinueRecording": "Continue Recording",
+    "EndMessage": "I detected meeting on {{appName}} just ended. Would you like me to stop recording?",
+    "EndTitle": "Meeting Ended",
+    "No": "Cancel",
     "Pause": "Pause",
-    "Resume": "Resume",
-    "Stop": "Stop",
+    "PlayRecording": "Play",
     "RecordingSaved": "Recording saved",
     "RecordingSavedWithFilename": "{{fileName}} Saved",
+    "RememberChoice": "Remember my choice and don't prompt again",
     "RenameFile": "Rename",
     "ShowInFolder": "Show in Folder",
-    "PlayRecording": "Play",
+    "StartMessage": "Are you having a meeting on {{appName}}? Do you need me to record the meeting right now?",
+    "StartTitle": "Meeting Detected",
     "StopRecording": "Stop Recording",
-    "Saving": "Saving..."
+    "Yes": "Start Recording"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "Action Items",
+    "CollapseNowSpeaking": "Collapse Now Speaking",
+    "ConnectionError": "Failed to connect to SeaMeet",
+    "Content": "SeaMeet Content",
+    "DueDate": "Due: {{date}}",
+    "EnableIntegration": "Enable SeaMeet Transcription",
+    "ExpandNowSpeaking": "Expand Now Speaking",
+    "FetchError": "Failed to load transcriptions",
+    "LanguageHint": "You can change the language during recording",
+    "LiveTranscription": "Live Transcription",
+    "LoadingContent": "Loading SeaMeet content...",
+    "LoadingTranscript": "Loading transcript...",
+    "NoActionItems": "No action items for this meeting",
+    "NoNotes": "No notes for this meeting",
+    "NoSummary": "Summary is not available yet.",
+    "Notes": "Notes",
+    "NoTranscript": "No transcriptions available",
+    "NoTranslation": "No Translation",
+    "NowSpeaking": "Now Speaking...",
+    "Retry": "Retry",
+    "SeekToTime": "Click to play from this time",
+    "SegmentCount_one": "{{count}} segments",
+    "SegmentCount_other": "{{count}} segments",
+    "SignInRequired": "Sign in required",
+    "Summary": "Summary",
+    "Transcribed": "Transcribed",
+    "Transcript": "Transcript",
+    "TranscriptionLanguage": "Transcription Language",
+    "TranslationLanguage": "Translation Language",
+    "UnknownSpeaker": "Speaker",
+    "WaitingForSpeech": "Waiting for speech..."
   },
   "MinimizedView": {
     "ActionRequired": "Action Required (Auto-Record)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "Screen flashback charging...",
     "ScreenRecording": "Screen recording ({{time}})"
   },
+  "Pause": "Pause",
   "Permissions": {
-    "AutoRecordNextTime": "Do you want to auto record this app next time?",
     "AlwaysAutoRecord": "Always Auto Record",
-    "NeverRecord": "Never Record",
     "AskEveryTime": "Ask Every Time",
-    "AutoRecordStarted": "Auto-recording started",
+    "AutoRecordNextTime": "Do you want to auto record this app next time?",
     "AutoRecordReason": "{{app}} is set to Always Auto Record. Change the app record permission in Settings -> Auto Record.",
-    "ChangeInSettings": "Change in Settings",
-    "GuidanceTitle": "App Permission Types",
+    "AutoRecordStarted": "Auto-recording started",
+    "AutoStartAudioRule": "If Default Recording Mode is Audio, SeaMeet starts recording immediately without asking.",
+    "AutoStartFallbackRule": "In all other cases, SeaMeet will show the recording mode selector so you can choose.",
+    "AutoStartFullscreenRule": "If Default Recording Mode is Fullscreen and only one screen is connected, SeaMeet starts recording immediately.",
+    "AutoStartHeuristicsTitle": "Auto-start behavior (Always Auto Record)",
     "GuidanceAlways": ": SeaMeet will auto record without asking for confirmation",
     "GuidanceAsk": ": SeaMeet will ask for your permission to record every time",
     "GuidanceNever": ": SeaMeet will not prompt to record",
-    "AutoStartHeuristicsTitle": "Auto-start behavior (Always Auto Record)",
-    "AutoStartAudioRule": "If Default Recording Mode is Audio, SeaMeet starts recording immediately without asking.",
-    "AutoStartFullscreenRule": "If Default Recording Mode is Fullscreen and only one screen is connected, SeaMeet starts recording immediately.",
-    "AutoStartFallbackRule": "In all other cases, SeaMeet will show the recording mode selector so you can choose."
+    "GuidanceTitle": "App Permission Types",
+    "NeverRecord": "Never Record"
+  },
+  "PipelineStatus": {
+    "Done": "Summary ready",
+    "Error": "Processing failed",
+    "Progress": "Processing chunk {{current}} of {{total}}",
+    "Queued": "Summary queued...",
+    "Running": "Generating summary..."
   },
   "Player": {
     "Mute": "Mute",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "Close playback",
-    "MoreOptions": "More options",
-    "CodecInfo": "Codec information"
+    "CodecInfo": "Codec information",
+    "MoreOptions": "More options"
+  },
+  "RecordingControls": {
+    "AudioRecording": "Audio recording",
+    "ContinueRecording": "Continue Recording",
+    "RecordingAudio": "Recording audio..",
+    "RecordingMode": "Recording mode",
+    "RecordingPreview": "Recording preview",
+    "RecordingScreen": "Recording screen..",
+    "StartRecording": "Start Recording",
+    "Stop": "Stop",
+    "StopRecording": "Stop Recording",
+    "VideoRecording": "Video recording"
+  },
+  "RecordingModes": {
+    "AreaCapture": "Area Capture",
+    "CaptureMode": "Capture Mode",
+    "FullScreen": "Full Screen",
+    "RecordAudio": "Audio",
+    "RecordAudioTip": "Audio only",
+    "RecordFullscreen": "Fullscreen",
+    "RecordFullscreenTip": "Capture your entire screen",
+    "RecordRegion": "Region",
+    "RecordRegionTip": "Capture a custom region",
+    "RecordWindow": "Window",
+    "RecordWindowTip": "Capture a single app window"
+  },
+  "RecordingsList": {
+    "CopyFileName": "Copy file name",
+    "CopyFilePath": "Copy file path",
+    "FileNameCopied": "{{fileName}} copied to clipboard",
+    "FilePathCopied": "File path copied to clipboard",
+    "OpenSaveFolder": "Open Folder",
+    "RecentCaptures": "Recent Captures",
+    "Recovered_one": "{{count}} recording recovered",
+    "Recovered_other": "{{count}} recordings recovered",
+    "RefreshRecordings": "Refresh",
+    "SaveAs": "Save as",
+    "SearchRecordingsOrSnapshots": "Search recordings and snapshots",
+    "ShowInFolder": "Show in folder"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "File",
-    "Microphone": "Microphone",
-    "App": "{{appName}}"
+    "Microphone": "Microphone"
   },
   "RegionSelector": {
     "CaptureButton": "Capture Screen or Press Enter",
@@ -443,84 +807,73 @@
     "Monitor": "Monitor",
     "PrimaryMonitor": "Primary Monitor"
   },
-  "Reliability": {
-    "Stable": "Stable",
-    "Experimental": "Experimental",
-    "NotTested": "Not Tested"
-  },
+  "Resume": "Resume",
   "RingMenu": {
+    "AutoDetectOff": "Auto Detect: OFF",
+    "AutoDetectOn": "Auto Detect: ON",
     "FlashbackCharging": "Flashback Charging...",
     "FlashbackNotCharged": "Flashback not charged, click once to charge audio flashback, double click to charge screen flashback",
     "FlashbackSaveTooltip": "Single click to save the last {{duration}}s {{mode}} flashback. Double click to continue recording from here.",
-    "RecordRegion": "Record Region",
-    "RecordFullscreen": "Record Full Screen",
-    "TakeScreenshot": "Take Screenshot",
-    "AutoDetectOn": "Auto Detect: ON",
-    "AutoDetectOff": "Auto Detect: OFF",
     "RecordAudio": "Record Audio",
-    "RecordWindow": "Record Window"
+    "RecordFullscreen": "Record Full Screen",
+    "RecordRegion": "Record Region",
+    "RecordWindow": "Record Window",
+    "TakeScreenshot": "Take Screenshot"
   },
   "ScreenPicker": {
-    "Title": "Select a display",
     "Instruction": "Choose which display to record for fullscreen recordings.",
-    "Refresh": "Refresh",
-    "Refreshing": "Refreshing…",
     "Loading": "Loading displays…",
     "None": "No displays detected.",
+    "Refresh": "Refresh",
+    "Refreshing": "Refreshing…",
+    "Title": "Select a display",
     "Unknown": "Untitled display"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "Analysis",
+    "ButtonLabel": "Process with AI",
+    "Custom": "Custom prompt",
+    "CustomPlaceholder": "Ask anything about this image...",
+    "Describe": "Describe image",
+    "DescribeSub": "What is in this screenshot?",
+    "Description": "Description",
+    "ExtractedText": "Extracted Text",
+    "Ocr": "Extract text (OCR)",
+    "OcrSub": "Read all visible text",
+    "PipelineError": "AI processing failed. Please try again.",
+    "ProcessingWithTime": "Processing... {{sec}}s",
+    "Queuing": "Queuing...",
+    "ResultLabel": "AI Result",
+    "UnknownError": "Unknown error"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copied!",
     "CopyFailed": "Failed to copy screenshot to clipboard",
     "CopyToClipboard": "Copy to clipboard",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "Delete",
     "Dimensions": "Dimensions",
     "FileSize": "File Size",
-    "Filename": "Filename",
     "OpenInSystemViewer": "Open in system viewer",
-    "Rename": "Rename",
     "ScreenshotCopied": "Screenshot copied to clipboard",
     "Share": "Share",
     "ShareCompleted": "Share completed",
     "ShareFailed": "Sharing not supported on this browser. Open screenshot manually to share.",
-    "ShareNotSupported": "Native sharing not supported on this platform. Use Copy to clipboard instead.",
     "Sharing": "Sharing...",
-    "Timestamp": "Timestamp",
     "ZeroBytes": "0 Bytes"
   },
   "Settings": {
-    "Title": "Settings",
     "About": {
       "CheckForUpdates": "Check for Updates",
       "CheckingUpdates": "Checking for Updates...",
-      "UpdateAvailable": "New version {{version}} is available",
-      "UpdateReady": "Version {{version}} is ready to install",
-      "NoUpdatesAvailable": "No updates available",
       "InstallNow": "Install Now",
-      "TermsOfService": "Terms of Service",
-      "PrivacyPolicy": "Privacy Policy",
       "LegalToggle": {
+        "FullVersion": "Full Version",
         "OneSentence": "1‑Sentence",
-        "TLDR": "TLDR",
-        "FullVersion": "Full Version"
+        "TLDR": "TLDR"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet is a free, privacy‑first recorder where local use requires no account, your data stays yours, cloud features are optional, and you must get consent before recording.",
-        "TLDRTitle": "SeaMeet Terms — TLDR for Busy Humans",
-        "TLDRItems": [
-          "SeaMeet Desktop is free — all non‑AI features work without an account or login.",
-          "Get consent before recording — SeaMeet doesn't check this for you.",
-          "Your recordings and transcripts are yours; SeaMeet only processes them to run as service.",
-          "Cloud features require an account and store data on SeaMeet servers.",
-          "Anonymous diagnostics are optional and can be turned off anytime.",
-          "Don't misuse of app (no illegal use, no hacking).",
-          "Service may change, and liability is limited."
-        ]
-      },
+      "NoUpdatesAvailable": "No updates available",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop keeps all recordings on your device fully local and private, and requires no account. Cloud features are optional, encrypted, and fully under your control.",
-        "TLDRTitle": "SeaMeet Privacy — TLDR for Busy Humans",
         "TLDRItems": [
           "SeaMeet Desktop is private by design: everything stays on your device; we don't collect audio, video, screen content, or meeting data.",
           "No account needed to use desktop app's non‑AI features.",
@@ -530,744 +883,299 @@
           "Third‑party integrations are optional and fully revocable.",
           "We don't sell data, and cloud recordings are encrypted.",
           "You control your data — delete recordings anytime or request full deletion."
-        ]
+        ],
+        "TLDRTitle": "SeaMeet Privacy — TLDR for Busy Humans"
       },
+      "PrivacyPolicy": "Privacy Policy",
       "PrivacySecurity": {
-        "Title": "PRIVACY AND SECURITY",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "Auto-detect will NEVER start a recording automatically without your explicit approval.",
+            "Title": "Explicit Approval Required"
+          },
           "MicrophoneActivity": {
-            "Title": "Microphone Activity Only",
-            "Description": "Auto-detect monitors your microphone use to infer which app uses it. No data is captured."
+            "Description": "Auto-detect monitors your microphone use to infer which app uses it. No data is captured.",
+            "Title": "Microphone Activity Only"
           },
           "NoDataAccess": {
-            "Title": "No Data Access",
-            "Description": "Auto-detect only detects whether microphone is used or not. It does NOT access any recorded data."
-          },
-          "ExplicitApproval": {
-            "Title": "Explicit Approval Required",
-            "Description": "Auto-detect will NEVER start a recording automatically without your explicit approval."
+            "Description": "Auto-detect only detects whether microphone is used or not. It does NOT access any recorded data.",
+            "Title": "No Data Access"
           },
           "NoDataCollection": {
-            "Title": "No Data Collection",
-            "Description": "SeaMeet does not collect ANY data from auto-detect feature without your consent."
+            "Description": "SeaMeet does not collect ANY data from auto-detect feature without your consent.",
+            "Title": "No Data Collection"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "100% Local",
-            "Description": "Flashback runs entirely on your local machine. Nothing is synced to the cloud."
+          "EthicalUse": {
+            "Description": "Always inform and obtain consent from others before using Flashback to record them.",
+            "Title": "Ethical Use"
           },
-          "RAMOnly": {
-            "Title": "RAM Only",
-            "Description": "All data stays in memory. Nothing is written to disk unless you save a Flashback recording."
+          "LocalOnly": {
+            "Description": "Flashback runs entirely on your local machine. Nothing is synced to the cloud.",
+            "Title": "100% Local"
           },
           "Protected": {
-            "Title": "Protected",
-            "Description": "Your privacy and security are paramount. Your data never leaves your device."
+            "Description": "Your privacy and security are paramount. Your data never leaves your device.",
+            "Title": "Protected"
           },
-          "EthicalUse": {
-            "Title": "Ethical Use",
-            "Description": "Always inform and obtain consent from others before using Flashback to record them."
+          "RAMOnly": {
+            "Description": "All data stays in memory. Nothing is written to disk unless you save a Flashback recording.",
+            "Title": "RAM Only"
           }
-        }
-      }
+        },
+        "Title": "PRIVACY AND SECURITY"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet is a free, privacy‑first recorder where local use requires no account, your data stays yours, cloud features are optional, and you must get consent before recording.",
+        "TLDRItems": [
+          "SeaMeet Desktop is free — all non‑AI features work without an account or login.",
+          "Get consent before recording — SeaMeet doesn't check this for you.",
+          "Your recordings and transcripts are yours; SeaMeet only processes them to run as service.",
+          "Cloud features require an account and store data on SeaMeet servers.",
+          "Anonymous diagnostics are optional and can be turned off anytime.",
+          "Don't misuse of app (no illegal use, no hacking).",
+          "Service may change, and liability is limited."
+        ],
+        "TLDRTitle": "SeaMeet Terms — TLDR for Busy Humans"
+      },
+      "TermsOfService": "Terms of Service",
+      "UpdateAvailable": "New version {{version}} is available",
+      "UpdateReady": "Version {{version}} is ready to install"
     },
-    "General": "General",
-    "Storage": {
-      "Title": "Storage Settings",
-      "Description": "Choose the default folder SeaMeet uses when automatically saving recordings.",
-      "DefaultPathLabel": "Default Save Folder",
-      "Browse": "Browse...",
-      "Save": "Save",
-      "RecordingNameLabel": "Recording name"
+    "AppPermissions": {
+      "DefaultRecordingMode": "Default recording mode",
+      "DeleteTooltip": "Remove from list (resets to 'Ask Every Time')",
+      "EmptyState": "No apps detected yet. When SeaMeet detects an app using your microphone, it will appear here.",
+      "PathCopied": "Path copied to clipboard",
+      "PermissionHeader": "App Permissions",
+      "Title": "App Permissions"
     },
-    "ProfileSettings": "Profile Settings",
-    "AccountPreferences": "Account Preferences",
-    "ProfileSettingsDescription": "Manage your profile information",
-    "AccountPreferencesDescription": "Manage your account preferences",
-    "SettingsFileLocation": "Settings File Location",
-    "SettingsFileDescription": "Settings are stored in a single JSON file for easy backup and management",
     "Back": "Back",
-    "OpenFolder": "Open Folder",
     "DefaultUserName": "SeaMeet User",
-    "UserAvatarAlt": "user",
+    "FailedToCheckForUpdates": "Failed to check for updates",
     "GroupTitle": {
-      "Account": "Account",
-      "General": "General",
-      "Automation": "Automation",
-      "RecordingStorage": "Recording Storage",
-      "Configuration": "Configuration",
       "ApplicationInfo": "Application Info",
-      "Legal": "Legal"
+      "Automation": "Automation",
+      "Configuration": "Configuration",
+      "General": "General",
+      "Legal": "Legal",
+      "RecordingStorage": "Recording Storage"
     },
     "Item": {
-      "EditProfile": "Edit Profile",
-      "Account": "Account",
-      "LogOut": "Log Out",
-      "Language": "Language",
+      "AutoRecording": "Auto Recording",
+      "Copyright": "Copyright",
       "ImproveTranslationHint": "Help improve this translation on GitHub →",
-      "Theme": "Theme",
-      "KeyboardShortcuts": "Keyboard Shortcuts",
+      "Language": "Language",
       "MicrophoneGain": "Microphone Gain",
       "StartAtLogin": "Start at Login",
-      "AutoRecording": "Auto Recording",
       "Storage": "Storage",
-      "Copyright": "Copyright"
+      "Theme": "Theme"
     },
     "MicGain": {
-      "Minimal": "Minimal (0.1x)",
-      "Quiet": "Quiet (0.5x)",
-      "Normal": "Normal (1x)",
       "Loud": "Loud (5x)",
-      "Louder": "Louder (10x)"
+      "Louder": "Louder (10x)",
+      "Minimal": "Minimal (0.1x)",
+      "Normal": "Normal (1x)",
+      "Quiet": "Quiet (0.5x)"
+    },
+    "OpenFolder": "Open Folder",
+    "PageTitle": {
+      "About": "About",
+      "AutoRecording": "Auto Recording",
+      "Flashback": "Flashback Recording",
+      "Storage": "Storage"
+    },
+    "SettingsFileLocation": "Settings File Location",
+    "Storage": {
+      "Browse": "Browse...",
+      "DefaultPathLabel": "Default Save Folder",
+      "Description": "Choose the default folder SeaMeet uses when automatically saving recordings.",
+      "Save": "Save",
+      "Title": "Storage Settings"
     },
     "Theme": {
+      "AdobeSand": "Adobe Sand",
+      "AdobeSandDesc": "Warm earthy light mode",
+      "AzureLight": "Azure",
+      "AzureLightDesc": "Cool blue light mode",
+      "CloudCanvas": "Cloud Canvas",
+      "CloudCanvasDesc": "Fresh mint light mode",
+      "ColumnDark": "Dark",
+      "ColumnLight": "Light",
+      "CyberCobalt": "Cyber Cobalt",
+      "CyberCobaltDesc": "Neon cyan dark mode",
+      "Dark": "Dark",
+      "DarkDesc": "Dark mode",
       "Device": "Device",
       "DeviceDesc": "Follow system settings",
       "Light": "Light",
       "LightDesc": "Light mode",
-      "Dark": "Dark",
-      "DarkDesc": "Dark mode",
-      "Pink": "Dark Pink",
-      "PinkDesc": "Dark pink mode",
       "LightPink": "Light Pink",
       "LightPinkDesc": "Light pink mode",
-      "ColumnLight": "Light",
-      "ColumnDark": "Dark",
-      "AzureLight": "Azure",
-      "AzureLightDesc": "Cool blue light mode",
-      "WarmPaper": "Warm Paper",
-      "WarmPaperDesc": "Warm paper-toned light mode",
-      "SynthwaveLight": "Synthwave Light",
-      "SynthwaveLightDesc": "Vibrant synthwave light mode",
       "MidnightBlue": "Midnight Blue",
       "MidnightBlueDesc": "Deep blue dark mode",
-      "CloudCanvas": "Cloud Canvas",
-      "CloudCanvasDesc": "Fresh mint light mode",
-      "CyberCobalt": "Cyber Cobalt",
-      "CyberCobaltDesc": "Neon cyan dark mode",
-      "AdobeSand": "Adobe Sand",
-      "AdobeSandDesc": "Warm earthy light mode"
+      "Pink": "Dark Pink",
+      "PinkDesc": "Dark pink mode",
+      "SynthwaveLight": "Synthwave Light",
+      "SynthwaveLightDesc": "Vibrant synthwave light mode",
+      "WarmPaper": "Warm Paper",
+      "WarmPaperDesc": "Warm paper-toned light mode"
     },
-    "PageTitle": {
-      "Flashback": "Flashback Recording",
-      "About": "About",
-      "AutoRecording": "Auto Recording",
-      "Storage": "Storage"
-    },
-    "FailedToCheckForUpdates": "Failed to check for updates",
-    "AppPermissions": {
-      "Title": "App Permissions",
-      "Description": "Manage which apps can auto-record when detected using your microphone.",
-      "EmptyState": "No apps detected yet. When SeaMeet detects an app using your microphone, it will appear here.",
-      "DeleteTooltip": "Remove from list (resets to 'Ask Every Time')",
-      "PathCopied": "Path copied to clipboard",
-      "PermissionHeader": "App Permissions",
-      "DefaultRecordingMode": "Default recording mode"
-    }
+    "Title": "Settings",
+    "UserAvatarAlt": "user"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "Show Floating Window",
-    "OpenLauncher": "Open Launcher",
-    "RecordAudio": "Record Audio",
-    "RecordFullscreen": "Record Fullscreen",
-    "RecordWindow": "Record Window",
-    "RecordRegion": "Record Region",
     "CaptureScreenshot": "Capture Screenshot",
-    "RestoreDefaults": "Restore defaults",
-    "RecordingPrompt": "Listening… press the new shortcut",
     "ConflictWarning": "This shortcut is already used by another app and can't be registered.",
     "GenericError": "Unable to update shortcut.",
     "None": "None",
-    "SpaceKey": "Space"
+    "OpenLauncher": "Open Launcher",
+    "RecordAudio": "Record Audio",
+    "RecordFullscreen": "Record Fullscreen",
+    "RecordingPrompt": "Listening… press the new shortcut",
+    "RecordRegion": "Record Region",
+    "RecordWindow": "Record Window",
+    "RestoreDefaults": "Restore defaults",
+    "SpaceKey": "Space",
+    "ToggleFloatingWindow": "Show Floating Window"
   },
   "Sidebar": {
-    "PrimaryNavigation": "Primary navigation",
     "ClearSearch": "Clear search",
-    "AgentPanel": "AI Agent"
-  },
-  "SidebarTabs": {
-    "Audios": "Audios",
-    "AutoDetect": "Auto detect"
+    "PrimaryNavigation": "Primary navigation"
   },
   "TakeSnapshot": {
-    "Title": "Snapshot Taken",
+    "GoToSnapshot": "Go to new snapshot",
     "Message": "Snapshot taken and saved to:",
     "StayAtVideo": "Stay at current video",
-    "GoToSnapshot": "Go to new snapshot"
+    "Title": "Snapshot Taken"
   },
   "TopNav": {
-    "CloseNavigationMenu": "Close navigation menu",
-    "OpenNavigationMenu": "Open navigation menu",
-    "MainNavigation": "Main navigation",
-    "Record": "Record",
-    "Recording": "Recording",
-    "Files": "Files",
     "Agent": "Agent",
-    "Terminal": "Terminal"
+    "CloseNavigationMenu": "Close navigation menu",
+    "Files": "Files",
+    "MainNavigation": "Main navigation",
+    "OpenNavigationMenu": "Open navigation menu",
+    "Record": "Record",
+    "Recording": "Recording"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet is still running in the system tray (bottom-right).",
-    "ShowLauncher": "Show Launcher",
-    "ShowFloatingWindow": "Show Floating Window",
-    "ShowMainWindow": "Show Main Window",
-    "ExitSeaMeet": "Exit SeaMeet",
-    "QuickRecording": "Quick Recording",
-    "RecordAudio": "Record Audio",
-    "RecordFullscreen": "Record Full Screen",
-    "RecordRegion": "Snap a Region to Record",
-    "OpenRecordingsFolder": "Open Recordings Folder",
-    "TakeScreenshot": "Take Screenshot",
-    "Close": "Close",
-    "OpenSeaMeet": "Open SeaMeet",
-    "OpenSaveFolder": "Open Save Folder",
-    "ReportIssues": "Report Issues"
+    "MinimizedHint": "SeaMeet is still running in the system tray (bottom-right)."
   },
   "Types": {
-    "Microphone": "Microphone",
-    "System": "System Audio Output",
     "Both": "Both (Mixed)",
     "File": "File",
+    "Microphone": "Microphone",
+    "System": "System Audio Output",
     "Video": "Video"
   },
   "UpdateQuitModal": {
-    "Title": "Update Available",
-    "ReadyToInstall": "SeaMeet {{version}} is ready to install.",
-    "InstallBeforeQuitting": "Would you like to install it before quitting?",
     "InstallAndQuit": "Install & Quit",
-    "QuitWithoutInstalling": "Quit without Installing"
+    "InstallBeforeQuitting": "Would you like to install it before quitting?",
+    "QuitWithoutInstalling": "Quit without Installing",
+    "ReadyToInstall": "SeaMeet {{version}} is ready to install.",
+    "Title": "Update Available"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} is ready to install",
-    "Downloading": "Downloading SeaMeet {{version}} ({{percent}}%)",
     "Available": "Update available: SeaMeet {{version}}",
-    "WhatsNewInVersion": "What's New in {{version}}?",
-    "WhatsNew": "What's New:",
+    "Dismiss": "Dismiss",
+    "Downloading": "Downloading SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Hide",
+    "ReadyToInstall": "SeaMeet {{version}} is ready to install",
     "RestartNow": "Restart Now",
     "ViewRelease": "View Release",
     "ViewReleaseTitle": "View Release Notes on GitHub",
-    "Dismiss": "Dismiss"
+    "WhatsNew": "What's New:",
+    "WhatsNewInVersion": "What's New in {{version}}?"
   },
   "UserMenu": {
+    "AboutSeaMeet": "About SeaMeet",
     "DisplayName": "User",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "Profile Settings",
-    "AccountPreferences": "Account Preferences",
-    "BillingPlans": "Billing & Plans",
-    "StorageSettings": "Storage Settings",
-    "HelpSupport": "Help & Support",
-    "KeyboardShortcuts": "Keyboard Shortcuts",
-    "SignIn": "Sign In",
-    "SignOut": "Sign Out",
-    "SeaMeetSignedOut": "SeaMeet: Not signed in",
-    "SeaMeetSignedIn": "SeaMeet: Signed in",
-    "AboutSeaMeet": "About SeaMeet",
     "Exit": "Exit",
+    "HelpSupport": "Help & Support",
     "HelpSupportSection": {
-      "Wiki": "Wiki",
-      "WikiDesc": "Check out the SeaMeet wiki for documentation and guides.",
-      "VisitWiki": "Visit Wiki",
-      "Issues": "Issues",
-      "IssuesDesc": "Report bugs and request features (requires GitHub account).",
-      "SubmitIssue": "Submit Issue",
       "Discussion": "Discussion",
       "DiscussionDesc": "Join the community discussion (requires GitHub account).",
-      "JoinDiscussion": "Join Discussion",
+      "DogfoodingDesc": "We encourage you to use SeaMeet to record an issue and post it in either Issues or Email us!",
       "Email": "Email",
       "EmailDesc": "Reach out to our team directly.",
-      "SendEmail": "Send Email",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "We encourage you to use SeaMeet to record an issue and post it in either Issues or Email us!",
-      "CheckForUpdates": "Check for Updates",
-      "CheckingUpdates": "Checking for Updates...",
-      "UpdateAvailable": "New version {{version}} is available",
-      "UpdateReady": "Version {{version}} is ready to install",
-      "InstallNow": "Install Now",
-      "TermsOfService": "Terms of Service",
-      "PrivacyPolicy": "Privacy Policy",
       "ImproveTranslation": "Improve Translations",
-      "ImproveTranslationDesc": "Help us improve translations or request a new language on GitHub."
-    }
+      "ImproveTranslationDesc": "Help us improve translations or request a new language on GitHub.",
+      "Issues": "Issues",
+      "IssuesDesc": "Report bugs and request features (requires GitHub account).",
+      "JoinDiscussion": "Join Discussion",
+      "SendEmail": "Send Email",
+      "SubmitIssue": "Submit Issue",
+      "VisitWiki": "Visit Wiki",
+      "Wiki": "Wiki",
+      "WikiDesc": "Check out the SeaMeet wiki for documentation and guides."
+    },
+    "KeyboardShortcuts": "Keyboard Shortcuts",
+    "SeaMeetSignedIn": "SeaMeet: Signed in",
+    "SeaMeetSignedOut": "SeaMeet: Not signed in",
+    "SignIn": "Sign In",
+    "SignOut": "Sign Out"
   },
   "VideoSettings": {
-    "Title": "Video Recording Settings",
-    "Mode": "Recording Mode",
-    "ModeOff": "Off",
-    "ModeFullscreen": "Fullscreen",
-    "ModeWindow": "Window",
-    "ModeRegion": "Region",
+    "AudioSettings": "Audio Settings",
+    "CodecTooltip": {
+      "VP8": "This recording uses VP8 for best quality. Some default video players — such as Windows Media Player and QuickTime on macOS — may not support this format. For reliable playback, please use a modern browser (Chrome or Edge) or a compatible player like VLC.",
+      "VP9": "This recording uses VP9 for best quality. Some default video players — such as Windows Media Player and QuickTime on macOS — may not support this format. For reliable playback, please use a modern browser (Chrome or Edge) or a compatible player like VLC."
+    },
+    "Detecting": "Detecting...",
+    "FlashbackArmedNotice": "You are recording with {{seconds}}s of flashback buffer",
+    "FramesPerSecond": "Frames Per Second",
+    "FullHD": "Full HD",
+    "GBPerHour": "~{{gb}} GB/hour",
+    "HD": "HD",
+    "HideWindow": "Hide SeaMeet window when selecting region",
+    "Internal": "Internal",
+    "MBPerMin": "~{{mb}} MB/min, ",
     "ModeAudioOnly": "Audio only",
-    "SelectScreen": "Select Screen",
-    "SelectWindow": "Select Window",
-    "Refresh": "Refresh",
+    "ModeFullscreen": "Fullscreen",
+    "ModeRegion": "Region",
+    "ModeWindow": "Window",
+    "Native": "Native",
     "NoScreens": "No screens detected",
     "NoWindows": "No windows available",
-    "RegionInfo": "You will be prompted to select a screen or window when recording starts.",
-    "HideWindow": "Hide SeaMeet window when selecting region",
-    "VideoQuality": "Video Quality",
-    "Quality": "Quality",
-    "QualityOriginal": "Original",
-    "QualityHigh": "High",
-    "QualityMedium": "Medium",
-    "QualityLow": "Low",
-    "FramesPerSecond": "Frames Per Second",
-    "FrameRate": "Frame Rate",
-    "SourceResolution": "Source Resolution",
-    "Native": "Native",
-    "FullHD": "Full HD",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "Select a source above",
-    "ZeroSize": "~0 MB/min, ~0 GB/hour",
-    "MBPerMin": "~{{mb}} MB/min, ",
-    "GBPerHour": "~{{gb}} GB/hour",
     "Primary": "Primary",
-    "Internal": "Internal",
-    "Detecting": "Detecting...",
-    "ResolutionUnknown": "Resolution unknown",
-    "AudioSettings": "Audio Settings",
-    "RecordModeTitle": "Record Audio or Video?",
+    "QualityHigh": "High",
+    "QualityLow": "Low",
+    "QualityMedium": "Medium",
+    "QualityOriginal": "Original",
     "Record": "Record",
-    "RecordWithoutFlashback": "Record without Flashback",
+    "RecordModeTitle": "Record Audio or Video?",
     "RecordWithFlashback": "Record with Flashback",
+    "RecordWithoutFlashback": "Record without Flashback",
+    "Refresh": "Refresh",
+    "ResolutionUnknown": "Resolution unknown",
+    "SD": "SD",
+    "SelectScreen": "Select Screen",
+    "SelectSourceAbove": "Select a source above",
+    "SelectWindow": "Select Window",
+    "SourceResolution": "Source Resolution",
+    "Title": "Video Recording Settings",
     "VideoFlashbackArmedNotice": "Screen flashback armed ({{seconds}}s)",
-    "FlashbackArmedNotice": "You are recording with {{seconds}}s of flashback buffer",
-    "CodecTooltip": {
-      "VP9": "This recording uses VP9 for best quality. Some default video players — such as Windows Media Player and QuickTime on macOS — may not support this format. For reliable playback, please use a modern browser (Chrome or Edge) or a compatible player like VLC.",
-      "VP8": "This recording uses VP8 for best quality. Some default video players — such as Windows Media Player and QuickTime on macOS — may not support this format. For reliable playback, please use a modern browser (Chrome or Edge) or a compatible player like VLC."
-    }
+    "VideoQuality": "Video Quality",
+    "ZeroSize": "~0 MB/min, ~0 GB/hour"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "Region Selected",
     "CustomRegion": "Custom region: {{width}} × {{height}} pixels",
-    "ReselectRegion": "Re-select Region",
-    "SelectCustomRegion": "Select Custom Region",
     "FPS15": "15 FPS",
     "FPS30": "30 FPS",
-    "FPS60": "60 FPS"
+    "FPS60": "60 FPS",
+    "RegionSelected": "Region Selected",
+    "ReselectRegion": "Re-select Region",
+    "SelectCustomRegion": "Select Custom Region"
   },
   "WindowPicker": {
-    "Title": "Select a window",
     "Instruction": "Choose a window to capture for window recordings.",
-    "Refresh": "Refresh",
-    "Refreshing": "Refreshing…",
     "Loading": "Loading windows…",
     "None": "No windows detected. Open an application and refresh.",
+    "Refresh": "Refresh",
+    "Refreshing": "Refreshing…",
+    "Title": "Select a window",
     "Unknown": "Untitled window"
-  },
-  "Common": {
-    "Configure": "Configure",
-    "Cancel": "Cancel",
-    "Apply": "Apply",
-    "Close": "Close",
-    "Open": "Open",
-    "Minimize": "Minimize to circle",
-    "Recording": "Recording",
-    "UnknownApp": "Unknown App",
-    "Done": "Done",
-    "Save": "Save",
-    "Saving": "Saving...",
-    "Delete": "Delete",
-    "Or": "Or",
-    "Loading": "Loading...",
-    "Expand": "Expand",
-    "PlannedFeature": "Planned Feature",
-    "Screen": "Screen",
-    "Window": "Window",
-    "Region": "Region",
-    "AppTitle": "SeaMeet Screen & Audio Recorder",
-    "AppSubtitle": "Record device input and output audio",
-    "Screenshot": "Screenshot",
-    "Saved": "Saved",
-    "Processing": "Processing…",
-    "Starting": "Starting...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} copied to clipboard. Double click to change file name.",
-    "ApplyName": "Apply name",
-    "Send": "Send"
-  },
-  "RecordingControls": {
-    "StartRecording": "Start Recording",
-    "StopRecording": "Stop Recording",
-    "ContinueRecording": "Continue Recording",
-    "Pause": "Pause",
-    "Resume": "Resume",
-    "Stop": "Stop",
-    "RecordingScreen": "Recording screen..",
-    "RecordingAudio": "Recording audio..",
-    "AudioRecording": "Audio recording",
-    "VideoRecording": "Video recording",
-    "RecordingPreview": "Recording preview",
-    "RecordingMode": "Recording mode"
-  },
-  "RecordingModes": {
-    "RecordAudio": "Audio",
-    "RecordAudioTip": "Audio only",
-    "RecordWindow": "Window",
-    "RecordWindowTip": "Capture a single app window",
-    "RecordFullscreen": "Fullscreen",
-    "RecordFullscreenTip": "Capture your entire screen",
-    "RecordRegion": "Region",
-    "RecordRegionTip": "Capture a custom region",
-    "CaptureMode": "Capture Mode",
-    "FullScreen": "Full Screen",
-    "AreaCapture": "Area Capture"
-  },
-  "RecordingsList": {
-    "NoRecordings": "No recordings yet. Start recording to see them here.",
-    "RecentRecordings": "Recent recordings",
-    "RecentCaptures": "Recent Captures",
-    "RefreshRecordings": "Refresh",
-    "SearchRecordingsOrSnapshots": "Search recordings and snapshots",
-    "SearchRecordingsPlaceholder": "Search recordings",
-    "ShowInFolder": "Show in folder",
-    "CopyFileName": "Copy file name",
-    "CopyFilePath": "Copy file path",
-    "FileNameCopied": "{{fileName}} copied to clipboard",
-    "FilePathCopied": "File path copied to clipboard",
-    "SaveAs": "Save as",
-    "OpenSaveFolder": "Open Folder",
-    "Title": "Recordings",
-    "Recovered": "{{count}} recording(s) recovered"
-  },
-  "FileImport": {
-    "ImportMedia": "Import Media",
-    "DragDropFiles": "Drag and drop your audio, video, and image files here",
-    "DragDropSubtitle": "Drag and drop audio, video, and image files here",
-    "BrowseFiles": "Browse Files",
-    "Supported": "Supported",
-    "SupportedFormats": "Supported: MP3, WAV, M4A, WebM, OGG, PNG, JPG, and more",
-    "VideoImportCopying": "Copying video file...",
-    "VideoImportSaving": "Saving video file...",
-    "VideoUnsupported": "This video format may not be playable in the app. The file will still be imported."
-  },
-  "AudioControls": {
-    "AudioCapture": "Audio Capture",
-    "AudioMix": "Audio Mix",
-    "AudioSessionsLog": "Audio Sessions Log",
-    "AudioSource": "Audio Source:",
-    "InputDevice": "Input Device:",
-    "Microphone": "Microphone",
-    "MicrophoneLabel": "Microphone {{id}}",
-    "RecordingDefaultMicrophone": "Default Microphone",
-    "RecordingInputLabel": "Input: {{name}}",
-    "RecordingSettings": "Recording settings",
-    "RecordingType": "Recording Type:",
-    "RefreshMicrophoneList": "Refresh microphone list",
-    "MicrophoneGainWarning": "High microphone gain can pick up speaker playback even when \"System Audio\" is off. Use headphones or lower microphone gain for mic-only recordings."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "Start Recording",
-    "Ready": "Ready?",
-    "BufferingMoment": "Buffering Moment...",
-    "RecordWithFlashback": "Record with Flashback",
-    "NeverMissAMoment": "Never miss a moment.",
-    "ReadyToGuard": "Ready to guard your {{type}}?",
-    "FillingBuffer": "Filling {{duration}}s flashback buffer... {{progress}}%",
-    "ReadyToCapture": "SeaMeet is ready to capture.",
-    "DescNone": "Record your screen, audio, or take a screenshot. Choose a flashback mode above to enable moment saving.",
-    "DescInit": "Click 'Ready?' to tell SeaMeet to start 'remembering' the past.",
-    "DescCharging": "Priming your {{duration}}-second window... almost ready to catch what you might miss. {{progress}}% complete.",
-    "DescReady": "Flashback is armed. Whenever you hit Record, the past {{duration}} seconds of {{type}} is included — never regret a missed moment again.",
-    "Screen": "screen",
-    "Audio": "audio",
-    "OpenLauncher": "Open Launcher",
-    "OpenFloater": "Open Floater",
-    "TakeScreenshot": "Take Screenshot",
-    "Buffering": "Buffering",
-    "SavingFlashback": "Saving flashback…",
-    "SaveLastFlashback": "Save last {{duration}}s flashback",
-    "PrivacyProtected": "Your privacy is protected.",
-    "PrivacyDesc": "SeaMeet snapshots the past {{duration}}s of {{type}} in a ring buffer locally on your computer's RAM.",
-    "FlashbackOff": "Flashback is currently off. Start a normal recording anytime, or choose a flashback mode (audio or screen) above to enable heroic moment saving.",
-    "FlashbackInitAudio": "Ready to guard your audio?",
-    "FlashbackInitScreen": "Ready to guard your screen?",
-    "FlashbackInitDescription": "Click 'Ready?' to tell SeaMeet to start 'remembering' the past.",
-    "FlashbackCharging": "Filling {{seconds}}s buffer... {{percent}}%",
-    "FlashbackChargingDescription": "Priming your {{seconds}}-second window... {{percent}}% complete.",
-    "FlashbackReadyQuestion": "Ready?",
-    "FlashbackReady": "Never miss a moment.",
-    "FlashbackReadyDescription": "Flashback is armed. The past {{seconds}}s of {{type}} is included when you record.",
-    "FlashbackBuffering": "Buffering...",
-    "SaveFlashback": "Save last {{seconds}}s flashback",
-    "FlashbackPrivacy": "Your privacy is protected. Stored locally in RAM.",
-    "Capturing": "Capturing...",
-    "CaptureMode": "Capture Mode",
-    "FullScreen": "Full Screen",
-    "AreaCapture": "Area Capture",
-    "KeepWindowVisible": "Keep SeaMeet window visible when taking screenshot",
-    "FlashbackMismatch": "Flashback mode mismatch. Audio recording but video flashback is active. Please disable video flashback."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "Enable SeaMeet Transcription",
-    "SignInRequired": "Sign in required",
-    "ProcessingMode": "Processing Mode",
-    "Realtime": "Real-time",
-    "RealtimeDescription": "Live transcription as you record",
-    "Diarized": "Diarized",
-    "DiarizedDescription": "Upload audio after recording for speaker identification",
-    "ComingSoon": "(Coming Soon)",
-    "TranscriptionLanguage": "Transcription Language",
-    "TranslationLanguage": "Translation Language",
-    "NoTranslation": "No Translation",
-    "LanguageHint": "You can change the language during recording",
-    "LiveTranscription": "Live Transcription",
-    "WaitingForSpeech": "Waiting for speech...",
-    "UnknownSpeaker": "Speaker",
-    "SegmentCount": "{{count}} segments",
-    "SegmentCount_plural": "{{count}} segments",
-    "ConnectionError": "Failed to connect to SeaMeet",
-    "Reconnecting": "Reconnecting...",
-    "Connected": "Connected to SeaMeet",
-    "Disconnected": "Disconnected from SeaMeet",
-    "NowSpeaking": "Now Speaking...",
-    "Transcript": "Transcript",
-    "LoadingTranscript": "Loading transcript...",
-    "NoTranscript": "No transcriptions available",
-    "FetchError": "Failed to load transcriptions",
-    "Retry": "Retry",
-    "Transcribed": "Transcribed",
-    "Content": "SeaMeet Content",
-    "Tab": {
-      "transcription": "Transcription",
-      "summary": "Summary",
-      "actionItems": "Action Items",
-      "notes": "Notes"
-    },
-    "Summary": "Summary",
-    "NoSummary": "Summary is not available yet.",
-    "ActionItems": "Action Items",
-    "NoActionItems": "No action items for this meeting",
-    "DueDate": "Due: {{date}}",
-    "Notes": "Notes",
-    "NoNotes": "No notes for this meeting",
-    "LoadingContent": "Loading SeaMeet content...",
-    "SeekToTime": "Click to play from this time",
-    "CollapseNowSpeaking": "Collapse Now Speaking",
-    "ExpandNowSpeaking": "Expand Now Speaking"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Flashback buffer is empty. Try again in a moment.",
-    "EnableFlashback": "Enable flashback to save a moment.",
-    "FailedToSave": "Failed to save flashback buffer.",
-    "SavedFlashback": "Saved flashback to Recordings.",
-    "StillCharging": "Flashback buffer is still charging."
-  },
-  "AISummary": {
-    "TabTitle": "AI Extraction & Summary",
-    "SetupRequired": "Configure your Gemini API key in Settings → AI Features to enable AI summaries.",
-    "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
-    "ExportMarkdown": "Copy as Markdown",
-    "ExportSrt": "Copy as SRT",
-    "ExportJson": "Copy as JSON",
-    "Regenerate": "Regenerate summary",
-    "Minimize": "Minimize",
-    "Maximize": "Expand to full view",
-    "Queued": "Queued for processing...",
-    "Processing": "Generating summary...",
-    "Error": "Failed to load summary: {{error}}",
-    "PipelineError": "AI processing failed. Try regenerating.",
-    "Retry": "Retry",
-    "NoSummary": "No AI summary yet.",
-    "Generate": "Generate Summary",
-    "Copy": "Copy",
-    "NoSummaryText": "Summary not available.",
-    "Topics": "Topics:",
-    "NoTranscript": "Transcript not available.",
-    "NoActions": "No action items identified.",
-    "NoDecisions": "No key decisions identified.",
-    "NoChapters": "No chapters available.",
-    "SeekToTimestamp": "Seek to this timestamp",
-    "Export": {
-      "HeadingSummary": "Summary",
-      "HeadingActionItems": "Action Items",
-      "HeadingKeyDecisions": "Key Decisions",
-      "HeadingTranscription": "Transcription"
-    },
-    "ErrorCodes": {
-      "AUTH_ERROR": "API key is invalid or expired. Update it in Settings → AI Features.",
-      "RATE_LIMIT": "Rate limit exceeded. Try regenerating in a few minutes.",
-      "NETWORK_ERROR": "Network error. Check your internet connection and try again.",
-      "PARSE_ERROR": "AI response could not be parsed. Try regenerating.",
-      "UNKNOWN": "An unexpected error occurred. Try regenerating."
-    },
-    "Tab": {
-      "Summary": "Summary",
-      "Transcription": "Transcript",
-      "ActionItems": "Actions",
-      "KeyDecisions": "Decisions",
-      "Chapters": "Chapters",
-      "Agent": "Agent"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "AI Features",
-    "MenuItem": "AI Extraction & Summary",
-    "PageTitle": "AI Extraction & Summary",
-    "EnableToggle": "Enable AI-powered summaries",
-    "EnableToggleDesc": "Requires a free Gemini API key",
-    "ApiKeySection": "Gemini API Key",
-    "ApiKeyLabel": "Gemini API Key",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (saved)",
-    "ShowKey": "Show key",
-    "HideKey": "Hide key",
-    "TestKey": "Save & Verify",
-    "Saving": "Saving...",
-    "GetKeyLink": "Get a free API key from Google AI Studio →",
-    "ClearKey": "Remove saved key",
-    "KeyVerified": "Key verified",
-    "KeyInvalid": "Invalid key",
-    "KeyTesting": "Testing...",
-    "KeyNotConfigured": "No key configured",
-    "ModelSection": "AI Model",
-    "ModelLabel": "Gemini Model",
-    "SelectedModel": "Selected: {{model}}",
-    "AutomationSection": "Automation",
-    "AutoSummary": "Auto-generate summary",
-    "AutoSummaryDesc": "Runs after every recording finishes",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "Recommended · Fast + capable",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "Cheapest stable option",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "Ultra-cheap",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "Maximum capability",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "Best stable reasoning"
-    },
-    "ClaudeKey": {
-      "Section": "Claude API Key (Agent)",
-      "SourceLabel": "Active source:",
-      "SourceByok": "Your API key (BYOK)",
-      "SourceKeyServer": "Managed by SeaMeet",
-      "SourceCli": "Claude Code CLI",
-      "SourceNone": "Not configured",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••• (saved)",
-      "ShowKey": "Show key",
-      "HideKey": "Hide key",
-      "TestKey": "Save & Verify",
-      "Saving": "Saving...",
-      "ClearKey": "Remove saved key",
-      "KeyVerified": "Key verified",
-      "KeyInvalid": "Invalid key",
-      "KeyTesting": "Testing...",
-      "KeyNotConfigured": "No key configured",
-      "GetKeyLink": "Get an API key from Anthropic Console →",
-      "QuotaSection": "Key Server Quota",
-      "QuotaRemaining": "{{remaining}} / {{limit}} tokens remaining",
-      "QuotaResetDate": "Resets on {{date}}",
-      "QuotaLoading": "Loading quota...",
-      "QuotaRefresh": "Refresh quota",
-      "CliSection": "Claude Code CLI",
-      "CliInstalled": "Installed ({{version}})",
-      "CliNotInstalled": "Claude CLI not found",
-      "CliInstallLink": "Install Claude Code →",
-      "ModelSection": "Default Claude Model",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "Fast & cheap",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "Recommended · Balanced",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "Most capable"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AI Agent & Cowork",
-    "PageTitle": "AI Agent & Cowork",
-    "SectionTitle": "AI Agent & Cowork",
-    "EnableToggle": "Enable AI Agent & Cowork",
-    "EnableToggleDesc": "Requires a Claude API Key",
-    "DisabledBadge": "Disabled",
-    "DisabledMsg": "AI Agent & Cowork is disabled. Enable it in Settings → AI Agent & Cowork.",
-    "DisabledTabHint": "AI Agent is disabled — enable it in Settings → AI Agent & Cowork",
-    "NotConfiguredMsg": "No Claude API key configured. Set one up in Settings → AI Agent & Cowork."
-  },
-  "PipelineStatus": {
-    "Queued": "Summary queued...",
-    "Running": "Generating summary...",
-    "Progress": "Processing chunk {{current}} of {{total}}",
-    "Done": "Summary ready",
-    "Error": "Processing failed"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "Process with AI",
-    "Queuing": "Queuing...",
-    "ProcessingWithTime": "Processing... {{sec}}s",
-    "Describe": "Describe image",
-    "DescribeSub": "What is in this screenshot?",
-    "Ocr": "Extract text (OCR)",
-    "OcrSub": "Read all visible text",
-    "Custom": "Custom prompt",
-    "CustomPlaceholder": "Ask anything about this image...",
-    "ResultLabel": "AI Result",
-    "Description": "Description",
-    "ExtractedText": "Extracted Text",
-    "Analysis": "Analysis",
-    "PipelineError": "AI processing failed. Please try again.",
-    "UnknownError": "Unknown error"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "Reading file...",
-      "Executing": "Executing...",
-      "Running": "Running...",
-      "Input": "Input",
-      "Output": "Output",
-      "Pattern": "Pattern:",
-      "ShowDetails": "Show details",
-      "AndMoreLines": "... and {{count}} more lines"
-    },
-    "Streaming": {
-      "Thinking": "Thinking...",
-      "LongRunning": "Running longer than usual",
-      "ToolStuck": "Tool may be stuck",
-      "ForceStop": "Force stop",
-      "GeneratingResponse": "Generating response...",
-      "RunningTool": "Running {{tool}}..."
-    },
-    "Permission": {
-      "Title": "Tool Permission Request",
-      "Allow": "Allow Once",
-      "AllowSession": "Allow for Session",
-      "Deny": "Deny",
-      "Allowed": "Allowed",
-      "Denied": "Denied"
-    },
-    "Title": "AI Agent",
-    "GlobalTitle": "AI Agent",
-    "NewSession": "New session",
-    "Sessions": "Sessions",
-    "NoSessions": "No sessions yet. Start a conversation below.",
-    "SendPlaceholder": "Ask anything... (Enter to send, Shift+Enter for newline)",
-    "SendButton": "Send",
-    "StopButton": "Stop",
-    "NotConfigured": "Configure a Claude API key in Settings → AI Features to use the Agent.",
-    "GoToSettings": "Open Settings",
-    "SessionCost": "Session: {{inputTokens}} in / {{outputTokens}} out tokens",
-    "CommandHelp": "Commands: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "Ask",
-      "Code": "Code",
-      "Plan": "Plan"
-    },
-    "Model": {
-      "Haiku": "Haiku",
-      "Sonnet": "Sonnet",
-      "Opus": "Opus"
-    },
-    "QuickAction": {
-      "Summarize": "Summarize this recording",
-      "ActionItems": "Find action items",
-      "DraftEmail": "Draft follow-up email"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "What can you help me with?",
-      "HelpAnalyze": "Help me analyze my recent recordings"
-    },
-    "AssetContext": "Context: {{name}}"
   }
 }

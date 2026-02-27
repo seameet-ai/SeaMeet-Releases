@@ -2,18 +2,229 @@
   "About": {
     "AppStoreBuild": "نسخه ساخته‌شده در فروشگاه برنامه",
     "DirectBuild": "ساخت مستقیم",
-    "SubtitleBadge": "نشان Snap Recorder & Agent",
-    "Version": "v{{version}}",
+    "HelpTranslate": "به ما در ترجمه SeaMeet → کمک کنید",
     "Loading": "در حال بارگذاری",
-    "HelpTranslate": "به ما در ترجمه SeaMeet → کمک کنید"
+    "SubtitleBadge": "نشان Snap Recorder & Agent",
+    "Version": "v{{version}}"
   },
-  "Activities": {
-    "Productivity": "بهره‌وری",
-    "Social": "شبکه‌های اجتماعی",
-    "Gaming": "بازی‌سازی",
-    "Recording": "ضبط",
-    "Browsers": "مرورگرها",
-    "BrowserBased": "مبتنی بر مرورگر"
+  "AgentPanel": {
+    "AskUser": {
+      "Other": "دیگر",
+      "Skip": "پرش کنید",
+      "Submit": "ارسال کنید",
+      "Title": "سوال",
+      "TypeResponse": "پاسخ خود را تایپ کنید..."
+    },
+    "AssetContext": "زمینه: {{name}}",
+    "CommandHelp": "دستورات: /new · /clear · /cost · /help",
+    "GlobalTitle": "عامل هوش مصنوعی",
+    "GoToSettings": "تنظیمات را باز کنید",
+    "Mode": {
+      "Ask": "بپرسید",
+      "Code": "کد",
+      "Plan": "برنامه ریزی کنید"
+    },
+    "Model": {
+      "Haiku": "هایکو",
+      "Opus": "اپوس",
+      "Sonnet": "غزل"
+    },
+    "NewSession": "جلسه جدید",
+    "NoSessions": "هنوز جلسه ای وجود ندارد. یک مکالمه را در زیر شروع کنید.",
+    "NotConfigured": "یک کلید Claude API را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا از Agent استفاده کنید.",
+    "Permission": {
+      "Allow": "یک بار اجازه دهید",
+      "Allowed": "مجاز است",
+      "AllowSession": "اجازه دادن به جلسه",
+      "Denied": "تکذیب شد",
+      "Deny": "تکذیب کنید",
+      "Title": "درخواست مجوز ابزار"
+    },
+    "Plan": {
+      "Approve": "تصویب طرح",
+      "DefaultFeedback": "کاربر تغییرات را درخواست کرد",
+      "Description": "نماینده طرحی را در بالا آماده کرده است و برای ادامه به تایید شما نیاز دارد.",
+      "FeedbackPlaceholder": "توضیح دهید که چه تغییراتی را می خواهید ...",
+      "PlanDetails": "جزئیات طرح",
+      "RequestChanges": "درخواست تغییرات",
+      "RequestedPermissions": "مجوزهای درخواستی:",
+      "SendFeedback": "ارسال بازخورد",
+      "Title": "بررسی طرح"
+    },
+    "QuickAction": {
+      "ActionItems": "موارد اقدام را پیدا کنید",
+      "DraftEmail": "پیش نویس ایمیل پیگیری",
+      "Summarize": "این ضبط را خلاصه کنید"
+    },
+    "SendButton": "ارسال کنید",
+    "SendPlaceholder": "هر چیزی بپرسید... (برای ارسال وارد کنید، برای خط جدید Shift+Enter)",
+    "SessionCost": "جلسه: {{inputTokens}} در /{{outputTokens}} توکن های خروجی",
+    "Sessions": "جلسات",
+    "StopButton": "توقف کنید",
+    "Streaming": {
+      "ForceStop": "توقف اجباری",
+      "GeneratingResponse": "در حال ایجاد پاسخ...",
+      "LongRunning": "دویدن طولانی تر از حد معمول",
+      "RunningTool": "در حال اجرا {{tool}}...",
+      "Thinking": "فکر کردن...",
+      "ToolStuck": "ممکن است ابزار گیر کرده باشد"
+    },
+    "SuggestedPrompt": {
+      "HelpAnalyze": "به من کمک کنید ضبط های اخیرم را تجزیه و تحلیل کنم",
+      "WhatCanYouDo": "در چه زمینه ای می توانید به من کمک کنید؟"
+    },
+    "Title": "عامل هوش مصنوعی",
+    "ToolCall": {
+      "AndMoreLines_one": "... و {{count}} خطوط دیگر",
+      "AndMoreLines_other": "... و {{count}} خطوط دیگر",
+      "Executing": "در حال اجرا...",
+      "Input": "ورودی",
+      "Output": "خروجی",
+      "Pattern": "الگو:",
+      "Reading": "خواندن فایل...",
+      "ShowDetails": "نمایش جزئیات"
+    },
+    "ToolGroup": {
+      "Actions_one": "{{count}} اقدامات",
+      "Actions_other": "{{count}} اقدامات",
+      "Completed_one": "{{count}} تکمیل شد",
+      "Completed_other": "{{count}} تکمیل شد",
+      "Running_one": "{{count}} در حال اجرا",
+      "Running_other": "{{count}} در حال اجرا"
+    }
+  },
+  "AIAgent": {
+    "DisabledBadge": "از کار افتاده است",
+    "DisabledMsg": "AI Agent & Cowork غیرفعال است. آن را در تنظیمات → AI Agent & Cowork فعال کنید.",
+    "DisabledTabHint": "عامل هوش مصنوعی غیرفعال است - آن را در تنظیمات → عامل هوش مصنوعی و همکاری فعال کنید",
+    "EnableToggle": "AI Agent & Cowork را فعال کنید",
+    "EnableToggleDesc": "به یک کلید API Claude نیاز دارد",
+    "MenuItem": "AI Agent & Cowork",
+    "PageTitle": "AI Agent & Cowork",
+    "SectionTitle": "AI Agent & Cowork"
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "کلید API Gemini",
+    "ApiKeySection": "کلید API Gemini",
+    "AutomationSection": "اتوماسیون",
+    "AutoSummary": "خلاصه تولید خودکار",
+    "AutoSummaryDesc": "پس از اتمام هر ضبط اجرا می شود",
+    "ClaudeKey": {
+      "ClearKey": "حذف کلید ذخیره شده",
+      "CliInstalled": "نصب شده ({{version}})",
+      "CliInstallLink": "Claude Code → را نصب کنید",
+      "CliNotInstalled": "Claude CLI یافت نشد",
+      "CliSection": "کد کلود CLI",
+      "GetKeyLink": "یک کلید API از Anthropic Console دریافت کنید",
+      "HideKey": "پنهان کردن کلید",
+      "KeyInvalid": "کلید نامعتبر است",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
+      "KeyTesting": "تست کردن...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "سریع و ارزان",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "تواناترین",
+      "ModelSection": "مدل کلود پیش فرض",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "توصیه شده · متعادل",
+      "QuotaLoading": "در حال بارگیری سهمیه...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} توکن باقی مانده است",
+      "QuotaResetDate": "بازنشانی در {{date}}",
+      "Saving": "در حال ذخیره...",
+      "Section": "Claude API Key (Agent)",
+      "ShowKey": "نمایش کلید",
+      "SourceByok": "کلید API شما (BYOK)",
+      "SourceCli": "کد کلود CLI",
+      "SourceKeyServer": "مدیریت شده توسط SeaMeet",
+      "SourceLabel": "منبع فعال:",
+      "SourceNone": "پیکربندی نشده است",
+      "TestKey": "ذخیره و تأیید کنید"
+    },
+    "ClearKey": "حذف کلید ذخیره شده",
+    "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
+    "EnableToggleDesc": "به یک کلید Gemini API رایگان نیاز دارد",
+    "GetKeyLink": "یک کلید API رایگان از Google AI Studio → دریافت کنید",
+    "GroupTitle": "ویژگی های هوش مصنوعی",
+    "HideKey": "پنهان کردن کلید",
+    "KeyInvalid": "کلید نامعتبر است",
+    "KeyNotConfigured": "هیچ کلیدی پیکربندی نشده است",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
+    "KeyTesting": "تست کردن...",
+    "KeyVerified": "کلید تأیید شد",
+    "ManagedKeyDesc": "کلید API شما به طور خودکار ارائه می شود. بدون نیاز به پیکربندی",
+    "ManagedKeyStatus": "کلید مدیریت شده - ارائه شده توسط SeaMeet",
+    "MenuItem": "خلاصه های مبتنی بر هوش مصنوعی",
+    "ModelLabel": "مدل جمینی",
+    "Models": {
+      "Gemini25Flash": "Gemini 2. فلش",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "فوق العاده ارزان",
+      "Gemini25FlashSub": "ارزان ترین گزینه پایدار",
+      "Gemini25Pro": "جمینی 2.5 پرو",
+      "Gemini25ProSub": "بهترین استدلال پایدار",
+      "Gemini3Flash": "فلش جمینی 3",
+      "Gemini3FlashSub": "توصیه شده · سریع + دارای قابلیت",
+      "Gemini3Pro": "جمینی 3 پرو",
+      "Gemini3ProSub": "حداکثر توانایی"
+    },
+    "ModelSection": "مدل هوش مصنوعی",
+    "PageTitle": "ویژگی های هوش مصنوعی",
+    "QuotaLoading": "در حال بارگیری سهمیه...",
+    "QuotaRefresh": "بازخوانی سهمیه",
+    "QuotaRemaining": "{{remaining}} / {{limit}} توکن باقی مانده است",
+    "QuotaResetDate": "بازنشانی در {{date}}",
+    "QuotaSection": "سهمیه استفاده",
+    "Saving": "در حال ذخیره...",
+    "SelectedModel": "انتخاب شده: {{model}}",
+    "ShowKey": "نمایش کلید",
+    "TestKey": "ذخیره و تأیید کنید"
+  },
+  "AISummary": {
+    "Copy": "کپی کنید",
+    "EnableRequired": "برای مشاهده خلاصه‌های هوش مصنوعی، ویژگی‌های AI را در تنظیمات → ویژگی‌های هوش مصنوعی فعال کنید.",
+    "Error": "خلاصه بارگیری نشد: {{error}}",
+    "Export": {
+      "HeadingActionItems": "موارد اقدام",
+      "HeadingKeyDecisions": "تصمیمات کلیدی",
+      "HeadingSummary": "خلاصه",
+      "HeadingTranscription": "رونویسی"
+    },
+    "ExportJson": "به صورت JSON کپی کنید",
+    "ExportMarkdown": "به عنوان Markdown کپی کنید",
+    "ExportSrt": "به عنوان SRT کپی کنید",
+    "GeminiLiveTranscript": "جمینی زنده",
+    "Generate": "ایجاد خلاصه",
+    "Maximize": "به نمای کامل باز کنید",
+    "Minimize": "به حداقل رساندن",
+    "NoActions": "هیچ مورد اقدامی شناسایی نشد.",
+    "NoChapters": "هیچ فصلی در دسترس نیست.",
+    "NoDecisions": "هیچ تصمیم کلیدی مشخص نشده است.",
+    "NoSummary": "هنوز خلاصه ای از هوش مصنوعی وجود ندارد.",
+    "NoSummaryText": "خلاصه در دسترس نیست.",
+    "NoTranscript": "رونوشت در دسترس نیست.",
+    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. بازسازی را امتحان کنید.",
+    "PipelineTranscript": "خط لوله هوش مصنوعی",
+    "Processing": "در حال تولید خلاصه...",
+    "Queued": "در صف پردازش...",
+    "Regenerate": "خلاصه بازسازی",
+    "Retry": "دوباره امتحان کنید",
+    "SeekToTimestamp": "به دنبال این مُهر زمانی باشید",
+    "SetupRequired": "کلید Gemini API خود را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا خلاصه‌های هوش مصنوعی فعال شود.",
+    "Tab": {
+      "ActionItems": "اقدامات",
+      "Chapters": "فصل ها",
+      "KeyDecisions": "تصمیمات",
+      "Summary": "خلاصه",
+      "Transcription": "رونوشت"
+    },
+    "TabTitle": "خلاصه هوش مصنوعی",
+    "Topics": "موضوعات:",
+    "Speakers": "سخنرانان",
+    "MergeInto": "ادغام در…",
+    "ApplyMerge": "اعمال",
+    "EditSegmentSpeaker": "برای تخصیص مجدد این بخش کلیک کنید"
   },
   "App": {
     "FailedToEnableFlashback": "فعال‌سازی بازگشت به خاطرات ناموفق بود: {{error}}",
@@ -27,152 +238,221 @@
   },
   "Apps": {
     "All": "همه برنامه‌ها",
-    "Teams": "مایکروسافت تیمز (کار/مدرسه)",
-    "TeamsConsumer": "مایکروسافت تیمز (حالت شخصی)",
-    "TeamsWeb": "مایکروسافت تیمز (وب)",
-    "Zoom": "زوم",
-    "ZoomWeb": "نسخه وب زوم",
+    "Battlenet": "باتل‌نت",
+    "Brave": "مرورگر Brave",
+    "CallOfDuty": "ندای وظیفه",
     "Chrome": "مرورگر Chrome",
-    "Edge": "مرورگر Edge",
-    "Firefox": "مرورگر فایرفاکس",
-    "WhatsApp": "واتس‌اپ",
-    "Line": "برنامه Line",
-    "WeChat": "WeChat",
     "Discord": "دیسکورد",
     "DiscordWeb": "دیسکورد (وب‌)",
+    "Edge": "مرورگر Edge",
+    "EpicGames": "Epic Games Launcher",
+    "Firefox": "مرورگر فایرفاکس",
+    "Fortnite": "فورتنایت",
+    "GoogleMeet": "Google Meet",
+    "KakaoTalk": "Kakao Talk",
+    "Line": "برنامه Line",
+    "Medal": "Medal.tv",
+    "Obs": "OBS استودیو",
+    "Opera": "مرورگر Opera",
+    "Other": "سایر برنامه‌ها",
+    "Outplayed": "Outplayed",
+    "Roblox": "Roblox",
+    "Signal": "سیگنال",
     "Skype": "اسکایپ",
     "Slack": "اپلیکیشن Slack",
     "SlackWeb": "اسلاک‌ (وب‌)",
-    "GoogleMeet": "Google Meet",
-    "WebexWeb": "وب‌کس",
-    "WindowsSoundRecorder": "ضبط صدا در ویندوز",
-    "Other": "سایر برنامه‌ها",
-    "Obs": "OBS استودیو",
-    "Twitch": "توییچ",
-    "XboxGameBar": "نوار بازی Xbox در ویندوز",
-    "Battlenet": "باتل‌نت",
-    "EpicGames": "Epic Games Launcher",
-    "Signal": "سیگنال",
-    "Telegram": "تلگرام",
     "SteamChat": "چت استیم",
-    "Viber": "وی‌بر",
-    "KakaoTalk": "Kakao Talk",
-    "Webex": "سیسکو Webex",
-    "Opera": "مرورگر Opera",
-    "Brave": "مرورگر Brave",
-    "Valorant": "Valorant",
-    "Fortnite": "فورتنایت",
-    "CallOfDuty": "ندای وظیفه",
-    "Roblox": "Roblox",
-    "TeamSpeak": "TeamSpeak",
     "Streamlabs": "نرم‌افزار Streamlabs",
-    "Medal": "Medal.tv",
-    "Outplayed": "Outplayed"
+    "Teams": "مایکروسافت تیمز (کار/مدرسه)",
+    "TeamsConsumer": "مایکروسافت تیمز (حالت شخصی)",
+    "TeamSpeak": "TeamSpeak",
+    "TeamsWeb": "مایکروسافت تیمز (وب)",
+    "Telegram": "تلگرام",
+    "Twitch": "توییچ",
+    "Valorant": "Valorant",
+    "Viber": "وی‌بر",
+    "Webex": "سیسکو Webex",
+    "WebexWeb": "وب‌کس",
+    "WeChat": "WeChat",
+    "WhatsApp": "واتس‌اپ",
+    "WindowsSoundRecorder": "ضبط صدا در ویندوز",
+    "XboxGameBar": "نوار بازی Xbox در ویندوز",
+    "Zoom": "زوم",
+    "ZoomWeb": "نسخه وب زوم"
+  },
+  "AudioControls": {
+    "AudioCapture": "ضبط صدا",
+    "AudioMix": "مخلوط صدا",
+    "AudioSource": "منبع صوت:",
+    "Microphone": "میکروفون",
+    "MicrophoneGainWarning": "بالا بودن حساسیت میکروفن می‌تواند صدای بازپخش اسپیکر را حتی زمانی که \"صداهای سیستم\" خاموش است، ضبط کند. از هدست استفاده کنید یا سطح حساسیت میکروفن را کاهش دهید تا تنها صدای میکروفن ضبط شود.",
+    "RecordingDefaultMicrophone": "میکروفون پیش فرض",
+    "RecordingSettings": "تنظیمات ضبط",
+    "RefreshMicrophoneList": "بروزرسانی لیست میکروفن"
   },
   "AutoDetectInfoModal": {
-    "Title": "تشخیص خودکار نشست‌ها",
-    "Subtitle": "هرگز یک جلسه را از دست ندهید",
-    "Description": "وقتی به جلسات پیوستید، به صورت خودکار شروع به ضبط می‌کند. هرگز فراموش نکنید که دکمه ضبط را فشار دهید",
-    "PopularAppsTitle": "برنامه‌های محبوب تشخیص داده شده",
-    "MoreApps": "+40 مورد دیگر",
-    "HowItWorksTitle": "نحوه عملکرد آن",
-    "Step1Title": "فعال‌سازی Auto-Detect",
-    "Step1Desc": "سوئیچ را روشن کنید و برنامه‌هایی را که می‌خواهید نظارت کنید، انتخاب کنید",
-    "Step2Title": "به یک جلسه بپیوندید",
-    "Step2Desc": "برنامه‌های Zoom، Teams، Meet یا هر برنامه پشتیبانی‌شده‌ای را اجرا کنید",
-    "Step3Title": "ضبط خودکار",
-    "Step3Desc": "SeaMeet به طور خودکار شروع به ضبط می‌کند. تمام!",
-    "Tip1Title": "پیکربندی برای هر برنامه",
-    "Tip1Desc": "برای جلسات کاری گزینه «همیشه ضبط کن» و برای تماس‌های شخصی «پرسیدن هر بار» را تنظیم کنید",
-    "Tip2Title": "چندین روش تشخیص",
-    "Tip2Desc": "از فعالیت میکروفن، عناوین پنجره و URLهای مرورگر برای دقت استفاده می‌کند",
-    "GotIt": "درک کردم",
-    "OpenSettings": "تنظیمات را باز کنید",
     "ControlLabel": "خودکار تشخیص",
-    "LearnAbout": "درباره‌ی Auto Detect بیاموزید"
+    "Description": "وقتی به جلسات پیوستید، به صورت خودکار شروع به ضبط می‌کند. هرگز فراموش نکنید که دکمه ضبط را فشار دهید",
+    "GotIt": "درک کردم",
+    "HowItWorksTitle": "نحوه عملکرد آن",
+    "LearnAbout": "درباره‌ی Auto Detect بیاموزید",
+    "MoreApps": "+40 مورد دیگر",
+    "OpenSettings": "تنظیمات را باز کنید",
+    "PopularAppsTitle": "برنامه‌های محبوب تشخیص داده شده",
+    "Step1Desc": "سوئیچ را روشن کنید و برنامه‌هایی را که می‌خواهید نظارت کنید، انتخاب کنید",
+    "Step1Title": "فعال‌سازی Auto-Detect",
+    "Step2Desc": "برنامه‌های Zoom، Teams، Meet یا هر برنامه پشتیبانی‌شده‌ای را اجرا کنید",
+    "Step2Title": "به یک جلسه بپیوندید",
+    "Step3Desc": "SeaMeet به طور خودکار شروع به ضبط می‌کند. تمام!",
+    "Step3Title": "ضبط خودکار",
+    "Subtitle": "هرگز یک جلسه را از دست ندهید",
+    "Tip1Desc": "برای جلسات کاری گزینه «همیشه ضبط کن» و برای تماس‌های شخصی «پرسیدن هر بار» را تنظیم کنید",
+    "Tip1Title": "پیکربندی برای هر برنامه",
+    "Tip2Desc": "از فعالیت میکروفن، عناوین پنجره و URLهای مرورگر برای دقت استفاده می‌کند",
+    "Tip2Title": "چندین روش تشخیص",
+    "Title": "تشخیص خودکار نشست‌ها"
   },
   "AutoRecording": {
-    "Title": "شروع خودکار جلسات",
-    "DetectApps": "جلسات را از:",
-    "Enabled": "تشخیص خودکار فعال شد",
-    "Disabled": "تشخیص خودکار غیرفعال شد",
-    "MeetingDetected": "{{{app}}} جلسه شناسایی شد!",
-    "MeetingEnded": "جلسه پایان یافت",
-    "MeetingFallbackName": "جلسه",
     "BugReport": "مشکل دیدید؟ آن را به ‎seameet@seasalt.ai‎ گزارش دهید",
     "BugReportTitle": "گزارش خطا —",
+    "Disabled": "تشخیص خودکار غیرفعال شد",
+    "Enabled": "تشخیص خودکار فعال شد",
     "HelpWanted": "در صورت تمایل به درخواست افزودن برنامه‌ای جدید یا تأیید کارکرد برنامه‌ای، لطفاً به ‎seameet@seasalt.ai‎ اطلاع دهید. از همکاری شما سپاسگزاریم.",
-    "HelpWantedTitle": "در بهبود ما کمک کنید"
+    "HelpWantedTitle": "در بهبود ما کمک کنید",
+    "MeetingDetected": "{{{app}}} جلسه شناسایی شد!",
+    "MeetingEnded": "جلسه پایان یافت",
+    "MeetingFallbackName": "جلسه"
   },
   "BlackHole": {
-    "NotInstalled": "BlackHole مورد نیاز برای صدای سیستم",
-    "InstallInstructions": "برای ضبط صدای سیستم در macOS، نیاز است که درایور صوت مجازی BlackHole نصب گردد.",
-    "HomebrewCommand": "brew install blackhole-2ch",
-    "CopyCommand": "دستور را کپی کنید",
-    "Or": "یا",
-    "DownloadManually": "دانلود از existential.audio",
-    "SetupTitle": "پیکربندی دستگاه چند خروجی",
-    "SetupStep1": "برنامه Audio MIDI Setup (در مسیر Applications → Utilities) را باز کنید",
-    "SetupStep2": "روی '+' کلیک کنید و «ایجاد دستگاه چند خروجی» را انتخاب کنید",
-    "SetupStep3": "هم هدفون/اسپیکرهای خود و هم «BlackHole 2ch» را بررسی کنید",
-    "SetupStep4": "روی Multi-Output راست‌کلیک کنید و «استفاده از این دستگاه برای خروجی صدا» را انتخاب کنید",
-    "SetupStep5": "اگر BlackHole در فهرست دستگاه‌ها ظاهر نشد، سیستم را ری‌استارت کنید",
-    "SetupStep6": "در این برنامه، «BlackHole 2ch» را به عنوان منبع صوتی خود انتخاب کنید",
-    "CheckAgain": "دوباره چک کنید",
     "Cancel": "لغو",
-    "LearnMore": "اطلاعات بیشتر درباره دستگاه‌های خروجی چندگانه را بیاموزید"
+    "CheckAgain": "دوباره چک کنید",
+    "CopyCommand": "دستور را کپی کنید",
+    "DownloadManually": "دانلود از existential.audio",
+    "InstallInstructions": "برای ضبط صدای سیستم در macOS، نیاز است که درایور صوت مجازی BlackHole نصب گردد.",
+    "LearnMore": "اطلاعات بیشتر درباره دستگاه‌های خروجی چندگانه را بیاموزید",
+    "NotInstalled": "BlackHole مورد نیاز برای صدای سیستم",
+    "Or": "یا",
+    "SetupTitle": "پیکربندی دستگاه چند خروجی"
   },
   "BluetoothWarningToast": {
-    "Title": "⚠️ میکروفن بلوتوث شناسایی شد",
-    "Description": "سیستم‌عامل شما ممکن است هنگام استفاده از میکروفن‌های بلوتوث، صدای شما را در حالت \"ارتباطات\" قرار دهد؛ این حالت می‌تواند باعث اختلال در ضبط صدا و مشکلات بلندی صوت شود.",
-    "RecommendationLabel": "توصیه‌:",
-    "Recommendation": "برای کیفیت بهتر ضبط، به جای میکروفن بلوتوث، از میکروفن غیر بلوتوث (مانند میکروفن داخلی یا یو‌اس‌بی) استفاده کنید.",
+    "CloseAriaLabel": "بستن هشدار بلوتوث",
     "CloseTitle": "بستن هشدار",
-    "CloseAriaLabel": "بستن هشدار بلوتوث"
+    "Description": "سیستم‌عامل شما ممکن است هنگام استفاده از میکروفن‌های بلوتوث، صدای شما را در حالت \"ارتباطات\" قرار دهد؛ این حالت می‌تواند باعث اختلال در ضبط صدا و مشکلات بلندی صوت شود.",
+    "Recommendation": "برای کیفیت بهتر ضبط، به جای میکروفن بلوتوث، از میکروفن غیر بلوتوث (مانند میکروفن داخلی یا یو‌اس‌بی) استفاده کنید.",
+    "RecommendationLabel": "توصیه‌:",
+    "Title": "⚠️ میکروفن بلوتوث شناسایی شد"
+  },
+  "Common": {
+    "ApplyName": "نام را اعمال کنید",
+    "Cancel": "لغو کنید",
+    "Close": "بستن",
+    "Configure": "تنظیمات",
+    "Delete": "حذف",
+    "Done": "تمام شد",
+    "Expand": "نمایش بیشتر",
+    "FileNameCopiedWithRenameHint": "{{fileName}} به کلیپ‌بورد کپی شد. برای تغییر نام، دوباره کلیک کنید.",
+    "Loading": "در حال بارگذاری...",
+    "Minimize": "کمینه‌سازی به شکل دایره",
+    "Open": "باز کنید",
+    "Or": "یا",
+    "Processing": "در حال پردازش…",
+    "Recording": "در حال ضبط",
+    "Save": "ذخیره کنید",
+    "Saved": "ذخیره شد",
+    "Saving": "در حال ذخیره‌سازی...",
+    "Screenshot": "تصویر لحظه‌ای",
+    "Send": "ارسال کنید",
+    "Starting": "شروع...",
+    "UnknownApp": "برنامه ناشناخته"
   },
   "DeletePrompt": {
-    "Title": "فایل را حذف کن",
-    "Message": "مطمئن هستید که می‌خواهید این فایل را حذف کنید؟ این عمل قابل بازگشت نیست.",
     "Cancel": "انصراف",
-    "Confirm": "حذف"
+    "Confirm": "حذف",
+    "Message": "مطمئن هستید که می‌خواهید این فایل را حذف کنید؟ این عمل قابل بازگشت نیست.",
+    "Title": "فایل را حذف کن"
   },
   "Errors": {
-    "NoAudioSources": "منبع صدای در دسترس نیست",
-    "NoSystemAudioSources": "منبع صدای سیستم در دسترس ندارد",
+    "AutoRecordingFailed": "تغییر وضعیت ضبط خودکار ناموفق بود",
     "FailedToStartRecording": "شروع ضبط ناموفق بود: {{message}}",
     "FailedToStartVideoRecording": "شروع فیلم‌برداری ویدئو ناموفق بود: {{message}}",
-    "AutoRecordingFailed": "تغییر وضعیت ضبط خودکار ناموفق بود"
+    "NoAudioSources": "منبع صدای در دسترس نیست",
+    "NoSystemAudioSources": "منبع صدای سیستم در دسترس ندارد",
+    "SaveFailed": "ضبط ذخیره نشد: {{message}}"
   },
   "Events": {
-    "Title": "رویدادها",
-    "MarkToolbarButton": "رویدادهای علامت‌گذاری شده",
+    "EmptyWhenNotRecording": "رویدادهای موجود برای این ضبط در دسترس نیست.",
+    "EmptyWhileRecording": "هنوز رویدادی وجود ندارد. حین ضبط روی 'Mark' کلیک کنید.",
+    "EventLabel": "رویداد شماره {{number}}",
     "MarkButton": "علامت‌گذاری",
     "Marked": "علامت‌گذاری شده!",
-    "EventLabel": "رویداد شماره {{number}}",
-    "EmptyWhileRecording": "هنوز رویدادی وجود ندارد. حین ضبط روی 'Mark' کلیک کنید.",
-    "EmptyWhenNotRecording": "رویدادهای موجود برای این ضبط در دسترس نیست.",
-    "DeletePrompt": {
-      "Title": "حذف رویداد",
-      "Message": "آیا مطمئنید که می‌خواهید این رویداد را حذف کنید؟ این عملیات قابل بازگشت نیست.",
-      "Cancel": "انصراف",
-      "Confirm": "تایید حذف"
-    }
+    "MarkToolbarButton": "رویدادهای علامت‌گذاری شده",
+    "Title": "رویدادها"
+  },
+  "FileImport": {
+    "BrowseFiles": "مرور فایل‌ها",
+    "DragDropFiles": "فایل‌های صدای، ویدئو و تصویر خود را در اینجا بکشید و رها کنید",
+    "DragDropSubtitle": "فایل‌های صدای، ویدئو و تصویر خود را در اینجا بکشید و رها کنید",
+    "ImportMedia": "وارد کردن مدیا",
+    "Supported": "پشتیبانی‌شده",
+    "SupportedFormats": "پشتیبانی‌شده: MP3، WAV، M4A، WebM، OGG، PNG، JPG و موارد دیگر",
+    "VideoImportCopying": "در حال کپی کردن فایل ویدیو...",
+    "VideoImportSaving": "در حال ذخیره فایل ویدیو...",
+    "VideoUnsupported": "این قالب ویدیو ممکن است در برنامه قابل پخش نباشد. فایل به هر حال وارد می‌شود."
   },
   "FlashbackControls": {
+    "AudioFlashback": "بازگشت به خاطرات صوتی",
+    "CannotChangeWhileRecording": "در حین ضبط، نمی‌توان حالت بازگشت (بازگشت به خاطرات) را تغییر داد",
+    "DisableFlashback": "غیرفعال کردن متن‌نویسی بازگشت به خاطرات",
     "Label": "بازگشت به خاطرات",
     "LearnAbout": "درباره‌ی بازگشت به خاطرات بیشتر بدانید",
-    "DisableFlashback": "غیرفعال کردن متن‌نویسی بازگشت به خاطرات",
-    "AudioFlashback": "بازگشت به خاطرات صوتی",
-    "ScreenFlashback": "بازگشت به خاطرات صفحه‌نمایش",
-    "TitleReady": "برای نشان دادن رابط کاربری بازگشت به خاطرات کلیک کنید",
-    "TitleCharging": "شارژ بازگشت به خاطرات",
-    "TitleInit": "کلیک کنید تا شروع به شارژ کنید",
+    "Off": "غیرفعال",
     "Ready": "آماده است",
     "ReadyQuestion": "آماده‌اید؟",
-    "Off": "غیرفعال",
-    "CannotChangeWhileRecording": "در حین ضبط، نمی‌توان حالت بازگشت (بازگشت به خاطرات) را تغییر داد",
-    "ToggleLabel": "تغییر حالت بازگشت به خاطرات",
-    "SettingsLabel": "ضبط بازگشت به خاطرات"
+    "ScreenFlashback": "بازگشت به خاطرات صفحه‌نمایش",
+    "SettingsLabel": "ضبط بازگشت به خاطرات",
+    "TitleCharging": "شارژ بازگشت به خاطرات",
+    "TitleInit": "کلیک کنید تا شروع به شارژ کنید",
+    "TitleReady": "برای نشان دادن رابط کاربری بازگشت به خاطرات کلیک کنید",
+    "ToggleLabel": "تغییر حالت بازگشت به خاطرات"
+  },
+  "FlashbackHeroUI": {
+    "Audio": "صدا",
+    "Buffering": "در حال بافرینگ",
+    "BufferingMoment": "در حال بافر کردن لحظه...",
+    "Capturing": "در حال ضبط...",
+    "DescCharging": "در حال آماده‌سازی پنجره {{duration}} ثانیه‌ای شما... تقریباً برای ضبط آنچه ممکن است از دست بدهید، آماده می‌شود. {{progress}}% کامل.",
+    "DescInit": "روی 'آماده‌اید؟' کلیک کنید تا SeaMeet شروع به یادآوری گذشته کند.",
+    "DescNone": "ضبط صفحه‌نمایش، صدا یا گرفتن تصویر لحظه‌ای. یک حالت بازگشت به خاطرات را انتخاب کنید تا زمان‌ها ذخیره شوند.",
+    "DescReady": "بازگشت به خاطرات مسلح است. هرگاه روی «ضبط» کلیک کنید، {{duration}} ثانیه گذشته از {{type}} شامل می‌شود — هرگز لحظه‌ای را که از دست داده‌اید پشیمان نخواهید شد.",
+    "FillingBuffer": "در حال پر کردن بافر بازگشت به خاطرات {{duration}} ثانیه‌ای... {{progress}}%",
+    "FlashbackBuffering": "در حال بافر کردن...",
+    "FlashbackCharging": "در حال پر کردن بافر {{seconds}}... {{percent}}%",
+    "FlashbackChargingDescription": "در حال آماده‌سازی پنجره {{seconds}}-ثانیه‌ای شما... {{percent}}% کامل شده.",
+    "FlashbackInitAudio": "آماده‌اید صدای خود را محافظت کنید؟",
+    "FlashbackInitDescription": "بر روی «آماده‌اید؟» کلیک کنید تا SeaMeet شروع به «یادآوری» گذشته کند.",
+    "FlashbackInitScreen": "آماده‌اید که از صفحه‌نمایش خود محافظت کنید؟",
+    "FlashbackMismatch": "عدم تطابق حالت بازگشت به خاطرات. در حال ضبط صدا هستید اما حالت بازگشت به خاطرات ویدئو فعال است. لطفاً حالت ویدئویی بازگشت به خاطرات را خاموش کنید.",
+    "FlashbackOff": "حالت بازگشت به خاطرات در حال حاضر غیرفعال است. می‌توانید ضبط عادی را شروع کنید یا حالت بازگشت به خاطرات (صدا یا صفحه‌نمایش) را فعال نمایید تا لحظه‌های قهرمانانه ذخیره شوند.",
+    "FlashbackPrivacy": "حریم خصوصی شما حفظ می‌شود. به صورت محلی در RAM ذخیره شده است.",
+    "FlashbackReady": "هیچ لحظه‌ای را از دست ندهید.",
+    "FlashbackReadyDescription": "بازگشت به خاطرات آماده است. {{seconds}} ثانیه گذشته {{type}} هنگام ضبط شامل می‌شود.",
+    "FlashbackReadyQuestion": "ترجمه صحیح است.",
+    "KeepWindowVisible": "هنگام گرفتن اسکرین‌شات، پنجره SeaMeet را قابل مشاهده نگه دارید.",
+    "NeverMissAMoment": "هیچ لحظه‌ای را از دست ندهید.",
+    "OpenFloater": "باز کردن فلووتر",
+    "OpenLauncher": "باز کردن لانچر",
+    "PrivacyDesc": "SeaMeet لحظه‌های گذشته به مدت {{duration}} ثانیه از {{type}} را در حلقه بافر در حافظه RAM رایانه‌تان ثبت می‌کند.",
+    "PrivacyProtected": "حریم خصوصی شما حفظ می‌شود.",
+    "Ready": "آماده‌اید؟",
+    "ReadyToCapture": "SeaMeet آماده برای ضبط است.",
+    "ReadyToGuard": "آماده‌اید تا {{type}} خودتان را نگهبانی کنید؟",
+    "RecordWithFlashback": "ضبط با بازگشت به خاطرات",
+    "SaveFlashback": "بازگشت به خاطرات آخرین {{seconds}} ثانیه را ذخیره کن",
+    "SaveLastFlashback": "در صورت تمایل، {{duration}} ثانیه آخر بازگشت به خاطرات را ذخیره کنید",
+    "SavingFlashback": "در حال ذخیره بازگشت به خاطرات…",
+    "Screen": "صفحه‌نمایش",
+    "StartRecording": "شروع ضبط",
+    "TakeScreenshot": "ثبت تصویر لحظه‌ای"
   },
   "FlashbackIndicator": {
     "Buffering": "در حال buffer کردن",
@@ -183,138 +463,145 @@
     "VideoReady": "ویدئو آماده است"
   },
   "FlashbackInfoModal": {
-    "Title": "ضبط بازگشت به خاطرات",
-    "Close": "بستن",
-    "Subtitle": "ماشین زمان شخصی شما",
-    "SubtitleDesc": "هرگز یک لحظه مهم را دوباره از دست ندهید - تا 2 دقیقه از گذشته را ثبت کنید، حتی پس از وقوع.",
+    "Benefits": {
+      "AlwaysReady": "همیشه در دسترس است",
+      "LocalOnly": "فقط محلی (حریم خصوصی کامل)",
+      "MultipleCaptures": "ضبط‌های چندگانه — بافر به کار خود ادامه می‌دهد",
+      "NoPlan": "بدون نیاز به برنامه‌ریزی، قابل استفاده است",
+      "Offline": "این قابلیت را دارد که آفلاین کار کند",
+      "Title": "مزایای کلیدی"
+    },
     "BestFor": "بهترین برای:",
-    "VisualStates": {
-      "Title": "نشانگرهای وضعیت بصری",
-      "OffLabel": "خاموش",
-      "Off": "خاکستری، شکل موج ساکن",
-      "ChargingLabel": "شارژ کردن",
-      "Charging": "کهربایی/زرد، پرکننده بافر",
-      "ReadyLabel": "آماده است",
-      "Ready": "سبز، پر بافر"
-    },
-    "SpecLabel": {
-      "Buffer": "بافر",
-      "Memory": "حافظه:",
-      "Captures": "ضبط‌ها:"
-    },
-    "Modes": {
-      "Title": "دو حالت بازگشت به خاطرات",
-      "Audio": {
-        "Title": "بازگشت به خاطرات",
-        "Buffer": "۳۰ ثانیه (ثابت)",
-        "Memory": "~۳۰ تا ۵۰ مگابایت رم",
-        "Captures": "میکروفن و/یا صدای سیستم",
-        "BestFor": "ضبط جلسات، تماس‌های تلفنی، گفتگوهای صوتی"
-      },
-      "Video": {
-        "Title": "بازگشت به خاطرات",
-        "Buffer": "10 ث، 30 ث، 60 ث، 90 ث، یا 120 ث",
-        "Memory": "۵۰-۶۰۰ مگابایت رم",
-        "Captures": "ویدئو + صدا",
-        "BestFor": "ارائه‌ها، هایلایت‌های بازی، جلسات به اشتراک‌گذاری صفحه، محتوای تصویری"
-      }
-    },
-    "HowItWorks": {
-      "Title": "چگونه کار می کند",
-      "Step1": {
-        "Title": "فلش بک را فعال کنید",
-        "Desc": "برای روشن شدن دکمه FLASHBACK را کلیک کنید. بافر به طور خودکار شروع به پر شدن می کند."
-      },
-      "Step2": {
-        "Title": "منتظر آماده باشید",
-        "Desc": "مراقب وضعیت سبز باشید. قبل از اینکه بتوانید گذشته را ثبت کنید، بافر باید تا 90٪ پر شود."
-      },
-      "Step3": {
-        "Title": "ضبط را فشار دهید",
-        "Desc": "وقتی اتفاق مهمی افتاد، ضبط را فشار دهید. فلاش بک بافر را می گیرد و ضبط را به جلو ادامه می دهد."
-      }
-    },
-    "Scenarios": {
-      "Title": "سناریوهای کاربردی",
-      "OhNo": {
-        "Title": "لحظه‌ی «او نه!»",
-        "Desc": "همکار چیزی عمیق می‌گوید. متوجه می‌شوید می‌خواهید ضبط کنید. دکمه «Record» را فشار دهید → بازگشت به خاطرات، آخرین ۳۰ ثانیه (شامل آن لحظه!) را ضبط می‌کند."
-      },
-      "Gaming": {
-        "Title": "هیجان بازی",
-        "Desc": "یک کام‌بون فوق‌العاده انجام دهید. فوراً دکمه Record را فشار دهید. بازگشت به خاطرات گیم‌پلی را که منتهی به آن کام‌بون شد + واکنش شما را ضبط می‌کند."
-      },
-      "Decision": {
-        "Title": "تصمیم مهم",
-        "Desc": "وکیل بند قرارداد را توضیح می‌دهد. دکمه «Record» را فشار دهید تا توضیحات را ضبط کنید. یک رکورد کامل و دقیق برای مرور بعدی داشته باشید."
-      }
-    },
+    "Close": "بستن",
     "Comparison": {
-      "Title": "فلاش بک در مقابل ضبط سنتی",
+      "Capture": {
+        "Feature": "ثبت لحظه‌ها",
+        "Flashback": "می‌تواند پس از آن لحظه شروع شود",
+        "Traditional": "اگر فراموش کنید، از دست می‌رود."
+      },
       "Header": {
         "Feature": "ویژگی",
-        "Traditional": "ضبط سنتی",
-        "Flashback": "بازگشت به خاطرات"
+        "Flashback": "بازگشت به خاطرات",
+        "Traditional": "ضبط سنتی"
       },
       "Planning": {
         "Feature": "ویژگی",
-        "Traditional": "باید قبل از لحظه شروع شود",
-        "Flashback": "نیاز به برنامه‌ریزی نیست"
-      },
-      "Capture": {
-        "Feature": "ثبت لحظه‌ها",
-        "Traditional": "اگر فراموش کنید، از دست می‌رود.",
-        "Flashback": "می‌تواند پس از آن لحظه شروع شود"
+        "Flashback": "نیاز به برنامه‌ریزی نیست",
+        "Traditional": "باید قبل از لحظه شروع شود"
       },
       "Result": {
         "Feature": "نتیجه",
-        "Traditional": "\"ای کاش آن را ضبط می‌کردم\"",
-        "Flashback": "\"خوشحالم که آن را ضبط کردم\""
-      }
-    },
-    "Benefits": {
-      "Title": "مزایای کلیدی",
-      "NoPlan": "بدون نیاز به برنامه‌ریزی، قابل استفاده است",
-      "AlwaysReady": "همیشه در دسترس است",
-      "Offline": "این قابلیت را دارد که آفلاین کار کند",
-      "LocalOnly": "فقط محلی (حریم خصوصی کامل)",
-      "MultipleCaptures": "ضبط‌های چندگانه — بافر به کار خود ادامه می‌دهد"
-    },
-    "Tips": {
-      "AudioDaily": {
-        "Title": "بازگشت به خاطرات صوتی روزمره",
-        "Desc": "از ۳۰ ثانیه Audio Flashback برای جلسات و تماس‌ها استفاده کنید. مصرف حافظه کم و عملکرد مطمئن دارد."
+        "Flashback": "\"خوشحالم که آن را ضبط کردم\"",
+        "Traditional": "\"ای کاش آن را ضبط می‌کردم\""
       },
-      "VideoSpecial": {
-        "Title": "Video Flashback برای Moments خاص",
-        "Desc": "فعال‌سازی Video Flashback (با بای‌فر ۳۰ ثانیه‌ای) برای ارائه، نکات بازی یا هر محتوای تصویری که می‌خواهید نگه دارید."
-      },
-      "Memory": {
-        "Title": "مدیریت حافظه",
-        "Desc": "با ۲ دقیقه بازگشت تصویری، کل برنامه کمتر از ۱ گیگابایت RAM مصرف می‌کند."
-      }
+      "Title": "فلاش بک در مقابل ضبط سنتی"
     },
     "GotIt": "متوجه شدم",
-    "OpenSettings": "باز کردن تنظیمات"
+    "HowItWorks": {
+      "Step1": {
+        "Desc": "برای روشن شدن دکمه FLASHBACK را کلیک کنید. بافر به طور خودکار شروع به پر شدن می کند.",
+        "Title": "فلش بک را فعال کنید"
+      },
+      "Step2": {
+        "Desc": "مراقب وضعیت سبز باشید. قبل از اینکه بتوانید گذشته را ثبت کنید، بافر باید تا 90٪ پر شود.",
+        "Title": "منتظر آماده باشید"
+      },
+      "Step3": {
+        "Desc": "وقتی اتفاق مهمی افتاد، ضبط را فشار دهید. فلاش بک بافر را می گیرد و ضبط را به جلو ادامه می دهد.",
+        "Title": "ضبط را فشار دهید"
+      },
+      "Title": "چگونه کار می کند"
+    },
+    "Modes": {
+      "Audio": {
+        "BestFor": "ضبط جلسات، تماس‌های تلفنی، گفتگوهای صوتی",
+        "Buffer": "۳۰ ثانیه (ثابت)",
+        "Captures": "میکروفن و/یا صدای سیستم",
+        "Memory": "~۳۰ تا ۵۰ مگابایت رم",
+        "Title": "بازگشت به خاطرات"
+      },
+      "Title": "دو حالت بازگشت به خاطرات",
+      "Video": {
+        "BestFor": "ارائه‌ها، هایلایت‌های بازی، جلسات به اشتراک‌گذاری صفحه، محتوای تصویری",
+        "Buffer": "10 ث، 30 ث، 60 ث، 90 ث، یا 120 ث",
+        "Captures": "ویدئو + صدا",
+        "Memory": "۵۰-۶۰۰ مگابایت رم",
+        "Title": "بازگشت به خاطرات"
+      }
+    },
+    "OpenSettings": "باز کردن تنظیمات",
+    "Scenarios": {
+      "Decision": {
+        "Desc": "وکیل بند قرارداد را توضیح می‌دهد. دکمه «Record» را فشار دهید تا توضیحات را ضبط کنید. یک رکورد کامل و دقیق برای مرور بعدی داشته باشید.",
+        "Title": "تصمیم مهم"
+      },
+      "Gaming": {
+        "Desc": "یک کام‌بون فوق‌العاده انجام دهید. فوراً دکمه Record را فشار دهید. بازگشت به خاطرات گیم‌پلی را که منتهی به آن کام‌بون شد + واکنش شما را ضبط می‌کند.",
+        "Title": "هیجان بازی"
+      },
+      "OhNo": {
+        "Desc": "همکار چیزی عمیق می‌گوید. متوجه می‌شوید می‌خواهید ضبط کنید. دکمه «Record» را فشار دهید → بازگشت به خاطرات، آخرین ۳۰ ثانیه (شامل آن لحظه!) را ضبط می‌کند.",
+        "Title": "لحظه‌ی «او نه!»"
+      },
+      "Title": "سناریوهای کاربردی"
+    },
+    "SpecLabel": {
+      "Buffer": "بافر",
+      "Captures": "ضبط‌ها:",
+      "Memory": "حافظه:"
+    },
+    "Subtitle": "ماشین زمان شخصی شما",
+    "SubtitleDesc": "هرگز یک لحظه مهم را دوباره از دست ندهید - تا 2 دقیقه از گذشته را ثبت کنید، حتی پس از وقوع.",
+    "Tips": {
+      "AudioDaily": {
+        "Desc": "از ۳۰ ثانیه Audio Flashback برای جلسات و تماس‌ها استفاده کنید. مصرف حافظه کم و عملکرد مطمئن دارد.",
+        "Title": "بازگشت به خاطرات صوتی روزمره"
+      },
+      "Memory": {
+        "Desc": "با ۲ دقیقه بازگشت تصویری، کل برنامه کمتر از ۱ گیگابایت RAM مصرف می‌کند.",
+        "Title": "مدیریت حافظه"
+      },
+      "VideoSpecial": {
+        "Desc": "فعال‌سازی Video Flashback (با بای‌فر ۳۰ ثانیه‌ای) برای ارائه، نکات بازی یا هر محتوای تصویری که می‌خواهید نگه دارید.",
+        "Title": "Video Flashback برای Moments خاص"
+      }
+    },
+    "Title": "ضبط بازگشت به خاطرات",
+    "VisualStates": {
+      "Charging": "کهربایی/زرد، پرکننده بافر",
+      "ChargingLabel": "شارژ کردن",
+      "Off": "خاکستری، شکل موج ساکن",
+      "OffLabel": "خاموش",
+      "Ready": "سبز، پر بافر",
+      "ReadyLabel": "آماده است",
+      "Title": "نشانگرهای وضعیت بصری"
+    }
   },
   "FlashbackSettingsDetail": {
-    "StartupTitle": "راه اندازی",
-    "AutoStartLabel": "شروع خودکار فلاش بک",
+    "AutoStartAudio": "فلاش بک صوتی",
     "AutoStartDesc": "وقتی برنامه راه اندازی شد فلاش بک را شروع کنید",
     "AutoStartDisable": "شروع خودکار را غیرفعال کنید",
-    "AutoStartAudio": "فلاش بک صوتی",
+    "AutoStartLabel": "شروع خودکار فلاش بک",
     "AutoStartScreen": "فلاش بک صفحه نمایش",
-    "BufferTitle": "بافر",
-    "BufferDurationLabel": "مدت زمان بافر",
     "BufferDurationDesc": "چه مدت باید صدا/تصویر را بافر نگه داشت",
-    "DurationOption": "{{duration}}s"
+    "BufferDurationLabel": "مدت زمان بافر",
+    "BufferTitle": "بافر",
+    "DurationOption": "{{duration}}s",
+    "StartupTitle": "راه اندازی"
+  },
+  "FlashbackSnapshot": {
+    "BufferEmpty": "بافر فلاش بک خالی است. یک لحظه دیگر دوباره امتحان کنید.",
+    "EnableFlashback": "برای صرفه جویی در لحظه فلش بک را فعال کنید.",
+    "FailedToSave": "بافر فلاش بک ذخیره نشد.",
+    "SavedFlashback": "بازگشت به خاطرات ذخیره‌شده در ضبط‌ها",
+    "StillCharging": "بافر بازگشت به خاطرات هنوز در حال شارژ است"
   },
   "FloatingStartBar": {
-    "CloseTooltip": "راهنمای ابزار بسته شود",
-    "BluetoothMicTitle": "⚠️ میکروفن بلوتوث",
     "BluetoothMicDesc": "ممکن است سیستم‌عامل شما \"حالت ارتباطات\" را فعال کند که می‌تواند منجر به اختلال شود.",
     "BluetoothMicTipLabel": "راهنما:",
     "BluetoothMicTipText": "بهتر است برای کیفیت ضبط بهتر، از میکروفن‌های غیر بلوتوثی استفاده کنید (ارتباط بهتر و سبک‌تر کردن جمله)",
+    "BluetoothMicTitle": "⚠️ میکروفن بلوتوث",
+    "CloseTooltip": "راهنمای ابزار بسته شود",
     "FailedToLoadScreens": "بارگذاری صفحه‌ها ناموفق بود. لطفاً دوباره تلاش کنید.",
     "FailedToLoadWindows": "بارگذاری پنجره‌ها شکست خورد. لطفاً دوباره تلاش کنید.",
     "MicrophoneMuted": "میکروفن: بی‌صدا",
@@ -323,24 +610,37 @@
     "NoMicrophonesFound": "میکروفن یافت نشد",
     "NoScreensDetected": "صفحه‌نمایش‌ها شناسایی نشدند.",
     "NoWindowsDetected": "هیچ پنجره‌ای یافت نشد. یک پنجره برنامه را باز کنید و دوباره بارگذاری کنید.",
+    "RegionReady": "منطقه آماده است",
+    "RegionRequired": "برای شروع ضبط، منطقه‌ای را انتخاب کنید",
+    "RegionSize": "{{width}}×{{height}} px",
     "ScreenNotAvailable": "انتخاب صفحه‌نمایش در این پلتفرم در دسترس نیست.",
     "SelectMicrophone": "انتخاب میکروفن",
+    "SelectRegion": "یک منطقه را انتخاب کنید",
+    "SelectScreen": "یک نمایشگر را انتخاب کنید",
+    "SelectWindow": "یک پنجره را انتخاب کنید",
     "StartRecording": "شروع ضبط",
     "SystemAudioOff": "صدای سیستم: خاموش",
     "SystemAudioOn": "صدای سیستم فعال است",
     "WaitingForRegion": "در انتظار منطقه…",
     "WindowNotAvailable": "انتخاب پنجره در این پلتفرم در دسترس نیست.",
-    "SelectScreen": "یک نمایشگر را انتخاب کنید",
-    "SelectWindow": "یک پنجره را انتخاب کنید",
-    "WindowRequired": "لطفاً قبل از شروع ضبط، یک پنجره را انتخاب کنید",
-    "RegionReady": "منطقه آماده است",
-    "SelectRegion": "یک منطقه را انتخاب کنید",
-    "RegionSize": "{{width}}×{{height}} px",
-    "RegionRequired": "برای شروع ضبط، منطقه‌ای را انتخاب کنید"
+    "WindowRequired": "لطفاً قبل از شروع ضبط، یک پنجره را انتخاب کنید"
   },
   "FullscreenOverlay": {
-    "FullscreenSelected": "حالت تمام‌صفحه فعال است",
-    "ClickToRecord": "برای شروع ضبط منطقه منتخب، در نوار شناور کلیک کنید"
+    "ClickToRecord": "برای شروع ضبط منطقه منتخب، در نوار شناور کلیک کنید",
+    "FullscreenSelected": "حالت تمام‌صفحه فعال است"
+  },
+  "GeminiLive": {
+    "AITranscription": "رونویسی هوش مصنوعی",
+    "CollapseNowSpeaking": "فرو ریختن",
+    "EnableDescription": "رونویسی در زمان واقعی توسط Gemini در حین ضبط",
+    "EnableIntegration": "رونویسی هوش مصنوعی زنده را فعال کنید",
+    "Error": "خطا",
+    "ExpandNowSpeaking": "گسترش دهید",
+    "NowSpeaking": "در حال حاضر صحبت کردن ...",
+    "SegmentCount_one": "بخش های {{count}}",
+    "SegmentCount_other": "بخش های {{count}}",
+    "WaitingForConnection": "در حال اتصال...",
+    "WaitingForSpeech": "منتظر سخنرانی..."
   },
   "IdleCompactView": {
     "ArmFlashback": "آماده‌سازی برای بازگشت به خاطرات",
@@ -350,38 +650,56 @@
     "CopyEmail": "📋  ایمیل کپی شد",
     "EmailCopied": "✅ ایمیل کپی شد"
   },
-  "JumpList": {
-    "RecordAudio": "ضبط صدا",
-    "RecordAudioDesc": "شروع ضبط صدا (مخلوط)",
-    "RecordFullscreen": "ضبط ویدئو صفحه‌نمایش کامل",
-    "RecordFullscreenDesc": "شروع ضبط ویدئو صفحه‌نمایش کامل",
-    "RecordRegion": "ضبط یک منطقه از صفحه‌نمایش",
-    "RecordRegionDesc": "ضبط تصویر لحظه‌ای از منطقه‌ای از صفحه‌نمایش",
-    "TakeScreenshot": "گرفتن تصویر لحظه‌ای",
-    "TakeScreenshotDesc": "گرفتن تصویر لحظه‌ای از صفحه‌نمایش",
-    "OpenRecordingsFolder": "باز کردن پوشه ضبط‌ها",
-    "OpenRecordingsFolderDesc": "پوشه ضبط‌ها"
-  },
   "MeetingPrompt": {
-    "StartTitle": "جلسه تشخیص داده شد",
-    "StartMessage": "آیا در {{appName}} جلسه دارید؟ نیاز دارید هم‌اکنون جلسه را ضبط کنم؟",
     "BrowserHint": "💡 راهنما: برای جلسات مرورگر (Google Meet، Zoom، Teams)، من فقط مرورگر را تشخیص می‌دهم، نه وب‌سایت خاص.",
-    "RememberChoice": "گزینه من را به خاطر بسپار و دیگر سوال نخواهد شد",
-    "Yes": "بله",
-    "No": "لغو",
-    "EndTitle": "جلسه به پایان رسید",
-    "EndMessage": "من به تازگی جلسه در {{appName}} را شناسایی کردم. آیا می‌خواهید ضبط را متوقف کنید؟",
     "ContinueRecording": "ادامه ضبط",
+    "EndMessage": "من به تازگی جلسه در {{appName}} را شناسایی کردم. آیا می‌خواهید ضبط را متوقف کنید؟",
+    "EndTitle": "جلسه به پایان رسید",
+    "No": "لغو",
     "Pause": "وقف‌ه",
-    "Resume": "ادامه",
-    "Stop": "توقف",
+    "PlayRecording": "پخش",
     "RecordingSaved": "ضبط ذخیره شد",
     "RecordingSavedWithFilename": "{{fileName}} ذخیره شد.",
+    "RememberChoice": "گزینه من را به خاطر بسپار و دیگر سوال نخواهد شد",
     "RenameFile": "تغییر نام",
     "ShowInFolder": "نمایش در پوشه",
-    "PlayRecording": "پخش",
+    "StartMessage": "آیا در {{appName}} جلسه دارید؟ نیاز دارید هم‌اکنون جلسه را ضبط کنم؟",
+    "StartTitle": "جلسه تشخیص داده شد",
     "StopRecording": "توقف ضبط",
-    "Saving": "در حال ذخیره..."
+    "Yes": "بله"
+  },
+  "MeetSeasaltAi": {
+    "ActionItems": "موارد عملی",
+    "CollapseNowSpeaking": "بستن گفت‌وگوهای جاری",
+    "ConnectionError": "اتصال به SeaMeet انجام نشد",
+    "Content": "محتوای SeaMeet",
+    "DueDate": "مهلت: {{date}}",
+    "EnableIntegration": "فعال‌سازی ترجمه زنده SeaMeet",
+    "ExpandNowSpeaking": "گسترش حال حاضر در حال صحبت",
+    "FetchError": "بارگذاری متن‌نویسی ناموفق بود",
+    "LanguageHint": "در حین ضبط، می‌توانید زبان را تغییر دهید",
+    "LiveTranscription": "متن‌نویسی زنده",
+    "LoadingContent": "در حال بارگذاری محتوای SeaMeet...",
+    "LoadingTranscript": "در حال بارگذاری متن‌نویسی…",
+    "NoActionItems": "موارد اقدام برای این جلسه موجود نیست",
+    "NoNotes": "هیچ یادداشت برای این جلسه وجود ندارد",
+    "NoSummary": "خلاصه‌سازی در حال حاضر در دسترس نیست.",
+    "Notes": "یادداشت‌ها",
+    "NoTranscript": "متن‌نویسی در دسترس نمی‌باشد",
+    "NoTranslation": "ترجمه نشود",
+    "NowSpeaking": "در حال صحبت است…",
+    "Retry": "تلاش مجدد",
+    "SeekToTime": "برای پخش از این زمان، کلیک کنید",
+    "SegmentCount_one": "بخش های {{count}}",
+    "SegmentCount_other": "بخش های {{count}}",
+    "SignInRequired": "جهت ادامه، وارد شوید",
+    "Summary": "خلاصه",
+    "Transcribed": "متن‌نویسی‌ شده",
+    "Transcript": "متن‌نویسی",
+    "TranscriptionLanguage": "زبان متن‌نویسی",
+    "TranslationLanguage": "زبان ترجمه",
+    "UnknownSpeaker": "سخنران ناشناس",
+    "WaitingForSpeech": "منتظر سخن گفتن…"
   },
   "MinimizedView": {
     "ActionRequired": "درخواست اقدام (ضبط خودکار)",
@@ -393,22 +711,29 @@
     "ScreenFlashbackCharging": "بازگشت به خاطرات صفحه در حال شارژ...",
     "ScreenRecording": "صفحه فیلم‌برداری ({{time}})"
   },
+  "Pause": "مکث کنید",
   "Permissions": {
-    "AutoRecordNextTime": "می‌خواهید در نوبت بعدی این برنامه به صورت خودکار ضبط شود؟",
     "AlwaysAutoRecord": "همیشه شروع خودکار",
-    "NeverRecord": "هرگز ضبط نکن",
     "AskEveryTime": "هر بار بپرس",
-    "AutoRecordStarted": "ضبط خودکار شروع شد",
+    "AutoRecordNextTime": "می‌خواهید در نوبت بعدی این برنامه به صورت خودکار ضبط شود؟",
     "AutoRecordReason": "{{app}} روی همیشه شروع خودکار تنظیم شده است. مجوز ضبط برنامه در Settings -> Auto Record را تغییر دهید",
-    "ChangeInSettings": "تغییر در تنظیمات",
-    "GuidanceTitle": "انواع مجوزهای برنامه",
+    "AutoRecordStarted": "ضبط خودکار شروع شد",
+    "AutoStartAudioRule": "اگر حالت پیش‌فرض ضبط، صدا باشد، SeaMeet بدون پرسش فوراً شروع به ضبط می‌کند",
+    "AutoStartFallbackRule": "در سایر موارد، SeaMeet نمایشگر انتخاب حالت ضبط است تا بتوانید انتخاب کنید",
+    "AutoStartFullscreenRule": "اگر در حالت پیش‌فرض ضبط در حالت صفحه‌نمایش کامل باشد و تنها یک صفحه متصل باشد، SeaMeet فوراً شروع به ضبط می‌کند.",
+    "AutoStartHeuristicsTitle": "رفتار شروع خودکار (همیشه شروع خودکار)",
     "GuidanceAlways": ": SeaMeet به طور خودکار ضبط می‌کند بدون نیاز به تایید",
     "GuidanceAsk": "اطلاعیه: SeaMeet هر بار از شما مجوز ضبط می‌خواهد.",
     "GuidanceNever": ": SeaMeet در صورت عدم نیاز، درخواست ضبط نمی‌کند",
-    "AutoStartHeuristicsTitle": "رفتار شروع خودکار (همیشه شروع خودکار)",
-    "AutoStartAudioRule": "اگر حالت پیش‌فرض ضبط، صدا باشد، SeaMeet بدون پرسش فوراً شروع به ضبط می‌کند",
-    "AutoStartFullscreenRule": "اگر در حالت پیش‌فرض ضبط در حالت صفحه‌نمایش کامل باشد و تنها یک صفحه متصل باشد، SeaMeet فوراً شروع به ضبط می‌کند.",
-    "AutoStartFallbackRule": "در سایر موارد، SeaMeet نمایشگر انتخاب حالت ضبط است تا بتوانید انتخاب کنید"
+    "GuidanceTitle": "انواع مجوزهای برنامه",
+    "NeverRecord": "هرگز ضبط نکن"
+  },
+  "PipelineStatus": {
+    "Done": "خلاصه آماده است",
+    "Error": "پردازش انجام نشد",
+    "Progress": "پردازش تکه {{current}} از {{total}}",
+    "Queued": "خلاصه در صف...",
+    "Running": "در حال تولید خلاصه..."
   },
   "Player": {
     "Mute": "بی‌صدا",
@@ -429,13 +754,52 @@
   },
   "PlayerCard": {
     "ClosePlayback": "بستن پخش",
-    "MoreOptions": "گزینه‌های بیشتر",
-    "CodecInfo": "اطلاعات کدک"
+    "CodecInfo": "اطلاعات کدک",
+    "MoreOptions": "گزینه‌های بیشتر"
+  },
+  "RecordingControls": {
+    "AudioRecording": "ضبط صدا",
+    "ContinueRecording": "ادامه ضبط",
+    "RecordingAudio": "ضبط صدا..",
+    "RecordingMode": "حالت ضبط",
+    "RecordingPreview": "پیش نمایش ضبط",
+    "RecordingScreen": "صفحه ضبط..",
+    "StartRecording": "شروع ضبط",
+    "Stop": "توقف کنید",
+    "StopRecording": "ضبط را متوقف کنید",
+    "VideoRecording": "ضبط ویدیو"
+  },
+  "RecordingModes": {
+    "AreaCapture": "ضبط ناحیه دلخواه",
+    "CaptureMode": "حالت ضبط",
+    "FullScreen": "تمام‌صفحه",
+    "RecordAudio": "صدا",
+    "RecordAudioTip": "تنها ضبط صدا",
+    "RecordFullscreen": "تمام‌صفحه",
+    "RecordFullscreenTip": "ضبط کل صفحه‌نمایش",
+    "RecordRegion": "ضبط ناحیه",
+    "RecordRegionTip": "ضبط ناحیه دلخواه",
+    "RecordWindow": "ضبط پنجره",
+    "RecordWindowTip": "ضبط یک پنجره برنامه"
+  },
+  "RecordingsList": {
+    "CopyFileName": "کپی نام فایل",
+    "CopyFilePath": "کپی مسیر فایل",
+    "FileNameCopied": "{{fileName}} در کلیپ‌بورد کپی شد",
+    "FilePathCopied": "مسیر فایل در کلیپ‌بورد کپی شد",
+    "OpenSaveFolder": "باز کردن پوشه",
+    "RecentCaptures": "تصاویر ویدئویی اخیر",
+    "Recovered_one": "ضبط {{count}} بازیابی شد",
+    "Recovered_other": "{{count}} ضبط بازیابی شد",
+    "RefreshRecordings": "تازه‌سازی",
+    "SaveAs": "ذخیره به عنوان",
+    "SearchRecordingsOrSnapshots": "جست‌وجو در ضبط‌ها و تصاویر لحظه‌ای",
+    "ShowInFolder": "نشان دادن در پوشه"
   },
   "RecordingSource": {
+    "App": "{{appName}}",
     "File": "فایل",
-    "Microphone": "میکروفن",
-    "App": "{{appName}}"
+    "Microphone": "میکروفن"
   },
   "RegionSelector": {
     "CaptureButton": "گرفتن تصویر صفحه یا فشردن Enter",
@@ -443,84 +807,73 @@
     "Monitor": "مانیتور",
     "PrimaryMonitor": "مانیتور اولیه"
   },
-  "Reliability": {
-    "Stable": "پایدار",
-    "Experimental": "آزمایشی",
-    "NotTested": "آزمایش‌نشده"
-  },
+  "Resume": "رزومه",
   "RingMenu": {
+    "AutoDetectOff": "تشخیص خودکار: خاموش",
+    "AutoDetectOn": "تشخیص خودکار: روشن",
     "FlashbackCharging": "در حال شارژ بازگشت به خاطرات…",
     "FlashbackNotCharged": "بازگشت به خاطرات شارژ نشده است، برای شارژ صدا کلیک کنید، دوبار کلیک کنید تا بازگشت به خاطرات شارژ شود",
     "FlashbackSaveTooltip": "برای ذخیره آخرین {{duration}} ثانیه فلاش بک {{mode}}، یک‌بار کلیک کنید. برای ادامه ضبط از اینجا دوبار کلیک کنید.",
-    "RecordRegion": "منطقه رکورد",
-    "RecordFullscreen": "ضبط تمام صفحه",
-    "TakeScreenshot": "اسکرین شات بگیرید",
-    "AutoDetectOn": "تشخیص خودکار: روشن",
-    "AutoDetectOff": "تشخیص خودکار: خاموش",
     "RecordAudio": "ضبط صدا",
-    "RecordWindow": "پنجره ضبط"
+    "RecordFullscreen": "ضبط تمام صفحه",
+    "RecordRegion": "منطقه رکورد",
+    "RecordWindow": "پنجره ضبط",
+    "TakeScreenshot": "اسکرین شات بگیرید"
   },
   "ScreenPicker": {
-    "Title": "یک نمایشگر را انتخاب کنید",
     "Instruction": "برای ضبط‌های تمام صفحه، کدام نمایشگر را ضبط کنید.",
-    "Refresh": "به‌روزرسانی",
-    "Refreshing": "در حال به‌روزرسانی…",
     "Loading": "در حال بارگذاری نمایشگر...",
     "None": "نمایشگر دیگری شناسایی نشده است.",
+    "Refresh": "به‌روزرسانی",
+    "Refreshing": "در حال به‌روزرسانی…",
+    "Title": "یک نمایشگر را انتخاب کنید",
     "Unknown": "نمایشگر بدون عنوان"
+  },
+  "ScreenshotProcessing": {
+    "Analysis": "تجزیه و تحلیل",
+    "ButtonLabel": "پردازش با هوش مصنوعی",
+    "Custom": "درخواست سفارشی",
+    "CustomPlaceholder": "هر چیزی در مورد این تصویر بپرسید ...",
+    "Describe": "تصویر را توصیف کنید",
+    "DescribeSub": "در این اسکرین شات چیست؟",
+    "Description": "توضیحات",
+    "ExtractedText": "متن استخراج شده",
+    "Ocr": "استخراج متن (OCR)",
+    "OcrSub": "تمام متن های قابل مشاهده را بخوانید",
+    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. لطفا دوباره امتحان کنید.",
+    "ProcessingWithTime": "در حال پردازش... {{sec}}s",
+    "Queuing": "در صف...",
+    "ResultLabel": "نتیجه هوش مصنوعی",
+    "UnknownError": "خطای ناشناخته"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "کپی شد!",
     "CopyFailed": "کاپی کردن تصویر لحظه‌ای به کلیپ‌بورد ناموفق بود",
     "CopyToClipboard": "کپی در کلیپ‌بورد",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Delete": "حذف",
     "Dimensions": "ابعاد",
     "FileSize": "حجم فایل",
-    "Filename": "نام فایل",
     "OpenInSystemViewer": "باز کردن در مشاهده‌گر سیستم",
-    "Rename": "تغییر نام",
     "ScreenshotCopied": "تصویر لحظه‌ای در کلیپ‌بورد کپی شد",
     "Share": "اشتراک‌گذاری",
     "ShareCompleted": "اشتراک‌گذاری کامل شد",
     "ShareFailed": "امکان اشتراک‌گذاری در این مرورگر پشتیبانی نمی‌شود. لطفاً تصویر لحظه‌ای را به صورت دستی باز کنید و اشتراک‌گذاری کنید.",
-    "ShareNotSupported": "امکان اشتراک‌گذاری بومی در این پلتفرم پشتیبانی نمی‌شود. از «کپی در کلیپ‌بورد» به جای آن استفاده کنید.",
     "Sharing": "در حال اشتراک‌گذاری...",
-    "Timestamp": "زمان",
     "ZeroBytes": "۰ بایت"
   },
   "Settings": {
-    "Title": "تنظیمات",
     "About": {
       "CheckForUpdates": "بررسی برای به‌روزرسانی‌ها",
       "CheckingUpdates": "در حال بررسی برای به‌روزرسانی‌ها...",
-      "UpdateAvailable": "نسخه جدید {{version}} در دسترس است",
-      "UpdateReady": "نسخه {{version}} آماده نصب است",
-      "NoUpdatesAvailable": "هیچ به‌روزرسانی در دسترس نیست",
       "InstallNow": "اکنون نصب کن",
-      "TermsOfService": "شرایط خدمات",
-      "PrivacyPolicy": "سیاست حفظ حریم خصوصی",
       "LegalToggle": {
+        "FullVersion": "نسخه کامل",
         "OneSentence": "یک جمله",
-        "TLDR": "خلاصه",
-        "FullVersion": "نسخه کامل"
+        "TLDR": "خلاصه"
       },
-      "Terms": {
-        "OneSentenceSummary": "SeaMeet یک ضبط‌کننده رایگان و با حریم خصوصی است که استفاده محلی از آن بدون نیاز به حساب کاربری است، داده‌های شما مال شماست، قابلیت‌های ابری اختیاری هستند و قبل از ضبط باید رضایت بگیرید.",
-        "TLDRTitle": "شرایط استفاده از SeaMeet — خلاصه کوتاه برای انسان‌های مشغول",
-        "TLDRItems": [
-          "SeaMeet Desktop رایگان است — تمام ویژگی‌های غیر‑AI بدون نیاز به حساب کاربری یا ورود کاربر کار می‌کنند.",
-          "قبل از ضبط رضایت بگیرید — SeaMeet این مورد را بررسی نمی‌کند.",
-          "ضبط‌ها و متن‌های شما مال شماست؛ SeaMeet تنها آن‌ها را برای ارائه خدمات پردازش می‌کند.",
-          "امکانات ابری نیازمند حساب کاربری است و داده‌ها روی سرورهای SeaMeet ذخیره می‌شوند.",
-          "تشخیص‌های ناشناس اختیاری است و در هر زمان قابل غیرفعال کردن است.",
-          "از برنامه سوءاستفاده نکنید (بدون استفاده غیرقانونی، بدون هک کردن).",
-          "سرویس ممکن است تغییر کند و مسئولیت محدود است."
-        ]
-      },
+      "NoUpdatesAvailable": "هیچ به‌روزرسانی در دسترس نیست",
       "Privacy": {
         "OneSentenceSummary": "SeaMeet Desktop تمامی ضبط‌ها را به طور کامل، در محل، روی دستگاه شما نگه می‌دارد و نیاز به حساب کاربری ندارد. امکانات ابری اختیاری، رمزگذاری‌شده و کاملاً تحت کنترل شما هستند.",
-        "TLDRTitle": "حریم خصوصی SeaMeet — خلاصه کوتاه برای انسان‌های مشغول",
         "TLDRItems": [
           "SeaMeet Desktop به‌طور پیش‌فرض خصوصی است: همه چیز روی دستگاه شما باقی می‌ماند؛ ما تماس صوتی، تصویری، محتوای صفحه‌نشان‌گر یا داده‌های جلسه را جمع‌آوری نمی‌کنیم.",
           "برای استفاده از ویژگی‌های غیر‑AI برنامه Desktop نیازی به حساب کاربری ندارید.",
@@ -530,734 +883,299 @@
           "ادغام‌های شخص ثالث اختیاری و کاملاً قابل لغو هستند.",
           "ما داده‌ها را نمی‌فروشیم، و ضبط‌های فضای ابری رمزگذاری شده هستند.",
           "شما کنترل داده‌های خود را دارید — هر زمان ضبط‌ها را حذف کنید یا درخواست حذف کامل دهید."
-        ]
+        ],
+        "TLDRTitle": "حریم خصوصی SeaMeet — خلاصه کوتاه برای انسان‌های مشغول"
       },
+      "PrivacyPolicy": "سیاست حفظ حریم خصوصی",
       "PrivacySecurity": {
-        "Title": "حریم خصوصی و امنیت اطلاعات",
         "AutoDetect": {
+          "ExplicitApproval": {
+            "Description": "auto-detect هرگز بدون تایید صریح شما، خودکار شروع به ضبط نمی‌کند",
+            "Title": "نیاز به تایید صریح"
+          },
           "MicrophoneActivity": {
-            "Title": "فقط فعالیت میکروفن",
-            "Description": "auto-detect استفاده از میکروفن شما را برای استنتاج برنامه‌ای که از آن استفاده می‌شود، پایش می‌کند. هیچ داده‌ای جمع‌آوری نمی‌شود."
+            "Description": "auto-detect استفاده از میکروفن شما را برای استنتاج برنامه‌ای که از آن استفاده می‌شود، پایش می‌کند. هیچ داده‌ای جمع‌آوری نمی‌شود.",
+            "Title": "فقط فعالیت میکروفن"
           },
           "NoDataAccess": {
-            "Title": "بدون دسترسی به اطلاعات",
-            "Description": "auto-detect فقط تشخیص می‌دهد که آیا میکروفن استفاده می‌شود یا نه. هیچ داده‌ای دسترسی ندارد."
-          },
-          "ExplicitApproval": {
-            "Title": "نیاز به تایید صریح",
-            "Description": "auto-detect هرگز بدون تایید صریح شما، خودکار شروع به ضبط نمی‌کند"
+            "Description": "auto-detect فقط تشخیص می‌دهد که آیا میکروفن استفاده می‌شود یا نه. هیچ داده‌ای دسترسی ندارد.",
+            "Title": "بدون دسترسی به اطلاعات"
           },
           "NoDataCollection": {
-            "Title": "بدون جمع‌آوری داده",
-            "Description": "SeaMeet هیچ داده‌ای از ویژگی auto-detect بدون رضایت شما جمع‌آوری نمی‌کند."
+            "Description": "SeaMeet هیچ داده‌ای از ویژگی auto-detect بدون رضایت شما جمع‌آوری نمی‌کند.",
+            "Title": "بدون جمع‌آوری داده"
           }
         },
         "Flashback": {
-          "LocalOnly": {
-            "Title": "۱۰۰٪ محلی",
-            "Description": "بازگشت به خاطرات در سرویس محلی شما اجرا می‌شود. هیچ چیز به ابر همگام‌سازی نمی‌شود."
+          "EthicalUse": {
+            "Description": "همیشه قبل از استفاده از Flashback برای ضبط دیگران، اطلاع‌رسانی و مجوز بگیرید.",
+            "Title": "نکات اخلاقی"
           },
-          "RAMOnly": {
-            "Title": "RAM Only → فقط RAM",
-            "Description": "تمام داده‌ها در حافظه باقی می‌مانند و تنها در صورت ذخیره‌سازی نوشته می‌شوند."
+          "LocalOnly": {
+            "Description": "بازگشت به خاطرات در سرویس محلی شما اجرا می‌شود. هیچ چیز به ابر همگام‌سازی نمی‌شود.",
+            "Title": "۱۰۰٪ محلی"
           },
           "Protected": {
-            "Title": "محافظت‌شده",
-            "Description": "حریم خصوصی و امنیت شما در اولویت است. داده‌های شما هرگز از دستگاهتان خارج نمی‌شود."
+            "Description": "حریم خصوصی و امنیت شما در اولویت است. داده‌های شما هرگز از دستگاهتان خارج نمی‌شود.",
+            "Title": "محافظت‌شده"
           },
-          "EthicalUse": {
-            "Title": "نکات اخلاقی",
-            "Description": "همیشه قبل از استفاده از Flashback برای ضبط دیگران، اطلاع‌رسانی و مجوز بگیرید."
+          "RAMOnly": {
+            "Description": "تمام داده‌ها در حافظه باقی می‌مانند و تنها در صورت ذخیره‌سازی نوشته می‌شوند.",
+            "Title": "RAM Only → فقط RAM"
           }
-        }
-      }
+        },
+        "Title": "حریم خصوصی و امنیت اطلاعات"
+      },
+      "Terms": {
+        "OneSentenceSummary": "SeaMeet یک ضبط‌کننده رایگان و با حریم خصوصی است که استفاده محلی از آن بدون نیاز به حساب کاربری است، داده‌های شما مال شماست، قابلیت‌های ابری اختیاری هستند و قبل از ضبط باید رضایت بگیرید.",
+        "TLDRItems": [
+          "SeaMeet Desktop رایگان است — تمام ویژگی‌های غیر‑AI بدون نیاز به حساب کاربری یا ورود کاربر کار می‌کنند.",
+          "قبل از ضبط رضایت بگیرید — SeaMeet این مورد را بررسی نمی‌کند.",
+          "ضبط‌ها و متن‌های شما مال شماست؛ SeaMeet تنها آن‌ها را برای ارائه خدمات پردازش می‌کند.",
+          "امکانات ابری نیازمند حساب کاربری است و داده‌ها روی سرورهای SeaMeet ذخیره می‌شوند.",
+          "تشخیص‌های ناشناس اختیاری است و در هر زمان قابل غیرفعال کردن است.",
+          "از برنامه سوءاستفاده نکنید (بدون استفاده غیرقانونی، بدون هک کردن).",
+          "سرویس ممکن است تغییر کند و مسئولیت محدود است."
+        ],
+        "TLDRTitle": "شرایط استفاده از SeaMeet — خلاصه کوتاه برای انسان‌های مشغول"
+      },
+      "TermsOfService": "شرایط خدمات",
+      "UpdateAvailable": "نسخه جدید {{version}} در دسترس است",
+      "UpdateReady": "نسخه {{version}} آماده نصب است"
     },
-    "General": "ژنرال",
-    "Storage": {
-      "Title": "تنظیمات ذخیره سازی",
-      "Description": "پوشه پیش فرضی را که SeaMeet هنگام ذخیره خودکار ضبط ها استفاده می کند، انتخاب کنید.",
-      "DefaultPathLabel": "پوشه ذخیره پیش فرض",
-      "Browse": "مرور...",
-      "Save": "ذخیره کنید",
-      "RecordingNameLabel": "نام ضبط"
+    "AppPermissions": {
+      "DefaultRecordingMode": "حالت ضبط پیش فرض",
+      "DeleteTooltip": "حذف از لیست (بازنشانی به «پرسیدن هر بار»)",
+      "EmptyState": "هنوز برنامه‌ای تشخیص داده نشده است. زمانی که SeaMeet برنامه‌ای که از میکروفن استفاده می‌کند را تشخیص دهد، در اینجا ظاهر می‌شود.",
+      "PathCopied": "مسیر در کلیپ‌بورد کپی شد",
+      "PermissionHeader": "مجوزهای برنامه",
+      "Title": "مجوزهای برنامه"
     },
-    "ProfileSettings": "تنظیمات پروفایل کاربری",
-    "AccountPreferences": "ترجیحات حساب کاربری",
-    "ProfileSettingsDescription": "مدیریت اطلاعات پروفایل",
-    "AccountPreferencesDescription": "تنظیمات برگزیده حساب خود را مدیریت کنید",
-    "SettingsFileLocation": "محل فایل تنظیمات",
-    "SettingsFileDescription": "تنظیمات در یک فایل JSON برای پشتیبان گیری و مدیریت آسان ذخیره می شوند",
     "Back": "بازگشت",
-    "OpenFolder": "باز کردن پوشه",
     "DefaultUserName": "کاربر SeaMeet",
-    "UserAvatarAlt": "کاربر",
+    "FailedToCheckForUpdates": "بررسی بروزرسانی‌ها ناموفق بود",
     "GroupTitle": {
-      "Account": "حساب",
-      "General": "ژنرال",
-      "Automation": "اتوماسیون",
-      "RecordingStorage": "ذخیره سازی ضبط",
-      "Configuration": "پیکربندی",
       "ApplicationInfo": "اطلاعات برنامه",
-      "Legal": "قانونی"
+      "Automation": "اتوماسیون",
+      "Configuration": "پیکربندی",
+      "General": "ژنرال",
+      "Legal": "قانونی",
+      "RecordingStorage": "ذخیره سازی ضبط"
     },
     "Item": {
-      "EditProfile": "ویرایش پروفایل",
-      "Account": "حساب",
-      "LogOut": "خروج",
-      "Language": "زبان",
+      "AutoRecording": "ضبط خودکار",
+      "Copyright": "کپی‌رایت",
       "ImproveTranslationHint": "به بهبود این ترجمه در GitHub → کمک کنید",
-      "Theme": "تم",
-      "KeyboardShortcuts": "میانبرهای کیبورد",
+      "Language": "زبان",
       "MicrophoneGain": "سطح میکروفن",
       "StartAtLogin": "شروع در هنگام ورود",
-      "AutoRecording": "ضبط خودکار",
       "Storage": "ذخیره‌سازی",
-      "Copyright": "کپی‌رایت"
+      "Theme": "تم"
     },
     "MicGain": {
-      "Minimal": "حداقل (0.1x)",
-      "Quiet": "ساکت (0.5x)",
-      "Normal": "عادی (1x)",
       "Loud": "بلند (5x)",
-      "Louder": "بلندتر (10x)"
+      "Louder": "بلندتر (10x)",
+      "Minimal": "حداقل (0.1x)",
+      "Normal": "عادی (1x)",
+      "Quiet": "ساکت (0.5x)"
+    },
+    "OpenFolder": "باز کردن پوشه",
+    "PageTitle": {
+      "About": "درباره",
+      "AutoRecording": "ضبط خودکار",
+      "Flashback": "بازگشت به خاطرات ضبط",
+      "Storage": "فضای ذخیره‌سازی"
+    },
+    "SettingsFileLocation": "محل فایل تنظیمات",
+    "Storage": {
+      "Browse": "مرور...",
+      "DefaultPathLabel": "پوشه ذخیره پیش فرض",
+      "Description": "پوشه پیش فرضی را که SeaMeet هنگام ذخیره خودکار ضبط ها استفاده می کند، انتخاب کنید.",
+      "Save": "ذخیره کنید",
+      "Title": "تنظیمات ذخیره سازی"
     },
     "Theme": {
+      "AdobeSand": "شن آدوبی",
+      "AdobeSandDesc": "حالت روشن با رنگ‌های خاکی گرم",
+      "AzureLight": "آبی آسمانی",
+      "AzureLightDesc": "حالت روشن آبی خنک",
+      "CloudCanvas": "بوم ابری",
+      "CloudCanvasDesc": "حالت روشن سبز نعنایی تازه",
+      "ColumnDark": "تیره",
+      "ColumnLight": "روشن",
+      "CyberCobalt": "کبالت سایبری",
+      "CyberCobaltDesc": "حالت تیره فیروزه‌ای نئون",
+      "Dark": "تیره",
+      "DarkDesc": "حالت تیره",
       "Device": "دستگاه",
       "DeviceDesc": "پیروی از تنظیمات سیستم",
       "Light": "روشن",
       "LightDesc": "مد روشن",
-      "Dark": "تیره",
-      "DarkDesc": "حالت تیره",
-      "Pink": "صورتی تیره",
-      "PinkDesc": "حالت صورتی تیره",
       "LightPink": "صورتی روشن",
       "LightPinkDesc": "حالت رنگ صورتی روشن",
-      "ColumnLight": "روشن",
-      "ColumnDark": "تیره",
-      "AzureLight": "آبی آسمانی",
-      "AzureLightDesc": "حالت روشن آبی خنک",
-      "WarmPaper": "کاغذ گرم",
-      "WarmPaperDesc": "حالت روشن با رنگ‌های گرم کاغذ",
-      "SynthwaveLight": "سینت‌ویو روشن",
-      "SynthwaveLightDesc": "حالت روشن سینت‌ویو پرجنب‌وجوش",
       "MidnightBlue": "آبی نیمه‌شب",
       "MidnightBlueDesc": "حالت تیره آبی عمیق",
-      "CloudCanvas": "بوم ابری",
-      "CloudCanvasDesc": "حالت روشن سبز نعنایی تازه",
-      "CyberCobalt": "کبالت سایبری",
-      "CyberCobaltDesc": "حالت تیره فیروزه‌ای نئون",
-      "AdobeSand": "شن آدوبی",
-      "AdobeSandDesc": "حالت روشن با رنگ‌های خاکی گرم"
+      "Pink": "صورتی تیره",
+      "PinkDesc": "حالت صورتی تیره",
+      "SynthwaveLight": "سینت‌ویو روشن",
+      "SynthwaveLightDesc": "حالت روشن سینت‌ویو پرجنب‌وجوش",
+      "WarmPaper": "کاغذ گرم",
+      "WarmPaperDesc": "حالت روشن با رنگ‌های گرم کاغذ"
     },
-    "PageTitle": {
-      "Flashback": "بازگشت به خاطرات ضبط",
-      "About": "درباره",
-      "AutoRecording": "ضبط خودکار",
-      "Storage": "فضای ذخیره‌سازی"
-    },
-    "FailedToCheckForUpdates": "بررسی بروزرسانی‌ها ناموفق بود",
-    "AppPermissions": {
-      "Title": "مجوزهای برنامه",
-      "Description": "مدیریت برنامه‌هایی که هنگام تشخیص استفاده از میکروفن، به صورت خودکار ضبط می‌کنند.",
-      "EmptyState": "هنوز برنامه‌ای تشخیص داده نشده است. زمانی که SeaMeet برنامه‌ای که از میکروفن استفاده می‌کند را تشخیص دهد، در اینجا ظاهر می‌شود.",
-      "DeleteTooltip": "حذف از لیست (بازنشانی به «پرسیدن هر بار»)",
-      "PathCopied": "مسیر در کلیپ‌بورد کپی شد",
-      "PermissionHeader": "مجوزهای برنامه",
-      "DefaultRecordingMode": "حالت ضبط پیش فرض"
-    }
+    "Title": "تنظیمات",
+    "UserAvatarAlt": "کاربر"
   },
   "Shortcuts": {
-    "ToggleFloatingWindow": "نمایش پنجره شناور",
-    "OpenLauncher": "لانچر را باز کنید",
-    "RecordAudio": "ضبط صدا",
-    "RecordFullscreen": "ضبط تمام صفحه",
-    "RecordWindow": "پنجره ضبط",
-    "RecordRegion": "منطقه رکورد",
     "CaptureScreenshot": "گرفتن اسکرین شات",
-    "RestoreDefaults": "بازیابی پیش فرض ها",
-    "RecordingPrompt": "در حال گوش دادن… میانبر جدید را فشار دهید",
     "ConflictWarning": "این میانبر قبلاً توسط برنامه دیگری استفاده می شود و نمی توان آن را ثبت کرد.",
     "GenericError": "میانبر به روز رسانی نمی شود.",
     "None": "هیچ کدام",
-    "SpaceKey": "فضا"
+    "OpenLauncher": "لانچر را باز کنید",
+    "RecordAudio": "ضبط صدا",
+    "RecordFullscreen": "ضبط تمام صفحه",
+    "RecordingPrompt": "در حال گوش دادن… میانبر جدید را فشار دهید",
+    "RecordRegion": "منطقه رکورد",
+    "RecordWindow": "پنجره ضبط",
+    "RestoreDefaults": "بازیابی پیش فرض ها",
+    "SpaceKey": "فضا",
+    "ToggleFloatingWindow": "نمایش پنجره شناور"
   },
   "Sidebar": {
-    "PrimaryNavigation": "ناوبری اصلی",
     "ClearSearch": "پاک‌سازی جستجو",
-    "AgentPanel": "عامل هوش مصنوعی"
-  },
-  "SidebarTabs": {
-    "Audios": "صداها",
-    "AutoDetect": "تشخیص خودکار"
+    "PrimaryNavigation": "ناوبری اصلی"
   },
   "TakeSnapshot": {
-    "Title": "عکس فوری گرفته شده است",
+    "GoToSnapshot": "به عکس فوری جدید بروید",
     "Message": "عکس فوری گرفته شده و در:",
     "StayAtVideo": "در ویدیوی فعلی بمانید",
-    "GoToSnapshot": "به عکس فوری جدید بروید"
+    "Title": "عکس فوری گرفته شده است"
   },
   "TopNav": {
-    "CloseNavigationMenu": "بستن منوی ناوبری",
-    "OpenNavigationMenu": "منوی ناوبری را باز کنید",
-    "MainNavigation": "ناوبری اصلی",
-    "Record": "ضبط کنید",
-    "Recording": "در حال ضبط",
-    "Files": "فایل ها",
     "Agent": "Agent",
-    "Terminal": "ترمینال"
+    "CloseNavigationMenu": "بستن منوی ناوبری",
+    "Files": "فایل ها",
+    "MainNavigation": "ناوبری اصلی",
+    "OpenNavigationMenu": "منوی ناوبری را باز کنید",
+    "Record": "ضبط کنید",
+    "Recording": "در حال ضبط"
   },
   "Tray": {
-    "MinimizedHint": "SeaMeet در سینی سیستم (پایین سمت راست) همچنان در حال اجرا است.",
-    "ShowLauncher": "Show Launcher → نمایش لانچر",
-    "ShowFloatingWindow": "نمایش پنجره شناور",
-    "ShowMainWindow": "Show Main Window → نمایش پنجره اصلی",
-    "ExitSeaMeet": "خروج از SeaMeet",
-    "QuickRecording": "ضبط سریع",
-    "RecordAudio": "ضبط صدا",
-    "RecordFullscreen": "Record Full Screen → ضبط کل صفحه‌نمایش",
-    "RecordRegion": "تعیین ناحیه برای ضبط",
-    "OpenRecordingsFolder": "باز کردن پوشه ضبط‌ها",
-    "TakeScreenshot": "Take Screenshot → گرفتن تصویر صفحه‌نمایش",
-    "Close": "بستن",
-    "OpenSeaMeet": "Open SeaMeet → باز کردن SeaMeet",
-    "OpenSaveFolder": "باز کردن پوشه ذخیره",
-    "ReportIssues": "گزارش مشکل"
+    "MinimizedHint": "SeaMeet در سینی سیستم (پایین سمت راست) همچنان در حال اجرا است."
   },
   "Types": {
-    "Microphone": "میکروفون",
-    "System": "خروجی صوتی سیستم",
     "Both": "هر دو (مختلط)",
     "File": "فایل",
+    "Microphone": "میکروفون",
+    "System": "خروجی صوتی سیستم",
     "Video": "ویدیو"
   },
   "UpdateQuitModal": {
-    "Title": "به روز رسانی موجود است",
-    "ReadyToInstall": "SeaMeet {{version}} آماده نصب است.",
-    "InstallBeforeQuitting": "آیا می خواهید قبل از ترک آن را نصب کنید؟",
     "InstallAndQuit": "نصب و خروج",
-    "QuitWithoutInstalling": "بدون نصب خارج شوید"
+    "InstallBeforeQuitting": "آیا می خواهید قبل از ترک آن را نصب کنید؟",
+    "QuitWithoutInstalling": "بدون نصب خارج شوید",
+    "ReadyToInstall": "SeaMeet {{version}} آماده نصب است.",
+    "Title": "به روز رسانی موجود است"
   },
   "UpdateToast": {
-    "ReadyToInstall": "SeaMeet {{version}} برای نصب آماده است",
-    "Downloading": "در حال دانلود SeaMeet {{version}} ({{percent}}%)",
     "Available": "بروزرسانی موجود است: SeaMeet {{version}}",
-    "WhatsNewInVersion": "چه خبر جدید در {{version}} است؟",
-    "WhatsNew": "تغییرات جدید:",
+    "Dismiss": "رد کردن",
+    "Downloading": "در حال دانلود SeaMeet {{version}} ({{percent}}%)",
     "Hide": "پنهان کردن",
+    "ReadyToInstall": "SeaMeet {{version}} برای نصب آماده است",
     "RestartNow": "در حال حاضر راه‌اندازی مجدد کنید",
     "ViewRelease": "مشاهده نسخه",
     "ViewReleaseTitle": "مشاهده یادداشت‌های نسخه در GitHub",
-    "Dismiss": "رد کردن"
+    "WhatsNew": "تغییرات جدید:",
+    "WhatsNewInVersion": "چه خبر جدید در {{version}} است؟"
   },
   "UserMenu": {
+    "AboutSeaMeet": "درباره SeaMeet",
     "DisplayName": "کاربر",
     "EmailPlaceholder": "user@example.com",
-    "ProfileSettings": "تنظیمات پروفایل",
-    "AccountPreferences": "تنظیمات برگزیده حساب",
-    "BillingPlans": "صورتحساب و طرح‌ها",
-    "StorageSettings": "تنظیمات ذخیره‌سازی",
-    "HelpSupport": "راهنما و پشتیبانی",
-    "KeyboardShortcuts": "میانبرهای صفحه کلید",
-    "SignIn": "وارد شوید",
-    "SignOut": "خروج از SeaMeet",
-    "SeaMeetSignedOut": "SeaMeet: وارد نشده است",
-    "SeaMeetSignedIn": "SeaMeet: وارد شده",
-    "AboutSeaMeet": "درباره SeaMeet",
     "Exit": "خروج از SeaMeet",
+    "HelpSupport": "راهنما و پشتیبانی",
     "HelpSupportSection": {
-      "Wiki": "ویکی‌پدیا",
-      "WikiDesc": "مستندات و راهنماهای SeaMeet را در ویکی‌پدیا بررسی کنید.",
-      "VisitWiki": "بازدید از ویکی",
-      "Issues": "اشکال‌ها",
-      "IssuesDesc": "گزارش اشکال و درخواست ویژگی‌ها (نیازمند حساب GitHub).",
-      "SubmitIssue": "ارسال گزارش مشکل",
       "Discussion": "بحث و تبادل نظر",
       "DiscussionDesc": "به بحث جامعه بپیوندید (نیازمند حساب GitHub).",
-      "JoinDiscussion": "شرکت در بحث",
+      "DogfoodingDesc": "ما شما را تشویق می‌کنیم از SeaMeet برای ضبط اشکال استفاده کنید و آن را در Issues یا ایمیل کنید!",
       "Email": "ایمیل",
       "EmailDesc": "با تیم ما مستقیماً تماس بگیرید.",
-      "SendEmail": "ارسال ایمیل",
-      "Dogfooding": "Dogfooding",
-      "DogfoodingDesc": "ما شما را تشویق می‌کنیم از SeaMeet برای ضبط اشکال استفاده کنید و آن را در Issues یا ایمیل کنید!",
-      "CheckForUpdates": "بررسی به‌روزرسانی‌ها",
-      "CheckingUpdates": "در حال بررسی بروزرسانی‌ها...",
-      "UpdateAvailable": "نسخه {{version}} در دسترس است",
-      "UpdateReady": "نسخه {{version}} آماده‌ی نصب است",
-      "InstallNow": "همین حالا نصب کن",
-      "TermsOfService": "شرایط خدمات",
-      "PrivacyPolicy": "سیاست حفظ حریم خصوصی",
       "ImproveTranslation": "بهبود ترجمه ها",
-      "ImproveTranslationDesc": "به ما در بهبود ترجمه ها یا درخواست زبان جدید در GitHub کمک کنید."
-    }
+      "ImproveTranslationDesc": "به ما در بهبود ترجمه ها یا درخواست زبان جدید در GitHub کمک کنید.",
+      "Issues": "اشکال‌ها",
+      "IssuesDesc": "گزارش اشکال و درخواست ویژگی‌ها (نیازمند حساب GitHub).",
+      "JoinDiscussion": "شرکت در بحث",
+      "SendEmail": "ارسال ایمیل",
+      "SubmitIssue": "ارسال گزارش مشکل",
+      "VisitWiki": "بازدید از ویکی",
+      "Wiki": "ویکی‌پدیا",
+      "WikiDesc": "مستندات و راهنماهای SeaMeet را در ویکی‌پدیا بررسی کنید."
+    },
+    "KeyboardShortcuts": "میانبرهای صفحه کلید",
+    "SeaMeetSignedIn": "SeaMeet: وارد شده",
+    "SeaMeetSignedOut": "SeaMeet: وارد نشده است",
+    "SignIn": "وارد شوید",
+    "SignOut": "خروج از SeaMeet"
   },
   "VideoSettings": {
-    "Title": "تنظیمات ضبط ویدئو",
-    "Mode": "حالت فیلم‌برداری",
-    "ModeOff": "خاموش",
-    "ModeFullscreen": "حالت تمام صفحه",
-    "ModeWindow": "حالت پنجره",
-    "ModeRegion": "ناحیه",
+    "AudioSettings": "تنظیمات صدا",
+    "CodecTooltip": {
+      "VP8": "این ضبط از VP8 برای بهترین کیفیت استفاده می کند. برخی از پخش‌کننده‌های ویدیوی پیش‌فرض - مانند Windows Media Player و QuickTime در macOS - ممکن است از این فرمت پشتیبانی نکنند. برای پخش مطمئن، لطفاً از یک مرورگر مدرن (Chrome یا Edge) یا یک پخش کننده سازگار مانند VLC استفاده کنید.",
+      "VP9": "این ضبط از VP9 برای بهترین کیفیت استفاده می کند. برخی از پخش‌کننده‌های ویدیوی پیش‌فرض - مانند Windows Media Player و QuickTime در macOS - ممکن است از این فرمت پشتیبانی نکنند. برای پخش مطمئن، لطفاً از یک مرورگر مدرن (Chrome یا Edge) یا یک پخش کننده سازگار مانند VLC استفاده کنید."
+    },
+    "Detecting": "در حال شناسایی...",
+    "FlashbackArmedNotice": "در حال ضبط با {{seconds}} ثانیه بافر بازگشت به خاطرات",
+    "FramesPerSecond": "فریم بر ثانیه",
+    "FullHD": "فول اچ‌دی",
+    "GBPerHour": "~{{gb}} گیگابایت در ساعت",
+    "HD": "HD",
+    "HideWindow": "در حین انتخاب منطقه، پنجره SeaMeet مخفی می‌شود",
+    "Internal": "داخلی",
+    "MBPerMin": "~{{mb}} مگابایت/دقیقه",
     "ModeAudioOnly": "فقط صدا",
-    "SelectScreen": "صفحه را انتخاب کنید",
-    "SelectWindow": "برای انتخاب پنجره",
-    "Refresh": "بروزرسانی",
+    "ModeFullscreen": "حالت تمام صفحه",
+    "ModeRegion": "ناحیه",
+    "ModeWindow": "حالت پنجره",
+    "Native": "بومی",
     "NoScreens": "هیچ صفحه‌ای شناسایی نشد",
     "NoWindows": "پنجره در دسترس نیست",
-    "RegionInfo": "هنگام شروع ضبط، از شما خواسته می‌شود صفحه یا پنجره‌ای را انتخاب کنید.",
-    "HideWindow": "در حین انتخاب منطقه، پنجره SeaMeet مخفی می‌شود",
-    "VideoQuality": "کیفیت ویدئو",
-    "Quality": "کیفیت ویدئو",
-    "QualityOriginal": "کیفیت اصلی",
-    "QualityHigh": "کیفیت بالا",
-    "QualityMedium": "کیفیت متوسط",
-    "QualityLow": "کم",
-    "FramesPerSecond": "فریم بر ثانیه",
-    "FrameRate": "نرخ فریم",
-    "SourceResolution": "رزولوشن منبع",
-    "Native": "بومی",
-    "FullHD": "فول اچ‌دی",
-    "HD": "HD",
-    "SD": "SD",
-    "SelectSourceAbove": "لطفاً منبع بالا را انتخاب کنید",
-    "ZeroSize": "~0 مگابایت/دقیقه، ~0 گیگابایت/ساعت (تقریباً)",
-    "MBPerMin": "~{{mb}} مگابایت/دقیقه",
-    "GBPerHour": "~{{gb}} گیگابایت در ساعت",
     "Primary": "اصلی",
-    "Internal": "داخلی",
-    "Detecting": "در حال شناسایی...",
-    "ResolutionUnknown": "وضوح ناشناخته",
-    "AudioSettings": "تنظیمات صدا",
-    "RecordModeTitle": "ضبط صدای ویدئو یا تصویر؟",
+    "QualityHigh": "کیفیت بالا",
+    "QualityLow": "کم",
+    "QualityMedium": "کیفیت متوسط",
+    "QualityOriginal": "کیفیت اصلی",
     "Record": "ضبط کنید",
-    "RecordWithoutFlashback": "ضبط بدون بازگشت به خاطرات",
+    "RecordModeTitle": "ضبط صدای ویدئو یا تصویر؟",
     "RecordWithFlashback": "با {SeaMeet}، ضبط بازگشت به خاطرات",
+    "RecordWithoutFlashback": "ضبط بدون بازگشت به خاطرات",
+    "Refresh": "بروزرسانی",
+    "ResolutionUnknown": "وضوح ناشناخته",
+    "SD": "SD",
+    "SelectScreen": "صفحه را انتخاب کنید",
+    "SelectSourceAbove": "لطفاً منبع بالا را انتخاب کنید",
+    "SelectWindow": "برای انتخاب پنجره",
+    "SourceResolution": "رزولوشن منبع",
+    "Title": "تنظیمات ضبط ویدئو",
     "VideoFlashbackArmedNotice": "بازگشت به خاطرات صفحه نمایش مسلح شده است ({{seconds}} ثانیه)",
-    "FlashbackArmedNotice": "در حال ضبط با {{seconds}} ثانیه بافر بازگشت به خاطرات",
-    "CodecTooltip": {
-      "VP9": "این ضبط از VP9 برای بهترین کیفیت استفاده می کند. برخی از پخش‌کننده‌های ویدیوی پیش‌فرض - مانند Windows Media Player و QuickTime در macOS - ممکن است از این فرمت پشتیبانی نکنند. برای پخش مطمئن، لطفاً از یک مرورگر مدرن (Chrome یا Edge) یا یک پخش کننده سازگار مانند VLC استفاده کنید.",
-      "VP8": "این ضبط از VP8 برای بهترین کیفیت استفاده می کند. برخی از پخش‌کننده‌های ویدیوی پیش‌فرض - مانند Windows Media Player و QuickTime در macOS - ممکن است از این فرمت پشتیبانی نکنند. برای پخش مطمئن، لطفاً از یک مرورگر مدرن (Chrome یا Edge) یا یک پخش کننده سازگار مانند VLC استفاده کنید."
-    }
+    "VideoQuality": "کیفیت ویدئو",
+    "ZeroSize": "~0 مگابایت/دقیقه، ~0 گیگابایت/ساعت (تقریباً)"
   },
   "VideoSettingsModal": {
-    "RegionSelected": "منطقه انتخاب‌شده",
     "CustomRegion": "منطقه سفارشی: {{width}} × {{height}} پیکسل",
-    "ReselectRegion": "انتخاب مجدد منطقه",
-    "SelectCustomRegion": "انتخاب منطقه سفارشی",
     "FPS15": "۱۵ فریم در ثانیه",
     "FPS30": "۳۰ فریم در ثانیه",
-    "FPS60": "۶۰ فریم در ثانیه"
+    "FPS60": "۶۰ فریم در ثانیه",
+    "RegionSelected": "منطقه انتخاب‌شده",
+    "ReselectRegion": "انتخاب مجدد منطقه",
+    "SelectCustomRegion": "انتخاب منطقه سفارشی"
   },
   "WindowPicker": {
-    "Title": "یک پنجره را انتخاب کنید",
     "Instruction": "پنجره ای را برای ضبط برای ضبط پنجره انتخاب کنید.",
-    "Refresh": "تازه کردن",
-    "Refreshing": "در حال تازه کردن…",
     "Loading": "در حال بارگیری ویندوز…",
     "None": "هیچ ویندوزی شناسایی نشد یک برنامه را باز کنید و بازخوانی کنید.",
+    "Refresh": "تازه کردن",
+    "Refreshing": "در حال تازه کردن…",
+    "Title": "یک پنجره را انتخاب کنید",
     "Unknown": "پنجره بدون عنوان"
-  },
-  "Common": {
-    "Configure": "تنظیمات",
-    "Cancel": "لغو کنید",
-    "Apply": "اعمال",
-    "Close": "بستن",
-    "Open": "باز کنید",
-    "Minimize": "کمینه‌سازی به شکل دایره",
-    "Recording": "در حال ضبط",
-    "UnknownApp": "برنامه ناشناخته",
-    "Done": "تمام شد",
-    "Save": "ذخیره کنید",
-    "Saving": "در حال ذخیره‌سازی...",
-    "Delete": "حذف",
-    "Or": "یا",
-    "Loading": "در حال بارگذاری...",
-    "Expand": "نمایش بیشتر",
-    "PlannedFeature": "ویژگی برنامه ریزی شده",
-    "Screen": "صفحه نمایش",
-    "Window": "پنجره",
-    "Region": "منطقه",
-    "AppTitle": "صفحه نمایش و ضبط صدا SeaMeet",
-    "AppSubtitle": "صدای ورودی و خروجی دستگاه را ضبط کنید",
-    "Screenshot": "تصویر لحظه‌ای",
-    "Saved": "ذخیره شد",
-    "Processing": "در حال پردازش…",
-    "Starting": "شروع...",
-    "FileNameCopiedWithRenameHint": "{{fileName}} به کلیپ‌بورد کپی شد. برای تغییر نام، دوباره کلیک کنید.",
-    "ApplyName": "نام را اعمال کنید",
-    "Send": "ارسال کنید"
-  },
-  "RecordingControls": {
-    "StartRecording": "شروع ضبط",
-    "StopRecording": "ضبط را متوقف کنید",
-    "ContinueRecording": "ادامه ضبط",
-    "Pause": "مکث کنید",
-    "Resume": "رزومه",
-    "Stop": "توقف کنید",
-    "RecordingScreen": "صفحه ضبط..",
-    "RecordingAudio": "ضبط صدا..",
-    "AudioRecording": "ضبط صدا",
-    "VideoRecording": "ضبط ویدیو",
-    "RecordingPreview": "پیش نمایش ضبط",
-    "RecordingMode": "حالت ضبط"
-  },
-  "RecordingModes": {
-    "RecordAudio": "صدا",
-    "RecordAudioTip": "تنها ضبط صدا",
-    "RecordWindow": "ضبط پنجره",
-    "RecordWindowTip": "ضبط یک پنجره برنامه",
-    "RecordFullscreen": "تمام‌صفحه",
-    "RecordFullscreenTip": "ضبط کل صفحه‌نمایش",
-    "RecordRegion": "ضبط ناحیه",
-    "RecordRegionTip": "ضبط ناحیه دلخواه",
-    "CaptureMode": "حالت ضبط",
-    "FullScreen": "تمام‌صفحه",
-    "AreaCapture": "ضبط ناحیه دلخواه"
-  },
-  "RecordingsList": {
-    "NoRecordings": "تاکنون ضبطی وجود ندارد. برای دیدن آنها، اینجا ضبط کنید.",
-    "RecentRecordings": "ضبط‌های اخیر",
-    "RecentCaptures": "تصاویر ویدئویی اخیر",
-    "RefreshRecordings": "تازه‌سازی",
-    "SearchRecordingsOrSnapshots": "جست‌وجو در ضبط‌ها و تصاویر لحظه‌ای",
-    "SearchRecordingsPlaceholder": "جست‌وجو در ضبط‌ها",
-    "ShowInFolder": "نشان دادن در پوشه",
-    "CopyFileName": "کپی نام فایل",
-    "CopyFilePath": "کپی مسیر فایل",
-    "FileNameCopied": "{{fileName}} در کلیپ‌بورد کپی شد",
-    "FilePathCopied": "مسیر فایل در کلیپ‌بورد کپی شد",
-    "SaveAs": "ذخیره به عنوان",
-    "OpenSaveFolder": "باز کردن پوشه",
-    "Title": "ضبط‌ها",
-    "Recovered": "{{count}} ضبط بازگردانی شده"
-  },
-  "FileImport": {
-    "ImportMedia": "وارد کردن مدیا",
-    "DragDropFiles": "فایل‌های صدای، ویدئو و تصویر خود را در اینجا بکشید و رها کنید",
-    "DragDropSubtitle": "فایل‌های صدای، ویدئو و تصویر خود را در اینجا بکشید و رها کنید",
-    "BrowseFiles": "مرور فایل‌ها",
-    "Supported": "پشتیبانی‌شده",
-    "SupportedFormats": "پشتیبانی‌شده: MP3، WAV، M4A، WebM، OGG، PNG، JPG و موارد دیگر",
-    "VideoImportCopying": "در حال کپی کردن فایل ویدیو...",
-    "VideoImportSaving": "در حال ذخیره فایل ویدیو...",
-    "VideoUnsupported": "این قالب ویدیو ممکن است در برنامه قابل پخش نباشد. فایل به هر حال وارد می‌شود."
-  },
-  "AudioControls": {
-    "AudioCapture": "ضبط صدا",
-    "AudioMix": "مخلوط صدا",
-    "AudioSessionsLog": "ثبت جلسات صوتی SeaMeet",
-    "AudioSource": "منبع صوت:",
-    "InputDevice": "دستگاه ورودی:",
-    "Microphone": "میکروفون",
-    "MicrophoneLabel": "میکروفون {{id}}",
-    "RecordingDefaultMicrophone": "میکروفون پیش فرض",
-    "RecordingInputLabel": "ورودی: {{name}}",
-    "RecordingSettings": "تنظیمات ضبط",
-    "RecordingType": "نوع ضبط:",
-    "RefreshMicrophoneList": "بروزرسانی لیست میکروفن",
-    "MicrophoneGainWarning": "بالا بودن حساسیت میکروفن می‌تواند صدای بازپخش اسپیکر را حتی زمانی که \"صداهای سیستم\" خاموش است، ضبط کند. از هدست استفاده کنید یا سطح حساسیت میکروفن را کاهش دهید تا تنها صدای میکروفن ضبط شود."
-  },
-  "FlashbackHeroUI": {
-    "StartRecording": "شروع ضبط",
-    "Ready": "آماده‌اید؟",
-    "BufferingMoment": "در حال بافر کردن لحظه...",
-    "RecordWithFlashback": "ضبط با بازگشت به خاطرات",
-    "NeverMissAMoment": "هیچ لحظه‌ای را از دست ندهید.",
-    "ReadyToGuard": "آماده‌اید تا {{type}} خودتان را نگهبانی کنید؟",
-    "FillingBuffer": "در حال پر کردن بافر بازگشت به خاطرات {{duration}} ثانیه‌ای... {{progress}}%",
-    "ReadyToCapture": "SeaMeet آماده برای ضبط است.",
-    "DescNone": "ضبط صفحه‌نمایش، صدا یا گرفتن تصویر لحظه‌ای. یک حالت بازگشت به خاطرات را انتخاب کنید تا زمان‌ها ذخیره شوند.",
-    "DescInit": "روی 'آماده‌اید؟' کلیک کنید تا SeaMeet شروع به یادآوری گذشته کند.",
-    "DescCharging": "در حال آماده‌سازی پنجره {{duration}} ثانیه‌ای شما... تقریباً برای ضبط آنچه ممکن است از دست بدهید، آماده می‌شود. {{progress}}% کامل.",
-    "DescReady": "بازگشت به خاطرات مسلح است. هرگاه روی «ضبط» کلیک کنید، {{duration}} ثانیه گذشته از {{type}} شامل می‌شود — هرگز لحظه‌ای را که از دست داده‌اید پشیمان نخواهید شد.",
-    "Screen": "صفحه‌نمایش",
-    "Audio": "صدا",
-    "OpenLauncher": "باز کردن لانچر",
-    "OpenFloater": "باز کردن فلووتر",
-    "TakeScreenshot": "ثبت تصویر لحظه‌ای",
-    "Buffering": "در حال بافرینگ",
-    "SavingFlashback": "در حال ذخیره بازگشت به خاطرات…",
-    "SaveLastFlashback": "در صورت تمایل، {{duration}} ثانیه آخر بازگشت به خاطرات را ذخیره کنید",
-    "PrivacyProtected": "حریم خصوصی شما حفظ می‌شود.",
-    "PrivacyDesc": "SeaMeet لحظه‌های گذشته به مدت {{duration}} ثانیه از {{type}} را در حلقه بافر در حافظه RAM رایانه‌تان ثبت می‌کند.",
-    "FlashbackOff": "حالت بازگشت به خاطرات در حال حاضر غیرفعال است. می‌توانید ضبط عادی را شروع کنید یا حالت بازگشت به خاطرات (صدا یا صفحه‌نمایش) را فعال نمایید تا لحظه‌های قهرمانانه ذخیره شوند.",
-    "FlashbackInitAudio": "آماده‌اید صدای خود را محافظت کنید؟",
-    "FlashbackInitScreen": "آماده‌اید که از صفحه‌نمایش خود محافظت کنید؟",
-    "FlashbackInitDescription": "بر روی «آماده‌اید؟» کلیک کنید تا SeaMeet شروع به «یادآوری» گذشته کند.",
-    "FlashbackCharging": "در حال پر کردن بافر {{seconds}}... {{percent}}%",
-    "FlashbackChargingDescription": "در حال آماده‌سازی پنجره {{seconds}}-ثانیه‌ای شما... {{percent}}% کامل شده.",
-    "FlashbackReadyQuestion": "ترجمه صحیح است.",
-    "FlashbackReady": "هیچ لحظه‌ای را از دست ندهید.",
-    "FlashbackReadyDescription": "بازگشت به خاطرات آماده است. {{seconds}} ثانیه گذشته {{type}} هنگام ضبط شامل می‌شود.",
-    "FlashbackBuffering": "در حال بافر کردن...",
-    "SaveFlashback": "بازگشت به خاطرات آخرین {{seconds}} ثانیه را ذخیره کن",
-    "FlashbackPrivacy": "حریم خصوصی شما حفظ می‌شود. به صورت محلی در RAM ذخیره شده است.",
-    "Capturing": "در حال ضبط...",
-    "CaptureMode": "حالت ضبط",
-    "FullScreen": "نمایش تمام‌صفحه",
-    "AreaCapture": "ضبط ناحیه‌ای",
-    "KeepWindowVisible": "هنگام گرفتن اسکرین‌شات، پنجره SeaMeet را قابل مشاهده نگه دارید.",
-    "FlashbackMismatch": "عدم تطابق حالت بازگشت به خاطرات. در حال ضبط صدا هستید اما حالت بازگشت به خاطرات ویدئو فعال است. لطفاً حالت ویدئویی بازگشت به خاطرات را خاموش کنید."
-  },
-  "MeetSeasaltAi": {
-    "EnableIntegration": "فعال‌سازی ترجمه زنده SeaMeet",
-    "SignInRequired": "جهت ادامه، وارد شوید",
-    "ProcessingMode": "حالت پردازش",
-    "Realtime": "در لحظه",
-    "RealtimeDescription": "متن‌نویسی زنده هنگام ضبط",
-    "Diarized": "دیاری‌سازی شده",
-    "DiarizedDescription": "بعد از ضبط، فایل صوتی را بارگذاری کنید، برای شناسایی اسپیکر",
-    "ComingSoon": "(به زودی)",
-    "TranscriptionLanguage": "زبان متن‌نویسی",
-    "TranslationLanguage": "زبان ترجمه",
-    "NoTranslation": "ترجمه نشود",
-    "LanguageHint": "در حین ضبط، می‌توانید زبان را تغییر دهید",
-    "LiveTranscription": "متن‌نویسی زنده",
-    "WaitingForSpeech": "منتظر سخن گفتن…",
-    "UnknownSpeaker": "سخنران ناشناس",
-    "SegmentCount": "{{count}} بخش",
-    "SegmentCount_plural": "{{count}} بخش‌ها",
-    "ConnectionError": "اتصال به SeaMeet انجام نشد",
-    "Reconnecting": "در حال اتصال مجدد...",
-    "Connected": "متصل به SeaMeet",
-    "Disconnected": "قطع ارتباط با SeaMeet",
-    "NowSpeaking": "در حال صحبت است…",
-    "Transcript": "متن‌نویسی",
-    "LoadingTranscript": "در حال بارگذاری متن‌نویسی…",
-    "NoTranscript": "متن‌نویسی در دسترس نمی‌باشد",
-    "FetchError": "بارگذاری متن‌نویسی ناموفق بود",
-    "Retry": "تلاش مجدد",
-    "Transcribed": "متن‌نویسی‌ شده",
-    "Content": "محتوای SeaMeet",
-    "Tab": {
-      "transcription": "متن‌نویسی",
-      "summary": "خلاصه",
-      "actionItems": "موارد اقدام",
-      "notes": "یادداشت‌ها"
-    },
-    "Summary": "خلاصه",
-    "NoSummary": "خلاصه‌سازی در حال حاضر در دسترس نیست.",
-    "ActionItems": "موارد عملی",
-    "NoActionItems": "موارد اقدام برای این جلسه موجود نیست",
-    "DueDate": "مهلت: {{date}}",
-    "Notes": "یادداشت‌ها",
-    "NoNotes": "هیچ یادداشت برای این جلسه وجود ندارد",
-    "LoadingContent": "در حال بارگذاری محتوای SeaMeet...",
-    "SeekToTime": "برای پخش از این زمان، کلیک کنید",
-    "CollapseNowSpeaking": "بستن گفت‌وگوهای جاری",
-    "ExpandNowSpeaking": "گسترش حال حاضر در حال صحبت"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "بافر فلاش بک خالی است. یک لحظه دیگر دوباره امتحان کنید.",
-    "EnableFlashback": "برای صرفه جویی در لحظه فلش بک را فعال کنید.",
-    "FailedToSave": "بافر فلاش بک ذخیره نشد.",
-    "SavedFlashback": "بازگشت به خاطرات ذخیره‌شده در ضبط‌ها",
-    "StillCharging": "بافر بازگشت به خاطرات هنوز در حال شارژ است"
-  },
-  "AISummary": {
-    "TabTitle": "خلاصه هوش مصنوعی",
-    "SetupRequired": "کلید Gemini API خود را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا خلاصه‌های هوش مصنوعی فعال شود.",
-    "EnableRequired": "برای مشاهده خلاصه‌های هوش مصنوعی، ویژگی‌های AI را در تنظیمات → ویژگی‌های هوش مصنوعی فعال کنید.",
-    "ExportMarkdown": "به عنوان Markdown کپی کنید",
-    "ExportSrt": "به عنوان SRT کپی کنید",
-    "ExportJson": "به صورت JSON کپی کنید",
-    "Regenerate": "خلاصه بازسازی",
-    "Minimize": "به حداقل رساندن",
-    "Maximize": "به نمای کامل باز کنید",
-    "Queued": "در صف پردازش...",
-    "Processing": "در حال تولید خلاصه...",
-    "Error": "خلاصه بارگیری نشد: {{error}}",
-    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. بازسازی را امتحان کنید.",
-    "Retry": "دوباره امتحان کنید",
-    "NoSummary": "هنوز خلاصه ای از هوش مصنوعی وجود ندارد.",
-    "Generate": "ایجاد خلاصه",
-    "Copy": "کپی کنید",
-    "NoSummaryText": "خلاصه در دسترس نیست.",
-    "Topics": "موضوعات:",
-    "NoTranscript": "رونوشت در دسترس نیست.",
-    "NoActions": "هیچ مورد اقدامی شناسایی نشد.",
-    "NoDecisions": "هیچ تصمیم کلیدی مشخص نشده است.",
-    "Export": {
-      "HeadingSummary": "خلاصه",
-      "HeadingActionItems": "موارد اقدام",
-      "HeadingKeyDecisions": "تصمیمات کلیدی",
-      "HeadingTranscription": "رونویسی"
-    },
-    "Tab": {
-      "Summary": "خلاصه",
-      "Transcription": "رونوشت",
-      "ActionItems": "اقدامات",
-      "KeyDecisions": "تصمیمات",
-      "Agent": "عامل"
-    }
-  },
-  "AIFeatures": {
-    "GroupTitle": "ویژگی های هوش مصنوعی",
-    "MenuItem": "خلاصه های مبتنی بر هوش مصنوعی",
-    "PageTitle": "ویژگی های هوش مصنوعی",
-    "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
-    "EnableToggleDesc": "به یک کلید Gemini API رایگان نیاز دارد",
-    "ApiKeySection": "کلید API Gemini",
-    "ApiKeyLabel": "کلید API Gemini",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
-    "ShowKey": "نمایش کلید",
-    "HideKey": "پنهان کردن کلید",
-    "TestKey": "ذخیره و تأیید کنید",
-    "Saving": "در حال ذخیره...",
-    "GetKeyLink": "یک کلید API رایگان از Google AI Studio → دریافت کنید",
-    "ClearKey": "حذف کلید ذخیره شده",
-    "KeyVerified": "کلید تأیید شد",
-    "KeyInvalid": "کلید نامعتبر است",
-    "KeyTesting": "تست کردن...",
-    "KeyNotConfigured": "هیچ کلیدی پیکربندی نشده است",
-    "ModelSection": "مدل هوش مصنوعی",
-    "ModelLabel": "مدل جمینی",
-    "SelectedModel": "انتخاب شده: {{model}}",
-    "AutomationSection": "اتوماسیون",
-    "AutoSummary": "خلاصه تولید خودکار",
-    "AutoSummaryDesc": "پس از اتمام هر ضبط اجرا می شود",
-    "Models": {
-      "Gemini3Flash": "Gemini 3 Flash",
-      "Gemini3FlashSub": "توصیه شده · سریع + دارای قابلیت",
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashSub": "ارزان ترین گزینه پایدار",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
-      "Gemini25FlashLiteSub": "فوق العاده ارزان",
-      "Gemini3Pro": "Gemini 3 Pro",
-      "Gemini3ProSub": "حداکثر توانایی",
-      "Gemini25Pro": "Gemini 2.5 Pro",
-      "Gemini25ProSub": "بهترین استدلال پایدار"
-    },
-    "ClaudeKey": {
-      "Section": "Claude API Key (Agent)",
-      "SourceLabel": "منبع فعال:",
-      "SourceByok": "کلید API شما (BYOK)",
-      "SourceKeyServer": "مدیریت شده توسط SeaMeet",
-      "SourceCli": "کد کلود CLI",
-      "SourceNone": "پیکربندی نشده است",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••• (ذخیره شده)",
-      "ShowKey": "نمایش کلید",
-      "HideKey": "پنهان کردن کلید",
-      "TestKey": "ذخیره و تأیید کنید",
-      "Saving": "در حال ذخیره...",
-      "ClearKey": "حذف کلید ذخیره شده",
-      "KeyVerified": "کلید تأیید شد",
-      "KeyInvalid": "کلید نامعتبر است",
-      "KeyTesting": "تست کردن...",
-      "KeyNotConfigured": "هیچ کلیدی پیکربندی نشده است",
-      "GetKeyLink": "یک کلید API از Anthropic Console دریافت کنید",
-      "QuotaSection": "سهمیه سرور کلید",
-      "QuotaRemaining": "{{remaining}} / {{limit}} توکن باقی مانده است",
-      "QuotaResetDate": "بازنشانی در {{date}}",
-      "QuotaLoading": "در حال بارگیری سهمیه...",
-      "QuotaRefresh": "بازخوانی سهمیه",
-      "CliSection": "کد کلود CLI",
-      "CliInstalled": "نصب شده ({{version}})",
-      "CliNotInstalled": "Claude CLI یافت نشد",
-      "CliInstallLink": "Claude Code → را نصب کنید",
-      "ModelSection": "مدل کلود پیش فرض",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "سریع و ارزان",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "توصیه شده · متعادل",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "تواناترین"
-    }
-  },
-  "AIAgent": {
-    "MenuItem": "AI Agent & Cowork",
-    "PageTitle": "AI Agent & Cowork",
-    "SectionTitle": "AI Agent & Cowork",
-    "EnableToggle": "AI Agent & Cowork را فعال کنید",
-    "EnableToggleDesc": "به یک کلید API Claude نیاز دارد",
-    "DisabledBadge": "از کار افتاده است",
-    "DisabledMsg": "AI Agent & Cowork غیرفعال است. آن را در تنظیمات → AI Agent & Cowork فعال کنید.",
-    "DisabledTabHint": "عامل هوش مصنوعی غیرفعال است - آن را در تنظیمات → عامل هوش مصنوعی و همکاری فعال کنید",
-    "NotConfiguredMsg": "کلید Claude API پیکربندی نشده است. یکی را در تنظیمات → AI Agent & Cowork تنظیم کنید."
-  },
-  "PipelineStatus": {
-    "Queued": "خلاصه در صف...",
-    "Running": "در حال تولید خلاصه...",
-    "Progress": "پردازش تکه {{current}} از {{total}}",
-    "Done": "خلاصه آماده است",
-    "Error": "پردازش انجام نشد"
-  },
-  "ScreenshotProcessing": {
-    "ButtonLabel": "پردازش با هوش مصنوعی",
-    "Queuing": "در صف...",
-    "ProcessingWithTime": "در حال پردازش... {{sec}}s",
-    "Describe": "تصویر را توصیف کنید",
-    "DescribeSub": "در این اسکرین شات چیست؟",
-    "Ocr": "استخراج متن (OCR)",
-    "OcrSub": "تمام متن های قابل مشاهده را بخوانید",
-    "Custom": "درخواست سفارشی",
-    "CustomPlaceholder": "هر چیزی در مورد این تصویر بپرسید ...",
-    "ResultLabel": "نتیجه هوش مصنوعی",
-    "Description": "توضیحات",
-    "ExtractedText": "متن استخراج شده",
-    "Analysis": "تجزیه و تحلیل",
-    "PipelineError": "پردازش هوش مصنوعی ناموفق بود. لطفا دوباره امتحان کنید.",
-    "UnknownError": "خطای ناشناخته"
-  },
-  "AgentPanel": {
-    "ToolCall": {
-      "Reading": "خواندن فایل...",
-      "Executing": "در حال اجرا...",
-      "Running": "در حال دویدن...",
-      "Input": "ورودی",
-      "Output": "خروجی",
-      "Pattern": "الگو:",
-      "ShowDetails": "نمایش جزئیات",
-      "AndMoreLines": "... و {{count}} خطوط دیگر"
-    },
-    "Streaming": {
-      "Thinking": "فکر کردن...",
-      "LongRunning": "دویدن طولانی تر از حد معمول",
-      "ToolStuck": "ممکن است ابزار گیر کرده باشد",
-      "ForceStop": "توقف اجباری",
-      "GeneratingResponse": "در حال ایجاد پاسخ...",
-      "RunningTool": "در حال اجرا {{tool}}..."
-    },
-    "Permission": {
-      "Title": "درخواست مجوز ابزار",
-      "Allow": "یک بار اجازه دهید",
-      "AllowSession": "اجازه دادن به جلسه",
-      "Deny": "تکذیب کنید",
-      "Allowed": "مجاز است",
-      "Denied": "تکذیب شد"
-    },
-    "Title": "عامل هوش مصنوعی",
-    "GlobalTitle": "عامل هوش مصنوعی",
-    "NewSession": "جلسه جدید",
-    "Sessions": "جلسات",
-    "NoSessions": "هنوز جلسه ای وجود ندارد. یک مکالمه را در زیر شروع کنید.",
-    "SendPlaceholder": "هر چیزی بپرسید... (برای ارسال وارد کنید، برای خط جدید Shift+Enter)",
-    "SendButton": "ارسال کنید",
-    "StopButton": "توقف کنید",
-    "NotConfigured": "یک کلید Claude API را در تنظیمات → ویژگی‌های هوش مصنوعی پیکربندی کنید تا از Agent استفاده کنید.",
-    "GoToSettings": "تنظیمات را باز کنید",
-    "SessionCost": "جلسه: {inputTokens}_ در /{outputTokens}_ توکن های خروجی",
-    "CommandHelp": "دستورات: /new · /clear · /cost · /help",
-    "Mode": {
-      "Ask": "بپرسید",
-      "Code": "کد",
-      "Plan": "برنامه ریزی کنید"
-    },
-    "Model": {
-      "Haiku": "هایکو",
-      "Sonnet": "غزل",
-      "Opus": "اپوس"
-    },
-    "QuickAction": {
-      "Summarize": "این ضبط را خلاصه کنید",
-      "ActionItems": "موارد اقدام را پیدا کنید",
-      "DraftEmail": "پیش نویس ایمیل پیگیری"
-    },
-    "SuggestedPrompt": {
-      "WhatCanYouDo": "در چه زمینه ای می توانید به من کمک کنید؟",
-      "HelpAnalyze": "به من کمک کنید ضبط های اخیرم را تجزیه و تحلیل کنم"
-    },
-    "AssetContext": "زمینه: {{name}}"
   }
 }
