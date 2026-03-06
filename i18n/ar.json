@@ -184,6 +184,15 @@
   "AISummary": {
     "Copy": "ينسخ",
     "EnableRequired": "قم بتمكين ميزات الذكاء الاصطناعي في الإعدادات → ميزات الذكاء الاصطناعي لرؤية ملخصات الذكاء الاصطناعي.",
+    "ErrorCodes": {
+      "AUTH_ERROR": "مفتاح API غير صالح. يرجى التحقق من مفتاح API الخاص بك في الإعدادات.",
+      "RATE_LIMIT": "تم تجاوز الحد الأقصى لمعدل واجهة برمجة التطبيقات. من فضلك انتظر لحظة.",
+      "BAD_REQUEST": "رفضت واجهة برمجة التطبيقات الطلب. يرجى التحقق من مفتاح API أو الإدخال.",
+      "SERVER_ERROR": "واجه خادم AI خطأ.",
+      "NETWORK_ERROR": "خطأ في الشبكة. تحقق من اتصالك بالإنترنت.",
+      "PARSE_ERROR": "فشل في تحليل استجابة الذكاء الاصطناعي.",
+      "UNKNOWN_ERROR": "فشلت معالجة الذكاء الاصطناعي."
+    },
     "Error": "فشل تحميل الملخص: {{error}}",
     "Export": {
       "HeadingActionItems": "عناصر العمل",
@@ -233,6 +242,13 @@
     "NotAvailableForVersion": "غير متوفر لهذا الإصدار.",
     "ConfirmRename": "تأكيد إعادة التسمية",
     "RenameSpeaker": "إعادة تسمية المتحدث",
+    "RenameSuggestion": "يقترح الذكاء الاصطناعي",
+    "NewFileName": "اسم ملف جديد",
+    "ApplyRename": "إعادة التسمية",
+    "Renaming": "جارٍ إعادة التسمية…",
+    "RenameTo": "إعادة التسمية: {{name}}",
+    "RenameApplied": "تمت إعادة تسمية الملف إلى '{{name}}'",
+    "RenameError": "فشل في إعادة تسمية الملف",
     "Version": {
       "Latest": "أحدث",
       "Live": "يعيش"
@@ -852,6 +868,15 @@
   "ScreenshotProcessing": {
     "Analysis": "تحليل",
     "ButtonLabel": "العملية مع الذكاء الاصطناعي",
+    "ErrorCodes": {
+      "AUTH_ERROR": "مفتاح API غير صالح. يرجى التحقق من مفتاح API الخاص بك في الإعدادات.",
+      "RATE_LIMIT": "تم تجاوز الحد الأقصى لمعدل واجهة برمجة التطبيقات. من فضلك انتظر لحظة.",
+      "BAD_REQUEST": "رفضت واجهة برمجة التطبيقات الطلب. يرجى التحقق من مفتاح API أو الإدخال.",
+      "SERVER_ERROR": "واجه خادم AI خطأ.",
+      "NETWORK_ERROR": "خطأ في الشبكة. تحقق من اتصالك بالإنترنت.",
+      "PARSE_ERROR": "فشل في تحليل استجابة الذكاء الاصطناعي.",
+      "UNKNOWN_ERROR": "فشلت معالجة الذكاء الاصطناعي."
+    },
     "Custom": "موجه مخصص",
     "CustomPlaceholder": "اسأل أي شيء عن هذه الصورة...",
     "Describe": "وصف الصورة",
@@ -864,13 +889,14 @@
     "ProcessingWithTime": "جارٍ المعالجة... {{sec}}s",
     "Queuing": "انتظار...",
     "ResultLabel": "نتيجة الذكاء الاصطناعي",
+    "SetupRequired": "قم بتسجيل الدخول باستخدام اشتراك أو BYOK لمعالجة الصورة.",
     "UnknownError": "خطأ غير معروف"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "تم النسخ إلى الحافظة!",
     "CopyFailed": "فشل في نسخ لقطة الشاشة إلى الحافظة",
     "CopyToClipboard": "نسخ إلى الحافظة",
-    "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
+    "CopyToClipboardWithHint": "{{action}}_ (Ctrl/Cmd+C)",
     "Dimensions": "الأبعاد",
     "FileSize": "حجم الملف",
     "OpenInSystemViewer": "فتح في عارض النظام",
@@ -1113,6 +1139,10 @@
     "DisplayName": "اسم المستخدم",
     "EmailPlaceholder": "user@example.com",
     "Exit": "خروج",
+    "Workspace": "مساحة العمل",
+    "WorkspaceLoading": "جارٍ تحميل مساحات العمل…",
+    "WorkspaceNone": "لا توجد مساحات عمل متاحة",
+    "WorkspaceError": "فشل تحميل مساحات العمل",
     "HelpSupport": "المساعدة والدعم",
     "HelpSupportSection": {
       "Discussion": "المناقشة",

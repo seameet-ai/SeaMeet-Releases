@@ -184,6 +184,15 @@
   "AISummary": {
     "Copy": "Copy",
     "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
+    "ErrorCodes": {
+      "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
+      "RATE_LIMIT": "API rate limit exceeded. Please wait a moment.",
+      "BAD_REQUEST": "The API rejected the request. Please check your API key or input.",
+      "SERVER_ERROR": "The AI server encountered an error.",
+      "NETWORK_ERROR": "Network error. Check your internet connection.",
+      "PARSE_ERROR": "Failed to parse AI response.",
+      "UNKNOWN_ERROR": "AI processing failed."
+    },
     "Error": "Failed to load summary: {{error}}",
     "Export": {
       "HeadingActionItems": "Action Items",
@@ -211,7 +220,7 @@
     "Regenerate": "Regenerate summary",
     "Retry": "Retry",
     "SeekToTimestamp": "Seek to this timestamp",
-    "SetupRequired": "Configure your Gemini API key in Settings → AI Features to enable AI summaries.",
+    "SetupRequired": "Sign in with a subscription or BYOK to process the video.",
     "Tab": {
       "ActionItems": "Actions",
       "Chapters": "Chapters",
@@ -219,6 +228,7 @@
       "Summary": "Summary",
       "Transcription": "Transcript"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "AI Extraction & Summary",
     "Topics": "Topics:",
     "Speakers": "Speakers",
@@ -233,6 +243,13 @@
     "NotAvailableForVersion": "Not available for this version.",
     "ConfirmRename": "Confirm rename",
     "RenameSpeaker": "Rename speaker",
+    "RenameSuggestion": "AI suggests",
+    "NewFileName": "new file name",
+    "ApplyRename": "Rename",
+    "Renaming": "Renaming…",
+    "RenameTo": "Rename: {{name}}",
+    "RenameApplied": "File renamed to '{{name}}'",
+    "RenameError": "Failed to rename file",
     "Version": {
       "Latest": "Latest",
       "Live": "Live"
@@ -752,7 +769,9 @@
       "UploadingWait": "Processing on server",
       "Analyzing": "Analyzing",
       "Extracting": "Extracting results",
-      "Saving": "Saving artifacts"
+      "Saving": "Saving artifacts",
+      "PreparingImage": "Preparing image",
+      "AnalyzingImage": "Analyzing image"
     }
   },
   "Player": {
@@ -852,18 +871,36 @@
   "ScreenshotProcessing": {
     "Analysis": "Analysis",
     "ButtonLabel": "Process with AI",
+    "ErrorCodes": {
+      "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
+      "RATE_LIMIT": "API rate limit exceeded. Please wait a moment.",
+      "BAD_REQUEST": "The API rejected the request. Please check your API key or input.",
+      "SERVER_ERROR": "The AI server encountered an error.",
+      "NETWORK_ERROR": "Network error. Check your internet connection.",
+      "PARSE_ERROR": "Failed to parse AI response.",
+      "UNKNOWN_ERROR": "AI processing failed."
+    },
     "Custom": "Custom prompt",
     "CustomPlaceholder": "Ask anything about this image...",
     "Describe": "Describe image",
     "DescribeSub": "What is in this screenshot?",
     "Description": "Description",
     "ExtractedText": "Extracted Text",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "Extract text (OCR)",
     "OcrSub": "Read all visible text",
-    "PipelineError": "AI processing failed. Please try again.",
-    "ProcessingWithTime": "Processing... {{sec}}s",
+    "PipelineError": "AI processing failed.",
+    "ProcessingWithTime": "Processing...",
     "Queuing": "Queuing...",
     "ResultLabel": "AI Result",
+    "SetupRequired": "Sign in with a subscription or BYOK to process the image.",
+    "Tab": {
+      "Custom": "Custom Prompt",
+      "Description": "Description",
+      "OCR": "Text (OCR)"
+    },
     "UnknownError": "Unknown error"
   },
   "ScreenshotViewer": {
