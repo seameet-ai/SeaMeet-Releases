@@ -148,6 +148,7 @@
     "GroupTitle": "AI Features",
     "HideKey": "Hide key",
     "KeyInvalid": "Invalid key",
+    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
     "KeyNotConfigured": "No key configured",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (saved)",
@@ -182,7 +183,10 @@
     "TestKey": "Save & Verify"
   },
   "AISummary": {
+    "ApplyMerge": "Apply",
+    "ConfirmRename": "Confirm rename",
     "Copy": "Copy",
+    "EditSegmentSpeaker": "Click to reassign this segment",
     "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
     "ErrorCodes": {
       "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
@@ -203,21 +207,24 @@
     "ExportJson": "Copy as JSON",
     "ExportMarkdown": "Copy as Markdown",
     "ExportSrt": "Copy as SRT",
-    "GeminiLiveTranscript": "Gemini Live",
     "Generate": "Generate Summary",
+    "LoadingVersion": "Loading version...",
     "Maximize": "Expand to full view",
+    "MergeInto": "Merge into…",
     "Minimize": "Minimize",
     "NoActions": "No action items identified.",
     "NoChapters": "No chapters available.",
     "NoDecisions": "No key decisions identified.",
     "NoSummary": "No AI summary yet.",
     "NoSummaryText": "Summary not available.",
+    "NotAvailableForVersion": "Not available for this version.",
     "NoTranscript": "Transcript not available.",
     "PipelineError": "AI processing failed. Try regenerating.",
     "PipelineTranscript": "AI Pipeline",
     "Processing": "Generating summary...",
     "Queued": "Queued for processing...",
     "Regenerate": "Regenerate summary",
+    "RenameSpeaker": "Rename speaker",
     "Retry": "Retry",
     "SeekToTimestamp": "Seek to this timestamp",
     "SetupRequired": "Sign in with a subscription or BYOK to process the video.",
@@ -351,6 +358,237 @@
     "MeetingDetected": "{{{app}}} meeting detected!",
     "MeetingEnded": "Meeting ended",
     "MeetingFallbackName": "Meeting"
+  },
+  "Billing": {
+    "Banner": {
+      "CancelPending": "Your subscription ends on {{date}}. After that, transcription, summaries, and AI features will stop working.",
+      "GraceExpired": "AI features are no longer available. Subscribe to restore transcription, summaries, and more.",
+      "GracePeriod": "Subscription ending {{date}} ({{days}} days left)",
+      "PastDue": "Payment failed — update your card to keep AI features",
+      "Reactivate": "Reactivate",
+      "Resubscribe": "Resubscribe",
+      "UpdateCard": "Update card"
+    },
+    "BYOK": {
+      "ActiveTitle": "Subscription active — BYOK Pro",
+      "AnthropicHelp": "Get a key: ",
+      "AnthropicHelpLink": "console.anthropic.com",
+      "AnthropicLabel": "Claude (Anthropic)",
+      "AnthropicTip": "Tip: Free credits for new accounts. Also included if you have Claude Pro or Max.",
+      "AnthropicUsage": "Used for: AI questions, project analysis",
+      "Configured": "Configured",
+      "EnterKey": "Enter API key",
+      "GeminiHelp": "Get a free key: ",
+      "GeminiHelpLink": "aistudio.google.com/apikey",
+      "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
+      "GeminiUsage": "Used for: transcription, summaries, live transcribe. Free keys are subject to Gemini rate limit and quota. Change to a Google AI Studio paid plan if running against the limit.",
+      "NotConfigured": "Not configured",
+      "SaveContinue": "Save & Continue",
+      "SaveFailed": "Failed to save key",
+      "Saving": "Saving...",
+      "SecurityNote": "Keys are stored locally on your device (encrypted in your OS keychain). SeaMeet never sends your keys to our servers.",
+      "SkipForNow": "Skip for now",
+      "Subtitle": "One more step: connect your AI API keys.",
+      "TabLabel": "API Keys",
+      "Validating": "Validating...",
+      "ValidationFailed": "Validation failed",
+      "WizardStep": "Step {{current}} of {{total}}",
+      "Step1Title": "Connect your Gemini API key",
+      "Step1Desc": "Used for transcription, summaries, and live transcribe. Get a free key from Google AI Studio.",
+      "Step2Title": "Connect your Claude API key",
+      "Step2Desc": "Used for AI questions and project analysis. Free credits for new accounts. Also included with Claude Pro or Max.",
+      "Step3Title": "You're all set!",
+      "Step3Desc": "Both API keys are configured. You can update them anytime below.",
+      "Next": "Next",
+      "Done": "Done",
+      "TestKey": "Test key",
+      "TestingKey": "Testing...",
+      "RemoveKey": "Remove saved key"
+    },
+    "CurrentPlan": "Current Plan",
+    "Device": {
+      "Close": "Close",
+      "DaysAgo_one": "{{count}} days ago",
+      "DaysAgo_other": "{{count}} days ago",
+      "Error": "Failed to load devices: {{error}}",
+      "LastUsed": "Last used {{when}}",
+      "LimitDescription": "SeaMeet Pro works on up to 3 devices at a time. Sign out of a device you're not using to free up a slot.",
+      "LimitTitle": "Device limit reached",
+      "Loading": "Loading devices...",
+      "NoDevices": "No devices registered",
+      "SigningOut": "Signing out...",
+      "SignOut": "Sign out",
+      "TabLabel": "Devices",
+      "Today": "today",
+      "Yesterday": "yesterday",
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "Frequently Asked Questions",
+      "Free": {
+        "Q1": "What can I do with the Free plan?",
+        "A1": "SeaMeet Free is a full-featured recorder and screenshot tool. You can record audio, capture screen video, take screenshots, and manage all your recordings — completely free, forever.",
+        "Q2": "Is my data private?",
+        "A2": "Yes. On the Free plan, no data is ever transmitted anywhere. All recordings, screenshots, and files stay 100% local on your device. Your privacy is fully protected.",
+        "Q3": "What more can I get with a paid plan?",
+        "A3": "Paid plans add AI-powered features: automatic transcription, meeting summaries, action items, live transcription during meetings, and AI-powered Q&A about your recordings."
+      },
+      "BYOK": {
+        "Q1": "What is BYOK?",
+        "A1": "BYOK stands for Bring Your Own Key. You'll need 2 API keys: one from Google AI Studio (for transcription & summaries) and one from Anthropic (for AI questions & analysis). Google AI Studio usually gives you a free key. If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key. A guided setup wizard walks you through connecting both keys after checkout.",
+        "Q2": "Why a monthly subscription?",
+        "A2": "Your subscription funds continuous updates, new AI model support, bug fixes, and new features. API costs are paid separately to Google and Anthropic using your own keys.",
+        "Q3": "How does licensing work?",
+        "A3": "1 account, up to 3 devices. Inactive devices are automatically freed after 30 days. You can also manually sign out a device to free up a slot."
+      },
+      "Desktop": {
+        "Q1": "What is Desktop Pro?",
+        "A1": "Desktop Pro includes built-in AI keys managed by SeaMeet — no need to create or manage your own API keys. Just subscribe and start using AI features immediately.",
+        "Q2": "How is it different from BYOK?",
+        "A2": "With Desktop Pro, SeaMeet provides and manages the API keys for you. You don't need to sign up for Google AI Studio or Anthropic separately.",
+        "Q3": "How does licensing work?",
+        "A3": "1 account, up to 3 devices. Inactive devices are automatically freed after 30 days. You can also manually sign out a device to free up a slot."
+      },
+      "Sync": {
+        "Q1": "What is Sync Pro?",
+        "A1": "Sync Pro includes everything in Desktop Pro, plus cloud sync. Your recordings, transcripts, and summaries are synced across all your devices.",
+        "Q2": "What gets synced?",
+        "A2": "Recordings, transcripts, AI summaries, and action items are all synced across your devices. Changes on one device appear on all others.",
+        "Q3": "How does licensing work?",
+        "A3": "1 account, up to 3 devices. Inactive devices are automatically freed after 30 days. You can also manually sign out a device to free up a slot."
+      }
+    },
+    "Error": {
+      "NoApiUrl": "Billing service is not configured. Please contact support.",
+      "NotAuthenticated": "Please sign in first to subscribe. Use the account menu to sign in.",
+      "Unknown": "Something went wrong. Please try again."
+    },
+    "FreeNote": "Free plan: recording only, no AI features, no login needed. You can always record without subscribing.",
+    "ComingSoon": "Coming soon",
+    "Plans": {
+      "BYOK": {
+        "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
+        "InfoNote": "You'll need 2 API keys: Google AI Studio + Anthropic. A setup wizard will guide you after checkout. Google AI Studio usually gives you a free key. If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key.",
+        "ConfirmTitle": "Before you subscribe",
+        "ConfirmContinue": "Continue to checkout",
+        "ConfirmSignIn": "Sign in first, then checkout",
+        "ConfirmCancel": "Cancel"
+      },
+      "Desktop": {
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
+      },
+      "Free": {
+        "Name": "Free",
+        "Price": "$0",
+        "Feature1": "Recording only",
+        "Feature2": "No AI features",
+        "Feature3": "No login needed",
+        "Feature4": "Always available"
+      },
+      "Sync": {
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
+      }
+    },
+    "Privacy": {
+      "TabFeatures": "Features",
+      "TabPrivacy": "Data & Privacy",
+      "TabHelpChoose": "Help Me Choose",
+      "RecordingLabel": "Recording / Picture Files",
+      "AIDataLabel": "AI Processed Data (Summary, Transcript, OCR etc)",
+      "AgentLabel": "AI Agent Chats & Tasks",
+      "Free": {
+        "Recording1": "Stay on your computer",
+        "AIData1": "Not Available",
+        "Agent1": "Not Available"
+      },
+      "BYOK": {
+        "Recording1": "Stay on your computer",
+        "Recording2": "Sync to your own Google Cloud account for processing",
+        "Recording3": "Google deletes the files after 48 hours",
+        "AIData1": "Gemini API produces it",
+        "AIData2": "If you use Free Tier API: Google may use your prompts and responses to improve its products and train its models. This tier is intended for testing and experimentation rather than sensitive data.",
+        "AIData3": "If you use Paid Tier API: No, Google does not use your data for training",
+        "Agent1": "Anthropic API produces it",
+        "Agent2": "If you use Claude App/Code: Anthropic may use your data for training unless you opt out",
+        "Agent3": "If you use Anthropic API: Anthropic does not use your data for training"
+      },
+      "Desktop": {
+        "Recording1": "Stay on your computer",
+        "Recording2": "Sync to SeaMeet.ai's Google Cloud account for processing",
+        "Recording3": "Google deletes the files after 48 hours",
+        "AIData1": "Gemini API produces it",
+        "AIData2": "Google does not use your data for training",
+        "AIData3": "SeaMeet.ai does not use your data for training",
+        "Agent1": "Anthropic API produces it",
+        "Agent2": "Anthropic does not use your data for training",
+        "Agent3": "SeaMeet.ai does not use your data for training"
+      },
+      "Sync": {
+        "Recording1": "Stay on your computer",
+        "Recording2": "Synced to SeaMeet.ai cloud",
+        "Recording3": "Download from SeaMeet.ai cloud to another desktop device and stay synced",
+        "AIData1": "Same as Desktop Pro",
+        "Agent1": "Same as Desktop Pro"
+      }
+    },
+    "HelpChoose": {
+      "Free": {
+        "Item1": "You start here"
+      },
+      "BYOK": {
+        "Item1": "Power user: understand what BYOK is",
+        "Item2": "Tech-savvy: have required API keys",
+        "Item3": "Privacy-focused: control who sees your data"
+      },
+      "Desktop": {
+        "Item1": "Normal user: no hassle setup",
+        "Item2": "Privacy-focused: audio/image/recording data stays on your computer"
+      },
+      "Sync": {
+        "Item1": "Most users: no hassle setup",
+        "Item2": "Need cloud backup",
+        "Item3": "Multi-device sync",
+        "Item4": "Prefer convenience"
+      }
+    },
+    "PromoHint": "Have a promo code? Enter it at checkout.",
+    "Status": {
+      "Active": "Active",
+      "Canceled": "Canceled",
+      "Canceling": "Canceling",
+      "CancelNotice": "Subscription ends {{date}}",
+      "CancelPendingNotice": "Your subscription will end on {{date}}. AI features will continue until then.",
+      "EndsOn": "Ends {{date}}",
+      "DevOverride": "(Dev Override)",
+      "Loading": "Loading...",
+      "Manage": "Manage Subscription",
+      "None": "No subscription",
+      "PastDue": "Past due",
+      "Plan": "Plan",
+      "Reactivate": "Reactivate",
+      "SignIn": "Sign in to manage subscription",
+      "Trial": "Trial"
+    },
+    "SignInToSubscribe": "Sign in to subscribe:",
+    "Subscribe": "Subscribe",
+    "Subscribing": "Subscribing...",
+    "UnlockTitle": "Unlock SeaMeet AI Features"
   },
   "BlackHole": {
     "Cancel": "Cancel",
@@ -1173,8 +1411,11 @@
       "WikiDesc": "Check out the SeaMeet wiki for documentation and guides."
     },
     "KeyboardShortcuts": "Keyboard Shortcuts",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet: Signed in",
     "SeaMeetSignedOut": "SeaMeet: Not signed in",
+    "SeaMeetSignIn": "SeaMeet Sign In",
+    "SeaMeetSignOut": "SeaMeet Sign Out",
     "SignIn": "Sign In",
     "SignOut": "Sign Out"
   },
