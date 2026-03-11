@@ -103,7 +103,9 @@
     "MenuItem": "Agent IA et collègue",
     "PageTitle": "Agent IA et collègue",
     "SectionTitle": "Agent IA et collègue",
-    "LinkCopied": "Copié !"
+    "LinkCopied": "Copié !",
+    "SubscribeMsg": "L'Agent IA nécessite un abonnement BYOK Pro. Abonnez-vous pour obtenir la transcription en direct, les résumés de réunion IA et un agent IA interactif.",
+    "SubscribeCTA": "S'abonner pour débloquer"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Clé API Gémeaux",
@@ -275,7 +277,9 @@
       "Latest": "Dernier",
       "Live": "En direct"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "Abonnez-vous pour générer des résumés IA, des transcriptions et des actions à partir de vos enregistrements.",
+    "SubscribeToRegenerate": "Abonnez-vous pour régénérer les résumés IA."
   },
   "App": {
     "FailedToEnableFlashback": "Échec de l'activation de la rétrospective : {{error}}",
@@ -458,7 +462,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Vous aurez besoin de 2 cles API : Google AI Studio + Anthropic. Un assistant de configuration vous guidera apres le paiement. Google AI Studio offre generalement une cle gratuite. Si vous avez un abonnement Claude Pro ou Max, vous n'avez pas besoin d'une cle API Anthropic supplementaire.",
+        "InfoNote": "Vous aurez besoin de 2 clés API : Google AI Studio et GitHub Copilot ou Claude Code. Un assistant de configuration vous guidera après le paiement. Google AI Studio vous donne généralement une clé gratuite. GitHub Copilot offre également un plan gratuit. Vous êtes donc prêt à utiliser vos propres clés en accès gratuit limité. Si vous avez un abonnement Claude Pro ou Max, vous n'avez pas besoin d'une clé API Anthropic supplémentaire.",
         "ConfirmTitle": "Avant de vous abonner",
         "ConfirmContinue": "Continuer vers le paiement",
         "ConfirmSignIn": "Se connecter d'abord, puis payer",
@@ -566,7 +570,7 @@
       "Title": "Questions frequemment posees",
       "BYOK": {
         "Q1": "Qu'est-ce que BYOK ?",
-        "A1": "BYOK signifie Bring Your Own Key. Vous aurez besoin de 2 cles API : une de Google AI Studio (pour la transcription et les resumes) et une d'Anthropic (pour les questions IA et l'analyse). Google AI Studio offre generalement une cle gratuite. Si vous avez un abonnement Claude Pro ou Max, vous n'avez pas besoin d'une cle API Anthropic supplementaire. Un assistant de configuration vous guide pour connecter les deux cles apres le paiement.",
+        "A1": "BYOK signifie Bring Your Own Key (Apportez votre propre clé). Vous aurez besoin de 2 clés API : une de Google AI Studio (pour la transcription et les résumés) et une de GitHub Copilot ou Claude Code (pour l'agent IA). Un assistant de configuration guidé vous accompagne pour connecter les deux clés après le paiement. Google AI Studio vous donne généralement une clé gratuite. GitHub Copilot offre également un plan gratuit. Vous êtes donc prêt à utiliser vos propres clés en accès gratuit limité. Si vous avez un abonnement Claude Pro ou Max, vous n'avez pas besoin d'une clé API Anthropic supplémentaire.",
         "Q2": "Pourquoi un abonnement mensuel ?",
         "A2": "Votre abonnement finance les mises a jour continues, le support de nouveaux modeles IA, les corrections de bugs et les nouvelles fonctionnalites. Les couts API sont payes separement a Google et Anthropic via vos propres cles.",
         "Q3": "Comment fonctionne la licence ?",
@@ -596,6 +600,47 @@
         "Q3": "Que puis-je obtenir de plus avec un plan payant ?",
         "A3": "Les plans payants ajoutent des fonctionnalites IA : transcription automatique, resumes de reunions, points d'action, transcription en direct pendant les reunions et questions-reponses IA sur vos enregistrements."
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "Activer la transcription en direct et l'analyse post-réunion par IA",
+      "ScreenshotAnalysis": "Activer l'analyse de captures d'écran par IA",
+      "CTA": "Se connecter et s'abonner",
+      "LearnMore": "En savoir plus"
+    },
+    "Explainer": {
+      "Title": "Comment fonctionne SeaMeet AI",
+      "Subtitle": "BYOK — Apportez votre propre clé",
+      "WhatIsBYOK": "Avec BYOK, vos enregistrements et données vont directement de votre appareil à Google ou Anthropic. Rien ne passe par les serveurs SeaMeet — confidentialité maximale pour vous et votre équipe.",
+      "WhatYouNeed": "Ce que vous configurerez après l'abonnement",
+      "GeminiTitle": "Clé Google AI Studio (gratuit limité)",
+      "GeminiDesc": "Alimente la transcription en direct, les résumés post-réunion et l'analyse. Google offre un niveau gratuit généreux — la plupart des utilisateurs ne paient jamais un centime.",
+      "AgentTitle": "Agent IA — choisissez une option (gratuit limité)",
+      "AgentOption1": "GitHub Copilot — 50 discussions premium gratuites/mois (ou plus avec Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — si vous avez déjà Claude Pro ou Max, vous êtes couvert",
+      "AgentOption3": "Clé API Anthropic — pour un accès direct à l'API",
+      "Continue": "Continuer vers l'abonnement",
+      "WhyBYOK": {
+        "Title": "Pourquoi apporter sa propre clé ?",
+        "Answer": "Bien meilleure confidentialité — vos données restent chez des entreprises de confiance comme Google et Anthropic, jamais chez SeaMeet. Les niveaux gratuits de ces fournisseurs sont généreux et suffiront à la plupart des utilisateurs pendant longtemps."
+      },
+      "WhyMonthly": {
+        "Title": "Pourquoi SeaMeet facture-t-il mensuellement ?",
+        "Answer": "SeaMeet se met à jour rapidement avec de nouvelles fonctionnalités IA. Votre abonnement vous maintient à la dernière version. Sans lui, vous paieriez une licence unique et resteriez avec des fonctionnalités figées — comme acheter Office 2012 et rester sur Office 2012 pour toujours."
+      }
+    },
+    "Coupon": {
+      "Title": "Promotion de lancement",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Premier mois gratuit — pour les 100 premiers utilisateurs",
+      "FallbackDesc": "Si SEAMEET100 est épuisé, envoyez un e-mail à coupon@seameet.ai pour obtenir un autre coupon (10% de réduction pendant un an ou un autre code premier mois gratuit).",
+      "HowToUse": "Entrez le code coupon lors du paiement Stripe."
+    },
+    "PostSetup": {
+      "Title": "Vous êtes prêt ! Essayez maintenant.",
+      "Desc": "Enregistrez une réunion rapide ou prenez une capture d'écran pour découvrir la transcription et l'analyse IA en action.",
+      "TryRecording": "Démarrer un enregistrement",
+      "TryScreenshot": "Prendre une capture d'écran",
+      "Later": "J'essaierai plus tard"
     }
   },
   "Billing.BYOK.KeySaved": "Cle enregistree (masquee)",
@@ -663,7 +708,8 @@
     "Screenshot": "Capture d'écran",
     "Send": "Envoyer",
     "Starting": "Démarrage…",
-    "UnknownApp": "Application inconnue"
+    "UnknownApp": "Application inconnue",
+    "Back": "Retour"
   },
   "DeletePrompt": {
     "Cancel": "OK",
@@ -940,7 +986,8 @@
     "SegmentCount_one": "{{count}} segment",
     "SegmentCount_other": "{{count}} segments",
     "WaitingForConnection": "De liaison...",
-    "WaitingForSpeech": "En attendant le discours..."
+    "WaitingForSpeech": "En attendant le discours...",
+    "SubscribeForTranscription": "Abonnez-vous pour activer la transcription IA en direct pendant les enregistrements."
   },
   "IdleCompactView": {
     "ArmFlashback": "Armement de la rétrospective",
@@ -1180,7 +1227,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "Abonnez-vous pour activer l'analyse de captures d'écran par IA."
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copié !",

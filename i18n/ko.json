@@ -8,7 +8,9 @@
     "MenuItem": "AI 에이전트 및 동료",
     "PageTitle": "AI 에이전트 및 동료",
     "SectionTitle": "AI 에이전트 및 동료",
-    "LinkCopied": "복사됨!"
+    "LinkCopied": "복사됨!",
+    "SubscribeMsg": "AI 에이전트는 BYOK Pro 구독이 필요합니다. 구독하여 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하세요.",
+    "SubscribeCTA": "구독하여 잠금 해제"
   },
   "AIFeatures": {
     "ApiKeyLabel": "제미니 API 키",
@@ -181,7 +183,9 @@
       "Latest": "최신",
       "Live": "살다"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "구독하여 녹음에서 AI 요약, 전사 및 실행 항목을 생성하세요.",
+    "SubscribeToRegenerate": "구독하여 AI 요약을 재생성하세요."
   },
   "About": {
     "AppStoreBuild": "App Store 빌드",
@@ -458,7 +462,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "2개의 API 키가 필요합니다: Google AI Studio + Anthropic. 결제 후 설정 마법사가 안내합니다. Google AI Studio는 보통 무료 키를 제공합니다. Claude Pro 또는 Max 플랜을 구독 중이라면 추가 Anthropic API 키가 필요하지 않습니다.",
+        "InfoNote": "2개의 API 키가 필요합니다: Google AI Studio와 GitHub Copilot 또는 Claude Code. 설정 마법사가 결제 후 안내합니다. Google AI Studio는 일반적으로 무료 키를 제공합니다. GitHub Copilot도 무료 플랜을 제공합니다. 자신의 키로 제한적 무료 사용이 가능합니다. Claude Pro 또는 Max를 구독 중이라면 추가 Anthropic API 키가 필요 없습니다.",
         "ConfirmTitle": "구독 전 확인",
         "ConfirmContinue": "결제로 이동",
         "ConfirmSignIn": "먼저 로그인한 후 결제",
@@ -566,7 +570,7 @@
       "Title": "자주 묻는 질문",
       "BYOK": {
         "Q1": "BYOK란 무엇인가요?",
-        "A1": "BYOK는 Bring Your Own Key의 약자입니다. 2개의 API 키가 필요합니다: Google AI Studio (전사 및 요약용)와 Anthropic (AI 질문 및 분석용). Google AI Studio는 보통 무료 키를 제공합니다. Claude Pro 또는 Max 플랜을 구독 중이라면 추가 Anthropic API 키가 필요하지 않습니다. 결제 후 설정 마법사가 두 키의 연결을 안내합니다.",
+        "A1": "BYOK는 Bring Your Own Key(자신의 키 가져오기)의 약자입니다. 2개의 API 키가 필요합니다: Google AI Studio(전사 및 요약용)와 GitHub Copilot 또는 Claude Code(AI 에이전트용). 가이드 설정 마법사가 결제 후 두 키를 연결하는 과정을 안내합니다. Google AI Studio는 일반적으로 무료 키를 제공합니다. GitHub Copilot도 무료 플랜을 제공합니다. 자신의 키로 제한적 무료 사용이 가능합니다. Claude Pro 또는 Max를 구독 중이라면 추가 Anthropic API 키가 필요 없습니다.",
         "Q2": "왜 월간 구독인가요?",
         "A2": "구독료는 지속적인 업데이트, 새로운 AI 모델 지원, 버그 수정 및 새 기능 개발에 사용됩니다. API 비용은 고객님의 키를 통해 Google과 Anthropic에 별도로 지불됩니다.",
         "Q3": "라이선스는 어떻게 작동하나요?",
@@ -596,6 +600,47 @@
         "Q3": "유료 플랜에서는 무엇을 더 할 수 있나요?",
         "A3": "유료 플랜에는 AI 기능이 추가됩니다: 자동 전사, 회의 요약, 액션 아이템, 회의 중 실시간 전사, 녹음에 대한 AI 질문 응답."
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "실시간 전사 및 회의 후 AI 분석 활성화",
+      "ScreenshotAnalysis": "AI 기반 스크린샷 분석 활성화",
+      "CTA": "로그인 및 구독",
+      "LearnMore": "자세히 알아보기"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AI 작동 방식",
+      "Subtitle": "BYOK — 자신의 키 가져오기",
+      "WhatIsBYOK": "BYOK를 사용하면 녹음과 데이터가 기기에서 Google 또는 Anthropic으로 직접 전송됩니다. SeaMeet 서버를 거치지 않으므로 최대한의 프라이버시가 보장됩니다.",
+      "WhatYouNeed": "구독 후 설정할 내용",
+      "GeminiTitle": "Google AI Studio 키 (제한적 무료)",
+      "GeminiDesc": "실시간 전사, 회의 후 요약 및 분석을 지원합니다. Google은 넉넉한 무료 등급을 제공하여 대부분의 사용자는 비용을 지불하지 않습니다.",
+      "AgentTitle": "AI 에이전트 — 하나의 옵션 선택 (제한적 무료)",
+      "AgentOption1": "GitHub Copilot — 월 50회 무료 프리미엄 채팅 (Copilot Pro로 더 많이)",
+      "AgentOption2": "Claude Code CLI — Claude Pro 또는 Max가 있으면 사용 가능",
+      "AgentOption3": "Anthropic API 키 — 직접 API 액세스용",
+      "Continue": "구독으로 계속",
+      "WhyBYOK": {
+        "Title": "왜 자신의 키를 가져오나요?",
+        "Answer": "훨씬 나은 프라이버시 — 데이터가 Google, Anthropic 같은 신뢰할 수 있는 기업에 보관되며 SeaMeet에는 저장되지 않습니다. 이러한 제공업체의 무료 등급은 넉넉하여 대부분의 사용자에게 오래 지속됩니다."
+      },
+      "WhyMonthly": {
+        "Title": "왜 SeaMeet은 월간 요금을 부과하나요?",
+        "Answer": "SeaMeet은 새로운 AI 기능으로 빠르게 업데이트됩니다. 구독으로 최신 버전을 유지할 수 있습니다. 구독 없이는 일회성 라이선스를 구매하고 기능이 고정됩니다 — Office 2012를 사고 영원히 Office 2012에 머무는 것과 같습니다."
+      }
+    },
+    "Coupon": {
+      "Title": "런칭 프로모션",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "첫 달 무료 — 선착순 100명",
+      "FallbackDesc": "SEAMEET100이 소진되면 coupon@seameet.ai로 이메일하여 다른 쿠폰을 받으세요 (1년간 10% 할인 또는 다른 첫 달 무료 코드).",
+      "HowToUse": "Stripe 결제 시 쿠폰 코드를 입력하세요."
+    },
+    "PostSetup": {
+      "Title": "모든 준비 완료! 지금 사용해 보세요.",
+      "Desc": "짧은 회의를 녹음하거나 스크린샷을 찍어 AI 전사 및 분석을 체험해 보세요.",
+      "TryRecording": "녹음 시작",
+      "TryScreenshot": "스크린샷 찍기",
+      "Later": "나중에 해볼게요"
     }
   },
   "Billing.BYOK.KeySaved": "키 저장됨 (숨김)",
@@ -663,7 +708,8 @@
     "Screenshot": "스크린샷",
     "Send": "보내다",
     "Starting": "시작 중...",
-    "UnknownApp": "알 수 없는 앱"
+    "UnknownApp": "알 수 없는 앱",
+    "Back": "뒤로"
   },
   "DeletePrompt": {
     "Cancel": "취소",
@@ -940,7 +986,8 @@
     "SegmentCount_one": "{{count}} 세그먼트",
     "SegmentCount_other": "{{count}} 세그먼트",
     "WaitingForConnection": "연결 중...",
-    "WaitingForSpeech": "연설을 기다리는 중..."
+    "WaitingForSpeech": "연설을 기다리는 중...",
+    "SubscribeForTranscription": "구독하여 녹음 중 실시간 AI 전사를 활성화하세요."
   },
   "IdleCompactView": {
     "ArmFlashback": "회상 위해 준비",
@@ -1179,7 +1226,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "구독하여 AI 기반 스크린샷 분석을 활성화하세요."
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "복사됨!",

@@ -8,7 +8,9 @@
     "MenuItem": "KI-Agent & Cowork",
     "PageTitle": "KI-Agent & Cowork",
     "SectionTitle": "KI-Agent & Cowork",
-    "LinkCopied": "Kopiert!"
+    "LinkCopied": "Kopiert!",
+    "SubscribeMsg": "AI Agent erfordert ein BYOK Pro-Abonnement. Abonnieren Sie für Live-Transkription, KI-Besprechungszusammenfassungen und einen interaktiven KI-Agenten.",
+    "SubscribeCTA": "Abonnieren zum Freischalten"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini-API-Schlüssel",
@@ -181,7 +183,9 @@
       "Latest": "Letzte",
       "Live": "Live"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "Abonnieren Sie, um KI-Zusammenfassungen, Transkripte und Aktionspunkte aus Ihren Aufnahmen zu erstellen.",
+    "SubscribeToRegenerate": "Abonnieren Sie, um KI-Zusammenfassungen neu zu generieren."
   },
   "About": {
     "AppStoreBuild": "App Store-Version",
@@ -458,7 +462,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Sie benötigen 2 API-Schlüssel: Google AI Studio + Anthropic. Ein Einrichtungsassistent führt Sie nach dem Checkout. Google AI Studio bietet in der Regel einen kostenlosen Schlüssel. Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
+        "InfoNote": "Sie benötigen 2 API-Schlüssel: Google AI Studio und GitHub Copilot oder Claude Code. Ein Einrichtungsassistent führt Sie nach dem Checkout. Google AI Studio gibt Ihnen normalerweise einen kostenlosen Schlüssel. GitHub Copilot bietet ebenfalls einen kostenlosen Plan. So können Sie Ihre eigenen Schlüssel begrenzt kostenlos nutzen. Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
         "ConfirmTitle": "Bevor Sie abonnieren",
         "ConfirmContinue": "Weiter zum Checkout",
         "ConfirmSignIn": "Zuerst anmelden, dann zum Checkout",
@@ -566,7 +570,7 @@
       "Title": "Häufig gestellte Fragen",
       "BYOK": {
         "Q1": "Was ist BYOK?",
-        "A1": "BYOK steht für Bring Your Own Key. Sie benötigen 2 API-Schlüssel: einen von Google AI Studio (für Transkription & Zusammenfassungen) und einen von Anthropic (für KI-Fragen & Analyse). Google AI Studio bietet in der Regel einen kostenlosen Schlüssel. Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel. Ein Einrichtungsassistent führt Sie nach dem Checkout durch die Verbindung beider Schlüssel.",
+        "A1": "BYOK steht für Bring Your Own Key. Sie benötigen 2 API-Schlüssel: einen von Google AI Studio (für Transkription und Zusammenfassungen) und einen von GitHub Copilot oder Claude Code (für den KI-Agenten). Ein geführter Einrichtungsassistent leitet Sie nach dem Checkout durch die Verbindung beider Schlüssel. Google AI Studio gibt Ihnen normalerweise einen kostenlosen Schlüssel. GitHub Copilot bietet ebenfalls einen kostenlosen Plan. So können Sie Ihre eigenen Schlüssel begrenzt kostenlos nutzen. Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
         "Q2": "Warum ein monatliches Abo?",
         "A2": "Ihr Abo finanziert kontinuierliche Updates, neue KI-Modell-Unterstützung, Fehlerbehebungen und neue Funktionen. API-Kosten werden separat an Google und Anthropic über Ihre eigenen Schlüssel bezahlt.",
         "Q3": "Wie funktioniert die Lizenzierung?",
@@ -596,6 +600,47 @@
         "Q3": "Was kann ich mit einem kostenpflichtigen Plan mehr bekommen?",
         "A3": "Kostenpflichtige Pläne fügen KI-gestützte Funktionen hinzu: automatische Transkription, Besprechungszusammenfassungen, Aktionspunkte, Live-Transkription während Besprechungen und KI-gestützte Fragen & Antworten zu Ihren Aufnahmen."
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "Live-Transkription und KI-Analyse nach dem Meeting aktivieren",
+      "ScreenshotAnalysis": "KI-gestützte Screenshot-Analyse aktivieren",
+      "CTA": "Anmelden und abonnieren",
+      "LearnMore": "Mehr erfahren"
+    },
+    "Explainer": {
+      "Title": "So funktioniert SeaMeet AI",
+      "Subtitle": "BYOK — Bring Your Own Key",
+      "WhatIsBYOK": "Mit BYOK gehen Ihre Aufnahmen und Daten direkt von Ihrem Gerät zu Google oder Anthropic. Nichts läuft über SeaMeet-Server — maximale Privatsphäre für Sie und Ihr Team.",
+      "WhatYouNeed": "Was Sie nach dem Abonnement einrichten",
+      "GeminiTitle": "Google AI Studio-Schlüssel (begrenzt kostenlos)",
+      "GeminiDesc": "Betreibt Live-Transkription, Besprechungszusammenfassungen und Analyse. Google bietet ein großzügiges kostenloses Kontingent — die meisten Nutzer zahlen keinen Cent.",
+      "AgentTitle": "KI-Agent — wählen Sie eine Option (begrenzt kostenlos)",
+      "AgentOption1": "GitHub Copilot — 50 kostenlose Premium-Chats/Monat (oder mehr mit Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — wenn Sie bereits Claude Pro oder Max haben, sind Sie abgedeckt",
+      "AgentOption3": "Anthropic API-Schlüssel — für direkten API-Zugang",
+      "Continue": "Weiter zum Abonnement",
+      "WhyBYOK": {
+        "Title": "Warum einen eigenen Schlüssel mitbringen?",
+        "Answer": "Viel bessere Privatsphäre — Ihre Daten bleiben bei vertrauenswürdigen Unternehmen wie Google und Anthropic, nie bei SeaMeet. Die kostenlosen Kontingente dieser Anbieter sind großzügig und reichen den meisten Nutzern lange."
+      },
+      "WhyMonthly": {
+        "Title": "Warum erhebt SeaMeet monatliche Gebühren?",
+        "Answer": "SeaMeet wird schnell mit neuen KI-Funktionen aktualisiert. Ihr Abonnement hält Sie auf dem neuesten Stand. Ohne es würden Sie eine Einmallizenz bezahlen und wären mit eingefrorenen Funktionen festgelegt — wie Office 2012 zu kaufen und für immer dabei zu bleiben."
+      }
+    },
+    "Coupon": {
+      "Title": "Einführungsaktion",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Erster Monat kostenlos — für die ersten 100 Nutzer",
+      "FallbackDesc": "Wenn SEAMEET100 aufgebraucht ist, senden Sie eine E-Mail an coupon@seameet.ai für einen anderen Gutschein (10% Rabatt für ein Jahr oder einen weiteren Gratis-Monat-Code).",
+      "HowToUse": "Geben Sie den Gutscheincode beim Stripe-Checkout ein."
+    },
+    "PostSetup": {
+      "Title": "Alles bereit! Probieren Sie es jetzt aus.",
+      "Desc": "Nehmen Sie ein kurzes Meeting auf oder machen Sie einen Screenshot, um KI-Transkription und -Analyse in Aktion zu erleben.",
+      "TryRecording": "Aufnahme starten",
+      "TryScreenshot": "Screenshot aufnehmen",
+      "Later": "Ich probiere es später"
     }
   },
   "Billing.BYOK.KeySaved": "Schlüssel gespeichert (verborgen)",
@@ -663,7 +708,8 @@
     "Screenshot": "Screenshot",
     "Send": "Schicken",
     "Starting": "Starten...",
-    "UnknownApp": "Unbekannte App"
+    "UnknownApp": "Unbekannte App",
+    "Back": "Zurück"
   },
   "DeletePrompt": {
     "Cancel": "Abbrechen",
@@ -940,7 +986,8 @@
     "SegmentCount_one": "{{count}} Segmente",
     "SegmentCount_other": "{{count}} Segmente",
     "WaitingForConnection": "Verbinden...",
-    "WaitingForSpeech": "Warten auf Rede..."
+    "WaitingForSpeech": "Warten auf Rede...",
+    "SubscribeForTranscription": "Abonnieren Sie, um Live-KI-Transkription während der Aufnahme zu aktivieren."
   },
   "IdleCompactView": {
     "ArmFlashback": "Flashback scharf machen",
@@ -1179,7 +1226,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "Abonnieren Sie, um KI-gestützte Screenshot-Analyse zu aktivieren."
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Kopiert!",

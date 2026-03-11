@@ -8,7 +8,9 @@
     "MenuItem": "ตัวแทน AI และโคเวิร์ก",
     "PageTitle": "ตัวแทน AI และโคเวิร์ก",
     "SectionTitle": "ตัวแทน AI และโคเวิร์ก",
-    "LinkCopied": "คัดลอกแล้ว!"
+    "LinkCopied": "คัดลอกแล้ว!",
+    "SubscribeMsg": "ตัวแทน AI ต้องการการสมัครสมาชิก BYOK Pro สมัครสมาชิกเพื่อรับการถอดเสียงแบบสด สรุปการประชุม AI และตัวแทน AI แบบโต้ตอบ",
+    "SubscribeCTA": "สมัครสมาชิกเพื่อปลดล็อก"
   },
   "AIFeatures": {
     "ApiKeyLabel": "คีย์ API ของราศีเมถุน",
@@ -181,7 +183,9 @@
       "Latest": "ล่าสุด",
       "Live": "สด"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
+    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries."
   },
   "About": {
     "AppStoreBuild": "เวอร์ชัน App Store",
@@ -407,7 +411,7 @@
       "Subtitle": "อีกขั้นตอนหนึ่ง: เชื่อมต่อ AI API key ของคุณ",
       "Validating": "กำลังตรวจสอบ...",
       "ValidationFailed": "การตรวจสอบล้มเหลว",
-      "TabLabel": "API Keys",
+      "TabLabel": "คีย์ API",
       "WizardStep": "ขั้นตอนที่ {{current}} จาก {{total}}",
       "Step1Title": "เชื่อมต่อ Gemini API key ของคุณ",
       "Step1Desc": "ใช้สำหรับการถอดเสียง, สรุป และถอดเสียงสด รับ key ฟรีจาก Google AI Studio",
@@ -446,7 +450,8 @@
       "Yesterday": "เมื่อวาน",
       "DaysAgo_one": "{{count}} วันก่อน",
       "Error": "โหลดอุปกรณ์ไม่สำเร็จ: {{error}}",
-      "Loading": "กำลังโหลดอุปกรณ์..."
+      "Loading": "กำลังโหลดอุปกรณ์...",
+      "TabLabel": "อุปกรณ์"
     },
     "Error": {
       "AlreadySubscribed": "คุณมีสมาชิกที่ใช้งานอยู่แล้ว ใช้จัดการสมาชิกเพื่อดูหรือเปลี่ยนแปลง",
@@ -596,6 +601,47 @@
         "Q3": "แผนชำระเงินมีอะไรเพิ่มเติมบ้าง?",
         "A3": "แผนชำระเงินเพิ่มฟีเจอร์ AI: การถอดเสียงอัตโนมัติ สรุปการประชุม รายการดำเนินการ การถอดเสียงสดระหว่างประชุม และถาม-ตอบ AI เกี่ยวกับการบันทึกของคุณ"
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "เปิดใช้งานการถอดเสียงแบบสดและการวิเคราะห์ AI หลังการประชุม",
+      "ScreenshotAnalysis": "เปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
+      "CTA": "เข้าสู่ระบบและสมัครสมาชิก",
+      "LearnMore": "เรียนรู้เพิ่มเติม"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AI ทำงานอย่างไร",
+      "Subtitle": "BYOK — นำคีย์ของคุณเอง",
+      "WhatIsBYOK": "ด้วย BYOK บันทึกและข้อมูลของคุณจะถูกส่งตรงจากอุปกรณ์ของคุณไปยัง Google หรือ Anthropic ไม่มีอะไรผ่านเซิร์ฟเวอร์ SeaMeet — ความเป็นส่วนตัวสูงสุดสำหรับคุณและทีม",
+      "WhatYouNeed": "สิ่งที่คุณจะตั้งค่าหลังจากสมัครสมาชิก",
+      "GeminiTitle": "คีย์ Google AI Studio (ฟรีแบบจำกัด)",
+      "GeminiDesc": "รองรับการถอดเสียงแบบสด สรุปหลังการประชุม และการวิเคราะห์ Google มีระดับฟรีที่ใจกว้าง — ผู้ใช้ส่วนใหญ่ไม่ต้องจ่ายแม้แต่บาทเดียว",
+      "AgentTitle": "ตัวแทน AI — เลือกหนึ่งตัวเลือก (ฟรีแบบจำกัด)",
+      "AgentOption1": "GitHub Copilot — แชทพรีเมียมฟรี 50 ครั้ง/เดือน (หรือมากกว่าด้วย Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — หากคุณมี Claude Pro หรือ Max อยู่แล้ว คุณครอบคลุมแล้ว",
+      "AgentOption3": "คีย์ API Anthropic — สำหรับการเข้าถึง API โดยตรง",
+      "Continue": "ดำเนินการสมัครสมาชิก",
+      "WhyBYOK": {
+        "Title": "ทำไมต้องนำคีย์ของคุณเอง?",
+        "Answer": "ความเป็นส่วนตัวดีกว่ามาก — ข้อมูลของคุณอยู่กับบริษัทที่เชื่อถือได้อย่าง Google และ Anthropic ไม่ใช่ SeaMeet ระดับฟรีจากผู้ให้บริการเหล่านี้ใจกว้างและจะเพียงพอสำหรับผู้ใช้ส่วนใหญ่เป็นเวลานาน"
+      },
+      "WhyMonthly": {
+        "Title": "ทำไม SeaMeet ถึงเก็บค่าบริการรายเดือน?",
+        "Answer": "SeaMeet อัปเดตอย่างรวดเร็วด้วยฟีเจอร์ AI ใหม่ การสมัครสมาชิกของคุณทำให้คุณอยู่บนเวอร์ชันล่าสุดเสมอ หากไม่มี คุณจะจ่ายค่าลิขสิทธิ์ครั้งเดียวและติดอยู่กับฟีเจอร์ที่ไม่เปลี่ยนแปลง — เหมือนซื้อ Office 2012 แล้วใช้ Office 2012 ไปตลอด"
+      }
+    },
+    "Coupon": {
+      "Title": "โปรโมชันเปิดตัว",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "เดือนแรกฟรี — สำหรับ 100 ผู้ใช้แรก",
+      "FallbackDesc": "หาก SEAMEET100 ถูกใช้หมดแล้ว ส่งอีเมลไปที่ coupon@seameet.ai เพื่อรับคูปองอื่น (ส่วนลด 10% เป็นเวลาหนึ่งปี หรือรหัสเดือนแรกฟรีอีกรหัส)",
+      "HowToUse": "ป้อนรหัสคูปองที่หน้าชำระเงิน Stripe"
+    },
+    "PostSetup": {
+      "Title": "พร้อมแล้ว! ลองใช้เลย",
+      "Desc": "บันทึกการประชุมสั้นๆ หรือถ่ายภาพหน้าจอเพื่อสัมผัสการถอดเสียงและการวิเคราะห์ AI",
+      "TryRecording": "เริ่มบันทึก",
+      "TryScreenshot": "ถ่ายภาพหน้าจอ",
+      "Later": "ไว้ลองทีหลัง"
     }
   },
   "Billing.BYOK.KeySaved": "บันทึก key แล้ว (ซ่อนอยู่)",
@@ -663,7 +709,8 @@
     "Screenshot": "ภาพหน้าจอ",
     "Send": "ส่ง",
     "Starting": "กำลังเริ่ม…",
-    "UnknownApp": "แอปพลิเคชันไม่ทราบ"
+    "UnknownApp": "แอปพลิเคชันไม่ทราบ",
+    "Back": "ย้อนกลับ"
   },
   "DeletePrompt": {
     "Cancel": "ยกเลิก",
@@ -940,7 +987,8 @@
     "SegmentCount_one": "{{count}} ส่วน",
     "SegmentCount_other": "{{count}} ส่วน",
     "WaitingForConnection": "กำลังเชื่อมต่อ...",
-    "WaitingForSpeech": "กำลังรอคำพูด..."
+    "WaitingForSpeech": "กำลังรอคำพูด...",
+    "SubscribeForTranscription": "สมัครสมาชิกเพื่อเปิดใช้งานการถอดเสียง AI แบบสดระหว่างการบันทึก"
   },
   "IdleCompactView": {
     "ArmFlashback": "เปิดใช้งานภาพย้อนความทรงจำ",
@@ -1179,7 +1227,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "สมัครสมาชิกเพื่อเปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "คัดลอกแล้ว!",

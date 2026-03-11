@@ -8,7 +8,9 @@
     "MenuItem": "Agente de IA y cowork",
     "PageTitle": "Agente de IA y cowork",
     "SectionTitle": "Agente de IA y cowork",
-    "LinkCopied": "¡Copiado!"
+    "LinkCopied": "¡Copiado!",
+    "SubscribeMsg": "AI Agent requiere una suscripción BYOK Pro. Suscríbete para obtener transcripción en vivo, resúmenes de reuniones con IA y un agente de IA interactivo.",
+    "SubscribeCTA": "Suscríbete para desbloquear"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Clave API de Géminis",
@@ -180,7 +182,9 @@
     "Renaming": "Renaming…",
     "RenameTo": "Rename: {{name}}",
     "RenameApplied": "File renamed to '{{name}}'",
-    "RenameError": "Failed to rename file"
+    "RenameError": "Failed to rename file",
+    "SubscribeToGenerate": "Suscríbete para generar resúmenes de IA, transcripciones y elementos de acción de tus grabaciones.",
+    "SubscribeToRegenerate": "Suscríbete para regenerar resúmenes de IA."
   },
   "About": {
     "AppStoreBuild": "Versión de App Store",
@@ -485,7 +489,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Necesitara 2 claves API: Google AI Studio + Anthropic. Un asistente de configuracion le guiara despues del pago. Google AI Studio generalmente le da una clave gratuita. Si tiene una suscripcion a Claude Pro o Max, no necesita una clave API de Anthropic adicional.",
+        "InfoNote": "Necesitarás 2 claves API: Google AI Studio y GitHub Copilot o Claude Code. Un asistente de configuración te guiará después del pago. Google AI Studio normalmente te da una clave gratuita. GitHub Copilot también ofrece un plan gratuito. Así que estás listo para usar tus propias claves con acceso gratuito limitado. Si tienes suscripción a Claude Pro o Max, no necesitas una clave API de Anthropic adicional.",
         "ConfirmTitle": "Antes de suscribirse",
         "ConfirmContinue": "Continuar al pago",
         "ConfirmSignIn": "Iniciar sesion primero, luego pagar",
@@ -593,7 +597,7 @@
       "Title": "Preguntas frecuentes",
       "BYOK": {
         "Q1": "Que es BYOK?",
-        "A1": "BYOK significa Bring Your Own Key. Necesitara 2 claves API: una de Google AI Studio (para transcripcion y resumenes) y una de Anthropic (para preguntas de IA y analisis). Google AI Studio generalmente le da una clave gratuita. Si tiene una suscripcion a Claude Pro o Max, no necesita una clave API de Anthropic adicional. Un asistente de configuracion le guia para conectar ambas claves despues del pago.",
+        "A1": "BYOK significa Trae Tu Propia Clave. Necesitarás 2 claves API: una de Google AI Studio (para transcripción y resúmenes) y una de GitHub Copilot o Claude Code (para el agente IA). Un asistente de configuración guiado te ayudará a conectar ambas claves después del pago. Google AI Studio normalmente te da una clave gratuita. GitHub Copilot también ofrece un plan gratuito. Así que estás listo para usar tus propias claves con acceso gratuito limitado. Si tienes suscripción a Claude Pro o Max, no necesitas una clave API de Anthropic adicional.",
         "Q2": "Por que una suscripcion mensual?",
         "A2": "Su suscripcion financia actualizaciones continuas, soporte de nuevos modelos de IA, correcciones de errores y nuevas funciones. Los costos de API se pagan por separado a Google y Anthropic usando sus propias claves.",
         "Q3": "Como funciona la licencia?",
@@ -623,6 +627,47 @@
         "Q3": "Que mas puedo obtener con un plan de pago?",
         "A3": "Los planes de pago agregan funciones con IA: transcripcion automatica, resumenes de reuniones, elementos de accion, transcripcion en vivo durante reuniones y preguntas y respuestas con IA sobre sus grabaciones."
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "Habilitar transcripción en vivo y análisis post-reunión con IA",
+      "ScreenshotAnalysis": "Habilitar análisis de capturas de pantalla con IA",
+      "CTA": "Iniciar sesión y suscribirse",
+      "LearnMore": "Más información"
+    },
+    "Explainer": {
+      "Title": "Cómo funciona SeaMeet AI",
+      "Subtitle": "BYOK — Trae tu propia clave",
+      "WhatIsBYOK": "Con BYOK, tus grabaciones y datos van directamente de tu dispositivo a Google o Anthropic. Nada pasa por los servidores de SeaMeet — máxima privacidad para ti y tu equipo.",
+      "WhatYouNeed": "Lo que configurarás después de suscribirte",
+      "GeminiTitle": "Clave de Google AI Studio (gratis limitado)",
+      "GeminiDesc": "Permite la transcripción en vivo, resúmenes post-reunión y análisis. Google ofrece un nivel gratuito generoso — la mayoría de los usuarios nunca pagan nada.",
+      "AgentTitle": "Agente IA — elige una opción (gratis limitado)",
+      "AgentOption1": "GitHub Copilot — 50 chats premium gratuitos/mes (o más con Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — si ya tienes Claude Pro o Max, estás cubierto",
+      "AgentOption3": "Clave API de Anthropic — para acceso directo a la API",
+      "Continue": "Continuar para suscribirse",
+      "WhyBYOK": {
+        "Title": "¿Por qué traer tu propia clave?",
+        "Answer": "Mucha mejor privacidad — tus datos permanecen con empresas de confianza como Google y Anthropic, nunca con SeaMeet. Los niveles gratuitos de estos proveedores son generosos y durarán mucho tiempo a la mayoría de usuarios."
+      },
+      "WhyMonthly": {
+        "Title": "¿Por qué SeaMeet cobra mensualmente?",
+        "Answer": "SeaMeet se actualiza rápidamente con nuevas funciones de IA. Tu suscripción te mantiene en la última versión. Sin ella, pagarías una licencia única y te quedarías con funciones congeladas — como comprar Office 2012 y quedarte en Office 2012 para siempre."
+      }
+    },
+    "Coupon": {
+      "Title": "Promoción de lanzamiento",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Primer mes gratis — para los primeros 100 usuarios",
+      "FallbackDesc": "Si SEAMEET100 se ha agotado, envía un correo a coupon@seameet.ai para obtener otro cupón (10% de descuento por un año u otro código de mes gratis).",
+      "HowToUse": "Ingresa el código de cupón en el checkout de Stripe."
+    },
+    "PostSetup": {
+      "Title": "¡Todo listo! Pruébalo ahora.",
+      "Desc": "Graba una reunión rápida o toma una captura de pantalla para experimentar la transcripción y el análisis con IA en acción.",
+      "TryRecording": "Iniciar una grabación",
+      "TryScreenshot": "Tomar una captura de pantalla",
+      "Later": "Lo probaré después"
     }
   },
   "Billing.BYOK.KeySaved": "Clave guardada (oculta)",
@@ -690,7 +735,8 @@
     "Screenshot": "Instantánea",
     "Send": "Enviar",
     "Starting": "Iniciando...",
-    "UnknownApp": "App desconocida"
+    "UnknownApp": "App desconocida",
+    "Back": "Atrás"
   },
   "DeletePrompt": {
     "Cancel": "Cancelar",
@@ -968,7 +1014,8 @@
     "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} segmentos",
     "WaitingForConnection": "Conectando...",
-    "WaitingForSpeech": "Esperando discurso..."
+    "WaitingForSpeech": "Esperando discurso...",
+    "SubscribeForTranscription": "Suscríbete para habilitar la transcripción en vivo con IA durante las grabaciones."
   },
   "IdleCompactView": {
     "ArmFlashback": "Iniciar retrospectiva",
@@ -1209,7 +1256,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "Suscríbete para habilitar el análisis de capturas de pantalla con IA."
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "¡Copiado!",

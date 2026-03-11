@@ -8,7 +8,9 @@
     "MenuItem": "人工智慧代理與協作",
     "PageTitle": "人工智慧代理與協作",
     "SectionTitle": "人工智慧代理與協作",
-    "LinkCopied": "已複製！"
+    "LinkCopied": "已複製！",
+    "SubscribeMsg": "AI 助手需要 BYOK Pro 訂閱。訂閱以獲取即時轉錄、AI 會議摘要和互動式 AI 助手。",
+    "SubscribeCTA": "訂閱以解鎖"
   },
   "AIFeatures": {
     "ApiKeyLabel": "雙子座 API 金鑰",
@@ -181,7 +183,9 @@
       "Latest": "最新的",
       "Live": "居住"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "訂閱以從錄音生成 AI 摘要、轉錄和行動事項。",
+    "SubscribeToRegenerate": "訂閱以重新生成 AI 摘要。"
   },
   "About": {
     "AppStoreBuild": "App Store 版",
@@ -458,7 +462,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "您需要 2 個 API 金鑰: Google AI Studio + Anthropic。結帳後設定精靈會引導您完成設定。Google AI Studio 通常提供免費金鑰。如果您已訂閱 Claude Pro 或 Max 方案，則無需額外的 Anthropic API 金鑰。",
+        "InfoNote": "您需要 2 個 API 金鑰：Google AI Studio 和 GitHub Copilot 或 Claude Code。設定精靈會在結帳後引導您。Google AI Studio 通常提供免費金鑰。GitHub Copilot 也提供免費方案。因此，您可以使用自己的金鑰進行有限免費使用。如果您已訂閱 Claude Pro 或 Max，則無需額外的 Anthropic API 金鑰。",
         "ConfirmTitle": "訂閱前確認",
         "ConfirmContinue": "繼續結帳",
         "ConfirmSignIn": "先登入，再結帳",
@@ -566,7 +570,7 @@
       "Title": "常見問題",
       "BYOK": {
         "Q1": "什麼是 BYOK？",
-        "A1": "BYOK 是 Bring Your Own Key（自備金鑰）的縮寫。您需要 2 個 API 金鑰: 一個來自 Google AI Studio（用於逐字稿和摘要），一個來自 Anthropic（用於 AI 提問和分析）。Google AI Studio 通常提供免費金鑰。如果您已訂閱 Claude Pro 或 Max 方案，則無需額外的 Anthropic API 金鑰。結帳後設定精靈會引導您連接兩個金鑰。",
+        "A1": "BYOK 是 Bring Your Own Key（自帶金鑰）的縮寫。您需要 2 個 API 金鑰：一個來自 Google AI Studio（用於轉錄和摘要），一個來自 GitHub Copilot 或 Claude Code（用於 AI 助手）。引導式設定精靈會在結帳後幫助您連接兩個金鑰。Google AI Studio 通常提供免費金鑰。GitHub Copilot 也提供免費方案。因此，您可以使用自己的金鑰進行有限免費使用。如果您已訂閱 Claude Pro 或 Max，則無需額外的 Anthropic API 金鑰。",
         "Q2": "為什麼需要按月訂閱？",
         "A2": "您的訂閱費用於持續更新、新 AI 模型支援、錯誤修復和新功能開發。API 費用透過您自己的金鑰分別支付給 Google 和 Anthropic。",
         "Q3": "授權如何運作？",
@@ -596,6 +600,47 @@
         "Q3": "付費方案還能獲得什麼？",
         "A3": "付費方案增加 AI 功能: 自動逐字稿、會議摘要、行動事項、會議中的即時逐字稿，以及關於錄音的 AI 問答。"
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "啟用即時轉錄和會後 AI 分析",
+      "ScreenshotAnalysis": "啟用 AI 驅動的螢幕截圖分析",
+      "CTA": "登入並訂閱",
+      "LearnMore": "瞭解更多"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AI 如何運作",
+      "Subtitle": "BYOK — 自帶金鑰",
+      "WhatIsBYOK": "使用 BYOK，您的錄音和資料直接從裝置傳送到 Google 或 Anthropic。不經過 SeaMeet 伺服器 — 為您和團隊提供最大隱私保護。",
+      "WhatYouNeed": "訂閱後需要設定的內容",
+      "GeminiTitle": "Google AI Studio 金鑰（有限免費）",
+      "GeminiDesc": "支援即時轉錄、會後摘要和分析。Google 提供慷慨的免費額度 — 大多數使用者無需花一分錢。",
+      "AgentTitle": "AI 助手 — 選擇一個選項（有限免費）",
+      "AgentOption1": "GitHub Copilot — 每月 50 次免費進階對話（Copilot Pro 可獲更多）",
+      "AgentOption2": "Claude Code CLI — 如果您已有 Claude Pro 或 Max，即可使用",
+      "AgentOption3": "Anthropic API 金鑰 — 用於直接 API 存取",
+      "Continue": "繼續訂閱",
+      "WhyBYOK": {
+        "Title": "為什麼要自帶金鑰？",
+        "Answer": "更好的隱私保護 — 您的資料保存在 Google 和 Anthropic 等可信企業中，不會保存在 SeaMeet。這些提供商的免費額度慷慨，對大多數使用者來說可以使用很長時間。"
+      },
+      "WhyMonthly": {
+        "Title": "為什麼 SeaMeet 按月收費？",
+        "Answer": "SeaMeet 不斷更新新的 AI 功能。訂閱讓您始終使用最新版本。否則，您購買一次性授權後就只能使用固定功能 — 就像買了 Office 2012 然後永遠停留在 Office 2012 一樣。"
+      }
+    },
+    "Coupon": {
+      "Title": "上線推廣",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "首月免費 — 前 100 名使用者",
+      "FallbackDesc": "如果 SEAMEET100 已用完，發送電子郵件至 coupon@seameet.ai 獲取另一個優惠券（一年 10% 折扣或另一個首月免費碼）。",
+      "HowToUse": "在 Stripe 結帳時輸入優惠券代碼。"
+    },
+    "PostSetup": {
+      "Title": "一切就緒！現在就試試。",
+      "Desc": "錄製一個簡短的會議或截取螢幕截圖，體驗 AI 轉錄和分析。",
+      "TryRecording": "開始錄製",
+      "TryScreenshot": "截取螢幕截圖",
+      "Later": "稍後再試"
     }
   },
   "Billing.BYOK.KeySaved": "金鑰已儲存（已隱藏）",
@@ -663,7 +708,8 @@
     "Screenshot": "快照",
     "Send": "傳送",
     "Starting": "啟動中…",
-    "UnknownApp": "未知應用程式"
+    "UnknownApp": "未知應用程式",
+    "Back": "返回"
   },
   "DeletePrompt": {
     "Cancel": "取消",
@@ -940,7 +986,8 @@
     "SegmentCount_one": "{{count}} 段",
     "SegmentCount_other": "{{count}} 段",
     "WaitingForConnection": "正在連接...",
-    "WaitingForSpeech": "等待演講..."
+    "WaitingForSpeech": "等待演講...",
+    "SubscribeForTranscription": "訂閱以在錄音期間啟用即時 AI 轉錄。"
   },
   "IdleCompactView": {
     "ArmFlashback": "啟用回憶錄",
@@ -1179,7 +1226,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "訂閱以啟用 AI 驅動的螢幕截圖分析。"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "已複製！",

@@ -8,7 +8,9 @@
     "MenuItem": "AIエージェント&コワーク",
     "PageTitle": "AIエージェント&コワーク",
     "SectionTitle": "AIエージェント&コワーク",
-    "LinkCopied": "コピーしました！"
+    "LinkCopied": "コピーしました！",
+    "SubscribeMsg": "AIエージェントにはBYOK Proサブスクリプションが必要です。サブスクライブしてライブ文字起こし、AI会議要約、インタラクティブAIエージェントを利用しましょう。",
+    "SubscribeCTA": "サブスクライブして解除"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API キー",
@@ -181,7 +183,9 @@
       "Latest": "最新",
       "Live": "ライブ"
     },
-    "ScreenshotTabTitle": "AI Analysis"
+    "ScreenshotTabTitle": "AI Analysis",
+    "SubscribeToGenerate": "サブスクライブして録音からAI要約、文字起こし、アクションアイテムを生成しましょう。",
+    "SubscribeToRegenerate": "サブスクライブしてAI要約を再生成しましょう。"
   },
   "About": {
     "AppStoreBuild": "App Store版",
@@ -458,7 +462,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "2つの API キーが必要です: Google AI Studio + Anthropic。チェックアウト後にセットアップウィザードがご案内します。Google AI Studio は通常、無料キーを提供しています。Claude Pro または Max プランをお持ちの場合、Anthropic API キーは追加不要です。",
+        "InfoNote": "2つのAPIキーが必要です：Google AI StudioとGitHub CopilotまたはClaude Code。セットアップウィザードがチェックアウト後にご案内します。Google AI Studioは通常無料のキーを提供します。GitHub Copilotも無料プランを提供しています。自分のキーで限定無料で利用を開始できます。Claude ProまたはMaxに加入している場合、追加のAnthropic APIキーは不要です。",
         "ConfirmTitle": "登録前のご確認",
         "ConfirmContinue": "チェックアウトに進む",
         "ConfirmSignIn": "まずサインインしてからチェックアウト",
@@ -566,7 +570,7 @@
       "Title": "よくある質問",
       "BYOK": {
         "Q1": "BYOKとは？",
-        "A1": "BYOKは「Bring Your Own Key」の略です。2つの API キーが必要です: Google AI Studio（文字起こしと要約用）と Anthropic（AI質問と分析用）。Google AI Studio は通常、無料キーを提供しています。Claude Pro または Max プランをお持ちの場合、追加の Anthropic API キーは不要です。チェックアウト後にセットアップウィザードが両方のキーの接続をご案内します。",
+        "A1": "BYOKはBring Your Own Key（自分のキーを持参）の略です。2つのAPIキーが必要です：Google AI Studio（文字起こしと要約用）とGitHub CopilotまたはClaude Code（AIエージェント用）。ガイド付きセットアップウィザードがチェックアウト後に両方のキーの接続を案内します。Google AI Studioは通常無料のキーを提供します。GitHub Copilotも無料プランを提供しています。自分のキーで限定無料で利用を開始できます。Claude ProまたはMaxに加入している場合、追加のAnthropic APIキーは不要です。",
         "Q2": "なぜ月額サブスクリプションなのですか？",
         "A2": "サブスクリプション料金は、継続的なアップデート、新しいAIモデルのサポート、バグ修正、新機能の開発に充てられます。API コストはお客様のキーを使用して Google と Anthropic に別途お支払いいただきます。",
         "Q3": "ライセンスはどのように機能しますか？",
@@ -596,6 +600,47 @@
         "Q3": "有料プランではさらに何ができますか？",
         "A3": "有料プランではAI機能が追加されます: 自動文字起こし、会議の要約、アクションアイテム、会議中のライブ文字起こし、録音に関するAI質問応答。"
       }
+    },
+    "Nudge": {
+      "LiveTranscription": "ライブ文字起こしと会議後のAI分析を有効にする",
+      "ScreenshotAnalysis": "AI搭載のスクリーンショット分析を有効にする",
+      "CTA": "ログインしてサブスクライブ",
+      "LearnMore": "詳細を見る"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AIの仕組み",
+      "Subtitle": "BYOK — 自分のキーを持参",
+      "WhatIsBYOK": "BYOKでは、録音とデータはデバイスからGoogleまたはAnthropicに直接送信されます。SeaMeetサーバーを経由することはありません — あなたとチームの最大限のプライバシーを確保します。",
+      "WhatYouNeed": "サブスクライブ後に設定するもの",
+      "GeminiTitle": "Google AI Studioキー（限定無料）",
+      "GeminiDesc": "ライブ文字起こし、会議後の要約、分析を提供します。Googleは寛大な無料枠を提供しており、ほとんどのユーザーは一銭も払いません。",
+      "AgentTitle": "AIエージェント — 1つのオプションを選択（限定無料）",
+      "AgentOption1": "GitHub Copilot — 月50回の無料プレミアムチャット（Copilot Proでさらに多く）",
+      "AgentOption2": "Claude Code CLI — Claude ProまたはMaxをお持ちなら対応済み",
+      "AgentOption3": "Anthropic APIキー — 直接APIアクセス用",
+      "Continue": "サブスクライブに進む",
+      "WhyBYOK": {
+        "Title": "なぜ自分のキーを持参するのか？",
+        "Answer": "はるかに優れたプライバシー — データはGoogleやAnthropicなどの信頼できる企業に留まり、SeaMeetには渡りません。これらのプロバイダーの無料枠は寛大で、ほとんどのユーザーに長期間十分です。"
+      },
+      "WhyMonthly": {
+        "Title": "なぜSeaMeetは月額課金なのか？",
+        "Answer": "SeaMeetは新しいAI機能で急速に更新されます。サブスクリプションで最新バージョンを維持できます。なければ、一度きりのライセンスを購入して機能が固定されたままになります — Office 2012を購入してずっとOffice 2012のままのようなものです。"
+      }
+    },
+    "Coupon": {
+      "Title": "ローンチプロモーション",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "最初の月が無料 — 先着100名",
+      "FallbackDesc": "SEAMEET100が使い切られた場合、coupon@seameet.aiにメールして別のクーポンを取得してください（1年間10%オフまたは別の初月無料コード）。",
+      "HowToUse": "Stripeのチェックアウトでクーポンコードを入力してください。"
+    },
+    "PostSetup": {
+      "Title": "準備完了！今すぐ試しましょう。",
+      "Desc": "短い会議を録音するかスクリーンショットを撮って、AI文字起こしと分析を体験しましょう。",
+      "TryRecording": "録音を開始",
+      "TryScreenshot": "スクリーンショットを撮る",
+      "Later": "後で試します"
     }
   },
   "Billing.BYOK.KeySaved": "キー保存済み（非表示）",
@@ -663,7 +708,8 @@
     "Screenshot": "スクリーンショット",
     "Send": "送信",
     "Starting": "起動中...",
-    "UnknownApp": "不明なアプリケーション"
+    "UnknownApp": "不明なアプリケーション",
+    "Back": "戻る"
   },
   "DeletePrompt": {
     "Cancel": "キャンセル",
@@ -940,7 +986,8 @@
     "SegmentCount_one": "{{count}} セグメント",
     "SegmentCount_other": "{{count}} セグメント",
     "WaitingForConnection": "接続中...",
-    "WaitingForSpeech": "スピーチを待っています..."
+    "WaitingForSpeech": "スピーチを待っています...",
+    "SubscribeForTranscription": "サブスクライブして録音中のライブAI文字起こしを有効にしましょう。"
   },
   "IdleCompactView": {
     "ArmFlashback": "フラッシュバックを準備",
@@ -1179,7 +1226,8 @@
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
-    }
+    },
+    "SubscribeToDescribe": "サブスクライブしてAI搭載のスクリーンショット分析を有効にしましょう。"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "コピーしました！",
