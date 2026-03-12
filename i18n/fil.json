@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Matatapos ang iyong subscription sa {{date}}. Pagkatapos noon, ititigil ang transcription, summary, at AI features.",
-      "GraceExpired": "Hindi na available ang mga AI feature. Mag-subscribe para ma-restore ang transcription, summary, at iba pa.",
-      "GracePeriod": "Matatapos ang subscription sa {{date}} ({{days}} araw na lang)",
-      "PastDue": "Nabigo ang bayad — i-update ang iyong card para mapanatili ang mga AI feature",
+      "PastDue": "Nabigo ang bayad — na-disable ang mga AI feature. I-update ang iyong bayad para maibalik.",
       "Reactivate": "I-reactivate",
-      "Resubscribe": "Mag-subscribe muli",
       "UpdateCard": "I-update ang card"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Kailangan mo ng 2 API key: Google AI Studio + Anthropic. Gagabayan ka ng setup wizard pagkatapos mag-checkout. Karaniwang nagbibigay ang Google AI Studio ng libreng key. Kung naka-subscribe ka na sa Claude Pro o Max, hindi mo na kailangan ng dagdag na Anthropic API key.",
+        "InfoNote": "Kailangan mo ng 2 setup: Google AI Studio (libre) at GitHub (libre) o Anthropic (bayad). Gagabayan ka ng setup wizard pagkatapos mag-checkout:",
         "ConfirmTitle": "Bago ka mag-subscribe",
         "ConfirmContinue": "Magpatuloy sa checkout",
         "ConfirmSignIn": "Mag-sign in muna, pagkatapos mag-checkout",
-        "ConfirmCancel": "Kanselahin"
+        "ConfirmCancel": "Kanselahin",
+        "ConfirmCopyCheckout": "Kopyahin ang code at mag-checkout",
+        "InfoNote.Claude": "Kung naka-subscribe ka sa Claude Pro o Max, hindi mo na kailangan ng karagdagang Anthropic API key.",
+        "InfoNote.Copilot": "May libreng plan din ang GitHub Copilot.",
+        "InfoNote.Gemini": "Karaniwang nagbibigay ang Google AI Studio ng libreng key."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "Magsimula ng pagre-record",
       "TryScreenshot": "Kumuha ng screenshot",
       "Later": "Susubukan ko mamaya"
+    },
+    "Setup": {
+      "Done": "Tapos na akong mag-setup",
+      "Later": "Gagawin ko ito mamaya"
     }
   },
   "Billing.BYOK.KeySaved": "Naka-save ang key (nakatago)",
@@ -758,7 +763,9 @@
     "Send": "Ipadala",
     "Starting": "Nagsisimula na...",
     "UnknownApp": "Hindi kilalang app",
-    "Back": "Bumalik"
+    "Back": "Bumalik",
+    "Copied": "Nakopya na!",
+    "Copy": "Kopyahin"
   },
   "DeletePrompt": {
     "Cancel": "Kanselahin",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "Piliin ang isang source sa itaas",
     "SelectWindow": "Piliin ang window",
     "SourceResolution": "Resolisyon ng Pinagmulan",
-    "Title": "Mga setting para sa pagre-record ng video",
+    "Title": "Mga Setting ng Pagre-record",
     "VideoFlashbackArmedNotice": "Naka-arm ang screen flashback ({{seconds}}s)",
     "VideoQuality": "Kalidad ng Bideo",
     "ZeroSize": "~0 MB/min, ~0 GB/oras"

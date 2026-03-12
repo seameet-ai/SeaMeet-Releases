@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "您的订阅将于 {{date}} 到期。届时转录、摘要和 AI 功能将停止运作。",
-      "GraceExpired": "AI 功能已不可用。请订阅以恢复转录、摘要等功能。",
-      "GracePeriod": "订阅将于 {{date}} 结束（剩余 {{days}} 天）",
-      "PastDue": "付款失败 — 请更新银行卡以继续使用 AI 功能",
+      "PastDue": "付款失败 — AI 功能已被禁用。请更新付款方式以恢复。",
       "Reactivate": "重新激活",
-      "Resubscribe": "重新订阅",
       "UpdateCard": "更新银行卡"
     },
     "BYOK": {
@@ -501,11 +498,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "您需要 2 个 API 密钥：Google AI Studio 和 GitHub Copilot 或 Claude Code。设置向导会在结账后引导您。Google AI Studio 通常提供免费密钥。GitHub Copilot 也提供免费计划。因此，您可以使用自己的密钥进行有限免费使用。如果您已订阅 Claude Pro 或 Max，则无需额外的 Anthropic API 密钥。",
+        "InfoNote": "您需要完成2项设置：Google AI Studio（免费）和 GitHub（免费）或 Anthropic（付费）。结账后设置向导将引导您完成：",
         "ConfirmTitle": "订阅前确认",
         "ConfirmContinue": "继续结账",
         "ConfirmSignIn": "先登录，再结账",
-        "ConfirmCancel": "取消"
+        "ConfirmCancel": "取消",
+        "ConfirmCopyCheckout": "复制优惠码并结账",
+        "InfoNote.Claude": "如果您已订阅 Claude Pro 或 Max 方案，则不需要额外的 Anthropic API 密钥。",
+        "InfoNote.Copilot": "GitHub Copilot 也有免费方案。",
+        "InfoNote.Gemini": "Google AI Studio 通常会提供免费密钥。"
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -680,6 +681,10 @@
       "TryRecording": "开始录制",
       "TryScreenshot": "截取屏幕截图",
       "Later": "稍后再试"
+    },
+    "Setup": {
+      "Done": "我已完成设置",
+      "Later": "稍后再说"
     }
   },
   "Billing.BYOK.KeySaved": "密钥已保存（已隐藏）",
@@ -757,7 +762,9 @@
     "Send": "发送",
     "Starting": "正在启动……",
     "UnknownApp": "未知应用",
-    "Back": "返回"
+    "Back": "返回",
+    "Copied": "已复制！",
+    "Copy": "复制"
   },
   "DeletePrompt": {
     "Cancel": "取消",
@@ -1593,7 +1600,7 @@
     "SelectSourceAbove": "在上方选择一个来源",
     "SelectWindow": "选择窗口",
     "SourceResolution": "来源分辨率",
-    "Title": "视频录制设置",
+    "Title": "录制设置",
     "VideoFlashbackArmedNotice": "屏幕回放已就绪（{{seconds}}秒）",
     "VideoQuality": "视频质量",
     "ZeroSize": "~0 MB/分钟，~0 GB/小时"

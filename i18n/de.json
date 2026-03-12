@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Ihr Abonnement endet am {{date}}. Danach werden Transkription, Zusammenfassungen und KI-Funktionen eingestellt.",
-      "GraceExpired": "KI-Funktionen sind nicht mehr verfügbar. Abonnieren Sie, um Transkription, Zusammenfassungen und mehr wiederherzustellen.",
-      "GracePeriod": "Abo endet am {{date}} (noch {{days}} Tage)",
-      "PastDue": "Zahlung fehlgeschlagen — aktualisieren Sie Ihre Karte, um KI-Funktionen zu behalten",
+      "PastDue": "Zahlung fehlgeschlagen — KI-Funktionen wurden deaktiviert. Aktualisieren Sie Ihre Zahlungsmethode, um sie wiederherzustellen.",
       "Reactivate": "Reaktivieren",
-      "Resubscribe": "Erneut abonnieren",
       "UpdateCard": "Karte aktualisieren"
     },
     "BYOK": {
@@ -501,11 +498,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Sie benötigen 2 API-Schlüssel: Google AI Studio und GitHub Copilot oder Claude Code. Ein Einrichtungsassistent führt Sie nach dem Checkout. Google AI Studio gibt Ihnen normalerweise einen kostenlosen Schlüssel. GitHub Copilot bietet ebenfalls einen kostenlosen Plan. So können Sie Ihre eigenen Schlüssel begrenzt kostenlos nutzen. Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
+        "InfoNote": "Sie benötigen 2 Einrichtungen: Google AI Studio (kostenlos) und GitHub (kostenlos) oder Anthropic (kostenpflichtig). Ein Einrichtungsassistent führt Sie nach dem Kauf:",
         "ConfirmTitle": "Bevor Sie abonnieren",
         "ConfirmContinue": "Weiter zum Checkout",
         "ConfirmSignIn": "Zuerst anmelden, dann zum Checkout",
-        "ConfirmCancel": "Abbrechen"
+        "ConfirmCancel": "Abbrechen",
+        "ConfirmCopyCheckout": "Code kopieren & bezahlen",
+        "InfoNote.Claude": "Wenn Sie ein Claude Pro- oder Max-Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
+        "InfoNote.Copilot": "GitHub Copilot hat ebenfalls einen kostenlosen Plan.",
+        "InfoNote.Gemini": "Google AI Studio stellt Ihnen in der Regel einen kostenlosen Schlüssel zur Verfügung."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -680,6 +681,10 @@
       "TryRecording": "Aufnahme starten",
       "TryScreenshot": "Screenshot aufnehmen",
       "Later": "Ich probiere es später"
+    },
+    "Setup": {
+      "Done": "Einrichtung abgeschlossen",
+      "Later": "Ich mache das später"
     }
   },
   "Billing.BYOK.KeySaved": "Schlüssel gespeichert (verborgen)",
@@ -757,7 +762,9 @@
     "Send": "Schicken",
     "Starting": "Starten...",
     "UnknownApp": "Unbekannte App",
-    "Back": "Zurück"
+    "Back": "Zurück",
+    "Copied": "Kopiert!",
+    "Copy": "Kopieren"
   },
   "DeletePrompt": {
     "Cancel": "Abbrechen",
@@ -1593,7 +1600,7 @@
     "SelectSourceAbove": "Wählen Sie oben eine Quelle aus",
     "SelectWindow": "Fenster auswählen",
     "SourceResolution": "Quellauflösung",
-    "Title": "Videoaufnahme-Einstellungen",
+    "Title": "Aufnahmeeinstellungen",
     "VideoFlashbackArmedNotice": "Bildschirm-Flashback scharf ({{seconds}}s)",
     "VideoQuality": "Videoqualität",
     "ZeroSize": "~0 MB/min, ~0 GB/Stunde"

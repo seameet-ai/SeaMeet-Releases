@@ -415,11 +415,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Abonamentul dvs. expiră pe {{date}}. După aceea, transcrierea, rezumatele și funcțiile AI vor înceta să funcționeze.",
-      "GraceExpired": "Funcțiile AI nu mai sunt disponibile. Abonați-vă pentru a restabili transcrierea, rezumatele și altele.",
-      "GracePeriod": "Abonamentul se termina pe {{date}} ({{days}} zile ramase)",
-      "PastDue": "Plata a esuat — actualizeaza cardul pentru a pastra functiile AI",
+      "PastDue": "Plata a eșuat — funcțiile AI au fost dezactivate. Actualizează metoda de plată pentru a le restaura.",
       "Reactivate": "Reactivează",
-      "Resubscribe": "Reaboneaza-te",
       "UpdateCard": "Actualizeaza cardul"
     },
     "BYOK": {
@@ -529,11 +526,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Vei avea nevoie de 2 chei API: Google AI Studio + Anthropic. Un asistent de configurare te va ghida dupa plata. Google AI Studio ofera de obicei o cheie gratuita. Daca ai abonat planul Claude Pro sau Max, nu ai nevoie de o cheie suplimentara Anthropic API.",
+        "InfoNote": "Vei avea nevoie de 2 configurări: Google AI Studio (gratuit) și GitHub (gratuit) sau Anthropic (cu plată). Un asistent te va ghida după plată:",
         "ConfirmTitle": "Inainte de abonare",
         "ConfirmContinue": "Continua catre plata",
         "ConfirmSignIn": "Autentifica-te mai intai, apoi plateste",
-        "ConfirmCancel": "Anuleaza"
+        "ConfirmCancel": "Anuleaza",
+        "ConfirmCopyCheckout": "Copiază codul și plătește",
+        "InfoNote.Claude": "Dacă ai abonament Claude Pro sau Max, nu ai nevoie de o cheie API Anthropic suplimentară.",
+        "InfoNote.Copilot": "GitHub Copilot are și un plan gratuit.",
+        "InfoNote.Gemini": "Google AI Studio îți oferă de obicei o cheie gratuită."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -708,6 +709,10 @@
       "TryRecording": "Începeți o înregistrare",
       "TryScreenshot": "Faceți o captură de ecran",
       "Later": "Voi încerca mai târziu"
+    },
+    "Setup": {
+      "Done": "Am terminat configurarea",
+      "Later": "Voi face asta mai târziu"
     }
   },
   "Billing.BYOK.KeySaved": "Cheie salvata (ascunsa)",
@@ -785,7 +790,9 @@
     "Send": "Trimite",
     "Starting": "Se inițiază...",
     "UnknownApp": "Aplicație necunoscută",
-    "Back": "Înapoi"
+    "Back": "Înapoi",
+    "Copied": "Copiat!",
+    "Copy": "Copiază"
   },
   "DeletePrompt": {
     "Cancel": "Anulare",
@@ -1624,7 +1631,7 @@
     "SelectSourceAbove": "Selectează o sursă de mai sus",
     "SelectWindow": "Selectează fereastra",
     "SourceResolution": "Rezoluție sursă",
-    "Title": "Setări pentru înregistrarea video",
+    "Title": "Setări de înregistrare",
     "VideoFlashbackArmedNotice": "Retrogradă de ecran activată ({{seconds}}s)",
     "VideoQuality": "Calitate video",
     "ZeroSize": "~0 MB/min, ~0 GB/oră"

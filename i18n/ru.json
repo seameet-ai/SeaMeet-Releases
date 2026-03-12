@@ -419,11 +419,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Ваша подписка истекает {{date}}. После этого транскрипция, сводки и функции ИИ перестанут работать.",
-      "GraceExpired": "Функции ИИ больше недоступны. Оформите подписку, чтобы восстановить транскрипцию, сводки и другие возможности.",
-      "GracePeriod": "Подписка заканчивается {{date}} (осталось {{days}} дн.)",
-      "PastDue": "Оплата не прошла — обновите карту, чтобы сохранить функции AI",
+      "PastDue": "Ошибка оплаты — функции ИИ отключены. Обновите способ оплаты для их восстановления.",
       "Reactivate": "Возобновить",
-      "Resubscribe": "Оформить подписку заново",
       "UpdateCard": "Обновить карту"
     },
     "BYOK": {
@@ -534,11 +531,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Вам понадобятся 2 API-ключа: Google AI Studio + Anthropic. Мастер настройки проведёт вас после оплаты. Google AI Studio обычно предоставляет бесплатный ключ. Если у вас оформлен Claude Pro или Max, дополнительный ключ Anthropic API не нужен.",
+        "InfoNote": "Вам потребуется 2 настройки: Google AI Studio (бесплатно) и GitHub (бесплатно) или Anthropic (платно). Мастер настройки поможет вам после оплаты:",
         "ConfirmTitle": "Перед оформлением подписки",
         "ConfirmContinue": "Перейти к оплате",
         "ConfirmSignIn": "Сначала войдите, затем оплатите",
-        "ConfirmCancel": "Отмена"
+        "ConfirmCancel": "Отмена",
+        "ConfirmCopyCheckout": "Скопировать код и оплатить",
+        "InfoNote.Claude": "Если у вас подписка Claude Pro или Max, дополнительный ключ API Anthropic не нужен.",
+        "InfoNote.Copilot": "У GitHub Copilot тоже есть бесплатный план.",
+        "InfoNote.Gemini": "Google AI Studio обычно предоставляет бесплатный ключ."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -713,6 +714,10 @@
       "TryRecording": "Начать запись",
       "TryScreenshot": "Сделать снимок экрана",
       "Later": "Попробую позже"
+    },
+    "Setup": {
+      "Done": "Настройка завершена",
+      "Later": "Сделаю это позже"
     }
   },
   "Billing.BYOK.KeySaved": "Ключ сохранён (скрыт)",
@@ -790,7 +795,9 @@
     "Send": "Отправлять",
     "Starting": "Запуск…",
     "UnknownApp": "Неизвестное приложение",
-    "Back": "Назад"
+    "Back": "Назад",
+    "Copied": "Скопировано!",
+    "Copy": "Копировать"
   },
   "DeletePrompt": {
     "Cancel": "Отмена",
@@ -1632,7 +1639,7 @@
     "SelectSourceAbove": "Выберите источник выше",
     "SelectWindow": "Выберите окно",
     "SourceResolution": "Разрешение источника",
-    "Title": "Настройки видеозаписи",
+    "Title": "Настройки записи",
     "VideoFlashbackArmedNotice": "Включен флэшбэк экрана ({{seconds}}с)",
     "VideoQuality": "Качество видео",
     "ZeroSize": "~0 МБ/мин, ~0 ГБ/час"

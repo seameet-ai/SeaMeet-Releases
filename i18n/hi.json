@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "आपकी सदस्यता {{date}} को समाप्त होगी। उसके बाद ट्रांसक्रिप्शन, सारांश और AI सुविधाएं काम करना बंद कर देंगी।",
-      "GraceExpired": "AI सुविधाएं अब उपलब्ध नहीं हैं। ट्रांसक्रिप्शन, सारांश और अधिक को पुनर्स्थापित करने के लिए सदस्यता लें।",
-      "GracePeriod": "सदस्यता {{date}} को समाप्त हो रही है ({{days}} दिन शेष)",
-      "PastDue": "भुगतान विफल — AI सुविधाएँ बनाए रखने के लिए अपना कार्ड अपडेट करें",
+      "PastDue": "भुगतान विफल — AI सुविधाएँ अक्षम कर दी गई हैं। उन्हें पुनर्स्थापित करने के लिए अपना भुगतान अपडेट करें।",
       "Reactivate": "पुनः सक्रिय करें",
-      "Resubscribe": "पुनः सदस्यता लें",
       "UpdateCard": "कार्ड अपडेट करें"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "आपको 2 API कुंजियों की आवश्यकता होगी: Google AI Studio + Anthropic। चेकआउट के बाद एक सेटअप विज़ार्ड आपका मार्गदर्शन करेगा। Google AI Studio आमतौर पर आपको मुफ्त कुंजी देता है। यदि आपने Claude Pro या Max प्लान की सदस्यता ली है, तो आपको अतिरिक्त Anthropic API कुंजी की आवश्यकता नहीं है।",
+        "InfoNote": "आपको 2 सेटअप की आवश्यकता होगी: Google AI Studio (मुफ़्त), और GitHub (मुफ़्त) या Anthropic (सशुल्क)। चेकआउट के बाद एक सेटअप विज़ार्ड आपका मार्गदर्शन करेगा:",
         "ConfirmTitle": "सदस्यता लेने से पहले",
         "ConfirmContinue": "चेकआउट पर जारी रखें",
         "ConfirmSignIn": "पहले साइन इन करें, फिर चेकआउट करें",
-        "ConfirmCancel": "रद्द करें"
+        "ConfirmCancel": "रद्द करें",
+        "ConfirmCopyCheckout": "कोड कॉपी करें और चेकआउट करें",
+        "InfoNote.Claude": "यदि आपने Claude Pro या Max प्लान की सदस्यता ली है, तो आपको अतिरिक्त Anthropic API कुंजी की आवश्यकता नहीं है।",
+        "InfoNote.Copilot": "GitHub Copilot की भी एक मुफ़्त योजना है।",
+        "InfoNote.Gemini": "Google AI Studio आमतौर पर आपको एक मुफ़्त कुंजी देता है।"
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "रिकॉर्डिंग शुरू करें",
       "TryScreenshot": "स्क्रीनशॉट लें",
       "Later": "बाद में प्रयास करूँगा"
+    },
+    "Setup": {
+      "Done": "मेरा सेटअप पूरा हो गया",
+      "Later": "मैं यह बाद में करूँगा"
     }
   },
   "Billing.BYOK.KeySaved": "कुंजी सहेजी गई (छिपी हुई)",
@@ -758,7 +763,9 @@
     "Send": "भेजना",
     "Starting": "शुरू हो रहा है…",
     "UnknownApp": "अज्ञात ऐप",
-    "Back": "वापस"
+    "Back": "वापस",
+    "Copied": "कॉपी हो गया!",
+    "Copy": "कॉपी करें"
   },
   "DeletePrompt": {
     "Cancel": "रद्द करें",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "ऊपर एक स्रोत चुनें",
     "SelectWindow": "विंडो चुनें",
     "SourceResolution": "स्रोत रिज़ोल्यूशन",
-    "Title": "वीडियो रिकॉर्डिंग सेटिंग्स",
+    "Title": "रिकॉर्डिंग सेटिंग्स",
     "VideoFlashbackArmedNotice": "स्क्रीन फ्लैशबैक Armed ({{seconds}}s)",
     "VideoQuality": "वीडियो गुणवत्ता",
     "ZeroSize": "~0 MB/मिनट, ~0 GB/घंटा"

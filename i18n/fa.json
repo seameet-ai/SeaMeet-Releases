@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "اشتراک شما در {{date}} پایان می‌یابد. پس از آن، رونویسی، خلاصه‌ها و قابلیت‌های هوش مصنوعی متوقف خواهند شد.",
-      "GraceExpired": "قابلیت‌های هوش مصنوعی دیگر در دسترس نیست. برای بازیابی رونویسی، خلاصه‌ها و موارد بیشتر اشتراک تهیه کنید.",
-      "GracePeriod": "اشتراک در {{date}} پایان می‌یابد ({{days}} روز باقی‌مانده)",
-      "PastDue": "پرداخت ناموفق بود — کارت خود را به‌روزرسانی کنید تا ویژگی‌های AI حفظ شوند",
+      "PastDue": "پرداخت ناموفق — قابلیت‌های هوش مصنوعی غیرفعال شده‌اند. پرداخت خود را به‌روز کنید.",
       "Reactivate": "فعال‌سازی مجدد",
-      "Resubscribe": "اشتراک مجدد",
       "UpdateCard": "به‌روزرسانی کارت"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "به ۲ کلید API نیاز دارید: Google AI Studio + Anthropic. یک راهنمای راه‌اندازی شما را پس از پرداخت راهنمایی می‌کند. Google AI Studio معمولاً یک کلید رایگان به شما می‌دهد. اگر طرح Claude Pro یا Max دارید، نیازی به کلید Anthropic API اضافی ندارید.",
+        "InfoNote": "به ۲ تنظیم نیاز دارید: Google AI Studio (رایگان) و GitHub (رایگان) یا Anthropic (پولی). یک راهنمای تنظیم پس از پرداخت شما را راهنمایی می‌کند:",
         "ConfirmTitle": "قبل از اشتراک",
         "ConfirmContinue": "ادامه به پرداخت",
         "ConfirmSignIn": "ابتدا وارد شوید، سپس پرداخت کنید",
-        "ConfirmCancel": "انصراف"
+        "ConfirmCancel": "انصراف",
+        "ConfirmCopyCheckout": "کپی کد و پرداخت",
+        "InfoNote.Claude": "اگر اشتراک Claude Pro یا Max دارید، به کلید API اضافی Anthropic نیاز ندارید.",
+        "InfoNote.Copilot": "GitHub Copilot نیز یک طرح رایگان دارد.",
+        "InfoNote.Gemini": "Google AI Studio معمولاً یک کلید رایگان به شما می‌دهد."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "شروع ضبط",
       "TryScreenshot": "گرفتن اسکرین‌شات",
       "Later": "بعداً امتحان می‌کنم"
+    },
+    "Setup": {
+      "Done": "تنظیمات را تمام کردم",
+      "Later": "بعداً انجام می‌دهم"
     }
   },
   "Billing.BYOK.KeySaved": "کلید ذخیره شد (مخفی)",
@@ -758,7 +763,9 @@
     "Send": "ارسال کنید",
     "Starting": "شروع...",
     "UnknownApp": "برنامه ناشناخته",
-    "Back": "بازگشت"
+    "Back": "بازگشت",
+    "Copied": "کپی شد!",
+    "Copy": "کپی"
   },
   "DeletePrompt": {
     "Cancel": "انصراف",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "لطفاً منبع بالا را انتخاب کنید",
     "SelectWindow": "برای انتخاب پنجره",
     "SourceResolution": "رزولوشن منبع",
-    "Title": "تنظیمات ضبط ویدئو",
+    "Title": "تنظیمات ضبط",
     "VideoFlashbackArmedNotice": "بازگشت به خاطرات صفحه نمایش مسلح شده است ({{seconds}} ثانیه)",
     "VideoQuality": "کیفیت ویدئو",
     "ZeroSize": "~0 مگابایت/دقیقه، ~0 گیگابایت/ساعت (تقریباً)"

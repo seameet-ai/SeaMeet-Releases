@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "การสมัครสมาชิกของคุณจะสิ้นสุดในวันที่ {{date}} หลังจากนั้น การถอดเสียง สรุป และฟีเจอร์ AI จะหยุดทำงาน",
-      "GraceExpired": "ฟีเจอร์ AI ไม่สามารถใช้งานได้อีกต่อไป สมัครสมาชิกเพื่อกู้คืนการถอดเสียง สรุป และอื่นๆ",
-      "GracePeriod": "การสมัครสมาชิกจะสิ้นสุด {{date}} (เหลืออีก {{days}} วัน)",
-      "PastDue": "การชำระเงินล้มเหลว — อัปเดตบัตรของคุณเพื่อใช้ฟีเจอร์ AI ต่อ",
+      "PastDue": "การชำระเงินล้มเหลว — ฟีเจอร์ AI ถูกปิดใช้งาน อัปเดตการชำระเงินเพื่อกู้คืน",
       "Reactivate": "เปิดใช้งานอีกครั้ง",
-      "Resubscribe": "สมัครสมาชิกใหม่",
       "UpdateCard": "อัปเดตบัตร"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "คุณต้องมี API key 2 ตัว: Google AI Studio + Anthropic ตัวช่วยตั้งค่าจะแนะนำคุณหลังชำระเงิน Google AI Studio มักจะให้ key ฟรี หากคุณสมัคร Claude Pro หรือ Max แล้ว ไม่ต้องใช้ Anthropic API key เพิ่มเติม",
+        "InfoNote": "คุณต้องตั้งค่า 2 อย่าง: Google AI Studio (ฟรี) และ GitHub (ฟรี) หรือ Anthropic (มีค่าใช้จ่าย) วิซาร์ดการตั้งค่าจะแนะนำคุณหลังชำระเงิน:",
         "ConfirmTitle": "ก่อนสมัครสมาชิก",
         "ConfirmContinue": "ดำเนินการชำระเงิน",
         "ConfirmSignIn": "ลงชื่อเข้าใช้ก่อน แล้วชำระเงิน",
-        "ConfirmCancel": "ยกเลิก"
+        "ConfirmCancel": "ยกเลิก",
+        "ConfirmCopyCheckout": "คัดลอกรหัสและชำระเงิน",
+        "InfoNote.Claude": "หากคุณสมัครแผน Claude Pro หรือ Max ไม่จำเป็นต้องใช้คีย์ API Anthropic เพิ่มเติม",
+        "InfoNote.Copilot": "GitHub Copilot ก็มีแผนฟรีเช่นกัน",
+        "InfoNote.Gemini": "Google AI Studio มักจะให้คีย์ฟรี"
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "เริ่มบันทึก",
       "TryScreenshot": "ถ่ายภาพหน้าจอ",
       "Later": "ไว้ลองทีหลัง"
+    },
+    "Setup": {
+      "Done": "ตั้งค่าเสร็จแล้ว",
+      "Later": "ไว้ทำทีหลัง"
     }
   },
   "Billing.BYOK.KeySaved": "บันทึก key แล้ว (ซ่อนอยู่)",
@@ -758,7 +763,9 @@
     "Send": "ส่ง",
     "Starting": "กำลังเริ่ม…",
     "UnknownApp": "แอปพลิเคชันไม่ทราบ",
-    "Back": "ย้อนกลับ"
+    "Back": "ย้อนกลับ",
+    "Copied": "คัดลอกแล้ว!",
+    "Copy": "คัดลอก"
   },
   "DeletePrompt": {
     "Cancel": "ยกเลิก",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "เลือกแหล่งที่มาด้านบนสุด",
     "SelectWindow": "เลือกหน้าต่าง",
     "SourceResolution": "ความละเอียดแหล่งที่มา",
-    "Title": "การตั้งค่าวิดีโอการบันทึกเสียง",
+    "Title": "การตั้งค่าการบันทึก",
     "VideoFlashbackArmedNotice": "พร้อมใช้งานภาพย้อนความทรงจำ ({{seconds}} วินาที)",
     "VideoQuality": "คุณภาพของวิดีโอ",
     "ZeroSize": "~0 MB/นาที, ~0 GB/ชั่วโมง"

@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Đăng ký của bạn kết thúc vào {{date}}. Sau đó, phiên âm, tóm tắt và các tính năng AI sẽ ngừng hoạt động.",
-      "GraceExpired": "Các tính năng AI không còn khả dụng. Đăng ký để khôi phục phiên âm, tóm tắt và nhiều tính năng khác.",
-      "GracePeriod": "Gói đăng ký kết thúc {{date}} (còn {{days}} ngày)",
-      "PastDue": "Thanh toán thất bại — cập nhật thẻ để giữ tính năng AI",
+      "PastDue": "Thanh toán thất bại — các tính năng AI đã bị vô hiệu hóa. Cập nhật thanh toán để khôi phục.",
       "Reactivate": "Kích hoạt lại",
-      "Resubscribe": "Đăng ký lại",
       "UpdateCard": "Cập nhật thẻ"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Bạn cần 2 API key: Google AI Studio + Anthropic. Trình hướng dẫn cài đặt sẽ hỗ trợ bạn sau khi thanh toán. Google AI Studio thường cung cấp key miễn phí. Nếu bạn đã đăng ký Claude Pro hoặc Max, bạn không cần thêm Anthropic API key.",
+        "InfoNote": "Bạn cần 2 thiết lập: Google AI Studio (miễn phí) và GitHub (miễn phí) hoặc Anthropic (trả phí). Trình hướng dẫn sẽ giúp bạn sau khi thanh toán:",
         "ConfirmTitle": "Trước khi bạn đăng ký",
         "ConfirmContinue": "Tiếp tục thanh toán",
         "ConfirmSignIn": "Đăng nhập trước, rồi thanh toán",
-        "ConfirmCancel": "Hủy"
+        "ConfirmCancel": "Hủy",
+        "ConfirmCopyCheckout": "Sao chép mã và thanh toán",
+        "InfoNote.Claude": "Nếu bạn đã đăng ký gói Claude Pro hoặc Max, bạn không cần thêm khóa API Anthropic.",
+        "InfoNote.Copilot": "GitHub Copilot cũng có gói miễn phí.",
+        "InfoNote.Gemini": "Google AI Studio thường cung cấp khóa miễn phí."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "Bắt đầu ghi âm",
       "TryScreenshot": "Chụp ảnh màn hình",
       "Later": "Tôi sẽ thử sau"
+    },
+    "Setup": {
+      "Done": "Tôi đã hoàn tất thiết lập",
+      "Later": "Tôi sẽ làm sau"
     }
   },
   "Billing.BYOK.KeySaved": "Đã lưu key (đã ẩn)",
@@ -758,7 +763,9 @@
     "Send": "Gửi",
     "Starting": "Đang khởi động…",
     "UnknownApp": "Ứng dụng không xác định",
-    "Back": "Quay lại"
+    "Back": "Quay lại",
+    "Copied": "Đã sao chép!",
+    "Copy": "Sao chép"
   },
   "DeletePrompt": {
     "Cancel": "Huy",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "Chọn nguồn phía trên",
     "SelectWindow": "Chọn cửa sổ",
     "SourceResolution": "Độ phân giải nguồn",
-    "Title": "Cài đặt Ghi Video",
+    "Title": "Cài đặt ghi hình",
     "VideoFlashbackArmedNotice": "Bảo vệ màn hình flashback ({{seconds}}s)",
     "VideoQuality": "Chất lượng Video",
     "ZeroSize": "~0 MB/phút, ~0 GB/giờ"

@@ -427,11 +427,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "ينتهي اشتراكك في {{date}}. بعد ذلك، ستتوقف ميزات النسخ والملخصات والذكاء الاصطناعي.",
-      "GraceExpired": "ميزات الذكاء الاصطناعي لم تعد متاحة. اشترك لاستعادة النسخ والملخصات والمزيد.",
-      "GracePeriod": "ينتهي الاشتراك في {{date}} ({{days}} أيام متبقية)",
-      "PastDue": "فشل الدفع — حدّث بطاقتك للحفاظ على ميزات AI",
+      "PastDue": "فشل الدفع — تم تعطيل ميزات الذكاء الاصطناعي. قم بتحديث طريقة الدفع لاستعادتها.",
       "Reactivate": "إعادة التفعيل",
-      "Resubscribe": "إعادة الاشتراك",
       "UpdateCard": "تحديث البطاقة"
     },
     "BYOK": {
@@ -543,11 +540,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "ستحتاج إلى مفتاحي API: Google AI Studio و GitHub Copilot أو Claude Code. سيرشدك معالج إعداد بعد الدفع. عادةً ما يمنحك Google AI Studio مفتاحاً مجانياً. GitHub Copilot يقدم خطة مجانية أيضاً. لذا أنت جاهز لاستخدام مفاتيحك الخاصة مجاناً بشكل محدود. إذا كان لديك اشتراك Claude Pro أو Max، فلا تحتاج إلى مفتاح Anthropic API إضافي.",
+        "InfoNote": "ستحتاج إلى إعدادين: Google AI Studio (مجاني)، وGitHub (مجاني) أو Anthropic (مدفوع). سيرشدك معالج الإعداد بعد الدفع:",
         "ConfirmTitle": "قبل الاشتراك",
         "ConfirmContinue": "المتابعة إلى الدفع",
         "ConfirmSignIn": "سجّل الدخول أولاً، ثم ادفع",
-        "ConfirmCancel": "إلغاء"
+        "ConfirmCancel": "إلغاء",
+        "ConfirmCopyCheckout": "نسخ الرمز والدفع",
+        "InfoNote.Claude": "إذا كنت مشتركاً في خطة Claude Pro أو Max، فلا تحتاج إلى مفتاح Anthropic API إضافي.",
+        "InfoNote.Copilot": "GitHub Copilot لديه خطة مجانية أيضاً.",
+        "InfoNote.Gemini": "عادةً ما يمنحك Google AI Studio مفتاحاً مجانياً."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -722,6 +723,10 @@
       "TryRecording": "بدء التسجيل",
       "TryScreenshot": "التقاط لقطة شاشة",
       "Later": "سأجرب لاحقاً"
+    },
+    "Setup": {
+      "Done": "لقد أنهيت الإعداد",
+      "Later": "سأفعل ذلك لاحقاً"
     }
   },
   "Billing.BYOK.KeySaved": "تم حفظ المفتاح (مخفي)",
@@ -799,7 +804,9 @@
     "Send": "يرسل",
     "Starting": "جار البدء...",
     "UnknownApp": "تطبيق غير معروف",
-    "Back": "رجوع"
+    "Back": "رجوع",
+    "Copied": "تم النسخ!",
+    "Copy": "نسخ"
   },
   "DeletePrompt": {
     "Cancel": "إلغاء",
@@ -1647,7 +1654,7 @@
     "SelectSourceAbove": "اختر المصدر من أعلى",
     "SelectWindow": "اختر النافذة",
     "SourceResolution": "دقة المصدر",
-    "Title": "إعدادات تسجيل الفيديو",
+    "Title": "إعدادات التسجيل",
     "VideoFlashbackArmedNotice": "شاشة العودة إلى الماضي مفعلة ({{seconds}}ث)",
     "VideoQuality": "جودة الفيديو",
     "ZeroSize": "~0 ميجابايت/دقيقة، ~0 جيجابايت/ساعة"

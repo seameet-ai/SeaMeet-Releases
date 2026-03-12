@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Dit abonnement udløber {{date}}. Derefter vil transskription, resuméer og AI-funktioner stoppe.",
-      "GraceExpired": "AI-funktioner er ikke længere tilgængelige. Abonner for at gendanne transskription, resuméer og mere.",
-      "GracePeriod": "Abonnement udlober {{date}} ({{days}} dage tilbage)",
-      "PastDue": "Betaling mislykkedes — opdater dit kort for at beholde AI-funktioner",
+      "PastDue": "Betaling mislykkedes — AI-funktioner er deaktiveret. Opdater din betaling for at gendanne dem.",
       "Reactivate": "Genaktiver",
-      "Resubscribe": "Abonner igen",
       "UpdateCard": "Opdater kort"
     },
     "BYOK": {
@@ -501,11 +498,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Du skal bruge 2 API-nøgler: Google AI Studio og GitHub Copilot eller Claude Code. En opsætningsguide hjælper dig efter checkout. Google AI Studio giver dig normalt en gratis nøgle. GitHub Copilot tilbyder også en gratis plan. Så du er klar til at bruge dine egne nøgler med begrænset gratis adgang. Hvis du har abonneret på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle.",
+        "InfoNote": "Du skal bruge 2 opsætninger: Google AI Studio (gratis) og GitHub (gratis) eller Anthropic (betalt). En opsætningsguide hjælper dig efter betaling:",
         "ConfirmTitle": "For du abonnerer",
         "ConfirmContinue": "Fortsaet til betaling",
         "ConfirmSignIn": "Log ind forst, betal derefter",
-        "ConfirmCancel": "Annuller"
+        "ConfirmCancel": "Annuller",
+        "ConfirmCopyCheckout": "Kopiér kode og betal",
+        "InfoNote.Claude": "Hvis du har et Claude Pro- eller Max-abonnement, behøver du ikke en ekstra Anthropic API-nøgle.",
+        "InfoNote.Copilot": "GitHub Copilot har også en gratis plan.",
+        "InfoNote.Gemini": "Google AI Studio giver dig normalt en gratis nøgle."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -680,6 +681,10 @@
       "TryRecording": "Start en optagelse",
       "TryScreenshot": "Tag et skærmbillede",
       "Later": "Jeg prøver senere"
+    },
+    "Setup": {
+      "Done": "Jeg er færdig med opsætningen",
+      "Later": "Jeg gør det senere"
     }
   },
   "Billing.BYOK.KeySaved": "Nogle gemt (skjult)",
@@ -757,7 +762,9 @@
     "Send": "Sende",
     "Starting": "Starter...",
     "UnknownApp": "Ukendt app",
-    "Back": "Tilbage"
+    "Back": "Tilbage",
+    "Copied": "Kopieret!",
+    "Copy": "Kopiér"
   },
   "DeletePrompt": {
     "Cancel": "Annuller",
@@ -1593,7 +1600,7 @@
     "SelectSourceAbove": "Vælg en kilde ovenfor",
     "SelectWindow": "Vælg vindue",
     "SourceResolution": "Kildeopløsning",
-    "Title": "Videooptagelsesindstillinger",
+    "Title": "Optagelsesindstillinger",
     "VideoFlashbackArmedNotice": "Skærm-flashback aktiveret ({{seconds}}s)",
     "VideoQuality": "Videokvalitet",
     "ZeroSize": "~0 MB/min, ~0 GB/time"

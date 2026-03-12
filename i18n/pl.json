@@ -419,11 +419,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Twoja subskrypcja kończy się {{date}}. Po tym terminie transkrypcja, podsumowania i funkcje AI przestaną działać.",
-      "GraceExpired": "Funkcje AI nie są już dostępne. Zasubskrybuj, aby przywrócić transkrypcję, podsumowania i inne.",
-      "GracePeriod": "Subskrypcja kończy się {{date}} (pozostało {{days}} dni)",
-      "PastDue": "Płatność nie powiodła się — zaktualizuj kartę, aby zachować funkcje AI",
+      "PastDue": "Płatność nie powiodła się — funkcje AI zostały wyłączone. Zaktualizuj płatność, aby je przywrócić.",
       "Reactivate": "Reaktywuj",
-      "Resubscribe": "Odnów subskrypcję",
       "UpdateCard": "Zaktualizuj kartę"
     },
     "BYOK": {
@@ -534,11 +531,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Potrzebujesz 2 kluczy API: Google AI Studio + Anthropic. Kreator konfiguracji przeprowadzi Cię po dokonaniu płatności. Google AI Studio zazwyczaj udostępnia darmowy klucz. Jeśli masz subskrypcję Claude Pro lub Max, nie potrzebujesz dodatkowego klucza Anthropic API.",
+        "InfoNote": "Potrzebujesz 2 konfiguracji: Google AI Studio (bezpłatne) i GitHub (bezpłatne) lub Anthropic (płatne). Kreator konfiguracji poprowadzi Cię po płatności:",
         "ConfirmTitle": "Przed subskrypcją",
         "ConfirmContinue": "Przejdź do płatności",
         "ConfirmSignIn": "Najpierw się zaloguj, potem zapłać",
-        "ConfirmCancel": "Anuluj"
+        "ConfirmCancel": "Anuluj",
+        "ConfirmCopyCheckout": "Skopiuj kod i zapłać",
+        "InfoNote.Claude": "Jeśli masz subskrypcję Claude Pro lub Max, nie potrzebujesz dodatkowego klucza API Anthropic.",
+        "InfoNote.Copilot": "GitHub Copilot również ma darmowy plan.",
+        "InfoNote.Gemini": "Google AI Studio zazwyczaj daje darmowy klucz."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -713,6 +714,10 @@
       "TryRecording": "Rozpocznij nagrywanie",
       "TryScreenshot": "Zrób zrzut ekranu",
       "Later": "Spróbuję później"
+    },
+    "Setup": {
+      "Done": "Zakończyłem konfigurację",
+      "Later": "Zrobię to później"
     }
   },
   "Billing.BYOK.KeySaved": "Klucz zapisany (ukryty)",
@@ -790,7 +795,9 @@
     "Send": "Wysłać",
     "Starting": "Rozpoczynam…",
     "UnknownApp": "Nieznana aplikacja",
-    "Back": "Wstecz"
+    "Back": "Wstecz",
+    "Copied": "Skopiowano!",
+    "Copy": "Kopiuj"
   },
   "DeletePrompt": {
     "Cancel": "Anuluj",
@@ -1632,7 +1639,7 @@
     "SelectSourceAbove": "Wybierz powyżej źródło",
     "SelectWindow": "Wybierz okno",
     "SourceResolution": "Rozdzielczość źródła",
-    "Title": "Ustawienia nagrywania wideo",
+    "Title": "Ustawienia nagrywania",
     "VideoFlashbackArmedNotice": "Przygotowano wspomnienie ekranu ({{seconds}}s)",
     "VideoQuality": "Jakość wideo",
     "ZeroSize": "~0 MB/min, ~0 GB/h"

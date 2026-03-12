@@ -415,11 +415,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Il tuo abbonamento scade il {{date}}. Dopo tale data, trascrizione, riepiloghi e funzionalità IA smetteranno di funzionare.",
-      "GraceExpired": "Le funzionalità IA non sono più disponibili. Abbonati per ripristinare trascrizione, riepiloghi e altro.",
-      "GracePeriod": "Abbonamento in scadenza il {{date}} ({{days}} giorni rimanenti)",
-      "PastDue": "Pagamento fallito — aggiorna la tua carta per mantenere le funzionalita IA",
+      "PastDue": "Pagamento fallito — le funzionalità AI sono state disattivate. Aggiorna il metodo di pagamento per ripristinarle.",
       "Reactivate": "Riattiva",
-      "Resubscribe": "Riabbonati",
       "UpdateCard": "Aggiorna carta"
     },
     "BYOK": {
@@ -529,11 +526,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Avrai bisogno di 2 chiavi API: Google AI Studio + Anthropic. Una procedura guidata ti aiutera dopo il pagamento. Google AI Studio di solito fornisce una chiave gratuita. Se hai un abbonamento Claude Pro o Max, non hai bisogno di una chiave API Anthropic aggiuntiva.",
+        "InfoNote": "Avrai bisogno di 2 configurazioni: Google AI Studio (gratuito) e GitHub (gratuito) o Anthropic (a pagamento). Una procedura guidata ti assisterà dopo il pagamento:",
         "ConfirmTitle": "Prima di abbonarti",
         "ConfirmContinue": "Continua al pagamento",
         "ConfirmSignIn": "Accedi prima, poi procedi al pagamento",
-        "ConfirmCancel": "Annulla"
+        "ConfirmCancel": "Annulla",
+        "ConfirmCopyCheckout": "Copia codice e paga",
+        "InfoNote.Claude": "Se hai un abbonamento Claude Pro o Max, non hai bisogno di una chiave API Anthropic aggiuntiva.",
+        "InfoNote.Copilot": "Anche GitHub Copilot ha un piano gratuito.",
+        "InfoNote.Gemini": "Google AI Studio di solito ti fornisce una chiave gratuita."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -708,6 +709,10 @@
       "TryRecording": "Avvia una registrazione",
       "TryScreenshot": "Cattura uno screenshot",
       "Later": "Proverò dopo"
+    },
+    "Setup": {
+      "Done": "Ho finito la configurazione",
+      "Later": "Lo farò più tardi"
     }
   },
   "Billing.BYOK.KeySaved": "Chiave salvata (nascosta)",
@@ -785,7 +790,9 @@
     "Send": "Inviare",
     "Starting": "Avvio in corso...",
     "UnknownApp": "Applicazione sconosciuta",
-    "Back": "Indietro"
+    "Back": "Indietro",
+    "Copied": "Copiato!",
+    "Copy": "Copia"
   },
   "DeletePrompt": {
     "Cancel": "Annulla",
@@ -1624,7 +1631,7 @@
     "SelectSourceAbove": "Seleziona una sorgente sopra",
     "SelectWindow": "Seleziona Finestra",
     "SourceResolution": "Risoluzione della sorgente",
-    "Title": "Impostazioni di registrazione video",
+    "Title": "Impostazioni di registrazione",
     "VideoFlashbackArmedNotice": "La traduzione \"flashback schermo armato ({{seconds}}s)\" è corretta. Tuttavia, si potrebbe migliorare leggermente la fluidità con \"flashback schermo armato ({{seconds}}s)\".",
     "VideoQuality": "Qualità video",
     "ZeroSize": "~0 MB/min, ~0 GB/ora"

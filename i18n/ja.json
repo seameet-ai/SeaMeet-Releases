@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "サブスクリプションは {{date}} に終了します。その後、文字起こし、要約、AI 機能は停止します。",
-      "GraceExpired": "AI 機能はご利用いただけません。文字起こし、要約などを復元するにはご購読ください。",
-      "GracePeriod": "サブスクリプション終了予定 {{date}}（残り{{days}}日）",
-      "PastDue": "お支払いに失敗しました — AI機能を継続するにはカード情報を更新してください",
+      "PastDue": "お支払いに失敗しました — AI機能が無効になりました。お支払い方法を更新して復元してください。",
       "Reactivate": "再開する",
-      "Resubscribe": "再登録",
       "UpdateCard": "カードを更新"
     },
     "BYOK": {
@@ -501,11 +498,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "2つのAPIキーが必要です：Google AI StudioとGitHub CopilotまたはClaude Code。セットアップウィザードがチェックアウト後にご案内します。Google AI Studioは通常無料のキーを提供します。GitHub Copilotも無料プランを提供しています。自分のキーで限定無料で利用を開始できます。Claude ProまたはMaxに加入している場合、追加のAnthropic APIキーは不要です。",
+        "InfoNote": "2つのセットアップが必要です：Google AI Studio（無料）と、GitHub（無料）またはAnthropic（有料）。購入後にセットアップウィザードがご案内します：",
         "ConfirmTitle": "登録前のご確認",
         "ConfirmContinue": "チェックアウトに進む",
         "ConfirmSignIn": "まずサインインしてからチェックアウト",
-        "ConfirmCancel": "キャンセル"
+        "ConfirmCancel": "キャンセル",
+        "ConfirmCopyCheckout": "コードをコピーして購入",
+        "InfoNote.Claude": "Claude ProまたはMaxプランに加入している場合、追加のAnthropic APIキーは不要です。",
+        "InfoNote.Copilot": "GitHub Copilotにも無料プランがあります。",
+        "InfoNote.Gemini": "Google AI Studioは通常、無料のキーを提供します。"
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -680,6 +681,10 @@
       "TryRecording": "録音を開始",
       "TryScreenshot": "スクリーンショットを撮る",
       "Later": "後で試します"
+    },
+    "Setup": {
+      "Done": "セットアップ完了",
+      "Later": "後で設定する"
     }
   },
   "Billing.BYOK.KeySaved": "キー保存済み（非表示）",
@@ -757,7 +762,9 @@
     "Send": "送信",
     "Starting": "起動中...",
     "UnknownApp": "不明なアプリケーション",
-    "Back": "戻る"
+    "Back": "戻る",
+    "Copied": "コピーしました！",
+    "Copy": "コピー"
   },
   "DeletePrompt": {
     "Cancel": "キャンセル",
@@ -1593,7 +1600,7 @@
     "SelectSourceAbove": "上のソースを選択してください",
     "SelectWindow": "スクリーンを選択",
     "SourceResolution": "ソース解像度",
-    "Title": "ビデオ録画設定",
+    "Title": "録画設定",
     "VideoFlashbackArmedNotice": "スクリーンフラッシュバック準備完了（{{seconds}}秒）",
     "VideoQuality": "ビデオ品質",
     "ZeroSize": "推定値（0MB/min、0GB/時）"

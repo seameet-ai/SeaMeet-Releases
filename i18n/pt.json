@@ -415,11 +415,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "A sua assinatura termina em {{date}}. Após isso, transcrição, resumos e funcionalidades de IA deixarão de funcionar.",
-      "GraceExpired": "As funcionalidades de IA não estão mais disponíveis. Assine para restaurar transcrição, resumos e mais.",
-      "GracePeriod": "Assinatura termina em {{date}} ({{days}} dias restantes)",
-      "PastDue": "Pagamento falhou — atualize seu cartao para manter os recursos de IA",
+      "PastDue": "Falha no pagamento — os recursos de IA foram desativados. Atualize seu pagamento para restaurá-los.",
       "Reactivate": "Reativar",
-      "Resubscribe": "Assinar novamente",
       "UpdateCard": "Atualizar cartao"
     },
     "BYOK": {
@@ -528,11 +525,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Você precisará de 2 chaves API: Google AI Studio e GitHub Copilot ou Claude Code. Um assistente de configuração guiará você após o pagamento. O Google AI Studio geralmente fornece uma chave gratuita. O GitHub Copilot também oferece um plano gratuito. Assim, você pode usar suas próprias chaves com acesso gratuito limitado. Se você tem assinatura Claude Pro ou Max, não precisa de uma chave API Anthropic adicional.",
+        "InfoNote": "Você precisará de 2 configurações: Google AI Studio (grátis) e GitHub (grátis) ou Anthropic (pago). Um assistente guiará você após o pagamento:",
         "ConfirmTitle": "Antes de assinar",
         "ConfirmContinue": "Continuar para o pagamento",
         "ConfirmSignIn": "Fazer login primeiro, depois pagar",
-        "ConfirmCancel": "Cancelar"
+        "ConfirmCancel": "Cancelar",
+        "ConfirmCopyCheckout": "Copiar código e pagar",
+        "InfoNote.Claude": "Se você assina o plano Claude Pro ou Max, não precisa de uma chave API Anthropic adicional.",
+        "InfoNote.Copilot": "O GitHub Copilot também tem um plano gratuito.",
+        "InfoNote.Gemini": "O Google AI Studio geralmente fornece uma chave gratuita."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -707,6 +708,10 @@
       "TryRecording": "Iniciar uma gravação",
       "TryScreenshot": "Tirar uma captura de tela",
       "Later": "Vou tentar depois"
+    },
+    "Setup": {
+      "Done": "Terminei a configuração",
+      "Later": "Farei isso depois"
     }
   },
   "Billing.BYOK.KeySaved": "Chave salva (oculta)",
@@ -784,7 +789,9 @@
     "Send": "Enviar",
     "Starting": "Iniciando...",
     "UnknownApp": "App desconhecido",
-    "Back": "Voltar"
+    "Back": "Voltar",
+    "Copied": "Copiado!",
+    "Copy": "Copiar"
   },
   "DeletePrompt": {
     "Cancel": "Cancelar",
@@ -1623,7 +1630,7 @@
     "SelectSourceAbove": "Selecione uma fonte acima",
     "SelectWindow": "Selecionar janela",
     "SourceResolution": "Resolução da fonte",
-    "Title": "Configurações de gravação de vídeo",
+    "Title": "Configurações de gravação",
     "VideoFlashbackArmedNotice": "Flashback de tela ativado ({{seconds}}s)",
     "VideoQuality": "Qualidade de vídeo",
     "ZeroSize": "~0 MB/min, ~0 GB/hora"

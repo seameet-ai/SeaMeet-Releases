@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "Langganan Anda berakhir pada {{date}}. Setelah itu, transkripsi, ringkasan, dan fitur AI akan berhenti berfungsi.",
-      "GraceExpired": "Fitur AI tidak lagi tersedia. Berlangganan untuk memulihkan transkripsi, ringkasan, dan lainnya.",
-      "GracePeriod": "Langganan berakhir {{date}} ({{days}} hari tersisa)",
-      "PastDue": "Pembayaran gagal — perbarui kartu Anda untuk mempertahankan fitur AI",
+      "PastDue": "Pembayaran gagal — fitur AI telah dinonaktifkan. Perbarui pembayaran Anda untuk memulihkannya.",
       "Reactivate": "Aktifkan Kembali",
-      "Resubscribe": "Berlangganan kembali",
       "UpdateCard": "Perbarui kartu"
     },
     "BYOK": {
@@ -502,11 +499,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "Anda memerlukan 2 API key: Google AI Studio + Anthropic. Panduan pengaturan akan membantu Anda setelah pembayaran. Google AI Studio biasanya memberikan key gratis. Jika Anda telah berlangganan Claude Pro atau Max, Anda tidak perlu Anthropic API key tambahan.",
+        "InfoNote": "Anda memerlukan 2 pengaturan: Google AI Studio (gratis), dan GitHub (gratis) atau Anthropic (berbayar). Panduan pengaturan akan membantu Anda setelah checkout:",
         "ConfirmTitle": "Sebelum Anda berlangganan",
         "ConfirmContinue": "Lanjutkan ke pembayaran",
         "ConfirmSignIn": "Masuk terlebih dahulu, lalu bayar",
-        "ConfirmCancel": "Batal"
+        "ConfirmCancel": "Batal",
+        "ConfirmCopyCheckout": "Salin kode & checkout",
+        "InfoNote.Claude": "Jika Anda berlangganan paket Claude Pro atau Max, Anda tidak memerlukan kunci API Anthropic tambahan.",
+        "InfoNote.Copilot": "GitHub Copilot juga memiliki paket gratis.",
+        "InfoNote.Gemini": "Google AI Studio biasanya memberi Anda kunci gratis."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -681,6 +682,10 @@
       "TryRecording": "Mulai rekaman",
       "TryScreenshot": "Ambil tangkapan layar",
       "Later": "Nanti saja"
+    },
+    "Setup": {
+      "Done": "Saya sudah selesai mengatur",
+      "Later": "Saya akan lakukan nanti"
     }
   },
   "Billing.BYOK.KeySaved": "Key tersimpan (tersembunyi)",
@@ -758,7 +763,9 @@
     "Send": "Mengirim",
     "Starting": "Sedang Memulai...",
     "UnknownApp": "Aplikasi Tidak Diketahui",
-    "Back": "Kembali"
+    "Back": "Kembali",
+    "Copied": "Tersalin!",
+    "Copy": "Salin"
   },
   "DeletePrompt": {
     "Cancel": "Batal",
@@ -1594,7 +1601,7 @@
     "SelectSourceAbove": "Pilih sumber di atas",
     "SelectWindow": "Pilih jendela",
     "SourceResolution": "Resolusi sumber",
-    "Title": "Pengaturan perekaman video",
+    "Title": "Pengaturan Rekaman",
     "VideoFlashbackArmedNotice": "Kilas balik layar disiapkan ({{seconds}}s)",
     "VideoQuality": "Kualitas video",
     "ZeroSize": "~0 MB/menit, ~0 GB/jam"

@@ -389,11 +389,8 @@
   "Billing": {
     "Banner": {
       "CancelPending": "구독이 {{date}}에 종료됩니다. 이후 전사, 요약 및 AI 기능이 중단됩니다.",
-      "GraceExpired": "AI 기능을 더 이상 사용할 수 없습니다. 전사, 요약 등을 복원하려면 구독하세요.",
-      "GracePeriod": "구독 종료 예정 {{date}} ({{days}}일 남음)",
-      "PastDue": "결제 실패 — AI 기능을 유지하려면 카드 정보를 업데이트하세요",
+      "PastDue": "결제 실패 — AI 기능이 비활성화되었습니다. 결제 수단을 업데이트하여 복원하세요.",
       "Reactivate": "재활성화",
-      "Resubscribe": "재구독",
       "UpdateCard": "카드 업데이트"
     },
     "BYOK": {
@@ -501,11 +498,15 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "InfoNote": "2개의 API 키가 필요합니다: Google AI Studio와 GitHub Copilot 또는 Claude Code. 설정 마법사가 결제 후 안내합니다. Google AI Studio는 일반적으로 무료 키를 제공합니다. GitHub Copilot도 무료 플랜을 제공합니다. 자신의 키로 제한적 무료 사용이 가능합니다. Claude Pro 또는 Max를 구독 중이라면 추가 Anthropic API 키가 필요 없습니다.",
+        "InfoNote": "2가지 설정이 필요합니다: Google AI Studio(무료)와 GitHub(무료) 또는 Anthropic(유료). 결제 후 설정 마법사가 안내합니다:",
         "ConfirmTitle": "구독 전 확인",
         "ConfirmContinue": "결제로 이동",
         "ConfirmSignIn": "먼저 로그인한 후 결제",
-        "ConfirmCancel": "취소"
+        "ConfirmCancel": "취소",
+        "ConfirmCopyCheckout": "코드 복사 및 결제",
+        "InfoNote.Claude": "Claude Pro 또는 Max 플랜을 구독 중이라면 추가 Anthropic API 키가 필요 없습니다.",
+        "InfoNote.Copilot": "GitHub Copilot도 무료 플랜이 있습니다.",
+        "InfoNote.Gemini": "Google AI Studio는 보통 무료 키를 제공합니다."
       },
       "Desktop": {
         "Name": "Desktop Pro"
@@ -680,6 +681,10 @@
       "TryRecording": "녹음 시작",
       "TryScreenshot": "스크린샷 찍기",
       "Later": "나중에 해볼게요"
+    },
+    "Setup": {
+      "Done": "설정을 완료했습니다",
+      "Later": "나중에 하겠습니다"
     }
   },
   "Billing.BYOK.KeySaved": "키 저장됨 (숨김)",
@@ -757,7 +762,9 @@
     "Send": "보내다",
     "Starting": "시작 중...",
     "UnknownApp": "알 수 없는 앱",
-    "Back": "뒤로"
+    "Back": "뒤로",
+    "Copied": "복사됨!",
+    "Copy": "복사"
   },
   "DeletePrompt": {
     "Cancel": "취소",
@@ -1593,7 +1600,7 @@
     "SelectSourceAbove": "위에 있는 소스를 선택하세요",
     "SelectWindow": "윈도우 선택",
     "SourceResolution": "원본 해상도",
-    "Title": "영상 녹화 설정",
+    "Title": "녹화 설정",
     "VideoFlashbackArmedNotice": "화면 회상이 활성화되었습니다 ({{seconds}}초)",
     "VideoQuality": "영상 품질",
     "ZeroSize": "~0 MB/분, ~0 GB/시간"
