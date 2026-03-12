@@ -53,7 +53,8 @@
       "DefaultModel": "Standardmodel",
       "InstallMac": "macOS / Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "API-nøgle"
+      "ApiKeyTitle": "API-nøgle",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "Fjern gemt nøgle",
     "EnableToggle": "Aktiver AI-drevne oversigter",
@@ -92,9 +93,11 @@
     "QuotaSection": "Brugskvote",
     "Saving": "Gemmer...",
     "SelectedModel": "Valgt: {{model}}",
+    "ShowAllModels": "Vis alle {{count}} modeller",
+    "ShowFewerModels": "Vis færre modeller",
     "ShowKey": "Vis nøgle",
     "TestKey": "Gem og bekræft",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "Godkendt",
       "DefaultModel": "Standardmodel",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "kom godt i gang-guiden",
       "InstallGuideSuffix": " for at installere, kør derefter:",
       "NotDetected": "Ikke fundet — installér og godkend:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "Registreret",
       "Hint": "Du kan også skifte udbyder per samtale i chatpanelet.",
       "NotAvailable": "Ikke tilgængelig",
-      "Section": "Foretrukken agent-udbyder"
-    }
+      "Section": "Foretrukken agent-udbyder",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "Kopi",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "Fundet",
       "CopilotNotDetected": "Ikke fundet",
-      "CopilotSignupHint": "Vil du prøve GitHub Copilot som alternativ agent? Tilmeld dig en gratis plan på github.com/features/copilot/plans (inkluderer 50 agent-/chatforespørgsler om måneden), installér derefter Copilot CLI og kør \"copilot --login\".",
-      "CopilotFlatUsage": "Bruges til: AI-agent (alternativ til Claude). Ingen API-nøgle nødvendig — bruger dit GitHub-login."
+      "CopilotSignupHint": "Vil du prøve GitHub Copilot som alternativ agent? Tilmeld dig en gratis plan på github.com/features/copilot/plans (inkluderer 50 agent-/chatforespørgsler om måneden), installér derefter Copilot CLI og kør \"copilot login\".",
+      "CopilotFlatUsage": "Bruges til: AI-agent (alternativ til Claude). Ingen API-nøgle nødvendig — bruger dit GitHub-login.",
+      "Guide": {
+        "Step1Title": "Trin 1 — Læs dette grundigt",
+        "Step1Need": "Du skal bruge 2 ting:",
+        "Step1Item1": "Gemini API-nøgle — til AI-resumé og live-transskription",
+        "Step1Item2": "GitHub Copilot CLI eller Claude Code CLI — til AI-agent",
+        "Step2Title": "Trin 2 — (Gratis) Hent Gemini API-nøglen",
+        "Step2Desc1": "Klik på ",
+        "Step2GetKey": "Hent API-nøgle",
+        "Step2Desc2": " for at oprette en gratis Gemini API-nøgle. Mere info på ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "Trin 3 — (Gratis) Hent GitHub Copilot CLI",
+        "Step3Install": "Klik på ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " eller hurtig installation:",
+        "Step3Login": "Kør: ",
+        "Step3LoginDesc": " (gratis, 50 chats/måned)",
+        "Step3Refresh": "Klik på opdater nedenfor for at registrere Copilot.",
+        "Step3Select": "Klik på GitHub Copilot nedenfor for at vælge som foretrukken.",
+        "Step4Title": "Trin 4 — (Valgfrit, betalt) Hent Claude Code CLI",
+        "Step4Already": "Du har sandsynligvis allerede den, hvis du har installeret Claude Code før.",
+        "Step4Install": "Klik på ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " eller hurtig installation:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "kræver ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "Kør: ",
+        "Step4AuthDesc": " (kræver Claude Pro- eller Max-abonnement)",
+        "Step4Refresh": "Klik på opdater nedenfor for at registrere Claude Code.",
+        "Step4Select": "Klik på Claude Code nedenfor for at vælge som foretrukken."
+      }
     },
     "Device": {
       "Close": "Luk",

@@ -53,7 +53,8 @@
       "SourceKeyServer": "Verwaltet von SeaMeet",
       "SourceLabel": "Aktive Quelle:",
       "SourceNone": "Nicht konfiguriert",
-      "TestKey": "Speichern und überprüfen"
+      "TestKey": "Speichern und überprüfen",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "Gespeicherten Schlüssel entfernen",
     "EnableToggle": "Aktivieren Sie KI-gestützte Zusammenfassungen",
@@ -92,9 +93,11 @@
     "QuotaSection": "Nutzungskontingent",
     "Saving": "Sparen...",
     "SelectedModel": "Ausgewählt: {{model}}",
+    "ShowAllModels": "Alle {{count}} Modelle anzeigen",
+    "ShowFewerModels": "Weniger Modelle anzeigen",
     "ShowKey": "Schlüssel anzeigen",
     "TestKey": "Speichern und überprüfen",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "Authentifiziert",
       "DefaultModel": "Standardmodell",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "Erste-Schritte-Anleitung",
       "InstallGuideSuffix": " zur Installation, dann führen Sie aus:",
       "NotDetected": "Nicht gefunden — installieren und authentifizieren:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "Erkannt",
       "Hint": "Sie können Anbieter auch pro Unterhaltung im Chat-Panel wechseln.",
       "NotAvailable": "Nicht verfügbar",
-      "Section": "Bevorzugter Agent-Anbieter"
-    }
+      "Section": "Bevorzugter Agent-Anbieter",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "Kopie",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "Erkannt",
       "CopilotNotDetected": "Nicht erkannt",
-      "CopilotSignupHint": "Möchten Sie GitHub Copilot als alternativen Agenten testen? Melden Sie sich für einen kostenlosen Plan auf github.com/features/copilot/plans an (inkl. 50 Agenten-/Chat-Anfragen pro Monat), installieren Sie dann die Copilot CLI und führen Sie \"copilot --login\" aus.",
-      "CopilotFlatUsage": "Verwendet für: KI-Agent (Alternative zu Claude). Kein API-Schlüssel nötig — nutzt Ihre GitHub-Anmeldung."
+      "CopilotSignupHint": "Möchten Sie GitHub Copilot als alternativen Agenten testen? Melden Sie sich für einen kostenlosen Plan auf github.com/features/copilot/plans an (inkl. 50 Agenten-/Chat-Anfragen pro Monat), installieren Sie dann die Copilot CLI und führen Sie \"copilot login\" aus.",
+      "CopilotFlatUsage": "Verwendet für: KI-Agent (Alternative zu Claude). Kein API-Schlüssel nötig — nutzt Ihre GitHub-Anmeldung.",
+      "Guide": {
+        "Step1Title": "Schritt 1 — Bitte sorgfältig lesen",
+        "Step1Need": "Sie benötigen 2 Dinge:",
+        "Step1Item1": "Gemini API-Schlüssel — für KI-Zusammenfassung und Live-Transkription",
+        "Step1Item2": "GitHub Copilot CLI oder Claude Code CLI — für den KI-Agenten",
+        "Step2Title": "Schritt 2 — (Kostenlos) Gemini API-Schlüssel erhalten",
+        "Step2Desc1": "Klicken Sie auf ",
+        "Step2GetKey": "API-Schlüssel erhalten",
+        "Step2Desc2": ", um einen kostenlosen Gemini API-Schlüssel zu erstellen. Weitere Informationen unter ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "Schritt 3 — (Kostenlos) GitHub Copilot CLI installieren",
+        "Step3Install": "Klicken Sie auf ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " oder Schnellinstallation:",
+        "Step3Login": "Ausführen: ",
+        "Step3LoginDesc": " (kostenlos, 50 Chats/Monat)",
+        "Step3Refresh": "Klicken Sie unten auf Aktualisieren, um Copilot zu erkennen.",
+        "Step3Select": "Klicken Sie unten auf GitHub Copilot, um es als bevorzugt festzulegen.",
+        "Step4Title": "Schritt 4 — (Optional, kostenpflichtig) Claude Code CLI installieren",
+        "Step4Already": "Höchstwahrscheinlich haben Sie es bereits, wenn Sie Claude Code zuvor installiert haben.",
+        "Step4Install": "Klicken Sie auf ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " oder Schnellinstallation:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "erfordert ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "Ausführen: ",
+        "Step4AuthDesc": " (erfordert Claude Pro- oder Max-Abo)",
+        "Step4Refresh": "Klicken Sie unten auf Aktualisieren, um Claude Code zu erkennen.",
+        "Step4Select": "Klicken Sie unten auf Claude Code, um es als bevorzugt festzulegen."
+      }
     },
     "Device": {
       "Close": "Schließen",

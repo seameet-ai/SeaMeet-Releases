@@ -53,7 +53,8 @@
       "SourceKeyServer": "บริหารงานโดยซีมีท",
       "SourceLabel": "แหล่งที่มาที่ใช้งานอยู่:",
       "SourceNone": "ไม่ได้กำหนดค่า",
-      "TestKey": "บันทึกและยืนยัน"
+      "TestKey": "บันทึกและยืนยัน",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "ลบคีย์ที่บันทึกไว้",
     "EnableToggle": "เปิดใช้งานการสรุปที่ขับเคลื่อนโดย AI",
@@ -92,9 +93,11 @@
     "QuotaSection": "โควต้าการใช้งาน",
     "Saving": "ประหยัด...",
     "SelectedModel": "เลือกแล้ว: {{model}}",
+    "ShowAllModels": "แสดงทั้งหมด {{count}} โมเดล",
+    "ShowFewerModels": "แสดงน้อยลง",
     "ShowKey": "แสดงกุญแจ",
     "TestKey": "บันทึกและยืนยัน",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "ยืนยันตัวตนแล้ว",
       "DefaultModel": "โมเดลเริ่มต้น",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "คู่มือเริ่มต้น",
       "InstallGuideSuffix": "เพื่อติดตั้ง จากนั้นรัน:",
       "NotDetected": "ไม่พบ — ติดตั้งและยืนยันตัวตน:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "ตรวจพบ",
       "Hint": "คุณยังสามารถสลับผู้ให้บริการต่อการสนทนาในแผงแชทได้",
       "NotAvailable": "ไม่พร้อมใช้งาน",
-      "Section": "ผู้ให้บริการเอเจนต์ที่ต้องการ"
-    }
+      "Section": "ผู้ให้บริการเอเจนต์ที่ต้องการ",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "สำเนา",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "พบแล้ว",
       "CopilotNotDetected": "ไม่พบ",
-      "CopilotSignupHint": "ต้องการลอง GitHub Copilot เป็นเอเจนท์ทางเลือก? สมัครแผนฟรีที่ github.com/features/copilot/plans (รวม 50 คำขอเอเจนท์/แชทต่อเดือน) จากนั้นติดตั้ง Copilot CLI และรัน \"copilot --login\"",
-      "CopilotFlatUsage": "ใช้สำหรับ: เอเจนท์ AI (ทางเลือกแทน Claude) ไม่ต้องใช้คีย์ API — ใช้การเข้าสู่ระบบ GitHub ของคุณ"
+      "CopilotSignupHint": "ต้องการลอง GitHub Copilot เป็นเอเจนท์ทางเลือก? สมัครแผนฟรีที่ github.com/features/copilot/plans (รวม 50 คำขอเอเจนท์/แชทต่อเดือน) จากนั้นติดตั้ง Copilot CLI และรัน \"copilot login\"",
+      "CopilotFlatUsage": "ใช้สำหรับ: เอเจนท์ AI (ทางเลือกแทน Claude) ไม่ต้องใช้คีย์ API — ใช้การเข้าสู่ระบบ GitHub ของคุณ",
+      "Guide": {
+        "Step1Title": "ขั้นตอนที่ 1 — อ่านอย่างละเอียด",
+        "Step1Need": "คุณต้องมี 2 สิ่ง:",
+        "Step1Item1": "Gemini API key — สำหรับสรุป AI และถอดเสียงสด",
+        "Step1Item2": "GitHub Copilot CLI หรือ Claude Code CLI — สำหรับ AI agent",
+        "Step2Title": "ขั้นตอนที่ 2 — (ฟรี) รับ Gemini API Key",
+        "Step2Desc1": "คลิก ",
+        "Step2GetKey": "รับ API Key",
+        "Step2Desc2": " เพื่อสร้าง Gemini API key ฟรี ข้อมูลเพิ่มเติมที่ ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "ขั้นตอนที่ 3 — (ฟรี) รับ GitHub Copilot CLI",
+        "Step3Install": "คลิก ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " หรือติดตั้งด่วน:",
+        "Step3Login": "รัน: ",
+        "Step3LoginDesc": " (ฟรี 50 แชท/เดือน)",
+        "Step3Refresh": "คลิกรีเฟรชด้านล่างเพื่อตรวจจับ Copilot",
+        "Step3Select": "คลิก GitHub Copilot ด้านล่างเพื่อตั้งเป็นตัวเลือกหลัก",
+        "Step4Title": "ขั้นตอนที่ 4 — (ไม่บังคับ, เสียค่าใช้จ่าย) รับ Claude Code CLI",
+        "Step4Already": "หากคุณเคยติดตั้ง Claude Code ไว้ก่อนแล้ว คุณน่าจะมีอยู่แล้ว",
+        "Step4Install": "คลิก ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " หรือติดตั้งด่วน:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "ต้องมี ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "รัน: ",
+        "Step4AuthDesc": " (ต้องใช้แพลน Claude Pro หรือ Max)",
+        "Step4Refresh": "คลิกรีเฟรชด้านล่างเพื่อตรวจจับ Claude Code",
+        "Step4Select": "คลิก Claude Code ด้านล่างเพื่อตั้งเป็นตัวเลือกหลัก"
+      }
     },
     "Device": {
       "Close": "ปิด",

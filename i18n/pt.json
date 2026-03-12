@@ -53,7 +53,8 @@
       "SourceKeyServer": "Gerenciado por SeaMeet",
       "SourceLabel": "Fonte ativa:",
       "SourceNone": "Não configurado",
-      "TestKey": "Salvar e verificar"
+      "TestKey": "Salvar e verificar",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "Remover chave salva",
     "EnableToggle": "Habilite resumos baseados em IA",
@@ -92,9 +93,11 @@
     "QuotaSection": "Cota de uso",
     "Saving": "Salvando...",
     "SelectedModel": "Selecionado: {{model}}",
+    "ShowAllModels": "Mostrar todos os {{count}} modelos",
+    "ShowFewerModels": "Mostrar menos modelos",
     "ShowKey": "Mostrar chave",
     "TestKey": "Salvar e verificar",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "Autenticado",
       "DefaultModel": "Modelo padrão",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "guia de início",
       "InstallGuideSuffix": " para instalar, depois execute:",
       "NotDetected": "Não detectado — instale e autentique:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "Detectado",
       "Hint": "Você também pode trocar provedores por conversa no painel de chat.",
       "NotAvailable": "Não disponível",
-      "Section": "Provedor de agente preferido"
-    }
+      "Section": "Provedor de agente preferido",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -461,8 +468,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "Detectado",
       "CopilotNotDetected": "Não detectado",
-      "CopilotSignupHint": "Quer experimentar o GitHub Copilot como agente alternativo? Cadastre-se em um plano gratuito em github.com/features/copilot/plans (inclui 50 solicitações de agente/chat por mês), depois instale o Copilot CLI e execute \"copilot --login\".",
-      "CopilotFlatUsage": "Usado para: agente IA (alternativa ao Claude). Sem necessidade de chave API — usa seu login do GitHub."
+      "CopilotSignupHint": "Quer experimentar o GitHub Copilot como agente alternativo? Cadastre-se em um plano gratuito em github.com/features/copilot/plans (inclui 50 solicitações de agente/chat por mês), depois instale o Copilot CLI e execute \"copilot login\".",
+      "CopilotFlatUsage": "Usado para: agente IA (alternativa ao Claude). Sem necessidade de chave API — usa seu login do GitHub.",
+      "Guide": {
+        "Step1Title": "Passo 1 — Leia com atenção",
+        "Step1Need": "Você precisará de 2 coisas:",
+        "Step1Item1": "Chave API do Gemini — para resumo IA e transcrição ao vivo",
+        "Step1Item2": "GitHub Copilot CLI ou Claude Code CLI — para o agente IA",
+        "Step2Title": "Passo 2 — (Grátis) Obter a chave API do Gemini",
+        "Step2Desc1": "Clique em ",
+        "Step2GetKey": "Obter chave API",
+        "Step2Desc2": " para criar uma chave API do Gemini gratuita. Mais informações em ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "Passo 3 — (Grátis) Instalar o GitHub Copilot CLI",
+        "Step3Install": "Clique em ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " ou instalação rápida:",
+        "Step3Login": "Execute: ",
+        "Step3LoginDesc": " (grátis, 50 chats/mês)",
+        "Step3Refresh": "Clique em Atualizar abaixo para detectar o Copilot.",
+        "Step3Select": "Clique em GitHub Copilot abaixo para definir como preferido.",
+        "Step4Title": "Passo 4 — (Opcional, pago) Instalar o Claude Code CLI",
+        "Step4Already": "Muito provavelmente você já o tem se instalou o Claude Code anteriormente.",
+        "Step4Install": "Clique em ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " ou instalação rápida:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "requer ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "Execute: ",
+        "Step4AuthDesc": " (requer plano Claude Pro ou Max)",
+        "Step4Refresh": "Clique em Atualizar abaixo para detectar o Claude Code.",
+        "Step4Select": "Clique em Claude Code abaixo para definir como preferido."
+      }
     },
     "Device": {
       "Close": "Fechar",

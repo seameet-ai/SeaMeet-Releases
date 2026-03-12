@@ -53,7 +53,8 @@
       "SourceKeyServer": "Под управлением SeaMeet",
       "SourceLabel": "Активный источник:",
       "SourceNone": "Не настроено",
-      "TestKey": "Сохранить и проверить"
+      "TestKey": "Сохранить и проверить",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "Удалить сохраненный ключ",
     "EnableToggle": "Включите сводки на основе искусственного интеллекта",
@@ -92,9 +93,11 @@
     "QuotaSection": "Квота использования",
     "Saving": "Сохранение...",
     "SelectedModel": "Выбрано: {{model}}",
+    "ShowAllModels": "Показать все {{count}} моделей",
+    "ShowFewerModels": "Показать меньше моделей",
     "ShowKey": "Показать ключ",
     "TestKey": "Сохранить и проверить",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "Аутентифицирован",
       "DefaultModel": "Модель по умолчанию",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "руководству по началу работы",
       "InstallGuideSuffix": " для установки, затем выполните:",
       "NotDetected": "Не обнаружен — установите и аутентифицируйтесь:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "Обнаружен",
       "Hint": "Вы также можете переключать провайдеров для каждого разговора в панели чата.",
       "NotAvailable": "Недоступен",
-      "Section": "Предпочтительный провайдер агента"
-    }
+      "Section": "Предпочтительный провайдер агента",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "ApplyMerge": "Применить",
@@ -465,8 +472,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "Обнаружен",
       "CopilotNotDetected": "Не обнаружен",
-      "CopilotSignupHint": "Хотите попробовать GitHub Copilot в качестве альтернативного агента? Зарегистрируйтесь на бесплатном плане на github.com/features/copilot/plans (включает 50 запросов агента/чата в месяц), затем установите Copilot CLI и выполните \"copilot --login\".",
-      "CopilotFlatUsage": "Используется для: ИИ-агент (альтернатива Claude). API-ключ не нужен — используется ваш вход в GitHub."
+      "CopilotSignupHint": "Хотите попробовать GitHub Copilot в качестве альтернативного агента? Зарегистрируйтесь на бесплатном плане на github.com/features/copilot/plans (включает 50 запросов агента/чата в месяц), затем установите Copilot CLI и выполните \"copilot login\".",
+      "CopilotFlatUsage": "Используется для: ИИ-агент (альтернатива Claude). API-ключ не нужен — используется ваш вход в GitHub.",
+      "Guide": {
+        "Step1Title": "Шаг 1 — Внимательно прочитайте",
+        "Step1Need": "Вам понадобятся 2 вещи:",
+        "Step1Item1": "API-ключ Gemini — для AI-резюме и живой транскрипции",
+        "Step1Item2": "GitHub Copilot CLI или Claude Code CLI — для AI-агента",
+        "Step2Title": "Шаг 2 — (Бесплатно) Получите API-ключ Gemini",
+        "Step2Desc1": "Нажмите ",
+        "Step2GetKey": "Получить API-ключ",
+        "Step2Desc2": ", чтобы создать бесплатный API-ключ Gemini. Подробнее на ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "Шаг 3 — (Бесплатно) Получите GitHub Copilot CLI",
+        "Step3Install": "Нажмите ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " или быстрая установка:",
+        "Step3Login": "Выполните: ",
+        "Step3LoginDesc": " (бесплатно, 50 чатов/месяц)",
+        "Step3Refresh": "Нажмите «Обновить» ниже, чтобы обнаружить Copilot.",
+        "Step3Select": "Нажмите GitHub Copilot ниже, чтобы установить как предпочтительный.",
+        "Step4Title": "Шаг 4 — (Необязательно, платно) Получите Claude Code CLI",
+        "Step4Already": "Скорее всего, он уже установлен, если вы ранее устанавливали Claude Code.",
+        "Step4Install": "Нажмите ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " или быстрая установка:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "требуется ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "Выполните: ",
+        "Step4AuthDesc": " (требуется план Claude Pro или Max)",
+        "Step4Refresh": "Нажмите «Обновить» ниже, чтобы обнаружить Claude Code.",
+        "Step4Select": "Нажмите Claude Code ниже, чтобы установить как предпочтительный."
+      }
     },
     "Device": {
       "Close": "Закрыть",

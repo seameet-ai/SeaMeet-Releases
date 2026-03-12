@@ -53,7 +53,8 @@
       "DefaultModel": "مدل پیش‌فرض",
       "InstallMac": "macOS / Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "کلید API"
+      "ApiKeyTitle": "کلید API",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "حذف کلید ذخیره شده",
     "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
@@ -92,9 +93,11 @@
     "QuotaSection": "سهمیه استفاده",
     "Saving": "در حال ذخیره...",
     "SelectedModel": "انتخاب شده: {{model}}",
+    "ShowAllModels": "نمایش همه {{count}} مدل",
+    "ShowFewerModels": "نمایش مدل‌های کمتر",
     "ShowKey": "نمایش کلید",
     "TestKey": "ذخیره و تأیید کنید",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "احراز هویت شده",
       "DefaultModel": "مدل پیش‌فرض",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "راهنمای شروع",
       "InstallGuideSuffix": " برای نصب پیروی کنید، سپس اجرا کنید:",
       "NotDetected": "یافت نشد — نصب و احراز هویت کنید:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "شناسایی شد",
       "Hint": "همچنین می‌توانید ارائه‌دهندگان را در هر مکالمه در پنل چت تغییر دهید.",
       "NotAvailable": "در دسترس نیست",
-      "Section": "ارائه‌دهنده ایجنت ترجیحی"
-    }
+      "Section": "ارائه‌دهنده ایجنت ترجیحی",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "کپی کنید",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "شناسایی شد",
       "CopilotNotDetected": "شناسایی نشد",
-      "CopilotSignupHint": "می‌خواهید GitHub Copilot را به عنوان عامل جایگزین امتحان کنید؟ در یک طرح رایگان در github.com/features/copilot/plans ثبت‌نام کنید (شامل ۵۰ درخواست عامل/چت در ماه)، سپس Copilot CLI را نصب و \"copilot --login\" را اجرا کنید.",
-      "CopilotFlatUsage": "استفاده برای: عامل AI (جایگزین Claude). نیازی به کلید API نیست — از ورود GitHub شما استفاده می‌کند."
+      "CopilotSignupHint": "می‌خواهید GitHub Copilot را به عنوان عامل جایگزین امتحان کنید؟ در یک طرح رایگان در github.com/features/copilot/plans ثبت‌نام کنید (شامل ۵۰ درخواست عامل/چت در ماه)، سپس Copilot CLI را نصب و \"copilot login\" را اجرا کنید.",
+      "CopilotFlatUsage": "استفاده برای: عامل AI (جایگزین Claude). نیازی به کلید API نیست — از ورود GitHub شما استفاده می‌کند.",
+      "Guide": {
+        "Step1Title": "مرحله ۱ — با دقت بخوانید",
+        "Step1Need": "به ۲ چیز نیاز دارید:",
+        "Step1Item1": "کلید API برای Gemini — برای خلاصه هوش مصنوعی و رونویسی زنده",
+        "Step1Item2": "GitHub Copilot CLI یا Claude Code CLI — برای عامل هوش مصنوعی",
+        "Step2Title": "مرحله ۲ — (رایگان) کلید API Gemini را دریافت کنید",
+        "Step2Desc1": "روی ",
+        "Step2GetKey": "دریافت کلید API",
+        "Step2Desc2": " کلیک کنید تا یک کلید API رایگان Gemini بسازید. اطلاعات بیشتر در ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "مرحله ۳ — (رایگان) GitHub Copilot CLI را دریافت کنید",
+        "Step3Install": "روی ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " کلیک کنید یا نصب سریع:",
+        "Step3Login": "اجرا کنید: ",
+        "Step3LoginDesc": " (رایگان، ۵۰ گفتگو/ماه)",
+        "Step3Refresh": "روی بازخوانی در پایین کلیک کنید تا Copilot شناسایی شود.",
+        "Step3Select": "روی GitHub Copilot در پایین کلیک کنید تا به عنوان ترجیحی تنظیم شود.",
+        "Step4Title": "مرحله ۴ — (اختیاری، پولی) Claude Code CLI را دریافت کنید",
+        "Step4Already": "به احتمال زیاد اگر قبلاً Claude Code را نصب کرده‌اید، آن را دارید.",
+        "Step4Install": "روی ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " کلیک کنید یا نصب سریع:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "نیاز به ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "اجرا کنید: ",
+        "Step4AuthDesc": " (نیاز به طرح Claude Pro یا Max دارد)",
+        "Step4Refresh": "روی بازخوانی در پایین کلیک کنید تا Claude Code شناسایی شود.",
+        "Step4Select": "روی Claude Code در پایین کلیک کنید تا به عنوان ترجیحی تنظیم شود."
+      }
     },
     "Device": {
       "Close": "بستن",

@@ -53,7 +53,8 @@
       "SourceKeyServer": "SeaMeet が管理",
       "SourceLabel": "アクティブなソース:",
       "SourceNone": "未設定",
-      "TestKey": "保存して確認する"
+      "TestKey": "保存して確認する",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "保存されたキーを削除する",
     "EnableToggle": "AI を活用した要約を有効にする",
@@ -92,9 +93,11 @@
     "QuotaSection": "使用量割り当て",
     "Saving": "保存中...",
     "SelectedModel": "選択済み: {{model}}",
+    "ShowAllModels": "全 {{count}} モデルを表示",
+    "ShowFewerModels": "モデルを折りたたむ",
     "ShowKey": "キーを表示",
     "TestKey": "保存して確認",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "認証済み",
       "DefaultModel": "デフォルトモデル",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "スタートガイド",
       "InstallGuideSuffix": "に従ってインストールし、次を実行してください：",
       "NotDetected": "未検出 — インストールして認証してください：",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "検出済み",
       "Hint": "チャットパネルで会話ごとにプロバイダーを切り替えることもできます。",
       "NotAvailable": "利用不可",
-      "Section": "優先エージェントプロバイダー"
-    }
+      "Section": "優先エージェントプロバイダー",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "コピー",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "検出済み",
       "CopilotNotDetected": "未検出",
-      "CopilotSignupHint": "GitHub Copilotを代替エージェントとして試しますか？github.com/features/copilot/plansで無料プランに登録し（月50回のエージェント/チャットリクエスト含む）、Copilot CLIをインストールして「copilot --login」を実行してください。",
-      "CopilotFlatUsage": "用途：AIエージェント（Claudeの代替）。APIキー不要 — GitHubログインを使用します。"
+      "CopilotSignupHint": "GitHub Copilotを代替エージェントとして試しますか？github.com/features/copilot/plansで無料プランに登録し（月50回のエージェント/チャットリクエスト含む）、Copilot CLIをインストールして「copilot login」を実行してください。",
+      "CopilotFlatUsage": "用途：AIエージェント（Claudeの代替）。APIキー不要 — GitHubログインを使用します。",
+      "Guide": {
+        "Step1Title": "ステップ 1 — よくお読みください",
+        "Step1Need": "2 つのものが必要です：",
+        "Step1Item1": "Gemini API キー — AI 要約とリアルタイム文字起こし用",
+        "Step1Item2": "GitHub Copilot CLI または Claude Code CLI — AI エージェント用",
+        "Step2Title": "ステップ 2 —（無料）Gemini API キーを取得",
+        "Step2Desc1": "クリック ",
+        "Step2GetKey": "API キーを取得",
+        "Step2Desc2": " して無料の Gemini API キーを作成します。詳細は ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "ステップ 3 —（無料）GitHub Copilot CLI を取得",
+        "Step3Install": "クリック ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " またはクイックインストール：",
+        "Step3Login": "実行：",
+        "Step3LoginDesc": "（無料、月 50 回のチャット）",
+        "Step3Refresh": "下の更新ボタンをクリックして Copilot を検出してください。",
+        "Step3Select": "下の GitHub Copilot をクリックして優先に設定してください。",
+        "Step4Title": "ステップ 4 —（任意、有料）Claude Code CLI を取得",
+        "Step4Already": "以前に Claude Code をインストール済みであれば、既にお持ちの可能性が高いです。",
+        "Step4Install": "クリック ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " またはクイックインストール：",
+        "Step4Mac": "macOS / Linux：",
+        "Step4Win": "Windows：",
+        "Step4WinReq": "必要：",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "実行：",
+        "Step4AuthDesc": "（Claude Pro または Max プランが必要）",
+        "Step4Refresh": "下の更新ボタンをクリックして Claude Code を検出してください。",
+        "Step4Select": "下の Claude Code をクリックして優先に設定してください。"
+      }
     },
     "Device": {
       "Close": "閉じる",

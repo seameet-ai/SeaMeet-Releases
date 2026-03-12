@@ -53,7 +53,8 @@
       "SourceKeyServer": "சீமீட்டால் நிர்வகிக்கப்படுகிறது",
       "SourceLabel": "செயலில் உள்ள ஆதாரம்:",
       "SourceNone": "கட்டமைக்கப்படவில்லை",
-      "TestKey": "சேமித்து சரிபார்க்கவும்"
+      "TestKey": "சேமித்து சரிபார்க்கவும்",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "சேமித்த விசையை அகற்று",
     "EnableToggle": "AI-இயங்கும் சுருக்கங்களை இயக்கு",
@@ -92,9 +93,11 @@
     "QuotaSection": "பயன்பாட்டு ஒதுக்கீடு",
     "Saving": "சேமிக்கிறது...",
     "SelectedModel": "தேர்ந்தெடுக்கப்பட்டது: {{model}}",
+    "ShowAllModels": "அனைத்து {{count}} மாதிரிகளையும் காட்டு",
+    "ShowFewerModels": "குறைவான மாதிரிகளைக் காட்டு",
     "ShowKey": "விசையைக் காட்டு",
     "TestKey": "சேமித்து சரிபார்க்கவும்",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "அங்கீகரிக்கப்பட்டது",
       "DefaultModel": "இயல்புநிலை மாதிரி",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "தொடக்க வழிகாட்டி",
       "InstallGuideSuffix": "யைப் பின்பற்றி நிறுவி, பிறகு இயக்கவும்:",
       "NotDetected": "கண்டறியப்படவில்லை — நிறுவி அங்கீகரிக்கவும்:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "கண்டறியப்பட்டது",
       "Hint": "அரட்டை பலகத்தில் ஒவ்வொரு உரையாடலுக்கும் வழங்குநர்களை மாற்றலாம்.",
       "NotAvailable": "கிடைக்கவில்லை",
-      "Section": "விருப்பமான முகவர் வழங்குநர்"
-    }
+      "Section": "விருப்பமான முகவர் வழங்குநர்",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "நகலெடுக்கவும்",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "கண்டறியப்பட்டது",
       "CopilotNotDetected": "கண்டறியப்படவில்லை",
-      "CopilotSignupHint": "GitHub Copilot-ஐ மாற்று ஏஜென்ட்டாக முயற்சிக்க விரும்புகிறீர்களா? github.com/features/copilot/plans-ல் இலவச திட்டத்திற்கு பதிவு செய்யவும் (மாதம் 50 ஏஜென்ட்/அரட்டை கோரிக்கைகள் உள்ளடக்கியது), பிறகு Copilot CLI-ஐ நிறுவி \"copilot --login\" இயக்கவும்.",
-      "CopilotFlatUsage": "பயன்பாடு: AI ஏஜென்ட் (Claude-க்கு மாற்று). API விசை தேவையில்லை — உங்கள் GitHub உள்நுழைவைப் பயன்படுத்துகிறது."
+      "CopilotSignupHint": "GitHub Copilot-ஐ மாற்று ஏஜென்ட்டாக முயற்சிக்க விரும்புகிறீர்களா? github.com/features/copilot/plans-ல் இலவச திட்டத்திற்கு பதிவு செய்யவும் (மாதம் 50 ஏஜென்ட்/அரட்டை கோரிக்கைகள் உள்ளடக்கியது), பிறகு Copilot CLI-ஐ நிறுவி \"copilot login\" இயக்கவும்.",
+      "CopilotFlatUsage": "பயன்பாடு: AI ஏஜென்ட் (Claude-க்கு மாற்று). API விசை தேவையில்லை — உங்கள் GitHub உள்நுழைவைப் பயன்படுத்துகிறது.",
+      "Guide": {
+        "Step1Title": "படி 1 — கவனமாகப் படிக்கவும்",
+        "Step1Need": "உங்களுக்கு 2 விஷயங்கள் தேவை:",
+        "Step1Item1": "Gemini API key — AI சுருக்கம் மற்றும் நேரடி ஒலிபெயர்ப்புக்கு",
+        "Step1Item2": "GitHub Copilot CLI அல்லது Claude Code CLI — AI agent-க்கு",
+        "Step2Title": "படி 2 — (இலவசம்) Gemini API Key பெறுங்கள்",
+        "Step2Desc1": "கிளிக் செய்யவும் ",
+        "Step2GetKey": "API Key பெறு",
+        "Step2Desc2": " இலவச Gemini API key உருவாக்க. மேலும் தகவல் ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "படி 3 — (இலவசம்) GitHub Copilot CLI பெறுங்கள்",
+        "Step3Install": "கிளிக் செய்யவும் ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " அல்லது விரைவு நிறுவல்:",
+        "Step3Login": "இயக்கவும்: ",
+        "Step3LoginDesc": " (இலவசம், 50 உரையாடல்கள்/மாதம்)",
+        "Step3Refresh": "Copilot-ஐ கண்டறிய கீழே புதுப்பி என்பதைக் கிளிக் செய்யவும்.",
+        "Step3Select": "விருப்பமாக அமைக்க கீழே GitHub Copilot-ஐ கிளிக் செய்யவும்.",
+        "Step4Title": "படி 4 — (விருப்பத்திற்கு, கட்டணம்) Claude Code CLI பெறுங்கள்",
+        "Step4Already": "நீங்கள் முன்பு Claude Code நிறுவியிருந்தால் ஏற்கனவே உங்களிடம் இருக்கும்.",
+        "Step4Install": "கிளிக் செய்யவும் ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " அல்லது விரைவு நிறுவல்:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "தேவை ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "இயக்கவும்: ",
+        "Step4AuthDesc": " (Claude Pro அல்லது Max திட்டம் தேவை)",
+        "Step4Refresh": "Claude Code-ஐ கண்டறிய கீழே புதுப்பி என்பதைக் கிளிக் செய்யவும்.",
+        "Step4Select": "விருப்பமாக அமைக்க கீழே Claude Code-ஐ கிளிக் செய்யவும்."
+      }
     },
     "Device": {
       "Close": "மூடு",

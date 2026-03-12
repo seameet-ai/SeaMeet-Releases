@@ -53,7 +53,8 @@
       "SourceKeyServer": "تحت إدارة SeaMeet",
       "SourceLabel": "المصدر النشط:",
       "SourceNone": "لم يتم تكوينه",
-      "TestKey": "حفظ والتحقق"
+      "TestKey": "حفظ والتحقق",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "إزالة المفتاح المحفوظ",
     "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
@@ -92,9 +93,11 @@
     "QuotaSection": "حصة الاستخدام",
     "Saving": "توفير...",
     "SelectedModel": "تم التحديد: {{model}}",
+    "ShowAllModels": "عرض جميع النماذج ({{count}})",
+    "ShowFewerModels": "عرض نماذج أقل",
     "ShowKey": "إظهار المفتاح",
     "TestKey": "حفظ والتحقق",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "تم المصادقة",
       "DefaultModel": "النموذج الافتراضي",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "دليل البدء",
       "InstallGuideSuffix": " للتثبيت، ثم قم بتشغيل:",
       "NotDetected": "غير موجود — قم بالتثبيت والمصادقة:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "تم الكشف",
       "Hint": "يمكنك أيضًا تبديل المزودين لكل محادثة في لوحة الدردشة.",
       "NotAvailable": "غير متاح",
-      "Section": "مزود الوكيل المفضل"
-    }
+      "Section": "مزود الوكيل المفضل",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "ApplyMerge": "تطبيق",
@@ -473,8 +480,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "تم الاكتشاف",
       "CopilotNotDetected": "غير موجود",
-      "CopilotSignupHint": "هل تريد تجربة GitHub Copilot كوكيل بديل؟ سجل في خطة مجانية على github.com/features/copilot/plans (تتضمن 50 طلب وكيل/دردشة شهريًا)، ثم ثبت Copilot CLI وشغل \"copilot --login\".",
-      "CopilotFlatUsage": "يُستخدم لـ: وكيل AI (بديل لـ Claude). لا حاجة لمفتاح API — يستخدم تسجيل دخول GitHub الخاص بك."
+      "CopilotSignupHint": "هل تريد تجربة GitHub Copilot كوكيل بديل؟ سجل في خطة مجانية على github.com/features/copilot/plans (تتضمن 50 طلب وكيل/دردشة شهريًا)، ثم ثبت Copilot CLI وشغل \"copilot login\".",
+      "CopilotFlatUsage": "يُستخدم لـ: وكيل AI (بديل لـ Claude). لا حاجة لمفتاح API — يستخدم تسجيل دخول GitHub الخاص بك.",
+      "Guide": {
+        "Step1Title": "الخطوة 1 — اقرأ هذا بعناية",
+        "Step1Need": "ستحتاج إلى شيئين:",
+        "Step1Item1": "مفتاح API لـ Gemini — لملخص الذكاء الاصطناعي والنسخ المباشر",
+        "Step1Item2": "GitHub Copilot CLI أو Claude Code CLI — لوكيل الذكاء الاصطناعي",
+        "Step2Title": "الخطوة 2 — (مجاني) احصل على مفتاح API لـ Gemini",
+        "Step2Desc1": "انقر على ",
+        "Step2GetKey": "الحصول على مفتاح API",
+        "Step2Desc2": " لإنشاء مفتاح API مجاني لـ Gemini. مزيد من المعلومات على ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "الخطوة 3 — (مجاني) احصل على GitHub Copilot CLI",
+        "Step3Install": "انقر على ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " أو تثبيت سريع:",
+        "Step3Login": "شغّل: ",
+        "Step3LoginDesc": " (مجاني، 50 محادثة/شهر)",
+        "Step3Refresh": "انقر على تحديث أدناه لاكتشاف Copilot.",
+        "Step3Select": "انقر على GitHub Copilot أدناه لتعيينه كمفضّل.",
+        "Step4Title": "الخطوة 4 — (اختياري، مدفوع) احصل على Claude Code CLI",
+        "Step4Already": "على الأرجح لديك بالفعل إذا قمت بتثبيت Claude Code سابقًا.",
+        "Step4Install": "انقر على ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " أو تثبيت سريع:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "يتطلب ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "شغّل: ",
+        "Step4AuthDesc": " (يتطلب خطة Claude Pro أو Max)",
+        "Step4Refresh": "انقر على تحديث أدناه لاكتشاف Claude Code.",
+        "Step4Select": "انقر على Claude Code أدناه لتعيينه كمفضّل."
+      }
     },
     "Device": {
       "Close": "إغلاق",

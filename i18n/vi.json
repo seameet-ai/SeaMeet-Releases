@@ -53,7 +53,8 @@
       "SourceKeyServer": "Được quản lý bởi SeaMeet",
       "SourceLabel": "Nguồn hoạt động:",
       "SourceNone": "Chưa được định cấu hình",
-      "TestKey": "Lưu & Xác minh"
+      "TestKey": "Lưu & Xác minh",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "Xóa khóa đã lưu",
     "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
@@ -92,9 +93,11 @@
     "QuotaSection": "Hạn mức sử dụng",
     "Saving": "Đang lưu...",
     "SelectedModel": "Đã chọn: {{model}}",
+    "ShowAllModels": "Hiển thị tất cả {{count}} mô hình",
+    "ShowFewerModels": "Hiển thị ít mô hình hơn",
     "ShowKey": "Hiển thị phím",
     "TestKey": "Lưu & Xác minh",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "Đã xác thực",
       "DefaultModel": "Mô hình mặc định",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "hướng dẫn bắt đầu",
       "InstallGuideSuffix": " để cài đặt, sau đó chạy:",
       "NotDetected": "Không phát hiện — cài đặt và xác thực:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "Đã phát hiện",
       "Hint": "Bạn cũng có thể chuyển đổi nhà cung cấp cho từng cuộc trò chuyện trong bảng chat.",
       "NotAvailable": "Không khả dụng",
-      "Section": "Nhà cung cấp agent ưu tiên"
-    }
+      "Section": "Nhà cung cấp agent ưu tiên",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "Sao chép",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "Đã phát hiện",
       "CopilotNotDetected": "Không phát hiện",
-      "CopilotSignupHint": "Muốn thử GitHub Copilot làm agent thay thế? Đăng ký gói miễn phí tại github.com/features/copilot/plans (bao gồm 50 yêu cầu agent/chat mỗi tháng), sau đó cài Copilot CLI và chạy \"copilot --login\".",
-      "CopilotFlatUsage": "Dùng cho: agent AI (thay thế Claude). Không cần khóa API — sử dụng đăng nhập GitHub của bạn."
+      "CopilotSignupHint": "Muốn thử GitHub Copilot làm agent thay thế? Đăng ký gói miễn phí tại github.com/features/copilot/plans (bao gồm 50 yêu cầu agent/chat mỗi tháng), sau đó cài Copilot CLI và chạy \"copilot login\".",
+      "CopilotFlatUsage": "Dùng cho: agent AI (thay thế Claude). Không cần khóa API — sử dụng đăng nhập GitHub của bạn.",
+      "Guide": {
+        "Step1Title": "Bước 1 — Đọc kỹ hướng dẫn",
+        "Step1Need": "Bạn cần 2 thứ:",
+        "Step1Item1": "Gemini API key — để tóm tắt AI và phiên âm trực tiếp",
+        "Step1Item2": "GitHub Copilot CLI hoặc Claude Code CLI — cho AI agent",
+        "Step2Title": "Bước 2 — (Miễn phí) Lấy Gemini API Key",
+        "Step2Desc1": "Nhấn ",
+        "Step2GetKey": "Lấy API Key",
+        "Step2Desc2": " để tạo Gemini API key miễn phí. Thông tin thêm tại ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "Bước 3 — (Miễn phí) Cài GitHub Copilot CLI",
+        "Step3Install": "Nhấn ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " hoặc cài nhanh:",
+        "Step3Login": "Chạy: ",
+        "Step3LoginDesc": " (miễn phí, 50 cuộc trò chuyện/tháng)",
+        "Step3Refresh": "Nhấn làm mới bên dưới để phát hiện Copilot.",
+        "Step3Select": "Nhấn GitHub Copilot bên dưới để đặt làm mặc định.",
+        "Step4Title": "Bước 4 — (Tùy chọn, trả phí) Cài Claude Code CLI",
+        "Step4Already": "Rất có thể bạn đã có sẵn nếu đã cài Claude Code trước đó.",
+        "Step4Install": "Nhấn ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " hoặc cài nhanh:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "yêu cầu ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "Chạy: ",
+        "Step4AuthDesc": " (yêu cầu gói Claude Pro hoặc Max)",
+        "Step4Refresh": "Nhấn làm mới bên dưới để phát hiện Claude Code.",
+        "Step4Select": "Nhấn Claude Code bên dưới để đặt làm mặc định."
+      }
     },
     "Device": {
       "Close": "Đóng",

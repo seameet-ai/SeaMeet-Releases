@@ -53,7 +53,8 @@
       "SourceKeyServer": "SeaMeet द्वारा प्रबंधित",
       "SourceLabel": "सक्रिय स्रोत:",
       "SourceNone": "कॉन्फ़िगर नहीं किया गया",
-      "TestKey": "सहेजें और सत्यापित करें"
+      "TestKey": "सहेजें और सत्यापित करें",
+      "Refresh": "Re-detect Claude"
     },
     "ClearKey": "सहेजी गई कुंजी हटाएँ",
     "EnableToggle": "एआई-संचालित सारांश सक्षम करें",
@@ -92,9 +93,11 @@
     "QuotaSection": "उपयोग कोटा",
     "Saving": "सहेजा जा रहा है...",
     "SelectedModel": "चयनित: {{model}}",
+    "ShowAllModels": "सभी {{count}} मॉडल दिखाएँ",
+    "ShowFewerModels": "कम मॉडल दिखाएँ",
     "ShowKey": "कुंजी दिखाएँ",
     "TestKey": "सहेजें और सत्यापित करें",
-    "KeyManagedInBilling": "API key is managed in Billing → API Keys",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "Copilot": {
       "Authenticated": "प्रमाणित",
       "DefaultModel": "डिफ़ॉल्ट मॉडल",
@@ -102,14 +105,18 @@
       "InstallGuideLink": "शुरुआती गाइड",
       "InstallGuideSuffix": " का पालन करें, फिर चलाएं:",
       "NotDetected": "नहीं मिला — इंस्टॉल करें और प्रमाणित करें:",
-      "Section": "GitHub Copilot"
+      "Section": "GitHub Copilot",
+      "Refresh": "Re-detect Copilot"
     },
     "Provider": {
       "Detected": "पता लगाया गया",
       "Hint": "आप चैट पैनल में प्रति वार्तालाप प्रदाताओं को भी बदल सकते हैं।",
       "NotAvailable": "उपलब्ध नहीं",
-      "Section": "पसंदीदा एजेंट प्रदाता"
-    }
+      "Section": "पसंदीदा एजेंट प्रदाता",
+      "Preferred": "Preferred"
+    },
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini"
   },
   "AISummary": {
     "Copy": "प्रतिलिपि",
@@ -435,8 +442,40 @@
       "CopilotLabel": "GitHub Copilot",
       "CopilotDetected": "पाया गया",
       "CopilotNotDetected": "नहीं पाया गया",
-      "CopilotSignupHint": "GitHub Copilot को वैकल्पिक एजेंट के रूप में आज़माना चाहते हैं? github.com/features/copilot/plans पर मुफ्त योजना के लिए साइन अप करें (प्रति माह 50 एजेंट/चैट अनुरोध शामिल), फिर Copilot CLI इंस्टॉल करें और \"copilot --login\" चलाएं।",
-      "CopilotFlatUsage": "इसके लिए उपयोग: AI एजेंट (Claude का विकल्प)। API कुंजी की आवश्यकता नहीं — आपके GitHub लॉगिन का उपयोग करता है।"
+      "CopilotSignupHint": "GitHub Copilot को वैकल्पिक एजेंट के रूप में आज़माना चाहते हैं? github.com/features/copilot/plans पर मुफ्त योजना के लिए साइन अप करें (प्रति माह 50 एजेंट/चैट अनुरोध शामिल), फिर Copilot CLI इंस्टॉल करें और \"copilot login\" चलाएं।",
+      "CopilotFlatUsage": "इसके लिए उपयोग: AI एजेंट (Claude का विकल्प)। API कुंजी की आवश्यकता नहीं — आपके GitHub लॉगिन का उपयोग करता है।",
+      "Guide": {
+        "Step1Title": "चरण 1 — इन्हें ध्यान से पढ़ें",
+        "Step1Need": "आपको 2 चीज़ें चाहिए:",
+        "Step1Item1": "Gemini API key — AI सारांश और लाइव ट्रांसक्रिप्शन के लिए",
+        "Step1Item2": "GitHub Copilot CLI या Claude Code CLI — AI agent के लिए",
+        "Step2Title": "चरण 2 — (मुफ़्त) Gemini API Key प्राप्त करें",
+        "Step2Desc1": "क्लिक करें ",
+        "Step2GetKey": "API Key प्राप्त करें",
+        "Step2Desc2": " मुफ़्त Gemini API key बनाने के लिए। अधिक जानकारी ",
+        "Step2Studio": "Google AI Studio",
+        "Step3Title": "चरण 3 — (मुफ़्त) GitHub Copilot CLI प्राप्त करें",
+        "Step3Install": "क्लिक करें ",
+        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallSuffix": " या त्वरित इंस्टॉल:",
+        "Step3Login": "चलाएँ: ",
+        "Step3LoginDesc": " (मुफ़्त, 50 चैट/माह)",
+        "Step3Refresh": "Copilot का पता लगाने के लिए नीचे रिफ़्रेश पर क्लिक करें।",
+        "Step3Select": "पसंदीदा के रूप में सेट करने के लिए नीचे GitHub Copilot पर क्लिक करें।",
+        "Step4Title": "चरण 4 — (वैकल्पिक, सशुल्क) Claude Code CLI प्राप्त करें",
+        "Step4Already": "अगर आपने पहले Claude Code इंस्टॉल किया है तो संभवतः आपके पास पहले से है।",
+        "Step4Install": "क्लिक करें ",
+        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallSuffix": " या त्वरित इंस्टॉल:",
+        "Step4Mac": "macOS / Linux: ",
+        "Step4Win": "Windows: ",
+        "Step4WinReq": "आवश्यक है ",
+        "Step4GitWin": "Git for Windows",
+        "Step4Auth": "चलाएँ: ",
+        "Step4AuthDesc": " (Claude Pro या Max प्लान आवश्यक)",
+        "Step4Refresh": "Claude Code का पता लगाने के लिए नीचे रिफ़्रेश पर क्लिक करें।",
+        "Step4Select": "पसंदीदा के रूप में सेट करने के लिए नीचे Claude Code पर क्लिक करें।"
+      }
     },
     "Device": {
       "Close": "बंद करें",
