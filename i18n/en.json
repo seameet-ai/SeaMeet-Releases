@@ -223,6 +223,12 @@
     "CommandHelp": "Commands: /new · /clear · /cost · /help",
     "GlobalTitle": "AI Agent",
     "GoToSettings": "Open Settings",
+    "LiveAction": {
+      "ActionItems": "Action Items",
+      "Summarize": "Summarize",
+      "Translate": "Translate",
+      "WhoSaidWhat": "Who Said What"
+    },
     "Mode": {
       "Ask": "Ask",
       "Code": "Code",
@@ -265,6 +271,7 @@
     "SendButton": "Send",
     "SendPlaceholder": "Ask anything... (Enter to send, Shift+Enter for newline)",
     "SessionCost": "Session: {{inputTokens}} in / {{outputTokens}} out tokens",
+    "SectionTitle": "AI Agent",
     "Sessions": "Sessions",
     "StopButton": "Stop",
     "Streaming": {
@@ -359,12 +366,15 @@
   "AudioControls": {
     "AudioCapture": "Audio Capture",
     "AudioMix": "Audio Mix",
+    "AudioSettings": "Audio Settings",
     "AudioSource": "Audio Source:",
     "Microphone": "Microphone",
     "MicrophoneGainWarning": "High microphone gain can pick up speaker playback even when \"System Audio\" is off. Use headphones or lower microphone gain for mic-only recordings.",
+    "MuteMic": "Mute Microphone",
     "RecordingDefaultMicrophone": "Default Microphone",
     "RecordingSettings": "Recording settings",
-    "RefreshMicrophoneList": "Refresh microphone list"
+    "RefreshMicrophoneList": "Refresh microphone list",
+    "UnmuteMic": "Unmute Microphone"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO DETECT",
@@ -560,7 +570,13 @@
         "Step4Auth": "Run: ",
         "Step4AuthDesc": " (requires Claude Pro or Max plan)",
         "Step4Refresh": "Click refresh below to detect Claude Code.",
-        "Step4Select": "Click Claude Code below to set as preferred."
+        "Step4Select": "Click Claude Code below to set as preferred.",
+        "StepComplete": {
+          "AgentBoth": "Both Claude and Copilot are configured",
+          "AgentClaude": "Claude is configured",
+          "AgentCopilot": "Copilot is configured",
+          "Summary": "Setup complete"
+        }
       }
     },
     "CurrentPlan": "Current Plan",
@@ -857,6 +873,7 @@
     "Label": "FLASHBACK",
     "LearnAbout": "Learn about Flashback",
     "Off": "Off",
+    "Preparing": "Preparing...",
     "Ready": "Ready",
     "ReadyQuestion": "Ready?",
     "ScreenFlashback": "Screen Flashback",
@@ -1055,8 +1072,11 @@
     "CloseTooltip": "Close tooltip",
     "FailedToLoadScreens": "Failed to load screens. Please try again.",
     "FailedToLoadWindows": "Failed to load windows. Please try again.",
+    "MicMuted": "Mic Muted",
+    "Microphone": "Microphone",
     "MicrophoneMuted": "Microphone: Muted",
     "MicrophoneSettings": "Microphone Settings",
+    "MuteMicrophone": "Mute Microphone",
     "MuteNoMicrophone": "Mute (No Microphone)",
     "NoMicrophonesFound": "No microphones found",
     "NoScreensDetected": "No screens detected.",
@@ -1093,6 +1113,9 @@
     "SegmentCount_other": "{{count}} segments",
     "WaitingForConnection": "Connecting...",
     "WaitingForSpeech": "Waiting for speech..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live Transcription"
   },
   "IdleCompactView": {
     "ArmFlashback": "Arm Flashback",
@@ -1256,9 +1279,16 @@
     "CodecInfo": "Codec information",
     "MoreOptions": "More options"
   },
+  "Recording": {
+    "Paused": "Paused",
+    "Preparing": "Preparing",
+    "PreparingToRecord": "Preparing to record..."
+  },
   "RecordingControls": {
     "AudioRecording": "Audio recording",
     "ContinueRecording": "Continue Recording",
+    "MarkEvent": "Mark Event",
+    "MarkedEvents": "Marked Events",
     "RecordingAudio": "Recording audio..",
     "RecordingMode": "Recording mode",
     "RecordingPreview": "Recording preview",
@@ -1304,7 +1334,8 @@
     "CaptureButton": "Capture Screen or Press Enter",
     "ConfirmButton": "Confirm selection",
     "Monitor": "Monitor",
-    "PrimaryMonitor": "Primary Monitor"
+    "PrimaryMonitor": "Primary Monitor",
+    "StartRecording": "Start Recording"
   },
   "Resume": "Resume",
   "RingMenu": {
