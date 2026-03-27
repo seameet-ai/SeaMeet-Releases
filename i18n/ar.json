@@ -1,14 +1,17 @@
 {
+  "AI": {
+    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
+  },
   "AIAgent": {
     "DisabledBadge": "معطّل",
     "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
     "DisabledTabHint": "تم تعطيل AI Agent — قم بتمكينه في الإعدادات → AI Agent & Cowork",
     "EnableToggle": "تمكين وكيل الذكاء الاصطناعي والعمل المشترك",
     "EnableToggleDesc": "يتطلب Claude CLI أو GitHub Copilot",
+    "LinkCopied": "تم النسخ!",
     "MenuItem": "وكيل الذكاء الاصطناعي والعمل المشترك",
     "PageTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
     "SectionTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
-    "LinkCopied": "تم النسخ!",
     "SubscribeMsg": "يتطلب وكيل الذكاء الاصطناعي اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي.",
     "SubscribeCTA": "اشترك للفتح"
   },
@@ -21,18 +24,18 @@
     "ClaudeKey": {
       "ClearKey": "إزالة المفتاح المحفوظ",
       "CliInstalled": "تم التثبيت ({{version}})",
-      "CliNotFound": "CLI غير موجود",
       "CliInstallLink": "قم بتثبيت كود كلود →",
+      "CliNotFound": "CLI غير موجود",
       "CliNotInstalled": "لم يتم العثور على Claude CLI — قم بتثبيته وتسجيل الدخول للمصادقة:",
       "CliSection": "كلود كود CLI",
       "DefaultModel": "النموذج الافتراضي",
       "GetKeyLink": "احصل على مفتاح API من Anthropic Console →",
       "HideKey": "إخفاء المفتاح",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
+      "InstallMac": "ماك / لينكس:",
+      "InstallWin": "ويندوز (باورشيل):",
       "ApiKeyTitle": "مفتاح API",
       "KeyInvalid": "مفتاح غير صالح",
-      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholder": "سك-النمل-...",
       "KeyPlaceholderSaved": "••••••••• (أنقذ)",
       "KeyTesting": "اختبار...",
       "ModelHaiku": "Claude Haiku 4.5",
@@ -45,6 +48,8 @@
       "QuotaLoading": "جارٍ تحميل الحصة...",
       "QuotaRemaining": "{{remaining}} / {{limit}} الرموز المميزة المتبقية",
       "QuotaResetDate": "إعادة التعيين على {{date}}",
+      "Refresh": "أعد اكتشاف كلود",
+      "Remove": "إزالة التكامل كلود",
       "Saving": "توفير...",
       "Section": "مفتاح Claude API (الوكيل)",
       "ShowKey": "إظهار المفتاح",
@@ -53,17 +58,36 @@
       "SourceKeyServer": "تحت إدارة SeaMeet",
       "SourceLabel": "المصدر النشط:",
       "SourceNone": "لم يتم تكوينه",
-      "TestKey": "حفظ والتحقق",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "TestKey": "حفظ والتحقق"
+    },
+    "Copilot": {
+      "Authenticated": "تم المصادقة",
+      "DefaultModel": "النموذج الافتراضي",
+      "InstallGuide": "اتبع ",
+      "InstallGuideLink": "دليل البدء",
+      "InstallGuideSuffix": " للتثبيت، ثم قم بتشغيل:",
+      "NotDetected": "غير موجود — قم بالتثبيت والمصادقة:",
+      "Refresh": "إعادة الكشف عن مساعد الطيار",
+      "Remove": "إزالة التكامل Copilot",
+      "Section": "جيثب مساعد الطيار"
+    },
+    "Provider": {
+      "Detected": "تم الكشف",
+      "Hint": "يمكنك أيضًا تبديل المزودين لكل محادثة في لوحة الدردشة.",
+      "NotAvailable": "غير متاح",
+      "Preferred": "المفضل",
+      "Section": "مزود الوكيل المفضل"
     },
     "ClearKey": "إزالة المفتاح المحفوظ",
     "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
     "EnableToggleDesc": "يتطلب مفتاح Gemini API مجاني",
+    "DefaultModel": "النموذج الافتراضي",
+    "GeminiSection": "تَوأَم",
     "GetKeyLink": "احصل على مفتاح API مجاني من Google AI Studio →",
     "GroupTitle": "ميزات الذكاء الاصطناعي",
     "HideKey": "إخفاء المفتاح",
     "KeyInvalid": "مفتاح غير صالح",
+    "KeyManagedInBilling": "تتم إدارة مفتاح API في إدارة الاشتراك → مفاتيح API",
     "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
     "KeyPlaceholder": "ايزاسي...",
     "KeyPlaceholderSaved": "••••••••• (أنقذ)",
@@ -75,14 +99,14 @@
     "ModelLabel": "نموذج الجوزاء",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLite": "الجوزاء 2.5 فلاش لايت",
       "Gemini25FlashLiteSub": "رخيصة للغاية",
       "Gemini25FlashSub": "أرخص خيار مستقر",
-      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25Pro": "الجوزاء 2.5 برو",
       "Gemini25ProSub": "أفضل المنطق المستقر",
-      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3Flash": "الجوزاء 3 فلاش",
       "Gemini3FlashSub": "موصى به · سريع + قادر",
-      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3Pro": "الجوزاء 3 برو",
       "Gemini3ProSub": "القدرة القصوى"
     },
     "ModelSection": "نموذج الذكاء الاصطناعي",
@@ -97,32 +121,13 @@
     "ShowAllModels": "عرض جميع النماذج ({{count}})",
     "ShowFewerModels": "عرض نماذج أقل",
     "ShowKey": "إظهار المفتاح",
-    "TestKey": "حفظ والتحقق",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "تم المصادقة",
-      "DefaultModel": "النموذج الافتراضي",
-      "InstallGuide": "اتبع ",
-      "InstallGuideLink": "دليل البدء",
-      "InstallGuideSuffix": " للتثبيت، ثم قم بتشغيل:",
-      "NotDetected": "غير موجود — قم بالتثبيت والمصادقة:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "تم الكشف",
-      "Hint": "يمكنك أيضًا تبديل المزودين لكل محادثة في لوحة الدردشة.",
-      "NotAvailable": "غير متاح",
-      "Section": "مزود الوكيل المفضل",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "حفظ والتحقق"
   },
   "AISummary": {
     "ApplyMerge": "تطبيق",
-    "ConfirmRename": "Confirm rename",
+    "SubscribeToGenerate": "اشترك لإنشاء ملخصات الذكاء الاصطناعي والنصوص وعناصر العمل من تسجيلاتك.",
+    "SubscribeToRegenerate": "اشترك لإعادة إنشاء ملخصات الذكاء الاصطناعي.",
+    "ConfirmRename": "تأكيد إعادة التسمية",
     "Copy": "ينسخ",
     "EditSegmentSpeaker": "انقر لإعادة تعيين هذا القطاع",
     "EnableRequired": "قم بتمكين ميزات الذكاء الاصطناعي في الإعدادات → ميزات الذكاء الاصطناعي لرؤية ملخصات الذكاء الاصطناعي.",
@@ -147,7 +152,7 @@
     "ExportMarkdown": "نسخ كتخفيض السعر",
     "ExportSrt": "انسخ كـ SRT",
     "Generate": "إنشاء ملخص",
-    "LoadingVersion": "Loading version...",
+    "LoadingVersion": "جارٍ تحميل النسخة...",
     "Maximize": "قم بالتوسيع إلى العرض الكامل",
     "MergeInto": "دمج مع…",
     "Minimize": "تصغير",
@@ -156,18 +161,19 @@
     "NoDecisions": "لم يتم تحديد أي قرارات رئيسية.",
     "NoSummary": "لا يوجد ملخص لمنظمة العفو الدولية حتى الآن.",
     "NoSummaryText": "الملخص غير متوفر.",
-    "NotAvailableForVersion": "Not available for this version.",
+    "NotAvailableForVersion": "غير متوفر لهذا الإصدار.",
     "NoTranscript": "النص غير متوفر.",
     "PipelineError": "فشلت معالجة الذكاء الاصطناعي. حاول التجديد.",
     "PipelineTranscript": "خط أنابيب الذكاء الاصطناعي",
     "Processing": "جارٍ إنشاء الملخص...",
     "Queued": "في قائمة الانتظار للمعالجة...",
     "Regenerate": "إعادة إنشاء الملخص",
-    "RenameSpeaker": "Rename speaker",
+    "RenameSpeaker": "إعادة تسمية المتحدث",
     "Retry": "أعد المحاولة",
     "SeekToTimestamp": "تسعى إلى هذا الطابع الزمني",
+    "ConfigureApiKey": "قم بتهيئة مفتاح Gemini API لإنشاء ملخصات ونصوص بالذكاء الاصطناعي.",
+    "ConfigureKey": "تهيئة مفتاح API",
     "SetupRequired": "قم بتكوين مفتاح Gemini API الخاص بك في الإعدادات → ميزات الذكاء الاصطناعي لتمكين ملخصات الذكاء الاصطناعي.",
-    "Speakers": "المتحدثون",
     "Tab": {
       "ActionItems": "الإجراءات",
       "Chapters": "فصول",
@@ -175,30 +181,27 @@
       "Summary": "ملخص",
       "Transcription": "نص"
     },
+    "ScreenshotTabTitle": "تحليل الذكاء الاصطناعي",
     "TabTitle": "ملخص الذكاء الاصطناعي",
     "Topics": "المواضيع:",
-    "Version": {
-      "Latest": "Latest",
-      "Live": "Live"
-    },
-    "VersionPicker": "Browse version history",
-    "ViewingLive": "Viewing Live transcript",
-    "ViewingVersion": "Viewing v{{n}} of {{total}}",
-    "ViewLatest": "View latest →",
-    "ScreenshotTabTitle": "AI Analysis",
-    "RenameSuggestion": "AI suggests",
-    "NewFileName": "new file name",
-    "ApplyRename": "Rename",
-    "Renaming": "Renaming…",
+    "Speakers": "المتحدثون",
+    "VersionPicker": "تصفح تاريخ الإصدار",
+    "ViewingLive": "عرض النص المباشر",
+    "ViewingVersion": "عرض v{{n}} من {{total}}",
+    "ViewLatest": "عرض الأحدث →",
+    "RenameSuggestion": "يقترح الذكاء الاصطناعي",
+    "NewFileName": "اسم الملف الجديد",
+    "ApplyRename": "إعادة تسمية",
+    "Renaming": "إعادة تسمية…",
     "RenamedTo": "تمت إعادة التسمية إلى “{{name}}”",
     "RevertRename": "لا تغير",
-    "RenameTo": "Rename: {{name}}",
-    "RenameApplied": "File renamed to '{{name}}'",
-    "RenameError": "Failed to rename file",
-    "SubscribeToGenerate": "اشترك لإنشاء ملخصات الذكاء الاصطناعي والنصوص وعناصر العمل من تسجيلاتك.",
-    "SubscribeToRegenerate": "اشترك لإعادة إنشاء ملخصات الذكاء الاصطناعي.",
-    "ConfigureApiKey": "قم بتهيئة مفتاح Gemini API لإنشاء ملخصات ونصوص بالذكاء الاصطناعي.",
-    "ConfigureKey": "تهيئة مفتاح API"
+    "RenameTo": "إعادة التسمية: {{name}}",
+    "RenameApplied": "تمت إعادة تسمية الملف إلى \"{{name}}\"",
+    "RenameError": "فشل في إعادة تسمية الملف",
+    "Version": {
+      "Latest": "أحدث",
+      "Live": "يعيش"
+    }
   },
   "About": {
     "AppStoreBuild": "إصدار متجر التطبيقات",
@@ -220,6 +223,12 @@
     "CommandHelp": "الأوامر: /جديد · /واضح · /التكلفة · /مساعدة",
     "GlobalTitle": "وكيل منظمة العفو الدولية",
     "GoToSettings": "افتح الإعدادات",
+    "LiveAction": {
+      "ActionItems": "عناصر العمل",
+      "Summarize": "تلخيص",
+      "Translate": "يترجم",
+      "WhoSaidWhat": "من قال ماذا"
+    },
     "Mode": {
       "Ask": "بسأل",
       "Code": "شفرة",
@@ -262,6 +271,7 @@
     "SendButton": "يرسل",
     "SendPlaceholder": "اسأل أي شيء... (أدخل للإرسال، Shift+Enter للسطر الجديد)",
     "SessionCost": "الجلسة: {{inputTokens}} في /{{outputTokens}} الرموز المميزة",
+    "SectionTitle": "وكيل منظمة العفو الدولية",
     "Sessions": "الجلسات",
     "StopButton": "قف",
     "Streaming": {
@@ -278,11 +288,7 @@
     },
     "Title": "وكيل منظمة العفو الدولية",
     "ToolCall": {
-      "AndMoreLines_zero": "",
       "AndMoreLines_one": "... و{{count}} أسطر أخرى",
-      "AndMoreLines_two": "",
-      "AndMoreLines_few": "",
-      "AndMoreLines_many": "",
       "AndMoreLines_other": "... و{{count}} أسطر أخرى",
       "Executing": "جاري التنفيذ...",
       "Input": "مدخل",
@@ -292,55 +298,16 @@
       "ShowDetails": "إظهار التفاصيل"
     },
     "ToolGroup": {
-      "Actions_zero": "",
       "Actions_one": "{{count}} الإجراءات",
-      "Actions_two": "",
-      "Actions_few": "",
-      "Actions_many": "",
       "Actions_other": "{{count}} الإجراءات",
-      "Completed_zero": "",
       "Completed_one": "اكتمل {{count}}",
-      "Completed_two": "",
-      "Completed_few": "",
-      "Completed_many": "",
       "Completed_other": "اكتمل {{count}}",
-      "Running_zero": "",
       "Running_one": "{{count}} قيد التشغيل",
-      "Running_two": "",
-      "Running_few": "",
-      "Running_many": "",
       "Running_other": "{{count}} قيد التشغيل"
-    },
-    "Speakers": "المتحدثون",
-    "MergeInto": "دمج مع…",
-    "ApplyMerge": "تطبيق",
-    "EditSegmentSpeaker": "انقر لإعادة تعيين هذا القطاع",
-    "VersionPicker": "تصفح تاريخ الإصدار",
-    "ViewingLive": "عرض النص المباشر",
-    "ViewingVersion": "عرض v{{n}} من {{total}}",
-    "ViewLatest": "عرض الأحدث →",
-    "LoadingVersion": "جارٍ تحميل النسخة...",
-    "NotAvailableForVersion": "غير متوفر لهذا الإصدار.",
-    "ConfirmRename": "تأكيد إعادة التسمية",
-    "RenameSpeaker": "إعادة تسمية المتحدث",
-    "RenameSuggestion": "يقترح الذكاء الاصطناعي",
-    "NewFileName": "اسم ملف جديد",
-    "ApplyRename": "إعادة التسمية",
-    "Renaming": "جارٍ إعادة التسمية…",
-    "RenameTo": "إعادة التسمية: {{name}}",
-    "RenameApplied": "تمت إعادة تسمية الملف إلى '{{name}}'",
-    "RenameError": "فشل في إعادة تسمية الملف",
-    "Version": {
-      "Latest": "أحدث",
-      "Live": "يعيش"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "قم بتهيئة مفاتيح API لاستخدام وكيل الذكاء الاصطناعي."
   },
   "App": {
     "FailedToEnableFlashback": "فشل في تفعيل العودة للماضي: {{error}}",
@@ -399,15 +366,15 @@
   "AudioControls": {
     "AudioCapture": "التقاط الصوت",
     "AudioMix": "مزج الصوت",
+    "AudioSettings": "إعدادات الصوت",
     "AudioSource": "مصدر الصوت:",
     "Microphone": "ميكروفون",
     "MicrophoneGainWarning": "مستوى الميكروفون العالي يمكن أن يلتقط صوت السماعات حتى عند إيقاف \"صوت النظام\". استخدم سماعات الرأس أو خفض مستوى الميكروفون للتسجيلات التي تقتصر على الميكروفون فقط.",
+    "MuteMic": "كتم صوت الميكروفون",
     "RecordingDefaultMicrophone": "الميكروفون الافتراضي",
     "RecordingSettings": "إعدادات التسجيل",
     "RefreshMicrophoneList": "تحديث قائمة الميكروفونات",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
-    "UnmuteMic": "Unmute Microphone"
+    "UnmuteMic": "إلغاء كتم صوت الميكروفون"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "الكشف التلقائي",
@@ -443,31 +410,72 @@
     "MeetingFallbackName": "الاجتماع"
   },
   "BatchDownload": {
-    "Title": "تنزيل الاجتماعات",
-    "DownloadAll": "تنزيل الكل",
-    "Resume": "استئناف التنزيل",
-    "RetryFailed": "إعادة تنزيل الفاشل",
-    "Preparing": "جارٍ فحص الاجتماعات...",
-    "TotalMeetings": "إجمالي الاجتماعات",
-    "AlreadyDownloaded": "تم التنزيل مسبقًا",
-    "ToDownload": "للتنزيل",
     "AllDownloaded": "تم تنزيل جميع الاجتماعات مسبقًا!",
-    "StartDownload": "بدء التنزيل",
-    "Downloading": "جارٍ التنزيل...",
+    "AlreadyDownloaded": "تم التنزيل مسبقًا",
     "Cancel": "إلغاء",
     "Close": "إغلاق",
-    "Complete": "اكتمل التنزيل",
-    "Downloaded": "تم التنزيل",
-    "NoAudio": "لا يتوفر صوت",
-    "Failed": "فشل",
-    "Skipped": "تم التخطي",
-    "Retry": "إعادة تنزيل الفاشل",
-    "More": "المزيد",
     "ContactSupport": "إذا استمرت المشكلة، تواصل مع seameet@seasalt.ai",
+    "DownloadAll": "تنزيل الكل",
+    "Downloaded": "تم التنزيل",
+    "Downloading": "جارٍ التنزيل...",
+    "Failed": "فشل",
+    "More": "المزيد",
+    "NoAudio": "لا يتوفر صوت",
+    "Preparing": "جارٍ فحص الاجتماعات...",
+    "Resume": "استئناف التنزيل",
+    "Retry": "إعادة تنزيل الفاشل",
+    "RetryFailed": "إعادة تنزيل الفاشل",
+    "Skipped": "تم التخطي",
+    "StartDownload": "بدء التنزيل",
+    "Complete": "اكتمل التنزيل",
     "Stats": "إحصائيات التنزيل",
+    "Title": "تنزيل الاجتماعات",
+    "ToDownload": "للتنزيل",
+    "TotalMeetings": "إجمالي الاجتماعات",
     "ViewDetails": "عرض التفاصيل"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "تفعيل النسخ المباشر وتحليل ما بعد الاجتماع بالذكاء الاصطناعي",
+      "ScreenshotAnalysis": "تفعيل تحليل لقطات الشاشة بالذكاء الاصطناعي",
+      "CTA": "تسجيل الدخول والاشتراك",
+      "LearnMore": "معرفة المزيد"
+    },
+    "Explainer": {
+      "Title": "كيف يعمل SeaMeet AI",
+      "Subtitle": "BYOK — أحضر مفتاحك الخاص",
+      "WhatIsBYOK": "مع BYOK، تنتقل تسجيلاتك وبياناتك مباشرة من جهازك إلى Google أو Anthropic. لا شيء يمر عبر خوادم SeaMeet — أقصى خصوصية لك ولفريقك.",
+      "WhatYouNeed": "ما ستقوم بإعداده بعد الاشتراك",
+      "GeminiTitle": "مفتاح Google AI Studio (مجاني محدود)",
+      "GeminiDesc": "يشغّل النسخ المباشر وملخصات ما بعد الاجتماع والتحليل. تقدم Google مستوى مجاني سخي — معظم المستخدمين لا يدفعون شيئاً.",
+      "AgentTitle": "وكيل الذكاء الاصطناعي — اختر خياراً واحداً (مجاني محدود)",
+      "AgentOption1": "GitHub Copilot — 50 محادثة مميزة مجانية شهرياً (أو أكثر مع Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — إذا كان لديك Claude Pro أو Max، فأنت مغطى",
+      "AgentOption3": "مفتاح Anthropic API — للوصول المباشر إلى API",
+      "Continue": "المتابعة للاشتراك",
+      "WhyBYOK": {
+        "Title": "لماذا أحضر مفتاحي الخاص؟",
+        "Answer": "خصوصية أفضل بكثير — تبقى بياناتك مع مؤسسات موثوقة مثل Google و Anthropic، وليس SeaMeet. المستويات المجانية من هؤلاء المزودين سخية وستكفي معظم المستخدمين لفترة طويلة."
+      },
+      "WhyMonthly": {
+        "Title": "لماذا يفرض SeaMeet رسوماً شهرية؟",
+        "Answer": "يتم تحديث SeaMeet بسرعة مع ميزات ذكاء اصطناعي جديدة. اشتراكك يبقيك على أحدث إصدار. بدونه، ستدفع ترخيصاً لمرة واحدة وتبقى مع ميزات مجمدة — مثل شراء Office 2012 والبقاء عليه للأبد."
+      }
+    },
+    "Coupon": {
+      "Title": "عرض الإطلاق",
+      "SEAMEET100": "سيميت100",
+      "SEAMEET100Desc": "الشهر الأول مجاناً — لأول 100 مستخدم",
+      "FallbackDesc": "إذا نفد كود SEAMEET100، أرسل بريداً إلكترونياً إلى coupon@seameet.ai للحصول على كود آخر (خصم 10% لمدة عام أو كود شهر مجاني آخر).",
+      "HowToUse": "أدخل كود الخصم عند الدفع في Stripe."
+    },
+    "PostSetup": {
+      "Title": "أنت جاهز! جربه الآن.",
+      "Desc": "سجل اجتماعاً سريعاً أو التقط لقطة شاشة لتجربة النسخ والتحليل بالذكاء الاصطناعي.",
+      "TryRecording": "بدء التسجيل",
+      "TryScreenshot": "التقاط لقطة شاشة",
+      "Later": "سأجرب لاحقاً"
+    },
     "Banner": {
       "CancelPending": "ينتهي اشتراكك في {{date}}. بعد ذلك، ستتوقف ميزات النسخ والملخصات والذكاء الاصطناعي.",
       "PastDue": "فشل الدفع — تم تعطيل ميزات الذكاء الاصطناعي. قم بتحديث طريقة الدفع لاستعادتها.",
@@ -478,14 +486,15 @@
       "ActiveTitle": "الاشتراك نشط — BYOK Pro",
       "AnthropicHelp": "احصل على مفتاح: ",
       "AnthropicHelpLink": "console.anthropic.com",
-      "AnthropicLabel": "Claude (Anthropic)",
+      "AnthropicLabel": "كلود (أنثروبي)",
       "AnthropicTip": "نصيحة: أرصدة مجانية للحسابات الجديدة. مُضمّن أيضًا إذا كان لديك Claude Pro أو Max.",
       "AnthropicUsage": "يُستخدم لـ: أسئلة AI، تحليل المشاريع",
       "Configured": "تم التكوين",
       "EnterKey": "أدخل مفتاح API",
       "GeminiHelp": "احصل على مفتاح مجاني: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
-      "GeminiLabel": "Gemini (Google AI)",
+      "GeminiLabel": "الجوزاء (جوجل الذكاء الاصطناعي)",
+      "KeySaved": "تم حفظ المفتاح (مخفي)",
       "GeminiUsage": "يُستخدم لـ: النسخ، الملخصات، النسخ المباشر. المفاتيح المجانية تخضع لحدود معدل وحصة Gemini. انتقل إلى خطة Google AI Studio المدفوعة إذا بلغت الحد.",
       "NotConfigured": "غير مُكوّن",
       "SaveContinue": "حفظ ومتابعة",
@@ -494,9 +503,9 @@
       "SecurityNote": "يتم تخزين المفاتيح محليًا على جهازك (مُشفّرة في سلسلة مفاتيح نظام التشغيل). لا يُرسل SeaMeet مفاتيحك إلى خوادمنا أبدًا.",
       "SkipForNow": "تخطّي الآن",
       "Subtitle": "خطوة أخيرة: ربط مفاتيح AI API الخاصة بك.",
+      "TabLabel": "مفاتيح API",
       "Validating": "جارٍ التحقق...",
       "ValidationFailed": "فشل التحقق",
-      "TabLabel": "مفاتيح API",
       "WizardStep": "الخطوة {{current}} من {{total}}",
       "Step1Title": "ربط مفتاح Gemini API الخاص بك",
       "Step1Desc": "يُستخدم للنسخ والملخصات والنسخ المباشر. احصل على مفتاح مجاني من Google AI Studio.",
@@ -506,53 +515,23 @@
       "Step3Desc": "تم تكوين كلا مفتاحَي API. يمكنك تحديثهما في أي وقت أدناه.",
       "Next": "التالي",
       "Done": "تم",
-      "RemoveKey": "إزالة المفتاح المحفوظ",
       "TestKey": "اختبار المفتاح",
       "TestingKey": "جارٍ الاختبار...",
+      "RemoveKey": "إزالة المفتاح المحفوظ",
       "StepCopilotTitle": "ربط GitHub Copilot (اختياري)",
       "StepCopilotDesc": "تم اكتشاف GitHub Copilot على نظامك. اختر مزود الوكيل المفضل.",
-      "CopilotStatus": "GitHub Copilot",
+      "CopilotStatus": "جيثب مساعد الطيار",
       "Authenticated": "تم المصادقة",
       "CopilotUsage": "تعيين كمزود وكيل مفضل؟",
       "CopilotFreeWarning": "يتضمن GitHub Copilot المجاني 50 طلب وكيل/دردشة فقط شهريًا. رائع للاختبار السريع، لكن قد تصل للحد بسرعة. قم بالترقية إلى Copilot Pro لحدود أعلى، أو استخدم SeaMeet Desktop Pro للوصول غير المحدود.",
       "KeepClaude": "إبقاء Claude كافتراضي",
       "UseCopilot": "استخدام GitHub Copilot كافتراضي",
-      "CopilotLabel": "GitHub Copilot",
+      "CopilotLabel": "جيثب مساعد الطيار",
       "CopilotDetected": "تم الاكتشاف",
       "CopilotNotDetected": "غير موجود",
       "CopilotSignupHint": "هل تريد تجربة GitHub Copilot كوكيل بديل؟ سجل في خطة مجانية على github.com/features/copilot/plans (تتضمن 50 طلب وكيل/دردشة شهريًا)، ثم ثبت Copilot CLI وشغل \"copilot login\".",
       "CopilotFlatUsage": "يُستخدم لـ: وكيل AI (بديل لـ Claude). لا حاجة لمفتاح API — يستخدم تسجيل دخول GitHub الخاص بك.",
       "Guide": {
-        "Step1Title": "الخطوة 1 — اقرأ هذا بعناية",
-        "Step1Need": "ستحتاج إلى شيئين:",
-        "Step1Item1": "مفتاح API لـ Gemini — لملخص الذكاء الاصطناعي والنسخ المباشر",
-        "Step1Item2": "GitHub Copilot CLI أو Claude Code CLI — لوكيل الذكاء الاصطناعي",
-        "Step2Title": "الخطوة 2 — (مجاني) احصل على مفتاح API لـ Gemini",
-        "Step2Desc1": "انقر على ",
-        "Step2GetKey": "الحصول على مفتاح API",
-        "Step2Desc2": " لإنشاء مفتاح API مجاني لـ Gemini. مزيد من المعلومات على ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "الخطوة 3 — (مجاني) احصل على GitHub Copilot CLI",
-        "Step3Install": "انقر على ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " أو تثبيت سريع:",
-        "Step3Login": "شغّل: ",
-        "Step3LoginDesc": " (مجاني، 50 محادثة/شهر)",
-        "Step3Refresh": "انقر على تحديث أدناه لاكتشاف Copilot.",
-        "Step3Select": "انقر على GitHub Copilot أدناه لتعيينه كمفضّل.",
-        "Step4Title": "الخطوة 4 — (اختياري، مدفوع) احصل على Claude Code CLI",
-        "Step4Already": "على الأرجح لديك بالفعل إذا قمت بتثبيت Claude Code سابقًا.",
-        "Step4Install": "انقر على ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " أو تثبيت سريع:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
-        "Step4WinReq": "يتطلب ",
-        "Step4GitWin": "Git for Windows",
-        "Step4Auth": "شغّل: ",
-        "Step4AuthDesc": " (يتطلب خطة Claude Pro أو Max)",
-        "Step4Refresh": "انقر على تحديث أدناه لاكتشاف Claude Code.",
-        "Step4Select": "انقر على Claude Code أدناه لتعيينه كمفضّل.",
         "Intro": "يحتوي SeaMeet AI على مجالين مستقلين — قم بإعداد ما تحتاجه.",
         "SectionAiSummary": "ملخص AI",
         "SectionAiSummaryBadge": "مطلوب",
@@ -562,31 +541,96 @@
         "OptionCopilotTitle": "GitHub Copilot CLI (مجاني)",
         "OptionClaudeTitle": "Claude Code CLI (اختياري، مدفوع)",
         "Or": "أو",
+        "Step1Title": "الخطوة 1 — اقرأ هذا بعناية",
+        "Step1Need": "ستحتاج إلى شيئين:",
+        "Step1Item1": "مفتاح API لـ Gemini — لملخص الذكاء الاصطناعي والنسخ المباشر",
+        "Step1Item2": "GitHub Copilot CLI أو Claude Code CLI — لوكيل الذكاء الاصطناعي",
+        "Step2Title": "الخطوة 2 — (مجاني) احصل على مفتاح API لـ Gemini",
+        "Step2Desc1": "انقر على ",
+        "Step2GetKey": "الحصول على مفتاح API",
+        "Step2Desc2": " لإنشاء مفتاح API مجاني لـ Gemini. مزيد من المعلومات على ",
+        "Step2Studio": "استوديو جوجل للذكاء الاصطناعي",
+        "Step3Title": "الخطوة 3 — (مجاني) احصل على GitHub Copilot CLI",
+        "Step3Install": "انقر على ",
+        "Step3InstallLink": "جيثب مساعد الطيار CLI",
+        "Step3InstallSuffix": " أو تثبيت سريع:",
+        "Step3Login": "شغّل: ",
+        "Step3LoginDesc": " (مجاني، 50 محادثة/شهر)",
+        "Step3Refresh": "انقر على تحديث أدناه لاكتشاف Copilot.",
+        "Step3Select": "انقر على GitHub Copilot أدناه لتعيينه كمفضّل.",
+        "Step4Title": "الخطوة 4 — (اختياري، مدفوع) احصل على Claude Code CLI",
+        "Step4Already": "على الأرجح لديك بالفعل إذا قمت بتثبيت Claude Code سابقًا.",
+        "Step4Install": "انقر على ",
+        "Step4InstallLink": "كلود كود CLI",
+        "Step4InstallSuffix": " أو تثبيت سريع:",
+        "Step4Mac": "ماك / لينكس:",
+        "Step4Win": "ويندوز:",
+        "Step4WinReq": "يتطلب ",
+        "Step4GitWin": "جيت لنظام التشغيل Windows",
+        "Step4Auth": "شغّل: ",
+        "Step4AuthDesc": " (يتطلب خطة Claude Pro أو Max)",
+        "Step4Refresh": "انقر على تحديث أدناه لاكتشاف Claude Code.",
+        "Step4Select": "انقر على Claude Code أدناه لتعيينه كمفضّل.",
         "StepComplete": {
-          "AgentBoth": "Both Claude and Copilot are configured",
-          "AgentClaude": "Claude is configured",
-          "AgentCopilot": "Copilot is configured",
-          "Summary": "Setup complete"
+          "AgentBoth": "تم تكوين كل من Claude وCopilot",
+          "AgentClaude": "تم تكوين كلود",
+          "AgentCopilot": "تم تكوين مساعد الطيار",
+          "Summary": "اكتمل الإعداد"
         }
       }
     },
+    "CurrentPlan": "الخطة الحالية",
     "Device": {
       "Close": "إغلاق",
-      "DaysAgo_zero": "منذ {{count}} يوم",
       "DaysAgo_one": "منذ {{count}} يوم",
-      "DaysAgo_two": "منذ {{count}} يومين",
-      "DaysAgo_few": "منذ {{count}} أيام",
-      "DaysAgo_many": "منذ {{count}} يومًا",
       "DaysAgo_other": "منذ {{count}} يوم",
+      "Error": "فشل تحميل الأجهزة: {{error}}",
       "LastUsed": "آخر استخدام {{when}}",
       "LimitDescription": "يعمل SeaMeet Pro على ما يصل إلى 3 أجهزة في نفس الوقت. سجّل الخروج من جهاز لا تستخدمه لإخلاء مكان.",
       "LimitTitle": "تم بلوغ حد الأجهزة",
+      "Loading": "جارٍ تحميل الأجهزة...",
+      "NoDevices": "لم يتم تسجيل أي أجهزة",
       "SigningOut": "جارٍ تسجيل الخروج...",
       "SignOut": "تسجيل الخروج",
+      "TabLabel": "الأجهزة",
       "Today": "اليوم",
       "Yesterday": "أمس",
-      "Error": "فشل تحميل الأجهزة: {{error}}",
-      "Loading": "جارٍ تحميل الأجهزة..."
+      "YourDevices": "أجهزتك"
+    },
+    "FAQ": {
+      "Title": "الأسئلة الشائعة",
+      "Free": {
+        "Q1": "ماذا يمكنني أن أفعل بالخطة المجانية؟",
+        "A1": "SeaMeet المجاني هو مسجّل كامل الميزات وأداة لقطات شاشة. يمكنك تسجيل الصوت وتصوير الشاشة والتقاط لقطات شاشة وإدارة جميع تسجيلاتك — مجانًا تمامًا وللأبد.",
+        "Q2": "هل بياناتي خاصة؟",
+        "A2": "نعم. في الخطة المجانية، لا يتم إرسال أي بيانات إلى أي مكان. جميع التسجيلات ولقطات الشاشة والملفات تبقى محلية 100% على جهازك. خصوصيتك محمية بالكامل.",
+        "Q3": "ما المزيد الذي يمكنني الحصول عليه مع خطة مدفوعة؟",
+        "A3": "تضيف الخطط المدفوعة ميزات مدعومة بالذكاء الاصطناعي: النسخ التلقائي وملخصات الاجتماعات وعناصر الإجراءات والنسخ المباشر أثناء الاجتماعات وأسئلة وأجوبة AI حول تسجيلاتك."
+      },
+      "BYOK": {
+        "Q1": "ما هو BYOK؟",
+        "A1": "BYOK تعني أحضر مفتاحك الخاص. ستحتاج إلى مفتاحي API: واحد من Google AI Studio (للنسخ والملخصات) وآخر من GitHub Copilot أو Claude Code (لوكيل الذكاء الاصطناعي). يرشدك معالج إعداد موجه عبر ربط كلا المفتاحين بعد الدفع. عادةً ما يمنحك Google AI Studio مفتاحاً مجانياً. GitHub Copilot يقدم خطة مجانية أيضاً. لذا أنت جاهز لاستخدام مفاتيحك الخاصة مجاناً بشكل محدود. إذا كان لديك اشتراك Claude Pro أو Max، فلا تحتاج إلى مفتاح Anthropic API إضافي.",
+        "Q2": "لماذا اشتراك شهري؟",
+        "A2": "اشتراكك يموّل التحديثات المستمرة ودعم نماذج AI الجديدة وإصلاح الأخطاء والميزات الجديدة. تكاليف API تُدفع بشكل منفصل إلى Google و Anthropic باستخدام مفاتيحك الخاصة.",
+        "Q3": "كيف تعمل التراخيص؟",
+        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
+      },
+      "Desktop": {
+        "Q1": "ما هو Desktop Pro؟",
+        "A1": "يتضمن Desktop Pro مفاتيح AI مدمجة يديرها SeaMeet — لا حاجة لإنشاء أو إدارة مفاتيح API الخاصة بك. فقط اشترك وابدأ باستخدام ميزات AI فورًا.",
+        "Q2": "كيف يختلف عن BYOK؟",
+        "A2": "مع Desktop Pro، يوفر SeaMeet ويدير مفاتيح API نيابةً عنك. لا تحتاج للتسجيل في Google AI Studio أو Anthropic بشكل منفصل.",
+        "Q3": "كيف تعمل التراخيص؟",
+        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
+      },
+      "Sync": {
+        "Q1": "ما هو Sync Pro؟",
+        "A1": "يتضمن Sync Pro كل شيء في Desktop Pro، بالإضافة إلى المزامنة السحابية. يتم مزامنة تسجيلاتك ونسخك وملخصاتك عبر جميع أجهزتك.",
+        "Q2": "ما الذي تتم مزامنته؟",
+        "A2": "التسجيلات والنسخ وملخصات AI وعناصر الإجراءات — كلها تتم مزامنتها عبر أجهزتك. التغييرات على جهاز واحد تظهر على جميع الأجهزة الأخرى.",
+        "Q3": "كيف تعمل التراخيص؟",
+        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
+      }
     },
     "Error": {
       "AlreadySubscribed": "لديك بالفعل اشتراك نشط. استخدم \"إدارة الاشتراك\" لعرضه أو تغييره.",
@@ -595,32 +639,48 @@
       "Unknown": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
     },
     "FreeNote": "الخطة المجانية: تسجيل فقط، بدون ميزات AI، بدون تسجيل دخول. يمكنك دائمًا التسجيل بدون اشتراك.",
+    "ComingSoon": "قريباً",
     "Plans": {
       "BYOK": {
-        "Name": "BYOK Pro",
+        "Name": "بيوك برو",
+        "Price": "7.99 دولارًا شهريًا",
+        "Feature1": "النسخ والملخصات بالذكاء الاصطناعي",
+        "Feature2": "استخدم مفاتيح Gemini & Claude API الخاصة بك",
+        "Feature3": "النسخ المباشر أثناء الاجتماعات",
+        "Feature4": "أسئلة وتحليلات الاجتماع المدعومة بالذكاء الاصطناعي",
         "InfoNote": "ستحتاج إلى إعدادين: Google AI Studio (مجاني)، وGitHub (مجاني) أو Anthropic (مدفوع). سيرشدك معالج الإعداد بعد الدفع:",
         "ConfirmTitle": "قبل الاشتراك",
         "ConfirmContinue": "المتابعة إلى الدفع",
         "ConfirmSignIn": "سجّل الدخول أولاً، ثم ادفع",
         "ConfirmCancel": "إلغاء",
         "ConfirmCopyCheckout": "نسخ الرمز والدفع",
-        "InfoNote.Claude": "إذا كنت مشتركاً في خطة Claude Pro أو Max، فلا تحتاج إلى مفتاح Anthropic API إضافي.",
+        "InfoNote.Claude": "إذا كان لديك اشتراك Claude Pro أو Max، فلا تحتاج إلى مفتاح API إضافي من Anthropic.",
         "InfoNote.Copilot": "GitHub Copilot لديه خطة مجانية أيضاً.",
-        "InfoNote.Gemini": "عادةً ما يمنحك Google AI Studio مفتاحاً مجانياً."
+        "InfoNote.Gemini": "Google AI Studio عادةً يعطيك مفتاحاً مجانياً."
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "سطح المكتب برو",
+        "Price": "15.99 دولارًا شهريًا",
+        "Feature1": "كل شيء في BYOK Pro",
+        "Feature2": "الذكاء الاصطناعي المدمج — لا حاجة إلى مفاتيح API",
+        "Feature3": "دعم الأولوية",
+        "Feature4": "تحليلات متقدمة"
       },
       "Free": {
         "Name": "مجاني",
-        "Price": "$0",
+        "Price": "0 دولار",
         "Feature1": "تسجيل فقط",
         "Feature2": "بدون ميزات AI",
         "Feature3": "بدون تسجيل دخول",
         "Feature4": "متاح دائمًا"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "مزامنة برو",
+        "Price": "25.99 دولارًا شهريًا",
+        "Feature1": "كل شيء في سطح المكتب برو",
+        "Feature2": "المزامنة السحابية عبر الأجهزة",
+        "Feature3": "ميزات التعاون الجماعي",
+        "Feature4": "مكتبة الاجتماعات المشتركة"
       }
     },
     "Privacy": {
@@ -688,130 +748,30 @@
     "PromoHint": "لديك رمز ترويجي؟ أدخله عند الدفع.",
     "Status": {
       "Active": "نشط",
-      "CancelNotice": "ينتهي الاشتراك في {{date}}",
-      "CancelPendingNotice": "سينتهي اشتراكك في {{date}}. ستظل ميزات الذكاء الاصطناعي متاحة حتى ذلك الحين.",
       "Canceled": "ملغى",
       "Canceling": "جارٍ الإلغاء",
+      "CancelNotice": "ينتهي الاشتراك في {{date}}",
+      "CancelPendingNotice": "سينتهي اشتراكك في {{date}}. ستظل ميزات الذكاء الاصطناعي متاحة حتى ذلك الحين.",
       "EndsOn": "ينتهي {{date}}",
+      "DevOverride": "(تجاوز المطورين)",
       "Loading": "جارٍ التحميل...",
       "Manage": "إدارة الاشتراك",
       "None": "لا يوجد اشتراك",
       "PastDue": "متأخر الدفع",
       "Plan": "الخطة",
       "Reactivate": "إعادة التفعيل",
+      "SignIn": "قم بتسجيل الدخول لإدارة الاشتراك",
       "Trial": "تجريبي"
     },
+    "SignInToSubscribe": "سجّل الدخول للاشتراك:",
     "Subscribe": "اشترك",
     "Subscribing": "جارٍ الاشتراك...",
     "UnlockTitle": "افتح ميزات SeaMeet AI",
-    "SignInToSubscribe": "سجّل الدخول للاشتراك:",
-    "CurrentPlan": "الخطة الحالية",
-    "FAQ": {
-      "Title": "الأسئلة الشائعة",
-      "BYOK": {
-        "Q1": "ما هو BYOK؟",
-        "A1": "BYOK تعني أحضر مفتاحك الخاص. ستحتاج إلى مفتاحي API: واحد من Google AI Studio (للنسخ والملخصات) وآخر من GitHub Copilot أو Claude Code (لوكيل الذكاء الاصطناعي). يرشدك معالج إعداد موجه عبر ربط كلا المفتاحين بعد الدفع. عادةً ما يمنحك Google AI Studio مفتاحاً مجانياً. GitHub Copilot يقدم خطة مجانية أيضاً. لذا أنت جاهز لاستخدام مفاتيحك الخاصة مجاناً بشكل محدود. إذا كان لديك اشتراك Claude Pro أو Max، فلا تحتاج إلى مفتاح Anthropic API إضافي.",
-        "Q2": "لماذا اشتراك شهري؟",
-        "A2": "اشتراكك يموّل التحديثات المستمرة ودعم نماذج AI الجديدة وإصلاح الأخطاء والميزات الجديدة. تكاليف API تُدفع بشكل منفصل إلى Google و Anthropic باستخدام مفاتيحك الخاصة.",
-        "Q3": "كيف تعمل التراخيص؟",
-        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
-      },
-      "Desktop": {
-        "Q1": "ما هو Desktop Pro؟",
-        "A1": "يتضمن Desktop Pro مفاتيح AI مدمجة يديرها SeaMeet — لا حاجة لإنشاء أو إدارة مفاتيح API الخاصة بك. فقط اشترك وابدأ باستخدام ميزات AI فورًا.",
-        "Q2": "كيف يختلف عن BYOK؟",
-        "A2": "مع Desktop Pro، يوفر SeaMeet ويدير مفاتيح API نيابةً عنك. لا تحتاج للتسجيل في Google AI Studio أو Anthropic بشكل منفصل.",
-        "Q3": "كيف تعمل التراخيص؟",
-        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
-      },
-      "Sync": {
-        "Q1": "ما هو Sync Pro؟",
-        "A1": "يتضمن Sync Pro كل شيء في Desktop Pro، بالإضافة إلى المزامنة السحابية. يتم مزامنة تسجيلاتك ونسخك وملخصاتك عبر جميع أجهزتك.",
-        "Q2": "ما الذي تتم مزامنته؟",
-        "A2": "التسجيلات والنسخ وملخصات AI وعناصر الإجراءات — كلها تتم مزامنتها عبر أجهزتك. التغييرات على جهاز واحد تظهر على جميع الأجهزة الأخرى.",
-        "Q3": "كيف تعمل التراخيص؟",
-        "A3": "حساب واحد، حتى 3 أجهزة. يتم تحرير الأجهزة غير النشطة تلقائيًا بعد 30 يومًا. يمكنك أيضًا تسجيل الخروج يدويًا من جهاز لإخلاء مكان."
-      },
-      "Free": {
-        "Q1": "ماذا يمكنني أن أفعل بالخطة المجانية؟",
-        "A1": "SeaMeet المجاني هو مسجّل كامل الميزات وأداة لقطات شاشة. يمكنك تسجيل الصوت وتصوير الشاشة والتقاط لقطات شاشة وإدارة جميع تسجيلاتك — مجانًا تمامًا وللأبد.",
-        "Q2": "هل بياناتي خاصة؟",
-        "A2": "نعم. في الخطة المجانية، لا يتم إرسال أي بيانات إلى أي مكان. جميع التسجيلات ولقطات الشاشة والملفات تبقى محلية 100% على جهازك. خصوصيتك محمية بالكامل.",
-        "Q3": "ما المزيد الذي يمكنني الحصول عليه مع خطة مدفوعة؟",
-        "A3": "تضيف الخطط المدفوعة ميزات مدعومة بالذكاء الاصطناعي: النسخ التلقائي وملخصات الاجتماعات وعناصر الإجراءات والنسخ المباشر أثناء الاجتماعات وأسئلة وأجوبة AI حول تسجيلاتك."
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "تفعيل النسخ المباشر وتحليل ما بعد الاجتماع بالذكاء الاصطناعي",
-      "ScreenshotAnalysis": "تفعيل تحليل لقطات الشاشة بالذكاء الاصطناعي",
-      "CTA": "تسجيل الدخول والاشتراك",
-      "LearnMore": "معرفة المزيد"
-    },
-    "Explainer": {
-      "Title": "كيف يعمل SeaMeet AI",
-      "Subtitle": "BYOK — أحضر مفتاحك الخاص",
-      "WhatIsBYOK": "مع BYOK، تنتقل تسجيلاتك وبياناتك مباشرة من جهازك إلى Google أو Anthropic. لا شيء يمر عبر خوادم SeaMeet — أقصى خصوصية لك ولفريقك.",
-      "WhatYouNeed": "ما ستقوم بإعداده بعد الاشتراك",
-      "GeminiTitle": "مفتاح Google AI Studio (مجاني محدود)",
-      "GeminiDesc": "يشغّل النسخ المباشر وملخصات ما بعد الاجتماع والتحليل. تقدم Google مستوى مجاني سخي — معظم المستخدمين لا يدفعون شيئاً.",
-      "AgentTitle": "وكيل الذكاء الاصطناعي — اختر خياراً واحداً (مجاني محدود)",
-      "AgentOption1": "GitHub Copilot — 50 محادثة مميزة مجانية شهرياً (أو أكثر مع Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — إذا كان لديك Claude Pro أو Max، فأنت مغطى",
-      "AgentOption3": "مفتاح Anthropic API — للوصول المباشر إلى API",
-      "Continue": "المتابعة للاشتراك",
-      "WhyBYOK": {
-        "Title": "لماذا أحضر مفتاحي الخاص؟",
-        "Answer": "خصوصية أفضل بكثير — تبقى بياناتك مع مؤسسات موثوقة مثل Google و Anthropic، وليس SeaMeet. المستويات المجانية من هؤلاء المزودين سخية وستكفي معظم المستخدمين لفترة طويلة."
-      },
-      "WhyMonthly": {
-        "Title": "لماذا يفرض SeaMeet رسوماً شهرية؟",
-        "Answer": "يتم تحديث SeaMeet بسرعة مع ميزات ذكاء اصطناعي جديدة. اشتراكك يبقيك على أحدث إصدار. بدونه، ستدفع ترخيصاً لمرة واحدة وتبقى مع ميزات مجمدة — مثل شراء Office 2012 والبقاء عليه للأبد."
-      }
-    },
-    "Coupon": {
-      "Title": "عرض الإطلاق",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "الشهر الأول مجاناً — لأول 100 مستخدم",
-      "FallbackDesc": "إذا نفد كود SEAMEET100، أرسل بريداً إلكترونياً إلى coupon@seameet.ai للحصول على كود آخر (خصم 10% لمدة عام أو كود شهر مجاني آخر).",
-      "HowToUse": "أدخل كود الخصم عند الدفع في Stripe."
-    },
-    "PostSetup": {
-      "Title": "أنت جاهز! جربه الآن.",
-      "Desc": "سجل اجتماعاً سريعاً أو التقط لقطة شاشة لتجربة النسخ والتحليل بالذكاء الاصطناعي.",
-      "TryRecording": "بدء التسجيل",
-      "TryScreenshot": "التقاط لقطة شاشة",
-      "Later": "سأجرب لاحقاً"
-    },
     "Setup": {
       "Done": "لقد أنهيت الإعداد",
       "Later": "سأفعل ذلك لاحقاً"
     }
   },
-  "Billing.BYOK.KeySaved": "تم حفظ المفتاح (مخفي)",
-  "Billing.ComingSoon": "قريبًا",
-  "Billing.Device.NoDevices": "لا توجد أجهزة مسجلة",
-  "Billing.Device.TabLabel": "الأجهزة",
-  "Billing.Device.YourDevices": "أجهزتك",
-  "Billing.Error.NoApiUrl": "خدمة الفوترة غير مُكوّنة. يرجى الاتصال بالدعم.",
-  "Billing.Error.NotAuthenticated": "يرجى تسجيل الدخول أولاً للاشتراك. استخدم قائمة الحساب لتسجيل الدخول.",
-  "Billing.Error.Unknown": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
-  "Billing.Plans.BYOK.Feature1": "نسخ مدعوم بـ AI",
-  "Billing.Plans.BYOK.Feature2": "استخدم مفاتيح Gemini و Claude API الخاصة بك",
-  "Billing.Plans.BYOK.Feature3": "النسخ المباشر أثناء الاجتماعات",
-  "Billing.Plans.BYOK.Feature4": "أسئلة وتحليل اجتماعات مدعوم بـ AI",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "كل ما في BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "AI مدمج — بدون مفاتيح API",
-  "Billing.Plans.Desktop.Feature3": "دعم ذو أولوية",
-  "Billing.Plans.Desktop.Feature4": "تحليلات متقدمة",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "كل ما في Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "مزامنة سحابية عبر الأجهزة",
-  "Billing.Plans.Sync.Feature3": "ميزات التعاون الجماعي",
-  "Billing.Plans.Sync.Feature4": "مكتبة اجتماعات مشتركة",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "(تجاوز المطور)",
-  "Billing.Status.SignIn": "سجّل الدخول لإدارة الاشتراك",
   "BlackHole": {
     "Cancel": "إلغاء",
     "CheckAgain": "التحقق مرة أخرى",
@@ -842,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "تطبيق الاسم",
+    "Back": "رجوع",
     "Cancel": "إلغاء",
     "Close": "إغلاق",
     "Configure": "تكوين",
@@ -862,7 +823,6 @@
     "Send": "يرسل",
     "Starting": "جار البدء...",
     "UnknownApp": "تطبيق غير معروف",
-    "Back": "رجوع",
     "Copied": "تم النسخ!",
     "Copy": "نسخ"
   },
@@ -1112,8 +1072,11 @@
     "CloseTooltip": "إغلاق التلميح",
     "FailedToLoadScreens": "عذراً، لم نتمكن من تحميل الشاشات. يرجى المحاولة مرة أخرى.",
     "FailedToLoadWindows": "عذراً، لم نتلقَ استجابة في تحميل النوافذ. يرجى المحاولة مرة أخرى.",
+    "MicMuted": "تم كتم صوت الميكروفون",
+    "Microphone": "ميكروفون",
     "MicrophoneMuted": "الميكروفون: صامت",
     "MicrophoneSettings": "إعدادات الميكروفون",
+    "MuteMicrophone": "كتم صوت الميكروفون",
     "MuteNoMicrophone": "كتم (لا ميكروفون)",
     "NoMicrophonesFound": "لم يتم اكتشاف ميكروفونات",
     "NoScreensDetected": "لم يتم العثور على شاشات.",
@@ -1131,10 +1094,7 @@
     "SystemAudioOn": "صوت النظام: تشغيل",
     "WaitingForRegion": "في انتظار المنطقة…",
     "WindowNotAvailable": "اختيار النافذة غير متاح على هذا النظام الأساسي.",
-    "WindowRequired": "اختر نافذة قبل التسجيل",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "اختر نافذة قبل التسجيل"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "انقر على 'ابدأ التسجيل' في الشريط العائم لبدء التسجيل",
@@ -1143,20 +1103,19 @@
   "GeminiLive": {
     "AITranscription": "النسخ بالذكاء الاصطناعي",
     "CollapseNowSpeaking": "ينهار",
+    "SubscribeForTranscription": "اشترك لتفعيل النسخ المباشر بالذكاء الاصطناعي أثناء التسجيل.",
     "EnableDescription": "النسخ في الوقت الحقيقي مدعوم من Gemini أثناء التسجيل",
     "EnableIntegration": "تمكين النسخ المباشر بالذكاء الاصطناعي",
     "Error": "خطأ",
     "ExpandNowSpeaking": "يوسع",
     "NowSpeaking": "تحدث الآن...",
-    "SegmentCount_zero": "",
     "SegmentCount_one": "{{count}} المقاطع",
-    "SegmentCount_two": "",
-    "SegmentCount_few": "",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} المقاطع",
     "WaitingForConnection": "جارٍ الاتصال...",
-    "WaitingForSpeech": "في انتظار الكلام...",
-    "SubscribeForTranscription": "اشترك لتفعيل النسخ المباشر بالذكاء الاصطناعي أثناء التسجيل."
+    "WaitingForSpeech": "في انتظار الكلام..."
+  },
+  "GeminiTranscription": {
+    "Title": "النسخ المباشر"
   },
   "IdleCompactView": {
     "ArmFlashback": "تفعيل خاصية العودة إلى الماضي",
@@ -1195,11 +1154,7 @@
     "NowSpeaking": "يتحدث الآن...",
     "Retry": "إعادة المحاولة",
     "SeekToTime": "انقر للتشغيل من هذا الوقت",
-    "SegmentCount_zero": "",
     "SegmentCount_one": "{{count}} المقاطع",
-    "SegmentCount_two": "",
-    "SegmentCount_few": "",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} المقاطع",
     "SignInRequired": "تسجيل الدخول مطلوب",
     "Summary": "ملخص",
@@ -1268,6 +1223,18 @@
     "ScreenFlashbackCharging": "جارٍ شحن شاشة العودة إلى الماضي...",
     "ScreenRecording": "تسجيل الشاشة ({{time}})"
   },
+  "OCRAutoCopy": {
+    "Copied": "تم نسخ النص المستخرج إلى الحافظة",
+    "Error": "فشل في استخراج النص",
+    "Extracting": "جارٍ استخراج النص من لقطة الشاشة…",
+    "Here": "هنا",
+    "Label": "استخراج النص (OCR) ونسخه إلى الحافظة",
+    "LabelDisabled": "استخراج النص (OCR) ونسخه إلى الحافظة (مفتاح API مطلوب، اشترك",
+    "LabelDisabledShort": "استخراج النص (OCR) — مفتاح API مطلوب",
+    "NoText": "لم يتم استخراج أي نص من لقطة الشاشة",
+    "SettingsDesc": "يقوم بتشغيل OCR بعد كل لقطة شاشة وينسخ النص المستخرج إلى الحافظة",
+    "SettingsLabel": "استخراج النص تلقائياً (OCR) عند التقاط الشاشة"
+  },
   "Pause": "يوقف",
   "Permissions": {
     "AlwaysAutoRecord": "التسجيل التلقائي دائمًا",
@@ -1298,8 +1265,8 @@
       "Analyzing": "تحليل",
       "Extracting": "استخراج النتائج",
       "Saving": "حفظ التحف",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "تحضير الصورة",
+      "AnalyzingImage": "تحليل الصورة"
     }
   },
   "Player": {
@@ -1324,9 +1291,21 @@
     "CodecInfo": "معلومات الترميز",
     "MoreOptions": "خيارات إضافية"
   },
+  "PostUpdateModal": {
+    "Title": "تم التحديث إلى v{{version}}",
+    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
+    "GotIt": "حسنًا"
+  },
+  "Recording": {
+    "Paused": "متوقف مؤقتًا",
+    "Preparing": "تحضير",
+    "PreparingToRecord": "جاري التحضير للتسجيل..."
+  },
   "RecordingControls": {
     "AudioRecording": "تسجيل صوتي",
     "ContinueRecording": "استمر في التسجيل",
+    "MarkEvent": "حدث مارك",
+    "MarkedEvents": "الأحداث المميزة",
     "RecordingAudio": "تسجيل الصوت..",
     "RecordingMode": "وضع التسجيل",
     "RecordingPreview": "معاينة التسجيل",
@@ -1334,9 +1313,7 @@
     "StartRecording": "ابدأ تسجيل الفيديو",
     "Stop": "إيقاف",
     "StopRecording": "إيقاف التسجيل",
-    "VideoRecording": "تسجيل فيديو",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "تسجيل فيديو"
   },
   "RecordingModes": {
     "AreaCapture": "تحديد المنطقة",
@@ -1363,11 +1340,7 @@
     "FilePathCopied": "تم نسخ مسار الملف إلى الحافظة",
     "OpenSaveFolder": "عرض المجلد",
     "RecentCaptures": "اللقطات الأخيرة",
-    "Recovered_zero": "",
     "Recovered_one": "{{count}} تم استرداد التسجيل",
-    "Recovered_two": "",
-    "Recovered_few": "",
-    "Recovered_many": "",
     "Recovered_other": "{{count}} تم استرداد التسجيلات",
     "RefreshRecordings": "تحديث",
     "SaveAs": "حفظ باسم",
@@ -1379,7 +1352,7 @@
     "ConfirmButton": "تأكيد الاختيار",
     "Monitor": "الشاشة (المراقبة)",
     "PrimaryMonitor": "الشاشة الأساسية",
-    "StartRecording": "Start Recording"
+    "StartRecording": "ابدأ التسجيل"
   },
   "Resume": "سيرة ذاتية",
   "RingMenu": {
@@ -1405,6 +1378,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "تحليل",
+    "ConfigureApiKey": "قم بتهيئة مفتاح Gemini API لمعالجة الصور بالذكاء الاصطناعي.",
+    "SubscribeToDescribe": "اشترك لتفعيل تحليل لقطات الشاشة بالذكاء الاصطناعي.",
     "ButtonLabel": "العملية مع الذكاء الاصطناعي",
     "ErrorCodes": {
       "AUTH_ERROR": "مفتاح API غير صالح. يرجى التحقق من مفتاح API الخاص بك في الإعدادات.",
@@ -1421,6 +1396,9 @@
     "DescribeSub": "ماذا يوجد في لقطة الشاشة هذه؟",
     "Description": "وصف",
     "ExtractedText": "النص المستخرج",
+    "NoCustom": "اسأل أي شيء عن هذه الصورة.",
+    "NoDescription": "لا يوجد وصف بعد.",
+    "NoOcr": "لا يوجد نص مستخرج حتى الآن.",
     "Ocr": "استخراج النص (التعرف الضوئي على الحروف)",
     "OcrSub": "قراءة كل النص المرئي",
     "PipelineError": "فشلت معالجة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
@@ -1428,17 +1406,12 @@
     "Queuing": "انتظار...",
     "ResultLabel": "نتيجة الذكاء الاصطناعي",
     "SetupRequired": "قم بتسجيل الدخول باستخدام اشتراك أو BYOK لمعالجة الصورة.",
-    "UnknownError": "خطأ غير معروف",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "موجه مخصص",
+      "Description": "وصف",
+      "OCR": "النص (التعرف الضوئي على الحروف)"
     },
-    "SubscribeToDescribe": "اشترك لتفعيل تحليل لقطات الشاشة بالذكاء الاصطناعي.",
-    "ConfigureApiKey": "قم بتهيئة مفتاح Gemini API لمعالجة الصور بالذكاء الاصطناعي."
+    "UnknownError": "خطأ غير معروف"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "تم النسخ إلى الحافظة!",
@@ -1454,7 +1427,7 @@
     "ShareFailed": "لم يتم دعم المشاركة في هذا المتصفح. افتح لقطة الشاشة يدويًا للمشاركة.",
     "Sharing": "جارٍ المشاركة...",
     "ZeroBytes": "0 بايت",
-    "Info": "Stats"
+    "Info": "احصائيات"
   },
   "Settings": {
     "About": {
@@ -1681,18 +1654,18 @@
   "UpdateToast": {
     "Available": "تحديث متاح: SeaMeet {{version}}",
     "Dismiss": "رفض",
+    "DownloadFailed": "فشل التحديث التلقائي لـ SeaMeet {{version}}",
     "Downloading": "جار تحميل SeaMeet {{version}} ({{percent}}%)",
     "Hide": "إخفاء",
+    "Install": "تثبيت",
+    "Later": "لاحقاً",
+    "ManualDownload": "تنزيل يدوي",
     "ReadyToInstall": "SeaMeet {{version}} جاهز للتثبيت",
     "RestartNow": "إعادة التشغيل الآن",
     "ViewRelease": "عرض الإصدار",
     "ViewReleaseTitle": "عرض ملاحظات الإصدار على GitHub",
     "WhatsNew": "الجديد:",
     "WhatsNewInVersion": "الجديد في {{version}}؟",
-    "DownloadFailed": "فشل التحديث التلقائي لـ SeaMeet {{version}}",
-    "ManualDownload": "تنزيل يدوي",
-    "Install": "تثبيت",
-    "Later": "لاحقاً",
     "Restarting": "جارٍ إعادة التشغيل..."
   },
   "UserMenu": {
@@ -1723,15 +1696,15 @@
       "WikiDesc": "تحقق من ويكي SeaMeet للتوثيق والأدلة."
     },
     "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
+    "AccountSignedIn": "تم تسجيل الدخول",
     "SeaMeetSignedIn": "SeaMeet: مسجل الدخول",
     "SeaMeetSignedOut": "SeaMeet: غير مسجل الدخول",
+    "SeaMeetSignIn": "SeaMeet تسجيل الدخول",
+    "SeaMeetSignOut": "SeaMeet تسجيل الخروج",
     "SignIn": "تسجيل الدخول",
     "SignOut": "تسجيل الخروج",
-    "AccountSignedIn": "Signed in",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
-    "RefreshWorkspaces": "تحديث مساحات العمل",
-    "Workspaces": "مساحات العمل"
+    "Workspaces": "مساحات العمل",
+    "RefreshWorkspaces": "تحديث مساحات العمل"
   },
   "VideoSettings": {
     "AudioSettings": "إعدادات الصوت",
@@ -1793,24 +1766,5 @@
     "Refreshing": "جارِ التحديث…",
     "Title": "اختر نافذة",
     "Unknown": "نافذة بدون عنوان"
-  },
-  "AI": {
-    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "قم بتهيئة مفاتيح API لاستخدام وكيل الذكاء الاصطناعي."
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "تم التحديث إلى v{{version}}",
-    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
-    "GotIt": "حسنًا"
   }
 }

@@ -5,12 +5,15 @@
     "DisabledTabHint": "AI Agent è disabilitato: abilitalo in Impostazioni → AI Agent e Cowork",
     "EnableToggle": "Abilita agente AI e collaborazione",
     "EnableToggleDesc": "Richiede Claude CLI o GitHub Copilot",
+    "LinkCopied": "Copiato!",
     "MenuItem": "Agente AI e collaboratore",
     "PageTitle": "Agente AI e collaboratore",
     "SectionTitle": "Agente AI e collaboratore",
-    "LinkCopied": "Copiato!",
     "SubscribeMsg": "L'Agente AI richiede un abbonamento BYOK Pro. Abbonati per ottenere la trascrizione in tempo reale, riassunti delle riunioni AI e un agente AI interattivo.",
     "SubscribeCTA": "Abbonati per sbloccare"
+  },
+  "AI": {
+    "SubscribeMsg": "Richiede un abbonamento BYOK Pro. Iscriviti per la trascrizione in tempo reale, i riassunti delle riunioni AI e un agente AI interattivo."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Chiave API Gemini",
@@ -21,8 +24,8 @@
     "ClaudeKey": {
       "ClearKey": "Rimuovi la chiave salvata",
       "CliInstalled": "Installato ({{version}})",
-      "CliNotFound": "CLI non trovato",
       "CliInstallLink": "Installa il codice Claude →",
+      "CliNotFound": "CLI non trovato",
       "CliNotInstalled": "Claude CLI non trovato — installalo e accedi per autenticarti:",
       "CliSection": "Claude Codice CLI",
       "DefaultModel": "Modello predefinito",
@@ -45,6 +48,8 @@
       "QuotaLoading": "Caricamento quota...",
       "QuotaRemaining": "{{remaining}} / {{limit}} gettoni rimanenti",
       "QuotaResetDate": "Si ripristina su {{date}}",
+      "Refresh": "Re-detect Claude",
+      "Remove": "Remove Claude integration",
       "Saving": "Risparmio...",
       "Section": "Chiave API Claude (agente)",
       "ShowKey": "Mostra chiave",
@@ -53,17 +58,36 @@
       "SourceKeyServer": "Gestito da SeaMeet",
       "SourceLabel": "Sorgente attiva:",
       "SourceNone": "Non configurato",
-      "TestKey": "Salva e verifica",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "TestKey": "Salva e verifica"
+    },
+    "Copilot": {
+      "Authenticated": "Autenticato",
+      "DefaultModel": "Modello predefinito",
+      "InstallGuide": "Segui la ",
+      "InstallGuideLink": "guida introduttiva",
+      "InstallGuideSuffix": " per installare, poi esegui:",
+      "NotDetected": "Non rilevato — installa e autentica:",
+      "Refresh": "Re-detect Copilot",
+      "Remove": "Remove Copilot integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "Rilevato",
+      "Hint": "Puoi anche cambiare fornitore per conversazione nel pannello chat.",
+      "NotAvailable": "Non disponibile",
+      "Preferred": "Preferred",
+      "Section": "Fornitore agente preferito"
     },
     "ClearKey": "Rimuovi la chiave salvata",
     "EnableToggle": "Abilita riepiloghi basati sull'intelligenza artificiale",
     "EnableToggleDesc": "Richiede una chiave API Gemini gratuita",
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "Ottieni una chiave API gratuita da Google AI Studio →",
     "GroupTitle": "Funzionalità dell'intelligenza artificiale",
     "HideKey": "Nascondi chiave",
     "KeyInvalid": "Chiave non valida",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "Nessuna chiave configurata",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (salvato)",
@@ -97,31 +121,12 @@
     "ShowAllModels": "Mostra tutti i {{count}} modelli",
     "ShowFewerModels": "Mostra meno modelli",
     "ShowKey": "Mostra chiave",
-    "TestKey": "Salva e verifica",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "Autenticato",
-      "DefaultModel": "Modello predefinito",
-      "InstallGuide": "Segui la ",
-      "InstallGuideLink": "guida introduttiva",
-      "InstallGuideSuffix": " per installare, poi esegui:",
-      "NotDetected": "Non rilevato — installa e autentica:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "Rilevato",
-      "Hint": "Puoi anche cambiare fornitore per conversazione nel pannello chat.",
-      "NotAvailable": "Non disponibile",
-      "Section": "Fornitore agente preferito",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "Salva e verifica"
   },
   "AISummary": {
     "ApplyMerge": "Applica",
+    "SubscribeToGenerate": "Abbonati per generare riassunti IA, trascrizioni e azioni dalle tue registrazioni.",
+    "SubscribeToRegenerate": "Abbonati per rigenerare i riassunti IA.",
     "ConfirmRename": "Confirm rename",
     "Copy": "Copia",
     "EditSegmentSpeaker": "Fare clic per riassegnare questo segmento",
@@ -166,8 +171,9 @@
     "RenameSpeaker": "Rename speaker",
     "Retry": "Riprova",
     "SeekToTimestamp": "Cerca questo timestamp",
+    "ConfigureApiKey": "Configura la tua chiave API Gemini per generare riassunti e trascrizioni AI.",
+    "ConfigureKey": "Configura chiave API",
     "SetupRequired": "Configura la tua chiave API Gemini in Impostazioni → Funzionalità AI per abilitare i riepiloghi AI.",
-    "Speakers": "Relatori",
     "Tab": {
       "ActionItems": "Azioni",
       "Chapters": "Capitoli",
@@ -175,17 +181,14 @@
       "Summary": "Riepilogo",
       "Transcription": "Trascrizione"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "Riepilogo dell'IA",
     "Topics": "Argomenti:",
-    "Version": {
-      "Latest": "Latest",
-      "Live": "Live"
-    },
+    "Speakers": "Relatori",
     "VersionPicker": "Browse version history",
     "ViewingLive": "Viewing Live transcript",
     "ViewingVersion": "Viewing v{{n}} of {{total}}",
     "ViewLatest": "View latest →",
-    "ScreenshotTabTitle": "AI Analysis",
     "RenameSuggestion": "AI suggests",
     "NewFileName": "new file name",
     "ApplyRename": "Rename",
@@ -195,10 +198,10 @@
     "RenameTo": "Rename: {{name}}",
     "RenameApplied": "File renamed to '{{name}}'",
     "RenameError": "Failed to rename file",
-    "SubscribeToGenerate": "Abbonati per generare riassunti IA, trascrizioni e azioni dalle tue registrazioni.",
-    "SubscribeToRegenerate": "Abbonati per rigenerare i riassunti IA.",
-    "ConfigureApiKey": "Configura la tua chiave API Gemini per generare riassunti e trascrizioni AI.",
-    "ConfigureKey": "Configura chiave API"
+    "Version": {
+      "Latest": "Latest",
+      "Live": "Live"
+    }
   },
   "About": {
     "AppStoreBuild": "Build App Store",
@@ -220,6 +223,12 @@
     "CommandHelp": "Comandi: /nuovo · /cancella · /costo · /aiuto",
     "GlobalTitle": "Agente dell'IA",
     "GoToSettings": "Apri Impostazioni",
+    "LiveAction": {
+      "ActionItems": "Action Items",
+      "Summarize": "Summarize",
+      "Translate": "Translate",
+      "WhoSaidWhat": "Who Said What"
+    },
     "Mode": {
       "Ask": "Chiedere",
       "Code": "Codice",
@@ -262,6 +271,7 @@
     "SendButton": "Inviare",
     "SendPlaceholder": "Chiedi qualsiasi cosa... (Invio per inviare, Maiusc+Invio per il ritorno a capo)",
     "SessionCost": "Sessione: {{inputTokens}} in /{{outputTokens}} in uscita token",
+    "SectionTitle": "AI Agent",
     "Sessions": "Sessioni",
     "StopButton": "Fermare",
     "Streaming": {
@@ -279,7 +289,6 @@
     "Title": "Agente dell'IA",
     "ToolCall": {
       "AndMoreLines_one": "... e {{count}} altre righe",
-      "AndMoreLines_many": "",
       "AndMoreLines_other": "... e {{count}} altre righe",
       "Executing": "In esecuzione...",
       "Input": "Ingresso",
@@ -290,45 +299,15 @@
     },
     "ToolGroup": {
       "Actions_one": "{{count}} azioni",
-      "Actions_many": "",
       "Actions_other": "{{count}} azioni",
       "Completed_one": "{{count}} completato",
-      "Completed_many": "",
       "Completed_other": "{{count}} completato",
       "Running_one": "{{count}} in esecuzione",
-      "Running_many": "",
       "Running_other": "{{count}} in esecuzione"
-    },
-    "Speakers": "Relatori",
-    "MergeInto": "Unisci in…",
-    "ApplyMerge": "Applica",
-    "EditSegmentSpeaker": "Fare clic per riassegnare questo segmento",
-    "VersionPicker": "Sfoglia la cronologia delle versioni",
-    "ViewingLive": "Visualizzazione della trascrizione live",
-    "ViewingVersion": "Visualizzazione di v{{n}} di {{total}}",
-    "ViewLatest": "Visualizza l'ultimo →",
-    "LoadingVersion": "Caricamento versione...",
-    "NotAvailableForVersion": "Non disponibile per questa versione.",
-    "ConfirmRename": "Conferma la ridenominazione",
-    "RenameSpeaker": "Rinominare l'altoparlante",
-    "RenameSuggestion": "L'IA suggerisce",
-    "NewFileName": "nuovo nome file",
-    "ApplyRename": "Rinomina",
-    "Renaming": "Ridenominazione…",
-    "RenameTo": "Rinomina: {{name}}",
-    "RenameApplied": "File rinominato in '{{name}}'",
-    "RenameError": "Impossibile rinominare il file",
-    "Version": {
-      "Latest": "Ultimo",
-      "Live": "Vivere"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "Configura le tue chiavi API per utilizzare l'Agente AI."
   },
   "App": {
     "FailedToEnableFlashback": "Impossibile abilitare flashback: {{error}}",
@@ -387,14 +366,14 @@
   "AudioControls": {
     "AudioCapture": "Capture audio",
     "AudioMix": "Mix audio",
+    "AudioSettings": "Audio Settings",
     "AudioSource": "Fonte audio:",
     "Microphone": "Microfono",
     "MicrophoneGainWarning": "Un alto guadagno del microfono può captare il playback dello speaker anche quando \"System Audio\" è disattivato. Usa le cuffie o abbassa il guadagno del microfono per registrazioni esclusivamente dal microfono.",
+    "MuteMic": "Mute Microphone",
     "RecordingDefaultMicrophone": "Microfono di default",
     "RecordingSettings": "Impostazioni di registrazione",
     "RefreshMicrophoneList": "Aggiorna l'elenco dei microfono",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
     "UnmuteMic": "Unmute Microphone"
   },
   "AutoDetectInfoModal": {
@@ -431,31 +410,72 @@
     "MeetingFallbackName": "Riunione"
   },
   "BatchDownload": {
-    "Title": "Scarica riunioni",
-    "DownloadAll": "Scarica tutto",
-    "Resume": "Riprendi download",
-    "RetryFailed": "Riscarica falliti",
-    "Preparing": "Scansione riunioni in corso...",
-    "TotalMeetings": "Riunioni totali",
-    "AlreadyDownloaded": "Già scaricate",
-    "ToDownload": "Da scaricare",
     "AllDownloaded": "Tutte le riunioni sono già state scaricate!",
-    "StartDownload": "Avvia download",
-    "Downloading": "Download in corso...",
+    "AlreadyDownloaded": "Già scaricate",
     "Cancel": "Annulla",
     "Close": "Chiudi",
-    "Downloaded": "Scaricato",
-    "NoAudio": "Nessun audio disponibile",
-    "Failed": "Fallito",
-    "Skipped": "Saltato",
-    "Retry": "Riprova falliti",
-    "More": "altri",
-    "Complete": "Download completato",
     "ContactSupport": "Se il problema persiste, contatta seameet@seasalt.ai",
+    "DownloadAll": "Scarica tutto",
+    "Downloaded": "Scaricato",
+    "Downloading": "Download in corso...",
+    "Failed": "Fallito",
+    "More": "altri",
+    "NoAudio": "Nessun audio disponibile",
+    "Preparing": "Scansione riunioni in corso...",
+    "Resume": "Riprendi download",
+    "Retry": "Riprova falliti",
+    "RetryFailed": "Riscarica falliti",
+    "Skipped": "Saltato",
+    "StartDownload": "Avvia download",
+    "Complete": "Download completato",
     "Stats": "Statistiche download",
+    "Title": "Scarica riunioni",
+    "ToDownload": "Da scaricare",
+    "TotalMeetings": "Riunioni totali",
     "ViewDetails": "Visualizza dettagli"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "Abilita la trascrizione in tempo reale e l'analisi post-riunione con IA",
+      "ScreenshotAnalysis": "Abilita l'analisi degli screenshot con IA",
+      "CTA": "Accedi e abbonati",
+      "LearnMore": "Scopri di più"
+    },
+    "Explainer": {
+      "Title": "Come funziona SeaMeet AI",
+      "Subtitle": "BYOK — Porta la tua chiave",
+      "WhatIsBYOK": "Con BYOK, le tue registrazioni e i tuoi dati vanno direttamente dal tuo dispositivo a Google o Anthropic. Nulla passa attraverso i server di SeaMeet — massima privacy per te e il tuo team.",
+      "WhatYouNeed": "Cosa configurerai dopo l'abbonamento",
+      "GeminiTitle": "Chiave Google AI Studio (gratuito limitato)",
+      "GeminiDesc": "Gestisce la trascrizione in tempo reale, i riassunti post-riunione e l'analisi. Google offre un livello gratuito generoso — la maggior parte degli utenti non paga mai nulla.",
+      "AgentTitle": "Agente IA — scegli un'opzione (gratuito limitato)",
+      "AgentOption1": "GitHub Copilot — 50 chat premium gratuite al mese (o di più con Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — se hai già Claude Pro o Max, sei coperto",
+      "AgentOption3": "Chiave API Anthropic — per l'accesso diretto all'API",
+      "Continue": "Continua per abbonarti",
+      "WhyBYOK": {
+        "Title": "Perché portare la propria chiave?",
+        "Answer": "Privacy molto migliore — i tuoi dati restano presso aziende fidate come Google e Anthropic, mai presso SeaMeet. I livelli gratuiti di questi provider sono generosi e dureranno a lungo per la maggior parte degli utenti."
+      },
+      "WhyMonthly": {
+        "Title": "Perché SeaMeet addebita mensilmente?",
+        "Answer": "SeaMeet si aggiorna rapidamente con nuove funzionalità AI. Il tuo abbonamento ti mantiene sulla versione più recente. Senza, pagheresti una licenza una tantum e rimarresti con funzionalità congelate — come comprare Office 2012 e restare su Office 2012 per sempre."
+      }
+    },
+    "Coupon": {
+      "Title": "Promozione lancio",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Primo mese gratis — per i primi 100 utenti",
+      "FallbackDesc": "Se SEAMEET100 è esaurito, invia un'email a coupon@seameet.ai per ottenere un altro coupon (10% di sconto per un anno o un altro codice primo mese gratis).",
+      "HowToUse": "Inserisci il codice coupon al checkout di Stripe."
+    },
+    "PostSetup": {
+      "Title": "Tutto pronto! Provalo ora.",
+      "Desc": "Registra una riunione rapida o cattura uno screenshot per sperimentare la trascrizione e l'analisi IA in azione.",
+      "TryRecording": "Avvia una registrazione",
+      "TryScreenshot": "Cattura uno screenshot",
+      "Later": "Proverò dopo"
+    },
     "Banner": {
       "CancelPending": "Il tuo abbonamento scade il {{date}}. Dopo tale data, trascrizione, riepiloghi e funzionalità IA smetteranno di funzionare.",
       "PastDue": "Pagamento fallito — le funzionalità AI sono state disattivate. Aggiorna il metodo di pagamento per ripristinarle.",
@@ -474,6 +494,7 @@
       "GeminiHelp": "Ottieni una chiave gratuita: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
       "GeminiUsage": "Usato per: trascrizione, riepiloghi, trascrizione dal vivo. Le chiavi gratuite sono soggette ai limiti di velocita e quota di Gemini. Passa a un piano a pagamento di Google AI Studio se raggiungi il limite.",
       "NotConfigured": "Non configurato",
       "SaveContinue": "Salva e continua",
@@ -482,9 +503,9 @@
       "SecurityNote": "Le chiavi sono memorizzate localmente sul tuo dispositivo (crittografate nel portachiavi del tuo sistema operativo). SeaMeet non invia mai le tue chiavi ai nostri server.",
       "SkipForNow": "Salta per ora",
       "Subtitle": "Ancora un passaggio: collega le tue chiavi AI API.",
+      "TabLabel": "Chiavi API",
       "Validating": "Validazione...",
       "ValidationFailed": "Validazione fallita",
-      "TabLabel": "Chiavi API",
       "WizardStep": "Passaggio {{current}} di {{total}}",
       "Step1Title": "Collega la tua chiave API Gemini",
       "Step1Desc": "Usata per trascrizione, riepiloghi e trascrizione dal vivo. Ottieni una chiave gratuita da Google AI Studio.",
@@ -494,9 +515,9 @@
       "Step3Desc": "Entrambe le chiavi API sono configurate. Puoi aggiornarle in qualsiasi momento qui sotto.",
       "Next": "Avanti",
       "Done": "Fatto",
-      "RemoveKey": "Rimuovi chiave salvata",
       "TestKey": "Testa chiave",
       "TestingKey": "Test in corso...",
+      "RemoveKey": "Rimuovi chiave salvata",
       "StepCopilotTitle": "Collega GitHub Copilot (opzionale)",
       "StepCopilotDesc": "GitHub Copilot rilevato sul tuo sistema. Scegli il tuo fornitore di agente preferito.",
       "CopilotStatus": "GitHub Copilot",
@@ -511,6 +532,15 @@
       "CopilotSignupHint": "Vuoi provare GitHub Copilot come agente alternativo? Iscriviti a un piano gratuito su github.com/features/copilot/plans (include 50 richieste agente/chat al mese), poi installa Copilot CLI ed esegui \"copilot login\".",
       "CopilotFlatUsage": "Usato per: agente AI (alternativa a Claude). Nessuna chiave API necessaria — usa il tuo login GitHub.",
       "Guide": {
+        "Intro": "SeaMeet AI ha due aree funzionali indipendenti — configura ciò di cui hai bisogno.",
+        "SectionAiSummary": "Riepilogo IA",
+        "SectionAiSummaryBadge": "Obbligatorio",
+        "SectionAiSummarySubtitle": "Ottieni la chiave API Gemini (gratuita)",
+        "SectionAiAgent": "Agente IA",
+        "SectionAiAgentBadge": "Almeno uno necessario",
+        "OptionCopilotTitle": "GitHub Copilot CLI (gratuito)",
+        "OptionClaudeTitle": "Claude Code CLI (opzionale, a pagamento)",
+        "Or": "OPPURE",
         "Step1Title": "Passaggio 1 — Leggere attentamente",
         "Step1Need": "Avrai bisogno di 2 cose:",
         "Step1Item1": "Chiave API Gemini — per il riepilogo IA e la trascrizione in tempo reale",
@@ -541,15 +571,6 @@
         "Step4AuthDesc": " (richiede piano Claude Pro o Max)",
         "Step4Refresh": "Fai clic su Aggiorna qui sotto per rilevare Claude Code.",
         "Step4Select": "Fai clic su Claude Code qui sotto per impostarlo come preferito.",
-        "Intro": "SeaMeet AI ha due aree funzionali indipendenti — configura ciò di cui hai bisogno.",
-        "SectionAiSummary": "Riepilogo IA",
-        "SectionAiSummaryBadge": "Obbligatorio",
-        "SectionAiSummarySubtitle": "Ottieni la chiave API Gemini (gratuita)",
-        "SectionAiAgent": "Agente IA",
-        "SectionAiAgentBadge": "Almeno uno necessario",
-        "OptionCopilotTitle": "GitHub Copilot CLI (gratuito)",
-        "OptionClaudeTitle": "Claude Code CLI (opzionale, a pagamento)",
-        "Or": "OPPURE",
         "StepComplete": {
           "AgentBoth": "Both Claude and Copilot are configured",
           "AgentClaude": "Claude is configured",
@@ -558,21 +579,58 @@
         }
       }
     },
+    "CurrentPlan": "Piano attuale",
     "Device": {
       "Close": "Chiudi",
       "DaysAgo_one": "{{count}} giorno fa",
-      "DaysAgo_many": "{{count}} giorni fa",
       "DaysAgo_other": "{{count}} giorni fa",
+      "Error": "Impossibile caricare i dispositivi: {{error}}",
       "LastUsed": "Ultimo utilizzo {{when}}",
       "LimitDescription": "SeaMeet Pro funziona su un massimo di 3 dispositivi alla volta. Disconnetti un dispositivo che non stai usando per liberare uno spazio.",
       "LimitTitle": "Limite dispositivi raggiunto",
+      "Loading": "Caricamento dispositivi...",
+      "NoDevices": "No devices registered",
       "SigningOut": "Disconnessione...",
       "SignOut": "Disconnetti",
+      "TabLabel": "Dispositivi",
       "Today": "oggi",
       "Yesterday": "ieri",
-      "Error": "Impossibile caricare i dispositivi: {{error}}",
-      "Loading": "Caricamento dispositivi...",
-      "TabLabel": "Dispositivi"
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "Domande frequenti",
+      "Free": {
+        "Q1": "Cosa posso fare con il piano gratuito?",
+        "A1": "SeaMeet Free e un registratore e strumento di screenshot completo. Puoi registrare audio, catturare video dello schermo, fare screenshot e gestire tutte le tue registrazioni — completamente gratuito, per sempre.",
+        "Q2": "I miei dati sono privati?",
+        "A2": "Si. Con il piano gratuito, nessun dato viene mai trasmesso. Tutte le registrazioni, screenshot e file rimangono 100% locali sul tuo dispositivo. La tua privacy e completamente protetta.",
+        "Q3": "Cosa posso ottenere in piu con un piano a pagamento?",
+        "A3": "I piani a pagamento aggiungono funzionalita IA: trascrizione automatica, riepiloghi delle riunioni, elementi di azione, trascrizione dal vivo durante le riunioni e domande e risposte IA sulle tue registrazioni."
+      },
+      "BYOK": {
+        "Q1": "Cos'e BYOK?",
+        "A1": "BYOK sta per Bring Your Own Key. Avrai bisogno di 2 chiavi API: una da Google AI Studio (per trascrizione e riepiloghi) e una da Anthropic (per domande IA e analisi). Google AI Studio di solito fornisce una chiave gratuita. Se hai un abbonamento Claude Pro o Max, non hai bisogno di una chiave API Anthropic aggiuntiva. Una procedura guidata ti aiuta a collegare entrambe le chiavi dopo il pagamento.",
+        "Q2": "Perche un abbonamento mensile?",
+        "A2": "Il tuo abbonamento finanzia aggiornamenti continui, supporto per nuovi modelli IA, correzioni di bug e nuove funzionalita. I costi API vengono pagati separatamente a Google e Anthropic tramite le tue chiavi.",
+        "Q3": "Come funziona la licenza?",
+        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
+      },
+      "Desktop": {
+        "Q1": "Cos'e Desktop Pro?",
+        "A1": "Desktop Pro include chiavi IA integrate gestite da SeaMeet — non c'e bisogno di creare o gestire le proprie chiavi API. Basta abbonarsi e iniziare a usare le funzionalita IA immediatamente.",
+        "Q2": "In cosa si differenzia da BYOK?",
+        "A2": "Con Desktop Pro, SeaMeet fornisce e gestisce le chiavi API per te. Non devi registrarti separatamente su Google AI Studio o Anthropic.",
+        "Q3": "Come funziona la licenza?",
+        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
+      },
+      "Sync": {
+        "Q1": "Cos'e Sync Pro?",
+        "A1": "Sync Pro include tutto di Desktop Pro, piu la sincronizzazione cloud. Le tue registrazioni, trascrizioni e riepiloghi vengono sincronizzati su tutti i tuoi dispositivi.",
+        "Q2": "Cosa viene sincronizzato?",
+        "A2": "Registrazioni, trascrizioni, riepiloghi IA e elementi di azione vengono tutti sincronizzati sui tuoi dispositivi. Le modifiche su un dispositivo appaiono su tutti gli altri.",
+        "Q3": "Come funziona la licenza?",
+        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
+      }
     },
     "Error": {
       "AlreadySubscribed": "Hai già un abbonamento attivo. Usa Gestisci abbonamento per visualizzarlo o modificarlo.",
@@ -581,9 +639,15 @@
       "Unknown": "Qualcosa è andato storto. Riprova."
     },
     "FreeNote": "Piano gratuito: solo registrazione, nessuna funzionalita IA, nessun accesso richiesto. Puoi sempre registrare senza abbonarti.",
+    "ComingSoon": "Coming soon",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
         "InfoNote": "Avrai bisogno di 2 configurazioni: Google AI Studio (gratuito) e GitHub (gratuito) o Anthropic (a pagamento). Una procedura guidata ti assisterà dopo il pagamento:",
         "ConfirmTitle": "Prima di abbonarti",
         "ConfirmContinue": "Continua al pagamento",
@@ -595,7 +659,12 @@
         "InfoNote.Gemini": "Google AI Studio di solito ti fornisce una chiave gratuita."
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
       },
       "Free": {
         "Name": "Free",
@@ -606,7 +675,12 @@
         "Feature4": "Sempre disponibile"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
       }
     },
     "Privacy": {
@@ -674,130 +748,30 @@
     "PromoHint": "Hai un codice promozionale? Inseriscilo al momento del pagamento.",
     "Status": {
       "Active": "Attivo",
-      "CancelNotice": "L'abbonamento termina il {{date}}",
-      "CancelPendingNotice": "Il tuo abbonamento scadrà il {{date}}. Le funzionalità IA resteranno disponibili fino ad allora.",
       "Canceled": "Cancellato",
       "Canceling": "In cancellazione",
+      "CancelNotice": "L'abbonamento termina il {{date}}",
+      "CancelPendingNotice": "Il tuo abbonamento scadrà il {{date}}. Le funzionalità IA resteranno disponibili fino ad allora.",
       "EndsOn": "Scade il {{date}}",
+      "DevOverride": "(Dev Override)",
       "Loading": "Caricamento...",
       "Manage": "Gestisci abbonamento",
       "None": "Nessun abbonamento",
       "PastDue": "Scaduto",
       "Plan": "Piano",
       "Reactivate": "Riattiva",
+      "SignIn": "Sign in to manage subscription",
       "Trial": "Prova"
     },
+    "SignInToSubscribe": "Accedi per abbonarti:",
     "Subscribe": "Abbonati",
     "Subscribing": "Abbonamento in corso...",
     "UnlockTitle": "Sblocca le funzionalita IA di SeaMeet",
-    "SignInToSubscribe": "Accedi per abbonarti:",
-    "CurrentPlan": "Piano attuale",
-    "FAQ": {
-      "Title": "Domande frequenti",
-      "BYOK": {
-        "Q1": "Cos'e BYOK?",
-        "A1": "BYOK sta per Bring Your Own Key. Avrai bisogno di 2 chiavi API: una da Google AI Studio (per trascrizione e riepiloghi) e una da Anthropic (per domande IA e analisi). Google AI Studio di solito fornisce una chiave gratuita. Se hai un abbonamento Claude Pro o Max, non hai bisogno di una chiave API Anthropic aggiuntiva. Una procedura guidata ti aiuta a collegare entrambe le chiavi dopo il pagamento.",
-        "Q2": "Perche un abbonamento mensile?",
-        "A2": "Il tuo abbonamento finanzia aggiornamenti continui, supporto per nuovi modelli IA, correzioni di bug e nuove funzionalita. I costi API vengono pagati separatamente a Google e Anthropic tramite le tue chiavi.",
-        "Q3": "Come funziona la licenza?",
-        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
-      },
-      "Desktop": {
-        "Q1": "Cos'e Desktop Pro?",
-        "A1": "Desktop Pro include chiavi IA integrate gestite da SeaMeet — non c'e bisogno di creare o gestire le proprie chiavi API. Basta abbonarsi e iniziare a usare le funzionalita IA immediatamente.",
-        "Q2": "In cosa si differenzia da BYOK?",
-        "A2": "Con Desktop Pro, SeaMeet fornisce e gestisce le chiavi API per te. Non devi registrarti separatamente su Google AI Studio o Anthropic.",
-        "Q3": "Come funziona la licenza?",
-        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
-      },
-      "Sync": {
-        "Q1": "Cos'e Sync Pro?",
-        "A1": "Sync Pro include tutto di Desktop Pro, piu la sincronizzazione cloud. Le tue registrazioni, trascrizioni e riepiloghi vengono sincronizzati su tutti i tuoi dispositivi.",
-        "Q2": "Cosa viene sincronizzato?",
-        "A2": "Registrazioni, trascrizioni, riepiloghi IA e elementi di azione vengono tutti sincronizzati sui tuoi dispositivi. Le modifiche su un dispositivo appaiono su tutti gli altri.",
-        "Q3": "Come funziona la licenza?",
-        "A3": "1 account, fino a 3 dispositivi. I dispositivi inattivi vengono liberati automaticamente dopo 30 giorni. Puoi anche disconnettere manualmente un dispositivo per liberare uno spazio."
-      },
-      "Free": {
-        "Q1": "Cosa posso fare con il piano gratuito?",
-        "A1": "SeaMeet Free e un registratore e strumento di screenshot completo. Puoi registrare audio, catturare video dello schermo, fare screenshot e gestire tutte le tue registrazioni — completamente gratuito, per sempre.",
-        "Q2": "I miei dati sono privati?",
-        "A2": "Si. Con il piano gratuito, nessun dato viene mai trasmesso. Tutte le registrazioni, screenshot e file rimangono 100% locali sul tuo dispositivo. La tua privacy e completamente protetta.",
-        "Q3": "Cosa posso ottenere in piu con un piano a pagamento?",
-        "A3": "I piani a pagamento aggiungono funzionalita IA: trascrizione automatica, riepiloghi delle riunioni, elementi di azione, trascrizione dal vivo durante le riunioni e domande e risposte IA sulle tue registrazioni."
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "Abilita la trascrizione in tempo reale e l'analisi post-riunione con IA",
-      "ScreenshotAnalysis": "Abilita l'analisi degli screenshot con IA",
-      "CTA": "Accedi e abbonati",
-      "LearnMore": "Scopri di più"
-    },
-    "Explainer": {
-      "Title": "Come funziona SeaMeet AI",
-      "Subtitle": "BYOK — Porta la tua chiave",
-      "WhatIsBYOK": "Con BYOK, le tue registrazioni e i tuoi dati vanno direttamente dal tuo dispositivo a Google o Anthropic. Nulla passa attraverso i server di SeaMeet — massima privacy per te e il tuo team.",
-      "WhatYouNeed": "Cosa configurerai dopo l'abbonamento",
-      "GeminiTitle": "Chiave Google AI Studio (gratuito limitato)",
-      "GeminiDesc": "Gestisce la trascrizione in tempo reale, i riassunti post-riunione e l'analisi. Google offre un livello gratuito generoso — la maggior parte degli utenti non paga mai nulla.",
-      "AgentTitle": "Agente IA — scegli un'opzione (gratuito limitato)",
-      "AgentOption1": "GitHub Copilot — 50 chat premium gratuite al mese (o di più con Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — se hai già Claude Pro o Max, sei coperto",
-      "AgentOption3": "Chiave API Anthropic — per l'accesso diretto all'API",
-      "Continue": "Continua per abbonarti",
-      "WhyBYOK": {
-        "Title": "Perché portare la propria chiave?",
-        "Answer": "Privacy molto migliore — i tuoi dati restano presso aziende fidate come Google e Anthropic, mai presso SeaMeet. I livelli gratuiti di questi provider sono generosi e dureranno a lungo per la maggior parte degli utenti."
-      },
-      "WhyMonthly": {
-        "Title": "Perché SeaMeet addebita mensilmente?",
-        "Answer": "SeaMeet si aggiorna rapidamente con nuove funzionalità AI. Il tuo abbonamento ti mantiene sulla versione più recente. Senza, pagheresti una licenza una tantum e rimarresti con funzionalità congelate — come comprare Office 2012 e restare su Office 2012 per sempre."
-      }
-    },
-    "Coupon": {
-      "Title": "Promozione lancio",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Primo mese gratis — per i primi 100 utenti",
-      "FallbackDesc": "Se SEAMEET100 è esaurito, invia un'email a coupon@seameet.ai per ottenere un altro coupon (10% di sconto per un anno o un altro codice primo mese gratis).",
-      "HowToUse": "Inserisci il codice coupon al checkout di Stripe."
-    },
-    "PostSetup": {
-      "Title": "Tutto pronto! Provalo ora.",
-      "Desc": "Registra una riunione rapida o cattura uno screenshot per sperimentare la trascrizione e l'analisi IA in azione.",
-      "TryRecording": "Avvia una registrazione",
-      "TryScreenshot": "Cattura uno screenshot",
-      "Later": "Proverò dopo"
-    },
     "Setup": {
       "Done": "Ho finito la configurazione",
       "Later": "Lo farò più tardi"
     }
   },
-  "Billing.BYOK.KeySaved": "Chiave salvata (nascosta)",
-  "Billing.ComingSoon": "Prossimamente",
-  "Billing.Device.NoDevices": "Nessun dispositivo registrato",
-  "Billing.Device.TabLabel": "Dispositivi",
-  "Billing.Device.YourDevices": "I tuoi dispositivi",
-  "Billing.Error.NoApiUrl": "Il servizio di fatturazione non e configurato. Contatta il supporto.",
-  "Billing.Error.NotAuthenticated": "Accedi prima per abbonarti. Usa il menu account per accedere.",
-  "Billing.Error.Unknown": "Qualcosa e andato storto. Riprova.",
-  "Billing.Plans.BYOK.Feature1": "Trascrizione e riepiloghi con IA",
-  "Billing.Plans.BYOK.Feature2": "Usa le tue chiavi API Gemini e Claude",
-  "Billing.Plans.BYOK.Feature3": "Trascrizione dal vivo durante le riunioni",
-  "Billing.Plans.BYOK.Feature4": "Domande e analisi delle riunioni con IA",
-  "Billing.Plans.BYOK.Price": "$7.99/mese",
-  "Billing.Plans.Desktop.Feature1": "Tutto di BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "IA integrata — nessuna chiave API necessaria",
-  "Billing.Plans.Desktop.Feature3": "Supporto prioritario",
-  "Billing.Plans.Desktop.Feature4": "Analisi avanzate",
-  "Billing.Plans.Desktop.Price": "$15.99/mese",
-  "Billing.Plans.Sync.Feature1": "Tutto di Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "Sincronizzazione cloud tra dispositivi",
-  "Billing.Plans.Sync.Feature3": "Funzionalita di collaborazione del team",
-  "Billing.Plans.Sync.Feature4": "Libreria riunioni condivisa",
-  "Billing.Plans.Sync.Price": "$25.99/mese",
-  "Billing.Status.DevOverride": "(Dev Override)",
-  "Billing.Status.SignIn": "Accedi per gestire l'abbonamento",
   "BlackHole": {
     "Cancel": "Annulla",
     "CheckAgain": "Controlla di nuovo",
@@ -828,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "Applica nome",
+    "Back": "Indietro",
     "Cancel": "Annulla",
     "Close": "Chiudi",
     "Configure": "Configura",
@@ -848,7 +823,6 @@
     "Send": "Inviare",
     "Starting": "Avvio in corso...",
     "UnknownApp": "Applicazione sconosciuta",
-    "Back": "Indietro",
     "Copied": "Copiato!",
     "Copy": "Copia"
   },
@@ -1098,8 +1072,11 @@
     "CloseTooltip": "Chiudi la descrizione comando",
     "FailedToLoadScreens": "Impossibile caricare gli schermi. Riprova.",
     "FailedToLoadWindows": "Impossibile caricare Windows. Per favore riprova.",
+    "MicMuted": "Mic Muted",
+    "Microphone": "Microphone",
     "MicrophoneMuted": "Microfono: Disattivato",
     "MicrophoneSettings": "Impostazioni microfono",
+    "MuteMicrophone": "Mute Microphone",
     "MuteNoMicrophone": "Muto (Nessun microfono)",
     "NoMicrophonesFound": "Nessun microfono trovato",
     "NoScreensDetected": "Nessuna schermata rilevata.",
@@ -1117,10 +1094,7 @@
     "SystemAudioOn": "Audio di sistema: attivato",
     "WaitingForRegion": "In attesa della regione…",
     "WindowNotAvailable": "La selezione finestra non è disponibile su questa piattaforma.",
-    "WindowRequired": "Seleziona una finestra prima di avviare la registrazione",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "Seleziona una finestra prima di avviare la registrazione"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Fai clic su Avvia registrazione nella barra flottante per registrare la regione selezionata",
@@ -1129,17 +1103,19 @@
   "GeminiLive": {
     "AITranscription": "Trascrizione AI",
     "CollapseNowSpeaking": "Crollo",
+    "SubscribeForTranscription": "Abbonati per abilitare la trascrizione IA in tempo reale durante le registrazioni.",
     "EnableDescription": "Trascrizione in tempo reale fornita da Gemini durante la registrazione",
     "EnableIntegration": "Abilita la trascrizione AI in tempo reale",
     "Error": "Errore",
     "ExpandNowSpeaking": "Espandere",
     "NowSpeaking": "Ora parlando...",
     "SegmentCount_one": "{{count}} segmenti",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} segmenti",
     "WaitingForConnection": "Collegamento...",
-    "WaitingForSpeech": "In attesa del discorso...",
-    "SubscribeForTranscription": "Abbonati per abilitare la trascrizione IA in tempo reale durante le registrazioni."
+    "WaitingForSpeech": "In attesa del discorso..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live Transcription"
   },
   "IdleCompactView": {
     "ArmFlashback": "Arm flashback",
@@ -1179,7 +1155,6 @@
     "Retry": "Riprova",
     "SeekToTime": "Fare clic per riprodurre da questo istante",
     "SegmentCount_one": "{{count}} segmenti",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} segmenti",
     "SignInRequired": "Accesso richiesto",
     "Summary": "Sommario",
@@ -1206,6 +1181,20 @@
     "WsConnected": "WebSocket connesso",
     "WsDisconnected": "WebSocket disconnesso"
   },
+  "MeetingsTab": {
+    "Download": "Scarica",
+    "DownloadAudio": "Scarica audio",
+    "DownloadBoth": "Scarica entrambi",
+    "DownloadTxt": "Scarica .txt",
+    "Empty": "Nessuna riunione trovata",
+    "Error": "Impossibile caricare le riunioni",
+    "Loading": "Caricamento riunioni...",
+    "Retry": "Riprova",
+    "SelectWorkspace": "Seleziona uno spazio di lavoro dal menu utente per visualizzare le riunioni.",
+    "Title": "Riunioni",
+    "Total": "totale",
+    "Untitled": "Riunione senza titolo"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Suggerimento: per riunioni su browser (Google Meet, Zoom, Teams), posso rilevare solo il browser, non il sito specifico.",
     "ContinueRecording": "Continua registrazione",
@@ -1224,20 +1213,6 @@
     "StopRecording": "Ferma registrazione",
     "Yes": "Avvia registrazione"
   },
-  "MeetingsTab": {
-    "Download": "Scarica",
-    "DownloadAudio": "Scarica audio",
-    "DownloadBoth": "Scarica entrambi",
-    "DownloadTxt": "Scarica .txt",
-    "Empty": "Nessuna riunione trovata",
-    "Error": "Impossibile caricare le riunioni",
-    "Loading": "Caricamento riunioni...",
-    "Retry": "Riprova",
-    "SelectWorkspace": "Seleziona uno spazio di lavoro dal menu utente per visualizzare le riunioni.",
-    "Title": "Riunioni",
-    "Total": "totale",
-    "Untitled": "Riunione senza titolo"
-  },
   "MinimizedView": {
     "ActionRequired": "Azione richiesta (Auto-Record)",
     "AudioFlashbackCharged": "flashback audio caricato ({{duration}} s)",
@@ -1247,6 +1222,18 @@
     "ScreenFlashbackCharged": "flashback dello schermo caricato ({{duration}} s)",
     "ScreenFlashbackCharging": "caricamento del flashback dello schermo in corso...",
     "ScreenRecording": "registrazione dello schermo ({{time}})"
+  },
+  "OCRAutoCopy": {
+    "Copied": "Testo estratto copiato negli appunti",
+    "Error": "Impossibile estrarre il testo",
+    "Extracting": "Estrazione del testo dallo screenshot…",
+    "Here": "qui",
+    "Label": "Estrai testo (OCR) e copia negli appunti",
+    "LabelDisabled": "Estrai testo (OCR) e copia negli appunti (chiave API richiesta, iscriviti",
+    "LabelDisabledShort": "Estrai testo (OCR) — chiave API richiesta",
+    "NoText": "Nessun testo è stato estratto dallo screenshot",
+    "SettingsDesc": "Esegue OCR dopo ogni screenshot e copia il testo estratto negli appunti",
+    "SettingsLabel": "Estrai testo automaticamente (OCR) sullo screenshot"
   },
   "Pause": "Pausa",
   "Permissions": {
@@ -1304,9 +1291,16 @@
     "CodecInfo": "Dettagli codec",
     "MoreOptions": "OK"
   },
+  "Recording": {
+    "Paused": "Paused",
+    "Preparing": "Preparing",
+    "PreparingToRecord": "Preparing to record..."
+  },
   "RecordingControls": {
     "AudioRecording": "Registrazione audio",
     "ContinueRecording": "Continua registrazione",
+    "MarkEvent": "Mark Event",
+    "MarkedEvents": "Marked Events",
     "RecordingAudio": "Registrazione audio…",
     "RecordingMode": "Modalità di registrazione",
     "RecordingPreview": "Anteprima registrazione",
@@ -1314,9 +1308,7 @@
     "StartRecording": "Avvia registrazione",
     "Stop": "Ferma",
     "StopRecording": "Ferma registrazione",
-    "VideoRecording": "Registrazione video",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "Registrazione video"
   },
   "RecordingModes": {
     "AreaCapture": "Cattura di area",
@@ -1344,7 +1336,6 @@
     "OpenSaveFolder": "Apri cartella",
     "RecentCaptures": "Catture recenti",
     "Recovered_one": "{{count}} registrazione recuperata",
-    "Recovered_many": "",
     "Recovered_other": "{{count}} registrazioni recuperate",
     "RefreshRecordings": "Aggiorna",
     "SaveAs": "Salva come",
@@ -1382,6 +1373,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "Analisi",
+    "ConfigureApiKey": "Configura la tua chiave API Gemini per elaborare immagini con l'AI.",
+    "SubscribeToDescribe": "Abbonati per abilitare l'analisi degli screenshot con IA.",
     "ButtonLabel": "Processo con l'intelligenza artificiale",
     "ErrorCodes": {
       "AUTH_ERROR": "Chiave API non valida. Controlla la tua chiave API nelle Impostazioni.",
@@ -1398,6 +1391,9 @@
     "DescribeSub": "Cosa c'è in questo screenshot?",
     "Description": "Descrizione",
     "ExtractedText": "Testo estratto",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "Estrai testo (OCR)",
     "OcrSub": "Leggi tutto il testo visibile",
     "PipelineError": "L'elaborazione dell'IA non è riuscita. Per favore riprova.",
@@ -1405,17 +1401,12 @@
     "Queuing": "In coda...",
     "ResultLabel": "Risultato AI",
     "SetupRequired": "Accedi con un abbonamento o BYOK per elaborare l'immagine.",
-    "UnknownError": "Errore sconosciuto",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "SubscribeToDescribe": "Abbonati per abilitare l'analisi degli screenshot con IA.",
-    "ConfigureApiKey": "Configura la tua chiave API Gemini per elaborare immagini con l'AI."
+    "UnknownError": "Errore sconosciuto"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copiato!",
@@ -1658,19 +1649,24 @@
   "UpdateToast": {
     "Available": "Aggiornamento disponibile: SeaMeet {{version}}",
     "Dismiss": "Chiudi",
+    "DownloadFailed": "Aggiornamento automatico non riuscito per SeaMeet {{version}}",
     "Downloading": "Scaricamento SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Nascondi",
+    "Install": "Installa",
+    "Later": "Più tardi",
+    "ManualDownload": "Scarica manualmente",
     "ReadyToInstall": "SeaMeet {{version}} è pronto per essere installato",
     "RestartNow": "Riavvia ora",
     "ViewRelease": "Visualizza le note di rilascio",
     "ViewReleaseTitle": "Visualizza le note di rilascio su GitHub",
     "WhatsNew": "Novità:",
     "WhatsNewInVersion": "Novità in {{version}}?",
-    "DownloadFailed": "Aggiornamento automatico non riuscito per SeaMeet {{version}}",
-    "ManualDownload": "Scarica manualmente",
-    "Install": "Installa",
-    "Later": "Più tardi",
     "Restarting": "Riavvio..."
+  },
+  "PostUpdateModal": {
+    "Title": "Aggiornato alla v{{version}}",
+    "Description": "SeaMeet è stato aggiornato con successo. Ecco le novità:",
+    "GotIt": "Ho capito"
   },
   "UserMenu": {
     "AboutSeaMeet": "Informazioni su SeaMeet",
@@ -1700,15 +1696,15 @@
       "WikiDesc": "Consulta la wiki di SeaMeet per documentazione e guide."
     },
     "KeyboardShortcuts": "Scorciatoie da tastiera",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet: effettuato l'accesso",
     "SeaMeetSignedOut": "SeaMeet: accesso non effettuato",
-    "SignIn": "Accedi",
-    "SignOut": "Esci",
-    "AccountSignedIn": "Signed in",
-    "RefreshWorkspaces": "Aggiorna aree di lavoro",
     "SeaMeetSignIn": "SeaMeet Sign In",
     "SeaMeetSignOut": "SeaMeet Sign Out",
-    "Workspaces": "Aree di lavoro"
+    "SignIn": "Accedi",
+    "SignOut": "Esci",
+    "Workspaces": "Aree di lavoro",
+    "RefreshWorkspaces": "Aggiorna aree di lavoro"
   },
   "VideoSettings": {
     "AudioSettings": "Impostazioni audio",
@@ -1770,24 +1766,5 @@
     "Refreshing": "Aggiornamento in corso…",
     "Title": "Seleziona una finestra",
     "Unknown": "Finestra senza titolo"
-  },
-  "AI": {
-    "SubscribeMsg": "Richiede un abbonamento BYOK Pro. Iscriviti per la trascrizione in tempo reale, i riassunti delle riunioni AI e un agente AI interattivo."
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "Configura le tue chiavi API per utilizzare l'Agente AI."
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "Aggiornato alla v{{version}}",
-    "Description": "SeaMeet è stato aggiornato con successo. Ecco le novità:",
-    "GotIt": "Ho capito"
   }
 }

@@ -5,12 +5,15 @@
     "DisabledTabHint": "AI Agent отключен — включите его в «Настройки» → AI Agent & Cowork.",
     "EnableToggle": "Включить AI Agent и Cowork",
     "EnableToggleDesc": "Требуется Claude CLI или GitHub Copilot",
+    "LinkCopied": "Скопировано!",
     "MenuItem": "AI-агент и совместная работа",
     "PageTitle": "AI-агент и совместная работа",
     "SectionTitle": "AI-агент и совместная работа",
-    "LinkCopied": "Скопировано!",
     "SubscribeMsg": "ИИ-агент требует подписки BYOK Pro. Подпишитесь для получения транскрипции в реальном времени, ИИ-сводок встреч и интерактивного ИИ-агента.",
     "SubscribeCTA": "Подписаться для разблокировки"
+  },
+  "AI": {
+    "SubscribeMsg": "Требуется подписка BYOK Pro. Подпишитесь для получения живой транскрипции, AI-резюме встреч и интерактивного AI-агента."
   },
   "AIFeatures": {
     "ApiKeyLabel": "API-ключ Близнецов",
@@ -21,8 +24,8 @@
     "ClaudeKey": {
       "ClearKey": "Удалить сохраненный ключ",
       "CliInstalled": "Установлено ({{version}})",
-      "CliNotFound": "CLI не найден",
       "CliInstallLink": "Установить Клод Код →",
+      "CliNotFound": "CLI не найден",
       "CliNotInstalled": "Claude CLI не найден — установите его и войдите для аутентификации:",
       "CliSection": "Клод Код CLI",
       "DefaultModel": "Модель по умолчанию",
@@ -45,6 +48,8 @@
       "QuotaLoading": "Загрузка квоты...",
       "QuotaRemaining": "Осталось {{remaining}} / {{limit}} токенов",
       "QuotaResetDate": "Сбрасывается {{date}}",
+      "Refresh": "Re-detect Claude",
+      "Remove": "Remove Claude integration",
       "Saving": "Сохранение...",
       "Section": "Ключ API Клода (Агент)",
       "ShowKey": "Показать ключ",
@@ -53,17 +58,36 @@
       "SourceKeyServer": "Под управлением SeaMeet",
       "SourceLabel": "Активный источник:",
       "SourceNone": "Не настроено",
-      "TestKey": "Сохранить и проверить",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "TestKey": "Сохранить и проверить"
+    },
+    "Copilot": {
+      "Authenticated": "Аутентифицирован",
+      "DefaultModel": "Модель по умолчанию",
+      "InstallGuide": "Следуйте ",
+      "InstallGuideLink": "руководству по началу работы",
+      "InstallGuideSuffix": " для установки, затем выполните:",
+      "NotDetected": "Не обнаружен — установите и аутентифицируйтесь:",
+      "Refresh": "Re-detect Copilot",
+      "Remove": "Remove Copilot integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "Обнаружен",
+      "Hint": "Вы также можете переключать провайдеров для каждого разговора в панели чата.",
+      "NotAvailable": "Недоступен",
+      "Preferred": "Preferred",
+      "Section": "Предпочтительный провайдер агента"
     },
     "ClearKey": "Удалить сохраненный ключ",
     "EnableToggle": "Включите сводки на основе искусственного интеллекта",
     "EnableToggleDesc": "Требуется бесплатный ключ Gemini API.",
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "Получите бесплатный ключ API от Google AI Studio →",
     "GroupTitle": "Возможности искусственного интеллекта",
     "HideKey": "Скрыть ключ",
     "KeyInvalid": "Неверный ключ",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "Ключ не настроен",
     "KeyPlaceholder": "АизаСы...",
     "KeyPlaceholderSaved": "••••••••• (сохранено)",
@@ -97,31 +121,12 @@
     "ShowAllModels": "Показать все {{count}} моделей",
     "ShowFewerModels": "Показать меньше моделей",
     "ShowKey": "Показать ключ",
-    "TestKey": "Сохранить и проверить",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "Аутентифицирован",
-      "DefaultModel": "Модель по умолчанию",
-      "InstallGuide": "Следуйте ",
-      "InstallGuideLink": "руководству по началу работы",
-      "InstallGuideSuffix": " для установки, затем выполните:",
-      "NotDetected": "Не обнаружен — установите и аутентифицируйтесь:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "Обнаружен",
-      "Hint": "Вы также можете переключать провайдеров для каждого разговора в панели чата.",
-      "NotAvailable": "Недоступен",
-      "Section": "Предпочтительный провайдер агента",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "Сохранить и проверить"
   },
   "AISummary": {
     "ApplyMerge": "Применить",
+    "SubscribeToGenerate": "Подпишитесь для создания ИИ-сводок, транскрипций и задач из ваших записей.",
+    "SubscribeToRegenerate": "Подпишитесь для повторной генерации ИИ-сводок.",
     "ConfirmRename": "Confirm rename",
     "Copy": "Копировать",
     "EditSegmentSpeaker": "Нажмите, чтобы переназначить этот сегмент",
@@ -166,8 +171,9 @@
     "RenameSpeaker": "Rename speaker",
     "Retry": "Повторить попытку",
     "SeekToTimestamp": "Ищите эту временную метку",
+    "ConfigureApiKey": "Настройте ключ API Gemini для создания AI-резюме и транскрипций.",
+    "ConfigureKey": "Настроить ключ API",
     "SetupRequired": "Настройте ключ API Gemini в «Настройки» → «Функции AI», чтобы включить сводки AI.",
-    "Speakers": "Докладчики",
     "Tab": {
       "ActionItems": "Действия",
       "Chapters": "Главы",
@@ -175,17 +181,14 @@
       "Summary": "Краткое содержание",
       "Transcription": "Стенограмма"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "Обзор ИИ",
     "Topics": "Темы:",
-    "Version": {
-      "Latest": "Latest",
-      "Live": "Live"
-    },
+    "Speakers": "Докладчики",
     "VersionPicker": "Browse version history",
     "ViewingLive": "Viewing Live transcript",
     "ViewingVersion": "Viewing v{{n}} of {{total}}",
     "ViewLatest": "View latest →",
-    "ScreenshotTabTitle": "AI Analysis",
     "RenameSuggestion": "AI suggests",
     "NewFileName": "new file name",
     "ApplyRename": "Rename",
@@ -195,10 +198,10 @@
     "RenameTo": "Rename: {{name}}",
     "RenameApplied": "File renamed to '{{name}}'",
     "RenameError": "Failed to rename file",
-    "SubscribeToGenerate": "Подпишитесь для создания ИИ-сводок, транскрипций и задач из ваших записей.",
-    "SubscribeToRegenerate": "Подпишитесь для повторной генерации ИИ-сводок.",
-    "ConfigureApiKey": "Настройте ключ API Gemini для создания AI-резюме и транскрипций.",
-    "ConfigureKey": "Настроить ключ API"
+    "Version": {
+      "Latest": "Latest",
+      "Live": "Live"
+    }
   },
   "About": {
     "AppStoreBuild": "Сборка для App Store",
@@ -220,6 +223,12 @@
     "CommandHelp": "Команды: /new · /clear · /cost · /help",
     "GlobalTitle": "ИИ-агент",
     "GoToSettings": "Открыть настройки",
+    "LiveAction": {
+      "ActionItems": "Action Items",
+      "Summarize": "Summarize",
+      "Translate": "Translate",
+      "WhoSaidWhat": "Who Said What"
+    },
     "Mode": {
       "Ask": "Просить",
       "Code": "Код",
@@ -262,6 +271,7 @@
     "SendButton": "Отправлять",
     "SendPlaceholder": "Спросите что угодно... (Enter для отправки, Shift+Enter для перехода на новую строку)",
     "SessionCost": "Сеанс: {{inputTokens}} в /{{outputTokens}} токенов",
+    "SectionTitle": "AI Agent",
     "Sessions": "Сессии",
     "StopButton": "Останавливаться",
     "Streaming": {
@@ -279,8 +289,6 @@
     "Title": "ИИ-агент",
     "ToolCall": {
       "AndMoreLines_one": "... и еще {{count}} строк",
-      "AndMoreLines_few": "",
-      "AndMoreLines_many": "",
       "AndMoreLines_other": "... и еще {{count}} строк",
       "Executing": "Выполнение...",
       "Input": "Вход",
@@ -291,48 +299,15 @@
     },
     "ToolGroup": {
       "Actions_one": "{{count}} действий",
-      "Actions_few": "",
-      "Actions_many": "",
       "Actions_other": "{{count}} действий",
       "Completed_one": "{{count}} завершено",
-      "Completed_few": "",
-      "Completed_many": "",
       "Completed_other": "{{count}} завершено",
       "Running_one": "{{count}} работает",
-      "Running_few": "",
-      "Running_many": "",
       "Running_other": "{{count}} работает"
-    },
-    "Speakers": "Докладчики",
-    "MergeInto": "Объединить в…",
-    "ApplyMerge": "Применить",
-    "EditSegmentSpeaker": "Нажмите, чтобы переназначить этот сегмент",
-    "VersionPicker": "Просмотр истории версий",
-    "ViewingLive": "Просмотр транскрипта в реальном времени",
-    "ViewingVersion": "Просмотр v{{n}} из {{total}}",
-    "ViewLatest": "Посмотреть последние →",
-    "LoadingVersion": "Загрузка версии...",
-    "NotAvailableForVersion": "Недоступно для этой версии.",
-    "ConfirmRename": "Подтвердить переименование",
-    "RenameSpeaker": "Переименовать динамик",
-    "RenameSuggestion": "ИИ предлагает",
-    "NewFileName": "новое имя файла",
-    "ApplyRename": "Переименовать",
-    "Renaming": "Переименование…",
-    "RenameTo": "Переименовать: {{name}}",
-    "RenameApplied": "Файл переименован в '{{name}}'",
-    "RenameError": "Не удалось переименовать файл",
-    "Version": {
-      "Latest": "Последний",
-      "Live": "Жить"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "Настройте ключи API для использования AI-агента."
   },
   "App": {
     "FailedToEnableFlashback": "Не удалось включить флэшбэк: {{error}}",
@@ -391,14 +366,14 @@
   "AudioControls": {
     "AudioCapture": "Захват аудио",
     "AudioMix": "График волны",
+    "AudioSettings": "Audio Settings",
     "AudioSource": "Источник аудио:",
     "Microphone": "Микрофон",
     "MicrophoneGainWarning": "Высокий уровень усиления микрофона может захватывать воспроизведение динамика, даже если «System Audio» отключено. Используйте наушники или снизьте усиление микрофона для записи только с микрофона.",
+    "MuteMic": "Mute Microphone",
     "RecordingDefaultMicrophone": "Микрофон по умолчанию",
     "RecordingSettings": "Настройки записи",
     "RefreshMicrophoneList": "Обновить список микрофонов",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
     "UnmuteMic": "Unmute Microphone"
   },
   "AutoDetectInfoModal": {
@@ -439,7 +414,6 @@
     "AlreadyDownloaded": "Уже скачано",
     "Cancel": "Отмена",
     "Close": "Закрыть",
-    "Complete": "Загрузка завершена",
     "ContactSupport": "Если проблема сохраняется, напишите на seameet@seasalt.ai",
     "DownloadAll": "Скачать все",
     "Downloaded": "Скачано",
@@ -453,6 +427,7 @@
     "RetryFailed": "Скачать заново сбойные",
     "Skipped": "Пропущено",
     "StartDownload": "Начать загрузку",
+    "Complete": "Загрузка завершена",
     "Stats": "Статистика загрузок",
     "Title": "Скачивание встреч",
     "ToDownload": "К скачиванию",
@@ -460,6 +435,47 @@
     "ViewDetails": "Посмотреть детали"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "Включить транскрипцию в реальном времени и ИИ-анализ после встречи",
+      "ScreenshotAnalysis": "Включить ИИ-анализ снимков экрана",
+      "CTA": "Войти и подписаться",
+      "LearnMore": "Подробнее"
+    },
+    "Explainer": {
+      "Title": "Как работает SeaMeet AI",
+      "Subtitle": "BYOK — Принесите свой ключ",
+      "WhatIsBYOK": "С BYOK ваши записи и данные отправляются напрямую с вашего устройства в Google или Anthropic. Ничего не проходит через серверы SeaMeet — максимальная конфиденциальность для вас и вашей команды.",
+      "WhatYouNeed": "Что вы настроите после подписки",
+      "GeminiTitle": "Ключ Google AI Studio (ограниченно бесплатно)",
+      "GeminiDesc": "Обеспечивает транскрипцию в реальном времени, итоги встреч и анализ. Google предлагает щедрый бесплатный уровень — большинство пользователей никогда не платят ни копейки.",
+      "AgentTitle": "ИИ-агент — выберите один вариант (ограниченно бесплатно)",
+      "AgentOption1": "GitHub Copilot — 50 бесплатных премиум-чатов в месяц (или больше с Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — если у вас уже есть Claude Pro или Max, вы обеспечены",
+      "AgentOption3": "Ключ API Anthropic — для прямого доступа к API",
+      "Continue": "Продолжить подписку",
+      "WhyBYOK": {
+        "Title": "Зачем приносить свой ключ?",
+        "Answer": "Гораздо лучшая конфиденциальность — ваши данные хранятся у надёжных компаний, таких как Google и Anthropic, а не у SeaMeet. Бесплатные уровни этих провайдеров щедрые и хватят большинству пользователей надолго."
+      },
+      "WhyMonthly": {
+        "Title": "Почему SeaMeet берёт ежемесячную плату?",
+        "Answer": "SeaMeet быстро обновляется новыми функциями ИИ. Подписка поддерживает вас на последней версии. Без неё вы купили бы разовую лицензию и застряли с замороженными функциями — как купить Office 2012 и остаться на Office 2012 навсегда."
+      }
+    },
+    "Coupon": {
+      "Title": "Акция запуска",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Первый месяц бесплатно — для первых 100 пользователей",
+      "FallbackDesc": "Если код SEAMEET100 исчерпан, отправьте письмо на coupon@seameet.ai для получения другого купона (скидка 10% на год или другой код на бесплатный первый месяц).",
+      "HowToUse": "Введите код купона при оплате в Stripe."
+    },
+    "PostSetup": {
+      "Title": "Всё готово! Попробуйте сейчас.",
+      "Desc": "Запишите короткую встречу или сделайте снимок экрана, чтобы испытать транскрипцию и анализ ИИ в действии.",
+      "TryRecording": "Начать запись",
+      "TryScreenshot": "Сделать снимок экрана",
+      "Later": "Попробую позже"
+    },
     "Banner": {
       "CancelPending": "Ваша подписка истекает {{date}}. После этого транскрипция, сводки и функции ИИ перестанут работать.",
       "PastDue": "Ошибка оплаты — функции ИИ отключены. Обновите способ оплаты для их восстановления.",
@@ -478,6 +494,7 @@
       "GeminiHelp": "Получить бесплатный ключ: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
       "GeminiUsage": "Используется для: транскрипции, резюме, живой транскрипции. Бесплатные ключи ограничены лимитами и квотами Gemini. Перейдите на платный тариф Google AI Studio, если превышаете лимит.",
       "NotConfigured": "Не настроен",
       "SaveContinue": "Сохранить и продолжить",
@@ -486,9 +503,9 @@
       "SecurityNote": "Ключи хранятся локально на вашем устройстве (зашифрованы в связке ключей ОС). SeaMeet никогда не отправляет ваши ключи на наши серверы.",
       "SkipForNow": "Пропустить",
       "Subtitle": "Ещё один шаг: подключите ваши API-ключи AI.",
+      "TabLabel": "API-ключи",
       "Validating": "Проверка...",
       "ValidationFailed": "Проверка не пройдена",
-      "TabLabel": "API-ключи",
       "WizardStep": "Шаг {{current}} из {{total}}",
       "Step1Title": "Подключите ваш API-ключ Gemini",
       "Step1Desc": "Используется для транскрипции, резюме и живой транскрипции. Получите бесплатный ключ в Google AI Studio.",
@@ -498,9 +515,9 @@
       "Step3Desc": "Оба API-ключа настроены. Вы можете обновить их в любое время ниже.",
       "Next": "Далее",
       "Done": "Готово",
-      "RemoveKey": "Удалить сохранённый ключ",
       "TestKey": "Проверить ключ",
       "TestingKey": "Проверка...",
+      "RemoveKey": "Удалить сохранённый ключ",
       "StepCopilotTitle": "Подключить GitHub Copilot (необязательно)",
       "StepCopilotDesc": "GitHub Copilot обнаружен в вашей системе. Выберите предпочтительного поставщика агента.",
       "CopilotStatus": "GitHub Copilot",
@@ -515,6 +532,15 @@
       "CopilotSignupHint": "Хотите попробовать GitHub Copilot в качестве альтернативного агента? Зарегистрируйтесь на бесплатном плане на github.com/features/copilot/plans (включает 50 запросов агента/чата в месяц), затем установите Copilot CLI и выполните \"copilot login\".",
       "CopilotFlatUsage": "Используется для: ИИ-агент (альтернатива Claude). API-ключ не нужен — используется ваш вход в GitHub.",
       "Guide": {
+        "Intro": "SeaMeet AI имеет две независимые функциональные области — настройте то, что вам нужно.",
+        "SectionAiSummary": "AI-сводка",
+        "SectionAiSummaryBadge": "Обязательно",
+        "SectionAiSummarySubtitle": "Получите ключ API Gemini (бесплатно)",
+        "SectionAiAgent": "AI-агент",
+        "SectionAiAgentBadge": "Нужен хотя бы один",
+        "OptionCopilotTitle": "GitHub Copilot CLI (бесплатно)",
+        "OptionClaudeTitle": "Claude Code CLI (необязательно, платно)",
+        "Or": "ИЛИ",
         "Step1Title": "Шаг 1 — Внимательно прочитайте",
         "Step1Need": "Вам понадобятся 2 вещи:",
         "Step1Item1": "API-ключ Gemini — для AI-резюме и живой транскрипции",
@@ -545,15 +571,6 @@
         "Step4AuthDesc": " (требуется план Claude Pro или Max)",
         "Step4Refresh": "Нажмите «Обновить» ниже, чтобы обнаружить Claude Code.",
         "Step4Select": "Нажмите Claude Code ниже, чтобы установить как предпочтительный.",
-        "Intro": "SeaMeet AI имеет две независимые функциональные области — настройте то, что вам нужно.",
-        "SectionAiSummary": "AI-сводка",
-        "SectionAiSummaryBadge": "Обязательно",
-        "SectionAiSummarySubtitle": "Получите ключ API Gemini (бесплатно)",
-        "SectionAiAgent": "AI-агент",
-        "SectionAiAgentBadge": "Нужен хотя бы один",
-        "OptionCopilotTitle": "GitHub Copilot CLI (бесплатно)",
-        "OptionClaudeTitle": "Claude Code CLI (необязательно, платно)",
-        "Or": "ИЛИ",
         "StepComplete": {
           "AgentBoth": "Both Claude and Copilot are configured",
           "AgentClaude": "Claude is configured",
@@ -562,22 +579,58 @@
         }
       }
     },
+    "CurrentPlan": "Текущий план",
     "Device": {
       "Close": "Закрыть",
       "DaysAgo_one": "{{count}} день назад",
-      "DaysAgo_few": "{{count}} дня назад",
-      "DaysAgo_many": "{{count}} дней назад",
       "DaysAgo_other": "{{count}} дней назад",
+      "Error": "Не удалось загрузить устройства: {{error}}",
       "LastUsed": "Последнее использование: {{when}}",
       "LimitDescription": "SeaMeet Pro работает на до 3 устройствах одновременно. Выйдите с устройства, которое не используете, чтобы освободить место.",
       "LimitTitle": "Достигнут лимит устройств",
+      "Loading": "Загрузка устройств...",
+      "NoDevices": "No devices registered",
       "SigningOut": "Выход...",
       "SignOut": "Выйти",
+      "TabLabel": "Устройства",
       "Today": "сегодня",
       "Yesterday": "вчера",
-      "Error": "Не удалось загрузить устройства: {{error}}",
-      "Loading": "Загрузка устройств...",
-      "TabLabel": "Устройства"
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "Часто задаваемые вопросы",
+      "Free": {
+        "Q1": "Что можно делать с бесплатным планом?",
+        "A1": "SeaMeet Free — это полнофункциональный инструмент для записи и создания скриншотов. Вы можете записывать аудио, захватывать видео экрана, делать скриншоты и управлять всеми записями — совершенно бесплатно, навсегда.",
+        "Q2": "Мои данные конфиденциальны?",
+        "A2": "Да. На бесплатном плане никакие данные никуда не передаются. Все записи, скриншоты и файлы остаются на 100% локально на вашем устройстве. Ваша конфиденциальность полностью защищена.",
+        "Q3": "Что ещё можно получить с платным планом?",
+        "A3": "Платные планы добавляют AI-функции: автоматическую транскрипцию, резюме встреч, списки задач, живую транскрипцию во время встреч и AI-ответы на вопросы о ваших записях."
+      },
+      "BYOK": {
+        "Q1": "Что такое BYOK?",
+        "A1": "BYOK означает Bring Your Own Key (принесите свой ключ). Вам нужны 2 API-ключа: один от Google AI Studio (для транскрипции и резюме) и один от Anthropic (для AI-вопросов и анализа). Google AI Studio обычно предоставляет бесплатный ключ. Если у вас оформлен Claude Pro или Max, дополнительный ключ Anthropic API не нужен. Мастер настройки проведёт вас через подключение обоих ключей после оплаты.",
+        "Q2": "Зачем ежемесячная подписка?",
+        "A2": "Ваша подписка финансирует постоянные обновления, поддержку новых моделей AI, исправление ошибок и новые функции. Расходы на API оплачиваются отдельно Google и Anthropic с помощью ваших собственных ключей.",
+        "Q3": "Как работает лицензирование?",
+        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
+      },
+      "Desktop": {
+        "Q1": "Что такое Desktop Pro?",
+        "A1": "Desktop Pro включает встроенные AI-ключи, управляемые SeaMeet — не нужно создавать или управлять собственными API-ключами. Просто подпишитесь и сразу начните использовать AI-функции.",
+        "Q2": "Чем он отличается от BYOK?",
+        "A2": "В Desktop Pro SeaMeet предоставляет и управляет API-ключами за вас. Вам не нужно отдельно регистрироваться в Google AI Studio или Anthropic.",
+        "Q3": "Как работает лицензирование?",
+        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
+      },
+      "Sync": {
+        "Q1": "Что такое Sync Pro?",
+        "A1": "Sync Pro включает всё из Desktop Pro плюс облачную синхронизацию. Ваши записи, транскрипции и резюме синхронизируются между всеми вашими устройствами.",
+        "Q2": "Что синхронизируется?",
+        "A2": "Записи, транскрипции, AI-резюме и списки задач синхронизируются между вашими устройствами. Изменения на одном устройстве отображаются на всех остальных.",
+        "Q3": "Как работает лицензирование?",
+        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
+      }
     },
     "Error": {
       "AlreadySubscribed": "У вас уже есть активная подписка. Используйте «Управление подпиской» для просмотра или изменения.",
@@ -586,21 +639,32 @@
       "Unknown": "Что-то пошло не так. Пожалуйста, попробуйте еще раз."
     },
     "FreeNote": "Бесплатный план: только запись, без функций AI, без входа в аккаунт. Вы всегда можете записывать без подписки.",
+    "ComingSoon": "Coming soon",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
         "InfoNote": "Вам потребуется 2 настройки: Google AI Studio (бесплатно) и GitHub (бесплатно) или Anthropic (платно). Мастер настройки поможет вам после оплаты:",
         "ConfirmTitle": "Перед оформлением подписки",
         "ConfirmContinue": "Перейти к оплате",
         "ConfirmSignIn": "Сначала войдите, затем оплатите",
         "ConfirmCancel": "Отмена",
         "ConfirmCopyCheckout": "Скопировать код и оплатить",
-        "InfoNote.Claude": "Если у вас подписка Claude Pro или Max, дополнительный ключ API Anthropic не нужен.",
+        "InfoNote.Claude": "Если у вас есть подписка Claude Pro или Max, вам не нужен дополнительный API-ключ Anthropic.",
         "InfoNote.Copilot": "У GitHub Copilot тоже есть бесплатный план.",
         "InfoNote.Gemini": "Google AI Studio обычно предоставляет бесплатный ключ."
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
       },
       "Free": {
         "Name": "Free",
@@ -611,7 +675,12 @@
         "Feature4": "Всегда доступен"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
       }
     },
     "Privacy": {
@@ -679,130 +748,30 @@
     "PromoHint": "Есть промокод? Введите его при оплате.",
     "Status": {
       "Active": "Активна",
-      "CancelNotice": "Подписка заканчивается {{date}}",
-      "CancelPendingNotice": "Ваша подписка истечёт {{date}}. До этого момента функции ИИ будут доступны.",
       "Canceled": "Отменена",
       "Canceling": "Отмена",
+      "CancelNotice": "Подписка заканчивается {{date}}",
+      "CancelPendingNotice": "Ваша подписка истечёт {{date}}. До этого момента функции ИИ будут доступны.",
       "EndsOn": "Истекает {{date}}",
+      "DevOverride": "(Dev Override)",
       "Loading": "Загрузка...",
       "Manage": "Управление подпиской",
       "None": "Нет подписки",
       "PastDue": "Просрочена",
       "Plan": "План",
       "Reactivate": "Возобновить",
+      "SignIn": "Sign in to manage subscription",
       "Trial": "Пробный период"
     },
+    "SignInToSubscribe": "Войдите, чтобы подписаться:",
     "Subscribe": "Подписаться",
     "Subscribing": "Оформление подписки...",
     "UnlockTitle": "Разблокируйте AI-функции SeaMeet",
-    "SignInToSubscribe": "Войдите, чтобы подписаться:",
-    "CurrentPlan": "Текущий план",
-    "FAQ": {
-      "Title": "Часто задаваемые вопросы",
-      "BYOK": {
-        "Q1": "Что такое BYOK?",
-        "A1": "BYOK означает Bring Your Own Key (принесите свой ключ). Вам нужны 2 API-ключа: один от Google AI Studio (для транскрипции и резюме) и один от Anthropic (для AI-вопросов и анализа). Google AI Studio обычно предоставляет бесплатный ключ. Если у вас оформлен Claude Pro или Max, дополнительный ключ Anthropic API не нужен. Мастер настройки проведёт вас через подключение обоих ключей после оплаты.",
-        "Q2": "Зачем ежемесячная подписка?",
-        "A2": "Ваша подписка финансирует постоянные обновления, поддержку новых моделей AI, исправление ошибок и новые функции. Расходы на API оплачиваются отдельно Google и Anthropic с помощью ваших собственных ключей.",
-        "Q3": "Как работает лицензирование?",
-        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
-      },
-      "Desktop": {
-        "Q1": "Что такое Desktop Pro?",
-        "A1": "Desktop Pro включает встроенные AI-ключи, управляемые SeaMeet — не нужно создавать или управлять собственными API-ключами. Просто подпишитесь и сразу начните использовать AI-функции.",
-        "Q2": "Чем он отличается от BYOK?",
-        "A2": "В Desktop Pro SeaMeet предоставляет и управляет API-ключами за вас. Вам не нужно отдельно регистрироваться в Google AI Studio или Anthropic.",
-        "Q3": "Как работает лицензирование?",
-        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
-      },
-      "Sync": {
-        "Q1": "Что такое Sync Pro?",
-        "A1": "Sync Pro включает всё из Desktop Pro плюс облачную синхронизацию. Ваши записи, транскрипции и резюме синхронизируются между всеми вашими устройствами.",
-        "Q2": "Что синхронизируется?",
-        "A2": "Записи, транскрипции, AI-резюме и списки задач синхронизируются между вашими устройствами. Изменения на одном устройстве отображаются на всех остальных.",
-        "Q3": "Как работает лицензирование?",
-        "A3": "1 аккаунт, до 3 устройств. Неактивные устройства автоматически освобождаются через 30 дней. Вы также можете вручную выйти с устройства, чтобы освободить место."
-      },
-      "Free": {
-        "Q1": "Что можно делать с бесплатным планом?",
-        "A1": "SeaMeet Free — это полнофункциональный инструмент для записи и создания скриншотов. Вы можете записывать аудио, захватывать видео экрана, делать скриншоты и управлять всеми записями — совершенно бесплатно, навсегда.",
-        "Q2": "Мои данные конфиденциальны?",
-        "A2": "Да. На бесплатном плане никакие данные никуда не передаются. Все записи, скриншоты и файлы остаются на 100% локально на вашем устройстве. Ваша конфиденциальность полностью защищена.",
-        "Q3": "Что ещё можно получить с платным планом?",
-        "A3": "Платные планы добавляют AI-функции: автоматическую транскрипцию, резюме встреч, списки задач, живую транскрипцию во время встреч и AI-ответы на вопросы о ваших записях."
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "Включить транскрипцию в реальном времени и ИИ-анализ после встречи",
-      "ScreenshotAnalysis": "Включить ИИ-анализ снимков экрана",
-      "CTA": "Войти и подписаться",
-      "LearnMore": "Подробнее"
-    },
-    "Explainer": {
-      "Title": "Как работает SeaMeet AI",
-      "Subtitle": "BYOK — Принесите свой ключ",
-      "WhatIsBYOK": "С BYOK ваши записи и данные отправляются напрямую с вашего устройства в Google или Anthropic. Ничего не проходит через серверы SeaMeet — максимальная конфиденциальность для вас и вашей команды.",
-      "WhatYouNeed": "Что вы настроите после подписки",
-      "GeminiTitle": "Ключ Google AI Studio (ограниченно бесплатно)",
-      "GeminiDesc": "Обеспечивает транскрипцию в реальном времени, итоги встреч и анализ. Google предлагает щедрый бесплатный уровень — большинство пользователей никогда не платят ни копейки.",
-      "AgentTitle": "ИИ-агент — выберите один вариант (ограниченно бесплатно)",
-      "AgentOption1": "GitHub Copilot — 50 бесплатных премиум-чатов в месяц (или больше с Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — если у вас уже есть Claude Pro или Max, вы обеспечены",
-      "AgentOption3": "Ключ API Anthropic — для прямого доступа к API",
-      "Continue": "Продолжить подписку",
-      "WhyBYOK": {
-        "Title": "Зачем приносить свой ключ?",
-        "Answer": "Гораздо лучшая конфиденциальность — ваши данные хранятся у надёжных компаний, таких как Google и Anthropic, а не у SeaMeet. Бесплатные уровни этих провайдеров щедрые и хватят большинству пользователей надолго."
-      },
-      "WhyMonthly": {
-        "Title": "Почему SeaMeet берёт ежемесячную плату?",
-        "Answer": "SeaMeet быстро обновляется новыми функциями ИИ. Подписка поддерживает вас на последней версии. Без неё вы купили бы разовую лицензию и застряли с замороженными функциями — как купить Office 2012 и остаться на Office 2012 навсегда."
-      }
-    },
-    "Coupon": {
-      "Title": "Акция запуска",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Первый месяц бесплатно — для первых 100 пользователей",
-      "FallbackDesc": "Если код SEAMEET100 исчерпан, отправьте письмо на coupon@seameet.ai для получения другого купона (скидка 10% на год или другой код на бесплатный первый месяц).",
-      "HowToUse": "Введите код купона при оплате в Stripe."
-    },
-    "PostSetup": {
-      "Title": "Всё готово! Попробуйте сейчас.",
-      "Desc": "Запишите короткую встречу или сделайте снимок экрана, чтобы испытать транскрипцию и анализ ИИ в действии.",
-      "TryRecording": "Начать запись",
-      "TryScreenshot": "Сделать снимок экрана",
-      "Later": "Попробую позже"
-    },
     "Setup": {
       "Done": "Настройка завершена",
       "Later": "Сделаю это позже"
     }
   },
-  "Billing.BYOK.KeySaved": "Ключ сохранён (скрыт)",
-  "Billing.ComingSoon": "Скоро",
-  "Billing.Device.NoDevices": "Нет зарегистрированных устройств",
-  "Billing.Device.TabLabel": "Устройства",
-  "Billing.Device.YourDevices": "Ваши устройства",
-  "Billing.Error.NoApiUrl": "Служба оплаты не настроена. Обратитесь в поддержку.",
-  "Billing.Error.NotAuthenticated": "Сначала войдите в аккаунт для оформления подписки. Используйте меню аккаунта для входа.",
-  "Billing.Error.Unknown": "Что-то пошло не так. Попробуйте ещё раз.",
-  "Billing.Plans.BYOK.Feature1": "AI-транскрипция и резюме",
-  "Billing.Plans.BYOK.Feature2": "Используйте свои собственные API-ключи Gemini и Claude",
-  "Billing.Plans.BYOK.Feature3": "Живая транскрипция во время встреч",
-  "Billing.Plans.BYOK.Feature4": "AI-вопросы и анализ встреч",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "Всё из BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "Встроенный AI — API-ключи не нужны",
-  "Billing.Plans.Desktop.Feature3": "Приоритетная поддержка",
-  "Billing.Plans.Desktop.Feature4": "Расширенная аналитика",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "Всё из Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "Облачная синхронизация между устройствами",
-  "Billing.Plans.Sync.Feature3": "Функции командной работы",
-  "Billing.Plans.Sync.Feature4": "Общая библиотека встреч",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "(Dev Override)",
-  "Billing.Status.SignIn": "Войдите для управления подпиской",
   "BlackHole": {
     "Cancel": "Отмена",
     "CheckAgain": "Проверить снова",
@@ -833,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "Применить имя",
+    "Back": "Назад",
     "Cancel": "Отменить",
     "Close": "Закрыть",
     "Configure": "Настройка",
@@ -853,7 +823,6 @@
     "Send": "Отправлять",
     "Starting": "Запуск…",
     "UnknownApp": "Неизвестное приложение",
-    "Back": "Назад",
     "Copied": "Скопировано!",
     "Copy": "Копировать"
   },
@@ -1103,8 +1072,11 @@
     "CloseTooltip": "Закрыть подсказку",
     "FailedToLoadScreens": "Не удалось загрузить экраны. Пожалуйста, попробуйте снова.",
     "FailedToLoadWindows": "Не удалось загрузить окна. Пожалуйста, попробуйте снова.",
+    "MicMuted": "Mic Muted",
+    "Microphone": "Microphone",
     "MicrophoneMuted": "Микрофон: отключен",
     "MicrophoneSettings": "Настройки микрофона",
+    "MuteMicrophone": "Mute Microphone",
     "MuteNoMicrophone": "Выключить звук (Нет микрофона)",
     "NoMicrophonesFound": "Микрофоны не обнаружены",
     "NoScreensDetected": "Экранов не обнаружено.",
@@ -1122,10 +1094,7 @@
     "SystemAudioOn": "Аудио системы: Включено",
     "WaitingForRegion": "Ожидание региона…",
     "WindowNotAvailable": "Выбор окна недоступен на этой платформе.",
-    "WindowRequired": "Выберите окно перед началом записи",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "Выберите окно перед началом записи"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Нажмите «Начать запись» на плавающей панели, чтобы записать выбранную область",
@@ -1134,18 +1103,19 @@
   "GeminiLive": {
     "AITranscription": "ИИ-транскрипция",
     "CollapseNowSpeaking": "Крах",
+    "SubscribeForTranscription": "Подпишитесь для включения транскрипции ИИ в реальном времени во время записи.",
     "EnableDescription": "Транскрипция в реальном времени с помощью Gemini во время записи",
     "EnableIntegration": "Включить живую транскрипцию AI",
     "Error": "Ошибка",
     "ExpandNowSpeaking": "Расширять",
     "NowSpeaking": "Сейчас говорю...",
     "SegmentCount_one": "{{count}} сегментов",
-    "SegmentCount_few": "",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} сегментов",
     "WaitingForConnection": "Подключение...",
-    "WaitingForSpeech": "Жду речи...",
-    "SubscribeForTranscription": "Подпишитесь для включения транскрипции ИИ в реальном времени во время записи."
+    "WaitingForSpeech": "Жду речи..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live Transcription"
   },
   "IdleCompactView": {
     "ArmFlashback": "Включить флэшбэк",
@@ -1185,8 +1155,6 @@
     "Retry": "Повторить",
     "SeekToTime": "Кликните для воспроизведения с этого момента",
     "SegmentCount_one": "{{count}} сегментов",
-    "SegmentCount_few": "",
-    "SegmentCount_many": "",
     "SegmentCount_other": "{{count}} сегментов",
     "SignInRequired": "Требуется вход в систему",
     "Summary": "Итоги",
@@ -1213,6 +1181,20 @@
     "WsConnected": "WebSocket подключён",
     "WsDisconnected": "WebSocket отключён"
   },
+  "MeetingsTab": {
+    "Download": "Скачать",
+    "DownloadAudio": "Скачать аудио",
+    "DownloadBoth": "Скачать оба",
+    "DownloadTxt": "Скачать .txt",
+    "Empty": "Встречи не найдены",
+    "Error": "Не удалось загрузить встречи",
+    "Loading": "Загрузка встреч...",
+    "Retry": "Повторить",
+    "SelectWorkspace": "Выберите рабочее пространство в меню пользователя для просмотра встреч.",
+    "Title": "Встречи",
+    "Total": "всего",
+    "Untitled": "Встреча без названия"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Совет: Для встреч в браузере (Google Meet, Zoom, Teams) я могу определить только браузер, а не конкретный сайт.",
     "ContinueRecording": "Продолжить запись",
@@ -1231,20 +1213,6 @@
     "StopRecording": "Остановить запись",
     "Yes": "Начать запись"
   },
-  "MeetingsTab": {
-    "Download": "Скачать",
-    "DownloadAudio": "Скачать аудио",
-    "DownloadBoth": "Скачать оба",
-    "DownloadTxt": "Скачать .txt",
-    "Empty": "Встречи не найдены",
-    "Error": "Не удалось загрузить встречи",
-    "Loading": "Загрузка встреч...",
-    "Retry": "Повторить",
-    "SelectWorkspace": "Выберите рабочее пространство в меню пользователя для просмотра встреч.",
-    "Title": "Встречи",
-    "Total": "всего",
-    "Untitled": "Встреча без названия"
-  },
   "MinimizedView": {
     "ActionRequired": "Требуется действие (Авто-запись)",
     "AudioFlashbackCharged": "Аудио флэшбэк заряжен ({{duration}}с)",
@@ -1254,6 +1222,18 @@
     "ScreenFlashbackCharged": "Экранный флэшбэк заряжен ({{duration}}с)",
     "ScreenFlashbackCharging": "Идет зарядка экранного флэшбэка...",
     "ScreenRecording": "Запись экрана ({{time}})"
+  },
+  "OCRAutoCopy": {
+    "Copied": "Извлечённый текст скопирован в буфер обмена",
+    "Error": "Не удалось извлечь текст",
+    "Extracting": "Извлечение текста из скриншота…",
+    "Here": "здесь",
+    "Label": "Извлечь текст (OCR) и скопировать в буфер обмена",
+    "LabelDisabled": "Извлечь текст (OCR) и скопировать в буфер обмена (требуется API-ключ, подпишитесь",
+    "LabelDisabledShort": "Извлечь текст (OCR) — требуется API-ключ",
+    "NoText": "Не удалось извлечь текст из скриншота",
+    "SettingsDesc": "Запускает OCR после каждого скриншота и копирует извлечённый текст в буфер обмена",
+    "SettingsLabel": "Автоматическое извлечение текста (OCR) при скриншоте"
   },
   "Pause": "Пауза",
   "Permissions": {
@@ -1311,9 +1291,16 @@
     "CodecInfo": "Информация о кодеке (Данные о кодеке)",
     "MoreOptions": "Больше опций"
   },
+  "Recording": {
+    "Paused": "Paused",
+    "Preparing": "Preparing",
+    "PreparingToRecord": "Preparing to record..."
+  },
   "RecordingControls": {
     "AudioRecording": "Запись аудио",
     "ContinueRecording": "Продолжить запись",
+    "MarkEvent": "Mark Event",
+    "MarkedEvents": "Marked Events",
     "RecordingAudio": "Запись аудио…",
     "RecordingMode": "Режим записи",
     "RecordingPreview": "Просмотр записи",
@@ -1321,9 +1308,7 @@
     "StartRecording": "Начать запись",
     "Stop": "Остановить",
     "StopRecording": "Остановить запись",
-    "VideoRecording": "Видео-запись",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "Видео-запись"
   },
   "RecordingModes": {
     "AreaCapture": "Захват области",
@@ -1351,8 +1336,6 @@
     "OpenSaveFolder": "Открыть папку",
     "RecentCaptures": "Последние снимки",
     "Recovered_one": "{{count}} запись восстановлена",
-    "Recovered_few": "",
-    "Recovered_many": "",
     "Recovered_other": "Восстановлено {{count}} записей.",
     "RefreshRecordings": "Обновить",
     "SaveAs": "Сохранить как",
@@ -1390,6 +1373,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "Анализ",
+    "ConfigureApiKey": "Настройте ключ API Gemini для обработки изображений с помощью AI.",
+    "SubscribeToDescribe": "Подпишитесь для включения ИИ-анализа снимков экрана.",
     "ButtonLabel": "Процесс с ИИ",
     "ErrorCodes": {
       "AUTH_ERROR": "Неверный ключ API. Пожалуйста, проверьте свой ключ API в настройках.",
@@ -1406,6 +1391,9 @@
     "DescribeSub": "Что изображено на этом скриншоте?",
     "Description": "Описание",
     "ExtractedText": "Извлеченный текст",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "Извлечь текст (OCR)",
     "OcrSub": "Читать весь видимый текст",
     "PipelineError": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз.",
@@ -1413,17 +1401,12 @@
     "Queuing": "Очередь...",
     "ResultLabel": "Результат ИИ",
     "SetupRequired": "Войдите с помощью подписки или BYOK, чтобы обработать изображение.",
-    "UnknownError": "Неизвестная ошибка",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "SubscribeToDescribe": "Подпишитесь для включения ИИ-анализа снимков экрана.",
-    "ConfigureApiKey": "Настройте ключ API Gemini для обработки изображений с помощью AI."
+    "UnknownError": "Неизвестная ошибка"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Скопировано!",
@@ -1666,19 +1649,24 @@
   "UpdateToast": {
     "Available": "Обновление доступно: SeaMeet {{version}}",
     "Dismiss": "Закрыть",
+    "DownloadFailed": "Не удалось автоматически обновить SeaMeet {{version}}",
     "Downloading": "Загрузка SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Скрыть",
+    "Install": "Установить",
+    "Later": "Позже",
+    "ManualDownload": "Скачать вручную",
     "ReadyToInstall": "SeaMeet {{version}} готова к установке",
     "RestartNow": "Перезапустить сейчас",
     "ViewRelease": "Просмотр релиза",
     "ViewReleaseTitle": "Посмотреть заметки о релизе",
     "WhatsNew": "Что нового:",
     "WhatsNewInVersion": "Что нового в {{version}}?",
-    "DownloadFailed": "Не удалось автоматически обновить SeaMeet {{version}}",
-    "ManualDownload": "Скачать вручную",
-    "Install": "Установить",
-    "Later": "Позже",
     "Restarting": "Перезапуск..."
+  },
+  "PostUpdateModal": {
+    "Title": "Обновлено до v{{version}}",
+    "Description": "SeaMeet успешно обновлён. Что нового:",
+    "GotIt": "Понятно"
   },
   "UserMenu": {
     "AboutSeaMeet": "Об SeaMeet",
@@ -1708,15 +1696,15 @@
       "WikiDesc": "Ознакомьтесь с Wiki SeaMeet для документации и руководств."
     },
     "KeyboardShortcuts": "горячие клавиши",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet: вошли в систему",
     "SeaMeetSignedOut": "SeaMeet: не вошли в систему",
-    "SignIn": "Войти",
-    "SignOut": "Выйти",
-    "AccountSignedIn": "Signed in",
-    "RefreshWorkspaces": "Обновить рабочие пространства",
     "SeaMeetSignIn": "SeaMeet Sign In",
     "SeaMeetSignOut": "SeaMeet Sign Out",
-    "Workspaces": "Рабочие пространства"
+    "SignIn": "Войти",
+    "SignOut": "Выйти",
+    "Workspaces": "Рабочие пространства",
+    "RefreshWorkspaces": "Обновить рабочие пространства"
   },
   "VideoSettings": {
     "AudioSettings": "Настройки аудио",
@@ -1778,24 +1766,5 @@
     "Refreshing": "Обновление…",
     "Title": "Выберите окно",
     "Unknown": "Окно без названия"
-  },
-  "AI": {
-    "SubscribeMsg": "Требуется подписка BYOK Pro. Подпишитесь для получения живой транскрипции, AI-резюме встреч и интерактивного AI-агента."
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "Настройте ключи API для использования AI-агента."
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "Обновлено до v{{version}}",
-    "Description": "SeaMeet успешно обновлён. Что нового:",
-    "GotIt": "Понятно"
   }
 }

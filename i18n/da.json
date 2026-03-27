@@ -1,14 +1,17 @@
 {
+  "AI": {
+    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
+  },
   "AIAgent": {
     "DisabledBadge": "Deaktiveret",
     "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
     "DisabledTabHint": "AI Agent er deaktiveret — aktiver den i Indstillinger → AI Agent & Cowork",
     "EnableToggle": "Aktiver AI Agent & Cowork",
     "EnableToggleDesc": "Kræver Claude CLI eller GitHub Copilot",
+    "LinkCopied": "Kopieret!",
     "MenuItem": "AI Agent & Cowork",
     "PageTitle": "AI Agent & Cowork",
     "SectionTitle": "AI Agent & Cowork",
-    "LinkCopied": "Kopieret!",
     "SubscribeMsg": "AI Agent kræver et BYOK Pro-abonnement. Abonnér for at få live transskription, AI-mødeoversigter og en interaktiv AI-agent.",
     "SubscribeCTA": "Abonnér for at låse op"
   },
@@ -22,10 +25,15 @@
       "ClearKey": "Fjern gemt nøgle",
       "CliInstalled": "Installeret ({{version}})",
       "CliInstallLink": "Installer Claude Code →",
+      "CliNotFound": "CLI ikke fundet",
       "CliNotInstalled": "Claude CLI ikke fundet — installér det og log ind for at godkende:",
       "CliSection": "Claude Code CLI",
+      "DefaultModel": "Standardmodel",
       "GetKeyLink": "Få en API-nøgle fra Anthropic Console →",
       "HideKey": "Skjul nøgle",
+      "InstallMac": "macOS / Linux:",
+      "InstallWin": "Windows (PowerShell):",
+      "ApiKeyTitle": "API-nøgle",
       "KeyInvalid": "Ugyldig nøgle",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "••••••••• (gemt)",
@@ -40,6 +48,8 @@
       "QuotaLoading": "Indlæser kvote...",
       "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
       "QuotaResetDate": "Nulstiller på {{date}}",
+      "Refresh": "Genopdag Claude",
+      "Remove": "Fjern Claude integration",
       "Saving": "Gemmer...",
       "Section": "Claude API-nøgle (agent)",
       "ShowKey": "Vis nøgle",
@@ -48,22 +58,36 @@
       "SourceKeyServer": "Administreret af SeaMeet",
       "SourceLabel": "Aktiv kilde:",
       "SourceNone": "Ikke konfigureret",
-      "TestKey": "Gem og bekræft",
-      "CliNotFound": "CLI ikke fundet",
+      "TestKey": "Gem og bekræft"
+    },
+    "Copilot": {
+      "Authenticated": "Godkendt",
       "DefaultModel": "Standardmodel",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "API-nøgle",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "InstallGuide": "Følg ",
+      "InstallGuideLink": "kom godt i gang-guiden",
+      "InstallGuideSuffix": " for at installere, kør derefter:",
+      "NotDetected": "Ikke fundet — installér og godkend:",
+      "Refresh": "Genopdag Copilot",
+      "Remove": "Fjern Copilot-integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "Registreret",
+      "Hint": "Du kan også skifte udbyder per samtale i chatpanelet.",
+      "NotAvailable": "Ikke tilgængelig",
+      "Preferred": "Foretrukken",
+      "Section": "Foretrukken agent-udbyder"
     },
     "ClearKey": "Fjern gemt nøgle",
     "EnableToggle": "Aktiver AI-drevne oversigter",
     "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
+    "DefaultModel": "Standardmodel",
+    "GeminiSection": "Tvillingerne",
     "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
     "GroupTitle": "AI funktioner",
     "HideKey": "Skjul nøgle",
     "KeyInvalid": "Ugyldig nøgle",
+    "KeyManagedInBilling": "API-nøgle administreres i Administrer abonnement → API-nøgler",
     "KeyNotConfigured": "Ingen nøgle konfigureret",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (gemt)",
@@ -97,31 +121,15 @@
     "ShowAllModels": "Vis alle {{count}} modeller",
     "ShowFewerModels": "Vis færre modeller",
     "ShowKey": "Vis nøgle",
-    "TestKey": "Gem og bekræft",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "Godkendt",
-      "DefaultModel": "Standardmodel",
-      "InstallGuide": "Følg ",
-      "InstallGuideLink": "kom godt i gang-guiden",
-      "InstallGuideSuffix": " for at installere, kør derefter:",
-      "NotDetected": "Ikke fundet — installér og godkend:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "Registreret",
-      "Hint": "Du kan også skifte udbyder per samtale i chatpanelet.",
-      "NotAvailable": "Ikke tilgængelig",
-      "Section": "Foretrukken agent-udbyder",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "Gem og bekræft"
   },
   "AISummary": {
+    "ApplyMerge": "Anvend",
+    "SubscribeToGenerate": "Abonnér for at generere AI-oversigter, transskriptioner og handlingspunkter fra dine optagelser.",
+    "SubscribeToRegenerate": "Abonnér for at gengenerere AI-oversigter.",
+    "ConfirmRename": "Bekræft omdøb",
     "Copy": "Kopi",
+    "EditSegmentSpeaker": "Klik for at gentildele dette segment",
     "EnableRequired": "Aktiver AI-funktioner i Indstillinger → AI-funktioner for at se AI-oversigter.",
     "ErrorCodes": {
       "AUTH_ERROR": "Ugyldig API-nøgle. Tjek venligst din API-nøgle i Indstillinger.",
@@ -143,23 +151,28 @@
     "ExportJson": "Kopiér som JSON",
     "ExportMarkdown": "Kopiér som Markdown",
     "ExportSrt": "Kopiér som SRT",
-    "GeminiLiveTranscript": "Gemini Live",
     "Generate": "Generer oversigt",
+    "LoadingVersion": "Indlæser version...",
     "Maximize": "Udvid til fuld visning",
+    "MergeInto": "Flet til…",
     "Minimize": "Minimer",
     "NoActions": "Ingen handlingspunkter identificeret.",
     "NoChapters": "Ingen tilgængelige kapitler.",
     "NoDecisions": "Ingen nøglebeslutninger identificeret.",
     "NoSummary": "Ingen AI-oversigt endnu.",
     "NoSummaryText": "Resumé er ikke tilgængelig.",
+    "NotAvailableForVersion": "Ikke tilgængelig for denne version.",
     "NoTranscript": "Udskrift ikke tilgængelig.",
     "PipelineError": "AI-behandling mislykkedes. Prøv at regenerere.",
     "PipelineTranscript": "AI rørledning",
     "Processing": "Genererer oversigt...",
     "Queued": "I kø til behandling...",
     "Regenerate": "Gendan oversigt",
+    "RenameSpeaker": "Omdøb højttaler",
     "Retry": "Prøv igen",
     "SeekToTimestamp": "Søg efter dette tidsstempel",
+    "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at generere AI-resuméer og transskriptioner.",
+    "ConfigureKey": "Konfigurer API-nøgle",
     "SetupRequired": "Konfigurer din Gemini API-nøgle i Indstillinger → AI-funktioner for at aktivere AI-oversigter.",
     "Tab": {
       "ActionItems": "Handlinger",
@@ -168,20 +181,14 @@
       "Summary": "Oversigt",
       "Transcription": "Afskrift"
     },
+    "ScreenshotTabTitle": "AI analyse",
     "TabTitle": "AI oversigt",
     "Topics": "Emner:",
     "Speakers": "Højttalere",
-    "MergeInto": "Flet til…",
-    "ApplyMerge": "Anvend",
-    "EditSegmentSpeaker": "Klik for at gentildele dette segment",
     "VersionPicker": "Gennemse versionshistorik",
     "ViewingLive": "Viser Live-udskrift",
     "ViewingVersion": "Viser v{{n}} af {{total}}",
     "ViewLatest": "Se seneste →",
-    "LoadingVersion": "Indlæser version...",
-    "NotAvailableForVersion": "Ikke tilgængelig for denne version.",
-    "ConfirmRename": "Bekræft omdøb",
-    "RenameSpeaker": "Omdøb højttaler",
     "RenameSuggestion": "AI foreslår",
     "NewFileName": "nyt filnavn",
     "ApplyRename": "Omdøb",
@@ -194,12 +201,7 @@
     "Version": {
       "Latest": "Seneste",
       "Live": "Levende"
-    },
-    "ScreenshotTabTitle": "AI Analysis",
-    "SubscribeToGenerate": "Abonnér for at generere AI-oversigter, transskriptioner og handlingspunkter fra dine optagelser.",
-    "SubscribeToRegenerate": "Abonnér for at gengenerere AI-oversigter.",
-    "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at generere AI-resuméer og transskriptioner.",
-    "ConfigureKey": "Konfigurer API-nøgle"
+    }
   },
   "About": {
     "AppStoreBuild": "App Store-version",
@@ -221,6 +223,12 @@
     "CommandHelp": "Kommandoer: /ny · /ryd · /pris · /hjælp",
     "GlobalTitle": "AI-agent",
     "GoToSettings": "Åbn Indstillinger",
+    "LiveAction": {
+      "ActionItems": "Handlingspunkter",
+      "Summarize": "Sammenfatte",
+      "Translate": "Oversætte",
+      "WhoSaidWhat": "Hvem sagde hvad"
+    },
     "Mode": {
       "Ask": "Spørge",
       "Code": "Kode",
@@ -263,6 +271,7 @@
     "SendButton": "Sende",
     "SendPlaceholder": "Spørg hvad som helst... (Enter for at sende, Shift+Enter for ny linje)",
     "SessionCost": "Session: {{inputTokens}} ind /{{outputTokens}} ud tokens",
+    "SectionTitle": "AI-agent",
     "Sessions": "Sessioner",
     "StopButton": "Stop",
     "Streaming": {
@@ -295,14 +304,10 @@
       "Completed_other": "{{count}} fuldført",
       "Running_one": "{{count}} kører",
       "Running_other": "{{count}} kører"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "Konfigurer dine API-nøgler for at bruge AI-agenten."
   },
   "App": {
     "FailedToEnableFlashback": "Fejl under aktivering af flashback: {{error}}",
@@ -361,15 +366,15 @@
   "AudioControls": {
     "AudioCapture": "Lydoptagelse",
     "AudioMix": "Lyd-mix",
+    "AudioSettings": "Lydindstillinger",
     "AudioSource": "Lydkilde:",
     "Microphone": "Mikrofon",
     "MicrophoneGainWarning": "Høj mikrofonforstærkning kan opfange lyd fra højttalerafspilning selv når \"Systemlyd\" er slået fra. Brug hovedtelefoner eller sænk mikrofonforstærkning ved mikrofonbaseret optagelse.",
+    "MuteMic": "Slå mikrofon fra",
     "RecordingDefaultMicrophone": "Standardmikrofon",
     "RecordingSettings": "Optagelsesindstillinger",
     "RefreshMicrophoneList": "Opdater mikrofonliste",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
-    "UnmuteMic": "Unmute Microphone"
+    "UnmuteMic": "Slå mikrofon til"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO-DETEKTERING",
@@ -405,31 +410,72 @@
     "MeetingFallbackName": "Møde"
   },
   "BatchDownload": {
-    "Title": "Download møder",
-    "DownloadAll": "Download alle",
-    "Resume": "Genoptag download",
-    "RetryFailed": "Download mislykkede igen",
-    "Preparing": "Scanner møder...",
-    "TotalMeetings": "Møder i alt",
-    "AlreadyDownloaded": "Allerede downloadet",
-    "ToDownload": "Til download",
     "AllDownloaded": "Alle møder er allerede downloadet!",
-    "StartDownload": "Start download",
+    "AlreadyDownloaded": "Allerede downloadet",
     "Cancel": "Annuller",
     "Close": "Luk",
-    "Complete": "Download fuldført",
     "ContactSupport": "Hvis problemet fortsætter, kontakt seameet@seasalt.ai",
+    "DownloadAll": "Download alle",
     "Downloaded": "Downloadet",
     "Downloading": "Downloader...",
     "Failed": "Mislykkedes",
     "More": "flere",
     "NoAudio": "Ingen lyd tilgængelig",
+    "Preparing": "Scanner møder...",
+    "Resume": "Genoptag download",
     "Retry": "Prøv mislykkede igen",
+    "RetryFailed": "Download mislykkede igen",
     "Skipped": "Sprunget over",
+    "StartDownload": "Start download",
+    "Complete": "Download fuldført",
     "Stats": "Downloadstatistik",
+    "Title": "Download møder",
+    "ToDownload": "Til download",
+    "TotalMeetings": "Møder i alt",
     "ViewDetails": "Se detaljer"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "Aktivér live transskription og AI-analyse efter mødet",
+      "ScreenshotAnalysis": "Aktivér AI-drevet skærmbilledanalyse",
+      "CTA": "Log ind og abonnér",
+      "LearnMore": "Læs mere"
+    },
+    "Explainer": {
+      "Title": "Sådan fungerer SeaMeet AI",
+      "Subtitle": "BYOK — Medbring din egen nøgle",
+      "WhatIsBYOK": "Med BYOK sendes dine optagelser og data direkte fra din enhed til Google eller Anthropic. Intet passerer gennem SeaMeet-servere — maksimal privatliv for dig og dit team.",
+      "WhatYouNeed": "Hvad du skal sætte op efter abonnement",
+      "GeminiTitle": "Google AI Studio-nøgle (begrænset gratis)",
+      "GeminiDesc": "Driver live transskription, mødeoversigter og analyse. Google tilbyder et generøst gratis niveau — de fleste brugere betaler aldrig en øre.",
+      "AgentTitle": "AI Agent — vælg én mulighed (begrænset gratis)",
+      "AgentOption1": "GitHub Copilot — 50 gratis premium-chats/måned (eller flere med Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — hvis du allerede har Claude Pro eller Max, er du dækket",
+      "AgentOption3": "Anthropic API-nøgle — til direkte API-adgang",
+      "Continue": "Fortsæt til abonnement",
+      "WhyBYOK": {
+        "Title": "Hvorfor medbringe din egen nøgle?",
+        "Answer": "Meget bedre privatliv — dine data forbliver hos betroede virksomheder som Google og Anthropic, aldrig SeaMeet. De gratis niveauer fra disse udbydere er generøse og vil vare de fleste brugere lang tid."
+      },
+      "WhyMonthly": {
+        "Title": "Hvorfor opkræver SeaMeet månedligt?",
+        "Answer": "SeaMeet opdateres hurtigt med nye AI-funktioner. Dit abonnement holder dig på den nyeste version. Uden det ville du betale en engangslicens og sidde fast med frosne funktioner — som at købe Office 2012 og blive på Office 2012 for evigt."
+      }
+    },
+    "Coupon": {
+      "Title": "Lanceringstilbud",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Første måned gratis — for de første 100 brugere",
+      "FallbackDesc": "Hvis SEAMEET100 er opbrugt, send en e-mail til coupon@seameet.ai for at få en anden kupon (10% rabat i et år eller en anden gratis-måned-kode).",
+      "HowToUse": "Indtast kuponkoden ved Stripe-checkout."
+    },
+    "PostSetup": {
+      "Title": "Du er klar! Prøv det nu.",
+      "Desc": "Optag et hurtigt møde eller tag et skærmbillede for at opleve AI-transskription og -analyse i aktion.",
+      "TryRecording": "Start en optagelse",
+      "TryScreenshot": "Tag et skærmbillede",
+      "Later": "Jeg prøver senere"
+    },
     "Banner": {
       "CancelPending": "Dit abonnement udløber {{date}}. Derefter vil transskription, resuméer og AI-funktioner stoppe.",
       "PastDue": "Betaling mislykkedes — AI-funktioner er deaktiveret. Opdater din betaling for at gendanne dem.",
@@ -440,7 +486,7 @@
       "ActiveTitle": "Abonnement aktivt — BYOK Pro",
       "AnthropicHelp": "Fa en nogle: ",
       "AnthropicHelpLink": "console.anthropic.com",
-      "AnthropicLabel": "Claude (Anthropic)",
+      "AnthropicLabel": "Claude (antropisk)",
       "AnthropicTip": "Tip: Gratis kreditter til nye konti. Ogsa inkluderet hvis du har Claude Pro eller Max.",
       "AnthropicUsage": "Bruges til: AI-sporgsmal, projektanalyse",
       "Configured": "Konfigureret",
@@ -448,6 +494,7 @@
       "GeminiHelp": "Fa en gratis nogle: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Nøgle gemt (skjult)",
       "GeminiUsage": "Bruges til: transskription, resumeer, live transskription. Gratis nogler er underlagt Gemini hastighedsbegransning og kvote. Skift til en betalt Google AI Studio-plan hvis du nar gransen.",
       "NotConfigured": "Ikke konfigureret",
       "SaveContinue": "Gem og fortsaet",
@@ -456,9 +503,9 @@
       "SecurityNote": "Nogler opbevares lokalt pa din enhed (krypteret i dit OS-noglering). SeaMeet sender aldrig dine nogler til vores servere.",
       "SkipForNow": "Spring over for nu",
       "Subtitle": "Et trin mere: tilslut dine AI API-nogler.",
+      "TabLabel": "API-nogler",
       "Validating": "Validerer...",
       "ValidationFailed": "Validering mislykkedes",
-      "TabLabel": "API-nogler",
       "WizardStep": "Trin {{current}} af {{total}}",
       "Step1Title": "Tilslut din Gemini API-nogle",
       "Step1Desc": "Bruges til transskription, resumeer og live transskription. Fa en gratis nogle fra Google AI Studio.",
@@ -468,9 +515,9 @@
       "Step3Desc": "Begge API-nogler er konfigureret. Du kan opdatere dem nar som helst nedenfor.",
       "Next": "Naeste",
       "Done": "Faerdig",
-      "RemoveKey": "Fjern gemt nogle",
       "TestKey": "Test nogle",
       "TestingKey": "Tester...",
+      "RemoveKey": "Fjern gemt nogle",
       "StepCopilotTitle": "Tilslut GitHub Copilot (valgfrit)",
       "StepCopilotDesc": "GitHub Copilot er fundet på dit system. Vælg din foretrukne agentleverandør.",
       "CopilotStatus": "GitHub Copilot",
@@ -485,6 +532,15 @@
       "CopilotSignupHint": "Vil du prøve GitHub Copilot som alternativ agent? Tilmeld dig en gratis plan på github.com/features/copilot/plans (inkluderer 50 agent-/chatforespørgsler om måneden), installér derefter Copilot CLI og kør \"copilot login\".",
       "CopilotFlatUsage": "Bruges til: AI-agent (alternativ til Claude). Ingen API-nøgle nødvendig — bruger dit GitHub-login.",
       "Guide": {
+        "Intro": "SeaMeet AI har to uafhængige funktionsområder — opsæt det du har brug for.",
+        "SectionAiSummary": "AI-resumé",
+        "SectionAiSummaryBadge": "Påkrævet",
+        "SectionAiSummarySubtitle": "Hent Gemini API-nøglen (gratis)",
+        "SectionAiAgent": "AI-agent",
+        "SectionAiAgentBadge": "Mindst én påkrævet",
+        "OptionCopilotTitle": "GitHub Copilot CLI (gratis)",
+        "OptionClaudeTitle": "Claude Code CLI (valgfri, betalt)",
+        "Or": "ELLER",
         "Step1Title": "Trin 1 — Læs dette grundigt",
         "Step1Need": "Du skal bruge 2 ting:",
         "Step1Item1": "Gemini API-nøgle — til AI-resumé og live-transskription",
@@ -507,44 +563,74 @@
         "Step4Install": "Klik på ",
         "Step4InstallLink": "Claude Code CLI",
         "Step4InstallSuffix": " eller hurtig installation:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
+        "Step4Mac": "macOS / Linux:",
+        "Step4Win": "Windows:",
         "Step4WinReq": "kræver ",
-        "Step4GitWin": "Git for Windows",
+        "Step4GitWin": "Git til Windows",
         "Step4Auth": "Kør: ",
         "Step4AuthDesc": " (kræver Claude Pro- eller Max-abonnement)",
         "Step4Refresh": "Klik på opdater nedenfor for at registrere Claude Code.",
         "Step4Select": "Klik på Claude Code nedenfor for at vælge som foretrukken.",
-        "Intro": "SeaMeet AI har to uafhængige funktionsområder — opsæt det du har brug for.",
-        "SectionAiSummary": "AI-resumé",
-        "SectionAiSummaryBadge": "Påkrævet",
-        "SectionAiSummarySubtitle": "Hent Gemini API-nøglen (gratis)",
-        "SectionAiAgent": "AI-agent",
-        "SectionAiAgentBadge": "Mindst én påkrævet",
-        "OptionCopilotTitle": "GitHub Copilot CLI (gratis)",
-        "OptionClaudeTitle": "Claude Code CLI (valgfri, betalt)",
-        "Or": "ELLER",
         "StepComplete": {
-          "AgentBoth": "Both Claude and Copilot are configured",
-          "AgentClaude": "Claude is configured",
-          "AgentCopilot": "Copilot is configured",
-          "Summary": "Setup complete"
+          "AgentBoth": "Både Claude og Copilot er konfigureret",
+          "AgentClaude": "Claude er konfigureret",
+          "AgentCopilot": "Copilot er konfigureret",
+          "Summary": "Opsætningen er fuldført"
         }
       }
     },
+    "CurrentPlan": "Nuvaerende plan",
     "Device": {
       "Close": "Luk",
       "DaysAgo_one": "{{count}} dag siden",
       "DaysAgo_other": "{{count}} dage siden",
+      "Error": "Kunne ikke indlaese enheder: {{error}}",
       "LastUsed": "Sidst brugt {{when}}",
       "LimitDescription": "SeaMeet Pro virker pa op til 3 enheder ad gangen. Log ud fra en enhed du ikke bruger for at frigore en plads.",
       "LimitTitle": "Enhedsgraense naet",
+      "Loading": "Indlaeser enheder...",
+      "NoDevices": "Ingen enheder registreret",
       "SigningOut": "Logger ud...",
       "SignOut": "Log ud",
+      "TabLabel": "Enheder",
       "Today": "i dag",
       "Yesterday": "i gar",
-      "Error": "Kunne ikke indlaese enheder: {{error}}",
-      "Loading": "Indlaeser enheder..."
+      "YourDevices": "Dine enheder"
+    },
+    "FAQ": {
+      "Title": "Ofte stillede sporgsmal",
+      "Free": {
+        "Q1": "Hvad kan jeg gore med den gratis plan?",
+        "A1": "SeaMeet Free er et fuldt udstyret optagelses- og skaermbilledvaerktoj. Du kan optage lyd, optage skaermvideo, tage skaermbilleder og administrere alle dine optagelser — helt gratis, for altid.",
+        "Q2": "Er mine data private?",
+        "A2": "Ja. Pa den gratis plan sendes ingen data nogensinde nogen steder hen. Alle optagelser, skaermbilleder og filer forbliver 100% lokalt pa din enhed. Dit privatliv er fuldt beskyttet.",
+        "Q3": "Hvad mere kan jeg fa med en betalt plan?",
+        "A3": "Betalte planer tilfojer AI-drevne funktioner: automatisk transskription, moderesumeerer, opgavelister, live transskription under moder og AI-drevne sporgsmal om dine optagelser."
+      },
+      "BYOK": {
+        "Q1": "Hvad er BYOK?",
+        "A1": "BYOK står for Bring Your Own Key (Medbring din egen nøgle). Du skal bruge 2 API-nøgler: én fra Google AI Studio (til transskription og oversigter) og én fra GitHub Copilot eller Claude Code (til AI-agent). En guidet opsætningsguide fører dig gennem tilslutning af begge nøgler efter checkout. Google AI Studio giver dig normalt en gratis nøgle. GitHub Copilot tilbyder også en gratis plan. Så du er klar til at bruge dine egne nøgler med begrænset gratis adgang. Hvis du har abonneret på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle.",
+        "Q2": "Hvorfor et manedligt abonnement?",
+        "A2": "Dit abonnement finansierer lobende opdateringer, understottelse af nye AI-modeller, fejlrettelser og nye funktioner. API-omkostninger betales separat til Google og Anthropic med dine egne nogler.",
+        "Q3": "Hvordan fungerer licenseringen?",
+        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
+      },
+      "Desktop": {
+        "Q1": "Hvad er Desktop Pro?",
+        "A1": "Desktop Pro inkluderer indbyggede AI-nogler administreret af SeaMeet — ingen grund til at oprette eller administrere dine egne API-nogler. Abonner bare og begynd at bruge AI-funktioner med det samme.",
+        "Q2": "Hvordan adskiller det sig fra BYOK?",
+        "A2": "Med Desktop Pro leverer og administrerer SeaMeet API-noglerne for dig. Du behovver ikke at tilmelde dig Google AI Studio eller Anthropic separat.",
+        "Q3": "Hvordan fungerer licenseringen?",
+        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
+      },
+      "Sync": {
+        "Q1": "Hvad er Sync Pro?",
+        "A1": "Sync Pro inkluderer alt fra Desktop Pro plus skysynkronisering. Dine optagelser, transskriptioner og resumeer synkroniseres pa tvaers af alle dine enheder.",
+        "Q2": "Hvad bliver synkroniseret?",
+        "A2": "Optagelser, transskriptioner, AI-resumeer og opgavelister synkroniseres pa tvaers af dine enheder. AEndringer pa en enhed vises pa alle andre.",
+        "Q3": "Hvordan fungerer licenseringen?",
+        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
+      }
     },
     "Error": {
       "AlreadySubscribed": "Du har allerede et aktivt abonnement. Brug Administrer abonnement til at se eller ændre det.",
@@ -553,24 +639,35 @@
       "Unknown": "Noget gik galt. Prøv igen."
     },
     "FreeNote": "Gratis plan: kun optagelse, ingen AI-funktioner, intet login nodvendigt. Du kan altid optage uden abonnement.",
+    "ComingSoon": "Kommer snart",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7,99/måned",
+        "Feature1": "AI-transskription og resuméer",
+        "Feature2": "Brug dine egne Gemini & Claude API nøgler",
+        "Feature3": "Live transskription under møder",
+        "Feature4": "AI-drevet mødespørgsmål og -analyse",
         "InfoNote": "Du skal bruge 2 opsætninger: Google AI Studio (gratis) og GitHub (gratis) eller Anthropic (betalt). En opsætningsguide hjælper dig efter betaling:",
         "ConfirmTitle": "For du abonnerer",
         "ConfirmContinue": "Fortsaet til betaling",
         "ConfirmSignIn": "Log ind forst, betal derefter",
         "ConfirmCancel": "Annuller",
         "ConfirmCopyCheckout": "Kopiér kode og betal",
-        "InfoNote.Claude": "Hvis du har et Claude Pro- eller Max-abonnement, behøver du ikke en ekstra Anthropic API-nøgle.",
+        "InfoNote.Claude": "Hvis du har et Claude Pro eller Max abonnement, behøver du ikke en ekstra Anthropic API-nøgle.",
         "InfoNote.Copilot": "GitHub Copilot har også en gratis plan.",
         "InfoNote.Gemini": "Google AI Studio giver dig normalt en gratis nøgle."
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15,99/måned",
+        "Feature1": "Alt i BYOK Pro",
+        "Feature2": "Indbygget AI - ingen API-nøgler påkrævet",
+        "Feature3": "Prioriteret støtte",
+        "Feature4": "Avanceret analyse"
       },
       "Free": {
-        "Name": "Free",
+        "Name": "Gratis",
         "Price": "$0",
         "Feature1": "Kun optagelse",
         "Feature2": "Ingen AI-funktioner",
@@ -578,7 +675,12 @@
         "Feature4": "Altid tilgaengelig"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25,99/måned",
+        "Feature1": "Alt i Desktop Pro",
+        "Feature2": "Cloud-synkronisering på tværs af enheder",
+        "Feature3": "Funktioner til teamsamarbejde",
+        "Feature4": "Fælles mødebibliotek"
       }
     },
     "Privacy": {
@@ -646,130 +748,30 @@
     "PromoHint": "Har du en kampagnekode? Indtast den ved betaling.",
     "Status": {
       "Active": "Aktivt",
-      "CancelNotice": "Abonnement udlober {{date}}",
-      "CancelPendingNotice": "Dit abonnement udløber {{date}}. AI-funktioner forbliver tilgængelige indtil da.",
       "Canceled": "Annulleret",
       "Canceling": "Opsiges",
+      "CancelNotice": "Abonnement udlober {{date}}",
+      "CancelPendingNotice": "Dit abonnement udløber {{date}}. AI-funktioner forbliver tilgængelige indtil da.",
       "EndsOn": "Udløber {{date}}",
+      "DevOverride": "(Dev Override)",
       "Loading": "Indlaeser...",
       "Manage": "Administrer abonnement",
       "None": "Intet abonnement",
       "PastDue": "Forfaldent",
       "Plan": "Plan",
       "Reactivate": "Genaktiver",
+      "SignIn": "Log ind for at administrere abonnement",
       "Trial": "Proveperiode"
     },
+    "SignInToSubscribe": "Log ind for at abonnere:",
     "Subscribe": "Abonner",
     "Subscribing": "Abonnerer...",
     "UnlockTitle": "Las op for SeaMeet AI-funktioner",
-    "SignInToSubscribe": "Log ind for at abonnere:",
-    "CurrentPlan": "Nuvaerende plan",
-    "FAQ": {
-      "Title": "Ofte stillede sporgsmal",
-      "BYOK": {
-        "Q1": "Hvad er BYOK?",
-        "A1": "BYOK står for Bring Your Own Key (Medbring din egen nøgle). Du skal bruge 2 API-nøgler: én fra Google AI Studio (til transskription og oversigter) og én fra GitHub Copilot eller Claude Code (til AI-agent). En guidet opsætningsguide fører dig gennem tilslutning af begge nøgler efter checkout. Google AI Studio giver dig normalt en gratis nøgle. GitHub Copilot tilbyder også en gratis plan. Så du er klar til at bruge dine egne nøgler med begrænset gratis adgang. Hvis du har abonneret på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle.",
-        "Q2": "Hvorfor et manedligt abonnement?",
-        "A2": "Dit abonnement finansierer lobende opdateringer, understottelse af nye AI-modeller, fejlrettelser og nye funktioner. API-omkostninger betales separat til Google og Anthropic med dine egne nogler.",
-        "Q3": "Hvordan fungerer licenseringen?",
-        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
-      },
-      "Desktop": {
-        "Q1": "Hvad er Desktop Pro?",
-        "A1": "Desktop Pro inkluderer indbyggede AI-nogler administreret af SeaMeet — ingen grund til at oprette eller administrere dine egne API-nogler. Abonner bare og begynd at bruge AI-funktioner med det samme.",
-        "Q2": "Hvordan adskiller det sig fra BYOK?",
-        "A2": "Med Desktop Pro leverer og administrerer SeaMeet API-noglerne for dig. Du behovver ikke at tilmelde dig Google AI Studio eller Anthropic separat.",
-        "Q3": "Hvordan fungerer licenseringen?",
-        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
-      },
-      "Sync": {
-        "Q1": "Hvad er Sync Pro?",
-        "A1": "Sync Pro inkluderer alt fra Desktop Pro plus skysynkronisering. Dine optagelser, transskriptioner og resumeer synkroniseres pa tvaers af alle dine enheder.",
-        "Q2": "Hvad bliver synkroniseret?",
-        "A2": "Optagelser, transskriptioner, AI-resumeer og opgavelister synkroniseres pa tvaers af dine enheder. AEndringer pa en enhed vises pa alle andre.",
-        "Q3": "Hvordan fungerer licenseringen?",
-        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
-      },
-      "Free": {
-        "Q1": "Hvad kan jeg gore med den gratis plan?",
-        "A1": "SeaMeet Free er et fuldt udstyret optagelses- og skaermbilledvaerktoj. Du kan optage lyd, optage skaermvideo, tage skaermbilleder og administrere alle dine optagelser — helt gratis, for altid.",
-        "Q2": "Er mine data private?",
-        "A2": "Ja. Pa den gratis plan sendes ingen data nogensinde nogen steder hen. Alle optagelser, skaermbilleder og filer forbliver 100% lokalt pa din enhed. Dit privatliv er fuldt beskyttet.",
-        "Q3": "Hvad mere kan jeg fa med en betalt plan?",
-        "A3": "Betalte planer tilfojer AI-drevne funktioner: automatisk transskription, moderesumeerer, opgavelister, live transskription under moder og AI-drevne sporgsmal om dine optagelser."
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "Aktivér live transskription og AI-analyse efter mødet",
-      "ScreenshotAnalysis": "Aktivér AI-drevet skærmbilledanalyse",
-      "CTA": "Log ind og abonnér",
-      "LearnMore": "Læs mere"
-    },
-    "Explainer": {
-      "Title": "Sådan fungerer SeaMeet AI",
-      "Subtitle": "BYOK — Medbring din egen nøgle",
-      "WhatIsBYOK": "Med BYOK sendes dine optagelser og data direkte fra din enhed til Google eller Anthropic. Intet passerer gennem SeaMeet-servere — maksimal privatliv for dig og dit team.",
-      "WhatYouNeed": "Hvad du skal sætte op efter abonnement",
-      "GeminiTitle": "Google AI Studio-nøgle (begrænset gratis)",
-      "GeminiDesc": "Driver live transskription, mødeoversigter og analyse. Google tilbyder et generøst gratis niveau — de fleste brugere betaler aldrig en øre.",
-      "AgentTitle": "AI Agent — vælg én mulighed (begrænset gratis)",
-      "AgentOption1": "GitHub Copilot — 50 gratis premium-chats/måned (eller flere med Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — hvis du allerede har Claude Pro eller Max, er du dækket",
-      "AgentOption3": "Anthropic API-nøgle — til direkte API-adgang",
-      "Continue": "Fortsæt til abonnement",
-      "WhyBYOK": {
-        "Title": "Hvorfor medbringe din egen nøgle?",
-        "Answer": "Meget bedre privatliv — dine data forbliver hos betroede virksomheder som Google og Anthropic, aldrig SeaMeet. De gratis niveauer fra disse udbydere er generøse og vil vare de fleste brugere lang tid."
-      },
-      "WhyMonthly": {
-        "Title": "Hvorfor opkræver SeaMeet månedligt?",
-        "Answer": "SeaMeet opdateres hurtigt med nye AI-funktioner. Dit abonnement holder dig på den nyeste version. Uden det ville du betale en engangslicens og sidde fast med frosne funktioner — som at købe Office 2012 og blive på Office 2012 for evigt."
-      }
-    },
-    "Coupon": {
-      "Title": "Lanceringstilbud",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Første måned gratis — for de første 100 brugere",
-      "FallbackDesc": "Hvis SEAMEET100 er opbrugt, send en e-mail til coupon@seameet.ai for at få en anden kupon (10% rabat i et år eller en anden gratis-måned-kode).",
-      "HowToUse": "Indtast kuponkoden ved Stripe-checkout."
-    },
-    "PostSetup": {
-      "Title": "Du er klar! Prøv det nu.",
-      "Desc": "Optag et hurtigt møde eller tag et skærmbillede for at opleve AI-transskription og -analyse i aktion.",
-      "TryRecording": "Start en optagelse",
-      "TryScreenshot": "Tag et skærmbillede",
-      "Later": "Jeg prøver senere"
-    },
     "Setup": {
       "Done": "Jeg er færdig med opsætningen",
       "Later": "Jeg gør det senere"
     }
   },
-  "Billing.BYOK.KeySaved": "Nogle gemt (skjult)",
-  "Billing.ComingSoon": "Kommer snart",
-  "Billing.Device.NoDevices": "Ingen enheder registreret",
-  "Billing.Device.TabLabel": "Enheder",
-  "Billing.Device.YourDevices": "Dine enheder",
-  "Billing.Error.NoApiUrl": "Faktureringstjenesten er ikke konfigureret. Kontakt venligst support.",
-  "Billing.Error.NotAuthenticated": "Log venligst ind forst for at abonnere. Brug kontomenuen til at logge ind.",
-  "Billing.Error.Unknown": "Noget gik galt. Provv venligst igen.",
-  "Billing.Plans.BYOK.Feature1": "AI-transskription og resumeer",
-  "Billing.Plans.BYOK.Feature2": "Brug dine egne Gemini og Claude API-nogler",
-  "Billing.Plans.BYOK.Feature3": "Live transskription under moder",
-  "Billing.Plans.BYOK.Feature4": "AI-drevne modesporgsmal og analyse",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "Alt fra BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "Indbygget AI — ingen API-nogler nodvendige",
-  "Billing.Plans.Desktop.Feature3": "Prioriteret support",
-  "Billing.Plans.Desktop.Feature4": "Avanceret analyse",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "Alt fra Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "Skysynkronisering pa tvaers af enheder",
-  "Billing.Plans.Sync.Feature3": "Samarbejdsfunktioner for teams",
-  "Billing.Plans.Sync.Feature4": "Delt modebibliotek",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "(Dev Override)",
-  "Billing.Status.SignIn": "Log ind for at administrere abonnement",
   "BlackHole": {
     "Cancel": "Annuller",
     "CheckAgain": "Tjek igen",
@@ -800,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "Anvend navn",
+    "Back": "Tilbage",
     "Cancel": "Annuller",
     "Close": "Luk",
     "Configure": "Konfigurer",
@@ -820,7 +823,6 @@
     "Send": "Sende",
     "Starting": "Starter...",
     "UnknownApp": "Ukendt app",
-    "Back": "Tilbage",
     "Copied": "Kopieret!",
     "Copy": "Kopiér"
   },
@@ -1070,8 +1072,11 @@
     "CloseTooltip": "Luk værktøjstip",
     "FailedToLoadScreens": "Kunne ikke indlæse skærme. Prøv igen.",
     "FailedToLoadWindows": "Kunne ikke indlæse vinduer. Prøv igen.",
+    "MicMuted": "Mikrofon dæmpet",
+    "Microphone": "Mikrofon",
     "MicrophoneMuted": "Mikrofon: Lydløs",
     "MicrophoneSettings": "Mikrofonindstillinger",
+    "MuteMicrophone": "Slå mikrofon fra",
     "MuteNoMicrophone": "Lydløs (Ingen mikrofon)",
     "NoMicrophonesFound": "Ingen mikrofoner fundet",
     "NoScreensDetected": "Ingen skærme fundet.",
@@ -1089,10 +1094,7 @@
     "SystemAudioOn": "Systemlyd: TIL",
     "WaitingForRegion": "Venter på område...",
     "WindowNotAvailable": "Vinduesvalg er ikke tilgængeligt på denne platform.",
-    "WindowRequired": "Vælg et vindue før optagelse",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "Vælg et vindue før optagelse"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Klik på Start Optagelse i den flydende bjælke for at optage det valgte område",
@@ -1101,6 +1103,7 @@
   "GeminiLive": {
     "AITranscription": "AI-transskription",
     "CollapseNowSpeaking": "Bryde sammen",
+    "SubscribeForTranscription": "Abonnér for at aktivere live AI-transskription under optagelser.",
     "EnableDescription": "Realtidstransskription drevet af Gemini under optagelse",
     "EnableIntegration": "Aktiver Live AI-transskription",
     "Error": "Fejl",
@@ -1109,8 +1112,10 @@
     "SegmentCount_one": "{{count}} segmenter",
     "SegmentCount_other": "{{count}} segmenter",
     "WaitingForConnection": "Opretter forbindelse...",
-    "WaitingForSpeech": "Venter på tale...",
-    "SubscribeForTranscription": "Abonnér for at aktivere live AI-transskription under optagelser."
+    "WaitingForSpeech": "Venter på tale..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live transskription"
   },
   "IdleCompactView": {
     "ArmFlashback": "Aktiver Flashback",
@@ -1218,6 +1223,18 @@
     "ScreenFlashbackCharging": "Skærm-flashback indlæser...",
     "ScreenRecording": "Skærmoptagelse ({{time}})"
   },
+  "OCRAutoCopy": {
+    "Copied": "Udtrukket tekst kopieret til udklipsholder",
+    "Error": "Kunne ikke udtrække tekst",
+    "Extracting": "Udtrækker tekst fra skærmbillede…",
+    "Here": "her",
+    "Label": "Udtræk tekst (OCR) og kopier til udklipsholder",
+    "LabelDisabled": "Udtræk tekst (OCR) og kopier til udklipsholder (API-nøgle påkrævet, abonner",
+    "LabelDisabledShort": "Udtræk tekst (OCR) — API-nøgle påkrævet",
+    "NoText": "Ingen tekst kunne udtrækkes fra skærmbilledet",
+    "SettingsDesc": "Kører OCR efter hvert skærmbillede og kopierer udtrukket tekst til udklipsholder",
+    "SettingsLabel": "Auto-udtræk tekst (OCR) ved skærmbillede"
+  },
   "Pause": "Pause",
   "Permissions": {
     "AlwaysAutoRecord": "Optag altid automatisk",
@@ -1248,8 +1265,8 @@
       "Analyzing": "Analyserer",
       "Extracting": "Udtræk resultater",
       "Saving": "Gemmer artefakter",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "Forbereder billede",
+      "AnalyzingImage": "Analyser billede"
     }
   },
   "Player": {
@@ -1274,9 +1291,21 @@
     "CodecInfo": "Codec-information",
     "MoreOptions": "Flere muligheder"
   },
+  "PostUpdateModal": {
+    "Title": "Opdateret til v{{version}}",
+    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
+    "GotIt": "Forstået"
+  },
+  "Recording": {
+    "Paused": "Pause",
+    "Preparing": "Forbereder",
+    "PreparingToRecord": "Forbereder optagelse..."
+  },
   "RecordingControls": {
     "AudioRecording": "Lydoptagelse",
     "ContinueRecording": "Fortsæt optagelse",
+    "MarkEvent": "Markér begivenhed",
+    "MarkedEvents": "Markerede begivenheder",
     "RecordingAudio": "Optager lyd...",
     "RecordingMode": "Optagelsestilstand",
     "RecordingPreview": "Optagelsesforhåndsvisning",
@@ -1284,9 +1313,7 @@
     "StartRecording": "Start optagelse",
     "Stop": "Stop",
     "StopRecording": "Stop optagelse",
-    "VideoRecording": "Videooptagelse",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "Videooptagelse"
   },
   "RecordingModes": {
     "AreaCapture": "Områdeoptagelse",
@@ -1325,7 +1352,7 @@
     "ConfirmButton": "Bekræft valg",
     "Monitor": "Skærm",
     "PrimaryMonitor": "Primær skærm",
-    "StartRecording": "Start Recording"
+    "StartRecording": "Start optagelse"
   },
   "Resume": "Genoptage",
   "RingMenu": {
@@ -1351,6 +1378,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "Analyse",
+    "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at behandle billeder med AI.",
+    "SubscribeToDescribe": "Abonnér for at aktivere AI-drevet skærmbilledanalyse.",
     "ButtonLabel": "Proces med AI",
     "ErrorCodes": {
       "AUTH_ERROR": "Ugyldig API-nøgle. Tjek venligst din API-nøgle i Indstillinger.",
@@ -1367,6 +1396,9 @@
     "DescribeSub": "Hvad er der i dette skærmbillede?",
     "Description": "Beskrivelse",
     "ExtractedText": "Udtrukket tekst",
+    "NoCustom": "Spørg noget om dette billede.",
+    "NoDescription": "Ingen beskrivelse endnu.",
+    "NoOcr": "Ingen udtrukket tekst endnu.",
     "Ocr": "Udtræk tekst (OCR)",
     "OcrSub": "Læs al synlig tekst",
     "PipelineError": "AI-behandling mislykkedes. Prøv venligst igen.",
@@ -1374,17 +1406,12 @@
     "Queuing": "I kø...",
     "ResultLabel": "AI resultat",
     "SetupRequired": "Log ind med et abonnement eller BYOK for at behandle billedet.",
-    "UnknownError": "Ukendt fejl",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "Brugerdefineret prompt",
+      "Description": "Beskrivelse",
+      "OCR": "Tekst (OCR)"
     },
-    "SubscribeToDescribe": "Abonnér for at aktivere AI-drevet skærmbilledanalyse.",
-    "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at behandle billeder med AI."
+    "UnknownError": "Ukendt fejl"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Kopieret!",
@@ -1400,7 +1427,7 @@
     "ShareFailed": "Deling understøttes ikke i denne browser. Åbn skærmbilledet manuelt for at dele.",
     "Sharing": "Deler...",
     "ZeroBytes": "0 Bytes",
-    "Info": "Stats"
+    "Info": "Statistik"
   },
   "Settings": {
     "About": {
@@ -1627,18 +1654,18 @@
   "UpdateToast": {
     "Available": "Opdatering tilgængelig: SeaMeet {{version}}",
     "Dismiss": "Afvis",
+    "DownloadFailed": "Automatisk opdatering mislykkedes for SeaMeet {{version}}",
     "Downloading": "Downloader SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Skjul",
+    "Install": "Installér",
+    "Later": "Senere",
+    "ManualDownload": "Download manuelt",
     "ReadyToInstall": "SeaMeet {{version}} er klar til installation",
     "RestartNow": "Genstart nu",
     "ViewRelease": "Se udgivelse",
     "ViewReleaseTitle": "Se udgivelsesnoter på GitHub",
     "WhatsNew": "Nyheder:",
     "WhatsNewInVersion": "Nyheder i {{version}}?",
-    "DownloadFailed": "Automatisk opdatering mislykkedes for SeaMeet {{version}}",
-    "ManualDownload": "Download manuelt",
-    "Install": "Installér",
-    "Later": "Senere",
     "Restarting": "Genstarter..."
   },
   "UserMenu": {
@@ -1650,7 +1677,6 @@
     "WorkspaceLoading": "Indlæser arbejdsområder...",
     "WorkspaceNone": "Ingen ledige arbejdsområder",
     "WorkspaceError": "Kunne ikke indlæse arbejdsområder",
-    "Workspaces": "Arbejdsområder",
     "HelpSupport": "Hjælp & Support",
     "HelpSupportSection": {
       "Discussion": "Diskussion",
@@ -1670,14 +1696,15 @@
       "WikiDesc": "Tjek SeaMeet-wikien for dokumentation og vejledninger."
     },
     "KeyboardShortcuts": "Tastaturgenveje",
-    "RefreshWorkspaces": "Opdater arbejdsområder",
+    "AccountSignedIn": "Logget ind",
     "SeaMeetSignedIn": "SeaMeet: Logget ind",
     "SeaMeetSignedOut": "SeaMeet: Ikke logget ind",
+    "SeaMeetSignIn": "SeaMeet Log ind",
+    "SeaMeetSignOut": "SeaMeet Log ud",
     "SignIn": "Log ind",
     "SignOut": "Log ud",
-    "AccountSignedIn": "Signed in",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out"
+    "Workspaces": "Arbejdsområder",
+    "RefreshWorkspaces": "Opdater arbejdsområder"
   },
   "VideoSettings": {
     "AudioSettings": "Lydindstillinger",
@@ -1739,24 +1766,5 @@
     "Refreshing": "Opdaterer...",
     "Title": "Vælg et vindue",
     "Unknown": "Unavngivet vindue"
-  },
-  "AI": {
-    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "Konfigurer dine API-nøgler for at bruge AI-agenten."
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "Opdateret til v{{version}}",
-    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
-    "GotIt": "Forstået"
   }
 }

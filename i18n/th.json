@@ -5,12 +5,15 @@
     "DisabledTabHint": "AI Agent ถูกปิดใช้งาน — เปิดใช้งานได้ในการตั้งค่า → AI Agent และ Cowork",
     "EnableToggle": "เปิดใช้งาน AI Agent และ Cowork",
     "EnableToggleDesc": "ต้องการ Claude CLI หรือ GitHub Copilot",
+    "LinkCopied": "คัดลอกแล้ว!",
     "MenuItem": "ตัวแทน AI และโคเวิร์ก",
     "PageTitle": "ตัวแทน AI และโคเวิร์ก",
     "SectionTitle": "ตัวแทน AI และโคเวิร์ก",
-    "LinkCopied": "คัดลอกแล้ว!",
     "SubscribeMsg": "ตัวแทน AI ต้องการการสมัครสมาชิก BYOK Pro สมัครสมาชิกเพื่อรับการถอดเสียงแบบสด สรุปการประชุม AI และตัวแทน AI แบบโต้ตอบ",
     "SubscribeCTA": "สมัครสมาชิกเพื่อปลดล็อก"
+  },
+  "AI": {
+    "SubscribeMsg": "ต้องมีการสมัครสมาชิก BYOK Pro สมัครสมาชิกเพื่อรับการถอดเสียงสด สรุปการประชุม AI และเอเจนต์ AI แบบโต้ตอบ"
   },
   "AIFeatures": {
     "ApiKeyLabel": "คีย์ API ของราศีเมถุน",
@@ -21,8 +24,8 @@
     "ClaudeKey": {
       "ClearKey": "ลบคีย์ที่บันทึกไว้",
       "CliInstalled": "ติดตั้งแล้ว ({{version}})",
-      "CliNotFound": "ไม่พบ CLI",
       "CliInstallLink": "ติดตั้งรหัสคลอดด์ →",
+      "CliNotFound": "ไม่พบ CLI",
       "CliNotInstalled": "ไม่พบ Claude CLI — กรุณาติดตั้งและเข้าสู่ระบบเพื่อยืนยันตัวตน:",
       "CliSection": "คล็อดรหัส CLI",
       "DefaultModel": "โมเดลเริ่มต้น",
@@ -45,6 +48,8 @@
       "QuotaLoading": "กำลังโหลดโควต้า...",
       "QuotaRemaining": "{{remaining}} / {{limit}} โทเค็นที่เหลืออยู่",
       "QuotaResetDate": "รีเซ็ตเมื่อ {{date}}",
+      "Refresh": "Re-detect Claude",
+      "Remove": "Remove Claude integration",
       "Saving": "ประหยัด...",
       "Section": "คีย์ Claude API (ตัวแทน)",
       "ShowKey": "แสดงกุญแจ",
@@ -53,17 +58,36 @@
       "SourceKeyServer": "บริหารงานโดยซีมีท",
       "SourceLabel": "แหล่งที่มาที่ใช้งานอยู่:",
       "SourceNone": "ไม่ได้กำหนดค่า",
-      "TestKey": "บันทึกและยืนยัน",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "TestKey": "บันทึกและยืนยัน"
+    },
+    "Copilot": {
+      "Authenticated": "ยืนยันตัวตนแล้ว",
+      "DefaultModel": "โมเดลเริ่มต้น",
+      "InstallGuide": "ทำตาม",
+      "InstallGuideLink": "คู่มือเริ่มต้น",
+      "InstallGuideSuffix": "เพื่อติดตั้ง จากนั้นรัน:",
+      "NotDetected": "ไม่พบ — ติดตั้งและยืนยันตัวตน:",
+      "Refresh": "Re-detect Copilot",
+      "Remove": "Remove Copilot integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "ตรวจพบ",
+      "Hint": "คุณยังสามารถสลับผู้ให้บริการต่อการสนทนาในแผงแชทได้",
+      "NotAvailable": "ไม่พร้อมใช้งาน",
+      "Preferred": "Preferred",
+      "Section": "ผู้ให้บริการเอเจนต์ที่ต้องการ"
     },
     "ClearKey": "ลบคีย์ที่บันทึกไว้",
     "EnableToggle": "เปิดใช้งานการสรุปที่ขับเคลื่อนโดย AI",
     "EnableToggleDesc": "ต้องใช้คีย์ Gemini API ฟรี",
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "รับคีย์ API ฟรีจาก Google AI Studio →",
     "GroupTitle": "คุณสมบัติเอไอ",
     "HideKey": "ซ่อนกุญแจ",
     "KeyInvalid": "รหัสไม่ถูกต้อง",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "ไม่มีการกำหนดค่าคีย์",
     "KeyPlaceholder": "ไอซ่าซี่...",
     "KeyPlaceholderSaved": "••••••••• (บันทึกแล้ว)",
@@ -97,31 +121,15 @@
     "ShowAllModels": "แสดงทั้งหมด {{count}} โมเดล",
     "ShowFewerModels": "แสดงน้อยลง",
     "ShowKey": "แสดงกุญแจ",
-    "TestKey": "บันทึกและยืนยัน",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "ยืนยันตัวตนแล้ว",
-      "DefaultModel": "โมเดลเริ่มต้น",
-      "InstallGuide": "ทำตาม",
-      "InstallGuideLink": "คู่มือเริ่มต้น",
-      "InstallGuideSuffix": "เพื่อติดตั้ง จากนั้นรัน:",
-      "NotDetected": "ไม่พบ — ติดตั้งและยืนยันตัวตน:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "ตรวจพบ",
-      "Hint": "คุณยังสามารถสลับผู้ให้บริการต่อการสนทนาในแผงแชทได้",
-      "NotAvailable": "ไม่พร้อมใช้งาน",
-      "Section": "ผู้ให้บริการเอเจนต์ที่ต้องการ",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "บันทึกและยืนยัน"
   },
   "AISummary": {
+    "ApplyMerge": "นำไปใช้",
+    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
+    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
+    "ConfirmRename": "ยืนยันการเปลี่ยนชื่อ",
     "Copy": "สำเนา",
+    "EditSegmentSpeaker": "คลิกเพื่อกำหนดส่วนนี้ใหม่",
     "EnableRequired": "เปิดใช้งานคุณสมบัติ AI ในการตั้งค่า → คุณสมบัติ AI เพื่อดูสรุป AI",
     "ErrorCodes": {
       "AUTH_ERROR": "คีย์ API ไม่ถูกต้อง โปรดตรวจสอบคีย์ API ของคุณในการตั้งค่า",
@@ -143,23 +151,28 @@
     "ExportJson": "คัดลอกเป็น JSON",
     "ExportMarkdown": "คัดลอกเป็น Markdown",
     "ExportSrt": "คัดลอกเป็น SRT",
-    "GeminiLiveTranscript": "ราศีเมถุนสด",
     "Generate": "สร้างบทสรุป",
+    "LoadingVersion": "กำลังโหลดเวอร์ชัน...",
     "Maximize": "ขยายให้ดูแบบเต็มๆ",
+    "MergeInto": "รวมเข้าไป…",
     "Minimize": "ย่อเล็กสุด",
     "NoActions": "ไม่มีการระบุรายการการดำเนินการ",
     "NoChapters": "ไม่มีบทที่ใช้ได้",
     "NoDecisions": "ไม่มีการระบุการตัดสินใจที่สำคัญ",
     "NoSummary": "ยังไม่มีสรุป AI",
     "NoSummaryText": "สรุปไม่พร้อมใช้งาน",
+    "NotAvailableForVersion": "ไม่สามารถใช้ได้สำหรับรุ่นนี้",
     "NoTranscript": "ไม่สามารถใช้การถอดเสียงได้",
     "PipelineError": "การประมวลผล AI ล้มเหลว ลองสร้างใหม่",
     "PipelineTranscript": "ไปป์ไลน์ AI",
     "Processing": "กำลังสร้างสรุป...",
     "Queued": "เข้าคิวเพื่อประมวลผล...",
     "Regenerate": "สร้างข้อมูลสรุปอีกครั้ง",
+    "RenameSpeaker": "เปลี่ยนชื่อลำโพง",
     "Retry": "ลองอีกครั้ง",
     "SeekToTimestamp": "ค้นหาการประทับเวลานี้",
+    "ConfigureApiKey": "กำหนดค่าคีย์ API Gemini ของคุณเพื่อสร้างสรุป AI และการถอดเสียง",
+    "ConfigureKey": "กำหนดค่าคีย์ API",
     "SetupRequired": "กำหนดค่าคีย์ Gemini API ของคุณในการตั้งค่า → คุณสมบัติ AI เพื่อเปิดใช้งานการสรุป AI",
     "Tab": {
       "ActionItems": "การดำเนินการ",
@@ -168,20 +181,14 @@
       "Summary": "สรุป",
       "Transcription": "การถอดเสียง"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "สรุป AI",
     "Topics": "หัวข้อ:",
     "Speakers": "ลำโพง",
-    "MergeInto": "รวมเข้าไป…",
-    "ApplyMerge": "นำไปใช้",
-    "EditSegmentSpeaker": "คลิกเพื่อกำหนดส่วนนี้ใหม่",
     "VersionPicker": "เรียกดูประวัติเวอร์ชัน",
     "ViewingLive": "กำลังดูการถอดเสียงสด",
     "ViewingVersion": "กำลังดู v{{n}} จาก {{total}}",
     "ViewLatest": "ดูล่าสุด →",
-    "LoadingVersion": "กำลังโหลดเวอร์ชัน...",
-    "NotAvailableForVersion": "ไม่สามารถใช้ได้สำหรับรุ่นนี้",
-    "ConfirmRename": "ยืนยันการเปลี่ยนชื่อ",
-    "RenameSpeaker": "เปลี่ยนชื่อลำโพง",
     "RenameSuggestion": "AI แนะนำ",
     "NewFileName": "ชื่อไฟล์ใหม่",
     "ApplyRename": "เปลี่ยนชื่อ",
@@ -194,12 +201,7 @@
     "Version": {
       "Latest": "ล่าสุด",
       "Live": "สด"
-    },
-    "ScreenshotTabTitle": "AI Analysis",
-    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
-    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
-    "ConfigureApiKey": "กำหนดค่าคีย์ API Gemini ของคุณเพื่อสร้างสรุป AI และการถอดเสียง",
-    "ConfigureKey": "กำหนดค่าคีย์ API"
+    }
   },
   "About": {
     "AppStoreBuild": "เวอร์ชัน App Store",
@@ -221,6 +223,12 @@
     "CommandHelp": "คำสั่ง: /new · /clear · /cost · /help",
     "GlobalTitle": "ตัวแทนเอไอ",
     "GoToSettings": "เปิดการตั้งค่า",
+    "LiveAction": {
+      "ActionItems": "Action Items",
+      "Summarize": "Summarize",
+      "Translate": "Translate",
+      "WhoSaidWhat": "Who Said What"
+    },
     "Mode": {
       "Ask": "ถาม",
       "Code": "รหัส",
@@ -263,6 +271,7 @@
     "SendButton": "ส่ง",
     "SendPlaceholder": "ถามอะไรก็ได้... (Enter เพื่อส่ง, Shift+Enter เพื่อขึ้นบรรทัดใหม่)",
     "SessionCost": "เซสชัน: {{inputTokens}} ใน /{{outputTokens}} โทเค็นออก",
+    "SectionTitle": "AI Agent",
     "Sessions": "เซสชัน",
     "StopButton": "หยุด",
     "Streaming": {
@@ -295,14 +304,10 @@
       "Completed_other": "{{count}} เสร็จสิ้น",
       "Running_one": "{{count}} กำลังวิ่ง",
       "Running_other": "{{count}} กำลังวิ่ง"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "กำหนดค่าคีย์ API ของคุณเพื่อใช้เอเจนต์ AI"
   },
   "App": {
     "FailedToEnableFlashback": "ล้มเหลวในการเปิดใช้ภาพย้อนความทรงจำ: {{error}}",
@@ -361,14 +366,14 @@
   "AudioControls": {
     "AudioCapture": "จับเสียง",
     "AudioMix": "เสียงผสม",
+    "AudioSettings": "Audio Settings",
     "AudioSource": "แหล่งเสียง",
     "Microphone": "ไมโครโฟน",
     "MicrophoneGainWarning": "ความไวไมโครโฟนสูงอาจทำให้สามารถรับเสียงของเสียงออกลำโพงได้แม้ \"System Audio\" จะปิดอยู่ ใช้หูฟังหรือปรับความไวไมโครโฟนต่ำลงสำหรับการบันทึกเสียงเท่านั้น",
+    "MuteMic": "Mute Microphone",
     "RecordingDefaultMicrophone": "ไมโครโฟนค่าเริ่มต้น",
     "RecordingSettings": "การตั้งค่าการบันทึก",
     "RefreshMicrophoneList": "รีเฟรชรายชื่อไมโครโฟน",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
     "UnmuteMic": "Unmute Microphone"
   },
   "AutoDetectInfoModal": {
@@ -409,7 +414,6 @@
     "AlreadyDownloaded": "ดาวน์โหลดแล้ว",
     "Cancel": "ยกเลิก",
     "Close": "ปิด",
-    "Complete": "ดาวน์โหลดเสร็จสิ้น",
     "ContactSupport": "หากปัญหายังคงอยู่ ติดต่อ seameet@seasalt.ai",
     "DownloadAll": "ดาวน์โหลดทั้งหมด",
     "Downloaded": "ดาวน์โหลดแล้ว",
@@ -423,6 +427,7 @@
     "RetryFailed": "ดาวน์โหลดใหม่ที่ล้มเหลว",
     "Skipped": "ข้าม",
     "StartDownload": "เริ่มดาวน์โหลด",
+    "Complete": "ดาวน์โหลดเสร็จสิ้น",
     "Stats": "สถิติการดาวน์โหลด",
     "Title": "ดาวน์โหลดการประชุม",
     "ToDownload": "ที่จะดาวน์โหลด",
@@ -430,6 +435,47 @@
     "ViewDetails": "ดูรายละเอียด"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "เปิดใช้งานการถอดเสียงแบบสดและการวิเคราะห์ AI หลังการประชุม",
+      "ScreenshotAnalysis": "เปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
+      "CTA": "เข้าสู่ระบบและสมัครสมาชิก",
+      "LearnMore": "เรียนรู้เพิ่มเติม"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AI ทำงานอย่างไร",
+      "Subtitle": "BYOK — นำคีย์ของคุณเอง",
+      "WhatIsBYOK": "ด้วย BYOK บันทึกและข้อมูลของคุณจะถูกส่งตรงจากอุปกรณ์ของคุณไปยัง Google หรือ Anthropic ไม่มีอะไรผ่านเซิร์ฟเวอร์ SeaMeet — ความเป็นส่วนตัวสูงสุดสำหรับคุณและทีม",
+      "WhatYouNeed": "สิ่งที่คุณจะตั้งค่าหลังจากสมัครสมาชิก",
+      "GeminiTitle": "คีย์ Google AI Studio (ฟรีแบบจำกัด)",
+      "GeminiDesc": "รองรับการถอดเสียงแบบสด สรุปหลังการประชุม และการวิเคราะห์ Google มีระดับฟรีที่ใจกว้าง — ผู้ใช้ส่วนใหญ่ไม่ต้องจ่ายแม้แต่บาทเดียว",
+      "AgentTitle": "ตัวแทน AI — เลือกหนึ่งตัวเลือก (ฟรีแบบจำกัด)",
+      "AgentOption1": "GitHub Copilot — แชทพรีเมียมฟรี 50 ครั้ง/เดือน (หรือมากกว่าด้วย Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — หากคุณมี Claude Pro หรือ Max อยู่แล้ว คุณครอบคลุมแล้ว",
+      "AgentOption3": "คีย์ API Anthropic — สำหรับการเข้าถึง API โดยตรง",
+      "Continue": "ดำเนินการสมัครสมาชิก",
+      "WhyBYOK": {
+        "Title": "ทำไมต้องนำคีย์ของคุณเอง?",
+        "Answer": "ความเป็นส่วนตัวดีกว่ามาก — ข้อมูลของคุณอยู่กับบริษัทที่เชื่อถือได้อย่าง Google และ Anthropic ไม่ใช่ SeaMeet ระดับฟรีจากผู้ให้บริการเหล่านี้ใจกว้างและจะเพียงพอสำหรับผู้ใช้ส่วนใหญ่เป็นเวลานาน"
+      },
+      "WhyMonthly": {
+        "Title": "ทำไม SeaMeet ถึงเก็บค่าบริการรายเดือน?",
+        "Answer": "SeaMeet อัปเดตอย่างรวดเร็วด้วยฟีเจอร์ AI ใหม่ การสมัครสมาชิกของคุณทำให้คุณอยู่บนเวอร์ชันล่าสุดเสมอ หากไม่มี คุณจะจ่ายค่าลิขสิทธิ์ครั้งเดียวและติดอยู่กับฟีเจอร์ที่ไม่เปลี่ยนแปลง — เหมือนซื้อ Office 2012 แล้วใช้ Office 2012 ไปตลอด"
+      }
+    },
+    "Coupon": {
+      "Title": "โปรโมชันเปิดตัว",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "เดือนแรกฟรี — สำหรับ 100 ผู้ใช้แรก",
+      "FallbackDesc": "หาก SEAMEET100 ถูกใช้หมดแล้ว ส่งอีเมลไปที่ coupon@seameet.ai เพื่อรับคูปองอื่น (ส่วนลด 10% เป็นเวลาหนึ่งปี หรือรหัสเดือนแรกฟรีอีกรหัส)",
+      "HowToUse": "ป้อนรหัสคูปองที่หน้าชำระเงิน Stripe"
+    },
+    "PostSetup": {
+      "Title": "พร้อมแล้ว! ลองใช้เลย",
+      "Desc": "บันทึกการประชุมสั้นๆ หรือถ่ายภาพหน้าจอเพื่อสัมผัสการถอดเสียงและการวิเคราะห์ AI",
+      "TryRecording": "เริ่มบันทึก",
+      "TryScreenshot": "ถ่ายภาพหน้าจอ",
+      "Later": "ไว้ลองทีหลัง"
+    },
     "Banner": {
       "CancelPending": "การสมัครสมาชิกของคุณจะสิ้นสุดในวันที่ {{date}} หลังจากนั้น การถอดเสียง สรุป และฟีเจอร์ AI จะหยุดทำงาน",
       "PastDue": "การชำระเงินล้มเหลว — ฟีเจอร์ AI ถูกปิดใช้งาน อัปเดตการชำระเงินเพื่อกู้คืน",
@@ -448,6 +494,7 @@
       "GeminiHelp": "รับ key ฟรี: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
       "GeminiUsage": "ใช้สำหรับ: การถอดเสียง, สรุป, ถอดเสียงสด คีย์ฟรีอยู่ภายใต้ข้อจำกัดอัตราและโควตาของ Gemini เปลี่ยนเป็นแผน Google AI Studio แบบชำระเงินหากถึงขีดจำกัด",
       "NotConfigured": "ยังไม่ได้กำหนดค่า",
       "SaveContinue": "บันทึกและดำเนินการต่อ",
@@ -456,9 +503,9 @@
       "SecurityNote": "คีย์จะถูกเก็บไว้ในเครื่องของคุณ (เข้ารหัสใน OS keychain) SeaMeet ไม่เคยส่งคีย์ของคุณไปยังเซิร์ฟเวอร์ของเรา",
       "SkipForNow": "ข้ามไปก่อน",
       "Subtitle": "อีกขั้นตอนหนึ่ง: เชื่อมต่อ AI API key ของคุณ",
+      "TabLabel": "คีย์ API",
       "Validating": "กำลังตรวจสอบ...",
       "ValidationFailed": "การตรวจสอบล้มเหลว",
-      "TabLabel": "คีย์ API",
       "WizardStep": "ขั้นตอนที่ {{current}} จาก {{total}}",
       "Step1Title": "เชื่อมต่อ Gemini API key ของคุณ",
       "Step1Desc": "ใช้สำหรับการถอดเสียง, สรุป และถอดเสียงสด รับ key ฟรีจาก Google AI Studio",
@@ -468,9 +515,9 @@
       "Step3Desc": "กำหนดค่า API key ทั้งสองแล้ว คุณสามารถอัปเดตได้ตลอดเวลาด้านล่าง",
       "Next": "ถัดไป",
       "Done": "เสร็จสิ้น",
-      "RemoveKey": "ลบ key ที่บันทึกไว้",
       "TestKey": "ทดสอบ key",
       "TestingKey": "กำลังทดสอบ...",
+      "RemoveKey": "ลบ key ที่บันทึกไว้",
       "StepCopilotTitle": "เชื่อมต่อ GitHub Copilot (ไม่บังคับ)",
       "StepCopilotDesc": "พบ GitHub Copilot ในระบบของคุณ เลือกผู้ให้บริการเอเจนท์ที่ต้องการ",
       "CopilotStatus": "GitHub Copilot",
@@ -485,6 +532,15 @@
       "CopilotSignupHint": "ต้องการลอง GitHub Copilot เป็นเอเจนท์ทางเลือก? สมัครแผนฟรีที่ github.com/features/copilot/plans (รวม 50 คำขอเอเจนท์/แชทต่อเดือน) จากนั้นติดตั้ง Copilot CLI และรัน \"copilot login\"",
       "CopilotFlatUsage": "ใช้สำหรับ: เอเจนท์ AI (ทางเลือกแทน Claude) ไม่ต้องใช้คีย์ API — ใช้การเข้าสู่ระบบ GitHub ของคุณ",
       "Guide": {
+        "Intro": "SeaMeet AI มีสองพื้นที่ฟีเจอร์อิสระ — ตั้งค่าสิ่งที่คุณต้องการ",
+        "SectionAiSummary": "สรุป AI",
+        "SectionAiSummaryBadge": "จำเป็น",
+        "SectionAiSummarySubtitle": "รับ Gemini API Key (ฟรี)",
+        "SectionAiAgent": "AI Agent",
+        "SectionAiAgentBadge": "ต้องการอย่างน้อยหนึ่ง",
+        "OptionCopilotTitle": "GitHub Copilot CLI (ฟรี)",
+        "OptionClaudeTitle": "Claude Code CLI (ไม่บังคับ, มีค่าใช้จ่าย)",
+        "Or": "หรือ",
         "Step1Title": "ขั้นตอนที่ 1 — อ่านอย่างละเอียด",
         "Step1Need": "คุณต้องมี 2 สิ่ง:",
         "Step1Item1": "Gemini API key — สำหรับสรุป AI และถอดเสียงสด",
@@ -515,15 +571,6 @@
         "Step4AuthDesc": " (ต้องใช้แพลน Claude Pro หรือ Max)",
         "Step4Refresh": "คลิกรีเฟรชด้านล่างเพื่อตรวจจับ Claude Code",
         "Step4Select": "คลิก Claude Code ด้านล่างเพื่อตั้งเป็นตัวเลือกหลัก",
-        "Intro": "SeaMeet AI มีสองพื้นที่ฟีเจอร์อิสระ — ตั้งค่าสิ่งที่คุณต้องการ",
-        "SectionAiSummary": "สรุป AI",
-        "SectionAiSummaryBadge": "จำเป็น",
-        "SectionAiSummarySubtitle": "รับ Gemini API Key (ฟรี)",
-        "SectionAiAgent": "AI Agent",
-        "SectionAiAgentBadge": "ต้องการอย่างน้อยหนึ่ง",
-        "OptionCopilotTitle": "GitHub Copilot CLI (ฟรี)",
-        "OptionClaudeTitle": "Claude Code CLI (ไม่บังคับ, มีค่าใช้จ่าย)",
-        "Or": "หรือ",
         "StepComplete": {
           "AgentBoth": "Both Claude and Copilot are configured",
           "AgentClaude": "Claude is configured",
@@ -532,20 +579,58 @@
         }
       }
     },
+    "CurrentPlan": "แผนปัจจุบัน",
     "Device": {
       "Close": "ปิด",
+      "DaysAgo_one": "{{count}} วันก่อน",
       "DaysAgo_other": "{{count}} วันก่อน",
+      "Error": "โหลดอุปกรณ์ไม่สำเร็จ: {{error}}",
       "LastUsed": "ใช้ล่าสุด {{when}}",
       "LimitDescription": "SeaMeet Pro ใช้งานได้บนอุปกรณ์สูงสุด 3 เครื่องพร้อมกัน ลงชื่อออกจากอุปกรณ์ที่ไม่ได้ใช้เพื่อเปิดช่องว่าง",
       "LimitTitle": "ถึงจำนวนอุปกรณ์สูงสุดแล้ว",
+      "Loading": "กำลังโหลดอุปกรณ์...",
+      "NoDevices": "No devices registered",
       "SigningOut": "กำลังลงชื่อออก...",
       "SignOut": "ลงชื่อออก",
+      "TabLabel": "อุปกรณ์",
       "Today": "วันนี้",
       "Yesterday": "เมื่อวาน",
-      "DaysAgo_one": "{{count}} วันก่อน",
-      "Error": "โหลดอุปกรณ์ไม่สำเร็จ: {{error}}",
-      "Loading": "กำลังโหลดอุปกรณ์...",
-      "TabLabel": "อุปกรณ์"
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "คำถามที่พบบ่อย",
+      "Free": {
+        "Q1": "แผนฟรีทำอะไรได้บ้าง?",
+        "A1": "SeaMeet Free เป็นเครื่องมือบันทึกเสียงและจับภาพหน้าจอที่มีฟีเจอร์ครบถ้วน คุณสามารถบันทึกเสียง จับภาพวิดีโอหน้าจอ ถ่ายภาพหน้าจอ และจัดการการบันทึกทั้งหมด — ฟรีตลอดไป",
+        "Q2": "ข้อมูลของฉันเป็นส่วนตัวหรือไม่?",
+        "A2": "ใช่ ในแผนฟรี ข้อมูลจะไม่ถูกส่งไปที่ใด การบันทึก ภาพหน้าจอ และไฟล์ทั้งหมดจะอยู่ในเครื่องของคุณ 100% ความเป็นส่วนตัวของคุณได้รับการปกป้องอย่างเต็มที่",
+        "Q3": "แผนชำระเงินมีอะไรเพิ่มเติมบ้าง?",
+        "A3": "แผนชำระเงินเพิ่มฟีเจอร์ AI: การถอดเสียงอัตโนมัติ สรุปการประชุม รายการดำเนินการ การถอดเสียงสดระหว่างประชุม และถาม-ตอบ AI เกี่ยวกับการบันทึกของคุณ"
+      },
+      "BYOK": {
+        "Q1": "BYOK คืออะไร?",
+        "A1": "BYOK ย่อมาจาก Bring Your Own Key คุณต้องมี API key 2 ตัว: ตัวหนึ่งจาก Google AI Studio (สำหรับการถอดเสียงและสรุป) และอีกตัวจาก Anthropic (สำหรับคำถาม AI และการวิเคราะห์) Google AI Studio มักจะให้ key ฟรี หากคุณสมัคร Claude Pro หรือ Max แล้ว ไม่ต้องใช้ Anthropic API key เพิ่มเติม ตัวช่วยตั้งค่าจะแนะนำคุณในการเชื่อมต่อ key ทั้งสองหลังชำระเงิน",
+        "Q2": "ทำไมต้องสมัครสมาชิกรายเดือน?",
+        "A2": "การสมัครสมาชิกของคุณช่วยสนับสนุนการอัปเดตอย่างต่อเนื่อง รองรับ AI โมเดลใหม่ แก้ไขข้อผิดพลาด และฟีเจอร์ใหม่ ค่าใช้จ่าย API จะชำระแยกต่างหากกับ Google และ Anthropic โดยใช้ key ของคุณเอง",
+        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
+        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
+      },
+      "Desktop": {
+        "Q1": "Desktop Pro คืออะไร?",
+        "A1": "Desktop Pro มี AI key ในตัวที่จัดการโดย SeaMeet — ไม่ต้องสร้างหรือจัดการ API key เอง สมัครสมาชิกแล้วเริ่มใช้ฟีเจอร์ AI ได้ทันที",
+        "Q2": "แตกต่างจาก BYOK อย่างไร?",
+        "A2": "ด้วย Desktop Pro, SeaMeet จะจัดเตรียมและจัดการ API key ให้คุณ ไม่ต้องสมัคร Google AI Studio หรือ Anthropic แยกต่างหาก",
+        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
+        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
+      },
+      "Sync": {
+        "Q1": "Sync Pro คืออะไร?",
+        "A1": "Sync Pro มีทุกอย่างใน Desktop Pro พร้อมการซิงค์คลาวด์ การบันทึก คำถอดเสียง และสรุปจะซิงค์ข้ามอุปกรณ์ทั้งหมดของคุณ",
+        "Q2": "ข้อมูลอะไรบ้างที่ซิงค์?",
+        "A2": "การบันทึก คำถอดเสียง สรุป AI และรายการดำเนินการจะซิงค์ข้ามอุปกรณ์ทั้งหมด การเปลี่ยนแปลงบนอุปกรณ์หนึ่งจะปรากฏบนอุปกรณ์อื่นทั้งหมด",
+        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
+        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
+      }
     },
     "Error": {
       "AlreadySubscribed": "คุณมีสมาชิกที่ใช้งานอยู่แล้ว ใช้จัดการสมาชิกเพื่อดูหรือเปลี่ยนแปลง",
@@ -554,21 +639,32 @@
       "Unknown": "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง"
     },
     "FreeNote": "แผนฟรี: บันทึกเสียงเท่านั้น ไม่มีฟีเจอร์ AI ไม่ต้องเข้าสู่ระบบ คุณสามารถบันทึกได้ตลอดเวลาโดยไม่ต้องสมัครสมาชิก",
+    "ComingSoon": "Coming soon",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
         "InfoNote": "คุณต้องตั้งค่า 2 อย่าง: Google AI Studio (ฟรี) และ GitHub (ฟรี) หรือ Anthropic (มีค่าใช้จ่าย) วิซาร์ดการตั้งค่าจะแนะนำคุณหลังชำระเงิน:",
         "ConfirmTitle": "ก่อนสมัครสมาชิก",
         "ConfirmContinue": "ดำเนินการชำระเงิน",
         "ConfirmSignIn": "ลงชื่อเข้าใช้ก่อน แล้วชำระเงิน",
         "ConfirmCancel": "ยกเลิก",
         "ConfirmCopyCheckout": "คัดลอกรหัสและชำระเงิน",
-        "InfoNote.Claude": "หากคุณสมัครแผน Claude Pro หรือ Max ไม่จำเป็นต้องใช้คีย์ API Anthropic เพิ่มเติม",
+        "InfoNote.Claude": "หากคุณสมัครสมาชิก Claude Pro หรือ Max คุณไม่จำเป็นต้องใช้ API key ของ Anthropic เพิ่มเติม",
         "InfoNote.Copilot": "GitHub Copilot ก็มีแผนฟรีเช่นกัน",
-        "InfoNote.Gemini": "Google AI Studio มักจะให้คีย์ฟรี"
+        "InfoNote.Gemini": "Google AI Studio มักจะให้ key ฟรี"
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
       },
       "Free": {
         "Name": "Free",
@@ -579,7 +675,12 @@
         "Feature4": "ใช้งานได้ตลอด"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
       }
     },
     "Privacy": {
@@ -647,130 +748,30 @@
     "PromoHint": "มีรหัสโปรโมชั่น? กรอกตอนชำระเงิน",
     "Status": {
       "Active": "ใช้งานอยู่",
-      "CancelNotice": "การสมัครสมาชิกสิ้นสุด {{date}}",
-      "CancelPendingNotice": "การสมัครสมาชิกของคุณจะสิ้นสุดในวันที่ {{date}} ฟีเจอร์ AI จะยังคงใช้งานได้จนถึงวันดังกล่าว",
       "Canceled": "ยกเลิกแล้ว",
       "Canceling": "กำลังยกเลิก",
+      "CancelNotice": "การสมัครสมาชิกสิ้นสุด {{date}}",
+      "CancelPendingNotice": "การสมัครสมาชิกของคุณจะสิ้นสุดในวันที่ {{date}} ฟีเจอร์ AI จะยังคงใช้งานได้จนถึงวันดังกล่าว",
       "EndsOn": "สิ้นสุด {{date}}",
+      "DevOverride": "(Dev Override)",
       "Loading": "กำลังโหลด...",
       "Manage": "จัดการการสมัครสมาชิก",
       "None": "ไม่มีการสมัครสมาชิก",
       "PastDue": "เลยกำหนดชำระ",
       "Plan": "แผน",
       "Reactivate": "เปิดใช้งานอีกครั้ง",
+      "SignIn": "Sign in to manage subscription",
       "Trial": "ทดลองใช้"
     },
+    "SignInToSubscribe": "ลงชื่อเข้าใช้เพื่อสมัครสมาชิก:",
     "Subscribe": "สมัครสมาชิก",
     "Subscribing": "กำลังสมัครสมาชิก...",
     "UnlockTitle": "ปลดล็อกฟีเจอร์ AI ของ SeaMeet",
-    "SignInToSubscribe": "ลงชื่อเข้าใช้เพื่อสมัครสมาชิก:",
-    "CurrentPlan": "แผนปัจจุบัน",
-    "FAQ": {
-      "Title": "คำถามที่พบบ่อย",
-      "BYOK": {
-        "Q1": "BYOK คืออะไร?",
-        "A1": "BYOK ย่อมาจาก Bring Your Own Key คุณต้องมี API key 2 ตัว: ตัวหนึ่งจาก Google AI Studio (สำหรับการถอดเสียงและสรุป) และอีกตัวจาก Anthropic (สำหรับคำถาม AI และการวิเคราะห์) Google AI Studio มักจะให้ key ฟรี หากคุณสมัคร Claude Pro หรือ Max แล้ว ไม่ต้องใช้ Anthropic API key เพิ่มเติม ตัวช่วยตั้งค่าจะแนะนำคุณในการเชื่อมต่อ key ทั้งสองหลังชำระเงิน",
-        "Q2": "ทำไมต้องสมัครสมาชิกรายเดือน?",
-        "A2": "การสมัครสมาชิกของคุณช่วยสนับสนุนการอัปเดตอย่างต่อเนื่อง รองรับ AI โมเดลใหม่ แก้ไขข้อผิดพลาด และฟีเจอร์ใหม่ ค่าใช้จ่าย API จะชำระแยกต่างหากกับ Google และ Anthropic โดยใช้ key ของคุณเอง",
-        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
-        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
-      },
-      "Desktop": {
-        "Q1": "Desktop Pro คืออะไร?",
-        "A1": "Desktop Pro มี AI key ในตัวที่จัดการโดย SeaMeet — ไม่ต้องสร้างหรือจัดการ API key เอง สมัครสมาชิกแล้วเริ่มใช้ฟีเจอร์ AI ได้ทันที",
-        "Q2": "แตกต่างจาก BYOK อย่างไร?",
-        "A2": "ด้วย Desktop Pro, SeaMeet จะจัดเตรียมและจัดการ API key ให้คุณ ไม่ต้องสมัคร Google AI Studio หรือ Anthropic แยกต่างหาก",
-        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
-        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
-      },
-      "Sync": {
-        "Q1": "Sync Pro คืออะไร?",
-        "A1": "Sync Pro มีทุกอย่างใน Desktop Pro พร้อมการซิงค์คลาวด์ การบันทึก คำถอดเสียง และสรุปจะซิงค์ข้ามอุปกรณ์ทั้งหมดของคุณ",
-        "Q2": "ข้อมูลอะไรบ้างที่ซิงค์?",
-        "A2": "การบันทึก คำถอดเสียง สรุป AI และรายการดำเนินการจะซิงค์ข้ามอุปกรณ์ทั้งหมด การเปลี่ยนแปลงบนอุปกรณ์หนึ่งจะปรากฏบนอุปกรณ์อื่นทั้งหมด",
-        "Q3": "สิทธิ์การใช้งานทำงานอย่างไร?",
-        "A3": "1 บัญชี ใช้ได้สูงสุด 3 อุปกรณ์ อุปกรณ์ที่ไม่ได้ใช้งานจะถูกปลดล็อกอัตโนมัติหลัง 30 วัน คุณยังสามารถลงชื่อออกจากอุปกรณ์ด้วยตนเองเพื่อเปิดช่องว่าง"
-      },
-      "Free": {
-        "Q1": "แผนฟรีทำอะไรได้บ้าง?",
-        "A1": "SeaMeet Free เป็นเครื่องมือบันทึกเสียงและจับภาพหน้าจอที่มีฟีเจอร์ครบถ้วน คุณสามารถบันทึกเสียง จับภาพวิดีโอหน้าจอ ถ่ายภาพหน้าจอ และจัดการการบันทึกทั้งหมด — ฟรีตลอดไป",
-        "Q2": "ข้อมูลของฉันเป็นส่วนตัวหรือไม่?",
-        "A2": "ใช่ ในแผนฟรี ข้อมูลจะไม่ถูกส่งไปที่ใด การบันทึก ภาพหน้าจอ และไฟล์ทั้งหมดจะอยู่ในเครื่องของคุณ 100% ความเป็นส่วนตัวของคุณได้รับการปกป้องอย่างเต็มที่",
-        "Q3": "แผนชำระเงินมีอะไรเพิ่มเติมบ้าง?",
-        "A3": "แผนชำระเงินเพิ่มฟีเจอร์ AI: การถอดเสียงอัตโนมัติ สรุปการประชุม รายการดำเนินการ การถอดเสียงสดระหว่างประชุม และถาม-ตอบ AI เกี่ยวกับการบันทึกของคุณ"
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "เปิดใช้งานการถอดเสียงแบบสดและการวิเคราะห์ AI หลังการประชุม",
-      "ScreenshotAnalysis": "เปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
-      "CTA": "เข้าสู่ระบบและสมัครสมาชิก",
-      "LearnMore": "เรียนรู้เพิ่มเติม"
-    },
-    "Explainer": {
-      "Title": "SeaMeet AI ทำงานอย่างไร",
-      "Subtitle": "BYOK — นำคีย์ของคุณเอง",
-      "WhatIsBYOK": "ด้วย BYOK บันทึกและข้อมูลของคุณจะถูกส่งตรงจากอุปกรณ์ของคุณไปยัง Google หรือ Anthropic ไม่มีอะไรผ่านเซิร์ฟเวอร์ SeaMeet — ความเป็นส่วนตัวสูงสุดสำหรับคุณและทีม",
-      "WhatYouNeed": "สิ่งที่คุณจะตั้งค่าหลังจากสมัครสมาชิก",
-      "GeminiTitle": "คีย์ Google AI Studio (ฟรีแบบจำกัด)",
-      "GeminiDesc": "รองรับการถอดเสียงแบบสด สรุปหลังการประชุม และการวิเคราะห์ Google มีระดับฟรีที่ใจกว้าง — ผู้ใช้ส่วนใหญ่ไม่ต้องจ่ายแม้แต่บาทเดียว",
-      "AgentTitle": "ตัวแทน AI — เลือกหนึ่งตัวเลือก (ฟรีแบบจำกัด)",
-      "AgentOption1": "GitHub Copilot — แชทพรีเมียมฟรี 50 ครั้ง/เดือน (หรือมากกว่าด้วย Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — หากคุณมี Claude Pro หรือ Max อยู่แล้ว คุณครอบคลุมแล้ว",
-      "AgentOption3": "คีย์ API Anthropic — สำหรับการเข้าถึง API โดยตรง",
-      "Continue": "ดำเนินการสมัครสมาชิก",
-      "WhyBYOK": {
-        "Title": "ทำไมต้องนำคีย์ของคุณเอง?",
-        "Answer": "ความเป็นส่วนตัวดีกว่ามาก — ข้อมูลของคุณอยู่กับบริษัทที่เชื่อถือได้อย่าง Google และ Anthropic ไม่ใช่ SeaMeet ระดับฟรีจากผู้ให้บริการเหล่านี้ใจกว้างและจะเพียงพอสำหรับผู้ใช้ส่วนใหญ่เป็นเวลานาน"
-      },
-      "WhyMonthly": {
-        "Title": "ทำไม SeaMeet ถึงเก็บค่าบริการรายเดือน?",
-        "Answer": "SeaMeet อัปเดตอย่างรวดเร็วด้วยฟีเจอร์ AI ใหม่ การสมัครสมาชิกของคุณทำให้คุณอยู่บนเวอร์ชันล่าสุดเสมอ หากไม่มี คุณจะจ่ายค่าลิขสิทธิ์ครั้งเดียวและติดอยู่กับฟีเจอร์ที่ไม่เปลี่ยนแปลง — เหมือนซื้อ Office 2012 แล้วใช้ Office 2012 ไปตลอด"
-      }
-    },
-    "Coupon": {
-      "Title": "โปรโมชันเปิดตัว",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "เดือนแรกฟรี — สำหรับ 100 ผู้ใช้แรก",
-      "FallbackDesc": "หาก SEAMEET100 ถูกใช้หมดแล้ว ส่งอีเมลไปที่ coupon@seameet.ai เพื่อรับคูปองอื่น (ส่วนลด 10% เป็นเวลาหนึ่งปี หรือรหัสเดือนแรกฟรีอีกรหัส)",
-      "HowToUse": "ป้อนรหัสคูปองที่หน้าชำระเงิน Stripe"
-    },
-    "PostSetup": {
-      "Title": "พร้อมแล้ว! ลองใช้เลย",
-      "Desc": "บันทึกการประชุมสั้นๆ หรือถ่ายภาพหน้าจอเพื่อสัมผัสการถอดเสียงและการวิเคราะห์ AI",
-      "TryRecording": "เริ่มบันทึก",
-      "TryScreenshot": "ถ่ายภาพหน้าจอ",
-      "Later": "ไว้ลองทีหลัง"
-    },
     "Setup": {
       "Done": "ตั้งค่าเสร็จแล้ว",
       "Later": "ไว้ทำทีหลัง"
     }
   },
-  "Billing.BYOK.KeySaved": "บันทึก key แล้ว (ซ่อนอยู่)",
-  "Billing.ComingSoon": "เร็ว ๆ นี้",
-  "Billing.Device.NoDevices": "ไม่มีอุปกรณ์ที่ลงทะเบียน",
-  "Billing.Device.TabLabel": "อุปกรณ์",
-  "Billing.Device.YourDevices": "อุปกรณ์ของคุณ",
-  "Billing.Error.NoApiUrl": "บริการเรียกเก็บเงินยังไม่ได้กำหนดค่า กรุณาติดต่อฝ่ายสนับสนุน",
-  "Billing.Error.NotAuthenticated": "กรุณาลงชื่อเข้าใช้ก่อนเพื่อสมัครสมาชิก ใช้เมนูบัญชีเพื่อลงชื่อเข้าใช้",
-  "Billing.Error.Unknown": "เกิดข้อผิดพลาด กรุณาลองอีกครั้ง",
-  "Billing.Plans.BYOK.Feature1": "การถอดเสียง AI",
-  "Billing.Plans.BYOK.Feature2": "ใช้ Gemini & Claude API key ของคุณเอง",
-  "Billing.Plans.BYOK.Feature3": "การถอดเสียงสดระหว่างประชุม",
-  "Billing.Plans.BYOK.Feature4": "คำถามและการวิเคราะห์การประชุมด้วย AI",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "ทุกอย่างใน BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "AI ในตัว — ไม่ต้องใช้ API key",
-  "Billing.Plans.Desktop.Feature3": "การสนับสนุนเร่งด่วน",
-  "Billing.Plans.Desktop.Feature4": "การวิเคราะห์ขั้นสูง",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "ทุกอย่างใน Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "ซิงค์คลาวด์ข้ามอุปกรณ์",
-  "Billing.Plans.Sync.Feature3": "ฟีเจอร์ทำงานร่วมกันเป็นทีม",
-  "Billing.Plans.Sync.Feature4": "คลังการประชุมที่แชร์ร่วมกัน",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "(Dev Override)",
-  "Billing.Status.SignIn": "ลงชื่อเข้าใช้เพื่อจัดการการสมัครสมาชิก",
   "BlackHole": {
     "Cancel": "ยกเลิกการดำเนินการ",
     "CheckAgain": "ตรวจสอบอีกครั้ง (เช็คใหม่)",
@@ -801,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "ตั้งชื่อ",
+    "Back": "ย้อนกลับ",
     "Cancel": "ยกเลิก",
     "Close": "ปิด",
     "Configure": "การกำหนดค่า",
@@ -821,7 +823,6 @@
     "Send": "ส่ง",
     "Starting": "กำลังเริ่ม…",
     "UnknownApp": "แอปพลิเคชันไม่ทราบ",
-    "Back": "ย้อนกลับ",
     "Copied": "คัดลอกแล้ว!",
     "Copy": "คัดลอก"
   },
@@ -1071,8 +1072,11 @@
     "CloseTooltip": "ปิดคำแนะนำ",
     "FailedToLoadScreens": "การโหลดหน้าจอล้มเหลว กรุณาลองใหม่อีกครั้ง",
     "FailedToLoadWindows": "การโหลดหน้าต่างล้มเหลว กรุณาลองใหม่อีกครั้ง",
+    "MicMuted": "Mic Muted",
+    "Microphone": "Microphone",
     "MicrophoneMuted": "ไมโครโฟน: ปิดเสียง",
     "MicrophoneSettings": "การตั้งค่าไมโครโฟน",
+    "MuteMicrophone": "Mute Microphone",
     "MuteNoMicrophone": "ปิดเสียง (ไม่มีไมโครโฟน)",
     "NoMicrophonesFound": "ไม่พบไมโครโฟน",
     "NoScreensDetected": "ไม่พบหน้าจอแสดงผล",
@@ -1090,10 +1094,7 @@
     "SystemAudioOn": "เสียงระบบ: เปิด",
     "WaitingForRegion": "รอการเลือกภูมิภาค…",
     "WindowNotAvailable": "การเลือกหน้าต่างไม่สามารถใช้งานได้บนแพลตฟอร์มนี้",
-    "WindowRequired": "เลือกหน้าต่างก่อนบันทึก",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "เลือกหน้าต่างก่อนบันทึก"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "คลิก เริ่มการบันทึก ในแถบลอยเพื่อบันทึกพื้นที่ที่เลือก",
@@ -1102,6 +1103,7 @@
   "GeminiLive": {
     "AITranscription": "การถอดเสียง AI",
     "CollapseNowSpeaking": "ทรุด",
+    "SubscribeForTranscription": "สมัครสมาชิกเพื่อเปิดใช้งานการถอดเสียง AI แบบสดระหว่างการบันทึก",
     "EnableDescription": "การถอดเสียงแบบเรียลไทม์ขับเคลื่อนโดย Gemini ระหว่างการบันทึก",
     "EnableIntegration": "เปิดใช้งานการถอดเสียง AI แบบสด",
     "Error": "ข้อผิดพลาด",
@@ -1110,8 +1112,10 @@
     "SegmentCount_one": "{{count}} ส่วน",
     "SegmentCount_other": "{{count}} ส่วน",
     "WaitingForConnection": "กำลังเชื่อมต่อ...",
-    "WaitingForSpeech": "กำลังรอคำพูด...",
-    "SubscribeForTranscription": "สมัครสมาชิกเพื่อเปิดใช้งานการถอดเสียง AI แบบสดระหว่างการบันทึก"
+    "WaitingForSpeech": "กำลังรอคำพูด..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live Transcription"
   },
   "IdleCompactView": {
     "ArmFlashback": "เปิดใช้งานภาพย้อนความทรงจำ",
@@ -1177,6 +1181,20 @@
     "WsConnected": "WebSocket เชื่อมต่อแล้ว",
     "WsDisconnected": "WebSocket ตัดการเชื่อมต่อแล้ว"
   },
+  "MeetingsTab": {
+    "Download": "ดาวน์โหลด",
+    "DownloadAudio": "ดาวน์โหลดเสียง",
+    "DownloadBoth": "ดาวน์โหลดทั้งสอง",
+    "DownloadTxt": "ดาวน์โหลด .txt",
+    "Empty": "ไม่พบการประชุม",
+    "Error": "โหลดการประชุมล้มเหลว",
+    "Loading": "กำลังโหลดการประชุม...",
+    "Retry": "ลองใหม่",
+    "SelectWorkspace": "กรุณาเลือกพื้นที่ทำงานจากเมนูผู้ใช้เพื่อดูการประชุม",
+    "Title": "การประชุม",
+    "Total": "ทั้งหมด",
+    "Untitled": "การประชุมที่ไม่มีชื่อ"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 คำแนะนำ: สำหรับการประชุมในเบราว์เซอร์ (Google Meet, Zoom, Teams) ฉันสามารถตรวจจับเบราว์เซอร์เท่านั้น ไม่สามารถระบุเว็บไซต์เฉพาะได้",
     "ContinueRecording": "ดำเนินการบันทึกต่อ",
@@ -1195,20 +1213,6 @@
     "StopRecording": "หยุดการบันทึก",
     "Yes": "เริ่มบันทึก"
   },
-  "MeetingsTab": {
-    "Download": "ดาวน์โหลด",
-    "DownloadAudio": "ดาวน์โหลดเสียง",
-    "DownloadBoth": "ดาวน์โหลดทั้งสอง",
-    "DownloadTxt": "ดาวน์โหลด .txt",
-    "Empty": "ไม่พบการประชุม",
-    "Error": "โหลดการประชุมล้มเหลว",
-    "Loading": "กำลังโหลดการประชุม...",
-    "Retry": "ลองใหม่",
-    "SelectWorkspace": "กรุณาเลือกพื้นที่ทำงานจากเมนูผู้ใช้เพื่อดูการประชุม",
-    "Title": "การประชุม",
-    "Total": "ทั้งหมด",
-    "Untitled": "การประชุมที่ไม่มีชื่อ"
-  },
   "MinimizedView": {
     "ActionRequired": "ข้อควรรู้ที่ต้องดำเนินการ (Auto-Record)",
     "AudioFlashbackCharged": "ภาพย้อนความทรงจำเสียงชาร์จเต็มแล้ว ({{duration}}วินาที)",
@@ -1218,6 +1222,18 @@
     "ScreenFlashbackCharged": "ภาพย้อนความทรงจำหน้าจอชาร์จเต็มแล้ว ({{duration}}วินาที)",
     "ScreenFlashbackCharging": "หน้าจอภาพย้อนความทรงจำอยู่ในระหว่างชาร์จ…",
     "ScreenRecording": "การบันทึกหน้าจอ ({{time}})"
+  },
+  "OCRAutoCopy": {
+    "Copied": "คัดลอกข้อความที่สกัดไปยังคลิปบอร์ดแล้ว",
+    "Error": "ไม่สามารถสกัดข้อความได้",
+    "Extracting": "กำลังสกัดข้อความจากภาพหน้าจอ…",
+    "Here": "ที่นี่",
+    "Label": "สกัดข้อความ (OCR) และคัดลอกไปยังคลิปบอร์ด",
+    "LabelDisabled": "สกัดข้อความ (OCR) และคัดลอกไปยังคลิปบอร์ด (ต้องมี API key, สมัครสมาชิก",
+    "LabelDisabledShort": "สกัดข้อความ (OCR) — ต้องมี API key",
+    "NoText": "ไม่สามารถสกัดข้อความจากภาพหน้าจอได้",
+    "SettingsDesc": "เรียกใช้ OCR หลังจากจับภาพหน้าจอทุกครั้งและคัดลอกข้อความที่สกัดไปยังคลิปบอร์ด",
+    "SettingsLabel": "สกัดข้อความอัตโนมัติ (OCR) เมื่อจับภาพหน้าจอ"
   },
   "Pause": "หยุดชั่วคราว",
   "Permissions": {
@@ -1275,9 +1291,16 @@
     "CodecInfo": "รายละเอียด Codec",
     "MoreOptions": "ตัวเลือกเพิ่มเติม"
   },
+  "Recording": {
+    "Paused": "Paused",
+    "Preparing": "Preparing",
+    "PreparingToRecord": "Preparing to record..."
+  },
   "RecordingControls": {
     "AudioRecording": "การบันทึกเสียง",
     "ContinueRecording": "ดำเนินการบันทึกเสียงต่อ",
+    "MarkEvent": "Mark Event",
+    "MarkedEvents": "Marked Events",
     "RecordingAudio": "กำลังบันทึกเสียง...",
     "RecordingMode": "โหมดการบันทึกเสียง",
     "RecordingPreview": "การพรีวิวการบันทึกเสียง",
@@ -1285,9 +1308,7 @@
     "StartRecording": "เริ่มการบันทึกเสียง",
     "Stop": "หยุด",
     "StopRecording": "หยุดการบันทึก",
-    "VideoRecording": "การบันทึกวิดีโอ",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "การบันทึกวิดีโอ"
   },
   "RecordingModes": {
     "AreaCapture": "การจับภาพพื้นที่",
@@ -1352,6 +1373,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "การวิเคราะห์",
+    "ConfigureApiKey": "กำหนดค่าคีย์ API Gemini ของคุณเพื่อประมวลผลภาพด้วย AI",
+    "SubscribeToDescribe": "สมัครสมาชิกเพื่อเปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
     "ButtonLabel": "ประมวลผลด้วยเอไอ",
     "ErrorCodes": {
       "AUTH_ERROR": "คีย์ API ไม่ถูกต้อง โปรดตรวจสอบคีย์ API ของคุณในการตั้งค่า",
@@ -1368,6 +1391,9 @@
     "DescribeSub": "อะไรอยู่ในภาพหน้าจอนี้?",
     "Description": "คำอธิบาย",
     "ExtractedText": "ข้อความที่แยกออกมา",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "แยกข้อความ (OCR)",
     "OcrSub": "อ่านข้อความที่มองเห็นทั้งหมด",
     "PipelineError": "การประมวลผล AI ล้มเหลว โปรดลองอีกครั้ง",
@@ -1375,17 +1401,12 @@
     "Queuing": "กำลังเข้าคิว...",
     "ResultLabel": "ผลลัพธ์เอไอ",
     "SetupRequired": "ลงชื่อเข้าใช้ด้วยการสมัครสมาชิกหรือ BYOK เพื่อประมวลผลภาพ",
-    "UnknownError": "ข้อผิดพลาดที่ไม่รู้จัก",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "SubscribeToDescribe": "สมัครสมาชิกเพื่อเปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
-    "ConfigureApiKey": "กำหนดค่าคีย์ API Gemini ของคุณเพื่อประมวลผลภาพด้วย AI"
+    "UnknownError": "ข้อผิดพลาดที่ไม่รู้จัก"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "คัดลอกแล้ว!",
@@ -1628,19 +1649,24 @@
   "UpdateToast": {
     "Available": "มีการอัปเดต SeaMeet {{version}}",
     "Dismiss": "ยกเลิก",
+    "DownloadFailed": "การอัปเดตอัตโนมัติล้มเหลวสำหรับ SeaMeet {{version}}",
     "Downloading": "กำลังดาวน์โหลด SeaMeet {{version}} ({{percent}}%)",
     "Hide": "ซ่อน",
+    "Install": "ติดตั้ง",
+    "Later": "ภายหลัง",
+    "ManualDownload": "ดาวน์โหลดด้วยตนเอง",
     "ReadyToInstall": "SeaMeet {{version}} พร้อมติดตั้ง",
     "RestartNow": "เริ่มต้นใหม่ทันที",
     "ViewRelease": "ดูเวอร์ชัน",
     "ViewReleaseTitle": "ดูบันทึกการปล่อยบน GitHub",
     "WhatsNew": "อัปเดตล่าสุด:",
     "WhatsNewInVersion": "ฟีเจอร์ใหม่ใน {{version}}?",
-    "DownloadFailed": "การอัปเดตอัตโนมัติล้มเหลวสำหรับ SeaMeet {{version}}",
-    "ManualDownload": "ดาวน์โหลดด้วยตนเอง",
-    "Install": "ติดตั้ง",
-    "Later": "ภายหลัง",
     "Restarting": "กำลังรีสตาร์ท..."
+  },
+  "PostUpdateModal": {
+    "Title": "อัปเดตเป็น v{{version}} แล้ว",
+    "Description": "SeaMeet อัปเดตเรียบร้อยแล้ว มีอะไรใหม่:",
+    "GotIt": "เข้าใจแล้ว"
   },
   "UserMenu": {
     "AboutSeaMeet": "เกี่ยวกับ SeaMeet",
@@ -1651,8 +1677,6 @@
     "WorkspaceLoading": "กำลังโหลดพื้นที่ทำงาน...",
     "WorkspaceNone": "ไม่มีพื้นที่ทำงาน",
     "WorkspaceError": "โหลดพื้นที่ทำงานไม่สำเร็จ",
-    "Workspaces": "พื้นที่ทำงาน",
-    "RefreshWorkspaces": "รีเฟรชพื้นที่ทำงาน",
     "HelpSupport": "ช่วยเหลือและสนับสนุน",
     "HelpSupportSection": {
       "Discussion": "เข้าร่วมการสนทนา",
@@ -1672,13 +1696,15 @@
       "WikiDesc": "ดูเอกสารและคำแนะนำใน SeaMeet wiki"
     },
     "KeyboardShortcuts": "คีย์ลัด",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet: ลงชื่อเข้าใช้แล้ว",
     "SeaMeetSignedOut": "SeaMeet: ยังไม่ได้ลงชื่อเข้าใช้",
+    "SeaMeetSignIn": "SeaMeet Sign In",
+    "SeaMeetSignOut": "SeaMeet Sign Out",
     "SignIn": "ลงชื่อเข้าใช้",
     "SignOut": "ออกจากระบบ",
-    "AccountSignedIn": "Signed in",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out"
+    "Workspaces": "พื้นที่ทำงาน",
+    "RefreshWorkspaces": "รีเฟรชพื้นที่ทำงาน"
   },
   "VideoSettings": {
     "AudioSettings": "การตั้งค่าเสียง",
@@ -1740,24 +1766,5 @@
     "Refreshing": "กําลังรีเฟรช…",
     "Title": "เลือกหน้าต่าง",
     "Unknown": "หน้าต่าง Untitled"
-  },
-  "AI": {
-    "SubscribeMsg": "ต้องมีการสมัครสมาชิก BYOK Pro สมัครสมาชิกเพื่อรับการถอดเสียงสด สรุปการประชุม AI และเอเจนต์ AI แบบโต้ตอบ"
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "กำหนดค่าคีย์ API ของคุณเพื่อใช้เอเจนต์ AI"
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "อัปเดตเป็น v{{version}} แล้ว",
-    "Description": "SeaMeet อัปเดตเรียบร้อยแล้ว มีอะไรใหม่:",
-    "GotIt": "เข้าใจแล้ว"
   }
 }

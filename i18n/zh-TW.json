@@ -5,12 +5,15 @@
     "DisabledTabHint": "AI Agent 已停用 - 在設定 → AI Agent & Cowork 中啟用它",
     "EnableToggle": "啟用人工智慧代理和協同工作",
     "EnableToggleDesc": "需要 Claude CLI 或 GitHub Copilot",
+    "LinkCopied": "已複製！",
     "MenuItem": "人工智慧代理與協作",
     "PageTitle": "人工智慧代理與協作",
     "SectionTitle": "人工智慧代理與協作",
-    "LinkCopied": "已複製！",
     "SubscribeMsg": "AI 助手需要 BYOK Pro 訂閱。訂閱以獲取即時轉錄、AI 會議摘要和互動式 AI 助手。",
     "SubscribeCTA": "訂閱以解鎖"
+  },
+  "AI": {
+    "SubscribeMsg": "需要 BYOK Pro 訂閱。訂閱以獲取即時轉錄、AI 會議摘要和互動式 AI 代理。"
   },
   "AIFeatures": {
     "ApiKeyLabel": "雙子座 API 金鑰",
@@ -21,8 +24,8 @@
     "ClaudeKey": {
       "ClearKey": "刪除已儲存的密鑰",
       "CliInstalled": "已安裝 ({{version}})",
-      "CliNotFound": "未找到CLI",
       "CliInstallLink": "安裝克勞德代碼 →",
+      "CliNotFound": "未找到CLI",
       "CliNotInstalled": "未找到 Claude CLI — 請安裝並登入以完成認證：",
       "CliSection": "克勞德·代碼 CLI",
       "DefaultModel": "預設模型",
@@ -45,6 +48,8 @@
       "QuotaLoading": "加載配額...",
       "QuotaRemaining": "剩餘 {{remaining}} / {{limit}} 令牌",
       "QuotaResetDate": "在 {{date}} 上重置",
+      "Refresh": "Re-detect Claude",
+      "Remove": "Remove Claude integration",
       "Saving": "儲存...",
       "Section": "克勞德 API 金鑰（代理）",
       "ShowKey": "顯示密鑰",
@@ -53,17 +58,36 @@
       "SourceKeyServer": "由 SeaMeet 管理",
       "SourceLabel": "活躍來源：",
       "SourceNone": "未配置",
-      "TestKey": "保存並驗證",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "TestKey": "保存並驗證"
+    },
+    "Copilot": {
+      "Authenticated": "已驗證",
+      "DefaultModel": "預設模型",
+      "InstallGuide": "請參閱",
+      "InstallGuideLink": "入門指南",
+      "InstallGuideSuffix": "進行安裝，然後執行：",
+      "NotDetected": "未偵測到 — 請安裝並驗證：",
+      "Refresh": "Re-detect Copilot",
+      "Remove": "Remove Copilot integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "已偵測到",
+      "Hint": "您也可以在聊天面板中按對話切換提供商。",
+      "NotAvailable": "無法使用",
+      "Preferred": "Preferred",
+      "Section": "偏好代理提供商"
     },
     "ClearKey": "刪除已儲存的密鑰",
     "EnableToggle": "啟用人工智慧驅動的摘要",
     "EnableToggleDesc": "需要免費的 Gemini API 金鑰",
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "從 Google AI Studio 取得免費的 API 金鑰 →",
     "GroupTitle": "人工智慧特點",
     "HideKey": "隱藏鍵",
     "KeyInvalid": "密鑰無效",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "沒有配置密鑰",
     "KeyPlaceholder": "艾札西...",
     "KeyPlaceholderSaved": "••••••••（已儲存）",
@@ -97,31 +121,15 @@
     "ShowAllModels": "顯示全部 {{count}} 個模型",
     "ShowFewerModels": "收起模型列表",
     "ShowKey": "顯示密鑰",
-    "TestKey": "保存並驗證",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "已驗證",
-      "DefaultModel": "預設模型",
-      "InstallGuide": "請參閱",
-      "InstallGuideLink": "入門指南",
-      "InstallGuideSuffix": "進行安裝，然後執行：",
-      "NotDetected": "未偵測到 — 請安裝並驗證：",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "已偵測到",
-      "Hint": "您也可以在聊天面板中按對話切換提供商。",
-      "NotAvailable": "無法使用",
-      "Section": "偏好代理提供商",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "保存並驗證"
   },
   "AISummary": {
+    "ApplyMerge": "套用",
+    "SubscribeToGenerate": "訂閱以從錄音生成 AI 摘要、轉錄和行動事項。",
+    "SubscribeToRegenerate": "訂閱以重新生成 AI 摘要。",
+    "ConfirmRename": "確認重命名",
     "Copy": "複製",
+    "EditSegmentSpeaker": "按一下以重新指派此區段",
     "EnableRequired": "在「設定」→「AI 功能」中啟用 AI 功能即可查看 AI 摘要。",
     "ErrorCodes": {
       "AUTH_ERROR": "API 金鑰無效。請在「設定」中檢查您的 API 金鑰。",
@@ -143,23 +151,28 @@
     "ExportJson": "複製為 JSON",
     "ExportMarkdown": "複製為 Markdown",
     "ExportSrt": "複製為 SRT",
-    "GeminiLiveTranscript": "雙子座現場",
     "Generate": "產生摘要",
+    "LoadingVersion": "正在載入版本...",
     "Maximize": "展開至全視圖",
+    "MergeInto": "合併至…",
     "Minimize": "最小化",
     "NoActions": "沒有確定行動項目。",
     "NoChapters": "沒有可用的章節。",
     "NoDecisions": "沒有確定關鍵決策。",
     "NoSummary": "還沒有AI總結。",
     "NoSummaryText": "摘要不可用。",
+    "NotAvailableForVersion": "不適用於此版本。",
     "NoTranscript": "成績單不可用。",
     "PipelineError": "AI處理失敗。嘗試再生。",
     "PipelineTranscript": "人工智慧管道",
     "Processing": "正在產生摘要...",
     "Queued": "排隊等待處理...",
     "Regenerate": "重新產生摘要",
+    "RenameSpeaker": "重新命名揚聲器",
     "Retry": "重試",
     "SeekToTimestamp": "尋找這個時間戳",
+    "ConfigureApiKey": "設定您的 Gemini API 金鑰以生成 AI 摘要和轉錄。",
+    "ConfigureKey": "設定 API 金鑰",
     "SetupRequired": "在「設定」→「AI 功能」中設定您的 Gemini API 金鑰以啟用 AI 摘要。",
     "Tab": {
       "ActionItems": "行動",
@@ -168,20 +181,14 @@
       "Summary": "概括",
       "Transcription": "成績單"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "人工智慧總結",
     "Topics": "主題：",
     "Speakers": "發言者",
-    "MergeInto": "合併至…",
-    "ApplyMerge": "套用",
-    "EditSegmentSpeaker": "按一下以重新指派此區段",
     "VersionPicker": "瀏覽版本歷史",
     "ViewingLive": "查看即時成績單",
     "ViewingVersion": "查看 {{total}} 的 v{{n}}",
     "ViewLatest": "查看最新 →",
-    "LoadingVersion": "正在載入版本...",
-    "NotAvailableForVersion": "不適用於此版本。",
-    "ConfirmRename": "確認重命名",
-    "RenameSpeaker": "重新命名揚聲器",
     "RenameSuggestion": "AI 建議",
     "NewFileName": "新檔案名稱",
     "ApplyRename": "重新命名",
@@ -194,12 +201,7 @@
     "Version": {
       "Latest": "最新的",
       "Live": "居住"
-    },
-    "ScreenshotTabTitle": "AI Analysis",
-    "SubscribeToGenerate": "訂閱以從錄音生成 AI 摘要、轉錄和行動事項。",
-    "SubscribeToRegenerate": "訂閱以重新生成 AI 摘要。",
-    "ConfigureApiKey": "設定您的 Gemini API 金鑰以生成 AI 摘要和轉錄。",
-    "ConfigureKey": "設定 API 金鑰"
+    }
   },
   "About": {
     "AppStoreBuild": "App Store 版",
@@ -221,6 +223,12 @@
     "CommandHelp": "指令：/new·/clear·/cost·/help",
     "GlobalTitle": "人工智慧代理",
     "GoToSettings": "開啟設定",
+    "LiveAction": {
+      "ActionItems": "執行事項",
+      "Summarize": "摘要",
+      "Translate": "翻譯",
+      "WhoSaidWhat": "誰說了什麼"
+    },
     "Mode": {
       "Ask": "問",
       "Code": "程式碼",
@@ -263,6 +271,7 @@
     "SendButton": "傳送",
     "SendPlaceholder": "詢問任何內容...（Enter 發送，Shift+Enter 換行）",
     "SessionCost": "會話：{{inputTokens}} in /{{outputTokens}} out 令牌",
+    "SectionTitle": "AI 助理",
     "Sessions": "會議",
     "StopButton": "停止",
     "Streaming": {
@@ -295,14 +304,10 @@
       "Completed_other": "{{count}} 已完成",
       "Running_one": "{{count}} 正在執行",
       "Running_other": "{{count}} 正在執行"
-    },
-    "LiveAction": {
-      "ActionItems": "執行事項",
-      "Summarize": "摘要",
-      "Translate": "翻譯",
-      "WhoSaidWhat": "誰說了什麼"
-    },
-    "SectionTitle": "AI 助理"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "設定您的 API 金鑰以使用 AI 代理。"
   },
   "App": {
     "FailedToEnableFlashback": "啟用回憶錄失敗：{{error}}",
@@ -361,14 +366,14 @@
   "AudioControls": {
     "AudioCapture": "音訊捕捉",
     "AudioMix": "音訊混音",
+    "AudioSettings": "音訊設定",
     "AudioSource": "音訊來源：",
     "Microphone": "麥克風",
     "MicrophoneGainWarning": "高麥克風增益即使在「系統音訊」關閉時也能捕捉揚聲器播放。建議使用耳機或降低麥克風增益，僅限麥克風錄音。",
+    "MuteMic": "靜音麥克風",
     "RecordingDefaultMicrophone": "預設麥克風",
     "RecordingSettings": "錄音設定",
     "RefreshMicrophoneList": "重新整理麥克風清單",
-    "AudioSettings": "音訊設定",
-    "MuteMic": "靜音麥克風",
     "UnmuteMic": "取消靜音"
   },
   "AutoDetectInfoModal": {
@@ -405,31 +410,72 @@
     "MeetingFallbackName": "會議"
   },
   "BatchDownload": {
-    "Title": "下載會議",
-    "DownloadAll": "全部下載",
-    "Resume": "繼續下載",
-    "RetryFailed": "重新下載失敗項目",
-    "Preparing": "正在掃描會議…",
-    "TotalMeetings": "會議總數",
-    "AlreadyDownloaded": "已下載",
-    "ToDownload": "待下載",
     "AllDownloaded": "所有會議皆已下載！",
-    "StartDownload": "開始下載",
-    "Downloading": "下載中…",
+    "AlreadyDownloaded": "已下載",
     "Cancel": "取消",
     "Close": "關閉",
-    "Complete": "下載完成",
-    "Downloaded": "已下載",
-    "NoAudio": "無可用音訊",
-    "Failed": "失敗",
-    "Skipped": "已略過",
-    "Retry": "重試失敗項目",
-    "More": "更多",
     "ContactSupport": "若問題持續，請聯絡 seameet@seasalt.ai",
+    "DownloadAll": "全部下載",
+    "Downloaded": "已下載",
+    "Downloading": "下載中…",
+    "Failed": "失敗",
+    "More": "更多",
+    "NoAudio": "無可用音訊",
+    "Preparing": "正在掃描會議…",
+    "Resume": "繼續下載",
+    "Retry": "重試失敗項目",
+    "RetryFailed": "重新下載失敗項目",
+    "Skipped": "已略過",
+    "StartDownload": "開始下載",
+    "Complete": "下載完成",
     "Stats": "下載統計",
+    "Title": "下載會議",
+    "ToDownload": "待下載",
+    "TotalMeetings": "會議總數",
     "ViewDetails": "查看詳情"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "啟用即時轉錄和會後 AI 分析",
+      "ScreenshotAnalysis": "啟用 AI 驅動的螢幕截圖分析",
+      "CTA": "登入並訂閱",
+      "LearnMore": "瞭解更多"
+    },
+    "Explainer": {
+      "Title": "SeaMeet AI 如何運作",
+      "Subtitle": "BYOK — 自帶金鑰",
+      "WhatIsBYOK": "使用 BYOK，您的錄音和資料直接從裝置傳送到 Google 或 Anthropic。不經過 SeaMeet 伺服器 — 為您和團隊提供最大隱私保護。",
+      "WhatYouNeed": "訂閱後需要設定的內容",
+      "GeminiTitle": "Google AI Studio 金鑰（有限免費）",
+      "GeminiDesc": "支援即時轉錄、會後摘要和分析。Google 提供慷慨的免費額度 — 大多數使用者無需花一分錢。",
+      "AgentTitle": "AI 助手 — 選擇一個選項（有限免費）",
+      "AgentOption1": "GitHub Copilot — 每月 50 次免費進階對話（Copilot Pro 可獲更多）",
+      "AgentOption2": "Claude Code CLI — 如果您已有 Claude Pro 或 Max，即可使用",
+      "AgentOption3": "Anthropic API 金鑰 — 用於直接 API 存取",
+      "Continue": "繼續訂閱",
+      "WhyBYOK": {
+        "Title": "為什麼要自帶金鑰？",
+        "Answer": "更好的隱私保護 — 您的資料保存在 Google 和 Anthropic 等可信企業中，不會保存在 SeaMeet。這些提供商的免費額度慷慨，對大多數使用者來說可以使用很長時間。"
+      },
+      "WhyMonthly": {
+        "Title": "為什麼 SeaMeet 按月收費？",
+        "Answer": "SeaMeet 不斷更新新的 AI 功能。訂閱讓您始終使用最新版本。否則，您購買一次性授權後就只能使用固定功能 — 就像買了 Office 2012 然後永遠停留在 Office 2012 一樣。"
+      }
+    },
+    "Coupon": {
+      "Title": "上線推廣",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "首月免費 — 前 100 名使用者",
+      "FallbackDesc": "如果 SEAMEET100 已用完，發送電子郵件至 coupon@seameet.ai 獲取另一個優惠券（一年 10% 折扣或另一個首月免費碼）。",
+      "HowToUse": "在 Stripe 結帳時輸入優惠券代碼。"
+    },
+    "PostSetup": {
+      "Title": "一切就緒！現在就試試。",
+      "Desc": "錄製一個簡短的會議或截取螢幕截圖，體驗 AI 轉錄和分析。",
+      "TryRecording": "開始錄製",
+      "TryScreenshot": "截取螢幕截圖",
+      "Later": "稍後再試"
+    },
     "Banner": {
       "CancelPending": "您的訂閱將於 {{date}} 到期。届時轉錄、摘要和 AI 功能將停止運作。",
       "PastDue": "付款失敗 — AI 功能已被停用。請更新付款方式以恢復。",
@@ -448,6 +494,7 @@
       "GeminiHelp": "取得免費金鑰: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
       "GeminiUsage": "用途: 逐字稿、摘要、即時逐字稿。免費金鑰受 Gemini 速率限制和配額約束。如果達到限制，請切換到 Google AI Studio 付費方案。",
       "NotConfigured": "未設定",
       "SaveContinue": "儲存並繼續",
@@ -456,9 +503,9 @@
       "SecurityNote": "金鑰儲存在您的本機裝置上（透過作業系統鑰匙圈加密）。SeaMeet 絕不會將您的金鑰傳送到我們的伺服器。",
       "SkipForNow": "暫時跳過",
       "Subtitle": "還差一步: 請連接您的 AI API 金鑰。",
+      "TabLabel": "API 金鑰",
       "Validating": "驗證中...",
       "ValidationFailed": "驗證失敗",
-      "TabLabel": "API 金鑰",
       "WizardStep": "第 {{current}} 步，共 {{total}} 步",
       "Step1Title": "連接您的 Gemini API 金鑰",
       "Step1Desc": "用於逐字稿、摘要和即時逐字稿。從 Google AI Studio 取得免費金鑰。",
@@ -468,9 +515,9 @@
       "Step3Desc": "兩個 API 金鑰均已設定。您可以隨時在下方更新。",
       "Next": "下一步",
       "Done": "完成",
-      "RemoveKey": "移除已儲存的金鑰",
       "TestKey": "測試金鑰",
       "TestingKey": "測試中...",
+      "RemoveKey": "移除已儲存的金鑰",
       "StepCopilotTitle": "連接 GitHub Copilot（選用）",
       "StepCopilotDesc": "在您的系統上偵測到 GitHub Copilot。請選擇您偏好的 Agent 提供方。",
       "CopilotStatus": "GitHub Copilot",
@@ -485,6 +532,15 @@
       "CopilotSignupHint": "想嘗試 GitHub Copilot 作為替代 Agent？在 github.com/features/copilot/plans 註冊免費方案（每月包含 50 次 Agent/聊天請求），然後安裝 Copilot CLI 並執行 \"copilot login\"。",
       "CopilotFlatUsage": "用途：AI Agent（Claude 的替代方案）。無需 API 金鑰 — 使用您的 GitHub 登入。",
       "Guide": {
+        "Intro": "SeaMeet AI 有兩個獨立的功能區域 — 根據需要進行設定。",
+        "SectionAiSummary": "AI 摘要",
+        "SectionAiSummaryBadge": "必要",
+        "SectionAiSummarySubtitle": "取得 Gemini API 金鑰（免費）",
+        "SectionAiAgent": "AI 代理",
+        "SectionAiAgentBadge": "至少需要一個",
+        "OptionCopilotTitle": "GitHub Copilot CLI（免費）",
+        "OptionClaudeTitle": "Claude Code CLI（選用，付費）",
+        "Or": "或",
         "Step1Title": "步驟 1 — 請仔細閱讀",
         "Step1Need": "您需要準備 2 樣東西：",
         "Step1Item1": "Gemini API 金鑰 — 用於 AI 摘要和即時逐字稿",
@@ -515,15 +571,6 @@
         "Step4AuthDesc": "（需要 Claude Pro 或 Max 方案）",
         "Step4Refresh": "點擊下方的重新整理以偵測 Claude Code。",
         "Step4Select": "點擊下方的 Claude Code 以設為偏好選項。",
-        "Intro": "SeaMeet AI 有兩個獨立的功能區域 — 根據需要進行設定。",
-        "SectionAiSummary": "AI 摘要",
-        "SectionAiSummaryBadge": "必要",
-        "SectionAiSummarySubtitle": "取得 Gemini API 金鑰（免費）",
-        "SectionAiAgent": "AI 代理",
-        "SectionAiAgentBadge": "至少需要一個",
-        "OptionCopilotTitle": "GitHub Copilot CLI（免費）",
-        "OptionClaudeTitle": "Claude Code CLI（選用，付費）",
-        "Or": "或",
         "StepComplete": {
           "AgentBoth": "Claude 和 Copilot 已設定",
           "AgentClaude": "Claude 已設定",
@@ -532,19 +579,58 @@
         }
       }
     },
+    "CurrentPlan": "目前方案",
     "Device": {
       "Close": "關閉",
+      "DaysAgo_one": "{{count}} 天前",
       "DaysAgo_other": "{{count}} 天前",
+      "Error": "載入裝置失敗: {{error}}",
       "LastUsed": "上次使用: {{when}}",
       "LimitDescription": "SeaMeet Pro 同時最多可在 3 台裝置上使用。請登出不使用的裝置以釋放名額。",
       "LimitTitle": "已達裝置數量上限",
+      "Loading": "正在載入裝置...",
+      "NoDevices": "No devices registered",
       "SigningOut": "正在登出...",
       "SignOut": "登出",
+      "TabLabel": "Devices",
       "Today": "今天",
       "Yesterday": "昨天",
-      "DaysAgo_one": "{{count}} 天前",
-      "Error": "載入裝置失敗: {{error}}",
-      "Loading": "正在載入裝置..."
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "常見問題",
+      "Free": {
+        "Q1": "免費方案可以做什麼？",
+        "A1": "SeaMeet Free 是一款功能完整的錄音和截圖工具。您可以錄製音訊、擷取螢幕畫面、截取螢幕截圖並管理所有錄音 — 完全免費，永久使用。",
+        "Q2": "我的資料是否安全？",
+        "A2": "是的。在免費方案中，資料不會被傳輸到任何地方。所有錄音、截圖和檔案 100% 保存在您的裝置本機。您的隱私得到完全保護。",
+        "Q3": "付費方案還能獲得什麼？",
+        "A3": "付費方案增加 AI 功能: 自動逐字稿、會議摘要、行動事項、會議中的即時逐字稿，以及關於錄音的 AI 問答。"
+      },
+      "BYOK": {
+        "Q1": "什麼是 BYOK？",
+        "A1": "BYOK 是 Bring Your Own Key（自帶金鑰）的縮寫。您需要 2 個 API 金鑰：一個來自 Google AI Studio（用於轉錄和摘要），一個來自 GitHub Copilot 或 Claude Code（用於 AI 助手）。引導式設定精靈會在結帳後幫助您連接兩個金鑰。Google AI Studio 通常提供免費金鑰。GitHub Copilot 也提供免費方案。因此，您可以使用自己的金鑰進行有限免費使用。如果您已訂閱 Claude Pro 或 Max，則無需額外的 Anthropic API 金鑰。",
+        "Q2": "為什麼需要按月訂閱？",
+        "A2": "您的訂閱費用於持續更新、新 AI 模型支援、錯誤修復和新功能開發。API 費用透過您自己的金鑰分別支付給 Google 和 Anthropic。",
+        "Q3": "授權如何運作？",
+        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
+      },
+      "Desktop": {
+        "Q1": "什麼是 Desktop Pro？",
+        "A1": "Desktop Pro 內建由 SeaMeet 管理的 AI 金鑰 — 無需自行建立或管理 API 金鑰。只需訂閱即可立即使用 AI 功能。",
+        "Q2": "與 BYOK 有什麼不同？",
+        "A2": "Desktop Pro 由 SeaMeet 為您提供和管理 API 金鑰。您無需分別註冊 Google AI Studio 或 Anthropic。",
+        "Q3": "授權如何運作？",
+        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
+      },
+      "Sync": {
+        "Q1": "什麼是 Sync Pro？",
+        "A1": "Sync Pro 包含 Desktop Pro 的所有功能，外加雲端同步。您的錄音、逐字稿和摘要將在所有裝置間同步。",
+        "Q2": "哪些內容會被同步？",
+        "A2": "錄音、逐字稿、AI 摘要和行動事項均會在所有裝置間同步。在一台裝置上的變更會自動出現在其他裝置上。",
+        "Q3": "授權如何運作？",
+        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
+      }
     },
     "Error": {
       "AlreadySubscribed": "您已有一個有效的訂閱。使用「管理訂閱」來查看或變更它。",
@@ -553,9 +639,15 @@
       "Unknown": "發生錯誤。請再試一次。"
     },
     "FreeNote": "免費方案: 僅錄音，無 AI 功能，無需登入。無需訂閱即可隨時錄音。",
+    "ComingSoon": "Coming soon",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
         "InfoNote": "您需要完成2項設定：Google AI Studio（免費）和 GitHub（免費）或 Anthropic（付費）。結帳後設定精靈將引導您完成：",
         "ConfirmTitle": "訂閱前確認",
         "ConfirmContinue": "繼續結帳",
@@ -567,7 +659,12 @@
         "InfoNote.Gemini": "Google AI Studio 通常會提供免費金鑰。"
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
       },
       "Free": {
         "Name": "Free",
@@ -578,7 +675,12 @@
         "Feature4": "隨時可用"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
       }
     },
     "Privacy": {
@@ -646,130 +748,30 @@
     "PromoHint": "有促銷代碼？請在結帳時輸入。",
     "Status": {
       "Active": "已啟用",
-      "CancelNotice": "訂閱結束日期 {{date}}",
-      "CancelPendingNotice": "您的訂閱將於 {{date}} 到期。在此之前 AI 功能將繼續可用。",
       "Canceled": "已取消",
       "Canceling": "取消中",
+      "CancelNotice": "訂閱結束日期 {{date}}",
+      "CancelPendingNotice": "您的訂閱將於 {{date}} 到期。在此之前 AI 功能將繼續可用。",
       "EndsOn": "{{date}} 到期",
+      "DevOverride": "(Dev Override)",
       "Loading": "載入中...",
       "Manage": "管理訂閱",
       "None": "無訂閱",
       "PastDue": "逾期未付",
       "Plan": "方案",
       "Reactivate": "重新啟用",
+      "SignIn": "Sign in to manage subscription",
       "Trial": "試用"
     },
+    "SignInToSubscribe": "登入以訂閱:",
     "Subscribe": "訂閱",
     "Subscribing": "訂閱中...",
     "UnlockTitle": "解鎖 SeaMeet AI 功能",
-    "SignInToSubscribe": "登入以訂閱:",
-    "CurrentPlan": "目前方案",
-    "FAQ": {
-      "Title": "常見問題",
-      "BYOK": {
-        "Q1": "什麼是 BYOK？",
-        "A1": "BYOK 是 Bring Your Own Key（自帶金鑰）的縮寫。您需要 2 個 API 金鑰：一個來自 Google AI Studio（用於轉錄和摘要），一個來自 GitHub Copilot 或 Claude Code（用於 AI 助手）。引導式設定精靈會在結帳後幫助您連接兩個金鑰。Google AI Studio 通常提供免費金鑰。GitHub Copilot 也提供免費方案。因此，您可以使用自己的金鑰進行有限免費使用。如果您已訂閱 Claude Pro 或 Max，則無需額外的 Anthropic API 金鑰。",
-        "Q2": "為什麼需要按月訂閱？",
-        "A2": "您的訂閱費用於持續更新、新 AI 模型支援、錯誤修復和新功能開發。API 費用透過您自己的金鑰分別支付給 Google 和 Anthropic。",
-        "Q3": "授權如何運作？",
-        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
-      },
-      "Desktop": {
-        "Q1": "什麼是 Desktop Pro？",
-        "A1": "Desktop Pro 內建由 SeaMeet 管理的 AI 金鑰 — 無需自行建立或管理 API 金鑰。只需訂閱即可立即使用 AI 功能。",
-        "Q2": "與 BYOK 有什麼不同？",
-        "A2": "Desktop Pro 由 SeaMeet 為您提供和管理 API 金鑰。您無需分別註冊 Google AI Studio 或 Anthropic。",
-        "Q3": "授權如何運作？",
-        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
-      },
-      "Sync": {
-        "Q1": "什麼是 Sync Pro？",
-        "A1": "Sync Pro 包含 Desktop Pro 的所有功能，外加雲端同步。您的錄音、逐字稿和摘要將在所有裝置間同步。",
-        "Q2": "哪些內容會被同步？",
-        "A2": "錄音、逐字稿、AI 摘要和行動事項均會在所有裝置間同步。在一台裝置上的變更會自動出現在其他裝置上。",
-        "Q3": "授權如何運作？",
-        "A3": "1 個帳戶，最多 3 台裝置。不活躍的裝置在 30 天後自動釋放。您也可以手動登出裝置以釋放名額。"
-      },
-      "Free": {
-        "Q1": "免費方案可以做什麼？",
-        "A1": "SeaMeet Free 是一款功能完整的錄音和截圖工具。您可以錄製音訊、擷取螢幕畫面、截取螢幕截圖並管理所有錄音 — 完全免費，永久使用。",
-        "Q2": "我的資料是否安全？",
-        "A2": "是的。在免費方案中，資料不會被傳輸到任何地方。所有錄音、截圖和檔案 100% 保存在您的裝置本機。您的隱私得到完全保護。",
-        "Q3": "付費方案還能獲得什麼？",
-        "A3": "付費方案增加 AI 功能: 自動逐字稿、會議摘要、行動事項、會議中的即時逐字稿，以及關於錄音的 AI 問答。"
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "啟用即時轉錄和會後 AI 分析",
-      "ScreenshotAnalysis": "啟用 AI 驅動的螢幕截圖分析",
-      "CTA": "登入並訂閱",
-      "LearnMore": "瞭解更多"
-    },
-    "Explainer": {
-      "Title": "SeaMeet AI 如何運作",
-      "Subtitle": "BYOK — 自帶金鑰",
-      "WhatIsBYOK": "使用 BYOK，您的錄音和資料直接從裝置傳送到 Google 或 Anthropic。不經過 SeaMeet 伺服器 — 為您和團隊提供最大隱私保護。",
-      "WhatYouNeed": "訂閱後需要設定的內容",
-      "GeminiTitle": "Google AI Studio 金鑰（有限免費）",
-      "GeminiDesc": "支援即時轉錄、會後摘要和分析。Google 提供慷慨的免費額度 — 大多數使用者無需花一分錢。",
-      "AgentTitle": "AI 助手 — 選擇一個選項（有限免費）",
-      "AgentOption1": "GitHub Copilot — 每月 50 次免費進階對話（Copilot Pro 可獲更多）",
-      "AgentOption2": "Claude Code CLI — 如果您已有 Claude Pro 或 Max，即可使用",
-      "AgentOption3": "Anthropic API 金鑰 — 用於直接 API 存取",
-      "Continue": "繼續訂閱",
-      "WhyBYOK": {
-        "Title": "為什麼要自帶金鑰？",
-        "Answer": "更好的隱私保護 — 您的資料保存在 Google 和 Anthropic 等可信企業中，不會保存在 SeaMeet。這些提供商的免費額度慷慨，對大多數使用者來說可以使用很長時間。"
-      },
-      "WhyMonthly": {
-        "Title": "為什麼 SeaMeet 按月收費？",
-        "Answer": "SeaMeet 不斷更新新的 AI 功能。訂閱讓您始終使用最新版本。否則，您購買一次性授權後就只能使用固定功能 — 就像買了 Office 2012 然後永遠停留在 Office 2012 一樣。"
-      }
-    },
-    "Coupon": {
-      "Title": "上線推廣",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "首月免費 — 前 100 名使用者",
-      "FallbackDesc": "如果 SEAMEET100 已用完，發送電子郵件至 coupon@seameet.ai 獲取另一個優惠券（一年 10% 折扣或另一個首月免費碼）。",
-      "HowToUse": "在 Stripe 結帳時輸入優惠券代碼。"
-    },
-    "PostSetup": {
-      "Title": "一切就緒！現在就試試。",
-      "Desc": "錄製一個簡短的會議或截取螢幕截圖，體驗 AI 轉錄和分析。",
-      "TryRecording": "開始錄製",
-      "TryScreenshot": "截取螢幕截圖",
-      "Later": "稍後再試"
-    },
     "Setup": {
       "Done": "我已完成設定",
       "Later": "稍後再說"
     }
   },
-  "Billing.BYOK.KeySaved": "金鑰已儲存（已隱藏）",
-  "Billing.ComingSoon": "即將推出",
-  "Billing.Device.NoDevices": "尚無已註冊的裝置",
-  "Billing.Device.TabLabel": "裝置",
-  "Billing.Device.YourDevices": "您的裝置",
-  "Billing.Error.NoApiUrl": "計費服務未設定。請聯絡支援團隊。",
-  "Billing.Error.NotAuthenticated": "請先登入再訂閱。使用帳戶選單登入。",
-  "Billing.Error.Unknown": "發生了一些問題。請重試。",
-  "Billing.Plans.BYOK.Feature1": "AI 逐字稿與摘要",
-  "Billing.Plans.BYOK.Feature2": "使用自己的 Gemini & Claude API 金鑰",
-  "Billing.Plans.BYOK.Feature3": "會議中即時逐字稿",
-  "Billing.Plans.BYOK.Feature4": "AI 驅動的會議提問與分析",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "BYOK Pro 的所有功能",
-  "Billing.Plans.Desktop.Feature2": "內建 AI — 無需 API 金鑰",
-  "Billing.Plans.Desktop.Feature3": "優先支援",
-  "Billing.Plans.Desktop.Feature4": "進階分析",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "Desktop Pro 的所有功能",
-  "Billing.Plans.Sync.Feature2": "雲端同步",
-  "Billing.Plans.Sync.Feature3": "團隊協作功能",
-  "Billing.Plans.Sync.Feature4": "共享會議庫",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "（Dev Override）",
-  "Billing.Status.SignIn": "登入以管理訂閱",
   "BlackHole": {
     "Cancel": "取消",
     "CheckAgain": "再次檢查",
@@ -800,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "套用名稱",
+    "Back": "返回",
     "Cancel": "取消",
     "Close": "關閉",
     "Configure": "設定",
@@ -820,7 +823,6 @@
     "Send": "傳送",
     "Starting": "啟動中…",
     "UnknownApp": "未知應用程式",
-    "Back": "返回",
     "Copied": "已複製！",
     "Copy": "複製"
   },
@@ -1070,8 +1072,11 @@
     "CloseTooltip": "關閉工具提示",
     "FailedToLoadScreens": "無法載入螢幕。請再試一次。",
     "FailedToLoadWindows": "無法載入窗口。請重試。",
+    "MicMuted": "麥克風已靜音",
+    "Microphone": "麥克風",
     "MicrophoneMuted": "麥克風：靜音",
     "MicrophoneSettings": "麥克風設定",
+    "MuteMicrophone": "靜音麥克風",
     "MuteNoMicrophone": "靜音（無麥克風）",
     "NoMicrophonesFound": "找不到麥克風",
     "NoScreensDetected": "未偵測到螢幕。",
@@ -1089,10 +1094,7 @@
     "SystemAudioOn": "系統音訊：ON",
     "WaitingForRegion": "正在等待區域…",
     "WindowNotAvailable": "在此平台上不支援視窗選擇。",
-    "WindowRequired": "在錄音前選擇一個視窗",
-    "MicMuted": "麥克風已靜音",
-    "Microphone": "麥克風",
-    "MuteMicrophone": "靜音麥克風"
+    "WindowRequired": "在錄音前選擇一個視窗"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "點擊浮動列中的「開始錄製」以錄製所選範圍",
@@ -1101,6 +1103,7 @@
   "GeminiLive": {
     "AITranscription": "人工智慧轉錄",
     "CollapseNowSpeaking": "坍塌",
+    "SubscribeForTranscription": "訂閱以在錄音期間啟用即時 AI 轉錄。",
     "EnableDescription": "錄音期間由 Gemini 提供支援的即時轉錄",
     "EnableIntegration": "啟用即時 AI 轉錄",
     "Error": "錯誤",
@@ -1109,8 +1112,10 @@
     "SegmentCount_one": "{{count}} 段",
     "SegmentCount_other": "{{count}} 段",
     "WaitingForConnection": "正在連接...",
-    "WaitingForSpeech": "等待演講...",
-    "SubscribeForTranscription": "訂閱以在錄音期間啟用即時 AI 轉錄。"
+    "WaitingForSpeech": "等待演講..."
+  },
+  "GeminiTranscription": {
+    "Title": "即時轉錄"
   },
   "IdleCompactView": {
     "ArmFlashback": "啟用回憶錄",
@@ -1176,6 +1181,20 @@
     "WsConnected": "WebSocket 已連線",
     "WsDisconnected": "WebSocket 已斷線"
   },
+  "MeetingsTab": {
+    "Download": "下載",
+    "DownloadAudio": "下載音訊",
+    "DownloadBoth": "全部下載",
+    "DownloadTxt": "下載 .txt",
+    "Empty": "未找到會議",
+    "Error": "載入會議失敗",
+    "Loading": "正在載入會議...",
+    "Retry": "重試",
+    "SelectWorkspace": "請從使用者選單選擇工作區以查看會議。",
+    "Title": "會議",
+    "Total": "共",
+    "Untitled": "未命名會議"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 小提示：對於瀏覽器會議（Google Meet、Zoom、Teams），我只能偵測瀏覽器，無法辨識具體網站。",
     "ContinueRecording": "繼續錄音",
@@ -1194,20 +1213,6 @@
     "StopRecording": "停止錄音",
     "Yes": "開始錄音"
   },
-  "MeetingsTab": {
-    "Download": "下載",
-    "DownloadAudio": "下載音訊",
-    "DownloadBoth": "全部下載",
-    "DownloadTxt": "下載 .txt",
-    "Empty": "未找到會議",
-    "Error": "載入會議失敗",
-    "Loading": "正在載入會議...",
-    "Retry": "重試",
-    "SelectWorkspace": "請從使用者選單選擇工作區以查看會議。",
-    "Title": "會議",
-    "Total": "共",
-    "Untitled": "未命名會議"
-  },
   "MinimizedView": {
     "ActionRequired": "需要您的協助（自動錄音）",
     "AudioFlashbackCharged": "音訊回憶錄已充電（{{duration}}秒）",
@@ -1217,6 +1222,18 @@
     "ScreenFlashbackCharged": "螢幕回憶錄已充能（{{duration}}秒）",
     "ScreenFlashbackCharging": "螢幕回憶錄充電中…",
     "ScreenRecording": "螢幕錄音（{{time}}）"
+  },
+  "OCRAutoCopy": {
+    "Copied": "提取的文字已複製到剪貼簿",
+    "Error": "文字提取失敗",
+    "Extracting": "正在從截圖中提取文字…",
+    "Here": "此處",
+    "Label": "提取文字（OCR）並複製到剪貼簿",
+    "LabelDisabled": "提取文字（OCR）並複製到剪貼簿（需要 API 金鑰，訂閱請點擊",
+    "LabelDisabledShort": "提取文字（OCR）— 需要 API 金鑰",
+    "NoText": "無法從截圖中提取文字",
+    "SettingsDesc": "每次截圖後執行 OCR 並將提取的文字複製到剪貼簿",
+    "SettingsLabel": "截圖時自動提取文字（OCR）"
   },
   "Pause": "暫停",
   "Permissions": {
@@ -1274,9 +1291,16 @@
     "CodecInfo": "編解碼資訊",
     "MoreOptions": "更多選項"
   },
+  "Recording": {
+    "Paused": "已暫停",
+    "Preparing": "準備中",
+    "PreparingToRecord": "準備錄音中..."
+  },
   "RecordingControls": {
     "AudioRecording": "音訊錄製",
     "ContinueRecording": "繼續錄音",
+    "MarkEvent": "標記事件",
+    "MarkedEvents": "標記事件",
     "RecordingAudio": "正在錄製音訊...",
     "RecordingMode": "錄音模式",
     "RecordingPreview": "錄製預覽",
@@ -1284,9 +1308,7 @@
     "StartRecording": "開始錄製",
     "Stop": "停止",
     "StopRecording": "停止錄音",
-    "VideoRecording": "影片錄製",
-    "MarkedEvents": "標記事件",
-    "MarkEvent": "標記事件"
+    "VideoRecording": "影片錄製"
   },
   "RecordingModes": {
     "AreaCapture": "區域擷取",
@@ -1351,6 +1373,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "分析",
+    "ConfigureApiKey": "設定您的 Gemini API 金鑰以使用 AI 處理圖像。",
+    "SubscribeToDescribe": "訂閱以啟用 AI 驅動的螢幕截圖分析。",
     "ButtonLabel": "人工智慧處理",
     "ErrorCodes": {
       "AUTH_ERROR": "API 金鑰無效。請在「設定」中檢查您的 API 金鑰。",
@@ -1367,6 +1391,9 @@
     "DescribeSub": "這張截圖裡面有什麼？",
     "Description": "描述",
     "ExtractedText": "提取的文本",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "提取文字（OCR）",
     "OcrSub": "讀取所有可見文本",
     "PipelineError": "AI處理失敗。請再試一次。",
@@ -1374,17 +1401,12 @@
     "Queuing": "排隊...",
     "ResultLabel": "人工智慧結果",
     "SetupRequired": "使用訂閱或 BYOK 登入來處理影像。",
-    "UnknownError": "未知錯誤",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "SubscribeToDescribe": "訂閱以啟用 AI 驅動的螢幕截圖分析。",
-    "ConfigureApiKey": "設定您的 Gemini API 金鑰以使用 AI 處理圖像。"
+    "UnknownError": "未知錯誤"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "已複製！",
@@ -1627,19 +1649,24 @@
   "UpdateToast": {
     "Available": "有新版本：SeaMeet {{version}}",
     "Dismiss": "關閉",
+    "DownloadFailed": "SeaMeet {{version}} 自動更新失敗",
     "Downloading": "SeaMeet {{version}} 下載中 ({{percent}}%)",
     "Hide": "隱藏",
+    "Install": "安裝",
+    "Later": "稍後",
+    "ManualDownload": "手動下載",
     "ReadyToInstall": "SeaMeet {{version}} 現已準備好安裝",
     "RestartNow": "立即重新啟動",
     "ViewRelease": "查看版本更新內容",
     "ViewReleaseTitle": "在 GitHub 查看發行說明",
     "WhatsNew": "新內容：",
     "WhatsNewInVersion": "{{version}} 的新內容如下：",
-    "DownloadFailed": "SeaMeet {{version}} 自動更新失敗",
-    "ManualDownload": "手動下載",
-    "Install": "安裝",
-    "Later": "稍後",
     "Restarting": "正在重新啟動..."
+  },
+  "PostUpdateModal": {
+    "Title": "已更新至 v{{version}}",
+    "Description": "SeaMeet 已成功更新。更新內容：",
+    "GotIt": "知道了"
   },
   "UserMenu": {
     "AboutSeaMeet": "關於 SeaMeet",
@@ -1669,15 +1696,15 @@
       "WikiDesc": "請參閱 SeaMeet wiki 以獲取文件與指南。"
     },
     "KeyboardShortcuts": "快捷鍵",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet：已登入",
     "SeaMeetSignedOut": "SeaMeet：未登入",
-    "SignIn": "登入",
-    "SignOut": "登出",
-    "AccountSignedIn": "Signed in",
     "SeaMeetSignIn": "SeaMeet Sign In",
     "SeaMeetSignOut": "SeaMeet Sign Out",
-    "RefreshWorkspaces": "重新整理工作區",
-    "Workspaces": "工作區"
+    "SignIn": "登入",
+    "SignOut": "登出",
+    "Workspaces": "工作區",
+    "RefreshWorkspaces": "重新整理工作區"
   },
   "VideoSettings": {
     "AudioSettings": "音訊設定",
@@ -1739,24 +1766,5 @@
     "Refreshing": "正在刷新…",
     "Title": "選擇一個視窗",
     "Unknown": "未命名視窗"
-  },
-  "AI": {
-    "SubscribeMsg": "需要 BYOK Pro 訂閱。訂閱以獲取即時轉錄、AI 會議摘要和互動式 AI 代理。"
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "設定您的 API 金鑰以使用 AI 代理。"
-  },
-  "GeminiTranscription": {
-    "Title": "即時轉錄"
-  },
-  "Recording": {
-    "Paused": "已暫停",
-    "Preparing": "準備中",
-    "PreparingToRecord": "準備錄音中..."
-  },
-  "PostUpdateModal": {
-    "Title": "已更新至 v{{version}}",
-    "Description": "SeaMeet 已成功更新。更新內容：",
-    "GotIt": "知道了"
   }
 }

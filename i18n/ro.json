@@ -5,12 +5,15 @@
     "DisabledTabHint": "AI Agent este dezactivat — activați-l în Setări → AI Agent & Cowork",
     "EnableToggle": "Activați AI Agent & Cowork",
     "EnableToggleDesc": "Necesită Claude CLI sau GitHub Copilot",
+    "LinkCopied": "Copiat!",
     "MenuItem": "Agent AI și cowork",
     "PageTitle": "Agent AI și cowork",
     "SectionTitle": "Agent AI și cowork",
-    "LinkCopied": "Copiat!",
     "SubscribeMsg": "Agentul AI necesită un abonament BYOK Pro. Abonați-vă pentru a obține transcriere în timp real, rezumate AI ale întâlnirilor și un agent AI interactiv.",
     "SubscribeCTA": "Abonați-vă pentru a debloca"
+  },
+  "AI": {
+    "SubscribeMsg": "Necesită un abonament BYOK Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Cheia API Gemini",
@@ -22,10 +25,15 @@
       "ClearKey": "Eliminați cheia salvată",
       "CliInstalled": "Instalat ({{version}})",
       "CliInstallLink": "Instalați Claude Code →",
+      "CliNotFound": "CLI negăsit",
       "CliNotInstalled": "Claude CLI nu a fost găsit — instalați-l și autentificați-vă:",
       "CliSection": "Claude Code CLI",
+      "DefaultModel": "Model implicit",
       "GetKeyLink": "Obțineți o cheie API de la Anthropic Console →",
       "HideKey": "Ascunde cheia",
+      "InstallMac": "macOS / Linux:",
+      "InstallWin": "Windows (PowerShell):",
+      "ApiKeyTitle": "Cheie API",
       "KeyInvalid": "Cheie nevalidă",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "•••••••••• (salvat)",
@@ -40,6 +48,8 @@
       "QuotaLoading": "Se încarcă cota...",
       "QuotaRemaining": "{{remaining}} / {{limit}} jetoane rămase",
       "QuotaResetDate": "Se resetează pe {{date}}",
+      "Refresh": "Re-detect Claude",
+      "Remove": "Remove Claude integration",
       "Saving": "Economisire...",
       "Section": "Claude API Key (agent)",
       "ShowKey": "Afișați cheia",
@@ -48,22 +58,36 @@
       "SourceKeyServer": "Gestionat de SeaMeet",
       "SourceLabel": "Sursa activă:",
       "SourceNone": "Neconfigurat",
-      "TestKey": "Salvați și verificați",
-      "CliNotFound": "CLI negăsit",
+      "TestKey": "Salvați și verificați"
+    },
+    "Copilot": {
+      "Authenticated": "Autentificat",
       "DefaultModel": "Model implicit",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "Cheie API",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration"
+      "InstallGuide": "Urmați ",
+      "InstallGuideLink": "ghidul de pornire",
+      "InstallGuideSuffix": " pentru a instala, apoi rulați:",
+      "NotDetected": "Nedetectat — instalați și autentificați:",
+      "Refresh": "Re-detect Copilot",
+      "Remove": "Remove Copilot integration",
+      "Section": "GitHub Copilot"
+    },
+    "Provider": {
+      "Detected": "Detectat",
+      "Hint": "Puteți schimba și furnizorul per conversație în panoul de chat.",
+      "NotAvailable": "Indisponibil",
+      "Preferred": "Preferred",
+      "Section": "Furnizor de agent preferat"
     },
     "ClearKey": "Eliminați cheia salvată",
     "EnableToggle": "Activați rezumatele bazate pe inteligență artificială",
     "EnableToggleDesc": "Necesită o cheie API Gemini gratuită",
+    "DefaultModel": "Default Model",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "Obțineți o cheie API gratuită de la Google AI Studio →",
     "GroupTitle": "Caracteristici AI",
     "HideKey": "Ascunde cheia",
     "KeyInvalid": "Cheie nevalidă",
+    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "Nicio cheie configurată",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "•••••••••• (salvat)",
@@ -97,31 +121,12 @@
     "ShowAllModels": "Afișează toate cele {{count}} modele",
     "ShowFewerModels": "Afișează mai puține modele",
     "ShowKey": "Afișați cheia",
-    "TestKey": "Salvați și verificați",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
-    "Copilot": {
-      "Authenticated": "Autentificat",
-      "DefaultModel": "Model implicit",
-      "InstallGuide": "Urmați ",
-      "InstallGuideLink": "ghidul de pornire",
-      "InstallGuideSuffix": " pentru a instala, apoi rulați:",
-      "NotDetected": "Nedetectat — instalați și autentificați:",
-      "Section": "GitHub Copilot",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration"
-    },
-    "Provider": {
-      "Detected": "Detectat",
-      "Hint": "Puteți schimba și furnizorul per conversație în panoul de chat.",
-      "NotAvailable": "Indisponibil",
-      "Section": "Furnizor de agent preferat",
-      "Preferred": "Preferred"
-    },
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini"
+    "TestKey": "Salvați și verificați"
   },
   "AISummary": {
     "ApplyMerge": "Aplicare",
+    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
+    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
     "ConfirmRename": "Confirm rename",
     "Copy": "Copie",
     "EditSegmentSpeaker": "Faceți clic pentru a reatribui acest segment",
@@ -166,8 +171,9 @@
     "RenameSpeaker": "Rename speaker",
     "Retry": "Reîncercați",
     "SeekToTimestamp": "Căutați acest marcaj de timp",
+    "ConfigureApiKey": "Configurați cheia API Gemini pentru a genera rezumate și transcrieri AI.",
+    "ConfigureKey": "Configurați cheia API",
     "SetupRequired": "Configurați-vă cheia API Gemini în Setări → Funcții AI pentru a activa rezumatele AI.",
-    "Speakers": "Vorbitori",
     "Tab": {
       "ActionItems": "Acțiuni",
       "Chapters": "Capitole",
@@ -175,17 +181,14 @@
       "Summary": "Rezumat",
       "Transcription": "Transcriere"
     },
+    "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "Rezumat AI",
     "Topics": "Subiecte:",
-    "Version": {
-      "Latest": "Latest",
-      "Live": "Live"
-    },
+    "Speakers": "Vorbitori",
     "VersionPicker": "Browse version history",
     "ViewingLive": "Viewing Live transcript",
     "ViewingVersion": "Viewing v{{n}} of {{total}}",
     "ViewLatest": "View latest →",
-    "ScreenshotTabTitle": "AI Analysis",
     "RenameSuggestion": "AI suggests",
     "NewFileName": "new file name",
     "ApplyRename": "Rename",
@@ -195,10 +198,10 @@
     "RenameTo": "Rename: {{name}}",
     "RenameApplied": "File renamed to '{{name}}'",
     "RenameError": "Failed to rename file",
-    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
-    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
-    "ConfigureApiKey": "Configurați cheia API Gemini pentru a genera rezumate și transcrieri AI.",
-    "ConfigureKey": "Configurați cheia API"
+    "Version": {
+      "Latest": "Latest",
+      "Live": "Live"
+    }
   },
   "About": {
     "AppStoreBuild": "Versiune App Store",
@@ -220,6 +223,12 @@
     "CommandHelp": "Comenzi: /new · /clear · /cost · /help",
     "GlobalTitle": "Agent AI",
     "GoToSettings": "Deschide Setări",
+    "LiveAction": {
+      "ActionItems": "Action Items",
+      "Summarize": "Summarize",
+      "Translate": "Translate",
+      "WhoSaidWhat": "Who Said What"
+    },
     "Mode": {
       "Ask": "Întreabă",
       "Code": "Cod",
@@ -262,6 +271,7 @@
     "SendButton": "Trimite",
     "SendPlaceholder": "Întrebați orice... (Enter pentru a trimite, Shift+Enter pentru noua linie)",
     "SessionCost": "Sesiune: {{inputTokens}} în /{{outputTokens}} jetoane",
+    "SectionTitle": "AI Agent",
     "Sessions": "Sesiuni",
     "StopButton": "Stop",
     "Streaming": {
@@ -279,7 +289,6 @@
     "Title": "Agent AI",
     "ToolCall": {
       "AndMoreLines_one": "... și încă {{count}} rânduri",
-      "AndMoreLines_few": "",
       "AndMoreLines_other": "... și încă {{count}} rânduri",
       "Executing": "Se execută...",
       "Input": "Intrare",
@@ -290,45 +299,15 @@
     },
     "ToolGroup": {
       "Actions_one": "{{count}} actiuni",
-      "Actions_few": "",
       "Actions_other": "{{count}} actiuni",
       "Completed_one": "{{count}} finalizat",
-      "Completed_few": "",
       "Completed_other": "{{count}} finalizat",
       "Running_one": "{{count}} rulează",
-      "Running_few": "",
       "Running_other": "{{count}} rulează"
-    },
-    "Speakers": "Vorbitori",
-    "MergeInto": "Îmbinare în…",
-    "ApplyMerge": "Aplicare",
-    "EditSegmentSpeaker": "Faceți clic pentru a reatribui acest segment",
-    "VersionPicker": "Răsfoiți istoricul versiunilor",
-    "ViewingLive": "Vizualizarea transcripției live",
-    "ViewingVersion": "Vizualizarea v{{n}} din {{total}}",
-    "ViewLatest": "Vezi cele mai recente →",
-    "LoadingVersion": "Se încarcă versiunea...",
-    "NotAvailableForVersion": "Nu este disponibil pentru această versiune.",
-    "ConfirmRename": "Confirmați redenumirea",
-    "RenameSpeaker": "Redenumiți difuzorul",
-    "RenameSuggestion": "AI sugerează",
-    "NewFileName": "nume nou de fișier",
-    "ApplyRename": "Redenumire",
-    "Renaming": "Se redenumește…",
-    "RenameTo": "Redenumire: {{name}}",
-    "RenameApplied": "Fișier redenumit în '{{name}}'",
-    "RenameError": "Redenumirea fișierului a eșuat",
-    "Version": {
-      "Latest": "Mai recent",
-      "Live": "Trăi"
-    },
-    "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
-    },
-    "SectionTitle": "AI Agent"
+    }
+  },
+  "AgentSection": {
+    "ConfigureApiKey": "Configurați cheile API pentru a utiliza Agentul AI."
   },
   "App": {
     "FailedToEnableFlashback": "Nu s-a putut activa retrogradarea: {{error}}",
@@ -387,14 +366,14 @@
   "AudioControls": {
     "AudioCapture": "Captură audio",
     "AudioMix": "Amestec audio",
+    "AudioSettings": "Audio Settings",
     "AudioSource": "Sursă audio:",
     "Microphone": "Microfon",
     "MicrophoneGainWarning": "Gain-ul ridicat al microfonului poate capta redarea speaker-ului chiar și când \"audio sistem\" este dezactivat. Folosește căști sau reduce gain-ul microfonului pentru înregistrări cu microfonul.",
+    "MuteMic": "Mute Microphone",
     "RecordingDefaultMicrophone": "Microfon implicit",
     "RecordingSettings": "Setări de înregistrare",
     "RefreshMicrophoneList": "Reîmprospătează lista de microfoane",
-    "AudioSettings": "Audio Settings",
-    "MuteMic": "Mute Microphone",
     "UnmuteMic": "Unmute Microphone"
   },
   "AutoDetectInfoModal": {
@@ -431,31 +410,72 @@
     "MeetingFallbackName": "Întâlnire"
   },
   "BatchDownload": {
-    "Title": "Descarcă întâlniri",
-    "DownloadAll": "Descarcă tot",
-    "Resume": "Reluare descărcare",
-    "RetryFailed": "Re-descarcă eșuate",
-    "Preparing": "Se scanează întâlnirile...",
-    "TotalMeetings": "Total întâlniri",
-    "AlreadyDownloaded": "Deja descărcate",
-    "ToDownload": "De descărcat",
     "AllDownloaded": "Toate întâlnirile sunt deja descărcate!",
-    "StartDownload": "Începe descărcarea",
-    "Downloading": "Se descarcă...",
+    "AlreadyDownloaded": "Deja descărcate",
     "Cancel": "Anulare",
     "Close": "Închide",
-    "Downloaded": "Descărcat",
-    "NoAudio": "Niciun audio disponibil",
-    "Failed": "Eșuat",
-    "Skipped": "Omise",
-    "Retry": "Reîncearcă eșuate",
-    "More": "în plus",
-    "Complete": "Descărcare completă",
     "ContactSupport": "Dacă problema persistă, contactați seameet@seasalt.ai",
+    "DownloadAll": "Descarcă tot",
+    "Downloaded": "Descărcat",
+    "Downloading": "Se descarcă...",
+    "Failed": "Eșuat",
+    "More": "în plus",
+    "NoAudio": "Niciun audio disponibil",
+    "Preparing": "Se scanează întâlnirile...",
+    "Resume": "Reluare descărcare",
+    "Retry": "Reîncearcă eșuate",
+    "RetryFailed": "Re-descarcă eșuate",
+    "Skipped": "Omise",
+    "StartDownload": "Începe descărcarea",
+    "Complete": "Descărcare completă",
     "Stats": "Statistici descărcare",
+    "Title": "Descarcă întâlniri",
+    "ToDownload": "De descărcat",
+    "TotalMeetings": "Total întâlniri",
     "ViewDetails": "Vezi detalii"
   },
   "Billing": {
+    "Nudge": {
+      "LiveTranscription": "Activați transcrierea în timp real și analiza AI după întâlnire",
+      "ScreenshotAnalysis": "Activați analiza capturilor de ecran cu AI",
+      "CTA": "Conectați-vă și abonați-vă",
+      "LearnMore": "Aflați mai multe"
+    },
+    "Explainer": {
+      "Title": "Cum funcționează SeaMeet AI",
+      "Subtitle": "BYOK — Aduceți propria cheie",
+      "WhatIsBYOK": "Cu BYOK, înregistrările și datele dvs. merg direct de pe dispozitiv la Google sau Anthropic. Nimic nu trece prin serverele SeaMeet — confidențialitate maximă pentru dvs. și echipa dvs.",
+      "WhatYouNeed": "Ce veți configura după abonare",
+      "GeminiTitle": "Cheie Google AI Studio (Gratuit Limitat)",
+      "GeminiDesc": "Alimentează transcrierea în timp real, rezumatele post-întâlnire și analiza. Google oferă un nivel gratuit generos — majoritatea utilizatorilor nu plătesc niciodată nimic.",
+      "AgentTitle": "Agent AI — alegeți o opțiune (Gratuit Limitat)",
+      "AgentOption1": "GitHub Copilot — 50 de conversații premium gratuite/lună (sau mai multe cu Copilot Pro)",
+      "AgentOption2": "Claude Code CLI — dacă aveți deja Claude Pro sau Max, sunteți acoperit",
+      "AgentOption3": "Cheie API Anthropic — pentru acces direct la API",
+      "Continue": "Continuați pentru abonament",
+      "WhyBYOK": {
+        "Title": "De ce să vă aduceți propria cheie?",
+        "Answer": "Confidențialitate mult mai bună — datele dvs. rămân la companii de încredere precum Google și Anthropic, niciodată la SeaMeet. Nivelurile gratuite de la acești furnizori sunt generoase și vor fi suficiente pentru majoritatea utilizatorilor mult timp."
+      },
+      "WhyMonthly": {
+        "Title": "De ce percepe SeaMeet o taxă lunară?",
+        "Answer": "SeaMeet se actualizează rapid cu funcții AI noi. Abonamentul vă menține pe cea mai recentă versiune. Fără el, ați plăti o licență unică și ați rămâne cu funcții înghețate — ca și cum ați cumpăra Office 2012 și ați rămâne cu Office 2012 pentru totdeauna."
+      }
+    },
+    "Coupon": {
+      "Title": "Promoție de lansare",
+      "SEAMEET100": "SEAMEET100",
+      "SEAMEET100Desc": "Prima lună gratuită — pentru primii 100 de utilizatori",
+      "FallbackDesc": "Dacă SEAMEET100 s-a epuizat, trimiteți un e-mail la coupon@seameet.ai pentru a obține alt cupon (10% reducere pe un an sau alt cod cu prima lună gratuită).",
+      "HowToUse": "Introduceți codul cuponului la plata Stripe."
+    },
+    "PostSetup": {
+      "Title": "Totul este pregătit! Încercați acum.",
+      "Desc": "Înregistrați o întâlnire scurtă sau faceți o captură de ecran pentru a experimenta transcrierea și analiza AI în acțiune.",
+      "TryRecording": "Începeți o înregistrare",
+      "TryScreenshot": "Faceți o captură de ecran",
+      "Later": "Voi încerca mai târziu"
+    },
     "Banner": {
       "CancelPending": "Abonamentul dvs. expiră pe {{date}}. După aceea, transcrierea, rezumatele și funcțiile AI vor înceta să funcționeze.",
       "PastDue": "Plata a eșuat — funcțiile AI au fost dezactivate. Actualizează metoda de plată pentru a le restaura.",
@@ -474,6 +494,7 @@
       "GeminiHelp": "Obtine o cheie gratuita: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
+      "KeySaved": "Key saved (hidden)",
       "GeminiUsage": "Folosit pentru: transcriere, rezumate, transcriere live. Cheile gratuite sunt supuse limitelor si cotelor Gemini. Treci la un plan platit Google AI Studio daca atingi limita.",
       "NotConfigured": "Neconfigurat",
       "SaveContinue": "Salveaza si continua",
@@ -482,9 +503,9 @@
       "SecurityNote": "Cheile sunt stocate local pe dispozitivul tau (criptate in portcheia sistemului de operare). SeaMeet nu trimite niciodata cheile tale pe serverele noastre.",
       "SkipForNow": "Omite deocamdata",
       "Subtitle": "Inca un pas: conecteaza cheile tale API AI.",
+      "TabLabel": "Chei API",
       "Validating": "Se valideaza...",
       "ValidationFailed": "Validarea a esuat",
-      "TabLabel": "Chei API",
       "WizardStep": "Pasul {{current}} din {{total}}",
       "Step1Title": "Conecteaza cheia ta API Gemini",
       "Step1Desc": "Folosit pentru transcriere, rezumate si transcriere live. Obtine o cheie gratuita de la Google AI Studio.",
@@ -494,9 +515,9 @@
       "Step3Desc": "Ambele chei API sunt configurate. Le poti actualiza oricand mai jos.",
       "Next": "Urmatorul",
       "Done": "Gata",
-      "RemoveKey": "Sterge cheia salvata",
       "TestKey": "Testeaza cheia",
       "TestingKey": "Se testeaza...",
+      "RemoveKey": "Sterge cheia salvata",
       "StepCopilotTitle": "Conectare GitHub Copilot (opțional)",
       "StepCopilotDesc": "GitHub Copilot detectat pe sistemul dvs. Alegeți furnizorul de agent preferat.",
       "CopilotStatus": "GitHub Copilot",
@@ -511,6 +532,15 @@
       "CopilotSignupHint": "Doriți să încercați GitHub Copilot ca agent alternativ? Înscrieți-vă la un plan gratuit pe github.com/features/copilot/plans (include 50 de cereri agent/chat pe lună), apoi instalați Copilot CLI și rulați \"copilot login\".",
       "CopilotFlatUsage": "Folosit pentru: agent AI (alternativă la Claude). Nu necesită cheie API — folosește autentificarea GitHub.",
       "Guide": {
+        "Intro": "SeaMeet AI are două zone de funcționalitate independente — configurează ce ai nevoie.",
+        "SectionAiSummary": "Rezumat AI",
+        "SectionAiSummaryBadge": "Necesar",
+        "SectionAiSummarySubtitle": "Obțineți cheia API Gemini (gratuit)",
+        "SectionAiAgent": "Agent AI",
+        "SectionAiAgentBadge": "Cel puțin unul necesar",
+        "OptionCopilotTitle": "GitHub Copilot CLI (gratuit)",
+        "OptionClaudeTitle": "Claude Code CLI (opțional, cu plată)",
+        "Or": "SAU",
         "Step1Title": "Pasul 1 — Citește cu atenție",
         "Step1Need": "Vei avea nevoie de 2 lucruri:",
         "Step1Item1": "Cheie API Gemini — pentru rezumat AI și transcriere live",
@@ -541,15 +571,6 @@
         "Step4AuthDesc": " (necesită planul Claude Pro sau Max)",
         "Step4Refresh": "Apasă reîmprospătare mai jos pentru a detecta Claude Code.",
         "Step4Select": "Apasă Claude Code mai jos pentru a-l seta ca preferat.",
-        "Intro": "SeaMeet AI are două zone de funcționalitate independente — configurează ce ai nevoie.",
-        "SectionAiSummary": "Rezumat AI",
-        "SectionAiSummaryBadge": "Necesar",
-        "SectionAiSummarySubtitle": "Obțineți cheia API Gemini (gratuit)",
-        "SectionAiAgent": "Agent AI",
-        "SectionAiAgentBadge": "Cel puțin unul necesar",
-        "OptionCopilotTitle": "GitHub Copilot CLI (gratuit)",
-        "OptionClaudeTitle": "Claude Code CLI (opțional, cu plată)",
-        "Or": "SAU",
         "StepComplete": {
           "AgentBoth": "Both Claude and Copilot are configured",
           "AgentClaude": "Claude is configured",
@@ -558,21 +579,58 @@
         }
       }
     },
+    "CurrentPlan": "Planul curent",
     "Device": {
       "Close": "Inchide",
       "DaysAgo_one": "acum {{count}} zi",
-      "DaysAgo_few": "acum {{count}} zile",
       "DaysAgo_other": "acum {{count}} de zile",
+      "Error": "Nu s-au putut incarca dispozitivele: {{error}}",
       "LastUsed": "Ultima utilizare {{when}}",
       "LimitDescription": "SeaMeet Pro functioneaza pe maximum 3 dispozitive simultan. Deconecteaza-te de pe un dispozitiv pe care nu il folosesti pentru a elibera un loc.",
       "LimitTitle": "Limita de dispozitive atinsa",
+      "Loading": "Se incarca dispozitivele...",
+      "NoDevices": "No devices registered",
       "SigningOut": "Se deconecteaza...",
       "SignOut": "Deconecteaza-te",
+      "TabLabel": "Dispozitive",
       "Today": "astazi",
       "Yesterday": "ieri",
-      "Error": "Nu s-au putut incarca dispozitivele: {{error}}",
-      "Loading": "Se incarca dispozitivele...",
-      "TabLabel": "Dispozitive"
+      "YourDevices": "Your Devices"
+    },
+    "FAQ": {
+      "Title": "Intrebari frecvente",
+      "Free": {
+        "Q1": "Ce pot face cu planul gratuit?",
+        "A1": "SeaMeet Free este un instrument complet de inregistrare si captura de ecran. Poti inregistra audio, captura video de pe ecran, face capturi de ecran si gestiona toate inregistrarile — complet gratuit, pentru totdeauna.",
+        "Q2": "Datele mele sunt private?",
+        "A2": "Da. Pe planul gratuit, nicio data nu este transmisa nicaieri. Toate inregistrarile, capturile de ecran si fisierele raman 100% locale pe dispozitivul tau. Confidentialitatea ta este pe deplin protejata.",
+        "Q3": "Ce mai pot obtine cu un plan platit?",
+        "A3": "Planurile platite adauga functii AI: transcriere automata, rezumate de intalniri, liste de sarcini, transcriere live in timpul intalnirilor si intrebari AI despre inregistrarile tale."
+      },
+      "BYOK": {
+        "Q1": "Ce este BYOK?",
+        "A1": "BYOK inseamna Bring Your Own Key (adu-ti propria cheie). Ai nevoie de 2 chei API: una de la Google AI Studio (pentru transcriere si rezumate) si una de la Anthropic (pentru intrebari AI si analiza). Google AI Studio ofera de obicei o cheie gratuita. Daca ai abonat planul Claude Pro sau Max, nu ai nevoie de o cheie suplimentara Anthropic API. Un asistent de configurare te va ghida prin conectarea ambelor chei dupa plata.",
+        "Q2": "De ce un abonament lunar?",
+        "A2": "Abonamentul tau finanteaza actualizari continue, suport pentru noi modele AI, corectari de erori si functii noi. Costurile API sunt platite separat catre Google si Anthropic folosind propriile tale chei.",
+        "Q3": "Cum functioneaza licentierea?",
+        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
+      },
+      "Desktop": {
+        "Q1": "Ce este Desktop Pro?",
+        "A1": "Desktop Pro include chei AI integrate gestionate de SeaMeet — nu este nevoie sa creezi sau sa gestionezi propriile chei API. Pur si simplu aboneaza-te si incepe sa folosesti functiile AI imediat.",
+        "Q2": "Cum difera de BYOK?",
+        "A2": "Cu Desktop Pro, SeaMeet furnizeaza si gestioneaza cheile API pentru tine. Nu trebuie sa te inscrii separat la Google AI Studio sau Anthropic.",
+        "Q3": "Cum functioneaza licentierea?",
+        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
+      },
+      "Sync": {
+        "Q1": "Ce este Sync Pro?",
+        "A1": "Sync Pro include tot ce ofera Desktop Pro, plus sincronizare in cloud. Inregistrarile, transcrierile si rezumatele tale sunt sincronizate pe toate dispozitivele tale.",
+        "Q2": "Ce se sincronizeaza?",
+        "A2": "Inregistrarile, transcrierile, rezumatele AI si listele de sarcini sunt toate sincronizate intre dispozitivele tale. Modificarile de pe un dispozitiv apar pe toate celelalte.",
+        "Q3": "Cum functioneaza licentierea?",
+        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
+      }
     },
     "Error": {
       "AlreadySubscribed": "Aveți deja un abonament activ. Utilizați Gestionare abonament pentru a-l vizualiza sau modifica.",
@@ -581,21 +639,32 @@
       "Unknown": "Ceva a mers greșit. Vă rugăm să încercați din nou."
     },
     "FreeNote": "Plan gratuit: doar inregistrare, fara functii AI, fara autentificare. Poti inregistra oricand fara abonament.",
+    "ComingSoon": "Coming soon",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
+        "Price": "$7.99/month",
+        "Feature1": "AI transcription & summaries",
+        "Feature2": "Use your own Gemini & Claude API keys",
+        "Feature3": "Live transcription during meetings",
+        "Feature4": "AI-powered meeting questions & analysis",
         "InfoNote": "Vei avea nevoie de 2 configurări: Google AI Studio (gratuit) și GitHub (gratuit) sau Anthropic (cu plată). Un asistent te va ghida după plată:",
         "ConfirmTitle": "Inainte de abonare",
         "ConfirmContinue": "Continua catre plata",
         "ConfirmSignIn": "Autentifica-te mai intai, apoi plateste",
         "ConfirmCancel": "Anuleaza",
         "ConfirmCopyCheckout": "Copiază codul și plătește",
-        "InfoNote.Claude": "Dacă ai abonament Claude Pro sau Max, nu ai nevoie de o cheie API Anthropic suplimentară.",
+        "InfoNote.Claude": "Dacă aveți un abonament Claude Pro sau Max, nu aveți nevoie de o cheie API Anthropic suplimentară.",
         "InfoNote.Copilot": "GitHub Copilot are și un plan gratuit.",
-        "InfoNote.Gemini": "Google AI Studio îți oferă de obicei o cheie gratuită."
+        "InfoNote.Gemini": "Google AI Studio de obicei vă oferă o cheie gratuită."
       },
       "Desktop": {
-        "Name": "Desktop Pro"
+        "Name": "Desktop Pro",
+        "Price": "$15.99/month",
+        "Feature1": "Everything in BYOK Pro",
+        "Feature2": "Built-in AI — no API keys needed",
+        "Feature3": "Priority support",
+        "Feature4": "Advanced analytics"
       },
       "Free": {
         "Name": "Free",
@@ -606,7 +675,12 @@
         "Feature4": "Mereu disponibil"
       },
       "Sync": {
-        "Name": "Sync Pro"
+        "Name": "Sync Pro",
+        "Price": "$25.99/month",
+        "Feature1": "Everything in Desktop Pro",
+        "Feature2": "Cloud sync across devices",
+        "Feature3": "Team collaboration features",
+        "Feature4": "Shared meeting library"
       }
     },
     "Privacy": {
@@ -674,130 +748,30 @@
     "PromoHint": "Ai un cod promotional? Introdu-l la plata.",
     "Status": {
       "Active": "Activ",
-      "CancelNotice": "Abonamentul se termina pe {{date}}",
-      "CancelPendingNotice": "Abonamentul dvs. va expira pe {{date}}. Funcțiile AI vor rămâne disponibile până atunci.",
       "Canceled": "Anulat",
       "Canceling": "Se anulează",
+      "CancelNotice": "Abonamentul se termina pe {{date}}",
+      "CancelPendingNotice": "Abonamentul dvs. va expira pe {{date}}. Funcțiile AI vor rămâne disponibile până atunci.",
       "EndsOn": "Expiră {{date}}",
+      "DevOverride": "(Dev Override)",
       "Loading": "Se incarca...",
       "Manage": "Gestioneaza abonamentul",
       "None": "Fara abonament",
       "PastDue": "Restant",
       "Plan": "Plan",
       "Reactivate": "Reactivează",
+      "SignIn": "Sign in to manage subscription",
       "Trial": "Perioada de proba"
     },
+    "SignInToSubscribe": "Autentifica-te pentru a te abona:",
     "Subscribe": "Aboneaza-te",
     "Subscribing": "Se proceseaza abonamentul...",
     "UnlockTitle": "Deblocheaza functiile AI SeaMeet",
-    "SignInToSubscribe": "Autentifica-te pentru a te abona:",
-    "CurrentPlan": "Planul curent",
-    "FAQ": {
-      "Title": "Intrebari frecvente",
-      "BYOK": {
-        "Q1": "Ce este BYOK?",
-        "A1": "BYOK inseamna Bring Your Own Key (adu-ti propria cheie). Ai nevoie de 2 chei API: una de la Google AI Studio (pentru transcriere si rezumate) si una de la Anthropic (pentru intrebari AI si analiza). Google AI Studio ofera de obicei o cheie gratuita. Daca ai abonat planul Claude Pro sau Max, nu ai nevoie de o cheie suplimentara Anthropic API. Un asistent de configurare te va ghida prin conectarea ambelor chei dupa plata.",
-        "Q2": "De ce un abonament lunar?",
-        "A2": "Abonamentul tau finanteaza actualizari continue, suport pentru noi modele AI, corectari de erori si functii noi. Costurile API sunt platite separat catre Google si Anthropic folosind propriile tale chei.",
-        "Q3": "Cum functioneaza licentierea?",
-        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
-      },
-      "Desktop": {
-        "Q1": "Ce este Desktop Pro?",
-        "A1": "Desktop Pro include chei AI integrate gestionate de SeaMeet — nu este nevoie sa creezi sau sa gestionezi propriile chei API. Pur si simplu aboneaza-te si incepe sa folosesti functiile AI imediat.",
-        "Q2": "Cum difera de BYOK?",
-        "A2": "Cu Desktop Pro, SeaMeet furnizeaza si gestioneaza cheile API pentru tine. Nu trebuie sa te inscrii separat la Google AI Studio sau Anthropic.",
-        "Q3": "Cum functioneaza licentierea?",
-        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
-      },
-      "Sync": {
-        "Q1": "Ce este Sync Pro?",
-        "A1": "Sync Pro include tot ce ofera Desktop Pro, plus sincronizare in cloud. Inregistrarile, transcrierile si rezumatele tale sunt sincronizate pe toate dispozitivele tale.",
-        "Q2": "Ce se sincronizeaza?",
-        "A2": "Inregistrarile, transcrierile, rezumatele AI si listele de sarcini sunt toate sincronizate intre dispozitivele tale. Modificarile de pe un dispozitiv apar pe toate celelalte.",
-        "Q3": "Cum functioneaza licentierea?",
-        "A3": "1 cont, pana la 3 dispozitive. Dispozitivele inactive sunt eliberate automat dupa 30 de zile. Poti de asemenea sa te deconectezi manual de pe un dispozitiv pentru a elibera un loc."
-      },
-      "Free": {
-        "Q1": "Ce pot face cu planul gratuit?",
-        "A1": "SeaMeet Free este un instrument complet de inregistrare si captura de ecran. Poti inregistra audio, captura video de pe ecran, face capturi de ecran si gestiona toate inregistrarile — complet gratuit, pentru totdeauna.",
-        "Q2": "Datele mele sunt private?",
-        "A2": "Da. Pe planul gratuit, nicio data nu este transmisa nicaieri. Toate inregistrarile, capturile de ecran si fisierele raman 100% locale pe dispozitivul tau. Confidentialitatea ta este pe deplin protejata.",
-        "Q3": "Ce mai pot obtine cu un plan platit?",
-        "A3": "Planurile platite adauga functii AI: transcriere automata, rezumate de intalniri, liste de sarcini, transcriere live in timpul intalnirilor si intrebari AI despre inregistrarile tale."
-      }
-    },
-    "Nudge": {
-      "LiveTranscription": "Activați transcrierea în timp real și analiza AI după întâlnire",
-      "ScreenshotAnalysis": "Activați analiza capturilor de ecran cu AI",
-      "CTA": "Conectați-vă și abonați-vă",
-      "LearnMore": "Aflați mai multe"
-    },
-    "Explainer": {
-      "Title": "Cum funcționează SeaMeet AI",
-      "Subtitle": "BYOK — Aduceți propria cheie",
-      "WhatIsBYOK": "Cu BYOK, înregistrările și datele dvs. merg direct de pe dispozitiv la Google sau Anthropic. Nimic nu trece prin serverele SeaMeet — confidențialitate maximă pentru dvs. și echipa dvs.",
-      "WhatYouNeed": "Ce veți configura după abonare",
-      "GeminiTitle": "Cheie Google AI Studio (Gratuit Limitat)",
-      "GeminiDesc": "Alimentează transcrierea în timp real, rezumatele post-întâlnire și analiza. Google oferă un nivel gratuit generos — majoritatea utilizatorilor nu plătesc niciodată nimic.",
-      "AgentTitle": "Agent AI — alegeți o opțiune (Gratuit Limitat)",
-      "AgentOption1": "GitHub Copilot — 50 de conversații premium gratuite/lună (sau mai multe cu Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — dacă aveți deja Claude Pro sau Max, sunteți acoperit",
-      "AgentOption3": "Cheie API Anthropic — pentru acces direct la API",
-      "Continue": "Continuați pentru abonament",
-      "WhyBYOK": {
-        "Title": "De ce să vă aduceți propria cheie?",
-        "Answer": "Confidențialitate mult mai bună — datele dvs. rămân la companii de încredere precum Google și Anthropic, niciodată la SeaMeet. Nivelurile gratuite de la acești furnizori sunt generoase și vor fi suficiente pentru majoritatea utilizatorilor mult timp."
-      },
-      "WhyMonthly": {
-        "Title": "De ce percepe SeaMeet o taxă lunară?",
-        "Answer": "SeaMeet se actualizează rapid cu funcții AI noi. Abonamentul vă menține pe cea mai recentă versiune. Fără el, ați plăti o licență unică și ați rămâne cu funcții înghețate — ca și cum ați cumpăra Office 2012 și ați rămâne cu Office 2012 pentru totdeauna."
-      }
-    },
-    "Coupon": {
-      "Title": "Promoție de lansare",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Prima lună gratuită — pentru primii 100 de utilizatori",
-      "FallbackDesc": "Dacă SEAMEET100 s-a epuizat, trimiteți un e-mail la coupon@seameet.ai pentru a obține alt cupon (10% reducere pe un an sau alt cod cu prima lună gratuită).",
-      "HowToUse": "Introduceți codul cuponului la plata Stripe."
-    },
-    "PostSetup": {
-      "Title": "Totul este pregătit! Încercați acum.",
-      "Desc": "Înregistrați o întâlnire scurtă sau faceți o captură de ecran pentru a experimenta transcrierea și analiza AI în acțiune.",
-      "TryRecording": "Începeți o înregistrare",
-      "TryScreenshot": "Faceți o captură de ecran",
-      "Later": "Voi încerca mai târziu"
-    },
     "Setup": {
       "Done": "Am terminat configurarea",
       "Later": "Voi face asta mai târziu"
     }
   },
-  "Billing.BYOK.KeySaved": "Cheie salvata (ascunsa)",
-  "Billing.ComingSoon": "In curand",
-  "Billing.Device.NoDevices": "Niciun dispozitiv inregistrat",
-  "Billing.Device.TabLabel": "Dispozitive",
-  "Billing.Device.YourDevices": "Dispozitivele tale",
-  "Billing.Error.NoApiUrl": "Serviciul de facturare nu este configurat. Contacteaza suportul.",
-  "Billing.Error.NotAuthenticated": "Autentifica-te mai intai pentru a te abona. Foloseste meniul contului pentru autentificare.",
-  "Billing.Error.Unknown": "Ceva nu a functionat corect. Incearca din nou.",
-  "Billing.Plans.BYOK.Feature1": "Transcriere si rezumate AI",
-  "Billing.Plans.BYOK.Feature2": "Foloseste propriile tale chei API Gemini si Claude",
-  "Billing.Plans.BYOK.Feature3": "Transcriere live in timpul intalnirilor",
-  "Billing.Plans.BYOK.Feature4": "Intrebari si analiza AI a intalnirilor",
-  "Billing.Plans.BYOK.Price": "$7.99/month",
-  "Billing.Plans.Desktop.Feature1": "Tot ce include BYOK Pro",
-  "Billing.Plans.Desktop.Feature2": "AI integrat — fara chei API necesare",
-  "Billing.Plans.Desktop.Feature3": "Suport prioritar",
-  "Billing.Plans.Desktop.Feature4": "Analitica avansata",
-  "Billing.Plans.Desktop.Price": "$15.99/month",
-  "Billing.Plans.Sync.Feature1": "Tot ce include Desktop Pro",
-  "Billing.Plans.Sync.Feature2": "Sincronizare in cloud intre dispozitive",
-  "Billing.Plans.Sync.Feature3": "Functii de colaborare in echipa",
-  "Billing.Plans.Sync.Feature4": "Biblioteca partajata de intalniri",
-  "Billing.Plans.Sync.Price": "$25.99/month",
-  "Billing.Status.DevOverride": "(Dev Override)",
-  "Billing.Status.SignIn": "Autentifica-te pentru a gestiona abonamentul",
   "BlackHole": {
     "Cancel": "Anulare",
     "CheckAgain": "Reverifică dispozitivele",
@@ -828,6 +802,7 @@
   },
   "Common": {
     "ApplyName": "Aplică numele",
+    "Back": "Înapoi",
     "Cancel": "Anulare",
     "Close": "Închide",
     "Configure": "Configurează",
@@ -848,7 +823,6 @@
     "Send": "Trimite",
     "Starting": "Se inițiază...",
     "UnknownApp": "Aplicație necunoscută",
-    "Back": "Înapoi",
     "Copied": "Copiat!",
     "Copy": "Copiază"
   },
@@ -1098,8 +1072,11 @@
     "CloseTooltip": "Închide tooltip-ul",
     "FailedToLoadScreens": "Eșuat la încărcarea ecranelor. Vă rugăm să încercați din nou.",
     "FailedToLoadWindows": "Nu s-au putut încărca ferestrele. Vă rugăm să încercați din nou.",
+    "MicMuted": "Mic Muted",
+    "Microphone": "Microphone",
     "MicrophoneMuted": "Microfon: Muted",
     "MicrophoneSettings": "Setări microfon",
+    "MuteMicrophone": "Mute Microphone",
     "MuteNoMicrophone": "Mut (fără microfon)",
     "NoMicrophonesFound": "Niciun microfon detectat",
     "NoScreensDetected": "Niciun ecran detectat.",
@@ -1117,10 +1094,7 @@
     "SystemAudioOn": "Audio Sistem: ACTIVAT",
     "WaitingForRegion": "Se așteaptă regiunea…",
     "WindowNotAvailable": "Selecția ferestrei nu este disponibilă pe această platformă.",
-    "WindowRequired": "Selectați o fereastră înainte de înregistrare",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
-    "MuteMicrophone": "Mute Microphone"
+    "WindowRequired": "Selectați o fereastră înainte de înregistrare"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Atingeți Start înregistrare în bara flotantă pentru a începe înregistrarea regiunii selectate",
@@ -1129,17 +1103,19 @@
   "GeminiLive": {
     "AITranscription": "Transcriere AI",
     "CollapseNowSpeaking": "Colaps",
+    "SubscribeForTranscription": "Abonați-vă pentru a activa transcrierea AI în timp real în timpul înregistrărilor.",
     "EnableDescription": "Transcriere în timp real alimentată de Gemini în timpul înregistrării",
     "EnableIntegration": "Activați Transcrierea Live AI",
     "Error": "Eroare",
     "ExpandNowSpeaking": "Extinde",
     "NowSpeaking": "Acum vorbind...",
     "SegmentCount_one": "{{count}} segmente",
-    "SegmentCount_few": "",
     "SegmentCount_other": "{{count}} segmente",
     "WaitingForConnection": "Se conectează...",
-    "WaitingForSpeech": "În așteptarea discursului...",
-    "SubscribeForTranscription": "Abonați-vă pentru a activa transcrierea AI în timp real în timpul înregistrărilor."
+    "WaitingForSpeech": "În așteptarea discursului..."
+  },
+  "GeminiTranscription": {
+    "Title": "Live Transcription"
   },
   "IdleCompactView": {
     "ArmFlashback": "Pregătește Flashback-ul",
@@ -1179,7 +1155,6 @@
     "Retry": "Reîncearcă",
     "SeekToTime": "Click pentru a reda de la acest moment",
     "SegmentCount_one": "{{count}} segmente",
-    "SegmentCount_few": "",
     "SegmentCount_other": "{{count}} segmente",
     "SignInRequired": "Autentificare necesară",
     "Summary": "Rezumat",
@@ -1206,6 +1181,20 @@
     "WsConnected": "WebSocket conectat",
     "WsDisconnected": "WebSocket deconectat"
   },
+  "MeetingsTab": {
+    "Download": "Descarcă",
+    "DownloadAudio": "Descarcă audio",
+    "DownloadBoth": "Descarcă ambele",
+    "DownloadTxt": "Descarcă .txt",
+    "Empty": "Nu s-au găsit întâlniri",
+    "Error": "Eroare la încărcarea întâlnirilor",
+    "Loading": "Se încarcă întâlnirile...",
+    "Retry": "Reîncearcă",
+    "SelectWorkspace": "Selectați un spațiu de lucru din meniul utilizatorului pentru a vedea întâlnirile.",
+    "Title": "Întâlniri",
+    "Total": "total",
+    "Untitled": "Întâlnire fără titlu"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Sfaturi: Pentru întâlniri în browser (Google Meet, Zoom, Teams), pot detecta doar browserul, nu site-ul specific.",
     "ContinueRecording": "Continuă înregistrarea",
@@ -1224,20 +1213,6 @@
     "StopRecording": "Oprește înregistrarea",
     "Yes": "Începe înregistrarea"
   },
-  "MeetingsTab": {
-    "Download": "Descarcă",
-    "DownloadAudio": "Descarcă audio",
-    "DownloadBoth": "Descarcă ambele",
-    "DownloadTxt": "Descarcă .txt",
-    "Empty": "Nu s-au găsit întâlniri",
-    "Error": "Eroare la încărcarea întâlnirilor",
-    "Loading": "Se încarcă întâlnirile...",
-    "Retry": "Reîncearcă",
-    "SelectWorkspace": "Selectați un spațiu de lucru din meniul utilizatorului pentru a vedea întâlnirile.",
-    "Title": "Întâlniri",
-    "Total": "total",
-    "Untitled": "Întâlnire fără titlu"
-  },
   "MinimizedView": {
     "ActionRequired": "Acțiune necesară (Auto-Record)",
     "AudioFlashbackCharged": "Retrogradă audio încărcată ({{duration}}s)",
@@ -1247,6 +1222,18 @@
     "ScreenFlashbackCharged": "Retrogradă ecran încărcată ({{duration}}s)",
     "ScreenFlashbackCharging": "Încărcare retrogradă ecran...",
     "ScreenRecording": "Înregistrare ecran ({{time}})"
+  },
+  "OCRAutoCopy": {
+    "Copied": "Textul extras a fost copiat în clipboard",
+    "Error": "Nu s-a putut extrage textul",
+    "Extracting": "Se extrage textul din captură de ecran…",
+    "Here": "aici",
+    "Label": "Extrage text (OCR) și copiază în clipboard",
+    "LabelDisabled": "Extrage text (OCR) și copiază în clipboard (cheie API necesară, abonează-te",
+    "LabelDisabledShort": "Extrage text (OCR) — cheie API necesară",
+    "NoText": "Nu s-a putut extrage niciun text din captura de ecran",
+    "SettingsDesc": "Rulează OCR după fiecare captură de ecran și copiază textul extras în clipboard",
+    "SettingsLabel": "Extrage text automat (OCR) la captură de ecran"
   },
   "Pause": "Pauză",
   "Permissions": {
@@ -1304,9 +1291,16 @@
     "CodecInfo": "Informații codec",
     "MoreOptions": "Mai multe opțiuni"
   },
+  "Recording": {
+    "Paused": "Paused",
+    "Preparing": "Preparing",
+    "PreparingToRecord": "Preparing to record..."
+  },
   "RecordingControls": {
     "AudioRecording": "Înregistrare audio",
     "ContinueRecording": "Continuare înregistrare",
+    "MarkEvent": "Mark Event",
+    "MarkedEvents": "Marked Events",
     "RecordingAudio": "Înregistrare audio",
     "RecordingMode": "Mod de înregistrare",
     "RecordingPreview": "Previzualizare înregistrare",
@@ -1314,9 +1308,7 @@
     "StartRecording": "Începe înregistrarea",
     "Stop": "Oprire",
     "StopRecording": "Oprire înregistrare",
-    "VideoRecording": "Înregistrare video",
-    "MarkedEvents": "Marked Events",
-    "MarkEvent": "Mark Event"
+    "VideoRecording": "Înregistrare video"
   },
   "RecordingModes": {
     "AreaCapture": "Captură zonă",
@@ -1344,7 +1336,6 @@
     "OpenSaveFolder": "Afișează în folder",
     "RecentCaptures": "Capturi recente",
     "Recovered_one": "{{count}} înregistrare recuperată",
-    "Recovered_few": "",
     "Recovered_other": "{{count}} înregistrări recuperate",
     "RefreshRecordings": "Actualizează",
     "SaveAs": "Salvează ca...",
@@ -1382,6 +1373,8 @@
   },
   "ScreenshotProcessing": {
     "Analysis": "Analiză",
+    "ConfigureApiKey": "Configurați cheia API Gemini pentru a procesa imagini cu AI.",
+    "SubscribeToDescribe": "Abonați-vă pentru a activa analiza capturilor de ecran cu AI.",
     "ButtonLabel": "Procesați cu AI",
     "ErrorCodes": {
       "AUTH_ERROR": "Cheie API nevalidă. Vă rugăm să vă verificați cheia API în Setări.",
@@ -1398,6 +1391,9 @@
     "DescribeSub": "Ce este în această captură de ecran?",
     "Description": "Descriere",
     "ExtractedText": "Text extras",
+    "NoCustom": "Ask anything about this image.",
+    "NoDescription": "No description yet.",
+    "NoOcr": "No extracted text yet.",
     "Ocr": "Extrage text (OCR)",
     "OcrSub": "Citiți tot textul vizibil",
     "PipelineError": "Procesarea AI a eșuat. Vă rugăm să încercați din nou.",
@@ -1405,17 +1401,12 @@
     "Queuing": "În coadă...",
     "ResultLabel": "Rezultat AI",
     "SetupRequired": "Conectați-vă cu un abonament sau BYOK pentru a procesa imaginea.",
-    "UnknownError": "Eroare necunoscută",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
     "Tab": {
       "Custom": "Custom Prompt",
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "SubscribeToDescribe": "Abonați-vă pentru a activa analiza capturilor de ecran cu AI.",
-    "ConfigureApiKey": "Configurați cheia API Gemini pentru a procesa imagini cu AI."
+    "UnknownError": "Eroare necunoscută"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copiat!",
@@ -1658,19 +1649,24 @@
   "UpdateToast": {
     "Available": "Este disponibilă o actualizare: SeaMeet {{version}}",
     "Dismiss": "Închide",
+    "DownloadFailed": "Actualizarea automată a eșuat pentru SeaMeet {{version}}",
     "Downloading": "Se descarcă SeaMeet {{version}} ({{percent}}%)",
     "Hide": "Ascunde",
+    "Install": "Instalează",
+    "Later": "Mai târziu",
+    "ManualDownload": "Descarcă manual",
     "ReadyToInstall": "SeaMeet {{version}} este gata pentru instalare",
     "RestartNow": "Repornește acum",
     "ViewRelease": "Vezi nota de lansare",
     "ViewReleaseTitle": "Vezi Notițele despre versiune pe GitHub",
     "WhatsNew": "Noutăți:",
     "WhatsNewInVersion": "Noutăți în {{version}}?",
-    "DownloadFailed": "Actualizarea automată a eșuat pentru SeaMeet {{version}}",
-    "ManualDownload": "Descarcă manual",
-    "Install": "Instalează",
-    "Later": "Mai târziu",
     "Restarting": "Se repornește..."
+  },
+  "PostUpdateModal": {
+    "Title": "Actualizat la v{{version}}",
+    "Description": "SeaMeet a fost actualizat cu succes. Ce este nou:",
+    "GotIt": "Am înțeles"
   },
   "UserMenu": {
     "AboutSeaMeet": "Despre SeaMeet",
@@ -1700,15 +1696,15 @@
       "WikiDesc": "Consultați wiki-ul SeaMeet pentru documentație și ghiduri."
     },
     "KeyboardShortcuts": "Scurtături de la tastatură",
+    "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet: Autentificat",
     "SeaMeetSignedOut": "SeaMeet: Deconectat",
-    "SignIn": "Conectare",
-    "SignOut": "Ieșire",
-    "AccountSignedIn": "Signed in",
-    "RefreshWorkspaces": "Actualizează spațiile de lucru",
     "SeaMeetSignIn": "SeaMeet Sign In",
     "SeaMeetSignOut": "SeaMeet Sign Out",
-    "Workspaces": "Spații de lucru"
+    "SignIn": "Conectare",
+    "SignOut": "Ieșire",
+    "Workspaces": "Spații de lucru",
+    "RefreshWorkspaces": "Actualizează spațiile de lucru"
   },
   "VideoSettings": {
     "AudioSettings": "Setări audio",
@@ -1770,24 +1766,5 @@
     "Refreshing": "Se reîmprospătează…",
     "Title": "Selectează o fereastră",
     "Unknown": "Fereastră fără titlu"
-  },
-  "AI": {
-    "SubscribeMsg": "Necesită un abonament BYOK Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
-  },
-  "AgentSection": {
-    "ConfigureApiKey": "Configurați cheile API pentru a utiliza Agentul AI."
-  },
-  "GeminiTranscription": {
-    "Title": "Live Transcription"
-  },
-  "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
-  },
-  "PostUpdateModal": {
-    "Title": "Actualizat la v{{version}}",
-    "Description": "SeaMeet a fost actualizat cu succes. Ce este nou:",
-    "GotIt": "Am înțeles"
   }
 }
