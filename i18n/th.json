@@ -16,18 +16,18 @@
     "SubscribeMsg": "ต้องมีการสมัครสมาชิก BYOK Pro สมัครสมาชิกเพื่อรับการถอดเสียงสด สรุปการประชุม AI และเอเจนต์ AI แบบโต้ตอบ"
   },
   "AIFeatures": {
-    "ApiKeyLabel": "คีย์ API ของราศีเมถุน",
-    "ApiKeySection": "คีย์ API ของราศีเมถุน",
+    "ApiKeyLabel": "Gemini API Key",
+    "ApiKeySection": "Gemini API Key",
     "AutomationSection": "ระบบอัตโนมัติ",
     "AutoSummary": "สรุปสร้างอัตโนมัติ",
     "AutoSummaryDesc": "ทำงานหลังจากการบันทึกทุกครั้งเสร็จสิ้น",
     "ClaudeKey": {
       "ClearKey": "ลบคีย์ที่บันทึกไว้",
       "CliInstalled": "ติดตั้งแล้ว ({{version}})",
-      "CliInstallLink": "ติดตั้งรหัสคลอดด์ →",
+      "CliInstallLink": "Install Claude Code →",
       "CliNotFound": "ไม่พบ CLI",
       "CliNotInstalled": "ไม่พบ Claude CLI — กรุณาติดตั้งและเข้าสู่ระบบเพื่อยืนยันตัวตน:",
-      "CliSection": "คล็อดรหัส CLI",
+      "CliSection": "Claude Code CLI",
       "DefaultModel": "โมเดลเริ่มต้น",
       "GetKeyLink": "รับคีย์ API จาก Anthropic Console →",
       "HideKey": "ซ่อนกุญแจ",
@@ -54,7 +54,7 @@
       "Section": "คีย์ Claude API (ตัวแทน)",
       "ShowKey": "แสดงกุญแจ",
       "SourceByok": "รหัส API ของคุณ (BYOK)",
-      "SourceCli": "คล็อดรหัส CLI",
+      "SourceCli": "Claude Code CLI",
       "SourceKeyServer": "บริหารงานโดยซีมีท",
       "SourceLabel": "แหล่งที่มาที่ใช้งานอยู่:",
       "SourceNone": "ไม่ได้กำหนดค่า",
@@ -89,14 +89,14 @@
     "KeyInvalid": "รหัสไม่ถูกต้อง",
     "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "ไม่มีการกำหนดค่าคีย์",
-    "KeyPlaceholder": "ไอซ่าซี่...",
+    "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (บันทึกแล้ว)",
     "KeyTesting": "กำลังทดสอบ...",
     "KeyVerified": "คีย์ได้รับการตรวจสอบแล้ว",
     "ManagedKeyDesc": "คีย์ API ของคุณได้รับการจัดเตรียมโดยอัตโนมัติ ไม่จำเป็นต้องกำหนดค่า",
     "ManagedKeyStatus": "รหัสที่ได้รับการจัดการ — จัดทำโดย SeaMeet",
     "MenuItem": "บทสรุปที่ขับเคลื่อนโดย AI",
-    "ModelLabel": "โมเดลราศีเมถุน",
+    "ModelLabel": "Gemini Model",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -133,6 +133,7 @@
     "EnableRequired": "เปิดใช้งานคุณสมบัติ AI ในการตั้งค่า → คุณสมบัติ AI เพื่อดูสรุป AI",
     "ErrorCodes": {
       "AUTH_ERROR": "คีย์ API ไม่ถูกต้อง โปรดตรวจสอบคีย์ API ของคุณในการตั้งค่า",
+      "NO_API_KEY": "ยังไม่ได้กำหนดค่า Gemini API key กรุณาเพิ่ม API key ในการตั้งค่า",
       "RATE_LIMIT": "เกินขีดจำกัดอัตรา API กรุณารอสักครู่.",
       "BAD_REQUEST": "API ปฏิเสธคำขอ โปรดตรวจสอบคีย์ API หรืออินพุตของคุณ",
       "SERVER_ERROR": "เซิร์ฟเวอร์ AI พบข้อผิดพลาด",
@@ -235,9 +236,9 @@
       "Plan": "วางแผน"
     },
     "Model": {
-      "Haiku": "ไฮกุ",
-      "Opus": "บทประพันธ์",
-      "Sonnet": "โคลง"
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Sonnet"
     },
     "NewSession": "เซสชันใหม่",
     "SwitchProvider": "เปลี่ยนผู้ให้บริการ",
@@ -807,6 +808,7 @@
     "Close": "ปิด",
     "Configure": "การกำหนดค่า",
     "Delete": "ลบ",
+    "Dismiss": "Dismiss",
     "Done": "เสร็จสิ้น",
     "Expand": "ขยาย",
     "FileNameCopiedWithRenameHint": "{{fileName}} คัดลอกไปยังคลิปบอร์ดแล้ว กรุณาดับเบิลคลิกเพื่อเปลี่ยนชื่อไฟล์",
@@ -1347,7 +1349,20 @@
     "ConfirmButton": "ยืนยันการเลือก",
     "Monitor": "มอนิเตอร์",
     "PrimaryMonitor": "มอนิเตอร์หลัก",
-    "StartRecording": "Start Recording"
+    "StartRecording": "Start Recording",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "ประวัติย่อ",
   "RingMenu": {
@@ -1378,6 +1393,7 @@
     "ButtonLabel": "ประมวลผลด้วยเอไอ",
     "ErrorCodes": {
       "AUTH_ERROR": "คีย์ API ไม่ถูกต้อง โปรดตรวจสอบคีย์ API ของคุณในการตั้งค่า",
+      "NO_API_KEY": "ยังไม่ได้กำหนดค่า Gemini API key กรุณาเพิ่ม API key ในการตั้งค่า",
       "RATE_LIMIT": "เกินขีดจำกัดอัตรา API กรุณารอสักครู่.",
       "BAD_REQUEST": "API ปฏิเสธคำขอ โปรดตรวจสอบคีย์ API หรืออินพุตของคุณ",
       "SERVER_ERROR": "เซิร์ฟเวอร์ AI พบข้อผิดพลาด",
@@ -1402,9 +1418,9 @@
     "ResultLabel": "ผลลัพธ์เอไอ",
     "SetupRequired": "ลงชื่อเข้าใช้ด้วยการสมัครสมาชิกหรือ BYOK เพื่อประมวลผลภาพ",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "พรอมต์กำหนดเอง",
+      "Description": "คำอธิบาย",
+      "OCR": "ข้อความ (OCR)"
     },
     "UnknownError": "ข้อผิดพลาดที่ไม่รู้จัก"
   },
@@ -1667,6 +1683,14 @@
     "Title": "อัปเดตเป็น v{{version}} แล้ว",
     "Description": "SeaMeet อัปเดตเรียบร้อยแล้ว มีอะไรใหม่:",
     "GotIt": "เข้าใจแล้ว"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "การถอดเสียงสดและการโต้ตอบกับ AI พร้อมให้บริการเมื่อสมัครสมาชิก",
+    "PostMeetingAI": "AI หลังการประชุม",
+    "PostMeetingAIDesc": "สรุป รายการดำเนินการ และข้อมูลเชิงลึกจะถูกสร้างหลังจากการบันทึกเสร็จสิ้น",
+    "UnlockPremium": "ปลดล็อกด้วย Premium",
+    "Upgrade": "อัปเกรด"
   },
   "UserMenu": {
     "AboutSeaMeet": "เกี่ยวกับ SeaMeet",

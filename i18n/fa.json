@@ -27,7 +27,7 @@
       "CliInstallLink": "Claude Code → را نصب کنید",
       "CliNotFound": "CLI یافت نشد",
       "CliNotInstalled": "Claude CLI یافت نشد — آن را نصب کنید و برای احراز هویت وارد شوید:",
-      "CliSection": "کد کلود CLI",
+      "CliSection": "Claude Code CLI",
       "DefaultModel": "مدل پیش‌فرض",
       "GetKeyLink": "یک کلید API از Anthropic Console دریافت کنید",
       "HideKey": "پنهان کردن کلید",
@@ -42,7 +42,7 @@
       "ModelHaikuSub": "سریع و ارزان",
       "ModelOpus": "Claude Opus 4.6",
       "ModelOpusSub": "تواناترین",
-      "ModelSection": "مدل کلود پیش فرض",
+      "ModelSection": "Default Claude Model",
       "ModelSonnet": "Claude Sonnet 4.6",
       "ModelSonnetSub": "توصیه شده · متعادل",
       "QuotaLoading": "در حال بارگیری سهمیه...",
@@ -82,7 +82,7 @@
     "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
     "EnableToggleDesc": "به یک کلید Gemini API رایگان نیاز دارد",
     "DefaultModel": "مدل پیش فرض",
-    "GeminiSection": "جوزا",
+    "GeminiSection": "Gemini",
     "GetKeyLink": "یک کلید API رایگان از Google AI Studio → دریافت کنید",
     "GroupTitle": "ویژگی های هوش مصنوعی",
     "HideKey": "پنهان کردن کلید",
@@ -133,6 +133,7 @@
     "EnableRequired": "برای مشاهده خلاصه‌های هوش مصنوعی، ویژگی‌های AI را در تنظیمات → ویژگی‌های هوش مصنوعی فعال کنید.",
     "ErrorCodes": {
       "AUTH_ERROR": "کلید API نامعتبر است. لطفاً کلید API خود را در تنظیمات بررسی کنید.",
+      "NO_API_KEY": "کلید API Gemini پیکربندی نشده است. لطفاً کلید API خود را در تنظیمات اضافه کنید.",
       "RATE_LIMIT": "از حد مجاز نرخ API فراتر رفت. لطفا یک لحظه صبر کنید.",
       "BAD_REQUEST": "API این درخواست را رد کرد. لطفاً کلید یا ورودی API خود را بررسی کنید.",
       "SERVER_ERROR": "سرور هوش مصنوعی با خطا مواجه شد.",
@@ -807,6 +808,7 @@
     "Close": "بستن",
     "Configure": "تنظیمات",
     "Delete": "حذف",
+    "Dismiss": "Dismiss",
     "Done": "تمام شد",
     "Expand": "نمایش بیشتر",
     "FileNameCopiedWithRenameHint": "{{fileName}} به کلیپ‌بورد کپی شد. برای تغییر نام، دوباره کلیک کنید.",
@@ -1347,7 +1349,20 @@
     "ConfirmButton": "تایید انتخاب",
     "Monitor": "مانیتور",
     "PrimaryMonitor": "مانیتور اولیه",
-    "StartRecording": "شروع به ضبط کنید"
+    "StartRecording": "شروع به ضبط کنید",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "رزومه",
   "RingMenu": {
@@ -1378,6 +1393,7 @@
     "ButtonLabel": "پردازش با هوش مصنوعی",
     "ErrorCodes": {
       "AUTH_ERROR": "کلید API نامعتبر است. لطفاً کلید API خود را در تنظیمات بررسی کنید.",
+      "NO_API_KEY": "کلید API Gemini پیکربندی نشده است. لطفاً کلید API خود را در تنظیمات اضافه کنید.",
       "RATE_LIMIT": "از حد مجاز نرخ API فراتر رفت. لطفا یک لحظه صبر کنید.",
       "BAD_REQUEST": "API این درخواست را رد کرد. لطفاً کلید یا ورودی API خود را بررسی کنید.",
       "SERVER_ERROR": "سرور هوش مصنوعی با خطا مواجه شد.",
@@ -1402,7 +1418,7 @@
     "ResultLabel": "نتیجه هوش مصنوعی",
     "SetupRequired": "برای پردازش تصویر با یک اشتراک یا BYOK وارد شوید.",
     "Tab": {
-      "Custom": "درخواست سفارشی",
+      "Custom": "دستور سفارشی",
       "Description": "توضیحات",
       "OCR": "متن (OCR)"
     },
@@ -1667,6 +1683,14 @@
     "Title": "به‌روزرسانی به v{{version}}",
     "Description": "SeaMeet با موفقیت به‌روزرسانی شد. تغییرات جدید:",
     "GotIt": "متوجه شدم"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "رونویسی زنده و تعامل با هوش مصنوعی با اشتراک در دسترس است.",
+    "PostMeetingAI": "هوش مصنوعی پس از جلسه",
+    "PostMeetingAIDesc": "خلاصه‌ها، موارد اقدام و بینش‌ها پس از پایان ضبط تولید خواهند شد.",
+    "UnlockPremium": "باز کردن با Premium",
+    "Upgrade": "ارتقا"
   },
   "UserMenu": {
     "AboutSeaMeet": "درباره SeaMeet",

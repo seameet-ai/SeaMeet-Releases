@@ -24,10 +24,10 @@
     "ClaudeKey": {
       "ClearKey": "保存されたキーを削除する",
       "CliInstalled": "インストール済み ({{version}})",
-      "CliInstallLink": "クロードコードをインストール →",
+      "CliInstallLink": "Claude Code をインストール →",
       "CliNotFound": "CLIが見つかりません",
       "CliNotInstalled": "Claude CLI が見つかりません — インストールしてログインし認証してください：",
-      "CliSection": "クロードコード CLI",
+      "CliSection": "Claude Code CLI",
       "DefaultModel": "デフォルトモデル",
       "GetKeyLink": "Anthropic Console から API キーを取得 →",
       "HideKey": "キーを隠す",
@@ -42,7 +42,7 @@
       "ModelHaikuSub": "早くて安い",
       "ModelOpus": "Claude Opus 4.6",
       "ModelOpusSub": "最も有能な",
-      "ModelSection": "デフォルトのクロードモデル",
+      "ModelSection": "デフォルトの Claude モデル",
       "ModelSonnet": "Claude Sonnet 4.6",
       "ModelSonnetSub": "推奨・バランス型",
       "QuotaLoading": "クォータを読み込み中...",
@@ -51,10 +51,10 @@
       "Refresh": "Re-detect Claude",
       "Remove": "Remove Claude integration",
       "Saving": "保存中...",
-      "Section": "クロード API キー (エージェント)",
+      "Section": "Claude API キー (エージェント)",
       "ShowKey": "キーを表示",
       "SourceByok": "API キー (BYOK)",
-      "SourceCli": "クロードコード CLI",
+      "SourceCli": "Claude Code CLI",
       "SourceKeyServer": "SeaMeet が管理",
       "SourceLabel": "アクティブなソース:",
       "SourceNone": "未設定",
@@ -89,14 +89,14 @@
     "KeyInvalid": "無効なキー",
     "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "キーが設定されていません",
-    "KeyPlaceholder": "アイザシ...",
+    "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "•••••••••（保存済み）",
     "KeyTesting": "テスト中...",
     "KeyVerified": "キーが検証されました",
     "ManagedKeyDesc": "API キーは自動的にプロビジョニングされます。設定は必要ありません。",
     "ManagedKeyStatus": "マネージド キー — SeaMeet によって提供される",
     "MenuItem": "AI を活用した要約",
-    "ModelLabel": "ジェミニモデル",
+    "ModelLabel": "Gemini モデル",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -133,6 +133,7 @@
     "EnableRequired": "AI の概要を表示するには、[設定] → [AI 機能] で AI 機能を有効にします。",
     "ErrorCodes": {
       "AUTH_ERROR": "API キーが無効です。設定で API キーを確認してください。",
+      "NO_API_KEY": "Gemini APIキーが設定されていません。設定でAPIキーを追加してください。",
       "RATE_LIMIT": "API レート制限を超えました。しばらくお待ちください。",
       "BAD_REQUEST": "API はリクエストを拒否しました。 API キーまたは入力を確認してください。",
       "SERVER_ERROR": "AI サーバーでエラーが発生しました。",
@@ -179,7 +180,7 @@
       "Chapters": "章",
       "KeyDecisions": "決定",
       "Summary": "まとめ",
-      "Transcription": "成績証明書"
+      "Transcription": "文字起こし"
     },
     "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "AIの概要",
@@ -235,9 +236,9 @@
       "Plan": "プラン"
     },
     "Model": {
-      "Haiku": "俳句",
-      "Opus": "オーパス",
-      "Sonnet": "ソネット"
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Sonnet"
     },
     "NewSession": "新しいセッション",
     "SwitchProvider": "プロバイダーを切り替え",
@@ -807,6 +808,7 @@
     "Close": "閉じる",
     "Configure": "設定",
     "Delete": "削除",
+    "Dismiss": "Dismiss",
     "Done": "完了しました",
     "Expand": "拡大",
     "FileNameCopiedWithRenameHint": "{{fileName}} をクリップボードにコピーしました。必要に応じてダブルクリックでファイル名を変更してください。",
@@ -1102,7 +1104,7 @@
   },
   "GeminiLive": {
     "AITranscription": "AI文字起こし",
-    "CollapseNowSpeaking": "崩壊",
+    "CollapseNowSpeaking": "折りたたむ",
     "SubscribeForTranscription": "サブスクライブして録音中のライブAI文字起こしを有効にしましょう。",
     "EnableDescription": "録音中の Gemini によるリアルタイム文字起こし",
     "EnableIntegration": "ライブ AI 文字起こしを有効にする",
@@ -1347,7 +1349,20 @@
     "ConfirmButton": "選択を確定",
     "Monitor": "ディスプレイ",
     "PrimaryMonitor": "メインモニター",
-    "StartRecording": "録音開始"
+    "StartRecording": "録音開始",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "再開する",
   "RingMenu": {
@@ -1378,6 +1393,7 @@
     "ButtonLabel": "AIによる処理",
     "ErrorCodes": {
       "AUTH_ERROR": "API キーが無効です。設定で API キーを確認してください。",
+      "NO_API_KEY": "Gemini APIキーが設定されていません。設定でAPIキーを追加してください。",
       "RATE_LIMIT": "API レート制限を超えました。しばらくお待ちください。",
       "BAD_REQUEST": "API はリクエストを拒否しました。 API キーまたは入力を確認してください。",
       "SERVER_ERROR": "AI サーバーでエラーが発生しました。",
@@ -1402,9 +1418,9 @@
     "ResultLabel": "AIの結果",
     "SetupRequired": "画像を処理するには、サブスクリプションまたは BYOK でサインインします。",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "カスタムプロンプト",
+      "Description": "説明",
+      "OCR": "テキスト (OCR)"
     },
     "UnknownError": "不明なエラー"
   },
@@ -1667,6 +1683,14 @@
     "Title": "v{{version}} に更新しました",
     "Description": "SeaMeet が正常に更新されました。新機能:",
     "GotIt": "了解"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "リアルタイム文字起こしとAIインタラクションはサブスクリプションでご利用いただけます。",
+    "PostMeetingAI": "会議後AI",
+    "PostMeetingAIDesc": "録音完了後に要約、アクションアイテム、インサイトが生成されます。",
+    "UnlockPremium": "Premiumでロック解除",
+    "Upgrade": "アップグレード"
   },
   "UserMenu": {
     "AboutSeaMeet": "SeaMeet について",

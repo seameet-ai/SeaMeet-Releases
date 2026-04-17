@@ -133,6 +133,7 @@
     "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
     "ErrorCodes": {
       "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
+      "NO_API_KEY": "No Gemini API key configured. Please add your API key in Settings.",
       "RATE_LIMIT": "API rate limit exceeded. Please wait a moment.",
       "BAD_REQUEST": "The API rejected the request. Please check your API key or input.",
       "SERVER_ERROR": "The AI server encountered an error.",
@@ -318,6 +319,18 @@
     "FlashbackWithoutAudio": "Video flashback will run without audio until permissions are granted.",
     "RecordingPaused": "Recording paused",
     "UnknownError": "unknown error"
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Welcome to SeaMeet",
+    "Step1Desc": "SeaMeet is a powerful screen and audio recording tool. To get started, we need your permission to record your screen.",
+    "Step2Title": "Screen Recording Permission",
+    "Step2Desc": "Your operating system requires explicit permission for any app to capture your screen. This is a privacy protection feature.",
+    "Step3Title": "How to Enable",
+    "Step3Desc": "Click the button below to open your system settings, then find SeaMeet in the Screen Recording list and toggle it ON.",
+    "Skip": "Skip for now",
+    "OpenSettings": "Open System Settings",
+    "FailedToOpenSettings": "Failed to open system settings",
+    "DontShowAgain": "Don't show again"
   },
   "Apps": {
     "All": "All apps",
@@ -804,9 +817,11 @@
     "ApplyName": "Apply name",
     "Back": "Back",
     "Cancel": "Cancel",
+    "Capture": "Capture",
     "Close": "Close",
     "Configure": "Configure",
     "Delete": "Delete",
+    "Dismiss": "Dismiss",
     "Done": "Done",
     "Expand": "Expand",
     "FileNameCopiedWithRenameHint": "{{fileName}} copied to clipboard. Double click to change file name.",
@@ -921,6 +936,14 @@
     "Screen": "screen",
     "StartRecording": "Start Recording",
     "TakeScreenshot": "Take Screenshot"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Select Display",
+    "PrimaryDisplay": "Primary Display",
+    "Display": "Display",
+    "SelectWindow": "Select Window",
+    "LoadingWindows": "Loading...",
+    "NoWindows": "No windows available"
   },
   "FlashbackIndicator": {
     "Buffering": "Buffering",
@@ -1314,6 +1337,7 @@
     "AreaCapture": "Area Capture",
     "CaptureMode": "Capture Mode",
     "FullScreen": "Full Screen",
+    "WindowCapture": "Window",
     "RecordAudio": "Audio",
     "RecordAudioTip": "Audio only",
     "RecordFullscreen": "Fullscreen",
@@ -1331,6 +1355,7 @@
   "RecordingsList": {
     "CopyFileName": "Copy file name",
     "CopyFilePath": "Copy file path",
+    "FileDeletedExternally": "Recording was deleted externally, removed from list",
     "FileNameCopied": "{{fileName}} copied to clipboard",
     "FilePathCopied": "File path copied to clipboard",
     "OpenSaveFolder": "Open Folder",
@@ -1347,7 +1372,20 @@
     "ConfirmButton": "Confirm selection",
     "Monitor": "Monitor",
     "PrimaryMonitor": "Primary Monitor",
-    "StartRecording": "Start Recording"
+    "StartRecording": "Start Recording",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "Resume",
   "RingMenu": {
@@ -1378,6 +1416,7 @@
     "ButtonLabel": "Process with AI",
     "ErrorCodes": {
       "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
+      "NO_API_KEY": "No Gemini API key configured. Please add your API key in Settings.",
       "RATE_LIMIT": "API rate limit exceeded. Please wait a moment.",
       "BAD_REQUEST": "The API rejected the request. Please check your API key or input.",
       "SERVER_ERROR": "The AI server encountered an error.",
@@ -1397,7 +1436,7 @@
     "Ocr": "Extract text (OCR)",
     "OcrSub": "Read all visible text",
     "PipelineError": "AI processing failed.",
-    "ProcessingWithTime": "Processing...",
+    "ProcessingWithTime": "Processing... {{sec}}s",
     "Queuing": "Queuing...",
     "ResultLabel": "AI Result",
     "SetupRequired": "Sign in with a subscription or BYOK to process the image.",
@@ -1636,6 +1675,7 @@
     "Both": "Both (Mixed)",
     "File": "File",
     "Microphone": "Microphone",
+    "Audio": "Audio",
     "System": "System Audio Output",
     "Video": "Video"
   },
@@ -1667,6 +1707,14 @@
     "Title": "Updated to v{{version}}",
     "Description": "SeaMeet has been updated successfully. Here's what's new:",
     "GotIt": "Got it"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Live transcription and AI interaction are available with a subscription.",
+    "PostMeetingAI": "Post-Meeting AI",
+    "PostMeetingAIDesc": "Summaries, action items, and insights will be generated after the recording completes.",
+    "UnlockPremium": "Unlock with Premium",
+    "Upgrade": "Upgrade"
   },
   "UserMenu": {
     "AboutSeaMeet": "About SeaMeet",

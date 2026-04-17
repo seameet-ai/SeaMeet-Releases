@@ -16,18 +16,18 @@
     "SubscribeMsg": "Требуется подписка BYOK Pro. Подпишитесь для получения живой транскрипции, AI-резюме встреч и интерактивного AI-агента."
   },
   "AIFeatures": {
-    "ApiKeyLabel": "API-ключ Близнецов",
-    "ApiKeySection": "API-ключ Близнецов",
+    "ApiKeyLabel": "Gemini API Key",
+    "ApiKeySection": "Gemini API Key",
     "AutomationSection": "Автоматизация",
     "AutoSummary": "Автоматическое создание сводки",
     "AutoSummaryDesc": "Запускается после завершения каждой записи",
     "ClaudeKey": {
       "ClearKey": "Удалить сохраненный ключ",
       "CliInstalled": "Установлено ({{version}})",
-      "CliInstallLink": "Установить Клод Код →",
+      "CliInstallLink": "Install Claude Code →",
       "CliNotFound": "CLI не найден",
       "CliNotInstalled": "Claude CLI не найден — установите его и войдите для аутентификации:",
-      "CliSection": "Клод Код CLI",
+      "CliSection": "Claude Code CLI",
       "DefaultModel": "Модель по умолчанию",
       "GetKeyLink": "Получите ключ API из Anthropic Console →",
       "HideKey": "Скрыть ключ",
@@ -42,7 +42,7 @@
       "ModelHaikuSub": "Быстро и дешево",
       "ModelOpus": "Claude Opus 4.6",
       "ModelOpusSub": "Самый способный",
-      "ModelSection": "Модель Клода по умолчанию",
+      "ModelSection": "Default Claude Model",
       "ModelSonnet": "Claude Sonnet 4.6",
       "ModelSonnetSub": "Рекомендуется · Сбалансированный",
       "QuotaLoading": "Загрузка квоты...",
@@ -54,7 +54,7 @@
       "Section": "Ключ API Клода (Агент)",
       "ShowKey": "Показать ключ",
       "SourceByok": "Ваш API-ключ (BYOK)",
-      "SourceCli": "Клод Код CLI",
+      "SourceCli": "Claude Code CLI",
       "SourceKeyServer": "Под управлением SeaMeet",
       "SourceLabel": "Активный источник:",
       "SourceNone": "Не настроено",
@@ -89,14 +89,14 @@
     "KeyInvalid": "Неверный ключ",
     "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
     "KeyNotConfigured": "Ключ не настроен",
-    "KeyPlaceholder": "АизаСы...",
+    "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (сохранено)",
     "KeyTesting": "Тестирование...",
     "KeyVerified": "Ключ проверен",
     "ManagedKeyDesc": "Ваш ключ API предоставляется автоматически. Никакой конфигурации не требуется.",
     "ManagedKeyStatus": "Управляемый ключ — предоставлен SeaMeet.",
     "MenuItem": "Резюме на основе искусственного интеллекта",
-    "ModelLabel": "Модель Близнецов",
+    "ModelLabel": "Gemini Модель",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -133,6 +133,7 @@
     "EnableRequired": "Включите функции ИИ в «Настройки» → «Функции ИИ», чтобы увидеть сводные данные по ИИ.",
     "ErrorCodes": {
       "AUTH_ERROR": "Неверный ключ API. Пожалуйста, проверьте свой ключ API в настройках.",
+      "NO_API_KEY": "Ключ API Gemini не настроен. Пожалуйста, добавьте ваш ключ API в Настройках.",
       "RATE_LIMIT": "Превышен лимит скорости API. Пожалуйста, подождите немного.",
       "BAD_REQUEST": "API отклонил запрос. Пожалуйста, проверьте свой ключ API или ввод.",
       "SERVER_ERROR": "На сервере AI произошла ошибка.",
@@ -807,6 +808,7 @@
     "Close": "Закрыть",
     "Configure": "Настройка",
     "Delete": "Удалить",
+    "Dismiss": "Dismiss",
     "Done": "Готово",
     "Expand": "Развернуть",
     "FileNameCopiedWithRenameHint": "{{fileName}} скопировано в буфер обмена. Дважды щёлкните, чтобы изменить имя файла.",
@@ -1347,7 +1349,20 @@
     "ConfirmButton": "Подтвердите выбор",
     "Monitor": "Монитор",
     "PrimaryMonitor": "Основной монитор",
-    "StartRecording": "Start Recording"
+    "StartRecording": "Start Recording",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "Резюме",
   "RingMenu": {
@@ -1378,6 +1393,7 @@
     "ButtonLabel": "Процесс с ИИ",
     "ErrorCodes": {
       "AUTH_ERROR": "Неверный ключ API. Пожалуйста, проверьте свой ключ API в настройках.",
+      "NO_API_KEY": "Ключ API Gemini не настроен. Пожалуйста, добавьте ваш ключ API в Настройках.",
       "RATE_LIMIT": "Превышен лимит скорости API. Пожалуйста, подождите немного.",
       "BAD_REQUEST": "API отклонил запрос. Пожалуйста, проверьте свой ключ API или ввод.",
       "SERVER_ERROR": "На сервере AI произошла ошибка.",
@@ -1402,9 +1418,9 @@
     "ResultLabel": "Результат ИИ",
     "SetupRequired": "Войдите с помощью подписки или BYOK, чтобы обработать изображение.",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "Пользовательский запрос",
+      "Description": "Описание",
+      "OCR": "Текст (OCR)"
     },
     "UnknownError": "Неизвестная ошибка"
   },
@@ -1667,6 +1683,14 @@
     "Title": "Обновлено до v{{version}}",
     "Description": "SeaMeet успешно обновлён. Что нового:",
     "GotIt": "Понятно"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Транскрипция в реальном времени и взаимодействие с ИИ доступны по подписке.",
+    "PostMeetingAI": "ИИ после встречи",
+    "PostMeetingAIDesc": "Сводки, задачи и аналитика будут сгенерированы после завершения записи.",
+    "UnlockPremium": "Разблокировать с Premium",
+    "Upgrade": "Обновить"
   },
   "UserMenu": {
     "AboutSeaMeet": "Об SeaMeet",

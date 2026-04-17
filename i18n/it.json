@@ -24,10 +24,10 @@
     "ClaudeKey": {
       "ClearKey": "Rimuovi la chiave salvata",
       "CliInstalled": "Installato ({{version}})",
-      "CliInstallLink": "Installa il codice Claude →",
+      "CliInstallLink": "Installa Claude Code →",
       "CliNotFound": "CLI non trovato",
       "CliNotInstalled": "Claude CLI non trovato — installalo e accedi per autenticarti:",
-      "CliSection": "Claude Codice CLI",
+      "CliSection": "Claude Code CLI",
       "DefaultModel": "Modello predefinito",
       "GetKeyLink": "Ottieni una chiave API da Anthropic Console →",
       "HideKey": "Nascondi chiave",
@@ -54,7 +54,7 @@
       "Section": "Chiave API Claude (agente)",
       "ShowKey": "Mostra chiave",
       "SourceByok": "La tua chiave API (BYOK)",
-      "SourceCli": "Claude Codice CLI",
+      "SourceCli": "Claude Code CLI",
       "SourceKeyServer": "Gestito da SeaMeet",
       "SourceLabel": "Sorgente attiva:",
       "SourceNone": "Non configurato",
@@ -96,7 +96,7 @@
     "ManagedKeyDesc": "Il provisioning della tua chiave API viene effettuato automaticamente. Nessuna configurazione necessaria.",
     "ManagedKeyStatus": "Chiave gestita: fornita da SeaMeet",
     "MenuItem": "Riepiloghi basati sull'intelligenza artificiale",
-    "ModelLabel": "Modello Gemelli",
+    "ModelLabel": "Modello Gemini",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -133,6 +133,7 @@
     "EnableRequired": "Abilita le funzionalità AI in Impostazioni → Funzionalità AI per visualizzare i riepiloghi AI.",
     "ErrorCodes": {
       "AUTH_ERROR": "Chiave API non valida. Controlla la tua chiave API nelle Impostazioni.",
+      "NO_API_KEY": "Nessuna chiave API Gemini configurata. Aggiungi la tua chiave API nelle Impostazioni.",
       "RATE_LIMIT": "Limite di velocità API superato. Per favore aspetta un momento.",
       "BAD_REQUEST": "L'API ha rifiutato la richiesta. Controlla la chiave API o l'input.",
       "SERVER_ERROR": "Il server AI ha riscontrato un errore.",
@@ -237,7 +238,7 @@
     "Model": {
       "Haiku": "Haiku",
       "Opus": "Opus",
-      "Sonnet": "Sonetto"
+      "Sonnet": "Sonnet"
     },
     "NewSession": "Nuova sessione",
     "SwitchProvider": "Cambia fornitore",
@@ -807,6 +808,7 @@
     "Close": "Chiudi",
     "Configure": "Configura",
     "Delete": "Elimina",
+    "Dismiss": "Dismiss",
     "Done": "Completato",
     "Expand": "Espandi",
     "FileNameCopiedWithRenameHint": "{{fileName}} copiato negli appunti. Doppio clic per rinominare il file.",
@@ -1102,7 +1104,7 @@
   },
   "GeminiLive": {
     "AITranscription": "Trascrizione AI",
-    "CollapseNowSpeaking": "Crollo",
+    "CollapseNowSpeaking": "Comprimi",
     "SubscribeForTranscription": "Abbonati per abilitare la trascrizione IA in tempo reale durante le registrazioni.",
     "EnableDescription": "Trascrizione in tempo reale fornita da Gemini durante la registrazione",
     "EnableIntegration": "Abilita la trascrizione AI in tempo reale",
@@ -1347,7 +1349,20 @@
     "ConfirmButton": "Seleziona",
     "Monitor": "Monitorare",
     "PrimaryMonitor": "Schermo principale",
-    "StartRecording": "Start Recording"
+    "StartRecording": "Start Recording",
+    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Dimension": "{{width}} × {{height}}",
+    "PresetFreeform": "Freeform",
+    "Preset1619": "16:9 Horizontal",
+    "Preset43": "4:3 Horizontal",
+    "Preset2119": "21:9 Ultrawide",
+    "Preset916": "9:16 Vertical",
+    "Preset34": "3:4 Vertical",
+    "Preset11": "1:1 Square",
+    "ShortcutCancel": "cancel",
+    "ShortcutCapture": "capture",
+    "ShortcutConfirm": "confirm",
+    "AspectRatio": "Aspect Ratio"
   },
   "Resume": "Riprendere",
   "RingMenu": {
@@ -1378,6 +1393,7 @@
     "ButtonLabel": "Processo con l'intelligenza artificiale",
     "ErrorCodes": {
       "AUTH_ERROR": "Chiave API non valida. Controlla la tua chiave API nelle Impostazioni.",
+      "NO_API_KEY": "Nessuna chiave API Gemini configurata. Aggiungi la tua chiave API nelle Impostazioni.",
       "RATE_LIMIT": "Limite di velocità API superato. Per favore aspetta un momento.",
       "BAD_REQUEST": "L'API ha rifiutato la richiesta. Controlla la chiave API o l'input.",
       "SERVER_ERROR": "Il server AI ha riscontrato un errore.",
@@ -1402,9 +1418,9 @@
     "ResultLabel": "Risultato AI",
     "SetupRequired": "Accedi con un abbonamento o BYOK per elaborare l'immagine.",
     "Tab": {
-      "Custom": "Custom Prompt",
-      "Description": "Description",
-      "OCR": "Text (OCR)"
+      "Custom": "Prompt personalizzato",
+      "Description": "Descrizione",
+      "OCR": "Testo (OCR)"
     },
     "UnknownError": "Errore sconosciuto"
   },
@@ -1667,6 +1683,14 @@
     "Title": "Aggiornato alla v{{version}}",
     "Description": "SeaMeet è stato aggiornato con successo. Ecco le novità:",
     "GotIt": "Ho capito"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "La trascrizione in tempo reale e l'interazione con l'IA sono disponibili con un abbonamento.",
+    "PostMeetingAI": "IA post-riunione",
+    "PostMeetingAIDesc": "Riassunti, azioni e approfondimenti saranno generati al termine della registrazione.",
+    "UnlockPremium": "Sblocca con Premium",
+    "Upgrade": "Aggiorna"
   },
   "UserMenu": {
     "AboutSeaMeet": "Informazioni su SeaMeet",
