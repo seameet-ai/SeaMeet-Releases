@@ -121,7 +121,9 @@
     "ShowAllModels": "Pokaż wszystkie {{count}} modeli",
     "ShowFewerModels": "Pokaż mniej modeli",
     "ShowKey": "Pokaż klucz",
-    "TestKey": "Zapisz i zweryfikuj"
+    "TestKey": "Zapisz i zweryfikuj",
+    "SummaryLanguage": "Język wyjściowy podsumowania",
+    "SummaryLanguageDesc": "Dotyczy transkrypcji, podsumowania i rozdziałów. Wykrywanie automatyczne dopasowuje się do mówionego języka."
   },
   "AISummary": {
     "ApplyMerge": "Zastosuj",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Serwer AI napotkał błąd.",
       "NETWORK_ERROR": "Błąd sieci. Sprawdź swoje połączenie internetowe.",
       "PARSE_ERROR": "Nie udało się przeanalizować odpowiedzi AI.",
+      "EMPTY_RECORDING": "Plik nagrania jest pusty — nie ma nic do analizy.",
+      "INVALID_DURATION": "Nieznany czas trwania nagrania; nie można przetworzyć.",
+      "CANCELLED": "Przetwarzanie zostało anulowane.",
       "UNKNOWN_ERROR": "Przetwarzanie AI nie powiodło się."
     },
     "Error": "Nie udało się załadować podsumowania: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Nagrywanie wstrzymane",
     "UnknownError": "nieznany błąd"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Witamy w SeaMeet",
+    "Step1Desc": "SeaMeet to zaawansowane narzędzie do nagrywania ekranu i dźwięku. Aby rozpocząć, potrzebujemy Twojej zgody na nagrywanie ekranu.",
+    "Step2Title": "Uprawnienie do nagrywania ekranu",
+    "Step2Desc": "Twój system operacyjny wymaga jednoznacznej zgody, zanim aplikacja zarejestruje ekran. To funkcja ochrony prywatności.",
+    "Step3Title": "Jak włączyć",
+    "Step3Desc": "Kliknij przycisk poniżej, aby otworzyć ustawienia systemu, znajdź SeaMeet na liście Nagrywanie ekranu i włącz go.",
+    "Skip": "Pomiń na razie",
+    "OpenSettings": "Otwórz ustawienia systemu",
+    "FailedToOpenSettings": "Nie udało się otworzyć ustawień systemu",
+    "DontShowAgain": "Nie pokazuj ponownie"
+  },
   "Apps": {
     "All": "Wszystkie aplikacje",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Promocja startowa",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Pierwszy miesiąc za darmo — dla pierwszych 100 użytkowników",
-      "FallbackDesc": "Jeśli SEAMEET100 został wykorzystany, wyślij e-mail na coupon@seameet.ai po inny kupon (10% zniżki na rok lub inny kod na darmowy pierwszy miesiąc).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Pierwszy miesiąc za darmo — dla pierwszych 100 użytkowników",
+      "FallbackDesc": "Jeśli BYOK100 został wykorzystany, wyślij e-mail na coupon@seameet.ai po inny kupon (10% zniżki na rok lub inny kod na darmowy pierwszy miesiąc).",
       "HowToUse": "Wprowadź kod kuponu przy płatności Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Najpierw się zaloguj, potem zapłać",
         "ConfirmCancel": "Anuluj",
         "ConfirmCopyCheckout": "Skopiuj kod i zapłać",
-        "InfoNote.Claude": "Jeśli masz subskrypcję Claude Pro lub Max, nie potrzebujesz dodatkowego klucza API Anthropic.",
-        "InfoNote.Copilot": "GitHub Copilot też ma darmowy plan.",
-        "InfoNote.Gemini": "Google AI Studio zazwyczaj daje ci darmowy klucz."
+        "InfoNoteGemini": "Google AI Studio zwykle udostępnia bezpłatny klucz.",
+        "InfoNoteCopilot": "GitHub Copilot też oferuje bezpłatny plan.",
+        "InfoNoteClaude": "Jeśli masz subskrypcję Claude Pro lub Max, dodatkowy klucz API Anthropic nie jest potrzebny."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "Apply name → Zastosuj nazwę",
     "Back": "Wstecz",
     "Cancel": "Cancel → Anuluj",
+    "Capture": "Przechwyć",
     "Close": "Zamknij",
     "Configure": "Konfiguracja",
     "Delete": "Usuń",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Nie udało się rozpocząć nagrywania wideo: {{message}}",
     "NoAudioSources": "Brak dostępnych źródeł dźwięku",
     "NoSystemAudioSources": "Brak dostępnych źródeł dźwięku systemowego",
+    "RecordingStalled": "Zapisywanie nagrania zatrzymało się — plik na dysku może być niekompletny. Zatrzymaj nagrywanie teraz, aby zapisać to, co zostało nagrane.",
+    "RecordingStorageInterrupted": "Zapisywanie nagrania zostało przerwane — plik na dysku może być niekompletny. Zatrzymaj nagrywanie teraz, aby zapisać to, co zostało nagrane.",
     "SaveFailed": "Nie udało się zapisać nagrania: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "Widok ekranu",
     "StartRecording": "Rozpocznij nagrywanie",
     "TakeScreenshot": "Zrób zrzut ekranu"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Wybierz ekran",
+    "PrimaryDisplay": "Ekran główny",
+    "Display": "Ekran",
+    "SelectWindow": "Wybierz okno",
+    "LoadingWindows": "Ładowanie...",
+    "NoWindows": "Brak dostępnych okien"
   },
   "FlashbackIndicator": {
     "Buffering": "Buforowanie",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Teraz mówię...",
     "SegmentCount_one": "{{count}} segmentów",
     "SegmentCount_other": "{{count}} segmentów",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Łączna liczba tokenów zgłoszona przez Gemini w tej sesji",
+    "TokensPendingTooltip": "Oczekiwanie na pierwszy usageMetadata z Gemini — sesje native-audio raportują tylko przy turnComplete.",
+    "ResetTooltip": "Zresetuj połączenie (Shift+klik, aby rozpocząć nową sesję)",
+    "ResetAria": "Zresetuj połączenie Gemini",
     "WaitingForConnection": "Złączony...",
-    "WaitingForSpeech": "Czekam na przemówienie..."
+    "WaitingForSpeech": "Czekam na przemówienie...",
+    "Settings": {
+      "Title": "Transkrypcja na żywo"
+    },
+    "Advanced": {
+      "Model": "Model na żywo",
+      "ModelHint": "2.5 wyciąga prawdziwe imiona z ekranowych podpisów. 3.1 jest ~2,4× tańszy, ale obecnie oznacza mówców jako [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Pokrycie klatek wideo",
+      "TurnCoverageDefault": "Domyślnie (zależnie od modelu)",
+      "TurnCoverageOnlyActivity": "Tylko podczas mowy — najtaniej",
+      "TurnCoverageAllInput": "Każda klatka — najlepsze do imion na ekranie",
+      "TurnCoverageHint": "Domyślnie 2.5: tylko podczas mowy. Domyślnie 3.1: każda klatka wideo (odczytuje tabliczki także w ciszy).",
+      "SendVideo": "Wysyłaj klatki wideo",
+      "VideoFps": "Liczba klatek/s",
+      "EndSensitivity": "Czułość końca mowy",
+      "Default": "Domyślnie (HIGH — szybkie fluszowanie)",
+      "SilenceMs": "Cisza przed końcem tury",
+      "VadHint": "Krótsza cisza + czułość HIGH → krótsze, częstsze fluszowania transkrypcji.",
+      "Reset": "Przywróć wszystko do domyślnych"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Nigdy nie nagrywaj"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} fragmentów",
+    "ChunksTooltip": "Przetworzone fragmenty",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Podsumowanie gotowe",
     "Error": "Przetwarzanie nie powiodło się",
     "Progress": "Przetwarzanie fragmentu {{current}} z {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Przechwytywanie obszaru",
     "CaptureMode": "Tryb przechwytywania",
     "FullScreen": "Pełny ekran",
+    "WindowCapture": "Okno",
     "RecordAudio": "dźwięk",
     "RecordAudioTip": "tylko dźwięk",
     "RecordFullscreen": "Pełny ekran",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Kopiuj nazwę pliku",
     "CopyFilePath": "Kopiuj ścieżkę pliku",
+    "FileDeletedExternally": "Nagranie zostało usunięte spoza aplikacji i usunięte z listy",
     "FileNameCopied": "{{fileName}} skopiowano do schowka",
     "FilePathCopied": "Ścieżka pliku skopiowano do schowka",
     "OpenSaveFolder": "Otwórz folder",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Szukaj nagrań i zrzutów ekranu",
     "ShowInFolder": "Pokaż w folderze"
   },
+  "PermissionAlert": {
+    "Title": "Wymagane uprawnienia",
+    "Description": "SeaMeet wymaga dodatkowych uprawnień, aby kontynuować.",
+    "OpenSettings": "Otwórz ustawienia systemu",
+    "ClickToOpen": "Kliknij, aby otworzyć ustawienia",
+    "NoPermissionFullscreen": "Nagrywanie pełnoekranowe wymaga uprawnienia do nagrywania ekranu.",
+    "NoPermissionWindow": "Nagrywanie okna wymaga uprawnienia do nagrywania ekranu."
+  },
   "RegionSelector": {
     "CaptureButton": "Zrób zrzut ekranu lub naciśnij Enter",
     "ConfirmButton": "Potwierdź wybór",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Wybrano",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "Wyodrębnij tekst (OCR)",
     "OcrSub": "Przeczytaj cały widoczny tekst",
     "PipelineError": "Przetwarzanie AI nie powiodło się. Spróbuj ponownie.",
+    "Processing": "Przetwarzanie...",
     "ProcessingWithTime": "Przetwarzanie... {{sec}}s",
     "Queuing": "Kolejka...",
     "ResultLabel": "Wynik AI",
@@ -1652,6 +1721,7 @@
     "Both": "Oba (zmiksowane)",
     "File": "Plik",
     "Microphone": "mikrofon",
+    "Audio": "Dźwięk",
     "System": "systemowe wyjście dźwięku",
     "Video": "Wideo"
   },

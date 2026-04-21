@@ -121,7 +121,9 @@
     "ShowAllModels": "显示全部 {{count}} 个模型",
     "ShowFewerModels": "收起模型列表",
     "ShowKey": "显示密钥",
-    "TestKey": "保存并验证"
+    "TestKey": "保存并验证",
+    "SummaryLanguage": "摘要输出语言",
+    "SummaryLanguageDesc": "适用于转录、摘要和章节。自动检测会匹配说话时使用的语言。"
   },
   "AISummary": {
     "ApplyMerge": "应用",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "AI 服务器遇到错误。",
       "NETWORK_ERROR": "网络错误。检查您的互联网连接。",
       "PARSE_ERROR": "无法解析 AI 响应。",
+      "EMPTY_RECORDING": "录制文件为空,没有内容可供分析。",
+      "INVALID_DURATION": "录制时长未知,无法处理。",
+      "CANCELLED": "处理已取消。",
       "UNKNOWN_ERROR": "AI处理失败。"
     },
     "Error": "无法加载摘要：{{error}}",
@@ -200,8 +205,8 @@
     "RenameApplied": "文件已重命名为 '{{name}}'",
     "RenameError": "重命名文件失败",
     "Version": {
-      "Latest": "最新的",
-      "Live": "居住"
+      "Latest": "最新",
+      "Live": "实时"
     }
   },
   "About": {
@@ -319,6 +324,18 @@
     "FlashbackWithoutAudio": "在获得许可之前，视频闪回将在没有音频的情况下运行。",
     "RecordingPaused": "录音暂停",
     "UnknownError": "未知错误"
+  },
+  "PermissionTutorial": {
+    "Step1Title": "欢迎使用 SeaMeet",
+    "Step1Desc": "SeaMeet 是强大的屏幕和音频录制工具。开始之前,我们需要您的权限来录制屏幕。",
+    "Step2Title": "屏幕录制权限",
+    "Step2Desc": "您的操作系统要求任何应用在录制屏幕前必须获得明确授权。这是隐私保护功能。",
+    "Step3Title": "如何启用",
+    "Step3Desc": "点击下方按钮打开系统设置,在\"屏幕录制\"列表中找到 SeaMeet 并开启。",
+    "Skip": "暂不设置",
+    "OpenSettings": "打开系统设置",
+    "FailedToOpenSettings": "无法打开系统设置",
+    "DontShowAgain": "不再显示"
   },
   "Apps": {
     "All": "所有应用",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "上线推广",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "首月免费 — 前 100 名用户",
-      "FallbackDesc": "如果 SEAMEET100 已用完，发送邮件至 coupon@seameet.ai 获取另一个优惠券（一年 10% 折扣或另一个首月免费码）。",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "首月免费 — 前 100 名用户",
+      "FallbackDesc": "如果 BYOK100 已用完，发送邮件至 coupon@seameet.ai 获取另一个优惠券（一年 10% 折扣或另一个首月免费码）。",
       "HowToUse": "在 Stripe 结账时输入优惠券代码。"
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "先登录，再结账",
         "ConfirmCancel": "取消",
         "ConfirmCopyCheckout": "复制优惠码并结账",
-        "InfoNote.Claude": "如果你已订阅 Claude Pro 或 Max 计划，则不需要额外的 Anthropic API 密钥。",
-        "InfoNote.Copilot": "GitHub Copilot 也有免费计划。",
-        "InfoNote.Gemini": "Google AI Studio 通常会提供免费密钥。"
+        "InfoNoteGemini": "Google AI Studio 通常会提供免费的 API 密钥。",
+        "InfoNoteCopilot": "GitHub Copilot 也提供免费方案。",
+        "InfoNoteClaude": "如果您已订阅 Claude Pro 或 Max 套餐,则不需要额外的 Anthropic API 密钥。"
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "应用名称",
     "Back": "返回",
     "Cancel": "取消",
+    "Capture": "捕获",
     "Close": "关闭",
     "Configure": "配置",
     "Delete": "删除",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "启动视频录制失败：{{message}}",
     "NoAudioSources": "没有音频源可用",
     "NoSystemAudioSources": "没有系统音频源可用",
+    "RecordingStalled": "录制保存已停滞 — 磁盘上的文件可能不完整。请立即停止录制以保存已捕获的内容。",
+    "RecordingStorageInterrupted": "录制存储已中断 — 磁盘上的文件可能不完整。请立即停止录制以保存已捕获的内容。",
     "SaveFailed": "无法保存录音：{{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "屏幕",
     "StartRecording": "开始录音",
     "TakeScreenshot": "截屏"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "选择显示器",
+    "PrimaryDisplay": "主显示器",
+    "Display": "显示器",
+    "SelectWindow": "选择窗口",
+    "LoadingWindows": "加载中...",
+    "NoWindows": "暂无可用窗口"
   },
   "FlashbackIndicator": {
     "Buffering": "缓冲中",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "现在讲...",
     "SegmentCount_one": "{{count}} 段",
     "SegmentCount_other": "{{count}} 段",
+    "Tokens_one": "{{count}} 词元",
+    "Tokens_other": "{{count}} 词元",
+    "TokensTooltip": "本次会话中 Gemini 报告的累计 token 数",
+    "TokensPendingTooltip": "正在等待 Gemini 的首个 usageMetadata — native-audio 会话仅在 turnComplete 时上报。",
+    "ResetTooltip": "重置连接(Shift+点击开启新会话)",
+    "ResetAria": "重置 Gemini 连接",
     "WaitingForConnection": "正在连接...",
-    "WaitingForSpeech": "等待演讲..."
+    "WaitingForSpeech": "等待演讲...",
+    "Settings": {
+      "Title": "实时转录"
+    },
+    "Advanced": {
+      "Model": "实时模型",
+      "ModelHint": "2.5 能从屏幕字幕中提取真实姓名。3.1 价格便宜约 2.4 倍,但目前仅把说话人标记为 [Speaker 1]、[Speaker 2] 等。",
+      "TurnCoverage": "视频帧覆盖",
+      "TurnCoverageDefault": "默认(按模型)",
+      "TurnCoverageOnlyActivity": "仅在说话时 — 最便宜",
+      "TurnCoverageAllInput": "每一帧 — 最适合识别字幕姓名",
+      "TurnCoverageHint": "2.5 默认:仅说话时。3.1 默认:每一视频帧(即使静音也能读取名牌)。",
+      "SendVideo": "发送视频帧",
+      "VideoFps": "帧率",
+      "EndSensitivity": "语音结束灵敏度",
+      "Default": "默认(高 — 快速刷新)",
+      "SilenceMs": "回合结束前的静音时长",
+      "VadHint": "较短静音 + 高灵敏度 → 更短、更频繁的转录刷新。",
+      "Reset": "全部重置为默认值"
+    }
   },
   "GeminiTranscription": {
     "Title": "实时转录"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "从不录制"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} 片段",
+    "ChunksTooltip": "已处理片段",
+    "Tokens_one": "{{count}} 词元",
+    "Tokens_other": "{{count}} 词元",
     "Done": "总结已准备好",
     "Error": "处理失败",
     "Progress": "处理 {{total}} 的块 {{current}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "区域捕获",
     "CaptureMode": "捕获模式",
     "FullScreen": "全屏",
+    "WindowCapture": "窗口",
     "RecordAudio": "仅音频录制",
     "RecordAudioTip": "仅音频录制",
     "RecordFullscreen": "全屏",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "复制文件名",
     "CopyFilePath": "复制文件路径",
+    "FileDeletedExternally": "录制文件已在外部删除,已从列表移除",
     "FileNameCopied": "{{fileName}} 已复制到剪贴板",
     "FilePathCopied": "文件路径已复制到剪贴板",
     "OpenSaveFolder": "打开文件夹",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "搜索录制和快照",
     "ShowInFolder": "在文件夹中显示"
   },
+  "PermissionAlert": {
+    "Title": "需要权限",
+    "Description": "SeaMeet 需要额外权限才能继续。",
+    "OpenSettings": "打开系统设置",
+    "ClickToOpen": "点击打开设置",
+    "NoPermissionFullscreen": "全屏录制需要屏幕录制权限。",
+    "NoPermissionWindow": "窗口录制需要屏幕录制权限。"
+  },
   "RegionSelector": {
     "CaptureButton": "捕获屏幕或按 Enter 键",
     "ConfirmButton": "确认选择",
@@ -1352,6 +1419,7 @@
     "StartRecording": "开始录音",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "已选",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "提取文本（OCR）",
     "OcrSub": "读取所有可见文本",
     "PipelineError": "AI处理失败。请再试一次。",
+    "Processing": "正在处理...",
     "ProcessingWithTime": "正在处理... {{sec}}s",
     "Queuing": "排队...",
     "ResultLabel": "人工智能结果",
@@ -1652,6 +1721,7 @@
     "Both": "两者（混合）",
     "File": "文件",
     "Microphone": "麦克风",
+    "Audio": "音频",
     "System": "系统音频输出",
     "Video": "视频"
   },

@@ -1,7 +1,4 @@
 {
-  "AI": {
-    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
-  },
   "AIAgent": {
     "DisabledBadge": "معطّل",
     "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
@@ -15,19 +12,22 @@
     "SubscribeMsg": "يتطلب وكيل الذكاء الاصطناعي اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي.",
     "SubscribeCTA": "اشترك للفتح"
   },
+  "AI": {
+    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
+  },
   "AIFeatures": {
-    "ApiKeyLabel": "Gemini API Key",
-    "ApiKeySection": "Gemini API Key",
+    "ApiKeyLabel": "الجوزاء API مفتاح",
+    "ApiKeySection": "الجوزاء API مفتاح",
     "AutomationSection": "الأتمتة",
     "AutoSummary": "إنشاء ملخص تلقائيًا",
     "AutoSummaryDesc": "يتم تشغيله بعد انتهاء كل تسجيل",
     "ClaudeKey": {
       "ClearKey": "إزالة المفتاح المحفوظ",
       "CliInstalled": "تم التثبيت ({{version}})",
-      "CliInstallLink": "Install Claude Code →",
+      "CliInstallLink": "قم بتثبيت كود كلود →",
       "CliNotFound": "CLI غير موجود",
       "CliNotInstalled": "لم يتم العثور على Claude CLI — قم بتثبيته وتسجيل الدخول للمصادقة:",
-      "CliSection": "Claude Code CLI",
+      "CliSection": "كلود كود CLI",
       "DefaultModel": "النموذج الافتراضي",
       "GetKeyLink": "احصل على مفتاح API من Anthropic Console →",
       "HideKey": "إخفاء المفتاح",
@@ -35,14 +35,14 @@
       "InstallWin": "ويندوز (باورشيل):",
       "ApiKeyTitle": "مفتاح API",
       "KeyInvalid": "مفتاح غير صالح",
-      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholder": "سك-النمل-...",
       "KeyPlaceholderSaved": "••••••••• (أنقذ)",
       "KeyTesting": "اختبار...",
       "ModelHaiku": "Claude Haiku 4.5",
       "ModelHaikuSub": "سريع ورخيص",
       "ModelOpus": "Claude Opus 4.6",
       "ModelOpusSub": "الأكثر قدرة",
-      "ModelSection": "Default Claude Model",
+      "ModelSection": "نموذج كلود الافتراضي",
       "ModelSonnet": "Claude Sonnet 4.6",
       "ModelSonnetSub": "موصى به · متوازن",
       "QuotaLoading": "جارٍ تحميل الحصة...",
@@ -54,7 +54,7 @@
       "Section": "مفتاح Claude API (الوكيل)",
       "ShowKey": "إظهار المفتاح",
       "SourceByok": "مفتاح API الخاص بك (BYOK)",
-      "SourceCli": "Claude Code CLI",
+      "SourceCli": "كلود كود CLI",
       "SourceKeyServer": "تحت إدارة SeaMeet",
       "SourceLabel": "المصدر النشط:",
       "SourceNone": "لم يتم تكوينه",
@@ -82,14 +82,14 @@
     "EnableToggle": "تمكين الملخصات المدعومة بالذكاء الاصطناعي",
     "EnableToggleDesc": "يتطلب مفتاح Gemini API مجاني",
     "DefaultModel": "النموذج الافتراضي",
-    "GeminiSection": "Gemini",
+    "GeminiSection": "تَوأَم",
     "GetKeyLink": "احصل على مفتاح API مجاني من Google AI Studio →",
     "GroupTitle": "ميزات الذكاء الاصطناعي",
     "HideKey": "إخفاء المفتاح",
     "KeyInvalid": "مفتاح غير صالح",
     "KeyManagedInBilling": "تتم إدارة مفتاح API في إدارة الاشتراك → مفاتيح API",
     "KeyNotConfigured": "لم يتم تكوين أي مفتاح",
-    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholder": "ايزاسي...",
     "KeyPlaceholderSaved": "••••••••• (أنقذ)",
     "KeyTesting": "اختبار...",
     "KeyVerified": "تم التحقق من المفتاح",
@@ -121,7 +121,9 @@
     "ShowAllModels": "عرض جميع النماذج ({{count}})",
     "ShowFewerModels": "عرض نماذج أقل",
     "ShowKey": "إظهار المفتاح",
-    "TestKey": "حفظ والتحقق"
+    "TestKey": "حفظ والتحقق",
+    "SummaryLanguage": "لغة إخراج الملخص",
+    "SummaryLanguageDesc": "تُطبَّق على التفريغ والملخص والفصول. الكشف التلقائي يتبع اللغة المنطوقة."
   },
   "AISummary": {
     "ApplyMerge": "تطبيق",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "واجه خادم AI خطأ.",
       "NETWORK_ERROR": "خطأ في الشبكة. تحقق من اتصالك بالإنترنت.",
       "PARSE_ERROR": "فشل في تحليل استجابة الذكاء الاصطناعي.",
+      "EMPTY_RECORDING": "ملف التسجيل فارغ - لا يوجد شيء لتحليله.",
+      "INVALID_DURATION": "مدة التسجيل غير معروفة. لا يمكن معالجة.",
+      "CANCELLED": "تم إلغاء المعالجة.",
       "UNKNOWN_ERROR": "فشلت معالجة الذكاء الاصطناعي."
     },
     "Error": "فشل تحميل الملخص: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "تم إيقاف التسجيل مؤقتاً",
     "UnknownError": "خطأ غير معروف"
   },
+  "PermissionTutorial": {
+    "Step1Title": "مرحبا بكم في SeaMeet",
+    "Step1Desc": "SeaMeet هي أداة قوية لتسجيل الشاشة والصوت. للبدء، نحتاج إلى إذنك لتسجيل شاشتك.",
+    "Step2Title": "إذن تسجيل الشاشة",
+    "Step2Desc": "يتطلب نظام التشغيل لديك إذنًا صريحًا لأي تطبيق لالتقاط شاشتك. هذه ميزة حماية الخصوصية.",
+    "Step3Title": "كيفية التمكين",
+    "Step3Desc": "انقر فوق الزر أدناه لفتح إعدادات النظام لديك، ثم ابحث عن SeaMeet في قائمة تسجيل الشاشة وقم بتشغيله.",
+    "Skip": "تخطي الآن",
+    "OpenSettings": "افتح إعدادات النظام",
+    "FailedToOpenSettings": "فشل في فتح إعدادات النظام",
+    "DontShowAgain": "لا تظهر مرة أخرى"
+  },
   "Apps": {
     "All": "جميع التطبيقات",
     "Battlenet": "باتل.نت",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "عرض الإطلاق",
-      "SEAMEET100": "سيميت100",
-      "SEAMEET100Desc": "الشهر الأول مجاناً — لأول 100 مستخدم",
-      "FallbackDesc": "إذا نفد كود SEAMEET100، أرسل بريداً إلكترونياً إلى coupon@seameet.ai للحصول على كود آخر (خصم 10% لمدة عام أو كود شهر مجاني آخر).",
+      "BYOK100": "سيميت100",
+      "BYOK100Desc": "الشهر الأول مجاناً — لأول 100 مستخدم",
+      "FallbackDesc": "إذا نفد كود BYOK100، أرسل بريداً إلكترونياً إلى coupon@seameet.ai للحصول على كود آخر (خصم 10% لمدة عام أو كود شهر مجاني آخر).",
       "HowToUse": "أدخل كود الخصم عند الدفع في Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "سجّل الدخول أولاً، ثم ادفع",
         "ConfirmCancel": "إلغاء",
         "ConfirmCopyCheckout": "نسخ الرمز والدفع",
-        "InfoNote.Claude": "إذا كان لديك اشتراك Claude Pro أو Max، فلا تحتاج إلى مفتاح API إضافي من Anthropic.",
-        "InfoNote.Copilot": "GitHub Copilot لديه خطة مجانية أيضاً.",
-        "InfoNote.Gemini": "Google AI Studio عادةً يعطيك مفتاحاً مجانياً."
+        "InfoNoteGemini": "عادةً ما يمنحك Google AI Studio مفتاحًا مجانيًا.",
+        "InfoNoteCopilot": "لدى GitHub Copilot خطة مجانية أيضًا.",
+        "InfoNoteClaude": "إذا كنت مشتركًا في خطة Claude Pro أو Max، فلن تحتاج إلى مفتاح Anthropic API إضافي."
       },
       "Desktop": {
         "Name": "سطح المكتب برو",
@@ -805,10 +822,11 @@
     "ApplyName": "تطبيق الاسم",
     "Back": "رجوع",
     "Cancel": "إلغاء",
+    "Capture": "يأسر",
     "Close": "إغلاق",
     "Configure": "تكوين",
     "Delete": "حذف",
-    "Dismiss": "Dismiss",
+    "Dismiss": "رفض",
     "Done": "تم",
     "Expand": "توسيع",
     "FileNameCopiedWithRenameHint": "تم نسخ {{fileName}} إلى الحافظة. انقر مرتين لتغيير اسم الملف.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "فشل في بدء تسجيل الفيديو: {{message}}",
     "NoAudioSources": "لا توجد مصادر صوت متاحة",
     "NoSystemAudioSources": "لا توجد مصادر صوت نظام متاحة",
+    "RecordingStalled": "توقف حفظ التسجيل — قد يكون الملف المحفوظ على القرص ناقصًا. يُرجى إيقاف التسجيل الآن لحفظ ما تم التقاطه.",
+    "RecordingStorageInterrupted": "تم قطع تخزين التسجيل — قد يكون الملف المحفوظ على القرص ناقصًا. يُرجى إيقاف التسجيل الآن لحفظ ما تم التقاطه.",
     "SaveFailed": "فشل حفظ التسجيل: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "الشاشة",
     "StartRecording": "ابدأ التسجيل",
     "TakeScreenshot": "لقطة شاشة"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "حدد العرض",
+    "PrimaryDisplay": "العرض الأساسي",
+    "Display": "عرض",
+    "SelectWindow": "حدد نافذة",
+    "LoadingWindows": "تحميل...",
+    "NoWindows": "لا توجد نوافذ متاحة"
   },
   "FlashbackIndicator": {
     "Buffering": "جارٍ تحميل الشكل الموجي",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "تحدث الآن...",
     "SegmentCount_one": "{{count}} المقاطع",
     "SegmentCount_other": "{{count}} المقاطع",
+    "Tokens_one": "{{count}} توك",
+    "Tokens_other": "{{count}} توك",
+    "TokensTooltip": "الرموز التراكمية التي تم الإبلاغ عنها بواسطة Gemini لهذه الجلسة",
+    "TokensPendingTooltip": "في انتظار أول usageMetadata من Gemini — جلسات الصوت الأصلي تُبلِّغ فقط عند turnComplete.",
+    "ResetTooltip": "إعادة تعيين الاتصال (انقر مع الضغط على مفتاح Shift لجلسة جديدة)",
+    "ResetAria": "إعادة ضبط اتصال الجوزاء",
     "WaitingForConnection": "جارٍ الاتصال...",
-    "WaitingForSpeech": "في انتظار الكلام..."
+    "WaitingForSpeech": "في انتظار الكلام...",
+    "Settings": {
+      "Title": "التفريغ المباشر"
+    },
+    "Advanced": {
+      "Model": "نموذج البث المباشر",
+      "ModelHint": "يستخرج 2.5 الأسماء الحقيقية من الشرائط النصية. 3.1 أرخص بنحو 2.4×، لكنه حاليًا يصنّف المتحدثين كـ [Speaker 1]، [Speaker 2]…",
+      "TurnCoverage": "تغطية إطارات الفيديو",
+      "TurnCoverageDefault": "افتراضي (حسب النموذج)",
+      "TurnCoverageOnlyActivity": "فقط أثناء الكلام — الأرخص",
+      "TurnCoverageAllInput": "كل إطار — الأفضل لقراءة الأسماء على الشاشة",
+      "TurnCoverageHint": "افتراضي 2.5: فقط أثناء الكلام. افتراضي 3.1: كل إطار فيديو (يقرأ لوحات الأسماء حتى في الصمت).",
+      "SendVideo": "إرسال إطارات الفيديو",
+      "VideoFps": "معدل الإطارات",
+      "EndSensitivity": "حساسية نهاية الكلام",
+      "Default": "افتراضي (HIGH — تفريغات سريعة)",
+      "SilenceMs": "صمت قبل نهاية الدور",
+      "VadHint": "صمت أقصر + حساسية HIGH ← تفريغات أقصر وأكثر تكرارًا.",
+      "Reset": "إعادة تعيين الكل إلى الإعدادات الافتراضية"
+    }
   },
   "GeminiTranscription": {
     "Title": "النسخ المباشر"
@@ -1183,6 +1236,20 @@
     "WsConnected": "متصل بـ WebSocket",
     "WsDisconnected": "غير متصل بـ WebSocket"
   },
+  "MeetingsTab": {
+    "Download": "تنزيل",
+    "DownloadAudio": "تنزيل الصوت",
+    "DownloadBoth": "تنزيل كليهما",
+    "DownloadTxt": "تنزيل .txt",
+    "Empty": "لم يتم العثور على اجتماعات",
+    "Error": "فشل تحميل الاجتماعات",
+    "Loading": "جارٍ تحميل الاجتماعات...",
+    "Retry": "إعادة المحاولة",
+    "SelectWorkspace": "يرجى تحديد مساحة عمل من قائمة المستخدم لعرض الاجتماعات.",
+    "Title": "الاجتماعات",
+    "Total": "إجمالي",
+    "Untitled": "اجتماع بدون عنوان"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 نصيحة: للاجتماعات عبر المتصفح (Google Meet، Zoom، Teams)، يمكنني فقط اكتشاف المتصفح، وليس الموقع المحدد.",
     "ContinueRecording": "متابعة التسجيل",
@@ -1200,20 +1267,6 @@
     "StartTitle": "تم اكتشاف اجتماع",
     "StopRecording": "إيقاف التسجيل",
     "Yes": "بدء التسجيل"
-  },
-  "MeetingsTab": {
-    "Download": "تنزيل",
-    "DownloadAudio": "تنزيل الصوت",
-    "DownloadBoth": "تنزيل كليهما",
-    "DownloadTxt": "تنزيل .txt",
-    "Empty": "لم يتم العثور على اجتماعات",
-    "Error": "فشل تحميل الاجتماعات",
-    "Loading": "جارٍ تحميل الاجتماعات...",
-    "Retry": "إعادة المحاولة",
-    "SelectWorkspace": "يرجى تحديد مساحة عمل من قائمة المستخدم لعرض الاجتماعات.",
-    "Title": "الاجتماعات",
-    "Total": "إجمالي",
-    "Untitled": "اجتماع بدون عنوان"
   },
   "MinimizedView": {
     "ActionRequired": "يتطلب إجراء (التسجيل التلقائي)",
@@ -1255,6 +1308,10 @@
     "NeverRecord": "لا تسجّل أبدًا"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} قطع",
+    "ChunksTooltip": "قطع معالجتها",
+    "Tokens_one": "{{count}} توك",
+    "Tokens_other": "{{count}} توك",
     "Done": "ملخص جاهز",
     "Error": "فشلت المعالجة",
     "Progress": "مجموعة المعالجة {{current}} من {{total}}",
@@ -1293,19 +1350,6 @@
     "CodecInfo": "معلومات الترميز",
     "MoreOptions": "خيارات إضافية"
   },
-  "PostUpdateModal": {
-    "Title": "تم التحديث إلى v{{version}}",
-    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
-    "GotIt": "حسنًا"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "النسخ المباشر والتفاعل مع الذكاء الاصطناعي متاح مع الاشتراك.",
-    "PostMeetingAI": "الذكاء الاصطناعي بعد الاجتماع",
-    "PostMeetingAIDesc": "سيتم إنشاء الملخصات وبنود العمل والرؤى بعد انتهاء التسجيل.",
-    "UnlockPremium": "فتح مع Premium",
-    "Upgrade": "ترقية"
-  },
   "Recording": {
     "Paused": "متوقف مؤقتًا",
     "Preparing": "تحضير",
@@ -1329,6 +1373,7 @@
     "AreaCapture": "تحديد المنطقة",
     "CaptureMode": "وضع الالتقاط",
     "FullScreen": "التصوير بالشاشة الكاملة",
+    "WindowCapture": "نافذة",
     "RecordAudio": "الصوتي",
     "RecordAudioTip": "الصوت فقط",
     "RecordFullscreen": "وضع ملء الشاشة",
@@ -1346,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "نسخ اسم الملف",
     "CopyFilePath": "نسخ مسار الملف",
+    "FileDeletedExternally": "تم حذف التسجيل خارجيًا، وإزالته من القائمة",
     "FileNameCopied": "تم نسخ {{fileName}} إلى الحافظة",
     "FilePathCopied": "تم نسخ مسار الملف إلى الحافظة",
     "OpenSaveFolder": "عرض المجلد",
@@ -1357,25 +1403,34 @@
     "SearchRecordingsOrSnapshots": "ابحث في التسجيلات واللقطات",
     "ShowInFolder": "عرض في المجلد"
   },
+  "PermissionAlert": {
+    "Title": "الإذن مطلوب",
+    "Description": "يحتاج SeaMeet إلى إذن إضافي للمتابعة.",
+    "OpenSettings": "فتح إعدادات النظام",
+    "ClickToOpen": "انقر لفتح الإعدادات",
+    "NoPermissionFullscreen": "يتطلب تسجيل الشاشة الكاملة إذن تسجيل الشاشة.",
+    "NoPermissionWindow": "يتطلب تسجيل النافذة إذن تسجيل الشاشة."
+  },
   "RegionSelector": {
     "CaptureButton": "التقاط الشاشة أو اضغط على Enter",
     "ConfirmButton": "تأكيد الاختيار",
     "Monitor": "الشاشة (المراقبة)",
     "PrimaryMonitor": "الشاشة الأساسية",
     "StartRecording": "ابدأ التسجيل",
-    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Coordinates": "X: {{x}}، Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "Selected": "مُحدَّد",
+    "PresetFreeform": "شكل حر",
+    "Preset1619": "16:9 أفقيًا",
+    "Preset43": "4:3 أفقي",
+    "Preset2119": "21:9 فائقة الاتساع",
+    "Preset916": "9:16 عموديا",
+    "Preset34": "3:4 عمودي",
+    "Preset11": "1:1 مربع",
+    "ShortcutCancel": "يلغي",
+    "ShortcutCapture": "يأسر",
+    "ShortcutConfirm": "يتأكد",
+    "AspectRatio": "نسبة الارتفاع"
   },
   "Resume": "سيرة ذاتية",
   "RingMenu": {
@@ -1426,6 +1481,7 @@
     "Ocr": "استخراج النص (التعرف الضوئي على الحروف)",
     "OcrSub": "قراءة كل النص المرئي",
     "PipelineError": "فشلت معالجة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
+    "Processing": "جارٍ المعالجة...",
     "ProcessingWithTime": "جارٍ المعالجة... {{sec}}s",
     "Queuing": "انتظار...",
     "ResultLabel": "نتيجة الذكاء الاصطناعي",
@@ -1665,6 +1721,7 @@
     "Both": "كلاهما (ممزوج)",
     "File": "ملف",
     "Microphone": "ميكروفون",
+    "Audio": "صوتي",
     "System": "مخرجات الصوت النظامي",
     "Video": "فيديو"
   },
@@ -1691,6 +1748,19 @@
     "WhatsNew": "الجديد:",
     "WhatsNewInVersion": "الجديد في {{version}}؟",
     "Restarting": "جارٍ إعادة التشغيل..."
+  },
+  "PostUpdateModal": {
+    "Title": "تم التحديث إلى v{{version}}",
+    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
+    "GotIt": "حسنًا"
+  },
+  "Premium": {
+    "AIAgent": "وكيل منظمة العفو الدولية",
+    "AIAgentDesc": "النسخ المباشر والتفاعل مع الذكاء الاصطناعي متاح مع الاشتراك.",
+    "PostMeetingAI": "الذكاء الاصطناعي بعد الاجتماع",
+    "PostMeetingAIDesc": "سيتم إنشاء الملخصات وبنود العمل والرؤى بعد انتهاء التسجيل.",
+    "UnlockPremium": "فتح مع Premium",
+    "Upgrade": "ترقية"
   },
   "UserMenu": {
     "AboutSeaMeet": "عن SeaMeet",

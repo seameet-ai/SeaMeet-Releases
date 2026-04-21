@@ -121,7 +121,9 @@
     "ShowAllModels": "Show all {{count}} models",
     "ShowFewerModels": "Show fewer models",
     "ShowKey": "Show key",
-    "TestKey": "Save & Verify"
+    "TestKey": "Save & Verify",
+    "SummaryLanguage": "Summary output language",
+    "SummaryLanguageDesc": "Applied to transcript + summary + chapters. Auto-detect matches the spoken language."
   },
   "AISummary": {
     "ApplyMerge": "Apply",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "The AI server encountered an error.",
       "NETWORK_ERROR": "Network error. Check your internet connection.",
       "PARSE_ERROR": "Failed to parse AI response.",
+      "EMPTY_RECORDING": "The recording file is empty — nothing to analyse.",
+      "INVALID_DURATION": "The recording duration is unknown; cannot process.",
+      "CANCELLED": "Processing was cancelled.",
       "UNKNOWN_ERROR": "AI processing failed."
     },
     "Error": "Failed to load summary: {{error}}",
@@ -477,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Launch Promotion",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "First month free — for the first 100 users",
-      "FallbackDesc": "If SEAMEET100 is used up, email coupon@seameet.ai to get another coupon (10% off for a year or another first-month-free code).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "First month free — for the first 100 users",
+      "FallbackDesc": "If BYOK100 is used up, email coupon@seameet.ai to get another coupon (10% off for a year or another first-month-free code).",
       "HowToUse": "Enter the coupon code at Stripe checkout."
     },
     "PostSetup": {
@@ -667,9 +672,9 @@
         "ConfirmSignIn": "Sign in first, then checkout",
         "ConfirmCancel": "Cancel",
         "ConfirmCopyCheckout": "Copy Code & Checkout",
-        "InfoNote.Claude": "If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key.",
-        "InfoNote.Copilot": "GitHub Copilot has a free plan too.",
-        "InfoNote.Gemini": "Google AI Studio usually gives you a free key."
+        "InfoNoteGemini": "Google AI Studio usually gives you a free key.",
+        "InfoNoteCopilot": "GitHub Copilot has a free plan too.",
+        "InfoNoteClaude": "If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -853,6 +858,8 @@
     "FailedToStartVideoRecording": "Failed to start video recording: {{message}}",
     "NoAudioSources": "No audio sources available",
     "NoSystemAudioSources": "No system audio sources available",
+    "RecordingStalled": "Recording save has stalled — the file on disk may be incomplete. Please stop the recording now to save what was captured.",
+    "RecordingStorageInterrupted": "Recording storage was interrupted — the file on disk may be incomplete. Please stop the recording now to save what was captured.",
     "SaveFailed": "Failed to save recording: {{message}}"
   },
   "Events": {
@@ -1134,8 +1141,33 @@
     "NowSpeaking": "Now Speaking...",
     "SegmentCount_one": "{{count}} segments",
     "SegmentCount_other": "{{count}} segments",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Cumulative tokens reported by Gemini for this session",
+    "TokensPendingTooltip": "Waiting for the first usageMetadata from Gemini — native-audio sessions only report on turnComplete.",
+    "ResetTooltip": "Reset connection (shift-click for a fresh session)",
+    "ResetAria": "Reset Gemini connection",
     "WaitingForConnection": "Connecting...",
-    "WaitingForSpeech": "Waiting for speech..."
+    "WaitingForSpeech": "Waiting for speech...",
+    "Settings": {
+      "Title": "Live Transcription"
+    },
+    "Advanced": {
+      "Model": "Live model",
+      "ModelHint": "2.5 extracts real names from on-screen chyrons. 3.1 is ~2.4× cheaper but currently labels speakers as [Speaker 1], [Speaker 2], …",
+      "TurnCoverage": "Video frame coverage",
+      "TurnCoverageDefault": "Default (per model)",
+      "TurnCoverageOnlyActivity": "Only during speech — cheapest",
+      "TurnCoverageAllInput": "Every frame — best for on-screen names",
+      "TurnCoverageHint": "2.5 default: only during speech. 3.1 default: every video frame (reads name plates even in silence).",
+      "SendVideo": "Send video frames",
+      "VideoFps": "Frame rate",
+      "EndSensitivity": "End-of-speech sensitivity",
+      "Default": "Default (HIGH — fast flushes)",
+      "SilenceMs": "Silence before turn end",
+      "VadHint": "Lower silence + HIGH end-sensitivity → shorter, more frequent transcript flushes.",
+      "Reset": "Reset all to defaults"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1276,6 +1308,10 @@
     "NeverRecord": "Never Record"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} chunks",
+    "ChunksTooltip": "Chunks processed",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Summary ready",
     "Error": "Processing failed",
     "Progress": "Processing chunk {{current}} of {{total}}",
@@ -1367,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Search recordings and snapshots",
     "ShowInFolder": "Show in folder"
   },
+  "PermissionAlert": {
+    "Title": "Permission required",
+    "Description": "SeaMeet needs additional permission to continue.",
+    "OpenSettings": "Open System Settings",
+    "ClickToOpen": "Click to open settings",
+    "NoPermissionFullscreen": "Fullscreen recording needs Screen Recording permission.",
+    "NoPermissionWindow": "Window recording needs Screen Recording permission."
+  },
   "RegionSelector": {
     "CaptureButton": "Capture Screen or Press Enter",
     "ConfirmButton": "Confirm selection",
@@ -1375,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Selected",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1436,6 +1481,7 @@
     "Ocr": "Extract text (OCR)",
     "OcrSub": "Read all visible text",
     "PipelineError": "AI processing failed.",
+    "Processing": "Processing...",
     "ProcessingWithTime": "Processing... {{sec}}s",
     "Queuing": "Queuing...",
     "ResultLabel": "AI Result",

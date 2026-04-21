@@ -27,7 +27,7 @@
       "CliInstallLink": "Instalar código Claude →",
       "CliNotFound": "CLI no encontrado",
       "CliNotInstalled": "Claude CLI no encontrado — instálelo e inicie sesión para autenticarse:",
-      "CliSection": "Claude Code CLI",
+      "CliSection": "Código Claude CLI",
       "DefaultModel": "Modelo predeterminado",
       "GetKeyLink": "Obtenga una clave API de Anthropic Console →",
       "HideKey": "Ocultar clave",
@@ -35,7 +35,7 @@
       "InstallWin": "Windows (PowerShell):",
       "ApiKeyTitle": "Clave API",
       "KeyInvalid": "Clave no válida",
-      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholder": "sk-hormiga-...",
       "KeyPlaceholderSaved": "••••••••• (guardado)",
       "KeyTesting": "Pruebas...",
       "ModelHaiku": "Claude Haiku 4.5",
@@ -82,14 +82,14 @@
     "EnableToggle": "Habilite resúmenes impulsados ​​por IA",
     "EnableToggleDesc": "Requiere una clave API Gemini gratuita",
     "DefaultModel": "Modelo predeterminado",
-    "GeminiSection": "Gemini",
+    "GeminiSection": "Géminis",
     "GetKeyLink": "Obtenga una clave API gratuita de Google AI Studio →",
     "GroupTitle": "Funciones de IA",
     "HideKey": "Ocultar clave",
     "KeyInvalid": "Clave no válida",
     "KeyManagedInBilling": "La clave API se administra en Administrar suscripción → Claves API",
     "KeyNotConfigured": "Ninguna clave configurada",
-    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholder": "AizaSy...",
     "KeyPlaceholderSaved": "••••••••• (guardado)",
     "KeyTesting": "Pruebas...",
     "KeyVerified": "Clave verificada",
@@ -99,14 +99,14 @@
     "ModelLabel": "Modelo Gemini",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLite": "Géminis 2.5 Flash Lite",
       "Gemini25FlashLiteSub": "Ultra barato",
       "Gemini25FlashSub": "Opción estable más barata",
-      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25Pro": "Géminis 2.5 Pro",
       "Gemini25ProSub": "Mejor razonamiento estable",
-      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3Flash": "Géminis 3 Destello",
       "Gemini3FlashSub": "Recomendado · Rápido + capaz",
-      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3Pro": "Géminis 3 Pro",
       "Gemini3ProSub": "Capacidad máxima"
     },
     "ModelSection": "Modelo de IA",
@@ -121,7 +121,9 @@
     "ShowAllModels": "Mostrar los {{count}} modelos",
     "ShowFewerModels": "Mostrar menos modelos",
     "ShowKey": "Mostrar clave",
-    "TestKey": "Guardar y verificar"
+    "TestKey": "Guardar y verificar",
+    "SummaryLanguage": "Idioma de salida del resumen",
+    "SummaryLanguageDesc": "Se aplica a la transcripción, el resumen y los capítulos. La detección automática coincide con el idioma hablado."
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "El servidor de IA encontró un error.",
       "NETWORK_ERROR": "Error de red. Verifique su conexión a Internet.",
       "PARSE_ERROR": "No se pudo analizar la respuesta de la IA.",
+      "EMPTY_RECORDING": "El archivo de grabación está vacío: no hay nada que analizar.",
+      "INVALID_DURATION": "Se desconoce la duración de la grabación; no puede procesar.",
+      "CANCELLED": "El procesamiento fue cancelado.",
       "UNKNOWN_ERROR": "El procesamiento de IA falló."
     },
     "Error": "No se pudo cargar el resumen: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Grabación en pausa",
     "UnknownError": "Error desconocido"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Bienvenido a Sea Meet",
+    "Step1Desc": "SeaMeet es una poderosa herramienta de grabación de audio y pantalla. Para comenzar, necesitamos su permiso para grabar su pantalla.",
+    "Step2Title": "Permiso de grabación de pantalla",
+    "Step2Desc": "Su sistema operativo requiere permiso explícito para que cualquier aplicación capture su pantalla. Esta es una característica de protección de la privacidad.",
+    "Step3Title": "Cómo habilitar",
+    "Step3Desc": "Haga clic en el botón a continuación para abrir la configuración de su sistema, luego busque SeaMeet en la lista de Grabación de pantalla y actívelo.",
+    "Skip": "Saltar por ahora",
+    "OpenSettings": "Abrir configuración del sistema",
+    "FailedToOpenSettings": "No se pudo abrir la configuración del sistema",
+    "DontShowAgain": "No volver a mostrar"
+  },
   "Apps": {
     "All": "Todas las aplicaciones",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Promoción de lanzamiento",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Primer mes gratis — para los primeros 100 usuarios",
-      "FallbackDesc": "Si SEAMEET100 se ha agotado, envía un correo a coupon@seameet.ai para obtener otro cupón (10% de descuento por un año u otro código de mes gratis).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Primer mes gratis — para los primeros 100 usuarios",
+      "FallbackDesc": "Si BYOK100 se ha agotado, envía un correo a coupon@seameet.ai para obtener otro cupón (10% de descuento por un año u otro código de mes gratis).",
       "HowToUse": "Ingresa el código de cupón en el checkout de Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Iniciar sesion primero, luego pagar",
         "ConfirmCancel": "Cancelar",
         "ConfirmCopyCheckout": "Copiar código y pagar",
-        "InfoNote.Claude": "Si tienes una suscripción a Claude Pro o Max, no necesitas una clave API adicional de Anthropic.",
-        "InfoNote.Copilot": "GitHub Copilot también tiene un plan gratuito.",
-        "InfoNote.Gemini": "Google AI Studio normalmente te da una clave gratuita."
+        "InfoNoteGemini": "Google AI Studio suele darte una clave gratis.",
+        "InfoNoteCopilot": "GitHub Copilot también tiene un plan gratuito.",
+        "InfoNoteClaude": "Si tienes Claude Pro o Max, no necesitas una clave adicional de Anthropic."
       },
       "Desktop": {
         "Name": "Escritorio profesional",
@@ -805,10 +822,11 @@
     "ApplyName": "OK",
     "Back": "Atrás",
     "Cancel": "Cancelar",
+    "Capture": "Captura",
     "Close": "Cerrar",
     "Configure": "Configurar",
     "Delete": "Eliminar",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Despedir",
     "Done": "Listo",
     "Expand": "Expandir",
     "FileNameCopiedWithRenameHint": "{{fileName}} copiado al portapapeles. Haz doble clic para cambiar el nombre del archivo.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Error al iniciar la grabación de video: {{message}}",
     "NoAudioSources": "No hay fuentes de audio disponibles",
     "NoSystemAudioSources": "No hay fuentes de audio del sistema disponibles",
+    "RecordingStalled": "El guardado de la grabación se ha detenido — el archivo en el disco puede estar incompleto. Detén la grabación ahora para guardar lo capturado.",
+    "RecordingStorageInterrupted": "El almacenamiento de la grabación se ha interrumpido — el archivo en el disco puede estar incompleto. Detén la grabación ahora para guardar lo capturado.",
     "SaveFailed": "No se pudo guardar la grabación: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "Pantalla",
     "StartRecording": "Iniciar grabación",
     "TakeScreenshot": "Tomar una captura de pantalla"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Seleccionar pantalla",
+    "PrimaryDisplay": "Pantalla principal",
+    "Display": "Mostrar",
+    "SelectWindow": "Seleccionar ventana",
+    "LoadingWindows": "Cargando...",
+    "NoWindows": "No hay ventanas disponibles"
   },
   "FlashbackIndicator": {
     "Buffering": "Cargando",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Ahora hablando...",
     "SegmentCount_one": "{{count}} segmentos",
     "SegmentCount_other": "{{count}} segmentos",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Tokens acumulados reportados por Gemini para esta sesión",
+    "TokensPendingTooltip": "Esperando los primeros usageMetadata de Gemini; las sesiones de audio nativo solo reportan en turnComplete.",
+    "ResetTooltip": "Restablecer conexión (mayúsculas y clic para una nueva sesión)",
+    "ResetAria": "Restablecer la conexión de Géminis",
     "WaitingForConnection": "Conectando...",
-    "WaitingForSpeech": "Esperando discurso..."
+    "WaitingForSpeech": "Esperando discurso...",
+    "Settings": {
+      "Title": "Transcripción en vivo"
+    },
+    "Advanced": {
+      "Model": "Modelo en vivo",
+      "ModelHint": "2.5 extrae nombres reales de los rótulos en pantalla. 3.1 es ~2,4× más barato pero actualmente etiqueta a los hablantes como [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Cobertura de fotogramas de vídeo",
+      "TurnCoverageDefault": "Predeterminado (según el modelo)",
+      "TurnCoverageOnlyActivity": "Solo durante el habla — más económico",
+      "TurnCoverageAllInput": "Todos los fotogramas — mejor para nombres en pantalla",
+      "TurnCoverageHint": "Predeterminado de 2.5: solo durante el habla. Predeterminado de 3.1: todos los fotogramas (lee rótulos incluso en silencio).",
+      "SendVideo": "Enviar fotogramas de vídeo",
+      "VideoFps": "Velocidad de fotogramas",
+      "EndSensitivity": "Sensibilidad de fin de habla",
+      "Default": "Predeterminado (ALTA — descargas rápidas)",
+      "SilenceMs": "Silencio antes del fin de turno",
+      "VadHint": "Menos silencio + sensibilidad ALTA → descargas de transcripción más cortas y frecuentes.",
+      "Reset": "Restablecer todo a los valores predeterminados"
+    }
   },
   "GeminiTranscription": {
     "Title": "Transcripción en vivo"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Nunca grabar"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} trozos",
+    "ChunksTooltip": "trozos procesados",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Resumen listo",
     "Error": "Error de procesamiento",
     "Progress": "Procesando fragmento {{current}} de {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Captura de área",
     "CaptureMode": "Modo de captura",
     "FullScreen": "Pantalla completa",
+    "WindowCapture": "Ventana",
     "RecordAudio": "Audio",
     "RecordAudioTip": "Solo audio",
     "RecordFullscreen": "Pantalla completa",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Copiar nombre del archivo",
     "CopyFilePath": "Copiar ruta del archivo",
+    "FileDeletedExternally": "La grabación se eliminó externamente, se eliminó de la lista",
     "FileNameCopied": "{{fileName}} copiado al portapapeles",
     "FilePathCopied": "Ruta del archivo copiada al portapapeles",
     "OpenSaveFolder": "Abrir carpeta",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Buscar grabaciones y instantáneas",
     "ShowInFolder": "Mostrar en carpeta"
   },
+  "PermissionAlert": {
+    "Title": "Permiso requerido",
+    "Description": "SeaMeet necesita permiso adicional para continuar.",
+    "OpenSettings": "Abrir ajustes del sistema",
+    "ClickToOpen": "Haz clic para abrir los ajustes",
+    "NoPermissionFullscreen": "La grabación de pantalla completa necesita permiso de grabación de pantalla.",
+    "NoPermissionWindow": "La grabación de ventana necesita permiso de grabación de pantalla."
+  },
   "RegionSelector": {
     "CaptureButton": "Capturar pantalla o presionar Enter",
     "ConfirmButton": "Confirmar selección",
@@ -1352,17 +1419,18 @@
     "StartRecording": "Iniciar grabación",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "Selected": "Seleccionado",
+    "PresetFreeform": "forma libre",
+    "Preset1619": "16:9 Horizontales",
+    "Preset43": "4:3 Horizontales",
+    "Preset2119": "21:9 ultraancho",
+    "Preset916": "9:16 verticales",
+    "Preset34": "3:4 verticales",
+    "Preset11": "Cuadrado 1:1",
+    "ShortcutCancel": "Cancelar",
+    "ShortcutCapture": "captura",
+    "ShortcutConfirm": "confirmar",
+    "AspectRatio": "Relación de aspecto"
   },
   "Resume": "Reanudar",
   "RingMenu": {
@@ -1413,6 +1481,7 @@
     "Ocr": "Extraer texto (OCR)",
     "OcrSub": "Leer todo el texto visible",
     "PipelineError": "El procesamiento de IA falló. Por favor inténtalo de nuevo.",
+    "Processing": "Procesando...",
     "ProcessingWithTime": "Procesando... {{sec}}s",
     "Queuing": "Cola...",
     "ResultLabel": "Resultado de IA",
@@ -1652,6 +1721,7 @@
     "Both": "Ambos (Mezclado)",
     "File": "Archivo",
     "Microphone": "Micrófono",
+    "Audio": "Audio",
     "System": "Salida de audio del sistema",
     "Video": "Vídeo"
   },
@@ -1685,7 +1755,7 @@
     "GotIt": "Entendido"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "Agente de IA",
     "AIAgentDesc": "La transcripción en vivo y la interacción con IA están disponibles con una suscripción.",
     "PostMeetingAI": "IA post-reunión",
     "PostMeetingAIDesc": "Los resúmenes, elementos de acción e información se generarán después de que finalice la grabación.",

@@ -121,7 +121,9 @@
     "ShowAllModels": "Ipakita lahat ng {{count}} modelo",
     "ShowFewerModels": "Ipakita ang mas kaunting modelo",
     "ShowKey": "Ipakita ang susi",
-    "TestKey": "I-save at I-verify"
+    "TestKey": "I-save at I-verify",
+    "SummaryLanguage": "Wika ng output ng buod",
+    "SummaryLanguageDesc": "Inilalapat sa transcript, buod, at mga chapter. Awtomatikong nakikilala ang wikang sinasalita."
   },
   "AISummary": {
     "ApplyMerge": "Ilapat",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Nagkaroon ng error ang AI server.",
       "NETWORK_ERROR": "Error sa network. Suriin ang iyong koneksyon sa internet.",
       "PARSE_ERROR": "Nabigong i-parse ang tugon ng AI.",
+      "EMPTY_RECORDING": "Walang laman ang recording file — walang masusuri.",
+      "INVALID_DURATION": "Hindi alam ang tagal ng recording; hindi maaaring iproseso.",
+      "CANCELLED": "Kinansela ang pagproseso.",
       "UNKNOWN_ERROR": "Nabigo ang pagproseso ng AI."
     },
     "Error": "Nabigong i-load ang buod: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Itigil ang pagre-record",
     "UnknownError": "di-kilalang error"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Maligayang pagdating sa SeaMeet",
+    "Step1Desc": "Ang SeaMeet ay isang mahusay na tool para sa screen at audio recording. Upang magsimula, kailangan namin ng pahintulot mo na mag-record ng iyong screen.",
+    "Step2Title": "Pahintulot sa Screen Recording",
+    "Step2Desc": "Humihingi ang iyong operating system ng tahasang pahintulot bago makapag-record ng screen ang anumang app. Ito ay para sa proteksyon ng privacy.",
+    "Step3Title": "Paano I-enable",
+    "Step3Desc": "I-click ang button sa ibaba upang buksan ang mga setting ng system, pagkatapos ay hanapin ang SeaMeet sa listahan ng Screen Recording at i-toggle ito ON.",
+    "Skip": "Laktawan muna",
+    "OpenSettings": "Buksan ang System Settings",
+    "FailedToOpenSettings": "Hindi mabuksan ang mga setting ng system",
+    "DontShowAgain": "Huwag nang ipakita muli"
+  },
   "Apps": {
     "All": "Lahat ng apps",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Promo sa Paglulunsad",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Unang buwan libre — para sa unang 100 user",
-      "FallbackDesc": "Kung naubos na ang SEAMEET100, mag-email sa coupon@seameet.ai para makakuha ng ibang coupon (10% off sa isang taon o isa pang first-month-free code).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Unang buwan libre — para sa unang 100 user",
+      "FallbackDesc": "Kung naubos na ang BYOK100, mag-email sa coupon@seameet.ai para makakuha ng ibang coupon (10% off sa isang taon o isa pang first-month-free code).",
       "HowToUse": "Ilagay ang coupon code sa Stripe checkout."
     },
     "PostSetup": {
@@ -590,13 +607,13 @@
       "LimitDescription": "Gumagana ang SeaMeet Pro sa hanggang 3 device nang sabay-sabay. Mag-sign out sa device na hindi mo ginagamit para magpalaya ng slot.",
       "LimitTitle": "Naabot na ang limitasyon ng device",
       "Loading": "Nilo-load ang mga device...",
-      "NoDevices": "No devices registered",
+      "NoDevices": "Walang nakarehistrong device",
       "SigningOut": "Nag-sign out...",
       "SignOut": "Mag-sign out",
       "TabLabel": "Mga Device",
       "Today": "ngayon",
       "Yesterday": "kahapon",
-      "YourDevices": "Your Devices"
+      "YourDevices": "Iyong Mga Device"
     },
     "FAQ": {
       "Title": "Mga Madalas Itanong",
@@ -640,32 +657,32 @@
       "Unknown": "May naganap na error. Mangyaring subukan ulit."
     },
     "FreeNote": "Libreng plano: pagre-record lang, walang AI features, hindi kailangan mag-login. Lagi kang maaaring mag-record nang hindi nagsa-subscribe.",
-    "ComingSoon": "Coming soon",
+    "ComingSoon": "Malapit na",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/month",
-        "Feature1": "AI transcription & summaries",
-        "Feature2": "Use your own Gemini & Claude API keys",
-        "Feature3": "Live transcription during meetings",
-        "Feature4": "AI-powered meeting questions & analysis",
+        "Price": "$7.99/buwan",
+        "Feature1": "transkripsyon at mga buod ng AI",
+        "Feature2": "Gamitin ang sarili mong Gemini at Claude API key",
+        "Feature3": "Live na transkripsyon sa panahon ng mga pagpupulong",
+        "Feature4": "Mga tanong at pagsusuri sa pulong na pinapagana ng AI",
         "InfoNote": "Kailangan mo ng 2 setup: Google AI Studio (libre) at GitHub (libre) o Anthropic (bayad). Gagabayan ka ng setup wizard pagkatapos mag-checkout:",
         "ConfirmTitle": "Bago ka mag-subscribe",
         "ConfirmContinue": "Magpatuloy sa checkout",
         "ConfirmSignIn": "Mag-sign in muna, pagkatapos mag-checkout",
         "ConfirmCancel": "Kanselahin",
         "ConfirmCopyCheckout": "Kopyahin ang code at mag-checkout",
-        "InfoNote.Claude": "Kung may Claude Pro o Max plan ka, hindi mo na kailangan ng dagdag na Anthropic API key.",
-        "InfoNote.Copilot": "May libreng plan din ang GitHub Copilot.",
-        "InfoNote.Gemini": "Karaniwang nagbibigay ang Google AI Studio ng libreng key."
+        "InfoNoteGemini": "Kadalasang bibigyan ka ng Google AI Studio ng libreng key.",
+        "InfoNoteCopilot": "May libreng plan din ang GitHub Copilot.",
+        "InfoNoteClaude": "Kung subscriber ka ng Claude Pro o Max plan, hindi mo na kailangan ng dagdag na Anthropic API key."
       },
       "Desktop": {
         "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
+        "Price": "$15.99/buwan",
+        "Feature1": "Lahat sa BYOK Pro",
+        "Feature2": "Built-in na AI — walang API key na kailangan",
+        "Feature3": "Priyoridad na suporta",
+        "Feature4": "Advanced na analytics"
       },
       "Free": {
         "Name": "Libre",
@@ -676,12 +693,12 @@
         "Feature4": "Laging available"
       },
       "Sync": {
-        "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
-        "Feature2": "Cloud sync across devices",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Name": "I-sync ang Pro",
+        "Price": "$25.99/buwan",
+        "Feature1": "Lahat sa Desktop Pro",
+        "Feature2": "Cloud sync sa mga device",
+        "Feature3": "Mga tampok ng pakikipagtulungan ng koponan",
+        "Feature4": "Nakabahaging library ng meeting"
       }
     },
     "Privacy": {
@@ -761,7 +778,7 @@
       "PastDue": "Lagpas na sa takdang bayad",
       "Plan": "Plano",
       "Reactivate": "I-reactivate",
-      "SignIn": "Sign in to manage subscription",
+      "SignIn": "Mag-sign in upang pamahalaan ang subscription",
       "Trial": "Pagsubok"
     },
     "SignInToSubscribe": "Mag-sign in para mag-subscribe:",
@@ -805,10 +822,11 @@
     "ApplyName": "Ilapat ang pangalan",
     "Back": "Bumalik",
     "Cancel": "Kanselahin",
+    "Capture": "Kunan",
     "Close": "Isara",
     "Configure": "I-configure",
     "Delete": "Burahin",
-    "Dismiss": "Dismiss",
+    "Dismiss": "I-dismiss",
     "Done": "Tapos na",
     "Expand": "Palawakin",
     "FileNameCopiedWithRenameHint": "{{fileName}} nakopya sa clipboard. I-double click upang baguhin ang pangalan ng file.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Nabigong simulan ang pagre-record ng video: {{message}}",
     "NoAudioSources": "Walang available na audio source",
     "NoSystemAudioSources": "Walang magagamit na system audio source",
+    "RecordingStalled": "Huminto ang pag-save ng recording — maaaring hindi kumpleto ang file sa disk. Pakihinto na ang recording ngayon upang ma-save ang na-capture.",
+    "RecordingStorageInterrupted": "Naputol ang storage ng recording — maaaring hindi kumpleto ang file sa disk. Pakihinto na ang recording ngayon upang ma-save ang na-capture.",
     "SaveFailed": "Nabigong i-save ang recording: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "screen → screen",
     "StartRecording": "Simulan ang Pagre-rekord",
     "TakeScreenshot": "Kuhanan ng Screenshot"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Pumili ng Display",
+    "PrimaryDisplay": "Pangunahing Display",
+    "Display": "Pagpapakita",
+    "SelectWindow": "Pumili ng Window",
+    "LoadingWindows": "Naglo-load...",
+    "NoWindows": "Walang available na window"
   },
   "FlashbackIndicator": {
     "Buffering": "Nagbu-buffer",
@@ -1074,11 +1102,11 @@
     "CloseTooltip": "Isara ang tooltip",
     "FailedToLoadScreens": "Nabigo ang pag-load ng mga screen. Pakisubukang muli.",
     "FailedToLoadWindows": "Nabigo ang pag-load ng mga window. Pakisubukang muli.",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
+    "MicMuted": "Naka-mute ang Mic",
+    "Microphone": "mikropono",
     "MicrophoneMuted": "Mikropono: Naka-mute",
     "MicrophoneSettings": "Mga setting ng mikropono",
-    "MuteMicrophone": "Mute Microphone",
+    "MuteMicrophone": "I-mute ang Mikropono",
     "MuteNoMicrophone": "Mute (Walang mikrofono)",
     "NoMicrophonesFound": "Walang nakitang mikropono",
     "NoScreensDetected": "Walang mga screen na natuklasan",
@@ -1113,11 +1141,36 @@
     "NowSpeaking": "Ngayon Nagsasalita...",
     "SegmentCount_one": "{{count}} na mga segment",
     "SegmentCount_other": "{{count}} na mga segment",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Pinagsamang tokens na iniulat ng Gemini para sa session na ito",
+    "TokensPendingTooltip": "Naghihintay sa unang usageMetadata mula sa Gemini — ang native-audio sessions ay nag-uulat lamang sa turnComplete.",
+    "ResetTooltip": "I-reset ang koneksyon (Shift+click para sa bagong session)",
+    "ResetAria": "I-reset ang koneksyon ng Gemini",
     "WaitingForConnection": "Kumokonekta...",
-    "WaitingForSpeech": "Naghihintay ng talumpati..."
+    "WaitingForSpeech": "Naghihintay ng talumpati...",
+    "Settings": {
+      "Title": "Live na Transkripsyon"
+    },
+    "Advanced": {
+      "Model": "Live na modelo",
+      "ModelHint": "Kinukuha ng 2.5 ang mga totoong pangalan mula sa mga chyron sa screen. Mas mura ang 3.1 ng ~2.4× ngunit kasalukuyang nagla-label ng mga tagapagsalita bilang [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Saklaw ng video frame",
+      "TurnCoverageDefault": "Default (ayon sa modelo)",
+      "TurnCoverageOnlyActivity": "Habang nagsasalita lang — pinakamura",
+      "TurnCoverageAllInput": "Bawat frame — pinakamabuti para sa mga pangalan sa screen",
+      "TurnCoverageHint": "Default ng 2.5: habang nagsasalita lang. Default ng 3.1: bawat video frame (nababasa ang mga pangalan kahit tahimik).",
+      "SendVideo": "Ipadala ang mga video frame",
+      "VideoFps": "Bilang ng frame",
+      "EndSensitivity": "Sensitivity ng pagtatapos ng pagsasalita",
+      "Default": "Default (HIGH — mabilis na flush)",
+      "SilenceMs": "Katahimikan bago matapos ang turn",
+      "VadHint": "Mas maikling katahimikan + HIGH sensitivity → mas maiikling, mas madalas na flush ng transcript.",
+      "Reset": "I-reset lahat sa default"
+    }
   },
   "GeminiTranscription": {
-    "Title": "Live Transcription"
+    "Title": "Live na Transkripsyon"
   },
   "IdleCompactView": {
     "ArmFlashback": "\"I-arm ang balik-tanaw\"",
@@ -1177,7 +1230,7 @@
     "NoEvents": "Wala pang mga kaganapang natanggap",
     "ShowLogs": "Ipakita",
     "StartTime": "Oras ng Pagsisimula",
-    "Status": "Status",
+    "Status": "Katayuan",
     "Summary": "Buod",
     "Untitled": "Hindi Pinangalanang Pulong",
     "WsConnected": "Nakakonekta ang WebSocket",
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Huwag magre-record kailanman"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} na chunks",
+    "ChunksTooltip": "Mga chunks na naproseso",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Handa na ang buod",
     "Error": "Nabigo ang pagproseso",
     "Progress": "Pinoproseso ang tipak {{current}} ng {{total}}",
@@ -1294,15 +1351,15 @@
     "MoreOptions": "Maraming opsyon"
   },
   "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
+    "Paused": "Naka-pause",
+    "Preparing": "Naghahanda",
+    "PreparingToRecord": "Naghahanda sa pag-record..."
   },
   "RecordingControls": {
     "AudioRecording": "Audio ng pagre-rekord",
     "ContinueRecording": "Ipagpatuloy ang pagre-rekord",
-    "MarkEvent": "Mark Event",
-    "MarkedEvents": "Marked Events",
+    "MarkEvent": "Markahan ang Kaganapan",
+    "MarkedEvents": "Minarkahang Mga Kaganapan",
     "RecordingAudio": "Audio ng pagre-rekord..",
     "RecordingMode": "Mode ng pagre-rekord",
     "RecordingPreview": "Preview ng pagre-rekord",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Pagkuha ng Lugar",
     "CaptureMode": "Paraang Pangkuha",
     "FullScreen": "Buong Bisyon",
+    "WindowCapture": "Bintana",
     "RecordAudio": "Audio",
     "RecordAudioTip": "Audio lang",
     "RecordFullscreen": "Buong Bisyon",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Kopyahin ang pangalan ng file",
     "CopyFilePath": "Kopyahin ang landas ng file",
+    "FileDeletedExternally": "Ang recording ay tinanggal sa labas ng app, inalis na sa listahan",
     "FileNameCopied": "{{fileName}} na-kopya sa clipboard",
     "FilePathCopied": "Nakopya na ang landas ng file sa clipboard",
     "OpenSaveFolder": "Buksan ang Folder",
@@ -1344,24 +1403,33 @@
     "SearchRecordingsOrSnapshots": "Maghanap ng mga pagre-record at larawan di-makikita",
     "ShowInFolder": "Ipakita sa folder"
   },
+  "PermissionAlert": {
+    "Title": "Kailangan ng pahintulot",
+    "Description": "Kailangan ng SeaMeet ng dagdag na pahintulot upang magpatuloy.",
+    "OpenSettings": "Buksan ang System Settings",
+    "ClickToOpen": "I-click upang buksan ang settings",
+    "NoPermissionFullscreen": "Ang fullscreen recording ay nangangailangan ng pahintulot sa Screen Recording.",
+    "NoPermissionWindow": "Ang window recording ay nangangailangan ng pahintulot sa Screen Recording."
+  },
   "RegionSelector": {
     "CaptureButton": "Kukunan ng Screen o Pindutin ang Enter",
     "ConfirmButton": "Kumpirmahin ang pagpili",
     "Monitor": "Subaybayan",
     "PrimaryMonitor": "Pangunahing Monitor",
-    "StartRecording": "Start Recording",
+    "StartRecording": "Simulan ang Pagre-record",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
+    "Selected": "Napili",
+    "PresetFreeform": "Malayang anyo",
+    "Preset1619": "16:9 Pahalang",
+    "Preset43": "4:3 Pahalang",
     "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
+    "Preset916": "9:16 Patayo",
+    "Preset34": "3:4 Patayo",
     "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
+    "ShortcutCancel": "kanselahin",
+    "ShortcutCapture": "makunan",
+    "ShortcutConfirm": "kumpirmahin",
     "AspectRatio": "Aspect Ratio"
   },
   "Resume": "Ipagpatuloy",
@@ -1413,6 +1481,7 @@
     "Ocr": "I-extract ang text (OCR)",
     "OcrSub": "Basahin ang lahat ng nakikitang teksto",
     "PipelineError": "Nabigo ang pagproseso ng AI. Pakisubukang muli.",
+    "Processing": "Pinoproseso...",
     "ProcessingWithTime": "Pinoproseso... {{sec}}s",
     "Queuing": "Nakapila...",
     "ResultLabel": "Resulta ng AI",
@@ -1652,6 +1721,7 @@
     "Both": "Pareho (Pinagsama)",
     "File": "file",
     "Microphone": "mikropono",
+    "Audio": "Audio",
     "System": "Sistema na output ng audio",
     "Video": "Video"
   },
@@ -1685,7 +1755,7 @@
     "GotIt": "Sige"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "Ahente ng AI",
     "AIAgentDesc": "Ang live transcription at AI interaction ay available sa subscription.",
     "PostMeetingAI": "AI Pagkatapos ng Meeting",
     "PostMeetingAIDesc": "Ang mga buod, action items, at insights ay gagawin pagkatapos ng recording.",

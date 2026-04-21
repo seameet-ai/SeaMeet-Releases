@@ -1,7 +1,4 @@
 {
-  "AI": {
-    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
-  },
   "AIAgent": {
     "DisabledBadge": "Deaktiveret",
     "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
@@ -14,6 +11,9 @@
     "SectionTitle": "AI Agent & Cowork",
     "SubscribeMsg": "AI Agent kræver et BYOK Pro-abonnement. Abonnér for at få live transskription, AI-mødeoversigter og en interaktiv AI-agent.",
     "SubscribeCTA": "Abonnér for at låse op"
+  },
+  "AI": {
+    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API nøgle",
@@ -82,7 +82,7 @@
     "EnableToggle": "Aktiver AI-drevne oversigter",
     "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
     "DefaultModel": "Standardmodel",
-    "GeminiSection": "Gemini",
+    "GeminiSection": "Tvillingerne",
     "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
     "GroupTitle": "AI funktioner",
     "HideKey": "Skjul nøgle",
@@ -121,7 +121,9 @@
     "ShowAllModels": "Vis alle {{count}} modeller",
     "ShowFewerModels": "Vis færre modeller",
     "ShowKey": "Vis nøgle",
-    "TestKey": "Gem og bekræft"
+    "TestKey": "Gem og bekræft",
+    "SummaryLanguage": "Udgivelsessprog for resumé",
+    "SummaryLanguageDesc": "Gælder for transskription, resumé og kapitler. Automatisk registrering matcher det talte sprog."
   },
   "AISummary": {
     "ApplyMerge": "Anvend",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "AI-serveren stødte på en fejl.",
       "NETWORK_ERROR": "Netværksfejl. Tjek din internetforbindelse.",
       "PARSE_ERROR": "Kunne ikke parse AI-svar.",
+      "EMPTY_RECORDING": "Optagelsesfilen er tom — intet at analysere.",
+      "INVALID_DURATION": "Optagelsens varighed er ukendt; ikke kan behandle.",
+      "CANCELLED": "Behandlingen blev annulleret.",
       "UNKNOWN_ERROR": "AI-behandling mislykkedes."
     },
     "Error": "Kunne ikke indlæse oversigt: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Optagelse sat på pause",
     "UnknownError": "Ukendt fejl"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Velkommen til SeaMeet",
+    "Step1Desc": "SeaMeet er et kraftfuldt skærm- og lydoptagelsesværktøj. For at komme i gang skal vi have din tilladelse til at optage din skærm.",
+    "Step2Title": "Tilladelse til skærmoptagelse",
+    "Step2Desc": "Dit operativsystem kræver udtrykkelig tilladelse til, at enhver app kan fange din skærm. Dette er en privatlivsbeskyttelsesfunktion.",
+    "Step3Title": "Sådan aktiveres",
+    "Step3Desc": "Klik på knappen nedenfor for at åbne dine systemindstillinger, find derefter SeaMeet på skærmoptagelseslisten, og slå det TIL.",
+    "Skip": "Spring over for nu",
+    "OpenSettings": "Åbn Systemindstillinger",
+    "FailedToOpenSettings": "Kunne ikke åbne systemindstillinger",
+    "DontShowAgain": "Vis ikke igen"
+  },
   "Apps": {
     "All": "Alle apps",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Lanceringstilbud",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Første måned gratis — for de første 100 brugere",
-      "FallbackDesc": "Hvis SEAMEET100 er opbrugt, send en e-mail til coupon@seameet.ai for at få en anden kupon (10% rabat i et år eller en anden gratis-måned-kode).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Første måned gratis — for de første 100 brugere",
+      "FallbackDesc": "Hvis BYOK100 er opbrugt, send en e-mail til coupon@seameet.ai for at få en anden kupon (10% rabat i et år eller en anden gratis-måned-kode).",
       "HowToUse": "Indtast kuponkoden ved Stripe-checkout."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Log ind forst, betal derefter",
         "ConfirmCancel": "Annuller",
         "ConfirmCopyCheckout": "Kopiér kode og betal",
-        "InfoNote.Claude": "Hvis du har et Claude Pro eller Max abonnement, behøver du ikke en ekstra Anthropic API-nøgle.",
-        "InfoNote.Copilot": "GitHub Copilot har også en gratis plan.",
-        "InfoNote.Gemini": "Google AI Studio giver dig normalt en gratis nøgle."
+        "InfoNoteGemini": "Google AI Studio giver dig normalt en gratis nøgle.",
+        "InfoNoteCopilot": "GitHub Copilot har også en gratis plan.",
+        "InfoNoteClaude": "Hvis du abonnerer på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,10 +822,11 @@
     "ApplyName": "Anvend navn",
     "Back": "Tilbage",
     "Cancel": "Annuller",
+    "Capture": "Fange",
     "Close": "Luk",
     "Configure": "Konfigurer",
     "Delete": "Slet",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Afskedige",
     "Done": "Færdig",
     "Expand": "Udvid",
     "FileNameCopiedWithRenameHint": "{{fileName}} kopieret til udklipsholder. Dobbeltklik for at ændre filnavn.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Kunne ikke starte videooptagelse: {{message}}",
     "NoAudioSources": "Ingen lydkilder tilgængelige",
     "NoSystemAudioSources": "Ingen systemlydkilder tilgængelige",
+    "RecordingStalled": "Lagringen af optagelsen er gået i stå — filen på disken kan være ufuldstændig. Stop optagelsen nu for at gemme det, der er optaget.",
+    "RecordingStorageInterrupted": "Lagringen af optagelsen blev afbrudt — filen på disken kan være ufuldstændig. Stop optagelsen nu for at gemme det, der er optaget.",
     "SaveFailed": "Kunne ikke gemme optagelsen: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "skærm",
     "StartRecording": "Start optagelse",
     "TakeScreenshot": "Tag skærmbillede"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Vælg Display",
+    "PrimaryDisplay": "Primær skærm",
+    "Display": "Vise",
+    "SelectWindow": "Vælg Vindue",
+    "LoadingWindows": "Indlæser...",
+    "NoWindows": "Ingen tilgængelige vinduer"
   },
   "FlashbackIndicator": {
     "Buffering": "Indlæser",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Nu taler...",
     "SegmentCount_one": "{{count}} segmenter",
     "SegmentCount_other": "{{count}} segmenter",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Kumulative tokens rapporteret af Gemini for denne session",
+    "TokensPendingTooltip": "Venter på første usageMetadata fra Gemini – native-audio-sessioner rapporterer kun ved turnComplete.",
+    "ResetTooltip": "Nulstil forbindelse (Skift-klik for en ny session)",
+    "ResetAria": "Nulstil Gemini-forbindelsen",
     "WaitingForConnection": "Opretter forbindelse...",
-    "WaitingForSpeech": "Venter på tale..."
+    "WaitingForSpeech": "Venter på tale...",
+    "Settings": {
+      "Title": "Live-transskription"
+    },
+    "Advanced": {
+      "Model": "Live-model",
+      "ModelHint": "2.5 udtrækker rigtige navne fra skærmtekster. 3.1 er ~2,4× billigere, men mærker talere som [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Dækning af videobilleder",
+      "TurnCoverageDefault": "Standard (pr. model)",
+      "TurnCoverageOnlyActivity": "Kun under tale — billigst",
+      "TurnCoverageAllInput": "Hvert billede — bedst til navne på skærmen",
+      "TurnCoverageHint": "2.5-standard: kun under tale. 3.1-standard: hvert videobillede (læser navneskilte også i stilhed).",
+      "SendVideo": "Send videobilleder",
+      "VideoFps": "Billedrate",
+      "EndSensitivity": "Følsomhed for taleafslutning",
+      "Default": "Standard (HIGH — hurtige flushes)",
+      "SilenceMs": "Stilhed før turslut",
+      "VadHint": "Kortere stilhed + HIGH følsomhed → kortere og hyppigere transkriptionsflushes.",
+      "Reset": "Nulstil alt til standard"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live transskription"
@@ -1183,6 +1236,20 @@
     "WsConnected": "WebSocket tilsluttet",
     "WsDisconnected": "WebSocket afbrudt"
   },
+  "MeetingsTab": {
+    "Download": "Download",
+    "DownloadAudio": "Download lyd",
+    "DownloadBoth": "Download begge",
+    "DownloadTxt": "Download .txt",
+    "Empty": "Ingen møder fundet",
+    "Error": "Kunne ikke indlæse møder",
+    "Loading": "Indlæser møder...",
+    "Retry": "Prøv igen",
+    "SelectWorkspace": "Vælg et arbejdsområde fra brugermenuen for at se møder.",
+    "Title": "Møder",
+    "Total": "i alt",
+    "Untitled": "Unavngivet møde"
+  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tip: Ved browsermøder (Google Meet, Zoom, Teams) kan jeg kun registrere browseren, ikke den specifikke hjemmeside.",
     "ContinueRecording": "Fortsæt optagelse",
@@ -1200,20 +1267,6 @@
     "StartTitle": "Møde opdaget",
     "StopRecording": "Stop optagelse",
     "Yes": "Start optagelse"
-  },
-  "MeetingsTab": {
-    "Download": "Download",
-    "DownloadAudio": "Download lyd",
-    "DownloadBoth": "Download begge",
-    "DownloadTxt": "Download .txt",
-    "Empty": "Ingen møder fundet",
-    "Error": "Kunne ikke indlæse møder",
-    "Loading": "Indlæser møder...",
-    "Retry": "Prøv igen",
-    "SelectWorkspace": "Vælg et arbejdsområde fra brugermenuen for at se møder.",
-    "Title": "Møder",
-    "Total": "i alt",
-    "Untitled": "Unavngivet møde"
   },
   "MinimizedView": {
     "ActionRequired": "Handling påkrævet (Auto-optag)",
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Optag aldrig"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} bidder",
+    "ChunksTooltip": "Stumper behandlet",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Opsummering klar",
     "Error": "Behandlingen mislykkedes",
     "Progress": "Behandler del {{current}} af {{total}}",
@@ -1293,19 +1350,6 @@
     "CodecInfo": "Codec-information",
     "MoreOptions": "Flere muligheder"
   },
-  "PostUpdateModal": {
-    "Title": "Opdateret til v{{version}}",
-    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
-    "GotIt": "Forstået"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Live transskription og AI-interaktion er tilgængelig med et abonnement.",
-    "PostMeetingAI": "AI efter mødet",
-    "PostMeetingAIDesc": "Resuméer, handlingspunkter og indsigter genereres efter optagelsen er færdig.",
-    "UnlockPremium": "Lås op med Premium",
-    "Upgrade": "Opgrader"
-  },
   "Recording": {
     "Paused": "Pause",
     "Preparing": "Forbereder",
@@ -1329,6 +1373,7 @@
     "AreaCapture": "Områdeoptagelse",
     "CaptureMode": "Optagelsestilstand",
     "FullScreen": "Fuld skærm",
+    "WindowCapture": "Vindue",
     "RecordAudio": "Lyd",
     "RecordAudioTip": "Kun lyd",
     "RecordFullscreen": "Fuld skærm",
@@ -1346,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Kopiér filnavn",
     "CopyFilePath": "Kopiér filsti",
+    "FileDeletedExternally": "Optagelsen blev slettet eksternt, fjernet fra listen",
     "FileNameCopied": "{{fileName}} kopieret til udklipsholder",
     "FilePathCopied": "Filsti kopieret til udklipsholder",
     "OpenSaveFolder": "Åbn mappe",
@@ -1357,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Søg optagelser og skærmbilleder",
     "ShowInFolder": "Vis i mappe"
   },
+  "PermissionAlert": {
+    "Title": "Tilladelse påkrævet",
+    "Description": "SeaMeet kræver yderligere tilladelse for at fortsætte.",
+    "OpenSettings": "Åbn systemindstillinger",
+    "ClickToOpen": "Klik for at åbne indstillinger",
+    "NoPermissionFullscreen": "Fuldskærmsoptagelse kræver tilladelse til skærmoptagelse.",
+    "NoPermissionWindow": "Vinduesoptagelse kræver tilladelse til skærmoptagelse."
+  },
   "RegionSelector": {
     "CaptureButton": "Optag skærm eller tryk Enter",
     "ConfirmButton": "Bekræft valg",
@@ -1365,17 +1419,18 @@
     "StartRecording": "Start optagelse",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
+    "Selected": "Valgt",
+    "PresetFreeform": "Fri form",
+    "Preset1619": "16:9 Vandret",
+    "Preset43": "4:3 Vandret",
     "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "Preset916": "9:16 Lodret",
+    "Preset34": "3:4 Lodret",
+    "Preset11": "1:1 firkantet",
+    "ShortcutCancel": "ophæve",
+    "ShortcutCapture": "fange",
+    "ShortcutConfirm": "bekræfte",
+    "AspectRatio": "Aspektforhold"
   },
   "Resume": "Genoptage",
   "RingMenu": {
@@ -1426,6 +1481,7 @@
     "Ocr": "Udtræk tekst (OCR)",
     "OcrSub": "Læs al synlig tekst",
     "PipelineError": "AI-behandling mislykkedes. Prøv venligst igen.",
+    "Processing": "Behandler...",
     "ProcessingWithTime": "Behandler... {{sec}}s",
     "Queuing": "I kø...",
     "ResultLabel": "AI resultat",
@@ -1665,6 +1721,7 @@
     "Both": "Begge (Blandet)",
     "File": "Fil",
     "Microphone": "Mikrofon",
+    "Audio": "Lyd",
     "System": "Systemlyd-output",
     "Video": "Video"
   },
@@ -1691,6 +1748,19 @@
     "WhatsNew": "Nyheder:",
     "WhatsNewInVersion": "Nyheder i {{version}}?",
     "Restarting": "Genstarter..."
+  },
+  "PostUpdateModal": {
+    "Title": "Opdateret til v{{version}}",
+    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
+    "GotIt": "Forstået"
+  },
+  "Premium": {
+    "AIAgent": "AI-agent",
+    "AIAgentDesc": "Live transskription og AI-interaktion er tilgængelig med et abonnement.",
+    "PostMeetingAI": "AI efter mødet",
+    "PostMeetingAIDesc": "Resuméer, handlingspunkter og indsigter genereres efter optagelsen er færdig.",
+    "UnlockPremium": "Lås op med Premium",
+    "Upgrade": "Opgrader"
   },
   "UserMenu": {
     "AboutSeaMeet": "Om SeaMeet",

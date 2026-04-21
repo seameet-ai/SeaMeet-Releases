@@ -121,7 +121,9 @@
     "ShowAllModels": "Tunjukkan semua {{count}} model",
     "ShowFewerModels": "Tunjukkan lebih sedikit model",
     "ShowKey": "Tunjukkan kunci",
-    "TestKey": "Simpan & Sahkan"
+    "TestKey": "Simpan & Sahkan",
+    "SummaryLanguage": "Bahasa keluaran ringkasan",
+    "SummaryLanguageDesc": "Digunakan pada transkrip, ringkasan dan bab. Pengesanan automatik mengikut bahasa yang dituturkan."
   },
   "AISummary": {
     "ApplyMerge": "Gunakan",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Pelayan AI mengalami ralat.",
       "NETWORK_ERROR": "Ralat rangkaian. Semak sambungan internet anda.",
       "PARSE_ERROR": "Gagal menghuraikan respons AI.",
+      "EMPTY_RECORDING": "Fail rakaman kosong — tiada apa untuk dianalisis.",
+      "INVALID_DURATION": "Tempoh rakaman tidak diketahui; tidak boleh diproses.",
+      "CANCELLED": "Pemprosesan dibatalkan.",
       "UNKNOWN_ERROR": "Pemprosesan AI gagal."
     },
     "Error": "Gagal memuatkan ringkasan: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Rakaman dijeda",
     "UnknownError": "ralat tidak diketahui"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Selamat datang ke SeaMeet",
+    "Step1Desc": "SeaMeet ialah alat rakaman skrin dan audio yang hebat. Untuk bermula, kami memerlukan kebenaran anda untuk merakam skrin.",
+    "Step2Title": "Kebenaran Rakaman Skrin",
+    "Step2Desc": "Sistem pengendalian anda memerlukan kebenaran eksplisit sebelum mana-mana aplikasi boleh merakam skrin. Ini adalah ciri perlindungan privasi.",
+    "Step3Title": "Cara Mengaktifkan",
+    "Step3Desc": "Klik butang di bawah untuk membuka tetapan sistem, kemudian cari SeaMeet dalam senarai Rakaman Skrin dan hidupkan.",
+    "Skip": "Langkau buat masa ini",
+    "OpenSettings": "Buka Tetapan Sistem",
+    "FailedToOpenSettings": "Gagal membuka tetapan sistem",
+    "DontShowAgain": "Jangan tunjukkan lagi"
+  },
   "Apps": {
     "All": "Semua aplikasi",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Promosi Pelancaran",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Bulan pertama percuma — untuk 100 pengguna pertama",
-      "FallbackDesc": "Jika SEAMEET100 sudah habis, hantar e-mel ke coupon@seameet.ai untuk mendapatkan kupon lain (diskaun 10% selama setahun atau kod bulan pertama percuma yang lain).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Bulan pertama percuma — untuk 100 pengguna pertama",
+      "FallbackDesc": "Jika BYOK100 sudah habis, hantar e-mel ke coupon@seameet.ai untuk mendapatkan kupon lain (diskaun 10% selama setahun atau kod bulan pertama percuma yang lain).",
       "HowToUse": "Masukkan kod kupon semasa pembayaran Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Log masuk dahulu, kemudian bayar",
         "ConfirmCancel": "Batal",
         "ConfirmCopyCheckout": "Salin kod & daftar keluar",
-        "InfoNote.Claude": "Jika anda mempunyai langganan Claude Pro atau Max, anda tidak memerlukan kunci API Anthropic tambahan.",
-        "InfoNote.Copilot": "GitHub Copilot juga mempunyai pelan percuma.",
-        "InfoNote.Gemini": "Google AI Studio biasanya memberi anda kunci percuma."
+        "InfoNoteGemini": "Google AI Studio biasanya memberi anda kunci percuma.",
+        "InfoNoteCopilot": "GitHub Copilot juga mempunyai pelan percuma.",
+        "InfoNoteClaude": "Jika anda melanggan Claude Pro atau Max, anda tidak perlukan kunci API Anthropic tambahan."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "Terapkan nama",
     "Back": "Kembali",
     "Cancel": "Batal",
+    "Capture": "Tangkap",
     "Close": "Tutup",
     "Configure": "Konfigurasi",
     "Delete": "Padam",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Gagal memulakan rakaman video: {{message}}",
     "NoAudioSources": "Tiada sumber audio tersedia",
     "NoSystemAudioSources": "Tiada sumber audio sistem yang tersedia",
+    "RecordingStalled": "Penyimpanan rakaman tergendala — fail pada cakera mungkin tidak lengkap. Hentikan rakaman sekarang untuk menyimpan yang telah dirakamkan.",
+    "RecordingStorageInterrupted": "Storan rakaman terganggu — fail mungkin tidak lengkap. Hentikan rakaman sekarang untuk menyimpan yang telah dirakamkan.",
     "SaveFailed": "Gagal menyimpan rakaman: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "skrin",
     "StartRecording": "Mula rakaman",
     "TakeScreenshot": "Ambil Sangkapan skrin"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Pilih Paparan",
+    "PrimaryDisplay": "Paparan Utama",
+    "Display": "Paparan",
+    "SelectWindow": "Pilih Tetingkap",
+    "LoadingWindows": "Memuatkan...",
+    "NoWindows": "Tiada tetingkap tersedia"
   },
   "FlashbackIndicator": {
     "Buffering": "Penimbal",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Sekarang Bercakap...",
     "SegmentCount_one": "{{count}} segmen",
     "SegmentCount_other": "{{count}} segmen",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Jumlah token yang dilaporkan Gemini untuk sesi ini",
+    "TokensPendingTooltip": "Menunggu usageMetadata pertama daripada Gemini — sesi native-audio hanya melapor pada turnComplete.",
+    "ResetTooltip": "Tetapkan semula sambungan (Shift+klik untuk sesi baharu)",
+    "ResetAria": "Tetapkan semula sambungan Gemini",
     "WaitingForConnection": "Menyambung...",
-    "WaitingForSpeech": "Menunggu ucapan..."
+    "WaitingForSpeech": "Menunggu ucapan...",
+    "Settings": {
+      "Title": "Transkripsi langsung"
+    },
+    "Advanced": {
+      "Model": "Model langsung",
+      "ModelHint": "2.5 menarik nama sebenar daripada teks pada skrin. 3.1 ~2.4× lebih murah tetapi buat masa ini melabelkan penutur sebagai [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Liputan bingkai video",
+      "TurnCoverageDefault": "Lalai (ikut model)",
+      "TurnCoverageOnlyActivity": "Hanya semasa pertuturan — termurah",
+      "TurnCoverageAllInput": "Setiap bingkai — terbaik untuk nama pada skrin",
+      "TurnCoverageHint": "Lalai 2.5: hanya semasa pertuturan. Lalai 3.1: setiap bingkai video (membaca papan nama walaupun semasa senyap).",
+      "SendVideo": "Hantar bingkai video",
+      "VideoFps": "Kadar bingkai",
+      "EndSensitivity": "Sensitiviti hujung pertuturan",
+      "Default": "Lalai (HIGH — flush cepat)",
+      "SilenceMs": "Senyap sebelum giliran tamat",
+      "VadHint": "Senyap lebih pendek + sensitiviti HIGH → flush transkrip lebih pendek dan lebih kerap.",
+      "Reset": "Tetapkan semula semua kepada lalai"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Jangan rakam langsung"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} cebisan",
+    "ChunksTooltip": "Cebisan diproses",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Ringkasan siap",
     "Error": "Pemprosesan gagal",
     "Progress": "Memproses bongkah {{current}} daripada {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Rakaman Kawasan",
     "CaptureMode": "Mod Tangkap",
     "FullScreen": "Skrin Penuh",
+    "WindowCapture": "Tetingkap",
     "RecordAudio": "Akses audio",
     "RecordAudioTip": "Hanya audio",
     "RecordFullscreen": "Skrin Penuh",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Salin nama fail",
     "CopyFilePath": "Salin laluan fail",
+    "FileDeletedExternally": "Rakaman dipadamkan di luar aplikasi, telah dikeluarkan dari senarai",
     "FileNameCopied": "{{fileName}} disalin ke papan klip",
     "FilePathCopied": "Laluan fail disalin ke papan klip",
     "OpenSaveFolder": "Buka Folder Rakaman",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Carian rakaman dan sangkapan skrin",
     "ShowInFolder": "Tunjukkan dalam folder"
   },
+  "PermissionAlert": {
+    "Title": "Kebenaran diperlukan",
+    "Description": "SeaMeet memerlukan kebenaran tambahan untuk meneruskan.",
+    "OpenSettings": "Buka Tetapan Sistem",
+    "ClickToOpen": "Klik untuk membuka tetapan",
+    "NoPermissionFullscreen": "Rakaman skrin penuh memerlukan kebenaran Rakaman Skrin.",
+    "NoPermissionWindow": "Rakaman tetingkap memerlukan kebenaran Rakaman Skrin."
+  },
   "RegionSelector": {
     "CaptureButton": "Tangkap Skrin atau Tekan Enter",
     "ConfirmButton": "Pengesahan pilihan",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Dipilih",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "Ekstrak teks (OCR)",
     "OcrSub": "Baca semua teks yang kelihatan",
     "PipelineError": "Pemprosesan AI gagal. Sila cuba lagi.",
+    "Processing": "Memproses...",
     "ProcessingWithTime": "Memproses... {{sec}}s",
     "Queuing": "Beratur...",
     "ResultLabel": "Keputusan AI",
@@ -1652,6 +1721,7 @@
     "Both": "Kedua-duanya (Campuran)",
     "File": "Fail",
     "Microphone": "Mikrofon",
+    "Audio": "Audio",
     "System": "Output Audio Sistem",
     "Video": "Video"
   },

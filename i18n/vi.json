@@ -121,7 +121,9 @@
     "ShowAllModels": "Hiển thị tất cả {{count}} mô hình",
     "ShowFewerModels": "Hiển thị ít mô hình hơn",
     "ShowKey": "Hiển thị phím",
-    "TestKey": "Lưu & Xác minh"
+    "TestKey": "Lưu & Xác minh",
+    "SummaryLanguage": "Ngôn ngữ đầu ra của bản tóm tắt",
+    "SummaryLanguageDesc": "Áp dụng cho bản ghi, tóm tắt và chương. Tự động phát hiện khớp với ngôn ngữ nói."
   },
   "AISummary": {
     "ApplyMerge": "Áp dụng",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Máy chủ AI gặp lỗi.",
       "NETWORK_ERROR": "Lỗi mạng. Kiểm tra kết nối internet của bạn.",
       "PARSE_ERROR": "Không thể phân tích cú pháp phản hồi AI.",
+      "EMPTY_RECORDING": "Tệp ghi âm trống — không có gì để phân tích.",
+      "INVALID_DURATION": "Không rõ thời lượng bản ghi; không thể xử lý.",
+      "CANCELLED": "Đã hủy xử lý.",
       "UNKNOWN_ERROR": "Quá trình xử lý AI không thành công."
     },
     "Error": "Không tải được bản tóm tắt: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Ghi tạm dừng",
     "UnknownError": "lỗi không xác định"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Chào mừng đến với SeaMeet",
+    "Step1Desc": "SeaMeet là công cụ ghi màn hình và âm thanh mạnh mẽ. Để bắt đầu, chúng tôi cần quyền ghi màn hình của bạn.",
+    "Step2Title": "Quyền ghi màn hình",
+    "Step2Desc": "Hệ điều hành yêu cầu quyền rõ ràng trước khi bất kỳ ứng dụng nào có thể ghi màn hình. Đây là tính năng bảo vệ quyền riêng tư.",
+    "Step3Title": "Cách bật",
+    "Step3Desc": "Nhấp vào nút bên dưới để mở cài đặt hệ thống, tìm SeaMeet trong danh sách Ghi màn hình và bật nó lên.",
+    "Skip": "Bỏ qua tạm thời",
+    "OpenSettings": "Mở Cài đặt hệ thống",
+    "FailedToOpenSettings": "Không mở được cài đặt hệ thống",
+    "DontShowAgain": "Không hiển thị lại"
+  },
   "Apps": {
     "All": "Tất cả các ứng dụng",
     "Battlenet": "Battle.net → Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Khuyến mãi ra mắt",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Tháng đầu miễn phí — cho 100 người dùng đầu tiên",
-      "FallbackDesc": "Nếu SEAMEET100 đã hết, gửi email đến coupon@seameet.ai để nhận mã giảm giá khác (giảm 10% trong một năm hoặc mã tháng đầu miễn phí khác).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Tháng đầu miễn phí — cho 100 người dùng đầu tiên",
+      "FallbackDesc": "Nếu BYOK100 đã hết, gửi email đến coupon@seameet.ai để nhận mã giảm giá khác (giảm 10% trong một năm hoặc mã tháng đầu miễn phí khác).",
       "HowToUse": "Nhập mã giảm giá tại trang thanh toán Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Đăng nhập trước, rồi thanh toán",
         "ConfirmCancel": "Hủy",
         "ConfirmCopyCheckout": "Sao chép mã và thanh toán",
-        "InfoNote.Claude": "Nếu bạn đã đăng ký Claude Pro hoặc Max, bạn không cần thêm API key Anthropic.",
-        "InfoNote.Copilot": "GitHub Copilot cũng có gói miễn phí.",
-        "InfoNote.Gemini": "Google AI Studio thường cung cấp key miễn phí."
+        "InfoNoteGemini": "Google AI Studio thường cấp cho bạn một khoá miễn phí.",
+        "InfoNoteCopilot": "GitHub Copilot cũng có gói miễn phí.",
+        "InfoNoteClaude": "Nếu đã đăng ký Claude Pro hoặc Max, bạn không cần khoá API Anthropic bổ sung."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "Áp dụng tên",
     "Back": "Quay lại",
     "Cancel": "Hủy bỏ",
+    "Capture": "Chụp",
     "Close": "Đóng",
     "Configure": "Cấu hình",
     "Delete": "Xóa",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Không thể bắt đầu ghi video: {{message}}",
     "NoAudioSources": "Không có nguồn âm thanh khả dụng",
     "NoSystemAudioSources": "Không có nguồn âm thanh hệ thống khả dụng",
+    "RecordingStalled": "Việc lưu bản ghi đã bị dừng — tệp trên đĩa có thể không đầy đủ. Vui lòng dừng ghi ngay bây giờ để lưu những gì đã được ghi lại.",
+    "RecordingStorageInterrupted": "Lưu trữ bản ghi đã bị gián đoạn — tệp trên đĩa có thể không đầy đủ. Vui lòng dừng ghi ngay bây giờ để lưu những gì đã được ghi lại.",
     "SaveFailed": "Không lưu được bản ghi: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "man hinh",
     "StartRecording": "Bat dau ghi",
     "TakeScreenshot": "Chup anh man hinh"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Chọn màn hình",
+    "PrimaryDisplay": "Màn hình chính",
+    "Display": "Màn hình",
+    "SelectWindow": "Chọn cửa sổ",
+    "LoadingWindows": "Đang tải...",
+    "NoWindows": "Không có cửa sổ nào"
   },
   "FlashbackIndicator": {
     "Buffering": "Đang chờ",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Bây giờ đang nói...",
     "SegmentCount_one": "{{count}} phân đoạn",
     "SegmentCount_other": "{{count}} phân đoạn",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Tổng số token Gemini báo cáo cho phiên này",
+    "TokensPendingTooltip": "Đang chờ usageMetadata đầu tiên từ Gemini — các phiên native-audio chỉ báo cáo khi turnComplete.",
+    "ResetTooltip": "Đặt lại kết nối (Shift+nhấp để bắt đầu phiên mới)",
+    "ResetAria": "Đặt lại kết nối Gemini",
     "WaitingForConnection": "Đang kết nối...",
-    "WaitingForSpeech": "Đang chờ phát biểu..."
+    "WaitingForSpeech": "Đang chờ phát biểu...",
+    "Settings": {
+      "Title": "Phiên âm trực tiếp"
+    },
+    "Advanced": {
+      "Model": "Mô hình trực tiếp",
+      "ModelHint": "2.5 trích xuất tên thật từ phụ đề trên màn hình. 3.1 rẻ hơn khoảng 2,4× nhưng hiện tại dán nhãn người nói là [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Phạm vi khung hình video",
+      "TurnCoverageDefault": "Mặc định (theo mô hình)",
+      "TurnCoverageOnlyActivity": "Chỉ khi nói — rẻ nhất",
+      "TurnCoverageAllInput": "Mọi khung hình — tốt nhất cho tên trên màn hình",
+      "TurnCoverageHint": "Mặc định 2.5: chỉ khi nói. Mặc định 3.1: mọi khung hình video (đọc được bảng tên ngay cả khi im lặng).",
+      "SendVideo": "Gửi khung hình video",
+      "VideoFps": "Tốc độ khung hình",
+      "EndSensitivity": "Độ nhạy kết thúc lời nói",
+      "Default": "Mặc định (HIGH — xả nhanh)",
+      "SilenceMs": "Khoảng lặng trước khi kết thúc lượt",
+      "VadHint": "Khoảng lặng ngắn hơn + độ nhạy HIGH → xả bản ghi ngắn hơn và thường xuyên hơn.",
+      "Reset": "Đặt lại tất cả về mặc định"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Không ghi lại"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} đoạn",
+    "ChunksTooltip": "Các đoạn đã xử lý",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Bản tóm tắt đã sẵn sàng",
     "Error": "Xử lý không thành công",
     "Progress": "Đang xử lý đoạn {{current}} của {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Chụp vùng",
     "CaptureMode": "Chế độ ghi",
     "FullScreen": "Toàn màn hình",
+    "WindowCapture": "Cửa sổ",
     "RecordAudio": "Âm thanh",
     "RecordAudioTip": "Chỉ audio",
     "RecordFullscreen": "Toàn màn hình",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Sao chép tên file",
     "CopyFilePath": "Sao chép đường dẫn tệp",
+    "FileDeletedExternally": "Bản ghi đã bị xoá bên ngoài và bị loại khỏi danh sách",
     "FileNameCopied": "{{fileName}} đã được sao chép vào clipboard",
     "FilePathCopied": "Đường dẫn tệp đã được sao chép vào clipboard",
     "OpenSaveFolder": "Mở Thư mục",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Tìm kiếm bản ghi và snapshots",
     "ShowInFolder": "Hiển thị trong thư mục"
   },
+  "PermissionAlert": {
+    "Title": "Cần quyền",
+    "Description": "SeaMeet cần quyền bổ sung để tiếp tục.",
+    "OpenSettings": "Mở Cài đặt hệ thống",
+    "ClickToOpen": "Nhấp để mở cài đặt",
+    "NoPermissionFullscreen": "Ghi toàn màn hình cần quyền Ghi màn hình.",
+    "NoPermissionWindow": "Ghi cửa sổ cần quyền Ghi màn hình."
+  },
   "RegionSelector": {
     "CaptureButton": "Chụp màn hình hoặc Nhấn Enter",
     "ConfirmButton": "Xác nhận lựa chọn",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Đã chọn",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "Trích xuất văn bản (OCR)",
     "OcrSub": "Đọc tất cả văn bản hiển thị",
     "PipelineError": "Quá trình xử lý AI không thành công. Vui lòng thử lại.",
+    "Processing": "Đang xử lý...",
     "ProcessingWithTime": "Đang xử lý... {{sec}}s",
     "Queuing": "Đang xếp hàng...",
     "ResultLabel": "Kết quả AI",
@@ -1652,6 +1721,7 @@
     "Both": "Ca hai (Ket hop)",
     "File": "Tap tin",
     "Microphone": "Mic",
+    "Audio": "Âm thanh",
     "System": "Am thanh he thong",
     "Video": "Băng hình"
   },

@@ -121,7 +121,9 @@
     "ShowAllModels": "Показать все {{count}} моделей",
     "ShowFewerModels": "Показать меньше моделей",
     "ShowKey": "Показать ключ",
-    "TestKey": "Сохранить и проверить"
+    "TestKey": "Сохранить и проверить",
+    "SummaryLanguage": "Язык вывода резюме",
+    "SummaryLanguageDesc": "Применяется к транскрипту, резюме и главам. Автоопределение соответствует языку речи."
   },
   "AISummary": {
     "ApplyMerge": "Применить",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "На сервере AI произошла ошибка.",
       "NETWORK_ERROR": "Ошибка сети. Проверьте подключение к Интернету.",
       "PARSE_ERROR": "Не удалось проанализировать ответ AI.",
+      "EMPTY_RECORDING": "Файл записи пуст — нечего анализировать.",
+      "INVALID_DURATION": "Длительность записи неизвестна; невозможно обработать.",
+      "CANCELLED": "Обработка была отменена.",
       "UNKNOWN_ERROR": "Обработка ИИ не удалась."
     },
     "Error": "Не удалось загрузить сводку: {{error}}.",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Запись приостановлена",
     "UnknownError": "Неизвестная ошибка"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Добро пожаловать в SeaMeet",
+    "Step1Desc": "SeaMeet — мощный инструмент для записи экрана и звука. Чтобы начать, нам нужно ваше разрешение на запись экрана.",
+    "Step2Title": "Разрешение на запись экрана",
+    "Step2Desc": "Операционная система требует явного разрешения, прежде чем любое приложение сможет записывать экран. Это функция защиты приватности.",
+    "Step3Title": "Как включить",
+    "Step3Desc": "Нажмите кнопку ниже, чтобы открыть системные настройки, найдите SeaMeet в списке «Запись экрана» и включите его.",
+    "Skip": "Пропустить",
+    "OpenSettings": "Открыть системные настройки",
+    "FailedToOpenSettings": "Не удалось открыть системные настройки",
+    "DontShowAgain": "Больше не показывать"
+  },
   "Apps": {
     "All": "Все приложения",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Акция запуска",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Первый месяц бесплатно — для первых 100 пользователей",
-      "FallbackDesc": "Если код SEAMEET100 исчерпан, отправьте письмо на coupon@seameet.ai для получения другого купона (скидка 10% на год или другой код на бесплатный первый месяц).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Первый месяц бесплатно — для первых 100 пользователей",
+      "FallbackDesc": "Если код BYOK100 исчерпан, отправьте письмо на coupon@seameet.ai для получения другого купона (скидка 10% на год или другой код на бесплатный первый месяц).",
       "HowToUse": "Введите код купона при оплате в Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Сначала войдите, затем оплатите",
         "ConfirmCancel": "Отмена",
         "ConfirmCopyCheckout": "Скопировать код и оплатить",
-        "InfoNote.Claude": "Если у вас есть подписка Claude Pro или Max, вам не нужен дополнительный API-ключ Anthropic.",
-        "InfoNote.Copilot": "У GitHub Copilot тоже есть бесплатный план.",
-        "InfoNote.Gemini": "Google AI Studio обычно предоставляет бесплатный ключ."
+        "InfoNoteGemini": "Google AI Studio обычно выдаёт бесплатный ключ.",
+        "InfoNoteCopilot": "У GitHub Copilot тоже есть бесплатный тариф.",
+        "InfoNoteClaude": "Если у вас подписка Claude Pro или Max, отдельный API‑ключ Anthropic не нужен."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "Применить имя",
     "Back": "Назад",
     "Cancel": "Отменить",
+    "Capture": "Захват",
     "Close": "Закрыть",
     "Configure": "Настройка",
     "Delete": "Удалить",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Не удалось начать видеозапись: {{message}}",
     "NoAudioSources": "Нет доступных аудиоисточников",
     "NoSystemAudioSources": "Нет системных аудиоисточников",
+    "RecordingStalled": "Сохранение записи остановлено — файл на диске может быть неполным. Остановите запись сейчас, чтобы сохранить то, что было захвачено.",
+    "RecordingStorageInterrupted": "Сохранение записи было прервано — файл на диске может быть неполным. Остановите запись сейчас, чтобы сохранить то, что было захвачено.",
     "SaveFailed": "Не удалось сохранить запись: {{message}}."
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "экран",
     "StartRecording": "Начать запись",
     "TakeScreenshot": "Сделать снимок"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Выбрать дисплей",
+    "PrimaryDisplay": "Главный дисплей",
+    "Display": "Дисплей",
+    "SelectWindow": "Выбрать окно",
+    "LoadingWindows": "Загрузка...",
+    "NoWindows": "Нет доступных окон"
   },
   "FlashbackIndicator": {
     "Buffering": "Буферизация",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Сейчас говорю...",
     "SegmentCount_one": "{{count}} сегментов",
     "SegmentCount_other": "{{count}} сегментов",
+    "Tokens_one": "{{count}} ток",
+    "Tokens_other": "{{count}} ток",
+    "TokensTooltip": "Суммарное количество токенов, переданное Gemini в этой сессии",
+    "TokensPendingTooltip": "Ожидание первого usageMetadata от Gemini — сессии native-audio сообщают только при turnComplete.",
+    "ResetTooltip": "Сбросить подключение (Shift+клик — новая сессия)",
+    "ResetAria": "Сбросить подключение Gemini",
     "WaitingForConnection": "Подключение...",
-    "WaitingForSpeech": "Жду речи..."
+    "WaitingForSpeech": "Жду речи...",
+    "Settings": {
+      "Title": "Живая транскрипция"
+    },
+    "Advanced": {
+      "Model": "Модель для живой транскрипции",
+      "ModelHint": "2.5 извлекает реальные имена из экранных подписей. 3.1 примерно в 2,4× дешевле, но сейчас помечает говорящих как [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Охват видеокадров",
+      "TurnCoverageDefault": "По умолчанию (зависит от модели)",
+      "TurnCoverageOnlyActivity": "Только во время речи — самый дешёвый",
+      "TurnCoverageAllInput": "Каждый кадр — лучше всего для имён на экране",
+      "TurnCoverageHint": "По умолчанию 2.5: только во время речи. По умолчанию 3.1: каждый кадр (читает таблички даже в тишине).",
+      "SendVideo": "Отправлять видеокадры",
+      "VideoFps": "Частота кадров",
+      "EndSensitivity": "Чувствительность окончания речи",
+      "Default": "По умолчанию (HIGH — быстрые сбросы)",
+      "SilenceMs": "Тишина перед завершением реплики",
+      "VadHint": "Меньше тишины + чувствительность HIGH → короче и чаще сбросы транскрипции.",
+      "Reset": "Сбросить всё к настройкам по умолчанию"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Никогда не записывать"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} фрагментов",
+    "ChunksTooltip": "Обработанные фрагменты",
+    "Tokens_one": "{{count}} ток",
+    "Tokens_other": "{{count}} ток",
     "Done": "Резюме готово",
     "Error": "Обработка не удалась",
     "Progress": "Обработка фрагмента {{current}} из {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Захват области",
     "CaptureMode": "Режим захвата",
     "FullScreen": "Полный экран",
+    "WindowCapture": "Окно",
     "RecordAudio": "Запись только аудио",
     "RecordAudioTip": "Запись только аудио",
     "RecordFullscreen": "Весь экран",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Копировать имя файла",
     "CopyFilePath": "Копировать путь к файлу",
+    "FileDeletedExternally": "Запись удалена вне приложения и убрана из списка",
     "FileNameCopied": "{{fileName}} скопировано в буфер обмена",
     "FilePathCopied": "Путь к файлу скопирован в буфер обмена",
     "OpenSaveFolder": "Открыть папку",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Искать записи и снимки",
     "ShowInFolder": "Показать в папке"
   },
+  "PermissionAlert": {
+    "Title": "Требуется разрешение",
+    "Description": "Для продолжения SeaMeet нужно дополнительное разрешение.",
+    "OpenSettings": "Открыть системные настройки",
+    "ClickToOpen": "Нажмите, чтобы открыть настройки",
+    "NoPermissionFullscreen": "Полноэкранная запись требует разрешения на запись экрана.",
+    "NoPermissionWindow": "Запись окна требует разрешения на запись экрана."
+  },
   "RegionSelector": {
     "CaptureButton": "Захват экрана или нажмите Enter",
     "ConfirmButton": "Подтвердите выбор",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Выбрано",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "Извлечь текст (OCR)",
     "OcrSub": "Читать весь видимый текст",
     "PipelineError": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз.",
+    "Processing": "Обработка...",
     "ProcessingWithTime": "Обработка... {{sec}}s",
     "Queuing": "Очередь...",
     "ResultLabel": "Результат ИИ",
@@ -1652,6 +1721,7 @@
     "Both": "Оба (смешанный)",
     "File": "Файл",
     "Microphone": "Микрофон",
+    "Audio": "Аудио",
     "System": "Системное аудио",
     "Video": "Видео"
   },

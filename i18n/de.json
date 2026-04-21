@@ -82,7 +82,7 @@
     "EnableToggle": "Aktivieren Sie KI-gestützte Zusammenfassungen",
     "EnableToggleDesc": "Erfordert einen kostenlosen Gemini-API-Schlüssel",
     "DefaultModel": "Standardmodell",
-    "GeminiSection": "Gemini",
+    "GeminiSection": "Zwillinge",
     "GetKeyLink": "Holen Sie sich einen kostenlosen API-Schlüssel von Google AI Studio →",
     "GroupTitle": "KI-Funktionen",
     "HideKey": "Schlüssel verstecken",
@@ -121,7 +121,9 @@
     "ShowAllModels": "Alle {{count}} Modelle anzeigen",
     "ShowFewerModels": "Weniger Modelle anzeigen",
     "ShowKey": "Schlüssel anzeigen",
-    "TestKey": "Speichern und überprüfen"
+    "TestKey": "Speichern und überprüfen",
+    "SummaryLanguage": "Ausgabesprache der Zusammenfassung",
+    "SummaryLanguageDesc": "Gilt für Transkript, Zusammenfassung und Kapitel. Automatische Erkennung folgt der gesprochenen Sprache."
   },
   "AISummary": {
     "ApplyMerge": "Anwenden",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Der AI-Server hat einen Fehler festgestellt.",
       "NETWORK_ERROR": "Netzwerkfehler. Überprüfen Sie Ihre Internetverbindung.",
       "PARSE_ERROR": "Die KI-Antwort konnte nicht analysiert werden.",
+      "EMPTY_RECORDING": "Die Aufnahmedatei ist leer – es gibt nichts zu analysieren.",
+      "INVALID_DURATION": "Die Aufnahmedauer ist unbekannt; kann nicht verarbeitet werden.",
+      "CANCELLED": "Die Verarbeitung wurde abgebrochen.",
       "UNKNOWN_ERROR": "Die KI-Verarbeitung ist fehlgeschlagen."
     },
     "Error": "Zusammenfassung konnte nicht geladen werden: {{error}}",
@@ -238,7 +243,7 @@
     "Model": {
       "Haiku": "Haiku",
       "Opus": "Opus",
-      "Sonnet": "Sonnet"
+      "Sonnet": "Sonett"
     },
     "NewSession": "Neue Sitzung",
     "SwitchProvider": "Anbieter wechseln",
@@ -319,6 +324,18 @@
     "FlashbackWithoutAudio": "Video-Flashback wird ohne Audio ausgeführt, bis Berechtigungen erteilt wurden.",
     "RecordingPaused": "Aufnahme pausiert",
     "UnknownError": "Unbekannter Fehler"
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Willkommen bei SeaMeet",
+    "Step1Desc": "SeaMeet ist ein leistungsstarkes Bildschirm- und Audioaufzeichnungstool. Um zu beginnen, benötigen wir Ihre Erlaubnis, Ihren Bildschirm aufzuzeichnen.",
+    "Step2Title": "Erlaubnis zur Bildschirmaufzeichnung",
+    "Step2Desc": "Ihr Betriebssystem benötigt für jede App eine ausdrückliche Erlaubnis, Ihren Bildschirm zu erfassen. Dies ist eine Funktion zum Schutz der Privatsphäre.",
+    "Step3Title": "So aktivieren Sie",
+    "Step3Desc": "Klicken Sie auf die Schaltfläche unten, um Ihre Systemeinstellungen zu öffnen. Suchen Sie dann in der Bildschirmaufzeichnungsliste nach SeaMeet und schalten Sie es ein.",
+    "Skip": "Überspringen Sie es vorerst",
+    "OpenSettings": "Öffnen Sie die Systemeinstellungen",
+    "FailedToOpenSettings": "Systemeinstellungen konnten nicht geöffnet werden",
+    "DontShowAgain": "Nicht mehr anzeigen"
   },
   "Apps": {
     "All": "Alle Apps",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Einführungsaktion",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Erster Monat kostenlos — für die ersten 100 Nutzer",
-      "FallbackDesc": "Wenn SEAMEET100 aufgebraucht ist, senden Sie eine E-Mail an coupon@seameet.ai für einen anderen Gutschein (10% Rabatt für ein Jahr oder einen weiteren Gratis-Monat-Code).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Erster Monat kostenlos — für die ersten 100 Nutzer",
+      "FallbackDesc": "Wenn BYOK100 aufgebraucht ist, senden Sie eine E-Mail an coupon@seameet.ai für einen anderen Gutschein (10% Rabatt für ein Jahr oder einen weiteren Gratis-Monat-Code).",
       "HowToUse": "Geben Sie den Gutscheincode beim Stripe-Checkout ein."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Zuerst anmelden, dann zum Checkout",
         "ConfirmCancel": "Abbrechen",
         "ConfirmCopyCheckout": "Code kopieren & bezahlen",
-        "InfoNote.Claude": "Wenn Sie ein Claude Pro oder Max Abo haben, benötigen Sie keinen zusätzlichen Anthropic API-Schlüssel.",
-        "InfoNote.Copilot": "GitHub Copilot hat auch einen kostenlosen Plan.",
-        "InfoNote.Gemini": "Google AI Studio gibt Ihnen normalerweise einen kostenlosen Schlüssel."
+        "InfoNoteGemini": "Google AI Studio stellt dir in der Regel einen kostenlosen Key bereit.",
+        "InfoNoteCopilot": "GitHub Copilot bietet ebenfalls einen kostenlosen Tarif an.",
+        "InfoNoteClaude": "Wenn du Claude Pro oder Max abonniert hast, brauchst du keinen zusätzlichen Anthropic-API-Key."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,10 +822,11 @@
     "ApplyName": "Namen anwenden",
     "Back": "Zurück",
     "Cancel": "Abbrechen",
+    "Capture": "Erfassen",
     "Close": "Schließen",
     "Configure": "Konfigurieren",
     "Delete": "Löschen",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Zurückweisen",
     "Done": "Fertig",
     "Expand": "Erweitern",
     "FileNameCopiedWithRenameHint": "{{fileName}} in Zwischenablage kopiert. Doppelklicken Sie, um den Dateinamen zu ändern.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Videoaufnahme konnte nicht gestartet werden: {{message}}",
     "NoAudioSources": "Keine Audioquellen verfügbar",
     "NoSystemAudioSources": "Keine System-Audioquellen verfügbar",
+    "RecordingStalled": "Das Speichern der Aufnahme ist ins Stocken geraten — die Datei auf der Festplatte ist möglicherweise unvollständig. Bitte beenden Sie die Aufnahme jetzt, um das Aufgenommene zu sichern.",
+    "RecordingStorageInterrupted": "Die Speicherung der Aufnahme wurde unterbrochen — die Datei auf der Festplatte ist möglicherweise unvollständig. Bitte beenden Sie die Aufnahme jetzt, um das Aufgenommene zu sichern.",
     "SaveFailed": "Aufzeichnung konnte nicht gespeichert werden: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "Bildschirm",
     "StartRecording": "Aufnahme starten",
     "TakeScreenshot": "Screenshot aufnehmen"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Wählen Sie „Anzeige“.",
+    "PrimaryDisplay": "Primäre Anzeige",
+    "Display": "Anzeige",
+    "SelectWindow": "Wählen Sie Fenster",
+    "LoadingWindows": "Laden...",
+    "NoWindows": "Keine Fenster vorhanden"
   },
   "FlashbackIndicator": {
     "Buffering": "Pufferung",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Jetzt rede ich...",
     "SegmentCount_one": "{{count}} Segmente",
     "SegmentCount_other": "{{count}} Segmente",
+    "Tokens_one": "{{count}} Token",
+    "Tokens_other": "{{count}} Token",
+    "TokensTooltip": "Von Gemini für diese Sitzung gemeldete kumulative Token",
+    "TokensPendingTooltip": "Warte auf erste usageMetadata von Gemini — Native-Audio-Sitzungen melden nur bei turnComplete.",
+    "ResetTooltip": "Verbindung zurücksetzen (Umschalt-Klick für eine neue Sitzung)",
+    "ResetAria": "Gemini-Verbindung zurücksetzen",
     "WaitingForConnection": "Verbinden...",
-    "WaitingForSpeech": "Warten auf Rede..."
+    "WaitingForSpeech": "Warten auf Rede...",
+    "Settings": {
+      "Title": "Live-Transkription"
+    },
+    "Advanced": {
+      "Model": "Live-Modell",
+      "ModelHint": "2.5 extrahiert echte Namen aus eingeblendeten Bauchbinden. 3.1 ist ca. 2,4× günstiger, beschriftet Sprecher derzeit aber nur als [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Videobild-Erfassung",
+      "TurnCoverageDefault": "Standard (je nach Modell)",
+      "TurnCoverageOnlyActivity": "Nur während Sprache — am günstigsten",
+      "TurnCoverageAllInput": "Jedes Bild — ideal für Namen auf dem Bildschirm",
+      "TurnCoverageHint": "2.5-Standard: nur während Sprache. 3.1-Standard: jedes Videobild (liest Namensschilder auch bei Stille).",
+      "SendVideo": "Videobilder senden",
+      "VideoFps": "Bildrate",
+      "EndSensitivity": "Empfindlichkeit für Sprechende",
+      "Default": "Standard (HOCH — schnelle Flushes)",
+      "SilenceMs": "Stille vor Rundenende",
+      "VadHint": "Weniger Stille + Empfindlichkeit HOCH → kürzere, häufigere Transkript-Flushes.",
+      "Reset": "Alles auf Standard zurücksetzen"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live-Transkription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Niemals aufnehmen"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} Blöcke",
+    "ChunksTooltip": "Brocken verarbeitet",
+    "Tokens_one": "{{count}} Token",
+    "Tokens_other": "{{count}} Token",
     "Done": "Zusammenfassung fertig",
     "Error": "Die Verarbeitung ist fehlgeschlagen",
     "Progress": "Verarbeitungsblock {{current}} von {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Bereichserfassung",
     "CaptureMode": "Erfassungsmodus",
     "FullScreen": "Vollbild",
+    "WindowCapture": "Fenster",
     "RecordAudio": "Audio",
     "RecordAudioTip": "Nur Audio",
     "RecordFullscreen": "Vollbild",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Dateinamen kopieren",
     "CopyFilePath": "Dateipfad kopieren",
+    "FileDeletedExternally": "Aufnahme wurde extern gelöscht, aus Liste entfernt",
     "FileNameCopied": "{{fileName}} in Zwischenablage kopiert",
     "FilePathCopied": "Dateipfad in Zwischenablage kopiert",
     "OpenSaveFolder": "Ordner öffnen",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Aufnahmen und Schnappschüsse durchsuchen",
     "ShowInFolder": "Im Ordner anzeigen"
   },
+  "PermissionAlert": {
+    "Title": "Berechtigung erforderlich",
+    "Description": "SeaMeet benötigt zusätzliche Berechtigung, um fortzufahren.",
+    "OpenSettings": "Systemeinstellungen öffnen",
+    "ClickToOpen": "Klicken, um die Einstellungen zu öffnen",
+    "NoPermissionFullscreen": "Vollbildaufnahme benötigt die Berechtigung zur Bildschirmaufnahme.",
+    "NoPermissionWindow": "Fensteraufnahme benötigt die Berechtigung zur Bildschirmaufnahme."
+  },
   "RegionSelector": {
     "CaptureButton": "Bildschirm erfassen oder Enter drücken",
     "ConfirmButton": "Auswahl bestätigen",
@@ -1352,17 +1419,18 @@
     "StartRecording": "Aufnahme starten",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
+    "Selected": "Ausgewählt",
+    "PresetFreeform": "Freiform",
+    "Preset1619": "16:9 horizontal",
     "Preset43": "4:3 Horizontal",
     "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "Preset916": "9:16 Vertikal",
+    "Preset34": "3:4 Vertikal",
+    "Preset11": "1:1 Quadrat",
+    "ShortcutCancel": "stornieren",
+    "ShortcutCapture": "erfassen",
+    "ShortcutConfirm": "bestätigen",
+    "AspectRatio": "Seitenverhältnis"
   },
   "Resume": "Wieder aufnehmen",
   "RingMenu": {
@@ -1413,6 +1481,7 @@
     "Ocr": "Text extrahieren (OCR)",
     "OcrSub": "Lesen Sie den gesamten sichtbaren Text",
     "PipelineError": "Die KI-Verarbeitung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "Processing": "Wird verarbeitet...",
     "ProcessingWithTime": "Wird verarbeitet... {{sec}}s",
     "Queuing": "Warteschlange...",
     "ResultLabel": "KI-Ergebnis",
@@ -1652,6 +1721,7 @@
     "Both": "Beide (Gemischt)",
     "File": "Datei",
     "Microphone": "Mikrofon",
+    "Audio": "Audio",
     "System": "System-Audio-Ausgabe",
     "Video": "Video"
   },
@@ -1685,7 +1755,7 @@
     "GotIt": "Verstanden"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "KI-Agent",
     "AIAgentDesc": "Live-Transkription und KI-Interaktion sind mit einem Abonnement verfügbar.",
     "PostMeetingAI": "KI nach dem Meeting",
     "PostMeetingAIDesc": "Zusammenfassungen, Aufgaben und Erkenntnisse werden nach Abschluss der Aufnahme erstellt.",

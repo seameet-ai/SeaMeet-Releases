@@ -27,7 +27,7 @@
       "CliInstallLink": "Claude Code → را نصب کنید",
       "CliNotFound": "CLI یافت نشد",
       "CliNotInstalled": "Claude CLI یافت نشد — آن را نصب کنید و برای احراز هویت وارد شوید:",
-      "CliSection": "Claude Code CLI",
+      "CliSection": "کد کلود CLI",
       "DefaultModel": "مدل پیش‌فرض",
       "GetKeyLink": "یک کلید API از Anthropic Console دریافت کنید",
       "HideKey": "پنهان کردن کلید",
@@ -42,7 +42,7 @@
       "ModelHaikuSub": "سریع و ارزان",
       "ModelOpus": "Claude Opus 4.6",
       "ModelOpusSub": "تواناترین",
-      "ModelSection": "Default Claude Model",
+      "ModelSection": "مدل کلود پیش فرض",
       "ModelSonnet": "Claude Sonnet 4.6",
       "ModelSonnetSub": "توصیه شده · متعادل",
       "QuotaLoading": "در حال بارگیری سهمیه...",
@@ -82,7 +82,7 @@
     "EnableToggle": "خلاصه های مبتنی بر هوش مصنوعی را فعال کنید",
     "EnableToggleDesc": "به یک کلید Gemini API رایگان نیاز دارد",
     "DefaultModel": "مدل پیش فرض",
-    "GeminiSection": "Gemini",
+    "GeminiSection": "جوزا",
     "GetKeyLink": "یک کلید API رایگان از Google AI Studio → دریافت کنید",
     "GroupTitle": "ویژگی های هوش مصنوعی",
     "HideKey": "پنهان کردن کلید",
@@ -121,7 +121,9 @@
     "ShowAllModels": "نمایش همه {{count}} مدل",
     "ShowFewerModels": "نمایش مدل‌های کمتر",
     "ShowKey": "نمایش کلید",
-    "TestKey": "ذخیره و تأیید کنید"
+    "TestKey": "ذخیره و تأیید کنید",
+    "SummaryLanguage": "زبان خروجی خلاصه",
+    "SummaryLanguageDesc": "برای رونوشت، خلاصه و فصل‌ها اعمال می‌شود. تشخیص خودکار با زبان گفتار هماهنگ می‌شود."
   },
   "AISummary": {
     "ApplyMerge": "اعمال",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "سرور هوش مصنوعی با خطا مواجه شد.",
       "NETWORK_ERROR": "خطای شبکه اتصال اینترنت خود را بررسی کنید.",
       "PARSE_ERROR": "پاسخ هوش مصنوعی تجزیه نشد.",
+      "EMPTY_RECORDING": "فایل ضبط خالی است - چیزی برای تجزیه و تحلیل نیست.",
+      "INVALID_DURATION": "مدت زمان ضبط ناشناخته است. نمی تواند پردازش شود.",
+      "CANCELLED": "پردازش لغو شد.",
       "UNKNOWN_ERROR": "پردازش هوش مصنوعی ناموفق بود."
     },
     "Error": "خلاصه بارگیری نشد: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "ضبط متوقف شد",
     "UnknownError": "خطای ناشناخته‌ای رخ داده است"
   },
+  "PermissionTutorial": {
+    "Step1Title": "به SeaMeet خوش آمدید",
+    "Step1Desc": "SeaMeet ابزاری قدرتمند برای ضبط صدا و صفحه نمایش است. برای شروع، به اجازه شما برای ضبط صفحه شما نیاز داریم.",
+    "Step2Title": "مجوز ضبط صفحه",
+    "Step2Desc": "سیستم عامل شما نیاز به مجوز صریح برای هر برنامه ای برای گرفتن صفحه نمایش شما دارد. این یک ویژگی حفاظت از حریم خصوصی است.",
+    "Step3Title": "نحوه فعال کردن",
+    "Step3Desc": "روی دکمه زیر کلیک کنید تا تنظیمات سیستم شما باز شود، سپس SeaMeet را در لیست ضبط صفحه پیدا کنید و آن را روشن کنید.",
+    "Skip": "فعلا رد شوید",
+    "OpenSettings": "تنظیمات سیستم را باز کنید",
+    "FailedToOpenSettings": "تنظیمات سیستم باز نشد",
+    "DontShowAgain": "دیگر نشان نده"
+  },
   "Apps": {
     "All": "همه برنامه‌ها",
     "Battlenet": "باتل‌نت",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "تخفیف راه‌اندازی",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "ماه اول رایگان — برای ۱۰۰ کاربر اول",
-      "FallbackDesc": "اگر SEAMEET100 تمام شده، به coupon@seameet.ai ایمیل بزنید تا کوپن دیگری دریافت کنید (۱۰٪ تخفیف برای یک سال یا کد ماه اول رایگان دیگر).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "ماه اول رایگان — برای ۱۰۰ کاربر اول",
+      "FallbackDesc": "اگر BYOK100 تمام شده، به coupon@seameet.ai ایمیل بزنید تا کوپن دیگری دریافت کنید (۱۰٪ تخفیف برای یک سال یا کد ماه اول رایگان دیگر).",
       "HowToUse": "کد کوپن را هنگام پرداخت در Stripe وارد کنید."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "ابتدا وارد شوید، سپس پرداخت کنید",
         "ConfirmCancel": "انصراف",
         "ConfirmCopyCheckout": "کپی کد و پرداخت",
-        "InfoNote.Claude": "اگر اشتراک Claude Pro یا Max دارید، به کلید API اضافی Anthropic نیاز ندارید.",
-        "InfoNote.Copilot": "GitHub Copilot هم طرح رایگان دارد.",
-        "InfoNote.Gemini": "Google AI Studio معمولاً یک کلید رایگان به شما می‌دهد."
+        "InfoNoteGemini": "Google AI Studio معمولاً کلید رایگانی در اختیارتان قرار می‌دهد.",
+        "InfoNoteCopilot": "GitHub Copilot نیز یک طرح رایگان دارد.",
+        "InfoNoteClaude": "اگر عضو Claude Pro یا Max هستید، نیازی به کلید API جداگانه از Anthropic ندارید."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,10 +822,11 @@
     "ApplyName": "نام را اعمال کنید",
     "Back": "بازگشت",
     "Cancel": "لغو کنید",
+    "Capture": "گرفتن",
     "Close": "بستن",
     "Configure": "تنظیمات",
     "Delete": "حذف",
-    "Dismiss": "Dismiss",
+    "Dismiss": "رد کردن",
     "Done": "تمام شد",
     "Expand": "نمایش بیشتر",
     "FileNameCopiedWithRenameHint": "{{fileName}} به کلیپ‌بورد کپی شد. برای تغییر نام، دوباره کلیک کنید.",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "شروع فیلم‌برداری ویدئو ناموفق بود: {{message}}",
     "NoAudioSources": "منبع صدای در دسترس نیست",
     "NoSystemAudioSources": "منبع صدای سیستم در دسترس ندارد",
+    "RecordingStalled": "ذخیره‌سازی ضبط متوقف شده است — فایل روی دیسک ممکن است ناقص باشد. لطفاً اکنون ضبط را متوقف کنید تا آنچه ثبت شده ذخیره شود.",
+    "RecordingStorageInterrupted": "ذخیره‌سازی ضبط قطع شد — فایل روی دیسک ممکن است ناقص باشد. لطفاً اکنون ضبط را متوقف کنید تا آنچه ثبت شده ذخیره شود.",
     "SaveFailed": "ضبط ذخیره نشد: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "صفحه‌نمایش",
     "StartRecording": "شروع ضبط",
     "TakeScreenshot": "ثبت تصویر لحظه‌ای"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Display را انتخاب کنید",
+    "PrimaryDisplay": "نمایشگر اولیه",
+    "Display": "نمایش",
+    "SelectWindow": "پنجره را انتخاب کنید",
+    "LoadingWindows": "در حال بارگیری...",
+    "NoWindows": "هیچ ویندوزی در دسترس نیست"
   },
   "FlashbackIndicator": {
     "Buffering": "در حال buffer کردن",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "در حال حاضر صحبت کردن ...",
     "SegmentCount_one": "بخش های {{count}}",
     "SegmentCount_other": "بخش های {{count}}",
+    "Tokens_one": "{{count}} توک",
+    "Tokens_other": "{{count}} توک",
+    "TokensTooltip": "توکن های تجمعی گزارش شده توسط Gemini برای این جلسه",
+    "TokensPendingTooltip": "در انتظار نخستین usageMetadata از Gemini — جلسات صوت بومی فقط در turnComplete گزارش می‌دهند.",
+    "ResetTooltip": "بازنشانی اتصال (برای یک جلسه جدید شیفت کلیک کنید)",
+    "ResetAria": "بازنشانی اتصال Gemini",
     "WaitingForConnection": "در حال اتصال...",
-    "WaitingForSpeech": "منتظر سخنرانی..."
+    "WaitingForSpeech": "منتظر سخنرانی...",
+    "Settings": {
+      "Title": "رونویسی زنده"
+    },
+    "Advanced": {
+      "Model": "مدل زنده",
+      "ModelHint": "۲٫۵ نام‌های واقعی را از زیرنویس‌های صفحه استخراج می‌کند. ۳٫۱ حدود ۲٫۴× ارزان‌تر است، اما هم‌اکنون گویندگان را با [Speaker 1]، [Speaker 2]… برچسب می‌زند.",
+      "TurnCoverage": "پوشش فریم‌های ویدیویی",
+      "TurnCoverageDefault": "پیش‌فرض (به ازای هر مدل)",
+      "TurnCoverageOnlyActivity": "فقط هنگام گفتار — ارزان‌ترین",
+      "TurnCoverageAllInput": "هر فریم — بهترین برای خواندن اسامی روی صفحه",
+      "TurnCoverageHint": "پیش‌فرض ۲٫۵: فقط هنگام گفتار. پیش‌فرض ۳٫۱: هر فریم ویدیو (حتی در سکوت پلاک‌ها را می‌خواند).",
+      "SendVideo": "ارسال فریم‌های ویدیویی",
+      "VideoFps": "نرخ فریم",
+      "EndSensitivity": "حساسیت پایان گفتار",
+      "Default": "پیش‌فرض (HIGH — فلاش سریع)",
+      "SilenceMs": "سکوت پیش از پایان نوبت",
+      "VadHint": "سکوت کمتر + حساسیت HIGH ← فلاش‌های رونوشتی کوتاه‌تر و مکررتر.",
+      "Reset": "بازنشانی همه به پیش‌فرض‌ها"
+    }
   },
   "GeminiTranscription": {
     "Title": "رونویسی زنده"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "هرگز ضبط نکن"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} تکه ها",
+    "ChunksTooltip": "تکه های پردازش شده",
+    "Tokens_one": "{{count}} توک",
+    "Tokens_other": "{{count}} توک",
     "Done": "خلاصه آماده است",
     "Error": "پردازش انجام نشد",
     "Progress": "پردازش تکه {{current}} از {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "ضبط ناحیه دلخواه",
     "CaptureMode": "حالت ضبط",
     "FullScreen": "تمام‌صفحه",
+    "WindowCapture": "پنجره",
     "RecordAudio": "صدا",
     "RecordAudioTip": "تنها ضبط صدا",
     "RecordFullscreen": "تمام‌صفحه",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "کپی نام فایل",
     "CopyFilePath": "کپی مسیر فایل",
+    "FileDeletedExternally": "ضبط به صورت خارجی حذف شد، از لیست حذف شد",
     "FileNameCopied": "{{fileName}} در کلیپ‌بورد کپی شد",
     "FilePathCopied": "مسیر فایل در کلیپ‌بورد کپی شد",
     "OpenSaveFolder": "باز کردن پوشه",
@@ -1344,25 +1403,34 @@
     "SearchRecordingsOrSnapshots": "جست‌وجو در ضبط‌ها و تصاویر لحظه‌ای",
     "ShowInFolder": "نشان دادن در پوشه"
   },
+  "PermissionAlert": {
+    "Title": "مجوز لازم است",
+    "Description": "برای ادامه به مجوز اضافی برای SeaMeet نیاز است.",
+    "OpenSettings": "باز کردن تنظیمات سیستم",
+    "ClickToOpen": "برای باز کردن تنظیمات کلیک کنید",
+    "NoPermissionFullscreen": "ضبط تمام‌صفحه به مجوز ضبط صفحه نیاز دارد.",
+    "NoPermissionWindow": "ضبط پنجره به مجوز ضبط صفحه نیاز دارد."
+  },
   "RegionSelector": {
     "CaptureButton": "گرفتن تصویر صفحه یا فشردن Enter",
     "ConfirmButton": "تایید انتخاب",
     "Monitor": "مانیتور",
     "PrimaryMonitor": "مانیتور اولیه",
     "StartRecording": "شروع به ضبط کنید",
-    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Coordinates": "X: {{x}}، Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "Selected": "انتخاب‌شده",
+    "PresetFreeform": "فرم آزاد",
+    "Preset1619": "16:9 افقی",
+    "Preset43": "4:3 افقی",
+    "Preset2119": "21:9 فوق عریض",
+    "Preset916": "9:16 عمودی",
+    "Preset34": "3:4 عمودی",
+    "Preset11": "مربع 1:1",
+    "ShortcutCancel": "لغو",
+    "ShortcutCapture": "گرفتن",
+    "ShortcutConfirm": "تایید کنید",
+    "AspectRatio": "نسبت تصویر"
   },
   "Resume": "رزومه",
   "RingMenu": {
@@ -1413,6 +1481,7 @@
     "Ocr": "استخراج متن (OCR)",
     "OcrSub": "تمام متن های قابل مشاهده را بخوانید",
     "PipelineError": "پردازش هوش مصنوعی ناموفق بود. لطفا دوباره امتحان کنید.",
+    "Processing": "در حال پردازش...",
     "ProcessingWithTime": "در حال پردازش... {{sec}}s",
     "Queuing": "در صف...",
     "ResultLabel": "نتیجه هوش مصنوعی",
@@ -1652,6 +1721,7 @@
     "Both": "هر دو (مختلط)",
     "File": "فایل",
     "Microphone": "میکروفون",
+    "Audio": "صوتی",
     "System": "خروجی صوتی سیستم",
     "Video": "ویدیو"
   },
@@ -1685,7 +1755,7 @@
     "GotIt": "متوجه شدم"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "عامل هوش مصنوعی",
     "AIAgentDesc": "رونویسی زنده و تعامل با هوش مصنوعی با اشتراک در دسترس است.",
     "PostMeetingAI": "هوش مصنوعی پس از جلسه",
     "PostMeetingAIDesc": "خلاصه‌ها، موارد اقدام و بینش‌ها پس از پایان ضبط تولید خواهند شد.",

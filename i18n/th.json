@@ -121,7 +121,9 @@
     "ShowAllModels": "แสดงทั้งหมด {{count}} โมเดล",
     "ShowFewerModels": "แสดงน้อยลง",
     "ShowKey": "แสดงกุญแจ",
-    "TestKey": "บันทึกและยืนยัน"
+    "TestKey": "บันทึกและยืนยัน",
+    "SummaryLanguage": "ภาษาผลลัพธ์ของสรุป",
+    "SummaryLanguageDesc": "ใช้กับคำบรรยาย สรุป และบท การตรวจจับอัตโนมัติจะตรงกับภาษาที่พูด"
   },
   "AISummary": {
     "ApplyMerge": "นำไปใช้",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "เซิร์ฟเวอร์ AI พบข้อผิดพลาด",
       "NETWORK_ERROR": "ข้อผิดพลาดของเครือข่าย ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ",
       "PARSE_ERROR": "ไม่สามารถแยกวิเคราะห์การตอบสนองของ AI",
+      "EMPTY_RECORDING": "ไฟล์บันทึกว่างเปล่า — ไม่มีอะไรให้วิเคราะห์",
+      "INVALID_DURATION": "ไม่ทราบระยะเวลาของการบันทึก ไม่สามารถประมวลผลได้",
+      "CANCELLED": "ยกเลิกการประมวลผลแล้ว",
       "UNKNOWN_ERROR": "การประมวลผล AI ล้มเหลว"
     },
     "Error": "ไม่สามารถโหลดสรุป: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "การบันทึกหยุดชั่วคราว",
     "UnknownError": "ข้อผิดพลาดที่ไม่ทราบสาเหตุ"
   },
+  "PermissionTutorial": {
+    "Step1Title": "ยินดีต้อนรับสู่ SeaMeet",
+    "Step1Desc": "SeaMeet เป็นเครื่องมือบันทึกหน้าจอและเสียงที่ทรงพลัง ในการเริ่มต้น เราต้องขออนุญาตบันทึกหน้าจอของคุณ",
+    "Step2Title": "สิทธิ์การบันทึกหน้าจอ",
+    "Step2Desc": "ระบบปฏิบัติการของคุณกำหนดให้ต้องได้รับสิทธิ์อย่างชัดเจนก่อนที่แอปใด ๆ จะจับภาพหน้าจอได้ เป็นฟีเจอร์ปกป้องความเป็นส่วนตัว",
+    "Step3Title": "วิธีเปิดใช้งาน",
+    "Step3Desc": "คลิกปุ่มด้านล่างเพื่อเปิดการตั้งค่าระบบ จากนั้นหา SeaMeet ในรายการบันทึกหน้าจอแล้วเปิดใช้งาน",
+    "Skip": "ข้ามไปก่อน",
+    "OpenSettings": "เปิดการตั้งค่าระบบ",
+    "FailedToOpenSettings": "เปิดการตั้งค่าระบบไม่สำเร็จ",
+    "DontShowAgain": "ไม่ต้องแสดงอีก"
+  },
   "Apps": {
     "All": "แอปพลิเคชันทั้งหมด",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "โปรโมชันเปิดตัว",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "เดือนแรกฟรี — สำหรับ 100 ผู้ใช้แรก",
-      "FallbackDesc": "หาก SEAMEET100 ถูกใช้หมดแล้ว ส่งอีเมลไปที่ coupon@seameet.ai เพื่อรับคูปองอื่น (ส่วนลด 10% เป็นเวลาหนึ่งปี หรือรหัสเดือนแรกฟรีอีกรหัส)",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "เดือนแรกฟรี — สำหรับ 100 ผู้ใช้แรก",
+      "FallbackDesc": "หาก BYOK100 ถูกใช้หมดแล้ว ส่งอีเมลไปที่ coupon@seameet.ai เพื่อรับคูปองอื่น (ส่วนลด 10% เป็นเวลาหนึ่งปี หรือรหัสเดือนแรกฟรีอีกรหัส)",
       "HowToUse": "ป้อนรหัสคูปองที่หน้าชำระเงิน Stripe"
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "ลงชื่อเข้าใช้ก่อน แล้วชำระเงิน",
         "ConfirmCancel": "ยกเลิก",
         "ConfirmCopyCheckout": "คัดลอกรหัสและชำระเงิน",
-        "InfoNote.Claude": "หากคุณสมัครสมาชิก Claude Pro หรือ Max คุณไม่จำเป็นต้องใช้ API key ของ Anthropic เพิ่มเติม",
-        "InfoNote.Copilot": "GitHub Copilot ก็มีแผนฟรีเช่นกัน",
-        "InfoNote.Gemini": "Google AI Studio มักจะให้ key ฟรี"
+        "InfoNoteGemini": "โดยปกติ Google AI Studio จะให้คีย์ฟรีแก่คุณ",
+        "InfoNoteCopilot": "GitHub Copilot ก็มีแพ็กเกจฟรีเช่นกัน",
+        "InfoNoteClaude": "หากคุณสมัครสมาชิก Claude Pro หรือ Max แล้ว คุณไม่ต้องใช้คีย์ API เพิ่มเติมของ Anthropic"
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "ตั้งชื่อ",
     "Back": "ย้อนกลับ",
     "Cancel": "ยกเลิก",
+    "Capture": "จับภาพ",
     "Close": "ปิด",
     "Configure": "การกำหนดค่า",
     "Delete": "ลบ",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "ไม่สามารถเริ่มการบันทึกวิดีโอ: {{message}}",
     "NoAudioSources": "ไม่มีแหล่งเสียงระบบให้เลือก",
     "NoSystemAudioSources": "ไม่มีแหล่งเสียงระบบให้เลือก",
+    "RecordingStalled": "การบันทึกข้อมูลการบันทึกหยุดชะงัก — ไฟล์บนดิสก์อาจไม่สมบูรณ์ โปรดหยุดการบันทึกตอนนี้เพื่อบันทึกสิ่งที่ถ่ายไว้",
+    "RecordingStorageInterrupted": "ที่เก็บข้อมูลการบันทึกถูกขัดจังหวะ — ไฟล์บนดิสก์อาจไม่สมบูรณ์ โปรดหยุดการบันทึกตอนนี้เพื่อบันทึกสิ่งที่ถ่ายไว้",
     "SaveFailed": "ไม่สามารถบันทึกการบันทึก: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "จอภาพ",
     "StartRecording": "เริ่มการบันทึก",
     "TakeScreenshot": "ถ่ายภาพหน้าจอ"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "เลือกจอแสดงผล",
+    "PrimaryDisplay": "จอแสดงผลหลัก",
+    "Display": "จอแสดงผล",
+    "SelectWindow": "เลือกหน้าต่าง",
+    "LoadingWindows": "กำลังโหลด...",
+    "NoWindows": "ไม่มีหน้าต่างที่ใช้งานได้"
   },
   "FlashbackIndicator": {
     "Buffering": "กำลังบัฟเฟอร์",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "กำลังพูดอยู่...",
     "SegmentCount_one": "{{count}} ส่วน",
     "SegmentCount_other": "{{count}} ส่วน",
+    "Tokens_one": "{{count}} โทเค็น",
+    "Tokens_other": "{{count}} โทเค็น",
+    "TokensTooltip": "จำนวนโทเค็นรวมที่ Gemini รายงานสำหรับเซสชันนี้",
+    "TokensPendingTooltip": "กำลังรอ usageMetadata แรกจาก Gemini — เซสชัน native-audio รายงานเฉพาะที่ turnComplete เท่านั้น",
+    "ResetTooltip": "รีเซ็ตการเชื่อมต่อ (Shift+คลิกเพื่อเริ่มเซสชันใหม่)",
+    "ResetAria": "รีเซ็ตการเชื่อมต่อ Gemini",
     "WaitingForConnection": "กำลังเชื่อมต่อ...",
-    "WaitingForSpeech": "กำลังรอคำพูด..."
+    "WaitingForSpeech": "กำลังรอคำพูด...",
+    "Settings": {
+      "Title": "การถอดเสียงสด"
+    },
+    "Advanced": {
+      "Model": "โมเดลสด",
+      "ModelHint": "2.5 ดึงชื่อจริงจากแถบคำบรรยายบนหน้าจอได้ 3.1 ถูกกว่าประมาณ 2.4× แต่ปัจจุบันแสดงผู้พูดเป็น [Speaker 1], [Speaker 2] เท่านั้น",
+      "TurnCoverage": "การครอบคลุมเฟรมวิดีโอ",
+      "TurnCoverageDefault": "ค่าเริ่มต้น (ตามโมเดล)",
+      "TurnCoverageOnlyActivity": "เฉพาะขณะพูด — ถูกที่สุด",
+      "TurnCoverageAllInput": "ทุกเฟรม — ดีที่สุดสำหรับชื่อบนหน้าจอ",
+      "TurnCoverageHint": "ค่าเริ่มต้น 2.5: เฉพาะขณะพูด ค่าเริ่มต้น 3.1: ทุกเฟรมวิดีโอ (อ่านแถบชื่อได้แม้ขณะเงียบ)",
+      "SendVideo": "ส่งเฟรมวิดีโอ",
+      "VideoFps": "อัตราเฟรม",
+      "EndSensitivity": "ความไวสิ้นสุดการพูด",
+      "Default": "ค่าเริ่มต้น (HIGH — ฟลัชเร็ว)",
+      "SilenceMs": "ความเงียบก่อนสิ้นสุดเทิร์น",
+      "VadHint": "ความเงียบสั้นลง + ความไว HIGH → ฟลัชคำบรรยายสั้นลงและถี่ขึ้น",
+      "Reset": "รีเซ็ตทั้งหมดเป็นค่าเริ่มต้น"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "ไม่บันทึกเสียง"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} ส่วน",
+    "ChunksTooltip": "ส่วนที่ประมวลผลแล้ว",
+    "Tokens_one": "{{count}} โทเค็น",
+    "Tokens_other": "{{count}} โทเค็น",
     "Done": "สรุปพร้อม.",
     "Error": "การประมวลผลล้มเหลว",
     "Progress": "กำลังประมวลผลก้อน {{current}} จาก {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "การจับภาพพื้นที่",
     "CaptureMode": "โหมดการจับภาพ",
     "FullScreen": "จอภาพเต็มจอ",
+    "WindowCapture": "หน้าต่าง",
     "RecordAudio": "เสียง",
     "RecordAudioTip": "บันทึกเสียงเท่านั้น",
     "RecordFullscreen": "จอภาพเต็มจอ",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "คัดลอกชื่อไฟล์",
     "CopyFilePath": "คัดลอกเส้นทางไฟล์",
+    "FileDeletedExternally": "การบันทึกถูกลบจากภายนอกและลบออกจากรายการแล้ว",
     "FileNameCopied": "{{fileName}} คัดลอกไปยังคลิปบอร์ด",
     "FilePathCopied": "เส้นทางไฟล์คัดลอกไปยังคลิปบอร์ด",
     "OpenSaveFolder": "เปิดโฟลเดอร์",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "ค้นหาเสียงบันทึกและภาพนิ่ง",
     "ShowInFolder": "แสดงในโฟลเดอร์"
   },
+  "PermissionAlert": {
+    "Title": "ต้องได้รับสิทธิ์",
+    "Description": "SeaMeet ต้องการสิทธิ์เพิ่มเติมเพื่อดำเนินการต่อ",
+    "OpenSettings": "เปิดการตั้งค่าระบบ",
+    "ClickToOpen": "คลิกเพื่อเปิดการตั้งค่า",
+    "NoPermissionFullscreen": "การบันทึกเต็มหน้าจอต้องใช้สิทธิ์การบันทึกหน้าจอ",
+    "NoPermissionWindow": "การบันทึกหน้าต่างต้องใช้สิทธิ์การบันทึกหน้าจอ"
+  },
   "RegionSelector": {
     "CaptureButton": "จับภาพหน้าจอหรือกด Enter",
     "ConfirmButton": "ยืนยันการเลือก",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "เลือกแล้ว",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "แยกข้อความ (OCR)",
     "OcrSub": "อ่านข้อความที่มองเห็นทั้งหมด",
     "PipelineError": "การประมวลผล AI ล้มเหลว โปรดลองอีกครั้ง",
+    "Processing": "กำลังประมวลผล...",
     "ProcessingWithTime": "กำลังประมวลผล... {{sec}}s",
     "Queuing": "กำลังเข้าคิว...",
     "ResultLabel": "ผลลัพธ์เอไอ",
@@ -1652,6 +1721,7 @@
     "Both": "ทั้งสอง",
     "File": "ไฟล์",
     "Microphone": "ไมโครโฟน",
+    "Audio": "เสียง",
     "System": "เสียงเอาท์พุตระบบ",
     "Video": "วิดีโอ"
   },

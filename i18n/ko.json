@@ -121,7 +121,9 @@
     "ShowAllModels": "전체 {{count}}개 모델 보기",
     "ShowFewerModels": "모델 접기",
     "ShowKey": "키 표시",
-    "TestKey": "저장 및 확인"
+    "TestKey": "저장 및 확인",
+    "SummaryLanguage": "요약 출력 언어",
+    "SummaryLanguageDesc": "전사·요약·챕터에 적용됩니다. 자동 감지는 발화 언어를 따릅니다."
   },
   "AISummary": {
     "ApplyMerge": "적용",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "AI 서버에 오류가 발생했습니다.",
       "NETWORK_ERROR": "네트워크 오류입니다. 인터넷 연결을 확인하세요.",
       "PARSE_ERROR": "AI 응답을 구문 분석하지 못했습니다.",
+      "EMPTY_RECORDING": "녹음 파일이 비어 있어 분석할 내용이 없습니다.",
+      "INVALID_DURATION": "녹음 길이를 알 수 없어 처리할 수 없습니다.",
+      "CANCELLED": "처리가 취소되었습니다.",
       "UNKNOWN_ERROR": "AI 처리에 실패했습니다."
     },
     "Error": "요약을 로드하지 못했습니다: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "녹음 일시 중지됨",
     "UnknownError": "알 수 없는 오류"
   },
+  "PermissionTutorial": {
+    "Step1Title": "SeaMeet에 오신 것을 환영합니다",
+    "Step1Desc": "SeaMeet는 강력한 화면 및 오디오 녹화 도구입니다. 시작하려면 화면을 녹화할 권한이 필요합니다.",
+    "Step2Title": "화면 녹화 권한",
+    "Step2Desc": "운영 체제는 모든 앱이 화면을 캡처하기 전에 명시적 권한을 요구합니다. 이는 개인정보 보호 기능입니다.",
+    "Step3Title": "사용 설정 방법",
+    "Step3Desc": "아래 버튼을 클릭해 시스템 설정을 연 뒤, 화면 기록 목록에서 SeaMeet을 찾아 켜세요.",
+    "Skip": "나중에 하기",
+    "OpenSettings": "시스템 설정 열기",
+    "FailedToOpenSettings": "시스템 설정을 열지 못했습니다",
+    "DontShowAgain": "다시 표시하지 않음"
+  },
   "Apps": {
     "All": "모든 앱",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "런칭 프로모션",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "첫 달 무료 — 선착순 100명",
-      "FallbackDesc": "SEAMEET100이 소진되면 coupon@seameet.ai로 이메일하여 다른 쿠폰을 받으세요 (1년간 10% 할인 또는 다른 첫 달 무료 코드).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "첫 달 무료 — 선착순 100명",
+      "FallbackDesc": "BYOK100이 소진되면 coupon@seameet.ai로 이메일하여 다른 쿠폰을 받으세요 (1년간 10% 할인 또는 다른 첫 달 무료 코드).",
       "HowToUse": "Stripe 결제 시 쿠폰 코드를 입력하세요."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "먼저 로그인한 후 결제",
         "ConfirmCancel": "취소",
         "ConfirmCopyCheckout": "코드 복사 및 결제",
-        "InfoNote.Claude": "Claude Pro 또는 Max 플랜에 가입한 경우, 추가 Anthropic API 키가 필요하지 않습니다.",
-        "InfoNote.Copilot": "GitHub Copilot에도 무료 플랜이 있습니다.",
-        "InfoNote.Gemini": "Google AI Studio에서 보통 무료 키를 제공합니다."
+        "InfoNoteGemini": "Google AI Studio에서 보통 무료 키를 받을 수 있습니다.",
+        "InfoNoteCopilot": "GitHub Copilot에도 무료 요금제가 있습니다.",
+        "InfoNoteClaude": "Claude Pro 또는 Max를 구독 중이라면 별도의 Anthropic API 키가 필요 없습니다."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "이름 적용",
     "Back": "뒤로",
     "Cancel": "취소",
+    "Capture": "캡처",
     "Close": "닫기",
     "Configure": "설정",
     "Delete": "삭제",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "비디오 녹화 시작 실패: {{message}}",
     "NoAudioSources": "사용 가능한 오디오 소스가 없습니다",
     "NoSystemAudioSources": "사용 가능한 시스템 오디오 소스가 없습니다",
+    "RecordingStalled": "녹음 저장이 멈췄습니다 — 디스크의 파일이 불완전할 수 있습니다. 지금 녹음을 중지하여 캡처된 내용을 저장하세요.",
+    "RecordingStorageInterrupted": "녹음 저장소가 중단되었습니다 — 디스크의 파일이 불완전할 수 있습니다. 지금 녹음을 중지하여 캡처된 내용을 저장하세요.",
     "SaveFailed": "녹음 저장 실패: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "화면",
     "StartRecording": "녹음 시작",
     "TakeScreenshot": "화면 캡처"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "디스플레이 선택",
+    "PrimaryDisplay": "기본 디스플레이",
+    "Display": "디스플레이",
+    "SelectWindow": "창 선택",
+    "LoadingWindows": "불러오는 중...",
+    "NoWindows": "사용 가능한 창이 없습니다"
   },
   "FlashbackIndicator": {
     "Buffering": "버퍼링 중",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "지금 말하는 중...",
     "SegmentCount_one": "{{count}} 세그먼트",
     "SegmentCount_other": "{{count}} 세그먼트",
+    "Tokens_one": "{{count}} 토큰",
+    "Tokens_other": "{{count}} 토큰",
+    "TokensTooltip": "이 세션에서 Gemini가 보고한 누적 토큰",
+    "TokensPendingTooltip": "Gemini의 첫 번째 usageMetadata를 기다리는 중 — native-audio 세션은 turnComplete에서만 보고합니다.",
+    "ResetTooltip": "연결 재설정 (Shift+클릭하면 새 세션)",
+    "ResetAria": "Gemini 연결 재설정",
     "WaitingForConnection": "연결 중...",
-    "WaitingForSpeech": "연설을 기다리는 중..."
+    "WaitingForSpeech": "연설을 기다리는 중...",
+    "Settings": {
+      "Title": "실시간 전사"
+    },
+    "Advanced": {
+      "Model": "실시간 모델",
+      "ModelHint": "2.5는 화면 자막에서 실제 이름을 추출합니다. 3.1은 약 2.4배 저렴하지만 현재 화자를 [Speaker 1], [Speaker 2] 등으로만 레이블링합니다.",
+      "TurnCoverage": "비디오 프레임 범위",
+      "TurnCoverageDefault": "기본값(모델별)",
+      "TurnCoverageOnlyActivity": "발화 중에만 — 가장 저렴",
+      "TurnCoverageAllInput": "모든 프레임 — 화면 이름 인식에 최적",
+      "TurnCoverageHint": "2.5 기본: 발화 중에만. 3.1 기본: 모든 비디오 프레임(무음에도 이름표 인식).",
+      "SendVideo": "비디오 프레임 전송",
+      "VideoFps": "프레임 속도",
+      "EndSensitivity": "발화 종료 민감도",
+      "Default": "기본값(HIGH — 빠른 플러시)",
+      "SilenceMs": "턴 종료 전 무음 시간",
+      "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
+      "Reset": "모두 기본값으로 재설정"
+    }
   },
   "GeminiTranscription": {
     "Title": "실시간 전사"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "녹음 없음"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} 청크",
+    "ChunksTooltip": "처리된 청크",
+    "Tokens_one": "{{count}} 토큰",
+    "Tokens_other": "{{count}} 토큰",
     "Done": "요약 준비됨",
     "Error": "처리 실패",
     "Progress": "{{total}}의 청크 {{current}} 처리 중",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "영역 캡처",
     "CaptureMode": "캡처 모드",
     "FullScreen": "전체 화면",
+    "WindowCapture": "창",
     "RecordAudio": "오디오 녹음",
     "RecordAudioTip": "오디오만",
     "RecordFullscreen": "전체 화면 기록",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "파일 이름 복사",
     "CopyFilePath": "파일 경로 복사",
+    "FileDeletedExternally": "녹음이 앱 외부에서 삭제되어 목록에서 제거되었습니다",
     "FileNameCopied": "\"{{fileName}}이(가) 클립보드에 복사되었습니다\"",
     "FilePathCopied": "파일 경로가 클립보드에 복사되었습니다",
     "OpenSaveFolder": "폴더 열기",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "녹음 또는 스냅샷 검색",
     "ShowInFolder": "폴더에서 보여주기"
   },
+  "PermissionAlert": {
+    "Title": "권한 필요",
+    "Description": "계속하려면 SeaMeet에 추가 권한이 필요합니다.",
+    "OpenSettings": "시스템 설정 열기",
+    "ClickToOpen": "설정을 열려면 클릭",
+    "NoPermissionFullscreen": "전체 화면 녹화는 화면 기록 권한이 필요합니다.",
+    "NoPermissionWindow": "창 녹화는 화면 기록 권한이 필요합니다."
+  },
   "RegionSelector": {
     "CaptureButton": "화면 캡처 또는 Enter 키 누르기",
     "ConfirmButton": "선택 확인",
@@ -1352,6 +1419,7 @@
     "StartRecording": "녹음 시작",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "선택됨",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "텍스트 추출(OCR)",
     "OcrSub": "보이는 모든 텍스트 읽기",
     "PipelineError": "AI 처리에 실패했습니다. 다시 시도해 주세요.",
+    "Processing": "처리 중...",
     "ProcessingWithTime": "처리 중... {{sec}}s",
     "Queuing": "대기 중...",
     "ResultLabel": "AI 결과",
@@ -1652,6 +1721,7 @@
     "Both": "둘 다 (복합)",
     "File": "파일",
     "Microphone": "마이크로폰",
+    "Audio": "오디오",
     "System": "시스템 오디오 출력",
     "Video": "동영상"
   },

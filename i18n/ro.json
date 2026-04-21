@@ -121,7 +121,9 @@
     "ShowAllModels": "Afișează toate cele {{count}} modele",
     "ShowFewerModels": "Afișează mai puține modele",
     "ShowKey": "Afișați cheia",
-    "TestKey": "Salvați și verificați"
+    "TestKey": "Salvați și verificați",
+    "SummaryLanguage": "Limba de ieșire a rezumatului",
+    "SummaryLanguageDesc": "Se aplică transcrierii, rezumatului și capitolelor. Detectarea automată urmează limba vorbită."
   },
   "AISummary": {
     "ApplyMerge": "Aplicare",
@@ -139,6 +141,9 @@
       "SERVER_ERROR": "Serverul AI a întâmpinat o eroare.",
       "NETWORK_ERROR": "Eroare de rețea. Verificați-vă conexiunea la internet.",
       "PARSE_ERROR": "Nu s-a putut analiza răspunsul AI.",
+      "EMPTY_RECORDING": "Fișierul de înregistrare este gol — nimic de analizat.",
+      "INVALID_DURATION": "Durata înregistrării este necunoscută; nu se poate procesa.",
+      "CANCELLED": "Procesarea a fost anulată.",
       "UNKNOWN_ERROR": "Procesarea AI a eșuat."
     },
     "Error": "Rezumatul nu a putut fi încărcat: {{error}}",
@@ -320,6 +325,18 @@
     "RecordingPaused": "Înregistrare întreruptă",
     "UnknownError": "eroare necunoscută"
   },
+  "PermissionTutorial": {
+    "Step1Title": "Bun venit în SeaMeet",
+    "Step1Desc": "SeaMeet este un instrument puternic de înregistrare a ecranului și a sunetului. Pentru a începe, avem nevoie de permisiunea ta pentru a înregistra ecranul.",
+    "Step2Title": "Permisiune de înregistrare a ecranului",
+    "Step2Desc": "Sistemul tău de operare cere permisiune explicită înainte ca o aplicație să captureze ecranul. Este o funcție de protecție a confidențialității.",
+    "Step3Title": "Cum să activezi",
+    "Step3Desc": "Apasă butonul de mai jos pentru a deschide setările de sistem, apoi găsește SeaMeet în lista Înregistrare ecran și activează-l.",
+    "Skip": "Omite pentru moment",
+    "OpenSettings": "Deschide setările de sistem",
+    "FailedToOpenSettings": "Deschiderea setărilor de sistem a eșuat",
+    "DontShowAgain": "Nu mai afișa"
+  },
   "Apps": {
     "All": "Toate aplicațiile",
     "Battlenet": "Battle.net",
@@ -465,9 +482,9 @@
     },
     "Coupon": {
       "Title": "Promoție de lansare",
-      "SEAMEET100": "SEAMEET100",
-      "SEAMEET100Desc": "Prima lună gratuită — pentru primii 100 de utilizatori",
-      "FallbackDesc": "Dacă SEAMEET100 s-a epuizat, trimiteți un e-mail la coupon@seameet.ai pentru a obține alt cupon (10% reducere pe un an sau alt cod cu prima lună gratuită).",
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "Prima lună gratuită — pentru primii 100 de utilizatori",
+      "FallbackDesc": "Dacă BYOK100 s-a epuizat, trimiteți un e-mail la coupon@seameet.ai pentru a obține alt cupon (10% reducere pe un an sau alt cod cu prima lună gratuită).",
       "HowToUse": "Introduceți codul cuponului la plata Stripe."
     },
     "PostSetup": {
@@ -655,9 +672,9 @@
         "ConfirmSignIn": "Autentifica-te mai intai, apoi plateste",
         "ConfirmCancel": "Anuleaza",
         "ConfirmCopyCheckout": "Copiază codul și plătește",
-        "InfoNote.Claude": "Dacă aveți un abonament Claude Pro sau Max, nu aveți nevoie de o cheie API Anthropic suplimentară.",
-        "InfoNote.Copilot": "GitHub Copilot are și un plan gratuit.",
-        "InfoNote.Gemini": "Google AI Studio de obicei vă oferă o cheie gratuită."
+        "InfoNoteGemini": "Google AI Studio îți oferă de obicei o cheie gratuită.",
+        "InfoNoteCopilot": "GitHub Copilot are de asemenea un plan gratuit.",
+        "InfoNoteClaude": "Dacă ai abonament Claude Pro sau Max, nu mai ai nevoie de o cheie API Anthropic suplimentară."
       },
       "Desktop": {
         "Name": "Desktop Pro",
@@ -805,6 +822,7 @@
     "ApplyName": "Aplică numele",
     "Back": "Înapoi",
     "Cancel": "Anulare",
+    "Capture": "Capturare",
     "Close": "Închide",
     "Configure": "Configurează",
     "Delete": "Șterge",
@@ -840,6 +858,8 @@
     "FailedToStartVideoRecording": "Startul înregistrării video nu a reușit: {{message}}",
     "NoAudioSources": "Nu sunt disponibile surse audio",
     "NoSystemAudioSources": "Nu sunt disponibile surse audio de sistem",
+    "RecordingStalled": "Salvarea înregistrării s-a oprit — fișierul de pe disc poate fi incomplet. Opriți înregistrarea acum pentru a salva ceea ce a fost capturat.",
+    "RecordingStorageInterrupted": "Stocarea înregistrării a fost întreruptă — fișierul de pe disc poate fi incomplet. Opriți înregistrarea acum pentru a salva ceea ce a fost capturat.",
     "SaveFailed": "Nu s-a salvat înregistrarea: {{message}}"
   },
   "Events": {
@@ -923,6 +943,14 @@
     "Screen": "Ecran",
     "StartRecording": "Pornește înregistrarea",
     "TakeScreenshot": "Fă Screenshot"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Selectează ecran",
+    "PrimaryDisplay": "Ecran principal",
+    "Display": "Ecran",
+    "SelectWindow": "Selectează fereastră",
+    "LoadingWindows": "Se încarcă...",
+    "NoWindows": "Nicio fereastră disponibilă"
   },
   "FlashbackIndicator": {
     "Buffering": "În tamponare",
@@ -1113,8 +1141,33 @@
     "NowSpeaking": "Acum vorbind...",
     "SegmentCount_one": "{{count}} segmente",
     "SegmentCount_other": "{{count}} segmente",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
+    "TokensTooltip": "Numărul total de tokeni raportați de Gemini pentru această sesiune",
+    "TokensPendingTooltip": "În așteptarea primului usageMetadata de la Gemini — sesiunile native-audio raportează doar la turnComplete.",
+    "ResetTooltip": "Resetează conexiunea (Shift+clic pentru o sesiune nouă)",
+    "ResetAria": "Resetează conexiunea Gemini",
     "WaitingForConnection": "Se conectează...",
-    "WaitingForSpeech": "În așteptarea discursului..."
+    "WaitingForSpeech": "În așteptarea discursului...",
+    "Settings": {
+      "Title": "Transcriere în direct"
+    },
+    "Advanced": {
+      "Model": "Model în direct",
+      "ModelHint": "2.5 extrage nume reale din legendele de pe ecran. 3.1 este ~2,4× mai ieftin, dar în prezent etichetează vorbitorii ca [Speaker 1], [Speaker 2]…",
+      "TurnCoverage": "Acoperirea cadrelor video",
+      "TurnCoverageDefault": "Implicit (în funcție de model)",
+      "TurnCoverageOnlyActivity": "Doar în timpul vorbirii — cel mai ieftin",
+      "TurnCoverageAllInput": "Fiecare cadru — cel mai bun pentru nume de pe ecran",
+      "TurnCoverageHint": "Implicit pentru 2.5: doar în timpul vorbirii. Implicit pentru 3.1: fiecare cadru video (citește plăcuțele cu nume chiar și în liniște).",
+      "SendVideo": "Trimite cadre video",
+      "VideoFps": "Rată cadre",
+      "EndSensitivity": "Sensibilitate sfârșit de vorbire",
+      "Default": "Implicit (HIGH — descărcări rapide)",
+      "SilenceMs": "Liniște înainte de sfârșitul turei",
+      "VadHint": "Liniște mai scurtă + sensibilitate HIGH → descărcări de transcriere mai scurte și mai frecvente.",
+      "Reset": "Resetează totul la valorile implicite"
+    }
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
@@ -1255,6 +1308,10 @@
     "NeverRecord": "Nu înregistra niciodată"
   },
   "PipelineStatus": {
+    "Chunks": "{{done}}/{{total}} fragmente",
+    "ChunksTooltip": "Fragmente procesate",
+    "Tokens_one": "{{count}} tok",
+    "Tokens_other": "{{count}} tok",
     "Done": "Rezumatul este gata",
     "Error": "Procesarea nu a reușit",
     "Progress": "Prelucrare bucată {{current}} din {{total}}",
@@ -1316,6 +1373,7 @@
     "AreaCapture": "Captură zonă",
     "CaptureMode": "Mod de captură",
     "FullScreen": "Captură ecran complet",
+    "WindowCapture": "Fereastră",
     "RecordAudio": "audio",
     "RecordAudioTip": "Sunet doar",
     "RecordFullscreen": "Captură ecran complet",
@@ -1333,6 +1391,7 @@
   "RecordingsList": {
     "CopyFileName": "Copiază numele fișierului",
     "CopyFilePath": "Copiază calea fișierului",
+    "FileDeletedExternally": "Înregistrarea a fost ștearsă extern și eliminată din listă",
     "FileNameCopied": "{{fileName}} copiat în clipboard",
     "FilePathCopied": "Calea fișierului a fost copiată în clipboard",
     "OpenSaveFolder": "Afișează în folder",
@@ -1344,6 +1403,14 @@
     "SearchRecordingsOrSnapshots": "Caută înregistrări și instantanee",
     "ShowInFolder": "Afișează în folder"
   },
+  "PermissionAlert": {
+    "Title": "Permisiune necesară",
+    "Description": "SeaMeet are nevoie de o permisiune suplimentară pentru a continua.",
+    "OpenSettings": "Deschide setările de sistem",
+    "ClickToOpen": "Apasă pentru a deschide setările",
+    "NoPermissionFullscreen": "Înregistrarea pe tot ecranul necesită permisiune de Înregistrare ecran.",
+    "NoPermissionWindow": "Înregistrarea ferestrei necesită permisiune de Înregistrare ecran."
+  },
   "RegionSelector": {
     "CaptureButton": "Captură ecran sau apăsați Enter",
     "ConfirmButton": "Confirmați selecția",
@@ -1352,6 +1419,7 @@
     "StartRecording": "Start Recording",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
+    "Selected": "Selectat",
     "PresetFreeform": "Freeform",
     "Preset1619": "16:9 Horizontal",
     "Preset43": "4:3 Horizontal",
@@ -1413,6 +1481,7 @@
     "Ocr": "Extrage text (OCR)",
     "OcrSub": "Citiți tot textul vizibil",
     "PipelineError": "Procesarea AI a eșuat. Vă rugăm să încercați din nou.",
+    "Processing": "Se procesează...",
     "ProcessingWithTime": "Se procesează... {{sec}}s",
     "Queuing": "În coadă...",
     "ResultLabel": "Rezultat AI",
@@ -1652,6 +1721,7 @@
     "Both": "Ambele (Mix)",
     "File": "Fișier",
     "Microphone": "Microfon",
+    "Audio": "Audio",
     "System": "Ieșire audio de sistem",
     "Video": "Video"
   },
