@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Wymaga subskrypcji BYOK Pro. Subskrybuj, aby uzyskać transkrypcję na żywo, podsumowania spotkań AI i interaktywnego agenta AI."
+  },
   "AIAgent": {
     "DisabledBadge": "Wyłączony",
     "DisabledMsg": "Opcja AI Agent & Cowork jest wyłączona. Włącz tę opcję w Ustawieniach → Agent AI i Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Agent AI i współpraca",
     "SubscribeMsg": "Agent AI wymaga subskrypcji BYOK Pro. Subskrybuj, aby uzyskać transkrypcję na żywo, podsumowania spotkań AI i interaktywnego agenta AI.",
     "SubscribeCTA": "Subskrybuj, aby odblokować"
-  },
-  "AI": {
-    "SubscribeMsg": "Wymaga subskrypcji BYOK Pro. Subskrybuj, aby uzyskać transkrypcję na żywo, podsumowania spotkań AI i interaktywnego agenta AI."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Klucz API Gemini",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Nagrywanie wstrzymane",
     "UnknownError": "nieznany błąd"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Witamy w SeaMeet",
-    "Step1Desc": "SeaMeet to zaawansowane narzędzie do nagrywania ekranu i dźwięku. Aby rozpocząć, potrzebujemy Twojej zgody na nagrywanie ekranu.",
-    "Step2Title": "Uprawnienie do nagrywania ekranu",
-    "Step2Desc": "Twój system operacyjny wymaga jednoznacznej zgody, zanim aplikacja zarejestruje ekran. To funkcja ochrony prywatności.",
-    "Step3Title": "Jak włączyć",
-    "Step3Desc": "Kliknij przycisk poniżej, aby otworzyć ustawienia systemu, znajdź SeaMeet na liście Nagrywanie ekranu i włącz go.",
-    "Skip": "Pomiń na razie",
-    "OpenSettings": "Otwórz ustawienia systemu",
-    "FailedToOpenSettings": "Nie udało się otworzyć ustawień systemu",
-    "DontShowAgain": "Nie pokazuj ponownie"
-  },
   "Apps": {
     "All": "Wszystkie aplikacje",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Odśwież listę mikrofonów",
     "UnmuteMic": "Unmute Microphone"
   },
+  "AutoDetectDrawer": {
+    "Title": "Autowykrywanie",
+    "Description": "Obserwuje aplikacje spotkań (Zoom, Teams, Meet…) i oferuje nagrywanie, abyś nie musiał pamiętać o naciśnięciu startu.",
+    "ToggleLabel": "Autowykrywanie {{state}}",
+    "StateOn": "WŁ.",
+    "StateOff": "WYŁ.",
+    "RecentHeading": "Najnowsze wykrycia",
+    "RecentEmpty": "Brak wykryć.",
+    "AdvancedSettings": "Ustawienia zaawansowane →",
+    "LearnMore": "Dowiedz się więcej"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTOMATYCZNE WYKRYCIE",
     "Description": "Funkcja Auto-Detect automatycznie rozpoczyna nagrywanie po dołączeniu do spotkania, dzięki czemu nigdy nie zapomnisz nacisnąć przycisku nagrywania.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Wykorzystuje aktywność mikrofonu, tytuły okien i adresy URL przeglądarki w celu zapewnienia dokładności",
     "Tip2Title": "Wielokrotne metody wykrywania",
     "Title": "Automatyczne wykrywanie spotkań"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Pierwszy raz? Oto jak to działa →"
   },
   "AutoRecording": {
     "BugReport": "Widzisz błąd? Zgłoś to na adres seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Kliknij, aby wywołać Flashback",
     "ToggleLabel": "Przełącz Flashback"
   },
+  "FlashbackDrawer": {
+    "Title": "Retrospekcja",
+    "Description": "Po cichu pamięta ostatnie sekundy, zanim naciśniesz nagrywaj — abyś nie przegapił zdania otwierającego spotkanie.",
+    "StatusOff": "Wyłączone — wybierz tryb poniżej, aby uzbroić.",
+    "StatusCharging": "Ładowanie {{percent}}%…",
+    "StatusReady": "Gotowe — ostatnie {{seconds}}s {{type}}.",
+    "Types": {
+      "audio": "audio",
+      "screen": "ekran"
+    },
+    "ModeLabel": "Co buforować",
+    "ModeOff": "Wył.",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Ekran",
+    "WindowLabel": "Długość bufora",
+    "PrimaryRecord": "Nagraj z preludium {{seconds}}s",
+    "PrimarySave": "Zapisz ostatnie {{seconds}}s",
+    "AdvancedSettings": "Ustawienia zaawansowane →",
+    "LearnMore": "Dowiedz się więcej"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "Ostatnie {{seconds}}s są buforowane tylko w RAM. Dotknij Zapisz lub przycisku nagrywania, aby ich użyć."
+  },
   "FlashbackHeroUI": {
     "Audio": "dźwięk",
     "Buffering": "Buforowanie",
@@ -943,14 +968,6 @@
     "Screen": "Widok ekranu",
     "StartRecording": "Rozpocznij nagrywanie",
     "TakeScreenshot": "Zrób zrzut ekranu"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Wybierz ekran",
-    "PrimaryDisplay": "Ekran główny",
-    "Display": "Ekran",
-    "SelectWindow": "Wybierz okno",
-    "LoadingWindows": "Ładowanie...",
-    "NoWindows": "Brak dostępnych okien"
   },
   "FlashbackIndicator": {
     "Buffering": "Buforowanie",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket połączony",
     "WsDisconnected": "WebSocket rozłączony"
   },
-  "MeetingsTab": {
-    "Download": "Pobierz",
-    "DownloadAudio": "Pobierz audio",
-    "DownloadBoth": "Pobierz oba",
-    "DownloadTxt": "Pobierz .txt",
-    "Empty": "Nie znaleziono spotkań",
-    "Error": "Nie udało się załadować spotkań",
-    "Loading": "Ładowanie spotkań...",
-    "Retry": "Spróbuj ponownie",
-    "SelectWorkspace": "Wybierz obszar roboczy z menu użytkownika, aby wyświetlić spotkania.",
-    "Title": "Spotkania",
-    "Total": "łącznie",
-    "Untitled": "Spotkanie bez tytułu"
-  },
   "MeetingPrompt": {
     "BrowserHint": "Wskazówka: W przypadku spotkań w przeglądarce (Google Meet, Zoom, Teams) mogę wykryć tylko przeglądarkę, a nie konkretną stronę internetową.",
     "ContinueRecording": "Wznów nagrywanie",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Wykryto spotkanie",
     "StopRecording": "Zatrzymaj nagrywanie",
     "Yes": "Rozpocznij nagrywanie"
+  },
+  "MeetingsTab": {
+    "Download": "Pobierz",
+    "DownloadAudio": "Pobierz audio",
+    "DownloadBoth": "Pobierz oba",
+    "DownloadTxt": "Pobierz .txt",
+    "Empty": "Nie znaleziono spotkań",
+    "Error": "Nie udało się załadować spotkań",
+    "Loading": "Ładowanie spotkań...",
+    "Retry": "Spróbuj ponownie",
+    "SelectWorkspace": "Wybierz obszar roboczy z menu użytkownika, aby wyświetlić spotkania.",
+    "Title": "Spotkania",
+    "Total": "łącznie",
+    "Untitled": "Spotkanie bez tytułu"
   },
   "MinimizedView": {
     "ActionRequired": "Działanie wymagane (auto-rozpoczęcie nagrywania)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Auto-wyodrębnianie tekstu (OCR) przy zrzucie ekranu"
   },
   "Pause": "Pauza",
+  "PermissionAlert": {
+    "Title": "Wymagane uprawnienia",
+    "Description": "SeaMeet wymaga dodatkowych uprawnień, aby kontynuować.",
+    "OpenSettings": "Otwórz ustawienia systemu",
+    "ClickToOpen": "Kliknij, aby otworzyć ustawienia",
+    "NoPermissionFullscreen": "Nagrywanie pełnoekranowe wymaga uprawnienia do nagrywania ekranu.",
+    "NoPermissionWindow": "Nagrywanie okna wymaga uprawnienia do nagrywania ekranu."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Witamy w SeaMeet",
+    "Step1Desc": "SeaMeet to zaawansowane narzędzie do nagrywania ekranu i dźwięku. Aby rozpocząć, potrzebujemy Twojej zgody na nagrywanie ekranu.",
+    "Step2Title": "Uprawnienie do nagrywania ekranu",
+    "Step2Desc": "Twój system operacyjny wymaga jednoznacznej zgody, zanim aplikacja zarejestruje ekran. To funkcja ochrony prywatności.",
+    "Step3Title": "Jak włączyć",
+    "Step3Desc": "Kliknij przycisk poniżej, aby otworzyć ustawienia systemu, znajdź SeaMeet na liście Nagrywanie ekranu i włącz go.",
+    "Skip": "Pomiń na razie",
+    "OpenSettings": "Otwórz ustawienia systemu",
+    "FailedToOpenSettings": "Nie udało się otworzyć ustawień systemu",
+    "DontShowAgain": "Nie pokazuj ponownie"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Zawsze auto-nagrywanie",
     "AskEveryTime": "Pytaj za każdym razem",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "informacje o kodeku",
     "MoreOptions": "Więcej opcji"
   },
+  "PostUpdateModal": {
+    "Title": "Zaktualizowano do v{{version}}",
+    "Description": "SeaMeet został pomyślnie zaktualizowany. Co nowego:",
+    "GotIt": "Rozumiem"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Transkrypcja na żywo i interakcja z AI są dostępne w ramach subskrypcji.",
+    "PostMeetingAI": "AI po spotkaniu",
+    "PostMeetingAIDesc": "Podsumowania, elementy działań i wnioski zostaną wygenerowane po zakończeniu nagrywania.",
+    "UnlockPremium": "Odblokuj z Premium",
+    "Upgrade": "Uaktualnij"
+  },
+  "RecordTab": {
+    "TapToRecord": "Dotknij, aby rozpocząć nagrywanie",
+    "RecordWithPreamble": "Nagraj z preludium {{seconds}}s",
+    "SaveLastInstead": "Zapisz ostatnie {{seconds}}s zamiast tego",
+    "AutoDetectStatusOn": "obserwuje spotkania",
+    "AutoDetectStatusOff": "wyłączone — dotknij, aby włączyć",
+    "FlashbackStatusOff": "wyłączone — dotknij, aby uzbroić",
+    "FlashbackStatusCharging": "ładowanie {{percent}}%",
+    "FlashbackStatusReady": "gotowe — {{seconds}}s {{type}} w RAM",
+    "LauncherPill": "Wyrzutnia",
+    "FloaterPill": "Pływak",
+    "AutoDetectLabel": "Autowykrywanie",
+    "FlashbackLabel": "Retrospekcja",
+    "RecentRecordings": "Najnowsze nagrania"
+  },
   "Recording": {
     "Paused": "Paused",
     "Preparing": "Preparing",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Szukaj nagrań i zrzutów ekranu",
     "ShowInFolder": "Pokaż w folderze"
   },
-  "PermissionAlert": {
-    "Title": "Wymagane uprawnienia",
-    "Description": "SeaMeet wymaga dodatkowych uprawnień, aby kontynuować.",
-    "OpenSettings": "Otwórz ustawienia systemu",
-    "ClickToOpen": "Kliknij, aby otworzyć ustawienia",
-    "NoPermissionFullscreen": "Nagrywanie pełnoekranowe wymaga uprawnienia do nagrywania ekranu.",
-    "NoPermissionWindow": "Nagrywanie okna wymaga uprawnienia do nagrywania ekranu."
-  },
   "RegionSelector": {
     "CaptureButton": "Zrób zrzut ekranu lub naciśnij Enter",
     "ConfirmButton": "Potwierdź wybór",
@@ -1454,6 +1511,14 @@
     "Title": "Wybierz wyświetlacz",
     "Unknown": "Wyświetlacz bez tytułu"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Wybierz ekran",
+    "PrimaryDisplay": "Ekran główny",
+    "Display": "Ekran",
+    "SelectWindow": "Wybierz okno",
+    "LoadingWindows": "Ładowanie...",
+    "NoWindows": "Brak dostępnych okien"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Analiza",
     "ConfigureApiKey": "Skonfiguruj klucz API Gemini, aby przetwarzać obrazy za pomocą AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Tekst (OCR)"
     },
     "UnknownError": "Nieznany błąd"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Najnowsze zrzuty ekranu"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Skopiowano!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Spotkania",
     "OpenNavigationMenu": "Otwórz menu nawigacyjne",
     "Record": "Nagrywać",
-    "Recording": "Nagranie"
+    "Recording": "Nagranie",
+    "Screenshot": "Zrzut ekranu"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet nadal działa w pasku systemowym (prawy dolny róg).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Nowości:",
     "WhatsNewInVersion": "Nowości w {{version}}?",
     "Restarting": "Ponowne uruchamianie..."
-  },
-  "PostUpdateModal": {
-    "Title": "Zaktualizowano do v{{version}}",
-    "Description": "SeaMeet został pomyślnie zaktualizowany. Co nowego:",
-    "GotIt": "Rozumiem"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Transkrypcja na żywo i interakcja z AI są dostępne w ramach subskrypcji.",
-    "PostMeetingAI": "AI po spotkaniu",
-    "PostMeetingAIDesc": "Podsumowania, elementy działań i wnioski zostaną wygenerowane po zakończeniu nagrywania.",
-    "UnlockPremium": "Odblokuj z Premium",
-    "Upgrade": "Uaktualnij"
   },
   "UserMenu": {
     "AboutSeaMeet": "O SeaMeecie",
@@ -1807,7 +1863,7 @@
       "VP9": "To nagranie wykorzystuje VP9 dla najlepszej jakości. Niektóre domyślne odtwarzacze wideo — takie jak Windows Media Player na Windows lub QuickTime na macOS — mogą nie obsługiwać tego formatu. Aby zapewnić niezawodne odtwarzanie, użyj nowoczesnej przeglądarki (Chrome lub Edge) lub odtwarzacza, np. VLC."
     },
     "Detecting": "Wykrywanie...",
-    "FlashbackArmedNotice": "Nagrywasz z {{seconds}} s buforu wspomnienie",
+    "FlashbackArmedNotice": "Nagrywasz z {{seconds}}s buforu wspomnienie",
     "FramesPerSecond": "Liczba klatek na sekundę",
     "FullHD": "Full HD",
     "GBPerHour": "~{{gb}} GB/godz.",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Wybrany region",
     "ReselectRegion": "Ponownie zaznacz region",
     "SelectCustomRegion": "Wybierz niestandardowy region"
+  },
+  "WelcomeCard": {
+    "Title": "Witaj w SeaMeet",
+    "Subtitle": "Trzy sposoby, aby nigdy nie przegapić chwili.",
+    "PointRecord": "Nagraj wszystko jednym dotknięciem.",
+    "PointAutoDetect": "Automatycznie wykrywa spotkania — nie musisz pamiętać o naciśnięciu nagrywaj.",
+    "PointFlashback": "Retrospekcja zapisuje ostatnie 10 sekund — dzięki temu nie przegapisz pierwszej ważnej wypowiedzi.",
+    "GotIt": "OK"
+  },
+  "HelpPage": {
+    "Title": "Dowiedz się więcej o SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Wybierz okno do przechwycenia w celu nagrań okien.",

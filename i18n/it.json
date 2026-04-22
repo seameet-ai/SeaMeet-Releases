@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Richiede un abbonamento BYOK Pro. Iscriviti per la trascrizione in tempo reale, i riassunti delle riunioni AI e un agente AI interattivo."
+  },
   "AIAgent": {
     "DisabledBadge": "Disabilitato",
     "DisabledMsg": "Agente AI e collaborazione sono disabilitati. Abilitalo in Impostazioni → Agente AI e Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Agente AI e collaboratore",
     "SubscribeMsg": "L'Agente AI richiede un abbonamento BYOK Pro. Abbonati per ottenere la trascrizione in tempo reale, riassunti delle riunioni AI e un agente AI interattivo.",
     "SubscribeCTA": "Abbonati per sbloccare"
-  },
-  "AI": {
-    "SubscribeMsg": "Richiede un abbonamento BYOK Pro. Iscriviti per la trascrizione in tempo reale, i riassunti delle riunioni AI e un agente AI interattivo."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Chiave API Gemini",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Registrazione in pausa",
     "UnknownError": "errore sconosciuto"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Benvenuto in SeaMeet",
-    "Step1Desc": "SeaMeet è un potente strumento di registrazione schermo e audio. Per iniziare, abbiamo bisogno del tuo permesso per registrare lo schermo.",
-    "Step2Title": "Autorizzazione registrazione schermo",
-    "Step2Desc": "Il sistema operativo richiede un’autorizzazione esplicita prima che qualsiasi app possa acquisire lo schermo. È una misura di privacy.",
-    "Step3Title": "Come abilitare",
-    "Step3Desc": "Fai clic sul pulsante qui sotto per aprire le impostazioni di sistema, trova SeaMeet nell’elenco Registrazione schermo e attivalo.",
-    "Skip": "Salta per ora",
-    "OpenSettings": "Apri impostazioni di sistema",
-    "FailedToOpenSettings": "Impossibile aprire le impostazioni di sistema",
-    "DontShowAgain": "Non mostrare più"
-  },
   "Apps": {
     "All": "Tutte le app",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Aggiorna l'elenco dei microfono",
     "UnmuteMic": "Attiva microfono"
   },
+  "AutoDetectDrawer": {
+    "Title": "Rilevamento automatico",
+    "Description": "Monitora le app di riunione (Zoom, Teams, Meet…) e propone di registrare così non devi ricordarti di premere avvia.",
+    "ToggleLabel": "Rilevamento automatico {{state}}",
+    "StateOn": "ATTIVO",
+    "StateOff": "SPENTO",
+    "RecentHeading": "Rilevamenti recenti",
+    "RecentEmpty": "Nessun rilevamento ancora.",
+    "AdvancedSettings": "Impostazioni avanzate →",
+    "LearnMore": "Scopri di più"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "RILEVAMENTO AUTOMATICO",
     "Description": "Auto-Detect avvia automaticamente la registrazione quando entri nelle riunioni, così non dimenticherai mai di premere registrare.<br>[AutoDetectInfoModal.Step1Title] Attiva Auto-Detect<br>[AutoDetectInfoModal.Step2Title] Unisciti a una riunione<br>[AutoDetectInfoModal.HowItWorksTitle] Come funziona<br>[AutoDetectInfoModal.LearnAbout] Scopri di più su Auto Detect<br>[AutoDetectInfoModal.MoreApps] +40 altre<br>[AutoDetectInfoModal.Step2Desc] Apri Zoom, Teams, Meet o qualsiasi app supportata<br>[AutoDetectInfoModal.Step3Title] Auto-registrazione<br>[AutoDetectInfoModal.Tip2Title] Metodi di rilevamento multipli<br>[AutoDetectInfoModal.PopularAppsTitle] App popolari rilevate",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Utilizza attività del microfono, titoli delle finestre e URL dei browser per migliorare l'accuratezza",
     "Tip2Title": "Metodi di rilevamento multipli",
     "Title": "Rilevamento automatico delle riunioni"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Prima volta? Ecco come funziona →"
   },
   "AutoRecording": {
     "BugReport": "Hai riscontrato un bug? Segnala a seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Clicca per mostrare l'interfaccia di flashback",
     "ToggleLabel": "Attiva/disattiva flashback"
   },
+  "FlashbackDrawer": {
+    "Title": "Flashback",
+    "Description": "Ricorda discretamente gli ultimi secondi prima che tu prema registra — così non perdi la frase che ha aperto la riunione.",
+    "StatusOff": "Disattivato — scegli una modalità qui sotto per attivare.",
+    "StatusCharging": "Caricamento {{percent}}%…",
+    "StatusReady": "Pronto — ultimi {{seconds}}s di {{type}}.",
+    "Types": {
+      "audio": "audio",
+      "screen": "schermo"
+    },
+    "ModeLabel": "Cosa memorizzare",
+    "ModeOff": "Off",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Schermo",
+    "WindowLabel": "Lunghezza buffer",
+    "PrimaryRecord": "Registra con preambolo di {{seconds}}s",
+    "PrimarySave": "Salva gli ultimi {{seconds}}s",
+    "AdvancedSettings": "Impostazioni avanzate →",
+    "LearnMore": "Scopri di più"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "Gli ultimi {{seconds}}s sono memorizzati solo in RAM. Tocca Salva o il pulsante di registrazione per usarli."
+  },
   "FlashbackHeroUI": {
     "Audio": "audio",
     "Buffering": "Bufferizzazione",
@@ -943,14 +968,6 @@
     "Screen": "OK",
     "StartRecording": "Avvia registrazione",
     "TakeScreenshot": "Cattura screenshot"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Seleziona schermo",
-    "PrimaryDisplay": "Schermo principale",
-    "Display": "Schermo",
-    "SelectWindow": "Seleziona finestra",
-    "LoadingWindows": "Caricamento...",
-    "NoWindows": "Nessuna finestra disponibile"
   },
   "FlashbackIndicator": {
     "Buffering": "Bufferizzazione",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket connesso",
     "WsDisconnected": "WebSocket disconnesso"
   },
-  "MeetingsTab": {
-    "Download": "Scarica",
-    "DownloadAudio": "Scarica audio",
-    "DownloadBoth": "Scarica entrambi",
-    "DownloadTxt": "Scarica .txt",
-    "Empty": "Nessuna riunione trovata",
-    "Error": "Impossibile caricare le riunioni",
-    "Loading": "Caricamento riunioni...",
-    "Retry": "Riprova",
-    "SelectWorkspace": "Seleziona uno spazio di lavoro dal menu utente per visualizzare le riunioni.",
-    "Title": "Riunioni",
-    "Total": "totale",
-    "Untitled": "Riunione senza titolo"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Suggerimento: per riunioni su browser (Google Meet, Zoom, Teams), posso rilevare solo il browser, non il sito specifico.",
     "ContinueRecording": "Continua registrazione",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Rilevamento della riunione",
     "StopRecording": "Ferma registrazione",
     "Yes": "Avvia registrazione"
+  },
+  "MeetingsTab": {
+    "Download": "Scarica",
+    "DownloadAudio": "Scarica audio",
+    "DownloadBoth": "Scarica entrambi",
+    "DownloadTxt": "Scarica .txt",
+    "Empty": "Nessuna riunione trovata",
+    "Error": "Impossibile caricare le riunioni",
+    "Loading": "Caricamento riunioni...",
+    "Retry": "Riprova",
+    "SelectWorkspace": "Seleziona uno spazio di lavoro dal menu utente per visualizzare le riunioni.",
+    "Title": "Riunioni",
+    "Total": "totale",
+    "Untitled": "Riunione senza titolo"
   },
   "MinimizedView": {
     "ActionRequired": "Azione richiesta (Auto-Record)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Estrai testo automaticamente (OCR) sullo screenshot"
   },
   "Pause": "Pausa",
+  "PermissionAlert": {
+    "Title": "Autorizzazione richiesta",
+    "Description": "SeaMeet richiede un’autorizzazione aggiuntiva per continuare.",
+    "OpenSettings": "Apri impostazioni di sistema",
+    "ClickToOpen": "Clicca per aprire le impostazioni",
+    "NoPermissionFullscreen": "La registrazione a schermo intero richiede l’autorizzazione di Registrazione schermo.",
+    "NoPermissionWindow": "La registrazione della finestra richiede l’autorizzazione di Registrazione schermo."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Benvenuto in SeaMeet",
+    "Step1Desc": "SeaMeet è un potente strumento di registrazione schermo e audio. Per iniziare, abbiamo bisogno del tuo permesso per registrare lo schermo.",
+    "Step2Title": "Autorizzazione registrazione schermo",
+    "Step2Desc": "Il sistema operativo richiede un’autorizzazione esplicita prima che qualsiasi app possa acquisire lo schermo. È una misura di privacy.",
+    "Step3Title": "Come abilitare",
+    "Step3Desc": "Fai clic sul pulsante qui sotto per aprire le impostazioni di sistema, trova SeaMeet nell’elenco Registrazione schermo e attivalo.",
+    "Skip": "Salta per ora",
+    "OpenSettings": "Apri impostazioni di sistema",
+    "FailedToOpenSettings": "Impossibile aprire le impostazioni di sistema",
+    "DontShowAgain": "Non mostrare più"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Registrazione sempre automatica",
     "AskEveryTime": "Chiedi ogni volta",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Dettagli codec",
     "MoreOptions": "OK"
   },
+  "PostUpdateModal": {
+    "Title": "Aggiornato alla v{{version}}",
+    "Description": "SeaMeet è stato aggiornato con successo. Ecco le novità:",
+    "GotIt": "Ho capito"
+  },
+  "Premium": {
+    "AIAgent": "Agente dell'IA",
+    "AIAgentDesc": "La trascrizione in tempo reale e l'interazione con l'IA sono disponibili con un abbonamento.",
+    "PostMeetingAI": "IA post-riunione",
+    "PostMeetingAIDesc": "Riassunti, azioni e approfondimenti saranno generati al termine della registrazione.",
+    "UnlockPremium": "Sblocca con Premium",
+    "Upgrade": "Aggiorna"
+  },
+  "RecordTab": {
+    "TapToRecord": "Tocca per iniziare a registrare",
+    "RecordWithPreamble": "Registra con preambolo di {{seconds}}s",
+    "SaveLastInstead": "Salva gli ultimi {{seconds}}s",
+    "AutoDetectStatusOn": "in attesa di riunioni",
+    "AutoDetectStatusOff": "disattivato — tocca per attivare",
+    "FlashbackStatusOff": "disattivato — tocca per attivare",
+    "FlashbackStatusCharging": "caricamento {{percent}}%",
+    "FlashbackStatusReady": "pronto — {{seconds}}s di {{type}} in RAM",
+    "LauncherPill": "Launcher",
+    "FloaterPill": "Fluttuante",
+    "AutoDetectLabel": "Rilevamento auto",
+    "FlashbackLabel": "Flashback",
+    "RecentRecordings": "Registrazioni recenti"
+  },
   "Recording": {
     "Paused": "In pausa",
     "Preparing": "Preparazione",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Cerca registrazioni e istantanee",
     "ShowInFolder": "Mostra nella cartella"
   },
-  "PermissionAlert": {
-    "Title": "Autorizzazione richiesta",
-    "Description": "SeaMeet richiede un’autorizzazione aggiuntiva per continuare.",
-    "OpenSettings": "Apri impostazioni di sistema",
-    "ClickToOpen": "Clicca per aprire le impostazioni",
-    "NoPermissionFullscreen": "La registrazione a schermo intero richiede l’autorizzazione di Registrazione schermo.",
-    "NoPermissionWindow": "La registrazione della finestra richiede l’autorizzazione di Registrazione schermo."
-  },
   "RegionSelector": {
     "CaptureButton": "Cattura schermo o premi Invio",
     "ConfirmButton": "Seleziona",
@@ -1454,6 +1511,14 @@
     "Title": "Seleziona un display",
     "Unknown": "Display senza titolo"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Seleziona schermo",
+    "PrimaryDisplay": "Schermo principale",
+    "Display": "Schermo",
+    "SelectWindow": "Seleziona finestra",
+    "LoadingWindows": "Caricamento...",
+    "NoWindows": "Nessuna finestra disponibile"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Analisi",
     "ConfigureApiKey": "Configura la tua chiave API Gemini per elaborare immagini con l'AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Testo (OCR)"
     },
     "UnknownError": "Errore sconosciuto"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Screenshot recenti"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copiato!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Riunioni",
     "OpenNavigationMenu": "Apri il menu di navigazione",
     "Record": "Documentazione",
-    "Recording": "Registrazione"
+    "Recording": "Registrazione",
+    "Screenshot": "Screenshot"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet è ancora in esecuzione nel vassoio di sistema (tray di Windows).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Novità:",
     "WhatsNewInVersion": "Novità in {{version}}?",
     "Restarting": "Riavvio..."
-  },
-  "PostUpdateModal": {
-    "Title": "Aggiornato alla v{{version}}",
-    "Description": "SeaMeet è stato aggiornato con successo. Ecco le novità:",
-    "GotIt": "Ho capito"
-  },
-  "Premium": {
-    "AIAgent": "Agente dell'IA",
-    "AIAgentDesc": "La trascrizione in tempo reale e l'interazione con l'IA sono disponibili con un abbonamento.",
-    "PostMeetingAI": "IA post-riunione",
-    "PostMeetingAIDesc": "Riassunti, azioni e approfondimenti saranno generati al termine della registrazione.",
-    "UnlockPremium": "Sblocca con Premium",
-    "Upgrade": "Aggiorna"
   },
   "UserMenu": {
     "AboutSeaMeet": "Informazioni su SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Regione Selezionata",
     "ReselectRegion": "Riconfigura regione",
     "SelectCustomRegion": "Seleziona regione personalizzata"
+  },
+  "WelcomeCard": {
+    "Title": "Benvenuto su SeaMeet",
+    "Subtitle": "Tre modi per non perdere mai un momento.",
+    "PointRecord": "Registra qualsiasi cosa con un tocco.",
+    "PointAutoDetect": "Rileva automaticamente le riunioni — così non dimentichi di premere registra.",
+    "PointFlashback": "Flashback salva gli ultimi 10 secondi — così non perdi la prima frase importante.",
+    "GotIt": "Capito"
+  },
+  "HelpPage": {
+    "Title": "Scopri di più su SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Scegli una finestra da catturare per registrazioni finestra.",

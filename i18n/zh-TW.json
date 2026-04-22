@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "需要 BYOK Pro 訂閱。訂閱以獲取即時逐字稿、AI 會議摘要和互動式 AI 代理。"
+  },
   "AIAgent": {
     "DisabledBadge": "已停用",
     "DisabledMsg": "AI Agent & Cowork 已停用。在設定 → AI Agent & Cowork 中啟用它。",
@@ -11,9 +14,6 @@
     "SectionTitle": "人工智慧代理與協作",
     "SubscribeMsg": "AI 助手需要 BYOK Pro 訂閱。訂閱以獲取即時逐字稿、AI 會議摘要和互動式 AI 助手。",
     "SubscribeCTA": "訂閱以解鎖"
-  },
-  "AI": {
-    "SubscribeMsg": "需要 BYOK Pro 訂閱。訂閱以獲取即時逐字稿、AI 會議摘要和互動式 AI 代理。"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API 金鑰",
@@ -325,18 +325,6 @@
     "RecordingPaused": "錄音已暫停",
     "UnknownError": "未知錯誤"
   },
-  "PermissionTutorial": {
-    "Step1Title": "歡迎使用 SeaMeet",
-    "Step1Desc": "SeaMeet 是一個強大的螢幕和音訊錄製工具。要開始使用，我們需要您的權限來錄製螢幕。",
-    "Step2Title": "螢幕錄製權限",
-    "Step2Desc": "您的作業系統需要明確授權才允許任何應用程式捕捉螢幕。這是一項隱私保護功能。",
-    "Step3Title": "如何啟用",
-    "Step3Desc": "點擊下方按鈕開啟系統設定，然後在螢幕錄製清單中找到 SeaMeet 並將其開啟。",
-    "Skip": "暫時跳過",
-    "OpenSettings": "開啟系統設定",
-    "FailedToOpenSettings": "無法開啟系統設定",
-    "DontShowAgain": "不再顯示"
-  },
   "Apps": {
     "All": "所有應用程式",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "重新整理麥克風清單",
     "UnmuteMic": "取消靜音"
   },
+  "AutoDetectDrawer": {
+    "Title": "自動偵測",
+    "Description": "監看會議應用（Zoom、Teams、Meet…）並提議錄製，這樣你就不必記著按開始。",
+    "ToggleLabel": "自動偵測 {{state}}",
+    "StateOn": "開啟",
+    "StateOff": "關閉",
+    "RecentHeading": "最近偵測",
+    "RecentEmpty": "尚無偵測。",
+    "AdvancedSettings": "進階設定 →",
+    "LearnMore": "了解更多"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "自動偵測",
     "Description": "自動偵測會議時會自動開始錄音，讓你永遠不會忘記按錄音鍵。",
@@ -415,6 +414,9 @@
     "Tip2Desc": "使用麥克風活動、視窗標題和瀏覽器網址以提高準確性",
     "Tip2Title": "多種偵測方法",
     "Title": "自動偵測會議"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "首次使用？看看運作方式 →"
   },
   "AutoRecording": {
     "BugReport": "發現錯誤？請傳送回報至 seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "點擊顯示時間回溯界面",
     "ToggleLabel": "切換時間回溯模式"
   },
+  "FlashbackDrawer": {
+    "Title": "時間回溯",
+    "Description": "在你按下錄製之前，悄悄記住最後幾秒——讓你不錯過開啟會議的那句話。",
+    "StatusOff": "已關閉 — 在下方選擇模式以啟動。",
+    "StatusCharging": "載入中 {{percent}}%…",
+    "StatusReady": "就緒 — 最後 {{seconds}} 秒{{type}}。",
+    "Types": {
+      "audio": "音訊",
+      "screen": "螢幕"
+    },
+    "ModeLabel": "緩存內容",
+    "ModeOff": "關閉",
+    "ModeAudio": "音訊",
+    "ModeScreen": "螢幕",
+    "WindowLabel": "緩存時長",
+    "PrimaryRecord": "帶 {{seconds}} 秒前奏錄製",
+    "PrimarySave": "儲存最後 {{seconds}} 秒",
+    "AdvancedSettings": "進階設定 →",
+    "LearnMore": "了解更多"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "最後 {{seconds}} 秒僅緩存在 RAM 中。點按儲存或錄製按鈕即可使用。"
+  },
   "FlashbackHeroUI": {
     "Audio": "音訊",
     "Buffering": "緩衝中",
@@ -943,14 +968,6 @@
     "Screen": "頁面",
     "StartRecording": "開始錄製",
     "TakeScreenshot": "拍攝螢幕截圖"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "選擇顯示器",
-    "PrimaryDisplay": "主顯示器",
-    "Display": "顯示器",
-    "SelectWindow": "選擇視窗",
-    "LoadingWindows": "載入中...",
-    "NoWindows": "沒有可用的視窗"
   },
   "FlashbackIndicator": {
     "Buffering": "緩衝中...",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket 已連線",
     "WsDisconnected": "WebSocket 已斷線"
   },
-  "MeetingsTab": {
-    "Download": "下載",
-    "DownloadAudio": "下載音訊",
-    "DownloadBoth": "全部下載",
-    "DownloadTxt": "下載 .txt",
-    "Empty": "未找到會議",
-    "Error": "載入會議失敗",
-    "Loading": "正在載入會議...",
-    "Retry": "重試",
-    "SelectWorkspace": "請從使用者選單選擇工作區以查看會議。",
-    "Title": "會議",
-    "Total": "共",
-    "Untitled": "未命名會議"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 小提示：對於瀏覽器會議（Google Meet、Zoom、Teams），我只能偵測瀏覽器，無法辨識具體網站。",
     "ContinueRecording": "繼續錄音",
@@ -1267,6 +1270,20 @@
     "StartTitle": "偵測到會議",
     "StopRecording": "停止錄音",
     "Yes": "開始錄音"
+  },
+  "MeetingsTab": {
+    "Download": "下載",
+    "DownloadAudio": "下載音訊",
+    "DownloadBoth": "全部下載",
+    "DownloadTxt": "下載 .txt",
+    "Empty": "未找到會議",
+    "Error": "載入會議失敗",
+    "Loading": "正在載入會議...",
+    "Retry": "重試",
+    "SelectWorkspace": "請從使用者選單選擇工作區以查看會議。",
+    "Title": "會議",
+    "Total": "共",
+    "Untitled": "未命名會議"
   },
   "MinimizedView": {
     "ActionRequired": "需要您的協助（自動錄音）",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "截圖時自動提取文字（OCR）"
   },
   "Pause": "暫停",
+  "PermissionAlert": {
+    "Title": "需要權限",
+    "Description": "SeaMeet 需要額外權限才能繼續。",
+    "OpenSettings": "開啟系統設定",
+    "ClickToOpen": "點擊開啟設定",
+    "NoPermissionFullscreen": "全螢幕錄製需要螢幕錄製權限。",
+    "NoPermissionWindow": "視窗錄製需要螢幕錄製權限。"
+  },
+  "PermissionTutorial": {
+    "Step1Title": "歡迎使用 SeaMeet",
+    "Step1Desc": "SeaMeet 是一個強大的螢幕和音訊錄製工具。要開始使用，我們需要您的權限來錄製螢幕。",
+    "Step2Title": "螢幕錄製權限",
+    "Step2Desc": "您的作業系統需要明確授權才允許任何應用程式捕捉螢幕。這是一項隱私保護功能。",
+    "Step3Title": "如何啟用",
+    "Step3Desc": "點擊下方按鈕開啟系統設定，然後在螢幕錄製清單中找到 SeaMeet 並將其開啟。",
+    "Skip": "暫時跳過",
+    "OpenSettings": "開啟系統設定",
+    "FailedToOpenSettings": "無法開啟系統設定",
+    "DontShowAgain": "不再顯示"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "始終自動錄製",
     "AskEveryTime": "每次皆詢問",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "編解碼資訊",
     "MoreOptions": "更多選項"
   },
+  "PostUpdateModal": {
+    "Title": "已更新至 v{{version}}",
+    "Description": "SeaMeet 已成功更新。更新內容：",
+    "GotIt": "知道了"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "即時轉錄和AI互動需要訂閱才能使用。",
+    "PostMeetingAI": "會後AI",
+    "PostMeetingAIDesc": "錄製完成後將產生摘要、待辦事項和見解。",
+    "UnlockPremium": "解鎖 Premium",
+    "Upgrade": "升級"
+  },
+  "RecordTab": {
+    "TapToRecord": "點按開始錄製",
+    "RecordWithPreamble": "帶 {{seconds}} 秒前奏錄製",
+    "SaveLastInstead": "改為儲存最後 {{seconds}} 秒",
+    "AutoDetectStatusOn": "正在監看會議",
+    "AutoDetectStatusOff": "已關閉 — 點按啟用",
+    "FlashbackStatusOff": "已關閉 — 點按啟動",
+    "FlashbackStatusCharging": "載入中 {{percent}}%",
+    "FlashbackStatusReady": "就緒 — RAM 中最後 {{seconds}} 秒{{type}}",
+    "LauncherPill": "啟動器",
+    "FloaterPill": "浮動視窗",
+    "AutoDetectLabel": "自動偵測",
+    "FlashbackLabel": "時間回溯",
+    "RecentRecordings": "最近的錄製"
+  },
   "Recording": {
     "Paused": "已暫停",
     "Preparing": "準備中",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "搜尋錄音與快照",
     "ShowInFolder": "在資料夾中顯示"
   },
-  "PermissionAlert": {
-    "Title": "需要權限",
-    "Description": "SeaMeet 需要額外權限才能繼續。",
-    "OpenSettings": "開啟系統設定",
-    "ClickToOpen": "點擊開啟設定",
-    "NoPermissionFullscreen": "全螢幕錄製需要螢幕錄製權限。",
-    "NoPermissionWindow": "視窗錄製需要螢幕錄製權限。"
-  },
   "RegionSelector": {
     "CaptureButton": "擷取畫面或按 Enter",
     "ConfirmButton": "確認選擇",
@@ -1454,6 +1511,14 @@
     "Title": "選擇一個顯示器",
     "Unknown": "無標題顯示器"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "選擇顯示器",
+    "PrimaryDisplay": "主顯示器",
+    "Display": "顯示器",
+    "SelectWindow": "選擇視窗",
+    "LoadingWindows": "載入中...",
+    "NoWindows": "沒有可用的視窗"
+  },
   "ScreenshotProcessing": {
     "Analysis": "分析",
     "ConfigureApiKey": "設定您的 Gemini API 金鑰以使用 AI 處理圖像。",
@@ -1492,6 +1557,9 @@
       "OCR": "文字 (OCR)"
     },
     "UnknownError": "未知錯誤"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "最近的截圖"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "已複製！",
@@ -1706,7 +1774,8 @@
     "Meetings": "會議",
     "OpenNavigationMenu": "開啟導覽選單",
     "Record": "記錄",
-    "Recording": "記錄"
+    "Recording": "記錄",
+    "Screenshot": "截圖"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet 仍在系統托盤（右下角）運行。",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "新內容：",
     "WhatsNewInVersion": "{{version}} 的新內容如下：",
     "Restarting": "正在重新啟動..."
-  },
-  "PostUpdateModal": {
-    "Title": "已更新至 v{{version}}",
-    "Description": "SeaMeet 已成功更新。更新內容：",
-    "GotIt": "知道了"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "即時轉錄和AI互動需要訂閱才能使用。",
-    "PostMeetingAI": "會後AI",
-    "PostMeetingAIDesc": "錄製完成後將產生摘要、待辦事項和見解。",
-    "UnlockPremium": "解鎖 Premium",
-    "Upgrade": "升級"
   },
   "UserMenu": {
     "AboutSeaMeet": "關於 SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "已選擇範圍",
     "ReselectRegion": "重新選擇範圍",
     "SelectCustomRegion": "選擇自訂範圍"
+  },
+  "WelcomeCard": {
+    "Title": "歡迎使用 SeaMeet",
+    "Subtitle": "三種方式，讓你不錯過任何一刻。",
+    "PointRecord": "一鍵錄下任何內容。",
+    "PointAutoDetect": "自動偵測會議，無須記得按錄製。",
+    "PointFlashback": "時間回溯保存最後 10 秒——讓你不錯過開場的那句精彩。",
+    "GotIt": "知道了"
+  },
+  "HelpPage": {
+    "Title": "了解更多 SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "選擇一個視窗進行錄影",

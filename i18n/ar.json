@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
+  },
   "AIAgent": {
     "DisabledBadge": "معطّل",
     "DisabledMsg": "تم تعطيل AI Agent & Cowork. قم بتمكينه في الإعدادات → AI Agent & Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "وكيل الذكاء الاصطناعي والعمل المشترك",
     "SubscribeMsg": "يتطلب وكيل الذكاء الاصطناعي اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي.",
     "SubscribeCTA": "اشترك للفتح"
-  },
-  "AI": {
-    "SubscribeMsg": "يتطلب اشتراك BYOK Pro. اشترك للحصول على النسخ المباشر وملخصات الاجتماعات بالذكاء الاصطناعي ووكيل ذكاء اصطناعي تفاعلي."
   },
   "AIFeatures": {
     "ApiKeyLabel": "الجوزاء API مفتاح",
@@ -325,18 +325,6 @@
     "RecordingPaused": "تم إيقاف التسجيل مؤقتاً",
     "UnknownError": "خطأ غير معروف"
   },
-  "PermissionTutorial": {
-    "Step1Title": "مرحبا بكم في SeaMeet",
-    "Step1Desc": "SeaMeet هي أداة قوية لتسجيل الشاشة والصوت. للبدء، نحتاج إلى إذنك لتسجيل شاشتك.",
-    "Step2Title": "إذن تسجيل الشاشة",
-    "Step2Desc": "يتطلب نظام التشغيل لديك إذنًا صريحًا لأي تطبيق لالتقاط شاشتك. هذه ميزة حماية الخصوصية.",
-    "Step3Title": "كيفية التمكين",
-    "Step3Desc": "انقر فوق الزر أدناه لفتح إعدادات النظام لديك، ثم ابحث عن SeaMeet في قائمة تسجيل الشاشة وقم بتشغيله.",
-    "Skip": "تخطي الآن",
-    "OpenSettings": "افتح إعدادات النظام",
-    "FailedToOpenSettings": "فشل في فتح إعدادات النظام",
-    "DontShowAgain": "لا تظهر مرة أخرى"
-  },
   "Apps": {
     "All": "جميع التطبيقات",
     "Battlenet": "باتل.نت",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "تحديث قائمة الميكروفونات",
     "UnmuteMic": "إلغاء كتم صوت الميكروفون"
   },
+  "AutoDetectDrawer": {
+    "Title": "الكشف التلقائي",
+    "Description": "يراقب تطبيقات الاجتماعات (Zoom وTeams وMeet…) ويعرض التسجيل لئلا تنسى الضغط على ابدأ.",
+    "ToggleLabel": "الكشف التلقائي {{state}}",
+    "StateOn": "مفعّل",
+    "StateOff": "معطّل",
+    "RecentHeading": "الاكتشافات الأخيرة",
+    "RecentEmpty": "لا توجد اكتشافات بعد.",
+    "AdvancedSettings": "الإعدادات المتقدمة ←",
+    "LearnMore": "اعرف المزيد"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "الكشف التلقائي",
     "Description": "يبدأ الـ Auto-Detect التسجيل تلقائيًا عند الانضمام إلى الاجتماعات، لذلك لن تنسى الضغط على زر التسجيل.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "يستخدم نشاط الميكروفون، عناوين النوافذ، وروابط المتصفح لتحقيق أعلى دقة",
     "Tip2Title": "طرق كشف متعددة",
     "Title": "الكشف التلقائي عن الاجتماعات"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "أول مرة؟ إليك كيف يعمل هذا ←"
   },
   "AutoRecording": {
     "BugReport": "هل رأيت خطأ؟ أبلغ عنه إلى ‎seameet@seasalt.ai‎",
@@ -905,6 +907,29 @@
     "TitleReady": "انقر لإظهار واجهة العودة للماضي",
     "ToggleLabel": "تبديل العودة للماضي"
   },
+  "FlashbackDrawer": {
+    "Title": "العودة للماضي",
+    "Description": "يتذكّر الثواني الأخيرة بهدوء قبل أن تضغط تسجيل — حتى لا تفوّت العبارة التي بدأت بها الجلسة.",
+    "StatusOff": "معطّل — اختر وضعًا أدناه للتفعيل.",
+    "StatusCharging": "جارٍ الشحن {{percent}}%…",
+    "StatusReady": "جاهز — آخر {{seconds}} ث {{type}}.",
+    "Types": {
+      "audio": "صوت",
+      "screen": "شاشة"
+    },
+    "ModeLabel": "ماذا تحفظ",
+    "ModeOff": "إيقاف",
+    "ModeAudio": "صوت",
+    "ModeScreen": "شاشة",
+    "WindowLabel": "طول النافذة",
+    "PrimaryRecord": "سجّل مع مقدمة {{seconds}} ث",
+    "PrimarySave": "احفظ آخر {{seconds}} ث",
+    "AdvancedSettings": "الإعدادات المتقدمة ←",
+    "LearnMore": "اعرف المزيد"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "آخر {{seconds}} ث يتم تخزينها في الذاكرة فقط. انقر حفظ أو زر التسجيل لاستخدامها."
+  },
   "FlashbackHeroUI": {
     "Audio": "الصوت",
     "Buffering": "جارٍ التحميل",
@@ -943,14 +968,6 @@
     "Screen": "الشاشة",
     "StartRecording": "ابدأ التسجيل",
     "TakeScreenshot": "لقطة شاشة"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "حدد العرض",
-    "PrimaryDisplay": "العرض الأساسي",
-    "Display": "عرض",
-    "SelectWindow": "حدد نافذة",
-    "LoadingWindows": "تحميل...",
-    "NoWindows": "لا توجد نوافذ متاحة"
   },
   "FlashbackIndicator": {
     "Buffering": "جارٍ تحميل الشكل الموجي",
@@ -1236,20 +1253,6 @@
     "WsConnected": "متصل بـ WebSocket",
     "WsDisconnected": "غير متصل بـ WebSocket"
   },
-  "MeetingsTab": {
-    "Download": "تنزيل",
-    "DownloadAudio": "تنزيل الصوت",
-    "DownloadBoth": "تنزيل كليهما",
-    "DownloadTxt": "تنزيل .txt",
-    "Empty": "لم يتم العثور على اجتماعات",
-    "Error": "فشل تحميل الاجتماعات",
-    "Loading": "جارٍ تحميل الاجتماعات...",
-    "Retry": "إعادة المحاولة",
-    "SelectWorkspace": "يرجى تحديد مساحة عمل من قائمة المستخدم لعرض الاجتماعات.",
-    "Title": "الاجتماعات",
-    "Total": "إجمالي",
-    "Untitled": "اجتماع بدون عنوان"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 نصيحة: للاجتماعات عبر المتصفح (Google Meet، Zoom، Teams)، يمكنني فقط اكتشاف المتصفح، وليس الموقع المحدد.",
     "ContinueRecording": "متابعة التسجيل",
@@ -1267,6 +1270,20 @@
     "StartTitle": "تم اكتشاف اجتماع",
     "StopRecording": "إيقاف التسجيل",
     "Yes": "بدء التسجيل"
+  },
+  "MeetingsTab": {
+    "Download": "تنزيل",
+    "DownloadAudio": "تنزيل الصوت",
+    "DownloadBoth": "تنزيل كليهما",
+    "DownloadTxt": "تنزيل .txt",
+    "Empty": "لم يتم العثور على اجتماعات",
+    "Error": "فشل تحميل الاجتماعات",
+    "Loading": "جارٍ تحميل الاجتماعات...",
+    "Retry": "إعادة المحاولة",
+    "SelectWorkspace": "يرجى تحديد مساحة عمل من قائمة المستخدم لعرض الاجتماعات.",
+    "Title": "الاجتماعات",
+    "Total": "إجمالي",
+    "Untitled": "اجتماع بدون عنوان"
   },
   "MinimizedView": {
     "ActionRequired": "يتطلب إجراء (التسجيل التلقائي)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "استخراج النص تلقائياً (OCR) عند التقاط الشاشة"
   },
   "Pause": "يوقف",
+  "PermissionAlert": {
+    "Title": "الإذن مطلوب",
+    "Description": "يحتاج SeaMeet إلى إذن إضافي للمتابعة.",
+    "OpenSettings": "فتح إعدادات النظام",
+    "ClickToOpen": "انقر لفتح الإعدادات",
+    "NoPermissionFullscreen": "يتطلب تسجيل الشاشة الكاملة إذن تسجيل الشاشة.",
+    "NoPermissionWindow": "يتطلب تسجيل النافذة إذن تسجيل الشاشة."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "مرحبا بكم في SeaMeet",
+    "Step1Desc": "SeaMeet هي أداة قوية لتسجيل الشاشة والصوت. للبدء، نحتاج إلى إذنك لتسجيل شاشتك.",
+    "Step2Title": "إذن تسجيل الشاشة",
+    "Step2Desc": "يتطلب نظام التشغيل لديك إذنًا صريحًا لأي تطبيق لالتقاط شاشتك. هذه ميزة حماية الخصوصية.",
+    "Step3Title": "كيفية التمكين",
+    "Step3Desc": "انقر فوق الزر أدناه لفتح إعدادات النظام لديك، ثم ابحث عن SeaMeet في قائمة تسجيل الشاشة وقم بتشغيله.",
+    "Skip": "تخطي الآن",
+    "OpenSettings": "افتح إعدادات النظام",
+    "FailedToOpenSettings": "فشل في فتح إعدادات النظام",
+    "DontShowAgain": "لا تظهر مرة أخرى"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "التسجيل التلقائي دائمًا",
     "AskEveryTime": "اسأل في كل مرة",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "معلومات الترميز",
     "MoreOptions": "خيارات إضافية"
   },
+  "PostUpdateModal": {
+    "Title": "تم التحديث إلى v{{version}}",
+    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
+    "GotIt": "حسنًا"
+  },
+  "Premium": {
+    "AIAgent": "وكيل منظمة العفو الدولية",
+    "AIAgentDesc": "النسخ المباشر والتفاعل مع الذكاء الاصطناعي متاح مع الاشتراك.",
+    "PostMeetingAI": "الذكاء الاصطناعي بعد الاجتماع",
+    "PostMeetingAIDesc": "سيتم إنشاء الملخصات وبنود العمل والرؤى بعد انتهاء التسجيل.",
+    "UnlockPremium": "فتح مع Premium",
+    "Upgrade": "ترقية"
+  },
+  "RecordTab": {
+    "TapToRecord": "انقر لبدء التسجيل",
+    "RecordWithPreamble": "سجّل مع مقدمة {{seconds}} ث",
+    "SaveLastInstead": "احفظ آخر {{seconds}} ث بدلاً من ذلك",
+    "AutoDetectStatusOn": "يراقب الاجتماعات",
+    "AutoDetectStatusOff": "معطّل — انقر للتفعيل",
+    "FlashbackStatusOff": "معطّل — انقر للتفعيل",
+    "FlashbackStatusCharging": "جارٍ الشحن {{percent}}%",
+    "FlashbackStatusReady": "جاهز — {{seconds}} ث {{type}} في الذاكرة",
+    "LauncherPill": "المشغّل",
+    "FloaterPill": "الشريط العائم",
+    "AutoDetectLabel": "الكشف التلقائي",
+    "FlashbackLabel": "العودة للماضي",
+    "RecentRecordings": "التسجيلات الأخيرة"
+  },
   "Recording": {
     "Paused": "متوقف مؤقتًا",
     "Preparing": "تحضير",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "ابحث في التسجيلات واللقطات",
     "ShowInFolder": "عرض في المجلد"
   },
-  "PermissionAlert": {
-    "Title": "الإذن مطلوب",
-    "Description": "يحتاج SeaMeet إلى إذن إضافي للمتابعة.",
-    "OpenSettings": "فتح إعدادات النظام",
-    "ClickToOpen": "انقر لفتح الإعدادات",
-    "NoPermissionFullscreen": "يتطلب تسجيل الشاشة الكاملة إذن تسجيل الشاشة.",
-    "NoPermissionWindow": "يتطلب تسجيل النافذة إذن تسجيل الشاشة."
-  },
   "RegionSelector": {
     "CaptureButton": "التقاط الشاشة أو اضغط على Enter",
     "ConfirmButton": "تأكيد الاختيار",
@@ -1454,6 +1511,14 @@
     "Title": "اختر شاشة",
     "Unknown": "شاشة غير معرفة"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "حدد العرض",
+    "PrimaryDisplay": "العرض الأساسي",
+    "Display": "عرض",
+    "SelectWindow": "حدد نافذة",
+    "LoadingWindows": "تحميل...",
+    "NoWindows": "لا توجد نوافذ متاحة"
+  },
   "ScreenshotProcessing": {
     "Analysis": "تحليل",
     "ConfigureApiKey": "قم بتهيئة مفتاح Gemini API لمعالجة الصور بالذكاء الاصطناعي.",
@@ -1492,6 +1557,9 @@
       "OCR": "نص (OCR)"
     },
     "UnknownError": "خطأ غير معروف"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "لقطات الشاشة الأخيرة"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "تم النسخ إلى الحافظة!",
@@ -1706,7 +1774,8 @@
     "Meetings": "الاجتماعات",
     "OpenNavigationMenu": "فتح قائمة التنقل",
     "Record": "سِجِلّ",
-    "Recording": "تسجيل"
+    "Recording": "تسجيل",
+    "Screenshot": "لقطة شاشة"
   },
   "Tray": {
     "MinimizedHint": "لا تزال SeaMeet تعمل في علبة النظام (في أسفل اليمين)",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "الجديد:",
     "WhatsNewInVersion": "الجديد في {{version}}؟",
     "Restarting": "جارٍ إعادة التشغيل..."
-  },
-  "PostUpdateModal": {
-    "Title": "تم التحديث إلى v{{version}}",
-    "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
-    "GotIt": "حسنًا"
-  },
-  "Premium": {
-    "AIAgent": "وكيل منظمة العفو الدولية",
-    "AIAgentDesc": "النسخ المباشر والتفاعل مع الذكاء الاصطناعي متاح مع الاشتراك.",
-    "PostMeetingAI": "الذكاء الاصطناعي بعد الاجتماع",
-    "PostMeetingAIDesc": "سيتم إنشاء الملخصات وبنود العمل والرؤى بعد انتهاء التسجيل.",
-    "UnlockPremium": "فتح مع Premium",
-    "Upgrade": "ترقية"
   },
   "UserMenu": {
     "AboutSeaMeet": "عن SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "المنطقة تم اختيارها",
     "ReselectRegion": "إعادة تحديد المنطقة",
     "SelectCustomRegion": "حدد المنطقة المخصصة"
+  },
+  "WelcomeCard": {
+    "Title": "تعرّف على SeaMeet",
+    "Subtitle": "ثلاث طرق لئلا تفوّت أي لحظة.",
+    "PointRecord": "سجّل أي شيء بنقرة واحدة.",
+    "PointAutoDetect": "اكتشف الاجتماعات تلقائيًا لئلا تنسى الضغط على تسجيل.",
+    "PointFlashback": "تحفظ ميزة العودة للماضي آخر 10 ثوانٍ — فلا تفوّت أول عبارة مهمة.",
+    "GotIt": "فهمت"
+  },
+  "HelpPage": {
+    "Title": "تعرّف على المزيد عن SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "اختر نافذة لتسجيلها لالتقاط نوافذ الشاشة",

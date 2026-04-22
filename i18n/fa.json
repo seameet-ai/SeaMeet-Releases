@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "نیاز به اشتراک BYOK Pro دارد. برای دریافت رونویسی زنده، خلاصه جلسات هوش مصنوعی و یک عامل هوش مصنوعی تعاملی مشترک شوید."
+  },
   "AIAgent": {
     "DisabledBadge": "از کار افتاده است",
     "DisabledMsg": "AI Agent & Cowork غیرفعال است. آن را در تنظیمات → AI Agent & Cowork فعال کنید.",
@@ -11,9 +14,6 @@
     "SectionTitle": "AI Agent & Cowork",
     "SubscribeMsg": "عامل هوش مصنوعی به اشتراک BYOK Pro نیاز دارد. برای دریافت رونویسی زنده، خلاصه‌های جلسات و عامل هوش مصنوعی تعاملی اشتراک بگیرید.",
     "SubscribeCTA": "اشتراک برای باز کردن قفل"
-  },
-  "AI": {
-    "SubscribeMsg": "نیاز به اشتراک BYOK Pro دارد. برای دریافت رونویسی زنده، خلاصه جلسات هوش مصنوعی و یک عامل هوش مصنوعی تعاملی مشترک شوید."
   },
   "AIFeatures": {
     "ApiKeyLabel": "کلید API Gemini",
@@ -325,18 +325,6 @@
     "RecordingPaused": "ضبط متوقف شد",
     "UnknownError": "خطای ناشناخته‌ای رخ داده است"
   },
-  "PermissionTutorial": {
-    "Step1Title": "به SeaMeet خوش آمدید",
-    "Step1Desc": "SeaMeet ابزاری قدرتمند برای ضبط صدا و صفحه نمایش است. برای شروع، به اجازه شما برای ضبط صفحه شما نیاز داریم.",
-    "Step2Title": "مجوز ضبط صفحه",
-    "Step2Desc": "سیستم عامل شما نیاز به مجوز صریح برای هر برنامه ای برای گرفتن صفحه نمایش شما دارد. این یک ویژگی حفاظت از حریم خصوصی است.",
-    "Step3Title": "نحوه فعال کردن",
-    "Step3Desc": "روی دکمه زیر کلیک کنید تا تنظیمات سیستم شما باز شود، سپس SeaMeet را در لیست ضبط صفحه پیدا کنید و آن را روشن کنید.",
-    "Skip": "فعلا رد شوید",
-    "OpenSettings": "تنظیمات سیستم را باز کنید",
-    "FailedToOpenSettings": "تنظیمات سیستم باز نشد",
-    "DontShowAgain": "دیگر نشان نده"
-  },
   "Apps": {
     "All": "همه برنامه‌ها",
     "Battlenet": "باتل‌نت",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "بروزرسانی لیست میکروفن",
     "UnmuteMic": "باصدا کردن میکروفون"
   },
+  "AutoDetectDrawer": {
+    "Title": "تشخیص خودکار",
+    "Description": "برنامه‌های نشست (Zoom، Teams، Meet…) را می‌پاید و پیشنهاد ضبط می‌دهد تا هرگز فراموش نکنید که دکمه را بزنید.",
+    "ToggleLabel": "تشخیص خودکار {{state}} است",
+    "StateOn": "روشن",
+    "StateOff": "خاموش",
+    "RecentHeading": "تشخیص‌های اخیر",
+    "RecentEmpty": "هنوز تشخیصی نیست.",
+    "AdvancedSettings": "تنظیمات پیشرفته ←",
+    "LearnMore": "بیشتر بدانید"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "خودکار تشخیص",
     "Description": "وقتی به جلسات پیوستید، به صورت خودکار شروع به ضبط می‌کند. هرگز فراموش نکنید که دکمه ضبط را فشار دهید",
@@ -415,6 +414,9 @@
     "Tip2Desc": "از فعالیت میکروفن، عناوین پنجره و URLهای مرورگر برای دقت استفاده می‌کند",
     "Tip2Title": "چندین روش تشخیص",
     "Title": "تشخیص خودکار نشست‌ها"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "اولین بار؟ نحوهٔ کار آن اینجاست ←"
   },
   "AutoRecording": {
     "BugReport": "مشکل دیدید؟ آن را به ‎seameet@seasalt.ai‎ گزارش دهید",
@@ -905,6 +907,29 @@
     "TitleReady": "برای نشان دادن رابط کاربری بازگشت به خاطرات کلیک کنید",
     "ToggleLabel": "تغییر حالت بازگشت به خاطرات"
   },
+  "FlashbackDrawer": {
+    "Title": "بازگشت به خاطرات",
+    "Description": "چند ثانیه آخر را بی‌سر و صدا به خاطر می‌سپارد تا پیش از زدن دکمهٔ ضبط، جملهٔ آغازگر جلسه را از دست ندهید.",
+    "StatusOff": "خاموش — یک حالت را در پایین برای آماده‌سازی انتخاب کنید.",
+    "StatusCharging": "در حال بارگیری {{percent}}٪…",
+    "StatusReady": "آماده — {{seconds}} ثانیه آخر {{type}}.",
+    "Types": {
+      "audio": "صدا",
+      "screen": "صفحه"
+    },
+    "ModeLabel": "چه چیزی ذخیره شود",
+    "ModeOff": "خاموش",
+    "ModeAudio": "صدا",
+    "ModeScreen": "صفحه",
+    "WindowLabel": "طول پنجره",
+    "PrimaryRecord": "ضبط با پیش‌پخش {{seconds}} ثانیه",
+    "PrimarySave": "{{seconds}} ثانیهٔ آخر را ذخیره کنید",
+    "AdvancedSettings": "تنظیمات پیشرفته ←",
+    "LearnMore": "بیشتر بدانید"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "{{seconds}} ثانیهٔ آخر فقط در RAM ذخیره می‌شود. برای استفاده، روی ذخیره یا دکمهٔ ضبط بزنید."
+  },
   "FlashbackHeroUI": {
     "Audio": "صدا",
     "Buffering": "در حال بافرینگ",
@@ -943,14 +968,6 @@
     "Screen": "صفحه‌نمایش",
     "StartRecording": "شروع ضبط",
     "TakeScreenshot": "ثبت تصویر لحظه‌ای"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Display را انتخاب کنید",
-    "PrimaryDisplay": "نمایشگر اولیه",
-    "Display": "نمایش",
-    "SelectWindow": "پنجره را انتخاب کنید",
-    "LoadingWindows": "در حال بارگیری...",
-    "NoWindows": "هیچ ویندوزی در دسترس نیست"
   },
   "FlashbackIndicator": {
     "Buffering": "در حال buffer کردن",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket متصل شد",
     "WsDisconnected": "WebSocket قطع شد"
   },
-  "MeetingsTab": {
-    "Download": "دانلود",
-    "DownloadAudio": "دانلود صدا",
-    "DownloadBoth": "دانلود هر دو",
-    "DownloadTxt": "دانلود .txt",
-    "Empty": "جلسه‌ای یافت نشد",
-    "Error": "بارگذاری جلسات ناموفق بود",
-    "Loading": "در حال بارگذاری جلسات...",
-    "Retry": "تلاش مجدد",
-    "SelectWorkspace": "لطفاً یک فضای کاری از منوی کاربر انتخاب کنید تا جلسات نمایش داده شوند.",
-    "Title": "جلسات",
-    "Total": "مجموع",
-    "Untitled": "جلسه بدون عنوان"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 راهنما: برای جلسات مرورگر (Google Meet، Zoom، Teams)، من فقط مرورگر را تشخیص می‌دهم، نه وب‌سایت خاص.",
     "ContinueRecording": "ادامه ضبط",
@@ -1267,6 +1270,20 @@
     "StartTitle": "جلسه تشخیص داده شد",
     "StopRecording": "توقف ضبط",
     "Yes": "بله"
+  },
+  "MeetingsTab": {
+    "Download": "دانلود",
+    "DownloadAudio": "دانلود صدا",
+    "DownloadBoth": "دانلود هر دو",
+    "DownloadTxt": "دانلود .txt",
+    "Empty": "جلسه‌ای یافت نشد",
+    "Error": "بارگذاری جلسات ناموفق بود",
+    "Loading": "در حال بارگذاری جلسات...",
+    "Retry": "تلاش مجدد",
+    "SelectWorkspace": "لطفاً یک فضای کاری از منوی کاربر انتخاب کنید تا جلسات نمایش داده شوند.",
+    "Title": "جلسات",
+    "Total": "مجموع",
+    "Untitled": "جلسه بدون عنوان"
   },
   "MinimizedView": {
     "ActionRequired": "درخواست اقدام (ضبط خودکار)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "استخراج خودکار متن (OCR) هنگام تصویر صفحه"
   },
   "Pause": "مکث کنید",
+  "PermissionAlert": {
+    "Title": "مجوز لازم است",
+    "Description": "برای ادامه به مجوز اضافی برای SeaMeet نیاز است.",
+    "OpenSettings": "باز کردن تنظیمات سیستم",
+    "ClickToOpen": "برای باز کردن تنظیمات کلیک کنید",
+    "NoPermissionFullscreen": "ضبط تمام‌صفحه به مجوز ضبط صفحه نیاز دارد.",
+    "NoPermissionWindow": "ضبط پنجره به مجوز ضبط صفحه نیاز دارد."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "به SeaMeet خوش آمدید",
+    "Step1Desc": "SeaMeet ابزاری قدرتمند برای ضبط صدا و صفحه نمایش است. برای شروع، به اجازه شما برای ضبط صفحه شما نیاز داریم.",
+    "Step2Title": "مجوز ضبط صفحه",
+    "Step2Desc": "سیستم عامل شما نیاز به مجوز صریح برای هر برنامه ای برای گرفتن صفحه نمایش شما دارد. این یک ویژگی حفاظت از حریم خصوصی است.",
+    "Step3Title": "نحوه فعال کردن",
+    "Step3Desc": "روی دکمه زیر کلیک کنید تا تنظیمات سیستم شما باز شود، سپس SeaMeet را در لیست ضبط صفحه پیدا کنید و آن را روشن کنید.",
+    "Skip": "فعلا رد شوید",
+    "OpenSettings": "تنظیمات سیستم را باز کنید",
+    "FailedToOpenSettings": "تنظیمات سیستم باز نشد",
+    "DontShowAgain": "دیگر نشان نده"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "همیشه شروع خودکار",
     "AskEveryTime": "هر بار بپرس",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "اطلاعات کدک",
     "MoreOptions": "گزینه‌های بیشتر"
   },
+  "PostUpdateModal": {
+    "Title": "به‌روزرسانی به v{{version}}",
+    "Description": "SeaMeet با موفقیت به‌روزرسانی شد. تغییرات جدید:",
+    "GotIt": "متوجه شدم"
+  },
+  "Premium": {
+    "AIAgent": "عامل هوش مصنوعی",
+    "AIAgentDesc": "رونویسی زنده و تعامل با هوش مصنوعی با اشتراک در دسترس است.",
+    "PostMeetingAI": "هوش مصنوعی پس از جلسه",
+    "PostMeetingAIDesc": "خلاصه‌ها، موارد اقدام و بینش‌ها پس از پایان ضبط تولید خواهند شد.",
+    "UnlockPremium": "باز کردن با Premium",
+    "Upgrade": "ارتقا"
+  },
+  "RecordTab": {
+    "TapToRecord": "برای شروع ضبط ضربه بزنید",
+    "RecordWithPreamble": "ضبط با پیش‌پخش {{seconds}} ثانیه",
+    "SaveLastInstead": "به‌جای آن {{seconds}} ثانیه آخر را ذخیره کنید",
+    "AutoDetectStatusOn": "در حال پایش نشست‌ها",
+    "AutoDetectStatusOff": "خاموش — برای فعال‌سازی ضربه بزنید",
+    "FlashbackStatusOff": "خاموش — برای آماده‌سازی ضربه بزنید",
+    "FlashbackStatusCharging": "در حال بارگیری {{percent}}٪",
+    "FlashbackStatusReady": "آماده — {{seconds}} ثانیه {{type}} در RAM",
+    "LauncherPill": "راه‌انداز",
+    "FloaterPill": "شناور",
+    "AutoDetectLabel": "تشخیص خودکار",
+    "FlashbackLabel": "بازگشت به خاطرات",
+    "RecentRecordings": "ضبط‌های اخیر"
+  },
   "Recording": {
     "Paused": "مکث کرد",
     "Preparing": "آماده سازی",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "جست‌وجو در ضبط‌ها و تصاویر لحظه‌ای",
     "ShowInFolder": "نشان دادن در پوشه"
   },
-  "PermissionAlert": {
-    "Title": "مجوز لازم است",
-    "Description": "برای ادامه به مجوز اضافی برای SeaMeet نیاز است.",
-    "OpenSettings": "باز کردن تنظیمات سیستم",
-    "ClickToOpen": "برای باز کردن تنظیمات کلیک کنید",
-    "NoPermissionFullscreen": "ضبط تمام‌صفحه به مجوز ضبط صفحه نیاز دارد.",
-    "NoPermissionWindow": "ضبط پنجره به مجوز ضبط صفحه نیاز دارد."
-  },
   "RegionSelector": {
     "CaptureButton": "گرفتن تصویر صفحه یا فشردن Enter",
     "ConfirmButton": "تایید انتخاب",
@@ -1454,6 +1511,14 @@
     "Title": "یک نمایشگر را انتخاب کنید",
     "Unknown": "نمایشگر بدون عنوان"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Display را انتخاب کنید",
+    "PrimaryDisplay": "نمایشگر اولیه",
+    "Display": "نمایش",
+    "SelectWindow": "پنجره را انتخاب کنید",
+    "LoadingWindows": "در حال بارگیری...",
+    "NoWindows": "هیچ ویندوزی در دسترس نیست"
+  },
   "ScreenshotProcessing": {
     "Analysis": "تجزیه و تحلیل",
     "ConfigureApiKey": "کلید API Gemini خود را برای پردازش تصاویر با هوش مصنوعی پیکربندی کنید.",
@@ -1492,6 +1557,9 @@
       "OCR": "متن (OCR)"
     },
     "UnknownError": "خطای ناشناخته"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "عکس‌های صفحه اخیر"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "کپی شد!",
@@ -1706,7 +1774,8 @@
     "Meetings": "جلسات",
     "OpenNavigationMenu": "منوی ناوبری را باز کنید",
     "Record": "ضبط کنید",
-    "Recording": "در حال ضبط"
+    "Recording": "در حال ضبط",
+    "Screenshot": "عکس صفحه"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet در سینی سیستم (پایین سمت راست) همچنان در حال اجرا است.",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "تغییرات جدید:",
     "WhatsNewInVersion": "چه خبر جدید در {{version}} است؟",
     "Restarting": "در حال راه‌اندازی مجدد..."
-  },
-  "PostUpdateModal": {
-    "Title": "به‌روزرسانی به v{{version}}",
-    "Description": "SeaMeet با موفقیت به‌روزرسانی شد. تغییرات جدید:",
-    "GotIt": "متوجه شدم"
-  },
-  "Premium": {
-    "AIAgent": "عامل هوش مصنوعی",
-    "AIAgentDesc": "رونویسی زنده و تعامل با هوش مصنوعی با اشتراک در دسترس است.",
-    "PostMeetingAI": "هوش مصنوعی پس از جلسه",
-    "PostMeetingAIDesc": "خلاصه‌ها، موارد اقدام و بینش‌ها پس از پایان ضبط تولید خواهند شد.",
-    "UnlockPremium": "باز کردن با Premium",
-    "Upgrade": "ارتقا"
   },
   "UserMenu": {
     "AboutSeaMeet": "درباره SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "منطقه انتخاب‌شده",
     "ReselectRegion": "انتخاب مجدد منطقه",
     "SelectCustomRegion": "انتخاب منطقه سفارشی"
+  },
+  "WelcomeCard": {
+    "Title": "با SeaMeet آشنا شوید",
+    "Subtitle": "سه راه برای از دست ندادن هیچ لحظه‌ای.",
+    "PointRecord": "هر چیزی را با یک ضربه ضبط کنید.",
+    "PointAutoDetect": "نشست‌ها را خودکار تشخیص دهید تا هرگز فشردن دکمهٔ ضبط را فراموش نکنید.",
+    "PointFlashback": "Flashback ده ثانیهٔ آخر را ذخیره می‌کند — تا جملهٔ مهم آغازین را از دست ندهید.",
+    "GotIt": "متوجه شدم"
+  },
+  "HelpPage": {
+    "Title": "بیشتر دربارهٔ SeaMeet بدانید"
   },
   "WindowPicker": {
     "Instruction": "پنجره ای را برای ضبط برای ضبط پنجره انتخاب کنید.",

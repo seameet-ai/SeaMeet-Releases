@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "BYOK Pro 구독이 필요합니다. 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하려면 구독하세요."
+  },
   "AIAgent": {
     "DisabledBadge": "비활성화됨",
     "DisabledMsg": "AI Agent & Cowork가 비활성화되었습니다. 설정 → AI Agent & Cowork에서 활성화하세요.",
@@ -11,9 +14,6 @@
     "SectionTitle": "AI 에이전트 및 동료",
     "SubscribeMsg": "AI 에이전트는 BYOK Pro 구독이 필요합니다. 구독하여 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하세요.",
     "SubscribeCTA": "구독하여 잠금 해제"
-  },
-  "AI": {
-    "SubscribeMsg": "BYOK Pro 구독이 필요합니다. 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하려면 구독하세요."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API 키",
@@ -325,18 +325,6 @@
     "RecordingPaused": "녹음 일시 중지됨",
     "UnknownError": "알 수 없는 오류"
   },
-  "PermissionTutorial": {
-    "Step1Title": "SeaMeet에 오신 것을 환영합니다",
-    "Step1Desc": "SeaMeet는 강력한 화면 및 오디오 녹화 도구입니다. 시작하려면 화면을 녹화할 권한이 필요합니다.",
-    "Step2Title": "화면 녹화 권한",
-    "Step2Desc": "운영 체제는 모든 앱이 화면을 캡처하기 전에 명시적 권한을 요구합니다. 이는 개인정보 보호 기능입니다.",
-    "Step3Title": "사용 설정 방법",
-    "Step3Desc": "아래 버튼을 클릭해 시스템 설정을 연 뒤, 화면 기록 목록에서 SeaMeet을 찾아 켜세요.",
-    "Skip": "나중에 하기",
-    "OpenSettings": "시스템 설정 열기",
-    "FailedToOpenSettings": "시스템 설정을 열지 못했습니다",
-    "DontShowAgain": "다시 표시하지 않음"
-  },
   "Apps": {
     "All": "모든 앱",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "마이크 목록 새로 고침",
     "UnmuteMic": "음소거 해제"
   },
+  "AutoDetectDrawer": {
+    "Title": "자동 감지",
+    "Description": "회의 앱(Zoom, Teams, Meet…)을 감시하고 녹음을 제안해 시작 버튼을 누르는 것을 잊지 않게 합니다.",
+    "ToggleLabel": "자동 감지 {{state}}",
+    "StateOn": "켜짐",
+    "StateOff": "꺼짐",
+    "RecentHeading": "최근 감지",
+    "RecentEmpty": "아직 감지된 항목이 없습니다.",
+    "AdvancedSettings": "고급 설정 →",
+    "LearnMore": "자세히 보기"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "자동 감지",
     "Description": "AUTO DETECT가 회의에 참여할 때 자동으로 녹음을 시작하므로, 녹음 버튼 누르는 것을 잊지 마세요.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "마이크 활동, 창 제목, 브라우저 URL을 이용해 정확도를 높입니다",
     "Tip2Title": "여러 탐지 방법",
     "Title": "회의 자동 감지"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "처음이신가요? 작동 방식을 알아보세요 →"
   },
   "AutoRecording": {
     "BugReport": "버그가 있으시다면 seameet@seasalt.ai로 보고해 주세요",
@@ -905,6 +907,29 @@
     "TitleReady": "클릭하여 플래시백 UI 표시",
     "ToggleLabel": "전환"
   },
+  "FlashbackDrawer": {
+    "Title": "플래시백",
+    "Description": "녹음 버튼을 누르기 전 몇 초를 조용히 기억해 두어 회의를 시작한 한마디를 놓치지 않게 합니다.",
+    "StatusOff": "꺼짐 — 아래에서 모드를 선택하여 준비하세요.",
+    "StatusCharging": "로딩 중 {{percent}}%…",
+    "StatusReady": "준비 완료 — 직전 {{seconds}}초 {{type}}.",
+    "Types": {
+      "audio": "오디오",
+      "screen": "화면"
+    },
+    "ModeLabel": "무엇을 버퍼링할까요",
+    "ModeOff": "끔",
+    "ModeAudio": "오디오",
+    "ModeScreen": "화면",
+    "WindowLabel": "버퍼 길이",
+    "PrimaryRecord": "{{seconds}}초 프리롤과 함께 녹음",
+    "PrimarySave": "직전 {{seconds}}초 저장",
+    "AdvancedSettings": "고급 설정 →",
+    "LearnMore": "자세히 보기"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "직전 {{seconds}}초는 RAM에만 버퍼링됩니다. 저장 또는 녹음 버튼을 탭하여 사용하세요."
+  },
   "FlashbackHeroUI": {
     "Audio": "오디오",
     "Buffering": "버퍼링",
@@ -943,14 +968,6 @@
     "Screen": "화면",
     "StartRecording": "녹음 시작",
     "TakeScreenshot": "화면 캡처"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "디스플레이 선택",
-    "PrimaryDisplay": "기본 디스플레이",
-    "Display": "디스플레이",
-    "SelectWindow": "창 선택",
-    "LoadingWindows": "불러오는 중...",
-    "NoWindows": "사용 가능한 창이 없습니다"
   },
   "FlashbackIndicator": {
     "Buffering": "버퍼링 중",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket 연결됨",
     "WsDisconnected": "WebSocket 연결 끊김"
   },
-  "MeetingsTab": {
-    "Download": "다운로드",
-    "DownloadAudio": "오디오 다운로드",
-    "DownloadBoth": "둘 다 다운로드",
-    "DownloadTxt": ".txt 다운로드",
-    "Empty": "회의를 찾을 수 없습니다",
-    "Error": "회의를 불러오지 못했습니다",
-    "Loading": "회의 불러오는 중...",
-    "Retry": "다시 시도",
-    "SelectWorkspace": "회의를 보려면 사용자 메뉴에서 워크스페이스를 선택하세요.",
-    "Title": "회의",
-    "Total": "총",
-    "Untitled": "제목 없는 회의"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 팁: 브라우저 회의(Google Meet, Zoom, Teams)의 경우 특정 웹사이트가 아니라 브라우저만 감지할 수 있습니다.",
     "ContinueRecording": "녹음 계속",
@@ -1267,6 +1270,20 @@
     "StartTitle": "회의 감지됨",
     "StopRecording": "녹음 중지",
     "Yes": "녹음 시작"
+  },
+  "MeetingsTab": {
+    "Download": "다운로드",
+    "DownloadAudio": "오디오 다운로드",
+    "DownloadBoth": "둘 다 다운로드",
+    "DownloadTxt": ".txt 다운로드",
+    "Empty": "회의를 찾을 수 없습니다",
+    "Error": "회의를 불러오지 못했습니다",
+    "Loading": "회의 불러오는 중...",
+    "Retry": "다시 시도",
+    "SelectWorkspace": "회의를 보려면 사용자 메뉴에서 워크스페이스를 선택하세요.",
+    "Title": "회의",
+    "Total": "총",
+    "Untitled": "제목 없는 회의"
   },
   "MinimizedView": {
     "ActionRequired": "조치 필요 (자동 녹음)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "스크린샷 시 텍스트 자동 추출(OCR)"
   },
   "Pause": "정지시키다",
+  "PermissionAlert": {
+    "Title": "권한 필요",
+    "Description": "계속하려면 SeaMeet에 추가 권한이 필요합니다.",
+    "OpenSettings": "시스템 설정 열기",
+    "ClickToOpen": "설정을 열려면 클릭",
+    "NoPermissionFullscreen": "전체 화면 녹화는 화면 기록 권한이 필요합니다.",
+    "NoPermissionWindow": "창 녹화는 화면 기록 권한이 필요합니다."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "SeaMeet에 오신 것을 환영합니다",
+    "Step1Desc": "SeaMeet는 강력한 화면 및 오디오 녹화 도구입니다. 시작하려면 화면을 녹화할 권한이 필요합니다.",
+    "Step2Title": "화면 녹화 권한",
+    "Step2Desc": "운영 체제는 모든 앱이 화면을 캡처하기 전에 명시적 권한을 요구합니다. 이는 개인정보 보호 기능입니다.",
+    "Step3Title": "사용 설정 방법",
+    "Step3Desc": "아래 버튼을 클릭해 시스템 설정을 연 뒤, 화면 기록 목록에서 SeaMeet을 찾아 켜세요.",
+    "Skip": "나중에 하기",
+    "OpenSettings": "시스템 설정 열기",
+    "FailedToOpenSettings": "시스템 설정을 열지 못했습니다",
+    "DontShowAgain": "다시 표시하지 않음"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "항상 자동 녹음",
     "AskEveryTime": "매번 문의하세요",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "코덱 정보",
     "MoreOptions": "추가 옵션"
   },
+  "PostUpdateModal": {
+    "Title": "v{{version}}(으)로 업데이트됨",
+    "Description": "SeaMeet이 성공적으로 업데이트되었습니다. 새로운 기능:",
+    "GotIt": "확인"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "실시간 전사 및 AI 상호작용은 구독으로 이용할 수 있습니다.",
+    "PostMeetingAI": "회의 후 AI",
+    "PostMeetingAIDesc": "녹음이 완료된 후 요약, 작업 항목 및 인사이트가 생성됩니다.",
+    "UnlockPremium": "Premium으로 잠금 해제",
+    "Upgrade": "업그레이드"
+  },
+  "RecordTab": {
+    "TapToRecord": "탭하여 녹음 시작",
+    "RecordWithPreamble": "{{seconds}}초 프리롤과 함께 녹음",
+    "SaveLastInstead": "대신 직전 {{seconds}}초 저장",
+    "AutoDetectStatusOn": "회의 감지 중",
+    "AutoDetectStatusOff": "꺼짐 — 탭하여 활성화",
+    "FlashbackStatusOff": "꺼짐 — 탭하여 준비",
+    "FlashbackStatusCharging": "로딩 중 {{percent}}%",
+    "FlashbackStatusReady": "준비 완료 — RAM에 {{seconds}}초 {{type}}",
+    "LauncherPill": "런처",
+    "FloaterPill": "플로터",
+    "AutoDetectLabel": "자동 감지",
+    "FlashbackLabel": "플래시백",
+    "RecentRecordings": "최근 녹음"
+  },
   "Recording": {
     "Paused": "일시정지됨",
     "Preparing": "준비 중",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "녹음 또는 스냅샷 검색",
     "ShowInFolder": "폴더에서 보여주기"
   },
-  "PermissionAlert": {
-    "Title": "권한 필요",
-    "Description": "계속하려면 SeaMeet에 추가 권한이 필요합니다.",
-    "OpenSettings": "시스템 설정 열기",
-    "ClickToOpen": "설정을 열려면 클릭",
-    "NoPermissionFullscreen": "전체 화면 녹화는 화면 기록 권한이 필요합니다.",
-    "NoPermissionWindow": "창 녹화는 화면 기록 권한이 필요합니다."
-  },
   "RegionSelector": {
     "CaptureButton": "화면 캡처 또는 Enter 키 누르기",
     "ConfirmButton": "선택 확인",
@@ -1454,6 +1511,14 @@
     "Title": "디스플레이 선택하기",
     "Unknown": "제목 없는 디스플레이"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "디스플레이 선택",
+    "PrimaryDisplay": "기본 디스플레이",
+    "Display": "디스플레이",
+    "SelectWindow": "창 선택",
+    "LoadingWindows": "불러오는 중...",
+    "NoWindows": "사용 가능한 창이 없습니다"
+  },
   "ScreenshotProcessing": {
     "Analysis": "분석",
     "ConfigureApiKey": "AI로 이미지를 처리하려면 Gemini API 키를 구성하세요.",
@@ -1492,6 +1557,9 @@
       "OCR": "텍스트 (OCR)"
     },
     "UnknownError": "알 수 없는 오류"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "최근 스크린샷"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "복사됨!",
@@ -1706,7 +1774,8 @@
     "Meetings": "회의",
     "OpenNavigationMenu": "탐색 메뉴 열기",
     "Record": "기록",
-    "Recording": "녹음"
+    "Recording": "녹음",
+    "Screenshot": "스크린샷"
   },
   "Tray": {
     "MinimizedHint": "시스템 트레이(우측 하단)에서 여전히 실행 중입니다.",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "새로운 기능:",
     "WhatsNewInVersion": "{{version}}의 새로운 기능은 무엇인가요?",
     "Restarting": "재시작 중..."
-  },
-  "PostUpdateModal": {
-    "Title": "v{{version}}(으)로 업데이트됨",
-    "Description": "SeaMeet이 성공적으로 업데이트되었습니다. 새로운 기능:",
-    "GotIt": "확인"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "실시간 전사 및 AI 상호작용은 구독으로 이용할 수 있습니다.",
-    "PostMeetingAI": "회의 후 AI",
-    "PostMeetingAIDesc": "녹음이 완료된 후 요약, 작업 항목 및 인사이트가 생성됩니다.",
-    "UnlockPremium": "Premium으로 잠금 해제",
-    "Upgrade": "업그레이드"
   },
   "UserMenu": {
     "AboutSeaMeet": "SeaMeet 소개 및 정보",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "선택한 영역",
     "ReselectRegion": "영역 재선택",
     "SelectCustomRegion": "사용자 지정 영역 선택"
+  },
+  "WelcomeCard": {
+    "Title": "SeaMeet에 오신 것을 환영합니다",
+    "Subtitle": "놓치지 않는 세 가지 방법.",
+    "PointRecord": "한 번의 탭으로 무엇이든 녹음.",
+    "PointAutoDetect": "회의를 자동으로 감지해 녹음 버튼을 잊지 않게 합니다.",
+    "PointFlashback": "플래시백은 직전 10초를 저장 — 첫 번째 중요한 말을 놓치지 않습니다.",
+    "GotIt": "확인"
+  },
+  "HelpPage": {
+    "Title": "SeaMeet에 대해 자세히 알아보기"
   },
   "WindowPicker": {
     "Instruction": "창 녹화를 위한 캡처할 창을 선택하세요.",

@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Nangangailangan ng BYOK Pro subscription. Mag-subscribe para sa live transcription, AI meeting summaries, at interactive AI agent."
+  },
   "AIAgent": {
     "DisabledBadge": "Hindi pinagana",
     "DisabledMsg": "Naka-disable ang AI Agent & Cowork. Paganahin ito sa Mga Setting → AI Agent at Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Ahente ng AI at Katrabaho",
     "SubscribeMsg": "Ang AI Agent ay nangangailangan ng BYOK Pro subscription. Mag-subscribe para makakuha ng live transcription, AI meeting summaries, at interactive na AI agent.",
     "SubscribeCTA": "Mag-subscribe para i-unlock"
-  },
-  "AI": {
-    "SubscribeMsg": "Nangangailangan ng BYOK Pro subscription. Mag-subscribe para sa live transcription, AI meeting summaries, at interactive AI agent."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API Key",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Itigil ang pagre-record",
     "UnknownError": "di-kilalang error"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Maligayang pagdating sa SeaMeet",
-    "Step1Desc": "Ang SeaMeet ay isang mahusay na tool para sa screen at audio recording. Upang magsimula, kailangan namin ng pahintulot mo na mag-record ng iyong screen.",
-    "Step2Title": "Pahintulot sa Screen Recording",
-    "Step2Desc": "Humihingi ang iyong operating system ng tahasang pahintulot bago makapag-record ng screen ang anumang app. Ito ay para sa proteksyon ng privacy.",
-    "Step3Title": "Paano I-enable",
-    "Step3Desc": "I-click ang button sa ibaba upang buksan ang mga setting ng system, pagkatapos ay hanapin ang SeaMeet sa listahan ng Screen Recording at i-toggle ito ON.",
-    "Skip": "Laktawan muna",
-    "OpenSettings": "Buksan ang System Settings",
-    "FailedToOpenSettings": "Hindi mabuksan ang mga setting ng system",
-    "DontShowAgain": "Huwag nang ipakita muli"
-  },
   "Apps": {
     "All": "Lahat ng apps",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "I-refresh ang listahan ng mikropono",
     "UnmuteMic": "I-unmute ang Mikropono"
   },
+  "AutoDetectDrawer": {
+    "Title": "Auto-Detect",
+    "Description": "Binabantayan ang mga meeting app (Zoom, Teams, Meet…) at nag-o-offer na mag-record para hindi mo na kailangang tandaan.",
+    "ToggleLabel": "Auto-detect ay {{state}}",
+    "StateOn": "ON",
+    "StateOff": "OFF",
+    "RecentHeading": "Kamakailang detections",
+    "RecentEmpty": "Wala pang detections.",
+    "AdvancedSettings": "Advanced settings →",
+    "LearnMore": "Matuto pa"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "AWTOMATIKONG PAGTUKLAS",
     "Description": "Ang Auto-Detect ay awtomatikong nagsisimula sa pagre-record kapag sumali ka sa mga miting, kaya hindi mo kailangang kalimutan ang pindutin ang record.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Ginagamit ang mikropono, mga pamagat ng bintana, at browser na URL para sa katumpakan",
     "Tip2Title": "Maramihang Paraan ng Deteksyon",
     "Title": "Auto-Detect ng mga miting"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Unang beses? Ganito ito gumagana →"
   },
   "AutoRecording": {
     "BugReport": "Nakakita ng bug? Iulat ito sa seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "I-click upang ipakita ang Flashback UI",
     "ToggleLabel": "I-toggle ang balik-tanaw"
   },
+  "FlashbackDrawer": {
+    "Title": "Flashback",
+    "Description": "Tahimik na naaalala ang mga huling segundo bago ka mag-record — para hindi mo ma-miss ang sinabi sa umpisa ng miting.",
+    "StatusOff": "Naka-off — pumili ng mode sa ibaba para mag-arm.",
+    "StatusCharging": "Nagka-charge {{percent}}%…",
+    "StatusReady": "Handa na — huling {{seconds}}s {{type}}.",
+    "Types": {
+      "audio": "audio",
+      "screen": "screen"
+    },
+    "ModeLabel": "Ano ang i-buffer",
+    "ModeOff": "Off",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Screen",
+    "WindowLabel": "Haba ng window",
+    "PrimaryRecord": "Mag-record na may {{seconds}}s preamble",
+    "PrimarySave": "I-save ang huling {{seconds}}s",
+    "AdvancedSettings": "Advanced settings →",
+    "LearnMore": "Matuto pa"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "Ang huling {{seconds}}s ay naka-buffer lang sa RAM. I-tap ang Save o ang record button para gamitin."
+  },
   "FlashbackHeroUI": {
     "Audio": "audio",
     "Buffering": "Buffer",
@@ -943,14 +968,6 @@
     "Screen": "screen → screen",
     "StartRecording": "Simulan ang Pagre-rekord",
     "TakeScreenshot": "Kuhanan ng Screenshot"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Pumili ng Display",
-    "PrimaryDisplay": "Pangunahing Display",
-    "Display": "Pagpapakita",
-    "SelectWindow": "Pumili ng Window",
-    "LoadingWindows": "Naglo-load...",
-    "NoWindows": "Walang available na window"
   },
   "FlashbackIndicator": {
     "Buffering": "Nagbu-buffer",
@@ -1236,20 +1253,6 @@
     "WsConnected": "Nakakonekta ang WebSocket",
     "WsDisconnected": "Nadiskonekta ang WebSocket"
   },
-  "MeetingsTab": {
-    "Download": "I-download",
-    "DownloadAudio": "I-download ang Audio",
-    "DownloadBoth": "I-download ang Dalawa",
-    "DownloadTxt": "I-download ang .txt",
-    "Empty": "Walang nahanap na pulong",
-    "Error": "Nabigong i-load ang mga pulong",
-    "Loading": "Naglo-load ng mga pulong...",
-    "Retry": "Subukan Muli",
-    "SelectWorkspace": "Mangyaring pumili ng workspace mula sa menu ng gumagamit upang makita ang mga pulong.",
-    "Title": "Mga Pulong",
-    "Total": "kabuuan",
-    "Untitled": "Hindi Pinangalanang Pulong"
-  },
   "MeetingPrompt": {
     "BrowserHint": "\"💡 Tip: Para sa mga pagpupulong sa browser (Google Meet, Zoom, Teams), hiningi ko lang na madetect ang browser, hindi ang partikular na website.\"",
     "ContinueRecording": "\"Ipagpatuloy ang pagre-record\"",
@@ -1267,6 +1270,20 @@
     "StartTitle": "\"Nadetect ang pagpupulong\"",
     "StopRecording": "Itigil ang pagre-record",
     "Yes": "\"Simulan ang pagre-record\""
+  },
+  "MeetingsTab": {
+    "Download": "I-download",
+    "DownloadAudio": "I-download ang Audio",
+    "DownloadBoth": "I-download ang Dalawa",
+    "DownloadTxt": "I-download ang .txt",
+    "Empty": "Walang nahanap na pulong",
+    "Error": "Nabigong i-load ang mga pulong",
+    "Loading": "Naglo-load ng mga pulong...",
+    "Retry": "Subukan Muli",
+    "SelectWorkspace": "Mangyaring pumili ng workspace mula sa menu ng gumagamit upang makita ang mga pulong.",
+    "Title": "Mga Pulong",
+    "Total": "kabuuan",
+    "Untitled": "Hindi Pinangalanang Pulong"
   },
   "MinimizedView": {
     "ActionRequired": "Kailangan ng aksyon (Auto-Record)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Auto-extract ng teksto (OCR) sa screenshot"
   },
   "Pause": "I-pause",
+  "PermissionAlert": {
+    "Title": "Kailangan ng pahintulot",
+    "Description": "Kailangan ng SeaMeet ng dagdag na pahintulot upang magpatuloy.",
+    "OpenSettings": "Buksan ang System Settings",
+    "ClickToOpen": "I-click upang buksan ang settings",
+    "NoPermissionFullscreen": "Ang fullscreen recording ay nangangailangan ng pahintulot sa Screen Recording.",
+    "NoPermissionWindow": "Ang window recording ay nangangailangan ng pahintulot sa Screen Recording."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Maligayang pagdating sa SeaMeet",
+    "Step1Desc": "Ang SeaMeet ay isang mahusay na tool para sa screen at audio recording. Upang magsimula, kailangan namin ng pahintulot mo na mag-record ng iyong screen.",
+    "Step2Title": "Pahintulot sa Screen Recording",
+    "Step2Desc": "Humihingi ang iyong operating system ng tahasang pahintulot bago makapag-record ng screen ang anumang app. Ito ay para sa proteksyon ng privacy.",
+    "Step3Title": "Paano I-enable",
+    "Step3Desc": "I-click ang button sa ibaba upang buksan ang mga setting ng system, pagkatapos ay hanapin ang SeaMeet sa listahan ng Screen Recording at i-toggle ito ON.",
+    "Skip": "Laktawan muna",
+    "OpenSettings": "Buksan ang System Settings",
+    "FailedToOpenSettings": "Hindi mabuksan ang mga setting ng system",
+    "DontShowAgain": "Huwag nang ipakita muli"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Palaging Auto Record",
     "AskEveryTime": "Magtanong tuwing kailangan",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Impormasyon ng codec",
     "MoreOptions": "Maraming opsyon"
   },
+  "PostUpdateModal": {
+    "Title": "Na-update sa v{{version}}",
+    "Description": "Matagumpay na na-update ang SeaMeet. Narito ang mga bago:",
+    "GotIt": "Sige"
+  },
+  "Premium": {
+    "AIAgent": "Ahente ng AI",
+    "AIAgentDesc": "Ang live transcription at AI interaction ay available sa subscription.",
+    "PostMeetingAI": "AI Pagkatapos ng Meeting",
+    "PostMeetingAIDesc": "Ang mga buod, action items, at insights ay gagawin pagkatapos ng recording.",
+    "UnlockPremium": "I-unlock gamit ang Premium",
+    "Upgrade": "Mag-upgrade"
+  },
+  "RecordTab": {
+    "TapToRecord": "I-tap para simulan ang pag-record",
+    "RecordWithPreamble": "Mag-record na may {{seconds}}s preamble",
+    "SaveLastInstead": "I-save ang huling {{seconds}}s sa halip",
+    "AutoDetectStatusOn": "nagbabantay ng miting",
+    "AutoDetectStatusOff": "naka-off — i-tap para i-enable",
+    "FlashbackStatusOff": "naka-off — i-tap para i-arm",
+    "FlashbackStatusCharging": "nagka-charge {{percent}}%",
+    "FlashbackStatusReady": "armado — {{seconds}}s {{type}} sa RAM",
+    "LauncherPill": "Launcher",
+    "FloaterPill": "Floater",
+    "AutoDetectLabel": "Auto-Detect",
+    "FlashbackLabel": "Flashback",
+    "RecentRecordings": "Kamakailang recordings"
+  },
   "Recording": {
     "Paused": "Naka-pause",
     "Preparing": "Naghahanda",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Maghanap ng mga pagre-record at larawan di-makikita",
     "ShowInFolder": "Ipakita sa folder"
   },
-  "PermissionAlert": {
-    "Title": "Kailangan ng pahintulot",
-    "Description": "Kailangan ng SeaMeet ng dagdag na pahintulot upang magpatuloy.",
-    "OpenSettings": "Buksan ang System Settings",
-    "ClickToOpen": "I-click upang buksan ang settings",
-    "NoPermissionFullscreen": "Ang fullscreen recording ay nangangailangan ng pahintulot sa Screen Recording.",
-    "NoPermissionWindow": "Ang window recording ay nangangailangan ng pahintulot sa Screen Recording."
-  },
   "RegionSelector": {
     "CaptureButton": "Kukunan ng Screen o Pindutin ang Enter",
     "ConfirmButton": "Kumpirmahin ang pagpili",
@@ -1454,6 +1511,14 @@
     "Title": "Pumili ng display",
     "Unknown": "Walang pamagat na display"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Pumili ng Display",
+    "PrimaryDisplay": "Pangunahing Display",
+    "Display": "Pagpapakita",
+    "SelectWindow": "Pumili ng Window",
+    "LoadingWindows": "Naglo-load...",
+    "NoWindows": "Walang available na window"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Pagsusuri",
     "ConfigureApiKey": "I-configure ang iyong Gemini API key para i-process ang mga larawan gamit ang AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Teksto (OCR)"
     },
     "UnknownError": "Hindi kilalang error"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Kamakailang screenshots"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Nakopya na!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Mga Pulong",
     "OpenNavigationMenu": "Buksan ang navigation menu",
     "Record": "Itala",
-    "Recording": "Pagre-record"
+    "Recording": "Pagre-record",
+    "Screenshot": "Screenshot"
   },
   "Tray": {
     "MinimizedHint": "Ang SeaMeet ay naka-run pa rin sa system tray (ibabang-kanan).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Mga Bagong Kaganapan:",
     "WhatsNewInVersion": "Mga Bagong Kaganapan sa {{version}}?",
     "Restarting": "Nire-restart..."
-  },
-  "PostUpdateModal": {
-    "Title": "Na-update sa v{{version}}",
-    "Description": "Matagumpay na na-update ang SeaMeet. Narito ang mga bago:",
-    "GotIt": "Sige"
-  },
-  "Premium": {
-    "AIAgent": "Ahente ng AI",
-    "AIAgentDesc": "Ang live transcription at AI interaction ay available sa subscription.",
-    "PostMeetingAI": "AI Pagkatapos ng Meeting",
-    "PostMeetingAIDesc": "Ang mga buod, action items, at insights ay gagawin pagkatapos ng recording.",
-    "UnlockPremium": "I-unlock gamit ang Premium",
-    "Upgrade": "Mag-upgrade"
   },
   "UserMenu": {
     "AboutSeaMeet": "Tungkol sa SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Napiling rehiyon",
     "ReselectRegion": "Muling piliin ang Rehiyon",
     "SelectCustomRegion": "Piliin ang Custom na Rehiyon"
+  },
+  "WelcomeCard": {
+    "Title": "Kilalanin ang SeaMeet",
+    "Subtitle": "Tatlong paraan para hindi ma-miss ang anumang sandali.",
+    "PointRecord": "Mag-record ng kahit ano sa isang tap.",
+    "PointAutoDetect": "Awtomatikong tinutukoy ang mga miting, para hindi mo makalimutang mag-record.",
+    "PointFlashback": "Ini-save ng Flashback ang huling 10 segundo — para hindi mo ma-miss ang unang magandang linya.",
+    "GotIt": "Tapos na"
+  },
+  "HelpPage": {
+    "Title": "Matuto pa tungkol sa SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Pumili ng bintana para sa pagre-record ng window.",

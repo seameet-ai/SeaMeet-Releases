@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Memerlukan langganan BYOK Pro. Berlangganan untuk transkripsi langsung, ringkasan rapat AI, dan agen AI interaktif."
+  },
   "AIAgent": {
     "DisabledBadge": "Dinonaktifkan",
     "DisabledMsg": "Agen AI & Rekan Kerja dinonaktifkan. Aktifkan di Pengaturan → Agen AI & Rekan Kerja.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Agen AI & Rekan Kerja",
     "SubscribeMsg": "Agen AI memerlukan langganan BYOK Pro. Berlangganan untuk mendapatkan transkripsi langsung, ringkasan rapat AI, dan agen AI interaktif.",
     "SubscribeCTA": "Berlangganan untuk membuka"
-  },
-  "AI": {
-    "SubscribeMsg": "Memerlukan langganan BYOK Pro. Berlangganan untuk transkripsi langsung, ringkasan rapat AI, dan agen AI interaktif."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Kunci API Gemini",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Perekaman dijeda",
     "UnknownError": "kesalahan yang tidak diketahui"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Selamat datang di SeaMeet",
-    "Step1Desc": "SeaMeet adalah alat perekaman layar dan audio yang canggih. Untuk memulai, kami memerlukan izin Anda untuk merekam layar.",
-    "Step2Title": "Izin Perekaman Layar",
-    "Step2Desc": "Sistem operasi Anda memerlukan izin eksplisit sebelum aplikasi apa pun dapat merekam layar. Ini adalah fitur perlindungan privasi.",
-    "Step3Title": "Cara Mengaktifkan",
-    "Step3Desc": "Klik tombol di bawah untuk membuka pengaturan sistem, lalu temukan SeaMeet di daftar Perekaman Layar dan aktifkan.",
-    "Skip": "Lewati untuk sekarang",
-    "OpenSettings": "Buka Pengaturan Sistem",
-    "FailedToOpenSettings": "Gagal membuka pengaturan sistem",
-    "DontShowAgain": "Jangan tampilkan lagi"
-  },
   "Apps": {
     "All": "Semua aplikasi",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Segarkan daftar mikrofon",
     "UnmuteMic": "Suarakan Mikrofon"
   },
+  "AutoDetectDrawer": {
+    "Title": "Deteksi Otomatis",
+    "Description": "Memantau aplikasi rapat (Zoom, Teams, Meet…) dan menawarkan merekam agar Anda tidak lupa menekan mulai.",
+    "ToggleLabel": "Deteksi otomatis {{state}}",
+    "StateOn": "AKTIF",
+    "StateOff": "NONAKTIF",
+    "RecentHeading": "Deteksi terbaru",
+    "RecentEmpty": "Belum ada deteksi.",
+    "AdvancedSettings": "Pengaturan lanjutan →",
+    "LearnMore": "Pelajari lebih"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "DETEKSI OTOMATIS",
     "Description": "Deteksi otomatis memulai perekaman saat Anda bergabung dalam rapat, jadi Anda tidak pernah lupa menekan tombol rekam.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Menggunakan aktivitas mikrofon, judul jendela, dan URL browser untuk akurasi",
     "Tip2Title": "Beberapa Metode Deteksi",
     "Title": "Deteksi Otomatis Rapat"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Pertama kali? Begini cara kerjanya →"
   },
   "AutoRecording": {
     "BugReport": "Ada bug? Laporkan ke seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Klik untuk menunjukkan UI Kilas balik",
     "ToggleLabel": "Aktifkan/Mati Kilas balik"
   },
+  "FlashbackDrawer": {
+    "Title": "Kilas Balik",
+    "Description": "Menyimpan diam-diam beberapa detik sebelum Anda menekan rekam — jadi Anda tidak melewatkan kalimat pembuka rapat.",
+    "StatusOff": "Mati — pilih mode di bawah untuk mengaktifkan.",
+    "StatusCharging": "Memuat {{percent}}%…",
+    "StatusReady": "Siap — {{seconds}}d terakhir {{type}}.",
+    "Types": {
+      "audio": "audio",
+      "screen": "layar"
+    },
+    "ModeLabel": "Apa yang di-buffer",
+    "ModeOff": "Mati",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Layar",
+    "WindowLabel": "Panjang jendela",
+    "PrimaryRecord": "Rekam dengan preamble {{seconds}}d",
+    "PrimarySave": "Simpan {{seconds}}d terakhir",
+    "AdvancedSettings": "Pengaturan lanjutan →",
+    "LearnMore": "Pelajari lebih"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "{{seconds}}d terakhir disimpan hanya di RAM. Tap Simpan atau tombol rekam untuk menggunakannya."
+  },
   "FlashbackHeroUI": {
     "Audio": "audio",
     "Buffering": "Penyangga",
@@ -943,14 +968,6 @@
     "Screen": "layar",
     "StartRecording": "Mulai Perekaman",
     "TakeScreenshot": "Ambil Screenshot"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Pilih Layar",
-    "PrimaryDisplay": "Layar Utama",
-    "Display": "Layar",
-    "SelectWindow": "Pilih Jendela",
-    "LoadingWindows": "Memuat...",
-    "NoWindows": "Tidak ada jendela tersedia"
   },
   "FlashbackIndicator": {
     "Buffering": "Penyangga",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket Terhubung",
     "WsDisconnected": "WebSocket Terputus"
   },
-  "MeetingsTab": {
-    "Download": "Unduh",
-    "DownloadAudio": "Unduh Audio",
-    "DownloadBoth": "Unduh Keduanya",
-    "DownloadTxt": "Unduh .txt",
-    "Empty": "Tidak ada rapat yang ditemukan",
-    "Error": "Gagal memuat rapat",
-    "Loading": "Memuat rapat...",
-    "Retry": "Coba Lagi",
-    "SelectWorkspace": "Silakan pilih ruang kerja dari menu pengguna untuk melihat rapat.",
-    "Title": "Rapat",
-    "Total": "total",
-    "Untitled": "Rapat Tanpa Judul"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tips: Untuk rapat browser (Google Meet, Zoom, Teams), saya hanya bisa mendeteksi browser, bukan website spesifik.",
     "ContinueRecording": "Lanjutkan Perekaman",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Rapat Terdeteksi",
     "StopRecording": "Berhenti Merekam",
     "Yes": "Mulai perekaman"
+  },
+  "MeetingsTab": {
+    "Download": "Unduh",
+    "DownloadAudio": "Unduh Audio",
+    "DownloadBoth": "Unduh Keduanya",
+    "DownloadTxt": "Unduh .txt",
+    "Empty": "Tidak ada rapat yang ditemukan",
+    "Error": "Gagal memuat rapat",
+    "Loading": "Memuat rapat...",
+    "Retry": "Coba Lagi",
+    "SelectWorkspace": "Silakan pilih ruang kerja dari menu pengguna untuk melihat rapat.",
+    "Title": "Rapat",
+    "Total": "total",
+    "Untitled": "Rapat Tanpa Judul"
   },
   "MinimizedView": {
     "ActionRequired": "Tindakan Diperlukan (Auto-Record)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Ekstrak teks otomatis (OCR) saat tangkapan layar"
   },
   "Pause": "Berhenti sebentar",
+  "PermissionAlert": {
+    "Title": "Izin diperlukan",
+    "Description": "SeaMeet memerlukan izin tambahan untuk melanjutkan.",
+    "OpenSettings": "Buka Pengaturan Sistem",
+    "ClickToOpen": "Klik untuk membuka pengaturan",
+    "NoPermissionFullscreen": "Perekaman layar penuh memerlukan izin Perekaman Layar.",
+    "NoPermissionWindow": "Perekaman jendela memerlukan izin Perekaman Layar."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Selamat datang di SeaMeet",
+    "Step1Desc": "SeaMeet adalah alat perekaman layar dan audio yang canggih. Untuk memulai, kami memerlukan izin Anda untuk merekam layar.",
+    "Step2Title": "Izin Perekaman Layar",
+    "Step2Desc": "Sistem operasi Anda memerlukan izin eksplisit sebelum aplikasi apa pun dapat merekam layar. Ini adalah fitur perlindungan privasi.",
+    "Step3Title": "Cara Mengaktifkan",
+    "Step3Desc": "Klik tombol di bawah untuk membuka pengaturan sistem, lalu temukan SeaMeet di daftar Perekaman Layar dan aktifkan.",
+    "Skip": "Lewati untuk sekarang",
+    "OpenSettings": "Buka Pengaturan Sistem",
+    "FailedToOpenSettings": "Gagal membuka pengaturan sistem",
+    "DontShowAgain": "Jangan tampilkan lagi"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Selalu Mulai Otomatis",
     "AskEveryTime": "Tanyakan Setiap Kali",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Informasi kodek",
     "MoreOptions": "Opsi lainnya"
   },
+  "PostUpdateModal": {
+    "Title": "Diperbarui ke v{{version}}",
+    "Description": "SeaMeet berhasil diperbarui. Berikut yang baru:",
+    "GotIt": "Mengerti"
+  },
+  "Premium": {
+    "AIAgent": "Agen AI",
+    "AIAgentDesc": "Transkripsi langsung dan interaksi AI tersedia dengan berlangganan.",
+    "PostMeetingAI": "AI Pasca-Rapat",
+    "PostMeetingAIDesc": "Ringkasan, item tindakan, dan wawasan akan dihasilkan setelah rekaman selesai.",
+    "UnlockPremium": "Buka dengan Premium",
+    "Upgrade": "Meningkatkan"
+  },
+  "RecordTab": {
+    "TapToRecord": "Tap untuk mulai merekam",
+    "RecordWithPreamble": "Rekam dengan preamble {{seconds}}d",
+    "SaveLastInstead": "Simpan {{seconds}}d terakhir saja",
+    "AutoDetectStatusOn": "memantau rapat",
+    "AutoDetectStatusOff": "mati — tap untuk aktifkan",
+    "FlashbackStatusOff": "mati — tap untuk mengaktifkan",
+    "FlashbackStatusCharging": "memuat {{percent}}%",
+    "FlashbackStatusReady": "siap — {{seconds}}d {{type}} di RAM",
+    "LauncherPill": "Peluncur",
+    "FloaterPill": "Floater",
+    "AutoDetectLabel": "Deteksi Otomatis",
+    "FlashbackLabel": "Kilas Balik",
+    "RecentRecordings": "Rekaman terbaru"
+  },
   "Recording": {
     "Paused": "Dijeda",
     "Preparing": "Mempersiapkan",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Cari perekaman dan tangkapan layar",
     "ShowInFolder": "Tampilkan di folder"
   },
-  "PermissionAlert": {
-    "Title": "Izin diperlukan",
-    "Description": "SeaMeet memerlukan izin tambahan untuk melanjutkan.",
-    "OpenSettings": "Buka Pengaturan Sistem",
-    "ClickToOpen": "Klik untuk membuka pengaturan",
-    "NoPermissionFullscreen": "Perekaman layar penuh memerlukan izin Perekaman Layar.",
-    "NoPermissionWindow": "Perekaman jendela memerlukan izin Perekaman Layar."
-  },
   "RegionSelector": {
     "CaptureButton": "Tangkap Layar atau Tekan Enter",
     "ConfirmButton": "Konfirmasi pilihan",
@@ -1454,6 +1511,14 @@
     "Title": "Pilih tampilan",
     "Unknown": "Tampilan tanpa judul"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Pilih Layar",
+    "PrimaryDisplay": "Layar Utama",
+    "Display": "Layar",
+    "SelectWindow": "Pilih Jendela",
+    "LoadingWindows": "Memuat...",
+    "NoWindows": "Tidak ada jendela tersedia"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Analisa",
     "ConfigureApiKey": "Konfigurasikan kunci API Gemini Anda untuk memproses gambar dengan AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Teks (OCR)"
     },
     "UnknownError": "Kesalahan tidak diketahui"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Tangkapan layar terbaru"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Tersalin!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Rapat",
     "OpenNavigationMenu": "Buka menu navigasi",
     "Record": "Catatan",
-    "Recording": "Rekaman"
+    "Recording": "Rekaman",
+    "Screenshot": "Tangkapan Layar"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet masih berjalan di system tray (kanan bawah).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Apa yang Baru:",
     "WhatsNewInVersion": "Apa yang Baru di {{version}}?",
     "Restarting": "Memulai ulang..."
-  },
-  "PostUpdateModal": {
-    "Title": "Diperbarui ke v{{version}}",
-    "Description": "SeaMeet berhasil diperbarui. Berikut yang baru:",
-    "GotIt": "Mengerti"
-  },
-  "Premium": {
-    "AIAgent": "Agen AI",
-    "AIAgentDesc": "Transkripsi langsung dan interaksi AI tersedia dengan berlangganan.",
-    "PostMeetingAI": "AI Pasca-Rapat",
-    "PostMeetingAIDesc": "Ringkasan, item tindakan, dan wawasan akan dihasilkan setelah rekaman selesai.",
-    "UnlockPremium": "Buka dengan Premium",
-    "Upgrade": "Meningkatkan"
   },
   "UserMenu": {
     "AboutSeaMeet": "Tentang SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Wilayah yang Dipilih",
     "ReselectRegion": "Pilih ulang Wilayah Kustom",
     "SelectCustomRegion": "Pilih Wilayah Kustom"
+  },
+  "WelcomeCard": {
+    "Title": "Selamat datang di SeaMeet",
+    "Subtitle": "Tiga cara untuk tidak pernah melewatkan momen.",
+    "PointRecord": "Rekam apa saja dengan satu tap.",
+    "PointAutoDetect": "Deteksi rapat secara otomatis agar Anda tidak lupa menekan rekam.",
+    "PointFlashback": "Kilas Balik menyimpan 10 detik terakhir — jadi Anda tidak melewatkan kalimat penting pertama.",
+    "GotIt": "Mengerti"
+  },
+  "HelpPage": {
+    "Title": "Pelajari SeaMeet lebih jauh"
   },
   "WindowPicker": {
     "Instruction": "Pilih jendela untuk ditangkap untuk perekaman jendela.",

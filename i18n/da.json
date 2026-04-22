@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
+  },
   "AIAgent": {
     "DisabledBadge": "Deaktiveret",
     "DisabledMsg": "AI Agent & Cowork er deaktiveret. Aktiver det i Indstillinger → AI Agent & Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "AI Agent & Cowork",
     "SubscribeMsg": "AI Agent kræver et BYOK Pro-abonnement. Abonnér for at få live transskription, AI-mødeoversigter og en interaktiv AI-agent.",
     "SubscribeCTA": "Abonnér for at låse op"
-  },
-  "AI": {
-    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API nøgle",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Optagelse sat på pause",
     "UnknownError": "Ukendt fejl"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Velkommen til SeaMeet",
-    "Step1Desc": "SeaMeet er et kraftfuldt skærm- og lydoptagelsesværktøj. For at komme i gang skal vi have din tilladelse til at optage din skærm.",
-    "Step2Title": "Tilladelse til skærmoptagelse",
-    "Step2Desc": "Dit operativsystem kræver udtrykkelig tilladelse til, at enhver app kan fange din skærm. Dette er en privatlivsbeskyttelsesfunktion.",
-    "Step3Title": "Sådan aktiveres",
-    "Step3Desc": "Klik på knappen nedenfor for at åbne dine systemindstillinger, find derefter SeaMeet på skærmoptagelseslisten, og slå det TIL.",
-    "Skip": "Spring over for nu",
-    "OpenSettings": "Åbn Systemindstillinger",
-    "FailedToOpenSettings": "Kunne ikke åbne systemindstillinger",
-    "DontShowAgain": "Vis ikke igen"
-  },
   "Apps": {
     "All": "Alle apps",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Opdater mikrofonliste",
     "UnmuteMic": "Slå mikrofon til"
   },
+  "AutoDetectDrawer": {
+    "Title": "Auto-registrering",
+    "Description": "Holder øje med mødeapps (Zoom, Teams, Meet…) og tilbyder at optage, så du aldrig glemmer at trykke start.",
+    "ToggleLabel": "Auto-registrering er {{state}}",
+    "StateOn": "TIL",
+    "StateOff": "FRA",
+    "RecentHeading": "Nylige registreringer",
+    "RecentEmpty": "Ingen registreringer endnu.",
+    "AdvancedSettings": "Avancerede indstillinger →",
+    "LearnMore": "Læs mere"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO-DETEKTERING",
     "Description": "Auto-detektering starter optagelse automatisk når du deltager i møder, så du aldrig glemmer at trykke på optag.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Bruger mikrofonaktivitet, vinduestitler og browser-URL'er til nøjagtighed",
     "Tip2Title": "Flere detektionsmetoder",
     "Title": "Møder automatisk registreret"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Første gang? Sådan virker det →"
   },
   "AutoRecording": {
     "BugReport": "Har du fundet en fejl? Rapportér den til seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Klik for at vise Flashback-brugergrænsefladen",
     "ToggleLabel": "Skift flashback"
   },
+  "FlashbackDrawer": {
+    "Title": "Tilbageblik",
+    "Description": "Husker stille og roligt de sidste sekunder, før du trykker optag — så du ikke går glip af sætningen, der startede mødet.",
+    "StatusOff": "Fra — vælg en tilstand nedenfor for at aktivere.",
+    "StatusCharging": "Oplader {{percent}}%…",
+    "StatusReady": "Klar — sidste {{seconds}}s {{type}}.",
+    "Types": {
+      "audio": "lyd",
+      "screen": "skærm"
+    },
+    "ModeLabel": "Hvad skal buffres",
+    "ModeOff": "Fra",
+    "ModeAudio": "Lyd",
+    "ModeScreen": "Skærm",
+    "WindowLabel": "Vindueslængde",
+    "PrimaryRecord": "Optag med {{seconds}}s forudspil",
+    "PrimarySave": "Gem de sidste {{seconds}}s",
+    "AdvancedSettings": "Avancerede indstillinger →",
+    "LearnMore": "Læs mere"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "De sidste {{seconds}}s buffres kun i RAM. Tryk Gem eller optagelsesknappen for at bruge dem."
+  },
   "FlashbackHeroUI": {
     "Audio": "lyd",
     "Buffering": "Indlæser",
@@ -943,14 +968,6 @@
     "Screen": "skærm",
     "StartRecording": "Start optagelse",
     "TakeScreenshot": "Tag skærmbillede"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Vælg Display",
-    "PrimaryDisplay": "Primær skærm",
-    "Display": "Vise",
-    "SelectWindow": "Vælg Vindue",
-    "LoadingWindows": "Indlæser...",
-    "NoWindows": "Ingen tilgængelige vinduer"
   },
   "FlashbackIndicator": {
     "Buffering": "Indlæser",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket tilsluttet",
     "WsDisconnected": "WebSocket afbrudt"
   },
-  "MeetingsTab": {
-    "Download": "Download",
-    "DownloadAudio": "Download lyd",
-    "DownloadBoth": "Download begge",
-    "DownloadTxt": "Download .txt",
-    "Empty": "Ingen møder fundet",
-    "Error": "Kunne ikke indlæse møder",
-    "Loading": "Indlæser møder...",
-    "Retry": "Prøv igen",
-    "SelectWorkspace": "Vælg et arbejdsområde fra brugermenuen for at se møder.",
-    "Title": "Møder",
-    "Total": "i alt",
-    "Untitled": "Unavngivet møde"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tip: Ved browsermøder (Google Meet, Zoom, Teams) kan jeg kun registrere browseren, ikke den specifikke hjemmeside.",
     "ContinueRecording": "Fortsæt optagelse",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Møde opdaget",
     "StopRecording": "Stop optagelse",
     "Yes": "Start optagelse"
+  },
+  "MeetingsTab": {
+    "Download": "Download",
+    "DownloadAudio": "Download lyd",
+    "DownloadBoth": "Download begge",
+    "DownloadTxt": "Download .txt",
+    "Empty": "Ingen møder fundet",
+    "Error": "Kunne ikke indlæse møder",
+    "Loading": "Indlæser møder...",
+    "Retry": "Prøv igen",
+    "SelectWorkspace": "Vælg et arbejdsområde fra brugermenuen for at se møder.",
+    "Title": "Møder",
+    "Total": "i alt",
+    "Untitled": "Unavngivet møde"
   },
   "MinimizedView": {
     "ActionRequired": "Handling påkrævet (Auto-optag)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Auto-udtræk tekst (OCR) ved skærmbillede"
   },
   "Pause": "Pause",
+  "PermissionAlert": {
+    "Title": "Tilladelse påkrævet",
+    "Description": "SeaMeet kræver yderligere tilladelse for at fortsætte.",
+    "OpenSettings": "Åbn systemindstillinger",
+    "ClickToOpen": "Klik for at åbne indstillinger",
+    "NoPermissionFullscreen": "Fuldskærmsoptagelse kræver tilladelse til skærmoptagelse.",
+    "NoPermissionWindow": "Vinduesoptagelse kræver tilladelse til skærmoptagelse."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Velkommen til SeaMeet",
+    "Step1Desc": "SeaMeet er et kraftfuldt skærm- og lydoptagelsesværktøj. For at komme i gang skal vi have din tilladelse til at optage din skærm.",
+    "Step2Title": "Tilladelse til skærmoptagelse",
+    "Step2Desc": "Dit operativsystem kræver udtrykkelig tilladelse til, at enhver app kan fange din skærm. Dette er en privatlivsbeskyttelsesfunktion.",
+    "Step3Title": "Sådan aktiveres",
+    "Step3Desc": "Klik på knappen nedenfor for at åbne dine systemindstillinger, find derefter SeaMeet på skærmoptagelseslisten, og slå det TIL.",
+    "Skip": "Spring over for nu",
+    "OpenSettings": "Åbn Systemindstillinger",
+    "FailedToOpenSettings": "Kunne ikke åbne systemindstillinger",
+    "DontShowAgain": "Vis ikke igen"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Optag altid automatisk",
     "AskEveryTime": "Spørg hver gang",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Codec-information",
     "MoreOptions": "Flere muligheder"
   },
+  "PostUpdateModal": {
+    "Title": "Opdateret til v{{version}}",
+    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
+    "GotIt": "Forstået"
+  },
+  "Premium": {
+    "AIAgent": "AI-agent",
+    "AIAgentDesc": "Live transskription og AI-interaktion er tilgængelig med et abonnement.",
+    "PostMeetingAI": "AI efter mødet",
+    "PostMeetingAIDesc": "Resuméer, handlingspunkter og indsigter genereres efter optagelsen er færdig.",
+    "UnlockPremium": "Lås op med Premium",
+    "Upgrade": "Opgrader"
+  },
+  "RecordTab": {
+    "TapToRecord": "Tryk for at starte optagelse",
+    "RecordWithPreamble": "Optag med {{seconds}}s forudspil",
+    "SaveLastInstead": "Gem de sidste {{seconds}}s i stedet",
+    "AutoDetectStatusOn": "holder øje med møder",
+    "AutoDetectStatusOff": "fra — tryk for at aktivere",
+    "FlashbackStatusOff": "fra — tryk for at aktivere",
+    "FlashbackStatusCharging": "oplader {{percent}}%",
+    "FlashbackStatusReady": "klar — {{seconds}}s {{type}} i RAM",
+    "LauncherPill": "Starter",
+    "FloaterPill": "Flydevindue",
+    "AutoDetectLabel": "Auto-registrering",
+    "FlashbackLabel": "Tilbageblik",
+    "RecentRecordings": "Nylige optagelser"
+  },
   "Recording": {
     "Paused": "Pause",
     "Preparing": "Forbereder",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Søg optagelser og skærmbilleder",
     "ShowInFolder": "Vis i mappe"
   },
-  "PermissionAlert": {
-    "Title": "Tilladelse påkrævet",
-    "Description": "SeaMeet kræver yderligere tilladelse for at fortsætte.",
-    "OpenSettings": "Åbn systemindstillinger",
-    "ClickToOpen": "Klik for at åbne indstillinger",
-    "NoPermissionFullscreen": "Fuldskærmsoptagelse kræver tilladelse til skærmoptagelse.",
-    "NoPermissionWindow": "Vinduesoptagelse kræver tilladelse til skærmoptagelse."
-  },
   "RegionSelector": {
     "CaptureButton": "Optag skærm eller tryk Enter",
     "ConfirmButton": "Bekræft valg",
@@ -1454,6 +1511,14 @@
     "Title": "Vælg en skærm",
     "Unknown": "Unavngivet skærm"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Vælg Display",
+    "PrimaryDisplay": "Primær skærm",
+    "Display": "Vise",
+    "SelectWindow": "Vælg Vindue",
+    "LoadingWindows": "Indlæser...",
+    "NoWindows": "Ingen tilgængelige vinduer"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Analyse",
     "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at behandle billeder med AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Tekst (OCR)"
     },
     "UnknownError": "Ukendt fejl"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Nylige skærmbilleder"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Kopieret!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Møder",
     "OpenNavigationMenu": "Åbn navigationsmenu",
     "Record": "Optage",
-    "Recording": "Indspilning"
+    "Recording": "Indspilning",
+    "Screenshot": "Skærmbillede"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet kører stadig i systembakken (nederst til højre).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Nyheder:",
     "WhatsNewInVersion": "Nyheder i {{version}}?",
     "Restarting": "Genstarter..."
-  },
-  "PostUpdateModal": {
-    "Title": "Opdateret til v{{version}}",
-    "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
-    "GotIt": "Forstået"
-  },
-  "Premium": {
-    "AIAgent": "AI-agent",
-    "AIAgentDesc": "Live transskription og AI-interaktion er tilgængelig med et abonnement.",
-    "PostMeetingAI": "AI efter mødet",
-    "PostMeetingAIDesc": "Resuméer, handlingspunkter og indsigter genereres efter optagelsen er færdig.",
-    "UnlockPremium": "Lås op med Premium",
-    "Upgrade": "Opgrader"
   },
   "UserMenu": {
     "AboutSeaMeet": "Om SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Område valgt",
     "ReselectRegion": "Vælg område igen",
     "SelectCustomRegion": "Vælg tilpasset område"
+  },
+  "WelcomeCard": {
+    "Title": "Mød SeaMeet",
+    "Subtitle": "Tre måder at aldrig gå glip af et øjeblik.",
+    "PointRecord": "Optag alt med ét tryk.",
+    "PointAutoDetect": "Registrér møder automatisk, så du aldrig glemmer at trykke optag.",
+    "PointFlashback": "Tilbageblik gemmer de sidste 10 sekunder — så du ikke går glip af den første gode sætning.",
+    "GotIt": "OK"
+  },
+  "HelpPage": {
+    "Title": "Læs mere om SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Vælg et vindue til vinduesoptagelser.",

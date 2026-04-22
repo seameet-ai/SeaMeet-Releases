@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Требуется подписка BYOK Pro. Подпишитесь для получения живой транскрипции, AI-резюме встреч и интерактивного AI-агента."
+  },
   "AIAgent": {
     "DisabledBadge": "Отключено",
     "DisabledMsg": "AI Agent & Cowork отключены. Включите его в «Настройки» → «AI Agent & Cowork».",
@@ -11,9 +14,6 @@
     "SectionTitle": "AI-агент и совместная работа",
     "SubscribeMsg": "ИИ-агент требует подписки BYOK Pro. Подпишитесь для получения транскрипции в реальном времени, ИИ-сводок встреч и интерактивного ИИ-агента.",
     "SubscribeCTA": "Подписаться для разблокировки"
-  },
-  "AI": {
-    "SubscribeMsg": "Требуется подписка BYOK Pro. Подпишитесь для получения живой транскрипции, AI-резюме встреч и интерактивного AI-агента."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API Key",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Запись приостановлена",
     "UnknownError": "Неизвестная ошибка"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Добро пожаловать в SeaMeet",
-    "Step1Desc": "SeaMeet — мощный инструмент для записи экрана и звука. Чтобы начать, нам нужно ваше разрешение на запись экрана.",
-    "Step2Title": "Разрешение на запись экрана",
-    "Step2Desc": "Операционная система требует явного разрешения, прежде чем любое приложение сможет записывать экран. Это функция защиты приватности.",
-    "Step3Title": "Как включить",
-    "Step3Desc": "Нажмите кнопку ниже, чтобы открыть системные настройки, найдите SeaMeet в списке «Запись экрана» и включите его.",
-    "Skip": "Пропустить",
-    "OpenSettings": "Открыть системные настройки",
-    "FailedToOpenSettings": "Не удалось открыть системные настройки",
-    "DontShowAgain": "Больше не показывать"
-  },
   "Apps": {
     "All": "Все приложения",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Обновить список микрофонов",
     "UnmuteMic": "Unmute Microphone"
   },
+  "AutoDetectDrawer": {
+    "Title": "Автодетект",
+    "Description": "Следит за приложениями встреч (Zoom, Teams, Meet…) и предлагает запись, чтобы вам не нужно было помнить о старте.",
+    "ToggleLabel": "Автодетект {{state}}",
+    "StateOn": "ВКЛ",
+    "StateOff": "ВЫКЛ",
+    "RecentHeading": "Последние обнаружения",
+    "RecentEmpty": "Пока нет обнаружений.",
+    "AdvancedSettings": "Расширенные настройки →",
+    "LearnMore": "Подробнее"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "АВТО ОБНАРУЖЕНИЕ",
     "Description": "Автообнаружение автоматически начинает запись, когда вы присоединяетесь к встречам, чтобы вы никогда не забыли нажать кнопку \"Запись\".",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Использует микрофон, заголовки окон и URL-адреса браузеров для точности",
     "Tip2Title": "Множественные методы обнаружения",
     "Title": "Автообнаружение встреч"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Первый раз? Вот как это работает →"
   },
   "AutoRecording": {
     "BugReport": "Нашли баг? Сообщите по адресу seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Нажмите для показа интерфейса Flashback",
     "ToggleLabel": "Переключить флэшбэк"
   },
+  "FlashbackDrawer": {
+    "Title": "Флешбек",
+    "Description": "Тихо запоминает последние секунды перед тем, как вы нажмёте запись, — чтобы вы не пропустили фразу, с которой началась встреча.",
+    "StatusOff": "Выкл — выберите режим ниже, чтобы подготовить.",
+    "StatusCharging": "Загрузка {{percent}}%…",
+    "StatusReady": "Готово — последние {{seconds}} с {{type}}.",
+    "Types": {
+      "audio": "аудио",
+      "screen": "экран"
+    },
+    "ModeLabel": "Что буферизовать",
+    "ModeOff": "Выкл",
+    "ModeAudio": "Аудио",
+    "ModeScreen": "Экран",
+    "WindowLabel": "Длина окна",
+    "PrimaryRecord": "Записать с преамбулой {{seconds}} с",
+    "PrimarySave": "Сохранить последние {{seconds}} с",
+    "AdvancedSettings": "Расширенные настройки →",
+    "LearnMore": "Подробнее"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "Последние {{seconds}} с буферизуются только в RAM. Нажмите Сохранить или кнопку записи, чтобы использовать."
+  },
   "FlashbackHeroUI": {
     "Audio": "звуковое",
     "Buffering": "Буферизация",
@@ -943,14 +968,6 @@
     "Screen": "экран",
     "StartRecording": "Начать запись",
     "TakeScreenshot": "Сделать снимок"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Выбрать дисплей",
-    "PrimaryDisplay": "Главный дисплей",
-    "Display": "Дисплей",
-    "SelectWindow": "Выбрать окно",
-    "LoadingWindows": "Загрузка...",
-    "NoWindows": "Нет доступных окон"
   },
   "FlashbackIndicator": {
     "Buffering": "Буферизация",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket подключён",
     "WsDisconnected": "WebSocket отключён"
   },
-  "MeetingsTab": {
-    "Download": "Скачать",
-    "DownloadAudio": "Скачать аудио",
-    "DownloadBoth": "Скачать оба",
-    "DownloadTxt": "Скачать .txt",
-    "Empty": "Встречи не найдены",
-    "Error": "Не удалось загрузить встречи",
-    "Loading": "Загрузка встреч...",
-    "Retry": "Повторить",
-    "SelectWorkspace": "Выберите рабочее пространство в меню пользователя для просмотра встреч.",
-    "Title": "Встречи",
-    "Total": "всего",
-    "Untitled": "Встреча без названия"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Совет: Для встреч в браузере (Google Meet, Zoom, Teams) я могу определить только браузер, а не конкретный сайт.",
     "ContinueRecording": "Продолжить запись",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Обнаружена встреча",
     "StopRecording": "Остановить запись",
     "Yes": "Начать запись"
+  },
+  "MeetingsTab": {
+    "Download": "Скачать",
+    "DownloadAudio": "Скачать аудио",
+    "DownloadBoth": "Скачать оба",
+    "DownloadTxt": "Скачать .txt",
+    "Empty": "Встречи не найдены",
+    "Error": "Не удалось загрузить встречи",
+    "Loading": "Загрузка встреч...",
+    "Retry": "Повторить",
+    "SelectWorkspace": "Выберите рабочее пространство в меню пользователя для просмотра встреч.",
+    "Title": "Встречи",
+    "Total": "всего",
+    "Untitled": "Встреча без названия"
   },
   "MinimizedView": {
     "ActionRequired": "Требуется действие (Авто-запись)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Автоматическое извлечение текста (OCR) при скриншоте"
   },
   "Pause": "Пауза",
+  "PermissionAlert": {
+    "Title": "Требуется разрешение",
+    "Description": "Для продолжения SeaMeet нужно дополнительное разрешение.",
+    "OpenSettings": "Открыть системные настройки",
+    "ClickToOpen": "Нажмите, чтобы открыть настройки",
+    "NoPermissionFullscreen": "Полноэкранная запись требует разрешения на запись экрана.",
+    "NoPermissionWindow": "Запись окна требует разрешения на запись экрана."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Добро пожаловать в SeaMeet",
+    "Step1Desc": "SeaMeet — мощный инструмент для записи экрана и звука. Чтобы начать, нам нужно ваше разрешение на запись экрана.",
+    "Step2Title": "Разрешение на запись экрана",
+    "Step2Desc": "Операционная система требует явного разрешения, прежде чем любое приложение сможет записывать экран. Это функция защиты приватности.",
+    "Step3Title": "Как включить",
+    "Step3Desc": "Нажмите кнопку ниже, чтобы открыть системные настройки, найдите SeaMeet в списке «Запись экрана» и включите его.",
+    "Skip": "Пропустить",
+    "OpenSettings": "Открыть системные настройки",
+    "FailedToOpenSettings": "Не удалось открыть системные настройки",
+    "DontShowAgain": "Больше не показывать"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Всегда автозапись",
     "AskEveryTime": "Спрашивать каждый раз",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Информация о кодеке (Данные о кодеке)",
     "MoreOptions": "Больше опций"
   },
+  "PostUpdateModal": {
+    "Title": "Обновлено до v{{version}}",
+    "Description": "SeaMeet успешно обновлён. Что нового:",
+    "GotIt": "Понятно"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Транскрипция в реальном времени и взаимодействие с ИИ доступны по подписке.",
+    "PostMeetingAI": "ИИ после встречи",
+    "PostMeetingAIDesc": "Сводки, задачи и аналитика будут сгенерированы после завершения записи.",
+    "UnlockPremium": "Разблокировать с Premium",
+    "Upgrade": "Обновить"
+  },
+  "RecordTab": {
+    "TapToRecord": "Нажмите, чтобы начать запись",
+    "RecordWithPreamble": "Записать с преамбулой {{seconds}} с",
+    "SaveLastInstead": "Сохранить последние {{seconds}} с вместо этого",
+    "AutoDetectStatusOn": "следит за встречами",
+    "AutoDetectStatusOff": "выкл — нажмите, чтобы включить",
+    "FlashbackStatusOff": "выкл — нажмите, чтобы подготовить",
+    "FlashbackStatusCharging": "загрузка {{percent}}%",
+    "FlashbackStatusReady": "готово — {{seconds}} с {{type}} в RAM",
+    "LauncherPill": "Лаунчер",
+    "FloaterPill": "Флоутер",
+    "AutoDetectLabel": "Автодетект",
+    "FlashbackLabel": "Флешбек",
+    "RecentRecordings": "Последние записи"
+  },
   "Recording": {
     "Paused": "Paused",
     "Preparing": "Preparing",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Искать записи и снимки",
     "ShowInFolder": "Показать в папке"
   },
-  "PermissionAlert": {
-    "Title": "Требуется разрешение",
-    "Description": "Для продолжения SeaMeet нужно дополнительное разрешение.",
-    "OpenSettings": "Открыть системные настройки",
-    "ClickToOpen": "Нажмите, чтобы открыть настройки",
-    "NoPermissionFullscreen": "Полноэкранная запись требует разрешения на запись экрана.",
-    "NoPermissionWindow": "Запись окна требует разрешения на запись экрана."
-  },
   "RegionSelector": {
     "CaptureButton": "Захват экрана или нажмите Enter",
     "ConfirmButton": "Подтвердите выбор",
@@ -1454,6 +1511,14 @@
     "Title": "Выберите дисплей",
     "Unknown": "дисплей без имени"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Выбрать дисплей",
+    "PrimaryDisplay": "Главный дисплей",
+    "Display": "Дисплей",
+    "SelectWindow": "Выбрать окно",
+    "LoadingWindows": "Загрузка...",
+    "NoWindows": "Нет доступных окон"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Анализ",
     "ConfigureApiKey": "Настройте ключ API Gemini для обработки изображений с помощью AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Текст (OCR)"
     },
     "UnknownError": "Неизвестная ошибка"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Последние скриншоты"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Скопировано!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Встречи",
     "OpenNavigationMenu": "Открыть меню навигации",
     "Record": "Записывать",
-    "Recording": "Запись"
+    "Recording": "Запись",
+    "Screenshot": "Скриншот"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet всё ещё запущен в системном лотке (в правом нижнем углу).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Что нового:",
     "WhatsNewInVersion": "Что нового в {{version}}?",
     "Restarting": "Перезапуск..."
-  },
-  "PostUpdateModal": {
-    "Title": "Обновлено до v{{version}}",
-    "Description": "SeaMeet успешно обновлён. Что нового:",
-    "GotIt": "Понятно"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Транскрипция в реальном времени и взаимодействие с ИИ доступны по подписке.",
-    "PostMeetingAI": "ИИ после встречи",
-    "PostMeetingAIDesc": "Сводки, задачи и аналитика будут сгенерированы после завершения записи.",
-    "UnlockPremium": "Разблокировать с Premium",
-    "Upgrade": "Обновить"
   },
   "UserMenu": {
     "AboutSeaMeet": "Об SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Регион выбран",
     "ReselectRegion": "Перевыбрать регион",
     "SelectCustomRegion": "Выбрать пользовательский регион"
+  },
+  "WelcomeCard": {
+    "Title": "Добро пожаловать в SeaMeet",
+    "Subtitle": "Три способа не упустить ни одного момента.",
+    "PointRecord": "Записывайте что угодно одним нажатием.",
+    "PointAutoDetect": "Автоматически обнаруживает встречи — не нужно помнить о нажатии записи.",
+    "PointFlashback": "Флешбек сохраняет последние 10 секунд — вы не упустите первую важную фразу.",
+    "GotIt": "Понятно"
+  },
+  "HelpPage": {
+    "Title": "Узнать больше о SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Выберите окно для захвата при оконной записи.",

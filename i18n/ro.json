@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Necesită un abonament BYOK Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
+  },
   "AIAgent": {
     "DisabledBadge": "Dezactivat",
     "DisabledMsg": "AI Agent & Cowork este dezactivat. Activați-l în Setări → AI Agent & Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Agent AI și cowork",
     "SubscribeMsg": "Agentul AI necesită un abonament BYOK Pro. Abonați-vă pentru a obține transcriere în timp real, rezumate AI ale întâlnirilor și un agent AI interactiv.",
     "SubscribeCTA": "Abonați-vă pentru a debloca"
-  },
-  "AI": {
-    "SubscribeMsg": "Necesită un abonament BYOK Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Cheia API Gemini",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Înregistrare întreruptă",
     "UnknownError": "eroare necunoscută"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Bun venit în SeaMeet",
-    "Step1Desc": "SeaMeet este un instrument puternic de înregistrare a ecranului și a sunetului. Pentru a începe, avem nevoie de permisiunea ta pentru a înregistra ecranul.",
-    "Step2Title": "Permisiune de înregistrare a ecranului",
-    "Step2Desc": "Sistemul tău de operare cere permisiune explicită înainte ca o aplicație să captureze ecranul. Este o funcție de protecție a confidențialității.",
-    "Step3Title": "Cum să activezi",
-    "Step3Desc": "Apasă butonul de mai jos pentru a deschide setările de sistem, apoi găsește SeaMeet în lista Înregistrare ecran și activează-l.",
-    "Skip": "Omite pentru moment",
-    "OpenSettings": "Deschide setările de sistem",
-    "FailedToOpenSettings": "Deschiderea setărilor de sistem a eșuat",
-    "DontShowAgain": "Nu mai afișa"
-  },
   "Apps": {
     "All": "Toate aplicațiile",
     "Battlenet": "Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Reîmprospătează lista de microfoane",
     "UnmuteMic": "Unmute Microphone"
   },
+  "AutoDetectDrawer": {
+    "Title": "Auto-detectare",
+    "Description": "Urmărește aplicațiile de întâlniri (Zoom, Teams, Meet…) și oferă înregistrare ca să nu uiți să apeși start.",
+    "ToggleLabel": "Auto-detectare {{state}}",
+    "StateOn": "PORNIT",
+    "StateOff": "OPRIT",
+    "RecentHeading": "Detecții recente",
+    "RecentEmpty": "Încă nu există detecții.",
+    "AdvancedSettings": "Setări avansate →",
+    "LearnMore": "Află mai mult"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "DETECARE AUTOMATĂ",
     "Description": "Auto-Detect începe automat înregistrarea atunci când te alături întâlnirilor, astfel încât să nu uiți niciodată să apeși pe butonul de înregistrare.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Folosește activitatea microfonului, titlurile ferestrelor și URL-urile browserelor pentru o mai mare precizie",
     "Tip2Title": "Mai multe metode de detectare",
     "Title": "Auto-Detectare întâlniri"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Prima oară? Uite cum funcționează →"
   },
   "AutoRecording": {
     "BugReport": "Ai găsit un bug? Raportează-l la seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Apasă pentru a afișa interfața Flashback",
     "ToggleLabel": "Activează / Dezactivează Flashback"
   },
+  "FlashbackDrawer": {
+    "Title": "Flashback",
+    "Description": "Ține minte discret ultimele secunde înainte să apeși înregistrează — ca să nu ratezi fraza cu care a început întâlnirea.",
+    "StatusOff": "Oprit — alege un mod mai jos pentru a arma.",
+    "StatusCharging": "Încarcă {{percent}}%…",
+    "StatusReady": "Gata — ultimele {{seconds}}s de {{type}}.",
+    "Types": {
+      "audio": "audio",
+      "screen": "ecran"
+    },
+    "ModeLabel": "Ce să memoreze",
+    "ModeOff": "Oprit",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Ecran",
+    "WindowLabel": "Lungimea ferestrei",
+    "PrimaryRecord": "Înregistrează cu preambul de {{seconds}}s",
+    "PrimarySave": "Salvează ultimele {{seconds}}s",
+    "AdvancedSettings": "Setări avansate →",
+    "LearnMore": "Află mai mult"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "Ultimele {{seconds}}s sunt memorate doar în RAM. Atinge Salvează sau butonul de înregistrare ca să le folosești."
+  },
   "FlashbackHeroUI": {
     "Audio": "Audio",
     "Buffering": "Buffering",
@@ -943,14 +968,6 @@
     "Screen": "Ecran",
     "StartRecording": "Pornește înregistrarea",
     "TakeScreenshot": "Fă Screenshot"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Selectează ecran",
-    "PrimaryDisplay": "Ecran principal",
-    "Display": "Ecran",
-    "SelectWindow": "Selectează fereastră",
-    "LoadingWindows": "Se încarcă...",
-    "NoWindows": "Nicio fereastră disponibilă"
   },
   "FlashbackIndicator": {
     "Buffering": "În tamponare",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket conectat",
     "WsDisconnected": "WebSocket deconectat"
   },
-  "MeetingsTab": {
-    "Download": "Descarcă",
-    "DownloadAudio": "Descarcă audio",
-    "DownloadBoth": "Descarcă ambele",
-    "DownloadTxt": "Descarcă .txt",
-    "Empty": "Nu s-au găsit întâlniri",
-    "Error": "Eroare la încărcarea întâlnirilor",
-    "Loading": "Se încarcă întâlnirile...",
-    "Retry": "Reîncearcă",
-    "SelectWorkspace": "Selectați un spațiu de lucru din meniul utilizatorului pentru a vedea întâlnirile.",
-    "Title": "Întâlniri",
-    "Total": "total",
-    "Untitled": "Întâlnire fără titlu"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Sfaturi: Pentru întâlniri în browser (Google Meet, Zoom, Teams), pot detecta doar browserul, nu site-ul specific.",
     "ContinueRecording": "Continuă înregistrarea",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Întâlnire detectată",
     "StopRecording": "Oprește înregistrarea",
     "Yes": "Începe înregistrarea"
+  },
+  "MeetingsTab": {
+    "Download": "Descarcă",
+    "DownloadAudio": "Descarcă audio",
+    "DownloadBoth": "Descarcă ambele",
+    "DownloadTxt": "Descarcă .txt",
+    "Empty": "Nu s-au găsit întâlniri",
+    "Error": "Eroare la încărcarea întâlnirilor",
+    "Loading": "Se încarcă întâlnirile...",
+    "Retry": "Reîncearcă",
+    "SelectWorkspace": "Selectați un spațiu de lucru din meniul utilizatorului pentru a vedea întâlnirile.",
+    "Title": "Întâlniri",
+    "Total": "total",
+    "Untitled": "Întâlnire fără titlu"
   },
   "MinimizedView": {
     "ActionRequired": "Acțiune necesară (Auto-Record)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Extrage text automat (OCR) la captură de ecran"
   },
   "Pause": "Pauză",
+  "PermissionAlert": {
+    "Title": "Permisiune necesară",
+    "Description": "SeaMeet are nevoie de o permisiune suplimentară pentru a continua.",
+    "OpenSettings": "Deschide setările de sistem",
+    "ClickToOpen": "Apasă pentru a deschide setările",
+    "NoPermissionFullscreen": "Înregistrarea pe tot ecranul necesită permisiune de Înregistrare ecran.",
+    "NoPermissionWindow": "Înregistrarea ferestrei necesită permisiune de Înregistrare ecran."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Bun venit în SeaMeet",
+    "Step1Desc": "SeaMeet este un instrument puternic de înregistrare a ecranului și a sunetului. Pentru a începe, avem nevoie de permisiunea ta pentru a înregistra ecranul.",
+    "Step2Title": "Permisiune de înregistrare a ecranului",
+    "Step2Desc": "Sistemul tău de operare cere permisiune explicită înainte ca o aplicație să captureze ecranul. Este o funcție de protecție a confidențialității.",
+    "Step3Title": "Cum să activezi",
+    "Step3Desc": "Apasă butonul de mai jos pentru a deschide setările de sistem, apoi găsește SeaMeet în lista Înregistrare ecran și activează-l.",
+    "Skip": "Omite pentru moment",
+    "OpenSettings": "Deschide setările de sistem",
+    "FailedToOpenSettings": "Deschiderea setărilor de sistem a eșuat",
+    "DontShowAgain": "Nu mai afișa"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Întotdeauna Auto-Record",
     "AskEveryTime": "Întreabă de fiecare dată",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Informații codec",
     "MoreOptions": "Mai multe opțiuni"
   },
+  "PostUpdateModal": {
+    "Title": "Actualizat la v{{version}}",
+    "Description": "SeaMeet a fost actualizat cu succes. Ce este nou:",
+    "GotIt": "Am înțeles"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Transcrierea live și interacțiunea cu AI sunt disponibile cu un abonament.",
+    "PostMeetingAI": "IA post-întâlnire",
+    "PostMeetingAIDesc": "Rezumatele, elementele de acțiune și perspectivele vor fi generate după finalizarea înregistrării.",
+    "UnlockPremium": "Deblochează cu Premium",
+    "Upgrade": "Actualizează"
+  },
+  "RecordTab": {
+    "TapToRecord": "Atinge pentru a începe înregistrarea",
+    "RecordWithPreamble": "Înregistrează cu preambul de {{seconds}}s",
+    "SaveLastInstead": "Salvează ultimele {{seconds}}s",
+    "AutoDetectStatusOn": "urmărește întâlniri",
+    "AutoDetectStatusOff": "oprit — atinge pentru a activa",
+    "FlashbackStatusOff": "oprit — atinge pentru a arma",
+    "FlashbackStatusCharging": "încarcă {{percent}}%",
+    "FlashbackStatusReady": "armat — {{seconds}}s de {{type}} în RAM",
+    "LauncherPill": "Lansator",
+    "FloaterPill": "Plutitor",
+    "AutoDetectLabel": "Auto-detectare",
+    "FlashbackLabel": "Flashback",
+    "RecentRecordings": "Înregistrări recente"
+  },
   "Recording": {
     "Paused": "Paused",
     "Preparing": "Preparing",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Caută înregistrări și instantanee",
     "ShowInFolder": "Afișează în folder"
   },
-  "PermissionAlert": {
-    "Title": "Permisiune necesară",
-    "Description": "SeaMeet are nevoie de o permisiune suplimentară pentru a continua.",
-    "OpenSettings": "Deschide setările de sistem",
-    "ClickToOpen": "Apasă pentru a deschide setările",
-    "NoPermissionFullscreen": "Înregistrarea pe tot ecranul necesită permisiune de Înregistrare ecran.",
-    "NoPermissionWindow": "Înregistrarea ferestrei necesită permisiune de Înregistrare ecran."
-  },
   "RegionSelector": {
     "CaptureButton": "Captură ecran sau apăsați Enter",
     "ConfirmButton": "Confirmați selecția",
@@ -1454,6 +1511,14 @@
     "Title": "Alege o prezentare",
     "Unknown": "afișaj Fără titlu"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Selectează ecran",
+    "PrimaryDisplay": "Ecran principal",
+    "Display": "Ecran",
+    "SelectWindow": "Selectează fereastră",
+    "LoadingWindows": "Se încarcă...",
+    "NoWindows": "Nicio fereastră disponibilă"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Analiză",
     "ConfigureApiKey": "Configurați cheia API Gemini pentru a procesa imagini cu AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Text (OCR)"
     },
     "UnknownError": "Eroare necunoscută"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Capturi recente"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Copiat!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Întâlniri",
     "OpenNavigationMenu": "Deschide meniul de navigare",
     "Record": "Înregistra",
-    "Recording": "Înregistrare"
+    "Recording": "Înregistrare",
+    "Screenshot": "Captură"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet încă rulează în zona de notificare (dreapta-jos).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Noutăți:",
     "WhatsNewInVersion": "Noutăți în {{version}}?",
     "Restarting": "Se repornește..."
-  },
-  "PostUpdateModal": {
-    "Title": "Actualizat la v{{version}}",
-    "Description": "SeaMeet a fost actualizat cu succes. Ce este nou:",
-    "GotIt": "Am înțeles"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Transcrierea live și interacțiunea cu AI sunt disponibile cu un abonament.",
-    "PostMeetingAI": "IA post-întâlnire",
-    "PostMeetingAIDesc": "Rezumatele, elementele de acțiune și perspectivele vor fi generate după finalizarea înregistrării.",
-    "UnlockPremium": "Deblochează cu Premium",
-    "Upgrade": "Actualizează"
   },
   "UserMenu": {
     "AboutSeaMeet": "Despre SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Regiune selectată",
     "ReselectRegion": "Realege regiunea",
     "SelectCustomRegion": "Selectează regiune personalizată"
+  },
+  "WelcomeCard": {
+    "Title": "Bine ai venit la SeaMeet",
+    "Subtitle": "Trei moduri să nu pierzi niciun moment.",
+    "PointRecord": "Înregistrează orice cu o singură atingere.",
+    "PointAutoDetect": "Detectează automat întâlnirile — nu mai trebuie să ții minte să apeși înregistrează.",
+    "PointFlashback": "Flashback salvează ultimele 10 secunde — ca să nu ratezi prima replică importantă.",
+    "GotIt": "Am înțeles"
+  },
+  "HelpPage": {
+    "Title": "Află mai mult despre SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Alege o fereastră pentru înregistrare.",

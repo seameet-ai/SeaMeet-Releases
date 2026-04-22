@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Yêu cầu đăng ký BYOK Pro. Đăng ký để nhận phiên âm trực tiếp, tóm tắt cuộc họp AI và đại lý AI tương tác."
+  },
   "AIAgent": {
     "DisabledBadge": "Đã tắt",
     "DisabledMsg": "AI Agent & Cowork bị vô hiệu hóa. Kích hoạt nó trong Cài đặt → AI Agent & Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "Đại lý AI & Cowork",
     "SubscribeMsg": "Trợ lý AI yêu cầu đăng ký BYOK Pro. Đăng ký để nhận phiên âm trực tiếp, tóm tắt cuộc họp AI và trợ lý AI tương tác.",
     "SubscribeCTA": "Đăng ký để mở khóa"
-  },
-  "AI": {
-    "SubscribeMsg": "Yêu cầu đăng ký BYOK Pro. Đăng ký để nhận phiên âm trực tiếp, tóm tắt cuộc họp AI và đại lý AI tương tác."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API Key",
@@ -325,18 +325,6 @@
     "RecordingPaused": "Ghi tạm dừng",
     "UnknownError": "lỗi không xác định"
   },
-  "PermissionTutorial": {
-    "Step1Title": "Chào mừng đến với SeaMeet",
-    "Step1Desc": "SeaMeet là công cụ ghi màn hình và âm thanh mạnh mẽ. Để bắt đầu, chúng tôi cần quyền ghi màn hình của bạn.",
-    "Step2Title": "Quyền ghi màn hình",
-    "Step2Desc": "Hệ điều hành yêu cầu quyền rõ ràng trước khi bất kỳ ứng dụng nào có thể ghi màn hình. Đây là tính năng bảo vệ quyền riêng tư.",
-    "Step3Title": "Cách bật",
-    "Step3Desc": "Nhấp vào nút bên dưới để mở cài đặt hệ thống, tìm SeaMeet trong danh sách Ghi màn hình và bật nó lên.",
-    "Skip": "Bỏ qua tạm thời",
-    "OpenSettings": "Mở Cài đặt hệ thống",
-    "FailedToOpenSettings": "Không mở được cài đặt hệ thống",
-    "DontShowAgain": "Không hiển thị lại"
-  },
   "Apps": {
     "All": "Tất cả các ứng dụng",
     "Battlenet": "Battle.net → Battle.net",
@@ -394,6 +382,17 @@
     "RefreshMicrophoneList": "Lam moi danh sach microphone",
     "UnmuteMic": "Unmute Microphone"
   },
+  "AutoDetectDrawer": {
+    "Title": "Phát hiện tự động",
+    "Description": "Theo dõi các ứng dụng họp (Zoom, Teams, Meet…) và đề xuất ghi âm để bạn không phải nhớ nhấn bắt đầu.",
+    "ToggleLabel": "Phát hiện tự động {{state}}",
+    "StateOn": "BẬT",
+    "StateOff": "TẮT",
+    "RecentHeading": "Phát hiện gần đây",
+    "RecentEmpty": "Chưa có phát hiện nào.",
+    "AdvancedSettings": "Cài đặt nâng cao →",
+    "LearnMore": "Tìm hiểu thêm"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "TỰ ĐỘNG PHÁT HIỆN",
     "Description": "Tính năng Auto-Detect sẽ tự động bắt đầu quay phim khi bạn tham gia cuộc họp, giúp bạn không bao giờ quên nhấn ghi.",
@@ -415,6 +414,9 @@
     "Tip2Desc": "Sử dụng hoạt động của microphone, tiêu đề cửa sổ và URL trình duyệt để đảm bảo chính xác",
     "Tip2Title": "Phương pháp phát hiện đa dạng",
     "Title": "Tự động phát hiện cuộc họp"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Lần đầu? Cách hoạt động như sau →"
   },
   "AutoRecording": {
     "BugReport": "Gap loi? Bao cao toi seameet@seasalt.ai",
@@ -905,6 +907,29 @@
     "TitleReady": "Nhap de hien thi giao dien Flashback",
     "ToggleLabel": "Chuyen doi che do flashback"
   },
+  "FlashbackDrawer": {
+    "Title": "Quay lại",
+    "Description": "Âm thầm ghi nhớ vài giây trước khi bạn nhấn ghi — để bạn không bỏ lỡ câu nói mở đầu cuộc họp.",
+    "StatusOff": "Tắt — chọn một chế độ bên dưới để chuẩn bị.",
+    "StatusCharging": "Đang nạp {{percent}}%…",
+    "StatusReady": "Sẵn sàng — {{seconds}}s gần nhất {{type}}.",
+    "Types": {
+      "audio": "âm thanh",
+      "screen": "màn hình"
+    },
+    "ModeLabel": "Cần lưu gì",
+    "ModeOff": "Tắt",
+    "ModeAudio": "Âm thanh",
+    "ModeScreen": "Màn hình",
+    "WindowLabel": "Độ dài bộ đệm",
+    "PrimaryRecord": "Ghi với {{seconds}}s mở đầu",
+    "PrimarySave": "Lưu {{seconds}}s gần nhất",
+    "AdvancedSettings": "Cài đặt nâng cao →",
+    "LearnMore": "Tìm hiểu thêm"
+  },
+  "FlashbackFirstArm": {
+    "Tooltip": "{{seconds}}s gần nhất chỉ được lưu trong RAM. Chạm Lưu hoặc nút ghi để sử dụng."
+  },
   "FlashbackHeroUI": {
     "Audio": "am thanh",
     "Buffering": "Dang buffer",
@@ -943,14 +968,6 @@
     "Screen": "man hinh",
     "StartRecording": "Bat dau ghi",
     "TakeScreenshot": "Chup anh man hinh"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Chọn màn hình",
-    "PrimaryDisplay": "Màn hình chính",
-    "Display": "Màn hình",
-    "SelectWindow": "Chọn cửa sổ",
-    "LoadingWindows": "Đang tải...",
-    "NoWindows": "Không có cửa sổ nào"
   },
   "FlashbackIndicator": {
     "Buffering": "Đang chờ",
@@ -1236,20 +1253,6 @@
     "WsConnected": "WebSocket đã kết nối",
     "WsDisconnected": "WebSocket đã ngắt kết nối"
   },
-  "MeetingsTab": {
-    "Download": "Tải xuống",
-    "DownloadAudio": "Tải xuống âm thanh",
-    "DownloadBoth": "Tải xuống cả hai",
-    "DownloadTxt": "Tải xuống .txt",
-    "Empty": "Không tìm thấy cuộc họp nào",
-    "Error": "Không thể tải cuộc họp",
-    "Loading": "Đang tải cuộc họp...",
-    "Retry": "Thử lại",
-    "SelectWorkspace": "Vui lòng chọn không gian làm việc từ menu người dùng để xem các cuộc họp.",
-    "Title": "Cuộc họp",
-    "Total": "tổng",
-    "Untitled": "Cuộc họp chưa đặt tên"
-  },
   "MeetingPrompt": {
     "BrowserHint": "💡 Mẹo: Đối với các cuộc họp trình duyệt (Google Meet, Zoom, Teams), tôi chỉ phát hiện trình duyệt, không riêng trang web.",
     "ContinueRecording": "Tiếp tục ghi",
@@ -1267,6 +1270,20 @@
     "StartTitle": "Đã phát hiện cuộc họp",
     "StopRecording": "Dừng ghi",
     "Yes": "Bắt đầu ghi cuộc họp"
+  },
+  "MeetingsTab": {
+    "Download": "Tải xuống",
+    "DownloadAudio": "Tải xuống âm thanh",
+    "DownloadBoth": "Tải xuống cả hai",
+    "DownloadTxt": "Tải xuống .txt",
+    "Empty": "Không tìm thấy cuộc họp nào",
+    "Error": "Không thể tải cuộc họp",
+    "Loading": "Đang tải cuộc họp...",
+    "Retry": "Thử lại",
+    "SelectWorkspace": "Vui lòng chọn không gian làm việc từ menu người dùng để xem các cuộc họp.",
+    "Title": "Cuộc họp",
+    "Total": "tổng",
+    "Untitled": "Cuộc họp chưa đặt tên"
   },
   "MinimizedView": {
     "ActionRequired": "Yeu cau hanh dong (Tu dong ghi)",
@@ -1291,6 +1308,26 @@
     "SettingsLabel": "Tự động trích xuất văn bản (OCR) khi chụp màn hình"
   },
   "Pause": "Tạm dừng",
+  "PermissionAlert": {
+    "Title": "Cần quyền",
+    "Description": "SeaMeet cần quyền bổ sung để tiếp tục.",
+    "OpenSettings": "Mở Cài đặt hệ thống",
+    "ClickToOpen": "Nhấp để mở cài đặt",
+    "NoPermissionFullscreen": "Ghi toàn màn hình cần quyền Ghi màn hình.",
+    "NoPermissionWindow": "Ghi cửa sổ cần quyền Ghi màn hình."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Chào mừng đến với SeaMeet",
+    "Step1Desc": "SeaMeet là công cụ ghi màn hình và âm thanh mạnh mẽ. Để bắt đầu, chúng tôi cần quyền ghi màn hình của bạn.",
+    "Step2Title": "Quyền ghi màn hình",
+    "Step2Desc": "Hệ điều hành yêu cầu quyền rõ ràng trước khi bất kỳ ứng dụng nào có thể ghi màn hình. Đây là tính năng bảo vệ quyền riêng tư.",
+    "Step3Title": "Cách bật",
+    "Step3Desc": "Nhấp vào nút bên dưới để mở cài đặt hệ thống, tìm SeaMeet trong danh sách Ghi màn hình và bật nó lên.",
+    "Skip": "Bỏ qua tạm thời",
+    "OpenSettings": "Mở Cài đặt hệ thống",
+    "FailedToOpenSettings": "Không mở được cài đặt hệ thống",
+    "DontShowAgain": "Không hiển thị lại"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Chế độ tự động ghi liên tục",
     "AskEveryTime": "Hỏi mỗi lần",
@@ -1350,6 +1387,34 @@
     "CodecInfo": "Thông tin Codec",
     "MoreOptions": "Thêm tùy chọn"
   },
+  "PostUpdateModal": {
+    "Title": "Đã cập nhật lên v{{version}}",
+    "Description": "SeaMeet đã được cập nhật thành công. Có gì mới:",
+    "GotIt": "Đã hiểu"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Phiên âm trực tiếp và tương tác AI khả dụng khi đăng ký.",
+    "PostMeetingAI": "AI sau cuộc họp",
+    "PostMeetingAIDesc": "Tóm tắt, mục hành động và thông tin chi tiết sẽ được tạo sau khi ghi âm hoàn tất.",
+    "UnlockPremium": "Mở khóa với Premium",
+    "Upgrade": "Nâng cấp"
+  },
+  "RecordTab": {
+    "TapToRecord": "Chạm để bắt đầu ghi âm",
+    "RecordWithPreamble": "Ghi với {{seconds}}s mở đầu",
+    "SaveLastInstead": "Lưu {{seconds}}s gần nhất thay vào đó",
+    "AutoDetectStatusOn": "đang theo dõi cuộc họp",
+    "AutoDetectStatusOff": "tắt — chạm để bật",
+    "FlashbackStatusOff": "tắt — chạm để chuẩn bị",
+    "FlashbackStatusCharging": "đang nạp {{percent}}%",
+    "FlashbackStatusReady": "sẵn sàng — {{seconds}}s {{type}} trong RAM",
+    "LauncherPill": "Trình khởi chạy",
+    "FloaterPill": "Thanh nổi",
+    "AutoDetectLabel": "Phát hiện tự động",
+    "FlashbackLabel": "Quay lại",
+    "RecentRecordings": "Bản ghi gần đây"
+  },
   "Recording": {
     "Paused": "Paused",
     "Preparing": "Preparing",
@@ -1403,14 +1468,6 @@
     "SearchRecordingsOrSnapshots": "Tìm kiếm bản ghi và snapshots",
     "ShowInFolder": "Hiển thị trong thư mục"
   },
-  "PermissionAlert": {
-    "Title": "Cần quyền",
-    "Description": "SeaMeet cần quyền bổ sung để tiếp tục.",
-    "OpenSettings": "Mở Cài đặt hệ thống",
-    "ClickToOpen": "Nhấp để mở cài đặt",
-    "NoPermissionFullscreen": "Ghi toàn màn hình cần quyền Ghi màn hình.",
-    "NoPermissionWindow": "Ghi cửa sổ cần quyền Ghi màn hình."
-  },
   "RegionSelector": {
     "CaptureButton": "Chụp màn hình hoặc Nhấn Enter",
     "ConfirmButton": "Xác nhận lựa chọn",
@@ -1454,6 +1511,14 @@
     "Title": "Chọn màn hình",
     "Unknown": "Không xác định"
   },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Chọn màn hình",
+    "PrimaryDisplay": "Màn hình chính",
+    "Display": "Màn hình",
+    "SelectWindow": "Chọn cửa sổ",
+    "LoadingWindows": "Đang tải...",
+    "NoWindows": "Không có cửa sổ nào"
+  },
   "ScreenshotProcessing": {
     "Analysis": "Phân tích",
     "ConfigureApiKey": "Cấu hình khóa API Gemini của bạn để xử lý hình ảnh bằng AI.",
@@ -1492,6 +1557,9 @@
       "OCR": "Văn bản (OCR)"
     },
     "UnknownError": "Lỗi không xác định"
+  },
+  "ScreenshotView": {
+    "RecentLabel": "Ảnh chụp màn hình gần đây"
   },
   "ScreenshotViewer": {
     "CopiedToClipboard": "Đã sao chép!",
@@ -1706,7 +1774,8 @@
     "Meetings": "Cuộc họp",
     "OpenNavigationMenu": "Mo menu danh sach",
     "Record": "Ghi",
-    "Recording": "ghi âm"
+    "Recording": "ghi âm",
+    "Screenshot": "Chụp màn hình"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet vẫn đang chạy trong khay hệ thống (góc dưới bên phải).",
@@ -1748,19 +1817,6 @@
     "WhatsNew": "Các tính năng mới:",
     "WhatsNewInVersion": "Các tính năng mới trong {{version}}?",
     "Restarting": "Đang khởi động lại..."
-  },
-  "PostUpdateModal": {
-    "Title": "Đã cập nhật lên v{{version}}",
-    "Description": "SeaMeet đã được cập nhật thành công. Có gì mới:",
-    "GotIt": "Đã hiểu"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Phiên âm trực tiếp và tương tác AI khả dụng khi đăng ký.",
-    "PostMeetingAI": "AI sau cuộc họp",
-    "PostMeetingAIDesc": "Tóm tắt, mục hành động và thông tin chi tiết sẽ được tạo sau khi ghi âm hoàn tất.",
-    "UnlockPremium": "Mở khóa với Premium",
-    "Upgrade": "Nâng cấp"
   },
   "UserMenu": {
     "AboutSeaMeet": "Giới thiệu SeaMeet",
@@ -1851,6 +1907,17 @@
     "RegionSelected": "Đã chọn Khu vực",
     "ReselectRegion": "Chọn lại Khu vực",
     "SelectCustomRegion": "Chọn Khu vực tùy chỉnh"
+  },
+  "WelcomeCard": {
+    "Title": "Chào mừng đến với SeaMeet",
+    "Subtitle": "Ba cách để không bỏ lỡ khoảnh khắc nào.",
+    "PointRecord": "Ghi bất cứ thứ gì chỉ với một lần chạm.",
+    "PointAutoDetect": "Tự động phát hiện cuộc họp — không cần nhớ nhấn ghi.",
+    "PointFlashback": "Quay lại lưu 10 giây cuối — để bạn không bỏ lỡ câu đầu tiên.",
+    "GotIt": "Đã hiểu"
+  },
+  "HelpPage": {
+    "Title": "Tìm hiểu thêm về SeaMeet"
   },
   "WindowPicker": {
     "Instruction": "Chọn cửa sổ để quay phim.",
