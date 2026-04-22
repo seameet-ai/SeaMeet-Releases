@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "2.5 기본: 발화 중에만. 3.1 기본: 모든 비디오 프레임(무음에도 이름표 인식).",
       "SendVideo": "비디오 프레임 전송",
       "VideoFps": "프레임 속도",
+      "VideoQuality": "프레임 JPEG 품질",
+      "VideoMaxWidth": "프레임 최대 너비",
+      "VideoQualityHint": "Gemini가 작은 타일 레이블(예: Zoom / Meet / Teams 참가자 이름)을 잘못 읽을 때 품질과 최대 너비를 높이세요. 값이 높을수록 이미지 토큰 사용량이 증가합니다 — 1280 px는 일반적으로 프레임당 258 토큰에서 1290 토큰 계층으로 증가합니다.",
+      "DisableAutoVad": "자동 VAD 비활성화(서버 측 턴 감지)",
       "EndSensitivity": "발화 종료 민감도",
       "Default": "기본값(HIGH — 빠른 플러시)",
       "SilenceMs": "턴 종료 전 무음 시간",
       "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
+      "ActivityFlush": "긴 턴 동안의 주기적 플러시",
+      "ActivityFlushMs": "플러시 간격",
+      "ActivityFlushHint": "긴 턴 중 N 밀리초마다 Gemini가 누적된 오디오를 처리하도록 유도합니다. 독백 / 프레젠테이션 중 전사가 멈추는 것을 방지합니다. 자동 VAD를 비활성화해야 합니다.",
+      "ActivityFlushRequiresManualVad": "주기적 플러시는 자동 VAD가 비활성화된 경우에만 작동합니다 — 자동 VAD가 켜진 상태에서는 서버가 명시적 활동 제어를 거부합니다. 이 토글을 켠 채로 아래 자동 VAD를 비활성화하세요.",
       "Reset": "모두 기본값으로 재설정"
     }
   },

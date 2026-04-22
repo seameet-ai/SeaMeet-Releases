@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "2.5 の既定:発話中のみ。3.1 の既定:全ビデオフレーム(無音時でも名前プレートを読み取る)。",
       "SendVideo": "ビデオフレームを送信",
       "VideoFps": "フレームレート",
+      "VideoQuality": "フレーム JPEG 品質",
+      "VideoMaxWidth": "フレーム最大幅",
+      "VideoQualityHint": "Gemini が小さなタイルラベル(Zoom / Meet / Teams の参加者名など)を誤読する場合は品質と最大幅を上げてください。値を大きくすると画像トークン使用量が増加します — 1280 px にするとフレームあたり 258 トークンから 1290 トークンのティアに上がります。",
+      "DisableAutoVad": "自動 VAD を無効にする(サーバー側のターン検出)",
       "EndSensitivity": "発話終了の感度",
       "Default": "デフォルト(HIGH — 速いフラッシュ)",
       "SilenceMs": "ターン終了までの無音時間",
       "VadHint": "無音を短く + 感度 HIGH → より短く頻繁な書き起こしフラッシュ。",
+      "ActivityFlush": "長いターン中の定期フラッシュ",
+      "ActivityFlushMs": "フラッシュ間隔",
+      "ActivityFlushHint": "長いターン中 N ミリ秒ごとに Gemini に蓄積した音声の処理を促します。独白やプレゼンテーション中の書き起こし停止を防ぎます。自動 VAD を無効にする必要があります。",
+      "ActivityFlushRequiresManualVad": "定期フラッシュは自動 VAD が無効な場合のみ有効です — 自動 VAD が有効なときサーバーは明示的なアクティビティ制御を拒否します。このトグルはオンのまま、下の自動 VAD を無効にしてください。",
       "Reset": "すべて既定値にリセット"
     }
   },

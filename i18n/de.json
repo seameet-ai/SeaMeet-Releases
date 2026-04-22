@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "2.5-Standard: nur während Sprache. 3.1-Standard: jedes Videobild (liest Namensschilder auch bei Stille).",
       "SendVideo": "Videobilder senden",
       "VideoFps": "Bildrate",
+      "VideoQuality": "JPEG-Qualität des Bildes",
+      "VideoMaxWidth": "Maximale Bildbreite",
+      "VideoQualityHint": "Qualität und maximale Breite erhöhen, wenn Gemini kleine Kachel-Beschriftungen falsch liest (z. B. Zoom / Meet / Teams Teilnehmernamen). Höhere Werte erhöhen die Bild-Token-Nutzung — 1280 px springt pro Frame typischerweise von der 258-Token- auf die 1290-Token-Stufe.",
+      "DisableAutoVad": "Automatische VAD deaktivieren (serverseitige Turn-Erkennung)",
       "EndSensitivity": "Empfindlichkeit für Sprechende",
       "Default": "Standard (HOCH — schnelle Flushes)",
       "SilenceMs": "Stille vor Rundenende",
       "VadHint": "Weniger Stille + Empfindlichkeit HOCH → kürzere, häufigere Transkript-Flushes.",
+      "ActivityFlush": "Periodisches Flushen bei langen Turns",
+      "ActivityFlushMs": "Flush-Intervall",
+      "ActivityFlushHint": "Alle N ms während eines langen Turns stößt Gemini an, das angesammelte Audio zu verarbeiten. Verhindert, dass die Transkription bei Monologen / Präsentationen stehen bleibt. Erfordert, dass die automatische VAD deaktiviert ist.",
+      "ActivityFlushRequiresManualVad": "Der periodische Flush wirkt nur, wenn die automatische VAD deaktiviert ist — der Gemini-Server lehnt andernfalls explizite Aktivitätssteuerung ab. Lassen Sie den Schalter an und deaktivieren Sie unten die automatische VAD, um ihn zu nutzen.",
       "Reset": "Alles auf Standard zurücksetzen"
     }
   },

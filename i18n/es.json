@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "Predeterminado de 2.5: solo durante el habla. Predeterminado de 3.1: todos los fotogramas (lee rótulos incluso en silencio).",
       "SendVideo": "Enviar fotogramas de vídeo",
       "VideoFps": "Velocidad de fotogramas",
+      "VideoQuality": "Calidad JPEG del fotograma",
+      "VideoMaxWidth": "Anchura máxima del fotograma",
+      "VideoQualityHint": "Aumenta calidad y anchura máxima cuando Gemini interprete mal etiquetas de mosaicos pequeños (p. ej. nombres de participantes de Zoom / Meet / Teams). Valores más altos incrementan el uso de tokens de imagen — 1280 px normalmente pasa de la franja de 258 tokens a la de 1290 tokens por fotograma.",
+      "DisableAutoVad": "Desactivar la VAD automática (detección de turno del lado del servidor)",
       "EndSensitivity": "Sensibilidad de fin de habla",
       "Default": "Predeterminado (ALTA — descargas rápidas)",
       "SilenceMs": "Silencio antes del fin de turno",
       "VadHint": "Menos silencio + sensibilidad ALTA → descargas de transcripción más cortas y frecuentes.",
+      "ActivityFlush": "Vaciado periódico en turnos largos",
+      "ActivityFlushMs": "Intervalo de vaciado",
+      "ActivityFlushHint": "Cada N ms durante un turno largo, incita a Gemini a procesar el audio acumulado. Evita que la transcripción se detenga en monólogos / presentaciones. Requiere que la VAD automática esté desactivada.",
+      "ActivityFlushRequiresManualVad": "El vaciado periódico solo tiene efecto cuando la VAD automática está desactivada — el servidor de Gemini rechaza el control de actividad explícito de lo contrario. Deje el interruptor activado y desactive la VAD automática debajo para usarlo.",
       "Reset": "Restablecer todo a los valores predeterminados"
     }
   },

@@ -1211,10 +1211,18 @@
       "TurnCoverageHint": "2.5 default: only during speech. 3.1 default: every video frame (reads name plates even in silence).",
       "SendVideo": "Send video frames",
       "VideoFps": "Frame rate",
+      "VideoQuality": "Frame JPEG quality",
+      "VideoMaxWidth": "Max frame width",
+      "VideoQualityHint": "Raise quality + max width when Gemini misreads small tile labels (e.g. Zoom/Meet/Teams participant names). Higher values increase image-token usage — 1280 px typically jumps from the 258-token to the 1290-token tier per frame.",
       "EndSensitivity": "End-of-speech sensitivity",
       "Default": "Default (HIGH — fast flushes)",
       "SilenceMs": "Silence before turn end",
       "VadHint": "Lower silence + HIGH end-sensitivity → shorter, more frequent transcript flushes.",
+      "DisableAutoVad": "Disable automatic VAD (server-side turn detection)",
+      "ActivityFlush": "Periodic flush during long turns",
+      "ActivityFlushMs": "Flush interval",
+      "ActivityFlushHint": "Experimental. Every N ms during a long turn, nudges Gemini to process accumulated audio. Does not currently segment turns on native-audio; enabling it will cause the whole recording to land in a single un-finalized turn.",
+      "ActivityFlushRequiresManualVad": "The periodic flush only takes effect when automatic VAD is disabled — the Gemini server rejects explicit activity control otherwise. Leave the toggle on and disable automatic VAD below to use it.",
       "Reset": "Reset all to defaults"
     }
   },

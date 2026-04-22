@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "2.5 預設:僅說話時。3.1 預設:每一影片幀(即使靜音也能讀取名牌)。",
       "SendVideo": "傳送影片畫面",
       "VideoFps": "幀率",
+      "VideoQuality": "影格 JPEG 品質",
+      "VideoMaxWidth": "影格最大寬度",
+      "VideoQualityHint": "當 Gemini 誤讀小型分格標籤(例如 Zoom / Meet / Teams 參與者名稱)時,提高品質和最大寬度。較高的值會增加影像 Token 用量 — 1280 px 通常會使每幀從 258 Token 提升到 1290 Token。",
+      "DisableAutoVad": "關閉自動 VAD(伺服器端回合偵測)",
       "EndSensitivity": "語音結束靈敏度",
       "Default": "預設(高 — 快速刷新)",
       "SilenceMs": "回合結束前的靜音長度",
       "VadHint": "較短靜音 + 高靈敏度 → 更短、更頻繁的逐字稿刷新。",
+      "ActivityFlush": "長段落中的週期性刷新",
+      "ActivityFlushMs": "刷新間隔",
+      "ActivityFlushHint": "在長段落中每 N 毫秒提示 Gemini 處理累積的音訊,防止獨白 / 簡報時轉錄停滯。需要先關閉自動 VAD。",
+      "ActivityFlushRequiresManualVad": "週期性刷新僅在自動 VAD 關閉時生效 — 自動 VAD 啟用時伺服器會拒絕顯式活動控制。保留此開關啟用並在下方關閉自動 VAD。",
       "Reset": "全部重設為預設值"
     }
   },

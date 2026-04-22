@@ -1179,10 +1179,18 @@
       "TurnCoverageHint": "Par défaut sur 2.5 : uniquement pendant la parole. Par défaut sur 3.1 : toutes les images (lit les incrustations même en silence).",
       "SendVideo": "Envoyer les images vidéo",
       "VideoFps": "Fréquence d'images",
+      "VideoQuality": "Qualité JPEG de l'image",
+      "VideoMaxWidth": "Largeur maximale de l'image",
+      "VideoQualityHint": "Augmentez la qualité et la largeur maximale lorsque Gemini lit mal les petites étiquettes de tuiles (ex. noms de participants Zoom / Meet / Teams). Des valeurs plus élevées augmentent l'utilisation de jetons d'image — 1280 px fait généralement passer chaque image du palier 258 jetons au palier 1290 jetons.",
+      "DisableAutoVad": "Désactiver la VAD automatique (détection de tour côté serveur)",
       "EndSensitivity": "Sensibilité de fin de parole",
       "Default": "Par défaut (HIGH — flushs rapides)",
       "SilenceMs": "Silence avant la fin du tour",
       "VadHint": "Silence plus court + sensibilité HIGH → transcriptions plus courtes et plus fréquentes.",
+      "ActivityFlush": "Vidage périodique pendant les longs tours",
+      "ActivityFlushMs": "Intervalle de vidage",
+      "ActivityFlushHint": "Toutes les N ms pendant un long tour, incite Gemini à traiter l'audio accumulé. Évite que la transcription ne se bloque pendant les monologues / présentations. Nécessite la désactivation de la VAD automatique.",
+      "ActivityFlushRequiresManualVad": "Le vidage périodique ne prend effet que lorsque la VAD automatique est désactivée — le serveur Gemini rejette le contrôle d'activité explicite sinon. Laissez l'interrupteur activé et désactivez la VAD automatique ci-dessous pour l'utiliser.",
       "Reset": "Tout réinitialiser aux valeurs par défaut"
     }
   },
