@@ -24,10 +24,10 @@
     "ClaudeKey": {
       "ClearKey": "Alih keluar kunci yang disimpan",
       "CliInstalled": "Dipasang ({{version}})",
-      "CliInstallLink": "Install Claude Code →",
+      "CliInstallLink": "Pasang Kod Claude →",
       "CliNotFound": "CLI tidak dijumpai",
       "CliNotInstalled": "Claude CLI tidak ditemui — pasang dan log masuk untuk pengesahan:",
-      "CliSection": "Claude Code CLI",
+      "CliSection": "Kod Claude CLI",
       "DefaultModel": "Model Lalai",
       "GetKeyLink": "Dapatkan kunci API daripada Anthropic Console →",
       "HideKey": "Sembunyikan kunci",
@@ -35,7 +35,7 @@
       "InstallWin": "Windows (PowerShell):",
       "ApiKeyTitle": "Kunci API",
       "KeyInvalid": "Kunci tidak sah",
-      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholder": "sk-semut-...",
       "KeyPlaceholderSaved": "••••••••• (disimpan)",
       "KeyTesting": "Menguji...",
       "ModelHaiku": "Claude Haiku 4.5",
@@ -48,13 +48,13 @@
       "QuotaLoading": "Memuatkan kuota...",
       "QuotaRemaining": "{{remaining}} / {{limit}} token yang tinggal",
       "QuotaResetDate": "Ditetapkan semula pada {{date}}",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration",
+      "Refresh": "Kesan semula Claude",
+      "Remove": "Alih keluar integrasi Claude",
       "Saving": "Menyimpan...",
       "Section": "Kunci API Claude (Ejen)",
       "ShowKey": "Tunjukkan kunci",
       "SourceByok": "Kunci API anda (BYOK)",
-      "SourceCli": "Claude Code CLI",
+      "SourceCli": "Kod Claude CLI",
       "SourceKeyServer": "Diuruskan oleh SeaMeet",
       "SourceLabel": "Sumber aktif:",
       "SourceNone": "Tidak dikonfigurasikan",
@@ -67,27 +67,27 @@
       "InstallGuideLink": "panduan permulaan",
       "InstallGuideSuffix": " untuk memasang, kemudian jalankan:",
       "NotDetected": "Tidak dikesan — pasang dan sahkan:",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration",
+      "Refresh": "Kesan semula Copilot",
+      "Remove": "Alih keluar penyepaduan Copilot",
       "Section": "GitHub Copilot"
     },
     "Provider": {
       "Detected": "Dikesan",
       "Hint": "Anda juga boleh menukar pembekal bagi setiap perbualan di panel sembang.",
       "NotAvailable": "Tidak tersedia",
-      "Preferred": "Preferred",
+      "Preferred": "Diutamakan",
       "Section": "Pembekal Ejen Pilihan"
     },
     "ClearKey": "Alih keluar kunci yang disimpan",
     "EnableToggle": "Dayakan ringkasan berkuasa AI",
     "EnableToggleDesc": "Memerlukan kunci API Gemini percuma",
-    "DefaultModel": "Default Model",
+    "DefaultModel": "Model Lalai",
     "GeminiSection": "Gemini",
     "GetKeyLink": "Dapatkan kunci API percuma daripada Google AI Studio →",
     "GroupTitle": "Ciri AI",
     "HideKey": "Sembunyikan kunci",
     "KeyInvalid": "Kunci tidak sah",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
+    "KeyManagedInBilling": "Kunci API diuruskan dalam Urus Langganan → Kunci API",
     "KeyNotConfigured": "Tiada kunci dikonfigurasikan",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••• (disimpan)",
@@ -98,7 +98,7 @@
     "MenuItem": "Ringkasan Dikuasakan AI",
     "ModelLabel": "Model Gemini",
     "Models": {
-      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25Flash": "Gemini 2. Kilat",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
       "Gemini25FlashLiteSub": "Sangat murah",
       "Gemini25FlashSub": "Pilihan stabil termurah",
@@ -127,8 +127,8 @@
   },
   "AISummary": {
     "ApplyMerge": "Gunakan",
-    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
-    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
+    "SubscribeToGenerate": "Langgan untuk menjana ringkasan AI, transkrip dan item tindakan daripada rakaman anda.",
+    "SubscribeToRegenerate": "Langgan untuk menjana semula ringkasan AI.",
     "ConfirmRename": "Sahkan nama semula",
     "Copy": "salin",
     "EditSegmentSpeaker": "Klik untuk menetapkan semula segmen ini",
@@ -187,7 +187,7 @@
       "Summary": "Ringkasan",
       "Transcription": "Transkrip"
     },
-    "ScreenshotTabTitle": "AI Analysis",
+    "ScreenshotTabTitle": "Analisis AI",
     "TabTitle": "Ringkasan AI",
     "Topics": "Topik:",
     "Speakers": "Pembicara",
@@ -209,12 +209,53 @@
       "Live": "Langsung"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Dikemas kini oleh AI",
+    "Title": "Ringkasan nota",
+    "Meta": "{{count}} rakaman · templat: {{tpl}}",
+    "CopyToEdit": "Salin untuk diedit",
+    "Regenerate": "Jana semula",
+    "Generating": "Menjana…",
+    "Provenance": "Dijana daripada {{n}} rakaman",
+    "Error": "Jana gagal: {{err}}",
+    "RenameSuggested": "AI mencadangkan \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Mesyuarat umum",
+        "description": "Keputusan, tindakan, perbincangan"
+      },
+      "brainstorm": {
+        "name": "Sumbang saran",
+        "description": "Idea, benang, soalan terbuka"
+      },
+      "lecture": {
+        "name": "Kuliah / ceramah",
+        "description": "Tesis, mata penting, soalan, rujukan"
+      },
+      "oneonone": {
+        "name": "1:1 / temu bual",
+        "description": "Tema, sentimen, susulan"
+      },
+      "sales": {
+        "name": "Panggilan jualan",
+        "description": "Penemuan, bantahan, langkah seterusnya, pembuat keputusan"
+      },
+      "standup": {
+        "name": "Standup / status",
+        "description": "Kemas kini per orang, halangan, seterusnya"
+      }
+    },
+    "RegenerateTooltip": "Jana semula dengan templat yang sama",
+    "RegenerateChooseTemplate": "Jana semula dengan templat berbeza",
+    "Stale": "Lama · muat semula",
+    "StaleTooltip": "Nota telah berubah sejak ringkasan ini dijana — klik untuk muat semula."
+  },
   "About": {
     "AppStoreBuild": "Bina di App Store",
     "DirectBuild": "Bina Terus",
     "HelpTranslate": "Bantu kami menterjemah SeaMeet →",
     "Loading": "Memuatkan...",
-    "SubtitleBadge": "Snap Recorder & Agent",
+    "SubtitleBadge": "Perakam & Ejen",
     "Version": "v{{version}}"
   },
   "AgentPanel": {
@@ -230,10 +271,10 @@
     "GlobalTitle": "Ejen AI",
     "GoToSettings": "Buka Tetapan",
     "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
+      "ActionItems": "Item Tindakan",
+      "Summarize": "ringkaskan",
+      "Translate": "Terjemah",
+      "WhoSaidWhat": "Siapa Kata Apa"
     },
     "Mode": {
       "Ask": "Tanya",
@@ -277,7 +318,7 @@
     "SendButton": "Hantar",
     "SendPlaceholder": "Tanya apa sahaja... (Enter untuk menghantar, Shift+Enter untuk baris baharu)",
     "SessionCost": "Sesi: {{inputTokens}} dalam /{{outputTokens}} token keluar",
-    "SectionTitle": "AI Agent",
+    "SectionTitle": "Ejen AI",
     "Sessions": "Sesi",
     "StopButton": "Berhenti",
     "Streaming": {
@@ -301,7 +342,8 @@
       "Output": "Keluaran",
       "Pattern": "Corak:",
       "Reading": "Membaca fail...",
-      "ShowDetails": "Tunjukkan butiran"
+      "ShowDetails": "Tunjukkan butiran",
+      "AndMoreLines": "... dan {{count}} lagi baris"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} tindakan",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} selesai",
       "Completed_other": "{{count}} selesai",
       "Running_one": "{{count}} berjalan",
-      "Running_other": "{{count}} berjalan"
+      "Running_other": "{{count}} berjalan",
+      "Running": "{{count}} berjalan",
+      "Completed": "{{count}} selesai",
+      "Actions": "{{count}} tindakan"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Konfigurasikan kunci API anda untuk menggunakan Ejen AI."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Menyediakan rakaman anda…"
-    },
-    "error": {
-      "title": "Kami tidak dapat memproses rakaman ini",
-      "body": "Periksa kunci API anda atau cuba lagi."
-    },
-    "disabled": "Ciri AI dimatikan. Dayakannya dalam Tetapan untuk melihat ringkasan dan tindakan."
   },
   "App": {
     "FailedToEnableFlashback": "Gagal mengaktifkan kilas balik: {{error}}",
@@ -382,15 +417,15 @@
   "AudioControls": {
     "AudioCapture": "Akses audio",
     "AudioMix": "Campuran Audio",
-    "AudioSettings": "Audio Settings",
+    "AudioSettings": "Tetapan Audio",
     "AudioSource": "Sumber audio:",
     "Microphone": "Mikrofon",
     "MicrophoneGainWarning": "Daya mikrofon yang tinggi boleh merakam semula suara speaker walaupun \"Output Audio Sistem\" dimatikan. Gunakan fon kepala atau kurangkan daya mikrofon untuk rakaman mikrofon sahaja.",
-    "MuteMic": "Mute Microphone",
+    "MuteMic": "Redam Mikrofon",
     "RecordingDefaultMicrophone": "Mikrofon lalai",
     "RecordingSettings": "Tetapan rakaman",
     "RefreshMicrophoneList": "Segarkan senarai mikrofon",
-    "UnmuteMic": "Unmute Microphone"
+    "UnmuteMic": "Nyahredam Mikrofon"
   },
   "AutoDetectDrawer": {
     "Title": "Auto-Kesan",
@@ -403,8 +438,11 @@
     "AdvancedSettings": "Tetapan lanjutan →",
     "LearnMore": "Ketahui lebih"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Kali pertama? Begini cara ia berfungsi →"
+  },
   "AutoDetectInfoModal": {
-    "ControlLabel": "AUTO DETECT",
+    "ControlLabel": "PENGESANAN AUTO",
     "Description": "Permulaan auto secara automatik bermula rakaman apabila anda menyertai mesyuarat, jadi anda tidak pernah lupa untuk tekan rakaman.",
     "GotIt": "Faham",
     "HowItWorksTitle": "Cara Ia Berfungsi",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Menggunakan aktiviti mikrofon, tajuk tingkap, dan URL pelayar untuk ketepatan",
     "Tip2Title": "Pelbagai Kaedah Pengesanan",
     "Title": "Auto-Detect Mesyuarat"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Kali pertama? Begini cara ia berfungsi →"
   },
   "AutoRecording": {
     "BugReport": "Jumpa pepijat? Laporkan kepada seameet@seasalt.ai",
@@ -516,7 +551,7 @@
       "ActiveTitle": "Langganan aktif — BYOK Pro",
       "AnthropicHelp": "Dapatkan key: ",
       "AnthropicHelpLink": "console.anthropic.com",
-      "AnthropicLabel": "Claude (Anthropic)",
+      "AnthropicLabel": "Claude (Antropik)",
       "AnthropicTip": "Petua: Kredit percuma untuk akaun baharu. Juga termasuk jika anda mempunyai Claude Pro atau Max.",
       "AnthropicUsage": "Digunakan untuk: soalan AI, analisis projek",
       "Configured": "Dikonfigurasikan",
@@ -524,7 +559,7 @@
       "GeminiHelp": "Dapatkan key percuma: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
-      "KeySaved": "Key saved (hidden)",
+      "KeySaved": "Kunci disimpan (tersembunyi)",
       "GeminiUsage": "Digunakan untuk: transkripsi, ringkasan, transkripsi langsung. Key percuma tertakluk kepada had kadar dan kuota Gemini. Tukar kepada pelan berbayar Google AI Studio jika mencapai had.",
       "NotConfigured": "Belum dikonfigurasikan",
       "SaveContinue": "Simpan & Teruskan",
@@ -591,21 +626,21 @@
         "Step4Title": "Langkah 4 — (Pilihan, berbayar) Dapatkan Claude Code CLI",
         "Step4Already": "Kemungkinan besar anda sudah memilikinya jika pernah memasang Claude Code sebelum ini.",
         "Step4Install": "Klik ",
-        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallLink": "Kod Claude CLI",
         "Step4InstallSuffix": " atau pasang pantas:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
+        "Step4Mac": "macOS / Linux:",
+        "Step4Win": "Windows:",
         "Step4WinReq": "memerlukan ",
-        "Step4GitWin": "Git for Windows",
+        "Step4GitWin": "Git untuk Windows",
         "Step4Auth": "Jalankan: ",
         "Step4AuthDesc": " (memerlukan pelan Claude Pro atau Max)",
         "Step4Refresh": "Klik muat semula di bawah untuk mengesan Claude Code.",
         "Step4Select": "Klik Claude Code di bawah untuk tetapkan sebagai pilihan utama.",
         "StepComplete": {
-          "AgentBoth": "Both Claude and Copilot are configured",
-          "AgentClaude": "Claude is configured",
-          "AgentCopilot": "Copilot is configured",
-          "Summary": "Setup complete"
+          "AgentBoth": "Kedua-dua Claude dan Copilot dikonfigurasikan",
+          "AgentClaude": "Claude dikonfigurasikan",
+          "AgentCopilot": "Copilot dikonfigurasikan",
+          "Summary": "Persediaan selesai"
         }
       }
     },
@@ -619,13 +654,14 @@
       "LimitDescription": "SeaMeet Pro berfungsi pada sehingga 3 peranti pada satu masa. Log keluar daripada peranti yang tidak digunakan untuk membebaskan slot.",
       "LimitTitle": "Had peranti dicapai",
       "Loading": "Memuatkan peranti...",
-      "NoDevices": "No devices registered",
+      "NoDevices": "Tiada peranti didaftarkan",
       "SigningOut": "Sedang log keluar...",
       "SignOut": "Log keluar",
       "TabLabel": "Peranti",
       "Today": "hari ini",
       "Yesterday": "semalam",
-      "YourDevices": "Your Devices"
+      "YourDevices": "Peranti Anda",
+      "DaysAgo": "{{count}} hari yang lalu"
     },
     "FAQ": {
       "Title": "Soalan Lazim",
@@ -669,15 +705,15 @@
       "Unknown": "Sesuatu telah berlaku silap. Sila cuba lagi."
     },
     "FreeNote": "Pelan percuma: rakaman sahaja, tiada ciri AI, tiada perlu log masuk. Anda sentiasa boleh merakam tanpa melanggan.",
-    "ComingSoon": "Coming soon",
+    "ComingSoon": "Akan datang",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/month",
-        "Feature1": "AI transcription & summaries",
-        "Feature2": "Use your own Gemini & Claude API keys",
-        "Feature3": "Live transcription during meetings",
-        "Feature4": "AI-powered meeting questions & analysis",
+        "Price": "$7.99/bulan",
+        "Feature1": "Transkripsi & ringkasan AI",
+        "Feature2": "Gunakan kunci API Gemini & Claude anda sendiri",
+        "Feature3": "Transkripsi langsung semasa mesyuarat",
+        "Feature4": "Soalan & analisis mesyuarat dikuasakan AI",
         "InfoNote": "Anda memerlukan 2 persediaan: Google AI Studio (percuma), dan GitHub (percuma) atau Anthropic (berbayar). Wizard persediaan akan membimbing anda selepas pembayaran:",
         "ConfirmTitle": "Sebelum anda melanggan",
         "ConfirmContinue": "Teruskan ke pembayaran",
@@ -690,14 +726,14 @@
       },
       "Desktop": {
         "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
+        "Price": "$15.99/bulan",
+        "Feature1": "Semuanya dalam BYOK Pro",
+        "Feature2": "AI terbina dalam — tiada kunci API diperlukan",
+        "Feature3": "Sokongan keutamaan",
+        "Feature4": "Analisis lanjutan"
       },
       "Free": {
-        "Name": "Free",
+        "Name": "Percuma",
         "Price": "$0",
         "Feature1": "Rakaman sahaja",
         "Feature2": "Tiada ciri AI",
@@ -706,11 +742,11 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
-        "Feature2": "Cloud sync across devices",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Price": "$25.99/bulan",
+        "Feature1": "Semuanya dalam Desktop Pro",
+        "Feature2": "Penyegerakan awan merentas peranti",
+        "Feature3": "Ciri kerjasama pasukan",
+        "Feature4": "Pustaka mesyuarat kongsi"
       }
     },
     "Privacy": {
@@ -790,7 +826,7 @@
       "PastDue": "Lewat tempoh",
       "Plan": "Pelan",
       "Reactivate": "Aktifkan Semula",
-      "SignIn": "Sign in to manage subscription",
+      "SignIn": "Log masuk untuk mengurus langganan",
       "Trial": "Percubaan"
     },
     "SignInToSubscribe": "Log masuk untuk melanggan:",
@@ -838,7 +874,7 @@
     "Close": "Tutup",
     "Configure": "Konfigurasi",
     "Delete": "Padam",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Tolak",
     "Done": "Selesai",
     "Expand": "Kembangkan",
     "FileNameCopiedWithRenameHint": "{{fileName}} telah disalin ke papan klip. Klik dua kali untuk menukar nama fail.",
@@ -856,7 +892,12 @@
     "Starting": "Mula...",
     "UnknownApp": "Aplikasi tidak dikenali",
     "Copied": "Disalin!",
-    "Copy": "Salin"
+    "Copy": "Salin",
+    "Clear": "Jelas",
+    "Forward": "ke hadapan",
+    "Refresh": "Segarkan semula",
+    "Apply": "Guna",
+    "Undo": "Buat asal"
   },
   "DeletePrompt": {
     "Cancel": "Batal",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Acara yang ditandai",
     "Title": "Acara"
   },
+  "ExternalChange": {
+    "Banner": "Fail ini berubah pada cakera semasa anda mengedit.",
+    "Reload": "Muat semula versi cakera",
+    "Keep": "Kekalkan versi saya"
+  },
+  "FAB": {
+    "Label": "Tindakan pantas",
+    "Stop": "Hentikan rakaman",
+    "Record": "Mulakan rakaman",
+    "Screenshot": "Ambil tangkapan skrin",
+    "Agent": "Ejen AI",
+    "PickSource": "Pilih sumber rakaman",
+    "PickScreenshotSource": "Pilih sumber tangkapan skrin",
+    "SourceAudio": "Audio Sahaja",
+    "SourceFullscreen": "Skrin Penuh",
+    "SourceWindow": "Tetingkap",
+    "SourceRegion": "Kawasan",
+    "ScreenshotFullscreen": "Skrin Penuh",
+    "ScreenshotWindow": "Tetingkap",
+    "ScreenshotRegion": "Kawasan",
+    "LiveTranscription": "Transkripsi langsung",
+    "ToggleLiveTranscription": "Togol transkripsi langsung",
+    "RecordingInProgress": "Sedang merakam…",
+    "OpenBoundNote": "Buka nota yang rakaman ini dilampirkan"
+  },
   "FileImport": {
     "BrowseFiles": "Saring Fail",
     "DragDropFiles": "Seret dan lepas fail audio, video, dan imej di sini",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Menyalin fail video...",
     "VideoImportSaving": "Menyimpan fail video...",
     "VideoUnsupported": "Format video ini mungkin tidak dapat dimainkan dalam aplikasi. Fail tetap akan diimport."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Ganti semua {{count}} padanan?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Cari",
+    "AriaLabel": "Cari dan ganti",
+    "CaseSensitive": "Padan huruf besar/kecil",
+    "ClearSearch": "Padam",
+    "Previous": "Padanan sebelumnya",
+    "Next": "Padanan seterusnya",
+    "NoResults": "Tiada hasil",
+    "ReplacePlaceholder": "Ganti",
+    "WikiAiReadonly": "Bahagian AI hanya-baca — gantian hanya berfungsi dalam bahagian pengguna",
+    "Replace": "Ganti",
+    "ReplaceAll": "Ganti semua",
+    "CloseBar": "Tutup cari/ganti",
+    "WikiCounterSplit": "{{userCount}} dalam nota + {{aiCount}} dalam bahagian AI"
   },
   "FlashbackControls": {
     "AudioFlashback": "Akses audio kilas balik",
@@ -1129,11 +1212,11 @@
     "CloseTooltip": "Tutup bantuan",
     "FailedToLoadScreens": "Gagal memuatkan paparan. Sila cuba lagi.",
     "FailedToLoadWindows": "Gagal memuatkan paparan aplikasi. Sila cuba lagi.",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
+    "MicMuted": "Mic Dibisukan",
+    "Microphone": "Mikrofon",
     "MicrophoneMuted": "Mikrofon: Dikeluarkan suara",
     "MicrophoneSettings": "Tetapan Mikrofon",
-    "MuteMicrophone": "Mute Microphone",
+    "MuteMicrophone": "Redam Mikrofon",
     "MuteNoMicrophone": "Senyap (Tiada Mikrofon berfungsi)",
     "NoMicrophonesFound": "Tiada mikrofon dikesan",
     "NoScreensDetected": "Tiada paparan dikesan.",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "Kualiti JPEG bingkai",
       "VideoMaxWidth": "Lebar bingkai maksimum",
       "VideoQualityHint": "Tingkatkan kualiti dan lebar maksimum apabila Gemini tersalah baca label jubin kecil (cth. nama peserta Zoom / Meet / Teams). Nilai yang lebih tinggi meningkatkan penggunaan token imej — 1280 px biasanya melonjak dari tahap 258 token ke tahap 1290 token setiap bingkai.",
-      "DisableAutoVad": "Lumpuhkan VAD automatik (pengesanan giliran sebelah pelayan)",
       "EndSensitivity": "Sensitiviti hujung pertuturan",
       "Default": "Lalai (HIGH — flush cepat)",
       "SilenceMs": "Senyap sebelum giliran tamat",
       "VadHint": "Senyap lebih pendek + sensitiviti TINGGI → flush transkripsi lebih pendek dan kerap.",
+      "DisableAutoVad": "Lumpuhkan VAD automatik (pengesanan giliran sebelah pelayan)",
       "ActivityFlush": "Flush berkala semasa giliran panjang",
       "ActivityFlushMs": "Selang flush",
       "ActivityFlushHint": "Setiap N ms semasa giliran panjang, menggesa Gemini untuk memproses audio terkumpul. Menghalang transkripsi daripada terhenti dalam monolog / pembentangan. Memerlukan VAD automatik dimatikan.",
       "ActivityFlushRequiresManualVad": "Flush berkala hanya berkesan apabila VAD automatik dimatikan — pelayan Gemini akan menolak kawalan aktiviti eksplisit jika tidak. Biarkan suis aktif dan matikan VAD automatik di bawah untuk menggunakannya.",
       "Reset": "Tetapkan semula semua kepada lalai"
-    }
+    },
+    "SegmentCount": "{{count}} segmen"
   },
   "GeminiTranscription": {
-    "Title": "Live Transcription"
+    "Title": "Transkripsi Langsung"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Nota",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Transkrip rakaman",
+    "SectionSummaries": "Ringkasan rakaman",
+    "SectionOcr": "Teks tangkapan skrin",
+    "IndexingFallback": "Mengindeks — hanya menunjukkan padanan nama fail",
+    "Placeholder": "Cari dalam nota, wiki dan rakaman…",
+    "SoFar": "setakat ini",
+    "NoResults": "Tiada padanan"
+  },
+  "HelpPage": {
+    "Title": "Ketahui lebih tentang SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "Pasang kilas balik",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet memerlukan macOS 14.2 (Sonoma) atau lebih baharu.\n\nSesetengah ciri seperti pengesanan audio setiap aplikasi dan permulaan mesyuarat automatik mungkin tidak berfungsi.\n\nKemas kini melalui Tetapan Sistem > Umum > Kemas Kini Perisian.",
     "ContinueAnyway": "Teruskan Juga",
     "Quit": "Keluar"
+  },
+  "MediaBlock": {
+    "Processing": "Memproses…",
+    "SummaryReady": "Ringkasan sedia",
+    "Failed": "Gagal",
+    "Tab": {
+      "Summary": "Ringkasan",
+      "Transcript": "Transkrip",
+      "Actions": "Tindakan",
+      "Decisions": "Keputusan",
+      "Chapters": "Bab",
+      "Description": "Penerangan",
+      "Ocr": "Teks OCR"
+    },
+    "MoreActions": "Lebih banyak tindakan",
+    "Action": {
+      "ShowInFolder": "Tunjuk dalam folder",
+      "CopyEmbed": "Salin sintaks pembenaman",
+      "RerunAi": "Jalankan semula AI",
+      "Detach": "Tanggalkan daripada nota"
+    },
+    "AudioFallback": "Pelayar anda tidak menyokong main balik audio.",
+    "WaitingForPipeline": "Menunggu pemprosesan AI selesai…",
+    "PipelineFailed": "Pemprosesan AI gagal untuk fail ini.",
+    "NoAiContent": "Pemprosesan AI selesai tanpa menghasilkan kandungan tambahan.",
+    "NoSummary": "Ringkasan AI belum dijana.",
+    "Due": "tarikh akhir",
+    "Stage": {
+      "preparing": "Menyediakan…",
+      "uploading": "Memuat naik…",
+      "uploading-wait": "Memproses muat naik…",
+      "analyzing": "Menganalisis…",
+      "extracting": "Mengekstrak…",
+      "saving": "Menyimpan…",
+      "complete": "Selesai",
+      "gathering": "Mengumpul…",
+      "reducing": "Memperhalus…",
+      "writing": "Menulis…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Tindakan",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Bahasa transkripsi",
     "TranslationLanguage": "Bahasa Terjemahan",
     "UnknownSpeaker": "Pembesar suara",
-    "WaitingForSpeech": "Menunggu ucapan..."
+    "WaitingForSpeech": "Menunggu ucapan...",
+    "SegmentCount": "{{count}} segmen"
   },
   "MeetingDetail": {
     "Back": "← Kembali",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Kilas balik skrin sedang dicas...",
     "ScreenRecording": "Rakaman skrin ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Mula menaip atau tampal dari papan keratan…",
+    "Saving": "Menyimpan…",
+    "Saved": "✓ Disimpan",
+    "SaveFailed": "Gagal disimpan",
+    "Editing": "Sedang menyunting…",
+    "TitlePlaceholder": "Nota tanpa tajuk",
+    "TitleLabel": "Tajuk nota",
+    "RenameTooltip": "Klik untuk menamakan semula",
+    "UntitledFallback": "Nota tanpa tajuk",
+    "Renaming": "Menamakan semula…",
+    "LoadFailed": "Gagal memuatkan nota",
+    "Bold": "Tebal",
+    "Italic": "Condong",
+    "Code": "Kod",
+    "Heading1": "Pengepala 1",
+    "Heading2": "Pengepala 2",
+    "BulletList": "Senarai berbutir",
+    "OrderedList": "Senarai bernombor",
+    "Link": "Pautan",
+    "LinkDialog": "Sisipkan pautan",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Kemas kini",
+    "LinkAdd": "Tambah",
+    "LinkRemove": "Buang pautan",
+    "InsertWikilink": "Pautan ke nota ([[ … ]])",
+    "SyncWiki": "Segerak wiki",
+    "SyncWikiTooltip": "Kemas kini wiki dari nota ini sekarang (tidak menunggu pencetus automatik)",
+    "SyncWikiCouldNotQueue": "Tidak dapat memasukkan kemas kini wiki ke baris gilir",
+    "SyncWikiQueued": "Dalam baris gilir…",
+    "SyncWikiRunning": "Menyegerak…",
+    "SyncWikiSuccess": "✓ Disegerak",
+    "SyncWikiError": "Penyegerakan gagal",
+    "Blockquote": "Petikan blok",
+    "CodeBlock": "Blok kod",
+    "Heading3": "Tajuk 3",
+    "Highlight": "Sorotan",
+    "HorizontalRule": "Garis mendatar",
+    "ImageAdd": "Masukkan",
+    "ImageDialog": "Masukkan imej",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Masukkan imej",
+    "InsertTable": "Masukkan jadual",
+    "Strike": "Coretan",
+    "TableAddColumnAfter": "Tambah lajur selepas",
+    "TableAddColumnBefore": "Tambah lajur sebelum",
+    "TableAddRowAfter": "Tambah baris selepas",
+    "TableAddRowBefore": "Tambah baris sebelum",
+    "TableDelete": "Padam jadual",
+    "TableDeleteColumn": "Padam lajur",
+    "TableDeleteRow": "Padam baris",
+    "TaskList": "Senarai tugasan",
+    "Redo": "Ulang",
+    "Underline": "Garis bawah",
+    "Undo": "Batal",
+    "Synthesize": "Ringkasan AI",
+    "SynthesizeRunning": "Mensintesis…",
+    "SynthesizeTooltip": "Jana atau muat semula ringkasan AI untuk nota ini",
+    "SynthesizeChooseTemplate": "Pilih templat untuk ringkasan AI"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Tangkapan skrin",
+      "Recording": "Rakaman",
+      "AddedTo": "ditambahkan kepada",
+      "Open": "Buka"
+    },
+    "WikiUpdateFailed": "Kemas kini wiki gagal: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Ringkasan · {{version}}",
+      "Updated": "✨ Ringkasan dikemas kini · {{version}}",
+      "Jump": "Lompat ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Pilih templat…",
+      "Label": "Pilihan ringkasan"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Nota baharu",
+    "JustNow": "baru sahaja",
+    "Yesterday": "Semalam",
+    "Title": "Nota",
+    "EmptyTitle": "Mulakan nota pertama anda",
+    "EmptySubtitle": "Rakaman ialah tunjang utama — tambah rakaman dan tangkapan skrin ke mana-mana nota.",
+    "MediaCount": "{{n}} lampiran",
+    "ConfirmDelete": "Padam",
+    "DeleteNote": "Padam nota"
+  },
+  "NotesTree": {
+    "Title": "Nota",
+    "NewNote": "Nota baharu",
+    "NewFolder": "Folder baharu",
+    "NewFolderPrompt": "Nama folder:",
+    "SortBy": "Susun mengikut",
+    "SortManual": "Susunan manual",
+    "SortName": "Nama (A → Z)",
+    "SortModified": "Diubah suai (terkini dahulu)",
+    "CollapseAll": "Runtuhkan semua",
+    "SearchInTree": "Cari dalam pokok",
+    "FilterPlaceholder": "Tapis nota…",
+    "DropToRoot": "Lepaskan untuk pindah ke akar",
+    "MoveTo": "Pindah ke…",
+    "MoveToRoot": "Pindah ke akar",
+    "Duplicate": "Pendua",
+    "RevealInFinder": "Tunjuk dalam Finder",
+    "RevealInExplorer": "Tunjuk dalam Explorer",
+    "CopyWikilink": "Salin wikilink",
+    "Pin": "Pin ke atas",
+    "Unpin": "Nyahsemat",
+    "Rename": "Tukar nama",
+    "Delete": "Padam",
+    "Open": "Buka",
+    "Expand": "Kembangkan",
+    "OpenInNewTab": "Buka dalam tab baharu",
+    "ConfirmDeleteFolder": "Padamkan folder \"{{name}}\" dan semua kandungannya?",
+    "RenameSucceeded": "Telah dinamakan semula",
+    "RenameWithRefs": "Dinamakan semula; {{count}} rujukan dikemas kini",
+    "SortDefault": "Lalai (susunan sistem fail)",
+    "ExpandAll": "Kembangkan semua",
+    "NewFolderPlaceholder": "Nama folder baharu…",
+    "QuickOpen": "Buka pantas  (⌘P)",
+    "CopyRelativePath": "Salin laluan relatif",
+    "CopyFullPath": "Salin laluan penuh",
+    "UpdateWikiFromNote": "Kemas kini wiki daripada nota ini",
+    "WikiUpdateFailed": "Kemas kini wiki gagal: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Pilih satu nota",
+    "SelectFromList": "Pilih nota daripada senarai atau cipta nota baharu.",
+    "NoNotes": "Anda belum mempunyai nota — mulakan nota pertama anda.",
+    "CollapseSidebar": "Sembunyikan bar sisi nota",
+    "ExpandSidebar": "Tunjukkan bar sisi nota"
+  },
   "OCRAutoCopy": {
     "Copied": "Teks yang diekstrak disalin ke papan keratan",
     "Error": "Gagal mengekstrak teks",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Menjalankan OCR selepas setiap tangkapan skrin dan menyalin teks yang diekstrak ke papan keratan",
     "SettingsLabel": "Auto-ekstrak teks (OCR) pada tangkapan skrin"
   },
+  "OpenRecordingsFolder": "Buka Folder Rakaman",
+  "OpenRecordingsFolderDesc": "Buka folder rakaman lalai",
   "Pause": "jeda",
   "PermissionAlert": {
     "Title": "Kebenaran diperlukan",
@@ -1379,8 +1653,8 @@
       "Analyzing": "Menganalisis",
       "Extracting": "Mengeluarkan hasil",
       "Saving": "Menyimpan artifak",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "Menyediakan imej",
+      "AnalyzingImage": "Menganalisis imej"
     }
   },
   "Player": {
@@ -1411,13 +1685,26 @@
     "GotIt": "Faham"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "Ejen AI",
     "AIAgentDesc": "Transkripsi langsung dan interaksi AI tersedia dengan langganan.",
     "PostMeetingAI": "AI Selepas Mesyuarat",
     "PostMeetingAIDesc": "Ringkasan, item tindakan dan pandangan akan dijana selepas rakaman selesai.",
     "UnlockPremium": "Buka kunci dengan Premium",
     "Upgrade": "Naik taraf"
   },
+  "QuickOpen": {
+    "Placeholder": "Mula menaip atau tampal dari papan klip… Gunakan [[ untuk memaut ke nota lain",
+    "NoResults": "Tiada nota yang sepadan",
+    "UnifiedPlaceholder": "Buka nota atau halaman wiki mengikut nama…",
+    "SectionNotes": "Nota",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Rakam Audio",
+  "RecordAudioDesc": "Mula merakam audio (bercampur)",
+  "RecordFullscreen": "Rakam Skrin Penuh",
+  "RecordFullscreenDesc": "Mula merakam video skrin penuh",
+  "RecordRegion": "Tangkap Wilayah untuk Rakam",
+  "RecordRegionDesc": "Pilih kawasan skrin untuk dirakam",
   "RecordTab": {
     "TapToRecord": "Ketik untuk mula merakam",
     "RecordWithPreamble": "Rakam dengan prakata {{seconds}}s",
@@ -1434,16 +1721,19 @@
     "RecentRecordings": "Rakaman terkini"
   },
   "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
+    "Paused": "Dijeda",
+    "Preparing": "Bersedia",
+    "PreparingToRecord": "Bersedia untuk merakam...",
+    "InProgress": "Rakaman sedang berjalan",
+    "WillBeAdded": "Audio akan ditambah di sini apabila anda klik Henti",
+    "AttachingTo": "Melampirkan ke {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Rakaman audio.",
     "ContinueRecording": "Hulurkan rakaman",
     "Mark": "Tanda",
-    "MarkEvent": "Mark Event",
-    "MarkedEvents": "Marked Events",
+    "MarkEvent": "Tandakan Acara",
+    "MarkedEvents": "Peristiwa Bertanda",
     "RecordingAudio": "Rakaman audio.",
     "RecordingMode": "Mod rakaman",
     "RecordingPreview": "Pratonton rakaman",
@@ -1487,26 +1777,39 @@
     "SearchRecordingsOrSnapshots": "Carian rakaman dan sangkapan skrin",
     "ShowInFolder": "Tunjukkan dalam folder"
   },
+  "Regenerate": {
+    "Title": "Jana semula ringkasan nota",
+    "PickTemplate": "Pilih templat:",
+    "Custom": "Atau tulis arahan tersuai (mengatasi templat):",
+    "CustomPlaceholder": "cth. 'Fokus pada komitmen kepada pelanggan X, output sebagai memo eksekutif satu halaman.'",
+    "SaveAsTemplate": "Simpan sebagai templat tersuai",
+    "TemplateNamePlaceholder": "Nama templat",
+    "NameRequired": "Nama diperlukan untuk menyimpan",
+    "OutputLanguageHint": "Bahasa output mengikuti Tetapan → Pengekstrakan & Ringkasan AI",
+    "Submit": "Jana semula",
+    "AutoUpdate": "Auto-kemas kini semasa menaip",
+    "AutoUpdateHint": "Menjalankan semula sintesis selepas perubahan ketara pada nota ini (menggunakan kuota AI anda)."
+  },
   "RegionSelector": {
     "CaptureButton": "Tangkap Skrin atau Tekan Enter",
     "ConfirmButton": "Pengesahan pilihan",
     "Monitor": "Pantau",
     "PrimaryMonitor": "Monitor Utama",
-    "StartRecording": "Start Recording",
+    "StartRecording": "Mulakan Rakaman",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
     "Selected": "Dipilih",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "PresetFreeform": "Bentuk bebas",
+    "Preset1619": "16:9 Mendatar",
+    "Preset43": "4:3 Mendatar",
+    "Preset2119": "21:9 Ultralebar",
+    "Preset916": "9:16 Menegak",
+    "Preset34": "3:4 Menegak",
+    "Preset11": "1:1 Segi empat",
+    "ShortcutCancel": "batalkan",
+    "ShortcutCapture": "tangkap",
+    "ShortcutConfirm": "mengesahkan",
+    "AspectRatio": "Nisbah Aspek"
   },
   "Resume": "Sambung semula",
   "RingMenu": {
@@ -1559,9 +1862,9 @@
     "DescribeSub": "Apakah yang terdapat dalam tangkapan skrin ini?",
     "Description": "Penerangan",
     "ExtractedText": "Teks yang Diekstrak",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
+    "NoCustom": "Tanya apa-apa tentang gambar ini.",
+    "NoDescription": "Tiada penerangan lagi.",
+    "NoOcr": "Tiada teks yang diekstrak lagi.",
     "Ocr": "Ekstrak teks (OCR)",
     "OcrSub": "Baca semua teks yang kelihatan",
     "PipelineError": "Pemprosesan AI gagal. Sila cuba lagi.",
@@ -1593,8 +1896,22 @@
     "ShareCompleted": "Perkongsian selesai",
     "ShareFailed": "Kongsi tidak disokong pada pelayar ini. Sila buka sangkapan skrin secara manual untuk berkongsi.",
     "Sharing": "Sedang berkongsi...",
-    "ZeroBytes": "0 Bytes",
-    "Info": "Stats"
+    "ZeroBytes": "0 bait",
+    "Info": "Statistik"
+  },
+  "Search": {
+    "Placeholder": "Cari… (⌘K)",
+    "Aria": "Cari dalam nota dan wiki",
+    "GroupNotes": "Nota",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Rakaman",
+    "GroupScreenshots": "Tangkapan skrin",
+    "Results": {
+      "Aria": "Hasil carian"
+    },
+    "Loading": "Sedang mencari…",
+    "NoResults": "Tiada hasil untuk \"{{query}}\"",
+    "AgentHint": "Cuba ejen AI untuk pertanyaan semantik."
   },
   "Settings": {
     "About": {
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "Versi Penuh",
         "OneSentence": "1‑Ayat",
-        "TLDR": "TLDR"
+        "TLDR": "Ringkasan"
       },
       "NoUpdatesAvailable": "Tiada kemas kini tersedia",
       "Privacy": {
@@ -1721,6 +2038,13 @@
       "Flashback": "Sangkapan skrin Sangkapan balik",
       "Storage": "Penyimpanan"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (percuma, 20 panggilan/hari)",
+      "FlashLiteFree": "Flash Lite (percuma, 500 panggilan/hari)",
+      "Help": "Kemas kini AI dijeda secara automatik apabila kuota ini habis, kemudian disambung semula.",
+      "Label": "Tahap kuota Gemini",
+      "Paid": "Tahap berbayar"
+    },
     "SettingsFileLocation": "Lokasi Fail Tetapan",
     "Storage": {
       "Browse": "Teroka...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Bersihkan carian",
     "PrimaryNavigation": "Navigasi utama"
   },
+  "Tabs": {
+    "CloseTab": "Tutup",
+    "RecordingHere": "Rakaman sedang berjalan di sini",
+    "OrphanTooltip": "Fail ini telah dipadam daripada cakera",
+    "ScrollLeft": "Tatal tab ke kiri",
+    "ScrollRight": "Tatal tab ke kanan"
+  },
+  "TakeScreenshot": "Ambil Tangkapan Skrin",
+  "TakeScreenshotDesc": "Tangkap kawasan skrin",
   "TakeSnapshot": {
     "GoToSnapshot": "Pergi ke sangkapan skrin baharu",
     "Message": "Sangkapan skrin diambil dan disimpan ke:",
@@ -1786,7 +2119,7 @@
     "Title": "Sangkapan skrin diambil"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Ejen",
     "CloseNavigationMenu": "Tutup menu navigasi",
     "Files": "Fail",
     "MainNavigation": "Navigasi utama",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Buka menu navigasi",
     "Record": "Rekod",
     "Recording": "Rakaman",
-    "Screenshot": "Tangkapan Skrin"
+    "Screenshot": "Tangkapan Skrin",
+    "GroupCapture": "Tangkap",
+    "GroupKnowledge": "Pengetahuan",
+    "Notes": "Nota",
+    "Wiki": "Wiki",
+    "GroupTools": "Alat"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet masih berjalan di dulang sistem (di bahagian bawah kanan).",
@@ -1812,6 +2150,11 @@
     "Audio": "Audio",
     "System": "Output Audio Sistem",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Dinamakan semula; {{count}} rujukan dikemas kini",
+    "Action": "Buat asal",
+    "ToastNoRefs": "Dinamakan semula"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Pasang dan Keluar",
@@ -1865,11 +2208,11 @@
       "WikiDesc": "Lihat wiki SeaMeet untuk dokumentasi dan panduan."
     },
     "KeyboardShortcuts": "Papan Kekunci Pintasan",
-    "AccountSignedIn": "Signed in",
+    "AccountSignedIn": "Log masuk",
     "SeaMeetSignedIn": "SeaMeet: Masuk",
     "SeaMeetSignedOut": "SeaMeet: Tidak masuk",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
+    "SeaMeetSignIn": "Log Masuk SeaMeet",
+    "SeaMeetSignOut": "SeaMeet Log Keluar",
     "SignIn": "Log Masuk",
     "SignOut": "Log Keluar",
     "Workspaces": "Ruang Kerja",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Kilas Balik menyimpan 10 saat terakhir — jadi anda tidak terlepas ayat penting pertama.",
     "GotIt": "Faham"
   },
-  "HelpPage": {
-    "Title": "Ketahui lebih tentang SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "Kandungan yang dijana AI",
+    "AIBadge": "Dijana AI",
+    "Backlinks": "Pautan belakang",
+    "RelatedPages": "Halaman berkaitan",
+    "BuiltFrom": "Dibina daripada",
+    "SelectPage": "Pilih halaman",
+    "SelectPageHint": "Pilih entiti, orang, atau topik dari bar sisi untuk melihat apa yang telah dipelajari oleh wiki anda.",
+    "LoadingPage": "AI sedang membina halaman ini…",
+    "LoadFailed": "Gagal memuatkan halaman wiki ini.",
+    "AISection": "Bahagian AI",
+    "AIEmpty": "Belum ada kandungan AI. Tambah rakaman atau tangkapan skrin ke nota yang menyebut entiti ini, kemudian jalankan kemas kini wiki.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Wiki anda kosong",
+    "EmptySubtitle": "Rakam mesyuarat atau tulis nota untuk mula membina pangkalan pengetahuan anda.",
+    "UserSection": "Nota anda",
+    "UserSectionTitle": "Nota anda",
+    "UserSectionPlaceholder": "Tambah nota anda sendiri…",
+    "RefreshFromSources": "Segarkan daripada sumber",
+    "RefreshFromSourcesTooltip": "Segarkan bahagian AI daripada {{count}} nota sumber sekarang",
+    "RefreshFromSourcesHint": "Klik untuk menyegarkan bahagian AI daripada {{count}} nota sumber. Shift+klik juga membaca semula nota sumber.",
+    "RefreshDisabledTooltip": "Halaman wiki ini belum mempunyai nota sumber — jana ia dahulu daripada sebuah nota.",
+    "RefreshAriaLabel": "Segarkan halaman wiki daripada nota sumber",
+    "RefreshError": "Penyegaran gagal",
+    "Bulk": {
+      "Build": "Bina wiki",
+      "BuildFromAll": "Bina wiki daripada semua nota",
+      "BuildFromFolder": "Bina wiki daripada folder…",
+      "BuildFromSelection": "Bina wiki daripada pilihan…",
+      "ToastMessage": "{{count}} nota baharu dikesan. Bina wiki?",
+      "BannerMessage": "{{count}} nota baharu sejak binaan terakhir",
+      "BuildingExtracting": "Membaca {{current}}/{{total}} nota",
+      "BuildingReducing": "Membina {{current}}/{{total}} halaman",
+      "Building": "Membina wiki — {{stage}}",
+      "PausedFor": "had kadar: {{seconds}}s",
+      "Cancel": "Batal",
+      "Cancelling": "Membatalkan — menyelesaikan nota semasa…",
+      "Pause": "Jeda",
+      "Continue": "Sambung",
+      "Paused": "Dijeda — {{current}}/{{total}}",
+      "Restart": "Mula semula",
+      "NowReading": "Sedang membaca: {{item}}",
+      "NowBuilding": "Sedang membina: {{item}}",
+      "RecentList": "Baru-baru ini diproses",
+      "DoneSummary": "Wiki dibina — {{notes}} nota, {{pages}} halaman",
+      "Resume": "Sambung semula",
+      "ResumeAvailable": "Binaan wiki sebelumnya terhenti pada {{current}}/{{total}}. Sambung semula?",
+      "PolishIndex": "Gilap indeks",
+      "PolishIndexHint": "Tambah pengenalan naratif kepada indeks wiki",
+      "BuildFromFolderPrompt": "Laluan folder (relatif kepada ruang kerja):",
+      "BuildFromSelectionPrompt": "Nama fail nota dipisahkan koma (relatif kepada notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Lebih banyak tindakan wiki",
+      "BuildAllTooltip": "Bina wiki daripada semua nota (inkremental — hanya kemas kini halaman yang nota sumbernya berubah).",
+      "BuildAllRunning": "Membina wiki daripada semua nota — lihat banner di bawah.",
+      "BuildAllAria": "Bina wiki daripada semua nota"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Autokemas kini wiki daripada nota",
+    "SettingsDesc": "Membina pangkalan pengetahuan entiti, orang dan topik daripada nota dan rakaman anda. Mati secara lalai."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Cari halaman wiki mengikut nama…",
+    "NoResults": "Tiada halaman wiki yang sepadan"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Halaman wiki baharu",
+    "NewFolder": "Folder baharu",
+    "NewFolderPlaceholder": "Nama folder…",
+    "SortBy": "Susun mengikut",
+    "SortDefault": "Lalai (susunan sistem fail)",
+    "SortName": "Nama (A → Z)",
+    "SortModified": "Diubah suai (terbaharu dahulu)",
+    "CollapseAll": "Runtuhkan semua",
+    "ExpandAll": "Kembangkan semua",
+    "SearchInTree": "Tapis dalam pokok",
+    "FilterPlaceholder": "Tapis halaman…",
+    "DropToRoot": "Lepaskan untuk pindah ke akar wiki",
+    "MoveToRoot": "Pindah ke akar wiki",
+    "Open": "Buka",
+    "Rename": "Namakan semula",
+    "Delete": "Padam",
+    "CopyWikilink": "Salin wikilink",
+    "CopyRelativePath": "Salin laluan relatif",
+    "CopyFullPath": "Salin laluan penuh",
+    "ConfirmDeleteFile": "Pindahkan \"{{name}}\" ke tong sampah OS? (Boleh dipulihkan dari Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Pindahkan folder \"{{name}}\" dan semua kandungannya ke tong sampah OS?",
+    "Empty": "Belum ada halaman wiki. Saluran akan menulis di sini apabila anda merakam mesyuarat.",
+    "SetDefaultEntity": "Tetapkan sebagai lalai untuk halaman entiti baharu",
+    "SetDefaultPerson": "Tetapkan sebagai lalai untuk halaman orang baharu",
+    "SetDefaultTopic": "Tetapkan sebagai lalai untuk halaman topik baharu",
+    "SetDefaultMeeting": "Tetapkan sebagai lalai untuk halaman mesyuarat baharu",
+    "DefaultLabel": "Lalai untuk {{wikiKind}}",
+    "AIBadge": "Dijana AI",
+    "UserBadge": "Disunting oleh pengguna",
+    "QuickOpen": "Buka pantas (⌘P)",
+    "ConflictBadge": "Salinan konflik",
+    "EmptyAiCurated": "AI mengisi folder ini apabila rakaman atau nota anda menyebut entiti, orang, topik atau mesyuarat. Buka nota dan klik Segerak Wiki untuk menjana halaman."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] tiada dalam ruang kerja ini",
+    "Collision": "{{count}} nota berkongsi nama asas {{name}}",
+    "DisambiguationTitle": "Pilih nota untuk dibuka",
+    "DisambiguationOpenAt": "dalam {{folder}}",
+    "SuggestEmpty": "Tiada nota atau halaman wiki yang sepadan",
+    "BrokenTooltipSyncWiki": "Halaman ini belum dibina — klik Segerak Wiki pada nota ini untuk menjananya.",
+    "SyncContextMenu": "Segerakkan wiki",
+    "SyncToGenerate": "Segerakkan wiki untuk menjana halaman ini"
   },
   "WindowPicker": {
     "Instruction": "Pilih tetingkap untuk rakaman tetingkap.",
@@ -1947,6 +2399,15 @@
     "Title": "Pilih sebuah tetingkap",
     "Unknown": "Tetingkap tanpa nama"
   },
+  "Workspace": {
+    "None": "Tiada ruang kerja",
+    "EmptyList": "Tiada ruang kerja didaftarkan",
+    "Add": "Tambah ruang kerja…",
+    "Remove": "Buang dari SeaMeet",
+    "RemoveTooltip": "Buang dari SeaMeet (fail dalam cakera dikekalkan)",
+    "ConfirmRemove": "Buang ruang kerja \"{{name}}\"? Fail dalam cakera tidak dipadamkan; hanya entri SeaMeet dibuang.",
+    "Default": "Lalai"
+  },
   "agent": {
     "fabLabel": "Tanya Ejen AI",
     "panelLabel": "Ejen AI",
@@ -1954,11 +2415,21 @@
     "maximize": "Maksimumkan",
     "close": "Tutup"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Menyediakan rakaman anda…"
+    },
+    "error": {
+      "title": "Kami tidak dapat memproses rakaman ini",
+      "body": "Periksa kunci API anda atau cuba lagi."
+    },
+    "disabled": "Ciri AI dimatikan. Dayakannya dalam Tetapan untuk melihat ringkasan dan tindakan."
+  },
   "floatingPip": {
     "minimize": "Minimumkan",
     "maximize": "Maksimumkan",
-    "close": "Tutup",
     "restore": "Pulihkan",
+    "close": "Tutup",
     "exit": "Keluar dari gambar dalam gambar"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Tukar ke susun atur klasik",
       "floating": "Tukar ke susun atur terapung"
     },
+    "showPipTooltip": "Tunjukkan gambar dalam gambar",
     "announce": {
       "classic": "Ditukar ke susun atur klasik",
       "floating": "Ditukar ke susun atur terapung"
     },
-    "introToast": "Baharu: Susun atur terapung tersedia. Klik ikon susun atur di pengepala untuk mencubanya.",
-    "showPipTooltip": "Tunjukkan gambar dalam gambar"
+    "introToast": "Baharu: Susun atur terapung tersedia. Klik ikon susun atur di pengepala untuk mencubanya."
   }
 }

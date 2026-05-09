@@ -209,6 +209,47 @@
       "Live": "Live"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Von KI aktualisiert",
+    "Title": "Notizenübersicht",
+    "Meta": "{{count}} Aufnahmen · Vorlage: {{tpl}}",
+    "CopyToEdit": "Zum Bearbeiten kopieren",
+    "Regenerate": "Neu generieren",
+    "Generating": "Wird generiert…",
+    "Provenance": "Generiert aus {{n}} Aufnahmen",
+    "Error": "Generierung fehlgeschlagen: {{err}}",
+    "RenameSuggested": "KI schlägt \"{{title}}\" vor",
+    "Template": {
+      "general": {
+        "name": "Allgemeine Besprechung",
+        "description": "Entscheidungen, Aktionen, Diskussion"
+      },
+      "brainstorm": {
+        "name": "Brainstorming",
+        "description": "Ideen, Stränge, offene Fragen"
+      },
+      "lecture": {
+        "name": "Vortrag / Gespräch",
+        "description": "These, Kernpunkte, Fragen, Quellen"
+      },
+      "oneonone": {
+        "name": "1:1 / Interview",
+        "description": "Themen, Stimmung, Follow-ups"
+      },
+      "sales": {
+        "name": "Verkaufsgespräch",
+        "description": "Entdeckung, Einwände, nächste Schritte, Entscheider"
+      },
+      "standup": {
+        "name": "Standup / Status",
+        "description": "Updates pro Person, Blocker, nächstes"
+      }
+    },
+    "RegenerateTooltip": "Mit derselben Vorlage neu generieren",
+    "RegenerateChooseTemplate": "Mit einer anderen Vorlage neu generieren",
+    "Stale": "Veraltet · aktualisieren",
+    "StaleTooltip": "Die Notiz hat sich seit der Erstellung dieser Zusammenfassung geändert — zum Aktualisieren klicken."
+  },
   "About": {
     "AppStoreBuild": "App Store-Version",
     "DirectBuild": "Direkte Version",
@@ -301,7 +342,8 @@
       "Output": "Ausgabe",
       "Pattern": "Muster:",
       "Reading": "Datei wird gelesen...",
-      "ShowDetails": "Details anzeigen"
+      "ShowDetails": "Details anzeigen",
+      "AndMoreLines": "... und {{count}} weitere Zeilen"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} Aktionen",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} abgeschlossen",
       "Completed_other": "{{count}} abgeschlossen",
       "Running_one": "{{count}} läuft",
-      "Running_other": "{{count}} läuft"
+      "Running_other": "{{count}} läuft",
+      "Running": "{{count}} läuft",
+      "Completed": "{{count}} abgeschlossen",
+      "Actions": "{{count}} Aktionen"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Konfigurieren Sie Ihre API-Schlüssel, um den KI-Agenten zu verwenden."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Ihre Aufnahme wird vorbereitet…"
-    },
-    "error": {
-      "title": "Wir konnten diese Aufnahme nicht verarbeiten",
-      "body": "Überprüfen Sie Ihren API-Schlüssel oder versuchen Sie es erneut."
-    },
-    "disabled": "KI-Funktionen sind deaktiviert. Aktivieren Sie sie in den Einstellungen, um Zusammenfassungen und Aktionen zu sehen."
   },
   "App": {
     "FailedToEnableFlashback": "Flashback konnte nicht aktiviert werden: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "Erweiterte Einstellungen →",
     "LearnMore": "Mehr erfahren"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Zum ersten Mal? So funktioniert es →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO-ERKENNUNG",
     "Description": "Auto-Erkennung startet automatisch die Aufnahme, wenn Sie an Meetings teilnehmen, damit Sie nie vergessen, auf Aufnahme zu drücken.",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Verwendet Mikrofonaktivität, Fenstertitel und Browser-URLs für Genauigkeit",
     "Tip2Title": "Mehrere Erkennungsmethoden",
     "Title": "Meetings automatisch erkennen"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Zum ersten Mal? So funktioniert es →"
   },
   "AutoRecording": {
     "BugReport": "Fehler entdeckt? Melden Sie ihn an seameet@seasalt.ai",
@@ -625,7 +660,8 @@
       "TabLabel": "Geräte",
       "Today": "heute",
       "Yesterday": "gestern",
-      "YourDevices": "Ihre Geräte"
+      "YourDevices": "Ihre Geräte",
+      "DaysAgo": "Vor {{count}} Tagen"
     },
     "FAQ": {
       "Title": "Häufig gestellte Fragen",
@@ -856,7 +892,12 @@
     "Starting": "Starten...",
     "UnknownApp": "Unbekannte App",
     "Copied": "Kopiert!",
-    "Copy": "Kopieren"
+    "Copy": "Kopieren",
+    "Clear": "Klar",
+    "Forward": "Nach vorne",
+    "Refresh": "Aktualisieren",
+    "Apply": "Anwenden",
+    "Undo": "Rückgängig"
   },
   "DeletePrompt": {
     "Cancel": "Abbrechen",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Markierte Ereignisse",
     "Title": "Ereignisse"
   },
+  "ExternalChange": {
+    "Banner": "Diese Datei wurde auf der Festplatte geändert, während du sie bearbeitet hast.",
+    "Reload": "Festplattenversion neu laden",
+    "Keep": "Meine Version behalten"
+  },
+  "FAB": {
+    "Label": "Schnellaktionen",
+    "Stop": "Aufnahme stoppen",
+    "Record": "Aufnahme starten",
+    "Screenshot": "Bildschirmfoto aufnehmen",
+    "Agent": "KI-Assistent",
+    "PickSource": "Aufnahmequelle wählen",
+    "PickScreenshotSource": "Bildschirmfoto-Quelle wählen",
+    "SourceAudio": "Nur Audio",
+    "SourceFullscreen": "Vollbild",
+    "SourceWindow": "Fenster",
+    "SourceRegion": "Bereich",
+    "ScreenshotFullscreen": "Vollbild",
+    "ScreenshotWindow": "Fenster",
+    "ScreenshotRegion": "Bereich",
+    "LiveTranscription": "Live-Transkription",
+    "ToggleLiveTranscription": "Live-Transkription umschalten",
+    "RecordingInProgress": "Aufnahme läuft…",
+    "OpenBoundNote": "Die Notiz öffnen, an die diese Aufnahme angehängt ist"
+  },
   "FileImport": {
     "BrowseFiles": "Dateien durchsuchen",
     "DragDropFiles": "Ziehen und Ablegen Ihrer Audio-, Video- und Bilddateien hier",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Videodatei wird kopiert...",
     "VideoImportSaving": "Videodatei wird gespeichert...",
     "VideoUnsupported": "Dieses Videoformat wird in der App möglicherweise nicht unterstützt. Die Datei wird trotzdem importiert."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Alle {{count}} Treffer ersetzen?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Suchen",
+    "AriaLabel": "Suchen und ersetzen",
+    "CaseSensitive": "Groß-/Kleinschreibung",
+    "ClearSearch": "Löschen",
+    "Previous": "Vorheriges Ergebnis",
+    "Next": "Nächstes Ergebnis",
+    "NoResults": "Keine Treffer",
+    "ReplacePlaceholder": "Ersetzen",
+    "WikiAiReadonly": "KI-Abschnitt ist schreibgeschützt — Ersetzen funktioniert nur im Nutzerbereich",
+    "Replace": "Ersetzen",
+    "ReplaceAll": "Alle ersetzen",
+    "CloseBar": "Suchen/Ersetzen schließen",
+    "WikiCounterSplit": "{{userCount}} in der Notiz + {{aiCount}} im KI-Abschnitt"
   },
   "FlashbackControls": {
     "AudioFlashback": "Audio-Flashback",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "JPEG-Qualität des Bildes",
       "VideoMaxWidth": "Maximale Bildbreite",
       "VideoQualityHint": "Qualität und maximale Breite erhöhen, wenn Gemini kleine Kachel-Beschriftungen falsch liest (z. B. Zoom / Meet / Teams Teilnehmernamen). Höhere Werte erhöhen die Bild-Token-Nutzung — 1280 px springt pro Frame typischerweise von der 258-Token- auf die 1290-Token-Stufe.",
-      "DisableAutoVad": "Automatische VAD deaktivieren (serverseitige Turn-Erkennung)",
       "EndSensitivity": "Empfindlichkeit für Sprechende",
       "Default": "Standard (HOCH — schnelle Flushes)",
       "SilenceMs": "Stille vor Rundenende",
       "VadHint": "Weniger Stille + Empfindlichkeit HOCH → kürzere, häufigere Transkript-Flushes.",
+      "DisableAutoVad": "Automatische VAD deaktivieren (serverseitige Turn-Erkennung)",
       "ActivityFlush": "Periodisches Flushen bei langen Turns",
       "ActivityFlushMs": "Flush-Intervall",
       "ActivityFlushHint": "Alle N ms während eines langen Turns stößt Gemini an, das angesammelte Audio zu verarbeiten. Verhindert, dass die Transkription bei Monologen / Präsentationen stehen bleibt. Erfordert, dass die automatische VAD deaktiviert ist.",
       "ActivityFlushRequiresManualVad": "Der periodische Flush wirkt nur, wenn die automatische VAD deaktiviert ist — der Gemini-Server lehnt andernfalls explizite Aktivitätssteuerung ab. Lassen Sie den Schalter an und deaktivieren Sie unten die automatische VAD, um ihn zu nutzen.",
       "Reset": "Alles auf Standard zurücksetzen"
-    }
+    },
+    "SegmentCount": "{{count}} Segmente"
   },
   "GeminiTranscription": {
     "Title": "Live-Transkription"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Notizen",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Aufnahme-Transkripte",
+    "SectionSummaries": "Aufnahme-Zusammenfassungen",
+    "SectionOcr": "Screenshot-Text",
+    "IndexingFallback": "Indiziere — nur Dateinamentreffer",
+    "Placeholder": "In Notizen, Wiki und Aufnahmen suchen…",
+    "SoFar": "bisher",
+    "NoResults": "Keine Treffer"
+  },
+  "HelpPage": {
+    "Title": "Mehr über SeaMeet erfahren"
   },
   "IdleCompactView": {
     "ArmFlashback": "Flashback scharf machen",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet erfordert macOS 14.2 (Sonoma) oder neuer.\n\nEinige Funktionen wie die App-spezifische Audioerkennung und der automatische Meeting-Start funktionieren möglicherweise nicht.\n\nAktualisieren Sie über Systemeinstellungen > Allgemein > Softwareupdate.",
     "ContinueAnyway": "Trotzdem fortfahren",
     "Quit": "Beenden"
+  },
+  "MediaBlock": {
+    "Processing": "Verarbeitung…",
+    "SummaryReady": "Zusammenfassung bereit",
+    "Failed": "Fehlgeschlagen",
+    "Tab": {
+      "Summary": "Zusammenfassung",
+      "Transcript": "Transkript",
+      "Actions": "Aktionen",
+      "Decisions": "Entscheidungen",
+      "Chapters": "Kapitel",
+      "Description": "Beschreibung",
+      "Ocr": "OCR-Text"
+    },
+    "MoreActions": "Weitere Aktionen",
+    "Action": {
+      "ShowInFolder": "Im Ordner anzeigen",
+      "CopyEmbed": "Einbettungs-Syntax kopieren",
+      "RerunAi": "KI erneut ausführen",
+      "Detach": "Von Notiz lösen"
+    },
+    "AudioFallback": "Ihr Browser unterstützt keine Audiowiedergabe.",
+    "WaitingForPipeline": "Warten auf Abschluss der KI-Verarbeitung…",
+    "PipelineFailed": "Die KI-Verarbeitung dieser Datei ist fehlgeschlagen.",
+    "NoAiContent": "Die KI-Verarbeitung wurde abgeschlossen, aber kein zusätzlicher Inhalt erzeugt.",
+    "NoSummary": "Die KI-Zusammenfassung wurde noch nicht erstellt.",
+    "Due": "fällig",
+    "Stage": {
+      "preparing": "Vorbereiten…",
+      "uploading": "Hochladen…",
+      "uploading-wait": "Upload wird verarbeitet…",
+      "analyzing": "Analysieren…",
+      "extracting": "Extrahieren…",
+      "saving": "Speichern…",
+      "complete": "Fertig",
+      "gathering": "Sammeln…",
+      "reducing": "Verfeinern…",
+      "writing": "Schreiben…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Aktionspunkte",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Transkriptionssprache",
     "TranslationLanguage": "Übersetzungssprache",
     "UnknownSpeaker": "Sprecher",
-    "WaitingForSpeech": "Warte auf Sprache..."
+    "WaitingForSpeech": "Warte auf Sprache...",
+    "SegmentCount": "{{count}} Segmente"
   },
   "MeetingDetail": {
     "Back": "← Zurück",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Bildschirm-Flashback wird geladen...",
     "ScreenRecording": "Bildschirmaufnahme ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Beginnen Sie zu tippen oder fügen Sie aus der Zwischenablage ein…",
+    "Saving": "Speichern…",
+    "Saved": "✓ Gespeichert",
+    "SaveFailed": "Speichern fehlgeschlagen",
+    "Editing": "Bearbeiten…",
+    "TitlePlaceholder": "Unbenannte Notiz",
+    "TitleLabel": "Notiztitel",
+    "RenameTooltip": "Klicken zum Umbenennen",
+    "UntitledFallback": "Unbenannte Notiz",
+    "Renaming": "Umbenennen…",
+    "LoadFailed": "Notiz konnte nicht geladen werden",
+    "Bold": "Fett",
+    "Italic": "Kursiv",
+    "Code": "Code",
+    "Heading1": "Überschrift 1",
+    "Heading2": "Überschrift 2",
+    "BulletList": "Aufzählungsliste",
+    "OrderedList": "Nummerierte Liste",
+    "Link": "Link",
+    "LinkDialog": "Link einfügen",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Aktualisieren",
+    "LinkAdd": "Hinzufügen",
+    "LinkRemove": "Link entfernen",
+    "InsertWikilink": "Mit einer Notiz verknüpfen ([[ … ]])",
+    "SyncWiki": "Wiki synchronisieren",
+    "SyncWikiTooltip": "Wiki jetzt aus dieser Notiz aktualisieren (statt auf den Auto-Trigger zu warten)",
+    "SyncWikiCouldNotQueue": "Wiki-Aktualisierung konnte nicht in die Warteschlange gestellt werden",
+    "SyncWikiQueued": "In der Warteschlange…",
+    "SyncWikiRunning": "Synchronisiere…",
+    "SyncWikiSuccess": "✓ Synchronisiert",
+    "SyncWikiError": "Synchronisation fehlgeschlagen",
+    "Blockquote": "Blockzitat",
+    "CodeBlock": "Codeblock",
+    "Heading3": "Überschrift 3",
+    "Highlight": "Hervorheben",
+    "HorizontalRule": "Horizontale Linie",
+    "ImageAdd": "Einfügen",
+    "ImageDialog": "Bild einfügen",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Bild einfügen",
+    "InsertTable": "Tabelle einfügen",
+    "Strike": "Durchgestrichen",
+    "TableAddColumnAfter": "Spalte danach einfügen",
+    "TableAddColumnBefore": "Spalte davor einfügen",
+    "TableAddRowAfter": "Zeile danach einfügen",
+    "TableAddRowBefore": "Zeile davor einfügen",
+    "TableDelete": "Tabelle löschen",
+    "TableDeleteColumn": "Spalte löschen",
+    "TableDeleteRow": "Zeile löschen",
+    "TaskList": "Aufgabenliste",
+    "Redo": "Wiederholen",
+    "Underline": "Unterstreichen",
+    "Undo": "Rückgängig",
+    "Synthesize": "KI-Zusammenfassung",
+    "SynthesizeRunning": "Zusammenfassung läuft…",
+    "SynthesizeTooltip": "KI-Zusammenfassung für diese Notiz erstellen oder aktualisieren",
+    "SynthesizeChooseTemplate": "Eine Vorlage für die KI-Zusammenfassung wählen"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Bildschirmfoto",
+      "Recording": "Aufnahme",
+      "AddedTo": "hinzugefügt zu",
+      "Open": "Öffnen"
+    },
+    "WikiUpdateFailed": "Wiki-Aktualisierung fehlgeschlagen: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Zusammenfassung · {{version}}",
+      "Updated": "✨ Zusammenfassung aktualisiert · {{version}}",
+      "Jump": "Springen ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Vorlage wählen…",
+      "Label": "Zusammenfassungsoptionen"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Neue Notiz",
+    "JustNow": "gerade eben",
+    "Yesterday": "Gestern",
+    "Title": "Notizen",
+    "EmptyTitle": "Beginnen Sie Ihre erste Notiz",
+    "EmptySubtitle": "Aufzeichnung ist der Schlüssel — fügen Sie Aufnahmen und Bildschirmfotos zu jeder Notiz hinzu.",
+    "MediaCount": "{{n}} angehängte Medien",
+    "ConfirmDelete": "Löschen",
+    "DeleteNote": "Notiz löschen"
+  },
+  "NotesTree": {
+    "Title": "Notizen",
+    "NewNote": "Neue Notiz",
+    "NewFolder": "Neuer Ordner",
+    "NewFolderPrompt": "Ordnername:",
+    "SortBy": "Sortieren nach",
+    "SortManual": "Manuelle Reihenfolge",
+    "SortName": "Name (A → Z)",
+    "SortModified": "Geändert (neueste zuerst)",
+    "CollapseAll": "Alle einklappen",
+    "SearchInTree": "Im Baum suchen",
+    "FilterPlaceholder": "Notizen filtern…",
+    "DropToRoot": "Hier ablegen, um in den Stamm zu verschieben",
+    "MoveTo": "Verschieben nach…",
+    "MoveToRoot": "In den Stamm verschieben",
+    "Duplicate": "Duplizieren",
+    "RevealInFinder": "Im Finder anzeigen",
+    "RevealInExplorer": "Im Explorer anzeigen",
+    "CopyWikilink": "Wiki-Link kopieren",
+    "Pin": "Oben anheften",
+    "Unpin": "Loslösen",
+    "Rename": "Umbenennen",
+    "Delete": "Löschen",
+    "Open": "Öffnen",
+    "Expand": "Erweitern",
+    "OpenInNewTab": "In neuem Tab öffnen",
+    "ConfirmDeleteFolder": "Ordner „{{name}}\" und alles darin löschen?",
+    "RenameSucceeded": "Umbenannt",
+    "RenameWithRefs": "Umbenannt; {{count}} Verweis(e) aktualisiert",
+    "SortDefault": "Standard (Dateisystem-Reihenfolge)",
+    "ExpandAll": "Alle ausklappen",
+    "NewFolderPlaceholder": "Neuer Ordnername…",
+    "QuickOpen": "Schnellöffnen  (⌘P)",
+    "CopyRelativePath": "Relativen Pfad kopieren",
+    "CopyFullPath": "Vollständigen Pfad kopieren",
+    "UpdateWikiFromNote": "Wiki aus dieser Notiz aktualisieren",
+    "WikiUpdateFailed": "Wiki-Aktualisierung fehlgeschlagen: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Notiz auswählen",
+    "SelectFromList": "Wählen Sie eine Notiz aus der Liste oder erstellen Sie eine neue.",
+    "NoNotes": "Sie haben noch keine Notizen — beginnen Sie Ihre erste.",
+    "CollapseSidebar": "Notiz-Seitenleiste ausblenden",
+    "ExpandSidebar": "Notiz-Seitenleiste einblenden"
+  },
   "OCRAutoCopy": {
     "Copied": "Extrahierter Text in die Zwischenablage kopiert",
     "Error": "Text konnte nicht extrahiert werden",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Führt nach jedem Screenshot OCR aus und kopiert den extrahierten Text in die Zwischenablage",
     "SettingsLabel": "Text automatisch extrahieren (OCR) auf dem Screenshot"
   },
+  "OpenRecordingsFolder": "Öffnen Sie den Ordner „Aufnahmen“.",
+  "OpenRecordingsFolderDesc": "Öffnen Sie den Standardaufzeichnungsordner",
   "Pause": "Pause",
   "PermissionAlert": {
     "Title": "Berechtigung erforderlich",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "Mit Premium freischalten",
     "Upgrade": "Upgrade"
   },
+  "QuickOpen": {
+    "Placeholder": "Tippen oder aus der Zwischenablage einfügen… Mit [[ zu einer anderen Notiz verlinken",
+    "NoResults": "Keine passenden Notizen",
+    "UnifiedPlaceholder": "Notiz oder Wiki-Seite nach Namen öffnen…",
+    "SectionNotes": "Notizen",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Audio aufnehmen",
+  "RecordAudioDesc": "Audioaufnahme starten (gemischt)",
+  "RecordFullscreen": "Vollbild aufzeichnen",
+  "RecordFullscreenDesc": "Beginnen Sie mit der Aufnahme eines Vollbildvideos",
+  "RecordRegion": "Fangen Sie eine Region zum Aufzeichnen ein",
+  "RecordRegionDesc": "Wählen Sie einen Bildschirmbereich zum Aufzeichnen aus",
   "RecordTab": {
     "TapToRecord": "Zum Aufnehmen tippen",
     "RecordWithPreamble": "Mit {{seconds}}s Vorlauf aufnehmen",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "Pausiert",
     "Preparing": "Vorbereiten",
-    "PreparingToRecord": "Aufnahme wird vorbereitet..."
+    "PreparingToRecord": "Aufnahme wird vorbereitet...",
+    "InProgress": "Aufnahme läuft",
+    "WillBeAdded": "Audio wird hier hinzugefügt, wenn Sie auf Stopp klicken",
+    "AttachingTo": "An {{note}} anhängen"
   },
   "RecordingControls": {
     "AudioRecording": "Audio-Aufnahme",
@@ -1487,6 +1777,19 @@
     "SearchRecordingsOrSnapshots": "Aufnahmen und Schnappschüsse durchsuchen",
     "ShowInFolder": "Im Ordner anzeigen"
   },
+  "Regenerate": {
+    "Title": "Notizenübersicht neu generieren",
+    "PickTemplate": "Vorlage auswählen:",
+    "Custom": "Oder eigene Anweisungen schreiben (überschreibt Vorlage):",
+    "CustomPlaceholder": "z. B. 'Schwerpunkt auf Zusagen gegenüber Kunde X, Ausgabe als einseitiges Exekutivsummary.'",
+    "SaveAsTemplate": "Als eigene Vorlage speichern",
+    "TemplateNamePlaceholder": "Vorlagenname",
+    "NameRequired": "Name zum Speichern erforderlich",
+    "OutputLanguageHint": "Ausgabesprache folgt Einstellungen → KI-Extraktion & Zusammenfassung",
+    "Submit": "Neu generieren",
+    "AutoUpdate": "Beim Tippen automatisch aktualisieren",
+    "AutoUpdateHint": "Lässt die Zusammenfassung nach umfangreichen Änderungen an dieser Notiz erneut laufen (verbraucht KI-Kontingent)."
+  },
   "RegionSelector": {
     "CaptureButton": "Bildschirm erfassen oder Enter drücken",
     "ConfirmButton": "Auswahl bestätigen",
@@ -1498,8 +1801,8 @@
     "Selected": "Ausgewählt",
     "PresetFreeform": "Freiform",
     "Preset1619": "16:9 horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
+    "Preset43": "4:3 Querformat",
+    "Preset2119": "21:9 Ultraweit",
     "Preset916": "9:16 Vertikal",
     "Preset34": "3:4 Vertikal",
     "Preset11": "1:1 Quadrat",
@@ -1596,6 +1899,20 @@
     "ZeroBytes": "0 Bytes",
     "Info": "Statistiken"
   },
+  "Search": {
+    "Placeholder": "Suchen… (⌘K)",
+    "Aria": "Notizen und Wiki durchsuchen",
+    "GroupNotes": "Notizen",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Aufnahmen",
+    "GroupScreenshots": "Bildschirmfotos",
+    "Results": {
+      "Aria": "Suchergebnisse"
+    },
+    "Loading": "Suche läuft…",
+    "NoResults": "Keine Ergebnisse für „{{query}}“",
+    "AgentHint": "Versuchen Sie es mit dem KI-Assistenten für semantische Suchen."
+  },
   "Settings": {
     "About": {
       "CheckForUpdates": "Nach Updates suchen",
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "Vollversion",
         "OneSentence": "1-Satz",
-        "TLDR": "TLDR"
+        "TLDR": "Zusammenfassung"
       },
       "NoUpdatesAvailable": "Keine Updates verfügbar",
       "Privacy": {
@@ -1711,7 +2028,7 @@
       "Loud": "Laut (5x)",
       "Louder": "Lauter (10x)",
       "Minimal": "Minimal (0,1x)",
-      "Normal": "Normal (1x)",
+      "Normal": "Normal (1×)",
       "Quiet": "Leise (0.5x)"
     },
     "OpenFolder": "Ordner öffnen",
@@ -1720,6 +2037,13 @@
       "AutoRecording": "Auto-Aufnahme",
       "Flashback": "Flashback-Aufnahme",
       "Storage": "Speicher"
+    },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (kostenlos, 20 Aufrufe/Tag)",
+      "FlashLiteFree": "Flash Lite (kostenlos, 500 Aufrufe/Tag)",
+      "Help": "KI-Aktualisierungen pausieren automatisch, wenn dieses Kontingent erschöpft ist, und werden danach fortgesetzt.",
+      "Label": "Gemini-Kontingentstufe",
+      "Paid": "Bezahlte Stufe"
     },
     "SettingsFileLocation": "Speicherort der Einstellungsdatei",
     "Storage": {
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Suche löschen",
     "PrimaryNavigation": "Hauptnavigation"
   },
+  "Tabs": {
+    "CloseTab": "Schließen",
+    "RecordingHere": "Aufnahme läuft hier",
+    "OrphanTooltip": "Diese Datei wurde auf der Festplatte gelöscht",
+    "ScrollLeft": "Tabs nach links scrollen",
+    "ScrollRight": "Tabs nach rechts scrollen"
+  },
+  "TakeScreenshot": "Machen Sie einen Screenshot",
+  "TakeScreenshotDesc": "Erfassen Sie einen Bereich des Bildschirms",
   "TakeSnapshot": {
     "GoToSnapshot": "Zum neuen Schnappschuss gehen",
     "Message": "Schnappschuss aufgenommen und gespeichert in:",
@@ -1786,7 +2119,7 @@
     "Title": "Schnappschuss aufgenommen"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Assistent",
     "CloseNavigationMenu": "Navigationsmenü schließen",
     "Files": "Dateien",
     "MainNavigation": "Hauptnavigation",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Navigationsmenü öffnen",
     "Record": "Aufzeichnen",
     "Recording": "Aufnahme",
-    "Screenshot": "Screenshot"
+    "Screenshot": "Screenshot",
+    "GroupCapture": "Aufnahme",
+    "GroupKnowledge": "Wissen",
+    "Notes": "Notizen",
+    "Wiki": "Wiki",
+    "GroupTools": "Werkzeuge"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet läuft noch in der Taskleiste (unten rechts).",
@@ -1812,6 +2150,11 @@
     "Audio": "Audio",
     "System": "System-Audio-Ausgabe",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Umbenannt; {{count}} Verweis(e) aktualisiert",
+    "Action": "Rückgängig",
+    "ToastNoRefs": "Umbenannt"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Installieren & Beenden",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Rückblende speichert die letzten 10 Sekunden — so verpasst du nie den ersten guten Satz.",
     "GotIt": "Verstanden"
   },
-  "HelpPage": {
-    "Title": "Mehr über SeaMeet erfahren"
+  "Wiki": {
+    "AIBadgeTooltip": "KI-generierter Inhalt",
+    "AIBadge": "KI-generiert",
+    "Backlinks": "Rückverweise",
+    "RelatedPages": "Verwandte Seiten",
+    "BuiltFrom": "Erstellt aus",
+    "SelectPage": "Seite auswählen",
+    "SelectPageHint": "Wählen Sie eine Entität, eine Person oder ein Thema aus der Seitenleiste, um zu sehen, was Ihr Wiki gelernt hat.",
+    "LoadingPage": "Die KI erstellt diese Seite…",
+    "LoadFailed": "Diese Wiki-Seite konnte nicht geladen werden.",
+    "AISection": "KI-Abschnitt",
+    "AIEmpty": "Noch kein KI-Inhalt. Fügen Sie einer Notiz, die diese Entität erwähnt, eine Aufnahme oder ein Bildschirmfoto hinzu und führen Sie dann die Wiki-Aktualisierung aus.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Ihr Wiki ist leer",
+    "EmptySubtitle": "Nehmen Sie ein Meeting auf oder schreiben Sie eine Notiz, um mit dem Aufbau Ihrer Wissensbasis zu beginnen.",
+    "UserSection": "Ihre Notizen",
+    "UserSectionTitle": "Ihre Notizen",
+    "UserSectionPlaceholder": "Eigene Notizen hinzufügen…",
+    "RefreshFromSources": "Aus Quellen aktualisieren",
+    "RefreshFromSourcesTooltip": "KI-Abschnitt jetzt aus {{count}} Quellnotiz(en) aktualisieren",
+    "RefreshFromSourcesHint": "Klicken zum Aktualisieren des KI-Abschnitts aus {{count}} Quellnotiz(en). Umschalt+Klick liest auch die Quellnotizen erneut.",
+    "RefreshDisabledTooltip": "Diese Wiki-Seite hat noch keine Quellnotizen — erzeugen Sie sie zuerst aus einer Notiz.",
+    "RefreshAriaLabel": "Wiki-Seite aus Quellnotizen aktualisieren",
+    "RefreshError": "Aktualisierung fehlgeschlagen",
+    "Bulk": {
+      "Build": "Wiki erstellen",
+      "BuildFromAll": "Wiki aus allen Notizen erstellen",
+      "BuildFromFolder": "Wiki aus Ordner erstellen…",
+      "BuildFromSelection": "Wiki aus Auswahl erstellen…",
+      "ToastMessage": "{{count}} neue Notizen erkannt. Wiki erstellen?",
+      "BannerMessage": "{{count}} neue Notizen seit letztem Build",
+      "BuildingExtracting": "Lese {{current}}/{{total}} Notizen",
+      "BuildingReducing": "Erstelle {{current}}/{{total}} Seiten",
+      "Building": "Wiki wird erstellt — {{stage}}",
+      "PausedFor": "Ratenlimit: {{seconds}}s",
+      "Cancel": "Abbrechen",
+      "Cancelling": "Wird abgebrochen — aktuelle Notiz wird abgeschlossen…",
+      "Pause": "Pause",
+      "Continue": "Fortsetzen",
+      "Paused": "Pausiert — {{current}}/{{total}}",
+      "Restart": "Neu starten",
+      "NowReading": "Liest gerade: {{item}}",
+      "NowBuilding": "Erstellt gerade: {{item}}",
+      "RecentList": "Kürzlich verarbeitet",
+      "DoneSummary": "Wiki erstellt — {{notes}} Notizen, {{pages}} Seiten",
+      "Resume": "Fortsetzen",
+      "ResumeAvailable": "Ein vorheriger Wiki-Build wurde bei {{current}}/{{total}} unterbrochen. Fortsetzen?",
+      "PolishIndex": "Index polieren",
+      "PolishIndexHint": "Erzählerische Einleitung zum Wiki-Index hinzufügen",
+      "BuildFromFolderPrompt": "Ordnerpfad (relativ zum Arbeitsbereich):",
+      "BuildFromSelectionPrompt": "Komma-getrennte Notiz-Dateinamen (relativ zu notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Weitere Wiki-Aktionen",
+      "BuildAllTooltip": "Wiki aus allen Notizen erstellen (inkrementell — aktualisiert nur Seiten, deren Quellnotizen sich geändert haben).",
+      "BuildAllRunning": "Wiki wird aus allen Notizen erstellt — siehe Banner unten.",
+      "BuildAllAria": "Wiki aus allen Notizen erstellen"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Wiki automatisch aus Notizen aktualisieren",
+    "SettingsDesc": "Erstellt aus Ihren Notizen und Aufzeichnungen eine Wissensdatenbank mit Entitäten, Personen und Themen. Standardmäßig deaktiviert."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Wiki-Seiten nach Namen suchen…",
+    "NoResults": "Keine passenden Wiki-Seiten"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Neue Wiki-Seite",
+    "NewFolder": "Neuer Ordner",
+    "NewFolderPlaceholder": "Ordnername…",
+    "SortBy": "Sortieren nach",
+    "SortDefault": "Standard (Dateisystem-Reihenfolge)",
+    "SortName": "Name (A → Z)",
+    "SortModified": "Geändert (neueste zuerst)",
+    "CollapseAll": "Alle einklappen",
+    "ExpandAll": "Alle ausklappen",
+    "SearchInTree": "Im Baum filtern",
+    "FilterPlaceholder": "Seiten filtern…",
+    "DropToRoot": "Hierhin ziehen, um in das Wiki-Stammverzeichnis zu verschieben",
+    "MoveToRoot": "In das Wiki-Stammverzeichnis verschieben",
+    "Open": "Öffnen",
+    "Rename": "Umbenennen",
+    "Delete": "Löschen",
+    "CopyWikilink": "Wikilink kopieren",
+    "CopyRelativePath": "Relativen Pfad kopieren",
+    "CopyFullPath": "Vollständigen Pfad kopieren",
+    "ConfirmDeleteFile": "\"{{name}}\" in den Papierkorb verschieben? (Wiederherstellbar über Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Den Ordner \"{{name}}\" und alles darin in den Papierkorb verschieben?",
+    "Empty": "Noch keine Wiki-Seiten. Die Pipeline schreibt hierhin, wenn du Meetings aufnimmst.",
+    "SetDefaultEntity": "Als Standard-Ordner für neue Entitätsseiten festlegen",
+    "SetDefaultPerson": "Als Standard-Ordner für neue Personenseiten festlegen",
+    "SetDefaultTopic": "Als Standard-Ordner für neue Themenseiten festlegen",
+    "SetDefaultMeeting": "Als Standard-Ordner für neue Meetingseiten festlegen",
+    "DefaultLabel": "Standard für {{wikiKind}}",
+    "AIBadge": "KI-generiert",
+    "UserBadge": "Vom Benutzer bearbeitet",
+    "QuickOpen": "Schnellöffnen (⌘P)",
+    "ConflictBadge": "Konfliktkopie",
+    "EmptyAiCurated": "KI füllt diesen Ordner, wenn deine Aufnahmen oder Notizen eine Entität, Person, ein Thema oder Meeting erwähnen. Öffne eine Notiz und klicke auf Wiki synchronisieren, um Seiten zu erzeugen."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] ist in diesem Arbeitsbereich nicht vorhanden",
+    "Collision": "{{count}} Notizen teilen den Basisnamen {{name}}",
+    "DisambiguationTitle": "Wähle die zu öffnende Notiz",
+    "DisambiguationOpenAt": "in {{folder}}",
+    "SuggestEmpty": "Keine passenden Notizen oder Wiki-Seiten",
+    "BrokenTooltipSyncWiki": "Diese Seite wurde noch nicht erstellt — klicke in dieser Notiz auf Wiki synchronisieren, um sie zu erzeugen.",
+    "SyncContextMenu": "Wiki synchronisieren",
+    "SyncToGenerate": "Wiki synchronisieren, um diese Seite zu generieren"
   },
   "WindowPicker": {
     "Instruction": "Wählen Sie ein Fenster für Fensteraufnahmen aus.",
@@ -1947,6 +2399,15 @@
     "Title": "Fenster auswählen",
     "Unknown": "Unbenanntes Fenster"
   },
+  "Workspace": {
+    "None": "Kein Arbeitsbereich",
+    "EmptyList": "Keine Arbeitsbereiche registriert",
+    "Add": "Arbeitsbereich hinzufügen…",
+    "Remove": "Aus SeaMeet entfernen",
+    "RemoveTooltip": "Aus SeaMeet entfernen (Dateien auf der Festplatte bleiben erhalten)",
+    "ConfirmRemove": "Arbeitsbereich „{{name}}\" entfernen? Dateien auf der Festplatte werden nicht gelöscht; nur der SeaMeet-Eintrag wird entfernt.",
+    "Default": "Standard"
+  },
   "agent": {
     "fabLabel": "KI-Agenten fragen",
     "panelLabel": "KI-Agent",
@@ -1954,11 +2415,21 @@
     "maximize": "Maximieren",
     "close": "Schließen"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Ihre Aufnahme wird vorbereitet…"
+    },
+    "error": {
+      "title": "Wir konnten diese Aufnahme nicht verarbeiten",
+      "body": "Überprüfen Sie Ihren API-Schlüssel oder versuchen Sie es erneut."
+    },
+    "disabled": "KI-Funktionen sind deaktiviert. Aktivieren Sie sie in den Einstellungen, um Zusammenfassungen und Aktionen zu sehen."
+  },
   "floatingPip": {
     "minimize": "Minimieren",
     "maximize": "Maximieren",
-    "close": "Schließen",
     "restore": "Wiederherstellen",
+    "close": "Schließen",
     "exit": "Bild-in-Bild verlassen"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Zum klassischen Layout wechseln",
       "floating": "Zum schwebenden Layout wechseln"
     },
+    "showPipTooltip": "Bild-in-Bild anzeigen",
     "announce": {
       "classic": "Zum klassischen Layout gewechselt",
       "floating": "Zum schwebenden Layout gewechselt"
     },
-    "introToast": "Neu: Schwebendes Layout verfügbar. Klicken Sie auf das Layout-Symbol in der Kopfzeile, um es auszuprobieren.",
-    "showPipTooltip": "Bild-in-Bild anzeigen"
+    "introToast": "Neu: Schwebendes Layout verfügbar. Klicken Sie auf das Layout-Symbol in der Kopfzeile, um es auszuprobieren."
   }
 }

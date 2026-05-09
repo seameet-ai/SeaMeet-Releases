@@ -170,7 +170,7 @@
     "NotAvailableForVersion": "Hindi available para sa bersyong ito.",
     "NoTranscript": "Hindi available ang transcript.",
     "PipelineError": "Nabigo ang pagproseso ng AI. Subukang mag-regenerate.",
-    "PipelineTranscript": "AI Pipeline",
+    "PipelineTranscript": "Pipeline ng AI",
     "Processing": "Bumubuo ng buod...",
     "Queued": "Nakapila para sa pagproseso...",
     "Regenerate": "Buuin muli ang buod",
@@ -185,7 +185,7 @@
       "Chapters": "Mga kabanata",
       "KeyDecisions": "Mga desisyon",
       "Summary": "Buod",
-      "Transcription": "Transcript"
+      "Transcription": "Transkripsyon"
     },
     "ScreenshotTabTitle": "Pagsusuri ng AI",
     "TabTitle": "Buod ng AI",
@@ -208,6 +208,47 @@
       "Latest": "Pinakabago",
       "Live": "Mabuhay"
     }
+  },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Na-update ng AI",
+    "Title": "Buod ng tala",
+    "Meta": "{{count}} na recording · template: {{tpl}}",
+    "CopyToEdit": "Kopyahin para i-edit",
+    "Regenerate": "Muling buuin",
+    "Generating": "Ginagawa…",
+    "Provenance": "Nabuo mula sa {{n}} na recording",
+    "Error": "Nabigo ang pagbuo: {{err}}",
+    "RenameSuggested": "Imumungkahi ng AI ang \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Pangkalahatang miting",
+        "description": "Mga desisyon, aksyon, talakayan"
+      },
+      "brainstorm": {
+        "name": "Brainstorm",
+        "description": "Mga ideya, thread, bukas na tanong"
+      },
+      "lecture": {
+        "name": "Lektura / talk",
+        "description": "Thesis, mga pangunahing punto, tanong, sanggunian"
+      },
+      "oneonone": {
+        "name": "1:1 / panayam",
+        "description": "Mga tema, damdamin, follow-up"
+      },
+      "sales": {
+        "name": "Sales call",
+        "description": "Pagtuklas, pagtutol, susunod, mga decision-maker"
+      },
+      "standup": {
+        "name": "Standup / status",
+        "description": "Bawat tao update, hadlang, susunod"
+      }
+    },
+    "RegenerateTooltip": "I-regenerate gamit ang parehong template",
+    "RegenerateChooseTemplate": "I-regenerate gamit ang ibang template",
+    "Stale": "Luma · i-refresh",
+    "StaleTooltip": "Nagbago ang note mula nang ma-generate ang buod na ito — i-click para i-refresh."
   },
   "About": {
     "AppStoreBuild": "Build mula sa App Store",
@@ -301,7 +342,8 @@
       "Output": "Output",
       "Pattern": "Pattern:",
       "Reading": "Binabasa ang file...",
-      "ShowDetails": "Ipakita ang mga detalye"
+      "ShowDetails": "Ipakita ang mga detalye",
+      "AndMoreLines": "... at {{count}} pang mga linya"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} na mga aksyon",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} natapos",
       "Completed_other": "{{count}} natapos",
       "Running_one": "{{count}} tumatakbo",
-      "Running_other": "{{count}} tumatakbo"
+      "Running_other": "{{count}} tumatakbo",
+      "Running": "{{count}} tumatakbo",
+      "Completed": "{{count}} natapos",
+      "Actions": "{{count}} aksyon"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "I-configure ang iyong mga API key para gamitin ang AI Agent."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Inihahanda ang iyong recording…"
-    },
-    "error": {
-      "title": "Hindi namin maproseso ang recording na ito",
-      "body": "Suriin ang iyong API key o subukan muli."
-    },
-    "disabled": "Naka-off ang mga tampok ng AI. Paganahin ang mga ito sa Mga Setting upang makita ang mga buod at pagkilos."
   },
   "App": {
     "FailedToEnableFlashback": "Hindi ma-enable ang balik-tanaw: {{error}}",
@@ -396,12 +431,15 @@
     "Title": "Auto-Detect",
     "Description": "Binabantayan ang mga meeting app (Zoom, Teams, Meet…) at nag-o-offer na mag-record para hindi mo na kailangang tandaan.",
     "ToggleLabel": "Auto-detect ay {{state}}",
-    "StateOn": "ON",
-    "StateOff": "OFF",
+    "StateOn": "NAKA-ON",
+    "StateOff": "NAKA-OFF",
     "RecentHeading": "Kamakailang detections",
     "RecentEmpty": "Wala pang detections.",
-    "AdvancedSettings": "Advanced settings →",
+    "AdvancedSettings": "Mga advanced na setting →",
     "LearnMore": "Matuto pa"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Unang beses? Ganito ito gumagana →"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "AWTOMATIKONG PAGTUKLAS",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Ginagamit ang mikropono, mga pamagat ng bintana, at browser na URL para sa katumpakan",
     "Tip2Title": "Maramihang Paraan ng Deteksyon",
     "Title": "Auto-Detect ng mga miting"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Unang beses? Ganito ito gumagana →"
   },
   "AutoRecording": {
     "BugReport": "Nakakita ng bug? Iulat ito sa seameet@seasalt.ai",
@@ -625,7 +660,8 @@
       "TabLabel": "Mga Device",
       "Today": "ngayon",
       "Yesterday": "kahapon",
-      "YourDevices": "Iyong Mga Device"
+      "YourDevices": "Iyong Mga Device",
+      "DaysAgo": "{{count}} araw ang nakalipas"
     },
     "FAQ": {
       "Title": "Mga Madalas Itanong",
@@ -856,7 +892,12 @@
     "Starting": "Nagsisimula na...",
     "UnknownApp": "Hindi kilalang app",
     "Copied": "Nakopya na!",
-    "Copy": "Kopyahin"
+    "Copy": "Kopyahin",
+    "Clear": "Maaliwalas",
+    "Forward": "Pasulong",
+    "Refresh": "I-refresh",
+    "Apply": "Iapply",
+    "Undo": "I-undo"
   },
   "DeletePrompt": {
     "Cancel": "Kanselahin",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Mga Nakasaad na Kaganapan",
     "Title": "Mga kaganapan"
   },
+  "ExternalChange": {
+    "Banner": "Nagbago ang file na ito sa disk habang nag-eedit ka.",
+    "Reload": "I-reload ang bersyon sa disk",
+    "Keep": "Panatilihin ang aking bersyon"
+  },
+  "FAB": {
+    "Label": "Mga mabilis na aksyon",
+    "Stop": "Itigil ang pagre-record",
+    "Record": "Magsimulang mag-record",
+    "Screenshot": "Kumuha ng screenshot",
+    "Agent": "AI Agent",
+    "PickSource": "Pumili ng pinagmumulan ng rekording",
+    "PickScreenshotSource": "Pumili ng pinagmumulan ng screenshot",
+    "SourceAudio": "Audio Lang",
+    "SourceFullscreen": "Buong Screen",
+    "SourceWindow": "Window",
+    "SourceRegion": "Rehiyon",
+    "ScreenshotFullscreen": "Buong Screen",
+    "ScreenshotWindow": "Window",
+    "ScreenshotRegion": "Rehiyon",
+    "LiveTranscription": "Live na transkripsyon",
+    "ToggleLiveTranscription": "I-toggle ang live na transkripsyon",
+    "RecordingInProgress": "Nagre-record…",
+    "OpenBoundNote": "Buksan ang note kung saan nakalakip ang recording na ito"
+  },
   "FileImport": {
     "BrowseFiles": "Mag-browse ng mga file",
     "DragDropFiles": "I-drag at i-drop ang iyong audio, video, at mga larawan dito",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Kinokopya ang video file...",
     "VideoImportSaving": "Sine-save ang video file...",
     "VideoUnsupported": "Maaaring hindi ma-play ang format ng video na ito sa app. Ia-import pa rin ang file."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Palitan lahat ng {{count}} tugma?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Hanapin",
+    "AriaLabel": "Hanapin at palitan",
+    "CaseSensitive": "Itugma ang malaki/maliit",
+    "ClearSearch": "I-clear",
+    "Previous": "Nakaraang tugma",
+    "Next": "Susunod na tugma",
+    "NoResults": "Walang resulta",
+    "ReplacePlaceholder": "Palitan",
+    "WikiAiReadonly": "Read-only ang AI section — gumagana lang ang palit sa user section",
+    "Replace": "Palitan",
+    "ReplaceAll": "Palitan lahat",
+    "CloseBar": "Isara ang hanapin/palitan",
+    "WikiCounterSplit": "{{userCount}} sa note + {{aiCount}} sa AI section"
   },
   "FlashbackControls": {
     "AudioFlashback": "Audio balik-tanaw",
@@ -928,13 +1011,13 @@
       "screen": "screen"
     },
     "ModeLabel": "Ano ang i-buffer",
-    "ModeOff": "Off",
+    "ModeOff": "Naka-off",
     "ModeAudio": "Audio",
     "ModeScreen": "Screen",
     "WindowLabel": "Haba ng window",
     "PrimaryRecord": "Mag-record na may {{seconds}}s preamble",
     "PrimarySave": "I-save ang huling {{seconds}}s",
-    "AdvancedSettings": "Advanced settings →",
+    "AdvancedSettings": "Mga advanced na setting →",
     "LearnMore": "Matuto pa"
   },
   "FlashbackFirstArm": {
@@ -1192,20 +1275,35 @@
       "VideoQuality": "Kalidad ng JPEG ng frame",
       "VideoMaxWidth": "Maximum na lapad ng frame",
       "VideoQualityHint": "Itaas ang kalidad at maximum na lapad kapag mali ang pagbabasa ng Gemini sa maliliit na tile label (hal. mga pangalan ng kalahok sa Zoom / Meet / Teams). Ang mas mataas na halaga ay nagpapataas ng paggamit ng image token — ang 1280 px ay karaniwang lumilipat mula sa 258-token tier patungo sa 1290-token tier bawat frame.",
-      "DisableAutoVad": "I-disable ang automatic VAD (server-side turn detection)",
       "EndSensitivity": "Sensitivity ng pagtatapos ng pagsasalita",
       "Default": "Default (HIGH — mabilis na flush)",
       "SilenceMs": "Katahimikan bago matapos ang turn",
       "VadHint": "Mas maikling katahimikan + MATAAS na sensitivity → mas maikli at mas madalas na transkripsyong flush.",
+      "DisableAutoVad": "I-disable ang automatic VAD (server-side turn detection)",
       "ActivityFlush": "Pana-panahong pag-flush sa mahahabang turn",
       "ActivityFlushMs": "Pagitan ng flush",
       "ActivityFlushHint": "Bawat N ms sa isang mahabang turn, pinapalakad ang Gemini na iproseso ang naipon na audio. Pinipigilang maudlot ang transkripsyon sa monologue / presentasyon. Kailangang naka-disable ang awtomatikong VAD.",
       "ActivityFlushRequiresManualVad": "Nagka-ka-epekto lang ang pana-panahong pag-flush kapag naka-disable ang awtomatikong VAD — itinatanggi ng Gemini server ang malinaw na kontrol ng aktibidad kung hindi. Panatilihing naka-on ang toggle at i-disable ang awtomatikong VAD sa ibaba upang magamit ito.",
       "Reset": "I-reset lahat sa default"
-    }
+    },
+    "SegmentCount": "{{count}} na mga segment"
   },
   "GeminiTranscription": {
     "Title": "Live na Transkripsyon"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Mga note",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Mga transcript ng recording",
+    "SectionSummaries": "Mga buod ng recording",
+    "SectionOcr": "Text ng screenshot",
+    "IndexingFallback": "Nagi-index — pangalan lang ng file ang ipinapakita",
+    "Placeholder": "Maghanap sa mga note, wiki, at recording…",
+    "SoFar": "sa ngayon",
+    "NoResults": "Walang tugma"
+  },
+  "HelpPage": {
+    "Title": "Matuto pa tungkol sa SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "\"I-arm ang balik-tanaw\"",
@@ -1221,6 +1319,45 @@
     "Detail": "Kailangan ng SeaMeet ang macOS 14.2 (Sonoma) o mas bago.\n\nAng ilang feature tulad ng per-app audio detection at auto-start ng meeting ay maaaring hindi gumana.\n\nMag-update sa pamamagitan ng System Settings > General > Software Update.",
     "ContinueAnyway": "Magpatuloy Pa Rin",
     "Quit": "Lumabas"
+  },
+  "MediaBlock": {
+    "Processing": "Pinoproseso…",
+    "SummaryReady": "Handa na ang buod",
+    "Failed": "Nabigo",
+    "Tab": {
+      "Summary": "Buod",
+      "Transcript": "Transkripsyon",
+      "Actions": "Mga aksyon",
+      "Decisions": "Mga desisyon",
+      "Chapters": "Mga kabanata",
+      "Description": "Paglalarawan",
+      "Ocr": "Teksto ng OCR"
+    },
+    "MoreActions": "Higit pang aksyon",
+    "Action": {
+      "ShowInFolder": "Ipakita sa folder",
+      "CopyEmbed": "Kopyahin ang embed syntax",
+      "RerunAi": "Patakbuhin muli ang AI",
+      "Detach": "Alisin sa tala"
+    },
+    "AudioFallback": "Hindi sinusuportahan ng iyong browser ang pag-play ng audio.",
+    "WaitingForPipeline": "Naghihintay matapos ang pagproseso ng AI…",
+    "PipelineFailed": "Nabigo ang pagproseso ng AI para sa file na ito.",
+    "NoAiContent": "Tapos na ang pagproseso ng AI ngunit walang ginawang karagdagang nilalaman.",
+    "NoSummary": "Hindi pa nababuo ang buod ng AI.",
+    "Due": "deadline",
+    "Stage": {
+      "preparing": "Naghahanda…",
+      "uploading": "Ina-upload…",
+      "uploading-wait": "Pinoproseso ang upload…",
+      "analyzing": "Sinusuri…",
+      "extracting": "Kinukuha…",
+      "saving": "Sini-save…",
+      "complete": "Tapos na",
+      "gathering": "Tinitipon…",
+      "reducing": "Pinipino…",
+      "writing": "Sinusulat…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mga action items",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Wika ng pagtitipon",
     "TranslationLanguage": "Wika ng pagtitipon",
     "UnknownSpeaker": "Tagapagsalita",
-    "WaitingForSpeech": "Naghihintay sa pagsasalita..."
+    "WaitingForSpeech": "Naghihintay sa pagsasalita...",
+    "SegmentCount": "{{count}} na mga segment"
   },
   "MeetingDetail": {
     "Back": "← Bumalik",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Nagcha-charge ang screen balik-tanaw...",
     "ScreenRecording": "Screen balik-tanaw ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Simulan ang pag-type o i-paste mula sa clipboard…",
+    "Saving": "Sine-save…",
+    "Saved": "✓ Na-save",
+    "SaveFailed": "Hindi na-save",
+    "Editing": "Ine-edit…",
+    "TitlePlaceholder": "Talang walang pamagat",
+    "TitleLabel": "Pamagat ng tala",
+    "RenameTooltip": "Mag-click para palitan ang pangalan",
+    "UntitledFallback": "Talang walang pamagat",
+    "Renaming": "Pinapalitan ang pangalan…",
+    "LoadFailed": "Hindi na-load ang tala",
+    "Bold": "Bold",
+    "Italic": "Italic",
+    "Code": "Code",
+    "Heading1": "Pamagat 1",
+    "Heading2": "Pamagat 2",
+    "BulletList": "Listahan ng bullet",
+    "OrderedList": "Listahang may bilang",
+    "Link": "Link",
+    "LinkDialog": "Maglagay ng link",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "I-update",
+    "LinkAdd": "Idagdag",
+    "LinkRemove": "Alisin ang link",
+    "InsertWikilink": "I-link sa isang tala ([[ … ]])",
+    "SyncWiki": "I-sync ang wiki",
+    "SyncWikiTooltip": "I-update ang wiki mula sa talang ito ngayon (sa halip na maghintay ng auto-trigger)",
+    "SyncWikiCouldNotQueue": "Hindi mai-queue ang pag-update ng wiki",
+    "SyncWikiQueued": "Naka-queue…",
+    "SyncWikiRunning": "Nag-sa-sync…",
+    "SyncWikiSuccess": "✓ Na-sync",
+    "SyncWikiError": "Nabigo ang pag-sync",
+    "Blockquote": "Blockquote",
+    "CodeBlock": "Bloke ng code",
+    "Heading3": "Pamagat 3",
+    "Highlight": "I-highlight",
+    "HorizontalRule": "Pahalang na linya",
+    "ImageAdd": "Ipasok",
+    "ImageDialog": "Ipasok ang larawan",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Ipasok ang larawan",
+    "InsertTable": "Ipasok ang talahanayan",
+    "Strike": "Linya sa gitna",
+    "TableAddColumnAfter": "Magdagdag ng kolum pagkatapos",
+    "TableAddColumnBefore": "Magdagdag ng kolum bago",
+    "TableAddRowAfter": "Magdagdag ng hilera pagkatapos",
+    "TableAddRowBefore": "Magdagdag ng hilera bago",
+    "TableDelete": "Tanggalin ang talahanayan",
+    "TableDeleteColumn": "Tanggalin ang kolum",
+    "TableDeleteRow": "Tanggalin ang hilera",
+    "TaskList": "Listahan ng gawain",
+    "Redo": "Gawin muli",
+    "Underline": "Ipawisan",
+    "Undo": "Bawiin",
+    "Synthesize": "AI buod",
+    "SynthesizeRunning": "Sinusulat…",
+    "SynthesizeTooltip": "Bumuo o i-refresh ang AI buod para sa note na ito",
+    "SynthesizeChooseTemplate": "Pumili ng template para sa AI summary"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Screenshot",
+      "Recording": "Rekording",
+      "AddedTo": "idinagdag sa",
+      "Open": "Buksan"
+    },
+    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Buod · {{version}}",
+      "Updated": "✨ Na-update ang buod · {{version}}",
+      "Jump": "Tumalon ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Pumili ng template…",
+      "Label": "Mga opsyon ng buod"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Bagong tala",
+    "JustNow": "kanina lang",
+    "Yesterday": "Kahapon",
+    "Title": "Mga tala",
+    "EmptyTitle": "Simulan ang iyong unang tala",
+    "EmptySubtitle": "Pagre-record ang pangunahing tampok — magdagdag ng mga rekording at screenshot sa kahit anong tala.",
+    "MediaCount": "{{n}} (na) attachment",
+    "ConfirmDelete": "Burahin",
+    "DeleteNote": "Burahin ang tala"
+  },
+  "NotesTree": {
+    "Title": "Mga tala",
+    "NewNote": "Bagong tala",
+    "NewFolder": "Bagong folder",
+    "NewFolderPrompt": "Pangalan ng folder:",
+    "SortBy": "Pagsunud-sunurin ayon sa",
+    "SortManual": "Manwal",
+    "SortName": "Pangalan (A → Z)",
+    "SortModified": "Binago (pinakabago muna)",
+    "CollapseAll": "I-collapse lahat",
+    "SearchInTree": "Maghanap sa puno",
+    "FilterPlaceholder": "I-filter ang mga tala…",
+    "DropToRoot": "I-drop dito para ilipat sa root",
+    "MoveTo": "Ilipat sa…",
+    "MoveToRoot": "Ilipat sa root",
+    "Duplicate": "I-duplicate",
+    "RevealInFinder": "Ipakita sa Finder",
+    "RevealInExplorer": "Ipakita sa File Explorer",
+    "CopyWikilink": "Kopyahin ang wikilink",
+    "Pin": "I-pin sa itaas",
+    "Unpin": "I-unpin",
+    "Rename": "Palitan ang pangalan",
+    "Delete": "Burahin",
+    "Open": "Buksan",
+    "Expand": "Palawakin",
+    "OpenInNewTab": "Buksan sa bagong tab",
+    "ConfirmDeleteFolder": "Burahin ang folder na \"{{name}}\" at lahat ng laman?",
+    "RenameSucceeded": "Napalitan ang pangalan",
+    "RenameWithRefs": "Napalitan ang pangalan; na-update ang {{count}} reference",
+    "SortDefault": "Default (filesystem order)",
+    "ExpandAll": "Palawakin lahat",
+    "NewFolderPlaceholder": "Pangalan ng bagong folder…",
+    "QuickOpen": "Mabilis na buksan  (⌘P)",
+    "CopyRelativePath": "Kopyahin ang relative path",
+    "CopyFullPath": "Kopyahin ang full path",
+    "UpdateWikiFromNote": "I-update ang wiki mula sa tala na ito",
+    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Pumili ng tala",
+    "SelectFromList": "Pumili ng tala sa listahan o gumawa ng bago.",
+    "NoNotes": "Wala ka pang mga tala — simulan ang iyong unang tala.",
+    "CollapseSidebar": "Itago ang sidebar ng notes",
+    "ExpandSidebar": "Ipakita ang sidebar ng notes"
+  },
   "OCRAutoCopy": {
     "Copied": "Na-copy ang na-extract na teksto sa clipboard",
     "Error": "Hindi na-extract ang teksto",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Nagpapatakbo ng OCR pagkatapos ng bawat screenshot at kinokopya ang na-extract na teksto sa clipboard",
     "SettingsLabel": "Auto-extract ng teksto (OCR) sa screenshot"
   },
+  "OpenRecordingsFolder": "Buksan ang Recordings Folder",
+  "OpenRecordingsFolderDesc": "Buksan ang default na folder ng mga recording",
   "Pause": "I-pause",
   "PermissionAlert": {
     "Title": "Kailangan ng pahintulot",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "I-unlock gamit ang Premium",
     "Upgrade": "Mag-upgrade"
   },
+  "QuickOpen": {
+    "Placeholder": "Magsimulang mag-type o i-paste mula sa clipboard… Gamitin ang [[ para mag-link sa ibang tala",
+    "NoResults": "Walang tugmang tala",
+    "UnifiedPlaceholder": "Magbukas ng note o wiki page sa pangalan…",
+    "SectionNotes": "Mga note",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Mag-record ng audio",
+  "RecordAudioDesc": "Simulan ang pag-record ng audio (halo-halong)",
+  "RecordFullscreen": "I-record ang Buong Screen",
+  "RecordFullscreenDesc": "Simulan ang pag-record ng full screen na video",
+  "RecordRegion": "Mag-snap ng Rehiyon para I-record",
+  "RecordRegionDesc": "Pumili ng rehiyon ng screen na ire-record",
   "RecordTab": {
     "TapToRecord": "I-tap para simulan ang pag-record",
     "RecordWithPreamble": "Mag-record na may {{seconds}}s preamble",
@@ -1428,7 +1715,7 @@
     "FlashbackStatusCharging": "nagka-charge {{percent}}%",
     "FlashbackStatusReady": "armado — {{seconds}}s {{type}} sa RAM",
     "LauncherPill": "Launcher",
-    "FloaterPill": "Floater",
+    "FloaterPill": "Lutang",
     "AutoDetectLabel": "Auto-Detect",
     "FlashbackLabel": "Flashback",
     "RecentRecordings": "Kamakailang recordings"
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "Naka-pause",
     "Preparing": "Naghahanda",
-    "PreparingToRecord": "Naghahanda sa pag-record..."
+    "PreparingToRecord": "Naghahanda sa pag-record...",
+    "InProgress": "Kasalukuyang nagre-record",
+    "WillBeAdded": "Idadagdag ang audio dito kapag nag-click ka ng Istop",
+    "AttachingTo": "Nilalakip sa {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Audio ng pagre-rekord",
@@ -1487,6 +1777,19 @@
     "SearchRecordingsOrSnapshots": "Maghanap ng mga pagre-record at larawan di-makikita",
     "ShowInFolder": "Ipakita sa folder"
   },
+  "Regenerate": {
+    "Title": "Muling buuin ang buod ng tala",
+    "PickTemplate": "Pumili ng template:",
+    "Custom": "O sumulat ng sariling tagubilin (pinapalitan ang template):",
+    "CustomPlaceholder": "hal. 'Ituon sa mga pangako sa customer X, i-output bilang isang pahina na executive memo.'",
+    "SaveAsTemplate": "I-save bilang custom na template",
+    "TemplateNamePlaceholder": "Pangalan ng template",
+    "NameRequired": "Kailangan ang pangalan para ma-save",
+    "OutputLanguageHint": "Ang wikang output ay sumusunod sa Mga Setting → AI Extraction at Buod",
+    "Submit": "Muling buuin",
+    "AutoUpdate": "Auto-update kapag nagta-type",
+    "AutoUpdateHint": "Muling pinapatakbo ang synthesis pagkatapos ng malalaking pagbabago sa note na ito (gumagamit ng AI quota)."
+  },
   "RegionSelector": {
     "CaptureButton": "Kukunan ng Screen o Pindutin ang Enter",
     "ConfirmButton": "Kumpirmahin ang pagpili",
@@ -1499,10 +1802,10 @@
     "PresetFreeform": "Malayang anyo",
     "Preset1619": "16:9 Pahalang",
     "Preset43": "4:3 Pahalang",
-    "Preset2119": "21:9 Ultrawide",
+    "Preset2119": "21:9 Ultra-wide",
     "Preset916": "9:16 Patayo",
     "Preset34": "3:4 Patayo",
-    "Preset11": "1:1 Square",
+    "Preset11": "1:1 Parisukat",
     "ShortcutCancel": "kanselahin",
     "ShortcutCapture": "makunan",
     "ShortcutConfirm": "kumpirmahin",
@@ -1596,6 +1899,20 @@
     "ZeroBytes": "OK na ito",
     "Info": "Mga Stats"
   },
+  "Search": {
+    "Placeholder": "Maghanap… (⌘K)",
+    "Aria": "Maghanap sa mga tala at wiki",
+    "GroupNotes": "Mga tala",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Mga rekording",
+    "GroupScreenshots": "Mga screenshot",
+    "Results": {
+      "Aria": "Mga resulta ng paghahanap"
+    },
+    "Loading": "Naghahanap…",
+    "NoResults": "Walang resulta para sa \"{{query}}\"",
+    "AgentHint": "Subukan ang AI agent para sa mga semantic na query."
+  },
   "Settings": {
     "About": {
       "CheckForUpdates": "Mag-check ng mga update",
@@ -1617,7 +1934,7 @@
           "Ang mga account sa cloud ay nag-iimbak ng pangunahing impormasyon (pangalan, email) at datos ng paggamit para sa seguridad at kalidad ng serbisyo.",
           "Ang mga integrasyon sa third-party ay opsyonal at ganap na maaaring bawiin.",
           "Hindi namin ibinebenta ang datos, at ang cloud recordings ay naka-encrypt.",
-          "You control your data — delete recordings anytime or request full deletion."
+          "Kontrolado mo ang iyong data — mag-delete ng mga recording anumang oras o humingi ng kumpletong pag-delete."
         ],
         "TLDRTitle": "SeaMeet Privacy — TLDR para sa Mga Abalang Tao"
       },
@@ -1711,7 +2028,7 @@
       "Loud": "Malakas (5x)",
       "Louder": "Mas malakas (10x)",
       "Minimal": "Minimal (0.1x)",
-      "Normal": "Normal (1x)",
+      "Normal": "Normal (1×)",
       "Quiet": "Tahimik (0.5x)"
     },
     "OpenFolder": "Buksan ang Folder",
@@ -1720,6 +2037,13 @@
       "AutoRecording": "Awtomatikong Pag-record",
       "Flashback": "Balik-tanaw na Pagre-record",
       "Storage": "Imbakan"
+    },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (libre, 20 tawag/araw)",
+      "FlashLiteFree": "Flash Lite (libre, 500 tawag/araw)",
+      "Help": "Awtomatikong huminto ang mga pag-update ng AI kapag naubos ang quota na ito, at saka magpapatuloy.",
+      "Label": "Antas ng quota ng Gemini",
+      "Paid": "Bayad na antas"
     },
     "SettingsFileLocation": "Lokasyon ng File ng mga Setting",
     "Storage": {
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Linisin ang search",
     "PrimaryNavigation": "Pangunahing menu"
   },
+  "Tabs": {
+    "CloseTab": "Isara",
+    "RecordingHere": "Kasalukuyang nagre-record dito",
+    "OrphanTooltip": "Ang file na ito ay natanggal mula sa disk",
+    "ScrollLeft": "Mag-scroll ng mga tab pakaliwa",
+    "ScrollRight": "Mag-scroll ng mga tab pakanan"
+  },
+  "TakeScreenshot": "Kumuha ng Screenshot",
+  "TakeScreenshotDesc": "Kumuha ng rehiyon ng screen",
   "TakeSnapshot": {
     "GoToSnapshot": "Pumunta sa bagong snapshot",
     "Message": "Ang snapshot ay kinuha at sine-save sa:",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Buksan ang navigation menu",
     "Record": "Itala",
     "Recording": "Pagre-record",
-    "Screenshot": "Screenshot"
+    "Screenshot": "Screenshot",
+    "GroupCapture": "Kunan",
+    "GroupKnowledge": "Kaalaman",
+    "Notes": "Mga tala",
+    "Wiki": "Wiki",
+    "GroupTools": "Mga kasangkapan"
   },
   "Tray": {
     "MinimizedHint": "Ang SeaMeet ay naka-run pa rin sa system tray (ibabang-kanan).",
@@ -1812,6 +2150,11 @@
     "Audio": "Audio",
     "System": "Sistema na output ng audio",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Nai-rename; na-update ang {{count}} reference",
+    "Action": "I-undo",
+    "ToastNoRefs": "Pinangalanan muli"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "I-install at Lumabas",
@@ -1868,8 +2211,8 @@
     "AccountSignedIn": "Naka-sign in",
     "SeaMeetSignedIn": "SeaMeet: Nakalog-in",
     "SeaMeetSignedOut": "SeaMeet: Hindi naka-log in",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
+    "SeaMeetSignIn": "Mag-sign in sa SeaMeet",
+    "SeaMeetSignOut": "Mag-sign out sa SeaMeet",
     "SignIn": "Mag-sign in",
     "SignOut": "Mag-sign out",
     "Workspaces": "Mga Workspace",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Ini-save ng Flashback ang huling 10 segundo — para hindi mo ma-miss ang unang magandang linya.",
     "GotIt": "Tapos na"
   },
-  "HelpPage": {
-    "Title": "Matuto pa tungkol sa SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "Nilalamang ginawa ng AI",
+    "AIBadge": "Ginawa ng AI",
+    "Backlinks": "Mga backlink",
+    "RelatedPages": "Mga kaugnay na pahina",
+    "BuiltFrom": "Binuo mula sa",
+    "SelectPage": "Pumili ng pahina",
+    "SelectPageHint": "Pumili ng entity, tao, o paksa sa sidebar upang makita ang natutunan ng iyong wiki.",
+    "LoadingPage": "Bina-build ng AI ang pahinang ito…",
+    "LoadFailed": "Hindi na-load ang pahina ng wiki na ito.",
+    "AISection": "Seksyon ng AI",
+    "AIEmpty": "Wala pang nilalaman ang AI. Magdagdag ng rekording o screenshot sa talang nagbabanggit ng entity na ito, pagkatapos ay patakbuhin ang pag-update ng wiki.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Walang laman ang iyong wiki",
+    "EmptySubtitle": "Mag-record ng pulong o magsulat ng tala upang magsimulang bumuo ng iyong knowledge base.",
+    "UserSection": "Mga tala mo",
+    "UserSectionTitle": "Mga tala mo",
+    "UserSectionPlaceholder": "Magdagdag ng iyong sariling tala…",
+    "RefreshFromSources": "I-refresh mula sa mga pinagmulan",
+    "RefreshFromSourcesTooltip": "I-refresh ang AI section mula sa {{count}} pinagmulang tala ngayon",
+    "RefreshFromSourcesHint": "I-click upang i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli rin ang mga source note.",
+    "RefreshDisabledTooltip": "Wala pang pinagmulang tala ang wiki page na ito — buuin muna mula sa isang tala.",
+    "RefreshAriaLabel": "I-refresh ang wiki page mula sa mga pinagmulang tala",
+    "RefreshError": "Nabigo ang pag-refresh",
+    "Bulk": {
+      "Build": "Bumuo ng wiki",
+      "BuildFromAll": "Bumuo ng wiki mula sa lahat ng tala",
+      "BuildFromFolder": "Bumuo ng wiki mula sa folder…",
+      "BuildFromSelection": "Bumuo ng wiki mula sa pinili…",
+      "ToastMessage": "{{count}} bagong tala ang nadiskubre. Bumuo ng wiki?",
+      "BannerMessage": "{{count}} bagong tala mula nang huling pagbuo",
+      "BuildingExtracting": "Binabasa {{current}}/{{total}} tala",
+      "BuildingReducing": "Bumubuo ng {{current}}/{{total}} pahina",
+      "Building": "Bumubuo ng wiki — {{stage}}",
+      "PausedFor": "rate limit: {{seconds}}s",
+      "Cancel": "Kanselahin",
+      "Cancelling": "Kinakansela — natatapos ang kasalukuyang tala…",
+      "Pause": "I-pause",
+      "Continue": "Magpatuloy",
+      "Paused": "Naka-pause — {{current}}/{{total}}",
+      "Restart": "I-restart",
+      "NowReading": "Binabasa ngayon: {{item}}",
+      "NowBuilding": "Ginagawa ngayon: {{item}}",
+      "RecentList": "Kamakailang naproseso",
+      "DoneSummary": "Naitayo ang wiki — {{notes}} tala, {{pages}} pahina",
+      "Resume": "Ipagpatuloy",
+      "ResumeAvailable": "Naputol ang nakaraang pagbuo ng wiki sa {{current}}/{{total}}. Ipagpatuloy?",
+      "PolishIndex": "Pakinisin ang indeks",
+      "PolishIndexHint": "Magdagdag ng pasalaysay na panimula sa indeks ng wiki",
+      "BuildFromFolderPrompt": "Path ng folder (kaugnay sa workspace):",
+      "BuildFromSelectionPrompt": "Comma-separated na filename ng tala (kaugnay sa notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Higit pang aksyon sa wiki",
+      "BuildAllTooltip": "Bumuo ng wiki mula sa lahat ng tala (incremental — ina-update lang ang mga pahina na nagbago ang source notes).",
+      "BuildAllRunning": "Bumubuo ng wiki mula sa lahat ng tala — tingnan ang banner sa ibaba.",
+      "BuildAllAria": "Bumuo ng wiki mula sa lahat ng tala"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Awtomatikong i-update ang wiki mula sa mga tala",
+    "SettingsDesc": "Bumubuo ng knowledge base ng mga entity, tao, at paksa mula sa iyong mga tala at recording. Naka-off bilang default."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Hanapin ang wiki page ayon sa pangalan…",
+    "NoResults": "Walang katugmang wiki page"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Bagong wiki page",
+    "NewFolder": "Bagong folder",
+    "NewFolderPlaceholder": "Pangalan ng folder…",
+    "SortBy": "Pag-uri-uriin ayon sa",
+    "SortDefault": "Default (filesystem order)",
+    "SortName": "Pangalan (A → Z)",
+    "SortModified": "Binago (pinakabago muna)",
+    "CollapseAll": "I-collapse lahat",
+    "ExpandAll": "I-expand lahat",
+    "SearchInTree": "I-filter sa puno",
+    "FilterPlaceholder": "I-filter ang mga page…",
+    "DropToRoot": "I-drop para ilipat sa wiki root",
+    "MoveToRoot": "Ilipat sa wiki root",
+    "Open": "Buksan",
+    "Rename": "Palitan ang pangalan",
+    "Delete": "Tanggalin",
+    "CopyWikilink": "Kopyahin ang wikilink",
+    "CopyRelativePath": "Kopyahin ang relative path",
+    "CopyFullPath": "Kopyahin ang buong path",
+    "ConfirmDeleteFile": "Ilipat ang \"{{name}}\" sa OS trash? (Mababawi mula sa Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Ilipat ang folder na \"{{name}}\" at lahat ng laman nito sa OS trash?",
+    "Empty": "Wala pang wiki pages. Susulat dito ang pipeline kapag nag-record ka ng meeting.",
+    "SetDefaultEntity": "Itakda bilang default para sa mga bagong entity page",
+    "SetDefaultPerson": "Itakda bilang default para sa mga bagong person page",
+    "SetDefaultTopic": "Itakda bilang default para sa mga bagong topic page",
+    "SetDefaultMeeting": "Itakda bilang default para sa mga bagong meeting page",
+    "DefaultLabel": "Default para sa {{wikiKind}}",
+    "AIBadge": "AI-generated",
+    "UserBadge": "In-edit ng user",
+    "QuickOpen": "Quick open (⌘P)",
+    "ConflictBadge": "Magkasalungat na kopya",
+    "EmptyAiCurated": "Pinupunan ng AI ang folder na ito kapag ang iyong mga recording o tala ay bumanggit ng entity, tao, paksa, o pulong. Magbukas ng tala at i-click ang Sync Wiki upang bumuo ng mga page."
+  },
+  "Wikilink": {
+    "Broken": "Wala sa workspace na ito ang [[{{name}}]]",
+    "Collision": "{{count}} na tala ang nakikibahagi sa base name na {{name}}",
+    "DisambiguationTitle": "Piliin kung aling tala ang bubuksan",
+    "DisambiguationOpenAt": "sa {{folder}}",
+    "SuggestEmpty": "Walang katugmang tala o wiki page",
+    "BrokenTooltipSyncWiki": "Hindi pa nabubuo ang page na ito — i-click ang Sync Wiki sa tala na ito upang likhain ito.",
+    "SyncContextMenu": "I-sync ang wiki",
+    "SyncToGenerate": "I-sync ang wiki upang gumawa ng pahinang ito"
   },
   "WindowPicker": {
     "Instruction": "Pumili ng bintana para sa pagre-record ng window.",
@@ -1947,18 +2399,37 @@
     "Title": "Pumili ng isang bintana",
     "Unknown": "Bintanang walang pamagat"
   },
+  "Workspace": {
+    "None": "Walang workspace",
+    "EmptyList": "Walang nakarehistrong workspace",
+    "Add": "Magdagdag ng workspace…",
+    "Remove": "Alisin sa SeaMeet",
+    "RemoveTooltip": "Alisin sa SeaMeet (mananatili sa disk ang mga file)",
+    "ConfirmRemove": "Alisin ang workspace na \"{{name}}\"? Hindi tatanggalin ang mga file sa disk; ang SeaMeet entry lang ang aalisin.",
+    "Default": "Default"
+  },
   "agent": {
     "fabLabel": "Tanungin ang AI Agent",
-    "panelLabel": "AI Agent",
+    "panelLabel": "Ahente ng AI",
     "dockRight": "I-dock sa kanan",
     "maximize": "I-maximize",
     "close": "Isara"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Inihahanda ang iyong recording…"
+    },
+    "error": {
+      "title": "Hindi namin maproseso ang recording na ito",
+      "body": "Suriin ang iyong API key o subukan muli."
+    },
+    "disabled": "Naka-off ang mga tampok ng AI. Paganahin ang mga ito sa Mga Setting upang makita ang mga buod at pagkilos."
+  },
   "floatingPip": {
     "minimize": "I-minimize",
     "maximize": "I-maximize",
-    "close": "Isara",
     "restore": "I-restore",
+    "close": "Isara",
     "exit": "Lumabas sa picture-in-picture"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Lumipat sa klasikong layout",
       "floating": "Lumipat sa nakalutang na layout"
     },
+    "showPipTooltip": "Ipakita ang picture-in-picture",
     "announce": {
       "classic": "Lumipat sa klasikong layout",
       "floating": "Lumipat sa nakalutang na layout"
     },
-    "introToast": "Bago: Magagamit na ang nakalutang na layout. I-click ang icon ng layout sa header upang subukan ito.",
-    "showPipTooltip": "Ipakita ang picture-in-picture"
+    "introToast": "Bago: Magagamit na ang nakalutang na layout. I-click ang icon ng layout sa header upang subukan ito."
   }
 }

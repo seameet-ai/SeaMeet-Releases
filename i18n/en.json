@@ -1,4 +1,7 @@
 {
+  "AI": {
+    "SubscribeMsg": "Requires a BYOK Pro subscription. Subscribe to get live transcription, post-meeting AI summaries, and an interactive AI agent."
+  },
   "AIAgent": {
     "DisabledBadge": "Disabled",
     "DisabledMsg": "AI Agent & Cowork is disabled. Enable it in Settings → AI Agent & Cowork.",
@@ -11,9 +14,6 @@
     "SectionTitle": "AI Agent & Cowork",
     "SubscribeMsg": "AI Agent requires a BYOK Pro subscription. Subscribe to get live transcription, post-meeting AI summaries, and an interactive AI agent.",
     "SubscribeCTA": "Subscribe to Unlock"
-  },
-  "AI": {
-    "SubscribeMsg": "Requires a BYOK Pro subscription. Subscribe to get live transcription, post-meeting AI summaries, and an interactive AI agent."
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API Key",
@@ -209,6 +209,47 @@
       "Live": "Live"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Updated by AI",
+    "Title": "Note summary",
+    "Meta": "{{count}} recordings · template: {{tpl}}",
+    "CopyToEdit": "Copy to edit",
+    "Regenerate": "Regenerate",
+    "Generating": "Generating…",
+    "Provenance": "Generated from {{n}} recordings",
+    "Error": "Generation failed: {{err}}",
+    "RenameSuggested": "AI suggests \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "General meeting",
+        "description": "Decisions, actions, discussion"
+      },
+      "brainstorm": {
+        "name": "Brainstorm",
+        "description": "Ideas, threads, open questions"
+      },
+      "lecture": {
+        "name": "Lecture / talk",
+        "description": "Thesis, key points, questions, references"
+      },
+      "oneonone": {
+        "name": "1:1 / interview",
+        "description": "Themes, sentiment, follow-ups"
+      },
+      "sales": {
+        "name": "Sales call",
+        "description": "Discovery, objections, next steps, decision-makers"
+      },
+      "standup": {
+        "name": "Standup / status",
+        "description": "Per-person updates, blockers, next"
+      }
+    },
+    "RegenerateTooltip": "Regenerate with the same template",
+    "RegenerateChooseTemplate": "Regenerate with a different template",
+    "Stale": "Stale · refresh",
+    "StaleTooltip": "The note has changed since this summary was generated — click to refresh."
+  },
   "About": {
     "AppStoreBuild": "App Store Build",
     "DirectBuild": "Direct Build",
@@ -301,7 +342,8 @@
       "Output": "Output",
       "Pattern": "Pattern:",
       "Reading": "Reading file...",
-      "ShowDetails": "Show details"
+      "ShowDetails": "Show details",
+      "AndMoreLines": "... and {{count}} more lines"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} actions",
@@ -309,51 +351,14 @@
       "Completed_one": "{{count}} completed",
       "Completed_other": "{{count}} completed",
       "Running_one": "{{count}} running",
-      "Running_other": "{{count}} running"
+      "Running_other": "{{count}} running",
+      "Running": "{{count}} running",
+      "Completed": "{{count}} completed",
+      "Actions": "{{count}} actions"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Configure your API keys to use the AI Agent."
-  },
-  "agent": {
-    "fabLabel": "Ask AI Agent",
-    "panelLabel": "AI Agent",
-    "dockRight": "Dock to right",
-    "maximize": "Maximize",
-    "close": "Close"
-  },
-  "floatingPip": {
-    "minimize": "Minimize",
-    "maximize": "Maximize",
-    "restore": "Restore",
-    "close": "Close",
-    "exit": "Exit picture-in-picture"
-  },
-  "layout": {
-    "mode": {
-      "classic": "Classic",
-      "floating": "Floating"
-    },
-    "switchTooltip": {
-      "classic": "Switch to classic layout",
-      "floating": "Switch to floating layout"
-    },
-    "showPipTooltip": "Show picture-in-picture",
-    "announce": {
-      "classic": "Switched to classic layout",
-      "floating": "Switched to floating layout"
-    },
-    "introToast": "New: Floating layout available. Click the layout icon in the header to try it."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Preparing your recording…"
-    },
-    "error": {
-      "title": "We couldn't process this recording",
-      "body": "Check your API key or try again."
-    },
-    "disabled": "AI features are off. Enable them in Settings to see summaries and actions."
   },
   "App": {
     "FailedToEnableFlashback": "Failed to enable flashback: {{error}}",
@@ -364,18 +369,6 @@
     "FlashbackWithoutAudio": "Video flashback will run without audio until permissions are granted.",
     "RecordingPaused": "Recording paused",
     "UnknownError": "unknown error"
-  },
-  "PermissionTutorial": {
-    "Step1Title": "Welcome to SeaMeet",
-    "Step1Desc": "SeaMeet is a powerful screen and audio recording tool. To get started, we need your permission to record your screen.",
-    "Step2Title": "Screen Recording Permission",
-    "Step2Desc": "Your operating system requires explicit permission for any app to capture your screen. This is a privacy protection feature.",
-    "Step3Title": "How to Enable",
-    "Step3Desc": "Click the button below to open your system settings, then find SeaMeet in the Screen Recording list and toggle it ON.",
-    "Skip": "Skip for now",
-    "OpenSettings": "Open System Settings",
-    "FailedToOpenSettings": "Failed to open system settings",
-    "DontShowAgain": "Don't show again"
   },
   "Apps": {
     "All": "All apps",
@@ -434,21 +427,6 @@
     "RefreshMicrophoneList": "Refresh microphone list",
     "UnmuteMic": "Unmute Microphone"
   },
-  "RecordTab": {
-    "TapToRecord": "Tap to start recording",
-    "RecordWithPreamble": "Record with {{seconds}}s preamble",
-    "SaveLastInstead": "Save last {{seconds}}s instead",
-    "AutoDetectStatusOn": "watching for meetings",
-    "AutoDetectStatusOff": "off — tap to enable",
-    "FlashbackStatusOff": "off — tap to arm",
-    "FlashbackStatusCharging": "charging {{percent}}%",
-    "FlashbackStatusReady": "armed — {{seconds}}s {{type}} in RAM",
-    "LauncherPill": "Launcher",
-    "FloaterPill": "Floater",
-    "AutoDetectLabel": "Auto-detect",
-    "FlashbackLabel": "Flashback",
-    "RecentRecordings": "Recent recordings"
-  },
   "AutoDetectDrawer": {
     "Title": "Auto Detect",
     "Description": "Watches for meeting apps (Zoom, Teams, Meet…) and offers to record so you never have to remember to press start.",
@@ -459,6 +437,9 @@
     "RecentEmpty": "No detections yet.",
     "AdvancedSettings": "Advanced settings →",
     "LearnMore": "Learn more"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "First time? Here's how this works →"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO DETECT",
@@ -481,9 +462,6 @@
     "Tip2Desc": "Uses microphone activity, window titles, and browser URLs for accuracy",
     "Tip2Title": "Multiple Detection Methods",
     "Title": "Auto-Detect Meetings"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "First time? Here's how this works →"
   },
   "AutoRecording": {
     "BugReport": "See a bug? Report it to seameet@seasalt.ai",
@@ -682,7 +660,8 @@
       "TabLabel": "Devices",
       "Today": "today",
       "Yesterday": "yesterday",
-      "YourDevices": "Your Devices"
+      "YourDevices": "Your Devices",
+      "DaysAgo": "{{count}} days ago"
     },
     "FAQ": {
       "Title": "Frequently Asked Questions",
@@ -913,7 +892,12 @@
     "Starting": "Starting...",
     "UnknownApp": "Unknown App",
     "Copied": "Copied!",
-    "Copy": "Copy"
+    "Copy": "Copy",
+    "Clear": "Clear",
+    "Forward": "Forward",
+    "Refresh": "Refresh",
+    "Apply": "Apply",
+    "Undo": "Undo"
   },
   "DeletePrompt": {
     "Cancel": "Cancel",
@@ -946,6 +930,31 @@
     "MarkToolbarButton": "Marked Events",
     "Title": "Events"
   },
+  "ExternalChange": {
+    "Banner": "This file changed on disk while you were editing.",
+    "Reload": "Reload disk version",
+    "Keep": "Keep my version"
+  },
+  "FAB": {
+    "Label": "Quick actions",
+    "Stop": "Stop recording",
+    "Record": "Start recording",
+    "Screenshot": "Take screenshot",
+    "Agent": "AI agent",
+    "PickSource": "Pick a recording source",
+    "PickScreenshotSource": "Pick a screenshot source",
+    "SourceAudio": "Audio Only",
+    "SourceFullscreen": "Fullscreen",
+    "SourceWindow": "Window",
+    "SourceRegion": "Region",
+    "ScreenshotFullscreen": "Fullscreen",
+    "ScreenshotWindow": "Window",
+    "ScreenshotRegion": "Region",
+    "LiveTranscription": "Live transcription",
+    "ToggleLiveTranscription": "Toggle live transcription",
+    "RecordingInProgress": "Recording in progress…",
+    "OpenBoundNote": "Open the note this recording is attached to"
+  },
   "FileImport": {
     "BrowseFiles": "Browse Files",
     "DragDropFiles": "Drag and drop your audio, video, and image files here",
@@ -956,6 +965,23 @@
     "VideoImportCopying": "Copying video file...",
     "VideoImportSaving": "Saving video file...",
     "VideoUnsupported": "This video format may not be playable in the app. The file will still be imported."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Replace all {{count}} matches?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Find",
+    "AriaLabel": "Find and replace",
+    "CaseSensitive": "Match case",
+    "ClearSearch": "Clear",
+    "Previous": "Previous match",
+    "Next": "Next match",
+    "NoResults": "No results",
+    "ReplacePlaceholder": "Replace",
+    "WikiAiReadonly": "AI section is read-only — replace works in user section only",
+    "Replace": "Replace",
+    "ReplaceAll": "Replace all",
+    "CloseBar": "Close find/replace",
+    "WikiCounterSplit": "{{userCount}} in note + {{aiCount}} in AI section"
   },
   "FlashbackControls": {
     "AudioFlashback": "Audio Flashback",
@@ -980,7 +1006,10 @@
     "StatusOff": "Off — choose a mode below to arm.",
     "StatusCharging": "Charging {{percent}}%…",
     "StatusReady": "Ready — last {{seconds}}s {{type}}.",
-    "Types": { "audio": "audio", "screen": "screen" },
+    "Types": {
+      "audio": "audio",
+      "screen": "screen"
+    },
     "ModeLabel": "What to buffer",
     "ModeOff": "Off",
     "ModeAudio": "Audio",
@@ -1032,14 +1061,6 @@
     "Screen": "screen",
     "StartRecording": "Start Recording",
     "TakeScreenshot": "Take Screenshot"
-  },
-  "ScreenshotPanel": {
-    "SelectDisplay": "Select Display",
-    "PrimaryDisplay": "Primary Display",
-    "Display": "Display",
-    "SelectWindow": "Select Window",
-    "LoadingWindows": "Loading...",
-    "NoWindows": "No windows available"
   },
   "FlashbackIndicator": {
     "Buffering": "Buffering",
@@ -1264,10 +1285,25 @@
       "ActivityFlushHint": "Experimental. Every N ms during a long turn, nudges Gemini to process accumulated audio. Does not currently segment turns on native-audio; enabling it will cause the whole recording to land in a single un-finalized turn.",
       "ActivityFlushRequiresManualVad": "The periodic flush only takes effect when automatic VAD is disabled — the Gemini server rejects explicit activity control otherwise. Leave the toggle on and disable automatic VAD below to use it.",
       "Reset": "Reset all to defaults"
-    }
+    },
+    "SegmentCount": "{{count}} segments"
   },
   "GeminiTranscription": {
     "Title": "Live Transcription"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Notes",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Recording transcripts",
+    "SectionSummaries": "Recording summaries",
+    "SectionOcr": "Screenshot text",
+    "IndexingFallback": "Indexing — showing filename matches only",
+    "Placeholder": "Search across notes, wiki, and recordings…",
+    "SoFar": "so far",
+    "NoResults": "No matches"
+  },
+  "HelpPage": {
+    "Title": "Learn more about SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "Arm Flashback",
@@ -1283,6 +1319,45 @@
     "Detail": "SeaMeet requires macOS 14.2 (Sonoma) or later.\n\nSome features like per-app audio detection and meeting auto-start may not work.\n\nUpdate via System Settings > General > Software Update.",
     "ContinueAnyway": "Continue Anyway",
     "Quit": "Quit"
+  },
+  "MediaBlock": {
+    "Processing": "Processing…",
+    "SummaryReady": "Summary ready",
+    "Failed": "Failed",
+    "Tab": {
+      "Summary": "Summary",
+      "Transcript": "Transcript",
+      "Actions": "Actions",
+      "Decisions": "Decisions",
+      "Chapters": "Chapters",
+      "Description": "Description",
+      "Ocr": "OCR text"
+    },
+    "MoreActions": "More actions",
+    "Action": {
+      "ShowInFolder": "Show in folder",
+      "CopyEmbed": "Copy embed syntax",
+      "RerunAi": "Re-run AI",
+      "Detach": "Detach from note"
+    },
+    "AudioFallback": "Your browser does not support audio playback.",
+    "WaitingForPipeline": "Waiting for AI processing to finish…",
+    "PipelineFailed": "AI processing failed for this file.",
+    "NoAiContent": "AI processing finished without producing additional content.",
+    "NoSummary": "AI summary not generated yet.",
+    "Due": "due",
+    "Stage": {
+      "preparing": "Preparing…",
+      "uploading": "Uploading…",
+      "uploading-wait": "Processing upload…",
+      "analyzing": "Analyzing…",
+      "extracting": "Extracting…",
+      "saving": "Saving…",
+      "complete": "Complete",
+      "gathering": "Gathering…",
+      "reducing": "Refining…",
+      "writing": "Writing…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Action Items",
@@ -1315,7 +1390,8 @@
     "TranscriptionLanguage": "Transcription Language",
     "TranslationLanguage": "Translation Language",
     "UnknownSpeaker": "Speaker",
-    "WaitingForSpeech": "Waiting for speech..."
+    "WaitingForSpeech": "Waiting for speech...",
+    "SegmentCount": "{{count}} segments"
   },
   "MeetingDetail": {
     "Back": "← Back",
@@ -1332,20 +1408,6 @@
     "Untitled": "Untitled Meeting",
     "WsConnected": "WebSocket Connected",
     "WsDisconnected": "WebSocket Disconnected"
-  },
-  "MeetingsTab": {
-    "Download": "Download",
-    "DownloadAudio": "Download Audio",
-    "DownloadBoth": "Download Both",
-    "DownloadTxt": "Download .txt",
-    "Empty": "No meetings found",
-    "Error": "Failed to load meetings",
-    "Loading": "Loading meetings...",
-    "Retry": "Retry",
-    "SelectWorkspace": "Please select a workspace from the user menu to view meetings.",
-    "Title": "Meetings",
-    "Total": "total",
-    "Untitled": "Untitled Meeting"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tip: For browser meetings (Google Meet, Zoom, Teams), I can only detect the browser, not the specific website.",
@@ -1365,6 +1427,20 @@
     "StopRecording": "Stop Recording",
     "Yes": "Start Recording"
   },
+  "MeetingsTab": {
+    "Download": "Download",
+    "DownloadAudio": "Download Audio",
+    "DownloadBoth": "Download Both",
+    "DownloadTxt": "Download .txt",
+    "Empty": "No meetings found",
+    "Error": "Failed to load meetings",
+    "Loading": "Loading meetings...",
+    "Retry": "Retry",
+    "SelectWorkspace": "Please select a workspace from the user menu to view meetings.",
+    "Title": "Meetings",
+    "Total": "total",
+    "Untitled": "Untitled Meeting"
+  },
   "MinimizedView": {
     "ActionRequired": "Action Required (Auto-Record)",
     "AudioFlashbackCharged": "Audio flashback charged ({{duration}}s)",
@@ -1374,6 +1450,140 @@
     "ScreenFlashbackCharged": "Screen flashback charged ({{duration}}s)",
     "ScreenFlashbackCharging": "Screen flashback charging...",
     "ScreenRecording": "Screen recording ({{time}})"
+  },
+  "NoteEditor": {
+    "Placeholder": "Start typing or paste from clipboard…",
+    "Saving": "Saving…",
+    "Saved": "✓ Saved",
+    "SaveFailed": "Save failed",
+    "Editing": "Editing…",
+    "TitlePlaceholder": "Untitled note",
+    "TitleLabel": "Note title",
+    "RenameTooltip": "Click to rename",
+    "UntitledFallback": "Untitled note",
+    "Renaming": "Renaming…",
+    "LoadFailed": "Failed to load note",
+    "Bold": "Bold",
+    "Italic": "Italic",
+    "Code": "Code",
+    "Heading1": "Heading 1",
+    "Heading2": "Heading 2",
+    "BulletList": "Bullet list",
+    "OrderedList": "Numbered list",
+    "Link": "Link",
+    "LinkDialog": "Insert link",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Update",
+    "LinkAdd": "Add",
+    "LinkRemove": "Remove link",
+    "InsertWikilink": "Link to a note ([[ … ]])",
+    "SyncWiki": "Sync wiki",
+    "SyncWikiTooltip": "Update the wiki from this note now (instead of waiting for the auto-trigger)",
+    "SyncWikiCouldNotQueue": "Couldn't queue wiki update",
+    "SyncWikiQueued": "Queued…",
+    "SyncWikiRunning": "Syncing…",
+    "SyncWikiSuccess": "✓ Synced",
+    "SyncWikiError": "Sync failed",
+    "Strike": "Strikethrough",
+    "Heading3": "Heading 3",
+    "Highlight": "Highlight",
+    "Blockquote": "Blockquote",
+    "CodeBlock": "Code block",
+    "HorizontalRule": "Horizontal rule",
+    "TaskList": "Task list",
+    "InsertImage": "Insert image",
+    "InsertTable": "Insert table",
+    "ImageDialog": "Insert image",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "ImageAdd": "Insert",
+    "TableAddRowBefore": "Add row before",
+    "TableAddRowAfter": "Add row after",
+    "TableAddColumnBefore": "Add column before",
+    "TableAddColumnAfter": "Add column after",
+    "TableDeleteRow": "Delete row",
+    "TableDeleteColumn": "Delete column",
+    "TableDelete": "Delete table",
+    "Underline": "Underline",
+    "Undo": "Undo",
+    "Redo": "Redo",
+    "Synthesize": "AI summary",
+    "SynthesizeRunning": "Synthesizing…",
+    "SynthesizeTooltip": "Generate or refresh the AI summary for this note",
+    "SynthesizeChooseTemplate": "Choose a template for the AI summary"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Screenshot",
+      "Recording": "Recording",
+      "AddedTo": "added to",
+      "Open": "Open"
+    },
+    "WikiUpdateFailed": "Wiki update failed: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Summary · {{version}}",
+      "Updated": "✨ Summary updated · {{version}}",
+      "Jump": "Jump ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Choose template…",
+      "Label": "Synthesis options"
+    }
+  },
+  "NotesList": {
+    "NewNote": "New Note",
+    "JustNow": "just now",
+    "Yesterday": "Yesterday",
+    "Title": "Notes",
+    "EmptyTitle": "Start your first note",
+    "EmptySubtitle": "Recording is the superpower — add recordings and screenshots to any note.",
+    "MediaCount": "{{n}} attached media",
+    "ConfirmDelete": "Delete",
+    "DeleteNote": "Delete note"
+  },
+  "NotesTree": {
+    "Title": "Notes",
+    "NewNote": "New note",
+    "NewFolder": "New folder",
+    "NewFolderPrompt": "Folder name:",
+    "SortBy": "Sort by",
+    "SortManual": "Manual order",
+    "SortName": "Name (A → Z)",
+    "SortModified": "Modified (newest first)",
+    "CollapseAll": "Collapse all",
+    "SearchInTree": "Search in tree",
+    "FilterPlaceholder": "Filter notes…",
+    "DropToRoot": "Drop to move to root",
+    "MoveTo": "Move to…",
+    "MoveToRoot": "Move to root",
+    "Duplicate": "Duplicate",
+    "RevealInFinder": "Reveal in Finder",
+    "RevealInExplorer": "Reveal in File Explorer",
+    "CopyWikilink": "Copy wikilink",
+    "Pin": "Pin to top",
+    "Unpin": "Unpin",
+    "Rename": "Rename",
+    "Delete": "Delete",
+    "Open": "Open",
+    "Expand": "Expand",
+    "OpenInNewTab": "Open in new tab",
+    "ConfirmDeleteFolder": "Move folder \"{{name}}\" and everything in it to the OS trash?",
+    "RenameSucceeded": "Renamed",
+    "RenameWithRefs": "Renamed; updated {{count}} reference(s)",
+    "SortDefault": "Default (filesystem order)",
+    "ExpandAll": "Expand all",
+    "NewFolderPlaceholder": "New folder name…",
+    "QuickOpen": "Quick open  (⌘P)",
+    "CopyRelativePath": "Copy relative path",
+    "CopyFullPath": "Copy full path",
+    "UpdateWikiFromNote": "Update wiki from this note",
+    "WikiUpdateFailed": "Wiki update failed: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Pick a note",
+    "SelectFromList": "Select a note from the list, or start a new one.",
+    "NoNotes": "You have no notes yet — start your first one.",
+    "CollapseSidebar": "Hide notes sidebar",
+    "ExpandSidebar": "Show notes sidebar"
   },
   "OCRAutoCopy": {
     "Copied": "Extracted text copied to clipboard",
@@ -1387,7 +1597,29 @@
     "SettingsDesc": "Runs OCR after each screenshot and copies extracted text to clipboard",
     "SettingsLabel": "Auto-extract text (OCR) on screenshot"
   },
+  "OpenRecordingsFolder": "Open Recordings Folder",
+  "OpenRecordingsFolderDesc": "Open the default recordings folder",
   "Pause": "Pause",
+  "PermissionAlert": {
+    "Title": "Permission required",
+    "Description": "SeaMeet needs additional permission to continue.",
+    "OpenSettings": "Open System Settings",
+    "ClickToOpen": "Click to open settings",
+    "NoPermissionFullscreen": "Fullscreen recording needs Screen Recording permission.",
+    "NoPermissionWindow": "Window recording needs Screen Recording permission."
+  },
+  "PermissionTutorial": {
+    "Step1Title": "Welcome to SeaMeet",
+    "Step1Desc": "SeaMeet is a powerful screen and audio recording tool. To get started, we need your permission to record your screen.",
+    "Step2Title": "Screen Recording Permission",
+    "Step2Desc": "Your operating system requires explicit permission for any app to capture your screen. This is a privacy protection feature.",
+    "Step3Title": "How to Enable",
+    "Step3Desc": "Click the button below to open your system settings, then find SeaMeet in the Screen Recording list and toggle it ON.",
+    "Skip": "Skip for now",
+    "OpenSettings": "Open System Settings",
+    "FailedToOpenSettings": "Failed to open system settings",
+    "DontShowAgain": "Don't show again"
+  },
   "Permissions": {
     "AlwaysAutoRecord": "Always Auto Record",
     "AskEveryTime": "Ask Every Time",
@@ -1447,10 +1679,54 @@
     "CodecInfo": "Codec information",
     "MoreOptions": "More options"
   },
+  "PostUpdateModal": {
+    "Title": "Updated to v{{version}}",
+    "Description": "SeaMeet has been updated successfully. Here's what's new:",
+    "GotIt": "Got it"
+  },
+  "Premium": {
+    "AIAgent": "AI Agent",
+    "AIAgentDesc": "Live transcription and AI interaction are available with a subscription.",
+    "PostMeetingAI": "Post-Meeting AI",
+    "PostMeetingAIDesc": "Summaries, action items, and insights will be generated after the recording completes.",
+    "UnlockPremium": "Unlock with Premium",
+    "Upgrade": "Upgrade"
+  },
+  "QuickOpen": {
+    "Placeholder": "Start typing or paste from clipboard… Use [[ to link to another note",
+    "NoResults": "No matching notes",
+    "UnifiedPlaceholder": "Open a note or wiki page by name…",
+    "SectionNotes": "Notes",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Record Audio",
+  "RecordAudioDesc": "Start recording audio (mixed)",
+  "RecordFullscreen": "Record Full Screen",
+  "RecordFullscreenDesc": "Start recording full screen video",
+  "RecordRegion": "Snap a Region to Record",
+  "RecordRegionDesc": "Select a screen region to record",
+  "RecordTab": {
+    "TapToRecord": "Tap to start recording",
+    "RecordWithPreamble": "Record with {{seconds}}s preamble",
+    "SaveLastInstead": "Save last {{seconds}}s instead",
+    "AutoDetectStatusOn": "watching for meetings",
+    "AutoDetectStatusOff": "off — tap to enable",
+    "FlashbackStatusOff": "off — tap to arm",
+    "FlashbackStatusCharging": "charging {{percent}}%",
+    "FlashbackStatusReady": "armed — {{seconds}}s {{type}} in RAM",
+    "LauncherPill": "Launcher",
+    "FloaterPill": "Floater",
+    "AutoDetectLabel": "Auto-detect",
+    "FlashbackLabel": "Flashback",
+    "RecentRecordings": "Recent recordings"
+  },
   "Recording": {
     "Paused": "Paused",
     "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
+    "PreparingToRecord": "Preparing to record...",
+    "InProgress": "Recording in progress",
+    "WillBeAdded": "Audio will be added here when you click Stop",
+    "AttachingTo": "Attaching to {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Audio recording",
@@ -1501,13 +1777,18 @@
     "SearchRecordingsOrSnapshots": "Search recordings and snapshots",
     "ShowInFolder": "Show in folder"
   },
-  "PermissionAlert": {
-    "Title": "Permission required",
-    "Description": "SeaMeet needs additional permission to continue.",
-    "OpenSettings": "Open System Settings",
-    "ClickToOpen": "Click to open settings",
-    "NoPermissionFullscreen": "Fullscreen recording needs Screen Recording permission.",
-    "NoPermissionWindow": "Window recording needs Screen Recording permission."
+  "Regenerate": {
+    "Title": "Regenerate note summary",
+    "PickTemplate": "Pick a template:",
+    "Custom": "Or write custom instructions (overrides template):",
+    "CustomPlaceholder": "e.g. 'Focus on commitments to customer X, output as a one-page exec memo.'",
+    "SaveAsTemplate": "Save as a custom template",
+    "TemplateNamePlaceholder": "Template name",
+    "NameRequired": "Name required to save",
+    "OutputLanguageHint": "Output language follows Settings → AI Extraction & Summary",
+    "Submit": "Regenerate",
+    "AutoUpdate": "Auto-update on typing",
+    "AutoUpdateHint": "Re-runs the synthesis after substantial changes to this note (uses your AI quota)."
   },
   "RegionSelector": {
     "CaptureButton": "Capture Screen or Press Enter",
@@ -1551,6 +1832,14 @@
     "Refreshing": "Refreshing…",
     "Title": "Select a display",
     "Unknown": "Untitled display"
+  },
+  "ScreenshotPanel": {
+    "SelectDisplay": "Select Display",
+    "PrimaryDisplay": "Primary Display",
+    "Display": "Display",
+    "SelectWindow": "Select Window",
+    "LoadingWindows": "Loading...",
+    "NoWindows": "No windows available"
   },
   "ScreenshotProcessing": {
     "Analysis": "Analysis",
@@ -1609,6 +1898,20 @@
     "Sharing": "Sharing...",
     "ZeroBytes": "0 Bytes",
     "Info": "Stats"
+  },
+  "Search": {
+    "Placeholder": "Search… (⌘K)",
+    "Aria": "Search notes and wiki",
+    "GroupNotes": "Notes",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Recordings",
+    "GroupScreenshots": "Screenshots",
+    "Results": {
+      "Aria": "Search results"
+    },
+    "Loading": "Searching…",
+    "NoResults": "No results for \"{{query}}\"",
+    "AgentHint": "Try the AI agent for semantic queries."
   },
   "Settings": {
     "About": {
@@ -1735,6 +2038,13 @@
       "Flashback": "Flashback Recording",
       "Storage": "Storage"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (free, 20 calls/day)",
+      "FlashLiteFree": "Flash Lite (free, 500 calls/day)",
+      "Help": "AI updates pause automatically when this quota is exhausted, then resume.",
+      "Label": "Gemini quota tier",
+      "Paid": "Paid tier"
+    },
     "SettingsFileLocation": "Settings File Location",
     "Storage": {
       "Browse": "Browse...",
@@ -1793,6 +2103,15 @@
     "ClearSearch": "Clear search",
     "PrimaryNavigation": "Primary navigation"
   },
+  "Tabs": {
+    "CloseTab": "Close",
+    "RecordingHere": "Recording in progress here",
+    "OrphanTooltip": "This file was deleted on disk",
+    "ScrollLeft": "Scroll tabs left",
+    "ScrollRight": "Scroll tabs right"
+  },
+  "TakeScreenshot": "Take Screenshot",
+  "TakeScreenshotDesc": "Capture a region of the screen",
   "TakeSnapshot": {
     "GoToSnapshot": "Go to new snapshot",
     "Message": "Snapshot taken and saved to:",
@@ -1808,7 +2127,12 @@
     "OpenNavigationMenu": "Open navigation menu",
     "Record": "Record",
     "Recording": "Recording",
-    "Screenshot": "Screenshot"
+    "Screenshot": "Screenshot",
+    "GroupCapture": "Capture",
+    "GroupKnowledge": "Knowledge",
+    "Notes": "Notes",
+    "Wiki": "Wiki",
+    "GroupTools": "Tools"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet is still running in the system tray (bottom-right).",
@@ -1826,6 +2150,11 @@
     "Audio": "Audio",
     "System": "System Audio Output",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Renamed; updated {{count}} reference(s)",
+    "Action": "Undo",
+    "ToastNoRefs": "Renamed"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Install & Quit",
@@ -1850,19 +2179,6 @@
     "WhatsNew": "What's New:",
     "WhatsNewInVersion": "What's New in {{version}}?",
     "Restarting": "Restarting..."
-  },
-  "PostUpdateModal": {
-    "Title": "Updated to v{{version}}",
-    "Description": "SeaMeet has been updated successfully. Here's what's new:",
-    "GotIt": "Got it"
-  },
-  "Premium": {
-    "AIAgent": "AI Agent",
-    "AIAgentDesc": "Live transcription and AI interaction are available with a subscription.",
-    "PostMeetingAI": "Post-Meeting AI",
-    "PostMeetingAIDesc": "Summaries, action items, and insights will be generated after the recording completes.",
-    "UnlockPremium": "Unlock with Premium",
-    "Upgrade": "Upgrade"
   },
   "UserMenu": {
     "AboutSeaMeet": "About SeaMeet",
@@ -1962,8 +2278,117 @@
     "PointFlashback": "Flashback saves the last 10 seconds — so you never miss the first great line.",
     "GotIt": "Got it"
   },
-  "HelpPage": {
-    "Title": "Learn more about SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "AI-generated content",
+    "AIBadge": "AI Generated",
+    "Backlinks": "Backlinks",
+    "RelatedPages": "Related pages",
+    "BuiltFrom": "Built from",
+    "SelectPage": "Pick a page",
+    "SelectPageHint": "Select an entity, person, or topic from the sidebar to read what your wiki has learned.",
+    "LoadingPage": "AI is building this page…",
+    "LoadFailed": "Failed to load this wiki page.",
+    "AISection": "AI section",
+    "AIEmpty": "No AI content yet. Add a recording or screenshot to a note that mentions this entity, then run the wiki update.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Your wiki is empty",
+    "EmptySubtitle": "Record a meeting or write a note to start building your knowledge base.",
+    "UserSection": "Your notes",
+    "UserSectionTitle": "Your notes",
+    "UserSectionPlaceholder": "Add your own notes…",
+    "RefreshFromSources": "Refresh from sources",
+    "RefreshFromSourcesTooltip": "Refresh the AI section from {{count}} source note(s) right now",
+    "RefreshFromSourcesHint": "Click to refresh the AI section from {{count}} source note(s). Shift+click to also re-read source notes.",
+    "RefreshDisabledTooltip": "This wiki page has no source notes yet — generate it from a note first.",
+    "RefreshAriaLabel": "Refresh wiki page from source notes",
+    "RefreshError": "Refresh failed",
+    "Bulk": {
+      "Build": "Build wiki",
+      "BuildFromAll": "Build wiki from all notes",
+      "BuildFromFolder": "Build wiki from folder…",
+      "BuildFromSelection": "Build wiki from selection…",
+      "BuildFromFolderPrompt": "Folder path (relative to workspace):",
+      "BuildFromSelectionPrompt": "Comma-separated note filenames (relative to notes/):",
+      "ToastMessage": "{{count}} new notes detected. Build wiki?",
+      "BannerMessage": "{{count}} new notes since last build",
+      "BuildingExtracting": "Reading {{current}}/{{total}} notes",
+      "BuildingReducing": "Building {{current}}/{{total}} pages",
+      "Building": "Building wiki — {{stage}}",
+      "PausedFor": "rate limit: {{seconds}}s",
+      "Cancel": "Cancel",
+      "Cancelling": "Cancelling — finishing the current note…",
+      "Pause": "Pause",
+      "Continue": "Continue",
+      "Paused": "Paused — {{current}}/{{total}}",
+      "Restart": "Restart",
+      "NowReading": "Now reading: {{item}}",
+      "NowBuilding": "Now building: {{item}}",
+      "RecentList": "Recently processed",
+      "DoneSummary": "Wiki built — {{notes}} notes, {{pages}} pages",
+      "Resume": "Resume",
+      "ResumeAvailable": "A previous wiki build was interrupted at {{current}}/{{total}}. Resume?",
+      "PolishIndex": "Polish index",
+      "PolishIndexHint": "Add a narrative intro to the wiki index"
+    },
+    "Toolbar": {
+      "Overflow": "More wiki actions",
+      "BuildAllTooltip": "Rebuild wiki — incremental (only updates changed notes).",
+      "BuildAllRunning": "Building wiki from all notes — see banner below.",
+      "BuildAllAria": "Build wiki from all notes"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Auto-update wiki from notes",
+    "SettingsDesc": "Builds a knowledge base of entities, people, and topics from your notes and recordings. Off by default."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Search wiki pages by name…",
+    "NoResults": "No matching wiki pages"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "New wiki page",
+    "NewFolder": "New folder",
+    "NewFolderPlaceholder": "New folder name…",
+    "SortBy": "Sort by",
+    "SortDefault": "Default (filesystem order)",
+    "SortName": "Name (A → Z)",
+    "SortModified": "Modified (newest first)",
+    "CollapseAll": "Collapse all",
+    "ExpandAll": "Expand all",
+    "SearchInTree": "Filter in tree",
+    "FilterPlaceholder": "Filter pages…",
+    "DropToRoot": "Drop to move to wiki root",
+    "MoveToRoot": "Move to wiki root",
+    "Open": "Open",
+    "Rename": "Rename",
+    "Delete": "Delete",
+    "CopyWikilink": "Copy wikilink",
+    "CopyRelativePath": "Copy relative path",
+    "CopyFullPath": "Copy full path",
+    "ConfirmDeleteFile": "Move \"{{name}}\" to the OS trash? (Recoverable from Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Move folder \"{{name}}\" and everything in it to the OS trash?",
+    "Empty": "No wiki pages yet. The pipeline writes here when you record meetings.",
+    "SetDefaultEntity": "Set as default for new entity pages",
+    "SetDefaultPerson": "Set as default for new person pages",
+    "SetDefaultTopic": "Set as default for new topic pages",
+    "SetDefaultMeeting": "Set as default for new meeting pages",
+    "DefaultLabel": "Default for {{wikiKind}}",
+    "AIBadge": "AI-generated",
+    "UserBadge": "User-edited",
+    "QuickOpen": "Quick open  (⌘P)",
+    "ConflictBadge": "Conflicted copy",
+    "EmptyAiCurated": "AI populates this folder when your recordings or notes mention an entity, person, topic, or meeting. Open a note and click Sync Wiki to generate pages."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] is not in this workspace",
+    "Collision": "{{count}} notes share the basename {{name}}",
+    "DisambiguationTitle": "Pick which note to open",
+    "DisambiguationOpenAt": "in {{folder}}",
+    "SuggestEmpty": "No matching notes or wiki pages",
+    "BrokenTooltipSyncWiki": "This page hasn't been built yet — click Sync Wiki on this note to generate it.",
+    "SyncContextMenu": "Sync wiki",
+    "SyncToGenerate": "Sync wiki to generate this page"
   },
   "WindowPicker": {
     "Instruction": "Choose a window to capture for window recordings.",
@@ -1973,5 +2398,54 @@
     "Refreshing": "Refreshing…",
     "Title": "Select a window",
     "Unknown": "Untitled window"
+  },
+  "Workspace": {
+    "None": "No workspace",
+    "EmptyList": "No workspaces registered",
+    "Add": "Add workspace…",
+    "Remove": "Remove from SeaMeet",
+    "RemoveTooltip": "Remove from SeaMeet (files stay on disk)",
+    "ConfirmRemove": "Remove workspace \"{{name}}\"? Files on disk are not deleted; only the SeaMeet entry is removed.",
+    "Default": "Default"
+  },
+  "agent": {
+    "fabLabel": "Ask AI Agent",
+    "panelLabel": "AI Agent",
+    "dockRight": "Dock to right",
+    "maximize": "Maximize",
+    "close": "Close"
+  },
+  "aiBase": {
+    "preparing": {
+      "title": "Preparing your recording…"
+    },
+    "error": {
+      "title": "We couldn't process this recording",
+      "body": "Check your API key or try again."
+    },
+    "disabled": "AI features are off. Enable them in Settings to see summaries and actions."
+  },
+  "floatingPip": {
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close",
+    "exit": "Exit picture-in-picture"
+  },
+  "layout": {
+    "mode": {
+      "classic": "Classic",
+      "floating": "Floating"
+    },
+    "switchTooltip": {
+      "classic": "Switch to classic layout",
+      "floating": "Switch to floating layout"
+    },
+    "showPipTooltip": "Show picture-in-picture",
+    "announce": {
+      "classic": "Switched to classic layout",
+      "floating": "Switched to floating layout"
+    },
+    "introToast": "New: Floating layout available. Click the layout icon in the header to try it."
   }
 }

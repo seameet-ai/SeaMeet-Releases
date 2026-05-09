@@ -31,8 +31,8 @@
       "DefaultModel": "默认模型",
       "GetKeyLink": "从 Anthropic 控制台获取 API 密钥 →",
       "HideKey": "隐藏键",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
+      "InstallMac": "macOS / Linux：",
+      "InstallWin": "Windows（PowerShell）：",
       "ApiKeyTitle": "API密钥",
       "KeyInvalid": "密钥无效",
       "KeyPlaceholder": "sk-ant-...",
@@ -48,8 +48,8 @@
       "QuotaLoading": "加载配额...",
       "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
       "QuotaResetDate": "在 {{date}} 上重置",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration",
+      "Refresh": "重新检测 Claude",
+      "Remove": "移除 Claude 集成",
       "Saving": "保存...",
       "Section": "Claude API 密钥（Agent）",
       "ShowKey": "显示密钥",
@@ -67,27 +67,27 @@
       "InstallGuideLink": "入门指南",
       "InstallGuideSuffix": "进行安装，然后运行：",
       "NotDetected": "未检测到 — 请安装并认证：",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration",
+      "Refresh": "重新检测 Copilot",
+      "Remove": "移除 Copilot 集成",
       "Section": "GitHub Copilot"
     },
     "Provider": {
       "Detected": "已检测到",
       "Hint": "您也可以在聊天面板中按对话切换提供商。",
       "NotAvailable": "不可用",
-      "Preferred": "Preferred",
+      "Preferred": "首选",
       "Section": "首选代理提供商"
     },
     "ClearKey": "删除已保存的密钥",
     "EnableToggle": "启用人工智能驱动的摘要",
     "EnableToggleDesc": "需要免费的 Gemini API 密钥",
-    "DefaultModel": "Default Model",
+    "DefaultModel": "默认模型",
     "GeminiSection": "Gemini",
     "GetKeyLink": "从 Google AI Studio 获取免费的 API 密钥 →",
     "GroupTitle": "人工智能特点",
     "HideKey": "隐藏键",
     "KeyInvalid": "密钥无效",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
+    "KeyManagedInBilling": "API 密钥在「管理订阅 → API 密钥」中管理",
     "KeyNotConfigured": "没有配置密钥",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "••••••••（已保存）",
@@ -187,7 +187,7 @@
       "Summary": "概括",
       "Transcription": "逐字稿"
     },
-    "ScreenshotTabTitle": "AI Analysis",
+    "ScreenshotTabTitle": "AI 分析",
     "TabTitle": "人工智能总结",
     "Topics": "主题：",
     "Speakers": "演讲者",
@@ -208,6 +208,47 @@
       "Latest": "最新",
       "Live": "实时"
     }
+  },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ 已由 AI 更新",
+    "Title": "笔记摘要",
+    "Meta": "{{count}} 条录音 · 模板：{{tpl}}",
+    "CopyToEdit": "复制以编辑",
+    "Regenerate": "重新生成",
+    "Generating": "正在生成…",
+    "Provenance": "从 {{n}} 条录音生成",
+    "Error": "生成失败：{{err}}",
+    "RenameSuggested": "AI 建议 \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "常规会议",
+        "description": "决定、行动、讨论"
+      },
+      "brainstorm": {
+        "name": "头脑风暴",
+        "description": "想法、线索、未解问题"
+      },
+      "lecture": {
+        "name": "讲座 / 演讲",
+        "description": "论点、要点、问题、参考"
+      },
+      "oneonone": {
+        "name": "1:1 / 访谈",
+        "description": "主题、情绪、后续"
+      },
+      "sales": {
+        "name": "销售通话",
+        "description": "发现、异议、下一步、决策人"
+      },
+      "standup": {
+        "name": "站会 / 状态",
+        "description": "每人更新、阻碍、下一步"
+      }
+    },
+    "RegenerateTooltip": "使用相同模板重新生成",
+    "RegenerateChooseTemplate": "使用其他模板重新生成",
+    "Stale": "已过时 · 刷新",
+    "StaleTooltip": "此摘要生成后笔记已变动 — 点击以刷新。"
   },
   "About": {
     "AppStoreBuild": "App Store 构建",
@@ -301,7 +342,8 @@
       "Output": "输出",
       "Pattern": "图案：",
       "Reading": "正在读取文件...",
-      "ShowDetails": "显示详情"
+      "ShowDetails": "显示详情",
+      "AndMoreLines": "……另有 {{count}} 行"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} 操作",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} 已完成",
       "Completed_other": "{{count}} 已完成",
       "Running_one": "{{count}} 正在运行",
-      "Running_other": "{{count}} 正在运行"
+      "Running_other": "{{count}} 正在运行",
+      "Running": "运行中 {{count}} 个",
+      "Completed": "已完成 {{count}} 个",
+      "Actions": "{{count}} 个操作"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "配置您的 API 密钥以使用 AI 代理。"
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "正在准备您的录音…"
-    },
-    "error": {
-      "title": "我们无法处理此录音",
-      "body": "请检查您的 API 密钥或重试。"
-    },
-    "disabled": "AI 功能已关闭。请在设置中启用它们以查看摘要和操作。"
   },
   "App": {
     "FailedToEnableFlashback": "无法启用闪回：{{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "高级设置 →",
     "LearnMore": "了解更多"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "首次使用？看看它的工作原理 →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "自动检测",
     "Description": "自动检测会在你加入会议时自动开始录制，确保你不会忘记按下 录制。",
@@ -424,9 +462,6 @@
     "Tip2Desc": "使用麦克风活动、窗口标题和浏览器 URL 以确保检测的准确性",
     "Tip2Title": "多种检测方式",
     "Title": "自动检测会议"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "首次使用？看看它的工作原理 →"
   },
   "AutoRecording": {
     "BugReport": "看到错误？向 seameet@seasalt.ai 报告",
@@ -524,7 +559,7 @@
       "GeminiHelp": "获取免费密钥: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
-      "KeySaved": "Key saved (hidden)",
+      "KeySaved": "密钥已保存（已隐藏）",
       "GeminiUsage": "用途: 转录、摘要、实时转录。免费密钥受 Gemini 速率限制和配额约束。如果达到限制，请切换到 Google AI Studio 付费计划。",
       "NotConfigured": "未配置",
       "SaveContinue": "保存并继续",
@@ -596,7 +631,7 @@
         "Step4Mac": "macOS / Linux：",
         "Step4Win": "Windows：",
         "Step4WinReq": "需要 ",
-        "Step4GitWin": "Git for Windows",
+        "Step4GitWin": "Windows 版 Git",
         "Step4Auth": "运行：",
         "Step4AuthDesc": "（需要 Claude Pro 或 Max 计划）",
         "Step4Refresh": "点击下方的刷新以检测 Claude Code。",
@@ -619,13 +654,14 @@
       "LimitDescription": "SeaMeet Pro 同时最多可在 3 台设备上使用。请退出不使用的设备以释放名额。",
       "LimitTitle": "已达设备数量上限",
       "Loading": "正在加载设备...",
-      "NoDevices": "No devices registered",
+      "NoDevices": "未注册任何设备",
       "SigningOut": "正在退出...",
       "SignOut": "退出登录",
-      "TabLabel": "Devices",
+      "TabLabel": "设备",
       "Today": "今天",
       "Yesterday": "昨天",
-      "YourDevices": "Your Devices"
+      "YourDevices": "您的设备",
+      "DaysAgo": "{{count}} 天前"
     },
     "FAQ": {
       "Title": "常见问题",
@@ -669,15 +705,15 @@
       "Unknown": "出了点问题。请重试。"
     },
     "FreeNote": "免费计划: 仅录音，无 AI 功能，无需登录。无需订阅即可随时录音。",
-    "ComingSoon": "Coming soon",
+    "ComingSoon": "即将推出",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/month",
-        "Feature1": "AI transcription & summaries",
-        "Feature2": "Use your own Gemini & Claude API keys",
-        "Feature3": "Live transcription during meetings",
-        "Feature4": "AI-powered meeting questions & analysis",
+        "Price": "$7.99/月",
+        "Feature1": "AI 转录与摘要",
+        "Feature2": "使用您自己的 Gemini 与 Claude API 密钥",
+        "Feature3": "会议中的实时转录",
+        "Feature4": "AI 驱动的会议提问与分析",
         "InfoNote": "您需要完成2项设置：Google AI Studio（免费）和 GitHub（免费）或 Anthropic（付费）。结账后设置向导将引导您完成：",
         "ConfirmTitle": "订阅前确认",
         "ConfirmContinue": "继续结账",
@@ -690,14 +726,14 @@
       },
       "Desktop": {
         "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
+        "Price": "$15.99/月",
+        "Feature1": "包含 BYOK Pro 的全部功能",
+        "Feature2": "内置 AI——无需 API 密钥",
+        "Feature3": "优先支持",
+        "Feature4": "高级分析"
       },
       "Free": {
-        "Name": "Free",
+        "Name": "免费",
         "Price": "$0",
         "Feature1": "仅录音",
         "Feature2": "无 AI 功能",
@@ -706,11 +742,11 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
-        "Feature2": "Cloud sync across devices",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Price": "$25.99/月",
+        "Feature1": "包含 Desktop Pro 的全部功能",
+        "Feature2": "跨设备云同步",
+        "Feature3": "团队协作功能",
+        "Feature4": "共享会议库"
       }
     },
     "Privacy": {
@@ -783,14 +819,14 @@
       "CancelNotice": "订阅结束日期 {{date}}",
       "CancelPendingNotice": "您的订阅将于 {{date}} 到期。在此之前 AI 功能将继续可用。",
       "EndsOn": "{{date}} 到期",
-      "DevOverride": "(Dev Override)",
+      "DevOverride": "（开发覆盖）",
       "Loading": "加载中...",
       "Manage": "管理订阅",
       "None": "无订阅",
       "PastDue": "逾期未付",
       "Plan": "计划",
       "Reactivate": "重新激活",
-      "SignIn": "Sign in to manage subscription",
+      "SignIn": "登录以管理订阅",
       "Trial": "试用"
     },
     "SignInToSubscribe": "登录以订阅:",
@@ -838,7 +874,7 @@
     "Close": "关闭",
     "Configure": "配置",
     "Delete": "删除",
-    "Dismiss": "Dismiss",
+    "Dismiss": "忽略",
     "Done": "完成",
     "Expand": "展开",
     "FileNameCopiedWithRenameHint": "{{fileName}} 已复制到剪贴板。双击以更改文件名。",
@@ -856,7 +892,12 @@
     "Starting": "正在启动……",
     "UnknownApp": "未知应用",
     "Copied": "已复制！",
-    "Copy": "复制"
+    "Copy": "复制",
+    "Clear": "清除",
+    "Forward": "前进",
+    "Refresh": "刷新",
+    "Apply": "应用",
+    "Undo": "撤销"
   },
   "DeletePrompt": {
     "Cancel": "取消",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "标记事件",
     "Title": "事件"
   },
+  "ExternalChange": {
+    "Banner": "在你编辑时,该文件在磁盘上发生了更改。",
+    "Reload": "重新加载磁盘版本",
+    "Keep": "保留我的版本"
+  },
+  "FAB": {
+    "Label": "快捷操作",
+    "Stop": "停止录制",
+    "Record": "开始录制",
+    "Screenshot": "截屏",
+    "Agent": "AI 助手",
+    "PickSource": "选择录制来源",
+    "PickScreenshotSource": "选择截屏来源",
+    "SourceAudio": "仅音频",
+    "SourceFullscreen": "全屏",
+    "SourceWindow": "窗口",
+    "SourceRegion": "区域",
+    "ScreenshotFullscreen": "全屏",
+    "ScreenshotWindow": "窗口",
+    "ScreenshotRegion": "区域",
+    "LiveTranscription": "实时转录",
+    "ToggleLiveTranscription": "切换实时转录",
+    "RecordingInProgress": "正在录制…",
+    "OpenBoundNote": "打开此录音所附的笔记"
+  },
   "FileImport": {
     "BrowseFiles": "浏览文件",
     "DragDropFiles": "在此处拖放您的音频、视频和图片文件",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "正在复制视频文件...",
     "VideoImportSaving": "正在保存视频文件...",
     "VideoUnsupported": "此视频格式可能无法在应用中播放。文件仍将被导入。"
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "替换全部 {{count}} 处匹配?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "查找",
+    "AriaLabel": "查找和替换",
+    "CaseSensitive": "区分大小写",
+    "ClearSearch": "清除",
+    "Previous": "上一个结果",
+    "Next": "下一个结果",
+    "NoResults": "没有结果",
+    "ReplacePlaceholder": "替换",
+    "WikiAiReadonly": "AI 部分只读 — 替换仅在用户部分生效",
+    "Replace": "替换",
+    "ReplaceAll": "全部替换",
+    "CloseBar": "关闭查找/替换",
+    "WikiCounterSplit": "笔记中 {{userCount}} 处 + AI 部分中 {{aiCount}} 处"
   },
   "FlashbackControls": {
     "AudioFlashback": "音频闪回",
@@ -1042,7 +1125,7 @@
         "BestFor": "录制会议、电话、语音对话",
         "Buffer": "30秒（固定）",
         "Captures": "麦克风和/或系统音频",
-        "Memory": "~30-50 MB RAM",
+        "Memory": "约 30-50 MB 内存",
         "Title": "音频闪回"
       },
       "Title": "两种闪回模式",
@@ -1050,7 +1133,7 @@
         "BestFor": "演示、游戏亮点、屏幕共享会议、视觉内容",
         "Buffer": "10 秒、30 秒、60 秒、90 秒或 120 秒",
         "Captures": "屏幕视频+音频",
-        "Memory": "50-600 MB RAM",
+        "Memory": "50-600 MB 内存",
         "Title": "视频闪回"
       }
     },
@@ -1202,10 +1285,25 @@
       "ActivityFlushHint": "在长段落中每 N 毫秒提示 Gemini 处理累积的音频,防止独白 / 演讲时转录停滞。需要先关闭自动 VAD。",
       "ActivityFlushRequiresManualVad": "周期性刷新仅在自动 VAD 关闭时生效 — 自动 VAD 启用时服务器会拒绝显式活动控制。保留此开关启用并在下方关闭自动 VAD。",
       "Reset": "全部重置为默认值"
-    }
+    },
+    "SegmentCount": "{{count}} 段"
   },
   "GeminiTranscription": {
     "Title": "实时转录"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "笔记",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "录音转录",
+    "SectionSummaries": "录音摘要",
+    "SectionOcr": "截图文字",
+    "IndexingFallback": "建立索引中 — 仅显示文件名匹配",
+    "Placeholder": "在笔记、Wiki 和录音中搜索…",
+    "SoFar": "当前",
+    "NoResults": "未找到匹配"
+  },
+  "HelpPage": {
+    "Title": "了解更多关于 SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "开启回放",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet 需要 macOS 14.2（Sonoma）或更高版本。\n\n部分功能（如单应用音频检测和会议自动开始）可能无法使用。\n\n请前往“系统设置”>“通用”>“软件更新”进行更新。",
     "ContinueAnyway": "仍然继续",
     "Quit": "退出"
+  },
+  "MediaBlock": {
+    "Processing": "处理中…",
+    "SummaryReady": "摘要已就绪",
+    "Failed": "失败",
+    "Tab": {
+      "Summary": "摘要",
+      "Transcript": "转录",
+      "Actions": "行动项",
+      "Decisions": "决策",
+      "Chapters": "章节",
+      "Description": "描述",
+      "Ocr": "OCR 文本"
+    },
+    "MoreActions": "更多操作",
+    "Action": {
+      "ShowInFolder": "在文件夹中显示",
+      "CopyEmbed": "复制嵌入语法",
+      "RerunAi": "重新运行 AI",
+      "Detach": "从笔记中分离"
+    },
+    "AudioFallback": "您的浏览器不支持音频播放。",
+    "WaitingForPipeline": "等待 AI 处理完成…",
+    "PipelineFailed": "此文件的 AI 处理失败。",
+    "NoAiContent": "AI 处理已完成，但未生成额外内容。",
+    "NoSummary": "尚未生成 AI 摘要。",
+    "Due": "截止",
+    "Stage": {
+      "preparing": "准备中…",
+      "uploading": "上传中…",
+      "uploading-wait": "处理上传中…",
+      "analyzing": "分析中…",
+      "extracting": "提取中…",
+      "saving": "保存中…",
+      "complete": "已完成",
+      "gathering": "收集中…",
+      "reducing": "优化中…",
+      "writing": "写入中…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "行动项目",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "转录语言",
     "TranslationLanguage": "翻译语言",
     "UnknownSpeaker": "扬声器",
-    "WaitingForSpeech": "等待语音输入..."
+    "WaitingForSpeech": "等待语音输入...",
+    "SegmentCount": "{{count}} 段"
   },
   "MeetingDetail": {
     "Back": "← 返回",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "屏幕闪退充电...",
     "ScreenRecording": "屏幕录制 ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "开始输入或从剪贴板粘贴…",
+    "Saving": "保存中…",
+    "Saved": "✓ 已保存",
+    "SaveFailed": "保存失败",
+    "Editing": "编辑中…",
+    "TitlePlaceholder": "无标题笔记",
+    "TitleLabel": "笔记标题",
+    "RenameTooltip": "点击重命名",
+    "UntitledFallback": "无标题笔记",
+    "Renaming": "重命名中…",
+    "LoadFailed": "无法加载笔记",
+    "Bold": "粗体",
+    "Italic": "斜体",
+    "Code": "代码",
+    "Heading1": "标题 1",
+    "Heading2": "标题 2",
+    "BulletList": "项目符号列表",
+    "OrderedList": "编号列表",
+    "Link": "链接",
+    "LinkDialog": "插入链接",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "更新",
+    "LinkAdd": "添加",
+    "LinkRemove": "移除链接",
+    "InsertWikilink": "链接到笔记（[[ … ]]）",
+    "SyncWiki": "同步 wiki",
+    "SyncWikiTooltip": "立即从这篇笔记更新 wiki（无需等待自动触发）",
+    "SyncWikiCouldNotQueue": "无法将 wiki 更新加入队列",
+    "SyncWikiQueued": "已排队…",
+    "SyncWikiRunning": "同步中…",
+    "SyncWikiSuccess": "✓ 已同步",
+    "SyncWikiError": "同步失败",
+    "Blockquote": "引用",
+    "CodeBlock": "代码块",
+    "Heading3": "标题 3",
+    "Highlight": "高亮",
+    "HorizontalRule": "水平线",
+    "ImageAdd": "插入",
+    "ImageDialog": "插入图片",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "插入图片",
+    "InsertTable": "插入表格",
+    "Strike": "删除线",
+    "TableAddColumnAfter": "在后面添加列",
+    "TableAddColumnBefore": "在前面添加列",
+    "TableAddRowAfter": "在后面添加行",
+    "TableAddRowBefore": "在前面添加行",
+    "TableDelete": "删除表格",
+    "TableDeleteColumn": "删除列",
+    "TableDeleteRow": "删除行",
+    "TaskList": "任务列表",
+    "Redo": "重做",
+    "Underline": "下划线",
+    "Undo": "撤销",
+    "Synthesize": "AI 摘要",
+    "SynthesizeRunning": "生成中…",
+    "SynthesizeTooltip": "为此笔记生成或刷新 AI 摘要",
+    "SynthesizeChooseTemplate": "为 AI 摘要选择模板"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "截图",
+      "Recording": "录音",
+      "AddedTo": "已添加到",
+      "Open": "打开"
+    },
+    "WikiUpdateFailed": "Wiki更新失败：{{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ 摘要 · {{version}}",
+      "Updated": "✨ 摘要已更新 · {{version}}",
+      "Jump": "跳转 ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "选择模板…",
+      "Label": "摘要选项"
+    }
+  },
+  "NotesList": {
+    "NewNote": "新建笔记",
+    "JustNow": "刚刚",
+    "Yesterday": "昨天",
+    "Title": "笔记",
+    "EmptyTitle": "开始您的第一篇笔记",
+    "EmptySubtitle": "录制是核心功能 — 将录音和截图添加到任意笔记中。",
+    "MediaCount": "{{n}} 个附件",
+    "ConfirmDelete": "删除",
+    "DeleteNote": "删除笔记"
+  },
+  "NotesTree": {
+    "Title": "笔记",
+    "NewNote": "新建笔记",
+    "NewFolder": "新建文件夹",
+    "NewFolderPrompt": "文件夹名称：",
+    "SortBy": "排序方式",
+    "SortManual": "手动排序",
+    "SortName": "名称（A → Z）",
+    "SortModified": "修改时间（最新在前）",
+    "CollapseAll": "全部收起",
+    "SearchInTree": "在树中搜索",
+    "FilterPlaceholder": "筛选笔记…",
+    "DropToRoot": "拖到此处移到根目录",
+    "MoveTo": "移动到…",
+    "MoveToRoot": "移到根目录",
+    "Duplicate": "复制",
+    "RevealInFinder": "在 Finder 中显示",
+    "RevealInExplorer": "在文件资源管理器中显示",
+    "CopyWikilink": "复制 Wiki 链接",
+    "Pin": "置顶",
+    "Unpin": "取消置顶",
+    "Rename": "重命名",
+    "Delete": "删除",
+    "Open": "打开",
+    "Expand": "展开",
+    "OpenInNewTab": "在新标签页中打开",
+    "ConfirmDeleteFolder": "删除文件夹\"{{name}}\"及其全部内容？",
+    "RenameSucceeded": "已重命名",
+    "RenameWithRefs": "已重命名；更新了 {{count}} 处引用",
+    "SortDefault": "默认（文件系统顺序）",
+    "ExpandAll": "全部展开",
+    "NewFolderPlaceholder": "新文件夹名称…",
+    "QuickOpen": "快速打开  (⌘P)",
+    "CopyRelativePath": "复制相对路径",
+    "CopyFullPath": "复制完整路径",
+    "UpdateWikiFromNote": "从此笔记更新 Wiki",
+    "WikiUpdateFailed": "Wiki 更新失败：{{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "选择一篇笔记",
+    "SelectFromList": "从列表中选择一篇笔记，或新建一篇。",
+    "NoNotes": "您还没有任何笔记 — 开始第一篇吧。",
+    "CollapseSidebar": "隐藏笔记侧栏",
+    "ExpandSidebar": "显示笔记侧栏"
+  },
   "OCRAutoCopy": {
     "Copied": "提取的文字已复制到剪贴板",
     "Error": "文字提取失败",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "每次截图后运行 OCR 并将提取的文字复制到剪贴板",
     "SettingsLabel": "截图时自动提取文字（OCR）"
   },
+  "OpenRecordingsFolder": "打开录音文件夹",
+  "OpenRecordingsFolderDesc": "打开默认录音文件夹",
   "Pause": "暂停",
   "PermissionAlert": {
     "Title": "需要权限",
@@ -1379,8 +1653,8 @@
       "Analyzing": "分析中",
       "Extracting": "提取结果",
       "Saving": "保存工件",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "准备图像",
+      "AnalyzingImage": "分析图像"
     }
   },
   "Player": {
@@ -1389,13 +1663,13 @@
     "Play": "玩",
     "PlaybackSpeed": "播放速度",
     "SkipBackward10": "-10秒",
-    "SkipBackward10Short": "-10s",
+    "SkipBackward10Short": "-10秒",
     "SkipBackward30": "-30秒",
-    "SkipBackward30Short": "-30s",
+    "SkipBackward30Short": "-30秒",
     "SkipForward10": "+10 秒",
-    "SkipForward10Short": "+10s",
+    "SkipForward10Short": "+10秒",
     "SkipForward30": "+30 秒",
-    "SkipForward30Short": "+30s",
+    "SkipForward30Short": "+30秒",
     "TakeSnapshot": "拍摄快照",
     "ToggleFullscreen": "切换全屏",
     "Unmute": "取消静音"
@@ -1411,13 +1685,26 @@
     "GotIt": "知道了"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "AI 助手",
     "AIAgentDesc": "实时转录和AI交互需要订阅才能使用。",
     "PostMeetingAI": "会后AI",
     "PostMeetingAIDesc": "录制完成后将生成摘要、待办事项和见解。",
     "UnlockPremium": "解锁 Premium",
     "Upgrade": "升级"
   },
+  "QuickOpen": {
+    "Placeholder": "开始输入或从剪贴板粘贴… 使用 [[ 链接到另一篇笔记",
+    "NoResults": "没有匹配的笔记",
+    "UnifiedPlaceholder": "按名称打开笔记或 Wiki 页面…",
+    "SectionNotes": "笔记",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "录制音频",
+  "RecordAudioDesc": "开始录制音频（混音）",
+  "RecordFullscreen": "录制全屏",
+  "RecordFullscreenDesc": "开始录制全屏视频",
+  "RecordRegion": "选区域录制",
+  "RecordRegionDesc": "选择屏幕区域进行录制",
   "RecordTab": {
     "TapToRecord": "点按开始录制",
     "RecordWithPreamble": "带 {{seconds}} 秒前奏录制",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "已暂停",
     "Preparing": "准备中",
-    "PreparingToRecord": "准备录音中..."
+    "PreparingToRecord": "准备录音中...",
+    "InProgress": "正在录音",
+    "WillBeAdded": "点击停止后，音频将在此处添加",
+    "AttachingTo": "正在附加到 {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "录音",
@@ -1487,26 +1777,39 @@
     "SearchRecordingsOrSnapshots": "搜索录制和快照",
     "ShowInFolder": "在文件夹中显示"
   },
+  "Regenerate": {
+    "Title": "重新生成笔记摘要",
+    "PickTemplate": "选择模板：",
+    "Custom": "或填写自定义指令（覆盖模板）：",
+    "CustomPlaceholder": "例如：「聚焦客户 X 的承诺事项，以一页高管备忘录的形式输出。」",
+    "SaveAsTemplate": "另存为自定义模板",
+    "TemplateNamePlaceholder": "模板名称",
+    "NameRequired": "保存需要填写名称",
+    "OutputLanguageHint": "输出语言遵循设置 → AI 提取与摘要",
+    "Submit": "重新生成",
+    "AutoUpdate": "输入时自动更新",
+    "AutoUpdateHint": "当本笔记发生明显变化后重新生成摘要（会消耗 AI 配额）。"
+  },
   "RegionSelector": {
     "CaptureButton": "捕获屏幕或按 Enter 键",
     "ConfirmButton": "确认选择",
     "Monitor": "监视器",
     "PrimaryMonitor": "主监视器",
     "StartRecording": "开始录音",
-    "Coordinates": "X: {{x}}, Y: {{y}}",
+    "Coordinates": "X：{{x}}，Y：{{y}}",
     "Dimension": "{{width}} × {{height}}",
     "Selected": "已选",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "PresetFreeform": "自由比例",
+    "Preset1619": "16:9 横向",
+    "Preset43": "4:3 横向",
+    "Preset2119": "21:9 超宽",
+    "Preset916": "9:16 竖向",
+    "Preset34": "3:4 竖向",
+    "Preset11": "1:1 正方形",
+    "ShortcutCancel": "取消",
+    "ShortcutCapture": "截取",
+    "ShortcutConfirm": "确认",
+    "AspectRatio": "宽高比"
   },
   "Resume": "恢复",
   "RingMenu": {
@@ -1559,9 +1862,9 @@
     "DescribeSub": "这张截图里有什么？",
     "Description": "描述",
     "ExtractedText": "提取的文本",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
+    "NoCustom": "向我提任何关于此图片的问题。",
+    "NoDescription": "暂无描述。",
+    "NoOcr": "暂无提取的文本。",
     "Ocr": "提取文本（OCR）",
     "OcrSub": "读取所有可见文本",
     "PipelineError": "AI处理失败。请再试一次。",
@@ -1584,7 +1887,7 @@
     "CopiedToClipboard": "复制了！",
     "CopyFailed": "无法将屏幕截图复制到剪贴板",
     "CopyToClipboard": "复制到剪贴板",
-    "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
+    "CopyToClipboardWithHint": "{{action}}（Ctrl/Cmd+C）",
     "Dimensions": "方面",
     "FileSize": "文件大小",
     "OpenInSystemViewer": "在系统查看器中打开",
@@ -1593,8 +1896,22 @@
     "ShareCompleted": "分享完成",
     "ShareFailed": "此浏览器不支持共享。手动打开截图进行分享。",
     "Sharing": "分享...",
-    "ZeroBytes": "0 Bytes",
-    "Info": "Stats"
+    "ZeroBytes": "0 字节",
+    "Info": "统计"
+  },
+  "Search": {
+    "Placeholder": "搜索… (⌘K)",
+    "Aria": "搜索笔记和知识库",
+    "GroupNotes": "笔记",
+    "GroupWiki": "知识库",
+    "GroupRecordings": "录音",
+    "GroupScreenshots": "截图",
+    "Results": {
+      "Aria": "搜索结果"
+    },
+    "Loading": "搜索中…",
+    "NoResults": "未找到“{{query}}”的结果",
+    "AgentHint": "尝试使用 AI 助手进行语义搜索。"
   },
   "Settings": {
     "About": {
@@ -1721,6 +2038,13 @@
       "Flashback": "回放录制",
       "Storage": "存储"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest（免费，每天 20 次调用）",
+      "FlashLiteFree": "Flash Lite（免费，每天 500 次调用）",
+      "Help": "当此配额耗尽时，AI 更新会自动暂停，之后再恢复。",
+      "Label": "Gemini 配额等级",
+      "Paid": "付费等级"
+    },
     "SettingsFileLocation": "设置文件位置",
     "Storage": {
       "Browse": "浏览",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "清除搜索",
     "PrimaryNavigation": "主要导航"
   },
+  "Tabs": {
+    "CloseTab": "关闭",
+    "RecordingHere": "正在此处录音",
+    "OrphanTooltip": "此文件已从磁盘删除",
+    "ScrollLeft": "向左滚动标签页",
+    "ScrollRight": "向右滚动标签页"
+  },
+  "TakeScreenshot": "截屏",
+  "TakeScreenshotDesc": "截取屏幕的某个区域",
   "TakeSnapshot": {
     "GoToSnapshot": "跳转到新快照",
     "Message": "已拍摄快照，已保存到：",
@@ -1786,15 +2119,20 @@
     "Title": "已拍摄快照"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "智能助手",
     "CloseNavigationMenu": "关闭导航菜单",
     "Files": "文件",
     "MainNavigation": "主导航",
     "Meetings": "会议",
     "OpenNavigationMenu": "打开导航菜单",
-    "Record": "记录",
-    "Recording": "记录",
-    "Screenshot": "截图"
+    "Record": "录制",
+    "Recording": "录制中",
+    "Screenshot": "截图",
+    "GroupCapture": "捕获",
+    "GroupKnowledge": "知识",
+    "Notes": "笔记",
+    "Wiki": "知识库",
+    "GroupTools": "工具"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet 仍在系统托盘中运行（右下角）。",
@@ -1812,6 +2150,11 @@
     "Audio": "音频",
     "System": "系统音频输出",
     "Video": "视频"
+  },
+  "UndoRename": {
+    "Toast": "已重命名;更新了 {{count}} 处引用",
+    "Action": "撤销",
+    "ToastNoRefs": "已重命名"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "安装和退出",
@@ -1865,11 +2208,11 @@
       "WikiDesc": "查看 SeaMeet 维基以获取文档和指南。"
     },
     "KeyboardShortcuts": "键盘快捷键",
-    "AccountSignedIn": "Signed in",
+    "AccountSignedIn": "已登录",
     "SeaMeetSignedIn": "SeaMeet：已登录",
     "SeaMeetSignedOut": "SeaMeet：尚未登录",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
+    "SeaMeetSignIn": "SeaMeet 登录",
+    "SeaMeetSignOut": "SeaMeet 注销",
     "SignIn": "登录",
     "SignOut": "登出",
     "Workspaces": "工作区",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "回溯保存最后 10 秒——让你不错过开场的那句精彩。",
     "GotIt": "知道了"
   },
-  "HelpPage": {
-    "Title": "了解更多关于 SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "AI 生成的内容",
+    "AIBadge": "AI 生成",
+    "Backlinks": "反向链接",
+    "RelatedPages": "相关页面",
+    "BuiltFrom": "构建自",
+    "SelectPage": "选择一个页面",
+    "SelectPageHint": "从侧边栏选择实体、人物或主题，查看您的知识库已学到的内容。",
+    "LoadingPage": "AI 正在构建此页面…",
+    "LoadFailed": "无法加载此知识库页面。",
+    "AISection": "AI 区块",
+    "AIEmpty": "暂无 AI 内容。将录音或截图添加到提及此实体的笔记中，然后运行知识库更新。",
+    "SidebarTitle": "知识库",
+    "EmptyTitle": "您的知识库为空",
+    "EmptySubtitle": "录制一场会议或撰写一篇笔记，开始构建您的知识库。",
+    "UserSection": "您的笔记",
+    "UserSectionTitle": "您的笔记",
+    "UserSectionPlaceholder": "添加您自己的笔记…",
+    "RefreshFromSources": "从源刷新",
+    "RefreshFromSourcesTooltip": "立即从 {{count}} 个来源笔记刷新 AI 部分",
+    "RefreshFromSourcesHint": "点击从 {{count}} 个来源笔记刷新 AI 部分。Shift+点击也会重新读取来源笔记。",
+    "RefreshDisabledTooltip": "此 Wiki 页尚无来源笔记 — 请先从笔记生成。",
+    "RefreshAriaLabel": "从来源笔记刷新 Wiki 页",
+    "RefreshError": "刷新失败",
+    "Bulk": {
+      "Build": "构建维基",
+      "BuildFromAll": "从所有笔记构建维基",
+      "BuildFromFolder": "从文件夹构建维基…",
+      "BuildFromSelection": "从选定项构建维基…",
+      "ToastMessage": "检测到 {{count}} 条新笔记。构建维基?",
+      "BannerMessage": "上次构建以来有 {{count}} 条新笔记",
+      "BuildingExtracting": "正在读取 {{current}}/{{total}} 条笔记",
+      "BuildingReducing": "正在构建 {{current}}/{{total}} 个页面",
+      "Building": "正在构建维基 — {{stage}}",
+      "PausedFor": "速率限制：{{seconds}} 秒",
+      "Cancel": "取消",
+      "Cancelling": "正在取消 — 正在完成当前笔记…",
+      "Pause": "暂停",
+      "Continue": "继续",
+      "Paused": "已暂停 — {{current}}/{{total}}",
+      "Restart": "重新开始",
+      "NowReading": "正在读取：{{item}}",
+      "NowBuilding": "正在构建：{{item}}",
+      "RecentList": "最近处理",
+      "DoneSummary": "维基已构建 — {{notes}} 条笔记，{{pages}} 个页面",
+      "Resume": "继续",
+      "ResumeAvailable": "上次维基构建在 {{current}}/{{total}} 处中断。继续?",
+      "PolishIndex": "润色索引",
+      "PolishIndexHint": "为维基索引添加叙事性简介",
+      "BuildFromFolderPrompt": "文件夹路径（相对于工作区）：",
+      "BuildFromSelectionPrompt": "逗号分隔的笔记文件名（相对于 notes/）："
+    },
+    "Toolbar": {
+      "Overflow": "更多维基操作",
+      "BuildAllTooltip": "从所有笔记构建维基（增量式 — 仅更新源笔记发生变化的页面）。",
+      "BuildAllRunning": "正在从所有笔记构建维基 — 请查看下方横幅。",
+      "BuildAllAria": "从所有笔记构建维基"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "根据笔记自动更新知识库",
+    "SettingsDesc": "根据您的笔记与录音构建实体、人物和主题的知识库。默认关闭。"
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "按名称搜索 wiki 页面…",
+    "NoResults": "没有匹配的 wiki 页面"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "新建 wiki 页面",
+    "NewFolder": "新建文件夹",
+    "NewFolderPlaceholder": "文件夹名称…",
+    "SortBy": "排序方式",
+    "SortDefault": "默认（文件系统顺序）",
+    "SortName": "名称（A → Z）",
+    "SortModified": "修改时间（最新在前）",
+    "CollapseAll": "全部收起",
+    "ExpandAll": "全部展开",
+    "SearchInTree": "在树中筛选",
+    "FilterPlaceholder": "筛选页面…",
+    "DropToRoot": "拖到此处移到 wiki 根目录",
+    "MoveToRoot": "移到 wiki 根目录",
+    "Open": "打开",
+    "Rename": "重命名",
+    "Delete": "删除",
+    "CopyWikilink": "复制 Wiki 链接",
+    "CopyRelativePath": "复制相对路径",
+    "CopyFullPath": "复制完整路径",
+    "ConfirmDeleteFile": "将\"{{name}}\"移至系统回收站？（可从 Finder / 资源管理器恢复。）",
+    "ConfirmDeleteFolder": "将文件夹\"{{name}}\"及其所有内容移至系统回收站？",
+    "Empty": "尚无 wiki 页面。录制会议后，AI 流水线会在此写入内容。",
+    "SetDefaultEntity": "设为新建实体页面的默认位置",
+    "SetDefaultPerson": "设为新建人物页面的默认位置",
+    "SetDefaultTopic": "设为新建主题页面的默认位置",
+    "SetDefaultMeeting": "设为新建会议页面的默认位置",
+    "DefaultLabel": "{{wikiKind}} 的默认位置",
+    "AIBadge": "AI 生成",
+    "UserBadge": "用户编辑",
+    "QuickOpen": "快速打开（⌘P）",
+    "ConflictBadge": "冲突副本",
+    "EmptyAiCurated": "当你的录音或笔记提到实体、人物、主题或会议时,AI 会自动填充此文件夹。打开一条笔记,点击「同步 Wiki」即可生成页面。"
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] 不在此工作区中",
+    "Collision": "{{count}} 条笔记共用基础名 {{name}}",
+    "DisambiguationTitle": "选择要打开的笔记",
+    "DisambiguationOpenAt": "位于 {{folder}}",
+    "SuggestEmpty": "没有匹配的笔记或 wiki 页面",
+    "BrokenTooltipSyncWiki": "此页面尚未创建——在这条笔记上点击「同步 Wiki」即可生成。",
+    "SyncContextMenu": "同步Wiki",
+    "SyncToGenerate": "同步Wiki以生成此页面"
   },
   "WindowPicker": {
     "Instruction": "选择用于窗口录制的窗口",
@@ -1947,12 +2399,31 @@
     "Title": "选择窗口",
     "Unknown": "未命名窗口"
   },
+  "Workspace": {
+    "None": "无工作区",
+    "EmptyList": "未注册工作区",
+    "Add": "添加工作区…",
+    "Remove": "从 SeaMeet 中移除",
+    "RemoveTooltip": "从 SeaMeet 中移除（磁盘上的文件保留）",
+    "ConfirmRemove": "从 SeaMeet 中移除工作区\"{{name}}\"吗？磁盘上的文件不会被删除；仅移除 SeaMeet 条目。",
+    "Default": "默认"
+  },
   "agent": {
     "fabLabel": "询问 AI 助手",
     "panelLabel": "AI 助手",
     "dockRight": "停靠在右侧",
     "maximize": "最大化",
     "close": "关闭"
+  },
+  "aiBase": {
+    "preparing": {
+      "title": "正在准备您的录音…"
+    },
+    "error": {
+      "title": "我们无法处理此录音",
+      "body": "请检查您的 API 密钥或重试。"
+    },
+    "disabled": "AI 功能已关闭。请在设置中启用它们以查看摘要和操作。"
   },
   "floatingPip": {
     "minimize": "最小化",

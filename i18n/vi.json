@@ -16,8 +16,8 @@
     "SubscribeCTA": "Đăng ký để mở khóa"
   },
   "AIFeatures": {
-    "ApiKeyLabel": "Gemini API Key",
-    "ApiKeySection": "Gemini API Key",
+    "ApiKeyLabel": "Khóa API Gemini",
+    "ApiKeySection": "Khóa API Gemini",
     "AutomationSection": "Tự động hóa",
     "AutoSummary": "Tự động tạo bản tóm tắt",
     "AutoSummaryDesc": "Chạy sau mỗi lần ghi âm kết thúc",
@@ -48,8 +48,8 @@
       "QuotaLoading": "Đang tải hạn ngạch...",
       "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
       "QuotaResetDate": "Đặt lại vào {{date}}",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration",
+      "Refresh": "Phát hiện lại Claude",
+      "Remove": "Xóa tích hợp Claude",
       "Saving": "Đang lưu...",
       "Section": "Khóa API Claude (Đại lý)",
       "ShowKey": "Hiển thị phím",
@@ -67,27 +67,27 @@
       "InstallGuideLink": "hướng dẫn bắt đầu",
       "InstallGuideSuffix": " để cài đặt, sau đó chạy:",
       "NotDetected": "Không phát hiện — cài đặt và xác thực:",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration",
+      "Refresh": "Phát hiện lại Copilot",
+      "Remove": "Xóa tích hợp Copilot",
       "Section": "GitHub Copilot"
     },
     "Provider": {
       "Detected": "Đã phát hiện",
       "Hint": "Bạn cũng có thể chuyển đổi nhà cung cấp cho từng cuộc trò chuyện trong bảng chat.",
       "NotAvailable": "Không khả dụng",
-      "Preferred": "Preferred",
+      "Preferred": "Ưu tiên",
       "Section": "Nhà cung cấp agent ưu tiên"
     },
     "ClearKey": "Xóa khóa đã lưu",
     "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
     "EnableToggleDesc": "Yêu cầu khóa API Gemini miễn phí",
-    "DefaultModel": "Default Model",
+    "DefaultModel": "Mô hình mặc định",
     "GeminiSection": "Gemini",
     "GetKeyLink": "Nhận khóa API miễn phí từ Google AI Studio →",
     "GroupTitle": "Tính năng AI",
     "HideKey": "Ẩn phím",
     "KeyInvalid": "Khóa không hợp lệ",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
+    "KeyManagedInBilling": "Khóa API được quản lý trong Quản lý Đăng ký → Khóa API",
     "KeyNotConfigured": "Không có khóa nào được cấu hình",
     "KeyPlaceholder": "AIzaSy...",
     "KeyPlaceholderSaved": "•································ Đã lưu)",
@@ -96,7 +96,7 @@
     "ManagedKeyDesc": "Khóa API của bạn được cung cấp tự động. Không cần cấu hình.",
     "ManagedKeyStatus": "Khóa được quản lý — do SeaMeet cung cấp",
     "MenuItem": "Tóm tắt được hỗ trợ bởi AI",
-    "ModelLabel": "Gemini Model",
+    "ModelLabel": "Mô hình Gemini",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -127,8 +127,8 @@
   },
   "AISummary": {
     "ApplyMerge": "Áp dụng",
-    "SubscribeToGenerate": "Subscribe to generate AI summaries, transcripts, and action items from your recordings.",
-    "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
+    "SubscribeToGenerate": "Đăng ký để tạo bản tóm tắt, phiên âm và mục hành động bằng AI từ bản ghi của bạn.",
+    "SubscribeToRegenerate": "Đăng ký để tạo lại bản tóm tắt AI.",
     "ConfirmRename": "Xác nhận đổi tên",
     "Copy": "Sao chép",
     "EditSegmentSpeaker": "Nhấp để gán lại đoạn này",
@@ -187,7 +187,7 @@
       "Summary": "Bản tóm tắt",
       "Transcription": "Phiên âm"
     },
-    "ScreenshotTabTitle": "AI Analysis",
+    "ScreenshotTabTitle": "Phân tích AI",
     "TabTitle": "Tóm tắt AI",
     "Topics": "chủ đề:",
     "Speakers": "Người phát biểu",
@@ -209,12 +209,53 @@
       "Live": "Sống"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Được cập nhật bởi AI",
+    "Title": "Tóm tắt ghi chú",
+    "Meta": "{{count}} bản ghi âm · mẫu: {{tpl}}",
+    "CopyToEdit": "Sao chép để chỉnh sửa",
+    "Regenerate": "Tạo lại",
+    "Generating": "Đang tạo…",
+    "Provenance": "Được tạo từ {{n}} bản ghi âm",
+    "Error": "Tạo thất bại: {{err}}",
+    "RenameSuggested": "AI đề xuất \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Cuộc họp chung",
+        "description": "Quyết định, hành động, thảo luận"
+      },
+      "brainstorm": {
+        "name": "Brainstorm",
+        "description": "Ý tưởng, luồng, câu hỏi mở"
+      },
+      "lecture": {
+        "name": "Bài giảng / talk",
+        "description": "Luận đề, điểm chính, câu hỏi, tham chiếu"
+      },
+      "oneonone": {
+        "name": "1:1 / phỏng vấn",
+        "description": "Chủ đề, cảm xúc, theo dõi"
+      },
+      "sales": {
+        "name": "Cuộc gọi bán hàng",
+        "description": "Khám phá, phản đối, bước tiếp theo, người ra quyết định"
+      },
+      "standup": {
+        "name": "Standup / trạng thái",
+        "description": "Cập nhật từng người, vướng mắc, tiếp theo"
+      }
+    },
+    "RegenerateTooltip": "Tạo lại với cùng mẫu",
+    "RegenerateChooseTemplate": "Tạo lại với mẫu khác",
+    "Stale": "Cũ · làm mới",
+    "StaleTooltip": "Ghi chú đã thay đổi kể từ khi tóm tắt này được tạo — nhấp để làm mới."
+  },
   "About": {
     "AppStoreBuild": "Phiên bản App Store",
     "DirectBuild": "Xây dựng trực tiếp",
     "HelpTranslate": "Hãy giúp chúng tôi dịch SeaMeet →",
     "Loading": "Đang tải...",
-    "SubtitleBadge": "Snap Recorder & Agent",
+    "SubtitleBadge": "Trình ghi & Trợ lý",
     "Version": "v{{version}}"
   },
   "AgentPanel": {
@@ -230,10 +271,10 @@
     "GlobalTitle": "Đặc vụ AI",
     "GoToSettings": "Mở cài đặt",
     "LiveAction": {
-      "ActionItems": "Action Items",
-      "Summarize": "Summarize",
-      "Translate": "Translate",
-      "WhoSaidWhat": "Who Said What"
+      "ActionItems": "Mục hành động",
+      "Summarize": "Tóm tắt",
+      "Translate": "Dịch",
+      "WhoSaidWhat": "Ai đã nói gì"
     },
     "Mode": {
       "Ask": "Hỏi",
@@ -277,7 +318,7 @@
     "SendButton": "Gửi",
     "SendPlaceholder": "Hỏi bất cứ điều gì... (Enter để gửi, Shift+Enter để xuống dòng)",
     "SessionCost": "Phiên: {{inputTokens}} vào /{{outputTokens}} ra mã thông báo",
-    "SectionTitle": "AI Agent",
+    "SectionTitle": "Trợ lý AI",
     "Sessions": "Phiên",
     "StopButton": "Dừng lại",
     "Streaming": {
@@ -301,7 +342,8 @@
       "Output": "đầu ra",
       "Pattern": "Mẫu:",
       "Reading": "Đang đọc tập tin...",
-      "ShowDetails": "Hiển thị chi tiết"
+      "ShowDetails": "Hiển thị chi tiết",
+      "AndMoreLines": "... và {{count}} dòng nữa"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} hành động",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} đã hoàn thành",
       "Completed_other": "{{count}} đã hoàn thành",
       "Running_one": "{{count}} đang chạy",
-      "Running_other": "{{count}} đang chạy"
+      "Running_other": "{{count}} đang chạy",
+      "Running": "{{count}} đang chạy",
+      "Completed": "{{count}} hoàn tất",
+      "Actions": "{{count}} hành động"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Cấu hình khóa API của bạn để sử dụng Đại lý AI."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Đang chuẩn bị bản ghi của bạn…"
-    },
-    "error": {
-      "title": "Chúng tôi không thể xử lý bản ghi này",
-      "body": "Kiểm tra khóa API của bạn hoặc thử lại."
-    },
-    "disabled": "Các tính năng AI đang tắt. Bật chúng trong Cài đặt để xem tóm tắt và hành động."
   },
   "App": {
     "FailedToEnableFlashback": "Không thể bật chế độ hồi tưởng: {{error}}",
@@ -382,15 +417,15 @@
   "AudioControls": {
     "AudioCapture": "Ghi am am thanh",
     "AudioMix": "Mix am thanh",
-    "AudioSettings": "Audio Settings",
+    "AudioSettings": "Cài đặt âm thanh",
     "AudioSource": "Nguon am thanh:",
     "Microphone": "Mic",
     "MicrophoneGainWarning": "Cuong do microphone cao co the ghi lai phat loa ngay ca khi \"Am thanh he thong\" tat. Su dung tai nghe hoac giam cuong do microphone de chi ghi am micro.",
-    "MuteMic": "Mute Microphone",
+    "MuteMic": "Tắt tiếng micrô",
     "RecordingDefaultMicrophone": "Mic mac dinh",
     "RecordingSettings": "Cai dat ghi am",
     "RefreshMicrophoneList": "Lam moi danh sach microphone",
-    "UnmuteMic": "Unmute Microphone"
+    "UnmuteMic": "Bật tiếng micrô"
   },
   "AutoDetectDrawer": {
     "Title": "Phát hiện tự động",
@@ -402,6 +437,9 @@
     "RecentEmpty": "Chưa có phát hiện nào.",
     "AdvancedSettings": "Cài đặt nâng cao →",
     "LearnMore": "Tìm hiểu thêm"
+  },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Lần đầu? Cách hoạt động như sau →"
   },
   "AutoDetectInfoModal": {
     "ControlLabel": "TỰ ĐỘNG PHÁT HIỆN",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Sử dụng hoạt động của microphone, tiêu đề cửa sổ và URL trình duyệt để đảm bảo chính xác",
     "Tip2Title": "Phương pháp phát hiện đa dạng",
     "Title": "Tự động phát hiện cuộc họp"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Lần đầu? Cách hoạt động như sau →"
   },
   "AutoRecording": {
     "BugReport": "Gap loi? Bao cao toi seameet@seasalt.ai",
@@ -524,7 +559,7 @@
       "GeminiHelp": "Lấy key miễn phí: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
       "GeminiLabel": "Gemini (Google AI)",
-      "KeySaved": "Key saved (hidden)",
+      "KeySaved": "Đã lưu khóa (ẩn)",
       "GeminiUsage": "Dùng cho: phiên âm, tóm tắt, phiên âm trực tiếp. Key miễn phí chịu giới hạn tốc độ và hạn mức của Gemini. Chuyển sang gói trả phí Google AI Studio nếu đạt giới hạn.",
       "NotConfigured": "Chưa cấu hình",
       "SaveContinue": "Lưu & Tiếp tục",
@@ -596,16 +631,16 @@
         "Step4Mac": "macOS / Linux: ",
         "Step4Win": "Windows: ",
         "Step4WinReq": "yêu cầu ",
-        "Step4GitWin": "Git for Windows",
+        "Step4GitWin": "Git cho Windows",
         "Step4Auth": "Chạy: ",
         "Step4AuthDesc": " (yêu cầu gói Claude Pro hoặc Max)",
         "Step4Refresh": "Nhấn làm mới bên dưới để phát hiện Claude Code.",
         "Step4Select": "Nhấn Claude Code bên dưới để đặt làm mặc định.",
         "StepComplete": {
-          "AgentBoth": "Both Claude and Copilot are configured",
-          "AgentClaude": "Claude is configured",
-          "AgentCopilot": "Copilot is configured",
-          "Summary": "Setup complete"
+          "AgentBoth": "Cả Claude và Copilot đều đã được cấu hình",
+          "AgentClaude": "Claude đã được cấu hình",
+          "AgentCopilot": "Copilot đã được cấu hình",
+          "Summary": "Đã hoàn tất thiết lập"
         }
       }
     },
@@ -619,13 +654,14 @@
       "LimitDescription": "SeaMeet Pro hoạt động trên tối đa 3 thiết bị cùng lúc. Đăng xuất khỏi thiết bị không sử dụng để giải phóng chỗ.",
       "LimitTitle": "Đã đạt giới hạn thiết bị",
       "Loading": "Đang tải thiết bị...",
-      "NoDevices": "No devices registered",
+      "NoDevices": "Chưa có thiết bị nào được đăng ký",
       "SigningOut": "Đang đăng xuất...",
       "SignOut": "Đăng xuất",
       "TabLabel": "Thiết bị",
       "Today": "hôm nay",
       "Yesterday": "hôm qua",
-      "YourDevices": "Your Devices"
+      "YourDevices": "Thiết bị của bạn",
+      "DaysAgo": "{{count}} ngày trước"
     },
     "FAQ": {
       "Title": "Câu hỏi thường gặp",
@@ -669,15 +705,15 @@
       "Unknown": "Đã xảy ra lỗi. Vui lòng thử lại."
     },
     "FreeNote": "Gói miễn phí: chỉ ghi âm, không có tính năng AI, không cần đăng nhập. Bạn luôn có thể ghi âm mà không cần đăng ký.",
-    "ComingSoon": "Coming soon",
+    "ComingSoon": "Sắp ra mắt",
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/month",
-        "Feature1": "AI transcription & summaries",
-        "Feature2": "Use your own Gemini & Claude API keys",
-        "Feature3": "Live transcription during meetings",
-        "Feature4": "AI-powered meeting questions & analysis",
+        "Price": "7,99 $/tháng",
+        "Feature1": "Phiên âm và tóm tắt bằng AI",
+        "Feature2": "Sử dụng khóa API Gemini và Claude của riêng bạn",
+        "Feature3": "Phiên âm trực tiếp trong cuộc họp",
+        "Feature4": "Hỏi đáp và phân tích cuộc họp bằng AI",
         "InfoNote": "Bạn cần 2 thiết lập: Google AI Studio (miễn phí) và GitHub (miễn phí) hoặc Anthropic (trả phí). Trình hướng dẫn sẽ giúp bạn sau khi thanh toán:",
         "ConfirmTitle": "Trước khi bạn đăng ký",
         "ConfirmContinue": "Tiếp tục thanh toán",
@@ -690,14 +726,14 @@
       },
       "Desktop": {
         "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
+        "Price": "15,99 $/tháng",
+        "Feature1": "Bao gồm tất cả tính năng của BYOK Pro",
+        "Feature2": "AI tích hợp sẵn — không cần khóa API",
+        "Feature3": "Hỗ trợ ưu tiên",
+        "Feature4": "Phân tích nâng cao"
       },
       "Free": {
-        "Name": "Free",
+        "Name": "Miễn phí",
         "Price": "$0",
         "Feature1": "Chỉ ghi âm",
         "Feature2": "Không có tính năng AI",
@@ -706,11 +742,11 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
-        "Feature2": "Cloud sync across devices",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Price": "25,99 $/tháng",
+        "Feature1": "Bao gồm tất cả tính năng của Desktop Pro",
+        "Feature2": "Đồng bộ qua đám mây giữa các thiết bị",
+        "Feature3": "Tính năng cộng tác nhóm",
+        "Feature4": "Thư viện cuộc họp dùng chung"
       }
     },
     "Privacy": {
@@ -783,14 +819,14 @@
       "CancelNotice": "Gói đăng ký kết thúc {{date}}",
       "CancelPendingNotice": "Đăng ký của bạn sẽ kết thúc vào {{date}}. Các tính năng AI sẽ tiếp tục hoạt động cho đến lúc đó.",
       "EndsOn": "Kết thúc {{date}}",
-      "DevOverride": "(Dev Override)",
+      "DevOverride": "(Ghi đè cho nhà phát triển)",
       "Loading": "Đang tải...",
       "Manage": "Quản lý đăng ký",
       "None": "Chưa đăng ký",
       "PastDue": "Quá hạn",
       "Plan": "Gói",
       "Reactivate": "Kích hoạt lại",
-      "SignIn": "Sign in to manage subscription",
+      "SignIn": "Đăng nhập để quản lý đăng ký",
       "Trial": "Dùng thử"
     },
     "SignInToSubscribe": "Đăng nhập để đăng ký:",
@@ -838,7 +874,7 @@
     "Close": "Đóng",
     "Configure": "Cấu hình",
     "Delete": "Xóa",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Bỏ qua",
     "Done": "Hoàn thành",
     "Expand": "Mở rộng",
     "FileNameCopiedWithRenameHint": "{{fileName}} đã sao chép vào clipboard. Nhấn đúp để đổi tên tệp.",
@@ -856,7 +892,12 @@
     "Starting": "Đang khởi động…",
     "UnknownApp": "Ứng dụng không xác định",
     "Copied": "Đã sao chép!",
-    "Copy": "Sao chép"
+    "Copy": "Sao chép",
+    "Clear": "Xóa",
+    "Forward": "Tiến",
+    "Refresh": "Làm mới",
+    "Apply": "Áp dụng",
+    "Undo": "Hoàn tác"
   },
   "DeletePrompt": {
     "Cancel": "Huy",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Sự kiện đã đánh dấu",
     "Title": "Sự kiện"
   },
+  "ExternalChange": {
+    "Banner": "Tệp này đã thay đổi trên đĩa trong khi bạn đang chỉnh sửa.",
+    "Reload": "Tải lại phiên bản trên đĩa",
+    "Keep": "Giữ phiên bản của tôi"
+  },
+  "FAB": {
+    "Label": "Thao tác nhanh",
+    "Stop": "Dừng ghi",
+    "Record": "Bắt đầu ghi",
+    "Screenshot": "Chụp màn hình",
+    "Agent": "Trợ lý AI",
+    "PickSource": "Chọn nguồn ghi",
+    "PickScreenshotSource": "Chọn nguồn ảnh chụp màn hình",
+    "SourceAudio": "Chỉ âm thanh",
+    "SourceFullscreen": "Toàn màn hình",
+    "SourceWindow": "Cửa sổ",
+    "SourceRegion": "Vùng",
+    "ScreenshotFullscreen": "Toàn màn hình",
+    "ScreenshotWindow": "Cửa sổ",
+    "ScreenshotRegion": "Vùng",
+    "LiveTranscription": "Phiên âm trực tiếp",
+    "ToggleLiveTranscription": "Bật/tắt phiên âm trực tiếp",
+    "RecordingInProgress": "Đang ghi…",
+    "OpenBoundNote": "Mở ghi chú mà bản ghi âm này được đính kèm"
+  },
   "FileImport": {
     "BrowseFiles": "Duyệt Tệp",
     "DragDropFiles": "Kéo và thả các tệp âm thanh, video, hình ảnh của bạn vào đây",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Đang sao chép tệp video...",
     "VideoImportSaving": "Đang lưu tệp video...",
     "VideoUnsupported": "Định dạng video này có thể không phát được trong ứng dụng. Tệp vẫn sẽ được nhập."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Thay thế tất cả {{count}} mục khớp?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Tìm",
+    "AriaLabel": "Tìm và thay thế",
+    "CaseSensitive": "Phân biệt chữ hoa/thường",
+    "ClearSearch": "Xóa",
+    "Previous": "Kết quả trước",
+    "Next": "Kết quả sau",
+    "NoResults": "Không có kết quả",
+    "ReplacePlaceholder": "Thay thế",
+    "WikiAiReadonly": "Phần AI chỉ đọc — thay thế chỉ hoạt động ở phần của người dùng",
+    "Replace": "Thay thế",
+    "ReplaceAll": "Thay thế tất cả",
+    "CloseBar": "Đóng tìm/thay thế",
+    "WikiCounterSplit": "{{userCount}} trong ghi chú + {{aiCount}} trong phần AI"
   },
   "FlashbackControls": {
     "AudioFlashback": "Hoi tuong am thanh",
@@ -1129,11 +1212,11 @@
     "CloseTooltip": "Dong chu thich",
     "FailedToLoadScreens": "Khong tai duoc man hinh. Vui long thu lai.",
     "FailedToLoadWindows": "Khong tai duoc cua so. Vui long thu lai.",
-    "MicMuted": "Mic Muted",
-    "Microphone": "Microphone",
+    "MicMuted": "Đã tắt micrô",
+    "Microphone": "Micro",
     "MicrophoneMuted": "Microphone: Tat tieng",
     "MicrophoneSettings": "Cai dat Microphone",
-    "MuteMicrophone": "Mute Microphone",
+    "MuteMicrophone": "Tắt tiếng micrô",
     "MuteNoMicrophone": "Tat tieng (Khong co Microphone)",
     "NoMicrophonesFound": "Khong tim thay microphone nao",
     "NoScreensDetected": "Khong tim thay man hinh nao.",
@@ -1202,10 +1285,25 @@
       "ActivityFlushHint": "Cứ sau N ms trong một lượt dài, thúc đẩy Gemini xử lý âm thanh đã tích lũy. Ngăn phiên âm bị đứng trong các đoạn độc thoại / thuyết trình. Yêu cầu tắt VAD tự động.",
       "ActivityFlushRequiresManualVad": "Flush định kỳ chỉ có hiệu lực khi VAD tự động bị tắt — nếu không máy chủ Gemini sẽ từ chối điều khiển hoạt động rõ ràng. Giữ công tắc bật và tắt VAD tự động bên dưới để sử dụng.",
       "Reset": "Đặt lại tất cả về mặc định"
-    }
+    },
+    "SegmentCount": "{{count}} đoạn"
   },
   "GeminiTranscription": {
-    "Title": "Live Transcription"
+    "Title": "Phiên âm trực tiếp"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Ghi chú",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Bản ghi lời",
+    "SectionSummaries": "Tóm tắt bản ghi",
+    "SectionOcr": "Văn bản ảnh chụp màn hình",
+    "IndexingFallback": "Đang lập chỉ mục — chỉ hiển thị các kết quả tên tệp",
+    "Placeholder": "Tìm trong ghi chú, wiki và bản ghi…",
+    "SoFar": "cho đến nay",
+    "NoResults": "Không có kết quả"
+  },
+  "HelpPage": {
+    "Title": "Tìm hiểu thêm về SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "Kích hoạt hồi tưởng",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet yêu cầu macOS 14.2 (Sonoma) trở lên.\n\nMột số tính năng như phát hiện âm thanh theo ứng dụng và tự động bắt đầu cuộc họp có thể không hoạt động.\n\nCập nhật qua Cài đặt Hệ thống > Chung > Cập nhật Phần mềm.",
     "ContinueAnyway": "Vẫn tiếp tục",
     "Quit": "Thoát"
+  },
+  "MediaBlock": {
+    "Processing": "Đang xử lý…",
+    "SummaryReady": "Bản tóm tắt đã sẵn sàng",
+    "Failed": "Thất bại",
+    "Tab": {
+      "Summary": "Tóm tắt",
+      "Transcript": "Bản phiên âm",
+      "Actions": "Hành động",
+      "Decisions": "Quyết định",
+      "Chapters": "Chương",
+      "Description": "Mô tả",
+      "Ocr": "Văn bản OCR"
+    },
+    "MoreActions": "Thao tác khác",
+    "Action": {
+      "ShowInFolder": "Hiển thị trong thư mục",
+      "CopyEmbed": "Sao chép cú pháp nhúng",
+      "RerunAi": "Chạy lại AI",
+      "Detach": "Tách khỏi ghi chú"
+    },
+    "AudioFallback": "Trình duyệt của bạn không hỗ trợ phát âm thanh.",
+    "WaitingForPipeline": "Đang chờ AI xử lý xong…",
+    "PipelineFailed": "AI xử lý tệp này không thành công.",
+    "NoAiContent": "AI đã xử lý xong nhưng không tạo thêm nội dung.",
+    "NoSummary": "Bản tóm tắt AI chưa được tạo.",
+    "Due": "hạn",
+    "Stage": {
+      "preparing": "Đang chuẩn bị…",
+      "uploading": "Đang tải lên…",
+      "uploading-wait": "Đang xử lý tải lên…",
+      "analyzing": "Đang phân tích…",
+      "extracting": "Đang trích xuất…",
+      "saving": "Đang lưu…",
+      "complete": "Hoàn thành",
+      "gathering": "Đang thu thập…",
+      "reducing": "Đang tinh chỉnh…",
+      "writing": "Đang ghi…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mục hành động",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Ngôn ngữ phiên âm",
     "TranslationLanguage": "Ngôn ngữ dịch thuật",
     "UnknownSpeaker": "Người phát biểu",
-    "WaitingForSpeech": "Đang chờ lời nói..."
+    "WaitingForSpeech": "Đang chờ lời nói...",
+    "SegmentCount": "{{count}} đoạn"
   },
   "MeetingDetail": {
     "Back": "← Quay lại",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Dang sac hoi tuong man hinh...",
     "ScreenRecording": "Ghi man hinh ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Bắt đầu nhập hoặc dán từ bộ nhớ tạm…",
+    "Saving": "Đang lưu…",
+    "Saved": "✓ Đã lưu",
+    "SaveFailed": "Lưu thất bại",
+    "Editing": "Đang chỉnh sửa…",
+    "TitlePlaceholder": "Ghi chú không có tiêu đề",
+    "TitleLabel": "Tiêu đề ghi chú",
+    "RenameTooltip": "Nhấp để đổi tên",
+    "UntitledFallback": "Ghi chú không có tiêu đề",
+    "Renaming": "Đang đổi tên…",
+    "LoadFailed": "Không thể tải ghi chú",
+    "Bold": "Đậm",
+    "Italic": "Nghiêng",
+    "Code": "Mã",
+    "Heading1": "Tiêu đề 1",
+    "Heading2": "Tiêu đề 2",
+    "BulletList": "Danh sách dấu đầu dòng",
+    "OrderedList": "Danh sách đánh số",
+    "Link": "Liên kết",
+    "LinkDialog": "Chèn liên kết",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Cập nhật",
+    "LinkAdd": "Thêm",
+    "LinkRemove": "Xóa liên kết",
+    "InsertWikilink": "Liên kết tới một ghi chú ([[ … ]])",
+    "SyncWiki": "Đồng bộ wiki",
+    "SyncWikiTooltip": "Cập nhật wiki từ ghi chú này ngay (thay vì đợi tự động)",
+    "SyncWikiCouldNotQueue": "Không thể đưa cập nhật wiki vào hàng đợi",
+    "SyncWikiQueued": "Trong hàng đợi…",
+    "SyncWikiRunning": "Đang đồng bộ…",
+    "SyncWikiSuccess": "✓ Đã đồng bộ",
+    "SyncWikiError": "Đồng bộ thất bại",
+    "Blockquote": "Trích dẫn",
+    "CodeBlock": "Khối mã",
+    "Heading3": "Tiêu đề 3",
+    "Highlight": "Đánh dấu",
+    "HorizontalRule": "Đường kẻ ngang",
+    "ImageAdd": "Chèn",
+    "ImageDialog": "Chèn hình ảnh",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Chèn hình ảnh",
+    "InsertTable": "Chèn bảng",
+    "Strike": "Gạch ngang",
+    "TableAddColumnAfter": "Thêm cột sau",
+    "TableAddColumnBefore": "Thêm cột trước",
+    "TableAddRowAfter": "Thêm hàng sau",
+    "TableAddRowBefore": "Thêm hàng trước",
+    "TableDelete": "Xóa bảng",
+    "TableDeleteColumn": "Xóa cột",
+    "TableDeleteRow": "Xóa hàng",
+    "TaskList": "Danh sách công việc",
+    "Redo": "Làm lại",
+    "Underline": "Gạch chân",
+    "Undo": "Hoàn tác",
+    "Synthesize": "Tóm tắt AI",
+    "SynthesizeRunning": "Đang tổng hợp…",
+    "SynthesizeTooltip": "Tạo hoặc làm mới tóm tắt AI cho ghi chú này",
+    "SynthesizeChooseTemplate": "Chọn mẫu cho bản tóm tắt AI"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Ảnh chụp màn hình",
+      "Recording": "Bản ghi",
+      "AddedTo": "đã thêm vào",
+      "Open": "Mở"
+    },
+    "WikiUpdateFailed": "Cập nhật wiki thất bại: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Tóm tắt · {{version}}",
+      "Updated": "✨ Đã cập nhật tóm tắt · {{version}}",
+      "Jump": "Đi ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Chọn mẫu…",
+      "Label": "Tùy chọn tổng hợp"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Ghi chú mới",
+    "JustNow": "vừa xong",
+    "Yesterday": "Hôm qua",
+    "Title": "Ghi chú",
+    "EmptyTitle": "Bắt đầu ghi chú đầu tiên của bạn",
+    "EmptySubtitle": "Ghi âm là điểm mạnh — thêm bản ghi và ảnh chụp màn hình vào bất kỳ ghi chú nào.",
+    "MediaCount": "{{n}} tệp đính kèm",
+    "ConfirmDelete": "Xóa",
+    "DeleteNote": "Xóa ghi chú"
+  },
+  "NotesTree": {
+    "Title": "Ghi chú",
+    "NewNote": "Ghi chú mới",
+    "NewFolder": "Thư mục mới",
+    "NewFolderPrompt": "Tên thư mục:",
+    "SortBy": "Sắp xếp theo",
+    "SortManual": "Thủ công",
+    "SortName": "Tên (A → Z)",
+    "SortModified": "Sửa đổi (mới nhất trước)",
+    "CollapseAll": "Thu gọn tất cả",
+    "SearchInTree": "Tìm trong cây",
+    "FilterPlaceholder": "Lọc ghi chú…",
+    "DropToRoot": "Thả để chuyển về gốc",
+    "MoveTo": "Di chuyển đến…",
+    "MoveToRoot": "Chuyển về gốc",
+    "Duplicate": "Nhân bản",
+    "RevealInFinder": "Hiển thị trong Finder",
+    "RevealInExplorer": "Hiển thị trong Explorer",
+    "CopyWikilink": "Sao chép wikilink",
+    "Pin": "Ghim lên đầu",
+    "Unpin": "Bỏ ghim",
+    "Rename": "Đổi tên",
+    "Delete": "Xoá",
+    "Open": "Mở",
+    "Expand": "Mở rộng",
+    "OpenInNewTab": "Mở trong tab mới",
+    "ConfirmDeleteFolder": "Xoá thư mục \"{{name}}\" và toàn bộ nội dung?",
+    "RenameSucceeded": "Đã đổi tên",
+    "RenameWithRefs": "Đã đổi tên; cập nhật {{count}} tham chiếu",
+    "SortDefault": "Mặc định (thứ tự hệ thống tập tin)",
+    "ExpandAll": "Mở rộng tất cả",
+    "NewFolderPlaceholder": "Tên thư mục mới…",
+    "QuickOpen": "Mở nhanh  (⌘P)",
+    "CopyRelativePath": "Sao chép đường dẫn tương đối",
+    "CopyFullPath": "Sao chép đường dẫn đầy đủ",
+    "UpdateWikiFromNote": "Cập nhật wiki từ ghi chú này",
+    "WikiUpdateFailed": "Cập nhật wiki không thành công: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Chọn một ghi chú",
+    "SelectFromList": "Chọn một ghi chú từ danh sách hoặc tạo ghi chú mới.",
+    "NoNotes": "Bạn chưa có ghi chú nào — hãy bắt đầu ghi chú đầu tiên.",
+    "CollapseSidebar": "Ẩn thanh bên ghi chú",
+    "ExpandSidebar": "Hiện thanh bên ghi chú"
+  },
   "OCRAutoCopy": {
     "Copied": "Đã sao chép văn bản trích xuất vào bộ nhớ tạm",
     "Error": "Không thể trích xuất văn bản",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Chạy OCR sau mỗi ảnh chụp và sao chép văn bản trích xuất vào bộ nhớ tạm",
     "SettingsLabel": "Tự động trích xuất văn bản (OCR) khi chụp màn hình"
   },
+  "OpenRecordingsFolder": "Mở thư mục bản ghi",
+  "OpenRecordingsFolderDesc": "Mở thư mục bản ghi mặc định",
   "Pause": "Tạm dừng",
   "PermissionAlert": {
     "Title": "Cần quyền",
@@ -1379,8 +1653,8 @@
       "Analyzing": "Phân tích",
       "Extracting": "Trích xuất kết quả",
       "Saving": "Lưu hiện vật",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "Đang chuẩn bị ảnh",
+      "AnalyzingImage": "Đang phân tích ảnh"
     }
   },
   "Player": {
@@ -1411,13 +1685,26 @@
     "GotIt": "Đã hiểu"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "Trợ lý AI",
     "AIAgentDesc": "Phiên âm trực tiếp và tương tác AI khả dụng khi đăng ký.",
     "PostMeetingAI": "AI sau cuộc họp",
     "PostMeetingAIDesc": "Tóm tắt, mục hành động và thông tin chi tiết sẽ được tạo sau khi ghi âm hoàn tất.",
     "UnlockPremium": "Mở khóa với Premium",
     "Upgrade": "Nâng cấp"
   },
+  "QuickOpen": {
+    "Placeholder": "Bắt đầu nhập hoặc dán từ bộ nhớ tạm… Dùng [[ để liên kết tới ghi chú khác",
+    "NoResults": "Không có ghi chú phù hợp",
+    "UnifiedPlaceholder": "Mở ghi chú hoặc trang wiki theo tên…",
+    "SectionNotes": "Ghi chú",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Ghi âm",
+  "RecordAudioDesc": "Bắt đầu ghi âm (trộn)",
+  "RecordFullscreen": "Quay toàn màn hình",
+  "RecordFullscreenDesc": "Bắt đầu quay video toàn màn hình",
+  "RecordRegion": "Chọn vùng để quay",
+  "RecordRegionDesc": "Chọn vùng màn hình để quay",
   "RecordTab": {
     "TapToRecord": "Chạm để bắt đầu ghi âm",
     "RecordWithPreamble": "Ghi với {{seconds}}s mở đầu",
@@ -1434,16 +1721,19 @@
     "RecentRecordings": "Bản ghi gần đây"
   },
   "Recording": {
-    "Paused": "Paused",
-    "Preparing": "Preparing",
-    "PreparingToRecord": "Preparing to record..."
+    "Paused": "Đã tạm dừng",
+    "Preparing": "Đang chuẩn bị",
+    "PreparingToRecord": "Đang chuẩn bị ghi…",
+    "InProgress": "Đang ghi âm",
+    "WillBeAdded": "Âm thanh sẽ được thêm vào đây khi bạn nhấp vào Dừng",
+    "AttachingTo": "Đang đính kèm vào {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Ghi âm",
     "ContinueRecording": "Tiếp tục ghi",
     "Mark": "Đánh dấu",
-    "MarkEvent": "Mark Event",
-    "MarkedEvents": "Marked Events",
+    "MarkEvent": "Đánh dấu sự kiện",
+    "MarkedEvents": "Sự kiện đã đánh dấu",
     "RecordingAudio": "Đang ghi âm...",
     "RecordingMode": "Chế độ ghi",
     "RecordingPreview": "Xem trước quay phim",
@@ -1487,26 +1777,39 @@
     "SearchRecordingsOrSnapshots": "Tìm kiếm bản ghi và snapshots",
     "ShowInFolder": "Hiển thị trong thư mục"
   },
+  "Regenerate": {
+    "Title": "Tạo lại tóm tắt ghi chú",
+    "PickTemplate": "Chọn mẫu:",
+    "Custom": "Hoặc viết hướng dẫn tùy chỉnh (ghi đè mẫu):",
+    "CustomPlaceholder": "vd. 'Tập trung vào các cam kết với khách hàng X, xuất dưới dạng bản ghi nhớ điều hành một trang.'",
+    "SaveAsTemplate": "Lưu làm mẫu tùy chỉnh",
+    "TemplateNamePlaceholder": "Tên mẫu",
+    "NameRequired": "Cần nhập tên để lưu",
+    "OutputLanguageHint": "Ngôn ngữ đầu ra theo Cài đặt → Trích xuất & Tóm tắt AI",
+    "Submit": "Tạo lại",
+    "AutoUpdate": "Tự động cập nhật khi gõ",
+    "AutoUpdateHint": "Chạy lại tổng hợp sau những thay đổi đáng kể trong ghi chú này (sử dụng hạn ngạch AI của bạn)."
+  },
   "RegionSelector": {
     "CaptureButton": "Chụp màn hình hoặc Nhấn Enter",
     "ConfirmButton": "Xác nhận lựa chọn",
     "Monitor": "Giám sát",
     "PrimaryMonitor": "Monitor chính",
-    "StartRecording": "Start Recording",
+    "StartRecording": "Bắt đầu ghi",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
     "Selected": "Đã chọn",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "PresetFreeform": "Tự do",
+    "Preset1619": "16:9 Ngang",
+    "Preset43": "4:3 Ngang",
+    "Preset2119": "21:9 Siêu rộng",
+    "Preset916": "9:16 Dọc",
+    "Preset34": "3:4 Dọc",
+    "Preset11": "1:1 Vuông",
+    "ShortcutCancel": "hủy",
+    "ShortcutCapture": "chụp",
+    "ShortcutConfirm": "xác nhận",
+    "AspectRatio": "Tỷ lệ khung hình"
   },
   "Resume": "Bản tóm tắt",
   "RingMenu": {
@@ -1559,9 +1862,9 @@
     "DescribeSub": "Trong ảnh chụp màn hình này có gì?",
     "Description": "Sự miêu tả",
     "ExtractedText": "Văn bản được trích xuất",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
+    "NoCustom": "Hỏi bất cứ điều gì về ảnh này.",
+    "NoDescription": "Chưa có mô tả.",
+    "NoOcr": "Chưa có văn bản trích xuất.",
     "Ocr": "Trích xuất văn bản (OCR)",
     "OcrSub": "Đọc tất cả văn bản hiển thị",
     "PipelineError": "Quá trình xử lý AI không thành công. Vui lòng thử lại.",
@@ -1594,7 +1897,21 @@
     "ShareFailed": "Chia sẻ không được hỗ trợ trên trình duyệt này. Mở ảnh chụp màn hình thủ công để chia sẻ.",
     "Sharing": "Đang chia sẻ...",
     "ZeroBytes": "0 byte",
-    "Info": "Stats"
+    "Info": "Thống kê"
+  },
+  "Search": {
+    "Placeholder": "Tìm kiếm… (⌘K)",
+    "Aria": "Tìm kiếm trong ghi chú và wiki",
+    "GroupNotes": "Ghi chú",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Bản ghi",
+    "GroupScreenshots": "Ảnh chụp màn hình",
+    "Results": {
+      "Aria": "Kết quả tìm kiếm"
+    },
+    "Loading": "Đang tìm…",
+    "NoResults": "Không có kết quả cho \"{{query}}\"",
+    "AgentHint": "Hãy thử trợ lý AI cho các truy vấn theo ngữ nghĩa."
   },
   "Settings": {
     "About": {
@@ -1721,6 +2038,13 @@
       "Flashback": "Hồi tưởng quay phim",
       "Storage": "Lưu trữ"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (miễn phí, 20 lần gọi/ngày)",
+      "FlashLiteFree": "Flash Lite (miễn phí, 500 lần gọi/ngày)",
+      "Help": "Việc cập nhật AI sẽ tự động tạm dừng khi hạn mức này cạn kiệt và tiếp tục sau đó.",
+      "Label": "Bậc hạn mức Gemini",
+      "Paid": "Bậc trả phí"
+    },
     "SettingsFileLocation": "Vị trí tập tin cài đặt",
     "Storage": {
       "Browse": "Duyệt...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Xóa tìm kiếm",
     "PrimaryNavigation": "Điều hướng chính"
   },
+  "Tabs": {
+    "CloseTab": "Đóng",
+    "RecordingHere": "Đang ghi âm tại đây",
+    "OrphanTooltip": "Tệp này đã bị xóa khỏi ổ đĩa",
+    "ScrollLeft": "Cuộn thẻ sang trái",
+    "ScrollRight": "Cuộn thẻ sang phải"
+  },
+  "TakeScreenshot": "Chụp màn hình",
+  "TakeScreenshotDesc": "Chụp một vùng của màn hình",
   "TakeSnapshot": {
     "GoToSnapshot": "Chuyển tới ảnh chụp nhanh",
     "Message": "Ảnh chụp nhanh đã được lưu vào:",
@@ -1786,7 +2119,7 @@
     "Title": "Ảnh chụp nhanh Đã chụp"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Trợ lý",
     "CloseNavigationMenu": "Dong menu danh sach",
     "Files": "Tập tin",
     "MainNavigation": "Điều hướng chính",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Mo menu danh sach",
     "Record": "Ghi",
     "Recording": "ghi âm",
-    "Screenshot": "Chụp màn hình"
+    "Screenshot": "Chụp màn hình",
+    "GroupCapture": "Ghi lại",
+    "GroupKnowledge": "Kiến thức",
+    "Notes": "Ghi chú",
+    "Wiki": "Wiki",
+    "GroupTools": "Công cụ"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet vẫn đang chạy trong khay hệ thống (góc dưới bên phải).",
@@ -1812,6 +2150,11 @@
     "Audio": "Âm thanh",
     "System": "Am thanh he thong",
     "Video": "Băng hình"
+  },
+  "UndoRename": {
+    "Toast": "Đã đổi tên; cập nhật {{count}} tham chiếu",
+    "Action": "Hoàn tác",
+    "ToastNoRefs": "Đã đổi tên"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Cài đặt và thoát",
@@ -1865,11 +2208,11 @@
       "WikiDesc": "Tham khảo wiki SeaMeet để có tài liệu hướng dẫn và các hướng dẫn khác."
     },
     "KeyboardShortcuts": "Phím tắt bàn phím",
-    "AccountSignedIn": "Signed in",
+    "AccountSignedIn": "Đã đăng nhập",
     "SeaMeetSignedIn": "SeaMeet: Đã đăng nhập",
     "SeaMeetSignedOut": "SeaMeet: Chưa đăng nhập",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
+    "SeaMeetSignIn": "Đăng nhập SeaMeet",
+    "SeaMeetSignOut": "Đăng xuất SeaMeet",
     "SignIn": "Đăng nhập",
     "SignOut": "Đăng xuất",
     "Workspaces": "Không gian làm việc",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Quay lại lưu 10 giây cuối — để bạn không bỏ lỡ câu đầu tiên.",
     "GotIt": "Đã hiểu"
   },
-  "HelpPage": {
-    "Title": "Tìm hiểu thêm về SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "Nội dung do AI tạo",
+    "AIBadge": "Do AI tạo",
+    "Backlinks": "Liên kết ngược",
+    "RelatedPages": "Trang liên quan",
+    "BuiltFrom": "Xây từ",
+    "SelectPage": "Chọn một trang",
+    "SelectPageHint": "Chọn một thực thể, người hoặc chủ đề từ thanh bên để xem những gì wiki của bạn đã học.",
+    "LoadingPage": "AI đang xây trang này…",
+    "LoadFailed": "Không thể tải trang wiki này.",
+    "AISection": "Phần AI",
+    "AIEmpty": "Chưa có nội dung AI. Thêm bản ghi hoặc ảnh chụp màn hình vào ghi chú có nhắc đến thực thể này, sau đó chạy cập nhật wiki.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Wiki của bạn đang trống",
+    "EmptySubtitle": "Ghi lại một cuộc họp hoặc viết một ghi chú để bắt đầu xây dựng cơ sở kiến thức của bạn.",
+    "UserSection": "Ghi chú của bạn",
+    "UserSectionTitle": "Ghi chú của bạn",
+    "UserSectionPlaceholder": "Thêm ghi chú riêng của bạn…",
+    "RefreshFromSources": "Làm mới từ nguồn",
+    "RefreshFromSourcesTooltip": "Làm mới phần AI từ {{count}} ghi chú nguồn ngay bây giờ",
+    "RefreshFromSourcesHint": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp cũng đọc lại các ghi chú nguồn.",
+    "RefreshDisabledTooltip": "Trang wiki này chưa có ghi chú nguồn — vui lòng tạo từ một ghi chú trước.",
+    "RefreshAriaLabel": "Làm mới trang wiki từ ghi chú nguồn",
+    "RefreshError": "Làm mới thất bại",
+    "Bulk": {
+      "Build": "Xây dựng wiki",
+      "BuildFromAll": "Xây dựng wiki từ tất cả ghi chú",
+      "BuildFromFolder": "Xây dựng wiki từ thư mục…",
+      "BuildFromSelection": "Xây dựng wiki từ lựa chọn…",
+      "ToastMessage": "Phát hiện {{count}} ghi chú mới. Xây dựng wiki?",
+      "BannerMessage": "{{count}} ghi chú mới kể từ lần xây dựng trước",
+      "BuildingExtracting": "Đang đọc {{current}}/{{total}} ghi chú",
+      "BuildingReducing": "Đang xây dựng {{current}}/{{total}} trang",
+      "Building": "Đang xây dựng wiki — {{stage}}",
+      "PausedFor": "giới hạn tốc độ: {{seconds}}s",
+      "Cancel": "Hủy",
+      "Cancelling": "Đang hủy — đang hoàn tất ghi chú hiện tại…",
+      "Pause": "Tạm dừng",
+      "Continue": "Tiếp tục",
+      "Paused": "Đã tạm dừng — {{current}}/{{total}}",
+      "Restart": "Khởi động lại",
+      "NowReading": "Đang đọc: {{item}}",
+      "NowBuilding": "Đang xây dựng: {{item}}",
+      "RecentList": "Đã xử lý gần đây",
+      "DoneSummary": "Đã xây dựng wiki — {{notes}} ghi chú, {{pages}} trang",
+      "Resume": "Tiếp tục",
+      "ResumeAvailable": "Lần xây dựng wiki trước đã dừng tại {{current}}/{{total}}. Tiếp tục?",
+      "PolishIndex": "Đánh bóng chỉ mục",
+      "PolishIndexHint": "Thêm phần giới thiệu tường thuật vào chỉ mục wiki",
+      "BuildFromFolderPrompt": "Đường dẫn thư mục (tương đối với workspace):",
+      "BuildFromSelectionPrompt": "Tên tệp ghi chú phân tách bằng dấu phẩy (tương đối với notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Thêm hành động wiki",
+      "BuildAllTooltip": "Xây dựng wiki từ tất cả ghi chú (tăng dần — chỉ cập nhật các trang có ghi chú nguồn thay đổi).",
+      "BuildAllRunning": "Đang xây dựng wiki từ tất cả ghi chú — xem banner bên dưới.",
+      "BuildAllAria": "Xây dựng wiki từ tất cả ghi chú"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Tự động cập nhật wiki từ ghi chú",
+    "SettingsDesc": "Xây dựng cơ sở kiến thức về thực thể, người và chủ đề từ ghi chú và bản ghi của bạn. Mặc định tắt."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Tìm trang wiki theo tên…",
+    "NoResults": "Không có trang wiki khớp"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Trang wiki mới",
+    "NewFolder": "Thư mục mới",
+    "NewFolderPlaceholder": "Tên thư mục…",
+    "SortBy": "Sắp xếp theo",
+    "SortDefault": "Mặc định (thứ tự hệ thống tệp)",
+    "SortName": "Tên (A → Z)",
+    "SortModified": "Sửa đổi (mới nhất trước)",
+    "CollapseAll": "Thu gọn tất cả",
+    "ExpandAll": "Mở rộng tất cả",
+    "SearchInTree": "Lọc trong cây",
+    "FilterPlaceholder": "Lọc trang…",
+    "DropToRoot": "Thả để chuyển về thư mục gốc wiki",
+    "MoveToRoot": "Chuyển về thư mục gốc wiki",
+    "Open": "Mở",
+    "Rename": "Đổi tên",
+    "Delete": "Xóa",
+    "CopyWikilink": "Sao chép wikilink",
+    "CopyRelativePath": "Sao chép đường dẫn tương đối",
+    "CopyFullPath": "Sao chép đường dẫn đầy đủ",
+    "ConfirmDeleteFile": "Chuyển \"{{name}}\" vào thùng rác? (Có thể khôi phục từ Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Chuyển thư mục \"{{name}}\" và tất cả nội dung vào thùng rác?",
+    "Empty": "Chưa có trang wiki. Pipeline sẽ ghi vào đây khi bạn ghi âm cuộc họp.",
+    "SetDefaultEntity": "Đặt làm mặc định cho trang thực thể mới",
+    "SetDefaultPerson": "Đặt làm mặc định cho trang nhân vật mới",
+    "SetDefaultTopic": "Đặt làm mặc định cho trang chủ đề mới",
+    "SetDefaultMeeting": "Đặt làm mặc định cho trang cuộc họp mới",
+    "DefaultLabel": "Mặc định cho {{wikiKind}}",
+    "AIBadge": "Do AI tạo",
+    "UserBadge": "Người dùng đã chỉnh sửa",
+    "QuickOpen": "Mở nhanh (⌘P)",
+    "ConflictBadge": "Bản sao xung đột",
+    "EmptyAiCurated": "AI sẽ điền vào thư mục này khi bản ghi hoặc ghi chú của bạn đề cập đến một thực thể, người, chủ đề hoặc cuộc họp. Mở một ghi chú và nhấp vào Đồng bộ Wiki để tạo trang."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] không có trong không gian làm việc này",
+    "Collision": "{{count}} ghi chú dùng chung tên cơ sở {{name}}",
+    "DisambiguationTitle": "Chọn ghi chú để mở",
+    "DisambiguationOpenAt": "trong {{folder}}",
+    "SuggestEmpty": "Không có ghi chú hoặc trang wiki khớp",
+    "BrokenTooltipSyncWiki": "Trang này chưa được tạo — nhấp vào Đồng bộ Wiki trong ghi chú này để tạo nó.",
+    "SyncContextMenu": "Đồng bộ wiki",
+    "SyncToGenerate": "Đồng bộ wiki để tạo trang này"
   },
   "WindowPicker": {
     "Instruction": "Chọn cửa sổ để quay phim.",
@@ -1947,12 +2399,31 @@
     "Title": "Chọn cửa sổ",
     "Unknown": "Cửa sổ chưa có tên"
   },
+  "Workspace": {
+    "None": "Không có không gian làm việc",
+    "EmptyList": "Chưa đăng ký không gian làm việc",
+    "Add": "Thêm không gian làm việc…",
+    "Remove": "Gỡ khỏi SeaMeet",
+    "RemoveTooltip": "Gỡ khỏi SeaMeet (các tệp trên đĩa vẫn còn)",
+    "ConfirmRemove": "Gỡ không gian làm việc \"{{name}}\"? Các tệp trên đĩa không bị xóa; chỉ mục SeaMeet bị gỡ.",
+    "Default": "Mặc định"
+  },
   "agent": {
     "fabLabel": "Hỏi Đại lý AI",
     "panelLabel": "Đại lý AI",
     "dockRight": "Neo sang phải",
     "maximize": "Phóng to",
     "close": "Đóng"
+  },
+  "aiBase": {
+    "preparing": {
+      "title": "Đang chuẩn bị bản ghi của bạn…"
+    },
+    "error": {
+      "title": "Chúng tôi không thể xử lý bản ghi này",
+      "body": "Kiểm tra khóa API của bạn hoặc thử lại."
+    },
+    "disabled": "Các tính năng AI đang tắt. Bật chúng trong Cài đặt để xem tóm tắt và hành động."
   },
   "floatingPip": {
     "minimize": "Thu nhỏ",

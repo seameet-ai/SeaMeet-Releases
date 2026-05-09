@@ -9,9 +9,9 @@
     "EnableToggle": "AI Agent & Cowork را فعال کنید",
     "EnableToggleDesc": "نیاز به Claude CLI یا GitHub Copilot دارد",
     "LinkCopied": "کپی شد!",
-    "MenuItem": "AI Agent & Cowork",
-    "PageTitle": "AI Agent & Cowork",
-    "SectionTitle": "AI Agent & Cowork",
+    "MenuItem": "دستیار هوش مصنوعی و Cowork",
+    "PageTitle": "دستیار هوش مصنوعی و Cowork",
+    "SectionTitle": "دستیار هوش مصنوعی و Cowork",
     "SubscribeMsg": "عامل هوش مصنوعی به اشتراک BYOK Pro نیاز دارد. برای دریافت رونویسی زنده، خلاصه‌های جلسات و عامل هوش مصنوعی تعاملی اشتراک بگیرید.",
     "SubscribeCTA": "اشتراک برای باز کردن قفل"
   },
@@ -51,7 +51,7 @@
       "Refresh": "کلود را دوباره شناسایی کنید",
       "Remove": "ادغام کلود را حذف کنید",
       "Saving": "در حال ذخیره...",
-      "Section": "Claude API Key (Agent)",
+      "Section": "کلید API Claude (دستیار)",
       "ShowKey": "نمایش کلید",
       "SourceByok": "کلید API شما (BYOK)",
       "SourceCli": "کد کلود CLI",
@@ -209,6 +209,47 @@
       "Live": "زندگی کنید"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ به‌روزرسانی شده توسط هوش مصنوعی",
+    "Title": "خلاصه یادداشت",
+    "Meta": "{{count}} ضبط · قالب: {{tpl}}",
+    "CopyToEdit": "کپی برای ویرایش",
+    "Regenerate": "بازتولید",
+    "Generating": "در حال تولید…",
+    "Provenance": "تولیدشده از {{n}} ضبط",
+    "Error": "خطا در تولید: {{err}}",
+    "RenameSuggested": "هوش مصنوعی پیشنهاد می‌دهد \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "جلسه عمومی",
+        "description": "تصمیمات، اقدامات، بحث"
+      },
+      "brainstorm": {
+        "name": "طوفان فکری",
+        "description": "ایده‌ها، رشته‌ها، پرسش‌های باز"
+      },
+      "lecture": {
+        "name": "سخنرانی / گفتار",
+        "description": "تز، نکات کلیدی، پرسش‌ها، منابع"
+      },
+      "oneonone": {
+        "name": "1:1 / مصاحبه",
+        "description": "موضوعات، احساس، پیگیری‌ها"
+      },
+      "sales": {
+        "name": "تماس فروش",
+        "description": "کشف، اعتراضات، گام‌های بعدی، تصمیم‌گیرندگان"
+      },
+      "standup": {
+        "name": "استندآپ / وضعیت",
+        "description": "به‌روزرسانی هر نفر، موانع، بعدی"
+      }
+    },
+    "RegenerateTooltip": "بازتولید با همان قالب",
+    "RegenerateChooseTemplate": "بازتولید با قالب دیگر",
+    "Stale": "منسوخ · به‌روزرسانی",
+    "StaleTooltip": "یادداشت از زمان ایجاد این خلاصه تغییر کرده است — برای به‌روزرسانی کلیک کنید."
+  },
   "About": {
     "AppStoreBuild": "نسخه ساخته‌شده در فروشگاه برنامه",
     "DirectBuild": "ساخت مستقیم",
@@ -301,7 +342,8 @@
       "Output": "خروجی",
       "Pattern": "الگو:",
       "Reading": "خواندن فایل...",
-      "ShowDetails": "نمایش جزئیات"
+      "ShowDetails": "نمایش جزئیات",
+      "AndMoreLines": "... و {{count}} خطوط دیگر"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} اقدامات",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} تکمیل شد",
       "Completed_other": "{{count}} تکمیل شد",
       "Running_one": "{{count}} در حال اجرا",
-      "Running_other": "{{count}} در حال اجرا"
+      "Running_other": "{{count}} در حال اجرا",
+      "Running": "{{count}} در حال اجرا",
+      "Completed": "{{count}} تکمیل شد",
+      "Actions": "اقدامات {{count}}"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "کلیدهای API خود را برای استفاده از عامل هوش مصنوعی پیکربندی کنید."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "در حال آماده‌سازی ضبط شما…"
-    },
-    "error": {
-      "title": "ما نتوانستیم این ضبط را پردازش کنیم",
-      "body": "کلید API خود را بررسی کنید یا دوباره امتحان کنید."
-    },
-    "disabled": "ویژگی‌های هوش مصنوعی خاموش هستند. برای دیدن خلاصه‌ها و اقدامات، آنها را در تنظیمات فعال کنید."
   },
   "App": {
     "FailedToEnableFlashback": "فعال‌سازی بازگشت به خاطرات ناموفق بود: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "تنظیمات پیشرفته ←",
     "LearnMore": "بیشتر بدانید"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "اولین بار؟ نحوهٔ کار آن اینجاست ←"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "خودکار تشخیص",
     "Description": "وقتی به جلسات پیوستید، به صورت خودکار شروع به ضبط می‌کند. هرگز فراموش نکنید که دکمه ضبط را فشار دهید",
@@ -424,9 +462,6 @@
     "Tip2Desc": "از فعالیت میکروفن، عناوین پنجره و URLهای مرورگر برای دقت استفاده می‌کند",
     "Tip2Title": "چندین روش تشخیص",
     "Title": "تشخیص خودکار نشست‌ها"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "اولین بار؟ نحوهٔ کار آن اینجاست ←"
   },
   "AutoRecording": {
     "BugReport": "مشکل دیدید؟ آن را به ‎seameet@seasalt.ai‎ گزارش دهید",
@@ -625,7 +660,8 @@
       "TabLabel": "دستگاه‌ها",
       "Today": "امروز",
       "Yesterday": "دیروز",
-      "YourDevices": "دستگاه های شما"
+      "YourDevices": "دستگاه های شما",
+      "DaysAgo": "{{count}} روز پیش"
     },
     "FAQ": {
       "Title": "سوالات متداول",
@@ -856,7 +892,12 @@
     "Starting": "شروع...",
     "UnknownApp": "برنامه ناشناخته",
     "Copied": "کپی شد!",
-    "Copy": "کپی"
+    "Copy": "کپی",
+    "Clear": "پاک کردن",
+    "Forward": "به جلو",
+    "Refresh": "تازه کردن",
+    "Apply": "اعمال",
+    "Undo": "بازگشت"
   },
   "DeletePrompt": {
     "Cancel": "انصراف",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "رویدادهای علامت‌گذاری شده",
     "Title": "رویدادها"
   },
+  "ExternalChange": {
+    "Banner": "این فایل هنگام ویرایش روی دیسک تغییر کرده است.",
+    "Reload": "بارگذاری نسخهٔ دیسک",
+    "Keep": "نگه داشتن نسخهٔ من"
+  },
+  "FAB": {
+    "Label": "اقدامات سریع",
+    "Stop": "توقف ضبط",
+    "Record": "شروع ضبط",
+    "Screenshot": "گرفتن اسکرین‌شات",
+    "Agent": "دستیار هوش مصنوعی",
+    "PickSource": "منبع ضبط را انتخاب کنید",
+    "PickScreenshotSource": "منبع اسکرین‌شات را انتخاب کنید",
+    "SourceAudio": "فقط صدا",
+    "SourceFullscreen": "تمام صفحه",
+    "SourceWindow": "پنجره",
+    "SourceRegion": "ناحیه",
+    "ScreenshotFullscreen": "تمام صفحه",
+    "ScreenshotWindow": "پنجره",
+    "ScreenshotRegion": "ناحیه",
+    "LiveTranscription": "رونویسی زنده",
+    "ToggleLiveTranscription": "تغییر وضعیت نسخه‌برداری زنده",
+    "RecordingInProgress": "در حال ضبط…",
+    "OpenBoundNote": "یادداشتی که این ضبط به آن پیوست شده را باز کنید"
+  },
   "FileImport": {
     "BrowseFiles": "مرور فایل‌ها",
     "DragDropFiles": "فایل‌های صدای، ویدئو و تصویر خود را در اینجا بکشید و رها کنید",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "در حال کپی کردن فایل ویدیو...",
     "VideoImportSaving": "در حال ذخیره فایل ویدیو...",
     "VideoUnsupported": "این قالب ویدیو ممکن است در برنامه قابل پخش نباشد. فایل به هر حال وارد می‌شود."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "جایگزینی همه {{count}} مورد؟",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "یافتن",
+    "AriaLabel": "یافتن و جایگزینی",
+    "CaseSensitive": "تطبیق حروف",
+    "ClearSearch": "پاک کردن",
+    "Previous": "مورد قبلی",
+    "Next": "مورد بعدی",
+    "NoResults": "بدون نتیجه",
+    "ReplacePlaceholder": "جایگزینی",
+    "WikiAiReadonly": "بخش هوش مصنوعی فقط‌خواندنی است — جایگزینی فقط در بخش کاربر کار می‌کند",
+    "Replace": "جایگزینی",
+    "ReplaceAll": "جایگزینی همه",
+    "CloseBar": "بستن یافتن/جایگزینی",
+    "WikiCounterSplit": "{{userCount}} در یادداشت + {{aiCount}} در بخش هوش مصنوعی"
   },
   "FlashbackControls": {
     "AudioFlashback": "بازگشت به خاطرات صوتی",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "کیفیت JPEG فریم",
       "VideoMaxWidth": "حداکثر عرض فریم",
       "VideoQualityHint": "هنگامی که Gemini برچسب‌های کوچک کاشی (مانند نام شرکت‌کنندگان Zoom / Meet / Teams) را اشتباه می‌خواند، کیفیت و حداکثر عرض را افزایش دهید. مقادیر بالاتر مصرف توکن تصویر را افزایش می‌دهند — 1280 پیکسل معمولاً هر فریم را از رده 258 توکن به رده 1290 توکن می‌برد.",
-      "DisableAutoVad": "غیرفعال کردن VAD خودکار (تشخیص نوبت در سمت سرور)",
       "EndSensitivity": "حساسیت پایان گفتار",
       "Default": "پیش‌فرض (HIGH — فلاش سریع)",
       "SilenceMs": "سکوت پیش از پایان نوبت",
       "VadHint": "سکوت کمتر + حساسیت بالا → پاک‌سازی‌های رونویسی کوتاه‌تر و مکررتر.",
+      "DisableAutoVad": "غیرفعال کردن VAD خودکار (تشخیص نوبت در سمت سرور)",
       "ActivityFlush": "پاک‌سازی دوره‌ای در نوبت‌های طولانی",
       "ActivityFlushMs": "فاصله پاک‌سازی",
       "ActivityFlushHint": "هر N میلی‌ثانیه در نوبت‌های طولانی، Gemini را به پردازش صدای انباشته تشویق می‌کند. از توقف رونویسی در مونولوگ‌ها / ارائه‌ها جلوگیری می‌کند. نیاز به غیرفعال‌سازی VAD خودکار دارد.",
       "ActivityFlushRequiresManualVad": "پاک‌سازی دوره‌ای فقط زمانی اعمال می‌شود که VAD خودکار غیرفعال باشد — سرور Gemini در غیر این صورت کنترل صریح فعالیت را رد می‌کند. کلید را روشن بگذارید و VAD خودکار را در پایین غیرفعال کنید تا از آن استفاده کنید.",
       "Reset": "بازنشانی همه به پیش‌فرض‌ها"
-    }
+    },
+    "SegmentCount": "بخش های {{count}}"
   },
   "GeminiTranscription": {
     "Title": "رونویسی زنده"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "یادداشت‌ها",
+    "SectionWiki": "ویکی",
+    "SectionTranscripts": "متن ضبط‌ها",
+    "SectionSummaries": "خلاصه ضبط‌ها",
+    "SectionOcr": "متن اسکرین‌شات",
+    "IndexingFallback": "در حال فهرست‌بندی — فقط نمایش تطابق نام فایل",
+    "Placeholder": "جستجو در یادداشت‌ها، ویکی و ضبط‌ها…",
+    "SoFar": "تاکنون",
+    "NoResults": "تطابقی یافت نشد"
+  },
+  "HelpPage": {
+    "Title": "بیشتر دربارهٔ SeaMeet بدانید"
   },
   "IdleCompactView": {
     "ArmFlashback": "آماده‌سازی برای بازگشت به خاطرات",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet به macOS 14.2 (Sonoma) یا جدیدتر نیاز دارد.\n\nبرخی قابلیت‌ها مانند تشخیص صدا به ازای هر برنامه و شروع خودکار جلسه ممکن است کار نکنند.\n\nاز طریق تنظیمات سیستم > عمومی > به‌روزرسانی نرم‌افزار به‌روزرسانی کنید.",
     "ContinueAnyway": "با این حال ادامه بده",
     "Quit": "خروج"
+  },
+  "MediaBlock": {
+    "Processing": "در حال پردازش…",
+    "SummaryReady": "خلاصه آماده است",
+    "Failed": "ناموفق",
+    "Tab": {
+      "Summary": "خلاصه",
+      "Transcript": "رونویسی",
+      "Actions": "اقدامات",
+      "Decisions": "تصمیم‌ها",
+      "Chapters": "فصل‌ها",
+      "Description": "توضیحات",
+      "Ocr": "متن OCR"
+    },
+    "MoreActions": "اقدامات بیشتر",
+    "Action": {
+      "ShowInFolder": "نمایش در پوشه",
+      "CopyEmbed": "کپی نحو جای‌گذاری",
+      "RerunAi": "اجرای دوباره هوش مصنوعی",
+      "Detach": "جدا کردن از یادداشت"
+    },
+    "AudioFallback": "مرورگر شما از پخش صدا پشتیبانی نمی‌کند.",
+    "WaitingForPipeline": "در انتظار پایان پردازش هوش مصنوعی…",
+    "PipelineFailed": "پردازش هوش مصنوعی برای این فایل ناموفق بود.",
+    "NoAiContent": "پردازش هوش مصنوعی به پایان رسید اما محتوای اضافه‌ای تولید نشد.",
+    "NoSummary": "خلاصه هوش مصنوعی هنوز ساخته نشده است.",
+    "Due": "موعد",
+    "Stage": {
+      "preparing": "در حال آماده‌سازی…",
+      "uploading": "در حال بارگذاری…",
+      "uploading-wait": "در حال پردازش بارگذاری…",
+      "analyzing": "در حال تحلیل…",
+      "extracting": "در حال استخراج…",
+      "saving": "در حال ذخیره…",
+      "complete": "تکمیل شد",
+      "gathering": "در حال جمع‌آوری…",
+      "reducing": "در حال بهبود…",
+      "writing": "در حال نوشتن…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "موارد عملی",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "زبان متن‌نویسی",
     "TranslationLanguage": "زبان ترجمه",
     "UnknownSpeaker": "سخنران ناشناس",
-    "WaitingForSpeech": "منتظر سخن گفتن…"
+    "WaitingForSpeech": "منتظر سخن گفتن…",
+    "SegmentCount": "بخش های {{count}}"
   },
   "MeetingDetail": {
     "Back": "← بازگشت",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "بازگشت به خاطرات صفحه در حال شارژ...",
     "ScreenRecording": "صفحه فیلم‌برداری ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "شروع به تایپ کنید یا از کلیپ‌بورد بچسبانید…",
+    "Saving": "در حال ذخیره…",
+    "Saved": "✓ ذخیره شد",
+    "SaveFailed": "ذخیره ناموفق بود",
+    "Editing": "در حال ویرایش…",
+    "TitlePlaceholder": "یادداشت بدون عنوان",
+    "TitleLabel": "عنوان یادداشت",
+    "RenameTooltip": "برای تغییر نام کلیک کنید",
+    "UntitledFallback": "یادداشت بدون عنوان",
+    "Renaming": "در حال تغییر نام…",
+    "LoadFailed": "بارگذاری یادداشت ناموفق بود",
+    "Bold": "پررنگ",
+    "Italic": "کج",
+    "Code": "کد",
+    "Heading1": "عنوان ۱",
+    "Heading2": "عنوان ۲",
+    "BulletList": "فهرست گلوله‌ای",
+    "OrderedList": "فهرست شماره‌دار",
+    "Link": "پیوند",
+    "LinkDialog": "درج پیوند",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "به‌روزرسانی",
+    "LinkAdd": "افزودن",
+    "LinkRemove": "حذف پیوند",
+    "InsertWikilink": "پیوند به یک یادداشت ([[ … ]])",
+    "SyncWiki": "همگام‌سازی ویکی",
+    "SyncWikiTooltip": "به‌جای انتظار برای فعال‌سازی خودکار، ویکی را از این یادداشت همین حالا به‌روزرسانی کنید",
+    "SyncWikiCouldNotQueue": "به‌روزرسانی ویکی به صف اضافه نشد",
+    "SyncWikiQueued": "در صف…",
+    "SyncWikiRunning": "در حال همگام‌سازی…",
+    "SyncWikiSuccess": "✓ همگام شد",
+    "SyncWikiError": "همگام‌سازی ناموفق بود",
+    "Blockquote": "نقل قول",
+    "CodeBlock": "بلاک کد",
+    "Heading3": "عنوان ۳",
+    "Highlight": "برجسته‌سازی",
+    "HorizontalRule": "خط افقی",
+    "ImageAdd": "درج",
+    "ImageDialog": "درج تصویر",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "درج تصویر",
+    "InsertTable": "درج جدول",
+    "Strike": "خط خورده",
+    "TableAddColumnAfter": "افزودن ستون بعد",
+    "TableAddColumnBefore": "افزودن ستون قبل",
+    "TableAddRowAfter": "افزودن سطر بعد",
+    "TableAddRowBefore": "افزودن سطر قبل",
+    "TableDelete": "حذف جدول",
+    "TableDeleteColumn": "حذف ستون",
+    "TableDeleteRow": "حذف سطر",
+    "TaskList": "لیست وظایف",
+    "Redo": "از نو",
+    "Underline": "زیرخط",
+    "Undo": "واگرد",
+    "Synthesize": "خلاصه هوش مصنوعی",
+    "SynthesizeRunning": "در حال خلاصه‌سازی…",
+    "SynthesizeTooltip": "تولید یا به‌روزرسانی خلاصه هوش مصنوعی برای این یادداشت",
+    "SynthesizeChooseTemplate": "یک قالب برای خلاصه هوش مصنوعی انتخاب کنید"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "اسکرین‌شات",
+      "Recording": "ضبط",
+      "AddedTo": "افزوده شد به",
+      "Open": "باز کردن"
+    },
+    "WikiUpdateFailed": "به‌روزرسانی ویکی ناموفق بود: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ خلاصه · {{version}}",
+      "Updated": "✨ خلاصه به‌روزرسانی شد · {{version}}",
+      "Jump": "پرش ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "انتخاب قالب…",
+      "Label": "گزینه‌های خلاصه"
+    }
+  },
+  "NotesList": {
+    "NewNote": "یادداشت جدید",
+    "JustNow": "همین الان",
+    "Yesterday": "دیروز",
+    "Title": "یادداشت‌ها",
+    "EmptyTitle": "اولین یادداشت خود را آغاز کنید",
+    "EmptySubtitle": "ضبط، ویژگی کلیدی است — ضبط‌ها و اسکرین‌شات‌ها را به هر یادداشتی اضافه کنید.",
+    "MediaCount": "{{n}} پیوست",
+    "ConfirmDelete": "حذف",
+    "DeleteNote": "حذف یادداشت"
+  },
+  "NotesTree": {
+    "Title": "یادداشت‌ها",
+    "NewNote": "یادداشت جدید",
+    "NewFolder": "پوشه جدید",
+    "NewFolderPrompt": "نام پوشه:",
+    "SortBy": "مرتب‌سازی بر اساس",
+    "SortManual": "دستی",
+    "SortName": "نام (الف → ی)",
+    "SortModified": "تغییر (جدیدترین اول)",
+    "CollapseAll": "بستن همه",
+    "SearchInTree": "جستجو در درخت",
+    "FilterPlaceholder": "فیلتر یادداشت‌ها…",
+    "DropToRoot": "برای انتقال به ریشه اینجا رها کنید",
+    "MoveTo": "انتقال به…",
+    "MoveToRoot": "انتقال به ریشه",
+    "Duplicate": "تکرار",
+    "RevealInFinder": "نمایش در Finder",
+    "RevealInExplorer": "نمایش در File Explorer",
+    "CopyWikilink": "کپی لینک ویکی",
+    "Pin": "سنجاق به بالا",
+    "Unpin": "برداشتن سنجاق",
+    "Rename": "تغییر نام",
+    "Delete": "حذف",
+    "Open": "باز کردن",
+    "Expand": "گسترش",
+    "OpenInNewTab": "باز کردن در زبانه جدید",
+    "ConfirmDeleteFolder": "پوشه «{{name}}» و همه محتویات آن حذف شود؟",
+    "RenameSucceeded": "تغییر نام داده شد",
+    "RenameWithRefs": "تغییر نام داده شد؛ {{count}} ارجاع به‌روز شد",
+    "SortDefault": "پیش‌فرض (ترتیب سیستم فایل)",
+    "ExpandAll": "همه را گسترش دهید",
+    "NewFolderPlaceholder": "نام پوشه جدید…",
+    "QuickOpen": "باز کردن سریع  (⌘P)",
+    "CopyRelativePath": "کپی مسیر نسبی",
+    "CopyFullPath": "کپی مسیر کامل",
+    "UpdateWikiFromNote": "به‌روزرسانی ویکی از این یادداشت",
+    "WikiUpdateFailed": "به‌روزرسانی ویکی ناموفق بود: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "یک یادداشت انتخاب کنید",
+    "SelectFromList": "از فهرست یک یادداشت انتخاب کنید یا یادداشت تازه‌ای بسازید.",
+    "NoNotes": "هنوز هیچ یادداشتی ندارید — اولین یادداشت خود را آغاز کنید.",
+    "CollapseSidebar": "پنهان کردن نوار کناری یادداشت‌ها",
+    "ExpandSidebar": "نمایش نوار کناری یادداشت‌ها"
+  },
   "OCRAutoCopy": {
     "Copied": "متن استخراج‌شده در کلیپ‌بورد کپی شد",
     "Error": "خطا در استخراج متن",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "بعد از هر تصویر صفحه OCR را اجرا کرده و متن استخراج‌شده را در کلیپ‌بورد کپی می‌کند",
     "SettingsLabel": "استخراج خودکار متن (OCR) هنگام تصویر صفحه"
   },
+  "OpenRecordingsFolder": "پوشه ضبط را باز کنید",
+  "OpenRecordingsFolderDesc": "پوشه ضبط پیش فرض را باز کنید",
   "Pause": "مکث کنید",
   "PermissionAlert": {
     "Title": "مجوز لازم است",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "باز کردن با Premium",
     "Upgrade": "ارتقا"
   },
+  "QuickOpen": {
+    "Placeholder": "تایپ را شروع کنید یا از کلیپ‌بورد جای‌گذاری کنید… برای پیوند به یادداشت دیگر از [[ استفاده کنید",
+    "NoResults": "هیچ یادداشت همخوانی یافت نشد",
+    "UnifiedPlaceholder": "باز کردن یادداشت یا صفحه ویکی با نام…",
+    "SectionNotes": "یادداشت‌ها",
+    "SectionWiki": "ویکی"
+  },
+  "RecordAudio": "ضبط صدا",
+  "RecordAudioDesc": "شروع ضبط صدا (ترکیب)",
+  "RecordFullscreen": "ضبط تمام صفحه",
+  "RecordFullscreenDesc": "شروع به ضبط ویدیوی تمام صفحه کنید",
+  "RecordRegion": "یک منطقه را برای ضبط ببندید",
+  "RecordRegionDesc": "یک منطقه صفحه نمایش را برای ضبط انتخاب کنید",
   "RecordTab": {
     "TapToRecord": "برای شروع ضبط ضربه بزنید",
     "RecordWithPreamble": "ضبط با پیش‌پخش {{seconds}} ثانیه",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "مکث کرد",
     "Preparing": "آماده سازی",
-    "PreparingToRecord": "آماده شدن برای ضبط..."
+    "PreparingToRecord": "آماده شدن برای ضبط...",
+    "InProgress": "در حال ضبط",
+    "WillBeAdded": "صدا با کلیک روی توقف در اینجا اضافه می‌شود",
+    "AttachingTo": "پیوست به {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "ضبط صدا",
@@ -1486,6 +1776,19 @@
     "SaveAs": "ذخیره به عنوان",
     "SearchRecordingsOrSnapshots": "جست‌وجو در ضبط‌ها و تصاویر لحظه‌ای",
     "ShowInFolder": "نشان دادن در پوشه"
+  },
+  "Regenerate": {
+    "Title": "بازتولید خلاصه یادداشت",
+    "PickTemplate": "یک قالب انتخاب کنید:",
+    "Custom": "یا دستورالعمل‌های سفارشی بنویسید (قالب را لغو می‌کند):",
+    "CustomPlaceholder": "مثلاً: 'روی تعهدات به مشتری X تمرکز کن، خروجی را به‌صورت یادداشت اجرایی یک‌صفحه‌ای ارائه بده.'",
+    "SaveAsTemplate": "ذخیره به‌عنوان قالب سفارشی",
+    "TemplateNamePlaceholder": "نام قالب",
+    "NameRequired": "برای ذخیره‌سازی نام الزامی است",
+    "OutputLanguageHint": "زبان خروجی از تنظیمات ← استخراج و خلاصه‌سازی هوش مصنوعی پیروی می‌کند",
+    "Submit": "بازتولید",
+    "AutoUpdate": "به‌روزرسانی خودکار هنگام نوشتن",
+    "AutoUpdateHint": "خلاصه را پس از تغییرات قابل‌توجه در این یادداشت دوباره اجرا می‌کند (از سهمیه هوش مصنوعی شما استفاده می‌کند)."
   },
   "RegionSelector": {
     "CaptureButton": "گرفتن تصویر صفحه یا فشردن Enter",
@@ -1595,6 +1898,20 @@
     "Sharing": "در حال اشتراک‌گذاری...",
     "ZeroBytes": "۰ بایت",
     "Info": "آمار"
+  },
+  "Search": {
+    "Placeholder": "جستجو… (⌘K)",
+    "Aria": "جستجو در یادداشت‌ها و ویکی",
+    "GroupNotes": "یادداشت‌ها",
+    "GroupWiki": "ویکی",
+    "GroupRecordings": "ضبط‌ها",
+    "GroupScreenshots": "اسکرین‌شات‌ها",
+    "Results": {
+      "Aria": "نتایج جستجو"
+    },
+    "Loading": "در حال جستجو…",
+    "NoResults": "نتیجه‌ای برای «{{query}}» یافت نشد",
+    "AgentHint": "برای جستجوی معنایی، دستیار هوش مصنوعی را امتحان کنید."
   },
   "Settings": {
     "About": {
@@ -1721,6 +2038,13 @@
       "Flashback": "بازگشت به خاطرات ضبط",
       "Storage": "فضای ذخیره‌سازی"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (رایگان، ۲۰ فراخوانی/روز)",
+      "FlashLiteFree": "Flash Lite (رایگان، ۵۰۰ فراخوانی/روز)",
+      "Help": "به‌روزرسانی‌های هوش مصنوعی هنگام اتمام این سهمیه به‌طور خودکار متوقف و سپس از سر گرفته می‌شوند.",
+      "Label": "سطح سهمیه Gemini",
+      "Paid": "سطح پولی"
+    },
     "SettingsFileLocation": "محل فایل تنظیمات",
     "Storage": {
       "Browse": "مرور...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "پاک‌سازی جستجو",
     "PrimaryNavigation": "ناوبری اصلی"
   },
+  "Tabs": {
+    "CloseTab": "بستن",
+    "RecordingHere": "در حال ضبط در اینجا",
+    "OrphanTooltip": "این فایل از دیسک حذف شده است",
+    "ScrollLeft": "اسکرول به چپ",
+    "ScrollRight": "اسکرول به راست"
+  },
+  "TakeScreenshot": "اسکرین شات بگیرید",
+  "TakeScreenshotDesc": "یک منطقه از صفحه را ضبط کنید",
   "TakeSnapshot": {
     "GoToSnapshot": "به عکس فوری جدید بروید",
     "Message": "عکس فوری گرفته شده و در:",
@@ -1786,7 +2119,7 @@
     "Title": "عکس فوری گرفته شده است"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "دستیار",
     "CloseNavigationMenu": "بستن منوی ناوبری",
     "Files": "فایل ها",
     "MainNavigation": "ناوبری اصلی",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "منوی ناوبری را باز کنید",
     "Record": "ضبط کنید",
     "Recording": "در حال ضبط",
-    "Screenshot": "عکس صفحه"
+    "Screenshot": "عکس صفحه",
+    "GroupCapture": "ضبط",
+    "GroupKnowledge": "دانش",
+    "Notes": "یادداشت‌ها",
+    "Wiki": "ویکی",
+    "GroupTools": "ابزارها"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet در سینی سیستم (پایین سمت راست) همچنان در حال اجرا است.",
@@ -1812,6 +2150,11 @@
     "Audio": "صوتی",
     "System": "خروجی صوتی سیستم",
     "Video": "ویدیو"
+  },
+  "UndoRename": {
+    "Toast": "تغییر نام داده شد؛ {{count}} ارجاع به‌روزرسانی شد",
+    "Action": "واگرد",
+    "ToastNoRefs": "تغییر نام داده شد"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "نصب و خروج",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Flashback ده ثانیهٔ آخر را ذخیره می‌کند — تا جملهٔ مهم آغازین را از دست ندهید.",
     "GotIt": "متوجه شدم"
   },
-  "HelpPage": {
-    "Title": "بیشتر دربارهٔ SeaMeet بدانید"
+  "Wiki": {
+    "AIBadgeTooltip": "محتوای تولیدشده توسط هوش مصنوعی",
+    "AIBadge": "ساختهٔ هوش مصنوعی",
+    "Backlinks": "پیوندهای بازگشتی",
+    "RelatedPages": "صفحات مرتبط",
+    "BuiltFrom": "ساخته‌شده از",
+    "SelectPage": "صفحه‌ای را انتخاب کنید",
+    "SelectPageHint": "از نوار کناری یک موجودیت، شخص یا موضوع را انتخاب کنید تا ببینید ویکی شما چه چیزی آموخته است.",
+    "LoadingPage": "هوش مصنوعی در حال ساخت این صفحه است…",
+    "LoadFailed": "بارگذاری این صفحهٔ ویکی ناموفق بود.",
+    "AISection": "بخش هوش مصنوعی",
+    "AIEmpty": "هنوز محتوایی توسط هوش مصنوعی وجود ندارد. به یادداشتی که از این موجودیت یاد می‌کند یک ضبط یا اسکرین‌شات اضافه کنید و سپس به‌روزرسانی ویکی را اجرا کنید.",
+    "SidebarTitle": "ویکی",
+    "EmptyTitle": "ویکی شما خالی است",
+    "EmptySubtitle": "یک جلسه را ضبط کنید یا یک یادداشت بنویسید تا ساخت پایگاه دانش خود را آغاز کنید.",
+    "UserSection": "یادداشت‌های شما",
+    "UserSectionTitle": "یادداشت‌های شما",
+    "UserSectionPlaceholder": "یادداشت‌های شخصی خود را اضافه کنید…",
+    "RefreshFromSources": "به‌روزرسانی از منابع",
+    "RefreshFromSourcesTooltip": "به‌روزرسانی فوری بخش هوش مصنوعی از {{count}} یادداشت منبع",
+    "RefreshFromSourcesHint": "برای به‌روزرسانی بخش هوش مصنوعی از {{count}} یادداشت منبع کلیک کنید. Shift+کلیک یادداشت‌های منبع را نیز بازخوانی می‌کند.",
+    "RefreshDisabledTooltip": "این صفحه ویکی هنوز یادداشت منبعی ندارد — ابتدا از یک یادداشت ایجادش کنید.",
+    "RefreshAriaLabel": "به‌روزرسانی صفحه ویکی از یادداشت‌های منبع",
+    "RefreshError": "به‌روزرسانی ناموفق بود",
+    "Bulk": {
+      "Build": "ساخت ویکی",
+      "BuildFromAll": "ساخت ویکی از همه یادداشت‌ها",
+      "BuildFromFolder": "ساخت ویکی از پوشه…",
+      "BuildFromSelection": "ساخت ویکی از انتخاب…",
+      "ToastMessage": "{{count}} یادداشت جدید شناسایی شد. ساخت ویکی؟",
+      "BannerMessage": "{{count}} یادداشت جدید از آخرین ساخت",
+      "BuildingExtracting": "خواندن {{current}}/{{total}} یادداشت",
+      "BuildingReducing": "ساخت {{current}}/{{total}} صفحه",
+      "Building": "ساخت ویکی — {{stage}}",
+      "PausedFor": "محدودیت نرخ: {{seconds}} ثانیه",
+      "Cancel": "لغو",
+      "Cancelling": "در حال لغو — تکمیل یادداشت فعلی…",
+      "Pause": "مکث",
+      "Continue": "ادامه",
+      "Paused": "متوقف — {{current}}/{{total}}",
+      "Restart": "راه‌اندازی مجدد",
+      "NowReading": "در حال خواندن: {{item}}",
+      "NowBuilding": "در حال ساخت: {{item}}",
+      "RecentList": "اخیراً پردازش‌شده",
+      "DoneSummary": "ویکی ساخته شد — {{notes}} یادداشت، {{pages}} صفحه",
+      "Resume": "ادامه",
+      "ResumeAvailable": "ساخت قبلی ویکی در {{current}}/{{total}} متوقف شد. ادامه؟",
+      "PolishIndex": "پولیش فهرست",
+      "PolishIndexHint": "افزودن مقدمه روایی به فهرست ویکی",
+      "BuildFromFolderPrompt": "مسیر پوشه (نسبی به فضای کاری):",
+      "BuildFromSelectionPrompt": "نام فایل‌های یادداشت با کاما (نسبی به notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "اقدامات بیشتر ویکی",
+      "BuildAllTooltip": "ساخت ویکی از همه یادداشت‌ها (تدریجی — فقط صفحاتی به‌روز می‌شوند که یادداشت منبعشان تغییر کرده).",
+      "BuildAllRunning": "در حال ساخت ویکی از همه یادداشت‌ها — بنر زیر را ببینید.",
+      "BuildAllAria": "ساخت ویکی از همه یادداشت‌ها"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "به‌روزرسانی خودکار ویکی از یادداشت‌ها",
+    "SettingsDesc": "از یادداشت ها و ضبط های شما پایگاه دانشی از موجودیت ها، افراد و موضوعات ایجاد می کند. به طور پیش فرض خاموش است."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "جست‌وجوی صفحات ویکی بر اساس نام…",
+    "NoResults": "هیچ صفحهٔ ویکی منطبقی پیدا نشد"
+  },
+  "WikiTree": {
+    "Title": "ویکی",
+    "NewPage": "صفحهٔ ویکی جدید",
+    "NewFolder": "پوشهٔ جدید",
+    "NewFolderPlaceholder": "نام پوشه…",
+    "SortBy": "مرتب‌سازی بر اساس",
+    "SortDefault": "پیش‌فرض (ترتیب فایل‌سیستم)",
+    "SortName": "نام (A → Z)",
+    "SortModified": "تغییریافته (جدیدترین اول)",
+    "CollapseAll": "بستن همه",
+    "ExpandAll": "بازکردن همه",
+    "SearchInTree": "فیلتر در درخت",
+    "FilterPlaceholder": "فیلتر صفحات…",
+    "DropToRoot": "برای انتقال به ریشهٔ ویکی رها کنید",
+    "MoveToRoot": "انتقال به ریشهٔ ویکی",
+    "Open": "باز کردن",
+    "Rename": "تغییر نام",
+    "Delete": "حذف",
+    "CopyWikilink": "کپی wikilink",
+    "CopyRelativePath": "کپی مسیر نسبی",
+    "CopyFullPath": "کپی مسیر کامل",
+    "ConfirmDeleteFile": "\"{{name}}\" به سطل زباله سیستم منتقل شود؟ (قابل بازیابی از Finder / Explorer.)",
+    "ConfirmDeleteFolder": "پوشه \"{{name}}\" و تمام محتوای آن به سطل زباله سیستم منتقل شود؟",
+    "Empty": "هنوز صفحهٔ ویکی وجود ندارد. هنگام ضبط جلسات، خط‌لوله اینجا می‌نویسد.",
+    "SetDefaultEntity": "تنظیم به‌عنوان پیش‌فرض برای صفحات entity جدید",
+    "SetDefaultPerson": "تنظیم به‌عنوان پیش‌فرض برای صفحات person جدید",
+    "SetDefaultTopic": "تنظیم به‌عنوان پیش‌فرض برای صفحات topic جدید",
+    "SetDefaultMeeting": "تنظیم به‌عنوان پیش‌فرض برای صفحات meeting جدید",
+    "DefaultLabel": "پیش‌فرض برای {{wikiKind}}",
+    "AIBadge": "تولیدشده توسط هوش مصنوعی",
+    "UserBadge": "ویرایش‌شده توسط کاربر",
+    "QuickOpen": "باز کردن سریع (⌘P)",
+    "ConflictBadge": "نسخهٔ تداخلی",
+    "EmptyAiCurated": "هوش مصنوعی این پوشه را پر می‌کند وقتی ضبط‌ها یا یادداشت‌های شما یک موجودیت، شخص، موضوع یا جلسه را ذکر کنند. یک یادداشت را باز کنید و روی همگام‌سازی ویکی کلیک کنید تا صفحات تولید شوند."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] در این فضای کاری وجود ندارد",
+    "Collision": "{{count}} یادداشت در نام پایه {{name}} مشترک‌اند",
+    "DisambiguationTitle": "یادداشت موردنظر برای باز کردن را انتخاب کنید",
+    "DisambiguationOpenAt": "در {{folder}}",
+    "SuggestEmpty": "هیچ یادداشت یا صفحهٔ ویکی منطبقی پیدا نشد",
+    "BrokenTooltipSyncWiki": "این صفحه هنوز ساخته نشده — روی همگام‌سازی ویکی در این یادداشت کلیک کنید تا تولید شود.",
+    "SyncContextMenu": "همگام‌سازی ویکی",
+    "SyncToGenerate": "ویکی را همگام‌سازی کنید تا این صفحه تولید شود"
   },
   "WindowPicker": {
     "Instruction": "پنجره ای را برای ضبط برای ضبط پنجره انتخاب کنید.",
@@ -1947,6 +2399,15 @@
     "Title": "یک پنجره را انتخاب کنید",
     "Unknown": "پنجره بدون عنوان"
   },
+  "Workspace": {
+    "None": "بدون فضای کاری",
+    "EmptyList": "هیچ فضای کاری ثبت نشده است",
+    "Add": "افزودن فضای کاری…",
+    "Remove": "حذف از SeaMeet",
+    "RemoveTooltip": "حذف از SeaMeet (فایل‌ها روی دیسک باقی می‌مانند)",
+    "ConfirmRemove": "فضای کاری «{{name}}» حذف شود؟ فایل‌های روی دیسک حذف نمی‌شوند؛ فقط ورودی SeaMeet حذف می‌شود.",
+    "Default": "پیش‌فرض"
+  },
   "agent": {
     "fabLabel": "از هوش مصنوعی بپرسید",
     "panelLabel": "دستیار هوش مصنوعی",
@@ -1954,11 +2415,21 @@
     "maximize": "بزرگ‌نمایی",
     "close": "بستن"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "در حال آماده‌سازی ضبط شما…"
+    },
+    "error": {
+      "title": "ما نتوانستیم این ضبط را پردازش کنیم",
+      "body": "کلید API خود را بررسی کنید یا دوباره امتحان کنید."
+    },
+    "disabled": "ویژگی‌های هوش مصنوعی خاموش هستند. برای دیدن خلاصه‌ها و اقدامات، آنها را در تنظیمات فعال کنید."
+  },
   "floatingPip": {
     "minimize": "کوچک‌نمایی",
     "maximize": "بزرگ‌نمایی",
-    "close": "بستن",
     "restore": "بازیابی",
+    "close": "بستن",
     "exit": "خروج از تصویر در تصویر"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "تغییر به طرح کلاسیک",
       "floating": "تغییر به طرح شناور"
     },
+    "showPipTooltip": "نمایش تصویر در تصویر",
     "announce": {
       "classic": "به طرح کلاسیک تغییر یافت",
       "floating": "به طرح شناور تغییر یافت"
     },
-    "introToast": "جدید: طرح شناور در دسترس است. برای امتحان روی نماد طرح در سرصفحه کلیک کنید.",
-    "showPipTooltip": "نمایش تصویر در تصویر"
+    "introToast": "جدید: طرح شناور در دسترس است. برای امتحان روی نماد طرح در سرصفحه کلیک کنید."
   }
 }

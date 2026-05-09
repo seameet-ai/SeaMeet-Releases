@@ -31,8 +31,8 @@
       "DefaultModel": "デフォルトモデル",
       "GetKeyLink": "Anthropic Console から API キーを取得 →",
       "HideKey": "キーを隠す",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
+      "InstallMac": "macOS / Linux：",
+      "InstallWin": "Windows（PowerShell）：",
       "ApiKeyTitle": "APIキー",
       "KeyInvalid": "無効なキー",
       "KeyPlaceholder": "スク-アリ-...",
@@ -209,6 +209,47 @@
       "Live": "ライブ"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ AI によって更新",
+    "Title": "ノート要約",
+    "Meta": "{{count}} 件の録音 · テンプレート: {{tpl}}",
+    "CopyToEdit": "編集用にコピー",
+    "Regenerate": "再生成",
+    "Generating": "生成中…",
+    "Provenance": "{{n}} 件の録音から生成",
+    "Error": "生成に失敗: {{err}}",
+    "RenameSuggested": "AIの提案: \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "一般会議",
+        "description": "決定事項、アクション、議論"
+      },
+      "brainstorm": {
+        "name": "ブレインストーム",
+        "description": "アイデア、流れ、未解決の問い"
+      },
+      "lecture": {
+        "name": "講義 / トーク",
+        "description": "テーゼ、要点、質問、参考文献"
+      },
+      "oneonone": {
+        "name": "1:1 / インタビュー",
+        "description": "テーマ、感情、フォローアップ"
+      },
+      "sales": {
+        "name": "セールスコール",
+        "description": "発見、反対、次のステップ、意思決定者"
+      },
+      "standup": {
+        "name": "スタンドアップ / 状況",
+        "description": "各人の更新、ブロッカー、次"
+      }
+    },
+    "RegenerateTooltip": "同じテンプレートで再生成",
+    "RegenerateChooseTemplate": "別のテンプレートで再生成",
+    "Stale": "古い · 更新",
+    "StaleTooltip": "このサマリー生成後にノートが変更されました — クリックして更新。"
+  },
   "About": {
     "AppStoreBuild": "App Store版",
     "DirectBuild": "ダイレクトビルド",
@@ -301,7 +342,8 @@
       "Output": "出力",
       "Pattern": "パターン：",
       "Reading": "ファイルを読み取り中...",
-      "ShowDetails": "詳細を表示"
+      "ShowDetails": "詳細を表示",
+      "AndMoreLines": "...さらに {{count}} 行"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} アクション",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} 完了しました",
       "Completed_other": "{{count}} 完了しました",
       "Running_one": "{{count}} 実行中",
-      "Running_other": "{{count}} 実行中"
+      "Running_other": "{{count}} 実行中",
+      "Running": "{{count}} 実行中",
+      "Completed": "{{count}} が完了しました",
+      "Actions": "{{count}} アクション"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "AIエージェントを使用するには、APIキーを設定してください。"
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "録音を準備しています…"
-    },
-    "error": {
-      "title": "この録音を処理できませんでした",
-      "body": "APIキーを確認するか、もう一度お試しください。"
-    },
-    "disabled": "AI機能はオフになっています。要約とアクションを表示するには、設定で有効にしてください。"
   },
   "App": {
     "FailedToEnableFlashback": "フラッシュバックを有効にできませんでした: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "詳細設定 →",
     "LearnMore": "詳細"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "はじめてですか？ 仕組みはこちら →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "自動検出",
     "Description": "自動検出はミーティング参加時に自動的に録音を開始します。録音を押し忘れる心配はありません。",
@@ -424,9 +462,6 @@
     "Tip2Desc": "正確性を高めるためにマイクの活動、ウィンドウタイトル、ブラウザのURLを使用します",
     "Tip2Title": "複数の検出方法",
     "Title": "ミーティングの自動検出"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "はじめてですか？ 仕組みはこちら →"
   },
   "AutoRecording": {
     "BugReport": "バグを見つけましたか？ seameet@seasalt.aiに報告してください",
@@ -625,7 +660,8 @@
       "TabLabel": "デバイス",
       "Today": "今日",
       "Yesterday": "昨日",
-      "YourDevices": "あなたのデバイス"
+      "YourDevices": "あなたのデバイス",
+      "DaysAgo": "{{count}} 日前"
     },
     "FAQ": {
       "Title": "よくある質問",
@@ -856,7 +892,12 @@
     "Starting": "起動中...",
     "UnknownApp": "不明なアプリケーション",
     "Copied": "コピーしました！",
-    "Copy": "コピー"
+    "Copy": "コピー",
+    "Clear": "クリア",
+    "Forward": "フォワード",
+    "Refresh": "リフレッシュ",
+    "Apply": "適用",
+    "Undo": "元に戻す"
   },
   "DeletePrompt": {
     "Cancel": "キャンセル",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "マーク済みイベント",
     "Title": "イベント"
   },
+  "ExternalChange": {
+    "Banner": "編集中にこのファイルがディスク上で変更されました。",
+    "Reload": "ディスクのバージョンを再読み込み",
+    "Keep": "自分のバージョンを保持"
+  },
+  "FAB": {
+    "Label": "クイックアクション",
+    "Stop": "録音を停止",
+    "Record": "録音を開始",
+    "Screenshot": "スクリーンショットを撮る",
+    "Agent": "AI エージェント",
+    "PickSource": "録音ソースを選択",
+    "PickScreenshotSource": "スクリーンショットのソースを選択",
+    "SourceAudio": "音声のみ",
+    "SourceFullscreen": "全画面",
+    "SourceWindow": "ウィンドウ",
+    "SourceRegion": "範囲",
+    "ScreenshotFullscreen": "全画面",
+    "ScreenshotWindow": "ウィンドウ",
+    "ScreenshotRegion": "範囲",
+    "LiveTranscription": "ライブ文字起こし",
+    "ToggleLiveTranscription": "ライブ文字起こしを切り替え",
+    "RecordingInProgress": "録音中…",
+    "OpenBoundNote": "この録音が添付されているメモを開く"
+  },
   "FileImport": {
     "BrowseFiles": "ファイルを参照",
     "DragDropFiles": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "動画ファイルをコピー中...",
     "VideoImportSaving": "動画ファイルを保存中...",
     "VideoUnsupported": "この動画形式はアプリで再生できない場合があります。ファイルはインポートされます。"
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "{{count}} 件の一致をすべて置換しますか?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "検索",
+    "AriaLabel": "検索と置換",
+    "CaseSensitive": "大文字と小文字を区別",
+    "ClearSearch": "クリア",
+    "Previous": "前の結果",
+    "Next": "次の結果",
+    "NoResults": "結果なし",
+    "ReplacePlaceholder": "置換",
+    "WikiAiReadonly": "AI セクションは読み取り専用です — 置換はユーザーセクションでのみ動作します",
+    "Replace": "置換",
+    "ReplaceAll": "すべて置換",
+    "CloseBar": "検索/置換を閉じる",
+    "WikiCounterSplit": "ノートに {{userCount}} 件 + AI セクションに {{aiCount}} 件"
   },
   "FlashbackControls": {
     "AudioFlashback": "オーディオフラッシュバック",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "フレーム JPEG 品質",
       "VideoMaxWidth": "フレーム最大幅",
       "VideoQualityHint": "Gemini が小さなタイルラベル(Zoom / Meet / Teams の参加者名など)を誤読する場合は品質と最大幅を上げてください。値を大きくすると画像トークン使用量が増加します — 1280 px にするとフレームあたり 258 トークンから 1290 トークンのティアに上がります。",
-      "DisableAutoVad": "自動 VAD を無効にする(サーバー側のターン検出)",
       "EndSensitivity": "発話終了の感度",
       "Default": "デフォルト(HIGH — 速いフラッシュ)",
       "SilenceMs": "ターン終了までの無音時間",
       "VadHint": "無音を短く + 感度 HIGH → より短く頻繁な書き起こしフラッシュ。",
+      "DisableAutoVad": "自動 VAD を無効にする(サーバー側のターン検出)",
       "ActivityFlush": "長いターン中の定期フラッシュ",
       "ActivityFlushMs": "フラッシュ間隔",
       "ActivityFlushHint": "長いターン中 N ミリ秒ごとに Gemini に蓄積した音声の処理を促します。独白やプレゼンテーション中の書き起こし停止を防ぎます。自動 VAD を無効にする必要があります。",
       "ActivityFlushRequiresManualVad": "定期フラッシュは自動 VAD が無効な場合のみ有効です — 自動 VAD が有効なときサーバーは明示的なアクティビティ制御を拒否します。このトグルはオンのまま、下の自動 VAD を無効にしてください。",
       "Reset": "すべて既定値にリセット"
-    }
+    },
+    "SegmentCount": "{{count}} セグメント"
   },
   "GeminiTranscription": {
     "Title": "リアルタイム文字起こし"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "ノート",
+    "SectionWiki": "ウィキ",
+    "SectionTranscripts": "録音の文字起こし",
+    "SectionSummaries": "録音の要約",
+    "SectionOcr": "スクリーンショットのテキスト",
+    "IndexingFallback": "インデックス作成中 — ファイル名の一致のみ表示",
+    "Placeholder": "ノート、ウィキ、録音を検索…",
+    "SoFar": "これまでのところ",
+    "NoResults": "一致なし"
+  },
+  "HelpPage": {
+    "Title": "SeaMeet についてもっと知る"
   },
   "IdleCompactView": {
     "ArmFlashback": "フラッシュバックを準備",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet には macOS 14.2（Sonoma）以降が必要です。\n\nアプリごとの音声検出や会議の自動開始など、一部の機能が動作しない場合があります。\n\n「システム設定」>「一般」>「ソフトウェアアップデート」から更新してください。",
     "ContinueAnyway": "続行する",
     "Quit": "終了"
+  },
+  "MediaBlock": {
+    "Processing": "処理中…",
+    "SummaryReady": "要約の準備ができました",
+    "Failed": "失敗",
+    "Tab": {
+      "Summary": "要約",
+      "Transcript": "文字起こし",
+      "Actions": "アクション",
+      "Decisions": "決定事項",
+      "Chapters": "チャプター",
+      "Description": "説明",
+      "Ocr": "OCR テキスト"
+    },
+    "MoreActions": "その他の操作",
+    "Action": {
+      "ShowInFolder": "フォルダで表示",
+      "CopyEmbed": "埋め込み構文をコピー",
+      "RerunAi": "AI を再実行",
+      "Detach": "ノートから切り離す"
+    },
+    "AudioFallback": "お使いのブラウザは音声再生に対応していません。",
+    "WaitingForPipeline": "AI 処理の完了を待っています…",
+    "PipelineFailed": "このファイルの AI 処理に失敗しました。",
+    "NoAiContent": "AI 処理は完了しましたが、追加コンテンツは生成されませんでした。",
+    "NoSummary": "AI 要約はまだ生成されていません。",
+    "Due": "期限",
+    "Stage": {
+      "preparing": "準備中…",
+      "uploading": "アップロード中…",
+      "uploading-wait": "アップロード処理中…",
+      "analyzing": "分析中…",
+      "extracting": "抽出中…",
+      "saving": "保存中…",
+      "complete": "完了",
+      "gathering": "収集中…",
+      "reducing": "洗練中…",
+      "writing": "書き込み中…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "アクションアイテム",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "音声書き起こし言語",
     "TranslationLanguage": "翻訳対象の言語",
     "UnknownSpeaker": "話者",
-    "WaitingForSpeech": "音声を待機中..."
+    "WaitingForSpeech": "音声を待機中...",
+    "SegmentCount": "{{count}} セグメント"
   },
   "MeetingDetail": {
     "Back": "← 戻る",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "スクリーン・フラッシュバック充電中…",
     "ScreenRecording": "画面録画（{{time}}）"
   },
+  "NoteEditor": {
+    "Placeholder": "入力するか、クリップボードから貼り付けてください…",
+    "Saving": "保存中…",
+    "Saved": "✓ 保存しました",
+    "SaveFailed": "保存に失敗しました",
+    "Editing": "編集中…",
+    "TitlePlaceholder": "無題のノート",
+    "TitleLabel": "ノートのタイトル",
+    "RenameTooltip": "クリックして名前を変更",
+    "UntitledFallback": "無題のノート",
+    "Renaming": "名前を変更中…",
+    "LoadFailed": "ノートの読み込みに失敗しました",
+    "Bold": "太字",
+    "Italic": "斜体",
+    "Code": "コード",
+    "Heading1": "見出し 1",
+    "Heading2": "見出し 2",
+    "BulletList": "箇条書き",
+    "OrderedList": "番号付きリスト",
+    "Link": "リンク",
+    "LinkDialog": "リンクを挿入",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "更新",
+    "LinkAdd": "追加",
+    "LinkRemove": "リンクを削除",
+    "InsertWikilink": "ノートにリンク ([[ … ]])",
+    "SyncWiki": "wiki を同期",
+    "SyncWikiTooltip": "自動トリガーを待たずに、このノートから wiki を今すぐ更新",
+    "SyncWikiCouldNotQueue": "wiki 更新をキューに追加できませんでした",
+    "SyncWikiQueued": "キュー登録済み…",
+    "SyncWikiRunning": "同期中…",
+    "SyncWikiSuccess": "✓ 同期済み",
+    "SyncWikiError": "同期に失敗",
+    "Blockquote": "引用",
+    "CodeBlock": "コードブロック",
+    "Heading3": "見出し 3",
+    "Highlight": "ハイライト",
+    "HorizontalRule": "水平線",
+    "ImageAdd": "挿入",
+    "ImageDialog": "画像を挿入",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "画像を挿入",
+    "InsertTable": "表を挿入",
+    "Strike": "取り消し線",
+    "TableAddColumnAfter": "後に列を追加",
+    "TableAddColumnBefore": "前に列を追加",
+    "TableAddRowAfter": "後に行を追加",
+    "TableAddRowBefore": "前に行を追加",
+    "TableDelete": "表を削除",
+    "TableDeleteColumn": "列を削除",
+    "TableDeleteRow": "行を削除",
+    "TaskList": "タスクリスト",
+    "Redo": "やり直す",
+    "Underline": "下線",
+    "Undo": "元に戻す",
+    "Synthesize": "AI サマリー",
+    "SynthesizeRunning": "生成中…",
+    "SynthesizeTooltip": "このノートの AI サマリーを生成または更新",
+    "SynthesizeChooseTemplate": "AI要約のテンプレートを選択"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "スクリーンショット",
+      "Recording": "録音",
+      "AddedTo": "を次のノートに追加しました：",
+      "Open": "開く"
+    },
+    "WikiUpdateFailed": "Wikiの更新に失敗しました: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ サマリー · {{version}}",
+      "Updated": "✨ サマリーを更新 · {{version}}",
+      "Jump": "移動 ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "テンプレートを選択…",
+      "Label": "サマリーオプション"
+    }
+  },
+  "NotesList": {
+    "NewNote": "新規ノート",
+    "JustNow": "たった今",
+    "Yesterday": "昨日",
+    "Title": "ノート",
+    "EmptyTitle": "最初のノートを書きましょう",
+    "EmptySubtitle": "録音が決め手 — どのノートにも録音やスクリーンショットを追加できます。",
+    "MediaCount": "添付メディア {{n}} 件",
+    "ConfirmDelete": "削除",
+    "DeleteNote": "ノートを削除"
+  },
+  "NotesTree": {
+    "Title": "ノート",
+    "NewNote": "新しいノート",
+    "NewFolder": "新しいフォルダ",
+    "NewFolderPrompt": "フォルダ名：",
+    "SortBy": "並べ替え",
+    "SortManual": "手動並べ替え",
+    "SortName": "名前 (A → Z)",
+    "SortModified": "更新日時 (新しい順)",
+    "CollapseAll": "すべて折りたたむ",
+    "SearchInTree": "ツリー内を検索",
+    "FilterPlaceholder": "ノートを絞り込み…",
+    "DropToRoot": "ドロップしてルートに移動",
+    "MoveTo": "移動先…",
+    "MoveToRoot": "ルートに移動",
+    "Duplicate": "複製",
+    "RevealInFinder": "Finder で表示",
+    "RevealInExplorer": "エクスプローラーで表示",
+    "CopyWikilink": "Wiki リンクをコピー",
+    "Pin": "先頭に固定",
+    "Unpin": "固定を解除",
+    "Rename": "名前を変更",
+    "Delete": "削除",
+    "Open": "開く",
+    "Expand": "展開",
+    "OpenInNewTab": "新しいタブで開く",
+    "ConfirmDeleteFolder": "フォルダ「{{name}}」とその中のすべてを削除しますか?",
+    "RenameSucceeded": "名前を変更しました",
+    "RenameWithRefs": "名前を変更しました。{{count}} 件の参照を更新しました",
+    "SortDefault": "デフォルト (ファイルシステム順)",
+    "ExpandAll": "すべて展開",
+    "NewFolderPlaceholder": "新しいフォルダ名…",
+    "QuickOpen": "クイックオープン  (⌘P)",
+    "CopyRelativePath": "相対パスをコピー",
+    "CopyFullPath": "絶対パスをコピー",
+    "UpdateWikiFromNote": "このノートから Wiki を更新",
+    "WikiUpdateFailed": "Wiki の更新に失敗しました: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "ノートを選択",
+    "SelectFromList": "リストからノートを選ぶか、新しいノートを作成してください。",
+    "NoNotes": "ノートがまだありません — 最初のノートを書きましょう。",
+    "CollapseSidebar": "ノートサイドバーを隠す",
+    "ExpandSidebar": "ノートサイドバーを表示"
+  },
   "OCRAutoCopy": {
     "Copied": "抽出したテキストをクリップボードにコピーしました",
     "Error": "テキストの抽出に失敗しました",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "スクリーンショット毎にOCRを実行し、抽出したテキストをクリップボードにコピーします",
     "SettingsLabel": "スクリーンショット時にテキストを自動抽出（OCR）"
   },
+  "OpenRecordingsFolder": "録音フォルダーを開く",
+  "OpenRecordingsFolderDesc": "デフォルトの録音フォルダーを開きます",
   "Pause": "一時停止",
   "PermissionAlert": {
     "Title": "権限が必要です",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "Premiumでロック解除",
     "Upgrade": "アップグレード"
   },
+  "QuickOpen": {
+    "Placeholder": "入力またはクリップボードから貼り付け… [[ で他のノートにリンク",
+    "NoResults": "一致するノートはありません",
+    "UnifiedPlaceholder": "名前でノートまたはウィキページを開く…",
+    "SectionNotes": "ノート",
+    "SectionWiki": "ウィキ"
+  },
+  "RecordAudio": "音声を録音する",
+  "RecordAudioDesc": "オーディオの録音を開始します (混合)",
+  "RecordFullscreen": "全画面録画",
+  "RecordFullscreenDesc": "全画面ビデオの録画を開始する",
+  "RecordRegion": "領域をスナップして記録する",
+  "RecordRegionDesc": "録画する画面領域を選択します",
   "RecordTab": {
     "TapToRecord": "タップして録音を開始",
     "RecordWithPreamble": "{{seconds}}秒の前置き付きで録音",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "一時停止中",
     "Preparing": "準備中",
-    "PreparingToRecord": "録音準備中..."
+    "PreparingToRecord": "録音準備中...",
+    "InProgress": "録音中",
+    "WillBeAdded": "停止をクリックすると、ここに音声が追加されます",
+    "AttachingTo": "{{note}}に添付中"
   },
   "RecordingControls": {
     "AudioRecording": "オーディオ録音",
@@ -1486,6 +1776,19 @@
     "SaveAs": "名前を付けて保存",
     "SearchRecordingsOrSnapshots": "録音とスナップショットを検索",
     "ShowInFolder": "フォルダーで表示"
+  },
+  "Regenerate": {
+    "Title": "ノート要約を再生成",
+    "PickTemplate": "テンプレートを選択:",
+    "Custom": "またはカスタム指示を記入（テンプレートより優先）:",
+    "CustomPlaceholder": "例: '顧客 X への約束に焦点を当て、1 ページのエグゼクティブメモとして出力してください。'",
+    "SaveAsTemplate": "カスタムテンプレートとして保存",
+    "TemplateNamePlaceholder": "テンプレート名",
+    "NameRequired": "保存するには名前が必要です",
+    "OutputLanguageHint": "出力言語は設定 → AI 抽出とサマリーに従います",
+    "Submit": "再生成",
+    "AutoUpdate": "入力時に自動更新",
+    "AutoUpdateHint": "このノートに大きな変更があった後にサマリーを再生成します (AI クォータを消費します)。"
   },
   "RegionSelector": {
     "CaptureButton": "画面をキャプチャするか、Enterキーを押してください",
@@ -1593,8 +1896,22 @@
     "ShareCompleted": "共有完了",
     "ShareFailed": "このブラウザでは共有はサポートされていません。",
     "Sharing": "共有中...",
-    "ZeroBytes": "0 Bytes",
+    "ZeroBytes": "0 バイト",
     "Info": "統計"
+  },
+  "Search": {
+    "Placeholder": "検索… (⌘K)",
+    "Aria": "ノートと Wiki を検索",
+    "GroupNotes": "ノート",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "録音",
+    "GroupScreenshots": "スクリーンショット",
+    "Results": {
+      "Aria": "検索結果"
+    },
+    "Loading": "検索中…",
+    "NoResults": "「{{query}}」の結果は見つかりませんでした",
+    "AgentHint": "セマンティック検索には AI エージェントをお試しください。"
   },
   "Settings": {
     "About": {
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "全文",
         "OneSentence": "一文要約",
-        "TLDR": "TLDR"
+        "TLDR": "要約"
       },
       "NoUpdatesAvailable": "アップデートはありません",
       "Privacy": {
@@ -1721,6 +2038,13 @@
       "Flashback": "フラッシュバック録画",
       "Storage": "ストレージ"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (無料、20 回/日)",
+      "FlashLiteFree": "Flash Lite (無料、500 回/日)",
+      "Help": "このクォータを使い切ると AI 更新は自動的に一時停止し、その後再開されます。",
+      "Label": "Gemini クォータティア",
+      "Paid": "有料ティア"
+    },
     "SettingsFileLocation": "設定ファイルの場所",
     "Storage": {
       "Browse": "ブラウズ…",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "検索結果をクリア",
     "PrimaryNavigation": "主要ナビゲーション"
   },
+  "Tabs": {
+    "CloseTab": "閉じる",
+    "RecordingHere": "ここで録音中",
+    "OrphanTooltip": "このファイルはディスクから削除されました",
+    "ScrollLeft": "タブを左にスクロール",
+    "ScrollRight": "タブを右にスクロール"
+  },
+  "TakeScreenshot": "スクリーンショットを撮る",
+  "TakeScreenshotDesc": "画面の領域をキャプチャする",
   "TakeSnapshot": {
     "GoToSnapshot": "新しいスナップショットへ移動",
     "Message": "スナップショットを撮影し、保存しました：",
@@ -1786,7 +2119,7 @@
     "Title": "スナップショットを撮影しました"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "エージェント",
     "CloseNavigationMenu": "ナビゲーション Menuを閉じる",
     "Files": "ファイル",
     "MainNavigation": "メインナビゲーション",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "ナビゲーション Menuを開く",
     "Record": "記録",
     "Recording": "録音",
-    "Screenshot": "スクリーンショット"
+    "Screenshot": "スクリーンショット",
+    "GroupCapture": "キャプチャ",
+    "GroupKnowledge": "ナレッジ",
+    "Notes": "ノート",
+    "Wiki": "Wiki",
+    "GroupTools": "ツール"
   },
   "Tray": {
     "MinimizedHint": "SeaMeetはまだシステムトレイ（右下）で実行中です。",
@@ -1812,6 +2150,11 @@
     "Audio": "音声",
     "System": "システムオーディオ出力",
     "Video": "動画"
+  },
+  "UndoRename": {
+    "Toast": "名前を変更しました。{{count}} 件の参照を更新しました",
+    "Action": "元に戻す",
+    "ToastNoRefs": "名前変更済み"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "インストールして終了",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "フラッシュバックは直近10秒を保存 — 冒頭の一言を逃しません。",
     "GotIt": "はい"
   },
-  "HelpPage": {
-    "Title": "SeaMeet についてもっと知る"
+  "Wiki": {
+    "AIBadgeTooltip": "AI 生成コンテンツ",
+    "AIBadge": "AI 生成",
+    "Backlinks": "バックリンク",
+    "RelatedPages": "関連ページ",
+    "BuiltFrom": "構築元",
+    "SelectPage": "ページを選択",
+    "SelectPageHint": "サイドバーからエンティティ、人物、トピックを選んで、Wiki に蓄積された内容を確認してください。",
+    "LoadingPage": "AI がこのページを構築中です…",
+    "LoadFailed": "この Wiki ページを読み込めませんでした。",
+    "AISection": "AI セクション",
+    "AIEmpty": "AI コンテンツはまだありません。このエンティティに言及するノートに録音やスクリーンショットを追加してから、Wiki 更新を実行してください。",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Wiki はまだ空です",
+    "EmptySubtitle": "会議を録音するか、ノートを書いて、ナレッジベースの構築を始めましょう。",
+    "UserSection": "あなたのノート",
+    "UserSectionTitle": "あなたのノート",
+    "UserSectionPlaceholder": "ご自身のメモを追加…",
+    "RefreshFromSources": "ソースから更新",
+    "RefreshFromSourcesTooltip": "{{count}} 件のソースノートから AI セクションを今すぐ更新",
+    "RefreshFromSourcesHint": "{{count}} 件のソースノートから AI セクションを更新するにはクリック。Shift+クリックでソースノートも再読み込みします。",
+    "RefreshDisabledTooltip": "この Wiki ページにはまだソースノートがありません。先にノートから生成してください。",
+    "RefreshAriaLabel": "ソースノートから Wiki ページを更新",
+    "RefreshError": "更新に失敗しました",
+    "Bulk": {
+      "Build": "Wiki を作成",
+      "BuildFromAll": "すべてのノートから Wiki を作成",
+      "BuildFromFolder": "フォルダから Wiki を作成…",
+      "BuildFromSelection": "選択範囲から Wiki を作成…",
+      "ToastMessage": "{{count}} 件の新しいノートを検出しました。Wiki を作成しますか?",
+      "BannerMessage": "前回ビルド以降の新規ノート {{count}} 件",
+      "BuildingExtracting": "{{current}}/{{total}} 件のノートを読み込み中",
+      "BuildingReducing": "{{current}}/{{total}} 件のページを作成中",
+      "Building": "Wiki を作成中 — {{stage}}",
+      "PausedFor": "レート制限: {{seconds}} 秒",
+      "Cancel": "キャンセル",
+      "Cancelling": "キャンセル中 — 現在のノートを完了しています…",
+      "Pause": "一時停止",
+      "Continue": "続行",
+      "Paused": "一時停止中 — {{current}}/{{total}}",
+      "Restart": "再開",
+      "NowReading": "読み込み中: {{item}}",
+      "NowBuilding": "作成中: {{item}}",
+      "RecentList": "最近処理した項目",
+      "DoneSummary": "Wiki を作成しました — ノート {{notes}} 件、ページ {{pages}} 件",
+      "Resume": "再開",
+      "ResumeAvailable": "前回の Wiki 作成が {{current}}/{{total}} で中断しました。再開しますか?",
+      "PolishIndex": "インデックスを整える",
+      "PolishIndexHint": "Wiki のインデックスにナレーション風の紹介を追加",
+      "BuildFromFolderPrompt": "フォルダパス (ワークスペースからの相対):",
+      "BuildFromSelectionPrompt": "カンマ区切りのノートファイル名 (notes/ からの相対):"
+    },
+    "Toolbar": {
+      "Overflow": "その他の Wiki 操作",
+      "BuildAllTooltip": "すべてのノートから Wiki を作成 (増分 — ソースノートが変更されたページのみ更新します)。",
+      "BuildAllRunning": "すべてのノートから Wiki を作成中 — 下のバナーを参照してください。",
+      "BuildAllAria": "すべてのノートから Wiki を作成"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "メモからの Wiki の自動更新",
+    "SettingsDesc": "メモや録音からエンティティ、人物、トピックの知識ベースを構築します。デフォルトではオフです。"
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "wiki ページを名前で検索…",
+    "NoResults": "一致する wiki ページはありません"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "新しい wiki ページ",
+    "NewFolder": "新しいフォルダ",
+    "NewFolderPlaceholder": "フォルダ名…",
+    "SortBy": "並べ替え",
+    "SortDefault": "デフォルト（ファイルシステム順）",
+    "SortName": "名前（A → Z）",
+    "SortModified": "更新日時（新しい順）",
+    "CollapseAll": "すべて折りたたむ",
+    "ExpandAll": "すべて展開",
+    "SearchInTree": "ツリーで絞り込み",
+    "FilterPlaceholder": "ページを絞り込み…",
+    "DropToRoot": "ドロップして wiki のルートに移動",
+    "MoveToRoot": "wiki のルートに移動",
+    "Open": "開く",
+    "Rename": "名前を変更",
+    "Delete": "削除",
+    "CopyWikilink": "wiki リンクをコピー",
+    "CopyRelativePath": "相対パスをコピー",
+    "CopyFullPath": "フルパスをコピー",
+    "ConfirmDeleteFile": "「{{name}}」をゴミ箱に移動しますか？（Finder / エクスプローラーから復元可能。）",
+    "ConfirmDeleteFolder": "フォルダ「{{name}}」とその中身をすべてゴミ箱に移動しますか？",
+    "Empty": "まだ wiki ページはありません。会議を録音すると AI が自動で書き込みます。",
+    "SetDefaultEntity": "新規エンティティページの既定の保存先に設定",
+    "SetDefaultPerson": "新規人物ページの既定の保存先に設定",
+    "SetDefaultTopic": "新規トピックページの既定の保存先に設定",
+    "SetDefaultMeeting": "新規ミーティングページの既定の保存先に設定",
+    "DefaultLabel": "{{wikiKind}} の既定の保存先",
+    "AIBadge": "AI 生成",
+    "UserBadge": "ユーザー編集",
+    "QuickOpen": "クイック オープン (⌘P)",
+    "ConflictBadge": "競合コピー",
+    "EmptyAiCurated": "録音やノートでエンティティ、人物、トピック、または会議が言及されると、AI がこのフォルダを生成します。ノートを開いて「Wiki を同期」をクリックすると、ページが作成されます。"
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] はこのワークスペースにありません",
+    "Collision": "{{count}} 件のノートが同じベース名 {{name}} を使用しています",
+    "DisambiguationTitle": "開くノートを選んでください",
+    "DisambiguationOpenAt": "{{folder}} 内",
+    "SuggestEmpty": "一致するノートまたは wiki ページはありません",
+    "BrokenTooltipSyncWiki": "このページはまだ作成されていません — このノートで「Wiki を同期」をクリックして生成してください。",
+    "SyncContextMenu": "Wikiを同期",
+    "SyncToGenerate": "このページを生成するためにWikiを同期"
   },
   "WindowPicker": {
     "Instruction": "ウィンドウ録画用にキャプチャするウィンドウを選択してください。",
@@ -1947,6 +2399,15 @@
     "Title": "ウィンドウを選択",
     "Unknown": "無題のウィンドウ"
   },
+  "Workspace": {
+    "None": "ワークスペースなし",
+    "EmptyList": "登録されているワークスペースはありません",
+    "Add": "ワークスペースを追加…",
+    "Remove": "SeaMeet から削除",
+    "RemoveTooltip": "SeaMeet から削除（ディスク上のファイルは残ります）",
+    "ConfirmRemove": "ワークスペース「{{name}}」を削除しますか? ディスク上のファイルは削除されません。SeaMeet のエントリのみ削除されます。",
+    "Default": "デフォルト"
+  },
   "agent": {
     "fabLabel": "AIエージェントに質問",
     "panelLabel": "AIエージェント",
@@ -1954,11 +2415,21 @@
     "maximize": "最大化",
     "close": "閉じる"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "録音を準備しています…"
+    },
+    "error": {
+      "title": "この録音を処理できませんでした",
+      "body": "APIキーを確認するか、もう一度お試しください。"
+    },
+    "disabled": "AI機能はオフになっています。要約とアクションを表示するには、設定で有効にしてください。"
+  },
   "floatingPip": {
     "minimize": "最小化",
     "maximize": "最大化",
-    "close": "閉じる",
     "restore": "元に戻す",
+    "close": "閉じる",
     "exit": "ピクチャーインピクチャーを終了"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "クラシックレイアウトに切り替え",
       "floating": "フローティングレイアウトに切り替え"
     },
+    "showPipTooltip": "ピクチャーインピクチャーを表示",
     "announce": {
       "classic": "クラシックレイアウトに切り替えました",
       "floating": "フローティングレイアウトに切り替えました"
     },
-    "introToast": "新機能：フローティングレイアウトが利用可能です。ヘッダーのレイアウトアイコンをクリックして試してみてください。",
-    "showPipTooltip": "ピクチャーインピクチャーを表示"
+    "introToast": "新機能：フローティングレイアウトが利用可能です。ヘッダーのレイアウトアイコンをクリックして試してみてください。"
   }
 }

@@ -209,6 +209,47 @@
       "Live": "Hidup"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Diperbarui oleh AI",
+    "Title": "Ringkasan catatan",
+    "Meta": "{{count}} rekaman · templat: {{tpl}}",
+    "CopyToEdit": "Salin untuk diedit",
+    "Regenerate": "Buat ulang",
+    "Generating": "Sedang membuat…",
+    "Provenance": "Dibuat dari {{n}} rekaman",
+    "Error": "Pembuatan gagal: {{err}}",
+    "RenameSuggested": "AI menyarankan \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Rapat umum",
+        "description": "Keputusan, tindakan, diskusi"
+      },
+      "brainstorm": {
+        "name": "Brainstorming",
+        "description": "Ide, alur, pertanyaan terbuka"
+      },
+      "lecture": {
+        "name": "Kuliah / pembicaraan",
+        "description": "Tesis, poin utama, pertanyaan, referensi"
+      },
+      "oneonone": {
+        "name": "1:1 / wawancara",
+        "description": "Tema, sentimen, tindak lanjut"
+      },
+      "sales": {
+        "name": "Panggilan penjualan",
+        "description": "Penemuan, keberatan, langkah berikut, pengambil keputusan"
+      },
+      "standup": {
+        "name": "Standup / status",
+        "description": "Update per orang, hambatan, berikutnya"
+      }
+    },
+    "RegenerateTooltip": "Buat ulang dengan template yang sama",
+    "RegenerateChooseTemplate": "Buat ulang dengan template lain",
+    "Stale": "Usang · segarkan",
+    "StaleTooltip": "Catatan telah berubah sejak ringkasan ini dibuat — klik untuk menyegarkan."
+  },
   "About": {
     "AppStoreBuild": "Build App Store",
     "DirectBuild": "Build Langsung",
@@ -301,7 +342,8 @@
       "Output": "Keluaran",
       "Pattern": "Pola:",
       "Reading": "Membaca berkas...",
-      "ShowDetails": "Tampilkan detailnya"
+      "ShowDetails": "Tampilkan detailnya",
+      "AndMoreLines": "... dan {{count}} baris lainnya"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} tindakan",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} selesai",
       "Completed_other": "{{count}} selesai",
       "Running_one": "{{count}} berjalan",
-      "Running_other": "{{count}} berjalan"
+      "Running_other": "{{count}} berjalan",
+      "Running": "{{count}} berjalan",
+      "Completed": "{{count}} selesai",
+      "Actions": "{{count}} tindakan"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Konfigurasikan kunci API Anda untuk menggunakan Agen AI."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Menyiapkan rekaman Anda…"
-    },
-    "error": {
-      "title": "Kami tidak dapat memproses rekaman ini",
-      "body": "Periksa kunci API Anda atau coba lagi."
-    },
-    "disabled": "Fitur AI dinonaktifkan. Aktifkan di Pengaturan untuk melihat ringkasan dan tindakan."
   },
   "App": {
     "FailedToEnableFlashback": "Gagal mengaktifkan kilas balik: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "Pengaturan lanjutan →",
     "LearnMore": "Pelajari lebih"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Pertama kali? Begini cara kerjanya →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "DETEKSI OTOMATIS",
     "Description": "Deteksi otomatis memulai perekaman saat Anda bergabung dalam rapat, jadi Anda tidak pernah lupa menekan tombol rekam.",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Menggunakan aktivitas mikrofon, judul jendela, dan URL browser untuk akurasi",
     "Tip2Title": "Beberapa Metode Deteksi",
     "Title": "Deteksi Otomatis Rapat"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Pertama kali? Begini cara kerjanya →"
   },
   "AutoRecording": {
     "BugReport": "Ada bug? Laporkan ke seameet@seasalt.ai",
@@ -625,7 +660,8 @@
       "TabLabel": "Perangkat",
       "Today": "hari ini",
       "Yesterday": "kemarin",
-      "YourDevices": "Perangkat Anda"
+      "YourDevices": "Perangkat Anda",
+      "DaysAgo": "{{count}} hari yang lalu"
     },
     "FAQ": {
       "Title": "Pertanyaan yang Sering Diajukan",
@@ -856,7 +892,12 @@
     "Starting": "Sedang Memulai...",
     "UnknownApp": "Aplikasi Tidak Diketahui",
     "Copied": "Tersalin!",
-    "Copy": "Salin"
+    "Copy": "Salin",
+    "Clear": "Jernih",
+    "Forward": "Maju",
+    "Refresh": "Menyegarkan",
+    "Apply": "Terapkan",
+    "Undo": "Batalkan"
   },
   "DeletePrompt": {
     "Cancel": "Batal",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Acara yang ditandai",
     "Title": "Peristiwa"
   },
+  "ExternalChange": {
+    "Banner": "File ini berubah di disk saat Anda mengedit.",
+    "Reload": "Muat ulang versi disk",
+    "Keep": "Pertahankan versi saya"
+  },
+  "FAB": {
+    "Label": "Tindakan cepat",
+    "Stop": "Hentikan rekaman",
+    "Record": "Mulai merekam",
+    "Screenshot": "Ambil tangkapan layar",
+    "Agent": "Agen AI",
+    "PickSource": "Pilih sumber rekaman",
+    "PickScreenshotSource": "Pilih sumber tangkapan layar",
+    "SourceAudio": "Hanya Audio",
+    "SourceFullscreen": "Layar Penuh",
+    "SourceWindow": "Jendela",
+    "SourceRegion": "Wilayah",
+    "ScreenshotFullscreen": "Layar Penuh",
+    "ScreenshotWindow": "Jendela",
+    "ScreenshotRegion": "Wilayah",
+    "LiveTranscription": "Transkripsi langsung",
+    "ToggleLiveTranscription": "Aktifkan transkripsi langsung",
+    "RecordingInProgress": "Sedang merekam…",
+    "OpenBoundNote": "Buka catatan tempat rekaman ini dilampirkan"
+  },
   "FileImport": {
     "BrowseFiles": "Telusuri File",
     "DragDropFiles": "Seret dan lepas file audio, video, dan gambar di sini",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Menyalin file video...",
     "VideoImportSaving": "Menyimpan file video...",
     "VideoUnsupported": "Format video ini mungkin tidak dapat diputar di aplikasi. File tetap akan diimpor."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Ganti semua {{count}} kecocokan?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Cari",
+    "AriaLabel": "Cari dan ganti",
+    "CaseSensitive": "Cocokkan huruf besar/kecil",
+    "ClearSearch": "Bersihkan",
+    "Previous": "Hasil sebelumnya",
+    "Next": "Hasil berikutnya",
+    "NoResults": "Tidak ada hasil",
+    "ReplacePlaceholder": "Ganti",
+    "WikiAiReadonly": "Bagian AI hanya-baca — penggantian hanya berlaku di bagian pengguna",
+    "Replace": "Ganti",
+    "ReplaceAll": "Ganti semua",
+    "CloseBar": "Tutup cari/ganti",
+    "WikiCounterSplit": "{{userCount}} di catatan + {{aiCount}} di bagian AI"
   },
   "FlashbackControls": {
     "AudioFlashback": "Kilas balik audio",
@@ -1123,7 +1206,7 @@
   },
   "FloatingStartBar": {
     "BluetoothMicDesc": "OS Anda mungkin memaksa 'Mode Komunikasi', yang dapat menyebabkan distorsi.",
-    "BluetoothMicTipLabel": "Tip:",
+    "BluetoothMicTipLabel": "Tips:",
     "BluetoothMicTipText": "Gunakan mikrofon non-Bluetooth untuk kualitas yang lebih baik.",
     "BluetoothMicTitle": "⚠️ Mikrofon Bluetooth",
     "CloseTooltip": "Tooltip tutup",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "Kualitas JPEG bingkai",
       "VideoMaxWidth": "Lebar bingkai maksimum",
       "VideoQualityHint": "Tingkatkan kualitas dan lebar maksimum ketika Gemini salah membaca label ubin kecil (misalnya nama peserta Zoom / Meet / Teams). Nilai yang lebih tinggi meningkatkan penggunaan token gambar — 1280 px biasanya melompat dari tingkat 258 token ke tingkat 1290 token per bingkai.",
-      "DisableAutoVad": "Nonaktifkan VAD otomatis (deteksi giliran sisi server)",
       "EndSensitivity": "Sensitivitas akhir ucapan",
       "Default": "Default (HIGH — flush cepat)",
       "SilenceMs": "Keheningan sebelum giliran berakhir",
       "VadHint": "Keheningan lebih pendek + sensitivitas TINGGI → flush transkripsi lebih pendek dan lebih sering.",
+      "DisableAutoVad": "Nonaktifkan VAD otomatis (deteksi giliran sisi server)",
       "ActivityFlush": "Flush berkala selama giliran panjang",
       "ActivityFlushMs": "Interval flush",
       "ActivityFlushHint": "Setiap N ms selama giliran panjang, mendorong Gemini untuk memproses audio yang terkumpul. Mencegah transkripsi macet dalam monolog / presentasi. Memerlukan VAD otomatis dinonaktifkan.",
       "ActivityFlushRequiresManualVad": "Flush berkala hanya berlaku saat VAD otomatis dinonaktifkan — server Gemini akan menolak kontrol aktivitas eksplisit jika tidak. Biarkan sakelar aktif dan nonaktifkan VAD otomatis di bawah untuk menggunakannya.",
       "Reset": "Atur ulang semua ke default"
-    }
+    },
+    "SegmentCount": "{{count}} segmen"
   },
   "GeminiTranscription": {
     "Title": "Transkripsi Langsung"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Catatan",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Transkrip rekaman",
+    "SectionSummaries": "Ringkasan rekaman",
+    "SectionOcr": "Teks tangkapan layar",
+    "IndexingFallback": "Mengindeks — hanya menampilkan kecocokan nama file",
+    "Placeholder": "Cari di catatan, wiki, dan rekaman…",
+    "SoFar": "sejauh ini",
+    "NoResults": "Tidak ada kecocokan"
+  },
+  "HelpPage": {
+    "Title": "Pelajari SeaMeet lebih jauh"
   },
   "IdleCompactView": {
     "ArmFlashback": "Aktifkan kilas balik",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet memerlukan macOS 14.2 (Sonoma) atau yang lebih baru.\n\nBeberapa fitur seperti deteksi audio per aplikasi dan mulai rapat otomatis mungkin tidak berfungsi.\n\nPerbarui melalui Pengaturan Sistem > Umum > Pembaruan Perangkat Lunak.",
     "ContinueAnyway": "Tetap Lanjutkan",
     "Quit": "Keluar"
+  },
+  "MediaBlock": {
+    "Processing": "Memproses…",
+    "SummaryReady": "Ringkasan siap",
+    "Failed": "Gagal",
+    "Tab": {
+      "Summary": "Ringkasan",
+      "Transcript": "Transkrip",
+      "Actions": "Tindakan",
+      "Decisions": "Keputusan",
+      "Chapters": "Bab",
+      "Description": "Deskripsi",
+      "Ocr": "Teks OCR"
+    },
+    "MoreActions": "Tindakan lainnya",
+    "Action": {
+      "ShowInFolder": "Tampilkan di folder",
+      "CopyEmbed": "Salin sintaks penyematan",
+      "RerunAi": "Jalankan ulang AI",
+      "Detach": "Lepaskan dari catatan"
+    },
+    "AudioFallback": "Browser Anda tidak mendukung pemutaran audio.",
+    "WaitingForPipeline": "Menunggu pemrosesan AI selesai…",
+    "PipelineFailed": "Pemrosesan AI untuk file ini gagal.",
+    "NoAiContent": "Pemrosesan AI selesai tanpa menghasilkan konten tambahan.",
+    "NoSummary": "Ringkasan AI belum dibuat.",
+    "Due": "tenggat",
+    "Stage": {
+      "preparing": "Menyiapkan…",
+      "uploading": "Mengunggah…",
+      "uploading-wait": "Memproses unggahan…",
+      "analyzing": "Menganalisis…",
+      "extracting": "Mengekstrak…",
+      "saving": "Menyimpan…",
+      "complete": "Selesai",
+      "gathering": "Mengumpulkan…",
+      "reducing": "Memperbaiki…",
+      "writing": "Menulis…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Item Tindakan",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Bahasa Transkripsi",
     "TranslationLanguage": "Bahasa terjemahan",
     "UnknownSpeaker": "Pembicara",
-    "WaitingForSpeech": "Menunggu bicara..."
+    "WaitingForSpeech": "Menunggu bicara...",
+    "SegmentCount": "{{count}} segmen"
   },
   "MeetingDetail": {
     "Back": "← Kembali",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Pengisian daya kilas balik layar...",
     "ScreenRecording": "Perekaman layar ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Mulai mengetik atau tempel dari papan klip…",
+    "Saving": "Menyimpan…",
+    "Saved": "✓ Disimpan",
+    "SaveFailed": "Gagal menyimpan",
+    "Editing": "Sedang mengedit…",
+    "TitlePlaceholder": "Catatan tanpa judul",
+    "TitleLabel": "Judul catatan",
+    "RenameTooltip": "Klik untuk mengganti nama",
+    "UntitledFallback": "Catatan tanpa judul",
+    "Renaming": "Mengganti nama…",
+    "LoadFailed": "Gagal memuat catatan",
+    "Bold": "Tebal",
+    "Italic": "Miring",
+    "Code": "Kode",
+    "Heading1": "Judul 1",
+    "Heading2": "Judul 2",
+    "BulletList": "Daftar berpoin",
+    "OrderedList": "Daftar bernomor",
+    "Link": "Tautan",
+    "LinkDialog": "Sisipkan tautan",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Perbarui",
+    "LinkAdd": "Tambah",
+    "LinkRemove": "Hapus tautan",
+    "InsertWikilink": "Tautkan ke catatan ([[ … ]])",
+    "SyncWiki": "Sinkronkan wiki",
+    "SyncWikiTooltip": "Perbarui wiki dari catatan ini sekarang (tidak menunggu pemicu otomatis)",
+    "SyncWikiCouldNotQueue": "Tidak bisa mengantrekan pembaruan wiki",
+    "SyncWikiQueued": "Mengantre…",
+    "SyncWikiRunning": "Menyinkronkan…",
+    "SyncWikiSuccess": "✓ Tersinkron",
+    "SyncWikiError": "Sinkronisasi gagal",
+    "Blockquote": "Kutipan blok",
+    "CodeBlock": "Blok kode",
+    "Heading3": "Judul 3",
+    "Highlight": "Sorot",
+    "HorizontalRule": "Garis horizontal",
+    "ImageAdd": "Sisipkan",
+    "ImageDialog": "Sisipkan gambar",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Sisipkan gambar",
+    "InsertTable": "Sisipkan tabel",
+    "Strike": "Coret",
+    "TableAddColumnAfter": "Tambah kolom setelah",
+    "TableAddColumnBefore": "Tambah kolom sebelum",
+    "TableAddRowAfter": "Tambah baris setelah",
+    "TableAddRowBefore": "Tambah baris sebelum",
+    "TableDelete": "Hapus tabel",
+    "TableDeleteColumn": "Hapus kolom",
+    "TableDeleteRow": "Hapus baris",
+    "TaskList": "Daftar tugas",
+    "Redo": "Ulangi",
+    "Underline": "Garis Bawah",
+    "Undo": "Batalkan",
+    "Synthesize": "Ringkasan AI",
+    "SynthesizeRunning": "Mensintesis…",
+    "SynthesizeTooltip": "Buat atau segarkan ringkasan AI untuk catatan ini",
+    "SynthesizeChooseTemplate": "Pilih template untuk ringkasan AI"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Tangkapan layar",
+      "Recording": "Rekaman",
+      "AddedTo": "ditambahkan ke",
+      "Open": "Buka"
+    },
+    "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Ringkasan · {{version}}",
+      "Updated": "✨ Ringkasan diperbarui · {{version}}",
+      "Jump": "Lompat ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Pilih templat…",
+      "Label": "Opsi sintesis"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Catatan baru",
+    "JustNow": "baru saja",
+    "Yesterday": "Kemarin",
+    "Title": "Catatan",
+    "EmptyTitle": "Mulai catatan pertama Anda",
+    "EmptySubtitle": "Merekam adalah keunggulannya — tambahkan rekaman dan tangkapan layar ke catatan apa pun.",
+    "MediaCount": "{{n}} lampiran",
+    "ConfirmDelete": "Hapus",
+    "DeleteNote": "Hapus catatan"
+  },
+  "NotesTree": {
+    "Title": "Catatan",
+    "NewNote": "Catatan baru",
+    "NewFolder": "Folder baru",
+    "NewFolderPrompt": "Nama folder:",
+    "SortBy": "Urutkan menurut",
+    "SortManual": "Urutan manual",
+    "SortName": "Nama (A → Z)",
+    "SortModified": "Diubah (terbaru dulu)",
+    "CollapseAll": "Ciutkan semua",
+    "SearchInTree": "Cari di pohon",
+    "FilterPlaceholder": "Saring catatan…",
+    "DropToRoot": "Lepaskan untuk memindahkan ke akar",
+    "MoveTo": "Pindahkan ke…",
+    "MoveToRoot": "Pindahkan ke akar",
+    "Duplicate": "Duplikat",
+    "RevealInFinder": "Tampilkan di Finder",
+    "RevealInExplorer": "Tampilkan di Explorer",
+    "CopyWikilink": "Salin wikilink",
+    "Pin": "Sematkan di atas",
+    "Unpin": "Lepas sematan",
+    "Rename": "Ganti nama",
+    "Delete": "Hapus",
+    "Open": "Buka",
+    "Expand": "Perluas",
+    "OpenInNewTab": "Buka di tab baru",
+    "ConfirmDeleteFolder": "Hapus folder \"{{name}}\" dan semua isinya?",
+    "RenameSucceeded": "Nama diganti",
+    "RenameWithRefs": "Nama diganti; {{count}} referensi diperbarui",
+    "SortDefault": "Default (urutan sistem berkas)",
+    "ExpandAll": "Perluas semua",
+    "NewFolderPlaceholder": "Nama folder baru…",
+    "QuickOpen": "Buka cepat  (⌘P)",
+    "CopyRelativePath": "Salin path relatif",
+    "CopyFullPath": "Salin path lengkap",
+    "UpdateWikiFromNote": "Perbarui wiki dari catatan ini",
+    "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Pilih sebuah catatan",
+    "SelectFromList": "Pilih catatan dari daftar atau buat catatan baru.",
+    "NoNotes": "Anda belum memiliki catatan — mulai catatan pertama Anda.",
+    "CollapseSidebar": "Sembunyikan bilah sisi catatan",
+    "ExpandSidebar": "Tampilkan bilah sisi catatan"
+  },
   "OCRAutoCopy": {
     "Copied": "Teks yang diekstrak disalin ke papan klip",
     "Error": "Gagal mengekstrak teks",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Menjalankan OCR setelah setiap tangkapan layar dan menyalin teks yang diekstrak ke papan klip",
     "SettingsLabel": "Ekstrak teks otomatis (OCR) saat tangkapan layar"
   },
+  "OpenRecordingsFolder": "Buka Folder Rekaman",
+  "OpenRecordingsFolderDesc": "Buka folder rekaman default",
   "Pause": "Berhenti sebentar",
   "PermissionAlert": {
     "Title": "Izin diperlukan",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "Buka dengan Premium",
     "Upgrade": "Meningkatkan"
   },
+  "QuickOpen": {
+    "Placeholder": "Mulai mengetik atau tempel dari clipboard… Gunakan [[ untuk menautkan ke catatan lain",
+    "NoResults": "Tidak ada catatan yang cocok",
+    "UnifiedPlaceholder": "Buka catatan atau halaman wiki berdasarkan nama…",
+    "SectionNotes": "Catatan",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Rekam Audio",
+  "RecordAudioDesc": "Mulai merekam audio (campuran)",
+  "RecordFullscreen": "Rekam Layar Penuh",
+  "RecordFullscreenDesc": "Mulai merekam video layar penuh",
+  "RecordRegion": "Jepret Wilayah untuk Direkam",
+  "RecordRegionDesc": "Pilih wilayah layar yang akan direkam",
   "RecordTab": {
     "TapToRecord": "Tap untuk mulai merekam",
     "RecordWithPreamble": "Rekam dengan preamble {{seconds}}d",
@@ -1428,7 +1715,7 @@
     "FlashbackStatusCharging": "memuat {{percent}}%",
     "FlashbackStatusReady": "siap — {{seconds}}d {{type}} di RAM",
     "LauncherPill": "Peluncur",
-    "FloaterPill": "Floater",
+    "FloaterPill": "Pengembara",
     "AutoDetectLabel": "Deteksi Otomatis",
     "FlashbackLabel": "Kilas Balik",
     "RecentRecordings": "Rekaman terbaru"
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "Dijeda",
     "Preparing": "Mempersiapkan",
-    "PreparingToRecord": "Bersiap untuk merekam..."
+    "PreparingToRecord": "Bersiap untuk merekam...",
+    "InProgress": "Perekaman sedang berlangsung",
+    "WillBeAdded": "Audio akan ditambahkan di sini saat Anda klik Berhenti",
+    "AttachingTo": "Melampirkan ke {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Perekaman Audio",
@@ -1486,6 +1776,19 @@
     "SaveAs": "Simpan sebagai",
     "SearchRecordingsOrSnapshots": "Cari perekaman dan tangkapan layar",
     "ShowInFolder": "Tampilkan di folder"
+  },
+  "Regenerate": {
+    "Title": "Buat ulang ringkasan catatan",
+    "PickTemplate": "Pilih templat:",
+    "Custom": "Atau tulis instruksi kustom (menggantikan templat):",
+    "CustomPlaceholder": "mis. 'Fokus pada komitmen ke pelanggan X, keluarkan sebagai memo eksekutif satu halaman.'",
+    "SaveAsTemplate": "Simpan sebagai templat kustom",
+    "TemplateNamePlaceholder": "Nama templat",
+    "NameRequired": "Nama diperlukan untuk menyimpan",
+    "OutputLanguageHint": "Bahasa keluaran mengikuti Pengaturan → Ekstraksi & Ringkasan AI",
+    "Submit": "Buat ulang",
+    "AutoUpdate": "Perbarui otomatis saat mengetik",
+    "AutoUpdateHint": "Menjalankan ulang sintesis setelah perubahan signifikan pada catatan ini (menggunakan kuota AI Anda)."
   },
   "RegionSelector": {
     "CaptureButton": "Tangkap Layar atau Tekan Enter",
@@ -1596,6 +1899,20 @@
     "ZeroBytes": "0 Byte",
     "Info": "Statistik"
   },
+  "Search": {
+    "Placeholder": "Cari… (⌘K)",
+    "Aria": "Cari di catatan dan wiki",
+    "GroupNotes": "Catatan",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Rekaman",
+    "GroupScreenshots": "Tangkapan layar",
+    "Results": {
+      "Aria": "Hasil pencarian"
+    },
+    "Loading": "Mencari…",
+    "NoResults": "Tidak ada hasil untuk \"{{query}}\"",
+    "AgentHint": "Coba agen AI untuk kueri semantik."
+  },
   "Settings": {
     "About": {
       "CheckForUpdates": "Periksa Pembaruan",
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "Versi Lengkap",
         "OneSentence": "1‑Kalimat",
-        "TLDR": "TLDR"
+        "TLDR": "Ringkasan"
       },
       "NoUpdatesAvailable": "Tidak ada pembaruan tersedia",
       "Privacy": {
@@ -1721,6 +2038,13 @@
       "Flashback": "Kilas balik perekaman",
       "Storage": "Penyimpanan"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (gratis, 20 panggilan/hari)",
+      "FlashLiteFree": "Flash Lite (gratis, 500 panggilan/hari)",
+      "Help": "Pembaruan AI dijeda secara otomatis saat kuota ini habis, lalu dilanjutkan kembali.",
+      "Label": "Tingkat kuota Gemini",
+      "Paid": "Tingkat berbayar"
+    },
     "SettingsFileLocation": "Lokasi file pengaturan",
     "Storage": {
       "Browse": "Jelajahi...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Bersihkan pencarian",
     "PrimaryNavigation": "Navigasi utama"
   },
+  "Tabs": {
+    "CloseTab": "Tutup",
+    "RecordingHere": "Perekaman sedang berlangsung di sini",
+    "OrphanTooltip": "File ini telah dihapus dari disk",
+    "ScrollLeft": "Gulir tab ke kiri",
+    "ScrollRight": "Gulir tab ke kanan"
+  },
+  "TakeScreenshot": "Ambil Tangkapan Layar",
+  "TakeScreenshotDesc": "Tangkap wilayah layar",
   "TakeSnapshot": {
     "GoToSnapshot": "Pergi ke potret layar baru",
     "Message": "Potret layar disimpan ke:",
@@ -1786,7 +2119,7 @@
     "Title": "Potret layar disimpan"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Agen",
     "CloseNavigationMenu": "Tutup menu navigasi",
     "Files": "File",
     "MainNavigation": "Navigasi utama",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Buka menu navigasi",
     "Record": "Catatan",
     "Recording": "Rekaman",
-    "Screenshot": "Tangkapan Layar"
+    "Screenshot": "Tangkapan Layar",
+    "GroupCapture": "Tangkap",
+    "GroupKnowledge": "Pengetahuan",
+    "Notes": "Catatan",
+    "Wiki": "Wiki",
+    "GroupTools": "Alat"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet masih berjalan di system tray (kanan bawah).",
@@ -1812,6 +2150,11 @@
     "Audio": "Audio",
     "System": "Output Audio Sistem",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Diganti namanya; {{count}} referensi diperbarui",
+    "Action": "Urungkan",
+    "ToastNoRefs": "Diganti nama"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Instal & Keluar",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Kilas Balik menyimpan 10 detik terakhir — jadi Anda tidak melewatkan kalimat penting pertama.",
     "GotIt": "Mengerti"
   },
-  "HelpPage": {
-    "Title": "Pelajari SeaMeet lebih jauh"
+  "Wiki": {
+    "AIBadgeTooltip": "Konten yang dibuat AI",
+    "AIBadge": "Dibuat oleh AI",
+    "Backlinks": "Tautan balik",
+    "RelatedPages": "Halaman terkait",
+    "BuiltFrom": "Dibangun dari",
+    "SelectPage": "Pilih sebuah halaman",
+    "SelectPageHint": "Pilih entitas, orang, atau topik dari sidebar untuk melihat apa yang telah dipelajari wiki Anda.",
+    "LoadingPage": "AI sedang membangun halaman ini…",
+    "LoadFailed": "Gagal memuat halaman wiki ini.",
+    "AISection": "Bagian AI",
+    "AIEmpty": "Belum ada konten AI. Tambahkan rekaman atau tangkapan layar ke catatan yang menyebutkan entitas ini, lalu jalankan pembaruan wiki.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Wiki Anda kosong",
+    "EmptySubtitle": "Rekam rapat atau tulis catatan untuk mulai membangun basis pengetahuan Anda.",
+    "UserSection": "Catatan Anda",
+    "UserSectionTitle": "Catatan Anda",
+    "UserSectionPlaceholder": "Tambahkan catatan pribadi…",
+    "RefreshFromSources": "Segarkan dari sumber",
+    "RefreshFromSourcesTooltip": "Segarkan bagian AI dari {{count}} catatan sumber sekarang",
+    "RefreshFromSourcesHint": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik juga membaca ulang catatan sumber.",
+    "RefreshDisabledTooltip": "Halaman wiki ini belum memiliki catatan sumber — buat dulu dari sebuah catatan.",
+    "RefreshAriaLabel": "Segarkan halaman wiki dari catatan sumber",
+    "RefreshError": "Penyegaran gagal",
+    "Bulk": {
+      "Build": "Bangun wiki",
+      "BuildFromAll": "Bangun wiki dari semua catatan",
+      "BuildFromFolder": "Bangun wiki dari folder…",
+      "BuildFromSelection": "Bangun wiki dari pilihan…",
+      "ToastMessage": "{{count}} catatan baru terdeteksi. Bangun wiki?",
+      "BannerMessage": "{{count}} catatan baru sejak build terakhir",
+      "BuildingExtracting": "Membaca {{current}}/{{total}} catatan",
+      "BuildingReducing": "Membangun {{current}}/{{total}} halaman",
+      "Building": "Membangun wiki — {{stage}}",
+      "PausedFor": "batas laju: {{seconds}}s",
+      "Cancel": "Batal",
+      "Cancelling": "Membatalkan — menyelesaikan catatan saat ini…",
+      "Pause": "Jeda",
+      "Continue": "Lanjutkan",
+      "Paused": "Dijeda — {{current}}/{{total}}",
+      "Restart": "Mulai ulang",
+      "NowReading": "Sekarang membaca: {{item}}",
+      "NowBuilding": "Sekarang membangun: {{item}}",
+      "RecentList": "Diproses baru-baru ini",
+      "DoneSummary": "Wiki dibangun — {{notes}} catatan, {{pages}} halaman",
+      "Resume": "Lanjutkan",
+      "ResumeAvailable": "Build wiki sebelumnya terhenti di {{current}}/{{total}}. Lanjutkan?",
+      "PolishIndex": "Poles indeks",
+      "PolishIndexHint": "Tambahkan pengantar naratif ke indeks wiki",
+      "BuildFromFolderPrompt": "Path folder (relatif terhadap workspace):",
+      "BuildFromSelectionPrompt": "Nama file catatan dipisahkan koma (relatif terhadap notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Tindakan wiki lainnya",
+      "BuildAllTooltip": "Bangun wiki dari semua catatan (inkremental — hanya memperbarui halaman yang catatan sumbernya berubah).",
+      "BuildAllRunning": "Membangun wiki dari semua catatan — lihat banner di bawah.",
+      "BuildAllAria": "Bangun wiki dari semua catatan"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Perbarui wiki secara otomatis dari catatan",
+    "SettingsDesc": "Membangun basis pengetahuan tentang entitas, orang, dan topik dari catatan dan rekaman Anda. Mati secara default."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Cari halaman wiki berdasarkan nama…",
+    "NoResults": "Tidak ada halaman wiki yang cocok"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Halaman wiki baru",
+    "NewFolder": "Folder baru",
+    "NewFolderPlaceholder": "Nama folder…",
+    "SortBy": "Urutkan menurut",
+    "SortDefault": "Default (urutan file system)",
+    "SortName": "Nama (A → Z)",
+    "SortModified": "Diubah (terbaru dulu)",
+    "CollapseAll": "Tutup semua",
+    "ExpandAll": "Buka semua",
+    "SearchInTree": "Filter di pohon",
+    "FilterPlaceholder": "Filter halaman…",
+    "DropToRoot": "Jatuhkan untuk pindah ke akar wiki",
+    "MoveToRoot": "Pindahkan ke akar wiki",
+    "Open": "Buka",
+    "Rename": "Ganti nama",
+    "Delete": "Hapus",
+    "CopyWikilink": "Salin wikilink",
+    "CopyRelativePath": "Salin path relatif",
+    "CopyFullPath": "Salin path lengkap",
+    "ConfirmDeleteFile": "Pindahkan \"{{name}}\" ke tempat sampah OS? (Dapat dipulihkan dari Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Pindahkan folder \"{{name}}\" dan semua isinya ke tempat sampah OS?",
+    "Empty": "Belum ada halaman wiki. Pipeline akan menulis di sini saat Anda merekam rapat.",
+    "SetDefaultEntity": "Tetapkan sebagai default untuk halaman entity baru",
+    "SetDefaultPerson": "Tetapkan sebagai default untuk halaman person baru",
+    "SetDefaultTopic": "Tetapkan sebagai default untuk halaman topic baru",
+    "SetDefaultMeeting": "Tetapkan sebagai default untuk halaman meeting baru",
+    "DefaultLabel": "Default untuk {{wikiKind}}",
+    "AIBadge": "Dihasilkan AI",
+    "UserBadge": "Diedit pengguna",
+    "QuickOpen": "Buka cepat (⌘P)",
+    "ConflictBadge": "Salinan konflik",
+    "EmptyAiCurated": "AI mengisi folder ini ketika rekaman atau catatan Anda menyebut entitas, orang, topik, atau pertemuan. Buka catatan dan klik Sinkronkan Wiki untuk membuat halaman."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] tidak ada di ruang kerja ini",
+    "Collision": "{{count}} catatan berbagi nama dasar {{name}}",
+    "DisambiguationTitle": "Pilih catatan untuk dibuka",
+    "DisambiguationOpenAt": "di {{folder}}",
+    "SuggestEmpty": "Tidak ada catatan atau halaman wiki yang cocok",
+    "BrokenTooltipSyncWiki": "Halaman ini belum dibuat — klik Sinkronkan Wiki pada catatan ini untuk membuatnya.",
+    "SyncContextMenu": "Sinkronkan wiki",
+    "SyncToGenerate": "Sinkronkan wiki untuk membuat halaman ini"
   },
   "WindowPicker": {
     "Instruction": "Pilih jendela untuk ditangkap untuk perekaman jendela.",
@@ -1947,6 +2399,15 @@
     "Title": "Pilih jendela",
     "Unknown": "Jendela tanpa judul"
   },
+  "Workspace": {
+    "None": "Tidak ada workspace",
+    "EmptyList": "Tidak ada workspace yang terdaftar",
+    "Add": "Tambahkan workspace…",
+    "Remove": "Hapus dari SeaMeet",
+    "RemoveTooltip": "Hapus dari SeaMeet (berkas di disk tetap ada)",
+    "ConfirmRemove": "Hapus ruang kerja \"{{name}}\"? Berkas di disk tidak dihapus; hanya entri SeaMeet yang dihapus.",
+    "Default": "Bawaan"
+  },
   "agent": {
     "fabLabel": "Tanya Agen AI",
     "panelLabel": "Agen AI",
@@ -1954,11 +2415,21 @@
     "maximize": "Maksimalkan",
     "close": "Tutup"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Menyiapkan rekaman Anda…"
+    },
+    "error": {
+      "title": "Kami tidak dapat memproses rekaman ini",
+      "body": "Periksa kunci API Anda atau coba lagi."
+    },
+    "disabled": "Fitur AI dinonaktifkan. Aktifkan di Pengaturan untuk melihat ringkasan dan tindakan."
+  },
   "floatingPip": {
     "minimize": "Minimalkan",
     "maximize": "Maksimalkan",
-    "close": "Tutup",
     "restore": "Pulihkan",
+    "close": "Tutup",
     "exit": "Keluar dari gambar-dalam-gambar"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Beralih ke tata letak klasik",
       "floating": "Beralih ke tata letak mengambang"
     },
+    "showPipTooltip": "Tampilkan gambar-dalam-gambar",
     "announce": {
       "classic": "Beralih ke tata letak klasik",
       "floating": "Beralih ke tata letak mengambang"
     },
-    "introToast": "Baru: Tata letak mengambang tersedia. Klik ikon tata letak di header untuk mencobanya.",
-    "showPipTooltip": "Tampilkan gambar-dalam-gambar"
+    "introToast": "Baru: Tata letak mengambang tersedia. Klik ikon tata letak di header untuk mencobanya."
   }
 }

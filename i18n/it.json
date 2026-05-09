@@ -209,6 +209,47 @@
       "Live": "Vivere"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Aggiornato dall’IA",
+    "Title": "Riepilogo nota",
+    "Meta": "{{count}} registrazioni · modello: {{tpl}}",
+    "CopyToEdit": "Copia per modificare",
+    "Regenerate": "Rigenera",
+    "Generating": "Generazione in corso…",
+    "Provenance": "Generato da {{n}} registrazioni",
+    "Error": "Generazione fallita: {{err}}",
+    "RenameSuggested": "L'IA suggerisce \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Riunione generale",
+        "description": "Decisioni, azioni, discussione"
+      },
+      "brainstorm": {
+        "name": "Brainstorm",
+        "description": "Idee, fili, domande aperte"
+      },
+      "lecture": {
+        "name": "Conferenza / talk",
+        "description": "Tesi, punti chiave, domande, riferimenti"
+      },
+      "oneonone": {
+        "name": "1:1 / colloquio",
+        "description": "Temi, sentimento, follow-up"
+      },
+      "sales": {
+        "name": "Chiamata di vendita",
+        "description": "Scoperta, obiezioni, prossimi passi, decisori"
+      },
+      "standup": {
+        "name": "Standup / stato",
+        "description": "Aggiornamenti per persona, blocchi, prossimo"
+      }
+    },
+    "RegenerateTooltip": "Rigenera con lo stesso modello",
+    "RegenerateChooseTemplate": "Rigenera con un modello diverso",
+    "Stale": "Obsoleto · aggiorna",
+    "StaleTooltip": "La nota è cambiata dalla generazione di questo riepilogo — clicca per aggiornare."
+  },
   "About": {
     "AppStoreBuild": "Build App Store",
     "DirectBuild": "Build diretto",
@@ -301,7 +342,8 @@
       "Output": "Produzione",
       "Pattern": "Modello:",
       "Reading": "Lettura del file...",
-      "ShowDetails": "Mostra dettagli"
+      "ShowDetails": "Mostra dettagli",
+      "AndMoreLines": "... e {{count}} altre righe"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} azioni",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} completato",
       "Completed_other": "{{count}} completato",
       "Running_one": "{{count}} in esecuzione",
-      "Running_other": "{{count}} in esecuzione"
+      "Running_other": "{{count}} in esecuzione",
+      "Running": "{{count}} in esecuzione",
+      "Completed": "{{count}} completato",
+      "Actions": "{{count}} azioni"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Configura le tue chiavi API per utilizzare l'Agente AI."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Preparazione della registrazione…"
-    },
-    "error": {
-      "title": "Non è stato possibile elaborare questa registrazione",
-      "body": "Controlla la tua chiave API o riprova."
-    },
-    "disabled": "Le funzionalità IA sono disattivate. Abilitale in Impostazioni per vedere riepiloghi e azioni."
   },
   "App": {
     "FailedToEnableFlashback": "Impossibile abilitare flashback: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "Impostazioni avanzate →",
     "LearnMore": "Scopri di più"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Prima volta? Ecco come funziona →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "RILEVAMENTO AUTOMATICO",
     "Description": "Auto-Detect avvia automaticamente la registrazione quando entri nelle riunioni, così non dimenticherai mai di premere registrare.<br>[AutoDetectInfoModal.Step1Title] Attiva Auto-Detect<br>[AutoDetectInfoModal.Step2Title] Unisciti a una riunione<br>[AutoDetectInfoModal.HowItWorksTitle] Come funziona<br>[AutoDetectInfoModal.LearnAbout] Scopri di più su Auto Detect<br>[AutoDetectInfoModal.MoreApps] +40 altre<br>[AutoDetectInfoModal.Step2Desc] Apri Zoom, Teams, Meet o qualsiasi app supportata<br>[AutoDetectInfoModal.Step3Title] Auto-registrazione<br>[AutoDetectInfoModal.Tip2Title] Metodi di rilevamento multipli<br>[AutoDetectInfoModal.PopularAppsTitle] App popolari rilevate",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Utilizza attività del microfono, titoli delle finestre e URL dei browser per migliorare l'accuratezza",
     "Tip2Title": "Metodi di rilevamento multipli",
     "Title": "Rilevamento automatico delle riunioni"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Prima volta? Ecco come funziona →"
   },
   "AutoRecording": {
     "BugReport": "Hai riscontrato un bug? Segnala a seameet@seasalt.ai",
@@ -625,7 +660,8 @@
       "TabLabel": "Dispositivi",
       "Today": "oggi",
       "Yesterday": "ieri",
-      "YourDevices": "I tuoi dispositivi"
+      "YourDevices": "I tuoi dispositivi",
+      "DaysAgo": "{{count}} giorni fa"
     },
     "FAQ": {
       "Title": "Domande frequenti",
@@ -856,7 +892,12 @@
     "Starting": "Avvio in corso...",
     "UnknownApp": "Applicazione sconosciuta",
     "Copied": "Copiato!",
-    "Copy": "Copia"
+    "Copy": "Copia",
+    "Clear": "Chiaro",
+    "Forward": "Inoltrare",
+    "Refresh": "Aggiorna",
+    "Apply": "Applica",
+    "Undo": "Annulla"
   },
   "DeletePrompt": {
     "Cancel": "Annulla",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Eventi contrassegnati",
     "Title": "Eventi"
   },
+  "ExternalChange": {
+    "Banner": "Questo file è cambiato sul disco mentre lo stavi modificando.",
+    "Reload": "Ricarica versione su disco",
+    "Keep": "Mantieni la mia versione"
+  },
+  "FAB": {
+    "Label": "Azioni rapide",
+    "Stop": "Ferma la registrazione",
+    "Record": "Avvia la registrazione",
+    "Screenshot": "Cattura schermata",
+    "Agent": "Agente IA",
+    "PickSource": "Scegli una sorgente di registrazione",
+    "PickScreenshotSource": "Scegli una sorgente per la schermata",
+    "SourceAudio": "Solo audio",
+    "SourceFullscreen": "Schermo intero",
+    "SourceWindow": "Finestra",
+    "SourceRegion": "Area",
+    "ScreenshotFullscreen": "Schermo intero",
+    "ScreenshotWindow": "Finestra",
+    "ScreenshotRegion": "Area",
+    "LiveTranscription": "Trascrizione in diretta",
+    "ToggleLiveTranscription": "Attiva/disattiva la trascrizione in tempo reale",
+    "RecordingInProgress": "Registrazione in corso…",
+    "OpenBoundNote": "Apri la nota a cui è allegata questa registrazione"
+  },
   "FileImport": {
     "BrowseFiles": "Sfoglia File",
     "DragDropFiles": "Trascina e rilascia qui i tuoi file audio, video e immagini",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Copia del file video in corso...",
     "VideoImportSaving": "Salvataggio del file video in corso...",
     "VideoUnsupported": "Questo formato video potrebbe non essere riproducibile nell'app. Il file verrà comunque importato."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Sostituire tutte le {{count}} occorrenze?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Trova",
+    "AriaLabel": "Trova e sostituisci",
+    "CaseSensitive": "Maiuscole/minuscole",
+    "ClearSearch": "Cancella",
+    "Previous": "Risultato precedente",
+    "Next": "Risultato successivo",
+    "NoResults": "Nessun risultato",
+    "ReplacePlaceholder": "Sostituisci",
+    "WikiAiReadonly": "La sezione IA è in sola lettura — la sostituzione funziona solo nella sezione utente",
+    "Replace": "Sostituisci",
+    "ReplaceAll": "Sostituisci tutto",
+    "CloseBar": "Chiudi trova/sostituisci",
+    "WikiCounterSplit": "{{userCount}} nella nota + {{aiCount}} nella sezione IA"
   },
   "FlashbackControls": {
     "AudioFlashback": "audio Flashback",
@@ -928,7 +1011,7 @@
       "screen": "schermo"
     },
     "ModeLabel": "Cosa memorizzare",
-    "ModeOff": "Off",
+    "ModeOff": "Spento",
     "ModeAudio": "Audio",
     "ModeScreen": "Schermo",
     "WindowLabel": "Lunghezza buffer",
@@ -1042,7 +1125,7 @@
         "BestFor": "Registrazione di riunioni, telefonate, conversazioni vocali",
         "Buffer": "30 secondi (fisso)",
         "Captures": "Microfono e/o audio del sistema",
-        "Memory": "~30-50 MB RAM",
+        "Memory": "~30-50 MB di RAM",
         "Title": "Flashback audio"
       },
       "Title": "Due modalità di flashback",
@@ -1050,7 +1133,7 @@
         "BestFor": "Presentazioni, highlight di giochi, condivisione dello schermo, contenuti visivi",
         "Buffer": "10 s, 30 s, 60 s, 90 s o 120 s",
         "Captures": "Video e audio dello schermo",
-        "Memory": "50-600 MB RAM",
+        "Memory": "50-600 MB di RAM",
         "Title": "VideoFlashback"
       }
     },
@@ -1168,8 +1251,8 @@
     "NowSpeaking": "Ora parlando...",
     "SegmentCount_one": "{{count}} segmenti",
     "SegmentCount_other": "{{count}} segmenti",
-    "Tokens_one": "{{count}} tok",
-    "Tokens_other": "{{count}} tok",
+    "Tokens_one": "{{count}} token",
+    "Tokens_other": "{{count}} token",
     "TokensTooltip": "Token totali segnalati da Gemini per questa sessione",
     "TokensPendingTooltip": "In attesa del primo usageMetadata da Gemini: le sessioni native-audio riportano solo al turnComplete.",
     "ResetTooltip": "Reimposta connessione (Maiusc+clic per una nuova sessione)",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "Qualità JPEG del fotogramma",
       "VideoMaxWidth": "Larghezza massima del fotogramma",
       "VideoQualityHint": "Aumenta qualità e larghezza massima quando Gemini legge male le piccole etichette dei riquadri (es. nomi dei partecipanti Zoom / Meet / Teams). Valori più alti aumentano l'utilizzo dei token immagine — 1280 px solitamente passa dalla fascia di 258 token a quella di 1290 token per fotogramma.",
-      "DisableAutoVad": "Disattiva la VAD automatica (rilevamento turno lato server)",
       "EndSensitivity": "Sensibilità fine parlato",
       "Default": "Predefinito (ALTA — flush rapidi)",
       "SilenceMs": "Silenzio prima della fine del turno",
       "VadHint": "Meno silenzio + sensibilità ALTA → flush della trascrizione più brevi e frequenti.",
+      "DisableAutoVad": "Disattiva la VAD automatica (rilevamento turno lato server)",
       "ActivityFlush": "Flush periodico durante i turni lunghi",
       "ActivityFlushMs": "Intervallo di flush",
       "ActivityFlushHint": "Ogni N ms durante un turno lungo, sollecita Gemini a elaborare l'audio accumulato. Impedisce il blocco della trascrizione in monologhi / presentazioni. Richiede che la VAD automatica sia disattivata.",
       "ActivityFlushRequiresManualVad": "Il flush periodico ha effetto solo quando la VAD automatica è disattivata — il server Gemini rifiuta altrimenti il controllo esplicito dell'attività. Lascia l'interruttore attivo e disattiva la VAD automatica qui sotto per usarlo.",
       "Reset": "Ripristina tutto ai valori predefiniti"
-    }
+    },
+    "SegmentCount": "{{count}} segmenti"
   },
   "GeminiTranscription": {
     "Title": "Trascrizione dal vivo"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Note",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Trascrizioni delle registrazioni",
+    "SectionSummaries": "Riepiloghi delle registrazioni",
+    "SectionOcr": "Testo degli screenshot",
+    "IndexingFallback": "Indicizzazione — mostro solo corrispondenze nei nomi file",
+    "Placeholder": "Cerca in note, wiki e registrazioni…",
+    "SoFar": "finora",
+    "NoResults": "Nessuna corrispondenza"
+  },
+  "HelpPage": {
+    "Title": "Scopri di più su SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "Arm flashback",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet richiede macOS 14.2 (Sonoma) o successivo.\n\nAlcune funzionalità come il rilevamento audio per app e l'avvio automatico delle riunioni potrebbero non funzionare.\n\nAggiorna tramite Impostazioni di Sistema > Generali > Aggiornamento Software.",
     "ContinueAnyway": "Continua comunque",
     "Quit": "Esci"
+  },
+  "MediaBlock": {
+    "Processing": "Elaborazione…",
+    "SummaryReady": "Riepilogo pronto",
+    "Failed": "Non riuscito",
+    "Tab": {
+      "Summary": "Riepilogo",
+      "Transcript": "Trascrizione",
+      "Actions": "Azioni",
+      "Decisions": "Decisioni",
+      "Chapters": "Capitoli",
+      "Description": "Descrizione",
+      "Ocr": "Testo OCR"
+    },
+    "MoreActions": "Altre azioni",
+    "Action": {
+      "ShowInFolder": "Mostra nella cartella",
+      "CopyEmbed": "Copia la sintassi di incorporamento",
+      "RerunAi": "Esegui di nuovo l'IA",
+      "Detach": "Stacca dalla nota"
+    },
+    "AudioFallback": "Il tuo browser non supporta la riproduzione audio.",
+    "WaitingForPipeline": "In attesa che termini l'elaborazione IA…",
+    "PipelineFailed": "L'elaborazione IA è fallita per questo file.",
+    "NoAiContent": "L'elaborazione IA è terminata senza produrre contenuti aggiuntivi.",
+    "NoSummary": "Il riepilogo IA non è ancora stato generato.",
+    "Due": "scadenza",
+    "Stage": {
+      "preparing": "Preparazione…",
+      "uploading": "Caricamento…",
+      "uploading-wait": "Elaborazione caricamento…",
+      "analyzing": "Analisi…",
+      "extracting": "Estrazione…",
+      "saving": "Salvataggio…",
+      "complete": "Completato",
+      "gathering": "Raccolta…",
+      "reducing": "Affinamento…",
+      "writing": "Scrittura…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elementi di azione",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "lingua della trascrizione",
     "TranslationLanguage": "Lingua di traduzione",
     "UnknownSpeaker": "Oratore",
-    "WaitingForSpeech": "In attesa di parlare..."
+    "WaitingForSpeech": "In attesa di parlare...",
+    "SegmentCount": "{{count}} segmenti"
   },
   "MeetingDetail": {
     "Back": "← Indietro",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "caricamento del flashback dello schermo in corso...",
     "ScreenRecording": "registrazione dello schermo ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Inizia a digitare o incolla dagli appunti…",
+    "Saving": "Salvataggio…",
+    "Saved": "✓ Salvato",
+    "SaveFailed": "Salvataggio non riuscito",
+    "Editing": "In modifica…",
+    "TitlePlaceholder": "Nota senza titolo",
+    "TitleLabel": "Titolo della nota",
+    "RenameTooltip": "Clicca per rinominare",
+    "UntitledFallback": "Nota senza titolo",
+    "Renaming": "Rinomina in corso…",
+    "LoadFailed": "Impossibile caricare la nota",
+    "Bold": "Grassetto",
+    "Italic": "Corsivo",
+    "Code": "Codice",
+    "Heading1": "Titolo 1",
+    "Heading2": "Titolo 2",
+    "BulletList": "Elenco puntato",
+    "OrderedList": "Elenco numerato",
+    "Link": "Collegamento",
+    "LinkDialog": "Inserisci collegamento",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Aggiorna",
+    "LinkAdd": "Aggiungi",
+    "LinkRemove": "Rimuovi collegamento",
+    "InsertWikilink": "Collega a una nota ([[ … ]])",
+    "SyncWiki": "Sincronizza wiki",
+    "SyncWikiTooltip": "Aggiorna ora il wiki da questa nota (invece di attendere l’attivazione automatica)",
+    "SyncWikiCouldNotQueue": "Impossibile mettere in coda l'aggiornamento del wiki",
+    "SyncWikiQueued": "In coda…",
+    "SyncWikiRunning": "Sincronizzazione…",
+    "SyncWikiSuccess": "✓ Sincronizzato",
+    "SyncWikiError": "Sincronizzazione non riuscita",
+    "Blockquote": "Citazione",
+    "CodeBlock": "Blocco di codice",
+    "Heading3": "Intestazione 3",
+    "Highlight": "Evidenzia",
+    "HorizontalRule": "Linea orizzontale",
+    "ImageAdd": "Inserisci",
+    "ImageDialog": "Inserisci immagine",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Inserisci immagine",
+    "InsertTable": "Inserisci tabella",
+    "Strike": "Barrato",
+    "TableAddColumnAfter": "Aggiungi colonna dopo",
+    "TableAddColumnBefore": "Aggiungi colonna prima",
+    "TableAddRowAfter": "Aggiungi riga dopo",
+    "TableAddRowBefore": "Aggiungi riga prima",
+    "TableDelete": "Elimina tabella",
+    "TableDeleteColumn": "Elimina colonna",
+    "TableDeleteRow": "Elimina riga",
+    "TaskList": "Elenco attività",
+    "Redo": "Ripristina",
+    "Underline": "Sottolinea",
+    "Undo": "Annulla",
+    "Synthesize": "Riepilogo IA",
+    "SynthesizeRunning": "Sintesi in corso…",
+    "SynthesizeTooltip": "Genera o aggiorna il riepilogo IA per questa nota",
+    "SynthesizeChooseTemplate": "Scegli un modello per il riassunto AI"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Schermata",
+      "Recording": "Registrazione",
+      "AddedTo": "aggiunto a",
+      "Open": "Apri"
+    },
+    "WikiUpdateFailed": "Aggiornamento wiki fallito: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Riepilogo · {{version}}",
+      "Updated": "✨ Riepilogo aggiornato · {{version}}",
+      "Jump": "Vai ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Scegli modello…",
+      "Label": "Opzioni di sintesi"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Nuova nota",
+    "JustNow": "proprio ora",
+    "Yesterday": "Ieri",
+    "Title": "Note",
+    "EmptyTitle": "Inizia la tua prima nota",
+    "EmptySubtitle": "La registrazione è la chiave — aggiungi registrazioni e schermate a qualsiasi nota.",
+    "MediaCount": "{{n}} contenuti allegati",
+    "ConfirmDelete": "Elimina",
+    "DeleteNote": "Elimina nota"
+  },
+  "NotesTree": {
+    "Title": "Note",
+    "NewNote": "Nuova nota",
+    "NewFolder": "Nuova cartella",
+    "NewFolderPrompt": "Nome della cartella:",
+    "SortBy": "Ordina per",
+    "SortManual": "Ordine manuale",
+    "SortName": "Nome (A → Z)",
+    "SortModified": "Modifica (più recenti prima)",
+    "CollapseAll": "Comprimi tutto",
+    "SearchInTree": "Cerca nell'albero",
+    "FilterPlaceholder": "Filtra le note…",
+    "DropToRoot": "Rilascia per spostare nella radice",
+    "MoveTo": "Sposta in…",
+    "MoveToRoot": "Sposta nella radice",
+    "Duplicate": "Duplica",
+    "RevealInFinder": "Mostra nel Finder",
+    "RevealInExplorer": "Mostra in Esplora file",
+    "CopyWikilink": "Copia wikilink",
+    "Pin": "Fissa in alto",
+    "Unpin": "Sblocca",
+    "Rename": "Rinomina",
+    "Delete": "Elimina",
+    "Open": "Apri",
+    "Expand": "Espandi",
+    "OpenInNewTab": "Apri in una nuova scheda",
+    "ConfirmDeleteFolder": "Eliminare la cartella \"{{name}}\" e tutto il suo contenuto?",
+    "RenameSucceeded": "Rinominato",
+    "RenameWithRefs": "Rinominato; aggiornati {{count}} riferimenti",
+    "SortDefault": "Predefinito (ordine del filesystem)",
+    "ExpandAll": "Espandi tutto",
+    "NewFolderPlaceholder": "Nome della nuova cartella…",
+    "QuickOpen": "Apertura rapida  (⌘P)",
+    "CopyRelativePath": "Copia percorso relativo",
+    "CopyFullPath": "Copia percorso completo",
+    "UpdateWikiFromNote": "Aggiorna wiki da questa nota",
+    "WikiUpdateFailed": "Aggiornamento wiki non riuscito: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Seleziona una nota",
+    "SelectFromList": "Seleziona una nota dall'elenco o creane una nuova.",
+    "NoNotes": "Non hai ancora note — inizia la prima.",
+    "CollapseSidebar": "Nascondi barra laterale note",
+    "ExpandSidebar": "Mostra barra laterale note"
+  },
   "OCRAutoCopy": {
     "Copied": "Testo estratto copiato negli appunti",
     "Error": "Impossibile estrarre il testo",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Esegue OCR dopo ogni screenshot e copia il testo estratto negli appunti",
     "SettingsLabel": "Estrai testo automaticamente (OCR) sullo screenshot"
   },
+  "OpenRecordingsFolder": "Apri la cartella Registrazioni",
+  "OpenRecordingsFolderDesc": "Apri la cartella delle registrazioni predefinita",
   "Pause": "Pausa",
   "PermissionAlert": {
     "Title": "Autorizzazione richiesta",
@@ -1365,8 +1639,8 @@
   "PipelineStatus": {
     "Chunks": "{{done}}/{{total}} blocchi",
     "ChunksTooltip": "Blocchi elaborati",
-    "Tokens_one": "{{count}} tok",
-    "Tokens_other": "{{count}} tok",
+    "Tokens_one": "{{count}} token",
+    "Tokens_other": "{{count}} token",
     "Done": "Riepilogo pronto",
     "Error": "Elaborazione non riuscita",
     "Progress": "Elaborazione del pezzo {{current}} di {{total}}",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "Sblocca con Premium",
     "Upgrade": "Aggiorna"
   },
+  "QuickOpen": {
+    "Placeholder": "Inizia a scrivere o incolla dagli appunti… Usa [[ per collegare a un'altra nota",
+    "NoResults": "Nessuna nota corrispondente",
+    "UnifiedPlaceholder": "Apri una nota o una pagina wiki per nome…",
+    "SectionNotes": "Note",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Registra audio",
+  "RecordAudioDesc": "Inizia a registrare l'audio (misto)",
+  "RecordFullscreen": "Registra a schermo intero",
+  "RecordFullscreenDesc": "Inizia a registrare video a schermo intero",
+  "RecordRegion": "Scatta una regione da registrare",
+  "RecordRegionDesc": "Seleziona una regione dello schermo da registrare",
   "RecordTab": {
     "TapToRecord": "Tocca per iniziare a registrare",
     "RecordWithPreamble": "Registra con preambolo di {{seconds}}s",
@@ -1427,7 +1714,7 @@
     "FlashbackStatusOff": "disattivato — tocca per attivare",
     "FlashbackStatusCharging": "caricamento {{percent}}%",
     "FlashbackStatusReady": "pronto — {{seconds}}s di {{type}} in RAM",
-    "LauncherPill": "Launcher",
+    "LauncherPill": "Lanciatore",
     "FloaterPill": "Fluttuante",
     "AutoDetectLabel": "Rilevamento auto",
     "FlashbackLabel": "Flashback",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "In pausa",
     "Preparing": "Preparazione",
-    "PreparingToRecord": "Preparazione alla registrazione..."
+    "PreparingToRecord": "Preparazione alla registrazione...",
+    "InProgress": "Registrazione in corso",
+    "WillBeAdded": "L'audio verrà aggiunto qui quando clicchi su Interrompi",
+    "AttachingTo": "Allegando a {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Registrazione audio",
@@ -1486,6 +1776,19 @@
     "SaveAs": "Salva come",
     "SearchRecordingsOrSnapshots": "Cerca registrazioni e istantanee",
     "ShowInFolder": "Mostra nella cartella"
+  },
+  "Regenerate": {
+    "Title": "Rigenera il riepilogo della nota",
+    "PickTemplate": "Scegli un modello:",
+    "Custom": "Oppure scrivi istruzioni personalizzate (sostituisce il modello):",
+    "CustomPlaceholder": "es. 'Concentrati sugli impegni verso il cliente X, output come memo esecutivo di una pagina.'",
+    "SaveAsTemplate": "Salva come modello personalizzato",
+    "TemplateNamePlaceholder": "Nome del modello",
+    "NameRequired": "Il nome è richiesto per salvare",
+    "OutputLanguageHint": "La lingua di output segue Impostazioni → Estrazione e riepilogo AI",
+    "Submit": "Rigenera",
+    "AutoUpdate": "Aggiornamento automatico durante la digitazione",
+    "AutoUpdateHint": "Riesegue la sintesi dopo modifiche sostanziali a questa nota (usa la tua quota IA)."
   },
   "RegionSelector": {
     "CaptureButton": "Cattura schermo o premi Invio",
@@ -1596,6 +1899,20 @@
     "ZeroBytes": "0 Byte",
     "Info": "Statistiche"
   },
+  "Search": {
+    "Placeholder": "Cerca… (⌘K)",
+    "Aria": "Cerca tra note e wiki",
+    "GroupNotes": "Note",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Registrazioni",
+    "GroupScreenshots": "Schermate",
+    "Results": {
+      "Aria": "Risultati della ricerca"
+    },
+    "Loading": "Ricerca in corso…",
+    "NoResults": "Nessun risultato per «{{query}}»",
+    "AgentHint": "Prova l'agente IA per ricerche semantiche."
+  },
   "Settings": {
     "About": {
       "CheckForUpdates": "Controlla gli aggiornamenti",
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "Versione completa",
         "OneSentence": "1‑Frase",
-        "TLDR": "TLDR"
+        "TLDR": "Riepilogo"
       },
       "NoUpdatesAvailable": "Nessun aggiornamento disponibile",
       "Privacy": {
@@ -1664,13 +1981,13 @@
       "Terms": {
         "OneSentenceSummary": "SeaMeet è un registratore gratuito che tutela la privacy in cui l'utilizzo locale non richiede alcun account, i tuoi dati rimangono tuoi, le funzionalità cloud sono opzionali e devi ottenere il consenso prima della registrazione.",
         "TLDRItems": [
-          "SeaMeet Desktop is free — all non‑AI features work without an account or login.",
-          "Get consent before recording — SeaMeet doesn't check this for you.",
-          "Your recordings and transcripts are yours; SeaMeet only processes them to run as service.",
-          "Cloud features require an account and store data on SeaMeet servers.",
-          "Anonymous diagnostics are optional and can be turned off anytime.",
-          "Don't misuse of app (no illegal use, no hacking).",
-          "Service may change, and liability is limited."
+          "SeaMeet Desktop è gratuito — tutte le funzioni non-AI funzionano senza account o accesso.",
+          "Ottieni il consenso prima di registrare — SeaMeet non lo verifica per te.",
+          "Le tue registrazioni e trascrizioni sono tue; SeaMeet le elabora solo per fornire il servizio.",
+          "Le funzioni cloud richiedono un account e archiviano dati sui server SeaMeet.",
+          "La diagnostica anonima è opzionale e può essere disattivata in qualsiasi momento.",
+          "Non fare cattivo uso dell'app (nessun uso illegale, nessun hacking).",
+          "Il servizio può cambiare e la responsabilità è limitata."
         ],
         "TLDRTitle": "Termini di SeaMeet: TLDR per persone impegnate"
       },
@@ -1720,6 +2037,13 @@
       "AutoRecording": "Registrazione automatica",
       "Flashback": "Registrazione flashback",
       "Storage": "Archiviazione"
+    },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (gratuito, 20 chiamate/giorno)",
+      "FlashLiteFree": "Flash Lite (gratuito, 500 chiamate/giorno)",
+      "Help": "Gli aggiornamenti IA si mettono automaticamente in pausa quando questa quota è esaurita, poi riprendono.",
+      "Label": "Livello di quota Gemini",
+      "Paid": "Livello a pagamento"
     },
     "SettingsFileLocation": "Posizione del file di impostazioni",
     "Storage": {
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Cancella ricerca",
     "PrimaryNavigation": "Navigazione primaria"
   },
+  "Tabs": {
+    "CloseTab": "Chiudi",
+    "RecordingHere": "Registrazione in corso qui",
+    "OrphanTooltip": "Questo file è stato eliminato dal disco",
+    "ScrollLeft": "Scorri le schede a sinistra",
+    "ScrollRight": "Scorri le schede a destra"
+  },
+  "TakeScreenshot": "Acquisisci schermata",
+  "TakeScreenshotDesc": "Cattura una regione dello schermo",
   "TakeSnapshot": {
     "GoToSnapshot": "Vai alla nuova istantanea",
     "Message": "Snapshot acquisita e salvata in:",
@@ -1786,7 +2119,7 @@
     "Title": "Snapshot acquisita"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Agente",
     "CloseNavigationMenu": "Chiudi il menu di navigazione",
     "Files": "File",
     "MainNavigation": "Navigazione principale",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Apri il menu di navigazione",
     "Record": "Documentazione",
     "Recording": "Registrazione",
-    "Screenshot": "Screenshot"
+    "Screenshot": "Schermata",
+    "GroupCapture": "Cattura",
+    "GroupKnowledge": "Conoscenza",
+    "Notes": "Note",
+    "Wiki": "Wiki",
+    "GroupTools": "Strumenti"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet è ancora in esecuzione nel vassoio di sistema (tray di Windows).",
@@ -1812,6 +2150,11 @@
     "Audio": "Audio",
     "System": "Uscita audio di sistema",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Rinominato; aggiornati {{count}} riferimenti",
+    "Action": "Annulla",
+    "ToastNoRefs": "Rinominato"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Installa e esci",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Flashback salva gli ultimi 10 secondi — così non perdi la prima frase importante.",
     "GotIt": "Capito"
   },
-  "HelpPage": {
-    "Title": "Scopri di più su SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "Contenuto generato dall'IA",
+    "AIBadge": "Generato dall'IA",
+    "Backlinks": "Backlink",
+    "RelatedPages": "Pagine correlate",
+    "BuiltFrom": "Costruito da",
+    "SelectPage": "Seleziona una pagina",
+    "SelectPageHint": "Seleziona un'entità, una persona o un argomento dalla barra laterale per vedere ciò che il tuo wiki ha appreso.",
+    "LoadingPage": "L'IA sta costruendo questa pagina…",
+    "LoadFailed": "Impossibile caricare questa pagina wiki.",
+    "AISection": "Sezione IA",
+    "AIEmpty": "Nessun contenuto IA finora. Aggiungi una registrazione o una schermata a una nota che cita questa entità, quindi esegui l'aggiornamento del wiki.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Il tuo wiki è vuoto",
+    "EmptySubtitle": "Registra una riunione o scrivi una nota per iniziare a costruire la tua base di conoscenza.",
+    "UserSection": "Le tue note",
+    "UserSectionTitle": "Le tue note",
+    "UserSectionPlaceholder": "Aggiungi note personali…",
+    "RefreshFromSources": "Aggiorna dalle fonti",
+    "RefreshFromSourcesTooltip": "Aggiorna ora la sezione AI da {{count}} nota/e fonte",
+    "RefreshFromSourcesHint": "Clic per aggiornare la sezione AI da {{count}} nota/e fonte. Maiusc+clic rilegge anche le note fonte.",
+    "RefreshDisabledTooltip": "Questa pagina wiki non ha ancora note fonte — generala prima da una nota.",
+    "RefreshAriaLabel": "Aggiorna la pagina wiki dalle note fonte",
+    "RefreshError": "Aggiornamento non riuscito",
+    "Bulk": {
+      "Build": "Costruisci wiki",
+      "BuildFromAll": "Costruisci wiki da tutte le note",
+      "BuildFromFolder": "Costruisci wiki da cartella…",
+      "BuildFromSelection": "Costruisci wiki da selezione…",
+      "ToastMessage": "Rilevate {{count}} nuove note. Costruisci wiki?",
+      "BannerMessage": "{{count}} nuove note dall’ultima build",
+      "BuildingExtracting": "Lettura di {{current}}/{{total}} note",
+      "BuildingReducing": "Costruzione di {{current}}/{{total}} pagine",
+      "Building": "Costruzione wiki — {{stage}}",
+      "PausedFor": "limite di frequenza: {{seconds}}s",
+      "Cancel": "Annulla",
+      "Cancelling": "Annullamento — completamento della nota corrente…",
+      "Pause": "Pausa",
+      "Continue": "Riprendi",
+      "Paused": "In pausa — {{current}}/{{total}}",
+      "Restart": "Riavvia",
+      "NowReading": "Sta leggendo: {{item}}",
+      "NowBuilding": "Sta costruendo: {{item}}",
+      "RecentList": "Elaborato di recente",
+      "DoneSummary": "Wiki costruito — {{notes}} note, {{pages}} pagine",
+      "Resume": "Riprendi",
+      "ResumeAvailable": "Una build precedente del wiki è stata interrotta a {{current}}/{{total}}. Riprendere?",
+      "PolishIndex": "Lucida indice",
+      "PolishIndexHint": "Aggiungi un’introduzione narrativa all’indice del wiki",
+      "BuildFromFolderPrompt": "Percorso cartella (relativo al workspace):",
+      "BuildFromSelectionPrompt": "Nomi file note separati da virgole (relativi a notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Altre azioni wiki",
+      "BuildAllTooltip": "Costruisci wiki da tutte le note (incrementale — aggiorna solo le pagine le cui note fonte sono cambiate).",
+      "BuildAllRunning": "Costruzione del wiki da tutte le note — vedi banner sotto.",
+      "BuildAllAria": "Costruisci wiki da tutte le note"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Wiki di aggiornamento automatico dalle note",
+    "SettingsDesc": "Crea una base di conoscenza di entità, persone e argomenti dalle tue note e registrazioni. Disattivato per impostazione predefinita."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Cerca pagine wiki per nome…",
+    "NoResults": "Nessuna pagina wiki corrispondente"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Nuova pagina wiki",
+    "NewFolder": "Nuova cartella",
+    "NewFolderPlaceholder": "Nome cartella…",
+    "SortBy": "Ordina per",
+    "SortDefault": "Predefinito (ordine del filesystem)",
+    "SortName": "Nome (A → Z)",
+    "SortModified": "Modificato (più recenti prima)",
+    "CollapseAll": "Comprimi tutto",
+    "ExpandAll": "Espandi tutto",
+    "SearchInTree": "Filtra nell’albero",
+    "FilterPlaceholder": "Filtra pagine…",
+    "DropToRoot": "Rilascia per spostare nella radice wiki",
+    "MoveToRoot": "Sposta nella radice wiki",
+    "Open": "Apri",
+    "Rename": "Rinomina",
+    "Delete": "Elimina",
+    "CopyWikilink": "Copia wikilink",
+    "CopyRelativePath": "Copia percorso relativo",
+    "CopyFullPath": "Copia percorso completo",
+    "ConfirmDeleteFile": "Spostare \"{{name}}\" nel cestino? (Recuperabile da Finder / Explorer.)",
+    "ConfirmDeleteFolder": "Spostare la cartella \"{{name}}\" e tutto il suo contenuto nel cestino?",
+    "Empty": "Nessuna pagina wiki ancora. Il pipeline scriverà qui quando registri riunioni.",
+    "SetDefaultEntity": "Imposta come cartella predefinita per nuove pagine di entità",
+    "SetDefaultPerson": "Imposta come cartella predefinita per nuove pagine di persona",
+    "SetDefaultTopic": "Imposta come cartella predefinita per nuove pagine di argomento",
+    "SetDefaultMeeting": "Imposta come cartella predefinita per nuove pagine di riunione",
+    "DefaultLabel": "Predefinita per {{wikiKind}}",
+    "AIBadge": "Generato da IA",
+    "UserBadge": "Modificato dall’utente",
+    "QuickOpen": "Apertura rapida (⌘P)",
+    "ConflictBadge": "Copia in conflitto",
+    "EmptyAiCurated": "L'IA popola questa cartella quando le tue registrazioni o note menzionano un'entità, persona, argomento o riunione. Apri una nota e fai clic su Sincronizza Wiki per generare pagine."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] non è in questo workspace",
+    "Collision": "{{count}} note condividono il nome base {{name}}",
+    "DisambiguationTitle": "Scegli quale nota aprire",
+    "DisambiguationOpenAt": "in {{folder}}",
+    "SuggestEmpty": "Nessuna nota o pagina wiki corrispondente",
+    "BrokenTooltipSyncWiki": "Questa pagina non è ancora stata creata — fai clic su Sincronizza Wiki in questa nota per generarla.",
+    "SyncContextMenu": "Sincronizza wiki",
+    "SyncToGenerate": "Sincronizza il wiki per generare questa pagina"
   },
   "WindowPicker": {
     "Instruction": "Scegli una finestra da catturare per registrazioni finestra.",
@@ -1947,6 +2399,15 @@
     "Title": "Seleziona una finestra",
     "Unknown": "Finestra senza titolo"
   },
+  "Workspace": {
+    "None": "Nessuno spazio di lavoro",
+    "EmptyList": "Nessuno spazio di lavoro registrato",
+    "Add": "Aggiungi spazio di lavoro…",
+    "Remove": "Rimuovi da SeaMeet",
+    "RemoveTooltip": "Rimuovi da SeaMeet (i file su disco restano)",
+    "ConfirmRemove": "Rimuovere lo spazio di lavoro \"{{name}}\"? I file su disco non vengono eliminati; viene rimossa solo la voce SeaMeet.",
+    "Default": "Predefinito"
+  },
   "agent": {
     "fabLabel": "Chiedi all'Agente IA",
     "panelLabel": "Agente IA",
@@ -1954,11 +2415,21 @@
     "maximize": "Ingrandisci",
     "close": "Chiudi"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Preparazione della registrazione…"
+    },
+    "error": {
+      "title": "Non è stato possibile elaborare questa registrazione",
+      "body": "Controlla la tua chiave API o riprova."
+    },
+    "disabled": "Le funzionalità IA sono disattivate. Abilitale in Impostazioni per vedere riepiloghi e azioni."
+  },
   "floatingPip": {
     "minimize": "Riduci a icona",
     "maximize": "Ingrandisci",
-    "close": "Chiudi",
     "restore": "Ripristina",
+    "close": "Chiudi",
     "exit": "Esci da picture-in-picture"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Passa al layout classico",
       "floating": "Passa al layout fluttuante"
     },
+    "showPipTooltip": "Mostra picture-in-picture",
     "announce": {
       "classic": "Passato al layout classico",
       "floating": "Passato al layout fluttuante"
     },
-    "introToast": "Novità: Layout fluttuante disponibile. Fai clic sull'icona del layout nell'intestazione per provarlo.",
-    "showPipTooltip": "Mostra picture-in-picture"
+    "introToast": "Novità: Layout fluttuante disponibile. Fai clic sull'icona del layout nell'intestazione per provarlo."
   }
 }

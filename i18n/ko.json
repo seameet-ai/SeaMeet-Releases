@@ -27,12 +27,12 @@
       "CliInstallLink": "Claude Code 설치 →",
       "CliNotFound": "CLI를 찾을 수 없음",
       "CliNotInstalled": "Claude CLI를 찾을 수 없습니다 — 설치하고 로그인하여 인증하세요:",
-      "CliSection": "Claude Code CLI",
+      "CliSection": "클로드 코드 CLI",
       "DefaultModel": "기본 모델",
       "GetKeyLink": "Anthropic Console에서 API 키 받기 →",
       "HideKey": "키 숨기기",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
+      "InstallMac": "macOS/리눅스:",
+      "InstallWin": "윈도우(파워셸):",
       "ApiKeyTitle": "API 키",
       "KeyInvalid": "잘못된 키",
       "KeyPlaceholder": "sk-ant-...",
@@ -48,13 +48,13 @@
       "QuotaLoading": "할당량 로드 중...",
       "QuotaRemaining": "{{remaining}} / {{limit}} 토큰 남음",
       "QuotaResetDate": "{{date}}에 재설정됩니다.",
-      "Refresh": "Re-detect Claude",
-      "Remove": "Remove Claude integration",
+      "Refresh": "클로드를 다시 감지하세요",
+      "Remove": "Claude 통합 제거",
       "Saving": "절약...",
       "Section": "Claude API 키(에이전트)",
       "ShowKey": "키 표시",
       "SourceByok": "API 키(BYOK)",
-      "SourceCli": "Claude Code CLI",
+      "SourceCli": "클로드 코드 CLI",
       "SourceKeyServer": "SeaMeet에서 관리함",
       "SourceLabel": "활성 소스:",
       "SourceNone": "구성되지 않음",
@@ -67,29 +67,29 @@
       "InstallGuideLink": "시작 가이드",
       "InstallGuideSuffix": "를 따라 설치한 후 실행하세요:",
       "NotDetected": "감지되지 않음 — 설치하고 인증하세요:",
-      "Refresh": "Re-detect Copilot",
-      "Remove": "Remove Copilot integration",
-      "Section": "GitHub Copilot"
+      "Refresh": "부조종사 재탐지",
+      "Remove": "Copilot 통합 제거",
+      "Section": "GitHub 코파일럿"
     },
     "Provider": {
       "Detected": "감지됨",
       "Hint": "채팅 패널에서 대화별로 제공자를 전환할 수도 있습니다.",
       "NotAvailable": "사용 불가",
-      "Preferred": "Preferred",
+      "Preferred": "우선의",
       "Section": "선호 에이전트 제공자"
     },
     "ClearKey": "저장된 키 삭제",
     "EnableToggle": "AI 기반 요약 활성화",
     "EnableToggleDesc": "무료 Gemini API 키가 필요합니다",
-    "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini",
+    "DefaultModel": "기본 모델",
+    "GeminiSection": "쌍둥이자리",
     "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
     "GroupTitle": "AI 기능",
     "HideKey": "키 숨기기",
     "KeyInvalid": "잘못된 키",
-    "KeyManagedInBilling": "API key is managed in Manage Subscription → API Keys",
+    "KeyManagedInBilling": "API Key는 구독관리 → API Keys에서 관리됩니다.",
     "KeyNotConfigured": "구성된 키가 없습니다.",
-    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholder": "아이자시...",
     "KeyPlaceholderSaved": "••••••••• (저장됨)",
     "KeyTesting": "테스트 중...",
     "KeyVerified": "키 확인됨",
@@ -98,15 +98,15 @@
     "MenuItem": "AI 기반 요약",
     "ModelLabel": "쌍둥이자리 모델",
     "Models": {
-      "Gemini25Flash": "Gemini 2. Flash",
-      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25Flash": "쌍둥이자리 2. 플래시",
+      "Gemini25FlashLite": "쌍둥이 자리 2.5 플래시 라이트",
       "Gemini25FlashLiteSub": "매우 저렴함",
       "Gemini25FlashSub": "가장 저렴한 안정적인 옵션",
-      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25Pro": "제미니 2.5 프로",
       "Gemini25ProSub": "최고의 안정적인 추론",
-      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3Flash": "제미니 3 플래시",
       "Gemini3FlashSub": "권장됨 · 빠르며 가능함",
-      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3Pro": "제미니 3 프로",
       "Gemini3ProSub": "최대 용량"
     },
     "ModelSection": "AI 모델",
@@ -187,7 +187,7 @@
       "Summary": "요약",
       "Transcription": "전사"
     },
-    "ScreenshotTabTitle": "AI Analysis",
+    "ScreenshotTabTitle": "AI 분석",
     "TabTitle": "AI 요약",
     "Topics": "주제:",
     "Speakers": "스피커",
@@ -208,6 +208,47 @@
       "Latest": "최신",
       "Live": "살다"
     }
+  },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ AI가 업데이트",
+    "Title": "노트 요약",
+    "Meta": "{{count}}개 녹음 · 템플릿: {{tpl}}",
+    "CopyToEdit": "편집용 복사",
+    "Regenerate": "재생성",
+    "Generating": "생성 중…",
+    "Provenance": "{{n}}개 녹음에서 생성",
+    "Error": "생성 실패: {{err}}",
+    "RenameSuggested": "AI 제안: \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "일반 미팅",
+        "description": "결정, 액션, 논의"
+      },
+      "brainstorm": {
+        "name": "브레인스토밍",
+        "description": "아이디어, 흐름, 열린 질문"
+      },
+      "lecture": {
+        "name": "강의 / 토크",
+        "description": "주제, 핵심 포인트, 질문, 참고"
+      },
+      "oneonone": {
+        "name": "1:1 / 인터뷰",
+        "description": "주제, 감정, 후속 조치"
+      },
+      "sales": {
+        "name": "세일즈 콜",
+        "description": "발견, 이의, 다음 단계, 의사결정자"
+      },
+      "standup": {
+        "name": "스탠드업 / 상태",
+        "description": "인원별 업데이트, 블로커, 다음"
+      }
+    },
+    "RegenerateTooltip": "같은 템플릿으로 다시 생성",
+    "RegenerateChooseTemplate": "다른 템플릿으로 다시 생성",
+    "Stale": "오래됨 · 새로고침",
+    "StaleTooltip": "이 요약이 생성된 이후 노트가 변경되었습니다 — 클릭하여 새로 고침."
   },
   "About": {
     "AppStoreBuild": "App Store 빌드",
@@ -301,7 +342,8 @@
       "Output": "산출",
       "Pattern": "무늬:",
       "Reading": "파일을 읽는 중...",
-      "ShowDetails": "세부정보 표시"
+      "ShowDetails": "세부정보 표시",
+      "AndMoreLines": "... 그리고 {{count}} 줄 더 보기"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} 작업",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} 완료됨",
       "Completed_other": "{{count}} 완료됨",
       "Running_one": "{{count}} 실행 중",
-      "Running_other": "{{count}} 실행 중"
+      "Running_other": "{{count}} 실행 중",
+      "Running": "{{count}} 실행 중",
+      "Completed": "{{count}} 완료됨",
+      "Actions": "{{count}} 작업"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "AI 에이전트를 사용하려면 API 키를 구성하세요."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "녹음을 준비하는 중입니다…"
-    },
-    "error": {
-      "title": "이 녹음을 처리할 수 없습니다",
-      "body": "API 키를 확인하거나 다시 시도하세요."
-    },
-    "disabled": "AI 기능이 꺼져 있습니다. 요약 및 작업을 보려면 설정에서 활성화하세요."
   },
   "App": {
     "FailedToEnableFlashback": "플래시백 활성화 실패: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "고급 설정 →",
     "LearnMore": "자세히 보기"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "처음이신가요? 작동 방식을 알아보세요 →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "자동 감지",
     "Description": "AUTO DETECT가 회의에 참여할 때 자동으로 녹음을 시작하므로, 녹음 버튼 누르는 것을 잊지 마세요.",
@@ -424,9 +462,6 @@
     "Tip2Desc": "마이크 활동, 창 제목, 브라우저 URL을 이용해 정확도를 높입니다",
     "Tip2Title": "여러 탐지 방법",
     "Title": "회의 자동 감지"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "처음이신가요? 작동 방식을 알아보세요 →"
   },
   "AutoRecording": {
     "BugReport": "버그가 있으시다면 seameet@seasalt.ai로 보고해 주세요",
@@ -516,15 +551,15 @@
       "ActiveTitle": "구독 활성 — BYOK Pro",
       "AnthropicHelp": "키 받기: ",
       "AnthropicHelpLink": "console.anthropic.com",
-      "AnthropicLabel": "Claude (Anthropic)",
+      "AnthropicLabel": "클로드(인류)",
       "AnthropicTip": "팁: 신규 계정에는 무료 크레딧이 제공됩니다. Claude Pro 또는 Max를 구독 중이라면 포함되어 있습니다.",
       "AnthropicUsage": "용도: AI 질문, 프로젝트 분석",
       "Configured": "설정 완료",
       "EnterKey": "API 키 입력",
       "GeminiHelp": "무료 키 받기: ",
       "GeminiHelpLink": "aistudio.google.com/apikey",
-      "GeminiLabel": "Gemini (Google AI)",
-      "KeySaved": "Key saved (hidden)",
+      "GeminiLabel": "제미니(구글 AI)",
+      "KeySaved": "키가 저장됨(숨김)",
       "GeminiUsage": "용도: 전사, 요약, 실시간 전사. 무료 키는 Gemini 요청 제한 및 할당량의 적용을 받습니다. 제한에 도달하면 Google AI Studio 유료 플랜으로 변경하세요.",
       "NotConfigured": "미설정",
       "SaveContinue": "저장 후 계속",
@@ -550,13 +585,13 @@
       "RemoveKey": "저장된 키 삭제",
       "StepCopilotTitle": "GitHub Copilot 연결 (선택사항)",
       "StepCopilotDesc": "시스템에서 GitHub Copilot이 감지되었습니다. 선호하는 에이전트 제공자를 선택하세요.",
-      "CopilotStatus": "GitHub Copilot",
+      "CopilotStatus": "GitHub 코파일럿",
       "Authenticated": "인증됨",
       "CopilotUsage": "기본 에이전트 제공자로 설정하시겠습니까?",
       "CopilotFreeWarning": "GitHub Copilot Free는 월 50회의 에이전트/채팅 요청만 포함됩니다. 빠른 테스트에는 좋지만 한도에 빨리 도달할 수 있습니다. 더 높은 한도를 위해 Copilot Pro로 업그레이드하거나, 무제한 AI 액세스를 위해 SeaMeet Desktop Pro를 사용하세요.",
       "KeepClaude": "Claude를 기본값으로 유지",
       "UseCopilot": "GitHub Copilot을 기본값으로 사용",
-      "CopilotLabel": "GitHub Copilot",
+      "CopilotLabel": "GitHub 코파일럿",
       "CopilotDetected": "감지됨",
       "CopilotNotDetected": "감지되지 않음",
       "CopilotSignupHint": "GitHub Copilot을 대체 에이전트로 사용해 보시겠습니까? github.com/features/copilot/plans에서 무료 플랜에 가입하고 (월 50회 에이전트/채팅 요청 포함), Copilot CLI를 설치한 후 \"copilot login\"을 실행하세요.",
@@ -579,10 +614,10 @@
         "Step2Desc1": "클릭 ",
         "Step2GetKey": "API 키 받기",
         "Step2Desc2": " 하여 무료 Gemini API 키를 생성합니다. 자세한 내용은 ",
-        "Step2Studio": "Google AI Studio",
+        "Step2Studio": "구글 AI 스튜디오",
         "Step3Title": "3단계 — (무료) GitHub Copilot CLI 받기",
         "Step3Install": "클릭 ",
-        "Step3InstallLink": "GitHub Copilot CLI",
+        "Step3InstallLink": "GitHub 코파일럿 CLI",
         "Step3InstallSuffix": " 또는 빠른 설치:",
         "Step3Login": "실행: ",
         "Step3LoginDesc": " (무료, 월 50회 채팅)",
@@ -591,12 +626,12 @@
         "Step4Title": "4단계 — (선택 사항, 유료) Claude Code CLI 받기",
         "Step4Already": "이전에 Claude Code를 설치했다면 이미 설치되어 있을 가능성이 높습니다.",
         "Step4Install": "클릭 ",
-        "Step4InstallLink": "Claude Code CLI",
+        "Step4InstallLink": "클로드 코드 CLI",
         "Step4InstallSuffix": " 또는 빠른 설치:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
+        "Step4Mac": "macOS/리눅스:",
+        "Step4Win": "윈도우:",
         "Step4WinReq": "필요: ",
-        "Step4GitWin": "Git for Windows",
+        "Step4GitWin": "윈도우용 힘내",
         "Step4Auth": "실행: ",
         "Step4AuthDesc": " (Claude Pro 또는 Max 플랜 필요)",
         "Step4Refresh": "아래 새로고침을 클릭하여 Claude Code를 감지하세요.",
@@ -619,13 +654,14 @@
       "LimitDescription": "SeaMeet Pro는 동시에 최대 3대의 기기에서 사용할 수 있습니다. 사용하지 않는 기기에서 로그아웃하여 슬롯을 확보하세요.",
       "LimitTitle": "기기 수 제한 도달",
       "Loading": "기기 로드 중...",
-      "NoDevices": "No devices registered",
+      "NoDevices": "등록된 기기가 없습니다.",
       "SigningOut": "로그아웃 중...",
       "SignOut": "로그아웃",
-      "TabLabel": "Devices",
+      "TabLabel": "장치",
       "Today": "오늘",
       "Yesterday": "어제",
-      "YourDevices": "Your Devices"
+      "YourDevices": "귀하의 장치",
+      "DaysAgo": "{{count}}일 전"
     },
     "FAQ": {
       "Title": "자주 묻는 질문",
@@ -669,15 +705,15 @@
       "Unknown": "문제가 발생했습니다. 다시 시도해 주세요."
     },
     "FreeNote": "무료 플랜: 녹음 전용, AI 기능 없음, 로그인 불필요. 구독 없이 언제든 녹음할 수 있습니다.",
-    "ComingSoon": "Coming soon",
+    "ComingSoon": "곧 출시 예정",
     "Plans": {
       "BYOK": {
-        "Name": "BYOK Pro",
-        "Price": "$7.99/month",
-        "Feature1": "AI transcription & summaries",
-        "Feature2": "Use your own Gemini & Claude API keys",
-        "Feature3": "Live transcription during meetings",
-        "Feature4": "AI-powered meeting questions & analysis",
+        "Name": "BYOK 프로",
+        "Price": "$7.99/월",
+        "Feature1": "AI 전사 및 요약",
+        "Feature2": "자신만의 Gemini & Claude API 키를 사용하세요",
+        "Feature3": "회의 중 실시간 전사",
+        "Feature4": "AI 기반 회의 질문 및 분석",
         "InfoNote": "2가지 설정이 필요합니다: Google AI Studio(무료)와 GitHub(무료) 또는 Anthropic(유료). 결제 후 설정 마법사가 안내합니다:",
         "ConfirmTitle": "구독 전 확인",
         "ConfirmContinue": "결제로 이동",
@@ -689,15 +725,15 @@
         "InfoNoteClaude": "Claude Pro 또는 Max를 구독 중이라면 별도의 Anthropic API 키가 필요 없습니다."
       },
       "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
+        "Name": "데스크탑 프로",
+        "Price": "$15.99/월",
+        "Feature1": "BYOK Pro의 모든 것",
+        "Feature2": "내장 AI — API 키가 필요하지 않습니다",
+        "Feature3": "우선 지원",
+        "Feature4": "고급 분석"
       },
       "Free": {
-        "Name": "Free",
+        "Name": "무료",
         "Price": "$0",
         "Feature1": "녹음 전용",
         "Feature2": "AI 기능 없음",
@@ -705,12 +741,12 @@
         "Feature4": "항상 사용 가능"
       },
       "Sync": {
-        "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
-        "Feature2": "Cloud sync across devices",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Name": "동기화 프로",
+        "Price": "$25.99/월",
+        "Feature1": "Desktop Pro의 모든 것",
+        "Feature2": "장치 간 클라우드 동기화",
+        "Feature3": "팀 협업 기능",
+        "Feature4": "공유 회의 라이브러리"
       }
     },
     "Privacy": {
@@ -783,14 +819,14 @@
       "CancelNotice": "구독 종료일 {{date}}",
       "CancelPendingNotice": "구독이 {{date}}에 종료됩니다. 그때까지 AI 기능을 계속 사용할 수 있습니다.",
       "EndsOn": "{{date}} 종료",
-      "DevOverride": "(Dev Override)",
+      "DevOverride": "(개발자 재정의)",
       "Loading": "로딩 중...",
       "Manage": "구독 관리",
       "None": "구독 없음",
       "PastDue": "결제 지연",
       "Plan": "플랜",
       "Reactivate": "재활성화",
-      "SignIn": "Sign in to manage subscription",
+      "SignIn": "구독을 관리하려면 로그인하세요.",
       "Trial": "체험판"
     },
     "SignInToSubscribe": "구독하려면 로그인하세요:",
@@ -838,7 +874,7 @@
     "Close": "닫기",
     "Configure": "설정",
     "Delete": "삭제",
-    "Dismiss": "Dismiss",
+    "Dismiss": "해고하다",
     "Done": "완료",
     "Expand": "확장",
     "FileNameCopiedWithRenameHint": "{{fileName}}이(가) 클립보드에 복사되었습니다. 파일 이름을 변경하려면 더블 클릭하세요.",
@@ -856,7 +892,12 @@
     "Starting": "시작 중...",
     "UnknownApp": "알 수 없는 앱",
     "Copied": "복사됨!",
-    "Copy": "복사"
+    "Copy": "복사",
+    "Clear": "분명한",
+    "Forward": "앞으로",
+    "Refresh": "새로 고치다",
+    "Apply": "적용",
+    "Undo": "실행 취소"
   },
   "DeletePrompt": {
     "Cancel": "취소",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "표시된 이벤트",
     "Title": "이벤트"
   },
+  "ExternalChange": {
+    "Banner": "편집하는 동안 이 파일이 디스크에서 변경되었습니다.",
+    "Reload": "디스크 버전 다시 불러오기",
+    "Keep": "내 버전 유지"
+  },
+  "FAB": {
+    "Label": "빠른 작업",
+    "Stop": "녹음 중지",
+    "Record": "녹음 시작",
+    "Screenshot": "스크린샷 찍기",
+    "Agent": "AI 에이전트",
+    "PickSource": "녹음 소스 선택",
+    "PickScreenshotSource": "스크린샷 소스 선택",
+    "SourceAudio": "오디오만",
+    "SourceFullscreen": "전체 화면",
+    "SourceWindow": "창",
+    "SourceRegion": "영역",
+    "ScreenshotFullscreen": "전체 화면",
+    "ScreenshotWindow": "창",
+    "ScreenshotRegion": "영역",
+    "LiveTranscription": "실시간 전사",
+    "ToggleLiveTranscription": "실시간 자막 전환",
+    "RecordingInProgress": "녹음 중…",
+    "OpenBoundNote": "이 녹음이 첨부된 노트 열기"
+  },
   "FileImport": {
     "BrowseFiles": "파일 탐색",
     "DragDropFiles": "오디오, 비디오, 이미지 파일을 여기에 드래그 앤 드롭하세요",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "동영상 파일 복사 중...",
     "VideoImportSaving": "동영상 파일 저장 중...",
     "VideoUnsupported": "이 동영상 형식은 앱에서 재생되지 않을 수 있습니다. 파일은 그래도 가져옵니다."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "{{count}}개의 일치 항목을 모두 바꿀까요?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "찾기",
+    "AriaLabel": "찾기 및 바꾸기",
+    "CaseSensitive": "대소문자 일치",
+    "ClearSearch": "지우기",
+    "Previous": "이전 결과",
+    "Next": "다음 결과",
+    "NoResults": "결과 없음",
+    "ReplacePlaceholder": "바꾸기",
+    "WikiAiReadonly": "AI 섹션은 읽기 전용입니다 — 바꾸기는 사용자 섹션에서만 작동합니다",
+    "Replace": "바꾸기",
+    "ReplaceAll": "모두 바꾸기",
+    "CloseBar": "찾기/바꾸기 닫기",
+    "WikiCounterSplit": "노트에 {{userCount}}개 + AI 섹션에 {{aiCount}}개"
   },
   "FlashbackControls": {
     "AudioFlashback": "오디오 플래시백",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "프레임 JPEG 품질",
       "VideoMaxWidth": "프레임 최대 너비",
       "VideoQualityHint": "Gemini가 작은 타일 레이블(예: Zoom / Meet / Teams 참가자 이름)을 잘못 읽을 때 품질과 최대 너비를 높이세요. 값이 높을수록 이미지 토큰 사용량이 증가합니다 — 1280 px는 일반적으로 프레임당 258 토큰에서 1290 토큰 계층으로 증가합니다.",
-      "DisableAutoVad": "자동 VAD 비활성화(서버 측 턴 감지)",
       "EndSensitivity": "발화 종료 민감도",
       "Default": "기본값(HIGH — 빠른 플러시)",
       "SilenceMs": "턴 종료 전 무음 시간",
       "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
+      "DisableAutoVad": "자동 VAD 비활성화(서버 측 턴 감지)",
       "ActivityFlush": "긴 턴 동안의 주기적 플러시",
       "ActivityFlushMs": "플러시 간격",
       "ActivityFlushHint": "긴 턴 중 N 밀리초마다 Gemini가 누적된 오디오를 처리하도록 유도합니다. 독백 / 프레젠테이션 중 전사가 멈추는 것을 방지합니다. 자동 VAD를 비활성화해야 합니다.",
       "ActivityFlushRequiresManualVad": "주기적 플러시는 자동 VAD가 비활성화된 경우에만 작동합니다 — 자동 VAD가 켜진 상태에서는 서버가 명시적 활동 제어를 거부합니다. 이 토글을 켠 채로 아래 자동 VAD를 비활성화하세요.",
       "Reset": "모두 기본값으로 재설정"
-    }
+    },
+    "SegmentCount": "{{count}} 세그먼트"
   },
   "GeminiTranscription": {
     "Title": "실시간 전사"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "노트",
+    "SectionWiki": "위키",
+    "SectionTranscripts": "녹음 전사",
+    "SectionSummaries": "녹음 요약",
+    "SectionOcr": "스크린샷 텍스트",
+    "IndexingFallback": "색인 중 — 파일 이름 일치만 표시",
+    "Placeholder": "노트, 위키, 녹음에서 검색…",
+    "SoFar": "현재까지",
+    "NoResults": "일치 항목 없음"
+  },
+  "HelpPage": {
+    "Title": "SeaMeet에 대해 자세히 알아보기"
   },
   "IdleCompactView": {
     "ArmFlashback": "회상 위해 준비",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet은 macOS 14.2(Sonoma) 이상이 필요합니다.\n\n앱별 오디오 감지 및 회의 자동 시작과 같은 일부 기능이 작동하지 않을 수 있습니다.\n\n시스템 설정 > 일반 > 소프트웨어 업데이트에서 업데이트하세요.",
     "ContinueAnyway": "계속 진행",
     "Quit": "종료"
+  },
+  "MediaBlock": {
+    "Processing": "처리 중…",
+    "SummaryReady": "요약 준비 완료",
+    "Failed": "실패",
+    "Tab": {
+      "Summary": "요약",
+      "Transcript": "전사",
+      "Actions": "작업",
+      "Decisions": "결정 사항",
+      "Chapters": "챕터",
+      "Description": "설명",
+      "Ocr": "OCR 텍스트"
+    },
+    "MoreActions": "추가 작업",
+    "Action": {
+      "ShowInFolder": "폴더에서 표시",
+      "CopyEmbed": "임베드 구문 복사",
+      "RerunAi": "AI 다시 실행",
+      "Detach": "노트에서 분리"
+    },
+    "AudioFallback": "이 브라우저는 오디오 재생을 지원하지 않습니다.",
+    "WaitingForPipeline": "AI 처리 완료를 기다리는 중…",
+    "PipelineFailed": "이 파일의 AI 처리가 실패했습니다.",
+    "NoAiContent": "AI 처리가 완료되었지만 추가 콘텐츠가 생성되지 않았습니다.",
+    "NoSummary": "AI 요약이 아직 생성되지 않았습니다.",
+    "Due": "마감",
+    "Stage": {
+      "preparing": "준비 중…",
+      "uploading": "업로드 중…",
+      "uploading-wait": "업로드 처리 중…",
+      "analyzing": "분석 중…",
+      "extracting": "추출 중…",
+      "saving": "저장 중…",
+      "complete": "완료",
+      "gathering": "수집 중…",
+      "reducing": "정제 중…",
+      "writing": "작성 중…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "실행 항목",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "전사 언어",
     "TranslationLanguage": "번역 언어",
     "UnknownSpeaker": "화자",
-    "WaitingForSpeech": "음성 대기 중..."
+    "WaitingForSpeech": "음성 대기 중...",
+    "SegmentCount": "{{count}} 세그먼트"
   },
   "MeetingDetail": {
     "Back": "← 뒤로",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "화면 회상 충전 중...",
     "ScreenRecording": "화면 녹음 ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "입력을 시작하거나 클립보드에서 붙여넣기…",
+    "Saving": "저장 중…",
+    "Saved": "✓ 저장됨",
+    "SaveFailed": "저장 실패",
+    "Editing": "편집 중…",
+    "TitlePlaceholder": "제목 없는 노트",
+    "TitleLabel": "노트 제목",
+    "RenameTooltip": "이름을 변경하려면 클릭",
+    "UntitledFallback": "제목 없는 노트",
+    "Renaming": "이름 변경 중…",
+    "LoadFailed": "노트를 불러올 수 없습니다",
+    "Bold": "굵게",
+    "Italic": "기울임",
+    "Code": "코드",
+    "Heading1": "제목 1",
+    "Heading2": "제목 2",
+    "BulletList": "글머리 기호 목록",
+    "OrderedList": "번호 매기기 목록",
+    "Link": "링크",
+    "LinkDialog": "링크 삽입",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "업데이트",
+    "LinkAdd": "추가",
+    "LinkRemove": "링크 제거",
+    "InsertWikilink": "노트에 링크 ([[ … ]])",
+    "SyncWiki": "wiki 동기화",
+    "SyncWikiTooltip": "자동 트리거를 기다리지 않고 지금 이 노트에서 wiki 를 업데이트",
+    "SyncWikiCouldNotQueue": "wiki 업데이트를 큐에 추가하지 못했습니다",
+    "SyncWikiQueued": "큐에 추가됨…",
+    "SyncWikiRunning": "동기화 중…",
+    "SyncWikiSuccess": "✓ 동기화됨",
+    "SyncWikiError": "동기화 실패",
+    "Blockquote": "인용문",
+    "CodeBlock": "코드 블록",
+    "Heading3": "제목 3",
+    "Highlight": "강조",
+    "HorizontalRule": "수평선",
+    "ImageAdd": "삽입",
+    "ImageDialog": "이미지 삽입",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "이미지 삽입",
+    "InsertTable": "표 삽입",
+    "Strike": "취소선",
+    "TableAddColumnAfter": "오른쪽에 열 추가",
+    "TableAddColumnBefore": "왼쪽에 열 추가",
+    "TableAddRowAfter": "아래에 행 추가",
+    "TableAddRowBefore": "위에 행 추가",
+    "TableDelete": "표 삭제",
+    "TableDeleteColumn": "열 삭제",
+    "TableDeleteRow": "행 삭제",
+    "TaskList": "작업 목록",
+    "Redo": "다시 실행",
+    "Underline": "밑줄",
+    "Undo": "실행 취소",
+    "Synthesize": "AI 요약",
+    "SynthesizeRunning": "요약 중…",
+    "SynthesizeTooltip": "이 노트의 AI 요약을 생성하거나 새로 고침",
+    "SynthesizeChooseTemplate": "AI 요약을 위한 템플릿 선택"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "스크린샷",
+      "Recording": "녹음",
+      "AddedTo": "에 추가됨:",
+      "Open": "열기"
+    },
+    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ 요약 · {{version}}",
+      "Updated": "✨ 요약이 업데이트됨 · {{version}}",
+      "Jump": "이동 ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "템플릿 선택…",
+      "Label": "요약 옵션"
+    }
+  },
+  "NotesList": {
+    "NewNote": "새 노트",
+    "JustNow": "방금",
+    "Yesterday": "어제",
+    "Title": "노트",
+    "EmptyTitle": "첫 노트를 시작하세요",
+    "EmptySubtitle": "녹음이 핵심 — 어떤 노트에든 녹음과 스크린샷을 추가할 수 있습니다.",
+    "MediaCount": "첨부된 미디어 {{n}}개",
+    "ConfirmDelete": "삭제",
+    "DeleteNote": "노트 삭제"
+  },
+  "NotesTree": {
+    "Title": "노트",
+    "NewNote": "새 노트",
+    "NewFolder": "새 폴더",
+    "NewFolderPrompt": "폴더 이름:",
+    "SortBy": "정렬 기준",
+    "SortManual": "수동 정렬",
+    "SortName": "이름 (A → Z)",
+    "SortModified": "수정일 (최신순)",
+    "CollapseAll": "모두 접기",
+    "SearchInTree": "트리에서 검색",
+    "FilterPlaceholder": "노트 필터링…",
+    "DropToRoot": "여기에 놓아 루트로 이동",
+    "MoveTo": "이동…",
+    "MoveToRoot": "루트로 이동",
+    "Duplicate": "복제",
+    "RevealInFinder": "Finder에서 보기",
+    "RevealInExplorer": "파일 탐색기에서 보기",
+    "CopyWikilink": "위키링크 복사",
+    "Pin": "맨 위에 고정",
+    "Unpin": "고정 해제",
+    "Rename": "이름 변경",
+    "Delete": "삭제",
+    "Open": "열기",
+    "Expand": "펼치기",
+    "OpenInNewTab": "새 탭에서 열기",
+    "ConfirmDeleteFolder": "\"{{name}}\" 폴더와 그 안의 모든 항목을 삭제하시겠습니까?",
+    "RenameSucceeded": "이름이 변경되었습니다",
+    "RenameWithRefs": "이름 변경됨; {{count}}개 참조를 업데이트했습니다",
+    "SortDefault": "기본 (파일 시스템 순서)",
+    "ExpandAll": "모두 펼치기",
+    "NewFolderPlaceholder": "새 폴더 이름…",
+    "QuickOpen": "빠른 열기  (⌘P)",
+    "CopyRelativePath": "상대 경로 복사",
+    "CopyFullPath": "전체 경로 복사",
+    "UpdateWikiFromNote": "이 노트에서 위키 업데이트",
+    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "노트 선택",
+    "SelectFromList": "목록에서 노트를 선택하거나 새 노트를 시작하세요.",
+    "NoNotes": "아직 노트가 없습니다 — 첫 노트를 시작하세요.",
+    "CollapseSidebar": "노트 사이드바 숨기기",
+    "ExpandSidebar": "노트 사이드바 표시"
+  },
   "OCRAutoCopy": {
     "Copied": "추출된 텍스트가 클립보드에 복사되었습니다",
     "Error": "텍스트 추출에 실패했습니다",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "스크린샷 후 OCR을 실행하고 추출된 텍스트를 클립보드에 복사합니다",
     "SettingsLabel": "스크린샷 시 텍스트 자동 추출(OCR)"
   },
+  "OpenRecordingsFolder": "녹음 폴더 열기",
+  "OpenRecordingsFolderDesc": "기본 녹음 폴더 열기",
   "Pause": "정지시키다",
   "PermissionAlert": {
     "Title": "권한 필요",
@@ -1379,8 +1653,8 @@
       "Analyzing": "분석 중",
       "Extracting": "결과 추출",
       "Saving": "아티팩트 저장",
-      "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "PreparingImage": "이미지 준비 중",
+      "AnalyzingImage": "이미지 분석 중"
     }
   },
   "Player": {
@@ -1411,13 +1685,26 @@
     "GotIt": "확인"
   },
   "Premium": {
-    "AIAgent": "AI Agent",
+    "AIAgent": "AI 에이전트",
     "AIAgentDesc": "실시간 전사 및 AI 상호작용은 구독으로 이용할 수 있습니다.",
     "PostMeetingAI": "회의 후 AI",
     "PostMeetingAIDesc": "녹음이 완료된 후 요약, 작업 항목 및 인사이트가 생성됩니다.",
     "UnlockPremium": "Premium으로 잠금 해제",
     "Upgrade": "업그레이드"
   },
+  "QuickOpen": {
+    "Placeholder": "입력하거나 클립보드에서 붙여넣기… [[ 로 다른 노트로 링크",
+    "NoResults": "일치하는 노트가 없습니다",
+    "UnifiedPlaceholder": "이름으로 노트 또는 위키 페이지 열기…",
+    "SectionNotes": "노트",
+    "SectionWiki": "위키"
+  },
+  "RecordAudio": "오디오 녹음",
+  "RecordAudioDesc": "오디오 녹음 시작(혼합)",
+  "RecordFullscreen": "전체 화면 녹화",
+  "RecordFullscreenDesc": "전체 화면 비디오 녹화 시작",
+  "RecordRegion": "녹음할 영역 스냅",
+  "RecordRegionDesc": "녹화할 화면 영역을 선택하세요.",
   "RecordTab": {
     "TapToRecord": "탭하여 녹음 시작",
     "RecordWithPreamble": "{{seconds}}초 프리롤과 함께 녹음",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "일시정지됨",
     "Preparing": "준비 중",
-    "PreparingToRecord": "녹음 준비 중..."
+    "PreparingToRecord": "녹음 준비 중...",
+    "InProgress": "녹음 중",
+    "WillBeAdded": "중지를 클릭하면 여기에 오디오가 추가됩니다",
+    "AttachingTo": "{{note}}에 첨부 중"
   },
   "RecordingControls": {
     "AudioRecording": "오디오 녹음",
@@ -1487,6 +1777,19 @@
     "SearchRecordingsOrSnapshots": "녹음 또는 스냅샷 검색",
     "ShowInFolder": "폴더에서 보여주기"
   },
+  "Regenerate": {
+    "Title": "노트 요약 재생성",
+    "PickTemplate": "템플릿 선택:",
+    "Custom": "또는 사용자 지정 지침 작성 (템플릿을 덮어씀):",
+    "CustomPlaceholder": "예: '고객 X에 대한 약속에 집중하고, 한 페이지 임원 메모 형식으로 출력해 주세요.'",
+    "SaveAsTemplate": "사용자 지정 템플릿으로 저장",
+    "TemplateNamePlaceholder": "템플릿 이름",
+    "NameRequired": "저장하려면 이름이 필요합니다",
+    "OutputLanguageHint": "출력 언어는 설정 → AI 추출 및 요약을 따릅니다",
+    "Submit": "재생성",
+    "AutoUpdate": "입력 시 자동 업데이트",
+    "AutoUpdateHint": "이 노트에 상당한 변경이 있은 후 요약을 다시 실행합니다 (AI 할당량을 사용합니다)."
+  },
   "RegionSelector": {
     "CaptureButton": "화면 캡처 또는 Enter 키 누르기",
     "ConfirmButton": "선택 확인",
@@ -1496,17 +1799,17 @@
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
     "Selected": "선택됨",
-    "PresetFreeform": "Freeform",
-    "Preset1619": "16:9 Horizontal",
-    "Preset43": "4:3 Horizontal",
-    "Preset2119": "21:9 Ultrawide",
-    "Preset916": "9:16 Vertical",
-    "Preset34": "3:4 Vertical",
-    "Preset11": "1:1 Square",
-    "ShortcutCancel": "cancel",
-    "ShortcutCapture": "capture",
-    "ShortcutConfirm": "confirm",
-    "AspectRatio": "Aspect Ratio"
+    "PresetFreeform": "자유형",
+    "Preset1619": "16:9 수평",
+    "Preset43": "4:3 수평",
+    "Preset2119": "21:9 울트라와이드",
+    "Preset916": "9:16 수직",
+    "Preset34": "3:4 수직",
+    "Preset11": "1:1 정사각형",
+    "ShortcutCancel": "취소",
+    "ShortcutCapture": "포착",
+    "ShortcutConfirm": "확인하다",
+    "AspectRatio": "종횡비"
   },
   "Resume": "재개하다",
   "RingMenu": {
@@ -1559,9 +1862,9 @@
     "DescribeSub": "이 스크린샷에는 무엇이 있나요?",
     "Description": "설명",
     "ExtractedText": "추출된 텍스트",
-    "NoCustom": "Ask anything about this image.",
-    "NoDescription": "No description yet.",
-    "NoOcr": "No extracted text yet.",
+    "NoCustom": "이 이미지에 대해 무엇이든 물어보세요.",
+    "NoDescription": "아직 설명이 없습니다.",
+    "NoOcr": "아직 추출된 텍스트가 없습니다.",
     "Ocr": "텍스트 추출(OCR)",
     "OcrSub": "보이는 모든 텍스트 읽기",
     "PipelineError": "AI 처리에 실패했습니다. 다시 시도해 주세요.",
@@ -1594,7 +1897,21 @@
     "ShareFailed": "이 브라우저에서는 공유가 지원되지 않습니다. 스크린샷을 열어 직접 공유하세요.",
     "Sharing": "공유 중…",
     "ZeroBytes": "0 바이트",
-    "Info": "Stats"
+    "Info": "통계"
+  },
+  "Search": {
+    "Placeholder": "검색… (⌘K)",
+    "Aria": "노트 및 위키 검색",
+    "GroupNotes": "노트",
+    "GroupWiki": "위키",
+    "GroupRecordings": "녹음",
+    "GroupScreenshots": "스크린샷",
+    "Results": {
+      "Aria": "검색 결과"
+    },
+    "Loading": "검색 중…",
+    "NoResults": "“{{query}}” 검색 결과 없음",
+    "AgentHint": "의미 검색에는 AI 에이전트를 사용해 보세요."
   },
   "Settings": {
     "About": {
@@ -1721,6 +2038,13 @@
       "Flashback": "회상 녹음",
       "Storage": "저장소"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (무료, 20회/일)",
+      "FlashLiteFree": "Flash Lite (무료, 500회/일)",
+      "Help": "이 할당량이 소진되면 AI 업데이트가 자동으로 일시 중지되었다가 다시 재개됩니다.",
+      "Label": "Gemini 할당량 등급",
+      "Paid": "유료 등급"
+    },
     "SettingsFileLocation": "설정 파일 경로",
     "Storage": {
       "Browse": "찾아보기...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "검색 초기화",
     "PrimaryNavigation": "메인 내비게이션"
   },
+  "Tabs": {
+    "CloseTab": "닫기",
+    "RecordingHere": "여기서 녹음 중",
+    "OrphanTooltip": "이 파일은 디스크에서 삭제되었습니다",
+    "ScrollLeft": "탭 왼쪽으로 스크롤",
+    "ScrollRight": "탭 오른쪽으로 스크롤"
+  },
+  "TakeScreenshot": "스크린샷 찍기",
+  "TakeScreenshotDesc": "화면 영역 캡처",
   "TakeSnapshot": {
     "GoToSnapshot": "새 스냅샷으로 이동",
     "Message": "스냅샷이 찍혀서 저장되었습니다:",
@@ -1786,7 +2119,7 @@
     "Title": "스크린샷이 완료됨"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "에이전트",
     "CloseNavigationMenu": "탐색 메뉴 닫기",
     "Files": "파일",
     "MainNavigation": "메인 네비게이션",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "탐색 메뉴 열기",
     "Record": "기록",
     "Recording": "녹음",
-    "Screenshot": "스크린샷"
+    "Screenshot": "스크린샷",
+    "GroupCapture": "캡처",
+    "GroupKnowledge": "지식",
+    "Notes": "노트",
+    "Wiki": "위키",
+    "GroupTools": "도구"
   },
   "Tray": {
     "MinimizedHint": "시스템 트레이(우측 하단)에서 여전히 실행 중입니다.",
@@ -1812,6 +2150,11 @@
     "Audio": "오디오",
     "System": "시스템 오디오 출력",
     "Video": "동영상"
+  },
+  "UndoRename": {
+    "Toast": "이름이 변경됨, {{count}}개 참조 업데이트됨",
+    "Action": "실행 취소",
+    "ToastNoRefs": "이름 변경됨"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "설치 후 종료",
@@ -1865,11 +2208,11 @@
       "WikiDesc": "문서와 가이드 확인을 위해 SeaMeet 위키를 방문하세요."
     },
     "KeyboardShortcuts": "키보드 단축키",
-    "AccountSignedIn": "Signed in",
+    "AccountSignedIn": "로그인됨",
     "SeaMeetSignedIn": "SeaMeet에 로그인됨",
     "SeaMeetSignedOut": "SeaMeet: 로그인 안 됨",
-    "SeaMeetSignIn": "SeaMeet Sign In",
-    "SeaMeetSignOut": "SeaMeet Sign Out",
+    "SeaMeetSignIn": "SeaMeet 로그인",
+    "SeaMeetSignOut": "SeaMeet 로그아웃",
     "SignIn": "로그인",
     "SignOut": "로그아웃",
     "Workspaces": "워크스페이스",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "플래시백은 직전 10초를 저장 — 첫 번째 중요한 말을 놓치지 않습니다.",
     "GotIt": "확인"
   },
-  "HelpPage": {
-    "Title": "SeaMeet에 대해 자세히 알아보기"
+  "Wiki": {
+    "AIBadgeTooltip": "AI 생성 콘텐츠",
+    "AIBadge": "AI 생성",
+    "Backlinks": "역링크",
+    "RelatedPages": "관련 페이지",
+    "BuiltFrom": "출처",
+    "SelectPage": "페이지 선택",
+    "SelectPageHint": "사이드바에서 엔티티, 사람, 주제를 선택하여 위키가 학습한 내용을 확인하세요.",
+    "LoadingPage": "AI가 이 페이지를 구성 중입니다…",
+    "LoadFailed": "이 위키 페이지를 불러올 수 없습니다.",
+    "AISection": "AI 섹션",
+    "AIEmpty": "AI 콘텐츠가 아직 없습니다. 이 엔티티가 언급된 노트에 녹음이나 스크린샷을 추가한 다음 위키 업데이트를 실행하세요.",
+    "SidebarTitle": "위키",
+    "EmptyTitle": "위키가 비어 있습니다",
+    "EmptySubtitle": "회의를 녹음하거나 노트를 작성하여 지식 기반 구축을 시작하세요.",
+    "UserSection": "내 노트",
+    "UserSectionTitle": "내 노트",
+    "UserSectionPlaceholder": "직접 메모 추가…",
+    "RefreshFromSources": "소스에서 새로고침",
+    "RefreshFromSourcesTooltip": "지금 {{count}}개 소스 노트에서 AI 섹션 새로고침",
+    "RefreshFromSourcesHint": "{{count}}개 소스 노트에서 AI 섹션을 새로고침하려면 클릭. Shift+클릭하면 소스 노트도 다시 읽습니다.",
+    "RefreshDisabledTooltip": "이 위키 페이지에는 아직 소스 노트가 없습니다. 먼저 노트에서 생성하세요.",
+    "RefreshAriaLabel": "소스 노트에서 위키 페이지 새로고침",
+    "RefreshError": "새로고침 실패",
+    "Bulk": {
+      "Build": "위키 빌드",
+      "BuildFromAll": "모든 노트에서 위키 빌드",
+      "BuildFromFolder": "폴더에서 위키 빌드…",
+      "BuildFromSelection": "선택 항목에서 위키 빌드…",
+      "ToastMessage": "{{count}}개의 새 노트가 감지되었습니다. 위키를 빌드할까요?",
+      "BannerMessage": "마지막 빌드 이후 새 노트 {{count}}개",
+      "BuildingExtracting": "{{current}}/{{total}}개 노트 읽는 중",
+      "BuildingReducing": "{{current}}/{{total}}개 페이지 빌드 중",
+      "Building": "위키 빌드 중 — {{stage}}",
+      "PausedFor": "속도 제한: {{seconds}}초",
+      "Cancel": "취소",
+      "Cancelling": "취소 중 — 현재 노트를 마무리 중…",
+      "Pause": "일시정지",
+      "Continue": "계속",
+      "Paused": "일시정지됨 — {{current}}/{{total}}",
+      "Restart": "다시 시작",
+      "NowReading": "읽는 중: {{item}}",
+      "NowBuilding": "만드는 중: {{item}}",
+      "RecentList": "최근 처리됨",
+      "DoneSummary": "위키 빌드 완료 — 노트 {{notes}}개, 페이지 {{pages}}개",
+      "Resume": "재개",
+      "ResumeAvailable": "이전 위키 빌드가 {{current}}/{{total}}에서 중단되었습니다. 재개할까요?",
+      "PolishIndex": "색인 다듬기",
+      "PolishIndexHint": "위키 색인에 서술 인트로 추가",
+      "BuildFromFolderPrompt": "폴더 경로 (워크스페이스 기준):",
+      "BuildFromSelectionPrompt": "쉼표로 구분된 노트 파일명 (notes/ 기준):"
+    },
+    "Toolbar": {
+      "Overflow": "추가 위키 작업",
+      "BuildAllTooltip": "모든 노트에서 위키 빌드 (증분 — 소스 노트가 변경된 페이지만 업데이트).",
+      "BuildAllRunning": "모든 노트에서 위키 빌드 중 — 아래 배너를 확인하세요.",
+      "BuildAllAria": "모든 노트에서 위키 빌드"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "노트에서 Wiki 자동 업데이트",
+    "SettingsDesc": "메모와 녹음을 통해 엔터티, 사람, 주제에 대한 지식 기반을 구축합니다. 기본적으로 꺼져 있습니다."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "wiki 페이지 이름으로 검색…",
+    "NoResults": "일치하는 wiki 페이지가 없습니다"
+  },
+  "WikiTree": {
+    "Title": "위키",
+    "NewPage": "새 wiki 페이지",
+    "NewFolder": "새 폴더",
+    "NewFolderPlaceholder": "폴더 이름…",
+    "SortBy": "정렬 기준",
+    "SortDefault": "기본값(파일 시스템 순서)",
+    "SortName": "이름(A → Z)",
+    "SortModified": "수정일(최신순)",
+    "CollapseAll": "모두 접기",
+    "ExpandAll": "모두 펼치기",
+    "SearchInTree": "트리에서 필터",
+    "FilterPlaceholder": "페이지 필터…",
+    "DropToRoot": "wiki 루트로 이동",
+    "MoveToRoot": "wiki 루트로 이동",
+    "Open": "열기",
+    "Rename": "이름 바꾸기",
+    "Delete": "삭제",
+    "CopyWikilink": "wiki 링크 복사",
+    "CopyRelativePath": "상대 경로 복사",
+    "CopyFullPath": "전체 경로 복사",
+    "ConfirmDeleteFile": "\"{{name}}\"을(를) 휴지통으로 이동하시겠습니까? (Finder / 탐색기에서 복구 가능.)",
+    "ConfirmDeleteFolder": "폴더 \"{{name}}\"과(와) 그 안의 모든 항목을 휴지통으로 이동하시겠습니까?",
+    "Empty": "아직 wiki 페이지가 없습니다. 회의를 녹음하면 파이프라인이 자동으로 작성합니다.",
+    "SetDefaultEntity": "새 엔티티 페이지의 기본 위치로 설정",
+    "SetDefaultPerson": "새 인물 페이지의 기본 위치로 설정",
+    "SetDefaultTopic": "새 주제 페이지의 기본 위치로 설정",
+    "SetDefaultMeeting": "새 회의 페이지의 기본 위치로 설정",
+    "DefaultLabel": "{{wikiKind}} 의 기본 위치",
+    "AIBadge": "AI 생성",
+    "UserBadge": "사용자 편집",
+    "QuickOpen": "빠른 열기 (⌘P)",
+    "ConflictBadge": "충돌 사본",
+    "EmptyAiCurated": "녹음이나 메모에서 엔터티, 사람, 주제 또는 회의가 언급되면 AI가 이 폴더를 채웁니다. 메모를 열고 위키 동기화를 클릭하여 페이지를 생성하세요."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] 은(는) 이 워크스페이스에 없습니다",
+    "Collision": "{{count}}개의 노트가 베이스 이름 {{name}}을(를) 공유합니다",
+    "DisambiguationTitle": "열 노트를 선택하세요",
+    "DisambiguationOpenAt": "{{folder}} 안에",
+    "SuggestEmpty": "일치하는 노트 또는 wiki 페이지가 없습니다",
+    "BrokenTooltipSyncWiki": "이 페이지는 아직 생성되지 않았습니다 — 이 메모에서 위키 동기화를 클릭하여 생성하세요.",
+    "SyncContextMenu": "위키 동기화",
+    "SyncToGenerate": "이 페이지를 생성하려면 위키를 동기화하세요"
   },
   "WindowPicker": {
     "Instruction": "창 녹화를 위한 캡처할 창을 선택하세요.",
@@ -1947,6 +2399,15 @@
     "Title": "창 선택",
     "Unknown": "제목 없는 창"
   },
+  "Workspace": {
+    "None": "워크스페이스 없음",
+    "EmptyList": "등록된 워크스페이스가 없습니다",
+    "Add": "워크스페이스 추가…",
+    "Remove": "SeaMeet에서 제거",
+    "RemoveTooltip": "SeaMeet에서 제거(디스크의 파일은 유지)",
+    "ConfirmRemove": "워크스페이스 \"{{name}}\"을(를) 제거하시겠습니까? 디스크의 파일은 삭제되지 않으며 SeaMeet 항목만 제거됩니다.",
+    "Default": "기본값"
+  },
   "agent": {
     "fabLabel": "AI 에이전트에게 묻기",
     "panelLabel": "AI 에이전트",
@@ -1954,11 +2415,21 @@
     "maximize": "최대화",
     "close": "닫기"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "녹음을 준비하는 중입니다…"
+    },
+    "error": {
+      "title": "이 녹음을 처리할 수 없습니다",
+      "body": "API 키를 확인하거나 다시 시도하세요."
+    },
+    "disabled": "AI 기능이 꺼져 있습니다. 요약 및 작업을 보려면 설정에서 활성화하세요."
+  },
   "floatingPip": {
     "minimize": "최소화",
     "maximize": "최대화",
-    "close": "닫기",
     "restore": "복원",
+    "close": "닫기",
     "exit": "PIP(Picture-in-Picture) 종료"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "클래식 레이아웃으로 전환",
       "floating": "플로팅 레이아웃으로 전환"
     },
+    "showPipTooltip": "PIP(Picture-in-Picture) 표시",
     "announce": {
       "classic": "클래식 레이아웃으로 전환됨",
       "floating": "플로팅 레이아웃으로 전환됨"
     },
-    "introToast": "신규: 플로팅 레이아웃을 사용할 수 있습니다. 헤더의 레이아웃 아이콘을 클릭하여 사용해 보세요.",
-    "showPipTooltip": "PIP(Picture-in-Picture) 표시"
+    "introToast": "신규: 플로팅 레이아웃을 사용할 수 있습니다. 헤더의 레이아웃 아이콘을 클릭하여 사용해 보세요."
   }
 }

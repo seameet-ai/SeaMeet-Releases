@@ -9,9 +9,9 @@
     "EnableToggle": "Aktiver AI Agent & Cowork",
     "EnableToggleDesc": "Kræver Claude CLI eller GitHub Copilot",
     "LinkCopied": "Kopieret!",
-    "MenuItem": "AI Agent & Cowork",
-    "PageTitle": "AI Agent & Cowork",
-    "SectionTitle": "AI Agent & Cowork",
+    "MenuItem": "AI-agent & Cowork",
+    "PageTitle": "AI-agent & Cowork",
+    "SectionTitle": "AI-agent & Cowork",
     "SubscribeMsg": "AI Agent kræver et BYOK Pro-abonnement. Abonnér for at få live transskription, AI-mødeoversigter og en interaktiv AI-agent.",
     "SubscribeCTA": "Abonnér for at låse op"
   },
@@ -209,6 +209,47 @@
       "Live": "Levende"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ Opdateret af AI",
+    "Title": "Noteresumé",
+    "Meta": "{{count}} optagelser · skabelon: {{tpl}}",
+    "CopyToEdit": "Kopiér til redigering",
+    "Regenerate": "Regenerér",
+    "Generating": "Genererer…",
+    "Provenance": "Genereret fra {{n}} optagelser",
+    "Error": "Generering mislykkedes: {{err}}",
+    "RenameSuggested": "AI foreslår \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "Generelt møde",
+        "description": "Beslutninger, handlinger, diskussion"
+      },
+      "brainstorm": {
+        "name": "Brainstorm",
+        "description": "Idéer, tråde, åbne spørgsmål"
+      },
+      "lecture": {
+        "name": "Foredrag / tale",
+        "description": "Tese, hovedpunkter, spørgsmål, referencer"
+      },
+      "oneonone": {
+        "name": "1:1 / interview",
+        "description": "Temaer, stemning, opfølgning"
+      },
+      "sales": {
+        "name": "Salgsopkald",
+        "description": "Opdagelse, indvendinger, næste skridt, beslutningstagere"
+      },
+      "standup": {
+        "name": "Standup / status",
+        "description": "Opdateringer pr. person, blokeringer, næste"
+      }
+    },
+    "RegenerateTooltip": "Generér igen med samme skabelon",
+    "RegenerateChooseTemplate": "Generér igen med en anden skabelon",
+    "Stale": "Forældet · opdater",
+    "StaleTooltip": "Noten er ændret siden dette resumé blev genereret — klik for at opdatere."
+  },
   "About": {
     "AppStoreBuild": "App Store-version",
     "DirectBuild": "Direkte version",
@@ -301,7 +342,8 @@
       "Output": "Produktion",
       "Pattern": "Mønster:",
       "Reading": "Læser fil...",
-      "ShowDetails": "Vis detaljer"
+      "ShowDetails": "Vis detaljer",
+      "AndMoreLines": "... og {{count}} flere linjer"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} handlinger",
@@ -309,21 +351,14 @@
       "Completed_one": "{{count}} fuldført",
       "Completed_other": "{{count}} fuldført",
       "Running_one": "{{count}} kører",
-      "Running_other": "{{count}} kører"
+      "Running_other": "{{count}} kører",
+      "Running": "{{count}} kører",
+      "Completed": "{{count}} fuldført",
+      "Actions": "{{count}} handlinger"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "Konfigurer dine API-nøgler for at bruge AI-agenten."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "Forbereder din optagelse…"
-    },
-    "error": {
-      "title": "Vi kunne ikke behandle denne optagelse",
-      "body": "Tjek din API-nøgle, eller prøv igen."
-    },
-    "disabled": "AI-funktioner er slået fra. Aktiver dem i Indstillinger for at se resuméer og handlinger."
   },
   "App": {
     "FailedToEnableFlashback": "Fejl under aktivering af flashback: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "Avancerede indstillinger →",
     "LearnMore": "Læs mere"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "Første gang? Sådan virker det →"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "AUTO-DETEKTERING",
     "Description": "Auto-detektering starter optagelse automatisk når du deltager i møder, så du aldrig glemmer at trykke på optag.",
@@ -424,9 +462,6 @@
     "Tip2Desc": "Bruger mikrofonaktivitet, vinduestitler og browser-URL'er til nøjagtighed",
     "Tip2Title": "Flere detektionsmetoder",
     "Title": "Møder automatisk registreret"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "Første gang? Sådan virker det →"
   },
   "AutoRecording": {
     "BugReport": "Har du fundet en fejl? Rapportér den til seameet@seasalt.ai",
@@ -625,7 +660,8 @@
       "TabLabel": "Enheder",
       "Today": "i dag",
       "Yesterday": "i gar",
-      "YourDevices": "Dine enheder"
+      "YourDevices": "Dine enheder",
+      "DaysAgo": "{{count}} dage siden"
     },
     "FAQ": {
       "Title": "Ofte stillede sporgsmal",
@@ -783,12 +819,12 @@
       "CancelNotice": "Abonnement udlober {{date}}",
       "CancelPendingNotice": "Dit abonnement udløber {{date}}. AI-funktioner forbliver tilgængelige indtil da.",
       "EndsOn": "Udløber {{date}}",
-      "DevOverride": "(Dev Override)",
+      "DevOverride": "(Udvikleroverskrivning)",
       "Loading": "Indlaeser...",
       "Manage": "Administrer abonnement",
       "None": "Intet abonnement",
       "PastDue": "Forfaldent",
-      "Plan": "Plan",
+      "Plan": "Abonnement",
       "Reactivate": "Genaktiver",
       "SignIn": "Log ind for at administrere abonnement",
       "Trial": "Proveperiode"
@@ -856,7 +892,12 @@
     "Starting": "Starter...",
     "UnknownApp": "Ukendt app",
     "Copied": "Kopieret!",
-    "Copy": "Kopiér"
+    "Copy": "Kopiér",
+    "Clear": "Klar",
+    "Forward": "Frem",
+    "Refresh": "Opfriske",
+    "Apply": "Anvend",
+    "Undo": "Fortryd"
   },
   "DeletePrompt": {
     "Cancel": "Annuller",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "Markerede begivenheder",
     "Title": "Begivenheder"
   },
+  "ExternalChange": {
+    "Banner": "Denne fil blev ændret på disken, mens du redigerede.",
+    "Reload": "Genindlæs diskens version",
+    "Keep": "Behold min version"
+  },
+  "FAB": {
+    "Label": "Hurtige handlinger",
+    "Stop": "Stop optagelsen",
+    "Record": "Start optagelsen",
+    "Screenshot": "Tag et skærmbillede",
+    "Agent": "AI-assistent",
+    "PickSource": "Vælg en optagekilde",
+    "PickScreenshotSource": "Vælg en skærmbillede-kilde",
+    "SourceAudio": "Kun lyd",
+    "SourceFullscreen": "Fuldskærm",
+    "SourceWindow": "Vindue",
+    "SourceRegion": "Område",
+    "ScreenshotFullscreen": "Fuldskærm",
+    "ScreenshotWindow": "Vindue",
+    "ScreenshotRegion": "Område",
+    "LiveTranscription": "Live transskription",
+    "ToggleLiveTranscription": "Skift live-transskription",
+    "RecordingInProgress": "Optager…",
+    "OpenBoundNote": "Åbn noten denne optagelse er knyttet til"
+  },
   "FileImport": {
     "BrowseFiles": "Gennemse filer",
     "DragDropFiles": "Træk og slip dine lyd-, video- og billedfiler her",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "Kopierer videofil...",
     "VideoImportSaving": "Gemmer videofil...",
     "VideoUnsupported": "Dette videoformat understøttes muligvis ikke i appen. Filen importeres alligevel."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "Erstat alle {{count}} match?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "Find",
+    "AriaLabel": "Find og erstat",
+    "CaseSensitive": "Forskel på store/små bogstaver",
+    "ClearSearch": "Ryd",
+    "Previous": "Forrige resultat",
+    "Next": "Næste resultat",
+    "NoResults": "Ingen resultater",
+    "ReplacePlaceholder": "Erstat",
+    "WikiAiReadonly": "AI-sektionen er skrivebeskyttet — erstatning virker kun i brugersektionen",
+    "Replace": "Erstat",
+    "ReplaceAll": "Erstat alle",
+    "CloseBar": "Luk find/erstat",
+    "WikiCounterSplit": "{{userCount}} i note + {{aiCount}} i AI-sektion"
   },
   "FlashbackControls": {
     "AudioFlashback": "Lyd Flashback",
@@ -1051,7 +1134,7 @@
         "Buffer": "10s, 30s, 60s, 90s eller 120s",
         "Captures": "Skærmvideo + lyd",
         "Memory": "50-600 MB RAM",
-        "Title": "Video Flashback"
+        "Title": "Video-flashback"
       }
     },
     "OpenSettings": "Åbn indstillinger",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "JPEG-kvalitet på billedet",
       "VideoMaxWidth": "Maksimal billedbredde",
       "VideoQualityHint": "Hæv kvalitet og maksimal bredde, når Gemini fejllæser små flise-etiketter (f.eks. deltagernavne i Zoom / Meet / Teams). Højere værdier øger billed-token-forbruget — 1280 px springer typisk fra 258-token-niveauet til 1290-token-niveauet pr. billede.",
-      "DisableAutoVad": "Deaktivér automatisk VAD (serversidet rundedetektion)",
       "EndSensitivity": "Følsomhed for taleafslutning",
       "Default": "Standard (HIGH — hurtige flushes)",
       "SilenceMs": "Stilhed før turslut",
       "VadHint": "Mindre stilhed + HØJ følsomhed → kortere, hyppigere transkriptions-flushes.",
+      "DisableAutoVad": "Deaktivér automatisk VAD (serversidet rundedetektion)",
       "ActivityFlush": "Periodisk flush under lange runder",
       "ActivityFlushMs": "Flush-interval",
       "ActivityFlushHint": "Hver N ms under en lang runde beder den Gemini om at behandle den akkumulerede lyd. Forhindrer transkriptionen i at gå i stå ved monologer / præsentationer. Kræver, at automatisk VAD er deaktiveret.",
       "ActivityFlushRequiresManualVad": "Den periodiske flush virker kun, når automatisk VAD er deaktiveret — Gemini-serveren afviser ellers eksplicit aktivitetskontrol. Lad kontakten være slået til og deaktivér automatisk VAD nedenfor for at bruge den.",
       "Reset": "Nulstil alt til standard"
-    }
+    },
+    "SegmentCount": "{{count}} segmenter"
   },
   "GeminiTranscription": {
     "Title": "Live transskription"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "Noter",
+    "SectionWiki": "Wiki",
+    "SectionTranscripts": "Optagelsesudskrifter",
+    "SectionSummaries": "Optagelsesresuméer",
+    "SectionOcr": "Skærmbilledtekst",
+    "IndexingFallback": "Indekserer — viser kun filnavnstreff",
+    "Placeholder": "Søg i noter, wiki og optagelser…",
+    "SoFar": "indtil videre",
+    "NoResults": "Ingen match"
+  },
+  "HelpPage": {
+    "Title": "Læs mere om SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "Aktiver Flashback",
@@ -1221,6 +1319,45 @@
     "Detail": "SeaMeet kræver macOS 14.2 (Sonoma) eller nyere.\n\nNogle funktioner som app-specifik lydregistrering og automatisk mødestart fungerer muligvis ikke.\n\nOpdater via Systemindstillinger > Generelt > Softwareopdatering.",
     "ContinueAnyway": "Fortsæt alligevel",
     "Quit": "Afslut"
+  },
+  "MediaBlock": {
+    "Processing": "Behandler…",
+    "SummaryReady": "Resumé klar",
+    "Failed": "Mislykkedes",
+    "Tab": {
+      "Summary": "Resumé",
+      "Transcript": "Transskription",
+      "Actions": "Handlinger",
+      "Decisions": "Beslutninger",
+      "Chapters": "Kapitler",
+      "Description": "Beskrivelse",
+      "Ocr": "OCR-tekst"
+    },
+    "MoreActions": "Flere handlinger",
+    "Action": {
+      "ShowInFolder": "Vis i mappen",
+      "CopyEmbed": "Kopiér indlejringssyntaks",
+      "RerunAi": "Kør AI igen",
+      "Detach": "Frakobl fra noten"
+    },
+    "AudioFallback": "Din browser understøtter ikke lydafspilning.",
+    "WaitingForPipeline": "Venter på, at AI-behandlingen afsluttes…",
+    "PipelineFailed": "AI-behandling af denne fil mislykkedes.",
+    "NoAiContent": "AI-behandling er afsluttet uden at producere yderligere indhold.",
+    "NoSummary": "AI-resumé er endnu ikke genereret.",
+    "Due": "deadline",
+    "Stage": {
+      "preparing": "Forbereder…",
+      "uploading": "Uploader…",
+      "uploading-wait": "Behandler upload…",
+      "analyzing": "Analyserer…",
+      "extracting": "Udtrækker…",
+      "saving": "Gemmer…",
+      "complete": "Færdig",
+      "gathering": "Indsamler…",
+      "reducing": "Forfiner…",
+      "writing": "Skriver…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "Handlingspunkter",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "Transkriptionssprog",
     "TranslationLanguage": "Oversættelsessprog",
     "UnknownSpeaker": "Taler",
-    "WaitingForSpeech": "Venter på tale..."
+    "WaitingForSpeech": "Venter på tale...",
+    "SegmentCount": "{{count}} segmenter"
   },
   "MeetingDetail": {
     "Back": "← Tilbage",
@@ -1261,7 +1399,7 @@
     "Duration": "Varighed",
     "EventLogs": "Hændelseslogge",
     "HideLogs": "Skjul",
-    "NA": "N/A",
+    "NA": "I/T",
     "NoEvents": "Ingen hændelser modtaget endnu",
     "ShowLogs": "Vis",
     "StartTime": "Starttidspunkt",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "Skærm-flashback indlæser...",
     "ScreenRecording": "Skærmoptagelse ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "Begynd at skrive, eller indsæt fra udklipsholderen…",
+    "Saving": "Gemmer…",
+    "Saved": "✓ Gemt",
+    "SaveFailed": "Kunne ikke gemmes",
+    "Editing": "Redigerer…",
+    "TitlePlaceholder": "Note uden titel",
+    "TitleLabel": "Notetitel",
+    "RenameTooltip": "Klik for at omdøbe",
+    "UntitledFallback": "Note uden titel",
+    "Renaming": "Omdøber…",
+    "LoadFailed": "Noten kunne ikke indlæses",
+    "Bold": "Fed",
+    "Italic": "Kursiv",
+    "Code": "Kode",
+    "Heading1": "Overskrift 1",
+    "Heading2": "Overskrift 2",
+    "BulletList": "Punktopstilling",
+    "OrderedList": "Nummereret liste",
+    "Link": "Link",
+    "LinkDialog": "Indsæt link",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "Opdater",
+    "LinkAdd": "Tilføj",
+    "LinkRemove": "Fjern link",
+    "InsertWikilink": "Link til en note ([[ … ]])",
+    "SyncWiki": "Synkroniser wiki",
+    "SyncWikiTooltip": "Opdater wiki ud fra denne note nu (i stedet for at vente på den automatiske udløser)",
+    "SyncWikiCouldNotQueue": "Kunne ikke sætte wiki-opdatering i kø",
+    "SyncWikiQueued": "I kø…",
+    "SyncWikiRunning": "Synkroniserer…",
+    "SyncWikiSuccess": "✓ Synkroniseret",
+    "SyncWikiError": "Synkronisering mislykkedes",
+    "Blockquote": "Blokcitat",
+    "CodeBlock": "Kodeblok",
+    "Heading3": "Overskrift 3",
+    "Highlight": "Fremhæv",
+    "HorizontalRule": "Horisontal linje",
+    "ImageAdd": "Indsæt",
+    "ImageDialog": "Indsæt billede",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "Indsæt billede",
+    "InsertTable": "Indsæt tabel",
+    "Strike": "Gennemstregning",
+    "TableAddColumnAfter": "Tilføj kolonne efter",
+    "TableAddColumnBefore": "Tilføj kolonne før",
+    "TableAddRowAfter": "Tilføj række efter",
+    "TableAddRowBefore": "Tilføj række før",
+    "TableDelete": "Slet tabel",
+    "TableDeleteColumn": "Slet kolonne",
+    "TableDeleteRow": "Slet række",
+    "TaskList": "Opgaveliste",
+    "Redo": "Annuller fortryd",
+    "Underline": "Understreg",
+    "Undo": "Fortryd",
+    "Synthesize": "AI-resumé",
+    "SynthesizeRunning": "Resumerer…",
+    "SynthesizeTooltip": "Generér eller opdatér AI-resuméet for denne note",
+    "SynthesizeChooseTemplate": "Vælg en skabelon til AI-resuméet"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "Skærmbillede",
+      "Recording": "Optagelse",
+      "AddedTo": "tilføjet til",
+      "Open": "Åbn"
+    },
+    "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ Resumé · {{version}}",
+      "Updated": "✨ Resumé opdateret · {{version}}",
+      "Jump": "Hop ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "Vælg skabelon…",
+      "Label": "Resumé-indstillinger"
+    }
+  },
+  "NotesList": {
+    "NewNote": "Ny note",
+    "JustNow": "lige nu",
+    "Yesterday": "I går",
+    "Title": "Noter",
+    "EmptyTitle": "Start din første note",
+    "EmptySubtitle": "Optagelse er nøglen — tilføj optagelser og skærmbilleder til enhver note.",
+    "MediaCount": "{{n}} vedhæftet medie",
+    "ConfirmDelete": "Slet",
+    "DeleteNote": "Slet note"
+  },
+  "NotesTree": {
+    "Title": "Noter",
+    "NewNote": "Ny note",
+    "NewFolder": "Ny mappe",
+    "NewFolderPrompt": "Mappenavn:",
+    "SortBy": "Sortér efter",
+    "SortManual": "Manuel rækkefølge",
+    "SortName": "Navn (A → Å)",
+    "SortModified": "Ændret (nyeste først)",
+    "CollapseAll": "Skjul alt",
+    "SearchInTree": "Søg i træ",
+    "FilterPlaceholder": "Filtrer noter…",
+    "DropToRoot": "Slip her for at flytte til roden",
+    "MoveTo": "Flyt til…",
+    "MoveToRoot": "Flyt til roden",
+    "Duplicate": "Dupliker",
+    "RevealInFinder": "Vis i Finder",
+    "RevealInExplorer": "Vis i Stifinder",
+    "CopyWikilink": "Kopier wikilink",
+    "Pin": "Fastgør øverst",
+    "Unpin": "Frigør",
+    "Rename": "Omdøb",
+    "Delete": "Slet",
+    "Open": "Åbn",
+    "Expand": "Udvid",
+    "OpenInNewTab": "Åbn i ny fane",
+    "ConfirmDeleteFolder": "Slet mappen \"{{name}}\" og alt dens indhold?",
+    "RenameSucceeded": "Omdøbt",
+    "RenameWithRefs": "Omdøbt; opdaterede {{count}} reference(r)",
+    "SortDefault": "Standard (filsystemrækkefølge)",
+    "ExpandAll": "Udvid alt",
+    "NewFolderPlaceholder": "Nyt mappenavn…",
+    "QuickOpen": "Hurtig åbn  (⌘P)",
+    "CopyRelativePath": "Kopier relativ sti",
+    "CopyFullPath": "Kopier fuld sti",
+    "UpdateWikiFromNote": "Opdater wiki ud fra denne note",
+    "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "Vælg en note",
+    "SelectFromList": "Vælg en note fra listen, eller opret en ny.",
+    "NoNotes": "Du har endnu ingen noter — start din første.",
+    "CollapseSidebar": "Skjul note-sidebjælke",
+    "ExpandSidebar": "Vis note-sidebjælke"
+  },
   "OCRAutoCopy": {
     "Copied": "Udtrukket tekst kopieret til udklipsholder",
     "Error": "Kunne ikke udtrække tekst",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "Kører OCR efter hvert skærmbillede og kopierer udtrukket tekst til udklipsholder",
     "SettingsLabel": "Auto-udtræk tekst (OCR) ved skærmbillede"
   },
+  "OpenRecordingsFolder": "Åbn mappen Optagelser",
+  "OpenRecordingsFolderDesc": "Åbn standardoptagelsesmappen",
   "Pause": "Pause",
   "PermissionAlert": {
     "Title": "Tilladelse påkrævet",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "Lås op med Premium",
     "Upgrade": "Opgrader"
   },
+  "QuickOpen": {
+    "Placeholder": "Begynd at skrive eller indsæt fra udklipsholderen… Brug [[ for at linke til en anden note",
+    "NoResults": "Ingen matchende noter",
+    "UnifiedPlaceholder": "Åbn en note eller wiki-side efter navn…",
+    "SectionNotes": "Noter",
+    "SectionWiki": "Wiki"
+  },
+  "RecordAudio": "Optag lyd",
+  "RecordAudioDesc": "Begynd at optage lyd (blandet)",
+  "RecordFullscreen": "Optag fuld skærm",
+  "RecordFullscreenDesc": "Begynd at optage video i fuld skærm",
+  "RecordRegion": "Snap en region for at optage",
+  "RecordRegionDesc": "Vælg et skærmområde at optage",
   "RecordTab": {
     "TapToRecord": "Tryk for at starte optagelse",
     "RecordWithPreamble": "Optag med {{seconds}}s forudspil",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "Pause",
     "Preparing": "Forbereder",
-    "PreparingToRecord": "Forbereder optagelse..."
+    "PreparingToRecord": "Forbereder optagelse...",
+    "InProgress": "Optagelse i gang",
+    "WillBeAdded": "Lyd tilføjes her når du klikker Stop",
+    "AttachingTo": "Vedhæfter til {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "Lydoptagelse",
@@ -1487,6 +1777,19 @@
     "SearchRecordingsOrSnapshots": "Søg optagelser og skærmbilleder",
     "ShowInFolder": "Vis i mappe"
   },
+  "Regenerate": {
+    "Title": "Genopret noteresumé",
+    "PickTemplate": "Vælg en skabelon:",
+    "Custom": "Eller skriv brugerdefinerede instruktioner (tilsidesætter skabelon):",
+    "CustomPlaceholder": "f.eks. 'Fokusér på forpligtelser over for kunde X, output som et en-sides ledelsesbrev.'",
+    "SaveAsTemplate": "Gem som brugerdefineret skabelon",
+    "TemplateNamePlaceholder": "Skabelonnavn",
+    "NameRequired": "Navn kræves for at gemme",
+    "OutputLanguageHint": "Outputsprog følger Indstillinger → AI-udtræk og -resumé",
+    "Submit": "Regenerér",
+    "AutoUpdate": "Opdater automatisk ved skrivning",
+    "AutoUpdateHint": "Kører resuméet igen efter væsentlige ændringer i denne note (bruger din AI-kvote)."
+  },
   "RegionSelector": {
     "CaptureButton": "Optag skærm eller tryk Enter",
     "ConfirmButton": "Bekræft valg",
@@ -1499,7 +1802,7 @@
     "PresetFreeform": "Fri form",
     "Preset1619": "16:9 Vandret",
     "Preset43": "4:3 Vandret",
-    "Preset2119": "21:9 Ultrawide",
+    "Preset2119": "21:9 Ultrabredt",
     "Preset916": "9:16 Lodret",
     "Preset34": "3:4 Lodret",
     "Preset11": "1:1 firkantet",
@@ -1593,8 +1896,22 @@
     "ShareCompleted": "Deling fuldført",
     "ShareFailed": "Deling understøttes ikke i denne browser. Åbn skærmbilledet manuelt for at dele.",
     "Sharing": "Deler...",
-    "ZeroBytes": "0 Bytes",
+    "ZeroBytes": "0 bytes",
     "Info": "Statistik"
+  },
+  "Search": {
+    "Placeholder": "Søg… (⌘K)",
+    "Aria": "Søg i noter og wiki",
+    "GroupNotes": "Noter",
+    "GroupWiki": "Wiki",
+    "GroupRecordings": "Optagelser",
+    "GroupScreenshots": "Skærmbilleder",
+    "Results": {
+      "Aria": "Søgeresultater"
+    },
+    "Loading": "Søger…",
+    "NoResults": "Ingen resultater for “{{query}}”",
+    "AgentHint": "Prøv AI-assistenten til semantiske forespørgsler."
   },
   "Settings": {
     "About": {
@@ -1604,7 +1921,7 @@
       "LegalToggle": {
         "FullVersion": "Fuld version",
         "OneSentence": "1-sætning",
-        "TLDR": "TLDR"
+        "TLDR": "Resume"
       },
       "NoUpdatesAvailable": "Ingen opdateringer tilgængelige",
       "Privacy": {
@@ -1711,7 +2028,7 @@
       "Loud": "Høj (5x)",
       "Louder": "Højere (10x)",
       "Minimal": "Minimal (0,1x)",
-      "Normal": "Normal (1x)",
+      "Normal": "Normal (1×)",
       "Quiet": "Stille (0.5x)"
     },
     "OpenFolder": "Åbn mappe",
@@ -1720,6 +2037,13 @@
       "AutoRecording": "Auto-optagelse",
       "Flashback": "Flashback-optagelse",
       "Storage": "Lager"
+    },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (gratis, 20 kald/dag)",
+      "FlashLiteFree": "Flash Lite (gratis, 500 kald/dag)",
+      "Help": "AI-opdateringer pauses automatisk, når denne kvote er opbrugt, og genoptages derefter.",
+      "Label": "Gemini-kvotetrin",
+      "Paid": "Betalt niveau"
     },
     "SettingsFileLocation": "Indstillingsfil placering",
     "Storage": {
@@ -1779,6 +2103,15 @@
     "ClearSearch": "Ryd søgning",
     "PrimaryNavigation": "Primær navigation"
   },
+  "Tabs": {
+    "CloseTab": "Luk",
+    "RecordingHere": "Optagelse i gang her",
+    "OrphanTooltip": "Denne fil blev slettet fra disken",
+    "ScrollLeft": "Rul faner til venstre",
+    "ScrollRight": "Rul faner til højre"
+  },
+  "TakeScreenshot": "Tag et skærmbillede",
+  "TakeScreenshotDesc": "Tag et område på skærmen",
   "TakeSnapshot": {
     "GoToSnapshot": "Gå til nyt skærmbillede",
     "Message": "Skærmbillede taget og gemt i:",
@@ -1786,7 +2119,7 @@
     "Title": "Skærmbillede taget"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "Assistent",
     "CloseNavigationMenu": "Luk navigationsmenu",
     "Files": "Filer",
     "MainNavigation": "Hovednavigation",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "Åbn navigationsmenu",
     "Record": "Optage",
     "Recording": "Indspilning",
-    "Screenshot": "Skærmbillede"
+    "Screenshot": "Skærmbillede",
+    "GroupCapture": "Optagelse",
+    "GroupKnowledge": "Viden",
+    "Notes": "Noter",
+    "Wiki": "Wiki",
+    "GroupTools": "Værktøjer"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet kører stadig i systembakken (nederst til højre).",
@@ -1812,6 +2150,11 @@
     "Audio": "Lyd",
     "System": "Systemlyd-output",
     "Video": "Video"
+  },
+  "UndoRename": {
+    "Toast": "Omdøbt; opdaterede {{count}} reference(r)",
+    "Action": "Fortryd",
+    "ToastNoRefs": "Omdøbt"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Installer og afslut",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "Tilbageblik gemmer de sidste 10 sekunder — så du ikke går glip af den første gode sætning.",
     "GotIt": "OK"
   },
-  "HelpPage": {
-    "Title": "Læs mere om SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "AI-genereret indhold",
+    "AIBadge": "AI-genereret",
+    "Backlinks": "Tilbagelinks",
+    "RelatedPages": "Relaterede sider",
+    "BuiltFrom": "Bygget ud fra",
+    "SelectPage": "Vælg en side",
+    "SelectPageHint": "Vælg en enhed, person eller et emne i sidepanelet for at se, hvad din wiki har lært.",
+    "LoadingPage": "AI bygger denne side…",
+    "LoadFailed": "Denne wiki-side kunne ikke indlæses.",
+    "AISection": "AI-sektion",
+    "AIEmpty": "Endnu intet AI-indhold. Tilføj en optagelse eller et skærmbillede til en note, der nævner denne enhed, og kør derefter wiki-opdateringen.",
+    "SidebarTitle": "Wiki",
+    "EmptyTitle": "Din wiki er tom",
+    "EmptySubtitle": "Optag et møde, eller skriv en note for at begynde at opbygge din vidensbase.",
+    "UserSection": "Dine noter",
+    "UserSectionTitle": "Dine noter",
+    "UserSectionPlaceholder": "Tilføj dine egne noter…",
+    "RefreshFromSources": "Opdater fra kilder",
+    "RefreshFromSourcesTooltip": "Opdater AI-sektionen fra {{count}} kildenote(r) nu",
+    "RefreshFromSourcesHint": "Klik for at opdatere AI-sektionen fra {{count}} kildenote(r). Shift+klik genlæser også kildenoterne.",
+    "RefreshDisabledTooltip": "Denne wiki-side har endnu ingen kildenoter — opret den først fra en note.",
+    "RefreshAriaLabel": "Opdater wiki-side fra kildenoter",
+    "RefreshError": "Opdatering mislykkedes",
+    "Bulk": {
+      "Build": "Byg wiki",
+      "BuildFromAll": "Byg wiki fra alle noter",
+      "BuildFromFolder": "Byg wiki fra mappe…",
+      "BuildFromSelection": "Byg wiki fra udvalg…",
+      "ToastMessage": "{{count}} nye noter registreret. Byg wiki?",
+      "BannerMessage": "{{count}} nye noter siden sidste build",
+      "BuildingExtracting": "Læser {{current}}/{{total}} noter",
+      "BuildingReducing": "Bygger {{current}}/{{total}} sider",
+      "Building": "Bygger wiki — {{stage}}",
+      "PausedFor": "hastighedsgrænse: {{seconds}}s",
+      "Cancel": "Annuller",
+      "Cancelling": "Annullerer — færdiggør den aktuelle note…",
+      "Pause": "Pause",
+      "Continue": "Fortsæt",
+      "Paused": "Sat på pause — {{current}}/{{total}}",
+      "Restart": "Genstart",
+      "NowReading": "Læser nu: {{item}}",
+      "NowBuilding": "Bygger nu: {{item}}",
+      "RecentList": "Nyligt behandlet",
+      "DoneSummary": "Wiki bygget — {{notes}} noter, {{pages}} sider",
+      "Resume": "Genoptag",
+      "ResumeAvailable": "Et tidligere wiki-build blev afbrudt ved {{current}}/{{total}}. Genoptag?",
+      "PolishIndex": "Polish indeks",
+      "PolishIndexHint": "Tilføj en fortællende intro til wiki-indekset",
+      "BuildFromFolderPrompt": "Mappesti (relativ til arbejdsområdet):",
+      "BuildFromSelectionPrompt": "Komma-separerede notefilnavne (relativt til notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "Flere wiki-handlinger",
+      "BuildAllTooltip": "Byg wiki fra alle noter (inkrementelt — opdaterer kun sider, hvis kildenoter har ændret sig).",
+      "BuildAllRunning": "Bygger wiki fra alle noter — se banneret nedenfor.",
+      "BuildAllAria": "Byg wiki fra alle noter"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "Automatisk opdatering af wiki fra noter",
+    "SettingsDesc": "Opbygger en vidensbase af enheder, personer og emner fra dine noter og optagelser. Fra som standard."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "Søg wiki-sider efter navn…",
+    "NoResults": "Ingen matchende wiki-sider"
+  },
+  "WikiTree": {
+    "Title": "Wiki",
+    "NewPage": "Ny wiki-side",
+    "NewFolder": "Ny mappe",
+    "NewFolderPlaceholder": "Mappenavn…",
+    "SortBy": "Sortér efter",
+    "SortDefault": "Standard (filsystem-rækkefølge)",
+    "SortName": "Navn (A → Z)",
+    "SortModified": "Ændret (nyeste først)",
+    "CollapseAll": "Skjul alt",
+    "ExpandAll": "Vis alt",
+    "SearchInTree": "Filtrér i træet",
+    "FilterPlaceholder": "Filtrér sider…",
+    "DropToRoot": "Slip for at flytte til wiki-roden",
+    "MoveToRoot": "Flyt til wiki-roden",
+    "Open": "Åbn",
+    "Rename": "Omdøb",
+    "Delete": "Slet",
+    "CopyWikilink": "Kopiér wikilink",
+    "CopyRelativePath": "Kopiér relativ sti",
+    "CopyFullPath": "Kopiér fuld sti",
+    "ConfirmDeleteFile": "Flyt \"{{name}}\" til papirkurven? (Kan gendannes fra Finder / Stifinder.)",
+    "ConfirmDeleteFolder": "Flyt mappen \"{{name}}\" og alt indhold til papirkurven?",
+    "Empty": "Ingen wiki-sider endnu. Pipelinen skriver her, når du optager møder.",
+    "SetDefaultEntity": "Sæt som standard for nye entitetssider",
+    "SetDefaultPerson": "Sæt som standard for nye personsider",
+    "SetDefaultTopic": "Sæt som standard for nye emnesider",
+    "SetDefaultMeeting": "Sæt som standard for nye mødesider",
+    "DefaultLabel": "Standard for {{wikiKind}}",
+    "AIBadge": "AI-genereret",
+    "UserBadge": "Redigeret af bruger",
+    "QuickOpen": "Hurtig åbning (⌘P)",
+    "ConflictBadge": "Konfliktkopi",
+    "EmptyAiCurated": "AI udfylder denne mappe, når dine optagelser eller noter nævner en enhed, person, et emne eller et møde. Åbn en note og klik på Synkroniser wiki for at generere sider."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] findes ikke i dette arbejdsområde",
+    "Collision": "{{count}} noter deler basisnavnet {{name}}",
+    "DisambiguationTitle": "Vælg hvilken note der skal åbnes",
+    "DisambiguationOpenAt": "i {{folder}}",
+    "SuggestEmpty": "Ingen matchende noter eller wiki-sider",
+    "BrokenTooltipSyncWiki": "Denne side er ikke oprettet endnu — klik på Synkroniser wiki i denne note for at oprette den.",
+    "SyncContextMenu": "Synk wiki",
+    "SyncToGenerate": "Synk wiki for at generere denne side"
   },
   "WindowPicker": {
     "Instruction": "Vælg et vindue til vinduesoptagelser.",
@@ -1947,6 +2399,15 @@
     "Title": "Vælg et vindue",
     "Unknown": "Unavngivet vindue"
   },
+  "Workspace": {
+    "None": "Intet arbejdsområde",
+    "EmptyList": "Ingen arbejdsområder registreret",
+    "Add": "Tilføj arbejdsområde…",
+    "Remove": "Fjern fra SeaMeet",
+    "RemoveTooltip": "Fjern fra SeaMeet (filerne på disken bevares)",
+    "ConfirmRemove": "Fjern arbejdsområdet \"{{name}}\"? Filer på disken slettes ikke; kun SeaMeet-posten fjernes.",
+    "Default": "Standard"
+  },
   "agent": {
     "fabLabel": "Spørg AI-agent",
     "panelLabel": "AI-agent",
@@ -1954,11 +2415,21 @@
     "maximize": "Maksimer",
     "close": "Luk"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "Forbereder din optagelse…"
+    },
+    "error": {
+      "title": "Vi kunne ikke behandle denne optagelse",
+      "body": "Tjek din API-nøgle, eller prøv igen."
+    },
+    "disabled": "AI-funktioner er slået fra. Aktiver dem i Indstillinger for at se resuméer og handlinger."
+  },
   "floatingPip": {
     "minimize": "Minimer",
     "maximize": "Maksimer",
-    "close": "Luk",
     "restore": "Gendan",
+    "close": "Luk",
     "exit": "Afslut billede-i-billede"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "Skift til klassisk layout",
       "floating": "Skift til flydende layout"
     },
+    "showPipTooltip": "Vis billede-i-billede",
     "announce": {
       "classic": "Skiftede til klassisk layout",
       "floating": "Skiftede til flydende layout"
     },
-    "introToast": "Nyhed: Flydende layout tilgængeligt. Klik på layoutikonet i overskriften for at prøve det.",
-    "showPipTooltip": "Vis billede-i-billede"
+    "introToast": "Nyhed: Flydende layout tilgængeligt. Klik på layoutikonet i overskriften for at prøve det."
   }
 }

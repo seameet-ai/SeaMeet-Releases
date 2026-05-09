@@ -209,6 +209,47 @@
       "Live": "يعيش"
     }
   },
+  "AISynthesis": {
+    "RefinedFromBatch": "✨ تم التحديث بواسطة الذكاء الاصطناعي",
+    "Title": "ملخص الملاحظة",
+    "Meta": "{{count}} تسجيلات · القالب: {{tpl}}",
+    "CopyToEdit": "نسخ للتعديل",
+    "Regenerate": "إعادة التوليد",
+    "Generating": "جارٍ التوليد…",
+    "Provenance": "تم إنشاؤه من {{n}} تسجيلات",
+    "Error": "فشل التوليد: {{err}}",
+    "RenameSuggested": "الذكاء الاصطناعي يقترح \"{{title}}\"",
+    "Template": {
+      "general": {
+        "name": "اجتماع عام",
+        "description": "قرارات، إجراءات، نقاش"
+      },
+      "brainstorm": {
+        "name": "عصف ذهني",
+        "description": "أفكار، خيوط، أسئلة مفتوحة"
+      },
+      "lecture": {
+        "name": "محاضرة / حديث",
+        "description": "الأطروحة، نقاط رئيسية، أسئلة، مراجع"
+      },
+      "oneonone": {
+        "name": "1:1 / مقابلة",
+        "description": "مواضيع، شعور، متابعات"
+      },
+      "sales": {
+        "name": "مكالمة مبيعات",
+        "description": "اكتشاف، اعتراضات، خطوات تالية، صناع القرار"
+      },
+      "standup": {
+        "name": "تجمع / حالة",
+        "description": "تحديثات لكل شخص، عوائق، التالي"
+      }
+    },
+    "RegenerateTooltip": "إعادة إنشاء بنفس القالب",
+    "RegenerateChooseTemplate": "إعادة إنشاء بقالب مختلف",
+    "Stale": "قديم · تحديث",
+    "StaleTooltip": "تغيرت الملاحظة منذ إنشاء هذا الملخص — انقر للتحديث."
+  },
   "About": {
     "AppStoreBuild": "إصدار متجر التطبيقات",
     "DirectBuild": "إصدار مباشر",
@@ -301,7 +342,8 @@
       "Output": "الإخراج",
       "Pattern": "نمط:",
       "Reading": "قراءة الملف...",
-      "ShowDetails": "إظهار التفاصيل"
+      "ShowDetails": "إظهار التفاصيل",
+      "AndMoreLines": "... و{{count}} أسطر أخرى"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} الإجراءات",
@@ -309,21 +351,14 @@
       "Completed_one": "اكتمل {{count}}",
       "Completed_other": "اكتمل {{count}}",
       "Running_one": "{{count}} قيد التشغيل",
-      "Running_other": "{{count}} قيد التشغيل"
+      "Running_other": "{{count}} قيد التشغيل",
+      "Running": "{{count}} قيد التشغيل",
+      "Completed": "اكتمل {{count}}",
+      "Actions": "{{count}} إجراءات"
     }
   },
   "AgentSection": {
     "ConfigureApiKey": "قم بتهيئة مفاتيح API لاستخدام وكيل الذكاء الاصطناعي."
-  },
-  "aiBase": {
-    "preparing": {
-      "title": "جاري تجهيز تسجيلك…"
-    },
-    "error": {
-      "title": "لم نتمكن من معالجة هذا التسجيل",
-      "body": "تحقق من مفتاح API الخاص بك أو حاول مرة أخرى."
-    },
-    "disabled": "ميزات الذكاء الاصطناعي متوقفة. قم بتمكينها في الإعدادات لرؤية الملخصات والإجراءات."
   },
   "App": {
     "FailedToEnableFlashback": "فشل في تفعيل العودة للماضي: {{error}}",
@@ -403,6 +438,9 @@
     "AdvancedSettings": "الإعدادات المتقدمة ←",
     "LearnMore": "اعرف المزيد"
   },
+  "AutoDetectFirstFire": {
+    "LearnLink": "أول مرة؟ إليك كيف يعمل هذا ←"
+  },
   "AutoDetectInfoModal": {
     "ControlLabel": "الكشف التلقائي",
     "Description": "يبدأ الـ Auto-Detect التسجيل تلقائيًا عند الانضمام إلى الاجتماعات، لذلك لن تنسى الضغط على زر التسجيل.",
@@ -424,9 +462,6 @@
     "Tip2Desc": "يستخدم نشاط الميكروفون، عناوين النوافذ، وروابط المتصفح لتحقيق أعلى دقة",
     "Tip2Title": "طرق كشف متعددة",
     "Title": "الكشف التلقائي عن الاجتماعات"
-  },
-  "AutoDetectFirstFire": {
-    "LearnLink": "أول مرة؟ إليك كيف يعمل هذا ←"
   },
   "AutoRecording": {
     "BugReport": "هل رأيت خطأ؟ أبلغ عنه إلى ‎seameet@seasalt.ai‎",
@@ -625,7 +660,8 @@
       "TabLabel": "الأجهزة",
       "Today": "اليوم",
       "Yesterday": "أمس",
-      "YourDevices": "أجهزتك"
+      "YourDevices": "أجهزتك",
+      "DaysAgo": "{{count}} من الأيام"
     },
     "FAQ": {
       "Title": "الأسئلة الشائعة",
@@ -856,7 +892,12 @@
     "Starting": "جار البدء...",
     "UnknownApp": "تطبيق غير معروف",
     "Copied": "تم النسخ!",
-    "Copy": "نسخ"
+    "Copy": "نسخ",
+    "Clear": "واضح",
+    "Forward": "إلى الأمام",
+    "Refresh": "ينعش",
+    "Apply": "تطبيق",
+    "Undo": "تراجع"
   },
   "DeletePrompt": {
     "Cancel": "إلغاء",
@@ -889,6 +930,31 @@
     "MarkToolbarButton": "الأحداث المميزة",
     "Title": "قائمة الأحداث"
   },
+  "ExternalChange": {
+    "Banner": "تغيّر هذا الملف على القرص أثناء التحرير.",
+    "Reload": "إعادة تحميل نسخة القرص",
+    "Keep": "الاحتفاظ بنسختي"
+  },
+  "FAB": {
+    "Label": "إجراءات سريعة",
+    "Stop": "إيقاف التسجيل",
+    "Record": "بدء التسجيل",
+    "Screenshot": "التقاط لقطة شاشة",
+    "Agent": "مساعد الذكاء الاصطناعي",
+    "PickSource": "اختر مصدر التسجيل",
+    "PickScreenshotSource": "اختر مصدر لقطة الشاشة",
+    "SourceAudio": "صوت فقط",
+    "SourceFullscreen": "ملء الشاشة",
+    "SourceWindow": "نافذة",
+    "SourceRegion": "منطقة",
+    "ScreenshotFullscreen": "ملء الشاشة",
+    "ScreenshotWindow": "نافذة",
+    "ScreenshotRegion": "منطقة",
+    "LiveTranscription": "النسخ المباشر",
+    "ToggleLiveTranscription": "تبديل النسخ المباشر",
+    "RecordingInProgress": "جارٍ التسجيل…",
+    "OpenBoundNote": "افتح الملاحظة المرفق بها هذا التسجيل"
+  },
   "FileImport": {
     "BrowseFiles": "تصفح الملفات",
     "DragDropFiles": "اسحب وأفلت ملفات الصوت أو الفيديو أو الصور هنا",
@@ -899,6 +965,23 @@
     "VideoImportCopying": "جارٍ نسخ ملف الفيديو...",
     "VideoImportSaving": "جارٍ حفظ ملف الفيديو...",
     "VideoUnsupported": "قد لا يكون هذا التنسيق قابلاً للتشغيل في التطبيق. سيتم استيراد الملف على أي حال."
+  },
+  "FindReplace": {
+    "ConfirmReplaceAll": "استبدال جميع التطابقات وعددها {{count}}؟",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "بحث",
+    "AriaLabel": "البحث والاستبدال",
+    "CaseSensitive": "مطابقة الحالة",
+    "ClearSearch": "مسح",
+    "Previous": "النتيجة السابقة",
+    "Next": "النتيجة التالية",
+    "NoResults": "لا توجد نتائج",
+    "ReplacePlaceholder": "استبدال",
+    "WikiAiReadonly": "قسم الذكاء الاصطناعي للقراءة فقط — يعمل الاستبدال في قسم المستخدم فقط",
+    "Replace": "استبدال",
+    "ReplaceAll": "استبدال الكل",
+    "CloseBar": "إغلاق البحث/الاستبدال",
+    "WikiCounterSplit": "{{userCount}} في الملاحظة + {{aiCount}} في قسم الذكاء الاصطناعي"
   },
   "FlashbackControls": {
     "AudioFlashback": "العودة للماضي الصوتية",
@@ -1192,20 +1275,35 @@
       "VideoQuality": "جودة JPEG للإطار",
       "VideoMaxWidth": "الحد الأقصى لعرض الإطار",
       "VideoQualityHint": "ارفع الجودة والحد الأقصى للعرض عندما يقرأ Gemini تسميات المربعات الصغيرة بشكل خاطئ (مثل أسماء المشاركين في Zoom / Meet / Teams). تزيد القيم الأعلى من استخدام رموز الصور — عادةً ما ينقل 1280 بكسل الإطار من فئة 258 رمزًا إلى فئة 1290 رمزًا.",
-      "DisableAutoVad": "تعطيل VAD التلقائي (اكتشاف النوبة من جانب الخادم)",
       "EndSensitivity": "حساسية نهاية الكلام",
       "Default": "افتراضي (HIGH — تفريغات سريعة)",
       "SilenceMs": "صمت قبل نهاية الدور",
       "VadHint": "صمت أقل + حساسية عالية → تدفقات نسخ أقصر وأكثر تكرارًا.",
+      "DisableAutoVad": "تعطيل VAD التلقائي (اكتشاف النوبة من جانب الخادم)",
       "ActivityFlush": "تدفق دوري أثناء النوبات الطويلة",
       "ActivityFlushMs": "فترة التدفق",
       "ActivityFlushHint": "كل N مللي ثانية خلال نوبة طويلة، يحث Gemini على معالجة الصوت المتراكم. يمنع توقف النسخ في المونولوجات / العروض التقديمية. يتطلب تعطيل VAD التلقائي.",
       "ActivityFlushRequiresManualVad": "التدفق الدوري لا يسري إلا عند تعطيل VAD التلقائي — يرفض خادم Gemini التحكم الصريح في النشاط خلاف ذلك. اترك المفتاح مشغّلاً وعطّل VAD التلقائي أدناه لاستخدامه.",
       "Reset": "إعادة تعيين الكل إلى الإعدادات الافتراضية"
-    }
+    },
+    "SegmentCount": "{{count}} مقاطع"
   },
   "GeminiTranscription": {
     "Title": "النسخ المباشر"
+  },
+  "GlobalSearch": {
+    "SectionNotes": "الملاحظات",
+    "SectionWiki": "الويكي",
+    "SectionTranscripts": "نصوص التسجيلات",
+    "SectionSummaries": "ملخصات التسجيلات",
+    "SectionOcr": "نص لقطة الشاشة",
+    "IndexingFallback": "جارٍ الفهرسة — عرض تطابقات أسماء الملفات فقط",
+    "Placeholder": "البحث في الملاحظات والويكي والتسجيلات…",
+    "SoFar": "حتى الآن",
+    "NoResults": "لا توجد تطابقات"
+  },
+  "HelpPage": {
+    "Title": "تعرّف على المزيد عن SeaMeet"
   },
   "IdleCompactView": {
     "ArmFlashback": "تفعيل خاصية العودة إلى الماضي",
@@ -1221,6 +1319,45 @@
     "Detail": "يتطلب SeaMeet نظام macOS 14.2 (Sonoma) أو أحدث.\n\nقد لا تعمل بعض الميزات مثل اكتشاف الصوت لكل تطبيق وبدء الاجتماعات تلقائيًا.\n\nقم بالتحديث عبر إعدادات النظام > عام > تحديث البرامج.",
     "ContinueAnyway": "المتابعة على أي حال",
     "Quit": "إنهاء"
+  },
+  "MediaBlock": {
+    "Processing": "قيد المعالجة…",
+    "SummaryReady": "الملخص جاهز",
+    "Failed": "فشل",
+    "Tab": {
+      "Summary": "الملخص",
+      "Transcript": "النسخ النصي",
+      "Actions": "الإجراءات",
+      "Decisions": "القرارات",
+      "Chapters": "الفصول",
+      "Description": "الوصف",
+      "Ocr": "نص OCR"
+    },
+    "MoreActions": "مزيد من الإجراءات",
+    "Action": {
+      "ShowInFolder": "إظهار في المجلد",
+      "CopyEmbed": "نسخ صياغة التضمين",
+      "RerunAi": "إعادة تشغيل الذكاء الاصطناعي",
+      "Detach": "فصل عن الملاحظة"
+    },
+    "AudioFallback": "متصفحك لا يدعم تشغيل الصوت.",
+    "WaitingForPipeline": "في انتظار انتهاء معالجة الذكاء الاصطناعي…",
+    "PipelineFailed": "فشلت معالجة الذكاء الاصطناعي لهذا الملف.",
+    "NoAiContent": "اكتملت معالجة الذكاء الاصطناعي دون إنتاج محتوى إضافي.",
+    "NoSummary": "لم يُنشأ ملخص الذكاء الاصطناعي بعد.",
+    "Due": "الاستحقاق",
+    "Stage": {
+      "preparing": "جارٍ التحضير…",
+      "uploading": "جارٍ الرفع…",
+      "uploading-wait": "جارٍ معالجة الرفع…",
+      "analyzing": "جارٍ التحليل…",
+      "extracting": "جارٍ الاستخراج…",
+      "saving": "جارٍ الحفظ…",
+      "complete": "مكتمل",
+      "gathering": "جارٍ الجمع…",
+      "reducing": "جارٍ التحسين…",
+      "writing": "جارٍ الكتابة…"
+    }
   },
   "MeetSeasaltAi": {
     "ActionItems": "عناصر الإجراء",
@@ -1253,7 +1390,8 @@
     "TranscriptionLanguage": "لغة النسخ",
     "TranslationLanguage": "لغة الترجمة",
     "UnknownSpeaker": "المتحدث",
-    "WaitingForSpeech": "في انتظار الكلام..."
+    "WaitingForSpeech": "في انتظار الكلام...",
+    "SegmentCount": "{{count}} مقاطع"
   },
   "MeetingDetail": {
     "Back": "← رجوع",
@@ -1313,6 +1451,140 @@
     "ScreenFlashbackCharging": "جارٍ شحن شاشة العودة إلى الماضي...",
     "ScreenRecording": "تسجيل الشاشة ({{time}})"
   },
+  "NoteEditor": {
+    "Placeholder": "ابدأ الكتابة أو ألصق من الحافظة…",
+    "Saving": "جارٍ الحفظ…",
+    "Saved": "✓ تم الحفظ",
+    "SaveFailed": "فشل الحفظ",
+    "Editing": "قيد التحرير…",
+    "TitlePlaceholder": "ملاحظة بدون عنوان",
+    "TitleLabel": "عنوان الملاحظة",
+    "RenameTooltip": "انقر لإعادة التسمية",
+    "UntitledFallback": "ملاحظة بدون عنوان",
+    "Renaming": "جارٍ إعادة التسمية…",
+    "LoadFailed": "تعذر تحميل الملاحظة",
+    "Bold": "غامق",
+    "Italic": "مائل",
+    "Code": "كود",
+    "Heading1": "عنوان 1",
+    "Heading2": "عنوان 2",
+    "BulletList": "قائمة نقطية",
+    "OrderedList": "قائمة مرقمة",
+    "Link": "رابط",
+    "LinkDialog": "إدراج رابط",
+    "LinkPlaceholder": "https://example.com",
+    "LinkUpdate": "تحديث",
+    "LinkAdd": "إضافة",
+    "LinkRemove": "إزالة الرابط",
+    "InsertWikilink": "الربط بملاحظة ([[ … ]])",
+    "SyncWiki": "مزامنة wiki",
+    "SyncWikiTooltip": "تحديث wiki من هذه الملاحظة الآن (بدلاً من انتظار التشغيل التلقائي)",
+    "SyncWikiCouldNotQueue": "تعذّر إضافة تحديث wiki إلى الطابور",
+    "SyncWikiQueued": "في الطابور…",
+    "SyncWikiRunning": "جارٍ المزامنة…",
+    "SyncWikiSuccess": "✓ تمت المزامنة",
+    "SyncWikiError": "فشلت المزامنة",
+    "Blockquote": "اقتباس",
+    "CodeBlock": "كتلة كود",
+    "Heading3": "عنوان 3",
+    "Highlight": "تسليط الضوء",
+    "HorizontalRule": "خط أفقي",
+    "ImageAdd": "إدراج",
+    "ImageDialog": "إدراج صورة",
+    "ImagePlaceholder": "https://example.com/image.png",
+    "InsertImage": "إدراج صورة",
+    "InsertTable": "إدراج جدول",
+    "Strike": "خط مشطوب",
+    "TableAddColumnAfter": "إضافة عمود بعد",
+    "TableAddColumnBefore": "إضافة عمود قبل",
+    "TableAddRowAfter": "إضافة صف بعد",
+    "TableAddRowBefore": "إضافة صف قبل",
+    "TableDelete": "حذف جدول",
+    "TableDeleteColumn": "حذف عمود",
+    "TableDeleteRow": "حذف صف",
+    "TaskList": "قائمة المهام",
+    "Redo": "إعادة",
+    "Underline": "تسطير",
+    "Undo": "تراجع",
+    "Synthesize": "ملخص الذكاء الاصطناعي",
+    "SynthesizeRunning": "جارٍ التلخيص…",
+    "SynthesizeTooltip": "إنشاء أو تحديث ملخص الذكاء الاصطناعي لهذه الملاحظة",
+    "SynthesizeChooseTemplate": "اختيار قالب لملخص الذكاء الاصطناعي"
+  },
+  "Notes": {
+    "Toast": {
+      "Screenshot": "لقطة شاشة",
+      "Recording": "تسجيل",
+      "AddedTo": "أُضيف إلى",
+      "Open": "فتح"
+    },
+    "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}",
+    "SynthesisPill": {
+      "Quiet": "✨ ملخص · {{version}}",
+      "Updated": "✨ تم تحديث الملخص · {{version}}",
+      "Jump": "القفز ↑"
+    },
+    "SplitMenu": {
+      "ChooseTemplate": "اختر القالب…",
+      "Label": "خيارات الملخص"
+    }
+  },
+  "NotesList": {
+    "NewNote": "ملاحظة جديدة",
+    "JustNow": "الآن",
+    "Yesterday": "الأمس",
+    "Title": "الملاحظات",
+    "EmptyTitle": "ابدأ أول ملاحظة لك",
+    "EmptySubtitle": "التسجيل هو الميزة الأساسية — أضف التسجيلات ولقطات الشاشة إلى أي ملاحظة.",
+    "MediaCount": "{{n}} ملف مرفق",
+    "ConfirmDelete": "حذف",
+    "DeleteNote": "حذف الملاحظة"
+  },
+  "NotesTree": {
+    "Title": "الملاحظات",
+    "NewNote": "ملاحظة جديدة",
+    "NewFolder": "مجلد جديد",
+    "NewFolderPrompt": "اسم المجلد:",
+    "SortBy": "ترتيب حسب",
+    "SortManual": "ترتيب يدوي",
+    "SortName": "الاسم (أ → ي)",
+    "SortModified": "تاريخ التعديل (الأحدث أولاً)",
+    "CollapseAll": "طيّ الكل",
+    "SearchInTree": "البحث في الشجرة",
+    "FilterPlaceholder": "تصفية الملاحظات…",
+    "DropToRoot": "أفلت هنا للنقل إلى الجذر",
+    "MoveTo": "نقل إلى…",
+    "MoveToRoot": "نقل إلى الجذر",
+    "Duplicate": "تكرار",
+    "RevealInFinder": "إظهار في Finder",
+    "RevealInExplorer": "إظهار في مستكشف الملفات",
+    "CopyWikilink": "نسخ رابط الويكي",
+    "Pin": "تثبيت في الأعلى",
+    "Unpin": "إلغاء التثبيت",
+    "Rename": "إعادة تسمية",
+    "Delete": "حذف",
+    "Open": "فتح",
+    "Expand": "توسيع",
+    "OpenInNewTab": "فتح في علامة تبويب جديدة",
+    "ConfirmDeleteFolder": "حذف المجلد \"{{name}}\" وكل ما بداخله؟",
+    "RenameSucceeded": "تمت إعادة التسمية",
+    "RenameWithRefs": "تمت إعادة التسمية؛ تم تحديث {{count}} مرجعًا",
+    "SortDefault": "افتراضي (ترتيب نظام الملفات)",
+    "ExpandAll": "توسيع الكل",
+    "NewFolderPlaceholder": "اسم المجلد الجديد…",
+    "QuickOpen": "فتح سريع  (⌘P)",
+    "CopyRelativePath": "نسخ المسار النسبي",
+    "CopyFullPath": "نسخ المسار الكامل",
+    "UpdateWikiFromNote": "تحديث الويكي من هذه الملاحظة",
+    "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}"
+  },
+  "NotesView": {
+    "EmptyTitle": "اختر ملاحظة",
+    "SelectFromList": "اختر ملاحظة من القائمة، أو ابدأ ملاحظة جديدة.",
+    "NoNotes": "ليس لديك ملاحظات بعد — ابدأ أولى ملاحظاتك.",
+    "CollapseSidebar": "إخفاء الشريط الجانبي للملاحظات",
+    "ExpandSidebar": "إظهار الشريط الجانبي للملاحظات"
+  },
   "OCRAutoCopy": {
     "Copied": "تم نسخ النص المستخرج إلى الحافظة",
     "Error": "فشل في استخراج النص",
@@ -1325,6 +1597,8 @@
     "SettingsDesc": "يقوم بتشغيل OCR بعد كل لقطة شاشة وينسخ النص المستخرج إلى الحافظة",
     "SettingsLabel": "استخراج النص تلقائياً (OCR) عند التقاط الشاشة"
   },
+  "OpenRecordingsFolder": "افتح مجلد التسجيلات",
+  "OpenRecordingsFolderDesc": "افتح مجلد التسجيلات الافتراضي",
   "Pause": "يوقف",
   "PermissionAlert": {
     "Title": "الإذن مطلوب",
@@ -1418,6 +1692,19 @@
     "UnlockPremium": "فتح مع Premium",
     "Upgrade": "ترقية"
   },
+  "QuickOpen": {
+    "Placeholder": "ابدأ الكتابة أو الصق من الحافظة… استخدم [[ للربط بملاحظة أخرى",
+    "NoResults": "لا توجد ملاحظات مطابقة",
+    "UnifiedPlaceholder": "فتح ملاحظة أو صفحة ويكي بالاسم…",
+    "SectionNotes": "الملاحظات",
+    "SectionWiki": "الويكي"
+  },
+  "RecordAudio": "سجل الصوت",
+  "RecordAudioDesc": "بدء تسجيل الصوت (مختلط)",
+  "RecordFullscreen": "سجل ملء الشاشة",
+  "RecordFullscreenDesc": "ابدأ بتسجيل الفيديو بملء الشاشة",
+  "RecordRegion": "التقط منطقة للتسجيل",
+  "RecordRegionDesc": "حدد منطقة الشاشة للتسجيل",
   "RecordTab": {
     "TapToRecord": "انقر لبدء التسجيل",
     "RecordWithPreamble": "سجّل مع مقدمة {{seconds}} ث",
@@ -1436,7 +1723,10 @@
   "Recording": {
     "Paused": "متوقف مؤقتًا",
     "Preparing": "تحضير",
-    "PreparingToRecord": "جاري التحضير للتسجيل..."
+    "PreparingToRecord": "جاري التحضير للتسجيل...",
+    "InProgress": "جارٍ التسجيل",
+    "WillBeAdded": "سيتم إضافة الصوت هنا عند النقر على إيقاف",
+    "AttachingTo": "إرفاق بـ {{note}}"
   },
   "RecordingControls": {
     "AudioRecording": "تسجيل صوتي",
@@ -1486,6 +1776,19 @@
     "SaveAs": "حفظ باسم",
     "SearchRecordingsOrSnapshots": "ابحث في التسجيلات واللقطات",
     "ShowInFolder": "عرض في المجلد"
+  },
+  "Regenerate": {
+    "Title": "إعادة توليد ملخص الملاحظة",
+    "PickTemplate": "اختر قالبًا:",
+    "Custom": "أو اكتب تعليمات مخصصة (تتجاوز القالب):",
+    "CustomPlaceholder": "مثلاً: 'ركّز على الالتزامات تجاه العميل X، وأخرج النتيجة كمذكرة تنفيذية من صفحة واحدة.'",
+    "SaveAsTemplate": "حفظ كقالب مخصص",
+    "TemplateNamePlaceholder": "اسم القالب",
+    "NameRequired": "الاسم مطلوب للحفظ",
+    "OutputLanguageHint": "لغة الإخراج تتبع الإعدادات ← استخراج الذكاء الاصطناعي والتلخيص",
+    "Submit": "إعادة التوليد",
+    "AutoUpdate": "تحديث تلقائي عند الكتابة",
+    "AutoUpdateHint": "يعيد تشغيل الملخص بعد تغييرات كبيرة على هذه الملاحظة (يستخدم حصة الذكاء الاصطناعي)."
   },
   "RegionSelector": {
     "CaptureButton": "التقاط الشاشة أو اضغط على Enter",
@@ -1595,6 +1898,20 @@
     "Sharing": "جارٍ المشاركة...",
     "ZeroBytes": "0 بايت",
     "Info": "احصائيات"
+  },
+  "Search": {
+    "Placeholder": "بحث… (⌘K)",
+    "Aria": "البحث في الملاحظات والويكي",
+    "GroupNotes": "الملاحظات",
+    "GroupWiki": "الويكي",
+    "GroupRecordings": "التسجيلات",
+    "GroupScreenshots": "لقطات الشاشة",
+    "Results": {
+      "Aria": "نتائج البحث"
+    },
+    "Loading": "جارٍ البحث…",
+    "NoResults": "لا توجد نتائج لـ \"{{query}}\"",
+    "AgentHint": "جرّب مساعد الذكاء الاصطناعي للاستعلامات الدلالية."
   },
   "Settings": {
     "About": {
@@ -1721,6 +2038,13 @@
       "Flashback": "تسجيل العودة إلى الماضي",
       "Storage": "التخزين"
     },
+    "QuotaTier": {
+      "FlashLatestFree": "Flash latest (مجاني، 20 طلبًا/يوم)",
+      "FlashLiteFree": "Flash Lite (مجاني، 500 طلب/يوم)",
+      "Help": "تتوقف تحديثات الذكاء الاصطناعي تلقائيًا عند استنفاد هذه الحصة، ثم تُستأنف.",
+      "Label": "مستوى حصة Gemini",
+      "Paid": "المستوى المدفوع"
+    },
     "SettingsFileLocation": "موقع ملف الإعدادات",
     "Storage": {
       "Browse": "تصفح...",
@@ -1779,6 +2103,15 @@
     "ClearSearch": "مسح البحث",
     "PrimaryNavigation": "التنقل الأساسي"
   },
+  "Tabs": {
+    "CloseTab": "إغلاق",
+    "RecordingHere": "جارٍ التسجيل هنا",
+    "OrphanTooltip": "تم حذف هذا الملف من القرص",
+    "ScrollLeft": "التمرير لليسار",
+    "ScrollRight": "التمرير لليمين"
+  },
+  "TakeScreenshot": "خذ لقطة للشاشة",
+  "TakeScreenshotDesc": "التقاط منطقة من الشاشة",
   "TakeSnapshot": {
     "GoToSnapshot": "الانتقال إلى لقطة جديدة",
     "Message": "تم أخذ اللقطة وحفظها في:",
@@ -1786,7 +2119,7 @@
     "Title": "تم أخذ لقطة شاشة"
   },
   "TopNav": {
-    "Agent": "Agent",
+    "Agent": "المساعد",
     "CloseNavigationMenu": "إغلاق قائمة التنقل",
     "Files": "ملفات",
     "MainNavigation": "الملاحة الرئيسية",
@@ -1794,7 +2127,12 @@
     "OpenNavigationMenu": "فتح قائمة التنقل",
     "Record": "سِجِلّ",
     "Recording": "تسجيل",
-    "Screenshot": "لقطة شاشة"
+    "Screenshot": "لقطة شاشة",
+    "GroupCapture": "التقاط",
+    "GroupKnowledge": "المعرفة",
+    "Notes": "الملاحظات",
+    "Wiki": "الويكي",
+    "GroupTools": "الأدوات"
   },
   "Tray": {
     "MinimizedHint": "لا تزال SeaMeet تعمل في علبة النظام (في أسفل اليمين)",
@@ -1812,6 +2150,11 @@
     "Audio": "صوتي",
     "System": "مخرجات الصوت النظامي",
     "Video": "فيديو"
+  },
+  "UndoRename": {
+    "Toast": "تمت إعادة التسمية؛ تم تحديث {{count}} مرجع/مراجع",
+    "Action": "تراجع",
+    "ToastNoRefs": "تمت إعادة التسمية"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "تثبيت وخرج",
@@ -1935,8 +2278,117 @@
     "PointFlashback": "تحفظ ميزة العودة للماضي آخر 10 ثوانٍ — فلا تفوّت أول عبارة مهمة.",
     "GotIt": "فهمت"
   },
-  "HelpPage": {
-    "Title": "تعرّف على المزيد عن SeaMeet"
+  "Wiki": {
+    "AIBadgeTooltip": "محتوى أنشأه الذكاء الاصطناعي",
+    "AIBadge": "أنشأه الذكاء الاصطناعي",
+    "Backlinks": "الروابط الخلفية",
+    "RelatedPages": "الصفحات ذات الصلة",
+    "BuiltFrom": "مبني من",
+    "SelectPage": "اختر صفحة",
+    "SelectPageHint": "اختر كياناً أو شخصاً أو موضوعاً من الشريط الجانبي لرؤية ما تعلمه الويكي.",
+    "LoadingPage": "الذكاء الاصطناعي يبني هذه الصفحة…",
+    "LoadFailed": "تعذر تحميل صفحة الويكي هذه.",
+    "AISection": "قسم الذكاء الاصطناعي",
+    "AIEmpty": "لا يوجد محتوى ذكاء اصطناعي بعد. أضف تسجيلاً أو لقطة شاشة إلى ملاحظة تذكر هذا الكيان، ثم شغّل تحديث الويكي.",
+    "SidebarTitle": "الويكي",
+    "EmptyTitle": "الويكي فارغ",
+    "EmptySubtitle": "سجّل اجتماعاً أو اكتب ملاحظة لتبدأ ببناء قاعدة معرفتك.",
+    "UserSection": "ملاحظاتك",
+    "UserSectionTitle": "ملاحظاتك",
+    "UserSectionPlaceholder": "أضف ملاحظاتك الخاصة…",
+    "RefreshFromSources": "تحديث من المصادر",
+    "RefreshFromSourcesTooltip": "تحديث قسم الذكاء الاصطناعي الآن من {{count}} ملاحظة (ملاحظات) مصدر",
+    "RefreshFromSourcesHint": "انقر لتحديث قسم الذكاء الاصطناعي من {{count}} ملاحظة مصدر. Shift+النقر يعيد قراءة الملاحظات المصدر أيضًا.",
+    "RefreshDisabledTooltip": "لا تحتوي صفحة الويكي هذه على ملاحظات مصدر بعد — أنشئها من ملاحظة أولاً.",
+    "RefreshAriaLabel": "تحديث صفحة الويكي من ملاحظات المصدر",
+    "RefreshError": "فشل التحديث",
+    "Bulk": {
+      "Build": "إنشاء الويكي",
+      "BuildFromAll": "إنشاء الويكي من جميع الملاحظات",
+      "BuildFromFolder": "إنشاء الويكي من مجلد…",
+      "BuildFromSelection": "إنشاء الويكي من التحديد…",
+      "ToastMessage": "تم اكتشاف {{count}} ملاحظة جديدة. إنشاء الويكي؟",
+      "BannerMessage": "{{count}} ملاحظة جديدة منذ آخر إنشاء",
+      "BuildingExtracting": "قراءة {{current}}/{{total}} ملاحظة",
+      "BuildingReducing": "إنشاء {{current}}/{{total}} صفحة",
+      "Building": "إنشاء الويكي — {{stage}}",
+      "PausedFor": "حد المعدل: {{seconds}} ثانية",
+      "Cancel": "إلغاء",
+      "Cancelling": "جارٍ الإلغاء — إكمال الملاحظة الحالية…",
+      "Pause": "إيقاف مؤقت",
+      "Continue": "متابعة",
+      "Paused": "متوقف مؤقتًا — {{current}}/{{total}}",
+      "Restart": "إعادة التشغيل",
+      "NowReading": "الآن يقرأ: {{item}}",
+      "NowBuilding": "الآن ينشئ: {{item}}",
+      "RecentList": "تمت معالجته مؤخرًا",
+      "DoneSummary": "تم إنشاء الويكي — {{notes}} ملاحظة، {{pages}} صفحة",
+      "Resume": "استئناف",
+      "ResumeAvailable": "تم إيقاف إنشاء ويكي سابق عند {{current}}/{{total}}. استئناف؟",
+      "PolishIndex": "تلميع الفهرس",
+      "PolishIndexHint": "إضافة مقدمة سردية إلى فهرس الويكي",
+      "BuildFromFolderPrompt": "مسار المجلد (نسبيًا إلى مساحة العمل):",
+      "BuildFromSelectionPrompt": "أسماء ملفات الملاحظات مفصولة بفواصل (نسبيًا إلى notes/):"
+    },
+    "Toolbar": {
+      "Overflow": "مزيد من إجراءات الويكي",
+      "BuildAllTooltip": "إنشاء الويكي من جميع الملاحظات (تدريجي — يحدث فقط الصفحات التي تغيرت ملاحظاتها المصدر).",
+      "BuildAllRunning": "يتم إنشاء الويكي من جميع الملاحظات — راجع الشريط أدناه.",
+      "BuildAllAria": "إنشاء الويكي من جميع الملاحظات"
+    }
+  },
+  "WikiFeature": {
+    "SettingsLabel": "التحديث التلقائي للويكي من الملاحظات",
+    "SettingsDesc": "يبني قاعدة معرفية للكيانات والأشخاص والموضوعات من ملاحظاتك وتسجيلاتك. إيقاف بشكل افتراضي."
+  },
+  "WikiQuickOpen": {
+    "Placeholder": "ابحث عن صفحات wiki بالاسم…",
+    "NoResults": "لا توجد صفحات wiki مطابقة"
+  },
+  "WikiTree": {
+    "Title": "ويكي",
+    "NewPage": "صفحة wiki جديدة",
+    "NewFolder": "مجلد جديد",
+    "NewFolderPlaceholder": "اسم المجلد…",
+    "SortBy": "فرز حسب",
+    "SortDefault": "افتراضي (ترتيب نظام الملفات)",
+    "SortName": "الاسم (أ → ي)",
+    "SortModified": "التعديل (الأحدث أولاً)",
+    "CollapseAll": "طي الكل",
+    "ExpandAll": "توسيع الكل",
+    "SearchInTree": "تصفية في الشجرة",
+    "FilterPlaceholder": "تصفية الصفحات…",
+    "DropToRoot": "أفلِت للنقل إلى جذر wiki",
+    "MoveToRoot": "نقل إلى جذر wiki",
+    "Open": "فتح",
+    "Rename": "إعادة تسمية",
+    "Delete": "حذف",
+    "CopyWikilink": "نسخ wikilink",
+    "CopyRelativePath": "نسخ المسار النسبي",
+    "CopyFullPath": "نسخ المسار الكامل",
+    "ConfirmDeleteFile": "نقل \"{{name}}\" إلى سلة المحذوفات؟ (قابل للاسترداد من Finder / Explorer.)",
+    "ConfirmDeleteFolder": "نقل المجلد \"{{name}}\" وكل محتوياته إلى سلة المحذوفات؟",
+    "Empty": "لا توجد صفحات wiki بعد. سيقوم خط الأنابيب بالكتابة هنا عند تسجيل الاجتماعات.",
+    "SetDefaultEntity": "تعيين كافتراضي لصفحات الكيانات الجديدة",
+    "SetDefaultPerson": "تعيين كافتراضي لصفحات الأشخاص الجديدة",
+    "SetDefaultTopic": "تعيين كافتراضي لصفحات الموضوعات الجديدة",
+    "SetDefaultMeeting": "تعيين كافتراضي لصفحات الاجتماعات الجديدة",
+    "DefaultLabel": "افتراضي لـ {{wikiKind}}",
+    "AIBadge": "تم إنشاؤه بواسطة الذكاء الاصطناعي",
+    "UserBadge": "حرره المستخدم",
+    "QuickOpen": "فتح سريع (⌘P)",
+    "ConflictBadge": "نسخة متضاربة",
+    "EmptyAiCurated": "يقوم الذكاء الاصطناعي بملء هذا المجلد عندما تذكر تسجيلاتك أو ملاحظاتك كياناً أو شخصاً أو موضوعاً أو اجتماعاً. افتح ملاحظة ثم انقر على \"مزامنة الويكي\" لإنشاء صفحات."
+  },
+  "Wikilink": {
+    "Broken": "[[{{name}}]] غير موجود في مساحة العمل هذه",
+    "Collision": "{{count}} ملاحظات تشترك في الاسم الأساسي {{name}}",
+    "DisambiguationTitle": "اختر الملاحظة التي تريد فتحها",
+    "DisambiguationOpenAt": "في {{folder}}",
+    "SuggestEmpty": "لا توجد ملاحظات أو صفحات wiki مطابقة",
+    "BrokenTooltipSyncWiki": "لم يتم إنشاء هذه الصفحة بعد — انقر على \"مزامنة الويكي\" في هذه الملاحظة لإنشائها.",
+    "SyncContextMenu": "مزامنة الويكي",
+    "SyncToGenerate": "زامن الويكي لإنشاء هذه الصفحة"
   },
   "WindowPicker": {
     "Instruction": "اختر نافذة لتسجيلها لالتقاط نوافذ الشاشة",
@@ -1947,6 +2399,15 @@
     "Title": "اختر نافذة",
     "Unknown": "نافذة بدون عنوان"
   },
+  "Workspace": {
+    "None": "لا توجد مساحة عمل",
+    "EmptyList": "لا توجد مساحات عمل مسجلة",
+    "Add": "إضافة مساحة عمل…",
+    "Remove": "إزالة من SeaMeet",
+    "RemoveTooltip": "إزالة من SeaMeet (تبقى الملفات على القرص)",
+    "ConfirmRemove": "هل تريد إزالة مساحة العمل \"{{name}}\"؟ لا يتم حذف الملفات على القرص؛ تتم إزالة إدخال SeaMeet فقط.",
+    "Default": "الافتراضي"
+  },
   "agent": {
     "fabLabel": "اسأل الذكاء الاصطناعي",
     "panelLabel": "مساعد الذكاء الاصطناعي",
@@ -1954,11 +2415,21 @@
     "maximize": "تكبير",
     "close": "إغلاق"
   },
+  "aiBase": {
+    "preparing": {
+      "title": "جاري تجهيز تسجيلك…"
+    },
+    "error": {
+      "title": "لم نتمكن من معالجة هذا التسجيل",
+      "body": "تحقق من مفتاح API الخاص بك أو حاول مرة أخرى."
+    },
+    "disabled": "ميزات الذكاء الاصطناعي متوقفة. قم بتمكينها في الإعدادات لرؤية الملخصات والإجراءات."
+  },
   "floatingPip": {
     "minimize": "تصغير",
     "maximize": "تكبير",
-    "close": "إغلاق",
     "restore": "استعادة",
+    "close": "إغلاق",
     "exit": "الخروج من وضع صورة في صورة"
   },
   "layout": {
@@ -1970,11 +2441,11 @@
       "classic": "التبديل إلى التخطيط الكلاسيكي",
       "floating": "التبديل إلى التخطيط العائم"
     },
+    "showPipTooltip": "إظهار صورة في صورة",
     "announce": {
       "classic": "تم التبديل إلى التخطيط الكلاسيكي",
       "floating": "تم التبديل إلى التخطيط العائم"
     },
-    "introToast": "جديد: التخطيط العائم متاح. انقر على أيقونة التخطيط في العنوان لتجربته.",
-    "showPipTooltip": "إظهار صورة في صورة"
+    "introToast": "جديد: التخطيط العائم متاح. انقر على أيقونة التخطيط في العنوان لتجربته."
   }
 }
