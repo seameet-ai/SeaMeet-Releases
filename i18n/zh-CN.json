@@ -4,27 +4,28 @@
   },
   "AIAgent": {
     "DisabledBadge": "已禁用",
-    "DisabledMsg": "AI Agent & Cowork 已禁用。在设置 → AI Agent & Cowork 中启用它。",
-    "DisabledTabHint": "AI Agent 已禁用 - 在设置 → AI Agent & Cowork 中启用它",
-    "EnableToggle": "启用人工智能代理和协同工作",
+    "DisabledMsg": "AI 助理与协作 已禁用。请至 设置 → AI 助理与协作 中启用。",
+    "DisabledTabHint": "AI 助理 已禁用 — 请至 设置 → AI 助理与协作 中启用",
+    "EnableToggle": "启用 AI 助理与协作",
     "EnableToggleDesc": "需要 Claude CLI 或 GitHub Copilot",
     "LinkCopied": "已复制！",
-    "MenuItem": "人工智能代理与协作",
-    "PageTitle": "人工智能代理与协作",
-    "SectionTitle": "人工智能代理与协作",
+    "MenuItem": "AI 助理与协作",
+    "PageTitle": "AI 助理与协作",
+    "SectionTitle": "AI 助理与协作",
     "SubscribeMsg": "AI 助手需要 BYOK Pro 订阅。订阅以获取实时转录、AI 会议摘要和交互式 AI 助手。",
     "SubscribeCTA": "订阅以解锁"
   },
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API 密钥",
     "ApiKeySection": "Gemini API 密钥",
-    "AutomationSection": "自动化",
     "AutoSummary": "自动生成摘要",
     "AutoSummaryDesc": "每次录制完成后运行",
+    "AutomationSection": "自动化",
     "ClaudeKey": {
+      "ApiKeyTitle": "API密钥",
       "ClearKey": "删除已保存的密钥",
-      "CliInstalled": "已安装 ({{version}})",
       "CliInstallLink": "安装 Claude Code →",
+      "CliInstalled": "已安装 ({{version}})",
       "CliNotFound": "未找到CLI",
       "CliNotInstalled": "未找到 Claude CLI — 请安装并登录以完成认证：",
       "CliSection": "Claude Code CLI",
@@ -33,7 +34,6 @@
       "HideKey": "隐藏键",
       "InstallMac": "macOS / Linux：",
       "InstallWin": "Windows（PowerShell）：",
-      "ApiKeyTitle": "API密钥",
       "KeyInvalid": "密钥无效",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "••••••••（已保存）",
@@ -60,6 +60,7 @@
       "SourceNone": "未配置",
       "TestKey": "保存并验证"
     },
+    "ClearKey": "删除已保存的密钥",
     "Copilot": {
       "Authenticated": "已认证",
       "DefaultModel": "默认模型",
@@ -71,21 +72,32 @@
       "Remove": "移除 Copilot 集成",
       "Section": "GitHub Copilot"
     },
-    "Provider": {
-      "Detected": "已检测到",
-      "Hint": "您也可以在聊天面板中按对话切换提供商。",
-      "NotAvailable": "不可用",
-      "Preferred": "首选",
-      "Section": "首选代理提供商"
-    },
-    "ClearKey": "删除已保存的密钥",
-    "EnableToggle": "启用人工智能驱动的摘要",
-    "EnableToggleDesc": "需要免费的 Gemini API 密钥",
     "DefaultModel": "默认模型",
-    "GeminiSection": "Gemini",
+    "EnableToggle": "启用 AI 智能摘要",
+    "EnableToggleDesc": "需要免费的 Gemini API 密钥",
+    "Gemini": {
+      "Configured": "API 密钥已配置",
+      "DefaultModel": "默认模型",
+      "Description": "使用 Gemini 模型与你的会议对话。与 Gemini 摘要和实时转写共用同一密钥。",
+      "GetKeyLink": "从 Google AI Studio 获取免费 API 密钥 →",
+      "NotConfigured": "未配置 API 密钥",
+      "Refresh": "重新检测 Gemini",
+      "Remove": "移除 Gemini 密钥",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "从 Google AI Studio 获取免费的 API 密钥 →",
-    "GroupTitle": "人工智能特点",
+    "GroupTitle": "AI 功能",
     "HideKey": "隐藏键",
+    "Job": {
+      "AskQuestions": "询问过往会议",
+      "BuildWikis": "从笔记和会议构建 Wiki",
+      "Record": "录制会议",
+      "RecordSub": "本地 · 始终可用",
+      "SearchScreenshots": "搜索截图内容",
+      "Summarize": "摘要会议",
+      "Transcribe": "转录会议",
+      "WriteNote": "撰写笔记"
+    },
     "KeyInvalid": "密钥无效",
     "KeyManagedInBilling": "API 密钥在「管理订阅 → API 密钥」中管理",
     "KeyNotConfigured": "没有配置密钥",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "••••••••（已保存）",
     "KeyTesting": "测试...",
     "KeyVerified": "密钥已验证",
-    "ManagedKeyDesc": "您的 API 密钥会自动配置。无需配置。",
-    "ManagedKeyStatus": "托管密钥 — 由 SeaMeet 提供",
-    "MenuItem": "人工智能驱动的摘要",
+    "MenuItem": "AI 转写、提取、摘要、Wiki",
     "ModelLabel": "Gemini 模型",
+    "ModelSection": "人工智能模型",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "Gemini 3 Pro",
       "Gemini3ProSub": "最大能力"
     },
-    "ModelSection": "人工智能模型",
-    "PageTitle": "人工智能特点",
-    "QuotaLoading": "加载配额...",
-    "QuotaRefresh": "刷新配额",
-    "QuotaRemaining": "剩余 {{remaining}} / {{limit}} 令牌",
-    "QuotaResetDate": "在 {{date}} 上重置",
-    "QuotaSection": "使用配额",
+    "OpenAI": {
+      "Configured": "API 密钥已配置",
+      "DefaultModel": "默认模型",
+      "Description": "使用 GPT 模型与你的会议对话。与 OpenAI 摘要和实时转写共用同一密钥。",
+      "GetKeyLink": "从 OpenAI Platform 获取 API 密钥 →",
+      "NotConfigured": "未配置 API 密钥",
+      "Refresh": "重新检测 OpenAI",
+      "Remove": "移除 OpenAI 密钥",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "AI 转写、提取、摘要、Wiki",
+    "PostMeetingSummaryLanguage": "会后摘要语言",
+    "PostMeetingSummaryLanguageDesc": "应用于会后转写 + 摘要(批处理)。实时字幕使用上方的\"口语语言\"选择器。",
+    "PreUploadAudio": "预先上传音频以获得即时深度摘要",
+    "PreUploadAudioDesc": "录制期间将音频流式传输到 Gemini，使深度模式摘要在几秒内返回，而不是约 30 秒。需要 Gemini API 密钥。录制时会占用上传带宽。",
+    "Provider": {
+      "Detected": "已检测到",
+      "Hint": "您也可以在聊天面板中按对话切换提供商。",
+      "NotAvailable": "不可用",
+      "Preferred": "首选",
+      "Section": "首选代理提供商"
+    },
+    "RemoveKey": "移除",
+    "SaveKey": "保存密钥",
     "Saving": "保存...",
     "SelectedModel": "已选择：{{model}}",
     "ShowAllModels": "显示全部 {{count}} 个模型",
     "ShowFewerModels": "收起模型列表",
     "ShowKey": "显示密钥",
-    "TestKey": "保存并验证",
     "SummaryLanguage": "摘要输出语言",
-    "SummaryLanguageDesc": "适用于转录、摘要和章节。自动检测会匹配说话时使用的语言。"
+    "SummaryLanguageAutoDetect": "自动检测（可能混合字体）",
+    "SummaryLanguageDesc": "适用于转录、摘要和章节。自动检测会匹配说话时使用的语言。",
+    "TestKey": "保存并验证",
+    "SummaryConfigSection": "摘要配置",
+    "ImageExtractionSection": "图像提取",
+    "UseMainLlmForOcrHint": "将截图 OCR 路由到您选择的 LLM 服务商。关闭（默认）：始终使用 Gemini。如果服务商无法接受图像，会自动回退到 Gemini。"
+  },
+  "AISummaryQuality": {
+    "Heading": "AI 摘要质量",
+    "MasterToggleLabel": "已配置 Gemini 密钥时使用深度分析",
+    "MasterToggleHelp": "Gemini 直接读取音频和视频，生成更准确的说话者名称、更精确的引用以及更丰富的摘要。快速（基于转录的）摘要仍是默认；深度分析会在后台自动运行，完成后替换快速摘要。",
+    "AdvancedSection": "高级",
+    "PreUploadLabel": "录制期间在后台预先上传音视频",
+    "PreUploadHelp": "录制时将文件流式传至 Gemini，停止后深度分析可在数秒内完成。",
+    "TokenEstimateHeading": "每次深度分析的预估 Gemini Token 使用量",
+    "TokenEstimateInput": "输入",
+    "TokenEstimateOutput": "输出",
+    "TokenEstimate10MinAudio": "10 分钟音频",
+    "TokenEstimate10MinVideo": "10 分钟视频",
+    "TokenEstimate1HrAudio": "1 小时音频",
+    "TokenEstimate1HrVideo": "1 小时视频",
+    "TokenEstimateNote": "Token 速率：音频约 32 tok/s，视频约 263 tok/s（1 fps 帧 + 音轨）。输出预算单次调用上限为 32K，分块摘要调用上限为 16K。免费方案有每日配额限制（例如 Flash-Lite Latest 为 500 RPD）。",
+    "DisabledStateBanner": "多模态深度分析需要 Gemini API 密钥。没有密钥时只能使用基于转录的快速摘要，由您选择的 LLM 服务生成。",
+    "DisabledStateAddKey": "添加 Gemini API 密钥 →"
   },
   "AISummary": {
     "ApplyMerge": "应用",
@@ -133,6 +183,33 @@
     "Copy": "复制",
     "EditSegmentSpeaker": "单击以重新分配此段",
     "EnableRequired": "在“设置”→“AI 功能”中启用 AI 功能即可查看 AI 摘要。",
+    "ReRunDeep": "重新运行深度分析（会消耗额外的 Gemini Token）",
+    "ReRunSummary": "重新生成摘要",
+    "DeepProgress": {
+      "Title": "深度分析运行中",
+      "Cancel": "取消",
+      "Stage": {
+        "preparing": "准备中",
+        "uploading": "上传文件",
+        "uploading-wait": "Gemini 处理中",
+        "analyzing": "分析中",
+        "extracting": "提取中",
+        "saving": "保存中",
+        "complete": "完成"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ 深度摘要已就绪",
+      "Badge": "深度 · Gemini 已分析此录音"
+    },
+    "DeepFailed": {
+      "Toast": "深度分析失败：{{reason}}"
+    },
+    "HeroBand": {
+      "Title": "使用深度分析",
+      "Desc": "Gemini 分析音频和视频，生成更准确的说话者名称、逐字引用和更丰富的摘要。",
+      "Run": "运行深度分析"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "API 密钥无效。请在“设置”中检查您的 API 密钥。",
       "NO_API_KEY": "未配置 Gemini API 密钥。请在设置中添加您的 API 密钥。",
@@ -178,6 +255,8 @@
     "Retry": "重试",
     "SeekToTimestamp": "寻找这个时间戳",
     "ConfigureApiKey": "配置您的 Gemini API 密钥以生成 AI 摘要和转录。",
+    "ConfigureProviders": "请在“设置”中启用实时转录并配置 LLM 服务以生成 AI 摘要。",
+    "OpenSettings": "打开设置",
     "ConfigureKey": "配置 API 密钥",
     "SetupRequired": "在“设置”→“AI 功能”中配置您的 Gemini API 密钥以启用 AI 摘要。",
     "Tab": {
@@ -193,7 +272,7 @@
     "Speakers": "演讲者",
     "VersionPicker": "浏览版本历史",
     "ViewingLive": "查看实时成绩单",
-    "ViewingVersion": "查看 {{total}} 的 v{{n}}",
+    "ViewingVersion": "正在查看 v{{n}}（共 {{total}} 版）",
     "ViewLatest": "查看最新 →",
     "RenameSuggestion": "AI 建议",
     "NewFileName": "新文件名",
@@ -355,7 +434,8 @@
       "Running": "运行中 {{count}} 个",
       "Completed": "已完成 {{count}} 个",
       "Actions": "{{count}} 个操作"
-    }
+    },
+    "SwitchModel": "切换模型"
   },
   "AgentSection": {
     "ConfigureApiKey": "配置您的 API 密钥以使用 AI 代理。"
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "SeaMeet AI 如何运作",
       "Subtitle": "BYOK — 自带密钥",
-      "WhatIsBYOK": "使用 BYOK，您的录音和数据直接从设备发送到 Google 或 Anthropic。不经过 SeaMeet 服务器 — 为您和团队提供最大隐私保护。",
-      "WhatYouNeed": "订阅后需要设置的内容",
-      "GeminiTitle": "Google AI Studio 密钥（有限免费）",
-      "GeminiDesc": "支持实时转录、会后摘要和分析。Google 提供慷慨的免费额度 — 大多数用户无需花一分钱。",
-      "AgentTitle": "AI 助手 — 选择一个选项（有限免费）",
-      "AgentOption1": "GitHub Copilot — 每月 50 次免费高级对话（Copilot Pro 可获更多）",
-      "AgentOption2": "Claude Code CLI — 如果您已有 Claude Pro 或 Max，即可使用",
-      "AgentOption3": "Anthropic API 密钥 — 用于直接 API 访问",
-      "Continue": "继续订阅",
-      "WhyBYOK": {
-        "Title": "为什么要自带密钥？",
-        "Answer": "更好的隐私保护 — 您的数据保存在 Google 和 Anthropic 等可信企业中，不会保存在 SeaMeet。这些提供商的免费额度慷慨，对大多数用户来说可以使用很长时间。"
-      },
-      "WhyMonthly": {
-        "Title": "为什么 SeaMeet 按月收费？",
-        "Answer": "SeaMeet 不断更新新的 AI 功能。订阅让您始终使用最新版本。否则，您购买一次性许可后就只能使用固定功能 — 就像买了 Office 2012 然后永远停留在 Office 2012 一样。"
-      }
+      "Continue": "继续订阅"
     },
     "Coupon": {
       "Title": "上线推广",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub Copilot",
       "Authenticated": "已认证",
       "CopilotUsage": "设为首选 Agent 提供方？",
-      "CopilotFreeWarning": "GitHub Copilot 免费版每月仅包含 50 次 Agent/聊天请求。适合快速测试，但可能很快达到上限。升级到 Copilot Pro 可获得更高限额，或使用 SeaMeet Desktop Pro 享受无限 AI 访问。",
+      "CopilotFreeWarning": "GitHub Copilot Free 每月仅包含 50 次代理/聊天请求。适合快速测试,但可能很快达到上限。升级到 Copilot Pro 可获得更高上限,或使用其他提供商(Claude 或 Gemini)以获得更多余量。",
       "KeepClaude": "保持 Claude 为默认",
       "UseCopilot": "使用 GitHub Copilot 为默认",
       "CopilotLabel": "GitHub Copilot",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "未检测到",
       "CopilotSignupHint": "想尝试 GitHub Copilot 作为替代 Agent？在 github.com/features/copilot/plans 注册免费计划（每月包含 50 次 Agent/聊天请求），然后安装 Copilot CLI 并运行 \"copilot login\"。",
       "CopilotFlatUsage": "用途：AI Agent（Claude 的替代方案）。无需 API 密钥 — 使用您的 GitHub 登录。",
-      "Guide": {
-        "Intro": "SeaMeet AI 有两个独立的功能区域 — 根据需要进行设置。",
-        "SectionAiSummary": "AI 摘要",
-        "SectionAiSummaryBadge": "必需",
-        "SectionAiSummarySubtitle": "获取 Gemini API 密钥（免费）",
-        "SectionAiAgent": "AI 代理",
-        "SectionAiAgentBadge": "至少需要一个",
-        "OptionCopilotTitle": "GitHub Copilot CLI（免费）",
-        "OptionClaudeTitle": "Claude Code CLI（可选，付费）",
-        "Or": "或",
-        "Step1Title": "步骤 1 — 请仔细阅读",
-        "Step1Need": "您需要准备 2 样东西：",
-        "Step1Item1": "Gemini API 密钥 — 用于 AI 摘要和实时转录",
-        "Step1Item2": "GitHub Copilot CLI 或 Claude Code CLI — 用于 AI 代理",
-        "Step2Title": "步骤 2 —（免费）获取 Gemini API 密钥",
-        "Step2Desc1": "点击 ",
-        "Step2GetKey": "获取 API 密钥",
-        "Step2Desc2": " 以创建免费的 Gemini API 密钥。更多信息请参阅 ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "步骤 3 —（免费）获取 GitHub Copilot CLI",
-        "Step3Install": "点击 ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " 或快速安装：",
-        "Step3Login": "运行：",
-        "Step3LoginDesc": "（免费，每月 50 次对话）",
-        "Step3Refresh": "点击下方的刷新以检测 Copilot。",
-        "Step3Select": "点击下方的 GitHub Copilot 以设为首选。",
-        "Step4Title": "步骤 4 —（可选，付费）获取 Claude Code CLI",
-        "Step4Already": "如果您之前已安装过 Claude Code，很可能已经有了。",
-        "Step4Install": "点击 ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " 或快速安装：",
-        "Step4Mac": "macOS / Linux：",
-        "Step4Win": "Windows：",
-        "Step4WinReq": "需要 ",
-        "Step4GitWin": "Windows 版 Git",
-        "Step4Auth": "运行：",
-        "Step4AuthDesc": "（需要 Claude Pro 或 Max 计划）",
-        "Step4Refresh": "点击下方的刷新以检测 Claude Code。",
-        "Step4Select": "点击下方的 Claude Code 以设为首选。",
-        "StepComplete": {
-          "AgentBoth": "Claude 和 Copilot 已配置",
-          "AgentClaude": "Claude 已配置",
-          "AgentCopilot": "Copilot 已配置",
-          "Summary": "设置完成"
+      "Acronym": "BYOK（Bring Your Own Key — 使用自有密钥）",
+      "Explanation": "BYOK 意味着您连接自己的 AI 提供商密钥；您的数据直接发送至您信任的提供商，不经过 SeaMeet。",
+      "Welcome": {
+        "Title": "欢迎使用 BYOK Pro（Bring Your Own Key）",
+        "Subtitle": "$4.99/月 · 您的数据，您的提供商",
+        "PickOne": "连接一个密钥即可完成。",
+        "OneKeyTitle": "一个密钥,覆盖所有任务",
+        "OneKeyBadge": "推荐",
+        "MixTitle": "混搭使用",
+        "MixSubtitle": "面向高级用户",
+        "OneKeyDoList": "您可以完成:",
+        "MixSupportList": "为每项任务选择不同的服务。我们支持:",
+        "MixSttHeading": "转录 (STT):",
+        "MixLlmHeading": "摘要 / 笔记 / Wiki (LLM):",
+        "MixAgentHeading": "AI 智能助手 (LLM + 工具):",
+        "MixCliHeading": "本地 CLI（无需密钥）:",
+        "PickOneRadio": "选择一个:",
+        "GeminiDesc": "来自 Google AI Studio 的慷慨免费额度;之后可升级以获得更高质量和配额。",
+        "OpenAIDesc": "使用您自己的付费密钥。ChatGPT 品质。",
+        "GetFreeKey": "获取免费密钥 →",
+        "PasteHere": "在此粘贴",
+        "OpenAdvanced": "打开高级选项 →",
+        "PowerUserTitle": "已经是高级用户?",
+        "PowerUserDesc": "如果您已安装 Claude Code、GitHub Copilot、Codex CLI 或 Gemini CLI,可以将它们用于 AI 智能助手 — 无需额外的 API 密钥。我们将在下一步检测。",
+        "WhyTwoProviders": "为什么是 Gemini 或 OpenAI?它们是唯一能用单个密钥同时处理转录和摘要的服务。其他服务都需要配对的第二个密钥。",
+        "SetupLater": "稍后设置 — 先带我看看应用"
+      },
+      "Receipt": {
+        "Heading": "已连接 {{provider}}。",
+        "YouCanNow": "您现在可以:",
+        "Job1": "录制会议",
+        "Job2": "转录会议",
+        "Job3": "附带关键决策、行动项、章节的摘要",
+        "Job4": "撰写结构化笔记",
+        "Job5": "构建 Wiki",
+        "Job6": "询问过往会议的问题",
+        "Job7": "搜索截图内容",
+        "CTAStart": "开始录制 →",
+        "CTAScreenshot": "截取屏幕 →",
+        "CTAWriteNote": "撰写笔记 →",
+        "CustomizeCTA": "为每项任务自定义提供商 →",
+        "CLIDetected": "已检测到:{{cli}} — 用于 AI 智能助手?",
+        "UseDetectedCLI": "使用",
+        "KeepDefault": "保持默认"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "$4.99/月可获得的内容",
+        "HeadlinePostSubscribe": "您的 BYOK Pro 订阅包含",
+        "HeadlineSettings": "您为什么使用 BYOK Pro",
+        "PrivacyTitle": "隐私",
+        "PrivacyDesc": "您的数据直接从设备发送到 Google / Anthropic / OpenAI 等。SeaMeet 服务器永远不会看到您的录音、转录或摘要。",
+        "QualityTitle": "质量",
+        "QualityDesc": "为每项任务选择最佳模型。Gemini Live 用于转录,Claude 用于写作,Deepgram 用于发言人分离。",
+        "CostTitle": "成本控制",
+        "CostDesc": "直接向提供商付费。大多数用户停留在 Gemini 的慷慨免费额度内,无需为 AI 支付分文。",
+        "SovereigntyTitle": "主权",
+        "SovereigntyDesc": "密钥存于您的操作系统钥匙串中。可随时撤销。SeaMeet 不收集您 AI 调用的任何使用数据。"
+      },
+      "Manage": {
+        "Title": "您的 AI 服务商密钥",
+        "Subtitle": "粘贴密钥以切换服务商，或打开高级设置进行按任务的精细调整。"
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "每月 $4.99 你能得到什么",
+          "Bullet1": "一个密钥（Gemini 或 OpenAI）即可启用每一项 AI 功能。",
+          "Bullet2": "录制 · 转写 · 摘要 · 做笔记 · 构建 Wiki · 询问过往会议 · 在截图中搜索。",
+          "Bullet3": "或按任务混搭服务商 — Deepgram 做转写、Claude 做摘要、你最爱的 CLI 做 agent。"
+        },
+        "NewFAQ": {
+          "Q1": "如果我已经有 Claude Pro 或 GitHub Copilot 怎么办？",
+          "A1": "可以直接用它们来跑 AI agent — 不需要额外的 API 密钥。我们会自动检测系统中的 Claude Code、GitHub Copilot、Codex CLI 和 Gemini CLI。",
+          "Q2": "我可以用哪些服务商？",
+          "A2": "AI 可以用 Gemini、OpenAI、Anthropic Claude、DeepSeek、OpenRouter 和 Amazon Bedrock。转写可以用 Deepgram 和 Soniox。再加上上面提到的四种 CLI。",
+          "Q3": "我的数据真的不会被 SeaMeet 触及吗？",
+          "A3": "是的。你的录音、转写和摘要直接从设备发送到你选择的服务商，SeaMeet 服务器从不接触。我们只看到订阅状态和你配置的服务商（不是密钥，也不是内容）。",
+          "Q4": "如果我自带密钥，为什么还要付 $4.99？",
+          "A4": "订阅是为 SeaMeet 的应用开发付费 — 多服务商路由、实时转写、Wiki 生成、带工具调用的 AI agent、截图 OCR、以及持续的平台支持。你的 AI 成本是独立的，直接付给服务商（在 Gemini 免费额度内通常不花钱）。"
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "什么是 BYOK？",
-        "A1": "BYOK 是 Bring Your Own Key（自带密钥）的缩写。您需要 2 个 API 密钥：一个来自 Google AI Studio（用于转录和摘要），一个来自 GitHub Copilot 或 Claude Code（用于 AI 助手）。引导式设置向导会在结账后帮助您连接两个密钥。Google AI Studio 通常提供免费密钥。GitHub Copilot 也提供免费计划。因此，您可以使用自己的密钥进行有限免费使用。如果您已订阅 Claude Pro 或 Max，则无需额外的 Anthropic API 密钥。",
+        "A1": "BYOK 是 Bring Your Own Key（自带密钥）的缩写。您只需 1 个 API 密钥——来自 Google AI Studio（Gemini）或 OpenAI——即可驱动会议转录、摘要以及 AI 对话助手。Google AI Studio 通常提供免费密钥，让您无需额外成本即可快速上手。高级用户还可以连接自己的 CLI 工具（Claude Code、GitHub Copilot 等）来使用 AI 对话功能。结帐后，引导式设置向导将带您完成所有配置。",
         "Q2": "为什么需要按月订阅？",
-        "A2": "您的订阅费用于持续更新、新 AI 模型支持、错误修复和新功能开发。API 费用通过您自己的密钥分别支付给 Google 和 Anthropic。",
-        "Q3": "许可证如何运作？",
-        "A3": "1 个账户，最多 3 台设备。不活跃设备在 30 天后自动释放。您也可以手动退出设备以释放名额。"
-      },
-      "Desktop": {
-        "Q1": "什么是 Desktop Pro？",
-        "A1": "Desktop Pro 内置由 SeaMeet 管理的 AI 密钥 — 无需自行创建或管理 API 密钥。只需订阅即可立即使用 AI 功能。",
-        "Q2": "与 BYOK 有什么不同？",
-        "A2": "Desktop Pro 由 SeaMeet 为您提供和管理 API 密钥。您无需分别注册 Google AI Studio 或 Anthropic。",
+        "A2": "您的订阅费用用于持续更新、新 AI 模型支持、错误修复和新功能开发。API 费用通过您自己的密钥直接支付给 Google、OpenAI 或其他受支持的提供商。",
         "Q3": "许可证如何运作？",
         "A3": "1 个账户，最多 3 台设备。不活跃设备在 30 天后自动释放。您也可以手动退出设备以释放名额。"
       },
       "Sync": {
         "Q1": "什么是 Sync Pro？",
-        "A1": "Sync Pro 包含 Desktop Pro 的所有功能，外加云同步。您的录音、转录和摘要将在所有设备间同步。",
+        "A1": "Sync Pro 是一个未来层级,具备内置 AI(无需管理 API 密钥)、跨设备云同步和团队协作功能。专为希望使用 SeaMeet 的 AI 功能但不想自带密钥的用户设计。尚未推出 — 如果您感兴趣,请点击套餐卡片上的\"申请此项\"给我们发邮件,以便我们安排优先级。",
         "Q2": "哪些内容会被同步？",
         "A2": "录音、转录、AI 摘要和行动事项均会在所有设备间同步。在一台设备上的更改会自动出现在其他设备上。",
         "Q3": "许可证如何运作？",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/月",
+        "Price": "$4.99/月",
         "Feature1": "AI 转录与摘要",
         "Feature2": "使用您自己的 Gemini 与 Claude API 密钥",
         "Feature3": "会议中的实时转录",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "GitHub Copilot 也提供免费方案。",
         "InfoNoteClaude": "如果您已订阅 Claude Pro 或 Max 套餐,则不需要额外的 Anthropic API 密钥。"
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "$15.99/月",
-        "Feature1": "包含 BYOK Pro 的全部功能",
-        "Feature2": "内置 AI——无需 API 密钥",
-        "Feature3": "优先支持",
-        "Feature4": "高级分析"
-      },
       "Free": {
         "Name": "免费",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25.99/月",
-        "Feature1": "包含 Desktop Pro 的全部功能",
+        "Feature1": "内置 AI — 无需 API 密钥",
         "Feature2": "跨设备云同步",
         "Feature3": "团队协作功能",
-        "Feature4": "共享会议库"
+        "Feature4": "共享会议库",
+        "RequestCTA": "申请此项",
+        "RequestSubject": "我想要 SeaMeet 的 Sync Pro",
+        "RequestBody": "您好 SeaMeet 团队 — 我对 Sync Pro 感兴趣(内置 AI 无需管理 API 密钥、云同步、多设备、团队协作)。请在可用时告知我。\n\n谢谢!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "如果您使用 Claude App/Code：除非您选择退出，否则 Anthropic 可能会使用您的数据进行训练",
         "Agent3": "如果您使用 Anthropic API：Anthropic 不会使用您的数据进行训练"
       },
-      "Desktop": {
-        "Recording1": "保存在您的电脑上",
-        "Recording2": "同步到 SeaMeet.ai 的 Google Cloud 账户进行处理",
-        "Recording3": "Google 会在 48 小时后删除文件",
-        "AIData1": "由 Gemini API 生成",
-        "AIData2": "Google 不会使用您的数据进行训练",
-        "AIData3": "SeaMeet.ai 不会使用您的数据进行训练",
-        "Agent1": "由 Anthropic API 生成",
-        "Agent2": "Anthropic 不会使用您的数据进行训练",
-        "Agent3": "SeaMeet.ai 不会使用您的数据进行训练"
-      },
       "Sync": {
         "Recording1": "保存在您的电脑上",
-        "Recording2": "同步到 SeaMeet.ai 云端",
+        "Recording2": "同步至 SeaMeet.ai 云端,采用静态加密",
         "Recording3": "从 SeaMeet.ai 云端下载到其他桌面设备并保持同步",
-        "AIData1": "与 Desktop Pro 相同",
-        "Agent1": "与 Desktop Pro 相同"
+        "AIData1": "由 Gemini API 通过 SeaMeet 管理的密钥生成;Google 不会使用您的数据进行训练",
+        "Agent1": "由 Anthropic API 通过 SeaMeet 管理的密钥生成;Anthropic 不会使用您的数据进行训练"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "高级用户：了解什么是 BYOK",
         "Item2": "技术达人：拥有所需的 API 密钥",
         "Item3": "注重隐私：自己掌控数据访问权限"
-      },
-      "Desktop": {
-        "Item1": "普通用户：轻松设置",
-        "Item2": "注重隐私：音频/图片/录音数据保存在您的电脑上"
       },
       "Sync": {
         "Item1": "大多数用户：轻松设置",
@@ -1272,11 +1340,27 @@
       "TurnCoverageHint": "2.5 默认:仅说话时。3.1 默认:每一视频帧(即使静音也能读取名牌)。",
       "SendVideo": "发送视频帧",
       "VideoFps": "帧率",
+      "VideoFpsOption_0_2": "0.2 fps(每 5 秒 1 帧)",
+      "VideoFpsOption_0_5": "0.5 fps(每 2 秒 1 帧,默认)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
       "VideoQuality": "帧 JPEG 质量",
+      "VideoQualityOption_0_3": "0.3(最小,模糊)",
+      "VideoQualityOption_0_5": "0.5(节省带宽)",
+      "VideoQualityOption_0_7": "0.7(平衡)",
+      "VideoQualityOption_0_85": "0.85(默认 — 适合屏幕上的名称)",
+      "VideoQualityOption_0_95": "0.95(最高)",
       "VideoMaxWidth": "帧最大宽度",
+      "VideoMaxWidthOption_480": "480 px(最小)",
+      "VideoMaxWidthOption_640": "640 px(节省带宽)",
+      "VideoMaxWidthOption_960": "960 px(默认 — 适合屏幕上的名称)",
+      "VideoMaxWidthOption_1280": "1280 px(较大)",
+      "VideoMaxWidthOption_1920": "1920 px(原生 1080p)",
       "VideoQualityHint": "当 Gemini 误读小型分格标签(例如 Zoom / Meet / Teams 参与者名称)时,提高质量和最大宽度。较高的值会增加图像 Token 用量 — 1280 px 通常会使每帧从 258 Token 提升到 1290 Token。",
       "DisableAutoVad": "关闭自动 VAD(服务器端回合检测)",
       "EndSensitivity": "语音结束灵敏度",
+      "EndSensitivityHigh": "HIGH(快速刷新)",
+      "EndSensitivityLow": "LOW(较长轮次)",
       "Default": "默认(高 — 快速刷新)",
       "SilenceMs": "回合结束前的静音时长",
       "VadHint": "较短静音 + 高灵敏度 → 更短、更频繁的转录刷新。",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "隐藏笔记侧栏",
     "ExpandSidebar": "显示笔记侧栏"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ 提示：停止录制后，深度分析会自动运行，为您提供更准确的说话者名称与音视频引用。"
+  },
   "OCRAutoCopy": {
     "Copied": "提取的文字已复制到剪贴板",
     "Error": "文字提取失败",
@@ -1653,13 +1740,17 @@
     "Running": "正在生成摘要...",
     "Step": {
       "Preparing": "准备录音",
+      "PreparingFast": "准备逐字稿",
       "Uploading": "上传文件",
       "UploadingWait": "在服务器上处理",
       "Analyzing": "分析中",
       "Extracting": "提取结果",
       "Saving": "保存工件",
       "PreparingImage": "准备图像",
-      "AnalyzingImage": "分析图像"
+      "AnalyzingImage": "分析图像",
+      "ExtractingAudio": "正在提取音频",
+      "Transcribing": "正在转写",
+      "TranscribingWith": "正在使用 {{provider}} 转写"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "会后AI",
     "PostMeetingAIDesc": "录制完成后将生成摘要、待办事项和见解。",
     "UnlockPremium": "解锁 Premium",
-    "Upgrade": "升级"
+    "Upgrade": "升级",
+    "NoteSynthesis": "AI 综述",
+    "NoteSynthesisDesc": "使用 BYOK Pro 获取此笔记 + 关联录音的结构化摘要。",
+    "WikiList": "维基",
+    "WikiListDesc": "使用 BYOK Pro 从您的笔记和会议自动构建知识库。",
+    "ScreenshotAI": "截图 AI",
+    "ScreenshotAIDesc": "使用 BYOK Pro 描述图像、提取文本并提出后续问题。",
+    "LockedChipTooltip": "订阅以启用",
+    "AgentReadOnlyBanner": "订阅以继续对话",
+    "GenericUpgradeCta": "订阅"
   },
   "QuickOpen": {
     "Placeholder": "开始输入或从剪贴板粘贴… 使用 [[ 链接到另一篇笔记",
@@ -1883,7 +1983,9 @@
       "Description": "描述",
       "OCR": "文字 (OCR)"
     },
-    "UnknownError": "未知错误"
+    "UnknownError": "未知错误",
+    "FallbackUsed": "{{from}} 无法处理图片 — 由 Gemini 接手处理。",
+    "FallbackHint": "如果此提供商不支持视觉，请在设置中关闭“截图 OCR 使用主 LLM”。"
   },
   "ScreenshotView": {
     "RecentLabel": "最近截图"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "从选定项构建维基…",
       "ToastMessage": "检测到 {{count}} 条新笔记。构建维基?",
       "BannerMessage": "上次构建以来有 {{count}} 条新笔记",
-      "BuildingExtracting": "正在读取 {{current}}/{{total}} 条笔记",
-      "BuildingReducing": "正在构建 {{current}}/{{total}} 个页面",
+      "BuildingExtracting": "已读取 {{current}}/{{total}} 条笔记",
+      "BuildingReducing": "已构建 {{built}}/{{total}} 个页面",
       "Building": "正在构建维基 — {{stage}}",
       "PausedFor": "速率限制：{{seconds}} 秒",
       "Cancel": "取消",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "润色索引",
       "PolishIndexHint": "为维基索引添加叙事性简介",
       "BuildFromFolderPrompt": "文件夹路径（相对于工作区）：",
-      "BuildFromSelectionPrompt": "逗号分隔的笔记文件名（相对于 notes/）："
+      "BuildFromSelectionPrompt": "逗号分隔的笔记文件名（相对于 notes/）：",
+      "BuildingExtractingWithCache": "已读取 {{current}}/{{total}} 条笔记 · {{skipCount}} 条来自缓存",
+      "BuildingReducingWithFailures": "已构建 {{built}}/{{total}} 个页面 · {{failed}} 失败"
     },
     "Toolbar": {
       "Overflow": "更多维基操作",
@@ -2452,5 +2556,284 @@
     },
     "introToast": "新增：提供浮动布局。点击标题栏的布局图标尝试使用。",
     "showPipTooltip": "显示画中画"
+  },
+  "settings": {
+    "stt": {
+      "title": "语音转文字服务商（实时字幕、文件转写）",
+      "apiKey": "API 密钥",
+      "getKey": "获取密钥",
+      "signup": "获取 API 密钥",
+      "tutorial": "设置教程",
+      "keyDescription": "您的 API 密钥已加密,仅保存在本设备上。",
+      "test": "测试连接",
+      "testing": "测试中…",
+      "testOk": "已连接",
+      "testFail": "连接失败",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "使用 Google 账号即可享受免费额度。适合日常使用。"
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "英文识别最准、延迟最低。注册即送 $200 免费额度。"
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "多语言识别最准。仅提供付费方案 — 需要信用卡。"
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime 用于实时转写,Whisper / gpt-4o-transcribe 用于文件转写。"
+        }
+      },
+      "language": {
+        "label": "口语语言",
+        "sublabel": "实时转写的语言提示。自动检测在大多数情况下都有效。",
+        "sonioxSublabel": "实时转写的语言提示。多语种切换的会议可添加多个。",
+        "addLanguage": "添加语言",
+        "remove": "移除语言",
+        "geminiSublabel": "Gemini 会从音频中自动检测语言(不使用此提示)。",
+        "auto": "自动检测",
+        "en": "英语",
+        "zh-CN": "中文（简体）",
+        "zh-TW": "中文（繁體）",
+        "es": "西班牙语",
+        "ja": "日语",
+        "ko": "韩语",
+        "fr": "法语",
+        "de": "德语",
+        "pt": "葡萄牙语",
+        "ru": "俄语",
+        "it": "意大利语",
+        "nl": "荷兰语",
+        "ar": "阿拉伯语",
+        "vi": "越南语",
+        "id": "印尼语",
+        "th": "泰语",
+        "tr": "土耳其语",
+        "pl": "波兰语",
+        "uk": "乌克兰语",
+        "hi": "印地语",
+        "fil": "菲律宾语",
+        "ms": "马来语",
+        "openaiSublabel": "首选语言会作为 API 提示发送;其它语言会附加到领域提示中(在支持的模型上)。gpt-4o-transcribe-diarize 只使用第一个语言。"
+      },
+      "speakerLabel": "说话者 {{n}}",
+      "advanced": {
+        "title": "高级设置",
+        "reset": "恢复默认值",
+        "deepgram": {
+          "model": "模型",
+          "modelDefault": "默认 (nova-3)",
+          "modelHint": "nova-3 最适合英语。nova-3-general 支持更多语言。",
+          "diarize": "说话者分离",
+          "diarizeHint": "检测到多个声音时输出说话者标签 (S0、S1、…)。",
+          "smartFormat": "智能格式化",
+          "smartFormatHint": "添加标点、首字母大写,并格式化数字 / 日期。",
+          "punctuate": "标点符号",
+          "punctuateHint": "根据语速节奏插入句号和逗号。",
+          "keyterm": "词汇增强",
+          "keytermHint": "每行一个词。要加权的领域专用词汇。",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "严格语言匹配",
+          "strictLanguageHint": "拒绝其他语言的音频(更快但灵活性较低)。",
+          "diarize": "说话者分离",
+          "diarizeHint": "检测到多个声音时输出说话者标签。",
+          "languageId": "语言识别",
+          "languageIdHint": "为每个 token 输出检测到的语言标签。",
+          "endpointing": "终点检测",
+          "endpointingHint": "说话者停顿时自动完成 token。",
+          "context": "领域上下文",
+          "contextHint": "对所讨论内容的自由描述。姓名、机构、行业术语。",
+          "contextPlaceholder": "与 Acme Corp 关于 Q3 营收的会议。\n出席者:Alice Chen、Bob Park。"
+        },
+        "openai": {
+          "model": "文件转写模型",
+          "modelDefault": "默认 (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize 最适合做说话人分离。mini 更便宜但没有说话人分离。OpenAI 单次上传上限为 25 MB 音频。SeaMeet 以 16 kbps 单声道 opus 提取视频,因此单次上传大约能覆盖 3–4 小时会议。",
+          "contextPrompt": "领域上下文",
+          "contextPromptPlaceholder": "讨论 Acme Corp 第三季度收入。参与者：Alice Chen、Bob Park。",
+          "contextPromptHint": "自由形式的描述，使 OpenAI 倾向于领域词汇。",
+          "realtimeModel": "实时转写模型",
+          "realtimeModelDefault": "默认 (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe 是会议默认 —— 服务器 VAD 按整句段落输出并带时间戳。gpt-4o-mini-transcribe 行为相同但更便宜。gpt-realtime-whisper 延迟最低,但转写会累积在一行(录音期间没有按整句的落定)—— 适合聊天 UI,不适合会议。",
+          "refreshModels": "刷新模型列表",
+          "refreshing": "刷新中…",
+          "turnDetection": "话轮检测",
+          "turnDetectionServerVad": "服务器 VAD(实时字幕)",
+          "turnDetectionNone": "无(停止时再落定)",
+          "turnDetectionHint": "服务器 VAD 会在说话过程中按整句输出。如果用按键说话(PTT)流程并希望只在停止录音时提交缓冲区,可关闭此选项。",
+          "noiseReduction": "降噪",
+          "noiseReductionNear": "近场(笔记本/头戴麦)",
+          "noiseReductionFar": "远场(会议室麦)",
+          "noiseReductionOff": "关闭",
+          "noiseReductionHint": "转写前对输入音频应用的预滤波。请根据麦克风摆放选择对应选项。",
+          "includeLogprobs": "返回每个 token 的置信度",
+          "includeLogprobsHint": "请求每个转写 token 的对数概率,用于按置信度给低分单词上色。会增加返回数据量,如不需要可关闭。",
+          "includeLogprobsDiarize": "gpt-4o-transcribe-diarize 不支持。",
+          "useStreaming": "文件转写流式输出",
+          "useStreamingHint": "录音转写过程中显示中间文本。gpt-4o-transcribe 和 gpt-4o-mini-transcribe 支持,其它模型忽略此选项。",
+          "useStreamingDiarize": "gpt-4o-transcribe-diarize 不支持。",
+          "contextPromptDiarize": "gpt-4o-transcribe-diarize 不支持。",
+          "contextPromptModelSupport": "对于 whisper-1,提示是关键词列表。对于 gpt-4o-transcribe 和 gpt-4o-mini-transcribe,提示是自由文本(例如\"预期会出现技术相关词汇\")。gpt-realtime-whisper 在 GA Realtime 会话中不支持提示,gpt-4o-transcribe-diarize 同样不支持。"
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "实时转写模型",
+          "fileTranscriptionModelLabel": "文件转写模型",
+          "fileTranscriptionModelHint": "在 LLM Provider → Default Model 中配置。同一个 Gemini 模型同时用于批量文件转写、摘要、截图 OCR、Wiki 和对话。",
+          "deepAnalysisLabel": "视频深度分析"
+        }
+      }
+    },
+    "llm": {
+      "title": "LLM 服务商（录音摘要、图像提取、Wiki 生成）",
+      "signup": "获取 API 密钥",
+      "installGuide": "安装指南",
+      "tutorial": "设置教程",
+      "apiKey": "API 密钥",
+      "testing": "测试中…",
+      "test": "测试连接",
+      "keyDescription": "您的 API 密钥经过加密并仅存储在本设备上。",
+      "cliStatus": "CLI 状态",
+      "usesLocalCLI": "使用本地 CLI 认证（无需 API 密钥）。",
+      "testOk": "已连接",
+      "testFail": "连接失败",
+      "advanced": {
+        "title": "高级设置",
+        "reset": "重置为默认值",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "默认模型（摘要 / 截图 / Wiki / 对话）"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "注意：音频摘要深度模式始终使用 Gemini，不受此设置影响。截图/OCR 跟随上方的开关。",
+      "provider": {
+        "gemini": {
+          "label": "Gemini（Google AI Studio）",
+          "desc": "原生多模态。提供带 API 密钥的免费层级。"
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o 和 GPT-5 系列。OpenAI 平台按使用付费。"
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus、Sonnet、Haiku。Anthropic 控制台 API 密钥。"
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash 与 deepseek-v4-pro。每 token 成本极低,支持 thinking 模式。"
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "一把密钥，数百个来自众多厂商的模型。"
+        },
+        "claude-code": {
+          "label": "Claude Code（本地 CLI）",
+          "desc": "使用已安装的 claude CLI。无需 API 密钥。"
+        },
+        "codex-cli": {
+          "label": "Codex CLI（OpenAI Plus）",
+          "desc": "使用已安装的 codex CLI。基于 OpenAI Plus / Pro 订阅。"
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI（Google 认证）",
+          "desc": "使用已安装的 gemini CLI。OAuth 或 API 密钥。"
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "AWS 上的基础模型。Claude、Nova、Llama、Mistral、Cohere、DeepSeek。"
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "截图 OCR 使用主 LLM",
+      "visionToggleHint": "将截图/OCR 任务发送到上方所选的提供商。关闭（默认）：始终使用 Gemini。如果你的提供商不接受该图像，会自动回退到 Gemini。",
+      "visionUnsupportedBadge": "OCR 回退到 Gemini",
+      "visionUnsupportedTooltip": "该提供商的适配器尚未支持图片输入。截图 OCR 将回退到 Gemini。"
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "尚无维基",
+    "Description": "维基会根据您的笔记和会议自动构建。撰写笔记或录制会议即可开始。",
+    "TakeNoteCta": "撰写笔记",
+    "StartRecordingCta": "开始录制"
+  },
+  "WikiPaywall": {
+    "Headline": "您的笔记，自动整理",
+    "Subhead": "由 AI 从您的笔记和会议构建的知识库。",
+    "ChaosLabel": "您的笔记",
+    "ChaosCaption": "自由形式，无需任何结构",
+    "WikiLabel": "您的维基",
+    "WikiCaption": "自动整理与互联",
+    "Explainer": "像以往一样写笔记。AI 会在您书写时提取所提及的人物、主题、公司和会议，并将它们编织成一个有结构的维基——自动互联，并随时保持最新。",
+    "Cta": "订阅以启用维基"
+  },
+  "NotesShowcase": {
+    "Headline": "会成长为知识库的笔记",
+    "Subhead": "纯 Markdown。在行内录制音频、视频或截图。让 AI 自动总结并将一切串联起来。",
+    "Feature1Title": "Markdown + 维基链接",
+    "Feature1Desc": "用 Markdown 书写。用 [[维基链接]] 连接笔记。没有专有格式。",
+    "Feature2Title": "文件树，按你的方式",
+    "Feature2Desc": "拖拽即可整理。无限层级。重命名会同步更新所有笔记中的维基链接。",
+    "Feature3Title": "录制内容直接嵌入",
+    "Feature3Desc": "在笔记旁边即可录制音频、视频或截图。直接嵌入——不会被埋藏在另一个应用里。",
+    "Feature4Title": "AI 自动总结并连接",
+    "Feature4Desc": "LLM 会总结每条笔记，提取人物、主题、公司、会议，并自动构建一个维基。",
+    "Tagline": "内置录制。互相链接的笔记。可移植的 Markdown。保存在你本地文件夹的纯文本文件中——永远归你所有。",
+    "CreateCta": "创建你的第一条笔记"
   }
 }

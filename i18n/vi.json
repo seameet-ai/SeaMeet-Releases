@@ -18,13 +18,14 @@
   "AIFeatures": {
     "ApiKeyLabel": "Khóa API Gemini",
     "ApiKeySection": "Khóa API Gemini",
-    "AutomationSection": "Tự động hóa",
     "AutoSummary": "Tự động tạo bản tóm tắt",
     "AutoSummaryDesc": "Chạy sau mỗi lần ghi âm kết thúc",
+    "AutomationSection": "Tự động hóa",
     "ClaudeKey": {
+      "ApiKeyTitle": "Khóa API",
       "ClearKey": "Xóa khóa đã lưu",
-      "CliInstalled": "Đã cài đặt ({{version}})",
       "CliInstallLink": "Cài đặt Claude Code →",
+      "CliInstalled": "Đã cài đặt ({{version}})",
       "CliNotFound": "Không tìm thấy CLI",
       "CliNotInstalled": "Không tìm thấy Claude CLI — hãy cài đặt và đăng nhập để xác thực:",
       "CliSection": "Claude Code CLI",
@@ -33,7 +34,6 @@
       "HideKey": "Ẩn phím",
       "InstallMac": "macOS / Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "Khóa API",
       "KeyInvalid": "Khóa không hợp lệ",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "•································ Đã lưu)",
@@ -60,6 +60,7 @@
       "SourceNone": "Chưa được định cấu hình",
       "TestKey": "Lưu & Xác minh"
     },
+    "ClearKey": "Xóa khóa đã lưu",
     "Copilot": {
       "Authenticated": "Đã xác thực",
       "DefaultModel": "Mô hình mặc định",
@@ -71,21 +72,32 @@
       "Remove": "Xóa tích hợp Copilot",
       "Section": "GitHub Copilot"
     },
-    "Provider": {
-      "Detected": "Đã phát hiện",
-      "Hint": "Bạn cũng có thể chuyển đổi nhà cung cấp cho từng cuộc trò chuyện trong bảng chat.",
-      "NotAvailable": "Không khả dụng",
-      "Preferred": "Ưu tiên",
-      "Section": "Nhà cung cấp agent ưu tiên"
-    },
-    "ClearKey": "Xóa khóa đã lưu",
+    "DefaultModel": "Mô hình mặc định",
     "EnableToggle": "Kích hoạt tính năng tóm tắt do AI cung cấp",
     "EnableToggleDesc": "Yêu cầu khóa API Gemini miễn phí",
-    "DefaultModel": "Mô hình mặc định",
-    "GeminiSection": "Gemini",
+    "Gemini": {
+      "Configured": "Đã cấu hình khóa API",
+      "DefaultModel": "Mô hình mặc định",
+      "Description": "Trò chuyện với các cuộc họp của bạn bằng mô hình Gemini. Dùng chung khóa với nhà cung cấp tóm tắt và phiên dịch trực tiếp Gemini.",
+      "GetKeyLink": "Lấy khóa API miễn phí từ Google AI Studio →",
+      "NotConfigured": "Chưa cấu hình khóa API",
+      "Refresh": "Phát hiện lại Gemini",
+      "Remove": "Xóa khóa Gemini",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "Nhận khóa API miễn phí từ Google AI Studio →",
     "GroupTitle": "Tính năng AI",
     "HideKey": "Ẩn phím",
+    "Job": {
+      "AskQuestions": "Hỏi về các cuộc họp đã qua",
+      "BuildWikis": "Xây dựng wiki từ ghi chú & cuộc họp",
+      "Record": "Ghi âm cuộc họp",
+      "RecordSub": "Cục bộ · luôn hoạt động",
+      "SearchScreenshots": "Tìm kiếm trong ảnh chụp màn hình",
+      "Summarize": "Tóm tắt cuộc họp",
+      "Transcribe": "Phiên âm cuộc họp",
+      "WriteNote": "Viết ghi chú"
+    },
     "KeyInvalid": "Khóa không hợp lệ",
     "KeyManagedInBilling": "Khóa API được quản lý trong Quản lý Đăng ký → Khóa API",
     "KeyNotConfigured": "Không có khóa nào được cấu hình",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "•································ Đã lưu)",
     "KeyTesting": "Đang thử nghiệm...",
     "KeyVerified": "Đã xác minh khóa",
-    "ManagedKeyDesc": "Khóa API của bạn được cung cấp tự động. Không cần cấu hình.",
-    "ManagedKeyStatus": "Khóa được quản lý — do SeaMeet cung cấp",
-    "MenuItem": "Tóm tắt được hỗ trợ bởi AI",
+    "MenuItem": "Phiên âm AI, trích xuất, tóm tắt, wiki",
     "ModelLabel": "Mô hình Gemini",
+    "ModelSection": "Mô hình AI",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "Gemini 3 Pro",
       "Gemini3ProSub": "Công suất tối đa"
     },
-    "ModelSection": "Mô hình AI",
-    "PageTitle": "Tính năng AI",
-    "QuotaLoading": "Đang tải hạn ngạch...",
-    "QuotaRefresh": "Làm mới hạn ngạch",
-    "QuotaRemaining": "{{remaining}} / {{limit}} mã thông báo còn lại",
-    "QuotaResetDate": "Đặt lại vào {{date}}",
-    "QuotaSection": "Hạn mức sử dụng",
+    "OpenAI": {
+      "Configured": "Đã cấu hình khóa API",
+      "DefaultModel": "Mô hình mặc định",
+      "Description": "Trò chuyện với các cuộc họp của bạn bằng mô hình GPT. Dùng chung khóa với nhà cung cấp tóm tắt và phiên dịch trực tiếp OpenAI.",
+      "GetKeyLink": "Lấy khóa API từ OpenAI Platform →",
+      "NotConfigured": "Chưa cấu hình khóa API",
+      "Refresh": "Phát hiện lại OpenAI",
+      "Remove": "Xóa khóa OpenAI",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "Phiên âm AI, trích xuất, tóm tắt, wiki",
+    "PostMeetingSummaryLanguage": "Ngôn ngữ tóm tắt sau cuộc họp",
+    "PostMeetingSummaryLanguageDesc": "Áp dụng cho bản phiên âm + tóm tắt sau cuộc họp (batch). Phụ đề trực tiếp dùng bộ chọn ngôn ngữ nói ở trên.",
+    "PreUploadAudio": "Tải lên trước âm thanh để có bản tóm tắt sâu tức thì",
+    "PreUploadAudioDesc": "Truyền âm thanh đến Gemini trong khi ghi để bản tóm tắt chế độ sâu trả về trong vài giây thay vì ~30 giây. Cần khóa API Gemini. Sử dụng băng thông tải lên trong khi ghi.",
+    "Provider": {
+      "Detected": "Đã phát hiện",
+      "Hint": "Bạn cũng có thể chuyển đổi nhà cung cấp cho từng cuộc trò chuyện trong bảng chat.",
+      "NotAvailable": "Không khả dụng",
+      "Preferred": "Ưu tiên",
+      "Section": "Nhà cung cấp agent ưu tiên"
+    },
+    "RemoveKey": "Xóa",
+    "SaveKey": "Lưu khóa",
     "Saving": "Đang lưu...",
     "SelectedModel": "Đã chọn: {{model}}",
     "ShowAllModels": "Hiển thị tất cả {{count}} mô hình",
     "ShowFewerModels": "Hiển thị ít mô hình hơn",
     "ShowKey": "Hiển thị phím",
-    "TestKey": "Lưu & Xác minh",
     "SummaryLanguage": "Ngôn ngữ đầu ra của bản tóm tắt",
-    "SummaryLanguageDesc": "Áp dụng cho bản ghi, tóm tắt và chương. Tự động phát hiện khớp với ngôn ngữ nói."
+    "SummaryLanguageAutoDetect": "Tự động phát hiện (có thể trộn lẫn các bảng chữ)",
+    "SummaryLanguageDesc": "Áp dụng cho bản ghi, tóm tắt và chương. Tự động phát hiện khớp với ngôn ngữ nói.",
+    "TestKey": "Lưu & Xác minh",
+    "SummaryConfigSection": "Cấu hình tóm tắt",
+    "ImageExtractionSection": "Trích xuất hình ảnh",
+    "UseMainLlmForOcrHint": "Định tuyến OCR ảnh chụp màn hình đến nhà cung cấp LLM bạn đã chọn. Tắt (mặc định): luôn dùng Gemini. Tự động dự phòng về Gemini nếu nhà cung cấp không chấp nhận hình ảnh."
+  },
+  "AISummaryQuality": {
+    "Heading": "Chất lượng bản tóm tắt AI",
+    "MasterToggleLabel": "Dùng Phân Tích Sâu khi đã cấu hình khóa Gemini",
+    "MasterToggleHelp": "Gemini đọc trực tiếp âm thanh và video để tạo tên người nói rõ ràng, trích dẫn chính xác hơn và bản tóm tắt phong phú hơn. Bản tóm tắt Nhanh (dựa trên bản ghi) vẫn là mặc định; Phân Tích Sâu chạy tự động trong nền và thay thế bản tóm tắt Nhanh khi hoàn tất.",
+    "AdvancedSection": "Nâng cao",
+    "PreUploadLabel": "Tải sẵn âm thanh/video trong nền khi đang ghi",
+    "PreUploadHelp": "Truyền bản ghi tới Gemini trong khi bạn ghi để Phân Tích Sâu kết thúc trong vài giây sau khi dừng.",
+    "TokenEstimateHeading": "Mức tiêu thụ token Gemini ước tính cho mỗi lần Phân Tích Sâu",
+    "TokenEstimateInput": "Đầu vào",
+    "TokenEstimateOutput": "Đầu ra",
+    "TokenEstimate10MinAudio": "10 phút âm thanh",
+    "TokenEstimate10MinVideo": "10 phút video",
+    "TokenEstimate1HrAudio": "1 giờ âm thanh",
+    "TokenEstimate1HrVideo": "1 giờ video",
+    "TokenEstimateNote": "Tốc độ token: âm thanh ≈ 32 tok/s, video ≈ 263 tok/s (khung hình 1 fps + đường tiếng). Ngân sách đầu ra giới hạn 32K mỗi lần chạy gọi đơn và 16K mỗi lần gọi tóm tắt theo khối. Hạn ngạch hằng ngày của gói miễn phí được áp dụng (ví dụ 500 RPD trên Flash-Lite Latest).",
+    "DisabledStateBanner": "Phân Tích Sâu đa phương thức cần khóa API Gemini. Nếu không có, chỉ có thể dùng tóm tắt Nhanh (dựa trên bản ghi) do nhà cung cấp LLM bạn chọn tạo ra.",
+    "DisabledStateAddKey": "Thêm khóa API Gemini →"
   },
   "AISummary": {
     "ApplyMerge": "Áp dụng",
@@ -133,6 +183,33 @@
     "Copy": "Sao chép",
     "EditSegmentSpeaker": "Nhấp để gán lại đoạn này",
     "EnableRequired": "Bật Tính năng AI trong Cài đặt → Tính năng AI để xem tóm tắt AI.",
+    "ReRunDeep": "Chạy lại Phân Tích Sâu (sử dụng thêm token Gemini)",
+    "ReRunSummary": "Tạo lại bản tóm tắt",
+    "DeepProgress": {
+      "Title": "Đang chạy Phân Tích Sâu",
+      "Cancel": "Hủy",
+      "Stage": {
+        "preparing": "đang chuẩn bị",
+        "uploading": "đang tải tệp lên",
+        "uploading-wait": "Gemini đang xử lý",
+        "analyzing": "đang phân tích",
+        "extracting": "đang trích xuất",
+        "saving": "đang lưu",
+        "complete": "hoàn tất"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ Bản tóm tắt Sâu đã sẵn sàng",
+      "Badge": "Sâu · Gemini đã phân tích bản ghi"
+    },
+    "DeepFailed": {
+      "Toast": "Phân Tích Sâu thất bại: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "Dùng Phân Tích Sâu",
+      "Desc": "Gemini xem âm thanh + video để cung cấp tên người nói riêng biệt, trích dẫn nguyên văn và bản tóm tắt phong phú hơn.",
+      "Run": "Chạy Phân Tích Sâu"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "Khóa API không hợp lệ. Vui lòng kiểm tra khóa API của bạn trong Cài đặt.",
       "NO_API_KEY": "Chưa cấu hình khóa API Gemini. Vui lòng thêm khóa API của bạn trong Cài đặt.",
@@ -178,6 +255,8 @@
     "Retry": "Thử lại",
     "SeekToTimestamp": "Tìm kiếm dấu thời gian này",
     "ConfigureApiKey": "Cấu hình khóa API Gemini của bạn để tạo tóm tắt và phiên âm AI.",
+    "ConfigureProviders": "Bật phiên âm trực tiếp và thiết lập nhà cung cấp LLM trong Cài đặt để tạo tóm tắt AI.",
+    "OpenSettings": "Mở Cài đặt",
     "ConfigureKey": "Cấu hình khóa API",
     "SetupRequired": "Định cấu hình khóa API Gemini của bạn trong Cài đặt → Tính năng AI để bật tóm tắt AI.",
     "Tab": {
@@ -355,7 +434,8 @@
       "Running": "{{count}} đang chạy",
       "Completed": "{{count}} hoàn tất",
       "Actions": "{{count}} hành động"
-    }
+    },
+    "SwitchModel": "Đổi mô hình"
   },
   "AgentSection": {
     "ConfigureApiKey": "Cấu hình khóa API của bạn để sử dụng Đại lý AI."
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "SeaMeet AI hoạt động như thế nào",
       "Subtitle": "BYOK — Mang theo chìa khóa của bạn",
-      "WhatIsBYOK": "Với BYOK, bản ghi và dữ liệu của bạn được gửi trực tiếp từ thiết bị đến Google hoặc Anthropic. Không có gì đi qua máy chủ SeaMeet — bảo mật tối đa cho bạn và nhóm của bạn.",
-      "WhatYouNeed": "Những gì bạn sẽ thiết lập sau khi đăng ký",
-      "GeminiTitle": "Khóa Google AI Studio (Miễn phí có giới hạn)",
-      "GeminiDesc": "Hỗ trợ phiên âm trực tiếp, tóm tắt sau cuộc họp và phân tích. Google cung cấp gói miễn phí hào phóng — hầu hết người dùng không bao giờ phải trả một đồng nào.",
-      "AgentTitle": "Trợ lý AI — chọn một tùy chọn (Miễn phí có giới hạn)",
-      "AgentOption1": "GitHub Copilot — 50 cuộc trò chuyện premium miễn phí/tháng (hoặc nhiều hơn với Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — nếu bạn đã có Claude Pro hoặc Max, bạn đã được bao phủ",
-      "AgentOption3": "Khóa API Anthropic — để truy cập API trực tiếp",
-      "Continue": "Tiếp tục đăng ký",
-      "WhyBYOK": {
-        "Title": "Tại sao nên mang theo chìa khóa của riêng bạn?",
-        "Answer": "Bảo mật tốt hơn nhiều — dữ liệu của bạn được lưu giữ tại các công ty đáng tin cậy như Google và Anthropic, không phải SeaMeet. Gói miễn phí từ các nhà cung cấp này rất hào phóng và sẽ đủ dùng cho hầu hết người dùng trong thời gian dài."
-      },
-      "WhyMonthly": {
-        "Title": "Tại sao SeaMeet thu phí hàng tháng?",
-        "Answer": "SeaMeet cập nhật nhanh chóng với các tính năng AI mới. Đăng ký của bạn giúp bạn luôn ở phiên bản mới nhất. Nếu không, bạn sẽ trả phí bản quyền một lần và bị mắc kẹt với các tính năng cũ — giống như mua Office 2012 và dùng Office 2012 mãi mãi."
-      }
+      "Continue": "Tiếp tục đăng ký"
     },
     "Coupon": {
       "Title": "Khuyến mãi ra mắt",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub Copilot",
       "Authenticated": "Đã xác thực",
       "CopilotUsage": "Đặt làm nhà cung cấp agent ưa thích?",
-      "CopilotFreeWarning": "GitHub Copilot Free chỉ bao gồm 50 yêu cầu agent/chat mỗi tháng. Tốt để thử nhanh, nhưng có thể đạt giới hạn nhanh. Nâng cấp lên Copilot Pro để có giới hạn cao hơn, hoặc sử dụng SeaMeet Desktop Pro để truy cập AI không giới hạn.",
+      "CopilotFreeWarning": "GitHub Copilot Free chỉ bao gồm 50 yêu cầu agent/chat mỗi tháng. Tuyệt vời cho một bài kiểm tra nhanh, nhưng bạn có thể đạt giới hạn nhanh chóng. Nâng cấp lên Copilot Pro để có giới hạn cao hơn, hoặc sử dụng nhà cung cấp khác (Claude hoặc Gemini) để có thêm không gian.",
       "KeepClaude": "Giữ Claude làm mặc định",
       "UseCopilot": "Sử dụng GitHub Copilot làm mặc định",
       "CopilotLabel": "GitHub Copilot",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "Không phát hiện",
       "CopilotSignupHint": "Muốn thử GitHub Copilot làm agent thay thế? Đăng ký gói miễn phí tại github.com/features/copilot/plans (bao gồm 50 yêu cầu agent/chat mỗi tháng), sau đó cài Copilot CLI và chạy \"copilot login\".",
       "CopilotFlatUsage": "Dùng cho: agent AI (thay thế Claude). Không cần khóa API — sử dụng đăng nhập GitHub của bạn.",
-      "Guide": {
-        "Intro": "SeaMeet AI có hai khu vực tính năng độc lập — thiết lập những gì bạn cần.",
-        "SectionAiSummary": "Tóm tắt AI",
-        "SectionAiSummaryBadge": "Bắt buộc",
-        "SectionAiSummarySubtitle": "Lấy khóa API Gemini (Miễn phí)",
-        "SectionAiAgent": "Trợ lý AI",
-        "SectionAiAgentBadge": "Cần ít nhất một",
-        "OptionCopilotTitle": "GitHub Copilot CLI (Miễn phí)",
-        "OptionClaudeTitle": "Claude Code CLI (Tùy chọn, trả phí)",
-        "Or": "HOẶC",
-        "Step1Title": "Bước 1 — Đọc kỹ hướng dẫn",
-        "Step1Need": "Bạn cần 2 thứ:",
-        "Step1Item1": "Gemini API key — để tóm tắt AI và phiên âm trực tiếp",
-        "Step1Item2": "GitHub Copilot CLI hoặc Claude Code CLI — cho AI agent",
-        "Step2Title": "Bước 2 — (Miễn phí) Lấy Gemini API Key",
-        "Step2Desc1": "Nhấn ",
-        "Step2GetKey": "Lấy API Key",
-        "Step2Desc2": " để tạo Gemini API key miễn phí. Thông tin thêm tại ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "Bước 3 — (Miễn phí) Cài GitHub Copilot CLI",
-        "Step3Install": "Nhấn ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " hoặc cài nhanh:",
-        "Step3Login": "Chạy: ",
-        "Step3LoginDesc": " (miễn phí, 50 cuộc trò chuyện/tháng)",
-        "Step3Refresh": "Nhấn làm mới bên dưới để phát hiện Copilot.",
-        "Step3Select": "Nhấn GitHub Copilot bên dưới để đặt làm mặc định.",
-        "Step4Title": "Bước 4 — (Tùy chọn, trả phí) Cài Claude Code CLI",
-        "Step4Already": "Rất có thể bạn đã có sẵn nếu đã cài Claude Code trước đó.",
-        "Step4Install": "Nhấn ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " hoặc cài nhanh:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
-        "Step4WinReq": "yêu cầu ",
-        "Step4GitWin": "Git cho Windows",
-        "Step4Auth": "Chạy: ",
-        "Step4AuthDesc": " (yêu cầu gói Claude Pro hoặc Max)",
-        "Step4Refresh": "Nhấn làm mới bên dưới để phát hiện Claude Code.",
-        "Step4Select": "Nhấn Claude Code bên dưới để đặt làm mặc định.",
-        "StepComplete": {
-          "AgentBoth": "Cả Claude và Copilot đều đã được cấu hình",
-          "AgentClaude": "Claude đã được cấu hình",
-          "AgentCopilot": "Copilot đã được cấu hình",
-          "Summary": "Đã hoàn tất thiết lập"
+      "Acronym": "BYOK (Bring Your Own Key — mang khóa của riêng bạn)",
+      "Explanation": "BYOK nghĩa là bạn kết nối khóa nhà cung cấp AI của riêng mình; dữ liệu của bạn đi thẳng đến các nhà cung cấp bạn tin tưởng, không qua SeaMeet.",
+      "Welcome": {
+        "Title": "Chào mừng đến với BYOK Pro (Bring Your Own Key)",
+        "Subtitle": "$4,99/tháng · Dữ liệu của bạn, nhà cung cấp của bạn",
+        "PickOne": "Kết nối một khóa là xong.",
+        "OneKeyTitle": "MỘT KHÓA, BAO QUÁT MỌI CÔNG VIỆC",
+        "OneKeyBadge": "Khuyến nghị",
+        "MixTitle": "KẾT HỢP & PHỐI HỢP",
+        "MixSubtitle": "cho người dùng nâng cao",
+        "OneKeyDoList": "Bạn sẽ:",
+        "MixSupportList": "Chọn dịch vụ khác nhau cho từng việc. Chúng tôi hỗ trợ:",
+        "MixSttHeading": "Phiên âm (STT):",
+        "MixLlmHeading": "Tóm tắt / Ghi chú / Wiki (LLM):",
+        "MixAgentHeading": "AI Agent (LLM + công cụ):",
+        "MixCliHeading": "CLI cục bộ (không cần khóa):",
+        "PickOneRadio": "Chọn một:",
+        "GeminiDesc": "Cấp miễn phí hào phóng từ Google AI Studio; nâng cấp sau để có chất lượng và hạn mức tốt hơn.",
+        "OpenAIDesc": "Sử dụng khóa trả phí của riêng bạn. Chất lượng ChatGPT.",
+        "GetFreeKey": "Nhận khóa miễn phí →",
+        "PasteHere": "Dán vào đây",
+        "OpenAdvanced": "Mở nâng cao →",
+        "PowerUserTitle": "Đã là người dùng nâng cao?",
+        "PowerUserDesc": "Nếu bạn đã cài Claude Code, GitHub Copilot, Codex CLI hoặc Gemini CLI, bạn có thể dùng chúng cho AI Agent — không cần khóa API thêm. Chúng tôi sẽ phát hiện ở bước tiếp theo.",
+        "WhyTwoProviders": "Tại sao Gemini hoặc OpenAI? Đó là những dịch vụ duy nhất xử lý cả phiên âm VÀ tóm tắt bằng một khóa. Bất kỳ thứ gì khác cần thêm khóa thứ hai đi kèm.",
+        "SetupLater": "Tôi sẽ thiết lập sau — chỉ tôi xem app"
+      },
+      "Receipt": {
+        "Heading": "Đã kết nối {{provider}}.",
+        "YouCanNow": "Bây giờ bạn có thể:",
+        "Job1": "Ghi âm các cuộc họp",
+        "Job2": "Phiên âm chúng",
+        "Job3": "Tóm tắt với quyết định, hành động, chương chính",
+        "Job4": "Viết ghi chú có cấu trúc",
+        "Job5": "Xây dựng wiki",
+        "Job6": "Hỏi về các cuộc họp đã qua",
+        "Job7": "Tìm kiếm trong ảnh chụp màn hình",
+        "CTAStart": "Bắt đầu ghi →",
+        "CTAScreenshot": "Chụp ảnh màn hình →",
+        "CTAWriteNote": "Viết ghi chú →",
+        "CustomizeCTA": "Tùy chỉnh nhà cung cấp cho từng việc →",
+        "CLIDetected": "Đã phát hiện: {{cli}} — dùng cho agent?",
+        "UseDetectedCLI": "Dùng",
+        "KeepDefault": "Giữ mặc định"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "Đây là những gì bạn nhận được với $4,99/tháng",
+        "HeadlinePostSubscribe": "Gói BYOK Pro của bạn bao gồm những gì",
+        "HeadlineSettings": "Tại sao bạn dùng BYOK Pro",
+        "PrivacyTitle": "Quyền riêng tư",
+        "PrivacyDesc": "Dữ liệu của bạn đi thẳng từ thiết bị đến Google / Anthropic / OpenAI / v.v. Máy chủ SeaMeet không bao giờ thấy các bản ghi, phiên âm hay tóm tắt của bạn.",
+        "QualityTitle": "Chất lượng",
+        "QualityDesc": "Chọn mô hình tốt nhất cho từng việc. Gemini Live cho phiên âm, Claude cho viết, Deepgram cho tách người nói.",
+        "CostTitle": "Kiểm soát chi phí",
+        "CostDesc": "Trả tiền trực tiếp cho nhà cung cấp. Đa số người dùng ở mức miễn phí hào phóng của Gemini và không phải trả một xu nào cho AI.",
+        "SovereigntyTitle": "Chủ quyền",
+        "SovereigntyDesc": "Khóa sống trong keychain của hệ điều hành. Hủy bất cứ lúc nào. SeaMeet không thu thập dữ liệu sử dụng nào về các cuộc gọi AI của bạn."
+      },
+      "Manage": {
+        "Title": "Khóa nhà cung cấp AI của bạn",
+        "Subtitle": "Dán khóa để chuyển nhà cung cấp, hoặc mở cài đặt nâng cao để tinh chỉnh theo từng tác vụ."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "Bạn nhận được gì với $4.99/tháng",
+          "Bullet1": "Một khóa (Gemini hoặc OpenAI) kích hoạt mọi tính năng AI.",
+          "Bullet2": "Ghi âm · phiên âm · tóm tắt · ghi chú · xây wiki · hỏi về các cuộc họp trước · tìm trong ảnh chụp màn hình.",
+          "Bullet3": "Hoặc kết hợp nhà cung cấp theo từng tác vụ — Deepgram cho phiên âm, Claude cho tóm tắt, CLI yêu thích cho agent."
+        },
+        "NewFAQ": {
+          "Q1": "Nếu tôi đã có Claude Pro hoặc GitHub Copilot thì sao?",
+          "A1": "Bạn có thể dùng chúng cho AI agent — không cần thêm khóa API. Chúng tôi tự động phát hiện Claude Code, GitHub Copilot, Codex CLI và Gemini CLI trên hệ thống của bạn.",
+          "Q2": "Tôi có thể dùng những nhà cung cấp nào?",
+          "A2": "Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter và Amazon Bedrock cho AI. Deepgram và Soniox cho phiên âm. Cộng với bốn CLI ở trên.",
+          "Q3": "Dữ liệu của tôi thực sự không bị SeaMeet chạm vào?",
+          "A3": "Đúng. Bản ghi, bản phiên âm và bản tóm tắt của bạn đi thẳng từ thiết bị đến nhà cung cấp bạn chọn. Máy chủ SeaMeet không bao giờ nhìn thấy. Chúng tôi chỉ thấy trạng thái đăng ký và nhà cung cấp bạn đã cấu hình (không phải khóa, không phải nội dung).",
+          "Q4": "Tại sao trả $4.99 nếu tôi mang khóa của mình?",
+          "A4": "Đăng ký trả cho việc phát triển ứng dụng SeaMeet — định tuyến đa nhà cung cấp, phiên âm trực tiếp, tạo wiki, AI agent có dùng công cụ, OCR ảnh chụp màn hình và hỗ trợ nền tảng liên tục. Chi phí AI của bạn riêng và đi thẳng đến nhà cung cấp (thường miễn phí ở mức miễn phí của Gemini)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "BYOK là gì?",
-        "A1": "BYOK là viết tắt của Bring Your Own Key. Bạn cần 2 API key: một từ Google AI Studio (cho phiên âm & tóm tắt) và một từ Anthropic (cho câu hỏi AI & phân tích). Google AI Studio thường cung cấp key miễn phí. Nếu bạn đã đăng ký Claude Pro hoặc Max, bạn không cần thêm Anthropic API key. Trình hướng dẫn cài đặt sẽ giúp bạn kết nối cả hai key sau khi thanh toán.",
+        "A1": "BYOK là viết tắt của Bring Your Own Key (Mang Khóa Của Bạn). Bạn chỉ cần 1 khóa API — từ Google AI Studio (Gemini) hoặc OpenAI — để vận hành cả chép lời và tóm tắt cuộc họp lẫn trò chuyện với AI agent. Google AI Studio thường cung cấp khóa miễn phí để bạn có thể bắt đầu mà không tốn thêm chi phí. Người dùng nâng cao cũng có thể kết nối các công cụ CLI của riêng họ (Claude Code, GitHub Copilot, v.v.) cho trò chuyện với AI agent. Trình hướng dẫn thiết lập sẽ dẫn dắt bạn qua tất cả sau khi thanh toán.",
         "Q2": "Tại sao phải đăng ký hàng tháng?",
-        "A2": "Đăng ký của bạn hỗ trợ cập nhật liên tục, hỗ trợ mô hình AI mới, sửa lỗi và tính năng mới. Chi phí API được thanh toán riêng cho Google và Anthropic bằng key của bạn.",
-        "Q3": "Giấy phép hoạt động như thế nào?",
-        "A3": "1 tài khoản, tối đa 3 thiết bị. Thiết bị không hoạt động sẽ được tự động giải phóng sau 30 ngày. Bạn cũng có thể đăng xuất thiết bị thủ công để giải phóng chỗ."
-      },
-      "Desktop": {
-        "Q1": "Desktop Pro là gì?",
-        "A1": "Desktop Pro bao gồm AI key tích hợp do SeaMeet quản lý — không cần tạo hoặc quản lý API key riêng. Chỉ cần đăng ký và bắt đầu sử dụng tính năng AI ngay.",
-        "Q2": "Nó khác gì so với BYOK?",
-        "A2": "Với Desktop Pro, SeaMeet cung cấp và quản lý API key cho bạn. Bạn không cần đăng ký Google AI Studio hoặc Anthropic riêng.",
+        "A2": "Đăng ký của bạn tài trợ cho các bản cập nhật liên tục, hỗ trợ mô hình AI mới, sửa lỗi và tính năng mới. Chi phí API được thanh toán trực tiếp cho Google, OpenAI hoặc các nhà cung cấp được hỗ trợ khác bằng khóa của riêng bạn.",
         "Q3": "Giấy phép hoạt động như thế nào?",
         "A3": "1 tài khoản, tối đa 3 thiết bị. Thiết bị không hoạt động sẽ được tự động giải phóng sau 30 ngày. Bạn cũng có thể đăng xuất thiết bị thủ công để giải phóng chỗ."
       },
       "Sync": {
         "Q1": "Sync Pro là gì?",
-        "A1": "Sync Pro bao gồm tất cả trong Desktop Pro, cộng thêm đồng bộ đám mây. Bản ghi, phiên âm và tóm tắt được đồng bộ trên tất cả thiết bị của bạn.",
+        "A1": "Sync Pro là một cấp tương lai với AI tích hợp (không cần quản lý khóa API), đồng bộ đám mây giữa các thiết bị và cộng tác nhóm. Dành cho người dùng muốn các tính năng AI của SeaMeet mà không cần mang theo khóa riêng. Chưa có sẵn — nhấp \"Yêu cầu\" trên thẻ gói để gửi email cho chúng tôi nếu bạn quan tâm, để chúng tôi có thể ưu tiên.",
         "Q2": "Những gì được đồng bộ?",
         "A2": "Bản ghi, phiên âm, tóm tắt AI và danh sách công việc đều được đồng bộ trên các thiết bị. Thay đổi trên một thiết bị sẽ xuất hiện trên tất cả thiết bị khác.",
         "Q3": "Giấy phép hoạt động như thế nào?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "7,99 $/tháng",
+        "Price": "4,99 $/tháng",
         "Feature1": "Phiên âm và tóm tắt bằng AI",
         "Feature2": "Sử dụng khóa API Gemini và Claude của riêng bạn",
         "Feature3": "Phiên âm trực tiếp trong cuộc họp",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "GitHub Copilot cũng có gói miễn phí.",
         "InfoNoteClaude": "Nếu đã đăng ký Claude Pro hoặc Max, bạn không cần khoá API Anthropic bổ sung."
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "15,99 $/tháng",
-        "Feature1": "Bao gồm tất cả tính năng của BYOK Pro",
-        "Feature2": "AI tích hợp sẵn — không cần khóa API",
-        "Feature3": "Hỗ trợ ưu tiên",
-        "Feature4": "Phân tích nâng cao"
-      },
       "Free": {
         "Name": "Miễn phí",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "25,99 $/tháng",
-        "Feature1": "Bao gồm tất cả tính năng của Desktop Pro",
+        "Feature1": "AI tích hợp — không cần khóa API",
         "Feature2": "Đồng bộ qua đám mây giữa các thiết bị",
         "Feature3": "Tính năng cộng tác nhóm",
-        "Feature4": "Thư viện cuộc họp dùng chung"
+        "Feature4": "Thư viện cuộc họp dùng chung",
+        "RequestCTA": "Yêu cầu",
+        "RequestSubject": "Tôi muốn Sync Pro cho SeaMeet",
+        "RequestBody": "Chào đội SeaMeet — tôi quan tâm đến Sync Pro (AI tích hợp không cần quản lý khóa API, đồng bộ đám mây, đa thiết bị, cộng tác nhóm). Vui lòng cho tôi biết khi nó có sẵn.\n\nCảm ơn!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "Nếu bạn dùng Claude App/Code: Anthropic có thể sử dụng dữ liệu của bạn để huấn luyện trừ khi bạn từ chối",
         "Agent3": "Nếu bạn dùng Anthropic API: Anthropic không sử dụng dữ liệu của bạn để huấn luyện"
       },
-      "Desktop": {
-        "Recording1": "Lưu trên máy tính của bạn",
-        "Recording2": "Đồng bộ với tài khoản Google Cloud của SeaMeet.ai để xử lý",
-        "Recording3": "Google xóa các tệp sau 48 giờ",
-        "AIData1": "Gemini API xử lý",
-        "AIData2": "Google không sử dụng dữ liệu của bạn để huấn luyện",
-        "AIData3": "SeaMeet.ai không sử dụng dữ liệu của bạn để huấn luyện",
-        "Agent1": "Anthropic API xử lý",
-        "Agent2": "Anthropic không sử dụng dữ liệu của bạn để huấn luyện",
-        "Agent3": "SeaMeet.ai không sử dụng dữ liệu của bạn để huấn luyện"
-      },
       "Sync": {
         "Recording1": "Lưu trên máy tính của bạn",
-        "Recording2": "Đồng bộ lên đám mây SeaMeet.ai",
+        "Recording2": "Đồng bộ với đám mây SeaMeet.ai với mã hóa khi lưu trữ",
         "Recording3": "Tải xuống từ đám mây SeaMeet.ai sang thiết bị máy tính khác và giữ đồng bộ",
-        "AIData1": "Giống như Desktop Pro",
-        "Agent1": "Giống như Desktop Pro"
+        "AIData1": "Được tạo bởi Gemini API qua khóa do SeaMeet quản lý; Google không sử dụng dữ liệu của bạn để huấn luyện",
+        "Agent1": "Được tạo bởi Anthropic API qua khóa do SeaMeet quản lý; Anthropic không sử dụng dữ liệu của bạn để huấn luyện"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "Người dùng nâng cao: hiểu BYOK là gì",
         "Item2": "Am hiểu công nghệ: có các API key cần thiết",
         "Item3": "Quan tâm quyền riêng tư: kiểm soát ai xem dữ liệu của bạn"
-      },
-      "Desktop": {
-        "Item1": "Người dùng thông thường: cài đặt đơn giản",
-        "Item2": "Quan tâm quyền riêng tư: dữ liệu âm thanh/hình ảnh/ghi âm lưu trên máy tính của bạn"
       },
       "Sync": {
         "Item1": "Hầu hết người dùng: cài đặt đơn giản",
@@ -1271,6 +1339,22 @@
       "TurnCoverageAllInput": "Mọi khung hình — tốt nhất cho tên trên màn hình",
       "TurnCoverageHint": "Mặc định 2.5: chỉ khi nói. Mặc định 3.1: mọi khung hình video (đọc được bảng tên ngay cả khi im lặng).",
       "SendVideo": "Gửi khung hình video",
+      "VideoFpsOption_0_2": "0.2 fps (1 khung hình / 5 giây)",
+      "VideoFpsOption_0_5": "0.5 fps (1 khung hình / 2 giây, mặc định)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
+      "VideoQualityOption_0_3": "0.3 (nhỏ nhất, mờ)",
+      "VideoQualityOption_0_5": "0.5 (tiết kiệm băng thông)",
+      "VideoQualityOption_0_7": "0.7 (cân bằng)",
+      "VideoQualityOption_0_85": "0.85 (mặc định — tốt cho tên trên màn hình)",
+      "VideoQualityOption_0_95": "0.95 (tối đa)",
+      "VideoMaxWidthOption_480": "480 px (nhỏ nhất)",
+      "VideoMaxWidthOption_640": "640 px (tiết kiệm băng thông)",
+      "VideoMaxWidthOption_960": "960 px (mặc định — tốt cho tên trên màn hình)",
+      "VideoMaxWidthOption_1280": "1280 px (lớn hơn)",
+      "VideoMaxWidthOption_1920": "1920 px (1080p gốc)",
+      "EndSensitivityHigh": "HIGH (xả nhanh)",
+      "EndSensitivityLow": "LOW (lượt dài hơn)",
       "VideoFps": "Tốc độ khung hình",
       "VideoQuality": "Chất lượng JPEG khung hình",
       "VideoMaxWidth": "Chiều rộng khung hình tối đa",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "Ẩn thanh bên ghi chú",
     "ExpandSidebar": "Hiện thanh bên ghi chú"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ Mẹo: Sau khi dừng, Phân Tích Sâu sẽ chạy tự động để cung cấp tên người nói chính xác hơn và trích dẫn từ âm thanh/video."
+  },
   "OCRAutoCopy": {
     "Copied": "Đã sao chép văn bản trích xuất vào bộ nhớ tạm",
     "Error": "Không thể trích xuất văn bản",
@@ -1653,13 +1740,17 @@
     "Running": "Đang tạo bản tóm tắt...",
     "Step": {
       "Preparing": "Đang chuẩn bị ghi âm",
+      "PreparingFast": "Đang chuẩn bị bản ghi",
       "Uploading": "Đang tải tập tin lên",
       "UploadingWait": "Xử lý trên máy chủ",
       "Analyzing": "Phân tích",
       "Extracting": "Trích xuất kết quả",
       "Saving": "Lưu hiện vật",
       "PreparingImage": "Đang chuẩn bị ảnh",
-      "AnalyzingImage": "Đang phân tích ảnh"
+      "AnalyzingImage": "Đang phân tích ảnh",
+      "ExtractingAudio": "Đang trích xuất âm thanh",
+      "Transcribing": "Đang phiên âm",
+      "TranscribingWith": "Đang phiên âm bằng {{provider}}"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "AI sau cuộc họp",
     "PostMeetingAIDesc": "Tóm tắt, mục hành động và thông tin chi tiết sẽ được tạo sau khi ghi âm hoàn tất.",
     "UnlockPremium": "Mở khóa với Premium",
-    "Upgrade": "Nâng cấp"
+    "Upgrade": "Nâng cấp",
+    "NoteSynthesis": "Tổng hợp AI",
+    "NoteSynthesisDesc": "Nhận bản tóm tắt có cấu trúc của ghi chú này + bản ghi đã liên kết với BYOK Pro.",
+    "WikiList": "Wiki",
+    "WikiListDesc": "Tự động xây dựng cơ sở kiến thức từ ghi chú và cuộc họp của bạn với BYOK Pro.",
+    "ScreenshotAI": "AI ảnh chụp màn hình",
+    "ScreenshotAIDesc": "Mô tả hình ảnh, trích xuất văn bản và đặt câu hỏi tiếp theo với BYOK Pro.",
+    "LockedChipTooltip": "Đăng ký để bật",
+    "AgentReadOnlyBanner": "Đăng ký để tiếp tục cuộc trò chuyện",
+    "GenericUpgradeCta": "Đăng ký"
   },
   "QuickOpen": {
     "Placeholder": "Bắt đầu nhập hoặc dán từ bộ nhớ tạm… Dùng [[ để liên kết tới ghi chú khác",
@@ -1883,7 +1983,9 @@
       "Description": "Mô tả",
       "OCR": "Văn bản (OCR)"
     },
-    "UnknownError": "Lỗi không xác định"
+    "UnknownError": "Lỗi không xác định",
+    "FallbackUsed": "{{from}} không thể xử lý hình ảnh — Gemini đã xử lý thay.",
+    "FallbackHint": "Tắt \"Sử dụng LLM chính cho OCR ảnh chụp màn hình\" trong Cài đặt nếu nhà cung cấp này không hỗ trợ thị giác."
   },
   "ScreenshotView": {
     "RecentLabel": "Ảnh chụp màn hình gần đây"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "Xây dựng wiki từ lựa chọn…",
       "ToastMessage": "Phát hiện {{count}} ghi chú mới. Xây dựng wiki?",
       "BannerMessage": "{{count}} ghi chú mới kể từ lần xây dựng trước",
-      "BuildingExtracting": "Đang đọc {{current}}/{{total}} ghi chú",
-      "BuildingReducing": "Đang xây dựng {{current}}/{{total}} trang",
+      "BuildingExtracting": "Đã đọc {{current}} trong {{total}} ghi chú",
+      "BuildingReducing": "Đã xây dựng {{built}} trong {{total}} trang",
       "Building": "Đang xây dựng wiki — {{stage}}",
       "PausedFor": "giới hạn tốc độ: {{seconds}}s",
       "Cancel": "Hủy",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "Đánh bóng chỉ mục",
       "PolishIndexHint": "Thêm phần giới thiệu tường thuật vào chỉ mục wiki",
       "BuildFromFolderPrompt": "Đường dẫn thư mục (tương đối với workspace):",
-      "BuildFromSelectionPrompt": "Tên tệp ghi chú phân tách bằng dấu phẩy (tương đối với notes/):"
+      "BuildFromSelectionPrompt": "Tên tệp ghi chú phân tách bằng dấu phẩy (tương đối với notes/):",
+      "BuildingExtractingWithCache": "Đã đọc {{current}} trong {{total}} ghi chú · {{skipCount}} dùng lại từ bộ nhớ đệm",
+      "BuildingReducingWithFailures": "Đã xây dựng {{built}} trong {{total}} trang · {{failed}} thất bại"
     },
     "Toolbar": {
       "Overflow": "Thêm hành động wiki",
@@ -2452,5 +2556,284 @@
     },
     "introToast": "Mới: Đã có bố cục nổi. Nhấp vào biểu tượng bố cục ở tiêu đề để dùng thử.",
     "showPipTooltip": "Hiển thị hình trong hình"
+  },
+  "settings": {
+    "stt": {
+      "title": "Nhà cung cấp chuyển giọng nói thành văn bản (Phụ đề trực tiếp, Phiên âm tệp)",
+      "apiKey": "Khóa API",
+      "getKey": "Nhận khóa",
+      "signup": "Lấy khóa API",
+      "tutorial": "Hướng dẫn thiết lập",
+      "keyDescription": "Khóa API của bạn được mã hóa và lưu trữ cục bộ trên thiết bị này.",
+      "test": "Kiểm tra kết nối",
+      "testing": "Đang kiểm tra…",
+      "testOk": "Đã kết nối",
+      "testFail": "Kết nối thất bại",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Gói miễn phí với tài khoản Google. Phù hợp với sử dụng thông thường."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "Độ chính xác tiếng Anh tốt nhất và độ trễ thấp nhất. Tín dụng miễn phí $200 khi đăng ký."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "Độ chính xác đa ngôn ngữ tốt nhất. Chỉ gói trả phí — yêu cầu thẻ tín dụng."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime cho phiên dịch trực tiếp, Whisper / gpt-4o-transcribe cho phiên dịch tệp."
+        }
+      },
+      "language": {
+        "label": "Ngôn ngữ nói",
+        "sublabel": "Gợi ý cho phiên âm trực tiếp. Tự động phát hiện hoạt động tốt trong hầu hết các trường hợp.",
+        "sonioxSublabel": "Gợi ý cho phiên âm trực tiếp. Thêm nhiều ngôn ngữ cho cuộc họp đa ngôn ngữ.",
+        "addLanguage": "Thêm ngôn ngữ",
+        "remove": "Xóa ngôn ngữ",
+        "geminiSublabel": "Gemini tự động phát hiện từ âm thanh (gợi ý không được sử dụng).",
+        "auto": "Tự động phát hiện",
+        "en": "Tiếng Anh",
+        "zh-CN": "Tiếng Trung (Giản thể)",
+        "zh-TW": "Tiếng Trung (Phồn thể)",
+        "es": "Tiếng Tây Ban Nha",
+        "ja": "Tiếng Nhật",
+        "ko": "Tiếng Hàn",
+        "fr": "Tiếng Pháp",
+        "de": "Tiếng Đức",
+        "pt": "Tiếng Bồ Đào Nha",
+        "ru": "Tiếng Nga",
+        "it": "Tiếng Ý",
+        "nl": "Tiếng Hà Lan",
+        "ar": "Tiếng Ả Rập",
+        "vi": "Tiếng Việt",
+        "id": "Tiếng Indonesia",
+        "th": "Tiếng Thái",
+        "tr": "Tiếng Thổ Nhĩ Kỳ",
+        "pl": "Tiếng Ba Lan",
+        "uk": "Tiếng Ukraina",
+        "hi": "Tiếng Hindi",
+        "fil": "Tiếng Philippines",
+        "ms": "Tiếng Mã Lai",
+        "openaiSublabel": "Ngôn ngữ đầu tiên được gửi làm gợi ý cho API; các ngôn ngữ tiếp theo được thêm vào prompt theo lĩnh vực (trên mô hình hỗ trợ). gpt-4o-transcribe-diarize chỉ dùng ngôn ngữ đầu tiên."
+      },
+      "speakerLabel": "Người nói {{n}}",
+      "advanced": {
+        "title": "Cài đặt nâng cao",
+        "reset": "Đặt lại về mặc định",
+        "deepgram": {
+          "model": "Mô hình",
+          "modelDefault": "Mặc định (nova-3)",
+          "modelHint": "nova-3 tốt nhất cho tiếng Anh. nova-3-general hỗ trợ nhiều ngôn ngữ hơn.",
+          "diarize": "Phân biệt người nói",
+          "diarizeHint": "Phát nhãn người nói (S0, S1, …) khi phát hiện nhiều giọng nói.",
+          "smartFormat": "Định dạng thông minh",
+          "smartFormatHint": "Thêm dấu câu, viết hoa, và định dạng số / ngày.",
+          "punctuate": "Dấu câu",
+          "punctuateHint": "Chèn dấu chấm và dấu phẩy dựa trên nhịp điệu.",
+          "keyterm": "Tăng cường từ vựng",
+          "keytermHint": "Mỗi dòng một thuật ngữ. Các từ đặc thù theo lĩnh vực cần được ưu tiên.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "Khớp ngôn ngữ nghiêm ngặt",
+          "strictLanguageHint": "Từ chối âm thanh ở ngôn ngữ khác (nhanh hơn nhưng kém linh hoạt).",
+          "diarize": "Phân biệt người nói",
+          "diarizeHint": "Phát nhãn người nói khi phát hiện nhiều giọng nói.",
+          "languageId": "Nhận dạng ngôn ngữ",
+          "languageIdHint": "Phát thẻ ngôn ngữ phát hiện được theo từng token.",
+          "endpointing": "Phát hiện điểm kết thúc",
+          "endpointingHint": "Tự động hoàn tất token khi người nói tạm dừng.",
+          "context": "Bối cảnh lĩnh vực",
+          "contextHint": "Mô tả tự do về chủ đề đang thảo luận. Tên, tổ chức, thuật ngữ.",
+          "contextPlaceholder": "Cuộc họp với Acme Corp về doanh thu Q3.\nNgười tham dự: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "Mô hình phiên dịch tệp",
+          "modelDefault": "Mặc định (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize tốt nhất cho phân tách người nói. mini rẻ hơn nhưng không phân tách. OpenAI giới hạn mỗi lần tải lên ở 25 MB âm thanh. SeaMeet trích xuất video dưới dạng opus mono 16 kbps, vì vậy một lần tải lên bao trùm khoảng 3–4 giờ cuộc họp.",
+          "contextPrompt": "Bối cảnh miền",
+          "contextPromptPlaceholder": "Thảo luận về doanh thu Q3 của Acme Corp. Người tham dự: Alice Chen, Bob Park.",
+          "contextPromptHint": "Mô tả tự do hướng OpenAI tới từ vựng chuyên ngành.",
+          "realtimeModel": "Mô hình phiên dịch trực tiếp",
+          "realtimeModelDefault": "Mặc định (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe là mặc định cho cuộc họp — VAD máy chủ chốt từng câu phát biểu kèm mốc thời gian. gpt-4o-mini-transcribe hoạt động giống vậy nhưng rẻ hơn. gpt-realtime-whisper có độ trễ thấp nhất nhưng phiên dịch dồn vào một dòng (không chốt theo câu trong khi ghi) — phù hợp giao diện chat, không phù hợp cuộc họp.",
+          "refreshModels": "Làm mới danh sách mô hình",
+          "refreshing": "Đang làm mới…",
+          "turnDetection": "Phát hiện lượt nói",
+          "turnDetectionServerVad": "VAD máy chủ (phụ đề trực tiếp)",
+          "turnDetectionNone": "Không (chốt khi dừng)",
+          "turnDetectionHint": "VAD máy chủ xuất bản phiên dịch theo từng câu trong khi người nói đang nói. Tắt cho luồng push-to-talk khi bộ đệm chỉ được gửi lúc dừng ghi.",
+          "noiseReduction": "Giảm nhiễu",
+          "noiseReductionNear": "Trường gần (mic laptop / tai nghe)",
+          "noiseReductionFar": "Trường xa (mic phòng họp)",
+          "noiseReductionOff": "Tắt",
+          "noiseReductionHint": "Bộ lọc tiền xử lý áp dụng cho âm thanh đầu vào trước khi phiên dịch. Chọn theo vị trí đặt mic của bạn.",
+          "includeLogprobs": "Bao gồm độ tin cậy theo token",
+          "includeLogprobsHint": "Yêu cầu xác suất log cho từng token đã phiên dịch. Dùng để tô màu các từ độ tin cậy thấp. Tăng kích thước phản hồi — tắt nếu không cần.",
+          "includeLogprobsDiarize": "gpt-4o-transcribe-diarize không hỗ trợ.",
+          "useStreaming": "Truyền phát phiên dịch tệp",
+          "useStreamingHint": "Hiển thị văn bản từng phần khi đang phiên dịch bản ghi. gpt-4o-transcribe và gpt-4o-mini-transcribe hỗ trợ; các mô hình khác bỏ qua.",
+          "useStreamingDiarize": "gpt-4o-transcribe-diarize không hỗ trợ.",
+          "contextPromptDiarize": "gpt-4o-transcribe-diarize không hỗ trợ.",
+          "contextPromptModelSupport": "Với whisper-1, prompt là danh sách từ khóa. Với gpt-4o-transcribe và gpt-4o-mini-transcribe, prompt là văn bản tự do (ví dụ: \"dự kiến từ vựng kỹ thuật\"). Prompt không hỗ trợ với gpt-realtime-whisper trong phiên GA Realtime và với gpt-4o-transcribe-diarize."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "Mô hình phiên âm trực tiếp",
+          "fileTranscriptionModelLabel": "Mô hình phiên âm tệp",
+          "fileTranscriptionModelHint": "Cấu hình trong LLM Provider → Default Model. Cùng một mô hình Gemini được sử dụng cho phiên âm tệp hàng loạt, tóm tắt, OCR ảnh chụp màn hình, wiki và trò chuyện.",
+          "deepAnalysisLabel": "Phân tích chuyên sâu với video"
+        }
+      }
+    },
+    "llm": {
+      "title": "Nhà cung cấp LLM (Tóm tắt bản ghi, Trích xuất hình ảnh, Tạo wiki)",
+      "signup": "Lấy khóa API",
+      "installGuide": "Hướng dẫn cài đặt",
+      "tutorial": "Hướng dẫn thiết lập",
+      "apiKey": "Khóa API",
+      "testing": "Đang kiểm tra…",
+      "test": "Kiểm tra kết nối",
+      "keyDescription": "Khóa API của bạn được mã hóa và lưu trữ cục bộ trên thiết bị này.",
+      "cliStatus": "Trạng thái CLI",
+      "usesLocalCLI": "Sử dụng xác thực CLI cục bộ (không cần khóa API).",
+      "testOk": "Đã kết nối",
+      "testFail": "Kết nối thất bại",
+      "advanced": {
+        "title": "Cài đặt nâng cao",
+        "reset": "Đặt lại về mặc định",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "Mô hình mặc định (Tóm tắt / Ảnh chụp màn hình / Wiki / Trò chuyện)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "Lưu ý: chế độ sâu của tóm tắt âm thanh sử dụng Gemini bất kể cài đặt này. OCR ảnh chụp màn hình tuân theo công tắc ở trên.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "Native multimodal. Free tier available with API key."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o and GPT-5 family. Pay-as-you-go from the OpenAI platform."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic Console API key."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash and deepseek-v4-pro. Low cost per token, thinking mode supported."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "One key, hundreds of models from many vendors."
+        },
+        "claude-code": {
+          "label": "Claude Code (local CLI)",
+          "desc": "Uses your installed claude CLI. No API key needed."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "Uses your installed codex CLI. Rides on OpenAI Plus / Pro."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (Google auth)",
+          "desc": "Uses your installed gemini CLI. OAuth or API key."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "Foundation models on AWS. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "Sử dụng LLM chính cho OCR ảnh chụp màn hình",
+      "visionToggleHint": "Gửi các tác vụ ảnh chụp màn hình/OCR đến nhà cung cấp bạn đã chọn ở trên. Tắt (mặc định): luôn sử dụng Gemini. Tự động quay lại Gemini nếu nhà cung cấp của bạn không chấp nhận hình ảnh.",
+      "visionUnsupportedBadge": "OCR qua Gemini dự phòng",
+      "visionUnsupportedTooltip": "Bộ chuyển đổi của nhà cung cấp này chưa hỗ trợ đầu vào hình ảnh. OCR ảnh chụp màn hình sẽ chuyển sang Gemini."
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "Chưa có wiki nào",
+    "Description": "Wiki được tự động tạo từ ghi chú và cuộc họp của bạn. Tạo ghi chú hoặc ghi lại cuộc họp để bắt đầu.",
+    "TakeNoteCta": "Tạo ghi chú",
+    "StartRecordingCta": "Bắt đầu ghi"
+  },
+  "WikiPaywall": {
+    "Headline": "Ghi chú của bạn, được tổ chức tự động",
+    "Subhead": "Một cơ sở kiến thức được xây dựng từ ghi chú và cuộc họp của bạn — bởi AI.",
+    "ChaosLabel": "Ghi chú của bạn",
+    "ChaosCaption": "Tự do, không cần cấu trúc",
+    "WikiLabel": "Wiki của bạn",
+    "WikiCaption": "Tự động tổ chức và liên kết",
+    "Explainer": "Viết ghi chú theo cách bạn vẫn luôn làm. Khi bạn viết, AI trích xuất những người, chủ đề, công ty và cuộc họp bạn đề cập và đan dệt chúng thành một wiki có cấu trúc — tự động liên kết và luôn được cập nhật.",
+    "Cta": "Đăng ký để bật Wiki"
+  },
+  "NotesShowcase": {
+    "Headline": "Ghi chú phát triển thành một cơ sở kiến thức",
+    "Subhead": "Markdown đơn giản. Ghi âm, quay video hoặc chụp màn hình ngay trong ghi chú. Để AI tóm tắt và liên kết mọi thứ.",
+    "Feature1Title": "Markdown + wikilinks",
+    "Feature1Desc": "Nhập Markdown. Dùng [[wikilinks]] để kết nối ghi chú. Không có định dạng độc quyền.",
+    "Feature2Title": "Cây thư mục theo cách của bạn",
+    "Feature2Desc": "Kéo để sắp xếp. Lồng nhau không giới hạn. Đổi tên cập nhật wikilinks trong tất cả ghi chú.",
+    "Feature3Title": "Bản ghi, inline",
+    "Feature3Desc": "Ghi âm, quay video hoặc chụp màn hình ngay bên cạnh ghi chú của bạn. Được nhúng — không bị chôn vùi trong ứng dụng khác.",
+    "Feature4Title": "AI tóm tắt và kết nối",
+    "Feature4Desc": "LLM tóm tắt mỗi ghi chú, trích xuất thực thể và tự động xây dựng wiki về con người, chủ đề và cuộc họp.",
+    "Tagline": "Tích hợp sẵn tính năng ghi. Ghi chú liên kết. Markdown di động. Lưu dưới dạng tệp văn bản thuần trong thư mục của bạn — của bạn mãi mãi.",
+    "CreateCta": "Tạo ghi chú đầu tiên của bạn"
   }
 }

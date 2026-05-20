@@ -21,6 +21,9 @@
     "AutomationSection": "Automation",
     "AutoSummary": "Auto-generate summary",
     "AutoSummaryDesc": "Runs after every recording finishes",
+    "PreUploadAudio": "Pre-upload audio for instant deep summary",
+    "PreUploadAudioDesc": "Streams audio to Gemini during recording so deep-mode summary returns in seconds instead of ~30 s. Requires a Gemini API key. Uses upload bandwidth while recording.",
+    "SummaryLanguageAutoDetect": "Auto-detect (may mix scripts)",
     "ClaudeKey": {
       "ClearKey": "Remove saved key",
       "CliInstalled": "Installed ({{version}})",
@@ -71,6 +74,26 @@
       "Remove": "Remove Copilot integration",
       "Section": "GitHub Copilot"
     },
+    "Gemini": {
+      "Configured": "API key configured",
+      "DefaultModel": "Default Model",
+      "Description": "Chat with your meetings using Gemini models. Same key as the Gemini summary and live transcription providers.",
+      "GetKeyLink": "Get a free API key from Google AI Studio →",
+      "NotConfigured": "No API key configured",
+      "Refresh": "Re-detect Gemini",
+      "Remove": "Remove Gemini key",
+      "Section": "Gemini"
+    },
+    "OpenAI": {
+      "Configured": "API key configured",
+      "DefaultModel": "Default Model",
+      "Description": "Chat with your meetings using GPT models. Same key as the OpenAI summary and live transcription providers.",
+      "GetKeyLink": "Get an API key from OpenAI Platform →",
+      "NotConfigured": "No API key configured",
+      "Refresh": "Re-detect OpenAI",
+      "Remove": "Remove OpenAI key",
+      "Section": "OpenAI"
+    },
     "Provider": {
       "Detected": "Detected",
       "Hint": "You can also switch providers per-conversation in the chat panel.",
@@ -82,7 +105,6 @@
     "EnableToggle": "Enable AI-powered summaries",
     "EnableToggleDesc": "Requires a free Gemini API key",
     "DefaultModel": "Default Model",
-    "GeminiSection": "Gemini",
     "GetKeyLink": "Get a free API key from Google AI Studio →",
     "GroupTitle": "AI Features",
     "HideKey": "Hide key",
@@ -93,9 +115,7 @@
     "KeyPlaceholderSaved": "••••••••• (saved)",
     "KeyTesting": "Testing...",
     "KeyVerified": "Key verified",
-    "ManagedKeyDesc": "Your API key is automatically provisioned. No configuration needed.",
-    "ManagedKeyStatus": "Managed key — provided by SeaMeet",
-    "MenuItem": "AI Extraction & Summary",
+    "MenuItem": "AI Transcription, Extraction, Summary, Wiki",
     "ModelLabel": "Gemini Model",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
@@ -110,12 +130,9 @@
       "Gemini3ProSub": "Maximum capability"
     },
     "ModelSection": "AI Model",
-    "PageTitle": "AI Extraction & Summary",
-    "QuotaLoading": "Loading quota...",
-    "QuotaRefresh": "Refresh quota",
-    "QuotaRemaining": "{{remaining}} / {{limit}} tokens remaining",
-    "QuotaResetDate": "Resets on {{date}}",
-    "QuotaSection": "Usage Quota",
+    "PageTitle": "AI Transcription, Extraction, Summary, Wiki",
+    "RemoveKey": "Remove",
+    "SaveKey": "Save key",
     "Saving": "Saving...",
     "SelectedModel": "Selected: {{model}}",
     "ShowAllModels": "Show all {{count}} models",
@@ -123,7 +140,40 @@
     "ShowKey": "Show key",
     "TestKey": "Save & Verify",
     "SummaryLanguage": "Summary output language",
-    "SummaryLanguageDesc": "Applied to transcript + summary + chapters. Auto-detect matches the spoken language."
+    "SummaryLanguageDesc": "Applied to transcript + summary + chapters. Auto-detect matches the spoken language.",
+    "PostMeetingSummaryLanguage": "Post-meeting summary language",
+    "PostMeetingSummaryLanguageDesc": "Applied to the post-meeting transcript + summary (batch). Live captions use the Spoken language picker above.",
+    "Job": {
+      "Record": "Record meetings",
+      "RecordSub": "Local · always works",
+      "Transcribe": "Transcribe meetings",
+      "Summarize": "Summarize meetings",
+      "WriteNote": "Write a note",
+      "BuildWikis": "Build wikis from notes & meetings",
+      "AskQuestions": "Ask about past meetings",
+      "SearchScreenshots": "Search inside screenshots"
+    },
+    "SummaryConfigSection": "Summary Configuration",
+    "ImageExtractionSection": "Image Extraction",
+    "UseMainLlmForOcrHint": "Routes screenshot OCR to your selected LLM provider. Off (default): always uses Gemini. Automatically falls back to Gemini if the provider can't accept the image."
+  },
+  "AISummaryQuality": {
+    "Heading": "AI Summary Quality",
+    "MasterToggleLabel": "Use Deep Analysis when a Gemini key is configured",
+    "MasterToggleHelp": "Gemini reads the audio and video directly to produce distinct speaker names, more accurate quotes, and richer summaries. The Fast (transcript-based) summary stays your default; Deep runs automatically in the background and replaces the Fast summary when it finishes.",
+    "AdvancedSection": "Advanced",
+    "PreUploadLabel": "Pre-upload audio/video in background during recording",
+    "PreUploadHelp": "Streams the recording to Gemini while you record so Deep finishes in seconds after stop.",
+    "TokenEstimateHeading": "Estimated Gemini token usage per Deep run",
+    "TokenEstimateInput": "Input",
+    "TokenEstimateOutput": "Output",
+    "TokenEstimate10MinAudio": "10 min audio",
+    "TokenEstimate10MinVideo": "10 min video",
+    "TokenEstimate1HrAudio": "1 hr audio",
+    "TokenEstimate1HrVideo": "1 hr video",
+    "TokenEstimateNote": "Token rates: audio ≈ 32 tok/s, video ≈ 263 tok/s (1 fps frames + audio track). Output budget capped at 32K per single-call run, 16K per chunked-summary run. Free-tier daily quotas apply (e.g. 500 RPD on Flash-Lite Latest).",
+    "DisabledStateBanner": "Multimodal Deep Analysis requires a Gemini API key. Without one, only Fast (transcript-based) summaries are available, generated by your selected LLM provider.",
+    "DisabledStateAddKey": "Add a Gemini API key →"
   },
   "AISummary": {
     "ApplyMerge": "Apply",
@@ -133,6 +183,33 @@
     "Copy": "Copy",
     "EditSegmentSpeaker": "Click to reassign this segment",
     "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
+    "ReRunDeep": "Re-run Deep Analysis (uses additional Gemini tokens)",
+    "ReRunSummary": "Re-run summary",
+    "DeepProgress": {
+      "Title": "Deep Analysis running",
+      "Cancel": "Cancel",
+      "Stage": {
+        "preparing": "preparing",
+        "uploading": "uploading file",
+        "uploading-wait": "Gemini processing",
+        "analyzing": "analyzing",
+        "extracting": "extracting",
+        "saving": "saving",
+        "complete": "done"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ Deep summary ready",
+      "Badge": "Deep · Gemini watched the recording"
+    },
+    "DeepFailed": {
+      "Toast": "Deep Analysis failed: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "Use Deep Analysis",
+      "Desc": "Gemini watches the audio + video to give you distinct speaker names, verbatim quotes, and a richer summary.",
+      "Run": "Run Deep Analysis"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "Invalid API key. Please check your API key in Settings.",
       "NO_API_KEY": "No Gemini API key configured. Please add your API key in Settings.",
@@ -178,6 +255,8 @@
     "Retry": "Retry",
     "SeekToTimestamp": "Seek to this timestamp",
     "ConfigureApiKey": "Configure your Gemini API key to generate AI summaries and transcripts.",
+    "ConfigureProviders": "Enable live transcription and set up an LLM provider in Settings to generate AI summaries.",
+    "OpenSettings": "Open Settings",
     "ConfigureKey": "Configure API Key",
     "SetupRequired": "Sign in with a subscription or BYOK to process the video.",
     "Tab": {
@@ -288,6 +367,7 @@
     },
     "NewSession": "New session",
     "SwitchProvider": "Switch provider",
+    "SwitchModel": "Switch model",
     "NoSessions": "No sessions yet. Start a conversation below.",
     "NotConfigured": "Configure an agent tool or key to use the Agent.",
     "ConfigureKey": "Configure API Key",
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "How SeaMeet AI Works",
       "Subtitle": "BYOK — Bring Your Own Key",
-      "WhatIsBYOK": "With BYOK, your recordings and data go directly from your device to Google or Anthropic. Nothing passes through SeaMeet servers — maximum privacy for you and your team.",
-      "WhatYouNeed": "What you'll set up after subscribing",
-      "GeminiTitle": "Google AI Studio Key (Limited Free)",
-      "GeminiDesc": "Powers live transcription, post-meeting summaries, and analysis. Google offers a generous free tier — most users never pay a cent.",
-      "AgentTitle": "AI Agent — choose one option (Limited Free)",
-      "AgentOption1": "GitHub Copilot — 50 free premium chats/month (or more with Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — if you already have Claude Pro or Max, you're covered",
-      "AgentOption3": "Anthropic API key — for direct API access",
-      "Continue": "Continue to Subscribe",
-      "WhyBYOK": {
-        "Title": "Why Bring Your Own Key?",
-        "Answer": "Much better privacy — your data stays with trusted enterprises like Google and Anthropic, never SeaMeet. The free tiers from these providers are generous and will last most users a long time."
-      },
-      "WhyMonthly": {
-        "Title": "Why does SeaMeet charge monthly?",
-        "Answer": "SeaMeet updates rapidly with new AI features. Your subscription keeps you on the latest version. Without it, you'd pay a one-time license and be stuck with frozen features — like buying Office 2012 and staying on Office 2012 forever."
-      }
+      "Continue": "Continue to Subscribe"
     },
     "Coupon": {
       "Title": "Launch Promotion",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub Copilot",
       "Authenticated": "Authenticated",
       "CopilotUsage": "Set as preferred agent provider?",
-      "CopilotFreeWarning": "GitHub Copilot Free includes only 50 agent/chat requests per month. Great for a quick test, but you may hit the limit fast. Upgrade to Copilot Pro for higher limits, or use SeaMeet Desktop Pro for unlimited AI access.",
+      "CopilotFreeWarning": "GitHub Copilot Free includes only 50 agent/chat requests per month. Great for a quick test, but you may hit the limit fast. Upgrade to Copilot Pro for higher limits, or use a different provider (Claude or Gemini) for more headroom.",
       "KeepClaude": "Keep Claude as default",
       "UseCopilot": "Use GitHub Copilot as default",
       "CopilotLabel": "GitHub Copilot",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "Not detected",
       "CopilotSignupHint": "Want to try GitHub Copilot as an alternative agent? Sign up for a free plan at github.com/features/copilot/plans (includes 50 agent/chat requests per month), then install the Copilot CLI and run \"copilot login\".",
       "CopilotFlatUsage": "Used for: AI agent (alternative to Claude). No API key needed — uses your GitHub login.",
-      "Guide": {
-        "Intro": "SeaMeet AI has two independent feature areas — set up what you need.",
-        "SectionAiSummary": "AI Summary",
-        "SectionAiSummaryBadge": "Required",
-        "SectionAiSummarySubtitle": "Get the Gemini API Key (Free)",
-        "SectionAiAgent": "AI Agent",
-        "SectionAiAgentBadge": "Need at least one",
-        "OptionCopilotTitle": "GitHub Copilot CLI (Free)",
-        "OptionClaudeTitle": "Claude Code CLI (Optional, paid)",
-        "Or": "OR",
-        "Step1Title": "Step 1 — Read These Carefully",
-        "Step1Need": "You'll need 2 things:",
-        "Step1Item1": "Gemini API key — for AI summary and live transcription",
-        "Step1Item2": "GitHub Copilot CLI or Claude Code CLI — for AI agent",
-        "Step2Title": "Step 2 — (Free) Get the Gemini API Key",
-        "Step2Desc1": "Click ",
-        "Step2GetKey": "Get API Key",
-        "Step2Desc2": " to create a free Gemini API key. More info at ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "Step 3 — (Free) Get the GitHub Copilot CLI",
-        "Step3Install": "Click ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " or quick install:",
-        "Step3Login": "Run: ",
-        "Step3LoginDesc": " (free, 50 chats/month)",
-        "Step3Refresh": "Click refresh below to detect Copilot.",
-        "Step3Select": "Click GitHub Copilot below to set as preferred.",
-        "Step4Title": "Step 4 — (Optional, paid) Get Claude Code CLI",
-        "Step4Already": "Most likely you already have it if you installed Claude Code before.",
-        "Step4Install": "Click ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " or quick install:",
-        "Step4Mac": "macOS / Linux: ",
-        "Step4Win": "Windows: ",
-        "Step4WinReq": "requires ",
-        "Step4GitWin": "Git for Windows",
-        "Step4Auth": "Run: ",
-        "Step4AuthDesc": " (requires Claude Pro or Max plan)",
-        "Step4Refresh": "Click refresh below to detect Claude Code.",
-        "Step4Select": "Click Claude Code below to set as preferred.",
-        "StepComplete": {
-          "AgentBoth": "Both Claude and Copilot are configured",
-          "AgentClaude": "Claude is configured",
-          "AgentCopilot": "Copilot is configured",
-          "Summary": "Setup complete"
+      "Acronym": "BYOK (Bring Your Own Key)",
+      "Explanation": "BYOK means you connect your own AI provider keys; your data goes direct to providers you trust, not through SeaMeet.",
+      "Welcome": {
+        "Title": "Welcome to BYOK Pro (Bring Your Own Key)",
+        "Subtitle": "$4.99/mo · Your data, your providers",
+        "PickOne": "Connect one key and you're done.",
+        "OneKeyTitle": "ONE KEY, ALL JOBS COVERED",
+        "OneKeyBadge": "Recommended",
+        "MixTitle": "MIX & MATCH",
+        "MixSubtitle": "for power users",
+        "OneKeyDoList": "Get done:",
+        "MixSupportList": "Pick a different service per job. We support:",
+        "MixSttHeading": "Transcription (STT):",
+        "MixLlmHeading": "Summary / Notes / Wiki (LLM):",
+        "MixAgentHeading": "AI agent (LLM + tools):",
+        "MixCliHeading": "Local CLIs (no key):",
+        "PickOneRadio": "Pick one:",
+        "GeminiDesc": "Generous free tier from Google AI Studio; upgrade later for better quality and quota.",
+        "OpenAIDesc": "Use your own paid key. ChatGPT quality.",
+        "GetFreeKey": "Get free key →",
+        "PasteHere": "Paste it here",
+        "OpenAdvanced": "Open advanced →",
+        "PowerUserTitle": "Already a power user?",
+        "PowerUserDesc": "If you have Claude Code, GitHub Copilot, Codex CLI, or Gemini CLI installed, you can use them for the AI agent — no extra API key needed. We'll detect them next.",
+        "WhyTwoProviders": "Why Gemini or OpenAI? They're the only services that handle both transcription AND summaries with one key. Anything else needs a paired second key.",
+        "SetupLater": "I'll set up later — show me around"
+      },
+      "Receipt": {
+        "Heading": "{{provider}} connected.",
+        "YouCanNow": "You can now:",
+        "Job1": "Record meetings",
+        "Job2": "Transcribe them",
+        "Job3": "Summarize with key decisions, actions, chapters",
+        "Job4": "Write structured notes",
+        "Job5": "Build wikis",
+        "Job6": "Ask questions about past meetings",
+        "Job7": "Search inside screenshots",
+        "CTAStart": "Start a recording →",
+        "CTAScreenshot": "Take a screenshot →",
+        "CTAWriteNote": "Write a Note →",
+        "CustomizeCTA": "Customize providers per job →",
+        "CLIDetected": "Detected: {{cli}} — use it for the agent?",
+        "UseDetectedCLI": "Use it",
+        "KeepDefault": "Keep default"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "Here's what $4.99/mo gets you",
+        "HeadlinePostSubscribe": "What your BYOK Pro subscription includes",
+        "HeadlineSettings": "Why you're on BYOK Pro",
+        "PrivacyTitle": "Privacy",
+        "PrivacyDesc": "Your data goes direct from your device to Google / Anthropic / OpenAI / etc. SeaMeet servers never see your recordings, transcripts, or summaries.",
+        "QualityTitle": "Quality",
+        "QualityDesc": "Pick the best model for each job. Gemini Live for transcription, Claude for writing, Deepgram for speaker separation.",
+        "CostTitle": "Cost control",
+        "CostDesc": "Pay providers directly. Most users stay on Gemini's generous free tier and never pay a cent for AI.",
+        "SovereigntyTitle": "Sovereignty",
+        "SovereigntyDesc": "Keys live in your OS keychain. Revoke any time. SeaMeet collects zero usage data on your AI calls."
+      },
+      "Manage": {
+        "Title": "Your AI provider keys",
+        "Subtitle": "Paste a key to switch providers, or open advanced settings for per-job tuning."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "What you get for $4.99/mo",
+          "Bullet1": "One key (Gemini or OpenAI) wires every AI feature.",
+          "Bullet2": "Record · transcribe · summarize · take notes · build wikis · ask about past meetings · search screenshots.",
+          "Bullet3": "Or mix providers per job — Deepgram for transcription, Claude for summaries, your favourite CLI for the agent."
+        },
+        "NewFAQ": {
+          "Q1": "What if I already have Claude Pro or GitHub Copilot?",
+          "A1": "You can use them for the AI agent — no extra API key. We auto-detect Claude Code, GitHub Copilot, Codex CLI, and Gemini CLI on your system.",
+          "Q2": "What providers can I use?",
+          "A2": "Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter, and Amazon Bedrock for AI. Deepgram and Soniox for transcription. Plus the four CLIs above.",
+          "Q3": "Is my data really not touched by SeaMeet?",
+          "A3": "Yes. Your recordings, transcripts, and summaries go directly from your device to the provider you choose. SeaMeet servers never see them. We see only your subscription status and which provider you configured (not the key, not the content).",
+          "Q4": "Why pay $4.99 if I'm bringing my own keys?",
+          "A4": "The subscription pays for SeaMeet's app development — multi-provider routing, live transcription, wiki generation, AI agent with tool use, screenshot OCR, and ongoing platform support. Your AI cost is separate and goes directly to the provider (often free on Gemini's tier)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "What is BYOK?",
-        "A1": "BYOK stands for Bring Your Own Key. You'll need 2 API keys: one from Google AI Studio (for transcription & summaries) and one from Anthropic (for AI questions & analysis). Google AI Studio usually gives you a free key. If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key. A guided setup wizard walks you through connecting both keys after checkout.",
+        "A1": "BYOK stands for Bring Your Own Key. You only need 1 API key — from either Google AI Studio (Gemini) or OpenAI — to power both meeting transcription & summaries and the AI agent chat. Google AI Studio usually offers a free key, so you can get started at no extra cost. Power users can also connect their own CLI tools (Claude Code, GitHub Copilot, etc.) for the AI agent chat. A guided setup wizard walks you through everything after checkout.",
         "Q2": "Why a monthly subscription?",
-        "A2": "Your subscription funds continuous updates, new AI model support, bug fixes, and new features. API costs are paid separately to Google and Anthropic using your own keys.",
-        "Q3": "How does licensing work?",
-        "A3": "1 account, up to 3 devices. Inactive devices are automatically freed after 30 days. You can also manually sign out a device to free up a slot."
-      },
-      "Desktop": {
-        "Q1": "What is Desktop Pro?",
-        "A1": "Desktop Pro includes built-in AI keys managed by SeaMeet — no need to create or manage your own API keys. Just subscribe and start using AI features immediately.",
-        "Q2": "How is it different from BYOK?",
-        "A2": "With Desktop Pro, SeaMeet provides and manages the API keys for you. You don't need to sign up for Google AI Studio or Anthropic separately.",
+        "A2": "Your subscription funds continuous updates, new AI model support, bug fixes, and new features. API costs are paid directly to Google, OpenAI, or other supported providers using your own keys.",
         "Q3": "How does licensing work?",
         "A3": "1 account, up to 3 devices. Inactive devices are automatically freed after 30 days. You can also manually sign out a device to free up a slot."
       },
       "Sync": {
         "Q1": "What is Sync Pro?",
-        "A1": "Sync Pro includes everything in Desktop Pro, plus cloud sync. Your recordings, transcripts, and summaries are synced across all your devices.",
+        "A1": "Sync Pro is a future tier with built-in AI (no API keys to manage), cloud sync across devices, and team collaboration. It's for users who want SeaMeet's AI features without bringing their own keys. Not available yet — click \"Request this\" on the plan card to email us if you'd like it, so we can prioritize.",
         "Q2": "What gets synced?",
         "A2": "Recordings, transcripts, AI summaries, and action items are all synced across your devices. Changes on one device appear on all others.",
         "Q3": "How does licensing work?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/month",
+        "Price": "$4.99/month",
         "Feature1": "AI transcription & summaries",
         "Feature2": "Use your own Gemini & Claude API keys",
         "Feature3": "Live transcription during meetings",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "GitHub Copilot has a free plan too.",
         "InfoNoteClaude": "If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key."
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "$15.99/month",
-        "Feature1": "Everything in BYOK Pro",
-        "Feature2": "Built-in AI — no API keys needed",
-        "Feature3": "Priority support",
-        "Feature4": "Advanced analytics"
-      },
       "Free": {
         "Name": "Free",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25.99/month",
-        "Feature1": "Everything in Desktop Pro",
+        "Feature1": "Built-in AI — no API keys needed",
         "Feature2": "Cloud sync across devices",
         "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library"
+        "Feature4": "Shared meeting library",
+        "RequestCTA": "Request this",
+        "RequestSubject": "I'd like Sync Pro for SeaMeet",
+        "RequestBody": "Hi SeaMeet team — I'm interested in Sync Pro (built-in AI with no API keys to manage, cloud sync, multi-device, team collaboration). Please let me know when it's available.\n\nThanks!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "If you use Claude App/Code: Anthropic may use your data for training unless you opt out",
         "Agent3": "If you use Anthropic API: Anthropic does not use your data for training"
       },
-      "Desktop": {
-        "Recording1": "Stay on your computer",
-        "Recording2": "Sync to SeaMeet.ai's Google Cloud account for processing",
-        "Recording3": "Google deletes the files after 48 hours",
-        "AIData1": "Gemini API produces it",
-        "AIData2": "Google does not use your data for training",
-        "AIData3": "SeaMeet.ai does not use your data for training",
-        "Agent1": "Anthropic API produces it",
-        "Agent2": "Anthropic does not use your data for training",
-        "Agent3": "SeaMeet.ai does not use your data for training"
-      },
       "Sync": {
         "Recording1": "Stay on your computer",
-        "Recording2": "Synced to SeaMeet.ai cloud",
+        "Recording2": "Synced to SeaMeet.ai cloud with encryption at rest",
         "Recording3": "Download from SeaMeet.ai cloud to another desktop device and stay synced",
-        "AIData1": "Same as Desktop Pro",
-        "Agent1": "Same as Desktop Pro"
+        "AIData1": "Gemini API produces it via SeaMeet-managed keys; Google does not use your data for training",
+        "Agent1": "Anthropic API produces it via SeaMeet-managed keys; Anthropic does not use your data for training"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "Power user: understand what BYOK is",
         "Item2": "Tech-savvy: have required API keys",
         "Item3": "Privacy-focused: control who sees your data"
-      },
-      "Desktop": {
-        "Item1": "Normal user: no hassle setup",
-        "Item2": "Privacy-focused: audio/image/recording data stays on your computer"
       },
       "Sync": {
         "Item1": "Most users: no hassle setup",
@@ -1272,10 +1340,26 @@
       "TurnCoverageHint": "2.5 default: only during speech. 3.1 default: every video frame (reads name plates even in silence).",
       "SendVideo": "Send video frames",
       "VideoFps": "Frame rate",
+      "VideoFpsOption_0_2": "0.2 fps (1 frame / 5 s)",
+      "VideoFpsOption_0_5": "0.5 fps (1 frame / 2 s, default)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
       "VideoQuality": "Frame JPEG quality",
+      "VideoQualityOption_0_3": "0.3 (smallest, blurry)",
+      "VideoQualityOption_0_5": "0.5 (bandwidth-friendly)",
+      "VideoQualityOption_0_7": "0.7 (balanced)",
+      "VideoQualityOption_0_85": "0.85 (default — good for on-screen names)",
+      "VideoQualityOption_0_95": "0.95 (maximum)",
       "VideoMaxWidth": "Max frame width",
+      "VideoMaxWidthOption_480": "480 px (smallest)",
+      "VideoMaxWidthOption_640": "640 px (bandwidth-friendly)",
+      "VideoMaxWidthOption_960": "960 px (default — good for on-screen names)",
+      "VideoMaxWidthOption_1280": "1280 px (larger)",
+      "VideoMaxWidthOption_1920": "1920 px (native 1080p)",
       "VideoQualityHint": "Raise quality + max width when Gemini misreads small tile labels (e.g. Zoom/Meet/Teams participant names). Higher values increase image-token usage — 1280 px typically jumps from the 258-token to the 1290-token tier per frame.",
       "EndSensitivity": "End-of-speech sensitivity",
+      "EndSensitivityHigh": "HIGH (fast flushes)",
+      "EndSensitivityLow": "LOW (longer turns)",
       "Default": "Default (HIGH — fast flushes)",
       "SilenceMs": "Silence before turn end",
       "VadHint": "Lower silence + HIGH end-sensitivity → shorter, more frequent transcript flushes.",
@@ -1583,12 +1667,29 @@
     "UpdateWikiFromNote": "Update wiki from this note",
     "WikiUpdateFailed": "Wiki update failed: {{error}}"
   },
+  "NotesShowcase": {
+    "Headline": "Notes that grow into a knowledge base",
+    "Subhead": "Plain Markdown. Record audio, video, or screenshots inline. Let AI summarize and link everything together.",
+    "Feature1Title": "Markdown + wikilinks",
+    "Feature1Desc": "Type Markdown. Use [[wikilinks]] to connect notes. No proprietary format.",
+    "Feature2Title": "Folder tree, your way",
+    "Feature2Desc": "Drag-to-organize. Infinite nesting. Renames update wikilinks across every note.",
+    "Feature3Title": "Recordings, inline",
+    "Feature3Desc": "Capture audio, video, or screenshots right next to your notes. They’re embedded — not buried in another app.",
+    "Feature4Title": "AI summarizes & connects",
+    "Feature4Desc": "LLMs summarize each note, extract entities, and auto-build a wiki of people, topics, and meetings.",
+    "Tagline": "Built-in recording. Linked notes. Portable Markdown. Stored as plain files in your folder — yours forever.",
+    "CreateCta": "Create your first note"
+  },
   "NotesView": {
     "EmptyTitle": "Pick a note",
     "SelectFromList": "Select a note from the list, or start a new one.",
     "NoNotes": "You have no notes yet — start your first one.",
     "CollapseSidebar": "Hide notes sidebar",
     "ExpandSidebar": "Show notes sidebar"
+  },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ Tip: After stop, Deep Analysis will run automatically to give you better speaker names and quotes from the audio/video."
   },
   "OCRAutoCopy": {
     "Copied": "Extracted text copied to clipboard",
@@ -1653,13 +1754,17 @@
     "Running": "Generating summary...",
     "Step": {
       "Preparing": "Preparing recording",
+      "PreparingFast": "Preparing transcript",
       "Uploading": "Uploading file",
       "UploadingWait": "Processing on server",
       "Analyzing": "Analyzing",
       "Extracting": "Extracting results",
       "Saving": "Saving artifacts",
       "PreparingImage": "Preparing image",
-      "AnalyzingImage": "Analyzing image"
+      "AnalyzingImage": "Analyzing image",
+      "ExtractingAudio": "Extracting audio",
+      "Transcribing": "Transcribing",
+      "TranscribingWith": "Transcribing with {{provider}}"
     }
   },
   "Player": {
@@ -1694,6 +1799,15 @@
     "AIAgentDesc": "Live transcription and AI interaction are available with a subscription.",
     "PostMeetingAI": "Post-Meeting AI",
     "PostMeetingAIDesc": "Summaries, action items, and insights will be generated after the recording completes.",
+    "NoteSynthesis": "AI synthesis",
+    "NoteSynthesisDesc": "Get a structured summary of this note + linked recording with BYOK Pro.",
+    "WikiList": "Wikis",
+    "WikiListDesc": "Auto-build a knowledge base from your notes and meetings with BYOK Pro.",
+    "ScreenshotAI": "Screenshot AI",
+    "ScreenshotAIDesc": "Describe images, extract text, and ask follow-up questions with BYOK Pro.",
+    "LockedChipTooltip": "Subscribe to enable",
+    "AgentReadOnlyBanner": "Subscribe to continue the conversation",
+    "GenericUpgradeCta": "Subscribe",
     "UnlockPremium": "Unlock with Premium",
     "Upgrade": "Upgrade"
   },
@@ -1883,7 +1997,9 @@
       "Description": "Description",
       "OCR": "Text (OCR)"
     },
-    "UnknownError": "Unknown error"
+    "UnknownError": "Unknown error",
+    "FallbackUsed": "{{from}} couldn't process the image — Gemini handled it instead.",
+    "FallbackHint": "Disable \"Use main LLM for screenshot OCR\" in Settings if this provider doesn't support vision."
   },
   "ScreenshotView": {
     "RecentLabel": "Recent screenshots"
@@ -2316,8 +2432,10 @@
       "BuildFromSelectionPrompt": "Comma-separated note filenames (relative to notes/):",
       "ToastMessage": "{{count}} new notes detected. Build wiki?",
       "BannerMessage": "{{count}} new notes since last build",
-      "BuildingExtracting": "Reading {{current}}/{{total}} notes",
-      "BuildingReducing": "Building {{current}}/{{total}} pages",
+      "BuildingExtracting": "Read {{current}} of {{total}} notes",
+      "BuildingExtractingWithCache": "Read {{current}} of {{total}} notes · {{skipCount}} reused from cache",
+      "BuildingReducing": "Built {{built}} of {{total}} pages",
+      "BuildingReducingWithFailures": "Built {{built}} of {{total}} pages · {{failed}} failed",
       "Building": "Building wiki — {{stage}}",
       "PausedFor": "rate limit: {{seconds}}s",
       "Cancel": "Cancel",
@@ -2345,6 +2463,22 @@
   "WikiFeature": {
     "SettingsLabel": "Auto-update wiki from notes",
     "SettingsDesc": "Builds a knowledge base of entities, people, and topics from your notes and recordings. Off by default."
+  },
+  "WikiOnboarding": {
+    "Title": "No wikis yet",
+    "Description": "Wikis are auto-built from your notes and meetings. Take a note or record a meeting to get started.",
+    "TakeNoteCta": "Take a Note",
+    "StartRecordingCta": "Start Recording"
+  },
+  "WikiPaywall": {
+    "Headline": "Your notes, automatically organized",
+    "Subhead": "A knowledge base built from your notes & meetings — by AI.",
+    "ChaosLabel": "Your notes",
+    "ChaosCaption": "Free-form, no structure required",
+    "WikiLabel": "Your wiki",
+    "WikiCaption": "Auto-organized & linked",
+    "Explainer": "Write notes the way you always have. As you go, AI extracts the people, topics, companies, and meetings you mention and weaves them into a structured wiki — automatically linked and kept up to date.",
+    "Cta": "Subscribe to enable Wikis"
   },
   "WikiQuickOpen": {
     "Placeholder": "Search wiki pages by name…",
@@ -2452,5 +2586,254 @@
       "floating": "Switched to floating layout"
     },
     "introToast": "New: Floating layout available. Click the layout icon in the header to try it."
+  },
+  "settings": {
+    "stt": {
+      "title": "Speech To Text Provider (Live Caption, File Transcription)",
+      "apiKey": "API key",
+      "getKey": "Get a key",
+      "signup": "Get API key",
+      "tutorial": "Setup tutorial",
+      "keyDescription": "Your API key is encrypted and stored locally on this device.",
+      "test": "Test connection",
+      "testing": "Testing…",
+      "testOk": "Connected",
+      "testFail": "Connection failed",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Free tier with a Google account. Best for casual use."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime for live transcription, Whisper / gpt-4o-transcribe for file transcription."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "Best English accuracy and lowest latency. $200 free credit on signup."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "Best multilingual accuracy. Paid plans only — credit card required."
+        }
+      },
+      "language": {
+        "label": "Spoken language",
+        "sublabel": "Hint for live transcription. Auto-detect works for most cases.",
+        "sonioxSublabel": "Hints for live transcription. Add multiple for code-switching meetings.",
+        "geminiSublabel": "Gemini auto-detects from audio (hint not used).",
+        "openaiSublabel": "First language is sent as the API hint; additional ones are appended to the domain prompt (where supported). gpt-4o-transcribe-diarize only uses the first.",
+        "addLanguage": "Add language",
+        "remove": "Remove language",
+        "auto": "Auto-detect",
+        "en": "English",
+        "zh-CN": "Chinese (Simplified)",
+        "zh-TW": "Chinese (Traditional)",
+        "es": "Spanish",
+        "ja": "Japanese",
+        "ko": "Korean",
+        "fr": "French",
+        "de": "German",
+        "pt": "Portuguese",
+        "ru": "Russian",
+        "it": "Italian",
+        "nl": "Dutch",
+        "ar": "Arabic",
+        "vi": "Vietnamese",
+        "id": "Indonesian",
+        "th": "Thai",
+        "tr": "Turkish",
+        "pl": "Polish",
+        "uk": "Ukrainian",
+        "hi": "Hindi",
+        "fil": "Filipino",
+        "ms": "Malay"
+      },
+      "speakerLabel": "Speaker {{n}}",
+      "advanced": {
+        "title": "Advanced settings",
+        "reset": "Reset to defaults",
+        "deepgram": {
+          "model": "Model",
+          "modelDefault": "Auto (nova-3 for known language, nova-2-general for auto-detect)",
+          "modelHint": "Leave on Auto unless you have a specific reason. nova-3 has the best English accuracy but doesn't support every language in auto-detect mode — nova-2-general covers 36+ languages including Chinese.",
+          "diarize": "Speaker diarization",
+          "diarizeHint": "Emit speaker labels (S0, S1, …) when multiple voices are detected.",
+          "smartFormat": "Smart formatting",
+          "smartFormatHint": "Punctuate, capitalize, and format numbers / dates.",
+          "punctuate": "Punctuation",
+          "punctuateHint": "Insert periods and commas based on cadence.",
+          "keyterm": "Vocabulary boost",
+          "keytermHint": "One term per line. Domain-specific words to weight.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "Strict language match",
+          "strictLanguageHint": "Reject audio in other languages (faster but less flexible).",
+          "diarize": "Speaker diarization",
+          "diarizeHint": "Emit speaker labels when multiple voices are detected.",
+          "languageId": "Language identification",
+          "languageIdHint": "Emit per-token detected-language tags.",
+          "endpointing": "Endpoint detection",
+          "endpointingHint": "Auto-finalize tokens when the speaker pauses.",
+          "context": "Domain context",
+          "contextHint": "Free-form description of what's being discussed. Names, organizations, jargon.",
+          "contextPlaceholder": "Meeting with Acme Corp about Q3 revenue.\nAttendees: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "File transcription model",
+          "modelDefault": "Default (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize is best for diarization. mini is cheaper but no diarization. OpenAI caps a single upload at 25 MB of audio. SeaMeet extracts video as 16 kbps mono opus, so one upload covers roughly 3–4 hours of meeting.",
+          "realtimeModel": "Live transcription model",
+          "realtimeModelDefault": "Default (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe is the meeting default — server VAD finalizes each utterance with timestamps. gpt-4o-mini-transcribe is the same with lower cost. gpt-realtime-whisper has the lowest latency but accumulates the transcript on one growing line (no per-utterance finalization during recording) — best for chat UIs, not meetings.",
+          "refreshModels": "Refresh model list",
+          "refreshing": "Refreshing…",
+          "turnDetection": "Turn detection",
+          "turnDetectionServerVad": "Server VAD (live captions)",
+          "turnDetectionNone": "None (finalize on stop)",
+          "turnDetectionHint": "Server VAD emits per-utterance transcripts as the speaker talks. Turn it off for push-to-talk flows where the buffer is committed only when recording stops.",
+          "noiseReduction": "Noise reduction",
+          "noiseReductionNear": "Near field (laptop / headset mic)",
+          "noiseReductionFar": "Far field (conference room mic)",
+          "noiseReductionOff": "Off",
+          "noiseReductionHint": "Pre-filter applied to input audio before transcription. Choose the option matching your mic placement.",
+          "includeLogprobs": "Include per-token confidence",
+          "includeLogprobsHint": "Request log probabilities for each transcribed token. Used to color-code low-confidence words. Adds payload size — leave off if not needed.",
+          "includeLogprobsDiarize": "Not supported by gpt-4o-transcribe-diarize.",
+          "useStreaming": "Stream file transcription",
+          "useStreamingHint": "Show live partial text while a recording is being transcribed. Supported by gpt-4o-transcribe and gpt-4o-mini-transcribe; ignored otherwise.",
+          "useStreamingDiarize": "Not supported by gpt-4o-transcribe-diarize.",
+          "contextPrompt": "Domain context",
+          "contextPromptPlaceholder": "Discussion of Acme Corp Q3 revenue. Attendees: Alice Chen, Bob Park.",
+          "contextPromptHint": "Free-form description that biases OpenAI toward domain vocabulary.",
+          "contextPromptDiarize": "Not supported by gpt-4o-transcribe-diarize.",
+          "contextPromptModelSupport": "For whisper-1, the prompt is a list of keywords. For gpt-4o-transcribe and gpt-4o-mini-transcribe, the prompt is a free-text string (e.g. \"expect words related to technology\"). Prompt is not supported with gpt-realtime-whisper in GA Realtime sessions or with gpt-4o-transcribe-diarize."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "Live transcription model",
+          "fileTranscriptionModelLabel": "File transcription model",
+          "fileTranscriptionModelHint": "Configure in LLM Provider → Default Model. The same Gemini model is used for batch file transcription, summary, screenshot OCR, wiki, and chat.",
+          "deepAnalysisLabel": "Deep Analysis with Videos"
+        }
+      }
+    },
+    "llm": {
+      "title": "LLM Provider (Recording Summary, Image Extraction, Wiki Generation)",
+      "signup": "Get API key",
+      "installGuide": "Install guide",
+      "tutorial": "Setup tutorial",
+      "apiKey": "API key",
+      "testing": "Testing…",
+      "test": "Test connection",
+      "keyDescription": "Your API key is encrypted and stored locally on this device.",
+      "cliStatus": "CLI status",
+      "usesLocalCLI": "Uses local CLI auth (no API key needed).",
+      "testOk": "Connected",
+      "testFail": "Connection failed",
+      "advanced": {
+        "title": "Advanced settings",
+        "reset": "Reset to defaults",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "Default Model (Summary / Screenshot / Wiki / Chat)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "Note: Audio-summary deep mode uses Gemini regardless of this setting. Screenshot/OCR follows the toggle above.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "Native multimodal. Free tier available with API key."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o and GPT-5 family. Pay-as-you-go from the OpenAI platform."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic Console API key."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash and deepseek-v4-pro. Low cost per token, thinking mode supported."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "One key, hundreds of models from many vendors."
+        },
+        "claude-code": {
+          "label": "Claude Code (local CLI)",
+          "desc": "Uses your installed claude CLI. No API key needed."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "Uses your installed codex CLI. Rides on OpenAI Plus / Pro."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (Google auth)",
+          "desc": "Uses your installed gemini CLI. OAuth or API key."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "Foundation models on AWS. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "Use main LLM for screenshot OCR",
+      "visionToggleHint": "Sends screenshot/OCR jobs to your selected provider above. Off (default): always uses Gemini. Automatically falls back to Gemini if your provider can't accept the image.",
+      "visionUnsupportedBadge": "OCR via Gemini fallback",
+      "visionUnsupportedTooltip": "This provider's adapter doesn't yet support image input. Screenshot OCR will fall back to Gemini."
+    }
   }
 }

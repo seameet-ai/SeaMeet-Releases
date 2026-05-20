@@ -18,13 +18,14 @@
   "AIFeatures": {
     "ApiKeyLabel": "Chave de API Gemini",
     "ApiKeySection": "Chave de API Gemini",
-    "AutomationSection": "Automação",
     "AutoSummary": "Gerar resumo automaticamente",
     "AutoSummaryDesc": "É executado após o término de cada gravação",
+    "AutomationSection": "Automação",
     "ClaudeKey": {
+      "ApiKeyTitle": "Chave API",
       "ClearKey": "Remover chave salva",
-      "CliInstalled": "Instalado ({{version}})",
       "CliInstallLink": "Instale o Código Claude →",
+      "CliInstalled": "Instalado ({{version}})",
       "CliNotFound": "CLI não encontrado",
       "CliNotInstalled": "Claude CLI não encontrado — instale-o e faça login para autenticar:",
       "CliSection": "Claude Código CLI",
@@ -33,7 +34,6 @@
       "HideKey": "Ocultar chave",
       "InstallMac": "macOS/Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "Chave API",
       "KeyInvalid": "Chave inválida",
       "KeyPlaceholder": "sk-formiga-...",
       "KeyPlaceholderSaved": "••••••••• (salvo)",
@@ -60,6 +60,7 @@
       "SourceNone": "Não configurado",
       "TestKey": "Salvar e verificar"
     },
+    "ClearKey": "Remover chave salva",
     "Copilot": {
       "Authenticated": "Autenticado",
       "DefaultModel": "Modelo padrão",
@@ -71,21 +72,32 @@
       "Remove": "Remover integração do Copilot",
       "Section": "Copiloto GitHub"
     },
-    "Provider": {
-      "Detected": "Detectado",
-      "Hint": "Você também pode trocar provedores por conversa no painel de chat.",
-      "NotAvailable": "Não disponível",
-      "Preferred": "Preferido",
-      "Section": "Provedor de agente preferido"
-    },
-    "ClearKey": "Remover chave salva",
+    "DefaultModel": "Modelo padrão",
     "EnableToggle": "Habilite resumos baseados em IA",
     "EnableToggleDesc": "Requer uma chave API Gemini gratuita",
-    "DefaultModel": "Modelo padrão",
-    "GeminiSection": "Gêmeos",
+    "Gemini": {
+      "Configured": "Chave de API configurada",
+      "DefaultModel": "Modelo padrão",
+      "Description": "Converse com suas reuniões usando modelos Gemini. Mesma chave dos provedores de resumo e transcrição ao vivo do Gemini.",
+      "GetKeyLink": "Obtenha uma chave de API gratuita no Google AI Studio →",
+      "NotConfigured": "Nenhuma chave de API configurada",
+      "Refresh": "Re-detectar Gemini",
+      "Remove": "Remover chave do Gemini",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "Obtenha uma chave de API gratuita do Google AI Studio →",
     "GroupTitle": "Recursos de IA",
     "HideKey": "Ocultar chave",
+    "Job": {
+      "AskQuestions": "Perguntar sobre reuniões passadas",
+      "BuildWikis": "Construir wikis a partir de notas e reuniões",
+      "Record": "Gravar reuniões",
+      "RecordSub": "Local · sempre funciona",
+      "SearchScreenshots": "Buscar dentro de capturas",
+      "Summarize": "Resumir reuniões",
+      "Transcribe": "Transcrever reuniões",
+      "WriteNote": "Escrever nota"
+    },
     "KeyInvalid": "Chave inválida",
     "KeyManagedInBilling": "A chave de API é gerenciada em Gerenciar assinatura → Chaves de API",
     "KeyNotConfigured": "Nenhuma chave configurada",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "••••••••• (salvo)",
     "KeyTesting": "Testando...",
     "KeyVerified": "Chave verificada",
-    "ManagedKeyDesc": "Sua chave de API é provisionada automaticamente. Nenhuma configuração necessária.",
-    "ManagedKeyStatus": "Chave gerenciada - fornecida pelo SeaMeet",
-    "MenuItem": "Resumos baseados em IA",
+    "MenuItem": "Transcrição IA, extração, resumo, wiki",
     "ModelLabel": "Modelo Gemini",
+    "ModelSection": "Modelo de IA",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
       "Gemini25FlashLite": "Gêmeos 2.5 Flash Lite",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "Gêmeos 3 Pró",
       "Gemini3ProSub": "Capacidade máxima"
     },
-    "ModelSection": "Modelo de IA",
-    "PageTitle": "Recursos de IA",
-    "QuotaLoading": "Carregando cota...",
-    "QuotaRefresh": "Atualizar cota",
-    "QuotaRemaining": "{{remaining}} / {{limit}} tokens restantes",
-    "QuotaResetDate": "Reinicia em {{date}}",
-    "QuotaSection": "Cota de uso",
+    "OpenAI": {
+      "Configured": "Chave de API configurada",
+      "DefaultModel": "Modelo padrão",
+      "Description": "Converse com suas reuniões usando modelos GPT. Mesma chave dos provedores de resumo e transcrição ao vivo da OpenAI.",
+      "GetKeyLink": "Obtenha uma chave de API no OpenAI Platform →",
+      "NotConfigured": "Nenhuma chave de API configurada",
+      "Refresh": "Re-detectar OpenAI",
+      "Remove": "Remover chave da OpenAI",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "Transcrição IA, extração, resumo, wiki",
+    "PostMeetingSummaryLanguage": "Idioma do resumo pós-reunião",
+    "PostMeetingSummaryLanguageDesc": "Aplicado à transcrição + resumo pós-reunião (em lote). As legendas ao vivo usam o seletor de idioma falado acima.",
+    "PreUploadAudio": "Pré-enviar áudio para resumo aprofundado instantâneo",
+    "PreUploadAudioDesc": "Transmite áudio ao Gemini durante a gravação para que o resumo em modo aprofundado retorne em segundos em vez de ~30 s. Requer uma chave de API do Gemini. Usa largura de banda de envio durante a gravação.",
+    "Provider": {
+      "Detected": "Detectado",
+      "Hint": "Você também pode trocar provedores por conversa no painel de chat.",
+      "NotAvailable": "Não disponível",
+      "Preferred": "Preferido",
+      "Section": "Provedor de agente preferido"
+    },
+    "RemoveKey": "Remover",
+    "SaveKey": "Salvar chave",
     "Saving": "Salvando...",
     "SelectedModel": "Selecionado: {{model}}",
     "ShowAllModels": "Mostrar todos os {{count}} modelos",
     "ShowFewerModels": "Mostrar menos modelos",
     "ShowKey": "Mostrar chave",
-    "TestKey": "Salvar e verificar",
     "SummaryLanguage": "Idioma de saída do resumo",
-    "SummaryLanguageDesc": "Aplicado à transcrição, ao resumo e aos capítulos. A detecção automática segue o idioma falado."
+    "SummaryLanguageAutoDetect": "Detecção automática (pode misturar escritas)",
+    "SummaryLanguageDesc": "Aplicado à transcrição, ao resumo e aos capítulos. A detecção automática segue o idioma falado.",
+    "TestKey": "Salvar e verificar",
+    "SummaryConfigSection": "Configuração do resumo",
+    "ImageExtractionSection": "Extração de imagem",
+    "UseMainLlmForOcrHint": "Encaminha o OCR de capturas de tela para o provedor LLM selecionado. Desligado (padrão): sempre usa o Gemini. Retorna automaticamente ao Gemini se o provedor não aceitar imagens."
+  },
+  "AISummaryQuality": {
+    "Heading": "Qualidade do resumo de IA",
+    "MasterToggleLabel": "Usar Análise Profunda quando uma chave do Gemini estiver configurada",
+    "MasterToggleHelp": "O Gemini lê diretamente o áudio e o vídeo para produzir nomes de palestrantes distintos, citações mais precisas e resumos mais ricos. O resumo Rápido (baseado em transcrição) continua sendo o padrão; a Análise Profunda roda automaticamente em segundo plano e substitui o resumo Rápido quando termina.",
+    "AdvancedSection": "Avançado",
+    "PreUploadLabel": "Pré-carregar áudio/vídeo em segundo plano durante a gravação",
+    "PreUploadHelp": "Transmite a gravação para o Gemini enquanto você grava, para que a Análise Profunda termine em segundos após parar.",
+    "TokenEstimateHeading": "Uso estimado de tokens do Gemini por execução da Análise Profunda",
+    "TokenEstimateInput": "Entrada",
+    "TokenEstimateOutput": "Saída",
+    "TokenEstimate10MinAudio": "10 min de áudio",
+    "TokenEstimate10MinVideo": "10 min de vídeo",
+    "TokenEstimate1HrAudio": "1 h de áudio",
+    "TokenEstimate1HrVideo": "1 h de vídeo",
+    "TokenEstimateNote": "Taxas de token: áudio ≈ 32 tok/s, vídeo ≈ 263 tok/s (quadros a 1 fps + faixa de áudio). Orçamento de saída limitado a 32K por execução de chamada única e 16K por chamada de resumo em blocos. As cotas diárias do nível gratuito se aplicam (por exemplo, 500 RPD no Flash-Lite Latest).",
+    "DisabledStateBanner": "A Análise Profunda multimodal requer uma chave de API do Gemini. Sem ela, apenas resumos Rápidos (baseados em transcrição) ficam disponíveis, gerados pelo provedor de LLM selecionado.",
+    "DisabledStateAddKey": "Adicionar uma chave de API do Gemini →"
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -133,6 +183,33 @@
     "Copy": "Cópia",
     "EditSegmentSpeaker": "Clique para reatribuir este segmento",
     "EnableRequired": "Ative os recursos de IA em Configurações → Recursos de IA para ver resumos de IA.",
+    "ReRunDeep": "Executar Análise Profunda novamente (usa tokens adicionais do Gemini)",
+    "ReRunSummary": "Gerar resumo novamente",
+    "DeepProgress": {
+      "Title": "Análise Profunda em execução",
+      "Cancel": "Cancelar",
+      "Stage": {
+        "preparing": "preparando",
+        "uploading": "enviando arquivo",
+        "uploading-wait": "Gemini processando",
+        "analyzing": "analisando",
+        "extracting": "extraindo",
+        "saving": "salvando",
+        "complete": "concluído"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ Resumo Profundo pronto",
+      "Badge": "Profundo · Gemini analisou a gravação"
+    },
+    "DeepFailed": {
+      "Toast": "Falha na Análise Profunda: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "Usar Análise Profunda",
+      "Desc": "O Gemini analisa o áudio e o vídeo para fornecer nomes de palestrantes distintos, citações textuais e um resumo mais rico.",
+      "Run": "Executar Análise Profunda"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "Chave de API inválida. Verifique sua chave API em Configurações.",
       "NO_API_KEY": "Nenhuma chave de API Gemini configurada. Adicione sua chave de API nas Configurações.",
@@ -178,6 +255,8 @@
     "Retry": "Tentar novamente",
     "SeekToTimestamp": "Procure este carimbo de data/hora",
     "ConfigureApiKey": "Configure sua chave API Gemini para gerar resumos e transcrições com IA.",
+    "ConfigureProviders": "Ative a transcrição ao vivo e configure um provedor de LLM em Configurações para gerar resumos de IA.",
+    "OpenSettings": "Abrir configurações",
     "ConfigureKey": "Configurar chave API",
     "SetupRequired": "Configure sua chave API Gemini em Configurações → Recursos de IA para ativar resumos de IA.",
     "Tab": {
@@ -355,7 +434,8 @@
       "Running": "{{count}} em execução",
       "Completed": "{{count}} concluído",
       "Actions": "{{count}} ações"
-    }
+    },
+    "SwitchModel": "Alternar modelo"
   },
   "AgentSection": {
     "ConfigureApiKey": "Configure suas chaves API para usar o Agente de IA."
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "Como o SeaMeet AI funciona",
       "Subtitle": "BYOK — Traga sua própria chave",
-      "WhatIsBYOK": "Com BYOK, suas gravações e dados vão diretamente do seu dispositivo para o Google ou Anthropic. Nada passa pelos servidores do SeaMeet — máxima privacidade para você e sua equipe.",
-      "WhatYouNeed": "O que você configurará após assinar",
-      "GeminiTitle": "Chave do Google AI Studio (gratuito limitado)",
-      "GeminiDesc": "Possibilita transcrição ao vivo, resumos pós-reunião e análise. O Google oferece um nível gratuito generoso — a maioria dos usuários nunca paga nada.",
-      "AgentTitle": "Agente IA — escolha uma opção (gratuito limitado)",
-      "AgentOption1": "GitHub Copilot — 50 chats premium gratuitos/mês (ou mais com Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — se você já tem Claude Pro ou Max, está coberto",
-      "AgentOption3": "Chave API da Anthropic — para acesso direto à API",
-      "Continue": "Continuar para assinar",
-      "WhyBYOK": {
-        "Title": "Por que trazer sua própria chave?",
-        "Answer": "Muito mais privacidade — seus dados ficam com empresas confiáveis como Google e Anthropic, nunca com o SeaMeet. Os níveis gratuitos desses provedores são generosos e durarão bastante para a maioria dos usuários."
-      },
-      "WhyMonthly": {
-        "Title": "Por que o SeaMeet cobra mensalmente?",
-        "Answer": "O SeaMeet é atualizado rapidamente com novos recursos de IA. Sua assinatura mantém você na versão mais recente. Sem ela, você pagaria uma licença única e ficaria com recursos congelados — como comprar o Office 2012 e ficar no Office 2012 para sempre."
-      }
+      "Continue": "Continuar para assinar"
     },
     "Coupon": {
       "Title": "Promoção de lançamento",
@@ -588,7 +652,7 @@
       "CopilotStatus": "Copiloto GitHub",
       "Authenticated": "Autenticado",
       "CopilotUsage": "Definir como provedor de agente preferido?",
-      "CopilotFreeWarning": "GitHub Copilot Free inclui apenas 50 solicitações de agente/chat por mês. Ótimo para um teste rápido, mas o limite pode ser atingido rapidamente. Atualize para Copilot Pro para limites maiores, ou use SeaMeet Desktop Pro para acesso ilimitado à IA.",
+      "CopilotFreeWarning": "GitHub Copilot Free inclui apenas 50 solicitações de agente/chat por mês. Ótimo para um teste rápido, mas você pode atingir o limite rapidamente. Atualize para o Copilot Pro para limites maiores, ou use outro provedor (Claude ou Gemini) para mais espaço.",
       "KeepClaude": "Manter Claude como padrão",
       "UseCopilot": "Usar GitHub Copilot como padrão",
       "CopilotLabel": "Copiloto GitHub",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "Não detectado",
       "CopilotSignupHint": "Quer experimentar o GitHub Copilot como agente alternativo? Cadastre-se em um plano gratuito em github.com/features/copilot/plans (inclui 50 solicitações de agente/chat por mês), depois instale o Copilot CLI e execute \"copilot login\".",
       "CopilotFlatUsage": "Usado para: agente IA (alternativa ao Claude). Sem necessidade de chave API — usa seu login do GitHub.",
-      "Guide": {
-        "Intro": "O SeaMeet AI tem duas áreas de funcionalidade independentes — configure o que precisar.",
-        "SectionAiSummary": "Resumo IA",
-        "SectionAiSummaryBadge": "Obrigatório",
-        "SectionAiSummarySubtitle": "Obter a chave API do Gemini (grátis)",
-        "SectionAiAgent": "Agente IA",
-        "SectionAiAgentBadge": "Precisa de pelo menos um",
-        "OptionCopilotTitle": "GitHub Copilot CLI (grátis)",
-        "OptionClaudeTitle": "Claude Code CLI (opcional, pago)",
-        "Or": "OU",
-        "Step1Title": "Passo 1 — Leia com atenção",
-        "Step1Need": "Você precisará de 2 coisas:",
-        "Step1Item1": "Chave API do Gemini — para resumo IA e transcrição ao vivo",
-        "Step1Item2": "GitHub Copilot CLI ou Claude Code CLI — para o agente IA",
-        "Step2Title": "Passo 2 — (Grátis) Obter a chave API do Gemini",
-        "Step2Desc1": "Clique em ",
-        "Step2GetKey": "Obter chave API",
-        "Step2Desc2": " para criar uma chave API do Gemini gratuita. Mais informações em ",
-        "Step2Studio": "Estúdio de IA do Google",
-        "Step3Title": "Passo 3 — (Grátis) Instalar o GitHub Copilot CLI",
-        "Step3Install": "Clique em ",
-        "Step3InstallLink": "CLI do GitHub Copilot",
-        "Step3InstallSuffix": " ou instalação rápida:",
-        "Step3Login": "Execute: ",
-        "Step3LoginDesc": " (grátis, 50 chats/mês)",
-        "Step3Refresh": "Clique em Atualizar abaixo para detectar o Copilot.",
-        "Step3Select": "Clique em GitHub Copilot abaixo para definir como preferido.",
-        "Step4Title": "Passo 4 — (Opcional, pago) Instalar o Claude Code CLI",
-        "Step4Already": "Muito provavelmente você já o tem se instalou o Claude Code anteriormente.",
-        "Step4Install": "Clique em ",
-        "Step4InstallLink": "Claude Código CLI",
-        "Step4InstallSuffix": " ou instalação rápida:",
-        "Step4Mac": "macOS/Linux:",
-        "Step4Win": "Windows:",
-        "Step4WinReq": "requer ",
-        "Step4GitWin": "Git para Windows",
-        "Step4Auth": "Execute: ",
-        "Step4AuthDesc": " (requer plano Claude Pro ou Max)",
-        "Step4Refresh": "Clique em Atualizar abaixo para detectar o Claude Code.",
-        "Step4Select": "Clique em Claude Code abaixo para definir como preferido.",
-        "StepComplete": {
-          "AgentBoth": "Tanto Claude quanto Copilot estão configurados",
-          "AgentClaude": "Claude está configurado",
-          "AgentCopilot": "O copiloto está configurado",
-          "Summary": "Configuração concluída"
+      "Acronym": "BYOK (Bring Your Own Key — traga sua própria chave)",
+      "Explanation": "BYOK significa que você conecta suas próprias chaves de provedores de IA; seus dados vão direto para os provedores em que confia, não pela SeaMeet.",
+      "Welcome": {
+        "Title": "Bem-vindo ao BYOK Pro (Bring Your Own Key)",
+        "Subtitle": "$4,99/mês · Seus dados, seus provedores",
+        "PickOne": "Conecte uma chave e pronto.",
+        "OneKeyTitle": "UMA CHAVE, TODAS AS TAREFAS COBERTAS",
+        "OneKeyBadge": "Recomendado",
+        "MixTitle": "MISTURAR E COMBINAR",
+        "MixSubtitle": "para usuários avançados",
+        "OneKeyDoList": "Você vai poder:",
+        "MixSupportList": "Escolha um serviço diferente por tarefa. Suportamos:",
+        "MixSttHeading": "Transcrição (STT):",
+        "MixLlmHeading": "Resumo / Notas / Wiki (LLM):",
+        "MixAgentHeading": "Agente IA (LLM + ferramentas):",
+        "MixCliHeading": "CLIs locais (sem chave):",
+        "PickOneRadio": "Escolha um:",
+        "GeminiDesc": "Nível gratuito generoso do Google AI Studio; atualize depois para melhor qualidade e cota.",
+        "OpenAIDesc": "Use sua própria chave paga. Qualidade ChatGPT.",
+        "GetFreeKey": "Obter chave grátis →",
+        "PasteHere": "Cole aqui",
+        "OpenAdvanced": "Abrir avançado →",
+        "PowerUserTitle": "Já é um usuário avançado?",
+        "PowerUserDesc": "Se você tem Claude Code, GitHub Copilot, Codex CLI ou Gemini CLI instalado, pode usá-los para o agente IA — sem chave API extra. Vamos detectá-los a seguir.",
+        "WhyTwoProviders": "Por que Gemini ou OpenAI? São os únicos serviços que lidam com transcrição E resumos com uma única chave. Qualquer outro precisa de uma segunda chave pareada.",
+        "SetupLater": "Configurar depois — mostre-me o app"
+      },
+      "Receipt": {
+        "Heading": "{{provider}} conectado.",
+        "YouCanNow": "Agora você pode:",
+        "Job1": "Gravar reuniões",
+        "Job2": "Transcrevê-las",
+        "Job3": "Resumir com decisões, ações e capítulos principais",
+        "Job4": "Escrever notas estruturadas",
+        "Job5": "Construir wikis",
+        "Job6": "Fazer perguntas sobre reuniões passadas",
+        "Job7": "Buscar dentro de capturas de tela",
+        "CTAStart": "Iniciar gravação →",
+        "CTAScreenshot": "Tirar captura →",
+        "CTAWriteNote": "Escrever nota →",
+        "CustomizeCTA": "Personalizar provedores por tarefa →",
+        "CLIDetected": "Detectado: {{cli}} — usar para o agente?",
+        "UseDetectedCLI": "Usar",
+        "KeepDefault": "Manter padrão"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "Veja o que você obtém por $4,99/mês",
+        "HeadlinePostSubscribe": "O que sua assinatura BYOK Pro inclui",
+        "HeadlineSettings": "Por que você está no BYOK Pro",
+        "PrivacyTitle": "Privacidade",
+        "PrivacyDesc": "Seus dados vão direto do seu dispositivo para Google / Anthropic / OpenAI / etc. Os servidores da SeaMeet nunca veem suas gravações, transcrições ou resumos.",
+        "QualityTitle": "Qualidade",
+        "QualityDesc": "Escolha o melhor modelo para cada tarefa. Gemini Live para transcrição, Claude para escrita, Deepgram para separação de locutores.",
+        "CostTitle": "Controle de custos",
+        "CostDesc": "Pague aos provedores diretamente. A maioria dos usuários permanece no nível gratuito generoso do Gemini e nunca paga um centavo por IA.",
+        "SovereigntyTitle": "Soberania",
+        "SovereigntyDesc": "Chaves vivem no chaveiro do seu SO. Revogue a qualquer momento. SeaMeet coleta zero dados de uso sobre suas chamadas de IA."
+      },
+      "Manage": {
+        "Title": "Suas chaves de provedores de IA",
+        "Subtitle": "Cole uma chave para trocar de provedor, ou abra as configurações avançadas para ajuste por tarefa."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "O que você obtém por $4,99/mês",
+          "Bullet1": "Uma chave (Gemini ou OpenAI) ativa todos os recursos de IA.",
+          "Bullet2": "Grave · transcreva · resuma · faça anotações · construa wikis · pergunte sobre reuniões passadas · pesquise em capturas de tela.",
+          "Bullet3": "Ou misture provedores por tarefa — Deepgram para transcrição, Claude para resumos, sua CLI favorita para o agente."
+        },
+        "NewFAQ": {
+          "Q1": "E se eu já tiver Claude Pro ou GitHub Copilot?",
+          "A1": "Você pode usá-los para o agente de IA — sem chave de API adicional. Detectamos automaticamente Claude Code, GitHub Copilot, Codex CLI e Gemini CLI no seu sistema.",
+          "Q2": "Que provedores posso usar?",
+          "A2": "Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter e Amazon Bedrock para IA. Deepgram e Soniox para transcrição. Mais as quatro CLIs acima.",
+          "Q3": "Meus dados realmente não são tocados pela SeaMeet?",
+          "A3": "Sim. Suas gravações, transcrições e resumos vão diretamente do seu dispositivo para o provedor escolhido. Os servidores SeaMeet nunca os veem. Vemos apenas o status da sua assinatura e qual provedor você configurou (nem a chave nem o conteúdo).",
+          "Q4": "Por que pagar $4,99 se trago minhas próprias chaves?",
+          "A4": "A assinatura paga o desenvolvimento do aplicativo SeaMeet — roteamento multi-provedor, transcrição ao vivo, geração de wikis, agente de IA com uso de ferramentas, OCR de capturas de tela e suporte contínuo da plataforma. Seu custo de IA é separado e vai diretamente ao provedor (frequentemente gratuito no nível gratuito do Gemini)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "O que e BYOK?",
-        "A1": "BYOK significa Bring Your Own Key (Traga Sua Própria Chave). Você precisará de 2 chaves API: uma do Google AI Studio (para transcrição e resumos) e uma do GitHub Copilot ou Claude Code (para o agente IA). Um assistente de configuração guiado ajuda a conectar ambas as chaves após o pagamento. O Google AI Studio geralmente fornece uma chave gratuita. O GitHub Copilot também oferece um plano gratuito. Assim, você pode usar suas próprias chaves com acesso gratuito limitado. Se você tem assinatura Claude Pro ou Max, não precisa de uma chave API Anthropic adicional.",
+        "A1": "BYOK significa Traga Sua Própria Chave. Você só precisa de 1 chave de API — do Google AI Studio (Gemini) ou OpenAI — para alimentar tanto a transcrição e resumos de reuniões quanto o chat do agente de IA. O Google AI Studio geralmente oferece uma chave gratuita para você começar sem custo adicional. Usuários avançados também podem conectar suas próprias ferramentas de CLI (Claude Code, GitHub Copilot, etc.) para o chat do agente de IA. Um assistente de configuração guiado orienta você em tudo após o checkout.",
         "Q2": "Por que uma assinatura mensal?",
-        "A2": "Sua assinatura financia atualizacoes continuas, suporte a novos modelos de IA, correcoes de bugs e novos recursos. Os custos de API sao pagos separadamente ao Google e a Anthropic usando suas proprias chaves.",
-        "Q3": "Como funciona a licenca?",
-        "A3": "1 conta, ate 3 dispositivos. Dispositivos inativos sao liberados automaticamente apos 30 dias. Voce tambem pode desconectar manualmente um dispositivo para liberar um espaco."
-      },
-      "Desktop": {
-        "Q1": "O que e Desktop Pro?",
-        "A1": "Desktop Pro inclui chaves de IA integradas gerenciadas pelo SeaMeet — nao e necessario criar ou gerenciar suas proprias chaves API. Basta assinar e comecar a usar os recursos de IA imediatamente.",
-        "Q2": "Como e diferente do BYOK?",
-        "A2": "Com Desktop Pro, o SeaMeet fornece e gerencia as chaves API para voce. Voce nao precisa se cadastrar no Google AI Studio ou Anthropic separadamente.",
+        "A2": "Sua assinatura financia atualizações contínuas, suporte a novos modelos de IA, correções de bugs e novos recursos. Os custos de API são pagos diretamente ao Google, OpenAI ou outros provedores suportados usando suas próprias chaves.",
         "Q3": "Como funciona a licenca?",
         "A3": "1 conta, ate 3 dispositivos. Dispositivos inativos sao liberados automaticamente apos 30 dias. Voce tambem pode desconectar manualmente um dispositivo para liberar um espaco."
       },
       "Sync": {
         "Q1": "O que e Sync Pro?",
-        "A1": "Sync Pro inclui tudo do Desktop Pro, mais sincronizacao na nuvem. Suas gravacoes, transcricoes e resumos sao sincronizados em todos os seus dispositivos.",
+        "A1": "Sync Pro é um nível futuro com IA integrada (sem chaves de API para gerenciar), sincronização na nuvem entre dispositivos e colaboração em equipe. É para usuários que querem os recursos de IA do SeaMeet sem trazer suas próprias chaves. Ainda não disponível — clique em \"Solicitar\" no cartão do plano para nos enviar um e-mail se tiver interesse, para que possamos priorizar.",
         "Q2": "O que e sincronizado?",
         "A2": "Gravacoes, transcricoes, resumos de IA e itens de acao sao todos sincronizados em seus dispositivos. Alteracoes em um dispositivo aparecem em todos os outros.",
         "Q3": "Como funciona a licenca?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "Traga sua própria bebida",
-        "Price": "US$ 7,99/mês",
+        "Price": "US$ 4,99/mês",
         "Feature1": "Transcrição e resumos de IA",
         "Feature2": "Use suas próprias chaves de API Gemini e Claude",
         "Feature3": "Transcrição ao vivo durante reuniões",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "O GitHub Copilot também tem um plano gratuito.",
         "InfoNoteClaude": "Se você já assina o Claude Pro ou Max, não precisa de uma chave extra da API da Anthropic."
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "US$ 15,99/mês",
-        "Feature1": "Tudo no BYOK Pro",
-        "Feature2": "IA integrada – sem necessidade de chaves de API",
-        "Feature3": "Suporte prioritário",
-        "Feature4": "Análise avançada"
-      },
       "Free": {
         "Name": "Livre",
         "Price": "US$ 0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "Sincronizar Pro",
-        "Price": "US$ 25,99/mês",
-        "Feature1": "Tudo no Desktop Pro",
+        "Feature1": "IA integrada — sem necessidade de chaves de API",
         "Feature2": "Sincronização na nuvem entre dispositivos",
         "Feature3": "Recursos de colaboração em equipe",
-        "Feature4": "Biblioteca de reuniões compartilhada"
+        "Feature4": "Biblioteca de reuniões compartilhada",
+        "RequestCTA": "Solicitar",
+        "RequestSubject": "Gostaria do Sync Pro para o SeaMeet",
+        "RequestBody": "Olá equipe SeaMeet — tenho interesse no Sync Pro (IA integrada sem chaves de API para gerenciar, sincronização na nuvem, multi-dispositivo, colaboração em equipe). Por favor, avisem-me quando estiver disponível.\n\nObrigado!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "Se você usar Claude App/Code: a Anthropic pode usar seus dados para treinamento, a menos que você se oponha",
         "Agent3": "Se você usar Anthropic API: a Anthropic não usa seus dados para treinamento"
       },
-      "Desktop": {
-        "Recording1": "Permanecem no seu computador",
-        "Recording2": "Sincronização com a conta Google Cloud da SeaMeet.ai para processamento",
-        "Recording3": "O Google exclui os arquivos após 48 horas",
-        "AIData1": "Gemini API os produz",
-        "AIData2": "O Google não usa seus dados para treinamento",
-        "AIData3": "A SeaMeet.ai não usa seus dados para treinamento",
-        "Agent1": "Anthropic API os produz",
-        "Agent2": "A Anthropic não usa seus dados para treinamento",
-        "Agent3": "A SeaMeet.ai não usa seus dados para treinamento"
-      },
       "Sync": {
         "Recording1": "Permanecem no seu computador",
-        "Recording2": "Sincronizados com a nuvem da SeaMeet.ai",
+        "Recording2": "Sincronizado com a nuvem SeaMeet.ai com criptografia em repouso",
         "Recording3": "Baixe da nuvem da SeaMeet.ai para outro dispositivo desktop e mantenha-se sincronizado",
-        "AIData1": "Igual ao Desktop Pro",
-        "Agent1": "Igual ao Desktop Pro"
+        "AIData1": "Gerado pela API Gemini com chaves gerenciadas pela SeaMeet; o Google não usa seus dados para treinamento",
+        "Agent1": "Gerado pela API Anthropic com chaves gerenciadas pela SeaMeet; a Anthropic não usa seus dados para treinamento"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "Usuário avançado: entende o que é BYOK",
         "Item2": "Experiente em tecnologia: possui as chaves API necessárias",
         "Item3": "Focado em privacidade: controla quem vê seus dados"
-      },
-      "Desktop": {
-        "Item1": "Usuário normal: configuração sem complicações",
-        "Item2": "Focado em privacidade: dados de áudio/imagem/gravação permanecem no seu computador"
       },
       "Sync": {
         "Item1": "A maioria dos usuários: configuração sem complicações",
@@ -1272,10 +1340,26 @@
       "TurnCoverageHint": "Padrão do 2.5: apenas durante a fala. Padrão do 3.1: todos os quadros (lê placas mesmo em silêncio).",
       "SendVideo": "Enviar quadros de vídeo",
       "VideoFps": "Taxa de quadros",
+      "VideoFpsOption_0_2": "0.2 fps (1 quadro / 5 s)",
+      "VideoFpsOption_0_5": "0.5 fps (1 quadro / 2 s, padrão)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
       "VideoQuality": "Qualidade JPEG do quadro",
+      "VideoQualityOption_0_3": "0.3 (menor, desfocado)",
+      "VideoQualityOption_0_5": "0.5 (economiza banda)",
+      "VideoQualityOption_0_7": "0.7 (equilibrado)",
+      "VideoQualityOption_0_85": "0.85 (padrão — bom para nomes na tela)",
+      "VideoQualityOption_0_95": "0.95 (máximo)",
       "VideoMaxWidth": "Largura máxima do quadro",
+      "VideoMaxWidthOption_480": "480 px (menor)",
+      "VideoMaxWidthOption_640": "640 px (economiza banda)",
+      "VideoMaxWidthOption_960": "960 px (padrão — bom para nomes na tela)",
+      "VideoMaxWidthOption_1280": "1280 px (maior)",
+      "VideoMaxWidthOption_1920": "1920 px (nativo 1080p)",
       "VideoQualityHint": "Aumente a qualidade e a largura máxima quando o Gemini ler incorretamente rótulos de blocos pequenos (ex. nomes de participantes Zoom / Meet / Teams). Valores mais altos aumentam o uso de tokens de imagem — 1280 px normalmente salta da faixa de 258 tokens para a de 1290 tokens por quadro.",
       "EndSensitivity": "Sensibilidade de fim de fala",
+      "EndSensitivityHigh": "ALTA (descargas rápidas)",
+      "EndSensitivityLow": "BAIXA (turnos mais longos)",
       "Default": "Padrão (ALTA — descargas rápidas)",
       "SilenceMs": "Silêncio antes do fim do turno",
       "VadHint": "Menos silêncio + sensibilidade ALTA → flushes de transcrição mais curtos e frequentes.",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "Ocultar barra lateral de notas",
     "ExpandSidebar": "Mostrar barra lateral de notas"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ Dica: após parar, a Análise Profunda será executada automaticamente para fornecer nomes de palestrantes mais precisos e citações do áudio/vídeo."
+  },
   "OCRAutoCopy": {
     "Copied": "Texto extraído copiado para a área de transferência",
     "Error": "Falha ao extrair texto",
@@ -1653,13 +1740,17 @@
     "Running": "Gerando resumo...",
     "Step": {
       "Preparing": "Preparando gravação",
+      "PreparingFast": "Preparando transcrição",
       "Uploading": "Fazendo upload do arquivo",
       "UploadingWait": "Processando no servidor",
       "Analyzing": "Analisando",
       "Extracting": "Extraindo resultados",
       "Saving": "Salvando artefatos",
       "PreparingImage": "Preparando imagem",
-      "AnalyzingImage": "Analisando imagem"
+      "AnalyzingImage": "Analisando imagem",
+      "ExtractingAudio": "Extraindo áudio",
+      "Transcribing": "Transcrevendo",
+      "TranscribingWith": "Transcrevendo com {{provider}}"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "IA pós-reunião",
     "PostMeetingAIDesc": "Resumos, itens de ação e insights serão gerados após a conclusão da gravação.",
     "UnlockPremium": "Desbloquear com Premium",
-    "Upgrade": "Atualizar"
+    "Upgrade": "Atualizar",
+    "NoteSynthesis": "Síntese de IA",
+    "NoteSynthesisDesc": "Obtenha um resumo estruturado desta nota + da gravação vinculada com o BYOK Pro.",
+    "WikiList": "Wikis",
+    "WikiListDesc": "Construa automaticamente uma base de conhecimento a partir das suas notas e reuniões com o BYOK Pro.",
+    "ScreenshotAI": "IA de captura de tela",
+    "ScreenshotAIDesc": "Descreva imagens, extraia texto e faça perguntas de acompanhamento com o BYOK Pro.",
+    "LockedChipTooltip": "Assine para ativar",
+    "AgentReadOnlyBanner": "Assine para continuar a conversa",
+    "GenericUpgradeCta": "Assinar"
   },
   "QuickOpen": {
     "Placeholder": "Comece a digitar ou cole da área de transferência… Use [[ para vincular a outra nota",
@@ -1883,7 +1983,9 @@
       "Description": "Descrição",
       "OCR": "Texto (OCR)"
     },
-    "UnknownError": "Erro desconhecido"
+    "UnknownError": "Erro desconhecido",
+    "FallbackUsed": "{{from}} não conseguiu processar a imagem — o Gemini fez isso em vez dele.",
+    "FallbackHint": "Desative \"Usar o LLM principal para OCR de capturas de tela\" nas Configurações se este provedor não oferecer suporte a visão."
   },
   "ScreenshotView": {
     "RecentLabel": "Capturas recentes"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "Criar wiki a partir da seleção…",
       "ToastMessage": "{{count}} novas notas detectadas. Criar wiki?",
       "BannerMessage": "{{count}} novas notas desde a última criação",
-      "BuildingExtracting": "Lendo {{current}}/{{total}} notas",
-      "BuildingReducing": "Criando {{current}}/{{total}} páginas",
+      "BuildingExtracting": "{{current}} de {{total}} notas lidas",
+      "BuildingReducing": "{{built}} de {{total}} páginas criadas",
       "Building": "Criando wiki — {{stage}}",
       "PausedFor": "limite de taxa: {{seconds}}s",
       "Cancel": "Cancelar",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "Polir índice",
       "PolishIndexHint": "Adicionar uma introdução narrativa ao índice do wiki",
       "BuildFromFolderPrompt": "Caminho da pasta (relativo ao workspace):",
-      "BuildFromSelectionPrompt": "Nomes de arquivo de notas separados por vírgula (relativos a notes/):"
+      "BuildFromSelectionPrompt": "Nomes de arquivo de notas separados por vírgula (relativos a notes/):",
+      "BuildingExtractingWithCache": "{{current}} de {{total}} notas lidas · {{skipCount}} reutilizadas da cache",
+      "BuildingReducingWithFailures": "{{built}} de {{total}} páginas criadas · {{failed}} falharam"
     },
     "Toolbar": {
       "Overflow": "Mais ações de wiki",
@@ -2452,5 +2556,284 @@
       "floating": "Mudou para o layout flutuante"
     },
     "introToast": "Novo: Layout flutuante disponível. Clique no ícone de layout no cabeçalho para experimentar."
+  },
+  "settings": {
+    "stt": {
+      "title": "Provedor de fala para texto (legendas ao vivo, transcrição de arquivos)",
+      "apiKey": "Chave de API",
+      "getKey": "Obter uma chave",
+      "signup": "Obter chave de API",
+      "tutorial": "Tutorial de configuração",
+      "keyDescription": "Sua chave de API é criptografada e armazenada localmente neste dispositivo.",
+      "test": "Testar conexão",
+      "testing": "Testando…",
+      "testOk": "Conectado",
+      "testFail": "Falha na conexão",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Nível gratuito com uma conta Google. Ideal para uso casual."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "Melhor precisão em inglês e menor latência. $200 de crédito grátis no cadastro."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "Melhor precisão multilíngue. Apenas planos pagos — cartão de crédito necessário."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime para transcrição ao vivo, Whisper / gpt-4o-transcribe para transcrição de arquivos."
+        }
+      },
+      "language": {
+        "label": "Idioma falado",
+        "sublabel": "Dica para a transcrição ao vivo. A detecção automática funciona na maioria dos casos.",
+        "sonioxSublabel": "Dicas para a transcrição ao vivo. Adicione várias para reuniões com troca de idioma.",
+        "addLanguage": "Adicionar idioma",
+        "remove": "Remover idioma",
+        "geminiSublabel": "O Gemini detecta automaticamente pelo áudio (a dica não é usada).",
+        "auto": "Detecção automática",
+        "en": "Inglês",
+        "zh-CN": "Chinês (simplificado)",
+        "zh-TW": "Chinês (tradicional)",
+        "es": "Espanhol",
+        "ja": "Japonês",
+        "ko": "Coreano",
+        "fr": "Francês",
+        "de": "Alemão",
+        "pt": "Português",
+        "ru": "Russo",
+        "it": "Italiano",
+        "nl": "Holandês",
+        "ar": "Árabe",
+        "vi": "Vietnamita",
+        "id": "Indonésio",
+        "th": "Tailandês",
+        "tr": "Turco",
+        "pl": "Polonês",
+        "uk": "Ucraniano",
+        "hi": "Hindi",
+        "fil": "Filipino",
+        "ms": "Malaio",
+        "openaiSublabel": "O primeiro idioma é enviado como dica para a API; os demais são acrescentados ao prompt de domínio (onde houver suporte). gpt-4o-transcribe-diarize usa apenas o primeiro."
+      },
+      "speakerLabel": "Locutor {{n}}",
+      "advanced": {
+        "title": "Configurações avançadas",
+        "reset": "Redefinir para os padrões",
+        "deepgram": {
+          "model": "Modelo",
+          "modelDefault": "Padrão (nova-3)",
+          "modelHint": "nova-3 é melhor para inglês. nova-3-general lida com mais idiomas.",
+          "diarize": "Diarização de locutores",
+          "diarizeHint": "Emitir rótulos de locutor (S0, S1, …) quando várias vozes forem detectadas.",
+          "smartFormat": "Formatação inteligente",
+          "smartFormatHint": "Pontue, capitalize e formate números / datas.",
+          "punctuate": "Pontuação",
+          "punctuateHint": "Insira pontos e vírgulas com base na cadência.",
+          "keyterm": "Reforço de vocabulário",
+          "keytermHint": "Um termo por linha. Palavras específicas do domínio para serem ponderadas.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "Correspondência estrita de idioma",
+          "strictLanguageHint": "Rejeitar áudio em outros idiomas (mais rápido, mas menos flexível).",
+          "diarize": "Diarização de locutores",
+          "diarizeHint": "Emitir rótulos de locutor quando várias vozes forem detectadas.",
+          "languageId": "Identificação de idioma",
+          "languageIdHint": "Emitir tags de idioma detectado por token.",
+          "endpointing": "Detecção de fim de fala",
+          "endpointingHint": "Finalizar tokens automaticamente quando o locutor pausar.",
+          "context": "Contexto do domínio",
+          "contextHint": "Descrição livre do que está sendo discutido. Nomes, organizações, jargão.",
+          "contextPlaceholder": "Reunião com a Acme Corp sobre a receita do Q3.\nParticipantes: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "Modelo de transcrição de arquivos",
+          "modelDefault": "Padrão (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize é o melhor para diarização. mini é mais barato, mas sem diarização. A OpenAI limita cada envio a 25 MB de áudio. O SeaMeet extrai o vídeo como opus mono em 16 kbps, então um envio cobre cerca de 3–4 horas de reunião.",
+          "contextPrompt": "Contexto do domínio",
+          "contextPromptPlaceholder": "Discussão sobre receita do T3 da Acme Corp. Participantes: Alice Chen, Bob Park.",
+          "contextPromptHint": "Descrição livre que orienta a OpenAI para o vocabulário do domínio.",
+          "realtimeModel": "Modelo de transcrição ao vivo",
+          "realtimeModelDefault": "Padrão (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe é o padrão para reuniões — o VAD do servidor finaliza cada fala com marcas de tempo. gpt-4o-mini-transcribe se comporta igual, mas custa menos. gpt-realtime-whisper tem a menor latência, mas acumula a transcrição em uma única linha (sem finalização por fala durante a gravação) — bom para UIs de chat, não para reuniões.",
+          "refreshModels": "Atualizar lista de modelos",
+          "refreshing": "Atualizando…",
+          "turnDetection": "Detecção de turno",
+          "turnDetectionServerVad": "VAD do servidor (legendas ao vivo)",
+          "turnDetectionNone": "Nenhuma (finalizar ao parar)",
+          "turnDetectionHint": "O VAD do servidor emite transcrições por fala enquanto o falante fala. Desligue para fluxos push-to-talk em que o buffer só é confirmado ao parar a gravação.",
+          "noiseReduction": "Redução de ruído",
+          "noiseReductionNear": "Campo próximo (microfone de notebook/fone)",
+          "noiseReductionFar": "Campo distante (microfone de sala de reunião)",
+          "noiseReductionOff": "Desligado",
+          "noiseReductionHint": "Pré-filtro aplicado ao áudio de entrada antes da transcrição. Escolha a opção que corresponde à posição do seu microfone.",
+          "includeLogprobs": "Incluir confiança por token",
+          "includeLogprobsHint": "Solicita probabilidades logarítmicas de cada token transcrito. Usado para colorir palavras de baixa confiança. Aumenta o tamanho da resposta — deixe desligado se não precisar.",
+          "includeLogprobsDiarize": "Não suportado por gpt-4o-transcribe-diarize.",
+          "useStreaming": "Transmitir transcrição de arquivo",
+          "useStreamingHint": "Mostra texto parcial enquanto uma gravação é transcrita. Suportado por gpt-4o-transcribe e gpt-4o-mini-transcribe; ignorado nos demais.",
+          "useStreamingDiarize": "Não suportado por gpt-4o-transcribe-diarize.",
+          "contextPromptDiarize": "Não suportado por gpt-4o-transcribe-diarize.",
+          "contextPromptModelSupport": "Para whisper-1, o prompt é uma lista de palavras-chave. Para gpt-4o-transcribe e gpt-4o-mini-transcribe, o prompt é texto livre (ex.: \"esperar termos de tecnologia\"). O prompt não é suportado com gpt-realtime-whisper em sessões GA Realtime nem com gpt-4o-transcribe-diarize."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "Modelo de transcrição ao vivo",
+          "fileTranscriptionModelLabel": "Modelo de transcrição de arquivo",
+          "fileTranscriptionModelHint": "Configure em LLM Provider → Default Model. O mesmo modelo Gemini é usado para transcrição em lote de arquivos, resumo, OCR de captura de tela, wiki e chat.",
+          "deepAnalysisLabel": "Análise profunda com vídeos"
+        }
+      }
+    },
+    "llm": {
+      "title": "Provedor de LLM (resumo de gravação, extração de imagem, geração de wiki)",
+      "signup": "Obter chave de API",
+      "installGuide": "Guia de instalação",
+      "tutorial": "Tutorial de configuração",
+      "apiKey": "Chave de API",
+      "testing": "Testando…",
+      "test": "Testar conexão",
+      "keyDescription": "Sua chave de API é criptografada e armazenada localmente neste dispositivo.",
+      "cliStatus": "Status CLI",
+      "usesLocalCLI": "Usa autenticação CLI local (nenhuma chave de API necessária).",
+      "testOk": "Conectado",
+      "testFail": "Falha na conexão",
+      "advanced": {
+        "title": "Configurações avançadas",
+        "reset": "Restaurar padrões",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "Modelo padrão (Resumo / Captura de tela / Wiki / Chat)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "Nota: o modo profundo de resumo de áudio usa Gemini independentemente desta configuração. O OCR de capturas de tela segue o seletor acima.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "Multimodal nativo. Camada gratuita disponível com chave de API."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "Família GPT-4o e GPT-5. Pague conforme o uso pela plataforma OpenAI."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Chave de API do Anthropic Console."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash e deepseek-v4-pro. Baixo custo por token, com modo thinking."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "Uma chave, centenas de modelos de muitos fornecedores."
+        },
+        "claude-code": {
+          "label": "Claude Code (CLI local)",
+          "desc": "Usa o seu CLI claude instalado. Sem chave de API."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "Usa o seu CLI codex instalado. Apoia-se em OpenAI Plus / Pro."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (autenticação Google)",
+          "desc": "Usa o seu CLI gemini instalado. OAuth ou chave de API."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "Modelos básicos na AWS. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "Usar o LLM principal para OCR de capturas de tela",
+      "visionToggleHint": "Envia tarefas de captura de tela/OCR para o provedor selecionado acima. Desligado (padrão): sempre usa Gemini. Recorre automaticamente ao Gemini se o seu provedor não aceitar a imagem.",
+      "visionUnsupportedBadge": "OCR via fallback do Gemini",
+      "visionUnsupportedTooltip": "O adaptador deste provedor ainda não suporta entrada de imagem. O OCR de capturas de tela recorrerá ao Gemini."
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "Ainda não há wikis",
+    "Description": "As wikis são criadas automaticamente a partir das suas notas e reuniões. Crie uma nota ou grave uma reunião para começar.",
+    "TakeNoteCta": "Criar uma nota",
+    "StartRecordingCta": "Iniciar gravação"
+  },
+  "WikiPaywall": {
+    "Headline": "Suas notas, organizadas automaticamente",
+    "Subhead": "Uma base de conhecimento construída a partir das suas notas e reuniões — pela IA.",
+    "ChaosLabel": "Suas notas",
+    "ChaosCaption": "Forma livre, sem necessidade de estrutura",
+    "WikiLabel": "Sua wiki",
+    "WikiCaption": "Auto-organizada e interligada",
+    "Explainer": "Escreva notas do jeito que sempre fez. Enquanto você escreve, a IA extrai as pessoas, tópicos, empresas e reuniões que você menciona e os tece em uma wiki estruturada — automaticamente interligada e sempre atualizada.",
+    "Cta": "Assine para ativar as Wikis"
+  },
+  "NotesShowcase": {
+    "Headline": "Notas que crescem em uma base de conhecimento",
+    "Subhead": "Markdown puro. Grave áudio, vídeo ou capturas de tela inline. Deixe a IA resumir e conectar tudo.",
+    "Feature1Title": "Markdown + wikilinks",
+    "Feature1Desc": "Digite em Markdown. Use [[wikilinks]] para conectar notas. Sem formato proprietário.",
+    "Feature2Title": "Árvore de pastas, do seu jeito",
+    "Feature2Desc": "Arraste para organizar. Aninhamento infinito. Renomeações atualizam os wikilinks em todas as notas.",
+    "Feature3Title": "Gravações, inline",
+    "Feature3Desc": "Capture áudio, vídeo ou capturas de tela ao lado das suas notas. Incorporadas — não enterradas em outro app.",
+    "Feature4Title": "A IA resume e conecta",
+    "Feature4Desc": "Os LLMs resumem cada nota, extraem entidades e constroem automaticamente uma wiki de pessoas, tópicos e reuniões.",
+    "Tagline": "Gravação integrada. Notas interligadas. Markdown portátil. Armazenadas como arquivos simples na sua pasta — suas para sempre.",
+    "CreateCta": "Crie sua primeira nota"
   }
 }

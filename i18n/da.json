@@ -18,13 +18,14 @@
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API nøgle",
     "ApiKeySection": "Gemini API nøgle",
-    "AutomationSection": "Automatisering",
     "AutoSummary": "Autogenerer oversigt",
     "AutoSummaryDesc": "Kører efter hver optagelse er færdig",
+    "AutomationSection": "Automatisering",
     "ClaudeKey": {
+      "ApiKeyTitle": "API-nøgle",
       "ClearKey": "Fjern gemt nøgle",
-      "CliInstalled": "Installeret ({{version}})",
       "CliInstallLink": "Installer Claude Code →",
+      "CliInstalled": "Installeret ({{version}})",
       "CliNotFound": "CLI ikke fundet",
       "CliNotInstalled": "Claude CLI ikke fundet — installér det og log ind for at godkende:",
       "CliSection": "Claude Code CLI",
@@ -33,7 +34,6 @@
       "HideKey": "Skjul nøgle",
       "InstallMac": "macOS / Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "API-nøgle",
       "KeyInvalid": "Ugyldig nøgle",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "••••••••• (gemt)",
@@ -60,6 +60,7 @@
       "SourceNone": "Ikke konfigureret",
       "TestKey": "Gem og bekræft"
     },
+    "ClearKey": "Fjern gemt nøgle",
     "Copilot": {
       "Authenticated": "Godkendt",
       "DefaultModel": "Standardmodel",
@@ -71,21 +72,32 @@
       "Remove": "Fjern Copilot-integration",
       "Section": "GitHub Copilot"
     },
-    "Provider": {
-      "Detected": "Registreret",
-      "Hint": "Du kan også skifte udbyder per samtale i chatpanelet.",
-      "NotAvailable": "Ikke tilgængelig",
-      "Preferred": "Foretrukken",
-      "Section": "Foretrukken agent-udbyder"
-    },
-    "ClearKey": "Fjern gemt nøgle",
+    "DefaultModel": "Standardmodel",
     "EnableToggle": "Aktiver AI-drevne oversigter",
     "EnableToggleDesc": "Kræver en gratis Gemini API-nøgle",
-    "DefaultModel": "Standardmodel",
-    "GeminiSection": "Tvillingerne",
+    "Gemini": {
+      "Configured": "API-nøgle konfigureret",
+      "DefaultModel": "Standardmodel",
+      "Description": "Chat med dine møder ved hjælp af Gemini-modeller. Samme nøgle som Gemini-udbyderne af opsummering og live-transskription.",
+      "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
+      "NotConfigured": "Ingen API-nøgle konfigureret",
+      "Refresh": "Genopdag Gemini",
+      "Remove": "Fjern Gemini-nøgle",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "Få en gratis API-nøgle fra Google AI Studio →",
     "GroupTitle": "AI funktioner",
     "HideKey": "Skjul nøgle",
+    "Job": {
+      "AskQuestions": "Spørg om tidligere møder",
+      "BuildWikis": "Byg wikier fra noter og møder",
+      "Record": "Optag møder",
+      "RecordSub": "Lokalt · virker altid",
+      "SearchScreenshots": "Søg i skærmbilleder",
+      "Summarize": "Resumér møder",
+      "Transcribe": "Transskribér møder",
+      "WriteNote": "Skriv en note"
+    },
     "KeyInvalid": "Ugyldig nøgle",
     "KeyManagedInBilling": "API-nøgle administreres i Administrer abonnement → API-nøgler",
     "KeyNotConfigured": "Ingen nøgle konfigureret",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "••••••••• (gemt)",
     "KeyTesting": "Tester...",
     "KeyVerified": "Nøgle bekræftet",
-    "ManagedKeyDesc": "Din API-nøgle leveres automatisk. Ingen konfiguration nødvendig.",
-    "ManagedKeyStatus": "Administreret nøgle — leveret af SeaMeet",
-    "MenuItem": "AI-drevne resuméer",
+    "MenuItem": "AI-transskription, ekstraktion, resumé, wiki",
     "ModelLabel": "Gemini model",
+    "ModelSection": "AI model",
     "Models": {
       "Gemini25Flash": "Gemini 2. Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "Gemini 3 Pro",
       "Gemini3ProSub": "Maksimal kapacitet"
     },
-    "ModelSection": "AI model",
-    "PageTitle": "AI funktioner",
-    "QuotaLoading": "Indlæser kvote...",
-    "QuotaRefresh": "Opdater kvote",
-    "QuotaRemaining": "{{remaining}} / {{limit}} tokens tilbage",
-    "QuotaResetDate": "Nulstiller på {{date}}",
-    "QuotaSection": "Brugskvote",
+    "OpenAI": {
+      "Configured": "API-nøgle konfigureret",
+      "DefaultModel": "Standardmodel",
+      "Description": "Chat med dine møder ved hjælp af GPT-modeller. Samme nøgle som OpenAI-udbyderne af opsummering og live-transskription.",
+      "GetKeyLink": "Få en API-nøgle fra OpenAI Platform →",
+      "NotConfigured": "Ingen API-nøgle konfigureret",
+      "Refresh": "Genopdag OpenAI",
+      "Remove": "Fjern OpenAI-nøgle",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "AI-transskription, ekstraktion, resumé, wiki",
+    "PostMeetingSummaryLanguage": "Sprog for sammenfatning efter møde",
+    "PostMeetingSummaryLanguageDesc": "Anvendes på transskriptionen + sammenfatningen efter mødet (batch). Live-undertekster bruger sprogvælgeren ovenfor.",
+    "PreUploadAudio": "For-upload lyd til øjeblikkelig dybde-resumé",
+    "PreUploadAudioDesc": "Streamer lyd til Gemini under optagelse, så dybde-tilstand-resuméet returnerer på sekunder i stedet for ~30 s. Kræver en Gemini API-nøgle. Bruger upload-båndbredde under optagelse.",
+    "Provider": {
+      "Detected": "Registreret",
+      "Hint": "Du kan også skifte udbyder per samtale i chatpanelet.",
+      "NotAvailable": "Ikke tilgængelig",
+      "Preferred": "Foretrukken",
+      "Section": "Foretrukken agent-udbyder"
+    },
+    "RemoveKey": "Fjern",
+    "SaveKey": "Gem nøgle",
     "Saving": "Gemmer...",
     "SelectedModel": "Valgt: {{model}}",
     "ShowAllModels": "Vis alle {{count}} modeller",
     "ShowFewerModels": "Vis færre modeller",
     "ShowKey": "Vis nøgle",
-    "TestKey": "Gem og bekræft",
     "SummaryLanguage": "Udgivelsessprog for resumé",
-    "SummaryLanguageDesc": "Gælder for transskription, resumé og kapitler. Automatisk registrering matcher det talte sprog."
+    "SummaryLanguageAutoDetect": "Auto-registrér (kan blande skriftsystemer)",
+    "SummaryLanguageDesc": "Gælder for transskription, resumé og kapitler. Automatisk registrering matcher det talte sprog.",
+    "TestKey": "Gem og bekræft",
+    "SummaryConfigSection": "Resumékonfiguration",
+    "ImageExtractionSection": "Billedudtræk",
+    "UseMainLlmForOcrHint": "Sender skærmbillede-OCR til din valgte LLM-udbyder. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis udbyderen ikke accepterer billeder."
+  },
+  "AISummaryQuality": {
+    "Heading": "Kvalitet for AI-resumé",
+    "MasterToggleLabel": "Brug Dybdegående Analyse, når en Gemini-nøgle er konfigureret",
+    "MasterToggleHelp": "Gemini læser direkte lyd og video for at producere særskilte talernavne, mere præcise citater og rigere resuméer. Det Hurtige resumé (transskriptionsbaseret) forbliver standard; Dybdegående Analyse kører automatisk i baggrunden og erstatter det Hurtige resumé, når den er færdig.",
+    "AdvancedSection": "Avanceret",
+    "PreUploadLabel": "For-upload lyd/video i baggrunden under optagelse",
+    "PreUploadHelp": "Streamer optagelsen til Gemini, mens du optager, så Dybdegående Analyse afsluttes i løbet af sekunder efter stop.",
+    "TokenEstimateHeading": "Estimeret Gemini-tokenforbrug pr. Dybdegående kørsel",
+    "TokenEstimateInput": "Input",
+    "TokenEstimateOutput": "Output",
+    "TokenEstimate10MinAudio": "10 min lyd",
+    "TokenEstimate10MinVideo": "10 min video",
+    "TokenEstimate1HrAudio": "1 time lyd",
+    "TokenEstimate1HrVideo": "1 time video",
+    "TokenEstimateNote": "Tokenrater: lyd ≈ 32 tok/s, video ≈ 263 tok/s (billeder ved 1 fps + lydspor). Outputbudget begrænset til 32K pr. enkeltkald og 16K pr. opdelt resumé-kald. De daglige kvoter på det gratis niveau gælder (f.eks. 500 RPD på Flash-Lite Latest).",
+    "DisabledStateBanner": "Multimodal Dybdegående Analyse kræver en Gemini API-nøgle. Uden den er kun Hurtige resuméer (transskriptionsbaserede) tilgængelige, genereret af din valgte LLM-udbyder.",
+    "DisabledStateAddKey": "Tilføj en Gemini API-nøgle →"
   },
   "AISummary": {
     "ApplyMerge": "Anvend",
@@ -133,6 +183,33 @@
     "Copy": "Kopi",
     "EditSegmentSpeaker": "Klik for at gentildele dette segment",
     "EnableRequired": "Aktiver AI-funktioner i Indstillinger → AI-funktioner for at se AI-oversigter.",
+    "ReRunDeep": "Kør Dybdegående Analyse igen (bruger yderligere Gemini-tokens)",
+    "ReRunSummary": "Kør resumé igen",
+    "DeepProgress": {
+      "Title": "Dybdegående Analyse kører",
+      "Cancel": "Annullér",
+      "Stage": {
+        "preparing": "forbereder",
+        "uploading": "uploader fil",
+        "uploading-wait": "Gemini behandler",
+        "analyzing": "analyserer",
+        "extracting": "udtrækker",
+        "saving": "gemmer",
+        "complete": "færdig"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ Dybdegående resumé klar",
+      "Badge": "Dybdegående · Gemini analyserede optagelsen"
+    },
+    "DeepFailed": {
+      "Toast": "Dybdegående Analyse mislykkedes: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "Brug Dybdegående Analyse",
+      "Desc": "Gemini gennemgår lyd + video for at give dig særskilte talernavne, ordrette citater og et rigere resumé.",
+      "Run": "Kør Dybdegående Analyse"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "Ugyldig API-nøgle. Tjek venligst din API-nøgle i Indstillinger.",
       "NO_API_KEY": "Ingen Gemini API-nøgle konfigureret. Tilføj venligst din API-nøgle i Indstillinger.",
@@ -178,6 +255,8 @@
     "Retry": "Prøv igen",
     "SeekToTimestamp": "Søg efter dette tidsstempel",
     "ConfigureApiKey": "Konfigurer din Gemini API-nøgle for at generere AI-resuméer og transskriptioner.",
+    "ConfigureProviders": "Aktivér live-transskription og opsæt en LLM-udbyder i Indstillinger for at generere AI-resuméer.",
+    "OpenSettings": "Åbn indstillinger",
     "ConfigureKey": "Konfigurer API-nøgle",
     "SetupRequired": "Konfigurer din Gemini API-nøgle i Indstillinger → AI-funktioner for at aktivere AI-oversigter.",
     "Tab": {
@@ -355,7 +434,8 @@
       "Running": "{{count}} kører",
       "Completed": "{{count}} fuldført",
       "Actions": "{{count}} handlinger"
-    }
+    },
+    "SwitchModel": "Skift model"
   },
   "AgentSection": {
     "ConfigureApiKey": "Konfigurer dine API-nøgler for at bruge AI-agenten."
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "Sådan fungerer SeaMeet AI",
       "Subtitle": "BYOK — Medbring din egen nøgle",
-      "WhatIsBYOK": "Med BYOK sendes dine optagelser og data direkte fra din enhed til Google eller Anthropic. Intet passerer gennem SeaMeet-servere — maksimal privatliv for dig og dit team.",
-      "WhatYouNeed": "Hvad du skal sætte op efter abonnement",
-      "GeminiTitle": "Google AI Studio-nøgle (begrænset gratis)",
-      "GeminiDesc": "Driver live transskription, mødeoversigter og analyse. Google tilbyder et generøst gratis niveau — de fleste brugere betaler aldrig en øre.",
-      "AgentTitle": "AI Agent — vælg én mulighed (begrænset gratis)",
-      "AgentOption1": "GitHub Copilot — 50 gratis premium-chats/måned (eller flere med Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — hvis du allerede har Claude Pro eller Max, er du dækket",
-      "AgentOption3": "Anthropic API-nøgle — til direkte API-adgang",
-      "Continue": "Fortsæt til abonnement",
-      "WhyBYOK": {
-        "Title": "Hvorfor medbringe din egen nøgle?",
-        "Answer": "Meget bedre privatliv — dine data forbliver hos betroede virksomheder som Google og Anthropic, aldrig SeaMeet. De gratis niveauer fra disse udbydere er generøse og vil vare de fleste brugere lang tid."
-      },
-      "WhyMonthly": {
-        "Title": "Hvorfor opkræver SeaMeet månedligt?",
-        "Answer": "SeaMeet opdateres hurtigt med nye AI-funktioner. Dit abonnement holder dig på den nyeste version. Uden det ville du betale en engangslicens og sidde fast med frosne funktioner — som at købe Office 2012 og blive på Office 2012 for evigt."
-      }
+      "Continue": "Fortsæt til abonnement"
     },
     "Coupon": {
       "Title": "Lanceringstilbud",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub Copilot",
       "Authenticated": "Godkendt",
       "CopilotUsage": "Indstil som foretrukken agentleverandør?",
-      "CopilotFreeWarning": "GitHub Copilot Free inkluderer kun 50 agent-/chatforespørgsler om måneden. Godt til en hurtig test, men du kan nå grænsen hurtigt. Opgrader til Copilot Pro for højere grænser, eller brug SeaMeet Desktop Pro for ubegrænset AI-adgang.",
+      "CopilotFreeWarning": "GitHub Copilot Free inkluderer kun 50 agent-/chat-forespørgsler om måneden. Fint til en hurtig test, men du kan ramme grænsen hurtigt. Opgrader til Copilot Pro for højere grænser, eller brug en anden udbyder (Claude eller Gemini) for mere plads.",
       "KeepClaude": "Behold Claude som standard",
       "UseCopilot": "Brug GitHub Copilot som standard",
       "CopilotLabel": "GitHub Copilot",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "Ikke fundet",
       "CopilotSignupHint": "Vil du prøve GitHub Copilot som alternativ agent? Tilmeld dig en gratis plan på github.com/features/copilot/plans (inkluderer 50 agent-/chatforespørgsler om måneden), installér derefter Copilot CLI og kør \"copilot login\".",
       "CopilotFlatUsage": "Bruges til: AI-agent (alternativ til Claude). Ingen API-nøgle nødvendig — bruger dit GitHub-login.",
-      "Guide": {
-        "Intro": "SeaMeet AI har to uafhængige funktionsområder — opsæt det du har brug for.",
-        "SectionAiSummary": "AI-resumé",
-        "SectionAiSummaryBadge": "Påkrævet",
-        "SectionAiSummarySubtitle": "Hent Gemini API-nøglen (gratis)",
-        "SectionAiAgent": "AI-agent",
-        "SectionAiAgentBadge": "Mindst én påkrævet",
-        "OptionCopilotTitle": "GitHub Copilot CLI (gratis)",
-        "OptionClaudeTitle": "Claude Code CLI (valgfri, betalt)",
-        "Or": "ELLER",
-        "Step1Title": "Trin 1 — Læs dette grundigt",
-        "Step1Need": "Du skal bruge 2 ting:",
-        "Step1Item1": "Gemini API-nøgle — til AI-resumé og live-transskription",
-        "Step1Item2": "GitHub Copilot CLI eller Claude Code CLI — til AI-agent",
-        "Step2Title": "Trin 2 — (Gratis) Hent Gemini API-nøglen",
-        "Step2Desc1": "Klik på ",
-        "Step2GetKey": "Hent API-nøgle",
-        "Step2Desc2": " for at oprette en gratis Gemini API-nøgle. Mere info på ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "Trin 3 — (Gratis) Hent GitHub Copilot CLI",
-        "Step3Install": "Klik på ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " eller hurtig installation:",
-        "Step3Login": "Kør: ",
-        "Step3LoginDesc": " (gratis, 50 chats/måned)",
-        "Step3Refresh": "Klik på opdater nedenfor for at registrere Copilot.",
-        "Step3Select": "Klik på GitHub Copilot nedenfor for at vælge som foretrukken.",
-        "Step4Title": "Trin 4 — (Valgfrit, betalt) Hent Claude Code CLI",
-        "Step4Already": "Du har sandsynligvis allerede den, hvis du har installeret Claude Code før.",
-        "Step4Install": "Klik på ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " eller hurtig installation:",
-        "Step4Mac": "macOS / Linux:",
-        "Step4Win": "Windows:",
-        "Step4WinReq": "kræver ",
-        "Step4GitWin": "Git til Windows",
-        "Step4Auth": "Kør: ",
-        "Step4AuthDesc": " (kræver Claude Pro- eller Max-abonnement)",
-        "Step4Refresh": "Klik på opdater nedenfor for at registrere Claude Code.",
-        "Step4Select": "Klik på Claude Code nedenfor for at vælge som foretrukken.",
-        "StepComplete": {
-          "AgentBoth": "Både Claude og Copilot er konfigureret",
-          "AgentClaude": "Claude er konfigureret",
-          "AgentCopilot": "Copilot er konfigureret",
-          "Summary": "Opsætningen er fuldført"
+      "Acronym": "BYOK (Bring Your Own Key — medbring din egen nøgle)",
+      "Explanation": "BYOK betyder, at du forbinder dine egne AI-udbydernøgler; dine data går direkte til de udbydere, du har tillid til, ikke gennem SeaMeet.",
+      "Welcome": {
+        "Title": "Velkommen til BYOK Pro (Bring Your Own Key)",
+        "Subtitle": "$4,99/md. · Dine data, dine udbydere",
+        "PickOne": "Tilslut én nøgle, og du er færdig.",
+        "OneKeyTitle": "ÉN NØGLE, ALLE OPGAVER DÆKKET",
+        "OneKeyBadge": "Anbefalet",
+        "MixTitle": "BLAND & MATCH",
+        "MixSubtitle": "til superbrugere",
+        "OneKeyDoList": "Få gjort:",
+        "MixSupportList": "Vælg en anden tjeneste pr. opgave. Vi understøtter:",
+        "MixSttHeading": "Transskription (STT):",
+        "MixLlmHeading": "Resumé / Noter / Wiki (LLM):",
+        "MixAgentHeading": "AI-agent (LLM + værktøjer):",
+        "MixCliHeading": "Lokale CLIs (ingen nøgle):",
+        "PickOneRadio": "Vælg én:",
+        "GeminiDesc": "Generøst gratis niveau fra Google AI Studio; opgradér senere for bedre kvalitet og kvota.",
+        "OpenAIDesc": "Brug din egen betalte nøgle. ChatGPT-kvalitet.",
+        "GetFreeKey": "Hent gratis nøgle →",
+        "PasteHere": "Indsæt den her",
+        "OpenAdvanced": "Åbn avanceret →",
+        "PowerUserTitle": "Allerede superbruger?",
+        "PowerUserDesc": "Hvis du har Claude Code, GitHub Copilot, Codex CLI eller Gemini CLI installeret, kan du bruge dem til AI-agenten — ingen ekstra API-nøgle nødvendig. Vi finder dem næste.",
+        "WhyTwoProviders": "Hvorfor Gemini eller OpenAI? De er de eneste tjenester, der håndterer både transskription OG resuméer med én nøgle. Alt andet kræver en parret anden nøgle.",
+        "SetupLater": "Jeg sætter op senere — vis mig rundt"
+      },
+      "Receipt": {
+        "Heading": "{{provider}} tilsluttet.",
+        "YouCanNow": "Du kan nu:",
+        "Job1": "Optage møder",
+        "Job2": "Transskribere dem",
+        "Job3": "Resumere med nøglebeslutninger, handlinger, kapitler",
+        "Job4": "Skrive strukturerede noter",
+        "Job5": "Bygge wikier",
+        "Job6": "Stille spørgsmål om tidligere møder",
+        "Job7": "Søge i skærmbilleder",
+        "CTAStart": "Start en optagelse →",
+        "CTAScreenshot": "Tag et skærmbillede →",
+        "CTAWriteNote": "Skriv en note →",
+        "CustomizeCTA": "Tilpas udbydere pr. opgave →",
+        "CLIDetected": "Fundet: {{cli}} — brug den til agenten?",
+        "UseDetectedCLI": "Brug den",
+        "KeepDefault": "Behold standard"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "Her er, hvad $4,99/md. giver dig",
+        "HeadlinePostSubscribe": "Hvad dit BYOK Pro-abonnement inkluderer",
+        "HeadlineSettings": "Hvorfor du er på BYOK Pro",
+        "PrivacyTitle": "Privatliv",
+        "PrivacyDesc": "Dine data går direkte fra din enhed til Google / Anthropic / OpenAI / osv. SeaMeets servere ser aldrig dine optagelser, transskriptioner eller resuméer.",
+        "QualityTitle": "Kvalitet",
+        "QualityDesc": "Vælg den bedste model til hver opgave. Gemini Live til transskription, Claude til skrivning, Deepgram til talerseparation.",
+        "CostTitle": "Omkostningskontrol",
+        "CostDesc": "Betal udbyderne direkte. De fleste brugere holder sig til Geminis generøse gratis niveau og betaler aldrig en øre for AI.",
+        "SovereigntyTitle": "Suverænitet",
+        "SovereigntyDesc": "Nøgler bor i din OS-nøglering. Kan tilbagekaldes når som helst. SeaMeet indsamler nul brugsdata om dine AI-kald."
+      },
+      "Manage": {
+        "Title": "Dine AI-udbydernøgler",
+        "Subtitle": "Indsæt en nøgle for at skifte udbyder, eller åbn avancerede indstillinger for justering per job."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "Hvad du får for 4,99 USD/mdr.",
+          "Bullet1": "Én nøgle (Gemini eller OpenAI) aktiverer alle AI-funktioner.",
+          "Bullet2": "Optag · transskriber · opsummer · skriv noter · byg wikier · spørg om tidligere møder · søg i skærmbilleder.",
+          "Bullet3": "Eller miks udbydere per opgave — Deepgram til transskription, Claude til opsummeringer, din foretrukne CLI til agenten."
+        },
+        "NewFAQ": {
+          "Q1": "Hvad hvis jeg allerede har Claude Pro eller GitHub Copilot?",
+          "A1": "Du kan bruge dem til AI-agenten — ingen ekstra API-nøgle. Vi opdager automatisk Claude Code, GitHub Copilot, Codex CLI og Gemini CLI på dit system.",
+          "Q2": "Hvilke udbydere kan jeg bruge?",
+          "A2": "Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter og Amazon Bedrock til AI. Deepgram og Soniox til transskription. Plus de fire CLI'er ovenfor.",
+          "Q3": "Bliver mine data virkelig ikke rørt af SeaMeet?",
+          "A3": "Ja. Dine optagelser, transskriptioner og opsummeringer går direkte fra din enhed til den udbyder, du vælger. SeaMeets servere ser dem aldrig. Vi ser kun din abonnementsstatus og hvilken udbyder du har konfigureret (ikke nøglen, ikke indholdet).",
+          "Q4": "Hvorfor betale 4,99 USD, hvis jeg medbringer mine egne nøgler?",
+          "A4": "Abonnementet betaler for SeaMeets app-udvikling — multi-udbyder-routing, live-transskription, wiki-generering, AI-agent med værktøjsbrug, skærmbillede-OCR og løbende platformsupport. Dine AI-omkostninger er separate og går direkte til udbyderen (ofte gratis på Geminis niveau)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "Hvad er BYOK?",
-        "A1": "BYOK står for Bring Your Own Key (Medbring din egen nøgle). Du skal bruge 2 API-nøgler: én fra Google AI Studio (til transskription og oversigter) og én fra GitHub Copilot eller Claude Code (til AI-agent). En guidet opsætningsguide fører dig gennem tilslutning af begge nøgler efter checkout. Google AI Studio giver dig normalt en gratis nøgle. GitHub Copilot tilbyder også en gratis plan. Så du er klar til at bruge dine egne nøgler med begrænset gratis adgang. Hvis du har abonneret på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle.",
+        "A1": "BYOK står for Bring Your Own Key. Du behøver kun 1 API-nøgle — fra enten Google AI Studio (Gemini) eller OpenAI — til at drive både mødeafskrift og resuméer samt AI-agentchat. Google AI Studio tilbyder normalt en gratis nøgle, så du kan komme i gang uden ekstra omkostninger. Erfarne brugere kan også tilslutte deres egne CLI-værktøjer (Claude Code, GitHub Copilot osv.) til AI-agentchat. En guidet opsætningsguide fører dig igennem det hele efter betaling.",
         "Q2": "Hvorfor et manedligt abonnement?",
-        "A2": "Dit abonnement finansierer lobende opdateringer, understottelse af nye AI-modeller, fejlrettelser og nye funktioner. API-omkostninger betales separat til Google og Anthropic med dine egne nogler.",
-        "Q3": "Hvordan fungerer licenseringen?",
-        "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
-      },
-      "Desktop": {
-        "Q1": "Hvad er Desktop Pro?",
-        "A1": "Desktop Pro inkluderer indbyggede AI-nogler administreret af SeaMeet — ingen grund til at oprette eller administrere dine egne API-nogler. Abonner bare og begynd at bruge AI-funktioner med det samme.",
-        "Q2": "Hvordan adskiller det sig fra BYOK?",
-        "A2": "Med Desktop Pro leverer og administrerer SeaMeet API-noglerne for dig. Du behovver ikke at tilmelde dig Google AI Studio eller Anthropic separat.",
+        "A2": "Dit abonnement finansierer løbende opdateringer, support til nye AI-modeller, fejlrettelser og nye funktioner. API-omkostninger betales direkte til Google, OpenAI eller andre understøttede udbydere ved hjælp af dine egne nøgler.",
         "Q3": "Hvordan fungerer licenseringen?",
         "A3": "1 konto, op til 3 enheder. Inaktive enheder frigores automatisk efter 30 dage. Du kan ogsa manuelt logge ud fra en enhed for at frigore en plads."
       },
       "Sync": {
         "Q1": "Hvad er Sync Pro?",
-        "A1": "Sync Pro inkluderer alt fra Desktop Pro plus skysynkronisering. Dine optagelser, transskriptioner og resumeer synkroniseres pa tvaers af alle dine enheder.",
+        "A1": "Sync Pro er et fremtidigt niveau med indbygget AI (ingen API-nøgler at administrere), cloud-synkronisering på tværs af enheder og team-samarbejde. Det er til brugere, der vil have SeaMeets AI-funktioner uden at medbringe egne nøgler. Endnu ikke tilgængeligt — klik på \"Anmod om dette\" på planen for at sende os en mail, hvis du ønsker det, så vi kan prioritere.",
         "Q2": "Hvad bliver synkroniseret?",
         "A2": "Optagelser, transskriptioner, AI-resumeer og opgavelister synkroniseres pa tvaers af dine enheder. AEndringer pa en enhed vises pa alle andre.",
         "Q3": "Hvordan fungerer licenseringen?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7,99/måned",
+        "Price": "$4,99/måned",
         "Feature1": "AI-transskription og resuméer",
         "Feature2": "Brug dine egne Gemini & Claude API nøgler",
         "Feature3": "Live transskription under møder",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "GitHub Copilot har også en gratis plan.",
         "InfoNoteClaude": "Hvis du abonnerer på Claude Pro eller Max, behøver du ikke en ekstra Anthropic API-nøgle."
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "$15,99/måned",
-        "Feature1": "Alt i BYOK Pro",
-        "Feature2": "Indbygget AI - ingen API-nøgler påkrævet",
-        "Feature3": "Prioriteret støtte",
-        "Feature4": "Avanceret analyse"
-      },
       "Free": {
         "Name": "Gratis",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "Sync Pro",
-        "Price": "$25,99/måned",
-        "Feature1": "Alt i Desktop Pro",
+        "Feature1": "Indbygget AI — ingen API-nøgler nødvendige",
         "Feature2": "Cloud-synkronisering på tværs af enheder",
         "Feature3": "Funktioner til teamsamarbejde",
-        "Feature4": "Fælles mødebibliotek"
+        "Feature4": "Fælles mødebibliotek",
+        "RequestCTA": "Anmod om dette",
+        "RequestSubject": "Jeg vil gerne have Sync Pro til SeaMeet",
+        "RequestBody": "Hej SeaMeet-team — jeg er interesseret i Sync Pro (indbygget AI uden API-nøgler at administrere, cloud-synkronisering, multi-enhed, team-samarbejde). Lad mig vide, når det er tilgængeligt.\n\nTak!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "Hvis du bruger Claude App/Code: Anthropic kan bruge dine data til træning, medmindre du fravælger det",
         "Agent3": "Hvis du bruger Anthropic API: Anthropic bruger ikke dine data til træning"
       },
-      "Desktop": {
-        "Recording1": "Forbliver på din computer",
-        "Recording2": "Synkroniseres til SeaMeet.ai's Google Cloud-konto til behandling",
-        "Recording3": "Google sletter filerne efter 48 timer",
-        "AIData1": "Behandles af Gemini API",
-        "AIData2": "Google bruger ikke dine data til træning",
-        "AIData3": "SeaMeet.ai bruger ikke dine data til træning",
-        "Agent1": "Behandles af Anthropic API",
-        "Agent2": "Anthropic bruger ikke dine data til træning",
-        "Agent3": "SeaMeet.ai bruger ikke dine data til træning"
-      },
       "Sync": {
         "Recording1": "Forbliver på din computer",
-        "Recording2": "Synkroniseret til SeaMeet.ai-skyen",
+        "Recording2": "Synkroniseret til SeaMeet.ai-skyen med kryptering i hvile",
         "Recording3": "Download fra SeaMeet.ai-skyen til en anden stationær enhed og forbliv synkroniseret",
-        "AIData1": "Samme som Desktop Pro",
-        "Agent1": "Samme som Desktop Pro"
+        "AIData1": "Genereres af Gemini API via SeaMeet-administrerede nøgler; Google bruger ikke dine data til træning",
+        "Agent1": "Genereres af Anthropic API via SeaMeet-administrerede nøgler; Anthropic bruger ikke dine data til træning"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "Avanceret bruger: forstår hvad BYOK er",
         "Item2": "Teknisk kyndig: har de nødvendige API-nøgler",
         "Item3": "Privatlivsfokuseret: kontrollerer hvem der ser dine data"
-      },
-      "Desktop": {
-        "Item1": "Normal bruger: problemfri opsætning",
-        "Item2": "Privatlivsfokuseret: lyd-/billed-/optagelsesdata forbliver på din computer"
       },
       "Sync": {
         "Item1": "De fleste brugere: problemfri opsætning",
@@ -1272,10 +1340,26 @@
       "TurnCoverageHint": "2.5-standard: kun under tale. 3.1-standard: hvert videobillede (læser navneskilte også i stilhed).",
       "SendVideo": "Send videobilleder",
       "VideoFps": "Billedrate",
+      "VideoFpsOption_0_2": "0,2 fps (1 billede / 5 s)",
+      "VideoFpsOption_0_5": "0,5 fps (1 billede / 2 s, standard)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
       "VideoQuality": "JPEG-kvalitet på billedet",
+      "VideoQualityOption_0_3": "0,3 (mindst, sløret)",
+      "VideoQualityOption_0_5": "0,5 (båndbredde-venlig)",
+      "VideoQualityOption_0_7": "0,7 (afbalanceret)",
+      "VideoQualityOption_0_85": "0,85 (standard — god til navne på skærmen)",
+      "VideoQualityOption_0_95": "0,95 (maksimum)",
       "VideoMaxWidth": "Maksimal billedbredde",
+      "VideoMaxWidthOption_480": "480 px (mindst)",
+      "VideoMaxWidthOption_640": "640 px (båndbredde-venlig)",
+      "VideoMaxWidthOption_960": "960 px (standard — god til navne på skærmen)",
+      "VideoMaxWidthOption_1280": "1280 px (større)",
+      "VideoMaxWidthOption_1920": "1920 px (native 1080p)",
       "VideoQualityHint": "Hæv kvalitet og maksimal bredde, når Gemini fejllæser små flise-etiketter (f.eks. deltagernavne i Zoom / Meet / Teams). Højere værdier øger billed-token-forbruget — 1280 px springer typisk fra 258-token-niveauet til 1290-token-niveauet pr. billede.",
       "EndSensitivity": "Følsomhed for taleafslutning",
+      "EndSensitivityHigh": "HIGH (hurtige skylninger)",
+      "EndSensitivityLow": "LOW (længere ture)",
       "Default": "Standard (HIGH — hurtige flushes)",
       "SilenceMs": "Stilhed før turslut",
       "VadHint": "Mindre stilhed + HØJ følsomhed → kortere, hyppigere transkriptions-flushes.",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "Skjul note-sidebjælke",
     "ExpandSidebar": "Vis note-sidebjælke"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ Tip: Når du stopper, kører den Dybdegående Analyse automatisk for at give dig bedre talernavne og citater fra lyd/video."
+  },
   "OCRAutoCopy": {
     "Copied": "Udtrukket tekst kopieret til udklipsholder",
     "Error": "Kunne ikke udtrække tekst",
@@ -1653,13 +1740,17 @@
     "Running": "Genererer oversigt...",
     "Step": {
       "Preparing": "Forbereder optagelse",
+      "PreparingFast": "Forbereder transskription",
       "Uploading": "Uploader fil",
       "UploadingWait": "Behandling på server",
       "Analyzing": "Analyserer",
       "Extracting": "Udtræk resultater",
       "Saving": "Gemmer artefakter",
       "PreparingImage": "Forbereder billede",
-      "AnalyzingImage": "Analyser billede"
+      "AnalyzingImage": "Analyser billede",
+      "ExtractingAudio": "Udtrækker lyd",
+      "Transcribing": "Transskriberer",
+      "TranscribingWith": "Transskriberer med {{provider}}"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "AI efter mødet",
     "PostMeetingAIDesc": "Resuméer, handlingspunkter og indsigter genereres efter optagelsen er færdig.",
     "UnlockPremium": "Lås op med Premium",
-    "Upgrade": "Opgrader"
+    "Upgrade": "Opgrader",
+    "NoteSynthesis": "AI-syntese",
+    "NoteSynthesisDesc": "Få en struktureret opsummering af denne note + den tilknyttede optagelse med BYOK Pro.",
+    "WikiList": "Wikier",
+    "WikiListDesc": "Byg automatisk en vidensbase fra dine noter og møder med BYOK Pro.",
+    "ScreenshotAI": "Skærmbillede-AI",
+    "ScreenshotAIDesc": "Beskriv billeder, udtræk tekst og stil opfølgende spørgsmål med BYOK Pro.",
+    "LockedChipTooltip": "Abonner for at aktivere",
+    "AgentReadOnlyBanner": "Abonner for at fortsætte samtalen",
+    "GenericUpgradeCta": "Abonner"
   },
   "QuickOpen": {
     "Placeholder": "Begynd at skrive eller indsæt fra udklipsholderen… Brug [[ for at linke til en anden note",
@@ -1883,7 +1983,9 @@
       "Description": "Beskrivelse",
       "OCR": "Tekst (OCR)"
     },
-    "UnknownError": "Ukendt fejl"
+    "UnknownError": "Ukendt fejl",
+    "FallbackUsed": "{{from}} kunne ikke behandle billedet — Gemini håndterede det i stedet.",
+    "FallbackHint": "Deaktiver \"Brug hoved-LLM til skærmbillede-OCR\" i Indstillinger, hvis denne udbyder ikke understøtter visning."
   },
   "ScreenshotView": {
     "RecentLabel": "Nylige skærmbilleder"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "Byg wiki fra udvalg…",
       "ToastMessage": "{{count}} nye noter registreret. Byg wiki?",
       "BannerMessage": "{{count}} nye noter siden sidste build",
-      "BuildingExtracting": "Læser {{current}}/{{total}} noter",
-      "BuildingReducing": "Bygger {{current}}/{{total}} sider",
+      "BuildingExtracting": "Læste {{current}} af {{total}} noter",
+      "BuildingReducing": "Byggede {{built}} af {{total}} sider",
       "Building": "Bygger wiki — {{stage}}",
       "PausedFor": "hastighedsgrænse: {{seconds}}s",
       "Cancel": "Annuller",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "Polish indeks",
       "PolishIndexHint": "Tilføj en fortællende intro til wiki-indekset",
       "BuildFromFolderPrompt": "Mappesti (relativ til arbejdsområdet):",
-      "BuildFromSelectionPrompt": "Komma-separerede notefilnavne (relativt til notes/):"
+      "BuildFromSelectionPrompt": "Komma-separerede notefilnavne (relativt til notes/):",
+      "BuildingExtractingWithCache": "Læste {{current}} af {{total}} noter · {{skipCount}} genbrugt fra cache",
+      "BuildingReducingWithFailures": "Byggede {{built}} af {{total}} sider · {{failed}} fejlede"
     },
     "Toolbar": {
       "Overflow": "Flere wiki-handlinger",
@@ -2452,5 +2556,284 @@
       "floating": "Skiftede til flydende layout"
     },
     "introToast": "Nyhed: Flydende layout tilgængeligt. Klik på layoutikonet i overskriften for at prøve det."
+  },
+  "settings": {
+    "stt": {
+      "title": "Tale-til-tekst-udbyder (live-billedtekster, filtransskription)",
+      "apiKey": "API-nøgle",
+      "getKey": "Få en nøgle",
+      "signup": "Hent API-nøgle",
+      "tutorial": "Opsætningsvejledning",
+      "keyDescription": "Din API-nøgle er krypteret og gemt lokalt på denne enhed.",
+      "test": "Test forbindelse",
+      "testing": "Tester…",
+      "testOk": "Forbundet",
+      "testFail": "Forbindelsen mislykkedes",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Gratis niveau med en Google-konto. Bedst til afslappet brug."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "Bedste engelske nøjagtighed og laveste latens. $200 gratis kredit ved tilmelding."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "Bedste flersprogede nøjagtighed. Kun betalte planer — kreditkort kræves."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime til live-transskription, Whisper / gpt-4o-transcribe til filtransskription."
+        }
+      },
+      "language": {
+        "label": "Talt sprog",
+        "sublabel": "Tip til live-transskription. Automatisk genkendelse fungerer i de fleste tilfælde.",
+        "sonioxSublabel": "Tip til live-transskription. Tilføj flere ved møder med flere sprog.",
+        "addLanguage": "Tilføj sprog",
+        "remove": "Fjern sprog",
+        "geminiSublabel": "Gemini genkender automatisk fra lyden (tip bruges ikke).",
+        "auto": "Automatisk genkendelse",
+        "en": "Engelsk",
+        "zh-CN": "Kinesisk (forenklet)",
+        "zh-TW": "Kinesisk (traditionel)",
+        "es": "Spansk",
+        "ja": "Japansk",
+        "ko": "Koreansk",
+        "fr": "Fransk",
+        "de": "Tysk",
+        "pt": "Portugisisk",
+        "ru": "Russisk",
+        "it": "Italiensk",
+        "nl": "Hollandsk",
+        "ar": "Arabisk",
+        "vi": "Vietnamesisk",
+        "id": "Indonesisk",
+        "th": "Thai",
+        "tr": "Tyrkisk",
+        "pl": "Polsk",
+        "uk": "Ukrainsk",
+        "hi": "Hindi",
+        "fil": "Filippinsk",
+        "ms": "Malaysisk",
+        "openaiSublabel": "Det første sprog sendes som API-hint; yderligere sprog tilføjes til domænepromptet (på understøttede modeller). gpt-4o-transcribe-diarize bruger kun det første."
+      },
+      "speakerLabel": "Taler {{n}}",
+      "advanced": {
+        "title": "Avancerede indstillinger",
+        "reset": "Nulstil til standard",
+        "deepgram": {
+          "model": "Model",
+          "modelDefault": "Standard (nova-3)",
+          "modelHint": "nova-3 er bedst til engelsk. nova-3-general håndterer flere sprog.",
+          "diarize": "Talergenkendelse",
+          "diarizeHint": "Udsend talermærkater (S0, S1, …), når der registreres flere stemmer.",
+          "smartFormat": "Smart formatering",
+          "smartFormatHint": "Tegnsæt, store bogstaver og formater tal / datoer.",
+          "punctuate": "Tegnsætning",
+          "punctuateHint": "Indsæt punktummer og kommaer baseret på rytmen.",
+          "keyterm": "Ordforrådsforstærkning",
+          "keytermHint": "Ét udtryk pr. linje. Domænespecifikke ord, der vægtes.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "Streng sprogmatchning",
+          "strictLanguageHint": "Afvis lyd på andre sprog (hurtigere men mindre fleksibelt).",
+          "diarize": "Talergenkendelse",
+          "diarizeHint": "Udsend talermærkater, når der registreres flere stemmer.",
+          "languageId": "Sprogidentifikation",
+          "languageIdHint": "Udsend registrerede sprog-tags pr. token.",
+          "endpointing": "Endepunktsregistrering",
+          "endpointingHint": "Færdiggør automatisk tokens, når taleren holder pause.",
+          "context": "Domænekontekst",
+          "contextHint": "Fri beskrivelse af, hvad der diskuteres. Navne, organisationer, jargon.",
+          "contextPlaceholder": "Møde med Acme Corp om Q3-indtægter.\nDeltagere: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "Model til filtranskription",
+          "modelDefault": "Standard (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize er bedst til diarisering. mini er billigere, men uden diarisering. OpenAI begrænser et enkelt upload til 25 MB lyd. SeaMeet udtrækker video som mono opus 16 kbps, så et enkelt upload dækker cirka 3–4 timers møde.",
+          "contextPrompt": "Domænekontekst",
+          "contextPromptPlaceholder": "Diskussion af Acme Corp Q3-omsætning. Deltagere: Alice Chen, Bob Park.",
+          "contextPromptHint": "Fri beskrivelse, der får OpenAI til at foretrække domænespecifikt ordforråd.",
+          "realtimeModel": "Model til live-transskription",
+          "realtimeModelDefault": "Standard (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe er møde-standarden — server-VAD afslutter hver ytring med tidsstempler. gpt-4o-mini-transcribe opfører sig ens, men er billigere. gpt-realtime-whisper har den laveste latens, men samler transskriptionen på én voksende linje (ingen afslutning per ytring under optagelse) — bedst til chat-UI, ikke møder.",
+          "refreshModels": "Opdater modelliste",
+          "refreshing": "Opdaterer…",
+          "turnDetection": "Skiftdetektion",
+          "turnDetectionServerVad": "Server-VAD (live-undertekster)",
+          "turnDetectionNone": "Ingen (afslut ved stop)",
+          "turnDetectionHint": "Server-VAD udsender transskriptioner per ytring mens taleren taler. Slå fra ved push-to-talk-flows, hvor bufferen kun sendes når optagelsen stoppes.",
+          "noiseReduction": "Støjreduktion",
+          "noiseReductionNear": "Nærfelt (laptop-/headsetmikrofon)",
+          "noiseReductionFar": "Fjernfelt (mødelokalemikrofon)",
+          "noiseReductionOff": "Fra",
+          "noiseReductionHint": "Forfilter anvendt på indgangslyd før transskription. Vælg den indstilling, der passer til mikrofonens placering.",
+          "includeLogprobs": "Inkluder konfidens pr. token",
+          "includeLogprobsHint": "Anmoder om logsandsynligheder for hver transskriberet token. Bruges til at farvelægge ord med lav konfidens. Øger svarstørrelsen — slå fra hvis ikke nødvendigt.",
+          "includeLogprobsDiarize": "Understøttes ikke af gpt-4o-transcribe-diarize.",
+          "useStreaming": "Stream filtransskription",
+          "useStreamingHint": "Vis delvis tekst mens en optagelse transskriberes. Understøttes af gpt-4o-transcribe og gpt-4o-mini-transcribe; ellers ignoreret.",
+          "useStreamingDiarize": "Understøttes ikke af gpt-4o-transcribe-diarize.",
+          "contextPromptDiarize": "Understøttes ikke af gpt-4o-transcribe-diarize.",
+          "contextPromptModelSupport": "For whisper-1 er promptet en liste over nøgleord. For gpt-4o-transcribe og gpt-4o-mini-transcribe er promptet fri tekst (f.eks. „forvent ord relateret til teknologi”). Promptet understøttes ikke med gpt-realtime-whisper i GA Realtime-sessioner eller med gpt-4o-transcribe-diarize."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "Live-transskriptionsmodel",
+          "fileTranscriptionModelLabel": "Filtransskriptionsmodel",
+          "fileTranscriptionModelHint": "Konfigureres i LLM Provider → Default Model. Den samme Gemini-model bruges til batch-filtransskription, resumé, billed-OCR, wiki og chat.",
+          "deepAnalysisLabel": "Dybdeanalyse med video"
+        }
+      }
+    },
+    "llm": {
+      "title": "LLM-udbyder (optagelsesresumé, billedudtræk, wiki-generering)",
+      "signup": "Få API-nøgle",
+      "installGuide": "Installationsvejledning",
+      "tutorial": "Opsætningsvejledning",
+      "apiKey": "API-nøgle",
+      "testing": "Tester…",
+      "test": "Test forbindelse",
+      "keyDescription": "Din API-nøgle krypteres og gemmes lokalt på denne enhed.",
+      "cliStatus": "CLI-status",
+      "usesLocalCLI": "Bruger lokal CLI-godkendelse (ingen API-nøgle nødvendig).",
+      "testOk": "Forbundet",
+      "testFail": "Forbindelse mislykkedes",
+      "advanced": {
+        "title": "Avancerede indstillinger",
+        "reset": "Nulstil til standard",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "Standardmodel (Resumé / Skærmbillede / Wiki / Chat)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "Bemærk: Dyb lydopsummeringstilstand bruger Gemini uanset denne indstilling. Skærmbillede/OCR følger kontakten ovenfor.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "Native multimodal. Free tier available with API key."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o and GPT-5 family. Pay-as-you-go from the OpenAI platform."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic Console API key."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash and deepseek-v4-pro. Low cost per token, thinking mode supported."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "One key, hundreds of models from many vendors."
+        },
+        "claude-code": {
+          "label": "Claude Code (local CLI)",
+          "desc": "Uses your installed claude CLI. No API key needed."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "Uses your installed codex CLI. Rides on OpenAI Plus / Pro."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (Google auth)",
+          "desc": "Uses your installed gemini CLI. OAuth or API key."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "Foundation models on AWS. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "Brug hoved-LLM til skærmbillede-OCR",
+      "visionToggleHint": "Sender skærmbillede/OCR-job til den valgte udbyder ovenfor. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis din udbyder ikke kan acceptere billedet.",
+      "visionUnsupportedBadge": "OCR via Gemini-fallback",
+      "visionUnsupportedTooltip": "Denne udbyders adapter understøtter endnu ikke billede-input. Skærmbillede-OCR falder tilbage til Gemini."
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "Ingen wikier endnu",
+    "Description": "Wikier bygges automatisk ud fra dine noter og møder. Skriv en note eller optag et møde for at komme i gang.",
+    "TakeNoteCta": "Skriv en note",
+    "StartRecordingCta": "Start optagelse"
+  },
+  "WikiPaywall": {
+    "Headline": "Dine noter, automatisk organiseret",
+    "Subhead": "En vidensbase bygget af dine noter & møder — af AI.",
+    "ChaosLabel": "Dine noter",
+    "ChaosCaption": "Fri form, ingen struktur påkrævet",
+    "WikiLabel": "Din wiki",
+    "WikiCaption": "Auto-organiseret & sammenkoblet",
+    "Explainer": "Skriv noter som du altid har gjort. Mens du skriver, udtrækker AI personer, emner, virksomheder og møder du nævner og fletter dem ind i en struktureret wiki — automatisk sammenkoblet og altid opdateret.",
+    "Cta": "Abonner for at aktivere wikier"
+  },
+  "NotesShowcase": {
+    "Headline": "Noter, der vokser til en vidensbase",
+    "Subhead": "Almindelig Markdown. Optag lyd, video eller skærmbilleder inline. Lad AI opsummere og forbinde alt.",
+    "Feature1Title": "Markdown + wikilinks",
+    "Feature1Desc": "Skriv Markdown. Brug [[wikilinks]] til at forbinde noter. Intet proprietært format.",
+    "Feature2Title": "Mappetræ, på din måde",
+    "Feature2Desc": "Træk for at organisere. Uendelig indlejring. Omdøbninger opdaterer wikilinks på tværs af alle noter.",
+    "Feature3Title": "Optagelser, inline",
+    "Feature3Desc": "Optag lyd, video eller skærmbilleder lige ved siden af dine noter. De er indlejret — ikke begravet i en anden app.",
+    "Feature4Title": "AI opsummerer & forbinder",
+    "Feature4Desc": "LLM’er opsummerer hver note, udtrækker entiteter og bygger automatisk en wiki af personer, emner og møder.",
+    "Tagline": "Indbygget optagelse. Sammenkoblede noter. Bærbar Markdown. Gemt som almindelige filer i din mappe — dine for altid.",
+    "CreateCta": "Opret din første note"
   }
 }

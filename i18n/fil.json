@@ -18,13 +18,14 @@
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API Key",
     "ApiKeySection": "Gemini API Key",
-    "AutomationSection": "Awtomatiko",
     "AutoSummary": "Awtomatikong bumuo ng buod",
     "AutoSummaryDesc": "Tumatakbo pagkatapos ng bawat pag-record",
+    "AutomationSection": "Awtomatiko",
     "ClaudeKey": {
+      "ApiKeyTitle": "API Key",
       "ClearKey": "Alisin ang naka-save na key",
-      "CliInstalled": "Naka-install ({{version}})",
       "CliInstallLink": "I-install ang Claude Code →",
+      "CliInstalled": "Naka-install ({{version}})",
       "CliNotFound": "Hindi nahanap ang CLI",
       "CliNotInstalled": "Hindi natagpuan ang Claude CLI — i-install ito at mag-log in upang ma-authenticate:",
       "CliSection": "Claude Code CLI",
@@ -33,7 +34,6 @@
       "HideKey": "Itago ang susi",
       "InstallMac": "macOS / Linux:",
       "InstallWin": "Windows (PowerShell):",
-      "ApiKeyTitle": "API Key",
       "KeyInvalid": "Di-wastong key",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "••••••••• (naka-save)",
@@ -60,6 +60,7 @@
       "SourceNone": "Hindi naka-configure",
       "TestKey": "I-save at I-verify"
     },
+    "ClearKey": "Alisin ang naka-save na key",
     "Copilot": {
       "Authenticated": "Na-authenticate",
       "DefaultModel": "Default na Model",
@@ -71,21 +72,32 @@
       "Remove": "Alisin ang Copilot integration",
       "Section": "GitHub Copilot"
     },
-    "Provider": {
-      "Detected": "Na-detect",
-      "Hint": "Maaari mo ring palitan ang provider sa bawat pag-uusap sa chat panel.",
-      "NotAvailable": "Hindi magagamit",
-      "Preferred": "Inirerekomenda",
-      "Section": "Piniling Agent Provider"
-    },
-    "ClearKey": "Alisin ang naka-save na key",
+    "DefaultModel": "Default na Modelo",
     "EnableToggle": "Paganahin ang mga buod na pinapagana ng AI",
     "EnableToggleDesc": "Nangangailangan ng libreng Gemini API key",
-    "DefaultModel": "Default na Modelo",
-    "GeminiSection": "Gemini",
+    "Gemini": {
+      "Configured": "Naka-configure ang API key",
+      "DefaultModel": "Default na modelo",
+      "Description": "Makipag-usap sa iyong mga miting gamit ang mga modelo ng Gemini. Pareho ng key sa mga provider ng buod at live na transkripsiyon ng Gemini.",
+      "GetKeyLink": "Kumuha ng libreng API key sa Google AI Studio →",
+      "NotConfigured": "Walang naka-configure na API key",
+      "Refresh": "Tuklasin muli ang Gemini",
+      "Remove": "Alisin ang Gemini key",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "Kumuha ng libreng API key mula sa Google AI Studio →",
     "GroupTitle": "Mga Tampok ng AI",
     "HideKey": "Itago ang susi",
+    "Job": {
+      "AskQuestions": "Magtanong tungkol sa nakaraang meeting",
+      "BuildWikis": "Magtayo ng wiki mula sa notes at meetings",
+      "Record": "Mag-record ng meeting",
+      "RecordSub": "Lokal · laging gumagana",
+      "SearchScreenshots": "Maghanap sa loob ng screenshots",
+      "Summarize": "I-summarize ang meeting",
+      "Transcribe": "I-transcribe ang meeting",
+      "WriteNote": "Sumulat ng note"
+    },
     "KeyInvalid": "Di-wastong key",
     "KeyManagedInBilling": "Ang API key ay pinamamahalaan sa Pamahalaan ang Subscription → Mga API Key",
     "KeyNotConfigured": "Walang key na na-configure",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "••••••••• (na-save)",
     "KeyTesting": "Pagsubok...",
     "KeyVerified": "Na-verify ang susi",
-    "ManagedKeyDesc": "Awtomatikong ibinibigay ang iyong API key. Walang kinakailangang configuration.",
-    "ManagedKeyStatus": "Pinamamahalaang key — ibinigay ng SeaMeet",
-    "MenuItem": "AI-Powered Summaries",
+    "MenuItem": "AI Transcription, Extraction, Buod, Wiki",
     "ModelLabel": "Modelo ng Gemini",
+    "ModelSection": "Modelo ng AI",
     "Models": {
       "Gemini25Flash": "Gemini 2.5 Flash",
       "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "Gemini 3 Pro",
       "Gemini3ProSub": "Pinakamataas na kakayahan"
     },
-    "ModelSection": "Modelo ng AI",
-    "PageTitle": "Mga Tampok ng AI",
-    "QuotaLoading": "Nilo-load ang quota...",
-    "QuotaRefresh": "I-refresh ang quota",
-    "QuotaRemaining": "{{remaining}} / {{limit}} na token ang natitira",
-    "QuotaResetDate": "Nagre-reset sa {{date}}",
-    "QuotaSection": "Quota sa Paggamit",
+    "OpenAI": {
+      "Configured": "Naka-configure ang API key",
+      "DefaultModel": "Default na modelo",
+      "Description": "Makipag-usap sa iyong mga miting gamit ang mga modelo ng GPT. Pareho ng key sa mga provider ng buod at live na transkripsiyon ng OpenAI.",
+      "GetKeyLink": "Kumuha ng API key sa OpenAI Platform →",
+      "NotConfigured": "Walang naka-configure na API key",
+      "Refresh": "Tuklasin muli ang OpenAI",
+      "Remove": "Alisin ang OpenAI key",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "AI Transcription, Extraction, Buod, Wiki",
+    "PostMeetingSummaryLanguage": "Wika ng buod pagkatapos ng pulong",
+    "PostMeetingSummaryLanguageDesc": "Ginagamit sa transkripsyon + buod pagkatapos ng pulong (batch). Gumagamit ang mga live caption ng tagapili ng wikang sinasalita sa itaas.",
+    "PreUploadAudio": "Mauna nang i-upload ang audio para sa instant deep summary",
+    "PreUploadAudioDesc": "Nag-stream ng audio sa Gemini habang nagre-record upang ang deep-mode summary ay bumalik sa loob ng ilang segundo sa halip na ~30 s. Nangangailangan ng Gemini API key. Gumagamit ng upload bandwidth habang nagre-record.",
+    "Provider": {
+      "Detected": "Na-detect",
+      "Hint": "Maaari mo ring palitan ang provider sa bawat pag-uusap sa chat panel.",
+      "NotAvailable": "Hindi magagamit",
+      "Preferred": "Inirerekomenda",
+      "Section": "Piniling Agent Provider"
+    },
+    "RemoveKey": "Alisin",
+    "SaveKey": "I-save ang key",
     "Saving": "Nagse-save...",
     "SelectedModel": "Napili: {{model}}",
     "ShowAllModels": "Ipakita lahat ng {{count}} modelo",
     "ShowFewerModels": "Ipakita ang mas kaunting modelo",
     "ShowKey": "Ipakita ang susi",
-    "TestKey": "I-save at I-verify",
     "SummaryLanguage": "Wika ng output ng buod",
-    "SummaryLanguageDesc": "Inilalapat sa transcript, buod, at mga chapter. Awtomatikong nakikilala ang wikang sinasalita."
+    "SummaryLanguageAutoDetect": "Auto-detect (maaaring maghalo ng mga script)",
+    "SummaryLanguageDesc": "Inilalapat sa transcript, buod, at mga chapter. Awtomatikong nakikilala ang wikang sinasalita.",
+    "TestKey": "I-save at I-verify",
+    "SummaryConfigSection": "Configuration ng Buod",
+    "ImageExtractionSection": "Pagkuha ng Larawan",
+    "UseMainLlmForOcrHint": "Idinadako ang screenshot OCR sa iyong piniling LLM provider. Naka-off (default): laging gumagamit ng Gemini. Awtomatikong bumabalik sa Gemini kung hindi tumatanggap ng larawan ang provider."
+  },
+  "AISummaryQuality": {
+    "Heading": "Kalidad ng AI summary",
+    "MasterToggleLabel": "Gamitin ang Deep Analysis kapag may naka-configure na Gemini key",
+    "MasterToggleHelp": "Direktang binabasa ng Gemini ang audio at video upang magbigay ng natatanging pangalan ng tagapagsalita, mas tumpak na sipi, at mas mayamang buod. Mananatiling default ang Fast (transcript-based) na buod; awtomatikong tumatakbo sa background ang Deep Analysis at papalitan nito ang Fast na buod kapag natapos.",
+    "AdvancedSection": "Advanced",
+    "PreUploadLabel": "Pre-upload ng audio/video sa background habang nagre-record",
+    "PreUploadHelp": "Sini-stream ang recording sa Gemini habang nagre-record ka kaya ilang segundo lang matatapos ang Deep Analysis pagkatapos pindutin ang stop.",
+    "TokenEstimateHeading": "Tinatayang paggamit ng Gemini token bawat Deep Analysis run",
+    "TokenEstimateInput": "Input",
+    "TokenEstimateOutput": "Output",
+    "TokenEstimate10MinAudio": "10 min audio",
+    "TokenEstimate10MinVideo": "10 min video",
+    "TokenEstimate1HrAudio": "1 oras audio",
+    "TokenEstimate1HrVideo": "1 oras video",
+    "TokenEstimateNote": "Token rates: audio ≈ 32 tok/s, video ≈ 263 tok/s (1 fps frames + audio track). May limitasyong 32K na output budget bawat single-call run at 16K bawat chunked summary call. Naaangkop ang araw-araw na quota ng libreng tier (hal. 500 RPD sa Flash-Lite Latest).",
+    "DisabledStateBanner": "Kailangan ng Gemini API key ang multimodal Deep Analysis. Kung wala, Fast (transcript-based) summaries lang ang magagamit, na binubuo ng napili mong LLM provider.",
+    "DisabledStateAddKey": "Magdagdag ng Gemini API key →"
   },
   "AISummary": {
     "ApplyMerge": "Ilapat",
@@ -133,6 +183,33 @@
     "Copy": "Kopyahin",
     "EditSegmentSpeaker": "I-click upang muling italaga ang segment na ito",
     "EnableRequired": "Paganahin ang Mga Feature ng AI sa Mga Setting → Mga Tampok ng AI upang makita ang mga buod ng AI.",
+    "ReRunDeep": "Patakbuhing muli ang Deep Analysis (gumagamit ng karagdagang Gemini tokens)",
+    "ReRunSummary": "Patakbuhing muli ang buod",
+    "DeepProgress": {
+      "Title": "Tumatakbo ang Deep Analysis",
+      "Cancel": "Kanselahin",
+      "Stage": {
+        "preparing": "naghahanda",
+        "uploading": "ina-upload ang file",
+        "uploading-wait": "Pinoproseso ng Gemini",
+        "analyzing": "sinusuri",
+        "extracting": "kinukuha",
+        "saving": "ini-save",
+        "complete": "tapos na"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ Handa na ang Deep summary",
+      "Badge": "Deep · Sinuri ng Gemini ang recording"
+    },
+    "DeepFailed": {
+      "Toast": "Nabigo ang Deep Analysis: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "Gamitin ang Deep Analysis",
+      "Desc": "Pinapanood ng Gemini ang audio + video para makapagbigay ng natatanging pangalan ng tagapagsalita, eksaktong sipi, at mas malalim na buod.",
+      "Run": "Patakbuhin ang Deep Analysis"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "Di-wastong API key. Pakisuri ang iyong API key sa Mga Setting.",
       "NO_API_KEY": "Walang Gemini API key na naka-configure. Mangyaring idagdag ang iyong API key sa Settings.",
@@ -178,6 +255,8 @@
     "Retry": "Subukan muli",
     "SeekToTimestamp": "Hanapin ang timestamp na ito",
     "ConfigureApiKey": "I-configure ang iyong Gemini API key para mag-generate ng AI summaries at transcriptions.",
+    "ConfigureProviders": "Paganahin ang live transcription at mag-set up ng LLM provider sa Mga Setting para makapag-generate ng AI summaries.",
+    "OpenSettings": "Buksan ang Mga Setting",
     "ConfigureKey": "I-configure ang API Key",
     "SetupRequired": "I-configure ang iyong Gemini API key sa Mga Setting → Mga Tampok ng AI upang paganahin ang mga buod ng AI.",
     "Tab": {
@@ -355,7 +434,8 @@
       "Running": "{{count}} tumatakbo",
       "Completed": "{{count}} natapos",
       "Actions": "{{count}} aksyon"
-    }
+    },
+    "SwitchModel": "Magpalit ng modelo"
   },
   "AgentSection": {
     "ConfigureApiKey": "I-configure ang iyong mga API key para gamitin ang AI Agent."
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "Paano gumagana ang SeaMeet AI",
       "Subtitle": "BYOK — Dalhin ang Sariling Key Mo",
-      "WhatIsBYOK": "Sa BYOK, ang iyong mga recording at data ay direktang napupunta mula sa iyong device patungo sa Google o Anthropic. Walang dumadaan sa mga server ng SeaMeet — pinakamataas na privacy para sa iyo at sa iyong team.",
-      "WhatYouNeed": "Ang ise-set up mo pagkatapos mag-subscribe",
-      "GeminiTitle": "Google AI Studio Key (Limitadong Libre)",
-      "GeminiDesc": "Nagpa-power ng live transcription, post-meeting summaries, at analysis. Nag-aalok ang Google ng generous na libreng tier — karamihan ng mga user ay hindi kailanman nagbabayad.",
-      "AgentTitle": "AI Agent — pumili ng isang opsyon (Limitadong Libre)",
-      "AgentOption1": "GitHub Copilot — 50 libreng premium chats/buwan (o higit pa sa Copilot Pro)",
-      "AgentOption2": "Claude Code CLI — kung mayroon ka nang Claude Pro o Max, covered ka na",
-      "AgentOption3": "Anthropic API key — para sa direktang API access",
-      "Continue": "Magpatuloy sa pag-subscribe",
-      "WhyBYOK": {
-        "Title": "Bakit magdala ng sariling key?",
-        "Answer": "Mas magandang privacy — ang iyong data ay nananatili sa mga pinagkakatiwalaang kumpanya tulad ng Google at Anthropic, hindi sa SeaMeet. Ang mga libreng tier mula sa mga provider na ito ay generous at tatagal ng mahabang panahon para sa karamihan ng mga user."
-      },
-      "WhyMonthly": {
-        "Title": "Bakit may buwanang bayad ang SeaMeet?",
-        "Answer": "Mabilis na nag-a-update ang SeaMeet ng mga bagong AI feature. Ang iyong subscription ay nagpapanatili sa iyo sa pinakabagong version. Kung wala ito, magbabayad ka ng isang beses na lisensya at ma-stuck ka sa mga frozen na feature — parang bumili ng Office 2012 at nanatili roon magpakailanman."
-      }
+      "Continue": "Magpatuloy sa pag-subscribe"
     },
     "Coupon": {
       "Title": "Promo sa Paglulunsad",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub Copilot",
       "Authenticated": "Na-authenticate",
       "CopilotUsage": "Itakda bilang preferred na agent provider?",
-      "CopilotFreeWarning": "Ang GitHub Copilot Free ay may 50 agent/chat request lang bawat buwan. Maganda para sa mabilisang pagsubok, pero mabilis maabot ang limit. Mag-upgrade sa Copilot Pro para sa mas mataas na limit, o gamitin ang SeaMeet Desktop Pro para sa walang limitasyong AI access.",
+      "CopilotFreeWarning": "Ang GitHub Copilot Free ay may 50 agent/chat requests lamang kada buwan. Mahusay para sa isang mabilis na pagsubok, ngunit baka mabilis kang umabot sa limit. Mag-upgrade sa Copilot Pro para sa mas mataas na limit, o gumamit ng ibang provider (Claude o Gemini) para sa mas maraming espasyo.",
       "KeepClaude": "Panatilihin ang Claude bilang default",
       "UseCopilot": "Gamitin ang GitHub Copilot bilang default",
       "CopilotLabel": "GitHub Copilot",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "Hindi nakita",
       "CopilotSignupHint": "Gusto mong subukan ang GitHub Copilot bilang alternatibong agent? Mag-sign up sa libreng plan sa github.com/features/copilot/plans (may kasamang 50 agent/chat request bawat buwan), pagkatapos i-install ang Copilot CLI at patakbuhin ang \"copilot login\".",
       "CopilotFlatUsage": "Ginagamit para sa: AI agent (alternatibo sa Claude). Hindi kailangan ng API key — ginagamit ang iyong GitHub login.",
-      "Guide": {
-        "Intro": "Ang SeaMeet AI ay may dalawang independiyenteng feature area — i-setup ang kailangan mo.",
-        "SectionAiSummary": "Buod ng AI",
-        "SectionAiSummaryBadge": "Kinakailangan",
-        "SectionAiSummarySubtitle": "Kunin ang Gemini API Key (Libre)",
-        "SectionAiAgent": "Ahente ng AI",
-        "SectionAiAgentBadge": "Kailangan ng kahit isa",
-        "OptionCopilotTitle": "GitHub Copilot CLI (Libre)",
-        "OptionClaudeTitle": "Claude Code CLI (Opsyonal, bayad)",
-        "Or": "O",
-        "Step1Title": "Hakbang 1 — Basahin Nang Mabuti",
-        "Step1Need": "Kailangan mo ng 2 bagay:",
-        "Step1Item1": "Gemini API key — para sa AI summary at live na transkripsiyon",
-        "Step1Item2": "GitHub Copilot CLI o Claude Code CLI — para sa AI agent",
-        "Step2Title": "Hakbang 2 — (Libre) Kumuha ng Gemini API Key",
-        "Step2Desc1": "I-click ang ",
-        "Step2GetKey": "Kumuha ng API Key",
-        "Step2Desc2": " para gumawa ng libreng Gemini API key. Karagdagang impormasyon sa ",
-        "Step2Studio": "Google AI Studio",
-        "Step3Title": "Hakbang 3 — (Libre) Kumuha ng GitHub Copilot CLI",
-        "Step3Install": "I-click ang ",
-        "Step3InstallLink": "GitHub Copilot CLI",
-        "Step3InstallSuffix": " o mabilis na pag-install:",
-        "Step3Login": "Patakbuhin: ",
-        "Step3LoginDesc": " (libre, 50 chat/buwan)",
-        "Step3Refresh": "I-click ang refresh sa ibaba para ma-detect ang Copilot.",
-        "Step3Select": "I-click ang GitHub Copilot sa ibaba para itakda bilang pinili.",
-        "Step4Title": "Hakbang 4 — (Opsyonal, may bayad) Kumuha ng Claude Code CLI",
-        "Step4Already": "Malamang mayroon ka na nito kung na-install mo na ang Claude Code dati.",
-        "Step4Install": "I-click ang ",
-        "Step4InstallLink": "Claude Code CLI",
-        "Step4InstallSuffix": " o mabilis na pag-install:",
-        "Step4Mac": "macOS / Linux:",
-        "Step4Win": "Windows:",
-        "Step4WinReq": "kailangan ng ",
-        "Step4GitWin": "Git para sa Windows",
-        "Step4Auth": "Patakbuhin: ",
-        "Step4AuthDesc": " (kailangan ng Claude Pro o Max plan)",
-        "Step4Refresh": "I-click ang refresh sa ibaba para ma-detect ang Claude Code.",
-        "Step4Select": "I-click ang Claude Code sa ibaba para itakda bilang pinili.",
-        "StepComplete": {
-          "AgentBoth": "Parehong naka-configure sina Claude at Copilot",
-          "AgentClaude": "Naka-configure si Claude",
-          "AgentCopilot": "Ang Copilot ay na-configure",
-          "Summary": "Kumpleto na ang setup"
+      "Acronym": "BYOK (Bring Your Own Key — dalhin ang sarili mong susi)",
+      "Explanation": "Ang BYOK ay nangangahulugang ikinokonekta mo ang sarili mong AI provider keys; direktang napupunta ang data mo sa mga provider na pinagkakatiwalaan mo, hindi sa SeaMeet.",
+      "Welcome": {
+        "Title": "Maligayang pagdating sa BYOK Pro (Bring Your Own Key)",
+        "Subtitle": "$4.99/buwan · Ang data mo, ang provider mo",
+        "PickOne": "Magkonekta ng isang susi at tapos ka na.",
+        "OneKeyTitle": "ISANG SUSI, LAHAT NG TRABAHO",
+        "OneKeyBadge": "Inirerekomenda",
+        "MixTitle": "PAG-HALO AT TUGMA",
+        "MixSubtitle": "para sa power user",
+        "OneKeyDoList": "Magagawa mo:",
+        "MixSupportList": "Pumili ng ibang serbisyo bawat trabaho. Sinusuportahan namin:",
+        "MixSttHeading": "Transkripsiyon (STT):",
+        "MixLlmHeading": "Buod / Notes / Wiki (LLM):",
+        "MixAgentHeading": "AI agent (LLM + tools):",
+        "MixCliHeading": "Lokal na CLI (walang susi):",
+        "PickOneRadio": "Pumili ng isa:",
+        "GeminiDesc": "Saganang libreng tier mula Google AI Studio; mag-upgrade mamaya para sa mas mahusay na quality at quota.",
+        "OpenAIDesc": "Gamitin ang sarili mong bayad na susi. Quality ng ChatGPT.",
+        "GetFreeKey": "Kumuha ng libreng susi →",
+        "PasteHere": "I-paste dito",
+        "OpenAdvanced": "Buksan ang advanced →",
+        "PowerUserTitle": "Power user ka na?",
+        "PowerUserDesc": "Kung naka-install ang Claude Code, GitHub Copilot, Codex CLI, o Gemini CLI, magagamit mo sila para sa AI agent — walang dagdag na API key. Tutuklasin namin mamaya.",
+        "WhyTwoProviders": "Bakit Gemini o OpenAI? Sila lang ang mga serbisyong humahawak ng transkripsiyon AT buod sa isang susi. Ang iba ay kailangan ng pares na pangalawang susi.",
+        "SetupLater": "I-setup ko mamaya — ipakita mo ang app"
+      },
+      "Receipt": {
+        "Heading": "Nakakonekta na ang {{provider}}.",
+        "YouCanNow": "Maaari ka nang:",
+        "Job1": "Mag-record ng meeting",
+        "Job2": "I-transcribe ang mga ito",
+        "Job3": "Mag-summarize na may key decisions, actions, chapters",
+        "Job4": "Magsulat ng structured notes",
+        "Job5": "Magtayo ng wiki",
+        "Job6": "Magtanong tungkol sa mga nakaraang meeting",
+        "Job7": "Maghanap sa loob ng screenshots",
+        "CTAStart": "Magsimula ng recording →",
+        "CTAScreenshot": "Kumuha ng screenshot →",
+        "CTAWriteNote": "Sumulat ng note →",
+        "CustomizeCTA": "I-customize ang provider bawat trabaho →",
+        "CLIDetected": "Natuklasan: {{cli}} — gamitin para sa agent?",
+        "UseDetectedCLI": "Gamitin",
+        "KeepDefault": "Itago ang default"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "Ito ang makukuha mo sa $4.99/buwan",
+        "HeadlinePostSubscribe": "Kasama sa subscription mong BYOK Pro",
+        "HeadlineSettings": "Bakit ka nasa BYOK Pro",
+        "PrivacyTitle": "Privacy",
+        "PrivacyDesc": "Direktang napupunta ang data mo mula sa device mo papuntang Google / Anthropic / OpenAI / atbp. Hindi kailanman nakikita ng mga server ng SeaMeet ang iyong mga recording, transcript, o buod.",
+        "QualityTitle": "Quality",
+        "QualityDesc": "Pumili ng pinakamahusay na model bawat trabaho. Gemini Live para sa transkripsiyon, Claude para sa pagsulat, Deepgram para sa speaker separation.",
+        "CostTitle": "Kontrol ng gastos",
+        "CostDesc": "Direktang bayaran ang mga provider. Karamihan ng users ay nananatili sa saganang libreng tier ng Gemini at hindi nagbabayad ng kahit isang sentimo para sa AI.",
+        "SovereigntyTitle": "Soberanya",
+        "SovereigntyDesc": "Nasa OS keychain mo ang mga susi. Pwede mong i-revoke kahit kailan. Walang ginagathering na usage data ang SeaMeet sa AI calls mo."
+      },
+      "Manage": {
+        "Title": "Mga API key mo para sa AI provider",
+        "Subtitle": "I-paste ang key para magpalit ng provider, o buksan ang advanced settings para sa per-job tuning."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "Ano ang makukuha mo sa $4.99/buwan",
+          "Bullet1": "Isang key (Gemini o OpenAI) na nagpapagana ng lahat ng AI feature.",
+          "Bullet2": "Mag-record · mag-transcribe · mag-summarize · sumulat ng note · gumawa ng wiki · magtanong tungkol sa mga nakaraang meeting · maghanap sa mga screenshot.",
+          "Bullet3": "O kaya naman ay maghalo ng provider per task — Deepgram para sa transcription, Claude para sa summary, ang paborito mong CLI para sa agent."
+        },
+        "NewFAQ": {
+          "Q1": "Paano kung mayroon na akong Claude Pro o GitHub Copilot?",
+          "A1": "Pwede mo silang gamitin para sa AI agent — walang dagdag na API key. Auto-detect namin ang Claude Code, GitHub Copilot, Codex CLI, at Gemini CLI sa system mo.",
+          "Q2": "Anong mga provider ang pwede kong gamitin?",
+          "A2": "Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter, at Amazon Bedrock para sa AI. Deepgram at Soniox para sa transcription. Plus ang apat na CLI sa itaas.",
+          "Q3": "Talaga bang hindi hinihipo ng SeaMeet ang data ko?",
+          "A3": "Oo. Ang mga recording, transcript, at summary mo ay diretsong pumupunta mula sa device mo papunta sa provider na pinili mo. Hindi nakikita ng mga server ng SeaMeet. Tanging ang subscription status mo at ang provider na in-configure mo ang nakikita namin (hindi ang key, hindi ang content).",
+          "Q4": "Bakit magbabayad ng $4.99 kung dinadala ko ang sariling keys?",
+          "A4": "Binabayaran ng subscription ang app development ng SeaMeet — multi-provider routing, live transcription, wiki generation, AI agent na may tool use, screenshot OCR, at patuloy na platform support. Hiwalay ang AI cost mo at diretsong napupunta sa provider (madalas libre sa free tier ng Gemini)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "Ano ang BYOK?",
-        "A1": "Ang BYOK ay nangangahulugang Bring Your Own Key. Kailangan mo ng 2 API key: isa mula sa Google AI Studio (para sa transkripsiyon at buod) at isa mula sa Anthropic (para sa mga tanong sa AI at pagsusuri). Karaniwang nagbibigay ang Google AI Studio ng libreng key. Kung naka-subscribe ka na sa Claude Pro o Max, hindi mo na kailangan ng dagdag na Anthropic API key. Gagabayan ka ng setup wizard sa pagkokonekta ng dalawang key pagkatapos mag-checkout.",
+        "A1": "Ang BYOK ay nangangahulugang Bring Your Own Key. Isang API key lang ang kailangan mo — mula sa Google AI Studio (Gemini) o OpenAI — para sa parehong transcription at buod ng pulong at AI agent chat. Karaniwang nag-aalok ang Google AI Studio ng libreng key para makapagsimula ka nang walang karagdagang gastos. Maaari ding ikonekta ng mga advanced na user ang kanilang sariling mga CLI tool (Claude Code, GitHub Copilot, atbp.) para sa AI agent chat. Gagabayan ka ng setup wizard pagkatapos ng checkout.",
         "Q2": "Bakit kailangan ng buwanang subscription?",
-        "A2": "Ang iyong subscription ay nagpopondo sa patuloy na mga update, suporta para sa bagong AI model, pag-aayos ng bug, at mga bagong feature. Ang mga gastos sa API ay hiwalay na binabayaran sa Google at Anthropic gamit ang iyong sariling key.",
-        "Q3": "Paano gumagana ang lisensya?",
-        "A3": "1 account, hanggang 3 device. Awtomatikong napapalaya ang mga hindi aktibong device pagkatapos ng 30 araw. Maaari ka ring manual na mag-sign out sa isang device para magpalaya ng slot."
-      },
-      "Desktop": {
-        "Q1": "Ano ang Desktop Pro?",
-        "A1": "Kasama sa Desktop Pro ang mga built-in na AI key na pinamamahalaan ng SeaMeet — hindi na kailangang gumawa o mamahala ng sarili mong API key. Mag-subscribe lang at simulan agad ang paggamit ng mga AI feature.",
-        "Q2": "Paano ito naiiba sa BYOK?",
-        "A2": "Sa Desktop Pro, ang SeaMeet ang nagbibigay at namamahala ng mga API key para sa iyo. Hindi mo na kailangang mag-sign up sa Google AI Studio o Anthropic nang hiwalay.",
+        "A2": "Ang iyong subscription ay nagpopondo ng patuloy na mga update, suporta sa bagong AI model, pag-aayos ng bug, at bagong mga feature. Ang mga gastos sa API ay direktang binabayaran sa Google, OpenAI, o iba pang sinusuportahang provider gamit ang iyong sariling mga key.",
         "Q3": "Paano gumagana ang lisensya?",
         "A3": "1 account, hanggang 3 device. Awtomatikong napapalaya ang mga hindi aktibong device pagkatapos ng 30 araw. Maaari ka ring manual na mag-sign out sa isang device para magpalaya ng slot."
       },
       "Sync": {
         "Q1": "Ano ang Sync Pro?",
-        "A1": "Kasama sa Sync Pro ang lahat ng nasa Desktop Pro, dagdag pa ang cloud sync. Ang iyong mga recording, transcript, at buod ay naka-sync sa lahat ng iyong device.",
+        "A1": "Ang Sync Pro ay isang panghinaharap na tier na may built-in na AI (walang API keys na pamamahalaan), cloud sync sa pagitan ng mga device, at team collaboration. Para sa mga user na gusto ang AI features ng SeaMeet nang hindi nagdadala ng sarili nilang keys. Hindi pa available — i-click ang \"Hilingin ito\" sa plan card para mag-email sa amin kung interesado kayo, para mauuna namin.",
         "Q2": "Ano ang naka-sync?",
         "A2": "Ang mga recording, transcript, AI summary, at action item ay lahat naka-sync sa iyong mga device. Ang mga pagbabago sa isang device ay makikita sa lahat ng iba pa.",
         "Q3": "Paano gumagana ang lisensya?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK Pro",
-        "Price": "$7.99/buwan",
+        "Price": "$4.99/buwan",
         "Feature1": "transkripsyon at mga buod ng AI",
         "Feature2": "Gamitin ang sarili mong Gemini at Claude API key",
         "Feature3": "Live na transkripsyon sa panahon ng mga pagpupulong",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "May libreng plan din ang GitHub Copilot.",
         "InfoNoteClaude": "Kung subscriber ka ng Claude Pro o Max plan, hindi mo na kailangan ng dagdag na Anthropic API key."
       },
-      "Desktop": {
-        "Name": "Desktop Pro",
-        "Price": "$15.99/buwan",
-        "Feature1": "Lahat sa BYOK Pro",
-        "Feature2": "Built-in na AI — walang API key na kailangan",
-        "Feature3": "Priyoridad na suporta",
-        "Feature4": "Advanced na analytics"
-      },
       "Free": {
         "Name": "Libre",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "I-sync ang Pro",
-        "Price": "$25.99/buwan",
-        "Feature1": "Lahat sa Desktop Pro",
+        "Feature1": "Built-in na AI — hindi na kailangan ng API keys",
         "Feature2": "Cloud sync sa mga device",
         "Feature3": "Mga tampok ng pakikipagtulungan ng koponan",
-        "Feature4": "Nakabahaging library ng meeting"
+        "Feature4": "Nakabahaging library ng meeting",
+        "RequestCTA": "Hilingin ito",
+        "RequestSubject": "Gusto ko ng Sync Pro para sa SeaMeet",
+        "RequestBody": "Hi SeaMeet team — interesado ako sa Sync Pro (built-in AI nang walang API keys na pamamahalaan, cloud sync, multi-device, team collaboration). Mangyaring ipaalam sa akin kapag available na ito.\n\nSalamat!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "Kung gumagamit ka ng Claude App/Code: Maaaring gamitin ng Anthropic ang iyong data para sa pagsasanay maliban kung mag-opt out ka",
         "Agent3": "Kung gumagamit ka ng Anthropic API: Hindi ginagamit ng Anthropic ang iyong data para sa pagsasanay"
       },
-      "Desktop": {
-        "Recording1": "Nananatili sa iyong kompyuter",
-        "Recording2": "I-sync sa Google Cloud account ng SeaMeet.ai para sa pagproseso",
-        "Recording3": "Tinatanggal ng Google ang mga file pagkatapos ng 48 oras",
-        "AIData1": "Ang Gemini API ang nagpoproseso",
-        "AIData2": "Hindi ginagamit ng Google ang iyong data para sa pagsasanay",
-        "AIData3": "Hindi ginagamit ng SeaMeet.ai ang iyong data para sa pagsasanay",
-        "Agent1": "Ang Anthropic API ang nagpoproseso",
-        "Agent2": "Hindi ginagamit ng Anthropic ang iyong data para sa pagsasanay",
-        "Agent3": "Hindi ginagamit ng SeaMeet.ai ang iyong data para sa pagsasanay"
-      },
       "Sync": {
         "Recording1": "Nananatili sa iyong kompyuter",
-        "Recording2": "Naka-sync sa cloud ng SeaMeet.ai",
+        "Recording2": "Naka-sync sa SeaMeet.ai cloud na may encryption at rest",
         "Recording3": "I-download mula sa cloud ng SeaMeet.ai sa ibang desktop device at manatiling naka-sync",
-        "AIData1": "Kapareho ng Desktop Pro",
-        "Agent1": "Kapareho ng Desktop Pro"
+        "AIData1": "Ginagawa ng Gemini API sa pamamagitan ng mga key na pinamamahalaan ng SeaMeet; hindi ginagamit ng Google ang iyong data para sa training",
+        "Agent1": "Ginagawa ng Anthropic API sa pamamagitan ng mga key na pinamamahalaan ng SeaMeet; hindi ginagamit ng Anthropic ang iyong data para sa training"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "Power user: nauunawaan kung ano ang BYOK",
         "Item2": "Marunong sa tech: may mga kinakailangang API key",
         "Item3": "Prayoridad ang privacy: kontrolado kung sino ang nakakakita ng iyong data"
-      },
-      "Desktop": {
-        "Item1": "Karaniwang user: walang abala sa setup",
-        "Item2": "Prayoridad ang privacy: ang data ng audio/larawan/recording ay nananatili sa iyong kompyuter"
       },
       "Sync": {
         "Item1": "Karamihan ng mga user: walang abala sa setup",
@@ -1271,6 +1339,22 @@
       "TurnCoverageAllInput": "Bawat frame — pinakamabuti para sa mga pangalan sa screen",
       "TurnCoverageHint": "Default ng 2.5: habang nagsasalita lang. Default ng 3.1: bawat video frame (nababasa ang mga pangalan kahit tahimik).",
       "SendVideo": "Ipadala ang mga video frame",
+      "VideoFpsOption_0_2": "0.2 fps (1 frame / 5 s)",
+      "VideoFpsOption_0_5": "0.5 fps (1 frame / 2 s, default)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
+      "VideoQualityOption_0_3": "0.3 (pinakamaliit, malabo)",
+      "VideoQualityOption_0_5": "0.5 (tipid sa bandwidth)",
+      "VideoQualityOption_0_7": "0.7 (balanse)",
+      "VideoQualityOption_0_85": "0.85 (default — maganda sa mga pangalan sa screen)",
+      "VideoQualityOption_0_95": "0.95 (maximum)",
+      "VideoMaxWidthOption_480": "480 px (pinakamaliit)",
+      "VideoMaxWidthOption_640": "640 px (tipid sa bandwidth)",
+      "VideoMaxWidthOption_960": "960 px (default — maganda sa mga pangalan sa screen)",
+      "VideoMaxWidthOption_1280": "1280 px (mas malaki)",
+      "VideoMaxWidthOption_1920": "1920 px (native 1080p)",
+      "EndSensitivityHigh": "HIGH (mabilis na flushes)",
+      "EndSensitivityLow": "LOW (mas mahabang turn)",
       "VideoFps": "Bilang ng frame",
       "VideoQuality": "Kalidad ng JPEG ng frame",
       "VideoMaxWidth": "Maximum na lapad ng frame",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "Itago ang sidebar ng notes",
     "ExpandSidebar": "Ipakita ang sidebar ng notes"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ Tip: Pagkatapos huminto, awtomatikong tatakbo ang Deep Analysis para mabigyan ka ng mas magandang pangalan ng tagapagsalita at mga sipi mula sa audio/video."
+  },
   "OCRAutoCopy": {
     "Copied": "Na-copy ang na-extract na teksto sa clipboard",
     "Error": "Hindi na-extract ang teksto",
@@ -1653,13 +1740,17 @@
     "Running": "Bumubuo ng buod...",
     "Step": {
       "Preparing": "Paghahanda ng recording",
+      "PreparingFast": "Paghahanda ng transcript",
       "Uploading": "Nag-a-upload ng file",
       "UploadingWait": "Pinoproseso sa server",
       "Analyzing": "Pagsusuri",
       "Extracting": "Pagkuha ng mga resulta",
       "Saving": "Pag-save ng mga artifact",
       "PreparingImage": "Inihahanda ang larawan",
-      "AnalyzingImage": "Sinusuri ang larawan"
+      "AnalyzingImage": "Sinusuri ang larawan",
+      "ExtractingAudio": "Kinukuha ang audio",
+      "Transcribing": "Tina-transcribe",
+      "TranscribingWith": "Tina-transcribe gamit ang {{provider}}"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "AI Pagkatapos ng Meeting",
     "PostMeetingAIDesc": "Ang mga buod, action items, at insights ay gagawin pagkatapos ng recording.",
     "UnlockPremium": "I-unlock gamit ang Premium",
-    "Upgrade": "Mag-upgrade"
+    "Upgrade": "Mag-upgrade",
+    "NoteSynthesis": "AI synthesis",
+    "NoteSynthesisDesc": "Kumuha ng nakaayos na buod ng note na ito + naka-link na recording gamit ang BYOK Pro.",
+    "WikiList": "Mga Wiki",
+    "WikiListDesc": "Awtomatikong magtayo ng knowledge base mula sa iyong mga note at meeting gamit ang BYOK Pro.",
+    "ScreenshotAI": "Screenshot AI",
+    "ScreenshotAIDesc": "Ilarawan ang mga larawan, kunin ang teksto, at magtanong gamit ang BYOK Pro.",
+    "LockedChipTooltip": "Mag-subscribe para paganahin",
+    "AgentReadOnlyBanner": "Mag-subscribe para ipagpatuloy ang usapan",
+    "GenericUpgradeCta": "Mag-subscribe"
   },
   "QuickOpen": {
     "Placeholder": "Magsimulang mag-type o i-paste mula sa clipboard… Gamitin ang [[ para mag-link sa ibang tala",
@@ -1883,7 +1983,9 @@
       "Description": "Paglalarawan",
       "OCR": "Teksto (OCR)"
     },
-    "UnknownError": "Hindi kilalang error"
+    "UnknownError": "Hindi kilalang error",
+    "FallbackUsed": "Hindi naproseso ng {{from}} ang larawan — sa halip ay ang Gemini ang gumawa nito.",
+    "FallbackHint": "I-off ang \"Gamitin ang pangunahing LLM para sa screenshot OCR\" sa Settings kung hindi sinusuportahan ng provider na ito ang vision."
   },
   "ScreenshotView": {
     "RecentLabel": "Kamakailang screenshots"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "Bumuo ng wiki mula sa pinili…",
       "ToastMessage": "{{count}} bagong tala ang nadiskubre. Bumuo ng wiki?",
       "BannerMessage": "{{count}} bagong tala mula nang huling pagbuo",
-      "BuildingExtracting": "Binabasa {{current}}/{{total}} tala",
-      "BuildingReducing": "Bumubuo ng {{current}}/{{total}} pahina",
+      "BuildingExtracting": "Nabasa ang {{current}} sa {{total}} tala",
+      "BuildingReducing": "Nabuo ang {{built}} sa {{total}} pahina",
       "Building": "Bumubuo ng wiki — {{stage}}",
       "PausedFor": "rate limit: {{seconds}}s",
       "Cancel": "Kanselahin",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "Pakinisin ang indeks",
       "PolishIndexHint": "Magdagdag ng pasalaysay na panimula sa indeks ng wiki",
       "BuildFromFolderPrompt": "Path ng folder (kaugnay sa workspace):",
-      "BuildFromSelectionPrompt": "Comma-separated na filename ng tala (kaugnay sa notes/):"
+      "BuildFromSelectionPrompt": "Comma-separated na filename ng tala (kaugnay sa notes/):",
+      "BuildingExtractingWithCache": "Nabasa ang {{current}} sa {{total}} tala · {{skipCount}} muling ginamit mula sa cache",
+      "BuildingReducingWithFailures": "Nabuo ang {{built}} sa {{total}} pahina · {{failed}} nabigo"
     },
     "Toolbar": {
       "Overflow": "Higit pang aksyon sa wiki",
@@ -2452,5 +2556,284 @@
       "floating": "Lumipat sa nakalutang na layout"
     },
     "introToast": "Bago: Magagamit na ang nakalutang na layout. I-click ang icon ng layout sa header upang subukan ito."
+  },
+  "settings": {
+    "stt": {
+      "title": "Provider ng Speech To Text (Live Caption, File Transcription)",
+      "apiKey": "API key",
+      "getKey": "Kumuha ng key",
+      "signup": "Kumuha ng API key",
+      "tutorial": "Gabay sa pag-setup",
+      "keyDescription": "Ang iyong API key ay naka-encrypt at iniimbak nang lokal sa device na ito.",
+      "test": "Subukan ang koneksyon",
+      "testing": "Sinusubukan…",
+      "testOk": "Nakakonekta",
+      "testFail": "Nabigo ang koneksyon",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Libreng tier na may Google account. Pinakamainam sa kaswal na paggamit."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "Pinakamahusay na katumpakan sa Ingles at pinakamababang latency. $200 libreng credit sa pag-sign up."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "Pinakamahusay na multilingual na katumpakan. Bayad na plano lamang — kailangan ng credit card."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime para sa live na transkripsiyon, Whisper / gpt-4o-transcribe para sa transkripsiyon ng file."
+        }
+      },
+      "language": {
+        "label": "Wikang sinasalita",
+        "sublabel": "Pahiwatig para sa live na transkripsyon. Gumagana ang auto-detect sa karamihan ng mga kaso.",
+        "sonioxSublabel": "Mga pahiwatig para sa live na transkripsyon. Magdagdag ng marami para sa mga pulong na may iba't ibang wika.",
+        "addLanguage": "Magdagdag ng wika",
+        "remove": "Tanggalin ang wika",
+        "geminiSublabel": "Awtomatikong tinutukoy ng Gemini mula sa audio (hindi ginagamit ang pahiwatig).",
+        "auto": "Auto-detect",
+        "en": "Ingles",
+        "zh-CN": "Tsino (Pinasimple)",
+        "zh-TW": "Tsino (Tradisyonal)",
+        "es": "Espanyol",
+        "ja": "Hapones",
+        "ko": "Koreano",
+        "fr": "Pranses",
+        "de": "Aleman",
+        "pt": "Portuges",
+        "ru": "Ruso",
+        "it": "Italyano",
+        "nl": "Olandes",
+        "ar": "Arabe",
+        "vi": "Vietnamese",
+        "id": "Indones",
+        "th": "Thai",
+        "tr": "Turko",
+        "pl": "Polako",
+        "uk": "Ukrainian",
+        "hi": "Hindi",
+        "fil": "Filipino",
+        "ms": "Malay",
+        "openaiSublabel": "Ang unang wika ay ipinapadala bilang pahiwatig sa API; ang mga karagdagang wika ay idinaragdag sa domain prompt (sa mga modelong sumusuporta). gpt-4o-transcribe-diarize ay gumagamit lamang ng una."
+      },
+      "speakerLabel": "Tagapagsalita {{n}}",
+      "advanced": {
+        "title": "Mga advanced na setting",
+        "reset": "I-reset sa mga default",
+        "deepgram": {
+          "model": "Modelo",
+          "modelDefault": "Default (nova-3)",
+          "modelHint": "Pinakamainam ang nova-3 para sa Ingles. Mas marami ang sinusuportahang wika ng nova-3-general.",
+          "diarize": "Speaker diarization",
+          "diarizeHint": "Magpalabas ng mga label ng speaker (S0, S1, …) kapag may maraming boses.",
+          "smartFormat": "Smart formatting",
+          "smartFormatHint": "Maglagay ng bantas, capitalize, at i-format ang mga numero / petsa.",
+          "punctuate": "Bantas",
+          "punctuateHint": "Maglagay ng tuldok at kuwit batay sa daloy ng salita.",
+          "keyterm": "Pagpapalakas ng bokabularyo",
+          "keytermHint": "Isang termino kada linya. Mga salitang partikular sa larangan na bibigyang halaga.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "Mahigpit na pagtutugma ng wika",
+          "strictLanguageHint": "Tanggihan ang audio sa ibang wika (mas mabilis ngunit hindi gaanong nababaluktot).",
+          "diarize": "Speaker diarization",
+          "diarizeHint": "Magpalabas ng mga label ng speaker kapag may maraming boses.",
+          "languageId": "Pagkilala ng wika",
+          "languageIdHint": "Magpalabas ng mga tag ng wika kada token.",
+          "endpointing": "Pagtukoy ng dulo",
+          "endpointingHint": "Awtomatikong tatapusin ang mga token kapag nag-pause ang nagsasalita.",
+          "context": "Konteksto ng larangan",
+          "contextHint": "Malayang paglalarawan ng pinag-uusapan. Mga pangalan, organisasyon, jargon.",
+          "contextPlaceholder": "Pulong kasama ang Acme Corp tungkol sa Q3 revenue.\nMga dadalo: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "Modelo para sa transkripsiyon ng file",
+          "modelDefault": "Default (gpt-4o-transcribe-diarize)",
+          "modelHint": "Pinakamainam ang gpt-4o-transcribe-diarize para sa diarization. Mas mura ang mini ngunit walang diarization. Ang OpenAI ay may hangganan na 25 MB ng audio kada upload. Ini-extract ng SeaMeet ang video bilang mono opus na 16 kbps, kaya ang isang upload ay sapat para sa humigit-kumulang 3–4 oras na miting.",
+          "contextPrompt": "Konteksto ng domain",
+          "contextPromptPlaceholder": "Talakayan tungkol sa Q3 revenue ng Acme Corp. Attendees: Alice Chen, Bob Park.",
+          "contextPromptHint": "Malayang paglalarawan na nag-aakay sa OpenAI patungo sa domain vocabulary.",
+          "realtimeModel": "Modelo para sa live na transkripsiyon",
+          "realtimeModelDefault": "Default (gpt-4o-transcribe)",
+          "realtimeModelHint": "Ang gpt-4o-transcribe ang default para sa miting — pinapatapos ng VAD ng server ang bawat pananalita kasama ng mga timestamp. Ang gpt-4o-mini-transcribe ay pareho ngunit mas mura. Ang gpt-realtime-whisper ay may pinakamababang latency ngunit nag-iipon ng transkripsiyon sa isang lumalakihang linya (walang per-utterance na pagtatapos habang nagre-record) — angkop para sa chat UI, hindi sa miting.",
+          "refreshModels": "I-refresh ang listahan ng modelo",
+          "refreshing": "Nire-refresh…",
+          "turnDetection": "Pagtuklas ng turn",
+          "turnDetectionServerVad": "Server VAD (live na subtitle)",
+          "turnDetectionNone": "Wala (tapusin sa paghinto)",
+          "turnDetectionHint": "Naglalabas ang Server VAD ng transkripsiyon kada pananalita habang nagsasalita ang tagapagsalita. I-off para sa mga push-to-talk na daloy kung saan inii-commit lang ang buffer sa paghinto.",
+          "noiseReduction": "Pagbawas ng ingay",
+          "noiseReductionNear": "Near field (mic ng laptop/headset)",
+          "noiseReductionFar": "Far field (mic ng silid-pulungan)",
+          "noiseReductionOff": "Naka-off",
+          "noiseReductionHint": "Pre-filter na inilalapat sa input audio bago ang transkripsiyon. Piliin ang tugma sa lokasyon ng iyong mikropono.",
+          "includeLogprobs": "Isama ang confidence per token",
+          "includeLogprobsHint": "Humihiling ng log probabilities para sa bawat tinranskribyung token. Ginagamit upang kulayan ang mga salitang mababa ang confidence. Pinatataas ang laki ng payload — iwan na nakapatay kung hindi kailangan.",
+          "includeLogprobsDiarize": "Hindi sinusuportahan ng gpt-4o-transcribe-diarize.",
+          "useStreaming": "I-stream ang transkripsiyon ng file",
+          "useStreamingHint": "Ipakita ang bahagyang teksto habang ginagawa ang transkripsiyon. Sinusuportahan ng gpt-4o-transcribe at gpt-4o-mini-transcribe; binabalewala kung iba.",
+          "useStreamingDiarize": "Hindi sinusuportahan ng gpt-4o-transcribe-diarize.",
+          "contextPromptDiarize": "Hindi sinusuportahan ng gpt-4o-transcribe-diarize.",
+          "contextPromptModelSupport": "Para sa whisper-1, ang prompt ay listahan ng mga keyword. Para sa gpt-4o-transcribe at gpt-4o-mini-transcribe, ang prompt ay libreng teksto (hal. \"asahan ang mga salita ukol sa teknolohiya\"). Hindi sinusuportahan ang prompt sa gpt-realtime-whisper sa mga GA Realtime session o sa gpt-4o-transcribe-diarize."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "Modelo ng live transcription",
+          "fileTranscriptionModelLabel": "Modelo ng file transcription",
+          "fileTranscriptionModelHint": "I-configure sa LLM Provider → Default Model. Ang parehong modelong Gemini ang ginagamit para sa batch na file transcription, buod, OCR ng screenshot, wiki, at chat.",
+          "deepAnalysisLabel": "Malalim na Pagsusuri na may mga Video"
+        }
+      }
+    },
+    "llm": {
+      "title": "Provider ng LLM (Buod ng Recording, Pagkuha ng Larawan, Pagbuo ng Wiki)",
+      "signup": "Kumuha ng API key",
+      "installGuide": "Gabay sa pag-install",
+      "tutorial": "Tutorial sa setup",
+      "apiKey": "API key",
+      "testing": "Sinusubukan…",
+      "test": "Subukan ang koneksyon",
+      "keyDescription": "Naka-encrypt at naka-imbak nang lokal sa device na ito ang iyong API key.",
+      "cliStatus": "Status ng CLI",
+      "usesLocalCLI": "Gumagamit ng lokal na CLI auth (walang API key na kailangan).",
+      "testOk": "Nakakonekta",
+      "testFail": "Nabigo ang koneksyon",
+      "advanced": {
+        "title": "Mga advanced setting",
+        "reset": "I-reset sa default",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "Default na Modelo (Buod / Screenshot / Wiki / Chat)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "Tandaan: Ang deep mode na audio summary ay gumagamit ng Gemini anuman ang setting na ito. Ang screenshot/OCR ay sumusunod sa toggle sa itaas.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "Native multimodal. Free tier available with API key."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o and GPT-5 family. Pay-as-you-go from the OpenAI platform."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic Console API key."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash and deepseek-v4-pro. Low cost per token, thinking mode supported."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "One key, hundreds of models from many vendors."
+        },
+        "claude-code": {
+          "label": "Claude Code (local CLI)",
+          "desc": "Uses your installed claude CLI. No API key needed."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "Uses your installed codex CLI. Rides on OpenAI Plus / Pro."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (Google auth)",
+          "desc": "Uses your installed gemini CLI. OAuth or API key."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "Foundation models on AWS. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "Gamitin ang pangunahing LLM para sa screenshot OCR",
+      "visionToggleHint": "Ipinapadala ang mga gawain ng screenshot/OCR sa napili mong provider sa itaas. Off (default): palaging gumagamit ng Gemini. Awtomatikong bumabalik sa Gemini kung hindi tanggapin ng iyong provider ang imahe.",
+      "visionUnsupportedBadge": "OCR sa pamamagitan ng Gemini",
+      "visionUnsupportedTooltip": "Hindi pa sinusuportahan ng adapter ng provider na ito ang image input. Babalik sa Gemini ang screenshot OCR."
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "Wala pang mga wiki",
+    "Description": "Awtomatikong nabubuo ang mga wiki mula sa iyong mga note at meeting. Gumawa ng note o mag-record ng meeting para magsimula.",
+    "TakeNoteCta": "Gumawa ng Note",
+    "StartRecordingCta": "Magsimulang Mag-record"
+  },
+  "WikiPaywall": {
+    "Headline": "Iyong mga note, awtomatikong inayos",
+    "Subhead": "Isang knowledge base na binuo mula sa iyong mga note at meeting — ng AI.",
+    "ChaosLabel": "Iyong mga note",
+    "ChaosCaption": "Malayang anyo, walang kailangang istraktura",
+    "WikiLabel": "Iyong wiki",
+    "WikiCaption": "Awtomatikong inayos at na-link",
+    "Explainer": "Magsulat ng mga note tulad ng nakasanayan mo. Habang nagsusulat ka, kinukuha ng AI ang mga tao, paksa, kumpanya, at meeting na binabanggit mo at hinahabi ang mga ito sa isang nakabalangkas na wiki — awtomatikong na-link at laging updated.",
+    "Cta": "Mag-subscribe para i-enable ang Wikis"
+  },
+  "NotesShowcase": {
+    "Headline": "Mga note na lumalago sa isang knowledge base",
+    "Subhead": "Simpleng Markdown. Mag-record ng audio, video, o screenshot inline. Hayaan ang AI na mag-summarize at mag-ugnay ng lahat.",
+    "Feature1Title": "Markdown + wikilinks",
+    "Feature1Desc": "Mag-type ng Markdown. Gamitin ang [[wikilinks]] para ikonekta ang mga note. Walang proprietary format.",
+    "Feature2Title": "Folder tree, sa iyong paraan",
+    "Feature2Desc": "I-drag para mag-organize. Walang hanggang nesting. Ang mga pagpapalit ng pangalan ay nag-uupdate ng wikilinks sa lahat ng note.",
+    "Feature3Title": "Mga recording, inline",
+    "Feature3Desc": "Kumuha ng audio, video, o screenshot katabi mismo ng iyong mga note. Naka-embed — hindi nakalibing sa ibang app.",
+    "Feature4Title": "AI ang nag-su-summarize at nag-uugnay",
+    "Feature4Desc": "Ina-summarize ng mga LLM ang bawat note, kinukuha ang mga entity, at awtomatikong bumubuo ng wiki ng mga tao, paksa, at meeting.",
+    "Tagline": "Built-in na recording. Magkakaugnay na mga note. Portable na Markdown. Iniimbak bilang mga plain file sa iyong folder — sa iyo magpakailanman.",
+    "CreateCta": "Gumawa ng iyong unang note"
   }
 }

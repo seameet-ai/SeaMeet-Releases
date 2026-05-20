@@ -18,13 +18,14 @@
   "AIFeatures": {
     "ApiKeyLabel": "Gemini API 키",
     "ApiKeySection": "Gemini API 키",
-    "AutomationSection": "오토메이션",
     "AutoSummary": "요약 자동 생성",
     "AutoSummaryDesc": "모든 녹음이 완료된 후 실행됩니다.",
+    "AutomationSection": "오토메이션",
     "ClaudeKey": {
+      "ApiKeyTitle": "API 키",
       "ClearKey": "저장된 키 삭제",
-      "CliInstalled": "설치됨({{version}})",
       "CliInstallLink": "Claude Code 설치 →",
+      "CliInstalled": "설치됨({{version}})",
       "CliNotFound": "CLI를 찾을 수 없음",
       "CliNotInstalled": "Claude CLI를 찾을 수 없습니다 — 설치하고 로그인하여 인증하세요:",
       "CliSection": "클로드 코드 CLI",
@@ -33,7 +34,6 @@
       "HideKey": "키 숨기기",
       "InstallMac": "macOS/리눅스:",
       "InstallWin": "윈도우(파워셸):",
-      "ApiKeyTitle": "API 키",
       "KeyInvalid": "잘못된 키",
       "KeyPlaceholder": "sk-ant-...",
       "KeyPlaceholderSaved": "••••••••• (저장됨)",
@@ -60,6 +60,7 @@
       "SourceNone": "구성되지 않음",
       "TestKey": "저장 및 확인"
     },
+    "ClearKey": "저장된 키 삭제",
     "Copilot": {
       "Authenticated": "인증됨",
       "DefaultModel": "기본 모델",
@@ -71,21 +72,32 @@
       "Remove": "Copilot 통합 제거",
       "Section": "GitHub 코파일럿"
     },
-    "Provider": {
-      "Detected": "감지됨",
-      "Hint": "채팅 패널에서 대화별로 제공자를 전환할 수도 있습니다.",
-      "NotAvailable": "사용 불가",
-      "Preferred": "우선의",
-      "Section": "선호 에이전트 제공자"
-    },
-    "ClearKey": "저장된 키 삭제",
+    "DefaultModel": "기본 모델",
     "EnableToggle": "AI 기반 요약 활성화",
     "EnableToggleDesc": "무료 Gemini API 키가 필요합니다",
-    "DefaultModel": "기본 모델",
-    "GeminiSection": "쌍둥이자리",
+    "Gemini": {
+      "Configured": "API 키가 구성되어 있습니다",
+      "DefaultModel": "기본 모델",
+      "Description": "Gemini 모델로 회의와 대화하세요. Gemini 요약 및 실시간 전사와 동일한 키를 사용합니다.",
+      "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
+      "NotConfigured": "API 키가 구성되어 있지 않습니다",
+      "Refresh": "Gemini 다시 탐지",
+      "Remove": "Gemini 키 제거",
+      "Section": "Gemini"
+    },
     "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
     "GroupTitle": "AI 기능",
     "HideKey": "키 숨기기",
+    "Job": {
+      "AskQuestions": "지난 회의에 대해 질문",
+      "BuildWikis": "노트와 회의에서 위키 구축",
+      "Record": "회의 녹음",
+      "RecordSub": "로컬 · 항상 작동",
+      "SearchScreenshots": "스크린샷 내부 검색",
+      "Summarize": "회의 요약",
+      "Transcribe": "회의 전사",
+      "WriteNote": "노트 작성"
+    },
     "KeyInvalid": "잘못된 키",
     "KeyManagedInBilling": "API Key는 구독관리 → API Keys에서 관리됩니다.",
     "KeyNotConfigured": "구성된 키가 없습니다.",
@@ -93,10 +105,9 @@
     "KeyPlaceholderSaved": "••••••••• (저장됨)",
     "KeyTesting": "테스트 중...",
     "KeyVerified": "키 확인됨",
-    "ManagedKeyDesc": "API 키가 자동으로 프로비저닝됩니다. 구성이 필요하지 않습니다.",
-    "ManagedKeyStatus": "관리형 키 — SeaMeet에서 제공",
-    "MenuItem": "AI 기반 요약",
+    "MenuItem": "AI 전사, 추출, 요약, 위키",
     "ModelLabel": "쌍둥이자리 모델",
+    "ModelSection": "AI 모델",
     "Models": {
       "Gemini25Flash": "쌍둥이자리 2. 플래시",
       "Gemini25FlashLite": "쌍둥이 자리 2.5 플래시 라이트",
@@ -109,21 +120,60 @@
       "Gemini3Pro": "제미니 3 프로",
       "Gemini3ProSub": "최대 용량"
     },
-    "ModelSection": "AI 모델",
-    "PageTitle": "AI 기능",
-    "QuotaLoading": "할당량 로드 중...",
-    "QuotaRefresh": "할당량 새로고침",
-    "QuotaRemaining": "{{remaining}} / {{limit}} 토큰 남음",
-    "QuotaResetDate": "{{date}}에 재설정됩니다.",
-    "QuotaSection": "사용 할당량",
+    "OpenAI": {
+      "Configured": "API 키가 구성되어 있습니다",
+      "DefaultModel": "기본 모델",
+      "Description": "GPT 모델로 회의와 대화하세요. OpenAI 요약 및 실시간 전사와 동일한 키를 사용합니다.",
+      "GetKeyLink": "OpenAI Platform에서 API 키 받기 →",
+      "NotConfigured": "API 키가 구성되어 있지 않습니다",
+      "Refresh": "OpenAI 다시 탐지",
+      "Remove": "OpenAI 키 제거",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "AI 전사, 추출, 요약, 위키",
+    "PostMeetingSummaryLanguage": "회의 후 요약 언어",
+    "PostMeetingSummaryLanguageDesc": "회의 후 트랜스크립트 + 요약(배치)에 적용됩니다. 라이브 자막은 위의 사용 언어 선택기를 사용합니다.",
+    "PreUploadAudio": "즉시 심층 요약을 위한 오디오 사전 업로드",
+    "PreUploadAudioDesc": "녹음 중에 Gemini로 오디오를 스트리밍하여 심층 모드 요약이 약 30초 대신 몇 초 안에 반환되도록 합니다. Gemini API 키가 필요합니다. 녹음 중에 업로드 대역폭을 사용합니다.",
+    "Provider": {
+      "Detected": "감지됨",
+      "Hint": "채팅 패널에서 대화별로 제공자를 전환할 수도 있습니다.",
+      "NotAvailable": "사용 불가",
+      "Preferred": "우선의",
+      "Section": "선호 에이전트 제공자"
+    },
+    "RemoveKey": "제거",
+    "SaveKey": "키 저장",
     "Saving": "절약...",
     "SelectedModel": "선택됨: {{model}}",
     "ShowAllModels": "전체 {{count}}개 모델 보기",
     "ShowFewerModels": "모델 접기",
     "ShowKey": "키 표시",
-    "TestKey": "저장 및 확인",
     "SummaryLanguage": "요약 출력 언어",
-    "SummaryLanguageDesc": "전사·요약·챕터에 적용됩니다. 자동 감지는 발화 언어를 따릅니다."
+    "SummaryLanguageAutoDetect": "자동 감지 (문자 체계가 혼합될 수 있음)",
+    "SummaryLanguageDesc": "전사·요약·챕터에 적용됩니다. 자동 감지는 발화 언어를 따릅니다.",
+    "TestKey": "저장 및 확인",
+    "SummaryConfigSection": "요약 구성",
+    "ImageExtractionSection": "이미지 추출",
+    "UseMainLlmForOcrHint": "스크린샷 OCR을 선택한 LLM 제공업체로 라우팅합니다. 끔(기본값): 항상 Gemini를 사용합니다. 제공업체가 이미지를 받아들이지 않으면 자동으로 Gemini로 폴백합니다."
+  },
+  "AISummaryQuality": {
+    "Heading": "AI 요약 품질",
+    "MasterToggleLabel": "Gemini 키가 구성되어 있을 때 딥 분석 사용",
+    "MasterToggleHelp": "Gemini가 오디오와 비디오를 직접 분석하여 구분 가능한 화자 이름, 더 정확한 인용 및 풍부한 요약을 생성합니다. 기본은 빠른(전사 기반) 요약이며, 딥 분석은 백그라운드에서 자동으로 실행되어 완료되면 빠른 요약을 교체합니다.",
+    "AdvancedSection": "고급",
+    "PreUploadLabel": "녹음 중 백그라운드로 오디오/비디오 미리 업로드",
+    "PreUploadHelp": "녹음 중 파일을 Gemini로 스트리밍하여 정지 후 딥 분석을 몇 초 만에 완료합니다.",
+    "TokenEstimateHeading": "딥 분석 1회당 예상 Gemini 토큰 사용량",
+    "TokenEstimateInput": "입력",
+    "TokenEstimateOutput": "출력",
+    "TokenEstimate10MinAudio": "10분 오디오",
+    "TokenEstimate10MinVideo": "10분 비디오",
+    "TokenEstimate1HrAudio": "1시간 오디오",
+    "TokenEstimate1HrVideo": "1시간 비디오",
+    "TokenEstimateNote": "토큰 속도: 오디오 약 32 tok/s, 비디오 약 263 tok/s (1 fps 프레임 + 오디오 트랙). 출력 예산은 단일 호출 32K, 청크 요약 호출 16K로 제한됩니다. 무료 티어 일일 쿼터가 적용됩니다 (예: Flash-Lite Latest는 500 RPD).",
+    "DisabledStateBanner": "멀티모달 딥 분석에는 Gemini API 키가 필요합니다. 키가 없으면 선택한 LLM 공급자가 생성하는 빠른(전사 기반) 요약만 사용할 수 있습니다.",
+    "DisabledStateAddKey": "Gemini API 키 추가 →"
   },
   "AISummary": {
     "ApplyMerge": "적용",
@@ -133,6 +183,33 @@
     "Copy": "복사",
     "EditSegmentSpeaker": "이 세그먼트를 다시 할당하려면 클릭하세요",
     "EnableRequired": "AI 요약을 보려면 설정 → AI 기능에서 AI 기능을 활성화하세요.",
+    "ReRunDeep": "딥 분석 다시 실행(추가 Gemini 토큰을 사용합니다)",
+    "ReRunSummary": "요약 다시 실행",
+    "DeepProgress": {
+      "Title": "딥 분석 실행 중",
+      "Cancel": "취소",
+      "Stage": {
+        "preparing": "준비 중",
+        "uploading": "파일 업로드 중",
+        "uploading-wait": "Gemini 처리 중",
+        "analyzing": "분석 중",
+        "extracting": "추출 중",
+        "saving": "저장 중",
+        "complete": "완료"
+      }
+    },
+    "DeepComplete": {
+      "Toast": "✨ 딥 요약이 준비되었습니다",
+      "Badge": "딥 · Gemini가 녹음을 분석했습니다"
+    },
+    "DeepFailed": {
+      "Toast": "딥 분석 실패: {{reason}}"
+    },
+    "HeroBand": {
+      "Title": "딥 분석 사용",
+      "Desc": "Gemini가 오디오와 비디오를 분석해 구분 가능한 화자 이름, 정확한 인용, 풍부한 요약을 제공합니다.",
+      "Run": "딥 분석 실행"
+    },
     "ErrorCodes": {
       "AUTH_ERROR": "API 키가 잘못되었습니다. 설정에서 API 키를 확인하세요.",
       "NO_API_KEY": "Gemini API 키가 구성되지 않았습니다. 설정에서 API 키를 추가하세요.",
@@ -178,6 +255,8 @@
     "Retry": "다시 해 보다",
     "SeekToTimestamp": "이 타임스탬프를 탐색하세요.",
     "ConfigureApiKey": "AI 요약 및 전사를 생성하려면 Gemini API 키를 구성하세요.",
+    "ConfigureProviders": "AI 요약을 생성하려면 설정에서 실시간 전사를 활성화하고 LLM 공급자를 구성하세요.",
+    "OpenSettings": "설정 열기",
     "ConfigureKey": "API 키 구성",
     "SetupRequired": "AI 요약을 활성화하려면 설정 → AI 기능에서 Gemini API 키를 구성하세요.",
     "Tab": {
@@ -355,7 +434,8 @@
       "Running": "{{count}} 실행 중",
       "Completed": "{{count}} 완료됨",
       "Actions": "{{count}} 작업"
-    }
+    },
+    "SwitchModel": "모델 전환"
   },
   "AgentSection": {
     "ConfigureApiKey": "AI 에이전트를 사용하려면 API 키를 구성하세요."
@@ -509,23 +589,7 @@
     "Explainer": {
       "Title": "SeaMeet AI 작동 방식",
       "Subtitle": "BYOK — 자신의 키 가져오기",
-      "WhatIsBYOK": "BYOK를 사용하면 녹음과 데이터가 기기에서 Google 또는 Anthropic으로 직접 전송됩니다. SeaMeet 서버를 거치지 않으므로 최대한의 프라이버시가 보장됩니다.",
-      "WhatYouNeed": "구독 후 설정할 내용",
-      "GeminiTitle": "Google AI Studio 키 (제한적 무료)",
-      "GeminiDesc": "실시간 전사, 회의 후 요약 및 분석을 지원합니다. Google은 넉넉한 무료 등급을 제공하여 대부분의 사용자는 비용을 지불하지 않습니다.",
-      "AgentTitle": "AI 에이전트 — 하나의 옵션 선택 (제한적 무료)",
-      "AgentOption1": "GitHub Copilot — 월 50회 무료 프리미엄 채팅 (Copilot Pro로 더 많이)",
-      "AgentOption2": "Claude Code CLI — Claude Pro 또는 Max가 있으면 사용 가능",
-      "AgentOption3": "Anthropic API 키 — 직접 API 액세스용",
-      "Continue": "구독으로 계속",
-      "WhyBYOK": {
-        "Title": "왜 자신의 키를 가져오나요?",
-        "Answer": "훨씬 나은 프라이버시 — 데이터가 Google, Anthropic 같은 신뢰할 수 있는 기업에 보관되며 SeaMeet에는 저장되지 않습니다. 이러한 제공업체의 무료 등급은 넉넉하여 대부분의 사용자에게 오래 지속됩니다."
-      },
-      "WhyMonthly": {
-        "Title": "왜 SeaMeet은 월간 요금을 부과하나요?",
-        "Answer": "SeaMeet은 새로운 AI 기능으로 빠르게 업데이트됩니다. 구독으로 최신 버전을 유지할 수 있습니다. 구독 없이는 일회성 라이선스를 구매하고 기능이 고정됩니다 — Office 2012를 사고 영원히 Office 2012에 머무는 것과 같습니다."
-      }
+      "Continue": "구독으로 계속"
     },
     "Coupon": {
       "Title": "런칭 프로모션",
@@ -588,7 +652,7 @@
       "CopilotStatus": "GitHub 코파일럿",
       "Authenticated": "인증됨",
       "CopilotUsage": "기본 에이전트 제공자로 설정하시겠습니까?",
-      "CopilotFreeWarning": "GitHub Copilot Free는 월 50회의 에이전트/채팅 요청만 포함됩니다. 빠른 테스트에는 좋지만 한도에 빨리 도달할 수 있습니다. 더 높은 한도를 위해 Copilot Pro로 업그레이드하거나, 무제한 AI 액세스를 위해 SeaMeet Desktop Pro를 사용하세요.",
+      "CopilotFreeWarning": "GitHub Copilot Free는 월 50회의 에이전트/채팅 요청만 포함합니다. 빠른 테스트에는 좋지만 한도에 빠르게 도달할 수 있습니다. 더 높은 한도를 위해 Copilot Pro로 업그레이드하거나, 더 많은 여유를 위해 다른 제공자(Claude 또는 Gemini)를 사용하세요.",
       "KeepClaude": "Claude를 기본값으로 유지",
       "UseCopilot": "GitHub Copilot을 기본값으로 사용",
       "CopilotLabel": "GitHub 코파일럿",
@@ -596,51 +660,84 @@
       "CopilotNotDetected": "감지되지 않음",
       "CopilotSignupHint": "GitHub Copilot을 대체 에이전트로 사용해 보시겠습니까? github.com/features/copilot/plans에서 무료 플랜에 가입하고 (월 50회 에이전트/채팅 요청 포함), Copilot CLI를 설치한 후 \"copilot login\"을 실행하세요.",
       "CopilotFlatUsage": "용도: AI 에이전트 (Claude 대안). API 키 불필요 — GitHub 로그인을 사용합니다.",
-      "Guide": {
-        "Intro": "SeaMeet AI에는 두 개의 독립적인 기능 영역이 있습니다 — 필요한 것을 설정하세요.",
-        "SectionAiSummary": "AI 요약",
-        "SectionAiSummaryBadge": "필수",
-        "SectionAiSummarySubtitle": "Gemini API 키 받기 (무료)",
-        "SectionAiAgent": "AI 에이전트",
-        "SectionAiAgentBadge": "최소 하나 필요",
-        "OptionCopilotTitle": "GitHub Copilot CLI (무료)",
-        "OptionClaudeTitle": "Claude Code CLI (선택사항, 유료)",
-        "Or": "또는",
-        "Step1Title": "1단계 — 주의 깊게 읽어주세요",
-        "Step1Need": "2가지가 필요합니다:",
-        "Step1Item1": "Gemini API 키 — AI 요약 및 실시간 전사용",
-        "Step1Item2": "GitHub Copilot CLI 또는 Claude Code CLI — AI 에이전트용",
-        "Step2Title": "2단계 — (무료) Gemini API 키 받기",
-        "Step2Desc1": "클릭 ",
-        "Step2GetKey": "API 키 받기",
-        "Step2Desc2": " 하여 무료 Gemini API 키를 생성합니다. 자세한 내용은 ",
-        "Step2Studio": "구글 AI 스튜디오",
-        "Step3Title": "3단계 — (무료) GitHub Copilot CLI 받기",
-        "Step3Install": "클릭 ",
-        "Step3InstallLink": "GitHub 코파일럿 CLI",
-        "Step3InstallSuffix": " 또는 빠른 설치:",
-        "Step3Login": "실행: ",
-        "Step3LoginDesc": " (무료, 월 50회 채팅)",
-        "Step3Refresh": "아래 새로고침을 클릭하여 Copilot을 감지하세요.",
-        "Step3Select": "아래 GitHub Copilot을 클릭하여 기본으로 설정하세요.",
-        "Step4Title": "4단계 — (선택 사항, 유료) Claude Code CLI 받기",
-        "Step4Already": "이전에 Claude Code를 설치했다면 이미 설치되어 있을 가능성이 높습니다.",
-        "Step4Install": "클릭 ",
-        "Step4InstallLink": "클로드 코드 CLI",
-        "Step4InstallSuffix": " 또는 빠른 설치:",
-        "Step4Mac": "macOS/리눅스:",
-        "Step4Win": "윈도우:",
-        "Step4WinReq": "필요: ",
-        "Step4GitWin": "윈도우용 힘내",
-        "Step4Auth": "실행: ",
-        "Step4AuthDesc": " (Claude Pro 또는 Max 플랜 필요)",
-        "Step4Refresh": "아래 새로고침을 클릭하여 Claude Code를 감지하세요.",
-        "Step4Select": "아래 Claude Code를 클릭하여 기본으로 설정하세요.",
-        "StepComplete": {
-          "AgentBoth": "Claude와 Copilot이 구성됨",
-          "AgentClaude": "Claude가 구성됨",
-          "AgentCopilot": "Copilot이 구성됨",
-          "Summary": "설정 완료"
+      "Acronym": "BYOK (Bring Your Own Key — 자신의 키를 가져오세요)",
+      "Explanation": "BYOK은 자신의 AI 제공업체 키를 연결하는 방식을 의미합니다. 데이터는 SeaMeet을 거치지 않고 신뢰하는 제공업체로 직접 전송됩니다.",
+      "Welcome": {
+        "Title": "BYOK Pro (Bring Your Own Key)에 오신 것을 환영합니다",
+        "Subtitle": "월 $4.99 · 당신의 데이터, 당신의 제공업체",
+        "PickOne": "키 하나만 연결하면 끝.",
+        "OneKeyTitle": "키 하나로 모든 작업 처리",
+        "OneKeyBadge": "추천",
+        "MixTitle": "믹스 앤 매치",
+        "MixSubtitle": "파워 사용자용",
+        "OneKeyDoList": "가능한 작업:",
+        "MixSupportList": "작업마다 다른 서비스를 선택할 수 있습니다. 지원:",
+        "MixSttHeading": "음성 인식 (STT):",
+        "MixLlmHeading": "요약 / 노트 / 위키 (LLM):",
+        "MixAgentHeading": "AI 에이전트 (LLM + 도구):",
+        "MixCliHeading": "로컬 CLI (키 불필요):",
+        "PickOneRadio": "하나 선택:",
+        "GeminiDesc": "Google AI Studio의 넉넉한 무료 등급. 나중에 더 나은 품질과 할당량을 위해 업그레이드할 수 있습니다.",
+        "OpenAIDesc": "본인의 유료 키 사용. ChatGPT 품질.",
+        "GetFreeKey": "무료 키 받기 →",
+        "PasteHere": "여기에 붙여넣기",
+        "OpenAdvanced": "고급 설정 열기 →",
+        "PowerUserTitle": "이미 파워 사용자인가요?",
+        "PowerUserDesc": "Claude Code, GitHub Copilot, Codex CLI 또는 Gemini CLI가 설치되어 있다면 AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 다음 단계에서 감지합니다.",
+        "WhyTwoProviders": "왜 Gemini 또는 OpenAI인가요? 이 두 서비스만이 단일 키로 음성 인식과 요약을 모두 처리합니다. 다른 서비스는 두 번째 키가 필요합니다.",
+        "SetupLater": "나중에 설정 — 앱 둘러보기"
+      },
+      "Receipt": {
+        "Heading": "{{provider}} 연결됨.",
+        "YouCanNow": "이제 할 수 있는 작업:",
+        "Job1": "회의 녹음",
+        "Job2": "회의 전사",
+        "Job3": "주요 결정·액션·챕터로 요약",
+        "Job4": "구조화된 노트 작성",
+        "Job5": "위키 구축",
+        "Job6": "지난 회의에 대해 질문",
+        "Job7": "스크린샷 내부 검색",
+        "CTAStart": "녹음 시작 →",
+        "CTAScreenshot": "스크린샷 찍기 →",
+        "CTAWriteNote": "노트 작성 →",
+        "CustomizeCTA": "작업별 제공업체 사용자 지정 →",
+        "CLIDetected": "감지됨: {{cli}} — 에이전트에 사용하시겠어요?",
+        "UseDetectedCLI": "사용",
+        "KeepDefault": "기본 유지"
+      },
+      "ValueHero": {
+        "HeadlinePreSubscribe": "월 $4.99로 얻는 혜택",
+        "HeadlinePostSubscribe": "BYOK Pro 구독에 포함된 항목",
+        "HeadlineSettings": "BYOK Pro를 사용하는 이유",
+        "PrivacyTitle": "개인정보 보호",
+        "PrivacyDesc": "데이터는 기기에서 Google / Anthropic / OpenAI 등으로 직접 전송됩니다. SeaMeet 서버는 녹음, 전사, 요약을 절대 보지 않습니다.",
+        "QualityTitle": "품질",
+        "QualityDesc": "작업마다 최적의 모델을 선택. 전사는 Gemini Live, 작성은 Claude, 화자 분리는 Deepgram.",
+        "CostTitle": "비용 관리",
+        "CostDesc": "제공업체에 직접 결제. 대부분의 사용자는 Gemini의 넉넉한 무료 등급에 머물며 AI 비용을 전혀 지불하지 않습니다.",
+        "SovereigntyTitle": "주권",
+        "SovereigntyDesc": "키는 OS 키체인에 저장됩니다. 언제든 해지 가능. SeaMeet은 AI 호출에 대한 사용 데이터를 전혀 수집하지 않습니다."
+      },
+      "Manage": {
+        "Title": "내 AI 제공업체 키",
+        "Subtitle": "키를 붙여 넣어 제공업체를 전환하거나, 작업별 세부 조정을 위해 고급 설정을 여세요."
+      },
+      "Explainer": {
+        "WhatYouGet": {
+          "Title": "월 $4.99로 얻을 수 있는 것",
+          "Bullet1": "하나의 키(Gemini 또는 OpenAI)로 모든 AI 기능이 작동합니다.",
+          "Bullet2": "녹화 · 전사 · 요약 · 노트 작성 · 위키 구축 · 과거 회의에 대해 질문 · 스크린샷 내 검색.",
+          "Bullet3": "또는 작업별로 제공업체 혼합 — 전사에 Deepgram, 요약에 Claude, 에이전트에 좋아하는 CLI."
+        },
+        "NewFAQ": {
+          "Q1": "이미 Claude Pro 또는 GitHub Copilot이 있다면?",
+          "A1": "AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 시스템에서 Claude Code, GitHub Copilot, Codex CLI, Gemini CLI를 자동으로 감지합니다.",
+          "Q2": "어떤 제공업체를 사용할 수 있나요?",
+          "A2": "AI는 Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter, Amazon Bedrock. 전사는 Deepgram, Soniox. 위의 4개 CLI도 가능.",
+          "Q3": "제 데이터는 정말로 SeaMeet에 의해 건드려지지 않나요?",
+          "A3": "네. 녹음, 전사, 요약은 사용자의 장치에서 선택한 제공업체로 직접 전송됩니다. SeaMeet 서버는 절대 보지 않습니다. 우리는 구독 상태와 구성한 제공업체만 봅니다(키도 콘텐츠도 아님).",
+          "Q4": "키를 직접 가져오는데 왜 $4.99를 지불하나요?",
+          "A4": "구독은 SeaMeet 앱 개발을 지원합니다 — 다중 제공업체 라우팅, 실시간 전사, 위키 생성, 도구 사용이 가능한 AI 에이전트, 스크린샷 OCR, 지속적인 플랫폼 지원. AI 비용은 별도이며 제공업체에 직접 지불됩니다(Gemini 무료 등급에서는 종종 무료)."
         }
       }
     },
@@ -675,23 +772,15 @@
       },
       "BYOK": {
         "Q1": "BYOK란 무엇인가요?",
-        "A1": "BYOK는 Bring Your Own Key(자신의 키 가져오기)의 약자입니다. 2개의 API 키가 필요합니다: Google AI Studio(전사 및 요약용)와 GitHub Copilot 또는 Claude Code(AI 에이전트용). 가이드 설정 마법사가 결제 후 두 키를 연결하는 과정을 안내합니다. Google AI Studio는 일반적으로 무료 키를 제공합니다. GitHub Copilot도 무료 플랜을 제공합니다. 자신의 키로 제한적 무료 사용이 가능합니다. Claude Pro 또는 Max를 구독 중이라면 추가 Anthropic API 키가 필요 없습니다.",
+        "A1": "BYOK는 Bring Your Own Key(자신의 키 가져오기)의 약자입니다. 회의 전사 및 요약과 AI 에이전트 채팅 모두를 위해 Google AI Studio(Gemini) 또는 OpenAI의 API 키 1개만 있으면 됩니다. Google AI Studio는 보통 무료 키를 제공하므로 추가 비용 없이 시작할 수 있습니다. 고급 사용자는 AI 에이전트 채팅을 위해 자신의 CLI 도구(Claude Code, GitHub Copilot 등)를 연결할 수도 있습니다. 결제 후 안내 설정 마법사가 모든 과정을 안내해 드립니다.",
         "Q2": "왜 월간 구독인가요?",
-        "A2": "구독료는 지속적인 업데이트, 새로운 AI 모델 지원, 버그 수정 및 새 기능 개발에 사용됩니다. API 비용은 고객님의 키를 통해 Google과 Anthropic에 별도로 지불됩니다.",
-        "Q3": "라이선스는 어떻게 작동하나요?",
-        "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다."
-      },
-      "Desktop": {
-        "Q1": "Desktop Pro란 무엇인가요?",
-        "A1": "Desktop Pro에는 SeaMeet이 관리하는 AI 키가 내장되어 있습니다. 직접 API 키를 생성하거나 관리할 필요가 없습니다. 구독하고 바로 AI 기능을 사용하세요.",
-        "Q2": "BYOK와 어떻게 다른가요?",
-        "A2": "Desktop Pro에서는 SeaMeet이 API 키를 제공하고 관리합니다. Google AI Studio나 Anthropic에 별도로 가입할 필요가 없습니다.",
+        "A2": "구독 비용은 지속적인 업데이트, 새로운 AI 모델 지원, 버그 수정 및 새로운 기능 개발에 사용됩니다. API 비용은 자신의 키를 사용하여 Google, OpenAI 또는 기타 지원되는 제공업체에 직접 지불됩니다.",
         "Q3": "라이선스는 어떻게 작동하나요?",
         "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다."
       },
       "Sync": {
         "Q1": "Sync Pro란 무엇인가요?",
-        "A1": "Sync Pro는 Desktop Pro의 모든 기능에 클라우드 동기화가 추가됩니다. 녹음, 전사, 요약이 모든 기기에서 동기화됩니다.",
+        "A1": "Sync Pro는 내장 AI(API 키 관리 불필요), 기기 간 클라우드 동기화, 팀 협업 기능을 갖춘 미래의 등급입니다. 자체 키 없이 SeaMeet의 AI 기능을 사용하려는 사용자를 위한 것입니다. 아직 이용할 수 없습니다 — 관심이 있으시면 플랜 카드의 \"요청하기\"를 클릭하여 이메일로 알려주세요. 우선순위를 정하는 데 도움이 됩니다.",
         "Q2": "무엇이 동기화되나요?",
         "A2": "녹음, 전사, AI 요약, 액션 아이템이 모든 기기에서 동기화됩니다. 한 기기에서의 변경 사항이 모든 기기에 반영됩니다.",
         "Q3": "라이선스는 어떻게 작동하나요?",
@@ -709,7 +798,7 @@
     "Plans": {
       "BYOK": {
         "Name": "BYOK 프로",
-        "Price": "$7.99/월",
+        "Price": "$4.99/월",
         "Feature1": "AI 전사 및 요약",
         "Feature2": "자신만의 Gemini & Claude API 키를 사용하세요",
         "Feature3": "회의 중 실시간 전사",
@@ -724,14 +813,6 @@
         "InfoNoteCopilot": "GitHub Copilot에도 무료 요금제가 있습니다.",
         "InfoNoteClaude": "Claude Pro 또는 Max를 구독 중이라면 별도의 Anthropic API 키가 필요 없습니다."
       },
-      "Desktop": {
-        "Name": "데스크탑 프로",
-        "Price": "$15.99/월",
-        "Feature1": "BYOK Pro의 모든 것",
-        "Feature2": "내장 AI — API 키가 필요하지 않습니다",
-        "Feature3": "우선 지원",
-        "Feature4": "고급 분석"
-      },
       "Free": {
         "Name": "무료",
         "Price": "$0",
@@ -742,11 +823,13 @@
       },
       "Sync": {
         "Name": "동기화 프로",
-        "Price": "$25.99/월",
-        "Feature1": "Desktop Pro의 모든 것",
+        "Feature1": "내장 AI — API 키 불필요",
         "Feature2": "장치 간 클라우드 동기화",
         "Feature3": "팀 협업 기능",
-        "Feature4": "공유 회의 라이브러리"
+        "Feature4": "공유 회의 라이브러리",
+        "RequestCTA": "요청하기",
+        "RequestSubject": "SeaMeet의 Sync Pro를 원합니다",
+        "RequestBody": "SeaMeet 팀에게 — Sync Pro(API 키 관리가 필요 없는 내장 AI, 클라우드 동기화, 멀티 디바이스, 팀 협업)에 관심이 있습니다. 사용 가능해지면 알려주세요.\n\n감사합니다!"
       }
     },
     "Privacy": {
@@ -772,23 +855,12 @@
         "Agent2": "Claude App/Code를 사용하는 경우: 옵트아웃하지 않으면 Anthropic이 데이터를 학습에 사용할 수 있습니다",
         "Agent3": "Anthropic API를 사용하는 경우: Anthropic은 데이터를 학습에 사용하지 않습니다"
       },
-      "Desktop": {
-        "Recording1": "컴퓨터에 저장됩니다",
-        "Recording2": "처리를 위해 SeaMeet.ai의 Google Cloud 계정으로 동기화됩니다",
-        "Recording3": "Google은 48시간 후 파일을 삭제합니다",
-        "AIData1": "Gemini API가 생성합니다",
-        "AIData2": "Google은 데이터를 학습에 사용하지 않습니다",
-        "AIData3": "SeaMeet.ai는 데이터를 학습에 사용하지 않습니다",
-        "Agent1": "Anthropic API가 생성합니다",
-        "Agent2": "Anthropic은 데이터를 학습에 사용하지 않습니다",
-        "Agent3": "SeaMeet.ai는 데이터를 학습에 사용하지 않습니다"
-      },
       "Sync": {
         "Recording1": "컴퓨터에 저장됩니다",
-        "Recording2": "SeaMeet.ai 클라우드에 동기화됩니다",
+        "Recording2": "SeaMeet.ai 클라우드에 저장 시 암호화로 동기화",
         "Recording3": "SeaMeet.ai 클라우드에서 다른 데스크톱 기기로 다운로드하여 동기화를 유지합니다",
-        "AIData1": "Desktop Pro와 동일",
-        "Agent1": "Desktop Pro와 동일"
+        "AIData1": "Gemini API가 SeaMeet 관리 키를 사용하여 생성. Google은 학습에 사용자 데이터를 사용하지 않습니다",
+        "Agent1": "Anthropic API가 SeaMeet 관리 키를 사용하여 생성. Anthropic은 학습에 사용자 데이터를 사용하지 않습니다"
       }
     },
     "HelpChoose": {
@@ -799,10 +871,6 @@
         "Item1": "고급 사용자: BYOK가 무엇인지 이해하는 분",
         "Item2": "기술에 능숙한 분: 필요한 API 키를 보유한 분",
         "Item3": "개인정보 중시: 데이터 접근을 직접 관리하고 싶은 분"
-      },
-      "Desktop": {
-        "Item1": "일반 사용자: 간편한 설정",
-        "Item2": "개인정보 중시: 오디오/이미지/녹음 데이터가 컴퓨터에 저장됩니다"
       },
       "Sync": {
         "Item1": "대부분의 사용자: 간편한 설정",
@@ -1272,10 +1340,26 @@
       "TurnCoverageHint": "2.5 기본: 발화 중에만. 3.1 기본: 모든 비디오 프레임(무음에도 이름표 인식).",
       "SendVideo": "비디오 프레임 전송",
       "VideoFps": "프레임 속도",
+      "VideoFpsOption_0_2": "0.2 fps(5초당 1프레임)",
+      "VideoFpsOption_0_5": "0.5 fps(2초당 1프레임, 기본값)",
+      "VideoFpsOption_1": "1 fps",
+      "VideoFpsOption_2": "2 fps",
       "VideoQuality": "프레임 JPEG 품질",
+      "VideoQualityOption_0_3": "0.3(가장 작음, 흐림)",
+      "VideoQualityOption_0_5": "0.5(대역폭 절약)",
+      "VideoQualityOption_0_7": "0.7(균형)",
+      "VideoQualityOption_0_85": "0.85(기본값 — 화면 이름에 적합)",
+      "VideoQualityOption_0_95": "0.95(최대)",
       "VideoMaxWidth": "프레임 최대 너비",
+      "VideoMaxWidthOption_480": "480 px(가장 작음)",
+      "VideoMaxWidthOption_640": "640 px(대역폭 절약)",
+      "VideoMaxWidthOption_960": "960 px(기본값 — 화면 이름에 적합)",
+      "VideoMaxWidthOption_1280": "1280 px(더 큼)",
+      "VideoMaxWidthOption_1920": "1920 px(네이티브 1080p)",
       "VideoQualityHint": "Gemini가 작은 타일 레이블(예: Zoom / Meet / Teams 참가자 이름)을 잘못 읽을 때 품질과 최대 너비를 높이세요. 값이 높을수록 이미지 토큰 사용량이 증가합니다 — 1280 px는 일반적으로 프레임당 258 토큰에서 1290 토큰 계층으로 증가합니다.",
       "EndSensitivity": "발화 종료 민감도",
+      "EndSensitivityHigh": "HIGH(빠른 플러시)",
+      "EndSensitivityLow": "LOW(더 긴 차례)",
       "Default": "기본값(HIGH — 빠른 플러시)",
       "SilenceMs": "턴 종료 전 무음 시간",
       "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
@@ -1590,6 +1674,9 @@
     "CollapseSidebar": "노트 사이드바 숨기기",
     "ExpandSidebar": "노트 사이드바 표시"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ 팁: 녹음을 정지하면 딥 분석이 자동으로 실행되어 더 정확한 화자 이름과 오디오/비디오 인용을 제공합니다."
+  },
   "OCRAutoCopy": {
     "Copied": "추출된 텍스트가 클립보드에 복사되었습니다",
     "Error": "텍스트 추출에 실패했습니다",
@@ -1653,13 +1740,17 @@
     "Running": "요약 생성 중...",
     "Step": {
       "Preparing": "녹음 준비 중",
+      "PreparingFast": "전사 준비 중",
       "Uploading": "파일 업로드 중",
       "UploadingWait": "서버에서 처리 중",
       "Analyzing": "분석 중",
       "Extracting": "결과 추출",
       "Saving": "아티팩트 저장",
       "PreparingImage": "이미지 준비 중",
-      "AnalyzingImage": "이미지 분석 중"
+      "AnalyzingImage": "이미지 분석 중",
+      "ExtractingAudio": "오디오 추출 중",
+      "Transcribing": "텍스트로 변환 중",
+      "TranscribingWith": "{{provider}}로 텍스트 변환 중"
     }
   },
   "Player": {
@@ -1695,7 +1786,16 @@
     "PostMeetingAI": "회의 후 AI",
     "PostMeetingAIDesc": "녹음이 완료된 후 요약, 작업 항목 및 인사이트가 생성됩니다.",
     "UnlockPremium": "Premium으로 잠금 해제",
-    "Upgrade": "업그레이드"
+    "Upgrade": "업그레이드",
+    "NoteSynthesis": "AI 합성",
+    "NoteSynthesisDesc": "BYOK Pro로 이 노트 + 연결된 녹음의 구조화된 요약을 받아보세요.",
+    "WikiList": "위키",
+    "WikiListDesc": "BYOK Pro로 노트와 회의에서 자동으로 지식 베이스를 구축하세요.",
+    "ScreenshotAI": "스크린샷 AI",
+    "ScreenshotAIDesc": "BYOK Pro로 이미지를 설명하고, 텍스트를 추출하고, 후속 질문을 할 수 있습니다.",
+    "LockedChipTooltip": "활성화하려면 구독하세요",
+    "AgentReadOnlyBanner": "대화를 계속하려면 구독하세요",
+    "GenericUpgradeCta": "구독"
   },
   "QuickOpen": {
     "Placeholder": "입력하거나 클립보드에서 붙여넣기… [[ 로 다른 노트로 링크",
@@ -1883,7 +1983,9 @@
       "Description": "설명",
       "OCR": "텍스트 (OCR)"
     },
-    "UnknownError": "알 수 없는 오류"
+    "UnknownError": "알 수 없는 오류",
+    "FallbackUsed": "{{from}}이(가) 이미지를 처리하지 못했습니다 — 대신 Gemini가 처리했습니다.",
+    "FallbackHint": "이 공급자가 비전을 지원하지 않으면 설정에서 \"스크린샷 OCR에 메인 LLM 사용\"을 끄세요."
   },
   "ScreenshotView": {
     "RecentLabel": "최근 스크린샷"
@@ -2314,8 +2416,8 @@
       "BuildFromSelection": "선택 항목에서 위키 빌드…",
       "ToastMessage": "{{count}}개의 새 노트가 감지되었습니다. 위키를 빌드할까요?",
       "BannerMessage": "마지막 빌드 이후 새 노트 {{count}}개",
-      "BuildingExtracting": "{{current}}/{{total}}개 노트 읽는 중",
-      "BuildingReducing": "{{current}}/{{total}}개 페이지 빌드 중",
+      "BuildingExtracting": "{{total}}개 중 {{current}}개 노트를 읽음",
+      "BuildingReducing": "{{total}}개 중 {{built}}개 페이지 빌드 완료",
       "Building": "위키 빌드 중 — {{stage}}",
       "PausedFor": "속도 제한: {{seconds}}초",
       "Cancel": "취소",
@@ -2333,7 +2435,9 @@
       "PolishIndex": "색인 다듬기",
       "PolishIndexHint": "위키 색인에 서술 인트로 추가",
       "BuildFromFolderPrompt": "폴더 경로 (워크스페이스 기준):",
-      "BuildFromSelectionPrompt": "쉼표로 구분된 노트 파일명 (notes/ 기준):"
+      "BuildFromSelectionPrompt": "쉼표로 구분된 노트 파일명 (notes/ 기준):",
+      "BuildingExtractingWithCache": "{{total}}개 중 {{current}}개 노트를 읽음 · {{skipCount}}개는 캐시 재사용",
+      "BuildingReducingWithFailures": "{{total}}개 중 {{built}}개 페이지 빌드 완료 · {{failed}}개 실패"
     },
     "Toolbar": {
       "Overflow": "추가 위키 작업",
@@ -2452,5 +2556,284 @@
       "floating": "플로팅 레이아웃으로 전환됨"
     },
     "introToast": "신규: 플로팅 레이아웃을 사용할 수 있습니다. 헤더의 레이아웃 아이콘을 클릭하여 사용해 보세요."
+  },
+  "settings": {
+    "stt": {
+      "title": "음성-텍스트 변환 제공업체 (실시간 자막, 파일 전사)",
+      "apiKey": "API 키",
+      "getKey": "키 받기",
+      "signup": "API 키 받기",
+      "tutorial": "설정 가이드",
+      "keyDescription": "API 키는 암호화되어 이 기기에 로컬로 저장됩니다.",
+      "test": "연결 테스트",
+      "testing": "테스트 중…",
+      "testOk": "연결됨",
+      "testFail": "연결 실패",
+      "provider": {
+        "gemini": {
+          "label": "Gemini Live (Google)",
+          "desc": "Google 계정으로 무료 티어 이용 가능. 가벼운 사용에 적합합니다."
+        },
+        "deepgram": {
+          "label": "Deepgram Nova-3",
+          "desc": "영어 정확도가 가장 높고 지연 시간이 가장 짧습니다. 가입 시 $200 무료 크레딧 제공."
+        },
+        "soniox": {
+          "label": "Soniox",
+          "desc": "다국어 정확도가 가장 높습니다. 유료 플랜만 제공 — 신용카드 필요."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "OpenAI Realtime은 실시간 전사용, Whisper / gpt-4o-transcribe는 파일 전사용입니다."
+        }
+      },
+      "language": {
+        "label": "사용 언어",
+        "sublabel": "실시간 전사를 위한 힌트입니다. 자동 감지는 대부분의 경우에 동작합니다.",
+        "sonioxSublabel": "실시간 전사를 위한 힌트입니다. 다국어 전환 회의에서는 여러 개를 추가하세요.",
+        "addLanguage": "언어 추가",
+        "remove": "언어 제거",
+        "geminiSublabel": "Gemini는 오디오에서 자동으로 감지합니다 (힌트는 사용되지 않음).",
+        "auto": "자동 감지",
+        "en": "영어",
+        "zh-CN": "중국어(간체)",
+        "zh-TW": "중국어(번체)",
+        "es": "스페인어",
+        "ja": "일본어",
+        "ko": "한국어",
+        "fr": "프랑스어",
+        "de": "독일어",
+        "pt": "포르투갈어",
+        "ru": "러시아어",
+        "it": "이탈리아어",
+        "nl": "네덜란드어",
+        "ar": "아랍어",
+        "vi": "베트남어",
+        "id": "인도네시아어",
+        "th": "태국어",
+        "tr": "터키어",
+        "pl": "폴란드어",
+        "uk": "우크라이나어",
+        "hi": "힌디어",
+        "fil": "필리핀어",
+        "ms": "말레이어",
+        "openaiSublabel": "첫 번째 언어가 API 힌트로 전송되며, 추가 언어는 (지원되는 모델에서) 도메인 프롬프트에 추가됩니다. gpt-4o-transcribe-diarize는 첫 번째 언어만 사용합니다."
+      },
+      "speakerLabel": "화자 {{n}}",
+      "advanced": {
+        "title": "고급 설정",
+        "reset": "기본값으로 재설정",
+        "deepgram": {
+          "model": "모델",
+          "modelDefault": "기본값 (nova-3)",
+          "modelHint": "nova-3는 영어에 가장 적합합니다. nova-3-general은 더 많은 언어를 지원합니다.",
+          "diarize": "화자 분리",
+          "diarizeHint": "여러 음성이 감지되면 화자 레이블 (S0, S1, …)을 출력합니다.",
+          "smartFormat": "스마트 서식",
+          "smartFormatHint": "구두점, 대문자 처리, 숫자/날짜 서식을 지정합니다.",
+          "punctuate": "구두점",
+          "punctuateHint": "발화 리듬에 따라 마침표와 쉼표를 삽입합니다.",
+          "keyterm": "어휘 부스트",
+          "keytermHint": "한 줄에 한 용어. 가중치를 부여할 도메인 특정 단어.",
+          "keytermPlaceholder": "Acme Corp\nQ3 revenue\nDr. Smith"
+        },
+        "soniox": {
+          "strictLanguage": "엄격한 언어 일치",
+          "strictLanguageHint": "다른 언어의 오디오를 거부합니다 (더 빠르지만 유연성이 떨어짐).",
+          "diarize": "화자 분리",
+          "diarizeHint": "여러 음성이 감지되면 화자 레이블을 출력합니다.",
+          "languageId": "언어 식별",
+          "languageIdHint": "토큰별 감지된 언어 태그를 출력합니다.",
+          "endpointing": "엔드포인트 감지",
+          "endpointingHint": "화자가 잠시 멈추면 토큰을 자동으로 확정합니다.",
+          "context": "도메인 컨텍스트",
+          "contextHint": "논의 중인 내용에 대한 자유 형식 설명. 이름, 조직, 전문 용어.",
+          "contextPlaceholder": "Q3 수익에 대한 Acme Corp과의 회의.\n참석자: Alice Chen, Bob Park."
+        },
+        "openai": {
+          "model": "파일 전사 모델",
+          "modelDefault": "기본값 (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize는 화자 분리에 가장 적합합니다. mini는 더 저렴하지만 화자 분리가 없습니다. OpenAI는 단일 업로드를 25 MB 오디오로 제한합니다. SeaMeet은 16 kbps 모노 opus로 영상을 추출하므로 한 번의 업로드로 약 3~4시간 분량의 회의를 처리할 수 있습니다.",
+          "contextPrompt": "도메인 컨텍스트",
+          "contextPromptPlaceholder": "Acme Corp Q3 매출에 대한 논의. 참석자: Alice Chen, Bob Park.",
+          "contextPromptHint": "OpenAI를 도메인 어휘 쪽으로 편향시키는 자유 형식 설명.",
+          "realtimeModel": "실시간 전사 모델",
+          "realtimeModelDefault": "기본값 (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe는 회의 기본 모델로, 서버 VAD가 각 발화를 타임스탬프와 함께 확정합니다. gpt-4o-mini-transcribe는 같은 동작이지만 비용이 낮습니다. gpt-realtime-whisper는 지연 시간이 가장 짧지만 녹음 중 한 줄에 누적되어 발화별 확정이 없습니다. 채팅 UI에 적합하며 회의에는 권장하지 않습니다.",
+          "refreshModels": "모델 목록 새로고침",
+          "refreshing": "새로고침 중…",
+          "turnDetection": "발화 턴 감지",
+          "turnDetectionServerVad": "서버 VAD(실시간 자막)",
+          "turnDetectionNone": "없음(정지 시 확정)",
+          "turnDetectionHint": "서버 VAD는 발화 중 발화 단위로 전사를 내보냅니다. 푸시투토크 방식으로 녹음 정지 시에만 버퍼를 커밋하려면 끄세요.",
+          "noiseReduction": "노이즈 감소",
+          "noiseReductionNear": "근거리(노트북/헤드셋 마이크)",
+          "noiseReductionFar": "원거리(회의실 마이크)",
+          "noiseReductionOff": "끔",
+          "noiseReductionHint": "전사 전에 입력 오디오에 적용되는 전처리 필터입니다. 마이크 배치에 맞는 옵션을 선택하세요.",
+          "includeLogprobs": "토큰별 신뢰도 포함",
+          "includeLogprobsHint": "각 전사 토큰의 로그 확률을 요청합니다. 신뢰도가 낮은 단어를 색상으로 표시하는 데 사용됩니다. 페이로드가 커지므로 필요 없으면 끄세요.",
+          "includeLogprobsDiarize": "gpt-4o-transcribe-diarize에서는 지원되지 않습니다.",
+          "useStreaming": "파일 전사 스트리밍",
+          "useStreamingHint": "녹음 전사 중 부분 텍스트를 표시합니다. gpt-4o-transcribe와 gpt-4o-mini-transcribe에서 지원되며, 그 외 모델은 무시됩니다.",
+          "useStreamingDiarize": "gpt-4o-transcribe-diarize에서는 지원되지 않습니다.",
+          "contextPromptDiarize": "gpt-4o-transcribe-diarize에서는 지원되지 않습니다.",
+          "contextPromptModelSupport": "whisper-1에서 프롬프트는 키워드 목록입니다. gpt-4o-transcribe와 gpt-4o-mini-transcribe에서는 자유 형식 텍스트(예: \"기술 관련 단어가 등장합니다\")입니다. GA Realtime 세션의 gpt-realtime-whisper와 gpt-4o-transcribe-diarize에서는 프롬프트가 지원되지 않습니다."
+        },
+        "gemini": {
+          "liveTranscriptionModelLabel": "실시간 전사 모델",
+          "fileTranscriptionModelLabel": "파일 전사 모델",
+          "fileTranscriptionModelHint": "LLM Provider → Default Model에서 구성하세요. 동일한 Gemini 모델이 일괄 파일 전사, 요약, 스크린샷 OCR, 위키 및 채팅에 사용됩니다.",
+          "deepAnalysisLabel": "비디오를 활용한 심층 분석"
+        }
+      }
+    },
+    "llm": {
+      "title": "LLM 제공업체 (녹음 요약, 이미지 추출, 위키 생성)",
+      "signup": "API 키 받기",
+      "installGuide": "설치 가이드",
+      "tutorial": "설정 튜토리얼",
+      "apiKey": "API 키",
+      "testing": "테스트 중…",
+      "test": "연결 테스트",
+      "keyDescription": "API 키는 암호화되어 이 기기에 로컬로 저장됩니다.",
+      "cliStatus": "CLI 상태",
+      "usesLocalCLI": "로컬 CLI 인증을 사용합니다 (API 키 불필요).",
+      "testOk": "연결됨",
+      "testFail": "연결 실패",
+      "advanced": {
+        "title": "고급 설정",
+        "reset": "기본값으로 재설정",
+        "defaultModel": "Default model",
+        "openai": {
+          "modelHint": "Model id passed to OpenAI. Leave blank to let pipelines pick.",
+          "baseURLHint": "Override for Azure OpenAI, LiteLLM, or self-hosted proxies.",
+          "organizationHint": "Optional — surfaces requests on a specific OpenAI org dashboard."
+        },
+        "baseURL": "API base URL (for proxies)",
+        "organization": "Organization ID",
+        "anthropic": {
+          "modelHint": "Model id passed to Anthropic. Leave blank to let pipelines pick."
+        },
+        "maxOutputTokens": "Max output tokens",
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (fast, default) or deepseek-v4-pro (stronger reasoning). Each supports thinking mode via the toggle below.",
+          "thinking": "Enable thinking mode",
+          "thinkingHint": "Thinking mode improves structured-output quality at the cost of latency. Recommended ON for wiki and synthesis pipelines.",
+          "reasoningEffort": "Reasoning effort",
+          "reasoningEffortAuto": "Auto (DeepSeek default)",
+          "reasoningEffortHint": "Higher effort spends more thinking tokens before answering. Leave on Auto unless you have a specific reason."
+        },
+        "openrouter": {
+          "modelHint": "Free-form model id from OpenRouter (vendor/model).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "Surfaces your app in OpenRouter's ranking program (defaults to SeaMeet).",
+          "title": "X-Title header"
+        },
+        "gemini": {
+          "modelHint": "Selected Gemini model. Configured separately in the Gemini section below.",
+          "defaultModelLabel": "기본 모델 (요약 / 스크린샷 / 위키 / 채팅)"
+        },
+        "binaryPath": "CLI binary path",
+        "claudeCode": {
+          "binaryHint": "Path to the 'claude' binary. Leave blank to resolve via PATH.",
+          "modelHint": "Alias — 'opus', 'sonnet', or 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "Path to the 'codex' binary. Leave blank to resolve via PATH.",
+          "profileHint": "Optional — pick between multiple `codex login` identities.",
+          "modelHint": "ChatGPT-account users (Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API customers: gpt-5-codex and variants. Run `codex /model` in a terminal to see your available list."
+        },
+        "profile": "Profile",
+        "geminiCli": {
+          "binaryHint": "Path to the 'gemini' binary (used for the install check).",
+          "oauth": "OAuth (gemini auth login)",
+          "apiKey": "API key",
+          "apiKeyLabel": "Gemini Studio API key",
+          "apiKeyHint": "Only used when Auth method = API key. Stored in agent-settings.json."
+        },
+        "authMethod": "Auth method",
+        "bedrock": {
+          "region": "AWS region",
+          "regionHint": "The AWS region your bearer token is scoped to (defaults to us-east-1).",
+          "modelHint": "Free-form Bedrock model id (foundation model access must be granted in the AWS console first)."
+        }
+      },
+      "visionLockedNote": "참고: 오디오 요약 심층 모드는 이 설정과 무관하게 Gemini를 사용합니다. 스크린샷/OCR은 위 토글을 따릅니다.",
+      "provider": {
+        "gemini": {
+          "label": "Gemini (Google AI Studio)",
+          "desc": "네이티브 멀티모달. API 키로 무료 티어 이용 가능."
+        },
+        "openai": {
+          "label": "OpenAI",
+          "desc": "GPT-4o 및 GPT-5 제품군. OpenAI 플랫폼에서 사용량 기반 결제."
+        },
+        "anthropic": {
+          "label": "Anthropic",
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic Console API 키."
+        },
+        "deepseek": {
+          "label": "DeepSeek",
+          "desc": "deepseek-v4-flash 및 deepseek-v4-pro. 토큰당 비용이 낮고 thinking 모드를 지원."
+        },
+        "openrouter": {
+          "label": "OpenRouter",
+          "desc": "하나의 키로 수많은 벤더의 수백 개 모델 이용."
+        },
+        "claude-code": {
+          "label": "Claude Code (로컬 CLI)",
+          "desc": "설치된 claude CLI 사용. API 키 불필요."
+        },
+        "codex-cli": {
+          "label": "Codex CLI (OpenAI Plus)",
+          "desc": "설치된 codex CLI 사용. OpenAI Plus / Pro 구독에 의존."
+        },
+        "gemini-cli": {
+          "label": "Gemini CLI (Google 인증)",
+          "desc": "설치된 gemini CLI 사용. OAuth 또는 API 키."
+        },
+        "bedrock": {
+          "label": "Amazon Bedrock",
+          "desc": "AWS의 파운데이션 모델. Claude, Nova, Llama, Mistral, Cohere, DeepSeek."
+        }
+      },
+      "providerSaved": "Saved — selection takes effect on the next AI run",
+      "providerActive": "Active: {{label}} — Auto-saved",
+      "visionToggle": "스크린샷 OCR에 메인 LLM 사용",
+      "visionToggleHint": "스크린샷/OCR 작업을 위에서 선택한 공급자로 보냅니다. 끔(기본값): 항상 Gemini를 사용합니다. 공급자가 이미지를 수락하지 않으면 자동으로 Gemini로 폴백합니다.",
+      "visionUnsupportedBadge": "Gemini 폴백으로 OCR",
+      "visionUnsupportedTooltip": "이 공급자의 어댑터는 아직 이미지 입력을 지원하지 않습니다. 스크린샷 OCR은 Gemini로 폴백됩니다."
+    }
+  },
+  "WikiOnboarding": {
+    "Title": "아직 위키가 없습니다",
+    "Description": "위키는 노트와 회의에서 자동으로 생성됩니다. 시작하려면 노트를 작성하거나 회의를 녹음하세요.",
+    "TakeNoteCta": "노트 작성",
+    "StartRecordingCta": "녹음 시작"
+  },
+  "WikiPaywall": {
+    "Headline": "당신의 노트, 자동으로 정리",
+    "Subhead": "노트와 회의로부터 구축되는 지식 베이스 — AI가 만듭니다.",
+    "ChaosLabel": "당신의 노트",
+    "ChaosCaption": "자유 형식, 구조 필요 없음",
+    "WikiLabel": "당신의 위키",
+    "WikiCaption": "자동 정리 및 링크",
+    "Explainer": "평소처럼 노트를 작성하세요. 작성하는 동안 AI가 언급한 사람, 주제, 회사, 회의를 추출하여 구조화된 위키로 엮어냅니다 — 자동으로 링크되고 항상 최신 상태로 유지됩니다.",
+    "Cta": "위키를 활성화하려면 구독하세요"
+  },
+  "NotesShowcase": {
+    "Headline": "지식 베이스로 성장하는 노트",
+    "Subhead": "순수한 Markdown. 오디오, 비디오, 스크린샷을 인라인으로 녹음하세요. AI가 모든 것을 요약하고 연결합니다.",
+    "Feature1Title": "Markdown + 위키링크",
+    "Feature1Desc": "Markdown으로 작성하세요. [[위키링크]]로 노트를 연결하세요. 독점 포맷이 없습니다.",
+    "Feature2Title": "폴더 트리, 당신만의 방식으로",
+    "Feature2Desc": "드래그로 정리. 무한 중첩. 이름 변경은 모든 노트의 위키링크를 업데이트합니다.",
+    "Feature3Title": "녹음, 인라인",
+    "Feature3Desc": "노트 바로 옆에 오디오, 비디오, 스크린샷을 캡처하세요. 임베드되어 — 다른 앱에 묻히지 않습니다.",
+    "Feature4Title": "AI가 요약하고 연결합니다",
+    "Feature4Desc": "LLM이 각 노트를 요약하고, 엔티티를 추출하며, 사람·주제·회의의 위키를 자동으로 구축합니다.",
+    "Tagline": "내장 녹음. 연결된 노트. 휴대 가능한 Markdown. 당신의 폴더에 일반 파일로 저장되어 — 영원히 당신의 것입니다.",
+    "CreateCta": "첫 노트 만들기"
   }
 }
