@@ -955,7 +955,6 @@
     "Save": "Speichern",
     "Saved": "Gespeichert",
     "Saving": "Speichern...",
-    "Screenshot": "Screenshot",
     "Send": "Schicken",
     "Starting": "Starten...",
     "UnknownApp": "Unbekannte App",
@@ -965,7 +964,8 @@
     "Forward": "Nach vorne",
     "Refresh": "Aktualisieren",
     "Apply": "Anwenden",
-    "Undo": "Rückgängig"
+    "Undo": "Rückgängig",
+    "Screenshot": "Screenshot"
   },
   "DeletePrompt": {
     "Cancel": "Abbrechen",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Live-Transkription",
     "ToggleLiveTranscription": "Live-Transkription umschalten",
     "RecordingInProgress": "Aufnahme läuft…",
-    "OpenBoundNote": "Die Notiz öffnen, an die diese Aufnahme angehängt ist"
+    "OpenBoundNote": "Die Notiz öffnen, an die diese Aufnahme angehängt ist",
+    "NoteBindingLabel": "Anhängen an"
   },
   "FileImport": {
     "BrowseFiles": "Dateien durchsuchen",
@@ -1080,13 +1081,13 @@
     },
     "ModeLabel": "Was puffern",
     "ModeOff": "Aus",
-    "ModeAudio": "Audio",
     "ModeScreen": "Bildschirm",
     "WindowLabel": "Fensterlänge",
     "PrimaryRecord": "Mit {{seconds}}s Vorlauf aufnehmen",
     "PrimarySave": "Letzte {{seconds}}s speichern",
     "AdvancedSettings": "Erweiterte Einstellungen →",
-    "LearnMore": "Mehr erfahren"
+    "LearnMore": "Mehr erfahren",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "Die letzten {{seconds}}s werden nur im RAM gepuffert. Tippe Speichern oder die Aufnahmetaste, um sie zu nutzen."
@@ -1135,8 +1136,8 @@
     "BufferingVideo": "Video wird gepuffert",
     "Disabled": "Flashback deaktiviert",
     "Ready": "Bereit",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video bereit"
+    "VideoReady": "Video bereit",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "System-Audio: AN",
     "WaitingForRegion": "Warten auf Bereich…",
     "WindowNotAvailable": "Fensterauswahl ist auf dieser Plattform nicht verfügbar.",
-    "WindowRequired": "Wählen Sie ein Fenster vor der Aufnahme"
+    "WindowRequired": "Wählen Sie ein Fenster vor der Aufnahme",
+    "AttachTo": "Anhängen an"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Klicken Sie auf Aufnahme starten in der schwebenden Leiste, um den ausgewählten Bereich aufzunehmen",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Im Ordner anzeigen",
       "CopyEmbed": "Einbettungs-Syntax kopieren",
       "RerunAi": "KI erneut ausführen",
-      "Detach": "Von Notiz lösen"
+      "Detach": "Von Notiz lösen",
+      "OpenMedia": "Medien öffnen"
     },
     "AudioFallback": "Ihr Browser unterstützt keine Audiowiedergabe.",
     "WaitingForPipeline": "Warten auf Abschluss der KI-Verarbeitung…",
@@ -1441,7 +1444,10 @@
       "gathering": "Sammeln…",
       "reducing": "Verfeinern…",
       "writing": "Schreiben…"
-    }
+    },
+    "Copied": "Kopiert",
+    "CopyTab": "Kopieren",
+    "Unassigned": "Nicht zugewiesen"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Aktionspunkte",
@@ -1487,11 +1493,11 @@
     "NoEvents": "Noch keine Ereignisse empfangen",
     "ShowLogs": "Anzeigen",
     "StartTime": "Startzeit",
-    "Status": "Status",
     "Summary": "Zusammenfassung",
     "Untitled": "Unbenanntes Meeting",
     "WsConnected": "WebSocket verbunden",
-    "WsDisconnected": "WebSocket getrennt"
+    "WsDisconnected": "WebSocket getrennt",
+    "Status": "Status"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tipp: Für Browser-Meetings (Google Meet, Zoom, Teams) kann ich nur den Browser erkennen, nicht die spezifische Website.",
@@ -1499,7 +1505,6 @@
     "EndMessage": "Ich habe erkannt, dass das Meeting auf {{appName}} gerade beendet wurde. Möchten Sie, dass ich die Aufnahme stoppe?",
     "EndTitle": "Meeting beendet",
     "No": "Abbrechen",
-    "Pause": "Pause",
     "PlayRecording": "Abspielen",
     "RecordingSaved": "Aufnahme gespeichert",
     "RecordingSavedWithFilename": "{{fileName}} gespeichert",
@@ -1509,7 +1514,8 @@
     "StartMessage": "Haben Sie ein Meeting auf {{appName}}? Soll ich das Meeting jetzt aufnehmen?",
     "StartTitle": "Meeting erkannt",
     "StopRecording": "Aufnahme stoppen",
-    "Yes": "Aufnahme starten"
+    "Yes": "Aufnahme starten",
+    "Pause": "Pause"
   },
   "MeetingsTab": {
     "Download": "Herunterladen",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "Bildschirm-Flashback geladen ({{duration}}s)",
     "ScreenFlashbackCharging": "Bildschirm-Flashback wird geladen...",
     "ScreenRecording": "Bildschirmaufnahme ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Neue Notiz",
+    "LastNote": "Aktuelle (letzte) Notiz",
+    "None": "Nicht anhängen"
   },
   "NoteEditor": {
     "Placeholder": "Beginnen Sie zu tippen oder fügen Sie aus der Zwischenablage ein…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Noch keine Überschriften",
     "TocTitle": "Gliederung",
     "ToggleToc": "Inhaltsverzeichnis",
-    "Words": "Wörter"
+    "Words": "Wörter",
+    "ScrollLeft": "Symbolleiste nach links scrollen",
+    "ScrollRight": "Symbolleiste nach rechts scrollen"
   },
   "Notes": {
     "Toast": {
@@ -1636,7 +1649,6 @@
     "NewFolderPrompt": "Ordnername:",
     "SortBy": "Sortieren nach",
     "SortManual": "Manuelle Reihenfolge",
-    "SortName": "Name (A → Z)",
     "SortModified": "Geändert (neueste zuerst)",
     "CollapseAll": "Alle einklappen",
     "SearchInTree": "Im Baum suchen",
@@ -1665,7 +1677,8 @@
     "CopyRelativePath": "Relativen Pfad kopieren",
     "CopyFullPath": "Vollständigen Pfad kopieren",
     "UpdateWikiFromNote": "Wiki aus dieser Notiz aktualisieren",
-    "WikiUpdateFailed": "Wiki-Aktualisierung fehlgeschlagen: {{error}}"
+    "WikiUpdateFailed": "Wiki-Aktualisierung fehlgeschlagen: {{error}}",
+    "SortName": "Name (A → Z)"
   },
   "NotesView": {
     "EmptyTitle": "Notiz auswählen",
@@ -1691,7 +1704,6 @@
   },
   "OpenRecordingsFolder": "Öffnen Sie den Ordner „Aufnahmen“.",
   "OpenRecordingsFolderDesc": "Öffnen Sie den Standardaufzeichnungsordner",
-  "Pause": "Pause",
   "PermissionAlert": {
     "Title": "Berechtigung erforderlich",
     "Description": "SeaMeet benötigt zusätzliche Berechtigung, um fortzufahren.",
@@ -1755,7 +1767,6 @@
   },
   "Player": {
     "Mute": "Stumm",
-    "Pause": "Pause",
     "Play": "Abspielen",
     "PlaybackSpeed": "Wiedergabegeschwindigkeit",
     "SkipBackward10": "-10 Sekunden",
@@ -1768,7 +1779,8 @@
     "SkipForward30Short": "+30s",
     "TakeSnapshot": "Schnappschuss aufnehmen",
     "ToggleFullscreen": "Vollbild umschalten",
-    "Unmute": "Stumm aufheben"
+    "Unmute": "Stumm aufheben",
+    "Pause": "Pause"
   },
   "PlayerCard": {
     "ClosePlayback": "Wiedergabe schließen",
@@ -1820,10 +1832,11 @@
     "FlashbackStatusCharging": "Lädt {{percent}}%",
     "FlashbackStatusReady": "bereit — {{seconds}}s {{type}} im RAM",
     "LauncherPill": "Starter",
-    "FloaterPill": "Floater",
     "AutoDetectLabel": "Auto-Erkennung",
     "FlashbackLabel": "Rückblende",
-    "RecentRecordings": "Letzte Aufnahmen"
+    "RecentRecordings": "Letzte Aufnahmen",
+    "NoteBindingLabel": "Anhängen an",
+    "FloaterPill": "Schwebend"
   },
   "Recording": {
     "Paused": "Pausiert",
@@ -1853,14 +1866,14 @@
     "CaptureMode": "Erfassungsmodus",
     "FullScreen": "Vollbild",
     "WindowCapture": "Fenster",
-    "RecordAudio": "Audio",
     "RecordAudioTip": "Nur Audio",
     "RecordFullscreen": "Vollbild",
     "RecordFullscreenTip": "Gesamten Bildschirm erfassen",
     "RecordRegion": "Bereich",
     "RecordRegionTip": "Benutzerdefinierten Bereich erfassen",
     "RecordWindow": "Fenster",
-    "RecordWindowTip": "Ein einzelnes App-Fenster erfassen"
+    "RecordWindowTip": "Ein einzelnes App-Fenster erfassen",
+    "RecordAudio": "Audio"
   },
   "RecordingSource": {
     "App": "{{appName}}",
@@ -1898,7 +1911,6 @@
   "RegionSelector": {
     "CaptureButton": "Bildschirm erfassen oder Enter drücken",
     "ConfirmButton": "Auswahl bestätigen",
-    "Monitor": "Monitor",
     "PrimaryMonitor": "Hauptmonitor",
     "StartRecording": "Aufnahme starten",
     "Coordinates": "X: {{x}}, Y: {{y}}",
@@ -1914,7 +1926,8 @@
     "ShortcutCancel": "stornieren",
     "ShortcutCapture": "erfassen",
     "ShortcutConfirm": "bestätigen",
-    "AspectRatio": "Seitenverhältnis"
+    "AspectRatio": "Seitenverhältnis",
+    "Monitor": "Monitor"
   },
   "Resume": "Wieder aufnehmen",
   "RingMenu": {
@@ -2215,7 +2228,16 @@
     "RecordingHere": "Aufnahme läuft hier",
     "OrphanTooltip": "Diese Datei wurde auf der Festplatte gelöscht",
     "ScrollLeft": "Tabs nach links scrollen",
-    "ScrollRight": "Tabs nach rechts scrollen"
+    "ScrollRight": "Tabs nach rechts scrollen",
+    "Close": "Schließen",
+    "CloseAll": "Alle schließen",
+    "CloseOthers": "Andere schließen",
+    "CloseRight": "Rechts schließen",
+    "CloseSaved": "Gespeicherte schließen",
+    "CopyFullPath": "Vollen Pfad kopieren",
+    "CopyRelativePath": "Relativen Pfad kopieren",
+    "SplitAndMove": "Teilen und verschieben",
+    "SplitRight": "Rechts teilen"
   },
   "TakeScreenshot": "Machen Sie einen Screenshot",
   "TakeScreenshotDesc": "Erfassen Sie einen Bereich des Bildschirms",
@@ -2234,12 +2256,12 @@
     "OpenNavigationMenu": "Navigationsmenü öffnen",
     "Record": "Aufzeichnen",
     "Recording": "Aufnahme",
-    "Screenshot": "Screenshot",
     "GroupCapture": "Aufnahme",
     "GroupKnowledge": "Wissen",
     "Notes": "Notizen",
     "Wiki": "Wiki",
-    "GroupTools": "Werkzeuge"
+    "GroupTools": "Werkzeuge",
+    "Screenshot": "Screenshot"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet läuft noch in der Taskleiste (unten rechts).",
@@ -2254,8 +2276,8 @@
     "Both": "Beide (Gemischt)",
     "File": "Datei",
     "Microphone": "Mikrofon",
-    "Audio": "Audio",
     "System": "System-Audio-Ausgabe",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {
@@ -2351,7 +2373,6 @@
     "QualityHigh": "Hoch",
     "QualityLow": "Niedrig",
     "QualityMedium": "Mittel",
-    "QualityOriginal": "Original",
     "Record": "Aufnehmen",
     "RecordModeTitle": "Audio oder Video aufnehmen?",
     "RecordWithFlashback": "Mit Flashback aufnehmen",
@@ -2366,7 +2387,8 @@
     "Title": "Aufnahmeeinstellungen",
     "VideoFlashbackArmedNotice": "Bildschirm-Flashback scharf ({{seconds}}s)",
     "VideoQuality": "Videoqualität",
-    "ZeroSize": "~0 MB/min, ~0 GB/Stunde"
+    "ZeroSize": "~0 MB/min, ~0 GB/Stunde",
+    "QualityOriginal": "Original"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Benutzerdefinierter Bereich: {{width}} × {{height}} Pixel",
@@ -2422,7 +2444,6 @@
       "PausedFor": "Ratenlimit: {{seconds}}s",
       "Cancel": "Abbrechen",
       "Cancelling": "Wird abgebrochen — aktuelle Notiz wird abgeschlossen…",
-      "Pause": "Pause",
       "Continue": "Fortsetzen",
       "Paused": "Pausiert — {{current}}/{{total}}",
       "Restart": "Neu starten",
@@ -2436,6 +2457,7 @@
       "PolishIndexHint": "Erzählerische Einleitung zum Wiki-Index hinzufügen",
       "BuildFromFolderPrompt": "Ordnerpfad (relativ zum Arbeitsbereich):",
       "BuildFromSelectionPrompt": "Komma-getrennte Notiz-Dateinamen (relativ zu notes/):",
+"Pause": "Pause",
       "BuildingExtractingWithCache": "{{current}} von {{total}} Notizen gelesen · {{skipCount}} aus Cache wiederverwendet",
       "BuildingReducingWithFailures": "{{built}} von {{total}} Seiten erstellt · {{failed}} fehlgeschlagen"
     },
@@ -2461,7 +2483,6 @@
     "NewFolderPlaceholder": "Ordnername…",
     "SortBy": "Sortieren nach",
     "SortDefault": "Standard (Dateisystem-Reihenfolge)",
-    "SortName": "Name (A → Z)",
     "SortModified": "Geändert (neueste zuerst)",
     "CollapseAll": "Alle einklappen",
     "ExpandAll": "Alle ausklappen",
@@ -2487,7 +2508,8 @@
     "UserBadge": "Vom Benutzer bearbeitet",
     "QuickOpen": "Schnellöffnen (⌘P)",
     "ConflictBadge": "Konfliktkopie",
-    "EmptyAiCurated": "KI füllt diesen Ordner, wenn deine Aufnahmen oder Notizen eine Entität, Person, ein Thema oder Meeting erwähnen. Öffne eine Notiz und klicke auf Wiki synchronisieren, um Seiten zu erzeugen."
+    "EmptyAiCurated": "KI füllt diesen Ordner, wenn deine Aufnahmen oder Notizen eine Entität, Person, ein Thema oder Meeting erwähnen. Öffne eine Notiz und klicke auf Wiki synchronisieren, um Seiten zu erzeugen.",
+    "SortName": "Name (A → Z)"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] ist in diesem Arbeitsbereich nicht vorhanden",
@@ -2557,6 +2579,7 @@
     },
     "introToast": "Neu: Schwebendes Layout verfügbar. Klicken Sie auf das Layout-Symbol in der Kopfzeile, um es auszuprobieren."
   },
+"Pause": "Pause",
   "settings": {
     "stt": {
       "title": "Sprache-zu-Text-Anbieter (Live-Untertitel, Datei-Transkription)",

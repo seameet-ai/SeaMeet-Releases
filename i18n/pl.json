@@ -320,8 +320,8 @@
         "description": "Odkrycie, zastrzeżenia, kolejne kroki, decydenci"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Aktualizacje na osobę, blokery, dalej"
+        "description": "Aktualizacje na osobę, blokery, dalej",
+        "name": "Standup / status"
       }
     },
     "RegenerateTooltip": "Wygeneruj ponownie z tym samym szablonem",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Transkrypcja na żywo",
     "ToggleLiveTranscription": "Przełącz transkrypcję na żywo",
     "RecordingInProgress": "Trwa nagrywanie…",
-    "OpenBoundNote": "Otwórz notatkę, do której dołączono to nagranie"
+    "OpenBoundNote": "Otwórz notatkę, do której dołączono to nagranie",
+    "NoteBindingLabel": "Załącz do"
   },
   "FileImport": {
     "BrowseFiles": "Przeglądaj pliki",
@@ -1075,18 +1076,18 @@
     "StatusCharging": "Ładowanie {{percent}}%…",
     "StatusReady": "Gotowe — ostatnie {{seconds}}s {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "ekran"
+      "screen": "ekran",
+      "audio": "audio"
     },
     "ModeLabel": "Co buforować",
     "ModeOff": "Wył.",
-    "ModeAudio": "Audio",
     "ModeScreen": "Ekran",
     "WindowLabel": "Długość bufora",
     "PrimaryRecord": "Nagraj z preludium {{seconds}}s",
     "PrimarySave": "Zapisz ostatnie {{seconds}}s",
     "AdvancedSettings": "Ustawienia zaawansowane →",
-    "LearnMore": "Dowiedz się więcej"
+    "LearnMore": "Dowiedz się więcej",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "Ostatnie {{seconds}}s są buforowane tylko w RAM. Dotknij Zapisz lub przycisku nagrywania, aby ich użyć."
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Systemowy dźwięk: WŁĄCZONE",
     "WaitingForRegion": "Czekanie na region…",
     "WindowNotAvailable": "Wybór okna nie jest dostępny na tej platformie.",
-    "WindowRequired": "Wybierz okno przed nagrywaniem"
+    "WindowRequired": "Wybierz okno przed nagrywaniem",
+    "AttachTo": "Załącz do"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Kliknij opcję Rozpocznij nagrywanie na pływającym pasku, aby nagrać wybrany region",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Pokaż w folderze",
       "CopyEmbed": "Kopiuj składnię osadzania",
       "RerunAi": "Uruchom ponownie sztuczną inteligencję",
-      "Detach": "Odłącz od notatki"
+      "Detach": "Odłącz od notatki",
+      "OpenMedia": "Otwórz media"
     },
     "AudioFallback": "Twoja przeglądarka nie obsługuje odtwarzania dźwięku.",
     "WaitingForPipeline": "Oczekiwanie na zakończenie przetwarzania AI…",
@@ -1441,7 +1444,10 @@
       "gathering": "Zbieranie…",
       "reducing": "Udoskonalanie…",
       "writing": "Zapisywanie…"
-    }
+    },
+    "Copied": "Skopiowano",
+    "CopyTab": "Kopiuj",
+    "Unassigned": "Nieprzypisane"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Zadania do wykonania",
@@ -1487,11 +1493,11 @@
     "NoEvents": "Nie otrzymano jeszcze żadnych zdarzeń",
     "ShowLogs": "Pokaż",
     "StartTime": "Czas rozpoczęcia",
-    "Status": "Status",
     "Summary": "Podsumowanie",
     "Untitled": "Spotkanie bez tytułu",
     "WsConnected": "WebSocket połączony",
-    "WsDisconnected": "WebSocket rozłączony"
+    "WsDisconnected": "WebSocket rozłączony",
+    "Status": "Status"
   },
   "MeetingPrompt": {
     "BrowserHint": "Wskazówka: W przypadku spotkań w przeglądarce (Google Meet, Zoom, Teams) mogę wykryć tylko przeglądarkę, a nie konkretną stronę internetową.",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "naładowane wspomnienie ekranu ({{duration}} s)",
     "ScreenFlashbackCharging": "ładowanie wspomnienia ekranu...",
     "ScreenRecording": "nagrywanie ekranu ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Nowa notatka",
+    "LastNote": "Bieżąca (ostatnia) notatka",
+    "None": "Nie załączaj"
   },
   "NoteEditor": {
     "Placeholder": "Zacznij pisać lub wklej ze schowka…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Brak nagłówków",
     "TocTitle": "Zarys",
     "ToggleToc": "Spis treści",
-    "Words": "słowa"
+    "Words": "słowa",
+    "ScrollLeft": "Przewiń pasek narzędzi w lewo",
+    "ScrollRight": "Przewiń pasek narzędzi w prawo"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Pływak",
     "AutoDetectLabel": "Autowykrywanie",
     "FlashbackLabel": "Retrospekcja",
-    "RecentRecordings": "Najnowsze nagrania"
+    "RecentRecordings": "Najnowsze nagrania",
+    "NoteBindingLabel": "Załącz do"
   },
   "Recording": {
     "Paused": "Wstrzymano",
@@ -1898,7 +1912,6 @@
   "RegionSelector": {
     "CaptureButton": "Zrób zrzut ekranu lub naciśnij Enter",
     "ConfirmButton": "Potwierdź wybór",
-    "Monitor": "Monitor",
     "PrimaryMonitor": "Główny monitor",
     "StartRecording": "Rozpocznij nagrywanie",
     "Coordinates": "X: {{x}}, Y: {{y}}",
@@ -1914,7 +1927,8 @@
     "ShortcutCancel": "anulować",
     "ShortcutCapture": "schwytać",
     "ShortcutConfirm": "potwierdzać",
-    "AspectRatio": "Współczynnik proporcji"
+    "AspectRatio": "Współczynnik proporcji",
+    "Monitor": "Monitor"
   },
   "Resume": "Wznawiać",
   "RingMenu": {
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Nagrywanie w toku tutaj",
     "OrphanTooltip": "Ten plik został usunięty z dysku",
     "ScrollLeft": "Przewiń karty w lewo",
-    "ScrollRight": "Przewiń karty w prawo"
+    "ScrollRight": "Przewiń karty w prawo",
+    "Close": "Zamknij",
+    "CloseAll": "Zamknij wszystkie",
+    "CloseOthers": "Zamknij inne",
+    "CloseRight": "Zamknij po prawej",
+    "CloseSaved": "Zamknij zapisane",
+    "CopyFullPath": "Kopiuj pełną ścieżkę",
+    "CopyRelativePath": "Kopiuj ścieżkę względną",
+    "SplitAndMove": "Podziel i przenieś",
+    "SplitRight": "Podziel na prawo"
   },
   "TakeScreenshot": "Zrób zrzut ekranu",
   "TakeScreenshotDesc": "Przechwyć obszar ekranu",
@@ -2342,7 +2365,6 @@
     "MBPerMin": "~{{mb}} MB/min,",
     "ModeAudioOnly": "Tylko dźwięk",
     "ModeFullscreen": "Pełny ekran",
-    "ModeRegion": "Region",
     "ModeWindow": "Okno",
     "Native": "Natywne",
     "NoScreens": "Nie wykryto żadnych ekranów",
@@ -2366,7 +2388,8 @@
     "Title": "Ustawienia nagrywania",
     "VideoFlashbackArmedNotice": "Przygotowano wspomnienie ekranu ({{seconds}}s)",
     "VideoQuality": "Jakość wideo",
-    "ZeroSize": "~0 MB/min, ~0 GB/h"
+    "ZeroSize": "~0 MB/min, ~0 GB/h",
+    "ModeRegion": "Region"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Niestandardowy region: {{width}} × {{height}} pikseli — OK",

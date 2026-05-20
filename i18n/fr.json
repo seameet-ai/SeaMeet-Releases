@@ -304,8 +304,8 @@
         "description": "Décisions, actions, discussion"
       },
       "brainstorm": {
-        "name": "Brainstorm",
-        "description": "Idées, fils, questions ouvertes"
+        "description": "Idées, fils, questions ouvertes",
+        "name": "Remue-méninges"
       },
       "lecture": {
         "name": "Conférence / exposé",
@@ -342,8 +342,8 @@
       "Other": "Autre",
       "Skip": "Sauter",
       "Submit": "Soumettre",
-      "Title": "Question",
-      "TypeResponse": "Tapez votre réponse..."
+      "TypeResponse": "Tapez votre réponse...",
+      "Title": "Question"
     },
     "AssetContext": "Contexte : {{name}}",
     "CommandHelp": "Commandes : /nouveau · /clear · /cost · /help",
@@ -426,14 +426,14 @@
     },
     "ToolGroup": {
       "Actions_one": "{{count}} action",
-      "Actions_other": "{{count}} actions",
       "Completed_one": "{{count}} terminé",
       "Completed_other": "{{count}} terminé",
       "Running_one": "{{count}} en cours d'exécution",
       "Running_other": "{{count}} en cours d'exécution",
       "Running": "{{count}} en cours d'exécution",
       "Completed": "{{count}} terminé",
-      "Actions": "{{count}} actions"
+"Actions": "{{count}} actions",
+      "Actions_other": "{{count}} actions"
     },
     "SwitchModel": "Changer de modèle"
   },
@@ -499,13 +499,13 @@
     "AudioMix": "Mixage audio",
     "AudioSettings": "Paramètres audio",
     "AudioSource": "Source audio :",
-    "Microphone": "Microphone",
     "MicrophoneGainWarning": "Un gain microphone élevé peut capter la lecture du haut-parleur même lorsque \"Audio système\" est désactivé. Utilisez des écouteurs ou réduisez le gain du microphone pour l’enregistrement micro seul.",
     "MuteMic": "Couper le micro",
     "RecordingDefaultMicrophone": "Microphone par défaut",
     "RecordingSettings": "Paramètres d'enregistrement",
     "RefreshMicrophoneList": "Actualiser la liste des microphones",
-    "UnmuteMic": "Réactiver le micro"
+    "UnmuteMic": "Réactiver le micro",
+    "Microphone": "Microphone"
   },
   "AutoDetectDrawer": {
     "Title": "Détection auto",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Transcription en direct",
     "ToggleLiveTranscription": "Activer/désactiver la transcription en direct",
     "RecordingInProgress": "Enregistrement en cours…",
-    "OpenBoundNote": "Ouvrir la note à laquelle cet enregistrement est joint"
+    "OpenBoundNote": "Ouvrir la note à laquelle cet enregistrement est joint",
+    "NoteBindingLabel": "Joindre à"
   },
   "FileImport": {
     "BrowseFiles": "Parcourir les fichiers",
@@ -1075,24 +1076,23 @@
     "StatusCharging": "Chargement {{percent}}%…",
     "StatusReady": "Prêt — dernières {{seconds}}s {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "écran"
+      "screen": "écran",
+      "audio": "audio"
     },
     "ModeLabel": "Que mettre en cache",
     "ModeOff": "Désactivé",
-    "ModeAudio": "Audio",
     "ModeScreen": "Écran",
     "WindowLabel": "Durée de la fenêtre",
     "PrimaryRecord": "Enregistrer avec {{seconds}}s en amont",
     "PrimarySave": "Enregistrer les {{seconds}}s précédentes",
     "AdvancedSettings": "Paramètres avancés →",
-    "LearnMore": "En savoir plus"
+    "LearnMore": "En savoir plus",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "Les {{seconds}} dernières secondes sont mises en cache uniquement en RAM. Appuyez sur Enregistrer ou le bouton pour les utiliser."
   },
   "FlashbackHeroUI": {
-    "Audio": "audio",
     "Buffering": "Tampon en cours...",
     "BufferingMoment": "Instantané en cours...",
     "Capturing": "Capture en cours…",
@@ -1128,7 +1128,8 @@
     "SavingFlashback": "Sauvegarde de la rétropectoire…",
     "Screen": "écran",
     "StartRecording": "Démarrer l'enregistrement",
-    "TakeScreenshot": "Prendre une capture d'écran"
+    "TakeScreenshot": "Prendre une capture d'écran",
+    "Audio": "audio"
   },
   "FlashbackIndicator": {
     "Buffering": "Mise en mémoire tampon",
@@ -1281,7 +1282,6 @@
     "FailedToLoadScreens": "Échec du chargement des écrans. Veuillez réessayer.",
     "FailedToLoadWindows": "\"Échec du chargement des fenêtres. Veuillez réessayer.\"",
     "MicMuted": "Micro coupé",
-    "Microphone": "Microphone",
     "MicrophoneMuted": "\"Microphone : Muet\"",
     "MicrophoneSettings": "\"Paramètres du microphone\"",
     "MuteMicrophone": "Couper le microphone",
@@ -1302,7 +1302,9 @@
     "SystemAudioOn": "\"Audio système : ON\"",
     "WaitingForRegion": "En attente de la région…",
     "WindowNotAvailable": "La sélection de fenêtre n'est pas disponible sur cette plateforme.",
-    "WindowRequired": "Sélectionnez une fenêtre avant d'enregistrer"
+    "WindowRequired": "Sélectionnez une fenêtre avant d'enregistrer",
+    "AttachTo": "Joindre à",
+    "Microphone": "Microphone"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Cliquez sur Démarrer l'enregistrement dans la barre flottante pour enregistrer la région sélectionnée",
@@ -1318,7 +1320,6 @@
     "ExpandNowSpeaking": "Développer",
     "NowSpeaking": "Maintenant, je parle...",
     "SegmentCount_one": "{{count}} segment",
-    "SegmentCount_other": "{{count}} segments",
     "Tokens_one": "{{count}} jeton",
     "Tokens_other": "{{count}} jeton",
     "TokensTooltip": "Nombre cumulé de tokens rapportés par Gemini pour cette session",
@@ -1370,13 +1371,13 @@
       "ActivityFlushRequiresManualVad": "Le vidage périodique ne prend effet que lorsque la VAD automatique est désactivée — le serveur Gemini rejette le contrôle d'activité explicite sinon. Laissez l'interrupteur activé et désactivez la VAD automatique ci-dessous pour l'utiliser.",
       "Reset": "Tout réinitialiser aux valeurs par défaut"
     },
-    "SegmentCount": "{{count}} segment(s)"
+    "SegmentCount": "{{count}} segment(s)",
+    "SegmentCount_other": "{{count}} segments"
   },
   "GeminiTranscription": {
     "Title": "Transcription en direct"
   },
   "GlobalSearch": {
-    "SectionNotes": "Notes",
     "SectionWiki": "Wiki",
     "SectionTranscripts": "Transcriptions d’enregistrements",
     "SectionSummaries": "Résumés d’enregistrements",
@@ -1384,7 +1385,8 @@
     "IndexingFallback": "Indexation — affichage des correspondances de noms uniquement",
     "Placeholder": "Rechercher dans les notes, le wiki et les enregistrements…",
     "SoFar": "jusqu’à présent",
-    "NoResults": "Aucune correspondance"
+    "NoResults": "Aucune correspondance",
+    "SectionNotes": "Notes"
   },
   "HelpPage": {
     "Title": "En savoir plus sur SeaMeet"
@@ -1411,18 +1413,19 @@
     "Tab": {
       "Summary": "Résumé",
       "Transcript": "Transcription",
-      "Actions": "Actions",
       "Decisions": "Décisions",
       "Chapters": "Chapitres",
-      "Description": "Description",
-      "Ocr": "Texte OCR"
+      "Ocr": "Texte OCR",
+      "Actions": "Actions",
+      "Description": "Description"
     },
     "MoreActions": "Plus d'actions",
     "Action": {
       "ShowInFolder": "Afficher dans le dossier",
       "CopyEmbed": "Copier la syntaxe d'intégration",
       "RerunAi": "Relancer l'IA",
-      "Detach": "Détacher de la note"
+      "Detach": "Détacher de la note",
+      "OpenMedia": "Ouvrir le média"
     },
     "AudioFallback": "Votre navigateur ne prend pas en charge la lecture audio.",
     "WaitingForPipeline": "En attente de la fin du traitement IA…",
@@ -1441,7 +1444,10 @@
       "gathering": "Collecte…",
       "reducing": "Affinement…",
       "writing": "Écriture…"
-    }
+    },
+    "Copied": "Copié",
+    "CopyTab": "Copier",
+    "Unassigned": "Non attribué"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Éléments d'action",
@@ -1466,7 +1472,6 @@
     "Retry": "Réessayer",
     "SeekToTime": "Cliquez pour lire à partir de ce moment",
     "SegmentCount_one": "{{count}} segment",
-    "SegmentCount_other": "{{count}} segments",
     "SignInRequired": "Vous devez vous connecter",
     "Summary": "Résumé",
     "Transcribed": "Transcrit",
@@ -1475,7 +1480,8 @@
     "TranslationLanguage": "Langue de traduction",
     "UnknownSpeaker": "Intervenant",
     "WaitingForSpeech": "En attente de voix...",
-    "SegmentCount": "{{count}} segment(s)"
+    "SegmentCount": "{{count}} segment(s)",
+    "SegmentCount_other": "{{count}} segments"
   },
   "MeetingDetail": {
     "Back": "← Retour",
@@ -1522,8 +1528,8 @@
     "Retry": "Réessayer",
     "SelectWorkspace": "Veuillez sélectionner un espace de travail dans le menu utilisateur pour afficher les réunions.",
     "Title": "Réunions",
-    "Total": "total",
-    "Untitled": "Réunion sans titre"
+    "Untitled": "Réunion sans titre",
+    "Total": "total"
   },
   "MinimizedView": {
     "ActionRequired": "Action requise (auto-démarrage)",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "rétrospective d'écran chargée ({{duration}}s) – OK",
     "ScreenFlashbackCharging": "chargement de la rétrospective d'écran... – OK",
     "ScreenRecording": "enregistrement d'écran ({{time}}) – OK"
+  },
+  "NoteBinding": {
+    "New": "Nouvelle note",
+    "LastNote": "Note actuelle (dernière)",
+    "None": "Ne pas joindre"
   },
   "NoteEditor": {
     "Placeholder": "Commencez à écrire ou collez depuis le presse-papiers…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Pas encore de titres",
     "TocTitle": "Plan",
     "ToggleToc": "Table des matières",
-    "Words": "mots"
+    "Words": "mots",
+    "ScrollLeft": "Faire défiler la barre d'outils vers la gauche",
+    "ScrollRight": "Faire défiler la barre d'outils vers la droite"
   },
   "Notes": {
     "Toast": {
@@ -1622,15 +1635,14 @@
     "NewNote": "Nouvelle note",
     "JustNow": "à l'instant",
     "Yesterday": "Hier",
-    "Title": "Notes",
     "EmptyTitle": "Commencez votre première note",
     "EmptySubtitle": "L'enregistrement est la clé — ajoutez des enregistrements et des captures d'écran à n'importe quelle note.",
     "MediaCount": "{{n}} média(s) joint(s)",
     "ConfirmDelete": "Supprimer",
-    "DeleteNote": "Supprimer la note"
+    "DeleteNote": "Supprimer la note",
+    "Title": "Notes"
   },
   "NotesTree": {
-    "Title": "Notes",
     "NewNote": "Nouvelle note",
     "NewFolder": "Nouveau dossier",
     "NewFolderPrompt": "Nom du dossier :",
@@ -1665,7 +1677,8 @@
     "CopyRelativePath": "Copier le chemin relatif",
     "CopyFullPath": "Copier le chemin complet",
     "UpdateWikiFromNote": "Mettre à jour le wiki depuis cette note",
-    "WikiUpdateFailed": "Échec de la mise à jour du wiki : {{error}}"
+    "WikiUpdateFailed": "Échec de la mise à jour du wiki : {{error}}",
+    "Title": "Notes"
   },
   "NotesView": {
     "EmptyTitle": "Sélectionnez une note",
@@ -1691,7 +1704,6 @@
   },
   "OpenRecordingsFolder": "Ouvrir le dossier des enregistrements",
   "OpenRecordingsFolderDesc": "Ouvrez le dossier des enregistrements par défaut",
-  "Pause": "Pause",
   "PermissionAlert": {
     "Title": "Autorisation requise",
     "Description": "SeaMeet a besoin d’une autorisation supplémentaire pour continuer.",
@@ -1755,7 +1767,6 @@
   },
   "Player": {
     "Mute": "Muet",
-    "Pause": "Pause",
     "Play": "Lecture",
     "PlaybackSpeed": "Vitesse de lecture",
     "SkipBackward10": "-10 secondes",
@@ -1768,7 +1779,8 @@
     "SkipForward30Short": "+30s",
     "TakeSnapshot": "Capturer un instantané",
     "ToggleFullscreen": "Basculer en plein écran",
-    "Unmute": "Activer le son"
+    "Unmute": "Activer le son",
+    "Pause": "Pause"
   },
   "PlayerCard": {
     "ClosePlayback": "Fermer la lecture",
@@ -1801,8 +1813,8 @@
     "Placeholder": "Commencez à écrire ou collez du presse-papiers… Utilisez [[ pour lier à une autre note",
     "NoResults": "Aucune note correspondante",
     "UnifiedPlaceholder": "Ouvrir une note ou une page wiki par nom…",
-    "SectionNotes": "Notes",
-    "SectionWiki": "Wiki"
+    "SectionWiki": "Wiki",
+    "SectionNotes": "Notes"
   },
   "RecordAudio": "Enregistrer l'audio",
   "RecordAudioDesc": "Démarrer l'enregistrement audio (mixé)",
@@ -1823,7 +1835,8 @@
     "FloaterPill": "Flotteur",
     "AutoDetectLabel": "Détection auto",
     "FlashbackLabel": "Rétrospective",
-    "RecentRecordings": "Enregistrements récents"
+    "RecentRecordings": "Enregistrements récents",
+    "NoteBindingLabel": "Joindre à"
   },
   "Recording": {
     "Paused": "En pause",
@@ -1965,7 +1978,6 @@
     "CustomPlaceholder": "Demandez n'importe quoi à propos de cette image...",
     "Describe": "Décrire l'image",
     "DescribeSub": "Qu'y a-t-il dans cette capture d'écran ?",
-    "Description": "Description",
     "ExtractedText": "Texte extrait",
     "NoCustom": "Demandez n'importe quoi à propos de cette image.",
     "NoDescription": "Aucune description pour l'instant.",
@@ -1980,10 +1992,11 @@
     "SetupRequired": "Connectez-vous avec un abonnement ou BYOK pour traiter l'image.",
     "Tab": {
       "Custom": "Prompt personnalisé",
-      "Description": "Description",
-      "OCR": "Texte (OCR)"
+      "OCR": "Texte (OCR)",
+      "Description": "Description"
     },
     "UnknownError": "Erreur inconnue",
+"Description": "Description",
     "FallbackUsed": "{{from}} n’a pas pu traiter l’image — Gemini s’en est chargé à la place.",
     "FallbackHint": "Désactivez « Utiliser le LLM principal pour l’OCR des captures d’écran » dans les Paramètres si ce fournisseur ne prend pas en charge la vision."
   },
@@ -1995,7 +2008,6 @@
     "CopyFailed": "Échec de la copie de la capture d'écran dans le presse-papiers",
     "CopyToClipboard": "Copier dans le presse-papiers",
     "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
-    "Dimensions": "Dimensions",
     "FileSize": "Taille du fichier",
     "OpenInSystemViewer": "Ouvrir dans la visionneuse système",
     "ScreenshotCopied": "Capture d'écran copiée dans le presse-papiers",
@@ -2004,12 +2016,12 @@
     "ShareFailed": "Le partage n'est pas pris en charge sur ce navigateur. Ouvrez la capture d'écran manuellement pour la partager.",
     "Sharing": "Partage...",
     "ZeroBytes": "0 octet",
-    "Info": "Statistiques"
+    "Info": "Statistiques",
+    "Dimensions": "Dimensions"
   },
   "Search": {
     "Placeholder": "Rechercher… (⌘K)",
     "Aria": "Rechercher dans les notes et le wiki",
-    "GroupNotes": "Notes",
     "GroupWiki": "Wiki",
     "GroupRecordings": "Enregistrements",
     "GroupScreenshots": "Captures d'écran",
@@ -2018,7 +2030,8 @@
     },
     "Loading": "Recherche…",
     "NoResults": "Aucun résultat pour « {{query}} »",
-    "AgentHint": "Essayez l'agent IA pour les requêtes sémantiques."
+    "AgentHint": "Essayez l'agent IA pour les requêtes sémantiques.",
+    "GroupNotes": "Notes"
   },
   "Settings": {
     "About": {
@@ -2116,10 +2129,10 @@
     "GroupTitle": {
       "ApplicationInfo": "Informations sur l'application",
       "Automation": "Automatisation",
-      "Configuration": "Configuration",
       "General": "Général",
       "Legal": "Aspects légaux",
-      "RecordingStorage": "Stockage des enregistrements"
+      "RecordingStorage": "Stockage des enregistrements",
+      "Configuration": "Configuration"
     },
     "Item": {
       "AutoRecording": "Démarrage automatique de l’enregistrement",
@@ -2215,7 +2228,16 @@
     "RecordingHere": "Enregistrement en cours ici",
     "OrphanTooltip": "Ce fichier a été supprimé du disque",
     "ScrollLeft": "Défiler les onglets vers la gauche",
-    "ScrollRight": "Défiler les onglets vers la droite"
+    "ScrollRight": "Défiler les onglets vers la droite",
+    "Close": "Fermer",
+    "CloseAll": "Tout fermer",
+    "CloseOthers": "Fermer les autres",
+    "CloseRight": "Fermer à droite",
+    "CloseSaved": "Fermer les sauvegardés",
+    "CopyFullPath": "Copier le chemin complet",
+    "CopyRelativePath": "Copier le chemin relatif",
+    "SplitAndMove": "Diviser et déplacer",
+    "SplitRight": "Diviser à droite"
   },
   "TakeScreenshot": "Prendre une capture d'écran",
   "TakeScreenshotDesc": "Capturer une région de l'écran",
@@ -2235,11 +2257,11 @@
     "Record": "Enregistrer",
     "Recording": "Enregistrement",
     "Screenshot": "Capture",
-    "GroupCapture": "Capture",
     "GroupKnowledge": "Connaissances",
-    "Notes": "Notes",
     "Wiki": "Wiki",
-    "GroupTools": "Outils"
+    "GroupTools": "Outils",
+    "GroupCapture": "Capture",
+    "Notes": "Notes"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet fonctionne toujours dans la zone de notification (en bas à droite).",
@@ -2254,9 +2276,9 @@
     "Both": "Les deux (Mixte)",
     "File": "Fichier",
     "Microphone": "microphone",
-    "Audio": "Audio",
     "System": "Sortie audio du système",
-    "Video": "Vidéo"
+    "Video": "Vidéo",
+    "Audio": "Audio"
   },
   "UndoRename": {
     "Toast": "Renommé ; {{count}} référence(s) mise(s) à jour",
@@ -2351,7 +2373,6 @@
     "QualityHigh": "Élevé",
     "QualityLow": "Faible",
     "QualityMedium": "Moyenne",
-    "QualityOriginal": "Original",
     "Record": "Enregistrer",
     "RecordModeTitle": "Enregistrement audio ou vidéo ?",
     "RecordWithFlashback": "Enregistrement avec tampon rétroactif",
@@ -2366,7 +2387,8 @@
     "Title": "Paramètres d'enregistrement",
     "VideoFlashbackArmedNotice": "Rétrospective activée ({{seconds}}s)",
     "VideoQuality": "Qualité vidéo",
-    "ZeroSize": "~0 Mo/min, ~0 Go/h"
+    "ZeroSize": "~0 Mo/min, ~0 Go/h",
+    "QualityOriginal": "Original"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Région personnalisée : {{width}} × {{height}} pixels",
@@ -2422,7 +2444,6 @@
       "PausedFor": "limite de débit : {{seconds}}s",
       "Cancel": "Annuler",
       "Cancelling": "Annulation — fin de la note en cours…",
-      "Pause": "Pause",
       "Continue": "Reprendre",
       "Paused": "En pause — {{current}}/{{total}}",
       "Restart": "Recommencer",
@@ -2436,6 +2457,7 @@
       "PolishIndexHint": "Ajouter une introduction narrative à l'index du wiki",
       "BuildFromFolderPrompt": "Chemin du dossier (relatif à l’espace de travail) :",
       "BuildFromSelectionPrompt": "Noms de fichiers de notes séparés par des virgules (relatifs à notes/) :",
+"Pause": "Pause",
       "BuildingExtractingWithCache": "{{current}} sur {{total}} notes lues · {{skipCount}} réutilisées depuis le cache",
       "BuildingReducingWithFailures": "{{built}} sur {{total}} pages construites · {{failed}} échouées"
     },
@@ -2557,6 +2579,7 @@
     },
     "introToast": "Nouveau : disposition flottante disponible. Cliquez sur l'icône de disposition dans l'en-tête pour l'essayer."
   },
+"Pause": "Pause",
   "settings": {
     "stt": {
       "title": "Fournisseur de reconnaissance vocale (sous-titres en direct, transcription de fichiers)",

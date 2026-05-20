@@ -320,8 +320,8 @@
         "description": "Penemuan, keberatan, langkah berikut, pengambil keputusan"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Update per orang, hambatan, berikutnya"
+        "description": "Update per orang, hambatan, berikutnya",
+        "name": "Standup / status"
       }
     },
     "RegenerateTooltip": "Buat ulang dengan template yang sama",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Transkripsi langsung",
     "ToggleLiveTranscription": "Aktifkan transkripsi langsung",
     "RecordingInProgress": "Sedang merekam…",
-    "OpenBoundNote": "Buka catatan tempat rekaman ini dilampirkan"
+    "OpenBoundNote": "Buka catatan tempat rekaman ini dilampirkan",
+    "NoteBindingLabel": "Lampirkan ke"
   },
   "FileImport": {
     "BrowseFiles": "Telusuri File",
@@ -1075,24 +1076,23 @@
     "StatusCharging": "Memuat {{percent}}%…",
     "StatusReady": "Siap — {{seconds}}d terakhir {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "layar"
+      "screen": "layar",
+      "audio": "audio"
     },
     "ModeLabel": "Apa yang di-buffer",
     "ModeOff": "Mati",
-    "ModeAudio": "Audio",
     "ModeScreen": "Layar",
     "WindowLabel": "Panjang jendela",
     "PrimaryRecord": "Rekam dengan preamble {{seconds}}d",
     "PrimarySave": "Simpan {{seconds}}d terakhir",
     "AdvancedSettings": "Pengaturan lanjutan →",
-    "LearnMore": "Pelajari lebih"
+    "LearnMore": "Pelajari lebih",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "{{seconds}}d terakhir disimpan hanya di RAM. Tap Simpan atau tombol rekam untuk menggunakannya."
   },
   "FlashbackHeroUI": {
-    "Audio": "audio",
     "Buffering": "Penyangga",
     "BufferingMoment": "Momen buffering...",
     "Capturing": "Menangkap...",
@@ -1128,15 +1128,16 @@
     "SavingFlashback": "Menyimpan flashback…",
     "Screen": "layar",
     "StartRecording": "Mulai Perekaman",
-    "TakeScreenshot": "Ambil Screenshot"
+    "TakeScreenshot": "Ambil Screenshot",
+    "Audio": "audio"
   },
   "FlashbackIndicator": {
     "Buffering": "Penyangga",
     "BufferingVideo": "Penyangga Video",
     "Disabled": "Kilas balik dinonaktifkan",
     "Ready": "Siap",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video siap"
+    "VideoReady": "Video siap",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Audio Sistem: ON",
     "WaitingForRegion": "Menunggu wilayah…",
     "WindowNotAvailable": "Pemilihan jendela tidak tersedia di platform ini.",
-    "WindowRequired": "Pilih jendela sebelum mulai merekam"
+    "WindowRequired": "Pilih jendela sebelum mulai merekam",
+    "AttachTo": "Lampirkan ke"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Klik mulai perekaman di bilah mengambang untuk merekam wilayah yang dipilih",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Tampilkan di folder",
       "CopyEmbed": "Salin sintaks penyematan",
       "RerunAi": "Jalankan ulang AI",
-      "Detach": "Lepaskan dari catatan"
+      "Detach": "Lepaskan dari catatan",
+      "OpenMedia": "Buka media"
     },
     "AudioFallback": "Browser Anda tidak mendukung pemutaran audio.",
     "WaitingForPipeline": "Menunggu pemrosesan AI selesai…",
@@ -1441,7 +1444,10 @@
       "gathering": "Mengumpulkan…",
       "reducing": "Memperbaiki…",
       "writing": "Menulis…"
-    }
+    },
+    "Copied": "Disalin",
+    "CopyTab": "Salin",
+    "Unassigned": "Belum ditugaskan"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Item Tindakan",
@@ -1487,11 +1493,11 @@
     "NoEvents": "Belum ada peristiwa yang diterima",
     "ShowLogs": "Tampilkan",
     "StartTime": "Waktu Mulai",
-    "Status": "Status",
     "Summary": "Ringkasan",
     "Untitled": "Rapat Tanpa Judul",
     "WsConnected": "WebSocket Terhubung",
-    "WsDisconnected": "WebSocket Terputus"
+    "WsDisconnected": "WebSocket Terputus",
+    "Status": "Status"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tips: Untuk rapat browser (Google Meet, Zoom, Teams), saya hanya bisa mendeteksi browser, bukan website spesifik.",
@@ -1522,8 +1528,8 @@
     "Retry": "Coba Lagi",
     "SelectWorkspace": "Silakan pilih ruang kerja dari menu pengguna untuk melihat rapat.",
     "Title": "Rapat",
-    "Total": "total",
-    "Untitled": "Rapat Tanpa Judul"
+    "Untitled": "Rapat Tanpa Judul",
+    "Total": "total"
   },
   "MinimizedView": {
     "ActionRequired": "Tindakan Diperlukan (Auto-Record)",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "Kilas balik layar berisi charge ({{duration}}s)",
     "ScreenFlashbackCharging": "Pengisian daya kilas balik layar...",
     "ScreenRecording": "Perekaman layar ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Catatan baru",
+    "LastNote": "Catatan saat ini (terakhir)",
+    "None": "Jangan lampirkan"
   },
   "NoteEditor": {
     "Placeholder": "Mulai mengetik atau tempel dari papan klip…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Belum ada judul",
     "TocTitle": "Garis besar",
     "ToggleToc": "Daftar isi",
-    "Words": "kata"
+    "Words": "kata",
+    "ScrollLeft": "Gulir toolbar ke kiri",
+    "ScrollRight": "Gulir toolbar ke kanan"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Pengembara",
     "AutoDetectLabel": "Deteksi Otomatis",
     "FlashbackLabel": "Kilas Balik",
-    "RecentRecordings": "Rekaman terbaru"
+    "RecentRecordings": "Rekaman terbaru",
+    "NoteBindingLabel": "Lampirkan ke"
   },
   "Recording": {
     "Paused": "Dijeda",
@@ -1853,14 +1867,14 @@
     "CaptureMode": "Mode Tangkapan",
     "FullScreen": "Layar Penuh",
     "WindowCapture": "Jendela",
-    "RecordAudio": "Audio",
     "RecordAudioTip": "Hanya audio",
     "RecordFullscreen": "Layar Penuh",
     "RecordFullscreenTip": "Tangkap seluruh layar Anda",
     "RecordRegion": "Wilayah",
     "RecordRegionTip": "Tangkap area kustom",
     "RecordWindow": "Jendela",
-    "RecordWindowTip": "Tangkap satu jendela aplikasi"
+    "RecordWindowTip": "Tangkap satu jendela aplikasi",
+    "RecordAudio": "Audio"
   },
   "RecordingSource": {
     "App": "{{appName}}",
@@ -2118,8 +2132,8 @@
       "Automation": "Otomatisasi",
       "Configuration": "Pengaturan",
       "General": "Umum",
-      "Legal": "Legal",
-      "RecordingStorage": "Penyimpanan Rekaman"
+      "RecordingStorage": "Penyimpanan Rekaman",
+      "Legal": "Legal"
     },
     "Item": {
       "AutoRecording": "Perekaman otomatis",
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Perekaman sedang berlangsung di sini",
     "OrphanTooltip": "File ini telah dihapus dari disk",
     "ScrollLeft": "Gulir tab ke kiri",
-    "ScrollRight": "Gulir tab ke kanan"
+    "ScrollRight": "Gulir tab ke kanan",
+    "Close": "Tutup",
+    "CloseAll": "Tutup Semua",
+    "CloseOthers": "Tutup Lainnya",
+    "CloseRight": "Tutup ke Kanan",
+    "CloseSaved": "Tutup yang Disimpan",
+    "CopyFullPath": "Salin Jalur Lengkap",
+    "CopyRelativePath": "Salin Jalur Relatif",
+    "SplitAndMove": "Pisah dan Pindah",
+    "SplitRight": "Pisah ke Kanan"
   },
   "TakeScreenshot": "Ambil Tangkapan Layar",
   "TakeScreenshotDesc": "Tangkap wilayah layar",
@@ -2254,8 +2277,8 @@
     "Both": "Keduanya (Campuran)",
     "File": "Berkas",
     "Microphone": "Mikrofon",
-    "Audio": "Audio",
     "System": "Output Audio Sistem",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {

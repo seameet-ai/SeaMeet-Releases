@@ -320,8 +320,8 @@
         "description": "Penemuan, bantahan, langkah seterusnya, pembuat keputusan"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Kemas kini per orang, halangan, seterusnya"
+        "description": "Kemas kini per orang, halangan, seterusnya",
+        "name": "Standup / status"
       }
     },
     "RegenerateTooltip": "Jana semula dengan templat yang sama",
@@ -417,12 +417,12 @@
       "AndMoreLines_one": "... dan {{count}} lagi baris",
       "AndMoreLines_other": "... dan {{count}} lagi baris",
       "Executing": "Melaksanakan...",
-      "Input": "Input",
       "Output": "Keluaran",
       "Pattern": "Corak:",
       "Reading": "Membaca fail...",
       "ShowDetails": "Tunjukkan butiran",
-      "AndMoreLines": "... dan {{count}} lagi baris"
+      "AndMoreLines": "... dan {{count}} lagi baris",
+      "Input": "Input"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} tindakan",
@@ -887,7 +887,6 @@
       "CancelNotice": "Langganan berakhir {{date}}",
       "CancelPendingNotice": "Langganan anda akan berakhir pada {{date}}. Ciri AI akan terus tersedia sehingga tarikh tersebut.",
       "EndsOn": "Berakhir {{date}}",
-      "DevOverride": "(Dev Override)",
       "Loading": "Memuatkan...",
       "Manage": "Urus Langganan",
       "None": "Tiada langganan",
@@ -895,7 +894,8 @@
       "Plan": "Pelan",
       "Reactivate": "Aktifkan Semula",
       "SignIn": "Log masuk untuk mengurus langganan",
-      "Trial": "Percubaan"
+      "Trial": "Percubaan",
+      "DevOverride": "(Gantian Dev)"
     },
     "SignInToSubscribe": "Log masuk untuk melanggan:",
     "Subscribe": "Langgan",
@@ -929,10 +929,10 @@
     "PasteHint": "Ctrl+V untuk tampal gambar",
     "PasteHintMac": "⌘V untuk tampal gambar",
     "ImageDetected": "Gambar dikesan dalam papan keratan",
-    "Import": "Import",
     "Dismiss": "Abaikan",
     "ImportSuccess": "Gambar berjaya diimport",
-    "ImportFailed": "Gagal mengimport gambar dari papan keratan"
+    "ImportFailed": "Gagal mengimport gambar dari papan keratan",
+    "Import": "Import"
   },
   "Common": {
     "ApplyName": "Terapkan nama",
@@ -1021,18 +1021,19 @@
     "LiveTranscription": "Transkripsi langsung",
     "ToggleLiveTranscription": "Togol transkripsi langsung",
     "RecordingInProgress": "Sedang merakam…",
-    "OpenBoundNote": "Buka nota yang rakaman ini dilampirkan"
+    "OpenBoundNote": "Buka nota yang rakaman ini dilampirkan",
+    "NoteBindingLabel": "Lampirkan ke"
   },
   "FileImport": {
     "BrowseFiles": "Saring Fail",
     "DragDropFiles": "Seret dan lepas fail audio, video, dan imej di sini",
     "DragDropSubtitle": "Seret dan lepas fail audio, video, dan imej (termasuk sari kata) di sini",
-    "ImportMedia": "Import Media",
     "Supported": "Sokongan",
     "SupportedFormats": "Sokongan: MP3, WAV, M4A, WebM, OGG, PNG, JPG, dan sebagainya",
     "VideoImportCopying": "Menyalin fail video...",
     "VideoImportSaving": "Menyimpan fail video...",
-    "VideoUnsupported": "Format video ini mungkin tidak dapat dimainkan dalam aplikasi. Fail tetap akan diimport."
+    "VideoUnsupported": "Format video ini mungkin tidak dapat dimainkan dalam aplikasi. Fail tetap akan diimport.",
+    "ImportMedia": "Import Media"
   },
   "FindReplace": {
     "ConfirmReplaceAll": "Ganti semua {{count}} padanan?",
@@ -1075,24 +1076,23 @@
     "StatusCharging": "Memuatkan {{percent}}%…",
     "StatusReady": "Sedia — {{seconds}}s terakhir {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "skrin"
+      "screen": "skrin",
+      "audio": "audio"
     },
     "ModeLabel": "Apa yang disimpan",
     "ModeOff": "Mati",
-    "ModeAudio": "Audio",
     "ModeScreen": "Skrin",
     "WindowLabel": "Panjang tetingkap",
     "PrimaryRecord": "Rakam dengan prakata {{seconds}}s",
     "PrimarySave": "Simpan {{seconds}}s terakhir",
     "AdvancedSettings": "Tetapan lanjutan →",
-    "LearnMore": "Ketahui lebih"
+    "LearnMore": "Ketahui lebih",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "{{seconds}}s terakhir disimpan hanya dalam RAM. Ketik Simpan atau butang rakam untuk menggunakannya."
   },
   "FlashbackHeroUI": {
-    "Audio": "audio",
     "Buffering": "Penimbal",
     "BufferingMoment": "Penimbal Momen...",
     "Capturing": "Sedang menangkap...",
@@ -1128,15 +1128,16 @@
     "SavingFlashback": "Menyimpan kilas balik…",
     "Screen": "skrin",
     "StartRecording": "Mula rakaman",
-    "TakeScreenshot": "Ambil Sangkapan skrin"
+    "TakeScreenshot": "Ambil Sangkapan skrin",
+    "Audio": "audio"
   },
   "FlashbackIndicator": {
     "Buffering": "Penimbal",
     "BufferingVideo": "Penimbal Video",
     "Disabled": "Kilas balik dinyahaktifkan",
     "Ready": "Sedia",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video Sedia"
+    "VideoReady": "Video Sedia",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Audio Sistem: HIDUP",
     "WaitingForRegion": "Menunggu kawasan…",
     "WindowNotAvailable": "Pemilihan tetingkap tidak tersedia pada platform ini.",
-    "WindowRequired": "Pilih tetingkap sebelum rakaman"
+    "WindowRequired": "Pilih tetingkap sebelum rakaman",
+    "AttachTo": "Lampirkan ke"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Klik Mula rakaman dalam bar terapung untuk rakaman kawasan yang dipilih",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Tunjuk dalam folder",
       "CopyEmbed": "Salin sintaks pembenaman",
       "RerunAi": "Jalankan semula AI",
-      "Detach": "Tanggalkan daripada nota"
+      "Detach": "Tanggalkan daripada nota",
+      "OpenMedia": "Buka media"
     },
     "AudioFallback": "Pelayar anda tidak menyokong main balik audio.",
     "WaitingForPipeline": "Menunggu pemprosesan AI selesai…",
@@ -1441,7 +1444,10 @@
       "gathering": "Mengumpul…",
       "reducing": "Memperhalus…",
       "writing": "Menulis…"
-    }
+    },
+    "Copied": "Disalin",
+    "CopyTab": "Salin",
+    "Unassigned": "Belum Ditugaskan"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Tindakan",
@@ -1487,11 +1493,11 @@
     "NoEvents": "Tiada peristiwa diterima lagi",
     "ShowLogs": "Tunjukkan",
     "StartTime": "Masa Mula",
-    "Status": "Status",
     "Summary": "Ringkasan",
     "Untitled": "Mesyuarat Tanpa Tajuk",
     "WsConnected": "WebSocket Disambungkan",
-    "WsDisconnected": "WebSocket Diputuskan"
+    "WsDisconnected": "WebSocket Diputuskan",
+    "Status": "Status"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 Tip: Untuk mesyuarat pelayar (Google Meet, Zoom, Teams), saya hanya dapat mengesan pelayar, bukan laman web tertentu. — Tidak perlu perubahan, tetapi pastikan istilah \"laman web\" konsisten digunakan dan sesuai dengan konteks teknologi.",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "Kilas balik skrin dicas ({{duration}}s)",
     "ScreenFlashbackCharging": "Kilas balik skrin sedang dicas...",
     "ScreenRecording": "Rakaman skrin ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Nota baharu",
+    "LastNote": "Nota semasa (terakhir)",
+    "None": "Jangan lampirkan"
   },
   "NoteEditor": {
     "Placeholder": "Mula menaip atau tampal dari papan keratan…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Tiada tajuk lagi",
     "TocTitle": "Garis besar",
     "ToggleToc": "Jadual kandungan",
-    "Words": "kata"
+    "Words": "kata",
+    "ScrollLeft": "Skrol bar alat ke kiri",
+    "ScrollRight": "Skrol bar alat ke kanan"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Terapung",
     "AutoDetectLabel": "Auto-Kesan",
     "FlashbackLabel": "Kilas Balik",
-    "RecentRecordings": "Rakaman terkini"
+    "RecentRecordings": "Rakaman terkini",
+    "NoteBindingLabel": "Lampirkan ke"
   },
   "Recording": {
     "Paused": "Dijeda",
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Rakaman sedang berjalan di sini",
     "OrphanTooltip": "Fail ini telah dipadam daripada cakera",
     "ScrollLeft": "Tatal tab ke kiri",
-    "ScrollRight": "Tatal tab ke kanan"
+    "ScrollRight": "Tatal tab ke kanan",
+    "Close": "Tutup",
+    "CloseAll": "Tutup Semua",
+    "CloseOthers": "Tutup Lain",
+    "CloseRight": "Tutup ke Kanan",
+    "CloseSaved": "Tutup Disimpan",
+    "CopyFullPath": "Salin Laluan Penuh",
+    "CopyRelativePath": "Salin Laluan Relatif",
+    "SplitAndMove": "Pisah dan Pindah",
+    "SplitRight": "Pisah ke Kanan"
   },
   "TakeScreenshot": "Ambil Tangkapan Skrin",
   "TakeScreenshotDesc": "Tangkap kawasan skrin",
@@ -2254,8 +2277,8 @@
     "Both": "Kedua-duanya (Campuran)",
     "File": "Fail",
     "Microphone": "Mikrofon",
-    "Audio": "Audio",
     "System": "Output Audio Sistem",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {

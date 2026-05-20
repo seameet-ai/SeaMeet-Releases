@@ -304,8 +304,8 @@
         "description": "Decisões, ações, discussão"
       },
       "brainstorm": {
-        "name": "Brainstorm",
-        "description": "Ideias, threads, perguntas abertas"
+        "description": "Ideias, threads, perguntas abertas",
+        "name": "Tempestade de ideias"
       },
       "lecture": {
         "name": "Palestra / talk",
@@ -320,8 +320,8 @@
         "description": "Descoberta, objeções, próximos passos, decisores"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Atualizações por pessoa, bloqueios, próximo"
+        "description": "Atualizações por pessoa, bloqueios, próximo",
+        "name": "Reunião rápida / status"
       }
     },
     "RegenerateTooltip": "Regenerar com o mesmo modelo",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Transcrição ao vivo",
     "ToggleLiveTranscription": "Alternar transcrição ao vivo",
     "RecordingInProgress": "Gravação em andamento…",
-    "OpenBoundNote": "Abrir a nota à qual esta gravação está anexada"
+    "OpenBoundNote": "Abrir a nota à qual esta gravação está anexada",
+    "NoteBindingLabel": "Anexar a"
   },
   "FileImport": {
     "BrowseFiles": "Selecionar Arquivos",
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Áudio do sistema: LIGADO",
     "WaitingForRegion": "Aguardando região…",
     "WindowNotAvailable": "A seleção de janela não está disponível nesta plataforma.",
-    "WindowRequired": "Selecione uma janela antes da gravação"
+    "WindowRequired": "Selecione uma janela antes da gravação",
+    "AttachTo": "Anexar a"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Clique em Iniciar gravação na barra flutuante para gravar a região selecionada",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Mostrar na pasta",
       "CopyEmbed": "Copiar sintaxe de incorporação",
       "RerunAi": "Executar IA novamente",
-      "Detach": "Desanexar da nota"
+      "Detach": "Desanexar da nota",
+      "OpenMedia": "Abrir mídia"
     },
     "AudioFallback": "Seu navegador não suporta reprodução de áudio.",
     "WaitingForPipeline": "Aguardando o término do processamento de IA…",
@@ -1441,7 +1444,10 @@
       "gathering": "Coletando…",
       "reducing": "Refinando…",
       "writing": "Escrevendo…"
-    }
+    },
+    "Copied": "Copiado",
+    "CopyTab": "Copiar",
+    "Unassigned": "Não atribuído"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Itens de ação",
@@ -1487,11 +1493,11 @@
     "NoEvents": "Nenhum evento recebido ainda",
     "ShowLogs": "Mostrar",
     "StartTime": "Hora de início",
-    "Status": "Status",
     "Summary": "Resumo",
     "Untitled": "Reunião sem título",
     "WsConnected": "WebSocket conectado",
-    "WsDisconnected": "WebSocket desconectado"
+    "WsDisconnected": "WebSocket desconectado",
+    "Status": "Status"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 Dica: Para reuniões no navegador (Google Meet, Zoom, Teams), posso detectar apenas o navegador, não o site específico.",
@@ -1522,8 +1528,8 @@
     "Retry": "Tentar novamente",
     "SelectWorkspace": "Selecione um espaço de trabalho no menu do usuário para ver as reuniões.",
     "Title": "Reuniões",
-    "Total": "total",
-    "Untitled": "Reunião sem título"
+    "Untitled": "Reunião sem título",
+    "Total": "total"
   },
   "MinimizedView": {
     "ActionRequired": "Ação requerida (Auto-Record)",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "Flashback da tela carregado ({{duration}})s",
     "ScreenFlashbackCharging": "carregando tela retrô...",
     "ScreenRecording": "gravação de tela ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Nova nota",
+    "LastNote": "Nota atual (última)",
+    "None": "Não anexar"
   },
   "NoteEditor": {
     "Placeholder": "Comece a digitar ou cole da área de transferência…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Ainda não há títulos",
     "TocTitle": "Esboço",
     "ToggleToc": "Índice",
-    "Words": "palavras"
+    "Words": "palavras",
+    "ScrollLeft": "Deslizar a barra de ferramentas para a esquerda",
+    "ScrollRight": "Deslizar a barra de ferramentas para a direita"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Flutuante",
     "AutoDetectLabel": "Detecção automática",
     "FlashbackLabel": "Flashback",
-    "RecentRecordings": "Gravações recentes"
+    "RecentRecordings": "Gravações recentes",
+    "NoteBindingLabel": "Anexar a"
   },
   "Recording": {
     "Paused": "Pausado",
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Gravação em andamento aqui",
     "OrphanTooltip": "Este arquivo foi excluído do disco",
     "ScrollLeft": "Rolar abas para a esquerda",
-    "ScrollRight": "Rolar abas para a direita"
+    "ScrollRight": "Rolar abas para a direita",
+    "Close": "Fechar",
+    "CloseAll": "Fechar tudo",
+    "CloseOthers": "Fechar outros",
+    "CloseRight": "Fechar à direita",
+    "CloseSaved": "Fechar salvos",
+    "CopyFullPath": "Copiar caminho completo",
+    "CopyRelativePath": "Copiar caminho relativo",
+    "SplitAndMove": "Dividir e mover",
+    "SplitRight": "Dividir à direita"
   },
   "TakeScreenshot": "Tirar captura de tela",
   "TakeScreenshotDesc": "Capture uma região da tela",
@@ -2351,7 +2374,6 @@
     "QualityHigh": "Alto",
     "QualityLow": "Baixo",
     "QualityMedium": "Médio",
-    "QualityOriginal": "Original",
     "Record": "Gravar",
     "RecordModeTitle": "Deseja gravar áudio ou vídeo?",
     "RecordWithFlashback": "Gravar com Flashback",
@@ -2366,7 +2388,8 @@
     "Title": "Configurações de gravação",
     "VideoFlashbackArmedNotice": "Flashback de tela ativado ({{seconds}}s)",
     "VideoQuality": "Qualidade de vídeo",
-    "ZeroSize": "~0 MB/min, ~0 GB/hora"
+    "ZeroSize": "~0 MB/min, ~0 GB/hora",
+    "QualityOriginal": "Original"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Região personalizada: {{width}} × {{height}} pixels",

@@ -304,8 +304,8 @@
         "description": "Mga desisyon, aksyon, talakayan"
       },
       "brainstorm": {
-        "name": "Brainstorm",
-        "description": "Mga ideya, thread, bukas na tanong"
+        "description": "Mga ideya, thread, bukas na tanong",
+        "name": "Pag-iisip ng mga Ideya"
       },
       "lecture": {
         "name": "Lektura / talk",
@@ -316,12 +316,12 @@
         "description": "Mga tema, damdamin, follow-up"
       },
       "sales": {
-        "name": "Sales call",
-        "description": "Pagtuklas, pagtutol, susunod, mga decision-maker"
+        "description": "Pagtuklas, pagtutol, susunod, mga decision-maker",
+        "name": "Tawag sa Pagbebenta"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Bawat tao update, hadlang, susunod"
+        "description": "Bawat tao update, hadlang, susunod",
+        "name": "Standup / Katayuan"
       }
     },
     "RegenerateTooltip": "I-regenerate gamit ang parehong template",
@@ -417,12 +417,12 @@
       "AndMoreLines_one": "... at {{count}} pang linya",
       "AndMoreLines_other": "... at {{count}} pang linya",
       "Executing": "Isinasagawa...",
-      "Input": "Input",
-      "Output": "Output",
-      "Pattern": "Pattern:",
       "Reading": "Binabasa ang file...",
       "ShowDetails": "Ipakita ang mga detalye",
-      "AndMoreLines": "... at {{count}} pang mga linya"
+      "AndMoreLines": "... at {{count}} pang mga linya",
+      "Input": "Input",
+      "Output": "Output",
+      "Pattern": "Pattern:"
     },
     "ToolGroup": {
       "Actions_one": "{{count}} na mga aksyon",
@@ -887,7 +887,6 @@
       "CancelNotice": "Matatapos ang subscription sa {{date}}",
       "CancelPendingNotice": "Matatapos ang iyong subscription sa {{date}}. Mananatiling available ang mga AI feature hanggang sa panahong iyon.",
       "EndsOn": "Matatapos {{date}}",
-      "DevOverride": "(Dev Override)",
       "Loading": "Naglo-load...",
       "Manage": "Pamahalaan ang Subscription",
       "None": "Walang subscription",
@@ -895,7 +894,8 @@
       "Plan": "Plano",
       "Reactivate": "I-reactivate",
       "SignIn": "Mag-sign in upang pamahalaan ang subscription",
-      "Trial": "Pagsubok"
+      "Trial": "Pagsubok",
+      "DevOverride": "(Dev Override)"
     },
     "SignInToSubscribe": "Mag-sign in para mag-subscribe:",
     "Subscribe": "Mag-subscribe",
@@ -955,7 +955,6 @@
     "Save": "I-save",
     "Saved": "Naka-save",
     "Saving": "Nagsi-save…",
-    "Screenshot": "Screenshot",
     "Send": "Ipadala",
     "Starting": "Nagsisimula na...",
     "UnknownApp": "Hindi kilalang app",
@@ -965,7 +964,8 @@
     "Forward": "Pasulong",
     "Refresh": "I-refresh",
     "Apply": "Iapply",
-    "Undo": "I-undo"
+    "Undo": "I-undo",
+    "Screenshot": "Screenshot"
   },
   "DeletePrompt": {
     "Cancel": "Kanselahin",
@@ -1013,15 +1013,16 @@
     "PickScreenshotSource": "Pumili ng pinagmumulan ng screenshot",
     "SourceAudio": "Audio Lang",
     "SourceFullscreen": "Buong Screen",
-    "SourceWindow": "Window",
     "SourceRegion": "Rehiyon",
     "ScreenshotFullscreen": "Buong Screen",
-    "ScreenshotWindow": "Window",
     "ScreenshotRegion": "Rehiyon",
     "LiveTranscription": "Live na transkripsyon",
     "ToggleLiveTranscription": "I-toggle ang live na transkripsyon",
     "RecordingInProgress": "Nagre-record…",
-    "OpenBoundNote": "Buksan ang note kung saan nakalakip ang recording na ito"
+    "OpenBoundNote": "Buksan ang note kung saan nakalakip ang recording na ito",
+    "NoteBindingLabel": "Ikabit sa",
+    "ScreenshotWindow": "Window",
+    "SourceWindow": "Window"
   },
   "FileImport": {
     "BrowseFiles": "Mag-browse ng mga file",
@@ -1074,25 +1075,24 @@
     "StatusOff": "Naka-off — pumili ng mode sa ibaba para mag-arm.",
     "StatusCharging": "Nagka-charge {{percent}}%…",
     "StatusReady": "Handa na — huling {{seconds}}s {{type}}.",
-    "Types": {
-      "audio": "audio",
-      "screen": "screen"
-    },
     "ModeLabel": "Ano ang i-buffer",
     "ModeOff": "Naka-off",
-    "ModeAudio": "Audio",
-    "ModeScreen": "Screen",
     "WindowLabel": "Haba ng window",
     "PrimaryRecord": "Mag-record na may {{seconds}}s preamble",
     "PrimarySave": "I-save ang huling {{seconds}}s",
     "AdvancedSettings": "Mga advanced na setting →",
-    "LearnMore": "Matuto pa"
+    "LearnMore": "Matuto pa",
+    "ModeAudio": "Audio",
+    "ModeScreen": "Screen",
+    "Types": {
+      "audio": "audio",
+      "screen": "screen"
+    }
   },
   "FlashbackFirstArm": {
     "Tooltip": "Ang huling {{seconds}}s ay naka-buffer lang sa RAM. I-tap ang Save o ang record button para gamitin."
   },
   "FlashbackHeroUI": {
-    "Audio": "audio",
     "Buffering": "Buffer",
     "BufferingMoment": "Sandali ng buffer...",
     "Capturing": "Kinukunan...",
@@ -1128,15 +1128,16 @@
     "SavingFlashback": "Nilalakad ang balik-tanaw…",
     "Screen": "screen → screen",
     "StartRecording": "Simulan ang Pagre-rekord",
-    "TakeScreenshot": "Kuhanan ng Screenshot"
+    "TakeScreenshot": "Kuhanan ng Screenshot",
+    "Audio": "audio"
   },
   "FlashbackIndicator": {
     "Buffering": "Nagbu-buffer",
     "BufferingVideo": "Buffering ng video",
     "Disabled": "Nakansela ang balik-tanaw",
     "Ready": "Handa na",
-    "VideoPrefix": "Video",
-    "VideoReady": "Handang-handa na ang Bideo"
+    "VideoReady": "Handang-handa na ang Bideo",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "System Audio: NAKA-ON",
     "WaitingForRegion": "Naghihintay sa region…",
     "WindowNotAvailable": "Hindi available ang pagpili ng window sa platform na ito.",
-    "WindowRequired": "Piliin ang isang window bago mag-umpisa ng pagre-record"
+    "WindowRequired": "Piliin ang isang window bago mag-umpisa ng pagre-record",
+    "AttachTo": "Ikabit sa"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Pindutin ang Start Recording sa floating bar upang simulang i-record ang napiling bahagi",
@@ -1314,7 +1316,6 @@
     "SubscribeForTranscription": "Mag-subscribe para i-enable ang live AI transcription habang nagre-record.",
     "EnableDescription": "Real-time na transkripsyon na pinapagana ng Gemini habang nagre-record",
     "EnableIntegration": "Paganahin ang Live AI Transcription",
-    "Error": "Error",
     "ExpandNowSpeaking": "Palawakin",
     "NowSpeaking": "Ngayon Nagsasalita...",
     "SegmentCount_one": "{{count}} na mga segment",
@@ -1370,7 +1371,8 @@
       "ActivityFlushRequiresManualVad": "Nagka-ka-epekto lang ang pana-panahong pag-flush kapag naka-disable ang awtomatikong VAD — itinatanggi ng Gemini server ang malinaw na kontrol ng aktibidad kung hindi. Panatilihing naka-on ang toggle at i-disable ang awtomatikong VAD sa ibaba upang magamit ito.",
       "Reset": "I-reset lahat sa default"
     },
-    "SegmentCount": "{{count}} na mga segment"
+    "SegmentCount": "{{count}} na mga segment",
+    "Error": "Error"
   },
   "GeminiTranscription": {
     "Title": "Live na Transkripsyon"
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Ipakita sa folder",
       "CopyEmbed": "Kopyahin ang embed syntax",
       "RerunAi": "Patakbuhin muli ang AI",
-      "Detach": "Alisin sa tala"
+      "Detach": "Alisin sa tala",
+      "OpenMedia": "Buksan ang media"
     },
     "AudioFallback": "Hindi sinusuportahan ng iyong browser ang pag-play ng audio.",
     "WaitingForPipeline": "Naghihintay matapos ang pagproseso ng AI…",
@@ -1441,7 +1444,10 @@
       "gathering": "Tinitipon…",
       "reducing": "Pinipino…",
       "writing": "Sinusulat…"
-    }
+    },
+    "Copied": "Nakopya",
+    "CopyTab": "Kopyahin",
+    "Unassigned": "Hindi Itinalaga"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mga action items",
@@ -1479,7 +1485,6 @@
   },
   "MeetingDetail": {
     "Back": "← Bumalik",
-    "Channel": "Channel",
     "Duration": "Tagal",
     "EventLogs": "Mga Log ng Kaganapan",
     "HideLogs": "Itago",
@@ -1491,7 +1496,8 @@
     "Summary": "Buod",
     "Untitled": "Hindi Pinangalanang Pulong",
     "WsConnected": "Nakakonekta ang WebSocket",
-    "WsDisconnected": "Nadiskonekta ang WebSocket"
+    "WsDisconnected": "Nadiskonekta ang WebSocket",
+    "Channel": "Channel"
   },
   "MeetingPrompt": {
     "BrowserHint": "\"💡 Tip: Para sa mga pagpupulong sa browser (Google Meet, Zoom, Teams), hiningi ko lang na madetect ang browser, hindi ang partikular na website.\"",
@@ -1535,6 +1541,11 @@
     "ScreenFlashbackCharging": "Nagcha-charge ang screen balik-tanaw...",
     "ScreenRecording": "Screen balik-tanaw ({{time}})"
   },
+  "NoteBinding": {
+    "New": "Bagong tala",
+    "LastNote": "Kasalukuyang (huling) tala",
+    "None": "Huwag ikabit"
+  },
   "NoteEditor": {
     "Placeholder": "Simulan ang pag-type o i-paste mula sa clipboard…",
     "Saving": "Sine-save…",
@@ -1548,7 +1559,6 @@
     "Renaming": "Pinapalitan ang pangalan…",
     "LoadFailed": "Hindi na-load ang tala",
     "Bold": "Bold",
-    "Italic": "Italic",
     "Code": "Code",
     "Heading1": "Pamagat 1",
     "Heading2": "Pamagat 2",
@@ -1568,7 +1578,6 @@
     "SyncWikiRunning": "Nag-sa-sync…",
     "SyncWikiSuccess": "✓ Na-sync",
     "SyncWikiError": "Nabigo ang pag-sync",
-    "Blockquote": "Blockquote",
     "CodeBlock": "Bloke ng code",
     "Heading3": "Pamagat 3",
     "Highlight": "I-highlight",
@@ -1598,14 +1607,18 @@
     "TocEmpty": "Walang mga pamagat",
     "TocTitle": "Balangkas",
     "ToggleToc": "Talaan ng mga nilalaman",
-    "Words": "mga salita"
+    "Words": "mga salita",
+    "ScrollLeft": "I-scroll ang toolbar pakaliwa",
+    "ScrollRight": "I-scroll ang toolbar pakanan",
+    "Blockquote": "Blockquote",
+    "Italic": "Italic"
   },
   "Notes": {
     "Toast": {
-      "Screenshot": "Screenshot",
       "Recording": "Rekording",
       "AddedTo": "idinagdag sa",
-      "Open": "Buksan"
+      "Open": "Buksan",
+      "Screenshot": "Screenshot"
     },
     "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
     "SynthesisPill": {
@@ -1658,14 +1671,14 @@
     "ConfirmDeleteFolder": "Burahin ang folder na \"{{name}}\" at lahat ng laman?",
     "RenameSucceeded": "Napalitan ang pangalan",
     "RenameWithRefs": "Napalitan ang pangalan; na-update ang {{count}} reference",
-    "SortDefault": "Default (filesystem order)",
     "ExpandAll": "Palawakin lahat",
     "NewFolderPlaceholder": "Pangalan ng bagong folder…",
     "QuickOpen": "Mabilis na buksan  (⌘P)",
     "CopyRelativePath": "Kopyahin ang relative path",
     "CopyFullPath": "Kopyahin ang full path",
     "UpdateWikiFromNote": "I-update ang wiki mula sa tala na ito",
-    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}"
+    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
+    "SortDefault": "Default (filesystem order)"
   },
   "NotesView": {
     "EmptyTitle": "Pumili ng tala",
@@ -1819,11 +1832,12 @@
     "FlashbackStatusOff": "naka-off — i-tap para i-arm",
     "FlashbackStatusCharging": "nagka-charge {{percent}}%",
     "FlashbackStatusReady": "armado — {{seconds}}s {{type}} sa RAM",
-    "LauncherPill": "Launcher",
     "FloaterPill": "Lutang",
     "AutoDetectLabel": "Auto-Detect",
     "FlashbackLabel": "Flashback",
-    "RecentRecordings": "Kamakailang recordings"
+    "RecentRecordings": "Kamakailang recordings",
+    "NoteBindingLabel": "Ikabit sa",
+    "LauncherPill": "Launcher"
   },
   "Recording": {
     "Paused": "Naka-pause",
@@ -1853,14 +1867,14 @@
     "CaptureMode": "Paraang Pangkuha",
     "FullScreen": "Buong Bisyon",
     "WindowCapture": "Bintana",
-    "RecordAudio": "Audio",
     "RecordAudioTip": "Audio lang",
     "RecordFullscreen": "Buong Bisyon",
     "RecordFullscreenTip": "Kinuhanan ang buong screen",
     "RecordRegion": "Rehiyon",
     "RecordRegionTip": "Kuhanan ang isang pasadyang rehiyon",
     "RecordWindow": "Bintana",
-    "RecordWindowTip": "Kuhanan ng isang window ng app"
+    "RecordWindowTip": "Kuhanan ng isang window ng app",
+    "RecordAudio": "Audio"
   },
   "RecordingSource": {
     "App": "{{appName}}",
@@ -2118,8 +2132,8 @@
       "Automation": "Awtomatiko",
       "Configuration": "Pagsasaayos",
       "General": "Pangkalahatan",
-      "Legal": "Legal",
-      "RecordingStorage": "Storage ng Recordings"
+      "RecordingStorage": "Storage ng Recordings",
+      "Legal": "Legal"
     },
     "Item": {
       "AutoRecording": "Awtomatikong pagre-record",
@@ -2134,9 +2148,9 @@
     "MicGain": {
       "Loud": "Malakas (5x)",
       "Louder": "Mas malakas (10x)",
-      "Minimal": "Minimal (0.1x)",
       "Normal": "Normal (1×)",
-      "Quiet": "Tahimik (0.5x)"
+      "Quiet": "Tahimik (0.5x)",
+      "Minimal": "Minimal (0.1x)"
     },
     "OpenFolder": "Buksan ang Folder",
     "PageTitle": {
@@ -2173,7 +2187,6 @@
       "CyberCobaltDesc": "Madilim na mode sa neon cyan",
       "Dark": "Madilim",
       "DarkDesc": "Madilim na mode",
-      "Device": "Device",
       "DeviceDesc": "Sundin ang mga setting ng sistema",
       "Light": "Liwanag",
       "LightDesc": "Liwanag na mode",
@@ -2186,7 +2199,8 @@
       "SynthwaveLight": "Synthwave Maliwanag",
       "SynthwaveLightDesc": "Maliwanag na mode na synthwave",
       "WarmPaper": "Mainit na Papel",
-      "WarmPaperDesc": "Maliwanag na mode sa tono ng mainit na papel"
+      "WarmPaperDesc": "Maliwanag na mode sa tono ng mainit na papel",
+      "Device": "Device"
     },
     "Title": "Mga setting",
     "UserAvatarAlt": "gumagamit"
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Kasalukuyang nagre-record dito",
     "OrphanTooltip": "Ang file na ito ay natanggal mula sa disk",
     "ScrollLeft": "Mag-scroll ng mga tab pakaliwa",
-    "ScrollRight": "Mag-scroll ng mga tab pakanan"
+    "ScrollRight": "Mag-scroll ng mga tab pakanan",
+    "Close": "Isara",
+    "CloseAll": "Isara Lahat",
+    "CloseOthers": "Isara ang Iba",
+    "CloseRight": "Isara sa Kanan",
+    "CloseSaved": "Isara ang Na-save",
+    "CopyFullPath": "Kopyahin ang Buong Landas",
+    "CopyRelativePath": "Kopyahin ang Relatibong Landas",
+    "SplitAndMove": "Hatiin at Ilipat",
+    "SplitRight": "Hatiin sa Kanan"
   },
   "TakeScreenshot": "Kumuha ng Screenshot",
   "TakeScreenshotDesc": "Kumuha ng rehiyon ng screen",
@@ -2234,12 +2257,12 @@
     "OpenNavigationMenu": "Buksan ang navigation menu",
     "Record": "Itala",
     "Recording": "Pagre-record",
-    "Screenshot": "Screenshot",
     "GroupCapture": "Kunan",
     "GroupKnowledge": "Kaalaman",
     "Notes": "Mga tala",
     "Wiki": "Wiki",
-    "GroupTools": "Mga kasangkapan"
+    "GroupTools": "Mga kasangkapan",
+    "Screenshot": "Screenshot"
   },
   "Tray": {
     "MinimizedHint": "Ang SeaMeet ay naka-run pa rin sa system tray (ibabang-kanan).",
@@ -2254,8 +2277,8 @@
     "Both": "Pareho (Pinagsama)",
     "File": "file",
     "Microphone": "mikropono",
-    "Audio": "Audio",
     "System": "Sistema na output ng audio",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {
@@ -2292,7 +2315,6 @@
     "DisplayName": "Gumagamit",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Lumabas",
-    "Workspace": "Workspace",
     "WorkspaceLoading": "Nilo-load ang mga workspace...",
     "WorkspaceNone": "Walang available na workspace",
     "WorkspaceError": "Nabigong i-load ang mga workspace",
@@ -2323,7 +2345,8 @@
     "SignIn": "Mag-sign in",
     "SignOut": "Mag-sign out",
     "Workspaces": "Mga Workspace",
-    "RefreshWorkspaces": "I-refresh ang Mga Workspace"
+    "RefreshWorkspaces": "I-refresh ang Mga Workspace",
+    "Workspace": "Workspace"
   },
   "VideoSettings": {
     "AudioSettings": "Mga setting ng audio",
@@ -2419,7 +2442,6 @@
       "BuildingExtracting": "Nabasa ang {{current}} sa {{total}} tala",
       "BuildingReducing": "Nabuo ang {{built}} sa {{total}} pahina",
       "Building": "Bumubuo ng wiki — {{stage}}",
-      "PausedFor": "rate limit: {{seconds}}s",
       "Cancel": "Kanselahin",
       "Cancelling": "Kinakansela — natatapos ang kasalukuyang tala…",
       "Pause": "I-pause",
@@ -2436,6 +2458,7 @@
       "PolishIndexHint": "Magdagdag ng pasalaysay na panimula sa indeks ng wiki",
       "BuildFromFolderPrompt": "Path ng folder (kaugnay sa workspace):",
       "BuildFromSelectionPrompt": "Comma-separated na filename ng tala (kaugnay sa notes/):",
+"PausedFor": "rate limit: {{seconds}}s",
       "BuildingExtractingWithCache": "Nabasa ang {{current}} sa {{total}} tala · {{skipCount}} muling ginamit mula sa cache",
       "BuildingReducingWithFailures": "Nabuo ang {{built}} sa {{total}} pahina · {{failed}} nabigo"
     },
@@ -2460,7 +2483,6 @@
     "NewFolder": "Bagong folder",
     "NewFolderPlaceholder": "Pangalan ng folder…",
     "SortBy": "Pag-uri-uriin ayon sa",
-    "SortDefault": "Default (filesystem order)",
     "SortName": "Pangalan (A → Z)",
     "SortModified": "Binago (pinakabago muna)",
     "CollapseAll": "I-collapse lahat",
@@ -2483,11 +2505,12 @@
     "SetDefaultTopic": "Itakda bilang default para sa mga bagong topic page",
     "SetDefaultMeeting": "Itakda bilang default para sa mga bagong meeting page",
     "DefaultLabel": "Default para sa {{wikiKind}}",
-    "AIBadge": "AI-generated",
     "UserBadge": "In-edit ng user",
     "QuickOpen": "Quick open (⌘P)",
     "ConflictBadge": "Magkasalungat na kopya",
-    "EmptyAiCurated": "Pinupunan ng AI ang folder na ito kapag ang iyong mga recording o tala ay bumanggit ng entity, tao, paksa, o pulong. Magbukas ng tala at i-click ang Sync Wiki upang bumuo ng mga page."
+    "EmptyAiCurated": "Pinupunan ng AI ang folder na ito kapag ang iyong mga recording o tala ay bumanggit ng entity, tao, paksa, o pulong. Magbukas ng tala at i-click ang Sync Wiki upang bumuo ng mga page.",
+    "AIBadge": "AI-generated",
+    "SortDefault": "Default (filesystem order)"
   },
   "Wikilink": {
     "Broken": "Wala sa workspace na ito ang [[{{name}}]]",

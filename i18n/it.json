@@ -304,8 +304,8 @@
         "description": "Decisioni, azioni, discussione"
       },
       "brainstorm": {
-        "name": "Brainstorm",
-        "description": "Idee, fili, domande aperte"
+        "description": "Idee, fili, domande aperte",
+        "name": "Brainstorm"
       },
       "lecture": {
         "name": "Conferenza / talk",
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Trascrizione in diretta",
     "ToggleLiveTranscription": "Attiva/disattiva la trascrizione in tempo reale",
     "RecordingInProgress": "Registrazione in corso…",
-    "OpenBoundNote": "Apri la nota a cui è allegata questa registrazione"
+    "OpenBoundNote": "Apri la nota a cui è allegata questa registrazione",
+    "NoteBindingLabel": "Allega a"
   },
   "FileImport": {
     "BrowseFiles": "Sfoglia File",
@@ -1075,24 +1076,23 @@
     "StatusCharging": "Caricamento {{percent}}%…",
     "StatusReady": "Pronto — ultimi {{seconds}}s di {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "schermo"
+      "screen": "schermo",
+      "audio": "audio"
     },
     "ModeLabel": "Cosa memorizzare",
     "ModeOff": "Spento",
-    "ModeAudio": "Audio",
     "ModeScreen": "Schermo",
     "WindowLabel": "Lunghezza buffer",
     "PrimaryRecord": "Registra con preambolo di {{seconds}}s",
     "PrimarySave": "Salva gli ultimi {{seconds}}s",
     "AdvancedSettings": "Impostazioni avanzate →",
-    "LearnMore": "Scopri di più"
+    "LearnMore": "Scopri di più",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "Gli ultimi {{seconds}}s sono memorizzati solo in RAM. Tocca Salva o il pulsante di registrazione per usarli."
   },
   "FlashbackHeroUI": {
-    "Audio": "audio",
     "Buffering": "Bufferizzazione",
     "BufferingMoment": "Momento di buffering...",
     "Capturing": "Catturare...",
@@ -1128,15 +1128,16 @@
     "SavingFlashback": "Salvataggio flashback…",
     "Screen": "OK",
     "StartRecording": "Avvia registrazione",
-    "TakeScreenshot": "Cattura screenshot"
+    "TakeScreenshot": "Cattura screenshot",
+    "Audio": "audio"
   },
   "FlashbackIndicator": {
     "Buffering": "Bufferizzazione",
     "BufferingVideo": "Bufferizzazione video",
     "Disabled": "Flashback disattivato",
     "Ready": "Pronto",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video pronto"
+    "VideoReady": "Video pronto",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Audio di sistema: attivato",
     "WaitingForRegion": "In attesa della regione…",
     "WindowNotAvailable": "La selezione finestra non è disponibile su questa piattaforma.",
-    "WindowRequired": "Seleziona una finestra prima di avviare la registrazione"
+    "WindowRequired": "Seleziona una finestra prima di avviare la registrazione",
+    "AttachTo": "Allega a"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Fai clic su Avvia registrazione nella barra flottante per registrare la regione selezionata",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Mostra nella cartella",
       "CopyEmbed": "Copia la sintassi di incorporamento",
       "RerunAi": "Esegui di nuovo l'IA",
-      "Detach": "Stacca dalla nota"
+      "Detach": "Stacca dalla nota",
+      "OpenMedia": "Apri media"
     },
     "AudioFallback": "Il tuo browser non supporta la riproduzione audio.",
     "WaitingForPipeline": "In attesa che termini l'elaborazione IA…",
@@ -1441,7 +1444,10 @@
       "gathering": "Raccolta…",
       "reducing": "Affinamento…",
       "writing": "Scrittura…"
-    }
+    },
+    "Copied": "Copiato",
+    "CopyTab": "Copia",
+    "Unassigned": "Non assegnato"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elementi di azione",
@@ -1535,6 +1541,11 @@
     "ScreenFlashbackCharging": "caricamento del flashback dello schermo in corso...",
     "ScreenRecording": "registrazione dello schermo ({{time}})"
   },
+  "NoteBinding": {
+    "New": "Nuova nota",
+    "LastNote": "Nota attuale (ultima)",
+    "None": "Non allegare"
+  },
   "NoteEditor": {
     "Placeholder": "Inizia a digitare o incolla dagli appunti…",
     "Saving": "Salvataggio…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Nessun titolo ancora",
     "TocTitle": "Sommario",
     "ToggleToc": "Indice",
-    "Words": "parole"
+    "Words": "parole",
+    "ScrollLeft": "Scorri la barra degli strumenti a sinistra",
+    "ScrollRight": "Scorri la barra degli strumenti a destra"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Fluttuante",
     "AutoDetectLabel": "Rilevamento auto",
     "FlashbackLabel": "Flashback",
-    "RecentRecordings": "Registrazioni recenti"
+    "RecentRecordings": "Registrazioni recenti",
+    "NoteBindingLabel": "Allega a"
   },
   "Recording": {
     "Paused": "In pausa",
@@ -1853,14 +1867,14 @@
     "CaptureMode": "Modalità di cattura",
     "FullScreen": "Modalità schermo intero",
     "WindowCapture": "Finestra",
-    "RecordAudio": "Audio",
     "RecordAudioTip": "Solo audio",
     "RecordFullscreen": "Schermo intero",
     "RecordFullscreenTip": "Cattura l'intero schermo",
     "RecordRegion": "Regione",
     "RecordRegionTip": "Cattura una regione personalizzata",
     "RecordWindow": "Finestra",
-    "RecordWindowTip": "Cattura una singola finestra app"
+    "RecordWindowTip": "Cattura una singola finestra app",
+    "RecordAudio": "Audio"
   },
   "RecordingSource": {
     "App": "{{appName}}",
@@ -1907,14 +1921,14 @@
     "PresetFreeform": "Forma libera",
     "Preset1619": "16:9 Orizzontale",
     "Preset43": "4:3 Orizzontale",
-    "Preset2119": "21:9 Ultrawide",
     "Preset916": "9:16 Verticale",
     "Preset34": "3:4 verticale",
     "Preset11": "Quadrato 1:1",
     "ShortcutCancel": "cancellare",
     "ShortcutCapture": "catturare",
     "ShortcutConfirm": "confermare",
-    "AspectRatio": "Proporzioni"
+    "AspectRatio": "Proporzioni",
+    "Preset2119": "21:9 Ultrawide"
   },
   "Resume": "Riprendere",
   "RingMenu": {
@@ -2123,13 +2137,13 @@
     },
     "Item": {
       "AutoRecording": "Registrazione automatica",
-      "Copyright": "Copyright",
       "ImproveTranslationHint": "Aiutaci a migliorare questa traduzione su GitHub →",
       "Language": "Lingua",
       "MicrophoneGain": "Guadagno microfono",
       "StartAtLogin": "Avvio automatico all'accesso",
       "Storage": "Archiviazione",
-      "Theme": "Tema"
+      "Theme": "Tema",
+      "Copyright": "Copyright"
     },
     "MicGain": {
       "Loud": "Alto (5x)",
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Registrazione in corso qui",
     "OrphanTooltip": "Questo file è stato eliminato dal disco",
     "ScrollLeft": "Scorri le schede a sinistra",
-    "ScrollRight": "Scorri le schede a destra"
+    "ScrollRight": "Scorri le schede a destra",
+    "Close": "Chiudi",
+    "CloseAll": "Chiudi tutto",
+    "CloseOthers": "Chiudi altri",
+    "CloseRight": "Chiudi a destra",
+    "CloseSaved": "Chiudi salvati",
+    "CopyFullPath": "Copia percorso completo",
+    "CopyRelativePath": "Copia percorso relativo",
+    "SplitAndMove": "Dividi e sposta",
+    "SplitRight": "Dividi a destra"
   },
   "TakeScreenshot": "Acquisisci schermata",
   "TakeScreenshotDesc": "Cattura una regione dello schermo",
@@ -2254,8 +2277,8 @@
     "Both": "Entrambi (misto)",
     "File": "File",
     "Microphone": "Microfono",
-    "Audio": "Audio",
     "System": "Uscita audio di sistema",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {

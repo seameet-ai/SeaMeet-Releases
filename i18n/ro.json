@@ -304,8 +304,8 @@
         "description": "Decizii, acțiuni, discuție"
       },
       "brainstorm": {
-        "name": "Brainstorm",
-        "description": "Idei, fire, întrebări deschise"
+        "description": "Idei, fire, întrebări deschise",
+        "name": "Brainstorm"
       },
       "lecture": {
         "name": "Prelegere / discurs",
@@ -320,8 +320,8 @@
         "description": "Descoperire, obiecții, pași următori, decidenți"
       },
       "standup": {
-        "name": "Standup / status",
-        "description": "Actualizări per persoană, blocaje, următor"
+        "description": "Actualizări per persoană, blocaje, următor",
+        "name": "Standup / stare"
       }
     },
     "RegenerateTooltip": "Regenerează cu același șablon",
@@ -345,7 +345,6 @@
       "Title": "Întrebare",
       "TypeResponse": "Introduceți răspunsul dvs...."
     },
-    "AssetContext": "Context: {{name}}",
     "CommandHelp": "Comenzi: /new · /clear · /cost · /help",
     "GlobalTitle": "Agent AI",
     "GoToSettings": "Deschide Setări",
@@ -435,6 +434,7 @@
       "Completed": "{{count}} finalizat",
       "Actions": "{{count}} acțiuni"
     },
+"AssetContext": "Context: {{name}}",
     "SwitchModel": "Schimbă modelul"
   },
   "AgentSection": {
@@ -1021,7 +1021,8 @@
     "LiveTranscription": "Transcriere în direct",
     "ToggleLiveTranscription": "Comută transcrierea în timp real",
     "RecordingInProgress": "Înregistrare în curs…",
-    "OpenBoundNote": "Deschide nota la care este atașată această înregistrare"
+    "OpenBoundNote": "Deschide nota la care este atașată această înregistrare",
+    "NoteBindingLabel": "Atașează la"
   },
   "FileImport": {
     "BrowseFiles": "Explorează fișiere",
@@ -1075,25 +1076,24 @@
     "StatusCharging": "Încarcă {{percent}}%…",
     "StatusReady": "Gata — ultimele {{seconds}}s de {{type}}.",
     "Types": {
-      "audio": "audio",
-      "screen": "ecran"
+      "screen": "ecran",
+      "audio": "audio"
     },
     "ModeLabel": "Ce să memoreze",
     "ModeOff": "Oprit",
-    "ModeAudio": "Audio",
     "ModeScreen": "Ecran",
     "WindowLabel": "Lungimea ferestrei",
     "PrimaryRecord": "Înregistrează cu preambul de {{seconds}}s",
     "PrimarySave": "Salvează ultimele {{seconds}}s",
     "AdvancedSettings": "Setări avansate →",
-    "LearnMore": "Află mai mult"
+    "LearnMore": "Află mai mult",
+    "ModeAudio": "Audio"
   },
   "FlashbackFirstArm": {
     "Tooltip": "Ultimele {{seconds}}s sunt memorate doar în RAM. Atinge Salvează sau butonul de înregistrare ca să le folosești."
   },
   "FlashbackHeroUI": {
     "Audio": "Audio",
-    "Buffering": "Buffering",
     "BufferingMoment": "Bufferizare Moment...",
     "Capturing": "Înregistrare în curs...",
     "DescCharging": "Pregătești fereastra de {{duration}} secunde... aproape gata să prinzi ceea ce poți pierde. {{progress}}% complet.",
@@ -1128,15 +1128,16 @@
     "SavingFlashback": "Salvare retrogradă…",
     "Screen": "Ecran",
     "StartRecording": "Pornește înregistrarea",
-    "TakeScreenshot": "Fă Screenshot"
+    "TakeScreenshot": "Fă Screenshot",
+    "Buffering": "Încărcare"
   },
   "FlashbackIndicator": {
     "Buffering": "În tamponare",
     "BufferingVideo": "În tamponare video",
     "Disabled": "Retrogradă dezactivată",
     "Ready": "Gata",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video pregătit"
+    "VideoReady": "Video pregătit",
+    "VideoPrefix": "Video "
   },
   "FlashbackInfoModal": {
     "Benefits": {
@@ -1302,7 +1303,8 @@
     "SystemAudioOn": "Audio Sistem: ACTIVAT",
     "WaitingForRegion": "Se așteaptă regiunea…",
     "WindowNotAvailable": "Selecția ferestrei nu este disponibilă pe această platformă.",
-    "WindowRequired": "Selectați o fereastră înainte de înregistrare"
+    "WindowRequired": "Selectați o fereastră înainte de înregistrare",
+    "AttachTo": "Atașează la"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "Atingeți Start înregistrare în bara flotantă pentru a începe înregistrarea regiunii selectate",
@@ -1422,7 +1424,8 @@
       "ShowInFolder": "Afișează în folder",
       "CopyEmbed": "Copiază sintaxa de încorporare",
       "RerunAi": "Rulează AI din nou",
-      "Detach": "Detașează de notiță"
+      "Detach": "Detașează de notiță",
+      "OpenMedia": "Deschide media"
     },
     "AudioFallback": "Browserul tău nu acceptă redarea audio.",
     "WaitingForPipeline": "Se așteaptă finalizarea procesării AI…",
@@ -1441,7 +1444,10 @@
       "gathering": "Se colectează…",
       "reducing": "Se rafinează…",
       "writing": "Se scrie…"
-    }
+    },
+    "Copied": "Copiat",
+    "CopyTab": "Copiază",
+    "Unassigned": "Nealocat"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elemente de acțiune",
@@ -1522,8 +1528,8 @@
     "Retry": "Reîncearcă",
     "SelectWorkspace": "Selectați un spațiu de lucru din meniul utilizatorului pentru a vedea întâlnirile.",
     "Title": "Întâlniri",
-    "Total": "total",
-    "Untitled": "Întâlnire fără titlu"
+    "Untitled": "Întâlnire fără titlu",
+    "Total": "total"
   },
   "MinimizedView": {
     "ActionRequired": "Acțiune necesară (Auto-Record)",
@@ -1534,6 +1540,11 @@
     "ScreenFlashbackCharged": "Retrogradă ecran încărcată ({{duration}}s)",
     "ScreenFlashbackCharging": "Încărcare retrogradă ecran...",
     "ScreenRecording": "Înregistrare ecran ({{time}})"
+  },
+  "NoteBinding": {
+    "New": "Notă nouă",
+    "LastNote": "Nota curentă (ultima)",
+    "None": "Nu atașa"
   },
   "NoteEditor": {
     "Placeholder": "Începe să tastezi sau lipește din clipboard…",
@@ -1598,7 +1609,9 @@
     "TocEmpty": "Nicio secțiune încă",
     "TocTitle": "Schita",
     "ToggleToc": "Cuprins",
-    "Words": "cuvinte"
+    "Words": "cuvinte",
+    "ScrollLeft": "Derulează bara de instrumente spre stânga",
+    "ScrollRight": "Derulează bara de instrumente spre dreapta"
   },
   "Notes": {
     "Toast": {
@@ -1823,7 +1836,8 @@
     "FloaterPill": "Plutitor",
     "AutoDetectLabel": "Auto-detectare",
     "FlashbackLabel": "Flashback",
-    "RecentRecordings": "Înregistrări recente"
+    "RecentRecordings": "Înregistrări recente",
+    "NoteBindingLabel": "Atașează la"
   },
   "Recording": {
     "Paused": "Întrerupt",
@@ -1907,14 +1921,14 @@
     "PresetFreeform": "Formă liberă",
     "Preset1619": "16:9 orizontal",
     "Preset43": "4:3 orizontal",
-    "Preset2119": "21:9 Ultrawide",
     "Preset916": "9:16 pe verticală",
     "Preset34": "3:4 pe verticală",
     "Preset11": "1:1 pătrat",
     "ShortcutCancel": "anula",
     "ShortcutCapture": "capta",
     "ShortcutConfirm": "confirma",
-    "AspectRatio": "Raportul de aspect"
+    "AspectRatio": "Raportul de aspect",
+    "Preset2119": "21:9 Ultrawide"
   },
   "Resume": "Relua",
   "RingMenu": {
@@ -2117,9 +2131,9 @@
       "ApplicationInfo": "Informații despre aplicație",
       "Automation": "Automatizare",
       "Configuration": "Configurare",
+      "RecordingStorage": "Stocare înregistrări",
       "General": "General",
-      "Legal": "Legal",
-      "RecordingStorage": "Stocare înregistrări"
+      "Legal": "Legal"
     },
     "Item": {
       "AutoRecording": "Înregistrare automată",
@@ -2215,7 +2229,16 @@
     "RecordingHere": "Înregistrare în curs aici",
     "OrphanTooltip": "Acest fișier a fost șters de pe disc",
     "ScrollLeft": "Derulează filele la stânga",
-    "ScrollRight": "Derulează filele la dreapta"
+    "ScrollRight": "Derulează filele la dreapta",
+    "Close": "Închide",
+    "CloseAll": "Închide tot",
+    "CloseOthers": "Închide altele",
+    "CloseRight": "Închide la dreapta",
+    "CloseSaved": "Închide salvatele",
+    "CopyFullPath": "Copiază calea completă",
+    "CopyRelativePath": "Copiază calea relativă",
+    "SplitAndMove": "Împarte și mută",
+    "SplitRight": "Împarte la dreapta"
   },
   "TakeScreenshot": "Faceți o captură de ecran",
   "TakeScreenshotDesc": "Capturați o regiune a ecranului",
@@ -2254,8 +2277,8 @@
     "Both": "Ambele (Mix)",
     "File": "Fișier",
     "Microphone": "Microfon",
-    "Audio": "Audio",
     "System": "Ieșire audio de sistem",
+    "Audio": "Audio",
     "Video": "Video"
   },
   "UndoRename": {
@@ -2351,7 +2374,6 @@
     "QualityHigh": "Ridicat",
     "QualityLow": "Scăzut",
     "QualityMedium": "Medie",
-    "QualityOriginal": "Original",
     "Record": "Înregistrare",
     "RecordModeTitle": "Vrei să înregistrezi audio sau video?",
     "RecordWithFlashback": "Înregistrează cu retrogradă",
@@ -2366,7 +2388,8 @@
     "Title": "Setări de înregistrare",
     "VideoFlashbackArmedNotice": "Retrogradă de ecran activată ({{seconds}}s)",
     "VideoQuality": "Calitate video",
-    "ZeroSize": "~0 MB/min, ~0 GB/oră"
+    "ZeroSize": "~0 MB/min, ~0 GB/oră",
+    "QualityOriginal": "Original"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Regiune personalizată: {{width}} × {{height}} pixeli",
