@@ -1680,7 +1680,12 @@
     "CopyRelativePath": "Copy relative path",
     "CopyFullPath": "Copy full path",
     "UpdateWikiFromNote": "Update wiki from this note",
-    "WikiUpdateFailed": "Wiki update failed: {{error}}"
+    "WikiUpdateFailed": "Wiki update failed: {{error}}",
+    "GitSyncing": "Syncing to GitHub…",
+    "GitPending": "Unpushed changes",
+    "GitSynced": "Pushed to GitHub",
+    "CloudPending": "Not downloaded",
+    "GitUnsynced": "Not yet committed"
   },
   "NotesShowcase": {
     "Headline": "Notes that grow into a knowledge base",
@@ -2542,7 +2547,11 @@
     "UserBadge": "User-edited",
     "QuickOpen": "Quick open  (⌘P)",
     "ConflictBadge": "Conflicted copy",
-    "EmptyAiCurated": "AI populates this folder when your recordings or notes mention an entity, person, topic, or meeting. Open a note and click Sync Wiki to generate pages."
+    "EmptyAiCurated": "AI populates this folder when your recordings or notes mention an entity, person, topic, or meeting. Open a note and click Sync Wiki to generate pages.",
+    "GitSyncing": "Syncing to GitHub…",
+    "GitPending": "Unpushed changes",
+    "GitSynced": "Pushed to GitHub",
+    "CloudPending": "Not downloaded"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] is not in this workspace",
@@ -2570,7 +2579,8 @@
     "Remove": "Remove from SeaMeet",
     "RemoveTooltip": "Remove from SeaMeet (files stay on disk)",
     "ConfirmRemove": "Remove workspace \"{{name}}\"? Files on disk are not deleted; only the SeaMeet entry is removed.",
-    "Default": "Default"
+    "Default": "Default",
+    "SyncSettings": "Sync settings"
   },
   "agent": {
     "fabLabel": "Ask AI Agent",
@@ -2860,5 +2870,126 @@
       "visionUnsupportedBadge": "OCR via Gemini fallback",
       "visionUnsupportedTooltip": "This provider's adapter doesn't yet support image input. Screenshot OCR will fall back to Gemini."
     }
+  },
+  "Sync": {
+    "Scope": {
+      "Notice": "Sync applies to notes and wiki only. Audio recordings, video recordings, and screenshots are not synced."
+    },
+    "Git": {
+      "AutoCommit": "Auto-sync",
+      "Interval": "Sync interval",
+      "Branch": "Branch",
+      "LastCommit": "Last synced",
+      "CommitNow": "Sync Now",
+      "ConnectGitHub": "Connect to GitHub",
+      "Connect": "Connect",
+      "Connected": "Connected",
+      "LastSync": "Last sync",
+      "ConnectGitHubDesc": "Enable cloud backup and cross-device sync",
+      "ConnectedTitle": "Sync & Backup",
+      "ConnectedDesc": "Your notes and wiki are automatically synced to GitHub. Audio recordings, video recordings, and screenshots are not synced."
+    },
+    "GitAutoCommit": {
+      "Title": "Auto-Sync",
+      "Desc": "Changes to notes and wiki are automatically synced."
+    },
+    "Conflict": {
+      "Title": "Sync Conflict",
+      "Desc": "\"{{fileName}}\" was changed on another device.",
+      "KeepThis": "Keep local version",
+      "KeepOther": "Keep remote version",
+      "AgentResolve": "Agent merge",
+      "ManualResolve": "Edit manually",
+      "Resolve": "Resolve",
+      "Resolving": "Resolving...",
+      "Agent": {
+        "NoVersions": "Could not read file versions",
+        "Empty": "Agent returned empty result",
+        "WriteFailed": "Failed to write merged content",
+        "Resolving": "Agent is merging...",
+        "TooLarge": "File is too large for AI merge. Please resolve manually."
+      },
+      "Manual": {
+        "Desc": "The file has been opened in your editor. Edit the conflict markers, save, then click Done.",
+        "Done": "Done",
+        "Open": "Open in editor",
+        "ReadError": "Could not read file. Please make sure it is saved.",
+        "NoChange": "No changes detected. Please edit the file before confirming.",
+        "MarkersRemain": "Conflict markers still detected (<<<<<<<, =======, >>>>>>>). Please resolve all conflicts before confirming."
+      },
+      "Finishing": "Finishing sync..."
+    },
+    "EmptyState": "Set up cloud backup to automatically sync your notes and wiki across devices.",
+    "Setup": {
+      "Button": "Set Up Cloud Backup"
+    },
+    "Status": {
+      "Committing": "Syncing changes...",
+      "Pushing": "Pushing to GitHub..."
+    },
+    "GitHub": {
+      "Authorize": "Authorize GitHub",
+      "AutoSync": "Auto-sync on changes",
+      "SyncOnStartup": "Sync on startup",
+      "ViewOnGitHub": "View on GitHub",
+      "Disconnect": "Disconnect",
+      "Title": "Cloud Backup",
+      "Desc": "Back up your notes and wiki automatically to a private GitHub repository.",
+      "UserCode": "Enter code:",
+      "Waiting": {
+        "Desc": "A browser window has opened. Please enter the code below at github.com/login/device."
+      },
+      "Setup": {
+        "Authorize": "Authorized",
+        "CreateRepo": "Creating repository & uploading...",
+        "Retry": "Retry",
+        "FailedCreate": "Failed to create repository",
+        "FailedAuth": "Failed to start authorization",
+        "Installing": "Installing GitHub App...",
+        "OpenInstallPage": "Open install page"
+      },
+      "Benefit": {
+        "Private": "Private & secure",
+        "AutoSync": "Auto-sync on every change",
+        "AnyDevice": "Access from any device",
+        "History": "Full version history"
+      },
+      "Connected": "Connected",
+      "Install": {
+        "Title": "Install SeaMeet App",
+        "Desc": "Install the app on your GitHub account to enable cloud backup.",
+        "Button": "Install on GitHub"
+      },
+      "WebFlow": {
+        "Waiting": {
+          "Desc": "A browser window has opened. Please authorize SeaMeet to access your GitHub account.",
+          "Label": "Waiting for authorization..."
+        },
+        "AlreadyInstalled": "Already installed the app? Click here to re-authorize"
+      }
+    },
+    "TimeAgo": {
+      "JustNow": "Just now",
+      "MinutesAgo": "{{count}}m ago",
+      "HoursAgo": "{{count}}h ago",
+      "DaysAgo": "{{count}}d ago"
+    },
+    "GroupTitle": "Sync",
+    "MenuItem": "Sync & Backup",
+    "PageTitle": "Sync & Backup"
+  },
+  "SyncStatusBar": {
+    "Subscribe": "Subscribe to enable sync",
+    "CloudDrive": "Synced via {{provider}}",
+    "SetUpGithub": "Set up GitHub sync",
+    "Syncing": "Syncing...",
+    "Pushing": "Pushing...",
+    "Pulling": "Pulling...",
+    "Pending": "Pending...",
+    "Conflict": "Sync conflict",
+    "Error": "Sync error",
+    "Offline": "Offline",
+    "TokenExpired": "Re-authorize",
+    "Synced": "Synced · {{time}}"
   }
 }
