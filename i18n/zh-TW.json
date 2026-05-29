@@ -1214,7 +1214,8 @@
       "ActivityFlushRequiresManualVad": "週期性刷新僅在自動 VAD 關閉時生效 — 自動 VAD 啟用時伺服器會拒絕顯式活動控制。保留此開關啟用並在下方關閉自動 VAD。",
       "Reset": "全部重設為預設值"
     },
-    "SegmentCount": "{{count}} 段"
+    "SegmentCount": "{{count}} 段",
+    "Tokens": "{{count}} tok"
   },
   "GeminiTranscription": {
     "Title": "即時轉錄"
@@ -1339,7 +1340,34 @@
     "Summary": "摘要",
     "Untitled": "未命名會議",
     "WsConnected": "WebSocket 已連線",
-    "WsDisconnected": "WebSocket 已斷線"
+    "WsDisconnected": "WebSocket 已斷線",
+    "NotSyncedWithSeaMeet": "This recording is not synced with SeaMeet.",
+    "FetchFailedTitle": "Couldn't load this meeting",
+    "Loading": "Loading your meeting…",
+    "LoadingDetail": "Finishing the upload and summary on SeaMeet.",
+    "summary": {
+      "processing": "Summary processing…",
+      "tldr": "TL;DR",
+      "key_points": "Key points",
+      "participants": "Participants"
+    },
+    "LoadingTranscriptions": "Loading transcriptions…",
+    "NoTranscriptions": "No transcriptions available for this meeting.",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "RenameMeeting": "Rename meeting",
+    "SaveTitle": "Save",
+    "CancelTitleEdit": "Cancel",
+    "view_on_seameet": "View on SeaMeet",
+    "tabs": {
+      "summary": "Summary",
+      "transcript": "Transcript"
+    },
+    "copied": "Copied!",
+    "copy_summary": "Copy summary",
+    "copy_transcript": "Copy transcript",
+    "participants_count_one": "1 位參與者",
+    "participants_count_other": "{{count}} 位參與者"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 小提示：對於瀏覽器會議（Google Meet、Zoom、Teams），我只能偵測瀏覽器，無法辨識具體網站。",
@@ -1371,7 +1399,10 @@
     "SelectWorkspace": "請從使用者選單選擇工作區以查看會議。",
     "Title": "會議",
     "Total": "共",
-    "Untitled": "未命名會議"
+    "Untitled": "未命名會議",
+    "matched_transcript": "Transcript",
+    "matched_summary": "Summary",
+    "Searching": "Searching for \"${debouncedQuery}\"…"
   },
   "MinimizedView": {
     "ActionRequired": "需要您的協助（自動錄音）",
@@ -1586,7 +1617,21 @@
     "GuidanceAsk": "：SeaMeet 會在每次需要時請求您的錄音權限",
     "GuidanceNever": ": SeaMeet 不會提示錄音",
     "GuidanceTitle": "應用程式權限類型",
-    "NeverRecord": "不錄音"
+    "NeverRecord": "不錄音",
+    "Granted": "Granted",
+    "OpenSettings": "Open Settings",
+    "Grant": "Grant",
+    "Headline": "Set up SeaMeet",
+    "Subhead": "SeaMeet needs a couple of macOS permissions before it can record meetings. Grant each below — we’ll detect the change automatically.",
+    "Microphone": {
+      "Title": "Microphone",
+      "Description": "Lets SeaMeet capture your voice during meetings. Without this we can’t record what you say."
+    },
+    "ScreenRecording": {
+      "Title": "Screen & System Audio Recording",
+      "Description": "Lets SeaMeet capture the other participants’ voices via macOS ScreenCaptureKit. Required for the meeting transcript to include both sides of the conversation."
+    },
+    "Done": "Done"
   },
   "PipelineStatus": {
     "Chunks": "{{done}}/{{total}} 片段",
@@ -1611,7 +1656,8 @@
       "ExtractingAudio": "正在擷取音訊",
       "Transcribing": "正在轉寫",
       "TranscribingWith": "正在使用 {{provider}} 轉寫"
-    }
+    },
+    "Tokens": "{{count}} tok"
   },
   "Player": {
     "Mute": "靜音",
@@ -3005,5 +3051,93 @@
     "Synced": "已同步 · {{time}}",
     "TokenExpired": "重新授權",
     "Syncing": "同步中..."
+  },
+  "Library": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "days_ago": "${days} days ago",
+    "upcoming": "Upcoming",
+    "search": "Search",
+    "headline": "${weekCount} meeting${weekCount === 1 ? '' : 's'},",
+    "headline_tail": "this week",
+    "record": "Record",
+    "no_match": "No meetings match \"${query}\".",
+    "empty": {
+      "headline_head": "Capture your first",
+      "headline_tail": "meeting",
+      "subhead": "Hit record any time, or let SeaMeet auto-detect when Zoom, Meet, or Teams begins."
+    },
+    "setup_autodetect": "Set up auto-detect",
+    "quick_start": "Quick start"
+  },
+  "Pagination": {
+    "Previous": "Previous page",
+    "Next": "Next page"
+  },
+  "AutoDetectToast": {
+    "recording_app": "Recording ${source.name} meeting",
+    "auto_started": "Auto-started · undo to cancel",
+    "using_mic": "${source.name} is using your mic",
+    "prompt": "Want SeaMeet to record this?",
+    "undo": "Undo",
+    "no": "No",
+    "record": "Record"
+  },
+  "RecordingView": {
+    "paused": "Paused",
+    "recording": "Recording",
+    "resume": "Resume",
+    "pause": "Pause",
+    "saving": "Saving…",
+    "stop_save": "Stop & save",
+    "live_transcript": "Live transcript"
+  },
+  "WorkspacePicker": {
+    "loading": "Loading…",
+    "empty": "No workspaces",
+    "title": "Workspaces"
+  },
+  "LiteLogin": {
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorOpenBrowser": "Failed to open the sign-in page.",
+    "title": "歡迎使用 SeaMeet",
+    "subtitle": "Sign in to access your meetings, transcripts, and AI summaries.",
+    "openingBrowser": "Opening browser…",
+    "cta": "Continue with seameet.ai",
+    "browserHint": "Complete sign-in in your browser to continue.",
+    "switchToFull": "Switch back to SeaMeet (full)"
+  },
+  "LiteRecording": {
+    "errorTitle": "Couldn't start recording",
+    "errorClose": "Close",
+    "speakerYou": "You",
+    "speakerOthers": "Others"
+  },
+  "SettingsModal": {
+    "microphone_default": "System default",
+    "title": "Settings",
+    "close": "Close",
+    "sign_out": "Sign out",
+    "section": {
+      "recording": "Recording",
+      "transcription": "Transcription",
+      "appearance": "Appearance",
+      "app_mode": "App mode"
+    },
+    "auto_detect": "Auto-detect meetings",
+    "auto_detect_desc": "Automatically start recording when Zoom, Meet, or Teams begins.",
+    "microphone": "Microphone",
+    "microphone_desc": "Default audio input.",
+    "record_system_audio": "Record system audio",
+    "record_system_audio_desc": "Capture the other side of the call.",
+    "transcription_language": "Language",
+    "transcription_language_desc": "Primary spoken language.",
+    "theme": "Theme",
+    "theme_desc": "Pick a light or dark interface.",
+    "app_mode_full": "SeaMeet（完整）",
+    "app_mode_full_desc": "Unlock recordings, AI features, Notes, Wiki, and more.",
+    "app_mode_switch_back": "Switch back",
+    "theme_light": "Light",
+    "theme_dark": "Dark"
   }
 }
