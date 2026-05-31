@@ -291,7 +291,10 @@
     "Version": {
       "Latest": "Latest",
       "Live": "Live"
-    }
+    },
+    "RegenerateWithTemplate": "Regenerate with a template…",
+    "RegenerateFailed": "Summary regenerate failed: {{err}}",
+    "RegenerateFailedGeneric": "Summary regenerate failed"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Updated by AI",
@@ -305,8 +308,8 @@
     "RenameSuggested": "AI suggests \"{{title}}\"",
     "Template": {
       "general": {
-        "name": "General meeting",
-        "description": "Decisions, actions, discussion"
+        "name": "Meeting Minutes",
+        "description": "Topic-by-topic minutes with details, decisions, and actions"
       },
       "brainstorm": {
         "name": "Brainstorm",
@@ -318,21 +321,40 @@
       },
       "oneonone": {
         "name": "1:1 / interview",
-        "description": "Themes, sentiment, follow-ups"
+        "description": "Themes, sentiment, growth, follow-ups"
       },
       "sales": {
-        "name": "Sales call",
+        "name": "Discovery / Needs Assessment",
         "description": "Discovery, objections, next steps, decision-makers"
       },
       "standup": {
         "name": "Standup / status",
         "description": "Per-person updates, blockers, next"
+      },
+      "soap-note": {
+        "name": "SOAP Note",
+        "description": "Subjective, Objective, Assessment, Plan"
+      },
+      "bant-meddic": {
+        "name": "BANT · MEDDIC Qualification",
+        "description": "Qualify the deal across BANT and MEDDIC criteria"
       }
     },
     "RegenerateTooltip": "Regenerate with the same template",
     "RegenerateChooseTemplate": "Regenerate with a different template",
     "Stale": "Stale · refresh",
-    "StaleTooltip": "The note has changed since this summary was generated — click to refresh."
+    "StaleTooltip": "The note has changed since this summary was generated — click to refresh.",
+    "Category": {
+      "team": "Team & Management",
+      "project": "Project & Agile",
+      "sales": "Sales & Client",
+      "hr": "HR & Recruitment",
+      "education": "Education & Training",
+      "medical": "Medical & Healthcare",
+      "legal": "Legal & Compliance",
+      "events": "Events & Media",
+      "other": "Other"
+    }
   },
   "About": {
     "AppStoreBuild": "App Store Build",
@@ -1974,7 +1996,10 @@
     "OutputLanguageHint": "Output language follows Settings → AI Extraction & Summary",
     "Submit": "Regenerate",
     "AutoUpdate": "Auto-update on typing",
-    "AutoUpdateHint": "Re-runs the synthesis after substantial changes to this note (uses your AI quota)."
+    "AutoUpdateHint": "Re-runs the synthesis after substantial changes to this note (uses your AI quota).",
+    "SearchPlaceholder": "Search templates…",
+    "NoResults": "No templates match",
+    "SpecializedBadge": "Specialized"
   },
   "RegionSelector": {
     "CaptureButton": "Capture Screen or Press Enter",

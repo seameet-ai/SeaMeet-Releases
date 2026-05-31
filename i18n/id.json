@@ -126,7 +126,10 @@
     "Version": {
       "Latest": "Terbaru",
       "Live": "Hidup"
-    }
+    },
+    "RegenerateWithTemplate": "Buat ulang dengan templat…",
+    "RegenerateFailed": "Gagal membuat ulang ringkasan: {{err}}",
+    "RegenerateFailedGeneric": "Gagal membuat ulang ringkasan"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Diperbarui oleh AI",
@@ -162,12 +165,31 @@
       "standup": {
         "description": "Update per orang, hambatan, berikutnya",
         "name": "Standup / status"
+      },
+      "soap-note": {
+        "name": "Catatan SOAP",
+        "description": "Subjektif, Objektif, Penilaian, Rencana"
+      },
+      "bant-meddic": {
+        "name": "Kualifikasi BANT · MEDDIC",
+        "description": "Kualifikasi kesepakatan berdasarkan kriteria BANT dan MEDDIC"
       }
     },
     "RegenerateTooltip": "Buat ulang dengan template yang sama",
     "RegenerateChooseTemplate": "Buat ulang dengan template lain",
     "Stale": "Usang · segarkan",
-    "StaleTooltip": "Catatan telah berubah sejak ringkasan ini dibuat — klik untuk menyegarkan."
+    "StaleTooltip": "Catatan telah berubah sejak ringkasan ini dibuat — klik untuk menyegarkan.",
+    "Category": {
+      "team": "Tim & Manajemen",
+      "project": "Proyek & Agile",
+      "sales": "Penjualan & Klien",
+      "hr": "SDM & Rekrutmen",
+      "education": "Pendidikan & Pelatihan",
+      "medical": "Medis & Kesehatan",
+      "legal": "Hukum & Kepatuhan",
+      "events": "Acara & Media",
+      "other": "Lainnya"
+    }
   },
   "About": {
     "AppStoreBuild": "Build App Store",
@@ -1783,7 +1805,10 @@
     "OutputLanguageHint": "Bahasa keluaran mengikuti Pengaturan → Ekstraksi & Ringkasan AI",
     "Submit": "Buat ulang",
     "AutoUpdate": "Perbarui otomatis saat mengetik",
-    "AutoUpdateHint": "Menjalankan ulang sintesis setelah perubahan signifikan pada catatan ini (menggunakan kuota AI Anda)."
+    "AutoUpdateHint": "Menjalankan ulang sintesis setelah perubahan signifikan pada catatan ini (menggunakan kuota AI Anda).",
+    "SearchPlaceholder": "Cari templat…",
+    "NoResults": "Tidak ada templat yang cocok",
+    "SpecializedBadge": "Khusus"
   },
   "RegionSelector": {
     "CaptureButton": "Tangkap Layar atau Tekan Enter",
