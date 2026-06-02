@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "テンプレートで再生成…",
     "RegenerateFailed": "要約の再生成に失敗しました: {{err}}",
     "RegenerateFailedGeneric": "要約の再生成に失敗しました",
-    "AutoDetected": "自動検出: {{tpl}}",
-    "AutoDetectedTooltip": "自動検出されたテンプレート — クリックで変更",
-    "RegenerateBtn": "再生成",
-    "RegenerateWithSuggested": "自動検出したテンプレートで再生成",
-    "RegenerateChoose": "テンプレートを選んで要約を再生成",
-    "MoreOptions": "その他のオプション",
     "SplitMenu": {
       "Label": "要約オプション",
       "ChooseTemplate": "テンプレートを選択…",
-      "ReAnalyze": "録音を再解析",
-      "ReAnalyzeHint": "録音を再度文字起こしし、要約を最初から書き直します。テンプレート切り替えよりも時間がかかります。"
-    }
+      "ReAnalyzeHint": "録音を再度文字起こしし、要約を最初から書き直します。テンプレートを切り替えるよりも遅くなります。",
+      "ReAnalyze": "録音を再分析"
+    },
+    "RegenerateWithSuggested": "自動検出されたテンプレートで再生成",
+    "RegenerateChoose": "要約を再生成するテンプレートを選択",
+    "RegenerateBtn": "再生成",
+    "MoreOptions": "その他のオプション",
+    "AutoDetectedTooltip": "自動検出されたテンプレート — クリックして変更",
+    "AutoDetected": "自動検出: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ AI によって更新",
@@ -1694,7 +1694,8 @@
       "Screenshot": "スクリーンショット",
       "Recording": "録音",
       "AddedTo": "を次のノートに追加しました：",
-      "Open": "開く"
+      "Open": "開く",
+      "OpenNoteFirst": "最初にノートを開いてから、ここにメディアをドラッグしてください"
     },
     "WikiUpdateFailed": "Wikiの更新に失敗しました: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "テンプレートを検索…",
     "NoResults": "一致するテンプレートがありません",
     "SpecializedBadge": "専門",
-    "Suggested": "おすすめ",
+    "AutoSuggestTemplateHint": "オンにすると、モデルが各合成に最適なテンプレートを選択します。オフ: デフォルトで議事録が使用されます。設定 → AI機能 → AI要約テンプレートを反映します。",
     "AutoSuggestTemplate": "テンプレートを自動提案",
-    "AutoSuggestTemplateHint": "オン時、モデルが各まとめに最適なテンプレートを選択します。オフ時は議事録がデフォルトで使われます。設定 → AI機能 → AI 要約テンプレートを反映します。"
+    "Suggested": "提案"
   },
   "RegionSelector": {
     "CaptureButton": "画面をキャプチャするか、Enterキーを押してください",
@@ -3166,7 +3167,8 @@
       "CommitNow": "今すぐ同期",
       "ConnectedDesc": "ノートとウィキは自動的にGitHubに同期されます。音声録音、ビデオ録画、スクリーンショットは同期されません。",
       "Interval": "同期間隔",
-      "LastCommit": "最終同期"
+      "LastCommit": "最終同期",
+      "RetrySync": "同期を再試行"
     },
     "GitHub": {
       "Authorize": "GitHubを認証",
@@ -3221,6 +3223,13 @@
           "Desc": "ブラウザウィンドウが開きました。SeaMeetがあなたのGitHubアカウントにアクセスすることを許可してください。",
           "Label": "認証を待っています..."
         }
+      },
+      "Reauthorize": "GitHubの再認証",
+      "TokenExpired": {
+        "Desc": "GitHubの認証が期限切れです。同期を再開するには再認証してください。"
+      },
+      "Timeout": {
+        "Desc": "同期がタイムアウトしました。これはネットワークの問題やGitHubの認証期限切れが原因である可能性があります。"
       }
     },
     "GroupTitle": "同期",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "GitHubにプッシュ中...",
-      "Committing": "変更を同期中..."
+      "Committing": "変更を同期中...",
+      "Syncing": "同期中..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}日前",
@@ -3259,7 +3269,11 @@
     "Subscribe": "同期を有効にするには購読してください",
     "Synced": "同期済み · {{time}}",
     "TokenExpired": "再認証",
-    "Syncing": "同期中..."
+    "Syncing": "同期中...",
+    "CreatingRepo": "リポジトリを作成しています...",
+    "InstallingApp": "GitHubアプリをインストールしています...",
+    "Unpushed": "{{count}} 件の未プッシュ",
+    "Timeout": "同期がタイムアウトしました"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "すべて",
+    "Audio": "オーディオ",
+    "BatchDelete": "削除",
+    "ClearFilters": "フィルターをクリア",
+    "ConfirmBatchDelete": "{{count}} 件のファイルを削除しますか？",
+    "FilteredStats": "{{filtered}} / {{total}} ファイル",
+    "GridView": "グリッド表示",
+    "Import": "インポート",
+    "ListView": "リスト表示",
+    "NoFiles": "メディアファイルがまだありません",
+    "NoFilesHint": "録音や録画、またはファイルのインポートから始めてください",
+    "NoResults": "フィルターに一致するファイルがありません",
+    "NoResultsHint": "検索やフィルターを調整してみてください",
+    "Search": "メディアファイルを検索...",
+    "SelectAll": "すべて選択",
+    "Selected": "{{count}} 件選択中",
+    "SortByDate": "日付",
+    "SortByDuration": "再生時間",
+    "SortByName": "名前",
+    "SortBySize": "サイズ",
+    "Title": "メディアライブラリ",
+    "Video": "ビデオ",
+    "BatchExport": "エクスポート",
+    "ClearSelection": "選択をクリア",
+    "Exporting": "エクスポート中...",
+    "ExportAllFailed": "{{count}} ファイルのエクスポートに失敗しました",
+    "ExportFailed": "エクスポートに失敗しました",
+    "ExportPartial": "{{total}} ファイル中 {{exported}} ファイルをエクスポートしました ({{failed}} 件失敗)",
+    "ExportSuccess": "{{count}} ファイルをエクスポートしました",
+    "BatchDeletePartial": "{{total}} ファイル中 {{count}} ファイルを削除しました",
+    "Screenshots": "スクリーンショット",
+    "Sort": "並び替え"
+  },
+  "MediaCard": {
+    "Untitled": "タイトルなし"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "AI 要約テンプレート",
+    "MenuItem": "AI要約テンプレート",
+    "PageTitle": "AI要約テンプレート",
+    "SectionTitle": "AI要約テンプレート",
     "AutoPickToggle": "要約テンプレートを自動検出",
-    "AutoPickDesc": "モデルに各会議に最適なテンプレートを選ばせます。オフのときは議事録がデフォルトで使われ、分類呼び出しは行われません。",
-    "InventoryTitle": "インストール済みテンプレート",
-    "Specialized": "専門",
-    "MenuItem": "AI 要約テンプレート",
-    "PageTitle": "AI 要約テンプレート"
+    "AutoPickDesc": "モデルに各会議に最適なテンプレートを選ばせます。オフの場合、議事録がデフォルトで使用され、分類器の呼び出しは行われません。",
+    "InventoryTitle": "インストール済みテンプレート"
   }
 }

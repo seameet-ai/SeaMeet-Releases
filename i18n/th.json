@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "สร้างใหม่ด้วยเทมเพลต…",
     "RegenerateFailed": "สร้างสรุปใหม่ล้มเหลว: {{err}}",
     "RegenerateFailedGeneric": "สร้างสรุปใหม่ล้มเหลว",
-    "AutoDetected": "ตรวจพบอัตโนมัติ: {{tpl}}",
-    "AutoDetectedTooltip": "เทมเพลตที่ตรวจพบอัตโนมัติ — คลิกเพื่อเปลี่ยน",
-    "RegenerateBtn": "สร้างใหม่",
-    "RegenerateWithSuggested": "สร้างใหม่ด้วยเทมเพลตที่ตรวจพบอัตโนมัติ",
-    "RegenerateChoose": "เลือกเทมเพลตเพื่อสร้างสรุปใหม่",
-    "MoreOptions": "ตัวเลือกเพิ่มเติม",
     "SplitMenu": {
       "Label": "ตัวเลือกสรุป",
       "ChooseTemplate": "เลือกเทมเพลต…",
-      "ReAnalyze": "วิเคราะห์การบันทึกใหม่",
-      "ReAnalyzeHint": "ถอดเสียงการบันทึกใหม่และเขียนสรุปใหม่ตั้งแต่ต้น ช้ากว่าการสลับเทมเพลตอย่างเดียว"
-    }
+      "ReAnalyzeHint": "ถอดเสียงการบันทึกใหม่และเขียนสรุปใหม่ตั้งแต่ต้น ช้ากว่าการสลับเทมเพลต",
+      "ReAnalyze": "วิเคราะห์การบันทึกใหม่"
+    },
+    "RegenerateWithSuggested": "สร้างใหม่ด้วยเทมเพลตที่ตรวจพบอัตโนมัติ",
+    "RegenerateChoose": "เลือกเทมเพลตเพื่อสร้างสรุปใหม่",
+    "RegenerateBtn": "สร้างใหม่",
+    "MoreOptions": "ตัวเลือกเพิ่มเติม",
+    "AutoDetectedTooltip": "เทมเพลตที่ตรวจพบอัตโนมัติ — คลิกเพื่อเปลี่ยน",
+    "AutoDetected": "ตรวจพบอัตโนมัติ: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ อัปเดตโดย AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "ภาพหน้าจอ",
       "Recording": "การบันทึก",
       "AddedTo": "เพิ่มไปยัง",
-      "Open": "เปิด"
+      "Open": "เปิด",
+      "OpenNoteFirst": "เปิดบันทึกก่อน แล้วจึงลากสื่อมาที่นี่"
     },
     "WikiUpdateFailed": "อัปเดตวิกิล้มเหลว: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "ค้นหาเทมเพลต…",
     "NoResults": "ไม่มีเทมเพลตที่ตรงกัน",
     "SpecializedBadge": "เฉพาะทาง",
-    "Suggested": "แนะนำ",
+    "AutoSuggestTemplateHint": "เมื่อเปิดใช้งาน โมเดลจะเลือกเทมเพลตที่เหมาะสมที่สุดสำหรับการสังเคราะห์แต่ละครั้ง ปิด: ใช้รายงานการประชุมเป็นค่าเริ่มต้น สะท้อนการตั้งค่า → คุณสมบัติ AI → เทมเพลตสรุป AI",
     "AutoSuggestTemplate": "แนะนำเทมเพลตอัตโนมัติ",
-    "AutoSuggestTemplateHint": "เมื่อเปิดอยู่ โมเดลจะเลือกเทมเพลตที่เหมาะสมที่สุดสำหรับแต่ละการสังเคราะห์ ปิด: ใช้บันทึกการประชุมเป็นค่าเริ่มต้น สะท้อนการตั้งค่า → คุณสมบัติ AI → เทมเพลตสรุปด้วย AI"
+    "Suggested": "แนะนำ"
   },
   "RegionSelector": {
     "CaptureButton": "จับภาพหน้าจอหรือกด Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "ซิงค์ตอนนี้",
       "ConnectedDesc": "บันทึกและวิกิของคุณจะถูกซิงค์ไปยัง GitHub โดยอัตโนมัติ การบันทึกเสียง การบันทึกวิดีโอ และภาพหน้าจอจะไม่ถูกซิงค์",
       "Interval": "ช่วงเวลาการซิงค์",
-      "LastCommit": "ซิงค์ล่าสุด"
+      "LastCommit": "ซิงค์ล่าสุด",
+      "RetrySync": "ลองซิงค์อีกครั้ง"
     },
     "GitHub": {
       "Authorize": "อนุญาต GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "หน้าต่างเบราว์เซอร์ได้เปิดขึ้นแล้ว กรุณาอนุญาต SeaMeet เพื่อเข้าถึงบัญชี GitHub ของคุณ",
           "Label": "กำลังรอการอนุญาต..."
         }
+      },
+      "Reauthorize": "อนุญาต GitHub ใหม่",
+      "TokenExpired": {
+        "Desc": "การอนุญาต GitHub หมดอายุแล้ว กรุณาอนุญาตใหม่เพื่อเริ่มซิงค์อีกครั้ง"
+      },
+      "Timeout": {
+        "Desc": "การซิงค์หมดเวลา อาจเกิดจากปัญหาเครือข่ายหรือการอนุญาต GitHub หมดอายุ"
       }
     },
     "GroupTitle": "ซิงค์",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "กำลังส่งไปยัง GitHub...",
-      "Committing": "กำลังซิงค์การเปลี่ยนแปลง..."
+      "Committing": "กำลังซิงค์การเปลี่ยนแปลง...",
+      "Syncing": "กำลังซิงค์..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} วันที่แล้ว",
@@ -3259,7 +3269,11 @@
     "Subscribe": "สมัครสมาชิกเพื่อเปิดใช้งานการซิงค์",
     "Synced": "ซิงค์แล้ว · {{time}}",
     "TokenExpired": "อนุญาตใหม่",
-    "Syncing": "กำลังซิงค์..."
+    "Syncing": "กำลังซิงค์...",
+    "CreatingRepo": "กำลังสร้างที่เก็บข้อมูล...",
+    "InstallingApp": "กำลังติดตั้งแอป GitHub...",
+    "Unpushed": "{{count}} รายการที่ยังไม่ได้ส่ง",
+    "Timeout": "การซิงค์หมดเวลา"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "ทั้งหมด",
+    "Audio": "เสียง",
+    "BatchDelete": "ลบ",
+    "ClearFilters": "ล้างตัวกรอง",
+    "ConfirmBatchDelete": "ลบ {{count}} ไฟล์?",
+    "FilteredStats": "{{filtered}} จาก {{total}} ไฟล์",
+    "GridView": "มุมมองตาราง",
+    "Import": "นำเข้า",
+    "ListView": "มุมมองรายการ",
+    "NoFiles": "ยังไม่มีไฟล์สื่อ",
+    "NoFilesHint": "บันทึกเสียง/วิดีโอ หรือ นำเข้าไฟล์เพื่อเริ่มต้น",
+    "NoResults": "ไม่มีไฟล์ที่ตรงกับตัวกรองของคุณ",
+    "NoResultsHint": "ลองปรับการค้นหาหรือตัวกรองของคุณ",
+    "Search": "ค้นหาไฟล์สื่อ...",
+    "SelectAll": "เลือกทั้งหมด",
+    "Selected": "เลือกแล้ว {{count}} รายการ",
+    "SortByDate": "วันที่",
+    "SortByDuration": "ระยะเวลา",
+    "SortByName": "ชื่อ",
+    "SortBySize": "ขนาด",
+    "Title": "คลังสื่อ",
+    "Video": "วิดีโอ",
+    "BatchExport": "ส่งออก",
+    "ClearSelection": "ล้างการเลือก",
+    "Exporting": "กำลังส่งออก...",
+    "ExportAllFailed": "ส่งออกไฟล์ {{count}} ไฟล์ไม่สำเร็จ",
+    "ExportFailed": "การส่งออกล้มเหลว",
+    "ExportPartial": "ส่งออกไฟล์ {{exported}} จาก {{total}} ไฟล์ (ล้มเหลว {{failed}} ไฟล์)",
+    "ExportSuccess": "ส่งออกไฟล์ {{count}} ไฟล์เรียบร้อยแล้ว",
+    "BatchDeletePartial": "ลบไฟล์ {{count}} จาก {{total}} ไฟล์",
+    "Screenshots": "ภาพหน้าจอ",
+    "Sort": "เรียงตาม"
+  },
+  "MediaCard": {
+    "Untitled": "ไม่มีชื่อ"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "เทมเพลตสรุปด้วย AI",
+    "MenuItem": "เทมเพลตสรุป AI",
+    "PageTitle": "เทมเพลตสรุป AI",
+    "SectionTitle": "เทมเพลตสรุป AI",
     "AutoPickToggle": "ตรวจหาเทมเพลตสรุปอัตโนมัติ",
-    "AutoPickDesc": "ให้โมเดลเลือกเทมเพลตที่ดีที่สุดสำหรับแต่ละการประชุม เมื่อปิดอยู่ จะใช้บันทึกการประชุมเป็นค่าเริ่มต้นและไม่มีการเรียกตัวจำแนก",
-    "InventoryTitle": "เทมเพลตที่ติดตั้ง",
-    "Specialized": "เฉพาะทาง",
-    "MenuItem": "เทมเพลตสรุปด้วย AI",
-    "PageTitle": "เทมเพลตสรุปด้วย AI"
+    "AutoPickDesc": "ให้โมเดลเลือกเทมเพลตที่ดีที่สุดสำหรับแต่ละการประชุม เมื่อปิด ใช้รายงานการประชุมเป็นค่าเริ่มต้นและไม่มีการเรียกตัวจำแนกประเภท",
+    "InventoryTitle": "เทมเพลตที่ติดตั้ง"
   }
 }

@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Buat ulang dengan templat…",
     "RegenerateFailed": "Gagal membuat ulang ringkasan: {{err}}",
     "RegenerateFailedGeneric": "Gagal membuat ulang ringkasan",
-    "AutoDetected": "Terdeteksi otomatis: {{tpl}}",
-    "AutoDetectedTooltip": "Template terdeteksi otomatis — klik untuk mengubah",
-    "RegenerateBtn": "Buat ulang",
-    "RegenerateWithSuggested": "Buat ulang dengan template yang terdeteksi otomatis",
-    "RegenerateChoose": "Pilih template untuk membuat ulang ringkasan",
-    "MoreOptions": "Opsi lainnya",
     "SplitMenu": {
       "Label": "Opsi ringkasan",
-      "ChooseTemplate": "Pilih template…",
-      "ReAnalyze": "Analisis ulang rekaman",
-      "ReAnalyzeHint": "Mentranskripsi ulang rekaman dan menulis ulang ringkasan dari awal. Lebih lambat daripada hanya mengganti template."
-    }
+      "ChooseTemplate": "Pilih templat…",
+      "ReAnalyzeHint": "Mentranskripsi ulang rekaman dan menulis ulang ringkasan dari awal. Lebih lambat dari mengganti templat.",
+      "ReAnalyze": "Analisis ulang rekaman"
+    },
+    "RegenerateWithSuggested": "Buat ulang dengan templat yang terdeteksi otomatis",
+    "RegenerateChoose": "Pilih templat untuk membuat ulang ringkasan",
+    "RegenerateBtn": "Buat ulang",
+    "MoreOptions": "Opsi lainnya",
+    "AutoDetectedTooltip": "Templat terdeteksi otomatis — klik untuk mengubah",
+    "AutoDetected": "Terdeteksi otomatis: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Diperbarui oleh AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Tangkapan layar",
       "Recording": "Rekaman",
       "AddedTo": "ditambahkan ke",
-      "Open": "Buka"
+      "Open": "Buka",
+      "OpenNoteFirst": "Buka catatan terlebih dahulu, lalu seret media ke sini"
     },
     "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Cari templat…",
     "NoResults": "Tidak ada templat yang cocok",
     "SpecializedBadge": "Khusus",
-    "Suggested": "Disarankan",
-    "AutoSuggestTemplate": "Sarankan template otomatis",
-    "AutoSuggestTemplateHint": "Saat aktif, model memilih template yang paling sesuai untuk setiap sintesis. Mati: Notulen Rapat digunakan sebagai default. Mencerminkan Pengaturan → Fitur AI → Template Ringkasan AI."
+    "AutoSuggestTemplateHint": "Saat aktif, model memilih templat yang paling sesuai untuk setiap sintesis. Nonaktif: Notulen Rapat digunakan secara default. Mencerminkan Pengaturan → Fitur AI → Templat Ringkasan AI.",
+    "AutoSuggestTemplate": "Sarankan templat otomatis",
+    "Suggested": "Disarankan"
   },
   "RegionSelector": {
     "CaptureButton": "Tangkap Layar atau Tekan Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Sinkron sekarang",
       "ConnectedDesc": "Catatan dan wiki Anda secara otomatis disinkronkan ke GitHub. Rekaman audio, rekaman video, dan tangkapan layar tidak disinkronkan.",
       "Interval": "Interval sinkronisasi",
-      "LastCommit": "Terakhir disinkronkan"
+      "LastCommit": "Terakhir disinkronkan",
+      "RetrySync": "Coba Sinkronisasi Ulang"
     },
     "GitHub": {
       "Authorize": "Otorisasi GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Jendela browser telah terbuka. Silakan otorisasi SeaMeet untuk mengakses akun GitHub Anda.",
           "Label": "Menunggu otorisasi..."
         }
+      },
+      "Reauthorize": "Otorisasi ulang GitHub",
+      "TokenExpired": {
+        "Desc": "Otorisasi GitHub telah kedaluwarsa. Silakan otorisasi ulang untuk melanjutkan penyinkronan."
+      },
+      "Timeout": {
+        "Desc": "Sinkronisasi gagal karena waktu habis. Ini mungkin disebabkan oleh masalah jaringan atau otorisasi GitHub yang kedaluwarsa."
       }
     },
     "GroupTitle": "Sinkronisasi",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Mengirim ke GitHub...",
-      "Committing": "Menyinkronkan perubahan..."
+      "Committing": "Menyinkronkan perubahan...",
+      "Syncing": "Menyinkronkan..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}h yang lalu",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Berlangganan untuk mengaktifkan sinkronisasi",
     "Synced": "Disinkronkan · {{time}}",
     "TokenExpired": "Otorisasi ulang",
-    "Syncing": "Menyinkronkan..."
+    "Syncing": "Menyinkronkan...",
+    "CreatingRepo": "Membuat repositori...",
+    "InstallingApp": "Memasang Aplikasi GitHub...",
+    "Unpushed": "{{count}} belum didorong",
+    "Timeout": "Sinkronisasi gagal karena waktu habis"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Semua",
+    "Audio": "Audio",
+    "BatchDelete": "Hapus",
+    "ClearFilters": "Bersihkan Filter",
+    "ConfirmBatchDelete": "Hapus {{count}} file?",
+    "FilteredStats": "{{filtered}} dari {{total}} file",
+    "GridView": "Tampilan Grid",
+    "Import": "Impor",
+    "ListView": "Tampilan Daftar",
+    "NoFiles": "Belum ada file media",
+    "NoFilesHint": "Rekam audio/video atau impor file untuk memulai",
+    "NoResults": "Tidak ada file yang sesuai dengan filter Anda",
+    "NoResultsHint": "Coba sesuaikan pencarian atau filter Anda",
+    "Search": "Cari file media...",
+    "SelectAll": "Pilih Semua",
+    "Selected": "{{count}} dipilih",
+    "SortByDate": "Tanggal",
+    "SortByDuration": "Durasi",
+    "SortByName": "Nama",
+    "SortBySize": "Ukuran",
+    "Title": "Perpustakaan Media",
+    "Video": "Video",
+    "BatchExport": "Ekspor",
+    "ClearSelection": "Bersihkan pilihan",
+    "Exporting": "Sedang mengekspor...",
+    "ExportAllFailed": "Gagal mengekspor {{count}} file",
+    "ExportFailed": "Ekspor gagal",
+    "ExportPartial": "Berhasil mengekspor {{exported}} dari {{total}} file ({{failed}} gagal)",
+    "ExportSuccess": "Berhasil mengekspor {{count}} file",
+    "BatchDeletePartial": "Dihapus {{count}} dari {{total}} berkas",
+    "Screenshots": "Tangkapan Layar",
+    "Sort": "Urutkan berdasarkan"
+  },
+  "MediaCard": {
+    "Untitled": "Tanpa Judul"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Template Ringkasan AI",
-    "AutoPickToggle": "Deteksi otomatis template ringkasan",
-    "AutoPickDesc": "Biarkan model memilih template terbaik untuk setiap pertemuan. Saat dimatikan, Notulen Rapat digunakan secara default dan tidak ada panggilan klasifikasi.",
-    "InventoryTitle": "Template terpasang",
-    "Specialized": "Khusus",
-    "MenuItem": "Template Ringkasan AI",
-    "PageTitle": "Template Ringkasan AI"
+    "MenuItem": "Templat Ringkasan AI",
+    "PageTitle": "Templat Ringkasan AI",
+    "SectionTitle": "Templat Ringkasan AI",
+    "AutoPickToggle": "Deteksi otomatis templat ringkasan",
+    "AutoPickDesc": "Biarkan model memilih templat terbaik untuk setiap rapat. Saat nonaktif, Notulen Rapat digunakan secara default dan tidak ada panggilan pengklasifikasi yang dilakukan.",
+    "InventoryTitle": "Templat terpasang"
   }
 }

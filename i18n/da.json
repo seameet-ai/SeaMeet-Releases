@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Generer igen med en skabelon…",
     "RegenerateFailed": "Generering af resumé mislykkedes: {{err}}",
     "RegenerateFailedGeneric": "Generering af resumé mislykkedes",
-    "AutoDetected": "Automatisk genkendt: {{tpl}}",
-    "AutoDetectedTooltip": "Automatisk genkendt skabelon — klik for at ændre",
-    "RegenerateBtn": "Generér igen",
-    "RegenerateWithSuggested": "Generér igen med automatisk genkendt skabelon",
-    "RegenerateChoose": "Vælg en skabelon for at gen-generere opsummeringen",
-    "MoreOptions": "Flere indstillinger",
     "SplitMenu": {
       "Label": "Resuméindstillinger",
       "ChooseTemplate": "Vælg skabelon…",
-      "ReAnalyze": "Genanalysér optagelse",
-      "ReAnalyzeHint": "Genskaber transskription og opsummering fra bunden. Langsommere end blot at skifte skabelon."
-    }
+      "ReAnalyzeHint": "Transskriberer optagelsen igen og skriver resuméet om fra bunden. Langsommere end at skifte skabelon.",
+      "ReAnalyze": "Genanalysér optagelse"
+    },
+    "RegenerateWithSuggested": "Generér igen med autodetekteret skabelon",
+    "RegenerateChoose": "Vælg en skabelon til at gendanne resuméet",
+    "RegenerateBtn": "Generér igen",
+    "MoreOptions": "Flere indstillinger",
+    "AutoDetectedTooltip": "Autodetekteret skabelon — klik for at ændre",
+    "AutoDetected": "Autodetekteret: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Opdateret af AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Skærmbillede",
       "Recording": "Optagelse",
       "AddedTo": "tilføjet til",
-      "Open": "Åbn"
+      "Open": "Åbn",
+      "OpenNoteFirst": "Åbn en note først, og træk derefter medier her"
     },
     "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}",
     "SynthesisPill": {
@@ -1989,9 +1990,9 @@
     "SearchPlaceholder": "Søg skabeloner…",
     "NoResults": "Ingen skabeloner matcher",
     "SpecializedBadge": "Specialiseret",
-    "Suggested": "Foreslået",
-    "AutoSuggestTemplate": "Auto-foreslå skabelon",
-    "AutoSuggestTemplateHint": "Når aktiveret, vælger modellen den bedst egnede skabelon til hver opsummering. Fra: Mødereferat bruges som standard. Spejler Indstillinger → AI-funktioner → AI-resuméskabeloner."
+    "AutoSuggestTemplateHint": "Når slået til, vælger modellen den bedst egnede skabelon for hver syntese. Fra: Mødereferat bruges som standard. Spejler Indstillinger → AI-funktioner → AI-resumé-skabeloner.",
+    "AutoSuggestTemplate": "Foreslå skabelon automatisk",
+    "Suggested": "Foreslået"
   },
   "RegionSelector": {
     "CaptureButton": "Optag skærm eller tryk Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Synkroniser nu",
       "ConnectedDesc": "Dine noter og wiki synkroniseres automatisk til GitHub. Lydoptagelser, videooptagelser og skærmbilleder synkroniseres ikke.",
       "Interval": "Synkroniseringsinterval",
-      "LastCommit": "Sidst synkroniseret"
+      "LastCommit": "Sidst synkroniseret",
+      "RetrySync": "Prøv synkronisering igen"
     },
     "GitHub": {
       "Authorize": "Godkend GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Et browservindue er åbnet. Venligst godkend SeaMeet til at få adgang til din GitHub-konto.",
           "Label": "Venter på godkendelse..."
         }
+      },
+      "Reauthorize": "Genautoriser GitHub",
+      "TokenExpired": {
+        "Desc": "GitHub-autorisationen er udløbet. Genautoriser venligst for at genoptage synkroniseringen."
+      },
+      "Timeout": {
+        "Desc": "Synkronisering udløb. Dette kan skyldes et netværksproblem eller udløbet GitHub-autorisation."
       }
     },
     "GroupTitle": "Synkronisering",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Uploader til GitHub...",
-      "Committing": "Synkroniserer ændringer..."
+      "Committing": "Synkroniserer ændringer...",
+      "Syncing": "Synkroniserer..."
     },
     "TimeAgo": {
       "DaysAgo": "for {{count}} dage siden",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Abonner for at aktivere synkronisering",
     "Synced": "Synkroniseret · {{time}}",
     "TokenExpired": "Genautoriser",
-    "Syncing": "Synkroniserer..."
+    "Syncing": "Synkroniserer...",
+    "CreatingRepo": "Opretter repository...",
+    "InstallingApp": "Installerer GitHub-app...",
+    "Unpushed": "{{count}} ikke skubbet",
+    "Timeout": "Synkronisering udløb"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Alle",
+    "Audio": "Lyd",
+    "BatchDelete": "Slet",
+    "ClearFilters": "Ryd filtre",
+    "ConfirmBatchDelete": "Slet {{count}} filer?",
+    "FilteredStats": "{{filtered}} af {{total}} filer",
+    "GridView": "Gittervisning",
+    "Import": "Importer",
+    "ListView": "Listevisning",
+    "NoFiles": "Ingen mediefiler endnu",
+    "NoFilesHint": "Optag lyd/video eller importer filer for at komme i gang",
+    "NoResults": "Ingen filer matcher dine filtre",
+    "NoResultsHint": "Prøv at justere din søgning eller filtre",
+    "Search": "Søg mediefiler...",
+    "SelectAll": "Vælg alle",
+    "Selected": "{{count}} valgt",
+    "SortByDate": "Dato",
+    "SortByDuration": "Varighed",
+    "SortByName": "Navn",
+    "SortBySize": "Størrelse",
+    "Title": "Mediebibliotek",
+    "Video": "Video",
+    "BatchExport": "Eksportér",
+    "ClearSelection": "Ryd markering",
+    "Exporting": "Eksporterer...",
+    "ExportAllFailed": "Kunne ikke eksportere {{count}} filer",
+    "ExportFailed": "Eksport mislykkedes",
+    "ExportPartial": "Eksporterede {{exported}} af {{total}} filer ({{failed}} mislykkedes)",
+    "ExportSuccess": "Eksporterede {{count}} filer",
+    "BatchDeletePartial": "Slettet {{count}} af {{total}} filer",
+    "Screenshots": "Skærmbilleder",
+    "Sort": "Sortér efter"
+  },
+  "MediaCard": {
+    "Untitled": "Uden titel"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "AI-resuméskabeloner",
-    "AutoPickToggle": "Registrér resuméskabelon automatisk",
-    "AutoPickDesc": "Lad modellen vælge den bedste skabelon til hvert møde. Når den er slået fra, anvendes Mødereferat som standard og der foretages intet klassificeringskald.",
-    "InventoryTitle": "Installerede skabeloner",
-    "Specialized": "Specialiseret",
-    "MenuItem": "AI-resuméskabeloner",
-    "PageTitle": "AI-resuméskabeloner"
+    "MenuItem": "AI-resumé-skabeloner",
+    "PageTitle": "AI-resumé-skabeloner",
+    "SectionTitle": "AI-resumé-skabeloner",
+    "AutoPickToggle": "Autodetektér resumé-skabelon",
+    "AutoPickDesc": "Lad modellen vælge den bedste skabelon for hvert møde. Når slået fra, bruges Mødereferat som standard, og der foretages intet klassificeringsopkald.",
+    "InventoryTitle": "Installerede skabeloner"
   }
 }

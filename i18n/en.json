@@ -295,18 +295,18 @@
     "RegenerateWithTemplate": "Regenerate with a template…",
     "RegenerateFailed": "Summary regenerate failed: {{err}}",
     "RegenerateFailedGeneric": "Summary regenerate failed",
-    "AutoDetected": "Auto-detected: {{tpl}}",
-    "AutoDetectedTooltip": "Auto-detected template — click to change",
-    "RegenerateBtn": "Regenerate",
-    "RegenerateWithSuggested": "Regenerate with auto-detected template",
-    "RegenerateChoose": "Choose a template to regenerate the summary",
-    "MoreOptions": "More options",
     "SplitMenu": {
       "Label": "Summary options",
       "ChooseTemplate": "Choose template…",
-      "ReAnalyze": "Re-analyze recording",
-      "ReAnalyzeHint": "Re-transcribes the recording and rewrites the summary from scratch. Slower than swapping templates."
-    }
+      "ReAnalyzeHint": "Re-transcribes the recording and rewrites the summary from scratch. Slower than swapping templates.",
+      "ReAnalyze": "Re-analyze recording"
+    },
+    "RegenerateWithSuggested": "Regenerate with auto-detected template",
+    "RegenerateChoose": "Choose a template to regenerate the summary",
+    "RegenerateBtn": "Regenerate",
+    "MoreOptions": "More options",
+    "AutoDetectedTooltip": "Auto-detected template — click to change",
+    "AutoDetected": "Auto-detected: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Updated by AI",
@@ -1854,7 +1854,8 @@
       "Screenshot": "Screenshot",
       "Recording": "Recording",
       "AddedTo": "added to",
-      "Open": "Open"
+      "Open": "Open",
+      "OpenNoteFirst": "Open a note first, then drag media here"
     },
     "WikiUpdateFailed": "Wiki update failed: {{error}}",
     "SynthesisPill": {
@@ -2181,9 +2182,9 @@
     "SearchPlaceholder": "Search templates…",
     "NoResults": "No templates match",
     "SpecializedBadge": "Specialized",
-    "Suggested": "Suggested",
+    "AutoSuggestTemplateHint": "When on, the model picks the best-fitting template for each synthesis. Off: Meeting Minutes is used by default. Mirrors Settings → AI Features → AI Summary Templates.",
     "AutoSuggestTemplate": "Auto-suggest template",
-    "AutoSuggestTemplateHint": "When on, the model picks the best-fitting template for each synthesis. Off: Meeting Minutes is used by default. Mirrors Settings → AI Features → AI Summary Templates."
+    "Suggested": "Suggested"
   },
   "RegionSelector": {
     "CaptureButton": "Capture Screen or Press Enter",
@@ -3142,7 +3143,8 @@
       "LastSync": "Last sync",
       "ConnectGitHubDesc": "Enable cloud backup and cross-device sync",
       "ConnectedTitle": "Sync & Backup",
-      "ConnectedDesc": "Your notes and wiki are automatically synced to GitHub. Audio recordings, video recordings, and screenshots are not synced."
+      "ConnectedDesc": "Your notes and wiki are automatically synced to GitHub. Audio recordings, video recordings, and screenshots are not synced.",
+      "RetrySync": "Retry Sync"
     },
     "GitAutoCommit": {
       "Title": "Auto-Sync",
@@ -3180,7 +3182,8 @@
     },
     "Status": {
       "Committing": "Syncing changes...",
-      "Pushing": "Pushing to GitHub..."
+      "Pushing": "Pushing to GitHub...",
+      "Syncing": "Syncing..."
     },
     "GitHub": {
       "Authorize": "Authorize GitHub",
@@ -3224,6 +3227,10 @@
         }
       },
       "Connected": "Connected",
+      "Reauthorize": "Re-authorize GitHub",
+      "TokenExpired": {
+        "Desc": "GitHub authorization has expired. Please re-authorize to resume syncing."
+      },
       "Install": {
         "Title": "Install SeaMeet App",
         "Desc": "Install the app on your GitHub account to enable cloud backup.",
@@ -3235,6 +3242,9 @@
           "Label": "Waiting for authorization..."
         },
         "AlreadyInstalled": "Already installed the app? Click here to re-authorize"
+      },
+      "Timeout": {
+        "Desc": "Sync timed out. This may be caused by a network issue or expired GitHub authorization."
       }
     },
     "TimeAgo": {
@@ -3259,7 +3269,11 @@
     "Error": "Sync error",
     "Offline": "Offline",
     "TokenExpired": "Re-authorize",
-    "Synced": "Synced · {{time}}"
+    "InstallingApp": "Installing GitHub App...",
+    "CreatingRepo": "Creating repository...",
+    "Unpushed": "{{count}} unpushed",
+    "Synced": "Synced · {{time}}",
+    "Timeout": "Sync timed out"
   },
   "Pagination": {
     "Previous": "Previous page",
@@ -3351,13 +3365,49 @@
     "theme_light": "Light",
     "theme_dark": "Dark"
   },
+  "MediaLibrary": {
+    "Title": "Media Library",
+    "Search": "Search media files...",
+    "All": "All",
+    "Audio": "Audio",
+    "Video": "Video",
+    "Screenshots": "Screenshots",
+    "SortByDate": "Date",
+    "SortByName": "Name",
+    "SortByDuration": "Duration",
+    "SortBySize": "Size",
+    "NoFiles": "No media files yet",
+    "NoFilesHint": "Record audio/video or import files to get started",
+    "NoResults": "No files match your filters",
+    "NoResultsHint": "Try adjusting your search or filters",
+    "FilteredStats": "{{filtered}} of {{total}} files",
+    "Selected": "{{count}} selected",
+    "SelectAll": "Select All",
+    "ClearSelection": "Clear selection",
+    "BatchDelete": "Delete",
+    "BatchExport": "Export",
+    "Exporting": "Exporting...",
+    "ExportSuccess": "Exported {{count}} files",
+    "ExportPartial": "Exported {{exported}} of {{total}} files ({{failed}} failed)",
+    "ExportAllFailed": "Failed to export {{count}} files",
+    "ExportFailed": "Export failed",
+    "ConfirmBatchDelete": "Delete {{count}} files?",
+    "GridView": "Grid View",
+    "ListView": "List View",
+    "Import": "Import",
+    "ClearFilters": "Clear Filters",
+    "BatchDeletePartial": "Deleted {{count}} of {{total}} files",
+    "Sort": "Sort by"
+  },
+  "MediaCard": {
+    "Untitled": "Untitled"
+  },
   "AITemplateSettings": {
+    "MenuItem": "AI Summary Templates",
+    "PageTitle": "AI Summary Templates",
     "SectionTitle": "AI Summary Templates",
     "AutoPickToggle": "Auto-detect summary template",
     "AutoPickDesc": "Let the model pick the best template for each meeting. When off, Meeting Minutes is used by default and no classifier call is made.",
-    "InventoryTitle": "Installed templates",
-    "Specialized": "Specialized",
-    "MenuItem": "AI Summary Templates",
-    "PageTitle": "AI Summary Templates"
+    "InventoryTitle": "Installed templates"
   }
 }

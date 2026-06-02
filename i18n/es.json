@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Regenerar con una plantilla…",
     "RegenerateFailed": "Error al regenerar el resumen: {{err}}",
     "RegenerateFailedGeneric": "Error al regenerar el resumen",
-    "AutoDetected": "Detectado automáticamente: {{tpl}}",
-    "AutoDetectedTooltip": "Plantilla detectada automáticamente — haz clic para cambiar",
-    "RegenerateBtn": "Regenerar",
-    "RegenerateWithSuggested": "Regenerar con la plantilla detectada automáticamente",
-    "RegenerateChoose": "Elige una plantilla para regenerar el resumen",
-    "MoreOptions": "Más opciones",
     "SplitMenu": {
-      "Label": "Opciones de resumen",
+      "Label": "Opciones del resumen",
       "ChooseTemplate": "Elegir plantilla…",
-      "ReAnalyze": "Reanalizar grabación",
-      "ReAnalyzeHint": "Vuelve a transcribir la grabación y reescribe el resumen desde cero. Más lento que cambiar de plantilla."
-    }
+      "ReAnalyzeHint": "Vuelve a transcribir la grabación y reescribe el resumen desde cero. Más lento que cambiar de plantilla.",
+      "ReAnalyze": "Volver a analizar grabación"
+    },
+    "RegenerateWithSuggested": "Regenerar con plantilla detectada automáticamente",
+    "RegenerateChoose": "Elige una plantilla para regenerar el resumen",
+    "RegenerateBtn": "Regenerar",
+    "MoreOptions": "Más opciones",
+    "AutoDetectedTooltip": "Plantilla detectada automáticamente — haga clic para cambiar",
+    "AutoDetected": "Detectado automáticamente: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Actualizado por IA",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Captura de pantalla",
       "Recording": "Grabación",
       "AddedTo": "añadido a",
-      "Open": "Abrir"
+      "Open": "Abrir",
+      "OpenNoteFirst": "Abre una nota primero, luego arrastra medios aquí"
     },
     "WikiUpdateFailed": "Error al actualizar el wiki: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Buscar plantillas…",
     "NoResults": "No hay plantillas que coincidan",
     "SpecializedBadge": "Especializado",
-    "Suggested": "Sugerido",
+    "AutoSuggestTemplateHint": "Cuando está activado, el modelo elige la plantilla que mejor se adapta a cada síntesis. Desactivado: se usa Acta de la reunión por defecto. Refleja Configuración → Funciones de IA → Plantillas de resumen de IA.",
     "AutoSuggestTemplate": "Sugerir plantilla automáticamente",
-    "AutoSuggestTemplateHint": "Cuando está activado, el modelo elige la plantilla más adecuada para cada síntesis. Desactivado: se usa Acta de reunión por defecto. Refleja Ajustes → Funciones de IA → Plantillas de resúmenes de IA."
+    "Suggested": "Sugerida"
   },
   "RegionSelector": {
     "CaptureButton": "Capturar pantalla o presionar Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Sincronizar ahora",
       "ConnectedDesc": "Tus notas y wiki se sincronizan automáticamente con GitHub. Las grabaciones de audio, grabaciones de video y capturas de pantalla no se sincronizan.",
       "Interval": "Intervalo de sincronización",
-      "LastCommit": "Última sincronización"
+      "LastCommit": "Última sincronización",
+      "RetrySync": "Reintentar sincronización"
     },
     "GitHub": {
       "Authorize": "Autorizar GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Se ha abierto una ventana del navegador. Por favor, autorice a SeaMeet para acceder a su cuenta de GitHub.",
           "Label": "Esperando autorización..."
         }
+      },
+      "Reauthorize": "Reautorizar GitHub",
+      "TokenExpired": {
+        "Desc": "La autorización de GitHub ha expirado. Por favor, reautorice para reanudar la sincronización."
+      },
+      "Timeout": {
+        "Desc": "La sincronización ha expirado. Esto puede ser causado por un problema de red o una autorización de GitHub expirada."
       }
     },
     "GroupTitle": "Sincronización",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Subiendo a GitHub...",
-      "Committing": "Sincronizando cambios..."
+      "Committing": "Sincronizando cambios...",
+      "Syncing": "Sincronizando..."
     },
     "TimeAgo": {
       "DaysAgo": "hace {{count}}d",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Suscríbete para habilitar la sincronización",
     "Synced": "Sincronizado · {{time}}",
     "TokenExpired": "Reautorizar",
-    "Syncing": "Sincronizando..."
+    "Syncing": "Sincronizando...",
+    "CreatingRepo": "Creando repositorio...",
+    "InstallingApp": "Instalando la aplicación de GitHub...",
+    "Unpushed": "{{count}} sin enviar",
+    "Timeout": "La sincronización ha expirado"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Todos",
+    "Audio": "Audio",
+    "BatchDelete": "Eliminar",
+    "ClearFilters": "Borrar filtros",
+    "ConfirmBatchDelete": "¿Eliminar {{count}} archivos?",
+    "FilteredStats": "{{filtered}} de {{total}} archivos",
+    "GridView": "Vista de cuadrícula",
+    "Import": "Importar",
+    "ListView": "Vista de lista",
+    "NoFiles": "Aún no hay archivos multimedia",
+    "NoFilesHint": "Graba audio/video o importa archivos para comenzar",
+    "NoResults": "Ningún archivo coincide con tus filtros",
+    "NoResultsHint": "Intenta ajustar tu búsqueda o filtros",
+    "Search": "Buscar archivos multimedia...",
+    "SelectAll": "Seleccionar todo",
+    "Selected": "{{count}} seleccionado(s)",
+    "SortByDate": "Fecha",
+    "SortByDuration": "Duración",
+    "SortByName": "Nombre",
+    "SortBySize": "Tamaño",
+    "Title": "Biblioteca de Medios",
+    "Video": "Video",
+    "BatchExport": "Exportar",
+    "ClearSelection": "Borrar selección",
+    "Exporting": "Exportando...",
+    "ExportAllFailed": "No se pudieron exportar {{count}} archivos",
+    "ExportFailed": "Error en la exportación",
+    "ExportPartial": "Se exportaron {{exported}} de {{total}} archivos ({{failed}} fallidos)",
+    "ExportSuccess": "Se exportaron {{count}} archivos",
+    "BatchDeletePartial": "Se eliminaron {{count}} de {{total}} archivos",
+    "Screenshots": "Capturas de pantalla",
+    "Sort": "Ordenar por"
+  },
+  "MediaCard": {
+    "Untitled": "Sin título"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Plantillas de resúmenes de IA",
-    "AutoPickToggle": "Detectar automáticamente la plantilla de resumen",
-    "AutoPickDesc": "Deja que el modelo elija la mejor plantilla para cada reunión. Cuando está apagado, se usa Acta de reunión por defecto y no se realiza llamada al clasificador.",
-    "InventoryTitle": "Plantillas instaladas",
-    "Specialized": "Especializada",
-    "MenuItem": "Plantillas de resúmenes de IA",
-    "PageTitle": "Plantillas de resúmenes de IA"
+    "MenuItem": "Plantillas de resumen de IA",
+    "PageTitle": "Plantillas de resumen de IA",
+    "SectionTitle": "Plantillas de resumen de IA",
+    "AutoPickToggle": "Detectar automáticamente la plantilla del resumen",
+    "AutoPickDesc": "Deja que el modelo elija la mejor plantilla para cada reunión. Cuando está desactivado, se usa Acta de la reunión por defecto y no se realiza ninguna llamada al clasificador.",
+    "InventoryTitle": "Plantillas instaladas"
   }
 }

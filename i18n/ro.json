@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Regenerează cu un șablon…",
     "RegenerateFailed": "Regenerarea rezumatului a eșuat: {{err}}",
     "RegenerateFailedGeneric": "Regenerarea rezumatului a eșuat",
-    "AutoDetected": "Detectat automat: {{tpl}}",
-    "AutoDetectedTooltip": "Șablon detectat automat — faceți clic pentru a modifica",
-    "RegenerateBtn": "Regenerează",
-    "RegenerateWithSuggested": "Regenerează cu șablonul detectat automat",
-    "RegenerateChoose": "Alegeți un șablon pentru a regenera rezumatul",
-    "MoreOptions": "Mai multe opțiuni",
     "SplitMenu": {
       "Label": "Opțiuni rezumat",
-      "ChooseTemplate": "Alegeți șablon…",
-      "ReAnalyze": "Reanalizați înregistrarea",
-      "ReAnalyzeHint": "Retranscrie înregistrarea și rescrie rezumatul de la zero. Mai lent decât simpla schimbare a șablonului."
-    }
+      "ChooseTemplate": "Alege șablon…",
+      "ReAnalyzeHint": "Retranscrie înregistrarea și rescrie rezumatul de la zero. Mai lent decât schimbarea șabloanelor.",
+      "ReAnalyze": "Reanalizează înregistrarea"
+    },
+    "RegenerateWithSuggested": "Regenerează cu șablonul detectat automat",
+    "RegenerateChoose": "Alege un șablon pentru a regenera rezumatul",
+    "RegenerateBtn": "Regenerează",
+    "MoreOptions": "Mai multe opțiuni",
+    "AutoDetectedTooltip": "Șablon detectat automat — apasă pentru a schimba",
+    "AutoDetected": "Detectat automat: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Actualizat de AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Captură de ecran",
       "Recording": "Înregistrare",
       "AddedTo": "adăugat la",
-      "Open": "Deschide"
+      "Open": "Deschide",
+      "OpenNoteFirst": "Deschideți mai întâi o notă, apoi trageți media aici"
     },
     "WikiUpdateFailed": "Actualizarea wiki a eșuat: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Caută șabloane…",
     "NoResults": "Niciun șablon nu se potrivește",
     "SpecializedBadge": "Specializat",
-    "Suggested": "Sugerat",
-    "AutoSuggestTemplate": "Sugerează șablon automat",
-    "AutoSuggestTemplateHint": "Când este activat, modelul alege cel mai potrivit șablon pentru fiecare sinteză. Oprit: se folosește implicit Minuta ședinței. Reflectă Setări → Funcții AI → Șabloane de rezumat AI."
+    "AutoSuggestTemplateHint": "Când este activat, modelul alege șablonul cel mai potrivit pentru fiecare sinteză. Dezactivat: Procesul-verbal este folosit ca implicit. Reflectă Setări → Funcții IA → Șabloane de rezumat IA.",
+    "AutoSuggestTemplate": "Sugerează automat șablonul",
+    "Suggested": "Sugerat"
   },
   "RegionSelector": {
     "CaptureButton": "Captură ecran sau apăsați Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Sincronizează acum",
       "ConnectedDesc": "Notițele și wiki-ul tău sunt sincronizate automat cu GitHub. Înregistrările audio, înregistrările video și capturile de ecran nu sunt sincronizate.",
       "Interval": "Interval de sincronizare",
-      "LastCommit": "Ultima sincronizare"
+      "LastCommit": "Ultima sincronizare",
+      "RetrySync": "Reîncearcă sincronizarea"
     },
     "GitHub": {
       "Authorize": "Autorizează GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "S-a deschis o fereastră de browser. Vă rugăm să autorizați SeaMeet să acceseze contul dvs. GitHub.",
           "Label": "Așteptare autorizare..."
         }
+      },
+      "Reauthorize": "Reautorizează GitHub",
+      "TokenExpired": {
+        "Desc": "Autorizarea GitHub a expirat. Te rugăm să reautorizezi pentru a relua sincronizarea."
+      },
+      "Timeout": {
+        "Desc": "Sincronizarea a expirat. Acest lucru poate fi cauzat de o problemă de rețea sau de expirarea autorizării GitHub."
       }
     },
     "GroupTitle": "Sincronizare",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Se împing modificările către GitHub...",
-      "Committing": "Se sincronizează modificările..."
+      "Committing": "Se sincronizează modificările...",
+      "Syncing": "Sincronizare..."
     },
     "TimeAgo": {
       "DaysAgo": "acum {{count}}d",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Abonați-vă pentru a activa sincronizarea",
     "Synced": "Sincronizat · {{time}}",
     "TokenExpired": "Reautorizați",
-    "Syncing": "Se sincronizează..."
+    "Syncing": "Se sincronizează...",
+    "CreatingRepo": "Se creează depozitul...",
+    "InstallingApp": "Se instalează aplicația GitHub...",
+    "Unpushed": "{{count}} neîmpins",
+    "Timeout": "Sincronizarea a expirat"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Toate",
+    "Audio": "Audio",
+    "BatchDelete": "Șterge",
+    "ClearFilters": "Șterge filtrele",
+    "ConfirmBatchDelete": "Ștergi {{count}} fișiere?",
+    "FilteredStats": "{{filtered}} din {{total}} fișiere",
+    "GridView": "Vizualizare grilă",
+    "Import": "Importă",
+    "ListView": "Vizualizare listă",
+    "NoFiles": "Nu există fișiere media încă",
+    "NoFilesHint": "Înregistrează audio/video sau importă fișiere pentru a începe",
+    "NoResults": "Niciun fișier nu corespunde filtrelor tale",
+    "NoResultsHint": "Încearcă să ajustezi căutarea sau filtrele",
+    "Search": "Caută fișiere media...",
+    "SelectAll": "Selectează tot",
+    "Selected": "{{count}} selectate",
+    "SortByDate": "Dată",
+    "SortByDuration": "Durată",
+    "SortByName": "Nume",
+    "SortBySize": "Dimensiune",
+    "Title": "Biblioteca Media",
+    "Video": "Video",
+    "BatchExport": "Exportă",
+    "ClearSelection": "Șterge selecția",
+    "Exporting": "Se exportă...",
+    "ExportAllFailed": "Exportul a eșuat pentru {{count}} fișiere",
+    "ExportFailed": "Exportul a eșuat",
+    "ExportPartial": "Au fost exportate {{exported}} din {{total}} fișiere ({{failed}} au eșuat)",
+    "ExportSuccess": "Au fost exportate {{count}} fișiere",
+    "BatchDeletePartial": "Șterse {{count}} din {{total}} fișiere",
+    "Screenshots": "Capturi de ecran",
+    "Sort": "Sortează după"
+  },
+  "MediaCard": {
+    "Untitled": "Fără titlu"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Șabloane de rezumat AI",
+    "MenuItem": "Șabloane de rezumat IA",
+    "PageTitle": "Șabloane de rezumat IA",
+    "SectionTitle": "Șabloane de rezumat IA",
     "AutoPickToggle": "Detectează automat șablonul de rezumat",
-    "AutoPickDesc": "Lăsați modelul să aleagă cel mai bun șablon pentru fiecare întâlnire. Când este oprit, se folosește implicit Minuta ședinței și nu se face nicio chemare la clasificator.",
-    "InventoryTitle": "Șabloane instalate",
-    "Specialized": "Specializat",
-    "MenuItem": "Șabloane de rezumat AI",
-    "PageTitle": "Șabloane de rezumat AI"
+    "AutoPickDesc": "Lasă modelul să aleagă cel mai bun șablon pentru fiecare întâlnire. Când este dezactivat, Procesul-verbal este folosit ca implicit și nu se efectuează niciun apel de clasificare.",
+    "InventoryTitle": "Șabloane instalate"
   }
 }

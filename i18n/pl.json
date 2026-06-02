@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Wygeneruj ponownie z szablonem…",
     "RegenerateFailed": "Nie udało się wygenerować podsumowania ponownie: {{err}}",
     "RegenerateFailedGeneric": "Nie udało się wygenerować podsumowania ponownie",
-    "AutoDetected": "Wykryto automatycznie: {{tpl}}",
-    "AutoDetectedTooltip": "Szablon wykryty automatycznie — kliknij, aby zmienić",
-    "RegenerateBtn": "Wygeneruj ponownie",
-    "RegenerateWithSuggested": "Wygeneruj ponownie z automatycznie wykrytym szablonem",
-    "RegenerateChoose": "Wybierz szablon, aby ponownie wygenerować podsumowanie",
-    "MoreOptions": "Więcej opcji",
     "SplitMenu": {
       "Label": "Opcje podsumowania",
       "ChooseTemplate": "Wybierz szablon…",
-      "ReAnalyze": "Ponownie przeanalizuj nagranie",
-      "ReAnalyzeHint": "Ponownie transkrybuje nagranie i tworzy podsumowanie od nowa. Wolniejsze niż samo przełączanie szablonów."
-    }
+      "ReAnalyzeHint": "Ponownie transkrybuje nagranie i przepisuje podsumowanie od podstaw. Wolniejsze niż zmiana szablonu.",
+      "ReAnalyze": "Ponownie przeanalizuj nagranie"
+    },
+    "RegenerateWithSuggested": "Wygeneruj ponownie z automatycznie wykrytym szablonem",
+    "RegenerateChoose": "Wybierz szablon, aby wygenerować podsumowanie ponownie",
+    "RegenerateBtn": "Wygeneruj ponownie",
+    "MoreOptions": "Więcej opcji",
+    "AutoDetectedTooltip": "Automatycznie wykryty szablon — kliknij, aby zmienić",
+    "AutoDetected": "Automatycznie wykryto: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Zaktualizowane przez AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Zrzut ekranu",
       "Recording": "Nagranie",
       "AddedTo": "dodany do",
-      "Open": "Otwarte"
+      "Open": "Otwarte",
+      "OpenNoteFirst": "Najpierw otwórz notatkę, a następnie przeciągnij tutaj multimedia"
     },
     "WikiUpdateFailed": "Aktualizacja wiki nie powiodła się: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Szukaj szablonów…",
     "NoResults": "Brak pasujących szablonów",
     "SpecializedBadge": "Specjalistyczny",
-    "Suggested": "Sugerowane",
+    "AutoSuggestTemplateHint": "Gdy włączone, model wybiera szablon najlepiej dopasowany do każdej syntezy. Wyłączone: Protokół spotkania jest używany domyślnie. Odzwierciedla Ustawienia → Funkcje AI → Szablony podsumowań AI.",
     "AutoSuggestTemplate": "Automatycznie sugeruj szablon",
-    "AutoSuggestTemplateHint": "Gdy włączone, model wybiera najlepiej dopasowany szablon dla każdej syntezy. Wyłączone: domyślnie używany jest Protokół spotkania. Odzwierciedla Ustawienia → Funkcje AI → Szablony podsumowań AI."
+    "Suggested": "Sugerowane"
   },
   "RegionSelector": {
     "CaptureButton": "Zrób zrzut ekranu lub naciśnij Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Synchronizuj teraz",
       "ConnectedDesc": "Twoje notatki i wiki są automatycznie synchronizowane z GitHub. Nagrania audio, nagrania wideo oraz zrzuty ekranu nie są synchronizowane.",
       "Interval": "Interwał synchronizacji",
-      "LastCommit": "Ostatnia synchronizacja"
+      "LastCommit": "Ostatnia synchronizacja",
+      "RetrySync": "Ponów synchronizację"
     },
     "GitHub": {
       "Authorize": "Autoryzuj GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Otworzyło się okno przeglądarki. Proszę autoryzować SeaMeet, aby uzyskać dostęp do Twojego konta GitHub.",
           "Label": "Oczekiwanie na autoryzację..."
         }
+      },
+      "Reauthorize": "Ponownie autoryzuj GitHub",
+      "TokenExpired": {
+        "Desc": "Autoryzacja GitHub wygasła. Proszę ponownie autoryzować, aby wznowić synchronizację."
+      },
+      "Timeout": {
+        "Desc": "Synchronizacja przekroczyła limit czasu. Może to być spowodowane problemem z siecią lub wygasłą autoryzacją GitHub."
       }
     },
     "GroupTitle": "Synchronizacja",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Wysyłanie do GitHub...",
-      "Committing": "Synchronizowanie zmian..."
+      "Committing": "Synchronizowanie zmian...",
+      "Syncing": "Synchronizowanie..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} dni temu",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Subskrybuj, aby włączyć synchronizację",
     "Synced": "Zsynchronizowano · {{time}}",
     "TokenExpired": "Ponowna autoryzacja",
-    "Syncing": "Synchronizowanie..."
+    "Syncing": "Synchronizowanie...",
+    "CreatingRepo": "Tworzenie repozytorium...",
+    "InstallingApp": "Instalowanie aplikacji GitHub...",
+    "Unpushed": "{{count}} niezatwierdzonych",
+    "Timeout": "Synchronizacja przekroczyła limit czasu"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Wszystkie",
+    "Audio": "Audio",
+    "BatchDelete": "Usuń",
+    "ClearFilters": "Wyczyść filtry",
+    "ConfirmBatchDelete": "Usunąć {{count}} plików?",
+    "FilteredStats": "{{filtered}} z {{total}} plików",
+    "GridView": "Widok siatki",
+    "Import": "Importuj",
+    "ListView": "Widok listy",
+    "NoFiles": "Brak plików multimedialnych",
+    "NoFilesHint": "Nagraj audio/wideo lub zaimportuj pliki, aby zacząć",
+    "NoResults": "Brak plików pasujących do filtrów",
+    "NoResultsHint": "Spróbuj zmienić wyszukiwanie lub filtry",
+    "Search": "Szukaj plików multimedialnych...",
+    "SelectAll": "Zaznacz wszystko",
+    "Selected": "{{count}} wybranych",
+    "SortByDate": "Data",
+    "SortByDuration": "Czas trwania",
+    "SortByName": "Nazwa",
+    "SortBySize": "Rozmiar",
+    "Title": "Biblioteka mediów",
+    "Video": "Wideo",
+    "BatchExport": "Eksportuj",
+    "ClearSelection": "Wyczyść zaznaczenie",
+    "Exporting": "Eksportowanie...",
+    "ExportAllFailed": "Nie udało się wyeksportować {{count}} plików",
+    "ExportFailed": "Eksport nie powiódł się",
+    "ExportPartial": "Wyeksportowano {{exported}} z {{total}} plików ({{failed}} nie powiodło się)",
+    "ExportSuccess": "Wyeksportowano {{count}} plików",
+    "BatchDeletePartial": "Usunięto {{count}} z {{total}} plików",
+    "Screenshots": "Zrzuty ekranu",
+    "Sort": "Sortuj według"
+  },
+  "MediaCard": {
+    "Untitled": "Bez tytułu"
+  },
   "AITemplateSettings": {
+    "MenuItem": "Szablony podsumowań AI",
+    "PageTitle": "Szablony podsumowań AI",
     "SectionTitle": "Szablony podsumowań AI",
     "AutoPickToggle": "Automatycznie wykrywaj szablon podsumowania",
-    "AutoPickDesc": "Pozwól modelowi wybrać najlepszy szablon dla każdego spotkania. Gdy wyłączone, domyślnie używany jest Protokół spotkania i nie jest wykonywane wywołanie klasyfikatora.",
-    "InventoryTitle": "Zainstalowane szablony",
-    "Specialized": "Wyspecjalizowane",
-    "MenuItem": "Szablony podsumowań AI",
-    "PageTitle": "Szablony podsumowań AI"
+    "AutoPickDesc": "Pozwól modelowi wybrać najlepszy szablon dla każdego spotkania. Gdy wyłączone, Protokół spotkania jest używany domyślnie i nie jest wykonywane żadne wywołanie klasyfikatora.",
+    "InventoryTitle": "Zainstalowane szablony"
   }
 }

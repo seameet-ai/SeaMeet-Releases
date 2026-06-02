@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "使用範本重新生成…",
     "RegenerateFailed": "重新生成摘要失敗：{{err}}",
     "RegenerateFailedGeneric": "重新生成摘要失敗",
-    "AutoDetected": "已自動偵測：{{tpl}}",
-    "AutoDetectedTooltip": "已自動偵測範本 — 點擊以變更",
-    "RegenerateBtn": "重新產生",
-    "RegenerateWithSuggested": "使用自動偵測的範本重新產生",
-    "RegenerateChoose": "選擇範本以重新產生摘要",
-    "MoreOptions": "更多選項",
     "SplitMenu": {
       "Label": "摘要選項",
       "ChooseTemplate": "選擇範本…",
-      "ReAnalyze": "重新分析錄音",
-      "ReAnalyzeHint": "重新轉錄錄音並從頭重寫摘要。比僅切換範本更慢。"
-    }
+      "ReAnalyzeHint": "重新轉錄錄音並從頭開始重寫摘要。比切換範本更慢。",
+      "ReAnalyze": "重新分析錄音"
+    },
+    "RegenerateWithSuggested": "使用自動偵測的範本重新產生",
+    "RegenerateChoose": "選擇範本以重新產生摘要",
+    "RegenerateBtn": "重新產生",
+    "MoreOptions": "更多選項",
+    "AutoDetectedTooltip": "自動偵測的範本 — 點擊變更",
+    "AutoDetected": "自動偵測:{{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ 已由 AI 更新",
@@ -1694,7 +1694,8 @@
       "Screenshot": "截圖",
       "Recording": "錄音",
       "AddedTo": "已新增至",
-      "Open": "開啟"
+      "Open": "開啟",
+      "OpenNoteFirst": "請先打開一個筆記，然後將媒體拖到這裡"
     },
     "WikiUpdateFailed": "Wiki更新失敗：{{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "搜尋範本…",
     "NoResults": "沒有符合的範本",
     "SpecializedBadge": "專業",
-    "Suggested": "建議",
+    "AutoSuggestTemplateHint": "啟用時，模型會為每次合成選擇最合適的範本。關閉:預設使用會議記錄。反映設定 → AI 功能 → AI 摘要範本。",
     "AutoSuggestTemplate": "自動建議範本",
-    "AutoSuggestTemplateHint": "開啟後，模型會為每次合成挑選最合適的範本。關閉：預設使用會議紀要。與 設定 → AI 功能 → AI 摘要範本 保持一致。"
+    "Suggested": "建議"
   },
   "RegionSelector": {
     "CaptureButton": "擷取畫面或按 Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "立即同步",
       "ConnectedDesc": "您的筆記和維基會自動同步到 GitHub。音頻錄音、視頻錄像和截圖不會同步。",
       "Interval": "同步間隔",
-      "LastCommit": "上次同步"
+      "LastCommit": "上次同步",
+      "RetrySync": "重試同步"
     },
     "GitHub": {
       "Authorize": "授權 GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "瀏覽器視窗已開啟。請授權 SeaMeet 存取您的 GitHub 帳戶。",
           "Label": "等待授權中..."
         }
+      },
+      "Reauthorize": "重新授權 GitHub",
+      "TokenExpired": {
+        "Desc": "GitHub 授權已過期。請重新授權以繼續同步。"
+      },
+      "Timeout": {
+        "Desc": "同步逾時。這可能是由於網路問題或 GitHub 授權已過期所致。"
       }
     },
     "GroupTitle": "同步",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "正在推送到 GitHub...",
-      "Committing": "正在同步更改..."
+      "Committing": "正在同步更改...",
+      "Syncing": "同步中..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} 天前",
@@ -3259,7 +3269,11 @@
     "Subscribe": "訂閱以啟用同步",
     "Synced": "已同步 · {{time}}",
     "TokenExpired": "重新授權",
-    "Syncing": "同步中..."
+    "Syncing": "同步中...",
+    "CreatingRepo": "正在建立儲存庫...",
+    "InstallingApp": "正在安裝 GitHub 應用程式...",
+    "Unpushed": "{{count}} 個未推送",
+    "Timeout": "同步逾時"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "全部",
+    "Audio": "音訊",
+    "BatchDelete": "刪除",
+    "ClearFilters": "清除篩選條件",
+    "ConfirmBatchDelete": "確定刪除 {{count}} 個檔案？",
+    "FilteredStats": "{{filtered}} / {{total}} 個檔案",
+    "GridView": "網格檢視",
+    "Import": "匯入",
+    "ListView": "列表檢視",
+    "NoFiles": "尚無媒體檔案",
+    "NoFilesHint": "錄製音訊/影片或匯入檔案以開始",
+    "NoResults": "沒有符合篩選條件的檔案",
+    "NoResultsHint": "試著調整搜尋或篩選條件",
+    "Search": "搜尋媒體檔案...",
+    "SelectAll": "全選",
+    "Selected": "已選擇 {{count}} 個",
+    "SortByDate": "日期",
+    "SortByDuration": "長度",
+    "SortByName": "名稱",
+    "SortBySize": "大小",
+    "Title": "媒體庫",
+    "Video": "影片",
+    "BatchExport": "匯出",
+    "ClearSelection": "清除選擇",
+    "Exporting": "正在匯出...",
+    "ExportAllFailed": "匯出 {{count}} 個檔案失敗",
+    "ExportFailed": "匯出失敗",
+    "ExportPartial": "已匯出 {{exported}} / {{total}} 個檔案（{{failed}} 個失敗）",
+    "ExportSuccess": "已匯出 {{count}} 個檔案",
+    "BatchDeletePartial": "已刪除 {{count}} 個，共 {{total}} 個檔案",
+    "Screenshots": "螢幕截圖",
+    "Sort": "排序方式"
+  },
+  "MediaCard": {
+    "Untitled": "未命名"
+  },
   "AITemplateSettings": {
+    "MenuItem": "AI 摘要範本",
+    "PageTitle": "AI 摘要範本",
     "SectionTitle": "AI 摘要範本",
     "AutoPickToggle": "自動偵測摘要範本",
-    "AutoPickDesc": "讓模型為每場會議挑選最合適的範本。關閉時預設使用會議紀要，且不會呼叫分類器。",
-    "InventoryTitle": "已安裝範本",
-    "Specialized": "專業",
-    "MenuItem": "AI 摘要範本",
-    "PageTitle": "AI 摘要範本"
+    "AutoPickDesc": "讓模型為每次會議選擇最佳範本。關閉時，預設使用會議記錄，不會進行分類器呼叫。",
+    "InventoryTitle": "已安裝的範本"
   }
 }

@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "I-regenerate gamit ang template…",
     "RegenerateFailed": "Nabigo ang pag-regenerate ng buod: {{err}}",
     "RegenerateFailedGeneric": "Nabigo ang pag-regenerate ng buod",
-    "AutoDetected": "Awtomatikong natukoy: {{tpl}}",
-    "AutoDetectedTooltip": "Awtomatikong natukoy na template — i-click para baguhin",
-    "RegenerateBtn": "I-regenerate",
-    "RegenerateWithSuggested": "I-regenerate gamit ang awtomatikong natukoy na template",
-    "RegenerateChoose": "Pumili ng template para i-regenerate ang buod",
-    "MoreOptions": "Iba pang opsyon",
     "SplitMenu": {
-      "Label": "Mga opsyon sa buod",
+      "Label": "Mga opsyon ng buod",
       "ChooseTemplate": "Pumili ng template…",
-      "ReAnalyze": "I-analyze muli ang recording",
-      "ReAnalyzeHint": "Itra-transcribe muli ang recording at isusulat muli ang buod mula sa simula. Mas mabagal kaysa sa pagpapalit ng template."
-    }
+      "ReAnalyzeHint": "Muling tina-transcribe ang recording at muling isinusulat ang buod mula sa simula. Mas mabagal kaysa sa pagpapalit ng template.",
+      "ReAnalyze": "Muling suriin ang recording"
+    },
+    "RegenerateWithSuggested": "Muling buoin gamit ang awtomatikong natukoy na template",
+    "RegenerateChoose": "Pumili ng template para muling buoin ang buod",
+    "RegenerateBtn": "Muling buoin",
+    "MoreOptions": "Higit pang mga opsyon",
+    "AutoDetectedTooltip": "Awtomatikong natukoy na template — i-click para baguhin",
+    "AutoDetected": "Awtomatikong natukoy: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Na-update ng AI",
@@ -1691,10 +1691,11 @@
   },
   "Notes": {
     "Toast": {
+      "Screenshot": "Screenshot",
       "Recording": "Rekording",
       "AddedTo": "idinagdag sa",
       "Open": "Buksan",
-      "Screenshot": "Screenshot"
+      "OpenNoteFirst": "Buksan muna ang isang tala, pagkatapos ay i-drag ang media dito"
     },
     "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Maghanap ng template…",
     "NoResults": "Walang tumugmang template",
     "SpecializedBadge": "Espesyalisado",
-    "Suggested": "Iminumungkahi",
+    "AutoSuggestTemplateHint": "Kapag naka-on, pinipili ng modelo ang pinakanababagay na template sa bawat synthesis. Naka-off: ginagamit ang Meeting Minutes bilang default. Sumasalamin sa Mga Setting → Mga Tampok ng AI → Mga Template ng Buod ng AI.",
     "AutoSuggestTemplate": "Awtomatikong magmungkahi ng template",
-    "AutoSuggestTemplateHint": "Kapag naka-on, pinipili ng modelo ang pinakaangkop na template para sa bawat synthesis. Off: ginagamit ang Meeting Minutes bilang default. Sumasalamin sa Settings → AI Features → AI Summary Templates."
+    "Suggested": "Iminumungkahi"
   },
   "RegionSelector": {
     "CaptureButton": "Kukunan ng Screen o Pindutin ang Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "I-sync Ngayon",
       "ConnectedDesc": "Ang iyong mga tala at wiki ay awtomatikong nasi-sync sa GitHub. Ang mga audio recording, video recording, at screenshot ay hindi nasi-sync.",
       "Interval": "Agwat ng pag-sync",
-      "LastCommit": "Huling na-sync"
+      "LastCommit": "Huling na-sync",
+      "RetrySync": "Subukang Muling I-sync"
     },
     "GitHub": {
       "Authorize": "Pahintulutan ang GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Isang browser window ang nagbukas. Mangyaring pahintulutan ang SeaMeet na ma-access ang iyong GitHub account.",
           "Label": "Naghihintay ng pahintulot..."
         }
+      },
+      "Reauthorize": "Muling pahintulutan ang GitHub",
+      "TokenExpired": {
+        "Desc": "Nag-expire na ang pahintulot sa GitHub. Mangyaring muling pahintulutan upang ipagpatuloy ang pagsi-sync."
+      },
+      "Timeout": {
+        "Desc": "Napatigil ang pag-sync dahil sa timeout. Maaaring sanhi ito ng problema sa network o nag-expire na ang pahintulot sa GitHub."
       }
     },
     "GroupTitle": "Pag-sync",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Nagpu-push sa GitHub...",
-      "Committing": "Isini-sync ang mga pagbabago..."
+      "Committing": "Isini-sync ang mga pagbabago...",
+      "Syncing": "Nagsi-sync..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}d ang nakalipas",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Mag-subscribe upang paganahin ang sync",
     "Synced": "Na-sync · {{time}}",
     "TokenExpired": "Muling pahintulutan",
-    "Syncing": "Nagsi-sync..."
+    "Syncing": "Nagsi-sync...",
+    "CreatingRepo": "Lumilikha ng repositoryo...",
+    "InstallingApp": "Ini-install ang GitHub App...",
+    "Unpushed": "{{count}} hindi naipush",
+    "Timeout": "Napatigil ang pag-sync dahil sa timeout"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Lahat",
+    "Audio": "Audio",
+    "BatchDelete": "Tanggalin",
+    "ClearFilters": "I-clear ang Mga Filter",
+    "ConfirmBatchDelete": "Tanggalin ang {{count}} na mga file?",
+    "FilteredStats": "{{filtered}} sa {{total}} na mga file",
+    "GridView": "Grid na Tanawin",
+    "Import": "I-import",
+    "ListView": "Listahan na Tanawin",
+    "NoFiles": "Walang media file pa",
+    "NoFilesHint": "Mag-record ng audio/video o mag-import ng mga file upang magsimula",
+    "NoResults": "Walang file na tumutugma sa iyong mga filter",
+    "NoResultsHint": "Subukang ayusin ang iyong paghahanap o mga filter",
+    "Search": "Maghanap ng mga media file...",
+    "SelectAll": "Piliin Lahat",
+    "Selected": "{{count}} napili",
+    "SortByDate": "Petsa",
+    "SortByDuration": "Tagal",
+    "SortByName": "Pangalan",
+    "SortBySize": "Laki",
+    "Title": "Aklatan ng Media",
+    "Video": "Video",
+    "BatchExport": "I-export",
+    "ClearSelection": "I-clear ang pagpili",
+    "Exporting": "Nag-e-export...",
+    "ExportAllFailed": "Nabigong i-export ang {{count}} na mga file",
+    "ExportFailed": "Nabigo ang pag-export",
+    "ExportPartial": "Na-export ang {{exported}} sa {{total}} na mga file ({{failed}} nabigo)",
+    "ExportSuccess": "Na-export ang {{count}} na mga file",
+    "BatchDeletePartial": "Nabura ang {{count}} sa {{total}} na mga file",
+    "Screenshots": "Mga Screenshot",
+    "Sort": "Ayusin ayon sa"
+  },
+  "MediaCard": {
+    "Untitled": "Walang Pamagat"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Mga Template ng AI Summary",
+    "MenuItem": "Mga Template ng Buod ng AI",
+    "PageTitle": "Mga Template ng Buod ng AI",
+    "SectionTitle": "Mga Template ng Buod ng AI",
     "AutoPickToggle": "Awtomatikong tukuyin ang template ng buod",
-    "AutoPickDesc": "Hayaan ang modelo na pumili ng pinakamahusay na template para sa bawat pulong. Kapag naka-off, ginagamit ang Meeting Minutes bilang default at walang tawag sa classifier.",
-    "InventoryTitle": "Mga naka-install na template",
-    "Specialized": "Espesyalisado",
-    "MenuItem": "Mga Template ng AI Summary",
-    "PageTitle": "Mga Template ng AI Summary"
+    "AutoPickDesc": "Hayaan ang modelong pumili ng pinakamahusay na template para sa bawat pulong. Kapag naka-off, ginagamit ang Meeting Minutes bilang default at walang ginagawang tawag sa classifier.",
+    "InventoryTitle": "Naka-install na mga template"
   }
 }

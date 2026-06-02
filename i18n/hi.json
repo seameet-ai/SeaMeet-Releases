@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "टेम्पलेट के साथ पुनः बनाएँ…",
     "RegenerateFailed": "सारांश पुनः बनाना विफल: {{err}}",
     "RegenerateFailedGeneric": "सारांश पुनः बनाना विफल",
-    "AutoDetected": "स्वतः पहचाना गया: {{tpl}}",
-    "AutoDetectedTooltip": "स्वतः पहचाना गया टेम्पलेट — बदलने के लिए क्लिक करें",
-    "RegenerateBtn": "पुनः उत्पन्न करें",
-    "RegenerateWithSuggested": "स्वतः पहचाने गए टेम्पलेट से पुनः उत्पन्न करें",
-    "RegenerateChoose": "सारांश को पुनः उत्पन्न करने के लिए एक टेम्पलेट चुनें",
-    "MoreOptions": "और विकल्प",
     "SplitMenu": {
       "Label": "सारांश विकल्प",
       "ChooseTemplate": "टेम्पलेट चुनें…",
-      "ReAnalyze": "रिकॉर्डिंग का पुनः विश्लेषण",
-      "ReAnalyzeHint": "रिकॉर्डिंग को फिर से ट्रांसक्राइब करता है और सारांश को शुरू से लिखता है। टेम्पलेट बदलने से धीमा।"
-    }
+      "ReAnalyzeHint": "रिकॉर्डिंग का पुनः ट्रांसक्रिप्शन करता है और सारांश को शुरू से लिखता है। टेम्पलेट बदलने से धीमा।",
+      "ReAnalyze": "रिकॉर्डिंग का पुनः विश्लेषण करें"
+    },
+    "RegenerateWithSuggested": "स्वतः-पहचाने गए टेम्पलेट के साथ पुनः उत्पन्न करें",
+    "RegenerateChoose": "सारांश को पुनः उत्पन्न करने के लिए टेम्पलेट चुनें",
+    "RegenerateBtn": "पुनः उत्पन्न करें",
+    "MoreOptions": "अधिक विकल्प",
+    "AutoDetectedTooltip": "स्वतः-पहचाना गया टेम्पलेट — बदलने के लिए क्लिक करें",
+    "AutoDetected": "स्वतः-पहचाना गया: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ AI द्वारा अपडेट किया गया",
@@ -1694,7 +1694,8 @@
       "Screenshot": "स्क्रीनशॉट",
       "Recording": "रिकॉर्डिंग",
       "AddedTo": "जोड़ा गया",
-      "Open": "खोलें"
+      "Open": "खोलें",
+      "OpenNoteFirst": "पहले एक नोट खोलें, फिर मीडिया यहाँ खींचें"
     },
     "WikiUpdateFailed": "विकि अपडेट विफल: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "टेम्पलेट खोजें…",
     "NoResults": "कोई टेम्पलेट मेल नहीं खाता",
     "SpecializedBadge": "विशेषीकृत",
-    "Suggested": "सुझाया गया",
-    "AutoSuggestTemplate": "टेम्पलेट स्वतः सुझाएँ",
-    "AutoSuggestTemplateHint": "चालू होने पर, मॉडल हर सिंथेसिस के लिए सबसे उपयुक्त टेम्पलेट चुनता है। बंद: मीटिंग मिनट्स डिफ़ॉल्ट रूप से उपयोग होता है। सेटिंग्स → AI सुविधाएँ → AI सारांश टेम्पलेट को दर्शाता है।"
+    "AutoSuggestTemplateHint": "चालू होने पर, मॉडल हर संश्लेषण के लिए सबसे उपयुक्त टेम्पलेट चुनता है। बंद: मीटिंग मिनट्स डिफ़ॉल्ट रूप से उपयोग होता है। सेटिंग्स → AI सुविधाएँ → AI सारांश टेम्पलेट्स को दर्शाता है।",
+    "AutoSuggestTemplate": "स्वतः टेम्पलेट सुझाएँ",
+    "Suggested": "सुझाया गया"
   },
   "RegionSelector": {
     "CaptureButton": "स्क्रीन का स्नैपशॉट लें या Enter दबाएँ",
@@ -3166,7 +3167,8 @@
       "CommitNow": "अभी सिंक करें",
       "ConnectedDesc": "आपके नोट्स और विकी स्वचालित रूप से GitHub से सिंक होते हैं। ऑडियो रिकॉर्डिंग, वीडियो रिकॉर्डिंग, और स्क्रीनशॉट्स सिंक नहीं होते हैं।",
       "Interval": "सिंक अंतराल",
-      "LastCommit": "अंतिम सिंक"
+      "LastCommit": "अंतिम सिंक",
+      "RetrySync": "सिंक पुनः प्रयास करें"
     },
     "GitHub": {
       "Authorize": "GitHub को अधिकृत करें",
@@ -3221,6 +3223,13 @@
           "Desc": "एक ब्राउज़र विंडो खुल गई है। कृपया SeaMeet को आपके GitHub खाते तक पहुँचने की अनुमति दें।",
           "Label": "अनुमोदन की प्रतीक्षा कर रहे हैं..."
         }
+      },
+      "Reauthorize": "GitHub को पुनः अधिकृत करें",
+      "TokenExpired": {
+        "Desc": "GitHub अधिकरण समाप्त हो गया है। कृपया सिंक जारी रखने के लिए पुनः अधिकृत करें।"
+      },
+      "Timeout": {
+        "Desc": "सिंक का समय समाप्त हो गया। यह नेटवर्क समस्या या GitHub प्राधिकरण की समाप्ति के कारण हो सकता है।"
       }
     },
     "GroupTitle": "सिंक",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "GitHub पर पुश किया जा रहा है...",
-      "Committing": "परिवर्तनों को सिंक किया जा रहा है..."
+      "Committing": "परिवर्तनों को सिंक किया जा रहा है...",
+      "Syncing": "सिंक हो रहा है..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} दिन पहले",
@@ -3259,7 +3269,11 @@
     "Subscribe": "सिंक सक्षम करने के लिए सदस्यता लें",
     "Synced": "सिंक हो गया · {{time}}",
     "TokenExpired": "पुनः प्राधिकृत करें",
-    "Syncing": "सिंक हो रहा है..."
+    "Syncing": "सिंक हो रहा है...",
+    "CreatingRepo": "रिपॉजिटरी बनाई जा रही है...",
+    "InstallingApp": "GitHub ऐप इंस्टॉल हो रहा है...",
+    "Unpushed": "{{count}} अनपुश्ड",
+    "Timeout": "सिंक का समय समाप्त हो गया"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "सभी",
+    "Audio": "ऑडियो",
+    "BatchDelete": "हटाएं",
+    "ClearFilters": "फ़िल्टर साफ़ करें",
+    "ConfirmBatchDelete": "{{count}} फ़ाइलें हटाएं?",
+    "FilteredStats": "{{filtered}} में से {{total}} फ़ाइलें",
+    "GridView": "ग्रिड दृश्य",
+    "Import": "आयात करें",
+    "ListView": "सूची दृश्य",
+    "NoFiles": "अभी कोई मीडिया फ़ाइलें नहीं",
+    "NoFilesHint": "शुरू करने के लिए ऑडियो/वीडियो रिकॉर्ड करें या फ़ाइलें आयात करें",
+    "NoResults": "आपके फ़िल्टर से कोई फ़ाइल मेल नहीं खाती",
+    "NoResultsHint": "अपनी खोज या फ़िल्टर समायोजित करने का प्रयास करें",
+    "Search": "मीडिया फ़ाइलें खोजें...",
+    "SelectAll": "सभी चुनें",
+    "Selected": "{{count}} चयनित",
+    "SortByDate": "तारीख",
+    "SortByDuration": "अवधि",
+    "SortByName": "नाम",
+    "SortBySize": "आकार",
+    "Title": "मीडिया लाइब्रेरी",
+    "Video": "वीडियो",
+    "BatchExport": "निर्यात करें",
+    "ClearSelection": "चयन साफ़ करें",
+    "Exporting": "निर्यात किया जा रहा है...",
+    "ExportAllFailed": "{{count}} फ़ाइलें निर्यात करने में विफल",
+    "ExportFailed": "निर्यात विफल",
+    "ExportPartial": "{{total}} में से {{exported}} फ़ाइलें निर्यात की गईं ({{failed}} असफल)",
+    "ExportSuccess": "{{count}} फ़ाइलें निर्यात की गईं",
+    "BatchDeletePartial": "{{total}} फ़ाइलों में से {{count}} हटाई गईं",
+    "Screenshots": "स्क्रीनशॉट्स",
+    "Sort": "इसके अनुसार क्रमबद्ध करें"
+  },
+  "MediaCard": {
+    "Untitled": "शीर्षकहीन"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "AI सारांश टेम्पलेट",
-    "AutoPickToggle": "सारांश टेम्पलेट स्वतः पहचानें",
-    "AutoPickDesc": "मॉडल को हर बैठक के लिए सर्वोत्तम टेम्पलेट चुनने दें। बंद होने पर, मीटिंग मिनट्स डिफ़ॉल्ट रूप से उपयोग होता है और कोई वर्गीकरण कॉल नहीं की जाती।",
-    "InventoryTitle": "स्थापित टेम्पलेट",
-    "Specialized": "विशिष्ट",
-    "MenuItem": "AI सारांश टेम्पलेट",
-    "PageTitle": "AI सारांश टेम्पलेट"
+    "MenuItem": "AI सारांश टेम्पलेट्स",
+    "PageTitle": "AI सारांश टेम्पलेट्स",
+    "SectionTitle": "AI सारांश टेम्पलेट्स",
+    "AutoPickToggle": "सारांश टेम्पलेट का स्वतः पता लगाएँ",
+    "AutoPickDesc": "मॉडल को हर मीटिंग के लिए सबसे अच्छा टेम्पलेट चुनने दें। बंद होने पर, मीटिंग मिनट्स डिफ़ॉल्ट रूप से उपयोग होता है और कोई वर्गीकरण कॉल नहीं की जाती।",
+    "InventoryTitle": "स्थापित टेम्पलेट्स"
   }
 }

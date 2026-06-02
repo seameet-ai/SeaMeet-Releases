@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Jana semula dengan templat…",
     "RegenerateFailed": "Penjanaan semula ringkasan gagal: {{err}}",
     "RegenerateFailedGeneric": "Penjanaan semula ringkasan gagal",
-    "AutoDetected": "Dikesan automatik: {{tpl}}",
-    "AutoDetectedTooltip": "Templat dikesan automatik — klik untuk menukar",
-    "RegenerateBtn": "Jana semula",
-    "RegenerateWithSuggested": "Jana semula dengan templat yang dikesan automatik",
-    "RegenerateChoose": "Pilih templat untuk menjana semula ringkasan",
-    "MoreOptions": "Lebih banyak pilihan",
     "SplitMenu": {
       "Label": "Pilihan ringkasan",
       "ChooseTemplate": "Pilih templat…",
-      "ReAnalyze": "Analisis semula rakaman",
-      "ReAnalyzeHint": "Mentranskripsi semula rakaman dan menulis semula ringkasan dari awal. Lebih perlahan daripada hanya menukar templat."
-    }
+      "ReAnalyzeHint": "Mentranskripsi semula rakaman dan menulis semula ringkasan dari awal. Lebih lambat daripada menukar templat.",
+      "ReAnalyze": "Analisis semula rakaman"
+    },
+    "RegenerateWithSuggested": "Jana semula dengan templat yang dikesan secara automatik",
+    "RegenerateChoose": "Pilih templat untuk menjana semula ringkasan",
+    "RegenerateBtn": "Jana semula",
+    "MoreOptions": "Lebih banyak pilihan",
+    "AutoDetectedTooltip": "Templat dikesan secara automatik — klik untuk menukar",
+    "AutoDetected": "Dikesan secara automatik: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Dikemas kini oleh AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Tangkapan skrin",
       "Recording": "Rakaman",
       "AddedTo": "ditambahkan kepada",
-      "Open": "Buka"
+      "Open": "Buka",
+      "OpenNoteFirst": "Buka nota terlebih dahulu, kemudian seret media ke sini"
     },
     "WikiUpdateFailed": "Kemas kini wiki gagal: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Cari templat…",
     "NoResults": "Tiada templat sepadan",
     "SpecializedBadge": "Khusus",
-    "Suggested": "Dicadangkan",
-    "AutoSuggestTemplate": "Cadangkan templat automatik",
-    "AutoSuggestTemplateHint": "Apabila dihidupkan, model memilih templat yang paling sesuai untuk setiap sintesis. Mati: Minit Mesyuarat digunakan sebagai lalai. Mencerminkan Tetapan → Ciri AI → Templat Ringkasan AI."
+    "AutoSuggestTemplateHint": "Apabila dihidupkan, model memilih templat yang paling sesuai untuk setiap sintesis. Mati: Minit Mesyuarat digunakan secara lalai. Mencerminkan Tetapan → Ciri AI → Templat Ringkasan AI.",
+    "AutoSuggestTemplate": "Cadangkan templat secara automatik",
+    "Suggested": "Dicadangkan"
   },
   "RegionSelector": {
     "CaptureButton": "Tangkap Skrin atau Tekan Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Segerakkan Sekarang",
       "ConnectedDesc": "Nota dan wiki anda disegerakkan secara automatik ke GitHub. Rakaman audio, rakaman video, dan tangkapan skrin tidak disegerakkan.",
       "Interval": "Selang penyegerakan",
-      "LastCommit": "Terakhir disegerakkan"
+      "LastCommit": "Terakhir disegerakkan",
+      "RetrySync": "Cuba Semula Penyegerakan"
     },
     "GitHub": {
       "Authorize": "Benarkan GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Tetingkap pelayar telah dibuka. Sila beri kebenaran kepada SeaMeet untuk mengakses akaun GitHub anda.",
           "Label": "Menunggu kebenaran..."
         }
+      },
+      "Reauthorize": "Benarkan semula GitHub",
+      "TokenExpired": {
+        "Desc": "Kebenaran GitHub telah tamat. Sila benarkan semula untuk meneruskan penyelarasan."
+      },
+      "Timeout": {
+        "Desc": "Penyegerakan tamat masa. Ini mungkin disebabkan oleh masalah rangkaian atau kebenaran GitHub yang telah tamat tempoh."
       }
     },
     "GroupTitle": "Penyelarasan",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Sedang menolak ke GitHub...",
-      "Committing": "Menyegerakkan perubahan..."
+      "Committing": "Menyegerakkan perubahan...",
+      "Syncing": "Menyelaraskan..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}h yang lalu",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Langgan untuk mengaktifkan penyelarasan",
     "Synced": "Diselaraskan · {{time}}",
     "TokenExpired": "Sahkan semula",
-    "Syncing": "Menyelaraskan..."
+    "Syncing": "Menyelaraskan...",
+    "CreatingRepo": "Mencipta repositori...",
+    "InstallingApp": "Memasang Aplikasi GitHub...",
+    "Unpushed": "{{count}} belum didorong",
+    "Timeout": "Penyegerakan tamat masa"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Semua",
+    "Audio": "Audio",
+    "BatchDelete": "Padam",
+    "ClearFilters": "Kosongkan Penapis",
+    "ConfirmBatchDelete": "Padam {{count}} fail?",
+    "FilteredStats": "{{filtered}} daripada {{total}} fail",
+    "GridView": "Paparan Grid",
+    "Import": "Import",
+    "ListView": "Paparan Senarai",
+    "NoFiles": "Tiada fail media lagi",
+    "NoFilesHint": "Rakam audio/video atau import fail untuk bermula",
+    "NoResults": "Tiada fail yang sepadan dengan penapis anda",
+    "NoResultsHint": "Cuba laraskan carian atau penapis anda",
+    "Search": "Cari fail media...",
+    "SelectAll": "Pilih Semua",
+    "Selected": "{{count}} dipilih",
+    "SortByDate": "Tarikh",
+    "SortByDuration": "Tempoh",
+    "SortByName": "Nama",
+    "SortBySize": "Saiz",
+    "Title": "Perpustakaan Media",
+    "Video": "Video",
+    "BatchExport": "Eksport",
+    "ClearSelection": "Kosongkan pilihan",
+    "Exporting": "Sedang mengeksport...",
+    "ExportAllFailed": "Gagal mengeksport {{count}} fail",
+    "ExportFailed": "Eksport gagal",
+    "ExportPartial": "Berjaya mengeksport {{exported}} daripada {{total}} fail ({{failed}} gagal)",
+    "ExportSuccess": "Berjaya mengeksport {{count}} fail",
+    "BatchDeletePartial": "Telah dipadamkan {{count}} daripada {{total}} fail",
+    "Screenshots": "Tangkapan Skrin",
+    "Sort": "Susun mengikut"
+  },
+  "MediaCard": {
+    "Untitled": "Tiada Tajuk"
+  },
   "AITemplateSettings": {
+    "MenuItem": "Templat Ringkasan AI",
+    "PageTitle": "Templat Ringkasan AI",
     "SectionTitle": "Templat Ringkasan AI",
     "AutoPickToggle": "Kesan templat ringkasan secara automatik",
-    "AutoPickDesc": "Biarkan model memilih templat terbaik untuk setiap mesyuarat. Apabila dimatikan, Minit Mesyuarat digunakan sebagai lalai dan tiada panggilan pengelas dibuat.",
-    "InventoryTitle": "Templat dipasang",
-    "Specialized": "Khusus",
-    "MenuItem": "Templat Ringkasan AI",
-    "PageTitle": "Templat Ringkasan AI"
+    "AutoPickDesc": "Biarkan model memilih templat terbaik untuk setiap mesyuarat. Apabila mati, Minit Mesyuarat digunakan secara lalai dan tiada panggilan pengelas dibuat.",
+    "InventoryTitle": "Templat dipasang"
   }
 }

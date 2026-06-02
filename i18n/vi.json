@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Tạo lại bằng mẫu…",
     "RegenerateFailed": "Tạo lại bản tóm tắt thất bại: {{err}}",
     "RegenerateFailedGeneric": "Tạo lại bản tóm tắt thất bại",
-    "AutoDetected": "Tự động phát hiện: {{tpl}}",
-    "AutoDetectedTooltip": "Mẫu được tự động phát hiện — nhấp để thay đổi",
-    "RegenerateBtn": "Tạo lại",
-    "RegenerateWithSuggested": "Tạo lại với mẫu phát hiện tự động",
-    "RegenerateChoose": "Chọn một mẫu để tạo lại bản tóm tắt",
-    "MoreOptions": "Tùy chọn khác",
     "SplitMenu": {
       "Label": "Tùy chọn tóm tắt",
       "ChooseTemplate": "Chọn mẫu…",
-      "ReAnalyze": "Phân tích lại bản ghi",
-      "ReAnalyzeHint": "Phiên âm lại bản ghi và viết lại bản tóm tắt từ đầu. Chậm hơn so với chỉ đổi mẫu."
-    }
+      "ReAnalyzeHint": "Phiên âm lại bản ghi và viết lại bản tóm tắt từ đầu. Chậm hơn so với chuyển đổi mẫu.",
+      "ReAnalyze": "Phân tích lại bản ghi"
+    },
+    "RegenerateWithSuggested": "Tạo lại với mẫu phát hiện tự động",
+    "RegenerateChoose": "Chọn mẫu để tạo lại bản tóm tắt",
+    "RegenerateBtn": "Tạo lại",
+    "MoreOptions": "Tùy chọn khác",
+    "AutoDetectedTooltip": "Mẫu phát hiện tự động — nhấp để thay đổi",
+    "AutoDetected": "Phát hiện tự động: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Được cập nhật bởi AI",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Ảnh chụp màn hình",
       "Recording": "Bản ghi",
       "AddedTo": "đã thêm vào",
-      "Open": "Mở"
+      "Open": "Mở",
+      "OpenNoteFirst": "Mở một ghi chú trước, sau đó kéo phương tiện vào đây"
     },
     "WikiUpdateFailed": "Cập nhật wiki thất bại: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Tìm mẫu…",
     "NoResults": "Không có mẫu phù hợp",
     "SpecializedBadge": "Chuyên biệt",
-    "Suggested": "Đề xuất",
-    "AutoSuggestTemplate": "Tự động gợi ý mẫu",
-    "AutoSuggestTemplateHint": "Khi bật, mô hình chọn mẫu phù hợp nhất cho mỗi bản tóm tắt. Tắt: Biên bản Cuộc họp được dùng làm mặc định. Phản ánh Cài đặt → Tính năng AI → Mẫu Tóm tắt AI."
+    "AutoSuggestTemplateHint": "Khi bật, mô hình chọn mẫu phù hợp nhất cho mỗi lần tổng hợp. Tắt: Biên bản cuộc họp được sử dụng theo mặc định. Phản ánh Cài đặt → Tính năng AI → Mẫu tóm tắt AI.",
+    "AutoSuggestTemplate": "Đề xuất mẫu tự động",
+    "Suggested": "Đề xuất"
   },
   "RegionSelector": {
     "CaptureButton": "Chụp màn hình hoặc Nhấn Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Đồng bộ ngay",
       "ConnectedDesc": "Ghi chú và wiki của bạn được tự động đồng bộ lên GitHub. Các bản ghi âm, video và ảnh chụp màn hình không được đồng bộ.",
       "Interval": "Khoảng thời gian đồng bộ",
-      "LastCommit": "Đã đồng bộ lần cuối"
+      "LastCommit": "Đã đồng bộ lần cuối",
+      "RetrySync": "Thử đồng bộ lại"
     },
     "GitHub": {
       "Authorize": "Ủy quyền GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Một cửa sổ trình duyệt đã được mở. Vui lòng ủy quyền cho SeaMeet truy cập tài khoản GitHub của bạn.",
           "Label": "Đang chờ ủy quyền..."
         }
+      },
+      "Reauthorize": "Cấp quyền lại GitHub",
+      "TokenExpired": {
+        "Desc": "Quyền truy cập GitHub đã hết hạn. Vui lòng cấp quyền lại để tiếp tục đồng bộ."
+      },
+      "Timeout": {
+        "Desc": "Đồng bộ bị hết thời gian chờ. Điều này có thể do sự cố mạng hoặc hết hạn ủy quyền GitHub."
       }
     },
     "GroupTitle": "Đồng bộ",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Đang đẩy lên GitHub...",
-      "Committing": "Đang đồng bộ các thay đổi..."
+      "Committing": "Đang đồng bộ các thay đổi...",
+      "Syncing": "Đang đồng bộ..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} ngày trước",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Đăng ký để bật đồng bộ",
     "Synced": "Đã đồng bộ · {{time}}",
     "TokenExpired": "Cấp quyền lại",
-    "Syncing": "Đang đồng bộ..."
+    "Syncing": "Đang đồng bộ...",
+    "CreatingRepo": "Đang tạo kho lưu trữ...",
+    "InstallingApp": "Đang cài đặt ứng dụng GitHub...",
+    "Unpushed": "{{count}} chưa được đẩy lên",
+    "Timeout": "Đồng bộ bị hết thời gian chờ"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Tất cả",
+    "Audio": "Âm thanh",
+    "BatchDelete": "Xóa",
+    "ClearFilters": "Xóa bộ lọc",
+    "ConfirmBatchDelete": "Xóa {{count}} tệp?",
+    "FilteredStats": "{{filtered}} trong tổng số {{total}} tệp",
+    "GridView": "Chế độ lưới",
+    "Import": "Nhập",
+    "ListView": "Chế độ danh sách",
+    "NoFiles": "Chưa có tệp phương tiện nào",
+    "NoFilesHint": "Ghi âm/ghi hình hoặc nhập tệp để bắt đầu",
+    "NoResults": "Không có tệp nào phù hợp với bộ lọc của bạn",
+    "NoResultsHint": "Thử điều chỉnh tìm kiếm hoặc bộ lọc của bạn",
+    "Search": "Tìm kiếm tệp phương tiện...",
+    "SelectAll": "Chọn tất cả",
+    "Selected": "{{count}} đã chọn",
+    "SortByDate": "Ngày",
+    "SortByDuration": "Thời lượng",
+    "SortByName": "Tên",
+    "SortBySize": "Kích thước",
+    "Title": "Thư viện phương tiện",
+    "Video": "Video",
+    "BatchExport": "Xuất",
+    "ClearSelection": "Xóa lựa chọn",
+    "Exporting": "Đang xuất...",
+    "ExportAllFailed": "Không thể xuất {{count}} tệp",
+    "ExportFailed": "Xuất không thành công",
+    "ExportPartial": "Đã xuất {{exported}} trong tổng số {{total}} tệp ({{failed}} tệp thất bại)",
+    "ExportSuccess": "Đã xuất {{count}} tệp",
+    "BatchDeletePartial": "Đã xóa {{count}} trong tổng số {{total}} tệp",
+    "Screenshots": "Ảnh chụp màn hình",
+    "Sort": "Sắp xếp theo"
+  },
+  "MediaCard": {
+    "Untitled": "Chưa đặt tiêu đề"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Mẫu Tóm tắt AI",
+    "MenuItem": "Mẫu tóm tắt AI",
+    "PageTitle": "Mẫu tóm tắt AI",
+    "SectionTitle": "Mẫu tóm tắt AI",
     "AutoPickToggle": "Tự động phát hiện mẫu tóm tắt",
-    "AutoPickDesc": "Để mô hình chọn mẫu tốt nhất cho từng cuộc họp. Khi tắt, Biên bản Cuộc họp được dùng làm mặc định và không có cuộc gọi phân loại nào.",
-    "InventoryTitle": "Mẫu đã cài đặt",
-    "Specialized": "Chuyên biệt",
-    "MenuItem": "Mẫu Tóm tắt AI",
-    "PageTitle": "Mẫu Tóm tắt AI"
+    "AutoPickDesc": "Để mô hình chọn mẫu tốt nhất cho mỗi cuộc họp. Khi tắt, Biên bản cuộc họp được sử dụng theo mặc định và không có cuộc gọi phân loại nào được thực hiện.",
+    "InventoryTitle": "Mẫu đã cài đặt"
   }
 }

@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "템플릿으로 다시 생성…",
     "RegenerateFailed": "요약 재생성 실패: {{err}}",
     "RegenerateFailedGeneric": "요약 재생성 실패",
-    "AutoDetected": "자동 감지됨: {{tpl}}",
-    "AutoDetectedTooltip": "자동 감지된 템플릿 — 변경하려면 클릭하세요",
-    "RegenerateBtn": "다시 생성",
-    "RegenerateWithSuggested": "자동 감지된 템플릿으로 다시 생성",
-    "RegenerateChoose": "요약을 다시 생성할 템플릿을 선택하세요",
-    "MoreOptions": "추가 옵션",
     "SplitMenu": {
       "Label": "요약 옵션",
       "ChooseTemplate": "템플릿 선택…",
-      "ReAnalyze": "녹음 다시 분석",
-      "ReAnalyzeHint": "녹음을 다시 전사하고 요약을 처음부터 다시 작성합니다. 템플릿만 바꾸는 것보다 느립니다."
-    }
+      "ReAnalyzeHint": "녹음을 다시 전사하고 요약을 처음부터 다시 작성합니다. 템플릿을 교체하는 것보다 느립니다.",
+      "ReAnalyze": "녹음 재분석"
+    },
+    "RegenerateWithSuggested": "자동 감지된 템플릿으로 재생성",
+    "RegenerateChoose": "요약을 재생성할 템플릿 선택",
+    "RegenerateBtn": "재생성",
+    "MoreOptions": "추가 옵션",
+    "AutoDetectedTooltip": "자동 감지된 템플릿 — 변경하려면 클릭",
+    "AutoDetected": "자동 감지: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ AI가 업데이트",
@@ -1694,7 +1694,8 @@
       "Screenshot": "스크린샷",
       "Recording": "녹음",
       "AddedTo": "에 추가됨:",
-      "Open": "열기"
+      "Open": "열기",
+      "OpenNoteFirst": "먼저 노트를 열고 여기에 미디어를 끌어다 놓으세요"
     },
     "WikiUpdateFailed": "위키 업데이트 실패: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "템플릿 검색…",
     "NoResults": "일치하는 템플릿 없음",
     "SpecializedBadge": "전문",
-    "Suggested": "추천",
+    "AutoSuggestTemplateHint": "켜져 있으면 모델이 각 합성에 가장 적합한 템플릿을 선택합니다. 꺼짐: 회의록이 기본값으로 사용됩니다. 설정 → AI 기능 → AI 요약 템플릿을 반영합니다.",
     "AutoSuggestTemplate": "템플릿 자동 제안",
-    "AutoSuggestTemplateHint": "켜져 있으면 모델이 각 요약에 가장 적합한 템플릿을 선택합니다. 꺼짐: 회의록이 기본적으로 사용됩니다. 설정 → AI 기능 → AI 요약 템플릿을 반영합니다."
+    "Suggested": "제안"
   },
   "RegionSelector": {
     "CaptureButton": "화면 캡처 또는 Enter 키 누르기",
@@ -3166,7 +3167,8 @@
       "CommitNow": "지금 동기화",
       "ConnectedDesc": "노트와 위키가 GitHub에 자동으로 동기화됩니다. 오디오 녹음, 비디오 녹화 및 스크린샷은 동기화되지 않습니다.",
       "Interval": "동기화 간격",
-      "LastCommit": "마지막 동기화"
+      "LastCommit": "마지막 동기화",
+      "RetrySync": "동기화 재시도"
     },
     "GitHub": {
       "Authorize": "GitHub 권한 부여",
@@ -3221,6 +3223,13 @@
           "Desc": "브라우저 창이 열렸습니다. SeaMeet이 귀하의 GitHub 계정에 접근할 수 있도록 권한을 부여해 주세요.",
           "Label": "권한 부여를 기다리는 중..."
         }
+      },
+      "Reauthorize": "GitHub 재인증",
+      "TokenExpired": {
+        "Desc": "GitHub 인증이 만료되었습니다. 동기화를 재개하려면 다시 인증해 주세요."
+      },
+      "Timeout": {
+        "Desc": "동기화 시간이 초과되었습니다. 네트워크 문제 또는 만료된 GitHub 권한 때문일 수 있습니다."
       }
     },
     "GroupTitle": "동기화",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "GitHub에 푸시 중...",
-      "Committing": "변경 사항 동기화 중..."
+      "Committing": "변경 사항 동기화 중...",
+      "Syncing": "동기화 중..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}일 전",
@@ -3259,7 +3269,11 @@
     "Subscribe": "동기화를 활성화하려면 구독하세요",
     "Synced": "동기화됨 · {{time}}",
     "TokenExpired": "재인증",
-    "Syncing": "동기화 중..."
+    "Syncing": "동기화 중...",
+    "CreatingRepo": "저장소 생성 중...",
+    "InstallingApp": "GitHub 앱 설치 중...",
+    "Unpushed": "{{count}}개 푸시되지 않음",
+    "Timeout": "동기화 시간이 초과되었습니다"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "전체",
+    "Audio": "오디오",
+    "BatchDelete": "삭제",
+    "ClearFilters": "필터 초기화",
+    "ConfirmBatchDelete": "{{count}}개 파일을 삭제하시겠습니까?",
+    "FilteredStats": "{{filtered}} / {{total}} 파일",
+    "GridView": "그리드 보기",
+    "Import": "가져오기",
+    "ListView": "목록 보기",
+    "NoFiles": "미디어 파일이 없습니다",
+    "NoFilesHint": "오디오/비디오를 녹음하거나 파일을 가져와 시작하세요",
+    "NoResults": "필터에 맞는 파일이 없습니다",
+    "NoResultsHint": "검색어나 필터를 조정해 보세요",
+    "Search": "미디어 파일 검색...",
+    "SelectAll": "전체 선택",
+    "Selected": "{{count}}개 선택됨",
+    "SortByDate": "날짜",
+    "SortByDuration": "길이",
+    "SortByName": "이름",
+    "SortBySize": "크기",
+    "Title": "미디어 라이브러리",
+    "Video": "비디오",
+    "BatchExport": "내보내기",
+    "ClearSelection": "선택 해제",
+    "Exporting": "내보내는 중...",
+    "ExportAllFailed": "{{count}}개의 파일 내보내기에 실패했습니다",
+    "ExportFailed": "내보내기에 실패했습니다",
+    "ExportPartial": "{{total}}개 중 {{exported}}개 파일이 내보내졌습니다 ({{failed}}개 실패)",
+    "ExportSuccess": "{{count}}개의 파일이 내보내졌습니다",
+    "BatchDeletePartial": "{{total}}개 중 {{count}}개 파일이 삭제되었습니다",
+    "Screenshots": "스크린샷",
+    "Sort": "정렬 기준"
+  },
+  "MediaCard": {
+    "Untitled": "제목 없음"
+  },
   "AITemplateSettings": {
+    "MenuItem": "AI 요약 템플릿",
+    "PageTitle": "AI 요약 템플릿",
     "SectionTitle": "AI 요약 템플릿",
     "AutoPickToggle": "요약 템플릿 자동 감지",
-    "AutoPickDesc": "각 회의에 가장 적합한 템플릿을 모델이 선택하도록 합니다. 꺼져 있으면 기본적으로 회의록이 사용되며 분류기 호출이 없습니다.",
-    "InventoryTitle": "설치된 템플릿",
-    "Specialized": "전문",
-    "MenuItem": "AI 요약 템플릿",
-    "PageTitle": "AI 요약 템플릿"
+    "AutoPickDesc": "모델이 각 회의에 가장 적합한 템플릿을 선택하도록 합니다. 꺼져 있으면 회의록이 기본값으로 사용되며 분류기 호출이 이루어지지 않습니다.",
+    "InventoryTitle": "설치된 템플릿"
   }
 }

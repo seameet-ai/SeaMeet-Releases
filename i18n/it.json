@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "Rigenera con un modello…",
     "RegenerateFailed": "Rigenerazione del riepilogo non riuscita: {{err}}",
     "RegenerateFailedGeneric": "Rigenerazione del riepilogo non riuscita",
-    "AutoDetected": "Rilevato automaticamente: {{tpl}}",
-    "AutoDetectedTooltip": "Modello rilevato automaticamente — clicca per cambiare",
-    "RegenerateBtn": "Rigenera",
-    "RegenerateWithSuggested": "Rigenera con il modello rilevato automaticamente",
-    "RegenerateChoose": "Scegli un modello per rigenerare il riepilogo",
-    "MoreOptions": "Altre opzioni",
     "SplitMenu": {
-      "Label": "Opzioni del riepilogo",
+      "Label": "Opzioni riepilogo",
       "ChooseTemplate": "Scegli modello…",
-      "ReAnalyze": "Rianalizza registrazione",
-      "ReAnalyzeHint": "Ritrascrive la registrazione e riscrive il riepilogo da zero. Più lento del semplice cambio di modello."
-    }
+      "ReAnalyzeHint": "Ritrascrive la registrazione e riscrive il riepilogo da zero. Più lento del cambio di modello.",
+      "ReAnalyze": "Rianalizza registrazione"
+    },
+    "RegenerateWithSuggested": "Rigenera con modello rilevato automaticamente",
+    "RegenerateChoose": "Scegli un modello per rigenerare il riepilogo",
+    "RegenerateBtn": "Rigenera",
+    "MoreOptions": "Altre opzioni",
+    "AutoDetectedTooltip": "Modello rilevato automaticamente — clicca per cambiare",
+    "AutoDetected": "Rilevato automaticamente: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ Aggiornato dall’IA",
@@ -1694,7 +1694,8 @@
       "Screenshot": "Schermata",
       "Recording": "Registrazione",
       "AddedTo": "aggiunto a",
-      "Open": "Apri"
+      "Open": "Apri",
+      "OpenNoteFirst": "Apri prima una nota, poi trascina qui i media"
     },
     "WikiUpdateFailed": "Aggiornamento wiki fallito: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "Cerca modelli…",
     "NoResults": "Nessun modello corrisponde",
     "SpecializedBadge": "Specializzato",
-    "Suggested": "Suggerito",
+    "AutoSuggestTemplateHint": "Quando attivo, il modello sceglie il modello più adatto per ogni sintesi. Disattivato: Verbale Riunione è usato come predefinito. Riflette Impostazioni → Funzionalità IA → Modelli di Riepilogo IA.",
     "AutoSuggestTemplate": "Suggerisci modello automaticamente",
-    "AutoSuggestTemplateHint": "Quando attivo, il modello sceglie il template più adatto per ogni sintesi. Disattivato: viene usato il Verbale di Riunione come predefinito. Rispecchia Impostazioni → Funzionalità IA → Modelli di riepilogo IA."
+    "Suggested": "Suggerito"
   },
   "RegionSelector": {
     "CaptureButton": "Cattura schermo o premi Invio",
@@ -3166,7 +3167,8 @@
       "CommitNow": "Sincronizza ora",
       "ConnectedDesc": "Le tue note e il wiki sono sincronizzati automaticamente su GitHub. Registrazioni audio, video e screenshot non vengono sincronizzati.",
       "Interval": "Intervallo di sincronizzazione",
-      "LastCommit": "Ultima sincronizzazione"
+      "LastCommit": "Ultima sincronizzazione",
+      "RetrySync": "Riprova sincronizzazione"
     },
     "GitHub": {
       "Authorize": "Autorizza GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "Si è aperta una finestra del browser. Per favore autorizza SeaMeet ad accedere al tuo account GitHub.",
           "Label": "In attesa di autorizzazione..."
         }
+      },
+      "Reauthorize": "Riautorizza GitHub",
+      "TokenExpired": {
+        "Desc": "L'autorizzazione di GitHub è scaduta. Per favore, riautorizza per riprendere la sincronizzazione."
+      },
+      "Timeout": {
+        "Desc": "La sincronizzazione è scaduta. Questo può essere causato da un problema di rete o da un'autorizzazione GitHub scaduta."
       }
     },
     "GroupTitle": "Sincronizza",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "Invio a GitHub in corso...",
-      "Committing": "Sincronizzazione delle modifiche in corso..."
+      "Committing": "Sincronizzazione delle modifiche in corso...",
+      "Syncing": "Sincronizzazione in corso..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}}g fa",
@@ -3259,7 +3269,11 @@
     "Subscribe": "Iscriviti per abilitare la sincronizzazione",
     "Synced": "Sincronizzato · {{time}}",
     "TokenExpired": "Riautorizza",
-    "Syncing": "Sincronizzazione in corso..."
+    "Syncing": "Sincronizzazione in corso...",
+    "CreatingRepo": "Creazione del repository in corso...",
+    "InstallingApp": "Installazione dell'app GitHub in corso...",
+    "Unpushed": "{{count}} non inviati",
+    "Timeout": "La sincronizzazione è scaduta"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "Tutti",
+    "Audio": "Audio",
+    "BatchDelete": "Elimina",
+    "ClearFilters": "Cancella filtri",
+    "ConfirmBatchDelete": "Eliminare {{count}} file?",
+    "FilteredStats": "{{filtered}} di {{total}} file",
+    "GridView": "Vista a griglia",
+    "Import": "Importa",
+    "ListView": "Vista elenco",
+    "NoFiles": "Nessun file multimediale ancora",
+    "NoFilesHint": "Registra audio/video o importa file per iniziare",
+    "NoResults": "Nessun file corrisponde ai tuoi filtri",
+    "NoResultsHint": "Prova a modificare la ricerca o i filtri",
+    "Search": "Cerca file multimediali...",
+    "SelectAll": "Seleziona tutto",
+    "Selected": "{{count}} selezionati",
+    "SortByDate": "Data",
+    "SortByDuration": "Durata",
+    "SortByName": "Nome",
+    "SortBySize": "Dimensione",
+    "Title": "Libreria Media",
+    "Video": "Video",
+    "BatchExport": "Esporta",
+    "ClearSelection": "Cancella selezione",
+    "Exporting": "Esportazione in corso...",
+    "ExportAllFailed": "Impossibile esportare {{count}} file",
+    "ExportFailed": "Esportazione fallita",
+    "ExportPartial": "Esportati {{exported}} di {{total}} file ({{failed}} falliti)",
+    "ExportSuccess": "Esportati {{count}} file",
+    "BatchDeletePartial": "Eliminati {{count}} di {{total}} file",
+    "Screenshots": "Screenshot",
+    "Sort": "Ordina per"
+  },
+  "MediaCard": {
+    "Untitled": "Senza titolo"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "Modelli di riepilogo IA",
+    "MenuItem": "Modelli di Riepilogo IA",
+    "PageTitle": "Modelli di Riepilogo IA",
+    "SectionTitle": "Modelli di Riepilogo IA",
     "AutoPickToggle": "Rileva automaticamente il modello di riepilogo",
-    "AutoPickDesc": "Lascia che il modello scelga il miglior template per ogni riunione. Quando disattivato, viene usato il Verbale di Riunione come predefinito e non viene effettuata alcuna chiamata al classificatore.",
-    "InventoryTitle": "Modelli installati",
-    "Specialized": "Specializzato",
-    "MenuItem": "Modelli di riepilogo IA",
-    "PageTitle": "Modelli di riepilogo IA"
+    "AutoPickDesc": "Lascia che il modello scelga il modello migliore per ogni riunione. Quando disattivato, Verbale Riunione è usato come predefinito e non viene effettuata alcuna chiamata al classificatore.",
+    "InventoryTitle": "Modelli installati"
   }
 }

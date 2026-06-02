@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "إعادة الإنشاء باستخدام قالب…",
     "RegenerateFailed": "فشل إعادة إنشاء الملخص: {{err}}",
     "RegenerateFailedGeneric": "فشل إعادة إنشاء الملخص",
-    "AutoDetected": "تم اكتشافه تلقائيًا: {{tpl}}",
-    "AutoDetectedTooltip": "قالب تم اكتشافه تلقائيًا — انقر للتغيير",
-    "RegenerateBtn": "إعادة الإنشاء",
-    "RegenerateWithSuggested": "إعادة الإنشاء بالقالب المكتشف تلقائيًا",
-    "RegenerateChoose": "اختر قالبًا لإعادة إنشاء الملخص",
-    "MoreOptions": "خيارات أخرى",
     "SplitMenu": {
       "Label": "خيارات الملخص",
-      "ChooseTemplate": "اختيار القالب…",
-      "ReAnalyze": "إعادة تحليل التسجيل",
-      "ReAnalyzeHint": "يعيد نسخ التسجيل ويكتب الملخص من جديد. أبطأ من تبديل القوالب."
-    }
+      "ChooseTemplate": "اختر قالباً…",
+      "ReAnalyzeHint": "يعيد نسخ التسجيل ويكتب الملخص من جديد. أبطأ من تبديل القوالب.",
+      "ReAnalyze": "إعادة تحليل التسجيل"
+    },
+    "RegenerateWithSuggested": "إعادة الإنشاء بالقالب المكتشف تلقائياً",
+    "RegenerateChoose": "اختر قالباً لإعادة إنشاء الملخص",
+    "RegenerateBtn": "إعادة الإنشاء",
+    "MoreOptions": "خيارات إضافية",
+    "AutoDetectedTooltip": "قالب مكتشف تلقائياً — انقر للتغيير",
+    "AutoDetected": "مكتشف تلقائياً: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ تم التحديث بواسطة الذكاء الاصطناعي",
@@ -1694,7 +1694,8 @@
       "Screenshot": "لقطة شاشة",
       "Recording": "تسجيل",
       "AddedTo": "أُضيف إلى",
-      "Open": "فتح"
+      "Open": "فتح",
+      "OpenNoteFirst": "افتح ملاحظة أولاً، ثم اسحب الوسائط هنا"
     },
     "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "ابحث في القوالب…",
     "NoResults": "لا توجد قوالب مطابقة",
     "SpecializedBadge": "متخصص",
-    "Suggested": "مُقترَح",
-    "AutoSuggestTemplate": "اقتراح القالب تلقائيًا",
-    "AutoSuggestTemplateHint": "عند التشغيل، يختار النموذج القالب الأنسب لكل ملخّص. عند الإيقاف: يُستخدم محضر الاجتماع افتراضيًا. يعكس إعدادات → ميزات الذكاء الاصطناعي → قوالب الملخصات."
+    "AutoSuggestTemplateHint": "عند التفعيل، يختار النموذج القالب الأنسب لكل توليف. عند الإيقاف: يُستخدم محضر الاجتماع افتراضياً. يعكس إعدادات → ميزات الذكاء الاصطناعي → قوالب ملخص الذكاء الاصطناعي.",
+    "AutoSuggestTemplate": "اقتراح قالب تلقائياً",
+    "Suggested": "مقترح"
   },
   "RegionSelector": {
     "CaptureButton": "التقاط الشاشة أو اضغط على Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "زامن الآن",
       "ConnectedDesc": "يتم مزامنة ملاحظاتك والويكي تلقائيًا إلى GitHub. التسجيلات الصوتية، تسجيلات الفيديو، ولقطات الشاشة غير متزامنة.",
       "Interval": "فاصل المزامنة",
-      "LastCommit": "آخر مزامنة"
+      "LastCommit": "آخر مزامنة",
+      "RetrySync": "إعادة محاولة المزامنة"
     },
     "GitHub": {
       "Authorize": "تفويض GitHub",
@@ -3221,6 +3223,13 @@
           "Desc": "تم فتح نافذة المتصفح. يرجى تفويض SeaMeet للوصول إلى حساب GitHub الخاص بك.",
           "Label": "في انتظار التفويض..."
         }
+      },
+      "Reauthorize": "إعادة تفويض GitHub",
+      "TokenExpired": {
+        "Desc": "انتهت صلاحية تفويض GitHub. يرجى إعادة التفويض لاستئناف المزامنة."
+      },
+      "Timeout": {
+        "Desc": "انتهت مهلة المزامنة. قد يكون ذلك بسبب مشكلة في الشبكة أو انتهاء صلاحية تفويض GitHub."
       }
     },
     "GroupTitle": "المزامنة",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "جارٍ الدفع إلى GitHub...",
-      "Committing": "جارٍ مزامنة التغييرات..."
+      "Committing": "جارٍ مزامنة التغييرات...",
+      "Syncing": "جارٍ المزامنة..."
     },
     "TimeAgo": {
       "DaysAgo": "منذ {{count}} يوم",
@@ -3259,7 +3269,11 @@
     "Subscribe": "اشترك لتمكين المزامنة",
     "Synced": "تمت المزامنة · {{time}}",
     "TokenExpired": "إعادة التفويض",
-    "Syncing": "جارٍ المزامنة..."
+    "Syncing": "جارٍ المزامنة...",
+    "CreatingRepo": "جارٍ إنشاء المستودع...",
+    "InstallingApp": "جارٍ تثبيت تطبيق GitHub...",
+    "Unpushed": "{{count}} غير مدفوعة",
+    "Timeout": "انتهت مهلة المزامنة"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "الكل",
+    "Audio": "صوت",
+    "BatchDelete": "حذف",
+    "ClearFilters": "مسح عوامل التصفية",
+    "ConfirmBatchDelete": "حذف {{count}} ملف؟",
+    "FilteredStats": "{{filtered}} من {{total}} ملف",
+    "GridView": "عرض الشبكة",
+    "Import": "استيراد",
+    "ListView": "عرض القائمة",
+    "NoFiles": "لا توجد ملفات وسائط بعد",
+    "NoFilesHint": "سجل صوت/فيديو أو استورد ملفات للبدء",
+    "NoResults": "لا توجد ملفات تطابق عوامل التصفية الخاصة بك",
+    "NoResultsHint": "حاول تعديل البحث أو عوامل التصفية",
+    "Search": "ابحث في ملفات الوسائط...",
+    "SelectAll": "تحديد الكل",
+    "Selected": "{{count}} محدد",
+    "SortByDate": "التاريخ",
+    "SortByDuration": "المدة",
+    "SortByName": "الاسم",
+    "SortBySize": "الحجم",
+    "Title": "مكتبة الوسائط",
+    "Video": "فيديو",
+    "BatchExport": "تصدير",
+    "ClearSelection": "مسح التحديد",
+    "Exporting": "جارٍ التصدير...",
+    "ExportAllFailed": "فشل في تصدير {{count}} ملف",
+    "ExportFailed": "فشل التصدير",
+    "ExportPartial": "تم تصدير {{exported}} من أصل {{total}} ملف (فشل {{failed}})",
+    "ExportSuccess": "تم تصدير {{count}} ملف",
+    "BatchDeletePartial": "تم حذف {{count}} من أصل {{total}} ملفات",
+    "Screenshots": "لقطات الشاشة",
+    "Sort": "ترتيب حسب"
+  },
+  "MediaCard": {
+    "Untitled": "بدون عنوان"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "قوالب ملخصات الذكاء الاصطناعي",
-    "AutoPickToggle": "اكتشاف قالب الملخص تلقائيًا",
-    "AutoPickDesc": "اترك للنموذج اختيار أفضل قالب لكل اجتماع. عند إيقاف التشغيل، يُستخدم محضر الاجتماع افتراضيًا ولا يتم استدعاء المصنف.",
-    "InventoryTitle": "القوالب المثبتة",
-    "Specialized": "متخصص",
-    "MenuItem": "قوالب ملخصات الذكاء الاصطناعي",
-    "PageTitle": "قوالب ملخصات الذكاء الاصطناعي"
+    "MenuItem": "قوالب ملخص الذكاء الاصطناعي",
+    "PageTitle": "قوالب ملخص الذكاء الاصطناعي",
+    "SectionTitle": "قوالب ملخص الذكاء الاصطناعي",
+    "AutoPickToggle": "اكتشاف قالب الملخص تلقائياً",
+    "AutoPickDesc": "دع النموذج يختار القالب الأنسب لكل اجتماع. عند الإيقاف، يُستخدم محضر الاجتماع افتراضياً ولا يتم استدعاء المصنف.",
+    "InventoryTitle": "القوالب المثبتة"
   }
 }

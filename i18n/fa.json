@@ -130,18 +130,18 @@
     "RegenerateWithTemplate": "بازتولید با یک قالب…",
     "RegenerateFailed": "بازتولید خلاصه ناموفق بود: {{err}}",
     "RegenerateFailedGeneric": "بازتولید خلاصه ناموفق بود",
-    "AutoDetected": "تشخیص خودکار: {{tpl}}",
-    "AutoDetectedTooltip": "قالب تشخیص خودکار — برای تغییر کلیک کنید",
-    "RegenerateBtn": "تولید مجدد",
-    "RegenerateWithSuggested": "تولید مجدد با قالب تشخیص خودکار",
-    "RegenerateChoose": "یک قالب برای تولید مجدد خلاصه انتخاب کنید",
-    "MoreOptions": "گزینه‌های بیشتر",
     "SplitMenu": {
       "Label": "گزینه‌های خلاصه",
-      "ChooseTemplate": "انتخاب قالب…",
-      "ReAnalyze": "تحلیل مجدد ضبط",
-      "ReAnalyzeHint": "ضبط را دوباره رونویسی می‌کند و خلاصه را از ابتدا بازنویسی می‌کند. کندتر از تعویض قالب‌ها."
-    }
+      "ChooseTemplate": "انتخاب الگو…",
+      "ReAnalyzeHint": "ضبط را دوباره رونویسی می‌کند و خلاصه را از ابتدا بازنویسی می‌کند. کندتر از تعویض الگوها.",
+      "ReAnalyze": "تحلیل مجدد ضبط"
+    },
+    "RegenerateWithSuggested": "بازتولید با الگوی شناسایی‌شده خودکار",
+    "RegenerateChoose": "الگویی برای بازتولید خلاصه انتخاب کنید",
+    "RegenerateBtn": "بازتولید",
+    "MoreOptions": "گزینه‌های بیشتر",
+    "AutoDetectedTooltip": "الگوی خودکار شناسایی‌شده — برای تغییر کلیک کنید",
+    "AutoDetected": "شناسایی خودکار: {{tpl}}"
   },
   "AISynthesis": {
     "RefinedFromBatch": "✨ به‌روزرسانی شده توسط هوش مصنوعی",
@@ -1694,7 +1694,8 @@
       "Screenshot": "اسکرین‌شات",
       "Recording": "ضبط",
       "AddedTo": "افزوده شد به",
-      "Open": "باز کردن"
+      "Open": "باز کردن",
+      "OpenNoteFirst": "ابتدا یک یادداشت را باز کنید، سپس رسانه را اینجا بکشید"
     },
     "WikiUpdateFailed": "به‌روزرسانی ویکی ناموفق بود: {{error}}",
     "SynthesisPill": {
@@ -1990,9 +1991,9 @@
     "SearchPlaceholder": "جستجوی قالب‌ها…",
     "NoResults": "قالبی مطابقت ندارد",
     "SpecializedBadge": "تخصصی",
-    "Suggested": "پیشنهادشده",
-    "AutoSuggestTemplate": "پیشنهاد خودکار قالب",
-    "AutoSuggestTemplateHint": "هنگام روشن بودن، مدل بهترین قالب را برای هر خلاصه‌سازی انتخاب می‌کند. خاموش: صورت‌جلسه به‌طور پیش‌فرض استفاده می‌شود. منعکس‌کننده تنظیمات → ویژگی‌های هوش مصنوعی → قالب‌های خلاصه‌سازی."
+    "AutoSuggestTemplateHint": "وقتی فعال است، مدل بهترین الگوی متناسب با هر ترکیب را انتخاب می‌کند. خاموش: صورت‌جلسه به‌طور پیش‌فرض استفاده می‌شود. منعکس‌کننده تنظیمات → ویژگی‌های هوش مصنوعی → الگوهای خلاصه هوش مصنوعی.",
+    "AutoSuggestTemplate": "پیشنهاد خودکار الگو",
+    "Suggested": "پیشنهادی"
   },
   "RegionSelector": {
     "CaptureButton": "گرفتن تصویر صفحه یا فشردن Enter",
@@ -3166,7 +3167,8 @@
       "CommitNow": "همگام‌سازی اکنون",
       "ConnectedDesc": "یادداشت‌ها و ویکی شما به‌طور خودکار با گیت‌هاب همگام‌سازی می‌شوند. ضبط‌های صوتی، ضبط‌های ویدئویی و اسکرین‌شات‌ها همگام‌سازی نمی‌شوند.",
       "Interval": "فاصله همگام‌سازی",
-      "LastCommit": "آخرین همگام‌سازی"
+      "LastCommit": "آخرین همگام‌سازی",
+      "RetrySync": "تلاش مجدد همگام‌سازی"
     },
     "GitHub": {
       "Authorize": "مجوز گیت‌هاب",
@@ -3221,6 +3223,13 @@
           "Desc": "یک پنجره مرورگر باز شده است. لطفاً اجازه دهید SeaMeet به حساب GitHub شما دسترسی پیدا کند.",
           "Label": "در انتظار مجوز..."
         }
+      },
+      "Reauthorize": "دوباره مجوز GitHub را صادر کنید",
+      "TokenExpired": {
+        "Desc": "مجوز GitHub منقضی شده است. لطفاً برای ادامه همگام‌سازی دوباره مجوز را صادر کنید."
+      },
+      "Timeout": {
+        "Desc": "همگام‌سازی به پایان رسید. این ممکن است به دلیل مشکل شبکه یا انقضای مجوز GitHub باشد."
       }
     },
     "GroupTitle": "همگام‌سازی",
@@ -3230,7 +3239,8 @@
     },
     "Status": {
       "Pushing": "در حال ارسال به گیت‌هاب...",
-      "Committing": "در حال همگام‌سازی تغییرات..."
+      "Committing": "در حال همگام‌سازی تغییرات...",
+      "Syncing": "در حال همگام‌سازی..."
     },
     "TimeAgo": {
       "DaysAgo": "{{count}} روز پیش",
@@ -3259,7 +3269,11 @@
     "Subscribe": "برای فعال‌سازی همگام‌سازی مشترک شوید",
     "Synced": "همگام‌شده · {{time}}",
     "TokenExpired": "دوباره مجوز دهید",
-    "Syncing": "در حال همگام‌سازی..."
+    "Syncing": "در حال همگام‌سازی...",
+    "CreatingRepo": "در حال ایجاد مخزن...",
+    "InstallingApp": "در حال نصب برنامه GitHub...",
+    "Unpushed": "{{count}} تغییرات ارسال‌نشده",
+    "Timeout": "همگام‌سازی به پایان رسید"
   },
   "Library": {
     "today": "Today",
@@ -3351,13 +3365,49 @@
     "floater_waveform": "Show waveform floater",
     "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply."
   },
+  "MediaLibrary": {
+    "All": "همه",
+    "Audio": "صوت",
+    "BatchDelete": "حذف",
+    "ClearFilters": "پاک کردن فیلترها",
+    "ConfirmBatchDelete": "حذف {{count}} فایل؟",
+    "FilteredStats": "{{filtered}} از {{total}} فایل",
+    "GridView": "نمای شبکه‌ای",
+    "Import": "وارد کردن",
+    "ListView": "نمای فهرست",
+    "NoFiles": "هنوز فایل رسانه‌ای وجود ندارد",
+    "NoFilesHint": "برای شروع، صوت/ویدئو ضبط کنید یا فایل‌ها را وارد کنید",
+    "NoResults": "هیچ فایلی با فیلترهای شما مطابقت ندارد",
+    "NoResultsHint": "سعی کنید جستجو یا فیلترهای خود را تنظیم کنید",
+    "Search": "جستجوی فایل‌های رسانه...",
+    "SelectAll": "انتخاب همه",
+    "Selected": "{{count}} انتخاب شده",
+    "SortByDate": "تاریخ",
+    "SortByDuration": "مدت زمان",
+    "SortByName": "نام",
+    "SortBySize": "حجم",
+    "Title": "کتابخانه رسانه",
+    "Video": "ویدئو",
+    "BatchExport": "صادرات",
+    "ClearSelection": "پاک کردن انتخاب",
+    "Exporting": "در حال صادرات...",
+    "ExportAllFailed": "صادرات {{count}} فایل ناموفق بود",
+    "ExportFailed": "صادرات ناموفق بود",
+    "ExportPartial": "صادرات {{exported}} از {{total}} فایل انجام شد ({{failed}} ناموفق)",
+    "ExportSuccess": "صادرات {{count}} فایل انجام شد",
+    "BatchDeletePartial": "{{count}} از {{total}} فایل حذف شدند",
+    "Screenshots": "تصاویر صفحه",
+    "Sort": "مرتب‌سازی بر اساس"
+  },
+  "MediaCard": {
+    "Untitled": "بدون عنوان"
+  },
   "AITemplateSettings": {
-    "SectionTitle": "قالب‌های خلاصه‌سازی هوش مصنوعی",
-    "AutoPickToggle": "تشخیص خودکار قالب خلاصه",
-    "AutoPickDesc": "اجازه دهید مدل بهترین قالب را برای هر جلسه انتخاب کند. وقتی خاموش است، صورت‌جلسه به‌طور پیش‌فرض استفاده می‌شود و هیچ فراخوانی طبقه‌بندی انجام نمی‌شود.",
-    "InventoryTitle": "قالب‌های نصب‌شده",
-    "Specialized": "تخصصی",
-    "MenuItem": "قالب‌های خلاصه‌سازی هوش مصنوعی",
-    "PageTitle": "قالب‌های خلاصه‌سازی هوش مصنوعی"
+    "MenuItem": "الگوهای خلاصه هوش مصنوعی",
+    "PageTitle": "الگوهای خلاصه هوش مصنوعی",
+    "SectionTitle": "الگوهای خلاصه هوش مصنوعی",
+    "AutoPickToggle": "شناسایی خودکار الگوی خلاصه",
+    "AutoPickDesc": "اجازه دهید مدل بهترین الگو را برای هر جلسه انتخاب کند. وقتی خاموش است، صورت‌جلسه به‌طور پیش‌فرض استفاده می‌شود و هیچ تماسی با طبقه‌بند برقرار نمی‌شود.",
+    "InventoryTitle": "الگوهای نصب‌شده"
   }
 }
