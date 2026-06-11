@@ -12,59 +12,197 @@
     "MenuItem": "AI 에이전트 및 동료",
     "PageTitle": "AI 에이전트 및 동료",
     "SectionTitle": "AI 에이전트 및 동료",
-    "SubscribeMsg": "AI 에이전트는 BYOK Pro 구독이 필요합니다. 구독하여 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하세요.",
-    "SubscribeCTA": "구독하여 잠금 해제"
+    "SubscribeCTA": "구독하여 잠금 해제",
+    "SubscribeMsg": "AI 에이전트는 BYOK Pro 구독이 필요합니다. 구독하여 실시간 전사, AI 회의 요약 및 대화형 AI 에이전트를 이용하세요."
+  },
+  "AIFeatures": {
+    "ApiKeyLabel": "Gemini API 키",
+    "ApiKeySection": "Gemini API 키",
+    "AutoSummary": "자동 요약 생성",
+    "AutoSummaryDesc": "녹음이 끝날 때마다 실행됩니다",
+    "AutomationSection": "자동화",
+    "ClaudeKey": {
+      "ApiKeyTitle": "API 키",
+      "ClearKey": "저장된 키 제거",
+      "CliInstallLink": "Claude Code 설치 →",
+      "CliInstalled": "설치됨 ({{version}})",
+      "CliNotFound": "CLI를 찾을 수 없음",
+      "CliNotInstalled": "Claude CLI를 찾을 수 없습니다 — 설치하고 로그인하여 인증하세요:",
+      "CliSection": "Claude Code CLI",
+      "DefaultModel": "기본 모델",
+      "GetKeyLink": "Anthropic Console에서 API 키 받기 →",
+      "HideKey": "키 숨기기",
+      "InstallMac": "macOS/리눅스:",
+      "InstallWin": "윈도우(파워셸):",
+      "KeyInvalid": "잘못된 키",
+      "KeyPlaceholder": "sk-ant-...",
+      "KeyPlaceholderSaved": "••••••••• (저장됨)",
+      "KeyTesting": "테스트 중...",
+      "ModelHaiku": "Claude Haiku 4.5",
+      "ModelHaikuSub": "빠르고 저렴함",
+      "ModelOpus": "Claude Opus 4.6",
+      "ModelOpusSub": "가장 능력 있음",
+      "ModelSection": "기본 Claude 모델",
+      "ModelSonnet": "Claude Sonnet 4.6",
+      "ModelSonnetSub": "추천 · 균형 잡힘",
+      "QuotaLoading": "쿼터 로딩 중...",
+      "QuotaRemaining": "{{remaining}} / {{limit}} 토큰 남음",
+      "QuotaResetDate": "{{date}}에 초기화",
+      "Refresh": "Claude 재감지",
+      "Remove": "Claude 통합 제거",
+      "Saving": "저장 중...",
+      "Section": "Claude API 키 (에이전트)",
+      "ShowKey": "키 표시",
+      "SourceByok": "귀하의 API 키 (BYOK)",
+      "SourceCli": "Claude Code CLI",
+      "SourceKeyServer": "SeaMeet에서 관리",
+      "SourceLabel": "활성 소스:",
+      "SourceNone": "구성되지 않음",
+      "TestKey": "저장 및 확인"
+    },
+    "ClearKey": "저장된 키 제거",
+    "Copilot": {
+      "Authenticated": "인증됨",
+      "DefaultModel": "기본 모델",
+      "InstallGuide": "다음을 따라 ",
+      "InstallGuideLink": "시작 가이드",
+      "InstallGuideSuffix": "를 설치한 후, 다음을 실행하세요:",
+      "NotDetected": "감지되지 않음 — 설치 및 인증 필요:",
+      "Refresh": "Copilot 다시 감지",
+      "Remove": "Copilot 통합 제거",
+      "Section": "GitHub Copilot"
+    },
+    "DefaultModel": "기본 모델",
+    "EnableToggle": "AI 기반 요약 활성화",
+    "EnableToggleDesc": "무료 Gemini API 키 필요",
+    "Gemini": {
+      "Configured": "API 키 구성됨",
+      "DefaultModel": "기본 모델",
+      "Description": "Gemini 모델을 사용하여 회의와 채팅하세요. Gemini 요약 및 실시간 전사 제공자와 동일한 키입니다.",
+      "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
+      "NotConfigured": "API 키가 구성되지 않음",
+      "Refresh": "Gemini 다시 감지",
+      "Remove": "Gemini 키 제거",
+      "Section": "Gemini"
+    },
+    "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
+    "GroupTitle": "AI 기능",
+    "HideKey": "키 숨기기",
+    "ImageExtractionSection": "이미지 추출",
+    "Job": {
+      "AskQuestions": "과거 회의에 대해 질문하기",
+      "BuildWikis": "노트 및 회의에서 위키 생성",
+      "Record": "회의 녹음",
+      "RecordSub": "로컬 · 항상 작동",
+      "SearchScreenshots": "스크린샷 내 검색",
+      "Summarize": "회의 요약",
+      "Transcribe": "회의 전사",
+      "WriteNote": "노트 작성"
+    },
+    "KeyInvalid": "잘못된 키",
+    "KeyManagedInBilling": "API 키는 구독 관리 → API 키에서 관리됩니다",
+    "KeyNotConfigured": "키가 구성되지 않음",
+    "KeyPlaceholder": "AIzaSy...",
+    "KeyPlaceholderSaved": "••••••••• (저장됨)",
+    "KeyTesting": "테스트 중...",
+    "KeyVerified": "키 확인됨",
+    "MenuItem": "AI 전사, 추출, 요약, 위키",
+    "ModelLabel": "제미니 모델",
+    "ModelSection": "AI 모델",
+    "Models": {
+      "Gemini25Flash": "Gemini 2. Flash",
+      "Gemini25FlashLite": "Gemini 2.5 Flash Lite",
+      "Gemini25FlashLiteSub": "초저가",
+      "Gemini25FlashSub": "가장 저렴한 안정 옵션",
+      "Gemini25Pro": "Gemini 2.5 Pro",
+      "Gemini25ProSub": "최고의 안정적 추론",
+      "Gemini3Flash": "Gemini 3 Flash",
+      "Gemini3FlashSub": "추천 · 빠르고 능력 있음",
+      "Gemini3Pro": "Gemini 3 Pro",
+      "Gemini3ProSub": "최대 기능"
+    },
+    "OpenAI": {
+      "Configured": "API 키 구성됨",
+      "DefaultModel": "기본 모델",
+      "Description": "GPT 모델을 사용하여 회의와 채팅하세요. OpenAI 요약 및 실시간 전사 제공자와 동일한 키입니다.",
+      "GetKeyLink": "OpenAI 플랫폼에서 API 키 받기 →",
+      "NotConfigured": "API 키가 구성되지 않음",
+      "Refresh": "OpenAI 다시 감지",
+      "Remove": "OpenAI 키 제거",
+      "Section": "OpenAI"
+    },
+    "PageTitle": "AI 전사, 추출, 요약, 위키",
+    "PostMeetingSummaryLanguage": "회의 후 요약 언어",
+    "PostMeetingSummaryLanguageDesc": "회의 후 전사 + 요약(배치)에 적용. 라이브 자막은 위의 말하는 언어 선택기를 사용합니다.",
+    "PreUploadAudio": "즉시 심층 요약을 위한 오디오 사전 업로드",
+    "PreUploadAudioDesc": "녹음 중에 오디오를 Gemini로 스트리밍하여 심층 모드 요약이 약 30초 대신 몇 초 내에 반환됩니다. Gemini API 키가 필요합니다. 녹음 중 업로드 대역폭을 사용합니다.",
+    "Provider": {
+      "Detected": "감지됨",
+      "Hint": "채팅 패널에서 대화별로 제공자를 전환할 수도 있습니다.",
+      "NotAvailable": "사용 불가",
+      "Preferred": "선호됨",
+      "Section": "선호하는 에이전트 제공자"
+    },
+    "RemoveKey": "제거",
+    "SaveKey": "키 저장",
+    "Saving": "저장 중...",
+    "SelectedModel": "선택됨: {{model}}",
+    "ShowAllModels": "모든 {{count}}개 모델 보기",
+    "ShowFewerModels": "모델 수 줄이기",
+    "ShowKey": "키 보기",
+    "SummaryConfigSection": "요약 구성",
+    "SummaryLanguage": "요약 출력 언어",
+    "SummaryLanguageAutoDetect": "자동 감지 (스크립트 혼합 가능)",
+    "SummaryLanguageDesc": "전사 + 요약 + 챕터에 적용. 자동 감지는 말하는 언어와 일치합니다.",
+    "TestKey": "저장 및 확인",
+    "UseMainLlmForOcrHint": "스크린샷 OCR을 선택한 LLM 공급자로 라우팅합니다. 끔(기본): 항상 Gemini 사용. 공급자가 이미지를 수락할 수 없으면 자동으로 Gemini로 대체됩니다."
   },
   "AISummary": {
     "ApplyMerge": "적용",
-    "SubscribeToGenerate": "구독하여 녹음에서 AI 요약, 전사 및 실행 항목을 생성하세요.",
-    "SubscribeToRegenerate": "구독하여 AI 요약을 재생성하세요.",
+    "ApplyRename": "이름 바꾸기",
+    "AutoDetected": "자동 감지: {{tpl}}",
+    "AutoDetectedTooltip": "자동 감지된 템플릿 — 변경하려면 클릭",
+    "ConfigureApiKey": "AI 요약 및 전사를 생성하려면 Gemini API 키를 구성하세요.",
+    "ConfigureKey": "API 키 구성",
+    "ConfigureProviders": "AI 요약을 생성하려면 설정에서 실시간 전사를 활성화하고 LLM 공급자를 구성하세요.",
     "ConfirmRename": "이름 변경 확인",
     "Copy": "복사",
-    "EditSegmentSpeaker": "이 세그먼트를 다시 할당하려면 클릭하세요",
-    "EnableRequired": "AI 요약을 보려면 설정 → AI 기능에서 AI 기능을 활성화하세요.",
-    "ReRunDeep": "딥 분석 다시 실행(추가 Gemini 토큰을 사용합니다)",
-    "ReRunSummary": "요약 다시 실행",
-    "DeepProgress": {
-      "Title": "딥 분석 실행 중",
-      "Cancel": "취소",
-      "Stage": {
-        "preparing": "준비 중",
-        "uploading": "파일 업로드 중",
-        "uploading-wait": "Gemini 처리 중",
-        "analyzing": "분석 중",
-        "extracting": "추출 중",
-        "saving": "저장 중",
-        "complete": "완료"
-      }
-    },
     "DeepComplete": {
-      "Toast": "✨ 딥 요약이 준비되었습니다",
-      "Badge": "딥 · Gemini가 녹음을 분석했습니다"
+      "Badge": "딥 · Gemini가 녹음을 분석했습니다",
+      "Toast": "✨ 딥 요약이 준비되었습니다"
     },
     "DeepFailed": {
       "Toast": "딥 분석 실패: {{reason}}"
     },
-    "HeroBand": {
-      "Title": "딥 분석 사용",
-      "Desc": "Gemini가 오디오와 비디오를 분석해 구분 가능한 화자 이름, 정확한 인용, 풍부한 요약을 제공합니다.",
-      "Run": "딥 분석 실행"
+    "DeepProgress": {
+      "Cancel": "취소",
+      "Stage": {
+        "analyzing": "분석 중",
+        "complete": "완료",
+        "extracting": "추출 중",
+        "preparing": "준비 중",
+        "saving": "저장 중",
+        "uploading": "파일 업로드 중",
+        "uploading-wait": "Gemini 처리 중"
+      },
+      "Title": "딥 분석 실행 중"
     },
+    "EditSegmentSpeaker": "이 세그먼트를 다시 할당하려면 클릭하세요",
+    "EnableRequired": "AI 요약을 보려면 설정 → AI 기능에서 AI 기능을 활성화하세요.",
+    "Error": "요약을 로드하지 못했습니다: {{error}}",
     "ErrorCodes": {
       "AUTH_ERROR": "API 키가 잘못되었습니다. 설정에서 API 키를 확인하세요.",
-      "NO_API_KEY": "Gemini API 키가 구성되지 않았습니다. 설정에서 API 키를 추가하세요.",
-      "RATE_LIMIT": "API 비율 제한을 초과했습니다. 잠시만 기다려주세요.",
       "BAD_REQUEST": "API가 요청을 거부했습니다. API 키나 입력 내용을 확인하세요.",
-      "SERVER_ERROR": "AI 서버에 오류가 발생했습니다.",
-      "NETWORK_ERROR": "네트워크 오류입니다. 인터넷 연결을 확인하세요.",
-      "PARSE_ERROR": "AI 응답을 구문 분석하지 못했습니다.",
+      "CANCELLED": "처리가 취소되었습니다.",
       "EMPTY_RECORDING": "녹음 파일이 비어 있어 분석할 내용이 없습니다.",
       "INVALID_DURATION": "녹음 길이를 알 수 없어 처리할 수 없습니다.",
-      "CANCELLED": "처리가 취소되었습니다.",
+      "NETWORK_ERROR": "네트워크 오류입니다. 인터넷 연결을 확인하세요.",
+      "NO_API_KEY": "Gemini API 키가 구성되지 않았습니다. 설정에서 API 키를 추가하세요.",
+      "PARSE_ERROR": "AI 응답을 구문 분석하지 못했습니다.",
+      "RATE_LIMIT": "API 비율 제한을 초과했습니다. 잠시만 기다려주세요.",
+      "SERVER_ERROR": "AI 서버에 오류가 발생했습니다.",
       "UNKNOWN_ERROR": "AI 처리에 실패했습니다."
     },
-    "Error": "요약을 로드하지 못했습니다: {{error}}",
-    "PipelineErrorDetail": "AI 요약 실패: {{error}}",
     "Export": {
       "HeadingActionItems": "조치 항목",
       "HeadingKeyDecisions": "주요 결정",
@@ -75,30 +213,60 @@
     "ExportMarkdown": "마크다운으로 복사",
     "ExportSrt": "SRT로 복사",
     "Generate": "요약 생성",
+    "HeroBand": {
+      "Desc": "Gemini가 오디오와 비디오를 분석해 구분 가능한 화자 이름, 정확한 인용, 풍부한 요약을 제공합니다.",
+      "Run": "딥 분석 실행",
+      "Title": "딥 분석 사용"
+    },
     "LoadingVersion": "버전 로드 중...",
     "Maximize": "전체 보기로 확장",
     "MergeInto": "병합 대상…",
     "Minimize": "최소화",
+    "MoreOptions": "추가 옵션",
+    "NewFileName": "새 파일 이름",
     "NoActions": "식별된 작업 항목이 없습니다.",
     "NoChapters": "사용 가능한 챕터가 없습니다.",
     "NoDecisions": "확인된 주요 결정이 없습니다.",
     "NoSummary": "아직 AI 요약이 없습니다.",
     "NoSummaryText": "요약을 사용할 수 없습니다.",
-    "NotAvailableForVersion": "이 버전에서는 사용할 수 없습니다.",
     "NoTranscript": "성적표를 사용할 수 없습니다.",
+    "NotAvailableForVersion": "이 버전에서는 사용할 수 없습니다.",
+    "OpenSettings": "설정 열기",
     "PipelineError": "AI 처리에 실패했습니다. 재생성해 보세요.",
+    "PipelineErrorDetail": "AI 요약 실패: {{error}}",
     "PipelineTranscript": "AI 파이프라인",
     "Processing": "요약 생성 중...",
     "Queued": "처리 대기 중...",
+    "ReRunDeep": "딥 분석 다시 실행(추가 Gemini 토큰을 사용합니다)",
+    "ReRunSummary": "요약 다시 실행",
     "Regenerate": "요약 재생성",
+    "RegenerateBtn": "재생성",
+    "RegenerateChoose": "요약을 재생성할 템플릿 선택",
+    "RegenerateFailed": "요약 재생성 실패: {{err}}",
+    "RegenerateFailedGeneric": "요약 재생성 실패",
+    "RegenerateWithSuggested": "자동 감지된 템플릿으로 재생성",
+    "RegenerateWithTemplate": "템플릿으로 다시 생성…",
+    "RenameApplied": "파일 이름이 '{{name}}'(으)로 변경되었습니다",
+    "RenameError": "파일 이름 변경 실패",
     "RenameSpeaker": "스피커 이름 바꾸기",
+    "RenameSuggestion": "AI 제안",
+    "RenameTo": "이름 바꾸기: {{name}}",
+    "RenamedTo": "“{{name}}”(으)로 이름 변경됨",
+    "Renaming": "이름 바꾸는 중…",
     "Retry": "다시 해 보다",
+    "RevertRename": "변경하지 않기",
+    "ScreenshotTabTitle": "AI 분석",
     "SeekToTimestamp": "이 타임스탬프를 탐색하세요.",
-    "ConfigureApiKey": "AI 요약 및 전사를 생성하려면 Gemini API 키를 구성하세요.",
-    "ConfigureProviders": "AI 요약을 생성하려면 설정에서 실시간 전사를 활성화하고 LLM 공급자를 구성하세요.",
-    "OpenSettings": "설정 열기",
-    "ConfigureKey": "API 키 구성",
     "SetupRequired": "AI 요약을 활성화하려면 설정 → AI 기능에서 Gemini API 키를 구성하세요.",
+    "Speakers": "스피커",
+    "SplitMenu": {
+      "ChooseTemplate": "템플릿 선택…",
+      "Label": "요약 옵션",
+      "ReAnalyze": "녹음 재분석",
+      "ReAnalyzeHint": "녹음을 다시 전사하고 요약을 처음부터 다시 작성합니다. 템플릿을 교체하는 것보다 느립니다."
+    },
+    "SubscribeToGenerate": "구독하여 녹음에서 AI 요약, 전사 및 실행 항목을 생성하세요.",
+    "SubscribeToRegenerate": "구독하여 AI 요약을 재생성하세요.",
     "Tab": {
       "ActionItems": "행위",
       "Chapters": "장",
@@ -106,262 +274,283 @@
       "Summary": "요약",
       "Transcription": "전사"
     },
-    "ScreenshotTabTitle": "AI 분석",
     "TabTitle": "AI 요약",
     "Topics": "주제:",
-    "Speakers": "스피커",
-    "VersionPicker": "버전 기록 찾아보기",
-    "ViewingLive": "실시간 대화 내용 보기",
-    "ViewingVersion": "{{total}}의 v{{n}} 보기",
-    "ViewLatest": "최신 보기 →",
-    "RenameSuggestion": "AI 제안",
-    "NewFileName": "새 파일 이름",
-    "ApplyRename": "이름 바꾸기",
-    "Renaming": "이름 바꾸는 중…",
-    "RenamedTo": "“{{name}}”(으)로 이름 변경됨",
-    "RevertRename": "변경하지 않기",
-    "RenameTo": "이름 바꾸기: {{name}}",
-    "RenameApplied": "파일 이름이 '{{name}}'(으)로 변경되었습니다",
-    "RenameError": "파일 이름 변경 실패",
     "Version": {
       "Latest": "최신",
       "Live": "살다"
     },
-    "RegenerateWithTemplate": "템플릿으로 다시 생성…",
-    "RegenerateFailed": "요약 재생성 실패: {{err}}",
-    "RegenerateFailedGeneric": "요약 재생성 실패",
-    "SplitMenu": {
-      "Label": "요약 옵션",
-      "ChooseTemplate": "템플릿 선택…",
-      "ReAnalyzeHint": "녹음을 다시 전사하고 요약을 처음부터 다시 작성합니다. 템플릿을 교체하는 것보다 느립니다.",
-      "ReAnalyze": "녹음 재분석"
-    },
-    "RegenerateWithSuggested": "자동 감지된 템플릿으로 재생성",
-    "RegenerateChoose": "요약을 재생성할 템플릿 선택",
-    "RegenerateBtn": "재생성",
-    "MoreOptions": "추가 옵션",
-    "AutoDetectedTooltip": "자동 감지된 템플릿 — 변경하려면 클릭",
-    "AutoDetected": "자동 감지: {{tpl}}"
+    "VersionPicker": "버전 기록 찾아보기",
+    "ViewLatest": "최신 보기 →",
+    "ViewingLive": "실시간 대화 내용 보기",
+    "ViewingVersion": "{{total}}의 v{{n}} 보기"
+  },
+  "AISummaryQuality": {
+    "AdvancedSection": "고급",
+    "DisabledStateAddKey": "Gemini API 키 추가 →",
+    "DisabledStateBanner": "멀티모달 Deep 분석에는 Gemini API 키가 필요합니다. 없으면 선택한 LLM 제공자가 생성하는 빠른(전사 기반) 요약만 사용할 수 있습니다.",
+    "Heading": "AI 요약 품질",
+    "MasterToggleHelp": "Gemini는 오디오와 비디오를 직접 읽어 구별된 화자 이름, 더 정확한 인용문, 그리고 더 풍부한 요약을 생성합니다. 빠른(전사 기반) 요약은 기본 설정으로 유지되며, 딥 요약은 자동으로 백그라운드에서 실행되어 완료되면 빠른 요약을 대체합니다.",
+    "MasterToggleLabel": "Gemini 키가 구성된 경우 심층 분석 사용",
+    "PreUploadHelp": "녹음하는 동안 Gemini로 스트리밍하여 중지 후 몇 초 만에 Deep이 완료됩니다.",
+    "PreUploadLabel": "녹음 중 백그라운드에서 오디오/비디오 사전 업로드",
+    "TokenEstimate10MinAudio": "10 min audio",
+    "TokenEstimate10MinVideo": "10 min video",
+    "TokenEstimate1HrAudio": "1시간 오디오",
+    "TokenEstimate1HrVideo": "1시간 비디오",
+    "TokenEstimateHeading": "Deep 실행당 예상 Gemini 토큰 사용량",
+    "TokenEstimateInput": "입력",
+    "TokenEstimateNote": "토큰 비율: 오디오 ≈ 초당 32 토큰, 비디오 ≈ 초당 263 토큰 (1fps 프레임 + 오디오 트랙). 출력 예산은 단일 호출 실행당 32K, 청크 요약 실행당 16K로 제한됩니다. 무료 등급 일일 할당량 적용 (예: Flash-Lite 최신 버전에서 일 500 RPD).",
+    "TokenEstimateOutput": "출력"
   },
   "AISynthesis": {
-    "RefinedFromBatch": "✨ AI가 업데이트",
-    "Title": "노트 요약",
-    "Meta": "{{count}}개 녹음 · 템플릿: {{tpl}}",
-    "CopyToEdit": "편집용 복사",
-    "Regenerate": "재생성",
-    "Generating": "생성 중…",
-    "Provenance": "{{n}}개 녹음에서 생성",
-    "Error": "생성 실패: {{err}}",
-    "RenameSuggested": "AI 제안: \"{{title}}\"",
-    "Template": {
-      "general": {
-        "name": "일반 미팅",
-        "description": "결정, 액션, 논의"
-      },
-      "brainstorm": {
-        "name": "브레인스토밍",
-        "description": "아이디어, 흐름, 열린 질문"
-      },
-      "lecture": {
-        "name": "강의 / 토크",
-        "description": "주제, 핵심 포인트, 질문, 참고"
-      },
-      "oneonone": {
-        "name": "1:1 / 인터뷰",
-        "description": "주제, 감정, 후속 조치"
-      },
-      "sales": {
-        "name": "세일즈 콜",
-        "description": "발견, 이의, 다음 단계, 의사결정자"
-      },
-      "standup": {
-        "name": "스탠드업 / 상태",
-        "description": "인원별 업데이트, 블로커, 다음"
-      },
-      "soap-note": {
-        "name": "SOAP 노트",
-        "description": "주관적, 객관적, 평가, 계획"
-      },
-      "bant-meddic": {
-        "name": "BANT · MEDDIC 자격 평가",
-        "description": "BANT 및 MEDDIC 기준으로 거래를 평가"
-      },
-      "retro": {
-        "name": "스프린트 회고",
-        "description": "잘된 점, 안 된 점, 그리고 구체적인 개선"
-      },
-      "issue-decision-action": {
-        "name": "이슈 / 결정 / 조치",
-        "description": "제기된 이슈, 내린 결정, 배정된 조치"
-      },
-      "executive-summary": {
-        "name": "경영진 요약",
-        "description": "주제별 경영진 보고와 결정·조치"
-      },
-      "team-weekly": {
-        "name": "팀 주간 회의",
-        "description": "지난주, 이번 주, 리스크"
-      },
-      "project-progress": {
-        "name": "프로젝트 진척",
-        "description": "주제별 프로젝트 상태와 결정·조치"
-      },
-      "requirement-review": {
-        "name": "요구사항 검토",
-        "description": "명확화된 요구사항, 미해결 질문, 조치"
-      },
-      "execution-planning": {
-        "name": "실행 계획",
-        "description": "계획, 담당과 일정, 그리고 리스크"
-      },
-      "incident-bug-review": {
-        "name": "인시던트 및 버그 리뷰",
-        "description": "타임라인, 영향, 근본 원인, 조치"
-      },
-      "sales-visit": {
-        "name": "영업 고객 방문",
-        "description": "논의, 다음 단계, 의사결정자"
-      },
-      "business-negotiation": {
-        "name": "비즈니스 협상",
-        "description": "논의된 조건, 양보, 합의, 다음 단계"
-      },
-      "client-follow-up": {
-        "name": "고객 팔로업",
-        "description": "통화를 요약한 발송 가능한 팔로업 이메일"
-      },
-      "pipeline-review": {
-        "name": "파이프라인 / 어카운트 리뷰",
-        "description": "계정 상태, 리스크, 다음 단계"
-      },
-      "interview-report": {
-        "name": "채용 면접 리포트",
-        "description": "배경, 강점, 우려, 채용 추천"
-      },
-      "structured-interview": {
-        "name": "구조화 면접 노트",
-        "description": "근거와 평가가 있는 역량 스코어카드"
-      },
-      "candidate-evaluation": {
-        "name": "후보자 평가",
-        "description": "직무 적합도, 강점, 갭, 추천"
-      },
-      "comp-performance": {
-        "name": "보상 및 성과",
-        "description": "보상 논의와 다음 단계를 포함한 성과 평가"
-      },
-      "hr-consultation": {
-        "name": "인사 / 상사 상담",
-        "description": "제기된 우려, 논의, 후속 조치"
-      },
-      "exit-interview": {
-        "name": "퇴사 인터뷰",
-        "description": "퇴사 사유, 피드백, 후속 조치"
-      },
-      "study-notes": {
-        "name": "강의 요약 / 학습 노트",
-        "description": "핵심 개념, 정의, 복습 포인트"
-      },
-      "qa-extraction": {
-        "name": "Q&A 추출",
-        "description": "제기된 질문과 주어진 답변"
-      },
-      "teacher-handout": {
-        "name": "교사 핸드아웃",
-        "description": "학생이 스스로 학습할 수 있는 주제별 자료"
-      },
-      "teaching-evaluation": {
-        "name": "수업 평가",
-        "description": "강점, 개선 영역, 강사에 대한 추천"
-      },
-      "research-seminar": {
-        "name": "연구 세미나 / 저널 클럽",
-        "description": "논지, 방법, 결과, 비평, 참고문헌"
-      },
-      "medical-consultation": {
-        "name": "의료 상담",
-        "description": "병력, 소견, 평가, 임상 진료에 대한 계획"
-      },
-      "psychotherapy-record": {
-        "name": "심리치료 기록",
-        "description": "내담자 상태, 개입, 반응, 계획"
-      },
-      "outpatient-report": {
-        "name": "외래 진료 보고서",
-        "description": "내원 사유, 소견, 계획"
-      },
-      "clinical-case": {
-        "name": "상세 임상 사례",
-        "description": "평가와 계획이 포함된 주제별 임상 사례 기록"
-      },
-      "multidisciplinary": {
-        "name": "다학제 협진",
-        "description": "전문의별 의견, 합의, 공유 계획"
-      },
-      "legal-consultation": {
-        "name": "의뢰인 상담",
-        "description": "사실관계, 선택지, 수임료 합의, 다음 단계"
-      },
-      "court-record": {
-        "name": "법정 기록",
-        "description": "결정과 함께한 시간순 법정 진행 기록"
-      },
-      "deposition": {
-        "name": "진술 / 신문",
-        "description": "이의 제기와 핵심 인정 사실이 포함된 구조화 Q&A"
-      },
-      "arbitration": {
-        "name": "중재 / 조정",
-        "description": "입장, 합의, 준수 요건"
-      },
-      "partners-meeting": {
-        "name": "파트너 회의",
-        "description": "사건 배정, 로펌 업무, 결정"
-      },
-      "law-enforcement": {
-        "name": "경찰 / 사건 기록",
-        "description": "사건, 진술, 취해진 조치"
-      },
-      "keynote": {
-        "name": "키노트 요약",
-        "description": "주제별 키노트 요약과 핵심 메시지"
-      },
-      "podcast-shownotes": {
-        "name": "팟캐스트 쇼노트",
-        "description": "에피소드 주제, 타임스탬프, 링크"
-      },
-      "podcast-quotes": {
-        "name": "팟캐스트 명언",
-        "description": "화자가 표시된 발췌 인용"
-      },
-      "press-conference": {
-        "name": "기자회견 분석",
-        "description": "발표 내용과 이어진 Q&A"
-      },
-      "forum-panel": {
-        "name": "포럼 / 패널 요약",
-        "description": "주제별 패널 요약과 동의·이견"
-      },
-      "investor-call": {
-        "name": "투자자 / 실적 콜",
-        "description": "주제별 실적 발표와 가이던스·우려"
-      }
-    },
-    "RegenerateTooltip": "같은 템플릿으로 다시 생성",
-    "RegenerateChooseTemplate": "다른 템플릿으로 다시 생성",
-    "Stale": "오래됨 · 새로고침",
-    "StaleTooltip": "이 요약이 생성된 이후 노트가 변경되었습니다 — 클릭하여 새로 고침.",
     "Category": {
-      "team": "팀 및 관리",
+      "education": "교육 및 훈련",
+      "events": "이벤트 및 미디어",
+      "hr": "인사 및 채용",
+      "legal": "법률 및 준수",
+      "medical": "의료 및 건강",
+      "other": "기타",
       "project": "프로젝트 및 애자일",
       "sales": "영업 및 고객",
-      "hr": "인사 및 채용",
-      "education": "교육 및 훈련",
-      "medical": "의료 및 건강",
-      "legal": "법률 및 준수",
-      "events": "이벤트 및 미디어",
-      "other": "기타"
-    }
+      "team": "팀 및 관리"
+    },
+    "CopyToEdit": "편집용 복사",
+    "Error": "생성 실패: {{err}}",
+    "Generating": "생성 중…",
+    "Meta": "{{count}}개 녹음 · 템플릿: {{tpl}}",
+    "Provenance": "{{n}}개 녹음에서 생성",
+    "RefinedFromBatch": "✨ AI가 업데이트",
+    "Regenerate": "재생성",
+    "RegenerateChooseTemplate": "다른 템플릿으로 다시 생성",
+    "RegenerateTooltip": "같은 템플릿으로 다시 생성",
+    "RenameSuggested": "AI 제안: \"{{title}}\"",
+    "Stale": "오래됨 · 새로고침",
+    "StaleTooltip": "이 요약이 생성된 이후 노트가 변경되었습니다 — 클릭하여 새로 고침.",
+    "Template": {
+      "arbitration": {
+        "description": "입장, 합의, 준수 요건",
+        "name": "중재 / 조정"
+      },
+      "bant-meddic": {
+        "description": "BANT 및 MEDDIC 기준으로 거래를 평가",
+        "name": "BANT · MEDDIC 자격 평가"
+      },
+      "brainstorm": {
+        "description": "아이디어, 흐름, 열린 질문",
+        "name": "브레인스토밍"
+      },
+      "business-negotiation": {
+        "description": "논의된 조건, 양보, 합의, 다음 단계",
+        "name": "비즈니스 협상"
+      },
+      "candidate-evaluation": {
+        "description": "직무 적합도, 강점, 갭, 추천",
+        "name": "후보자 평가"
+      },
+      "client-follow-up": {
+        "description": "통화를 요약한 발송 가능한 팔로업 이메일",
+        "name": "고객 팔로업"
+      },
+      "clinical-case": {
+        "description": "평가와 계획이 포함된 주제별 임상 사례 기록",
+        "name": "상세 임상 사례"
+      },
+      "comp-performance": {
+        "description": "보상 논의와 다음 단계를 포함한 성과 평가",
+        "name": "보상 및 성과"
+      },
+      "court-record": {
+        "description": "결정과 함께한 시간순 법정 진행 기록",
+        "name": "법정 기록"
+      },
+      "deposition": {
+        "description": "이의 제기와 핵심 인정 사실이 포함된 구조화 Q&A",
+        "name": "진술 / 신문"
+      },
+      "execution-planning": {
+        "description": "계획, 담당과 일정, 그리고 리스크",
+        "name": "실행 계획"
+      },
+      "executive-summary": {
+        "description": "주제별 경영진 보고와 결정·조치",
+        "name": "경영진 요약"
+      },
+      "exit-interview": {
+        "description": "퇴사 사유, 피드백, 후속 조치",
+        "name": "퇴사 인터뷰"
+      },
+      "forum-panel": {
+        "description": "주제별 패널 요약과 동의·이견",
+        "name": "포럼 / 패널 요약"
+      },
+      "general": {
+        "description": "결정, 액션, 논의",
+        "name": "일반 미팅"
+      },
+      "hr-consultation": {
+        "description": "제기된 우려, 논의, 후속 조치",
+        "name": "인사 / 상사 상담"
+      },
+      "incident-bug-review": {
+        "description": "타임라인, 영향, 근본 원인, 조치",
+        "name": "인시던트 및 버그 리뷰"
+      },
+      "interview-report": {
+        "description": "배경, 강점, 우려, 채용 추천",
+        "name": "채용 면접 리포트"
+      },
+      "investor-call": {
+        "description": "주제별 실적 발표와 가이던스·우려",
+        "name": "투자자 / 실적 콜"
+      },
+      "issue-decision-action": {
+        "description": "제기된 이슈, 내린 결정, 배정된 조치",
+        "name": "이슈 / 결정 / 조치"
+      },
+      "keynote": {
+        "description": "주제별 키노트 요약과 핵심 메시지",
+        "name": "키노트 요약"
+      },
+      "law-enforcement": {
+        "description": "사건, 진술, 취해진 조치",
+        "name": "경찰 / 사건 기록"
+      },
+      "lecture": {
+        "description": "주제, 핵심 포인트, 질문, 참고",
+        "name": "강의 / 토크"
+      },
+      "legal-consultation": {
+        "description": "사실관계, 선택지, 수임료 합의, 다음 단계",
+        "name": "의뢰인 상담"
+      },
+      "medical-consultation": {
+        "description": "병력, 소견, 평가, 임상 진료에 대한 계획",
+        "name": "의료 상담"
+      },
+      "multidisciplinary": {
+        "description": "전문의별 의견, 합의, 공유 계획",
+        "name": "다학제 협진"
+      },
+      "oneonone": {
+        "description": "주제, 감정, 후속 조치",
+        "name": "1:1 / 인터뷰"
+      },
+      "outpatient-report": {
+        "description": "내원 사유, 소견, 계획",
+        "name": "외래 진료 보고서"
+      },
+      "partners-meeting": {
+        "description": "사건 배정, 로펌 업무, 결정",
+        "name": "파트너 회의"
+      },
+      "pipeline-review": {
+        "description": "계정 상태, 리스크, 다음 단계",
+        "name": "파이프라인 / 어카운트 리뷰"
+      },
+      "podcast-quotes": {
+        "description": "화자가 표시된 발췌 인용",
+        "name": "팟캐스트 명언"
+      },
+      "podcast-shownotes": {
+        "description": "에피소드 주제, 타임스탬프, 링크",
+        "name": "팟캐스트 쇼노트"
+      },
+      "press-conference": {
+        "description": "발표 내용과 이어진 Q&A",
+        "name": "기자회견 분석"
+      },
+      "project-progress": {
+        "description": "주제별 프로젝트 상태와 결정·조치",
+        "name": "프로젝트 진척"
+      },
+      "psychotherapy-record": {
+        "description": "내담자 상태, 개입, 반응, 계획",
+        "name": "심리치료 기록"
+      },
+      "qa-extraction": {
+        "description": "제기된 질문과 주어진 답변",
+        "name": "Q&A 추출"
+      },
+      "requirement-review": {
+        "description": "명확화된 요구사항, 미해결 질문, 조치",
+        "name": "요구사항 검토"
+      },
+      "research-seminar": {
+        "description": "논지, 방법, 결과, 비평, 참고문헌",
+        "name": "연구 세미나 / 저널 클럽"
+      },
+      "retro": {
+        "description": "잘된 점, 안 된 점, 그리고 구체적인 개선",
+        "name": "스프린트 회고"
+      },
+      "sales": {
+        "description": "발견, 이의, 다음 단계, 의사결정자",
+        "name": "세일즈 콜"
+      },
+      "sales-visit": {
+        "description": "논의, 다음 단계, 의사결정자",
+        "name": "영업 고객 방문"
+      },
+      "soap-note": {
+        "description": "주관적, 객관적, 평가, 계획",
+        "name": "SOAP 노트"
+      },
+      "standup": {
+        "description": "인원별 업데이트, 블로커, 다음",
+        "name": "스탠드업 / 상태"
+      },
+      "structured-interview": {
+        "description": "근거와 평가가 있는 역량 스코어카드",
+        "name": "구조화 면접 노트"
+      },
+      "study-notes": {
+        "description": "핵심 개념, 정의, 복습 포인트",
+        "name": "강의 요약 / 학습 노트"
+      },
+      "teacher-handout": {
+        "description": "학생이 스스로 학습할 수 있는 주제별 자료",
+        "name": "교사 핸드아웃"
+      },
+      "teaching-evaluation": {
+        "description": "강점, 개선 영역, 강사에 대한 추천",
+        "name": "수업 평가"
+      },
+      "team-weekly": {
+        "description": "지난주, 이번 주, 리스크",
+        "name": "팀 주간 회의"
+      }
+    },
+    "Title": "노트 요약"
+  },
+  "AITemplateSettings": {
+    "AutoPickDesc": "모델이 각 회의에 가장 적합한 템플릿을 선택하도록 합니다. 꺼져 있으면 기본적으로 회의록이 사용되며 분류기 호출이 이루어지지 않습니다.",
+    "AutoPickToggle": "요약 템플릿 자동 감지",
+    "BodyPlaceholder": "템플릿 프롬프트를 작성하세요…",
+    "ConfirmDeleteMessage": "이 템플릿을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+    "ConfirmDeleteTitle": "템플릿 삭제",
+    "CopySuffix": "복사본",
+    "Delete": "삭제",
+    "DeleteTemplate": "삭제",
+    "DescriptionPlaceholder": "이 템플릿의 용도",
+    "DuplicateTemplate": "복제",
+    "EditTemplate": "편집",
+    "ErrorApiUnavailable": "설정 API를 사용할 수 없습니다",
+    "ErrorBodyRequired": "템플릿 본문은 비어 있을 수 없습니다",
+    "ErrorNameRequired": "이름은 필수입니다",
+    "ErrorSaveFailed": "템플릿 저장에 실패했습니다",
+    "FieldBody": "본문 (마크다운)",
+    "FieldDescription": "설명",
+    "FieldName": "이름",
+    "FieldSpecialized": "전문화됨",
+    "InventoryTitle": "설치된 템플릿",
+    "MenuItem": "AI 요약 템플릿",
+    "NamePlaceholder": "예: 고객 통화 요약",
+    "New": "새로 만들기",
+    "NewTemplate": "새 템플릿",
+    "PageTitle": "AI 요약 템플릿",
+    "SectionTitle": "AI 요약 템플릿",
+    "YourTemplates": "내 템플릿"
   },
   "About": {
     "AppStoreBuild": "App Store 빌드",
@@ -381,6 +570,7 @@
     },
     "AssetContext": "컨텍스트: {{name}}",
     "CommandHelp": "명령: /new · /clear · /cost · /help",
+    "ConfigureKey": "API 키 구성",
     "GlobalTitle": "AI 에이전트",
     "GoToSettings": "설정 열기",
     "LiveAction": {
@@ -395,19 +585,17 @@
       "Plan": "계획"
     },
     "Model": {
-      "Haiku": "하이쿠",
-      "Opus": "작",
-      "Sonnet": "소네트"
+      "Haiku": "Haiku",
+      "Opus": "Opus",
+      "Sonnet": "Sonnet"
     },
     "NewSession": "새 세션",
-    "SwitchProvider": "제공자 전환",
     "NoSessions": "아직 세션이 없습니다. 아래에서 대화를 시작해 보세요.",
     "NotConfigured": "에이전트를 사용하려면 에이전트 도구 또는 키를 구성하세요.",
-    "ConfigureKey": "API 키 구성",
     "Permission": {
       "Allow": "한 번만 허용",
-      "Allowed": "허용된",
       "AllowSession": "세션 허용",
+      "Allowed": "허용된",
       "Denied": "거부됨",
       "Deny": "부인하다",
       "Title": "도구 권한 요청"
@@ -428,10 +616,10 @@
       "DraftEmail": "후속 이메일 초안",
       "Summarize": "이 녹음을 요약해 보세요"
     },
+    "SectionTitle": "AI 에이전트",
     "SendButton": "보내다",
     "SendPlaceholder": "무엇이든 물어보세요... (보내려면 Enter, 줄 바꿈하려면 Shift+Enter)",
     "SessionCost": "세션: {{inputTokens}} in /{{outputTokens}} out 토큰",
-    "SectionTitle": "AI 에이전트",
     "Sessions": "세션",
     "StopButton": "멈추다",
     "Streaming": {
@@ -446,8 +634,11 @@
       "HelpAnalyze": "최근 녹음을 분석하는 데 도움을 주세요",
       "WhatCanYouDo": "무엇을 도와주실 수 있나요?"
     },
+    "SwitchModel": "모델 전환",
+    "SwitchProvider": "제공자 전환",
     "Title": "AI 에이전트",
     "ToolCall": {
+      "AndMoreLines": "... 그리고 {{count}} 줄 더 보기",
       "AndMoreLines_one": "... 그리고 {{count}} 줄 더 보기",
       "AndMoreLines_other": "... 그리고 {{count}} 줄 더 보기",
       "Executing": "실행 중...",
@@ -455,21 +646,19 @@
       "Output": "산출",
       "Pattern": "무늬:",
       "Reading": "파일을 읽는 중...",
-      "ShowDetails": "세부정보 표시",
-      "AndMoreLines": "... 그리고 {{count}} 줄 더 보기"
+      "ShowDetails": "세부정보 표시"
     },
     "ToolGroup": {
+      "Actions": "{{count}} 작업",
       "Actions_one": "{{count}} 작업",
       "Actions_other": "{{count}} 작업",
+      "Completed": "{{count}} 완료됨",
       "Completed_one": "{{count}} 완료됨",
       "Completed_other": "{{count}} 완료됨",
-      "Running_one": "{{count}} 실행 중",
-      "Running_other": "{{count}} 실행 중",
       "Running": "{{count}} 실행 중",
-      "Completed": "{{count}} 완료됨",
-      "Actions": "{{count}} 작업"
-    },
-    "SwitchModel": "모델 전환"
+      "Running_one": "{{count}} 실행 중",
+      "Running_other": "{{count}} 실행 중"
+    }
   },
   "AgentSection": {
     "ConfigureApiKey": "AI 에이전트를 사용하려면 API 키를 구성하세요."
@@ -511,17 +700,17 @@
     "SlackWeb": "Slack (Web)",
     "SteamChat": "스팀 채팅",
     "Streamlabs": "Streamlabs Desktop",
+    "TeamSpeak": "TeamSpeak",
     "Teams": "Microsoft Teams(회사/학교)",
     "TeamsConsumer": "Microsoft 팀(개인)",
-    "TeamSpeak": "TeamSpeak",
     "TeamsWeb": "Microsoft 팀(웹)",
     "Telegram": "Telegram",
     "Twitch": "Twitch",
     "Valorant": "Valorant",
     "Viber": "Viber",
+    "WeChat": "WeChat",
     "Webex": "Cisco Webex",
     "WebexWeb": "Webex(웹)",
-    "WeChat": "WeChat",
     "WhatsApp": "WhatsApp",
     "WindowsSoundRecorder": "Windows 사운드 레코더",
     "XboxGameBar": "Xbox 게임 바",
@@ -542,15 +731,15 @@
     "UnmuteMic": "음소거 해제"
   },
   "AutoDetectDrawer": {
-    "Title": "자동 감지",
-    "Description": "회의 앱(Zoom, Teams, Meet…)을 감시하고 녹음을 제안해 시작 버튼을 누르는 것을 잊지 않게 합니다.",
-    "ToggleLabel": "자동 감지 {{state}}",
-    "StateOn": "켜짐",
-    "StateOff": "꺼짐",
-    "RecentHeading": "최근 감지",
-    "RecentEmpty": "아직 감지된 항목이 없습니다.",
     "AdvancedSettings": "고급 설정 →",
-    "LearnMore": "자세히 보기"
+    "Description": "회의 앱(Zoom, Teams, Meet…)을 감시하고 녹음을 제안해 시작 버튼을 누르는 것을 잊지 않게 합니다.",
+    "LearnMore": "자세히 보기",
+    "RecentEmpty": "아직 감지된 항목이 없습니다.",
+    "RecentHeading": "최근 감지",
+    "StateOff": "꺼짐",
+    "StateOn": "켜짐",
+    "Title": "자동 감지",
+    "ToggleLabel": "자동 감지 {{state}}"
   },
   "AutoDetectFirstFire": {
     "LearnLink": "처음이신가요? 작동 방식을 알아보세요 →"
@@ -577,6 +766,15 @@
     "Tip2Title": "여러 탐지 방법",
     "Title": "회의 자동 감지"
   },
+  "AutoDetectToast": {
+    "auto_started": "자동 시작됨 · 취소하려면 실행취소",
+    "no": "아니요",
+    "prompt": "SeaMeet이 이를 녹음하길 원하시나요?",
+    "record": "기록",
+    "recording_app": "{{app}} 회의 녹화",
+    "undo": "끄르다",
+    "using_mic": "{{app}}이(가) 마이크를 사용 중입니다."
+  },
   "AutoRecording": {
     "BugReport": "버그가 있으시다면 seameet@seasalt.ai로 보고해 주세요",
     "BugReportTitle": "버그 신고",
@@ -593,6 +791,7 @@
     "AlreadyDownloaded": "이미 다운로드됨",
     "Cancel": "취소",
     "Close": "닫기",
+    "Complete": "다운로드 완료",
     "ContactSupport": "문제가 계속되면 seameet@seasalt.ai로 문의해 주세요",
     "DownloadAll": "전체 다운로드",
     "Downloaded": "다운로드됨",
@@ -606,7 +805,6 @@
     "RetryFailed": "실패 항목 다시 받기",
     "Skipped": "건너뜀",
     "StartDownload": "다운로드 시작",
-    "Complete": "다운로드 완료",
     "Stats": "다운로드 통계",
     "Title": "회의 다운로드",
     "ToDownload": "다운로드할 항목",
@@ -614,117 +812,66 @@
     "ViewDetails": "세부 정보 보기"
   },
   "Billing": {
-    "Nudge": {
-      "LiveTranscription": "실시간 전사 및 회의 후 AI 분석 활성화",
-      "ScreenshotAnalysis": "AI 기반 스크린샷 분석 활성화",
-      "Sync": "BYOK Pro로 비공개 GitHub 저장소에 노트를 백업하세요",
-      "CTA": "로그인 및 구독",
-      "LearnMore": "자세히 알아보기"
-    },
-    "Explainer": {
-      "Title": "SeaMeet AI 작동 방식",
-      "Subtitle": "BYOK — 자신의 키 가져오기",
-      "Continue": "구독으로 계속"
-    },
-    "Coupon": {
-      "Title": "런칭 프로모션",
-      "BYOK100": "BYOK100",
-      "BYOK100Desc": "첫 달 무료 — 선착순 100명",
-      "FallbackDesc": "BYOK100이 소진되면 coupon@seameet.ai로 이메일하여 다른 쿠폰을 받으세요 (1년간 10% 할인 또는 다른 첫 달 무료 코드).",
-      "HowToUse": "Stripe 결제 시 쿠폰 코드를 입력하세요."
-    },
-    "PostSetup": {
-      "Title": "모든 준비 완료! 지금 사용해 보세요.",
-      "Desc": "짧은 회의를 녹음하거나 스크린샷을 찍어 AI 전사 및 분석을 체험해 보세요.",
-      "TryRecording": "녹음 시작",
-      "TryScreenshot": "스크린샷 찍기",
-      "Later": "나중에 해볼게요"
-    },
-    "Banner": {
-      "CancelPending": "구독이 {{date}}에 종료됩니다. 이후 전사, 요약 및 AI 기능이 중단됩니다.",
-      "PastDue": "결제 실패 — AI 기능이 비활성화되었습니다. 결제 수단을 업데이트하여 복원하세요.",
-      "Reactivate": "재활성화",
-      "UpdateCard": "카드 업데이트"
-    },
     "BYOK": {
+      "Acronym": "BYOK (Bring Your Own Key — 자신의 키를 가져오세요)",
       "ActiveTitle": "구독 활성 — BYOK Pro",
       "AnthropicHelp": "키 받기: ",
       "AnthropicHelpLink": "console.anthropic.com",
-      "AnthropicLabel": "클로드(인류)",
+      "AnthropicLabel": "Claude (Anthropic)",
       "AnthropicTip": "팁: 신규 계정에는 무료 크레딧이 제공됩니다. Claude Pro 또는 Max를 구독 중이라면 포함되어 있습니다.",
       "AnthropicUsage": "용도: AI 질문, 프로젝트 분석",
-      "Configured": "설정 완료",
-      "EnterKey": "API 키 입력",
-      "GeminiHelp": "무료 키 받기: ",
-      "GeminiHelpLink": "aistudio.google.com/apikey",
-      "GeminiLabel": "제미니(구글 AI)",
-      "KeySaved": "키가 저장됨(숨김)",
-      "GeminiUsage": "용도: 전사, 요약, 실시간 전사. 무료 키는 Gemini 요청 제한 및 할당량의 적용을 받습니다. 제한에 도달하면 Google AI Studio 유료 플랜으로 변경하세요.",
-      "NotConfigured": "미설정",
-      "SaveContinue": "저장 후 계속",
-      "SaveFailed": "키 저장 실패",
-      "Saving": "저장 중...",
-      "SecurityNote": "키는 기기에 로컬 저장됩니다 (OS 키체인으로 암호화). SeaMeet은 키를 서버로 전송하지 않습니다.",
-      "SkipForNow": "나중에 설정",
-      "Subtitle": "한 단계 더: AI API 키를 연결하세요.",
-      "TabLabel": "API 키",
-      "Validating": "검증 중...",
-      "ValidationFailed": "검증 실패",
-      "WizardStep": "{{total}}단계 중 {{current}}단계",
-      "Step1Title": "Gemini API 키 연결",
-      "Step1Desc": "전사, 요약, 실시간 전사에 사용됩니다. Google AI Studio에서 무료 키를 받으세요.",
-      "Step2Title": "Claude API 키 연결",
-      "Step2Desc": "AI 질문과 프로젝트 분석에 사용됩니다. 신규 계정에는 무료 크레딧이 제공됩니다. Claude Pro 또는 Max에도 포함되어 있습니다.",
-      "Step3Title": "모든 설정 완료!",
-      "Step3Desc": "두 API 키가 모두 설정되었습니다. 아래에서 언제든지 업데이트할 수 있습니다.",
-      "Next": "다음",
-      "Done": "완료",
-      "TestKey": "키 테스트",
-      "TestingKey": "테스트 중...",
-      "RemoveKey": "저장된 키 삭제",
-      "StepCopilotTitle": "GitHub Copilot 연결 (선택사항)",
-      "StepCopilotDesc": "시스템에서 GitHub Copilot이 감지되었습니다. 선호하는 에이전트 제공자를 선택하세요.",
-      "CopilotStatus": "GitHub 코파일럿",
       "Authenticated": "인증됨",
-      "CopilotUsage": "기본 에이전트 제공자로 설정하시겠습니까?",
-      "CopilotFreeWarning": "GitHub Copilot Free는 월 50회의 에이전트/채팅 요청만 포함합니다. 빠른 테스트에는 좋지만 한도에 빠르게 도달할 수 있습니다. 더 높은 한도를 위해 Copilot Pro로 업그레이드하거나, 더 많은 여유를 위해 다른 제공자(Claude 또는 Gemini)를 사용하세요.",
-      "KeepClaude": "Claude를 기본값으로 유지",
-      "UseCopilot": "GitHub Copilot을 기본값으로 사용",
-      "CopilotLabel": "GitHub 코파일럿",
+      "Configured": "설정 완료",
       "CopilotDetected": "감지됨",
+      "CopilotFlatUsage": "용도: AI 에이전트 (Claude 대안). API 키 불필요 — GitHub 로그인을 사용합니다.",
+      "CopilotFreeWarning": "GitHub Copilot Free는 월 50회의 에이전트/채팅 요청만 포함합니다. 빠른 테스트에는 좋지만 한도에 빠르게 도달할 수 있습니다. 더 높은 한도를 위해 Copilot Pro로 업그레이드하거나, 더 많은 여유를 위해 다른 제공자(Claude 또는 Gemini)를 사용하세요.",
+      "CopilotLabel": "GitHub Copilot",
       "CopilotNotDetected": "감지되지 않음",
       "CopilotSignupHint": "GitHub Copilot을 대체 에이전트로 사용해 보시겠습니까? github.com/features/copilot/plans에서 무료 플랜에 가입하고 (월 50회 에이전트/채팅 요청 포함), Copilot CLI를 설치한 후 \"copilot login\"을 실행하세요.",
-      "CopilotFlatUsage": "용도: AI 에이전트 (Claude 대안). API 키 불필요 — GitHub 로그인을 사용합니다.",
-      "Acronym": "BYOK (Bring Your Own Key — 자신의 키를 가져오세요)",
-      "Explanation": "BYOK은 자신의 AI 제공업체 키를 연결하는 방식을 의미합니다. 데이터는 SeaMeet을 거치지 않고 신뢰하는 제공업체로 직접 전송됩니다.",
-      "Welcome": {
-        "Title": "BYOK Pro (Bring Your Own Key)에 오신 것을 환영합니다",
-        "Subtitle": "월 $4.99 · 당신의 데이터, 당신의 제공업체",
-        "PickOne": "키 하나만 연결하면 끝.",
-        "OneKeyTitle": "키 하나로 모든 작업 처리",
-        "OneKeyBadge": "추천",
-        "MixTitle": "믹스 앤 매치",
-        "MixSubtitle": "파워 사용자용",
-        "OneKeyDoList": "가능한 작업:",
-        "MixSupportList": "작업마다 다른 서비스를 선택할 수 있습니다. 지원:",
-        "MixSttHeading": "음성 인식 (STT):",
-        "MixLlmHeading": "요약 / 노트 / 위키 (LLM):",
-        "MixAgentHeading": "AI 에이전트 (LLM + 도구):",
-        "MixCliHeading": "로컬 CLI (키 불필요):",
-        "PickOneRadio": "하나 선택:",
-        "GeminiDesc": "Google AI Studio의 넉넉한 무료 등급. 나중에 더 나은 품질과 할당량을 위해 업그레이드할 수 있습니다.",
-        "OpenAIDesc": "본인의 유료 키 사용. ChatGPT 품질.",
-        "GetFreeKey": "무료 키 받기 →",
-        "PasteHere": "여기에 붙여넣기",
-        "OpenAdvanced": "고급 설정 열기 →",
-        "PowerUserTitle": "이미 파워 사용자인가요?",
-        "PowerUserDesc": "Claude Code, GitHub Copilot, Codex CLI 또는 Gemini CLI가 설치되어 있다면 AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 다음 단계에서 감지합니다.",
-        "WhyTwoProviders": "왜 Gemini 또는 OpenAI인가요? 이 두 서비스만이 단일 키로 음성 인식과 요약을 모두 처리합니다. 다른 서비스는 두 번째 키가 필요합니다.",
-        "SetupLater": "나중에 설정 — 앱 둘러보기"
+      "CopilotStatus": "GitHub Copilot",
+      "CopilotUsage": "기본 에이전트 제공자로 설정하시겠습니까?",
+      "Done": "완료",
+      "EnterKey": "API 키 입력",
+      "Explainer": {
+        "NewFAQ": {
+          "A1": "AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 시스템에서 Claude Code, GitHub Copilot, Codex CLI, Gemini CLI를 자동으로 감지합니다.",
+          "A2": "AI는 Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter, Amazon Bedrock. 전사는 Deepgram, Soniox. 위의 4개 CLI도 가능.",
+          "A3": "네. 녹음, 전사, 요약은 사용자의 장치에서 선택한 제공업체로 직접 전송됩니다. SeaMeet 서버는 절대 보지 않습니다. 우리는 구독 상태와 구성한 제공업체만 봅니다(키도 콘텐츠도 아님).",
+          "A4": "구독은 SeaMeet 앱 개발을 지원합니다 — 다중 제공업체 라우팅, 실시간 전사, 위키 생성, 도구 사용이 가능한 AI 에이전트, 스크린샷 OCR, 지속적인 플랫폼 지원. AI 비용은 별도이며 제공업체에 직접 지불됩니다(Gemini 무료 등급에서는 종종 무료).",
+          "A5": "예. BYOK Pro는 노트와 위키를 사용자가 직접 관리하는 비공개 GitHub 저장소에 동기화합니다. GitHub의 무료 플랜은 무제한 비공개 저장소를 포함하므로 무료이면서 비공개입니다 — 노트가 SeaMeet 서버에 닿지 않습니다. 워크스페이스당 저장소 하나이며, 사실상 무제한 용량(1 GB당 약 200,000–500,000 노트)을 제공합니다. 오디오, 비디오, 스크린샷은 기기에 로컬로 유지됩니다.",
+          "Q1": "이미 Claude Pro 또는 GitHub Copilot이 있다면?",
+          "Q2": "어떤 제공업체를 사용할 수 있나요?",
+          "Q3": "제 데이터는 정말로 SeaMeet에 의해 건드려지지 않나요?",
+          "Q4": "키를 직접 가져오는데 왜 $4.99를 지불하나요?",
+          "Q5": "BYOK Pro에 클라우드 동기화가 포함되나요?"
+        },
+        "WhatYouGet": {
+          "Bullet1": "하나의 키(Gemini 또는 OpenAI)로 모든 AI 기능이 작동합니다.",
+          "Bullet2": "녹화 · 전사 · 요약 · 노트 작성 · 위키 구축 · 과거 회의에 대해 질문 · 스크린샷 내 검색.",
+          "Bullet3": "또는 작업별로 제공업체 혼합 — 전사에 Deepgram, 요약에 Claude, 에이전트에 좋아하는 CLI.",
+          "Title": "월 $4.99로 얻을 수 있는 것"
+        }
       },
+      "Explanation": "BYOK은 자신의 AI 제공업체 키를 연결하는 방식을 의미합니다. 데이터는 SeaMeet을 거치지 않고 신뢰하는 제공업체로 직접 전송됩니다.",
+      "GeminiHelp": "무료 키 받기: ",
+      "GeminiHelpLink": "aistudio.google.com/apikey",
+      "GeminiLabel": "Gemini (Google AI)",
+      "GeminiUsage": "용도: 전사, 요약, 실시간 전사. 무료 키는 Gemini 요청 제한 및 할당량의 적용을 받습니다. 제한에 도달하면 Google AI Studio 유료 플랜으로 변경하세요.",
+      "KeepClaude": "Claude를 기본값으로 유지",
+      "KeySaved": "키가 저장됨(숨김)",
+      "Manage": {
+        "Subtitle": "키를 붙여 넣어 제공업체를 전환하거나, 작업별 세부 조정을 위해 고급 설정을 여세요.",
+        "Title": "내 AI 제공업체 키"
+      },
+      "Next": "다음",
+      "NotConfigured": "미설정",
       "Receipt": {
+        "CLIDetected": "감지됨: {{cli}} — 에이전트에 사용하시겠어요?",
+        "CTAScreenshot": "스크린샷 찍기 →",
+        "CTAStart": "녹음 시작 →",
+        "CTAWriteNote": "노트 작성 →",
+        "CustomizeCTA": "작업별 제공업체 사용자 지정 →",
         "Heading": "{{provider}} 연결됨.",
-        "YouCanNow": "이제 할 수 있는 작업:",
         "Job1": "회의 녹음",
         "Job2": "회의 전사",
         "Job3": "주요 결정·액션·챕터로 요약",
@@ -732,57 +879,91 @@
         "Job5": "위키 구축",
         "Job6": "지난 회의에 대해 질문",
         "Job7": "스크린샷 내부 검색",
-        "CTAStart": "녹음 시작 →",
-        "CTAScreenshot": "스크린샷 찍기 →",
-        "CTAWriteNote": "노트 작성 →",
-        "CustomizeCTA": "작업별 제공업체 사용자 지정 →",
-        "CLIDetected": "감지됨: {{cli}} — 에이전트에 사용하시겠어요?",
+        "KeepDefault": "기본 유지",
         "UseDetectedCLI": "사용",
-        "KeepDefault": "기본 유지"
+        "YouCanNow": "이제 할 수 있는 작업:"
       },
+      "RemoveKey": "저장된 키 삭제",
+      "SaveContinue": "저장 후 계속",
+      "SaveFailed": "키 저장 실패",
+      "Saving": "저장 중...",
+      "SecurityNote": "키는 기기에 로컬 저장됩니다 (OS 키체인으로 암호화). SeaMeet은 키를 서버로 전송하지 않습니다.",
+      "SkipForNow": "나중에 설정",
+      "Step1Desc": "전사, 요약, 실시간 전사에 사용됩니다. Google AI Studio에서 무료 키를 받으세요.",
+      "Step1Title": "Gemini API 키 연결",
+      "Step2Desc": "AI 질문과 프로젝트 분석에 사용됩니다. 신규 계정에는 무료 크레딧이 제공됩니다. Claude Pro 또는 Max에도 포함되어 있습니다.",
+      "Step2Title": "Claude API 키 연결",
+      "Step3Desc": "두 API 키가 모두 설정되었습니다. 아래에서 언제든지 업데이트할 수 있습니다.",
+      "Step3Title": "모든 설정 완료!",
+      "StepCopilotDesc": "시스템에서 GitHub Copilot이 감지되었습니다. 선호하는 에이전트 제공자를 선택하세요.",
+      "StepCopilotTitle": "GitHub Copilot 연결 (선택사항)",
+      "Subtitle": "한 단계 더: AI API 키를 연결하세요.",
+      "TabLabel": "API 키",
+      "TestKey": "키 테스트",
+      "TestingKey": "테스트 중...",
+      "UseCopilot": "GitHub Copilot을 기본값으로 사용",
+      "Validating": "검증 중...",
+      "ValidationFailed": "검증 실패",
       "ValueHero": {
-        "HeadlinePreSubscribe": "월 $4.99로 얻는 혜택",
-        "HeadlinePostSubscribe": "BYOK Pro 구독에 포함된 항목",
-        "HeadlineSettings": "BYOK Pro를 사용하는 이유",
-        "PrivacyTitle": "개인정보 보호",
-        "PrivacyDesc": "데이터는 기기에서 Google / Anthropic / OpenAI 등으로 직접 전송됩니다. SeaMeet 서버는 녹음, 전사, 요약을 절대 보지 않습니다.",
-        "QualityTitle": "품질",
-        "QualityDesc": "작업마다 최적의 모델을 선택. 전사는 Gemini Live, 작성은 Claude, 화자 분리는 Deepgram.",
-        "CostTitle": "비용 관리",
         "CostDesc": "제공업체에 직접 결제. 대부분의 사용자는 Gemini의 넉넉한 무료 등급에 머물며 AI 비용을 전혀 지불하지 않습니다.",
-        "SovereigntyTitle": "주권",
+        "CostTitle": "비용 관리",
+        "HeadlinePostSubscribe": "BYOK Pro 구독에 포함된 항목",
+        "HeadlinePreSubscribe": "월 $4.99로 얻는 혜택",
+        "HeadlineSettings": "BYOK Pro를 사용하는 이유",
+        "PrivacyDesc": "데이터는 기기에서 Google / Anthropic / OpenAI 등으로 직접 전송됩니다. SeaMeet 서버는 녹음, 전사, 요약을 절대 보지 않습니다.",
+        "PrivacyTitle": "개인정보 보호",
+        "QualityDesc": "작업마다 최적의 모델을 선택. 전사는 Gemini Live, 작성은 Claude, 화자 분리는 Deepgram.",
+        "QualityTitle": "품질",
         "SovereigntyDesc": "키는 OS 키체인에 저장됩니다. 언제든 해지 가능. SeaMeet은 AI 호출에 대한 사용 데이터를 전혀 수집하지 않습니다.",
-        "SyncTitle": "무료 및 비공개 동기화",
-        "SyncDesc": "노트와 위키를 자신의 비공개 GitHub 저장소에 백업하세요. 추가 비용 없음, 저장 용량 제한 없음, 워크스페이스당 저장소 하나."
+        "SovereigntyTitle": "주권",
+        "SyncDesc": "노트와 위키를 자신의 비공개 GitHub 저장소에 백업하세요. 추가 비용 없음, 저장 용량 제한 없음, 워크스페이스당 저장소 하나.",
+        "SyncTitle": "무료 및 비공개 동기화"
       },
-      "Manage": {
-        "Title": "내 AI 제공업체 키",
-        "Subtitle": "키를 붙여 넣어 제공업체를 전환하거나, 작업별 세부 조정을 위해 고급 설정을 여세요."
+      "Welcome": {
+        "GeminiDesc": "Google AI Studio의 넉넉한 무료 등급. 나중에 더 나은 품질과 할당량을 위해 업그레이드할 수 있습니다.",
+        "GetFreeKey": "무료 키 받기 →",
+        "MixAgentHeading": "AI 에이전트 (LLM + 도구):",
+        "MixCliHeading": "로컬 CLI (키 불필요):",
+        "MixLlmHeading": "요약 / 노트 / 위키 (LLM):",
+        "MixSttHeading": "음성 인식 (STT):",
+        "MixSubtitle": "파워 사용자용",
+        "MixSupportList": "작업마다 다른 서비스를 선택할 수 있습니다. 지원:",
+        "MixTitle": "믹스 앤 매치",
+        "OneKeyBadge": "추천",
+        "OneKeyDoList": "가능한 작업:",
+        "OneKeyTitle": "키 하나로 모든 작업 처리",
+        "OpenAIDesc": "본인의 유료 키 사용. ChatGPT 품질.",
+        "OpenAdvanced": "고급 설정 열기 →",
+        "PasteHere": "여기에 붙여넣기",
+        "PickOne": "키 하나만 연결하면 끝.",
+        "PickOneRadio": "하나 선택:",
+        "PowerUserDesc": "Claude Code, GitHub Copilot, Codex CLI 또는 Gemini CLI가 설치되어 있다면 AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 다음 단계에서 감지합니다.",
+        "PowerUserTitle": "이미 파워 사용자인가요?",
+        "SetupLater": "나중에 설정 — 앱 둘러보기",
+        "Subtitle": "월 $4.99 · 당신의 데이터, 당신의 제공업체",
+        "Title": "BYOK Pro (Bring Your Own Key)에 오신 것을 환영합니다",
+        "WhyTwoProviders": "왜 Gemini 또는 OpenAI인가요? 이 두 서비스만이 단일 키로 음성 인식과 요약을 모두 처리합니다. 다른 서비스는 두 번째 키가 필요합니다."
       },
-      "Explainer": {
-        "WhatYouGet": {
-          "Title": "월 $4.99로 얻을 수 있는 것",
-          "Bullet1": "하나의 키(Gemini 또는 OpenAI)로 모든 AI 기능이 작동합니다.",
-          "Bullet2": "녹화 · 전사 · 요약 · 노트 작성 · 위키 구축 · 과거 회의에 대해 질문 · 스크린샷 내 검색.",
-          "Bullet3": "또는 작업별로 제공업체 혼합 — 전사에 Deepgram, 요약에 Claude, 에이전트에 좋아하는 CLI."
-        },
-        "NewFAQ": {
-          "Q1": "이미 Claude Pro 또는 GitHub Copilot이 있다면?",
-          "A1": "AI 에이전트에 사용할 수 있습니다 — 추가 API 키 불필요. 시스템에서 Claude Code, GitHub Copilot, Codex CLI, Gemini CLI를 자동으로 감지합니다.",
-          "Q2": "어떤 제공업체를 사용할 수 있나요?",
-          "A2": "AI는 Gemini, OpenAI, Anthropic Claude, DeepSeek, OpenRouter, Amazon Bedrock. 전사는 Deepgram, Soniox. 위의 4개 CLI도 가능.",
-          "Q3": "제 데이터는 정말로 SeaMeet에 의해 건드려지지 않나요?",
-          "A3": "네. 녹음, 전사, 요약은 사용자의 장치에서 선택한 제공업체로 직접 전송됩니다. SeaMeet 서버는 절대 보지 않습니다. 우리는 구독 상태와 구성한 제공업체만 봅니다(키도 콘텐츠도 아님).",
-          "Q4": "키를 직접 가져오는데 왜 $4.99를 지불하나요?",
-          "A4": "구독은 SeaMeet 앱 개발을 지원합니다 — 다중 제공업체 라우팅, 실시간 전사, 위키 생성, 도구 사용이 가능한 AI 에이전트, 스크린샷 OCR, 지속적인 플랫폼 지원. AI 비용은 별도이며 제공업체에 직접 지불됩니다(Gemini 무료 등급에서는 종종 무료).",
-          "Q5": "BYOK Pro에 클라우드 동기화가 포함되나요?",
-          "A5": "예. BYOK Pro는 노트와 위키를 사용자가 직접 관리하는 비공개 GitHub 저장소에 동기화합니다. GitHub의 무료 플랜은 무제한 비공개 저장소를 포함하므로 무료이면서 비공개입니다 — 노트가 SeaMeet 서버에 닿지 않습니다. 워크스페이스당 저장소 하나이며, 사실상 무제한 용량(1 GB당 약 200,000–500,000 노트)을 제공합니다. 오디오, 비디오, 스크린샷은 기기에 로컬로 유지됩니다."
-        }
-      }
+      "WizardStep": "{{total}}단계 중 {{current}}단계"
+    },
+    "Banner": {
+      "CancelPending": "구독이 {{date}}에 종료됩니다. 이후 전사, 요약 및 AI 기능이 중단됩니다.",
+      "PastDue": "결제 실패 — AI 기능이 비활성화되었습니다. 결제 수단을 업데이트하여 복원하세요.",
+      "Reactivate": "재활성화",
+      "UpdateCard": "카드 업데이트"
+    },
+    "ComingSoon": "곧 출시 예정",
+    "Coupon": {
+      "BYOK100": "BYOK100",
+      "BYOK100Desc": "첫 달 무료 — 선착순 100명",
+      "FallbackDesc": "BYOK100이 소진되면 coupon@seameet.ai로 이메일하여 다른 쿠폰을 받으세요 (1년간 10% 할인 또는 다른 첫 달 무료 코드).",
+      "HowToUse": "Stripe 결제 시 쿠폰 코드를 입력하세요.",
+      "Title": "런칭 프로모션"
     },
     "CurrentPlan": "현재 플랜",
     "Device": {
       "Close": "닫기",
+      "DaysAgo": "{{count}}일 전",
       "DaysAgo_one": "{{count}}일 전",
       "DaysAgo_other": "{{count}}일 전",
       "Error": "기기 로드 실패: {{error}}",
@@ -791,42 +972,12 @@
       "LimitTitle": "기기 수 제한 도달",
       "Loading": "기기 로드 중...",
       "NoDevices": "등록된 기기가 없습니다.",
-      "SigningOut": "로그아웃 중...",
       "SignOut": "로그아웃",
+      "SigningOut": "로그아웃 중...",
       "TabLabel": "장치",
       "Today": "오늘",
       "Yesterday": "어제",
-      "YourDevices": "귀하의 장치",
-      "DaysAgo": "{{count}}일 전"
-    },
-    "FAQ": {
-      "Title": "자주 묻는 질문",
-      "Free": {
-        "Q1": "무료 플랜에서는 무엇을 할 수 있나요?",
-        "A1": "SeaMeet Free는 완전한 기능의 녹음 및 스크린샷 도구입니다. 오디오 녹음, 화면 녹화, 스크린샷 촬영, 모든 녹음 관리가 가능합니다 — 완전 무료, 영구적으로 사용하실 수 있습니다.",
-        "Q2": "내 데이터는 안전한가요?",
-        "A2": "네. 무료 플랜에서는 데이터가 어디로도 전송되지 않습니다. 모든 녹음, 스크린샷, 파일은 100% 기기에 로컬 저장됩니다. 개인정보가 완벽히 보호됩니다.",
-        "Q3": "유료 플랜에서는 무엇을 더 할 수 있나요?",
-        "A3": "유료 플랜에는 AI 기능이 추가됩니다: 자동 전사, 회의 요약, 액션 아이템, 회의 중 실시간 전사, 녹음에 대한 AI 질문 응답."
-      },
-      "BYOK": {
-        "Q1": "BYOK란 무엇인가요?",
-        "A1": "BYOK는 Bring Your Own Key(자신의 키 가져오기)의 약자입니다. 회의 전사 및 요약과 AI 에이전트 채팅 모두를 위해 Google AI Studio(Gemini) 또는 OpenAI의 API 키 1개만 있으면 됩니다. Google AI Studio는 보통 무료 키를 제공하므로 추가 비용 없이 시작할 수 있습니다. 고급 사용자는 AI 에이전트 채팅을 위해 자신의 CLI 도구(Claude Code, GitHub Copilot 등)를 연결할 수도 있습니다. 결제 후 안내 설정 마법사가 모든 과정을 안내해 드립니다.",
-        "Q2": "왜 월간 구독인가요?",
-        "A2": "구독 비용은 지속적인 업데이트, 새로운 AI 모델 지원, 버그 수정 및 새로운 기능 개발에 사용됩니다. API 비용은 자신의 키를 사용하여 Google, OpenAI 또는 기타 지원되는 제공업체에 직접 지불됩니다.",
-        "Q3": "라이선스는 어떻게 작동하나요?",
-        "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다.",
-        "Q4": "BYOK Pro에 클라우드 동기화가 포함되나요?",
-        "A4": "예. BYOK Pro는 노트와 위키를 사용자가 직접 관리하는 비공개 GitHub 저장소에 동기화합니다. GitHub의 무료 플랜은 무제한 비공개 저장소를 포함하므로 무료이면서 비공개입니다 — 노트가 SeaMeet 서버에 닿지 않습니다. 워크스페이스당 저장소 하나이며, 사실상 무제한 용량(1 GB당 약 200,000–500,000 노트)을 제공합니다. 오디오, 비디오, 스크린샷은 기기에 로컬로 유지됩니다."
-      },
-      "Sync": {
-        "Q1": "Sync Pro란 무엇인가요?",
-        "A1": "Sync Pro는 내장 AI(API 키 관리 불필요)와 모든 항목 — 노트, 위키, 오디오 녹음, 비디오 녹화, 스크린샷 — 을 SeaMeet 클라우드로 관리형 동기화하고 팀 협업 기능까지 제공하는 미래의 등급입니다. 자체 키 없이 SeaMeet의 AI 기능을 사용하고 미디어도 동기화하고 싶은 사용자를 위한 것입니다. (BYOK Pro는 이미 자신의 GitHub 저장소를 통해 노트와 위키를 무료로 동기화합니다.) 아직 사용할 수 없습니다 — 원하시면 플랜 카드의 \"요청하기\"를 클릭하여 이메일로 알려주시면 우선순위를 정할 수 있습니다.",
-        "Q2": "무엇이 동기화되나요?",
-        "A2": "모든 것: 노트, 위키, 오디오 녹음, 비디오 녹화, AI 요약, 작업 항목, 스크린샷 — SeaMeet의 관리형 클라우드를 통해 모든 기기에서 동기화됩니다. GitHub 계정이 필요 없습니다. (BYOK Pro는 자신의 비공개 GitHub 저장소를 통해 가벼운 노트와 위키만 동기화합니다.)",
-        "Q3": "라이선스는 어떻게 작동하나요?",
-        "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다."
-      }
+      "YourDevices": "귀하의 장치"
     },
     "Error": {
       "AlreadySubscribed": "이미 활성 구독이 있습니다. 구독 관리를 사용하여 확인하거나 변경하세요.",
@@ -834,86 +985,50 @@
       "NotAuthenticated": "구독하려면 먼저 로그인하세요. 계정 메뉴를 사용하여 로그인하세요.",
       "Unknown": "문제가 발생했습니다. 다시 시도해 주세요."
     },
+    "Explainer": {
+      "Continue": "구독으로 계속",
+      "Subtitle": "BYOK — 자신의 키 가져오기",
+      "Title": "SeaMeet AI 작동 방식"
+    },
+    "FAQ": {
+      "BYOK": {
+        "A1": "BYOK는 Bring Your Own Key(자신의 키 가져오기)의 약자입니다. 회의 전사 및 요약과 AI 에이전트 채팅 모두를 위해 Google AI Studio(Gemini) 또는 OpenAI의 API 키 1개만 있으면 됩니다. Google AI Studio는 보통 무료 키를 제공하므로 추가 비용 없이 시작할 수 있습니다. 고급 사용자는 AI 에이전트 채팅을 위해 자신의 CLI 도구(Claude Code, GitHub Copilot 등)를 연결할 수도 있습니다. 결제 후 안내 설정 마법사가 모든 과정을 안내해 드립니다.",
+        "A2": "구독 비용은 지속적인 업데이트, 새로운 AI 모델 지원, 버그 수정 및 새로운 기능 개발에 사용됩니다. API 비용은 자신의 키를 사용하여 Google, OpenAI 또는 기타 지원되는 제공업체에 직접 지불됩니다.",
+        "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다.",
+        "A4": "예. BYOK Pro는 노트와 위키를 사용자가 직접 관리하는 비공개 GitHub 저장소에 동기화합니다. GitHub의 무료 플랜은 무제한 비공개 저장소를 포함하므로 무료이면서 비공개입니다 — 노트가 SeaMeet 서버에 닿지 않습니다. 워크스페이스당 저장소 하나이며, 사실상 무제한 용량(1 GB당 약 200,000–500,000 노트)을 제공합니다. 오디오, 비디오, 스크린샷은 기기에 로컬로 유지됩니다.",
+        "Q1": "BYOK란 무엇인가요?",
+        "Q2": "왜 월간 구독인가요?",
+        "Q3": "라이선스는 어떻게 작동하나요?",
+        "Q4": "BYOK Pro에 클라우드 동기화가 포함되나요?"
+      },
+      "Free": {
+        "A1": "SeaMeet Free는 완전한 기능의 녹음 및 스크린샷 도구입니다. 오디오 녹음, 화면 녹화, 스크린샷 촬영, 모든 녹음 관리가 가능합니다 — 완전 무료, 영구적으로 사용하실 수 있습니다.",
+        "A2": "네. 무료 플랜에서는 데이터가 어디로도 전송되지 않습니다. 모든 녹음, 스크린샷, 파일은 100% 기기에 로컬 저장됩니다. 개인정보가 완벽히 보호됩니다.",
+        "A3": "유료 플랜에는 AI 기능이 추가됩니다: 자동 전사, 회의 요약, 액션 아이템, 회의 중 실시간 전사, 녹음에 대한 AI 질문 응답.",
+        "Q1": "무료 플랜에서는 무엇을 할 수 있나요?",
+        "Q2": "내 데이터는 안전한가요?",
+        "Q3": "유료 플랜에서는 무엇을 더 할 수 있나요?"
+      },
+      "Sync": {
+        "A1": "Sync Pro는 내장 AI(API 키 관리 불필요)와 모든 항목 — 노트, 위키, 오디오 녹음, 비디오 녹화, 스크린샷 — 을 SeaMeet 클라우드로 관리형 동기화하고 팀 협업 기능까지 제공하는 미래의 등급입니다. 자체 키 없이 SeaMeet의 AI 기능을 사용하고 미디어도 동기화하고 싶은 사용자를 위한 것입니다. (BYOK Pro는 이미 자신의 GitHub 저장소를 통해 노트와 위키를 무료로 동기화합니다.) 아직 사용할 수 없습니다 — 원하시면 플랜 카드의 \"요청하기\"를 클릭하여 이메일로 알려주시면 우선순위를 정할 수 있습니다.",
+        "A2": "모든 것: 노트, 위키, 오디오 녹음, 비디오 녹화, AI 요약, 작업 항목, 스크린샷 — SeaMeet의 관리형 클라우드를 통해 모든 기기에서 동기화됩니다. GitHub 계정이 필요 없습니다. (BYOK Pro는 자신의 비공개 GitHub 저장소를 통해 가벼운 노트와 위키만 동기화합니다.)",
+        "A3": "1계정, 최대 3대 기기. 비활성 기기는 30일 후 자동으로 해제됩니다. 수동으로 기기에서 로그아웃하여 슬롯을 확보할 수도 있습니다.",
+        "Q1": "Sync Pro란 무엇인가요?",
+        "Q2": "무엇이 동기화되나요?",
+        "Q3": "라이선스는 어떻게 작동하나요?"
+      },
+      "Title": "자주 묻는 질문"
+    },
     "FreeNote": "무료 플랜: 녹음 전용, AI 기능 없음, 로그인 불필요. 구독 없이 언제든 녹음할 수 있습니다.",
-    "ComingSoon": "곧 출시 예정",
-    "Plans": {
-      "BYOK": {
-        "Name": "BYOK 프로",
-        "Price": "$4.99/월",
-        "Feature1": "AI 전사 및 요약",
-        "Feature2": "자신만의 Gemini & Claude API 키를 사용하세요",
-        "Feature3": "회의 중 실시간 전사",
-        "Feature4": "AI 기반 회의 질문 및 분석",
-        "Feature5": "자신의 GitHub 저장소를 통한 비공개 클라우드 동기화",
-        "InfoNote": "2가지 설정이 필요합니다: Google AI Studio(무료)와 GitHub(무료) 또는 Anthropic(유료). 결제 후 설정 마법사가 안내합니다:",
-        "ConfirmTitle": "구독 전 확인",
-        "ConfirmContinue": "결제로 이동",
-        "ConfirmSignIn": "먼저 로그인한 후 결제",
-        "ConfirmCancel": "취소",
-        "ConfirmCopyCheckout": "코드 복사 및 결제",
-        "InfoNoteGemini": "Google AI Studio에서 보통 무료 키를 받을 수 있습니다.",
-        "InfoNoteCopilot": "GitHub Copilot에도 무료 요금제가 있습니다.",
-        "InfoNoteClaude": "Claude Pro 또는 Max를 구독 중이라면 별도의 Anthropic API 키가 필요 없습니다."
-      },
-      "Free": {
-        "Name": "무료",
-        "Price": "$0",
-        "Feature1": "녹음 전용",
-        "Feature2": "AI 기능 없음",
-        "Feature3": "로그인 불필요",
-        "Feature4": "항상 사용 가능"
-      },
-      "Sync": {
-        "Name": "동기화 프로",
-        "Feature1": "내장 AI — API 키 불필요",
-        "Feature2": "노트, 오디오, 비디오 및 스크린샷의 관리형 동기화",
-        "Feature3": "팀 협업 기능",
-        "Feature4": "공유 회의 라이브러리",
-        "RequestCTA": "요청하기",
-        "RequestSubject": "SeaMeet의 Sync Pro를 원합니다",
-        "RequestBody": "SeaMeet 팀에게 — Sync Pro(API 키 관리가 필요 없는 내장 AI, 클라우드 동기화, 멀티 디바이스, 팀 협업)에 관심이 있습니다. 사용 가능해지면 알려주세요.\n\n감사합니다!"
-      }
-    },
-    "Privacy": {
-      "TabFeatures": "기능",
-      "TabPrivacy": "데이터 및 개인정보",
-      "TabHelpChoose": "선택 도우미",
-      "RecordingLabel": "녹음/이미지 파일",
-      "AIDataLabel": "AI 처리 데이터 (요약, 전사, OCR 등)",
-      "AgentLabel": "AI 에이전트 채팅 및 작업",
-      "Free": {
-        "Recording1": "컴퓨터에 저장됩니다",
-        "AIData1": "사용 불가",
-        "Agent1": "사용 불가"
-      },
-      "BYOK": {
-        "Recording1": "컴퓨터에 저장됩니다",
-        "Recording2": "처리를 위해 고객님의 Google Cloud 계정으로 동기화됩니다",
-        "Recording3": "Google은 48시간 후 파일을 삭제합니다",
-        "AIData1": "Gemini API가 생성합니다",
-        "AIData2": "무료 등급 API를 사용하는 경우: Google은 제품 개선 및 모델 학습을 위해 프롬프트와 응답을 사용할 수 있습니다. 이 등급은 민감한 데이터가 아닌 테스트 및 실험용입니다.",
-        "AIData3": "유료 등급 API를 사용하는 경우: Google은 데이터를 학습에 사용하지 않습니다",
-        "Agent1": "Anthropic API가 생성합니다",
-        "Agent2": "Claude App/Code를 사용하는 경우: 옵트아웃하지 않으면 Anthropic이 데이터를 학습에 사용할 수 있습니다",
-        "Agent3": "Anthropic API를 사용하는 경우: Anthropic은 데이터를 학습에 사용하지 않습니다"
-      },
-      "Sync": {
-        "Recording1": "컴퓨터에 저장됩니다",
-        "Recording2": "SeaMeet.ai 클라우드에 저장 시 암호화로 동기화",
-        "Recording3": "SeaMeet.ai 클라우드에서 다른 데스크톱 기기로 다운로드하여 동기화를 유지합니다",
-        "AIData1": "Gemini API가 SeaMeet 관리 키를 사용하여 생성. Google은 학습에 사용자 데이터를 사용하지 않습니다",
-        "Agent1": "Anthropic API가 SeaMeet 관리 키를 사용하여 생성. Anthropic은 학습에 사용자 데이터를 사용하지 않습니다"
-      }
-    },
     "HelpChoose": {
-      "Free": {
-        "Item1": "여기서 시작하세요"
-      },
       "BYOK": {
         "Item1": "고급 사용자: BYOK가 무엇인지 이해하는 분",
         "Item2": "기술에 능숙한 분: 필요한 API 키를 보유한 분",
         "Item3": "개인정보 중시: 데이터 접근을 직접 관리하고 싶은 분",
         "Item4": "자신의 비공개 GitHub 저장소를 통해 여러 기기 간에 노트를 백업하고 싶음 — 추가 클라우드 저장소 비용 없이"
+      },
+      "Free": {
+        "Item1": "여기서 시작하세요"
       },
       "Sync": {
         "Item1": "대부분의 사용자: 간편한 설정",
@@ -922,15 +1037,103 @@
         "Item4": "편의성을 선호하는 분"
       }
     },
+    "Nudge": {
+      "CTA": "로그인 및 구독",
+      "LearnMore": "자세히 알아보기",
+      "LiveTranscription": "실시간 전사 및 회의 후 AI 분석 활성화",
+      "ScreenshotAnalysis": "AI 기반 스크린샷 분석 활성화",
+      "Sync": "BYOK Pro로 비공개 GitHub 저장소에 노트를 백업하세요"
+    },
+    "Plans": {
+      "BYOK": {
+        "ConfirmCancel": "취소",
+        "ConfirmContinue": "결제로 이동",
+        "ConfirmCopyCheckout": "코드 복사 및 결제",
+        "ConfirmSignIn": "먼저 로그인한 후 결제",
+        "ConfirmTitle": "구독 전 확인",
+        "Feature1": "AI 전사 및 요약",
+        "Feature2": "자신만의 Gemini & Claude API 키를 사용하세요",
+        "Feature3": "회의 중 실시간 전사",
+        "Feature4": "AI 기반 회의 질문 및 분석",
+        "Feature5": "자신의 GitHub 저장소를 통한 비공개 클라우드 동기화",
+        "InfoNote": "2가지 설정이 필요합니다: Google AI Studio(무료)와 GitHub(무료) 또는 Anthropic(유료). 결제 후 설정 마법사가 안내합니다:",
+        "InfoNoteClaude": "Claude Pro 또는 Max를 구독 중이라면 별도의 Anthropic API 키가 필요 없습니다.",
+        "InfoNoteCopilot": "GitHub Copilot에도 무료 요금제가 있습니다.",
+        "InfoNoteGemini": "Google AI Studio에서 보통 무료 키를 받을 수 있습니다.",
+        "Name": "BYOK Pro",
+        "Price": "$4.99/월"
+      },
+      "Free": {
+        "Feature1": "녹음 전용",
+        "Feature2": "AI 기능 없음",
+        "Feature3": "로그인 불필요",
+        "Feature4": "항상 사용 가능",
+        "Name": "무료",
+        "Price": "$0"
+      },
+      "Sync": {
+        "Feature1": "내장 AI — API 키 불필요",
+        "Feature2": "노트, 오디오, 비디오 및 스크린샷의 관리형 동기화",
+        "Feature3": "팀 협업 기능",
+        "Feature4": "공유 회의 라이브러리",
+        "Name": "Sync Pro",
+        "RequestBody": "SeaMeet 팀에게 — Sync Pro(API 키 관리가 필요 없는 내장 AI, 클라우드 동기화, 멀티 디바이스, 팀 협업)에 관심이 있습니다. 사용 가능해지면 알려주세요.\n\n감사합니다!",
+        "RequestCTA": "요청하기",
+        "RequestSubject": "SeaMeet의 Sync Pro를 원합니다"
+      }
+    },
+    "PostSetup": {
+      "Desc": "짧은 회의를 녹음하거나 스크린샷을 찍어 AI 전사 및 분석을 체험해 보세요.",
+      "Later": "나중에 해볼게요",
+      "Title": "모든 준비 완료! 지금 사용해 보세요.",
+      "TryRecording": "녹음 시작",
+      "TryScreenshot": "스크린샷 찍기"
+    },
+    "Privacy": {
+      "AIDataLabel": "AI 처리 데이터 (요약, 전사, OCR 등)",
+      "AgentLabel": "AI 에이전트 채팅 및 작업",
+      "BYOK": {
+        "AIData1": "Gemini API가 생성합니다",
+        "AIData2": "무료 등급 API를 사용하는 경우: Google은 제품 개선 및 모델 학습을 위해 프롬프트와 응답을 사용할 수 있습니다. 이 등급은 민감한 데이터가 아닌 테스트 및 실험용입니다.",
+        "AIData3": "유료 등급 API를 사용하는 경우: Google은 데이터를 학습에 사용하지 않습니다",
+        "Agent1": "Anthropic API가 생성합니다",
+        "Agent2": "Claude App/Code를 사용하는 경우: 옵트아웃하지 않으면 Anthropic이 데이터를 학습에 사용할 수 있습니다",
+        "Agent3": "Anthropic API를 사용하는 경우: Anthropic은 데이터를 학습에 사용하지 않습니다",
+        "Recording1": "컴퓨터에 저장됩니다",
+        "Recording2": "처리를 위해 고객님의 Google Cloud 계정으로 동기화됩니다",
+        "Recording3": "Google은 48시간 후 파일을 삭제합니다"
+      },
+      "Free": {
+        "AIData1": "사용 불가",
+        "Agent1": "사용 불가",
+        "Recording1": "컴퓨터에 저장됩니다"
+      },
+      "RecordingLabel": "녹음/이미지 파일",
+      "Sync": {
+        "AIData1": "Gemini API가 SeaMeet 관리 키를 사용하여 생성. Google은 학습에 사용자 데이터를 사용하지 않습니다",
+        "Agent1": "Anthropic API가 SeaMeet 관리 키를 사용하여 생성. Anthropic은 학습에 사용자 데이터를 사용하지 않습니다",
+        "Recording1": "컴퓨터에 저장됩니다",
+        "Recording2": "SeaMeet.ai 클라우드에 저장 시 암호화로 동기화",
+        "Recording3": "SeaMeet.ai 클라우드에서 다른 데스크톱 기기로 다운로드하여 동기화를 유지합니다"
+      },
+      "TabFeatures": "기능",
+      "TabHelpChoose": "선택 도우미",
+      "TabPrivacy": "데이터 및 개인정보"
+    },
     "PromoHint": "프로모 코드가 있으신가요? 결제 시 입력하세요.",
+    "Setup": {
+      "Done": "설정을 완료했습니다",
+      "Later": "나중에 하겠습니다"
+    },
+    "SignInToSubscribe": "구독하려면 로그인하세요:",
     "Status": {
       "Active": "활성",
-      "Canceled": "취소됨",
-      "Canceling": "취소 예정",
       "CancelNotice": "구독 종료일 {{date}}",
       "CancelPendingNotice": "구독이 {{date}}에 종료됩니다. 그때까지 AI 기능을 계속 사용할 수 있습니다.",
-      "EndsOn": "{{date}} 종료",
+      "Canceled": "취소됨",
+      "Canceling": "취소 예정",
       "DevOverride": "(개발자 재정의)",
+      "EndsOn": "{{date}} 종료",
       "Loading": "로딩 중...",
       "Manage": "구독 관리",
       "None": "구독 없음",
@@ -940,14 +1143,9 @@
       "SignIn": "구독을 관리하려면 로그인하세요.",
       "Trial": "체험판"
     },
-    "SignInToSubscribe": "구독하려면 로그인하세요:",
     "Subscribe": "구독하기",
     "Subscribing": "구독 중...",
-    "UnlockTitle": "SeaMeet AI 기능 잠금 해제",
-    "Setup": {
-      "Done": "설정을 완료했습니다",
-      "Later": "나중에 하겠습니다"
-    }
+    "UnlockTitle": "SeaMeet AI 기능 잠금 해제"
   },
   "BlackHole": {
     "Cancel": "취소",
@@ -969,46 +1167,46 @@
     "Title": "⚠️ 블루투스 마이크로폰 감지됨"
   },
   "ClipboardImport": {
-    "PasteHint": "Ctrl+V로 이미지 붙여넣기",
-    "PasteHintMac": "⌘V로 이미지 붙여넣기",
+    "Dismiss": "닫기",
     "ImageDetected": "클립보드에서 이미지 발견",
     "Import": "가져오기",
-    "Dismiss": "닫기",
+    "ImportFailed": "클립보드 이미지 가져오기 실패",
     "ImportSuccess": "이미지를 가져왔습니다",
-    "ImportFailed": "클립보드 이미지 가져오기 실패"
+    "PasteHint": "Ctrl+V로 이미지 붙여넣기",
+    "PasteHintMac": "⌘V로 이미지 붙여넣기"
   },
   "Common": {
+    "Apply": "적용",
     "ApplyName": "이름 적용",
     "Back": "뒤로",
     "Cancel": "취소",
     "Capture": "캡처",
+    "Clear": "분명한",
     "Close": "닫기",
     "Configure": "설정",
+    "Copied": "복사됨!",
+    "Copy": "복사",
     "Delete": "삭제",
     "Dismiss": "해고하다",
     "Done": "완료",
     "Expand": "확장",
     "FileNameCopiedWithRenameHint": "{{fileName}}이(가) 클립보드에 복사되었습니다. 파일 이름을 변경하려면 더블 클릭하세요.",
+    "Forward": "앞으로",
     "Loading": "로딩 중...",
     "Minimize": "최소화하기",
     "Open": "열기",
     "Or": "또는",
     "Processing": "처리 중…",
     "Recording": "녹음",
+    "Refresh": "새로 고치다",
     "Save": "저장",
     "Saved": "저장됨",
     "Saving": "저장 중...",
     "Screenshot": "스크린샷",
     "Send": "보내다",
     "Starting": "시작 중...",
-    "UnknownApp": "알 수 없는 앱",
-    "Copied": "복사됨!",
-    "Copy": "복사",
-    "Clear": "분명한",
-    "Forward": "앞으로",
-    "Refresh": "새로 고치다",
-    "Apply": "적용",
-    "Undo": "실행 취소"
+    "Undo": "실행 취소",
+    "UnknownApp": "알 수 없는 앱"
   },
   "DeletePrompt": {
     "Cancel": "취소",
@@ -1018,8 +1216,8 @@
   },
   "Errors": {
     "ApiNotAvailable": "캡처 API를 사용할 수 없습니다",
-    "CaptureFailed": "창을 캡처하지 못했습니다",
     "AutoRecordingFailed": "자동 녹음 전환 실패",
+    "CaptureFailed": "창을 캡처하지 못했습니다",
     "FailedToStartRecording": "녹음 시작 실패: {{message}}",
     "FailedToStartVideoRecording": "비디오 녹화 시작 실패: {{message}}",
     "NoAudioSources": "사용 가능한 오디오 소스가 없습니다",
@@ -1030,44 +1228,44 @@
   },
   "Events": {
     "DeletePrompt": {
-      "Title": "이벤트 삭제",
-      "Message": "이 이벤트를 삭제하시겠습니까?",
       "Cancel": "취소",
-      "Confirm": "삭제"
+      "Confirm": "삭제",
+      "Message": "이 이벤트를 삭제하시겠습니까?",
+      "Title": "이벤트 삭제"
     },
     "EmptyWhenNotRecording": "이 녹음에 사용할 수 있는 이벤트가 없습니다.",
     "EmptyWhileRecording": "아직 이벤트가 없습니다. 녹음 중 '마크'를 클릭하여 추가하세요.",
     "EventLabel": "이벤트 {{number}}",
     "MarkButton": "마크",
-    "Marked": "표시됨!",
     "MarkToolbarButton": "표시된 이벤트",
+    "Marked": "표시됨!",
     "Title": "이벤트"
   },
   "ExternalChange": {
     "Banner": "편집하는 동안 이 파일이 디스크에서 변경되었습니다.",
-    "Reload": "디스크 버전 다시 불러오기",
-    "Keep": "내 버전 유지"
+    "Keep": "내 버전 유지",
+    "Reload": "디스크 버전 다시 불러오기"
   },
   "FAB": {
-    "Label": "빠른 작업",
-    "Stop": "녹음 중지",
-    "Record": "녹음 시작",
-    "Screenshot": "스크린샷 찍기",
     "Agent": "AI 에이전트",
-    "PickSource": "녹음 소스 선택",
+    "Label": "빠른 작업",
+    "LiveTranscription": "실시간 전사",
+    "NoteBindingLabel": "첨부 대상",
+    "OpenBoundNote": "이 녹음이 첨부된 노트 열기",
     "PickScreenshotSource": "스크린샷 소스 선택",
+    "PickSource": "녹음 소스 선택",
+    "Record": "녹음 시작",
+    "RecordingInProgress": "녹음 중…",
+    "Screenshot": "스크린샷 찍기",
+    "ScreenshotFullscreen": "전체 화면",
+    "ScreenshotRegion": "영역",
+    "ScreenshotWindow": "창",
     "SourceAudio": "오디오만",
     "SourceFullscreen": "전체 화면",
-    "SourceWindow": "창",
     "SourceRegion": "영역",
-    "ScreenshotFullscreen": "전체 화면",
-    "ScreenshotWindow": "창",
-    "ScreenshotRegion": "영역",
-    "LiveTranscription": "실시간 전사",
-    "ToggleLiveTranscription": "실시간 자막 전환",
-    "RecordingInProgress": "녹음 중…",
-    "OpenBoundNote": "이 녹음이 첨부된 노트 열기",
-    "NoteBindingLabel": "첨부 대상"
+    "SourceWindow": "창",
+    "Stop": "녹음 중지",
+    "ToggleLiveTranscription": "실시간 자막 전환"
   },
   "FileImport": {
     "BrowseFiles": "파일 탐색",
@@ -1081,20 +1279,20 @@
     "VideoUnsupported": "이 동영상 형식은 앱에서 재생되지 않을 수 있습니다. 파일은 그래도 가져옵니다."
   },
   "FindReplace": {
-    "ConfirmReplaceAll": "{{count}}개의 일치 항목을 모두 바꿀까요?",
-    "Counter": "{{current}} / {{total}}",
-    "FindPlaceholder": "찾기",
     "AriaLabel": "찾기 및 바꾸기",
     "CaseSensitive": "대소문자 일치",
     "ClearSearch": "지우기",
-    "Previous": "이전 결과",
+    "CloseBar": "찾기/바꾸기 닫기",
+    "ConfirmReplaceAll": "{{count}}개의 일치 항목을 모두 바꿀까요?",
+    "Counter": "{{current}} / {{total}}",
+    "FindPlaceholder": "찾기",
     "Next": "다음 결과",
     "NoResults": "결과 없음",
-    "ReplacePlaceholder": "바꾸기",
-    "WikiAiReadonly": "AI 섹션은 읽기 전용입니다 — 바꾸기는 사용자 섹션에서만 작동합니다",
+    "Previous": "이전 결과",
     "Replace": "바꾸기",
     "ReplaceAll": "모두 바꾸기",
-    "CloseBar": "찾기/바꾸기 닫기",
+    "ReplacePlaceholder": "바꾸기",
+    "WikiAiReadonly": "AI 섹션은 읽기 전용입니다 — 바꾸기는 사용자 섹션에서만 작동합니다",
     "WikiCounterSplit": "노트에 {{userCount}}개 + AI 섹션에 {{aiCount}}개"
   },
   "FlashbackControls": {
@@ -1115,24 +1313,24 @@
     "ToggleLabel": "전환"
   },
   "FlashbackDrawer": {
-    "Title": "플래시백",
+    "AdvancedSettings": "고급 설정 →",
     "Description": "녹음 버튼을 누르기 전 몇 초를 조용히 기억해 두어 회의를 시작한 한마디를 놓치지 않게 합니다.",
-    "StatusOff": "꺼짐 — 아래에서 모드를 선택하여 준비하세요.",
+    "LearnMore": "자세히 보기",
+    "ModeAudio": "오디오",
+    "ModeLabel": "무엇을 버퍼링할까요",
+    "ModeOff": "끔",
+    "ModeScreen": "화면",
+    "PrimaryRecord": "{{seconds}}초 프리롤과 함께 녹음",
+    "PrimarySave": "직전 {{seconds}}초 저장",
     "StatusCharging": "로딩 중 {{percent}}%…",
+    "StatusOff": "꺼짐 — 아래에서 모드를 선택하여 준비하세요.",
     "StatusReady": "준비 완료 — 직전 {{seconds}}초 {{type}}.",
+    "Title": "플래시백",
     "Types": {
       "audio": "오디오",
       "screen": "화면"
     },
-    "ModeLabel": "무엇을 버퍼링할까요",
-    "ModeOff": "끔",
-    "ModeAudio": "오디오",
-    "ModeScreen": "화면",
-    "WindowLabel": "버퍼 길이",
-    "PrimaryRecord": "{{seconds}}초 프리롤과 함께 녹음",
-    "PrimarySave": "직전 {{seconds}}초 저장",
-    "AdvancedSettings": "고급 설정 →",
-    "LearnMore": "자세히 보기"
+    "WindowLabel": "버퍼 길이"
   },
   "FlashbackFirstArm": {
     "Tooltip": "직전 {{seconds}}초는 RAM에만 버퍼링됩니다. 저장 또는 녹음 버튼을 탭하여 사용하세요."
@@ -1319,6 +1517,7 @@
     "StillCharging": "회상 버퍼가 아직 충전 중입니다."
   },
   "FloatingStartBar": {
+    "AttachTo": "첨부 대상",
     "BluetoothMicDesc": "\"Communications Mode(통신 모드)\"가 강제로 활성화될 수 있으며, 이로 인해 왜곡이 발생할 수 있습니다.",
     "BluetoothMicTipLabel": "팁:",
     "BluetoothMicTipText": "더 나은 품질을 위해 Bluetooth가 아닌 마이크로폰을 사용하세요",
@@ -1348,8 +1547,7 @@
     "SystemAudioOn": "시스템 오디오: 켬",
     "WaitingForRegion": "지역을 기다리는 중…",
     "WindowNotAvailable": "이 플랫폼에서는 창 선택을 사용할 수 없습니다.",
-    "WindowRequired": "녹음 전에 창을 선택하세요",
-    "AttachTo": "첨부 대상"
+    "WindowRequired": "녹음 전에 창을 선택하세요"
   },
   "FullscreenOverlay": {
     "ClickToRecord": "떠 있는 바에서 '시작 녹음'을 클릭하여 선택한 영역을 녹음하세요",
@@ -1357,82 +1555,82 @@
   },
   "GeminiLive": {
     "AITranscription": "AI 전사",
-    "CollapseNowSpeaking": "무너지다",
-    "SubscribeForTranscription": "구독하여 녹음 중 실시간 AI 전사를 활성화하세요.",
-    "EnableDescription": "녹음 중 Gemini가 제공하는 실시간 전사",
-    "EnableIntegration": "실시간 AI 전사 활성화",
-    "Error": "오류",
-    "ExpandNowSpeaking": "확장하다",
-    "NowSpeaking": "지금 말하는 중...",
-    "SegmentCount_one": "{{count}} 세그먼트",
-    "SegmentCount_other": "{{count}} 세그먼트",
-    "Tokens_one": "{{count}} 토큰",
-    "Tokens_other": "{{count}} 토큰",
-    "TokensTooltip": "이 세션에서 Gemini가 보고한 누적 토큰",
-    "TokensPendingTooltip": "Gemini의 첫 번째 usageMetadata를 기다리는 중 — native-audio 세션은 turnComplete에서만 보고합니다.",
-    "ResetTooltip": "연결 재설정 (Shift+클릭하면 새 세션)",
-    "ResetAria": "Gemini 연결 재설정",
-    "WaitingForConnection": "연결 중...",
-    "WaitingForSpeech": "연설을 기다리는 중...",
-    "Settings": {
-      "Title": "실시간 전사"
-    },
     "Advanced": {
+      "ActivityFlush": "긴 턴 동안의 주기적 플러시",
+      "ActivityFlushHint": "긴 턴 중 N 밀리초마다 Gemini가 누적된 오디오를 처리하도록 유도합니다. 독백 / 프레젠테이션 중 전사가 멈추는 것을 방지합니다. 자동 VAD를 비활성화해야 합니다.",
+      "ActivityFlushMs": "플러시 간격",
+      "ActivityFlushRequiresManualVad": "주기적 플러시는 자동 VAD가 비활성화된 경우에만 작동합니다 — 자동 VAD가 켜진 상태에서는 서버가 명시적 활동 제어를 거부합니다. 이 토글을 켠 채로 아래 자동 VAD를 비활성화하세요.",
+      "Default": "기본값(HIGH — 빠른 플러시)",
+      "DisableAutoVad": "자동 VAD 비활성화(서버 측 턴 감지)",
+      "EndSensitivity": "발화 종료 민감도",
+      "EndSensitivityHigh": "HIGH(빠른 플러시)",
+      "EndSensitivityLow": "LOW(더 긴 차례)",
       "Model": "실시간 모델",
       "ModelHint": "2.5는 화면 자막에서 실제 이름을 추출합니다. 3.1은 약 2.4배 저렴하지만 현재 화자를 [Speaker 1], [Speaker 2] 등으로만 레이블링합니다.",
-      "TurnCoverage": "비디오 프레임 범위",
-      "TurnCoverageDefault": "기본값(모델별)",
-      "TurnCoverageOnlyActivity": "발화 중에만 — 가장 저렴",
-      "TurnCoverageAllInput": "모든 프레임 — 화면 이름 인식에 최적",
-      "TurnCoverageHint": "2.5 기본: 발화 중에만. 3.1 기본: 모든 비디오 프레임(무음에도 이름표 인식).",
+      "Reset": "모두 기본값으로 재설정",
       "SendVideo": "비디오 프레임 전송",
+      "SilenceMs": "턴 종료 전 무음 시간",
+      "TurnCoverage": "비디오 프레임 범위",
+      "TurnCoverageAllInput": "모든 프레임 — 화면 이름 인식에 최적",
+      "TurnCoverageDefault": "기본값(모델별)",
+      "TurnCoverageHint": "2.5 기본: 발화 중에만. 3.1 기본: 모든 비디오 프레임(무음에도 이름표 인식).",
+      "TurnCoverageOnlyActivity": "발화 중에만 — 가장 저렴",
+      "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
       "VideoFps": "프레임 속도",
       "VideoFpsOption_0_2": "0.2 fps(5초당 1프레임)",
       "VideoFpsOption_0_5": "0.5 fps(2초당 1프레임, 기본값)",
       "VideoFpsOption_1": "1 fps",
       "VideoFpsOption_2": "2 fps",
+      "VideoMaxWidth": "프레임 최대 너비",
+      "VideoMaxWidthOption_1280": "1280 px(더 큼)",
+      "VideoMaxWidthOption_1920": "1920 px(네이티브 1080p)",
+      "VideoMaxWidthOption_480": "480 px(가장 작음)",
+      "VideoMaxWidthOption_640": "640 px(대역폭 절약)",
+      "VideoMaxWidthOption_960": "960 px(기본값 — 화면 이름에 적합)",
       "VideoQuality": "프레임 JPEG 품질",
+      "VideoQualityHint": "Gemini가 작은 타일 레이블(예: Zoom / Meet / Teams 참가자 이름)을 잘못 읽을 때 품질과 최대 너비를 높이세요. 값이 높을수록 이미지 토큰 사용량이 증가합니다 — 1280 px는 일반적으로 프레임당 258 토큰에서 1290 토큰 계층으로 증가합니다.",
       "VideoQualityOption_0_3": "0.3(가장 작음, 흐림)",
       "VideoQualityOption_0_5": "0.5(대역폭 절약)",
       "VideoQualityOption_0_7": "0.7(균형)",
       "VideoQualityOption_0_85": "0.85(기본값 — 화면 이름에 적합)",
-      "VideoQualityOption_0_95": "0.95(최대)",
-      "VideoMaxWidth": "프레임 최대 너비",
-      "VideoMaxWidthOption_480": "480 px(가장 작음)",
-      "VideoMaxWidthOption_640": "640 px(대역폭 절약)",
-      "VideoMaxWidthOption_960": "960 px(기본값 — 화면 이름에 적합)",
-      "VideoMaxWidthOption_1280": "1280 px(더 큼)",
-      "VideoMaxWidthOption_1920": "1920 px(네이티브 1080p)",
-      "VideoQualityHint": "Gemini가 작은 타일 레이블(예: Zoom / Meet / Teams 참가자 이름)을 잘못 읽을 때 품질과 최대 너비를 높이세요. 값이 높을수록 이미지 토큰 사용량이 증가합니다 — 1280 px는 일반적으로 프레임당 258 토큰에서 1290 토큰 계층으로 증가합니다.",
-      "EndSensitivity": "발화 종료 민감도",
-      "EndSensitivityHigh": "HIGH(빠른 플러시)",
-      "EndSensitivityLow": "LOW(더 긴 차례)",
-      "Default": "기본값(HIGH — 빠른 플러시)",
-      "SilenceMs": "턴 종료 전 무음 시간",
-      "VadHint": "짧은 무음 + HIGH 민감도 → 더 짧고 잦은 전사 플러시.",
-      "DisableAutoVad": "자동 VAD 비활성화(서버 측 턴 감지)",
-      "ActivityFlush": "긴 턴 동안의 주기적 플러시",
-      "ActivityFlushMs": "플러시 간격",
-      "ActivityFlushHint": "긴 턴 중 N 밀리초마다 Gemini가 누적된 오디오를 처리하도록 유도합니다. 독백 / 프레젠테이션 중 전사가 멈추는 것을 방지합니다. 자동 VAD를 비활성화해야 합니다.",
-      "ActivityFlushRequiresManualVad": "주기적 플러시는 자동 VAD가 비활성화된 경우에만 작동합니다 — 자동 VAD가 켜진 상태에서는 서버가 명시적 활동 제어를 거부합니다. 이 토글을 켠 채로 아래 자동 VAD를 비활성화하세요.",
-      "Reset": "모두 기본값으로 재설정"
+      "VideoQualityOption_0_95": "0.95(최대)"
     },
+    "CollapseNowSpeaking": "무너지다",
+    "EnableDescription": "녹음 중 Gemini가 제공하는 실시간 전사",
+    "EnableIntegration": "실시간 AI 전사 활성화",
+    "Error": "오류",
+    "ExpandNowSpeaking": "확장하다",
+    "NowSpeaking": "지금 말하는 중...",
+    "ResetAria": "Gemini 연결 재설정",
+    "ResetTooltip": "연결 재설정 (Shift+클릭하면 새 세션)",
     "SegmentCount": "{{count}} 세그먼트",
-    "Tokens": "{{count}} tok"
+    "SegmentCount_one": "{{count}} 세그먼트",
+    "SegmentCount_other": "{{count}} 세그먼트",
+    "Settings": {
+      "Title": "실시간 전사"
+    },
+    "SubscribeForTranscription": "구독하여 녹음 중 실시간 AI 전사를 활성화하세요.",
+    "Tokens": "{{count}} tok",
+    "TokensPendingTooltip": "Gemini의 첫 번째 usageMetadata를 기다리는 중 — native-audio 세션은 turnComplete에서만 보고합니다.",
+    "TokensTooltip": "이 세션에서 Gemini가 보고한 누적 토큰",
+    "Tokens_one": "{{count}} 토큰",
+    "Tokens_other": "{{count}} 토큰",
+    "WaitingForConnection": "연결 중...",
+    "WaitingForSpeech": "연설을 기다리는 중..."
   },
   "GeminiTranscription": {
     "Title": "실시간 전사"
   },
   "GlobalSearch": {
-    "SectionNotes": "노트",
-    "SectionWiki": "위키",
-    "SectionTranscripts": "녹음 전사",
-    "SectionSummaries": "녹음 요약",
-    "SectionOcr": "스크린샷 텍스트",
     "IndexingFallback": "색인 중 — 파일 이름 일치만 표시",
+    "NoResults": "일치 항목 없음",
     "Placeholder": "노트, 위키, 녹음에서 검색…",
-    "SoFar": "현재까지",
-    "NoResults": "일치 항목 없음"
+    "SectionNotes": "노트",
+    "SectionOcr": "스크린샷 텍스트",
+    "SectionSummaries": "녹음 요약",
+    "SectionTranscripts": "녹음 전사",
+    "SectionWiki": "위키",
+    "SoFar": "현재까지"
   },
   "HelpPage": {
     "Title": "SeaMeet에 대해 자세히 알아보기"
@@ -1445,55 +1643,130 @@
     "CopyEmail": "📋 이메일 복사",
     "EmailCopied": "✅ 이메일이 클립보드에 복사됨"
   },
+  "Library": {
+    "days_ago_one": "{{count}}일 전",
+    "days_ago_other": "{{count}}일 전",
+    "empty": {
+      "headline_head": "첫 번째 캡처",
+      "headline_tail": "회의",
+      "subhead": "언제든지 녹화를 누르거나 Zoom, Meet 또는 Teams가 시작될 때 SeaMeet이 자동으로 감지하도록 하세요."
+    },
+    "headline_one": "{{count}}개의 회의,",
+    "headline_other": "{{count}}개의 회의,",
+    "headline_tail": "이번 주",
+    "no_match": "\"{{query}}\"와 일치하는 회의가 없습니다.",
+    "quick_start": "빠른 시작",
+    "record": "기록",
+    "search": "찾다",
+    "setup_autodetect": "자동 감지 설정",
+    "today": "오늘",
+    "upcoming": "예정",
+    "yesterday": "어제"
+  },
+  "LiteLogin": {
+    "browserHint": "계속하려면 브라우저에서 로그인을 완료하세요.",
+    "cta": "seameet.ai로 계속하기",
+    "errorGeneric": "문제가 발생했습니다. 다시 시도해 주세요.",
+    "errorOpenBrowser": "로그인 페이지를 열지 못했습니다.",
+    "openingBrowser": "브라우저 여는 중…",
+    "subtitle": "회의, 기록, AI 요약에 액세스하려면 로그인하세요.",
+    "switchToFull": "SeaMeet으로 다시 전환(전체)",
+    "title": "SeaMeet에 오신 것을 환영합니다"
+  },
+  "LiteRecording": {
+    "dismiss": "해고하다",
+    "errorClose": "닫다",
+    "errorTitle": "녹음을 시작할 수 없습니다.",
+    "speakerOthers": "기타",
+    "speakerYou": "너",
+    "systemAudioUnavailable": "회의 오디오를 캡처할 수 없습니다. 마이크만 녹음합니다."
+  },
   "MacOSVersionWarning": {
-    "Title": "지원되지 않는 macOS 버전",
-    "Message": "사용 중인 macOS 버전({{version}})은 지원되지 않습니다.",
-    "Detail": "SeaMeet은 macOS 14.2(Sonoma) 이상이 필요합니다.\n\n앱별 오디오 감지 및 회의 자동 시작과 같은 일부 기능이 작동하지 않을 수 있습니다.\n\n시스템 설정 > 일반 > 소프트웨어 업데이트에서 업데이트하세요.",
     "ContinueAnyway": "계속 진행",
-    "Quit": "종료"
+    "Detail": "SeaMeet은 macOS 14.2(Sonoma) 이상이 필요합니다.\n\n앱별 오디오 감지 및 회의 자동 시작과 같은 일부 기능이 작동하지 않을 수 있습니다.\n\n시스템 설정 > 일반 > 소프트웨어 업데이트에서 업데이트하세요.",
+    "Message": "사용 중인 macOS 버전({{version}})은 지원되지 않습니다.",
+    "Quit": "종료",
+    "Title": "지원되지 않는 macOS 버전"
   },
   "MediaBlock": {
-    "Processing": "처리 중…",
-    "SummaryReady": "요약 준비 완료",
-    "Failed": "실패",
-    "Tab": {
-      "Summary": "요약",
-      "Transcript": "전사",
-      "Actions": "작업",
-      "Decisions": "결정 사항",
-      "Chapters": "챕터",
-      "Description": "설명",
-      "Ocr": "OCR 텍스트"
-    },
-    "MoreActions": "추가 작업",
     "Action": {
-      "ShowInFolder": "폴더에서 표시",
       "CopyEmbed": "임베드 구문 복사",
-      "RerunAi": "AI 다시 실행",
       "Detach": "노트에서 분리",
-      "OpenMedia": "미디어 열기"
+      "OpenMedia": "미디어 열기",
+      "RerunAi": "AI 다시 실행",
+      "ShowInFolder": "폴더에서 표시"
     },
     "AudioFallback": "이 브라우저는 오디오 재생을 지원하지 않습니다.",
-    "WaitingForPipeline": "AI 처리 완료를 기다리는 중…",
-    "PipelineFailed": "이 파일의 AI 처리가 실패했습니다.",
-    "NoAiContent": "AI 처리가 완료되었지만 추가 콘텐츠가 생성되지 않았습니다.",
-    "NoSummary": "AI 요약이 아직 생성되지 않았습니다.",
-    "Due": "마감",
-    "Stage": {
-      "preparing": "준비 중…",
-      "uploading": "업로드 중…",
-      "uploading-wait": "업로드 처리 중…",
-      "analyzing": "분석 중…",
-      "extracting": "추출 중…",
-      "saving": "저장 중…",
-      "complete": "완료",
-      "gathering": "수집 중…",
-      "reducing": "정제 중…",
-      "writing": "작성 중…"
-    },
     "Copied": "복사됨",
     "CopyTab": "복사",
-    "Unassigned": "할당되지 않음"
+    "Due": "마감",
+    "Failed": "실패",
+    "MoreActions": "추가 작업",
+    "NoAiContent": "AI 처리가 완료되었지만 추가 콘텐츠가 생성되지 않았습니다.",
+    "NoSummary": "AI 요약이 아직 생성되지 않았습니다.",
+    "PipelineFailed": "이 파일의 AI 처리가 실패했습니다.",
+    "Processing": "처리 중…",
+    "Stage": {
+      "analyzing": "분석 중…",
+      "complete": "완료",
+      "extracting": "추출 중…",
+      "gathering": "수집 중…",
+      "preparing": "준비 중…",
+      "reducing": "정제 중…",
+      "saving": "저장 중…",
+      "uploading": "업로드 중…",
+      "uploading-wait": "업로드 처리 중…",
+      "writing": "작성 중…"
+    },
+    "SummaryReady": "요약 준비 완료",
+    "Tab": {
+      "Actions": "작업",
+      "Chapters": "챕터",
+      "Decisions": "결정 사항",
+      "Description": "설명",
+      "Ocr": "OCR 텍스트",
+      "Summary": "요약",
+      "Transcript": "전사"
+    },
+    "Unassigned": "할당되지 않음",
+    "WaitingForPipeline": "AI 처리 완료를 기다리는 중…"
+  },
+  "MediaCard": {
+    "Untitled": "제목 없음"
+  },
+  "MediaLibrary": {
+    "All": "전체",
+    "Audio": "오디오",
+    "BatchDelete": "삭제",
+    "BatchDeletePartial": "{{total}}개 중 {{count}}개 파일이 삭제되었습니다",
+    "BatchExport": "내보내기",
+    "ClearFilters": "필터 초기화",
+    "ClearSelection": "선택 해제",
+    "ConfirmBatchDelete": "{{count}}개 파일을 삭제하시겠습니까?",
+    "ExportAllFailed": "{{count}}개의 파일 내보내기에 실패했습니다",
+    "ExportFailed": "내보내기에 실패했습니다",
+    "ExportPartial": "{{total}}개 중 {{exported}}개 파일이 내보내졌습니다 ({{failed}}개 실패)",
+    "ExportSuccess": "{{count}}개의 파일이 내보내졌습니다",
+    "Exporting": "내보내는 중...",
+    "FilteredStats": "{{filtered}} / {{total}} 파일",
+    "GridView": "그리드 보기",
+    "Import": "가져오기",
+    "ListView": "목록 보기",
+    "NoFiles": "미디어 파일이 없습니다",
+    "NoFilesHint": "오디오/비디오를 녹음하거나 파일을 가져와 시작하세요",
+    "NoResults": "필터에 맞는 파일이 없습니다",
+    "NoResultsHint": "검색어나 필터를 조정해 보세요",
+    "Screenshots": "스크린샷",
+    "Search": "미디어 파일 검색...",
+    "SelectAll": "전체 선택",
+    "Selected": "{{count}}개 선택됨",
+    "Sort": "정렬 기준",
+    "SortByDate": "날짜",
+    "SortByDuration": "길이",
+    "SortByName": "이름",
+    "SortBySize": "크기",
+    "Title": "미디어 라이브러리",
+    "Video": "비디오"
   },
   "MeetSeasaltAi": {
     "ActionItems": "실행 항목",
@@ -1511,12 +1784,13 @@
     "NoActionItems": "이 회의에는 작업 항목이 없습니다",
     "NoNotes": "이 회의에 대한 노트가 없습니다",
     "NoSummary": "요약이 아직 없습니다.",
-    "Notes": "노트",
     "NoTranscript": "전사가 제공되지 않습니다",
     "NoTranslation": "번역 없음",
+    "Notes": "노트",
     "NowSpeaking": "말하는 중...",
     "Retry": "재시도",
     "SeekToTime": "이 시간부터 재생하려면 클릭하세요",
+    "SegmentCount": "{{count}} 세그먼트",
     "SegmentCount_one": "{{count}} 세그먼트",
     "SegmentCount_other": "{{count}} 세그먼트",
     "SignInRequired": "로그인 필요",
@@ -1526,17 +1800,25 @@
     "TranscriptionLanguage": "전사 언어",
     "TranslationLanguage": "번역 언어",
     "UnknownSpeaker": "화자",
-    "WaitingForSpeech": "음성 대기 중...",
-    "SegmentCount": "{{count}} 세그먼트"
+    "WaitingForSpeech": "음성 대기 중..."
   },
   "MeetingDetail": {
     "Back": "← 뒤로",
+    "CancelTitleEdit": "취소",
     "Channel": "채널",
     "Duration": "시간",
     "EventLogs": "이벤트 로그",
+    "FetchFailedTitle": "이 회의를 로드할 수 없습니다.",
     "HideLogs": "숨기기",
+    "Loading": "회의 로드 중…",
+    "LoadingDetail": "SeaMeet에 업로드 및 요약을 마무리합니다.",
+    "LoadingTranscriptions": "스크립트 로드 중…",
     "NA": "해당 없음",
     "NoEvents": "아직 수신된 이벤트가 없습니다",
+    "NoTranscriptions": "이 회의에 사용할 수 있는 스크립트가 없습니다.",
+    "NotSyncedWithSeaMeet": "이 녹음은 SeaMeet과 동기화되지 않습니다.",
+    "RenameMeeting": "회의 이름 바꾸기",
+    "SaveTitle": "저장",
     "ShowLogs": "표시",
     "StartTime": "시작 시간",
     "Status": "상태",
@@ -1544,33 +1826,24 @@
     "Untitled": "제목 없는 회의",
     "WsConnected": "WebSocket 연결됨",
     "WsDisconnected": "WebSocket 연결 끊김",
-    "NotSyncedWithSeaMeet": "이 녹음은 SeaMeet와 동기화되지 않았습니다.",
-    "FetchFailedTitle": "이 회의를 불러올 수 없습니다",
-    "Loading": "회의를 불러오는 중…",
-    "LoadingDetail": "SeaMeet에서 업로드 및 요약 완료 중.",
+    "copied": "복사되었습니다!",
+    "copy_summary": "요약 복사",
+    "copy_transcript": "성적표 복사",
+    "participants_count_one": "참가자 1명",
+    "participants_count_other": "참가자 {{count}}명",
     "summary": {
+      "key_points": "요점",
+      "participants": "참가자들",
       "processing": "요약 처리 중…",
-      "tldr": "요약",
-      "key_points": "핵심 포인트",
-      "participants": "참석자"
+      "tldr": "TL;DR"
     },
-    "LoadingTranscriptions": "전사 로딩 중…",
-    "NoTranscriptions": "이 회의에 대한 전사가 없습니다.",
-    "today": "오늘",
-    "yesterday": "어제",
-    "RenameMeeting": "회의 이름 변경",
-    "SaveTitle": "저장",
-    "CancelTitleEdit": "취소",
-    "view_on_seameet": "SeaMeet에서 보기",
     "tabs": {
       "summary": "요약",
-      "transcript": "전사"
+      "transcript": "성적 증명서"
     },
-    "copied": "복사됨!",
-    "copy_summary": "요약 복사",
-    "copy_transcript": "전사 복사",
-    "participants_count_one": "참가자 1명",
-    "participants_count_other": "참가자 {{count}}명"
+    "today": "오늘",
+    "view_on_seameet": "SeaMeet에서 보기",
+    "yesterday": "어제"
   },
   "MeetingPrompt": {
     "BrowserHint": "💡 팁: 브라우저 회의(Google Meet, Zoom, Teams)의 경우 특정 웹사이트가 아니라 브라우저만 감지할 수 있습니다.",
@@ -1599,13 +1872,13 @@
     "Error": "회의를 불러오지 못했습니다",
     "Loading": "회의 불러오는 중...",
     "Retry": "다시 시도",
+    "Searching": "'${debouncedQuery}' 검색 중…",
     "SelectWorkspace": "회의를 보려면 사용자 메뉴에서 워크스페이스를 선택하세요.",
     "Title": "회의",
     "Total": "총",
     "Untitled": "제목 없는 회의",
-    "matched_transcript": "전사",
     "matched_summary": "요약",
-    "Searching": "\"${debouncedQuery}\" 검색 중…"
+    "matched_transcript": "성적 증명서"
   },
   "MinimizedView": {
     "ActionRequired": "조치 필요 (자동 녹음)",
@@ -1618,45 +1891,20 @@
     "ScreenRecording": "화면 녹음 ({{time}})"
   },
   "NoteBinding": {
-    "New": "새 메모",
     "LastNote": "현재 (최근) 메모",
+    "New": "새 메모",
     "None": "첨부 안 함"
   },
   "NoteEditor": {
-    "Placeholder": "입력을 시작하거나 클립보드에서 붙여넣기…",
-    "Saving": "저장 중…",
-    "Saved": "✓ 저장됨",
-    "SaveFailed": "저장 실패",
-    "Editing": "편집 중…",
-    "TitlePlaceholder": "제목 없는 노트",
-    "TitleLabel": "노트 제목",
-    "RenameTooltip": "이름을 변경하려면 클릭",
-    "UntitledFallback": "제목 없는 노트",
-    "Renaming": "이름 변경 중…",
-    "LoadFailed": "노트를 불러올 수 없습니다",
+    "Blockquote": "인용문",
     "Bold": "굵게",
-    "Italic": "기울임",
+    "BulletList": "글머리 기호 목록",
+    "Chars": "문자",
     "Code": "코드",
+    "CodeBlock": "코드 블록",
+    "Editing": "편집 중…",
     "Heading1": "제목 1",
     "Heading2": "제목 2",
-    "BulletList": "글머리 기호 목록",
-    "OrderedList": "번호 매기기 목록",
-    "Link": "링크",
-    "LinkDialog": "링크 삽입",
-    "LinkPlaceholder": "https://example.com",
-    "LinkUpdate": "업데이트",
-    "LinkAdd": "추가",
-    "LinkRemove": "링크 제거",
-    "InsertWikilink": "노트에 링크 ([[ … ]])",
-    "SyncWiki": "wiki 동기화",
-    "SyncWikiTooltip": "자동 트리거를 기다리지 않고 지금 이 노트에서 wiki 를 업데이트",
-    "SyncWikiCouldNotQueue": "wiki 업데이트를 큐에 추가하지 못했습니다",
-    "SyncWikiQueued": "큐에 추가됨…",
-    "SyncWikiRunning": "동기화 중…",
-    "SyncWikiSuccess": "✓ 동기화됨",
-    "SyncWikiError": "동기화 실패",
-    "Blockquote": "인용문",
-    "CodeBlock": "코드 블록",
     "Heading3": "제목 3",
     "Highlight": "강조",
     "HorizontalRule": "수평선",
@@ -1665,7 +1913,37 @@
     "ImagePlaceholder": "https://example.com/image.png",
     "InsertImage": "이미지 삽입",
     "InsertTable": "표 삽입",
+    "InsertWikilink": "노트에 링크 ([[ … ]])",
+    "Italic": "기울임",
+    "Link": "링크",
+    "LinkAdd": "추가",
+    "LinkDialog": "링크 삽입",
+    "LinkPlaceholder": "https://example.com",
+    "LinkRemove": "링크 제거",
+    "LinkUpdate": "업데이트",
+    "LoadFailed": "노트를 불러올 수 없습니다",
+    "OrderedList": "번호 매기기 목록",
+    "Placeholder": "입력을 시작하거나 클립보드에서 붙여넣기…",
+    "Redo": "다시 실행",
+    "RenameTooltip": "이름을 변경하려면 클릭",
+    "Renaming": "이름 변경 중…",
+    "SaveFailed": "저장 실패",
+    "Saved": "✓ 저장됨",
+    "Saving": "저장 중…",
+    "ScrollLeft": "도구 모음 왼쪽으로 스크롤",
+    "ScrollRight": "도구 모음 오른쪽으로 스크롤",
     "Strike": "취소선",
+    "SyncWiki": "wiki 동기화",
+    "SyncWikiCouldNotQueue": "wiki 업데이트를 큐에 추가하지 못했습니다",
+    "SyncWikiError": "동기화 실패",
+    "SyncWikiQueued": "큐에 추가됨…",
+    "SyncWikiRunning": "동기화 중…",
+    "SyncWikiSuccess": "✓ 동기화됨",
+    "SyncWikiTooltip": "자동 트리거를 기다리지 않고 지금 이 노트에서 wiki 를 업데이트",
+    "Synthesize": "AI 요약",
+    "SynthesizeChooseTemplate": "AI 요약을 위한 템플릿 선택",
+    "SynthesizeRunning": "요약 중…",
+    "SynthesizeTooltip": "이 노트의 AI 요약을 생성하거나 새로 고침",
     "TableAddColumnAfter": "오른쪽에 열 추가",
     "TableAddColumnBefore": "왼쪽에 열 추가",
     "TableAddRowAfter": "아래에 행 추가",
@@ -1674,103 +1952,109 @@
     "TableDeleteColumn": "열 삭제",
     "TableDeleteRow": "행 삭제",
     "TaskList": "작업 목록",
-    "Redo": "다시 실행",
-    "Underline": "밑줄",
-    "Undo": "실행 취소",
-    "Synthesize": "AI 요약",
-    "SynthesizeRunning": "요약 중…",
-    "SynthesizeTooltip": "이 노트의 AI 요약을 생성하거나 새로 고침",
-    "SynthesizeChooseTemplate": "AI 요약을 위한 템플릿 선택",
-    "Chars": "문자",
+    "TitleLabel": "노트 제목",
+    "TitlePlaceholder": "제목 없는 노트",
     "TocEmpty": "아직 제목이 없습니다",
     "TocTitle": "개요",
     "ToggleToc": "목차",
-    "Words": "단어",
-    "ScrollLeft": "도구 모음 왼쪽으로 스크롤",
-    "ScrollRight": "도구 모음 오른쪽으로 스크롤"
+    "Underline": "밑줄",
+    "Undo": "실행 취소",
+    "UntitledFallback": "제목 없는 노트",
+    "Words": "단어"
   },
   "Notes": {
-    "Toast": {
-      "Screenshot": "스크린샷",
-      "Recording": "녹음",
-      "AddedTo": "에 추가됨:",
-      "Open": "열기",
-      "OpenNoteFirst": "먼저 노트를 열고 여기에 미디어를 끌어다 놓으세요"
-    },
-    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}",
-    "SynthesisPill": {
-      "Quiet": "✨ 요약 · {{version}}",
-      "Updated": "✨ 요약이 업데이트됨 · {{version}}",
-      "Jump": "이동 ↑"
-    },
     "SplitMenu": {
       "ChooseTemplate": "템플릿 선택…",
       "Label": "요약 옵션"
-    }
+    },
+    "SynthesisPill": {
+      "Jump": "이동 ↑",
+      "Quiet": "✨ 요약 · {{version}}",
+      "Updated": "✨ 요약이 업데이트됨 · {{version}}"
+    },
+    "Toast": {
+      "AddedTo": "에 추가됨:",
+      "Open": "열기",
+      "OpenNoteFirst": "먼저 노트를 열고 여기에 미디어를 끌어다 놓으세요",
+      "Recording": "녹음",
+      "Screenshot": "스크린샷"
+    },
+    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}"
   },
   "NotesList": {
-    "NewNote": "새 노트",
-    "JustNow": "방금",
-    "Yesterday": "어제",
-    "Title": "노트",
-    "EmptyTitle": "첫 노트를 시작하세요",
-    "EmptySubtitle": "녹음이 핵심 — 어떤 노트에든 녹음과 스크린샷을 추가할 수 있습니다.",
-    "MediaCount": "첨부된 미디어 {{n}}개",
     "ConfirmDelete": "삭제",
-    "DeleteNote": "노트 삭제"
+    "DeleteNote": "노트 삭제",
+    "EmptySubtitle": "녹음이 핵심 — 어떤 노트에든 녹음과 스크린샷을 추가할 수 있습니다.",
+    "EmptyTitle": "첫 노트를 시작하세요",
+    "JustNow": "방금",
+    "MediaCount": "첨부된 미디어 {{n}}개",
+    "NewNote": "새 노트",
+    "Title": "노트",
+    "Yesterday": "어제"
+  },
+  "NotesShowcase": {
+    "CreateCta": "첫 번째 노트 만들기",
+    "Feature1Desc": "마크다운 입력. [[위키링크]]를 사용해 노트를 연결하세요. 독점 형식이 아닙니다.",
+    "Feature1Title": "마크다운 + 위키링크",
+    "Feature2Desc": "드래그로 정리. 무한 중첩 가능. 이름 변경 시 모든 노트의 위키링크가 업데이트됩니다.",
+    "Feature2Title": "폴더 트리, 원하는 대로",
+    "Feature3Desc": "노트 옆에서 오디오, 비디오 또는 스크린샷을 캡처하세요. 다른 앱에 묻히지 않고 내장됩니다.",
+    "Feature3Title": "인라인 녹음",
+    "Feature4Desc": "대형 언어 모델(LLM)이 각 노트를 요약하고, 개체를 추출하며, 사람, 주제, 회의에 대한 위키를 자동으로 구축합니다.",
+    "Feature4Title": "AI가 요약하고 연결합니다",
+    "Headline": "지식 베이스로 성장하는 노트",
+    "Subhead": "일반 마크다운. 오디오, 비디오 또는 스크린샷을 인라인으로 기록하세요. AI가 요약하고 모든 것을 연결해 줍니다.",
+    "Tagline": "내장 녹음. 연결된 노트. 휴대 가능한 마크다운. 폴더에 일반 파일로 저장 — 영원히 당신의 것입니다."
   },
   "NotesTree": {
-    "Title": "노트",
-    "NewNote": "새 노트",
-    "NewFolder": "새 폴더",
-    "NewFolderPrompt": "폴더 이름:",
-    "SortBy": "정렬 기준",
-    "SortManual": "수동 정렬",
-    "SortName": "이름 (A → Z)",
-    "SortModified": "수정일 (최신순)",
-    "CollapseAll": "모두 접기",
-    "SearchInTree": "트리에서 검색",
-    "FilterPlaceholder": "노트 필터링…",
-    "DropToRoot": "여기에 놓아 루트로 이동",
-    "MoveTo": "이동…",
-    "MoveToRoot": "루트로 이동",
-    "Duplicate": "복제",
-    "RevealInFinder": "Finder에서 보기",
-    "RevealInExplorer": "파일 탐색기에서 보기",
-    "CopyWikilink": "위키링크 복사",
-    "Pin": "맨 위에 고정",
-    "Unpin": "고정 해제",
-    "Rename": "이름 변경",
-    "Delete": "삭제",
-    "Open": "열기",
-    "Expand": "펼치기",
-    "OpenInNewTab": "새 탭에서 열기",
-    "ConfirmDeleteFolder": "\"{{name}}\" 폴더와 그 안의 모든 항목을 삭제하시겠습니까?",
-    "RenameSucceeded": "이름이 변경되었습니다",
-    "RenameWithRefs": "이름 변경됨; {{count}}개 참조를 업데이트했습니다",
-    "SortDefault": "기본 (파일 시스템 순서)",
-    "ExpandAll": "모두 펼치기",
-    "NewFolderPlaceholder": "새 폴더 이름…",
-    "QuickOpen": "빠른 열기  (⌘P)",
-    "CopyRelativePath": "상대 경로 복사",
-    "CopyFullPath": "전체 경로 복사",
-    "UpdateWikiFromNote": "이 노트에서 위키 업데이트",
-    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}",
     "CloudPending": "다운로드되지 않음",
+    "CollapseAll": "모두 접기",
+    "ConfirmDeleteFolder": "\"{{name}}\" 폴더와 그 안의 모든 항목을 삭제하시겠습니까?",
+    "CopyFullPath": "전체 경로 복사",
+    "CopyRelativePath": "상대 경로 복사",
+    "CopyWikilink": "위키링크 복사",
+    "Delete": "삭제",
+    "DropToRoot": "여기에 놓아 루트로 이동",
+    "Duplicate": "복제",
+    "Expand": "펼치기",
+    "ExpandAll": "모두 펼치기",
+    "FilterPlaceholder": "노트 필터링…",
     "GitPending": "푸시되지 않은 변경 사항",
     "GitSynced": "GitHub에 푸시됨",
     "GitSyncing": "GitHub에 동기화 중…",
-    "GitUnsynced": "아직 커밋되지 않음"
+    "GitUnsynced": "아직 커밋되지 않음",
+    "MoveTo": "이동…",
+    "MoveToRoot": "루트로 이동",
+    "NewFolder": "새 폴더",
+    "NewFolderPlaceholder": "새 폴더 이름…",
+    "NewFolderPrompt": "폴더 이름:",
+    "NewNote": "새 노트",
+    "Open": "열기",
+    "OpenInNewTab": "새 탭에서 열기",
+    "Pin": "맨 위에 고정",
+    "QuickOpen": "빠른 열기  (⌘P)",
+    "Rename": "이름 변경",
+    "RenameSucceeded": "이름이 변경되었습니다",
+    "RenameWithRefs": "이름 변경됨; {{count}}개 참조를 업데이트했습니다",
+    "RevealInExplorer": "파일 탐색기에서 보기",
+    "RevealInFinder": "Finder에서 보기",
+    "SearchInTree": "트리에서 검색",
+    "SortBy": "정렬 기준",
+    "SortDefault": "기본 (파일 시스템 순서)",
+    "SortManual": "수동 정렬",
+    "SortModified": "수정일 (최신순)",
+    "SortName": "이름 (A → Z)",
+    "Title": "노트",
+    "Unpin": "고정 해제",
+    "UpdateWikiFromNote": "이 노트에서 위키 업데이트",
+    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}"
   },
   "NotesView": {
-    "EmptyTitle": "노트 선택",
-    "SelectFromList": "목록에서 노트를 선택하거나 새 노트를 시작하세요.",
-    "NoNotes": "아직 노트가 없습니다 — 첫 노트를 시작하세요.",
     "CollapseSidebar": "노트 사이드바 숨기기",
-    "ExpandSidebar": "노트 사이드바 표시"
-  },
-  "Onboarding": {
-    "AutoDeepIntroToast": "✨ 팁: 녹음을 정지하면 딥 분석이 자동으로 실행되어 더 정확한 화자 이름과 오디오/비디오 인용을 제공합니다."
+    "EmptyTitle": "노트 선택",
+    "ExpandSidebar": "노트 사이드바 표시",
+    "NoNotes": "아직 노트가 없습니다 — 첫 노트를 시작하세요.",
+    "SelectFromList": "목록에서 노트를 선택하거나 새 노트를 시작하세요."
   },
   "OCRAutoCopy": {
     "Copied": "추출된 텍스트가 클립보드에 복사되었습니다",
@@ -1784,28 +2068,35 @@
     "SettingsDesc": "스크린샷 후 OCR을 실행하고 추출된 텍스트를 클립보드에 복사합니다",
     "SettingsLabel": "스크린샷 시 텍스트 자동 추출(OCR)"
   },
+  "Onboarding": {
+    "AutoDeepIntroToast": "✨ 팁: 녹음을 정지하면 딥 분석이 자동으로 실행되어 더 정확한 화자 이름과 오디오/비디오 인용을 제공합니다."
+  },
   "OpenRecordingsFolder": "녹음 폴더 열기",
   "OpenRecordingsFolderDesc": "기본 녹음 폴더 열기",
+  "Pagination": {
+    "Next": "다음 페이지",
+    "Previous": "이전 페이지"
+  },
   "Pause": "정지시키다",
   "PermissionAlert": {
-    "Title": "권한 필요",
-    "Description": "계속하려면 SeaMeet에 추가 권한이 필요합니다.",
-    "OpenSettings": "시스템 설정 열기",
     "ClickToOpen": "설정을 열려면 클릭",
+    "Description": "계속하려면 SeaMeet에 추가 권한이 필요합니다.",
     "NoPermissionFullscreen": "전체 화면 녹화는 화면 기록 권한이 필요합니다.",
-    "NoPermissionWindow": "창 녹화는 화면 기록 권한이 필요합니다."
+    "NoPermissionWindow": "창 녹화는 화면 기록 권한이 필요합니다.",
+    "OpenSettings": "시스템 설정 열기",
+    "Title": "권한 필요"
   },
   "PermissionTutorial": {
-    "Step1Title": "SeaMeet에 오신 것을 환영합니다",
-    "Step1Desc": "SeaMeet는 강력한 화면 및 오디오 녹화 도구입니다. 시작하려면 화면을 녹화할 권한이 필요합니다.",
-    "Step2Title": "화면 녹화 권한",
-    "Step2Desc": "운영 체제는 모든 앱이 화면을 캡처하기 전에 명시적 권한을 요구합니다. 이는 개인정보 보호 기능입니다.",
-    "Step3Title": "사용 설정 방법",
-    "Step3Desc": "아래 버튼을 클릭해 시스템 설정을 연 뒤, 화면 기록 목록에서 SeaMeet을 찾아 켜세요.",
-    "Skip": "나중에 하기",
-    "OpenSettings": "시스템 설정 열기",
+    "DontShowAgain": "다시 표시하지 않음",
     "FailedToOpenSettings": "시스템 설정을 열지 못했습니다",
-    "DontShowAgain": "다시 표시하지 않음"
+    "OpenSettings": "시스템 설정 열기",
+    "Skip": "나중에 하기",
+    "Step1Desc": "SeaMeet는 강력한 화면 및 오디오 녹화 도구입니다. 시작하려면 화면을 녹화할 권한이 필요합니다.",
+    "Step1Title": "SeaMeet에 오신 것을 환영합니다",
+    "Step2Desc": "운영 체제는 모든 앱이 화면을 캡처하기 전에 명시적 권한을 요구합니다. 이는 개인정보 보호 기능입니다.",
+    "Step2Title": "화면 녹화 권한",
+    "Step3Desc": "아래 버튼을 클릭해 시스템 설정을 연 뒤, 화면 기록 목록에서 SeaMeet을 찾아 켜세요.",
+    "Step3Title": "사용 설정 방법"
   },
   "Permissions": {
     "AlwaysAutoRecord": "항상 자동 녹음",
@@ -1817,51 +2108,51 @@
     "AutoStartFallbackRule": "그 외의 경우, SeaMeet은 녹음 모드 선택기를 보여주어 선택할 수 있습니다.",
     "AutoStartFullscreenRule": "기본 녹음 모드가 전체화면이고 연결된 화면이 1개인 경우, SeaMeet이 즉시 녹음을 시작합니다.",
     "AutoStartHeuristicsTitle": "자동 시작 동작 (항상 자동 녹음)",
+    "Done": "완료",
+    "Grant": "승인하다",
+    "Granted": "부여된",
     "GuidanceAlways": ": SeaMeet이 승인 요청 없이 항상 자동으로 녹음합니다",
     "GuidanceAsk": ": SeaMeet이 매번 녹음을 허가해 달라고 요청합니다",
     "GuidanceNever": "SeaMeet이 녹음 요청을 하지 않습니다",
     "GuidanceTitle": "권한 유형",
-    "NeverRecord": "녹음 없음",
-    "Granted": "Granted",
-    "OpenSettings": "Open Settings",
-    "Grant": "Grant",
-    "Headline": "Set up SeaMeet",
-    "Subhead": "SeaMeet needs a couple of macOS permissions before it can record meetings. Grant each below — we’ll detect the change automatically.",
+    "Headline": "SeaMeet 설정",
     "Microphone": {
-      "Title": "Microphone",
-      "Description": "Lets SeaMeet capture your voice during meetings. Without this we can’t record what you say."
+      "Description": "SeaMeet을 사용하면 회의 중에 귀하의 음성을 캡처할 수 있습니다. 이것이 없으면 우리는 당신이 말하는 것을 녹음할 수 없습니다.",
+      "Title": "마이크로폰"
     },
+    "NeverRecord": "녹음 없음",
+    "OpenSettings": "설정 열기",
     "ScreenRecording": {
-      "Title": "Screen & System Audio Recording",
-      "Description": "Lets SeaMeet capture the other participants’ voices via macOS ScreenCaptureKit. Required for the meeting transcript to include both sides of the conversation."
+      "Description": "SeaMeet이 macOS ScreenCaptureKit을 통해 다른 참가자의 목소리를 캡처할 수 있습니다. 대화의 양쪽 측면을 모두 포함하려면 회의 기록에 필요합니다.",
+      "Title": "화면 및 시스템 오디오 녹음"
     },
-    "Done": "Done"
+    "Subhead": "SeaMeet이 회의를 녹화하려면 몇 가지 macOS 권한이 필요합니다. 아래에 각각 부여하면 변경 사항이 자동으로 감지됩니다."
   },
   "PipelineStatus": {
     "Chunks": "{{done}}/{{total}} 청크",
     "ChunksTooltip": "처리된 청크",
-    "Tokens_one": "{{count}} 토큰",
-    "Tokens_other": "{{count}} 토큰",
     "Done": "요약 준비됨",
     "Error": "처리 실패",
     "Progress": "{{total}}의 청크 {{current}} 처리 중",
     "Queued": "요약이 대기 중입니다...",
     "Running": "요약 생성 중...",
     "Step": {
+      "Analyzing": "분석 중",
+      "AnalyzingImage": "이미지 분석 중",
+      "Extracting": "결과 추출",
+      "ExtractingAudio": "오디오 추출 중",
       "Preparing": "녹음 준비 중",
       "PreparingFast": "전사 준비 중",
-      "Uploading": "파일 업로드 중",
-      "UploadingWait": "서버에서 처리 중",
-      "Analyzing": "분석 중",
-      "Extracting": "결과 추출",
-      "Saving": "아티팩트 저장",
       "PreparingImage": "이미지 준비 중",
-      "AnalyzingImage": "이미지 분석 중",
-      "ExtractingAudio": "오디오 추출 중",
+      "Saving": "아티팩트 저장",
       "Transcribing": "텍스트로 변환 중",
-      "TranscribingWith": "{{provider}}로 텍스트 변환 중"
+      "TranscribingWith": "{{provider}}로 텍스트 변환 중",
+      "Uploading": "파일 업로드 중",
+      "UploadingWait": "서버에서 처리 중"
     },
-    "Tokens": "{{count}} tok"
+    "Tokens": "{{count}} tok",
+    "Tokens_one": "{{count}} 토큰",
+    "Tokens_other": "{{count}} 토큰"
   },
   "Player": {
     "Mute": "음소거",
@@ -1886,16 +2177,33 @@
     "MoreOptions": "추가 옵션"
   },
   "PostUpdateModal": {
-    "Title": "v{{version}}(으)로 업데이트됨",
     "Description": "SeaMeet이 성공적으로 업데이트되었습니다. 새로운 기능:",
-    "GotIt": "확인"
+    "GotIt": "확인",
+    "Title": "v{{version}}(으)로 업데이트됨"
+  },
+  "Premium": {
+    "AIAgent": "AI 에이전트",
+    "AIAgentDesc": "구독 시 실시간 전사 및 AI 상호작용이 가능합니다.",
+    "AgentReadOnlyBanner": "대화를 계속하려면 구독하세요",
+    "GenericUpgradeCta": "구독하기",
+    "LockedChipTooltip": "활성화하려면 구독하세요",
+    "NoteSynthesis": "AI 종합",
+    "NoteSynthesisDesc": "BYOK Pro로 이 노트와 연결된 녹음의 구조화된 요약을 받으세요.",
+    "PostMeetingAI": "회의 후 AI",
+    "PostMeetingAIDesc": "녹음이 완료된 후 요약, 실행 항목 및 인사이트가 생성됩니다.",
+    "ScreenshotAI": "스크린샷 AI",
+    "ScreenshotAIDesc": "BYOK Pro로 이미지를 설명하고, 텍스트를 추출하며, 후속 질문을 하세요.",
+    "UnlockPremium": "프리미엄으로 잠금 해제",
+    "Upgrade": "업그레이드",
+    "WikiList": "Wikis",
+    "WikiListDesc": "BYOK Pro로 노트와 회의에서 지식 기반을 자동 구축하세요."
   },
   "QuickOpen": {
-    "Placeholder": "입력하거나 클립보드에서 붙여넣기… [[ 로 다른 노트로 링크",
     "NoResults": "일치하는 노트가 없습니다",
-    "UnifiedPlaceholder": "이름으로 노트 또는 위키 페이지 열기…",
+    "Placeholder": "입력하거나 클립보드에서 붙여넣기… [[ 로 다른 노트로 링크",
     "SectionNotes": "노트",
-    "SectionWiki": "위키"
+    "SectionWiki": "위키",
+    "UnifiedPlaceholder": "이름으로 노트 또는 위키 페이지 열기…"
   },
   "RecordAudio": "오디오 녹음",
   "RecordAudioDesc": "오디오 녹음 시작(혼합)",
@@ -1904,28 +2212,28 @@
   "RecordRegion": "녹음할 영역 스냅",
   "RecordRegionDesc": "녹화할 화면 영역을 선택하세요.",
   "RecordTab": {
-    "TapToRecord": "탭하여 녹음 시작",
+    "AutoDetectLabel": "자동 감지",
+    "AutoDetectStatusOff": "꺼짐 — 탭하여 활성화",
+    "AutoDetectStatusOn": "회의 감지 중",
+    "FlashbackLabel": "플래시백",
+    "FlashbackStatusCharging": "로딩 중 {{percent}}%",
+    "FlashbackStatusOff": "꺼짐 — 탭하여 준비",
+    "FlashbackStatusReady": "준비 완료 — RAM에 {{seconds}}초 {{type}}",
+    "FloaterPill": "플로터",
+    "LauncherPill": "런처",
+    "NoteBindingLabel": "첨부 대상",
+    "RecentRecordings": "최근 녹음",
     "RecordWithPreamble": "{{seconds}}초 프리롤과 함께 녹음",
     "SaveLastInstead": "대신 직전 {{seconds}}초 저장",
-    "AutoDetectStatusOn": "회의 감지 중",
-    "AutoDetectStatusOff": "꺼짐 — 탭하여 활성화",
-    "FlashbackStatusOff": "꺼짐 — 탭하여 준비",
-    "FlashbackStatusCharging": "로딩 중 {{percent}}%",
-    "FlashbackStatusReady": "준비 완료 — RAM에 {{seconds}}초 {{type}}",
-    "LauncherPill": "런처",
-    "FloaterPill": "플로터",
-    "AutoDetectLabel": "자동 감지",
-    "FlashbackLabel": "플래시백",
-    "RecentRecordings": "최근 녹음",
-    "NoteBindingLabel": "첨부 대상"
+    "TapToRecord": "탭하여 녹음 시작"
   },
   "Recording": {
+    "AttachingTo": "{{note}}에 첨부 중",
+    "InProgress": "녹음 중",
     "Paused": "일시정지됨",
     "Preparing": "준비 중",
     "PreparingToRecord": "녹음 준비 중...",
-    "InProgress": "녹음 중",
-    "WillBeAdded": "중지를 클릭하면 여기에 오디오가 추가됩니다",
-    "AttachingTo": "{{note}}에 첨부 중"
+    "WillBeAdded": "중지를 클릭하면 여기에 오디오가 추가됩니다"
   },
   "RecordingControls": {
     "AudioRecording": "오디오 녹음",
@@ -1946,7 +2254,6 @@
     "AreaCapture": "영역 캡처",
     "CaptureMode": "캡처 모드",
     "FullScreen": "전체 화면",
-    "WindowCapture": "창",
     "RecordAudio": "오디오 녹음",
     "RecordAudioTip": "오디오만",
     "RecordFullscreen": "전체 화면 기록",
@@ -1954,12 +2261,22 @@
     "RecordRegion": "사용자 지정 영역",
     "RecordRegionTip": "사용자 지정 영역 캡처",
     "RecordWindow": "윈도우 기록",
-    "RecordWindowTip": "단일 앱 윈도우 캡처"
+    "RecordWindowTip": "단일 앱 윈도우 캡처",
+    "WindowCapture": "창"
   },
   "RecordingSource": {
     "App": "{{appName}}",
     "File": "파일",
     "Microphone": "마이크"
+  },
+  "RecordingView": {
+    "live_transcript": "실시간 성적표",
+    "pause": "정지시키다",
+    "paused": "일시중지됨",
+    "recording": "녹음",
+    "resume": "재개하다",
+    "saving": "절약…",
+    "stop_save": "중지 및 저장"
   },
   "RecordingsList": {
     "CopyFileName": "파일 이름 복사",
@@ -1977,44 +2294,44 @@
     "ShowInFolder": "폴더에서 보여주기"
   },
   "Regenerate": {
-    "Title": "노트 요약 재생성",
-    "PickTemplate": "템플릿 선택:",
-    "Custom": "또는 사용자 지정 지침 작성 (템플릿을 덮어씀):",
-    "CustomPlaceholder": "예: '고객 X에 대한 약속에 집중하고, 한 페이지 임원 메모 형식으로 출력해 주세요.'",
-    "SaveAsTemplate": "사용자 지정 템플릿으로 저장",
-    "TemplateNamePlaceholder": "템플릿 이름",
-    "NameRequired": "저장하려면 이름이 필요합니다",
-    "OutputLanguageHint": "출력 언어는 설정 → AI 추출 및 요약을 따릅니다",
-    "Submit": "재생성",
+    "AutoSuggestTemplate": "템플릿 자동 제안",
+    "AutoSuggestTemplateHint": "켜져 있으면 모델이 각 합성에 가장 적합한 템플릿을 선택합니다. 꺼짐: 회의록이 기본값으로 사용됩니다. 설정 → AI 기능 → AI 요약 템플릿을 반영합니다.",
     "AutoUpdate": "입력 시 자동 업데이트",
     "AutoUpdateHint": "이 노트에 상당한 변경이 있은 후 요약을 다시 실행합니다 (AI 할당량을 사용합니다).",
-    "SearchPlaceholder": "템플릿 검색…",
+    "Custom": "또는 사용자 지정 지침 작성 (템플릿을 덮어씀):",
+    "CustomPlaceholder": "예: '고객 X에 대한 약속에 집중하고, 한 페이지 임원 메모 형식으로 출력해 주세요.'",
+    "NameRequired": "저장하려면 이름이 필요합니다",
     "NoResults": "일치하는 템플릿 없음",
+    "OutputLanguageHint": "출력 언어는 설정 → AI 추출 및 요약을 따릅니다",
+    "PickTemplate": "템플릿 선택:",
+    "SaveAsTemplate": "사용자 지정 템플릿으로 저장",
+    "SearchPlaceholder": "템플릿 검색…",
     "SpecializedBadge": "전문",
-    "AutoSuggestTemplateHint": "켜져 있으면 모델이 각 합성에 가장 적합한 템플릿을 선택합니다. 꺼짐: 회의록이 기본값으로 사용됩니다. 설정 → AI 기능 → AI 요약 템플릿을 반영합니다.",
-    "AutoSuggestTemplate": "템플릿 자동 제안",
-    "Suggested": "제안"
+    "Submit": "재생성",
+    "Suggested": "제안",
+    "TemplateNamePlaceholder": "템플릿 이름",
+    "Title": "노트 요약 재생성"
   },
   "RegionSelector": {
+    "AspectRatio": "종횡비",
     "CaptureButton": "화면 캡처 또는 Enter 키 누르기",
     "ConfirmButton": "선택 확인",
-    "Monitor": "모니터",
-    "PrimaryMonitor": "기본 모니터",
-    "StartRecording": "녹음 시작",
     "Coordinates": "X: {{x}}, Y: {{y}}",
     "Dimension": "{{width}} × {{height}}",
-    "Selected": "선택됨",
-    "PresetFreeform": "자유형",
-    "Preset1619": "16:9 수평",
-    "Preset43": "4:3 수평",
-    "Preset2119": "21:9 울트라와이드",
-    "Preset916": "9:16 수직",
-    "Preset34": "3:4 수직",
+    "Monitor": "모니터",
     "Preset11": "1:1 정사각형",
+    "Preset1619": "16:9 수평",
+    "Preset2119": "21:9 울트라와이드",
+    "Preset34": "3:4 수직",
+    "Preset43": "4:3 수평",
+    "Preset916": "9:16 수직",
+    "PresetFreeform": "자유형",
+    "PrimaryMonitor": "기본 모니터",
+    "Selected": "선택됨",
     "ShortcutCancel": "취소",
     "ShortcutCapture": "포착",
     "ShortcutConfirm": "확인하다",
-    "AspectRatio": "종횡비"
+    "StartRecording": "녹음 시작"
   },
   "Resume": "재개하다",
   "RingMenu": {
@@ -2039,34 +2356,35 @@
     "Unknown": "제목 없는 디스플레이"
   },
   "ScreenshotPanel": {
-    "SelectDisplay": "디스플레이 선택",
-    "PrimaryDisplay": "기본 디스플레이",
     "Display": "디스플레이",
-    "SelectWindow": "창 선택",
     "LoadingWindows": "불러오는 중...",
-    "NoWindows": "사용 가능한 창이 없습니다"
+    "NoWindows": "사용 가능한 창이 없습니다",
+    "PrimaryDisplay": "기본 디스플레이",
+    "SelectDisplay": "디스플레이 선택",
+    "SelectWindow": "창 선택"
   },
   "ScreenshotProcessing": {
     "Analysis": "분석",
-    "ConfigureApiKey": "AI로 이미지를 처리하려면 Gemini API 키를 구성하세요.",
-    "SubscribeToDescribe": "구독하여 AI 기반 스크린샷 분석을 활성화하세요.",
     "ButtonLabel": "AI로 처리",
-    "ErrorCodes": {
-      "AUTH_ERROR": "API 키가 잘못되었습니다. 설정에서 API 키를 확인하세요.",
-      "NO_API_KEY": "Gemini API 키가 구성되지 않았습니다. 설정에서 API 키를 추가하세요.",
-      "RATE_LIMIT": "API 비율 제한을 초과했습니다. 잠시만 기다려주세요.",
-      "BAD_REQUEST": "API가 요청을 거부했습니다. API 키나 입력 내용을 확인하세요.",
-      "SERVER_ERROR": "AI 서버에 오류가 발생했습니다.",
-      "NETWORK_ERROR": "네트워크 오류입니다. 인터넷 연결을 확인하세요.",
-      "PARSE_ERROR": "AI 응답을 구문 분석하지 못했습니다.",
-      "UNKNOWN_ERROR": "AI 처리에 실패했습니다."
-    },
+    "ConfigureApiKey": "AI로 이미지를 처리하려면 Gemini API 키를 구성하세요.",
     "Custom": "맞춤 프롬프트",
     "CustomPlaceholder": "이미지이거 무엇이든 물어보세요...",
     "Describe": "이미지 설명",
     "DescribeSub": "이 스크린샷에는 무엇이 있나요?",
     "Description": "설명",
+    "ErrorCodes": {
+      "AUTH_ERROR": "API 키가 잘못되었습니다. 설정에서 API 키를 확인하세요.",
+      "BAD_REQUEST": "API가 요청을 거부했습니다. API 키나 입력 내용을 확인하세요.",
+      "NETWORK_ERROR": "네트워크 오류입니다. 인터넷 연결을 확인하세요.",
+      "NO_API_KEY": "Gemini API 키가 구성되지 않았습니다. 설정에서 API 키를 추가하세요.",
+      "PARSE_ERROR": "AI 응답을 구문 분석하지 못했습니다.",
+      "RATE_LIMIT": "API 비율 제한을 초과했습니다. 잠시만 기다려주세요.",
+      "SERVER_ERROR": "AI 서버에 오류가 발생했습니다.",
+      "UNKNOWN_ERROR": "AI 처리에 실패했습니다."
+    },
     "ExtractedText": "추출된 텍스트",
+    "FallbackHint": "이 공급자가 비전을 지원하지 않으면 설정에서 \"스크린샷 OCR에 메인 LLM 사용\"을 끄세요.",
+    "FallbackUsed": "{{from}}이(가) 이미지를 처리하지 못했습니다 — 대신 Gemini가 처리했습니다.",
     "NoCustom": "이 이미지에 대해 무엇이든 물어보세요.",
     "NoDescription": "아직 설명이 없습니다.",
     "NoOcr": "아직 추출된 텍스트가 없습니다.",
@@ -2078,14 +2396,13 @@
     "Queuing": "대기 중...",
     "ResultLabel": "AI 결과",
     "SetupRequired": "이미지를 처리하려면 구독 또는 BYOK로 로그인하세요.",
+    "SubscribeToDescribe": "구독하여 AI 기반 스크린샷 분석을 활성화하세요.",
     "Tab": {
       "Custom": "사용자 정의 프롬프트",
       "Description": "설명",
       "OCR": "텍스트 (OCR)"
     },
-    "UnknownError": "알 수 없는 오류",
-    "FallbackUsed": "{{from}}이(가) 이미지를 처리하지 못했습니다 — 대신 Gemini가 처리했습니다.",
-    "FallbackHint": "이 공급자가 비전을 지원하지 않으면 설정에서 \"스크린샷 OCR에 메인 LLM 사용\"을 끄세요."
+    "UnknownError": "알 수 없는 오류"
   },
   "ScreenshotView": {
     "RecentLabel": "최근 스크린샷"
@@ -2094,31 +2411,82 @@
     "CopiedToClipboard": "복사됨!",
     "CopyFailed": "클립보드에 스크린샷을 복사하지 못했습니다",
     "CopyToClipboard": "클립보드에 복사",
-    "CopyToClipboardWithHint": "{{action}}(Ctrl/Cmd+C)",
+    "CopyToClipboardWithHint": "{{action}} (Ctrl/Cmd+C)",
     "Dimensions": "크기",
     "FileSize": "파일 크기",
+    "Info": "통계",
     "OpenInSystemViewer": "시스템 뷰어로 열기",
     "ScreenshotCopied": "클립보드에 복사됨",
     "Share": "공유",
     "ShareCompleted": "공유 완료",
     "ShareFailed": "이 브라우저에서는 공유가 지원되지 않습니다. 스크린샷을 열어 직접 공유하세요.",
     "Sharing": "공유 중…",
-    "ZeroBytes": "0 바이트",
-    "Info": "통계"
+    "ZeroBytes": "0 Bytes"
+  },
+  "Screenshots": {
+    "DemoAgenda": "의제",
+    "DemoAiActionAlice": "<strong>앨리스</strong> — 6월 5일까지 PRD 최종 확정",
+    "DemoAiActionBob": "<strong>밥</strong> — CI/CD 파이프라인 구축",
+    "DemoAiActionCharlie": "<strong>찰리</strong> — 투자자 자료 준비",
+    "DemoAiDecisionSummary": "7월 말까지 새로운 기능 출시. 엔지니어 2명 추가 채용. 마케팅 예산 20% 증액.",
+    "DemoAiResponseIntro": "다음은 요약입니다",
+    "DemoAiSummary": "AI 요약",
+    "DemoAiTopicActionSprint": "다가오는 스프린트 계획을 위한 작업 항목",
+    "DemoAiTopicRevenue": "3분기 매출 검토 — 분기별 15% 성장",
+    "DemoAiTopicTimeline": "제품 출시를 위한 타임라인 업데이트",
+    "DemoAttendees": "참석자:",
+    "DemoDate": "날짜:",
+    "DemoKeyTopics": "주요 주제",
+    "DemoLiveTranscription": "실시간 전사",
+    "DemoMeetingTitle": "3분기 계획 회의 노트",
+    "DemoNextSync": "다음 동기화:",
+    "DemoNoteActionAlice": "앨리스 — 6월 5일까지 PRD 최종 확정",
+    "DemoNoteActionBob": "밥 — CI/CD 파이프라인 구축",
+    "DemoNoteActionCharlie": "찰리 — 투자자 자료 준비",
+    "DemoNoteAgendaQ3OKRs": "3분기 OKR 및 목표",
+    "DemoNoteAgendaResource": "자원 배분",
+    "DemoNoteAgendaReviewQ2": "2분기 실적 검토",
+    "DemoNoteDecisionBudget": "마케팅 예산 20% 증액",
+    "DemoNoteDecisionHire": "엔지니어 2명 추가 채용",
+    "DemoNoteDecisionLaunch": "7월 말까지 신규 기능 출시",
+    "DemoNoteSyncDate": "6월 8일 오전 10시",
+    "DemoRealTime": "실시간",
+    "DemoRecentMeetings": "최근 회의",
+    "DemoRecordingLabel": "녹음",
+    "DemoTranscriptFallbackLine1": "3분기 기획 회의에 오신 것을 환영합니다.",
+    "DemoTranscriptFallbackLine2": "분기별로 <strong>15% 성장</strong>을 기록했습니다.",
+    "DemoTranscriptFallbackLine3": "7월 말까지 <strong>AI 에이전트</strong>를 출시합니다.",
+    "DemoTranscriptFallbackLine4": "투자자 자료를 준비 중이며 마케팅 예산을 20% 증액해야 합니다.",
+    "DemoTranscriptLine1": "3분기 기획 회의에 오신 것을 환영합니다. 지난 분기 매출 수치를 검토해 보겠습니다.",
+    "DemoTranscriptLine2": "분기별로 <strong>15% 성장</strong>을 기록하여 12% 목표를 초과 달성했습니다.",
+    "DemoTranscriptLine3": "훌륭합니다. 앨리스, 제품 로드맵을 설명해 주시겠어요?",
+    "DemoTranscriptLine4": "7월 말까지 <strong>AI 에이전트 기능</strong>을 출시할 예정입니다. 6월 5일까지 PRD를 최종 확정하겠습니다.",
+    "DemoTranscriptLine5": "CI/CD 파이프라인을 준비하겠습니다. 찰리, 마케팅 계획은요?",
+    "DemoTranscriptLine6": "네, 투자자 자료를 준비 중이며 마케팅 예산을 늘려야 합니다.",
+    "DemoUserPromptFollowUp": "언급된 구체적인 수익 수치는 무엇이었나요?",
+    "DemoUserPromptSummarize": "지난 회의 녹음을 요약하고 주요 실행 항목을 추출해 주세요.",
+    "DemoWikiActionArch": "엔지니어링 팀과 AI 에이전트 아키텍처 검토",
+    "DemoWikiActionPRD": "6월 5일까지 PRD 최종 확정",
+    "DemoWikiActionStakeholder": "3분기 출시를 위한 이해관계자 발표 자료 준비",
+    "DemoWikiMeetingQ3": "3분기 기획 회의 — 2026년 6월 1일",
+    "DemoWikiMeetingRoadmap": "제품 로드맵 검토 — 2026년 5월 27일",
+    "DemoWikiMeetingSprint": "스프린트 회고 — 2026년 5월 20일",
+    "DemoWikiSummaryAlice": "앨리스 앤더슨은 회사의 시니어 프로덕트 매니저입니다. 그녀는 AI 에이전트 이니셔티브를 이끌며 3분기 제품 로드맵을 책임지고 있습니다.",
+    "DemoWikiTopicsText": "제품 전략, AI 에이전트 개발, 3분기 OKR, 스프린트 계획, 자원 배분, CI/CD 파이프라인, 마케팅 예산."
   },
   "Search": {
-    "Placeholder": "검색… (⌘K)",
+    "AgentHint": "의미 검색에는 AI 에이전트를 사용해 보세요.",
     "Aria": "노트 및 위키 검색",
     "GroupNotes": "노트",
-    "GroupWiki": "위키",
     "GroupRecordings": "녹음",
     "GroupScreenshots": "스크린샷",
-    "Results": {
-      "Aria": "검색 결과"
-    },
+    "GroupWiki": "위키",
     "Loading": "검색 중…",
     "NoResults": "“{{query}}” 검색 결과 없음",
-    "AgentHint": "의미 검색에는 AI 에이전트를 사용해 보세요."
+    "Placeholder": "검색… (⌘K)",
+    "Results": {
+      "Aria": "검색 결과"
+    }
   },
   "Settings": {
     "About": {
@@ -2291,6 +2659,36 @@
     "Title": "설정",
     "UserAvatarAlt": "사용자"
   },
+  "SettingsModal": {
+    "app_mode_full": "SeaMeet(전체)",
+    "app_mode_full_desc": "녹음, AI 기능, 메모, Wiki 등을 잠금 해제하세요.",
+    "app_mode_switch_back": "다시 전환",
+    "app_mode_switch_confirm_recording": "모드를 전환하면 현재 녹음이 중지되고 저장됩니다. 계속하다?",
+    "auto_detect": "회의 자동 감지",
+    "auto_detect_desc": "Zoom, Meet 또는 Teams가 시작되면 자동으로 녹화를 시작합니다.",
+    "close": "닫다",
+    "floater_waveform": "파형 플로터 표시",
+    "floater_waveform_desc": "녹음하는 동안 실시간 파형을 표시하는 항상 상단 알약입니다. 적용하려면 다시 시작하세요.",
+    "microphone": "마이크로폰",
+    "microphone_default": "시스템 기본값",
+    "microphone_desc": "기본 오디오 입력.",
+    "record_system_audio": "시스템 오디오 녹음",
+    "record_system_audio_desc": "통화의 상대방을 캡처합니다.",
+    "section": {
+      "app_mode": "앱 모드",
+      "appearance": "모습",
+      "recording": "녹음",
+      "transcription": "전사"
+    },
+    "sign_out": "로그아웃",
+    "theme": "주제",
+    "theme_dark": "어두운",
+    "theme_desc": "밝거나 어두운 인터페이스를 선택하세요.",
+    "theme_light": "빛",
+    "title": "설정",
+    "transcription_language": "언어",
+    "transcription_language_desc": "기본 언어."
+  },
   "Shortcuts": {
     "CaptureScreenshot": "화면 캡처",
     "ConflictWarning": "이 단축키는 이미 다른 앱에서 사용 중이며 등록할 수 없습니다.",
@@ -2299,9 +2697,9 @@
     "OpenLauncher": "시작 프로그램 열기",
     "RecordAudio": "오디오 녹음",
     "RecordFullscreen": "전체 화면 녹화",
-    "RecordingPrompt": "듣고 있습니다… 새 단축키를 누르세요",
     "RecordRegion": "영역 캡처",
     "RecordWindow": "창 또는 윈도우 녹화",
+    "RecordingPrompt": "듣고 있습니다… 새 단축키를 누르세요",
     "RestoreDefaults": "기본 설정으로 복원",
     "SpaceKey": "스페이스",
     "ToggleFloatingWindow": "플로팅 창 보여주기"
@@ -2310,19 +2708,167 @@
     "ClearSearch": "검색 초기화",
     "PrimaryNavigation": "메인 내비게이션"
   },
+  "Sync": {
+    "Conflict": {
+      "Agent": {
+        "Empty": "에이전트가 빈 결과를 반환했습니다",
+        "NoVersions": "파일 버전을 읽을 수 없습니다",
+        "Resolving": "에이전트가 병합 중입니다...",
+        "TooLarge": "파일이 너무 커서 AI 병합이 불가능합니다. 수동으로 해결해 주세요.",
+        "WriteFailed": "병합된 내용을 쓰지 못했습니다"
+      },
+      "AgentResolve": "에이전트 병합",
+      "Desc": "\"{{fileName}}\" 파일이 다른 기기에서 변경되었습니다.",
+      "Finishing": "동기화 완료 중...",
+      "KeepOther": "원격 버전 유지",
+      "KeepThis": "로컬 버전 유지",
+      "Manual": {
+        "Desc": "파일이 편집기에서 열렸습니다. 충돌 표시를 편집하고 저장한 후 완료를 클릭하세요.",
+        "Done": "완료",
+        "MarkersRemain": "충돌 표시(<<<<<<<, =======, >>>>>>>)가 여전히 감지됩니다. 확인하기 전에 모든 충돌을 해결해 주세요.",
+        "NoChange": "변경 사항이 감지되지 않았습니다. 확인하기 전에 파일을 편집해 주세요.",
+        "Open": "편집기에서 열기",
+        "ReadError": "파일을 읽을 수 없습니다. 저장되었는지 확인해 주세요."
+      },
+      "ManualResolve": "수동으로 편집",
+      "Resolve": "해결",
+      "Resolving": "해결 중...",
+      "Title": "동기화 충돌"
+    },
+    "EmptyState": "GitHub 동기화를 설정하여 노트와 위키를 기기 간 자동으로 동기화하세요.",
+    "Git": {
+      "AutoCommit": "자동 동기화",
+      "Branch": "Branch",
+      "CommitNow": "지금 동기화",
+      "Connect": "연결",
+      "ConnectGitHub": "GitHub 연결",
+      "ConnectGitHubDesc": "클라우드 백업 및 기기 간 동기화 활성화",
+      "Connected": "연결됨",
+      "ConnectedDesc": "노트와 위키가 GitHub에 자동으로 동기화됩니다. 오디오 녹음, 비디오 녹화 및 스크린샷은 동기화되지 않습니다.",
+      "ConnectedTitle": "동기화 및 백업",
+      "Interval": "동기화 간격",
+      "LastCommit": "마지막 동기화",
+      "LastSync": "마지막 동기화",
+      "RetrySync": "동기화 재시도"
+    },
+    "GitAutoCommit": {
+      "Desc": "노트와 위키의 변경 사항이 자동으로 동기화됩니다.",
+      "Title": "자동 동기화"
+    },
+    "GitHub": {
+      "Authorize": "GitHub 권한 부여",
+      "AutoSync": "변경 시 자동 동기화",
+      "Benefit": {
+        "AnyDevice": "모든 기기에서 접근 가능",
+        "AutoSync": "변경 시 자동 동기화",
+        "History": "전체 버전 기록",
+        "Private": "비공개 및 안전"
+      },
+      "Connected": "연결됨",
+      "Desc": "노트와 위키를 개인 GitHub 저장소에 자동으로 백업하세요.",
+      "Disconnect": "연결 해제",
+      "Install": {
+        "Button": "GitHub에 설치",
+        "Desc": "클라우드 백업을 활성화하려면 GitHub 계정에 앱을 설치하세요.",
+        "Title": "SeaMeet 앱 설치"
+      },
+      "Pillar": {
+        "Capacity": {
+          "Desc": "SeaMeet는 .md 텍스트 파일만 백업합니다. 저장소당 1 GB면 약 200,000–500,000개의 메모에 해당하며, 평생 분량의 회의를 담을 수 있습니다.",
+          "Title": "사실상 무제한"
+        },
+        "Free": {
+          "Desc": "GitHub 무료 요금제는 무제한 비공개 저장소를 포함합니다. 메모는 비용 없이 비공개로 유지됩니다.",
+          "Title": "무료이며 비공개"
+        },
+        "Workspace": {
+          "Desc": "각 SeaMeet 워크스페이스는 독립된 비공개 저장소입니다. 미디어는 기기에 두고 메모는 어디서나 동기화하세요.",
+          "Title": "워크스페이스당 저장소 하나"
+        }
+      },
+      "Reauthorize": "GitHub 재인증",
+      "Setup": {
+        "Authorize": "권한 부여됨",
+        "CreateRepo": "저장소 생성 및 업로드 중...",
+        "FailedAuth": "인증 시작 실패",
+        "FailedCreate": "저장소 생성 실패",
+        "Installing": "GitHub 앱 설치 중...",
+        "OpenInstallPage": "설치 페이지 열기",
+        "Retry": "재시도"
+      },
+      "SyncOnStartup": "시작 시 동기화",
+      "Timeout": {
+        "Desc": "동기화 시간이 초과되었습니다. 네트워크 문제 또는 만료된 GitHub 권한 때문일 수 있습니다."
+      },
+      "Title": "GitHub와 동기화",
+      "TokenExpired": {
+        "Desc": "GitHub 인증이 만료되었습니다. 동기화를 재개하려면 다시 인증해 주세요."
+      },
+      "UserCode": "코드 입력:",
+      "ViewOnGitHub": "GitHub에서 보기",
+      "Waiting": {
+        "Desc": "브라우저 창이 열렸습니다. github.com/login/device에서 아래 코드를 입력하세요."
+      },
+      "WebFlow": {
+        "AlreadyInstalled": "앱을 이미 설치하셨나요? 다시 권한을 부여하려면 여기를 클릭하세요.",
+        "Waiting": {
+          "Desc": "브라우저 창이 열렸습니다. SeaMeet이 귀하의 GitHub 계정에 접근할 수 있도록 권한을 부여해 주세요.",
+          "Label": "권한 부여를 기다리는 중..."
+        }
+      }
+    },
+    "GroupTitle": "동기화",
+    "MenuItem": "동기화 및 백업",
+    "PageTitle": "동기화 및 백업",
+    "Scope": {
+      "Notice": "동기화는 노트와 위키에만 적용됩니다. 오디오 녹음, 비디오 녹화 및 스크린샷은 동기화되지 않습니다."
+    },
+    "Setup": {
+      "Button": "GitHub 동기화 설정"
+    },
+    "Status": {
+      "Committing": "변경 사항 동기화 중...",
+      "Pushing": "GitHub에 푸시 중...",
+      "Syncing": "동기화 중..."
+    },
+    "TimeAgo": {
+      "DaysAgo": "{{count}}일 전",
+      "HoursAgo": "{{count}}시간 전",
+      "JustNow": "방금 전",
+      "MinutesAgo": "{{count}}분 전"
+    }
+  },
+  "SyncStatusBar": {
+    "CloudDrive": "{{provider}}를 통해 동기화됨",
+    "Conflict": "동기화 충돌",
+    "CreatingRepo": "저장소 생성 중...",
+    "Error": "동기화 오류",
+    "InstallingApp": "GitHub 앱 설치 중...",
+    "Offline": "오프라인",
+    "Pending": "대기 중...",
+    "Pulling": "풀 중...",
+    "Pushing": "푸시 중...",
+    "SetUpGithub": "GitHub 동기화 설정",
+    "Subscribe": "동기화를 활성화하려면 구독하세요",
+    "Synced": "동기화됨 · {{time}}",
+    "Syncing": "동기화 중...",
+    "Timeout": "동기화 시간이 초과되었습니다",
+    "TokenExpired": "재인증",
+    "Unpushed": "{{count}}개 푸시되지 않음"
+  },
   "Tabs": {
-    "CloseTab": "닫기",
-    "RecordingHere": "여기서 녹음 중",
-    "OrphanTooltip": "이 파일은 디스크에서 삭제되었습니다",
-    "ScrollLeft": "탭 왼쪽으로 스크롤",
-    "ScrollRight": "탭 오른쪽으로 스크롤",
     "Close": "닫기",
     "CloseAll": "모두 닫기",
     "CloseOthers": "다른 탭 닫기",
     "CloseRight": "오른쪽 탭 닫기",
     "CloseSaved": "저장된 탭 닫기",
+    "CloseTab": "닫기",
     "CopyFullPath": "전체 경로 복사",
     "CopyRelativePath": "상대 경로 복사",
+    "OrphanTooltip": "이 파일은 디스크에서 삭제되었습니다",
+    "RecordingHere": "여기서 녹음 중",
+    "ScrollLeft": "탭 왼쪽으로 스크롤",
+    "ScrollRight": "탭 오른쪽으로 스크롤",
     "SplitAndMove": "분할 후 이동",
     "SplitRight": "오른쪽으로 분할"
   },
@@ -2338,39 +2884,39 @@
     "Agent": "에이전트",
     "CloseNavigationMenu": "탐색 메뉴 닫기",
     "Files": "파일",
+    "GroupCapture": "캡처",
+    "GroupKnowledge": "지식",
+    "GroupTools": "도구",
     "MainNavigation": "메인 네비게이션",
     "Meetings": "회의",
+    "Notes": "노트",
     "OpenNavigationMenu": "탐색 메뉴 열기",
     "Record": "기록",
     "Recording": "녹음",
     "Screenshot": "스크린샷",
-    "GroupCapture": "캡처",
-    "GroupKnowledge": "지식",
-    "Notes": "노트",
-    "Wiki": "위키",
-    "GroupTools": "도구"
+    "Wiki": "위키"
   },
   "Tray": {
+    "MarkEvent": "이벤트 표시",
     "MinimizedHint": "시스템 트레이(우측 하단)에서 여전히 실행 중입니다.",
+    "PauseRecording": "녹음 일시 중지",
     "RecordingInProgress": "녹음 진행 중…",
     "RecordingPaused": "녹음 일시 중지됨",
-    "StopRecording": "녹음 중지",
-    "PauseRecording": "녹음 일시 중지",
     "ResumeRecording": "녹음 재개",
-    "MarkEvent": "이벤트 표시",
+    "StopRecording": "녹음 중지",
     "WorkspacePrefix": "Workspace"
   },
   "Types": {
+    "Audio": "오디오",
     "Both": "둘 다 (복합)",
     "File": "파일",
     "Microphone": "마이크로폰",
-    "Audio": "오디오",
     "System": "시스템 오디오 출력",
     "Video": "동영상"
   },
   "UndoRename": {
-    "Toast": "이름이 변경됨, {{count}}개 참조 업데이트됨",
     "Action": "실행 취소",
+    "Toast": "이름이 변경됨, {{count}}개 참조 업데이트됨",
     "ToastNoRefs": "이름 변경됨"
   },
   "UpdateQuitModal": {
@@ -2391,21 +2937,18 @@
     "ManualDownload": "수동 다운로드",
     "ReadyToInstall": "SeaMeet {{version}} 설치 준비 완료",
     "RestartNow": "지금 바로 재시작",
+    "Restarting": "재시작 중...",
     "ViewRelease": "버전 정보 보기",
     "ViewReleaseTitle": "GitHub에서 릴리스 노트 보기",
     "WhatsNew": "새로운 기능:",
-    "WhatsNewInVersion": "{{version}}의 새로운 기능은 무엇인가요?",
-    "Restarting": "재시작 중..."
+    "WhatsNewInVersion": "{{version}}의 새로운 기능은 무엇인가요?"
   },
   "UserMenu": {
     "AboutSeaMeet": "SeaMeet 소개 및 정보",
+    "AccountSignedIn": "로그인됨",
     "DisplayName": "사용자",
     "EmailPlaceholder": "user@example.com",
     "Exit": "종료",
-    "Workspace": "작업공간",
-    "WorkspaceLoading": "작업공간 로드 중…",
-    "WorkspaceNone": "사용 가능한 작업공간이 없습니다.",
-    "WorkspaceError": "작업공간을 로드하지 못했습니다.",
     "HelpSupport": "도움 및 지원",
     "HelpSupportSection": {
       "Discussion": "토론",
@@ -2425,15 +2968,18 @@
       "WikiDesc": "문서와 가이드 확인을 위해 SeaMeet 위키를 방문하세요."
     },
     "KeyboardShortcuts": "키보드 단축키",
-    "AccountSignedIn": "로그인됨",
-    "SeaMeetSignedIn": "SeaMeet에 로그인됨",
-    "SeaMeetSignedOut": "SeaMeet: 로그인 안 됨",
+    "RefreshWorkspaces": "워크스페이스 새로고침",
     "SeaMeetSignIn": "SeaMeet 로그인",
     "SeaMeetSignOut": "SeaMeet 로그아웃",
+    "SeaMeetSignedIn": "SeaMeet에 로그인됨",
+    "SeaMeetSignedOut": "SeaMeet: 로그인 안 됨",
     "SignIn": "로그인",
     "SignOut": "로그아웃",
-    "Workspaces": "워크스페이스",
-    "RefreshWorkspaces": "워크스페이스 새로고침"
+    "Workspace": "작업공간",
+    "WorkspaceError": "작업공간을 로드하지 못했습니다.",
+    "WorkspaceLoading": "작업공간 로드 중…",
+    "WorkspaceNone": "사용 가능한 작업공간이 없습니다.",
+    "Workspaces": "워크스페이스"
   },
   "VideoSettings": {
     "AudioSettings": "음향 옵션",
@@ -2488,128 +3034,144 @@
     "SelectCustomRegion": "사용자 지정 영역 선택"
   },
   "WelcomeCard": {
-    "Title": "SeaMeet에 오신 것을 환영합니다",
-    "Subtitle": "놓치지 않는 세 가지 방법.",
-    "PointRecord": "한 번의 탭으로 무엇이든 녹음.",
+    "GotIt": "확인",
     "PointAutoDetect": "회의를 자동으로 감지해 녹음 버튼을 잊지 않게 합니다.",
     "PointFlashback": "플래시백은 직전 10초를 저장 — 첫 번째 중요한 말을 놓치지 않습니다.",
-    "GotIt": "확인"
+    "PointRecord": "한 번의 탭으로 무엇이든 녹음.",
+    "Subtitle": "놓치지 않는 세 가지 방법.",
+    "Title": "SeaMeet에 오신 것을 환영합니다"
   },
   "Wiki": {
-    "AIBadgeTooltip": "AI 생성 콘텐츠",
     "AIBadge": "AI 생성",
-    "Backlinks": "역링크",
-    "RelatedPages": "관련 페이지",
-    "BuiltFrom": "출처",
-    "SelectPage": "페이지 선택",
-    "SelectPageHint": "사이드바에서 엔티티, 사람, 주제를 선택하여 위키가 학습한 내용을 확인하세요.",
-    "LoadingPage": "AI가 이 페이지를 구성 중입니다…",
-    "LoadFailed": "이 위키 페이지를 불러올 수 없습니다.",
-    "AISection": "AI 섹션",
+    "AIBadgeTooltip": "AI 생성 콘텐츠",
     "AIEmpty": "AI 콘텐츠가 아직 없습니다. 이 엔티티가 언급된 노트에 녹음이나 스크린샷을 추가한 다음 위키 업데이트를 실행하세요.",
-    "SidebarTitle": "위키",
-    "EmptyTitle": "위키가 비어 있습니다",
-    "EmptySubtitle": "회의를 녹음하거나 노트를 작성하여 지식 기반 구축을 시작하세요.",
-    "UserSection": "내 노트",
-    "UserSectionTitle": "내 노트",
-    "UserSectionPlaceholder": "직접 메모 추가…",
-    "RefreshFromSources": "소스에서 새로고침",
-    "RefreshFromSourcesTooltip": "지금 {{count}}개 소스 노트에서 AI 섹션 새로고침",
-    "RefreshFromSourcesHint": "{{count}}개 소스 노트에서 AI 섹션을 새로고침하려면 클릭. Shift+클릭하면 소스 노트도 다시 읽습니다.",
-    "RefreshDisabledTooltip": "이 위키 페이지에는 아직 소스 노트가 없습니다. 먼저 노트에서 생성하세요.",
-    "RefreshAriaLabel": "소스 노트에서 위키 페이지 새로고침",
-    "RefreshError": "새로고침 실패",
+    "AISection": "AI 섹션",
+    "Backlinks": "역링크",
+    "BuiltFrom": "출처",
     "Bulk": {
+      "BannerMessage": "마지막 빌드 이후 새 노트 {{count}}개",
       "Build": "위키 빌드",
       "BuildFromAll": "모든 노트에서 위키 빌드",
       "BuildFromFolder": "폴더에서 위키 빌드…",
+      "BuildFromFolderPrompt": "폴더 경로 (워크스페이스 기준):",
       "BuildFromSelection": "선택 항목에서 위키 빌드…",
-      "ToastMessage": "{{count}}개의 새 노트가 감지되었습니다. 위키를 빌드할까요?",
-      "BannerMessage": "마지막 빌드 이후 새 노트 {{count}}개",
-      "BuildingExtracting": "{{total}}개 중 {{current}}개 노트를 읽음",
-      "BuildingReducing": "{{total}}개 중 {{built}}개 페이지 빌드 완료",
+      "BuildFromSelectionPrompt": "쉼표로 구분된 노트 파일명 (notes/ 기준):",
       "Building": "위키 빌드 중 — {{stage}}",
-      "PausedFor": "속도 제한: {{seconds}}초",
+      "BuildingExtracting": "{{total}}개 중 {{current}}개 노트를 읽음",
+      "BuildingExtractingWithCache": "{{total}}개 중 {{current}}개 노트를 읽음 · {{skipCount}}개는 캐시 재사용",
+      "BuildingReducing": "{{total}}개 중 {{built}}개 페이지 빌드 완료",
+      "BuildingReducingWithFailures": "{{total}}개 중 {{built}}개 페이지 빌드 완료 · {{failed}}개 실패",
       "Cancel": "취소",
       "Cancelling": "취소 중 — 현재 노트를 마무리 중…",
-      "Pause": "일시정지",
       "Continue": "계속",
-      "Paused": "일시정지됨 — {{current}}/{{total}}",
-      "Restart": "다시 시작",
-      "NowReading": "읽는 중: {{item}}",
-      "NowBuilding": "만드는 중: {{item}}",
-      "RecentList": "최근 처리됨",
       "DoneSummary": "위키 빌드 완료 — 노트 {{notes}}개, 페이지 {{pages}}개",
-      "Resume": "재개",
-      "ResumeAvailable": "이전 위키 빌드가 {{current}}/{{total}}에서 중단되었습니다. 재개할까요?",
+      "NowBuilding": "만드는 중: {{item}}",
+      "NowReading": "읽는 중: {{item}}",
+      "Pause": "일시정지",
+      "Paused": "일시정지됨 — {{current}}/{{total}}",
+      "PausedFor": "속도 제한: {{seconds}}초",
       "PolishIndex": "색인 다듬기",
       "PolishIndexHint": "위키 색인에 서술 인트로 추가",
-      "BuildFromFolderPrompt": "폴더 경로 (워크스페이스 기준):",
-      "BuildFromSelectionPrompt": "쉼표로 구분된 노트 파일명 (notes/ 기준):",
-      "BuildingExtractingWithCache": "{{total}}개 중 {{current}}개 노트를 읽음 · {{skipCount}}개는 캐시 재사용",
-      "BuildingReducingWithFailures": "{{total}}개 중 {{built}}개 페이지 빌드 완료 · {{failed}}개 실패"
+      "RecentList": "최근 처리됨",
+      "Restart": "다시 시작",
+      "Resume": "재개",
+      "ResumeAvailable": "이전 위키 빌드가 {{current}}/{{total}}에서 중단되었습니다. 재개할까요?",
+      "ToastMessage": "{{count}}개의 새 노트가 감지되었습니다. 위키를 빌드할까요?"
     },
+    "EmptySubtitle": "회의를 녹음하거나 노트를 작성하여 지식 기반 구축을 시작하세요.",
+    "EmptyTitle": "위키가 비어 있습니다",
+    "LoadFailed": "이 위키 페이지를 불러올 수 없습니다.",
+    "LoadingPage": "AI가 이 페이지를 구성 중입니다…",
+    "RefreshAriaLabel": "소스 노트에서 위키 페이지 새로고침",
+    "RefreshDisabledTooltip": "이 위키 페이지에는 아직 소스 노트가 없습니다. 먼저 노트에서 생성하세요.",
+    "RefreshError": "새로고침 실패",
+    "RefreshFromSources": "소스에서 새로고침",
+    "RefreshFromSourcesHint": "{{count}}개 소스 노트에서 AI 섹션을 새로고침하려면 클릭. Shift+클릭하면 소스 노트도 다시 읽습니다.",
+    "RefreshFromSourcesTooltip": "지금 {{count}}개 소스 노트에서 AI 섹션 새로고침",
+    "RelatedPages": "관련 페이지",
+    "SelectPage": "페이지 선택",
+    "SelectPageHint": "사이드바에서 엔티티, 사람, 주제를 선택하여 위키가 학습한 내용을 확인하세요.",
+    "SidebarTitle": "위키",
     "Toolbar": {
-      "Overflow": "추가 위키 작업",
-      "BuildAllTooltip": "모든 노트에서 위키 빌드 (증분 — 소스 노트가 변경된 페이지만 업데이트).",
+      "BuildAllAria": "모든 노트에서 위키 빌드",
       "BuildAllRunning": "모든 노트에서 위키 빌드 중 — 아래 배너를 확인하세요.",
-      "BuildAllAria": "모든 노트에서 위키 빌드"
-    }
+      "BuildAllTooltip": "모든 노트에서 위키 빌드 (증분 — 소스 노트가 변경된 페이지만 업데이트).",
+      "Overflow": "추가 위키 작업"
+    },
+    "UserSection": "내 노트",
+    "UserSectionPlaceholder": "직접 메모 추가…",
+    "UserSectionTitle": "내 노트"
   },
   "WikiFeature": {
-    "SettingsLabel": "노트에서 Wiki 자동 업데이트",
-    "SettingsDesc": "메모와 녹음을 통해 엔터티, 사람, 주제에 대한 지식 기반을 구축합니다. 기본적으로 꺼져 있습니다."
+    "SettingsDesc": "메모와 녹음을 통해 엔터티, 사람, 주제에 대한 지식 기반을 구축합니다. 기본적으로 꺼져 있습니다.",
+    "SettingsLabel": "노트에서 Wiki 자동 업데이트"
+  },
+  "WikiOnboarding": {
+    "Description": "위키는 노트와 회의에서 자동으로 생성됩니다. 시작하려면 노트를 작성하거나 회의를 녹음하세요.",
+    "StartRecordingCta": "녹음 시작",
+    "TakeNoteCta": "노트 작성",
+    "Title": "아직 위키가 없습니다"
+  },
+  "WikiPaywall": {
+    "ChaosCaption": "자유 형식, 구조 필요 없음",
+    "ChaosLabel": "당신의 노트",
+    "Cta": "위키를 활성화하려면 구독하세요",
+    "Explainer": "평소처럼 노트를 작성하세요. 작성하는 동안 AI가 언급한 사람, 주제, 회사, 회의를 추출하여 구조화된 위키로 엮어냅니다 — 자동으로 링크되고 항상 최신 상태로 유지됩니다.",
+    "Headline": "당신의 노트, 자동으로 정리",
+    "Subhead": "노트와 회의로부터 구축되는 지식 베이스 — AI가 만듭니다.",
+    "WikiCaption": "자동 정리 및 링크",
+    "WikiLabel": "당신의 위키"
   },
   "WikiQuickOpen": {
-    "Placeholder": "wiki 페이지 이름으로 검색…",
-    "NoResults": "일치하는 wiki 페이지가 없습니다"
+    "NoResults": "일치하는 wiki 페이지가 없습니다",
+    "Placeholder": "wiki 페이지 이름으로 검색…"
   },
   "WikiTree": {
-    "Title": "위키",
-    "NewPage": "새 wiki 페이지",
-    "NewFolder": "새 폴더",
-    "NewFolderPlaceholder": "폴더 이름…",
-    "SortBy": "정렬 기준",
-    "SortDefault": "기본값(파일 시스템 순서)",
-    "SortName": "이름(A → Z)",
-    "SortModified": "수정일(최신순)",
+    "AIBadge": "AI 생성",
+    "CloudPending": "다운로드되지 않음",
     "CollapseAll": "모두 접기",
-    "ExpandAll": "모두 펼치기",
-    "SearchInTree": "트리에서 필터",
-    "FilterPlaceholder": "페이지 필터…",
-    "DropToRoot": "wiki 루트로 이동",
-    "MoveToRoot": "wiki 루트로 이동",
-    "Open": "열기",
-    "Rename": "이름 바꾸기",
-    "Delete": "삭제",
-    "CopyWikilink": "wiki 링크 복사",
-    "CopyRelativePath": "상대 경로 복사",
-    "CopyFullPath": "전체 경로 복사",
     "ConfirmDeleteFile": "\"{{name}}\"을(를) 휴지통으로 이동하시겠습니까? (Finder / 탐색기에서 복구 가능.)",
     "ConfirmDeleteFolder": "폴더 \"{{name}}\"과(와) 그 안의 모든 항목을 휴지통으로 이동하시겠습니까?",
-    "Empty": "아직 wiki 페이지가 없습니다. 회의를 녹음하면 파이프라인이 자동으로 작성합니다.",
-    "SetDefaultEntity": "새 엔티티 페이지의 기본 위치로 설정",
-    "SetDefaultPerson": "새 인물 페이지의 기본 위치로 설정",
-    "SetDefaultTopic": "새 주제 페이지의 기본 위치로 설정",
-    "SetDefaultMeeting": "새 회의 페이지의 기본 위치로 설정",
-    "DefaultLabel": "{{wikiKind}} 의 기본 위치",
-    "AIBadge": "AI 생성",
-    "UserBadge": "사용자 편집",
-    "QuickOpen": "빠른 열기 (⌘P)",
     "ConflictBadge": "충돌 사본",
+    "CopyFullPath": "전체 경로 복사",
+    "CopyRelativePath": "상대 경로 복사",
+    "CopyWikilink": "wiki 링크 복사",
+    "DefaultLabel": "{{wikiKind}} 의 기본 위치",
+    "Delete": "삭제",
+    "DropToRoot": "wiki 루트로 이동",
+    "Empty": "아직 wiki 페이지가 없습니다. 회의를 녹음하면 파이프라인이 자동으로 작성합니다.",
     "EmptyAiCurated": "녹음이나 메모에서 엔터티, 사람, 주제 또는 회의가 언급되면 AI가 이 폴더를 채웁니다. 메모를 열고 위키 동기화를 클릭하여 페이지를 생성하세요.",
-    "CloudPending": "다운로드되지 않음",
+    "ExpandAll": "모두 펼치기",
+    "FilterPlaceholder": "페이지 필터…",
     "GitPending": "푸시되지 않은 변경 사항",
     "GitSynced": "GitHub에 푸시됨",
-    "GitSyncing": "GitHub에 동기화 중…"
+    "GitSyncing": "GitHub에 동기화 중…",
+    "MoveToRoot": "wiki 루트로 이동",
+    "NewFolder": "새 폴더",
+    "NewFolderPlaceholder": "폴더 이름…",
+    "NewPage": "새 wiki 페이지",
+    "Open": "열기",
+    "QuickOpen": "빠른 열기 (⌘P)",
+    "Rename": "이름 바꾸기",
+    "SearchInTree": "트리에서 필터",
+    "SetDefaultEntity": "새 엔티티 페이지의 기본 위치로 설정",
+    "SetDefaultMeeting": "새 회의 페이지의 기본 위치로 설정",
+    "SetDefaultPerson": "새 인물 페이지의 기본 위치로 설정",
+    "SetDefaultTopic": "새 주제 페이지의 기본 위치로 설정",
+    "SortBy": "정렬 기준",
+    "SortDefault": "기본값(파일 시스템 순서)",
+    "SortModified": "수정일(최신순)",
+    "SortName": "이름(A → Z)",
+    "Title": "위키",
+    "UserBadge": "사용자 편집"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] 은(는) 이 워크스페이스에 없습니다",
-    "Collision": "{{count}}개의 노트가 베이스 이름 {{name}}을(를) 공유합니다",
-    "DisambiguationTitle": "열 노트를 선택하세요",
-    "DisambiguationOpenAt": "{{folder}} 안에",
-    "SuggestEmpty": "일치하는 노트 또는 wiki 페이지가 없습니다",
     "BrokenTooltipSyncWiki": "이 페이지는 아직 생성되지 않았습니다 — 이 메모에서 위키 동기화를 클릭하여 생성하세요.",
+    "Collision": "{{count}}개의 노트가 베이스 이름 {{name}}을(를) 공유합니다",
+    "DisambiguationOpenAt": "{{folder}} 안에",
+    "DisambiguationTitle": "열 노트를 선택하세요",
+    "SuggestEmpty": "일치하는 노트 또는 wiki 페이지가 없습니다",
     "SyncContextMenu": "위키 동기화",
     "SyncToGenerate": "이 페이지를 생성하려면 위키를 동기화하세요"
   },
@@ -2623,324 +3185,179 @@
     "Unknown": "제목 없는 창"
   },
   "Workspace": {
-    "None": "워크스페이스 없음",
-    "EmptyList": "등록된 워크스페이스가 없습니다",
     "Add": "워크스페이스 추가…",
-    "Remove": "SeaMeet에서 제거",
-    "RemoveTooltip": "SeaMeet에서 제거(디스크의 파일은 유지)",
     "ConfirmRemove": "워크스페이스 \"{{name}}\"을(를) 제거하시겠습니까? 디스크의 파일은 삭제되지 않으며 SeaMeet 항목만 제거됩니다.",
     "Default": "기본값",
+    "EmptyList": "등록된 워크스페이스가 없습니다",
+    "None": "워크스페이스 없음",
+    "Remove": "SeaMeet에서 제거",
+    "RemoveTooltip": "SeaMeet에서 제거(디스크의 파일은 유지)",
     "SyncSettings": "동기화 설정"
   },
+  "WorkspacePicker": {
+    "empty": "작업공간 없음",
+    "loading": "로드 중…",
+    "title": "작업공간"
+  },
   "agent": {
-    "fabLabel": "AI 에이전트에게 묻기",
-    "panelLabel": "AI 에이전트",
+    "close": "닫기",
     "dockRight": "오른쪽에 도킹",
+    "fabLabel": "AI 에이전트에게 묻기",
     "maximize": "최대화",
-    "close": "닫기"
+    "panelLabel": "AI 에이전트"
   },
   "aiBase": {
+    "disabled": "AI 기능이 꺼져 있습니다. 요약 및 작업을 보려면 설정에서 활성화하세요.",
+    "error": {
+      "body": "API 키를 확인하거나 다시 시도하세요.",
+      "title": "이 녹음을 처리할 수 없습니다"
+    },
     "preparing": {
       "title": "녹음을 준비하는 중입니다…"
-    },
-    "error": {
-      "title": "이 녹음을 처리할 수 없습니다",
-      "body": "API 키를 확인하거나 다시 시도하세요."
-    },
-    "disabled": "AI 기능이 꺼져 있습니다. 요약 및 작업을 보려면 설정에서 활성화하세요."
+    }
   },
   "floatingPip": {
-    "minimize": "최소화",
-    "maximize": "최대화",
-    "restore": "복원",
     "close": "닫기",
-    "exit": "PIP(Picture-in-Picture) 종료"
+    "exit": "PIP(Picture-in-Picture) 종료",
+    "maximize": "최대화",
+    "minimize": "최소화",
+    "restore": "복원"
   },
   "layout": {
-    "mode": {
-      "classic": "클래식",
-      "floating": "플로팅"
-    },
-    "switchTooltip": {
-      "classic": "클래식 레이아웃으로 전환",
-      "floating": "플로팅 레이아웃으로 전환"
-    },
-    "showPipTooltip": "PIP(Picture-in-Picture) 표시",
     "announce": {
       "classic": "클래식 레이아웃으로 전환됨",
       "floating": "플로팅 레이아웃으로 전환됨"
     },
-    "introToast": "신규: 플로팅 레이아웃을 사용할 수 있습니다. 헤더의 레이아웃 아이콘을 클릭하여 사용해 보세요."
-  },
-  "WikiOnboarding": {
-    "Title": "아직 위키가 없습니다",
-    "Description": "위키는 노트와 회의에서 자동으로 생성됩니다. 시작하려면 노트를 작성하거나 회의를 녹음하세요.",
-    "TakeNoteCta": "노트 작성",
-    "StartRecordingCta": "녹음 시작"
-  },
-  "WikiPaywall": {
-    "Headline": "당신의 노트, 자동으로 정리",
-    "Subhead": "노트와 회의로부터 구축되는 지식 베이스 — AI가 만듭니다.",
-    "ChaosLabel": "당신의 노트",
-    "ChaosCaption": "자유 형식, 구조 필요 없음",
-    "WikiLabel": "당신의 위키",
-    "WikiCaption": "자동 정리 및 링크",
-    "Explainer": "평소처럼 노트를 작성하세요. 작성하는 동안 AI가 언급한 사람, 주제, 회사, 회의를 추출하여 구조화된 위키로 엮어냅니다 — 자동으로 링크되고 항상 최신 상태로 유지됩니다.",
-    "Cta": "위키를 활성화하려면 구독하세요"
-  },
-  "AIFeatures": {
-    "ApiKeyLabel": "Gemini API 키",
-    "ApiKeySection": "Gemini API 키",
-    "AutoSummary": "자동 요약 생성",
-    "AutoSummaryDesc": "녹음이 끝날 때마다 실행됩니다",
-    "AutomationSection": "자동화",
-    "ClaudeKey": {
-      "ApiKeyTitle": "API 키",
-      "ClearKey": "저장된 키 제거",
-      "CliInstallLink": "Claude Code 설치 →",
-      "CliInstalled": "설치됨 ({{version}})",
-      "CliNotFound": "CLI를 찾을 수 없음",
-      "CliNotInstalled": "Claude CLI를 찾을 수 없습니다 — 설치하고 로그인하여 인증하세요:",
-      "CliSection": "Claude Code CLI",
-      "DefaultModel": "기본 모델",
-      "GetKeyLink": "Anthropic Console에서 API 키 받기 →",
-      "HideKey": "키 숨기기",
-      "InstallMac": "macOS / Linux:",
-      "InstallWin": "Windows (PowerShell):",
-      "KeyInvalid": "잘못된 키",
-      "KeyPlaceholder": "sk-ant-...",
-      "KeyPlaceholderSaved": "••••••••• (저장됨)",
-      "KeyTesting": "테스트 중...",
-      "ModelHaiku": "Claude Haiku 4.5",
-      "ModelHaikuSub": "빠르고 저렴함",
-      "ModelOpus": "Claude Opus 4.6",
-      "ModelOpusSub": "가장 능력 있음",
-      "ModelSection": "기본 Claude 모델",
-      "ModelSonnet": "Claude Sonnet 4.6",
-      "ModelSonnetSub": "추천 · 균형 잡힘",
-      "QuotaLoading": "쿼터 로딩 중...",
-      "QuotaRemaining": "{{remaining}} / {{limit}} 토큰 남음",
-      "QuotaResetDate": "{{date}}에 초기화",
-      "Refresh": "Claude 재감지",
-      "Remove": "Claude 통합 제거",
-      "Saving": "저장 중...",
-      "Section": "Claude API 키 (에이전트)",
-      "ShowKey": "키 표시",
-      "SourceByok": "귀하의 API 키 (BYOK)",
-      "SourceCli": "Claude 코드 CLI",
-      "SourceKeyServer": "SeaMeet에서 관리",
-      "SourceLabel": "활성 소스:",
-      "SourceNone": "구성되지 않음",
-      "TestKey": "저장 및 확인"
+    "introToast": "신규: 플로팅 레이아웃을 사용할 수 있습니다. 헤더의 레이아웃 아이콘을 클릭하여 사용해 보세요.",
+    "mode": {
+      "classic": "클래식",
+      "floating": "플로팅"
     },
-    "Copilot": {
-      "Authenticated": "인증됨",
-      "DefaultModel": "기본 모델",
-      "InstallGuide": "다음을 따라 ",
-      "InstallGuideLink": "시작 가이드",
-      "InstallGuideSuffix": "를 설치한 후, 다음을 실행하세요:",
-      "NotDetected": "감지되지 않음 — 설치 및 인증 필요:",
-      "Refresh": "Copilot 다시 감지",
-      "Remove": "Copilot 통합 제거",
-      "Section": "GitHub Copilot"
-    },
-    "PreUploadAudio": "즉시 심층 요약을 위한 오디오 사전 업로드",
-    "PreUploadAudioDesc": "녹음 중에 오디오를 Gemini로 스트리밍하여 심층 모드 요약이 약 30초 대신 몇 초 내에 반환됩니다. Gemini API 키가 필요합니다. 녹음 중 업로드 대역폭을 사용합니다.",
-    "SummaryLanguageAutoDetect": "자동 감지 (스크립트 혼합 가능)",
-    "ClearKey": "저장된 키 제거",
-    "DefaultModel": "기본 모델",
-    "EnableToggle": "AI 기반 요약 활성화",
-    "EnableToggleDesc": "무료 Gemini API 키 필요",
-    "Gemini": {
-      "Configured": "API 키 구성됨",
-      "DefaultModel": "기본 모델",
-      "Description": "Gemini 모델을 사용하여 회의와 채팅하세요. Gemini 요약 및 실시간 전사 제공자와 동일한 키입니다.",
-      "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
-      "NotConfigured": "API 키가 구성되지 않음",
-      "Refresh": "Gemini 다시 감지",
-      "Remove": "Gemini 키 제거",
-      "Section": "Gemini"
-    },
-    "GetKeyLink": "Google AI Studio에서 무료 API 키 받기 →",
-    "GroupTitle": "AI 기능",
-    "HideKey": "키 숨기기",
-    "KeyInvalid": "잘못된 키",
-    "KeyManagedInBilling": "API 키는 구독 관리 → API 키에서 관리됩니다",
-    "KeyNotConfigured": "키가 구성되지 않음",
-    "KeyPlaceholder": "AIzaSy...",
-    "KeyPlaceholderSaved": "••••••••• (저장됨)",
-    "KeyTesting": "테스트 중...",
-    "KeyVerified": "키 확인됨",
-    "MenuItem": "AI 전사, 추출, 요약, 위키",
-    "ModelLabel": "제미니 모델",
-    "Models": {
-      "Gemini25Flash": "제미니 2. 플래시",
-      "Gemini25FlashLite": "제미니 2.5 플래시 라이트",
-      "Gemini25FlashLiteSub": "초저가",
-      "Gemini25FlashSub": "가장 저렴한 안정 옵션",
-      "Gemini25Pro": "제미니 2.5 프로",
-      "Gemini25ProSub": "최고의 안정적 추론",
-      "Gemini3Flash": "제미니 3 플래시",
-      "Gemini3FlashSub": "추천 · 빠르고 능력 있음",
-      "Gemini3Pro": "제미니 3 프로",
-      "Gemini3ProSub": "최대 기능"
-    },
-    "OpenAI": {
-      "Configured": "API 키 구성됨",
-      "DefaultModel": "기본 모델",
-      "Description": "GPT 모델을 사용하여 회의와 채팅하세요. OpenAI 요약 및 실시간 전사 제공자와 동일한 키입니다.",
-      "GetKeyLink": "OpenAI 플랫폼에서 API 키 받기 →",
-      "NotConfigured": "API 키가 구성되지 않음",
-      "Refresh": "OpenAI 다시 감지",
-      "Remove": "OpenAI 키 제거",
-      "Section": "OpenAI"
-    },
-    "Provider": {
-      "Detected": "감지됨",
-      "Hint": "채팅 패널에서 대화별로 제공자를 전환할 수도 있습니다.",
-      "NotAvailable": "사용 불가",
-      "Preferred": "선호됨",
-      "Section": "선호하는 에이전트 제공자"
-    },
-    "ImageExtractionSection": "이미지 추출",
-    "Job": {
-      "AskQuestions": "과거 회의에 대해 질문하기",
-      "BuildWikis": "노트 및 회의에서 위키 생성",
-      "Record": "회의 녹음",
-      "RecordSub": "로컬 · 항상 작동",
-      "SearchScreenshots": "스크린샷 내 검색",
-      "Summarize": "회의 요약",
-      "Transcribe": "회의 전사",
-      "WriteNote": "노트 작성"
-    },
-    "ModelSection": "AI 모델",
-    "PageTitle": "AI 전사, 추출, 요약, 위키",
-    "PostMeetingSummaryLanguage": "회의 후 요약 언어",
-    "PostMeetingSummaryLanguageDesc": "회의 후 전사 + 요약(배치)에 적용. 라이브 자막은 위의 말하는 언어 선택기를 사용합니다.",
-    "RemoveKey": "제거",
-    "SaveKey": "키 저장",
-    "Saving": "저장 중...",
-    "SelectedModel": "선택됨: {{model}}",
-    "ShowAllModels": "모든 {{count}}개 모델 보기",
-    "ShowFewerModels": "모델 수 줄이기",
-    "ShowKey": "키 보기",
-    "SummaryConfigSection": "요약 구성",
-    "SummaryLanguage": "요약 출력 언어",
-    "SummaryLanguageDesc": "전사 + 요약 + 챕터에 적용. 자동 감지는 말하는 언어와 일치합니다.",
-    "TestKey": "저장 및 확인",
-    "UseMainLlmForOcrHint": "스크린샷 OCR을 선택한 LLM 공급자로 라우팅합니다. 끔(기본): 항상 Gemini 사용. 공급자가 이미지를 수락할 수 없으면 자동으로 Gemini로 대체됩니다."
-  },
-  "AISummaryQuality": {
-    "AdvancedSection": "고급",
-    "DisabledStateAddKey": "Gemini API 키 추가 →",
-    "DisabledStateBanner": "멀티모달 Deep 분석에는 Gemini API 키가 필요합니다. 없으면 선택한 LLM 제공자가 생성하는 빠른(전사 기반) 요약만 사용할 수 있습니다.",
-    "Heading": "AI 요약 품질",
-    "MasterToggleHelp": "Gemini는 오디오와 비디오를 직접 읽어 구별된 화자 이름, 더 정확한 인용문, 그리고 더 풍부한 요약을 생성합니다. 빠른(전사 기반) 요약은 기본 설정으로 유지되며, 딥 요약은 자동으로 백그라운드에서 실행되어 완료되면 빠른 요약을 대체합니다.",
-    "MasterToggleLabel": "Gemini 키가 구성된 경우 심층 분석 사용",
-    "PreUploadHelp": "녹음하는 동안 Gemini로 스트리밍하여 중지 후 몇 초 만에 Deep이 완료됩니다.",
-    "PreUploadLabel": "녹음 중 백그라운드에서 오디오/비디오 사전 업로드",
-    "TokenEstimate10MinAudio": "10분 오디오",
-    "TokenEstimate10MinVideo": "10분 비디오",
-    "TokenEstimate1HrAudio": "1시간 오디오",
-    "TokenEstimate1HrVideo": "1시간 비디오",
-    "TokenEstimateHeading": "Deep 실행당 예상 Gemini 토큰 사용량",
-    "TokenEstimateInput": "입력",
-    "TokenEstimateNote": "토큰 비율: 오디오 ≈ 초당 32 토큰, 비디오 ≈ 초당 263 토큰 (1fps 프레임 + 오디오 트랙). 출력 예산은 단일 호출 실행당 32K, 청크 요약 실행당 16K로 제한됩니다. 무료 등급 일일 할당량 적용 (예: Flash-Lite 최신 버전에서 일 500 RPD).",
-    "TokenEstimateOutput": "출력"
-  },
-  "NotesShowcase": {
-    "Feature1Desc": "마크다운 입력. [[위키링크]]를 사용해 노트를 연결하세요. 독점 형식이 아닙니다.",
-    "Feature1Title": "마크다운 + 위키링크",
-    "Feature2Desc": "드래그로 정리. 무한 중첩 가능. 이름 변경 시 모든 노트의 위키링크가 업데이트됩니다.",
-    "Feature2Title": "폴더 트리, 원하는 대로",
-    "Feature3Desc": "노트 옆에서 오디오, 비디오 또는 스크린샷을 캡처하세요. 다른 앱에 묻히지 않고 내장됩니다.",
-    "Feature3Title": "인라인 녹음",
-    "Headline": "지식 베이스로 성장하는 노트",
-    "Subhead": "일반 마크다운. 오디오, 비디오 또는 스크린샷을 인라인으로 기록하세요. AI가 요약하고 모든 것을 연결해 줍니다.",
-    "CreateCta": "첫 번째 노트 만들기",
-    "Feature4Desc": "대형 언어 모델(LLM)이 각 노트를 요약하고, 개체를 추출하며, 사람, 주제, 회의에 대한 위키를 자동으로 구축합니다.",
-    "Feature4Title": "AI가 요약하고 연결합니다",
-    "Tagline": "내장 녹음. 연결된 노트. 휴대 가능한 마크다운. 폴더에 일반 파일로 저장 — 영원히 당신의 것입니다."
-  },
-  "Premium": {
-    "AIAgent": "AI 에이전트",
-    "AIAgentDesc": "구독 시 실시간 전사 및 AI 상호작용이 가능합니다.",
-    "AgentReadOnlyBanner": "대화를 계속하려면 구독하세요",
-    "GenericUpgradeCta": "구독하기",
-    "LockedChipTooltip": "활성화하려면 구독하세요",
-    "NoteSynthesis": "AI 종합",
-    "NoteSynthesisDesc": "BYOK Pro로 이 노트와 연결된 녹음의 구조화된 요약을 받으세요.",
-    "PostMeetingAI": "회의 후 AI",
-    "PostMeetingAIDesc": "녹음이 완료된 후 요약, 실행 항목 및 인사이트가 생성됩니다.",
-    "ScreenshotAI": "스크린샷 AI",
-    "ScreenshotAIDesc": "BYOK Pro로 이미지를 설명하고, 텍스트를 추출하며, 후속 질문을 하세요.",
-    "UnlockPremium": "프리미엄으로 잠금 해제",
-    "Upgrade": "업그레이드",
-    "WikiList": "위키",
-    "WikiListDesc": "BYOK Pro로 노트와 회의에서 지식 기반을 자동 구축하세요."
+    "showPipTooltip": "PIP(Picture-in-Picture) 표시",
+    "switchTooltip": {
+      "classic": "클래식 레이아웃으로 전환",
+      "floating": "플로팅 레이아웃으로 전환"
+    }
   },
   "settings": {
-    "stt": {
-      "apiKey": "API 키",
-      "getKey": "키 받기",
-      "keyDescription": "API 키는 암호화되어 이 장치에 로컬로 저장됩니다.",
-      "language": {
-        "addLanguage": "언어 추가",
-        "auto": "자동 감지",
-        "en": "영어",
-        "es": "스페인어",
-        "geminiSublabel": "Gemini가 오디오에서 자동 감지합니다 (힌트는 사용되지 않음).",
-        "ja": "일본어",
-        "label": "말하는 언어",
-        "openaiSublabel": "첫 번째 언어는 API 힌트로 전송되며, 추가 언어는 도메인 프롬프트에 덧붙여집니다 (지원되는 경우). gpt-4o-transcribe-diarize는 첫 번째 언어만 사용합니다.",
-        "remove": "언어 제거",
-        "sonioxSublabel": "라이브 전사를 위한 힌트입니다. 코드 전환 회의를 위해 여러 개를 추가하세요.",
-        "sublabel": "라이브 전사에 대한 힌트입니다. 대부분의 경우 자동 감지가 작동합니다.",
-        "zh-CN": "중국어 (간체)",
-        "zh-TW": "중국어 (번체)",
-        "ar": "아랍어",
-        "de": "독일어",
-        "fil": "필리핀어",
-        "fr": "프랑스어",
-        "hi": "힌디어",
-        "id": "인도네시아어",
-        "it": "이탈리아어",
-        "ko": "한국어",
-        "ms": "말레이어",
-        "nl": "네덜란드어",
-        "pl": "폴란드어",
-        "pt": "포르투갈어",
-        "ru": "러시아어",
-        "th": "태국어",
-        "tr": "터키어",
-        "uk": "우크라이나어",
-        "vi": "베트남어"
+    "llm": {
+      "advanced": {
+        "anthropic": {
+          "modelHint": "Anthropic에 전달된 모델 ID입니다. 파이프라인이 선택하도록 비워 두세요."
+        },
+        "authMethod": "인증 방법",
+        "baseURL": "API 기본 URL (프록시용)",
+        "bedrock": {
+          "modelHint": "자유 형식 Bedrock 모델 ID (AWS 콘솔에서 기본 모델 접근 권한이 먼저 부여되어야 합니다).",
+          "region": "AWS 리전",
+          "regionHint": "Bearer 토큰이 적용되는 AWS 리전 (기본값은 us-east-1)."
+        },
+        "binaryPath": "CLI 바이너리 경로",
+        "claudeCode": {
+          "binaryHint": "'claude' 바이너리 경로. 비워두면 PATH를 통해 해결합니다.",
+          "modelHint": "별칭 — 'opus', 'sonnet', 또는 'haiku'."
+        },
+        "codexCli": {
+          "binaryHint": "'codex' 바이너리 경로. 비워두면 PATH를 통해 해결합니다.",
+          "modelHint": "ChatGPT 계정 사용자(Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API 고객: gpt-5-codex 및 변형. 사용 가능한 목록은 터미널에서 `codex /model` 명령어로 확인하세요.",
+          "profileHint": "선택 사항 — 여러 `codex login` 아이덴티티 중 선택."
+        },
+        "deepseek": {
+          "modelHint": "deepseek-v4-flash (빠름, 기본) 또는 deepseek-v4-pro (더 강력한 추론). 아래 토글을 통해 사고 모드를 지원합니다.",
+          "reasoningEffort": "추론 노력",
+          "reasoningEffortAuto": "자동 (DeepSeek 기본값)",
+          "reasoningEffortHint": "더 높은 노력은 답변 전에 더 많은 사고 토큰을 사용합니다. 특별한 이유가 없다면 자동으로 두세요.",
+          "thinking": "사고 모드 활성화",
+          "thinkingHint": "사고 모드는 지연 시간 증가를 감수하고 구조화된 출력 품질을 향상시킵니다. 위키 및 합성 파이프라인에 대해 켜는 것을 권장합니다."
+        },
+        "defaultModel": "기본 모델",
+        "gemini": {
+          "defaultModelLabel": "기본 모델 (요약 / 스크린샷 / 위키 / 채팅)",
+          "modelHint": "선택한 Gemini 모델. 아래 Gemini 섹션에서 별도로 구성됩니다."
+        },
+        "geminiCli": {
+          "apiKey": "API 키",
+          "apiKeyHint": "인증 방법이 API 키일 때만 사용됩니다. agent-settings.json에 저장됩니다.",
+          "apiKeyLabel": "Gemini Studio API 키",
+          "binaryHint": "'gemini' 바이너리 경로 (설치 확인용).",
+          "oauth": "OAuth (gemini auth login)"
+        },
+        "maxOutputTokens": "최대 출력 토큰 수",
+        "openai": {
+          "baseURLHint": "Azure OpenAI, LiteLLM 또는 자체 호스팅 프록시용 오버라이드입니다.",
+          "modelHint": "OpenAI에 전달되는 모델 ID입니다. 비워두면 파이프라인이 선택합니다.",
+          "organizationHint": "선택 사항 — 특정 OpenAI 조직 대시보드에서 요청을 표시합니다."
+        },
+        "openrouter": {
+          "modelHint": "OpenRouter의 자유 형식 모델 ID (공급자/모델).",
+          "referer": "HTTP-Referer header",
+          "refererHint": "OpenRouter의 랭킹 프로그램에 귀하의 앱을 노출합니다 (기본값은 SeaMeet).",
+          "title": "X-Title header"
+        },
+        "organization": "조직 ID",
+        "profile": "Profile",
+        "reset": "기본값으로 재설정",
+        "title": "고급 설정"
       },
+      "apiKey": "API 키",
+      "cliStatus": "CLI 상태",
+      "installGuide": "설치 가이드",
+      "keyDescription": "API 키는 암호화되어 이 장치에 로컬로 저장됩니다.",
       "provider": {
-        "deepgram": {
-          "desc": "최고의 영어 정확도와 가장 낮은 지연 시간. 가입 시 $200 무료 크레딧 제공.",
-          "label": "Deepgram Nova-3"
+        "anthropic": {
+          "desc": "Claude Opus, Sonnet, Haiku. Anthropic 콘솔 API 키.",
+          "label": "Anthropic"
+        },
+        "bedrock": {
+          "desc": "AWS의 파운데이션 모델. Claude, Nova, Llama, Mistral, Cohere, DeepSeek.",
+          "label": "Amazon Bedrock"
+        },
+        "claude-code": {
+          "desc": "설치된 claude CLI 사용. API 키 불필요.",
+          "label": "Claude Code (로컬 CLI)"
+        },
+        "codex-cli": {
+          "desc": "설치된 codex CLI 사용. OpenAI Plus / Pro 기반.",
+          "label": "Codex CLI (OpenAI Plus)"
+        },
+        "deepseek": {
+          "desc": "deepseek-v4-flash 및 deepseek-v4-pro. 토큰당 저렴한 비용, 사고 모드 지원.",
+          "label": "DeepSeek"
         },
         "gemini": {
-          "desc": "Google 계정으로 무료 이용 가능. 가벼운 사용에 적합합니다.",
-          "label": "Gemini Live (Google)"
+          "desc": "네이티브 멀티모달. API 키로 무료 등급 이용 가능.",
+          "label": "Gemini (Google AI Studio)"
+        },
+        "gemini-cli": {
+          "desc": "설치된 gemini CLI를 사용합니다. OAuth 또는 API 키.",
+          "label": "Gemini CLI (Google 인증)"
         },
         "openai": {
-          "desc": "실시간 전사를 위한 OpenAI Realtime, 파일 전사를 위한 Whisper / gpt-4o-transcribe.",
+          "desc": "GPT-4o 및 GPT-5 계열. OpenAI 플랫폼에서 종량제 요금.",
           "label": "OpenAI"
         },
-        "soniox": {
-          "desc": "최고의 다국어 정확도. 유료 플랜만 가능 — 신용카드 필요.",
-          "label": "Soniox"
+        "openrouter": {
+          "desc": "하나의 키로 여러 공급업체의 수백 개 모델 이용 가능.",
+          "label": "OpenRouter"
         }
       },
+      "providerActive": "활성: {{label}} — 자동 저장됨",
+      "providerSaved": "저장됨 — 선택 사항은 다음 AI 실행 시 적용됩니다",
       "signup": "API 키 받기",
       "test": "연결 테스트",
       "testFail": "연결 실패",
       "testOk": "연결됨",
       "testing": "테스트 중…",
-      "title": "음성-텍스트 제공자 (실시간 자막, 파일 전사)",
+      "title": "LLM 공급자 (녹음 요약, 이미지 추출, 위키 생성)",
       "tutorial": "설정 튜토리얼",
+      "usesLocalCLI": "로컬 CLI 인증 사용 (API 키 불필요).",
+      "visionLockedNote": "참고: 오디오 요약 딥 모드는 이 설정과 관계없이 Gemini를 사용합니다. 스크린샷/OCR은 위 토글을 따릅니다.",
+      "visionToggle": "스크린샷 OCR에 메인 LLM 사용",
+      "visionToggleHint": "스크린샷/OCR 작업을 위에 선택한 제공자에게 전송합니다. 끔(기본값): 항상 Gemini를 사용합니다. 제공자가 이미지를 수락할 수 없으면 자동으로 Gemini로 대체됩니다.",
+      "visionUnsupportedBadge": "Gemini 대체를 통한 OCR",
+      "visionUnsupportedTooltip": "이 제공자의 어댑터는 아직 이미지 입력을 지원하지 않습니다. 스크린샷 OCR은 Gemini로 대체됩니다."
+    },
+    "stt": {
       "advanced": {
         "deepgram": {
           "diarize": "화자 분리",
@@ -2948,7 +3365,7 @@
           "keyterm": "어휘 강화",
           "keytermHint": "한 줄에 하나씩 입력하세요. 도메인 특화 단어에 가중치를 부여합니다.",
           "keytermPlaceholder": "Acme Corp\n3분기 매출\n스미스 박사",
-          "model": "모델",
+          "model": "Model",
           "modelDefault": "자동 (알려진 언어는 nova-3, 자동 감지는 nova-2-general)",
           "modelHint": "특별한 이유가 없다면 자동으로 두세요. nova-3는 영어 정확도가 가장 높지만 자동 감지 모드에서 모든 언어를 지원하지 않습니다 — nova-2-general은 중국어를 포함한 36개 이상의 언어를 지원합니다.",
           "punctuate": "구두점",
@@ -2956,14 +3373,13 @@
           "smartFormat": "스마트 포맷팅",
           "smartFormatHint": "구두점, 대문자, 숫자/날짜 형식을 자동으로 적용합니다."
         },
+        "gemini": {
+          "deepAnalysisLabel": "비디오를 통한 심층 분석",
+          "fileTranscriptionModelHint": "LLM 공급자 → 기본 모델에서 구성하세요. 동일한 Gemini 모델이 배치 파일 전사, 요약, 스크린샷 OCR, 위키 및 채팅에 사용됩니다.",
+          "fileTranscriptionModelLabel": "파일 전사 모델",
+          "liveTranscriptionModelLabel": "실시간 전사 모델"
+        },
         "openai": {
-          "model": "파일 전사 모델",
-          "modelDefault": "기본값 (gpt-4o-transcribe-diarize)",
-          "modelHint": "gpt-4o-transcribe-diarize는 화자 분리에 최적입니다. mini는 비용이 저렴하지만 화자 분리가 없습니다. OpenAI는 단일 업로드를 25MB 오디오로 제한합니다. SeaMeet는 비디오를 16kbps 모노 opus로 추출하므로 한 번 업로드로 약 3~4시간 분량의 회의를 처리할 수 있습니다.",
-          "realtimeModel": "실시간 전사 모델",
-          "realtimeModelDefault": "기본값 (gpt-4o-transcribe)",
-          "realtimeModelHint": "gpt-4o-transcribe는 회의 기본값으로, 서버 VAD가 각 발화를 타임스탬프와 함께 확정합니다. gpt-4o-mini-transcribe는 비용이 낮은 동일 모델입니다. gpt-realtime-whisper는 지연 시간이 가장 짧지만 기록 중에 발화별 확정 없이 한 줄로 전사를 누적합니다 — 채팅 UI에 적합하며 회의에는 적합하지 않습니다.",
-          "refreshModels": "모델 목록 새로고침",
           "contextPrompt": "도메인 컨텍스트",
           "contextPromptDiarize": "gpt-4o-transcribe-diarize에서 지원하지 않습니다.",
           "contextPromptHint": "OpenAI가 도메인 어휘에 편향되도록 하는 자유 형식 설명입니다.",
@@ -2972,11 +3388,18 @@
           "includeLogprobs": "토큰별 신뢰도 포함",
           "includeLogprobsDiarize": "gpt-4o-transcribe-diarize에서는 지원되지 않습니다.",
           "includeLogprobsHint": "전사된 각 토큰에 대한 로그 확률을 요청합니다. 신뢰도가 낮은 단어를 색상으로 표시하는 데 사용됩니다. 페이로드 크기가 증가하므로 필요하지 않으면 끄세요.",
+          "model": "파일 전사 모델",
+          "modelDefault": "Default (gpt-4o-transcribe-diarize)",
+          "modelHint": "gpt-4o-transcribe-diarize는 화자 분리에 최적입니다. mini는 비용이 저렴하지만 화자 분리가 없습니다. OpenAI는 단일 업로드를 25MB 오디오로 제한합니다. SeaMeet는 비디오를 16kbps 모노 opus로 추출하므로 한 번 업로드로 약 3~4시간 분량의 회의를 처리할 수 있습니다.",
           "noiseReduction": "노이즈 감소",
           "noiseReductionFar": "원거리 (회의실 마이크)",
           "noiseReductionHint": "전사 전에 입력 오디오에 적용되는 사전 필터입니다. 마이크 위치에 맞는 옵션을 선택하세요.",
           "noiseReductionNear": "근거리 (노트북 / 헤드셋 마이크)",
           "noiseReductionOff": "끔",
+          "realtimeModel": "실시간 전사 모델",
+          "realtimeModelDefault": "Default (gpt-4o-transcribe)",
+          "realtimeModelHint": "gpt-4o-transcribe는 회의 기본값으로, 서버 VAD가 각 발화를 타임스탬프와 함께 확정합니다. gpt-4o-mini-transcribe는 비용이 낮은 동일 모델입니다. gpt-realtime-whisper는 지연 시간이 가장 짧지만 기록 중에 발화별 확정 없이 한 줄로 전사를 누적합니다 — 채팅 UI에 적합하며 회의에는 적합하지 않습니다.",
+          "refreshModels": "모델 목록 새로고침",
           "refreshing": "새로 고침 중…",
           "turnDetection": "화자 전환 감지",
           "turnDetectionHint": "서버 VAD는 화자가 말하는 동안 발화별 전사본을 제공합니다. 녹음이 중지될 때만 버퍼가 커밋되는 푸시 투 토크 방식에서는 이 기능을 끄세요.",
@@ -3000,471 +3423,69 @@
           "strictLanguage": "엄격한 언어 일치",
           "strictLanguageHint": "다른 언어의 오디오를 거부합니다 (더 빠르지만 덜 유연함)."
         },
-        "title": "고급 설정",
-        "gemini": {
-          "deepAnalysisLabel": "비디오를 통한 심층 분석",
-          "fileTranscriptionModelHint": "LLM 공급자 → 기본 모델에서 구성하세요. 동일한 Gemini 모델이 배치 파일 전사, 요약, 스크린샷 OCR, 위키 및 채팅에 사용됩니다.",
-          "fileTranscriptionModelLabel": "파일 전사 모델",
-          "liveTranscriptionModelLabel": "실시간 전사 모델"
-        }
-      },
-      "speakerLabel": "화자 {{n}}"
-    },
-    "llm": {
-      "advanced": {
-        "anthropic": {
-          "modelHint": "Anthropic에 전달된 모델 ID입니다. 파이프라인이 선택하도록 비워 두세요."
-        },
-        "baseURL": "API 기본 URL (프록시용)",
-        "deepseek": {
-          "modelHint": "deepseek-v4-flash (빠름, 기본) 또는 deepseek-v4-pro (더 강력한 추론). 아래 토글을 통해 사고 모드를 지원합니다.",
-          "thinking": "사고 모드 활성화",
-          "thinkingHint": "사고 모드는 지연 시간 증가를 감수하고 구조화된 출력 품질을 향상시킵니다. 위키 및 합성 파이프라인에 대해 켜는 것을 권장합니다.",
-          "reasoningEffort": "추론 노력",
-          "reasoningEffortAuto": "자동 (DeepSeek 기본값)",
-          "reasoningEffortHint": "더 높은 노력은 답변 전에 더 많은 사고 토큰을 사용합니다. 특별한 이유가 없다면 자동으로 두세요."
-        },
-        "defaultModel": "기본 모델",
-        "maxOutputTokens": "최대 출력 토큰 수",
-        "openai": {
-          "baseURLHint": "Azure OpenAI, LiteLLM 또는 자체 호스팅 프록시용 오버라이드입니다.",
-          "modelHint": "OpenAI에 전달되는 모델 ID입니다. 비워두면 파이프라인이 선택합니다.",
-          "organizationHint": "선택 사항 — 특정 OpenAI 조직 대시보드에서 요청을 표시합니다."
-        },
-        "organization": "조직 ID",
-        "reset": "기본값으로 재설정",
-        "title": "고급 설정",
-        "authMethod": "인증 방법",
-        "bedrock": {
-          "modelHint": "자유 형식 Bedrock 모델 ID (AWS 콘솔에서 기본 모델 접근 권한이 먼저 부여되어야 합니다).",
-          "region": "AWS 리전",
-          "regionHint": "Bearer 토큰이 적용되는 AWS 리전 (기본값은 us-east-1)."
-        },
-        "binaryPath": "CLI 바이너리 경로",
-        "claudeCode": {
-          "binaryHint": "'claude' 바이너리 경로. 비워두면 PATH를 통해 해결합니다.",
-          "modelHint": "별칭 — 'opus', 'sonnet', 또는 'haiku'."
-        },
-        "codexCli": {
-          "binaryHint": "'codex' 바이너리 경로. 비워두면 PATH를 통해 해결합니다.",
-          "modelHint": "ChatGPT 계정 사용자(Plus/Pro): gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2. API 고객: gpt-5-codex 및 변형. 사용 가능한 목록은 터미널에서 `codex /model` 명령어로 확인하세요.",
-          "profileHint": "선택 사항 — 여러 `codex login` 아이덴티티 중 선택."
-        },
-        "gemini": {
-          "defaultModelLabel": "기본 모델 (요약 / 스크린샷 / 위키 / 채팅)",
-          "modelHint": "선택한 Gemini 모델. 아래 Gemini 섹션에서 별도로 구성됩니다."
-        },
-        "geminiCli": {
-          "apiKey": "API 키",
-          "apiKeyHint": "인증 방법이 API 키일 때만 사용됩니다. agent-settings.json에 저장됩니다.",
-          "apiKeyLabel": "Gemini Studio API 키",
-          "binaryHint": "'gemini' 바이너리 경로 (설치 확인용).",
-          "oauth": "OAuth (gemini 인증 로그인)"
-        },
-        "openrouter": {
-          "modelHint": "OpenRouter의 자유 형식 모델 ID (공급자/모델).",
-          "referer": "HTTP-Referer 헤더",
-          "refererHint": "OpenRouter의 랭킹 프로그램에 귀하의 앱을 노출합니다 (기본값은 SeaMeet).",
-          "title": "X-Title 헤더"
-        },
-        "profile": "프로필"
+        "title": "고급 설정"
       },
       "apiKey": "API 키",
-      "cliStatus": "CLI 상태",
-      "installGuide": "설치 가이드",
+      "getKey": "키 받기",
       "keyDescription": "API 키는 암호화되어 이 장치에 로컬로 저장됩니다.",
+      "language": {
+        "addLanguage": "언어 추가",
+        "ar": "아랍어",
+        "auto": "자동 감지",
+        "de": "독일어",
+        "en": "영어",
+        "es": "스페인어",
+        "fil": "필리핀어",
+        "fr": "프랑스어",
+        "geminiSublabel": "Gemini가 오디오에서 자동 감지합니다 (힌트는 사용되지 않음).",
+        "hi": "힌디어",
+        "id": "인도네시아어",
+        "it": "이탈리아어",
+        "ja": "일본어",
+        "ko": "한국어",
+        "label": "말하는 언어",
+        "ms": "말레이어",
+        "nl": "네덜란드어",
+        "openaiSublabel": "첫 번째 언어는 API 힌트로 전송되며, 추가 언어는 도메인 프롬프트에 덧붙여집니다 (지원되는 경우). gpt-4o-transcribe-diarize는 첫 번째 언어만 사용합니다.",
+        "pl": "폴란드어",
+        "pt": "포르투갈어",
+        "remove": "언어 제거",
+        "ru": "러시아어",
+        "sonioxSublabel": "라이브 전사를 위한 힌트입니다. 코드 전환 회의를 위해 여러 개를 추가하세요.",
+        "sublabel": "라이브 전사에 대한 힌트입니다. 대부분의 경우 자동 감지가 작동합니다.",
+        "th": "태국어",
+        "tr": "터키어",
+        "uk": "우크라이나어",
+        "vi": "베트남어",
+        "zh-CN": "중국어 (간체)",
+        "zh-TW": "중국어 (번체)"
+      },
+      "provider": {
+        "deepgram": {
+          "desc": "최고의 영어 정확도와 가장 낮은 지연 시간. 가입 시 $200 무료 크레딧 제공.",
+          "label": "Deepgram Nova-3"
+        },
+        "gemini": {
+          "desc": "Google 계정으로 무료 이용 가능. 가벼운 사용에 적합합니다.",
+          "label": "Gemini Live (Google)"
+        },
+        "openai": {
+          "desc": "실시간 전사를 위한 OpenAI Realtime, 파일 전사를 위한 Whisper / gpt-4o-transcribe.",
+          "label": "OpenAI"
+        },
+        "soniox": {
+          "desc": "최고의 다국어 정확도. 유료 플랜만 가능 — 신용카드 필요.",
+          "label": "Soniox"
+        }
+      },
       "signup": "API 키 받기",
+      "speakerLabel": "화자 {{n}}",
       "test": "연결 테스트",
       "testFail": "연결 실패",
       "testOk": "연결됨",
       "testing": "테스트 중…",
-      "title": "LLM 공급자 (녹음 요약, 이미지 추출, 위키 생성)",
-      "tutorial": "설정 튜토리얼",
-      "usesLocalCLI": "로컬 CLI 인증 사용 (API 키 불필요).",
-      "provider": {
-        "anthropic": {
-          "desc": "Claude Opus, Sonnet, Haiku. Anthropic 콘솔 API 키.",
-          "label": "Anthropic"
-        },
-        "bedrock": {
-          "desc": "AWS의 파운데이션 모델. Claude, Nova, Llama, Mistral, Cohere, DeepSeek.",
-          "label": "아마존 베드록"
-        },
-        "claude-code": {
-          "desc": "설치된 claude CLI 사용. API 키 불필요.",
-          "label": "Claude Code (로컬 CLI)"
-        },
-        "codex-cli": {
-          "desc": "설치된 codex CLI 사용. OpenAI Plus / Pro 기반.",
-          "label": "Codex CLI (OpenAI Plus)"
-        },
-        "deepseek": {
-          "desc": "deepseek-v4-flash 및 deepseek-v4-pro. 토큰당 저렴한 비용, 사고 모드 지원.",
-          "label": "DeepSeek"
-        },
-        "gemini-cli": {
-          "desc": "설치된 gemini CLI를 사용합니다. OAuth 또는 API 키.",
-          "label": "Gemini CLI (Google 인증)"
-        },
-        "gemini": {
-          "desc": "네이티브 멀티모달. API 키로 무료 등급 이용 가능.",
-          "label": "Gemini (Google AI Studio)"
-        },
-        "openai": {
-          "desc": "GPT-4o 및 GPT-5 계열. OpenAI 플랫폼에서 종량제 요금.",
-          "label": "OpenAI"
-        },
-        "openrouter": {
-          "desc": "하나의 키로 여러 공급업체의 수백 개 모델 이용 가능.",
-          "label": "OpenRouter"
-        }
-      },
-      "providerActive": "활성: {{label}} — 자동 저장됨",
-      "providerSaved": "저장됨 — 선택 사항은 다음 AI 실행 시 적용됩니다",
-      "visionLockedNote": "참고: 오디오 요약 딥 모드는 이 설정과 관계없이 Gemini를 사용합니다. 스크린샷/OCR은 위 토글을 따릅니다.",
-      "visionToggle": "스크린샷 OCR에 메인 LLM 사용",
-      "visionToggleHint": "스크린샷/OCR 작업을 위에 선택한 제공자에게 전송합니다. 끔(기본값): 항상 Gemini를 사용합니다. 제공자가 이미지를 수락할 수 없으면 자동으로 Gemini로 대체됩니다.",
-      "visionUnsupportedBadge": "Gemini 대체를 통한 OCR",
-      "visionUnsupportedTooltip": "이 제공자의 어댑터는 아직 이미지 입력을 지원하지 않습니다. 스크린샷 OCR은 Gemini로 대체됩니다."
+      "title": "음성-텍스트 제공자 (실시간 자막, 파일 전사)",
+      "tutorial": "설정 튜토리얼"
     }
-  },
-  "Sync": {
-    "Conflict": {
-      "Desc": "\"{{fileName}}\" 파일이 다른 기기에서 변경되었습니다.",
-      "Resolve": "해결",
-      "Title": "동기화 충돌",
-      "Agent": {
-        "Empty": "에이전트가 빈 결과를 반환했습니다",
-        "NoVersions": "파일 버전을 읽을 수 없습니다",
-        "Resolving": "에이전트가 병합 중입니다...",
-        "WriteFailed": "병합된 내용을 쓰지 못했습니다",
-        "TooLarge": "파일이 너무 커서 AI 병합이 불가능합니다. 수동으로 해결해 주세요."
-      },
-      "AgentResolve": "에이전트 병합",
-      "Manual": {
-        "Desc": "파일이 편집기에서 열렸습니다. 충돌 표시를 편집하고 저장한 후 완료를 클릭하세요.",
-        "Done": "완료",
-        "Open": "편집기에서 열기",
-        "MarkersRemain": "충돌 표시(<<<<<<<, =======, >>>>>>>)가 여전히 감지됩니다. 확인하기 전에 모든 충돌을 해결해 주세요.",
-        "NoChange": "변경 사항이 감지되지 않았습니다. 확인하기 전에 파일을 편집해 주세요.",
-        "ReadError": "파일을 읽을 수 없습니다. 저장되었는지 확인해 주세요."
-      },
-      "ManualResolve": "수동으로 편집",
-      "Resolving": "해결 중...",
-      "KeepOther": "원격 버전 유지",
-      "KeepThis": "로컬 버전 유지",
-      "Finishing": "동기화 완료 중..."
-    },
-    "EmptyState": "GitHub 동기화를 설정하여 노트와 위키를 기기 간 자동으로 동기화하세요.",
-    "Git": {
-      "Branch": "브랜치",
-      "Connect": "연결",
-      "ConnectGitHub": "GitHub 연결",
-      "ConnectGitHubDesc": "클라우드 백업 및 기기 간 동기화 활성화",
-      "Connected": "연결됨",
-      "ConnectedTitle": "동기화 및 백업",
-      "LastSync": "마지막 동기화",
-      "AutoCommit": "자동 동기화",
-      "CommitNow": "지금 동기화",
-      "ConnectedDesc": "노트와 위키가 GitHub에 자동으로 동기화됩니다. 오디오 녹음, 비디오 녹화 및 스크린샷은 동기화되지 않습니다.",
-      "Interval": "동기화 간격",
-      "LastCommit": "마지막 동기화",
-      "RetrySync": "동기화 재시도"
-    },
-    "GitHub": {
-      "Authorize": "GitHub 권한 부여",
-      "AutoSync": "변경 시 자동 동기화",
-      "Benefit": {
-        "AnyDevice": "모든 기기에서 접근 가능",
-        "AutoSync": "변경 시 자동 동기화",
-        "History": "전체 버전 기록",
-        "Private": "비공개 및 안전"
-      },
-      "Pillar": {
-        "Free": {
-          "Title": "무료이며 비공개",
-          "Desc": "GitHub 무료 요금제는 무제한 비공개 저장소를 포함합니다. 메모는 비용 없이 비공개로 유지됩니다."
-        },
-        "Capacity": {
-          "Title": "사실상 무제한",
-          "Desc": "SeaMeet는 .md 텍스트 파일만 백업합니다. 저장소당 1 GB면 약 200,000–500,000개의 메모에 해당하며, 평생 분량의 회의를 담을 수 있습니다."
-        },
-        "Workspace": {
-          "Title": "워크스페이스당 저장소 하나",
-          "Desc": "각 SeaMeet 워크스페이스는 독립된 비공개 저장소입니다. 미디어는 기기에 두고 메모는 어디서나 동기화하세요."
-        }
-      },
-      "Connected": "연결됨",
-      "Desc": "노트와 위키를 개인 GitHub 저장소에 자동으로 백업하세요.",
-      "Disconnect": "연결 해제",
-      "Setup": {
-        "Authorize": "권한 부여됨",
-        "CreateRepo": "저장소 생성 및 업로드 중...",
-        "FailedAuth": "인증 시작 실패",
-        "FailedCreate": "저장소 생성 실패",
-        "Retry": "재시도",
-        "Installing": "GitHub 앱 설치 중...",
-        "OpenInstallPage": "설치 페이지 열기"
-      },
-      "SyncOnStartup": "시작 시 동기화",
-      "Title": "GitHub와 동기화",
-      "UserCode": "코드 입력:",
-      "ViewOnGitHub": "GitHub에서 보기",
-      "Waiting": {
-        "Desc": "브라우저 창이 열렸습니다. github.com/login/device에서 아래 코드를 입력하세요."
-      },
-      "Install": {
-        "Button": "GitHub에 설치",
-        "Desc": "클라우드 백업을 활성화하려면 GitHub 계정에 앱을 설치하세요.",
-        "Title": "SeaMeet 앱 설치"
-      },
-      "WebFlow": {
-        "AlreadyInstalled": "앱을 이미 설치하셨나요? 다시 권한을 부여하려면 여기를 클릭하세요.",
-        "Waiting": {
-          "Desc": "브라우저 창이 열렸습니다. SeaMeet이 귀하의 GitHub 계정에 접근할 수 있도록 권한을 부여해 주세요.",
-          "Label": "권한 부여를 기다리는 중..."
-        }
-      },
-      "Reauthorize": "GitHub 재인증",
-      "TokenExpired": {
-        "Desc": "GitHub 인증이 만료되었습니다. 동기화를 재개하려면 다시 인증해 주세요."
-      },
-      "Timeout": {
-        "Desc": "동기화 시간이 초과되었습니다. 네트워크 문제 또는 만료된 GitHub 권한 때문일 수 있습니다."
-      }
-    },
-    "GroupTitle": "동기화",
-    "MenuItem": "동기화 및 백업",
-    "Setup": {
-      "Button": "GitHub 동기화 설정"
-    },
-    "Status": {
-      "Pushing": "GitHub에 푸시 중...",
-      "Committing": "변경 사항 동기화 중...",
-      "Syncing": "동기화 중..."
-    },
-    "TimeAgo": {
-      "DaysAgo": "{{count}}일 전",
-      "HoursAgo": "{{count}}시간 전",
-      "JustNow": "방금 전",
-      "MinutesAgo": "{{count}}분 전"
-    },
-    "PageTitle": "동기화 및 백업",
-    "GitAutoCommit": {
-      "Desc": "노트와 위키의 변경 사항이 자동으로 동기화됩니다.",
-      "Title": "자동 동기화"
-    },
-    "Scope": {
-      "Notice": "동기화는 노트와 위키에만 적용됩니다. 오디오 녹음, 비디오 녹화 및 스크린샷은 동기화되지 않습니다."
-    }
-  },
-  "SyncStatusBar": {
-    "CloudDrive": "{{provider}}를 통해 동기화됨",
-    "Conflict": "동기화 충돌",
-    "Error": "동기화 오류",
-    "Offline": "오프라인",
-    "Pending": "대기 중...",
-    "Pulling": "풀 중...",
-    "Pushing": "푸시 중...",
-    "SetUpGithub": "GitHub 동기화 설정",
-    "Subscribe": "동기화를 활성화하려면 구독하세요",
-    "Synced": "동기화됨 · {{time}}",
-    "TokenExpired": "재인증",
-    "Syncing": "동기화 중...",
-    "CreatingRepo": "저장소 생성 중...",
-    "InstallingApp": "GitHub 앱 설치 중...",
-    "Unpushed": "{{count}}개 푸시되지 않음",
-    "Timeout": "동기화 시간이 초과되었습니다"
-  },
-  "Library": {
-    "today": "오늘",
-    "yesterday": "어제",
-    "days_ago_one": "{{count}}일 전",
-    "days_ago_other": "{{count}}일 전",
-    "upcoming": "예정",
-    "search": "검색",
-    "headline_one": "{{count}}개의 회의,",
-    "headline_other": "{{count}}개의 회의,",
-    "headline_tail": "이번 주",
-    "record": "기록",
-    "no_match": "\"{{query}}\"와 일치하는 회의가 없습니다.",
-    "empty": {
-      "headline_head": "첫 회의를",
-      "headline_tail": "캡처하세요",
-      "subhead": "언제든 기록하거나 SeaMeet이 Zoom, Meet, Teams 시작을 자동 감지하게 하세요."
-    },
-    "setup_autodetect": "자동 감지 설정",
-    "quick_start": "빠른 시작"
-  },
-  "Pagination": {
-    "Previous": "Previous page",
-    "Next": "Next page"
-  },
-  "AutoDetectToast": {
-    "recording_app": "{{app}} 회의 녹음 중",
-    "auto_started": "자동 시작됨 · 취소하려면 취소",
-    "using_mic": "{{app}}이(가) 마이크를 사용 중입니다",
-    "prompt": "SeaMeet이 이 회의를 기록할까요?",
-    "undo": "취소",
-    "no": "아니오",
-    "record": "기록"
-  },
-  "RecordingView": {
-    "paused": "Paused",
-    "recording": "Recording",
-    "resume": "Resume",
-    "pause": "Pause",
-    "saving": "Saving…",
-    "stop_save": "Stop & save",
-    "live_transcript": "Live transcript"
-  },
-  "WorkspacePicker": {
-    "loading": "Loading…",
-    "empty": "No workspaces",
-    "title": "Workspaces"
-  },
-  "LiteLogin": {
-    "errorGeneric": "문제가 발생했습니다. 다시 시도하세요.",
-    "errorOpenBrowser": "로그인 페이지를 여는 데 실패했습니다.",
-    "title": "SeaMeet에 오신 것을 환영합니다",
-    "subtitle": "회의, 기록, AI 요약에 액세스하려면 로그인하세요.",
-    "openingBrowser": "브라우저 열기 중…",
-    "cta": "seameet.ai로 계속",
-    "browserHint": "계속하려면 브라우저에서 로그인하세요.",
-    "switchToFull": "SeaMeet(전체)로 전환"
-  },
-  "LiteRecording": {
-    "errorTitle": "녹화를 시작할 수 없습니다",
-    "errorClose": "닫기",
-    "speakerYou": "나",
-    "speakerOthers": "다른 사람들",
-    "systemAudioUnavailable": "회의 오디오를 캡처할 수 없습니다 — 마이크만 녹음됩니다.",
-    "dismiss": "닫기"
-  },
-  "SettingsModal": {
-    "microphone_default": "System default",
-    "title": "Settings",
-    "close": "Close",
-    "sign_out": "Sign out",
-    "section": {
-      "recording": "Recording",
-      "transcription": "Transcription",
-      "appearance": "Appearance",
-      "app_mode": "App mode"
-    },
-    "auto_detect": "Auto-detect meetings",
-    "auto_detect_desc": "Automatically start recording when Zoom, Meet, or Teams begins.",
-    "microphone": "Microphone",
-    "microphone_desc": "Default audio input.",
-    "record_system_audio": "Record system audio",
-    "record_system_audio_desc": "Capture the other side of the call.",
-    "transcription_language": "Language",
-    "transcription_language_desc": "Primary spoken language.",
-    "theme": "Theme",
-    "theme_desc": "Pick a light or dark interface.",
-    "app_mode_full": "SeaMeet (full)",
-    "app_mode_full_desc": "Unlock recordings, AI features, Notes, Wiki, and more.",
-    "app_mode_switch_back": "Switch back",
-    "theme_light": "Light",
-    "theme_dark": "Dark",
-    "floater_waveform": "Show waveform floater",
-    "floater_waveform_desc": "Always-on-top pill that shows the live waveform while recording. Restart to apply.",
-    "app_mode_switch_confirm_recording": "Switching modes will stop and save your current recording. Continue?"
-  },
-  "MediaLibrary": {
-    "All": "전체",
-    "Audio": "오디오",
-    "BatchDelete": "삭제",
-    "ClearFilters": "필터 초기화",
-    "ConfirmBatchDelete": "{{count}}개 파일을 삭제하시겠습니까?",
-    "FilteredStats": "{{filtered}} / {{total}} 파일",
-    "GridView": "그리드 보기",
-    "Import": "가져오기",
-    "ListView": "목록 보기",
-    "NoFiles": "미디어 파일이 없습니다",
-    "NoFilesHint": "오디오/비디오를 녹음하거나 파일을 가져와 시작하세요",
-    "NoResults": "필터에 맞는 파일이 없습니다",
-    "NoResultsHint": "검색어나 필터를 조정해 보세요",
-    "Search": "미디어 파일 검색...",
-    "SelectAll": "전체 선택",
-    "Selected": "{{count}}개 선택됨",
-    "SortByDate": "날짜",
-    "SortByDuration": "길이",
-    "SortByName": "이름",
-    "SortBySize": "크기",
-    "Title": "미디어 라이브러리",
-    "Video": "비디오",
-    "BatchExport": "내보내기",
-    "ClearSelection": "선택 해제",
-    "Exporting": "내보내는 중...",
-    "ExportAllFailed": "{{count}}개의 파일 내보내기에 실패했습니다",
-    "ExportFailed": "내보내기에 실패했습니다",
-    "ExportPartial": "{{total}}개 중 {{exported}}개 파일이 내보내졌습니다 ({{failed}}개 실패)",
-    "ExportSuccess": "{{count}}개의 파일이 내보내졌습니다",
-    "BatchDeletePartial": "{{total}}개 중 {{count}}개 파일이 삭제되었습니다",
-    "Screenshots": "스크린샷",
-    "Sort": "정렬 기준"
-  },
-  "MediaCard": {
-    "Untitled": "제목 없음"
-  },
-  "AITemplateSettings": {
-    "MenuItem": "AI 요약 템플릿",
-    "PageTitle": "AI 요약 템플릿",
-    "SectionTitle": "AI 요약 템플릿",
-    "AutoPickToggle": "요약 템플릿 자동 감지",
-    "AutoPickDesc": "모델이 각 회의에 가장 적합한 템플릿을 선택하도록 합니다. 꺼져 있으면 회의록이 기본값으로 사용되며 분류기 호출이 이루어지지 않습니다.",
-    "InventoryTitle": "설치된 템플릿"
-  },
-  "Screenshots": {
-    "DemoAgenda": "의제",
-    "DemoAiResponseIntro": "다음은 요약입니다",
-    "DemoAiSummary": "AI 요약",
-    "DemoAttendees": "참석자:",
-    "DemoDate": "날짜:",
-    "DemoKeyTopics": "주요 주제",
-    "DemoLiveTranscription": "실시간 전사",
-    "DemoMeetingTitle": "3분기 계획 회의 노트",
-    "DemoNextSync": "다음 동기화:",
-    "DemoRealTime": "실시간",
-    "DemoRecentMeetings": "최근 회의",
-    "DemoRecordingLabel": "녹음",
-    "DemoUserPromptFollowUp": "언급된 구체적인 수익 수치는 무엇이었나요?",
-    "DemoUserPromptSummarize": "지난 회의 녹음을 요약하고 주요 실행 항목을 추출해 주세요.",
-    "DemoAiActionAlice": "<strong>앨리스</strong> — 6월 5일까지 PRD 최종 확정",
-    "DemoAiActionBob": "<strong>밥</strong> — CI/CD 파이프라인 구축",
-    "DemoAiActionCharlie": "<strong>찰리</strong> — 투자자 자료 준비",
-    "DemoAiDecisionSummary": "7월 말까지 새로운 기능 출시. 엔지니어 2명 추가 채용. 마케팅 예산 20% 증액.",
-    "DemoAiTopicActionSprint": "다가오는 스프린트 계획을 위한 작업 항목",
-    "DemoAiTopicRevenue": "3분기 매출 검토 — 분기별 15% 성장",
-    "DemoAiTopicTimeline": "제품 출시를 위한 타임라인 업데이트",
-    "DemoNoteActionAlice": "앨리스 — 6월 5일까지 PRD 최종 확정",
-    "DemoNoteActionBob": "밥 — CI/CD 파이프라인 구축",
-    "DemoNoteActionCharlie": "찰리 — 투자자 자료 준비",
-    "DemoNoteAgendaQ3OKRs": "3분기 OKR 및 목표",
-    "DemoNoteAgendaResource": "자원 배분",
-    "DemoNoteAgendaReviewQ2": "2분기 실적 검토",
-    "DemoNoteDecisionBudget": "마케팅 예산 20% 증액",
-    "DemoNoteDecisionHire": "엔지니어 2명 추가 채용",
-    "DemoNoteDecisionLaunch": "7월 말까지 신규 기능 출시",
-    "DemoNoteSyncDate": "6월 8일 오전 10시",
-    "DemoTranscriptFallbackLine1": "3분기 기획 회의에 오신 것을 환영합니다.",
-    "DemoTranscriptFallbackLine2": "분기별로 <strong>15% 성장</strong>을 기록했습니다.",
-    "DemoTranscriptFallbackLine3": "7월 말까지 <strong>AI 에이전트</strong>를 출시합니다.",
-    "DemoTranscriptFallbackLine4": "투자자 자료를 준비 중이며 마케팅 예산을 20% 증액해야 합니다.",
-    "DemoTranscriptLine1": "3분기 기획 회의에 오신 것을 환영합니다. 지난 분기 매출 수치를 검토해 보겠습니다.",
-    "DemoTranscriptLine2": "분기별로 <strong>15% 성장</strong>을 기록하여 12% 목표를 초과 달성했습니다.",
-    "DemoTranscriptLine3": "훌륭합니다. 앨리스, 제품 로드맵을 설명해 주시겠어요?",
-    "DemoTranscriptLine4": "7월 말까지 <strong>AI 에이전트 기능</strong>을 출시할 예정입니다. 6월 5일까지 PRD를 최종 확정하겠습니다.",
-    "DemoTranscriptLine5": "CI/CD 파이프라인을 준비하겠습니다. 찰리, 마케팅 계획은요?",
-    "DemoTranscriptLine6": "네, 투자자 자료를 준비 중이며 마케팅 예산을 늘려야 합니다.",
-    "DemoWikiActionArch": "엔지니어링 팀과 AI 에이전트 아키텍처 검토",
-    "DemoWikiActionPRD": "6월 5일까지 PRD 최종 확정",
-    "DemoWikiActionStakeholder": "3분기 출시를 위한 이해관계자 발표 자료 준비",
-    "DemoWikiMeetingQ3": "3분기 기획 회의 — 2026년 6월 1일",
-    "DemoWikiMeetingRoadmap": "제품 로드맵 검토 — 2026년 5월 27일",
-    "DemoWikiMeetingSprint": "스프린트 회고 — 2026년 5월 20일",
-    "DemoWikiSummaryAlice": "앨리스 앤더슨은 회사의 시니어 프로덕트 매니저입니다. 그녀는 AI 에이전트 이니셔티브를 이끌며 3분기 제품 로드맵을 책임지고 있습니다.",
-    "DemoWikiTopicsText": "제품 전략, AI 에이전트 개발, 3분기 OKR, 스프린트 계획, 자원 배분, CI/CD 파이프라인, 마케팅 예산."
   }
 }
