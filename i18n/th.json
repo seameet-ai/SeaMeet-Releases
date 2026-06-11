@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "ตรวจจับอัตโนมัติ (อาจผสมสคริปต์)",
     "SummaryLanguageDesc": "ใช้กับการถอดเสียง + สรุป + บท. การตรวจจับอัตโนมัติจะตรงกับภาษาที่พูด",
     "TestKey": "บันทึก & ตรวจสอบ",
-    "UseMainLlmForOcrHint": "ส่ง OCR ภาพหน้าจอไปยังผู้ให้บริการ LLM ที่คุณเลือก ปิด (ค่าเริ่มต้น): ใช้ Gemini เสมอ หากผู้ให้บริการไม่รับภาพ จะเปลี่ยนไปใช้ Gemini อัตโนมัติ"
+    "UseMainLlmForOcrHint": "ส่ง OCR ภาพหน้าจอไปยังผู้ให้บริการ LLM ที่คุณเลือก ปิด (ค่าเริ่มต้น): ใช้ Gemini เสมอ หากผู้ให้บริการไม่รับภาพ จะเปลี่ยนไปใช้ Gemini อัตโนมัติ",
+    "KeyVerificationFailed": "ยืนยันคีย์ไม่สำเร็จ"
   },
   "AISummary": {
     "ApplyMerge": "นำไปใช้",
@@ -1206,7 +1207,9 @@
     "Send": "ส่ง",
     "Starting": "กำลังเริ่ม…",
     "Undo": "เลิกทำ",
-    "UnknownApp": "แอปพลิเคชันไม่ทราบ"
+    "UnknownApp": "แอปพลิเคชันไม่ทราบ",
+    "SaveFailed": "บันทึกไม่สำเร็จ",
+    "UnknownError": "ข้อผิดพลาดที่ไม่ทราบสาเหตุ"
   },
   "DeletePrompt": {
     "Cancel": "ยกเลิก",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋 คัดลอกอีเมล",
-    "EmailCopied": "✅ อีเมลถูกคัดลอกไปยังคลิปบอร์ด"
+    "EmailCopied": "✅ อีเมลถูกคัดลอกไปยังคลิปบอร์ด",
+    "EmailButton": "✉️  อีเมล {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} วันที่ผ่านมา",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "เวอร์ชัน {{version}} พร้อมให้ใช้งานแล้ว",
       "UpdateReady": "เวอร์ชัน {{version}} พร้อมให้ติดตั้งแล้ว"
     },
+    "AppMode": {
+      "Title": "โหมดแอพ",
+      "Currently": "ปัจจุบัน:",
+      "CurrentModeFull": "SeaMeet (เต็ม)",
+      "Hint": "เครื่องบันทึกแบบเรียบง่ายสำหรับผู้ใช้ SeaMeet",
+      "SwitchCta": "มีบัญชี SeaMeet (https://meet.seasalt.ai) อยู่แล้วใช่ไหม?",
+      "StopRecordingFirst": "หยุดการบันทึกที่กำลังทำงานก่อนเปลี่ยนโหมด",
+      "ConfirmReload": "แอพจะโหลดใหม่เพื่อเปลี่ยนเป็น SeaMeet Recorder การตั้งค่าและการบันทึกของคุณจะยังคงอยู่ ดำเนินการต่อหรือไม่?",
+      "SwitchFailed": "เปลี่ยนไม่สำเร็จ: {{error}}",
+      "Switch": "เปลี่ยน"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "โหมดการบันทึกเริ่มต้น",
       "DeleteTooltip": "เอาออกจากรายการ (รีเซ็ตเป็น 'ถามทุกครั้ง')",
@@ -2749,7 +2764,8 @@
       "Interval": "ช่วงเวลาการซิงค์",
       "LastCommit": "ซิงค์ล่าสุด",
       "LastSync": "ซิงค์ล่าสุด",
-      "RetrySync": "ลองซิงค์อีกครั้ง"
+      "RetrySync": "ลองซิงค์อีกครั้ง",
+      "IntervalMinutes": "{{count}} นาที"
     },
     "GitAutoCommit": {
       "Desc": "การเปลี่ยนแปลงในบันทึกและวิกิจะถูกซิงค์โดยอัตโนมัติ",
@@ -3487,5 +3503,15 @@
       "title": "ผู้ให้บริการแปลงเสียงเป็นข้อความ (คำบรรยายสด, ถอดเสียงไฟล์)",
       "tutorial": "บทช่วยสอนการตั้งค่า"
     }
+  },
+  "Tokens": {
+    "Total": "ทั้งหมด",
+    "Prompt": "พรอมต์",
+    "Response": "การตอบกลับ",
+    "Thoughts": "การคิด",
+    "Cached": "แคช",
+    "ToolUse": "การใช้เครื่องมือ",
+    "PromptByModality": "พรอมต์ตามประเภทข้อมูล",
+    "ResponseByModality": "การตอบกลับตามประเภทข้อมูล"
   }
 }

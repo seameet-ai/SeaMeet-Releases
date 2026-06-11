@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Detección automática (puede mezclar escrituras)",
     "SummaryLanguageDesc": "Aplicado a la transcripción + resumen + capítulos. La detección automática coincide con el idioma hablado.",
     "TestKey": "Guardar y verificar",
-    "UseMainLlmForOcrHint": "Dirige el OCR de capturas de pantalla a tu proveedor LLM seleccionado. Apagado (predeterminado): siempre usa Gemini. Cambia automáticamente a Gemini si el proveedor no puede aceptar la imagen."
+    "UseMainLlmForOcrHint": "Dirige el OCR de capturas de pantalla a tu proveedor LLM seleccionado. Apagado (predeterminado): siempre usa Gemini. Cambia automáticamente a Gemini si el proveedor no puede aceptar la imagen.",
+    "KeyVerificationFailed": "Error al verificar la clave"
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -1206,7 +1207,9 @@
     "Send": "Enviar",
     "Starting": "Iniciando...",
     "Undo": "Deshacer",
-    "UnknownApp": "App desconocida"
+    "UnknownApp": "App desconocida",
+    "SaveFailed": "Error al guardar",
+    "UnknownError": "Error desconocido"
   },
   "DeletePrompt": {
     "Cancel": "Cancelar",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Copiar email",
-    "EmailCopied": "✅ Email copiado al portapapeles"
+    "EmailCopied": "✅ Email copiado al portapapeles",
+    "EmailButton": "✉️  Enviar correo a {{email}}"
   },
   "Library": {
     "days_ago_one": "hace {{count}} día",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Nueva versión {{version}} disponible",
       "UpdateReady": "La versión {{version}} está lista para instalarse"
     },
+    "AppMode": {
+      "Title": "Modo de la aplicación",
+      "Currently": "Actualmente:",
+      "CurrentModeFull": "SeaMeet (completo)",
+      "Hint": "Grabador simplificado para usuarios de SeaMeet",
+      "SwitchCta": "¿Ya tienes una cuenta de SeaMeet (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Detén la grabación activa antes de cambiar de modo.",
+      "ConfirmReload": "La aplicación se recargará para cambiar a SeaMeet Recorder. Tu configuración y tus grabaciones se conservarán. ¿Continuar?",
+      "SwitchFailed": "Error al cambiar: {{error}}",
+      "Switch": "Cambiar"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Modo de grabación predeterminado",
       "DeleteTooltip": "Resta a \"Preguntar siempre\"",
@@ -2749,7 +2764,8 @@
       "Interval": "Intervalo de sincronización",
       "LastCommit": "Última sincronización",
       "LastSync": "Última sincronización",
-      "RetrySync": "Reintentar sincronización"
+      "RetrySync": "Reintentar sincronización",
+      "IntervalMinutes": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Los cambios en notas y wiki se sincronizan automáticamente.",
@@ -3487,5 +3503,15 @@
       "title": "Proveedor de voz a texto (subtítulos en vivo, transcripción de archivos)",
       "tutorial": "Tutorial de configuración"
     }
+  },
+  "Tokens": {
+    "Total": "Total",
+    "Prompt": "Entrada",
+    "Response": "Respuesta",
+    "Thoughts": "Razonamiento",
+    "Cached": "En caché",
+    "ToolUse": "Uso de herramientas",
+    "PromptByModality": "Entrada por modalidad",
+    "ResponseByModality": "Respuesta por modalidad"
   }
 }

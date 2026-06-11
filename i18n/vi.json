@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Tự động phát hiện (có thể trộn lẫn các bảng chữ cái)",
     "SummaryLanguageDesc": "Áp dụng cho bản ghi + tóm tắt + chương. Tự động phát hiện phù hợp với ngôn ngữ nói.",
     "TestKey": "Lưu & Xác minh",
-    "UseMainLlmForOcrHint": "Chuyển hướng OCR ảnh chụp màn hình đến nhà cung cấp LLM bạn chọn. Tắt (mặc định): luôn sử dụng Gemini. Tự động chuyển sang Gemini nếu nhà cung cấp không thể nhận ảnh."
+    "UseMainLlmForOcrHint": "Chuyển hướng OCR ảnh chụp màn hình đến nhà cung cấp LLM bạn chọn. Tắt (mặc định): luôn sử dụng Gemini. Tự động chuyển sang Gemini nếu nhà cung cấp không thể nhận ảnh.",
+    "KeyVerificationFailed": "Xác minh khóa không thành công"
   },
   "AISummary": {
     "ApplyMerge": "Áp dụng",
@@ -1206,7 +1207,9 @@
     "Send": "Gửi",
     "Starting": "Đang khởi động…",
     "Undo": "Hoàn tác",
-    "UnknownApp": "Ứng dụng không xác định"
+    "UnknownApp": "Ứng dụng không xác định",
+    "SaveFailed": "Lưu không thành công",
+    "UnknownError": "Lỗi không xác định"
   },
   "DeletePrompt": {
     "Cancel": "Huy",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Sao chép Email",
-    "EmailCopied": "✅ Email đã được sao chép vào clipboard"
+    "EmailCopied": "✅ Email đã được sao chép vào clipboard",
+    "EmailButton": "✉️  Email {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} ngày trước",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Phiên bản {{version}} đã sẵn sàng",
       "UpdateReady": "Phiên bản {{version}} đã sẵn sàng để cài đặt"
     },
+    "AppMode": {
+      "Title": "Chế độ ứng dụng",
+      "Currently": "Hiện tại:",
+      "CurrentModeFull": "SeaMeet (đầy đủ)",
+      "Hint": "Trình ghi âm tinh gọn dành cho người dùng SeaMeet",
+      "SwitchCta": "Đã có tài khoản SeaMeet (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Dừng bản ghi đang hoạt động trước khi chuyển chế độ.",
+      "ConfirmReload": "Ứng dụng sẽ tải lại để chuyển sang SeaMeet Recorder. Cài đặt và bản ghi của bạn sẽ được giữ nguyên. Tiếp tục?",
+      "SwitchFailed": "Chuyển đổi thất bại: {{error}}",
+      "Switch": "Chuyển"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Chế độ ghi mặc định",
       "DeleteTooltip": "Xóa khỏi danh sách (đặt lại thành \"Hỏi mỗi lần\")",
@@ -2749,7 +2764,8 @@
       "Interval": "Khoảng thời gian đồng bộ",
       "LastCommit": "Đã đồng bộ lần cuối",
       "LastSync": "Đồng bộ cuối cùng",
-      "RetrySync": "Thử đồng bộ lại"
+      "RetrySync": "Thử đồng bộ lại",
+      "IntervalMinutes": "{{count}} phút"
     },
     "GitAutoCommit": {
       "Desc": "Các thay đổi trên ghi chú và wiki được tự động đồng bộ.",
@@ -3487,5 +3503,15 @@
       "title": "Nhà cung cấp Chuyển đổi Giọng nói thành Văn bản (Phụ đề trực tiếp, Phiên âm tệp)",
       "tutorial": "Hướng dẫn cài đặt"
     }
+  },
+  "Tokens": {
+    "Total": "Tổng",
+    "Prompt": "Lời nhắc",
+    "Response": "Phản hồi",
+    "Thoughts": "Suy nghĩ",
+    "Cached": "Đã lưu đệm",
+    "ToolUse": "Dùng công cụ",
+    "PromptByModality": "Lời nhắc theo loại dữ liệu",
+    "ResponseByModality": "Phản hồi theo loại dữ liệu"
   }
 }

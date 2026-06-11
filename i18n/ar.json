@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "الكشف التلقائي (قد يخلط بين الخطوط)",
     "SummaryLanguageDesc": "يُطبق على النص المنسوخ + الملخص + الفصول. الكشف التلقائي يطابق اللغة المنطوقة.",
     "TestKey": "حفظ والتحقق",
-    "UseMainLlmForOcrHint": "يوجه التعرف الضوئي على الحروف في لقطات الشاشة إلى مزود LLM الذي اخترته. إيقاف (افتراضي): يستخدم دائمًا Gemini. يتحول تلقائيًا إلى Gemini إذا لم يستطع المزود قبول الصورة."
+    "UseMainLlmForOcrHint": "يوجه التعرف الضوئي على الحروف في لقطات الشاشة إلى مزود LLM الذي اخترته. إيقاف (افتراضي): يستخدم دائمًا Gemini. يتحول تلقائيًا إلى Gemini إذا لم يستطع المزود قبول الصورة.",
+    "KeyVerificationFailed": "فشل التحقق من المفتاح"
   },
   "AISummary": {
     "ApplyMerge": "تطبيق",
@@ -1206,7 +1207,9 @@
     "Send": "يرسل",
     "Starting": "جار البدء...",
     "Undo": "تراجع",
-    "UnknownApp": "تطبيق غير معروف"
+    "UnknownApp": "تطبيق غير معروف",
+    "SaveFailed": "فشل الحفظ",
+    "UnknownError": "خطأ غير معروف"
   },
   "DeletePrompt": {
     "Cancel": "إلغاء",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  نسخ البريد الإلكتروني",
-    "EmailCopied": "✅  تم نسخ البريد الإلكتروني إلى الحافظة"
+    "EmailCopied": "✅  تم نسخ البريد الإلكتروني إلى الحافظة",
+    "EmailButton": "✉️  مراسلة {{email}}"
   },
   "Library": {
     "days_ago_one": "قبل {{count}} يوم",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "إصدار جديد {{version}} متاح",
       "UpdateReady": "الإصدار {{version}} جاهز للتثبيت"
     },
+    "AppMode": {
+      "Title": "وضع التطبيق",
+      "Currently": "الحالي:",
+      "CurrentModeFull": "SeaMeet (الكامل)",
+      "Hint": "مسجّل مبسّط لمستخدمي SeaMeet",
+      "SwitchCta": "هل لديك حساب على SeaMeet (https://meet.seasalt.ai) بالفعل؟",
+      "StopRecordingFirst": "أوقف التسجيل النشط قبل تبديل الأوضاع.",
+      "ConfirmReload": "سيُعاد تحميل التطبيق للتبديل إلى مسجّل SeaMeet. ستبقى إعداداتك وتسجيلاتك كما هي. هل تريد المتابعة؟",
+      "SwitchFailed": "فشل التبديل: {{error}}",
+      "Switch": "تبديل"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "وضع التسجيل الافتراضي",
       "DeleteTooltip": "إزالته من القائمة (يعيدها إلى \"اسأل كل مرة\")",
@@ -2749,7 +2764,8 @@
       "Interval": "فاصل المزامنة",
       "LastCommit": "آخر مزامنة",
       "LastSync": "آخر مزامنة",
-      "RetrySync": "إعادة محاولة المزامنة"
+      "RetrySync": "إعادة محاولة المزامنة",
+      "IntervalMinutes": "{{count}} دقيقة"
     },
     "GitAutoCommit": {
       "Desc": "يتم مزامنة التغييرات على الملاحظات والويكي تلقائيًا.",
@@ -3487,5 +3503,15 @@
       "title": "مزود تحويل الكلام إلى نص (التسمية الحية، تفريغ الملفات)",
       "tutorial": "دليل الإعداد"
     }
+  },
+  "Tokens": {
+    "Total": "الإجمالي",
+    "Prompt": "الموجّه",
+    "Response": "الاستجابة",
+    "Thoughts": "التفكير",
+    "Cached": "المخزّن مؤقتًا",
+    "ToolUse": "استخدام الأدوات",
+    "PromptByModality": "الموجّه حسب الوسيط",
+    "ResponseByModality": "الاستجابة حسب الوسيط"
   }
 }

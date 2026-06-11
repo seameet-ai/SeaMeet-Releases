@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Detecção automática (pode misturar scripts)",
     "SummaryLanguageDesc": "Aplicado à transcrição + resumo + capítulos. A detecção automática corresponde ao idioma falado.",
     "TestKey": "Salvar e Verificar",
-    "UseMainLlmForOcrHint": "Encaminha o OCR de capturas de tela para o seu provedor LLM selecionado. Desligado (padrão): sempre usa Gemini. Retorna automaticamente para Gemini se o provedor não aceitar a imagem."
+    "UseMainLlmForOcrHint": "Encaminha o OCR de capturas de tela para o seu provedor LLM selecionado. Desligado (padrão): sempre usa Gemini. Retorna automaticamente para Gemini se o provedor não aceitar a imagem.",
+    "KeyVerificationFailed": "Falha na verificação da chave"
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -1206,7 +1207,9 @@
     "Send": "Enviar",
     "Starting": "Iniciando...",
     "Undo": "Desfazer",
-    "UnknownApp": "App desconhecido"
+    "UnknownApp": "App desconhecido",
+    "SaveFailed": "Falha ao salvar",
+    "UnknownError": "Erro desconhecido"
   },
   "DeletePrompt": {
     "Cancel": "Cancelar",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Copiar Email",
-    "EmailCopied": "✅  Email copiado para a área de transferência"
+    "EmailCopied": "✅  Email copiado para a área de transferência",
+    "EmailButton": "✉️  E-mail {{email}}"
   },
   "Library": {
     "days_ago_one": "há {{count}} dia",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Nova versão {{version}} disponível",
       "UpdateReady": "Versão {{version}} pronta para instalar"
     },
+    "AppMode": {
+      "Title": "Modo de aplicativo",
+      "Currently": "Atualmente:",
+      "CurrentModeFull": "SeaMeet (completo)",
+      "Hint": "Gravador simplificado para usuários do SeaMeet",
+      "SwitchCta": "Já tem uma conta SeaMeet (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Pare a gravação ativa antes de mudar de modo.",
+      "ConfirmReload": "O aplicativo será recarregado para mudar para o SeaMeet Recorder. Suas configurações e gravações serão mantidas. Continuar?",
+      "SwitchFailed": "Falha ao mudar: {{error}}",
+      "Switch": "Mudar"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Modo de gravação padrão",
       "DeleteTooltip": "Remover da lista (reverte para 'Perguntar Sempre')",
@@ -2749,7 +2764,8 @@
       "Interval": "Intervalo de sincronização",
       "LastCommit": "Última sincronização",
       "LastSync": "Última sincronização",
-      "RetrySync": "Tentar Sincronizar Novamente"
+      "RetrySync": "Tentar Sincronizar Novamente",
+      "IntervalMinutes": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "As alterações nas notas e wiki são sincronizadas automaticamente.",
@@ -3487,5 +3503,15 @@
       "title": "Provedor de Fala para Texto (Legenda ao Vivo, Transcrição de Arquivo)",
       "tutorial": "Tutorial de configuração"
     }
+  },
+  "Tokens": {
+    "Total": "Total",
+    "Prompt": "Prompt",
+    "Response": "Resposta",
+    "Thoughts": "Raciocínio",
+    "Cached": "Em cache",
+    "ToolUse": "Uso de ferramentas",
+    "PromptByModality": "Prompt por modalidade",
+    "ResponseByModality": "Resposta por modalidade"
   }
 }

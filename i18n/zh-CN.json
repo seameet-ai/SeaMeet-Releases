@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "自动检测（可能混合脚本）",
     "SummaryLanguageDesc": "应用于转录+摘要+章节。自动检测匹配所说语言。",
     "TestKey": "保存并验证",
-    "UseMainLlmForOcrHint": "将截图 OCR 路由到您选择的 LLM 提供商。关闭（默认）：始终使用 Gemini。如果提供商无法接受图像，则自动回退到 Gemini。"
+    "UseMainLlmForOcrHint": "将截图 OCR 路由到您选择的 LLM 提供商。关闭（默认）：始终使用 Gemini。如果提供商无法接受图像，则自动回退到 Gemini。",
+    "KeyVerificationFailed": "密钥验证失败"
   },
   "AISummary": {
     "ApplyMerge": "应用",
@@ -1206,7 +1207,9 @@
     "Send": "发送",
     "Starting": "正在启动……",
     "Undo": "撤销",
-    "UnknownApp": "未知应用"
+    "UnknownApp": "未知应用",
+    "SaveFailed": "保存失败",
+    "UnknownError": "未知错误"
   },
   "DeletePrompt": {
     "Cancel": "取消",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  复制电子邮箱",
-    "EmailCopied": "✅ 电子邮箱已复制到剪贴板"
+    "EmailCopied": "✅ 电子邮箱已复制到剪贴板",
+    "EmailButton": "✉️  发送邮件至 {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} 天前",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "新版本 {{version}} 可用",
       "UpdateReady": "版本 {{version}} 已准备好安装"
     },
+    "AppMode": {
+      "Title": "应用模式",
+      "Currently": "当前：",
+      "CurrentModeFull": "SeaMeet（完整版）",
+      "Hint": "为 SeaMeet 用户精简的录音工具",
+      "SwitchCta": "已拥有 SeaMeet (https://meet.seasalt.ai) 账户？",
+      "StopRecordingFirst": "切换模式前请先停止正在进行的录音。",
+      "ConfirmReload": "应用将重新加载以切换到 SeaMeet 录音器。您的设置和录音将会保留。是否继续？",
+      "SwitchFailed": "切换失败：{{error}}",
+      "Switch": "切换"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "默认录制模式",
       "DeleteTooltip": "从列表中移除（重置为“Ask Every Time”）",
@@ -2749,7 +2764,8 @@
       "Interval": "同步间隔",
       "LastCommit": "上次同步",
       "LastSync": "上次同步",
-      "RetrySync": "重试同步"
+      "RetrySync": "重试同步",
+      "IntervalMinutes": "{{count}} 分钟"
     },
     "GitAutoCommit": {
       "Desc": "笔记和维基的更改会自动同步。",
@@ -3487,5 +3503,15 @@
       "title": "语音转文本提供商（实时字幕，文件转录）",
       "tutorial": "设置教程"
     }
+  },
+  "Tokens": {
+    "Total": "总计",
+    "Prompt": "提示",
+    "Response": "回复",
+    "Thoughts": "思考",
+    "Cached": "缓存",
+    "ToolUse": "工具调用",
+    "PromptByModality": "按模态划分的提示",
+    "ResponseByModality": "按模态划分的回复"
   }
 }

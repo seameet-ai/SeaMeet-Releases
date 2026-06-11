@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Automatisch erkennen (kann Skripte mischen)",
     "SummaryLanguageDesc": "Angewendet auf Transkript + Zusammenfassung + Kapitel. Automatische Erkennung entspricht der gesprochenen Sprache.",
     "TestKey": "Speichern & Überprüfen",
-    "UseMainLlmForOcrHint": "Leitet die OCR von Screenshots an Ihren ausgewählten LLM-Anbieter weiter. Aus (Standard): verwendet immer Gemini. Fällt automatisch auf Gemini zurück, wenn der Anbieter das Bild nicht akzeptieren kann."
+    "UseMainLlmForOcrHint": "Leitet die OCR von Screenshots an Ihren ausgewählten LLM-Anbieter weiter. Aus (Standard): verwendet immer Gemini. Fällt automatisch auf Gemini zurück, wenn der Anbieter das Bild nicht akzeptieren kann.",
+    "KeyVerificationFailed": "Schlüsselüberprüfung fehlgeschlagen"
   },
   "AISummary": {
     "ApplyMerge": "Anwenden",
@@ -1206,7 +1207,9 @@
     "Send": "Schicken",
     "Starting": "Starten...",
     "Undo": "Rückgängig",
-    "UnknownApp": "Unbekannte App"
+    "UnknownApp": "Unbekannte App",
+    "SaveFailed": "Speichern fehlgeschlagen",
+    "UnknownError": "Unbekannter Fehler"
   },
   "DeletePrompt": {
     "Cancel": "Abbrechen",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  E-Mail kopieren",
-    "EmailCopied": "✅  E-Mail in Zwischenablage kopiert"
+    "EmailCopied": "✅  E-Mail in Zwischenablage kopiert",
+    "EmailButton": "✉️  E-Mail an {{email}}"
   },
   "Library": {
     "days_ago_one": "vor {{count}} Tag",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Neue Version {{version}} ist verfügbar",
       "UpdateReady": "Version {{version}} ist bereit zur Installation"
     },
+    "AppMode": {
+      "Title": "App-Modus",
+      "Currently": "Aktuell:",
+      "CurrentModeFull": "SeaMeet (vollständig)",
+      "Hint": "Schlanker Rekorder für SeaMeet-Nutzer",
+      "SwitchCta": "Hast du bereits ein SeaMeet-Konto (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Beende die laufende Aufnahme, bevor du den Modus wechselst.",
+      "ConfirmReload": "Die App wird neu geladen, um zum SeaMeet Recorder zu wechseln. Deine Einstellungen und Aufnahmen bleiben erhalten. Fortfahren?",
+      "SwitchFailed": "Wechsel fehlgeschlagen: {{error}}",
+      "Switch": "Wechseln"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Standard-Aufnahmemodus",
       "DeleteTooltip": "Aus Liste entfernen (setzt auf ‚Jedes Mal fragen' zurück)",
@@ -2749,7 +2764,8 @@
       "Interval": "Synchronisierungsintervall",
       "LastCommit": "Zuletzt synchronisiert",
       "LastSync": "Letzte Synchronisierung",
-      "RetrySync": "Synchronisierung erneut versuchen"
+      "RetrySync": "Synchronisierung erneut versuchen",
+      "IntervalMinutes": "{{count}} Min."
     },
     "GitAutoCommit": {
       "Desc": "Änderungen an Notizen und Wiki werden automatisch synchronisiert.",
@@ -3487,5 +3503,15 @@
       "title": "Spracherkennung-Anbieter (Live-Untertitel, Datei-Transkription)",
       "tutorial": "Einrichtungsanleitung"
     }
+  },
+  "Tokens": {
+    "Total": "Gesamt",
+    "Prompt": "Prompt",
+    "Response": "Antwort",
+    "Thoughts": "Gedanken",
+    "Cached": "Zwischengespeichert",
+    "ToolUse": "Tool-Nutzung",
+    "PromptByModality": "Prompt nach Modalität",
+    "ResponseByModality": "Antwort nach Modalität"
   }
 }

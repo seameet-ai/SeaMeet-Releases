@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "自動検出（スクリプトが混在する場合があります）",
     "SummaryLanguageDesc": "文字起こし＋要約＋チャプターに適用。自動検出は話された言語に一致します。",
     "TestKey": "保存して検証",
-    "UseMainLlmForOcrHint": "スクリーンショットOCRを選択したLLMプロバイダーにルーティングします。オフ（デフォルト）：常にGeminiを使用。プロバイダーが画像を受け付けない場合は自動的にGeminiにフォールバックします。"
+    "UseMainLlmForOcrHint": "スクリーンショットOCRを選択したLLMプロバイダーにルーティングします。オフ（デフォルト）：常にGeminiを使用。プロバイダーが画像を受け付けない場合は自動的にGeminiにフォールバックします。",
+    "KeyVerificationFailed": "キーの検証に失敗しました"
   },
   "AISummary": {
     "ApplyMerge": "適用",
@@ -1206,7 +1207,9 @@
     "Send": "送信",
     "Starting": "起動中...",
     "Undo": "元に戻す",
-    "UnknownApp": "不明なアプリケーション"
+    "UnknownApp": "不明なアプリケーション",
+    "SaveFailed": "保存に失敗しました",
+    "UnknownError": "不明なエラー"
   },
   "DeletePrompt": {
     "Cancel": "キャンセル",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  メールをコピー",
-    "EmailCopied": "✅  メールをクリップボードにコピーしました"
+    "EmailCopied": "✅  メールをクリップボードにコピーしました",
+    "EmailButton": "✉️  メール {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} 日前",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "新バージョン {{version}} が利用可能です",
       "UpdateReady": "バージョン {{version}} のインストール準備が完了しました"
     },
+    "AppMode": {
+      "Title": "アプリモード",
+      "Currently": "現在:",
+      "CurrentModeFull": "SeaMeet（フル版）",
+      "Hint": "SeaMeet ユーザー向けのシンプルなレコーダー",
+      "SwitchCta": "SeaMeet（https://meet.seasalt.ai）のアカウントをお持ちですか？",
+      "StopRecordingFirst": "モードを切り替える前に、実行中の録音を停止してください。",
+      "ConfirmReload": "SeaMeet Recorder に切り替えるためにアプリを再読み込みします。設定と録音はそのまま保持されます。続行しますか？",
+      "SwitchFailed": "切り替えに失敗しました: {{error}}",
+      "Switch": "切り替え"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "デフォルト録音モード",
       "DeleteTooltip": "リストから削除（「毎回確認する」にリセット）",
@@ -2749,7 +2764,8 @@
       "Interval": "同期間隔",
       "LastCommit": "最終同期",
       "LastSync": "最終同期",
-      "RetrySync": "同期を再試行"
+      "RetrySync": "同期を再試行",
+      "IntervalMinutes": "{{count}} 分"
     },
     "GitAutoCommit": {
       "Desc": "ノートとウィキの変更は自動的に同期されます。",
@@ -3487,5 +3503,15 @@
       "title": "音声認識プロバイダー（ライブキャプション、ファイル文字起こし）",
       "tutorial": "セットアップチュートリアル"
     }
+  },
+  "Tokens": {
+    "Total": "合計",
+    "Prompt": "プロンプト",
+    "Response": "応答",
+    "Thoughts": "思考",
+    "Cached": "キャッシュ",
+    "ToolUse": "ツール使用",
+    "PromptByModality": "モダリティ別プロンプト",
+    "ResponseByModality": "モダリティ別応答"
   }
 }

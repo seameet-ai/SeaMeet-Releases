@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Detectare automată (poate combina scripturi)",
     "SummaryLanguageDesc": "Se aplică la transcriere + rezumat + capitole. Detectarea automată corespunde limbii vorbite.",
     "TestKey": "Salvează și verifică",
-    "UseMainLlmForOcrHint": "Direcționează OCR-ul capturilor de ecran către furnizorul LLM selectat. Dezactivat (implicit): folosește întotdeauna Gemini. Revine automat la Gemini dacă furnizorul nu poate accepta imaginea."
+    "UseMainLlmForOcrHint": "Direcționează OCR-ul capturilor de ecran către furnizorul LLM selectat. Dezactivat (implicit): folosește întotdeauna Gemini. Revine automat la Gemini dacă furnizorul nu poate accepta imaginea.",
+    "KeyVerificationFailed": "Verificarea cheii a eșuat"
   },
   "AISummary": {
     "ApplyMerge": "Aplicare",
@@ -1206,7 +1207,9 @@
     "Send": "Trimite",
     "Starting": "Se inițiază...",
     "Undo": "Anulează",
-    "UnknownApp": "Aplicație necunoscută"
+    "UnknownApp": "Aplicație necunoscută",
+    "SaveFailed": "Salvare eșuată",
+    "UnknownError": "Eroare necunoscută"
   },
   "DeletePrompt": {
     "Cancel": "Anulare",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Copiați adresa de email",
-    "EmailCopied": "✅ Citat din clipboard"
+    "EmailCopied": "✅ Citat din clipboard",
+    "EmailButton": "✉️  E-mail {{email}}"
   },
   "Library": {
     "days_ago_one": "acum {{count}} zi",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Nouă versiune {{version}} este disponibilă",
       "UpdateReady": "Versiunea {{version}} este gata pentru instalare"
     },
+    "AppMode": {
+      "Title": "Modul aplicație",
+      "Currently": "În prezent:",
+      "CurrentModeFull": "SeaMeet (complet)",
+      "Hint": "Recorder simplificat pentru utilizatorii SeaMeet",
+      "SwitchCta": "Ai deja un cont SeaMeet (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Oprește înregistrarea activă înainte de a schimba modul.",
+      "ConfirmReload": "Aplicația se va reîncărca pentru a trece la SeaMeet Recorder. Setările și înregistrările tale vor fi păstrate. Continui?",
+      "SwitchFailed": "Schimbarea a eșuat: {{error}}",
+      "Switch": "Schimbă"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "modul de înregistrare implicit",
       "DeleteTooltip": "Elimină din listă (reinițializează la „Întreabă de fiecare dată”)",
@@ -2749,7 +2764,8 @@
       "Interval": "Interval de sincronizare",
       "LastCommit": "Ultima sincronizare",
       "LastSync": "Ultima sincronizare",
-      "RetrySync": "Reîncearcă sincronizarea"
+      "RetrySync": "Reîncearcă sincronizarea",
+      "IntervalMinutes": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Modificările la notițe și wiki sunt sincronizate automat.",
@@ -3487,5 +3503,15 @@
       "title": "Furnizor Text din Vorbire (Subtitrare live, Transcriere fișier)",
       "tutorial": "Tutorial de configurare"
     }
+  },
+  "Tokens": {
+    "Total": "Total",
+    "Prompt": "Prompt",
+    "Response": "Răspuns",
+    "Thoughts": "Raționament",
+    "Cached": "În cache",
+    "ToolUse": "Utilizare instrumente",
+    "PromptByModality": "Prompt după modalitate",
+    "ResponseByModality": "Răspuns după modalitate"
   }
 }

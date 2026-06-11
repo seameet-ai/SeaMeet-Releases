@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Deteksi otomatis (mungkin mencampur skrip)",
     "SummaryLanguageDesc": "Diterapkan pada transkrip + ringkasan + bab. Deteksi otomatis sesuai dengan bahasa yang diucapkan.",
     "TestKey": "Simpan & Verifikasi",
-    "UseMainLlmForOcrHint": "Mengalihkan OCR tangkapan layar ke penyedia LLM yang Anda pilih. Mati (default): selalu menggunakan Gemini. Secara otomatis beralih ke Gemini jika penyedia tidak dapat menerima gambar."
+    "UseMainLlmForOcrHint": "Mengalihkan OCR tangkapan layar ke penyedia LLM yang Anda pilih. Mati (default): selalu menggunakan Gemini. Secara otomatis beralih ke Gemini jika penyedia tidak dapat menerima gambar.",
+    "KeyVerificationFailed": "Verifikasi key gagal"
   },
   "AISummary": {
     "ApplyMerge": "Terapkan",
@@ -1206,7 +1207,9 @@
     "Send": "Mengirim",
     "Starting": "Sedang Memulai...",
     "Undo": "Batalkan",
-    "UnknownApp": "Aplikasi Tidak Diketahui"
+    "UnknownApp": "Aplikasi Tidak Diketahui",
+    "SaveFailed": "Gagal menyimpan",
+    "UnknownError": "Kesalahan tidak diketahui"
   },
   "DeletePrompt": {
     "Cancel": "Batal",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Salin Email",
-    "EmailCopied": "✅  Email disalin ke clipboard"
+    "EmailCopied": "✅  Email disalin ke clipboard",
+    "EmailButton": "✉️  Email {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} hari yang lalu",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Versi {{version}} tersedia",
       "UpdateReady": "Versi {{version}} siap untuk dipasang"
     },
+    "AppMode": {
+      "Title": "Mode aplikasi",
+      "Currently": "Saat ini:",
+      "CurrentModeFull": "SeaMeet (lengkap)",
+      "Hint": "Perekam yang disederhanakan untuk pengguna SeaMeet",
+      "SwitchCta": "Sudah punya akun SeaMeet (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Hentikan perekaman yang sedang berjalan sebelum mengganti mode.",
+      "ConfirmReload": "Aplikasi akan dimuat ulang untuk beralih ke SeaMeet Recorder. Pengaturan dan rekaman Anda akan tetap tersimpan. Lanjutkan?",
+      "SwitchFailed": "Gagal beralih: {{error}}",
+      "Switch": "Beralih"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Mode perekaman default",
       "DeleteTooltip": "Hapus dari daftar (mengatur ulang ke 'Tanya Setiap Kali')",
@@ -2749,7 +2764,8 @@
       "Interval": "Interval sinkronisasi",
       "LastCommit": "Terakhir disinkronkan",
       "LastSync": "Sinkronisasi terakhir",
-      "RetrySync": "Coba Sinkronisasi Ulang"
+      "RetrySync": "Coba Sinkronisasi Ulang",
+      "IntervalMinutes": "{{count}} mnt"
     },
     "GitAutoCommit": {
       "Desc": "Perubahan pada catatan dan wiki secara otomatis disinkronkan.",
@@ -3487,5 +3503,15 @@
       "title": "Penyedia Ucapan ke Teks (Teks Langsung, Transkripsi File)",
       "tutorial": "Tutorial pengaturan"
     }
+  },
+  "Tokens": {
+    "Total": "Total",
+    "Prompt": "Prompt",
+    "Response": "Respons",
+    "Thoughts": "Penalaran",
+    "Cached": "Cache",
+    "ToolUse": "Penggunaan alat",
+    "PromptByModality": "Prompt per modalitas",
+    "ResponseByModality": "Respons per modalitas"
   }
 }

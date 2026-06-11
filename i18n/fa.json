@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "تشخیص خودکار (ممکن است اسکریپت‌ها مخلوط شوند)",
     "SummaryLanguageDesc": "اعمال شده بر روی رونوشت + خلاصه + فصل‌ها. تشخیص خودکار با زبان گفتاری مطابقت دارد.",
     "TestKey": "ذخیره و تأیید",
-    "UseMainLlmForOcrHint": "مسیر OCR اسکرین‌شات را به ارائه‌دهنده LLM انتخاب شده شما هدایت می‌کند. خاموش (پیش‌فرض): همیشه از Gemini استفاده می‌کند. در صورت عدم پذیرش تصویر توسط ارائه‌دهنده، به طور خودکار به Gemini بازمی‌گردد."
+    "UseMainLlmForOcrHint": "مسیر OCR اسکرین‌شات را به ارائه‌دهنده LLM انتخاب شده شما هدایت می‌کند. خاموش (پیش‌فرض): همیشه از Gemini استفاده می‌کند. در صورت عدم پذیرش تصویر توسط ارائه‌دهنده، به طور خودکار به Gemini بازمی‌گردد.",
+    "KeyVerificationFailed": "تأیید کلید ناموفق بود"
   },
   "AISummary": {
     "ApplyMerge": "اعمال",
@@ -1206,7 +1207,9 @@
     "Send": "ارسال کنید",
     "Starting": "شروع...",
     "Undo": "بازگشت",
-    "UnknownApp": "برنامه ناشناخته"
+    "UnknownApp": "برنامه ناشناخته",
+    "SaveFailed": "ذخیره ناموفق بود",
+    "UnknownError": "خطای ناشناخته"
   },
   "DeletePrompt": {
     "Cancel": "انصراف",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  ایمیل کپی شد",
-    "EmailCopied": "✅ ایمیل کپی شد"
+    "EmailCopied": "✅ ایمیل کپی شد",
+    "EmailButton": "✉️  ایمیل {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} روز پیش",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "نسخه جدید {{version}} در دسترس است",
       "UpdateReady": "نسخه {{version}} آماده نصب است"
     },
+    "AppMode": {
+      "Title": "حالت برنامه",
+      "Currently": "در حال حاضر:",
+      "CurrentModeFull": "SeaMeet (کامل)",
+      "Hint": "ضبط‌کننده ساده‌شده برای کاربران SeaMeet",
+      "SwitchCta": "از قبل حساب SeaMeet (https://meet.seasalt.ai) دارید؟",
+      "StopRecordingFirst": "پیش از تغییر حالت، ضبط فعال را متوقف کنید.",
+      "ConfirmReload": "برنامه برای تغییر به SeaMeet Recorder بارگیری مجدد می‌شود. تنظیمات و ضبط‌های شما حفظ خواهند شد. ادامه می‌دهید؟",
+      "SwitchFailed": "تغییر ناموفق بود: {{error}}",
+      "Switch": "تغییر"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "حالت ضبط پیش فرض",
       "DeleteTooltip": "حذف از لیست (بازنشانی به «پرسیدن هر بار»)",
@@ -2749,7 +2764,8 @@
       "Interval": "فاصله همگام‌سازی",
       "LastCommit": "آخرین همگام‌سازی",
       "LastSync": "آخرین همگام‌سازی",
-      "RetrySync": "تلاش مجدد همگام‌سازی"
+      "RetrySync": "تلاش مجدد همگام‌سازی",
+      "IntervalMinutes": "{{count}} دقیقه"
     },
     "GitAutoCommit": {
       "Desc": "تغییرات یادداشت‌ها و ویکی به‌طور خودکار همگام‌سازی می‌شوند.",
@@ -3487,5 +3503,15 @@
       "title": "ارائه‌دهنده تبدیل گفتار به متن (زیرنویس زنده، رونوشت فایل)",
       "tutorial": "آموزش راه‌اندازی"
     }
+  },
+  "Tokens": {
+    "Total": "مجموع",
+    "Prompt": "ورودی",
+    "Response": "پاسخ",
+    "Thoughts": "تفکر",
+    "Cached": "ذخیره‌شده",
+    "ToolUse": "استفاده از ابزار",
+    "PromptByModality": "ورودی بر اساس نوع",
+    "ResponseByModality": "پاسخ بر اساس نوع"
   }
 }

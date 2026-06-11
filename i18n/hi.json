@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "स्वतः पहचानें (स्क्रिप्ट मिश्रित हो सकती हैं)",
     "SummaryLanguageDesc": "ट्रांसक्रिप्ट + सारांश + अध्यायों पर लागू। ऑटो-डिटेक्ट बोली गई भाषा से मेल खाता है।",
     "TestKey": "सहेजें और सत्यापित करें",
-    "UseMainLlmForOcrHint": "स्क्रीनशॉट OCR को आपके चयनित LLM प्रदाता की ओर मार्गदर्शित करता है। बंद (डिफ़ॉल्ट): हमेशा Gemini का उपयोग करता है। यदि प्रदाता छवि स्वीकार नहीं कर सकता है तो स्वचालित रूप से Gemini पर वापस चला जाता है।"
+    "UseMainLlmForOcrHint": "स्क्रीनशॉट OCR को आपके चयनित LLM प्रदाता की ओर मार्गदर्शित करता है। बंद (डिफ़ॉल्ट): हमेशा Gemini का उपयोग करता है। यदि प्रदाता छवि स्वीकार नहीं कर सकता है तो स्वचालित रूप से Gemini पर वापस चला जाता है।",
+    "KeyVerificationFailed": "कुंजी सत्यापन विफल"
   },
   "AISummary": {
     "ApplyMerge": "लागू करें",
@@ -1206,7 +1207,9 @@
     "Send": "भेजना",
     "Starting": "शुरू हो रहा है…",
     "Undo": "पूर्ववत",
-    "UnknownApp": "अज्ञात ऐप"
+    "UnknownApp": "अज्ञात ऐप",
+    "SaveFailed": "सहेजना विफल",
+    "UnknownError": "अज्ञात त्रुटि"
   },
   "DeletePrompt": {
     "Cancel": "रद्द करें",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  ईमेल कॉपी करें",
-    "EmailCopied": "✅  ईमेल क्लिपबोर्ड पर कॉपी हो गया"
+    "EmailCopied": "✅  ईमेल क्लिपबोर्ड पर कॉपी हो गया",
+    "EmailButton": "✉️  ईमेल {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} दिन पहले",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "नया संस्करण {{version}} उपलब्ध है",
       "UpdateReady": "संस्करण {{version}} इंस्टॉल के लिए तैयार है"
     },
+    "AppMode": {
+      "Title": "ऐप मोड",
+      "Currently": "वर्तमान में:",
+      "CurrentModeFull": "SeaMeet (पूर्ण)",
+      "Hint": "SeaMeet उपयोगकर्ताओं के लिए सरलीकृत रिकॉर्डर",
+      "SwitchCta": "क्या आपके पास पहले से SeaMeet (https://meet.seasalt.ai) खाता है?",
+      "StopRecordingFirst": "मोड बदलने से पहले सक्रिय रिकॉर्डिंग रोकें।",
+      "ConfirmReload": "SeaMeet Recorder पर स्विच करने के लिए ऐप फिर से लोड होगा। आपकी सेटिंग्स और रिकॉर्डिंग बनी रहेंगी। जारी रखें?",
+      "SwitchFailed": "स्विच विफल: {{error}}",
+      "Switch": "स्विच करें"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "डिफ़ॉल्ट रिकॉर्डिंग मोड",
       "DeleteTooltip": "सूचि से निकालें (पुनः 'प्रत्येक बार पूछें' पर रीसेट होता है)",
@@ -2749,7 +2764,8 @@
       "Interval": "सिंक अंतराल",
       "LastCommit": "अंतिम सिंक",
       "LastSync": "अंतिम सिंक",
-      "RetrySync": "सिंक पुनः प्रयास करें"
+      "RetrySync": "सिंक पुनः प्रयास करें",
+      "IntervalMinutes": "{{count}} मिनट"
     },
     "GitAutoCommit": {
       "Desc": "नोट्स और विकी में परिवर्तन स्वचालित रूप से सिंक हो जाते हैं।",
@@ -3487,5 +3503,15 @@
       "title": "स्पीच टू टेक्स्ट प्रदाता (लाइव कैप्शन, फ़ाइल ट्रांसक्रिप्शन)",
       "tutorial": "सेटअप ट्यूटोरियल"
     }
+  },
+  "Tokens": {
+    "Total": "कुल",
+    "Prompt": "प्रॉम्प्ट",
+    "Response": "प्रतिक्रिया",
+    "Thoughts": "विचार",
+    "Cached": "कैश्ड",
+    "ToolUse": "टूल उपयोग",
+    "PromptByModality": "मोडैलिटी के अनुसार प्रॉम्प्ट",
+    "ResponseByModality": "मोडैलिटी के अनुसार प्रतिक्रिया"
   }
 }

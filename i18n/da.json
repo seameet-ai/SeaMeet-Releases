@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Auto-registrering (kan blande skriftsystemer)",
     "SummaryLanguageDesc": "Anvendes på transskription + resumé + kapitler. Automatisk genkendelse matcher det talte sprog.",
     "TestKey": "Gem & verificer",
-    "UseMainLlmForOcrHint": "Ruter skærmbillede OCR til din valgte LLM-udbyder. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis udbyderen ikke kan acceptere billedet."
+    "UseMainLlmForOcrHint": "Ruter skærmbillede OCR til din valgte LLM-udbyder. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis udbyderen ikke kan acceptere billedet.",
+    "KeyVerificationFailed": "Nøglebekræftelse mislykkedes"
   },
   "AISummary": {
     "ApplyMerge": "Anvend",
@@ -1206,7 +1207,9 @@
     "Send": "Sende",
     "Starting": "Starter...",
     "Undo": "Fortryd",
-    "UnknownApp": "Ukendt app"
+    "UnknownApp": "Ukendt app",
+    "SaveFailed": "Lagring mislykkedes",
+    "UnknownError": "Ukendt fejl"
   },
   "DeletePrompt": {
     "Cancel": "Annuller",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Kopiér e-mail",
-    "EmailCopied": "✅  E-mail kopieret til udklipsholder"
+    "EmailCopied": "✅  E-mail kopieret til udklipsholder",
+    "EmailButton": "✉️  Send e-mail til {{email}}"
   },
   "Library": {
     "days_ago_one": "for {{count}} dag siden",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "Ny version {{version}} er tilgængelig",
       "UpdateReady": "Version {{version}} er klar til installation"
     },
+    "AppMode": {
+      "Title": "App-tilstand",
+      "Currently": "Aktuelt:",
+      "CurrentModeFull": "SeaMeet (fuld)",
+      "Hint": "Strømlinet optager til SeaMeet-brugere",
+      "SwitchCta": "Har du allerede en SeaMeet-konto (https://meet.seasalt.ai)?",
+      "StopRecordingFirst": "Stop den aktive optagelse, før du skifter tilstand.",
+      "ConfirmReload": "Appen genindlæses for at skifte til SeaMeet Recorder. Dine indstillinger og optagelser bevares. Vil du fortsætte?",
+      "SwitchFailed": "Skift mislykkedes: {{error}}",
+      "Switch": "Skift"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Standard optagelsestilstand",
       "DeleteTooltip": "Fjern fra listen (nulstiller til 'Spørg hver gang')",
@@ -2749,7 +2764,8 @@
       "Interval": "Synkroniseringsinterval",
       "LastCommit": "Sidst synkroniseret",
       "LastSync": "Sidste synkronisering",
-      "RetrySync": "Prøv synkronisering igen"
+      "RetrySync": "Prøv synkronisering igen",
+      "IntervalMinutes": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Ændringer til noter og wiki synkroniseres automatisk.",
@@ -3487,5 +3503,15 @@
       "title": "Tale til tekst-udbyder (Live undertekst, filtransskription)",
       "tutorial": "Opsætningsvejledning"
     }
+  },
+  "Tokens": {
+    "Total": "I alt",
+    "Prompt": "Prompt",
+    "Response": "Svar",
+    "Thoughts": "Tanker",
+    "Cached": "Cachet",
+    "ToolUse": "Værktøjsbrug",
+    "PromptByModality": "Prompt efter modalitet",
+    "ResponseByModality": "Svar efter modalitet"
   }
 }

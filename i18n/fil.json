@@ -155,7 +155,8 @@
     "SummaryLanguageAutoDetect": "Awtomatikong tuklasin (maaaring maghalo ang mga script)",
     "SummaryLanguageDesc": "Ipinapatupad sa transcript + buod + mga kabanata. Ang awtomatikong pagtuklas ay tumutugma sa wikang sinasalita.",
     "TestKey": "I-save at Suriin",
-    "UseMainLlmForOcrHint": "I-reroute ang screenshot OCR sa iyong napiling LLM provider. Off (default): palaging ginagamit ang Gemini. Awtomatikong babalik sa Gemini kung hindi matanggap ng provider ang imahe."
+    "UseMainLlmForOcrHint": "I-reroute ang screenshot OCR sa iyong napiling LLM provider. Off (default): palaging ginagamit ang Gemini. Awtomatikong babalik sa Gemini kung hindi matanggap ng provider ang imahe.",
+    "KeyVerificationFailed": "Nabigo ang pag-verify ng key"
   },
   "AISummary": {
     "ApplyMerge": "Ilapat",
@@ -1206,7 +1207,9 @@
     "Send": "Ipadala",
     "Starting": "Nagsisimula na...",
     "Undo": "I-undo",
-    "UnknownApp": "Hindi kilalang app"
+    "UnknownApp": "Hindi kilalang app",
+    "SaveFailed": "Hindi na-save",
+    "UnknownError": "Hindi kilalang error"
   },
   "DeletePrompt": {
     "Cancel": "Kanselahin",
@@ -1641,7 +1644,8 @@
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Kopyahin ang Email",
-    "EmailCopied": "✅  Naka-kopya na ang Email sa clipboard"
+    "EmailCopied": "✅  Naka-kopya na ang Email sa clipboard",
+    "EmailButton": "✉️  I-email si {{email}}"
   },
   "Library": {
     "days_ago_one": "{{count}} araw na nakalipas",
@@ -2570,6 +2574,17 @@
       "UpdateAvailable": "May bagong bersyon {{version}} na available",
       "UpdateReady": "Ang bersyon {{version}} ay handa nang i-install"
     },
+    "AppMode": {
+      "Title": "Mode ng app",
+      "Currently": "Kasalukuyan:",
+      "CurrentModeFull": "SeaMeet (buo)",
+      "Hint": "Pinasimpleng recorder para sa mga user ng SeaMeet",
+      "SwitchCta": "Mayroon ka na bang SeaMeet (https://meet.seasalt.ai) account?",
+      "StopRecordingFirst": "Itigil muna ang aktibong pag-record bago lumipat ng mode.",
+      "ConfirmReload": "Mag-reload ang app para lumipat sa SeaMeet Recorder. Mananatili ang iyong mga setting at recording. Magpatuloy?",
+      "SwitchFailed": "Nabigo ang paglipat: {{error}}",
+      "Switch": "Lumipat"
+    },
     "AppPermissions": {
       "DefaultRecordingMode": "Default na mode ng pagre-record",
       "DeleteTooltip": "Alisin sa listahan (muling i-set sa 'Ask Every Time')",
@@ -2749,7 +2764,8 @@
       "Interval": "Agwat ng pag-sync",
       "LastCommit": "Huling na-sync",
       "LastSync": "Huling sync",
-      "RetrySync": "Subukang Muling I-sync"
+      "RetrySync": "Subukang Muling I-sync",
+      "IntervalMinutes": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Ang mga pagbabago sa mga tala at wiki ay awtomatikong nasi-sync.",
@@ -3487,5 +3503,15 @@
       "title": "Provider ng Speech To Text (Live Caption, File Transcription)",
       "tutorial": "Tutorial sa setup"
     }
+  },
+  "Tokens": {
+    "Total": "Kabuuan",
+    "Prompt": "Prompt",
+    "Response": "Tugon",
+    "Thoughts": "Pag-iisip",
+    "Cached": "Naka-cache",
+    "ToolUse": "Paggamit ng tool",
+    "PromptByModality": "Prompt ayon sa modality",
+    "ResponseByModality": "Tugon ayon sa modality"
   }
 }
