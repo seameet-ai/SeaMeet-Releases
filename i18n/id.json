@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Memerlukan langganan BYOK Pro. Berlangganan untuk transkripsi langsung, ringkasan rapat AI, dan agen AI interaktif."
+    "SubscribeMsg": "Memerlukan langganan Sync Pro. Berlangganan untuk transkripsi langsung, ringkasan rapat AI, dan agen AI interaktif."
+  },
+  "Paywall": {
+    "Unlock": "Buka dengan Sync Pro",
+    "Reassurance": "Anda sudah memilikinya — berlangganan akan menampilkannya seketika, selamanya.",
+    "RevealCap": {
+      "Title": "Anda telah mencapai transkripsi gratis Anda",
+      "Body": "Buka transkrip lengkap dengan Sync Pro."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Dinonaktifkan",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Diterapkan pada transkrip + ringkasan + bab. Deteksi otomatis sesuai dengan bahasa yang diucapkan.",
     "TestKey": "Simpan & Verifikasi",
     "UseMainLlmForOcrHint": "Mengalihkan OCR tangkapan layar ke penyedia LLM yang Anda pilih. Mati (default): selalu menggunakan Gemini. Secara otomatis beralih ke Gemini jika penyedia tidak dapat menerima gambar.",
+    "UsageReporting": "Bagikan jumlah penggunaan AI secara anonim",
+    "UsageReportingDesc": "Hanya penyedia, model, dan jumlah token — tidak pernah konten Anda. Membantu kami menjaga keandalan penyedia.",
     "KeyVerificationFailed": "Verifikasi key gagal"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Lihat Detail"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Simpan pekerjaan Anda & buka juga di ponsel Anda.",
+      "Subline": {
+        "Wall": "Tautkan akun untuk menyimpan rekaman dan transkrip Anda di semua perangkat — dan buka tingkat gratis penuh.",
+        "AnotherDevice": "Tautkan akun untuk membuka rekaman dan transkrip Anda di ponsel dan perangkat lain — dan buka tingkat gratis penuh.",
+        "RevealCap": "Kami mentranskripsi 15 menit pertama. Masuk (gratis) untuk membuka lebih banyak — atau dapatkan Sync Pro untuk transkripsi langsung tanpa batas."
+      },
+      "ContinueWith": "Lanjutkan dengan {{provider}}",
+      "NotNow": "Nanti saja",
+      "TitleRevealCap": "Pratinjau gratis 15 menit Anda telah berakhir",
+      "SeeSyncPro": "Lihat Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — bawa kunci Anda sendiri)",
       "ActiveTitle": "Langganan aktif — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Anda sudah memiliki langganan aktif. Gunakan Kelola Langganan untuk melihat atau mengubahnya.",
       "NoApiUrl": "Layanan penagihan belum dikonfigurasi. Silakan hubungi dukungan.",
       "NotAuthenticated": "Silakan masuk terlebih dahulu untuk berlangganan. Gunakan menu akun untuk masuk.",
-      "Unknown": "Terjadi kesalahan. Silakan coba lagi."
+      "Unknown": "Terjadi kesalahan. Silakan coba lagi.",
+      "SwitchNotSubscribed": "Tidak ada langganan aktif untuk diubah. Berlangganan dahulu.",
+      "SwitchFailed": "Tidak dapat mengubah siklus penagihan. Coba lagi, atau gunakan Kelola Langganan.",
+      "RefundPeriodExpired": "Jendela pengembalian dana telah berakhir (30 hari sejak pembelian).",
+      "RefundAlreadyUsed": "Anda sudah menggunakan satu pengembalian dana swalayan Anda.",
+      "RefundNoSub": "Tidak ada langganan aktif untuk dikembalikan.",
+      "RefundFailed": "Tidak dapat memproses pengembalian dana. Silakan hubungi dukungan.",
+      "ScheduleFailed": "Tidak dapat menjadwalkan perubahan. Coba lagi atau hubungi dukungan.",
+      "CancelCadenceFailed": "Tidak dapat membatalkan perubahan yang dijadwalkan. Coba lagi."
     },
     "Explainer": {
       "Continue": "Lanjutkan untuk berlangganan",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot juga memiliki paket gratis.",
         "InfoNoteGemini": "Google AI Studio biasanya memberi Anda kunci gratis.",
         "Name": "BYOK Pro",
-        "Price": "$4,99/bulan"
+        "Price": "$4,99/bulan",
+        "CTA": "Dapatkan BYOK Pro"
       },
       "Free": {
         "Feature1": "Hanya perekaman",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "AI bawaan — tidak perlu kunci API",
-        "Feature2": "Sinkronisasi terkelola untuk catatan, audio, video & tangkapan layar",
-        "Feature3": "Fitur kolaborasi tim",
-        "Feature4": "Perpustakaan rapat bersama",
+        "Feature2": "50 jam transkripsi rapat per bulan",
+        "Feature3": "Ringkasan AI, wiki & agen dengan pengalihan penyedia otomatis",
+        "Feature4": "Sinkronisasi cloud terkelola — segera hadir di paket Anda",
         "Name": "Sync Pro",
+        "Price": "$15,99/bulan",
+        "PriceAnnual": "$12,99/bulan",
         "RequestBody": "Hai tim SeaMeet — saya tertarik dengan Sync Pro (AI bawaan tanpa perlu mengelola kunci API, sinkronisasi cloud, multi-perangkat, kolaborasi tim). Mohon beri tahu saya saat sudah tersedia.\n\nTerima kasih!",
         "RequestCTA": "Minta ini",
         "RequestSubject": "Saya ingin Sync Pro untuk SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Berlangganan",
     "Subscribing": "Berlangganan...",
-    "UnlockTitle": "Buka Fitur AI SeaMeet"
+    "UnlockTitle": "Buka Fitur AI SeaMeet",
+    "Pro": {
+      "Title": "Pilih paket Anda",
+      "Monthly": "Bulanan",
+      "Annual": "Tahunan",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/bln · atau $15.99 bulanan",
+      "PriceMonthly": "$15.99/bln · hemat 19% dengan tahunan",
+      "ColFree": "Gratis",
+      "ColPro": "Sync Pro · $12.99/bln",
+      "CTA": "Dapatkan Sync Pro",
+      "Reassurance": "Batalkan kapan saja · pengembalian 30 hari",
+      "AdvancedByok": "Lanjutan: gunakan kunci API Anda sendiri",
+      "Row": {
+        "LiveTranscription": "Transkripsi langsung",
+        "LiveTranscriptionFree": "Total 6 jam · 15 menit pertama",
+        "LiveTranscriptionPro": "Tanpa batas*",
+        "FileImport": "Transkripsi file",
+        "FileImportFree": "—",
+        "FileImportPro": "50 jam/bln",
+        "Storage": "Penyimpanan",
+        "StorageFree": "2 GB · 30 hari",
+        "StoragePro": "250 GB · selamanya",
+        "Ocr": "OCR tangkapan layar",
+        "OcrFree": "20 total",
+        "OcrPro": "Tanpa batas",
+        "Notes": "Catatan & wiki",
+        "NotesFree": "Hanya catatan",
+        "NotesPro": "Penuh",
+        "Search": "Cari semua",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Tanpa batas · kunci Anda",
+        "StorageByok": "Cloud Anda sendiri",
+        "NotesByok": "GitHub Anda sendiri",
+        "OcrProSyncMonthly": "Tangkapan tanpa batas* · 1,000 impor/bln",
+        "OcrProSyncAnnual": "Tangkapan tanpa batas* · 12,000 impor/thn",
+        "FileImportProMonthly": "50 jam/bln",
+        "FileImportProAnnual": "600 jam/thn"
+      },
+      "OcrFairUse": "* Berlaku pemakaian wajar. Di Sync Pro, transkripsi langsung dan tangkapan di aplikasi tidak terbatas. Impor dibatasi sesuai paket Anda: transkripsi file hingga 50 jam/bln (600 jam/thn pada tahunan), dan OCR gambar impor hingga 1.000/bln (12.000/thn)."
+    },
+    "Vault": {
+      "Heading": "Terbuka & Tersinkron",
+      "Subline": "{{transcripts}} transkrip, {{screenshots}} tangkapan layar, {{gb}}. Kini milikmu, dan tidak ada yang kedaluwarsa.",
+      "TallyTranscripts": "transkrip lengkap terbuka",
+      "TallyScreenshots": "tangkapan layar — OCR & pencarian terbuka",
+      "TallyStorage": "disimpan selamanya (penghapusan dibatalkan)",
+      "TallyNotesWiki": "Catatan & wiki kini tersinkron di semua perangkatmu",
+      "SeeEverything": "Lihat semua →",
+      "Retranscribing": "Mentranskripsikan ulang rekaman Anda yang terpotong secara penuh…",
+      "Renews": "diperpanjang {{date}}",
+      "Manage": "Kelola",
+      "Receipt": "Tanda terima"
+    },
+    "Recommended": "Direkomendasikan",
+    "OnFreePlan": "Anda di paket Free",
+    "Switching": "Mengubah…",
+    "SwitchToAnnual": "Beralih ke tahunan",
+    "SwitchToMonthly": "Beralih ke bulanan",
+    "SwitchConfirm": "Konfirmasi perubahan",
+    "SwitchAnnual": {
+      "Title": "Beralih ke penagihan tahunan?",
+      "Body": "Paket Anda langsung berubah ke tahunan ($155.88/tahun, setara $12.99/bulan). Stripe mengkredit bagian bulan berjalan yang belum terpakai dan menagih selisih prorata hari ini. Batas transkripsi file Anda menjadi 600 jam/tahun."
+    },
+    "SwitchMonthly": {
+      "Title": "Beralih ke penagihan bulanan?",
+      "Body": "Paket Anda langsung berubah ke bulanan ($15.99/mo). Stripe mengkredit bagian periode tahunan Anda yang belum terpakai sebagai saldo untuk tagihan berikutnya. Batas transkripsi file Anda menjadi 50 jam/bulan."
+    },
+    "Summary": {
+      "StorageAddOns": "Add-on penyimpanan",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / bulan",
+      "NextCharge": "Tagihan berikutnya {{date}}",
+      "SwitchToAnnual": "Beralih ke tahunan",
+      "SwitchToMonthly": "Beralih ke bulanan",
+      "SwitchConfirm": "Beralih ke penagihan {{target}}? Anda akan dikenakan jumlah prorata segera.",
+      "AnnualLabel": "tahunan",
+      "MonthlyLabel": "bulanan",
+      "Switching": "Mengalihkan…",
+      "SwitchedToAnnual": "Anda sekarang menggunakan tagihan tahunan.",
+      "SwitchedToMonthly": "Beralih ke penagihan bulanan.",
+      "CancellationRefunds": "Pembatalan & pengembalian dana",
+      "RequestRefund": "Minta pengembalian dana",
+      "RefundUnavailable": "Pengembalian dana tidak tersedia",
+      "CancelSubscription": "Batalkan langganan",
+      "RefundConfirm": "Minta pengembalian dana? Ini akan mengembalikan pembayaran terbaru Anda dan membatalkan langganan Anda. Anda hanya dapat melakukan pengembalian sekali per akun, dalam 30 hari sejak pembelian.",
+      "RefundIssued": "Pengembalian dana diterbitkan. Langganan Anda telah dibatalkan.",
+      "Cancel": "Batal",
+      "Confirm": "Konfirmasi",
+      "ConfirmRefund": "Konfirmasi pengembalian dana",
+      "Processing": "Memproses…",
+      "ScheduleMonthly": "Beralih ke bulanan saat perpanjangan",
+      "SwitchToAnnualConfirm": "Beralih ke tagihan tahunan sekarang? Kami akan mengkredit waktu bulanan Anda yang tidak terpakai ke tagihan tahunan pertama Anda.",
+      "SwitchToMonthlyConfirm": "Paket tahunan Anda berlanjut hingga {{date}}. Setelah itu, Anda akan ditagih bulanan. Tidak ada biaya hari ini.",
+      "ScheduledMonthly": "Perubahan dijadwalkan. Paket bulanan Anda dimulai pada {{date}}.",
+      "ScheduledMonthlyNotice": "Tagihan bulanan dijadwalkan untuk {{date}}.",
+      "CancelScheduledChange": "Batal",
+      "Canceling": "Membatalkan…",
+      "CanceledScheduledChange": "Perubahan yang dijadwalkan dibatalkan."
+    }
   },
   "BlackHole": {
     "Cancel": "Batal",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Gambar berhasil diimpor",
     "PasteHint": "Ctrl+V untuk menempel gambar",
     "PasteHintMac": "⌘V untuk menempel gambar"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Sinkronisasi Cloud",
+      "Loading": "Memuat…",
+      "Unavailable": "Sinkronisasi cloud tidak tersedia di build ini.",
+      "Disabled": "Sinkronisasi cloud dinonaktifkan.",
+      "StorageHeading": "Penyimpanan",
+      "StorageUsed": "{{used}} dari {{quota}} terpakai",
+      "QueueHeading": "Antrean unggahan",
+      "QueueEmpty": "Tidak ada yang menunggu untuk diunggah.",
+      "PauseAll": "Jeda semua",
+      "ResumeAll": "Lanjutkan semua",
+      "Retry": "Coba lagi",
+      "Backfill": "Cadangkan pustaka yang ada…"
+    },
+    "State": {
+      "Queued": "Dalam antrean",
+      "Uploading": "Mengunggah",
+      "Error": "Gagal",
+      "Complete": "Tersinkron"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Audio",
+      "AudioForStt": "Audio (untuk transkripsi)",
+      "Bundle": "Hasil AI"
+    },
+    "Backfill": {
+      "Title": "Cadangkan pustaka yang ada",
+      "Description": "Pilih rekaman mana yang akan diunggah ke pustaka cloud Anda.",
+      "Loading": "Memuat rekaman…",
+      "LoadFailed": "Tidak dapat memuat rekaman Anda. Tutup dialog ini dan coba lagi.",
+      "Empty": "Semua rekaman Anda sudah dicadangkan.",
+      "SelectAll": "Pilih semua",
+      "SelectNone": "Batalkan semua pilihan",
+      "ColumnName": "Nama",
+      "ColumnDate": "Tanggal",
+      "ColumnType": "Jenis",
+      "ColumnSize": "Ukuran",
+      "TypeVideo": "Video",
+      "TypeAudio": "Audio",
+      "TypeScreenshot": "Tangkapan layar",
+      "SelectRecording": "Pilih {{name}}",
+      "SelectedTotal": "{{num}} dipilih · {{size}}",
+      "ExceedsPlan": "Pilihan ini melebihi paket {{quota}} Anda — batalkan beberapa pilihan atau kosongkan ruang cloud.",
+      "AutoTrimmed": "Beberapa rekaman terbesar tidak dipilih agar cadangan muat dalam ruang tersisa Anda.",
+      "StartFailed": "Tidak dapat memulai pencadangan. Silakan coba lagi.",
+      "Confirm": "Cadangkan yang dipilih",
+      "Cancel": "Batal",
+      "TextButton": "Sinkronkan catatan & wiki",
+      "TextRunning": "Menyinkronkan catatan & wiki…",
+      "TextDone": "{{count}} catatan & halaman wiki disinkronkan.",
+      "TextFailed": "Tidak dapat menyinkronkan catatan & wiki.",
+      "WelcomeHeading": "Selamat datang di Sync Pro 🎉",
+      "WelcomeBody": "Mengunggah {{total}} rapat lampau Anda agar tersedia di setiap perangkat dan di web…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Tutup",
+      "CompleteToast": "Semua {{total}} rapat telah disinkronkan — buka di perangkat apa pun atau di app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Tersinkron ke cloud",
+      "Uploading": "Mengunggah… {{pct}}%",
+      "Queued": "Menunggu untuk diunggah",
+      "Error": "Sinkronisasi gagal — buka panel Cloud untuk mencoba lagi",
+      "CloudOnly": "Di cloud — diputar sesuai permintaan",
+      "LocalOnly": "Hanya di perangkat ini",
+      "Downloading": "Mengunduh… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "Cadangkan ke cloud",
+      "BackUpSelected": "Cadangkan",
+      "BackUpQueued": "{{count}} file dalam antrean untuk pencadangan cloud",
+      "KeepOnDevice": "Simpan di perangkat ini",
+      "DownloadFailed": "Tidak dapat mengunduh dari cloud. Silakan coba lagi.",
+      "StreamFailed": "Tidak dapat memuat rekaman ini dari cloud. Periksa koneksi Anda dan coba lagi.",
+      "Downloaded": "Tersimpan di perangkat ini",
+      "SyncToLocal": "Sinkronkan ke lokal",
+      "SyncWithSyncPro": "Sinkronkan rekaman ini ke cloud dengan Sync Pro"
+    },
+    "Trash": {
+      "Title": "Sampah",
+      "Loading": "Memuat sampah…",
+      "LoadFailed": "Tidak dapat memuat sampah. Silakan coba lagi.",
+      "Empty": "Sampah kosong.",
+      "Summary": "{{count}} di sampah · {{size}}",
+      "ExpiresIn": "Kedaluwarsa dalam {{days}} hari",
+      "Restore": "Pulihkan",
+      "DeleteForever": "Hapus permanen",
+      "ReallyDelete": "Benar-benar hapus?",
+      "EmptyTrash": "Kosongkan sampah",
+      "ReallyEmpty": "Benar-benar kosongkan?",
+      "ActionFailed": "Tindakan gagal. Silakan coba lagi."
+    },
+    "Usage": {
+      "TabTitle": "Penggunaan",
+      "SttHeading": "Transkripsi",
+      "SttUsed": "{{used}} dari {{allowance}} menit digunakan",
+      "Unlimited": "Tanpa batas",
+      "ImportHeading": "Transkripsi impor",
+      "ImportUsed": "{{used}} / {{cap}} jam",
+      "FreePoolsHeading": "Alokasi gratis",
+      "FreeTranscriptionLeft": "Sisa {{minutes}} menit transkripsi",
+      "FreeOcrLeft": "Sisa {{runs}} kali OCR",
+      "FreeRetention": "Rekaman gratis disimpan selama {{days}} hari",
+      "Upgrade": "Tingkatkan",
+      "RunsHeading": "Operasi AI bulan ini",
+      "RunsEmpty": "Belum ada aktivitas AI bulan ini.",
+      "LoadFailed": "Tidak dapat memuat penggunaan Anda. Silakan coba lagi.",
+      "ManageStorage": "Kelola penyimpanan",
+      "AddStorage": "Tambah penyimpanan — +500 GB / $10/bln",
+      "FeatureStt": "Transkripsi langsung",
+      "FeatureSummary": "Ringkasan rekaman",
+      "FeatureOcr": "OCR tangkapan layar",
+      "FeatureWiki": "Pembuatan wiki",
+      "FeatureFile": "Transkripsi file",
+      "FeatureGeminiPush": "Unggahan analisis mendalam",
+      "ImportCapReached": "Impor berhenti di batas Anda hingga paket diperbarui",
+      "AddStorageSuccess": "Menambahkan {{gb}} GB penyimpanan",
+      "AddStorageNotSubscribed": "Diperlukan langganan Sync Pro aktif untuk menambah penyimpanan.",
+      "AddStorageUnavailable": "Add-on penyimpanan tidak tersedia saat ini. Coba lagi nanti.",
+      "AddStorageFailed": "Tidak dapat menambah penyimpanan. Silakan coba lagi.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Tambah {{gb}} GB seharga ${{price}}/bln? Kartu Anda akan ditagih jumlah prorata sekarang.",
+      "AddStorageCancel": "Batal",
+      "AddStorageConfirmCta": "Konfirmasi pembelian",
+      "AddStorageWorking": "Menambahkan…",
+      "AddStorageDecrease": "Kurangi satu",
+      "AddStorageIncrease": "Tambah satu",
+      "AddStorageConfirmExplain": "Tambahkan {{gb}} GB seharga ${{price}}/bulan. Add-on penyimpanan ditagih bulanan (terpisah dari siklus penagihan paket Anda). Hari ini Anda akan ditagih jumlah prorata untuk sisa bulan penagihan ini; setelah itu, ${{price}}/bulan akan otomatis ditagihkan ke kartu Anda. Kelola atau batalkan kapan saja di portal penagihan.",
+      "AddStorageSuccessNotice": "Penyimpanan ditambahkan. Kelola langganan dan faktur →",
+      "ManageSubscriptionInvoices": "Kelola langganan dan faktur",
+      "OcrImportHeading": "OCR gambar impor",
+      "OcrImportUsed": "{{used}} / {{cap}} gambar",
+      "OcrImportCapReached": "OCR gambar impor berhenti di batas Anda hingga paket diperpanjang",
+      "FeatureTranscription": "Transkripsi",
+      "FeatureSynthesis": "Ringkasan catatan",
+      "OcrCaptureLabel": "Tangkapan (di aplikasi)",
+      "OcrImportLabel": "Gambar impor",
+      "OcrHeading": "OCR tangkapan layar",
+      "ImportLabel": "File impor"
+    },
+    "WebLibrary": {
+      "Open": "Buka pustaka web"
+    },
+    "Devices": {
+      "Heading": "Perangkat",
+      "ThisDevice": "Perangkat ini"
+    },
+    "Prefs": {
+      "AutoDownload": "Unduh otomatis rekaman baru",
+      "AutoDownloadHint": "Saat perangkat lain mengunggah rekaman, salinannya akan otomatis diunduh ke perangkat ini.",
+      "BackfillPast": "Cadangkan rapat lampau saat upgrade",
+      "BackfillPastHint": "Saat Anda upgrade ke Sync Pro, rekaman Anda yang ada akan diunggah agar tersinkron ke setiap perangkat.",
+      "BackfillAudio": "Sertakan audio & video (bukan hanya transkrip)",
+      "BackfillAudioHint": "Jika nonaktif, hanya transkrip yang diunggah — lebih kecil dan cepat, tetapi media asli tetap di perangkat ini."
+    },
+    "Danger": {
+      "Heading": "Zona berbahaya",
+      "DeleteAll": "Hapus semua data cloud saya",
+      "Explain": "Tindakan ini menghapus secara permanen semua rekaman, transkrip, dan hasil AI di pustaka cloud Anda — di semua perangkat. File yang tersimpan di perangkat ini tidak tersentuh. Tindakan ini tidak dapat dibatalkan.",
+      "TypeToConfirm": "Ketik DELETE untuk mengonfirmasi",
+      "ConfirmButton": "Hapus semuanya secara permanen",
+      "Success": "Semua data cloud telah dihapus.",
+      "Failed": "Tidak dapat menghapus data cloud Anda. Silakan coba lagi."
+    },
+    "Quota": {
+      "FullBanner": "Penyimpanan cloud penuh — unggahan dijeda. Kosongkan ruang di bawah atau kosongkan sampah untuk melanjutkan.",
+      "NearFull": "Penyimpanan cloud {{pct}}% penuh.",
+      "ManagerHeading": "Kosongkan ruang",
+      "NothingToFree": "Tidak ada rekaman cloud yang bisa dibersihkan.",
+      "Freed": "{{size}} dikosongkan (dapat dipulihkan dari sampah selama 30 hari)",
+      "Remove": "Hapus"
+    },
+    "Delete": {
+      "TitleOne": "Hapus \"{{name}}\"?",
+      "TitleMany": "Hapus {{count}} rekaman?",
+      "Device": "Hapus dari perangkat ini",
+      "DeviceHint": "Memindahkan file lokal ke tempat sampah sistem. Tetap ada di pustaka cloud Anda dan di perangkat lain.",
+      "Cloud": "Hapus dari cloud",
+      "CloudHint": "Memindahkannya ke sampah cloud selama 30 hari. File tetap ada di perangkat ini.",
+      "Everywhere": "Hapus di semua tempat",
+      "EverywhereHint": "Menghapusnya dari cloud (sampah 30 hari) dan memindahkan salinan lokal di semua perangkat Anda ke tempat sampah sistem masing-masing.",
+      "ConfirmDevice": "Hapus dari perangkat",
+      "ConfirmCloud": "Pindahkan ke sampah cloud",
+      "ConfirmEverywhere": "Hapus di semua tempat",
+      "CloudFailed": "Tidak dapat menghapus dari cloud. Silakan coba lagi.",
+      "CloudBatchFailed": "Tidak dapat menghapus {{count}} dari {{total}} dari cloud. Silakan coba lagi."
+    },
+    "FreeExpiry": {
+      "Warning": "Rekaman ini akan dihapus dalam {{days}} hari — simpan selamanya.",
+      "CloudOnly": "File ini hanya ada di cloud dan akan dihapus permanen dalam {{days}} hari kecuali Anda meningkatkan paket.",
+      "Upgrade": "Simpan selamanya"
+    }
   },
   "Common": {
     "Apply": "Terapkan",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Telusuri File",
+    "DragDropClickToBrowse": "Atau klik untuk menelusuri file",
     "DragDropFiles": "Seret dan lepas file audio, video, dan gambar di sini",
     "DragDropSubtitle": "Seret dan lepas file audio, video, dan gambar di sini",
     "ImportMedia": "Impor Media",
@@ -1848,6 +2175,14 @@
     "today": "Hari ini",
     "view_on_seameet": "Lihat di SeaMeet",
     "yesterday": "Kemarin",
+    "TranscriptWall": {
+      "Title": "Sisa rapat ini sudah siap",
+      "BundleTranscript": "Transkrip lengkap",
+      "BundleSummary": "Ringkasan",
+      "BundleChapters": "Bab",
+      "BundleActionItems": "Item tindakan",
+      "Progress": "{{shown}} dari {{total}} ditampilkan"
+    },
     "hide_translations": "Sembunyikan terjemahan",
     "show_translations": "Tampilkan terjemahan"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Berlangganan",
     "LockedChipTooltip": "Berlangganan untuk mengaktifkan",
     "NoteSynthesis": "Sintesis AI",
-    "NoteSynthesisDesc": "Dapatkan ringkasan terstruktur dari catatan ini + rekaman terkait dengan BYOK Pro.",
+    "NoteSynthesisDesc": "Dapatkan ringkasan terstruktur dari catatan ini + rekaman terkait dengan Sync Pro.",
     "PostMeetingAI": "AI Pasca-Pertemuan",
     "PostMeetingAIDesc": "Ringkasan, item tindakan, dan wawasan akan dihasilkan setelah perekaman selesai.",
     "ScreenshotAI": "AI Tangkapan Layar",
-    "ScreenshotAIDesc": "Deskripsikan gambar, ekstrak teks, dan ajukan pertanyaan lanjutan dengan BYOK Pro.",
+    "ScreenshotAIDesc": "Deskripsikan gambar, ekstrak teks, dan ajukan pertanyaan lanjutan dengan Sync Pro.",
     "UnlockPremium": "Buka dengan Premium",
     "Upgrade": "Tingkatkan",
     "WikiList": "Wikis",
-    "WikiListDesc": "Bangun basis pengetahuan secara otomatis dari catatan dan pertemuan Anda dengan BYOK Pro."
+    "WikiListDesc": "Bangun basis pengetahuan secara otomatis dari catatan dan pertemuan Anda dengan Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Tidak ada catatan yang cocok",
@@ -2410,7 +2745,13 @@
       "Description": "Deskripsi",
       "OCR": "Teks (OCR)"
     },
-    "UnknownError": "Kesalahan tidak diketahui"
+    "UnknownError": "Kesalahan tidak diketahui",
+    "OcrWall": {
+      "Title": "Buka OCR",
+      "BundleOcr": "Teks OCR",
+      "BundleDescription": "Deskripsi",
+      "BundleSearch": "Pencarian"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Tangkapan layar terbaru"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Pengaturan",
     "UserAvatarAlt": "pengguna",
+    "ManagedByPlan": "Termasuk dalam paket Sync Pro Anda — AI berjalan pada penyedia yang dikelola SeaMeet. Tidak perlu kunci API.",
     "AppMode": {
       "Title": "Mode aplikasi",
       "Currently": "Saat ini:",
@@ -2918,7 +3260,8 @@
     "Record": "Catatan",
     "Recording": "Rekaman",
     "Screenshot": "Tangkapan Layar",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Cloud"
   },
   "Tray": {
     "MarkEvent": "Tandai Peristiwa",
@@ -3510,6 +3853,38 @@
       "testing": "Mengujicoba…",
       "title": "Penyedia Ucapan ke Teks (Teks Langsung, Transkripsi File)",
       "tutorial": "Tutorial pengaturan"
+    }
+  },
+  "Provenance": {
+    "Managed": "melalui SeaMeet Cloud",
+    "Byok": "melalui kunci {{provider}} Anda"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Buka dengan Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "Anda telah menggunakan 6 jam transkripsi gratis Anda. Sync Pro terus mentranskripsi dan menyimpan rekaman Anda ke cloud.",
+      "Short": "Transkripsi gratis habis — buka dengan Sync Pro",
+      "CTA": "Buka dengan Sync Pro"
+    },
+    "Card": {
+      "Title": "Anda melihat 15 menit pertama",
+      "Reassure": "Sisa rapat ini sudah ditranskripsikan dan disimpan sepenuhnya — hanya disembunyikan di paket gratis.",
+      "SyncProIntro": "Sync Pro membuka lebih banyak:",
+      "Bullet": {
+        "Transcript": "Tampilkan transkrip lengkap rapat ini",
+        "Devices": "Sinkronkan rekaman di semua perangkat Anda",
+        "Backup": "Cadangan cloud — tidak perlu menyimpan salinan lokal"
+      },
+      "GetSyncPro": "Dapatkan Sync Pro",
+      "SeePlans": "Lihat semua paket",
+      "Progress": "{{shown}} dari {{total}} ditampilkan"
+    },
+    "SessionTooLong": {
+      "Long": "Rekaman Anda mencapai batas transkripsi 5 jam. Hentikan dan mulai rekaman baru untuk melanjutkan transkripsi — audio yang sudah direkam telah disimpan.",
+      "Short": "Tercapai batas transkripsi 5 jam — hentikan dan mulai ulang untuk melanjutkan",
+      "CTA": "Hentikan & mulai rekaman baru"
     }
   },
   "TranslationPicker": {

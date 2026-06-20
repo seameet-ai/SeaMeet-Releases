@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Erfordert ein BYOK Pro-Abonnement. Abonnieren Sie für Live-Transkription, KI-Meetingzusammenfassungen und einen interaktiven KI-Agenten."
+    "SubscribeMsg": "Erfordert ein Sync Pro-Abonnement. Abonnieren Sie für Live-Transkription, KI-Meetingzusammenfassungen und einen interaktiven KI-Agenten."
+  },
+  "Paywall": {
+    "Unlock": "Mit Sync Pro freischalten",
+    "Reassurance": "Du hast es bereits — ein Abo zeigt es sofort und für immer.",
+    "RevealCap": {
+      "Title": "Du hast dein kostenloses Transkriptionslimit erreicht",
+      "Body": "Schalte das vollständige Transkript mit Sync Pro frei."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Deaktiviert",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Angewendet auf Transkript + Zusammenfassung + Kapitel. Automatische Erkennung entspricht der gesprochenen Sprache.",
     "TestKey": "Speichern & Überprüfen",
     "UseMainLlmForOcrHint": "Leitet die OCR von Screenshots an Ihren ausgewählten LLM-Anbieter weiter. Aus (Standard): verwendet immer Gemini. Fällt automatisch auf Gemini zurück, wenn der Anbieter das Bild nicht akzeptieren kann.",
+    "UsageReporting": "Anonyme KI-Nutzungszahlen teilen",
+    "UsageReportingDesc": "Nur Anbieter, Modell und Token-Anzahl — niemals Ihre Inhalte. Hilft uns, die Anbieter zuverlässig zu halten.",
     "KeyVerificationFailed": "Schlüsselüberprüfung fehlgeschlagen"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Details anzeigen"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Sichere deine Arbeit & öffne sie auch auf deinem Handy.",
+      "Subline": {
+        "Wall": "Verknüpfe ein Konto, um deine Aufnahmen und Transkripte auf all deinen Geräten zu behalten — und schalte den vollen kostenlosen Tarif frei.",
+        "AnotherDevice": "Verknüpfe ein Konto, um deine Aufnahmen und Transkripte auf deinem Handy und anderen Geräten zu öffnen — und schalte den vollen kostenlosen Tarif frei.",
+        "RevealCap": "Wir haben die ersten 15 Minuten transkribiert. Melde dich (kostenlos) an, um mehr freizuschalten — oder hol dir Sync Pro für unbegrenzte Live-Transkription."
+      },
+      "ContinueWith": "Weiter mit {{provider}}",
+      "NotNow": "Nicht jetzt",
+      "TitleRevealCap": "Deine kostenlose 15-Minuten-Vorschau ist beendet",
+      "SeeSyncPro": "Sync Pro ansehen"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — bring deinen eigenen Schlüssel mit)",
       "ActiveTitle": "Abo aktiv — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Sie haben bereits ein aktives Abonnement. Verwenden Sie \"Abonnement verwalten\", um es anzuzeigen oder zu ändern.",
       "NoApiUrl": "Der Abrechnungsdienst ist nicht konfiguriert. Bitte kontaktieren Sie den Support.",
       "NotAuthenticated": "Bitte melden Sie sich zuerst an, um zu abonnieren. Verwenden Sie das Kontomenü zum Anmelden.",
-      "Unknown": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+      "Unknown": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "SwitchNotSubscribed": "Kein aktives Abo zum Wechseln. Bitte zuerst abonnieren.",
+      "SwitchFailed": "Abrechnungsintervall konnte nicht gewechselt werden. Bitte erneut versuchen oder „Abo verwalten“ nutzen.",
+      "RefundPeriodExpired": "Erstattungszeitraum abgelaufen (30 Tage nach Kauf).",
+      "RefundAlreadyUsed": "Du hast deine einmalige Selbstbedienungs-Erstattung bereits genutzt.",
+      "RefundNoSub": "Kein aktives Abonnement zum Erstatten.",
+      "RefundFailed": "Erstattung konnte nicht verarbeitet werden. Bitte den Support kontaktieren.",
+      "ScheduleFailed": "Änderung konnte nicht geplant werden. Versuchen Sie es erneut oder kontaktieren Sie den Support.",
+      "CancelCadenceFailed": "Die geplante Änderung konnte nicht abgebrochen werden. Bitte erneut versuchen."
     },
     "Explainer": {
       "Continue": "Weiter zum Abonnement",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot bietet ebenfalls einen kostenlosen Tarif an.",
         "InfoNoteGemini": "Google AI Studio stellt dir in der Regel einen kostenlosen Key bereit.",
         "Name": "BYOK Pro",
-        "Price": "4,99 $/Monat"
+        "Price": "4,99 $/Monat",
+        "CTA": "BYOK Pro holen"
       },
       "Free": {
         "Feature1": "Nur Aufnahme",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "Integrierte KI — keine API-Schlüssel erforderlich",
-        "Feature2": "Verwaltete Synchronisierung von Notizen, Audio, Video & Screenshots",
-        "Feature3": "Funktionen für die Teamzusammenarbeit",
-        "Feature4": "Gemeinsame Besprechungsbibliothek",
+        "Feature2": "50 Stunden Meeting-Transkription pro Monat",
+        "Feature3": "KI-Zusammenfassungen, Wiki & Agenten mit automatischem Anbieter-Failover",
+        "Feature4": "Verwaltete Cloud-Synchronisierung — kommt in Kürze zu Ihrem Tarif",
         "Name": "Sync Pro",
+        "Price": "15,99 $/Monat",
+        "PriceAnnual": "12,99 $/Monat",
         "RequestBody": "Hallo SeaMeet-Team — ich interessiere mich für Sync Pro (integrierte KI ohne zu verwaltende API-Schlüssel, Cloud-Synchronisierung, Multi-Device, Team-Zusammenarbeit). Bitte informieren Sie mich, sobald es verfügbar ist.\n\nVielen Dank!",
         "RequestCTA": "Anfragen",
         "RequestSubject": "Ich möchte Sync Pro für SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Abonnieren",
     "Subscribing": "Abonnieren...",
-    "UnlockTitle": "SeaMeet KI-Funktionen freischalten"
+    "UnlockTitle": "SeaMeet KI-Funktionen freischalten",
+    "Pro": {
+      "Title": "Wähle deinen Tarif",
+      "Monthly": "Monatlich",
+      "Annual": "Jährlich",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "12,99 $/Mon. · oder 15,99 $ monatlich",
+      "PriceMonthly": "15,99 $/Mon. · 19% sparen mit Jahresabo",
+      "ColFree": "Kostenlos",
+      "ColPro": "Sync Pro · 12,99 $/Mon.",
+      "CTA": "Sync Pro holen",
+      "Reassurance": "Jederzeit kündbar · 30 Tage Rückgabe",
+      "AdvancedByok": "Erweitert: eigene API-Schlüssel verwenden",
+      "Row": {
+        "LiveTranscription": "Live-Transkription",
+        "LiveTranscriptionFree": "6 Std. gesamt · erste 15 Min.",
+        "LiveTranscriptionPro": "Unbegrenzt*",
+        "FileImport": "Datei-Transkription",
+        "FileImportFree": "—",
+        "FileImportPro": "50 Std./Mon.",
+        "Storage": "Speicher",
+        "StorageFree": "2 GB · 30 Tage",
+        "StoragePro": "250 GB · für immer",
+        "Ocr": "Screenshot-OCR",
+        "OcrFree": "20 gesamt",
+        "OcrPro": "Unbegrenzt",
+        "Notes": "Notizen & Wiki",
+        "NotesFree": "Nur Notizen",
+        "NotesPro": "Voll",
+        "Search": "Alles durchsuchen",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Unbegrenzt · deine Schlüssel",
+        "StorageByok": "Deine eigene Cloud",
+        "NotesByok": "Dein eigenes GitHub",
+        "OcrProSyncMonthly": "Unbegrenzt aufnehmen* · 1,000 Importe/Mon.",
+        "OcrProSyncAnnual": "Unbegrenzt aufnehmen* · 12,000 Importe/Jahr",
+        "FileImportProMonthly": "50 Std./Mon.",
+        "FileImportProAnnual": "600 Std./Jahr"
+      },
+      "OcrFairUse": "* Fair-Use gilt. Bei Sync Pro sind Live-Transkription und Aufnahme in der App unbegrenzt. Importe sind je nach Tarif begrenzt: Datei-Transkription bis 50 Std./Mon. (600 Std./Jahr im Jahrestarif) und OCR importierter Bilder bis 1.000/Mon. (12.000/Jahr)."
+    },
+    "Vault": {
+      "Heading": "Freigeschaltet und synchronisiert",
+      "Subline": "{{transcripts}} Transkripte, {{screenshots}} Screenshots, {{gb}}. Jetzt gehören sie dir, und nichts läuft ab.",
+      "TallyTranscripts": "vollständige Transkripte freigeschaltet",
+      "TallyScreenshots": "Screenshots – OCR und Suche freigeschaltet",
+      "TallyStorage": "für immer behalten (Löschung abgebrochen)",
+      "TallyNotesWiki": "Notizen und Wiki werden jetzt auf allen Geräten synchronisiert",
+      "SeeEverything": "Alles ansehen →",
+      "Retranscribing": "Deine gekürzten Aufnahmen werden vollständig neu transkribiert…",
+      "Renews": "verlängert sich am {{date}}",
+      "Manage": "Verwalten",
+      "Receipt": "Beleg"
+    },
+    "Recommended": "Empfohlen",
+    "OnFreePlan": "Du nutzt Free",
+    "Switching": "Wird gewechselt …",
+    "SwitchToAnnual": "Auf jährlich umstellen",
+    "SwitchToMonthly": "Auf monatlich umstellen",
+    "SwitchConfirm": "Wechsel bestätigen",
+    "SwitchAnnual": {
+      "Title": "Auf jährliche Abrechnung umstellen?",
+      "Body": "Dein Tarif wird sofort auf jährlich umgestellt ($155.88/Jahr, effektiv $12.99/Monat). Stripe schreibt dir den nicht genutzten Teil des laufenden Monats gut und berechnet heute die anteilige Differenz. Dein Limit für Datei-Transkription beträgt dann 600 Stunden/Jahr."
+    },
+    "SwitchMonthly": {
+      "Title": "Auf monatliche Abrechnung umstellen?",
+      "Body": "Dein Tarif wird sofort auf monatlich umgestellt ($15.99/mo). Stripe schreibt dir den nicht genutzten Teil deines Jahreszeitraums als Guthaben für künftige Rechnungen gut. Dein Limit für Datei-Transkription beträgt dann 50 Stunden/Monat."
+    },
+    "Summary": {
+      "StorageAddOns": "Speicher-Add-ons",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / Monat",
+      "NextCharge": "Nächste Abbuchung {{date}}",
+      "SwitchToAnnual": "Auf jährlich umstellen",
+      "SwitchToMonthly": "Auf monatlich umstellen",
+      "SwitchConfirm": "Auf {{target}} Abrechnung umstellen? Dir wird sofort ein anteiliger Betrag berechnet.",
+      "AnnualLabel": "jährliche",
+      "MonthlyLabel": "monatliche",
+      "Switching": "Umstellen…",
+      "SwitchedToAnnual": "Sie sind jetzt auf jährlicher Abrechnung.",
+      "SwitchedToMonthly": "Auf monatliche Abrechnung umgestellt.",
+      "CancellationRefunds": "Kündigung & Rückerstattungen",
+      "RequestRefund": "Rückerstattung beantragen",
+      "RefundUnavailable": "Rückerstattung nicht verfügbar",
+      "CancelSubscription": "Abonnement kündigen",
+      "RefundConfirm": "Rückerstattung beantragen? Damit wird deine letzte Zahlung erstattet und dein Abonnement gekündigt. Du kannst pro Konto nur einmal innerhalb von 30 Tagen nach dem Kauf eine Rückerstattung erhalten.",
+      "RefundIssued": "Rückerstattung ausgestellt. Dein Abonnement wurde gekündigt.",
+      "Cancel": "Abbrechen",
+      "Confirm": "Bestätigen",
+      "ConfirmRefund": "Rückerstattung bestätigen",
+      "Processing": "Wird verarbeitet…",
+      "ScheduleMonthly": "Bei Verlängerung auf monatlich umstellen",
+      "SwitchToAnnualConfirm": "Jetzt auf jährliche Abrechnung umstellen? Wir rechnen Ihre ungenutzte monatliche Zeit auf die erste Jahresrechnung an.",
+      "SwitchToMonthlyConfirm": "Ihr Jahresplan läuft bis {{date}}. Danach werden Sie monatlich abgerechnet. Heute keine Gebühr.",
+      "ScheduledMonthly": "Wechsel geplant. Ihr monatlicher Plan beginnt am {{date}}.",
+      "ScheduledMonthlyNotice": "Monatliche Abrechnung geplant für {{date}}.",
+      "CancelScheduledChange": "Abbrechen",
+      "Canceling": "Wird abgebrochen…",
+      "CanceledScheduledChange": "Geplante Änderung abgebrochen."
+    }
   },
   "BlackHole": {
     "Cancel": "Abbrechen",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Bild erfolgreich importiert",
     "PasteHint": "Strg+V zum Einfügen eines Bildes",
     "PasteHintMac": "⌘V zum Einfügen eines Bildes"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Cloud-Synchronisierung",
+      "Loading": "Wird geladen…",
+      "Unavailable": "Cloud-Synchronisierung ist in diesem Build nicht verfügbar.",
+      "Disabled": "Cloud-Synchronisierung ist deaktiviert.",
+      "StorageHeading": "Speicher",
+      "StorageUsed": "{{used}} von {{quota}} belegt",
+      "QueueHeading": "Upload-Warteschlange",
+      "QueueEmpty": "Es warten keine Uploads.",
+      "PauseAll": "Alle pausieren",
+      "ResumeAll": "Alle fortsetzen",
+      "Retry": "Erneut versuchen",
+      "Backfill": "Vorhandene Bibliothek sichern…"
+    },
+    "State": {
+      "Queued": "In Warteschlange",
+      "Uploading": "Wird hochgeladen",
+      "Error": "Fehlgeschlagen",
+      "Complete": "Synchronisiert"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Audio",
+      "AudioForStt": "Audio (für Transkription)",
+      "Bundle": "KI-Ergebnisse"
+    },
+    "Backfill": {
+      "Title": "Vorhandene Bibliothek sichern",
+      "Description": "Wählen Sie aus, welche Aufnahmen in Ihre Cloud-Bibliothek hochgeladen werden sollen.",
+      "Loading": "Aufnahmen werden geladen…",
+      "LoadFailed": "Ihre Aufnahmen konnten nicht geladen werden. Schließen Sie diesen Dialog und versuchen Sie es erneut.",
+      "Empty": "Alle Ihre Aufnahmen sind bereits gesichert.",
+      "SelectAll": "Alle auswählen",
+      "SelectNone": "Auswahl aufheben",
+      "ColumnName": "Name",
+      "ColumnDate": "Datum",
+      "ColumnType": "Typ",
+      "ColumnSize": "Größe",
+      "TypeVideo": "Video",
+      "TypeAudio": "Audio",
+      "TypeScreenshot": "Screenshot",
+      "SelectRecording": "{{name}} auswählen",
+      "SelectedTotal": "{{num}} ausgewählt · {{size}}",
+      "ExceedsPlan": "Diese Auswahl überschreitet Ihren {{quota}}-Tarif – heben Sie eine Auswahl auf oder geben Sie Cloud-Speicher frei.",
+      "AutoTrimmed": "Einige der größten Aufnahmen wurden nicht ausgewählt, damit die Sicherung in Ihren verbleibenden Speicherplatz passt.",
+      "StartFailed": "Die Sicherung konnte nicht gestartet werden. Bitte versuchen Sie es erneut.",
+      "Confirm": "Auswahl sichern",
+      "Cancel": "Abbrechen",
+      "TextButton": "Notizen & Wiki synchronisieren",
+      "TextRunning": "Notizen & Wiki werden synchronisiert…",
+      "TextDone": "{{count}} Notizen & Wiki-Seiten synchronisiert.",
+      "TextFailed": "Notizen & Wiki konnten nicht synchronisiert werden.",
+      "WelcomeHeading": "Willkommen bei Sync Pro 🎉",
+      "WelcomeBody": "Deine {{total}} bisherigen Meetings werden hochgeladen, damit sie auf jedem Gerät und im Web verfügbar sind…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Schließen",
+      "CompleteToast": "Alle {{total}} Meetings synchronisiert — öffne sie auf jedem Gerät oder unter app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Mit der Cloud synchronisiert",
+      "Uploading": "Wird hochgeladen… {{pct}} %",
+      "Queued": "Wartet auf Upload",
+      "Error": "Synchronisierung fehlgeschlagen – Cloud-Panel öffnen, um es erneut zu versuchen",
+      "CloudOnly": "In der Cloud – Wiedergabe bei Bedarf",
+      "LocalOnly": "Nur auf diesem Gerät",
+      "Downloading": "Wird heruntergeladen… {{pct}} %"
+    },
+    "Action": {
+      "BackUpNow": "In der Cloud sichern",
+      "BackUpSelected": "Sichern",
+      "BackUpQueued": "{{count}} Dateien in der Warteschlange für die Cloud-Sicherung",
+      "KeepOnDevice": "Auf diesem Gerät behalten",
+      "DownloadFailed": "Download aus der Cloud fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "StreamFailed": "Diese Aufnahme konnte nicht aus der Cloud geladen werden. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+      "Downloaded": "Auf diesem Gerät gespeichert",
+      "SyncToLocal": "Lokal synchronisieren",
+      "SyncWithSyncPro": "Diese Aufnahme mit Sync Pro in die Cloud synchronisieren"
+    },
+    "Trash": {
+      "Title": "Papierkorb",
+      "Loading": "Papierkorb wird geladen…",
+      "LoadFailed": "Der Papierkorb konnte nicht geladen werden. Bitte versuchen Sie es erneut.",
+      "Empty": "Der Papierkorb ist leer.",
+      "Summary": "{{count}} im Papierkorb · {{size}}",
+      "ExpiresIn": "Läuft in {{days}} T. ab",
+      "Restore": "Wiederherstellen",
+      "DeleteForever": "Endgültig löschen",
+      "ReallyDelete": "Wirklich löschen?",
+      "EmptyTrash": "Papierkorb leeren",
+      "ReallyEmpty": "Wirklich leeren?",
+      "ActionFailed": "Das hat nicht funktioniert. Bitte versuchen Sie es erneut."
+    },
+    "Usage": {
+      "TabTitle": "Nutzung",
+      "SttHeading": "Transkription",
+      "SttUsed": "{{used}} von {{allowance}} Minuten verwendet",
+      "Unlimited": "Unbegrenzt",
+      "ImportHeading": "Import-Transkription",
+      "ImportUsed": "{{used}} / {{cap}} Std.",
+      "FreePoolsHeading": "Kostenloses Kontingent",
+      "FreeTranscriptionLeft": "{{minutes}} Transkriptionsminuten übrig",
+      "FreeOcrLeft": "{{runs}} OCR-Durchläufe übrig",
+      "FreeRetention": "Kostenlose Aufnahmen werden {{days}} Tage lang aufbewahrt",
+      "Upgrade": "Upgraden",
+      "RunsHeading": "KI-Ausführungen diesen Monat",
+      "RunsEmpty": "Diesen Monat noch keine KI-Aktivität.",
+      "LoadFailed": "Ihre Nutzung konnte nicht geladen werden. Bitte versuchen Sie es erneut.",
+      "ManageStorage": "Speicher verwalten",
+      "AddStorage": "Speicher hinzufügen — +500 GB / $10/Monat",
+      "FeatureStt": "Live-Transkription",
+      "FeatureSummary": "Aufnahme-Zusammenfassungen",
+      "FeatureOcr": "Screenshot-OCR",
+      "FeatureWiki": "Wiki-Erstellung",
+      "FeatureFile": "Dateitranskription",
+      "FeatureGeminiPush": "Uploads für Tiefenanalyse",
+      "ImportCapReached": "Importe pausieren beim Limit bis zur Verlängerung deines Tarifs",
+      "AddStorageSuccess": "{{gb}} GB Speicher hinzugefügt",
+      "AddStorageNotSubscribed": "Für zusätzlichen Speicher ist ein aktives Sync Pro-Abo erforderlich.",
+      "AddStorageUnavailable": "Speicher-Add-ons sind derzeit nicht verfügbar. Bitte versuche es später erneut.",
+      "AddStorageFailed": "Speicher konnte nicht hinzugefügt werden. Bitte versuche es erneut.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "{{gb}} GB für ${{price}}/Mon. hinzufügen? Ein anteiliger Betrag wird jetzt von deiner Karte abgebucht.",
+      "AddStorageCancel": "Abbrechen",
+      "AddStorageConfirmCta": "Kauf bestätigen",
+      "AddStorageWorking": "Wird hinzugefügt…",
+      "AddStorageDecrease": "Einen entfernen",
+      "AddStorageIncrease": "Einen hinzufügen",
+      "AddStorageConfirmExplain": "Füge {{gb}} GB für ${{price}}/Monat hinzu. Speicher-Add-ons werden monatlich abgerechnet (getrennt vom Abrechnungszyklus deines Tarifs). Heute wird ein anteiliger Betrag für den Rest dieses Abrechnungsmonats berechnet; danach werden ${{price}}/Monat automatisch von deiner Karte abgebucht. Verwalten oder kündigen kannst du jederzeit im Abrechnungsportal.",
+      "AddStorageSuccessNotice": "Speicher hinzugefügt. Abonnement und Rechnungen verwalten →",
+      "ManageSubscriptionInvoices": "Abonnement und Rechnungen verwalten",
+      "OcrImportHeading": "OCR importierter Bilder",
+      "OcrImportUsed": "{{used}} / {{cap}} Bilder",
+      "OcrImportCapReached": "OCR importierter Bilder pausiert bei deinem Limit, bis dein Tarif erneuert wird",
+      "FeatureTranscription": "Transkription",
+      "FeatureSynthesis": "Notiz-Zusammenfassungen",
+      "OcrCaptureLabel": "Aufnahme (in der App)",
+      "OcrImportLabel": "Importierte Bilder",
+      "OcrHeading": "Screenshot-OCR",
+      "ImportLabel": "Importierte Dateien"
+    },
+    "WebLibrary": {
+      "Open": "Web-Bibliothek öffnen"
+    },
+    "Devices": {
+      "Heading": "Geräte",
+      "ThisDevice": "Dieses Gerät"
+    },
+    "Prefs": {
+      "AutoDownload": "Neue Aufnahmen automatisch herunterladen",
+      "AutoDownloadHint": "Wenn ein anderes Gerät eine Aufnahme hochlädt, wird automatisch eine Kopie auf dieses Gerät heruntergeladen.",
+      "BackfillPast": "Bisherige Meetings beim Upgrade sichern",
+      "BackfillPastHint": "Beim Upgrade auf Sync Pro werden deine vorhandenen Aufnahmen hochgeladen, damit sie auf alle Geräte synchronisiert werden.",
+      "BackfillAudio": "Audio & Video einbeziehen (nicht nur Transkripte)",
+      "BackfillAudioHint": "Aus lädt nur Transkripte hoch — kleiner und schneller, aber die Originalmedien bleiben auf diesem Gerät."
+    },
+    "Danger": {
+      "Heading": "Gefahrenzone",
+      "DeleteAll": "Alle meine Cloud-Daten löschen",
+      "Explain": "Dadurch werden alle Aufnahmen, Transkripte und KI-Ergebnisse in Ihrer Cloud-Bibliothek endgültig gelöscht – auf allen Geräten. Auf diesem Gerät gespeicherte Dateien bleiben unberührt. Dies kann nicht rückgängig gemacht werden.",
+      "TypeToConfirm": "Geben Sie zur Bestätigung DELETE ein",
+      "ConfirmButton": "Alles endgültig löschen",
+      "Success": "Alle Cloud-Daten wurden gelöscht.",
+      "Failed": "Ihre Cloud-Daten konnten nicht gelöscht werden. Bitte versuchen Sie es erneut."
+    },
+    "Quota": {
+      "FullBanner": "Der Cloud-Speicher ist voll – Uploads sind pausiert. Geben Sie unten Speicherplatz frei oder leeren Sie den Papierkorb, um fortzufahren.",
+      "NearFull": "Der Cloud-Speicher ist zu {{pct}} % voll.",
+      "ManagerHeading": "Speicherplatz freigeben",
+      "NothingToFree": "Keine Cloud-Aufnahmen zum Aufräumen.",
+      "Freed": "{{size}} freigegeben (30 Tage lang aus dem Papierkorb wiederherstellbar)",
+      "Remove": "Entfernen"
+    },
+    "Delete": {
+      "TitleOne": "„{{name}}“ löschen?",
+      "TitleMany": "{{count}} Aufnahmen löschen?",
+      "Device": "Von diesem Gerät entfernen",
+      "DeviceHint": "Verschiebt die lokale Datei in den Papierkorb des Systems. Sie bleibt in Ihrer Cloud-Bibliothek und auf anderen Geräten erhalten.",
+      "Cloud": "Aus der Cloud entfernen",
+      "CloudHint": "Verschiebt sie für 30 Tage in den Cloud-Papierkorb. Die Datei bleibt auf diesem Gerät.",
+      "Everywhere": "Überall löschen",
+      "EverywhereHint": "Entfernt sie aus der Cloud (30 Tage im Papierkorb) und verschiebt lokale Kopien auf allen Ihren Geräten in den jeweiligen Systempapierkorb.",
+      "ConfirmDevice": "Vom Gerät entfernen",
+      "ConfirmCloud": "In den Cloud-Papierkorb verschieben",
+      "ConfirmEverywhere": "Überall löschen",
+      "CloudFailed": "Konnte nicht aus der Cloud entfernt werden. Bitte versuchen Sie es erneut.",
+      "CloudBatchFailed": "{{count}} von {{total}} konnten nicht aus der Cloud entfernt werden. Bitte erneut versuchen."
+    },
+    "FreeExpiry": {
+      "Warning": "Diese Aufnahmen werden in {{days}} Tagen gelöscht – behalte sie für immer.",
+      "CloudOnly": "Diese Datei befindet sich nur in der Cloud und wird in {{days}} Tagen endgültig gelöscht, sofern du kein Upgrade durchführst.",
+      "Upgrade": "Für immer behalten"
+    }
   },
   "Common": {
     "Apply": "Anwenden",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Dateien durchsuchen",
+    "DragDropClickToBrowse": "Oder klicken, um Dateien zu durchsuchen",
     "DragDropFiles": "Ziehen und Ablegen Ihrer Audio-, Video- und Bilddateien hier",
     "DragDropSubtitle": "Audio-, Video- und Bilddateien hier ziehen und ablegen",
     "ImportMedia": "Medien importieren",
@@ -1848,6 +2175,14 @@
     "today": "Heute",
     "view_on_seameet": "Auf SeaMeet ansehen",
     "yesterday": "Gestern",
+    "TranscriptWall": {
+      "Title": "Der Rest dieses Meetings ist bereit",
+      "BundleTranscript": "Vollständiges Transkript",
+      "BundleSummary": "Zusammenfassung",
+      "BundleChapters": "Kapitel",
+      "BundleActionItems": "Aufgaben",
+      "Progress": "{{shown}} von {{total}} angezeigt"
+    },
     "hide_translations": "Übersetzungen ausblenden",
     "show_translations": "Übersetzungen anzeigen"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Abonnieren",
     "LockedChipTooltip": "Abonniere, um zu aktivieren",
     "NoteSynthesis": "KI-Synthese",
-    "NoteSynthesisDesc": "Erhalte eine strukturierte Zusammenfassung dieser Notiz + verknüpfte Aufnahme mit BYOK Pro.",
+    "NoteSynthesisDesc": "Erhalte eine strukturierte Zusammenfassung dieser Notiz + verknüpfte Aufnahme mit Sync Pro.",
     "PostMeetingAI": "KI nach dem Meeting",
     "PostMeetingAIDesc": "Zusammenfassungen, Aufgaben und Erkenntnisse werden nach Abschluss der Aufnahme generiert.",
     "ScreenshotAI": "Screenshot-KI",
-    "ScreenshotAIDesc": "Beschreibe Bilder, extrahiere Text und stelle Folgefragen mit BYOK Pro.",
+    "ScreenshotAIDesc": "Beschreibe Bilder, extrahiere Text und stelle Folgefragen mit Sync Pro.",
     "UnlockPremium": "Mit Premium freischalten",
     "Upgrade": "Upgrade",
     "WikiList": "Wikis",
-    "WikiListDesc": "Erstelle automatisch eine Wissensdatenbank aus deinen Notizen und Meetings mit BYOK Pro."
+    "WikiListDesc": "Erstelle automatisch eine Wissensdatenbank aus deinen Notizen und Meetings mit Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Keine passenden Notizen",
@@ -2410,7 +2745,13 @@
       "Description": "Beschreibung",
       "OCR": "Text (OCR)"
     },
-    "UnknownError": "Unbekannter Fehler"
+    "UnknownError": "Unbekannter Fehler",
+    "OcrWall": {
+      "Title": "OCR freischalten",
+      "BundleOcr": "OCR-Text",
+      "BundleDescription": "Beschreibung",
+      "BundleSearch": "Suche"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Letzte Screenshots"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Einstellungen",
     "UserAvatarAlt": "Benutzer",
+    "ManagedByPlan": "In Ihrem Sync-Pro-Tarif enthalten — die KI läuft über von SeaMeet verwaltete Anbieter. Keine API-Schlüssel erforderlich.",
     "AppMode": {
       "Title": "App-Modus",
       "Currently": "Aktuell:",
@@ -2918,7 +3260,8 @@
     "Record": "Aufzeichnen",
     "Recording": "Aufnahme",
     "Screenshot": "Screenshot",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Cloud"
   },
   "Tray": {
     "MarkEvent": "Ereignis markieren",
@@ -3510,6 +3853,38 @@
       "testing": "Teste…",
       "title": "Spracherkennung-Anbieter (Live-Untertitel, Datei-Transkription)",
       "tutorial": "Einrichtungsanleitung"
+    }
+  },
+  "Provenance": {
+    "Managed": "über SeaMeet Cloud",
+    "Byok": "über Ihren {{provider}}-Schlüssel"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Mit Sync Pro freischalten"
+    },
+    "FreeExhausted": {
+      "Long": "Du hast deine 6 Stunden kostenlose Transkription aufgebraucht. Sync Pro transkribiert weiter und speichert deine Aufnahmen in der Cloud.",
+      "Short": "Kostenlose Transkription aufgebraucht — mit Sync Pro freischalten",
+      "CTA": "Mit Sync Pro freischalten"
+    },
+    "Card": {
+      "Title": "Du siehst die ersten 15 Minuten",
+      "Reassure": "Der Rest dieses Meetings ist vollständig transkribiert und gespeichert — er ist im kostenlosen Tarif nur ausgeblendet.",
+      "SyncProIntro": "Sync Pro schaltet mehr frei:",
+      "Bullet": {
+        "Transcript": "Das vollständige Transkript dieses Meetings anzeigen",
+        "Devices": "Aufnahmen über alle deine Geräte synchronisieren",
+        "Backup": "Cloud-Backup — keine lokale Kopie nötig"
+      },
+      "GetSyncPro": "Sync Pro holen",
+      "SeePlans": "Alle Tarife ansehen",
+      "Progress": "{{shown}} von {{total}} angezeigt"
+    },
+    "SessionTooLong": {
+      "Long": "Die Aufnahme hat das Transkriptionslimit von 5 Stunden erreicht. Stoppe und starte eine neue Aufnahme, um weiter zu transkribieren — das bisher aufgenommene Audio wurde gespeichert.",
+      "Short": "5-Stunden-Transkriptionslimit erreicht — stoppe und starte neu, um fortzufahren",
+      "CTA": "Stoppen & neue Aufnahme starten"
     }
   },
   "TranslationPicker": {

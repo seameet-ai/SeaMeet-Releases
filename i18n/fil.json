@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Nangangailangan ng BYOK Pro subscription. Mag-subscribe para sa live transcription, AI meeting summaries, at interactive AI agent."
+    "SubscribeMsg": "Nangangailangan ng Sync Pro subscription. Mag-subscribe para sa live transcription, AI meeting summaries, at interactive AI agent."
+  },
+  "Paywall": {
+    "Unlock": "I-unlock gamit ang Sync Pro",
+    "Reassurance": "Nasa iyo na ito — ang pag-subscribe ay agad itong ipapakita, habambuhay.",
+    "RevealCap": {
+      "Title": "Naabot mo na ang iyong libreng transcription",
+      "Body": "I-unlock ang buong transcript gamit ang Sync Pro."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Hindi pinagana",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Ipinapatupad sa transcript + buod + mga kabanata. Ang awtomatikong pagtuklas ay tumutugma sa wikang sinasalita.",
     "TestKey": "I-save at Suriin",
     "UseMainLlmForOcrHint": "I-reroute ang screenshot OCR sa iyong napiling LLM provider. Off (default): palaging ginagamit ang Gemini. Awtomatikong babalik sa Gemini kung hindi matanggap ng provider ang imahe.",
+    "UsageReporting": "Ibahagi ang anonymous na bilang ng paggamit ng AI",
+    "UsageReportingDesc": "Provider, model, at bilang ng token lamang — hindi kailanman ang iyong content. Tumutulong ito sa amin na panatilihing maaasahan ang mga provider.",
     "KeyVerificationFailed": "Nabigo ang pag-verify ng key"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Tingnan ang Mga Detalye"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "I-save ang iyong trabaho at buksan din ito sa iyong telepono.",
+      "Subline": {
+        "Wall": "Mag-link ng account para mapanatili ang iyong mga recording at transcript sa lahat ng iyong device — at i-unlock ang buong libreng tier.",
+        "AnotherDevice": "Mag-link ng account para mabuksan ang iyong mga recording at transcript sa iyong telepono at iba pang device — at i-unlock ang buong libreng tier.",
+        "RevealCap": "Na-transcribe namin ang unang 15 minuto. Mag-sign in (libre) para mag-unlock ng higit pa — o kumuha ng Sync Pro para sa walang limitasyong live na transcription."
+      },
+      "ContinueWith": "Magpatuloy gamit ang {{provider}}",
+      "NotNow": "Hindi muna",
+      "TitleRevealCap": "Tapos na ang iyong libreng 15-minutong preview",
+      "SeeSyncPro": "Tingnan ang Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — dalhin ang sarili mong susi)",
       "ActiveTitle": "Aktibo ang subscription — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Mayroon ka nang aktibong subscription. Gamitin ang Pamahalaan ang Subscription upang tingnan o baguhin ito.",
       "NoApiUrl": "Hindi naka-configure ang serbisyo ng billing. Makipag-ugnayan sa suporta.",
       "NotAuthenticated": "Mangyaring mag-sign in muna para mag-subscribe. Gamitin ang menu ng account para mag-sign in.",
-      "Unknown": "May naganap na error. Mangyaring subukan ulit."
+      "Unknown": "May naganap na error. Mangyaring subukan ulit.",
+      "SwitchNotSubscribed": "Walang aktibong subscription na malilipat. Mag-subscribe muna.",
+      "SwitchFailed": "Hindi nailipat ang cycle ng pagsingil. Subukan ulit, o gamitin ang Pamahalaan ang Subscription.",
+      "RefundPeriodExpired": "Nag-expire na ang refund window (30 araw mula sa pagbili).",
+      "RefundAlreadyUsed": "Nagamit mo na ang iyong nag-iisang self-service refund.",
+      "RefundNoSub": "Walang aktibong subscription na maa-refund.",
+      "RefundFailed": "Hindi maproseso ang refund. Mangyaring makipag-ugnayan sa support.",
+      "ScheduleFailed": "Hindi ma-iskedyul ang pagbabago. Subukang muli o makipag-ugnay sa suporta.",
+      "CancelCadenceFailed": "Hindi makansela ang naka-iskedyul na pagbabago. Subukang muli."
     },
     "Explainer": {
       "Continue": "Magpatuloy sa pag-subscribe",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "May libreng plan din ang GitHub Copilot.",
         "InfoNoteGemini": "Kadalasang bibigyan ka ng Google AI Studio ng libreng key.",
         "Name": "BYOK Pro",
-        "Price": "$4.99/buwan"
+        "Price": "$4.99/buwan",
+        "CTA": "Kunin ang BYOK Pro"
       },
       "Free": {
         "Feature1": "Pagre-record lang",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "Built-in na AI — hindi na kailangan ng API keys",
-        "Feature2": "Managed sync ng mga note, audio, video, at screenshot",
-        "Feature3": "Mga tampok ng pakikipagtulungan ng koponan",
-        "Feature4": "Nakabahaging library ng meeting",
+        "Feature2": "50 oras ng transcription ng meeting bawat buwan",
+        "Feature3": "Mga AI summary, wiki at agent na may awtomatikong palit ng provider",
+        "Feature4": "Pinamamahalaang cloud sync — paparating sa iyong plan",
         "Name": "Sync Pro",
+        "Price": "$15.99/buwan",
+        "PriceAnnual": "$12.99/buwan",
         "RequestBody": "Hi SeaMeet team — interesado ako sa Sync Pro (built-in AI nang walang API keys na pamamahalaan, cloud sync, multi-device, team collaboration). Mangyaring ipaalam sa akin kapag available na ito.\n\nSalamat!",
         "RequestCTA": "Hilingin ito",
         "RequestSubject": "Gusto ko ng Sync Pro para sa SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Mag-subscribe",
     "Subscribing": "Nagsa-subscribe...",
-    "UnlockTitle": "I-unlock ang mga AI Feature ng SeaMeet"
+    "UnlockTitle": "I-unlock ang mga AI Feature ng SeaMeet",
+    "Pro": {
+      "Title": "Piliin ang iyong plano",
+      "Monthly": "Buwanan",
+      "Annual": "Taunan",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/buwan · o $15.99 kada buwan",
+      "PriceMonthly": "$15.99/buwan · makatipid ng 19% sa taunan",
+      "ColFree": "Libre",
+      "ColPro": "Sync Pro · $12.99/buwan",
+      "CTA": "Kunin ang Sync Pro",
+      "Reassurance": "Kanselahin anumang oras · 30-araw na refund",
+      "AdvancedByok": "Advanced: gamitin ang sarili mong API keys",
+      "Row": {
+        "LiveTranscription": "Live na transkripsyon",
+        "LiveTranscriptionFree": "6 oras lahat · unang 15 min",
+        "LiveTranscriptionPro": "Walang limitasyon*",
+        "FileImport": "Transkripsyon ng file",
+        "FileImportFree": "—",
+        "FileImportPro": "50 oras/buwan",
+        "Storage": "Storage",
+        "StorageFree": "2 GB · 30 araw",
+        "StoragePro": "250 GB · habang-buhay",
+        "Ocr": "OCR ng screenshot",
+        "OcrFree": "20 lahat",
+        "OcrPro": "Walang limitasyon",
+        "Notes": "Notes at wiki",
+        "NotesFree": "Notes lang",
+        "NotesPro": "Buo",
+        "Search": "Hanapin lahat",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Walang limitasyon · iyong mga key",
+        "StorageByok": "Sariling cloud mo",
+        "NotesByok": "Sariling GitHub mo",
+        "OcrProSyncMonthly": "Walang limitasyong capture* · 1,000 import/buwan",
+        "OcrProSyncAnnual": "Walang limitasyong capture* · 12,000 import/taon",
+        "FileImportProMonthly": "50 oras/buwan",
+        "FileImportProAnnual": "600 oras/taon"
+      },
+      "OcrFairUse": "* May fair use. Sa Sync Pro, walang limitasyon ang live transcription at ang pagkuha sa app. May limitasyon ang mga import ayon sa iyong plano: transkripsyon ng file hanggang 50 oras/buwan (600 oras/taon sa taunan), at OCR ng na-import na larawan hanggang 1,000/buwan (12,000/taon)."
+    },
+    "Vault": {
+      "Heading": "Na-unlock at Naka-sync",
+      "Subline": "{{transcripts}} transcript, {{screenshots}} screenshot, {{gb}}. Sa iyo na ngayon, at walang mag-e-expire.",
+      "TallyTranscripts": "buong transcript ang nabuksan",
+      "TallyScreenshots": "screenshot — OCR at paghahanap na-unlock",
+      "TallyStorage": "itinatago habang-buhay (kinansela ang pagtanggal)",
+      "TallyNotesWiki": "Ang mga tala at wiki ay naka-sync na sa lahat ng iyong device",
+      "SeeEverything": "Tingnan lahat →",
+      "Retranscribing": "Muling tina-transcribe nang buo ang iyong mga capped na recording…",
+      "Renews": "magre-renew sa {{date}}",
+      "Manage": "Pamahalaan",
+      "Receipt": "Resibo"
+    },
+    "Recommended": "Inirerekomenda",
+    "OnFreePlan": "Nasa Free ka",
+    "Switching": "Nililipat…",
+    "SwitchToAnnual": "Lumipat sa taunan",
+    "SwitchToMonthly": "Lumipat sa buwanan",
+    "SwitchConfirm": "Kumpirmahin ang paglipat",
+    "SwitchAnnual": {
+      "Title": "Lumipat sa taunang pagsingil?",
+      "Body": "Agad na magbabago ang iyong plano tungo sa taunan ($155.88/taon, katumbas ng $12.99/buwan). Ikinredito ng Stripe ang hindi nagamit na bahagi ng kasalukuyang buwan mo at sisingilin ang prorated na kaibahan ngayon. Ang limitasyon mo sa file transcription ay magiging 600 oras/taon."
+    },
+    "SwitchMonthly": {
+      "Title": "Lumipat sa buwanang pagsingil?",
+      "Body": "Agad na magbabago ang iyong plano tungo sa buwanan ($15.99/mo). Ikinredito ng Stripe ang hindi nagamit na bahagi ng iyong taunang termino bilang balanse para sa mga susunod na invoice. Ang limitasyon mo sa file transcription ay magiging 50 oras/buwan."
+    },
+    "Summary": {
+      "StorageAddOns": "Mga storage add-on",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / buwan",
+      "NextCharge": "Susunod na singil {{date}}",
+      "SwitchToAnnual": "Lumipat sa taunan",
+      "SwitchToMonthly": "Lumipat sa buwanan",
+      "SwitchConfirm": "Lumipat sa {{target}} na pagsingil? Maniningil ka ng prorated na halaga kaagad.",
+      "AnnualLabel": "taunang",
+      "MonthlyLabel": "buwanang",
+      "Switching": "Inilipat…",
+      "SwitchedToAnnual": "Ikaw ay nasa taunang pagsingil na ngayon.",
+      "SwitchedToMonthly": "Lumipat sa buwanang pagsingil.",
+      "CancellationRefunds": "Pagkansela at mga refund",
+      "RequestRefund": "Humiling ng refund",
+      "RefundUnavailable": "Hindi available ang refund",
+      "CancelSubscription": "Kanselahin ang subscription",
+      "RefundConfirm": "Humiling ng refund? Magrere-refund ito ng iyong pinakahuling bayad at kakanselahin ang iyong subscription. Maaari ka lamang mag-refund ng isang beses bawat account, sa loob ng 30 araw mula sa pagbili.",
+      "RefundIssued": "Nailabas na ang refund. Nakansela ang iyong subscription.",
+      "Cancel": "Kanselahin",
+      "Confirm": "Kumpirmahin",
+      "ConfirmRefund": "Kumpirmahin ang refund",
+      "Processing": "Pinoproseso…",
+      "ScheduleMonthly": "Lumipat sa buwanan kapag nag-renew",
+      "SwitchToAnnualConfirm": "Lumipat sa taunang pagsingil ngayon? Iku-credit namin ang hindi nagamit na buwanang oras mo sa iyong unang taunang singil.",
+      "SwitchToMonthlyConfirm": "Magpapatuloy ang taunang plano mo hanggang {{date}}. Pagkatapos, sisingilin ka buwan-buwan. Walang singil ngayon.",
+      "ScheduledMonthly": "Naka-iskedyul ang paglipat. Magsisimula ang iyong buwanang plano sa {{date}}.",
+      "ScheduledMonthlyNotice": "Naka-iskedyul ang buwanang pagsingil sa {{date}}.",
+      "CancelScheduledChange": "Kanselahin",
+      "Canceling": "Kinakansela…",
+      "CanceledScheduledChange": "Nakansela ang naka-iskedyul na pagbabago."
+    }
   },
   "BlackHole": {
     "Cancel": "Kanselahin",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Matagumpay na na-import ang larawan",
     "PasteHint": "Ctrl+V para i-paste ang larawan",
     "PasteHintMac": "⌘V para i-paste ang larawan"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Pag-sync sa Cloud",
+      "Loading": "Naglo-load…",
+      "Unavailable": "Hindi available ang cloud sync sa build na ito.",
+      "Disabled": "Naka-off ang cloud sync.",
+      "StorageHeading": "Storage",
+      "StorageUsed": "{{used}} sa {{quota}} ang nagamit",
+      "QueueHeading": "Pila ng upload",
+      "QueueEmpty": "Walang naghihintay na i-upload.",
+      "PauseAll": "I-pause lahat",
+      "ResumeAll": "Ituloy lahat",
+      "Retry": "Subukan ulit",
+      "Backfill": "I-back up ang kasalukuyang library…"
+    },
+    "State": {
+      "Queued": "Nakapila",
+      "Uploading": "Ina-upload",
+      "Error": "Nabigo",
+      "Complete": "Naka-sync"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Audio",
+      "AudioForStt": "Audio (para sa transcription)",
+      "Bundle": "Mga resulta ng AI"
+    },
+    "Backfill": {
+      "Title": "I-back up ang kasalukuyang library",
+      "Description": "Piliin kung aling mga recording ang ia-upload sa iyong cloud library.",
+      "Loading": "Naglo-load ng mga recording…",
+      "LoadFailed": "Hindi ma-load ang iyong mga recording. Isara ang dialog na ito at subukan ulit.",
+      "Empty": "Naka-back up na ang lahat ng iyong recording.",
+      "SelectAll": "Piliin lahat",
+      "SelectNone": "Alisin ang lahat ng pinili",
+      "ColumnName": "Pangalan",
+      "ColumnDate": "Petsa",
+      "ColumnType": "Uri",
+      "ColumnSize": "Laki",
+      "TypeVideo": "Video",
+      "TypeAudio": "Audio",
+      "TypeScreenshot": "Screenshot",
+      "SelectRecording": "Piliin ang {{name}}",
+      "SelectedTotal": "{{num}} ang napili · {{size}}",
+      "ExceedsPlan": "Lumalagpas ang napili sa iyong {{quota}} plan — mag-alis ng pinili o magbakante ng espasyo sa cloud.",
+      "AutoTrimmed": "Hindi napili ang ilan sa pinakamalalaking recording para magkasya ang backup sa natitira mong espasyo.",
+      "StartFailed": "Hindi masimulan ang backup. Pakisubukan ulit.",
+      "Confirm": "I-back up ang napili",
+      "Cancel": "Kanselahin",
+      "TextButton": "I-sync ang mga tala at wiki",
+      "TextRunning": "Sina-sync ang mga tala at wiki…",
+      "TextDone": "Na-sync ang {{count}} tala at wiki page.",
+      "TextFailed": "Hindi ma-sync ang mga tala at wiki.",
+      "WelcomeHeading": "Maligayang pagdating sa Sync Pro 🎉",
+      "WelcomeBody": "Ina-upload ang iyong {{total}} nakaraang meeting para available ang mga ito sa bawat device at sa web…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "I-dismiss",
+      "CompleteToast": "Lahat ng {{total}} meeting ay naka-sync na — buksan ang mga ito sa kahit anong device o sa app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Naka-sync sa cloud",
+      "Uploading": "Ina-upload… {{pct}}%",
+      "Queued": "Naghihintay na ma-upload",
+      "Error": "Nabigo ang sync — buksan ang Cloud panel para subukan ulit",
+      "CloudOnly": "Nasa cloud — magpe-play kapag kailangan",
+      "LocalOnly": "Nasa device na ito lang",
+      "Downloading": "Dina-download… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "I-back up sa cloud",
+      "BackUpSelected": "I-back up",
+      "BackUpQueued": "{{count}} file ang nakapila para sa cloud backup",
+      "KeepOnDevice": "Itago sa device na ito",
+      "DownloadFailed": "Hindi ma-download mula sa cloud. Pakisubukan ulit.",
+      "StreamFailed": "Hindi ma-load ang recording na ito mula sa cloud. Suriin ang iyong koneksyon at subukan ulit.",
+      "Downloaded": "Na-save sa device na ito",
+      "SyncToLocal": "I-sync sa lokal",
+      "SyncWithSyncPro": "I-sync ang recording na ito sa cloud gamit ang Sync Pro"
+    },
+    "Trash": {
+      "Title": "Basurahan",
+      "Loading": "Nilo-load ang basurahan…",
+      "LoadFailed": "Hindi ma-load ang basurahan. Pakisubukan ulit.",
+      "Empty": "Walang laman ang basurahan.",
+      "Summary": "{{count}} sa basurahan · {{size}}",
+      "ExpiresIn": "Mag-e-expire sa loob ng {{days}} araw",
+      "Restore": "I-restore",
+      "DeleteForever": "Permanenteng i-delete",
+      "ReallyDelete": "Talagang i-delete?",
+      "EmptyTrash": "I-empty ang basurahan",
+      "ReallyEmpty": "Talagang i-empty?",
+      "ActionFailed": "Hindi gumana. Pakisubukan ulit."
+    },
+    "Usage": {
+      "TabTitle": "Paggamit",
+      "SttHeading": "Transkripsyon",
+      "SttUsed": "{{used}} sa {{allowance}} minuto ang nagamit",
+      "Unlimited": "Walang limitasyon",
+      "ImportHeading": "Transkripsyon ng import",
+      "ImportUsed": "{{used}} / {{cap}} oras",
+      "FreePoolsHeading": "Mga libreng alawans",
+      "FreeTranscriptionLeft": "{{minutes}} minutong transkripsyon ang natitira",
+      "FreeOcrLeft": "{{runs}} OCR run ang natitira",
+      "FreeRetention": "Iniingatan ang mga libreng recording nang {{days}} araw",
+      "Upgrade": "Mag-upgrade",
+      "RunsHeading": "Mga AI run ngayong buwan",
+      "RunsEmpty": "Wala pang aktibidad ng AI ngayong buwan.",
+      "LoadFailed": "Hindi ma-load ang iyong paggamit. Pakisubukan ulit.",
+      "ManageStorage": "Pamahalaan ang storage",
+      "AddStorage": "Magdagdag ng storage — +500 GB / $10/buwan",
+      "FeatureStt": "Live na transkripsyon",
+      "FeatureSummary": "Mga buod ng recording",
+      "FeatureOcr": "OCR ng screenshot",
+      "FeatureWiki": "Paggawa ng wiki",
+      "FeatureFile": "Transkripsyon ng file",
+      "FeatureGeminiPush": "Mga upload para sa malalim na pagsusuri",
+      "ImportCapReached": "Huhinto ang mga import sa iyong cap hanggang mag-renew ang iyong plano",
+      "AddStorageSuccess": "Nakapagdagdag ng {{gb}} GB na storage",
+      "AddStorageNotSubscribed": "Kailangan ng aktibong subscription sa Sync Pro para magdagdag ng storage.",
+      "AddStorageUnavailable": "Hindi available ang mga storage add-on sa ngayon. Pakisubukang muli mamaya.",
+      "AddStorageFailed": "Hindi naidagdag ang storage. Pakisubukang muli.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Magdagdag ng {{gb}} GB sa ${{price}}/buwan? Sisingilin ngayon ang iyong card ng prorated na halaga.",
+      "AddStorageCancel": "Kanselahin",
+      "AddStorageConfirmCta": "Kumpirmahin ang pagbili",
+      "AddStorageWorking": "Idinadagdag…",
+      "AddStorageDecrease": "Bawasan ng isa",
+      "AddStorageIncrease": "Dagdagan ng isa",
+      "AddStorageConfirmExplain": "Magdagdag ng {{gb}} GB para sa ${{price}}/buwan. Ang storage add-ons ay binibili kada buwan (hiwalay sa billing cycle ng iyong plan). Ngayon, sisingilin ka ng prorated na halaga para sa natitirang araw ng billing month na ito; mula doon, awtomatikong sisingilin ang ${{price}}/buwan sa iyong card. Maaari mong pamahalaan o kanselahin anumang oras sa billing portal.",
+      "AddStorageSuccessNotice": "Naidagdag ang storage. Pamahalaan ang subscription at invoices →",
+      "ManageSubscriptionInvoices": "Pamahalaan ang subscription at invoices",
+      "OcrImportHeading": "OCR ng na-import na larawan",
+      "OcrImportUsed": "{{used}} / {{cap}} larawan",
+      "OcrImportCapReached": "Huhinto ang OCR ng na-import na larawan sa iyong limitasyon hanggang mag-renew ang plano mo",
+      "FeatureTranscription": "Transkripsyon",
+      "FeatureSynthesis": "Mga buod ng tala",
+      "OcrCaptureLabel": "Pagkuha (sa app)",
+      "OcrImportLabel": "Mga na-import na larawan",
+      "OcrHeading": "OCR ng screenshot",
+      "ImportLabel": "Mga na-import na file"
+    },
+    "WebLibrary": {
+      "Open": "Buksan ang web library"
+    },
+    "Devices": {
+      "Heading": "Mga device",
+      "ThisDevice": "Ang device na ito"
+    },
+    "Prefs": {
+      "AutoDownload": "Awtomatikong i-download ang mga bagong recording",
+      "AutoDownloadHint": "Kapag nag-upload ng recording ang ibang device, awtomatikong magda-download ng kopya sa device na ito.",
+      "BackfillPast": "I-back up ang mga nakaraang meeting sa pag-upgrade",
+      "BackfillPastHint": "Kapag nag-upgrade ka sa Sync Pro, ia-upload ang iyong mga umiiral na recording para mag-sync ang mga ito sa bawat device.",
+      "BackfillAudio": "Isama ang audio at video (hindi lang mga transcript)",
+      "BackfillAudioHint": "Kapag naka-off, mga transcript lang ang ina-upload — mas maliit at mas mabilis, ngunit mananatili sa device na ito ang orihinal na media."
+    },
+    "Danger": {
+      "Heading": "Delikadong zone",
+      "DeleteAll": "I-delete ang lahat ng cloud data ko",
+      "Explain": "Permanente nitong dine-delete ang bawat recording, transcript, at AI result sa iyong cloud library — sa lahat ng device. Hindi magagalaw ang mga file na naka-save sa device na ito. Hindi na ito maibabalik.",
+      "TypeToConfirm": "I-type ang DELETE para kumpirmahin",
+      "ConfirmButton": "Permanenteng i-delete ang lahat",
+      "Success": "Na-delete na ang lahat ng cloud data.",
+      "Failed": "Hindi ma-delete ang iyong cloud data. Pakisubukan ulit."
+    },
+    "Quota": {
+      "FullBanner": "Puno na ang cloud storage — naka-pause ang mga upload. Magbakante ng espasyo sa ibaba o i-empty ang basurahan para magpatuloy.",
+      "NearFull": "{{pct}}% na puno ang cloud storage.",
+      "ManagerHeading": "Magbakante ng espasyo",
+      "NothingToFree": "Walang cloud recording na maaaring linisin.",
+      "Freed": "Nakabakante ng {{size}} (maibabalik mula sa basurahan sa loob ng 30 araw)",
+      "Remove": "Alisin"
+    },
+    "Delete": {
+      "TitleOne": "I-delete ang \"{{name}}\"?",
+      "TitleMany": "I-delete ang {{count}} recording?",
+      "Device": "Alisin sa device na ito",
+      "DeviceHint": "Inililipat ang lokal na file sa basurahan ng system. Mananatili ito sa iyong cloud library at sa ibang mga device.",
+      "Cloud": "Alisin sa cloud",
+      "CloudHint": "Inililipat ito sa basurahan ng cloud sa loob ng 30 araw. Mananatili ang file sa device na ito.",
+      "Everywhere": "I-delete kahit saan",
+      "EverywhereHint": "Inaalis ito sa cloud (30 araw sa basurahan) at inililipat ang mga lokal na kopya sa lahat ng iyong device sa kani-kanilang basurahan ng system.",
+      "ConfirmDevice": "Alisin sa device",
+      "ConfirmCloud": "Ilipat sa basurahan ng cloud",
+      "ConfirmEverywhere": "I-delete kahit saan",
+      "CloudFailed": "Hindi maalis sa cloud. Pakisubukan ulit.",
+      "CloudBatchFailed": "Hindi maalis ang {{count}} sa {{total}} mula sa cloud. Pakisubukang muli."
+    },
+    "FreeExpiry": {
+      "Warning": "Mabubura ang mga recording na ito sa loob ng {{days}} araw — itago ang mga ito habambuhay.",
+      "CloudOnly": "Nasa cloud lang ang file na ito at permanenteng buburahin sa loob ng {{days}} araw maliban kung mag-upgrade ka.",
+      "Upgrade": "Itago habambuhay"
+    }
   },
   "Common": {
     "Apply": "Iapply",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Mag-browse ng mga file",
+    "DragDropClickToBrowse": "O i-click upang mag-browse ng mga file",
     "DragDropFiles": "I-drag at i-drop ang iyong audio, video, at mga larawan dito",
     "DragDropSubtitle": "I-drag at i-drop ang audio, video, at mga larawan dito",
     "ImportMedia": "Mag-import ng Media",
@@ -1848,6 +2175,14 @@
     "today": "Ngayong araw",
     "view_on_seameet": "Tingnan sa SeaMeet",
     "yesterday": "Kahapon",
+    "TranscriptWall": {
+      "Title": "Handa na ang natitirang bahagi ng pulong na ito",
+      "BundleTranscript": "Buong transcript",
+      "BundleSummary": "Buod",
+      "BundleChapters": "Mga kabanata",
+      "BundleActionItems": "Mga aksyong gagawin",
+      "Progress": "{{shown}} sa {{total}} ang ipinakita"
+    },
     "hide_translations": "Itago ang mga pagsasalin",
     "show_translations": "Ipakita ang mga pagsasalin"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Mag-subscribe",
     "LockedChipTooltip": "Mag-subscribe upang paganahin",
     "NoteSynthesis": "Synthesis ng AI",
-    "NoteSynthesisDesc": "Kumuha ng istrukturadong buod ng tala na ito + naka-link na recording gamit ang BYOK Pro.",
+    "NoteSynthesisDesc": "Kumuha ng istrukturadong buod ng tala na ito + naka-link na recording gamit ang Sync Pro.",
     "PostMeetingAI": "Post-Meeting AI",
     "PostMeetingAIDesc": "Mga buod, mga action item, at mga insight ang gagawin pagkatapos matapos ang recording.",
     "ScreenshotAI": "Screenshot AI",
-    "ScreenshotAIDesc": "Ilarawan ang mga larawan, kunin ang teksto, at magtanong ng follow-up na mga tanong gamit ang BYOK Pro.",
+    "ScreenshotAIDesc": "Ilarawan ang mga larawan, kunin ang teksto, at magtanong ng follow-up na mga tanong gamit ang Sync Pro.",
     "UnlockPremium": "I-unlock gamit ang Premium",
     "Upgrade": "I-upgrade",
     "WikiList": "Wikis",
-    "WikiListDesc": "Awtomatikong bumuo ng knowledge base mula sa iyong mga tala at pagpupulong gamit ang BYOK Pro."
+    "WikiListDesc": "Awtomatikong bumuo ng knowledge base mula sa iyong mga tala at pagpupulong gamit ang Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Walang tugmang tala",
@@ -2410,7 +2745,13 @@
       "Description": "Paglalarawan",
       "OCR": "Teksto (OCR)"
     },
-    "UnknownError": "Hindi kilalang error"
+    "UnknownError": "Hindi kilalang error",
+    "OcrWall": {
+      "Title": "I-unlock ang OCR",
+      "BundleOcr": "Teksto ng OCR",
+      "BundleDescription": "Paglalarawan",
+      "BundleSearch": "Paghahanap"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Kamakailang screenshots"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Mga setting",
     "UserAvatarAlt": "gumagamit",
+    "ManagedByPlan": "Kasama sa iyong Sync Pro plan — tumatakbo ang AI sa mga provider na pinamamahalaan ng SeaMeet. Hindi kailangan ng API key.",
     "AppMode": {
       "Title": "Mode ng app",
       "Currently": "Kasalukuyan:",
@@ -2918,7 +3260,8 @@
     "Record": "Itala",
     "Recording": "Pagre-record",
     "Screenshot": "Screenshot",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Cloud"
   },
   "Tray": {
     "MarkEvent": "Markahan ang Event",
@@ -3510,6 +3853,38 @@
       "testing": "Tinitingnan…",
       "title": "Provider ng Speech To Text (Live Caption, File Transcription)",
       "tutorial": "Tutorial sa setup"
+    }
+  },
+  "Provenance": {
+    "Managed": "sa pamamagitan ng SeaMeet Cloud",
+    "Byok": "gamit ang iyong {{provider}} key"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "I-unlock gamit ang Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "Naubos mo na ang iyong 6 na oras ng libreng transcription. Patuloy na nagta-transcribe ang Sync Pro at sine-save ang iyong mga recording sa cloud.",
+      "Short": "Naubos na ang libreng transcription — i-unlock gamit ang Sync Pro",
+      "CTA": "I-unlock gamit ang Sync Pro"
+    },
+    "Card": {
+      "Title": "Nakikita mo ang unang 15 minuto",
+      "Reassure": "Ang natitira sa meeting na ito ay buong na-transcribe at naka-save — nakatago lang ito sa libreng plano.",
+      "SyncProIntro": "Mas marami pang binubuksan ang Sync Pro:",
+      "Bullet": {
+        "Transcript": "Ipakita ang buong transcript ng meeting na ito",
+        "Devices": "I-sync ang mga recording sa lahat ng iyong device",
+        "Backup": "Cloud backup — hindi na kailangang mag-ingat ng lokal na kopya"
+      },
+      "GetSyncPro": "Kunin ang Sync Pro",
+      "SeePlans": "Tingnan ang lahat ng plano",
+      "Progress": "{{shown}} ng {{total}} ang ipinakita"
+    },
+    "SessionTooLong": {
+      "Long": "Naabot ng iyong recording ang 5-oras na limitasyon ng transcription. Itigil ang recording na ito at mag-start ng bago para magpatuloy sa transcription — naka-save na ang audio na nakuha hanggang sa puntong ito.",
+      "Short": "Naabot ang 5-oras na limitasyon — itigil at simulan muli para magpatuloy",
+      "CTA": "Itigil at mag-start ng bagong recording"
     }
   },
   "TranslationPicker": {

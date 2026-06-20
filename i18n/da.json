@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Kræver et BYOK Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
+    "SubscribeMsg": "Kræver et Sync Pro-abonnement. Abonner for at få live-transskription, AI-mødeopsummeringer og en interaktiv AI-agent."
+  },
+  "Paywall": {
+    "Unlock": "Lås op med Sync Pro",
+    "Reassurance": "Du har det allerede — et abonnement afslører det øjeblikkeligt, for altid.",
+    "RevealCap": {
+      "Title": "Du har nået din gratis transskribering",
+      "Body": "Lås hele transskriptionen op med Sync Pro."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Deaktiveret",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Anvendes på transskription + resumé + kapitler. Automatisk genkendelse matcher det talte sprog.",
     "TestKey": "Gem & verificer",
     "UseMainLlmForOcrHint": "Ruter skærmbillede OCR til din valgte LLM-udbyder. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis udbyderen ikke kan acceptere billedet.",
+    "UsageReporting": "Del anonyme AI-forbrugstal",
+    "UsageReportingDesc": "Kun udbyder, model og token-antal — aldrig dit indhold. Hjælper os med at holde udbyderne pålidelige.",
     "KeyVerificationFailed": "Nøglebekræftelse mislykkedes"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Se detaljer"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Gem dit arbejde, og åbn det også på din telefon.",
+      "Subline": {
+        "Wall": "Tilknyt en konto for at beholde dine optagelser og transskriptioner på alle dine enheder — og lås det fulde gratis niveau op.",
+        "AnotherDevice": "Tilknyt en konto for at åbne dine optagelser og transskriptioner på din telefon og andre enheder — og lås det fulde gratis niveau op.",
+        "RevealCap": "Vi transskriberede de første 15 minutter. Log ind (gratis) for at låse op for mere — eller få Sync Pro for ubegrænset live-transskribering."
+      },
+      "ContinueWith": "Fortsæt med {{provider}}",
+      "NotNow": "Ikke nu",
+      "TitleRevealCap": "Din gratis 15-minutters forhåndsvisning er slut",
+      "SeeSyncPro": "Se Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — medbring din egen nøgle)",
       "ActiveTitle": "Abonnement aktivt — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Du har allerede et aktivt abonnement. Brug Administrer abonnement til at se eller ændre det.",
       "NoApiUrl": "Faktureringstjenesten er ikke konfigureret. Kontakt venligst support.",
       "NotAuthenticated": "Log venligst ind først for at abonnere. Brug kontomenuen til at logge ind.",
-      "Unknown": "Noget gik galt. Prøv igen."
+      "Unknown": "Noget gik galt. Prøv igen.",
+      "SwitchNotSubscribed": "Intet aktivt abonnement at skifte. Tegn et abonnement først.",
+      "SwitchFailed": "Kunne ikke skifte faktureringsinterval. Prøv igen, eller brug Administrer abonnement.",
+      "RefundPeriodExpired": "Refusionsvinduet er udløbet (30 dage efter køb).",
+      "RefundAlreadyUsed": "Du har allerede brugt din ene selvbetjente refusion.",
+      "RefundNoSub": "Intet aktivt abonnement at refundere.",
+      "RefundFailed": "Refusion kunne ikke behandles. Kontakt support.",
+      "ScheduleFailed": "Kunne ikke planlægge ændringen. Prøv igen eller kontakt support.",
+      "CancelCadenceFailed": "Den planlagte ændring kunne ikke annulleres. Prøv igen."
     },
     "Explainer": {
       "Continue": "Fortsæt til abonnement",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot har også en gratis plan.",
         "InfoNoteGemini": "Google AI Studio giver dig normalt en gratis nøgle.",
         "Name": "BYOK Pro",
-        "Price": "$4,99/måned"
+        "Price": "$4,99/måned",
+        "CTA": "Få BYOK Pro"
       },
       "Free": {
         "Feature1": "Kun optagelse",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "Indbygget AI — ingen API-nøgler nødvendige",
-        "Feature2": "Administreret synkronisering af noter, lyd, video og skærmbilleder",
-        "Feature3": "Funktioner til teamsamarbejde",
-        "Feature4": "Fælles mødebibliotek",
+        "Feature2": "50 timers mødetransskription pr. måned",
+        "Feature3": "AI-resuméer, wiki og agenter med automatisk udbyderskift",
+        "Feature4": "Administreret cloud-synkronisering — på vej til din plan",
         "Name": "Sync Pro",
+        "Price": "15,99 $/md.",
+        "PriceAnnual": "12,99 $/md.",
         "RequestBody": "Hej SeaMeet-team — jeg er interesseret i Sync Pro (indbygget AI uden API-nøgler at administrere, cloud-synkronisering, multi-enhed, team-samarbejde). Lad mig vide, når det er tilgængeligt.\n\nTak!",
         "RequestCTA": "Anmod om dette",
         "RequestSubject": "Jeg vil gerne have Sync Pro til SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Abonner",
     "Subscribing": "Abonnerer...",
-    "UnlockTitle": "Las op for SeaMeet AI-funktioner"
+    "UnlockTitle": "Las op for SeaMeet AI-funktioner",
+    "Pro": {
+      "Title": "Vælg din plan",
+      "Monthly": "Månedlig",
+      "Annual": "Årlig",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/md. · eller $15.99 månedligt",
+      "PriceMonthly": "$15.99/md. · spar 19% med årlig",
+      "ColFree": "Gratis",
+      "ColPro": "Sync Pro · $12.99/md.",
+      "CTA": "Få Sync Pro",
+      "Reassurance": "Opsig når som helst · 30 dages refusion",
+      "AdvancedByok": "Avanceret: brug dine egne API-nøgler",
+      "Row": {
+        "LiveTranscription": "Live-transskription",
+        "LiveTranscriptionFree": "6 t i alt · første 15 min.",
+        "LiveTranscriptionPro": "Ubegrænset*",
+        "FileImport": "Fil-transskription",
+        "FileImportFree": "—",
+        "FileImportPro": "50 t/md.",
+        "Storage": "Lagerplads",
+        "StorageFree": "2 GB · 30 dage",
+        "StoragePro": "250 GB · for altid",
+        "Ocr": "Skærmbillede-OCR",
+        "OcrFree": "20 i alt",
+        "OcrPro": "Ubegrænset",
+        "Notes": "Noter og wiki",
+        "NotesFree": "Kun noter",
+        "NotesPro": "Fuld",
+        "Search": "Søg i alt",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Ubegrænset · dine nøgler",
+        "StorageByok": "Din egen sky",
+        "NotesByok": "Din egen GitHub",
+        "OcrProSyncMonthly": "Ubegrænset optagelse* · 1,000 import/md.",
+        "OcrProSyncAnnual": "Ubegrænset optagelse* · 12,000 import/år",
+        "FileImportProMonthly": "50 t/md.",
+        "FileImportProAnnual": "600 t/år"
+      },
+      "OcrFairUse": "* Fair use gælder. På Sync Pro er live-transskription og optagelse i appen ubegrænset. Import er begrænset efter din plan: filtransskription op til 50 t/md. (600 t/år på årlig), og OCR af importerede billeder op til 1,000/md. (12,000/år)."
+    },
+    "Vault": {
+      "Heading": "Låst op & synkroniseret",
+      "Subline": "{{transcripts}} transskriptioner, {{screenshots}} skærmbilleder, {{gb}}. Nu er det dit, og intet udløber.",
+      "TallyTranscripts": "fulde transskriptioner afsløret",
+      "TallyScreenshots": "skærmbilleder — OCR og søgning låst op",
+      "TallyStorage": "beholdt for altid (sletning annulleret)",
+      "TallyNotesWiki": "Noter og wiki synkroniseres nu på tværs af alle dine enheder",
+      "SeeEverything": "Se alt →",
+      "Retranscribing": "Gentranskriberer dine afkortede optagelser i fuld længde…",
+      "Renews": "fornyes {{date}}",
+      "Manage": "Administrer",
+      "Receipt": "Kvittering"
+    },
+    "Recommended": "Anbefalet",
+    "OnFreePlan": "Du er på Free",
+    "Switching": "Skifter…",
+    "SwitchToAnnual": "Skift til årlig",
+    "SwitchToMonthly": "Skift til månedlig",
+    "SwitchConfirm": "Bekræft skift",
+    "SwitchAnnual": {
+      "Title": "Skifte til årlig betaling?",
+      "Body": "Din plan skifter til årlig ($155.88/år, svarende til $12.99/md.) med det samme. Stripe krediterer den ubrugte del af din nuværende måned og opkræver den forholdsmæssige forskel i dag. Din grænse for filtransskription bliver 600 timer/år."
+    },
+    "SwitchMonthly": {
+      "Title": "Skifte til månedlig betaling?",
+      "Body": "Din plan skifter til månedlig ($15.99/mo) med det samme. Stripe krediterer den ubrugte del af din årlige periode som saldo til fremtidige fakturaer. Din grænse for filtransskription bliver 50 timer/måned."
+    },
+    "Summary": {
+      "StorageAddOns": "Lagertilføjelser",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / måned",
+      "NextCharge": "Næste betaling {{date}}",
+      "SwitchToAnnual": "Skift til årlig",
+      "SwitchToMonthly": "Skift til månedlig",
+      "SwitchConfirm": "Skift til {{target}} fakturering? Du vil blive opkrævet et forholdsmæssigt beløb med det samme.",
+      "AnnualLabel": "årlig",
+      "MonthlyLabel": "månedlig",
+      "Switching": "Skifter…",
+      "SwitchedToAnnual": "Du er nu på årlig fakturering.",
+      "SwitchedToMonthly": "Skiftet til månedlig fakturering.",
+      "CancellationRefunds": "Annullering og refusion",
+      "RequestRefund": "Anmod om refusion",
+      "RefundUnavailable": "Refusion ikke tilgængelig",
+      "CancelSubscription": "Annullér abonnement",
+      "RefundConfirm": "Anmode om refusion? Dette refunderer din seneste betaling og annullerer dit abonnement. Du kan kun refundere én gang pr. konto, inden for 30 dage efter køb.",
+      "RefundIssued": "Refusion udstedt. Dit abonnement er annulleret.",
+      "Cancel": "Annullér",
+      "Confirm": "Bekræft",
+      "ConfirmRefund": "Bekræft refusion",
+      "Processing": "Behandler…",
+      "ScheduleMonthly": "Skift til månedlig ved fornyelse",
+      "SwitchToAnnualConfirm": "Skift til årlig fakturering nu? Vi krediterer din ubrugte månedlige tid til den første årlige opkrævning.",
+      "SwitchToMonthlyConfirm": "Din årsplan fortsætter indtil {{date}}. Derefter faktureres du månedligt. Ingen opkrævning i dag.",
+      "ScheduledMonthly": "Skift planlagt. Din månedlige plan starter {{date}}.",
+      "ScheduledMonthlyNotice": "Månedlig fakturering planlagt til {{date}}.",
+      "CancelScheduledChange": "Annullér",
+      "Canceling": "Annullerer…",
+      "CanceledScheduledChange": "Planlagt ændring annulleret."
+    }
   },
   "BlackHole": {
     "Cancel": "Annuller",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Billede importeret",
     "PasteHint": "Ctrl+V for at indsætte billede",
     "PasteHintMac": "⌘V for at indsætte billede"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Cloud-synkronisering",
+      "Loading": "Indlæser…",
+      "Unavailable": "Cloud-synkronisering er ikke tilgængelig i denne version.",
+      "Disabled": "Cloud-synkronisering er slået fra.",
+      "StorageHeading": "Lagerplads",
+      "StorageUsed": "{{used}} af {{quota}} brugt",
+      "QueueHeading": "Uploadkø",
+      "QueueEmpty": "Intet venter på at blive uploadet.",
+      "PauseAll": "Sæt alle på pause",
+      "ResumeAll": "Genoptag alle",
+      "Retry": "Prøv igen",
+      "Backfill": "Sikkerhedskopiér eksisterende bibliotek…"
+    },
+    "State": {
+      "Queued": "I kø",
+      "Uploading": "Uploader",
+      "Error": "Mislykkedes",
+      "Complete": "Synkroniseret"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Lyd",
+      "AudioForStt": "Lyd (til transskription)",
+      "Bundle": "AI-resultater"
+    },
+    "Backfill": {
+      "Title": "Sikkerhedskopiér eksisterende bibliotek",
+      "Description": "Vælg, hvilke optagelser der skal uploades til dit cloud-bibliotek.",
+      "Loading": "Indlæser optagelser…",
+      "LoadFailed": "Kunne ikke indlæse dine optagelser. Luk denne dialog, og prøv igen.",
+      "Empty": "Alle dine optagelser er allerede sikkerhedskopieret.",
+      "SelectAll": "Vælg alle",
+      "SelectNone": "Fravælg alle",
+      "ColumnName": "Navn",
+      "ColumnDate": "Dato",
+      "ColumnType": "Type",
+      "ColumnSize": "Størrelse",
+      "TypeVideo": "Video",
+      "TypeAudio": "Lyd",
+      "TypeScreenshot": "Skærmbillede",
+      "SelectRecording": "Vælg {{name}}",
+      "SelectedTotal": "{{num}} valgt · {{size}}",
+      "ExceedsPlan": "Dette valg overstiger dit {{quota}}-abonnement — fravælg noget, eller frigør plads i skyen.",
+      "AutoTrimmed": "Nogle af de største optagelser blev ikke valgt, så sikkerhedskopien kan være i din resterende plads.",
+      "StartFailed": "Kunne ikke starte sikkerhedskopieringen. Prøv igen.",
+      "Confirm": "Sikkerhedskopiér valgte",
+      "Cancel": "Annuller",
+      "TextButton": "Synkroniser noter og wiki",
+      "TextRunning": "Synkroniserer noter og wiki…",
+      "TextDone": "Synkroniserede {{count}} noter og wiki-sider.",
+      "TextFailed": "Kunne ikke synkronisere noter og wiki.",
+      "WelcomeHeading": "Velkommen til Sync Pro 🎉",
+      "WelcomeBody": "Uploader dine {{total}} tidligere møder, så de er tilgængelige på alle enheder og på nettet…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Afvis",
+      "CompleteToast": "Alle {{total}} møder er synkroniseret — åbn dem på en hvilken som helst enhed eller på app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Synkroniseret til skyen",
+      "Uploading": "Uploader… {{pct}}%",
+      "Queued": "Venter på upload",
+      "Error": "Synkronisering mislykkedes — åbn Cloud-panelet for at prøve igen",
+      "CloudOnly": "I skyen — afspilles efter behov",
+      "LocalOnly": "Kun på denne enhed",
+      "Downloading": "Downloader… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "Sikkerhedskopiér til clouden",
+      "BackUpSelected": "Sikkerhedskopiér",
+      "BackUpQueued": "{{count}} filer i kø til cloud-sikkerhedskopiering",
+      "KeepOnDevice": "Behold på denne enhed",
+      "DownloadFailed": "Kunne ikke downloade fra skyen. Prøv igen.",
+      "StreamFailed": "Kunne ikke indlæse denne optagelse fra skyen. Tjek din forbindelse, og prøv igen.",
+      "Downloaded": "Gemt på denne enhed",
+      "SyncToLocal": "Synkronisér lokalt",
+      "SyncWithSyncPro": "Synkronisér denne optagelse til skyen med Sync Pro"
+    },
+    "Trash": {
+      "Title": "Papirkurv",
+      "Loading": "Indlæser papirkurven…",
+      "LoadFailed": "Kunne ikke indlæse papirkurven. Prøv igen.",
+      "Empty": "Papirkurven er tom.",
+      "Summary": "{{count}} i papirkurven · {{size}}",
+      "ExpiresIn": "Udløber om {{days}} d.",
+      "Restore": "Gendan",
+      "DeleteForever": "Slet permanent",
+      "ReallyDelete": "Vil du virkelig slette?",
+      "EmptyTrash": "Tøm papirkurven",
+      "ReallyEmpty": "Vil du virkelig tømme?",
+      "ActionFailed": "Det virkede ikke. Prøv igen."
+    },
+    "Usage": {
+      "TabTitle": "Forbrug",
+      "SttHeading": "Transskription",
+      "SttUsed": "{{used}} af {{allowance}} minutter brugt",
+      "Unlimited": "Ubegrænset",
+      "ImportHeading": "Transskription af import",
+      "ImportUsed": "{{used}} / {{cap}} t",
+      "FreePoolsHeading": "Gratis tildelinger",
+      "FreeTranscriptionLeft": "{{minutes}} transskriptionsminutter tilbage",
+      "FreeOcrLeft": "{{runs}} OCR-kørsler tilbage",
+      "FreeRetention": "Gratis optagelser opbevares i {{days}} dage",
+      "Upgrade": "Opgrader",
+      "RunsHeading": "AI-kørsler denne måned",
+      "RunsEmpty": "Ingen AI-aktivitet endnu denne måned.",
+      "LoadFailed": "Kunne ikke indlæse dit forbrug. Prøv igen.",
+      "ManageStorage": "Administrer lagerplads",
+      "AddStorage": "Tilføj lagerplads — +500 GB / $10/md.",
+      "FeatureStt": "Live-transskription",
+      "FeatureSummary": "Optagelsesresuméer",
+      "FeatureOcr": "Skærmbillede-OCR",
+      "FeatureWiki": "Wiki-generering",
+      "FeatureFile": "Filtransskription",
+      "FeatureGeminiPush": "Uploads til dybdeanalyse",
+      "ImportCapReached": "Import sættes på pause ved din grænse, indtil dit abonnement fornyes",
+      "AddStorageSuccess": "Tilføjede {{gb}} GB lagerplads",
+      "AddStorageNotSubscribed": "Et aktivt Sync Pro-abonnement kræves for at tilføje lagerplads.",
+      "AddStorageUnavailable": "Lager-tilføjelser er ikke tilgængelige lige nu. Prøv igen senere.",
+      "AddStorageFailed": "Kunne ikke tilføje lagerplads. Prøv igen.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Tilføj {{gb}} GB for ${{price}}/md.? Et forholdsmæssigt beløb trækkes nu på dit kort.",
+      "AddStorageCancel": "Annuller",
+      "AddStorageConfirmCta": "Bekræft køb",
+      "AddStorageWorking": "Tilføjer…",
+      "AddStorageDecrease": "Fjern én",
+      "AddStorageIncrease": "Tilføj én",
+      "AddStorageConfirmExplain": "Tilføj {{gb}} GB for ${{price}}/måned. Lagertilføjelser faktureres månedligt (adskilt fra dit abonnements faktureringscyklus). I dag opkræves et forholdsmæssigt beløb for resten af denne faktureringsmåned; derefter opkræves ${{price}}/måned automatisk på dit kort. Administrer eller annullér når som helst i faktureringsportalen.",
+      "AddStorageSuccessNotice": "Lager tilføjet. Administrer abonnement og fakturaer →",
+      "ManageSubscriptionInvoices": "Administrer abonnement og fakturaer",
+      "OcrImportHeading": "OCR af importerede billeder",
+      "OcrImportUsed": "{{used}} / {{cap}} billeder",
+      "OcrImportCapReached": "OCR af importerede billeder sættes på pause ved din grænse, indtil din plan fornyes",
+      "FeatureTranscription": "Transskription",
+      "FeatureSynthesis": "Noteresuméer",
+      "OcrCaptureLabel": "Optagelse (i appen)",
+      "OcrImportLabel": "Importerede billeder",
+      "OcrHeading": "Skærmbillede-OCR",
+      "ImportLabel": "Importerede filer"
+    },
+    "WebLibrary": {
+      "Open": "Åbn webbibliotek"
+    },
+    "Devices": {
+      "Heading": "Enheder",
+      "ThisDevice": "Denne enhed"
+    },
+    "Prefs": {
+      "AutoDownload": "Download automatisk nye optagelser",
+      "AutoDownloadHint": "Når en anden enhed uploader en optagelse, downloades en kopi automatisk til denne enhed.",
+      "BackfillPast": "Sikkerhedskopiér tidligere møder ved opgradering",
+      "BackfillPastHint": "Når du opgraderer til Sync Pro, uploades dine eksisterende optagelser, så de synkroniseres til alle enheder.",
+      "BackfillAudio": "Inkludér lyd og video (ikke kun udskrifter)",
+      "BackfillAudioHint": "Fra uploader kun udskrifter — mindre og hurtigere, men de originale medier bliver på denne enhed."
+    },
+    "Danger": {
+      "Heading": "Farezone",
+      "DeleteAll": "Slet alle mine clouddata",
+      "Explain": "Dette sletter permanent alle optagelser, transskriptioner og AI-resultater i dit cloud-bibliotek — på alle enheder. Filer, der er gemt på denne enhed, berøres ikke. Dette kan ikke fortrydes.",
+      "TypeToConfirm": "Skriv DELETE for at bekræfte",
+      "ConfirmButton": "Slet alt permanent",
+      "Success": "Alle clouddata er slettet.",
+      "Failed": "Kunne ikke slette dine clouddata. Prøv igen."
+    },
+    "Quota": {
+      "FullBanner": "Cloud-lageret er fuldt — uploads er sat på pause. Frigør plads nedenfor, eller tøm papirkurven for at fortsætte.",
+      "NearFull": "Cloud-lageret er {{pct}}% fuldt.",
+      "ManagerHeading": "Frigør plads",
+      "NothingToFree": "Ingen cloud-optagelser at rydde op i.",
+      "Freed": "Frigjorde {{size}} (kan gendannes fra papirkurven i 30 dage)",
+      "Remove": "Fjern"
+    },
+    "Delete": {
+      "TitleOne": "Vil du slette \"{{name}}\"?",
+      "TitleMany": "Vil du slette {{count}} optagelser?",
+      "Device": "Fjern fra denne enhed",
+      "DeviceHint": "Flytter den lokale fil til systemets papirkurv. Den bliver i dit cloud-bibliotek og på andre enheder.",
+      "Cloud": "Fjern fra skyen",
+      "CloudHint": "Flytter den til cloud-papirkurven i 30 dage. Filen bliver på denne enhed.",
+      "Everywhere": "Slet overalt",
+      "EverywhereHint": "Fjerner den fra skyen (30 dages papirkurv) og flytter lokale kopier på alle dine enheder til deres systempapirkurv.",
+      "ConfirmDevice": "Fjern fra enhed",
+      "ConfirmCloud": "Flyt til cloud-papirkurven",
+      "ConfirmEverywhere": "Slet overalt",
+      "CloudFailed": "Kunne ikke fjerne fra skyen. Prøv igen.",
+      "CloudBatchFailed": "Kunne ikke fjerne {{count}} af {{total}} fra skyen. Prøv igen."
+    },
+    "FreeExpiry": {
+      "Warning": "Disse optagelser slettes om {{days}} dage — behold dem for evigt.",
+      "CloudOnly": "Denne fil findes kun i skyen og slettes permanent om {{days}} dage, medmindre du opgraderer.",
+      "Upgrade": "Behold for evigt"
+    }
   },
   "Common": {
     "Apply": "Anvend",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Gennemse filer",
+    "DragDropClickToBrowse": "Eller klik for at gennemse filer",
     "DragDropFiles": "Træk og slip dine lyd-, video- og billedfiler her",
     "DragDropSubtitle": "Træk og slip lyd-, video- og billedfiler her",
     "ImportMedia": "Importér medier",
@@ -1848,6 +2175,14 @@
     "today": "I dag",
     "view_on_seameet": "Se på SeaMeet",
     "yesterday": "I går",
+    "TranscriptWall": {
+      "Title": "Resten af dette møde er klar",
+      "BundleTranscript": "Fuldt transskript",
+      "BundleSummary": "Resumé",
+      "BundleChapters": "Kapitler",
+      "BundleActionItems": "Handlingspunkter",
+      "Progress": "{{shown}} af {{total}} vist"
+    },
     "hide_translations": "Skjul oversættelser",
     "show_translations": "Vis oversættelser"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Abonner",
     "LockedChipTooltip": "Abonner for at aktivere",
     "NoteSynthesis": "AI-syntese",
-    "NoteSynthesisDesc": "Få et struktureret resumé af denne note + tilknyttet optagelse med BYOK Pro.",
+    "NoteSynthesisDesc": "Få et struktureret resumé af denne note + tilknyttet optagelse med Sync Pro.",
     "PostMeetingAI": "AI efter mødet",
     "PostMeetingAIDesc": "Opsummeringer, handlingspunkter og indsigter genereres efter optagelsen er afsluttet.",
     "ScreenshotAI": "Skærmbillede AI",
-    "ScreenshotAIDesc": "Beskriv billeder, udtræk tekst og stil opfølgende spørgsmål med BYOK Pro.",
+    "ScreenshotAIDesc": "Beskriv billeder, udtræk tekst og stil opfølgende spørgsmål med Sync Pro.",
     "UnlockPremium": "Lås op med Premium",
     "Upgrade": "Opgrader",
     "WikiList": "Wikis",
-    "WikiListDesc": "Byg automatisk en vidensbase fra dine noter og møder med BYOK Pro."
+    "WikiListDesc": "Byg automatisk en vidensbase fra dine noter og møder med Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Ingen matchende noter",
@@ -2410,7 +2745,13 @@
       "Description": "Beskrivelse",
       "OCR": "Tekst (OCR)"
     },
-    "UnknownError": "Ukendt fejl"
+    "UnknownError": "Ukendt fejl",
+    "OcrWall": {
+      "Title": "Lås OCR op",
+      "BundleOcr": "OCR-tekst",
+      "BundleDescription": "Beskrivelse",
+      "BundleSearch": "Søgning"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Nylige skærmbilleder"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Indstillinger",
     "UserAvatarAlt": "bruger",
+    "ManagedByPlan": "Inkluderet i din Sync Pro-plan — AI kører på udbydere administreret af SeaMeet. Ingen API-nøgler nødvendige.",
     "AppMode": {
       "Title": "App-tilstand",
       "Currently": "Aktuelt:",
@@ -2918,7 +3260,8 @@
     "Record": "Optage",
     "Recording": "Indspilning",
     "Screenshot": "Skærmbillede",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Sky"
   },
   "Tray": {
     "MarkEvent": "Markér begivenhed",
@@ -3510,6 +3853,38 @@
       "testing": "Tester…",
       "title": "Tale til tekst-udbyder (Live undertekst, filtransskription)",
       "tutorial": "Opsætningsvejledning"
+    }
+  },
+  "Provenance": {
+    "Managed": "via SeaMeet Cloud",
+    "Byok": "via din {{provider}}-nøgle"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Lås op med Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "Du har brugt dine 6 timers gratis transskription. Sync Pro fortsætter med at transskribere og gemmer dine optagelser i skyen.",
+      "Short": "Gratis transskription opbrugt — lås op med Sync Pro",
+      "CTA": "Lås op med Sync Pro"
+    },
+    "Card": {
+      "Title": "Du ser de første 15 minutter",
+      "Reassure": "Resten af dette møde er fuldt transskriberet og gemt — det er bare skjult på gratisplanen.",
+      "SyncProIntro": "Sync Pro låser op for mere:",
+      "Bullet": {
+        "Transcript": "Vis den fulde transskription af dette møde",
+        "Devices": "Synkronisér optagelser på tværs af alle dine enheder",
+        "Backup": "Cloud-backup — ingen grund til at beholde en lokal kopi"
+      },
+      "GetSyncPro": "Få Sync Pro",
+      "SeePlans": "Se alle abonnementer",
+      "Progress": "{{shown}} af {{total}} vist"
+    },
+    "SessionTooLong": {
+      "Long": "Optagelsen nåede grænsen for transskription på 5 timer. Stop og start en ny optagelse for at fortsætte transskriptionen — den hidtil optagede lyd er gemt.",
+      "Short": "Nåede 5-timers transskriptionsgrænse — stop og genstart for at fortsætte",
+      "CTA": "Stop og start ny optagelse"
     }
   },
   "TranslationPicker": {

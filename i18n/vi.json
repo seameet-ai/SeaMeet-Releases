@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Yêu cầu đăng ký BYOK Pro. Đăng ký để nhận phiên âm trực tiếp, tóm tắt cuộc họp AI và đại lý AI tương tác."
+    "SubscribeMsg": "Yêu cầu đăng ký Sync Pro. Đăng ký để nhận phiên âm trực tiếp, tóm tắt cuộc họp AI và đại lý AI tương tác."
+  },
+  "Paywall": {
+    "Unlock": "Mở khóa với Sync Pro",
+    "Reassurance": "Bạn đã có nó — đăng ký sẽ hiển thị ngay lập tức, mãi mãi.",
+    "RevealCap": {
+      "Title": "Bạn đã đạt giới hạn phiên âm miễn phí",
+      "Body": "Mở khóa toàn bộ bản phiên âm với Sync Pro."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Đã tắt",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Áp dụng cho bản ghi + tóm tắt + chương. Tự động phát hiện phù hợp với ngôn ngữ nói.",
     "TestKey": "Lưu & Xác minh",
     "UseMainLlmForOcrHint": "Chuyển hướng OCR ảnh chụp màn hình đến nhà cung cấp LLM bạn chọn. Tắt (mặc định): luôn sử dụng Gemini. Tự động chuyển sang Gemini nếu nhà cung cấp không thể nhận ảnh.",
+    "UsageReporting": "Chia sẻ số liệu sử dụng AI ẩn danh",
+    "UsageReportingDesc": "Chỉ nhà cung cấp, mô hình và số token — không bao giờ là nội dung của bạn. Giúp chúng tôi giữ các nhà cung cấp ổn định.",
     "KeyVerificationFailed": "Xác minh khóa không thành công"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Xem chi tiết"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Lưu công việc của bạn và mở trên điện thoại nữa.",
+      "Subline": {
+        "Wall": "Liên kết tài khoản để giữ bản ghi và bản chép lời của bạn trên mọi thiết bị — và mở khóa toàn bộ gói miễn phí.",
+        "AnotherDevice": "Liên kết tài khoản để mở bản ghi và bản chép lời của bạn trên điện thoại và các thiết bị khác — và mở khóa toàn bộ gói miễn phí.",
+        "RevealCap": "Chúng tôi đã phiên âm 15 phút đầu tiên. Đăng nhập (miễn phí) để mở khóa thêm — hoặc dùng Sync Pro để phiên âm trực tiếp không giới hạn."
+      },
+      "ContinueWith": "Tiếp tục với {{provider}}",
+      "NotNow": "Để sau",
+      "TitleRevealCap": "Bản xem trước miễn phí 15 phút của bạn đã kết thúc",
+      "SeeSyncPro": "Xem Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — mang khóa của riêng bạn)",
       "ActiveTitle": "Đăng ký đang hoạt động — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Bạn đã có một đăng ký đang hoạt động. Sử dụng Quản lý đăng ký để xem hoặc thay đổi.",
       "NoApiUrl": "Dịch vụ thanh toán chưa được cấu hình. Vui lòng liên hệ bộ phận hỗ trợ.",
       "NotAuthenticated": "Vui lòng đăng nhập trước để đăng ký. Sử dụng menu tài khoản để đăng nhập.",
-      "Unknown": "Đã xảy ra lỗi. Vui lòng thử lại."
+      "Unknown": "Đã xảy ra lỗi. Vui lòng thử lại.",
+      "SwitchNotSubscribed": "Không có gói đăng ký đang hoạt động để chuyển. Vui lòng đăng ký trước.",
+      "SwitchFailed": "Không thể chuyển chu kỳ thanh toán. Vui lòng thử lại hoặc dùng Quản lý đăng ký.",
+      "RefundPeriodExpired": "Cửa sổ hoàn tiền đã hết hạn (30 ngày kể từ khi mua).",
+      "RefundAlreadyUsed": "Bạn đã sử dụng khoản hoàn tiền tự phục vụ duy nhất của mình.",
+      "RefundNoSub": "Không có đăng ký nào đang hoạt động để hoàn tiền.",
+      "RefundFailed": "Không thể xử lý hoàn tiền. Vui lòng liên hệ bộ phận hỗ trợ.",
+      "ScheduleFailed": "Không thể lên lịch thay đổi. Hãy thử lại hoặc liên hệ bộ phận hỗ trợ.",
+      "CancelCadenceFailed": "Không thể hủy thay đổi đã lên lịch. Hãy thử lại."
     },
     "Explainer": {
       "Continue": "Tiếp tục đăng ký",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot cũng có gói miễn phí.",
         "InfoNoteGemini": "Google AI Studio thường cấp cho bạn một khoá miễn phí.",
         "Name": "BYOK Pro",
-        "Price": "4,99 $/tháng"
+        "Price": "4,99 $/tháng",
+        "CTA": "Mua BYOK Pro"
       },
       "Free": {
         "Feature1": "Chỉ ghi âm",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "AI tích hợp — không cần khóa API",
-        "Feature2": "Đồng bộ được quản lý cho ghi chú, âm thanh, video và ảnh chụp màn hình",
-        "Feature3": "Tính năng cộng tác nhóm",
-        "Feature4": "Thư viện cuộc họp dùng chung",
+        "Feature2": "50 giờ phiên âm cuộc họp mỗi tháng",
+        "Feature3": "Tóm tắt AI, wiki và trợ lý với chuyển đổi nhà cung cấp tự động",
+        "Feature4": "Đồng bộ đám mây được quản lý — sắp có trong gói của bạn",
         "Name": "Sync Pro",
+        "Price": "$15.99/tháng",
+        "PriceAnnual": "$12.99/tháng",
         "RequestBody": "Chào đội SeaMeet — tôi quan tâm đến Sync Pro (AI tích hợp không cần quản lý khóa API, đồng bộ đám mây, đa thiết bị, cộng tác nhóm). Vui lòng cho tôi biết khi nó có sẵn.\n\nCảm ơn!",
         "RequestCTA": "Yêu cầu",
         "RequestSubject": "Tôi muốn Sync Pro cho SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Đăng ký",
     "Subscribing": "Đang đăng ký...",
-    "UnlockTitle": "Mở khóa tính năng AI của SeaMeet"
+    "UnlockTitle": "Mở khóa tính năng AI của SeaMeet",
+    "Pro": {
+      "Title": "Chọn gói của bạn",
+      "Monthly": "Hàng tháng",
+      "Annual": "Hàng năm",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/tháng · hoặc $15.99 hàng tháng",
+      "PriceMonthly": "$15.99/tháng · tiết kiệm 19% khi trả năm",
+      "ColFree": "Miễn phí",
+      "ColPro": "Sync Pro · $12.99/tháng",
+      "CTA": "Nhận Sync Pro",
+      "Reassurance": "Hủy bất cứ lúc nào · hoàn tiền 30 ngày",
+      "AdvancedByok": "Nâng cao: dùng khóa API của riêng bạn",
+      "Row": {
+        "LiveTranscription": "Phiên âm trực tiếp",
+        "LiveTranscriptionFree": "Tổng 6 giờ · 15 phút đầu",
+        "LiveTranscriptionPro": "Không giới hạn*",
+        "FileImport": "Phiên âm tệp",
+        "FileImportFree": "—",
+        "FileImportPro": "50 giờ/tháng",
+        "Storage": "Lưu trữ",
+        "StorageFree": "2 GB · 30 ngày",
+        "StoragePro": "250 GB · vĩnh viễn",
+        "Ocr": "OCR ảnh chụp màn hình",
+        "OcrFree": "tổng 20",
+        "OcrPro": "Không giới hạn",
+        "Notes": "Ghi chú & wiki",
+        "NotesFree": "Chỉ ghi chú",
+        "NotesPro": "Đầy đủ",
+        "Search": "Tìm kiếm mọi thứ",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Không giới hạn · khóa của bạn",
+        "StorageByok": "Đám mây của riêng bạn",
+        "NotesByok": "GitHub của riêng bạn",
+        "OcrProSyncMonthly": "Chụp không giới hạn* · 1,000 nhập/tháng",
+        "OcrProSyncAnnual": "Chụp không giới hạn* · 12,000 nhập/năm",
+        "FileImportProMonthly": "50 giờ/tháng",
+        "FileImportProAnnual": "600 giờ/năm"
+      },
+      "OcrFairUse": "* Áp dụng sử dụng hợp lý. Trên Sync Pro, chép lời trực tiếp và chụp trong ứng dụng là không giới hạn. Nhập bị giới hạn theo gói của bạn: chép lời tệp tối đa 50 giờ/tháng (600 giờ/năm với gói năm), và OCR ảnh đã nhập tối đa 1.000/tháng (12.000/năm)."
+    },
+    "Vault": {
+      "Heading": "Đã mở khóa & Đồng bộ",
+      "Subline": "{{transcripts}} bản chép lời, {{screenshots}} ảnh chụp màn hình, {{gb}}. Giờ là của bạn, và không gì hết hạn.",
+      "TallyTranscripts": "bản chép lời đầy đủ đã được mở",
+      "TallyScreenshots": "ảnh chụp màn hình — đã mở OCR & tìm kiếm",
+      "TallyStorage": "giữ mãi mãi (đã hủy xóa)",
+      "TallyNotesWiki": "Ghi chú & wiki giờ đồng bộ trên mọi thiết bị của bạn",
+      "SeeEverything": "Xem tất cả →",
+      "Retranscribing": "Đang chép lại đầy đủ các bản ghi bị giới hạn của bạn…",
+      "Renews": "gia hạn vào {{date}}",
+      "Manage": "Quản lý",
+      "Receipt": "Biên lai"
+    },
+    "Recommended": "Được đề xuất",
+    "OnFreePlan": "Bạn đang dùng Free",
+    "Switching": "Đang chuyển…",
+    "SwitchToAnnual": "Chuyển sang hằng năm",
+    "SwitchToMonthly": "Chuyển sang hằng tháng",
+    "SwitchConfirm": "Xác nhận chuyển",
+    "SwitchAnnual": {
+      "Title": "Chuyển sang thanh toán hằng năm?",
+      "Body": "Gói của bạn chuyển sang hằng năm ($155.88/năm, tương đương $12.99/tháng) ngay lập tức. Stripe ghi có phần chưa dùng của tháng hiện tại và thu khoản chênh lệch theo tỷ lệ ngay hôm nay. Giới hạn chép lời tệp của bạn trở thành 600 giờ/năm."
+    },
+    "SwitchMonthly": {
+      "Title": "Chuyển sang thanh toán hằng tháng?",
+      "Body": "Gói của bạn chuyển sang hằng tháng ($15.99/mo) ngay lập tức. Stripe ghi có phần chưa dùng trong kỳ hằng năm của bạn dưới dạng số dư tài khoản cho các hóa đơn sau. Giới hạn chép lời tệp của bạn trở thành 50 giờ/tháng."
+    },
+    "Summary": {
+      "StorageAddOns": "Tiện ích bổ sung lưu trữ",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / tháng",
+      "NextCharge": "Lần tính phí tiếp theo {{date}}",
+      "SwitchToAnnual": "Chuyển sang hàng năm",
+      "SwitchToMonthly": "Chuyển sang hàng tháng",
+      "SwitchConfirm": "Chuyển sang thanh toán {{target}}? Bạn sẽ bị tính phí theo tỷ lệ ngay lập tức.",
+      "AnnualLabel": "hàng năm",
+      "MonthlyLabel": "hàng tháng",
+      "Switching": "Đang chuyển…",
+      "SwitchedToAnnual": "Bạn hiện đang thanh toán hàng năm.",
+      "SwitchedToMonthly": "Đã chuyển sang thanh toán hàng tháng.",
+      "CancellationRefunds": "Hủy và hoàn tiền",
+      "RequestRefund": "Yêu cầu hoàn tiền",
+      "RefundUnavailable": "Hoàn tiền không khả dụng",
+      "CancelSubscription": "Hủy đăng ký",
+      "RefundConfirm": "Yêu cầu hoàn tiền? Việc này sẽ hoàn lại khoản thanh toán gần nhất và hủy đăng ký của bạn. Bạn chỉ có thể hoàn tiền một lần mỗi tài khoản, trong vòng 30 ngày kể từ khi mua.",
+      "RefundIssued": "Đã phát hành hoàn tiền. Đăng ký của bạn đã được hủy.",
+      "Cancel": "Hủy",
+      "Confirm": "Xác nhận",
+      "ConfirmRefund": "Xác nhận hoàn tiền",
+      "Processing": "Đang xử lý…",
+      "ScheduleMonthly": "Chuyển sang hàng tháng khi gia hạn",
+      "SwitchToAnnualConfirm": "Chuyển sang thanh toán hàng năm ngay bây giờ? Chúng tôi sẽ ghi có thời gian hàng tháng chưa sử dụng của bạn vào lần tính phí hàng năm đầu tiên.",
+      "SwitchToMonthlyConfirm": "Gói hàng năm của bạn tiếp tục cho đến ngày {{date}}. Sau đó, bạn sẽ được tính phí hàng tháng. Không tính phí hôm nay.",
+      "ScheduledMonthly": "Đã lên lịch chuyển đổi. Gói hàng tháng của bạn bắt đầu vào {{date}}.",
+      "ScheduledMonthlyNotice": "Thanh toán hàng tháng được lên lịch cho {{date}}.",
+      "CancelScheduledChange": "Hủy",
+      "Canceling": "Đang hủy…",
+      "CanceledScheduledChange": "Đã hủy thay đổi đã lên lịch."
+    }
   },
   "BlackHole": {
     "Cancel": "Hủy",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Đã nhập hình ảnh thành công",
     "PasteHint": "Ctrl+V để dán hình ảnh",
     "PasteHintMac": "⌘V để dán hình ảnh"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Đồng bộ đám mây",
+      "Loading": "Đang tải…",
+      "Unavailable": "Đồng bộ đám mây không khả dụng trong bản dựng này.",
+      "Disabled": "Đồng bộ đám mây đang tắt.",
+      "StorageHeading": "Dung lượng lưu trữ",
+      "StorageUsed": "Đã dùng {{used}} trên {{quota}}",
+      "QueueHeading": "Hàng đợi tải lên",
+      "QueueEmpty": "Không có gì đang chờ tải lên.",
+      "PauseAll": "Tạm dừng tất cả",
+      "ResumeAll": "Tiếp tục tất cả",
+      "Retry": "Thử lại",
+      "Backfill": "Sao lưu thư viện hiện có…"
+    },
+    "State": {
+      "Queued": "Đang chờ",
+      "Uploading": "Đang tải lên",
+      "Error": "Thất bại",
+      "Complete": "Đã đồng bộ"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Âm thanh",
+      "AudioForStt": "Âm thanh (để phiên âm)",
+      "Bundle": "Kết quả AI"
+    },
+    "Backfill": {
+      "Title": "Sao lưu thư viện hiện có",
+      "Description": "Chọn những bản ghi cần tải lên thư viện đám mây của bạn.",
+      "Loading": "Đang tải danh sách bản ghi…",
+      "LoadFailed": "Không thể tải các bản ghi của bạn. Hãy đóng hộp thoại này và thử lại.",
+      "Empty": "Tất cả bản ghi của bạn đã được sao lưu.",
+      "SelectAll": "Chọn tất cả",
+      "SelectNone": "Bỏ chọn tất cả",
+      "ColumnName": "Tên",
+      "ColumnDate": "Ngày",
+      "ColumnType": "Loại",
+      "ColumnSize": "Kích thước",
+      "TypeVideo": "Video",
+      "TypeAudio": "Âm thanh",
+      "TypeScreenshot": "Ảnh chụp màn hình",
+      "SelectRecording": "Chọn {{name}}",
+      "SelectedTotal": "Đã chọn {{num}} · {{size}}",
+      "ExceedsPlan": "Lựa chọn này vượt quá gói {{quota}} của bạn — hãy bỏ chọn bớt hoặc giải phóng dung lượng đám mây.",
+      "AutoTrimmed": "Một số bản ghi lớn nhất đã không được chọn để bản sao lưu vừa với dung lượng còn lại của bạn.",
+      "StartFailed": "Không thể bắt đầu sao lưu. Vui lòng thử lại.",
+      "Confirm": "Sao lưu mục đã chọn",
+      "Cancel": "Hủy",
+      "TextButton": "Đồng bộ ghi chú & wiki",
+      "TextRunning": "Đang đồng bộ ghi chú & wiki…",
+      "TextDone": "Đã đồng bộ {{count}} ghi chú & trang wiki.",
+      "TextFailed": "Không thể đồng bộ ghi chú & wiki.",
+      "WelcomeHeading": "Chào mừng đến với Sync Pro 🎉",
+      "WelcomeBody": "Đang tải lên {{total}} cuộc họp trước đây của bạn để chúng có sẵn trên mọi thiết bị và trên web…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Bỏ qua",
+      "CompleteToast": "Đã đồng bộ toàn bộ {{total}} cuộc họp — mở chúng trên bất kỳ thiết bị nào hoặc tại app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Đã đồng bộ lên đám mây",
+      "Uploading": "Đang tải lên… {{pct}}%",
+      "Queued": "Đang chờ tải lên",
+      "Error": "Đồng bộ thất bại — mở bảng Đám mây để thử lại",
+      "CloudOnly": "Trên đám mây — phát khi cần",
+      "LocalOnly": "Chỉ có trên thiết bị này",
+      "Downloading": "Đang tải xuống… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "Sao lưu lên đám mây",
+      "BackUpSelected": "Sao lưu",
+      "BackUpQueued": "{{count}} tệp đang chờ sao lưu lên đám mây",
+      "KeepOnDevice": "Giữ trên thiết bị này",
+      "DownloadFailed": "Không thể tải xuống từ đám mây. Vui lòng thử lại.",
+      "StreamFailed": "Không thể tải bản ghi này từ đám mây. Kiểm tra kết nối của bạn và thử lại.",
+      "Downloaded": "Đã lưu vào thiết bị này",
+      "SyncToLocal": "Đồng bộ về máy",
+      "SyncWithSyncPro": "Đồng bộ bản ghi này lên đám mây bằng Sync Pro"
+    },
+    "Trash": {
+      "Title": "Thùng rác",
+      "Loading": "Đang tải thùng rác…",
+      "LoadFailed": "Không thể tải thùng rác. Vui lòng thử lại.",
+      "Empty": "Thùng rác trống.",
+      "Summary": "{{count}} trong thùng rác · {{size}}",
+      "ExpiresIn": "Hết hạn sau {{days}} ngày",
+      "Restore": "Khôi phục",
+      "DeleteForever": "Xóa vĩnh viễn",
+      "ReallyDelete": "Bạn chắc chắn muốn xóa?",
+      "EmptyTrash": "Dọn sạch thùng rác",
+      "ReallyEmpty": "Bạn chắc chắn muốn dọn sạch?",
+      "ActionFailed": "Thao tác không thành công. Vui lòng thử lại."
+    },
+    "Usage": {
+      "TabTitle": "Mức sử dụng",
+      "SttHeading": "Chép lời",
+      "SttUsed": "Đã dùng {{used}} trong {{allowance}} phút",
+      "Unlimited": "Không giới hạn",
+      "ImportHeading": "Phiên âm tệp nhập",
+      "ImportUsed": "{{used}} / {{cap}} giờ",
+      "FreePoolsHeading": "Hạn mức miễn phí",
+      "FreeTranscriptionLeft": "Còn {{minutes}} phút phiên âm",
+      "FreeOcrLeft": "Còn {{runs}} lần OCR",
+      "FreeRetention": "Bản ghi miễn phí được lưu trong {{days}} ngày",
+      "Upgrade": "Nâng cấp",
+      "RunsHeading": "Lượt chạy AI tháng này",
+      "RunsEmpty": "Chưa có hoạt động AI nào trong tháng này.",
+      "LoadFailed": "Không thể tải mức sử dụng của bạn. Vui lòng thử lại.",
+      "ManageStorage": "Quản lý dung lượng",
+      "AddStorage": "Thêm dung lượng — +500 GB / $10/tháng",
+      "FeatureStt": "Phiên âm trực tiếp",
+      "FeatureSummary": "Tóm tắt bản ghi",
+      "FeatureOcr": "OCR ảnh chụp màn hình",
+      "FeatureWiki": "Tạo wiki",
+      "FeatureFile": "Phiên âm tệp",
+      "FeatureGeminiPush": "Tải lên phân tích chuyên sâu",
+      "ImportCapReached": "Việc nhập sẽ tạm dừng khi đạt giới hạn cho đến khi gói của bạn gia hạn",
+      "AddStorageSuccess": "Đã thêm {{gb}} GB dung lượng lưu trữ",
+      "AddStorageNotSubscribed": "Cần có gói Sync Pro đang hoạt động để thêm dung lượng lưu trữ.",
+      "AddStorageUnavailable": "Tiện ích bổ sung dung lượng hiện không khả dụng. Vui lòng thử lại sau.",
+      "AddStorageFailed": "Không thể thêm dung lượng lưu trữ. Vui lòng thử lại.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Thêm {{gb}} GB với giá ${{price}}/tháng? Thẻ của bạn sẽ bị tính một khoản theo tỷ lệ ngay bây giờ.",
+      "AddStorageCancel": "Hủy",
+      "AddStorageConfirmCta": "Xác nhận mua",
+      "AddStorageWorking": "Đang thêm…",
+      "AddStorageDecrease": "Bớt một",
+      "AddStorageIncrease": "Thêm một",
+      "AddStorageConfirmExplain": "Thêm {{gb}} GB với giá ${{price}}/tháng. Tiện ích bổ sung lưu trữ được tính phí hàng tháng (tách biệt với chu kỳ thanh toán của gói). Hôm nay bạn sẽ bị tính một khoản theo tỷ lệ cho phần còn lại của tháng thanh toán này; sau đó, ${{price}}/tháng sẽ tự động được tính vào thẻ của bạn. Quản lý hoặc hủy bất kỳ lúc nào trong cổng thanh toán.",
+      "AddStorageSuccessNotice": "Đã thêm dung lượng. Quản lý gói và hóa đơn →",
+      "ManageSubscriptionInvoices": "Quản lý gói và hóa đơn",
+      "OcrImportHeading": "OCR ảnh đã nhập",
+      "OcrImportUsed": "{{used}} / {{cap}} ảnh",
+      "OcrImportCapReached": "OCR ảnh đã nhập tạm dừng ở mức giới hạn cho đến khi gia hạn gói",
+      "FeatureTranscription": "Chép lời",
+      "FeatureSynthesis": "Tóm tắt ghi chú",
+      "OcrCaptureLabel": "Chụp (trong ứng dụng)",
+      "OcrImportLabel": "Ảnh đã nhập",
+      "OcrHeading": "OCR ảnh chụp màn hình",
+      "ImportLabel": "Tệp đã nhập"
+    },
+    "WebLibrary": {
+      "Open": "Mở thư viện web"
+    },
+    "Devices": {
+      "Heading": "Thiết bị",
+      "ThisDevice": "Thiết bị này"
+    },
+    "Prefs": {
+      "AutoDownload": "Tự động tải xuống bản ghi mới",
+      "AutoDownloadHint": "Khi một thiết bị khác tải lên bản ghi, một bản sao sẽ tự động được tải xuống thiết bị này.",
+      "BackfillPast": "Sao lưu các cuộc họp trước đây khi nâng cấp",
+      "BackfillPastHint": "Khi bạn nâng cấp lên Sync Pro, các bản ghi hiện có của bạn sẽ được tải lên để đồng bộ với mọi thiết bị.",
+      "BackfillAudio": "Bao gồm âm thanh & video (không chỉ bản chép lời)",
+      "BackfillAudioHint": "Khi tắt chỉ tải lên bản chép lời — nhỏ và nhanh hơn, nhưng tệp gốc vẫn ở trên thiết bị này."
+    },
+    "Danger": {
+      "Heading": "Vùng nguy hiểm",
+      "DeleteAll": "Xóa toàn bộ dữ liệu đám mây của tôi",
+      "Explain": "Thao tác này xóa vĩnh viễn mọi bản ghi, bản chép lời và kết quả AI trong thư viện đám mây của bạn — trên tất cả thiết bị. Các tệp lưu trên thiết bị này không bị ảnh hưởng. Không thể hoàn tác thao tác này.",
+      "TypeToConfirm": "Nhập DELETE để xác nhận",
+      "ConfirmButton": "Xóa vĩnh viễn tất cả",
+      "Success": "Đã xóa toàn bộ dữ liệu đám mây.",
+      "Failed": "Không thể xóa dữ liệu đám mây của bạn. Vui lòng thử lại."
+    },
+    "Quota": {
+      "FullBanner": "Bộ nhớ đám mây đã đầy — các lượt tải lên đang tạm dừng. Giải phóng dung lượng bên dưới hoặc dọn sạch thùng rác để tiếp tục.",
+      "NearFull": "Bộ nhớ đám mây đã đầy {{pct}}%.",
+      "ManagerHeading": "Giải phóng dung lượng",
+      "NothingToFree": "Không có bản ghi đám mây nào để dọn dẹp.",
+      "Freed": "Đã giải phóng {{size}} (có thể khôi phục từ thùng rác trong 30 ngày)",
+      "Remove": "Gỡ bỏ"
+    },
+    "Delete": {
+      "TitleOne": "Xóa \"{{name}}\"?",
+      "TitleMany": "Xóa {{count}} bản ghi?",
+      "Device": "Xóa khỏi thiết bị này",
+      "DeviceHint": "Chuyển tệp cục bộ vào thùng rác của hệ thống. Vẫn còn trong thư viện đám mây của bạn và trên các thiết bị khác.",
+      "Cloud": "Xóa khỏi đám mây",
+      "CloudHint": "Chuyển vào thùng rác đám mây trong 30 ngày. Tệp vẫn còn trên thiết bị này.",
+      "Everywhere": "Xóa ở mọi nơi",
+      "EverywhereHint": "Xóa khỏi đám mây (thùng rác lưu 30 ngày) và chuyển các bản sao cục bộ trên tất cả thiết bị của bạn vào thùng rác hệ thống tương ứng.",
+      "ConfirmDevice": "Xóa khỏi thiết bị",
+      "ConfirmCloud": "Chuyển vào thùng rác đám mây",
+      "ConfirmEverywhere": "Xóa ở mọi nơi",
+      "CloudFailed": "Không thể xóa khỏi đám mây. Vui lòng thử lại.",
+      "CloudBatchFailed": "Không thể xóa {{count}} trên {{total}} khỏi đám mây. Vui lòng thử lại."
+    },
+    "FreeExpiry": {
+      "Warning": "Các bản ghi này sẽ bị xóa sau {{days}} ngày — hãy giữ chúng mãi mãi.",
+      "CloudOnly": "Tệp này chỉ có trên đám mây và sẽ bị xóa vĩnh viễn sau {{days}} ngày trừ khi bạn nâng cấp.",
+      "Upgrade": "Giữ mãi mãi"
+    }
   },
   "Common": {
     "Apply": "Áp dụng",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Duyệt Tệp",
+    "DragDropClickToBrowse": "Hoặc nhấp để duyệt tệp",
     "DragDropFiles": "Kéo và thả các tệp âm thanh, video, hình ảnh của bạn vào đây",
     "DragDropSubtitle": "Kéo và thả các tệp âm thanh, video, hình ảnh vào đây để nhập",
     "ImportMedia": "Nhập Media",
@@ -1848,6 +2175,14 @@
     "today": "Hôm nay",
     "view_on_seameet": "Xem trên SeaMeet",
     "yesterday": "Hôm qua",
+    "TranscriptWall": {
+      "Title": "Phần còn lại của cuộc họp này đã sẵn sàng",
+      "BundleTranscript": "Bản chép lời đầy đủ",
+      "BundleSummary": "Tóm tắt",
+      "BundleChapters": "Chương",
+      "BundleActionItems": "Mục hành động",
+      "Progress": "Đã hiển thị {{shown}} trên {{total}}"
+    },
     "hide_translations": "Ẩn bản dịch",
     "show_translations": "Hiện bản dịch"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Đăng ký",
     "LockedChipTooltip": "Đăng ký để kích hoạt",
     "NoteSynthesis": "Tổng hợp AI",
-    "NoteSynthesisDesc": "Nhận bản tóm tắt có cấu trúc của ghi chú này + bản ghi liên kết với BYOK Pro.",
+    "NoteSynthesisDesc": "Nhận bản tóm tắt có cấu trúc của ghi chú này + bản ghi liên kết với Sync Pro.",
     "PostMeetingAI": "AI sau cuộc họp",
     "PostMeetingAIDesc": "Tóm tắt, mục hành động và những hiểu biết sẽ được tạo ra sau khi ghi âm kết thúc.",
     "ScreenshotAI": "AI ảnh chụp màn hình",
-    "ScreenshotAIDesc": "Mô tả hình ảnh, trích xuất văn bản và đặt câu hỏi tiếp theo với BYOK Pro.",
+    "ScreenshotAIDesc": "Mô tả hình ảnh, trích xuất văn bản và đặt câu hỏi tiếp theo với Sync Pro.",
     "UnlockPremium": "Mở khóa với Premium",
     "Upgrade": "Nâng cấp",
     "WikiList": "Wikis",
-    "WikiListDesc": "Tự động xây dựng cơ sở tri thức từ ghi chú và cuộc họp của bạn với BYOK Pro."
+    "WikiListDesc": "Tự động xây dựng cơ sở tri thức từ ghi chú và cuộc họp của bạn với Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Không có ghi chú phù hợp",
@@ -2410,7 +2745,13 @@
       "Description": "Mô tả",
       "OCR": "Văn bản (OCR)"
     },
-    "UnknownError": "Lỗi không xác định"
+    "UnknownError": "Lỗi không xác định",
+    "OcrWall": {
+      "Title": "Mở khóa OCR",
+      "BundleOcr": "Văn bản OCR",
+      "BundleDescription": "Mô tả",
+      "BundleSearch": "Tìm kiếm"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Ảnh chụp màn hình gần đây"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Cài đặt",
     "UserAvatarAlt": "Người dùng",
+    "ManagedByPlan": "Đã bao gồm trong gói Sync Pro của bạn — AI chạy trên các nhà cung cấp do SeaMeet quản lý. Không cần khóa API.",
     "AppMode": {
       "Title": "Chế độ ứng dụng",
       "Currently": "Hiện tại:",
@@ -2918,7 +3260,8 @@
     "Record": "Ghi",
     "Recording": "ghi âm",
     "Screenshot": "Chụp màn hình",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Đám mây"
   },
   "Tray": {
     "MarkEvent": "Đánh dấu sự kiện",
@@ -3510,6 +3853,38 @@
       "testing": "Đang kiểm tra…",
       "title": "Nhà cung cấp Chuyển đổi Giọng nói thành Văn bản (Phụ đề trực tiếp, Phiên âm tệp)",
       "tutorial": "Hướng dẫn cài đặt"
+    }
+  },
+  "Provenance": {
+    "Managed": "qua SeaMeet Cloud",
+    "Byok": "qua khóa {{provider}} của bạn"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Mở khóa với Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "Bạn đã sử dụng hết 6 giờ phiên âm miễn phí. Sync Pro tiếp tục phiên âm và lưu các bản ghi của bạn lên đám mây.",
+      "Short": "Đã dùng hết phiên âm miễn phí — mở khóa với Sync Pro",
+      "CTA": "Mở khóa với Sync Pro"
+    },
+    "Card": {
+      "Title": "Bạn đang xem 15 phút đầu tiên",
+      "Reassure": "Phần còn lại của cuộc họp này đã được phiên âm và lưu đầy đủ — nó chỉ bị ẩn ở gói miễn phí.",
+      "SyncProIntro": "Sync Pro mở khóa thêm:",
+      "Bullet": {
+        "Transcript": "Hiển thị bản ghi đầy đủ của cuộc họp này",
+        "Devices": "Đồng bộ bản ghi trên tất cả thiết bị của bạn",
+        "Backup": "Sao lưu đám mây — không cần giữ bản sao cục bộ"
+      },
+      "GetSyncPro": "Nhận Sync Pro",
+      "SeePlans": "Xem tất cả gói",
+      "Progress": "Đã hiển thị {{shown}} trong {{total}}"
+    },
+    "SessionTooLong": {
+      "Long": "Bản ghi của bạn đã đạt giới hạn phiên dịch 5 giờ. Dừng và bắt đầu một bản ghi mới để tiếp tục phiên dịch — âm thanh đã ghi cho đến giờ đã được lưu.",
+      "Short": "Đã đạt giới hạn phiên dịch 5 giờ — dừng và bắt đầu lại để tiếp tục",
+      "CTA": "Dừng & bắt đầu bản ghi mới"
     }
   },
   "TranslationPicker": {

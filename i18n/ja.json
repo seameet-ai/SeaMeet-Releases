@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "BYOK Proサブスクリプションが必要です。ライブ文字起こし、AI会議サマリー、インタラクティブAIエージェントを利用するにはサブスクライブしてください。"
+    "SubscribeMsg": "Sync Proサブスクリプションが必要です。ライブ文字起こし、AI会議サマリー、インタラクティブAIエージェントを利用するにはサブスクライブしてください。"
+  },
+  "Paywall": {
+    "Unlock": "Sync Pro でロックを解除",
+    "Reassurance": "すでにお持ちです — 購読すれば、今すぐ永久に表示されます。",
+    "RevealCap": {
+      "Title": "無料の文字起こしの上限に達しました",
+      "Body": "Sync Pro で全文の文字起こしを解除しましょう。"
+    }
   },
   "AIAgent": {
     "DisabledBadge": "無効",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "文字起こし＋要約＋チャプターに適用。自動検出は話された言語に一致します。",
     "TestKey": "保存して検証",
     "UseMainLlmForOcrHint": "スクリーンショットOCRを選択したLLMプロバイダーにルーティングします。オフ（デフォルト）：常にGeminiを使用。プロバイダーが画像を受け付けない場合は自動的にGeminiにフォールバックします。",
+    "UsageReporting": "匿名のAI使用量カウントを共有",
+    "UsageReportingDesc": "プロバイダー・モデル・トークン数のみ — コンテンツは決して含まれません。プロバイダーの信頼性維持に役立ちます。",
     "KeyVerificationFailed": "キーの検証に失敗しました"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "詳細を見る"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "作業を保存して、スマホでも開けるようにしましょう。",
+      "Subline": {
+        "Wall": "アカウントを連携すると、すべてのデバイスで録音と文字起こしを保持でき、無料プランをフルに利用できます。",
+        "AnotherDevice": "アカウントを連携すると、スマホやほかのデバイスで録音と文字起こしを開けるようになり、無料プランをフルに利用できます。",
+        "RevealCap": "最初の15分を文字起こししました。さらに解除するには（無料で）サインインするか、無制限のライブ文字起こしには Sync Pro をご利用ください。"
+      },
+      "ContinueWith": "{{provider}} で続行",
+      "NotNow": "今はしない",
+      "TitleRevealCap": "無料の15分プレビューが終了しました",
+      "SeeSyncPro": "Sync Pro を見る"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — 自分のキーを持ち込む)",
       "ActiveTitle": "サブスクリプション有効 — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "すでにアクティブなサブスクリプションがあります。「サブスクリプションを管理」を使用して確認または変更してください。",
       "NoApiUrl": "請求サービスが設定されていません。サポートにお問い合わせください。",
       "NotAuthenticated": "サブスクリプションの前にサインインしてください。アカウントメニューからサインインできます。",
-      "Unknown": "問題が発生しました。もう一度お試しください。"
+      "Unknown": "問題が発生しました。もう一度お試しください。",
+      "SwitchNotSubscribed": "切り替え可能な有効なサブスクリプションがありません。先にご登録ください。",
+      "SwitchFailed": "請求サイクルを切り替えできませんでした。もう一度お試しいただくか、「サブスクリプションの管理」をご利用ください。",
+      "RefundPeriodExpired": "返金期間が終了しました（購入から30日）。",
+      "RefundAlreadyUsed": "セルフサービス返金は既に利用済みです。",
+      "RefundNoSub": "返金対象の有効なサブスクリプションがありません。",
+      "RefundFailed": "返金処理ができませんでした。サポートにお問い合わせください。",
+      "ScheduleFailed": "変更をスケジュールできませんでした。もう一度お試しいただくか、サポートにお問い合わせください。",
+      "CancelCadenceFailed": "予定された変更をキャンセルできませんでした。もう一度お試しください。"
     },
     "Explainer": {
       "Continue": "サブスクライブに進む",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot にも無料プランがあります。",
         "InfoNoteGemini": "Google AI Studio では通常、無料のキーを取得できます。",
         "Name": "BYOK Pro",
-        "Price": "$4.99/月"
+        "Price": "$4.99/月",
+        "CTA": "BYOK Pro を入手"
       },
       "Free": {
         "Feature1": "録音のみ",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "AI内蔵 — APIキー不要",
-        "Feature2": "ノート、音声、動画、スクリーンショットのマネージド同期",
-        "Feature3": "チームコラボレーション機能",
-        "Feature4": "共有会議ライブラリ",
+        "Feature2": "月50時間の会議文字起こし",
+        "Feature3": "プロバイダー自動切り替え付きのAI要約・Wiki・エージェント",
+        "Feature4": "マネージドクラウド同期 — まもなくプランに追加",
         "Name": "Sync Pro",
+        "Price": "$15.99/月",
+        "PriceAnnual": "$12.99/月",
         "RequestBody": "SeaMeetチームの皆様 — Sync Pro(APIキー管理不要の内蔵AI、クラウド同期、マルチデバイス、チームコラボレーション)に興味があります。利用可能になりましたらお知らせください。\n\nよろしくお願いします!",
         "RequestCTA": "リクエスト",
         "RequestSubject": "SeaMeetのSync Proを希望します"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "登録する",
     "Subscribing": "登録中...",
-    "UnlockTitle": "SeaMeet AI機能をアンロック"
+    "UnlockTitle": "SeaMeet AI機能をアンロック",
+    "Pro": {
+      "Title": "プランを選択",
+      "Monthly": "月額",
+      "Annual": "年額",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/月 · または $15.99 月払い",
+      "PriceMonthly": "$15.99/月 · 年額で19%お得",
+      "ColFree": "無料",
+      "ColPro": "Sync Pro · $12.99/月",
+      "CTA": "Sync Pro を入手",
+      "Reassurance": "いつでも解約可 · 30日間返金",
+      "AdvancedByok": "詳細設定：自分のAPIキーを使う",
+      "Row": {
+        "LiveTranscription": "ライブ文字起こし",
+        "LiveTranscriptionFree": "合計6時間 · 最初の15分",
+        "LiveTranscriptionPro": "無制限*",
+        "FileImport": "ファイル文字起こし",
+        "FileImportFree": "—",
+        "FileImportPro": "50時間/月",
+        "Storage": "ストレージ",
+        "StorageFree": "2 GB · 30日",
+        "StoragePro": "250 GB · 無期限",
+        "Ocr": "スクリーンショットOCR",
+        "OcrFree": "合計20回",
+        "OcrPro": "無制限",
+        "Notes": "ノート & ウィキ",
+        "NotesFree": "ノートのみ",
+        "NotesPro": "フル",
+        "Search": "全文検索",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "無制限 · 自分のキー",
+        "StorageByok": "自分のクラウド",
+        "NotesByok": "自分の GitHub",
+        "OcrProSyncMonthly": "撮影は無制限* · 月1,000インポート",
+        "OcrProSyncAnnual": "撮影は無制限* · 年12,000インポート",
+        "FileImportProMonthly": "50時間/月",
+        "FileImportProAnnual": "600時間/年"
+      },
+      "OcrFairUse": "* フェアユースが適用されます。Sync Pro では、ライブ文字起こしとアプリ内での撮影は無制限です。インポートはプランに応じて上限があります：ファイル文字起こしは月50時間まで（年額プランは年600時間）、インポート画像のOCRは月1,000件まで（年12,000件）。"
+    },
+    "Vault": {
+      "Heading": "ロック解除＆同期完了",
+      "Subline": "文字起こし {{transcripts}} 件、スクリーンショット {{screenshots}} 枚、{{gb}}。すべてあなたのもの、期限切れはありません。",
+      "TallyTranscripts": "件の完全な文字起こしが解放されました",
+      "TallyScreenshots": "枚のスクリーンショット — OCR と検索が解放されました",
+      "TallyStorage": "永久保存（削除はキャンセルされました）",
+      "TallyNotesWiki": "ノートとウィキがすべてのデバイス間で同期されます",
+      "SeeEverything": "すべて表示 →",
+      "Retranscribing": "上限で切れた録音を全文で再文字起こししています…",
+      "Renews": "{{date}} に更新",
+      "Manage": "管理",
+      "Receipt": "領収書"
+    },
+    "Recommended": "おすすめ",
+    "OnFreePlan": "現在 Free プランです",
+    "Switching": "切り替え中…",
+    "SwitchToAnnual": "年額に切り替え",
+    "SwitchToMonthly": "月額に切り替え",
+    "SwitchConfirm": "切り替えを確定",
+    "SwitchAnnual": {
+      "Title": "年額請求に切り替えますか？",
+      "Body": "プランはすぐに年額（$155.88/年、実質 $12.99/月）に変わります。Stripe が今月の未使用分を返金（クレジット）し、日割りの差額を本日請求します。ファイル文字起こしの上限は年600時間になります。"
+    },
+    "SwitchMonthly": {
+      "Title": "月額請求に切り替えますか？",
+      "Body": "プランはすぐに月額（$15.99/mo）に変わります。Stripe が年間契約の未使用分をアカウント残高として今後の請求に充当します。ファイル文字起こしの上限は月50時間になります。"
+    },
+    "Summary": {
+      "StorageAddOns": "ストレージアドオン",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / 月",
+      "NextCharge": "次回請求 {{date}}",
+      "SwitchToAnnual": "年間プランに切替",
+      "SwitchToMonthly": "月間プランに切替",
+      "SwitchConfirm": "{{target}}請求に切り替えますか？日割り計算した金額が直ちに請求されます。",
+      "AnnualLabel": "年間",
+      "MonthlyLabel": "月間",
+      "Switching": "切り替え中…",
+      "SwitchedToAnnual": "年額請求に変更されました。",
+      "SwitchedToMonthly": "月間請求に切り替えました。",
+      "CancellationRefunds": "キャンセルと返金",
+      "RequestRefund": "返金をリクエスト",
+      "RefundUnavailable": "返金不可",
+      "CancelSubscription": "サブスクリプションをキャンセル",
+      "RefundConfirm": "返金をリクエストしますか？最新のお支払いが返金され、サブスクリプションがキャンセルされます。返金は1アカウントにつき1回まで、購入から30日以内のみ可能です。",
+      "RefundIssued": "返金処理されました。サブスクリプションはキャンセルされました。",
+      "Cancel": "キャンセル",
+      "Confirm": "確認",
+      "ConfirmRefund": "返金を確定",
+      "Processing": "処理中…",
+      "ScheduleMonthly": "更新時に月額に切り替え",
+      "SwitchToAnnualConfirm": "今すぐ年額請求に切り替えますか？未使用の月額時間を最初の年額請求に充当します。",
+      "SwitchToMonthlyConfirm": "年額プランは{{date}}まで継続されます。その後、月額で請求されます。本日の請求はありません。",
+      "ScheduledMonthly": "切り替えがスケジュールされました。月額プランは{{date}}に開始されます。",
+      "ScheduledMonthlyNotice": "月額請求は{{date}}に予定されています。",
+      "CancelScheduledChange": "キャンセル",
+      "Canceling": "キャンセル中…",
+      "CanceledScheduledChange": "予定された変更をキャンセルしました。"
+    }
   },
   "BlackHole": {
     "Cancel": "キャンセル",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "画像をインポートしました",
     "PasteHint": "Ctrl+Vで画像を貼り付け",
     "PasteHintMac": "⌘Vで画像を貼り付け"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "クラウド同期",
+      "Loading": "読み込み中…",
+      "Unavailable": "このビルドではクラウド同期を利用できません。",
+      "Disabled": "クラウド同期はオフになっています。",
+      "StorageHeading": "ストレージ",
+      "StorageUsed": "{{quota}} 中 {{used}} 使用",
+      "QueueHeading": "アップロードキュー",
+      "QueueEmpty": "アップロード待ちの項目はありません。",
+      "PauseAll": "すべて一時停止",
+      "ResumeAll": "すべて再開",
+      "Retry": "再試行",
+      "Backfill": "既存のライブラリをバックアップ…"
+    },
+    "State": {
+      "Queued": "待機中",
+      "Uploading": "アップロード中",
+      "Error": "失敗",
+      "Complete": "同期済み"
+    },
+    "Kind": {
+      "Video": "ビデオ",
+      "Audio": "音声",
+      "AudioForStt": "音声（文字起こし用）",
+      "Bundle": "AIの結果"
+    },
+    "Backfill": {
+      "Title": "既存のライブラリをバックアップ",
+      "Description": "クラウドライブラリにアップロードする録音を選択してください。",
+      "Loading": "録音を読み込み中…",
+      "LoadFailed": "録音を読み込めませんでした。このダイアログを閉じてからもう一度お試しください。",
+      "Empty": "すべての録音はすでにバックアップ済みです。",
+      "SelectAll": "すべて選択",
+      "SelectNone": "選択を解除",
+      "ColumnName": "名前",
+      "ColumnDate": "日付",
+      "ColumnType": "種類",
+      "ColumnSize": "サイズ",
+      "TypeVideo": "ビデオ",
+      "TypeAudio": "音声",
+      "TypeScreenshot": "スクリーンショット",
+      "SelectRecording": "{{name}} を選択",
+      "SelectedTotal": "{{num}} 件選択中 · {{size}}",
+      "ExceedsPlan": "選択した項目が {{quota}} プランの容量を超えています。いくつか選択を解除するか、クラウドの空き容量を増やしてください。",
+      "AutoTrimmed": "バックアップが残り容量に収まるよう、特に大きい録音の一部は選択されていません。",
+      "StartFailed": "バックアップを開始できませんでした。もう一度お試しください。",
+      "Confirm": "選択した項目をバックアップ",
+      "Cancel": "キャンセル",
+      "TextButton": "ノートとWikiを同期",
+      "TextRunning": "ノートとWikiを同期中…",
+      "TextDone": "{{count}}件のノートとWikiページを同期しました。",
+      "TextFailed": "ノートとWikiを同期できませんでした。",
+      "WelcomeHeading": "Sync Pro へようこそ 🎉",
+      "WelcomeBody": "これまでの {{total}} 件の会議をアップロードしています。すべてのデバイスとウェブで利用できるようになります…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "閉じる",
+      "CompleteToast": "{{total}} 件すべての会議が同期されました。どのデバイスでも、または app-dev.seameet.ai で開けます。"
+    },
+    "Status": {
+      "Synced": "クラウドに同期済み",
+      "Uploading": "アップロード中… {{pct}}%",
+      "Queued": "アップロード待ち",
+      "Error": "同期に失敗しました — クラウドパネルを開いて再試行してください",
+      "CloudOnly": "クラウド上 — 必要なときに再生",
+      "LocalOnly": "このデバイスのみ",
+      "Downloading": "ダウンロード中… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "クラウドにバックアップ",
+      "BackUpSelected": "バックアップ",
+      "BackUpQueued": "{{count}}件のファイルがクラウドバックアップ待ちです",
+      "KeepOnDevice": "このデバイスに残す",
+      "DownloadFailed": "クラウドからダウンロードできませんでした。もう一度お試しください。",
+      "StreamFailed": "この録音をクラウドから読み込めませんでした。接続を確認して、もう一度お試しください。",
+      "Downloaded": "このデバイスに保存しました",
+      "SyncToLocal": "ローカルに同期",
+      "SyncWithSyncPro": "この録音を Sync Pro でクラウドに同期"
+    },
+    "Trash": {
+      "Title": "ゴミ箱",
+      "Loading": "ゴミ箱を読み込み中…",
+      "LoadFailed": "ゴミ箱を読み込めませんでした。もう一度お試しください。",
+      "Empty": "ゴミ箱は空です。",
+      "Summary": "ゴミ箱に{{count}}件 · {{size}}",
+      "ExpiresIn": "あと{{days}}日で期限切れ",
+      "Restore": "復元",
+      "DeleteForever": "完全に削除",
+      "ReallyDelete": "本当に削除しますか？",
+      "EmptyTrash": "ゴミ箱を空にする",
+      "ReallyEmpty": "本当に空にしますか？",
+      "ActionFailed": "操作に失敗しました。もう一度お試しください。"
+    },
+    "Usage": {
+      "TabTitle": "使用状況",
+      "SttHeading": "文字起こし",
+      "SttUsed": "{{allowance}}分のうち{{used}}分使用",
+      "Unlimited": "無制限",
+      "ImportHeading": "インポートの文字起こし",
+      "ImportUsed": "{{used}} / {{cap}} 時間",
+      "FreePoolsHeading": "無料枠",
+      "FreeTranscriptionLeft": "残り{{minutes}}分の文字起こし",
+      "FreeOcrLeft": "残り{{runs}}回のOCR",
+      "FreeRetention": "無料の録音は{{days}}日間保存されます",
+      "Upgrade": "アップグレード",
+      "RunsHeading": "今月のAI実行回数",
+      "RunsEmpty": "今月はまだAIアクティビティがありません。",
+      "LoadFailed": "使用状況を読み込めませんでした。もう一度お試しください。",
+      "ManageStorage": "ストレージを管理",
+      "AddStorage": "ストレージを追加 — +500 GB / $10/月",
+      "FeatureStt": "ライブ文字起こし",
+      "FeatureSummary": "録音の要約",
+      "FeatureOcr": "スクリーンショットOCR",
+      "FeatureWiki": "Wiki生成",
+      "FeatureFile": "ファイル文字起こし",
+      "FeatureGeminiPush": "詳細分析のアップロード",
+      "ImportCapReached": "インポートは上限に達すると、プラン更新まで一時停止します",
+      "AddStorageSuccess": "{{gb}} GB のストレージを追加しました",
+      "AddStorageNotSubscribed": "ストレージを追加するには、有効な Sync Pro サブスクリプションが必要です。",
+      "AddStorageUnavailable": "ストレージの追加は現在ご利用いただけません。後でもう一度お試しください。",
+      "AddStorageFailed": "ストレージを追加できませんでした。もう一度お試しください。",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "月額 ${{price}} で {{gb}} GB を追加しますか？日割り計算された金額が今すぐカードに請求されます。",
+      "AddStorageCancel": "キャンセル",
+      "AddStorageConfirmCta": "購入を確定",
+      "AddStorageWorking": "追加中…",
+      "AddStorageDecrease": "1 つ減らす",
+      "AddStorageIncrease": "1 つ増やす",
+      "AddStorageConfirmExplain": "月額 ${{price}} で {{gb}} GB を追加します。ストレージ アドオンは月額課金です（プランの請求サイクルとは別）。本日は今請求月の残り日数分の日割り料金が請求され、以降は毎月自動的に ${{price}} がカードに課金されます。請求ポータルからいつでも管理・解約できます。",
+      "AddStorageSuccessNotice": "ストレージを追加しました。サブスクリプションと請求書を管理 →",
+      "ManageSubscriptionInvoices": "サブスクリプションと請求書を管理",
+      "OcrImportHeading": "インポート画像のOCR",
+      "OcrImportUsed": "{{used}} / {{cap}} 枚",
+      "OcrImportCapReached": "インポート画像のOCRは上限に達すると、プラン更新まで一時停止します",
+      "FeatureTranscription": "文字起こし",
+      "FeatureSynthesis": "ノートの要約",
+      "OcrCaptureLabel": "撮影（アプリ内）",
+      "OcrImportLabel": "インポートした画像",
+      "OcrHeading": "スクリーンショットOCR",
+      "ImportLabel": "インポートしたファイル"
+    },
+    "WebLibrary": {
+      "Open": "Webライブラリを開く"
+    },
+    "Devices": {
+      "Heading": "デバイス",
+      "ThisDevice": "このデバイス"
+    },
+    "Prefs": {
+      "AutoDownload": "新しい録音を自動ダウンロード",
+      "AutoDownloadHint": "別のデバイスが録音をアップロードすると、このデバイスに自動的にコピーをダウンロードします。",
+      "BackfillPast": "アップグレード時に過去の会議をバックアップ",
+      "BackfillPastHint": "Sync Pro にアップグレードすると、既存の録音がアップロードされ、すべてのデバイスに同期されます。",
+      "BackfillAudio": "音声と動画も含める（文字起こしだけではなく）",
+      "BackfillAudioHint": "オフにすると文字起こしのみをアップロードします。容量が小さく高速ですが、元のメディアはこのデバイスに残ります。"
+    },
+    "Danger": {
+      "Heading": "危険な操作",
+      "DeleteAll": "クラウドデータをすべて削除",
+      "Explain": "クラウドライブラリ内のすべての録音、文字起こし、AI結果を完全に削除します — すべてのデバイスが対象です。このデバイスに保存されているファイルには影響しません。この操作は取り消せません。",
+      "TypeToConfirm": "確認のため DELETE と入力してください",
+      "ConfirmButton": "すべて完全に削除",
+      "Success": "すべてのクラウドデータを削除しました。",
+      "Failed": "クラウドデータを削除できませんでした。もう一度お試しください。"
+    },
+    "Quota": {
+      "FullBanner": "クラウドストレージが満杯のため、アップロードを一時停止しています。下で空き容量を確保するか、ゴミ箱を空にして再開してください。",
+      "NearFull": "クラウドストレージの使用率が {{pct}}% に達しています。",
+      "ManagerHeading": "空き容量を増やす",
+      "NothingToFree": "整理できるクラウド録音はありません。",
+      "Freed": "{{size}} を解放しました（30日間はゴミ箱から復元できます）",
+      "Remove": "削除"
+    },
+    "Delete": {
+      "TitleOne": "「{{name}}」を削除しますか？",
+      "TitleMany": "{{count}}件の録音を削除しますか？",
+      "Device": "このデバイスから削除",
+      "DeviceHint": "ローカルファイルをシステムのゴミ箱に移動します。クラウドライブラリと他のデバイスには残ります。",
+      "Cloud": "クラウドから削除",
+      "CloudHint": "クラウドのゴミ箱に30日間移動します。ファイルはこのデバイスに残ります。",
+      "Everywhere": "すべての場所から削除",
+      "EverywhereHint": "クラウドから削除し（30日間ゴミ箱に保管）、すべてのデバイスのローカルコピーを各システムのゴミ箱に移動します。",
+      "ConfirmDevice": "デバイスから削除",
+      "ConfirmCloud": "クラウドのゴミ箱へ移動",
+      "ConfirmEverywhere": "すべての場所から削除",
+      "CloudFailed": "クラウドから削除できませんでした。もう一度お試しください。",
+      "CloudBatchFailed": "クラウドから{{total}}件のうち{{count}}件を削除できませんでした。もう一度お試しください。"
+    },
+    "FreeExpiry": {
+      "Warning": "これらの録音は {{days}} 日後に削除されます。永久に保存しましょう。",
+      "CloudOnly": "このファイルはクラウドにのみ存在し、アップグレードしない限り {{days}} 日後に完全に削除されます。",
+      "Upgrade": "永久に保存"
+    }
   },
   "Common": {
     "Apply": "適用",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "ファイルを参照",
+    "DragDropClickToBrowse": "またはクリックしてファイルを選択",
     "DragDropFiles": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
     "DragDropSubtitle": "ここにオーディオ、ビデオ、画像ファイルをドラッグアンドドロップ",
     "ImportMedia": "メディアをインポート",
@@ -1848,6 +2175,14 @@
     "today": "今日",
     "view_on_seameet": "SeaMeet で見る",
     "yesterday": "昨日",
+    "TranscriptWall": {
+      "Title": "この会議の続きが準備できました",
+      "BundleTranscript": "全文文字起こし",
+      "BundleSummary": "要約",
+      "BundleChapters": "チャプター",
+      "BundleActionItems": "アクションアイテム",
+      "Progress": "{{total}} 中 {{shown}} を表示"
+    },
     "hide_translations": "翻訳を非表示",
     "show_translations": "翻訳を表示"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "サブスクライブ",
     "LockedChipTooltip": "有効にするにはサブスクライブしてください",
     "NoteSynthesis": "AI合成",
-    "NoteSynthesisDesc": "BYOK Proでこのノートとリンクされた録音の構造化された要約を取得します。",
+    "NoteSynthesisDesc": "Sync Proでこのノートとリンクされた録音の構造化された要約を取得します。",
     "PostMeetingAI": "会議後AI",
     "PostMeetingAIDesc": "録音完了後に要約、アクションアイテム、インサイトが生成されます。",
     "ScreenshotAI": "スクリーンショットAI",
-    "ScreenshotAIDesc": "BYOK Proで画像を説明し、テキストを抽出し、フォローアップの質問ができます。",
+    "ScreenshotAIDesc": "Sync Proで画像を説明し、テキストを抽出し、フォローアップの質問ができます。",
     "UnlockPremium": "プレミアムでアンロック",
     "Upgrade": "アップグレード",
     "WikiList": "Wikis",
-    "WikiListDesc": "BYOK Proでノートと会議からナレッジベースを自動構築します。"
+    "WikiListDesc": "Sync Proでノートと会議からナレッジベースを自動構築します。"
   },
   "QuickOpen": {
     "NoResults": "一致するノートはありません",
@@ -2410,7 +2745,13 @@
       "Description": "説明",
       "OCR": "テキスト (OCR)"
     },
-    "UnknownError": "不明なエラー"
+    "UnknownError": "不明なエラー",
+    "OcrWall": {
+      "Title": "OCR のロックを解除",
+      "BundleOcr": "OCR テキスト",
+      "BundleDescription": "説明",
+      "BundleSearch": "検索"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "最近のスクリーンショット"
@@ -2666,6 +3007,7 @@
     },
     "Title": "設定",
     "UserAvatarAlt": "ユーザー",
+    "ManagedByPlan": "Sync Proプランに含まれています — AIはSeaMeetが管理するプロバイダーで動作します。APIキーは不要です。",
     "AppMode": {
       "Title": "アプリモード",
       "Currently": "現在:",
@@ -2918,7 +3260,8 @@
     "Record": "記録",
     "Recording": "録音",
     "Screenshot": "スクリーンショット",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "クラウド"
   },
   "Tray": {
     "MarkEvent": "イベントをマーク",
@@ -3510,6 +3853,38 @@
       "testing": "テスト中…",
       "title": "音声認識プロバイダー（ライブキャプション、ファイル文字起こし）",
       "tutorial": "セットアップチュートリアル"
+    }
+  },
+  "Provenance": {
+    "Managed": "SeaMeetクラウド経由",
+    "Byok": "あなたの{{provider}}キー経由"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Sync Pro でロックを解除"
+    },
+    "FreeExhausted": {
+      "Long": "無料の文字起こし6時間を使い切りました。Sync Pro は文字起こしを継続し、録音をクラウドに保存します。",
+      "Short": "無料の文字起こしを使い切りました — Sync Pro でロックを解除",
+      "CTA": "Sync Pro でロックを解除"
+    },
+    "Card": {
+      "Title": "最初の15分を表示しています",
+      "Reassure": "この会議の残りも完全に文字起こしされ保存されています — 無料プランでは非表示になっているだけです。",
+      "SyncProIntro": "Sync Pro でさらに利用可能：",
+      "Bullet": {
+        "Transcript": "この会議の全文文字起こしを表示",
+        "Devices": "すべてのデバイスで録音を同期",
+        "Backup": "クラウドバックアップ — ローカルにコピーを保持する必要はありません"
+      },
+      "GetSyncPro": "Sync Pro を入手",
+      "SeePlans": "すべてのプランを見る",
+      "Progress": "{{total}} 中 {{shown}} を表示"
+    },
+    "SessionTooLong": {
+      "Long": "録音が文字起こしの上限である5時間に達しました。これまでの音声は保存されています。文字起こしを続けるには、停止して新しい録音を開始してください。",
+      "Short": "5時間の文字起こし上限に到達 — 停止して新しい録音で続行",
+      "CTA": "停止して新しい録音を開始"
     }
   },
   "TranslationPicker": {

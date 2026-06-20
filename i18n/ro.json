@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Necesită un abonament BYOK Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
+    "SubscribeMsg": "Necesită un abonament Sync Pro. Abonați-vă pentru transcriere live, rezumate de întâlniri AI și un agent AI interactiv."
+  },
+  "Paywall": {
+    "Unlock": "Deblochează cu Sync Pro",
+    "Reassurance": "Îl ai deja — abonarea îl dezvăluie instantaneu, pentru totdeauna.",
+    "RevealCap": {
+      "Title": "Ai atins limita transcrierii gratuite",
+      "Body": "Deblochează transcrierea completă cu Sync Pro."
+    }
   },
   "AIAgent": {
     "DisabledBadge": "Dezactivat",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "Se aplică la transcriere + rezumat + capitole. Detectarea automată corespunde limbii vorbite.",
     "TestKey": "Salvează și verifică",
     "UseMainLlmForOcrHint": "Direcționează OCR-ul capturilor de ecran către furnizorul LLM selectat. Dezactivat (implicit): folosește întotdeauna Gemini. Revine automat la Gemini dacă furnizorul nu poate accepta imaginea.",
+    "UsageReporting": "Partajează statistici anonime de utilizare AI",
+    "UsageReportingDesc": "Doar furnizorul, modelul și numărul de tokenuri — niciodată conținutul tău. Ne ajută să menținem furnizorii fiabili.",
     "KeyVerificationFailed": "Verificarea cheii a eșuat"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "Vezi detalii"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Salvează-ți munca și deschide-o și pe telefon.",
+      "Subline": {
+        "Wall": "Conectează un cont pentru a-ți păstra înregistrările și transcrierile pe toate dispozitivele — și deblochează nivelul gratuit complet.",
+        "AnotherDevice": "Conectează un cont pentru a-ți deschide înregistrările și transcrierile pe telefon și pe alte dispozitive — și deblochează nivelul gratuit complet.",
+        "RevealCap": "Am transcris primele 15 minute. Autentifică-te (gratuit) pentru a debloca mai mult — sau obține Sync Pro pentru transcriere live nelimitată."
+      },
+      "ContinueWith": "Continuă cu {{provider}}",
+      "NotNow": "Nu acum",
+      "TitleRevealCap": "Previzualizarea ta gratuită de 15 minute s-a încheiat",
+      "SeeSyncPro": "Vezi Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK (Bring Your Own Key — adu-ți propria cheie)",
       "ActiveTitle": "Abonament activ — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "Aveți deja un abonament activ. Utilizați Gestionare abonament pentru a-l vizualiza sau modifica.",
       "NoApiUrl": "Serviciul de facturare nu este configurat. Vă rugăm să contactați asistența.",
       "NotAuthenticated": "Vă rugăm să vă conectați mai întâi pentru a vă abona. Utilizați meniul contului pentru a vă conecta.",
-      "Unknown": "Ceva a mers greșit. Vă rugăm să încercați din nou."
+      "Unknown": "Ceva a mers greșit. Vă rugăm să încercați din nou.",
+      "SwitchNotSubscribed": "Nu există un abonament activ de schimbat. Abonează-te mai întâi.",
+      "SwitchFailed": "Nu s-a putut schimba ciclul de facturare. Încearcă din nou sau folosește Gestionează abonamentul.",
+      "RefundPeriodExpired": "Fereastra de rambursare a expirat (30 de zile de la achiziție).",
+      "RefundAlreadyUsed": "Ai folosit deja unica ta rambursare self-service.",
+      "RefundNoSub": "Niciun abonament activ pentru rambursare.",
+      "RefundFailed": "Rambursarea nu a putut fi procesată. Te rugăm să contactezi asistența.",
+      "ScheduleFailed": "Nu s-a putut programa modificarea. Încearcă din nou sau contactează asistența.",
+      "CancelCadenceFailed": "Nu s-a putut anula modificarea programată. Încearcă din nou."
     },
     "Explainer": {
       "Continue": "Continuați pentru abonament",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot are de asemenea un plan gratuit.",
         "InfoNoteGemini": "Google AI Studio îți oferă de obicei o cheie gratuită.",
         "Name": "BYOK Pro",
-        "Price": "4,99 USD/lună"
+        "Price": "4,99 USD/lună",
+        "CTA": "Obține BYOK Pro"
       },
       "Free": {
         "Feature1": "Doar inregistrare",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "AI integrat — fără chei API necesare",
-        "Feature2": "Sincronizare gestionată a notițelor, audio, video și capturilor de ecran",
-        "Feature3": "Funcții de colaborare în echipă",
-        "Feature4": "Biblioteca de întâlniri partajată",
+        "Feature2": "50 de ore de transcriere a întâlnirilor pe lună",
+        "Feature3": "Rezumate AI, wiki și agenți cu comutare automată între furnizori",
+        "Feature4": "Sincronizare cloud gestionată — în curând în planul tău",
         "Name": "Sync Pro",
+        "Price": "15,99 $/lună",
+        "PriceAnnual": "12,99 $/lună",
         "RequestBody": "Bună echipa SeaMeet — sunt interesat de Sync Pro (AI integrat fără chei API de gestionat, sincronizare cloud, multi-dispozitiv, colaborare în echipă). Vă rog să mă anunțați când va fi disponibil.\n\nMulțumesc!",
         "RequestCTA": "Solicită",
         "RequestSubject": "Aș dori Sync Pro pentru SeaMeet"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "Aboneaza-te",
     "Subscribing": "Se proceseaza abonamentul...",
-    "UnlockTitle": "Deblocheaza functiile AI SeaMeet"
+    "UnlockTitle": "Deblocheaza functiile AI SeaMeet",
+    "Pro": {
+      "Title": "Alege-ți planul",
+      "Monthly": "Lunar",
+      "Annual": "Anual",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/lună · sau $15.99 lunar",
+      "PriceMonthly": "$15.99/lună · economisești 19% cu plata anuală",
+      "ColFree": "Gratuit",
+      "ColPro": "Sync Pro · $12.99/lună",
+      "CTA": "Obține Sync Pro",
+      "Reassurance": "Anulează oricând · rambursare în 30 de zile",
+      "AdvancedByok": "Avansat: folosește propriile chei API",
+      "Row": {
+        "LiveTranscription": "Transcriere live",
+        "LiveTranscriptionFree": "6 h în total · primele 15 min",
+        "LiveTranscriptionPro": "Nelimitat*",
+        "FileImport": "Transcriere fișiere",
+        "FileImportFree": "—",
+        "FileImportPro": "50 h/lună",
+        "Storage": "Stocare",
+        "StorageFree": "2 GB · 30 zile",
+        "StoragePro": "250 GB · pentru totdeauna",
+        "Ocr": "OCR capturi de ecran",
+        "OcrFree": "20 în total",
+        "OcrPro": "Nelimitat",
+        "Notes": "Note și wiki",
+        "NotesFree": "Doar note",
+        "NotesPro": "Complet",
+        "Search": "Caută în tot",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Nelimitat · cheile tale",
+        "StorageByok": "Propriul tău cloud",
+        "NotesByok": "Propriul tău GitHub",
+        "OcrProSyncMonthly": "Capturare nelimitată* · 1,000 importuri/lună",
+        "OcrProSyncAnnual": "Capturare nelimitată* · 12,000 importuri/an",
+        "FileImportProMonthly": "50 h/lună",
+        "FileImportProAnnual": "600 h/an"
+      },
+      "OcrFairUse": "* Se aplică utilizarea echitabilă. Pe Sync Pro, transcrierea live și capturarea în aplicație sunt nelimitate. Importurile sunt limitate conform planului tău: transcrierea fișierelor până la 50 h/lună (600 h/an pe anual) și OCR-ul imaginilor importate până la 1.000/lună (12.000/an)."
+    },
+    "Vault": {
+      "Heading": "Deblocat și sincronizat",
+      "Subline": "{{transcripts}} transcrieri, {{screenshots}} capturi de ecran, {{gb}}. Acum sunt ale tale și nimic nu expiră.",
+      "TallyTranscripts": "transcrieri complete dezvăluite",
+      "TallyScreenshots": "capturi de ecran — OCR și căutare deblocate",
+      "TallyStorage": "păstrat pentru totdeauna (ștergere anulată)",
+      "TallyNotesWiki": "Notițele și wiki se sincronizează acum pe toate dispozitivele tale",
+      "SeeEverything": "Vezi tot →",
+      "Retranscribing": "Se retranscriu integral înregistrările tale limitate…",
+      "Renews": "se reînnoiește pe {{date}}",
+      "Manage": "Gestionează",
+      "Receipt": "Chitanță"
+    },
+    "Recommended": "Recomandat",
+    "OnFreePlan": "Ești pe Free",
+    "Switching": "Se schimbă…",
+    "SwitchToAnnual": "Treci la anual",
+    "SwitchToMonthly": "Treci la lunar",
+    "SwitchConfirm": "Confirmă schimbarea",
+    "SwitchAnnual": {
+      "Title": "Treci la facturare anuală?",
+      "Body": "Planul tău trece imediat la anual ($155.88/an, adică $12.99/lună). Stripe îți creditează partea neutilizată din luna curentă și percepe astăzi diferența proporțională. Limita ta de transcriere a fișierelor devine 600 de ore/an."
+    },
+    "SwitchMonthly": {
+      "Title": "Treci la facturare lunară?",
+      "Body": "Planul tău trece imediat la lunar ($15.99/mo). Stripe îți creditează partea neutilizată din perioada anuală ca sold de cont pentru facturile viitoare. Limita ta de transcriere a fișierelor devine 50 de ore/lună."
+    },
+    "Summary": {
+      "StorageAddOns": "Suplimente de stocare",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / lună",
+      "NextCharge": "Următoarea taxă {{date}}",
+      "SwitchToAnnual": "Comută la anual",
+      "SwitchToMonthly": "Comută la lunar",
+      "SwitchConfirm": "Comuți la facturarea {{target}}? Vei fi taxat imediat cu o sumă proporțională.",
+      "AnnualLabel": "anuală",
+      "MonthlyLabel": "lunară",
+      "Switching": "Se comută…",
+      "SwitchedToAnnual": "Acum ești pe facturare anuală.",
+      "SwitchedToMonthly": "Comutat la facturarea lunară.",
+      "CancellationRefunds": "Anulare și rambursări",
+      "RequestRefund": "Solicită rambursare",
+      "RefundUnavailable": "Rambursare indisponibilă",
+      "CancelSubscription": "Anulează abonamentul",
+      "RefundConfirm": "Soliciți o rambursare? Aceasta va rambursa cea mai recentă plată și va anula abonamentul. Poți rambursa o singură dată pe cont, în termen de 30 de zile de la achiziție.",
+      "RefundIssued": "Rambursare emisă. Abonamentul tău a fost anulat.",
+      "Cancel": "Anulează",
+      "Confirm": "Confirmă",
+      "ConfirmRefund": "Confirmă rambursarea",
+      "Processing": "Se procesează…",
+      "ScheduleMonthly": "Treci la lunar la reînnoire",
+      "SwitchToAnnualConfirm": "Treci la facturare anuală acum? Vom credita timpul tău lunar nefolosit la prima taxă anuală.",
+      "SwitchToMonthlyConfirm": "Planul tău anual continuă până la {{date}}. După aceea, vei fi facturat lunar. Fără taxă astăzi.",
+      "ScheduledMonthly": "Schimbare programată. Planul tău lunar începe pe {{date}}.",
+      "ScheduledMonthlyNotice": "Facturare lunară programată pentru {{date}}.",
+      "CancelScheduledChange": "Anulează",
+      "Canceling": "Se anulează…",
+      "CanceledScheduledChange": "Modificarea programată a fost anulată."
+    }
   },
   "BlackHole": {
     "Cancel": "Anulare",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "Imaginea a fost importată cu succes",
     "PasteHint": "Ctrl+V pentru a lipi imaginea",
     "PasteHintMac": "⌘V pentru a lipi imaginea"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Sincronizare în cloud",
+      "Loading": "Se încarcă…",
+      "Unavailable": "Sincronizarea în cloud nu este disponibilă în această versiune.",
+      "Disabled": "Sincronizarea în cloud este dezactivată.",
+      "StorageHeading": "Stocare",
+      "StorageUsed": "{{used}} din {{quota}} utilizați",
+      "QueueHeading": "Coadă de încărcare",
+      "QueueEmpty": "Nimic în așteptare pentru încărcare.",
+      "PauseAll": "Întrerupe tot",
+      "ResumeAll": "Reia tot",
+      "Retry": "Reîncearcă",
+      "Backfill": "Creează backup pentru biblioteca existentă…"
+    },
+    "State": {
+      "Queued": "În coadă",
+      "Uploading": "Se încarcă",
+      "Error": "Eșuat",
+      "Complete": "Sincronizat"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Audio",
+      "AudioForStt": "Audio (pentru transcriere)",
+      "Bundle": "Rezultate AI"
+    },
+    "Backfill": {
+      "Title": "Backup pentru biblioteca existentă",
+      "Description": "Alege ce înregistrări să fie încărcate în biblioteca ta din cloud.",
+      "Loading": "Se încarcă înregistrările…",
+      "LoadFailed": "Nu s-au putut încărca înregistrările. Închide acest dialog și încearcă din nou.",
+      "Empty": "Toate înregistrările tale au deja backup.",
+      "SelectAll": "Selectează tot",
+      "SelectNone": "Deselectează tot",
+      "ColumnName": "Nume",
+      "ColumnDate": "Dată",
+      "ColumnType": "Tip",
+      "ColumnSize": "Dimensiune",
+      "TypeVideo": "Video",
+      "TypeAudio": "Audio",
+      "TypeScreenshot": "Captură de ecran",
+      "SelectRecording": "Selectează {{name}}",
+      "SelectedTotal": "{{num}} selectate · {{size}}",
+      "ExceedsPlan": "Această selecție depășește planul tău de {{quota}} — deselectează ceva sau eliberează spațiu în cloud.",
+      "AutoTrimmed": "Unele dintre cele mai mari înregistrări au rămas neselectate pentru ca backupul să încapă în spațiul rămas.",
+      "StartFailed": "Nu s-a putut porni backupul. Încearcă din nou.",
+      "Confirm": "Creează backup",
+      "Cancel": "Anulează",
+      "TextButton": "Sincronizează notițe și wiki",
+      "TextRunning": "Se sincronizează notițe și wiki…",
+      "TextDone": "{{count}} notițe și pagini wiki sincronizate.",
+      "TextFailed": "Nu s-au putut sincroniza notițele și wiki.",
+      "WelcomeHeading": "Bun venit la Sync Pro 🎉",
+      "WelcomeBody": "Se încarcă cele {{total}} întâlniri anterioare ale tale, ca să fie disponibile pe orice dispozitiv și pe web…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Închide",
+      "CompleteToast": "Toate cele {{total}} întâlniri sunt sincronizate — deschide-le pe orice dispozitiv sau pe app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Sincronizat cu cloudul",
+      "Uploading": "Se încarcă… {{pct}}%",
+      "Queued": "În așteptarea încărcării",
+      "Error": "Sincronizare eșuată — deschide panoul Cloud pentru a reîncerca",
+      "CloudOnly": "În cloud — redare la cerere",
+      "LocalOnly": "Doar pe acest dispozitiv",
+      "Downloading": "Se descarcă… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "Creează backup în cloud",
+      "BackUpSelected": "Creează backup",
+      "BackUpQueued": "{{count}} fișiere în coadă pentru backup în cloud",
+      "KeepOnDevice": "Păstrează pe acest dispozitiv",
+      "DownloadFailed": "Nu s-a putut descărca din cloud. Încearcă din nou.",
+      "StreamFailed": "Nu s-a putut încărca această înregistrare din cloud. Verifică-ți conexiunea și încearcă din nou.",
+      "Downloaded": "Salvat pe acest dispozitiv",
+      "SyncToLocal": "Sincronizează local",
+      "SyncWithSyncPro": "Sincronizează această înregistrare în cloud cu Sync Pro"
+    },
+    "Trash": {
+      "Title": "Coș de gunoi",
+      "Loading": "Se încarcă coșul de gunoi…",
+      "LoadFailed": "Nu s-a putut încărca coșul de gunoi. Încearcă din nou.",
+      "Empty": "Coșul de gunoi este gol.",
+      "Summary": "{{count}} în coșul de gunoi · {{size}}",
+      "ExpiresIn": "Expiră în {{days}} zile",
+      "Restore": "Restaurează",
+      "DeleteForever": "Șterge definitiv",
+      "ReallyDelete": "Chiar ștergi?",
+      "EmptyTrash": "Golește coșul de gunoi",
+      "ReallyEmpty": "Chiar golești?",
+      "ActionFailed": "Nu a funcționat. Încearcă din nou."
+    },
+    "Usage": {
+      "TabTitle": "Utilizare",
+      "SttHeading": "Transcriere",
+      "SttUsed": "{{used}} din {{allowance}} minute utilizate",
+      "Unlimited": "Nelimitat",
+      "ImportHeading": "Transcriere import",
+      "ImportUsed": "{{used}} / {{cap}} h",
+      "FreePoolsHeading": "Alocări gratuite",
+      "FreeTranscriptionLeft": "{{minutes}} minute de transcriere rămase",
+      "FreeOcrLeft": "{{runs}} rulări OCR rămase",
+      "FreeRetention": "Înregistrările gratuite sunt păstrate {{days}} zile",
+      "Upgrade": "Faceți upgrade",
+      "RunsHeading": "Rulări AI luna aceasta",
+      "RunsEmpty": "Încă nicio activitate AI luna aceasta.",
+      "LoadFailed": "Nu s-a putut încărca utilizarea ta. Încearcă din nou.",
+      "ManageStorage": "Gestionează stocarea",
+      "AddStorage": "Adaugă spațiu — +500 GB / $10/lună",
+      "FeatureStt": "Transcriere live",
+      "FeatureSummary": "Rezumate ale înregistrărilor",
+      "FeatureOcr": "OCR captură de ecran",
+      "FeatureWiki": "Generare wiki",
+      "FeatureFile": "Transcriere fișier",
+      "FeatureGeminiPush": "Încărcări pentru analiză aprofundată",
+      "ImportCapReached": "Importurile se opresc la limita ta până la reînnoirea planului",
+      "AddStorageSuccess": "S-au adăugat {{gb}} GB de stocare",
+      "AddStorageNotSubscribed": "Este necesar un abonament Sync Pro activ pentru a adăuga stocare.",
+      "AddStorageUnavailable": "Suplimentele de stocare nu sunt disponibile acum. Încearcă din nou mai târziu.",
+      "AddStorageFailed": "Nu s-a putut adăuga stocare. Încearcă din nou.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Adaugi {{gb}} GB pentru ${{price}}/lună? Cardul tău va fi taxat acum cu o sumă proporțională.",
+      "AddStorageCancel": "Anulează",
+      "AddStorageConfirmCta": "Confirmă achiziția",
+      "AddStorageWorking": "Se adaugă…",
+      "AddStorageDecrease": "Scade unul",
+      "AddStorageIncrease": "Adaugă unul",
+      "AddStorageConfirmExplain": "Adaugă {{gb}} GB pentru ${{price}}/lună. Suplimentele de stocare se facturează lunar (separat de ciclul de facturare al planului tău). Astăzi vei fi taxat o sumă proporțională pentru restul acestei luni de facturare; de atunci, ${{price}}/lună vor fi facturate automat pe cardul tău. Gestionează sau anulează oricând din portalul de facturare.",
+      "AddStorageSuccessNotice": "Stocare adăugată. Gestionează abonamentul și facturile →",
+      "ManageSubscriptionInvoices": "Gestionează abonamentul și facturile",
+      "OcrImportHeading": "OCR imagini importate",
+      "OcrImportUsed": "{{used}} / {{cap}} imagini",
+      "OcrImportCapReached": "OCR-ul imaginilor importate se oprește la limita ta până la reînnoirea planului",
+      "FeatureTranscription": "Transcriere",
+      "FeatureSynthesis": "Rezumate ale notițelor",
+      "OcrCaptureLabel": "Capturare (în aplicație)",
+      "OcrImportLabel": "Imagini importate",
+      "OcrHeading": "OCR capturi de ecran",
+      "ImportLabel": "Fișiere importate"
+    },
+    "WebLibrary": {
+      "Open": "Deschide biblioteca web"
+    },
+    "Devices": {
+      "Heading": "Dispozitive",
+      "ThisDevice": "Acest dispozitiv"
+    },
+    "Prefs": {
+      "AutoDownload": "Descarcă automat înregistrările noi",
+      "AutoDownloadHint": "Când alt dispozitiv încarcă o înregistrare, o copie este descărcată automat pe acest dispozitiv.",
+      "BackfillPast": "Fă backup pentru întâlnirile anterioare la upgrade",
+      "BackfillPastHint": "Când faci upgrade la Sync Pro, înregistrările tale existente sunt încărcate pentru a se sincroniza pe fiecare dispozitiv.",
+      "BackfillAudio": "Include audio și video (nu doar transcrierile)",
+      "BackfillAudioHint": "Dezactivat, se încarcă doar transcrierile — mai mici și mai rapide, dar fișierele media originale rămân pe acest dispozitiv."
+    },
+    "Danger": {
+      "Heading": "Zonă periculoasă",
+      "DeleteAll": "Șterge toate datele mele din cloud",
+      "Explain": "Aceasta șterge definitiv fiecare înregistrare, transcriere și rezultat AI din biblioteca ta din cloud — pe toate dispozitivele. Fișierele stocate pe acest dispozitiv nu sunt atinse. Acțiunea nu poate fi anulată.",
+      "TypeToConfirm": "Tastează DELETE pentru a confirma",
+      "ConfirmButton": "Șterge definitiv totul",
+      "Success": "Toate datele din cloud au fost șterse.",
+      "Failed": "Nu s-au putut șterge datele tale din cloud. Încearcă din nou."
+    },
+    "Quota": {
+      "FullBanner": "Stocarea în cloud este plină — încărcările sunt întrerupte. Eliberează spațiu mai jos sau golește coșul de gunoi pentru a relua.",
+      "NearFull": "Stocarea în cloud este plină în proporție de {{pct}}%.",
+      "ManagerHeading": "Eliberează spațiu",
+      "NothingToFree": "Nu există înregistrări în cloud de curățat.",
+      "Freed": "S-au eliberat {{size}} (recuperabile din coșul de gunoi timp de 30 de zile)",
+      "Remove": "Eliminare"
+    },
+    "Delete": {
+      "TitleOne": "Ștergi „{{name}}”?",
+      "TitleMany": "Ștergi {{count}} înregistrări?",
+      "Device": "Elimină de pe acest dispozitiv",
+      "DeviceHint": "Mută fișierul local în coșul de gunoi al sistemului. Rămâne în biblioteca ta din cloud și pe celelalte dispozitive.",
+      "Cloud": "Elimină din cloud",
+      "CloudHint": "Îl mută în coșul de gunoi din cloud timp de 30 de zile. Fișierul rămâne pe acest dispozitiv.",
+      "Everywhere": "Șterge de peste tot",
+      "EverywhereHint": "Îl elimină din cloud (coș de gunoi de 30 de zile) și mută copiile locale de pe toate dispozitivele tale în coșul de gunoi al fiecărui sistem.",
+      "ConfirmDevice": "Elimină de pe dispozitiv",
+      "ConfirmCloud": "Mută în coșul de gunoi din cloud",
+      "ConfirmEverywhere": "Șterge de peste tot",
+      "CloudFailed": "Nu s-a putut elimina din cloud. Încearcă din nou.",
+      "CloudBatchFailed": "Nu s-au putut elimina {{count}} din {{total}} din cloud. Vă rugăm să încercați din nou."
+    },
+    "FreeExpiry": {
+      "Warning": "Aceste înregistrări se vor șterge în {{days}} zile — păstrează-le pentru totdeauna.",
+      "CloudOnly": "Acest fișier există doar în cloud și va fi șters definitiv în {{days}} zile dacă nu faci upgrade.",
+      "Upgrade": "Păstrează pentru totdeauna"
+    }
   },
   "Common": {
     "Apply": "Aplică",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Explorează fișiere",
+    "DragDropClickToBrowse": "Sau dă clic pentru a explora fișiere",
     "DragDropFiles": "Trage și plasează fișiere audio, video și imagine aici",
     "DragDropSubtitle": "Trage și plasează fișiere audio, video și imagine aici",
     "ImportMedia": "Import media",
@@ -1848,6 +2175,14 @@
     "today": "Astăzi",
     "view_on_seameet": "Vizualizați pe SeaMeet",
     "yesterday": "Ieri",
+    "TranscriptWall": {
+      "Title": "Restul acestei întâlniri este gata",
+      "BundleTranscript": "Transcriere completă",
+      "BundleSummary": "Rezumat",
+      "BundleChapters": "Capitole",
+      "BundleActionItems": "Elemente de acțiune",
+      "Progress": "{{shown}} din {{total}} afișate"
+    },
     "hide_translations": "Ascunde traducerile",
     "show_translations": "Afișează traducerile"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "Abonează-te",
     "LockedChipTooltip": "Abonează-te pentru a activa",
     "NoteSynthesis": "Sinteză AI",
-    "NoteSynthesisDesc": "Obține un rezumat structurat al acestei note + înregistrarea legată cu BYOK Pro.",
+    "NoteSynthesisDesc": "Obține un rezumat structurat al acestei note + înregistrarea legată cu Sync Pro.",
     "PostMeetingAI": "AI post-întâlnire",
     "PostMeetingAIDesc": "Rezumat, acțiuni și perspective vor fi generate după finalizarea înregistrării.",
     "ScreenshotAI": "AI pentru capturi de ecran",
-    "ScreenshotAIDesc": "Descrie imagini, extrage text și pune întrebări suplimentare cu BYOK Pro.",
+    "ScreenshotAIDesc": "Descrie imagini, extrage text și pune întrebări suplimentare cu Sync Pro.",
     "UnlockPremium": "Deblochează cu Premium",
     "Upgrade": "Upgradează",
     "WikiList": "Wikis",
-    "WikiListDesc": "Construiește automat o bază de cunoștințe din notele și întâlnirile tale cu BYOK Pro."
+    "WikiListDesc": "Construiește automat o bază de cunoștințe din notele și întâlnirile tale cu Sync Pro."
   },
   "QuickOpen": {
     "NoResults": "Nicio notă potrivită",
@@ -2410,7 +2745,13 @@
       "Description": "Descriere",
       "OCR": "Text (OCR)"
     },
-    "UnknownError": "Eroare necunoscută"
+    "UnknownError": "Eroare necunoscută",
+    "OcrWall": {
+      "Title": "Deblochează OCR",
+      "BundleOcr": "Text OCR",
+      "BundleDescription": "Descriere",
+      "BundleSearch": "Căutare"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Capturi recente"
@@ -2666,6 +3007,7 @@
     },
     "Title": "Setări",
     "UserAvatarAlt": "utilizator",
+    "ManagedByPlan": "Inclus în planul tău Sync Pro — AI rulează pe furnizori gestionați de SeaMeet. Nu sunt necesare chei API.",
     "AppMode": {
       "Title": "Modul aplicație",
       "Currently": "În prezent:",
@@ -2918,7 +3260,8 @@
     "Record": "Înregistra",
     "Recording": "Înregistrare",
     "Screenshot": "Captură",
-    "Wiki": "Wiki"
+    "Wiki": "Wiki",
+    "Cloud": "Cloud"
   },
   "Tray": {
     "MarkEvent": "Marchează eveniment",
@@ -3510,6 +3853,38 @@
       "testing": "Se testează…",
       "title": "Furnizor Text din Vorbire (Subtitrare live, Transcriere fișier)",
       "tutorial": "Tutorial de configurare"
+    }
+  },
+  "Provenance": {
+    "Managed": "prin SeaMeet Cloud",
+    "Byok": "prin cheia ta {{provider}}"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Deblochează cu Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "Ți-ai folosit cele 6 ore de transcriere gratuită. Sync Pro continuă transcrierea și îți salvează înregistrările în cloud.",
+      "Short": "Transcriere gratuită epuizată — deblochează cu Sync Pro",
+      "CTA": "Deblochează cu Sync Pro"
+    },
+    "Card": {
+      "Title": "Vezi primele 15 minute",
+      "Reassure": "Restul acestei întâlniri este complet transcris și salvat — doar că este ascuns în planul gratuit.",
+      "SyncProIntro": "Sync Pro deblochează mai mult:",
+      "Bullet": {
+        "Transcript": "Afișează transcrierea completă a acestei întâlniri",
+        "Devices": "Sincronizează înregistrările pe toate dispozitivele tale",
+        "Backup": "Backup în cloud — nu mai e nevoie să păstrezi o copie locală"
+      },
+      "GetSyncPro": "Obține Sync Pro",
+      "SeePlans": "Vezi toate planurile",
+      "Progress": "{{shown}} din {{total}} afișate"
+    },
+    "SessionTooLong": {
+      "Long": "Înregistrarea a atins limita de transcriere de 5 ore. Oprește această înregistrare și începe una nouă pentru a continua transcrierea — sunetul captat până acum a fost salvat.",
+      "Short": "S-a atins limita de transcriere de 5 ore — oprește și repornește pentru a continua",
+      "CTA": "Oprește și începe o înregistrare nouă"
     }
   },
   "TranslationPicker": {

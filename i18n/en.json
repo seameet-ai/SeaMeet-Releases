@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "Requires a BYOK Pro subscription. Subscribe to get live transcription, post-meeting AI summaries, and an interactive AI agent."
+    "SubscribeMsg": "Requires a Sync Pro subscription. Subscribe to get live transcription, post-meeting AI summaries, and an interactive AI agent."
+  },
+  "Paywall": {
+    "Unlock": "Unlock with Sync Pro",
+    "Reassurance": "You already have it — subscribing reveals it instantly, forever.",
+    "RevealCap": {
+      "Title": "You've reached your free transcription",
+      "Body": "Unlock the full transcript with Sync Pro."
+    }
   },
   "NoteBinding": {
     "New": "New note",
@@ -161,6 +169,8 @@
     "SummaryConfigSection": "Summary Configuration",
     "ImageExtractionSection": "Image Extraction",
     "UseMainLlmForOcrHint": "Routes screenshot OCR to your selected LLM provider. Off (default): always uses Gemini. Automatically falls back to Gemini if the provider can't accept the image.",
+    "UsageReporting": "Share anonymous AI usage counts",
+    "UsageReportingDesc": "Provider, model, and token counts only — never your content. Helps us keep providers reliable.",
     "KeyVerificationFailed": "Key verification failed"
   },
   "AISummaryQuality": {
@@ -780,6 +790,18 @@
     "ViewDetails": "View Details"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "Save your work & open it on your phone too.",
+      "TitleRevealCap": "Your free 15-minute preview ended",
+      "Subline": {
+        "Wall": "Link an account to keep your recordings and transcripts across all your devices — and unlock the full free tier.",
+        "AnotherDevice": "Link an account to open your recordings and transcripts on your phone and other devices — and unlock the full free tier.",
+        "RevealCap": "We transcribed the first 15 minutes. Sign in (free) to unlock more — or get Sync Pro for unlimited live transcription."
+      },
+      "ContinueWith": "Continue with {{provider}}",
+      "SeeSyncPro": "See Sync Pro",
+      "NotNow": "Not now"
+    },
     "Nudge": {
       "LiveTranscription": "Enable live transcription & post-meeting AI analysis",
       "ScreenshotAnalysis": "Enable AI-powered screenshot analysis",
@@ -998,7 +1020,46 @@
       "AlreadySubscribed": "You already have an active subscription. Use Manage Subscription to view or change it.",
       "NoApiUrl": "Billing service is not configured. Please contact support.",
       "NotAuthenticated": "Please sign in first to subscribe. Use the account menu to sign in.",
-      "Unknown": "Something went wrong. Please try again."
+      "Unknown": "Something went wrong. Please try again.",
+      "SwitchNotSubscribed": "No active subscription to switch. Subscribe first.",
+      "SwitchFailed": "Could not switch billing cadence. Please try again, or use Manage Subscription.",
+      "ScheduleFailed": "Couldn't schedule the change. Try again or contact support.",
+      "RefundPeriodExpired": "Refund window has passed (30 days from purchase).",
+      "RefundAlreadyUsed": "You've already used your one self-service refund.",
+      "RefundNoSub": "No active subscription to refund.",
+      "RefundFailed": "Could not process refund. Please contact support.",
+      "CancelCadenceFailed": "Couldn't cancel the scheduled change. Try again."
+    },
+    "Summary": {
+      "StorageAddOns": "Storage add-ons",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / month",
+      "NextCharge": "Next charge {{date}}",
+      "SwitchToAnnual": "Switch to annual",
+      "SwitchToMonthly": "Switch to monthly",
+      "ScheduleMonthly": "Switch to monthly at renewal",
+      "SwitchConfirm": "Switch to {{target}} billing? You'll be charged a prorated amount immediately.",
+      "SwitchToAnnualConfirm": "Switch to annual billing now? We'll credit your unused monthly time toward your first annual charge.",
+      "SwitchToMonthlyConfirm": "Your annual plan continues until {{date}}. After that, you'll be billed monthly. No charge today.",
+      "AnnualLabel": "annual",
+      "MonthlyLabel": "monthly",
+      "Switching": "Switching…",
+      "SwitchedToAnnual": "You're now on annual billing.",
+      "SwitchedToMonthly": "Switched to monthly billing.",
+      "ScheduledMonthly": "Switch scheduled. Your monthly plan starts {{date}}.",
+      "ScheduledMonthlyNotice": "Monthly billing scheduled for {{date}}.",
+      "CancellationRefunds": "Cancellation & refunds",
+      "RequestRefund": "Request refund",
+      "RefundUnavailable": "Refund unavailable",
+      "CancelSubscription": "Cancel subscription",
+      "RefundConfirm": "Request a refund? This will refund your most recent payment and cancel your subscription. You can only refund once per account, within 30 days of purchase.",
+      "RefundIssued": "Refund issued. Your subscription has been cancelled.",
+      "Cancel": "Cancel",
+      "Confirm": "Confirm",
+      "ConfirmRefund": "Confirm refund",
+      "Processing": "Processing…",
+      "CancelScheduledChange": "Cancel",
+      "Canceling": "Canceling…",
+      "CanceledScheduledChange": "Scheduled change canceled."
     },
     "FreeNote": "Free plan: recording only, no AI features, no login needed. You can always record without subscribing.",
     "ComingSoon": "Coming soon",
@@ -1019,7 +1080,8 @@
         "ConfirmCopyCheckout": "Copy Code & Checkout",
         "InfoNoteGemini": "Google AI Studio usually gives you a free key.",
         "InfoNoteCopilot": "GitHub Copilot has a free plan too.",
-        "InfoNoteClaude": "If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key."
+        "InfoNoteClaude": "If you have subscribed Claude Pro or Max plan, then you don't need an extra Anthropic API key.",
+        "CTA": "Get BYOK Pro"
       },
       "Free": {
         "Name": "Free",
@@ -1032,9 +1094,11 @@
       "Sync": {
         "Name": "Sync Pro",
         "Feature1": "Built-in AI — no API keys needed",
-        "Feature2": "Managed sync of notes, audio, video & screenshots",
-        "Feature3": "Team collaboration features",
-        "Feature4": "Shared meeting library",
+        "Feature2": "50 hours of meeting transcription per month",
+        "Feature3": "AI summaries, wiki & agents with automatic provider failover",
+        "Feature4": "Managed cloud sync — rolling out to your plan",
+        "Price": "$15.99/mo",
+        "PriceAnnual": "$12.99/mo",
         "RequestCTA": "Request this",
         "RequestSubject": "I'd like Sync Pro for SeaMeet",
         "RequestBody": "Hi SeaMeet team — I'm interested in Sync Pro (built-in AI with no API keys to manage, cloud sync, multi-device, team collaboration). Please let me know when it's available.\n\nThanks!"
@@ -1113,6 +1177,74 @@
     "Setup": {
       "Done": "I'm done setting up",
       "Later": "I'll do this later"
+    },
+    "Pro": {
+      "Title": "Choose your plan",
+      "Monthly": "Monthly",
+      "Annual": "Annual",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/mo · or $15.99 monthly",
+      "PriceMonthly": "$15.99/mo · save 19% with annual",
+      "ColFree": "Free",
+      "ColPro": "Sync Pro · $12.99/mo",
+      "CTA": "Get Sync Pro",
+      "Reassurance": "Cancel anytime · 30-day refund",
+      "AdvancedByok": "Advanced: use your own API keys",
+      "Row": {
+        "LiveTranscription": "Live transcription",
+        "LiveTranscriptionFree": "6 hr total · first 15 min",
+        "LiveTranscriptionPro": "Unlimited*",
+        "FileImport": "File transcription",
+        "FileImportFree": "—",
+        "FileImportPro": "50 hrs/mo",
+        "Storage": "Storage",
+        "StorageFree": "2 GB · 30 days",
+        "StoragePro": "250 GB · forever",
+        "Ocr": "Screenshot OCR",
+        "OcrFree": "20 total",
+        "OcrPro": "Unlimited",
+        "Notes": "Notes & wiki",
+        "NotesFree": "Notes only",
+        "NotesPro": "Full",
+        "Search": "Search everything",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "Unlimited · your keys",
+        "StorageByok": "Your own cloud",
+        "NotesByok": "Your own GitHub",
+        "OcrProSyncMonthly": "Unlimited capture* · 1,000 imports/mo",
+        "OcrProSyncAnnual": "Unlimited capture* · 12,000 imports/yr",
+        "FileImportProMonthly": "50 hrs/mo",
+        "FileImportProAnnual": "600 hrs/yr"
+      },
+      "OcrFairUse": "* Fair use applies. On Sync Pro, live transcription and in-app screenshot capture are unlimited. Imports are capped per your plan: file transcription up to 50 hr/mo (600 hr/yr on annual), and imported-image OCR up to 1,000/mo (12,000/yr)."
+    },
+    "Vault": {
+      "Heading": "Unlocked & Synced",
+      "Subline": "{{transcripts}} transcripts, {{screenshots}} screenshots, {{gb}}. Yours now, and nothing expires.",
+      "TallyTranscripts": "full transcripts revealed",
+      "TallyScreenshots": "screenshots — OCR & search unlocked",
+      "TallyStorage": "kept forever (deletion cancelled)",
+      "TallyNotesWiki": "Notes & wiki now sync across all your devices",
+      "SeeEverything": "See everything →",
+      "Retranscribing": "Re-transcribing your capped recordings in full…",
+      "Renews": "renews {{date}}",
+      "Manage": "Manage",
+      "Receipt": "Receipt"
+    },
+    "Recommended": "Recommended",
+    "OnFreePlan": "You're on Free",
+    "Switching": "Switching…",
+    "SwitchToAnnual": "Switch to Annual",
+    "SwitchToMonthly": "Switch to Monthly",
+    "SwitchConfirm": "Confirm switch",
+    "SwitchAnnual": {
+      "Title": "Switch to annual billing?",
+      "Body": "Your plan changes to annual ($155.88/year, effectively $12.99/mo) right away. Stripe credits the unused part of your current month and charges the prorated difference today. Your file-transcription limit becomes 600 hours/year."
+    },
+    "SwitchMonthly": {
+      "Title": "Switch to monthly billing?",
+      "Body": "Your plan changes to monthly ($15.99/mo) right away. Stripe credits the unused part of your annual term as account balance toward future invoices. Your file-transcription limit becomes 50 hours/month."
     }
   },
   "BlackHole": {
@@ -1142,6 +1274,200 @@
     "Dismiss": "Dismiss",
     "ImportSuccess": "Image imported successfully",
     "ImportFailed": "Failed to import clipboard image"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "Cloud Sync",
+      "Loading": "Loading…",
+      "Unavailable": "Cloud sync isn't available in this build.",
+      "Disabled": "Cloud sync is turned off.",
+      "StorageHeading": "Storage",
+      "StorageUsed": "{{used}} of {{quota}} used",
+      "QueueHeading": "Upload queue",
+      "QueueEmpty": "Nothing is waiting to upload.",
+      "PauseAll": "Pause all",
+      "ResumeAll": "Resume all",
+      "Retry": "Retry",
+      "Backfill": "Back up existing library…"
+    },
+    "State": {
+      "Queued": "Queued",
+      "Uploading": "Uploading",
+      "Error": "Failed",
+      "Complete": "Synced"
+    },
+    "Kind": {
+      "Video": "Video",
+      "Audio": "Audio",
+      "AudioForStt": "Audio (for transcription)",
+      "Bundle": "AI results"
+    },
+    "Backfill": {
+      "Title": "Back up existing library",
+      "Description": "Choose which recordings to upload to your cloud library.",
+      "Loading": "Loading recordings…",
+      "LoadFailed": "Couldn't load your recordings. Close this dialog and try again.",
+      "Empty": "All of your recordings are already backed up.",
+      "SelectAll": "Select all",
+      "SelectNone": "Select none",
+      "ColumnName": "Name",
+      "ColumnDate": "Date",
+      "ColumnType": "Type",
+      "ColumnSize": "Size",
+      "TypeVideo": "Video",
+      "TypeAudio": "Audio",
+      "SelectRecording": "Select {{name}}",
+      "SelectedTotal": "{{num}} selected · {{size}}",
+      "ExceedsPlan": "This selection exceeds your {{quota}} plan — deselect something or free up cloud space.",
+      "AutoTrimmed": "Some of the largest recordings were left unselected so the backup fits your remaining space.",
+      "StartFailed": "Couldn't start the backup. Please try again.",
+      "Confirm": "Back up selected",
+      "Cancel": "Cancel",
+      "TypeScreenshot": "Screenshot",
+      "TextButton": "Sync notes & wiki",
+      "TextRunning": "Syncing notes & wiki…",
+      "TextDone": "Synced {{count}} notes & wiki pages.",
+      "TextFailed": "Couldn’t sync notes & wiki.",
+      "WelcomeHeading": "Welcome to Sync Pro 🎉",
+      "WelcomeBody": "Uploading your {{total}} past meetings so they're available on every device and on the web…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "Dismiss",
+      "CompleteToast": "All {{total}} meetings synced — open them on any device or at app-dev.seameet.ai."
+    },
+    "Status": {
+      "Synced": "Synced to cloud",
+      "Uploading": "Uploading… {{pct}}%",
+      "Queued": "Waiting to upload",
+      "Error": "Sync failed — open Cloud panel to retry",
+      "CloudOnly": "In the cloud — plays on demand",
+      "LocalOnly": "On this device only",
+      "Downloading": "Downloading… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "Back up to cloud",
+      "BackUpSelected": "Back up",
+      "BackUpQueued": "{{count}} files queued for cloud backup",
+      "KeepOnDevice": "Keep on this device",
+      "DownloadFailed": "Couldn't download from the cloud. Please try again.",
+      "StreamFailed": "Couldn't load this recording from the cloud. Check your connection and try again.",
+      "Downloaded": "Saved to this device",
+      "SyncToLocal": "Sync to local",
+      "SyncWithSyncPro": "Sync this recording to the cloud with Sync Pro"
+    },
+    "Trash": {
+      "Title": "Trash",
+      "Loading": "Loading trash…",
+      "LoadFailed": "Couldn't load the trash. Please try again.",
+      "Empty": "Trash is empty.",
+      "Summary": "{{count}} in trash · {{size}}",
+      "ExpiresIn": "Expires in {{days}} d",
+      "Restore": "Restore",
+      "DeleteForever": "Delete forever",
+      "ReallyDelete": "Really delete?",
+      "EmptyTrash": "Empty trash",
+      "ReallyEmpty": "Really empty?",
+      "ActionFailed": "That didn't work. Please try again."
+    },
+    "Devices": {
+      "Heading": "Devices",
+      "ThisDevice": "This device"
+    },
+    "Prefs": {
+      "AutoDownload": "Auto-download new recordings",
+      "AutoDownloadHint": "When another device uploads a recording, download a copy to this device automatically.",
+      "BackfillPast": "Back up past meetings on upgrade",
+      "BackfillPastHint": "When you upgrade to Sync Pro, upload your existing recordings so they sync to every device.",
+      "BackfillAudio": "Include audio & video (not just transcripts)",
+      "BackfillAudioHint": "Off uploads transcripts only — smaller and faster, but the original media stays on this device."
+    },
+    "Danger": {
+      "Heading": "Danger zone",
+      "DeleteAll": "Delete all my cloud data",
+      "Explain": "This permanently deletes every recording, transcript, and AI result in your cloud library — on all devices. Files stored on this device are not touched. This cannot be undone.",
+      "TypeToConfirm": "Type DELETE to confirm",
+      "ConfirmButton": "Permanently delete everything",
+      "Success": "All cloud data deleted.",
+      "Failed": "Couldn't delete your cloud data. Please try again."
+    },
+    "Quota": {
+      "FullBanner": "Cloud storage is full — uploads are paused. Free up space below or empty the Trash to resume.",
+      "NearFull": "Cloud storage is {{pct}}% full.",
+      "ManagerHeading": "Free up space",
+      "NothingToFree": "No cloud recordings to clean up.",
+      "Freed": "Freed {{size}} (recoverable from Trash for 30 days)",
+      "Remove": "Remove"
+    },
+    "Delete": {
+      "TitleOne": "Delete \"{{name}}\"?",
+      "TitleMany": "Delete {{count}} recordings?",
+      "Device": "Remove from this device",
+      "DeviceHint": "Moves the local file to the system Trash. Stays in your cloud library and on other devices.",
+      "Cloud": "Remove from cloud",
+      "CloudHint": "Moves it to the cloud Trash for 30 days. The file stays on this device.",
+      "Everywhere": "Delete everywhere",
+      "EverywhereHint": "Removes it from the cloud (30-day Trash) and moves local copies on all your devices to their system Trash.",
+      "ConfirmDevice": "Remove from device",
+      "ConfirmCloud": "Move to cloud Trash",
+      "ConfirmEverywhere": "Delete everywhere",
+      "CloudFailed": "Couldn't remove from the cloud. Please try again.",
+      "CloudBatchFailed": "Couldn't remove {{count}} of {{total}} from the cloud. Please try again."
+    },
+    "Usage": {
+      "TabTitle": "Usage",
+      "SttHeading": "Transcription",
+      "SttUsed": "{{used}} of {{allowance}} minutes used",
+      "Unlimited": "Unlimited",
+      "ImportHeading": "Import transcription",
+      "ImportUsed": "{{used}} / {{cap}} hr",
+      "FreePoolsHeading": "Free allowances",
+      "FreeTranscriptionLeft": "{{minutes}} transcription minutes left",
+      "FreeOcrLeft": "{{runs}} OCR runs left",
+      "FreeRetention": "Free recordings are kept for {{days}} days",
+      "Upgrade": "Upgrade",
+      "RunsHeading": "AI runs this month",
+      "RunsEmpty": "No AI activity yet this month.",
+      "LoadFailed": "Couldn't load your usage. Please try again.",
+      "ManageStorage": "Manage storage",
+      "AddStorage": "Add storage — +500 GB / $10/mo",
+      "FeatureStt": "Live transcription",
+      "FeatureSummary": "Recording summaries",
+      "FeatureOcr": "Screenshot OCR",
+      "FeatureWiki": "Wiki generation",
+      "FeatureFile": "File transcription",
+      "FeatureGeminiPush": "Deep analysis uploads",
+      "ImportCapReached": "Imports pause at your cap until your plan renews",
+      "AddStorageSuccess": "Added {{gb}} GB of storage",
+      "AddStorageNotSubscribed": "An active Sync Pro subscription is required to add storage.",
+      "AddStorageUnavailable": "Storage add-ons are not available right now. Please try again later.",
+      "AddStorageFailed": "Couldn't add storage. Please try again.",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "Add {{gb}} GB for ${{price}}/mo? Your card will be charged a prorated amount now.",
+      "AddStorageConfirmExplain": "Add {{gb}} GB for ${{price}}/month. Storage add-ons are billed monthly (separate from your plan's billing cycle). Today you'll be charged a prorated amount for the rest of this billing month; from then on, ${{price}}/month is charged automatically on your card. Manage or cancel anytime in the billing portal.",
+      "AddStorageCancel": "Cancel",
+      "AddStorageConfirmCta": "Confirm purchase",
+      "AddStorageWorking": "Adding…",
+      "AddStorageDecrease": "Remove one",
+      "AddStorageIncrease": "Add one",
+      "AddStorageSuccessNotice": "Storage added. Manage subscription & invoices →",
+      "ManageSubscriptionInvoices": "Manage subscription & invoices",
+      "OcrImportHeading": "Imported-image OCR",
+      "OcrImportUsed": "{{used}} / {{cap}} images",
+      "OcrImportCapReached": "Imported-image OCR pauses at your cap until your plan renews",
+      "FeatureTranscription": "Transcription",
+      "FeatureSynthesis": "Notes summaries",
+      "OcrCaptureLabel": "Capture (in the app)",
+      "OcrImportLabel": "Imported images",
+      "OcrHeading": "Screenshot OCR",
+      "ImportLabel": "Imported files"
+    },
+    "WebLibrary": {
+      "Open": "Open web library"
+    },
+    "FreeExpiry": {
+      "Warning": "These recordings delete in {{days}} days — keep them forever.",
+      "CloudOnly": "This file is only in the cloud and will be permanently deleted in {{days}} days unless you upgrade.",
+      "Upgrade": "Keep forever"
+    }
   },
   "Common": {
     "ApplyName": "Apply name",
@@ -1239,6 +1565,7 @@
   },
   "FileImport": {
     "BrowseFiles": "Browse Files",
+    "DragDropClickToBrowse": "Or click to browse files",
     "DragDropFiles": "Drag and drop your audio, video, and image files here",
     "DragDropSubtitle": "Drag and drop audio, video, and image files here",
     "ImportMedia": "Import Media",
@@ -1740,6 +2067,14 @@
     "copy_transcript": "Copy transcript",
     "participants_count_one": "1 participant",
     "participants_count_other": "{{count}} participants",
+    "TranscriptWall": {
+      "Title": "The rest of this meeting is ready",
+      "BundleTranscript": "Full transcript",
+      "BundleSummary": "Summary",
+      "BundleChapters": "Chapters",
+      "BundleActionItems": "Action items",
+      "Progress": "{{shown}} of {{total}} shown"
+    },
     "hide_translations": "Hide translations",
     "show_translations": "Show translations"
   },
@@ -2076,11 +2411,11 @@
     "PostMeetingAI": "Post-Meeting AI",
     "PostMeetingAIDesc": "Summaries, action items, and insights will be generated after the recording completes.",
     "NoteSynthesis": "AI synthesis",
-    "NoteSynthesisDesc": "Get a structured summary of this note + linked recording with BYOK Pro.",
+    "NoteSynthesisDesc": "Get a structured summary of this note + linked recording with Sync Pro.",
     "WikiList": "Wikis",
-    "WikiListDesc": "Auto-build a knowledge base from your notes and meetings with BYOK Pro.",
+    "WikiListDesc": "Auto-build a knowledge base from your notes and meetings with Sync Pro.",
     "ScreenshotAI": "Screenshot AI",
-    "ScreenshotAIDesc": "Describe images, extract text, and ask follow-up questions with BYOK Pro.",
+    "ScreenshotAIDesc": "Describe images, extract text, and ask follow-up questions with Sync Pro.",
     "LockedChipTooltip": "Subscribe to enable",
     "AgentReadOnlyBanner": "Subscribe to continue the conversation",
     "GenericUpgradeCta": "Subscribe",
@@ -2282,7 +2617,13 @@
     },
     "UnknownError": "Unknown error",
     "FallbackUsed": "{{from}} couldn't process the image — Gemini handled it instead.",
-    "FallbackHint": "Disable \"Use main LLM for screenshot OCR\" in Settings if this provider doesn't support vision."
+    "FallbackHint": "Disable \"Use main LLM for screenshot OCR\" in Settings if this provider doesn't support vision.",
+    "OcrWall": {
+      "Title": "Unlock OCR",
+      "BundleOcr": "OCR text",
+      "BundleDescription": "Description",
+      "BundleSearch": "Search"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "Recent screenshots"
@@ -2487,6 +2828,7 @@
     },
     "Title": "Settings",
     "UserAvatarAlt": "user",
+    "ManagedByPlan": "Included with your Sync Pro plan — AI runs on SeaMeet-managed providers. No API keys needed.",
     "AppMode": {
       "Title": "App mode",
       "Currently": "Currently:",
@@ -2556,7 +2898,8 @@
     "GroupKnowledge": "Knowledge",
     "Notes": "Notes",
     "Wiki": "Wiki",
-    "GroupTools": "Tools"
+    "GroupTools": "Tools",
+    "Cloud": "Cloud"
   },
   "Tray": {
     "MinimizedHint": "SeaMeet is still running in the system tray (bottom-right).",
@@ -3511,6 +3854,38 @@
     "DemoWikiActionArch": "Review AI Agent architecture with engineering team",
     "DemoWikiActionStakeholder": "Prepare stakeholder presentation for Q3 launch",
     "DemoWikiTopicsText": "Product strategy, AI agent development, Q3 OKRs, sprint planning, resource allocation, CI/CD pipeline, marketing budget."
+  },
+  "Provenance": {
+    "Managed": "via SeaMeet Cloud",
+    "Byok": "via your {{provider}} key"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "Unlock with Sync Pro"
+    },
+    "FreeExhausted": {
+      "Long": "You've used your 6 hours of free transcription. Sync Pro keeps transcribing and saves your recordings to the cloud.",
+      "Short": "Free transcription used up — unlock with Sync Pro",
+      "CTA": "Unlock with Sync Pro"
+    },
+    "Card": {
+      "Title": "You're seeing the first 15 minutes",
+      "Reassure": "The rest of this meeting is fully transcribed and saved — it's just hidden on the free plan.",
+      "SyncProIntro": "Sync Pro unlocks more:",
+      "Bullet": {
+        "Transcript": "Reveal the full transcript of this meeting",
+        "Devices": "Sync recordings across all your devices",
+        "Backup": "Cloud backup — no need to keep a local copy"
+      },
+      "GetSyncPro": "Get Sync Pro",
+      "SeePlans": "See all plans",
+      "Progress": "{{shown}} of {{total}} shown"
+    },
+    "SessionTooLong": {
+      "Long": "Your recording reached the 5-hour transcription cap. Stop and start a new recording to keep transcribing — the audio captured so far has been saved.",
+      "Short": "Reached 5-hour transcription cap — stop and restart to continue",
+      "CTA": "Stop & start new recording"
+    }
   },
   "TranslationPicker": {
     "label": "Translate",

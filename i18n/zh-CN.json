@@ -1,6 +1,14 @@
 {
   "AI": {
-    "SubscribeMsg": "需要 BYOK Pro 订阅。订阅以获取实时转录、AI 会议摘要和交互式 AI 代理。"
+    "SubscribeMsg": "需要 Sync Pro 订阅。订阅以获取实时转录、AI 会议摘要和交互式 AI 代理。"
+  },
+  "Paywall": {
+    "Unlock": "使用 Sync Pro 解锁",
+    "Reassurance": "你已经拥有它了——订阅即可立即、永久解锁。",
+    "RevealCap": {
+      "Title": "您已用完免费转录额度",
+      "Body": "使用 Sync Pro 解锁完整转录。"
+    }
   },
   "AIAgent": {
     "DisabledBadge": "已禁用",
@@ -156,6 +164,8 @@
     "SummaryLanguageDesc": "应用于转录+摘要+章节。自动检测匹配所说语言。",
     "TestKey": "保存并验证",
     "UseMainLlmForOcrHint": "将截图 OCR 路由到您选择的 LLM 提供商。关闭（默认）：始终使用 Gemini。如果提供商无法接受图像，则自动回退到 Gemini。",
+    "UsageReporting": "分享匿名 AI 用量统计",
+    "UsageReportingDesc": "仅包含服务商、模型和 Token 数量 — 绝不包含您的内容。帮助我们保持服务商的可靠性。",
     "KeyVerificationFailed": "密钥验证失败"
   },
   "AISummary": {
@@ -813,6 +823,18 @@
     "ViewDetails": "查看详情"
   },
   "Billing": {
+    "LinkAccount": {
+      "Title": "保存你的工作，也能在手机上打开。",
+      "Subline": {
+        "Wall": "关联账户即可在所有设备上保留你的录音和转录，并解锁完整的免费套餐。",
+        "AnotherDevice": "关联账户即可在手机和其他设备上打开你的录音和转录，并解锁完整的免费套餐。",
+        "RevealCap": "我们已转录前 15 分钟。登录（免费）即可解锁更多 — 或获取 Sync Pro 享受无限实时转录。"
+      },
+      "ContinueWith": "使用 {{provider}} 继续",
+      "NotNow": "暂不",
+      "TitleRevealCap": "您的 15 分钟免费预览已结束",
+      "SeeSyncPro": "了解 Sync Pro"
+    },
     "BYOK": {
       "Acronym": "BYOK（Bring Your Own Key — 使用自有密钥）",
       "ActiveTitle": "订阅已激活 — BYOK Pro",
@@ -984,7 +1006,15 @@
       "AlreadySubscribed": "您已有一个活跃的订阅。使用「管理订阅」来查看或更改它。",
       "NoApiUrl": "计费服务未配置。请联系客服支持。",
       "NotAuthenticated": "请先登录以进行订阅。使用账户菜单登录。",
-      "Unknown": "出了点问题。请重试。"
+      "Unknown": "出了点问题。请重试。",
+      "SwitchNotSubscribed": "没有可切换的有效订阅，请先订阅。",
+      "SwitchFailed": "无法切换结算周期，请重试，或使用“管理订阅”。",
+      "RefundPeriodExpired": "退款窗口已过期（自购买之日起 30 天）。",
+      "RefundAlreadyUsed": "你已使用过你唯一的自助退款。",
+      "RefundNoSub": "没有可退款的活动订阅。",
+      "RefundFailed": "无法处理退款，请联系支持。",
+      "ScheduleFailed": "无法安排更改。请重试或联系支持。",
+      "CancelCadenceFailed": "无法取消已安排的更改。请重试。"
     },
     "Explainer": {
       "Continue": "继续订阅",
@@ -1062,7 +1092,8 @@
         "InfoNoteCopilot": "GitHub Copilot 也提供免费方案。",
         "InfoNoteGemini": "Google AI Studio 通常会提供免费的 API 密钥。",
         "Name": "BYOK Pro",
-        "Price": "$4.99/月"
+        "Price": "$4.99/月",
+        "CTA": "获取 BYOK Pro"
       },
       "Free": {
         "Feature1": "仅录音",
@@ -1074,10 +1105,12 @@
       },
       "Sync": {
         "Feature1": "内置 AI — 无需 API 密钥",
-        "Feature2": "笔记、音频、视频和截图的托管同步",
-        "Feature3": "团队协作功能",
-        "Feature4": "共享会议库",
+        "Feature2": "每月 50 小时会议转写",
+        "Feature3": "AI 摘要、维基与智能体，支持服务商自动切换",
+        "Feature4": "托管云同步 — 即将加入您的方案",
         "Name": "Sync Pro",
+        "Price": "$15.99/月",
+        "PriceAnnual": "$12.99/月",
         "RequestBody": "您好 SeaMeet 团队 — 我对 Sync Pro 感兴趣(内置 AI 无需管理 API 密钥、云同步、多设备、团队协作)。请在可用时告知我。\n\n谢谢!",
         "RequestCTA": "申请此项",
         "RequestSubject": "我想要 SeaMeet 的 Sync Pro"
@@ -1146,7 +1179,106 @@
     },
     "Subscribe": "订阅",
     "Subscribing": "订阅中...",
-    "UnlockTitle": "解锁 SeaMeet AI 功能"
+    "UnlockTitle": "解锁 SeaMeet AI 功能",
+    "Pro": {
+      "Title": "选择你的方案",
+      "Monthly": "按月",
+      "Annual": "按年",
+      "AnnualSave": "−19%",
+      "PriceAnnual": "$12.99/月 · 或 $15.99 按月",
+      "PriceMonthly": "$15.99/月 · 选按年省 19%",
+      "ColFree": "免费",
+      "ColPro": "Sync Pro · $12.99/月",
+      "CTA": "升级 Sync Pro",
+      "Reassurance": "随时取消 · 30 天退款",
+      "AdvancedByok": "高级：使用你自己的 API 密钥",
+      "Row": {
+        "LiveTranscription": "实时转写",
+        "LiveTranscriptionFree": "共 6 小时 · 前 15 分钟",
+        "LiveTranscriptionPro": "无限制*",
+        "FileImport": "文件转写",
+        "FileImportFree": "—",
+        "FileImportPro": "50 小时/月",
+        "Storage": "存储空间",
+        "StorageFree": "2 GB · 30 天",
+        "StoragePro": "250 GB · 永久",
+        "Ocr": "截图 OCR",
+        "OcrFree": "共 20 次",
+        "OcrPro": "无限制",
+        "Notes": "笔记和 wiki",
+        "NotesFree": "仅笔记",
+        "NotesPro": "完整",
+        "Search": "全局搜索",
+        "SearchFree": "—",
+        "SearchPro": "✓",
+        "ByokUnlimitedKeys": "无限 · 你的密钥",
+        "StorageByok": "你自己的云",
+        "NotesByok": "你自己的 GitHub",
+        "OcrProSyncMonthly": "截屏无限* · 每月 1,000 次导入",
+        "OcrProSyncAnnual": "截屏无限* · 每年 12,000 次导入",
+        "FileImportProMonthly": "50 小时/月",
+        "FileImportProAnnual": "600 小时/年"
+      },
+      "OcrFairUse": "* 适用合理使用政策。在 Sync Pro 中，实时转写与应用内截屏不限量。导入按你的方案设有上限：文件转写每月最多 50 小时（年付方案为每年 600 小时），导入图片 OCR 每月最多 1,000 张（每年 12,000 张）。"
+    },
+    "Vault": {
+      "Heading": "已解锁并同步",
+      "Subline": "{{transcripts}} 份转录、{{screenshots}} 张截图、{{gb}}。现已归你所有，永不过期。",
+      "TallyTranscripts": "份完整转录已解锁",
+      "TallyScreenshots": "张截图 — OCR 与搜索已解锁",
+      "TallyStorage": "永久保留（已取消删除）",
+      "TallyNotesWiki": "笔记与百科现已在你的所有设备间同步",
+      "SeeEverything": "查看全部 →",
+      "Retranscribing": "正在完整重新转写您被截断的录音…",
+      "Renews": "{{date}} 续订",
+      "Manage": "管理",
+      "Receipt": "收据"
+    },
+    "Recommended": "推荐",
+    "OnFreePlan": "你当前是 Free",
+    "Switching": "切换中…",
+    "SwitchToAnnual": "切换为年付",
+    "SwitchToMonthly": "切换为月付",
+    "SwitchConfirm": "确认切换",
+    "SwitchAnnual": {
+      "Title": "切换为年度结算？",
+      "Body": "你的方案将立即切换为年付（$155.88/年，实际每月 $12.99）。Stripe 会将本月未使用部分计为余额抵扣，并在今天按比例收取差额。你的文件转写额度将变为每年 600 小时。"
+    },
+    "SwitchMonthly": {
+      "Title": "切换为按月结算？",
+      "Body": "你的方案将立即切换为月付（$15.99/mo）。Stripe 会将你年度周期中未使用的部分计为账户余额，用于抵扣后续账单。你的文件转写额度将变为每月 50 小时。"
+    },
+    "Summary": {
+      "StorageAddOns": "存储加购",
+      "AddOnLine": "{{units}} × 500 GB · {{price}} / 月",
+      "NextCharge": "下次扣款 {{date}}",
+      "SwitchToAnnual": "切换为年付",
+      "SwitchToMonthly": "切换为月付",
+      "SwitchConfirm": "切换为 {{target}} 计费？将立即按比例扣款。",
+      "AnnualLabel": "年付",
+      "MonthlyLabel": "月付",
+      "Switching": "切换中…",
+      "SwitchedToAnnual": "您现在已切换到年度计费。",
+      "SwitchedToMonthly": "已切换为月付。",
+      "CancellationRefunds": "取消与退款",
+      "RequestRefund": "申请退款",
+      "RefundUnavailable": "退款不可用",
+      "CancelSubscription": "取消订阅",
+      "RefundConfirm": "申请退款？将退还你最近一次付款并取消你的订阅。每个账户仅可退款一次，且需在购买后 30 天内。",
+      "RefundIssued": "已发起退款，你的订阅已取消。",
+      "Cancel": "取消",
+      "Confirm": "确认",
+      "ConfirmRefund": "确认退款",
+      "Processing": "处理中…",
+      "ScheduleMonthly": "续订时切换到按月计费",
+      "SwitchToAnnualConfirm": "现在切换到年度计费？我们会将您未使用的月度时间抵扣到您的首次年度费用中。",
+      "SwitchToMonthlyConfirm": "您的年度计划将持续到 {{date}}。之后，您将按月计费。今天不收费。",
+      "ScheduledMonthly": "切换已安排。您的月度计划将于 {{date}} 开始。",
+      "ScheduledMonthlyNotice": "月度计费已安排在 {{date}}。",
+      "CancelScheduledChange": "取消",
+      "Canceling": "取消中…",
+      "CanceledScheduledChange": "已取消计划的更改。"
+    }
   },
   "BlackHole": {
     "Cancel": "取消",
@@ -1175,6 +1307,200 @@
     "ImportSuccess": "图片导入成功",
     "PasteHint": "Ctrl+V 粘贴图片",
     "PasteHintMac": "⌘V 粘贴图片"
+  },
+  "CloudSync": {
+    "Panel": {
+      "Title": "云同步",
+      "Loading": "加载中…",
+      "Unavailable": "此版本不支持云同步。",
+      "Disabled": "云同步已关闭。",
+      "StorageHeading": "存储空间",
+      "StorageUsed": "已使用 {{used}}，共 {{quota}}",
+      "QueueHeading": "上传队列",
+      "QueueEmpty": "没有等待上传的内容。",
+      "PauseAll": "全部暂停",
+      "ResumeAll": "全部继续",
+      "Retry": "重试",
+      "Backfill": "备份现有资料库…"
+    },
+    "State": {
+      "Queued": "排队中",
+      "Uploading": "上传中",
+      "Error": "失败",
+      "Complete": "已同步"
+    },
+    "Kind": {
+      "Video": "视频",
+      "Audio": "音频",
+      "AudioForStt": "音频（用于转写）",
+      "Bundle": "AI 结果"
+    },
+    "Backfill": {
+      "Title": "备份现有资料库",
+      "Description": "选择要上传到云端资料库的录制内容。",
+      "Loading": "正在加载录制内容…",
+      "LoadFailed": "无法加载您的录制内容。请关闭此对话框后重试。",
+      "Empty": "您的所有录制内容均已备份。",
+      "SelectAll": "全选",
+      "SelectNone": "全不选",
+      "ColumnName": "名称",
+      "ColumnDate": "日期",
+      "ColumnType": "类型",
+      "ColumnSize": "大小",
+      "TypeVideo": "视频",
+      "TypeAudio": "音频",
+      "TypeScreenshot": "截图",
+      "SelectRecording": "选择 {{name}}",
+      "SelectedTotal": "已选 {{num}} 项 · {{size}}",
+      "ExceedsPlan": "所选内容超出您的 {{quota}} 套餐 — 请取消部分选择或释放云端空间。",
+      "AutoTrimmed": "为使备份不超过剩余空间，部分最大的录制内容未被选中。",
+      "StartFailed": "无法开始备份，请重试。",
+      "Confirm": "备份所选",
+      "Cancel": "取消",
+      "TextButton": "同步笔记和维基",
+      "TextRunning": "正在同步笔记和维基…",
+      "TextDone": "已同步 {{count}} 个笔记和维基页面。",
+      "TextFailed": "无法同步笔记和维基。",
+      "WelcomeHeading": "欢迎使用 Sync Pro 🎉",
+      "WelcomeBody": "正在上传你过去的 {{total}} 场会议，让它们在每台设备和网页上都能查看…",
+      "Progress": "{{done}} / {{total}}",
+      "Dismiss": "关闭",
+      "CompleteToast": "全部 {{total}} 场会议已同步——可在任意设备或 app-dev.seameet.ai 上打开。"
+    },
+    "Status": {
+      "Synced": "已同步到云端",
+      "Uploading": "上传中… {{pct}}%",
+      "Queued": "等待上传",
+      "Error": "同步失败 — 打开云面板重试",
+      "CloudOnly": "在云端 — 按需播放",
+      "LocalOnly": "仅在此设备上",
+      "Downloading": "下载中… {{pct}}%"
+    },
+    "Action": {
+      "BackUpNow": "备份到云端",
+      "BackUpSelected": "备份",
+      "BackUpQueued": "{{count}} 个文件已加入云端备份队列",
+      "KeepOnDevice": "保留在此设备上",
+      "DownloadFailed": "无法从云端下载。请重试。",
+      "StreamFailed": "无法从云端加载此录制内容。请检查网络连接后重试。",
+      "Downloaded": "已保存到此设备",
+      "SyncToLocal": "同步到本地",
+      "SyncWithSyncPro": "使用 Sync Pro 将此录制内容同步到云端"
+    },
+    "Trash": {
+      "Title": "回收站",
+      "Loading": "正在加载回收站…",
+      "LoadFailed": "无法加载回收站。请重试。",
+      "Empty": "回收站是空的。",
+      "Summary": "回收站中有 {{count}} 项 · {{size}}",
+      "ExpiresIn": "{{days}} 天后过期",
+      "Restore": "恢复",
+      "DeleteForever": "永久删除",
+      "ReallyDelete": "确定删除？",
+      "EmptyTrash": "清空回收站",
+      "ReallyEmpty": "确定清空？",
+      "ActionFailed": "操作失败。请重试。"
+    },
+    "Usage": {
+      "TabTitle": "用量",
+      "SttHeading": "转写",
+      "SttUsed": "已使用 {{used}}/{{allowance}} 分钟",
+      "Unlimited": "无限制",
+      "ImportHeading": "导入转录",
+      "ImportUsed": "{{used}} / {{cap}} 小时",
+      "FreePoolsHeading": "免费额度",
+      "FreeTranscriptionLeft": "剩余 {{minutes}} 分钟转录",
+      "FreeOcrLeft": "剩余 {{runs}} 次 OCR",
+      "FreeRetention": "免费录音保留 {{days}} 天",
+      "Upgrade": "升级",
+      "RunsHeading": "本月 AI 运行",
+      "RunsEmpty": "本月暂无 AI 活动。",
+      "LoadFailed": "无法加载您的用量。请重试。",
+      "ManageStorage": "管理存储",
+      "AddStorage": "增加存储空间 — +500 GB / $10/月",
+      "FeatureStt": "实时转写",
+      "FeatureSummary": "录音摘要",
+      "FeatureOcr": "截图 OCR",
+      "FeatureWiki": "Wiki 生成",
+      "FeatureFile": "文件转写",
+      "FeatureGeminiPush": "深度分析上传",
+      "ImportCapReached": "导入将在达到上限后暂停，直至套餐续订",
+      "AddStorageSuccess": "已添加 {{gb}} GB 存储空间",
+      "AddStorageNotSubscribed": "需要有效的 Sync Pro 订阅才能添加存储空间。",
+      "AddStorageUnavailable": "存储空间加购暂时不可用，请稍后再试。",
+      "AddStorageFailed": "无法添加存储空间，请重试。",
+      "AddStorageUnits": "+{{gb}} GB",
+      "AddStorageConfirm": "以 ${{price}}/月添加 {{gb}} GB？现在将按比例向您的银行卡收取费用。",
+      "AddStorageCancel": "取消",
+      "AddStorageConfirmCta": "确认购买",
+      "AddStorageWorking": "正在添加…",
+      "AddStorageDecrease": "减少一个",
+      "AddStorageIncrease": "增加一个",
+      "AddStorageConfirmExplain": "以 ${{price}}/月添加 {{gb}} GB。存储加购按月计费（与您套餐的计费周期分开）。今天将按本计费月剩余天数按比例向您的卡收取费用；此后将每月自动从您的卡扣款 ${{price}}。您可随时在计费门户中管理或取消。",
+      "AddStorageSuccessNotice": "已添加存储空间。管理订阅和发票 →",
+      "ManageSubscriptionInvoices": "管理订阅和发票",
+      "OcrImportHeading": "导入图片 OCR",
+      "OcrImportUsed": "{{used}} / {{cap}} 张",
+      "OcrImportCapReached": "导入图片 OCR 达到上限后将暂停，直到你的方案续期",
+      "FeatureTranscription": "转写",
+      "FeatureSynthesis": "笔记摘要",
+      "OcrCaptureLabel": "截屏（应用内）",
+      "OcrImportLabel": "导入的图片",
+      "OcrHeading": "截图 OCR",
+      "ImportLabel": "导入的文件"
+    },
+    "WebLibrary": {
+      "Open": "打开网页库"
+    },
+    "Devices": {
+      "Heading": "设备",
+      "ThisDevice": "此设备"
+    },
+    "Prefs": {
+      "AutoDownload": "自动下载新录制内容",
+      "AutoDownloadHint": "当其他设备上传录制内容时，自动将副本下载到此设备。",
+      "BackfillPast": "升级时备份过去的会议",
+      "BackfillPastHint": "升级到 Sync Pro 后，将上传你现有的录音，使其同步到每台设备。",
+      "BackfillAudio": "包含音频和视频（不仅是文字记录）",
+      "BackfillAudioHint": "关闭后仅上传文字记录——更小更快，但原始媒体仍保留在此设备上。"
+    },
+    "Danger": {
+      "Heading": "危险操作",
+      "DeleteAll": "删除我的全部云端数据",
+      "Explain": "此操作将永久删除您云端资料库中的所有录制内容、逐字稿和 AI 结果 — 影响所有设备。存储在此设备上的文件不受影响。此操作无法撤销。",
+      "TypeToConfirm": "输入 DELETE 以确认",
+      "ConfirmButton": "永久删除全部内容",
+      "Success": "已删除全部云端数据。",
+      "Failed": "无法删除您的云端数据。请重试。"
+    },
+    "Quota": {
+      "FullBanner": "云端存储空间已满 — 上传已暂停。请在下方释放空间或清空回收站以恢复上传。",
+      "NearFull": "云端存储空间已使用 {{pct}}%。",
+      "ManagerHeading": "释放空间",
+      "NothingToFree": "没有可清理的云端录制内容。",
+      "Freed": "已释放 {{size}}（30 天内可从回收站恢复）",
+      "Remove": "移除"
+    },
+    "Delete": {
+      "TitleOne": "删除“{{name}}”？",
+      "TitleMany": "删除 {{count}} 个录制内容？",
+      "Device": "从此设备移除",
+      "DeviceHint": "将本地文件移至系统回收站。仍保留在您的云端资料库和其他设备上。",
+      "Cloud": "从云端移除",
+      "CloudHint": "将其移至云端回收站并保留 30 天。文件仍保留在此设备上。",
+      "Everywhere": "在所有位置删除",
+      "EverywhereHint": "将其从云端移除（在回收站保留 30 天），并将您所有设备上的本地副本移至各自的系统回收站。",
+      "ConfirmDevice": "从设备移除",
+      "ConfirmCloud": "移至云端回收站",
+      "ConfirmEverywhere": "在所有位置删除",
+      "CloudFailed": "无法从云端移除。请重试。",
+      "CloudBatchFailed": "无法从云端移除 {{total}} 个中的 {{count}} 个。请重试。"
+    },
+    "FreeExpiry": {
+      "Warning": "这些录音将在 {{days}} 天后删除——永久保留它们。",
+      "CloudOnly": "此文件仅存于云端，将在 {{days}} 天后被永久删除，除非您升级。",
+      "Upgrade": "永久保留"
+    }
   },
   "Common": {
     "Apply": "应用",
@@ -1272,6 +1598,7 @@
   },
   "FileImport": {
     "BrowseFiles": "浏览文件",
+    "DragDropClickToBrowse": "或点击浏览文件",
     "DragDropFiles": "在此处拖放您的音频、视频和图片文件",
     "DragDropSubtitle": "将音频、视频和图片文件拖放到这里",
     "ImportMedia": "拖放您的音频、视频和图片文件",
@@ -1848,6 +2175,14 @@
     "today": "今天",
     "view_on_seameet": "在 SeaMeet 上查看",
     "yesterday": "昨天",
+    "TranscriptWall": {
+      "Title": "本次会议的其余内容已就绪",
+      "BundleTranscript": "完整文字记录",
+      "BundleSummary": "摘要",
+      "BundleChapters": "章节",
+      "BundleActionItems": "行动项",
+      "Progress": "已显示 {{total}} 中的 {{shown}}"
+    },
     "hide_translations": "隐藏翻译",
     "show_translations": "显示翻译"
   },
@@ -2194,15 +2529,15 @@
     "GenericUpgradeCta": "订阅",
     "LockedChipTooltip": "订阅以启用",
     "NoteSynthesis": "AI 综合",
-    "NoteSynthesisDesc": "使用 BYOK Pro 获取此笔记及关联录音的结构化摘要。",
+    "NoteSynthesisDesc": "使用 Sync Pro 获取此笔记及关联录音的结构化摘要。",
     "PostMeetingAI": "会后 AI",
     "PostMeetingAIDesc": "录音完成后将生成摘要、行动项和洞见。",
     "ScreenshotAI": "截图 AI",
-    "ScreenshotAIDesc": "使用 BYOK Pro 描述图像、提取文本并进行后续提问。",
+    "ScreenshotAIDesc": "使用 Sync Pro 描述图像、提取文本并进行后续提问。",
     "UnlockPremium": "通过高级版解锁",
     "Upgrade": "升级",
     "WikiList": "Wikis",
-    "WikiListDesc": "使用 BYOK Pro 从您的笔记和会议中自动构建知识库。"
+    "WikiListDesc": "使用 Sync Pro 从您的笔记和会议中自动构建知识库。"
   },
   "QuickOpen": {
     "NoResults": "没有匹配的笔记",
@@ -2410,7 +2745,13 @@
       "Description": "描述",
       "OCR": "文字 (OCR)"
     },
-    "UnknownError": "未知错误"
+    "UnknownError": "未知错误",
+    "OcrWall": {
+      "Title": "解锁 OCR",
+      "BundleOcr": "OCR 文本",
+      "BundleDescription": "描述",
+      "BundleSearch": "搜索"
+    }
   },
   "ScreenshotView": {
     "RecentLabel": "最近截图"
@@ -2666,6 +3007,7 @@
     },
     "Title": "设置",
     "UserAvatarAlt": "用户",
+    "ManagedByPlan": "已包含在您的 Sync Pro 方案中 — AI 运行在 SeaMeet 托管的服务商上，无需 API 密钥。",
     "AppMode": {
       "Title": "应用模式",
       "Currently": "当前：",
@@ -2918,7 +3260,8 @@
     "Record": "录制",
     "Recording": "录制中",
     "Screenshot": "截图",
-    "Wiki": "知识库"
+    "Wiki": "知识库",
+    "Cloud": "云端"
   },
   "Tray": {
     "MarkEvent": "标记事件",
@@ -3510,6 +3853,38 @@
       "testing": "测试中…",
       "title": "语音转文本提供商（实时字幕，文件转录）",
       "tutorial": "设置教程"
+    }
+  },
+  "Provenance": {
+    "Managed": "经由 SeaMeet 云",
+    "Byok": "经由您的 {{provider}} 密钥"
+  },
+  "Transcript": {
+    "ViewMask": {
+      "CTA": "使用 Sync Pro 解锁"
+    },
+    "FreeExhausted": {
+      "Long": "您已用完 6 小时的免费转录。Sync Pro 可继续转录，并将您的录音保存到云端。",
+      "Short": "免费转录已用完 — 使用 Sync Pro 解锁",
+      "CTA": "使用 Sync Pro 解锁"
+    },
+    "Card": {
+      "Title": "你正在查看前 15 分钟",
+      "Reassure": "本次会议的其余部分已完整转录并保存——只是在免费方案中被隐藏了。",
+      "SyncProIntro": "Sync Pro 解锁更多功能：",
+      "Bullet": {
+        "Transcript": "显示本次会议的完整转录",
+        "Devices": "在你的所有设备间同步录音",
+        "Backup": "云端备份——无需保留本地副本"
+      },
+      "GetSyncPro": "获取 Sync Pro",
+      "SeePlans": "查看所有方案",
+      "Progress": "已显示 {{shown}} / {{total}}"
+    },
+    "SessionTooLong": {
+      "Long": "您的录音已达到 5 小时的转写上限。停止当前录音并开始新的录音即可继续转写——目前为止的音频已保存。",
+      "Short": "已达到 5 小时转写上限——停止并重新开始以继续",
+      "CTA": "停止并开始新的录音"
     }
   },
   "TranslationPicker": {
