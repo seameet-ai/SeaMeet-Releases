@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "I-reroute ang screenshot OCR sa iyong napiling LLM provider. Off (default): palaging ginagamit ang Gemini. Awtomatikong babalik sa Gemini kung hindi matanggap ng provider ang imahe.",
     "UsageReporting": "Ibahagi ang anonymous na bilang ng paggamit ng AI",
     "UsageReportingDesc": "Provider, model, at bilang ng token lamang — hindi kailanman ang iyong content. Tumutulong ito sa amin na panatilihing maaasahan ang mga provider.",
-    "KeyVerificationFailed": "Nabigo ang pag-verify ng key"
+    "KeyVerificationFailed": "Nabigo ang pag-verify ng key",
+    "ShowAllModels_one": "Ipakita lahat ng {{count}} modelo",
+    "ShowAllModels_other": "Ipakita lahat ng {{count}} modelo"
   },
   "AISummary": {
     "ApplyMerge": "Ilapat",
@@ -534,7 +536,9 @@
         "name": "Lingguhang Pulong ng Team"
       }
     },
-    "Title": "Buod ng tala"
+    "Title": "Buod ng tala",
+    "Meta_one": "{{count}} recording · template: {{tpl}}",
+    "Meta_other": "{{count}} recording · template: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Hayaan ang modelo na piliin ang pinakamahusay na template para sa bawat pagpupulong. Kapag naka-off, ang Meeting Minutes ang ginagamit bilang default at walang tawag sa classifier na ginagawa.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Ina-upload ang iyong {{total}} nakaraang meeting para available ang mga ito sa bawat device at sa web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "I-dismiss",
-      "CompleteToast": "Lahat ng {{total}} meeting ay naka-sync na — buksan ang mga ito sa kahit anong device o sa app-dev.seameet.ai."
+      "CompleteToast": "Lahat ng {{total}} meeting ay naka-sync na — buksan ang mga ito sa kahit anong device o sa app-dev.seameet.ai.",
+      "TextDone_one": "Na-sync ang {{count}} note at wiki page.",
+      "TextDone_other": "Na-sync ang {{count}} note at wiki page."
     },
     "Status": {
       "Synced": "Naka-sync sa cloud",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Hindi ma-load ang recording na ito mula sa cloud. Suriin ang iyong koneksyon at subukan ulit.",
       "Downloaded": "Na-save sa device na ito",
       "SyncToLocal": "I-sync sa lokal",
-      "SyncWithSyncPro": "I-sync ang recording na ito sa cloud gamit ang Sync Pro"
+      "SyncWithSyncPro": "I-sync ang recording na ito sa cloud gamit ang Sync Pro",
+      "BackUpQueued_one": "{{count}} file naka-queue para sa cloud backup",
+      "BackUpQueued_other": "{{count}} file naka-queue para sa cloud backup"
     },
     "Trash": {
       "Title": "Basurahan",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Talagang i-delete?",
       "EmptyTrash": "I-empty ang basurahan",
       "ReallyEmpty": "Talagang i-empty?",
-      "ActionFailed": "Hindi gumana. Pakisubukan ulit."
+      "ActionFailed": "Hindi gumana. Pakisubukan ulit.",
+      "Summary_one": "{{count}} sa trash · {{size}}",
+      "Summary_other": "{{count}} sa trash · {{size}}"
     },
     "Usage": {
       "TabTitle": "Paggamit",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "I-delete kahit saan",
       "CloudFailed": "Hindi maalis sa cloud. Pakisubukan ulit.",
       "CloudBatchFailed": "Hindi maalis ang {{count}} sa {{total}} mula sa cloud. Pakisubukang muli.",
-      "DeviceHintShared": "Inililipat ang na-download na kopya sa Trash. Mananatili itong available sa \"Ibinahagi sa akin\"."
+      "DeviceHintShared": "Inililipat ang na-download na kopya sa Trash. Mananatili itong available sa \"Ibinahagi sa akin\".",
+      "CloudBatchFailed_one": "Hindi maalis ang {{count}} sa {{total}} mula sa cloud. Pakisubukan muli.",
+      "CloudBatchFailed_other": "Hindi maalis ang {{count}} sa {{total}} mula sa cloud. Pakisubukan muli.",
+      "TitleMany_one": "Tanggalin ang {{count}} recording?",
+      "TitleMany_other": "Tanggalin ang {{count}} recording?"
     },
     "FreeExpiry": {
       "Warning": "Mabubura ang mga recording na ito sa loob ng {{days}} araw — itago ang mga ito habambuhay.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Palitan lahat",
     "ReplacePlaceholder": "Palitan",
     "WikiAiReadonly": "Read-only ang AI section — gumagana lang ang palit sa user section",
-    "WikiCounterSplit": "{{userCount}} sa note + {{aiCount}} sa AI section"
+    "WikiCounterSplit": "{{userCount}} sa note + {{aiCount}} sa AI section",
+    "ConfirmReplaceAll_one": "Palitan ang lahat ng {{count}} tugma?",
+    "ConfirmReplaceAll_other": "Palitan ang lahat ng {{count}} tugma?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Audio balik-tanaw",
@@ -2105,7 +2121,17 @@
     "Video": "Video",
     "SubTabs": "Mga view ng file",
     "MyFiles": "Aking mga File",
-    "SharedWithMe": "Ibinabahagi sa akin"
+    "SharedWithMe": "Ibinabahagi sa akin",
+    "BatchDeletePartial_one": "{{count}} sa {{total}} file ang tinanggal",
+    "BatchDeletePartial_other": "{{count}} sa {{total}} file ang tinanggal",
+    "ConfirmBatchDelete_one": "Tanggalin ang {{count}} file?",
+    "ConfirmBatchDelete_other": "Tanggalin ang {{count}} file?",
+    "ExportAllFailed_one": "Hindi na-export ang {{count}} file",
+    "ExportAllFailed_other": "Hindi na-export ang {{count}} file",
+    "ExportSuccess_one": "Na-export ang {{count}} file",
+    "ExportSuccess_other": "Na-export ang {{count}} file",
+    "Selected_one": "{{count}} napili",
+    "Selected_other": "{{count}} napili"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mga action items",
@@ -2396,7 +2422,9 @@
     "Title": "Mga tala",
     "Unpin": "I-unpin",
     "UpdateWikiFromNote": "I-update ang wiki mula sa tala na ito",
-    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}"
+    "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
+    "RecordingInFile": "Recording na naka-attach sa note na ito",
+    "RecordingInFolder": "Recording sa loob ng folder na ito"
   },
   "NotesView": {
     "CollapseSidebar": "Itago ang sidebar ng notes",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Huling na-sync",
       "LastSync": "Huling sync",
       "RetrySync": "Subukang Muling I-sync",
-      "IntervalMinutes": "{{count}} min"
+      "IntervalMinutes": "{{count}} min",
+      "IntervalMinutes_one": "{{count}} min",
+      "IntervalMinutes_other": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Ang mga pagbabago sa mga tala at wiki ay awtomatikong nasi-sync.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}}d ang nakalipas",
       "HoursAgo": "{{count}}h ang nakalipas",
       "JustNow": "Kakarating lang",
-      "MinutesAgo": "{{count}}m ang nakalipas"
+      "MinutesAgo": "{{count}}m ang nakalipas",
+      "DaysAgo_one": "{{count}}d ang nakalipas",
+      "DaysAgo_other": "{{count}}d ang nakalipas",
+      "HoursAgo_one": "{{count}}h ang nakalipas",
+      "HoursAgo_other": "{{count}}h ang nakalipas",
+      "MinutesAgo_one": "{{count}}m ang nakalipas",
+      "MinutesAgo_other": "{{count}}m ang nakalipas"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Nagsi-sync...",
     "Timeout": "Napatigil ang pag-sync dahil sa timeout",
     "TokenExpired": "Muling pahintulutan",
-    "Unpushed": "{{count}} hindi naipush"
+    "Unpushed": "{{count}} hindi naipush",
+    "Unpushed_one": "{{count}} hindi na-push",
+    "Unpushed_other": "{{count}} hindi na-push"
   },
   "Tabs": {
     "Close": "Isara",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "I-undo",
     "Toast": "Nai-rename; na-update ang {{count}} reference",
-    "ToastNoRefs": "Pinangalanan muli"
+    "ToastNoRefs": "Pinangalanan muli",
+    "Toast_one": "Pinalitan ng pangalan; na-update ang {{count}} reference",
+    "Toast_other": "Pinalitan ng pangalan; na-update ang {{count}} reference"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "I-install at Lumabas",
@@ -3467,7 +3507,11 @@
       "Resume": "Ipagpatuloy",
       "ResumeAvailable": "Naputol ang nakaraang pagbuo ng wiki sa {{current}}/{{total}}. Ipagpatuloy?",
       "ToastMessage": "{{count}} bagong tala ang nadiskubre. Bumuo ng wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} bagong note simula noong huling build",
+      "BannerMessage_other": "{{count}} bagong note simula noong huling build",
+      "ToastMessage_one": "{{count}} bagong note ang natukoy. Buuin ang wiki?",
+      "ToastMessage_other": "{{count}} bagong note ang natukoy. Buuin ang wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Mga tala mo",
     "UserSectionPlaceholder": "Magdagdag ng iyong sariling tala…",
-    "UserSectionTitle": "Mga tala mo"
+    "UserSectionTitle": "Mga tala mo",
+    "RefreshFromSourcesHint_one": "I-click para i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli ang mga source note.",
+    "RefreshFromSourcesHint_other": "I-click para i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli ang mga source note."
   },
   "WikiFeature": {
     "SettingsDesc": "Bumubuo ng knowledge base ng mga entity, tao, at paksa mula sa iyong mga tala at recording. Naka-off bilang default.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Piliin kung aling tala ang bubuksan",
     "SuggestEmpty": "Walang katugmang tala o wiki page",
     "SyncContextMenu": "I-sync ang wiki",
-    "SyncToGenerate": "I-sync ang wiki upang gumawa ng pahinang ito"
+    "SyncToGenerate": "I-sync ang wiki upang gumawa ng pahinang ito",
+    "Collision_one": "{{count}} note ang may parehong base name na {{name}}",
+    "Collision_other": "{{count}} note ang may parehong base name na {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Pumili ng bintana para sa pagre-record ng window.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Nasa Claude Code, Cursor, o Codex ka na? I-paste ito at ise-set up nito ang sarili.",
     "ManualInstallTitle": "O idagdag ito nang manu-mano",
     "AgentCopy": "Kopyahin ang prompt"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Hanapin sa iyong Memorya",
+    "SearchAria": "Hanapin sa iyong Memorya",
+    "Meetings": "Mga Miting",
+    "NoMatch": "Walang tugma sa iyong Memorya.",
+    "DistilledFrom": "Hinango mula sa {{n}} {{label}}",
+    "PeopleCount": "{{n}} tao",
+    "OrgCount": "{{n}} organisasyon",
+    "TopicCount": "{{n}} paksa",
+    "Building": "Hinahango pa ang iyong Memorya — mabubuksan na ang mga tapos nang pahina.",
+    "TopOfMind": "Pangunahing paksa",
+    "UpdatedThisWeek": "Na-update ngayong linggo",
+    "NoUpdates": "Walang update ngayong linggo.",
+    "BrowseMeetings": "I-browse ang lahat ng {{label}}",
+    "CloudManaged": "Pinamamahalaan sa cloud — dumarating ang mga update sa pamamagitan ng sync.",
+    "TemplateLatest": "Ano ang pinakabago sa {{label}}?",
+    "TemplateDecided": "Ano ang napagpasyahan natin tungkol sa {{label}}?",
+    "TemplateWhoOwns": "Sino ang may hawak sa {{label}}?",
+    "SearchCount_one": "{{count}} resulta",
+    "SearchCount_other": "{{count}} na resulta"
+  },
+  "WikiPage": {
+    "CorrectThis": "Itama ito",
+    "CorrectionPlaceholder": "Ano ang tama?",
+    "CorrectionFailed": "Hindi na-save — subukan muli.",
+    "CorrectionPending": "Itinama mo — naghihintay ng muling pagsulat.",
+    "Saving": "Sine-save…",
+    "SubmitCorrection": "Ipasa ang pagtatama"
   }
 }

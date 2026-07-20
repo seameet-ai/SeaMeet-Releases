@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Dirige el OCR de capturas de pantalla a tu proveedor LLM seleccionado. Apagado (predeterminado): siempre usa Gemini. Cambia automáticamente a Gemini si el proveedor no puede aceptar la imagen.",
     "UsageReporting": "Compartir recuentos anónimos de uso de IA",
     "UsageReportingDesc": "Solo proveedor, modelo y recuento de tokens — nunca tu contenido. Nos ayuda a mantener la fiabilidad de los proveedores.",
-    "KeyVerificationFailed": "Error al verificar la clave"
+    "KeyVerificationFailed": "Error al verificar la clave",
+    "ShowAllModels_one": "Mostrar {{count}} modelo",
+    "ShowAllModels_other": "Mostrar los {{count}} modelos"
   },
   "AISummary": {
     "ApplyMerge": "Aplicar",
@@ -534,7 +536,9 @@
         "name": "Reunión semanal de equipo"
       }
     },
-    "Title": "Resumen de nota"
+    "Title": "Resumen de nota",
+    "Meta_one": "{{count}} grabación · plantilla: {{tpl}}",
+    "Meta_other": "{{count}} grabaciones · plantilla: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Permite que el modelo elija la mejor plantilla para cada reunión. Cuando está desactivado, se usa por defecto Acta de Reunión y no se realiza ninguna llamada al clasificador.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Subiendo tus {{total}} reuniones anteriores para que estén disponibles en todos los dispositivos y en la web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Descartar",
-      "CompleteToast": "Las {{total}} reuniones están sincronizadas: ábrelas en cualquier dispositivo o en app-dev.seameet.ai."
+      "CompleteToast": "Las {{total}} reuniones están sincronizadas: ábrelas en cualquier dispositivo o en app-dev.seameet.ai.",
+      "TextDone_one": "{{count}} nota y página wiki sincronizada.",
+      "TextDone_other": "{{count}} notas y páginas wiki sincronizadas."
     },
     "Status": {
       "Synced": "Sincronizado con la nube",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "No se pudo cargar esta grabación desde la nube. Comprueba tu conexión e inténtalo de nuevo.",
       "Downloaded": "Guardado en este dispositivo",
       "SyncToLocal": "Sincronizar localmente",
-      "SyncWithSyncPro": "Sincroniza esta grabación con la nube usando Sync Pro"
+      "SyncWithSyncPro": "Sincroniza esta grabación con la nube usando Sync Pro",
+      "BackUpQueued_one": "{{count}} archivo en cola para copia en la nube",
+      "BackUpQueued_other": "{{count}} archivos en cola para copia en la nube"
     },
     "Trash": {
       "Title": "Papelera",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "¿Eliminar de verdad?",
       "EmptyTrash": "Vaciar papelera",
       "ReallyEmpty": "¿Vaciar de verdad?",
-      "ActionFailed": "No ha funcionado. Inténtalo de nuevo."
+      "ActionFailed": "No ha funcionado. Inténtalo de nuevo.",
+      "Summary_one": "{{count}} en la papelera · {{size}}",
+      "Summary_other": "{{count}} en la papelera · {{size}}"
     },
     "Usage": {
       "TabTitle": "Uso",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Eliminar en todas partes",
       "CloudFailed": "No se pudo quitar de la nube. Inténtalo de nuevo.",
       "CloudBatchFailed": "No se pudo eliminar {{count}} de {{total}} de la nube. Inténtalo de nuevo.",
-      "DeviceHintShared": "Mueve la copia descargada a la Papelera. Sigue disponible en \"Compartido conmigo\"."
+      "DeviceHintShared": "Mueve la copia descargada a la Papelera. Sigue disponible en \"Compartido conmigo\".",
+      "CloudBatchFailed_one": "No se pudo eliminar {{count}} de {{total}} de la nube. Inténtalo de nuevo.",
+      "CloudBatchFailed_other": "No se pudieron eliminar {{count}} de {{total}} de la nube. Inténtalo de nuevo.",
+      "TitleMany_one": "¿Eliminar {{count}} grabación?",
+      "TitleMany_other": "¿Eliminar {{count}} grabaciones?"
     },
     "FreeExpiry": {
       "Warning": "Estas grabaciones se eliminarán en {{days}} días: consérvalas para siempre.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Reemplazar todo",
     "ReplacePlaceholder": "Reemplazar",
     "WikiAiReadonly": "La sección de IA es de solo lectura — el reemplazo solo opera en la sección de usuario",
-    "WikiCounterSplit": "{{userCount}} en la nota + {{aiCount}} en la sección de IA"
+    "WikiCounterSplit": "{{userCount}} en la nota + {{aiCount}} en la sección de IA",
+    "ConfirmReplaceAll_one": "¿Reemplazar {{count}} coincidencia?",
+    "ConfirmReplaceAll_other": "¿Reemplazar las {{count}} coincidencias?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Retrospectiva de Audio",
@@ -2105,7 +2121,17 @@
     "Video": "Video",
     "SubTabs": "Vistas de archivos",
     "MyFiles": "Mis archivos",
-    "SharedWithMe": "Compartido conmigo"
+    "SharedWithMe": "Compartido conmigo",
+    "BatchDeletePartial_one": "{{count}} de {{total}} archivos eliminados",
+    "BatchDeletePartial_other": "{{count}} de {{total}} archivos eliminados",
+    "ConfirmBatchDelete_one": "¿Eliminar {{count}} archivo?",
+    "ConfirmBatchDelete_other": "¿Eliminar {{count}} archivos?",
+    "ExportAllFailed_one": "No se pudo exportar {{count}} archivo",
+    "ExportAllFailed_other": "No se pudieron exportar {{count}} archivos",
+    "ExportSuccess_one": "{{count}} archivo exportado",
+    "ExportSuccess_other": "{{count}} archivos exportados",
+    "Selected_one": "{{count}} seleccionado",
+    "Selected_other": "{{count}} seleccionados"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elementos de acción",
@@ -2396,7 +2422,9 @@
     "Title": "Notas",
     "Unpin": "Desfijar",
     "UpdateWikiFromNote": "Actualizar wiki desde esta nota",
-    "WikiUpdateFailed": "No se pudo actualizar el wiki: {{error}}"
+    "WikiUpdateFailed": "No se pudo actualizar el wiki: {{error}}",
+    "RecordingInFile": "Grabación adjunta a esta nota",
+    "RecordingInFolder": "Grabación dentro de esta carpeta"
   },
   "NotesView": {
     "CollapseSidebar": "Ocultar barra lateral de notas",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Última sincronización",
       "LastSync": "Última sincronización",
       "RetrySync": "Reintentar sincronización",
-      "IntervalMinutes": "{{count}} min"
+      "IntervalMinutes": "{{count}} min",
+      "IntervalMinutes_one": "{{count}} min",
+      "IntervalMinutes_other": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Los cambios en notas y wiki se sincronizan automáticamente.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "hace {{count}}d",
       "HoursAgo": "hace {{count}}h",
       "JustNow": "Justo ahora",
-      "MinutesAgo": "hace {{count}}m"
+      "MinutesAgo": "hace {{count}}m",
+      "DaysAgo_one": "hace {{count}}d",
+      "DaysAgo_other": "hace {{count}}d",
+      "HoursAgo_one": "hace {{count}}h",
+      "HoursAgo_other": "hace {{count}}h",
+      "MinutesAgo_one": "hace {{count}}m",
+      "MinutesAgo_other": "hace {{count}}m"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Sincronizando...",
     "Timeout": "La sincronización ha expirado",
     "TokenExpired": "Reautorizar",
-    "Unpushed": "{{count}} sin enviar"
+    "Unpushed": "{{count}} sin enviar",
+    "Unpushed_one": "{{count}} sin enviar",
+    "Unpushed_other": "{{count}} sin enviar"
   },
   "Tabs": {
     "Close": "Cerrar",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Deshacer",
     "Toast": "Renombrado; se actualizó {{count}} referencia(s)",
-    "ToastNoRefs": "Renombrado"
+    "ToastNoRefs": "Renombrado",
+    "Toast_one": "Renombrado; {{count}} referencia actualizada",
+    "Toast_other": "Renombrado; {{count}} referencias actualizadas"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Instalar y salir",
@@ -3467,7 +3507,11 @@
       "Resume": "Reanudar",
       "ResumeAvailable": "Una construcción anterior del wiki se interrumpió en {{current}}/{{total}}. ¿Reanudar?",
       "ToastMessage": "Se detectaron {{count}} notas nuevas. ¿Construir wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} nota nueva desde la última compilación",
+      "BannerMessage_other": "{{count}} notas nuevas desde la última compilación",
+      "ToastMessage_one": "{{count}} nota nueva detectada. ¿Compilar el wiki?",
+      "ToastMessage_other": "{{count}} notas nuevas detectadas. ¿Compilar el wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Tus notas",
     "UserSectionPlaceholder": "Añade tus propias notas…",
-    "UserSectionTitle": "Tus notas"
+    "UserSectionTitle": "Tus notas",
+    "RefreshFromSourcesHint_one": "Haz clic para actualizar la sección de IA desde {{count}} nota de origen. Mayús+clic para releer también las notas de origen.",
+    "RefreshFromSourcesHint_other": "Haz clic para actualizar la sección de IA desde {{count}} notas de origen. Mayús+clic para releer también las notas de origen."
   },
   "WikiFeature": {
     "SettingsDesc": "Crea una base de conocimientos de entidades, personas y temas a partir de sus notas y grabaciones. Desactivado de forma predeterminada.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Elige qué nota abrir",
     "SuggestEmpty": "Sin notas ni páginas wiki coincidentes",
     "SyncContextMenu": "Sincronizar wiki",
-    "SyncToGenerate": "Sincroniza el wiki para generar esta página"
+    "SyncToGenerate": "Sincroniza el wiki para generar esta página",
+    "Collision_one": "{{count}} nota comparte el nombre base {{name}}",
+    "Collision_other": "{{count}} notas comparten el nombre base {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Elige una ventana para capturar en grabaciones de ventana.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "¿Ya estás en Claude Code, Cursor o Codex? Pega esto y se configura solo.",
     "ManualInstallTitle": "O agrégalo manualmente",
     "AgentCopy": "Copiar el prompt"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Buscar en tu Memoria",
+    "SearchAria": "Buscar en tu Memoria",
+    "Meetings": "Reuniones",
+    "NoMatch": "Nada en tu Memoria coincide.",
+    "DistilledFrom": "Destilado de {{n}} {{label}}",
+    "PeopleCount": "{{n}} personas",
+    "OrgCount": "{{n}} organizaciones",
+    "TopicCount": "{{n}} temas",
+    "Building": "Tu Memoria aún se está destilando — las páginas terminadas ya se pueden abrir.",
+    "TopOfMind": "En mente",
+    "UpdatedThisWeek": "Actualizado esta semana",
+    "NoUpdates": "Sin actualizaciones esta semana.",
+    "BrowseMeetings": "Ver todas las {{label}}",
+    "CloudManaged": "Gestionado en la nube — las actualizaciones llegan por sincronización.",
+    "TemplateLatest": "¿Qué hay de nuevo sobre {{label}}?",
+    "TemplateDecided": "¿Qué decidimos sobre {{label}}?",
+    "TemplateWhoOwns": "¿Quién se encarga de {{label}}?",
+    "SearchCount_one": "{{count}} resultado",
+    "SearchCount_other": "{{count}} resultados"
+  },
+  "WikiPage": {
+    "CorrectThis": "Corregir",
+    "CorrectionPlaceholder": "¿Qué es lo correcto?",
+    "CorrectionFailed": "No se pudo guardar — inténtalo de nuevo.",
+    "CorrectionPending": "Corregido por ti — reescritura pendiente.",
+    "Saving": "Guardando…",
+    "SubmitCorrection": "Enviar corrección"
   }
 }

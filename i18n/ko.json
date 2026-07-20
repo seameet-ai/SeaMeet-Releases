@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "스크린샷 OCR을 선택한 LLM 공급자로 라우팅합니다. 끔(기본): 항상 Gemini 사용. 공급자가 이미지를 수락할 수 없으면 자동으로 Gemini로 대체됩니다.",
     "UsageReporting": "익명 AI 사용량 수치 공유",
     "UsageReportingDesc": "공급자, 모델, 토큰 수만 공유 — 콘텐츠는 절대 포함되지 않습니다. 공급자 안정성 유지에 도움이 됩니다.",
-    "KeyVerificationFailed": "키 검증 실패"
+    "KeyVerificationFailed": "키 검증 실패",
+    "ShowAllModels_one": "{{count}}개 모델 모두 보기",
+    "ShowAllModels_other": "{{count}}개 모델 모두 보기"
   },
   "AISummary": {
     "ApplyMerge": "적용",
@@ -534,7 +536,9 @@
         "name": "팀 주간 회의"
       }
     },
-    "Title": "노트 요약"
+    "Title": "노트 요약",
+    "Meta_one": "녹음 {{count}}개 · 템플릿: {{tpl}}",
+    "Meta_other": "녹음 {{count}}개 · 템플릿: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "모델이 각 회의에 가장 적합한 템플릿을 선택하도록 합니다. 꺼져 있으면 기본적으로 회의록이 사용되며 분류기 호출이 이루어지지 않습니다.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "지난 회의 {{total}}건을 업로드하여 모든 기기와 웹에서 사용할 수 있도록 하고 있습니다…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "닫기",
-      "CompleteToast": "회의 {{total}}건이 모두 동기화되었습니다. 어떤 기기에서나 또는 app-dev.seameet.ai에서 열어 보세요."
+      "CompleteToast": "회의 {{total}}건이 모두 동기화되었습니다. 어떤 기기에서나 또는 app-dev.seameet.ai에서 열어 보세요.",
+      "TextDone_one": "노트 및 wiki 페이지 {{count}}개를 동기화했습니다.",
+      "TextDone_other": "노트 및 wiki 페이지 {{count}}개를 동기화했습니다."
     },
     "Status": {
       "Synced": "클라우드에 동기화됨",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "클라우드에서 이 녹음을 불러오지 못했습니다. 연결을 확인하고 다시 시도해 주세요.",
       "Downloaded": "이 기기에 저장됨",
       "SyncToLocal": "로컬로 동기화",
-      "SyncWithSyncPro": "이 녹음을 Sync Pro로 클라우드에 동기화"
+      "SyncWithSyncPro": "이 녹음을 Sync Pro로 클라우드에 동기화",
+      "BackUpQueued_one": "파일 {{count}}개가 클라우드 백업 대기 중",
+      "BackUpQueued_other": "파일 {{count}}개가 클라우드 백업 대기 중"
     },
     "Trash": {
       "Title": "휴지통",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "정말 삭제할까요?",
       "EmptyTrash": "휴지통 비우기",
       "ReallyEmpty": "정말 비울까요?",
-      "ActionFailed": "작업에 실패했습니다. 다시 시도해 주세요."
+      "ActionFailed": "작업에 실패했습니다. 다시 시도해 주세요.",
+      "Summary_one": "휴지통에 {{count}}개 · {{size}}",
+      "Summary_other": "휴지통에 {{count}}개 · {{size}}"
     },
     "Usage": {
       "TabTitle": "사용량",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "모든 위치에서 삭제",
       "CloudFailed": "클라우드에서 제거하지 못했습니다. 다시 시도해 주세요.",
       "CloudBatchFailed": "클라우드에서 {{total}}개 중 {{count}}개를 제거하지 못했습니다. 다시 시도해 주세요.",
-      "DeviceHintShared": "다운로드한 사본을 휴지통으로 이동합니다. \"나와 공유됨\"에는 계속 표시됩니다."
+      "DeviceHintShared": "다운로드한 사본을 휴지통으로 이동합니다. \"나와 공유됨\"에는 계속 표시됩니다.",
+      "CloudBatchFailed_one": "{{total}}개 중 {{count}}개를 클라우드에서 제거하지 못했습니다. 다시 시도하세요.",
+      "CloudBatchFailed_other": "{{total}}개 중 {{count}}개를 클라우드에서 제거하지 못했습니다. 다시 시도하세요.",
+      "TitleMany_one": "녹음 {{count}}개를 삭제할까요?",
+      "TitleMany_other": "녹음 {{count}}개를 삭제할까요?"
     },
     "FreeExpiry": {
       "Warning": "이 녹음은 {{days}}일 후에 삭제됩니다 — 영구 보관하세요.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "모두 바꾸기",
     "ReplacePlaceholder": "바꾸기",
     "WikiAiReadonly": "AI 섹션은 읽기 전용입니다 — 바꾸기는 사용자 섹션에서만 작동합니다",
-    "WikiCounterSplit": "노트에 {{userCount}}개 + AI 섹션에 {{aiCount}}개"
+    "WikiCounterSplit": "노트에 {{userCount}}개 + AI 섹션에 {{aiCount}}개",
+    "ConfirmReplaceAll_one": "{{count}}개 일치 항목을 모두 바꿀까요?",
+    "ConfirmReplaceAll_other": "{{count}}개 일치 항목을 모두 바꿀까요?"
   },
   "FlashbackControls": {
     "AudioFlashback": "오디오 플래시백",
@@ -2105,7 +2121,17 @@
     "Video": "비디오",
     "SubTabs": "파일 보기",
     "MyFiles": "내 파일",
-    "SharedWithMe": "나와 공유됨"
+    "SharedWithMe": "나와 공유됨",
+    "BatchDeletePartial_one": "{{total}}개 중 {{count}}개 파일을 삭제했습니다",
+    "BatchDeletePartial_other": "{{total}}개 중 {{count}}개 파일을 삭제했습니다",
+    "ConfirmBatchDelete_one": "파일 {{count}}개를 삭제할까요?",
+    "ConfirmBatchDelete_other": "파일 {{count}}개를 삭제할까요?",
+    "ExportAllFailed_one": "파일 {{count}}개를 내보내지 못했습니다",
+    "ExportAllFailed_other": "파일 {{count}}개를 내보내지 못했습니다",
+    "ExportSuccess_one": "파일 {{count}}개를 내보냈습니다",
+    "ExportSuccess_other": "파일 {{count}}개를 내보냈습니다",
+    "Selected_one": "{{count}}개 선택됨",
+    "Selected_other": "{{count}}개 선택됨"
   },
   "MeetSeasaltAi": {
     "ActionItems": "실행 항목",
@@ -2396,7 +2422,9 @@
     "Title": "노트",
     "Unpin": "고정 해제",
     "UpdateWikiFromNote": "이 노트에서 위키 업데이트",
-    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}"
+    "WikiUpdateFailed": "위키 업데이트 실패: {{error}}",
+    "RecordingInFile": "이 노트에 첨부된 녹음",
+    "RecordingInFolder": "이 폴더의 녹음"
   },
   "NotesView": {
     "CollapseSidebar": "노트 사이드바 숨기기",
@@ -3133,7 +3161,9 @@
       "LastCommit": "마지막 동기화",
       "LastSync": "마지막 동기화",
       "RetrySync": "동기화 재시도",
-      "IntervalMinutes": "{{count}}분"
+      "IntervalMinutes": "{{count}}분",
+      "IntervalMinutes_one": "{{count}}분",
+      "IntervalMinutes_other": "{{count}}분"
     },
     "GitAutoCommit": {
       "Desc": "노트와 위키의 변경 사항이 자동으로 동기화됩니다.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}}일 전",
       "HoursAgo": "{{count}}시간 전",
       "JustNow": "방금 전",
-      "MinutesAgo": "{{count}}분 전"
+      "MinutesAgo": "{{count}}분 전",
+      "DaysAgo_one": "{{count}}일 전",
+      "DaysAgo_other": "{{count}}일 전",
+      "HoursAgo_one": "{{count}}시간 전",
+      "HoursAgo_other": "{{count}}시간 전",
+      "MinutesAgo_one": "{{count}}분 전",
+      "MinutesAgo_other": "{{count}}분 전"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "동기화 중...",
     "Timeout": "동기화 시간이 초과되었습니다",
     "TokenExpired": "재인증",
-    "Unpushed": "{{count}}개 푸시되지 않음"
+    "Unpushed": "{{count}}개 푸시되지 않음",
+    "Unpushed_one": "푸시 안 됨 {{count}}개",
+    "Unpushed_other": "푸시 안 됨 {{count}}개"
   },
   "Tabs": {
     "Close": "닫기",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "실행 취소",
     "Toast": "이름이 변경됨, {{count}}개 참조 업데이트됨",
-    "ToastNoRefs": "이름 변경됨"
+    "ToastNoRefs": "이름 변경됨",
+    "Toast_one": "이름을 변경했습니다. 참조 {{count}}개를 업데이트했습니다",
+    "Toast_other": "이름을 변경했습니다. 참조 {{count}}개를 업데이트했습니다"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "설치 후 종료",
@@ -3467,7 +3507,11 @@
       "Resume": "재개",
       "ResumeAvailable": "이전 위키 빌드가 {{current}}/{{total}}에서 중단되었습니다. 재개할까요?",
       "ToastMessage": "{{count}}개의 새 노트가 감지되었습니다. 위키를 빌드할까요?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "마지막 빌드 이후 새 노트 {{count}}개",
+      "BannerMessage_other": "마지막 빌드 이후 새 노트 {{count}}개",
+      "ToastMessage_one": "새 노트 {{count}}개가 감지되었습니다. wiki를 빌드할까요?",
+      "ToastMessage_other": "새 노트 {{count}}개가 감지되었습니다. wiki를 빌드할까요?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "내 노트",
     "UserSectionPlaceholder": "직접 메모 추가…",
-    "UserSectionTitle": "내 노트"
+    "UserSectionTitle": "내 노트",
+    "RefreshFromSourcesHint_one": "클릭하면 소스 노트 {{count}}개에서 AI 섹션을 새로 고칩니다. Shift+클릭하면 소스 노트도 다시 읽습니다.",
+    "RefreshFromSourcesHint_other": "클릭하면 소스 노트 {{count}}개에서 AI 섹션을 새로 고칩니다. Shift+클릭하면 소스 노트도 다시 읽습니다."
   },
   "WikiFeature": {
     "SettingsDesc": "메모와 녹음을 통해 엔터티, 사람, 주제에 대한 지식 기반을 구축합니다. 기본적으로 꺼져 있습니다.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "열 노트를 선택하세요",
     "SuggestEmpty": "일치하는 노트 또는 wiki 페이지가 없습니다",
     "SyncContextMenu": "위키 동기화",
-    "SyncToGenerate": "이 페이지를 생성하려면 위키를 동기화하세요"
+    "SyncToGenerate": "이 페이지를 생성하려면 위키를 동기화하세요",
+    "Collision_one": "노트 {{count}}개가 기본 이름 {{name}}을(를) 공유합니다",
+    "Collision_other": "노트 {{count}}개가 기본 이름 {{name}}을(를) 공유합니다"
   },
   "WindowPicker": {
     "Instruction": "창 녹화를 위한 캡처할 창을 선택하세요.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "이미 Claude Code, Cursor, Codex를 사용 중인가요? 이걸 붙여넣으면 자동으로 설정됩니다.",
     "ManualInstallTitle": "또는 수동으로 추가",
     "AgentCopy": "프롬프트 복사"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "내 메모리 검색",
+    "SearchAria": "내 메모리 검색",
+    "Meetings": "회의",
+    "NoMatch": "메모리에서 일치하는 항목이 없습니다.",
+    "DistilledFrom": "{{label}} {{n}}건에서 추출됨",
+    "PeopleCount": "{{n}}명",
+    "OrgCount": "조직 {{n}}개",
+    "TopicCount": "주제 {{n}}개",
+    "Building": "메모리를 아직 추출하는 중입니다 — 완성된 페이지는 바로 열 수 있습니다.",
+    "TopOfMind": "주요 항목",
+    "UpdatedThisWeek": "이번 주 업데이트",
+    "NoUpdates": "이번 주 업데이트가 없습니다.",
+    "BrowseMeetings": "모든 {{label}} 보기",
+    "CloudManaged": "클라우드에서 관리됨 — 업데이트는 동기화로 전달됩니다.",
+    "TemplateLatest": "{{label}}의 최근 소식은?",
+    "TemplateDecided": "{{label}}에 대해 무엇을 결정했나요?",
+    "TemplateWhoOwns": "{{label}}는 누가 담당하나요?",
+    "SearchCount_one": "결과 {{count}}개",
+    "SearchCount_other": "결과 {{count}}개"
+  },
+  "WikiPage": {
+    "CorrectThis": "수정하기",
+    "CorrectionPlaceholder": "올바른 내용은?",
+    "CorrectionFailed": "저장하지 못했습니다 — 다시 시도하세요.",
+    "CorrectionPending": "직접 수정함 — 다시 쓰기 대기 중.",
+    "Saving": "저장 중…",
+    "SubmitCorrection": "수정 제출"
   }
 }

@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Направляет OCR скриншотов к выбранному поставщику LLM. Выключено (по умолчанию): всегда использует Gemini. Автоматически переключается на Gemini, если поставщик не может принять изображение.",
     "UsageReporting": "Делиться анонимной статистикой использования ИИ",
     "UsageReportingDesc": "Только провайдер, модель и число токенов — никогда ваш контент. Помогает нам поддерживать надёжность провайдеров.",
-    "KeyVerificationFailed": "Не удалось проверить ключ"
+    "KeyVerificationFailed": "Не удалось проверить ключ",
+    "ShowAllModels_one": "Показать {{count}} модель",
+    "ShowAllModels_other": "Показать все модели ({{count}})"
   },
   "AISummary": {
     "ApplyMerge": "Применить",
@@ -534,7 +536,9 @@
         "name": "Еженедельная встреча команды"
       }
     },
-    "Title": "Сводка заметки"
+    "Title": "Сводка заметки",
+    "Meta_one": "{{count}} запись · шаблон: {{tpl}}",
+    "Meta_other": "{{count}} записей · шаблон: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Позвольте модели выбирать лучший шаблон для каждой встречи. Если отключено, по умолчанию используется Протокол встречи, и вызов классификатора не выполняется.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Загружаем ваши прошлые встречи ({{total}}), чтобы они были доступны на всех устройствах и в вебе…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Закрыть",
-      "CompleteToast": "Все встречи ({{total}}) синхронизированы — откройте их на любом устройстве или на app-dev.seameet.ai."
+      "CompleteToast": "Все встречи ({{total}}) синхронизированы — откройте их на любом устройстве или на app-dev.seameet.ai.",
+      "TextDone_one": "Синхронизирована {{count}} заметка и wiki-страница.",
+      "TextDone_other": "Синхронизировано {{count}} заметок и wiki-страниц."
     },
     "Status": {
       "Synced": "Синхронизировано с облаком",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Не удалось загрузить эту запись из облака. Проверьте подключение и попробуйте ещё раз.",
       "Downloaded": "Сохранено на этом устройстве",
       "SyncToLocal": "Синхронизировать локально",
-      "SyncWithSyncPro": "Синхронизировать эту запись в облако с Sync Pro"
+      "SyncWithSyncPro": "Синхронизировать эту запись в облако с Sync Pro",
+      "BackUpQueued_one": "{{count}} файл в очереди на облачное резервное копирование",
+      "BackUpQueued_other": "{{count}} файлов в очереди на облачное резервное копирование"
     },
     "Trash": {
       "Title": "Корзина",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Действительно удалить?",
       "EmptyTrash": "Очистить корзину",
       "ReallyEmpty": "Действительно очистить?",
-      "ActionFailed": "Не получилось. Попробуйте ещё раз."
+      "ActionFailed": "Не получилось. Попробуйте ещё раз.",
+      "Summary_one": "{{count}} в корзине · {{size}}",
+      "Summary_other": "{{count}} в корзине · {{size}}"
     },
     "Usage": {
       "TabTitle": "Использование",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Удалить везде",
       "CloudFailed": "Не удалось убрать из облака. Попробуйте ещё раз.",
       "CloudBatchFailed": "Не удалось удалить {{count}} из {{total}} из облака. Пожалуйста, попробуйте снова.",
-      "DeviceHintShared": "Перемещает загруженную копию в Корзину. Остаётся доступной в разделе «Доступные мне»."
+      "DeviceHintShared": "Перемещает загруженную копию в Корзину. Остаётся доступной в разделе «Доступные мне».",
+      "CloudBatchFailed_one": "Не удалось удалить {{count}} из {{total}} из облака. Повторите попытку.",
+      "CloudBatchFailed_other": "Не удалось удалить {{count}} из {{total}} из облака. Повторите попытку.",
+      "TitleMany_one": "Удалить {{count}} запись?",
+      "TitleMany_other": "Удалить {{count}} записей?"
     },
     "FreeExpiry": {
       "Warning": "Эти записи будут удалены через {{days}} дн. — сохраните их навсегда.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Заменить все",
     "ReplacePlaceholder": "Заменить",
     "WikiAiReadonly": "Раздел ИИ доступен только для чтения — замена работает только в пользовательском разделе",
-    "WikiCounterSplit": "{{userCount}} в заметке + {{aiCount}} в разделе ИИ"
+    "WikiCounterSplit": "{{userCount}} в заметке + {{aiCount}} в разделе ИИ",
+    "ConfirmReplaceAll_one": "Заменить {{count}} совпадение?",
+    "ConfirmReplaceAll_other": "Заменить все совпадения ({{count}})?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Аудио флэшбэк",
@@ -2105,7 +2121,17 @@
     "Video": "Видео",
     "SubTabs": "Виды файлов",
     "MyFiles": "Мои файлы",
-    "SharedWithMe": "Предоставлено мне"
+    "SharedWithMe": "Предоставлено мне",
+    "BatchDeletePartial_one": "Удалено {{count}} из {{total}} файлов",
+    "BatchDeletePartial_other": "Удалено {{count}} из {{total}} файлов",
+    "ConfirmBatchDelete_one": "Удалить {{count}} файлов?",
+    "ConfirmBatchDelete_other": "Удалить {{count}} файлов?",
+    "ExportAllFailed_one": "Не удалось экспортировать {{count}} файлов",
+    "ExportAllFailed_other": "Не удалось экспортировать {{count}} файлов",
+    "ExportSuccess_one": "Экспортировано {{count}} файлов",
+    "ExportSuccess_other": "Экспортировано {{count}} файлов",
+    "Selected_one": "Выбрано: {{count}}",
+    "Selected_other": "Выбрано: {{count}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Задачи",
@@ -2396,7 +2422,9 @@
     "Title": "Заметки",
     "Unpin": "Открепить",
     "UpdateWikiFromNote": "Обновить вики из этой заметки",
-    "WikiUpdateFailed": "Не удалось обновить вики: {{error}}"
+    "WikiUpdateFailed": "Не удалось обновить вики: {{error}}",
+    "RecordingInFile": "Запись прикреплена к этой заметке",
+    "RecordingInFolder": "Запись в этой папке"
   },
   "NotesView": {
     "CollapseSidebar": "Скрыть боковую панель заметок",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Последняя синхронизация",
       "LastSync": "Последняя синхронизация",
       "RetrySync": "Повторить синхронизацию",
-      "IntervalMinutes": "{{count}} мин"
+      "IntervalMinutes": "{{count}} мин",
+      "IntervalMinutes_one": "{{count}} мин",
+      "IntervalMinutes_other": "{{count}} мин"
     },
     "GitAutoCommit": {
       "Desc": "Изменения в заметках и вики автоматически синхронизируются.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}} д назад",
       "HoursAgo": "{{count}} ч назад",
       "JustNow": "Только что",
-      "MinutesAgo": "{{count}} мин назад"
+      "MinutesAgo": "{{count}} мин назад",
+      "DaysAgo_one": "{{count}} д назад",
+      "DaysAgo_other": "{{count}} д назад",
+      "HoursAgo_one": "{{count}} ч назад",
+      "HoursAgo_other": "{{count}} ч назад",
+      "MinutesAgo_one": "{{count}} мин назад",
+      "MinutesAgo_other": "{{count}} мин назад"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Синхронизация...",
     "Timeout": "Время синхронизации истекло",
     "TokenExpired": "Повторная авторизация",
-    "Unpushed": "{{count}} неотправленных"
+    "Unpushed": "{{count}} неотправленных",
+    "Unpushed_one": "{{count}} не отправлено",
+    "Unpushed_other": "{{count}} не отправлено"
   },
   "Tabs": {
     "Close": "Закрыть",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Отменить",
     "Toast": "Переименовано; обновлено ссылок: {{count}}",
-    "ToastNoRefs": "Переименовано"
+    "ToastNoRefs": "Переименовано",
+    "Toast_one": "Переименовано; обновлено ссылок: {{count}}",
+    "Toast_other": "Переименовано; обновлено ссылок: {{count}}"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Установить и выйти",
@@ -3467,7 +3507,11 @@
       "Resume": "Возобновить",
       "ResumeAvailable": "Предыдущая сборка вики прервана на {{current}}/{{total}}. Возобновить?",
       "ToastMessage": "Обнаружено {{count}} новых заметок. Построить вики?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} новая заметка с последней сборки",
+      "BannerMessage_other": "{{count}} новых заметок с последней сборки",
+      "ToastMessage_one": "Обнаружена {{count}} новая заметка. Собрать wiki?",
+      "ToastMessage_other": "Обнаружено {{count}} новых заметок. Собрать wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Ваши заметки",
     "UserSectionPlaceholder": "Добавьте свои заметки…",
-    "UserSectionTitle": "Ваши заметки"
+    "UserSectionTitle": "Ваши заметки",
+    "RefreshFromSourcesHint_one": "Нажмите, чтобы обновить AI-раздел из {{count}} исходной заметки. Shift+клик — также перечитать исходные заметки.",
+    "RefreshFromSourcesHint_other": "Нажмите, чтобы обновить AI-раздел из {{count}} исходных заметок. Shift+клик — также перечитать исходные заметки."
   },
   "WikiFeature": {
     "SettingsDesc": "Создает базу знаний об объектах, людях и темах на основе ваших заметок и записей. По умолчанию выключено.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Выберите заметку для открытия",
     "SuggestEmpty": "Нет подходящих заметок или wiki-страниц",
     "SyncContextMenu": "Синхронизировать вики",
-    "SyncToGenerate": "Синхронизируйте вики для генерации этой страницы"
+    "SyncToGenerate": "Синхронизируйте вики для генерации этой страницы",
+    "Collision_one": "{{count}} заметка имеет одинаковое базовое имя {{name}}",
+    "Collision_other": "{{count}} заметок имеют одинаковое базовое имя {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Выберите окно для захвата при оконной записи.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Уже используете Claude Code, Cursor или Codex? Вставьте это, и он настроится сам.",
     "ManualInstallTitle": "Или добавьте вручную",
     "AgentCopy": "Копировать запрос"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Искать в вашей Памяти",
+    "SearchAria": "Искать в вашей Памяти",
+    "Meetings": "Встречи",
+    "NoMatch": "В вашей Памяти ничего не найдено.",
+    "DistilledFrom": "Дистиллировано из {{n}} {{label}}",
+    "PeopleCount": "{{n}} людей",
+    "OrgCount": "{{n}} организаций",
+    "TopicCount": "{{n}} тем",
+    "Building": "Ваша Память ещё дистиллируется — готовые страницы уже можно открывать.",
+    "TopOfMind": "В центре внимания",
+    "UpdatedThisWeek": "Обновлено на этой неделе",
+    "NoUpdates": "На этой неделе обновлений нет.",
+    "BrowseMeetings": "Просмотреть все {{label}}",
+    "CloudManaged": "Управляется в облаке — обновления приходят через синхронизацию.",
+    "TemplateLatest": "Что нового по {{label}}?",
+    "TemplateDecided": "Что мы решили по {{label}}?",
+    "TemplateWhoOwns": "Кто отвечает за {{label}}?",
+    "SearchCount_one": "{{count}} результат",
+    "SearchCount_other": "{{count}} результатов"
+  },
+  "WikiPage": {
+    "CorrectThis": "Исправить",
+    "CorrectionPlaceholder": "Как правильно?",
+    "CorrectionFailed": "Не удалось сохранить — попробуйте ещё раз.",
+    "CorrectionPending": "Исправлено вами — переработка ожидается.",
+    "Saving": "Сохранение…",
+    "SubmitCorrection": "Отправить исправление"
   }
 }

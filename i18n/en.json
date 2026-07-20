@@ -171,7 +171,9 @@
     "UseMainLlmForOcrHint": "Routes screenshot OCR to your selected LLM provider. Off (default): always uses Gemini. Automatically falls back to Gemini if the provider can't accept the image.",
     "UsageReporting": "Share anonymous AI usage counts",
     "UsageReportingDesc": "Provider, model, and token counts only — never your content. Helps us keep providers reliable.",
-    "KeyVerificationFailed": "Key verification failed"
+    "KeyVerificationFailed": "Key verification failed",
+    "ShowAllModels_one": "Show all {{count}} model",
+    "ShowAllModels_other": "Show all {{count}} models"
   },
   "AISummaryQuality": {
     "Heading": "AI Summary Quality",
@@ -539,7 +541,9 @@
       "legal": "Legal & Compliance",
       "events": "Events & Media",
       "other": "Other"
-    }
+    },
+    "Meta_one": "{{count}} recording · template: {{tpl}}",
+    "Meta_other": "{{count}} recordings · template: {{tpl}}"
   },
   "About": {
     "AppStoreBuild": "App Store Build",
@@ -1334,7 +1338,9 @@
       "WelcomeBody": "Uploading your {{total}} past meetings so they're available on every device and on the web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Dismiss",
-      "CompleteToast": "All {{total}} meetings synced — open them on any device or at app-dev.seameet.ai."
+      "CompleteToast": "All {{total}} meetings synced — open them on any device or at app-dev.seameet.ai.",
+      "TextDone_one": "Synced {{count}} note & wiki page.",
+      "TextDone_other": "Synced {{count}} notes & wiki pages."
     },
     "Status": {
       "Synced": "Synced to cloud",
@@ -1354,7 +1360,9 @@
       "StreamFailed": "Couldn't load this recording from the cloud. Check your connection and try again.",
       "Downloaded": "Saved to this device",
       "SyncToLocal": "Sync to local",
-      "SyncWithSyncPro": "Sync this recording to the cloud with Sync Pro"
+      "SyncWithSyncPro": "Sync this recording to the cloud with Sync Pro",
+      "BackUpQueued_one": "{{count}} file queued for cloud backup",
+      "BackUpQueued_other": "{{count}} files queued for cloud backup"
     },
     "Trash": {
       "Title": "Trash",
@@ -1368,7 +1376,9 @@
       "ReallyDelete": "Really delete?",
       "EmptyTrash": "Empty trash",
       "ReallyEmpty": "Really empty?",
-      "ActionFailed": "That didn't work. Please try again."
+      "ActionFailed": "That didn't work. Please try again.",
+      "Summary_one": "{{count}} in trash · {{size}}",
+      "Summary_other": "{{count}} in trash · {{size}}"
     },
     "Devices": {
       "Heading": "Devices",
@@ -1413,7 +1423,11 @@
       "ConfirmEverywhere": "Delete everywhere",
       "CloudFailed": "Couldn't remove from the cloud. Please try again.",
       "CloudBatchFailed": "Couldn't remove {{count}} of {{total}} from the cloud. Please try again.",
-      "DeviceHintShared": "Moves the downloaded copy to the system Trash. It stays available in Shared with me."
+      "DeviceHintShared": "Moves the downloaded copy to the system Trash. It stays available in Shared with me.",
+      "CloudBatchFailed_one": "Couldn't remove {{count}} of {{total}} from the cloud. Please try again.",
+      "CloudBatchFailed_other": "Couldn't remove {{count}} of {{total}} from the cloud. Please try again.",
+      "TitleMany_one": "Delete {{count}} recording?",
+      "TitleMany_other": "Delete {{count}} recordings?"
     },
     "Usage": {
       "TabTitle": "Usage",
@@ -1593,7 +1607,9 @@
     "Replace": "Replace",
     "ReplaceAll": "Replace all",
     "CloseBar": "Close find/replace",
-    "WikiCounterSplit": "{{userCount}} in note + {{aiCount}} in AI section"
+    "WikiCounterSplit": "{{userCount}} in note + {{aiCount}} in AI section",
+    "ConfirmReplaceAll_one": "Replace all {{count}} match?",
+    "ConfirmReplaceAll_other": "Replace all {{count}} matches?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Audio Flashback",
@@ -2264,7 +2280,9 @@
     "GitPending": "Unpushed changes",
     "GitSynced": "Pushed to GitHub",
     "CloudPending": "Not downloaded",
-    "GitUnsynced": "Not yet committed"
+    "GitUnsynced": "Not yet committed",
+    "RecordingInFile": "Recording attached to this note",
+    "RecordingInFolder": "Recording inside this folder"
   },
   "NotesShowcase": {
     "Headline": "Notes that grow into a knowledge base",
@@ -2931,7 +2949,9 @@
   "UndoRename": {
     "Toast": "Renamed; updated {{count}} reference(s)",
     "Action": "Undo",
-    "ToastNoRefs": "Renamed"
+    "ToastNoRefs": "Renamed",
+    "Toast_one": "Renamed; updated {{count}} reference",
+    "Toast_other": "Renamed; updated {{count}} references"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Install & Quit",
@@ -3112,7 +3132,11 @@
       "ErrorGeneric": "Wiki build failed.",
       "ErrorDetail": "Details: {{reason}}",
       "ErrorResumable": "Progress saved at {{current}}/{{total}} — you can resume after your quota resets.",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} new note since last build",
+      "BannerMessage_other": "{{count}} new notes since last build",
+      "ToastMessage_one": "{{count}} new note detected. Build wiki?",
+      "ToastMessage_other": "{{count}} new notes detected. Build wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3141,7 +3165,9 @@
       "BuildAllTooltip": "Rebuild wiki — incremental (only updates changed notes).",
       "BuildAllRunning": "Building wiki from all notes — see banner below.",
       "BuildAllAria": "Build wiki from all notes"
-    }
+    },
+    "RefreshFromSourcesHint_one": "Click to refresh the AI section from {{count}} source note. Shift+click to also re-read source notes.",
+    "RefreshFromSourcesHint_other": "Click to refresh the AI section from {{count}} source notes. Shift+click to also re-read source notes."
   },
   "WikiFeature": {
     "SettingsLabel": "Auto-update wiki from notes",
@@ -3214,7 +3240,9 @@
     "SuggestEmpty": "No matching notes or wiki pages",
     "BrokenTooltipSyncWiki": "This page hasn't been built yet — click Sync Wiki on this note to generate it.",
     "SyncContextMenu": "Sync wiki",
-    "SyncToGenerate": "Sync wiki to generate this page"
+    "SyncToGenerate": "Sync wiki to generate this page",
+    "Collision_one": "{{count}} note shares the basename {{name}}",
+    "Collision_other": "{{count}} notes share the basename {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Choose a window to capture for window recordings.",
@@ -3542,7 +3570,9 @@
       "ConnectedTitle": "Sync & Backup",
       "ConnectedDesc": "Your notes and wiki are automatically synced to GitHub. Audio recordings, video recordings, and screenshots are not synced.",
       "RetrySync": "Retry Sync",
-      "IntervalMinutes": "{{count}} min"
+      "IntervalMinutes": "{{count}} min",
+      "IntervalMinutes_one": "{{count}} min",
+      "IntervalMinutes_other": "{{count}} min"
     },
     "GitAutoCommit": {
       "Title": "Auto-Sync",
@@ -3649,7 +3679,13 @@
       "JustNow": "Just now",
       "MinutesAgo": "{{count}}m ago",
       "HoursAgo": "{{count}}h ago",
-      "DaysAgo": "{{count}}d ago"
+      "DaysAgo": "{{count}}d ago",
+      "DaysAgo_one": "{{count}}d ago",
+      "DaysAgo_other": "{{count}}d ago",
+      "HoursAgo_one": "{{count}}h ago",
+      "HoursAgo_other": "{{count}}h ago",
+      "MinutesAgo_one": "{{count}}m ago",
+      "MinutesAgo_other": "{{count}}m ago"
     },
     "GroupTitle": "Sync",
     "MenuItem": "Sync & Backup",
@@ -3671,7 +3707,9 @@
     "CreatingRepo": "Creating repository...",
     "Unpushed": "{{count}} unpushed",
     "Synced": "Synced · {{time}}",
-    "Timeout": "Sync timed out"
+    "Timeout": "Sync timed out",
+    "Unpushed_one": "{{count}} unpushed",
+    "Unpushed_other": "{{count}} unpushed"
   },
   "Pagination": {
     "Previous": "Previous page",
@@ -3816,7 +3854,17 @@
     "Sort": "Sort by",
     "SubTabs": "File views",
     "MyFiles": "My Files",
-    "SharedWithMe": "Shared with me"
+    "SharedWithMe": "Shared with me",
+    "BatchDeletePartial_one": "Deleted {{count}} of {{total}} files",
+    "BatchDeletePartial_other": "Deleted {{count}} of {{total}} files",
+    "ConfirmBatchDelete_one": "Delete {{count}} file?",
+    "ConfirmBatchDelete_other": "Delete {{count}} files?",
+    "ExportAllFailed_one": "Failed to export {{count}} file",
+    "ExportAllFailed_other": "Failed to export {{count}} files",
+    "ExportSuccess_one": "Exported {{count}} file",
+    "ExportSuccess_other": "Exported {{count}} files",
+    "Selected_one": "{{count}} selected",
+    "Selected_other": "{{count}} selected"
   },
   "MediaCard": {
     "Untitled": "Untitled"
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Already in Claude Code, Cursor, or Codex? Paste this and it sets itself up.",
     "ManualInstallTitle": "Or add it manually",
     "AgentCopy": "Copy prompt"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Search your Memory",
+    "SearchAria": "Search your Memory",
+    "Meetings": "Meetings",
+    "NoMatch": "Nothing in your Memory matches.",
+    "DistilledFrom": "Distilled from {{n}} {{label}}",
+    "PeopleCount": "{{n}} people",
+    "OrgCount": "{{n}} organizations",
+    "TopicCount": "{{n}} topics",
+    "Building": "Your Memory is still being distilled — finished pages are already clickable.",
+    "TopOfMind": "Top of mind",
+    "UpdatedThisWeek": "Updated this week",
+    "NoUpdates": "No updates this week.",
+    "BrowseMeetings": "Browse all {{label}}",
+    "CloudManaged": "Managed in cloud — updates arrive by sync.",
+    "TemplateLatest": "What's the latest with {{label}}?",
+    "TemplateDecided": "What did we decide about {{label}}?",
+    "TemplateWhoOwns": "Who owns {{label}}?",
+    "SearchCount_one": "{{count}} result",
+    "SearchCount_other": "{{count}} results"
+  },
+  "WikiPage": {
+    "CorrectThis": "Correct this",
+    "CorrectionPlaceholder": "What’s right?",
+    "CorrectionFailed": "Could not save — try again.",
+    "CorrectionPending": "Corrected by you — rewrite pending.",
+    "Saving": "Saving…",
+    "SubmitCorrection": "Submit correction"
   }
 }

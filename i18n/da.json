@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Ruter skærmbillede OCR til din valgte LLM-udbyder. Fra (standard): bruger altid Gemini. Falder automatisk tilbage til Gemini, hvis udbyderen ikke kan acceptere billedet.",
     "UsageReporting": "Del anonyme AI-forbrugstal",
     "UsageReportingDesc": "Kun udbyder, model og token-antal — aldrig dit indhold. Hjælper os med at holde udbyderne pålidelige.",
-    "KeyVerificationFailed": "Nøglebekræftelse mislykkedes"
+    "KeyVerificationFailed": "Nøglebekræftelse mislykkedes",
+    "ShowAllModels_one": "Vis {{count}} model",
+    "ShowAllModels_other": "Vis alle {{count}} modeller"
   },
   "AISummary": {
     "ApplyMerge": "Anvend",
@@ -534,7 +536,9 @@
         "name": "Ugentligt teammøde"
       }
     },
-    "Title": "Noteresumé"
+    "Title": "Noteresumé",
+    "Meta_one": "{{count}} optagelse · skabelon: {{tpl}}",
+    "Meta_other": "{{count}} optagelser · skabelon: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Lad modellen vælge den bedste skabelon til hvert møde. Når den er slået fra, bruges Mødereferat som standard, og der foretages ikke noget klassifikationskald.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Uploader dine {{total}} tidligere møder, så de er tilgængelige på alle enheder og på nettet…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Afvis",
-      "CompleteToast": "Alle {{total}} møder er synkroniseret — åbn dem på en hvilken som helst enhed eller på app-dev.seameet.ai."
+      "CompleteToast": "Alle {{total}} møder er synkroniseret — åbn dem på en hvilken som helst enhed eller på app-dev.seameet.ai.",
+      "TextDone_one": "{{count}} note og wiki-side synkroniseret.",
+      "TextDone_other": "{{count}} noter og wiki-sider synkroniseret."
     },
     "Status": {
       "Synced": "Synkroniseret til skyen",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Kunne ikke indlæse denne optagelse fra skyen. Tjek din forbindelse, og prøv igen.",
       "Downloaded": "Gemt på denne enhed",
       "SyncToLocal": "Synkronisér lokalt",
-      "SyncWithSyncPro": "Synkronisér denne optagelse til skyen med Sync Pro"
+      "SyncWithSyncPro": "Synkronisér denne optagelse til skyen med Sync Pro",
+      "BackUpQueued_one": "{{count}} fil i kø til cloud-backup",
+      "BackUpQueued_other": "{{count}} filer i kø til cloud-backup"
     },
     "Trash": {
       "Title": "Papirkurv",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Vil du virkelig slette?",
       "EmptyTrash": "Tøm papirkurven",
       "ReallyEmpty": "Vil du virkelig tømme?",
-      "ActionFailed": "Det virkede ikke. Prøv igen."
+      "ActionFailed": "Det virkede ikke. Prøv igen.",
+      "Summary_one": "{{count}} i papirkurven · {{size}}",
+      "Summary_other": "{{count}} i papirkurven · {{size}}"
     },
     "Usage": {
       "TabTitle": "Forbrug",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Slet overalt",
       "CloudFailed": "Kunne ikke fjerne fra skyen. Prøv igen.",
       "CloudBatchFailed": "Kunne ikke fjerne {{count}} af {{total}} fra skyen. Prøv igen.",
-      "DeviceHintShared": "Flytter den downloadede kopi til papirkurven. Den forbliver tilgængelig i \"Delt med mig\"."
+      "DeviceHintShared": "Flytter den downloadede kopi til papirkurven. Den forbliver tilgængelig i \"Delt med mig\".",
+      "CloudBatchFailed_one": "Kunne ikke fjerne {{count}} af {{total}} fra skyen. Prøv igen.",
+      "CloudBatchFailed_other": "Kunne ikke fjerne {{count}} af {{total}} fra skyen. Prøv igen.",
+      "TitleMany_one": "Slet {{count}} optagelse?",
+      "TitleMany_other": "Slet {{count}} optagelser?"
     },
     "FreeExpiry": {
       "Warning": "Disse optagelser slettes om {{days}} dage — behold dem for evigt.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Erstat alle",
     "ReplacePlaceholder": "Erstat",
     "WikiAiReadonly": "AI-sektionen er skrivebeskyttet — erstatning virker kun i brugersektionen",
-    "WikiCounterSplit": "{{userCount}} i note + {{aiCount}} i AI-sektion"
+    "WikiCounterSplit": "{{userCount}} i note + {{aiCount}} i AI-sektion",
+    "ConfirmReplaceAll_one": "Erstat {{count}} match?",
+    "ConfirmReplaceAll_other": "Erstat alle {{count}} match?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Lyd Flashback",
@@ -2105,7 +2121,17 @@
     "Video": "Video",
     "SubTabs": "Filvisninger",
     "MyFiles": "Mine filer",
-    "SharedWithMe": "Delt med mig"
+    "SharedWithMe": "Delt med mig",
+    "BatchDeletePartial_one": "{{count}} af {{total}} filer slettet",
+    "BatchDeletePartial_other": "{{count}} af {{total}} filer slettet",
+    "ConfirmBatchDelete_one": "Slet {{count}} filer?",
+    "ConfirmBatchDelete_other": "Slet {{count}} filer?",
+    "ExportAllFailed_one": "Kunne ikke eksportere {{count}} filer",
+    "ExportAllFailed_other": "Kunne ikke eksportere {{count}} filer",
+    "ExportSuccess_one": "{{count}} filer eksporteret",
+    "ExportSuccess_other": "{{count}} filer eksporteret",
+    "Selected_one": "{{count}} valgt",
+    "Selected_other": "{{count}} valgt"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Handlingspunkter",
@@ -2396,7 +2422,9 @@
     "Title": "Noter",
     "Unpin": "Frigør",
     "UpdateWikiFromNote": "Opdater wiki ud fra denne note",
-    "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}"
+    "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}",
+    "RecordingInFile": "Optagelse knyttet til denne note",
+    "RecordingInFolder": "Optagelse i denne mappe"
   },
   "NotesView": {
     "CollapseSidebar": "Skjul note-sidebjælke",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Sidst synkroniseret",
       "LastSync": "Sidste synkronisering",
       "RetrySync": "Prøv synkronisering igen",
-      "IntervalMinutes": "{{count}} min"
+      "IntervalMinutes": "{{count}} min",
+      "IntervalMinutes_one": "{{count}} min",
+      "IntervalMinutes_other": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Ændringer til noter og wiki synkroniseres automatisk.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "for {{count}} dage siden",
       "HoursAgo": "for {{count}} t siden",
       "JustNow": "Lige nu",
-      "MinutesAgo": "for {{count}} min siden"
+      "MinutesAgo": "for {{count}} min siden",
+      "DaysAgo_one": "for {{count}} dage siden",
+      "DaysAgo_other": "for {{count}} dage siden",
+      "HoursAgo_one": "for {{count}} t siden",
+      "HoursAgo_other": "for {{count}} t siden",
+      "MinutesAgo_one": "for {{count}} min siden",
+      "MinutesAgo_other": "for {{count}} min siden"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Synkroniserer...",
     "Timeout": "Synkronisering udløb",
     "TokenExpired": "Genautoriser",
-    "Unpushed": "{{count}} ikke skubbet"
+    "Unpushed": "{{count}} ikke skubbet",
+    "Unpushed_one": "{{count}} ikke skubbet",
+    "Unpushed_other": "{{count}} ikke skubbet"
   },
   "Tabs": {
     "Close": "Luk",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Fortryd",
     "Toast": "Omdøbt; opdaterede {{count}} reference(r)",
-    "ToastNoRefs": "Omdøbt"
+    "ToastNoRefs": "Omdøbt",
+    "Toast_one": "Omdøbt; opdaterede {{count}} reference(r)",
+    "Toast_other": "Omdøbt; opdaterede {{count}} reference(r)"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Installer og afslut",
@@ -3467,7 +3507,11 @@
       "Resume": "Genoptag",
       "ResumeAvailable": "Et tidligere wiki-build blev afbrudt ved {{current}}/{{total}}. Genoptag?",
       "ToastMessage": "{{count}} nye noter registreret. Byg wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} ny note siden sidste build",
+      "BannerMessage_other": "{{count}} nye noter siden sidste build",
+      "ToastMessage_one": "{{count}} ny note fundet. Byg wiki?",
+      "ToastMessage_other": "{{count}} nye noter fundet. Byg wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Dine noter",
     "UserSectionPlaceholder": "Tilføj dine egne noter…",
-    "UserSectionTitle": "Dine noter"
+    "UserSectionTitle": "Dine noter",
+    "RefreshFromSourcesHint_one": "Klik for at opdatere AI-sektionen fra {{count}} kildenote. Skift+klik for også at genindlæse kildenoterne.",
+    "RefreshFromSourcesHint_other": "Klik for at opdatere AI-sektionen fra {{count}} kildenoter. Skift+klik for også at genindlæse kildenoterne."
   },
   "WikiFeature": {
     "SettingsDesc": "Opbygger en vidensbase af enheder, personer og emner fra dine noter og optagelser. Fra som standard.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Vælg hvilken note der skal åbnes",
     "SuggestEmpty": "Ingen matchende noter eller wiki-sider",
     "SyncContextMenu": "Synk wiki",
-    "SyncToGenerate": "Synk wiki for at generere denne side"
+    "SyncToGenerate": "Synk wiki for at generere denne side",
+    "Collision_one": "{{count}} note deler basisnavnet {{name}}",
+    "Collision_other": "{{count}} noter deler basisnavnet {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Vælg et vindue til vinduesoptagelser.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Bruger du allerede Claude Code, Cursor eller Codex? Indsæt dette, så sætter den sig selv op.",
     "ManualInstallTitle": "Eller tilføj den manuelt",
     "AgentCopy": "Kopiér prompt"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Søg i din Hukommelse",
+    "SearchAria": "Søg i din Hukommelse",
+    "Meetings": "Møder",
+    "NoMatch": "Intet i din Hukommelse matcher.",
+    "DistilledFrom": "Destilleret fra {{n}} {{label}}",
+    "PeopleCount": "{{n}} personer",
+    "OrgCount": "{{n}} organisationer",
+    "TopicCount": "{{n}} emner",
+    "Building": "Din Hukommelse destilleres stadig — færdige sider kan allerede åbnes.",
+    "TopOfMind": "I fokus",
+    "UpdatedThisWeek": "Opdateret i denne uge",
+    "NoUpdates": "Ingen opdateringer i denne uge.",
+    "BrowseMeetings": "Gennemse alle {{label}}",
+    "CloudManaged": "Administreret i skyen — opdateringer kommer via synkronisering.",
+    "TemplateLatest": "Hvad er nyt om {{label}}?",
+    "TemplateDecided": "Hvad besluttede vi om {{label}}?",
+    "TemplateWhoOwns": "Hvem har ansvaret for {{label}}?",
+    "SearchCount_one": "{{count}} resultat",
+    "SearchCount_other": "{{count}} resultater"
+  },
+  "WikiPage": {
+    "CorrectThis": "Ret dette",
+    "CorrectionPlaceholder": "Hvad er rigtigt?",
+    "CorrectionFailed": "Kunne ikke gemme — prøv igen.",
+    "CorrectionPending": "Rettet af dig — omskrivning afventer.",
+    "Saving": "Gemmer…",
+    "SubmitCorrection": "Indsend rettelse"
   }
 }

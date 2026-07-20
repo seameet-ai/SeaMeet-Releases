@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "يوجه التعرف الضوئي على الحروف في لقطات الشاشة إلى مزود LLM الذي اخترته. إيقاف (افتراضي): يستخدم دائمًا Gemini. يتحول تلقائيًا إلى Gemini إذا لم يستطع المزود قبول الصورة.",
     "UsageReporting": "مشاركة إحصاءات استخدام الذكاء الاصطناعي بشكل مجهول",
     "UsageReportingDesc": "المزوّد والنموذج وعدد الرموز فقط — وليس محتواك أبدًا. يساعدنا في الحفاظ على موثوقية المزوّدين.",
-    "KeyVerificationFailed": "فشل التحقق من المفتاح"
+    "KeyVerificationFailed": "فشل التحقق من المفتاح",
+    "ShowAllModels_one": "عرض {{count}} نموذج",
+    "ShowAllModels_other": "عرض كل النماذج ({{count}})"
   },
   "AISummary": {
     "ApplyMerge": "تطبيق",
@@ -534,7 +536,9 @@
         "name": "اجتماع أسبوعي للفريق"
       }
     },
-    "Title": "ملخص الملاحظة"
+    "Title": "ملخص الملاحظة",
+    "Meta_one": "{{count}} تسجيل · القالب: {{tpl}}",
+    "Meta_other": "{{count}} تسجيلات · القالب: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "دع النموذج يختار أفضل قالب لكل اجتماع. عند الإيقاف، يتم استخدام محضر الاجتماع بشكل افتراضي ولا يتم إجراء أي استدعاء للمصنف.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "جارٍ رفع اجتماعاتك السابقة البالغة {{total}} لتكون متاحة على كل جهاز وعلى الويب…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "إغلاق",
-      "CompleteToast": "تمت مزامنة جميع الاجتماعات البالغة {{total}} — افتحها على أي جهاز أو على app-dev.seameet.ai."
+      "CompleteToast": "تمت مزامنة جميع الاجتماعات البالغة {{total}} — افتحها على أي جهاز أو على app-dev.seameet.ai.",
+      "TextDone_one": "تمت مزامنة {{count}} ملاحظة وصفحة wiki.",
+      "TextDone_other": "تمت مزامنة {{count}} ملاحظات وصفحات wiki."
     },
     "Status": {
       "Synced": "تمت المزامنة مع السحابة",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "تعذر تحميل هذا التسجيل من السحابة. تحقق من اتصالك وحاول مرة أخرى.",
       "Downloaded": "تم الحفظ على هذا الجهاز",
       "SyncToLocal": "مزامنة محليًا",
-      "SyncWithSyncPro": "مزامنة هذا التسجيل إلى السحابة باستخدام Sync Pro"
+      "SyncWithSyncPro": "مزامنة هذا التسجيل إلى السحابة باستخدام Sync Pro",
+      "BackUpQueued_one": "{{count}} ملف في قائمة انتظار النسخ الاحتياطي السحابي",
+      "BackUpQueued_other": "{{count}} ملفات في قائمة انتظار النسخ الاحتياطي السحابي"
     },
     "Trash": {
       "Title": "سلة المهملات",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "هل تريد الحذف فعلًا؟",
       "EmptyTrash": "إفراغ سلة المهملات",
       "ReallyEmpty": "هل تريد الإفراغ فعلًا؟",
-      "ActionFailed": "لم ينجح ذلك. يرجى المحاولة مرة أخرى."
+      "ActionFailed": "لم ينجح ذلك. يرجى المحاولة مرة أخرى.",
+      "Summary_one": "{{count}} في المهملات · {{size}}",
+      "Summary_other": "{{count}} في المهملات · {{size}}"
     },
     "Usage": {
       "TabTitle": "الاستخدام",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "حذف من كل مكان",
       "CloudFailed": "تعذرت الإزالة من السحابة. يرجى المحاولة مرة أخرى.",
       "CloudBatchFailed": "لم نتمكن من إزالة {{count}} من {{total}} من السحابة. يرجى المحاولة مرة أخرى.",
-      "DeviceHintShared": "ينقل النسخة التي تم تنزيلها إلى سلة المهملات. تظل متاحة في \"تمت مشاركتها معي\"."
+      "DeviceHintShared": "ينقل النسخة التي تم تنزيلها إلى سلة المهملات. تظل متاحة في \"تمت مشاركتها معي\".",
+      "CloudBatchFailed_one": "تعذّر إزالة {{count}} من {{total}} من السحابة. حاول مرة أخرى.",
+      "CloudBatchFailed_other": "تعذّر إزالة {{count}} من {{total}} من السحابة. حاول مرة أخرى.",
+      "TitleMany_one": "حذف {{count}} تسجيل؟",
+      "TitleMany_other": "حذف {{count}} تسجيلات؟"
     },
     "FreeExpiry": {
       "Warning": "سيتم حذف هذه التسجيلات خلال {{days}} يومًا — احتفظ بها إلى الأبد.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "استبدال الكل",
     "ReplacePlaceholder": "استبدال",
     "WikiAiReadonly": "قسم الذكاء الاصطناعي للقراءة فقط — يعمل الاستبدال في قسم المستخدم فقط",
-    "WikiCounterSplit": "{{userCount}} في الملاحظة + {{aiCount}} في قسم الذكاء الاصطناعي"
+    "WikiCounterSplit": "{{userCount}} في الملاحظة + {{aiCount}} في قسم الذكاء الاصطناعي",
+    "ConfirmReplaceAll_one": "استبدال {{count}} تطابق؟",
+    "ConfirmReplaceAll_other": "استبدال كل التطابقات ({{count}})؟"
   },
   "FlashbackControls": {
     "AudioFlashback": "العودة للماضي الصوتية",
@@ -2105,7 +2121,17 @@
     "Video": "فيديو",
     "SubTabs": "طرق عرض الملفات",
     "MyFiles": "ملفاتي",
-    "SharedWithMe": "مشارك معي"
+    "SharedWithMe": "مشارك معي",
+    "BatchDeletePartial_one": "تم حذف {{count}} من {{total}} ملفات",
+    "BatchDeletePartial_other": "تم حذف {{count}} من {{total}} ملفات",
+    "ConfirmBatchDelete_one": "حذف {{count}} ملف؟",
+    "ConfirmBatchDelete_other": "حذف {{count}} ملفات؟",
+    "ExportAllFailed_one": "تعذّر تصدير {{count}} ملف",
+    "ExportAllFailed_other": "تعذّر تصدير {{count}} ملفات",
+    "ExportSuccess_one": "تم تصدير {{count}} ملف",
+    "ExportSuccess_other": "تم تصدير {{count}} ملفات",
+    "Selected_one": "{{count}} محدد",
+    "Selected_other": "{{count}} محدد"
   },
   "MeetSeasaltAi": {
     "ActionItems": "عناصر الإجراء",
@@ -2396,7 +2422,9 @@
     "Title": "الملاحظات",
     "Unpin": "إلغاء التثبيت",
     "UpdateWikiFromNote": "تحديث الويكي من هذه الملاحظة",
-    "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}"
+    "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}",
+    "RecordingInFile": "تسجيل مرفق بهذه الملاحظة",
+    "RecordingInFolder": "تسجيل داخل هذا المجلد"
   },
   "NotesView": {
     "CollapseSidebar": "إخفاء الشريط الجانبي للملاحظات",
@@ -3133,7 +3161,9 @@
       "LastCommit": "آخر مزامنة",
       "LastSync": "آخر مزامنة",
       "RetrySync": "إعادة محاولة المزامنة",
-      "IntervalMinutes": "{{count}} دقيقة"
+      "IntervalMinutes": "{{count}} دقيقة",
+      "IntervalMinutes_one": "{{count}} دقيقة",
+      "IntervalMinutes_other": "{{count}} دقيقة"
     },
     "GitAutoCommit": {
       "Desc": "يتم مزامنة التغييرات على الملاحظات والويكي تلقائيًا.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "منذ {{count}} يوم",
       "HoursAgo": "منذ {{count}} ساعة",
       "JustNow": "الآن",
-      "MinutesAgo": "منذ {{count}} دقيقة"
+      "MinutesAgo": "منذ {{count}} دقيقة",
+      "DaysAgo_one": "منذ {{count}} يوم",
+      "DaysAgo_other": "منذ {{count}} يوم",
+      "HoursAgo_one": "منذ {{count}} ساعة",
+      "HoursAgo_other": "منذ {{count}} ساعة",
+      "MinutesAgo_one": "منذ {{count}} دقيقة",
+      "MinutesAgo_other": "منذ {{count}} دقيقة"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "جارٍ المزامنة...",
     "Timeout": "انتهت مهلة المزامنة",
     "TokenExpired": "إعادة التفويض",
-    "Unpushed": "{{count}} غير مدفوعة"
+    "Unpushed": "{{count}} غير مدفوعة",
+    "Unpushed_one": "{{count}} غير مدفوعة",
+    "Unpushed_other": "{{count}} غير مدفوعة"
   },
   "Tabs": {
     "Close": "إغلاق",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "تراجع",
     "Toast": "تمت إعادة التسمية؛ تم تحديث {{count}} مرجع/مراجع",
-    "ToastNoRefs": "تمت إعادة التسمية"
+    "ToastNoRefs": "تمت إعادة التسمية",
+    "Toast_one": "تمت إعادة التسمية؛ تم تحديث {{count}} مرجع",
+    "Toast_other": "تمت إعادة التسمية؛ تم تحديث {{count}} مرجع"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "تثبيت وخرج",
@@ -3467,7 +3507,11 @@
       "Resume": "استئناف",
       "ResumeAvailable": "تم إيقاف إنشاء ويكي سابق عند {{current}}/{{total}}. استئناف؟",
       "ToastMessage": "تم اكتشاف {{count}} ملاحظة جديدة. إنشاء الويكي؟",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} ملاحظة جديدة منذ آخر إنشاء",
+      "BannerMessage_other": "{{count}} ملاحظات جديدة منذ آخر إنشاء",
+      "ToastMessage_one": "تم اكتشاف {{count}} ملاحظة جديدة. إنشاء wiki؟",
+      "ToastMessage_other": "تم اكتشاف {{count}} ملاحظات جديدة. إنشاء wiki؟"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "ملاحظاتك",
     "UserSectionPlaceholder": "أضف ملاحظاتك الخاصة…",
-    "UserSectionTitle": "ملاحظاتك"
+    "UserSectionTitle": "ملاحظاتك",
+    "RefreshFromSourcesHint_one": "انقر لتحديث قسم الذكاء الاصطناعي من {{count}} ملاحظة مصدر. Shift+نقر لإعادة قراءة الملاحظات المصدر أيضًا.",
+    "RefreshFromSourcesHint_other": "انقر لتحديث قسم الذكاء الاصطناعي من {{count}} ملاحظة مصدر. Shift+نقر لإعادة قراءة الملاحظات المصدر أيضًا."
   },
   "WikiFeature": {
     "SettingsDesc": "يبني قاعدة معرفية للكيانات والأشخاص والموضوعات من ملاحظاتك وتسجيلاتك. إيقاف بشكل افتراضي.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "اختر الملاحظة التي تريد فتحها",
     "SuggestEmpty": "لا توجد ملاحظات أو صفحات wiki مطابقة",
     "SyncContextMenu": "مزامنة الويكي",
-    "SyncToGenerate": "زامن الويكي لإنشاء هذه الصفحة"
+    "SyncToGenerate": "زامن الويكي لإنشاء هذه الصفحة",
+    "Collision_one": "{{count}} ملاحظة تشترك في الاسم الأساسي {{name}}",
+    "Collision_other": "{{count}} ملاحظات تشترك في الاسم الأساسي {{name}}"
   },
   "WindowPicker": {
     "Instruction": "اختر نافذة لتسجيلها لالتقاط نوافذ الشاشة",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "هل تستخدم بالفعل Claude Code أو Cursor أو Codex؟ الصق هذا وسيُعدّ نفسه تلقائيًا.",
     "ManualInstallTitle": "أو أضِفه يدويًا",
     "AgentCopy": "نسخ الموجّه"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "ابحث في ذاكرتك",
+    "SearchAria": "ابحث في ذاكرتك",
+    "Meetings": "الاجتماعات",
+    "NoMatch": "لا يوجد شيء مطابق في ذاكرتك.",
+    "DistilledFrom": "مستخلص من {{n}} {{label}}",
+    "PeopleCount": "{{n}} أشخاص",
+    "OrgCount": "{{n}} منظمات",
+    "TopicCount": "{{n}} مواضيع",
+    "Building": "ما زالت ذاكرتك قيد الاستخلاص — الصفحات المكتملة قابلة للفتح الآن.",
+    "TopOfMind": "الأبرز",
+    "UpdatedThisWeek": "تم التحديث هذا الأسبوع",
+    "NoUpdates": "لا تحديثات هذا الأسبوع.",
+    "BrowseMeetings": "تصفح كل {{label}}",
+    "CloudManaged": "يُدار في السحابة — تصل التحديثات عبر المزامنة.",
+    "TemplateLatest": "ما آخر مستجدات {{label}}؟",
+    "TemplateDecided": "ماذا قررنا بشأن {{label}}؟",
+    "TemplateWhoOwns": "من المسؤول عن {{label}}؟",
+    "SearchCount_one": "{{count}} نتيجة",
+    "SearchCount_other": "{{count}} نتائج"
+  },
+  "WikiPage": {
+    "CorrectThis": "صحّح هذا",
+    "CorrectionPlaceholder": "ما هو الصحيح؟",
+    "CorrectionFailed": "تعذّر الحفظ — حاول مرة أخرى.",
+    "CorrectionPending": "صحّحته أنت — إعادة الكتابة قيد الانتظار.",
+    "Saving": "جارٍ الحفظ…",
+    "SubmitCorrection": "إرسال التصحيح"
   }
 }

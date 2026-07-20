@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Chuyển hướng OCR ảnh chụp màn hình đến nhà cung cấp LLM bạn chọn. Tắt (mặc định): luôn sử dụng Gemini. Tự động chuyển sang Gemini nếu nhà cung cấp không thể nhận ảnh.",
     "UsageReporting": "Chia sẻ số liệu sử dụng AI ẩn danh",
     "UsageReportingDesc": "Chỉ nhà cung cấp, mô hình và số token — không bao giờ là nội dung của bạn. Giúp chúng tôi giữ các nhà cung cấp ổn định.",
-    "KeyVerificationFailed": "Xác minh khóa không thành công"
+    "KeyVerificationFailed": "Xác minh khóa không thành công",
+    "ShowAllModels_one": "Hiển thị tất cả {{count}} mô hình",
+    "ShowAllModels_other": "Hiển thị tất cả {{count}} mô hình"
   },
   "AISummary": {
     "ApplyMerge": "Áp dụng",
@@ -534,7 +536,9 @@
         "name": "Họp nhóm hàng tuần"
       }
     },
-    "Title": "Tóm tắt ghi chú"
+    "Title": "Tóm tắt ghi chú",
+    "Meta_one": "{{count}} bản ghi · mẫu: {{tpl}}",
+    "Meta_other": "{{count}} bản ghi · mẫu: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Cho phép mô hình chọn mẫu tốt nhất cho mỗi cuộc họp. Khi tắt, Mẫu biên bản cuộc họp được sử dụng mặc định và không gọi bộ phân loại.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Đang tải lên {{total}} cuộc họp trước đây của bạn để chúng có sẵn trên mọi thiết bị và trên web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Bỏ qua",
-      "CompleteToast": "Đã đồng bộ toàn bộ {{total}} cuộc họp — mở chúng trên bất kỳ thiết bị nào hoặc tại app-dev.seameet.ai."
+      "CompleteToast": "Đã đồng bộ toàn bộ {{total}} cuộc họp — mở chúng trên bất kỳ thiết bị nào hoặc tại app-dev.seameet.ai.",
+      "TextDone_one": "Đã đồng bộ {{count}} ghi chú & trang wiki.",
+      "TextDone_other": "Đã đồng bộ {{count}} ghi chú & trang wiki."
     },
     "Status": {
       "Synced": "Đã đồng bộ lên đám mây",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Không thể tải bản ghi này từ đám mây. Kiểm tra kết nối của bạn và thử lại.",
       "Downloaded": "Đã lưu vào thiết bị này",
       "SyncToLocal": "Đồng bộ về máy",
-      "SyncWithSyncPro": "Đồng bộ bản ghi này lên đám mây bằng Sync Pro"
+      "SyncWithSyncPro": "Đồng bộ bản ghi này lên đám mây bằng Sync Pro",
+      "BackUpQueued_one": "{{count}} tệp đang chờ sao lưu lên đám mây",
+      "BackUpQueued_other": "{{count}} tệp đang chờ sao lưu lên đám mây"
     },
     "Trash": {
       "Title": "Thùng rác",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Bạn chắc chắn muốn xóa?",
       "EmptyTrash": "Dọn sạch thùng rác",
       "ReallyEmpty": "Bạn chắc chắn muốn dọn sạch?",
-      "ActionFailed": "Thao tác không thành công. Vui lòng thử lại."
+      "ActionFailed": "Thao tác không thành công. Vui lòng thử lại.",
+      "Summary_one": "{{count}} trong thùng rác · {{size}}",
+      "Summary_other": "{{count}} trong thùng rác · {{size}}"
     },
     "Usage": {
       "TabTitle": "Mức sử dụng",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Xóa ở mọi nơi",
       "CloudFailed": "Không thể xóa khỏi đám mây. Vui lòng thử lại.",
       "CloudBatchFailed": "Không thể xóa {{count}} trên {{total}} khỏi đám mây. Vui lòng thử lại.",
-      "DeviceHintShared": "Chuyển bản đã tải xuống vào Thùng rác. Vẫn có trong \"Được chia sẻ với tôi\"."
+      "DeviceHintShared": "Chuyển bản đã tải xuống vào Thùng rác. Vẫn có trong \"Được chia sẻ với tôi\".",
+      "CloudBatchFailed_one": "Không thể xóa {{count}} trên {{total}} khỏi đám mây. Vui lòng thử lại.",
+      "CloudBatchFailed_other": "Không thể xóa {{count}} trên {{total}} khỏi đám mây. Vui lòng thử lại.",
+      "TitleMany_one": "Xóa {{count}} bản ghi?",
+      "TitleMany_other": "Xóa {{count}} bản ghi?"
     },
     "FreeExpiry": {
       "Warning": "Các bản ghi này sẽ bị xóa sau {{days}} ngày — hãy giữ chúng mãi mãi.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Thay thế tất cả",
     "ReplacePlaceholder": "Thay thế",
     "WikiAiReadonly": "Phần AI chỉ đọc — thay thế chỉ hoạt động ở phần của người dùng",
-    "WikiCounterSplit": "{{userCount}} trong ghi chú + {{aiCount}} trong phần AI"
+    "WikiCounterSplit": "{{userCount}} trong ghi chú + {{aiCount}} trong phần AI",
+    "ConfirmReplaceAll_one": "Thay thế tất cả {{count}} kết quả khớp?",
+    "ConfirmReplaceAll_other": "Thay thế tất cả {{count}} kết quả khớp?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Hoi tuong am thanh",
@@ -2105,7 +2121,17 @@
     "Video": "Băng hình",
     "SubTabs": "Chế độ xem tệp",
     "MyFiles": "Tệp của tôi",
-    "SharedWithMe": "Được chia sẻ với tôi"
+    "SharedWithMe": "Được chia sẻ với tôi",
+    "BatchDeletePartial_one": "Đã xóa {{count}} trên {{total}} tệp",
+    "BatchDeletePartial_other": "Đã xóa {{count}} trên {{total}} tệp",
+    "ConfirmBatchDelete_one": "Xóa {{count}} tệp?",
+    "ConfirmBatchDelete_other": "Xóa {{count}} tệp?",
+    "ExportAllFailed_one": "Không xuất được {{count}} tệp",
+    "ExportAllFailed_other": "Không xuất được {{count}} tệp",
+    "ExportSuccess_one": "Đã xuất {{count}} tệp",
+    "ExportSuccess_other": "Đã xuất {{count}} tệp",
+    "Selected_one": "Đã chọn {{count}}",
+    "Selected_other": "Đã chọn {{count}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mục hành động",
@@ -2396,7 +2422,9 @@
     "Title": "Ghi chú",
     "Unpin": "Bỏ ghim",
     "UpdateWikiFromNote": "Cập nhật wiki từ ghi chú này",
-    "WikiUpdateFailed": "Cập nhật wiki không thành công: {{error}}"
+    "WikiUpdateFailed": "Cập nhật wiki không thành công: {{error}}",
+    "RecordingInFile": "Bản ghi đính kèm ghi chú này",
+    "RecordingInFolder": "Bản ghi trong thư mục này"
   },
   "NotesView": {
     "CollapseSidebar": "Ẩn thanh bên ghi chú",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Đã đồng bộ lần cuối",
       "LastSync": "Đồng bộ cuối cùng",
       "RetrySync": "Thử đồng bộ lại",
-      "IntervalMinutes": "{{count}} phút"
+      "IntervalMinutes": "{{count}} phút",
+      "IntervalMinutes_one": "{{count}} phút",
+      "IntervalMinutes_other": "{{count}} phút"
     },
     "GitAutoCommit": {
       "Desc": "Các thay đổi trên ghi chú và wiki được tự động đồng bộ.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}} ngày trước",
       "HoursAgo": "{{count}} giờ trước",
       "JustNow": "Vừa xong",
-      "MinutesAgo": "{{count}} phút trước"
+      "MinutesAgo": "{{count}} phút trước",
+      "DaysAgo_one": "{{count}} ngày trước",
+      "DaysAgo_other": "{{count}} ngày trước",
+      "HoursAgo_one": "{{count}} giờ trước",
+      "HoursAgo_other": "{{count}} giờ trước",
+      "MinutesAgo_one": "{{count}} phút trước",
+      "MinutesAgo_other": "{{count}} phút trước"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Đang đồng bộ...",
     "Timeout": "Đồng bộ bị hết thời gian chờ",
     "TokenExpired": "Cấp quyền lại",
-    "Unpushed": "{{count}} chưa được đẩy lên"
+    "Unpushed": "{{count}} chưa được đẩy lên",
+    "Unpushed_one": "{{count}} chưa đẩy",
+    "Unpushed_other": "{{count}} chưa đẩy"
   },
   "Tabs": {
     "Close": "Đóng",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Hoàn tác",
     "Toast": "Đã đổi tên; cập nhật {{count}} tham chiếu",
-    "ToastNoRefs": "Đã đổi tên"
+    "ToastNoRefs": "Đã đổi tên",
+    "Toast_one": "Đã đổi tên; đã cập nhật {{count}} tham chiếu",
+    "Toast_other": "Đã đổi tên; đã cập nhật {{count}} tham chiếu"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Cài đặt và thoát",
@@ -3467,7 +3507,11 @@
       "Resume": "Tiếp tục",
       "ResumeAvailable": "Lần xây dựng wiki trước đã dừng tại {{current}}/{{total}}. Tiếp tục?",
       "ToastMessage": "Phát hiện {{count}} ghi chú mới. Xây dựng wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} ghi chú mới kể từ lần dựng gần nhất",
+      "BannerMessage_other": "{{count}} ghi chú mới kể từ lần dựng gần nhất",
+      "ToastMessage_one": "Đã phát hiện {{count}} ghi chú mới. Dựng wiki?",
+      "ToastMessage_other": "Đã phát hiện {{count}} ghi chú mới. Dựng wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Ghi chú của bạn",
     "UserSectionPlaceholder": "Thêm ghi chú riêng của bạn…",
-    "UserSectionTitle": "Ghi chú của bạn"
+    "UserSectionTitle": "Ghi chú của bạn",
+    "RefreshFromSourcesHint_one": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp để đọc lại cả ghi chú nguồn.",
+    "RefreshFromSourcesHint_other": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp để đọc lại cả ghi chú nguồn."
   },
   "WikiFeature": {
     "SettingsDesc": "Xây dựng cơ sở kiến thức về thực thể, người và chủ đề từ ghi chú và bản ghi của bạn. Mặc định tắt.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Chọn ghi chú để mở",
     "SuggestEmpty": "Không có ghi chú hoặc trang wiki khớp",
     "SyncContextMenu": "Đồng bộ wiki",
-    "SyncToGenerate": "Đồng bộ wiki để tạo trang này"
+    "SyncToGenerate": "Đồng bộ wiki để tạo trang này",
+    "Collision_one": "{{count}} ghi chú dùng chung tên cơ sở {{name}}",
+    "Collision_other": "{{count}} ghi chú dùng chung tên cơ sở {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Chọn cửa sổ để quay phim.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Đã dùng Claude Code, Cursor hoặc Codex? Dán nội dung này và nó sẽ tự thiết lập.",
     "ManualInstallTitle": "Hoặc thêm thủ công",
     "AgentCopy": "Sao chép lời nhắc"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Tìm trong Bộ nhớ của bạn",
+    "SearchAria": "Tìm trong Bộ nhớ của bạn",
+    "Meetings": "Cuộc họp",
+    "NoMatch": "Không có gì trong Bộ nhớ khớp với tìm kiếm.",
+    "DistilledFrom": "Chưng cất từ {{n}} {{label}}",
+    "PeopleCount": "{{n}} người",
+    "OrgCount": "{{n}} tổ chức",
+    "TopicCount": "{{n}} chủ đề",
+    "Building": "Bộ nhớ của bạn vẫn đang được chưng cất — các trang hoàn tất đã có thể mở.",
+    "TopOfMind": "Đáng chú ý",
+    "UpdatedThisWeek": "Cập nhật tuần này",
+    "NoUpdates": "Tuần này không có cập nhật.",
+    "BrowseMeetings": "Xem tất cả {{label}}",
+    "CloudManaged": "Quản lý trên đám mây — cập nhật đến qua đồng bộ.",
+    "TemplateLatest": "Có gì mới về {{label}}?",
+    "TemplateDecided": "Chúng ta đã quyết định gì về {{label}}?",
+    "TemplateWhoOwns": "Ai phụ trách {{label}}?",
+    "SearchCount_one": "{{count}} kết quả",
+    "SearchCount_other": "{{count}} kết quả"
+  },
+  "WikiPage": {
+    "CorrectThis": "Sửa lại",
+    "CorrectionPlaceholder": "Nội dung đúng là gì?",
+    "CorrectionFailed": "Không lưu được — thử lại.",
+    "CorrectionPending": "Bạn đã sửa — đang chờ viết lại.",
+    "Saving": "Đang lưu…",
+    "SubmitCorrection": "Gửi bản sửa"
   }
 }

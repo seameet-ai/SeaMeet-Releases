@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "ส่ง OCR ภาพหน้าจอไปยังผู้ให้บริการ LLM ที่คุณเลือก ปิด (ค่าเริ่มต้น): ใช้ Gemini เสมอ หากผู้ให้บริการไม่รับภาพ จะเปลี่ยนไปใช้ Gemini อัตโนมัติ",
     "UsageReporting": "แชร์จำนวนการใช้งาน AI แบบไม่ระบุตัวตน",
     "UsageReportingDesc": "เฉพาะผู้ให้บริการ โมเดล และจำนวนโทเค็นเท่านั้น — ไม่มีเนื้อหาของคุณเด็ดขาด ช่วยให้เรารักษาความน่าเชื่อถือของผู้ให้บริการ",
-    "KeyVerificationFailed": "ยืนยันคีย์ไม่สำเร็จ"
+    "KeyVerificationFailed": "ยืนยันคีย์ไม่สำเร็จ",
+    "ShowAllModels_one": "แสดงโมเดลทั้งหมด {{count}} รายการ",
+    "ShowAllModels_other": "แสดงโมเดลทั้งหมด {{count}} รายการ"
   },
   "AISummary": {
     "ApplyMerge": "นำไปใช้",
@@ -534,7 +536,9 @@
         "name": "ประชุมทีมประจำสัปดาห์"
       }
     },
-    "Title": "สรุปบันทึก"
+    "Title": "สรุปบันทึก",
+    "Meta_one": "{{count}} การบันทึก · เทมเพลต: {{tpl}}",
+    "Meta_other": "{{count}} การบันทึก · เทมเพลต: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "ให้โมเดลเลือกแม่แบบที่ดีที่สุดสำหรับแต่ละการประชุม เมื่อปิดใช้งาน จะใช้บันทึกการประชุมเป็นค่าเริ่มต้นและจะไม่มีการเรียกตัวจัดประเภท",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "กำลังอัปโหลดการประชุมที่ผ่านมา {{total}} รายการของคุณ เพื่อให้พร้อมใช้งานบนทุกอุปกรณ์และบนเว็บ…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "ปิด",
-      "CompleteToast": "ซิงค์การประชุมครบทั้ง {{total}} รายการแล้ว — เปิดได้บนทุกอุปกรณ์หรือที่ app-dev.seameet.ai"
+      "CompleteToast": "ซิงค์การประชุมครบทั้ง {{total}} รายการแล้ว — เปิดได้บนทุกอุปกรณ์หรือที่ app-dev.seameet.ai",
+      "TextDone_one": "ซิงค์ {{count}} โน้ตและหน้า wiki แล้ว",
+      "TextDone_other": "ซิงค์ {{count}} โน้ตและหน้า wiki แล้ว"
     },
     "Status": {
       "Synced": "ซิงค์ไปยังคลาวด์แล้ว",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "ไม่สามารถโหลดการบันทึกนี้จากคลาวด์ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง",
       "Downloaded": "บันทึกลงอุปกรณ์นี้แล้ว",
       "SyncToLocal": "ซิงค์ลงเครื่อง",
-      "SyncWithSyncPro": "ซิงก์การบันทึกนี้ไปยังคลาวด์ด้วย Sync Pro"
+      "SyncWithSyncPro": "ซิงก์การบันทึกนี้ไปยังคลาวด์ด้วย Sync Pro",
+      "BackUpQueued_one": "{{count}} ไฟล์อยู่ในคิวสำหรับสำรองข้อมูลบนคลาวด์",
+      "BackUpQueued_other": "{{count}} ไฟล์อยู่ในคิวสำหรับสำรองข้อมูลบนคลาวด์"
     },
     "Trash": {
       "Title": "ถังขยะ",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "ยืนยันการลบ?",
       "EmptyTrash": "ล้างถังขยะ",
       "ReallyEmpty": "ยืนยันการล้าง?",
-      "ActionFailed": "ดำเนินการไม่สำเร็จ โปรดลองอีกครั้ง"
+      "ActionFailed": "ดำเนินการไม่สำเร็จ โปรดลองอีกครั้ง",
+      "Summary_one": "{{count}} ในถังขยะ · {{size}}",
+      "Summary_other": "{{count}} ในถังขยะ · {{size}}"
     },
     "Usage": {
       "TabTitle": "การใช้งาน",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "ลบทุกที่",
       "CloudFailed": "ไม่สามารถนำออกจากคลาวด์ได้ โปรดลองอีกครั้ง",
       "CloudBatchFailed": "ไม่สามารถลบ {{count}} จาก {{total}} จากคลาวด์ได้ กรุณาลองอีกครั้ง",
-      "DeviceHintShared": "ย้ายสำเนาที่ดาวน์โหลดไปยังถังขยะ ยังคงใช้งานได้ใน \"แชร์กับฉัน\""
+      "DeviceHintShared": "ย้ายสำเนาที่ดาวน์โหลดไปยังถังขยะ ยังคงใช้งานได้ใน \"แชร์กับฉัน\"",
+      "CloudBatchFailed_one": "ไม่สามารถลบ {{count}} จาก {{total}} ออกจากคลาวด์ได้ โปรดลองอีกครั้ง",
+      "CloudBatchFailed_other": "ไม่สามารถลบ {{count}} จาก {{total}} ออกจากคลาวด์ได้ โปรดลองอีกครั้ง",
+      "TitleMany_one": "ลบ {{count}} การบันทึกหรือไม่?",
+      "TitleMany_other": "ลบ {{count}} การบันทึกหรือไม่?"
     },
     "FreeExpiry": {
       "Warning": "การบันทึกเหล่านี้จะถูกลบใน {{days}} วัน — เก็บไว้ตลอดไป",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "แทนที่ทั้งหมด",
     "ReplacePlaceholder": "แทนที่",
     "WikiAiReadonly": "ส่วน AI อ่านอย่างเดียว — การแทนที่ใช้ได้เฉพาะในส่วนของผู้ใช้",
-    "WikiCounterSplit": "{{userCount}} ในโน้ต + {{aiCount}} ในส่วน AI"
+    "WikiCounterSplit": "{{userCount}} ในโน้ต + {{aiCount}} ในส่วน AI",
+    "ConfirmReplaceAll_one": "แทนที่ทั้งหมด {{count}} รายการที่ตรงกันหรือไม่?",
+    "ConfirmReplaceAll_other": "แทนที่ทั้งหมด {{count}} รายการที่ตรงกันหรือไม่?"
   },
   "FlashbackControls": {
     "AudioFlashback": "การถอดเสียงจากภาพย้อนความทรงจำ",
@@ -2105,7 +2121,17 @@
     "Video": "วิดีโอ",
     "SubTabs": "มุมมองไฟล์",
     "MyFiles": "ไฟล์ของฉัน",
-    "SharedWithMe": "แชร์กับฉัน"
+    "SharedWithMe": "แชร์กับฉัน",
+    "BatchDeletePartial_one": "ลบ {{count}} จาก {{total}} ไฟล์แล้ว",
+    "BatchDeletePartial_other": "ลบ {{count}} จาก {{total}} ไฟล์แล้ว",
+    "ConfirmBatchDelete_one": "ลบ {{count}} ไฟล์หรือไม่?",
+    "ConfirmBatchDelete_other": "ลบ {{count}} ไฟล์หรือไม่?",
+    "ExportAllFailed_one": "ส่งออก {{count}} ไฟล์ไม่สำเร็จ",
+    "ExportAllFailed_other": "ส่งออก {{count}} ไฟล์ไม่สำเร็จ",
+    "ExportSuccess_one": "ส่งออก {{count}} ไฟล์แล้ว",
+    "ExportSuccess_other": "ส่งออก {{count}} ไฟล์แล้ว",
+    "Selected_one": "เลือก {{count}} รายการ",
+    "Selected_other": "เลือก {{count}} รายการ"
   },
   "MeetSeasaltAi": {
     "ActionItems": "รายการการดำเนินการ",
@@ -2396,7 +2422,9 @@
     "Title": "บันทึก",
     "Unpin": "เลิกปักหมุด",
     "UpdateWikiFromNote": "อัปเดตวิกิจากบันทึกนี้",
-    "WikiUpdateFailed": "อัปเดตวิกิไม่สำเร็จ: {{error}}"
+    "WikiUpdateFailed": "อัปเดตวิกิไม่สำเร็จ: {{error}}",
+    "RecordingInFile": "การบันทึกที่แนบกับโน้ตนี้",
+    "RecordingInFolder": "การบันทึกในโฟลเดอร์นี้"
   },
   "NotesView": {
     "CollapseSidebar": "ซ่อนแถบด้านข้างบันทึก",
@@ -3133,7 +3161,9 @@
       "LastCommit": "ซิงค์ล่าสุด",
       "LastSync": "ซิงค์ล่าสุด",
       "RetrySync": "ลองซิงค์อีกครั้ง",
-      "IntervalMinutes": "{{count}} นาที"
+      "IntervalMinutes": "{{count}} นาที",
+      "IntervalMinutes_one": "{{count}} นาที",
+      "IntervalMinutes_other": "{{count}} นาที"
     },
     "GitAutoCommit": {
       "Desc": "การเปลี่ยนแปลงในบันทึกและวิกิจะถูกซิงค์โดยอัตโนมัติ",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}} วันที่แล้ว",
       "HoursAgo": "{{count}} ชั่วโมงที่แล้ว",
       "JustNow": "เมื่อสักครู่",
-      "MinutesAgo": "{{count}} นาทีที่แล้ว"
+      "MinutesAgo": "{{count}} นาทีที่แล้ว",
+      "DaysAgo_one": "{{count}} วันที่แล้ว",
+      "DaysAgo_other": "{{count}} วันที่แล้ว",
+      "HoursAgo_one": "{{count}} ชม.ที่แล้ว",
+      "HoursAgo_other": "{{count}} ชม.ที่แล้ว",
+      "MinutesAgo_one": "{{count}} นาทีที่แล้ว",
+      "MinutesAgo_other": "{{count}} นาทีที่แล้ว"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "กำลังซิงค์...",
     "Timeout": "การซิงค์หมดเวลา",
     "TokenExpired": "อนุญาตใหม่",
-    "Unpushed": "{{count}} รายการที่ยังไม่ได้ส่ง"
+    "Unpushed": "{{count}} รายการที่ยังไม่ได้ส่ง",
+    "Unpushed_one": "{{count}} ยังไม่ได้พุช",
+    "Unpushed_other": "{{count}} ยังไม่ได้พุช"
   },
   "Tabs": {
     "Close": "ปิด",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "เลิกทำ",
     "Toast": "เปลี่ยนชื่อแล้ว; ปรับปรุงการอ้างอิง {{count}} รายการ",
-    "ToastNoRefs": "เปลี่ยนชื่อแล้ว"
+    "ToastNoRefs": "เปลี่ยนชื่อแล้ว",
+    "Toast_one": "เปลี่ยนชื่อแล้ว อัปเดต {{count}} การอ้างอิง",
+    "Toast_other": "เปลี่ยนชื่อแล้ว อัปเดต {{count}} การอ้างอิง"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "ติดตั้งและออกจากแอป",
@@ -3467,7 +3507,11 @@
       "Resume": "ดำเนินการต่อ",
       "ResumeAvailable": "การสร้างวิกิครั้งก่อนถูกหยุดที่ {{current}}/{{total}} ดำเนินการต่อ?",
       "ToastMessage": "ตรวจพบบันทึกใหม่ {{count}} รายการ สร้างวิกิ?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} โน้ตใหม่ตั้งแต่การสร้างครั้งล่าสุด",
+      "BannerMessage_other": "{{count}} โน้ตใหม่ตั้งแต่การสร้างครั้งล่าสุด",
+      "ToastMessage_one": "ตรวจพบ {{count}} โน้ตใหม่ สร้าง wiki หรือไม่?",
+      "ToastMessage_other": "ตรวจพบ {{count}} โน้ตใหม่ สร้าง wiki หรือไม่?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "บันทึกของคุณ",
     "UserSectionPlaceholder": "เพิ่มบันทึกส่วนตัว…",
-    "UserSectionTitle": "บันทึกของคุณ"
+    "UserSectionTitle": "บันทึกของคุณ",
+    "RefreshFromSourcesHint_one": "คลิกเพื่อรีเฟรชส่วน AI จาก {{count}} โน้ตต้นทาง Shift+คลิกเพื่ออ่านโน้ตต้นทางซ้ำด้วย",
+    "RefreshFromSourcesHint_other": "คลิกเพื่อรีเฟรชส่วน AI จาก {{count}} โน้ตต้นทาง Shift+คลิกเพื่ออ่านโน้ตต้นทางซ้ำด้วย"
   },
   "WikiFeature": {
     "SettingsDesc": "สร้างฐานความรู้ของเอนทิตี ผู้คน และหัวข้อจากบันทึกย่อและการบันทึกของคุณ ปิดโดยค่าเริ่มต้น",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "เลือกโน้ตที่จะเปิด",
     "SuggestEmpty": "ไม่มีโน้ตหรือหน้า wiki ที่ตรงกัน",
     "SyncContextMenu": "ซิงค์วิกิ",
-    "SyncToGenerate": "ซิงค์วิกิเพื่อสร้างหน้านี้"
+    "SyncToGenerate": "ซิงค์วิกิเพื่อสร้างหน้านี้",
+    "Collision_one": "{{count}} โน้ตใช้ชื่อพื้นฐาน {{name}} ร่วมกัน",
+    "Collision_other": "{{count}} โน้ตใช้ชื่อพื้นฐาน {{name}} ร่วมกัน"
   },
   "WindowPicker": {
     "Instruction": "เลือกหน้าต่างสำหรับจับภาพสำหรับการบันทึกหน้าต่าง",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "ใช้ Claude Code, Cursor หรือ Codex อยู่แล้วใช่ไหม? วางข้อความนี้แล้วมันจะตั้งค่าให้เอง",
     "ManualInstallTitle": "หรือเพิ่มด้วยตนเอง",
     "AgentCopy": "คัดลอกพรอมป์ต์"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "ค้นหาในความทรงจำของคุณ",
+    "SearchAria": "ค้นหาในความทรงจำของคุณ",
+    "Meetings": "การประชุม",
+    "NoMatch": "ไม่มีสิ่งใดในความทรงจำของคุณที่ตรงกัน",
+    "DistilledFrom": "กลั่นจาก {{label}} {{n}} รายการ",
+    "PeopleCount": "{{n}} คน",
+    "OrgCount": "{{n}} องค์กร",
+    "TopicCount": "{{n}} หัวข้อ",
+    "Building": "ความทรงจำของคุณกำลังถูกกลั่น — หน้าที่เสร็จแล้วเปิดได้ทันที",
+    "TopOfMind": "เรื่องเด่น",
+    "UpdatedThisWeek": "อัปเดตสัปดาห์นี้",
+    "NoUpdates": "สัปดาห์นี้ไม่มีการอัปเดต",
+    "BrowseMeetings": "ดู{{label}}ทั้งหมด",
+    "CloudManaged": "จัดการบนคลาวด์ — การอัปเดตมาถึงผ่านการซิงค์",
+    "TemplateLatest": "{{label}} มีอะไรใหม่บ้าง?",
+    "TemplateDecided": "เราตัดสินใจอะไรเกี่ยวกับ {{label}}?",
+    "TemplateWhoOwns": "ใครดูแล {{label}}?",
+    "SearchCount_one": "{{count}} ผลลัพธ์",
+    "SearchCount_other": "{{count}} ผลลัพธ์"
+  },
+  "WikiPage": {
+    "CorrectThis": "แก้ไขข้อนี้",
+    "CorrectionPlaceholder": "ที่ถูกต้องคืออะไร?",
+    "CorrectionFailed": "บันทึกไม่สำเร็จ — ลองอีกครั้ง",
+    "CorrectionPending": "คุณแก้ไขแล้ว — รอการเขียนใหม่",
+    "Saving": "กำลังบันทึก…",
+    "SubmitCorrection": "ส่งการแก้ไข"
   }
 }

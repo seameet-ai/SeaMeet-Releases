@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "将截图 OCR 路由到您选择的 LLM 提供商。关闭（默认）：始终使用 Gemini。如果提供商无法接受图像，则自动回退到 Gemini。",
     "UsageReporting": "分享匿名 AI 用量统计",
     "UsageReportingDesc": "仅包含服务商、模型和 Token 数量 — 绝不包含您的内容。帮助我们保持服务商的可靠性。",
-    "KeyVerificationFailed": "密钥验证失败"
+    "KeyVerificationFailed": "密钥验证失败",
+    "ShowAllModels_one": "显示全部 {{count}} 个模型",
+    "ShowAllModels_other": "显示全部 {{count}} 个模型"
   },
   "AISummary": {
     "ApplyMerge": "应用",
@@ -534,7 +536,9 @@
         "name": "团队周会"
       }
     },
-    "Title": "笔记摘要"
+    "Title": "笔记摘要",
+    "Meta_one": "{{count}} 个录音 · 模板：{{tpl}}",
+    "Meta_other": "{{count}} 个录音 · 模板：{{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "让模型为每次会议选择最佳模板。关闭时，默认使用会议纪要且不调用分类器。",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "正在上传你过去的 {{total}} 场会议，让它们在每台设备和网页上都能查看…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "关闭",
-      "CompleteToast": "全部 {{total}} 场会议已同步——可在任意设备或 app-dev.seameet.ai 上打开。"
+      "CompleteToast": "全部 {{total}} 场会议已同步——可在任意设备或 app-dev.seameet.ai 上打开。",
+      "TextDone_one": "已同步 {{count}} 个笔记和 wiki 页面。",
+      "TextDone_other": "已同步 {{count}} 个笔记和 wiki 页面。"
     },
     "Status": {
       "Synced": "已同步到云端",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "无法从云端加载此录制内容。请检查网络连接后重试。",
       "Downloaded": "已保存到此设备",
       "SyncToLocal": "同步到本地",
-      "SyncWithSyncPro": "使用 Sync Pro 将此录制内容同步到云端"
+      "SyncWithSyncPro": "使用 Sync Pro 将此录制内容同步到云端",
+      "BackUpQueued_one": "{{count}} 个文件已排队等待云备份",
+      "BackUpQueued_other": "{{count}} 个文件已排队等待云备份"
     },
     "Trash": {
       "Title": "回收站",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "确定删除？",
       "EmptyTrash": "清空回收站",
       "ReallyEmpty": "确定清空？",
-      "ActionFailed": "操作失败。请重试。"
+      "ActionFailed": "操作失败。请重试。",
+      "Summary_one": "回收站中 {{count}} 个 · {{size}}",
+      "Summary_other": "回收站中 {{count}} 个 · {{size}}"
     },
     "Usage": {
       "TabTitle": "用量",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "在所有位置删除",
       "CloudFailed": "无法从云端移除。请重试。",
       "CloudBatchFailed": "无法从云端移除 {{total}} 个中的 {{count}} 个。请重试。",
-      "DeviceHintShared": "将下载的副本移到系统回收站。它仍会保留在“与我共享”中。"
+      "DeviceHintShared": "将下载的副本移到系统回收站。它仍会保留在“与我共享”中。",
+      "CloudBatchFailed_one": "无法从云端删除 {{total}} 个中的 {{count}} 个。请重试。",
+      "CloudBatchFailed_other": "无法从云端删除 {{total}} 个中的 {{count}} 个。请重试。",
+      "TitleMany_one": "删除 {{count}} 个录音？",
+      "TitleMany_other": "删除 {{count}} 个录音？"
     },
     "FreeExpiry": {
       "Warning": "这些录音将在 {{days}} 天后删除——永久保留它们。",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "全部替换",
     "ReplacePlaceholder": "替换",
     "WikiAiReadonly": "AI 部分只读 — 替换仅在用户部分生效",
-    "WikiCounterSplit": "笔记中 {{userCount}} 处 + AI 部分中 {{aiCount}} 处"
+    "WikiCounterSplit": "笔记中 {{userCount}} 处 + AI 部分中 {{aiCount}} 处",
+    "ConfirmReplaceAll_one": "替换全部 {{count}} 处匹配？",
+    "ConfirmReplaceAll_other": "替换全部 {{count}} 处匹配？"
   },
   "FlashbackControls": {
     "AudioFlashback": "音频闪回",
@@ -2105,7 +2121,17 @@
     "Video": "视频",
     "SubTabs": "文件视图",
     "MyFiles": "我的文件",
-    "SharedWithMe": "与我共享"
+    "SharedWithMe": "与我共享",
+    "BatchDeletePartial_one": "已删除 {{total}} 个文件中的 {{count}} 个",
+    "BatchDeletePartial_other": "已删除 {{total}} 个文件中的 {{count}} 个",
+    "ConfirmBatchDelete_one": "删除 {{count}} 个文件？",
+    "ConfirmBatchDelete_other": "删除 {{count}} 个文件？",
+    "ExportAllFailed_one": "导出 {{count}} 个文件失败",
+    "ExportAllFailed_other": "导出 {{count}} 个文件失败",
+    "ExportSuccess_one": "已导出 {{count}} 个文件",
+    "ExportSuccess_other": "已导出 {{count}} 个文件",
+    "Selected_one": "已选择 {{count}} 个",
+    "Selected_other": "已选择 {{count}} 个"
   },
   "MeetSeasaltAi": {
     "ActionItems": "行动项目",
@@ -2396,7 +2422,9 @@
     "Title": "笔记",
     "Unpin": "取消置顶",
     "UpdateWikiFromNote": "从此笔记更新 Wiki",
-    "WikiUpdateFailed": "Wiki 更新失败：{{error}}"
+    "WikiUpdateFailed": "Wiki 更新失败：{{error}}",
+    "RecordingInFile": "附加到此笔记的录音",
+    "RecordingInFolder": "此文件夹中的录音"
   },
   "NotesView": {
     "CollapseSidebar": "隐藏笔记侧栏",
@@ -3133,7 +3161,9 @@
       "LastCommit": "上次同步",
       "LastSync": "上次同步",
       "RetrySync": "重试同步",
-      "IntervalMinutes": "{{count}} 分钟"
+      "IntervalMinutes": "{{count}} 分钟",
+      "IntervalMinutes_one": "{{count}} 分钟",
+      "IntervalMinutes_other": "{{count}} 分钟"
     },
     "GitAutoCommit": {
       "Desc": "笔记和维基的更改会自动同步。",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}}天前",
       "HoursAgo": "{{count}}小时前",
       "JustNow": "刚刚",
-      "MinutesAgo": "{{count}}分钟前"
+      "MinutesAgo": "{{count}}分钟前",
+      "DaysAgo_one": "{{count}}天前",
+      "DaysAgo_other": "{{count}}天前",
+      "HoursAgo_one": "{{count}}小时前",
+      "HoursAgo_other": "{{count}}小时前",
+      "MinutesAgo_one": "{{count}}分钟前",
+      "MinutesAgo_other": "{{count}}分钟前"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "同步中...",
     "Timeout": "同步超时",
     "TokenExpired": "重新授权",
-    "Unpushed": "{{count}} 个未推送"
+    "Unpushed": "{{count}} 个未推送",
+    "Unpushed_one": "{{count}} 个未推送",
+    "Unpushed_other": "{{count}} 个未推送"
   },
   "Tabs": {
     "Close": "关闭",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "撤销",
     "Toast": "已重命名;更新了 {{count}} 处引用",
-    "ToastNoRefs": "已重命名"
+    "ToastNoRefs": "已重命名",
+    "Toast_one": "已重命名；更新了 {{count}} 处引用",
+    "Toast_other": "已重命名；更新了 {{count}} 处引用"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "安装和退出",
@@ -3467,7 +3507,11 @@
       "Resume": "继续",
       "ResumeAvailable": "上次维基构建在 {{current}}/{{total}} 处中断。继续?",
       "ToastMessage": "检测到 {{count}} 条新笔记。构建维基?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "自上次构建以来有 {{count}} 条新笔记",
+      "BannerMessage_other": "自上次构建以来有 {{count}} 条新笔记",
+      "ToastMessage_one": "检测到 {{count}} 条新笔记。构建 wiki？",
+      "ToastMessage_other": "检测到 {{count}} 条新笔记。构建 wiki？"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "您的笔记",
     "UserSectionPlaceholder": "添加您自己的笔记…",
-    "UserSectionTitle": "您的笔记"
+    "UserSectionTitle": "您的笔记",
+    "RefreshFromSourcesHint_one": "点击可从 {{count}} 条来源笔记刷新 AI 部分。Shift+点击可同时重新读取来源笔记。",
+    "RefreshFromSourcesHint_other": "点击可从 {{count}} 条来源笔记刷新 AI 部分。Shift+点击可同时重新读取来源笔记。"
   },
   "WikiFeature": {
     "SettingsDesc": "根据您的笔记与录音构建实体、人物和主题的知识库。默认关闭。",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "选择要打开的笔记",
     "SuggestEmpty": "没有匹配的笔记或 wiki 页面",
     "SyncContextMenu": "同步Wiki",
-    "SyncToGenerate": "同步Wiki以生成此页面"
+    "SyncToGenerate": "同步Wiki以生成此页面",
+    "Collision_one": "{{count}} 条笔记共用基础名称 {{name}}",
+    "Collision_other": "{{count}} 条笔记共用基础名称 {{name}}"
   },
   "WindowPicker": {
     "Instruction": "选择用于窗口录制的窗口",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "已经在使用 Claude Code、Cursor 或 Codex？粘贴以下内容，它会自动完成设置。",
     "ManualInstallTitle": "或手动添加",
     "AgentCopy": "复制提示词"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "搜索你的记忆",
+    "SearchAria": "搜索你的记忆",
+    "Meetings": "会议",
+    "NoMatch": "你的记忆中没有匹配项。",
+    "DistilledFrom": "提炼自 {{n}} 场{{label}}",
+    "PeopleCount": "{{n}} 位人物",
+    "OrgCount": "{{n}} 个组织",
+    "TopicCount": "{{n}} 个主题",
+    "Building": "你的记忆仍在提炼中 — 已完成的页面可以直接打开。",
+    "TopOfMind": "重点关注",
+    "UpdatedThisWeek": "本周更新",
+    "NoUpdates": "本周暂无更新。",
+    "BrowseMeetings": "浏览全部{{label}}",
+    "CloudManaged": "由云端管理 — 更新将通过同步送达。",
+    "TemplateLatest": "{{label}}有什么最新进展？",
+    "TemplateDecided": "关于{{label}}我们决定了什么？",
+    "TemplateWhoOwns": "谁负责{{label}}？",
+    "SearchCount_one": "{{count}} 个结果",
+    "SearchCount_other": "{{count}} 个结果"
+  },
+  "WikiPage": {
+    "CorrectThis": "纠正",
+    "CorrectionPlaceholder": "正确的内容是？",
+    "CorrectionFailed": "保存失败 — 请重试。",
+    "CorrectionPending": "你已纠正 — 等待重写。",
+    "Saving": "保存中…",
+    "SubmitCorrection": "提交纠正"
   }
 }

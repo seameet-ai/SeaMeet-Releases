@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Mengalihkan OCR tangkapan layar ke penyedia LLM yang Anda pilih. Mati (default): selalu menggunakan Gemini. Secara otomatis beralih ke Gemini jika penyedia tidak dapat menerima gambar.",
     "UsageReporting": "Bagikan jumlah penggunaan AI secara anonim",
     "UsageReportingDesc": "Hanya penyedia, model, dan jumlah token — tidak pernah konten Anda. Membantu kami menjaga keandalan penyedia.",
-    "KeyVerificationFailed": "Verifikasi key gagal"
+    "KeyVerificationFailed": "Verifikasi key gagal",
+    "ShowAllModels_one": "Tampilkan semua {{count}} model",
+    "ShowAllModels_other": "Tampilkan semua {{count}} model"
   },
   "AISummary": {
     "ApplyMerge": "Terapkan",
@@ -534,7 +536,9 @@
         "name": "Pertemuan Mingguan Tim"
       }
     },
-    "Title": "Ringkasan catatan"
+    "Title": "Ringkasan catatan",
+    "Meta_one": "{{count}} rekaman · templat: {{tpl}}",
+    "Meta_other": "{{count}} rekaman · templat: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Biarkan model memilih template terbaik untuk setiap pertemuan. Jika dimatikan, Notulen Rapat digunakan secara default dan tidak ada panggilan pengklasifikasi yang dilakukan.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Mengunggah {{total}} rapat lampau Anda agar tersedia di setiap perangkat dan di web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Tutup",
-      "CompleteToast": "Semua {{total}} rapat telah disinkronkan — buka di perangkat apa pun atau di app-dev.seameet.ai."
+      "CompleteToast": "Semua {{total}} rapat telah disinkronkan — buka di perangkat apa pun atau di app-dev.seameet.ai.",
+      "TextDone_one": "{{count}} catatan & halaman wiki disinkronkan.",
+      "TextDone_other": "{{count}} catatan & halaman wiki disinkronkan."
     },
     "Status": {
       "Synced": "Tersinkron ke cloud",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Tidak dapat memuat rekaman ini dari cloud. Periksa koneksi Anda dan coba lagi.",
       "Downloaded": "Tersimpan di perangkat ini",
       "SyncToLocal": "Sinkronkan ke lokal",
-      "SyncWithSyncPro": "Sinkronkan rekaman ini ke cloud dengan Sync Pro"
+      "SyncWithSyncPro": "Sinkronkan rekaman ini ke cloud dengan Sync Pro",
+      "BackUpQueued_one": "{{count}} file dalam antrean pencadangan cloud",
+      "BackUpQueued_other": "{{count}} file dalam antrean pencadangan cloud"
     },
     "Trash": {
       "Title": "Sampah",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Benar-benar hapus?",
       "EmptyTrash": "Kosongkan sampah",
       "ReallyEmpty": "Benar-benar kosongkan?",
-      "ActionFailed": "Tindakan gagal. Silakan coba lagi."
+      "ActionFailed": "Tindakan gagal. Silakan coba lagi.",
+      "Summary_one": "{{count}} di sampah · {{size}}",
+      "Summary_other": "{{count}} di sampah · {{size}}"
     },
     "Usage": {
       "TabTitle": "Penggunaan",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Hapus di semua tempat",
       "CloudFailed": "Tidak dapat menghapus dari cloud. Silakan coba lagi.",
       "CloudBatchFailed": "Tidak dapat menghapus {{count}} dari {{total}} dari cloud. Silakan coba lagi.",
-      "DeviceHintShared": "Memindahkan salinan yang diunduh ke Sampah. Tetap tersedia di \"Dibagikan dengan saya\"."
+      "DeviceHintShared": "Memindahkan salinan yang diunduh ke Sampah. Tetap tersedia di \"Dibagikan dengan saya\".",
+      "CloudBatchFailed_one": "Tidak dapat menghapus {{count}} dari {{total}} dari cloud. Coba lagi.",
+      "CloudBatchFailed_other": "Tidak dapat menghapus {{count}} dari {{total}} dari cloud. Coba lagi.",
+      "TitleMany_one": "Hapus {{count}} rekaman?",
+      "TitleMany_other": "Hapus {{count}} rekaman?"
     },
     "FreeExpiry": {
       "Warning": "Rekaman ini akan dihapus dalam {{days}} hari — simpan selamanya.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Ganti semua",
     "ReplacePlaceholder": "Ganti",
     "WikiAiReadonly": "Bagian AI hanya-baca — penggantian hanya berlaku di bagian pengguna",
-    "WikiCounterSplit": "{{userCount}} di catatan + {{aiCount}} di bagian AI"
+    "WikiCounterSplit": "{{userCount}} di catatan + {{aiCount}} di bagian AI",
+    "ConfirmReplaceAll_one": "Ganti semua {{count}} kecocokan?",
+    "ConfirmReplaceAll_other": "Ganti semua {{count}} kecocokan?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Kilas balik audio",
@@ -2105,7 +2121,17 @@
     "Video": "Video",
     "SubTabs": "Tampilan file",
     "MyFiles": "File Saya",
-    "SharedWithMe": "Dibagikan dengan saya"
+    "SharedWithMe": "Dibagikan dengan saya",
+    "BatchDeletePartial_one": "{{count}} dari {{total}} file dihapus",
+    "BatchDeletePartial_other": "{{count}} dari {{total}} file dihapus",
+    "ConfirmBatchDelete_one": "Hapus {{count}} file?",
+    "ConfirmBatchDelete_other": "Hapus {{count}} file?",
+    "ExportAllFailed_one": "Gagal mengekspor {{count}} file",
+    "ExportAllFailed_other": "Gagal mengekspor {{count}} file",
+    "ExportSuccess_one": "{{count}} file diekspor",
+    "ExportSuccess_other": "{{count}} file diekspor",
+    "Selected_one": "{{count}} dipilih",
+    "Selected_other": "{{count}} dipilih"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Item Tindakan",
@@ -2396,7 +2422,9 @@
     "Title": "Catatan",
     "Unpin": "Lepas sematan",
     "UpdateWikiFromNote": "Perbarui wiki dari catatan ini",
-    "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}"
+    "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}",
+    "RecordingInFile": "Rekaman terlampir pada catatan ini",
+    "RecordingInFolder": "Rekaman dalam folder ini"
   },
   "NotesView": {
     "CollapseSidebar": "Sembunyikan bilah sisi catatan",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Terakhir disinkronkan",
       "LastSync": "Sinkronisasi terakhir",
       "RetrySync": "Coba Sinkronisasi Ulang",
-      "IntervalMinutes": "{{count}} mnt"
+      "IntervalMinutes": "{{count}} mnt",
+      "IntervalMinutes_one": "{{count}} mnt",
+      "IntervalMinutes_other": "{{count}} mnt"
     },
     "GitAutoCommit": {
       "Desc": "Perubahan pada catatan dan wiki secara otomatis disinkronkan.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "{{count}}h yang lalu",
       "HoursAgo": "{{count}}j yang lalu",
       "JustNow": "Baru saja",
-      "MinutesAgo": "{{count}}m yang lalu"
+      "MinutesAgo": "{{count}}m yang lalu",
+      "DaysAgo_one": "{{count}}h yang lalu",
+      "DaysAgo_other": "{{count}}h yang lalu",
+      "HoursAgo_one": "{{count}}j yang lalu",
+      "HoursAgo_other": "{{count}}j yang lalu",
+      "MinutesAgo_one": "{{count}}m yang lalu",
+      "MinutesAgo_other": "{{count}}m yang lalu"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Menyinkronkan...",
     "Timeout": "Sinkronisasi gagal karena waktu habis",
     "TokenExpired": "Otorisasi ulang",
-    "Unpushed": "{{count}} belum didorong"
+    "Unpushed": "{{count}} belum didorong",
+    "Unpushed_one": "{{count}} belum didorong",
+    "Unpushed_other": "{{count}} belum didorong"
   },
   "Tabs": {
     "Close": "Tutup",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Urungkan",
     "Toast": "Diganti namanya; {{count}} referensi diperbarui",
-    "ToastNoRefs": "Diganti nama"
+    "ToastNoRefs": "Diganti nama",
+    "Toast_one": "Diganti nama; memperbarui {{count}} referensi",
+    "Toast_other": "Diganti nama; memperbarui {{count}} referensi"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Instal & Keluar",
@@ -3467,7 +3507,11 @@
       "Resume": "Lanjutkan",
       "ResumeAvailable": "Build wiki sebelumnya terhenti di {{current}}/{{total}}. Lanjutkan?",
       "ToastMessage": "{{count}} catatan baru terdeteksi. Bangun wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} catatan baru sejak build terakhir",
+      "BannerMessage_other": "{{count}} catatan baru sejak build terakhir",
+      "ToastMessage_one": "{{count}} catatan baru terdeteksi. Bangun wiki?",
+      "ToastMessage_other": "{{count}} catatan baru terdeteksi. Bangun wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Catatan Anda",
     "UserSectionPlaceholder": "Tambahkan catatan pribadi…",
-    "UserSectionTitle": "Catatan Anda"
+    "UserSectionTitle": "Catatan Anda",
+    "RefreshFromSourcesHint_one": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik untuk membaca ulang catatan sumber juga.",
+    "RefreshFromSourcesHint_other": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik untuk membaca ulang catatan sumber juga."
   },
   "WikiFeature": {
     "SettingsDesc": "Membangun basis pengetahuan tentang entitas, orang, dan topik dari catatan dan rekaman Anda. Mati secara default.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Pilih catatan untuk dibuka",
     "SuggestEmpty": "Tidak ada catatan atau halaman wiki yang cocok",
     "SyncContextMenu": "Sinkronkan wiki",
-    "SyncToGenerate": "Sinkronkan wiki untuk membuat halaman ini"
+    "SyncToGenerate": "Sinkronkan wiki untuk membuat halaman ini",
+    "Collision_one": "{{count}} catatan berbagi nama dasar {{name}}",
+    "Collision_other": "{{count}} catatan berbagi nama dasar {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Pilih jendela untuk ditangkap untuk perekaman jendela.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Sudah menggunakan Claude Code, Cursor, atau Codex? Tempel ini dan ia akan menyiapkan dirinya sendiri.",
     "ManualInstallTitle": "Atau tambahkan secara manual",
     "AgentCopy": "Salin prompt"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Cari di Memori Anda",
+    "SearchAria": "Cari di Memori Anda",
+    "Meetings": "Rapat",
+    "NoMatch": "Tidak ada yang cocok di Memori Anda.",
+    "DistilledFrom": "Disuling dari {{n}} {{label}}",
+    "PeopleCount": "{{n}} orang",
+    "OrgCount": "{{n}} organisasi",
+    "TopicCount": "{{n}} topik",
+    "Building": "Memori Anda masih disuling — halaman yang selesai sudah bisa dibuka.",
+    "TopOfMind": "Sorotan utama",
+    "UpdatedThisWeek": "Diperbarui minggu ini",
+    "NoUpdates": "Tidak ada pembaruan minggu ini.",
+    "BrowseMeetings": "Jelajahi semua {{label}}",
+    "CloudManaged": "Dikelola di cloud — pembaruan tiba lewat sinkronisasi.",
+    "TemplateLatest": "Apa kabar terbaru soal {{label}}?",
+    "TemplateDecided": "Apa yang kita putuskan soal {{label}}?",
+    "TemplateWhoOwns": "Siapa yang menangani {{label}}?",
+    "SearchCount_one": "{{count}} hasil",
+    "SearchCount_other": "{{count}} hasil"
+  },
+  "WikiPage": {
+    "CorrectThis": "Koreksi",
+    "CorrectionPlaceholder": "Apa yang benar?",
+    "CorrectionFailed": "Gagal menyimpan — coba lagi.",
+    "CorrectionPending": "Dikoreksi oleh Anda — penulisan ulang tertunda.",
+    "Saving": "Menyimpan…",
+    "SubmitCorrection": "Kirim koreksi"
   }
 }

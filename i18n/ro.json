@@ -166,7 +166,9 @@
     "UseMainLlmForOcrHint": "Direcționează OCR-ul capturilor de ecran către furnizorul LLM selectat. Dezactivat (implicit): folosește întotdeauna Gemini. Revine automat la Gemini dacă furnizorul nu poate accepta imaginea.",
     "UsageReporting": "Partajează statistici anonime de utilizare AI",
     "UsageReportingDesc": "Doar furnizorul, modelul și numărul de tokenuri — niciodată conținutul tău. Ne ajută să menținem furnizorii fiabili.",
-    "KeyVerificationFailed": "Verificarea cheii a eșuat"
+    "KeyVerificationFailed": "Verificarea cheii a eșuat",
+    "ShowAllModels_one": "Afișează {{count}} model",
+    "ShowAllModels_other": "Afișează toate cele {{count}} modele"
   },
   "AISummary": {
     "ApplyMerge": "Aplicare",
@@ -534,7 +536,9 @@
         "name": "Ședință săptămânală de echipă"
       }
     },
-    "Title": "Rezumat notă"
+    "Title": "Rezumat notă",
+    "Meta_one": "{{count}} înregistrare · șablon: {{tpl}}",
+    "Meta_other": "{{count}} înregistrări · șablon: {{tpl}}"
   },
   "AITemplateSettings": {
     "AutoPickDesc": "Permite modelului să aleagă cel mai bun șablon pentru fiecare întâlnire. Când este dezactivat, se folosește implicit Procesul verbal al întâlnirii și nu se face nicio apelare a clasificatorului.",
@@ -1367,7 +1371,9 @@
       "WelcomeBody": "Se încarcă cele {{total}} întâlniri anterioare ale tale, ca să fie disponibile pe orice dispozitiv și pe web…",
       "Progress": "{{done}} / {{total}}",
       "Dismiss": "Închide",
-      "CompleteToast": "Toate cele {{total}} întâlniri sunt sincronizate — deschide-le pe orice dispozitiv sau pe app-dev.seameet.ai."
+      "CompleteToast": "Toate cele {{total}} întâlniri sunt sincronizate — deschide-le pe orice dispozitiv sau pe app-dev.seameet.ai.",
+      "TextDone_one": "{{count}} notiță și pagină wiki sincronizată.",
+      "TextDone_other": "{{count}} notițe și pagini wiki sincronizate."
     },
     "Status": {
       "Synced": "Sincronizat cu cloudul",
@@ -1387,7 +1393,9 @@
       "StreamFailed": "Nu s-a putut încărca această înregistrare din cloud. Verifică-ți conexiunea și încearcă din nou.",
       "Downloaded": "Salvat pe acest dispozitiv",
       "SyncToLocal": "Sincronizează local",
-      "SyncWithSyncPro": "Sincronizează această înregistrare în cloud cu Sync Pro"
+      "SyncWithSyncPro": "Sincronizează această înregistrare în cloud cu Sync Pro",
+      "BackUpQueued_one": "{{count}} fișier în așteptare pentru backup în cloud",
+      "BackUpQueued_other": "{{count}} fișiere în așteptare pentru backup în cloud"
     },
     "Trash": {
       "Title": "Coș de gunoi",
@@ -1401,7 +1409,9 @@
       "ReallyDelete": "Chiar ștergi?",
       "EmptyTrash": "Golește coșul de gunoi",
       "ReallyEmpty": "Chiar golești?",
-      "ActionFailed": "Nu a funcționat. Încearcă din nou."
+      "ActionFailed": "Nu a funcționat. Încearcă din nou.",
+      "Summary_one": "{{count}} în coșul de gunoi · {{size}}",
+      "Summary_other": "{{count}} în coșul de gunoi · {{size}}"
     },
     "Usage": {
       "TabTitle": "Utilizare",
@@ -1497,7 +1507,11 @@
       "ConfirmEverywhere": "Șterge de peste tot",
       "CloudFailed": "Nu s-a putut elimina din cloud. Încearcă din nou.",
       "CloudBatchFailed": "Nu s-au putut elimina {{count}} din {{total}} din cloud. Vă rugăm să încercați din nou.",
-      "DeviceHintShared": "Mută copia descărcată în Coșul de gunoi. Rămâne disponibilă în „Partajate cu mine”."
+      "DeviceHintShared": "Mută copia descărcată în Coșul de gunoi. Rămâne disponibilă în „Partajate cu mine”.",
+      "CloudBatchFailed_one": "Nu s-a putut elimina {{count}} din {{total}} din cloud. Încearcă din nou.",
+      "CloudBatchFailed_other": "Nu s-au putut elimina {{count}} din {{total}} din cloud. Încearcă din nou.",
+      "TitleMany_one": "Ștergi {{count}} înregistrare?",
+      "TitleMany_other": "Ștergi {{count}} înregistrări?"
     },
     "FreeExpiry": {
       "Warning": "Aceste înregistrări se vor șterge în {{days}} zile — păstrează-le pentru totdeauna.",
@@ -1626,7 +1640,9 @@
     "ReplaceAll": "Înlocuiește toate",
     "ReplacePlaceholder": "Înlocuiește",
     "WikiAiReadonly": "Secțiunea IA este doar pentru citire — înlocuirea funcționează doar în secțiunea utilizatorului",
-    "WikiCounterSplit": "{{userCount}} în notă + {{aiCount}} în secțiunea IA"
+    "WikiCounterSplit": "{{userCount}} în notă + {{aiCount}} în secțiunea IA",
+    "ConfirmReplaceAll_one": "Înlocuiești {{count}} potrivire?",
+    "ConfirmReplaceAll_other": "Înlocuiești toate cele {{count}} potriviri?"
   },
   "FlashbackControls": {
     "AudioFlashback": "Flashback audio",
@@ -2105,7 +2121,17 @@
     "Video": "Video",
     "SubTabs": "Vizualizări fișiere",
     "MyFiles": "Fișierele mele",
-    "SharedWithMe": "Distribuit cu mine"
+    "SharedWithMe": "Distribuit cu mine",
+    "BatchDeletePartial_one": "{{count}} din {{total}} fișiere șterse",
+    "BatchDeletePartial_other": "{{count}} din {{total}} fișiere șterse",
+    "ConfirmBatchDelete_one": "Ștergi {{count}} fișiere?",
+    "ConfirmBatchDelete_other": "Ștergi {{count}} fișiere?",
+    "ExportAllFailed_one": "Nu s-au putut exporta {{count}} fișiere",
+    "ExportAllFailed_other": "Nu s-au putut exporta {{count}} fișiere",
+    "ExportSuccess_one": "{{count}} fișiere exportate",
+    "ExportSuccess_other": "{{count}} fișiere exportate",
+    "Selected_one": "{{count}} selectate",
+    "Selected_other": "{{count}} selectate"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elemente de acțiune",
@@ -2396,7 +2422,9 @@
     "Title": "Note",
     "Unpin": "Anulează fixarea",
     "UpdateWikiFromNote": "Actualizează wiki din această notă",
-    "WikiUpdateFailed": "Actualizarea wiki a eșuat: {{error}}"
+    "WikiUpdateFailed": "Actualizarea wiki a eșuat: {{error}}",
+    "RecordingInFile": "Înregistrare atașată la această notiță",
+    "RecordingInFolder": "Înregistrare în acest folder"
   },
   "NotesView": {
     "CollapseSidebar": "Ascunde bara laterală notițe",
@@ -3133,7 +3161,9 @@
       "LastCommit": "Ultima sincronizare",
       "LastSync": "Ultima sincronizare",
       "RetrySync": "Reîncearcă sincronizarea",
-      "IntervalMinutes": "{{count}} min"
+      "IntervalMinutes": "{{count}} min",
+      "IntervalMinutes_one": "{{count}} min",
+      "IntervalMinutes_other": "{{count}} min"
     },
     "GitAutoCommit": {
       "Desc": "Modificările la notițe și wiki sunt sincronizate automat.",
@@ -3219,7 +3249,13 @@
       "DaysAgo": "acum {{count}}d",
       "HoursAgo": "acum {{count}}h",
       "JustNow": "Chiar acum",
-      "MinutesAgo": "acum {{count}}m"
+      "MinutesAgo": "acum {{count}}m",
+      "DaysAgo_one": "acum {{count}}d",
+      "DaysAgo_other": "acum {{count}}d",
+      "HoursAgo_one": "acum {{count}}h",
+      "HoursAgo_other": "acum {{count}}h",
+      "MinutesAgo_one": "acum {{count}}m",
+      "MinutesAgo_other": "acum {{count}}m"
     }
   },
   "SyncStatusBar": {
@@ -3238,7 +3274,9 @@
     "Syncing": "Se sincronizează...",
     "Timeout": "Sincronizarea a expirat",
     "TokenExpired": "Reautorizați",
-    "Unpushed": "{{count}} neîmpins"
+    "Unpushed": "{{count}} neîmpins",
+    "Unpushed_one": "{{count}} netrimis",
+    "Unpushed_other": "{{count}} netrimise"
   },
   "Tabs": {
     "Close": "Închide",
@@ -3303,7 +3341,9 @@
   "UndoRename": {
     "Action": "Anulează",
     "Toast": "Redenumit; au fost actualizate {{count}} referințe",
-    "ToastNoRefs": "Redenumit"
+    "ToastNoRefs": "Redenumit",
+    "Toast_one": "Redenumit; {{count}} referință actualizată",
+    "Toast_other": "Redenumit; {{count}} referințe actualizate"
   },
   "UpdateQuitModal": {
     "InstallAndQuit": "Instalează și ieși",
@@ -3467,7 +3507,11 @@
       "Resume": "Reia",
       "ResumeAvailable": "O construcție anterioară a wiki-ului a fost întreruptă la {{current}}/{{total}}. Reia?",
       "ToastMessage": "S-au detectat {{count}} notițe noi. Construiește wiki?",
-      "Waiting": "Processing…"
+      "Waiting": "Processing…",
+      "BannerMessage_one": "{{count}} notiță nouă de la ultima construire",
+      "BannerMessage_other": "{{count}} notițe noi de la ultima construire",
+      "ToastMessage_one": "{{count}} notiță nouă detectată. Construiești wiki?",
+      "ToastMessage_other": "{{count}} notițe noi detectate. Construiești wiki?"
     },
     "Export": {
       "Button": "Export Wiki",
@@ -3513,7 +3557,9 @@
     },
     "UserSection": "Notițele tale",
     "UserSectionPlaceholder": "Adaugă propriile notițe…",
-    "UserSectionTitle": "Notițele tale"
+    "UserSectionTitle": "Notițele tale",
+    "RefreshFromSourcesHint_one": "Fă clic pentru a reîmprospăta secțiunea AI din {{count}} notiță sursă. Shift+clic pentru a reciti și notițele sursă.",
+    "RefreshFromSourcesHint_other": "Fă clic pentru a reîmprospăta secțiunea AI din {{count}} notițe sursă. Shift+clic pentru a reciti și notițele sursă."
   },
   "WikiFeature": {
     "SettingsDesc": "Construiește o bază de cunoștințe de entități, oameni și subiecte din notele și înregistrările tale. Oprit implicit.",
@@ -3586,7 +3632,9 @@
     "DisambiguationTitle": "Alegeți nota de deschis",
     "SuggestEmpty": "Nicio notă sau pagină wiki potrivită",
     "SyncContextMenu": "Sincronizează wiki",
-    "SyncToGenerate": "Sincronizează wiki-ul pentru a genera această pagină"
+    "SyncToGenerate": "Sincronizează wiki-ul pentru a genera această pagină",
+    "Collision_one": "{{count}} notiță are același nume de bază {{name}}",
+    "Collision_other": "{{count}} notițe au același nume de bază {{name}}"
   },
   "WindowPicker": {
     "Instruction": "Alege o fereastră pentru înregistrare.",
@@ -3979,5 +4027,34 @@
     "AgentInstallDesc": "Ești deja în Claude Code, Cursor sau Codex? Lipește asta și se configurează singur.",
     "ManualInstallTitle": "Sau adaugă-l manual",
     "AgentCopy": "Copiază promptul"
+  },
+  "WikiHome": {
+    "SearchPlaceholder": "Caută în Memoria ta",
+    "SearchAria": "Caută în Memoria ta",
+    "Meetings": "Ședințe",
+    "NoMatch": "Nimic din Memoria ta nu se potrivește.",
+    "DistilledFrom": "Distilat din {{n}} {{label}}",
+    "PeopleCount": "{{n}} persoane",
+    "OrgCount": "{{n}} organizații",
+    "TopicCount": "{{n}} subiecte",
+    "Building": "Memoria ta este încă în distilare — paginile finalizate pot fi deja deschise.",
+    "TopOfMind": "În atenție",
+    "UpdatedThisWeek": "Actualizat săptămâna aceasta",
+    "NoUpdates": "Nicio actualizare săptămâna aceasta.",
+    "BrowseMeetings": "Răsfoiește toate {{label}}",
+    "CloudManaged": "Gestionat în cloud — actualizările sosesc prin sincronizare.",
+    "TemplateLatest": "Ce mai e nou despre {{label}}?",
+    "TemplateDecided": "Ce am decis despre {{label}}?",
+    "TemplateWhoOwns": "Cine se ocupă de {{label}}?",
+    "SearchCount_one": "{{count}} rezultat",
+    "SearchCount_other": "{{count}} rezultate"
+  },
+  "WikiPage": {
+    "CorrectThis": "Corectează",
+    "CorrectionPlaceholder": "Care este varianta corectă?",
+    "CorrectionFailed": "Salvarea a eșuat — încearcă din nou.",
+    "CorrectionPending": "Corectat de tine — rescriere în așteptare.",
+    "Saving": "Se salvează…",
+    "SubmitCorrection": "Trimite corectura"
   }
 }
