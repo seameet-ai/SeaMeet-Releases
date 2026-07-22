@@ -3272,6 +3272,7 @@
     "SetUpGithub": "设置 GitHub 同步",
     "Subscribe": "订阅以启用同步",
     "Synced": "已同步 · {{time}}",
+    "CloudSynced": "已同步到 SeaMeet 云端",
     "Syncing": "同步中...",
     "Timeout": "同步超时",
     "TokenExpired": "重新授权",
@@ -3318,6 +3319,7 @@
     "Recording": "录制中",
     "Screenshot": "截图",
     "Wiki": "知识库",
+    "Memory": "记忆",
     "Cloud": "云端",
     "SharedWithMe": "与我共享"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "添加您自己的笔记…",
     "UserSectionTitle": "您的笔记",
     "RefreshFromSourcesHint_one": "点击可从 {{count}} 条来源笔记刷新 AI 部分。Shift+点击可同时重新读取来源笔记。",
-    "RefreshFromSourcesHint_other": "点击可从 {{count}} 条来源笔记刷新 AI 部分。Shift+点击可同时重新读取来源笔记。"
+    "RefreshFromSourcesHint_other": "点击可从 {{count}} 条来源笔记刷新 AI 部分。Shift+点击可同时重新读取来源笔记。",
+    "NoPageYet": "{{name}} 的页面尚未同步到此设备——当有足够内容可提炼时，Memory 会创建页面，并在此同步。",
+    "ThisEntity": "这个条目",
+    "SourceRecordingNotLocal": "该来源录音不在此设备上。",
+    "MeetingSourceFallback": "会议"
   },
   "WikiFeature": {
+    "AutopilotLabel": "从录音构建记忆",
+    "AutopilotDesc": "自动将每个会议录音提炼进你的会议记忆。默认开启。",
     "SettingsDesc": "根据您的笔记与录音构建实体、人物和主题的知识库。默认关闭。",
     "SettingsLabel": "根据笔记自动更新知识库"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "或手动添加",
     "AgentCopy": "复制提示词"
   },
+  "WikiShowcase": {
+    "Headline": "你的会议记忆",
+    "Subhead": "一个从你的录音和笔记中自动构建的知识库——人物、组织、主题，以及所做的决定。",
+    "Feature1Title": "由你的录音构建",
+    "Feature1Desc": "你录制的每场会议都会被提炼成关于其涉及的人物、组织和主题的页面。",
+    "Feature2Title": "统一的单一记忆",
+    "Feature2Desc": "笔记和录音共同丰富同一批页面——一个知识库，而非两个。",
+    "Feature3Title": "直接提问，无需翻找",
+    "Feature3Desc": "按名称或别名搜索人物与主题；打开页面即可看到何时决定了什么。",
+    "BuildCta": "从录音构建会议记忆",
+    "Building": "构建中…",
+    "BuildRetry": "重试",
+    "BuildQueuedCloud": "已排队——正在云端构建。更新将通过同步送达。",
+    "BuildStartedLocal": "构建中——完成的页面会随提炼陆续出现。",
+    "ScopeCloud": "在云端提炼你默认工作区中的所有录音。笔记通过 ✨ 按钮单独构建。",
+    "ScopeLocal": "在本设备上提炼你默认工作区中的所有录音。笔记通过 ✨ 按钮单独构建。",
+    "UnsyncedWarn_one": "本设备上有 {{count}} 个录音尚未同步，不会被包含——请同步以加入。",
+    "UnsyncedWarn_other": "本设备上有 {{count}} 个录音尚未同步，不会被包含——请同步以加入。"
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet 正在从录音构建你的会议记忆——可随时在设置中关闭。",
+    "ConsentDismiss": "知道了",
+    "BuildMemory": "构建会议记忆",
+    "BuildMemoryRunning": "构建中…",
+    "BuildRetry": "重试",
+    "Rebuild": "重新构建",
+    "Paused": "构建已暂停——预算刷新后继续。",
     "SearchPlaceholder": "搜索你的记忆",
     "SearchAria": "搜索你的记忆",
     "Meetings": "会议",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "关于{{label}}我们决定了什么？",
     "TemplateWhoOwns": "谁负责{{label}}？",
     "SearchCount_one": "{{count}} 个结果",
-    "SearchCount_other": "{{count}} 个结果"
+    "SearchCount_other": "{{count}} 个结果",
+    "MemoryEyebrow": "记忆",
+    "FreshUpdating": "正在更新你的记忆…",
+    "FreshPaused": "已暂停——预算刷新后继续。",
+    "FreshOffline": "离线——显示你上次同步的记忆。",
+    "FreshJustUpdated": "记忆已更新。",
+    "CloudUpdate": "更新记忆",
+    "CloudUpdateRunning": "正在请求更新…",
+    "CloudUpdateRequested": "已请求更新——将通过同步送达。",
+    "SearchEntitiesPlaceholder": "搜索人物、主题和会议",
+    "MemorySubtitle": "根据您的录音自动构建——您谈到的人物、主题和组织，各自提炼成一个页面，并随着您录制更多内容而更新。"
   },
   "WikiPage": {
     "CorrectThis": "纠正",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "你已纠正 — 等待重写。",
     "Saving": "保存中…",
     "SubmitCorrection": "提交纠正"
+  },
+  "MemorySidebar": {
+    "Home": "首页",
+    "Aria": "记忆板块",
+    "Collapse": "收起 {{label}}",
+    "Expand": "展开 {{label}}",
+    "ShowSidebar": "显示侧边栏",
+    "HideSidebar": "隐藏侧边栏",
+    "Title": "记忆"
   }
 }

@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Opsæt GitHub-synkronisering",
     "Subscribe": "Abonner for at aktivere synkronisering",
     "Synced": "Synkroniseret · {{time}}",
+    "CloudSynced": "Synkroniseret til SeaMeet Cloud",
     "Syncing": "Synkroniserer...",
     "Timeout": "Synkronisering udløb",
     "TokenExpired": "Genautoriser",
@@ -3318,6 +3319,7 @@
     "Recording": "Indspilning",
     "Screenshot": "Skærmbillede",
     "Wiki": "Wiki",
+    "Memory": "Hukommelse",
     "Cloud": "Sky",
     "SharedWithMe": "Delt med mig"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Tilføj dine egne noter…",
     "UserSectionTitle": "Dine noter",
     "RefreshFromSourcesHint_one": "Klik for at opdatere AI-sektionen fra {{count}} kildenote. Skift+klik for også at genindlæse kildenoterne.",
-    "RefreshFromSourcesHint_other": "Klik for at opdatere AI-sektionen fra {{count}} kildenoter. Skift+klik for også at genindlæse kildenoterne."
+    "RefreshFromSourcesHint_other": "Klik for at opdatere AI-sektionen fra {{count}} kildenoter. Skift+klik for også at genindlæse kildenoterne.",
+    "NoPageYet": "{{name}}s side er ikke på denne enhed endnu — Memory opretter en side, når der er nok at destillere, og synkroniserer den hertil.",
+    "ThisEntity": "dette element",
+    "SourceRecordingNotLocal": "Den kildeoptagelse er ikke på denne enhed.",
+    "MeetingSourceFallback": "Møde"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Byg hukommelse fra optagelser",
+    "AutopilotDesc": "Destillér automatisk hver mødeoptagelse til din mødehukommelse. Til som standard.",
     "SettingsDesc": "Opbygger en vidensbase af enheder, personer og emner fra dine noter og optagelser. Fra som standard.",
     "SettingsLabel": "Automatisk opdatering af wiki fra noter"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Eller tilføj den manuelt",
     "AgentCopy": "Kopiér prompt"
   },
+  "WikiShowcase": {
+    "Headline": "Din mødehukommelse",
+    "Subhead": "En vidensbase, der bygger sig selv ud fra dine optagelser og noter — personer, organisationer, emner og hvad der blev besluttet.",
+    "Feature1Title": "Bygget ud fra dine optagelser",
+    "Feature1Desc": "Hvert møde, du optager, destilleres til sider om de personer, organisationer og emner, det berørte.",
+    "Feature2Title": "Én samlet hukommelse",
+    "Feature2Desc": "Noter og optagelser beriger de samme sider — én vidensbase, ikke to.",
+    "Feature3Title": "Spørg i stedet for at grave",
+    "Feature3Desc": "Søg efter personer og emner på navn eller alias; åbn en side for at se, hvad der blev besluttet og hvornår.",
+    "BuildCta": "Byg mødehukommelse fra optagelser",
+    "Building": "Bygger…",
+    "BuildRetry": "Prøv igen",
+    "BuildQueuedCloud": "I kø — bygger i skyen. Opdateringer ankommer via synk.",
+    "BuildStartedLocal": "Bygger — færdige sider vises, efterhånden som de destilleres.",
+    "ScopeCloud": "Destillerer alle optagelser i dit standardarbejdsområde, i skyen. Noter bygges separat via ✨-knappen.",
+    "ScopeLocal": "Destillerer alle optagelser i dit standardarbejdsområde, på denne enhed. Noter bygges separat via ✨-knappen.",
+    "UnsyncedWarn_one": "{{count}} optagelse på denne enhed er ikke synkroniseret endnu og medtages ikke — synkronisér for at tilføje den.",
+    "UnsyncedWarn_other": "{{count}} optagelser på denne enhed er ikke synkroniseret endnu og medtages ikke — synkronisér for at tilføje dem."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet bygger nu din mødehukommelse ud fra optagelser — du kan slå det fra i Indstillinger når som helst.",
+    "ConsentDismiss": "OK",
+    "BuildMemory": "Byg mødehukommelse",
+    "BuildMemoryRunning": "Bygger…",
+    "BuildRetry": "Prøv igen",
+    "Rebuild": "Genopbyg",
+    "Paused": "Bygning sat på pause — genoptages når budgettet fornys.",
     "SearchPlaceholder": "Søg i din Hukommelse",
     "SearchAria": "Søg i din Hukommelse",
     "Meetings": "Møder",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Hvad besluttede vi om {{label}}?",
     "TemplateWhoOwns": "Hvem har ansvaret for {{label}}?",
     "SearchCount_one": "{{count}} resultat",
-    "SearchCount_other": "{{count}} resultater"
+    "SearchCount_other": "{{count}} resultater",
+    "MemoryEyebrow": "Hukommelse",
+    "FreshUpdating": "Opdaterer din hukommelse…",
+    "FreshPaused": "Sat på pause — fortsætter, når dit budget fornyes.",
+    "FreshOffline": "Offline — viser din senest synkroniserede hukommelse.",
+    "FreshJustUpdated": "Hukommelse opdateret.",
+    "CloudUpdate": "Opdater hukommelse",
+    "CloudUpdateRunning": "Anmoder om opdatering…",
+    "CloudUpdateRequested": "Opdatering anmodet — den ankommer via synkronisering.",
+    "SearchEntitiesPlaceholder": "Søg efter personer, emner og møder",
+    "MemorySubtitle": "Oprettes automatisk ud fra dine optagelser — de personer, emner og organisationer, du taler om, hver destilleret til en side, der opdateres, efterhånden som du optager mere."
   },
   "WikiPage": {
     "CorrectThis": "Ret dette",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Rettet af dig — omskrivning afventer.",
     "Saving": "Gemmer…",
     "SubmitCorrection": "Indsend rettelse"
+  },
+  "MemorySidebar": {
+    "Home": "Hjem",
+    "Aria": "Hukommelsessektioner",
+    "Collapse": "Skjul {{label}}",
+    "Expand": "Udvid {{label}}",
+    "ShowSidebar": "Vis sidepanel",
+    "HideSidebar": "Skjul sidepanel",
+    "Title": "Hukommelse"
   }
 }

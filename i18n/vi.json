@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Thiết lập đồng bộ GitHub",
     "Subscribe": "Đăng ký để bật đồng bộ",
     "Synced": "Đã đồng bộ · {{time}}",
+    "CloudSynced": "Đã đồng bộ với SeaMeet Cloud",
     "Syncing": "Đang đồng bộ...",
     "Timeout": "Đồng bộ bị hết thời gian chờ",
     "TokenExpired": "Cấp quyền lại",
@@ -3318,6 +3319,7 @@
     "Recording": "ghi âm",
     "Screenshot": "Chụp màn hình",
     "Wiki": "Wiki",
+    "Memory": "Bộ nhớ",
     "Cloud": "Đám mây",
     "SharedWithMe": "Được chia sẻ với tôi"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Thêm ghi chú riêng của bạn…",
     "UserSectionTitle": "Ghi chú của bạn",
     "RefreshFromSourcesHint_one": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp để đọc lại cả ghi chú nguồn.",
-    "RefreshFromSourcesHint_other": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp để đọc lại cả ghi chú nguồn."
+    "RefreshFromSourcesHint_other": "Nhấp để làm mới phần AI từ {{count}} ghi chú nguồn. Shift+nhấp để đọc lại cả ghi chú nguồn.",
+    "NoPageYet": "Trang của {{name}} chưa có trên thiết bị này — Memory tạo trang khi có đủ nội dung để chắt lọc, rồi đồng bộ về đây.",
+    "ThisEntity": "mục này",
+    "SourceRecordingNotLocal": "Bản ghi nguồn đó không có trên thiết bị này.",
+    "MeetingSourceFallback": "Cuộc họp"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Xây dựng Bộ nhớ từ bản ghi",
+    "AutopilotDesc": "Tự động chắt lọc mỗi bản ghi cuộc họp vào Bộ nhớ cuộc họp của bạn. Bật theo mặc định.",
     "SettingsDesc": "Xây dựng cơ sở kiến thức về thực thể, người và chủ đề từ ghi chú và bản ghi của bạn. Mặc định tắt.",
     "SettingsLabel": "Tự động cập nhật wiki từ ghi chú"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Hoặc thêm thủ công",
     "AgentCopy": "Sao chép lời nhắc"
   },
+  "WikiShowcase": {
+    "Headline": "Bộ nhớ cuộc họp của bạn",
+    "Subhead": "Một cơ sở tri thức tự xây dựng từ bản ghi và ghi chú của bạn — con người, tổ chức, chủ đề và những gì đã được quyết định.",
+    "Feature1Title": "Được xây từ bản ghi của bạn",
+    "Feature1Desc": "Mỗi cuộc họp bạn ghi lại được chắt lọc thành các trang về những người, tổ chức và chủ đề mà nó đề cập.",
+    "Feature2Title": "Một bộ nhớ hợp nhất",
+    "Feature2Desc": "Ghi chú và bản ghi cùng làm giàu một trang — một cơ sở tri thức, không phải hai.",
+    "Feature3Title": "Hỏi, đừng đào bới",
+    "Feature3Desc": "Tìm người và chủ đề theo tên hoặc biệt danh; mở một trang để xem điều gì đã được quyết định và khi nào.",
+    "BuildCta": "Xây Bộ nhớ cuộc họp từ bản ghi",
+    "Building": "Đang xây dựng…",
+    "BuildRetry": "Thử lại",
+    "BuildQueuedCloud": "Đã xếp hàng — đang xây trên đám mây. Cập nhật đến qua đồng bộ.",
+    "BuildStartedLocal": "Đang xây dựng — các trang hoàn thành xuất hiện khi được chắt lọc.",
+    "ScopeCloud": "Chắt lọc mọi bản ghi trong không gian làm việc mặc định của bạn, trên đám mây. Ghi chú được xây riêng qua nút ✨.",
+    "ScopeLocal": "Chắt lọc mọi bản ghi trong không gian làm việc mặc định của bạn, trên thiết bị này. Ghi chú được xây riêng qua nút ✨.",
+    "UnsyncedWarn_one": "{{count}} bản ghi trên thiết bị này chưa được đồng bộ và sẽ không được đưa vào — đồng bộ để thêm.",
+    "UnsyncedWarn_other": "{{count}} bản ghi trên thiết bị này chưa được đồng bộ và sẽ không được đưa vào — đồng bộ để thêm."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet hiện đang xây dựng Bộ nhớ cuộc họp của bạn từ các bản ghi — bạn có thể tắt bất cứ lúc nào trong Cài đặt.",
+    "ConsentDismiss": "Đã hiểu",
+    "BuildMemory": "Xây dựng Bộ nhớ cuộc họp",
+    "BuildMemoryRunning": "Đang xây dựng…",
+    "BuildRetry": "Thử lại",
+    "Rebuild": "Xây dựng lại",
+    "Paused": "Đã tạm dừng xây dựng — tiếp tục khi ngân sách được làm mới.",
     "SearchPlaceholder": "Tìm trong Bộ nhớ của bạn",
     "SearchAria": "Tìm trong Bộ nhớ của bạn",
     "Meetings": "Cuộc họp",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Chúng ta đã quyết định gì về {{label}}?",
     "TemplateWhoOwns": "Ai phụ trách {{label}}?",
     "SearchCount_one": "{{count}} kết quả",
-    "SearchCount_other": "{{count}} kết quả"
+    "SearchCount_other": "{{count}} kết quả",
+    "MemoryEyebrow": "Bộ nhớ",
+    "FreshUpdating": "Đang cập nhật Bộ nhớ của bạn…",
+    "FreshPaused": "Đã tạm dừng — tiếp tục khi ngân sách của bạn được làm mới.",
+    "FreshOffline": "Ngoại tuyến — đang hiển thị Bộ nhớ được đồng bộ gần nhất.",
+    "FreshJustUpdated": "Đã cập nhật Bộ nhớ.",
+    "CloudUpdate": "Cập nhật Bộ nhớ",
+    "CloudUpdateRunning": "Đang yêu cầu cập nhật…",
+    "CloudUpdateRequested": "Đã yêu cầu cập nhật — sẽ đến qua đồng bộ.",
+    "SearchEntitiesPlaceholder": "Tìm người, chủ đề & cuộc họp",
+    "MemorySubtitle": "Được tạo tự động từ các bản ghi của bạn — những người, chủ đề và tổ chức bạn thảo luận, mỗi mục được chắt lọc thành một trang cập nhật khi bạn ghi thêm."
   },
   "WikiPage": {
     "CorrectThis": "Sửa lại",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Bạn đã sửa — đang chờ viết lại.",
     "Saving": "Đang lưu…",
     "SubmitCorrection": "Gửi bản sửa"
+  },
+  "MemorySidebar": {
+    "Home": "Trang chủ",
+    "Aria": "Các mục Bộ nhớ",
+    "Collapse": "Thu gọn {{label}}",
+    "Expand": "Mở rộng {{label}}",
+    "ShowSidebar": "Hiện thanh bên",
+    "HideSidebar": "Ẩn thanh bên",
+    "Title": "Bộ nhớ"
   }
 }

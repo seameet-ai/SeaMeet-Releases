@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Atur sinkronisasi GitHub",
     "Subscribe": "Berlangganan untuk mengaktifkan sinkronisasi",
     "Synced": "Disinkronkan · {{time}}",
+    "CloudSynced": "Disinkronkan ke SeaMeet Cloud",
     "Syncing": "Menyinkronkan...",
     "Timeout": "Sinkronisasi gagal karena waktu habis",
     "TokenExpired": "Otorisasi ulang",
@@ -3318,6 +3319,7 @@
     "Recording": "Rekaman",
     "Screenshot": "Tangkapan Layar",
     "Wiki": "Wiki",
+    "Memory": "Memori",
     "Cloud": "Cloud",
     "SharedWithMe": "Dibagikan dengan saya"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Tambahkan catatan pribadi…",
     "UserSectionTitle": "Catatan Anda",
     "RefreshFromSourcesHint_one": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik untuk membaca ulang catatan sumber juga.",
-    "RefreshFromSourcesHint_other": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik untuk membaca ulang catatan sumber juga."
+    "RefreshFromSourcesHint_other": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik untuk membaca ulang catatan sumber juga.",
+    "NoPageYet": "Halaman {{name}} belum ada di perangkat ini — Memory membuat halaman saat ada cukup untuk disarikan, lalu menyinkronkannya ke sini.",
+    "ThisEntity": "entitas ini",
+    "SourceRecordingNotLocal": "Rekaman sumber itu tidak ada di perangkat ini.",
+    "MeetingSourceFallback": "Rapat"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Bangun Memori dari rekaman",
+    "AutopilotDesc": "Otomatis menyaring setiap rekaman rapat ke dalam Memori Rapat Anda. Aktif secara bawaan.",
     "SettingsDesc": "Membangun basis pengetahuan tentang entitas, orang, dan topik dari catatan dan rekaman Anda. Mati secara default.",
     "SettingsLabel": "Perbarui wiki secara otomatis dari catatan"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Atau tambahkan secara manual",
     "AgentCopy": "Salin prompt"
   },
+  "WikiShowcase": {
+    "Headline": "Memori Rapat Anda",
+    "Subhead": "Basis pengetahuan yang membangun dirinya sendiri dari rekaman dan catatan Anda — orang, organisasi, topik, dan apa yang diputuskan.",
+    "Feature1Title": "Dibangun dari rekaman Anda",
+    "Feature1Desc": "Setiap rapat yang Anda rekam disaring menjadi halaman tentang orang, organisasi, dan topik yang dibahasnya.",
+    "Feature2Title": "Satu memori terpadu",
+    "Feature2Desc": "Catatan dan rekaman memperkaya halaman yang sama — satu basis pengetahuan, bukan dua.",
+    "Feature3Title": "Bertanya, bukan menggali",
+    "Feature3Desc": "Cari orang dan topik berdasarkan nama atau alias; buka halaman untuk melihat apa yang diputuskan dan kapan.",
+    "BuildCta": "Bangun Memori Rapat dari rekaman",
+    "Building": "Membangun…",
+    "BuildRetry": "Coba lagi",
+    "BuildQueuedCloud": "Dalam antrean — dibangun di cloud. Pembaruan tiba melalui sync.",
+    "BuildStartedLocal": "Membangun — halaman yang selesai muncul saat disaring.",
+    "ScopeCloud": "Menyaring semua rekaman di ruang kerja default Anda, di cloud. Catatan dibangun terpisah lewat tombol ✨.",
+    "ScopeLocal": "Menyaring semua rekaman di ruang kerja default Anda, di perangkat ini. Catatan dibangun terpisah lewat tombol ✨.",
+    "UnsyncedWarn_one": "{{count}} rekaman di perangkat ini belum disinkronkan dan tidak akan disertakan — sinkronkan untuk menambahkannya.",
+    "UnsyncedWarn_other": "{{count}} rekaman di perangkat ini belum disinkronkan dan tidak akan disertakan — sinkronkan untuk menambahkannya."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet kini membangun Memori Rapat Anda dari rekaman — Anda dapat menonaktifkannya kapan saja di Pengaturan.",
+    "ConsentDismiss": "Mengerti",
+    "BuildMemory": "Bangun Memori Rapat",
+    "BuildMemoryRunning": "Membangun…",
+    "BuildRetry": "Coba lagi",
+    "Rebuild": "Bangun ulang",
+    "Paused": "Pembangunan dijeda — dilanjutkan saat anggaran diperbarui.",
     "SearchPlaceholder": "Cari di Memori Anda",
     "SearchAria": "Cari di Memori Anda",
     "Meetings": "Rapat",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Apa yang kita putuskan soal {{label}}?",
     "TemplateWhoOwns": "Siapa yang menangani {{label}}?",
     "SearchCount_one": "{{count}} hasil",
-    "SearchCount_other": "{{count}} hasil"
+    "SearchCount_other": "{{count}} hasil",
+    "MemoryEyebrow": "Memori",
+    "FreshUpdating": "Memperbarui Memori Anda…",
+    "FreshPaused": "Dijeda — dilanjutkan saat anggaran Anda diperbarui.",
+    "FreshOffline": "Offline — menampilkan Memori terakhir yang tersinkron.",
+    "FreshJustUpdated": "Memori diperbarui.",
+    "CloudUpdate": "Perbarui Memori",
+    "CloudUpdateRunning": "Meminta pembaruan…",
+    "CloudUpdateRequested": "Pembaruan diminta — akan tiba melalui sinkronisasi.",
+    "SearchEntitiesPlaceholder": "Cari orang, topik & rapat",
+    "MemorySubtitle": "Dibuat otomatis dari rekaman Anda — orang, topik, dan organisasi yang Anda bahas, masing-masing disarikan menjadi halaman yang diperbarui saat Anda merekam lebih banyak."
   },
   "WikiPage": {
     "CorrectThis": "Koreksi",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Dikoreksi oleh Anda — penulisan ulang tertunda.",
     "Saving": "Menyimpan…",
     "SubmitCorrection": "Kirim koreksi"
+  },
+  "MemorySidebar": {
+    "Home": "Beranda",
+    "Aria": "Bagian Memori",
+    "Collapse": "Ciutkan {{label}}",
+    "Expand": "Bentangkan {{label}}",
+    "ShowSidebar": "Tampilkan bilah sisi",
+    "HideSidebar": "Sembunyikan bilah sisi",
+    "Title": "Memori"
   }
 }

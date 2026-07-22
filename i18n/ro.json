@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Configurați sincronizarea GitHub",
     "Subscribe": "Abonați-vă pentru a activa sincronizarea",
     "Synced": "Sincronizat · {{time}}",
+    "CloudSynced": "Sincronizat cu SeaMeet Cloud",
     "Syncing": "Se sincronizează...",
     "Timeout": "Sincronizarea a expirat",
     "TokenExpired": "Reautorizați",
@@ -3318,6 +3319,7 @@
     "Recording": "Înregistrare",
     "Screenshot": "Captură",
     "Wiki": "Wiki",
+    "Memory": "Memorie",
     "Cloud": "Cloud",
     "SharedWithMe": "Distribuit cu mine"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Adaugă propriile notițe…",
     "UserSectionTitle": "Notițele tale",
     "RefreshFromSourcesHint_one": "Fă clic pentru a reîmprospăta secțiunea AI din {{count}} notiță sursă. Shift+clic pentru a reciti și notițele sursă.",
-    "RefreshFromSourcesHint_other": "Fă clic pentru a reîmprospăta secțiunea AI din {{count}} notițe sursă. Shift+clic pentru a reciti și notițele sursă."
+    "RefreshFromSourcesHint_other": "Fă clic pentru a reîmprospăta secțiunea AI din {{count}} notițe sursă. Shift+clic pentru a reciti și notițele sursă.",
+    "NoPageYet": "Pagina lui {{name}} nu este încă pe acest dispozitiv — Memory creează o pagină când există destule de distilat și o sincronizează aici.",
+    "ThisEntity": "această entitate",
+    "SourceRecordingNotLocal": "Acea înregistrare sursă nu este pe acest dispozitiv.",
+    "MeetingSourceFallback": "Întâlnire"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Creează Memoria din înregistrări",
+    "AutopilotDesc": "Distilează automat fiecare înregistrare de întâlnire în Memoria întâlnirilor. Activat implicit.",
     "SettingsDesc": "Construiește o bază de cunoștințe de entități, oameni și subiecte din notele și înregistrările tale. Oprit implicit.",
     "SettingsLabel": "Actualizați automat wiki din note"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Sau adaugă-l manual",
     "AgentCopy": "Copiază promptul"
   },
+  "WikiShowcase": {
+    "Headline": "Memoria ta a întâlnirilor",
+    "Subhead": "O bază de cunoștințe care se construiește singură din înregistrările și notițele tale — persoane, organizații, subiecte și ce s-a decis.",
+    "Feature1Title": "Creată din înregistrările tale",
+    "Feature1Desc": "Fiecare întâlnire pe care o înregistrezi este distilată în pagini despre persoanele, organizațiile și subiectele pe care le-a atins.",
+    "Feature2Title": "O memorie unificată",
+    "Feature2Desc": "Notițele și înregistrările îmbogățesc aceleași pagini — o bază de cunoștințe, nu două.",
+    "Feature3Title": "Întreabă, nu săpa",
+    "Feature3Desc": "Caută persoane și subiecte după nume sau alias; deschide o pagină pentru a vedea ce s-a decis și când.",
+    "BuildCta": "Creează Memoria întâlnirilor din înregistrări",
+    "Building": "Se creează…",
+    "BuildRetry": "Reîncearcă",
+    "BuildQueuedCloud": "În coadă — se creează în cloud. Actualizările sosesc prin sincronizare.",
+    "BuildStartedLocal": "Se creează — paginile finalizate apar pe măsură ce sunt distilate.",
+    "ScopeCloud": "Distilează toate înregistrările din spațiul tău implicit, în cloud. Notițele se creează separat prin butonul ✨.",
+    "ScopeLocal": "Distilează toate înregistrările din spațiul tău implicit, pe acest dispozitiv. Notițele se creează separat prin butonul ✨.",
+    "UnsyncedWarn_one": "{{count}} înregistrare de pe acest dispozitiv nu este încă sincronizată și nu va fi inclusă — sincronizează pentru a o adăuga.",
+    "UnsyncedWarn_other": "{{count}} înregistrări de pe acest dispozitiv nu sunt încă sincronizate și nu vor fi incluse — sincronizează pentru a le adăuga."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet îți construiește acum Memoria întâlnirilor din înregistrări — o poți dezactiva oricând din Setări.",
+    "ConsentDismiss": "Am înțeles",
+    "BuildMemory": "Creează Memoria întâlnirilor",
+    "BuildMemoryRunning": "Se creează…",
+    "BuildRetry": "Reîncearcă",
+    "Rebuild": "Reconstruiește",
+    "Paused": "Creare întreruptă — se reia la reînnoirea bugetului.",
     "SearchPlaceholder": "Caută în Memoria ta",
     "SearchAria": "Caută în Memoria ta",
     "Meetings": "Ședințe",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Ce am decis despre {{label}}?",
     "TemplateWhoOwns": "Cine se ocupă de {{label}}?",
     "SearchCount_one": "{{count}} rezultat",
-    "SearchCount_other": "{{count}} rezultate"
+    "SearchCount_other": "{{count}} rezultate",
+    "MemoryEyebrow": "Memorie",
+    "FreshUpdating": "Se actualizează Memoria ta…",
+    "FreshPaused": "În pauză — se reia când bugetul tău se reîmprospătează.",
+    "FreshOffline": "Offline — se afișează ultima Memorie sincronizată.",
+    "FreshJustUpdated": "Memorie actualizată.",
+    "CloudUpdate": "Actualizează memoria",
+    "CloudUpdateRunning": "Se solicită actualizarea…",
+    "CloudUpdateRequested": "Actualizare solicitată — va sosi prin sincronizare.",
+    "SearchEntitiesPlaceholder": "Caută persoane, subiecte și întâlniri",
+    "MemorySubtitle": "Creat automat din înregistrările tale — persoanele, subiectele și organizațiile pe care le discuți, fiecare distilat într-o pagină care se actualizează pe măsură ce înregistrezi mai mult."
   },
   "WikiPage": {
     "CorrectThis": "Corectează",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Corectat de tine — rescriere în așteptare.",
     "Saving": "Se salvează…",
     "SubmitCorrection": "Trimite corectura"
+  },
+  "MemorySidebar": {
+    "Home": "Acasă",
+    "Aria": "Secțiuni de memorie",
+    "Collapse": "Restrânge {{label}}",
+    "Expand": "Extinde {{label}}",
+    "ShowSidebar": "Afișează bara laterală",
+    "HideSidebar": "Ascunde bara laterală",
+    "Title": "Memorie"
   }
 }

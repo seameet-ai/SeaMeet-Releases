@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Skonfiguruj synchronizację z GitHub",
     "Subscribe": "Subskrybuj, aby włączyć synchronizację",
     "Synced": "Zsynchronizowano · {{time}}",
+    "CloudSynced": "Zsynchronizowano z SeaMeet Cloud",
     "Syncing": "Synchronizowanie...",
     "Timeout": "Synchronizacja przekroczyła limit czasu",
     "TokenExpired": "Ponowna autoryzacja",
@@ -3318,6 +3319,7 @@
     "Recording": "Nagranie",
     "Screenshot": "Zrzut ekranu",
     "Wiki": "Wiki",
+    "Memory": "Pamięć",
     "Cloud": "Chmura",
     "SharedWithMe": "Udostępnione mi"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Dodaj własne notatki…",
     "UserSectionTitle": "Twoje notatki",
     "RefreshFromSourcesHint_one": "Kliknij, aby odświeżyć sekcję AI z {{count}} notatki źródłowej. Shift+kliknięcie, aby ponownie odczytać notatki źródłowe.",
-    "RefreshFromSourcesHint_other": "Kliknij, aby odświeżyć sekcję AI z {{count}} notatek źródłowych. Shift+kliknięcie, aby ponownie odczytać notatki źródłowe."
+    "RefreshFromSourcesHint_other": "Kliknij, aby odświeżyć sekcję AI z {{count}} notatek źródłowych. Shift+kliknięcie, aby ponownie odczytać notatki źródłowe.",
+    "NoPageYet": "Strona {{name}} nie jest jeszcze na tym urządzeniu — Memory tworzy stronę, gdy jest dość materiału, i synchronizuje ją tutaj.",
+    "ThisEntity": "ten element",
+    "SourceRecordingNotLocal": "Tego nagrania źródłowego nie ma na tym urządzeniu.",
+    "MeetingSourceFallback": "Spotkanie"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Buduj Pamięć z nagrań",
+    "AutopilotDesc": "Automatycznie destyluje każde nagranie spotkania do Twojej Pamięci spotkań. Domyślnie włączone.",
     "SettingsDesc": "Tworzy bazę wiedzy o podmiotach, osobach i tematach na podstawie Twoich notatek i nagrań. Domyślnie wyłączone.",
     "SettingsLabel": "Automatycznie aktualizuj wiki z notatek"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Albo dodaj ręcznie",
     "AgentCopy": "Kopiuj prompt"
   },
+  "WikiShowcase": {
+    "Headline": "Twoja Pamięć spotkań",
+    "Subhead": "Baza wiedzy, która buduje się sama z Twoich nagrań i notatek — osoby, organizacje, tematy i to, co ustalono.",
+    "Feature1Title": "Zbudowana z Twoich nagrań",
+    "Feature1Desc": "Każde nagrane spotkanie jest destylowane do stron o osobach, organizacjach i tematach, których dotyczyło.",
+    "Feature2Title": "Jedna spójna pamięć",
+    "Feature2Desc": "Notatki i nagrania wzbogacają te same strony — jedna baza wiedzy, nie dwie.",
+    "Feature3Title": "Pytaj, nie szukaj",
+    "Feature3Desc": "Wyszukuj osoby i tematy po nazwie lub aliasie; otwórz stronę, aby zobaczyć, co i kiedy ustalono.",
+    "BuildCta": "Zbuduj Pamięć spotkań z nagrań",
+    "Building": "Budowanie…",
+    "BuildRetry": "Spróbuj ponownie",
+    "BuildQueuedCloud": "W kolejce — budowanie w chmurze. Aktualizacje docierają przez synchronizację.",
+    "BuildStartedLocal": "Budowanie — gotowe strony pojawiają się w miarę destylacji.",
+    "ScopeCloud": "Destyluje wszystkie nagrania w domyślnym obszarze roboczym, w chmurze. Notatki budują się osobno przyciskiem ✨.",
+    "ScopeLocal": "Destyluje wszystkie nagrania w domyślnym obszarze roboczym, na tym urządzeniu. Notatki budują się osobno przyciskiem ✨.",
+    "UnsyncedWarn_one": "{{count}} nagranie na tym urządzeniu nie jest jeszcze zsynchronizowane i nie zostanie uwzględnione — zsynchronizuj, aby je dodać.",
+    "UnsyncedWarn_other": "{{count}} nagrań na tym urządzeniu nie jest jeszcze zsynchronizowanych i nie zostanie uwzględnionych — zsynchronizuj, aby je dodać."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet buduje teraz Twoją Pamięć spotkań z nagrań — możesz to wyłączyć w dowolnej chwili w Ustawieniach.",
+    "ConsentDismiss": "Rozumiem",
+    "BuildMemory": "Zbuduj Pamięć spotkań",
+    "BuildMemoryRunning": "Budowanie…",
+    "BuildRetry": "Spróbuj ponownie",
+    "Rebuild": "Przebuduj",
+    "Paused": "Budowanie wstrzymane — wznowi się po odnowieniu budżetu.",
     "SearchPlaceholder": "Przeszukaj swoją Pamięć",
     "SearchAria": "Przeszukaj swoją Pamięć",
     "Meetings": "Spotkania",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Co postanowiliśmy w sprawie {{label}}?",
     "TemplateWhoOwns": "Kto odpowiada za {{label}}?",
     "SearchCount_one": "{{count}} wynik",
-    "SearchCount_other": "{{count}} wyników"
+    "SearchCount_other": "{{count}} wyników",
+    "MemoryEyebrow": "Pamięć",
+    "FreshUpdating": "Aktualizowanie Twojej Pamięci…",
+    "FreshPaused": "Wstrzymano — wznowi się po odnowieniu budżetu.",
+    "FreshOffline": "Offline — pokazuję ostatnio zsynchronizowaną Pamięć.",
+    "FreshJustUpdated": "Pamięć zaktualizowana.",
+    "CloudUpdate": "Zaktualizuj pamięć",
+    "CloudUpdateRunning": "Żądanie aktualizacji…",
+    "CloudUpdateRequested": "Zażądano aktualizacji — dotrze przez synchronizację.",
+    "SearchEntitiesPlaceholder": "Szukaj osób, tematów i spotkań",
+    "MemorySubtitle": "Tworzone automatycznie z Twoich nagrań — osoby, tematy i organizacje, o których mówisz, każde ujęte na stronie aktualizowanej w miarę kolejnych nagrań."
   },
   "WikiPage": {
     "CorrectThis": "Popraw",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Poprawione przez Ciebie — oczekiwanie na przepisanie.",
     "Saving": "Zapisywanie…",
     "SubmitCorrection": "Wyślij poprawkę"
+  },
+  "MemorySidebar": {
+    "Home": "Główna",
+    "Aria": "Sekcje pamięci",
+    "Collapse": "Zwiń {{label}}",
+    "Expand": "Rozwiń {{label}}",
+    "ShowSidebar": "Pokaż pasek boczny",
+    "HideSidebar": "Ukryj pasek boczny",
+    "Title": "Pamięć"
   }
 }

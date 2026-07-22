@@ -3272,6 +3272,7 @@
     "SetUpGithub": "設定 GitHub 同步",
     "Subscribe": "訂閱以啟用同步",
     "Synced": "已同步 · {{time}}",
+    "CloudSynced": "已同步至 SeaMeet 雲端",
     "Syncing": "同步中...",
     "Timeout": "同步逾時",
     "TokenExpired": "重新授權",
@@ -3318,6 +3319,7 @@
     "Recording": "錄製中",
     "Screenshot": "截圖",
     "Wiki": "知識庫",
+    "Memory": "記憶",
     "Cloud": "雲端",
     "SharedWithMe": "與我共用"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "新增您自己的筆記…",
     "UserSectionTitle": "您的筆記",
     "RefreshFromSourcesHint_one": "點擊可從 {{count}} 則來源筆記重新整理 AI 區段。Shift+點擊可同時重新讀取來源筆記。",
-    "RefreshFromSourcesHint_other": "點擊可從 {{count}} 則來源筆記重新整理 AI 區段。Shift+點擊可同時重新讀取來源筆記。"
+    "RefreshFromSourcesHint_other": "點擊可從 {{count}} 則來源筆記重新整理 AI 區段。Shift+點擊可同時重新讀取來源筆記。",
+    "NoPageYet": "{{name}} 的頁面尚未同步到此裝置——當有足夠內容可提煉時，Memory 會建立頁面，並在此同步。",
+    "ThisEntity": "這個項目",
+    "SourceRecordingNotLocal": "該來源錄音不在此裝置上。",
+    "MeetingSourceFallback": "會議"
   },
   "WikiFeature": {
+    "AutopilotLabel": "從錄音建立記憶",
+    "AutopilotDesc": "自動將每個會議錄音提煉進你的會議記憶。預設開啟。",
     "SettingsDesc": "從您的筆記和錄音中建立實體、人物和主題的知識庫。預設為關閉。",
     "SettingsLabel": "從筆記自動更新知識庫"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "或手動新增",
     "AgentCopy": "複製提示詞"
   },
+  "WikiShowcase": {
+    "Headline": "你的會議記憶",
+    "Subhead": "一個從你的錄音與筆記中自動建立的知識庫——人物、組織、主題，以及所做的決定。",
+    "Feature1Title": "由你的錄音建立",
+    "Feature1Desc": "你錄製的每場會議都會被提煉成關於其涉及的人物、組織與主題的頁面。",
+    "Feature2Title": "統一的單一記憶",
+    "Feature2Desc": "筆記與錄音共同豐富同一批頁面——一個知識庫，而非兩個。",
+    "Feature3Title": "直接提問，無需翻找",
+    "Feature3Desc": "以名稱或別名搜尋人物與主題；開啟頁面即可看到何時決定了什麼。",
+    "BuildCta": "從錄音建立會議記憶",
+    "Building": "建立中…",
+    "BuildRetry": "重試",
+    "BuildQueuedCloud": "已排隊——正在雲端建立。更新將透過同步送達。",
+    "BuildStartedLocal": "建立中——完成的頁面會隨提煉陸續出現。",
+    "ScopeCloud": "在雲端提煉你預設工作區中的所有錄音。筆記透過 ✨ 按鈕單獨建立。",
+    "ScopeLocal": "在此裝置上提煉你預設工作區中的所有錄音。筆記透過 ✨ 按鈕單獨建立。",
+    "UnsyncedWarn_one": "本裝置上有 {{count}} 個錄音尚未同步，不會被包含——請同步以加入。",
+    "UnsyncedWarn_other": "本裝置上有 {{count}} 個錄音尚未同步，不會被包含——請同步以加入。"
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet 正在從錄音建立你的會議記憶——可隨時在設定中關閉。",
+    "ConsentDismiss": "知道了",
+    "BuildMemory": "建立會議記憶",
+    "BuildMemoryRunning": "建立中…",
+    "BuildRetry": "重試",
+    "Rebuild": "重新建立",
+    "Paused": "建立已暫停——預算更新後繼續。",
     "SearchPlaceholder": "搜尋你的記憶",
     "SearchAria": "搜尋你的記憶",
     "Meetings": "會議",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "關於{{label}}我們決定了什麼？",
     "TemplateWhoOwns": "誰負責{{label}}？",
     "SearchCount_one": "{{count}} 個結果",
-    "SearchCount_other": "{{count}} 個結果"
+    "SearchCount_other": "{{count}} 個結果",
+    "MemoryEyebrow": "記憶",
+    "FreshUpdating": "正在更新你的記憶…",
+    "FreshPaused": "已暫停——預算更新後繼續。",
+    "FreshOffline": "離線——顯示你上次同步的記憶。",
+    "FreshJustUpdated": "記憶已更新。",
+    "CloudUpdate": "更新記憶",
+    "CloudUpdateRunning": "正在請求更新…",
+    "CloudUpdateRequested": "已請求更新——將透過同步送達。",
+    "SearchEntitiesPlaceholder": "搜尋人物、主題與會議",
+    "MemorySubtitle": "由您的錄音自動建立——您談論到的人物、主題與組織，各自提煉成一個頁面，並隨著您錄製更多內容而更新。"
   },
   "WikiPage": {
     "CorrectThis": "修正",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "你已修正 — 等待重寫。",
     "Saving": "儲存中…",
     "SubmitCorrection": "送出修正"
+  },
+  "MemorySidebar": {
+    "Home": "首頁",
+    "Aria": "記憶區塊",
+    "Collapse": "收合 {{label}}",
+    "Expand": "展開 {{label}}",
+    "ShowSidebar": "顯示側邊欄",
+    "HideSidebar": "隱藏側邊欄",
+    "Title": "記憶"
   }
 }

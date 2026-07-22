@@ -2925,6 +2925,7 @@
     "GroupKnowledge": "Knowledge",
     "Notes": "Notes",
     "Wiki": "Wiki",
+    "Memory": "Memory",
     "GroupTools": "Tools",
     "Cloud": "Cloud",
     "SharedWithMe": "Shared with me"
@@ -3168,10 +3169,16 @@
       "BuildAllAria": "Build wiki from all notes"
     },
     "RefreshFromSourcesHint_one": "Click to refresh the AI section from {{count}} source note. Shift+click to also re-read source notes.",
-    "RefreshFromSourcesHint_other": "Click to refresh the AI section from {{count}} source notes. Shift+click to also re-read source notes."
+    "RefreshFromSourcesHint_other": "Click to refresh the AI section from {{count}} source notes. Shift+click to also re-read source notes.",
+    "NoPageYet": "{{name}}’s page isn’t on this device yet — Memory adds a page once there’s enough to distill, and it syncs here when it does.",
+    "ThisEntity": "this entity",
+    "SourceRecordingNotLocal": "That source recording isn’t on this device.",
+    "MeetingSourceFallback": "Meeting"
   },
   "WikiFeature": {
     "SettingsLabel": "Auto-update wiki from notes",
+    "AutopilotLabel": "Build Memory from recordings",
+    "AutopilotDesc": "Automatically distill each meeting recording into your Meeting Memory. On by default.",
     "SettingsDesc": "Builds a knowledge base of entities, people, and topics from your notes and recordings. Off by default."
   },
   "WikiOnboarding": {
@@ -3708,6 +3715,7 @@
     "CreatingRepo": "Creating repository...",
     "Unpushed": "{{count}} unpushed",
     "Synced": "Synced · {{time}}",
+    "CloudSynced": "Synced to SeaMeet Cloud",
     "Timeout": "Sync timed out",
     "Unpushed_one": "{{count}} unpushed",
     "Unpushed_other": "{{count}} unpushed"
@@ -4029,6 +4037,25 @@
     "ManualInstallTitle": "Or add it manually",
     "AgentCopy": "Copy prompt"
   },
+  "WikiShowcase": {
+    "Headline": "Your Meeting Memory",
+    "Subhead": "A knowledge base that builds itself from your recordings and notes — people, organizations, topics, and what was decided.",
+    "Feature1Title": "Built from your recordings",
+    "Feature1Desc": "Every meeting you record is distilled into pages about the people, orgs, and topics it touched.",
+    "Feature2Title": "One memory, unified",
+    "Feature2Desc": "Notes and recordings enrich the same pages — one knowledge base, not two.",
+    "Feature3Title": "Ask, don’t dig",
+    "Feature3Desc": "Search people and topics by name or alias; open a page to see what was decided and when.",
+    "BuildCta": "Build Meeting Memory from recordings",
+    "Building": "Building…",
+    "BuildRetry": "Try again",
+    "BuildQueuedCloud": "Queued — building in the cloud. Updates arrive by sync.",
+    "BuildStartedLocal": "Building — finished pages appear as they’re distilled.",
+    "ScopeCloud": "Distills all recordings in your default workspace, in the cloud. Notes build separately via the ✨ button.",
+    "ScopeLocal": "Distills all recordings in your default workspace, on this device. Notes build separately via the ✨ button.",
+    "UnsyncedWarn_one": "{{count}} recording on this device isn’t synced yet and won’t be included — sync to add it.",
+    "UnsyncedWarn_other": "{{count}} recordings on this device aren’t synced yet and won’t be included — sync to add them."
+  },
   "WikiHome": {
     "SearchPlaceholder": "Search your Memory",
     "SearchAria": "Search your Memory",
@@ -4044,11 +4071,28 @@
     "NoUpdates": "No updates this week.",
     "BrowseMeetings": "Browse all {{label}}",
     "CloudManaged": "Managed in cloud — updates arrive by sync.",
+    "ConsentExplainer": "SeaMeet is now building your Meeting Memory from recordings — turn it off anytime in Settings.",
+    "ConsentDismiss": "Got it",
+    "BuildMemory": "Build Meeting Memory",
+    "BuildMemoryRunning": "Building…",
+    "BuildRetry": "Try again",
+    "Rebuild": "Rebuild",
+    "Paused": "Building paused — resumes when budget refreshes.",
     "TemplateLatest": "What's the latest with {{label}}?",
     "TemplateDecided": "What did we decide about {{label}}?",
     "TemplateWhoOwns": "Who owns {{label}}?",
     "SearchCount_one": "{{count}} result",
-    "SearchCount_other": "{{count}} results"
+    "SearchCount_other": "{{count}} results",
+    "MemoryEyebrow": "Memory",
+    "FreshUpdating": "Updating your Memory…",
+    "FreshPaused": "Paused — resumes when your budget refreshes.",
+    "FreshOffline": "Offline — showing your last synced Memory.",
+    "FreshJustUpdated": "Memory updated.",
+    "CloudUpdate": "Update Memory",
+    "CloudUpdateRunning": "Requesting update…",
+    "CloudUpdateRequested": "Update requested — it’ll arrive by sync.",
+    "SearchEntitiesPlaceholder": "Search people, topics & meetings",
+    "MemorySubtitle": "Built automatically from your recordings — the people, topics, and organizations you discuss, each distilled into a page that updates as you record more."
   },
   "WikiPage": {
     "CorrectThis": "Correct this",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Corrected by you — rewrite pending.",
     "Saving": "Saving…",
     "SubmitCorrection": "Submit correction"
+  },
+  "MemorySidebar": {
+    "Home": "Home",
+    "Aria": "Memory sections",
+    "Collapse": "Collapse {{label}}",
+    "Expand": "Expand {{label}}",
+    "ShowSidebar": "Show sidebar",
+    "HideSidebar": "Hide sidebar",
+    "Title": "Memory"
   }
 }

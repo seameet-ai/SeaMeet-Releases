@@ -3272,6 +3272,7 @@
     "SetUpGithub": "GitHub同期を設定する",
     "Subscribe": "同期を有効にするには購読してください",
     "Synced": "同期済み · {{time}}",
+    "CloudSynced": "SeaMeet クラウドに同期済み",
     "Syncing": "同期中...",
     "Timeout": "同期がタイムアウトしました",
     "TokenExpired": "再認証",
@@ -3318,6 +3319,7 @@
     "Recording": "録音",
     "Screenshot": "スクリーンショット",
     "Wiki": "Wiki",
+    "Memory": "メモリー",
     "Cloud": "クラウド",
     "SharedWithMe": "自分と共有"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "ご自身のメモを追加…",
     "UserSectionTitle": "あなたのノート",
     "RefreshFromSourcesHint_one": "クリックすると{{count}}件のソースノートからAIセクションを更新します。Shift+クリックでソースノートも再読み込みします。",
-    "RefreshFromSourcesHint_other": "クリックすると{{count}}件のソースノートからAIセクションを更新します。Shift+クリックでソースノートも再読み込みします。"
+    "RefreshFromSourcesHint_other": "クリックすると{{count}}件のソースノートからAIセクションを更新します。Shift+クリックでソースノートも再読み込みします。",
+    "NoPageYet": "{{name}} のページはまだこのデバイスにありません。抽出できる内容が十分になると Memory がページを作成し、ここに同期されます。",
+    "ThisEntity": "この項目",
+    "SourceRecordingNotLocal": "そのソース録音はこのデバイスにありません。",
+    "MeetingSourceFallback": "会議"
   },
   "WikiFeature": {
+    "AutopilotLabel": "録音からメモリーを構築",
+    "AutopilotDesc": "各ミーティング録音を自動的にミーティングメモリーへ要約します。既定でオン。",
     "SettingsDesc": "メモや録音からエンティティ、人物、トピックの知識ベースを構築します。デフォルトではオフです。",
     "SettingsLabel": "メモからの Wiki の自動更新"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "または手動で追加",
     "AgentCopy": "プロンプトをコピー"
   },
+  "WikiShowcase": {
+    "Headline": "あなたのミーティングメモリー",
+    "Subhead": "録音とノートから自動的に構築されるナレッジベース — 人物、組織、トピック、そして決まったこと。",
+    "Feature1Title": "録音から構築",
+    "Feature1Desc": "録音したすべてのミーティングが、関わった人物・組織・トピックのページへと要約されます。",
+    "Feature2Title": "一つに統合されたメモリー",
+    "Feature2Desc": "ノートと録音が同じページを充実させます — ナレッジベースは二つではなく一つ。",
+    "Feature3Title": "探すのではなく、尋ねる",
+    "Feature3Desc": "人物やトピックを名前や別名で検索。ページを開けば、いつ何が決まったかがわかります。",
+    "BuildCta": "録音からミーティングメモリーを構築",
+    "Building": "構築中…",
+    "BuildRetry": "再試行",
+    "BuildQueuedCloud": "キューに追加 — クラウドで構築中。更新は同期で届きます。",
+    "BuildStartedLocal": "構築中 — 完成したページは要約され次第表示されます。",
+    "ScopeCloud": "既定のワークスペースのすべての録音をクラウドで要約します。ノートは ✨ ボタンから別途構築します。",
+    "ScopeLocal": "既定のワークスペースのすべての録音をこのデバイスで要約します。ノートは ✨ ボタンから別途構築します。",
+    "UnsyncedWarn_one": "このデバイス上の{{count}}件の録音がまだ同期されておらず含まれません — 同期して追加してください。",
+    "UnsyncedWarn_other": "このデバイス上の{{count}}件の録音がまだ同期されておらず含まれません — 同期して追加してください。"
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet は録音からミーティングメモリーを構築しています。設定でいつでもオフにできます。",
+    "ConsentDismiss": "OK",
+    "BuildMemory": "ミーティングメモリーを構築",
+    "BuildMemoryRunning": "構築中…",
+    "BuildRetry": "再試行",
+    "Rebuild": "再構築",
+    "Paused": "構築を一時停止しました — 予算が更新されると再開します。",
     "SearchPlaceholder": "メモリーを検索",
     "SearchAria": "メモリーを検索",
     "Meetings": "会議",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "{{label}}について何を決めましたか？",
     "TemplateWhoOwns": "{{label}}の担当は誰ですか？",
     "SearchCount_one": "{{count}}件の結果",
-    "SearchCount_other": "{{count}}件の結果"
+    "SearchCount_other": "{{count}}件の結果",
+    "MemoryEyebrow": "メモリー",
+    "FreshUpdating": "メモリーを更新しています…",
+    "FreshPaused": "一時停止中 — 予算が更新されると再開します。",
+    "FreshOffline": "オフライン — 最後に同期したメモリーを表示しています。",
+    "FreshJustUpdated": "メモリーを更新しました。",
+    "CloudUpdate": "メモリーを更新",
+    "CloudUpdateRunning": "更新をリクエスト中…",
+    "CloudUpdateRequested": "更新をリクエストしました — 同期で届きます。",
+    "SearchEntitiesPlaceholder": "人物・トピック・会議を検索",
+    "MemorySubtitle": "あなたの録音から自動的に作成されます。話題に上った人物・トピック・組織がそれぞれページにまとめられ、録音するほど更新されます。"
   },
   "WikiPage": {
     "CorrectThis": "修正する",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "あなたが修正済み — 書き直し待ち。",
     "Saving": "保存中…",
     "SubmitCorrection": "修正を送信"
+  },
+  "MemorySidebar": {
+    "Home": "ホーム",
+    "Aria": "メモリーのセクション",
+    "Collapse": "{{label}} を折りたたむ",
+    "Expand": "{{label}} を展開",
+    "ShowSidebar": "サイドバーを表示",
+    "HideSidebar": "サイドバーを非表示",
+    "Title": "メモリー"
   }
 }

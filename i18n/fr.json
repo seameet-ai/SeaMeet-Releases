@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Configurer la synchronisation GitHub",
     "Subscribe": "Abonnez-vous pour activer la synchronisation",
     "Synced": "Synchronisé · {{time}}",
+    "CloudSynced": "Synchronisé avec SeaMeet Cloud",
     "Syncing": "Synchronisation...",
     "Timeout": "La synchronisation a expiré",
     "TokenExpired": "Réautoriser",
@@ -3318,6 +3319,7 @@
     "Recording": "Enregistrement",
     "Screenshot": "Capture",
     "Wiki": "Wiki",
+    "Memory": "Mémoire",
     "Cloud": "Cloud",
     "SharedWithMe": "Partagé avec moi"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Ajoutez vos propres notes…",
     "UserSectionTitle": "Vos notes",
     "RefreshFromSourcesHint_one": "Cliquez pour actualiser la section IA à partir de {{count}} note source. Maj+clic pour relire aussi les notes source.",
-    "RefreshFromSourcesHint_other": "Cliquez pour actualiser la section IA à partir de {{count}} notes source. Maj+clic pour relire aussi les notes source."
+    "RefreshFromSourcesHint_other": "Cliquez pour actualiser la section IA à partir de {{count}} notes source. Maj+clic pour relire aussi les notes source.",
+    "NoPageYet": "La page de {{name}} n’est pas encore sur cet appareil — Memory crée une page dès qu’il y a assez à distiller, puis la synchronise ici.",
+    "ThisEntity": "cette entité",
+    "SourceRecordingNotLocal": "Cet enregistrement source n’est pas sur cet appareil.",
+    "MeetingSourceFallback": "Réunion"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Créer la Mémoire à partir des enregistrements",
+    "AutopilotDesc": "Distille automatiquement chaque enregistrement de réunion dans votre Mémoire de réunions. Activé par défaut.",
     "SettingsDesc": "Crée une base de connaissances d'entités, de personnes et de sujets à partir de vos notes et enregistrements. Désactivé par défaut.",
     "SettingsLabel": "Wiki de mise à jour automatique à partir des notes"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Ou l'ajouter manuellement",
     "AgentCopy": "Copier l'invite"
   },
+  "WikiShowcase": {
+    "Headline": "Votre Mémoire de réunions",
+    "Subhead": "Une base de connaissances qui se construit seule à partir de vos enregistrements et notes — personnes, organisations, sujets et ce qui a été décidé.",
+    "Feature1Title": "Créée à partir de vos enregistrements",
+    "Feature1Desc": "Chaque réunion que vous enregistrez est distillée en pages sur les personnes, organisations et sujets qu’elle a abordés.",
+    "Feature2Title": "Une mémoire unifiée",
+    "Feature2Desc": "Les notes et les enregistrements enrichissent les mêmes pages — une base de connaissances, pas deux.",
+    "Feature3Title": "Demandez, ne fouillez pas",
+    "Feature3Desc": "Recherchez les personnes et sujets par nom ou alias ; ouvrez une page pour voir ce qui a été décidé et quand.",
+    "BuildCta": "Créer la Mémoire de réunions à partir des enregistrements",
+    "Building": "Création…",
+    "BuildRetry": "Réessayer",
+    "BuildQueuedCloud": "En file d’attente — création dans le cloud. Les mises à jour arrivent par synchronisation.",
+    "BuildStartedLocal": "Création — les pages terminées apparaissent au fur et à mesure de leur distillation.",
+    "ScopeCloud": "Distille tous les enregistrements de votre espace par défaut, dans le cloud. Les notes se créent séparément via le bouton ✨.",
+    "ScopeLocal": "Distille tous les enregistrements de votre espace par défaut, sur cet appareil. Les notes se créent séparément via le bouton ✨.",
+    "UnsyncedWarn_one": "{{count}} enregistrement sur cet appareil n’est pas encore synchronisé et ne sera pas inclus — synchronisez pour l’ajouter.",
+    "UnsyncedWarn_other": "{{count}} enregistrements sur cet appareil ne sont pas encore synchronisés et ne seront pas inclus — synchronisez pour les ajouter."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet construit désormais votre Mémoire de réunions à partir des enregistrements — vous pouvez la désactiver à tout moment dans les Paramètres.",
+    "ConsentDismiss": "Compris",
+    "BuildMemory": "Créer la Mémoire de réunions",
+    "BuildMemoryRunning": "Création…",
+    "BuildRetry": "Réessayer",
+    "Rebuild": "Reconstruire",
+    "Paused": "Création en pause — reprend au renouvellement du budget.",
     "SearchPlaceholder": "Rechercher dans votre Mémoire",
     "SearchAria": "Rechercher dans votre Mémoire",
     "Meetings": "Réunions",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Qu'avons-nous décidé à propos de {{label}} ?",
     "TemplateWhoOwns": "Qui est responsable de {{label}} ?",
     "SearchCount_one": "{{count}} résultat",
-    "SearchCount_other": "{{count}} résultats"
+    "SearchCount_other": "{{count}} résultats",
+    "MemoryEyebrow": "Mémoire",
+    "FreshUpdating": "Mise à jour de votre Mémoire…",
+    "FreshPaused": "En pause — reprend au renouvellement de votre budget.",
+    "FreshOffline": "Hors ligne — affichage de votre dernière Mémoire synchronisée.",
+    "FreshJustUpdated": "Mémoire mise à jour.",
+    "CloudUpdate": "Actualiser la mémoire",
+    "CloudUpdateRunning": "Demande de mise à jour…",
+    "CloudUpdateRequested": "Mise à jour demandée — elle arrivera par synchronisation.",
+    "SearchEntitiesPlaceholder": "Rechercher personnes, sujets et réunions",
+    "MemorySubtitle": "Créé automatiquement à partir de vos enregistrements — les personnes, sujets et organisations que vous évoquez, chacun distillé en une page qui se met à jour au fil de vos enregistrements."
   },
   "WikiPage": {
     "CorrectThis": "Corriger",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Corrigé par vous — réécriture en attente.",
     "Saving": "Enregistrement…",
     "SubmitCorrection": "Envoyer la correction"
+  },
+  "MemorySidebar": {
+    "Home": "Accueil",
+    "Aria": "Sections de la mémoire",
+    "Collapse": "Réduire {{label}}",
+    "Expand": "Développer {{label}}",
+    "ShowSidebar": "Afficher la barre latérale",
+    "HideSidebar": "Masquer la barre latérale",
+    "Title": "Mémoire"
   }
 }

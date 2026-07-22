@@ -3272,6 +3272,7 @@
     "SetUpGithub": "Configura la sincronizzazione con GitHub",
     "Subscribe": "Iscriviti per abilitare la sincronizzazione",
     "Synced": "Sincronizzato · {{time}}",
+    "CloudSynced": "Sincronizzato su SeaMeet Cloud",
     "Syncing": "Sincronizzazione in corso...",
     "Timeout": "La sincronizzazione è scaduta",
     "TokenExpired": "Riautorizza",
@@ -3318,6 +3319,7 @@
     "Recording": "Registrazione",
     "Screenshot": "Schermata",
     "Wiki": "Wiki",
+    "Memory": "Memoria",
     "Cloud": "Cloud",
     "SharedWithMe": "Condiviso con me"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Aggiungi note personali…",
     "UserSectionTitle": "Le tue note",
     "RefreshFromSourcesHint_one": "Fai clic per aggiornare la sezione IA da {{count}} nota di origine. Maiusc+clic per rileggere anche le note di origine.",
-    "RefreshFromSourcesHint_other": "Fai clic per aggiornare la sezione IA da {{count}} note di origine. Maiusc+clic per rileggere anche le note di origine."
+    "RefreshFromSourcesHint_other": "Fai clic per aggiornare la sezione IA da {{count}} note di origine. Maiusc+clic per rileggere anche le note di origine.",
+    "NoPageYet": "La pagina di {{name}} non è ancora su questo dispositivo: Memory crea una pagina quando c’è abbastanza da distillare e la sincronizza qui.",
+    "ThisEntity": "questa entità",
+    "SourceRecordingNotLocal": "Quella registrazione di origine non è su questo dispositivo.",
+    "MeetingSourceFallback": "Riunione"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Crea Memoria dalle registrazioni",
+    "AutopilotDesc": "Distilla automaticamente ogni registrazione di riunione nella tua Memoria delle riunioni. Attivo di default.",
     "SettingsDesc": "Crea una base di conoscenza di entità, persone e argomenti dalle tue note e registrazioni. Disattivato per impostazione predefinita.",
     "SettingsLabel": "Wiki di aggiornamento automatico dalle note"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "Oppure aggiungilo manualmente",
     "AgentCopy": "Copia il prompt"
   },
+  "WikiShowcase": {
+    "Headline": "La tua Memoria delle riunioni",
+    "Subhead": "Una base di conoscenza che si costruisce da sola a partire dalle tue registrazioni e note: persone, organizzazioni, argomenti e ciò che è stato deciso.",
+    "Feature1Title": "Creata dalle tue registrazioni",
+    "Feature1Desc": "Ogni riunione che registri viene distillata in pagine sulle persone, organizzazioni e argomenti che ha toccato.",
+    "Feature2Title": "Una memoria unificata",
+    "Feature2Desc": "Note e registrazioni arricchiscono le stesse pagine: una base di conoscenza, non due.",
+    "Feature3Title": "Chiedi, non scavare",
+    "Feature3Desc": "Cerca persone e argomenti per nome o alias; apri una pagina per vedere cosa è stato deciso e quando.",
+    "BuildCta": "Crea la Memoria delle riunioni dalle registrazioni",
+    "Building": "Creazione…",
+    "BuildRetry": "Riprova",
+    "BuildQueuedCloud": "In coda — creazione nel cloud. Gli aggiornamenti arrivano tramite sincronizzazione.",
+    "BuildStartedLocal": "Creazione — le pagine completate appaiono man mano che vengono distillate.",
+    "ScopeCloud": "Distilla tutte le registrazioni del tuo spazio predefinito, nel cloud. Le note si creano a parte con il pulsante ✨.",
+    "ScopeLocal": "Distilla tutte le registrazioni del tuo spazio predefinito, su questo dispositivo. Le note si creano a parte con il pulsante ✨.",
+    "UnsyncedWarn_one": "{{count}} registrazione su questo dispositivo non è ancora sincronizzata e non sarà inclusa: sincronizzala per aggiungerla.",
+    "UnsyncedWarn_other": "{{count}} registrazioni su questo dispositivo non sono ancora sincronizzate e non saranno incluse: sincronizzale per aggiungerle."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet sta ora creando la tua Memoria delle riunioni dalle registrazioni — puoi disattivarla quando vuoi nelle Impostazioni.",
+    "ConsentDismiss": "Ho capito",
+    "BuildMemory": "Crea Memoria delle riunioni",
+    "BuildMemoryRunning": "Creazione…",
+    "BuildRetry": "Riprova",
+    "Rebuild": "Ricostruisci",
+    "Paused": "Creazione in pausa — riprende al rinnovo del budget.",
     "SearchPlaceholder": "Cerca nella tua Memoria",
     "SearchAria": "Cerca nella tua Memoria",
     "Meetings": "Riunioni",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Cosa abbiamo deciso su {{label}}?",
     "TemplateWhoOwns": "Chi si occupa di {{label}}?",
     "SearchCount_one": "{{count}} risultato",
-    "SearchCount_other": "{{count}} risultati"
+    "SearchCount_other": "{{count}} risultati",
+    "MemoryEyebrow": "Memoria",
+    "FreshUpdating": "Aggiornamento della tua Memoria…",
+    "FreshPaused": "In pausa — riprende al rinnovo del tuo budget.",
+    "FreshOffline": "Offline — mostra la tua ultima Memoria sincronizzata.",
+    "FreshJustUpdated": "Memoria aggiornata.",
+    "CloudUpdate": "Aggiorna memoria",
+    "CloudUpdateRunning": "Richiesta di aggiornamento…",
+    "CloudUpdateRequested": "Aggiornamento richiesto — arriverà tramite sincronizzazione.",
+    "SearchEntitiesPlaceholder": "Cerca persone, argomenti e riunioni",
+    "MemorySubtitle": "Creato automaticamente dalle tue registrazioni: le persone, gli argomenti e le organizzazioni di cui parli, ciascuno distillato in una pagina che si aggiorna man mano che registri."
   },
   "WikiPage": {
     "CorrectThis": "Correggi",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Corretto da te — riscrittura in attesa.",
     "Saving": "Salvataggio…",
     "SubmitCorrection": "Invia correzione"
+  },
+  "MemorySidebar": {
+    "Home": "Home",
+    "Aria": "Sezioni della memoria",
+    "Collapse": "Comprimi {{label}}",
+    "Expand": "Espandi {{label}}",
+    "ShowSidebar": "Mostra barra laterale",
+    "HideSidebar": "Nascondi barra laterale",
+    "Title": "Memoria"
   }
 }

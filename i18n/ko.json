@@ -3272,6 +3272,7 @@
     "SetUpGithub": "GitHub 동기화 설정",
     "Subscribe": "동기화를 활성화하려면 구독하세요",
     "Synced": "동기화됨 · {{time}}",
+    "CloudSynced": "SeaMeet 클라우드에 동기화됨",
     "Syncing": "동기화 중...",
     "Timeout": "동기화 시간이 초과되었습니다",
     "TokenExpired": "재인증",
@@ -3318,6 +3319,7 @@
     "Recording": "녹음",
     "Screenshot": "스크린샷",
     "Wiki": "위키",
+    "Memory": "메모리",
     "Cloud": "클라우드",
     "SharedWithMe": "나와 공유됨"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "직접 메모 추가…",
     "UserSectionTitle": "내 노트",
     "RefreshFromSourcesHint_one": "클릭하면 소스 노트 {{count}}개에서 AI 섹션을 새로 고칩니다. Shift+클릭하면 소스 노트도 다시 읽습니다.",
-    "RefreshFromSourcesHint_other": "클릭하면 소스 노트 {{count}}개에서 AI 섹션을 새로 고칩니다. Shift+클릭하면 소스 노트도 다시 읽습니다."
+    "RefreshFromSourcesHint_other": "클릭하면 소스 노트 {{count}}개에서 AI 섹션을 새로 고칩니다. Shift+클릭하면 소스 노트도 다시 읽습니다.",
+    "NoPageYet": "{{name}}의 페이지가 아직 이 기기에 없습니다. 정리할 내용이 충분해지면 Memory가 페이지를 만들고 여기에 동기화됩니다.",
+    "ThisEntity": "이 항목",
+    "SourceRecordingNotLocal": "해당 원본 녹음이 이 기기에 없습니다.",
+    "MeetingSourceFallback": "회의"
   },
   "WikiFeature": {
+    "AutopilotLabel": "녹음에서 메모리 구축",
+    "AutopilotDesc": "각 회의 녹음을 자동으로 회의 메모리에 요약합니다. 기본값 켜짐.",
     "SettingsDesc": "메모와 녹음을 통해 엔터티, 사람, 주제에 대한 지식 기반을 구축합니다. 기본적으로 꺼져 있습니다.",
     "SettingsLabel": "노트에서 Wiki 자동 업데이트"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "또는 수동으로 추가",
     "AgentCopy": "프롬프트 복사"
   },
+  "WikiShowcase": {
+    "Headline": "나의 회의 메모리",
+    "Subhead": "녹음과 메모에서 스스로 구축되는 지식 베이스 — 사람, 조직, 주제, 그리고 결정된 내용.",
+    "Feature1Title": "녹음에서 구축",
+    "Feature1Desc": "녹음한 모든 회의가 다룬 사람·조직·주제에 관한 페이지로 요약됩니다.",
+    "Feature2Title": "하나로 통합된 메모리",
+    "Feature2Desc": "메모와 녹음이 같은 페이지를 풍부하게 합니다 — 지식 베이스는 둘이 아니라 하나.",
+    "Feature3Title": "뒤지지 말고 물어보세요",
+    "Feature3Desc": "사람과 주제를 이름이나 별칭으로 검색하고, 페이지를 열어 무엇이 언제 결정됐는지 확인하세요.",
+    "BuildCta": "녹음에서 회의 메모리 구축",
+    "Building": "구축 중…",
+    "BuildRetry": "다시 시도",
+    "BuildQueuedCloud": "대기열에 추가됨 — 클라우드에서 구축 중. 업데이트는 동기화로 도착합니다.",
+    "BuildStartedLocal": "구축 중 — 완성된 페이지는 요약되는 대로 표시됩니다.",
+    "ScopeCloud": "기본 작업 공간의 모든 녹음을 클라우드에서 요약합니다. 메모는 ✨ 버튼으로 별도 구축됩니다.",
+    "ScopeLocal": "기본 작업 공간의 모든 녹음을 이 기기에서 요약합니다. 메모는 ✨ 버튼으로 별도 구축됩니다.",
+    "UnsyncedWarn_one": "이 기기의 녹음 {{count}}개가 아직 동기화되지 않아 포함되지 않습니다 — 동기화하여 추가하세요.",
+    "UnsyncedWarn_other": "이 기기의 녹음 {{count}}개가 아직 동기화되지 않아 포함되지 않습니다 — 동기화하여 추가하세요."
+  },
   "WikiHome": {
+    "ConsentExplainer": "SeaMeet가 이제 녹음에서 회의 메모리를 구축하고 있습니다. 설정에서 언제든지 끌 수 있습니다.",
+    "ConsentDismiss": "확인",
+    "BuildMemory": "회의 메모리 구축",
+    "BuildMemoryRunning": "구축 중…",
+    "BuildRetry": "다시 시도",
+    "Rebuild": "다시 구축",
+    "Paused": "구축 일시 중지됨 — 예산이 갱신되면 재개됩니다.",
     "SearchPlaceholder": "내 메모리 검색",
     "SearchAria": "내 메모리 검색",
     "Meetings": "회의",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "{{label}}에 대해 무엇을 결정했나요?",
     "TemplateWhoOwns": "{{label}}는 누가 담당하나요?",
     "SearchCount_one": "결과 {{count}}개",
-    "SearchCount_other": "결과 {{count}}개"
+    "SearchCount_other": "결과 {{count}}개",
+    "MemoryEyebrow": "메모리",
+    "FreshUpdating": "메모리를 업데이트하는 중…",
+    "FreshPaused": "일시 중지됨 — 예산이 갱신되면 다시 시작됩니다.",
+    "FreshOffline": "오프라인 — 마지막으로 동기화된 메모리를 표시합니다.",
+    "FreshJustUpdated": "메모리가 업데이트되었습니다.",
+    "CloudUpdate": "메모리 업데이트",
+    "CloudUpdateRunning": "업데이트 요청 중…",
+    "CloudUpdateRequested": "업데이트를 요청했습니다 — 동기화로 도착합니다.",
+    "SearchEntitiesPlaceholder": "사람, 주제, 회의 검색",
+    "MemorySubtitle": "녹음에서 자동으로 생성됩니다. 대화에 등장한 사람, 주제, 조직이 각각 페이지로 정리되며 녹음할수록 업데이트됩니다."
   },
   "WikiPage": {
     "CorrectThis": "수정하기",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "직접 수정함 — 다시 쓰기 대기 중.",
     "Saving": "저장 중…",
     "SubmitCorrection": "수정 제출"
+  },
+  "MemorySidebar": {
+    "Home": "홈",
+    "Aria": "메모리 섹션",
+    "Collapse": "{{label}} 접기",
+    "Expand": "{{label}} 펼치기",
+    "ShowSidebar": "사이드바 표시",
+    "HideSidebar": "사이드바 숨기기",
+    "Title": "메모리"
   }
 }

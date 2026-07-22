@@ -3272,6 +3272,7 @@
     "SetUpGithub": "I-set up ang GitHub sync",
     "Subscribe": "Mag-subscribe upang paganahin ang sync",
     "Synced": "Na-sync · {{time}}",
+    "CloudSynced": "Naka-sync sa SeaMeet Cloud",
     "Syncing": "Nagsi-sync...",
     "Timeout": "Napatigil ang pag-sync dahil sa timeout",
     "TokenExpired": "Muling pahintulutan",
@@ -3318,6 +3319,7 @@
     "Recording": "Pagre-record",
     "Screenshot": "Screenshot",
     "Wiki": "Wiki",
+    "Memory": "Memory",
     "Cloud": "Cloud",
     "SharedWithMe": "Ibinabahagi sa akin"
   },
@@ -3560,9 +3562,15 @@
     "UserSectionPlaceholder": "Magdagdag ng iyong sariling tala…",
     "UserSectionTitle": "Mga tala mo",
     "RefreshFromSourcesHint_one": "I-click para i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli ang mga source note.",
-    "RefreshFromSourcesHint_other": "I-click para i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli ang mga source note."
+    "RefreshFromSourcesHint_other": "I-click para i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli ang mga source note.",
+    "NoPageYet": "Wala pa sa device na ito ang pahina ni {{name}} — gumagawa ang Memory ng pahina kapag sapat na ang mahahango, at isi-sync ito rito.",
+    "ThisEntity": "entity na ito",
+    "SourceRecordingNotLocal": "Wala sa device na ito ang source recording na iyon.",
+    "MeetingSourceFallback": "Pulong"
   },
   "WikiFeature": {
+    "AutopilotLabel": "Bumuo ng Memory mula sa mga recording",
+    "AutopilotDesc": "Awtomatikong i-distill ang bawat recording ng meeting sa iyong Meeting Memory. Naka-on bilang default.",
     "SettingsDesc": "Bumubuo ng knowledge base ng mga entity, tao, at paksa mula sa iyong mga tala at recording. Naka-off bilang default.",
     "SettingsLabel": "Awtomatikong i-update ang wiki mula sa mga tala"
   },
@@ -4029,7 +4037,33 @@
     "ManualInstallTitle": "O idagdag ito nang manu-mano",
     "AgentCopy": "Kopyahin ang prompt"
   },
+  "WikiShowcase": {
+    "Headline": "Ang iyong Meeting Memory",
+    "Subhead": "Isang knowledge base na kusang nabubuo mula sa iyong mga recording at tala — mga tao, organisasyon, paksa, at kung ano ang napagpasyahan.",
+    "Feature1Title": "Binuo mula sa iyong mga recording",
+    "Feature1Desc": "Bawat meeting na iyong nire-record ay dinidistil sa mga pahina tungkol sa mga tao, organisasyon, at paksang tinalakay nito.",
+    "Feature2Title": "Isang pinag-isang memory",
+    "Feature2Desc": "Pinayayaman ng mga tala at recording ang parehong mga pahina — isang knowledge base, hindi dalawa.",
+    "Feature3Title": "Magtanong, huwag maghukay",
+    "Feature3Desc": "Hanapin ang mga tao at paksa sa pangalan o alias; buksan ang pahina para makita kung ano ang napagpasyahan at kailan.",
+    "BuildCta": "Buuin ang Meeting Memory mula sa mga recording",
+    "Building": "Binubuo…",
+    "BuildRetry": "Subukan muli",
+    "BuildQueuedCloud": "Naka-queue — binubuo sa cloud. Dumarating ang mga update sa pamamagitan ng sync.",
+    "BuildStartedLocal": "Binubuo — lumalabas ang mga tapos na pahina habang dinidistil.",
+    "ScopeCloud": "Dinidistil ang lahat ng recording sa iyong default na workspace, sa cloud. Hiwalay na binubuo ang mga tala gamit ang ✨ na button.",
+    "ScopeLocal": "Dinidistil ang lahat ng recording sa iyong default na workspace, sa device na ito. Hiwalay na binubuo ang mga tala gamit ang ✨ na button.",
+    "UnsyncedWarn_one": "{{count}} recording sa device na ito ang hindi pa naka-sync at hindi isasama — i-sync para maidagdag ito.",
+    "UnsyncedWarn_other": "{{count}} recording sa device na ito ang hindi pa naka-sync at hindi isasama — i-sync para maidagdag ang mga ito."
+  },
   "WikiHome": {
+    "ConsentExplainer": "Binubuo na ng SeaMeet ang iyong Meeting Memory mula sa mga recording — maaari mo itong i-off anumang oras sa Settings.",
+    "ConsentDismiss": "Sige",
+    "BuildMemory": "Buuin ang Meeting Memory",
+    "BuildMemoryRunning": "Binubuo…",
+    "BuildRetry": "Subukan muli",
+    "Rebuild": "Muling buuin",
+    "Paused": "Naka-pause ang pagbuo — magpapatuloy kapag na-refresh ang budget.",
     "SearchPlaceholder": "Hanapin sa iyong Memorya",
     "SearchAria": "Hanapin sa iyong Memorya",
     "Meetings": "Mga Miting",
@@ -4048,7 +4082,17 @@
     "TemplateDecided": "Ano ang napagpasyahan natin tungkol sa {{label}}?",
     "TemplateWhoOwns": "Sino ang may hawak sa {{label}}?",
     "SearchCount_one": "{{count}} resulta",
-    "SearchCount_other": "{{count}} na resulta"
+    "SearchCount_other": "{{count}} na resulta",
+    "MemoryEyebrow": "Memory",
+    "FreshUpdating": "Ina-update ang iyong Memory…",
+    "FreshPaused": "Naka-pause — magpapatuloy kapag na-refresh ang iyong budget.",
+    "FreshOffline": "Offline — ipinapakita ang huling na-sync mong Memory.",
+    "FreshJustUpdated": "Na-update ang Memory.",
+    "CloudUpdate": "I-update ang Memory",
+    "CloudUpdateRunning": "Hinihiling ang update…",
+    "CloudUpdateRequested": "Hiniling ang update — darating ito sa pamamagitan ng sync.",
+    "SearchEntitiesPlaceholder": "Maghanap ng tao, paksa at pulong",
+    "MemorySubtitle": "Awtomatikong binuo mula sa iyong mga recording — ang mga tao, paksa, at organisasyong tinatalakay mo, bawat isa ay hinango sa isang pahinang nag-a-update habang mas marami kang nire-record."
   },
   "WikiPage": {
     "CorrectThis": "Itama ito",
@@ -4057,5 +4101,14 @@
     "CorrectionPending": "Itinama mo — naghihintay ng muling pagsulat.",
     "Saving": "Sine-save…",
     "SubmitCorrection": "Ipasa ang pagtatama"
+  },
+  "MemorySidebar": {
+    "Home": "Home",
+    "Aria": "Mga seksyon ng Memory",
+    "Collapse": "I-collapse ang {{label}}",
+    "Expand": "Palawakin ang {{label}}",
+    "ShowSidebar": "Ipakita ang sidebar",
+    "HideSidebar": "Itago ang sidebar",
+    "Title": "Memory"
   }
 }
