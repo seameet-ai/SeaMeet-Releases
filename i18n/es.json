@@ -683,12 +683,8 @@
     "ConfigureApiKey": "Configure sus claves API para usar el agente de IA."
   },
   "App": {
-    "FailedToEnableFlashback": "No se pudo habilitar la retrospectiva: {{error}}",
     "FailedToOpenSignIn": "No se pudo abrir la página de inicio de sesión",
     "FailedToSignOut": "No se pudo cerrar la sesión",
-    "FailedToStartFlashback": "No se pudo iniciar la retrospectiva: {{error}}",
-    "FlashbackDisabled": "Retrospectiva desactivada",
-    "FlashbackWithoutAudio": "La retrospectiva de video se ejecutará sin audio hasta que se concedan permisos.",
     "RecordingPaused": "Grabación en pausa",
     "UnknownError": "Error desconocido"
   },
@@ -1664,227 +1660,6 @@
     "ConfirmReplaceAll_one": "¿Reemplazar {{count}} coincidencia?",
     "ConfirmReplaceAll_other": "¿Reemplazar las {{count}} coincidencias?"
   },
-  "FlashbackControls": {
-    "AudioFlashback": "Retrospectiva de Audio",
-    "CannotChangeWhileRecording": "No se puede cambiar el modo de retrospectiva mientras se graba",
-    "DisableFlashback": "Desactivar Retrospectiva",
-    "Label": "RETROSPECTIVA",
-    "LearnAbout": "Aprender sobre Retrospectiva",
-    "Off": "Apagado",
-    "Preparing": "Preparando...",
-    "Ready": "Listo",
-    "ReadyQuestion": "¿Listo?",
-    "ScreenFlashback": "Retrospectiva de Pantalla",
-    "SettingsLabel": "Grabación Retrospectiva",
-    "TitleCharging": "Cargando retrospectiva",
-    "TitleInit": "Haz clic para empezar a cargar",
-    "TitleReady": "Haz clic para mostrar la interfaz de Retrospectiva",
-    "ToggleLabel": "Alternar retrospectiva"
-  },
-  "FlashbackDrawer": {
-    "AdvancedSettings": "Ajustes avanzados →",
-    "Description": "Recuerda discretamente los últimos segundos antes de pulsar grabar — para que no te pierdas la frase con la que empezó la reunión.",
-    "LearnMore": "Más información",
-    "ModeAudio": "Audio",
-    "ModeLabel": "Qué almacenar",
-    "ModeOff": "Apagado",
-    "ModeScreen": "Pantalla",
-    "PrimaryRecord": "Grabar con {{seconds}}s de preámbulo",
-    "PrimarySave": "Guardar los últimos {{seconds}}s",
-    "StatusCharging": "Cargando {{percent}}%…",
-    "StatusOff": "Desactivado — elige un modo abajo para armar.",
-    "StatusReady": "Listo — últimos {{seconds}}s de {{type}}.",
-    "Title": "Retrospectiva",
-    "Types": {
-      "audio": "audio",
-      "screen": "pantalla"
-    },
-    "WindowLabel": "Duración del búfer"
-  },
-  "FlashbackFirstArm": {
-    "Tooltip": "Los últimos {{seconds}}s se almacenan solo en RAM. Pulsa Guardar o el botón de grabar para usarlos."
-  },
-  "FlashbackHeroUI": {
-    "Audio": "Audio",
-    "Buffering": "Cargando",
-    "BufferingMoment": "Cargando momento…",
-    "Capturing": "Capturando…",
-    "DescCharging": "Preparando tu ventana de {{duration}} segundos... casi listo para capturar lo que puedas perder. Progreso {{progress}}%.",
-    "DescInit": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
-    "DescNone": "Graba tu pantalla, audio o toma una instantánea. Elige un modo de retrospectiva arriba para habilitar la conservación de momentos.",
-    "DescReady": "La retrospectiva está lista. Cada vez que presiones Grabar, se incluirán los últimos {{duration}} segundos de {{type}} — nunca vuelvas a lamentar un momento perdido.",
-    "FillingBuffer": "Rellenando buffer de retrospectiva de {{duration}}s... {{progress}}%",
-    "FlashbackBuffering": "Buffer...",
-    "FlashbackCharging": "Llenando buffer de {{seconds}}s... {{percent}}%",
-    "FlashbackChargingDescription": "Preparando tu ventana de {{seconds}}-retrospectiva... {{percent}}% completo.",
-    "FlashbackInitAudio": "¿Listo para guardar tu audio?",
-    "FlashbackInitDescription": "Haz clic en '¿Listo?' para decirle a SeaMeet que comience a 'recordar' el pasado.",
-    "FlashbackInitScreen": "¿Listo para hacer una captura de pantalla?",
-    "FlashbackMismatch": "Desajuste en modo retrospectiva: la grabación de audio está activa, pero también lo está la retrospectiva de video. Por favor, desactiva la retrospectiva de video.",
-    "FlashbackOff": "La retrospectiva está actualmente desactivada. Inicia una grabación normal en cualquier momento, o:",
-    "FlashbackPrivacy": "Tu privacidad está protegida. Se almacena localmente en RAM.",
-    "FlashbackReady": "No te pierdas ningún momento.",
-    "FlashbackReadyDescription": "La retrospectiva está lista. Los últimos {{seconds}} de {{type}} están incluidos cuando grabas.",
-    "FlashbackReadyQuestion": "¿Listo?",
-    "KeepWindowVisible": "Mantener visible la ventana de SeaMeet al tomar una captura de pantalla.",
-    "NeverMissAMoment": "Nunca te pierdas un momento.",
-    "OpenFloater": "Abrir flotador",
-    "OpenLauncher": "Abrir lanzador",
-    "PrivacyDesc": "SeaMeet captura los últimos {{duration}}s de {{type}} en un buffer circular almacenado en la memoria RAM de tu computadora.",
-    "PrivacyProtected": "Tu privacidad está protegida.",
-    "Ready": "¿Listo?",
-    "ReadyToCapture": "SeaMeet está listo para capturar.",
-    "ReadyToGuard": "¿Listo para guardar tu {{type}}?",
-    "RecordWithFlashback": "Grabar con SeaMeet Flashback",
-    "SaveFlashback": "Guardar los últimos {{seconds}} segundos de retrospectiva",
-    "SaveLastFlashback": "Guardar los últimos {{duration}}s de retrospectiva",
-    "SavingFlashback": "Guardando retrospectiva…",
-    "Screen": "Pantalla",
-    "StartRecording": "Iniciar grabación",
-    "TakeScreenshot": "Tomar una captura de pantalla"
-  },
-  "FlashbackIndicator": {
-    "Buffering": "Cargando",
-    "BufferingVideo": "Cargando video",
-    "Disabled": "Retrospectiva deshabilitada",
-    "Ready": "Listo",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video listo"
-  },
-  "FlashbackInfoModal": {
-    "Benefits": {
-      "AlwaysReady": "Siempre listo",
-      "LocalOnly": "Solo local (privacidad total)",
-      "MultipleCaptures": "Múltiples capturas - el búfer sigue ejecutándose",
-      "NoPlan": "No se requiere planificación",
-      "Offline": "Funciona sin conexión",
-      "Title": "Beneficios principales"
-    },
-    "BestFor": "Mejor para:",
-    "Close": "Cerrar",
-    "Comparison": {
-      "Capture": {
-        "Feature": "Capturar momentos",
-        "Flashback": "Puede comenzar después del momento",
-        "Traditional": "Si olvidas, se pierde"
-      },
-      "Header": {
-        "Feature": "Característica",
-        "Flashback": "Grabación retrospectiva",
-        "Traditional": "Grabación tradicional"
-      },
-      "Planning": {
-        "Feature": "Planificación",
-        "Flashback": "No hace falta planificación",
-        "Traditional": "Debe comenzar antes del momento"
-      },
-      "Result": {
-        "Feature": "Resultado",
-        "Flashback": "\"Me alegra haber capturado eso\"",
-        "Traditional": "\"Ojalá hubiera grabado eso\""
-      },
-      "Title": "Retrospectiva vs. Grabación tradicional"
-    },
-    "GotIt": "Entendido",
-    "HowItWorks": {
-      "Step1": {
-        "Desc": "Haz clic en el botón RETROSPECTIVA para activarlo. El búfer empezará a llenarse automáticamente.",
-        "Title": "Habilitar Retrospectiva"
-      },
-      "Step2": {
-        "Desc": "Observa el estado verde. El búfer debe llenarse hasta el 90% antes de que puedas capturar lo anterior.",
-        "Title": "Espera a estar listo"
-      },
-      "Step3": {
-        "Desc": "Cuando ocurra algo importante, presiona Grabar. La retrospectiva captura el búfer y continúa grabando hacia adelante.",
-        "Title": "Presiona Grabar"
-      },
-      "Title": "Cómo funciona"
-    },
-    "Modes": {
-      "Audio": {
-        "BestFor": "Para grabar reuniones, llamadas telefónicas y conversaciones de voz",
-        "Buffer": "30 segundos (fijo)",
-        "Captures": "micrófono y/o audio del sistema",
-        "Memory": "~30-50 MB de RAM",
-        "Title": "Retrospectiva de Audio"
-      },
-      "Title": "Dos modos de retrospectiva",
-      "Video": {
-        "BestFor": "Presentaciones, momentos destacados de juegos, sesiones de compartir pantalla, contenido visual",
-        "Buffer": "10s, 30s, 60s, 90s o 120s",
-        "Captures": "Video de pantalla + audio",
-        "Memory": "50-600 MB de memoria RAM",
-        "Title": "Retrospectiva de Video"
-      }
-    },
-    "OpenSettings": "Abrir Configuración",
-    "Scenarios": {
-      "Decision": {
-        "Desc": "El abogado explica la cláusula del contrato. Presiona Grabación para capturar la explicación. Ten un registro completo y preciso para revisar después.",
-        "Title": "Decisión importante"
-      },
-      "Gaming": {
-        "Desc": "Logra un combo increíble. Presiona Grabación inmediatamente. La retrospectiva captura la jugabilidad hasta ese momento + tu reacción.",
-        "Title": "Destacado de juego"
-      },
-      "OhNo": {
-        "Desc": "Un colega dice algo profundo. Te das cuenta de que quieres grabarlo. Presiona Grabación → la retrospectiva captura los últimos 30 segundos (¡incluyendo ese momento!).",
-        "Title": "El momento \"¡Oh no!\""
-      },
-      "Title": "Escenarios prácticos"
-    },
-    "SpecLabel": {
-      "Buffer": "Búfer:",
-      "Captures": "Capturas:",
-      "Memory": "Memoria:"
-    },
-    "Subtitle": "Tu máquina del tiempo personal",
-    "SubtitleDesc": "Nunca vuelvas a perder un momento importante—captura hasta 2 minutos del pasado, incluso después de que ocurrió.",
-    "Tips": {
-      "AudioDaily": {
-        "Desc": "Usa retrospectiva de audio de 30 segundos para reuniones y llamadas. Bajo consumo de memoria y funciona de manera confiable.",
-        "Title": "Retrospectiva de audio para uso diario"
-      },
-      "Memory": {
-        "Desc": "Con 2 minutos de retrospectiva de video, toda la aplicación usa menos de 1 GB de RAM.",
-        "Title": "Gestión de memoria"
-      },
-      "VideoSpecial": {
-        "Desc": "Habilita Retrospectiva de video (búfer de 30s) para presentaciones, momentos destacados de juegos o cualquier contenido visual que desees conservar.",
-        "Title": "Retrospectiva de video para momentos especiales"
-      }
-    },
-    "Title": "Grabación Retrospectiva",
-    "VisualStates": {
-      "Charging": "Ámbar/Amarillo, búfer en llenado",
-      "ChargingLabel": "CARGANDO",
-      "Off": "Gris, forma de onda estática",
-      "OffLabel": "APAGADO",
-      "Ready": "Verde, búfer lleno",
-      "ReadyLabel": "LISTO",
-      "Title": "Indicadores visuales de estado"
-    }
-  },
-  "FlashbackSettingsDetail": {
-    "AutoStartAudio": "Función de retrospectiva de audio",
-    "AutoStartDesc": "Iniciar la retrospectiva al lanzar la app",
-    "AutoStartDisable": "Deshabilitar inicio automático",
-    "AutoStartLabel": "Retroalimentación de inicio automático",
-    "AutoStartScreen": "Retroalimentación de pantalla",
-    "BufferDurationDesc": "Cuánto tiempo mantener el audio/video bufferizado",
-    "BufferDurationLabel": "Duración del buffer",
-    "BufferTitle": "Búfer",
-    "DurationOption": "{{duration}}s",
-    "StartupTitle": "Inicio"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "El buffer de retrospectiva está vacío. Inténtalo de nuevo en un momento.",
-    "EnableFlashback": "Habilitar retrospectiva para guardar un momento.",
-    "FailedToSave": "No se pudo guardar el buffer de retrospectiva.",
-    "SavedFlashback": "Retrospectiva guardada en Grabaciones.",
-    "StillCharging": "El buffer de retrospectiva todavía se está cargando."
-  },
   "FloatingStartBar": {
     "AttachTo": "Adjuntar a",
     "BluetoothMicDesc": "Tu sistema operativo puede forzar \"Modo de comunicaciones\", lo cual puede causar distorsión.",
@@ -2006,8 +1781,7 @@
     "Title": "Saber más sobre SeaMeet"
   },
   "IdleCompactView": {
-    "ArmFlashback": "Iniciar retrospectiva",
-    "FlashbackSettings": "Configuración de retrospectiva"
+    "StartRecording": "Iniciar grabación"
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Copiar email",
@@ -2107,8 +1881,53 @@
   "MediaCard": {
     "Untitled": "Sin título"
   },
-  "DesktopTeam": { "Workspace": "Espacio de trabajo", "RoleOwner": "Propietario", "RoleMember": "Miembro", "Seats": "{{active}} de {{total}} puestos activos", "PrivacyAllowed": "Las grabaciones se comparten con el espacio de trabajo de forma predeterminada. Puedes marcar tus grabaciones como privadas.", "PrivacyRequired": "Las grabaciones se comparten con el espacio de trabajo de forma predeterminada. Las grabaciones privadas están desactivadas por el propietario.", "Manage": "Gestionar equipo", "ViewOnWeb": "Ver equipo en la web", "ChangeSeats": "Cambiar puestos", "AddSeats": "Añadir puestos para tu equipo", "SoloTitle": "Trae tu equipo a SeaMeet", "SoloBody": "Añade puestos y comparte un espacio de grabaciones.", "LoadFailed": "No se pudieron cargar los detalles del espacio de trabajo.", "Retry": "Reintentar la carga del equipo", "PolicyShared": "grabaciones compartidas con el espacio de trabajo", "PolicyRequired": "grabaciones privadas desactivadas", "ResolveOnWeb": "Resolver en la web", "InactiveWarning": "Las grabaciones del espacio de trabajo y los controles de privacidad no están disponibles hasta que se resuelva la facturación.", "Status": { "Active": "Activo", "PastDue": "Vencido", "Incomplete": "Incompleto", "Paused": "En pausa", "OverCapacity": "Sobre capacidad", "Canceled": "Cancelado" } , "ProvidedBy": "Proporcionado por {{team}}" },
-  "DesktopTeamPrivacy": { "ShareNoticeTitle": "Compartido con {{team}}", "ShareNoticeBody": "Todos en este espacio de trabajo pueden ver las grabaciones nuevas cuando terminan de subirse.", "DismissShareNotice": "Descartar el aviso de uso compartido", "VisibleTitle": "Visible para {{team}}", "VisibleBody": "Los miembros del espacio de trabajo pueden reproducir y ver esta grabación.", "PrivateTitle": "Privada — solo tú", "PrivateBody": "Los miembros del espacio de trabajo no pueden ver esta grabación.", "MarkPrivate": "Marcar como privada — solo yo", "ShareWorkspace": "Compartir con el espacio de trabajo", "ConfirmPrivateTitle": "¿Hacer privada esta grabación?", "ConfirmPrivateBody": "Solo tú podrás ver «{{name}}». Se eliminará del espacio de trabajo {{team}}.", "Cancel": "Cancelar", "ConfirmMarkPrivate": "Marcar como privada", "MarkedPrivate": "La grabación ahora es privada.", "SharedWorkspace": "La grabación ahora se comparte con el espacio de trabajo.", "PrivacyUpdateFailed": "No se pudo actualizar la visibilidad del espacio de trabajo. Inténtalo de nuevo." },
+  "DesktopTeam": {
+    "Workspace": "Espacio de trabajo",
+    "RoleOwner": "Propietario",
+    "RoleMember": "Miembro",
+    "Seats": "{{active}} de {{total}} puestos activos",
+    "PrivacyAllowed": "Las grabaciones se comparten con el espacio de trabajo de forma predeterminada. Puedes marcar tus grabaciones como privadas.",
+    "PrivacyRequired": "Las grabaciones se comparten con el espacio de trabajo de forma predeterminada. Las grabaciones privadas están desactivadas por el propietario.",
+    "Manage": "Gestionar equipo",
+    "ViewOnWeb": "Ver equipo en la web",
+    "ChangeSeats": "Cambiar puestos",
+    "AddSeats": "Añadir puestos para tu equipo",
+    "SoloTitle": "Trae tu equipo a SeaMeet",
+    "SoloBody": "Añade puestos y comparte un espacio de grabaciones.",
+    "LoadFailed": "No se pudieron cargar los detalles del espacio de trabajo.",
+    "Retry": "Reintentar la carga del equipo",
+    "PolicyShared": "grabaciones compartidas con el espacio de trabajo",
+    "PolicyRequired": "grabaciones privadas desactivadas",
+    "ResolveOnWeb": "Resolver en la web",
+    "InactiveWarning": "Las grabaciones del espacio de trabajo y los controles de privacidad no están disponibles hasta que se resuelva la facturación.",
+    "Status": {
+      "Active": "Activo",
+      "PastDue": "Vencido",
+      "Incomplete": "Incompleto",
+      "Paused": "En pausa",
+      "OverCapacity": "Sobre capacidad",
+      "Canceled": "Cancelado"
+    },
+    "ProvidedBy": "Proporcionado por {{team}}"
+  },
+  "DesktopTeamPrivacy": {
+    "ShareNoticeTitle": "Compartido con {{team}}",
+    "ShareNoticeBody": "Todos en este espacio de trabajo pueden ver las grabaciones nuevas cuando terminan de subirse.",
+    "DismissShareNotice": "Descartar el aviso de uso compartido",
+    "VisibleTitle": "Visible para {{team}}",
+    "VisibleBody": "Los miembros del espacio de trabajo pueden reproducir y ver esta grabación.",
+    "PrivateTitle": "Privada — solo tú",
+    "PrivateBody": "Los miembros del espacio de trabajo no pueden ver esta grabación.",
+    "MarkPrivate": "Marcar como privada — solo yo",
+    "ShareWorkspace": "Compartir con el espacio de trabajo",
+    "ConfirmPrivateTitle": "¿Hacer privada esta grabación?",
+    "ConfirmPrivateBody": "Solo tú podrás ver «{{name}}». Se eliminará del espacio de trabajo {{team}}.",
+    "Cancel": "Cancelar",
+    "ConfirmMarkPrivate": "Marcar como privada",
+    "MarkedPrivate": "La grabación ahora es privada.",
+    "SharedWorkspace": "La grabación ahora se comparte con el espacio de trabajo.",
+    "PrivacyUpdateFailed": "No se pudo actualizar la visibilidad del espacio de trabajo. Inténtalo de nuevo."
+  },
   "MediaLibrary": {
     "All": "Todos",
     "Audio": "Audio",
@@ -2145,7 +1964,14 @@
     "SubTabs": "Vistas de archivos",
     "MyFiles": "Mis archivos",
     "SharedWithMe": "Compartido conmigo",
-    "OwnerFilter": { "Label": "Grabaciones de quién", "Everyone": "Todos", "JustMe": "Solo yo", "NoRecordingsFrom": "Aún no hay grabaciones de {{name}}", "NoRecordingsFromHint": "Elige otra persona o muestra a todos.", "ShowEveryone": "Mostrar a todos" },
+    "OwnerFilter": {
+      "Label": "Grabaciones de quién",
+      "Everyone": "Todos",
+      "JustMe": "Solo yo",
+      "NoRecordingsFrom": "Aún no hay grabaciones de {{name}}",
+      "NoRecordingsFromHint": "Elige otra persona o muestra a todos.",
+      "ShowEveryone": "Mostrar a todos"
+    },
     "BatchDeletePartial_one": "{{count}} de {{total}} archivos eliminados",
     "BatchDeletePartial_other": "{{count}} de {{total}} archivos eliminados",
     "ConfirmBatchDelete_one": "¿Eliminar {{count}} archivo?",
@@ -2281,12 +2107,8 @@
   },
   "MinimizedView": {
     "ActionRequired": "Acción requerida (Auto-Record)",
-    "AudioFlashbackCharged": "Retrospectiva de audio cargada ({{duration}}s)",
-    "AudioFlashbackCharging": "Cargando la retrospectiva de audio…",
     "AudioRecording": "grabación de audio ({{time}})",
     "RecordingFinished": "Grabación finalizada",
-    "ScreenFlashbackCharged": "Retrospectiva de pantalla cargada ({{duration}}s)",
-    "ScreenFlashbackCharging": "Cargando la retrospectiva de pantalla…",
     "ScreenRecording": "Grabación de pantalla ({{time}})"
   },
   "NoteBinding": {
@@ -2619,16 +2441,10 @@
     "AutoDetectLabel": "Detección automática",
     "AutoDetectStatusOff": "desactivado — pulsa para activar",
     "AutoDetectStatusOn": "buscando reuniones",
-    "FlashbackLabel": "Retrospectiva",
-    "FlashbackStatusCharging": "cargando {{percent}}%",
-    "FlashbackStatusOff": "desactivado — pulsa para armar",
-    "FlashbackStatusReady": "armado — últimos {{seconds}}s de {{type}} en RAM",
     "FloaterPill": "Flotante",
     "LauncherPill": "Lanzador",
     "NoteBindingLabel": "Adjuntar a",
     "RecentRecordings": "Grabaciones recientes",
-    "RecordWithPreamble": "Grabar con {{seconds}}s de preámbulo",
-    "SaveLastInstead": "Guardar los últimos {{seconds}}s",
     "TapToRecord": "Pulsa para empezar a grabar"
   },
   "Recording": {
@@ -2748,9 +2564,6 @@
   "RingMenu": {
     "AutoDetectOff": "Detección automática: DESACTIVADA",
     "AutoDetectOn": "Detección automática: ACTIVADA",
-    "FlashbackCharging": "Retrospectiva cargando...",
-    "FlashbackNotCharged": "Flashback no cargada; haz clic una vez para cargar la retrospectiva de audio, doble clic para cargar la retrospectiva de pantalla",
-    "FlashbackSaveTooltip": "Haz clic simple para guardar la última {{duration}}s {{mode}} retrospectiva. Doble clic para continuar grabando desde aquí.",
     "RecordAudio": "Grabar audio",
     "RecordFullscreen": "Grabación de pantalla completa",
     "RecordRegion": "Grabar región",
@@ -2772,7 +2585,9 @@
     "NoWindows": "No hay ventanas disponibles",
     "PrimaryDisplay": "Pantalla principal",
     "SelectDisplay": "Seleccionar pantalla",
-    "SelectWindow": "Seleccionar ventana"
+    "SelectWindow": "Seleccionar ventana",
+    "TakeScreenshot": "Tomar una captura de pantalla",
+    "KeepWindowVisible": "Mantener visible la ventana de SeaMeet al tomar una captura de pantalla."
   },
   "ScreenshotProcessing": {
     "Analysis": "Análisis",
@@ -2950,24 +2765,6 @@
             "Title": "Sin recopilación de datos"
           }
         },
-        "Flashback": {
-          "EthicalUse": {
-            "Description": "Siempre informa y obtiene el consentimiento de otros antes de usar Flashback para grabarlos.",
-            "Title": "Uso ético"
-          },
-          "LocalOnly": {
-            "Description": "retrospective funciona completamente en tu máquina local. Nada se sincroniza con la nube.",
-            "Title": "Solo local"
-          },
-          "Protected": {
-            "Description": "Tu privacidad y seguridad son primordiales. Tus datos nunca salen de tu dispositivo.",
-            "Title": "Protegido"
-          },
-          "RAMOnly": {
-            "Description": "Todos los datos permanecen en memoria. Nada se escribe en el disco a menos que guardes una retrospectiva grabación.",
-            "Title": "Solo RAM / RAM únicamente"
-          }
-        },
         "Title": "PRIVACIDAD Y SEGURIDAD"
       },
       "Terms": {
@@ -3027,7 +2824,6 @@
     "PageTitle": {
       "About": "Acerca de",
       "AutoRecording": "Grabación automática",
-      "Flashback": "Grabación retrospectiva",
       "Storage": "Almacenamiento"
     },
     "QuotaTier": {
@@ -3443,7 +3239,6 @@
       "VP9": "Esta grabación utiliza VP9 para la mejor calidad. Algunos reproductores multimedia — como Windows Media Player y QuickTime en macOS — podrían no soportar este formato. Para una reproducción confiable, usa un navegador moderno (Chrome o Edge) o un reproductor compatible como VLC."
     },
     "Detecting": "Detectando...",
-    "FlashbackArmedNotice": "Estás grabando con un buffer de retrospectiva de {{seconds}} segundos",
     "FramesPerSecond": "Cuadros por segundo",
     "FullHD": "Full HD",
     "GBPerHour": "~{{gb}} GB/hora",
@@ -3465,8 +3260,6 @@
     "QualityOriginal": "Original",
     "Record": "Registro",
     "RecordModeTitle": "¿Grabar audio o vídeo?",
-    "RecordWithFlashback": "Grabar con retrospectiva",
-    "RecordWithoutFlashback": "Grabación sin retrospectiva",
     "Refresh": "Refrescar",
     "ResolutionUnknown": "Resolución desconocida",
     "SD": "SD",
@@ -3475,9 +3268,11 @@
     "SelectWindow": "Seleccionar ventana",
     "SourceResolution": "Resolución de fuente",
     "Title": "Ajustes de grabación",
-    "VideoFlashbackArmedNotice": "Flashback de pantalla activado ({{seconds}}s)",
     "VideoQuality": "Calidad de vídeo",
-    "ZeroSize": "~0 MB/min, ~0 GB/h"
+    "ZeroSize": "~0 MB/min, ~0 GB/h",
+    "ImpactEstimate": "≈ {{cpu}} % de CPU · {{ram}} MB de RAM durante la grabación",
+    "ImpactVaries": "(estimación — varía según el equipo)",
+    "ImpactCalibrated": "(estimado con una prueba rápida en este equipo)"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Región personalizada: {{width}} × {{height}} píxeles",
@@ -3491,7 +3286,6 @@
   "WelcomeCard": {
     "GotIt": "Entendido",
     "PointAutoDetect": "Detecta reuniones automáticamente para que no olvides iniciar la grabación.",
-    "PointFlashback": "Retrospectiva guarda los últimos 10 segundos — así no te pierdes la primera frase importante.",
     "PointRecord": "Graba lo que quieras con un toque.",
     "Subtitle": "Tres maneras de no perderte ningún momento.",
     "Title": "Te damos la bienvenida a SeaMeet"
@@ -4118,7 +3912,8 @@
     "CloudUpdateRunning": "Solicitando actualización…",
     "CloudUpdateRequested": "Actualización solicitada — llegará por sincronización.",
     "SearchEntitiesPlaceholder": "Buscar personas, temas y reuniones",
-    "MemorySubtitle": "Se crea automáticamente a partir de tus grabaciones: las personas, temas y organizaciones que mencionas, cada uno resumido en una página que se actualiza a medida que grabas más."
+    "MemorySubtitle": "Se crea automáticamente a partir de tus grabaciones: las personas, temas y organizaciones que mencionas, cada uno resumido en una página que se actualiza a medida que grabas más.",
+    "SearchCount": "{{count}} results"
   },
   "WikiPage": {
     "CorrectThis": "Corregir",

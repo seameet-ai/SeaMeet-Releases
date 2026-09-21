@@ -683,12 +683,8 @@
     "ConfigureApiKey": "AIエージェントを使用するには、APIキーを設定してください。"
   },
   "App": {
-    "FailedToEnableFlashback": "フラッシュバックを有効にできませんでした: {{error}}",
     "FailedToOpenSignIn": "サインインページを開くことに失敗しました",
     "FailedToSignOut": "サインアウトに失敗しました",
-    "FailedToStartFlashback": "フラッシュバックを開始できませんでした: {{error}}",
-    "FlashbackDisabled": "フラッシュバックが無効です",
-    "FlashbackWithoutAudio": "権限が承認されるまでビデオフラッシュバックはオーディオなしで実行されます。",
     "RecordingPaused": "録音を一時停止",
     "UnknownError": "不明なエラー"
   },
@@ -1664,227 +1660,6 @@
     "ConfirmReplaceAll_one": "{{count}}件すべてを置換しますか？",
     "ConfirmReplaceAll_other": "{{count}}件すべてを置換しますか？"
   },
-  "FlashbackControls": {
-    "AudioFlashback": "オーディオフラッシュバック",
-    "CannotChangeWhileRecording": "録音中はフラッシュバックモードを変更できません",
-    "DisableFlashback": "フラッシュバックを無効にする",
-    "Label": "フラッシュバック",
-    "LearnAbout": "フラッシュバックについて",
-    "Off": "オフ",
-    "Preparing": "準備中...",
-    "Ready": "準備完了",
-    "ReadyQuestion": "準備できましたか？",
-    "ScreenFlashback": "画面のフラッシュバック",
-    "SettingsLabel": "フラッシュバック録音",
-    "TitleCharging": "フラッシュバック充電中",
-    "TitleInit": "充電を開始するにはクリックしてください",
-    "TitleReady": "クリックしてフラッシュバックUIを表示",
-    "ToggleLabel": "フラッシュバックを切り替え"
-  },
-  "FlashbackDrawer": {
-    "AdvancedSettings": "詳細設定 →",
-    "Description": "録音ボタンを押す前の数秒を静かに記憶しておくので、ミーティングの冒頭の一言を逃しません。",
-    "LearnMore": "詳細",
-    "ModeAudio": "音声",
-    "ModeLabel": "何を記録するか",
-    "ModeOff": "オフ",
-    "ModeScreen": "画面",
-    "PrimaryRecord": "{{seconds}}秒の前置き付きで録音",
-    "PrimarySave": "直近{{seconds}}秒を保存",
-    "StatusCharging": "読み込み中 {{percent}}%…",
-    "StatusOff": "オフ — 下でモードを選んで準備してください。",
-    "StatusReady": "準備完了 — 直近{{seconds}}秒の{{type}}。",
-    "Title": "フラッシュバック",
-    "Types": {
-      "audio": "音声",
-      "screen": "画面"
-    },
-    "WindowLabel": "バッファ長"
-  },
-  "FlashbackFirstArm": {
-    "Tooltip": "直近{{seconds}}秒はRAMのみにバッファされています。保存または録音ボタンをタップして使用してください。"
-  },
-  "FlashbackHeroUI": {
-    "Audio": "オーディオ",
-    "Buffering": "バッファリング中",
-    "BufferingMoment": "バッファリング中...",
-    "Capturing": "キャプチャ中...",
-    "DescCharging": "{{duration}}秒間のウィンドウをプライミング中…まもなく見逃すかもしれない内容をキャッチします。{{progress}}% 完了。",
-    "DescInit": "「準備できましたか？」をクリックして、SeaMeet に過去を「覚える」よう指示してください。",
-    "DescNone": "画面やオーディオを録画するか、スクリーンショットを撮ります。上記のフラッシュバックモードを選択して瞬間保存を有効にしてください。",
-    "DescReady": "フラッシュバックは準備完了しています。録音を開始すると、過去 {{duration}} 秒の {{type}} が含まれます。もう見逃すことはありません。",
-    "FillingBuffer": "{{duration}}秒間のフラッシュバックバッファを満たしています… {{progress}}%",
-    "FlashbackBuffering": "バッファリング中...",
-    "FlashbackCharging": "{{seconds}}秒のバッファを埋めています… {{percent}}%",
-    "FlashbackChargingDescription": "{{seconds}}秒のウィンドウを準備中... {{percent}}% 完了しました。",
-    "FlashbackInitAudio": "音声を守る準備はできましたか？",
-    "FlashbackInitDescription": "「Ready?」をクリックして、SeaMeetに過去を「記憶」させ始めてください。",
-    "FlashbackInitScreen": "画面を守る準備はできましたか？",
-    "FlashbackMismatch": "フラッシュバックモードの不一致です。オーディオ録音はされているのに、ビデオフラッシュバックが有効です。ビデオフラッシュバックを無効にしてください。",
-    "FlashbackOff": "フラッシュバックは現在オフです。いつでも通常の録音を開始するか、上記のオーディオまたはスクリーンのフラッシュバックモードを選択して、ヒーローの瞬間保存を有効にしてください。",
-    "FlashbackPrivacy": "RAM内に保存されており、プライバシーは保護されています。",
-    "FlashbackReady": "一瞬も逃さずに。",
-    "FlashbackReadyDescription": "フラッシュバックは有効になっています。録音時に過去{{seconds}}秒の{{type}}が含まれます。",
-    "FlashbackReadyQuestion": "よろしいですか？",
-    "KeepWindowVisible": "スクリーンショットを撮るときは SeaMeet ウィンドウを表示したままにしてください",
-    "NeverMissAMoment": "決して瞬間を逃さない。",
-    "OpenFloater": "フロートウィンドウを開く",
-    "OpenLauncher": "ランチャーを開く",
-    "PrivacyDesc": "SeaMeetは過去{{duration}}秒の{{type}}をローカルのコンピュータのRAMのリングバッファに保存します。",
-    "PrivacyProtected": "プライバシーは保護されています。",
-    "Ready": "準備はいいですか？",
-    "ReadyToCapture": "SeaMeet はキャプチャの準備ができています。",
-    "ReadyToGuard": "{{type}}の保護準備はできましたか？",
-    "RecordWithFlashback": "フラッシュバックを使った録音",
-    "SaveFlashback": "最後の{{seconds}}秒のフラッシュバックを保存",
-    "SaveLastFlashback": "最後の {{duration}} 秒のフラッシュバックを保存",
-    "SavingFlashback": "フラッシュバックを保存中…",
-    "Screen": "スクリーン",
-    "StartRecording": "録音開始",
-    "TakeScreenshot": "スクリーンショットを取る"
-  },
-  "FlashbackIndicator": {
-    "Buffering": "バッファリング中",
-    "BufferingVideo": "バッファリング中のビデオ",
-    "Disabled": "フラッシュバックは無効になっています",
-    "Ready": "準備完了",
-    "VideoPrefix": "ビデオ",
-    "VideoReady": "ビデオ準備完了"
-  },
-  "FlashbackInfoModal": {
-    "Benefits": {
-      "AlwaysReady": "いつでも準備万端",
-      "LocalOnly": "ローカル限定（プライバシー完全保障）",
-      "MultipleCaptures": "複数回録音可能：バッファは常に動作中",
-      "NoPlan": "計画は不要",
-      "Offline": "オフラインで動作",
-      "Title": "主な利点"
-    },
-    "BestFor": "用途例：",
-    "Close": "閉じる",
-    "Comparison": {
-      "Capture": {
-        "Feature": "瞬間のキャプチャ",
-        "Flashback": "瞬間の後に開始できる",
-        "Traditional": "忘れると失われてしまいます"
-      },
-      "Header": {
-        "Feature": "機能",
-        "Flashback": "フラッシュバック録画",
-        "Traditional": "従来の録画"
-      },
-      "Planning": {
-        "Feature": "計画",
-        "Flashback": "計画は必要ありません",
-        "Traditional": "瞬間の前に開始する必要があります"
-      },
-      "Result": {
-        "Feature": "結果",
-        "Flashback": "あの瞬間をキャプチャできてよかった",
-        "Traditional": "あのとき録音していればよかった"
-      },
-      "Title": "フラッシュバックと従来の録画の比較"
-    },
-    "GotIt": "わかりました",
-    "HowItWorks": {
-      "Step1": {
-        "Desc": "FLASHBACKボタンをクリックして有効にします。バッファは自動的に充填され始めます。",
-        "Title": "フラッシュバックを有効にする"
-      },
-      "Step2": {
-        "Desc": "緑色の状態を確認してください。過去のキャプチャには、バッファが90％に満たなければなりません。",
-        "Title": "準備完了を待つ"
-      },
-      "Step3": {
-        "Desc": "重要な出来事が発生したら、「録音を開始」を押してください。フラッシュバックはバッファを取得し、そのまま録音を続けます。",
-        "Title": "録音を開始"
-      },
-      "Title": "仕組みと操作方法"
-    },
-    "Modes": {
-      "Audio": {
-        "BestFor": "会議、通話、ボイスチャットの録音やキャプチャ",
-        "Buffer": "30秒（固定）",
-        "Captures": "マイクロフォンおよび/またはシステムオーディオ",
-        "Memory": "約30-50 MB RAM",
-        "Title": "オーディオフラッシュバック"
-      },
-      "Title": "二つのフラッシュバックモード",
-      "Video": {
-        "BestFor": "プレゼンテーション、ゲームのハイライト、スクリーンシェアセッション、ビジュアルコンテンツ",
-        "Buffer": "10秒、30秒、60秒、90秒、または120秒に設定可能",
-        "Captures": "スクリーンビデオとオーディオ",
-        "Memory": "50-600 MB RAM",
-        "Title": "ビデオ・フラッシュバック"
-      }
-    },
-    "OpenSettings": "設定を開く",
-    "Scenarios": {
-      "Decision": {
-        "Desc": "弁護士が契約条項を説明します。録音を押して説明をキャプチャします。後で確認するための完全で正確な記録を残せます。",
-        "Title": "重要な決定"
-      },
-      "Gaming": {
-        "Desc": "信じられないほどのコンボを決める。すぐに録音を押す。フラッシュバックはそのコンボまでのゲームプレイとあなたの反応をキャプチャします。",
-        "Title": "ゲームのハイライト"
-      },
-      "OhNo": {
-        "Desc": "同僚が何か重要なことを言いました。録音したいと気づきます。録音を押す → フラッシュバックは最後の30秒間をキャプチャします（その瞬間を含む！）。",
-        "Title": "「あっと！」という瞬間"
-      },
-      "Title": "実践的なシナリオ"
-    },
-    "SpecLabel": {
-      "Buffer": "バッファ容量：",
-      "Captures": "記録内容：",
-      "Memory": "メモリー容量："
-    },
-    "Subtitle": "あなた専用のタイムマシン",
-    "SubtitleDesc": "重要な瞬間を逃さない—過去最大2分間を記録でき、後からでもキャプチャ可能です。",
-    "Tips": {
-      "AudioDaily": {
-        "Desc": "会議や通話には30秒のオーディオフラッシュバックを利用。低メモリ消費で信頼性高く動作します。",
-        "Title": "日常使用のためのオーディオフラッシュバック"
-      },
-      "Memory": {
-        "Desc": "2分間のビデオフラッシュバック機能付き：この設定で、アプリ全体が1GB未満のRAMを消費します。",
-        "Title": "メモリ管理"
-      },
-      "VideoSpecial": {
-        "Desc": "プレゼンテーションやゲームのハイライト、保存したいビジュアルコンテンツにはVideo Flashback（30秒バッファ）を有効にしてください。",
-        "Title": "重要な瞬間のためのビデオフラッシュバック"
-      }
-    },
-    "Title": "Flashback録音",
-    "VisualStates": {
-      "Charging": "琥珀色/黄色、バッファ充填中",
-      "ChargingLabel": "充電中",
-      "Off": "灰色、静的な波形",
-      "OffLabel": "オフ",
-      "Ready": "緑色、バッファ満杯",
-      "ReadyLabel": "準備完了",
-      "Title": "視覚的ステータスインジケーター"
-    }
-  },
-  "FlashbackSettingsDetail": {
-    "AutoStartAudio": "オーディオフラッシュバック",
-    "AutoStartDesc": "アプリ起動時にフラッシュバックを開始",
-    "AutoStartDisable": "自動スタートを無効にする",
-    "AutoStartLabel": "自動スタートオーディオフラッシュバック",
-    "AutoStartScreen": "スクリーンフラッシュバック",
-    "BufferDurationDesc": "バッファを保持する時間",
-    "BufferDurationLabel": "バッファ時間",
-    "BufferTitle": "バッファ",
-    "DurationOption": "{{duration}}秒",
-    "StartupTitle": "起動"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "フラッシュバックバッファは空です。しばらく待ってからもう一度お試しください。",
-    "EnableFlashback": "フラッシュバックを有効にして、瞬間を保存します",
-    "FailedToSave": "フラッシュバックバッファの保存に失敗しました",
-    "SavedFlashback": "フラッシュバックを録音に保存しました",
-    "StillCharging": "フラッシュバックバッファはまだ充電中です"
-  },
   "FloatingStartBar": {
     "AttachTo": "添付先",
     "BluetoothMicDesc": "お使いのOSが「通信モード」を強制することがあり、歪みが生じることがあります。",
@@ -2006,8 +1781,7 @@
     "Title": "SeaMeet についてもっと知る"
   },
   "IdleCompactView": {
-    "ArmFlashback": "フラッシュバックを準備",
-    "FlashbackSettings": "フラッシュバック設定"
+    "StartRecording": "録音開始"
   },
   "InfoPrompt": {
     "CopyEmail": "📋  メールをコピー",
@@ -2107,8 +1881,53 @@
   "MediaCard": {
     "Untitled": "タイトルなし"
   },
-  "DesktopTeam": { "Workspace": "ワークスペース", "RoleOwner": "オーナー", "RoleMember": "メンバー", "Seats": "{{total}} 席中 {{active}} 席がアクティブ", "PrivacyAllowed": "録音は既定でワークスペースと共有されます。録音を非公開にできます。", "PrivacyRequired": "録音は既定でワークスペースと共有されます。非公開の録音はオーナーにより無効にされています。", "Manage": "チームを管理", "ViewOnWeb": "ウェブでチームを表示", "ChangeSeats": "席数を変更", "AddSeats": "チームの席を追加", "SoloTitle": "チームを SeaMeet に招待", "SoloBody": "席を追加して、1 つの録音ワークスペースを共有しましょう。", "LoadFailed": "ワークスペースの詳細を読み込めませんでした。", "Retry": "チーム詳細を再試行", "PolicyShared": "録音はワークスペースと共有", "PolicyRequired": "非公開の録音は無効", "ResolveOnWeb": "ウェブで解決", "InactiveWarning": "請求問題が解決されるまで、ワークスペースの録音とプライバシー設定は利用できません。", "Status": { "Active": "アクティブ", "PastDue": "支払い遅延", "Incomplete": "未完了", "Paused": "一時停止", "OverCapacity": "席数超過", "Canceled": "キャンセル済み" } , "ProvidedBy": "{{team}} から提供" },
-  "DesktopTeamPrivacy": { "ShareNoticeTitle": "{{team}} と共有済み", "ShareNoticeBody": "新しい録音はアップロード完了後、このワークスペースの全員が表示できます。", "DismissShareNotice": "ワークスペース共有通知を閉じる", "VisibleTitle": "{{team}} に表示中", "VisibleBody": "ワークスペースのメンバーはこの録音を再生・表示できます。", "PrivateTitle": "非公開 — 自分のみ", "PrivateBody": "ワークスペースのメンバーはこの録音を表示できません。", "MarkPrivate": "非公開にする — 自分のみ", "ShareWorkspace": "ワークスペースと共有", "ConfirmPrivateTitle": "この録音を非公開にしますか？", "ConfirmPrivateBody": "「{{name}}」を表示できるのはあなただけです。{{team}} ワークスペースから削除されます。", "Cancel": "キャンセル", "ConfirmMarkPrivate": "非公開にする", "MarkedPrivate": "録音は非公開になりました。", "SharedWorkspace": "録音はワークスペースと共有されました。", "PrivacyUpdateFailed": "ワークスペースの表示設定を更新できませんでした。もう一度お試しください。" },
+  "DesktopTeam": {
+    "Workspace": "ワークスペース",
+    "RoleOwner": "オーナー",
+    "RoleMember": "メンバー",
+    "Seats": "{{total}} 席中 {{active}} 席がアクティブ",
+    "PrivacyAllowed": "録音は既定でワークスペースと共有されます。録音を非公開にできます。",
+    "PrivacyRequired": "録音は既定でワークスペースと共有されます。非公開の録音はオーナーにより無効にされています。",
+    "Manage": "チームを管理",
+    "ViewOnWeb": "ウェブでチームを表示",
+    "ChangeSeats": "席数を変更",
+    "AddSeats": "チームの席を追加",
+    "SoloTitle": "チームを SeaMeet に招待",
+    "SoloBody": "席を追加して、1 つの録音ワークスペースを共有しましょう。",
+    "LoadFailed": "ワークスペースの詳細を読み込めませんでした。",
+    "Retry": "チーム詳細を再試行",
+    "PolicyShared": "録音はワークスペースと共有",
+    "PolicyRequired": "非公開の録音は無効",
+    "ResolveOnWeb": "ウェブで解決",
+    "InactiveWarning": "請求問題が解決されるまで、ワークスペースの録音とプライバシー設定は利用できません。",
+    "Status": {
+      "Active": "アクティブ",
+      "PastDue": "支払い遅延",
+      "Incomplete": "未完了",
+      "Paused": "一時停止",
+      "OverCapacity": "席数超過",
+      "Canceled": "キャンセル済み"
+    },
+    "ProvidedBy": "{{team}} から提供"
+  },
+  "DesktopTeamPrivacy": {
+    "ShareNoticeTitle": "{{team}} と共有済み",
+    "ShareNoticeBody": "新しい録音はアップロード完了後、このワークスペースの全員が表示できます。",
+    "DismissShareNotice": "ワークスペース共有通知を閉じる",
+    "VisibleTitle": "{{team}} に表示中",
+    "VisibleBody": "ワークスペースのメンバーはこの録音を再生・表示できます。",
+    "PrivateTitle": "非公開 — 自分のみ",
+    "PrivateBody": "ワークスペースのメンバーはこの録音を表示できません。",
+    "MarkPrivate": "非公開にする — 自分のみ",
+    "ShareWorkspace": "ワークスペースと共有",
+    "ConfirmPrivateTitle": "この録音を非公開にしますか？",
+    "ConfirmPrivateBody": "「{{name}}」を表示できるのはあなただけです。{{team}} ワークスペースから削除されます。",
+    "Cancel": "キャンセル",
+    "ConfirmMarkPrivate": "非公開にする",
+    "MarkedPrivate": "録音は非公開になりました。",
+    "SharedWorkspace": "録音はワークスペースと共有されました。",
+    "PrivacyUpdateFailed": "ワークスペースの表示設定を更新できませんでした。もう一度お試しください。"
+  },
   "MediaLibrary": {
     "All": "すべて",
     "Audio": "オーディオ",
@@ -2145,7 +1964,14 @@
     "SubTabs": "ファイルビュー",
     "MyFiles": "マイファイル",
     "SharedWithMe": "自分と共有",
-    "OwnerFilter": { "Label": "表示する録音者", "Everyone": "全員", "JustMe": "自分のみ", "NoRecordingsFrom": "{{name}} の録音はまだありません", "NoRecordingsFromHint": "別のメンバーを選択するか、全員を表示してください。", "ShowEveryone": "全員を表示" },
+    "OwnerFilter": {
+      "Label": "表示する録音者",
+      "Everyone": "全員",
+      "JustMe": "自分のみ",
+      "NoRecordingsFrom": "{{name}} の録音はまだありません",
+      "NoRecordingsFromHint": "別のメンバーを選択するか、全員を表示してください。",
+      "ShowEveryone": "全員を表示"
+    },
     "BatchDeletePartial_one": "{{total}}件中{{count}}件のファイルを削除しました",
     "BatchDeletePartial_other": "{{total}}件中{{count}}件のファイルを削除しました",
     "ConfirmBatchDelete_one": "{{count}}件のファイルを削除しますか？",
@@ -2281,12 +2107,8 @@
   },
   "MinimizedView": {
     "ActionRequired": "アクションが必要（自動録音）",
-    "AudioFlashbackCharged": "オーディオ・フラッシュバック充電完了（{{duration}}秒）",
-    "AudioFlashbackCharging": "オーディオ・フラッシュバック充電中...",
     "AudioRecording": "オーディオ録音（{{time}}）",
     "RecordingFinished": "録音終了",
-    "ScreenFlashbackCharged": "スクリーン・フラッシュバック充電完了（{{duration}}秒）",
-    "ScreenFlashbackCharging": "スクリーン・フラッシュバック充電中…",
     "ScreenRecording": "画面録画（{{time}}）"
   },
   "NoteBinding": {
@@ -2619,16 +2441,10 @@
     "AutoDetectLabel": "自動検出",
     "AutoDetectStatusOff": "オフ — タップで有効化",
     "AutoDetectStatusOn": "ミーティングを監視中",
-    "FlashbackLabel": "フラッシュバック",
-    "FlashbackStatusCharging": "読み込み中 {{percent}}%",
-    "FlashbackStatusOff": "オフ — タップで準備",
-    "FlashbackStatusReady": "準備完了 — RAMに{{seconds}}秒の{{type}}",
     "FloaterPill": "フローター",
     "LauncherPill": "ランチャー",
     "NoteBindingLabel": "添付先",
     "RecentRecordings": "最近の録音",
-    "RecordWithPreamble": "{{seconds}}秒の前置き付きで録音",
-    "SaveLastInstead": "代わりに直近{{seconds}}秒を保存",
     "TapToRecord": "タップして録音を開始"
   },
   "Recording": {
@@ -2748,9 +2564,6 @@
   "RingMenu": {
     "AutoDetectOff": "自動検出: オフ",
     "AutoDetectOn": "自動検出: オン",
-    "FlashbackCharging": "フラッシュバック充電中...",
-    "FlashbackNotCharged": "フラッシュバックは未充電です。シングルクリックでオーディオフラッシュバックを充電、ダブルクリックでスクリーンフラッシュバックを充電します",
-    "FlashbackSaveTooltip": "シングルクリックで最後の{{duration}}秒の{{mode}}フラッシュバックを保存。ダブルクリックでここから録音を続けます。",
     "RecordAudio": "オーディオ録音",
     "RecordFullscreen": "全画面録画",
     "RecordRegion": "領域録画",
@@ -2772,7 +2585,9 @@
     "NoWindows": "利用可能なウィンドウがありません",
     "PrimaryDisplay": "メインディスプレイ",
     "SelectDisplay": "ディスプレイを選択",
-    "SelectWindow": "ウィンドウを選択"
+    "SelectWindow": "ウィンドウを選択",
+    "TakeScreenshot": "スクリーンショットを取る",
+    "KeepWindowVisible": "スクリーンショットを撮るときは SeaMeet ウィンドウを表示したままにしてください"
   },
   "ScreenshotProcessing": {
     "Analysis": "分析",
@@ -2950,24 +2765,6 @@
             "Title": "データ収集なし"
           }
         },
-        "Flashback": {
-          "EthicalUse": {
-            "Description": "Flashbackを使用して他者を録音する前に、必ず通知し、同意を得てください。",
-            "Title": "倫理的使用"
-          },
-          "LocalOnly": {
-            "Description": "Flashbackは完全にあなたのローカルマシン上で動作します。クラウドには同期しません。",
-            "Title": "100% ローカル"
-          },
-          "Protected": {
-            "Description": "あなたのプライバシーとセキュリティを最優先に考えています。あなたのデータは決してデバイス外に出ません。",
-            "Title": "保護済み"
-          },
-          "RAMOnly": {
-            "Description": "すべてのデータはメモリ内に保持されます。保存しなければディスクに書き込みません。",
-            "Title": "RAMのみ"
-          }
-        },
         "Title": "プライバシーとセキュリティ"
       },
       "Terms": {
@@ -3027,7 +2824,6 @@
     "PageTitle": {
       "About": "アプリについて",
       "AutoRecording": "自動録音",
-      "Flashback": "フラッシュバック録画",
       "Storage": "ストレージ"
     },
     "QuotaTier": {
@@ -3443,7 +3239,6 @@
       "VP9": "このビデオは VP9 を使用して最高品質を実現します。Windows Media Player や macOS の QuickTime など一部の標準ビデオプレイヤーはこのフォーマットに対応していない場合があります。信頼性の高い再生には、ChromeやEdgeなどのモダンブラウザや、VLCのような互換性のあるプレイヤーをご利用ください。"
     },
     "Detecting": "検出中...",
-    "FlashbackArmedNotice": "{{seconds}}秒のフラッシュバックバッファを持つ録音です",
     "FramesPerSecond": "FPS（フレーム毎秒）",
     "FullHD": "フルHD",
     "GBPerHour": "~{{gb}} GB/時間",
@@ -3465,8 +3260,6 @@
     "QualityOriginal": "原画質",
     "Record": "録画",
     "RecordModeTitle": "オーディオまたはビデオの録音をしますか？",
-    "RecordWithFlashback": "フラッシュバックと併用して録画",
-    "RecordWithoutFlashback": "フラッシュバックなしで録音",
     "Refresh": "更新",
     "ResolutionUnknown": "解像度不明",
     "SD": "SD",
@@ -3475,9 +3268,11 @@
     "SelectWindow": "スクリーンを選択",
     "SourceResolution": "ソース解像度",
     "Title": "録画設定",
-    "VideoFlashbackArmedNotice": "スクリーンフラッシュバック準備完了（{{seconds}}秒）",
     "VideoQuality": "ビデオ品質",
-    "ZeroSize": "推定値（0MB/min、0GB/時）"
+    "ZeroSize": "推定値（0MB/min、0GB/時）",
+    "ImpactEstimate": "録画中 ≈ CPU {{cpu}}%・RAM {{ram}} MB",
+    "ImpactVaries": "（目安 — 環境により異なります）",
+    "ImpactCalibrated": "（この端末での簡易テストに基づく推定）"
   },
   "VideoSettingsModal": {
     "CustomRegion": "カスタム領域: {{width}} × {{height}} ピクセル",
@@ -3491,7 +3286,6 @@
   "WelcomeCard": {
     "GotIt": "はい",
     "PointAutoDetect": "ミーティングを自動検出 — 録音の押し忘れを防ぎます。",
-    "PointFlashback": "フラッシュバックは直近10秒を保存 — 冒頭の一言を逃しません。",
     "PointRecord": "ワンタップで何でも録音。",
     "Subtitle": "大切な瞬間を逃さない3つの方法。",
     "Title": "SeaMeet へようこそ"
@@ -4118,7 +3912,8 @@
     "CloudUpdateRunning": "更新をリクエスト中…",
     "CloudUpdateRequested": "更新をリクエストしました — 同期で届きます。",
     "SearchEntitiesPlaceholder": "人物・トピック・会議を検索",
-    "MemorySubtitle": "あなたの録音から自動的に作成されます。話題に上った人物・トピック・組織がそれぞれページにまとめられ、録音するほど更新されます。"
+    "MemorySubtitle": "あなたの録音から自動的に作成されます。話題に上った人物・トピック・組織がそれぞれページにまとめられ、録音するほど更新されます。",
+    "SearchCount": "{{count}} results"
   },
   "WikiPage": {
     "CorrectThis": "修正する",

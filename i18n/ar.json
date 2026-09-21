@@ -683,12 +683,8 @@
     "ConfigureApiKey": "قم بتهيئة مفاتيح API لاستخدام وكيل الذكاء الاصطناعي."
   },
   "App": {
-    "FailedToEnableFlashback": "فشل في تفعيل العودة للماضي: {{error}}",
     "FailedToOpenSignIn": "فشل في فتح صفحة تسجيل الدخول",
     "FailedToSignOut": "فشل في تسجيل الخروج",
-    "FailedToStartFlashback": "فشل في بدء العودة للماضي: {{error}}",
-    "FlashbackDisabled": "تم تعطيل العودة للماضي",
-    "FlashbackWithoutAudio": "سيعمل العودة للماضي للفيديو بدون صوت حتى يتم منح الأذونات.",
     "RecordingPaused": "تم إيقاف التسجيل مؤقتاً",
     "UnknownError": "خطأ غير معروف"
   },
@@ -1664,227 +1660,6 @@
     "ConfirmReplaceAll_one": "استبدال {{count}} تطابق؟",
     "ConfirmReplaceAll_other": "استبدال كل التطابقات ({{count}})؟"
   },
-  "FlashbackControls": {
-    "AudioFlashback": "العودة للماضي الصوتية",
-    "CannotChangeWhileRecording": "لا يمكن تغيير وضع العودة للماضي أثناء التسجيل",
-    "DisableFlashback": "تعطيل العودة للماضي",
-    "Label": "العودة للماضي",
-    "LearnAbout": "تعرف على العودة للماضي",
-    "Off": "إيقاف",
-    "Preparing": "جارٍ التحضير...",
-    "Ready": "جاهز",
-    "ReadyQuestion": "هل أنت جاهز؟",
-    "ScreenFlashback": "العودة للماضي للشاشة",
-    "SettingsLabel": "تسجيل العودة للماضي",
-    "TitleCharging": "جار شحن العودة للماضي",
-    "TitleInit": "انقر لبدء الشحن",
-    "TitleReady": "انقر لإظهار واجهة العودة للماضي",
-    "ToggleLabel": "تبديل العودة للماضي"
-  },
-  "FlashbackDrawer": {
-    "AdvancedSettings": "الإعدادات المتقدمة ←",
-    "Description": "يتذكّر الثواني الأخيرة بهدوء قبل أن تضغط تسجيل — حتى لا تفوّت العبارة التي بدأت بها الجلسة.",
-    "LearnMore": "اعرف المزيد",
-    "ModeAudio": "صوت",
-    "ModeLabel": "ماذا تحفظ",
-    "ModeOff": "إيقاف",
-    "ModeScreen": "شاشة",
-    "PrimaryRecord": "سجّل مع مقدمة {{seconds}} ث",
-    "PrimarySave": "احفظ آخر {{seconds}} ث",
-    "StatusCharging": "جارٍ الشحن {{percent}}%…",
-    "StatusOff": "معطّل — اختر وضعًا أدناه للتفعيل.",
-    "StatusReady": "جاهز — آخر {{seconds}} ث {{type}}.",
-    "Title": "العودة للماضي",
-    "Types": {
-      "audio": "صوت",
-      "screen": "شاشة"
-    },
-    "WindowLabel": "طول النافذة"
-  },
-  "FlashbackFirstArm": {
-    "Tooltip": "آخر {{seconds}} ث يتم تخزينها في الذاكرة فقط. انقر حفظ أو زر التسجيل لاستخدامها."
-  },
-  "FlashbackHeroUI": {
-    "Audio": "الصوت",
-    "Buffering": "جارٍ التحميل",
-    "BufferingMoment": "لحظة التخزين المؤقت...",
-    "Capturing": "جارٍ الالتقاط...",
-    "DescCharging": "تحضير نافذتك التي تستغرق {{duration}} ثوانٍ... على وشك التقاط ما قد تفوته. {{progress}}% مكتمل.",
-    "DescInit": "انقر على 'هل أنت مستعد؟' ليبدأ SeaMeet في 'تذكر' الماضي.",
-    "DescNone": "قم بتسجيل شاشتك أو صوتك أو التقاط لقطة شاشة. اختر وضع العودة إلى الماضي أعلاه لتمكين حفظ اللحظة.",
-    "DescReady": "وضع العودة إلى الماضي مفعّل. كلما بدأت التسجيل، سيتم تضمين {{duration}} ثانية من {{type}} الماضية — لا تندم على لحظة فاتتك مرة أخرى.",
-    "FillingBuffer": "ملء ذاكرة التخزين المؤقت للعودة إلى الماضي لمدة {{duration}}s... {{progress}}%",
-    "FlashbackBuffering": "جارٍ التحميل...",
-    "FlashbackCharging": "ملء ذاكرة التخزين المؤقت لمدة {{seconds}}s... {{percent}}%",
-    "FlashbackChargingDescription": "تحضير نافذتك التي تستغرق {{seconds}} ثانية... {{percent}}% مكتمل.",
-    "FlashbackInitAudio": "هل أنت جاهز لحماية صوتك؟",
-    "FlashbackInitDescription": "انقر على 'هل أنت جاهز؟' لطلب من SeaMeet أن يبدأ 'تذكر' الماضي.",
-    "FlashbackInitScreen": "هل أنت مستعد لحماية شاشتك؟",
-    "FlashbackMismatch": "عدم تطابق وضع العودة إلى الماضي. تسجيل الصوت ولكن وضع العودة إلى الماضي للفيديو مفعّل. يرجى تعطيل وضع العودة إلى الماضي للفيديو.",
-    "FlashbackOff": "وضع العودة إلى الماضي غير مفعّل حاليًا. ابدأ تسجيلًا عاديًا في أي وقت، أو اختر وضع العودة إلى الماضي (صوتي أو شاشة) أعلاه لتمكين حفظ اللحظة البطولية.",
-    "FlashbackPrivacy": "تم حماية خصوصيتك. مخزنة محليًا في الذاكرة العشوائية.",
-    "FlashbackReady": "لا تفوت أي لحظة.",
-    "FlashbackReadyDescription": "العودة إلى الماضي مفعلة. يتم تضمين {{seconds}}s من {{type}} عند التسجيل.",
-    "FlashbackReadyQuestion": "جاهز؟",
-    "KeepWindowVisible": "احتفظ بنافذة SeaMeet مرئية عند التقاط لقطة شاشة",
-    "NeverMissAMoment": "لا تفوّت أي لحظة.",
-    "OpenFloater": "فتح Floater",
-    "OpenLauncher": "فتح المشغل",
-    "PrivacyDesc": "SeaMeet يلتقط صورًا لماضي {{duration}} ثوانٍ من {{type}} في مخزن دائري محلي على ذاكرة وصول عشوائي جهازك.",
-    "PrivacyProtected": "خصوصيتك محمية.",
-    "Ready": "هل أنت جاهز؟",
-    "ReadyToCapture": "SeaMeet جاهز للالتقاط.",
-    "ReadyToGuard": "هل أنت مستعد لحماية نوع {{type}} الخاص بك؟",
-    "RecordWithFlashback": "سجل باستخدام العودة إلى الماضي",
-    "SaveFlashback": "حفظ آخر {{seconds}}s من العودة إلى الماضي",
-    "SaveLastFlashback": "حفظ آخر {{duration}}s من العودة إلى الماضي",
-    "SavingFlashback": "جارٍ حفظ العودة إلى الماضي...",
-    "Screen": "الشاشة",
-    "StartRecording": "ابدأ التسجيل",
-    "TakeScreenshot": "لقطة شاشة"
-  },
-  "FlashbackIndicator": {
-    "Buffering": "جارٍ تحميل الشكل الموجي",
-    "BufferingVideo": "جارٍ تحميل الفيديو",
-    "Disabled": "تم تعطيل العودة إلى الماضي",
-    "Ready": "مُعدّ",
-    "VideoPrefix": "فيديو",
-    "VideoReady": "الفيديو جاهز"
-  },
-  "FlashbackInfoModal": {
-    "Benefits": {
-      "AlwaysReady": "دائماً جاهز",
-      "LocalOnly": "محلي فقط (خصوصية كاملة)",
-      "MultipleCaptures": "عمليات التقاط متعددة - المخزن المؤقت يستمر في العمل",
-      "NoPlan": "لا يتطلب التخطيط",
-      "Offline": "يعمل بدون اتصال",
-      "Title": "الفوائد الرئيسية"
-    },
-    "BestFor": "الأفضل لِـ:",
-    "Close": "إغلاق",
-    "Comparison": {
-      "Capture": {
-        "Feature": "التقاط اللحظات",
-        "Flashback": "يمكن أن يبدأ بعد تلك اللحظة",
-        "Traditional": "إذا نسيت، فسيُفقد"
-      },
-      "Header": {
-        "Feature": "الميزة",
-        "Flashback": "تسجيل العودة للماضي",
-        "Traditional": "التسجيل التقليدي"
-      },
-      "Planning": {
-        "Feature": "التخطيط",
-        "Flashback": "لا يتطلب التخطيط",
-        "Traditional": "يجب أن يبدأ قبل تلك اللحظة"
-      },
-      "Result": {
-        "Feature": "النتيجة",
-        "Flashback": "\"أنا سعيد لأنني التقطت ذلك\"",
-        "Traditional": "\"أتمنى أنني سجلت ذلك\""
-      },
-      "Title": "العودة للماضي مقابل التسجيل التقليدي"
-    },
-    "GotIt": "فهمت",
-    "HowItWorks": {
-      "Step1": {
-        "Desc": "انقر على زر العودة للماضي لتشغيله. يبدأ المخزن المؤقت بالملء تلقائياً.",
-        "Title": "تفعيل العودة للماضي"
-      },
-      "Step2": {
-        "Desc": "انتظر الحالة الخضراء. يجب أن يمتلئ المخزن المؤقت إلى 90% قبل أن تتمكن من التقاط الماضي.",
-        "Title": "انتظر الاستعداد"
-      },
-      "Step3": {
-        "Desc": "عندما يحدث شيء مهم، اضغط تسجيل. العودة للماضي تلتقط المخزن المؤقت وتستمر في التسجيل للأمام.",
-        "Title": "اضغط تسجيل"
-      },
-      "Title": "كيف يعمل"
-    },
-    "Modes": {
-      "Audio": {
-        "BestFor": "تسجيل الاجتماعات، المكالمات الهاتفية، المحادثات الصوتية",
-        "Buffer": "30 ثانية (ثابتة)",
-        "Captures": "الميكروفون و/أو صوت النظام",
-        "Memory": "~30-50 ميجابايت ذاكرة",
-        "Title": "العودة للماضي الصوتية"
-      },
-      "Title": "وضعان للعودة للماضي",
-      "Video": {
-        "BestFor": "العروض التقديمية، أبرز الألعاب، جلسات مشاركة الشاشة، المحتوى المرئي",
-        "Buffer": "10ث، 30ث، 60ث، 90ث، أو 120ث",
-        "Captures": "فيديو الشاشة + الصوت",
-        "Memory": "50-600 ميجابايت ذاكرة",
-        "Title": "العودة للماضي للفيديو"
-      }
-    },
-    "OpenSettings": "فتح الإعدادات",
-    "Scenarios": {
-      "Decision": {
-        "Desc": "يشرح المحامي بند العقد. اضغط على تسجيل لالتقاط الشرح. لديك سجل كامل ودقيق للمراجعة لاحقاً.",
-        "Title": "قرار هام"
-      },
-      "Gaming": {
-        "Desc": "قم بتنفيذ كومبو مذهل. اضغط على تسجيل فوراً. العودة للماضي تلتقط طريقة اللعب قبل ذلك الكومبو + رد فعلك.",
-        "Title": "إبراز الألعاب"
-      },
-      "OhNo": {
-        "Desc": "يقول الزميل شيئاً عميقاً. تدرك أنك تريد تسجيله. اضغط تسجيل → العودة للماضي تلتقط آخر 30 ثانية (بما في ذلك تلك اللحظة!).",
-        "Title": "لحظة \"يا إلهي!\""
-      },
-      "Title": "سيناريوهات عملية"
-    },
-    "SpecLabel": {
-      "Buffer": "المخزن المؤقت:",
-      "Captures": "الالتقاطات:",
-      "Memory": "الذاكرة:"
-    },
-    "Subtitle": "آلتك الزمنية الشخصية",
-    "SubtitleDesc": "لن تفوت لحظة مهمة أبداً—التقط ما يصل إلى دقيقتين من الماضي، حتى بعد حدوثه.",
-    "Tips": {
-      "AudioDaily": {
-        "Desc": "استخدم العودة للماضي الصوتية لمدة 30 ثانية للاجتماعات والمكالمات. استخدام منخفض للذاكرة، يعمل بشكل موثوق.",
-        "Title": "العودة للماضي الصوتية للاستخدام اليومي"
-      },
-      "Memory": {
-        "Desc": "مع دقيقتين من العودة للماضي للفيديو: التطبيق بأكمله يستخدم أقل من 1 جيجابايت من الذاكرة.",
-        "Title": "إدارة الذاكرة"
-      },
-      "VideoSpecial": {
-        "Desc": "فعّل العودة للماضي للفيديو (مخزن مؤقت 30ث) للعروض التقديمية، أبرز الألعاب، أو أي محتوى مرئي تريد الحفاظ عليه.",
-        "Title": "العودة للماضي للفيديو لللحظات الخاصة"
-      }
-    },
-    "Title": "تسجيل العودة للماضي",
-    "VisualStates": {
-      "Charging": "كهرماني/أصفر، المخزن المؤقت يمتلئ",
-      "ChargingLabel": "جار الشحن",
-      "Off": "رمادي، موجة ثابتة",
-      "OffLabel": "إيقاف",
-      "Ready": "أخضر، المخزن المؤقت ممتلئ",
-      "ReadyLabel": "جاهز",
-      "Title": "مؤشرات الحالة المرئية"
-    }
-  },
-  "FlashbackSettingsDetail": {
-    "AutoStartAudio": "العودة إلى الماضي بالصوت",
-    "AutoStartDesc": "يبدأ العودة إلى الماضي عند تشغيل التطبيق",
-    "AutoStartDisable": "تعطيل البدء التلقائي في العودة إلى الماضي",
-    "AutoStartLabel": "بدء تلقائي للعودة إلى الماضي",
-    "AutoStartScreen": "البدء التلقائي في العودة إلى الماضي",
-    "BufferDurationDesc": "مدة الاحتفاظ بالصوت والفيديو في الذاكرة المؤقتة",
-    "BufferDurationLabel": "مدة التخزين المؤقت",
-    "BufferTitle": "حجم الذاكرة المؤقتة",
-    "DurationOption": "{{duration}} ثوانٍ",
-    "StartupTitle": "بدء التشغيل"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "ذاكرة العودة إلى الماضي فارغة. حاول مرة أخرى لاحقًا.",
-    "EnableFlashback": "فعّل العودة إلى الماضي لحفظ لحظة",
-    "FailedToSave": "فشل في حفظ ذاكرة العودة إلى الماضي",
-    "SavedFlashback": "تم حفظ العودة إلى الماضي في التسجيلات",
-    "StillCharging": "ذاكرة العودة إلى الماضي لا تزال تتشحن."
-  },
   "FloatingStartBar": {
     "AttachTo": "إرفاق بـ",
     "BluetoothMicDesc": "قد يجبر نظام التشغيل الخاص بك وضع \"الاتصالات\"، مما قد يسبب التشويش.",
@@ -2006,8 +1781,7 @@
     "Title": "تعرّف على المزيد عن SeaMeet"
   },
   "IdleCompactView": {
-    "ArmFlashback": "تفعيل خاصية العودة إلى الماضي",
-    "FlashbackSettings": "إعدادات العودة إلى الماضي"
+    "StartRecording": "ابدأ التسجيل"
   },
   "InfoPrompt": {
     "CopyEmail": "📋  نسخ البريد الإلكتروني",
@@ -2107,8 +1881,53 @@
   "MediaCard": {
     "Untitled": "بدون عنوان"
   },
-  "DesktopTeam": { "Workspace": "مساحة العمل", "RoleOwner": "المالك", "RoleMember": "عضو", "Seats": "{{active}} من {{total}} مقاعد نشطة", "PrivacyAllowed": "تتم مشاركة التسجيلات مع مساحة العمل بشكل افتراضي. يمكنك وضع علامة \"خاص\" على تسجيلاتك.", "PrivacyRequired": "تتم مشاركة التسجيلات مع مساحة العمل بشكل افتراضي. عطّل المالك التسجيلات الخاصة.", "Manage": "إدارة الفريق", "ViewOnWeb": "عرض الفريق على الويب", "ChangeSeats": "تغيير المقاعد", "AddSeats": "إضافة مقاعد لفريقك", "SoloTitle": "انقل فريقك إلى SeaMeet", "SoloBody": "أضف مقاعد وشارك مساحة تسجيلات واحدة.", "LoadFailed": "تعذّر تحميل تفاصيل مساحة العمل.", "Retry": "إعادة محاولة تحميل تفاصيل الفريق", "PolicyShared": "التسجيلات مشتركة مع مساحة العمل", "PolicyRequired": "التسجيلات الخاصة معطّلة", "ResolveOnWeb": "الحل عبر الويب", "InactiveWarning": "تسجيلات مساحة العمل وعناصر التحكم في الخصوصية غير متاحة حتى يتم حل مشكلة الفوترة.", "Status": { "Active": "نشط", "PastDue": "متأخر السداد", "Incomplete": "غير مكتمل", "Paused": "متوقف مؤقتًا", "OverCapacity": "يتجاوز السعة", "Canceled": "ملغى" } , "ProvidedBy": "مقدم من {{team}}" },
-  "DesktopTeamPrivacy": { "ShareNoticeTitle": "تمت المشاركة مع {{team}}", "ShareNoticeBody": "يمكن للجميع في مساحة العمل هذه رؤية التسجيلات الجديدة بعد اكتمال رفعها.", "DismissShareNotice": "إغلاق إشعار المشاركة", "VisibleTitle": "مرئي لـ {{team}}", "VisibleBody": "يمكن لأعضاء مساحة العمل تشغيل هذه التسجيلة وعرضها.", "PrivateTitle": "خاص — أنت فقط", "PrivateBody": "لا يمكن لأعضاء مساحة العمل رؤية هذه التسجيلة.", "MarkPrivate": "وضع علامة خاص — أنا فقط", "ShareWorkspace": "مشاركة مع مساحة العمل", "ConfirmPrivateTitle": "هل تريد جعل هذه التسجيلة خاصة؟", "ConfirmPrivateBody": "ستكون أنت فقط من يمكنه رؤية \"{{name}}\". وسيتم إزالتها من مساحة عمل {{team}}.", "Cancel": "إلغاء", "ConfirmMarkPrivate": "وضع علامة خاص", "MarkedPrivate": "التسجيلة الآن خاصة.", "SharedWorkspace": "أصبحت التسجيلة الآن مشتركة مع مساحة العمل.", "PrivacyUpdateFailed": "تعذّر تحديث مستوى الرؤية في مساحة العمل. حاول مرة أخرى." },
+  "DesktopTeam": {
+    "Workspace": "مساحة العمل",
+    "RoleOwner": "المالك",
+    "RoleMember": "عضو",
+    "Seats": "{{active}} من {{total}} مقاعد نشطة",
+    "PrivacyAllowed": "تتم مشاركة التسجيلات مع مساحة العمل بشكل افتراضي. يمكنك وضع علامة \"خاص\" على تسجيلاتك.",
+    "PrivacyRequired": "تتم مشاركة التسجيلات مع مساحة العمل بشكل افتراضي. عطّل المالك التسجيلات الخاصة.",
+    "Manage": "إدارة الفريق",
+    "ViewOnWeb": "عرض الفريق على الويب",
+    "ChangeSeats": "تغيير المقاعد",
+    "AddSeats": "إضافة مقاعد لفريقك",
+    "SoloTitle": "انقل فريقك إلى SeaMeet",
+    "SoloBody": "أضف مقاعد وشارك مساحة تسجيلات واحدة.",
+    "LoadFailed": "تعذّر تحميل تفاصيل مساحة العمل.",
+    "Retry": "إعادة محاولة تحميل تفاصيل الفريق",
+    "PolicyShared": "التسجيلات مشتركة مع مساحة العمل",
+    "PolicyRequired": "التسجيلات الخاصة معطّلة",
+    "ResolveOnWeb": "الحل عبر الويب",
+    "InactiveWarning": "تسجيلات مساحة العمل وعناصر التحكم في الخصوصية غير متاحة حتى يتم حل مشكلة الفوترة.",
+    "Status": {
+      "Active": "نشط",
+      "PastDue": "متأخر السداد",
+      "Incomplete": "غير مكتمل",
+      "Paused": "متوقف مؤقتًا",
+      "OverCapacity": "يتجاوز السعة",
+      "Canceled": "ملغى"
+    },
+    "ProvidedBy": "مقدم من {{team}}"
+  },
+  "DesktopTeamPrivacy": {
+    "ShareNoticeTitle": "تمت المشاركة مع {{team}}",
+    "ShareNoticeBody": "يمكن للجميع في مساحة العمل هذه رؤية التسجيلات الجديدة بعد اكتمال رفعها.",
+    "DismissShareNotice": "إغلاق إشعار المشاركة",
+    "VisibleTitle": "مرئي لـ {{team}}",
+    "VisibleBody": "يمكن لأعضاء مساحة العمل تشغيل هذه التسجيلة وعرضها.",
+    "PrivateTitle": "خاص — أنت فقط",
+    "PrivateBody": "لا يمكن لأعضاء مساحة العمل رؤية هذه التسجيلة.",
+    "MarkPrivate": "وضع علامة خاص — أنا فقط",
+    "ShareWorkspace": "مشاركة مع مساحة العمل",
+    "ConfirmPrivateTitle": "هل تريد جعل هذه التسجيلة خاصة؟",
+    "ConfirmPrivateBody": "ستكون أنت فقط من يمكنه رؤية \"{{name}}\". وسيتم إزالتها من مساحة عمل {{team}}.",
+    "Cancel": "إلغاء",
+    "ConfirmMarkPrivate": "وضع علامة خاص",
+    "MarkedPrivate": "التسجيلة الآن خاصة.",
+    "SharedWorkspace": "أصبحت التسجيلة الآن مشتركة مع مساحة العمل.",
+    "PrivacyUpdateFailed": "تعذّر تحديث مستوى الرؤية في مساحة العمل. حاول مرة أخرى."
+  },
   "MediaLibrary": {
     "All": "الكل",
     "Audio": "صوت",
@@ -2145,7 +1964,14 @@
     "SubTabs": "طرق عرض الملفات",
     "MyFiles": "ملفاتي",
     "SharedWithMe": "مشارك معي",
-    "OwnerFilter": { "Label": "تسجيلات مَن", "Everyone": "الجميع", "JustMe": "أنا فقط", "NoRecordingsFrom": "لا توجد تسجيلات من {{name}} بعد", "NoRecordingsFromHint": "اختر شخصًا آخر أو اعرض الجميع.", "ShowEveryone": "عرض الجميع" },
+    "OwnerFilter": {
+      "Label": "تسجيلات مَن",
+      "Everyone": "الجميع",
+      "JustMe": "أنا فقط",
+      "NoRecordingsFrom": "لا توجد تسجيلات من {{name}} بعد",
+      "NoRecordingsFromHint": "اختر شخصًا آخر أو اعرض الجميع.",
+      "ShowEveryone": "عرض الجميع"
+    },
     "BatchDeletePartial_one": "تم حذف {{count}} من {{total}} ملفات",
     "BatchDeletePartial_other": "تم حذف {{count}} من {{total}} ملفات",
     "ConfirmBatchDelete_one": "حذف {{count}} ملف؟",
@@ -2281,12 +2107,8 @@
   },
   "MinimizedView": {
     "ActionRequired": "يتطلب إجراء (التسجيل التلقائي)",
-    "AudioFlashbackCharged": "عودة الصوت إلى الماضي مشحونة ({{duration}} ث)",
-    "AudioFlashbackCharging": "جارٍ شحن عودة الصوت إلى الماضي...",
     "AudioRecording": "تسجيل صوتي ({{time}})",
     "RecordingFinished": "انتهى التسجيل",
-    "ScreenFlashbackCharged": "شاشة العودة إلى الماضي مشحونة ({{duration}} ث)",
-    "ScreenFlashbackCharging": "جارٍ شحن شاشة العودة إلى الماضي...",
     "ScreenRecording": "تسجيل الشاشة ({{time}})"
   },
   "NoteBinding": {
@@ -2619,16 +2441,10 @@
     "AutoDetectLabel": "الكشف التلقائي",
     "AutoDetectStatusOff": "معطّل — انقر للتفعيل",
     "AutoDetectStatusOn": "يراقب الاجتماعات",
-    "FlashbackLabel": "العودة للماضي",
-    "FlashbackStatusCharging": "جارٍ الشحن {{percent}}%",
-    "FlashbackStatusOff": "معطّل — انقر للتفعيل",
-    "FlashbackStatusReady": "جاهز — {{seconds}} ث {{type}} في الذاكرة",
     "FloaterPill": "الشريط العائم",
     "LauncherPill": "المشغّل",
     "NoteBindingLabel": "إرفاق بـ",
     "RecentRecordings": "التسجيلات الأخيرة",
-    "RecordWithPreamble": "سجّل مع مقدمة {{seconds}} ث",
-    "SaveLastInstead": "احفظ آخر {{seconds}} ث بدلاً من ذلك",
     "TapToRecord": "انقر لبدء التسجيل"
   },
   "Recording": {
@@ -2748,9 +2564,6 @@
   "RingMenu": {
     "AutoDetectOff": "الكشف التلقائي: إيقاف",
     "AutoDetectOn": "الكشف التلقائي: تشغيل",
-    "FlashbackCharging": "جار شحن العودة للماضي...",
-    "FlashbackNotCharged": "العودة للماضي غير مشحونة، انقر مرة لشحن العودة للماضي الصوتية، انقر مرتين لشحن العودة للماضي للشاشة",
-    "FlashbackSaveTooltip": "نقرة واحدة لحفظ آخر {{duration}}ث {{mode}} عودة للماضي. نقرة مزدوجة للاستمرار في التسجيل من هنا.",
     "RecordAudio": "تسجيل الصوت",
     "RecordFullscreen": "تسجيل الشاشة الكاملة",
     "RecordRegion": "تسجيل المنطقة",
@@ -2772,7 +2585,9 @@
     "NoWindows": "لا توجد نوافذ متاحة",
     "PrimaryDisplay": "العرض الأساسي",
     "SelectDisplay": "حدد العرض",
-    "SelectWindow": "حدد نافذة"
+    "SelectWindow": "حدد نافذة",
+    "TakeScreenshot": "لقطة شاشة",
+    "KeepWindowVisible": "احتفظ بنافذة SeaMeet مرئية عند التقاط لقطة شاشة"
   },
   "ScreenshotProcessing": {
     "Analysis": "تحليل",
@@ -2950,24 +2765,6 @@
             "Title": "لا جمع للبيانات"
           }
         },
-        "Flashback": {
-          "EthicalUse": {
-            "Description": "دائماً أبلغ واحصل على موافقة الآخرين قبل استخدام العودة للماضي لتسجيلهم.",
-            "Title": "الاستخدام الأخلاقي"
-          },
-          "LocalOnly": {
-            "Description": "العودة للماضي تعمل بالكامل على جهازك المحلي. لا شيء يتم مزامنته مع السحابة.",
-            "Title": "100% محلي"
-          },
-          "Protected": {
-            "Description": "خصوصيتك وأمانك في غاية الأهمية. بياناتك لا تغادر جهازك أبداً.",
-            "Title": "محمي"
-          },
-          "RAMOnly": {
-            "Description": "جميع البيانات تبقى في الذاكرة. لا شيء يُكتب على القرص إلا إذا حفظت تسجيل عودة للماضي.",
-            "Title": "الذاكرة فقط"
-          }
-        },
         "Title": "الخصوصية والأمان"
       },
       "Terms": {
@@ -3027,7 +2824,6 @@
     "PageTitle": {
       "About": "حول",
       "AutoRecording": "التسجيل التلقائي",
-      "Flashback": "تسجيل العودة إلى الماضي",
       "Storage": "التخزين"
     },
     "QuotaTier": {
@@ -3443,7 +3239,6 @@
       "VP9": "يستخدم هذا التسجيل VP9 لأفضل جودة. قد لا تدعم بعض مشغلات الفيديو الافتراضية — مثل Windows Media Player و QuickTime على macOS — هذا التنسيق. لضمان التشغيل الموثوق، يُرجى استخدام متصفح حديث (Chrome أو Edge) أو مشغل متوافق مثل VLC."
     },
     "Detecting": "جار الكشف...",
-    "FlashbackArmedNotice": "أنت تسجل بـ {{seconds}} ثانية من ذاكرة التراجع.",
     "FramesPerSecond": "الإطارات في الثانية",
     "FullHD": "Full HD",
     "GBPerHour": "~{{gb}} جيجابايت/ساعة",
@@ -3465,8 +3260,6 @@
     "QualityOriginal": "الجودة الأصلية",
     "Record": "تسجيل",
     "RecordModeTitle": "هل تريد تسجيل صوتي أو فيديو؟",
-    "RecordWithFlashback": "التسجيل باستخدام العودة إلى الماضي",
-    "RecordWithoutFlashback": "تسجيل بدون العودة إلى الماضي",
     "Refresh": "تحديث",
     "ResolutionUnknown": "الدقة غير معروفة",
     "SD": "SD",
@@ -3475,9 +3268,11 @@
     "SelectWindow": "اختر النافذة",
     "SourceResolution": "دقة المصدر",
     "Title": "إعدادات التسجيل",
-    "VideoFlashbackArmedNotice": "شاشة العودة إلى الماضي مفعلة ({{seconds}}ث)",
     "VideoQuality": "جودة الفيديو",
-    "ZeroSize": "~0 ميجابايت/دقيقة، ~0 جيجابايت/ساعة"
+    "ZeroSize": "~0 ميجابايت/دقيقة، ~0 جيجابايت/ساعة",
+    "ImpactEstimate": "≈ {{cpu}}٪ من المعالج · {{ram}} م.ب من الذاكرة أثناء التسجيل",
+    "ImpactVaries": "(تقدير — يختلف حسب الجهاز)",
+    "ImpactCalibrated": "(تقدير من اختبار سريع على هذا الجهاز)"
   },
   "VideoSettingsModal": {
     "CustomRegion": "المنطقة المخصصة: {{width}} × {{height}} بكسل",
@@ -3491,7 +3286,6 @@
   "WelcomeCard": {
     "GotIt": "فهمت",
     "PointAutoDetect": "اكتشف الاجتماعات تلقائيًا لئلا تنسى الضغط على تسجيل.",
-    "PointFlashback": "تحفظ ميزة العودة للماضي آخر 10 ثوانٍ — فلا تفوّت أول عبارة مهمة.",
     "PointRecord": "سجّل أي شيء بنقرة واحدة.",
     "Subtitle": "ثلاث طرق لئلا تفوّت أي لحظة.",
     "Title": "تعرّف على SeaMeet"
@@ -4118,7 +3912,8 @@
     "CloudUpdateRunning": "جارٍ طلب التحديث…",
     "CloudUpdateRequested": "تم طلب التحديث — سيصل عبر المزامنة.",
     "SearchEntitiesPlaceholder": "ابحث في الأشخاص والمواضيع والاجتماعات",
-    "MemorySubtitle": "يُنشأ تلقائيًا من تسجيلاتك — الأشخاص والمواضيع والمؤسسات التي تناقشها، كلٌّ مُلخَّص في صفحة تتحدّث كلما سجّلت المزيد."
+    "MemorySubtitle": "يُنشأ تلقائيًا من تسجيلاتك — الأشخاص والمواضيع والمؤسسات التي تناقشها، كلٌّ مُلخَّص في صفحة تتحدّث كلما سجّلت المزيد.",
+    "SearchCount": "{{count}} results"
   },
   "WikiPage": {
     "CorrectThis": "صحّح هذا",

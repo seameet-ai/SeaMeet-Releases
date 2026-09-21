@@ -683,12 +683,8 @@
     "ConfigureApiKey": "設定您的 API 金鑰以使用 AI 代理。"
   },
   "App": {
-    "FailedToEnableFlashback": "啟用時間回溯失敗：{{error}}",
     "FailedToOpenSignIn": "登入頁面開啟失敗",
     "FailedToSignOut": "登出失敗",
-    "FailedToStartFlashback": "無法啟動時間回溯：{{error}}",
-    "FlashbackDisabled": "時間回溯已停用",
-    "FlashbackWithoutAudio": "影片時間回溯將在未取得權限之前不會播放音訊。",
     "RecordingPaused": "錄音已暫停",
     "UnknownError": "未知錯誤"
   },
@@ -1664,227 +1660,6 @@
     "ConfirmReplaceAll_one": "取代全部 {{count}} 處符合項目？",
     "ConfirmReplaceAll_other": "取代全部 {{count}} 處符合項目？"
   },
-  "FlashbackControls": {
-    "AudioFlashback": "音訊時間回溯",
-    "CannotChangeWhileRecording": "錄製時無法變更時間回溯模式",
-    "DisableFlashback": "關閉時間回溯",
-    "Label": "時間回溯",
-    "LearnAbout": "了解時間回溯",
-    "Off": "關閉",
-    "Preparing": "準備中...",
-    "Ready": "準備好",
-    "ReadyQuestion": "準備好了嗎？",
-    "ScreenFlashback": "影片時間回溯",
-    "SettingsLabel": "時間回溯錄製",
-    "TitleCharging": "時間回溯準備中",
-    "TitleInit": "點擊開始準備",
-    "TitleReady": "點擊顯示時間回溯界面",
-    "ToggleLabel": "切換時間回溯模式"
-  },
-  "FlashbackDrawer": {
-    "AdvancedSettings": "進階設定 →",
-    "Description": "在你按下錄製之前，悄悄記住最後幾秒——讓你不錯過開啟會議的那句話。",
-    "LearnMore": "了解更多",
-    "ModeAudio": "音訊",
-    "ModeLabel": "緩存內容",
-    "ModeOff": "關閉",
-    "ModeScreen": "螢幕",
-    "PrimaryRecord": "帶 {{seconds}} 秒前奏錄製",
-    "PrimarySave": "儲存最後 {{seconds}} 秒",
-    "StatusCharging": "載入中 {{percent}}%…",
-    "StatusOff": "已關閉 — 在下方選擇模式以啟動。",
-    "StatusReady": "就緒 — 最後 {{seconds}} 秒{{type}}。",
-    "Title": "時間回溯",
-    "Types": {
-      "audio": "音訊",
-      "screen": "螢幕"
-    },
-    "WindowLabel": "緩存時長"
-  },
-  "FlashbackFirstArm": {
-    "Tooltip": "最後 {{seconds}} 秒僅緩存在 RAM 中。點按儲存或錄製按鈕即可使用。"
-  },
-  "FlashbackHeroUI": {
-    "Audio": "音訊",
-    "Buffering": "緩衝中",
-    "BufferingMoment": "緩衝瞬間...",
-    "Capturing": "擷取中...",
-    "DescCharging": "準備您的 {{duration}} 秒時間回溯窗口… 幾乎準備好捕捉可能錯過的內容。完成度 {{progress}}%。",
-    "DescInit": "點擊「準備好了？」告訴 SeaMeet 開始「記憶」過去。",
-    "DescNone": "錄製您的螢幕、音訊，或拍攝螢幕截圖。請選擇上方的時間回溯模式來啟用時刻保存。",
-    "DescReady": "時間回溯已準備好。每次點擊「錄製」時，會包含過去 {{duration}} 秒的 {{type}} — 從此不再遺憾錯過的時刻。",
-    "FillingBuffer": "正在填充 {{duration}} 秒的時間回溯緩衝區... {{progress}}%",
-    "FlashbackBuffering": "緩衝中...",
-    "FlashbackCharging": "正在填充 {{seconds}} 秒緩衝區... {{percent}}%",
-    "FlashbackChargingDescription": "正在準備您的 {{seconds}} 秒工作區... {{percent}}% 完成",
-    "FlashbackInitAudio": "準備好守護您的音訊了嗎？",
-    "FlashbackInitDescription": "點擊 'Ready?'，讓 SeaMeet 開始「時間回溯」過去。",
-    "FlashbackInitScreen": "準備好守護您的螢幕了嗎？",
-    "FlashbackMismatch": "時間回溯模式不符。音訊已在錄音，但影片時間回溯已啟用。請關閉影片時間回溯。",
-    "FlashbackOff": "時間回溯目前已關閉。任何時間皆可開始普通錄音，或以上選擇時間回溯模式（音訊或螢幕）以啟用英雄時刻保存。",
-    "FlashbackPrivacy": "您的隱私受到保護，資料存於本地 RAM 中",
-    "FlashbackReady": "永不錯過任何瞬間。",
-    "FlashbackReadyDescription": "時間回溯已啟用。在錄影時，將包含過去 {{seconds}} 秒的 {{type}}。",
-    "FlashbackReadyQuestion": "準備好嗎？",
-    "KeepWindowVisible": "截圖時保持 SeaMeet 視窗可見",
-    "NeverMissAMoment": "永不錯過任何瞬間。",
-    "OpenFloater": "開啟浮動視窗",
-    "OpenLauncher": "開啟啟動器",
-    "PrivacyDesc": "SeaMeet 快照在您的電腦記憶體（RAM）本地環形緩衝區中，捕捉 {{duration}} 秒的 {{type}} 資料。",
-    "PrivacyProtected": "您的隱私受到保護。",
-    "Ready": "準備好了嗎？",
-    "ReadyToCapture": "SeaMeet 已準備好擷取",
-    "ReadyToGuard": "準備守護您的 {{type}} 嗎？",
-    "RecordWithFlashback": "使用時間回溯錄製",
-    "SaveFlashback": "儲存最後 {{seconds}} 秒的時間回溯",
-    "SaveLastFlashback": "儲存最後 {{duration}} 秒的時間回溯",
-    "SavingFlashback": "正在儲存時間回溯...",
-    "Screen": "頁面",
-    "StartRecording": "開始錄製",
-    "TakeScreenshot": "拍攝螢幕截圖"
-  },
-  "FlashbackIndicator": {
-    "Buffering": "緩衝中...",
-    "BufferingVideo": "影片緩衝中",
-    "Disabled": "時間回溯已停用",
-    "Ready": "影片就緒",
-    "VideoPrefix": "影片",
-    "VideoReady": "影片就緒"
-  },
-  "FlashbackInfoModal": {
-    "Benefits": {
-      "AlwaysReady": "隨時就緒",
-      "LocalOnly": "僅本地（完全隱私）",
-      "MultipleCaptures": "多重捕捉，緩衝區持續運行",
-      "NoPlan": "無需規劃",
-      "Offline": "可離線運作",
-      "Title": "主要優點"
-    },
-    "BestFor": "適用範圍：",
-    "Close": "關閉",
-    "Comparison": {
-      "Capture": {
-        "Feature": "捕捉瞬間",
-        "Flashback": "可以在【瞬間】之後開始",
-        "Traditional": "如果忘記了，就會丟失"
-      },
-      "Header": {
-        "Feature": "功能",
-        "Flashback": "時間回溯錄音",
-        "Traditional": "傳統錄音"
-      },
-      "Planning": {
-        "Feature": "計畫",
-        "Flashback": "不需要計畫",
-        "Traditional": "必須在【瞬間】發生前開始"
-      },
-      "Result": {
-        "Feature": "結果",
-        "Flashback": "我很高興我捕捉到了",
-        "Traditional": "我希望我錄下來了"
-      },
-      "Title": "時間回溯 vs. 傳統錄音"
-    },
-    "GotIt": "了解",
-    "HowItWorks": {
-      "Step1": {
-        "Desc": "點擊 FLASHBACK 按鈕以啟用，緩衝區會自動開始填滿。",
-        "Title": "啟用時間回溯"
-      },
-      "Step2": {
-        "Desc": "注意綠色狀態。緩衝區必須填滿到 90% 才能捕捉過去的內容。",
-        "Title": "等待準備好"
-      },
-      "Step3": {
-        "Desc": "當發生重要事件時，按下 錄音。時間回溯會抓取緩衝區並繼續向前錄音。",
-        "Title": "按下 錄音"
-      },
-      "Title": "它的工作原理"
-    },
-    "Modes": {
-      "Audio": {
-        "BestFor": "錄音會議、電話或語音對話",
-        "Buffer": "30秒（固定）",
-        "Captures": "麥克風和/或系統音訊",
-        "Memory": "保持不變，符合經驗和專業用語。",
-        "Title": "音訊時間回溯"
-      },
-      "Title": "雙模式時間回溯",
-      "Video": {
-        "BestFor": "簡報、遊戲亮點、螢幕共享會議、視覺內容",
-        "Buffer": "10秒、30秒、60秒、90秒或120秒",
-        "Captures": "螢幕影片和/或音訊",
-        "Memory": "50-600 MB 記憶體",
-        "Title": "影片時間回溯"
-      }
-    },
-    "OpenSettings": "開啟設定",
-    "Scenarios": {
-      "Decision": {
-        "Desc": "律師解釋合約條款。按下 錄音來捕捉解釋，擁有完整且準確的記錄以便稍後回顧。",
-        "Title": "重要決策"
-      },
-      "Gaming": {
-        "Desc": "演出一個驚人的連招。立即按下 錄音。時間回溯會捕捉該連招前的遊戲畫面 + 你的反應。",
-        "Title": "遊戲亮點"
-      },
-      "OhNo": {
-        "Desc": "同事說了一段深刻的話。你意識到要將它錄下來。按下 錄音 → 時間回溯會捕捉過去的 30 秒（包括那一刻！）。",
-        "Title": "「天啊！」時刻"
-      },
-      "Title": "實用場景"
-    },
-    "SpecLabel": {
-      "Buffer": "緩衝區：",
-      "Captures": "捕捉：",
-      "Memory": "記憶體："
-    },
-    "Subtitle": "您的個人時間膠囊",
-    "SubtitleDesc": "再也不會錯過重要時刻—即使事情已發生，也能捕捉最多 2 分鐘的回想內容。",
-    "Tips": {
-      "AudioDaily": {
-        "Desc": "使用30秒的音訊時間回溯來進行會議和通話。低記憶體使用，可靠運作。",
-        "Title": "每日使用的音訊時間回溯"
-      },
-      "Memory": {
-        "Desc": "配備2分鐘影片時間回溯，整個應用程式佔用少於1GB的RAM",
-        "Title": "記憶體管理"
-      },
-      "VideoSpecial": {
-        "Desc": "啟用影片時間回溯（30秒緩衝），用於簡報、遊戲亮點或任何想要保存的視覺內容。",
-        "Title": "影片時間回溯：捕捉精彩瞬間"
-      }
-    },
-    "Title": "時間回溯",
-    "VisualStates": {
-      "Charging": "琥珀色／黃色，緩衝區充滿",
-      "ChargingLabel": "緩衝中",
-      "Off": "灰色、靜態波形圖",
-      "OffLabel": "關閉",
-      "Ready": "綠色，波形圖已充滿",
-      "ReadyLabel": "就緒",
-      "Title": "視覺狀態指示器"
-    }
-  },
-  "FlashbackSettingsDetail": {
-    "AutoStartAudio": "音訊時間回溯",
-    "AutoStartDesc": "啟動應用時開始時間回溯",
-    "AutoStartDisable": "停用自動啟動",
-    "AutoStartLabel": "自動啟動時間回溯",
-    "AutoStartScreen": "螢幕時間回溯",
-    "BufferDurationDesc": "保持音訊／影片緩衝的時間",
-    "BufferDurationLabel": "緩衝區時長",
-    "BufferTitle": "緩衝區",
-    "DurationOption": "{{duration}}秒",
-    "StartupTitle": "啟動"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "時間回溯緩衝區為空，請稍後再試。",
-    "EnableFlashback": "啟用時間回溯以保存瞬間。",
-    "FailedToSave": "儲存時間回溯緩衝區失敗。",
-    "SavedFlashback": "已將時間回溯儲存到錄音檔。",
-    "StillCharging": "時間回溯緩衝區仍在準備中。"
-  },
   "FloatingStartBar": {
     "AttachTo": "附加至",
     "BluetoothMicDesc": "您的作業系統可能會強制啟用「通信模式」，可能會造成失真。",
@@ -2006,8 +1781,7 @@
     "Title": "了解更多 SeaMeet"
   },
   "IdleCompactView": {
-    "ArmFlashback": "啟用時間回溯",
-    "FlashbackSettings": "時間回溯設定"
+    "StartRecording": "開始錄製"
   },
   "InfoPrompt": {
     "CopyEmail": "📋 複製電子郵件",
@@ -2127,7 +1901,14 @@
     "ResolveOnWeb": "前往網頁處理",
     "ProvidedBy": "由 {{team}} 提供",
     "InactiveWarning": "在帳務問題解決前，工作區錄音與隱私控制暫時無法使用。",
-    "Status": { "Active": "使用中", "PastDue": "付款逾期", "Incomplete": "未完成", "Paused": "已暫停", "OverCapacity": "超出席次", "Canceled": "已取消" }
+    "Status": {
+      "Active": "使用中",
+      "PastDue": "付款逾期",
+      "Incomplete": "未完成",
+      "Paused": "已暫停",
+      "OverCapacity": "超出席次",
+      "Canceled": "已取消"
+    }
   },
   "DesktopTeamPrivacy": {
     "ShareNoticeTitle": "已與 {{team}} 共用",
@@ -2326,12 +2107,8 @@
   },
   "MinimizedView": {
     "ActionRequired": "需要您的協助（自動錄音）",
-    "AudioFlashbackCharged": "音訊時間回溯已就緒（{{duration}}秒）",
-    "AudioFlashbackCharging": "音訊時間回溯準備中…",
     "AudioRecording": "音訊錄音（{{time}}）",
     "RecordingFinished": "錄音完成",
-    "ScreenFlashbackCharged": "螢幕時間回溯已就緒（{{duration}}秒）",
-    "ScreenFlashbackCharging": "螢幕時間回溯準備中…",
     "ScreenRecording": "螢幕錄音（{{time}}）"
   },
   "NoteBinding": {
@@ -2664,16 +2441,10 @@
     "AutoDetectLabel": "自動偵測",
     "AutoDetectStatusOff": "已關閉 — 點按啟用",
     "AutoDetectStatusOn": "正在監看會議",
-    "FlashbackLabel": "時間回溯",
-    "FlashbackStatusCharging": "載入中 {{percent}}%",
-    "FlashbackStatusOff": "已關閉 — 點按啟動",
-    "FlashbackStatusReady": "就緒 — RAM 中最後 {{seconds}} 秒{{type}}",
     "FloaterPill": "浮動視窗",
     "LauncherPill": "啟動器",
     "NoteBindingLabel": "附加至",
     "RecentRecordings": "最近的錄製",
-    "RecordWithPreamble": "帶 {{seconds}} 秒前奏錄製",
-    "SaveLastInstead": "改為儲存最後 {{seconds}} 秒",
     "TapToRecord": "點按開始錄製"
   },
   "Recording": {
@@ -2793,9 +2564,6 @@
   "RingMenu": {
     "AutoDetectOff": "自動偵測：關閉",
     "AutoDetectOn": "自動偵測：啟用",
-    "FlashbackCharging": "短暫回憶充電中...",
-    "FlashbackNotCharged": "短暫回憶未充電，點擊一次充電音訊回憶，雙擊充電螢幕回憶",
-    "FlashbackSaveTooltip": "單擊可儲存最後 {{duration}} 秒的 {{mode}} 快照。雙擊以從此處繼續錄音。",
     "RecordAudio": "錄音",
     "RecordFullscreen": "全螢幕錄製",
     "RecordRegion": "錄製範圍",
@@ -2817,7 +2585,9 @@
     "NoWindows": "沒有可用的視窗",
     "PrimaryDisplay": "主顯示器",
     "SelectDisplay": "選擇顯示器",
-    "SelectWindow": "選擇視窗"
+    "SelectWindow": "選擇視窗",
+    "TakeScreenshot": "拍攝螢幕截圖",
+    "KeepWindowVisible": "截圖時保持 SeaMeet 視窗可見"
   },
   "ScreenshotProcessing": {
     "Analysis": "分析",
@@ -2995,24 +2765,6 @@
             "Title": "無資料收集"
           }
         },
-        "Flashback": {
-          "EthicalUse": {
-            "Description": "在使用 Flashback 進行錄音前，務必通知並取得他人同意。",
-            "Title": "道德使用"
-          },
-          "LocalOnly": {
-            "Description": "Flashback 完全在您的本機運行，沒有同步到雲端。",
-            "Title": "100% 本地運行"
-          },
-          "Protected": {
-            "Description": "您的隱私與安全至關重要。您的資料絕不會離開您的裝置。",
-            "Title": "資料保護"
-          },
-          "RAMOnly": {
-            "Description": "所有資料皆保留在記憶體中，除非儲存【時間回溯】錄音，否則不會寫入硬碟。",
-            "Title": "僅限 RAM"
-          }
-        },
         "Title": "隱私與安全保障"
       },
       "Terms": {
@@ -3072,7 +2824,6 @@
     "PageTitle": {
       "About": "關於",
       "AutoRecording": "自動錄音",
-      "Flashback": "【時間回溯】錄音",
       "Storage": "儲存空間"
     },
     "QuotaTier": {
@@ -3488,7 +3239,6 @@
       "VP9": "此影片使用 VP9 以達佳品質。部分預設播放器—如 Windows Media Player 與 macOS 上的 QuickTime—可能不支援此格式。建議使用較新的瀏覽器（Chrome 或 Edge）或相容播放器如 VLC。"
     },
     "Detecting": "正在偵測中...",
-    "FlashbackArmedNotice": "您正使用 {{seconds}} 秒時間回溯緩衝區進行錄音",
     "FramesPerSecond": "每秒幀數",
     "FullHD": "全高畫質",
     "GBPerHour": "~{{gb}} GB/小時",
@@ -3510,8 +3260,6 @@
     "QualityOriginal": "原始品質",
     "Record": "錄製",
     "RecordModeTitle": "要錄音或影片嗎？",
-    "RecordWithFlashback": "使用時間回溯錄音",
-    "RecordWithoutFlashback": "不使用時間回溯進行錄製",
     "Refresh": "重新整理",
     "ResolutionUnknown": "解析度未知",
     "SD": "SD",
@@ -3520,9 +3268,11 @@
     "SelectWindow": "選擇視窗",
     "SourceResolution": "來源解析度",
     "Title": "錄製設定",
-    "VideoFlashbackArmedNotice": "屏幕時間回溯已啟用 ({{seconds}}秒)",
     "VideoQuality": "影片品質",
-    "ZeroSize": "~0 MB/分鐘, ~0 GB/小時"
+    "ZeroSize": "~0 MB/分鐘, ~0 GB/小時",
+    "ImpactEstimate": "錄製時約佔 CPU {{cpu}}% · 記憶體 {{ram}} MB",
+    "ImpactVaries": "（估計值 — 依裝置而異）",
+    "ImpactCalibrated": "（依本裝置快速測試估算）"
   },
   "VideoSettingsModal": {
     "CustomRegion": "自訂範圍：{{width}} × {{height}} 像素",
@@ -3536,7 +3286,6 @@
   "WelcomeCard": {
     "GotIt": "知道了",
     "PointAutoDetect": "自動偵測會議，無須記得按錄製。",
-    "PointFlashback": "時間回溯保存最後 10 秒——讓你不錯過開場的那句精彩。",
     "PointRecord": "一鍵錄下任何內容。",
     "Subtitle": "三種方式，讓你不錯過任何一刻。",
     "Title": "歡迎使用 SeaMeet"
@@ -4163,7 +3912,8 @@
     "CloudUpdateRunning": "正在請求更新…",
     "CloudUpdateRequested": "已請求更新——將透過同步送達。",
     "SearchEntitiesPlaceholder": "搜尋人物、主題與會議",
-    "MemorySubtitle": "由您的錄音自動建立——您談論到的人物、主題與組織，各自提煉成一個頁面，並隨著您錄製更多內容而更新。"
+    "MemorySubtitle": "由您的錄音自動建立——您談論到的人物、主題與組織，各自提煉成一個頁面，並隨著您錄製更多內容而更新。",
+    "SearchCount": "{{count}} results"
   },
   "WikiPage": {
     "CorrectThis": "修正",

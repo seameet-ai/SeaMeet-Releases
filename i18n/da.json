@@ -683,12 +683,8 @@
     "ConfigureApiKey": "Konfigurer dine API-nøgler for at bruge AI-agenten."
   },
   "App": {
-    "FailedToEnableFlashback": "Fejl under aktivering af flashback: {{error}}",
     "FailedToOpenSignIn": "Kunne ikke åbne loginside",
     "FailedToSignOut": "Kunne ikke logge ud",
-    "FailedToStartFlashback": "Fejl under start af flashback: {{error}}",
-    "FlashbackDisabled": "Flashback deaktiveret",
-    "FlashbackWithoutAudio": "Video flashback kører uden lyd indtil tilladelser er givet.",
     "RecordingPaused": "Optagelse sat på pause",
     "UnknownError": "Ukendt fejl"
   },
@@ -1664,227 +1660,6 @@
     "ConfirmReplaceAll_one": "Erstat {{count}} match?",
     "ConfirmReplaceAll_other": "Erstat alle {{count}} match?"
   },
-  "FlashbackControls": {
-    "AudioFlashback": "Lyd Flashback",
-    "CannotChangeWhileRecording": "Kan ikke ændre flashback-tilstand under optagelse",
-    "DisableFlashback": "Deaktiver Flashback",
-    "Label": "TILBAGEBLIK",
-    "LearnAbout": "Lær om Flashback",
-    "Off": "Fra",
-    "Preparing": "Forbereder...",
-    "Ready": "Klar",
-    "ReadyQuestion": "Klar?",
-    "ScreenFlashback": "Skærm Flashback",
-    "SettingsLabel": "Flashback-optagelse",
-    "TitleCharging": "Flashback indlæses",
-    "TitleInit": "Klik for at starte indlæsning",
-    "TitleReady": "Klik for at vise Flashback-brugergrænsefladen",
-    "ToggleLabel": "Skift flashback"
-  },
-  "FlashbackDrawer": {
-    "AdvancedSettings": "Avancerede indstillinger →",
-    "Description": "Husker stille og roligt de sidste sekunder, før du trykker optag — så du ikke går glip af sætningen, der startede mødet.",
-    "LearnMore": "Læs mere",
-    "ModeAudio": "Lyd",
-    "ModeLabel": "Hvad skal buffres",
-    "ModeOff": "Fra",
-    "ModeScreen": "Skærm",
-    "PrimaryRecord": "Optag med {{seconds}}s forudspil",
-    "PrimarySave": "Gem de sidste {{seconds}}s",
-    "StatusCharging": "Oplader {{percent}}%…",
-    "StatusOff": "Fra — vælg en tilstand nedenfor for at aktivere.",
-    "StatusReady": "Klar — sidste {{seconds}}s {{type}}.",
-    "Title": "Tilbageblik",
-    "Types": {
-      "audio": "lyd",
-      "screen": "skærm"
-    },
-    "WindowLabel": "Vindueslængde"
-  },
-  "FlashbackFirstArm": {
-    "Tooltip": "De sidste {{seconds}}s buffres kun i RAM. Tryk Gem eller optagelsesknappen for at bruge dem."
-  },
-  "FlashbackHeroUI": {
-    "Audio": "lyd",
-    "Buffering": "Indlæser",
-    "BufferingMoment": "Indlæser øjeblik...",
-    "Capturing": "Optager...",
-    "DescCharging": "Klargør dit {{duration}}-sekunders vindue... næsten klar til at fange det du måske går glip af. {{progress}}% færdigt.",
-    "DescInit": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
-    "DescNone": "Optag din skærm, lyd eller tag et skærmbillede. Vælg en flashback-tilstand ovenfor for at aktivere øjebliks-lagring.",
-    "DescReady": "Flashback er aktiveret. Hver gang du trykker Optag, inkluderes de sidste {{duration}} sekunder af {{type}} — beklag aldrig et gået øjeblik igen.",
-    "FillingBuffer": "Udfylder {{duration}}s flashback-buffer... {{progress}}%",
-    "FlashbackBuffering": "Indlæser...",
-    "FlashbackCharging": "Udfylder {{seconds}}s buffer... {{percent}}%",
-    "FlashbackChargingDescription": "Klargør dit {{seconds}}-sekunders vindue... {{percent}}% færdigt.",
-    "FlashbackInitAudio": "Klar til at beskytte din lyd?",
-    "FlashbackInitDescription": "Klik på 'Klar?' for at fortælle SeaMeet at starte med at 'huske' fortiden.",
-    "FlashbackInitScreen": "Klar til at beskytte din skærm?",
-    "FlashbackMismatch": "Flashback-tilstandskonflikt. Lydoptagelse men video-flashback er aktiv. Deaktiver venligst video-flashback.",
-    "FlashbackOff": "Flashback er i øjeblikket fra. Start en normal optagelse når som helst, eller vælg en flashback-tilstand (lyd eller skærm) ovenfor for at aktivere heroisk øjebliks-lagring.",
-    "FlashbackPrivacy": "Dit privatliv er beskyttet. Gemmes lokalt i RAM.",
-    "FlashbackReady": "Gå aldrig glip af et øjeblik.",
-    "FlashbackReadyDescription": "Flashback er aktiveret. De sidste {{seconds}}s af {{type}} inkluderes når du optager.",
-    "FlashbackReadyQuestion": "Klar?",
-    "KeepWindowVisible": "Hold SeaMeet-vinduet synligt ved skærmbillede",
-    "NeverMissAMoment": "Gå aldrig glip af et øjeblik.",
-    "OpenFloater": "Åbn Floater",
-    "OpenLauncher": "Åbn Launcher",
-    "PrivacyDesc": "SeaMeet tager øjebliksbilleder af de sidste {{duration}}s af {{type}} i en ring-buffer lokalt på din computers RAM.",
-    "PrivacyProtected": "Dit privatliv er beskyttet.",
-    "Ready": "Klar?",
-    "ReadyToCapture": "SeaMeet er klar til at optage.",
-    "ReadyToGuard": "Klar til at beskytte din {{type}}?",
-    "RecordWithFlashback": "Optag med Flashback",
-    "SaveFlashback": "Gem de sidste {{seconds}}s flashback",
-    "SaveLastFlashback": "Gem de sidste {{duration}}s flashback",
-    "SavingFlashback": "Gemmer flashback...",
-    "Screen": "skærm",
-    "StartRecording": "Start optagelse",
-    "TakeScreenshot": "Tag skærmbillede"
-  },
-  "FlashbackIndicator": {
-    "Buffering": "Indlæser",
-    "BufferingVideo": "Indlæser video",
-    "Disabled": "Flashback deaktiveret",
-    "Ready": "Klar",
-    "VideoPrefix": "Video",
-    "VideoReady": "Video klar"
-  },
-  "FlashbackInfoModal": {
-    "Benefits": {
-      "AlwaysReady": "Altid klar",
-      "LocalOnly": "Kun lokalt (fuldt privatliv)",
-      "MultipleCaptures": "Flere optagelser – bufferen kører videre",
-      "NoPlan": "Ingen planlægning nødvendig",
-      "Offline": "Fungerer offline",
-      "Title": "Vigtigste fordele"
-    },
-    "BestFor": "Bedst til:",
-    "Close": "Luk",
-    "Comparison": {
-      "Capture": {
-        "Feature": "Fang øjeblikke",
-        "Flashback": "Kan starte EFTER øjeblikket",
-        "Traditional": "Hvis du glemmer det, er det tabt"
-      },
-      "Header": {
-        "Feature": "Funktion",
-        "Flashback": "Flashback-optagelse",
-        "Traditional": "Traditionel optagelse"
-      },
-      "Planning": {
-        "Feature": "Planlægning",
-        "Flashback": "Ingen planlægning nødvendig",
-        "Traditional": "Skal startes FØR øjeblikket"
-      },
-      "Result": {
-        "Feature": "Resultat",
-        "Flashback": "\"Jeg er glad for, at jeg fangede det\"",
-        "Traditional": "\"Jeg ville ønske, jeg havde optaget det\""
-      },
-      "Title": "Flashback vs. Traditionel optagelse"
-    },
-    "GotIt": "Forstået",
-    "HowItWorks": {
-      "Step1": {
-        "Desc": "Klik på FLASHBACK-knappen for at tænde. Bufferen begynder automatisk at blive fyldt.",
-        "Title": "Aktiver Flashback"
-      },
-      "Step2": {
-        "Desc": "Vent på grøn status. Bufferen skal være fyldt til 90%, før du kan fange fortiden.",
-        "Title": "Vent på klar"
-      },
-      "Step3": {
-        "Desc": "Når noget vigtigt sker, tryk på Optag. Flashback griber bufferen og fortsætter optagelsen fremad.",
-        "Title": "Tryk på Optag"
-      },
-      "Title": "Sådan virker det"
-    },
-    "Modes": {
-      "Audio": {
-        "BestFor": "Optag møder, telefonopkald og stemmesamtaler",
-        "Buffer": "30 sekunder (fast)",
-        "Captures": "Mikrofon og/eller systemlyd",
-        "Memory": "~30-50 MB RAM",
-        "Title": "Lyd Flashback"
-      },
-      "Title": "To Flashback-tilstande",
-      "Video": {
-        "BestFor": "Præsentationer, gaming-højdepunkter, skærmdelingssessioner, visuelt indhold",
-        "Buffer": "10s, 30s, 60s, 90s eller 120s",
-        "Captures": "Skærmvideo + lyd",
-        "Memory": "50-600 MB RAM",
-        "Title": "Video-flashback"
-      }
-    },
-    "OpenSettings": "Åbn indstillinger",
-    "Scenarios": {
-      "Decision": {
-        "Desc": "Advokaten forklarer en kontraktbestemmelse. Tryk på Optag for at fange forklaringen. Hav en komplet, nøjagtig optegnelse til senere gennemgang.",
-        "Title": "Vigtig beslutning"
-      },
-      "Gaming": {
-        "Desc": "Udfør et utroligt combo. Tryk straks på Optag. Flashback fanger gameplay op til det combo + din reaktion.",
-        "Title": "Gaming-højdepunkt"
-      },
-      "OhNo": {
-        "Desc": "Kollega siger noget dybt. Du indser, at du vil optage det. Tryk på Optag → Flashback fanger de sidste 30 sekunder (inklusive det øjeblik!).",
-        "Title": "\"Åh nej!\"-øjeblikket"
-      },
-      "Title": "Praktiske scenarier"
-    },
-    "SpecLabel": {
-      "Buffer": "Buffer:",
-      "Captures": "Optagelser:",
-      "Memory": "Hukommelse:"
-    },
-    "Subtitle": "Din Personlige Tidsmaskine",
-    "SubtitleDesc": "Gå aldrig glip af et vigtigt øjeblik igen—optag op til 2 minutter fra fortiden, selv efter det er sket.",
-    "Tips": {
-      "AudioDaily": {
-        "Desc": "Brug 30-sekunders Lyd Flashback til møder og opkald. Lav hukommelsesforbrug og fungerer pålideligt.",
-        "Title": "Lyd Flashback til daglig brug"
-      },
-      "Memory": {
-        "Desc": "Med 2 minutters Video Flashback bruger hele applikationen mindre end 1 GB RAM.",
-        "Title": "Hukommelsesstyring"
-      },
-      "VideoSpecial": {
-        "Desc": "Aktiver Video Flashback (30s buffer) til præsentationer, gaming-højdepunkter eller andet visuelt indhold, du ønsker at bevare.",
-        "Title": "Video Flashback til særlige øjeblikke"
-      }
-    },
-    "Title": "Flashback-optagelse",
-    "VisualStates": {
-      "Charging": "Rav/Gul, buffer fyldes",
-      "ChargingLabel": "INDLÆSER",
-      "Off": "Grå, statisk bølgeform",
-      "OffLabel": "FRA",
-      "Ready": "Grøn, buffer fuld",
-      "ReadyLabel": "KLAR",
-      "Title": "Visuelle statusindikatorer"
-    }
-  },
-  "FlashbackSettingsDetail": {
-    "AutoStartAudio": "Lyd Flashback",
-    "AutoStartDesc": "Start flashback når appen starter",
-    "AutoStartDisable": "Deaktiver auto-start",
-    "AutoStartLabel": "Autostart Flashback",
-    "AutoStartScreen": "Skærm Flashback",
-    "BufferDurationDesc": "Hvor lang tid lyd/video skal holdes i buffer",
-    "BufferDurationLabel": "Buffer-varighed",
-    "BufferTitle": "Buffer",
-    "DurationOption": "{{duration}}s",
-    "StartupTitle": "Opstart"
-  },
-  "FlashbackSnapshot": {
-    "BufferEmpty": "Flashback-bufferen er tom. Prøv igen om et øjeblik.",
-    "EnableFlashback": "Aktiver flashback for at gemme et øjeblik.",
-    "FailedToSave": "Kunne ikke gemme flashback-bufferen.",
-    "SavedFlashback": "Flashback gemt i Optagelser.",
-    "StillCharging": "Flashback-bufferen indlæser stadig."
-  },
   "FloatingStartBar": {
     "AttachTo": "Vedhæft til",
     "BluetoothMicDesc": "Dit operativsystem kan gennemtvinge \"Kommunikationstilstand\", hvilket kan forårsage forvrængning.",
@@ -2006,8 +1781,7 @@
     "Title": "Læs mere om SeaMeet"
   },
   "IdleCompactView": {
-    "ArmFlashback": "Aktiver Flashback",
-    "FlashbackSettings": "Flashback-indstillinger"
+    "StartRecording": "Start optagelse"
   },
   "InfoPrompt": {
     "CopyEmail": "📋  Kopiér e-mail",
@@ -2107,8 +1881,53 @@
   "MediaCard": {
     "Untitled": "Uden titel"
   },
-  "DesktopTeam": { "Workspace": "Arbejdsområde", "RoleOwner": "Ejer", "RoleMember": "Medlem", "Seats": "{{active}} af {{total}} pladser aktive", "PrivacyAllowed": "Optagelser deles som standard med arbejdsområdet. Du kan markere dine optagelser som private.", "PrivacyRequired": "Optagelser deles som standard med arbejdsområdet. Private optagelser er deaktiveret af ejeren.", "Manage": "Administrer team", "ViewOnWeb": "Se team på web", "ChangeSeats": "Ændr pladser", "AddSeats": "Tilføj pladser til dit team", "SoloTitle": "Tag dit team med til SeaMeet", "SoloBody": "Tilføj pladser og del ét fælles optagelsesområde.", "LoadFailed": "Kunne ikke indlæse oplysninger om arbejdsområdet.", "Retry": "Forsøg at indlæse teamoplysninger igen", "PolicyShared": "optagelser delt med arbejdsområdet", "PolicyRequired": "private optagelser deaktiveret", "ResolveOnWeb": "Løs på web", "InactiveWarning": "Optagelser i arbejdsområdet og privatlivsindstillinger er utilgængelige, indtil faktureringen er løst.", "Status": { "Active": "Aktiv", "PastDue": "Forsinket", "Incomplete": "Ufuldstændig", "Paused": "Sat på pause", "OverCapacity": "Over kapacitet", "Canceled": "Annulleret" } , "ProvidedBy": "Leveret af {{team}}" },
-  "DesktopTeamPrivacy": { "ShareNoticeTitle": "Delt med {{team}}", "ShareNoticeBody": "Alle i dette arbejdsområde kan se nye optagelser, når overførslen er fuldført.", "DismissShareNotice": "Luk meddelelsen om deling", "VisibleTitle": "Synlig for {{team}}", "VisibleBody": "Medlemmer af arbejdsområdet kan afspille og se denne optagelse.", "PrivateTitle": "Privat — kun dig", "PrivateBody": "Medlemmer af arbejdsområdet kan ikke se denne optagelse.", "MarkPrivate": "Markér som privat — kun mig", "ShareWorkspace": "Del med arbejdsområdet", "ConfirmPrivateTitle": "Gør denne optagelse privat?", "ConfirmPrivateBody": "Kun du kan se „{{name}}“. Den fjernes fra arbejdsområdet {{team}}.", "Cancel": "Annuller", "ConfirmMarkPrivate": "Markér som privat", "MarkedPrivate": "Optagelsen er nu privat.", "SharedWorkspace": "Optagelsen deles nu med arbejdsområdet.", "PrivacyUpdateFailed": "Kunne ikke opdatere synligheden i arbejdsområdet. Prøv igen." },
+  "DesktopTeam": {
+    "Workspace": "Arbejdsområde",
+    "RoleOwner": "Ejer",
+    "RoleMember": "Medlem",
+    "Seats": "{{active}} af {{total}} pladser aktive",
+    "PrivacyAllowed": "Optagelser deles som standard med arbejdsområdet. Du kan markere dine optagelser som private.",
+    "PrivacyRequired": "Optagelser deles som standard med arbejdsområdet. Private optagelser er deaktiveret af ejeren.",
+    "Manage": "Administrer team",
+    "ViewOnWeb": "Se team på web",
+    "ChangeSeats": "Ændr pladser",
+    "AddSeats": "Tilføj pladser til dit team",
+    "SoloTitle": "Tag dit team med til SeaMeet",
+    "SoloBody": "Tilføj pladser og del ét fælles optagelsesområde.",
+    "LoadFailed": "Kunne ikke indlæse oplysninger om arbejdsområdet.",
+    "Retry": "Forsøg at indlæse teamoplysninger igen",
+    "PolicyShared": "optagelser delt med arbejdsområdet",
+    "PolicyRequired": "private optagelser deaktiveret",
+    "ResolveOnWeb": "Løs på web",
+    "InactiveWarning": "Optagelser i arbejdsområdet og privatlivsindstillinger er utilgængelige, indtil faktureringen er løst.",
+    "Status": {
+      "Active": "Aktiv",
+      "PastDue": "Forsinket",
+      "Incomplete": "Ufuldstændig",
+      "Paused": "Sat på pause",
+      "OverCapacity": "Over kapacitet",
+      "Canceled": "Annulleret"
+    },
+    "ProvidedBy": "Leveret af {{team}}"
+  },
+  "DesktopTeamPrivacy": {
+    "ShareNoticeTitle": "Delt med {{team}}",
+    "ShareNoticeBody": "Alle i dette arbejdsområde kan se nye optagelser, når overførslen er fuldført.",
+    "DismissShareNotice": "Luk meddelelsen om deling",
+    "VisibleTitle": "Synlig for {{team}}",
+    "VisibleBody": "Medlemmer af arbejdsområdet kan afspille og se denne optagelse.",
+    "PrivateTitle": "Privat — kun dig",
+    "PrivateBody": "Medlemmer af arbejdsområdet kan ikke se denne optagelse.",
+    "MarkPrivate": "Markér som privat — kun mig",
+    "ShareWorkspace": "Del med arbejdsområdet",
+    "ConfirmPrivateTitle": "Gør denne optagelse privat?",
+    "ConfirmPrivateBody": "Kun du kan se „{{name}}“. Den fjernes fra arbejdsområdet {{team}}.",
+    "Cancel": "Annuller",
+    "ConfirmMarkPrivate": "Markér som privat",
+    "MarkedPrivate": "Optagelsen er nu privat.",
+    "SharedWorkspace": "Optagelsen deles nu med arbejdsområdet.",
+    "PrivacyUpdateFailed": "Kunne ikke opdatere synligheden i arbejdsområdet. Prøv igen."
+  },
   "MediaLibrary": {
     "All": "Alle",
     "Audio": "Lyd",
@@ -2145,7 +1964,14 @@
     "SubTabs": "Filvisninger",
     "MyFiles": "Mine filer",
     "SharedWithMe": "Delt med mig",
-    "OwnerFilter": { "Label": "Hvis optagelser", "Everyone": "Alle", "JustMe": "Kun mig", "NoRecordingsFrom": "Endnu ingen optagelser fra {{name}}", "NoRecordingsFromHint": "Vælg en anden person, eller vis alle.", "ShowEveryone": "Vis alle" },
+    "OwnerFilter": {
+      "Label": "Hvis optagelser",
+      "Everyone": "Alle",
+      "JustMe": "Kun mig",
+      "NoRecordingsFrom": "Endnu ingen optagelser fra {{name}}",
+      "NoRecordingsFromHint": "Vælg en anden person, eller vis alle.",
+      "ShowEveryone": "Vis alle"
+    },
     "BatchDeletePartial_one": "{{count}} af {{total}} filer slettet",
     "BatchDeletePartial_other": "{{count}} af {{total}} filer slettet",
     "ConfirmBatchDelete_one": "Slet {{count}} filer?",
@@ -2281,12 +2107,8 @@
   },
   "MinimizedView": {
     "ActionRequired": "Handling påkrævet (Auto-optag)",
-    "AudioFlashbackCharged": "Lyd-flashback indlæst ({{duration}}s)",
-    "AudioFlashbackCharging": "Lyd-flashback indlæser...",
     "AudioRecording": "Lydoptagelse ({{time}})",
     "RecordingFinished": "Optagelse færdig",
-    "ScreenFlashbackCharged": "Skærm-flashback indlæst ({{duration}}s)",
-    "ScreenFlashbackCharging": "Skærm-flashback indlæser...",
     "ScreenRecording": "Skærmoptagelse ({{time}})"
   },
   "NoteBinding": {
@@ -2619,16 +2441,10 @@
     "AutoDetectLabel": "Auto-registrering",
     "AutoDetectStatusOff": "fra — tryk for at aktivere",
     "AutoDetectStatusOn": "holder øje med møder",
-    "FlashbackLabel": "Tilbageblik",
-    "FlashbackStatusCharging": "oplader {{percent}}%",
-    "FlashbackStatusOff": "fra — tryk for at aktivere",
-    "FlashbackStatusReady": "klar — {{seconds}}s {{type}} i RAM",
     "FloaterPill": "Flydevindue",
     "LauncherPill": "Starter",
     "NoteBindingLabel": "Vedhæft til",
     "RecentRecordings": "Nylige optagelser",
-    "RecordWithPreamble": "Optag med {{seconds}}s forudspil",
-    "SaveLastInstead": "Gem de sidste {{seconds}}s i stedet",
     "TapToRecord": "Tryk for at starte optagelse"
   },
   "Recording": {
@@ -2748,9 +2564,6 @@
   "RingMenu": {
     "AutoDetectOff": "Auto-detektering: FRA",
     "AutoDetectOn": "Auto-detektering: TIL",
-    "FlashbackCharging": "Flashback indlæser...",
-    "FlashbackNotCharged": "Flashback ikke indlæst, klik én gang for at indlæse lyd-flashback, dobbeltklik for at indlæse skærm-flashback",
-    "FlashbackSaveTooltip": "Enkelt klik for at gemme de sidste {{duration}}s {{mode}} flashback. Dobbeltklik for at fortsætte optagelse herfra.",
     "RecordAudio": "Optag lyd",
     "RecordFullscreen": "Optag fuld skærm",
     "RecordRegion": "Optag område",
@@ -2772,7 +2585,9 @@
     "NoWindows": "Ingen tilgængelige vinduer",
     "PrimaryDisplay": "Primær skærm",
     "SelectDisplay": "Vælg Display",
-    "SelectWindow": "Vælg Vindue"
+    "SelectWindow": "Vælg Vindue",
+    "TakeScreenshot": "Tag skærmbillede",
+    "KeepWindowVisible": "Hold SeaMeet-vinduet synligt ved skærmbillede"
   },
   "ScreenshotProcessing": {
     "Analysis": "Analyse",
@@ -2950,24 +2765,6 @@
             "Title": "Ingen dataindsamling"
           }
         },
-        "Flashback": {
-          "EthicalUse": {
-            "Description": "Informér altid og indhent samtykke fra andre før du bruger Flashback til at optage dem.",
-            "Title": "Etisk brug"
-          },
-          "LocalOnly": {
-            "Description": "Flashback kører udelukkende på din lokale maskine. Intet synkroniseres til cloud.",
-            "Title": "100% Lokalt"
-          },
-          "Protected": {
-            "Description": "Dit privatliv og sikkerhed er af yderste vigtighed. Dine data forlader aldrig din enhed.",
-            "Title": "Beskyttet"
-          },
-          "RAMOnly": {
-            "Description": "Alle data forbliver i hukommelsen. Intet skrives til disk medmindre du gemmer en Flashback-optagelse.",
-            "Title": "Kun RAM"
-          }
-        },
         "Title": "PRIVATLIV OG SIKKERHED"
       },
       "Terms": {
@@ -3027,7 +2824,6 @@
     "PageTitle": {
       "About": "Om",
       "AutoRecording": "Auto-optagelse",
-      "Flashback": "Flashback-optagelse",
       "Storage": "Lager"
     },
     "QuotaTier": {
@@ -3443,7 +3239,6 @@
       "VP9": "Denne optagelse bruger VP9 til bedste kvalitet. Nogle standard videoplayere — såsom Windows Media Player og QuickTime på macOS — understøtter muligvis ikke dette format. For pålidelig afspilning, brug venligst en moderne browser (Chrome eller Edge) eller en kompatibel afspiller som VLC."
     },
     "Detecting": "Registrerer...",
-    "FlashbackArmedNotice": "Du optager med {{seconds}}s flashback-buffer",
     "FramesPerSecond": "Billeder pr. sekund",
     "FullHD": "Full HD",
     "GBPerHour": "~{{gb}} GB/time",
@@ -3465,8 +3260,6 @@
     "QualityOriginal": "Original",
     "Record": "Optag",
     "RecordModeTitle": "Optag lyd eller video?",
-    "RecordWithFlashback": "Optag med flashback",
-    "RecordWithoutFlashback": "Optag uden flashback",
     "Refresh": "Opdater",
     "ResolutionUnknown": "Ukendt opløsning",
     "SD": "SD",
@@ -3475,9 +3268,11 @@
     "SelectWindow": "Vælg vindue",
     "SourceResolution": "Kildeopløsning",
     "Title": "Optagelsesindstillinger",
-    "VideoFlashbackArmedNotice": "Skærm-flashback aktiveret ({{seconds}}s)",
     "VideoQuality": "Videokvalitet",
-    "ZeroSize": "~0 MB/min, ~0 GB/time"
+    "ZeroSize": "~0 MB/min, ~0 GB/time",
+    "ImpactEstimate": "≈ {{cpu}} % CPU · {{ram}} MB RAM under optagelse",
+    "ImpactVaries": "(estimat — varierer efter maskine)",
+    "ImpactCalibrated": "(estimeret ud fra en hurtig test på denne enhed)"
   },
   "VideoSettingsModal": {
     "CustomRegion": "Tilpasset område: {{width}} × {{height}} pixels",
@@ -3491,7 +3286,6 @@
   "WelcomeCard": {
     "GotIt": "Forstået",
     "PointAutoDetect": "Registrér møder automatisk, så du aldrig glemmer at trykke optag.",
-    "PointFlashback": "Tilbageblik gemmer de sidste 10 sekunder — så du ikke går glip af den første gode sætning.",
     "PointRecord": "Optag alt med ét tryk.",
     "Subtitle": "Tre måder at aldrig gå glip af et øjeblik.",
     "Title": "Mød SeaMeet"
@@ -4118,7 +3912,8 @@
     "CloudUpdateRunning": "Anmoder om opdatering…",
     "CloudUpdateRequested": "Opdatering anmodet — den ankommer via synkronisering.",
     "SearchEntitiesPlaceholder": "Søg efter personer, emner og møder",
-    "MemorySubtitle": "Oprettes automatisk ud fra dine optagelser — de personer, emner og organisationer, du taler om, hver destilleret til en side, der opdateres, efterhånden som du optager mere."
+    "MemorySubtitle": "Oprettes automatisk ud fra dine optagelser — de personer, emner og organisationer, du taler om, hver destilleret til en side, der opdateres, efterhånden som du optager mere.",
+    "SearchCount": "{{count}} results"
   },
   "WikiPage": {
     "CorrectThis": "Ret dette",
