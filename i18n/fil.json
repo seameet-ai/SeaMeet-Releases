@@ -310,6 +310,7 @@
     "NoSummary": "Wala pang buod ng AI.",
     "NoSummaryText": "Hindi available ang buod.",
     "TooLittleSpeech": "Masyadong kaunti ang pananalita para ibuod. Kailangan ng recording ng mga 20 salita para magkaroon ng buod.",
+    "LocalLlmOff": "Naka-off ang Buod at Ask sa on-device na AI. I-on ito sa Settings → AI para gumawa ng buod sa computer na ito.",
     "RegeneratingSummary": "Muling ginagawa ang buod… {{elapsed}}",
     "RegenerateCancelled": "Kinansela ang muling paggawa ng buod.",
     "NoTranscript": "Hindi available ang transcript.",
@@ -2823,7 +2824,10 @@
       "PARSE_ERROR": "Nabigong i-parse ang tugon ng AI.",
       "RATE_LIMIT": "Lumampas sa limitasyon sa rate ng API. Mangyaring maghintay ng ilang sandali.",
       "SERVER_ERROR": "Nagkaroon ng error ang AI server.",
-      "UNKNOWN_ERROR": "Nabigo ang pagproseso ng AI."
+      "UNKNOWN_ERROR": "Nabigo ang pagproseso ng AI.",
+      "LOCAL_IMAGE_FAILED": "Hindi nabasa ng SeaVision-2B ang screenshot na ito. Subukang muli.",
+      "BAD_IMAGE": "Hindi mabasa ang larawang ito. Subukan ang PNG o JPEG.",
+      "IMAGE_NOT_INSTALLED": "Hindi naka-install ang image recognition. I-on ito sa Settings → AI."
     },
     "ExtractedText": "Na-extract na Teksto",
     "FallbackHint": "I-off ang \"Gamitin ang pangunahing LLM para sa screenshot OCR\" sa Settings kung hindi sinusuportahan ng provider na ito ang vision.",
@@ -2851,7 +2855,12 @@
       "BundleOcr": "Teksto ng OCR",
       "BundleDescription": "Paglalarawan",
       "BundleSearch": "Paghahanap"
-    }
+    },
+    "ReadingOnDevice": "Binabasa ang screenshot sa computer na ito… {{elapsed}}",
+    "OnDeviceImageOff": "Basahin ang screenshot na ito sa computer na ito: i-on ang Pagkilala sa larawan sa Settings → AI.",
+    "OpenAiSettings": "Buksan ang Settings → AI",
+    "WaitingForRecording": "Babasahin pagkatapos ng recording.",
+    "PartlyRead": "Bahagyang nabasa: maaaring may kulang na teksto. Basahin ulit para subukang makuha ang iba."
   },
   "ScreenshotView": {
     "RecentLabel": "Kamakailang screenshots"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Hindi naka-load (naglo-load kapag kailangan)"
+    "PillNotLoaded": "Hindi naka-load (naglo-load kapag kailangan)",
+    "DoingImage": "Binabasa ang screenshot sa device",
+    "RoleVisionWhat": "(mga larawan)",
+    "VisionShared": "Tumatakbo sa loob ng {{llm}}: binibilang sa row na iyon"
   },
   "OnDeviceAI": {
     "Title": "On-device na AI",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "I-restart ang SeaMeet para i-off ang on-device na AI?",
     "RestartDetail": "Ilalapat ang pagbabago pagbukas muli ng SeaMeet. Ihinto muna ang anumang recording.",
     "Later": "Mamaya",
-    "NotEnoughMemory": "Hindi available sa computer na ito: kailangan nito ng hindi bababa sa 16 GB na memory, at {{gb}} GB lang ang mayroon ito.",
+    "NotEnoughMemory": "Hindi available sa computer na ito: kailangan nito ng hindi bababa sa 8 GB na memory, at {{gb}} GB lang ang mayroon ito.",
     "Models": "Mga model",
     "Download": "I-download",
     "Downloading": "Dina-download ang mga model: {{done}} sa {{all}} GB (file {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{done}} sa {{all}} GB ang na-download. Magpapatuloy ang download kung saan ito huminto sa susunod na pagbukas ng SeaMeet.",
     "KeepDownloading": "Ituloy ang pag-download",
     "Quit": "Lumabas",
-    "DeletePending": "Buburahin ang mga na-download na model pagbukas muli ng SeaMeet."
+    "DeletePending": "Buburahin ang mga na-download na model pagbukas muli ng SeaMeet.",
+    "PartsLabel": "Ano ang tumatakbo sa computer na ito",
+    "PartSpeech": "Transcription ng pananalita",
+    "PartSummary": "Buod at Ask Agent",
+    "PartImage": "Pagkilala sa larawan",
+    "PartSize": "{{download}} GB na download · mga {{mem}} GB na memory",
+    "PartAlwaysOn": "laging naka-on",
+    "PartNeedsSummary": "kailangan ang Buod at Ask",
+    "PartNeedsMemory": "Kailangan ng 16 GB na memory; may {{gb}} GB ang computer na ito",
+    "PartComingSoon": "Malapit na",
+    "SelectionTotals": "Pinili mo: {{download}} GB na ida-download · mga {{mem}} GB na memory · kailangan ng {{disk}} GB na libreng disk",
+    "SelectionTotalsReady": "Pinili mo: na-download na · mga {{mem}} GB na memory",
+    "ThisComputer": "Ang computer na ito: {{gb}} GB na memory",
+    "ActiveSpeech": "Naka-on: tumatakbo sa computer na ito ang transcription. Naka-off ang mga buod at Ask.",
+    "SuggestDetailSpeech": "Maaaring tumakbo sa computer na ito ang transcription, nang walang cloud AI. Magda-download ito ng {{size}} GB nang isang beses. Maaari mo rin itong i-on mamaya sa Settings → AI.",
+    "DeleteSummaryQuestion": "Burahin ang model ng Buod at Ask ({{size}} GB)?",
+    "DeleteImageQuestion": "Burahin ang model ng pagkilala sa larawan ({{size}} GB)?",
+    "DeletePartDetail": "Maaari mo itong i-download ulit sa pag-tick dito.",
+    "DescriptionSpeech": "Tumatakbo sa computer na ito ang transcription, nang walang cloud AI."
   }
 }

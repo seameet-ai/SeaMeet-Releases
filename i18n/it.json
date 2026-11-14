@@ -310,6 +310,7 @@
     "NoSummary": "Nessun riepilogo AI ancora.",
     "NoSummaryText": "Riepilogo non disponibile.",
     "TooLittleSpeech": "Troppo poco parlato per un riepilogo. Una registrazione richiede circa 20 parole per essere riassunta.",
+    "LocalLlmOff": "Riepilogo e Chiedi è disattivato per l'IA sul dispositivo. Attivalo in Impostazioni → AI per creare riepiloghi su questo computer.",
     "RegeneratingSummary": "Rigenerazione del riepilogo… {{elapsed}}",
     "RegenerateCancelled": "Rigenerazione del riepilogo annullata.",
     "NoTranscript": "Trascrizione non disponibile.",
@@ -2823,7 +2824,10 @@
       "PARSE_ERROR": "Impossibile analizzare la risposta dell'IA.",
       "RATE_LIMIT": "Limite di velocità API superato. Per favore aspetta un momento.",
       "SERVER_ERROR": "Il server AI ha riscontrato un errore.",
-      "UNKNOWN_ERROR": "L'elaborazione dell'IA non è riuscita."
+      "UNKNOWN_ERROR": "L'elaborazione dell'IA non è riuscita.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B non è riuscito a leggere questo screenshot. Riprova.",
+      "BAD_IMAGE": "Impossibile leggere questa immagine. Prova con PNG o JPEG.",
+      "IMAGE_NOT_INSTALLED": "Il riconoscimento immagini non è installato. Attivalo in Impostazioni → IA."
     },
     "ExtractedText": "Testo estratto",
     "FallbackHint": "Disattiva \"Usa l’LLM principale per l’OCR degli screenshot\" nelle Impostazioni se questo provider non supporta la visione.",
@@ -2851,7 +2855,12 @@
       "BundleOcr": "Testo OCR",
       "BundleDescription": "Descrizione",
       "BundleSearch": "Ricerca"
-    }
+    },
+    "ReadingOnDevice": "Lettura dello screenshot su questo computer… {{elapsed}}",
+    "OnDeviceImageOff": "Leggi questo screenshot su questo computer: attiva il Riconoscimento delle immagini in Impostazioni → AI.",
+    "OpenAiSettings": "Apri Impostazioni → AI",
+    "WaitingForRecording": "Verrà letto dopo la registrazione.",
+    "PartlyRead": "Letto in parte: potrebbe mancare del testo. Rileggilo per provare a ottenere il resto."
   },
   "ScreenshotView": {
     "RecentLabel": "Screenshot recenti"
@@ -4547,7 +4556,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Non caricato (si carica quando serve)"
+    "PillNotLoaded": "Non caricato (si carica quando serve)",
+    "DoingImage": "Lettura di uno screenshot sul dispositivo",
+    "RoleVisionWhat": "(immagini)",
+    "VisionShared": "Funziona dentro {{llm}}: conteggiato su quella riga"
   },
   "OnDeviceAI": {
     "Title": "IA sul dispositivo",
@@ -4568,7 +4580,7 @@
     "RestartToTurnOff": "Riavviare SeaMeet per disattivare l'IA sul dispositivo?",
     "RestartDetail": "La modifica si applica al prossimo avvio di SeaMeet. Interrompi prima ogni registrazione.",
     "Later": "Più tardi",
-    "NotEnoughMemory": "Non disponibile su questo computer: servono almeno 16 GB di memoria e questo ne ha {{gb}} GB.",
+    "NotEnoughMemory": "Non disponibile su questo computer: servono almeno 8 GB di memoria e questo ne ha {{gb}} GB.",
     "Models": "Modelli",
     "Download": "Scarica",
     "Downloading": "Download dei modelli: {{done}} di {{all}} GB (file {{index}}/{{total}})",
@@ -4593,6 +4605,24 @@
     "QuitDuringDownloadDetail": "{{done}} di {{all}} GB scaricati. Il download riprenderà da dove si è fermato al prossimo avvio di SeaMeet.",
     "KeepDownloading": "Continua a scaricare",
     "Quit": "Esci",
-    "DeletePending": "I modelli scaricati verranno eliminati al prossimo avvio di SeaMeet."
+    "DeletePending": "I modelli scaricati verranno eliminati al prossimo avvio di SeaMeet.",
+    "PartsLabel": "Cosa viene eseguito su questo computer",
+    "PartSpeech": "Trascrizione vocale",
+    "PartSummary": "Riepilogo e agente Chiedi",
+    "PartImage": "Riconoscimento delle immagini",
+    "PartSize": "{{download}} GB da scaricare · circa {{mem}} GB di memoria",
+    "PartAlwaysOn": "sempre attiva",
+    "PartNeedsSummary": "richiede Riepilogo e Chiedi",
+    "PartNeedsMemory": "Richiede 16 GB di memoria; questo computer ne ha {{gb}} GB",
+    "PartComingSoon": "Prossimamente",
+    "SelectionTotals": "La tua selezione: {{download}} GB da scaricare · circa {{mem}} GB di memoria · {{disk}} GB di spazio libero necessari",
+    "SelectionTotalsReady": "La tua selezione: scaricata · circa {{mem}} GB di memoria",
+    "ThisComputer": "Questo computer: {{gb}} GB di memoria",
+    "ActiveSpeech": "Attivo: la trascrizione viene eseguita su questo computer. Riepiloghi e Chiedi sono disattivati.",
+    "SuggestDetailSpeech": "La trascrizione può essere eseguita su questo computer, senza IA nel cloud. Vengono scaricati {{size}} GB una sola volta. Puoi attivarla anche più tardi in Impostazioni → AI.",
+    "DeleteSummaryQuestion": "Eliminare il modello di Riepilogo e Chiedi ({{size}} GB)?",
+    "DeleteImageQuestion": "Eliminare il modello di riconoscimento delle immagini ({{size}} GB)?",
+    "DeletePartDetail": "Puoi scaricarlo di nuovo selezionandolo.",
+    "DescriptionSpeech": "La trascrizione viene eseguita su questo computer, senza IA nel cloud."
   }
 }

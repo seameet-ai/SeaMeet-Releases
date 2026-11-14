@@ -310,6 +310,7 @@
     "NoSummary": "AI の概要はまだありません。",
     "NoSummaryText": "概要は利用できません。",
     "TooLittleSpeech": "話された内容が少なすぎて要約できません。要約には約20語の発話が必要です。",
+    "LocalLlmOff": "オンデバイスAIの要約と質問はオフです。このコンピューターで要約するには、設定 → AI でオンにしてください。",
     "RegeneratingSummary": "要約を再生成中… {{elapsed}}",
     "RegenerateCancelled": "要約の再生成をキャンセルしました。",
     "NoTranscript": "トランスクリプトは利用できません。",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "AI 応答の解析に失敗しました。",
       "RATE_LIMIT": "API レート制限を超えました。しばらくお待ちください。",
       "SERVER_ERROR": "AI サーバーでエラーが発生しました。",
-      "UNKNOWN_ERROR": "AI処理に失敗しました。"
+      "UNKNOWN_ERROR": "AI処理に失敗しました。",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B でこのスクリーンショットを読み取れませんでした。もう一度お試しください。",
+      "BAD_IMAGE": "この画像は読み取れません。PNG または JPEG をお試しください。",
+      "IMAGE_NOT_INSTALLED": "画像認識がインストールされていません。設定 → AI でオンにしてください。"
     },
     "ExtractedText": "抽出されたテキスト",
     "FallbackHint": "このプロバイダーがビジョンに対応していない場合は、設定の「スクリーンショットOCRにメインのLLMを使用」をオフにしてください。",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "OCR テキスト",
       "BundleDescription": "説明",
       "BundleSearch": "検索"
-    }
+    },
+    "ReadingOnDevice": "このコンピューターでスクリーンショットを読み取り中… {{elapsed}}",
+    "OnDeviceImageOff": "このスクリーンショットをこのコンピューターで読み取るには、設定 → AI で画像認識をオンにしてください。",
+    "OpenAiSettings": "設定 → AI を開く",
+    "WaitingForRecording": "録音の終了後に読み取ります。",
+    "PartlyRead": "一部のみ読み取り：一部のテキストが欠けている可能性があります。もう一度読み取ると残りを取得できる場合があります。"
   },
   "ScreenshotView": {
     "RecentLabel": "最近のスクリーンショット"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "未読み込み（必要なときに読み込みます）"
+    "PillNotLoaded": "未読み込み（必要なときに読み込みます）",
+    "DoingImage": "デバイス上でスクリーンショットを読み取り中",
+    "RoleVisionWhat": "（画像）",
+    "VisionShared": "{{llm}} 内で動作：その行に含まれます"
   },
   "OnDeviceAI": {
     "Title": "オンデバイスAI",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "オンデバイスAIをオフにするために SeaMeet を再起動しますか？",
     "RestartDetail": "変更は SeaMeet の次回起動時に適用されます。先に録音を停止してください。",
     "Later": "後で",
-    "NotEnoughMemory": "このコンピューターでは使用できません：16 GB 以上のメモリが必要ですが、このコンピューターは {{gb}} GB です。",
+    "NotEnoughMemory": "このコンピューターでは使用できません：8 GB 以上のメモリが必要ですが、このコンピューターは {{gb}} GB です。",
     "Models": "モデル",
     "Download": "ダウンロード",
     "Downloading": "モデルをダウンロードしています：{{all}} GB 中 {{done}} GB（ファイル {{index}}/{{total}}）",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{all}} GB 中 {{done}} GB をダウンロード済みです。次回 SeaMeet を起動すると、停止したところからダウンロードを再開します。",
     "KeepDownloading": "ダウンロードを続ける",
     "Quit": "終了",
-    "DeletePending": "ダウンロードしたモデルは、次回 SeaMeet の起動時に削除されます。"
+    "DeletePending": "ダウンロードしたモデルは、次回 SeaMeet の起動時に削除されます。",
+    "PartsLabel": "このコンピューターで実行するもの",
+    "PartSpeech": "音声の文字起こし",
+    "PartSummary": "要約と質問エージェント",
+    "PartImage": "画像認識",
+    "PartSize": "ダウンロード {{download}} GB · メモリ 約 {{mem}} GB",
+    "PartAlwaysOn": "常にオン",
+    "PartNeedsSummary": "要約と質問が必要",
+    "PartNeedsMemory": "16 GB のメモリが必要です（このコンピューターは {{gb}} GB）",
+    "PartComingSoon": "近日公開",
+    "SelectionTotals": "選択内容: ダウンロード {{download}} GB · メモリ 約 {{mem}} GB · 空きディスク {{disk}} GB が必要",
+    "SelectionTotalsReady": "選択内容: ダウンロード済み · メモリ 約 {{mem}} GB",
+    "ThisComputer": "このコンピューター: メモリ {{gb}} GB",
+    "ActiveSpeech": "オン: 文字起こしをこのコンピューター上で実行しています。要約と質問はオフです。",
+    "SuggestDetailSpeech": "文字起こしをこのコンピューター上で実行でき、クラウドAIは使いません。{{size}} GB を一度だけダウンロードします。後から 設定 → AI でオンにすることもできます。",
+    "DeleteSummaryQuestion": "要約と質問のモデル（{{size}} GB）を削除しますか？",
+    "DeleteImageQuestion": "画像認識のモデル（{{size}} GB）を削除しますか？",
+    "DeletePartDetail": "チェックを入れると再びダウンロードできます。",
+    "DescriptionSpeech": "文字起こしをこのコンピューター上で実行し、クラウドAIは使いません。"
   }
 }

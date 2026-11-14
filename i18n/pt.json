@@ -310,6 +310,7 @@
     "NoSummary": "Nenhum resumo de IA ainda.",
     "NoSummaryText": "Resumo não disponível.",
     "TooLittleSpeech": "Pouca fala para resumir. Uma gravação precisa de cerca de 20 palavras para ter um resumo.",
+    "LocalLlmOff": "Resumo e Perguntar está desativado na IA no dispositivo. Ative-o em Configurações → AI para resumir neste computador.",
     "RegeneratingSummary": "Gerando o resumo novamente… {{elapsed}}",
     "RegenerateCancelled": "A nova geração do resumo foi cancelada.",
     "NoTranscript": "Transcrição não disponível.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "Falha ao analisar a resposta da IA.",
       "RATE_LIMIT": "Limite de taxa de API excedido. Por favor, espere um momento.",
       "SERVER_ERROR": "O servidor AI encontrou um erro.",
-      "UNKNOWN_ERROR": "O processamento de IA falhou."
+      "UNKNOWN_ERROR": "O processamento de IA falhou.",
+      "LOCAL_IMAGE_FAILED": "O SeaVision-2B não conseguiu ler esta captura. Tente novamente.",
+      "BAD_IMAGE": "Não é possível ler esta imagem. Tente PNG ou JPEG.",
+      "IMAGE_NOT_INSTALLED": "O reconhecimento de imagens não está instalado. Ative-o em Configurações → IA."
     },
     "ExtractedText": "Texto extraído",
     "FallbackHint": "Desative \"Usar o LLM principal para OCR de capturas de tela\" nas Configurações se este provedor não oferecer suporte a visão.",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "Texto OCR",
       "BundleDescription": "Descrição",
       "BundleSearch": "Pesquisa"
-    }
+    },
+    "ReadingOnDevice": "Lendo a captura de tela neste computador… {{elapsed}}",
+    "OnDeviceImageOff": "Leia esta captura de tela neste computador: ative o Reconhecimento de imagens em Configurações → AI.",
+    "OpenAiSettings": "Abrir Configurações → AI",
+    "WaitingForRecording": "Será lida após a gravação.",
+    "PartlyRead": "Lido em parte: pode faltar texto. Leia de novo para tentar obter o restante."
   },
   "ScreenshotView": {
     "RecentLabel": "Capturas recentes"
@@ -4547,7 +4556,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Não carregado (carrega quando necessário)"
+    "PillNotLoaded": "Não carregado (carrega quando necessário)",
+    "DoingImage": "Lendo uma captura de tela no dispositivo",
+    "RoleVisionWhat": "(imagens)",
+    "VisionShared": "Executa dentro do {{llm}}: contado nessa linha"
   },
   "OnDeviceAI": {
     "Title": "IA no dispositivo",
@@ -4568,7 +4580,7 @@
     "RestartToTurnOff": "Reiniciar o SeaMeet para desativar a IA no dispositivo?",
     "RestartDetail": "A alteração será aplicada quando o SeaMeet iniciar novamente. Pare qualquer gravação antes.",
     "Later": "Mais tarde",
-    "NotEnoughMemory": "Não disponível neste computador: requer pelo menos 16 GB de memória, e este tem {{gb}} GB.",
+    "NotEnoughMemory": "Não disponível neste computador: requer pelo menos 8 GB de memória, e este tem {{gb}} GB.",
     "Models": "Modelos",
     "Download": "Baixar",
     "Downloading": "Baixando os modelos: {{done}} de {{all}} GB (arquivo {{index}}/{{total}})",
@@ -4593,6 +4605,24 @@
     "QuitDuringDownloadDetail": "{{done}} de {{all}} GB baixados. O download continuará de onde parou na próxima vez que o SeaMeet iniciar.",
     "KeepDownloading": "Continuar baixando",
     "Quit": "Sair",
-    "DeletePending": "Os modelos baixados serão excluídos quando o SeaMeet iniciar novamente."
+    "DeletePending": "Os modelos baixados serão excluídos quando o SeaMeet iniciar novamente.",
+    "PartsLabel": "O que roda neste computador",
+    "PartSpeech": "Transcrição de fala",
+    "PartSummary": "Resumo e agente Perguntar",
+    "PartImage": "Reconhecimento de imagens",
+    "PartSize": "{{download}} GB para baixar · cerca de {{mem}} GB de memória",
+    "PartAlwaysOn": "sempre ativado",
+    "PartNeedsSummary": "requer Resumo e Perguntar",
+    "PartNeedsMemory": "Requer 16 GB de memória; este computador tem {{gb}} GB",
+    "PartComingSoon": "Em breve",
+    "SelectionTotals": "Sua seleção: {{download}} GB para baixar · cerca de {{mem}} GB de memória · {{disk}} GB de espaço livre necessários",
+    "SelectionTotalsReady": "Sua seleção: baixado · cerca de {{mem}} GB de memória",
+    "ThisComputer": "Este computador: {{gb}} GB de memória",
+    "ActiveSpeech": "Ativado: a transcrição é executada neste computador. Os resumos e o Perguntar estão desativados.",
+    "SuggestDetailSpeech": "A transcrição pode ser executada neste computador, sem IA na nuvem. São baixados {{size}} GB uma única vez. Você também pode ativá-la depois em Configurações → AI.",
+    "DeleteSummaryQuestion": "Excluir o modelo de Resumo e Perguntar ({{size}} GB)?",
+    "DeleteImageQuestion": "Excluir o modelo de reconhecimento de imagens ({{size}} GB)?",
+    "DeletePartDetail": "Você pode baixá-lo novamente marcando-o.",
+    "DescriptionSpeech": "A transcrição é executada neste computador, sem IA na nuvem."
   }
 }

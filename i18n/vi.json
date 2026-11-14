@@ -310,6 +310,7 @@
     "NoSummary": "Chưa có bản tóm tắt AI nào.",
     "NoSummaryText": "Tóm tắt không có sẵn.",
     "TooLittleSpeech": "Quá ít lời nói để tóm tắt. Bản ghi cần khoảng 20 từ để có bản tóm tắt.",
+    "LocalLlmOff": "Tóm tắt & Hỏi đang tắt cho AI trên thiết bị. Bật trong Cài đặt → AI để tóm tắt trên máy tính này.",
     "RegeneratingSummary": "Đang tạo lại bản tóm tắt… {{elapsed}}",
     "RegenerateCancelled": "Đã hủy tạo lại bản tóm tắt.",
     "NoTranscript": "Bản ghi không có sẵn.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "Không thể phân tích cú pháp phản hồi AI.",
       "RATE_LIMIT": "Đã vượt quá giới hạn tốc độ API. Xin vui lòng đợi một lát.",
       "SERVER_ERROR": "Máy chủ AI gặp lỗi.",
-      "UNKNOWN_ERROR": "Quá trình xử lý AI không thành công."
+      "UNKNOWN_ERROR": "Quá trình xử lý AI không thành công.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B không đọc được ảnh chụp màn hình này. Hãy thử lại.",
+      "BAD_IMAGE": "Không đọc được ảnh này. Hãy thử PNG hoặc JPEG.",
+      "IMAGE_NOT_INSTALLED": "Chưa cài nhận dạng hình ảnh. Bật trong Cài đặt → AI."
     },
     "ExtractedText": "Văn bản được trích xuất",
     "FallbackHint": "Tắt \"Sử dụng LLM chính cho OCR ảnh chụp màn hình\" trong Cài đặt nếu nhà cung cấp này không hỗ trợ thị giác.",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "Văn bản OCR",
       "BundleDescription": "Mô tả",
       "BundleSearch": "Tìm kiếm"
-    }
+    },
+    "ReadingOnDevice": "Đang đọc ảnh chụp màn hình trên máy tính này… {{elapsed}}",
+    "OnDeviceImageOff": "Đọc ảnh chụp màn hình này trên máy tính này: bật Nhận dạng hình ảnh trong Cài đặt → AI.",
+    "OpenAiSettings": "Mở Cài đặt → AI",
+    "WaitingForRecording": "Sẽ được đọc sau khi ghi xong.",
+    "PartlyRead": "Đọc được một phần: có thể thiếu một số chữ. Đọc lại để thử lấy phần còn lại."
   },
   "ScreenshotView": {
     "RecentLabel": "Ảnh chụp màn hình gần đây"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Chưa tải (tải khi cần)"
+    "PillNotLoaded": "Chưa tải (tải khi cần)",
+    "DoingImage": "Đang đọc ảnh chụp màn hình trên thiết bị",
+    "RoleVisionWhat": "(hình ảnh)",
+    "VisionShared": "Chạy bên trong {{llm}}: được tính ở hàng đó"
   },
   "OnDeviceAI": {
     "Title": "AI trên thiết bị",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "Khởi động lại SeaMeet để tắt AI trên thiết bị?",
     "RestartDetail": "Thay đổi có hiệu lực khi SeaMeet khởi động lại. Hãy dừng mọi bản ghi trước.",
     "Later": "Để sau",
-    "NotEnoughMemory": "Không khả dụng trên máy tính này: cần ít nhất 16 GB bộ nhớ, máy này có {{gb}} GB.",
+    "NotEnoughMemory": "Không khả dụng trên máy tính này: cần ít nhất 8 GB bộ nhớ, máy này có {{gb}} GB.",
     "Models": "Mô hình",
     "Download": "Tải xuống",
     "Downloading": "Đang tải các mô hình: {{done}} / {{all}} GB (tệp {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "Đã tải {{done}} / {{all}} GB. Lần tới khi SeaMeet khởi động, quá trình tải sẽ tiếp tục từ chỗ đã dừng.",
     "KeepDownloading": "Tiếp tục tải",
     "Quit": "Thoát",
-    "DeletePending": "Các mô hình đã tải sẽ bị xóa khi SeaMeet khởi động lại."
+    "DeletePending": "Các mô hình đã tải sẽ bị xóa khi SeaMeet khởi động lại.",
+    "PartsLabel": "Những gì chạy trên máy tính này",
+    "PartSpeech": "Phiên âm giọng nói",
+    "PartSummary": "Tóm tắt & trợ lý Hỏi",
+    "PartImage": "Nhận dạng hình ảnh",
+    "PartSize": "Tải {{download}} GB · khoảng {{mem}} GB bộ nhớ",
+    "PartAlwaysOn": "luôn bật",
+    "PartNeedsSummary": "cần Tóm tắt & Hỏi",
+    "PartNeedsMemory": "Cần 16 GB bộ nhớ; máy tính này có {{gb}} GB",
+    "PartComingSoon": "Sắp ra mắt",
+    "SelectionTotals": "Lựa chọn của bạn: cần tải {{download}} GB · khoảng {{mem}} GB bộ nhớ · cần {{disk}} GB dung lượng trống",
+    "SelectionTotalsReady": "Lựa chọn của bạn: đã tải · khoảng {{mem}} GB bộ nhớ",
+    "ThisComputer": "Máy tính này: {{gb}} GB bộ nhớ",
+    "ActiveSpeech": "Bật: phiên âm chạy trên máy tính này. Tóm tắt và Hỏi đang tắt.",
+    "SuggestDetailSpeech": "Phiên âm có thể chạy trên máy tính này, không dùng AI đám mây. Chỉ tải {{size}} GB một lần. Bạn cũng có thể bật sau trong Cài đặt → AI.",
+    "DeleteSummaryQuestion": "Xóa mô hình Tóm tắt & Hỏi ({{size}} GB)?",
+    "DeleteImageQuestion": "Xóa mô hình nhận dạng hình ảnh ({{size}} GB)?",
+    "DeletePartDetail": "Bạn có thể tải lại bằng cách đánh dấu nó.",
+    "DescriptionSpeech": "Phiên âm chạy trên máy tính này, không dùng AI đám mây."
   }
 }

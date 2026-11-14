@@ -310,6 +310,7 @@
     "NoSummary": "अभी तक कोई AI सारांश नहीं.",
     "NoSummaryText": "सारांश उपलब्ध नहीं है.",
     "TooLittleSpeech": "सारांश के लिए बहुत कम बोला गया है। सारांश के लिए रिकॉर्डिंग में लगभग 20 शब्द होने चाहिए।",
+    "LocalLlmOff": "डिवाइस पर AI के लिए सारांश और पूछें बंद है। इस कंप्यूटर पर सारांश बनाने के लिए इसे सेटिंग्स → AI में चालू करें।",
     "RegeneratingSummary": "सारांश फिर से बनाया जा रहा है… {{elapsed}}",
     "RegenerateCancelled": "सारांश फिर से बनाना रद्द किया गया।",
     "NoTranscript": "प्रतिलेख उपलब्ध नहीं है.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "एआई प्रतिक्रिया को पार्स करने में विफल।",
       "RATE_LIMIT": "एपीआई दर सीमा पार हो गई. कृपया कुछ देर इंतज़ार करें।",
       "SERVER_ERROR": "एआई सर्वर में एक त्रुटि आई।",
-      "UNKNOWN_ERROR": "एआई प्रोसेसिंग विफल रही."
+      "UNKNOWN_ERROR": "एआई प्रोसेसिंग विफल रही.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B इस स्क्रीनशॉट को नहीं पढ़ सका। फिर से कोशिश करें।",
+      "BAD_IMAGE": "यह छवि पढ़ी नहीं जा सकती। PNG या JPEG आज़माएँ।",
+      "IMAGE_NOT_INSTALLED": "इमेज पहचान इंस्टॉल नहीं है। सेटिंग्स → AI में इसे चालू करें।"
     },
     "ExtractedText": "निकाला गया पाठ",
     "FallbackHint": "यदि यह प्रदाता विज़न का समर्थन नहीं करता है तो सेटिंग्स में \"स्क्रीनशॉट OCR के लिए मुख्य LLM का उपयोग करें\" को बंद करें।",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "OCR टेक्स्ट",
       "BundleDescription": "विवरण",
       "BundleSearch": "खोज"
-    }
+    },
+    "ReadingOnDevice": "इस कंप्यूटर पर स्क्रीनशॉट पढ़ा जा रहा है… {{elapsed}}",
+    "OnDeviceImageOff": "यह स्क्रीनशॉट इसी कंप्यूटर पर पढ़ें: सेटिंग्स → AI में छवि पहचान चालू करें।",
+    "OpenAiSettings": "सेटिंग्स → AI खोलें",
+    "WaitingForRecording": "रिकॉर्डिंग के बाद पढ़ा जाएगा।",
+    "PartlyRead": "आंशिक रूप से पढ़ा गया: कुछ टेक्स्ट छूट सकता है। बाकी पाने के लिए फिर से पढ़ें।"
   },
   "ScreenshotView": {
     "RecentLabel": "हाल के स्क्रीनशॉट"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "लोड नहीं है (ज़रूरत पड़ने पर लोड होगा)"
+    "PillNotLoaded": "लोड नहीं है (ज़रूरत पड़ने पर लोड होगा)",
+    "DoingImage": "डिवाइस पर स्क्रीनशॉट पढ़ा जा रहा है",
+    "RoleVisionWhat": "(छवियाँ)",
+    "VisionShared": "{{llm}} के अंदर चलता है: उसी पंक्ति में गिना गया"
   },
   "OnDeviceAI": {
     "Title": "डिवाइस पर AI",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "डिवाइस पर AI बंद करने के लिए SeaMeet फिर से शुरू करें?",
     "RestartDetail": "बदलाव SeaMeet के दोबारा शुरू होने पर लागू होगा। पहले कोई भी रिकॉर्डिंग रोकें।",
     "Later": "बाद में",
-    "NotEnoughMemory": "इस कंप्यूटर पर उपलब्ध नहीं: कम से कम 16 GB मेमोरी चाहिए, और इसमें {{gb}} GB है।",
+    "NotEnoughMemory": "इस कंप्यूटर पर उपलब्ध नहीं: कम से कम 8 GB मेमोरी चाहिए, और इसमें {{gb}} GB है।",
     "Models": "मॉडल",
     "Download": "डाउनलोड करें",
     "Downloading": "मॉडल डाउनलोड हो रहे हैं: {{all}} GB में से {{done}} GB (फ़ाइल {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{all}} GB में से {{done}} GB डाउनलोड हो चुका है। अगली बार SeaMeet शुरू होने पर डाउनलोड वहीं से जारी रहेगा।",
     "KeepDownloading": "डाउनलोड जारी रखें",
     "Quit": "बाहर निकलें",
-    "DeletePending": "SeaMeet के दोबारा शुरू होने पर डाउनलोड किए गए मॉडल हटा दिए जाएँगे।"
+    "DeletePending": "SeaMeet के दोबारा शुरू होने पर डाउनलोड किए गए मॉडल हटा दिए जाएँगे।",
+    "PartsLabel": "इस कंप्यूटर पर क्या चलता है",
+    "PartSpeech": "वाणी ट्रांसक्रिप्शन",
+    "PartSummary": "सारांश और पूछें एजेंट",
+    "PartImage": "छवि पहचान",
+    "PartSize": "{{download}} GB डाउनलोड · लगभग {{mem}} GB मेमोरी",
+    "PartAlwaysOn": "हमेशा चालू",
+    "PartNeedsSummary": "सारांश और पूछें ज़रूरी",
+    "PartNeedsMemory": "16 GB मेमोरी चाहिए; इस कंप्यूटर में {{gb}} GB है",
+    "PartComingSoon": "जल्द आ रहा है",
+    "SelectionTotals": "आपका चयन: {{download}} GB डाउनलोड करना है · लगभग {{mem}} GB मेमोरी · {{disk}} GB खाली डिस्क चाहिए",
+    "SelectionTotalsReady": "आपका चयन: डाउनलोड हो गया · लगभग {{mem}} GB मेमोरी",
+    "ThisComputer": "यह कंप्यूटर: {{gb}} GB मेमोरी",
+    "ActiveSpeech": "चालू: ट्रांसक्रिप्शन इसी कंप्यूटर पर चलता है। सारांश और पूछें बंद हैं।",
+    "SuggestDetailSpeech": "ट्रांसक्रिप्शन इसी कंप्यूटर पर चल सकता है, बिना क्लाउड AI के। इसके लिए एक बार {{size}} GB डाउनलोड होगा। आप इसे बाद में सेटिंग्स → AI में भी चालू कर सकते हैं।",
+    "DeleteSummaryQuestion": "सारांश और पूछें मॉडल ({{size}} GB) हटाएँ?",
+    "DeleteImageQuestion": "छवि पहचान मॉडल ({{size}} GB) हटाएँ?",
+    "DeletePartDetail": "टिक करके आप इसे फिर से डाउनलोड कर सकते हैं।",
+    "DescriptionSpeech": "ट्रांसक्रिप्शन इसी कंप्यूटर पर चलता है, बिना क्लाउड AI के।"
   }
 }

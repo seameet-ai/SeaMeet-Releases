@@ -310,6 +310,7 @@
     "NoSummary": "Belum ada ringkasan AI.",
     "NoSummaryText": "Ringkasan tidak tersedia.",
     "TooLittleSpeech": "Terlalu sedikit pertuturan untuk diringkaskan. Rakaman memerlukan kira-kira 20 perkataan untuk ringkasan.",
+    "LocalLlmOff": "Ringkasan & Tanya dimatikan untuk AI pada peranti. Hidupkannya dalam Tetapan → AI untuk meringkaskan pada komputer ini.",
     "RegeneratingSummary": "Menjana semula ringkasan… {{elapsed}}",
     "RegenerateCancelled": "Penjanaan semula ringkasan dibatalkan.",
     "NoTranscript": "Transkrip tidak tersedia.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "Gagal menghuraikan respons AI.",
       "RATE_LIMIT": "Had kadar API melebihi had. Sila tunggu sebentar.",
       "SERVER_ERROR": "Pelayan AI mengalami ralat.",
-      "UNKNOWN_ERROR": "Pemprosesan AI gagal."
+      "UNKNOWN_ERROR": "Pemprosesan AI gagal.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B tidak dapat membaca tangkapan skrin ini. Cuba lagi.",
+      "BAD_IMAGE": "Imej ini tidak dapat dibaca. Cuba PNG atau JPEG.",
+      "IMAGE_NOT_INSTALLED": "Pengecaman imej belum dipasang. Hidupkan dalam Tetapan → AI."
     },
     "ExtractedText": "Teks yang Diekstrak",
     "FallbackHint": "Lumpuhkan \"Gunakan LLM utama untuk OCR tangkapan skrin\" dalam Tetapan jika pembekal ini tidak menyokong penglihatan.",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "Teks OCR",
       "BundleDescription": "Penerangan",
       "BundleSearch": "Carian"
-    }
+    },
+    "ReadingOnDevice": "Membaca tangkapan skrin pada komputer ini… {{elapsed}}",
+    "OnDeviceImageOff": "Baca tangkapan skrin ini pada komputer ini: hidupkan Pengecaman imej dalam Tetapan → AI.",
+    "OpenAiSettings": "Buka Tetapan → AI",
+    "WaitingForRecording": "Akan dibaca selepas rakaman.",
+    "PartlyRead": "Dibaca sebahagian: sesetengah teks mungkin tiada. Baca semula untuk cuba mendapatkan bakinya."
   },
   "ScreenshotView": {
     "RecentLabel": "Tangkapan skrin terkini"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Tidak dimuatkan (dimuatkan apabila perlu)"
+    "PillNotLoaded": "Tidak dimuatkan (dimuatkan apabila perlu)",
+    "DoingImage": "Membaca tangkapan skrin pada peranti",
+    "RoleVisionWhat": "(imej)",
+    "VisionShared": "Berjalan di dalam {{llm}}: dikira pada baris itu"
   },
   "OnDeviceAI": {
     "Title": "AI pada peranti",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "Mulakan semula SeaMeet untuk mematikan AI pada peranti?",
     "RestartDetail": "Perubahan berkuat kuasa apabila SeaMeet dimulakan semula. Hentikan sebarang rakaman dahulu.",
     "Later": "Kemudian",
-    "NotEnoughMemory": "Tidak tersedia pada komputer ini: memerlukan sekurang-kurangnya 16 GB memori, dan komputer ini mempunyai {{gb}} GB.",
+    "NotEnoughMemory": "Tidak tersedia pada komputer ini: memerlukan sekurang-kurangnya 8 GB memori, dan komputer ini mempunyai {{gb}} GB.",
     "Models": "Model",
     "Download": "Muat turun",
     "Downloading": "Memuat turun model: {{done}} daripada {{all}} GB (fail {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{done}} daripada {{all}} GB telah dimuat turun. Muat turun akan bersambung dari tempat ia berhenti apabila SeaMeet dimulakan lagi.",
     "KeepDownloading": "Teruskan muat turun",
     "Quit": "Keluar",
-    "DeletePending": "Model yang dimuat turun akan dipadam apabila SeaMeet dimulakan semula."
+    "DeletePending": "Model yang dimuat turun akan dipadam apabila SeaMeet dimulakan semula.",
+    "PartsLabel": "Apa yang berjalan pada komputer ini",
+    "PartSpeech": "Transkripsi pertuturan",
+    "PartSummary": "Ringkasan & Ejen Tanya",
+    "PartImage": "Pengecaman imej",
+    "PartSize": "Muat turun {{download}} GB · kira-kira {{mem}} GB memori",
+    "PartAlwaysOn": "sentiasa hidup",
+    "PartNeedsSummary": "memerlukan Ringkasan & Tanya",
+    "PartNeedsMemory": "Memerlukan memori 16 GB; komputer ini mempunyai {{gb}} GB",
+    "PartComingSoon": "Akan datang",
+    "SelectionTotals": "Pilihan anda: {{download}} GB untuk dimuat turun · kira-kira {{mem}} GB memori · perlu {{disk}} GB ruang cakera kosong",
+    "SelectionTotalsReady": "Pilihan anda: sudah dimuat turun · kira-kira {{mem}} GB memori",
+    "ThisComputer": "Komputer ini: memori {{gb}} GB",
+    "ActiveSpeech": "Hidup: transkripsi berjalan pada komputer ini. Ringkasan dan Tanya dimatikan.",
+    "SuggestDetailSpeech": "Transkripsi boleh berjalan pada komputer ini, tanpa AI awan. Ia memuat turun {{size}} GB sekali sahaja. Anda juga boleh menghidupkannya kemudian dalam Tetapan → AI.",
+    "DeleteSummaryQuestion": "Padam model Ringkasan & Tanya ({{size}} GB)?",
+    "DeleteImageQuestion": "Padam model pengecaman imej ({{size}} GB)?",
+    "DeletePartDetail": "Anda boleh memuat turunnya semula dengan menandakannya.",
+    "DescriptionSpeech": "Transkripsi berjalan pada komputer ini, tanpa AI awan."
   }
 }

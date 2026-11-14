@@ -330,6 +330,7 @@
     "NoSummary": "No AI summary yet.",
     "NoSummaryText": "Summary not available.",
     "TooLittleSpeech": "Too little speech to summarize. A recording needs about 20 words for a summary.",
+    "LocalLlmOff": "Summary & Ask is off for on-device AI. Turn it on in Settings → AI to summarize on this computer.",
     "RegeneratingSummary": "Regenerating summary… {{elapsed}}",
     "RegenerateCancelled": "Summary regeneration cancelled.",
     "NotAvailableForVersion": "Not available for this version.",
@@ -2608,7 +2609,10 @@
       "SERVER_ERROR": "The AI server encountered an error.",
       "NETWORK_ERROR": "Network error. Check your internet connection.",
       "PARSE_ERROR": "Failed to parse AI response.",
-      "UNKNOWN_ERROR": "AI processing failed."
+      "UNKNOWN_ERROR": "AI processing failed.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B couldn't read this screenshot. Try again.",
+      "BAD_IMAGE": "This image can't be read. Try a PNG or JPEG.",
+      "IMAGE_NOT_INSTALLED": "Image recognition isn't installed. Turn it on in Settings → AI."
     },
     "Custom": "Custom prompt",
     "CustomPlaceholder": "Ask anything about this image...",
@@ -2640,7 +2644,12 @@
       "BundleOcr": "OCR text",
       "BundleDescription": "Description",
       "BundleSearch": "Search"
-    }
+    },
+    "ReadingOnDevice": "Reading the screenshot on this computer… {{elapsed}}",
+    "OnDeviceImageOff": "Read this screenshot on this computer: turn on Image recognition in Settings → AI.",
+    "OpenAiSettings": "Open Settings → AI",
+    "WaitingForRecording": "Will be read after the recording.",
+    "PartlyRead": "Partly read: some text may be missing. Read it again to try for the rest."
   },
   "ScreenshotView": {
     "RecentLabel": "Recent screenshots"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Not loaded (loads when needed)"
+    "PillNotLoaded": "Not loaded (loads when needed)",
+    "DoingImage": "Reading a screenshot on-device",
+    "RoleVisionWhat": "(images)",
+    "VisionShared": "Runs inside {{llm}}: counted on that row"
   },
   "OnDeviceAI": {
     "Title": "On-device AI",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "Restart SeaMeet to turn off on-device AI?",
     "RestartDetail": "The change applies when SeaMeet starts again. Stop any recording first.",
     "Later": "Later",
-    "NotEnoughMemory": "Not available on this computer: it needs at least 16 GB of memory, and this one has {{gb}} GB.",
+    "NotEnoughMemory": "Not available on this computer: it needs at least 8 GB of memory, and this one has {{gb}} GB.",
     "Models": "Models",
     "Download": "Download",
     "Downloading": "Downloading the models: {{done}} of {{all}} GB (file {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{done}} of {{all}} GB downloaded. The download continues where it stopped the next time SeaMeet starts.",
     "KeepDownloading": "Keep downloading",
     "Quit": "Quit",
-    "DeletePending": "The downloaded models will be deleted when SeaMeet starts again."
+    "DeletePending": "The downloaded models will be deleted when SeaMeet starts again.",
+    "PartsLabel": "What runs on this computer",
+    "PartSpeech": "Speech transcription",
+    "PartSummary": "Summary & Ask Agent",
+    "PartImage": "Image recognition",
+    "PartSize": "{{download}} GB download · about {{mem}} GB memory",
+    "PartAlwaysOn": "always on",
+    "PartNeedsSummary": "needs Summary & Ask",
+    "PartNeedsMemory": "Needs 16 GB of memory; this computer has {{gb}} GB",
+    "PartComingSoon": "Coming soon",
+    "SelectionTotals": "Your selection: {{download}} GB to download · about {{mem}} GB memory · {{disk}} GB free disk needed",
+    "SelectionTotalsReady": "Your selection: downloaded · about {{mem}} GB memory",
+    "ThisComputer": "This computer: {{gb}} GB memory",
+    "ActiveSpeech": "On: transcription runs on this computer. Summary and Ask are off.",
+    "SuggestDetailSpeech": "Transcription can run on this computer, with no cloud AI. It downloads {{size}} GB once. You can also turn it on later in Settings → AI.",
+    "DeleteSummaryQuestion": "Delete the Summary & Ask model ({{size}} GB)?",
+    "DeleteImageQuestion": "Delete the image recognition model ({{size}} GB)?",
+    "DeletePartDetail": "You can download it again by ticking it.",
+    "DescriptionSpeech": "Transcription runs on this computer, with no cloud AI."
   }
 }

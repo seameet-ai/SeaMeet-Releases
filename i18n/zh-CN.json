@@ -310,6 +310,7 @@
     "NoSummary": "还没有AI总结。",
     "NoSummaryText": "摘要不可用。",
     "TooLittleSpeech": "语音内容太少，无法生成摘要。录音需要约 20 个词才能生成摘要。",
+    "LocalLlmOff": "设备端 AI 的摘要和提问已关闭。在 设置 → AI 中开启后即可在这台电脑上生成摘要。",
     "RegeneratingSummary": "正在重新生成摘要… {{elapsed}}",
     "RegenerateCancelled": "已取消重新生成摘要。",
     "NoTranscript": "成绩单不可用。",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "无法解析 AI 响应。",
       "RATE_LIMIT": "超出 API 速率限制。请稍等。",
       "SERVER_ERROR": "AI 服务器遇到错误。",
-      "UNKNOWN_ERROR": "AI处理失败。"
+      "UNKNOWN_ERROR": "AI处理失败。",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B 无法读取这张截图，请重试。",
+      "BAD_IMAGE": "无法读取这张图片，请改用 PNG 或 JPEG。",
+      "IMAGE_NOT_INSTALLED": "尚未安装图片识别。请在“设置 → AI”中开启。"
     },
     "ExtractedText": "提取的文本",
     "FallbackHint": "如果此提供商不支持视觉，请在设置中关闭“截图 OCR 使用主 LLM”。",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "OCR 文本",
       "BundleDescription": "描述",
       "BundleSearch": "搜索"
-    }
+    },
+    "ReadingOnDevice": "正在这台电脑上读取截图… {{elapsed}}",
+    "OnDeviceImageOff": "在这台电脑上读取此截图：请在 设置 → AI 中开启图像识别。",
+    "OpenAiSettings": "打开 设置 → AI",
+    "WaitingForRecording": "录音结束后读取。",
+    "PartlyRead": "部分读取：可能缺少部分文字。再读一次以获取其余内容。"
   },
   "ScreenshotView": {
     "RecentLabel": "最近截图"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "未加载（需要时加载）"
+    "PillNotLoaded": "未加载（需要时加载）",
+    "DoingImage": "正在设备上读取截图",
+    "RoleVisionWhat": "（图像）",
+    "VisionShared": "在 {{llm}} 内运行：计入该行"
   },
   "OnDeviceAI": {
     "Title": "设备端 AI",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "重新启动 SeaMeet 以关闭设备端 AI？",
     "RestartDetail": "更改将在 SeaMeet 重新启动后生效。请先停止正在进行的录制。",
     "Later": "稍后",
-    "NotEnoughMemory": "此电脑无法使用：至少需要 16 GB 内存，这台电脑只有 {{gb}} GB。",
+    "NotEnoughMemory": "此电脑无法使用：至少需要 8 GB 内存，这台电脑只有 {{gb}} GB。",
     "Models": "模型",
     "Download": "下载",
     "Downloading": "正在下载模型：{{done}} / {{all}} GB（第 {{index}}/{{total}} 个文件）",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "已下载 {{done}} / {{all}} GB。下次启动 SeaMeet 时，会从中断处继续下载。",
     "KeepDownloading": "继续下载",
     "Quit": "退出",
-    "DeletePending": "已下载的模型将在 SeaMeet 下次启动时删除。"
+    "DeletePending": "已下载的模型将在 SeaMeet 下次启动时删除。",
+    "PartsLabel": "在这台电脑上运行的功能",
+    "PartSpeech": "语音转写",
+    "PartSummary": "摘要和提问助手",
+    "PartImage": "图像识别",
+    "PartSize": "下载 {{download}} GB · 约 {{mem}} GB 内存",
+    "PartAlwaysOn": "始终开启",
+    "PartNeedsSummary": "需要摘要和提问",
+    "PartNeedsMemory": "需要 16 GB 内存；这台电脑有 {{gb}} GB",
+    "PartComingSoon": "即将推出",
+    "SelectionTotals": "你的选择：需下载 {{download}} GB · 约 {{mem}} GB 内存 · 需要 {{disk}} GB 可用磁盘空间",
+    "SelectionTotalsReady": "你的选择：已下载 · 约 {{mem}} GB 内存",
+    "ThisComputer": "这台电脑：{{gb}} GB 内存",
+    "ActiveSpeech": "已开启：转写在这台电脑上运行。摘要和提问已关闭。",
+    "SuggestDetailSpeech": "转写可以在这台电脑上运行，不使用云端 AI。只需下载一次 {{size}} GB。之后也可以在 设置 → AI 中开启。",
+    "DeleteSummaryQuestion": "删除摘要和提问模型（{{size}} GB）？",
+    "DeleteImageQuestion": "删除图像识别模型（{{size}} GB）？",
+    "DeletePartDetail": "勾选后可以重新下载。",
+    "DescriptionSpeech": "转写在这台电脑上运行，不使用云端 AI。"
   }
 }

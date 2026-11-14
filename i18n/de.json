@@ -310,6 +310,7 @@
     "NoSummary": "Noch keine KI-Zusammenfassung.",
     "NoSummaryText": "Zusammenfassung nicht verfügbar.",
     "TooLittleSpeech": "Zu wenig Sprache für eine Zusammenfassung. Eine Aufnahme braucht etwa 20 Wörter für eine Zusammenfassung.",
+    "LocalLlmOff": "Zusammenfassung & Fragen ist für die KI auf dem Gerät aus. Schalten Sie es unter Einstellungen → AI ein, um auf diesem Computer zusammenzufassen.",
     "RegeneratingSummary": "Zusammenfassung wird neu erstellt… {{elapsed}}",
     "RegenerateCancelled": "Neuerstellung der Zusammenfassung abgebrochen.",
     "NoTranscript": "Transkript nicht verfügbar.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "Die KI-Antwort konnte nicht analysiert werden.",
       "RATE_LIMIT": "API-Ratenlimit überschritten. Bitte warten Sie einen Moment.",
       "SERVER_ERROR": "Der AI-Server hat einen Fehler festgestellt.",
-      "UNKNOWN_ERROR": "Die KI-Verarbeitung ist fehlgeschlagen."
+      "UNKNOWN_ERROR": "Die KI-Verarbeitung ist fehlgeschlagen.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B konnte diesen Screenshot nicht lesen. Bitte erneut versuchen.",
+      "BAD_IMAGE": "Dieses Bild kann nicht gelesen werden. Versuchen Sie PNG oder JPEG.",
+      "IMAGE_NOT_INSTALLED": "Die Bilderkennung ist nicht installiert. Aktivieren Sie sie unter Einstellungen → KI."
     },
     "ExtractedText": "Extrahierter Text",
     "FallbackHint": "Deaktiviere \"Haupt-LLM für Screenshot-OCR verwenden\" in den Einstellungen, wenn dieser Anbieter keine Bildverarbeitung unterstützt.",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "OCR-Text",
       "BundleDescription": "Beschreibung",
       "BundleSearch": "Suche"
-    }
+    },
+    "ReadingOnDevice": "Screenshot wird auf diesem Computer gelesen… {{elapsed}}",
+    "OnDeviceImageOff": "Diesen Screenshot auf diesem Computer lesen: Schalten Sie die Bilderkennung unter Einstellungen → AI ein.",
+    "OpenAiSettings": "Einstellungen → AI öffnen",
+    "WaitingForRecording": "Wird nach der Aufnahme gelesen.",
+    "PartlyRead": "Teilweise gelesen: Möglicherweise fehlt Text. Erneut lesen, um den Rest zu erhalten."
   },
   "ScreenshotView": {
     "RecentLabel": "Letzte Screenshots"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Nicht geladen (wird bei Bedarf geladen)"
+    "PillNotLoaded": "Nicht geladen (wird bei Bedarf geladen)",
+    "DoingImage": "Screenshot wird auf dem Gerät gelesen",
+    "RoleVisionWhat": "(Bilder)",
+    "VisionShared": "Läuft in {{llm}}: dort mitgezählt"
   },
   "OnDeviceAI": {
     "Title": "KI auf dem Gerät",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "SeaMeet neu starten, um KI auf dem Gerät auszuschalten?",
     "RestartDetail": "Die Änderung gilt nach dem nächsten Start von SeaMeet. Beenden Sie zuerst laufende Aufnahmen.",
     "Later": "Später",
-    "NotEnoughMemory": "Auf diesem Computer nicht verfügbar: Er benötigt mindestens 16 GB Arbeitsspeicher, dieser hat {{gb}} GB.",
+    "NotEnoughMemory": "Auf diesem Computer nicht verfügbar: Er benötigt mindestens 8 GB Arbeitsspeicher, dieser hat {{gb}} GB.",
     "Models": "Modelle",
     "Download": "Herunterladen",
     "Downloading": "Modelle werden heruntergeladen: {{done}} von {{all}} GB (Datei {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{done}} von {{all}} GB heruntergeladen. Der Download wird beim nächsten Start von SeaMeet dort fortgesetzt, wo er stoppte.",
     "KeepDownloading": "Weiter herunterladen",
     "Quit": "Beenden",
-    "DeletePending": "Die heruntergeladenen Modelle werden beim nächsten Start von SeaMeet gelöscht."
+    "DeletePending": "Die heruntergeladenen Modelle werden beim nächsten Start von SeaMeet gelöscht.",
+    "PartsLabel": "Was auf diesem Computer läuft",
+    "PartSpeech": "Sprachtranskription",
+    "PartSummary": "Zusammenfassung & Fragen-Agent",
+    "PartImage": "Bilderkennung",
+    "PartSize": "{{download}} GB Download · etwa {{mem}} GB Arbeitsspeicher",
+    "PartAlwaysOn": "immer an",
+    "PartNeedsSummary": "benötigt Zusammenfassung & Fragen",
+    "PartNeedsMemory": "Benötigt 16 GB Arbeitsspeicher; dieser Computer hat {{gb}} GB",
+    "PartComingSoon": "Demnächst",
+    "SelectionTotals": "Ihre Auswahl: {{download}} GB herunterzuladen · etwa {{mem}} GB Arbeitsspeicher · {{disk}} GB freier Speicherplatz nötig",
+    "SelectionTotalsReady": "Ihre Auswahl: heruntergeladen · etwa {{mem}} GB Arbeitsspeicher",
+    "ThisComputer": "Dieser Computer: {{gb}} GB Arbeitsspeicher",
+    "ActiveSpeech": "An: Die Transkription läuft auf diesem Computer. Zusammenfassungen und Fragen sind aus.",
+    "SuggestDetailSpeech": "Die Transkription kann auf diesem Computer laufen, ohne Cloud-KI. Dafür werden einmalig {{size}} GB heruntergeladen. Sie können sie auch später unter Einstellungen → AI einschalten.",
+    "DeleteSummaryQuestion": "Das Modell für Zusammenfassung & Fragen ({{size}} GB) löschen?",
+    "DeleteImageQuestion": "Das Modell für die Bilderkennung ({{size}} GB) löschen?",
+    "DeletePartDetail": "Sie können es wieder herunterladen, indem Sie es ankreuzen.",
+    "DescriptionSpeech": "Die Transkription läuft auf diesem Computer, ohne Cloud-KI."
   }
 }

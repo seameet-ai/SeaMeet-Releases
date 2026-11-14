@@ -310,6 +310,7 @@
     "NoSummary": "Ingen AI-oversigt endnu.",
     "NoSummaryText": "Resumé er ikke tilgængelig.",
     "TooLittleSpeech": "For lidt tale til et resumé. En optagelse skal have omkring 20 ord for at få et resumé.",
+    "LocalLlmOff": "Resumé og Spørg er slået fra for AI på enheden. Slå det til under Indstillinger → AI for at lave resuméer på denne computer.",
     "RegeneratingSummary": "Genererer resumé igen… {{elapsed}}",
     "RegenerateCancelled": "Genereringen af resuméet blev annulleret.",
     "NoTranscript": "Udskrift ikke tilgængelig.",
@@ -2826,7 +2827,10 @@
       "PARSE_ERROR": "Kunne ikke parse AI-svar.",
       "RATE_LIMIT": "API-hastighedsgrænsen er overskredet. Vent venligst et øjeblik.",
       "SERVER_ERROR": "AI-serveren stødte på en fejl.",
-      "UNKNOWN_ERROR": "AI-behandling mislykkedes."
+      "UNKNOWN_ERROR": "AI-behandling mislykkedes.",
+      "LOCAL_IMAGE_FAILED": "SeaVision-2B kunne ikke læse dette skærmbillede. Prøv igen.",
+      "BAD_IMAGE": "Billedet kan ikke læses. Prøv PNG eller JPEG.",
+      "IMAGE_NOT_INSTALLED": "Billedgenkendelse er ikke installeret. Slå den til under Indstillinger → AI."
     },
     "ExtractedText": "Udtrukket tekst",
     "FallbackHint": "Deaktiver \"Brug hoved-LLM til skærmbillede-OCR\" i Indstillinger, hvis denne udbyder ikke understøtter visning.",
@@ -2854,7 +2858,12 @@
       "BundleOcr": "OCR-tekst",
       "BundleDescription": "Beskrivelse",
       "BundleSearch": "Søgning"
-    }
+    },
+    "ReadingOnDevice": "Læser skærmbilledet på denne computer… {{elapsed}}",
+    "OnDeviceImageOff": "Læs dette skærmbillede på denne computer: slå Billedgenkendelse til under Indstillinger → AI.",
+    "OpenAiSettings": "Åbn Indstillinger → AI",
+    "WaitingForRecording": "Læses efter optagelsen.",
+    "PartlyRead": "Delvist læst: noget tekst mangler måske. Læs igen for at prøve at få resten."
   },
   "ScreenshotView": {
     "RecentLabel": "Nylige skærmbilleder"
@@ -4545,7 +4554,10 @@
     "LegendOther": "Other apps",
     "CoresNote3": "Bar: CPU as a share of all {{cores}} cores",
     "WholeMachineCpu": "Whole machine CPU",
-    "PillNotLoaded": "Ikke indlæst (indlæses efter behov)"
+    "PillNotLoaded": "Ikke indlæst (indlæses efter behov)",
+    "DoingImage": "Læser et skærmbillede på enheden",
+    "RoleVisionWhat": "(billeder)",
+    "VisionShared": "Kører i {{llm}}: tælles med på den række"
   },
   "OnDeviceAI": {
     "Title": "AI på enheden",
@@ -4566,7 +4578,7 @@
     "RestartToTurnOff": "Genstart SeaMeet for at slå AI på enheden fra?",
     "RestartDetail": "Ændringen træder i kraft, når SeaMeet starter igen. Stop eventuelle optagelser først.",
     "Later": "Senere",
-    "NotEnoughMemory": "Ikke tilgængelig på denne computer: den kræver mindst 16 GB hukommelse, og denne har {{gb}} GB.",
+    "NotEnoughMemory": "Ikke tilgængelig på denne computer: den kræver mindst 8 GB hukommelse, og denne har {{gb}} GB.",
     "Models": "Modeller",
     "Download": "Download",
     "Downloading": "Downloader modellerne: {{done}} af {{all}} GB (fil {{index}}/{{total}})",
@@ -4591,6 +4603,24 @@
     "QuitDuringDownloadDetail": "{{done}} af {{all}} GB downloadet. Downloaden fortsætter, hvor den stoppede, næste gang SeaMeet starter.",
     "KeepDownloading": "Fortsæt download",
     "Quit": "Afslut",
-    "DeletePending": "De downloadede modeller slettes, når SeaMeet starter igen."
+    "DeletePending": "De downloadede modeller slettes, når SeaMeet starter igen.",
+    "PartsLabel": "Hvad kører på denne computer",
+    "PartSpeech": "Taletransskription",
+    "PartSummary": "Resumé og Spørg-agent",
+    "PartImage": "Billedgenkendelse",
+    "PartSize": "{{download}} GB download · ca. {{mem}} GB hukommelse",
+    "PartAlwaysOn": "altid til",
+    "PartNeedsSummary": "kræver Resumé og Spørg",
+    "PartNeedsMemory": "Kræver 16 GB hukommelse; denne computer har {{gb}} GB",
+    "PartComingSoon": "Kommer snart",
+    "SelectionTotals": "Dit valg: {{download}} GB at downloade · ca. {{mem}} GB hukommelse · {{disk}} GB ledig diskplads kræves",
+    "SelectionTotalsReady": "Dit valg: downloadet · ca. {{mem}} GB hukommelse",
+    "ThisComputer": "Denne computer: {{gb}} GB hukommelse",
+    "ActiveSpeech": "Til: transskription kører på denne computer. Resuméer og Spørg er slået fra.",
+    "SuggestDetailSpeech": "Transskription kan køre på denne computer uden cloud-AI. Der downloades {{size}} GB én gang. Du kan også slå det til senere under Indstillinger → AI.",
+    "DeleteSummaryQuestion": "Slet modellen til Resumé og Spørg ({{size}} GB)?",
+    "DeleteImageQuestion": "Slet modellen til billedgenkendelse ({{size}} GB)?",
+    "DeletePartDetail": "Du kan downloade den igen ved at sætte flueben ved den.",
+    "DescriptionSpeech": "Transskription kører på denne computer uden cloud-AI."
   }
 }
