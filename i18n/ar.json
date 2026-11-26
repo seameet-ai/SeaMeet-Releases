@@ -2663,7 +2663,8 @@
     "UpdateWikiFromNote": "تحديث الويكي من هذه الملاحظة",
     "WikiUpdateFailed": "فشل تحديث الويكي: {{error}}",
     "RecordingInFile": "تسجيل مرفق بهذه الملاحظة",
-    "RecordingInFolder": "تسجيل داخل هذا المجلد"
+    "RecordingInFolder": "تسجيل داخل هذا المجلد",
+    "Recent": "الأخيرة"
   },
   "NotesView": {
     "CollapseSidebar": "إخفاء الشريط الجانبي للملاحظات",
@@ -3384,11 +3385,10 @@
       "EmptyState": "لم يُكتشف تطبيقات بعد. عندما يكتشف SeaMeet تطبيقًا يستخدم ميكروفونك، سيظهر هنا.",
       "PathCopied": "تم نسخ المسار إلى الحافظة",
       "PermissionHeader": "أذونات التطبيق",
-      "Title": "أذونات التطبيق"
+      "Title": "أذونات التطبيق",
+      "RemoveApp": "إزالة {{app}} من القائمة"
     },
     "Back": "السابق",
-    "DefaultUserName": "SeaMeet المستخدم",
-    "FailedToCheckForUpdates": "فشل في التحقق من التحديثات",
     "GroupTitle": {
       "ApplicationInfo": "معلومات التطبيق",
       "Automation": "إعدادات التشغيل الآلي",
@@ -3399,7 +3399,6 @@
     },
     "Item": {
       "AutoRecording": "ميزة التسجيل التلقائي",
-      "Copyright": "حقوق الملكية الفكرية",
       "ImproveTranslationHint": "ساعد في تحسين هذه الترجمة على GitHub →",
       "Language": "اختيار اللغة",
       "MicrophoneGain": "مستوى ميكروفون",
@@ -3433,7 +3432,10 @@
       "DefaultPathLabel": "المسار الافتراضي للحفظ",
       "Description": "اختر المجلد الافتراضي الذي يستخدمه SeaMeet عند حفظ التسجيلات تلقائيًا.",
       "Save": "حفظ",
-      "Title": "إعدادات التخزين"
+      "Title": "إعدادات التخزين",
+      "SaveFailed": "تعذّر تغيير مجلد التسجيلات.",
+      "LockedWhileRecording": "يمكنك تغيير مجلد التسجيلات بعد انتهاء هذا التسجيل.",
+      "SaveHint": "اضغط حفظ لتغيير مجلد التسجيلات."
     },
     "Theme": {
       "AdobeSand": "رمل أدوبي",
@@ -3464,7 +3466,6 @@
       "WarmPaperDesc": "وضع فاتح بألوان الورق الدافئة"
     },
     "Title": "الإعدادات",
-    "UserAvatarAlt": "صورة المستخدم",
     "ManagedByPlan": "مشمول في خطة Sync Pro الخاصة بك — يعمل الذكاء الاصطناعي عبر مزودين تديرهم SeaMeet. لا حاجة لمفاتيح API.",
     "AppMode": {
       "Title": "وضع التطبيق",
@@ -3477,6 +3478,36 @@
       "ConfirmReload": "سيُعاد تحميل التطبيق للتبديل إلى مسجّل SeaMeet. ستبقى إعداداتك وتسجيلاتك كما هي. هل تريد المتابعة؟",
       "SwitchFailed": "فشل التبديل: {{error}}",
       "Switch": "تبديل"
+    },
+    "Section": {
+      "General": "عام",
+      "Recording": "التسجيل",
+      "Detection": "اكتشاف الاجتماعات",
+      "Ai": "الذكاء الاصطناعي",
+      "Templates": "قوالب الملخص",
+      "Memory": "الملاحظات والذاكرة",
+      "Storage": "التخزين",
+      "Sync": "المزامنة والنسخ الاحتياطي",
+      "Connections": "الاتصالات",
+      "About": "حول"
+    },
+    "Nav": "أقسام الإعدادات",
+    "OpensInWindow": "يُفتح في نافذة الإعدادات.",
+    "SavedAsYouGo": "تُحفَظ التغييرات فور إجرائها.",
+    "StartAtLoginFailed": "تعذّر تغيير التشغيل عند تسجيل الدخول.",
+    "Recording": {
+      "RecordPageLink": "الجودة ومعدل الإطارات والمشغّل والنافذة العائمة موجودة في صفحة التسجيل",
+      "Folder": "مكان حفظ التسجيلات"
+    },
+    "LanguageFailed": "تعذّر تغيير اللغة.",
+    "Memory": {
+      "MemoryLink": "تشغيل ذاكرة الاجتماعات أو إيقافها، ومصادر بنائها",
+      "MemoryHint": "في قسم الذكاء الاصطناعي.",
+      "WorkspacesLink": "مساحات العمل",
+      "WorkspacesHint": "في الشريط الجانبي للملاحظات.",
+      "GitHubLink": "نسخ الملاحظات احتياطيًا إلى GitHub",
+      "GitHubHint": "في المزامنة والنسخ الاحتياطي.",
+      "MemoryLinkLegacy": "بناء الذاكرة من ملاحظاتك وتسجيلاتك"
     }
   },
   "SettingsModal": {
@@ -3533,7 +3564,8 @@
     "FullScreenshot": "لقطة للشاشة كاملة",
     "MoveBetweenAreas": "التنقل بين الشريط والقائمة والمحتوى",
     "StopRecording": "إيقاف التسجيل",
-    "PauseRecording": "إيقاف التسجيل مؤقتًا أو استئنافه"
+    "PauseRecording": "إيقاف التسجيل مؤقتًا أو استئنافه",
+    "AllPages": "كل الصفحات (الذاكرة)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3783,12 +3815,10 @@
   },
   "UserMenu": {
     "ReferFriend": "ادعُ صديقًا واحصل على شهر",
-    "AboutSeaMeet": "عن SeaMeet",
     "AccountSignedIn": "تم تسجيل الدخول",
     "DisplayName": "اسم المستخدم",
     "EmailPlaceholder": "user@example.com",
     "Exit": "خروج",
-    "HelpSupport": "المساعدة والدعم",
     "HelpSupportSection": {
       "Discussion": "المناقشة",
       "DiscussionDesc": "انضم إلى مناقشة المجتمع (يتطلب حساب GitHub).",
@@ -3802,11 +3832,9 @@
       "JoinDiscussion": "انضم إلى المناقشة",
       "SendEmail": "إرسال بريد إلكتروني",
       "SubmitIssue": "إرسال مشكلة",
-      "VisitWiki": "زيارة الويكي",
       "Wiki": "الويكي",
       "WikiDesc": "تحقق من ويكي SeaMeet للتوثيق والأدلة."
     },
-    "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
     "RefreshWorkspaces": "تحديث مساحات العمل",
     "SeaMeetSignIn": "تسجيل الدخول إلى SeaMeet Enterprise (المعتمد على الروبوت)",
     "SeaMeetSignOut": "تسجيل الخروج من SeaMeet Enterprise (المعتمد على الروبوت)",
@@ -3886,7 +3914,6 @@
     "AIBadgeTooltip": "محتوى أنشأه الذكاء الاصطناعي",
     "AIEmpty": "لا يوجد محتوى ذكاء اصطناعي بعد. أضف تسجيلاً أو لقطة شاشة إلى ملاحظة تذكر هذا الكيان، ثم شغّل تحديث الويكي.",
     "AISection": "قسم الذكاء الاصطناعي",
-    "Backlinks": "الروابط الخلفية",
     "BuiltFrom": "مبني من",
     "Bulk": {
       "BannerMessage": "{{count}} ملاحظة جديدة منذ آخر إنشاء",
@@ -3959,7 +3986,6 @@
     "RefreshFromSources": "تحديث من المصادر",
     "RefreshFromSourcesHint": "انقر لتحديث قسم الذكاء الاصطناعي من {{count}} ملاحظة مصدر. Shift+النقر يعيد قراءة الملاحظات المصدر أيضًا.",
     "RefreshFromSourcesTooltip": "تحديث قسم الذكاء الاصطناعي الآن من {{count}} ملاحظة (ملاحظات) مصدر",
-    "RelatedPages": "الصفحات ذات الصلة",
     "SelectPage": "اختر صفحة",
     "SelectPageHint": "اختر كياناً أو شخصاً أو موضوعاً من الشريط الجانبي لرؤية ما تعلمه الويكي.",
     "SidebarTitle": "الويكي",
@@ -4030,7 +4056,7 @@
     "NewFolderPlaceholder": "اسم المجلد…",
     "NewPage": "صفحة wiki جديدة",
     "Open": "فتح",
-    "QuickOpen": "فتح سريع (⌘P)",
+    "QuickOpen": "فتح سريع ({{shortcut}})",
     "Rename": "إعادة تسمية",
     "SearchInTree": "تصفية في الشجرة",
     "SetDefaultEntity": "تعيين كافتراضي لصفحات الكيانات الجديدة",
@@ -4041,8 +4067,14 @@
     "SortDefault": "افتراضي (ترتيب نظام الملفات)",
     "SortModified": "التعديل (الأحدث أولاً)",
     "SortName": "الاسم (أ → ي)",
-    "Title": "ويكي",
-    "UserBadge": "حرره المستخدم"
+    "Title": "كل الصفحات",
+    "UserBadge": "حرره المستخدم",
+    "PageCount_zero": "{{count}} صفحة",
+    "PageCount_one": "{{count}} صفحة",
+    "PageCount_two": "صفحتان",
+    "PageCount_few": "{{count}} صفحات",
+    "PageCount_many": "{{count}} صفحة",
+    "PageCount_other": "{{count}} صفحة"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] غير موجود في مساحة العمل هذه",
@@ -4475,7 +4507,21 @@
     "CloudUpdateRequested": "تم طلب التحديث — سيصل عبر المزامنة.",
     "SearchEntitiesPlaceholder": "ابحث في الأشخاص والمواضيع والاجتماعات",
     "MemorySubtitle": "يُنشأ تلقائيًا من تسجيلاتك — الأشخاص والمواضيع والمؤسسات التي تناقشها، كلٌّ مُلخَّص في صفحة تتحدّث كلما سجّلت المزيد.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "الأشخاص",
+    "StatOrgs": "المؤسسات",
+    "StatTopics": "الموضوعات",
+    "KindPerson": "شخص",
+    "KindOrg": "مؤسسة",
+    "KindTopic": "موضوع",
+    "SourceCount_one": "{{count}} مصدر",
+    "SourceCount_other": "{{count}} مصادر",
+    "SourceCount_zero": "{{count}} مصدر",
+    "SourceCount_two": "{{count}} مصدران",
+    "SourceCount_few": "{{count}} مصادر",
+    "SourceCount_many": "{{count}} مصدرًا",
+    "SeeAll": "عرض الكل",
+    "DefaultWorkspaceNote": "فتح الذاكرة ينقلك إلى مساحة العمل الافتراضية."
   },
   "WikiPage": {
     "CorrectThis": "صحّح هذا",
@@ -4483,7 +4529,32 @@
     "CorrectionFailed": "تعذّر الحفظ — حاول مرة أخرى.",
     "CorrectionPending": "صحّحته أنت — إعادة الكتابة قيد الانتظار.",
     "Saving": "جارٍ الحفظ…",
-    "SubmitCorrection": "إرسال التصحيح"
+    "SubmitCorrection": "إرسال التصحيح",
+    "Related": "ذو صلة",
+    "Sources": "المصادر",
+    "CiteLabel": "المصدر {{n}}",
+    "FromMeetings_zero": "من الاجتماعات: {{count}}",
+    "FromMeetings_one": "من الاجتماعات: {{count}}",
+    "FromMeetings_two": "من الاجتماعات: {{count}}",
+    "FromMeetings_few": "من الاجتماعات: {{count}}",
+    "FromMeetings_many": "من الاجتماعات: {{count}}",
+    "FromMeetings_other": "من الاجتماعات: {{count}}",
+    "AndNotes_zero": "والملاحظات: {{count}}",
+    "AndNotes_one": "والملاحظات: {{count}}",
+    "AndNotes_two": "والملاحظات: {{count}}",
+    "AndNotes_few": "والملاحظات: {{count}}",
+    "AndNotes_many": "والملاحظات: {{count}}",
+    "AndNotes_other": "والملاحظات: {{count}}",
+    "FromNotes_zero": "من الملاحظات: {{count}}",
+    "FromNotes_one": "من الملاحظات: {{count}}",
+    "FromNotes_two": "من الملاحظات: {{count}}",
+    "FromNotes_few": "من الملاحظات: {{count}}",
+    "FromNotes_many": "من الملاحظات: {{count}}",
+    "FromNotes_other": "من الملاحظات: {{count}}"
+  },
+  "Memory": {
+    "AllPages": "كل الصفحات",
+    "ViewsLabel": "طرق عرض الذاكرة"
   },
   "MemorySidebar": {
     "Home": "الرئيسية",
@@ -4575,7 +4646,6 @@
   "Rail": {
     "Label": "التنقل الرئيسي",
     "Library": "المكتبة",
-    "NotesWiki": "الملاحظات",
     "Memory": "الذاكرة",
     "Agent": "المساعد",
     "Meetings": "الاجتماعات المتصلة",
@@ -4599,13 +4669,9 @@
     "Help": "المساعدة",
     "KeyboardShortcuts": "اختصارات لوحة المفاتيح",
     "ServiceStatus": "حالة الخدمة",
-    "HelpSupport": "المساعدة والدعم",
-    "About": "عن SeaMeet",
     "Settings": "الإعدادات",
     "Account": "الحساب",
     "Notes": "الملاحظات",
-    "Wiki": "الويكي",
-    "NotesOrWiki": "الملاحظات أو الويكي",
     "MoreScreenshotModes": "طرق أخرى لالتقاط الشاشة",
     "ScreenshotOptions": "خيارات لقطة الشاشة…",
     "ClickTakes": "النقرة تلتقط: {{mode}}",
@@ -5857,5 +5923,18 @@
     "ZoomOut": "تصغير",
     "Theater": "وضع المسرح",
     "FitWidth": "ملاءمة العرض"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "الأدلة",
+      "Contact": "التواصل"
+    },
+    "Nav": "أقسام المساعدة",
+    "Guide": {
+      "WhatToExpect": "ما يمكن توقعه من الذكاء الاصطناعي الخاص",
+      "WhatToExpectDesc": "ما يجيده الذكاء الاصطناعي على الجهاز، وأين يكون أبطأ، وما يحتاج إليه.",
+      "ReleaseNotes": "ملاحظات الإصدار لهذا الإصدار",
+      "ReleaseNotesDesc": "الجديد في SeaMeet {{version}}."
+    }
   }
 }

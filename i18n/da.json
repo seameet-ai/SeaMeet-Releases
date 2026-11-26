@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "Opdater wiki ud fra denne note",
     "WikiUpdateFailed": "Wiki-opdatering mislykkedes: {{error}}",
     "RecordingInFile": "Optagelse knyttet til denne note",
-    "RecordingInFolder": "Optagelse i denne mappe"
+    "RecordingInFolder": "Optagelse i denne mappe",
+    "Recent": "Nylige"
   },
   "NotesView": {
     "CollapseSidebar": "Skjul note-sidebjælke",
@@ -3356,11 +3357,10 @@
       "EmptyState": "Ingen apps registreret endnu. Når SeaMeet registrerer en app der bruger din mikrofon, vil den vises her.",
       "PathCopied": "Sti kopieret til udklipsholder",
       "PermissionHeader": "App-tilladelser",
-      "Title": "App-tilladelser"
+      "Title": "App-tilladelser",
+      "RemoveApp": "Fjern {{app}} fra listen"
     },
     "Back": "Tilbage",
-    "DefaultUserName": "SeaMeet-bruger",
-    "FailedToCheckForUpdates": "Kunne ikke søge efter opdateringer",
     "GroupTitle": {
       "ApplicationInfo": "App-information",
       "Automation": "Automatisering",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "Auto-optagelse",
-      "Copyright": "Ophavsret",
       "ImproveTranslationHint": "Hjælp med at forbedre denne oversættelse på GitHub →",
       "Language": "Sprog",
       "MicrophoneGain": "Mikrofonforstærkning",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "Standard gemmemappe",
       "Description": "Vælg standardmappen som SeaMeet bruger ved automatisk gemning af optagelser.",
       "Save": "Gem",
-      "Title": "Lagerindstillinger"
+      "Title": "Lagerindstillinger",
+      "SaveFailed": "Kunne ikke ændre optagelsesmappen.",
+      "LockedWhileRecording": "Du kan ændre optagelsesmappen, når denne optagelse er slut.",
+      "SaveHint": "Tryk på Gem for at ændre optagelsesmappen."
     },
     "Theme": {
       "AdobeSand": "Adobe Sand",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "Lys tilstand i varme papirnuancer"
     },
     "Title": "Indstillinger",
-    "UserAvatarAlt": "bruger",
     "ManagedByPlan": "Inkluderet i din Sync Pro-plan — AI kører på udbydere administreret af SeaMeet. Ingen API-nøgler nødvendige.",
     "AppMode": {
       "Title": "App-tilstand",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "Appen genindlæses for at skifte til SeaMeet Recorder. Dine indstillinger og optagelser bevares. Vil du fortsætte?",
       "SwitchFailed": "Skift mislykkedes: {{error}}",
       "Switch": "Skift"
+    },
+    "Section": {
+      "General": "Generelt",
+      "Recording": "Optagelse",
+      "Detection": "Mødegenkendelse",
+      "Ai": "AI",
+      "Templates": "Resuméskabeloner",
+      "Memory": "Noter og Minder",
+      "Storage": "Lager",
+      "Sync": "Synk og backup",
+      "Connections": "Forbindelser",
+      "About": "Om"
+    },
+    "Nav": "Indstillingssektioner",
+    "OpensInWindow": "Åbner i vinduet Indstillinger.",
+    "SavedAsYouGo": "Ændringer gemmes, mens du foretager dem.",
+    "StartAtLoginFailed": "Kunne ikke ændre Start ved login.",
+    "Recording": {
+      "RecordPageLink": "Kvalitet, billedhastighed, Launcher og Floater findes på siden Optag",
+      "Folder": "Hvor optagelser gemmes"
+    },
+    "LanguageFailed": "Kunne ikke ændre sproget.",
+    "Memory": {
+      "MemoryLink": "Mødehukommelse til eller fra, og hvad den bygges af",
+      "MemoryHint": "I sektionen AI.",
+      "WorkspacesLink": "Arbejdsområder",
+      "WorkspacesHint": "I sidepanelet Noter.",
+      "GitHubLink": "Sikkerhedskopiér noter til GitHub",
+      "GitHubHint": "I Synk og backup.",
+      "MemoryLinkLegacy": "Opbygning af Minder fra dine noter og optagelser"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "Skærmbillede af hele skærmen",
     "MoveBetweenAreas": "Skift mellem bjælke, liste og indhold",
     "StopRecording": "Stop optagelse",
-    "PauseRecording": "Sæt optagelse på pause eller genoptag"
+    "PauseRecording": "Sæt optagelse på pause eller genoptag",
+    "AllPages": "Alle sider (Minder)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Henvis en ven, få en måned",
-    "AboutSeaMeet": "Om SeaMeet",
     "AccountSignedIn": "Logget ind",
     "DisplayName": "Bruger",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Afslut",
-    "HelpSupport": "Hjælp & Support",
     "HelpSupportSection": {
       "Discussion": "Diskussion",
       "DiscussionDesc": "Deltag i fællesskabsdiskussionen (kræver GitHub-konto).",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "Deltag i diskussion",
       "SendEmail": "Send e-mail",
       "SubmitIssue": "Indsend problem",
-      "VisitWiki": "Besøg Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Tjek SeaMeet-wikien for dokumentation og vejledninger."
     },
-    "KeyboardShortcuts": "Tastaturgenveje",
     "RefreshWorkspaces": "Opdater arbejdsområder",
     "SeaMeetSignIn": "Log ind på SeaMeet Enterprise (bot-baseret)",
     "SeaMeetSignOut": "Log ud af SeaMeet Enterprise (bot-baseret)",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "AI-genereret indhold",
     "AIEmpty": "Endnu intet AI-indhold. Tilføj en optagelse eller et skærmbillede til en note, der nævner denne enhed, og kør derefter wiki-opdateringen.",
     "AISection": "AI-sektion",
-    "Backlinks": "Tilbagelinks",
     "BuiltFrom": "Bygget ud fra",
     "Bulk": {
       "BannerMessage": "{{count}} nye noter siden sidste build",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "Opdater fra kilder",
     "RefreshFromSourcesHint": "Klik for at opdatere AI-sektionen fra {{count}} kildenote(r). Shift+klik genlæser også kildenoterne.",
     "RefreshFromSourcesTooltip": "Opdater AI-sektionen fra {{count}} kildenote(r) nu",
-    "RelatedPages": "Relaterede sider",
     "SelectPage": "Vælg en side",
     "SelectPageHint": "Vælg en enhed, person eller et emne i sidepanelet for at se, hvad din wiki har lært.",
     "SidebarTitle": "Wiki",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "Mappenavn…",
     "NewPage": "Ny wiki-side",
     "Open": "Åbn",
-    "QuickOpen": "Hurtig åbning (⌘P)",
+    "QuickOpen": "Hurtig åbning ({{shortcut}})",
     "Rename": "Omdøb",
     "SearchInTree": "Filtrér i træet",
     "SetDefaultEntity": "Sæt som standard for nye entitetssider",
@@ -4013,8 +4039,10 @@
     "SortDefault": "Standard (filsystem-rækkefølge)",
     "SortModified": "Ændret (nyeste først)",
     "SortName": "Navn (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "Redigeret af bruger"
+    "Title": "Alle sider",
+    "UserBadge": "Redigeret af bruger",
+    "PageCount_one": "{{count}} side",
+    "PageCount_other": "{{count}} sider"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] findes ikke i dette arbejdsområde",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "Opdatering anmodet — den ankommer via synkronisering.",
     "SearchEntitiesPlaceholder": "Søg efter personer, emner og møder",
     "MemorySubtitle": "Oprettes automatisk ud fra dine optagelser — de personer, emner og organisationer, du taler om, hver destilleret til en side, der opdateres, efterhånden som du optager mere.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Personer",
+    "StatOrgs": "Organisationer",
+    "StatTopics": "Emner",
+    "KindPerson": "Person",
+    "KindOrg": "Organisation",
+    "KindTopic": "Emne",
+    "SourceCount_one": "{{count}} kilde",
+    "SourceCount_other": "{{count}} kilder",
+    "SeeAll": "Se alle",
+    "DefaultWorkspaceNote": "Når du åbner Minder, skifter du til dit Standard-arbejdsområde."
   },
   "WikiPage": {
     "CorrectThis": "Ret dette",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "Kunne ikke gemme — prøv igen.",
     "CorrectionPending": "Rettet af dig — omskrivning afventer.",
     "Saving": "Gemmer…",
-    "SubmitCorrection": "Indsend rettelse"
+    "SubmitCorrection": "Indsend rettelse",
+    "Related": "Relateret",
+    "Sources": "Kilder",
+    "CiteLabel": "Kilde {{n}}",
+    "FromMeetings_one": "Fra {{count}} møde",
+    "FromMeetings_other": "Fra {{count}} møder",
+    "AndNotes_one": "og {{count}} note",
+    "AndNotes_other": "og {{count}} noter",
+    "FromNotes_one": "Fra {{count}} note",
+    "FromNotes_other": "Fra {{count}} noter"
+  },
+  "Memory": {
+    "AllPages": "Alle sider",
+    "ViewsLabel": "Visninger af Minder"
   },
   "MemorySidebar": {
     "Home": "Hjem",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "Hovednavigation",
     "Library": "Bibliotek",
-    "NotesWiki": "Noter",
     "Memory": "Minder",
     "Agent": "Assistent",
     "Meetings": "Forbundne møder",
@@ -4567,13 +4617,9 @@
     "Help": "Hjælp",
     "KeyboardShortcuts": "Tastaturgenveje",
     "ServiceStatus": "Tjenestestatus",
-    "HelpSupport": "Hjælp & support",
-    "About": "Om SeaMeet",
     "Settings": "Indstillinger",
     "Account": "Konto",
     "Notes": "Noter",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Noter eller wiki",
     "MoreScreenshotModes": "Flere måder at tage skærmbillede på",
     "ScreenshotOptions": "Indstillinger for skærmbillede…",
     "ClickTakes": "Et klik tager: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "Zoom ud",
     "Theater": "Biograftilstand",
     "FitWidth": "Tilpas bredde"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Vejledninger",
+      "Contact": "Kontakt"
+    },
+    "Nav": "Hjælpeafsnit",
+    "Guide": {
+      "WhatToExpect": "Hvad du kan forvente af Privat AI",
+      "WhatToExpectDesc": "Hvad AI på enheden er god til, hvor den er langsommere, og hvad den kræver.",
+      "ReleaseNotes": "Udgivelsesnoter for denne version",
+      "ReleaseNotesDesc": "Nyt i SeaMeet {{version}}."
+    }
   }
 }

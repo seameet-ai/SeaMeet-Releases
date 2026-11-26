@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "Wiki aus dieser Notiz aktualisieren",
     "WikiUpdateFailed": "Wiki-Aktualisierung fehlgeschlagen: {{error}}",
     "RecordingInFile": "Aufnahme an diese Notiz angehängt",
-    "RecordingInFolder": "Aufnahme in diesem Ordner"
+    "RecordingInFolder": "Aufnahme in diesem Ordner",
+    "Recent": "Letzte"
   },
   "NotesView": {
     "CollapseSidebar": "Notiz-Seitenleiste ausblenden",
@@ -3356,11 +3357,10 @@
       "EmptyState": "Noch keine Apps erkannt. Wenn SeaMeet eine App erkennt, die Ihr Mikrofon verwendet, wird sie hier erscheinen.",
       "PathCopied": "Pfad in Zwischenablage kopiert",
       "PermissionHeader": "App-Berechtigungen",
-      "Title": "App-Berechtigungen"
+      "Title": "App-Berechtigungen",
+      "RemoveApp": "{{app}} aus der Liste entfernen"
     },
     "Back": "Zurück",
-    "DefaultUserName": "SeaMeet Benutzer",
-    "FailedToCheckForUpdates": "Suche nach Updates fehlgeschlagen",
     "GroupTitle": {
       "ApplicationInfo": "App-Informationen",
       "Automation": "Automatisierung",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "Auto-Aufnahme",
-      "Copyright": "Urheberrecht",
       "ImproveTranslationHint": "Helfen Sie mit, diese Übersetzung auf GitHub zu verbessern →",
       "Language": "Sprache",
       "MicrophoneGain": "Mikrofonverstärkung",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "Standard-Speicherordner",
       "Description": "Wählen Sie den Standardordner, den SeaMeet beim automatischen Speichern von Aufnahmen verwendet.",
       "Save": "Speichern",
-      "Title": "Speichereinstellungen"
+      "Title": "Speichereinstellungen",
+      "SaveFailed": "Der Aufnahmeordner konnte nicht geändert werden.",
+      "LockedWhileRecording": "Du kannst den Aufnahmeordner ändern, sobald diese Aufnahme endet.",
+      "SaveHint": "Drücke Speichern, um den Aufnahmeordner zu ändern."
     },
     "Theme": {
       "AdobeSand": "Adobe-Sand",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "Hellmodus in warmen Papiertönen"
     },
     "Title": "Einstellungen",
-    "UserAvatarAlt": "Benutzer",
     "ManagedByPlan": "In Ihrem Sync-Pro-Tarif enthalten — die KI läuft über von SeaMeet verwaltete Anbieter. Keine API-Schlüssel erforderlich.",
     "AppMode": {
       "Title": "App-Modus",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "Die App wird neu geladen, um zum SeaMeet Recorder zu wechseln. Deine Einstellungen und Aufnahmen bleiben erhalten. Fortfahren?",
       "SwitchFailed": "Wechsel fehlgeschlagen: {{error}}",
       "Switch": "Wechseln"
+    },
+    "Section": {
+      "General": "Allgemein",
+      "Recording": "Aufnahme",
+      "Detection": "Meeting-Erkennung",
+      "Ai": "KI",
+      "Templates": "Zusammenfassungsvorlagen",
+      "Memory": "Notizen und Gedächtnis",
+      "Storage": "Speicher",
+      "Sync": "Synchronisierung und Sicherung",
+      "Connections": "Verbindungen",
+      "About": "Über"
+    },
+    "Nav": "Einstellungsbereiche",
+    "OpensInWindow": "Öffnet sich im Einstellungsfenster.",
+    "SavedAsYouGo": "Änderungen werden sofort gespeichert.",
+    "StartAtLoginFailed": "„Beim Anmelden starten“ konnte nicht geändert werden.",
+    "Recording": {
+      "RecordPageLink": "Qualität, Bildrate, Launcher und Floater findest du auf der Aufnahmeseite",
+      "Folder": "Wo Aufnahmen gespeichert werden"
+    },
+    "LanguageFailed": "Die Sprache konnte nicht geändert werden.",
+    "Memory": {
+      "MemoryLink": "Meeting-Gedächtnis an oder aus, und woraus es entsteht",
+      "MemoryHint": "Im Bereich KI.",
+      "WorkspacesLink": "Arbeitsbereiche",
+      "WorkspacesHint": "In der Seitenleiste von Notizen.",
+      "GitHubLink": "Notizen auf GitHub sichern",
+      "GitHubHint": "Unter Synchronisierung und Sicherung.",
+      "MemoryLinkLegacy": "Gedächtnis aus deinen Notizen und Aufnahmen aufbauen"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "Screenshot des ganzen Bildschirms",
     "MoveBetweenAreas": "Zwischen Leiste, Liste und Inhalt wechseln",
     "StopRecording": "Aufnahme beenden",
-    "PauseRecording": "Aufnahme pausieren oder fortsetzen"
+    "PauseRecording": "Aufnahme pausieren oder fortsetzen",
+    "AllPages": "Alle Seiten (Gedächtnis)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Freunde einladen, einen Monat erhalten",
-    "AboutSeaMeet": "Über SeaMeet",
     "AccountSignedIn": "Angemeldet",
     "DisplayName": "Benutzer",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Beenden",
-    "HelpSupport": "Hilfe & Support",
     "HelpSupportSection": {
       "Discussion": "Diskussion",
       "DiscussionDesc": "Nehmen Sie an der Community-Diskussion teil (erfordert GitHub-Konto).",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "An Diskussion teilnehmen",
       "SendEmail": "E-Mail senden",
       "SubmitIssue": "Problem einreichen",
-      "VisitWiki": "Wiki besuchen",
       "Wiki": "Wiki",
       "WikiDesc": "Besuchen Sie das SeaMeet Wiki für Dokumentation und Anleitungen."
     },
-    "KeyboardShortcuts": "Tastenkombinationen",
     "RefreshWorkspaces": "Arbeitsbereiche aktualisieren",
     "SeaMeetSignIn": "Bei SeaMeet Enterprise (botbasiert) anmelden",
     "SeaMeetSignOut": "Von SeaMeet Enterprise (botbasiert) abmelden",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "KI-generierter Inhalt",
     "AIEmpty": "Noch kein KI-Inhalt. Fügen Sie einer Notiz, die diese Entität erwähnt, eine Aufnahme oder ein Bildschirmfoto hinzu und führen Sie dann die Wiki-Aktualisierung aus.",
     "AISection": "KI-Abschnitt",
-    "Backlinks": "Rückverweise",
     "BuiltFrom": "Erstellt aus",
     "Bulk": {
       "BannerMessage": "{{count}} neue Notizen seit letztem Build",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "Aus Quellen aktualisieren",
     "RefreshFromSourcesHint": "Klicken zum Aktualisieren des KI-Abschnitts aus {{count}} Quellnotiz(en). Umschalt+Klick liest auch die Quellnotizen erneut.",
     "RefreshFromSourcesTooltip": "KI-Abschnitt jetzt aus {{count}} Quellnotiz(en) aktualisieren",
-    "RelatedPages": "Verwandte Seiten",
     "SelectPage": "Seite auswählen",
     "SelectPageHint": "Wählen Sie eine Entität, eine Person oder ein Thema aus der Seitenleiste, um zu sehen, was Ihr Wiki gelernt hat.",
     "SidebarTitle": "Wiki",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "Ordnername…",
     "NewPage": "Neue Wiki-Seite",
     "Open": "Öffnen",
-    "QuickOpen": "Schnellöffnen (⌘P)",
+    "QuickOpen": "Schnellöffnen ({{shortcut}})",
     "Rename": "Umbenennen",
     "SearchInTree": "Im Baum filtern",
     "SetDefaultEntity": "Als Standard-Ordner für neue Entitätsseiten festlegen",
@@ -4013,8 +4039,10 @@
     "SortDefault": "Standard (Dateisystem-Reihenfolge)",
     "SortModified": "Geändert (neueste zuerst)",
     "SortName": "Name (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "Vom Benutzer bearbeitet"
+    "Title": "Alle Seiten",
+    "UserBadge": "Vom Benutzer bearbeitet",
+    "PageCount_one": "{{count}} Seite",
+    "PageCount_other": "{{count}} Seiten"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] ist in diesem Arbeitsbereich nicht vorhanden",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "Aktualisierung angefordert – sie kommt per Synchronisierung.",
     "SearchEntitiesPlaceholder": "Personen, Themen & Meetings suchen",
     "MemorySubtitle": "Wird automatisch aus deinen Aufnahmen erstellt – die Personen, Themen und Organisationen, über die du sprichst, jeweils zu einer Seite verdichtet, die sich mit jeder weiteren Aufnahme aktualisiert.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Personen",
+    "StatOrgs": "Organisationen",
+    "StatTopics": "Themen",
+    "KindPerson": "Person",
+    "KindOrg": "Organisation",
+    "KindTopic": "Thema",
+    "SourceCount_one": "{{count}} Quelle",
+    "SourceCount_other": "{{count}} Quellen",
+    "SeeAll": "Alle anzeigen",
+    "DefaultWorkspaceNote": "Beim Öffnen von Gedächtnis wird zu deinem Standard-Arbeitsbereich gewechselt."
   },
   "WikiPage": {
     "CorrectThis": "Korrigieren",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "Speichern fehlgeschlagen — bitte erneut versuchen.",
     "CorrectionPending": "Von Ihnen korrigiert — Überarbeitung ausstehend.",
     "Saving": "Wird gespeichert…",
-    "SubmitCorrection": "Korrektur senden"
+    "SubmitCorrection": "Korrektur senden",
+    "Related": "Verwandt",
+    "Sources": "Quellen",
+    "CiteLabel": "Quelle {{n}}",
+    "FromMeetings_one": "Aus {{count}} Besprechung",
+    "FromMeetings_other": "Aus {{count}} Besprechungen",
+    "AndNotes_one": "und {{count}} Notiz",
+    "AndNotes_other": "und {{count}} Notizen",
+    "FromNotes_one": "Aus {{count}} Notiz",
+    "FromNotes_other": "Aus {{count}} Notizen"
+  },
+  "Memory": {
+    "AllPages": "Alle Seiten",
+    "ViewsLabel": "Gedächtnis-Ansichten"
   },
   "MemorySidebar": {
     "Home": "Start",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "Hauptnavigation",
     "Library": "Bibliothek",
-    "NotesWiki": "Notizen",
     "Memory": "Gedächtnis",
     "Agent": "Assistent",
     "Meetings": "Verbundene Meetings",
@@ -4567,13 +4617,9 @@
     "Help": "Hilfe",
     "KeyboardShortcuts": "Tastenkombinationen",
     "ServiceStatus": "Dienststatus",
-    "HelpSupport": "Hilfe & Support",
-    "About": "Über SeaMeet",
     "Settings": "Optionen",
     "Account": "Konto",
     "Notes": "Notizen",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Notizen oder Wiki",
     "MoreScreenshotModes": "Weitere Screenshot-Arten",
     "ScreenshotOptions": "Screenshot-Optionen…",
     "ClickTakes": "Ein Klick nimmt auf: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "Verkleinern",
     "Theater": "Kinomodus",
     "FitWidth": "Breite einpassen"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Anleitungen",
+      "Contact": "Kontakt"
+    },
+    "Nav": "Hilfebereiche",
+    "Guide": {
+      "WhatToExpect": "Was du von Private KI erwarten kannst",
+      "WhatToExpectDesc": "Was KI auf dem Gerät gut kann, wo sie langsamer ist und was sie braucht.",
+      "ReleaseNotes": "Versionshinweise zu dieser Version",
+      "ReleaseNotesDesc": "Neu in SeaMeet {{version}}."
+    }
   }
 }

@@ -2636,7 +2636,8 @@
     "UpdateWikiFromNote": "I-update ang wiki mula sa tala na ito",
     "WikiUpdateFailed": "Nabigo ang pag-update ng wiki: {{error}}",
     "RecordingInFile": "Recording na naka-attach sa note na ito",
-    "RecordingInFolder": "Recording sa loob ng folder na ito"
+    "RecordingInFolder": "Recording sa loob ng folder na ito",
+    "Recent": "Kamakailan"
   },
   "NotesView": {
     "CollapseSidebar": "Itago ang sidebar ng notes",
@@ -3353,11 +3354,10 @@
       "EmptyState": "Wala pang na-dedetect na mga app. Kapag nadetect ng SeaMeet ang isang app na gumagamit ng iyong mikropono, lalabas ito dito.",
       "PathCopied": "Nakopya ang landas sa clipboard",
       "PermissionHeader": "Mga Pahintulot ng Aplikasyon",
-      "Title": "Mga Pahintulot ng Aplikasyon"
+      "Title": "Mga Pahintulot ng Aplikasyon",
+      "RemoveApp": "Alisin ang {{app}} sa listahan"
     },
     "Back": "Bumalik",
-    "DefaultUserName": "Gumagamit ng SeaMeet",
-    "FailedToCheckForUpdates": "Nabigo sa pagsusuri ng mga update",
     "GroupTitle": {
       "ApplicationInfo": "Impormasyon ng Application",
       "Automation": "Awtomatiko",
@@ -3368,7 +3368,6 @@
     },
     "Item": {
       "AutoRecording": "Awtomatikong pagre-record",
-      "Copyright": "Karapatang-ari",
       "ImproveTranslationHint": "Tumulong na pahusayin ang pagsasaling ito sa GitHub →",
       "Language": "Wika",
       "MicrophoneGain": "Pag-angat ng mikropono",
@@ -3402,7 +3401,10 @@
       "DefaultPathLabel": "Default na Save Folder",
       "Description": "Piliin ang default na folder na ginagamit ng SeaMeet kapag awtomatikong nagse-save ng mga recording.",
       "Save": "I-save",
-      "Title": "Mga Setting ng Storage"
+      "Title": "Mga Setting ng Storage",
+      "SaveFailed": "Hindi mabago ang folder ng mga recording.",
+      "LockedWhileRecording": "Mababago mo ang folder ng mga recording kapag natapos na ang recording na ito.",
+      "SaveHint": "Pindutin ang I-save para baguhin ang folder ng mga recording."
     },
     "Theme": {
       "AdobeSand": "Adobe Buhangin",
@@ -3433,7 +3435,6 @@
       "WarmPaperDesc": "Maliwanag na mode sa tono ng mainit na papel"
     },
     "Title": "Mga setting",
-    "UserAvatarAlt": "gumagamit",
     "ManagedByPlan": "Kasama sa iyong Sync Pro plan — tumatakbo ang AI sa mga provider na pinamamahalaan ng SeaMeet. Hindi kailangan ng API key.",
     "AppMode": {
       "Title": "Mode ng app",
@@ -3446,6 +3447,36 @@
       "ConfirmReload": "Mag-reload ang app para lumipat sa SeaMeet Recorder. Mananatili ang iyong mga setting at recording. Magpatuloy?",
       "SwitchFailed": "Nabigo ang paglipat: {{error}}",
       "Switch": "Lumipat"
+    },
+    "Section": {
+      "General": "Pangkalahatan",
+      "Recording": "Pagre-record",
+      "Detection": "Pagtukoy ng meeting",
+      "Ai": "AI",
+      "Templates": "Mga template ng buod",
+      "Memory": "Mga tala at Memory",
+      "Storage": "Imbak",
+      "Sync": "Pag-sync at backup",
+      "Connections": "Mga koneksyon",
+      "About": "Tungkol"
+    },
+    "Nav": "Mga seksyon ng setting",
+    "OpensInWindow": "Bubukas sa window ng Mga setting.",
+    "SavedAsYouGo": "Nase-save ang mga pagbabago habang ginagawa mo ang mga ito.",
+    "StartAtLoginFailed": "Hindi mabago ang Simulan sa Pag-login.",
+    "Recording": {
+      "RecordPageLink": "Nasa pahina ng Pag-record ang kalidad, frame rate, Launcher at Floater",
+      "Folder": "Kung saan sine-save ang mga recording"
+    },
+    "LanguageFailed": "Hindi mabago ang wika.",
+    "Memory": {
+      "MemoryLink": "Meeting Memory na naka-on o naka-off, at kung saan ito binubuo",
+      "MemoryHint": "Sa seksyong AI.",
+      "WorkspacesLink": "Mga workspace",
+      "WorkspacesHint": "Sa sidebar ng Mga tala.",
+      "GitHubLink": "I-back up ang mga tala sa GitHub",
+      "GitHubHint": "Sa Pag-sync at backup.",
+      "MemoryLinkLegacy": "Pagbuo ng Memory mula sa iyong mga tala at recording"
     }
   },
   "SettingsModal": {
@@ -3502,7 +3533,8 @@
     "FullScreenshot": "Screenshot ng buong screen",
     "MoveBetweenAreas": "Lumipat sa pagitan ng rail, listahan at nilalaman",
     "StopRecording": "Ihinto ang pagre-record",
-    "PauseRecording": "I-pause o ituloy ang pagre-record"
+    "PauseRecording": "I-pause o ituloy ang pagre-record",
+    "AllPages": "Lahat ng pahina (Memory)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3752,12 +3784,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Mag-refer ng kaibigan, kumita ng isang buwan",
-    "AboutSeaMeet": "Tungkol sa SeaMeet",
     "AccountSignedIn": "Naka-sign in",
     "DisplayName": "Gumagamit",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Lumabas",
-    "HelpSupport": "Tulong at Suporta",
     "HelpSupportSection": {
       "Discussion": "Makibahagi sa diskusyon",
       "DiscussionDesc": "Makibahagi sa diskusyon ng komunidad (nangangailangan ng GitHub account).",
@@ -3771,11 +3801,9 @@
       "JoinDiscussion": "Makilahok sa diskusyon",
       "SendEmail": "Magpadala ng email",
       "SubmitIssue": "Mag-submit ng isyu",
-      "VisitWiki": "Bisitahin ang Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Tingnan ang SeaMeet wiki para sa dokumentasyon at gabay."
     },
-    "KeyboardShortcuts": "Mga keyboard shortcut",
     "RefreshWorkspaces": "I-refresh ang Mga Workspace",
     "SeaMeetSignIn": "Mag-sign in sa SeaMeet Enterprise (bot-based)",
     "SeaMeetSignOut": "Mag-sign out sa SeaMeet Enterprise (bot-based)",
@@ -3855,7 +3883,6 @@
     "AIBadgeTooltip": "Nilalamang ginawa ng AI",
     "AIEmpty": "Wala pang nilalaman ang AI. Magdagdag ng rekording o screenshot sa talang nagbabanggit ng entity na ito, pagkatapos ay patakbuhin ang pag-update ng wiki.",
     "AISection": "Seksyon ng AI",
-    "Backlinks": "Mga backlink",
     "BuiltFrom": "Binuo mula sa",
     "Bulk": {
       "BannerMessage": "{{count}} bagong tala mula nang huling pagbuo",
@@ -3928,7 +3955,6 @@
     "RefreshFromSources": "I-refresh mula sa mga pinagmulan",
     "RefreshFromSourcesHint": "I-click upang i-refresh ang AI section mula sa {{count}} source note. Shift+click para basahin muli rin ang mga source note.",
     "RefreshFromSourcesTooltip": "I-refresh ang AI section mula sa {{count}} pinagmulang tala ngayon",
-    "RelatedPages": "Mga kaugnay na pahina",
     "SelectPage": "Pumili ng pahina",
     "SelectPageHint": "Pumili ng entity, tao, o paksa sa sidebar upang makita ang natutunan ng iyong wiki.",
     "SidebarTitle": "Wiki",
@@ -3999,7 +4025,7 @@
     "NewFolderPlaceholder": "Pangalan ng folder…",
     "NewPage": "Bagong wiki page",
     "Open": "Buksan",
-    "QuickOpen": "Quick open (⌘P)",
+    "QuickOpen": "Quick open ({{shortcut}})",
     "Rename": "Palitan ang pangalan",
     "SearchInTree": "I-filter sa puno",
     "SetDefaultEntity": "Itakda bilang default para sa mga bagong entity page",
@@ -4010,8 +4036,10 @@
     "SortDefault": "Default (filesystem order)",
     "SortModified": "Binago (pinakabago muna)",
     "SortName": "Pangalan (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "In-edit ng user"
+    "Title": "Lahat ng pahina",
+    "UserBadge": "In-edit ng user",
+    "PageCount_one": "{{count}} pahina",
+    "PageCount_other": "{{count}} pahina"
   },
   "Wikilink": {
     "Broken": "Wala sa workspace na ito ang [[{{name}}]]",
@@ -4444,7 +4472,17 @@
     "CloudUpdateRequested": "Hiniling ang update — darating ito sa pamamagitan ng sync.",
     "SearchEntitiesPlaceholder": "Maghanap ng tao, paksa at pulong",
     "MemorySubtitle": "Awtomatikong binuo mula sa iyong mga recording — ang mga tao, paksa, at organisasyong tinatalakay mo, bawat isa ay hinango sa isang pahinang nag-a-update habang mas marami kang nire-record.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Mga tao",
+    "StatOrgs": "Mga organisasyon",
+    "StatTopics": "Mga paksa",
+    "KindPerson": "Tao",
+    "KindOrg": "Organisasyon",
+    "KindTopic": "Paksa",
+    "SourceCount_one": "{{count}} pinagmulan",
+    "SourceCount_other": "{{count}} pinagmulan",
+    "SeeAll": "Tingnan lahat",
+    "DefaultWorkspaceNote": "Kapag binuksan ang Memory, lilipat ka sa iyong Default na workspace."
   },
   "WikiPage": {
     "CorrectThis": "Itama ito",
@@ -4452,7 +4490,20 @@
     "CorrectionFailed": "Hindi na-save — subukan muli.",
     "CorrectionPending": "Itinama mo — naghihintay ng muling pagsulat.",
     "Saving": "Sine-save…",
-    "SubmitCorrection": "Ipasa ang pagtatama"
+    "SubmitCorrection": "Ipasa ang pagtatama",
+    "Related": "Kaugnay",
+    "Sources": "Mga pinagkunan",
+    "CiteLabel": "Pinagkunan {{n}}",
+    "FromMeetings_one": "Mula sa {{count}} pulong",
+    "FromMeetings_other": "Mula sa {{count}} pulong",
+    "AndNotes_one": "at {{count}} tala",
+    "AndNotes_other": "at {{count}} tala",
+    "FromNotes_one": "Mula sa {{count}} tala",
+    "FromNotes_other": "Mula sa {{count}} tala"
+  },
+  "Memory": {
+    "AllPages": "Lahat ng pahina",
+    "ViewsLabel": "Mga view ng Memory"
   },
   "MemorySidebar": {
     "Home": "Home",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "Pangunahing nabigasyon",
     "Library": "Library",
-    "NotesWiki": "Mga tala",
     "Memory": "Memory",
     "Agent": "Agent",
     "Meetings": "Mga Pulong",
@@ -4567,13 +4617,9 @@
     "Help": "Tulong",
     "KeyboardShortcuts": "Mga keyboard shortcut",
     "ServiceStatus": "Status ng serbisyo",
-    "HelpSupport": "Tulong at Suporta",
-    "About": "Tungkol sa SeaMeet",
     "Settings": "Mga setting",
     "Account": "Account",
     "Notes": "Mga tala",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Mga tala o Wiki",
     "MoreScreenshotModes": "Iba pang paraan ng screenshot",
     "ScreenshotOptions": "Mga opsyon sa screenshot…",
     "ClickTakes": "Ang isang click ay kukuha ng: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "Mag-zoom out",
     "Theater": "Teatro",
     "FitWidth": "Iakma sa lapad"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Mga gabay",
+      "Contact": "Makipag-ugnayan"
+    },
+    "Nav": "Mga seksyon ng tulong",
+    "Guide": {
+      "WhatToExpect": "Ano ang aasahan sa Pribadong AI",
+      "WhatToExpectDesc": "Kung saan magaling ang on-device AI, kung saan ito mas mabagal, at kung ano ang kailangan nito.",
+      "ReleaseNotes": "Release notes ng bersyong ito",
+      "ReleaseNotesDesc": "Ano ang bago sa SeaMeet {{version}}."
+    }
   }
 }

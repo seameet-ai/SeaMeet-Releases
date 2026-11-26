@@ -2636,7 +2636,8 @@
     "UpdateWikiFromNote": "به‌روزرسانی ویکی از این یادداشت",
     "WikiUpdateFailed": "به‌روزرسانی ویکی ناموفق بود: {{error}}",
     "RecordingInFile": "ضبط پیوست‌شده به این یادداشت",
-    "RecordingInFolder": "ضبط داخل این پوشه"
+    "RecordingInFolder": "ضبط داخل این پوشه",
+    "Recent": "اخیر"
   },
   "NotesView": {
     "CollapseSidebar": "پنهان کردن نوار کناری یادداشت‌ها",
@@ -3353,11 +3354,10 @@
       "EmptyState": "هنوز برنامه‌ای تشخیص داده نشده است. زمانی که SeaMeet برنامه‌ای که از میکروفن استفاده می‌کند را تشخیص دهد، در اینجا ظاهر می‌شود.",
       "PathCopied": "مسیر در کلیپ‌بورد کپی شد",
       "PermissionHeader": "مجوزهای برنامه",
-      "Title": "مجوزهای برنامه"
+      "Title": "مجوزهای برنامه",
+      "RemoveApp": "حذف {{app}} از فهرست"
     },
     "Back": "بازگشت",
-    "DefaultUserName": "کاربر SeaMeet",
-    "FailedToCheckForUpdates": "بررسی بروزرسانی‌ها ناموفق بود",
     "GroupTitle": {
       "ApplicationInfo": "اطلاعات برنامه",
       "Automation": "اتوماسیون",
@@ -3368,7 +3368,6 @@
     },
     "Item": {
       "AutoRecording": "ضبط خودکار",
-      "Copyright": "کپی‌رایت",
       "ImproveTranslationHint": "به بهبود این ترجمه در GitHub → کمک کنید",
       "Language": "زبان",
       "MicrophoneGain": "سطح میکروفن",
@@ -3402,7 +3401,10 @@
       "DefaultPathLabel": "پوشه ذخیره پیش فرض",
       "Description": "پوشه پیش فرضی را که SeaMeet هنگام ذخیره خودکار ضبط ها استفاده می کند، انتخاب کنید.",
       "Save": "ذخیره کنید",
-      "Title": "تنظیمات ذخیره سازی"
+      "Title": "تنظیمات ذخیره سازی",
+      "SaveFailed": "تغییر پوشه ضبط‌ها ممکن نشد.",
+      "LockedWhileRecording": "پس از پایان این ضبط می‌توانید پوشه ضبط‌ها را تغییر دهید.",
+      "SaveHint": "برای تغییر پوشه ضبط‌ها، ذخیره کنید را بزنید."
     },
     "Theme": {
       "AdobeSand": "شن آدوبی",
@@ -3433,7 +3435,6 @@
       "WarmPaperDesc": "حالت روشن با رنگ‌های گرم کاغذ"
     },
     "Title": "تنظیمات",
-    "UserAvatarAlt": "کاربر",
     "ManagedByPlan": "در طرح Sync Pro شما گنجانده شده است — هوش مصنوعی روی ارائه‌دهندگان مدیریت‌شده توسط SeaMeet اجرا می‌شود. به کلید API نیازی نیست.",
     "AppMode": {
       "Title": "حالت برنامه",
@@ -3446,6 +3447,36 @@
       "ConfirmReload": "برنامه برای تغییر به SeaMeet Recorder بارگیری مجدد می‌شود. تنظیمات و ضبط‌های شما حفظ خواهند شد. ادامه می‌دهید؟",
       "SwitchFailed": "تغییر ناموفق بود: {{error}}",
       "Switch": "تغییر"
+    },
+    "Section": {
+      "General": "عمومی",
+      "Recording": "ضبط",
+      "Detection": "تشخیص جلسه",
+      "Ai": "هوش مصنوعی",
+      "Templates": "الگوهای خلاصه",
+      "Memory": "یادداشت‌ها و حافظه",
+      "Storage": "ذخیره‌سازی",
+      "Sync": "همگام‌سازی و پشتیبان‌گیری",
+      "Connections": "اتصال‌ها",
+      "About": "درباره"
+    },
+    "Nav": "بخش‌های تنظیمات",
+    "OpensInWindow": "در پنجره تنظیمات باز می‌شود.",
+    "SavedAsYouGo": "تغییرات همان لحظه ذخیره می‌شوند.",
+    "StartAtLoginFailed": "تغییر اجرا هنگام ورود ممکن نشد.",
+    "Recording": {
+      "RecordPageLink": "کیفیت، نرخ فریم، Launcher و Floater در صفحه ضبط هستند",
+      "Folder": "محل ذخیره ضبط‌ها"
+    },
+    "LanguageFailed": "تغییر زبان ممکن نشد.",
+    "Memory": {
+      "MemoryLink": "روشن یا خاموش کردن حافظه جلسه، و منابع ساخت آن",
+      "MemoryHint": "در بخش هوش مصنوعی.",
+      "WorkspacesLink": "فضاهای کاری",
+      "WorkspacesHint": "در نوار کناری یادداشت‌ها.",
+      "GitHubLink": "پشتیبان‌گیری از یادداشت‌ها در GitHub",
+      "GitHubHint": "در همگام‌سازی و پشتیبان‌گیری.",
+      "MemoryLinkLegacy": "ساخت حافظه از یادداشت‌ها و ضبط‌های شما"
     }
   },
   "SettingsModal": {
@@ -3502,7 +3533,8 @@
     "FullScreenshot": "عکس از کل صفحه",
     "MoveBetweenAreas": "جابه‌جایی بین نوار، فهرست و محتوا",
     "StopRecording": "توقف ضبط",
-    "PauseRecording": "توقف موقت یا ادامهٔ ضبط"
+    "PauseRecording": "توقف موقت یا ادامهٔ ضبط",
+    "AllPages": "همه صفحه‌ها (حافظه)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3752,12 +3784,10 @@
   },
   "UserMenu": {
     "ReferFriend": "دوستتان را دعوت کنید و یک ماه بگیرید",
-    "AboutSeaMeet": "درباره SeaMeet",
     "AccountSignedIn": "وارد شده است",
     "DisplayName": "کاربر",
     "EmailPlaceholder": "user@example.com",
     "Exit": "خروج از SeaMeet",
-    "HelpSupport": "راهنما و پشتیبانی",
     "HelpSupportSection": {
       "Discussion": "بحث و تبادل نظر",
       "DiscussionDesc": "به بحث جامعه بپیوندید (نیازمند حساب GitHub).",
@@ -3771,11 +3801,9 @@
       "JoinDiscussion": "شرکت در بحث",
       "SendEmail": "ارسال ایمیل",
       "SubmitIssue": "ارسال گزارش مشکل",
-      "VisitWiki": "بازدید از ویکی",
       "Wiki": "ویکی‌پدیا",
       "WikiDesc": "مستندات و راهنماهای SeaMeet را در ویکی‌پدیا بررسی کنید."
     },
-    "KeyboardShortcuts": "میانبرهای صفحه کلید",
     "RefreshWorkspaces": "به‌روزرسانی فضاهای کاری",
     "SeaMeetSignIn": "ورود به SeaMeet Enterprise (مبتنی بر ربات)",
     "SeaMeetSignOut": "خروج از SeaMeet Enterprise (مبتنی بر ربات)",
@@ -3855,7 +3883,6 @@
     "AIBadgeTooltip": "محتوای تولیدشده توسط هوش مصنوعی",
     "AIEmpty": "هنوز محتوایی توسط هوش مصنوعی وجود ندارد. به یادداشتی که از این موجودیت یاد می‌کند یک ضبط یا اسکرین‌شات اضافه کنید و سپس به‌روزرسانی ویکی را اجرا کنید.",
     "AISection": "بخش هوش مصنوعی",
-    "Backlinks": "پیوندهای بازگشتی",
     "BuiltFrom": "ساخته‌شده از",
     "Bulk": {
       "BannerMessage": "{{count}} یادداشت جدید از آخرین ساخت",
@@ -3928,7 +3955,6 @@
     "RefreshFromSources": "به‌روزرسانی از منابع",
     "RefreshFromSourcesHint": "برای به‌روزرسانی بخش هوش مصنوعی از {{count}} یادداشت منبع کلیک کنید. Shift+کلیک یادداشت‌های منبع را نیز بازخوانی می‌کند.",
     "RefreshFromSourcesTooltip": "به‌روزرسانی فوری بخش هوش مصنوعی از {{count}} یادداشت منبع",
-    "RelatedPages": "صفحات مرتبط",
     "SelectPage": "صفحه‌ای را انتخاب کنید",
     "SelectPageHint": "از نوار کناری یک موجودیت، شخص یا موضوع را انتخاب کنید تا ببینید ویکی شما چه چیزی آموخته است.",
     "SidebarTitle": "ویکی",
@@ -3999,7 +4025,7 @@
     "NewFolderPlaceholder": "نام پوشه…",
     "NewPage": "صفحهٔ ویکی جدید",
     "Open": "باز کردن",
-    "QuickOpen": "باز کردن سریع (⌘P)",
+    "QuickOpen": "باز کردن سریع ({{shortcut}})",
     "Rename": "تغییر نام",
     "SearchInTree": "فیلتر در درخت",
     "SetDefaultEntity": "تنظیم به‌عنوان پیش‌فرض برای صفحات entity جدید",
@@ -4010,8 +4036,10 @@
     "SortDefault": "پیش‌فرض (ترتیب فایل‌سیستم)",
     "SortModified": "تغییریافته (جدیدترین اول)",
     "SortName": "نام (A → Z)",
-    "Title": "ویکی",
-    "UserBadge": "ویرایش‌شده توسط کاربر"
+    "Title": "همه صفحه‌ها",
+    "UserBadge": "ویرایش‌شده توسط کاربر",
+    "PageCount_one": "{{count}} صفحه",
+    "PageCount_other": "{{count}} صفحه"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] در این فضای کاری وجود ندارد",
@@ -4444,7 +4472,17 @@
     "CloudUpdateRequested": "به‌روزرسانی درخواست شد — از طریق همگام‌سازی می‌رسد.",
     "SearchEntitiesPlaceholder": "جستجوی افراد، موضوعات و جلسات",
     "MemorySubtitle": "به‌طور خودکار از ضبط‌های شما ساخته می‌شود — افراد، موضوعات و سازمان‌هایی که درباره‌شان صحبت می‌کنید، هرکدام در صفحه‌ای خلاصه می‌شوند که با ضبط بیشتر به‌روز می‌شود.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "افراد",
+    "StatOrgs": "سازمان‌ها",
+    "StatTopics": "موضوع‌ها",
+    "KindPerson": "فرد",
+    "KindOrg": "سازمان",
+    "KindTopic": "موضوع",
+    "SourceCount_one": "{{count}} منبع",
+    "SourceCount_other": "{{count}} منبع",
+    "SeeAll": "مشاهده همه",
+    "DefaultWorkspaceNote": "با باز کردن حافظه، به فضای کاری پیش‌فرض خود منتقل می‌شوید."
   },
   "WikiPage": {
     "CorrectThis": "اصلاح کن",
@@ -4452,7 +4490,20 @@
     "CorrectionFailed": "ذخیره نشد — دوباره تلاش کن.",
     "CorrectionPending": "توسط شما اصلاح شد — بازنویسی در انتظار است.",
     "Saving": "در حال ذخیره…",
-    "SubmitCorrection": "ارسال اصلاح"
+    "SubmitCorrection": "ارسال اصلاح",
+    "Related": "مرتبط",
+    "Sources": "منابع",
+    "CiteLabel": "منبع {{n}}",
+    "FromMeetings_one": "از {{count}} جلسه",
+    "FromMeetings_other": "از {{count}} جلسه",
+    "AndNotes_one": "و {{count}} یادداشت",
+    "AndNotes_other": "و {{count}} یادداشت",
+    "FromNotes_one": "از {{count}} یادداشت",
+    "FromNotes_other": "از {{count}} یادداشت"
+  },
+  "Memory": {
+    "AllPages": "همه صفحه‌ها",
+    "ViewsLabel": "نماهای حافظه"
   },
   "MemorySidebar": {
     "Home": "خانه",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "ناوبری اصلی",
     "Library": "کتابخانه",
-    "NotesWiki": "یادداشت‌ها",
     "Memory": "حافظه",
     "Agent": "دستیار",
     "Meetings": "جلسه‌های متصل",
@@ -4567,13 +4617,9 @@
     "Help": "راهنما",
     "KeyboardShortcuts": "میانبرهای صفحه کلید",
     "ServiceStatus": "وضعیت سرویس",
-    "HelpSupport": "راهنما و پشتیبانی",
-    "About": "درباره SeaMeet",
     "Settings": "تنظیمات",
     "Account": "حساب",
     "Notes": "یادداشت‌ها",
-    "Wiki": "ویکی",
-    "NotesOrWiki": "یادداشت‌ها یا ویکی",
     "MoreScreenshotModes": "روش‌های دیگر عکس صفحه",
     "ScreenshotOptions": "گزینه‌های عکس صفحه…",
     "ClickTakes": "یک کلیک می‌گیرد: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "کوچک‌نمایی",
     "Theater": "حالت سینما",
     "FitWidth": "متناسب با عرض"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "راهنماها",
+      "Contact": "تماس"
+    },
+    "Nav": "بخش‌های راهنما",
+    "Guide": {
+      "WhatToExpect": "از هوش مصنوعی خصوصی چه انتظاری داشته باشید",
+      "WhatToExpectDesc": "هوش مصنوعی روی دستگاه در چه کاری خوب است، کجا کندتر است و به چه نیاز دارد.",
+      "ReleaseNotes": "یادداشت‌های انتشار این نسخه",
+      "ReleaseNotesDesc": "تازه‌های SeaMeet {{version}}."
+    }
   }
 }

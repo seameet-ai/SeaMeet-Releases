@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "このノートから Wiki を更新",
     "WikiUpdateFailed": "Wiki の更新に失敗しました: {{error}}",
     "RecordingInFile": "このノートに添付された録音",
-    "RecordingInFolder": "このフォルダー内の録音"
+    "RecordingInFolder": "このフォルダー内の録音",
+    "Recent": "最近"
   },
   "NotesView": {
     "CollapseSidebar": "ノートサイドバーを隠す",
@@ -3356,11 +3357,10 @@
       "EmptyState": "まだアプリが検出されていません。SeaMeetがマイクを使用しているアプリを検出すると、ここに表示されます。",
       "PathCopied": "パスをクリップボードにコピーしました",
       "PermissionHeader": "アプリ権限",
-      "Title": "アプリ権限"
+      "Title": "アプリ権限",
+      "RemoveApp": "{{app}} をリストから削除"
     },
     "Back": "戻る",
-    "DefaultUserName": "SeaMeetユーザー",
-    "FailedToCheckForUpdates": "アップデートの確認に失敗しました",
     "GroupTitle": {
       "ApplicationInfo": "アプリ情報",
       "Automation": "自動化",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "自動録音",
-      "Copyright": "著作権",
       "ImproveTranslationHint": "GitHub でこの翻訳の改善にご協力ください →",
       "Language": "言語",
       "MicrophoneGain": "マイクゲイン",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "デフォルト保存フォルダー",
       "Description": "SeaMeetが自動的に録音を保存するときに使用するデフォルトのフォルダーを選択してください。",
       "Save": "保存する",
-      "Title": "ストレージ設定"
+      "Title": "ストレージ設定",
+      "SaveFailed": "録画フォルダーを変更できませんでした。",
+      "LockedWhileRecording": "この録画が終わると録画フォルダーを変更できます。",
+      "SaveHint": "録画フォルダーを変更するには「保存する」を押してください。"
     },
     "Theme": {
       "AdobeSand": "アドビサンド",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "温かみのある紙調ライトモード"
     },
     "Title": "設定",
-    "UserAvatarAlt": "ユーザー",
     "ManagedByPlan": "Sync Proプランに含まれています — AIはSeaMeetが管理するプロバイダーで動作します。APIキーは不要です。",
     "AppMode": {
       "Title": "アプリモード",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "SeaMeet Recorder に切り替えるためにアプリを再読み込みします。設定と録音はそのまま保持されます。続行しますか？",
       "SwitchFailed": "切り替えに失敗しました: {{error}}",
       "Switch": "切り替え"
+    },
+    "Section": {
+      "General": "一般",
+      "Recording": "録音",
+      "Detection": "会議の検出",
+      "Ai": "AI",
+      "Templates": "要約テンプレート",
+      "Memory": "ノートとメモリー",
+      "Storage": "ストレージ",
+      "Sync": "同期とバックアップ",
+      "Connections": "接続",
+      "About": "情報"
+    },
+    "Nav": "設定のセクション",
+    "OpensInWindow": "設定ウィンドウで開きます。",
+    "SavedAsYouGo": "変更はすぐに保存されます。",
+    "StartAtLoginFailed": "ログイン時に起動の設定を変更できませんでした。",
+    "Recording": {
+      "RecordPageLink": "画質、フレームレート、ランチャー、フローターは録画ページにあります",
+      "Folder": "録画の保存先"
+    },
+    "LanguageFailed": "言語を変更できませんでした。",
+    "Memory": {
+      "MemoryLink": "会議メモリーのオン／オフと、その作成元",
+      "MemoryHint": "AI セクションにあります。",
+      "WorkspacesLink": "ワークスペース",
+      "WorkspacesHint": "ノートのサイドバーにあります。",
+      "GitHubLink": "ノートを GitHub にバックアップ",
+      "GitHubHint": "同期とバックアップにあります。",
+      "MemoryLinkLegacy": "メモとレコーディングからメモリーを作成"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "全画面のスクリーンショット",
     "MoveBetweenAreas": "レール、リスト、コンテンツ間を移動",
     "StopRecording": "録音を停止",
-    "PauseRecording": "録音を一時停止／再開"
+    "PauseRecording": "録音を一時停止／再開",
+    "AllPages": "すべてのページ (メモリー)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "友達を招待して 1 か月分を獲得",
-    "AboutSeaMeet": "SeaMeet について",
     "AccountSignedIn": "サインインしました",
     "DisplayName": "ユーザー",
     "EmailPlaceholder": "user@example.com",
     "Exit": "終了",
-    "HelpSupport": "ヘルプ＆サポート",
     "HelpSupportSection": {
       "Discussion": "ディスカッション",
       "DiscussionDesc": "コミュニティディスカッションに参加（GitHubアカウントが必要です）",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "Discussionに参加",
       "SendEmail": "メールを送信",
       "SubmitIssue": "Issueを送信",
-      "VisitWiki": "Wiki をご覧ください",
       "Wiki": "Wiki",
       "WikiDesc": "SeaMeet のドキュメントやガイドについては、Wiki をご覧ください。"
     },
-    "KeyboardShortcuts": "キーボードショートカット",
     "RefreshWorkspaces": "ワークスペースを更新",
     "SeaMeetSignIn": "SeaMeet Enterprise（ボット型）にサインイン",
     "SeaMeetSignOut": "SeaMeet Enterprise（ボット型）からサインアウト",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "AI 生成コンテンツ",
     "AIEmpty": "AI コンテンツはまだありません。このエンティティに言及するノートに録音やスクリーンショットを追加してから、Wiki 更新を実行してください。",
     "AISection": "AI セクション",
-    "Backlinks": "バックリンク",
     "BuiltFrom": "構築元",
     "Bulk": {
       "BannerMessage": "前回ビルド以降の新規ノート {{count}} 件",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "ソースから更新",
     "RefreshFromSourcesHint": "{{count}} 件のソースノートから AI セクションを更新するにはクリック。Shift+クリックでソースノートも再読み込みします。",
     "RefreshFromSourcesTooltip": "{{count}} 件のソースノートから AI セクションを今すぐ更新",
-    "RelatedPages": "関連ページ",
     "SelectPage": "ページを選択",
     "SelectPageHint": "サイドバーからエンティティ、人物、トピックを選んで、Wiki に蓄積された内容を確認してください。",
     "SidebarTitle": "Wiki",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "フォルダ名…",
     "NewPage": "新しい wiki ページ",
     "Open": "開く",
-    "QuickOpen": "クイック オープン (⌘P)",
+    "QuickOpen": "クイック オープン ({{shortcut}})",
     "Rename": "名前を変更",
     "SearchInTree": "ツリーで絞り込み",
     "SetDefaultEntity": "新規エンティティページの既定の保存先に設定",
@@ -4013,8 +4039,10 @@
     "SortDefault": "デフォルト（ファイルシステム順）",
     "SortModified": "更新日時（新しい順）",
     "SortName": "名前（A → Z）",
-    "Title": "Wiki",
-    "UserBadge": "ユーザー編集"
+    "Title": "すべてのページ",
+    "UserBadge": "ユーザー編集",
+    "PageCount_one": "{{count}} ページ",
+    "PageCount_other": "{{count}} ページ"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] はこのワークスペースにありません",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "更新をリクエストしました — 同期で届きます。",
     "SearchEntitiesPlaceholder": "人物・トピック・会議を検索",
     "MemorySubtitle": "あなたの録音から自動的に作成されます。話題に上った人物・トピック・組織がそれぞれページにまとめられ、録音するほど更新されます。",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "人物",
+    "StatOrgs": "組織",
+    "StatTopics": "トピック",
+    "KindPerson": "人物",
+    "KindOrg": "組織",
+    "KindTopic": "トピック",
+    "SourceCount_one": "{{count}}件のソース",
+    "SourceCount_other": "{{count}}件のソース",
+    "SeeAll": "すべて表示",
+    "DefaultWorkspaceNote": "メモリーを開くと、デフォルトのワークスペースに切り替わります。"
   },
   "WikiPage": {
     "CorrectThis": "修正する",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "保存できませんでした — もう一度お試しください。",
     "CorrectionPending": "あなたが修正済み — 書き直し待ち。",
     "Saving": "保存中…",
-    "SubmitCorrection": "修正を送信"
+    "SubmitCorrection": "修正を送信",
+    "Related": "関連",
+    "Sources": "出典",
+    "CiteLabel": "出典 {{n}}",
+    "FromMeetings_one": "{{count}} 件の会議から",
+    "FromMeetings_other": "{{count}} 件の会議から",
+    "AndNotes_one": "と {{count}} 件のメモ",
+    "AndNotes_other": "と {{count}} 件のメモ",
+    "FromNotes_one": "{{count}} 件のメモから",
+    "FromNotes_other": "{{count}} 件のメモから"
+  },
+  "Memory": {
+    "AllPages": "すべてのページ",
+    "ViewsLabel": "メモリーの表示"
   },
   "MemorySidebar": {
     "Home": "ホーム",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "メインナビゲーション",
     "Library": "ライブラリ",
-    "NotesWiki": "ノート",
     "Memory": "メモリー",
     "Agent": "エージェント",
     "Meetings": "接続した会議",
@@ -4567,13 +4617,9 @@
     "Help": "ヘルプ",
     "KeyboardShortcuts": "キーボードショートカット",
     "ServiceStatus": "サービスの状態",
-    "HelpSupport": "ヘルプとサポート",
-    "About": "SeaMeet について",
     "Settings": "設定",
     "Account": "アカウント",
     "Notes": "ノート",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "ノートまたはWiki",
     "MoreScreenshotModes": "その他のスクリーンショット方法",
     "ScreenshotOptions": "スクリーンショットのオプション…",
     "ClickTakes": "クリックで撮影: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "縮小",
     "Theater": "シアターモード",
     "FitWidth": "幅に合わせる"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "ガイド",
+      "Contact": "お問い合わせ"
+    },
+    "Nav": "ヘルプのセクション",
+    "Guide": {
+      "WhatToExpect": "プライベートAIについて知っておくこと",
+      "WhatToExpectDesc": "デバイス上のAIが得意なこと、時間がかかること、必要なもの。",
+      "ReleaseNotes": "このバージョンのリリースノート",
+      "ReleaseNotesDesc": "SeaMeet {{version}} の新機能。"
+    }
   }
 }

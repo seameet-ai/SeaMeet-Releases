@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "從此筆記更新 Wiki",
     "WikiUpdateFailed": "Wiki 更新失敗：{{error}}",
     "RecordingInFile": "附加到此筆記的錄音",
-    "RecordingInFolder": "此資料夾中的錄音"
+    "RecordingInFolder": "此資料夾中的錄音",
+    "Recent": "最近"
   },
   "NotesView": {
     "CollapseSidebar": "隱藏筆記側欄",
@@ -3356,11 +3357,10 @@
       "EmptyState": "尚未偵測到任何應用程式。當 SeaMeet 偵測到使用您的麥克風的應用時，會出現在此處。",
       "PathCopied": "路徑已複製到剪貼簿",
       "PermissionHeader": "應用程式權限",
-      "Title": "應用程式權限"
+      "Title": "應用程式權限",
+      "RemoveApp": "從清單中移除 {{app}}"
     },
     "Back": "返回",
-    "DefaultUserName": "SeaMeet 使用者",
-    "FailedToCheckForUpdates": "無法檢查更新",
     "GroupTitle": {
       "ApplicationInfo": "應用程式資訊",
       "Automation": "自動化",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "自動錄製",
-      "Copyright": "版權",
       "ImproveTranslationHint": "在 GitHub 上幫助改進此翻譯 →",
       "Language": "語言",
       "MicrophoneGain": "麥克風增益",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "預設儲存資料夾",
       "Description": "選擇 SeaMeet 在自動儲存錄音時使用的預設資料夾。",
       "Save": "儲存",
-      "Title": "儲存設定"
+      "Title": "儲存設定",
+      "SaveFailed": "無法變更錄製資料夾。",
+      "LockedWhileRecording": "本次錄製結束後即可變更錄製資料夾。",
+      "SaveHint": "按「儲存」以變更錄製資料夾。"
     },
     "Theme": {
       "AdobeSand": "Adobe沙",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "溫暖紙質調亮色模式"
     },
     "Title": "設定",
-    "UserAvatarAlt": "使用者",
     "ManagedByPlan": "已包含在您的 Sync Pro 方案中 — AI 執行於 SeaMeet 託管的服務商上，無需 API 金鑰。",
     "AppMode": {
       "Title": "應用程式模式",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "應用程式將重新載入以切換至 SeaMeet 錄音器。您的設定與錄音將會保留。是否繼續？",
       "SwitchFailed": "切換失敗：{{error}}",
       "Switch": "切換"
+    },
+    "Section": {
+      "General": "一般",
+      "Recording": "錄製",
+      "Detection": "會議偵測",
+      "Ai": "AI",
+      "Templates": "摘要範本",
+      "Memory": "筆記與記憶",
+      "Storage": "儲存空間",
+      "Sync": "同步與備份",
+      "Connections": "連線",
+      "About": "關於"
+    },
+    "Nav": "設定分區",
+    "OpensInWindow": "在設定視窗中開啟。",
+    "SavedAsYouGo": "變更會即時儲存。",
+    "StartAtLoginFailed": "無法變更「登入時啟動」。",
+    "Recording": {
+      "RecordPageLink": "畫質、影格率、啟動器和浮動視窗在錄製頁面上",
+      "Folder": "錄製內容的儲存位置"
+    },
+    "LanguageFailed": "無法變更語言。",
+    "Memory": {
+      "MemoryLink": "開啟或關閉會議記憶，以及它的來源",
+      "MemoryHint": "在 AI 區段。",
+      "WorkspacesLink": "工作區",
+      "WorkspacesHint": "在筆記側邊欄中。",
+      "GitHubLink": "將筆記備份到 GitHub",
+      "GitHubHint": "在同步與備份中。",
+      "MemoryLinkLegacy": "從你的筆記和錄製內容建立記憶"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "全螢幕截圖",
     "MoveBetweenAreas": "在側欄、清單和內容之間切換",
     "StopRecording": "停止錄製",
-    "PauseRecording": "暫停或繼續錄製"
+    "PauseRecording": "暫停或繼續錄製",
+    "AllPages": "所有頁面 (記憶)"
   },
   "Sidebar": {
     "SharedBy": "由 {{name}} 共用"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "推薦朋友，賺一個月",
-    "AboutSeaMeet": "關於 SeaMeet",
     "AccountSignedIn": "已登入",
     "DisplayName": "使用者",
     "EmailPlaceholder": "user@example.com",
     "Exit": "離開",
-    "HelpSupport": "幫助與支援",
     "HelpSupportSection": {
       "Discussion": "討論",
       "DiscussionDesc": "請加入社群討論（需 GitHub 帳號）。",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "加入討論",
       "SendEmail": "發送電子郵件",
       "SubmitIssue": "提交問題",
-      "VisitWiki": "造訪 Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "請參閱 SeaMeet wiki 以獲取文件與指南。"
     },
-    "KeyboardShortcuts": "快捷鍵",
     "RefreshWorkspaces": "重新整理工作區",
     "SeaMeetSignIn": "登入 SeaMeet Enterprise（機器人型）",
     "SeaMeetSignOut": "登出 SeaMeet Enterprise（機器人型）",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "AI 生成的內容",
     "AIEmpty": "尚無 AI 內容。將錄音或截圖加入提及此實體的筆記，然後執行知識庫更新。",
     "AISection": "AI 區塊",
-    "Backlinks": "反向連結",
     "BuiltFrom": "建構自",
     "Bulk": {
       "BannerMessage": "上次建立後有 {{count}} 筆新筆記",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "從來源重新整理",
     "RefreshFromSourcesHint": "點擊從 {{count}} 個來源筆記重新整理 AI 區塊。Shift+點擊也會重新讀取來源筆記。",
     "RefreshFromSourcesTooltip": "立即從 {{count}} 個來源筆記重新整理 AI 區塊",
-    "RelatedPages": "相關頁面",
     "SelectPage": "選擇一個頁面",
     "SelectPageHint": "從側邊欄選擇實體、人物或主題，查看您的知識庫已學到的內容。",
     "SidebarTitle": "知識庫",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "資料夾名稱…",
     "NewPage": "新增 wiki 頁面",
     "Open": "開啟",
-    "QuickOpen": "快速開啟（⌘P）",
+    "QuickOpen": "快速開啟（{{shortcut}}）",
     "Rename": "重新命名",
     "SearchInTree": "在樹中篩選",
     "SetDefaultEntity": "設為新建實體頁面的預設位置",
@@ -4013,8 +4039,10 @@
     "SortDefault": "預設（檔案系統順序）",
     "SortModified": "修改時間（最新在前）",
     "SortName": "名稱（A → Z）",
-    "Title": "Wiki",
-    "UserBadge": "使用者編輯"
+    "Title": "所有頁面",
+    "UserBadge": "使用者編輯",
+    "PageCount_one": "{{count}} 個頁面",
+    "PageCount_other": "{{count}} 個頁面"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] 不在此工作區中",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "已請求更新——將透過同步送達。",
     "SearchEntitiesPlaceholder": "搜尋人物、主題與會議",
     "MemorySubtitle": "由您的錄音自動建立——您談論到的人物、主題與組織，各自提煉成一個頁面，並隨著您錄製更多內容而更新。",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "人物",
+    "StatOrgs": "組織",
+    "StatTopics": "主題",
+    "KindPerson": "人物",
+    "KindOrg": "組織",
+    "KindTopic": "主題",
+    "SourceCount_one": "{{count}} 個來源",
+    "SourceCount_other": "{{count}} 個來源",
+    "SeeAll": "查看全部",
+    "DefaultWorkspaceNote": "開啟記憶會切換到你的預設工作區。"
   },
   "WikiPage": {
     "CorrectThis": "修正",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "儲存失敗 — 請再試一次。",
     "CorrectionPending": "你已修正 — 等待重寫。",
     "Saving": "儲存中…",
-    "SubmitCorrection": "送出修正"
+    "SubmitCorrection": "送出修正",
+    "Related": "相關",
+    "Sources": "來源",
+    "CiteLabel": "來源 {{n}}",
+    "FromMeetings_one": "來自 {{count}} 場會議",
+    "FromMeetings_other": "來自 {{count}} 場會議",
+    "AndNotes_one": "和 {{count}} 則筆記",
+    "AndNotes_other": "和 {{count}} 則筆記",
+    "FromNotes_one": "來自 {{count}} 則筆記",
+    "FromNotes_other": "來自 {{count}} 則筆記"
+  },
+  "Memory": {
+    "AllPages": "所有頁面",
+    "ViewsLabel": "記憶檢視"
   },
   "MemorySidebar": {
     "Home": "首頁",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "主導航",
     "Library": "媒體庫",
-    "NotesWiki": "筆記",
     "Memory": "記憶",
     "Agent": "智慧助理",
     "Meetings": "已連結的會議",
@@ -4567,13 +4617,9 @@
     "Help": "說明",
     "KeyboardShortcuts": "快捷鍵",
     "ServiceStatus": "服務狀態",
-    "HelpSupport": "幫助與支援",
-    "About": "關於 SeaMeet",
     "Settings": "設定",
     "Account": "帳戶",
     "Notes": "筆記",
-    "Wiki": "知識庫",
-    "NotesOrWiki": "筆記或知識庫",
     "MoreScreenshotModes": "更多截圖方式",
     "ScreenshotOptions": "截圖選項…",
     "ClickTakes": "按一下即截圖：{{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "縮小",
     "Theater": "劇院模式",
     "FitWidth": "符合寬度"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "指南",
+      "Contact": "聯絡我們"
+    },
+    "Nav": "說明分區",
+    "Guide": {
+      "WhatToExpect": "私有 AI 須知",
+      "WhatToExpectDesc": "裝置端 AI 擅長什麼、哪裡較慢、需要什麼。",
+      "ReleaseNotes": "此版本的發行說明",
+      "ReleaseNotesDesc": "SeaMeet {{version}} 的新內容。"
+    }
   }
 }

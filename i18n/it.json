@@ -2641,7 +2641,8 @@
     "UpdateWikiFromNote": "Aggiorna wiki da questa nota",
     "WikiUpdateFailed": "Aggiornamento wiki non riuscito: {{error}}",
     "RecordingInFile": "Registrazione allegata a questa nota",
-    "RecordingInFolder": "Registrazione in questa cartella"
+    "RecordingInFolder": "Registrazione in questa cartella",
+    "Recent": "Recenti"
   },
   "NotesView": {
     "CollapseSidebar": "Nascondi barra laterale note",
@@ -3358,11 +3359,10 @@
       "EmptyState": "Nessuna applicazione rilevata finora. Quando SeaMeet rileva un'applicazione che utilizza il microfono, apparirà qui.",
       "PathCopied": "Percorso copiato negli Appunti",
       "PermissionHeader": "Permessi delle app",
-      "Title": "Autorizzazioni dell'app"
+      "Title": "Autorizzazioni dell'app",
+      "RemoveApp": "Rimuovi {{app}} dall’elenco"
     },
     "Back": "Indietro",
-    "DefaultUserName": "Nome utente SeaMeet",
-    "FailedToCheckForUpdates": "Impossibile verificare gli aggiornamenti",
     "GroupTitle": {
       "ApplicationInfo": "Info applicazione",
       "Automation": "Automazione",
@@ -3373,7 +3373,6 @@
     },
     "Item": {
       "AutoRecording": "Registrazione automatica",
-      "Copyright": "Copyright",
       "ImproveTranslationHint": "Aiutaci a migliorare questa traduzione su GitHub →",
       "Language": "Lingua",
       "MicrophoneGain": "Guadagno microfono",
@@ -3407,7 +3406,10 @@
       "DefaultPathLabel": "Cartella di salvataggio predefinita",
       "Description": "Scegli la cartella predefinita che SeaMeet utilizza per salvare automaticamente le registrazioni.",
       "Save": "Salva",
-      "Title": "Impostazioni di Storage"
+      "Title": "Impostazioni di Storage",
+      "SaveFailed": "Impossibile cambiare la cartella delle registrazioni.",
+      "LockedWhileRecording": "Potrai cambiare la cartella delle registrazioni al termine di questa registrazione.",
+      "SaveHint": "Premi Salva per cambiare la cartella delle registrazioni."
     },
     "Theme": {
       "AdobeSand": "Sabbia Adobe",
@@ -3438,7 +3440,6 @@
       "WarmPaperDesc": "Modalità chiara con toni carta calda"
     },
     "Title": "Impostazioni",
-    "UserAvatarAlt": "utente",
     "ManagedByPlan": "Incluso nel tuo piano Sync Pro — l'IA funziona su provider gestiti da SeaMeet. Nessuna chiave API necessaria.",
     "AppMode": {
       "Title": "Modalità app",
@@ -3451,6 +3452,36 @@
       "ConfirmReload": "L'app verrà ricaricata per passare a SeaMeet Recorder. Le tue impostazioni e le registrazioni rimarranno. Continuare?",
       "SwitchFailed": "Cambio non riuscito: {{error}}",
       "Switch": "Cambia"
+    },
+    "Section": {
+      "General": "Generale",
+      "Recording": "Registrazione",
+      "Detection": "Rilevamento riunioni",
+      "Ai": "IA",
+      "Templates": "Modelli di riepilogo",
+      "Memory": "Note e Memoria",
+      "Storage": "Archiviazione",
+      "Sync": "Sincronizzazione e backup",
+      "Connections": "Connessioni",
+      "About": "Informazioni"
+    },
+    "Nav": "Sezioni delle impostazioni",
+    "OpensInWindow": "Si apre nella finestra Impostazioni.",
+    "SavedAsYouGo": "Le modifiche vengono salvate mentre le fai.",
+    "StartAtLoginFailed": "Impossibile modificare l’avvio all’accesso.",
+    "Recording": {
+      "RecordPageLink": "Qualità, frequenza dei fotogrammi, Launcher e Floater sono nella pagina Registra",
+      "Folder": "Dove vengono salvate le registrazioni"
+    },
+    "LanguageFailed": "Impossibile cambiare la lingua.",
+    "Memory": {
+      "MemoryLink": "Memoria delle riunioni attiva o no, e da cosa viene costruita",
+      "MemoryHint": "Nella sezione IA.",
+      "WorkspacesLink": "Spazi di lavoro",
+      "WorkspacesHint": "Nella barra laterale di Note.",
+      "GitHubLink": "Esegui il backup delle note su GitHub",
+      "GitHubHint": "In Sincronizzazione e backup.",
+      "MemoryLinkLegacy": "Costruire la Memoria dalle tue note e registrazioni"
     }
   },
   "SettingsModal": {
@@ -3507,7 +3538,8 @@
     "FullScreenshot": "Schermata dell’intero schermo",
     "MoveBetweenAreas": "Spostati tra barra, elenco e contenuto",
     "StopRecording": "Interrompi registrazione",
-    "PauseRecording": "Metti in pausa o riprendi la registrazione"
+    "PauseRecording": "Metti in pausa o riprendi la registrazione",
+    "AllPages": "Tutte le pagine (Memoria)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3757,12 +3789,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Invita un amico, ottieni un mese",
-    "AboutSeaMeet": "Informazioni su SeaMeet",
     "AccountSignedIn": "Effettuato l'accesso",
     "DisplayName": "Utente",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Esci",
-    "HelpSupport": "Aiuto e supporto",
     "HelpSupportSection": {
       "Discussion": "Discussione",
       "DiscussionDesc": "Unisciti alla discussione della community (richiede un account GitHub).",
@@ -3776,11 +3806,9 @@
       "JoinDiscussion": "Partecipa alla discussione",
       "SendEmail": "Invia Email",
       "SubmitIssue": "Invia Problema",
-      "VisitWiki": "Visita Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Consulta la wiki di SeaMeet per documentazione e guide."
     },
-    "KeyboardShortcuts": "Scorciatoie da tastiera",
     "RefreshWorkspaces": "Aggiorna aree di lavoro",
     "SeaMeetSignIn": "Accedi a SeaMeet Enterprise (basato su bot)",
     "SeaMeetSignOut": "Esci da SeaMeet Enterprise (basato su bot)",
@@ -3860,7 +3888,6 @@
     "AIBadgeTooltip": "Contenuto generato dall'IA",
     "AIEmpty": "Nessun contenuto IA finora. Aggiungi una registrazione o una schermata a una nota che cita questa entità, quindi esegui l'aggiornamento del wiki.",
     "AISection": "Sezione IA",
-    "Backlinks": "Backlink",
     "BuiltFrom": "Costruito da",
     "Bulk": {
       "BannerMessage": "{{count}} nuove note dall’ultima build",
@@ -3933,7 +3960,6 @@
     "RefreshFromSources": "Aggiorna dalle fonti",
     "RefreshFromSourcesHint": "Clic per aggiornare la sezione AI da {{count}} nota/e fonte. Maiusc+clic rilegge anche le note fonte.",
     "RefreshFromSourcesTooltip": "Aggiorna ora la sezione AI da {{count}} nota/e fonte",
-    "RelatedPages": "Pagine correlate",
     "SelectPage": "Seleziona una pagina",
     "SelectPageHint": "Seleziona un'entità, una persona o un argomento dalla barra laterale per vedere ciò che il tuo wiki ha appreso.",
     "SidebarTitle": "Wiki",
@@ -4004,7 +4030,7 @@
     "NewFolderPlaceholder": "Nome cartella…",
     "NewPage": "Nuova pagina wiki",
     "Open": "Apri",
-    "QuickOpen": "Apertura rapida (⌘P)",
+    "QuickOpen": "Apertura rapida ({{shortcut}})",
     "Rename": "Rinomina",
     "SearchInTree": "Filtra nell’albero",
     "SetDefaultEntity": "Imposta come cartella predefinita per nuove pagine di entità",
@@ -4015,8 +4041,11 @@
     "SortDefault": "Predefinito (ordine del filesystem)",
     "SortModified": "Modificato (più recenti prima)",
     "SortName": "Nome (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "Modificato dall’utente"
+    "Title": "Tutte le pagine",
+    "UserBadge": "Modificato dall’utente",
+    "PageCount_one": "{{count}} pagina",
+    "PageCount_many": "{{count}} pagine",
+    "PageCount_other": "{{count}} pagine"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] non è in questo workspace",
@@ -4449,7 +4478,17 @@
     "CloudUpdateRequested": "Aggiornamento richiesto — arriverà tramite sincronizzazione.",
     "SearchEntitiesPlaceholder": "Cerca persone, argomenti e riunioni",
     "MemorySubtitle": "Creato automaticamente dalle tue registrazioni: le persone, gli argomenti e le organizzazioni di cui parli, ciascuno distillato in una pagina che si aggiorna man mano che registri.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Persone",
+    "StatOrgs": "Organizzazioni",
+    "StatTopics": "Argomenti",
+    "KindPerson": "Persona",
+    "KindOrg": "Organizzazione",
+    "KindTopic": "Argomento",
+    "SourceCount_one": "{{count}} fonte",
+    "SourceCount_other": "{{count}} fonti",
+    "SeeAll": "Vedi tutto",
+    "DefaultWorkspaceNote": "Aprendo la Memoria passi al tuo spazio di lavoro predefinito."
   },
   "WikiPage": {
     "CorrectThis": "Correggi",
@@ -4457,7 +4496,23 @@
     "CorrectionFailed": "Salvataggio non riuscito — riprova.",
     "CorrectionPending": "Corretto da te — riscrittura in attesa.",
     "Saving": "Salvataggio…",
-    "SubmitCorrection": "Invia correzione"
+    "SubmitCorrection": "Invia correzione",
+    "Related": "Correlati",
+    "Sources": "Fonti",
+    "CiteLabel": "Fonte {{n}}",
+    "FromMeetings_one": "Da {{count}} riunione",
+    "FromMeetings_many": "Da {{count}} riunioni",
+    "FromMeetings_other": "Da {{count}} riunioni",
+    "AndNotes_one": "e {{count}} nota",
+    "AndNotes_many": "e {{count}} note",
+    "AndNotes_other": "e {{count}} note",
+    "FromNotes_one": "Da {{count}} nota",
+    "FromNotes_many": "Da {{count}} note",
+    "FromNotes_other": "Da {{count}} note"
+  },
+  "Memory": {
+    "AllPages": "Tutte le pagine",
+    "ViewsLabel": "Viste di Memoria"
   },
   "MemorySidebar": {
     "Home": "Home",
@@ -4549,7 +4604,6 @@
   "Rail": {
     "Label": "Navigazione principale",
     "Library": "Libreria",
-    "NotesWiki": "Note",
     "Memory": "Memoria",
     "Agent": "Agente",
     "Meetings": "Riunioni collegate",
@@ -4573,13 +4627,9 @@
     "Help": "Aiuto",
     "KeyboardShortcuts": "Scorciatoie da tastiera",
     "ServiceStatus": "Stato dei servizi",
-    "HelpSupport": "Aiuto e supporto",
-    "About": "Informazioni su SeaMeet",
     "Settings": "Impostazioni",
     "Account": "Account",
     "Notes": "Note",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Note o wiki",
     "MoreScreenshotModes": "Altri modi di schermata",
     "ScreenshotOptions": "Opzioni schermata…",
     "ClickTakes": "Un clic cattura: {{mode}}",
@@ -5750,5 +5800,18 @@
     "ZoomOut": "Riduci",
     "Theater": "Modalità cinema",
     "FitWidth": "Adatta alla larghezza"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Guide",
+      "Contact": "Contatti"
+    },
+    "Nav": "Sezioni dell'aiuto",
+    "Guide": {
+      "WhatToExpect": "Cosa aspettarsi dall'IA privata",
+      "WhatToExpectDesc": "Cosa fa bene l'IA sul dispositivo, dove è più lenta e di cosa ha bisogno.",
+      "ReleaseNotes": "Note di rilascio di questa versione",
+      "ReleaseNotesDesc": "Novità di SeaMeet {{version}}."
+    }
   }
 }

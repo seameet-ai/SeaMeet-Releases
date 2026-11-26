@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "อัปเดตวิกิจากบันทึกนี้",
     "WikiUpdateFailed": "อัปเดตวิกิไม่สำเร็จ: {{error}}",
     "RecordingInFile": "การบันทึกที่แนบกับโน้ตนี้",
-    "RecordingInFolder": "การบันทึกในโฟลเดอร์นี้"
+    "RecordingInFolder": "การบันทึกในโฟลเดอร์นี้",
+    "Recent": "ล่าสุด"
   },
   "NotesView": {
     "CollapseSidebar": "ซ่อนแถบด้านข้างบันทึก",
@@ -3356,11 +3357,10 @@
       "EmptyState": "ยังไม่มีแอปที่ตรวจจับได้ เมื่อ SeaMeet ตรวจจับแอปที่ใช้ไมโครโฟนของคุณ จะแสดงที่นี่.",
       "PathCopied": "สำเนาเส้นทางไปยังคลิปบอร์ด",
       "PermissionHeader": "การอนุญาตแอป",
-      "Title": "การอนุญาตแอป"
+      "Title": "การอนุญาตแอป",
+      "RemoveApp": "นำ {{app}} ออกจากรายการ"
     },
     "Back": "กลับ",
-    "DefaultUserName": "SeaMeet ผู้ใช้",
-    "FailedToCheckForUpdates": "ล้มเหลวในการตรวจสอบการอัปเดต",
     "GroupTitle": {
       "ApplicationInfo": "ข้อมูลแอปพลิเคชัน",
       "Automation": "การทำงานอัตโนมัติ",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "การบันทึกเสียงอัตโนมัติ",
-      "Copyright": "ลิขสิทธิ์ของแอปพลิเคชัน",
       "ImproveTranslationHint": "ช่วยปรับปรุงการแปลนี้บน GitHub →",
       "Language": "ภาษา",
       "MicrophoneGain": "ระดับไมโครโฟน",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "โฟลเดอร์เก็บข้อมูลเริ่มต้น",
       "Description": "เลือกโฟลเดอร์เริ่มต้นสำหรับบันทึกเสียงอัตโนมัติของ SeaMeet",
       "Save": "บันทึก",
-      "Title": "การตั้งค่าที่เก็บข้อมูล"
+      "Title": "การตั้งค่าที่เก็บข้อมูล",
+      "SaveFailed": "ไม่สามารถเปลี่ยนโฟลเดอร์บันทึกได้",
+      "LockedWhileRecording": "คุณเปลี่ยนโฟลเดอร์บันทึกได้เมื่อการบันทึกนี้สิ้นสุดลง",
+      "SaveHint": "กดบันทึกเพื่อเปลี่ยนโฟลเดอร์บันทึก"
     },
     "Theme": {
       "AdobeSand": "ทรายอะโดบี",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "โหมดสว่างโทนกระดาษอบอุ่น"
     },
     "Title": "ตั้งค่าระบบ",
-    "UserAvatarAlt": "ผู้ใช้",
     "ManagedByPlan": "รวมอยู่ในแพ็กเกจ Sync Pro ของคุณ — AI ทำงานบนผู้ให้บริการที่ SeaMeet จัดการให้ ไม่ต้องใช้คีย์ API",
     "AppMode": {
       "Title": "โหมดแอพ",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "แอพจะโหลดใหม่เพื่อเปลี่ยนเป็น SeaMeet Recorder การตั้งค่าและการบันทึกของคุณจะยังคงอยู่ ดำเนินการต่อหรือไม่?",
       "SwitchFailed": "เปลี่ยนไม่สำเร็จ: {{error}}",
       "Switch": "เปลี่ยน"
+    },
+    "Section": {
+      "General": "ทั่วไป",
+      "Recording": "การบันทึก",
+      "Detection": "การตรวจจับการประชุม",
+      "Ai": "AI",
+      "Templates": "เทมเพลตสรุป",
+      "Memory": "โน้ตและความทรงจำ",
+      "Storage": "ที่เก็บข้อมูล",
+      "Sync": "ซิงค์และสำรองข้อมูล",
+      "Connections": "การเชื่อมต่อ",
+      "About": "เกี่ยวกับ"
+    },
+    "Nav": "ส่วนการตั้งค่า",
+    "OpensInWindow": "เปิดในหน้าต่างตั้งค่าระบบ",
+    "SavedAsYouGo": "การเปลี่ยนแปลงจะถูกบันทึกทันที",
+    "StartAtLoginFailed": "ไม่สามารถเปลี่ยนการเริ่มเมื่อเข้าสู่ระบบได้",
+    "Recording": {
+      "RecordPageLink": "คุณภาพ อัตราเฟรม Launcher และ Floater อยู่ในหน้าบันทึก",
+      "Folder": "ตำแหน่งที่บันทึกไฟล์"
+    },
+    "LanguageFailed": "ไม่สามารถเปลี่ยนภาษาได้",
+    "Memory": {
+      "MemoryLink": "เปิดหรือปิดความทรงจำการประชุม และแหล่งที่ใช้สร้าง",
+      "MemoryHint": "ในส่วน AI",
+      "WorkspacesLink": "พื้นที่ทำงาน",
+      "WorkspacesHint": "ในแถบด้านข้างของโน้ต",
+      "GitHubLink": "สำรองโน้ตไปยัง GitHub",
+      "GitHubHint": "ในซิงค์และสำรองข้อมูล",
+      "MemoryLinkLegacy": "สร้างความทรงจำจากโน้ตและการบันทึกของคุณ"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "ภาพหน้าจอเต็มจอ",
     "MoveBetweenAreas": "สลับระหว่างแถบ รายการ และเนื้อหา",
     "StopRecording": "หยุดบันทึก",
-    "PauseRecording": "หยุดชั่วคราวหรือบันทึกต่อ"
+    "PauseRecording": "หยุดชั่วคราวหรือบันทึกต่อ",
+    "AllPages": "ทุกหน้า (ความทรงจำ)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "แนะนำเพื่อน รับฟรีหนึ่งเดือน",
-    "AboutSeaMeet": "เกี่ยวกับ SeaMeet",
     "AccountSignedIn": "ลงชื่อเข้าใช้แล้ว",
     "DisplayName": "ผู้ใช้",
     "EmailPlaceholder": "user@example.com",
     "Exit": "ออก",
-    "HelpSupport": "ช่วยเหลือและสนับสนุน",
     "HelpSupportSection": {
       "Discussion": "เข้าร่วมการสนทนา",
       "DiscussionDesc": "เข้าร่วมการสนทนาชุมชน (ต้องมีบัญชี GitHub)",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "เข้าร่วมการสนทนา",
       "SendEmail": "ส่งอีเมล",
       "SubmitIssue": "ส่งรายงานปัญหา",
-      "VisitWiki": "เยี่ยมชมวิกิ",
       "Wiki": "เอกสาร",
       "WikiDesc": "ดูเอกสารและคำแนะนำใน SeaMeet wiki"
     },
-    "KeyboardShortcuts": "คีย์ลัด",
     "RefreshWorkspaces": "รีเฟรชพื้นที่ทำงาน",
     "SeaMeetSignIn": "ลงชื่อเข้าใช้ SeaMeet Enterprise (แบบใช้บอท)",
     "SeaMeetSignOut": "ออกจากระบบ SeaMeet Enterprise (แบบใช้บอท)",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "เนื้อหาที่สร้างโดย AI",
     "AIEmpty": "ยังไม่มีเนื้อหา AI เพิ่มการบันทึกหรือภาพหน้าจอลงในบันทึกที่กล่าวถึงเอนทิตีนี้ จากนั้นเรียกใช้การอัปเดตวิกิ",
     "AISection": "ส่วน AI",
-    "Backlinks": "ลิงก์ย้อนกลับ",
     "BuiltFrom": "สร้างจาก",
     "Bulk": {
       "BannerMessage": "มีบันทึกใหม่ {{count}} รายการตั้งแต่การสร้างล่าสุด",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "รีเฟรชจากแหล่งที่มา",
     "RefreshFromSourcesHint": "คลิกเพื่อรีเฟรชส่วน AI จากบันทึกแหล่งที่มา {{count}} รายการ Shift+คลิกจะอ่านบันทึกแหล่งที่มาใหม่ด้วย",
     "RefreshFromSourcesTooltip": "รีเฟรชส่วน AI จากบันทึกต้นทาง {{count}} รายการเดี๋ยวนี้",
-    "RelatedPages": "หน้าที่เกี่ยวข้อง",
     "SelectPage": "เลือกหน้า",
     "SelectPageHint": "เลือกเอนทิตี บุคคล หรือหัวข้อจากแถบด้านข้างเพื่อดูสิ่งที่วิกิของคุณเรียนรู้แล้ว",
     "SidebarTitle": "วิกิ",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "ชื่อโฟลเดอร์…",
     "NewPage": "หน้า wiki ใหม่",
     "Open": "เปิด",
-    "QuickOpen": "เปิดด่วน (⌘P)",
+    "QuickOpen": "เปิดด่วน ({{shortcut}})",
     "Rename": "เปลี่ยนชื่อ",
     "SearchInTree": "กรองในแผนผัง",
     "SetDefaultEntity": "ตั้งเป็นค่าเริ่มต้นสำหรับหน้า entity ใหม่",
@@ -4013,8 +4039,10 @@
     "SortDefault": "ค่าเริ่มต้น (ลำดับของระบบไฟล์)",
     "SortModified": "แก้ไข (ใหม่สุดก่อน)",
     "SortName": "ชื่อ (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "ผู้ใช้แก้ไข"
+    "Title": "ทุกหน้า",
+    "UserBadge": "ผู้ใช้แก้ไข",
+    "PageCount_one": "{{count}} หน้า",
+    "PageCount_other": "{{count}} หน้า"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] ไม่อยู่ในพื้นที่ทำงานนี้",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "ขออัปเดตแล้ว — จะมาถึงผ่านการซิงค์",
     "SearchEntitiesPlaceholder": "ค้นหาบุคคล หัวข้อ และการประชุม",
     "MemorySubtitle": "สร้างขึ้นโดยอัตโนมัติจากการบันทึกของคุณ — บุคคล หัวข้อ และองค์กรที่คุณพูดถึง แต่ละรายการถูกกลั่นเป็นหน้าที่อัปเดตเมื่อคุณบันทึกเพิ่มขึ้น",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "บุคคล",
+    "StatOrgs": "องค์กร",
+    "StatTopics": "หัวข้อ",
+    "KindPerson": "บุคคล",
+    "KindOrg": "องค์กร",
+    "KindTopic": "หัวข้อ",
+    "SourceCount_one": "{{count}} แหล่งที่มา",
+    "SourceCount_other": "{{count}} แหล่งที่มา",
+    "SeeAll": "ดูทั้งหมด",
+    "DefaultWorkspaceNote": "การเปิดความทรงจำจะสลับไปยังพื้นที่ทำงานค่าเริ่มต้นของคุณ"
   },
   "WikiPage": {
     "CorrectThis": "แก้ไขข้อนี้",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "บันทึกไม่สำเร็จ — ลองอีกครั้ง",
     "CorrectionPending": "คุณแก้ไขแล้ว — รอการเขียนใหม่",
     "Saving": "กำลังบันทึก…",
-    "SubmitCorrection": "ส่งการแก้ไข"
+    "SubmitCorrection": "ส่งการแก้ไข",
+    "Related": "ที่เกี่ยวข้อง",
+    "Sources": "แหล่งที่มา",
+    "CiteLabel": "แหล่งที่มา {{n}}",
+    "FromMeetings_one": "จากการประชุม {{count}} ครั้ง",
+    "FromMeetings_other": "จากการประชุม {{count}} ครั้ง",
+    "AndNotes_one": "และบันทึก {{count}} รายการ",
+    "AndNotes_other": "และบันทึก {{count}} รายการ",
+    "FromNotes_one": "จากบันทึก {{count}} รายการ",
+    "FromNotes_other": "จากบันทึก {{count}} รายการ"
+  },
+  "Memory": {
+    "AllPages": "ทุกหน้า",
+    "ViewsLabel": "มุมมองความทรงจำ"
   },
   "MemorySidebar": {
     "Home": "หน้าหลัก",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "การนำทางหลัก",
     "Library": "คลังสื่อ",
-    "NotesWiki": "โน้ต",
     "Memory": "ความทรงจำ",
     "Agent": "ผู้ช่วย",
     "Meetings": "การประชุม",
@@ -4567,13 +4617,9 @@
     "Help": "ความช่วยเหลือ",
     "KeyboardShortcuts": "คีย์ลัด",
     "ServiceStatus": "สถานะบริการ",
-    "HelpSupport": "ช่วยเหลือและสนับสนุน",
-    "About": "เกี่ยวกับ SeaMeet",
     "Settings": "การตั้งค่า",
     "Account": "บัญชี",
     "Notes": "โน้ต",
-    "Wiki": "วิกิ",
-    "NotesOrWiki": "โน้ตหรือวิกิ",
     "MoreScreenshotModes": "วิธีจับภาพหน้าจออื่นๆ",
     "ScreenshotOptions": "ตัวเลือกภาพหน้าจอ…",
     "ClickTakes": "คลิกเดียวจะจับภาพ: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "ซูมออก",
     "Theater": "โหมดโรงภาพยนตร์",
     "FitWidth": "พอดีความกว้าง"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "คู่มือ",
+      "Contact": "ติดต่อ"
+    },
+    "Nav": "หัวข้อความช่วยเหลือ",
+    "Guide": {
+      "WhatToExpect": "สิ่งที่คาดหวังได้จาก AI ส่วนตัว",
+      "WhatToExpectDesc": "สิ่งที่ AI บนอุปกรณ์ทำได้ดี จุดที่ช้ากว่า และสิ่งที่ต้องใช้",
+      "ReleaseNotes": "บันทึกประจำรุ่นนี้",
+      "ReleaseNotesDesc": "มีอะไรใหม่ใน SeaMeet {{version}}"
+    }
   }
 }

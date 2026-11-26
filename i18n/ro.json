@@ -2645,7 +2645,8 @@
     "UpdateWikiFromNote": "Actualizează wiki din această notă",
     "WikiUpdateFailed": "Actualizarea wiki a eșuat: {{error}}",
     "RecordingInFile": "Înregistrare atașată la această notiță",
-    "RecordingInFolder": "Înregistrare în acest folder"
+    "RecordingInFolder": "Înregistrare în acest folder",
+    "Recent": "Recente"
   },
   "NotesView": {
     "CollapseSidebar": "Ascunde bara laterală notițe",
@@ -3363,11 +3364,10 @@
       "EmptyState": "Nici o aplicație detectată încă. Când SeaMeet detectează o aplicație care folosește microfonul tău, va apărea aici.",
       "PathCopied": "Calea a fost copiată în clipboard",
       "PermissionHeader": "Permisiuni ale aplicației",
-      "Title": "Permisiuni pentru aplicații"
+      "Title": "Permisiuni pentru aplicații",
+      "RemoveApp": "Elimină {{app}} din listă"
     },
     "Back": "Întoarcere",
-    "DefaultUserName": "Utilizator SeaMeet",
-    "FailedToCheckForUpdates": "Nu s-a putut verifica dacă există actualizări",
     "GroupTitle": {
       "ApplicationInfo": "Informații despre aplicație",
       "Automation": "Automatizare",
@@ -3378,7 +3378,6 @@
     },
     "Item": {
       "AutoRecording": "Înregistrare automată",
-      "Copyright": "Drepturi de autor",
       "ImproveTranslationHint": "Ajutați la îmbunătățirea acestei traduceri pe GitHub →",
       "Language": "Limbă",
       "MicrophoneGain": "Amplificare microfon",
@@ -3412,7 +3411,10 @@
       "DefaultPathLabel": "Cale implicită de salvare",
       "Description": "Selectează folderul implicit folosit de SeaMeet pentru salvarea automată a înregistrărilor",
       "Save": "Salvează",
-      "Title": "Setări pentru stocare"
+      "Title": "Setări pentru stocare",
+      "SaveFailed": "Nu s-a putut schimba dosarul înregistrărilor.",
+      "LockedWhileRecording": "Poți schimba dosarul înregistrărilor după ce se termină această înregistrare.",
+      "SaveHint": "Apasă Salvează pentru a schimba dosarul înregistrărilor."
     },
     "Theme": {
       "AdobeSand": "Nisip Adobe",
@@ -3443,7 +3445,6 @@
       "WarmPaperDesc": "Mod deschis în nuanțe calde de hârtie"
     },
     "Title": "Setări",
-    "UserAvatarAlt": "utilizator",
     "ManagedByPlan": "Inclus în planul tău Sync Pro — AI rulează pe furnizori gestionați de SeaMeet. Nu sunt necesare chei API.",
     "AppMode": {
       "Title": "Modul aplicație",
@@ -3456,6 +3457,36 @@
       "ConfirmReload": "Aplicația se va reîncărca pentru a trece la SeaMeet Recorder. Setările și înregistrările tale vor fi păstrate. Continui?",
       "SwitchFailed": "Schimbarea a eșuat: {{error}}",
       "Switch": "Schimbă"
+    },
+    "Section": {
+      "General": "General",
+      "Recording": "Înregistrare",
+      "Detection": "Detectarea întâlnirilor",
+      "Ai": "AI",
+      "Templates": "Șabloane de rezumat",
+      "Memory": "Notițe și Memorie",
+      "Storage": "Stocare",
+      "Sync": "Sincronizare și backup",
+      "Connections": "Conexiuni",
+      "About": "Despre"
+    },
+    "Nav": "Secțiunile setărilor",
+    "OpensInWindow": "Se deschide în fereastra Setări.",
+    "SavedAsYouGo": "Modificările se salvează pe măsură ce le faci.",
+    "StartAtLoginFailed": "Nu s-a putut modifica pornirea la autentificare.",
+    "Recording": {
+      "RecordPageLink": "Calitatea, rata de cadre, Launcher și Floater sunt pe pagina Înregistrare",
+      "Folder": "Unde se salvează înregistrările"
+    },
+    "LanguageFailed": "Nu s-a putut schimba limba.",
+    "Memory": {
+      "MemoryLink": "Memoria întâlnirilor pornită sau oprită, și din ce se construiește",
+      "MemoryHint": "În secțiunea AI.",
+      "WorkspacesLink": "Spații de lucru",
+      "WorkspacesHint": "În bara laterală Notițe.",
+      "GitHubLink": "Fă backup notițelor pe GitHub",
+      "GitHubHint": "În Sincronizare și backup.",
+      "MemoryLinkLegacy": "Construirea Memoriei din notițele și înregistrările tale"
     }
   },
   "SettingsModal": {
@@ -3512,7 +3543,8 @@
     "FullScreenshot": "Captură a întregului ecran",
     "MoveBetweenAreas": "Treci între bară, listă și conținut",
     "StopRecording": "Oprește înregistrarea",
-    "PauseRecording": "Întrerupe sau reia înregistrarea"
+    "PauseRecording": "Întrerupe sau reia înregistrarea",
+    "AllPages": "Toate paginile (Memorie)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3762,12 +3794,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Recomandă un prieten, primești o lună",
-    "AboutSeaMeet": "Despre SeaMeet",
     "AccountSignedIn": "Conectat",
     "DisplayName": "Utilizator",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Ieșire",
-    "HelpSupport": "Ajutor & Suport",
     "HelpSupportSection": {
       "Discussion": "Discuţie",
       "DiscussionDesc": "Alăturați-vă discuției comunității (necesită un cont GitHub).",
@@ -3781,11 +3811,9 @@
       "JoinDiscussion": "Alăturați-vă discuției",
       "SendEmail": "Trimite e-mail",
       "SubmitIssue": "Trimiteți problema",
-      "VisitWiki": "Vizitați Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Consultați wiki-ul SeaMeet pentru documentație și ghiduri."
     },
-    "KeyboardShortcuts": "Scurtături de la tastatură",
     "RefreshWorkspaces": "Actualizează spațiile de lucru",
     "SeaMeetSignIn": "Conectați-vă la SeaMeet Enterprise (bazat pe boți)",
     "SeaMeetSignOut": "Deconectați-vă de la SeaMeet Enterprise (bazat pe boți)",
@@ -3865,7 +3893,6 @@
     "AIBadgeTooltip": "Conținut generat de AI",
     "AIEmpty": "Încă nu există conținut AI. Adaugă o înregistrare sau captură de ecran la o notiță care menționează această entitate, apoi rulează actualizarea wiki.",
     "AISection": "Secțiune AI",
-    "Backlinks": "Linkuri inverse",
     "BuiltFrom": "Construit din",
     "Bulk": {
       "BannerMessage": "{{count}} notițe noi de la ultima construcție",
@@ -3938,7 +3965,6 @@
     "RefreshFromSources": "Reîmprospătează din surse",
     "RefreshFromSourcesHint": "Faceți clic pentru a reîmprospăta secțiunea AI din {{count}} notițe sursă. Shift+clic recitește și notițele sursă.",
     "RefreshFromSourcesTooltip": "Reîmprospătează acum secțiunea AI din {{count}} notă(notițe) sursă",
-    "RelatedPages": "Pagini conexe",
     "SelectPage": "Alege o pagină",
     "SelectPageHint": "Selectează o entitate, persoană sau subiect din bara laterală pentru a vedea ce a învățat wiki-ul tău.",
     "SidebarTitle": "Wiki",
@@ -4009,7 +4035,7 @@
     "NewFolderPlaceholder": "Nume folder…",
     "NewPage": "Pagină wiki nouă",
     "Open": "Deschide",
-    "QuickOpen": "Deschidere rapidă (⌘P)",
+    "QuickOpen": "Deschidere rapidă ({{shortcut}})",
     "Rename": "Redenumește",
     "SearchInTree": "Filtrează în arbore",
     "SetDefaultEntity": "Setează ca implicit pentru pagini noi de entitate",
@@ -4020,8 +4046,11 @@
     "SortDefault": "Implicit (ordine filesystem)",
     "SortModified": "Modificat (cele mai noi primele)",
     "SortName": "Nume (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "Editat de utilizator"
+    "Title": "Toate paginile",
+    "UserBadge": "Editat de utilizator",
+    "PageCount_one": "{{count}} pagină",
+    "PageCount_few": "{{count}} pagini",
+    "PageCount_other": "{{count}} de pagini"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] nu există în acest spațiu de lucru",
@@ -4454,7 +4483,18 @@
     "CloudUpdateRequested": "Actualizare solicitată — va sosi prin sincronizare.",
     "SearchEntitiesPlaceholder": "Caută persoane, subiecte și întâlniri",
     "MemorySubtitle": "Creat automat din înregistrările tale — persoanele, subiectele și organizațiile pe care le discuți, fiecare distilat într-o pagină care se actualizează pe măsură ce înregistrezi mai mult.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Persoane",
+    "StatOrgs": "Organizații",
+    "StatTopics": "Subiecte",
+    "KindPerson": "Persoană",
+    "KindOrg": "Organizație",
+    "KindTopic": "Subiect",
+    "SourceCount_one": "{{count}} sursă",
+    "SourceCount_other": "{{count}} de surse",
+    "SourceCount_few": "{{count}} surse",
+    "SeeAll": "Vezi tot",
+    "DefaultWorkspaceNote": "Deschiderea Memoriei trece la spațiul tău de lucru implicit."
   },
   "WikiPage": {
     "CorrectThis": "Corectează",
@@ -4462,7 +4502,23 @@
     "CorrectionFailed": "Salvarea a eșuat — încearcă din nou.",
     "CorrectionPending": "Corectat de tine — rescriere în așteptare.",
     "Saving": "Se salvează…",
-    "SubmitCorrection": "Trimite corectura"
+    "SubmitCorrection": "Trimite corectura",
+    "Related": "Similare",
+    "Sources": "Surse",
+    "CiteLabel": "Sursa {{n}}",
+    "FromMeetings_one": "Din {{count}} întâlnire",
+    "FromMeetings_few": "Din {{count}} întâlniri",
+    "FromMeetings_other": "Din {{count}} de întâlniri",
+    "AndNotes_one": "și {{count}} notiță",
+    "AndNotes_few": "și {{count}} notițe",
+    "AndNotes_other": "și {{count}} de notițe",
+    "FromNotes_one": "Din {{count}} notiță",
+    "FromNotes_few": "Din {{count}} notițe",
+    "FromNotes_other": "Din {{count}} de notițe"
+  },
+  "Memory": {
+    "AllPages": "Toate paginile",
+    "ViewsLabel": "Vizualizări Memorie"
   },
   "MemorySidebar": {
     "Home": "Acasă",
@@ -4551,7 +4607,6 @@
   "Rail": {
     "Label": "Navigație principală",
     "Library": "Bibliotecă",
-    "NotesWiki": "Notițe",
     "Memory": "Memorie",
     "Agent": "Agent",
     "Meetings": "Întâlniri conectate",
@@ -4575,13 +4630,9 @@
     "Help": "Ajutor",
     "KeyboardShortcuts": "Scurtături de la tastatură",
     "ServiceStatus": "Starea serviciilor",
-    "HelpSupport": "Ajutor și suport",
-    "About": "Despre SeaMeet",
     "Settings": "Setări",
     "Account": "Cont",
     "Notes": "Notițe",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Notițe sau wiki",
     "MoreScreenshotModes": "Alte moduri de captură",
     "ScreenshotOptions": "Opțiuni de captură…",
     "ClickTakes": "Un clic capturează: {{mode}}",
@@ -5752,5 +5803,18 @@
     "ZoomOut": "Micșorare",
     "Theater": "Mod teatru",
     "FitWidth": "Potrivire la lățime"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Ghiduri",
+      "Contact": "Contact"
+    },
+    "Nav": "Secțiuni de ajutor",
+    "Guide": {
+      "WhatToExpect": "Ce să aștepți de la AI privat",
+      "WhatToExpectDesc": "La ce se pricepe AI pe dispozitiv, unde e mai lent și de ce are nevoie.",
+      "ReleaseNotes": "Notele acestei versiuni",
+      "ReleaseNotesDesc": "Ce este nou în SeaMeet {{version}}."
+    }
   }
 }

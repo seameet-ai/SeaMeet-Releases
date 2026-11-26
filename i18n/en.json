@@ -2421,7 +2421,8 @@
     "CloudPending": "Not downloaded",
     "GitUnsynced": "Not yet committed",
     "RecordingInFile": "Recording attached to this note",
-    "RecordingInFolder": "Recording inside this folder"
+    "RecordingInFolder": "Recording inside this folder",
+    "Recent": "Recent"
   },
   "NotesShowcase": {
     "Headline": "Notes that grow into a knowledge base",
@@ -3081,11 +3082,10 @@
       "EmptyState": "No apps detected yet. When SeaMeet detects an app using your microphone, it will appear here.",
       "PathCopied": "Path copied to clipboard",
       "PermissionHeader": "App Permissions",
-      "Title": "App Permissions"
+      "Title": "App Permissions",
+      "RemoveApp": "Remove {{app}} from list"
     },
     "Back": "Back",
-    "DefaultUserName": "SeaMeet User",
-    "FailedToCheckForUpdates": "Failed to check for updates",
     "GroupTitle": {
       "ApplicationInfo": "Application Info",
       "Automation": "Automation",
@@ -3096,7 +3096,6 @@
     },
     "Item": {
       "AutoRecording": "Auto Recording",
-      "Copyright": "Copyright",
       "ImproveTranslationHint": "Help improve this translation on GitHub →",
       "Language": "Language",
       "MicrophoneGain": "Microphone Gain",
@@ -3130,7 +3129,10 @@
       "DefaultPathLabel": "Default Save Folder",
       "Description": "Choose the default folder SeaMeet uses when automatically saving recordings.",
       "Save": "Save",
-      "Title": "Storage Settings"
+      "Title": "Storage Settings",
+      "SaveFailed": "Could not change the recording folder.",
+      "LockedWhileRecording": "You can change the recording folder once this recording ends.",
+      "SaveHint": "Press Save to change the recording folder."
     },
     "Theme": {
       "AdobeSand": "Adobe Sand",
@@ -3161,7 +3163,6 @@
       "WarmPaperDesc": "Warm paper-toned light mode"
     },
     "Title": "Settings",
-    "UserAvatarAlt": "user",
     "ManagedByPlan": "Included with your Sync Pro plan — AI runs on SeaMeet-managed providers. No API keys needed.",
     "AppMode": {
       "Title": "App mode",
@@ -3174,6 +3175,36 @@
       "ConfirmReload": "The app will reload to switch to SeaMeet Recorder. Your settings and recordings will stay. Continue?",
       "SwitchFailed": "Switch failed: {{error}}",
       "Switch": "Switch"
+    },
+    "Section": {
+      "General": "General",
+      "Recording": "Recording",
+      "Detection": "Meeting detection",
+      "Ai": "AI",
+      "Templates": "Summary templates",
+      "Memory": "Notes and Memory",
+      "Storage": "Storage",
+      "Sync": "Sync and backup",
+      "Connections": "Connections",
+      "About": "About"
+    },
+    "Nav": "Settings sections",
+    "OpensInWindow": "Opens in the Settings window.",
+    "SavedAsYouGo": "Changes are saved as you make them.",
+    "StartAtLoginFailed": "Could not change Start at Login.",
+    "Recording": {
+      "RecordPageLink": "Quality, frame rate, Launcher and Floater are on the Record page",
+      "Folder": "Where recordings are saved"
+    },
+    "LanguageFailed": "Could not change the language.",
+    "Memory": {
+      "MemoryLink": "Meeting Memory on or off, and what it is built from",
+      "MemoryHint": "In the AI section.",
+      "WorkspacesLink": "Workspaces",
+      "WorkspacesHint": "In the Notes sidebar.",
+      "GitHubLink": "Back up notes to GitHub",
+      "GitHubHint": "In Sync and backup.",
+      "MemoryLinkLegacy": "Building Memory from your notes and recordings"
     }
   },
   "Shortcuts": {
@@ -3196,7 +3227,8 @@
     "FullScreenshot": "Full-screen screenshot",
     "MoveBetweenAreas": "Move between the rail, list and content",
     "StopRecording": "Stop Recording",
-    "PauseRecording": "Pause or Resume Recording"
+    "PauseRecording": "Pause or Resume Recording",
+    "AllPages": "All pages (Memory)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3286,7 +3318,6 @@
   },
   "UserMenu": {
     "ReferFriend": "Refer a friend, get a month",
-    "AboutSeaMeet": "About SeaMeet",
     "DisplayName": "User",
     "EmailPlaceholder": "user@example.com",
     "Exit": "Exit",
@@ -3294,7 +3325,6 @@
     "WorkspaceLoading": "Loading workspaces…",
     "WorkspaceNone": "No workspaces available",
     "WorkspaceError": "Failed to load workspaces",
-    "HelpSupport": "Help & Support",
     "HelpSupportSection": {
       "Discussion": "Discussion",
       "DiscussionDesc": "Join the community discussion (requires GitHub account).",
@@ -3308,11 +3338,9 @@
       "JoinDiscussion": "Join Discussion",
       "SendEmail": "Send Email",
       "SubmitIssue": "Submit Issue",
-      "VisitWiki": "Visit Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Check out the SeaMeet wiki for documentation and guides."
     },
-    "KeyboardShortcuts": "Keyboard Shortcuts",
     "AccountSignedIn": "Signed in",
     "SeaMeetSignedIn": "SeaMeet Enterprise (bot-based): Signed in",
     "SeaMeetSignedOut": "SeaMeet Enterprise (bot-based): Not signed in",
@@ -3387,8 +3415,6 @@
   "Wiki": {
     "AIBadgeTooltip": "AI-generated content",
     "AIBadge": "AI Generated",
-    "Backlinks": "Backlinks",
-    "RelatedPages": "Related pages",
     "BuiltFrom": "Built from",
     "SelectPage": "Pick a page",
     "SelectPageHint": "Select an entity, person, or topic from the sidebar to read what your wiki has learned.",
@@ -3509,7 +3535,7 @@
     "NoResults": "No matching wiki pages"
   },
   "WikiTree": {
-    "Title": "Wiki",
+    "Title": "All pages",
     "NewPage": "New wiki page",
     "NewFolder": "New folder",
     "NewFolderPlaceholder": "New folder name…",
@@ -3539,13 +3565,15 @@
     "DefaultLabel": "Default for {{wikiKind}}",
     "AIBadge": "AI-generated",
     "UserBadge": "User-edited",
-    "QuickOpen": "Quick open  (⌘P)",
+    "QuickOpen": "Quick open  ({{shortcut}})",
     "ConflictBadge": "Conflicted copy",
     "EmptyAiCurated": "AI populates this folder when your recordings or notes mention an entity, person, topic, or meeting. Open a note and click Sync Wiki to generate pages.",
     "GitSyncing": "Syncing to GitHub…",
     "GitPending": "Unpushed changes",
     "GitSynced": "Pushed to GitHub",
-    "CloudPending": "Not downloaded"
+    "CloudPending": "Not downloaded",
+    "PageCount_one": "{{count}} page",
+    "PageCount_other": "{{count}} pages"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] is not in this workspace",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "Update requested — it’ll arrive by sync.",
     "SearchEntitiesPlaceholder": "Search people, topics & meetings",
     "MemorySubtitle": "Built automatically from your recordings — the people, topics, and organizations you discuss, each distilled into a page that updates as you record more.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "People",
+    "StatOrgs": "Organizations",
+    "StatTopics": "Topics",
+    "KindPerson": "Person",
+    "KindOrg": "Organization",
+    "KindTopic": "Topic",
+    "SourceCount_one": "{{count}} source",
+    "SourceCount_other": "{{count}} sources",
+    "SeeAll": "See all",
+    "DefaultWorkspaceNote": "Opening Memory switches to your Default workspace."
   },
   "WikiPage": {
     "CorrectThis": "Correct this",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "Could not save — try again.",
     "CorrectionPending": "Corrected by you — rewrite pending.",
     "Saving": "Saving…",
-    "SubmitCorrection": "Submit correction"
+    "SubmitCorrection": "Submit correction",
+    "Related": "Related",
+    "Sources": "Sources",
+    "CiteLabel": "Source {{n}}",
+    "FromMeetings_one": "From {{count}} meeting",
+    "FromMeetings_other": "From {{count}} meetings",
+    "AndNotes_one": "and {{count}} note",
+    "AndNotes_other": "and {{count}} notes",
+    "FromNotes_one": "From {{count}} note",
+    "FromNotes_other": "From {{count}} notes"
+  },
+  "Memory": {
+    "AllPages": "All pages",
+    "ViewsLabel": "Memory views"
   },
   "MemorySidebar": {
     "Home": "Home",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "Main navigation",
     "Library": "Library",
-    "NotesWiki": "Notes",
     "Memory": "Memory",
     "Agent": "Agent",
     "Meetings": "Connected Meetings",
@@ -4568,13 +4618,9 @@
     "Help": "Help",
     "KeyboardShortcuts": "Keyboard shortcuts",
     "ServiceStatus": "Service status",
-    "HelpSupport": "Help & support",
-    "About": "About SeaMeet",
     "Settings": "Settings",
     "Account": "Account",
     "Notes": "Notes",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Notes or Wiki",
     "MoreScreenshotModes": "More screenshot modes",
     "ScreenshotOptions": "Screenshot options…",
     "ClickTakes": "A click takes: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "Zoom out",
     "Theater": "Theater",
     "FitWidth": "Fit width"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Guides",
+      "Contact": "Contact"
+    },
+    "Nav": "Help sections",
+    "Guide": {
+      "WhatToExpect": "What to expect from Private AI",
+      "WhatToExpectDesc": "What on-device AI does well, where it is slower, and what it needs.",
+      "ReleaseNotes": "Release notes for this version",
+      "ReleaseNotesDesc": "What is new in SeaMeet {{version}}."
+    }
   }
 }

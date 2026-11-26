@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "Perbarui wiki dari catatan ini",
     "WikiUpdateFailed": "Pembaruan wiki gagal: {{error}}",
     "RecordingInFile": "Rekaman terlampir pada catatan ini",
-    "RecordingInFolder": "Rekaman dalam folder ini"
+    "RecordingInFolder": "Rekaman dalam folder ini",
+    "Recent": "Terbaru"
   },
   "NotesView": {
     "CollapseSidebar": "Sembunyikan bilah sisi catatan",
@@ -3356,11 +3357,10 @@
       "EmptyState": "Belum ada aplikasi yang terdeteksi. Saat SeaMeet mendeteksi aplikasi yang menggunakan mikrofon Anda, akan muncul di sini.",
       "PathCopied": "Path berhasil disalin ke clipboard",
       "PermissionHeader": "Izin aplikasi",
-      "Title": "Izin aplikasi"
+      "Title": "Izin aplikasi",
+      "RemoveApp": "Hapus {{app}} dari daftar"
     },
     "Back": "Kembali",
-    "DefaultUserName": "Pengguna SeaMeet",
-    "FailedToCheckForUpdates": "Gagal memeriksa pembaruan",
     "GroupTitle": {
       "ApplicationInfo": "Info Aplikasi",
       "Automation": "Otomatisasi",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "Perekaman otomatis",
-      "Copyright": "Hak cipta",
       "ImproveTranslationHint": "Bantu tingkatkan terjemahan ini di GitHub →",
       "Language": "Bahasa",
       "MicrophoneGain": "Gain Mikrofon",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "Folder Simpan Default",
       "Description": "Ubah ke folder default yang digunakan SeaMeet saat menyimpan perekaman secara otomatis.",
       "Save": "Simpan",
-      "Title": "Pengaturan penyimpanan"
+      "Title": "Pengaturan penyimpanan",
+      "SaveFailed": "Tidak dapat mengubah folder rekaman.",
+      "LockedWhileRecording": "Anda dapat mengubah folder rekaman setelah rekaman ini selesai.",
+      "SaveHint": "Tekan Simpan untuk mengubah folder rekaman."
     },
     "Theme": {
       "AdobeSand": "Pasir Adobe",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "Mode terang bernuansa kertas hangat"
     },
     "Title": "Pengaturan",
-    "UserAvatarAlt": "pengguna",
     "ManagedByPlan": "Termasuk dalam paket Sync Pro Anda — AI berjalan pada penyedia yang dikelola SeaMeet. Tidak perlu kunci API.",
     "AppMode": {
       "Title": "Mode aplikasi",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "Aplikasi akan dimuat ulang untuk beralih ke SeaMeet Recorder. Pengaturan dan rekaman Anda akan tetap tersimpan. Lanjutkan?",
       "SwitchFailed": "Gagal beralih: {{error}}",
       "Switch": "Beralih"
+    },
+    "Section": {
+      "General": "Umum",
+      "Recording": "Perekaman",
+      "Detection": "Deteksi rapat",
+      "Ai": "AI",
+      "Templates": "Templat ringkasan",
+      "Memory": "Catatan dan Memori",
+      "Storage": "Penyimpanan",
+      "Sync": "Sinkron dan cadangan",
+      "Connections": "Koneksi",
+      "About": "Tentang"
+    },
+    "Nav": "Bagian pengaturan",
+    "OpensInWindow": "Terbuka di jendela Pengaturan.",
+    "SavedAsYouGo": "Perubahan disimpan saat Anda membuatnya.",
+    "StartAtLoginFailed": "Tidak dapat mengubah Mulai saat Login.",
+    "Recording": {
+      "RecordPageLink": "Kualitas, frame rate, Launcher, dan Floater ada di halaman Rekam",
+      "Folder": "Tempat rekaman disimpan"
+    },
+    "LanguageFailed": "Tidak dapat mengubah bahasa.",
+    "Memory": {
+      "MemoryLink": "Memori Rapat aktif atau nonaktif, dan dari apa dibangun",
+      "MemoryHint": "Di bagian AI.",
+      "WorkspacesLink": "Ruang kerja",
+      "WorkspacesHint": "Di bilah samping Catatan.",
+      "GitHubLink": "Cadangkan catatan ke GitHub",
+      "GitHubHint": "Di Sinkron dan cadangan.",
+      "MemoryLinkLegacy": "Membangun Memori dari catatan dan rekaman Anda"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "Tangkapan layar penuh",
     "MoveBetweenAreas": "Pindah antara bilah, daftar, dan konten",
     "StopRecording": "Hentikan Rekaman",
-    "PauseRecording": "Jeda atau Lanjutkan Rekaman"
+    "PauseRecording": "Jeda atau Lanjutkan Rekaman",
+    "AllPages": "Semua halaman (Memori)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Ajak teman, dapat satu bulan",
-    "AboutSeaMeet": "Tentang SeaMeet",
     "AccountSignedIn": "Masuk",
     "DisplayName": "Pengguna",
     "EmailPlaceholder": "pengguna@contoh.com",
     "Exit": "Keluar",
-    "HelpSupport": "Bantuan & Dukungan",
     "HelpSupportSection": {
       "Discussion": "Diskusi",
       "DiscussionDesc": "Bergabung dengan diskusi komunitas (memerlukan akun GitHub).",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "Bergabung dengan Diskusi",
       "SendEmail": "Kirim Email",
       "SubmitIssue": "Kirim Masalah",
-      "VisitWiki": "Kunjungi Wiki",
       "Wiki": "Wiki",
       "WikiDesc": "Periksa wiki SeaMeet untuk dokumentasi dan panduan."
     },
-    "KeyboardShortcuts": "Pintasan Keyboard",
     "RefreshWorkspaces": "Segarkan Ruang Kerja",
     "SeaMeetSignIn": "Masuk ke SeaMeet Enterprise (berbasis bot)",
     "SeaMeetSignOut": "Keluar dari SeaMeet Enterprise (berbasis bot)",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "Konten yang dibuat AI",
     "AIEmpty": "Belum ada konten AI. Tambahkan rekaman atau tangkapan layar ke catatan yang menyebutkan entitas ini, lalu jalankan pembaruan wiki.",
     "AISection": "Bagian AI",
-    "Backlinks": "Tautan balik",
     "BuiltFrom": "Dibangun dari",
     "Bulk": {
       "BannerMessage": "{{count}} catatan baru sejak build terakhir",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "Segarkan dari sumber",
     "RefreshFromSourcesHint": "Klik untuk menyegarkan bagian AI dari {{count}} catatan sumber. Shift+klik juga membaca ulang catatan sumber.",
     "RefreshFromSourcesTooltip": "Segarkan bagian AI dari {{count}} catatan sumber sekarang",
-    "RelatedPages": "Halaman terkait",
     "SelectPage": "Pilih sebuah halaman",
     "SelectPageHint": "Pilih entitas, orang, atau topik dari sidebar untuk melihat apa yang telah dipelajari wiki Anda.",
     "SidebarTitle": "Wiki",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "Nama folder…",
     "NewPage": "Halaman wiki baru",
     "Open": "Buka",
-    "QuickOpen": "Buka cepat (⌘P)",
+    "QuickOpen": "Buka cepat ({{shortcut}})",
     "Rename": "Ganti nama",
     "SearchInTree": "Filter di pohon",
     "SetDefaultEntity": "Tetapkan sebagai default untuk halaman entity baru",
@@ -4013,8 +4039,10 @@
     "SortDefault": "Default (urutan file system)",
     "SortModified": "Diubah (terbaru dulu)",
     "SortName": "Nama (A → Z)",
-    "Title": "Wiki",
-    "UserBadge": "Diedit pengguna"
+    "Title": "Semua halaman",
+    "UserBadge": "Diedit pengguna",
+    "PageCount_one": "{{count}} halaman",
+    "PageCount_other": "{{count}} halaman"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] tidak ada di ruang kerja ini",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "Pembaruan diminta — akan tiba melalui sinkronisasi.",
     "SearchEntitiesPlaceholder": "Cari orang, topik & rapat",
     "MemorySubtitle": "Dibuat otomatis dari rekaman Anda — orang, topik, dan organisasi yang Anda bahas, masing-masing disarikan menjadi halaman yang diperbarui saat Anda merekam lebih banyak.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Orang",
+    "StatOrgs": "Organisasi",
+    "StatTopics": "Topik",
+    "KindPerson": "Orang",
+    "KindOrg": "Organisasi",
+    "KindTopic": "Topik",
+    "SourceCount_one": "{{count}} sumber",
+    "SourceCount_other": "{{count}} sumber",
+    "SeeAll": "Lihat semua",
+    "DefaultWorkspaceNote": "Membuka Memori akan beralih ke ruang kerja Bawaan Anda."
   },
   "WikiPage": {
     "CorrectThis": "Koreksi",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "Gagal menyimpan — coba lagi.",
     "CorrectionPending": "Dikoreksi oleh Anda — penulisan ulang tertunda.",
     "Saving": "Menyimpan…",
-    "SubmitCorrection": "Kirim koreksi"
+    "SubmitCorrection": "Kirim koreksi",
+    "Related": "Terkait",
+    "Sources": "Sumber",
+    "CiteLabel": "Sumber {{n}}",
+    "FromMeetings_one": "Dari {{count}} rapat",
+    "FromMeetings_other": "Dari {{count}} rapat",
+    "AndNotes_one": "dan {{count}} catatan",
+    "AndNotes_other": "dan {{count}} catatan",
+    "FromNotes_one": "Dari {{count}} catatan",
+    "FromNotes_other": "Dari {{count}} catatan"
+  },
+  "Memory": {
+    "AllPages": "Semua halaman",
+    "ViewsLabel": "Tampilan Memori"
   },
   "MemorySidebar": {
     "Home": "Beranda",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "Navigasi utama",
     "Library": "Pustaka",
-    "NotesWiki": "Catatan",
     "Memory": "Memori",
     "Agent": "Agen",
     "Meetings": "Rapat Terhubung",
@@ -4567,13 +4617,9 @@
     "Help": "Bantuan",
     "KeyboardShortcuts": "Pintasan keyboard",
     "ServiceStatus": "Status layanan",
-    "HelpSupport": "Bantuan & Dukungan",
-    "About": "Tentang SeaMeet",
     "Settings": "Pengaturan",
     "Account": "Akun",
     "Notes": "Catatan",
-    "Wiki": "Wiki",
-    "NotesOrWiki": "Catatan atau Wiki",
     "MoreScreenshotModes": "Mode tangkapan layar lainnya",
     "ScreenshotOptions": "Opsi tangkapan layar…",
     "ClickTakes": "Satu klik mengambil: {{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "Perkecil",
     "Theater": "Mode bioskop",
     "FitWidth": "Sesuaikan lebar"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Panduan",
+      "Contact": "Kontak"
+    },
+    "Nav": "Bagian bantuan",
+    "Guide": {
+      "WhatToExpect": "Yang bisa diharapkan dari AI Pribadi",
+      "WhatToExpectDesc": "Apa yang dikuasai AI di perangkat, di mana lebih lambat, dan apa yang dibutuhkannya.",
+      "ReleaseNotes": "Catatan rilis versi ini",
+      "ReleaseNotesDesc": "Yang baru di SeaMeet {{version}}."
+    }
   }
 }

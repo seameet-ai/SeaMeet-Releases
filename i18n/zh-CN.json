@@ -2639,7 +2639,8 @@
     "UpdateWikiFromNote": "从此笔记更新 Wiki",
     "WikiUpdateFailed": "Wiki 更新失败：{{error}}",
     "RecordingInFile": "附加到此笔记的录音",
-    "RecordingInFolder": "此文件夹中的录音"
+    "RecordingInFolder": "此文件夹中的录音",
+    "Recent": "最近"
   },
   "NotesView": {
     "CollapseSidebar": "隐藏笔记侧栏",
@@ -3356,11 +3357,10 @@
       "EmptyState": "尚未检测到任何应用。当SeaMeet检测到使用麦克风的应用时，会显示在这里。",
       "PathCopied": "路径已复制到剪贴板",
       "PermissionHeader": "应用权限",
-      "Title": "应用权限"
+      "Title": "应用权限",
+      "RemoveApp": "从列表中移除 {{app}}"
     },
     "Back": "返回",
-    "DefaultUserName": "SeaMeet 用户",
-    "FailedToCheckForUpdates": "检查更新失败",
     "GroupTitle": {
       "ApplicationInfo": "应用信息",
       "Automation": "自动化",
@@ -3371,7 +3371,6 @@
     },
     "Item": {
       "AutoRecording": "自动录制",
-      "Copyright": "版权声明",
       "ImproveTranslationHint": "在 GitHub 上帮助改进此翻译 →",
       "Language": "语言",
       "MicrophoneGain": "麦克风增益",
@@ -3405,7 +3404,10 @@
       "DefaultPathLabel": "默认保存文件夹",
       "Description": "选择SeaMeet自动保存录制时使用的默认文件夹。",
       "Save": "保存",
-      "Title": "存储设置"
+      "Title": "存储设置",
+      "SaveFailed": "无法更改录制文件夹。",
+      "LockedWhileRecording": "本次录制结束后即可更改录制文件夹。",
+      "SaveHint": "按“保存”以更改录制文件夹。"
     },
     "Theme": {
       "AdobeSand": "土坯砂",
@@ -3436,7 +3438,6 @@
       "WarmPaperDesc": "暖色纸调光模式"
     },
     "Title": "设置",
-    "UserAvatarAlt": "用户",
     "ManagedByPlan": "已包含在您的 Sync Pro 方案中 — AI 运行在 SeaMeet 托管的服务商上，无需 API 密钥。",
     "AppMode": {
       "Title": "应用模式",
@@ -3449,6 +3450,36 @@
       "ConfirmReload": "应用将重新加载以切换到 SeaMeet 录音器。您的设置和录音将会保留。是否继续？",
       "SwitchFailed": "切换失败：{{error}}",
       "Switch": "切换"
+    },
+    "Section": {
+      "General": "常规",
+      "Recording": "录制",
+      "Detection": "会议检测",
+      "Ai": "AI",
+      "Templates": "摘要模板",
+      "Memory": "笔记与记忆",
+      "Storage": "存储",
+      "Sync": "同步与备份",
+      "Connections": "连接",
+      "About": "关于"
+    },
+    "Nav": "设置分区",
+    "OpensInWindow": "在设置窗口中打开。",
+    "SavedAsYouGo": "更改会即时保存。",
+    "StartAtLoginFailed": "无法更改“登录时启动”。",
+    "Recording": {
+      "RecordPageLink": "画质、帧率、启动器和浮动窗口在录制页面上",
+      "Folder": "录制内容的保存位置"
+    },
+    "LanguageFailed": "无法更改语言。",
+    "Memory": {
+      "MemoryLink": "开启或关闭会议记忆，以及它的来源",
+      "MemoryHint": "在 AI 部分。",
+      "WorkspacesLink": "工作区",
+      "WorkspacesHint": "在笔记侧边栏中。",
+      "GitHubLink": "将笔记备份到 GitHub",
+      "GitHubHint": "在同步与备份中。",
+      "MemoryLinkLegacy": "从你的笔记和录制内容构建记忆"
     }
   },
   "SettingsModal": {
@@ -3505,7 +3536,8 @@
     "FullScreenshot": "全屏截图",
     "MoveBetweenAreas": "在侧栏、列表和内容之间切换",
     "StopRecording": "停止录制",
-    "PauseRecording": "暂停或继续录制"
+    "PauseRecording": "暂停或继续录制",
+    "AllPages": "所有页面 (记忆)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3755,12 +3787,10 @@
   },
   "UserMenu": {
     "ReferFriend": "推荐朋友，赚一个月",
-    "AboutSeaMeet": "关于 SeaMeet",
     "AccountSignedIn": "已登录",
     "DisplayName": "用户",
     "EmailPlaceholder": "user@example.com",
     "Exit": "退出",
-    "HelpSupport": "帮助与支持",
     "HelpSupportSection": {
       "Discussion": "讨论",
       "DiscussionDesc": "参与社区交流",
@@ -3774,11 +3804,9 @@
       "JoinDiscussion": "加入社区讨论",
       "SendEmail": "联系我们",
       "SubmitIssue": "提交反馈",
-      "VisitWiki": "访问 Wiki",
       "Wiki": "维基",
       "WikiDesc": "查看 SeaMeet 维基以获取文档和指南。"
     },
-    "KeyboardShortcuts": "键盘快捷键",
     "RefreshWorkspaces": "刷新工作区",
     "SeaMeetSignIn": "登录 SeaMeet Enterprise（基于机器人）",
     "SeaMeetSignOut": "退出 SeaMeet Enterprise（基于机器人）",
@@ -3858,7 +3886,6 @@
     "AIBadgeTooltip": "AI 生成的内容",
     "AIEmpty": "暂无 AI 内容。将录音或截图添加到提及此实体的笔记中，然后运行知识库更新。",
     "AISection": "AI 区块",
-    "Backlinks": "反向链接",
     "BuiltFrom": "构建自",
     "Bulk": {
       "BannerMessage": "上次构建以来有 {{count}} 条新笔记",
@@ -3931,7 +3958,6 @@
     "RefreshFromSources": "从源刷新",
     "RefreshFromSourcesHint": "点击从 {{count}} 个来源笔记刷新 AI 部分。Shift+点击也会重新读取来源笔记。",
     "RefreshFromSourcesTooltip": "立即从 {{count}} 个来源笔记刷新 AI 部分",
-    "RelatedPages": "相关页面",
     "SelectPage": "选择一个页面",
     "SelectPageHint": "从侧边栏选择实体、人物或主题，查看您的知识库已学到的内容。",
     "SidebarTitle": "知识库",
@@ -4002,7 +4028,7 @@
     "NewFolderPlaceholder": "文件夹名称…",
     "NewPage": "新建 wiki 页面",
     "Open": "打开",
-    "QuickOpen": "快速打开（⌘P）",
+    "QuickOpen": "快速打开（{{shortcut}}）",
     "Rename": "重命名",
     "SearchInTree": "在树中筛选",
     "SetDefaultEntity": "设为新建实体页面的默认位置",
@@ -4013,8 +4039,10 @@
     "SortDefault": "默认（文件系统顺序）",
     "SortModified": "修改时间（最新在前）",
     "SortName": "名称（A → Z）",
-    "Title": "Wiki",
-    "UserBadge": "用户编辑"
+    "Title": "所有页面",
+    "UserBadge": "用户编辑",
+    "PageCount_one": "{{count}} 个页面",
+    "PageCount_other": "{{count}} 个页面"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] 不在此工作区中",
@@ -4447,7 +4475,17 @@
     "CloudUpdateRequested": "已请求更新——将通过同步送达。",
     "SearchEntitiesPlaceholder": "搜索人物、主题和会议",
     "MemorySubtitle": "根据您的录音自动构建——您谈到的人物、主题和组织，各自提炼成一个页面，并随着您录制更多内容而更新。",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "人物",
+    "StatOrgs": "组织",
+    "StatTopics": "主题",
+    "KindPerson": "人物",
+    "KindOrg": "组织",
+    "KindTopic": "主题",
+    "SourceCount_one": "{{count}} 个来源",
+    "SourceCount_other": "{{count}} 个来源",
+    "SeeAll": "查看全部",
+    "DefaultWorkspaceNote": "打开记忆会切换到你的默认工作区。"
   },
   "WikiPage": {
     "CorrectThis": "纠正",
@@ -4455,7 +4493,20 @@
     "CorrectionFailed": "保存失败 — 请重试。",
     "CorrectionPending": "你已纠正 — 等待重写。",
     "Saving": "保存中…",
-    "SubmitCorrection": "提交纠正"
+    "SubmitCorrection": "提交纠正",
+    "Related": "相关",
+    "Sources": "来源",
+    "CiteLabel": "来源 {{n}}",
+    "FromMeetings_one": "来自 {{count}} 场会议",
+    "FromMeetings_other": "来自 {{count}} 场会议",
+    "AndNotes_one": "和 {{count}} 条笔记",
+    "AndNotes_other": "和 {{count}} 条笔记",
+    "FromNotes_one": "来自 {{count}} 条笔记",
+    "FromNotes_other": "来自 {{count}} 条笔记"
+  },
+  "Memory": {
+    "AllPages": "所有页面",
+    "ViewsLabel": "记忆视图"
   },
   "MemorySidebar": {
     "Home": "首页",
@@ -4543,7 +4594,6 @@
   "Rail": {
     "Label": "主导航",
     "Library": "媒体库",
-    "NotesWiki": "笔记",
     "Memory": "记忆",
     "Agent": "智能助手",
     "Meetings": "已连接的会议",
@@ -4567,13 +4617,9 @@
     "Help": "帮助",
     "KeyboardShortcuts": "键盘快捷键",
     "ServiceStatus": "服务状态",
-    "HelpSupport": "帮助与支持",
-    "About": "关于 SeaMeet",
     "Settings": "设置",
     "Account": "账户",
     "Notes": "笔记",
-    "Wiki": "知识库",
-    "NotesOrWiki": "笔记或知识库",
     "MoreScreenshotModes": "更多截图方式",
     "ScreenshotOptions": "截图选项…",
     "ClickTakes": "单击截图：{{mode}}",
@@ -5717,5 +5763,18 @@
     "ZoomOut": "缩小",
     "Theater": "影院模式",
     "FitWidth": "适应宽度"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "指南",
+      "Contact": "联系我们"
+    },
+    "Nav": "帮助分区",
+    "Guide": {
+      "WhatToExpect": "私密 AI 须知",
+      "WhatToExpectDesc": "设备端 AI 擅长什么、哪里较慢、需要什么。",
+      "ReleaseNotes": "此版本的发行说明",
+      "ReleaseNotesDesc": "SeaMeet {{version}} 的新内容。"
+    }
   }
 }

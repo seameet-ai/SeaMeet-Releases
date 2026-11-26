@@ -2651,7 +2651,8 @@
     "UpdateWikiFromNote": "Обновить вики из этой заметки",
     "WikiUpdateFailed": "Не удалось обновить вики: {{error}}",
     "RecordingInFile": "Запись прикреплена к этой заметке",
-    "RecordingInFolder": "Запись в этой папке"
+    "RecordingInFolder": "Запись в этой папке",
+    "Recent": "Последние"
   },
   "NotesView": {
     "CollapseSidebar": "Скрыть боковую панель заметок",
@@ -3370,11 +3371,10 @@
       "EmptyState": "Пока не обнаружено приложений. Как только SeaMeet выявит приложение, использующее микрофон, оно появится здесь.",
       "PathCopied": "Путь скопирован в буфер обмена",
       "PermissionHeader": "Разрешения приложения",
-      "Title": "Разрешения приложения"
+      "Title": "Разрешения приложения",
+      "RemoveApp": "Удалить {{app}} из списка"
     },
     "Back": "Назад",
-    "DefaultUserName": "SeaMeet пользователь",
-    "FailedToCheckForUpdates": "Не удалось проверить обновления",
     "GroupTitle": {
       "ApplicationInfo": "Информация о приложении — оставить без изменений",
       "Automation": "Автоматизация",
@@ -3385,7 +3385,6 @@
     },
     "Item": {
       "AutoRecording": "Автоматическая запись",
-      "Copyright": "Авторские права",
       "ImproveTranslationHint": "Помогите улучшить этот перевод на GitHub →",
       "Language": "Язык",
       "MicrophoneGain": "Усиление микрофона",
@@ -3419,7 +3418,10 @@
       "DefaultPathLabel": "Папка для сохранения по умолчанию",
       "Description": "Выберите папку по умолчанию для автоматического сохранения записей SeaMeet",
       "Save": "Сохранить",
-      "Title": "Настройки хранилища"
+      "Title": "Настройки хранилища",
+      "SaveFailed": "Не удалось изменить папку записей.",
+      "LockedWhileRecording": "Папку записей можно будет изменить после окончания этой записи.",
+      "SaveHint": "Нажмите «Сохранить», чтобы изменить папку записей."
     },
     "Theme": {
       "AdobeSand": "Саманный Песок",
@@ -3450,7 +3452,6 @@
       "WarmPaperDesc": "Светлый режим в тёплых бумажных тонах"
     },
     "Title": "Настройки",
-    "UserAvatarAlt": "пользователь",
     "ManagedByPlan": "Входит в ваш тариф Sync Pro — ИИ работает на провайдерах под управлением SeaMeet. API-ключи не нужны.",
     "AppMode": {
       "Title": "Режим приложения",
@@ -3463,6 +3464,36 @@
       "ConfirmReload": "Приложение перезапустится для перехода в режим SeaMeet Recorder. Ваши настройки и записи сохранятся. Продолжить?",
       "SwitchFailed": "Не удалось переключить: {{error}}",
       "Switch": "Переключить"
+    },
+    "Section": {
+      "General": "Общие",
+      "Recording": "Запись",
+      "Detection": "Обнаружение встреч",
+      "Ai": "ИИ",
+      "Templates": "Шаблоны сводок",
+      "Memory": "Заметки и Память",
+      "Storage": "Хранение",
+      "Sync": "Синхронизация и резервное копирование",
+      "Connections": "Подключения",
+      "About": "О программе"
+    },
+    "Nav": "Разделы настроек",
+    "OpensInWindow": "Открывается в окне настроек.",
+    "SavedAsYouGo": "Изменения сохраняются сразу.",
+    "StartAtLoginFailed": "Не удалось изменить запуск при входе в систему.",
+    "Recording": {
+      "RecordPageLink": "Качество, частота кадров, Launcher и Floater находятся на странице записи",
+      "Folder": "Где сохраняются записи"
+    },
+    "LanguageFailed": "Не удалось изменить язык.",
+    "Memory": {
+      "MemoryLink": "Память встреч: включение и источники",
+      "MemoryHint": "В разделе ИИ.",
+      "WorkspacesLink": "Рабочие пространства",
+      "WorkspacesHint": "На боковой панели заметок.",
+      "GitHubLink": "Резервное копирование заметок в GitHub",
+      "GitHubHint": "В разделе «Синхронизация и резервное копирование».",
+      "MemoryLinkLegacy": "Создание Памяти из ваших заметок и записей"
     }
   },
   "SettingsModal": {
@@ -3519,7 +3550,8 @@
     "FullScreenshot": "Снимок всего экрана",
     "MoveBetweenAreas": "Переход между панелью, списком и содержимым",
     "StopRecording": "Остановить запись",
-    "PauseRecording": "Приостановить или продолжить запись"
+    "PauseRecording": "Приостановить или продолжить запись",
+    "AllPages": "Все страницы (Память)"
   },
   "Sidebar": {
     "SharedBy": "Shared by {{name}}"
@@ -3769,12 +3801,10 @@
   },
   "UserMenu": {
     "ReferFriend": "Пригласите друга и получите месяц",
-    "AboutSeaMeet": "Об SeaMeet",
     "AccountSignedIn": "Вошёл в систему",
     "DisplayName": "Пользователь",
     "EmailPlaceholder": "user@example.com",
     "Exit": "выход",
-    "HelpSupport": "Помощь и поддержка",
     "HelpSupportSection": {
       "Discussion": "Обсуждение",
       "DiscussionDesc": "Присоединяйтесь к обсуждению сообщества (требуется аккаунт GitHub).",
@@ -3788,11 +3818,9 @@
       "JoinDiscussion": "Присоединиться к обсуждению",
       "SendEmail": "Отправить Email",
       "SubmitIssue": "Сообщить о проблеме",
-      "VisitWiki": "Посетить Wiki",
       "Wiki": "Вики",
       "WikiDesc": "Ознакомьтесь с Wiki SeaMeet для документации и руководств."
     },
-    "KeyboardShortcuts": "горячие клавиши",
     "RefreshWorkspaces": "Обновить рабочие пространства",
     "SeaMeetSignIn": "Войти в SeaMeet Enterprise (на основе бота)",
     "SeaMeetSignOut": "Выйти из SeaMeet Enterprise (на основе бота)",
@@ -3872,7 +3900,6 @@
     "AIBadgeTooltip": "Контент, созданный ИИ",
     "AIEmpty": "Контент ИИ пока отсутствует. Добавьте запись или скриншот в заметку, упоминающую эту сущность, затем запустите обновление вики.",
     "AISection": "Раздел ИИ",
-    "Backlinks": "Обратные ссылки",
     "BuiltFrom": "Построено из",
     "Bulk": {
       "BannerMessage": "{{count}} новых заметок с последней сборки",
@@ -3945,7 +3972,6 @@
     "RefreshFromSources": "Обновить из источников",
     "RefreshFromSourcesHint": "Нажмите, чтобы обновить раздел ИИ из {{count}} исходной заметки. Shift+клик также перечитает исходные заметки.",
     "RefreshFromSourcesTooltip": "Обновить раздел ИИ из {{count}} исходной заметки прямо сейчас",
-    "RelatedPages": "Связанные страницы",
     "SelectPage": "Выберите страницу",
     "SelectPageHint": "Выберите сущность, человека или тему на боковой панели, чтобы увидеть, что узнала ваша вики.",
     "SidebarTitle": "Вики",
@@ -4016,7 +4042,7 @@
     "NewFolderPlaceholder": "Имя папки…",
     "NewPage": "Новая страница wiki",
     "Open": "Открыть",
-    "QuickOpen": "Быстрое открытие (⌘P)",
+    "QuickOpen": "Быстрое открытие ({{shortcut}})",
     "Rename": "Переименовать",
     "SearchInTree": "Фильтр в дереве",
     "SetDefaultEntity": "Использовать как папку по умолчанию для новых страниц-сущностей",
@@ -4027,8 +4053,12 @@
     "SortDefault": "По умолчанию (порядок файловой системы)",
     "SortModified": "Изменены (сначала новые)",
     "SortName": "Имя (А → Я)",
-    "Title": "Вики",
-    "UserBadge": "Отредактировано пользователем"
+    "Title": "Все страницы",
+    "UserBadge": "Отредактировано пользователем",
+    "PageCount_one": "{{count}} страница",
+    "PageCount_few": "{{count}} страницы",
+    "PageCount_many": "{{count}} страниц",
+    "PageCount_other": "{{count}} страницы"
   },
   "Wikilink": {
     "Broken": "[[{{name}}]] отсутствует в этом рабочем пространстве",
@@ -4461,7 +4491,19 @@
     "CloudUpdateRequested": "Обновление запрошено — придёт через синхронизацию.",
     "SearchEntitiesPlaceholder": "Поиск людей, тем и встреч",
     "MemorySubtitle": "Создаётся автоматически из ваших записей — люди, темы и организации, которые вы обсуждаете, каждый превращается в страницу, обновляющуюся по мере новых записей.",
-    "SearchCount": "{{count}} results"
+    "SearchCount": "{{count}} results",
+    "StatPeople": "Люди",
+    "StatOrgs": "Организации",
+    "StatTopics": "Темы",
+    "KindPerson": "Человек",
+    "KindOrg": "Организация",
+    "KindTopic": "Тема",
+    "SourceCount_one": "{{count}} источник",
+    "SourceCount_other": "{{count}} источников",
+    "SourceCount_few": "{{count}} источника",
+    "SourceCount_many": "{{count}} источников",
+    "SeeAll": "Показать все",
+    "DefaultWorkspaceNote": "При открытии Памяти включается рабочее пространство по умолчанию."
   },
   "WikiPage": {
     "CorrectThis": "Исправить",
@@ -4469,7 +4511,26 @@
     "CorrectionFailed": "Не удалось сохранить — попробуйте ещё раз.",
     "CorrectionPending": "Исправлено вами — переработка ожидается.",
     "Saving": "Сохранение…",
-    "SubmitCorrection": "Отправить исправление"
+    "SubmitCorrection": "Отправить исправление",
+    "Related": "Связанное",
+    "Sources": "Источники",
+    "CiteLabel": "Источник {{n}}",
+    "FromMeetings_one": "Из встреч: {{count}}",
+    "FromMeetings_few": "Из встреч: {{count}}",
+    "FromMeetings_many": "Из встреч: {{count}}",
+    "FromMeetings_other": "Из встреч: {{count}}",
+    "AndNotes_one": "и заметок: {{count}}",
+    "AndNotes_few": "и заметок: {{count}}",
+    "AndNotes_many": "и заметок: {{count}}",
+    "AndNotes_other": "и заметок: {{count}}",
+    "FromNotes_one": "Из заметок: {{count}}",
+    "FromNotes_few": "Из заметок: {{count}}",
+    "FromNotes_many": "Из заметок: {{count}}",
+    "FromNotes_other": "Из заметок: {{count}}"
+  },
+  "Memory": {
+    "AllPages": "Все страницы",
+    "ViewsLabel": "Представления Памяти"
   },
   "MemorySidebar": {
     "Home": "Главная",
@@ -4559,7 +4620,6 @@
   "Rail": {
     "Label": "Основная навигация",
     "Library": "Библиотека",
-    "NotesWiki": "Заметки",
     "Memory": "Память",
     "Agent": "Ассистент",
     "Meetings": "Связанные встречи",
@@ -4583,13 +4643,9 @@
     "Help": "Справка",
     "KeyboardShortcuts": "Горячие клавиши",
     "ServiceStatus": "Состояние сервисов",
-    "HelpSupport": "Помощь и поддержка",
-    "About": "О SeaMeet",
     "Settings": "Настройки",
     "Account": "Аккаунт",
     "Notes": "Заметки",
-    "Wiki": "Вики",
-    "NotesOrWiki": "Заметки или вики",
     "MoreScreenshotModes": "Другие способы снимка экрана",
     "ScreenshotOptions": "Параметры снимка экрана…",
     "ClickTakes": "Клик делает: {{mode}}",
@@ -5787,5 +5843,18 @@
     "ZoomOut": "Уменьшить",
     "Theater": "Режим кинотеатра",
     "FitWidth": "По ширине"
+  },
+  "Help": {
+    "Section": {
+      "Guides": "Руководства",
+      "Contact": "Связь"
+    },
+    "Nav": "Разделы справки",
+    "Guide": {
+      "WhatToExpect": "Чего ожидать от Приватного ИИ",
+      "WhatToExpectDesc": "Что ИИ на устройстве делает хорошо, где он медленнее и что ему нужно.",
+      "ReleaseNotes": "Примечания к этой версии",
+      "ReleaseNotesDesc": "Что нового в SeaMeet {{version}}."
+    }
   }
 }
