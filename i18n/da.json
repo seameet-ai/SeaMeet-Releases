@@ -259,6 +259,7 @@
     "ConfigureProviders": "Aktivér live-transskription og opsæt en LLM-udbyder i Indstillinger for at generere AI-resuméer.",
     "ConfirmRename": "Bekræft omdøb",
     "Copy": "Kopi",
+    "CopyPart": "Kopiér {{part}}",
     "DeepComplete": {
       "Badge": "Dybdegående · Gemini analyserede optagelsen",
       "Toast": "✨ Dybdegående resumé klar"
@@ -309,8 +310,13 @@
       "Vtt": "Webundertekster (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Gratis: første {{minutes}} min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Filen kunne ikke oprettes. Prøv igen.",
-      "Footer": "Transskriptionen fortsætter — lås hele transskriptionen op med Sync Pro: {{url}}"
+      "Footer": "Transskriptionen fortsætter — lås hele transskriptionen op med Sync Pro: {{url}}",
+      "AsTxt": "Transskription som TXT",
+      "AsSrt": "Transskription som SRT",
+      "AsVtt": "Transskription som VTT",
+      "AsDocx": "Transskription som Word (DOCX)"
     },
     "ExportJson": "Kopiér som JSON",
     "ExportMarkdown": "Kopiér som Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "Afskrift"
     },
     "TabTitle": "AI oversigt",
+    "TabsLabel": "Optagelsens sektioner",
     "Topics": "Emner:",
     "Version": {
       "Latest": "Seneste",
@@ -2123,9 +2130,6 @@
       "Recording": "Optagelse"
     }
   },
-  "MediaCard": {
-    "Untitled": "Uden titel"
-  },
   "DesktopTeam": {
     "Workspace": "Arbejdsområde",
     "RoleOwner": "Ejer",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "Eksporterede {{count}} filer",
     "Exporting": "Eksporterer...",
     "FilteredStats": "{{filtered}} af {{total}} filer",
-    "GridView": "Gittervisning",
     "Import": "Importer",
-    "ListView": "Listevisning",
     "NoFiles": "Ingen mediefiler endnu",
     "NoFilesHint": "Optag lyd/video eller importer filer for at komme i gang",
     "NoResults": "Ingen filer matcher dine filtre",
     "NoResultsHint": "Prøv at justere din søgning eller filtre",
     "Screenshots": "Skærmbilleder",
-    "Search": "Søg mediefiler...",
+    "FilterByName": "Filtrér dette bibliotek",
+    "FileType": "Filtype",
+    "Layout": "Layout",
+    "Grid": "Gitter",
+    "List": "Liste",
+    "SortNewest": "Nyeste først",
+    "SortOldest": "Ældste først",
+    "SortNameAZ": "Navn A–Å",
+    "SortNameZA": "Navn Å–A",
+    "SortLongest": "Længste først",
+    "SortShortest": "Korteste først",
+    "SortLargest": "Største først",
+    "SortSmallest": "Mindste først",
     "SelectAll": "Vælg alle",
     "Selected": "{{count}} valgt",
     "Sort": "Sortér efter",
-    "SortByDate": "Dato",
-    "SortByDuration": "Varighed",
-    "SortByName": "Navn",
-    "SortBySize": "Størrelse",
     "Title": "Mediebibliotek",
     "Video": "Video",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}} filer eksporteret",
     "Selected_one": "{{count}} valgt",
     "Selected_other": "{{count}} valgt",
-    "ImportTooltip": "Importér medier · {{shortcut}} indsætter et billede"
+    "ImportTooltip": "Importér medier · {{shortcut}} indsætter et billede",
+    "Section": {
+      "ThisWeek": "Denne uge",
+      "EarlierThisMonth": "Tidligere på måneden",
+      "Undated": "Ingen dato"
+    },
+    "Image": "Billede",
+    "SelectRecordingAt": "Vælg {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Handlingspunkter",
@@ -2852,6 +2869,7 @@
     "Pause": "Pause",
     "Play": "Afspil",
     "PlaybackSpeed": "Afspilningshastighed",
+    "MoreControls": "Flere afspilningsknapper",
     "SkipBackward10": "-10 sekunder",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 sekunder",
@@ -2866,13 +2884,13 @@
     "Unmute": "Slå lyd til"
   },
   "PlayerCard": {
-    "ClosePlayback": "Luk afspilning",
     "CodecInfo": "Codec-information",
     "MoreOptions": "Flere muligheder",
     "PlaybackRegion": "Afspilning af optagelse",
     "Rename": "Omdøb optagelse",
     "OpenOnWeb": "Åbn på web",
-    "ShareViaWeb": "Del via web"
+    "ShareViaWeb": "Del via web",
+    "WorkspaceSharing": "Deling i arbejdsområdet…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet er blevet opdateret. Her er nyhederne:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "Ikke endnu",
     "CaptureStopped": "Skærmoptagelsen er stoppet. Optagelsen fortsætter uden ny video.",
     "RecordingPage": "Optagelsesside",
-    "RecordingPageTitle": "Gå til siden med den igangværende optagelse · {{title}}"
+    "RecordingPageTitle": "Gå til siden med den igangværende optagelse · {{title}}",
+    "Change": "Skift",
+    "ChangeAudio": "Skift lydindstillinger"
   },
   "RecordingControls": {
     "ContinueRecording": "Fortsæt optagelse",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "Log ind med et abonnement eller BYOK for at behandle billedet.",
     "SubscribeToDescribe": "Abonnér for at aktivere AI-drevet skærmbilledanalyse.",
     "Tab": {
-      "Custom": "Brugerdefineret prompt",
       "Description": "Beskrivelse",
-      "OCR": "Tekst i dette skærmbillede"
+      "OCR": "Tekst i dette skærmbillede",
+      "Text": "Tekst",
+      "CustomShort": "Tilpasset"
     },
     "UnknownError": "Ukendt fejl",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "Download skærmbilledbeskrivelser.",
     "NoDescriptionForThis": "Ingen beskrivelse til dette skærmbillede.",
     "TextNotAvailableStore": "Ikke tilgængelig i Microsoft Store-versionen. Windows-installationsprogrammet fra seameet.ai læser tekst på din enhed.",
-    "TextNotAvailable": "Ikke tilgængelig på denne computer."
+    "TextNotAvailable": "Ikke tilgængelig på denne computer.",
+    "TabsLabel": "Skærmbilledets sektioner",
+    "CopyAll": "Kopiér alt"
   },
   "ScreenshotView": {
     "RecentLabel": "Nylige skærmbilleder"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Starter forhåndsvisning…",
     "PreviewUnavailable": "Forhåndsvisningen er ikke tilgængelig"
   },
-  "LiveLayout": {
-    "Divider": "Tilpas bredden på transskriptionskolonnen"
-  },
   "LiveNotes": {
     "Placeholder": "Skriv mødenoter…",
     "CreateFailed": "Noten kunne ikke oprettes. Din tekst er gemt her."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Skriver nu i {{title}}",
     "TranscriptOff": "Live-transskription er slået fra.",
     "AskNeedsTranscript": "Spørg virker, når transskriptionen er i gang.",
-    "NotesAndEvents": "Noter og begivenheder",
-    "TranscriptAndAsk": "Transskription og Spørg",
     "RecordingTabs": "Optagelse",
     "AnswerReady": "{{tab}}, svaret er klar",
-    "AskMoving": "Spørg flytter med til den gemte optagelse, når den åbner."
+    "AskMoving": "Spørg flytter med til den gemte optagelse, når den åbner.",
+    "HidePanel": "Skjul sidepanelet",
+    "ShowPanel": "Vis sidepanelet",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Tilpas sidepanelets bredde"
   },
   "NoteRecord": {
-    "Record": "Optag",
+    "RecordIntoNote": "Optag i denne note",
     "Menu": "Flere måder at optage på",
     "Screen": "Optag skærm",
     "Window": "Optag et vindue",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Luk",
     "BackToMeeting": "Tilbage til mødet",
     "BackToMeetingHint": "Minimer SeaMeet; den flydende bjælke beholder knapperne",
-    "TimeLabel": "Optagetid {{time}}"
+    "TimeLabel": "Optagetid {{time}}",
+    "StartedAt": "Optagelsen startede {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Live-transskription og spørgsmål",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Ingen: den bliver på denne computer"
   },
   "TeamShareMenu": {
-    "Open": "Del…",
     "Title": "Deling",
     "Loading": "Indlæser delingsindstillinger…",
     "LoadFailed": "Kunne ikke indlæse delingsindstillinger.",
@@ -5683,5 +5705,17 @@
     "Title": "Nyt skærmbillede",
     "WindowHint": "Du vælger vinduet, når du tager billede.",
     "ModeScreenSubOne": "En hel skærm"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Optager i denne note"
+  },
+  "MediaStage": {
+    "View": "Visningsstørrelse",
+    "Fit": "Tilpas",
+    "Actual": "100 %",
+    "ZoomIn": "Zoom ind",
+    "ZoomOut": "Zoom ud",
+    "Theater": "Biograftilstand",
+    "FitWidth": "Tilpas bredde"
   }
 }

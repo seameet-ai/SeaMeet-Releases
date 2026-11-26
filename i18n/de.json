@@ -259,6 +259,7 @@
     "ConfigureProviders": "Aktiviere die Live-Transkription und richte einen LLM-Anbieter in den Einstellungen ein, um KI-Zusammenfassungen zu erzeugen.",
     "ConfirmRename": "Umbenennen bestätigen",
     "Copy": "Kopie",
+    "CopyPart": "{{part}} kopieren",
     "DeepComplete": {
       "Badge": "Tiefe · Gemini hat die Aufnahme analysiert",
       "Toast": "✨ Tiefen-Zusammenfassung fertig"
@@ -309,8 +310,13 @@
       "Vtt": "Web-Untertitel (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Kostenlos: erste {{minutes}} Min.",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Die Datei konnte nicht erstellt werden. Bitte erneut versuchen.",
-      "Footer": "Das Transkript geht weiter — schalte das vollständige Transkript mit Sync Pro frei: {{url}}"
+      "Footer": "Das Transkript geht weiter — schalte das vollständige Transkript mit Sync Pro frei: {{url}}",
+      "AsTxt": "Transkript als TXT",
+      "AsSrt": "Transkript als SRT",
+      "AsVtt": "Transkript als VTT",
+      "AsDocx": "Transkript als Word (DOCX)"
     },
     "ExportJson": "Als JSON kopieren",
     "ExportMarkdown": "Als Markdown kopieren",
@@ -385,6 +391,7 @@
       "Transcription": "Transkript"
     },
     "TabTitle": "KI-Zusammenfassung",
+    "TabsLabel": "Bereiche der Aufnahme",
     "Topics": "Themen:",
     "Version": {
       "Latest": "Letzte",
@@ -2123,9 +2130,6 @@
       "Recording": "Aufnahme"
     }
   },
-  "MediaCard": {
-    "Untitled": "Unbenannt"
-  },
   "DesktopTeam": {
     "Workspace": "Workspace",
     "RoleOwner": "Eigentümer",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "{{count}} Dateien exportiert",
     "Exporting": "Exportiere...",
     "FilteredStats": "{{filtered}} von {{total}} Dateien",
-    "GridView": "Rasteransicht",
     "Import": "Importieren",
-    "ListView": "Listenansicht",
     "NoFiles": "Noch keine Mediendateien",
     "NoFilesHint": "Nehmen Sie Audio/Video auf oder importieren Sie Dateien, um zu beginnen",
     "NoResults": "Keine Dateien entsprechen Ihren Filtern",
     "NoResultsHint": "Versuchen Sie, Ihre Suche oder Filter anzupassen",
     "Screenshots": "Bildschirmfotos",
-    "Search": "Mediendateien suchen...",
+    "FilterByName": "Diese Bibliothek filtern",
+    "FileType": "Dateityp",
+    "Layout": "Layout",
+    "Grid": "Raster",
+    "List": "Liste",
+    "SortNewest": "Neueste zuerst",
+    "SortOldest": "Älteste zuerst",
+    "SortNameAZ": "Name A–Z",
+    "SortNameZA": "Name Z–A",
+    "SortLongest": "Längste zuerst",
+    "SortShortest": "Kürzeste zuerst",
+    "SortLargest": "Größte zuerst",
+    "SortSmallest": "Kleinste zuerst",
     "SelectAll": "Alle auswählen",
     "Selected": "{{count}} ausgewählt",
     "Sort": "Sortieren nach",
-    "SortByDate": "Datum",
-    "SortByDuration": "Dauer",
-    "SortByName": "Name",
-    "SortBySize": "Größe",
     "Title": "Mediathek",
     "Video": "Video",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}} Dateien exportiert",
     "Selected_one": "{{count}} ausgewählt",
     "Selected_other": "{{count}} ausgewählt",
-    "ImportTooltip": "Medien importieren · {{shortcut}} fügt ein Bild ein"
+    "ImportTooltip": "Medien importieren · {{shortcut}} fügt ein Bild ein",
+    "Section": {
+      "ThisWeek": "Diese Woche",
+      "EarlierThisMonth": "Früher in diesem Monat",
+      "Undated": "Kein Datum"
+    },
+    "Image": "Bild",
+    "SelectRecordingAt": "{{name}}, {{when}} auswählen"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Aktionspunkte",
@@ -2852,6 +2869,7 @@
     "Pause": "Pause",
     "Play": "Abspielen",
     "PlaybackSpeed": "Wiedergabegeschwindigkeit",
+    "MoreControls": "Weitere Wiedergabesteuerungen",
     "SkipBackward10": "-10 Sekunden",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 Sekunden",
@@ -2866,13 +2884,13 @@
     "Unmute": "Stumm aufheben"
   },
   "PlayerCard": {
-    "ClosePlayback": "Wiedergabe schließen",
     "CodecInfo": "Codec-Informationen",
     "MoreOptions": "Weitere Optionen",
     "PlaybackRegion": "Wiedergabe der Aufnahme",
     "Rename": "Aufnahme umbenennen",
     "OpenOnWeb": "Im Web öffnen",
-    "ShareViaWeb": "Über Web teilen"
+    "ShareViaWeb": "Über Web teilen",
+    "WorkspaceSharing": "Freigabe im Workspace…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet wurde erfolgreich aktualisiert. Das ist neu:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "Noch nicht",
     "CaptureStopped": "Bildschirmaufnahme beendet. Die Aufnahme läuft ohne neues Video weiter.",
     "RecordingPage": "Aufnahmeseite",
-    "RecordingPageTitle": "Zur Seite der laufenden Aufnahme · {{title}}"
+    "RecordingPageTitle": "Zur Seite der laufenden Aufnahme · {{title}}",
+    "Change": "Ändern",
+    "ChangeAudio": "Audioeinstellungen ändern"
   },
   "RecordingControls": {
     "ContinueRecording": "Aufnahme fortsetzen",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "Melden Sie sich mit einem Abonnement oder BYOK an, um das Bild zu verarbeiten.",
     "SubscribeToDescribe": "Abonnieren Sie, um KI-gestützte Screenshot-Analyse zu aktivieren.",
     "Tab": {
-      "Custom": "Benutzerdefinierter Prompt",
       "Description": "Beschreibung",
-      "OCR": "Text in diesem Screenshot"
+      "OCR": "Text in diesem Screenshot",
+      "Text": "Text",
+      "CustomShort": "Eigener"
     },
     "UnknownError": "Unbekannter Fehler",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "Lade Screenshot-Beschreibungen herunter.",
     "NoDescriptionForThis": "Keine Beschreibung für diesen Screenshot.",
     "TextNotAvailableStore": "In der Microsoft-Store-Version nicht verfügbar. Das Windows-Installationsprogramm von seameet.ai liest Text auf deinem Gerät.",
-    "TextNotAvailable": "Auf diesem Computer nicht verfügbar."
+    "TextNotAvailable": "Auf diesem Computer nicht verfügbar.",
+    "TabsLabel": "Bereiche des Screenshots",
+    "CopyAll": "Alles kopieren"
   },
   "ScreenshotView": {
     "RecentLabel": "Letzte Screenshots"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Vorschau wird gestartet…",
     "PreviewUnavailable": "Vorschau nicht verfügbar"
   },
-  "LiveLayout": {
-    "Divider": "Breite der Transkriptspalte ändern"
-  },
   "LiveNotes": {
     "Placeholder": "Besprechungsnotizen schreiben…",
     "CreateFailed": "Die Notiz konnte nicht erstellt werden. Dein Text bleibt hier erhalten."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Schreibt jetzt in {{title}}",
     "TranscriptOff": "Live-Transkript ist aus.",
     "AskNeedsTranscript": "Fragen funktioniert, sobald das Transkript beginnt.",
-    "NotesAndEvents": "Notizen und Ereignisse",
-    "TranscriptAndAsk": "Transkript und Fragen",
     "RecordingTabs": "Aufnahme",
     "AnswerReady": "{{tab}}, Antwort bereit",
-    "AskMoving": "Fragen wechselt zur gespeicherten Aufnahme, sobald sie geöffnet wird."
+    "AskMoving": "Fragen wechselt zur gespeicherten Aufnahme, sobald sie geöffnet wird.",
+    "HidePanel": "Seitenleiste ausblenden",
+    "ShowPanel": "Seitenleiste einblenden",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Seitenleiste in der Breite ändern"
   },
   "NoteRecord": {
-    "Record": "Aufnehmen",
+    "RecordIntoNote": "In diese Notiz aufnehmen",
     "Menu": "Weitere Aufnahmearten",
     "Screen": "Bildschirm aufnehmen",
     "Window": "Ein Fenster aufnehmen",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Schließen",
     "BackToMeeting": "Zurück zum Meeting",
     "BackToMeetingHint": "SeaMeet minimieren; die schwebende Leiste behält die Steuerung",
-    "TimeLabel": "Aufnahmezeit {{time}}"
+    "TimeLabel": "Aufnahmezeit {{time}}",
+    "StartedAt": "Aufnahme gestartet {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Live-Transkript und Fragen",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Niemand: bleibt auf diesem Computer"
   },
   "TeamShareMenu": {
-    "Open": "Teilen…",
     "Title": "Freigaben",
     "Loading": "Freigabe-Einstellungen werden geladen…",
     "LoadFailed": "Freigabe-Einstellungen konnten nicht geladen werden.",
@@ -5683,5 +5705,17 @@
     "Title": "Neuer Screenshot",
     "WindowHint": "Sie wählen das Fenster beim Erfassen aus.",
     "ModeScreenSubOne": "Ein ganzer Bildschirm"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Aufnahme in diese Notiz"
+  },
+  "MediaStage": {
+    "View": "Anzeigegröße",
+    "Fit": "Einpassen",
+    "Actual": "100 %",
+    "ZoomIn": "Vergrößern",
+    "ZoomOut": "Verkleinern",
+    "Theater": "Kinomodus",
+    "FitWidth": "Breite einpassen"
   }
 }

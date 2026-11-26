@@ -263,6 +263,7 @@
     "ConfigureProviders": "Включите живую транскрипцию и настройте провайдера LLM в «Настройках», чтобы создавать ИИ-резюме.",
     "ConfirmRename": "Подтвердить переименование",
     "Copy": "Копировать",
+    "CopyPart": "Копировать: {{part}}",
     "DeepComplete": {
       "Badge": "Глубокий · Gemini проанализировал запись",
       "Toast": "✨ Глубокое резюме готово"
@@ -313,8 +314,13 @@
       "Vtt": "Веб-субтитры (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Бесплатно: первые {{minutes}} мин",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Не удалось создать файл. Попробуйте ещё раз.",
-      "Footer": "Расшифровка продолжается — откройте её полностью с Sync Pro: {{url}}"
+      "Footer": "Расшифровка продолжается — откройте её полностью с Sync Pro: {{url}}",
+      "AsTxt": "Расшифровка в TXT",
+      "AsSrt": "Расшифровка в SRT",
+      "AsVtt": "Расшифровка в VTT",
+      "AsDocx": "Расшифровка в Word (DOCX)"
     },
     "ExportJson": "Скопировать как JSON",
     "ExportMarkdown": "Скопировать как Markdown",
@@ -389,6 +395,7 @@
       "Transcription": "Стенограмма"
     },
     "TabTitle": "Обзор ИИ",
+    "TabsLabel": "Разделы записи",
     "Topics": "Темы:",
     "Version": {
       "Latest": "Последний",
@@ -2129,9 +2136,6 @@
       "Recording": "Запись"
     }
   },
-  "MediaCard": {
-    "Untitled": "Без названия"
-  },
   "DesktopTeam": {
     "Workspace": "Рабочее пространство",
     "RoleOwner": "Владелец",
@@ -2207,22 +2211,28 @@
     "ExportSuccess": "Экспортировано {{count}} файлов",
     "Exporting": "Экспортируется...",
     "FilteredStats": "{{filtered}} из {{total}} файлов",
-    "GridView": "В виде сетки",
     "Import": "Импорт",
-    "ListView": "В виде списка",
     "NoFiles": "Медиафайлов пока нет",
     "NoFilesHint": "Запишите аудио/видео или импортируйте файлы, чтобы начать",
     "NoResults": "Файлы, соответствующие вашим фильтрам, не найдены",
     "NoResultsHint": "Попробуйте изменить поиск или фильтры",
     "Screenshots": "Скриншоты",
-    "Search": "Поиск медиафайлов...",
+    "FilterByName": "Фильтр по этой библиотеке",
+    "FileType": "Тип файла",
+    "Layout": "Вид",
+    "Grid": "Сетка",
+    "List": "Список",
+    "SortNewest": "Сначала новые",
+    "SortOldest": "Сначала старые",
+    "SortNameAZ": "Имя (А–Я)",
+    "SortNameZA": "Имя (Я–А)",
+    "SortLongest": "Сначала длинные",
+    "SortShortest": "Сначала короткие",
+    "SortLargest": "Сначала крупные",
+    "SortSmallest": "Сначала мелкие",
     "SelectAll": "Выбрать все",
     "Selected": "{{count}} выбрано",
     "Sort": "Сортировать по",
-    "SortByDate": "Дата",
-    "SortByDuration": "Длительность",
-    "SortByName": "Имя",
-    "SortBySize": "Размер",
     "Title": "Медиатека",
     "Video": "Видео",
     "OwnerFilter": {
@@ -2243,7 +2253,14 @@
     "ExportSuccess_other": "Экспортировано {{count}} файлов",
     "Selected_one": "Выбрано: {{count}}",
     "Selected_other": "Выбрано: {{count}}",
-    "ImportTooltip": "Импортировать медиафайлы · {{shortcut}} вставляет изображение"
+    "ImportTooltip": "Импортировать медиафайлы · {{shortcut}} вставляет изображение",
+    "Section": {
+      "ThisWeek": "На этой неделе",
+      "EarlierThisMonth": "Ранее в этом месяце",
+      "Undated": "Без даты"
+    },
+    "Image": "Изображение",
+    "SelectRecordingAt": "Выбрать {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Задачи",
@@ -2864,6 +2881,7 @@
     "Pause": "Приостановить",
     "Play": "Воспроизвести",
     "PlaybackSpeed": "Скорость воспроизведения",
+    "MoreControls": "Другие элементы управления воспроизведением",
     "SkipBackward10": "-10 секунд",
     "SkipBackward10Short": "-10с",
     "SkipBackward30": "-30 секунд",
@@ -2878,13 +2896,13 @@
     "Unmute": "Включить звук"
   },
   "PlayerCard": {
-    "ClosePlayback": "Закрыть воспроизведение",
     "CodecInfo": "Информация о кодеке (Данные о кодеке)",
     "MoreOptions": "Больше опций",
     "PlaybackRegion": "Воспроизведение записи",
     "Rename": "Переименовать запись",
     "OpenOnWeb": "Открыть в вебе",
-    "ShareViaWeb": "Поделиться через веб"
+    "ShareViaWeb": "Поделиться через веб",
+    "WorkspaceSharing": "Доступ в рабочем пространстве…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet успешно обновлён. Что нового:",
@@ -2999,7 +3017,9 @@
     "ConfirmReleaseNo": "Ещё нет",
     "CaptureStopped": "Захват экрана остановлен. Запись продолжается без нового видео.",
     "RecordingPage": "Страница записи",
-    "RecordingPageTitle": "Перейти на страницу текущей записи · {{title}}"
+    "RecordingPageTitle": "Перейти на страницу текущей записи · {{title}}",
+    "Change": "Изменить",
+    "ChangeAudio": "Изменить настройки звука"
   },
   "RecordingControls": {
     "ContinueRecording": "Продолжить запись",
@@ -3166,9 +3186,10 @@
     "SetupRequired": "Войдите с помощью подписки или BYOK, чтобы обработать изображение.",
     "SubscribeToDescribe": "Подпишитесь для включения ИИ-анализа снимков экрана.",
     "Tab": {
-      "Custom": "Пользовательский запрос",
       "Description": "Описание",
-      "OCR": "Текст на этом снимке экрана"
+      "OCR": "Текст на этом снимке экрана",
+      "Text": "Текст",
+      "CustomShort": "Свой"
     },
     "UnknownError": "Неизвестная ошибка",
     "OcrWall": {
@@ -3191,7 +3212,9 @@
     "DownloadDescriptionsNoSize": "Скачайте описания снимков экрана.",
     "NoDescriptionForThis": "Для этого снимка экрана нет описания.",
     "TextNotAvailableStore": "Недоступно в версии из Microsoft Store. Установщик для Windows с seameet.ai читает текст на вашем устройстве.",
-    "TextNotAvailable": "Недоступно на этом компьютере."
+    "TextNotAvailable": "Недоступно на этом компьютере.",
+    "TabsLabel": "Разделы скриншота",
+    "CopyAll": "Копировать всё"
   },
   "ScreenshotView": {
     "RecentLabel": "Последние скриншоты"
@@ -4715,9 +4738,6 @@
     "PreviewStarting": "Запуск предпросмотра…",
     "PreviewUnavailable": "Предпросмотр недоступен"
   },
-  "LiveLayout": {
-    "Divider": "Изменить ширину столбца расшифровки"
-  },
   "LiveNotes": {
     "Placeholder": "Пишите заметки о встрече…",
     "CreateFailed": "Не удалось создать заметку. Ваш текст сохранён здесь."
@@ -4728,14 +4748,16 @@
     "NowWritingTo": "Теперь вы пишете в {{title}}",
     "TranscriptOff": "Живая расшифровка выключена.",
     "AskNeedsTranscript": "Вопросы работают, когда начнётся расшифровка.",
-    "NotesAndEvents": "Заметки и события",
-    "TranscriptAndAsk": "Расшифровка и вопросы",
     "RecordingTabs": "Запись",
     "AnswerReady": "{{tab}}, ответ готов",
-    "AskMoving": "Вопросы перейдут в сохранённую запись, когда она откроется."
+    "AskMoving": "Вопросы перейдут в сохранённую запись, когда она откроется.",
+    "HidePanel": "Скрыть боковую панель",
+    "ShowPanel": "Показать боковую панель",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Изменить ширину боковой панели"
   },
   "NoteRecord": {
-    "Record": "Запись",
+    "RecordIntoNote": "Записать в эту заметку",
     "Menu": "Другие способы записи",
     "Screen": "Записать экран",
     "Window": "Записать окно",
@@ -4757,7 +4779,8 @@
     "Dismiss": "Закрыть",
     "BackToMeeting": "Вернуться к встрече",
     "BackToMeetingHint": "Свернуть SeaMeet; управление останется на плавающей панели",
-    "TimeLabel": "Время записи {{time}}"
+    "TimeLabel": "Время записи {{time}}",
+    "StartedAt": "Запись начата в {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Живая расшифровка и вопросы",
@@ -4795,7 +4818,6 @@
     "OffOnDevice": "Никто: остаётся на этом компьютере"
   },
   "TeamShareMenu": {
-    "Open": "Поделиться…",
     "Title": "Доступ",
     "Loading": "Загрузка настроек доступа…",
     "LoadFailed": "Не удалось загрузить настройки доступа.",
@@ -5753,5 +5775,17 @@
     "Title": "Новый снимок экрана",
     "WindowHint": "Окно выбирается при захвате.",
     "ModeScreenSubOne": "Весь экран"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Идёт запись в эту заметку"
+  },
+  "MediaStage": {
+    "View": "Размер отображения",
+    "Fit": "По размеру",
+    "Actual": "100 %",
+    "ZoomIn": "Увеличить",
+    "ZoomOut": "Уменьшить",
+    "Theater": "Режим кинотеатра",
+    "FitWidth": "По ширине"
   }
 }

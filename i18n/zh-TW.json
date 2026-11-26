@@ -259,6 +259,7 @@
     "ConfigureProviders": "請在「設定」中啟用即時轉錄並設定 LLM 服務以產生 AI 摘要。",
     "ConfirmRename": "確認重命名",
     "Copy": "複製",
+    "CopyPart": "複製{{part}}",
     "DeepComplete": {
       "Badge": "深度 · Gemini 已分析此錄音",
       "Toast": "✨ 深度摘要已完成"
@@ -309,8 +310,13 @@
       "Vtt": "網頁字幕 (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "免費：前 {{minutes}} 分鐘",
+      "MenuMasked": "{{label}}，{{note}}",
       "Failed": "無法產生檔案，請再試一次。",
-      "Footer": "逐字稿未完 — 升級 Sync Pro 解鎖完整逐字稿：{{url}}"
+      "Footer": "逐字稿未完 — 升級 Sync Pro 解鎖完整逐字稿：{{url}}",
+      "AsTxt": "逐字稿（TXT）",
+      "AsSrt": "逐字稿（SRT）",
+      "AsVtt": "逐字稿（VTT）",
+      "AsDocx": "逐字稿（Word，DOCX）"
     },
     "ExportJson": "複製為 JSON",
     "ExportMarkdown": "複製為 Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "逐字稿"
     },
     "TabTitle": "人工智慧總結",
+    "TabsLabel": "錄音內容分區",
     "Topics": "主題：",
     "Version": {
       "Latest": "最新的",
@@ -2123,9 +2130,6 @@
       "Recording": "錄製"
     }
   },
-  "MediaCard": {
-    "Untitled": "未命名"
-  },
   "DesktopTeam": {
     "Workspace": "工作區",
     "RoleOwner": "擁有者",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "已匯出 {{count}} 個檔案",
     "Exporting": "正在匯出...",
     "FilteredStats": "{{filtered}} / {{total}} 個檔案",
-    "GridView": "網格檢視",
     "Import": "匯入",
-    "ListView": "列表檢視",
     "NoFiles": "尚無媒體檔案",
     "NoFilesHint": "錄製音訊/影片或匯入檔案以開始",
     "NoResults": "沒有符合篩選條件的檔案",
     "NoResultsHint": "試著調整搜尋或篩選條件",
     "Screenshots": "螢幕截圖",
-    "Search": "搜尋媒體檔案...",
+    "FilterByName": "篩選此資料庫",
+    "FileType": "檔案類型",
+    "Layout": "版面配置",
+    "Grid": "網格",
+    "List": "清單",
+    "SortNewest": "最新優先",
+    "SortOldest": "最舊優先",
+    "SortNameAZ": "名稱 A–Z",
+    "SortNameZA": "名稱 Z–A",
+    "SortLongest": "時長最長優先",
+    "SortShortest": "時長最短優先",
+    "SortLargest": "檔案最大優先",
+    "SortSmallest": "檔案最小優先",
     "SelectAll": "全選",
     "Selected": "已選擇 {{count}} 個",
     "Sort": "排序方式",
-    "SortByDate": "日期",
-    "SortByDuration": "長度",
-    "SortByName": "名稱",
-    "SortBySize": "大小",
     "Title": "媒體庫",
     "Video": "影片",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "已匯出 {{count}} 個檔案",
     "Selected_one": "已選取 {{count}} 個",
     "Selected_other": "已選取 {{count}} 個",
-    "ImportTooltip": "匯入媒體 · {{shortcut}} 貼上圖片"
+    "ImportTooltip": "匯入媒體 · {{shortcut}} 貼上圖片",
+    "Section": {
+      "ThisWeek": "本週",
+      "EarlierThisMonth": "本月稍早",
+      "Undated": "無日期"
+    },
+    "Image": "圖片",
+    "SelectRecordingAt": "選取 {{name}}，{{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "行動項目",
@@ -2852,6 +2869,7 @@
     "Pause": "暫停",
     "Play": "播放",
     "PlaybackSpeed": "播放速度",
+    "MoreControls": "更多播放控制項",
     "SkipBackward10": "-10秒",
     "SkipBackward10Short": "-10秒",
     "SkipBackward30": "-30秒",
@@ -2866,13 +2884,13 @@
     "Unmute": "取消靜音"
   },
   "PlayerCard": {
-    "ClosePlayback": "關閉播放",
     "CodecInfo": "編解碼資訊",
     "MoreOptions": "更多選項",
     "PlaybackRegion": "錄音播放",
     "Rename": "重新命名錄音",
     "OpenOnWeb": "在網頁中開啟",
-    "ShareViaWeb": "透過網頁分享"
+    "ShareViaWeb": "透過網頁分享",
+    "WorkspaceSharing": "工作區共用…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet 已成功更新。更新內容：",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "還沒",
     "CaptureStopped": "螢幕擷取已停止。錄製會繼續，但沒有新的畫面。",
     "RecordingPage": "錄製頁面",
-    "RecordingPageTitle": "前往正在錄製的頁面 · {{title}}"
+    "RecordingPageTitle": "前往正在錄製的頁面 · {{title}}",
+    "Change": "變更",
+    "ChangeAudio": "變更音訊設定"
   },
   "RecordingControls": {
     "ContinueRecording": "繼續錄音",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "使用訂閱或 BYOK 登入來處理影像。",
     "SubscribeToDescribe": "訂閱以啟用 AI 驅動的螢幕截圖分析。",
     "Tab": {
-      "Custom": "自訂提示",
       "Description": "描述",
-      "OCR": "此截圖中的文字"
+      "OCR": "此截圖中的文字",
+      "Text": "文字",
+      "CustomShort": "自訂"
     },
     "UnknownError": "未知錯誤",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "下載截圖描述。",
     "NoDescriptionForThis": "此截圖沒有說明。",
     "TextNotAvailableStore": "Microsoft Store 版本中無法使用。seameet.ai 的 Windows 安裝程式會在你的裝置上讀取文字。",
-    "TextNotAvailable": "這台電腦上無法使用。"
+    "TextNotAvailable": "這台電腦上無法使用。",
+    "TabsLabel": "快照區段",
+    "CopyAll": "全部複製"
   },
   "ScreenshotView": {
     "RecentLabel": "最近的截圖"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "正在啟動預覽…",
     "PreviewUnavailable": "無法使用預覽"
   },
-  "LiveLayout": {
-    "Divider": "調整逐字稿欄寬度"
-  },
   "LiveNotes": {
     "Placeholder": "寫會議筆記…",
     "CreateFailed": "無法建立筆記。你的文字仍保留在這裡。"
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "現在寫入 {{title}}",
     "TranscriptOff": "即時逐字稿已關閉。",
     "AskNeedsTranscript": "逐字稿開始後即可提問。",
-    "NotesAndEvents": "筆記和事件",
-    "TranscriptAndAsk": "逐字稿和提問",
     "RecordingTabs": "錄音",
     "AnswerReady": "{{tab}}，回答已就緒",
-    "AskMoving": "儲存的錄音開啟後，提問會移到那裡。"
+    "AskMoving": "儲存的錄音開啟後，提問會移到那裡。",
+    "HidePanel": "隱藏側邊面板",
+    "ShowPanel": "顯示側邊面板",
+    "TabWithCount": "{{tab}}，{{count}}",
+    "ResizeSide": "調整側邊面板寬度"
   },
   "NoteRecord": {
-    "Record": "錄製",
+    "RecordIntoNote": "錄製到此筆記",
     "Menu": "更多錄製方式",
     "Screen": "錄製螢幕",
     "Window": "錄製視窗",
@@ -4739,7 +4761,8 @@
     "Dismiss": "關閉",
     "BackToMeeting": "返回會議",
     "BackToMeetingHint": "最小化 SeaMeet；控制按鈕保留在浮動視窗中",
-    "TimeLabel": "錄製時間 {{time}}"
+    "TimeLabel": "錄製時間 {{time}}",
+    "StartedAt": "錄製開始於 {{time}}"
   },
   "NoteLivePanel": {
     "Region": "即時逐字稿與提問",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "無人：僅保留在這台電腦上"
   },
   "TeamShareMenu": {
-    "Open": "共用…",
     "Title": "共用狀態",
     "Loading": "正在載入共用設定…",
     "LoadFailed": "無法載入共用設定。",
@@ -5683,5 +5705,17 @@
     "Title": "新增螢幕截圖",
     "WindowHint": "擷取時再選擇視窗。",
     "ModeScreenSubOne": "整個螢幕"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "正在錄製到此筆記"
+  },
+  "MediaStage": {
+    "View": "顯示大小",
+    "Fit": "符合大小",
+    "Actual": "100%",
+    "ZoomIn": "放大",
+    "ZoomOut": "縮小",
+    "Theater": "劇院模式",
+    "FitWidth": "符合寬度"
   }
 }

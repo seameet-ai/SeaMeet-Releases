@@ -259,6 +259,7 @@
     "ConfigureProviders": "Dayakan transkripsi langsung dan sediakan pembekal LLM dalam Tetapan untuk menjana ringkasan AI.",
     "ConfirmRename": "Sahkan nama semula",
     "Copy": "salin",
+    "CopyPart": "Salin {{part}}",
     "DeepComplete": {
       "Badge": "Mendalam · Gemini menganalisis rakaman",
       "Toast": "✨ Ringkasan Mendalam sedia"
@@ -309,8 +310,13 @@
       "Vtt": "Sari kata web (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Percuma: {{minutes}} min pertama",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Fail tidak dapat dibuat. Cuba lagi.",
-      "Footer": "Transkrip bersambung — buka transkrip penuh dengan Sync Pro: {{url}}"
+      "Footer": "Transkrip bersambung — buka transkrip penuh dengan Sync Pro: {{url}}",
+      "AsTxt": "Transkrip sebagai TXT",
+      "AsSrt": "Transkrip sebagai SRT",
+      "AsVtt": "Transkrip sebagai VTT",
+      "AsDocx": "Transkrip sebagai Word (DOCX)"
     },
     "ExportJson": "Salin sebagai JSON",
     "ExportMarkdown": "Salin sebagai Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "Transkrip"
     },
     "TabTitle": "Ringkasan AI",
+    "TabsLabel": "Bahagian rakaman",
     "Topics": "Topik:",
     "Version": {
       "Latest": "Terkini",
@@ -2123,9 +2130,6 @@
       "Recording": "Rakaman"
     }
   },
-  "MediaCard": {
-    "Untitled": "Tiada Tajuk"
-  },
   "DesktopTeam": {
     "Workspace": "Ruang kerja",
     "RoleOwner": "Pemilik",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "Berjaya mengeksport {{count}} fail",
     "Exporting": "Sedang mengeksport...",
     "FilteredStats": "{{filtered}} daripada {{total}} fail",
-    "GridView": "Paparan Grid",
     "Import": "Import",
-    "ListView": "Paparan Senarai",
     "NoFiles": "Tiada fail media lagi",
     "NoFilesHint": "Rakam audio/video atau import fail untuk bermula",
     "NoResults": "Tiada fail yang sepadan dengan penapis anda",
     "NoResultsHint": "Cuba laraskan carian atau penapis anda",
     "Screenshots": "Tangkapan Skrin",
-    "Search": "Cari fail media...",
+    "FilterByName": "Tapis pustaka ini",
+    "FileType": "Jenis fail",
+    "Layout": "Susun atur",
+    "Grid": "Grid",
+    "List": "Senarai",
+    "SortNewest": "Terbaharu dahulu",
+    "SortOldest": "Terlama dahulu",
+    "SortNameAZ": "Nama A–Z",
+    "SortNameZA": "Nama Z–A",
+    "SortLongest": "Terpanjang dahulu",
+    "SortShortest": "Terpendek dahulu",
+    "SortLargest": "Terbesar dahulu",
+    "SortSmallest": "Terkecil dahulu",
     "SelectAll": "Pilih Semua",
     "Selected": "{{count}} dipilih",
     "Sort": "Susun mengikut",
-    "SortByDate": "Tarikh",
-    "SortByDuration": "Tempoh",
-    "SortByName": "Nama",
-    "SortBySize": "Saiz",
     "Title": "Perpustakaan Media",
     "Video": "Video",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}} fail dieksport",
     "Selected_one": "{{count}} dipilih",
     "Selected_other": "{{count}} dipilih",
-    "ImportTooltip": "Import media · {{shortcut}} menampal imej"
+    "ImportTooltip": "Import media · {{shortcut}} menampal imej",
+    "Section": {
+      "ThisWeek": "Minggu ini",
+      "EarlierThisMonth": "Lebih awal bulan ini",
+      "Undated": "Tiada tarikh"
+    },
+    "Image": "Imej",
+    "SelectRecordingAt": "Pilih {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Tindakan",
@@ -2852,6 +2869,7 @@
     "Pause": "Jeda",
     "Play": "Main",
     "PlaybackSpeed": "Kelajuan main balik",
+    "MoreControls": "Lagi kawalan main balik",
     "SkipBackward10": "-10 saat",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 saat",
@@ -2866,13 +2884,13 @@
     "Unmute": "Nyahsenyap"
   },
   "PlayerCard": {
-    "ClosePlayback": "Tutup putar balik",
     "CodecInfo": "Maklumat codec",
     "MoreOptions": "Lebih banyak pilihan",
     "PlaybackRegion": "Main balik rakaman",
     "Rename": "Namakan semula rakaman",
     "OpenOnWeb": "Buka di web",
-    "ShareViaWeb": "Kongsi melalui web"
+    "ShareViaWeb": "Kongsi melalui web",
+    "WorkspaceSharing": "Perkongsian ruang kerja…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet telah berjaya dikemas kini. Yang baharu:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "Belum lagi",
     "CaptureStopped": "Tangkapan skrin berhenti. Rakaman diteruskan tanpa video baharu.",
     "RecordingPage": "Halaman rakaman",
-    "RecordingPageTitle": "Pergi ke halaman rakaman yang sedang berjalan · {{title}}"
+    "RecordingPageTitle": "Pergi ke halaman rakaman yang sedang berjalan · {{title}}",
+    "Change": "Tukar",
+    "ChangeAudio": "Tukar tetapan audio"
   },
   "RecordingControls": {
     "ContinueRecording": "Hulurkan rakaman",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "Log masuk dengan langganan atau BYOK untuk memproses imej.",
     "SubscribeToDescribe": "Langgan untuk mengaktifkan analisis tangkapan skrin AI.",
     "Tab": {
-      "Custom": "Prompt Tersuai",
       "Description": "Penerangan",
-      "OCR": "Teks dalam tangkapan skrin ini"
+      "OCR": "Teks dalam tangkapan skrin ini",
+      "Text": "Teks",
+      "CustomShort": "Tersuai"
     },
     "UnknownError": "Ralat tidak diketahui",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "Muat turun penerangan tangkapan skrin.",
     "NoDescriptionForThis": "Tiada penerangan untuk tangkapan skrin ini.",
     "TextNotAvailableStore": "Tidak tersedia dalam versi Microsoft Store. Pemasang Windows daripada seameet.ai membaca teks pada peranti anda.",
-    "TextNotAvailable": "Tidak tersedia pada komputer ini."
+    "TextNotAvailable": "Tidak tersedia pada komputer ini.",
+    "TabsLabel": "Bahagian sangkapan skrin",
+    "CopyAll": "Salin semua"
   },
   "ScreenshotView": {
     "RecentLabel": "Tangkapan skrin terkini"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Memulakan pratonton…",
     "PreviewUnavailable": "Pratonton tidak tersedia"
   },
-  "LiveLayout": {
-    "Divider": "Ubah lebar lajur transkrip"
-  },
   "LiveNotes": {
     "Placeholder": "Tulis nota mesyuarat…",
     "CreateFailed": "Nota tidak dapat dibuat. Teks anda disimpan di sini."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Kini menulis dalam {{title}}",
     "TranscriptOff": "Transkrip langsung dimatikan.",
     "AskNeedsTranscript": "Tanya berfungsi sebaik transkrip bermula.",
-    "NotesAndEvents": "Nota dan acara",
-    "TranscriptAndAsk": "Transkrip dan Tanya",
     "RecordingTabs": "Rakaman",
     "AnswerReady": "{{tab}}, jawapan sedia",
-    "AskMoving": "Tanya berpindah ke rakaman yang disimpan apabila ia dibuka."
+    "AskMoving": "Tanya berpindah ke rakaman yang disimpan apabila ia dibuka.",
+    "HidePanel": "Sembunyikan panel sisi",
+    "ShowPanel": "Tunjukkan panel sisi",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Ubah saiz panel sisi"
   },
   "NoteRecord": {
-    "Record": "Rakam",
+    "RecordIntoNote": "Rakam ke dalam nota ini",
     "Menu": "Cara lain untuk merakam",
     "Screen": "Rakam skrin",
     "Window": "Rakam tetingkap",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Tutup",
     "BackToMeeting": "Kembali ke mesyuarat",
     "BackToMeetingHint": "Kecilkan SeaMeet; kawalan kekal pada floater",
-    "TimeLabel": "Masa rakaman {{time}}"
+    "TimeLabel": "Masa rakaman {{time}}",
+    "StartedAt": "Rakaman bermula {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Transkrip langsung dan soalan",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Tiada sesiapa: kekal pada komputer ini"
   },
   "TeamShareMenu": {
-    "Open": "Kongsi…",
     "Title": "Perkongsian",
     "Loading": "Memuatkan tetapan perkongsian…",
     "LoadFailed": "Tidak dapat memuatkan tetapan perkongsian.",
@@ -5683,5 +5705,17 @@
     "Title": "Tangkapan skrin baharu",
     "WindowHint": "Anda pilih tetingkap semasa merakam.",
     "ModeScreenSubOne": "Seluruh paparan"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Merakam ke dalam nota ini"
+  },
+  "MediaStage": {
+    "View": "Saiz paparan",
+    "Fit": "Muat",
+    "Actual": "100%",
+    "ZoomIn": "Zum masuk",
+    "ZoomOut": "Zum keluar",
+    "Theater": "Mod teater",
+    "FitWidth": "Muat lebar"
   }
 }

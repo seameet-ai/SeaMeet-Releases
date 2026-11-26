@@ -259,6 +259,7 @@
     "ConfigureProviders": "Aktifkan transkripsi langsung dan siapkan penyedia LLM di Pengaturan untuk menghasilkan ringkasan AI.",
     "ConfirmRename": "Konfirmasikan penggantian nama",
     "Copy": "Menyalin",
+    "CopyPart": "Salin {{part}}",
     "DeepComplete": {
       "Badge": "Mendalam · Gemini menganalisis rekaman",
       "Toast": "✨ Ringkasan Mendalam siap"
@@ -309,11 +310,16 @@
       "Vtt": "Subtitle web (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Gratis: {{minutes}} menit pertama",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "File tidak dapat dibuat. Coba lagi.",
-      "Footer": "Transkrip masih berlanjut — buka transkrip lengkap dengan Sync Pro: {{url}}"
+      "Footer": "Transkrip masih berlanjut — buka transkrip lengkap dengan Sync Pro: {{url}}",
+      "AsTxt": "Transkrip sebagai TXT",
+      "AsSrt": "Transkrip sebagai SRT",
+      "AsVtt": "Transkrip sebagai VTT",
+      "AsDocx": "Transkrip sebagai Word (DOCX)"
     },
     "ExportJson": "Salin sebagai JSON",
-    "ExportMarkdown": "Salin sebagai Penurunan Harga",
+    "ExportMarkdown": "Salin sebagai Markdown",
     "ExportSrt": "Salin sebagai SRT",
     "Generate": "Hasilkan Ringkasan",
     "HeroBand": {
@@ -385,6 +391,7 @@
       "Transcription": "Salinan"
     },
     "TabTitle": "Ringkasan AI",
+    "TabsLabel": "Bagian rekaman",
     "Topics": "Topik:",
     "Version": {
       "Latest": "Terbaru",
@@ -2123,9 +2130,6 @@
       "Recording": "Rekaman"
     }
   },
-  "MediaCard": {
-    "Untitled": "Tanpa Judul"
-  },
   "DesktopTeam": {
     "Workspace": "Ruang kerja",
     "RoleOwner": "Pemilik",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "Berhasil mengekspor {{count}} file",
     "Exporting": "Sedang mengekspor...",
     "FilteredStats": "{{filtered}} dari {{total}} file",
-    "GridView": "Tampilan Grid",
     "Import": "Impor",
-    "ListView": "Tampilan Daftar",
     "NoFiles": "Belum ada file media",
     "NoFilesHint": "Rekam audio/video atau impor file untuk memulai",
     "NoResults": "Tidak ada file yang sesuai dengan filter Anda",
     "NoResultsHint": "Coba sesuaikan pencarian atau filter Anda",
     "Screenshots": "Tangkapan Layar",
-    "Search": "Cari file media...",
+    "FilterByName": "Filter pustaka ini",
+    "FileType": "Jenis file",
+    "Layout": "Tata letak",
+    "Grid": "Grid",
+    "List": "Daftar",
+    "SortNewest": "Terbaru dulu",
+    "SortOldest": "Terlama dulu",
+    "SortNameAZ": "Nama A–Z",
+    "SortNameZA": "Nama Z–A",
+    "SortLongest": "Terpanjang dulu",
+    "SortShortest": "Terpendek dulu",
+    "SortLargest": "Terbesar dulu",
+    "SortSmallest": "Terkecil dulu",
     "SelectAll": "Pilih Semua",
     "Selected": "{{count}} dipilih",
     "Sort": "Urutkan berdasarkan",
-    "SortByDate": "Tanggal",
-    "SortByDuration": "Durasi",
-    "SortByName": "Nama",
-    "SortBySize": "Ukuran",
     "Title": "Perpustakaan Media",
     "Video": "Video",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}} file diekspor",
     "Selected_one": "{{count}} dipilih",
     "Selected_other": "{{count}} dipilih",
-    "ImportTooltip": "Impor media · {{shortcut}} menempel gambar"
+    "ImportTooltip": "Impor media · {{shortcut}} menempel gambar",
+    "Section": {
+      "ThisWeek": "Minggu ini",
+      "EarlierThisMonth": "Sebelumnya bulan ini",
+      "Undated": "Tanpa tanggal"
+    },
+    "Image": "Gambar",
+    "SelectRecordingAt": "Pilih {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Item Tindakan",
@@ -2852,6 +2869,7 @@
     "Pause": "Jeda",
     "Play": "Putar",
     "PlaybackSpeed": "Kecepatan pemutaran",
+    "MoreControls": "Kontrol pemutaran lainnya",
     "SkipBackward10": "-10 detik",
     "SkipBackward10Short": "-10 detik",
     "SkipBackward30": "-30 detik",
@@ -2866,13 +2884,13 @@
     "Unmute": "Bunyikan suara"
   },
   "PlayerCard": {
-    "ClosePlayback": "Tutup pemutaran",
     "CodecInfo": "Informasi kodek",
     "MoreOptions": "Opsi lainnya",
     "PlaybackRegion": "Pemutaran rekaman",
     "Rename": "Ganti nama rekaman",
     "OpenOnWeb": "Buka di web",
-    "ShareViaWeb": "Bagikan lewat web"
+    "ShareViaWeb": "Bagikan lewat web",
+    "WorkspaceSharing": "Berbagi di ruang kerja…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet berhasil diperbarui. Berikut yang baru:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "Belum",
     "CaptureStopped": "Perekaman layar berhenti. Rekaman berlanjut tanpa video baru.",
     "RecordingPage": "Halaman rekaman",
-    "RecordingPageTitle": "Buka halaman rekaman yang sedang berjalan · {{title}}"
+    "RecordingPageTitle": "Buka halaman rekaman yang sedang berjalan · {{title}}",
+    "Change": "Ubah",
+    "ChangeAudio": "Ubah pengaturan audio"
   },
   "RecordingControls": {
     "ContinueRecording": "Lanjutkan Perekaman",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "Masuk dengan berlangganan atau BYOK untuk memproses gambar.",
     "SubscribeToDescribe": "Berlangganan untuk mengaktifkan analisis tangkapan layar AI.",
     "Tab": {
-      "Custom": "Prompt Kustom",
       "Description": "Deskripsi",
-      "OCR": "Teks di tangkapan layar ini"
+      "OCR": "Teks di tangkapan layar ini",
+      "Text": "Teks",
+      "CustomShort": "Kustom"
     },
     "UnknownError": "Kesalahan tidak diketahui",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "Unduh deskripsi tangkapan layar.",
     "NoDescriptionForThis": "Tidak ada deskripsi untuk tangkapan layar ini.",
     "TextNotAvailableStore": "Tidak tersedia di versi Microsoft Store. Penginstal Windows dari seameet.ai membaca teks di perangkat Anda.",
-    "TextNotAvailable": "Tidak tersedia di komputer ini."
+    "TextNotAvailable": "Tidak tersedia di komputer ini.",
+    "TabsLabel": "Bagian tangkapan layar",
+    "CopyAll": "Salin semua"
   },
   "ScreenshotView": {
     "RecentLabel": "Tangkapan layar terbaru"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Memulai pratinjau…",
     "PreviewUnavailable": "Pratinjau tidak tersedia"
   },
-  "LiveLayout": {
-    "Divider": "Ubah lebar kolom transkrip"
-  },
   "LiveNotes": {
     "Placeholder": "Tulis catatan rapat…",
     "CreateFailed": "Catatan tidak dapat dibuat. Teks Anda tetap tersimpan di sini."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Sekarang menulis di {{title}}",
     "TranscriptOff": "Transkrip langsung nonaktif.",
     "AskNeedsTranscript": "Tanya berfungsi setelah transkrip dimulai.",
-    "NotesAndEvents": "Catatan dan peristiwa",
-    "TranscriptAndAsk": "Transkrip dan Tanya",
     "RecordingTabs": "Rekaman",
     "AnswerReady": "{{tab}}, jawaban siap",
-    "AskMoving": "Tanya pindah ke rekaman tersimpan saat dibuka."
+    "AskMoving": "Tanya pindah ke rekaman tersimpan saat dibuka.",
+    "HidePanel": "Sembunyikan panel samping",
+    "ShowPanel": "Tampilkan panel samping",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Ubah ukuran panel samping"
   },
   "NoteRecord": {
-    "Record": "Rekam",
+    "RecordIntoNote": "Rekam ke catatan ini",
     "Menu": "Cara lain untuk merekam",
     "Screen": "Rekam layar",
     "Window": "Rekam jendela",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Tutup",
     "BackToMeeting": "Kembali ke rapat",
     "BackToMeetingHint": "Perkecil SeaMeet; kontrol tetap ada di floater",
-    "TimeLabel": "Waktu rekaman {{time}}"
+    "TimeLabel": "Waktu rekaman {{time}}",
+    "StartedAt": "Rekaman dimulai {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Transkrip langsung dan tanya",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Tidak ada: tetap di komputer ini"
   },
   "TeamShareMenu": {
-    "Open": "Bagikan…",
     "Title": "Berbagi",
     "Loading": "Memuat setelan berbagi…",
     "LoadFailed": "Tidak dapat memuat setelan berbagi.",
@@ -5683,5 +5705,17 @@
     "Title": "Tangkapan layar baru",
     "WindowHint": "Anda memilih jendela saat mengambil tangkapan layar.",
     "ModeScreenSubOne": "Satu layar penuh"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Merekam ke catatan ini"
+  },
+  "MediaStage": {
+    "View": "Ukuran tampilan",
+    "Fit": "Sesuaikan",
+    "Actual": "100%",
+    "ZoomIn": "Perbesar",
+    "ZoomOut": "Perkecil",
+    "Theater": "Mode bioskop",
+    "FitWidth": "Sesuaikan lebar"
   }
 }

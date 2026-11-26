@@ -261,6 +261,7 @@
     "ConfigureProviders": "Activează transcrierea în direct și configurează un furnizor LLM în Setări pentru a genera rezumate AI.",
     "ConfirmRename": "Confirmați redenumirea",
     "Copy": "Copie",
+    "CopyPart": "Copiază {{part}}",
     "DeepComplete": {
       "Badge": "Aprofundat · Gemini a analizat înregistrarea",
       "Toast": "✨ Rezumatul Aprofundat este gata"
@@ -311,8 +312,13 @@
       "Vtt": "Subtitrări web (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Gratuit: primele {{minutes}} min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Fișierul nu a putut fi creat. Încearcă din nou.",
-      "Footer": "Transcrierea continuă — deblochează transcrierea completă cu Sync Pro: {{url}}"
+      "Footer": "Transcrierea continuă — deblochează transcrierea completă cu Sync Pro: {{url}}",
+      "AsTxt": "Transcriere ca TXT",
+      "AsSrt": "Transcriere ca SRT",
+      "AsVtt": "Transcriere ca VTT",
+      "AsDocx": "Transcriere ca Word (DOCX)"
     },
     "ExportJson": "Copiați ca JSON",
     "ExportMarkdown": "Copiați ca Markdown",
@@ -387,6 +393,7 @@
       "Transcription": "Transcriere"
     },
     "TabTitle": "Rezumat AI",
+    "TabsLabel": "Secțiunile înregistrării",
     "Topics": "Subiecte:",
     "Version": {
       "Latest": "Mai recent",
@@ -2126,9 +2133,6 @@
       "Recording": "Înregistrare"
     }
   },
-  "MediaCard": {
-    "Untitled": "Fără titlu"
-  },
   "DesktopTeam": {
     "Workspace": "Spațiul de lucru",
     "RoleOwner": "Proprietar",
@@ -2204,22 +2208,28 @@
     "ExportSuccess": "Au fost exportate {{count}} fișiere",
     "Exporting": "Se exportă...",
     "FilteredStats": "{{filtered}} din {{total}} fișiere",
-    "GridView": "Vizualizare grilă",
     "Import": "Importă",
-    "ListView": "Vizualizare listă",
     "NoFiles": "Nu există fișiere media încă",
     "NoFilesHint": "Înregistrează audio/video sau importă fișiere pentru a începe",
     "NoResults": "Niciun fișier nu corespunde filtrelor tale",
     "NoResultsHint": "Încearcă să ajustezi căutarea sau filtrele",
     "Screenshots": "Capturi de ecran",
-    "Search": "Caută fișiere media...",
+    "FilterByName": "Filtrează această bibliotecă",
+    "FileType": "Tip de fișier",
+    "Layout": "Aspect",
+    "Grid": "Grilă",
+    "List": "Listă",
+    "SortNewest": "Cele mai noi întâi",
+    "SortOldest": "Cele mai vechi întâi",
+    "SortNameAZ": "Nume A–Z",
+    "SortNameZA": "Nume Z–A",
+    "SortLongest": "Cele mai lungi întâi",
+    "SortShortest": "Cele mai scurte întâi",
+    "SortLargest": "Cele mai mari întâi",
+    "SortSmallest": "Cele mai mici întâi",
     "SelectAll": "Selectează tot",
     "Selected": "{{count}} selectate",
     "Sort": "Sortează după",
-    "SortByDate": "Dată",
-    "SortByDuration": "Durată",
-    "SortByName": "Nume",
-    "SortBySize": "Dimensiune",
     "Title": "Biblioteca Media",
     "Video": "Video",
     "OwnerFilter": {
@@ -2240,7 +2250,14 @@
     "ExportSuccess_other": "{{count}} fișiere exportate",
     "Selected_one": "{{count}} selectate",
     "Selected_other": "{{count}} selectate",
-    "ImportTooltip": "Importă media · {{shortcut}} lipește o imagine"
+    "ImportTooltip": "Importă media · {{shortcut}} lipește o imagine",
+    "Section": {
+      "ThisWeek": "Săptămâna aceasta",
+      "EarlierThisMonth": "Mai devreme în această lună",
+      "Undated": "Fără dată"
+    },
+    "Image": "Imagine",
+    "SelectRecordingAt": "Selectează {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Elemente de acțiune",
@@ -2858,6 +2875,7 @@
     "Pause": "Pauză",
     "Play": "Redare",
     "PlaybackSpeed": "Viteză de redare",
+    "MoreControls": "Mai multe comenzi de redare",
     "SkipBackward10": "-10 secunde",
     "SkipBackward10Short": "-10 s",
     "SkipBackward30": "-30 s",
@@ -2872,13 +2890,13 @@
     "Unmute": "Dezactivează mutul"
   },
   "PlayerCard": {
-    "ClosePlayback": "Oprește redarea",
     "CodecInfo": "Informații codec",
     "MoreOptions": "Mai multe opțiuni",
     "PlaybackRegion": "Redarea înregistrării",
     "Rename": "Redenumiți înregistrarea",
     "OpenOnWeb": "Deschide pe web",
-    "ShareViaWeb": "Distribuie prin web"
+    "ShareViaWeb": "Distribuie prin web",
+    "WorkspaceSharing": "Partajare în spațiul de lucru…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet a fost actualizat cu succes. Ce este nou:",
@@ -2992,7 +3010,9 @@
     "ConfirmReleaseNo": "Încă nu",
     "CaptureStopped": "Captura ecranului s-a oprit. Înregistrarea continuă fără video nou.",
     "RecordingPage": "Pagina înregistrării",
-    "RecordingPageTitle": "Mergi la pagina înregistrării în curs · {{title}}"
+    "RecordingPageTitle": "Mergi la pagina înregistrării în curs · {{title}}",
+    "Change": "Schimbă",
+    "ChangeAudio": "Schimbă setările audio"
   },
   "RecordingControls": {
     "ContinueRecording": "Continuare înregistrare",
@@ -3159,9 +3179,10 @@
     "SetupRequired": "Conectați-vă cu un abonament sau BYOK pentru a procesa imaginea.",
     "SubscribeToDescribe": "Abonați-vă pentru a activa analiza capturilor de ecran cu AI.",
     "Tab": {
-      "Custom": "Prompt personalizat",
       "Description": "Descriere",
-      "OCR": "Textul din această captură de ecran"
+      "OCR": "Textul din această captură de ecran",
+      "Text": "Text",
+      "CustomShort": "Personalizat"
     },
     "UnknownError": "Eroare necunoscută",
     "OcrWall": {
@@ -3184,7 +3205,9 @@
     "DownloadDescriptionsNoSize": "Descarcă descrierile capturilor de ecran.",
     "NoDescriptionForThis": "Nu există o descriere pentru această captură de ecran.",
     "TextNotAvailableStore": "Indisponibil în versiunea din Microsoft Store. Programul de instalare Windows de pe seameet.ai citește textul pe dispozitivul tău.",
-    "TextNotAvailable": "Indisponibil pe acest computer."
+    "TextNotAvailable": "Indisponibil pe acest computer.",
+    "TabsLabel": "Secțiunile capturii de ecran",
+    "CopyAll": "Copiază tot"
   },
   "ScreenshotView": {
     "RecentLabel": "Capturi recente"
@@ -4706,9 +4729,6 @@
     "PreviewStarting": "Se pornește previzualizarea…",
     "PreviewUnavailable": "Previzualizarea nu este disponibilă"
   },
-  "LiveLayout": {
-    "Divider": "Redimensionează coloana transcrierii"
-  },
   "LiveNotes": {
     "Placeholder": "Scrie notițele întâlnirii…",
     "CreateFailed": "Nu s-a putut crea notița. Textul tău este păstrat aici."
@@ -4719,14 +4739,16 @@
     "NowWritingTo": "Acum scrii în {{title}}",
     "TranscriptOff": "Transcrierea live este oprită.",
     "AskNeedsTranscript": "Întreabă funcționează după ce începe transcrierea.",
-    "NotesAndEvents": "Notițe și evenimente",
-    "TranscriptAndAsk": "Transcriere și Întreabă",
     "RecordingTabs": "Înregistrare",
     "AnswerReady": "{{tab}}, răspuns gata",
-    "AskMoving": "Întreabă trece la înregistrarea salvată când se deschide."
+    "AskMoving": "Întreabă trece la înregistrarea salvată când se deschide.",
+    "HidePanel": "Ascunde panoul lateral",
+    "ShowPanel": "Afișează panoul lateral",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Redimensionează panoul lateral"
   },
   "NoteRecord": {
-    "Record": "Înregistrează",
+    "RecordIntoNote": "Înregistrează în această notă",
     "Menu": "Alte moduri de înregistrare",
     "Screen": "Înregistrează ecranul",
     "Window": "Înregistrează o fereastră",
@@ -4748,7 +4770,8 @@
     "Dismiss": "Închide",
     "BackToMeeting": "Înapoi la ședință",
     "BackToMeetingHint": "Minimizează SeaMeet; bara plutitoare păstrează comenzile",
-    "TimeLabel": "Timp de înregistrare {{time}}"
+    "TimeLabel": "Timp de înregistrare {{time}}",
+    "StartedAt": "Înregistrare începută la {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Transcriere live și întrebări",
@@ -4786,7 +4809,6 @@
     "OffOnDevice": "Nimeni: rămâne pe acest computer"
   },
   "TeamShareMenu": {
-    "Open": "Partajează…",
     "Title": "Partajări",
     "Loading": "Se încarcă setările de partajare…",
     "LoadFailed": "Nu s-au putut încărca setările de partajare.",
@@ -5718,5 +5740,17 @@
     "Title": "Captură de ecran nouă",
     "WindowHint": "Alegi fereastra în momentul capturii.",
     "ModeScreenSubOne": "Un ecran întreg"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Se înregistrează în această notă"
+  },
+  "MediaStage": {
+    "View": "Dimensiune afișare",
+    "Fit": "Potrivire",
+    "Actual": "100%",
+    "ZoomIn": "Mărire",
+    "ZoomOut": "Micșorare",
+    "Theater": "Mod teatru",
+    "FitWidth": "Potrivire la lățime"
   }
 }

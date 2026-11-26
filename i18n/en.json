@@ -278,6 +278,7 @@
     "SubscribeToRegenerate": "Subscribe to regenerate AI summaries.",
     "ConfirmRename": "Confirm rename",
     "Copy": "Copy",
+    "CopyPart": "Copy {{part}}",
     "EditSegmentSpeaker": "Click to reassign this segment",
     "EnableRequired": "Enable AI Features in Settings → AI Features to see AI summaries.",
     "ReRunDeep": "Re-run Deep Analysis (uses additional Gemini tokens)",
@@ -336,8 +337,13 @@
       "Vtt": "Web subtitles (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Free: first {{minutes}} min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Couldn't create the file. Try again.",
-      "Footer": "Transcript continues — unlock the full transcript with Sync Pro: {{url}}"
+      "Footer": "Transcript continues — unlock the full transcript with Sync Pro: {{url}}",
+      "AsTxt": "Transcript as TXT",
+      "AsSrt": "Transcript as SRT",
+      "AsVtt": "Transcript as VTT",
+      "AsDocx": "Transcript as Word (DOCX)"
     },
     "ExportJson": "Copy as JSON",
     "ExportMarkdown": "Copy as Markdown",
@@ -383,6 +389,7 @@
     },
     "ScreenshotTabTitle": "AI Analysis",
     "TabTitle": "AI Extraction & Summary",
+    "TabsLabel": "Recording sections",
     "Topics": "Topics:",
     "Speakers": "Speakers",
     "VersionPicker": "Browse version history",
@@ -2654,6 +2661,7 @@
     "Pause": "Pause",
     "Play": "Play",
     "PlaybackSpeed": "Playback speed",
+    "MoreControls": "More playback controls",
     "SkipBackward10": "-10 seconds",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 seconds",
@@ -2668,13 +2676,13 @@
     "Unmute": "Unmute"
   },
   "PlayerCard": {
-    "ClosePlayback": "Close playback",
     "CodecInfo": "Codec information",
     "MoreOptions": "More options",
     "PlaybackRegion": "Recording playback",
     "Rename": "Rename recording",
     "OpenOnWeb": "Open on web",
-    "ShareViaWeb": "Share via web"
+    "ShareViaWeb": "Share via web",
+    "WorkspaceSharing": "Workspace sharing…"
   },
   "PostUpdateModal": {
     "Title": "Updated to v{{version}}",
@@ -2787,7 +2795,9 @@
     "ConfirmReleaseNo": "Not yet",
     "CaptureStopped": "Screen capture stopped. The recording continues without new video.",
     "RecordingPage": "Recording page",
-    "RecordingPageTitle": "Go to the live recording page · {{title}}"
+    "RecordingPageTitle": "Go to the live recording page · {{title}}",
+    "Change": "Change",
+    "ChangeAudio": "Change audio settings"
   },
   "RecordingControls": {
     "ContinueRecording": "Continue Recording",
@@ -2936,9 +2946,10 @@
     "ResultLabel": "AI Result",
     "SetupRequired": "Sign in with a subscription or BYOK to process the image.",
     "Tab": {
-      "Custom": "Custom Prompt",
       "Description": "Description",
-      "OCR": "Text in this screenshot"
+      "OCR": "Text in this screenshot",
+      "Text": "Text",
+      "CustomShort": "Custom"
     },
     "UnknownError": "Unknown error",
     "FallbackUsed": "{{from}} couldn't process the image — Gemini handled it instead.",
@@ -2963,7 +2974,9 @@
     "DownloadDescriptionsNoSize": "Download screenshot descriptions.",
     "NoDescriptionForThis": "No description for this screenshot.",
     "TextNotAvailableStore": "Not available in the Microsoft Store version. The Windows installer from seameet.ai reads text on your device.",
-    "TextNotAvailable": "Not available on this computer."
+    "TextNotAvailable": "Not available on this computer.",
+    "TabsLabel": "Screenshot sections",
+    "CopyAll": "Copy all"
   },
   "ScreenshotView": {
     "RecentLabel": "Recent screenshots"
@@ -4155,15 +4168,23 @@
   },
   "MediaLibrary": {
     "Title": "Media Library",
-    "Search": "Search media files...",
     "All": "All",
     "Audio": "Audio",
     "Video": "Video",
     "Screenshots": "Screenshots",
-    "SortByDate": "Date",
-    "SortByName": "Name",
-    "SortByDuration": "Duration",
-    "SortBySize": "Size",
+    "FilterByName": "Filter this library",
+    "FileType": "File type",
+    "Layout": "Layout",
+    "Grid": "Grid",
+    "List": "List",
+    "SortNewest": "Newest first",
+    "SortOldest": "Oldest first",
+    "SortNameAZ": "Name A–Z",
+    "SortNameZA": "Name Z–A",
+    "SortLongest": "Longest first",
+    "SortShortest": "Shortest first",
+    "SortLargest": "Largest first",
+    "SortSmallest": "Smallest first",
     "NoFiles": "No media files yet",
     "NoFilesHint": "Record audio/video or import files to get started",
     "NoResults": "No files match your filters",
@@ -4180,8 +4201,6 @@
     "ExportAllFailed": "Failed to export {{count}} files",
     "ExportFailed": "Export failed",
     "ConfirmBatchDelete": "Delete {{count}} files?",
-    "GridView": "Grid View",
-    "ListView": "List View",
     "Import": "Import",
     "ClearFilters": "Clear Filters",
     "BatchDeletePartial": "Deleted {{count}} of {{total}} files",
@@ -4204,10 +4223,14 @@
     "ExportSuccess_other": "Exported {{count}} files",
     "Selected_one": "{{count}} selected",
     "Selected_other": "{{count}} selected",
-    "ImportTooltip": "Import media · {{shortcut}} pastes an image"
-  },
-  "MediaCard": {
-    "Untitled": "Untitled"
+    "ImportTooltip": "Import media · {{shortcut}} pastes an image",
+    "Section": {
+      "ThisWeek": "This week",
+      "EarlierThisMonth": "Earlier this month",
+      "Undated": "No date"
+    },
+    "Image": "Image",
+    "SelectRecordingAt": "Select {{name}}, {{when}}"
   },
   "AITemplateSettings": {
     "MenuItem": "AI Summary Templates",
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Starting preview…",
     "PreviewUnavailable": "Preview isn't available"
   },
-  "LiveLayout": {
-    "Divider": "Resize the transcript column"
-  },
   "LiveNotes": {
     "Placeholder": "Write meeting notes…",
     "CreateFailed": "Couldn't create the note. Your text is kept here."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Now writing to {{title}}",
     "TranscriptOff": "Live transcript is off.",
     "AskNeedsTranscript": "Ask works once the transcript starts.",
-    "NotesAndEvents": "Notes and events",
-    "TranscriptAndAsk": "Transcript and Ask",
     "RecordingTabs": "Recording",
     "AnswerReady": "{{tab}}, answer ready",
-    "AskMoving": "Ask moves to the saved recording when it opens."
+    "AskMoving": "Ask moves to the saved recording when it opens.",
+    "HidePanel": "Hide side panel",
+    "ShowPanel": "Show side panel",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Resize the side panel"
   },
   "NoteRecord": {
-    "Record": "Record",
+    "RecordIntoNote": "Record into this note",
     "Menu": "More ways to record",
     "Screen": "Record screen",
     "Window": "Record a window",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Dismiss",
     "BackToMeeting": "Back to the meeting",
     "BackToMeetingHint": "Minimize SeaMeet; the floater keeps the controls",
-    "TimeLabel": "Recording time {{time}}"
+    "TimeLabel": "Recording time {{time}}",
+    "StartedAt": "Recording started {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Live transcript and Ask",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Nobody: it stays on this computer"
   },
   "TeamShareMenu": {
-    "Open": "Share…",
     "Title": "Sharing",
     "Loading": "Loading sharing settings…",
     "LoadFailed": "Could not load sharing settings.",
@@ -5683,5 +5705,17 @@
     "TextHeading": "Text in screenshots",
     "Title": "New screenshot",
     "WindowHint": "You pick the window when you capture."
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Recording into this note"
+  },
+  "MediaStage": {
+    "View": "Display size",
+    "Fit": "Fit",
+    "Actual": "100%",
+    "ZoomIn": "Zoom in",
+    "ZoomOut": "Zoom out",
+    "Theater": "Theater",
+    "FitWidth": "Fit width"
   }
 }

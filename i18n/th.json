@@ -259,6 +259,7 @@
     "ConfigureProviders": "เปิดใช้งานการถอดเสียงสดและตั้งค่าผู้ให้บริการ LLM ในการตั้งค่าเพื่อสร้างสรุปด้วย AI",
     "ConfirmRename": "ยืนยันการเปลี่ยนชื่อ",
     "Copy": "สำเนา",
+    "CopyPart": "คัดลอก{{part}}",
     "DeepComplete": {
       "Badge": "เชิงลึก · Gemini วิเคราะห์การบันทึกแล้ว",
       "Toast": "✨ สรุปเชิงลึกพร้อมแล้ว"
@@ -309,8 +310,13 @@
       "Vtt": "คำบรรยายเว็บ (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "ฟรี: {{minutes}} นาทีแรก",
+      "MenuMasked": "{{label}} {{note}}",
       "Failed": "สร้างไฟล์ไม่สำเร็จ โปรดลองใหม่",
-      "Footer": "ข้อความถอดเสียงยังมีต่อ — ปลดล็อกฉบับเต็มด้วย Sync Pro: {{url}}"
+      "Footer": "ข้อความถอดเสียงยังมีต่อ — ปลดล็อกฉบับเต็มด้วย Sync Pro: {{url}}",
+      "AsTxt": "ถอดความเป็น TXT",
+      "AsSrt": "ถอดความเป็น SRT",
+      "AsVtt": "ถอดความเป็น VTT",
+      "AsDocx": "ถอดความเป็น Word (DOCX)"
     },
     "ExportJson": "คัดลอกเป็น JSON",
     "ExportMarkdown": "คัดลอกเป็น Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "การถอดเสียง"
     },
     "TabTitle": "สรุป AI",
+    "TabsLabel": "ส่วนของการบันทึก",
     "Topics": "หัวข้อ:",
     "Version": {
       "Latest": "ล่าสุด",
@@ -2123,9 +2130,6 @@
       "Recording": "การบันทึก"
     }
   },
-  "MediaCard": {
-    "Untitled": "ไม่มีชื่อ"
-  },
   "DesktopTeam": {
     "Workspace": "เวิร์กสเปซ",
     "RoleOwner": "เจ้าของ",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "ส่งออกไฟล์ {{count}} ไฟล์เรียบร้อยแล้ว",
     "Exporting": "กำลังส่งออก...",
     "FilteredStats": "{{filtered}} จาก {{total}} ไฟล์",
-    "GridView": "มุมมองตาราง",
     "Import": "นำเข้า",
-    "ListView": "มุมมองรายการ",
     "NoFiles": "ยังไม่มีไฟล์สื่อ",
     "NoFilesHint": "บันทึกเสียง/วิดีโอ หรือ นำเข้าไฟล์เพื่อเริ่มต้น",
     "NoResults": "ไม่มีไฟล์ที่ตรงกับตัวกรองของคุณ",
     "NoResultsHint": "ลองปรับการค้นหาหรือตัวกรองของคุณ",
     "Screenshots": "ภาพหน้าจอ",
-    "Search": "ค้นหาไฟล์สื่อ...",
+    "FilterByName": "กรองคลังนี้",
+    "FileType": "ประเภทไฟล์",
+    "Layout": "เลย์เอาต์",
+    "Grid": "ตาราง",
+    "List": "รายการ",
+    "SortNewest": "ใหม่สุดก่อน",
+    "SortOldest": "เก่าสุดก่อน",
+    "SortNameAZ": "ชื่อ ก–ฮ",
+    "SortNameZA": "ชื่อ ฮ–ก",
+    "SortLongest": "ยาวสุดก่อน",
+    "SortShortest": "สั้นสุดก่อน",
+    "SortLargest": "ใหญ่สุดก่อน",
+    "SortSmallest": "เล็กสุดก่อน",
     "SelectAll": "เลือกทั้งหมด",
     "Selected": "เลือกแล้ว {{count}} รายการ",
     "Sort": "เรียงตาม",
-    "SortByDate": "วันที่",
-    "SortByDuration": "ระยะเวลา",
-    "SortByName": "ชื่อ",
-    "SortBySize": "ขนาด",
     "Title": "คลังสื่อ",
     "Video": "วิดีโอ",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "ส่งออก {{count}} ไฟล์แล้ว",
     "Selected_one": "เลือก {{count}} รายการ",
     "Selected_other": "เลือก {{count}} รายการ",
-    "ImportTooltip": "นำเข้าสื่อ · {{shortcut}} เพื่อวางรูปภาพ"
+    "ImportTooltip": "นำเข้าสื่อ · {{shortcut}} เพื่อวางรูปภาพ",
+    "Section": {
+      "ThisWeek": "สัปดาห์นี้",
+      "EarlierThisMonth": "ก่อนหน้านี้ในเดือนนี้",
+      "Undated": "ไม่มีวันที่"
+    },
+    "Image": "รูปภาพ",
+    "SelectRecordingAt": "เลือก {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "รายการการดำเนินการ",
@@ -2852,6 +2869,7 @@
     "Pause": "หยุดชั่วคราว",
     "Play": "เล่น",
     "PlaybackSpeed": "ความเร็วในการเล่น",
+    "MoreControls": "ตัวควบคุมการเล่นเพิ่มเติม",
     "SkipBackward10": "-10 วินาที",
     "SkipBackward10Short": "-10 วินาที",
     "SkipBackward30": "-30 วินาที",
@@ -2866,13 +2884,13 @@
     "Unmute": "เปิดเสียง"
   },
   "PlayerCard": {
-    "ClosePlayback": "ปิดเสียง",
     "CodecInfo": "รายละเอียด Codec",
     "MoreOptions": "ตัวเลือกเพิ่มเติม",
     "PlaybackRegion": "การเล่นบันทึก",
     "Rename": "เปลี่ยนชื่อบันทึก",
     "OpenOnWeb": "เปิดบนเว็บ",
-    "ShareViaWeb": "แชร์ผ่านเว็บ"
+    "ShareViaWeb": "แชร์ผ่านเว็บ",
+    "WorkspaceSharing": "การแชร์ในเวิร์กสเปซ…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet อัปเดตเรียบร้อยแล้ว มีอะไรใหม่:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "ยังไม่ได้",
     "CaptureStopped": "การจับภาพหน้าจอหยุดแล้ว การบันทึกยังดำเนินต่อโดยไม่มีวิดีโอใหม่",
     "RecordingPage": "หน้าการบันทึก",
-    "RecordingPageTitle": "ไปที่หน้าการบันทึกที่กำลังดำเนินอยู่ · {{title}}"
+    "RecordingPageTitle": "ไปที่หน้าการบันทึกที่กำลังดำเนินอยู่ · {{title}}",
+    "Change": "เปลี่ยน",
+    "ChangeAudio": "เปลี่ยนการตั้งค่าเสียง"
   },
   "RecordingControls": {
     "ContinueRecording": "ดำเนินการบันทึกเสียงต่อ",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "ลงชื่อเข้าใช้ด้วยการสมัครสมาชิกหรือ BYOK เพื่อประมวลผลภาพ",
     "SubscribeToDescribe": "สมัครสมาชิกเพื่อเปิดใช้งานการวิเคราะห์ภาพหน้าจอด้วย AI",
     "Tab": {
-      "Custom": "พรอมต์กำหนดเอง",
       "Description": "คำอธิบาย",
-      "OCR": "ข้อความในภาพหน้าจอนี้"
+      "OCR": "ข้อความในภาพหน้าจอนี้",
+      "Text": "ข้อความ",
+      "CustomShort": "กำหนดเอง"
     },
     "UnknownError": "ข้อผิดพลาดที่ไม่รู้จัก",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "ดาวน์โหลดคำอธิบายภาพหน้าจอ",
     "NoDescriptionForThis": "ไม่มีคำอธิบายสำหรับภาพหน้าจอนี้",
     "TextNotAvailableStore": "ใช้ไม่ได้ในเวอร์ชัน Microsoft Store ตัวติดตั้ง Windows จาก seameet.ai อ่านข้อความบนอุปกรณ์ของคุณ",
-    "TextNotAvailable": "ใช้ไม่ได้บนคอมพิวเตอร์เครื่องนี้"
+    "TextNotAvailable": "ใช้ไม่ได้บนคอมพิวเตอร์เครื่องนี้",
+    "TabsLabel": "ส่วนต่างๆ ของภาพหน้าจอ",
+    "CopyAll": "คัดลอกทั้งหมด"
   },
   "ScreenshotView": {
     "RecentLabel": "ภาพหน้าจอล่าสุด"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "กำลังเริ่มตัวอย่าง…",
     "PreviewUnavailable": "ตัวอย่างไม่พร้อมใช้งาน"
   },
-  "LiveLayout": {
-    "Divider": "ปรับความกว้างคอลัมน์บันทึกคำพูด"
-  },
   "LiveNotes": {
     "Placeholder": "เขียนบันทึกการประชุม…",
     "CreateFailed": "สร้างโน้ตไม่ได้ ข้อความของคุณยังอยู่ที่นี่"
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "กำลังเขียนลงใน {{title}}",
     "TranscriptOff": "บันทึกคำพูดสดปิดอยู่",
     "AskNeedsTranscript": "ถามได้เมื่อบันทึกคำพูดเริ่มแล้ว",
-    "NotesAndEvents": "โน้ตและเหตุการณ์",
-    "TranscriptAndAsk": "บันทึกคำพูดและถาม",
     "RecordingTabs": "การบันทึก",
     "AnswerReady": "{{tab}} คำตอบพร้อมแล้ว",
-    "AskMoving": "การถามจะย้ายไปที่การบันทึกที่บันทึกไว้เมื่อเปิดขึ้น"
+    "AskMoving": "การถามจะย้ายไปที่การบันทึกที่บันทึกไว้เมื่อเปิดขึ้น",
+    "HidePanel": "ซ่อนแผงด้านข้าง",
+    "ShowPanel": "แสดงแผงด้านข้าง",
+    "TabWithCount": "{{tab}} {{count}}",
+    "ResizeSide": "ปรับขนาดแผงด้านข้าง"
   },
   "NoteRecord": {
-    "Record": "บันทึก",
+    "RecordIntoNote": "บันทึกลงในโน้ตนี้",
     "Menu": "วิธีบันทึกอื่นๆ",
     "Screen": "บันทึกหน้าจอ",
     "Window": "บันทึกหน้าต่าง",
@@ -4739,7 +4761,8 @@
     "Dismiss": "ปิด",
     "BackToMeeting": "กลับไปที่การประชุม",
     "BackToMeetingHint": "ย่อ SeaMeet ลง ตัวควบคุมยังอยู่ที่แถบลอย",
-    "TimeLabel": "เวลาบันทึก {{time}}"
+    "TimeLabel": "เวลาบันทึก {{time}}",
+    "StartedAt": "เริ่มบันทึกเมื่อ {{time}}"
   },
   "NoteLivePanel": {
     "Region": "คำถอดเสียงสดและการถาม",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "ไม่มีใคร: อยู่ในคอมพิวเตอร์เครื่องนี้เท่านั้น"
   },
   "TeamShareMenu": {
-    "Open": "แชร์…",
     "Title": "การแชร์",
     "Loading": "กำลังโหลดการตั้งค่าการแชร์…",
     "LoadFailed": "โหลดการตั้งค่าการแชร์ไม่สำเร็จ",
@@ -5683,5 +5705,17 @@
     "Title": "ภาพหน้าจอใหม่",
     "WindowHint": "คุณจะเลือกหน้าต่างตอนจับภาพ",
     "ModeScreenSubOne": "หน้าจอทั้งหมด"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "กำลังบันทึกลงในโน้ตนี้"
+  },
+  "MediaStage": {
+    "View": "ขนาดการแสดงผล",
+    "Fit": "พอดี",
+    "Actual": "100%",
+    "ZoomIn": "ซูมเข้า",
+    "ZoomOut": "ซูมออก",
+    "Theater": "โหมดโรงภาพยนตร์",
+    "FitWidth": "พอดีความกว้าง"
   }
 }

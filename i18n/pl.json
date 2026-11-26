@@ -263,6 +263,7 @@
     "ConfigureProviders": "Włącz transkrypcję na żywo i skonfiguruj dostawcę LLM w Ustawieniach, aby generować podsumowania AI.",
     "ConfirmRename": "Potwierdź zmianę nazwy",
     "Copy": "Kopia",
+    "CopyPart": "Kopiuj: {{part}}",
     "DeepComplete": {
       "Badge": "Głębokie · Gemini przeanalizował nagranie",
       "Toast": "✨ Głębokie podsumowanie gotowe"
@@ -313,8 +314,13 @@
       "Vtt": "Napisy internetowe (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Za darmo: pierwsze {{minutes}} min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Nie udało się utworzyć pliku. Spróbuj ponownie.",
-      "Footer": "Transkrypcja jest dłuższa — odblokuj całą transkrypcję w Sync Pro: {{url}}"
+      "Footer": "Transkrypcja jest dłuższa — odblokuj całą transkrypcję w Sync Pro: {{url}}",
+      "AsTxt": "Transkrypcja jako TXT",
+      "AsSrt": "Transkrypcja jako SRT",
+      "AsVtt": "Transkrypcja jako VTT",
+      "AsDocx": "Transkrypcja jako Word (DOCX)"
     },
     "ExportJson": "Skopiuj jako JSON",
     "ExportMarkdown": "Skopiuj jako Markdown",
@@ -389,6 +395,7 @@
       "Transcription": "Transkrypcja"
     },
     "TabTitle": "Podsumowanie sztucznej inteligencji",
+    "TabsLabel": "Sekcje nagrania",
     "Topics": "Tematy:",
     "Version": {
       "Latest": "Najnowszy",
@@ -2129,9 +2136,6 @@
       "Recording": "Nagranie"
     }
   },
-  "MediaCard": {
-    "Untitled": "Bez tytułu"
-  },
   "DesktopTeam": {
     "Workspace": "Przestrzeń robocza",
     "RoleOwner": "Właściciel",
@@ -2207,22 +2211,28 @@
     "ExportSuccess": "Wyeksportowano {{count}} plików",
     "Exporting": "Eksportowanie...",
     "FilteredStats": "{{filtered}} z {{total}} plików",
-    "GridView": "Widok siatki",
     "Import": "Importuj",
-    "ListView": "Widok listy",
     "NoFiles": "Brak plików multimedialnych",
     "NoFilesHint": "Nagraj audio/wideo lub zaimportuj pliki, aby zacząć",
     "NoResults": "Brak plików pasujących do filtrów",
     "NoResultsHint": "Spróbuj zmienić wyszukiwanie lub filtry",
     "Screenshots": "Zrzuty ekranu",
-    "Search": "Szukaj plików multimedialnych...",
+    "FilterByName": "Filtruj tę bibliotekę",
+    "FileType": "Typ pliku",
+    "Layout": "Układ",
+    "Grid": "Siatka",
+    "List": "Lista",
+    "SortNewest": "Od najnowszych",
+    "SortOldest": "Od najstarszych",
+    "SortNameAZ": "Nazwa A–Z",
+    "SortNameZA": "Nazwa Z–A",
+    "SortLongest": "Od najdłuższych",
+    "SortShortest": "Od najkrótszych",
+    "SortLargest": "Od największych",
+    "SortSmallest": "Od najmniejszych",
     "SelectAll": "Zaznacz wszystko",
     "Selected": "{{count}} wybranych",
     "Sort": "Sortuj według",
-    "SortByDate": "Data",
-    "SortByDuration": "Czas trwania",
-    "SortByName": "Nazwa",
-    "SortBySize": "Rozmiar",
     "Title": "Biblioteka mediów",
     "Video": "Wideo",
     "OwnerFilter": {
@@ -2243,7 +2253,14 @@
     "ExportSuccess_other": "Wyeksportowano {{count}} plików",
     "Selected_one": "Zaznaczono {{count}}",
     "Selected_other": "Zaznaczono {{count}}",
-    "ImportTooltip": "Importuj multimedia · {{shortcut}} wkleja obraz"
+    "ImportTooltip": "Importuj multimedia · {{shortcut}} wkleja obraz",
+    "Section": {
+      "ThisWeek": "W tym tygodniu",
+      "EarlierThisMonth": "Wcześniej w tym miesiącu",
+      "Undated": "Brak daty"
+    },
+    "Image": "Obraz",
+    "SelectRecordingAt": "Zaznacz {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Zadania do wykonania",
@@ -2864,6 +2881,7 @@
     "Pause": "Pauza",
     "Play": "Grać",
     "PlaybackSpeed": "Szybkość odtwarzania",
+    "MoreControls": "Więcej elementów sterowania odtwarzaniem",
     "SkipBackward10": "-10 sekund",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 sekund",
@@ -2878,13 +2896,13 @@
     "Unmute": "Wyłącz wyciszenie"
   },
   "PlayerCard": {
-    "ClosePlayback": "Zamknij odtwarzanie",
     "CodecInfo": "informacje o kodeku",
     "MoreOptions": "Więcej opcji",
     "PlaybackRegion": "Odtwarzanie nagrania",
     "Rename": "Zmień nazwę nagrania",
     "OpenOnWeb": "Otwórz w sieci",
-    "ShareViaWeb": "Udostępnij przez web"
+    "ShareViaWeb": "Udostępnij przez web",
+    "WorkspaceSharing": "Udostępnianie w przestrzeni roboczej…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet został pomyślnie zaktualizowany. Co nowego:",
@@ -2999,7 +3017,9 @@
     "ConfirmReleaseNo": "Jeszcze nie",
     "CaptureStopped": "Przechwytywanie ekranu zatrzymane. Nagrywanie trwa bez nowego obrazu.",
     "RecordingPage": "Strona nagrania",
-    "RecordingPageTitle": "Przejdź do strony trwającego nagrania · {{title}}"
+    "RecordingPageTitle": "Przejdź do strony trwającego nagrania · {{title}}",
+    "Change": "Zmień",
+    "ChangeAudio": "Zmień ustawienia dźwięku"
   },
   "RecordingControls": {
     "ContinueRecording": "Kontynuuj nagrywanie",
@@ -3166,9 +3186,10 @@
     "SetupRequired": "Zaloguj się za pomocą subskrypcji lub BYOK, aby przetworzyć obraz.",
     "SubscribeToDescribe": "Subskrybuj, aby włączyć analizę zrzutów ekranu AI.",
     "Tab": {
-      "Custom": "Niestandardowy prompt",
       "Description": "Opis",
-      "OCR": "Tekst na tym zrzucie ekranu"
+      "OCR": "Tekst na tym zrzucie ekranu",
+      "Text": "Tekst",
+      "CustomShort": "Własne"
     },
     "UnknownError": "Nieznany błąd",
     "OcrWall": {
@@ -3191,7 +3212,9 @@
     "DownloadDescriptionsNoSize": "Pobierz opisy zrzutów ekranu.",
     "NoDescriptionForThis": "Brak opisu tego zrzutu ekranu.",
     "TextNotAvailableStore": "Niedostępne w wersji ze Sklepu Microsoft. Instalator Windows z seameet.ai odczytuje tekst na Twoim urządzeniu.",
-    "TextNotAvailable": "Niedostępne na tym komputerze."
+    "TextNotAvailable": "Niedostępne na tym komputerze.",
+    "TabsLabel": "Sekcje zrzutu ekranu",
+    "CopyAll": "Kopiuj wszystko"
   },
   "ScreenshotView": {
     "RecentLabel": "Najnowsze zrzuty ekranu"
@@ -4715,9 +4738,6 @@
     "PreviewStarting": "Uruchamianie podglądu…",
     "PreviewUnavailable": "Podgląd jest niedostępny"
   },
-  "LiveLayout": {
-    "Divider": "Zmień szerokość kolumny transkrypcji"
-  },
   "LiveNotes": {
     "Placeholder": "Pisz notatki ze spotkania…",
     "CreateFailed": "Nie udało się utworzyć notatki. Twój tekst jest tutaj zachowany."
@@ -4728,14 +4748,16 @@
     "NowWritingTo": "Teraz piszesz w {{title}}",
     "TranscriptOff": "Transkrypcja na żywo jest wyłączona.",
     "AskNeedsTranscript": "Pytanie działa, gdy zacznie się transkrypcja.",
-    "NotesAndEvents": "Notatki i zdarzenia",
-    "TranscriptAndAsk": "Transkrypcja i Pytanie",
     "RecordingTabs": "Nagranie",
     "AnswerReady": "{{tab}}, odpowiedź gotowa",
-    "AskMoving": "Pytanie przejdzie do zapisanego nagrania po jego otwarciu."
+    "AskMoving": "Pytanie przejdzie do zapisanego nagrania po jego otwarciu.",
+    "HidePanel": "Ukryj panel boczny",
+    "ShowPanel": "Pokaż panel boczny",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Zmień szerokość panelu bocznego"
   },
   "NoteRecord": {
-    "Record": "Nagraj",
+    "RecordIntoNote": "Nagrywaj do tej notatki",
     "Menu": "Więcej sposobów nagrywania",
     "Screen": "Nagraj ekran",
     "Window": "Nagraj okno",
@@ -4757,7 +4779,8 @@
     "Dismiss": "Zamknij",
     "BackToMeeting": "Wróć do spotkania",
     "BackToMeetingHint": "Zminimalizuj SeaMeet; pływający pasek zachowa sterowanie",
-    "TimeLabel": "Czas nagrania {{time}}"
+    "TimeLabel": "Czas nagrania {{time}}",
+    "StartedAt": "Nagrywanie rozpoczęte {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Transkrypcja na żywo i pytania",
@@ -4795,7 +4818,6 @@
     "OffOnDevice": "Nikt: zostaje na tym komputerze"
   },
   "TeamShareMenu": {
-    "Open": "Udostępnij…",
     "Title": "Udostępnianie",
     "Loading": "Wczytywanie ustawień udostępniania…",
     "LoadFailed": "Nie udało się wczytać ustawień udostępniania.",
@@ -5753,5 +5775,17 @@
     "Title": "Nowy zrzut ekranu",
     "WindowHint": "Okno wybierasz podczas przechwytywania.",
     "ModeScreenSubOne": "Cały ekran"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Nagrywanie do tej notatki"
+  },
+  "MediaStage": {
+    "View": "Rozmiar wyświetlania",
+    "Fit": "Dopasuj",
+    "Actual": "100%",
+    "ZoomIn": "Powiększ",
+    "ZoomOut": "Pomniejsz",
+    "Theater": "Tryb kinowy",
+    "FitWidth": "Dopasuj szerokość"
   }
 }

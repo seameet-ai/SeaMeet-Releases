@@ -267,6 +267,7 @@
     "ConfigureProviders": "فعّل النسخ المباشر وأعدّ مزود LLM في الإعدادات لإنشاء ملخصات الذكاء الاصطناعي.",
     "ConfirmRename": "تأكيد إعادة التسمية",
     "Copy": "ينسخ",
+    "CopyPart": "نسخ {{part}}",
     "DeepComplete": {
       "Badge": "عميق · حلل Gemini التسجيل",
       "Toast": "✨ الملخص العميق جاهز"
@@ -317,11 +318,16 @@
       "Vtt": "ترجمة مصاحبة للويب (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "مجانًا: أول {{minutes}} دقيقة",
+      "MenuMasked": "{{label}}، {{note}}",
       "Failed": "تعذّر إنشاء الملف. حاول مرة أخرى.",
-      "Footer": "يتواصل النص المفرّغ — افتح النص الكامل مع Sync Pro: {{url}}"
+      "Footer": "يتواصل النص المفرّغ — افتح النص الكامل مع Sync Pro: {{url}}",
+      "AsTxt": "التفريغ النصي بصيغة TXT",
+      "AsSrt": "التفريغ النصي بصيغة SRT",
+      "AsVtt": "التفريغ النصي بصيغة VTT",
+      "AsDocx": "التفريغ النصي بصيغة Word (DOCX)"
     },
     "ExportJson": "انسخ كـ JSON",
-    "ExportMarkdown": "نسخ كتخفيض السعر",
+    "ExportMarkdown": "نسخ بتنسيق Markdown",
     "ExportSrt": "انسخ كـ SRT",
     "Generate": "إنشاء ملخص",
     "HeroBand": {
@@ -393,6 +399,7 @@
       "Transcription": "نص"
     },
     "TabTitle": "ملخص الذكاء الاصطناعي",
+    "TabsLabel": "أقسام التسجيل",
     "Topics": "المواضيع:",
     "Version": {
       "Latest": "أحدث",
@@ -2135,9 +2142,6 @@
       "Recording": "تسجيل"
     }
   },
-  "MediaCard": {
-    "Untitled": "بدون عنوان"
-  },
   "DesktopTeam": {
     "Workspace": "مساحة العمل",
     "RoleOwner": "المالك",
@@ -2213,22 +2217,28 @@
     "ExportSuccess": "تم تصدير {{count}} ملف",
     "Exporting": "جارٍ التصدير...",
     "FilteredStats": "{{filtered}} من {{total}} ملف",
-    "GridView": "عرض الشبكة",
     "Import": "استيراد",
-    "ListView": "عرض القائمة",
     "NoFiles": "لا توجد ملفات وسائط بعد",
     "NoFilesHint": "سجل صوت/فيديو أو استورد ملفات للبدء",
     "NoResults": "لا توجد ملفات تطابق عوامل التصفية الخاصة بك",
     "NoResultsHint": "حاول تعديل البحث أو عوامل التصفية",
     "Screenshots": "لقطات الشاشة",
-    "Search": "ابحث في ملفات الوسائط...",
+    "FilterByName": "تصفية هذه المكتبة",
+    "FileType": "نوع الملف",
+    "Layout": "التخطيط",
+    "Grid": "شبكة",
+    "List": "قائمة",
+    "SortNewest": "الأحدث أولاً",
+    "SortOldest": "الأقدم أولاً",
+    "SortNameAZ": "الاسم (أ–ي)",
+    "SortNameZA": "الاسم (ي–أ)",
+    "SortLongest": "الأطول أولاً",
+    "SortShortest": "الأقصر أولاً",
+    "SortLargest": "الأكبر أولاً",
+    "SortSmallest": "الأصغر أولاً",
     "SelectAll": "تحديد الكل",
     "Selected": "{{count}} محدد",
     "Sort": "ترتيب حسب",
-    "SortByDate": "التاريخ",
-    "SortByDuration": "المدة",
-    "SortByName": "الاسم",
-    "SortBySize": "الحجم",
     "Title": "مكتبة الوسائط",
     "Video": "فيديو",
     "OwnerFilter": {
@@ -2249,7 +2259,14 @@
     "ExportSuccess_other": "تم تصدير {{count}} ملفات",
     "Selected_one": "{{count}} محدد",
     "Selected_other": "{{count}} محدد",
-    "ImportTooltip": "استيراد وسائط · {{shortcut}} للصق صورة"
+    "ImportTooltip": "استيراد وسائط · {{shortcut}} للصق صورة",
+    "Section": {
+      "ThisWeek": "هذا الأسبوع",
+      "EarlierThisMonth": "في وقت سابق من هذا الشهر",
+      "Undated": "بلا تاريخ"
+    },
+    "Image": "صورة",
+    "SelectRecordingAt": "تحديد {{name}}، {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "عناصر الإجراء",
@@ -2876,6 +2893,7 @@
     "Pause": "إيقاف مؤقت",
     "Play": "تشغيل",
     "PlaybackSpeed": "سرعة التشغيل",
+    "MoreControls": "المزيد من عناصر التحكم في التشغيل",
     "SkipBackward10": "-10 ث",
     "SkipBackward10Short": "-10 ثوانٍ",
     "SkipBackward30": "-30 ث",
@@ -2890,13 +2908,13 @@
     "Unmute": "إلغاء كتم الصوت"
   },
   "PlayerCard": {
-    "ClosePlayback": "إغلاق التشغيل",
     "CodecInfo": "معلومات الترميز",
     "MoreOptions": "خيارات إضافية",
     "PlaybackRegion": "تشغيل التسجيل",
     "Rename": "إعادة تسمية التسجيل",
     "OpenOnWeb": "فتح على الويب",
-    "ShareViaWeb": "المشاركة عبر الويب"
+    "ShareViaWeb": "المشاركة عبر الويب",
+    "WorkspaceSharing": "المشاركة في مساحة العمل…"
   },
   "PostUpdateModal": {
     "Description": "تم تحديث SeaMeet بنجاح. إليك الجديد:",
@@ -3013,7 +3031,9 @@
     "ConfirmReleaseNo": "ليس بعد",
     "CaptureStopped": "توقف التقاط الشاشة. يستمر التسجيل بدون فيديو جديد.",
     "RecordingPage": "صفحة التسجيل",
-    "RecordingPageTitle": "انتقل إلى صفحة التسجيل المباشر · {{title}}"
+    "RecordingPageTitle": "انتقل إلى صفحة التسجيل المباشر · {{title}}",
+    "Change": "تغيير",
+    "ChangeAudio": "تغيير إعدادات الصوت"
   },
   "RecordingControls": {
     "ContinueRecording": "استمر في التسجيل",
@@ -3180,9 +3200,10 @@
     "SetupRequired": "قم بتسجيل الدخول باستخدام اشتراك أو BYOK لمعالجة الصورة.",
     "SubscribeToDescribe": "اشترك لتفعيل تحليل لقطات الشاشة بالذكاء الاصطناعي.",
     "Tab": {
-      "Custom": "موجه مخصص",
       "Description": "الوصف",
-      "OCR": "النص في لقطة الشاشة هذه"
+      "OCR": "النص في لقطة الشاشة هذه",
+      "Text": "النص",
+      "CustomShort": "مخصص"
     },
     "UnknownError": "خطأ غير معروف",
     "OcrWall": {
@@ -3205,7 +3226,9 @@
     "DownloadDescriptionsNoSize": "نزّل أوصاف لقطات الشاشة.",
     "NoDescriptionForThis": "لا يوجد وصف لهذه اللقطة.",
     "TextNotAvailableStore": "غير متاح في إصدار Microsoft Store. يقرأ مثبّت Windows من seameet.ai النص على جهازك.",
-    "TextNotAvailable": "غير متاح على هذا الكمبيوتر."
+    "TextNotAvailable": "غير متاح على هذا الكمبيوتر.",
+    "TabsLabel": "أقسام لقطة الشاشة",
+    "CopyAll": "نسخ الكل"
   },
   "ScreenshotView": {
     "RecentLabel": "لقطات الشاشة الأخيرة"
@@ -4733,9 +4756,6 @@
     "PreviewStarting": "جارٍ بدء المعاينة…",
     "PreviewUnavailable": "المعاينة غير متاحة"
   },
-  "LiveLayout": {
-    "Divider": "تغيير عرض عمود النسخ النصي"
-  },
   "LiveNotes": {
     "Placeholder": "اكتب ملاحظات الاجتماع…",
     "CreateFailed": "تعذّر إنشاء الملاحظة. نصك محفوظ هنا."
@@ -4746,14 +4766,16 @@
     "NowWritingTo": "تتم الكتابة الآن في {{title}}",
     "TranscriptOff": "النسخ النصي المباشر متوقف.",
     "AskNeedsTranscript": "يعمل «اسأل» بعد بدء النسخ النصي.",
-    "NotesAndEvents": "الملاحظات والأحداث",
-    "TranscriptAndAsk": "النسخ النصي و«اسأل»",
     "RecordingTabs": "التسجيل",
     "AnswerReady": "{{tab}}، الإجابة جاهزة",
-    "AskMoving": "تنتقل المحادثة إلى التسجيل المحفوظ عند فتحه."
+    "AskMoving": "تنتقل المحادثة إلى التسجيل المحفوظ عند فتحه.",
+    "HidePanel": "إخفاء اللوحة الجانبية",
+    "ShowPanel": "إظهار اللوحة الجانبية",
+    "TabWithCount": "{{tab}}، {{count}}",
+    "ResizeSide": "تغيير حجم اللوحة الجانبية"
   },
   "NoteRecord": {
-    "Record": "تسجيل",
+    "RecordIntoNote": "سجّل في هذه الملاحظة",
     "Menu": "طرق أخرى للتسجيل",
     "Screen": "تسجيل الشاشة",
     "Window": "تسجيل نافذة",
@@ -4775,7 +4797,8 @@
     "Dismiss": "إغلاق",
     "BackToMeeting": "العودة إلى الاجتماع",
     "BackToMeetingHint": "تصغير SeaMeet؛ تبقى عناصر التحكم في النافذة العائمة",
-    "TimeLabel": "وقت التسجيل {{time}}"
+    "TimeLabel": "وقت التسجيل {{time}}",
+    "StartedAt": "بدأ التسجيل {{time}}"
   },
   "NoteLivePanel": {
     "Region": "النص المباشر والأسئلة",
@@ -4813,7 +4836,6 @@
     "OffOnDevice": "لا أحد: يبقى على هذا الكمبيوتر"
   },
   "TeamShareMenu": {
-    "Open": "مشاركة…",
     "Title": "المشاركة",
     "Loading": "جارٍ تحميل إعدادات المشاركة…",
     "LoadFailed": "تعذر تحميل إعدادات المشاركة.",
@@ -5823,5 +5845,17 @@
     "Title": "لقطة شاشة جديدة",
     "WindowHint": "تختار النافذة عند الالتقاط.",
     "ModeScreenSubOne": "شاشة كاملة"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "يتم التسجيل في هذه الملاحظة"
+  },
+  "MediaStage": {
+    "View": "حجم العرض",
+    "Fit": "ملاءمة",
+    "Actual": "100%",
+    "ZoomIn": "تكبير",
+    "ZoomOut": "تصغير",
+    "Theater": "وضع المسرح",
+    "FitWidth": "ملاءمة العرض"
   }
 }

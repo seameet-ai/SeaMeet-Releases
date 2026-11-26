@@ -259,6 +259,7 @@
     "ConfigureProviders": "AI सारांश बनाने के लिए सेटिंग्स में लाइव ट्रांसक्रिप्शन सक्षम करें और एक LLM प्रदाता सेट करें।",
     "ConfirmRename": "नाम बदलने की पुष्टि करें",
     "Copy": "प्रतिलिपि",
+    "CopyPart": "{{part}} कॉपी करें",
     "DeepComplete": {
       "Badge": "डीप · Gemini ने रिकॉर्डिंग का विश्लेषण किया",
       "Toast": "✨ डीप सारांश तैयार है"
@@ -309,8 +310,13 @@
       "Vtt": "वेब सबटाइटल (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "मुफ़्त: पहले {{minutes}} मिनट",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "फ़ाइल नहीं बन सकी। दोबारा कोशिश करें।",
-      "Footer": "ट्रांसक्रिप्ट आगे जारी है — Sync Pro के साथ पूरा ट्रांसक्रिप्ट अनलॉक करें: {{url}}"
+      "Footer": "ट्रांसक्रिप्ट आगे जारी है — Sync Pro के साथ पूरा ट्रांसक्रिप्ट अनलॉक करें: {{url}}",
+      "AsTxt": "ट्रांसक्रिप्ट TXT के रूप में",
+      "AsSrt": "ट्रांसक्रिप्ट SRT के रूप में",
+      "AsVtt": "ट्रांसक्रिप्ट VTT के रूप में",
+      "AsDocx": "ट्रांसक्रिप्ट Word (DOCX) के रूप में"
     },
     "ExportJson": "JSON के रूप में कॉपी करें",
     "ExportMarkdown": "मार्कडाउन के रूप में कॉपी करें",
@@ -385,6 +391,7 @@
       "Transcription": "प्रतिलिपि"
     },
     "TabTitle": "एआई सारांश",
+    "TabsLabel": "रिकॉर्डिंग के अनुभाग",
     "Topics": "विषय:",
     "Version": {
       "Latest": "नवीनतम",
@@ -2123,9 +2130,6 @@
       "Recording": "रिकॉर्डिंग"
     }
   },
-  "MediaCard": {
-    "Untitled": "शीर्षकहीन"
-  },
   "DesktopTeam": {
     "Workspace": "वर्कस्पेस",
     "RoleOwner": "स्वामी",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "{{count}} फ़ाइलें निर्यात की गईं",
     "Exporting": "निर्यात किया जा रहा है...",
     "FilteredStats": "{{filtered}} में से {{total}} फ़ाइलें",
-    "GridView": "ग्रिड दृश्य",
     "Import": "आयात करें",
-    "ListView": "सूची दृश्य",
     "NoFiles": "अभी कोई मीडिया फ़ाइलें नहीं",
     "NoFilesHint": "शुरू करने के लिए ऑडियो/वीडियो रिकॉर्ड करें या फ़ाइलें आयात करें",
     "NoResults": "आपके फ़िल्टर से कोई फ़ाइल मेल नहीं खाती",
     "NoResultsHint": "अपनी खोज या फ़िल्टर समायोजित करने का प्रयास करें",
     "Screenshots": "स्क्रीनशॉट्स",
-    "Search": "मीडिया फ़ाइलें खोजें...",
+    "FilterByName": "इस लाइब्रेरी को फ़िल्टर करें",
+    "FileType": "फ़ाइल प्रकार",
+    "Layout": "लेआउट",
+    "Grid": "ग्रिड",
+    "List": "सूची",
+    "SortNewest": "सबसे नया पहले",
+    "SortOldest": "सबसे पुराना पहले",
+    "SortNameAZ": "नाम A–Z",
+    "SortNameZA": "नाम Z–A",
+    "SortLongest": "सबसे लंबी अवधि पहले",
+    "SortShortest": "सबसे कम अवधि पहले",
+    "SortLargest": "सबसे बड़ी फ़ाइल पहले",
+    "SortSmallest": "सबसे छोटी फ़ाइल पहले",
     "SelectAll": "सभी चुनें",
     "Selected": "{{count}} चयनित",
     "Sort": "इसके अनुसार क्रमबद्ध करें",
-    "SortByDate": "तारीख",
-    "SortByDuration": "अवधि",
-    "SortByName": "नाम",
-    "SortBySize": "आकार",
     "Title": "मीडिया लाइब्रेरी",
     "Video": "वीडियो",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}} फ़ाइलें एक्सपोर्ट की गईं",
     "Selected_one": "{{count}} चयनित",
     "Selected_other": "{{count}} चयनित",
-    "ImportTooltip": "मीडिया आयात करें · {{shortcut}} से छवि पेस्ट करें"
+    "ImportTooltip": "मीडिया आयात करें · {{shortcut}} से छवि पेस्ट करें",
+    "Section": {
+      "ThisWeek": "इस सप्ताह",
+      "EarlierThisMonth": "इस महीने पहले",
+      "Undated": "कोई तारीख नहीं"
+    },
+    "Image": "छवि",
+    "SelectRecordingAt": "{{name}}, {{when}} चुनें"
   },
   "MeetSeasaltAi": {
     "ActionItems": "क्रिया आइटम",
@@ -2852,6 +2869,7 @@
     "Pause": "रोकें",
     "Play": "चलाएँ",
     "PlaybackSpeed": "प्लेबैक गति",
+    "MoreControls": "प्लेबैक के और नियंत्रण",
     "SkipBackward10": "-10 सेकंड",
     "SkipBackward10Short": "-10 सेकंड",
     "SkipBackward30": "-30 सेकंड",
@@ -2866,13 +2884,13 @@
     "Unmute": "म्यूट हटाएँ"
   },
   "PlayerCard": {
-    "ClosePlayback": "प्लेबैक बंद करें",
     "CodecInfo": "Codec जानकारी",
     "MoreOptions": "अधिक विकल्प",
     "PlaybackRegion": "रिकॉर्डिंग प्लेबैक",
     "Rename": "रिकॉर्डिंग का नाम बदलें",
     "OpenOnWeb": "वेब पर खोलें",
-    "ShareViaWeb": "वेब से साझा करें"
+    "ShareViaWeb": "वेब से साझा करें",
+    "WorkspaceSharing": "वर्कस्पेस में साझाकरण…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet सफलतापूर्वक अपडेट हो गया। नया क्या है:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "अभी नहीं",
     "CaptureStopped": "स्क्रीन कैप्चर रुक गया। रिकॉर्डिंग बिना नए वीडियो के जारी है।",
     "RecordingPage": "रिकॉर्डिंग पेज",
-    "RecordingPageTitle": "लाइव रिकॉर्डिंग पेज पर जाएँ · {{title}}"
+    "RecordingPageTitle": "लाइव रिकॉर्डिंग पेज पर जाएँ · {{title}}",
+    "Change": "बदलें",
+    "ChangeAudio": "ऑडियो सेटिंग्स बदलें"
   },
   "RecordingControls": {
     "ContinueRecording": "रिकॉर्डिंग जारी रखें",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "छवि को संसाधित करने के लिए सदस्यता या BYOK के साथ साइन इन करें।",
     "SubscribeToDescribe": "AI-संचालित स्क्रीनशॉट विश्लेषण सक्षम करने के लिए सदस्यता लें।",
     "Tab": {
-      "Custom": "कस्टम प्रॉम्प्ट",
       "Description": "विवरण",
-      "OCR": "इस स्क्रीनशॉट का टेक्स्ट"
+      "OCR": "इस स्क्रीनशॉट का टेक्स्ट",
+      "Text": "टेक्स्ट",
+      "CustomShort": "कस्टम"
     },
     "UnknownError": "अज्ञात त्रुटि",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "स्क्रीनशॉट विवरण डाउनलोड करें।",
     "NoDescriptionForThis": "इस स्क्रीनशॉट के लिए कोई विवरण नहीं है।",
     "TextNotAvailableStore": "Microsoft Store संस्करण में उपलब्ध नहीं। seameet.ai का Windows इंस्टॉलर आपके डिवाइस पर टेक्स्ट पढ़ता है।",
-    "TextNotAvailable": "इस कंप्यूटर पर उपलब्ध नहीं।"
+    "TextNotAvailable": "इस कंप्यूटर पर उपलब्ध नहीं।",
+    "TabsLabel": "स्क्रीनशॉट के भाग",
+    "CopyAll": "सब कॉपी करें"
   },
   "ScreenshotView": {
     "RecentLabel": "हाल के स्क्रीनशॉट"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "प्रीव्यू शुरू हो रहा है…",
     "PreviewUnavailable": "प्रीव्यू उपलब्ध नहीं है"
   },
-  "LiveLayout": {
-    "Divider": "ट्रांसक्रिप्ट कॉलम की चौड़ाई बदलें"
-  },
   "LiveNotes": {
     "Placeholder": "मीटिंग के नोट्स लिखें…",
     "CreateFailed": "नोट नहीं बनाया जा सका। आपका टेक्स्ट यहीं रखा गया है।"
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "अब {{title}} में लिख रहे हैं",
     "TranscriptOff": "लाइव ट्रांसक्रिप्ट बंद है।",
     "AskNeedsTranscript": "ट्रांसक्रिप्ट शुरू होने पर पूछें काम करता है।",
-    "NotesAndEvents": "नोट्स और इवेंट",
-    "TranscriptAndAsk": "ट्रांसक्रिप्ट और पूछें",
     "RecordingTabs": "रिकॉर्डिंग",
     "AnswerReady": "{{tab}}, जवाब तैयार है",
-    "AskMoving": "सेव की गई रिकॉर्डिंग खुलने पर पूछें वहाँ चला जाता है।"
+    "AskMoving": "सेव की गई रिकॉर्डिंग खुलने पर पूछें वहाँ चला जाता है।",
+    "HidePanel": "साइड पैनल छिपाएँ",
+    "ShowPanel": "साइड पैनल दिखाएँ",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "साइड पैनल का आकार बदलें"
   },
   "NoteRecord": {
-    "Record": "रिकॉर्ड करें",
+    "RecordIntoNote": "इस नोट में रिकॉर्ड करें",
     "Menu": "रिकॉर्ड करने के और तरीके",
     "Screen": "स्क्रीन रिकॉर्ड करें",
     "Window": "एक विंडो रिकॉर्ड करें",
@@ -4739,7 +4761,8 @@
     "Dismiss": "बंद करें",
     "BackToMeeting": "मीटिंग पर वापस जाएँ",
     "BackToMeetingHint": "SeaMeet छोटा करें; नियंत्रण फ़्लोटर में रहते हैं",
-    "TimeLabel": "रिकॉर्डिंग समय {{time}}"
+    "TimeLabel": "रिकॉर्डिंग समय {{time}}",
+    "StartedAt": "रिकॉर्डिंग {{time}} पर शुरू हुई"
   },
   "NoteLivePanel": {
     "Region": "लाइव ट्रांसक्रिप्ट और सवाल",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "कोई नहीं: यह इसी कंप्यूटर पर रहता है"
   },
   "TeamShareMenu": {
-    "Open": "साझा करें…",
     "Title": "साझाकरण",
     "Loading": "साझाकरण सेटिंग लोड हो रही हैं…",
     "LoadFailed": "साझाकरण सेटिंग लोड नहीं हो सकीं।",
@@ -5683,5 +5705,17 @@
     "Title": "नया स्क्रीनशॉट",
     "WindowHint": "कैप्चर करते समय आप विंडो चुनते हैं।",
     "ModeScreenSubOne": "पूरा डिस्प्ले"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "इस नोट में रिकॉर्डिंग हो रही है"
+  },
+  "MediaStage": {
+    "View": "प्रदर्शन आकार",
+    "Fit": "फ़िट करें",
+    "Actual": "100%",
+    "ZoomIn": "ज़ूम इन करें",
+    "ZoomOut": "ज़ूम आउट करें",
+    "Theater": "थिएटर मोड",
+    "FitWidth": "चौड़ाई में फ़िट करें"
   }
 }

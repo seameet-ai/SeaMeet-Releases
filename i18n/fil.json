@@ -259,6 +259,7 @@
     "ConfigureProviders": "Paganahin ang live transcription at mag-set up ng LLM provider sa Mga Setting para makapag-generate ng AI summaries.",
     "ConfirmRename": "Kumpirmahin ang pagpapalit ng pangalan",
     "Copy": "Kopyahin",
+    "CopyPart": "Kopyahin ang {{part}}",
     "DeepComplete": {
       "Badge": "Deep · Sinuri ng Gemini ang recording",
       "Toast": "✨ Handa na ang Deep summary"
@@ -309,8 +310,13 @@
       "Vtt": "Web subtitle (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Libre: unang {{minutes}} min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Hindi magawa ang file. Subukan muli.",
-      "Footer": "May kasunod pa ang transcript — i-unlock ang buong transcript gamit ang Sync Pro: {{url}}"
+      "Footer": "May kasunod pa ang transcript — i-unlock ang buong transcript gamit ang Sync Pro: {{url}}",
+      "AsTxt": "Transcript bilang TXT",
+      "AsSrt": "Transcript bilang SRT",
+      "AsVtt": "Transcript bilang VTT",
+      "AsDocx": "Transcript bilang Word (DOCX)"
     },
     "ExportJson": "Kopyahin bilang JSON",
     "ExportMarkdown": "Kopyahin bilang Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "Transkripsyon"
     },
     "TabTitle": "Buod ng AI",
+    "TabsLabel": "Mga seksyon ng recording",
     "Topics": "Mga Paksa:",
     "Version": {
       "Latest": "Pinakabago",
@@ -2120,9 +2127,6 @@
       "Recording": "Recording"
     }
   },
-  "MediaCard": {
-    "Untitled": "Walang Pamagat"
-  },
   "DesktopTeam": {
     "Workspace": "Workspace",
     "RoleOwner": "May-ari",
@@ -2198,22 +2202,28 @@
     "ExportSuccess": "Na-export ang {{count}} na mga file",
     "Exporting": "Nag-e-export...",
     "FilteredStats": "{{filtered}} sa {{total}} na mga file",
-    "GridView": "Grid na Tanawin",
     "Import": "I-import",
-    "ListView": "Listahan na Tanawin",
     "NoFiles": "Walang media file pa",
     "NoFilesHint": "Mag-record ng audio/video o mag-import ng mga file upang magsimula",
     "NoResults": "Walang file na tumutugma sa iyong mga filter",
     "NoResultsHint": "Subukang ayusin ang iyong paghahanap o mga filter",
     "Screenshots": "Mga Screenshot",
-    "Search": "Maghanap ng mga media file...",
+    "FilterByName": "I-filter ang library na ito",
+    "FileType": "Uri ng file",
+    "Layout": "Layout",
+    "Grid": "Grid",
+    "List": "Listahan",
+    "SortNewest": "Pinakabago muna",
+    "SortOldest": "Pinakaluma muna",
+    "SortNameAZ": "Pangalan A–Z",
+    "SortNameZA": "Pangalan Z–A",
+    "SortLongest": "Pinakamahaba muna",
+    "SortShortest": "Pinakamaikli muna",
+    "SortLargest": "Pinakamalaki muna",
+    "SortSmallest": "Pinakamaliit muna",
     "SelectAll": "Piliin Lahat",
     "Selected": "{{count}} napili",
     "Sort": "Ayusin ayon sa",
-    "SortByDate": "Petsa",
-    "SortByDuration": "Tagal",
-    "SortByName": "Pangalan",
-    "SortBySize": "Laki",
     "Title": "Aklatan ng Media",
     "Video": "Video",
     "OwnerFilter": {
@@ -2234,7 +2244,14 @@
     "ExportSuccess_other": "Na-export ang {{count}} file",
     "Selected_one": "{{count}} napili",
     "Selected_other": "{{count}} napili",
-    "ImportTooltip": "Mag-import ng media · {{shortcut}} para mag-paste ng larawan"
+    "ImportTooltip": "Mag-import ng media · {{shortcut}} para mag-paste ng larawan",
+    "Section": {
+      "ThisWeek": "Ngayong linggo",
+      "EarlierThisMonth": "Mas maaga ngayong buwan",
+      "Undated": "Walang petsa"
+    },
+    "Image": "Larawan",
+    "SelectRecordingAt": "Piliin ang {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mga action items",
@@ -2849,6 +2866,7 @@
     "Pause": "Pahingahin",
     "Play": "Pindutin para maglaro",
     "PlaybackSpeed": "Bilis ng playback",
+    "MoreControls": "Higit pang kontrol sa pag-playback",
     "SkipBackward10": "-10s",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30s",
@@ -2863,13 +2881,13 @@
     "Unmute": "I-unmute"
   },
   "PlayerCard": {
-    "ClosePlayback": "Isara ang pag-playback",
     "CodecInfo": "Impormasyon ng codec",
     "MoreOptions": "Maraming opsyon",
     "PlaybackRegion": "Pag-playback ng recording",
     "Rename": "Palitan ang pangalan ng recording",
     "OpenOnWeb": "Buksan sa web",
-    "ShareViaWeb": "Ibahagi sa web"
+    "ShareViaWeb": "Ibahagi sa web",
+    "WorkspaceSharing": "Pagbabahagi sa workspace…"
   },
   "PostUpdateModal": {
     "Description": "Matagumpay na na-update ang SeaMeet. Narito ang mga bago:",
@@ -2982,7 +3000,9 @@
     "ConfirmReleaseNo": "Hindi pa",
     "CaptureStopped": "Huminto ang pagkuha ng screen. Nagpapatuloy ang recording nang walang bagong video.",
     "RecordingPage": "Pahina ng recording",
-    "RecordingPageTitle": "Pumunta sa pahina ng live na recording · {{title}}"
+    "RecordingPageTitle": "Pumunta sa pahina ng live na recording · {{title}}",
+    "Change": "Baguhin",
+    "ChangeAudio": "Baguhin ang mga setting ng audio"
   },
   "RecordingControls": {
     "ContinueRecording": "Ipagpatuloy ang pagre-rekord",
@@ -3149,9 +3169,10 @@
     "SetupRequired": "Mag-sign in gamit ang isang subscription o BYOK upang iproseso ang larawan.",
     "SubscribeToDescribe": "Mag-subscribe para i-enable ang AI-powered screenshot analysis.",
     "Tab": {
-      "Custom": "Custom na Prompt",
       "Description": "Paglalarawan",
-      "OCR": "Teksto sa screenshot na ito"
+      "OCR": "Teksto sa screenshot na ito",
+      "Text": "Teksto",
+      "CustomShort": "Sarili"
     },
     "UnknownError": "Hindi kilalang error",
     "OcrWall": {
@@ -3174,7 +3195,9 @@
     "DownloadDescriptionsNoSize": "I-download ang mga paglalarawan ng screenshot.",
     "NoDescriptionForThis": "Walang paglalarawan para sa screenshot na ito.",
     "TextNotAvailableStore": "Hindi available sa bersyon ng Microsoft Store. Binabasa ng Windows installer mula sa seameet.ai ang text sa iyong device.",
-    "TextNotAvailable": "Hindi available sa computer na ito."
+    "TextNotAvailable": "Hindi available sa computer na ito.",
+    "TabsLabel": "Mga bahagi ng screenshot",
+    "CopyAll": "Kopyahin lahat"
   },
   "ScreenshotView": {
     "RecentLabel": "Kamakailang screenshots"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Sinisimulan ang preview…",
     "PreviewUnavailable": "Hindi available ang preview"
   },
-  "LiveLayout": {
-    "Divider": "Baguhin ang lapad ng column ng transkripsyon"
-  },
   "LiveNotes": {
     "Placeholder": "Isulat ang mga tala ng pulong…",
     "CreateFailed": "Hindi magawa ang tala. Nandito pa rin ang iyong teksto."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Nagsusulat ngayon sa {{title}}",
     "TranscriptOff": "Naka-off ang live na transkripsyon.",
     "AskNeedsTranscript": "Gagana ang Itanong kapag nagsimula na ang transkripsyon.",
-    "NotesAndEvents": "Mga tala at event",
-    "TranscriptAndAsk": "Transkripsyon at Itanong",
     "RecordingTabs": "Recording",
     "AnswerReady": "{{tab}}, handa na ang sagot",
-    "AskMoving": "Lilipat ang Itanong sa naka-save na recording kapag nabuksan ito."
+    "AskMoving": "Lilipat ang Itanong sa naka-save na recording kapag nabuksan ito.",
+    "HidePanel": "Itago ang side panel",
+    "ShowPanel": "Ipakita ang side panel",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Baguhin ang lapad ng side panel"
   },
   "NoteRecord": {
-    "Record": "Mag-record",
+    "RecordIntoNote": "I-record sa note na ito",
     "Menu": "Iba pang paraan ng pag-record",
     "Screen": "I-record ang screen",
     "Window": "Mag-record ng window",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Isara",
     "BackToMeeting": "Bumalik sa meeting",
     "BackToMeetingHint": "I-minimize ang SeaMeet; nasa floater pa rin ang mga kontrol",
-    "TimeLabel": "Oras ng recording {{time}}"
+    "TimeLabel": "Oras ng recording {{time}}",
+    "StartedAt": "Nagsimula ang recording {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Live na transcript at tanong",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Walang iba: nananatili sa computer na ito"
   },
   "TeamShareMenu": {
-    "Open": "Ibahagi…",
     "Title": "Pagbabahagi",
     "Loading": "Niloload ang mga setting ng pagbabahagi…",
     "LoadFailed": "Hindi na-load ang mga setting ng pagbabahagi.",
@@ -5683,5 +5705,17 @@
     "Title": "Bagong screenshot",
     "WindowHint": "Pipiliin mo ang window kapag nag-capture ka.",
     "ModeScreenSubOne": "Isang buong display"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Nire-record sa note na ito"
+  },
+  "MediaStage": {
+    "View": "Laki ng display",
+    "Fit": "Iakma",
+    "Actual": "100%",
+    "ZoomIn": "Mag-zoom in",
+    "ZoomOut": "Mag-zoom out",
+    "Theater": "Teatro",
+    "FitWidth": "Iakma sa lapad"
   }
 }

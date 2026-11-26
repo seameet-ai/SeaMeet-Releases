@@ -261,6 +261,7 @@
     "ConfigureProviders": "Activez la transcription en direct et configurez un fournisseur LLM dans les Paramètres pour générer des résumés IA.",
     "ConfirmRename": "Confirmer le changement de nom",
     "Copy": "Copie",
+    "CopyPart": "Copier {{part}}",
     "DeepComplete": {
       "Badge": "Approfondi · Gemini a analysé l'enregistrement",
       "Toast": "✨ Résumé Approfondi prêt"
@@ -311,8 +312,13 @@
       "Vtt": "Sous-titres web (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Gratuit : {{minutes}} premières min",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Impossible de créer le fichier. Réessayez.",
-      "Footer": "La transcription continue — débloquez la transcription complète avec Sync Pro : {{url}}"
+      "Footer": "La transcription continue — débloquez la transcription complète avec Sync Pro : {{url}}",
+      "AsTxt": "Transcription en TXT",
+      "AsSrt": "Transcription en SRT",
+      "AsVtt": "Transcription en VTT",
+      "AsDocx": "Transcription en Word (DOCX)"
     },
     "ExportJson": "Copier en JSON",
     "ExportMarkdown": "Copier en Markdown",
@@ -387,6 +393,7 @@
       "Transcription": "Transcription"
     },
     "TabTitle": "Résumé de l'IA",
+    "TabsLabel": "Sections de l'enregistrement",
     "Topics": "Sujets :",
     "Version": {
       "Latest": "Dernier",
@@ -2122,9 +2129,6 @@
       "Recording": "Enregistrement"
     }
   },
-  "MediaCard": {
-    "Untitled": "Sans titre"
-  },
   "DesktopTeam": {
     "Workspace": "Espace de travail",
     "RoleOwner": "Propriétaire",
@@ -2200,22 +2204,28 @@
     "ExportSuccess": "Exporté {{count}} fichiers",
     "Exporting": "Exportation en cours...",
     "FilteredStats": "{{filtered}} sur {{total}} fichiers",
-    "GridView": "Vue en grille",
     "Import": "Importer",
-    "ListView": "Vue en liste",
     "NoFiles": "Aucun fichier média pour le moment",
     "NoFilesHint": "Enregistrez de l'audio/vidéo ou importez des fichiers pour commencer",
     "NoResults": "Aucun fichier ne correspond à vos filtres",
     "NoResultsHint": "Essayez d'ajuster votre recherche ou vos filtres",
     "Screenshots": "Captures d'écran",
-    "Search": "Rechercher des fichiers médias...",
+    "FilterByName": "Filtrer cette bibliothèque",
+    "FileType": "Type de fichier",
+    "Layout": "Disposition",
+    "Grid": "Grille",
+    "List": "Liste",
+    "SortNewest": "Plus récents d’abord",
+    "SortOldest": "Plus anciens d’abord",
+    "SortNameAZ": "Nom A–Z",
+    "SortNameZA": "Nom Z–A",
+    "SortLongest": "Plus longs d’abord",
+    "SortShortest": "Plus courts d’abord",
+    "SortLargest": "Plus volumineux d’abord",
+    "SortSmallest": "Moins volumineux d’abord",
     "SelectAll": "Tout sélectionner",
     "Selected": "{{count}} sélectionné(s)",
     "Sort": "Trier par",
-    "SortByDate": "Date",
-    "SortByDuration": "Durée",
-    "SortByName": "Nom",
-    "SortBySize": "Taille",
     "Title": "Bibliothèque Média",
     "Video": "Vidéo",
     "OwnerFilter": {
@@ -2236,7 +2246,14 @@
     "ExportSuccess_other": "{{count}} fichiers exportés",
     "Selected_one": "{{count}} sélectionné",
     "Selected_other": "{{count}} sélectionnés",
-    "ImportTooltip": "Importer des médias · {{shortcut}} colle une image"
+    "ImportTooltip": "Importer des médias · {{shortcut}} colle une image",
+    "Section": {
+      "ThisWeek": "Cette semaine",
+      "EarlierThisMonth": "Plus tôt ce mois-ci",
+      "Undated": "Sans date"
+    },
+    "Image": "Image",
+    "SelectRecordingAt": "Sélectionner {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Éléments d'action",
@@ -2854,6 +2871,7 @@
     "Pause": "Pause",
     "Play": "Lecture",
     "PlaybackSpeed": "Vitesse de lecture",
+    "MoreControls": "Plus de commandes de lecture",
     "SkipBackward10": "-10 secondes",
     "SkipBackward10Short": "-10s",
     "SkipBackward30": "-30 secondes",
@@ -2868,13 +2886,13 @@
     "Unmute": "Activer le son"
   },
   "PlayerCard": {
-    "ClosePlayback": "Fermer la lecture",
     "CodecInfo": "Informations sur le codec",
     "MoreOptions": "Plus d'options",
     "PlaybackRegion": "Lecture de l’enregistrement",
     "Rename": "Renommer l’enregistrement",
     "OpenOnWeb": "Ouvrir sur le web",
-    "ShareViaWeb": "Partager via le web"
+    "ShareViaWeb": "Partager via le web",
+    "WorkspaceSharing": "Partage dans l’espace de travail…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet a été mis à jour avec succès. Voici les nouveautés :",
@@ -2987,7 +3005,9 @@
     "ConfirmReleaseNo": "Pas encore",
     "CaptureStopped": "La capture d’écran s’est arrêtée. L’enregistrement continue sans nouvelle vidéo.",
     "RecordingPage": "Page d'enregistrement",
-    "RecordingPageTitle": "Aller à la page de l'enregistrement en cours · {{title}}"
+    "RecordingPageTitle": "Aller à la page de l'enregistrement en cours · {{title}}",
+    "Change": "Modifier",
+    "ChangeAudio": "Modifier les paramètres audio"
   },
   "RecordingControls": {
     "ContinueRecording": "Continuer l'enregistrement",
@@ -3154,9 +3174,10 @@
     "SetupRequired": "Connectez-vous avec un abonnement ou BYOK pour traiter l'image.",
     "SubscribeToDescribe": "Abonnez-vous pour activer l'analyse de captures d'écran par IA.",
     "Tab": {
-      "Custom": "Prompt personnalisé",
       "Description": "Description",
-      "OCR": "Texte de cette capture d’écran"
+      "OCR": "Texte de cette capture d’écran",
+      "Text": "Texte",
+      "CustomShort": "Personnalisé"
     },
     "UnknownError": "Erreur inconnue",
     "OcrWall": {
@@ -3179,7 +3200,9 @@
     "DownloadDescriptionsNoSize": "Téléchargez les descriptions de captures d'écran.",
     "NoDescriptionForThis": "Aucune description pour cette capture d’écran.",
     "TextNotAvailableStore": "Indisponible dans la version Microsoft Store. Le programme d’installation Windows de seameet.ai lit le texte sur votre appareil.",
-    "TextNotAvailable": "Indisponible sur cet ordinateur."
+    "TextNotAvailable": "Indisponible sur cet ordinateur.",
+    "TabsLabel": "Sections de la capture d'écran",
+    "CopyAll": "Tout copier"
   },
   "ScreenshotView": {
     "RecentLabel": "Captures récentes"
@@ -4704,9 +4727,6 @@
     "PreviewStarting": "Démarrage de l’aperçu…",
     "PreviewUnavailable": "L’aperçu n’est pas disponible"
   },
-  "LiveLayout": {
-    "Divider": "Redimensionner la colonne de transcription"
-  },
   "LiveNotes": {
     "Placeholder": "Écrivez les notes de la réunion…",
     "CreateFailed": "Impossible de créer la note. Votre texte est conservé ici."
@@ -4717,14 +4737,16 @@
     "NowWritingTo": "Vous écrivez maintenant dans {{title}}",
     "TranscriptOff": "La transcription en direct est désactivée.",
     "AskNeedsTranscript": "Demander fonctionne dès que la transcription commence.",
-    "NotesAndEvents": "Notes et événements",
-    "TranscriptAndAsk": "Transcription et Demander",
     "RecordingTabs": "Enregistrement",
     "AnswerReady": "{{tab}}, réponse prête",
-    "AskMoving": "Demander passe à l’enregistrement sauvegardé à son ouverture."
+    "AskMoving": "Demander passe à l’enregistrement sauvegardé à son ouverture.",
+    "HidePanel": "Masquer le panneau latéral",
+    "ShowPanel": "Afficher le panneau latéral",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Redimensionner le panneau latéral"
   },
   "NoteRecord": {
-    "Record": "Enregistrer",
+    "RecordIntoNote": "Enregistrer dans cette note",
     "Menu": "Autres façons d'enregistrer",
     "Screen": "Enregistrer l'écran",
     "Window": "Enregistrer une fenêtre",
@@ -4746,7 +4768,8 @@
     "Dismiss": "Fermer",
     "BackToMeeting": "Retour à la réunion",
     "BackToMeetingHint": "Réduire SeaMeet ; la barre flottante garde les commandes",
-    "TimeLabel": "Durée d'enregistrement {{time}}"
+    "TimeLabel": "Durée d'enregistrement {{time}}",
+    "StartedAt": "Enregistrement commencé à {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Transcription en direct et questions",
@@ -4784,7 +4807,6 @@
     "OffOnDevice": "Personne : cela reste sur cet ordinateur"
   },
   "TeamShareMenu": {
-    "Open": "Partager…",
     "Title": "Partages",
     "Loading": "Chargement des paramètres de partage…",
     "LoadFailed": "Impossible de charger les paramètres de partage.",
@@ -5716,5 +5738,17 @@
     "Title": "Nouvelle capture d'écran",
     "WindowHint": "Vous choisissez la fenêtre au moment de la capture.",
     "ModeScreenSubOne": "Un écran entier"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Enregistrement dans cette note"
+  },
+  "MediaStage": {
+    "View": "Taille d’affichage",
+    "Fit": "Ajuster",
+    "Actual": "100 %",
+    "ZoomIn": "Zoom avant",
+    "ZoomOut": "Zoom arrière",
+    "Theater": "Mode cinéma",
+    "FitWidth": "Ajuster à la largeur"
   }
 }

@@ -259,6 +259,7 @@
     "ConfigureProviders": "برای ایجاد خلاصه‌های هوش مصنوعی، رونویسی زنده را فعال و یک ارائه‌دهنده LLM را در تنظیمات پیکربندی کنید.",
     "ConfirmRename": "تغییر نام را تأیید کنید",
     "Copy": "کپی کنید",
+    "CopyPart": "کپی {{part}}",
     "DeepComplete": {
       "Badge": "عمیق · Gemini ضبط را تحلیل کرد",
       "Toast": "✨ خلاصه عمیق آماده شد"
@@ -309,8 +310,13 @@
       "Vtt": "زیرنویس وب (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "رایگان: {{minutes}} دقیقهٔ اول",
+      "MenuMasked": "{{label}}، {{note}}",
       "Failed": "ساخت فایل ممکن نشد. دوباره تلاش کنید.",
-      "Footer": "رونوشت ادامه دارد — رونوشت کامل را با Sync Pro باز کنید: {{url}}"
+      "Footer": "رونوشت ادامه دارد — رونوشت کامل را با Sync Pro باز کنید: {{url}}",
+      "AsTxt": "رونوشت به‌صورت TXT",
+      "AsSrt": "رونوشت به‌صورت SRT",
+      "AsVtt": "رونوشت به‌صورت VTT",
+      "AsDocx": "رونوشت به‌صورت Word (DOCX)"
     },
     "ExportJson": "به صورت JSON کپی کنید",
     "ExportMarkdown": "به عنوان Markdown کپی کنید",
@@ -385,6 +391,7 @@
       "Transcription": "رونوشت"
     },
     "TabTitle": "خلاصه هوش مصنوعی",
+    "TabsLabel": "بخش‌های ضبط",
     "Topics": "موضوعات:",
     "Version": {
       "Latest": "آخرین",
@@ -2120,9 +2127,6 @@
       "Recording": "ضبط"
     }
   },
-  "MediaCard": {
-    "Untitled": "بدون عنوان"
-  },
   "DesktopTeam": {
     "Workspace": "فضای کاری",
     "RoleOwner": "مالک",
@@ -2198,22 +2202,28 @@
     "ExportSuccess": "صادرات {{count}} فایل انجام شد",
     "Exporting": "در حال صادرات...",
     "FilteredStats": "{{filtered}} از {{total}} فایل",
-    "GridView": "نمای شبکه‌ای",
     "Import": "وارد کردن",
-    "ListView": "نمای فهرست",
     "NoFiles": "هنوز فایل رسانه‌ای وجود ندارد",
     "NoFilesHint": "برای شروع، صوت/ویدئو ضبط کنید یا فایل‌ها را وارد کنید",
     "NoResults": "هیچ فایلی با فیلترهای شما مطابقت ندارد",
     "NoResultsHint": "سعی کنید جستجو یا فیلترهای خود را تنظیم کنید",
     "Screenshots": "تصاویر صفحه",
-    "Search": "جستجوی فایل‌های رسانه...",
+    "FilterByName": "فیلتر کردن این کتابخانه",
+    "FileType": "نوع فایل",
+    "Layout": "چیدمان",
+    "Grid": "شبکه‌ای",
+    "List": "فهرست",
+    "SortNewest": "جدیدترین اول",
+    "SortOldest": "قدیمی‌ترین اول",
+    "SortNameAZ": "نام (الف–ی)",
+    "SortNameZA": "نام (ی–الف)",
+    "SortLongest": "طولانی‌ترین اول",
+    "SortShortest": "کوتاه‌ترین اول",
+    "SortLargest": "بزرگ‌ترین اول",
+    "SortSmallest": "کوچک‌ترین اول",
     "SelectAll": "انتخاب همه",
     "Selected": "{{count}} انتخاب شده",
     "Sort": "مرتب‌سازی بر اساس",
-    "SortByDate": "تاریخ",
-    "SortByDuration": "مدت زمان",
-    "SortByName": "نام",
-    "SortBySize": "حجم",
     "Title": "کتابخانه رسانه",
     "Video": "ویدئو",
     "OwnerFilter": {
@@ -2234,7 +2244,14 @@
     "ExportSuccess_other": "{{count}} فایل صادر شد",
     "Selected_one": "{{count}} انتخاب‌شده",
     "Selected_other": "{{count}} انتخاب‌شده",
-    "ImportTooltip": "وارد کردن رسانه · {{shortcut}} تصویر را می‌چسباند"
+    "ImportTooltip": "وارد کردن رسانه · {{shortcut}} تصویر را می‌چسباند",
+    "Section": {
+      "ThisWeek": "این هفته",
+      "EarlierThisMonth": "پیش‌تر در همین ماه",
+      "Undated": "بدون تاریخ"
+    },
+    "Image": "تصویر",
+    "SelectRecordingAt": "انتخاب {{name}}، {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "موارد عملی",
@@ -2849,6 +2866,7 @@
     "Pause": "استراحت",
     "Play": "پخش",
     "PlaybackSpeed": "سرعت پخش",
+    "MoreControls": "کنترل‌های پخش بیشتر",
     "SkipBackward10": "-10 ثانیه",
     "SkipBackward10Short": "-10 ثانیه",
     "SkipBackward30": "-30 ثانیه",
@@ -2863,13 +2881,13 @@
     "Unmute": "بی‌صدا کردن"
   },
   "PlayerCard": {
-    "ClosePlayback": "بستن پخش",
     "CodecInfo": "اطلاعات کدک",
     "MoreOptions": "گزینه‌های بیشتر",
     "PlaybackRegion": "پخش ضبط",
     "Rename": "تغییر نام ضبط",
     "OpenOnWeb": "باز کردن در وب",
-    "ShareViaWeb": "اشتراک‌گذاری از طریق وب"
+    "ShareViaWeb": "اشتراک‌گذاری از طریق وب",
+    "WorkspaceSharing": "اشتراک‌گذاری در فضای کاری…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet با موفقیت به‌روزرسانی شد. تغییرات جدید:",
@@ -2982,7 +3000,9 @@
     "ConfirmReleaseNo": "هنوز نه",
     "CaptureStopped": "ضبط صفحه متوقف شد. ضبط بدون ویدیوی تازه ادامه دارد.",
     "RecordingPage": "صفحهٔ ضبط",
-    "RecordingPageTitle": "رفتن به صفحهٔ ضبط زنده · {{title}}"
+    "RecordingPageTitle": "رفتن به صفحهٔ ضبط زنده · {{title}}",
+    "Change": "تغییر",
+    "ChangeAudio": "تغییر تنظیمات صدا"
   },
   "RecordingControls": {
     "ContinueRecording": "ادامه ضبط",
@@ -3149,9 +3169,10 @@
     "SetupRequired": "برای پردازش تصویر با یک اشتراک یا BYOK وارد شوید.",
     "SubscribeToDescribe": "برای فعال‌سازی تحلیل اسکرین‌شات با هوش مصنوعی، اشتراک بگیرید.",
     "Tab": {
-      "Custom": "دستور سفارشی",
       "Description": "توضیحات",
-      "OCR": "متن این اسکرین‌شات"
+      "OCR": "متن این اسکرین‌شات",
+      "Text": "متن",
+      "CustomShort": "سفارشی"
     },
     "UnknownError": "خطای ناشناخته",
     "OcrWall": {
@@ -3174,7 +3195,9 @@
     "DownloadDescriptionsNoSize": "توضیحات اسکرین‌شات‌ها را دانلود کنید.",
     "NoDescriptionForThis": "برای این اسکرین‌شات توضیحی وجود ندارد.",
     "TextNotAvailableStore": "در نسخه Microsoft Store در دسترس نیست. نصب‌کننده ویندوز از seameet.ai متن را روی دستگاه شما می‌خواند.",
-    "TextNotAvailable": "روی این رایانه در دسترس نیست."
+    "TextNotAvailable": "روی این رایانه در دسترس نیست.",
+    "TabsLabel": "بخش‌های تصویر لحظه‌ای",
+    "CopyAll": "کپی همه"
   },
   "ScreenshotView": {
     "RecentLabel": "عکس‌های صفحه اخیر"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "در حال شروع پیش‌نمایش…",
     "PreviewUnavailable": "پیش‌نمایش در دسترس نیست"
   },
-  "LiveLayout": {
-    "Divider": "تغییر عرض ستون رونویسی"
-  },
   "LiveNotes": {
     "Placeholder": "یادداشت‌های جلسه را بنویسید…",
     "CreateFailed": "ساخت یادداشت ممکن نشد. متن شما اینجا نگه داشته شده است."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "اکنون در {{title}} می‌نویسید",
     "TranscriptOff": "رونویسی زنده خاموش است.",
     "AskNeedsTranscript": "پرسش پس از شروع رونویسی کار می‌کند.",
-    "NotesAndEvents": "یادداشت‌ها و رویدادها",
-    "TranscriptAndAsk": "رونویسی و پرسش",
     "RecordingTabs": "ضبط",
     "AnswerReady": "{{tab}}، پاسخ آماده است",
-    "AskMoving": "پرسش هنگام باز شدن ضبط ذخیره‌شده به آن منتقل می‌شود."
+    "AskMoving": "پرسش هنگام باز شدن ضبط ذخیره‌شده به آن منتقل می‌شود.",
+    "HidePanel": "پنهان کردن پنل کناری",
+    "ShowPanel": "نمایش پنل کناری",
+    "TabWithCount": "{{tab}}، {{count}}",
+    "ResizeSide": "تغییر اندازه پنل کناری"
   },
   "NoteRecord": {
-    "Record": "ضبط",
+    "RecordIntoNote": "ضبط در این یادداشت",
     "Menu": "روش‌های دیگر ضبط",
     "Screen": "ضبط صفحه",
     "Window": "ضبط یک پنجره",
@@ -4739,7 +4761,8 @@
     "Dismiss": "بستن",
     "BackToMeeting": "بازگشت به جلسه",
     "BackToMeetingHint": "SeaMeet را کوچک کنید؛ کنترل‌ها در پنجره شناور می‌مانند",
-    "TimeLabel": "زمان ضبط {{time}}"
+    "TimeLabel": "زمان ضبط {{time}}",
+    "StartedAt": "ضبط از {{time}} شروع شد"
   },
   "NoteLivePanel": {
     "Region": "رونوشت زنده و پرسش",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "هیچ‌کس: روی این رایانه می‌ماند"
   },
   "TeamShareMenu": {
-    "Open": "اشتراک‌گذاری…",
     "Title": "اشتراک‌گذاری",
     "Loading": "در حال بارگذاری تنظیمات اشتراک‌گذاری…",
     "LoadFailed": "بارگذاری تنظیمات اشتراک‌گذاری ناموفق بود.",
@@ -5683,5 +5705,17 @@
     "Title": "تصویر صفحه جدید",
     "WindowHint": "پنجره را هنگام گرفتن انتخاب می‌کنید.",
     "ModeScreenSubOne": "تمام نمایشگر"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "در حال ضبط در این یادداشت"
+  },
+  "MediaStage": {
+    "View": "اندازهٔ نمایش",
+    "Fit": "متناسب",
+    "Actual": "۱۰۰٪",
+    "ZoomIn": "بزرگ‌نمایی",
+    "ZoomOut": "کوچک‌نمایی",
+    "Theater": "حالت سینما",
+    "FitWidth": "متناسب با عرض"
   }
 }

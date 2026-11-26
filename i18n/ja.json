@@ -259,6 +259,7 @@
     "ConfigureProviders": "AI 要約を生成するには、設定でライブ転写を有効化し、LLM プロバイダーを構成してください。",
     "ConfirmRename": "名前変更の確認",
     "Copy": "コピー",
+    "CopyPart": "{{part}}をコピー",
     "DeepComplete": {
       "Badge": "ディープ · Gemini が録音を分析しました",
       "Toast": "✨ ディープ要約が完成しました"
@@ -309,8 +310,13 @@
       "Vtt": "Web 字幕 (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "無料：最初の {{minutes}} 分",
+      "MenuMasked": "{{label}}、{{note}}",
       "Failed": "ファイルを作成できませんでした。もう一度お試しください。",
-      "Footer": "文字起こしには続きがあります — Sync Pro で全文を表示できます: {{url}}"
+      "Footer": "文字起こしには続きがあります — Sync Pro で全文を表示できます: {{url}}",
+      "AsTxt": "文字起こし（TXT）",
+      "AsSrt": "文字起こし（SRT）",
+      "AsVtt": "文字起こし（VTT）",
+      "AsDocx": "文字起こし（Word・DOCX）"
     },
     "ExportJson": "JSONとしてコピー",
     "ExportMarkdown": "マークダウンとしてコピー",
@@ -385,6 +391,7 @@
       "Transcription": "文字起こし"
     },
     "TabTitle": "AIの概要",
+    "TabsLabel": "録音のセクション",
     "Topics": "トピック:",
     "Version": {
       "Latest": "最新",
@@ -2123,9 +2130,6 @@
       "Recording": "録音"
     }
   },
-  "MediaCard": {
-    "Untitled": "タイトルなし"
-  },
   "DesktopTeam": {
     "Workspace": "ワークスペース",
     "RoleOwner": "オーナー",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "{{count}} ファイルをエクスポートしました",
     "Exporting": "エクスポート中...",
     "FilteredStats": "{{filtered}} / {{total}} ファイル",
-    "GridView": "グリッド表示",
     "Import": "インポート",
-    "ListView": "リスト表示",
     "NoFiles": "メディアファイルがまだありません",
     "NoFilesHint": "録音や録画、またはファイルのインポートから始めてください",
     "NoResults": "フィルターに一致するファイルがありません",
     "NoResultsHint": "検索やフィルターを調整してみてください",
     "Screenshots": "スクリーンショット",
-    "Search": "メディアファイルを検索...",
+    "FilterByName": "このライブラリを絞り込み",
+    "FileType": "ファイルの種類",
+    "Layout": "レイアウト",
+    "Grid": "グリッド",
+    "List": "リスト",
+    "SortNewest": "新しい順",
+    "SortOldest": "古い順",
+    "SortNameAZ": "名前（A→Z）",
+    "SortNameZA": "名前（Z→A）",
+    "SortLongest": "再生時間の長い順",
+    "SortShortest": "再生時間の短い順",
+    "SortLargest": "サイズの大きい順",
+    "SortSmallest": "サイズの小さい順",
     "SelectAll": "すべて選択",
     "Selected": "{{count}} 件選択中",
     "Sort": "並び替え",
-    "SortByDate": "日付",
-    "SortByDuration": "再生時間",
-    "SortByName": "名前",
-    "SortBySize": "サイズ",
     "Title": "メディアライブラリ",
     "Video": "ビデオ",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "{{count}}件のファイルをエクスポートしました",
     "Selected_one": "{{count}}件選択中",
     "Selected_other": "{{count}}件選択中",
-    "ImportTooltip": "メディアをインポート · {{shortcut}} で画像を貼り付け"
+    "ImportTooltip": "メディアをインポート · {{shortcut}} で画像を貼り付け",
+    "Section": {
+      "ThisWeek": "今週",
+      "EarlierThisMonth": "今月のこれまで",
+      "Undated": "日付なし"
+    },
+    "Image": "画像",
+    "SelectRecordingAt": "{{name}}（{{when}}）を選択"
   },
   "MeetSeasaltAi": {
     "ActionItems": "アクションアイテム",
@@ -2852,6 +2869,7 @@
     "Pause": "一時停止",
     "Play": "再生",
     "PlaybackSpeed": "再生速度",
+    "MoreControls": "その他の再生コントロール",
     "SkipBackward10": "-10秒",
     "SkipBackward10Short": "-10秒",
     "SkipBackward30": "-30秒",
@@ -2866,13 +2884,13 @@
     "Unmute": "ミュート解除"
   },
   "PlayerCard": {
-    "ClosePlayback": "再生を停止",
     "CodecInfo": "コーデック情報",
     "MoreOptions": "その他の設定",
     "PlaybackRegion": "録音の再生",
     "Rename": "録音の名前を変更",
     "OpenOnWeb": "ウェブで開く",
-    "ShareViaWeb": "ウェブで共有"
+    "ShareViaWeb": "ウェブで共有",
+    "WorkspaceSharing": "ワークスペースでの共有…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet が正常に更新されました。新機能:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "まだです",
     "CaptureStopped": "画面キャプチャが停止しました。録画は新しい映像なしで続きます。",
     "RecordingPage": "録音ページ",
-    "RecordingPageTitle": "録音中のページへ移動 · {{title}}"
+    "RecordingPageTitle": "録音中のページへ移動 · {{title}}",
+    "Change": "変更",
+    "ChangeAudio": "オーディオ設定を変更"
   },
   "RecordingControls": {
     "ContinueRecording": "録音を続ける",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "画像を処理するには、サブスクリプションまたは BYOK でサインインします。",
     "SubscribeToDescribe": "サブスクライブしてAI搭載のスクリーンショット分析を有効にしましょう。",
     "Tab": {
-      "Custom": "カスタムプロンプト",
       "Description": "説明",
-      "OCR": "このスクリーンショットのテキスト"
+      "OCR": "このスクリーンショットのテキスト",
+      "Text": "テキスト",
+      "CustomShort": "カスタム"
     },
     "UnknownError": "不明なエラー",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "スクリーンショットの説明をダウンロード。",
     "NoDescriptionForThis": "このスクリーンショットには説明がありません。",
     "TextNotAvailableStore": "Microsoft Store版では利用できません。seameet.aiのWindowsインストーラーでは、お使いのデバイス上でテキストを読み取ります。",
-    "TextNotAvailable": "このコンピューターでは利用できません。"
+    "TextNotAvailable": "このコンピューターでは利用できません。",
+    "TabsLabel": "スクリーンショットのセクション",
+    "CopyAll": "すべてコピー"
   },
   "ScreenshotView": {
     "RecentLabel": "最近のスクリーンショット"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "プレビューを開始中…",
     "PreviewUnavailable": "プレビューを利用できません"
   },
-  "LiveLayout": {
-    "Divider": "文字起こし列の幅を変更"
-  },
   "LiveNotes": {
     "Placeholder": "会議メモを書く…",
     "CreateFailed": "ノートを作成できませんでした。入力したテキストはここに残っています。"
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "{{title}} に書き込んでいます",
     "TranscriptOff": "ライブ文字起こしはオフです。",
     "AskNeedsTranscript": "文字起こしが始まると質問できます。",
-    "NotesAndEvents": "メモとイベント",
-    "TranscriptAndAsk": "文字起こしと質問",
     "RecordingTabs": "録音",
     "AnswerReady": "{{tab}}、回答の準備ができました",
-    "AskMoving": "保存された録音を開くと、質問はそちらに移ります。"
+    "AskMoving": "保存された録音を開くと、質問はそちらに移ります。",
+    "HidePanel": "サイドパネルを隠す",
+    "ShowPanel": "サイドパネルを表示",
+    "TabWithCount": "{{tab}}、{{count}}",
+    "ResizeSide": "サイドパネルの幅を変更"
   },
   "NoteRecord": {
-    "Record": "録音",
+    "RecordIntoNote": "このノートに録音",
     "Menu": "その他の録音方法",
     "Screen": "画面を録画",
     "Window": "ウィンドウを録画",
@@ -4739,7 +4761,8 @@
     "Dismiss": "閉じる",
     "BackToMeeting": "会議に戻る",
     "BackToMeetingHint": "SeaMeet を最小化します。操作はフローターに残ります",
-    "TimeLabel": "録音時間 {{time}}"
+    "TimeLabel": "録音時間 {{time}}",
+    "StartedAt": "録音開始 {{time}}"
   },
   "NoteLivePanel": {
     "Region": "ライブ文字起こしと質問",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "共有なし: このコンピューターに残ります"
   },
   "TeamShareMenu": {
-    "Open": "共有…",
     "Title": "共有状態",
     "Loading": "共有設定を読み込んでいます…",
     "LoadFailed": "共有設定を読み込めませんでした。",
@@ -5683,5 +5705,17 @@
     "Title": "新規スクリーンショット",
     "WindowHint": "キャプチャ時にウィンドウを選択します。",
     "ModeScreenSubOne": "ディスプレイ全体"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "このノートに録音中"
+  },
+  "MediaStage": {
+    "View": "表示サイズ",
+    "Fit": "全体表示",
+    "Actual": "100%",
+    "ZoomIn": "拡大",
+    "ZoomOut": "縮小",
+    "Theater": "シアターモード",
+    "FitWidth": "幅に合わせる"
   }
 }

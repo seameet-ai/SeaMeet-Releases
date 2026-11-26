@@ -259,6 +259,7 @@
     "ConfigureProviders": "Bật phiên âm trực tiếp và thiết lập nhà cung cấp LLM trong Cài đặt để tạo tóm tắt AI.",
     "ConfirmRename": "Xác nhận đổi tên",
     "Copy": "Sao chép",
+    "CopyPart": "Sao chép {{part}}",
     "DeepComplete": {
       "Badge": "Sâu · Gemini đã phân tích bản ghi",
       "Toast": "✨ Bản tóm tắt Sâu đã sẵn sàng"
@@ -309,8 +310,13 @@
       "Vtt": "Phụ đề web (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "Miễn phí: {{minutes}} phút đầu",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "Không tạo được tệp. Hãy thử lại.",
-      "Footer": "Bản ghi lời vẫn còn tiếp — mở khóa toàn bộ bản ghi lời với Sync Pro: {{url}}"
+      "Footer": "Bản ghi lời vẫn còn tiếp — mở khóa toàn bộ bản ghi lời với Sync Pro: {{url}}",
+      "AsTxt": "Bản ghi dưới dạng TXT",
+      "AsSrt": "Bản ghi dưới dạng SRT",
+      "AsVtt": "Bản ghi dưới dạng VTT",
+      "AsDocx": "Bản ghi dưới dạng Word (DOCX)"
     },
     "ExportJson": "Sao chép dưới dạng JSON",
     "ExportMarkdown": "Sao chép dưới dạng Markdown",
@@ -385,6 +391,7 @@
       "Transcription": "Phiên âm"
     },
     "TabTitle": "Tóm tắt AI",
+    "TabsLabel": "Các phần của bản ghi",
     "Topics": "chủ đề:",
     "Version": {
       "Latest": "Mới nhất",
@@ -2123,9 +2130,6 @@
       "Recording": "Bản ghi"
     }
   },
-  "MediaCard": {
-    "Untitled": "Chưa đặt tiêu đề"
-  },
   "DesktopTeam": {
     "Workspace": "Không gian làm việc",
     "RoleOwner": "Chủ sở hữu",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "Đã xuất {{count}} tệp",
     "Exporting": "Đang xuất...",
     "FilteredStats": "{{filtered}} trong tổng số {{total}} tệp",
-    "GridView": "Chế độ lưới",
     "Import": "Nhập",
-    "ListView": "Chế độ danh sách",
     "NoFiles": "Chưa có tệp phương tiện nào",
     "NoFilesHint": "Ghi âm/ghi hình hoặc nhập tệp để bắt đầu",
     "NoResults": "Không có tệp nào phù hợp với bộ lọc của bạn",
     "NoResultsHint": "Thử điều chỉnh tìm kiếm hoặc bộ lọc của bạn",
     "Screenshots": "Ảnh chụp màn hình",
-    "Search": "Tìm kiếm tệp phương tiện...",
+    "FilterByName": "Lọc thư viện này",
+    "FileType": "Loại tệp",
+    "Layout": "Bố cục",
+    "Grid": "Lưới",
+    "List": "Danh sách",
+    "SortNewest": "Mới nhất trước",
+    "SortOldest": "Cũ nhất trước",
+    "SortNameAZ": "Tên A–Z",
+    "SortNameZA": "Tên Z–A",
+    "SortLongest": "Dài nhất trước",
+    "SortShortest": "Ngắn nhất trước",
+    "SortLargest": "Lớn nhất trước",
+    "SortSmallest": "Nhỏ nhất trước",
     "SelectAll": "Chọn tất cả",
     "Selected": "{{count}} đã chọn",
     "Sort": "Sắp xếp theo",
-    "SortByDate": "Ngày",
-    "SortByDuration": "Thời lượng",
-    "SortByName": "Tên",
-    "SortBySize": "Kích thước",
     "Title": "Thư viện phương tiện",
     "Video": "Băng hình",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "Đã xuất {{count}} tệp",
     "Selected_one": "Đã chọn {{count}}",
     "Selected_other": "Đã chọn {{count}}",
-    "ImportTooltip": "Nhập phương tiện · {{shortcut}} để dán hình ảnh"
+    "ImportTooltip": "Nhập phương tiện · {{shortcut}} để dán hình ảnh",
+    "Section": {
+      "ThisWeek": "Tuần này",
+      "EarlierThisMonth": "Trước đó trong tháng này",
+      "Undated": "Không có ngày"
+    },
+    "Image": "Hình ảnh",
+    "SelectRecordingAt": "Chọn {{name}}, {{when}}"
   },
   "MeetSeasaltAi": {
     "ActionItems": "Mục hành động",
@@ -2852,6 +2869,7 @@
     "Pause": "Tạm dừng",
     "Play": "Phát",
     "PlaybackSpeed": "Tốc độ phát lại",
+    "MoreControls": "Thêm điều khiển phát",
     "SkipBackward10": "-10 giây",
     "SkipBackward10Short": "-10 giây",
     "SkipBackward30": "-30 giây",
@@ -2866,13 +2884,13 @@
     "Unmute": "Bật tiếng"
   },
   "PlayerCard": {
-    "ClosePlayback": "Thoát phát lại",
     "CodecInfo": "Thông tin Codec",
     "MoreOptions": "Thêm tùy chọn",
     "PlaybackRegion": "Phát bản ghi",
     "Rename": "Đổi tên bản ghi",
     "OpenOnWeb": "Mở trên web",
-    "ShareViaWeb": "Chia sẻ qua web"
+    "ShareViaWeb": "Chia sẻ qua web",
+    "WorkspaceSharing": "Chia sẻ trong không gian làm việc…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet đã được cập nhật thành công. Có gì mới:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "Chưa",
     "CaptureStopped": "Đã dừng ghi màn hình. Bản ghi vẫn tiếp tục nhưng không có video mới.",
     "RecordingPage": "Trang ghi âm",
-    "RecordingPageTitle": "Đi tới trang bản ghi đang diễn ra · {{title}}"
+    "RecordingPageTitle": "Đi tới trang bản ghi đang diễn ra · {{title}}",
+    "Change": "Thay đổi",
+    "ChangeAudio": "Thay đổi cài đặt âm thanh"
   },
   "RecordingControls": {
     "ContinueRecording": "Tiếp tục ghi",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "Đăng nhập bằng đăng ký hoặc BYOK để xử lý hình ảnh.",
     "SubscribeToDescribe": "Đăng ký để bật phân tích ảnh chụp màn hình bằng AI.",
     "Tab": {
-      "Custom": "Lời nhắc tùy chỉnh",
       "Description": "Mô tả",
-      "OCR": "Văn bản trong ảnh chụp này"
+      "OCR": "Văn bản trong ảnh chụp này",
+      "Text": "Văn bản",
+      "CustomShort": "Tùy chỉnh"
     },
     "UnknownError": "Lỗi không xác định",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "Tải xuống mô tả ảnh chụp màn hình.",
     "NoDescriptionForThis": "Không có mô tả cho ảnh chụp này.",
     "TextNotAvailableStore": "Không khả dụng trong phiên bản Microsoft Store. Trình cài đặt Windows từ seameet.ai đọc văn bản ngay trên thiết bị của bạn.",
-    "TextNotAvailable": "Không khả dụng trên máy tính này."
+    "TextNotAvailable": "Không khả dụng trên máy tính này.",
+    "TabsLabel": "Các phần của ảnh chụp màn hình",
+    "CopyAll": "Sao chép tất cả"
   },
   "ScreenshotView": {
     "RecentLabel": "Ảnh chụp màn hình gần đây"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "Đang bắt đầu xem trước…",
     "PreviewUnavailable": "Không có bản xem trước"
   },
-  "LiveLayout": {
-    "Divider": "Đổi độ rộng cột bản phiên âm"
-  },
   "LiveNotes": {
     "Placeholder": "Ghi chú cuộc họp…",
     "CreateFailed": "Không tạo được ghi chú. Nội dung của bạn vẫn được giữ ở đây."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "Đang ghi vào {{title}}",
     "TranscriptOff": "Phiên âm trực tiếp đang tắt.",
     "AskNeedsTranscript": "Hỏi hoạt động khi bản phiên âm bắt đầu.",
-    "NotesAndEvents": "Ghi chú và sự kiện",
-    "TranscriptAndAsk": "Phiên âm và Hỏi",
     "RecordingTabs": "Bản ghi",
     "AnswerReady": "{{tab}}, đã có câu trả lời",
-    "AskMoving": "Hỏi sẽ chuyển sang bản ghi đã lưu khi bản ghi mở ra."
+    "AskMoving": "Hỏi sẽ chuyển sang bản ghi đã lưu khi bản ghi mở ra.",
+    "HidePanel": "Ẩn bảng bên",
+    "ShowPanel": "Hiện bảng bên",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "Đổi kích thước bảng bên"
   },
   "NoteRecord": {
-    "Record": "Ghi",
+    "RecordIntoNote": "Ghi âm vào ghi chú này",
     "Menu": "Cách ghi khác",
     "Screen": "Ghi màn hình",
     "Window": "Ghi một cửa sổ",
@@ -4739,7 +4761,8 @@
     "Dismiss": "Đóng",
     "BackToMeeting": "Quay lại cuộc họp",
     "BackToMeetingHint": "Thu nhỏ SeaMeet; thanh nổi vẫn giữ các nút điều khiển",
-    "TimeLabel": "Thời gian ghi {{time}}"
+    "TimeLabel": "Thời gian ghi {{time}}",
+    "StartedAt": "Bắt đầu ghi lúc {{time}}"
   },
   "NoteLivePanel": {
     "Region": "Bản chép lời trực tiếp và hỏi",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "Không ai: chỉ lưu trên máy tính này"
   },
   "TeamShareMenu": {
-    "Open": "Chia sẻ…",
     "Title": "Chia sẻ",
     "Loading": "Đang tải cài đặt chia sẻ…",
     "LoadFailed": "Không thể tải cài đặt chia sẻ.",
@@ -5683,5 +5705,17 @@
     "Title": "Ảnh chụp màn hình mới",
     "WindowHint": "Bạn chọn cửa sổ khi chụp.",
     "ModeScreenSubOne": "Toàn bộ màn hình"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "Đang ghi âm vào ghi chú này"
+  },
+  "MediaStage": {
+    "View": "Kích thước hiển thị",
+    "Fit": "Vừa khung",
+    "Actual": "100%",
+    "ZoomIn": "Phóng to",
+    "ZoomOut": "Thu nhỏ",
+    "Theater": "Chế độ rạp chiếu",
+    "FitWidth": "Vừa chiều rộng"
   }
 }

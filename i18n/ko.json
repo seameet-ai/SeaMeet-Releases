@@ -259,6 +259,7 @@
     "ConfigureProviders": "AI 요약을 생성하려면 설정에서 실시간 전사를 활성화하고 LLM 공급자를 구성하세요.",
     "ConfirmRename": "이름 변경 확인",
     "Copy": "복사",
+    "CopyPart": "{{part}} 복사",
     "DeepComplete": {
       "Badge": "딥 · Gemini가 녹음을 분석했습니다",
       "Toast": "✨ 딥 요약이 준비되었습니다"
@@ -309,8 +310,13 @@
       "Vtt": "웹 자막 (.vtt)",
       "Docx": "Word (.docx)",
       "MaskedHeader": "무료: 처음 {{minutes}}분",
+      "MenuMasked": "{{label}}, {{note}}",
       "Failed": "파일을 만들지 못했습니다. 다시 시도하세요.",
-      "Footer": "녹취록이 이어집니다 — Sync Pro로 전체 녹취록을 잠금 해제하세요: {{url}}"
+      "Footer": "녹취록이 이어집니다 — Sync Pro로 전체 녹취록을 잠금 해제하세요: {{url}}",
+      "AsTxt": "녹취록(TXT)",
+      "AsSrt": "녹취록(SRT)",
+      "AsVtt": "녹취록(VTT)",
+      "AsDocx": "녹취록(Word, DOCX)"
     },
     "ExportJson": "JSON으로 복사",
     "ExportMarkdown": "마크다운으로 복사",
@@ -385,6 +391,7 @@
       "Transcription": "전사"
     },
     "TabTitle": "AI 요약",
+    "TabsLabel": "녹음 섹션",
     "Topics": "주제:",
     "Version": {
       "Latest": "최신",
@@ -2123,9 +2130,6 @@
       "Recording": "녹음"
     }
   },
-  "MediaCard": {
-    "Untitled": "제목 없음"
-  },
   "DesktopTeam": {
     "Workspace": "워크스페이스",
     "RoleOwner": "소유자",
@@ -2201,22 +2205,28 @@
     "ExportSuccess": "{{count}}개의 파일이 내보내졌습니다",
     "Exporting": "내보내는 중...",
     "FilteredStats": "{{filtered}} / {{total}} 파일",
-    "GridView": "그리드 보기",
     "Import": "가져오기",
-    "ListView": "목록 보기",
     "NoFiles": "미디어 파일이 없습니다",
     "NoFilesHint": "오디오/비디오를 녹음하거나 파일을 가져와 시작하세요",
     "NoResults": "필터에 맞는 파일이 없습니다",
     "NoResultsHint": "검색어나 필터를 조정해 보세요",
     "Screenshots": "스크린샷",
-    "Search": "미디어 파일 검색...",
+    "FilterByName": "이 라이브러리 필터",
+    "FileType": "파일 형식",
+    "Layout": "레이아웃",
+    "Grid": "그리드",
+    "List": "목록",
+    "SortNewest": "최신순",
+    "SortOldest": "오래된순",
+    "SortNameAZ": "이름 (A–Z)",
+    "SortNameZA": "이름 (Z–A)",
+    "SortLongest": "긴 순서",
+    "SortShortest": "짧은 순서",
+    "SortLargest": "큰 파일순",
+    "SortSmallest": "작은 파일순",
     "SelectAll": "전체 선택",
     "Selected": "{{count}}개 선택됨",
     "Sort": "정렬 기준",
-    "SortByDate": "날짜",
-    "SortByDuration": "길이",
-    "SortByName": "이름",
-    "SortBySize": "크기",
     "Title": "미디어 라이브러리",
     "Video": "비디오",
     "OwnerFilter": {
@@ -2237,7 +2247,14 @@
     "ExportSuccess_other": "파일 {{count}}개를 내보냈습니다",
     "Selected_one": "{{count}}개 선택됨",
     "Selected_other": "{{count}}개 선택됨",
-    "ImportTooltip": "미디어 가져오기 · {{shortcut}}로 이미지 붙여넣기"
+    "ImportTooltip": "미디어 가져오기 · {{shortcut}}로 이미지 붙여넣기",
+    "Section": {
+      "ThisWeek": "이번 주",
+      "EarlierThisMonth": "이번 달 이전",
+      "Undated": "날짜 없음"
+    },
+    "Image": "이미지",
+    "SelectRecordingAt": "{{name}}, {{when}} 선택"
   },
   "MeetSeasaltAi": {
     "ActionItems": "실행 항목",
@@ -2852,6 +2869,7 @@
     "Pause": "재생 일시 정지",
     "Play": "재생",
     "PlaybackSpeed": "재생 속도",
+    "MoreControls": "추가 재생 컨트롤",
     "SkipBackward10": "뒤로 10초 점프",
     "SkipBackward10Short": "-10초로 건너뛰기",
     "SkipBackward30": "뒤로 30초 점프",
@@ -2866,13 +2884,13 @@
     "Unmute": "음소거 해제"
   },
   "PlayerCard": {
-    "ClosePlayback": "재생 종료",
     "CodecInfo": "코덱 정보",
     "MoreOptions": "추가 옵션",
     "PlaybackRegion": "녹음 재생",
     "Rename": "녹음 이름 바꾸기",
     "OpenOnWeb": "웹에서 열기",
-    "ShareViaWeb": "웹으로 공유"
+    "ShareViaWeb": "웹으로 공유",
+    "WorkspaceSharing": "워크스페이스 공유…"
   },
   "PostUpdateModal": {
     "Description": "SeaMeet이 성공적으로 업데이트되었습니다. 새로운 기능:",
@@ -2985,7 +3003,9 @@
     "ConfirmReleaseNo": "아직 아니요",
     "CaptureStopped": "화면 캡처가 중지되었습니다. 새 영상 없이 녹화가 계속됩니다.",
     "RecordingPage": "녹음 페이지",
-    "RecordingPageTitle": "진행 중인 녹음 페이지로 이동 · {{title}}"
+    "RecordingPageTitle": "진행 중인 녹음 페이지로 이동 · {{title}}",
+    "Change": "변경",
+    "ChangeAudio": "오디오 설정 변경"
   },
   "RecordingControls": {
     "ContinueRecording": "녹음 계속",
@@ -3152,9 +3172,10 @@
     "SetupRequired": "이미지를 처리하려면 구독 또는 BYOK로 로그인하세요.",
     "SubscribeToDescribe": "구독하여 AI 기반 스크린샷 분석을 활성화하세요.",
     "Tab": {
-      "Custom": "사용자 정의 프롬프트",
       "Description": "설명",
-      "OCR": "이 스크린샷의 텍스트"
+      "OCR": "이 스크린샷의 텍스트",
+      "Text": "텍스트",
+      "CustomShort": "사용자 지정"
     },
     "UnknownError": "알 수 없는 오류",
     "OcrWall": {
@@ -3177,7 +3198,9 @@
     "DownloadDescriptionsNoSize": "스크린샷 설명을 다운로드하세요.",
     "NoDescriptionForThis": "이 스크린샷에는 설명이 없습니다.",
     "TextNotAvailableStore": "Microsoft Store 버전에서는 사용할 수 없습니다. seameet.ai의 Windows 설치 프로그램은 사용자 기기에서 텍스트를 읽습니다.",
-    "TextNotAvailable": "이 컴퓨터에서는 사용할 수 없습니다."
+    "TextNotAvailable": "이 컴퓨터에서는 사용할 수 없습니다.",
+    "TabsLabel": "스크린샷 섹션",
+    "CopyAll": "모두 복사"
   },
   "ScreenshotView": {
     "RecentLabel": "최근 스크린샷"
@@ -4697,9 +4720,6 @@
     "PreviewStarting": "미리보기를 시작하는 중…",
     "PreviewUnavailable": "미리보기를 사용할 수 없음"
   },
-  "LiveLayout": {
-    "Divider": "전사 열 너비 조정"
-  },
   "LiveNotes": {
     "Placeholder": "회의 메모 작성…",
     "CreateFailed": "노트를 만들 수 없습니다. 입력한 텍스트는 여기에 남아 있습니다."
@@ -4710,14 +4730,16 @@
     "NowWritingTo": "이제 {{title}}에 작성 중",
     "TranscriptOff": "실시간 스크립트가 꺼져 있습니다.",
     "AskNeedsTranscript": "스크립트가 시작되면 질문할 수 있습니다.",
-    "NotesAndEvents": "메모 및 이벤트",
-    "TranscriptAndAsk": "스크립트 및 질문",
     "RecordingTabs": "녹음",
     "AnswerReady": "{{tab}}, 답변 준비됨",
-    "AskMoving": "저장된 녹음이 열리면 질문이 그곳으로 옮겨집니다."
+    "AskMoving": "저장된 녹음이 열리면 질문이 그곳으로 옮겨집니다.",
+    "HidePanel": "사이드 패널 숨기기",
+    "ShowPanel": "사이드 패널 표시",
+    "TabWithCount": "{{tab}}, {{count}}",
+    "ResizeSide": "사이드 패널 크기 조정"
   },
   "NoteRecord": {
-    "Record": "녹음",
+    "RecordIntoNote": "이 노트에 녹음",
     "Menu": "다른 녹음 방법",
     "Screen": "화면 녹화",
     "Window": "창 녹화",
@@ -4739,7 +4761,8 @@
     "Dismiss": "닫기",
     "BackToMeeting": "회의로 돌아가기",
     "BackToMeetingHint": "SeaMeet을 최소화합니다. 컨트롤은 플로터에 남습니다",
-    "TimeLabel": "녹음 시간 {{time}}"
+    "TimeLabel": "녹음 시간 {{time}}",
+    "StartedAt": "녹음 시작 {{time}}"
   },
   "NoteLivePanel": {
     "Region": "실시간 자막과 질문",
@@ -4777,7 +4800,6 @@
     "OffOnDevice": "없음: 이 컴퓨터에만 남습니다"
   },
   "TeamShareMenu": {
-    "Open": "공유…",
     "Title": "공유 상태",
     "Loading": "공유 설정을 불러오는 중…",
     "LoadFailed": "공유 설정을 불러올 수 없습니다.",
@@ -5683,5 +5705,17 @@
     "Title": "새 스크린샷",
     "WindowHint": "캡처할 때 창을 선택합니다.",
     "ModeScreenSubOne": "전체 디스플레이"
+  },
+  "NoteRecordingBar": {
+    "IntoThisNote": "이 노트에 녹음 중"
+  },
+  "MediaStage": {
+    "View": "표시 크기",
+    "Fit": "맞춤",
+    "Actual": "100%",
+    "ZoomIn": "확대",
+    "ZoomOut": "축소",
+    "Theater": "극장 모드",
+    "FitWidth": "너비 맞춤"
   }
 }
