@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "ورود و اشتراک",
-      "Sync": "از یادداشت‌های خود در یک مخزن خصوصی GitHub با BYOK Pro نسخه پشتیبان تهیه کنید",
-      "SyncProNudge": "از یادداشت‌های خود در یک مخزن خصوصی GitHub با Sync Pro نسخه پشتیبان تهیه کنید"
+      "Sync": "از یادداشت‌های خود در یک مخزن خصوصی GitHub با BYOK Pro نسخه پشتیبان تهیه کنید"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}} فایل صادر شد",
     "Selected_one": "{{count}} انتخاب‌شده",
     "Selected_other": "{{count}} انتخاب‌شده",
-    "ImportTooltip": "وارد کردن رسانه · {{shortcut}} تصویر را می‌چسباند",
     "Section": {
       "ThisWeek": "این هفته",
       "EarlierThisMonth": "پیش‌تر در همین ماه",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "بخشی خوانده شد: ممکن است بخشی از متن نباشد. دوباره بخوانید تا بقیه را بگیرید.",
     "ReadingText": "در حال خواندن متن روی این رایانه…",
     "NoTextFound": "در این اسکرین‌شات متنی پیدا نشد.",
-    "NoTextYet": "متن روی این رایانه خوانده می‌شود. هنوز متنی پیدا نشده است.",
+    "NoTextFoundYet": "هنوز متنی پیدا نشده است.",
     "SetupRequiredSyncPro": "برای پردازش تصویر با اشتراک Sync Pro وارد شوید.",
     "WrittenByCloud": "نوشته‌شده با هوش مصنوعی ابری.",
     "NotTurnedOn": "روشن نیست.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "جستجو… (⌘K)",
     "Results": {
       "Aria": "نتایج جستجو"
-    }
+    },
+    "SettingsPlaceholder": "جستجو در تنظیمات… (⌘K)",
+    "SettingsAria": "جستجو در تنظیمات",
+    "SettingsNoResults": "هیچ تنظیمی مطابقت ندارد",
+    "SettingsResults": "تنظیمات",
+    "SettingsSection": "بخش تنظیمات"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "مسیر در کلیپ‌بورد کپی شد",
       "PermissionHeader": "مجوزهای برنامه",
       "Title": "مجوزهای برنامه",
-      "RemoveApp": "حذف {{app}} از فهرست"
+      "RemoveApp": "حذف {{app}} از فهرست",
+      "PermissionFor": "مجوز برنامه برای {{app}}",
+      "ModeFor": "حالت ضبط پیش‌فرض برای {{app}}"
     },
     "Back": "بازگشت",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "تغییر زبان ممکن نشد.",
     "Memory": {
-      "MemoryLink": "روشن یا خاموش کردن حافظه جلسه، و منابع ساخت آن",
-      "MemoryHint": "در بخش هوش مصنوعی.",
-      "WorkspacesLink": "فضاهای کاری",
-      "WorkspacesHint": "در نوار کناری یادداشت‌ها.",
-      "GitHubLink": "پشتیبان‌گیری از یادداشت‌ها در GitHub",
-      "GitHubHint": "در همگام‌سازی و پشتیبان‌گیری.",
-      "MemoryLinkLegacy": "ساخت حافظه از یادداشت‌ها و ضبط‌های شما"
+      "GitHubLink": "پشتیبان‌گیری از یادداشت‌ها در GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "ضبط متوقف شده",
     "ResumeRecording": "ادامه ضبط",
     "StopRecording": "توقف ضبط",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "تنظیمات…"
   },
   "Types": {
     "Audio": "صوتی",
@@ -4401,6 +4401,7 @@
     "Agent": "دستیار",
     "Meetings": "جلسه‌های متصل",
     "NewRecording": "ضبط جدید",
+    "Record": "ضبط",
     "Recording": "در حال ضبط",
     "ReturnToRecording": "بازگشت به ضبط",
     "Starting": "در حال شروع…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "بیکار",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "هوش مصنوعی خصوصی · {{stt}} + {{llm}}",
     "Offline": "موتور هوش مصنوعی روی دستگاه اجرا نمی‌شود",
     "PanelLabel": "Local model resources",
     "OfflineHint": "خودش دوباره راه‌اندازی می‌شود؛ اگر آفلاین ماند، SeaMeet را دوباره راه‌اندازی کنید.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "هوش مصنوعی خصوصی · {{model}}",
+    "Badge": "هوش مصنوعی خصوصی",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "از قبل آن را دارید. Sync Pro آن را فوراً و برای همیشه نشان می‌دهد.",
       "ReassuranceUpdatePayment": "از قبل آن را دارید. برای دیدن آن، پرداخت خود را به‌روز کنید.",
       "ReassuranceAskOwner": "از قبل آن را دارید. مالک تیم شما می‌تواند پرداخت را به‌روز کند تا آن را ببینید."
-    }
+    },
+    "SignInWhy": "حساب SeaMeet شما طرح و کتابخانه‌تان را در همه دستگاه‌ها نگه می‌دارد."
   },
   "AiRuns": {
-    "Device": "هوش مصنوعی روی دستگاه",
+    "Device": "هوش مصنوعی خصوصی",
     "Cloud": "هوش مصنوعی ابری",
     "CloudTrial": "هوش مصنوعی ابری · آزمایش رایگان",
     "CloudOwnKeys": "هوش مصنوعی ابری · کلیدهای خودتان",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "جزئیات",
     "ActionTestAgain": "آزمایش دوباره",
     "ActionCheckForUpdates": "بررسی به‌روزرسانی",
+    "ActionGetAppleSilicon": "دانلود نسخه تراشه Apple",
     "ActionUpdatePayment": "به‌روزرسانی پرداخت",
     "ActionGetSyncPro": "دریافت Sync Pro",
     "ActionGetSyncProLower": "Sync Pro را دریافت کنید",
@@ -5401,7 +5404,8 @@
     "CardSynced": "همگام‌شده · کتابخانه به‌روز است",
     "CardSyncing": "در حال همگام‌سازی · بارگذاری در کتابخانهٔ شما",
     "CloudTag": "ابر",
-    "AllServicesWorking": "همهٔ سرویس‌ها کار می‌کنند"
+    "AllServicesWorking": "همهٔ سرویس‌ها کار می‌کنند",
+    "UnavailableOpensDetails": "فعال کنید تا دلیل و راه دریافت آن را ببینید."
   },
   "AiSettings": {
     "FreeHoursLeft": "{{left}} از رونویسی ابری رایگان باقی مانده. ۱۵ دقیقه اول هر ضبط خواندنی است.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "برای مشاهده سطح، صحبت کنید",
     "MicLevelOk": "سطح میکروفون مناسب است",
     "MicLevelSilent": "میکروفون بی‌صدا است",
-    "SystemSoundOnly": "فقط صدای سیستم"
+    "SystemSoundOnly": "فقط صدای سیستم",
+    "StartKeysHint": "برای شروع <enter>Enter</enter> یا <space>Space</space> را بزنید"
   },
   "MicPermission": {
     "Title": "اجازه دسترسی به میکروفون",
@@ -5535,6 +5540,7 @@
     "Capturing": "در حال گرفتن…",
     "CopyText": "کپی متن پس از گرفتن تصویر",
     "CopyTextSub": "خواندن روی همین دستگاه",
+    "CopyTextSubCloud": "خواندن روی همین دستگاه، یا با هوش مصنوعی ابری اگر متنی پیدا نشود",
     "CtaArea": "گرفتن یک ناحیه",
     "CtaScreen": "گرفتن تمام صفحه",
     "CtaWindow": "گرفتن یک پنجره",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "میان‌بر",
     "ShortcutLabel": "گرفتن تصویر صفحه",
     "TextBadge": "متن روی همین دستگاه خوانده می‌شود",
+    "BadgePrivate": "هوش مصنوعی خصوصی آن را روی همین دستگاه می‌خواند",
+    "BadgeCloud": "هوش مصنوعی ابری آن را می‌خواند و توصیف می‌کند",
     "TextHeading": "متن در تصویرهای صفحه",
     "Title": "تصویر صفحه جدید",
     "WindowHint": "پنجره را هنگام گرفتن انتخاب می‌کنید.",
-    "ModeScreenSubOne": "تمام نمایشگر"
+    "ModeScreenSubOne": "تمام نمایشگر",
+    "StartKeysHint": "برای گرفتن تصویر <enter>Enter</enter> یا <space>Space</space> را بزنید"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "در حال ضبط در این یادداشت"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "یادداشت‌های انتشار این نسخه",
       "ReleaseNotesDesc": "تازه‌های SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "این Mac پردازنده Intel دارد. هوش مصنوعی خصوصی به Mac با تراشه Apple (M1 یا جدیدتر) نیاز دارد.",
+    "IntelMacDevice": "این Mac پردازنده Intel دارد. هوش مصنوعی روی دستگاه به Mac با تراشه Apple (M1 یا جدیدتر) نیاز دارد.",
+    "MacRosetta": "این نسخه از SeaMeet برای Macهای Intel است. برای استفاده از آن، نسخه تراشه Apple را از seameet.ai نصب کنید.",
+    "WinArch": "Windows روی این رایانه با پردازنده ۳۲ بیتی یا ARM اجرا می‌شود. هوش مصنوعی خصوصی به Windows ۶۴ بیتی با پردازنده Intel یا AMD نیاز دارد.",
+    "WinArchDevice": "Windows روی این رایانه با پردازنده ۳۲ بیتی یا ARM اجرا می‌شود. هوش مصنوعی روی دستگاه به Windows ۶۴ بیتی با پردازنده Intel یا AMD نیاز دارد.",
+    "WinMemory": "این رایانه {{have}} گیگابایت حافظه دارد. هوش مصنوعی خصوصی به {{need}} گیگابایت نیاز دارد.",
+    "WinMemoryDevice": "این رایانه {{have}} گیگابایت حافظه دارد. هوش مصنوعی روی دستگاه به {{need}} گیگابایت نیاز دارد.",
+    "SummaryMemory": "رونوشت‌های خصوصی اینجا کار می‌کنند؛ خلاصه‌ها و «بپرسید» به {{need}} گیگابایت نیاز دارند.",
+    "CloudWorksHere": "هوش مصنوعی ابری روی این رایانه کار می‌کند.",
+    "LearnMore": "بیشتر بدانید"
   }
 }

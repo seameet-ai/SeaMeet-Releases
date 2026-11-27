@@ -1108,8 +1108,7 @@
     },
     "Nudge": {
       "CTA": "Entrar e assinar",
-      "Sync": "Faça backup das suas notas em um repositório privado do GitHub com BYOK Pro",
-      "SyncProNudge": "Faça backup das suas notas em um repositório privado do GitHub com Sync Pro"
+      "Sync": "Faça backup das suas notas em um repositório privado do GitHub com BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2092,7 +2091,6 @@
     "ExportSuccess_other": "{{count}} arquivos exportados",
     "Selected_one": "{{count}} selecionado",
     "Selected_other": "{{count}} selecionados",
-    "ImportTooltip": "Importar mídia · {{shortcut}} cola uma imagem",
     "Section": {
       "ThisWeek": "Esta semana",
       "EarlierThisMonth": "Mais cedo neste mês",
@@ -3023,7 +3021,7 @@
     "PartlyRead": "Lido em parte: pode faltar texto. Leia de novo para tentar obter o restante.",
     "ReadingText": "Lendo o texto neste computador…",
     "NoTextFound": "Nenhum texto encontrado nesta captura.",
-    "NoTextYet": "O texto é lido neste computador. Ainda não foi encontrado nenhum.",
+    "NoTextFoundYet": "Nenhum texto encontrado ainda.",
     "SetupRequiredSyncPro": "Faça login com uma assinatura Sync Pro para processar a imagem.",
     "WrittenByCloud": "Escrita pela IA na nuvem.",
     "NotTurnedOn": "Não ativado.",
@@ -3117,7 +3115,12 @@
     "Placeholder": "Pesquisar… (⌘K)",
     "Results": {
       "Aria": "Resultados da pesquisa"
-    }
+    },
+    "SettingsPlaceholder": "Pesquisar configurações… (⌘K)",
+    "SettingsAria": "Pesquisar configurações",
+    "SettingsNoResults": "Nenhuma configuração corresponde",
+    "SettingsResults": "Configurações",
+    "SettingsSection": "Seção de configurações"
   },
   "Settings": {
     "About": {
@@ -3190,7 +3193,9 @@
       "PathCopied": "Caminho copiado para a área de transferência",
       "PermissionHeader": "Permissões do App",
       "Title": "Permissões do aplicativo",
-      "RemoveApp": "Remover {{app}} da lista"
+      "RemoveApp": "Remover {{app}} da lista",
+      "PermissionFor": "Permissão do app para {{app}}",
+      "ModeFor": "Modo de gravação padrão para {{app}}"
     },
     "Back": "Voltar",
     "GroupTitle": {
@@ -3305,13 +3310,7 @@
     },
     "LanguageFailed": "Não foi possível alterar o idioma.",
     "Memory": {
-      "MemoryLink": "Memória de reuniões ativada ou desativada, e do que é construída",
-      "MemoryHint": "Na seção IA.",
-      "WorkspacesLink": "Espaços de trabalho",
-      "WorkspacesHint": "Na barra lateral de Notas.",
-      "GitHubLink": "Fazer backup das notas no GitHub",
-      "GitHubHint": "Em Sincronização e backup.",
-      "MemoryLinkLegacy": "Construir a Memória a partir das suas notas e gravações"
+      "GitHubLink": "Fazer backup das notas no GitHub"
     }
   },
   "SettingsModal": {
@@ -3575,7 +3574,8 @@
     "RecordingPaused": "Gravação pausada",
     "ResumeRecording": "Retomar gravação",
     "StopRecording": "Parar gravação",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Ajustes…"
   },
   "Types": {
     "Audio": "Áudio",
@@ -4411,6 +4411,7 @@
     "Agent": "Agente",
     "Meetings": "Reuniões conectadas",
     "NewRecording": "Nova gravação",
+    "Record": "Gravar",
     "Recording": "Gravando",
     "ReturnToRecording": "Voltar à gravação",
     "Starting": "Iniciando…",
@@ -4708,7 +4709,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Ocioso",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "IA Privada · {{stt}} + {{llm}}",
     "Offline": "O mecanismo de IA no dispositivo não está em execução",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Ele reinicia sozinho; se continuar offline, reinicie o SeaMeet.",
@@ -4727,8 +4728,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "IA Privada · {{model}}",
+    "Badge": "IA Privada",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5233,10 +5234,11 @@
       "Reassurance": "Você já tem isso. O Sync Pro mostra na hora, para sempre.",
       "ReassuranceUpdatePayment": "Você já tem isso. Atualize seu pagamento para ver.",
       "ReassuranceAskOwner": "Você já tem isso. O proprietário da sua equipe pode atualizar o pagamento para mostrar."
-    }
+    },
+    "SignInWhy": "Sua conta SeaMeet mantém seu plano e sua biblioteca em todos os dispositivos."
   },
   "AiRuns": {
-    "Device": "IA no dispositivo",
+    "Device": "IA Privada",
     "Cloud": "IA na nuvem",
     "CloudTrial": "IA na nuvem · teste gratuito",
     "CloudOwnKeys": "IA na nuvem · suas próprias chaves",
@@ -5280,6 +5282,7 @@
     "ActionDetails": "Detalhes",
     "ActionTestAgain": "Testar de novo",
     "ActionCheckForUpdates": "Verificar atualizações",
+    "ActionGetAppleSilicon": "Baixar a versão para Apple silicon",
     "ActionUpdatePayment": "Atualizar pagamento",
     "ActionGetSyncPro": "Assinar o Sync Pro",
     "ActionGetSyncProLower": "assine o Sync Pro",
@@ -5436,7 +5439,8 @@
     "CardSynced": "Sincronizado · biblioteca atualizada",
     "CardSyncing": "Sincronizando · enviando para sua biblioteca",
     "CloudTag": "Nuvem",
-    "AllServicesWorking": "Todos os serviços funcionando"
+    "AllServicesWorking": "Todos os serviços funcionando",
+    "UnavailableOpensDetails": "Ative para ver o motivo e como obtê-lo."
   },
   "AiSettings": {
     "FreeHoursLeft": "Restam {{left}} de transcrição gratuita na nuvem. Os primeiros 15 minutos de cada gravação são legíveis.",
@@ -5550,7 +5554,8 @@
     "SpeakToSeeLevel": "Fale para ver o nível",
     "MicLevelOk": "Nível do microfone ok",
     "MicLevelSilent": "O microfone está silencioso",
-    "SystemSoundOnly": "Apenas som do sistema"
+    "SystemSoundOnly": "Apenas som do sistema",
+    "StartKeysHint": "Pressione <enter>Enter</enter> ou <space>Espaço</space> para começar"
   },
   "MicPermission": {
     "Title": "Permita o uso do seu microfone",
@@ -5572,6 +5577,7 @@
     "Capturing": "Capturando…",
     "CopyText": "Copiar o texto após a captura",
     "CopyTextSub": "Lido neste computador",
+    "CopyTextSubCloud": "Lido neste computador, ou pela IA na nuvem quando nada é encontrado",
     "CtaArea": "Capturar uma área",
     "CtaScreen": "Capturar a tela inteira",
     "CtaWindow": "Capturar uma janela",
@@ -5587,10 +5593,13 @@
     "ShortcutHeading": "Atalho",
     "ShortcutLabel": "Fazer uma captura de tela",
     "TextBadge": "O texto é lido neste computador",
+    "BadgePrivate": "A IA Privada lê neste computador",
+    "BadgeCloud": "A IA na nuvem lê e descreve",
     "TextHeading": "Texto nas capturas de tela",
     "Title": "Nova captura de tela",
     "WindowHint": "Você escolhe a janela na hora da captura.",
-    "ModeScreenSubOne": "Uma tela inteira"
+    "ModeScreenSubOne": "Uma tela inteira",
+    "StartKeysHint": "Pressione <enter>Enter</enter> ou <space>Espaço</space> para capturar"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Gravando nesta nota"
@@ -5625,5 +5634,17 @@
       "ReleaseNotes": "Notas desta versão",
       "ReleaseNotesDesc": "Novidades do SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Este Mac tem um processador Intel. A IA Privada precisa de um Mac com Apple silicon (M1 ou posterior).",
+    "IntelMacDevice": "Este Mac tem um processador Intel. A IA no dispositivo precisa de um Mac com Apple silicon (M1 ou posterior).",
+    "MacRosetta": "Esta cópia do SeaMeet é para Macs Intel. Instale a versão para Apple silicon em seameet.ai para usá-lo.",
+    "WinArch": "Este PC executa o Windows em um processador de 32 bits ou ARM. A IA Privada precisa do Windows de 64 bits em um processador Intel ou AMD.",
+    "WinArchDevice": "Este PC executa o Windows em um processador de 32 bits ou ARM. A IA no dispositivo precisa do Windows de 64 bits em um processador Intel ou AMD.",
+    "WinMemory": "Este PC tem {{have}} GB de memória. A IA Privada precisa de {{need}} GB.",
+    "WinMemoryDevice": "Este PC tem {{have}} GB de memória. A IA no dispositivo precisa de {{need}} GB.",
+    "SummaryMemory": "As transcrições privadas funcionam aqui; resumos e Perguntar precisam de {{need}} GB.",
+    "CloudWorksHere": "A IA na nuvem funciona neste computador.",
+    "LearnMore": "Saiba mais"
   }
 }

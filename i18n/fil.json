@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "Mag-sign in at mag-subscribe",
-      "Sync": "I-back up ang iyong mga note sa isang private GitHub repo gamit ang BYOK Pro",
-      "SyncProNudge": "I-back up ang iyong mga note sa isang private GitHub repo gamit ang Sync Pro"
+      "Sync": "I-back up ang iyong mga note sa isang private GitHub repo gamit ang BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "Na-export ang {{count}} file",
     "Selected_one": "{{count}} napili",
     "Selected_other": "{{count}} napili",
-    "ImportTooltip": "Mag-import ng media · {{shortcut}} para mag-paste ng larawan",
     "Section": {
       "ThisWeek": "Ngayong linggo",
       "EarlierThisMonth": "Mas maaga ngayong buwan",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "Bahagyang nabasa: maaaring may kulang na teksto. Basahin ulit para subukang makuha ang iba.",
     "ReadingText": "Binabasa ang text sa computer na ito…",
     "NoTextFound": "Walang text na nakita sa screenshot na ito.",
-    "NoTextYet": "Binabasa ang teksto sa computer na ito. Wala pang nakita.",
+    "NoTextFoundYet": "Wala pang nakitang text.",
     "SetupRequiredSyncPro": "Mag-sign in gamit ang Sync Pro subscription upang iproseso ang larawan.",
     "WrittenByCloud": "Isinulat ng cloud AI.",
     "NotTurnedOn": "Hindi naka-on.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "Maghanap… (⌘K)",
     "Results": {
       "Aria": "Mga resulta ng paghahanap"
-    }
+    },
+    "SettingsPlaceholder": "Maghanap sa mga setting… (⌘K)",
+    "SettingsAria": "Maghanap sa mga setting",
+    "SettingsNoResults": "Walang tugmang setting",
+    "SettingsResults": "Mga setting",
+    "SettingsSection": "Seksyon ng setting"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "Nakopya ang landas sa clipboard",
       "PermissionHeader": "Mga Pahintulot ng Aplikasyon",
       "Title": "Mga Pahintulot ng Aplikasyon",
-      "RemoveApp": "Alisin ang {{app}} sa listahan"
+      "RemoveApp": "Alisin ang {{app}} sa listahan",
+      "PermissionFor": "Pahintulot ng app para sa {{app}}",
+      "ModeFor": "Default na mode ng pagre-record para sa {{app}}"
     },
     "Back": "Bumalik",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "Hindi mabago ang wika.",
     "Memory": {
-      "MemoryLink": "Meeting Memory na naka-on o naka-off, at kung saan ito binubuo",
-      "MemoryHint": "Sa seksyong AI.",
-      "WorkspacesLink": "Mga workspace",
-      "WorkspacesHint": "Sa sidebar ng Mga tala.",
-      "GitHubLink": "I-back up ang mga tala sa GitHub",
-      "GitHubHint": "Sa Pag-sync at backup.",
-      "MemoryLinkLegacy": "Pagbuo ng Memory mula sa iyong mga tala at recording"
+      "GitHubLink": "I-back up ang mga tala sa GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "Naka-pause ang recording",
     "ResumeRecording": "Ipagpatuloy ang Recording",
     "StopRecording": "Itigil ang Recording",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Mga setting…"
   },
   "Types": {
     "Audio": "Audio",
@@ -4401,6 +4401,7 @@
     "Agent": "Agent",
     "Meetings": "Mga Pulong",
     "NewRecording": "Bagong recording",
+    "Record": "I-record",
     "Recording": "Rekording",
     "ReturnToRecording": "Bumalik sa recording",
     "Starting": "Simula…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Walang ginagawa",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "Pribadong AI · {{stt}} + {{llm}}",
     "Offline": "Hindi tumatakbo ang on-device na AI engine",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Kusa itong nagre-restart; kung manatili itong offline, i-restart ang SeaMeet.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "Pribadong AI · {{model}}",
+    "Badge": "Pribadong AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "Nasa iyo na ito. Ipinapakita ito agad ng Sync Pro, magpakailanman.",
       "ReassuranceUpdatePayment": "Nasa iyo na ito. I-update ang iyong bayad para makita ito.",
       "ReassuranceAskOwner": "Nasa iyo na ito. Maaaring i-update ng may-ari ng iyong team ang bayad para makita ito."
-    }
+    },
+    "SignInWhy": "Hawak ng iyong SeaMeet account ang plan at library mo sa bawat device."
   },
   "AiRuns": {
-    "Device": "On-device na AI",
+    "Device": "Pribadong AI",
     "Cloud": "Cloud AI",
     "CloudTrial": "Cloud AI · libreng pagsubok",
     "CloudOwnKeys": "Cloud AI · sarili mong mga key",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "Mga detalye",
     "ActionTestAgain": "Subukan ulit",
     "ActionCheckForUpdates": "Tingnan kung may update",
+    "ActionGetAppleSilicon": "I-download ang bersyong Apple silicon",
     "ActionUpdatePayment": "I-update ang bayad",
     "ActionGetSyncPro": "Kunin ang Sync Pro",
     "ActionGetSyncProLower": "kunin ang Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "Naka-sync · napapanahon ang library",
     "CardSyncing": "Nagsi-sync · ina-upload sa iyong library",
     "CloudTag": "Cloud",
-    "AllServicesWorking": "Gumagana ang lahat ng serbisyo"
+    "AllServicesWorking": "Gumagana ang lahat ng serbisyo",
+    "UnavailableOpensDetails": "I-activate para makita kung bakit at paano ito makukuha."
   },
   "AiSettings": {
     "FreeHoursLeft": "{{left}} na lang ang natitira sa libreng cloud na transkripsyon. Nababasa ang unang 15 minuto ng bawat recording.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "Magsalita para makita ang antas",
     "MicLevelOk": "Ayos ang antas ng mikropono",
     "MicLevelSilent": "Tahimik ang mikropono",
-    "SystemSoundOnly": "Tunog ng sistema lamang"
+    "SystemSoundOnly": "Tunog ng sistema lamang",
+    "StartKeysHint": "Pindutin ang <enter>Enter</enter> o <space>Space</space> para magsimula"
   },
   "MicPermission": {
     "Title": "Payagan ang iyong mikropono",
@@ -5535,6 +5540,7 @@
     "Capturing": "Nagca-capture…",
     "CopyText": "I-copy ang teksto pagkatapos ng screenshot",
     "CopyTextSub": "Binabasa sa computer na ito",
+    "CopyTextSubCloud": "Binabasa sa computer na ito, o ng Cloud AI kapag walang nakita",
     "CtaArea": "I-capture ang area",
     "CtaScreen": "I-capture ang buong screen",
     "CtaWindow": "I-capture ang window",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "Shortcut",
     "ShortcutLabel": "Kumuha ng screenshot",
     "TextBadge": "Binabasa sa computer na ito ang teksto",
+    "BadgePrivate": "Binabasa ito ng Pribadong AI sa computer na ito",
+    "BadgeCloud": "Binabasa at inilalarawan ito ng Cloud AI",
     "TextHeading": "Teksto sa mga screenshot",
     "Title": "Bagong screenshot",
     "WindowHint": "Pipiliin mo ang window kapag nag-capture ka.",
-    "ModeScreenSubOne": "Isang buong display"
+    "ModeScreenSubOne": "Isang buong display",
+    "StartKeysHint": "Pindutin ang <enter>Enter</enter> o <space>Space</space> para kumuha"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Nire-record sa note na ito"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "Release notes ng bersyong ito",
       "ReleaseNotesDesc": "Ano ang bago sa SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "May Intel na processor ang Mac na ito. Kailangan ng Pribadong AI ng Mac na may Apple silicon (M1 o mas bago).",
+    "IntelMacDevice": "May Intel na processor ang Mac na ito. Kailangan ng on-device na AI ng Mac na may Apple silicon (M1 o mas bago).",
+    "MacRosetta": "Para sa mga Intel Mac ang kopyang ito ng SeaMeet. I-install ang bersyong Apple silicon mula sa seameet.ai para magamit ito.",
+    "WinArch": "Tumatakbo ang Windows sa PC na ito sa 32-bit o ARM na processor. Kailangan ng Pribadong AI ng 64-bit na Windows sa Intel o AMD na processor.",
+    "WinArchDevice": "Tumatakbo ang Windows sa PC na ito sa 32-bit o ARM na processor. Kailangan ng on-device na AI ng 64-bit na Windows sa Intel o AMD na processor.",
+    "WinMemory": "May {{have}} GB na memory ang PC na ito. Kailangan ng Pribadong AI ng {{need}} GB.",
+    "WinMemoryDevice": "May {{have}} GB na memory ang PC na ito. Kailangan ng on-device na AI ng {{need}} GB.",
+    "SummaryMemory": "Gumagana rito ang mga pribadong transcript; kailangan ng {{need}} GB para sa mga buod at Magtanong.",
+    "CloudWorksHere": "Gumagana ang Cloud AI sa computer na ito.",
+    "LearnMore": "Alamin pa"
   }
 }

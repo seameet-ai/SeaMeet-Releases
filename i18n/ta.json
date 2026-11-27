@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "உள்நுழைந்து சந்தா செலுத்தவும்",
-      "Sync": "BYOK Pro மூலம் உங்கள் குறிப்புகளை தனிப்பட்ட GitHub repo-வில் காப்புப்பிரதி எடுக்கவும்",
-      "SyncProNudge": "Sync Pro மூலம் உங்கள் குறிப்புகளை தனிப்பட்ட GitHub repo-வில் காப்புப்பிரதி எடுக்கவும்"
+      "Sync": "BYOK Pro மூலம் உங்கள் குறிப்புகளை தனிப்பட்ட GitHub repo-வில் காப்புப்பிரதி எடுக்கவும்"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}} கோப்புகள் ஏற்றுமதி செய்யப்பட்டன",
     "Selected_one": "{{count}} தேர்ந்தெடுக்கப்பட்டது",
     "Selected_other": "{{count}} தேர்ந்தெடுக்கப்பட்டது",
-    "ImportTooltip": "மீடியாவை இறக்கு · {{shortcut}} படத்தை ஒட்டும்",
     "Section": {
       "ThisWeek": "இந்த வாரம்",
       "EarlierThisMonth": "இந்த மாதம் முன்னதாக",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "பகுதியாகப் படிக்கப்பட்டது: சில உரை விடுபட்டிருக்கலாம். மீதியைப் பெற மீண்டும் படிக்கவும்.",
     "ReadingText": "இந்தக் கணினியில் உரையைப் படிக்கிறது…",
     "NoTextFound": "இந்த ஸ்கிரீன்ஷாட்டில் உரை எதுவும் இல்லை.",
-    "NoTextYet": "உரை இந்தக் கணினியில் படிக்கப்படுகிறது. இதுவரை எதுவும் கிடைக்கவில்லை.",
+    "NoTextFoundYet": "இன்னும் உரை எதுவும் கிடைக்கவில்லை.",
     "SetupRequiredSyncPro": "படத்தைச் செயலாக்க Sync Pro சந்தாவுடன் உள்நுழையவும்.",
     "WrittenByCloud": "கிளவுட் AI எழுதியது.",
     "NotTurnedOn": "இயக்கப்படவில்லை.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "தேடு… (⌘K)",
     "Results": {
       "Aria": "தேடல் முடிவுகள்"
-    }
+    },
+    "SettingsPlaceholder": "அமைப்புகளில் தேடு… (⌘K)",
+    "SettingsAria": "அமைப்புகளில் தேடு",
+    "SettingsNoResults": "பொருந்தும் அமைப்புகள் இல்லை",
+    "SettingsResults": "அமைப்புகள்",
+    "SettingsSection": "அமைப்புகள் பிரிவு"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "பாதை கிளிப்போர்டுக்கு நகல் செய்யப்பட்டது",
       "PermissionHeader": "செயலி அனுமதிகள்",
       "Title": "செயலி அனுமதிகள்",
-      "RemoveApp": "{{app}} ஐப் பட்டியலிலிருந்து அகற்று"
+      "RemoveApp": "{{app}} ஐப் பட்டியலிலிருந்து அகற்று",
+      "PermissionFor": "{{app}}க்கான செயலி அனுமதி",
+      "ModeFor": "{{app}}க்கான இயல்பான பதிவு முறை"
     },
     "Back": "ಹಿಂದுகு",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "மொழியை மாற்ற முடியவில்லை.",
     "Memory": {
-      "MemoryLink": "கூட்ட நினைவகம் இயக்கம் அல்லது நிறுத்தம், அது எதிலிருந்து உருவாகிறது",
-      "MemoryHint": "AI பிரிவில்.",
-      "WorkspacesLink": "பணியிடங்கள்",
-      "WorkspacesHint": "குறிப்புகள் பக்கப்பட்டியில்.",
-      "GitHubLink": "குறிப்புகளை GitHub இல் காப்புப்பிரதி எடு",
-      "GitHubHint": "ஒத்திசைவு மற்றும் காப்புப்பிரதியில்.",
-      "MemoryLinkLegacy": "உங்கள் குறிப்புகள் மற்றும் பதிவுகளிலிருந்து நினைவகத்தை உருவாக்குதல்"
+      "GitHubLink": "குறிப்புகளை GitHub இல் காப்புப்பிரதி எடு"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "பதிவு இடைநிறுத்தப்பட்டது",
     "ResumeRecording": "பதிவைத் தொடர்",
     "StopRecording": "பதிவை நிறுத்து",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "அமைப்புகள்…"
   },
   "Types": {
     "Audio": "ஆடியோ",
@@ -4401,6 +4401,7 @@
     "Agent": "உதவியாளர்",
     "Meetings": "இணைந்த கூட்டங்கள்",
     "NewRecording": "புதிய பதிவு",
+    "Record": "பதிவு செய்",
     "Recording": "பதிவாகிறது",
     "ReturnToRecording": "பதிவுக்குத் திரும்பு",
     "Starting": "தொடக்கம்…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "செயலற்றது",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "தனியார் AI · {{stt}} + {{llm}}",
     "Offline": "சாதனத்தில் AI இயந்திரம் இயங்கவில்லை",
     "PanelLabel": "Local model resources",
     "OfflineHint": "அது தானாக மறுதொடக்கம் ஆகும்; ஆஃப்லைனிலேயே இருந்தால் SeaMeet ஐ மறுதொடக்கம் செய்யவும்.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "தனியார் AI · {{model}}",
+    "Badge": "தனியார் AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "இது ஏற்கனவே உங்களிடம் உள்ளது. Sync Pro இதை உடனே, என்றென்றும் காட்டும்.",
       "ReassuranceUpdatePayment": "இது ஏற்கனவே உங்களிடம் உள்ளது. இதைப் பார்க்க உங்கள் கட்டணத்தைப் புதுப்பிக்கவும்.",
       "ReassuranceAskOwner": "இது ஏற்கனவே உங்களிடம் உள்ளது. இதைக் காட்ட உங்கள் குழு உரிமையாளர் கட்டணத்தைப் புதுப்பிக்கலாம்."
-    }
+    },
+    "SignInWhy": "உங்கள் SeaMeet கணக்கு உங்கள் திட்டத்தையும் நூலகத்தையும் ஒவ்வொரு சாதனத்திலும் வைத்திருக்கும்."
   },
   "AiRuns": {
-    "Device": "சாதனத்தில் AI",
+    "Device": "தனியார் AI",
     "Cloud": "கிளவுட் AI",
     "CloudTrial": "கிளவுட் AI · இலவச சோதனை",
     "CloudOwnKeys": "கிளவுட் AI · உங்கள் சொந்த விசைகள்",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "விவரங்கள்",
     "ActionTestAgain": "மீண்டும் சோதிக்கவும்",
     "ActionCheckForUpdates": "புதுப்பிப்புகளைச் சரிபார்க்கவும்",
+    "ActionGetAppleSilicon": "Apple silicon பதிப்பைப் பதிவிறக்கு",
     "ActionUpdatePayment": "கட்டணத்தைப் புதுப்பிக்கவும்",
     "ActionGetSyncPro": "Sync Pro பெறுங்கள்",
     "ActionGetSyncProLower": "Sync Pro பெறுங்கள்",
@@ -5401,7 +5404,8 @@
     "CardSynced": "ஒத்திசைக்கப்பட்டது · நூலகம் புதுப்பித்த நிலையில்",
     "CardSyncing": "ஒத்திசைக்கிறது · உங்கள் நூலகத்தில் பதிவேற்றுகிறது",
     "CloudTag": "கிளவுட்",
-    "AllServicesWorking": "எல்லா சேவைகளும் இயங்குகின்றன"
+    "AllServicesWorking": "எல்லா சேவைகளும் இயங்குகின்றன",
+    "UnavailableOpensDetails": "காரணத்தையும் அதைப் பெறும் வழியையும் காண இயக்கவும்."
   },
   "AiSettings": {
     "FreeHoursLeft": "இலவச கிளவுட் எழுத்தாக்கம் {{left}} மீதம். ஒவ்வொரு பதிவின் முதல் 15 நிமிடங்கள் படிக்கக்கூடியவை.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "அளவைப் பார்க்கப் பேசுங்கள்",
     "MicLevelOk": "மைக்ரோபோன் அளவு சரி",
     "MicLevelSilent": "மைக்ரோபோன் ஒலியற்று உள்ளது",
-    "SystemSoundOnly": "கணினி ஒலி மட்டும்"
+    "SystemSoundOnly": "கணினி ஒலி மட்டும்",
+    "StartKeysHint": "தொடங்க <enter>Enter</enter> அல்லது <space>Space</space> அழுத்தவும்"
   },
   "MicPermission": {
     "Title": "உங்கள் மைக்ரோபோனை அனுமதிக்கவும்",
@@ -5535,6 +5540,7 @@
     "Capturing": "பதிவு செய்கிறது…",
     "CopyText": "ஸ்கிரீன்ஷாட்டிற்குப் பிறகு உரையை நகலெடுக்கவும்",
     "CopyTextSub": "இந்தக் கணினியிலேயே வாசிக்கப்படும்",
+    "CopyTextSubCloud": "இந்தக் கணினியிலேயே வாசிக்கப்படும், எதுவும் கிடைக்காவிட்டால் கிளவுட் AI வாசிக்கும்",
     "CtaArea": "ஒரு பகுதியைப் பதிவு செய்யுங்கள்",
     "CtaScreen": "முழுத் திரையையும் பதிவு செய்யுங்கள்",
     "CtaWindow": "ஒரு சாளரத்தைப் பதிவு செய்யுங்கள்",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "குறுக்குவழி",
     "ShortcutLabel": "ஸ்கிரீன்ஷாட் எடுங்கள்",
     "TextBadge": "உரை இந்தக் கணினியிலேயே வாசிக்கப்படுகிறது",
+    "BadgePrivate": "தனியார் AI இதை இந்தக் கணினியிலேயே வாசிக்கிறது",
+    "BadgeCloud": "கிளவுட் AI இதை வாசித்து விவரிக்கிறது",
     "TextHeading": "ஸ்கிரீன்ஷாட்களில் உரை",
     "Title": "புதிய ஸ்கிரீன்ஷாட்",
     "WindowHint": "பதிவு செய்யும்போது நீங்களே சாளரத்தைத் தேர்ந்தெடுங்கள்.",
-    "ModeScreenSubOne": "முழு திரையும்"
+    "ModeScreenSubOne": "முழு திரையும்",
+    "StartKeysHint": "படம் எடுக்க <enter>Enter</enter> அல்லது <space>Space</space> அழுத்தவும்"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "இந்தக் குறிப்பில் பதிவாகிறது"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "இந்தப் பதிப்பின் வெளியீட்டுக் குறிப்புகள்",
       "ReleaseNotesDesc": "SeaMeet {{version}}-இல் புதியவை."
     }
+  },
+  "AiReason": {
+    "IntelMac": "இந்த Mac-இல் Intel செயலி உள்ளது. தனியார் AI-க்கு Apple silicon (M1 அல்லது புதியது) உள்ள Mac தேவை.",
+    "IntelMacDevice": "இந்த Mac-இல் Intel செயலி உள்ளது. சாதனத்தில் AI-க்கு Apple silicon (M1 அல்லது புதியது) உள்ள Mac தேவை.",
+    "MacRosetta": "SeaMeet-இன் இந்தப் பதிப்பு Intel Mac-களுக்கானது. இதைப் பயன்படுத்த seameet.ai-இலிருந்து Apple silicon பதிப்பை நிறுவவும்.",
+    "WinArch": "இந்த PC 32-பிட் அல்லது ARM செயலியில் Windows-ஐ இயக்குகிறது. தனியார் AI-க்கு Intel அல்லது AMD செயலியில் 64-பிட் Windows தேவை.",
+    "WinArchDevice": "இந்த PC 32-பிட் அல்லது ARM செயலியில் Windows-ஐ இயக்குகிறது. சாதனத்தில் AI-க்கு Intel அல்லது AMD செயலியில் 64-பிட் Windows தேவை.",
+    "WinMemory": "இந்த PC-இல் {{have}} GB நினைவகம் உள்ளது. தனியார் AI-க்கு {{need}} GB தேவை.",
+    "WinMemoryDevice": "இந்த PC-இல் {{have}} GB நினைவகம் உள்ளது. சாதனத்தில் AI-க்கு {{need}} GB தேவை.",
+    "SummaryMemory": "தனிப்பட்ட எழுத்துப்படிகள் இங்கே வேலை செய்யும்; சுருக்கங்களுக்கும் கேளுங்கள் அம்சத்திற்கும் {{need}} GB தேவை.",
+    "CloudWorksHere": "கிளவுட் AI இந்தக் கணினியில் வேலை செய்யும்.",
+    "LearnMore": "மேலும் அறிக"
   }
 }

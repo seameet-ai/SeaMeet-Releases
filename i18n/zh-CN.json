@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "登录并订阅",
-      "Sync": "使用 BYOK Pro 将笔记备份到您的私有 GitHub 仓库",
-      "SyncProNudge": "使用 Sync Pro 将笔记备份到您的私有 GitHub 仓库"
+      "Sync": "使用 BYOK Pro 将笔记备份到您的私有 GitHub 仓库"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "已导出 {{count}} 个文件",
     "Selected_one": "已选择 {{count}} 个",
     "Selected_other": "已选择 {{count}} 个",
-    "ImportTooltip": "导入媒体 · {{shortcut}} 粘贴图片",
     "Section": {
       "ThisWeek": "本周",
       "EarlierThisMonth": "本月早些时候",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "部分读取：可能缺少部分文字。再读一次以获取其余内容。",
     "ReadingText": "正在这台电脑上读取文字…",
     "NoTextFound": "这张截图中没有找到文字。",
-    "NoTextYet": "文字在这台电脑上读取。目前还没有找到文字。",
+    "NoTextFoundYet": "还没有找到文字。",
     "SetupRequiredSyncPro": "使用 Sync Pro 订阅登录来处理图像。",
     "WrittenByCloud": "由云端 AI 撰写。",
     "NotTurnedOn": "未开启。",
@@ -3112,7 +3110,12 @@
     "Placeholder": "搜索… (⌘K)",
     "Results": {
       "Aria": "搜索结果"
-    }
+    },
+    "SettingsPlaceholder": "搜索设置… (⌘K)",
+    "SettingsAria": "搜索设置",
+    "SettingsNoResults": "没有匹配的设置",
+    "SettingsResults": "设置",
+    "SettingsSection": "设置分区"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "路径已复制到剪贴板",
       "PermissionHeader": "应用权限",
       "Title": "应用权限",
-      "RemoveApp": "从列表中移除 {{app}}"
+      "RemoveApp": "从列表中移除 {{app}}",
+      "PermissionFor": "{{app}} 的应用权限",
+      "ModeFor": "{{app}} 的默认录制模式"
     },
     "Back": "返回",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "无法更改语言。",
     "Memory": {
-      "MemoryLink": "开启或关闭会议记忆，以及它的来源",
-      "MemoryHint": "在 AI 部分。",
-      "WorkspacesLink": "工作区",
-      "WorkspacesHint": "在笔记侧边栏中。",
-      "GitHubLink": "将笔记备份到 GitHub",
-      "GitHubHint": "在同步与备份中。",
-      "MemoryLinkLegacy": "从你的笔记和录制内容构建记忆"
+      "GitHubLink": "将笔记备份到 GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "录制已暂停",
     "ResumeRecording": "继续录制",
     "StopRecording": "停止录制",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "设置…"
   },
   "Types": {
     "Audio": "音频",
@@ -4401,6 +4401,7 @@
     "Agent": "智能助手",
     "Meetings": "已连接的会议",
     "NewRecording": "新建录制",
+    "Record": "录制",
     "Recording": "录制中",
     "ReturnToRecording": "返回录制",
     "Starting": "正在开始…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "空闲",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "私有 AI · {{stt}} + {{llm}}",
     "Offline": "设备端 AI 引擎未运行",
     "PanelLabel": "Local model resources",
     "OfflineHint": "它会自动重启；如果一直离线，请重新启动 SeaMeet。",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "私有 AI · {{model}}",
+    "Badge": "私有 AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "内容已经保存。Sync Pro 可立即永久显示。",
       "ReassuranceUpdatePayment": "内容已经保存。更新付款信息即可显示。",
       "ReassuranceAskOwner": "内容已经保存。你的团队所有者更新付款后即可显示。"
-    }
+    },
+    "SignInWhy": "你的 SeaMeet 账户会在所有设备上保留你的套餐和资料库。"
   },
   "AiRuns": {
-    "Device": "设备端 AI",
+    "Device": "私有 AI",
     "Cloud": "云端 AI",
     "CloudTrial": "云端 AI · 免费试用",
     "CloudOwnKeys": "云端 AI · 你自己的密钥",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "详情",
     "ActionTestAgain": "重新测试",
     "ActionCheckForUpdates": "检查更新",
+    "ActionGetAppleSilicon": "下载 Apple 芯片版本",
     "ActionUpdatePayment": "更新付款方式",
     "ActionGetSyncPro": "获取 Sync Pro",
     "ActionGetSyncProLower": "获取 Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "已同步 · 资料库已是最新",
     "CardSyncing": "正在同步 · 正在上传到你的资料库",
     "CloudTag": "云端",
-    "AllServicesWorking": "所有服务正常"
+    "AllServicesWorking": "所有服务正常",
+    "UnavailableOpensDetails": "激活即可查看原因及获取方式。"
   },
   "AiSettings": {
     "FreeHoursLeft": "免费云端转写还剩 {{left}}。每段录音的前 15 分钟可阅读。",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "说话即可查看音量",
     "MicLevelOk": "麦克风音量正常",
     "MicLevelSilent": "麦克风没有声音",
-    "SystemSoundOnly": "仅系统声音"
+    "SystemSoundOnly": "仅系统声音",
+    "StartKeysHint": "按 <enter>Enter</enter> 或 <space>空格</space> 开始"
   },
   "MicPermission": {
     "Title": "允许使用您的麦克风",
@@ -5535,6 +5540,7 @@
     "Capturing": "正在捕捉…",
     "CopyText": "截图后复制文字",
     "CopyTextSub": "在这台电脑上读取",
+    "CopyTextSubCloud": "在这台电脑上读取，找不到时由云端 AI 读取",
     "CtaArea": "捕捉一个区域",
     "CtaScreen": "捕捉整个屏幕",
     "CtaWindow": "捕捉一个窗口",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "快捷键",
     "ShortcutLabel": "截取屏幕",
     "TextBadge": "文字在这台电脑上读取",
+    "BadgePrivate": "私有 AI 在这台电脑上读取",
+    "BadgeCloud": "云端 AI 读取并描述截图",
     "TextHeading": "截图中的文字",
     "Title": "新建截图",
     "WindowHint": "捕捉时由您选择窗口。",
-    "ModeScreenSubOne": "整个屏幕"
+    "ModeScreenSubOne": "整个屏幕",
+    "StartKeysHint": "按 <enter>Enter</enter> 或 <space>空格</space> 截图"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "正在录制到此笔记"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "此版本的发行说明",
       "ReleaseNotesDesc": "SeaMeet {{version}} 的新内容。"
     }
+  },
+  "AiReason": {
+    "IntelMac": "这台 Mac 使用 Intel 处理器。私有 AI 需要搭载 Apple 芯片（M1 或更新）的 Mac。",
+    "IntelMacDevice": "这台 Mac 使用 Intel 处理器。设备端 AI 需要搭载 Apple 芯片（M1 或更新）的 Mac。",
+    "MacRosetta": "此 SeaMeet 版本适用于 Intel Mac。请从 seameet.ai 安装 Apple 芯片版本以使用此功能。",
+    "WinArch": "这台电脑在 32 位或 ARM 处理器上运行 Windows。私有 AI 需要 Intel 或 AMD 处理器上的 64 位 Windows。",
+    "WinArchDevice": "这台电脑在 32 位或 ARM 处理器上运行 Windows。设备端 AI 需要 Intel 或 AMD 处理器上的 64 位 Windows。",
+    "WinMemory": "这台电脑有 {{have}} GB 内存。私有 AI 需要 {{need}} GB。",
+    "WinMemoryDevice": "这台电脑有 {{have}} GB 内存。设备端 AI 需要 {{need}} GB。",
+    "SummaryMemory": "私密转写可在此使用；摘要和提问需要 {{need}} GB。",
+    "CloudWorksHere": "云端 AI 可在这台电脑上使用。",
+    "LearnMore": "了解更多"
   }
 }

@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "साइन इन करें और सदस्यता लें",
-      "Sync": "BYOK Pro के साथ अपने नोट्स को एक निजी GitHub रिपॉजिटरी में बैकअप करें",
-      "SyncProNudge": "Sync Pro के साथ अपने नोट्स को एक निजी GitHub रिपॉजिटरी में बैकअप करें"
+      "Sync": "BYOK Pro के साथ अपने नोट्स को एक निजी GitHub रिपॉजिटरी में बैकअप करें"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}} फ़ाइलें एक्सपोर्ट की गईं",
     "Selected_one": "{{count}} चयनित",
     "Selected_other": "{{count}} चयनित",
-    "ImportTooltip": "मीडिया आयात करें · {{shortcut}} से छवि पेस्ट करें",
     "Section": {
       "ThisWeek": "इस सप्ताह",
       "EarlierThisMonth": "इस महीने पहले",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "आंशिक रूप से पढ़ा गया: कुछ टेक्स्ट छूट सकता है। बाकी पाने के लिए फिर से पढ़ें।",
     "ReadingText": "इस कंप्यूटर पर टेक्स्ट पढ़ा जा रहा है…",
     "NoTextFound": "इस स्क्रीनशॉट में कोई टेक्स्ट नहीं मिला।",
-    "NoTextYet": "टेक्स्ट इसी कंप्यूटर पर पढ़ा जाता है। अभी तक कोई नहीं मिला।",
+    "NoTextFoundYet": "अभी तक कोई टेक्स्ट नहीं मिला।",
     "SetupRequiredSyncPro": "छवि को संसाधित करने के लिए Sync Pro सदस्यता के साथ साइन इन करें।",
     "WrittenByCloud": "क्लाउड AI द्वारा लिखा गया।",
     "NotTurnedOn": "चालू नहीं है।",
@@ -3112,7 +3110,12 @@
     "Placeholder": "खोजें… (⌘K)",
     "Results": {
       "Aria": "खोज परिणाम"
-    }
+    },
+    "SettingsPlaceholder": "सेटिंग्स खोजें… (⌘K)",
+    "SettingsAria": "सेटिंग्स खोजें",
+    "SettingsNoResults": "कोई सेटिंग मेल नहीं खाती",
+    "SettingsResults": "सेटिंग्स",
+    "SettingsSection": "सेटिंग्स अनुभाग"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "पथ क्लिपबोर्ड पर कॉपी किया गया",
       "PermissionHeader": "ऐप अनुमति",
       "Title": "ऐप अनुमतियां",
-      "RemoveApp": "{{app}} को सूची से हटाएँ"
+      "RemoveApp": "{{app}} को सूची से हटाएँ",
+      "PermissionFor": "{{app}} के लिए ऐप अनुमति",
+      "ModeFor": "{{app}} के लिए डिफ़ॉल्ट रिकॉर्डिंग मोड"
     },
     "Back": "पीछे",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "भाषा बदली नहीं जा सकी।",
     "Memory": {
-      "MemoryLink": "मीटिंग मेमोरी चालू या बंद, और यह किससे बनती है",
-      "MemoryHint": "AI अनुभाग में।",
-      "WorkspacesLink": "वर्कस्पेस",
-      "WorkspacesHint": "नोट्स साइडबार में।",
-      "GitHubLink": "नोट्स का GitHub पर बैकअप लें",
-      "GitHubHint": "सिंक और बैकअप में।",
-      "MemoryLinkLegacy": "आपके नोट्स और रिकॉर्डिंग से मेमोरी बनाना"
+      "GitHubLink": "नोट्स का GitHub पर बैकअप लें"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "रिकॉर्डिंग रुकी हुई है",
     "ResumeRecording": "रिकॉर्डिंग जारी रखें",
     "StopRecording": "रिकॉर्डिंग बंद करें",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "सेटिंग्स…"
   },
   "Types": {
     "Audio": "ऑडियो",
@@ -4401,6 +4401,7 @@
     "Agent": "एजेंट",
     "Meetings": "जुड़ी हुई मीटिंग",
     "NewRecording": "नई रिकॉर्डिंग",
+    "Record": "रिकॉर्ड करें",
     "Recording": "रिकॉर्डिंग हो रही है",
     "ReturnToRecording": "रिकॉर्डिंग पर लौटें",
     "Starting": "शुरू हो रहा है…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "निष्क्रिय",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "प्राइवेट AI · {{stt}} + {{llm}}",
     "Offline": "डिवाइस पर AI इंजन नहीं चल रहा है",
     "PanelLabel": "Local model resources",
     "OfflineHint": "यह अपने आप फिर से शुरू होता है; अगर ऑफ़लाइन रहे, तो SeaMeet फिर से शुरू करें।",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "प्राइवेट AI · {{model}}",
+    "Badge": "प्राइवेट AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "यह आपके पास पहले से है। Sync Pro इसे तुरंत, हमेशा के लिए दिखाता है।",
       "ReassuranceUpdatePayment": "यह आपके पास पहले से है। इसे देखने के लिए अपना भुगतान अपडेट करें।",
       "ReassuranceAskOwner": "यह आपके पास पहले से है। इसे देखने के लिए आपकी टीम के मालिक भुगतान अपडेट कर सकते हैं।"
-    }
+    },
+    "SignInWhy": "आपका SeaMeet खाता आपका प्लान और आपकी लाइब्रेरी हर डिवाइस पर रखता है।"
   },
   "AiRuns": {
-    "Device": "डिवाइस पर AI",
+    "Device": "प्राइवेट AI",
     "Cloud": "क्लाउड AI",
     "CloudTrial": "क्लाउड AI · मुफ़्त ट्रायल",
     "CloudOwnKeys": "क्लाउड AI · आपकी अपनी कुंजियाँ",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "विवरण",
     "ActionTestAgain": "फिर से जाँचें",
     "ActionCheckForUpdates": "अपडेट जाँचें",
+    "ActionGetAppleSilicon": "Apple silicon वर्शन डाउनलोड करें",
     "ActionUpdatePayment": "भुगतान अपडेट करें",
     "ActionGetSyncPro": "Sync Pro लें",
     "ActionGetSyncProLower": "Sync Pro लें",
@@ -5401,7 +5404,8 @@
     "CardSynced": "सिंक किया गया · लाइब्रेरी अप टू डेट है",
     "CardSyncing": "सिंक हो रहा है · आपकी लाइब्रेरी में अपलोड हो रहा है",
     "CloudTag": "क्लाउड",
-    "AllServicesWorking": "सभी सेवाएँ चालू हैं"
+    "AllServicesWorking": "सभी सेवाएँ चालू हैं",
+    "UnavailableOpensDetails": "कारण और इसे पाने का तरीका देखने के लिए सक्रिय करें।"
   },
   "AiSettings": {
     "FreeHoursLeft": "मुफ़्त क्लाउड ट्रांसक्रिप्शन के {{left}} बचे हैं। हर रिकॉर्डिंग के पहले 15 मिनट पढ़ने योग्य हैं।",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "स्तर देखने के लिए बोलें",
     "MicLevelOk": "माइक्रोफोन का स्तर ठीक है",
     "MicLevelSilent": "माइक्रोफोन में आवाज़ नहीं आ रही",
-    "SystemSoundOnly": "केवल सिस्टम ध्वनि"
+    "SystemSoundOnly": "केवल सिस्टम ध्वनि",
+    "StartKeysHint": "शुरू करने के लिए <enter>Enter</enter> या <space>Space</space> दबाएँ"
   },
   "MicPermission": {
     "Title": "अपने माइक्रोफोन की अनुमति दें",
@@ -5535,6 +5540,7 @@
     "Capturing": "कैप्चर हो रहा है…",
     "CopyText": "स्क्रीनशॉट के बाद टेक्स्ट कॉपी करें",
     "CopyTextSub": "इस कंप्यूटर पर पढ़ा जाता है",
+    "CopyTextSubCloud": "इस कंप्यूटर पर पढ़ा जाता है, या कुछ न मिलने पर क्लाउड AI से",
     "CtaArea": "एरिया कैप्चर करें",
     "CtaScreen": "पूरी स्क्रीन कैप्चर करें",
     "CtaWindow": "विंडो कैप्चर करें",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "शॉर्टकट",
     "ShortcutLabel": "स्क्रीनशॉट लें",
     "TextBadge": "टेक्स्ट इस कंप्यूटर पर पढ़ा जाता है",
+    "BadgePrivate": "प्राइवेट AI इसे इस कंप्यूटर पर पढ़ता है",
+    "BadgeCloud": "क्लाउड AI इसे पढ़ता है और इसका विवरण देता है",
     "TextHeading": "स्क्रीनशॉट में टेक्स्ट",
     "Title": "नया स्क्रीनशॉट",
     "WindowHint": "कैप्चर करते समय आप विंडो चुनते हैं।",
-    "ModeScreenSubOne": "पूरा डिस्प्ले"
+    "ModeScreenSubOne": "पूरा डिस्प्ले",
+    "StartKeysHint": "कैप्चर करने के लिए <enter>Enter</enter> या <space>Space</space> दबाएँ"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "इस नोट में रिकॉर्डिंग हो रही है"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "इस संस्करण के रिलीज़ नोट्स",
       "ReleaseNotesDesc": "SeaMeet {{version}} में नया क्या है।"
     }
+  },
+  "AiReason": {
+    "IntelMac": "इस Mac में Intel प्रोसेसर है। प्राइवेट AI के लिए Apple silicon (M1 या नया) वाला Mac चाहिए।",
+    "IntelMacDevice": "इस Mac में Intel प्रोसेसर है। डिवाइस पर AI के लिए Apple silicon (M1 या नया) वाला Mac चाहिए।",
+    "MacRosetta": "SeaMeet की यह कॉपी Intel Mac के लिए है। इसे इस्तेमाल करने के लिए seameet.ai से Apple silicon वर्शन इंस्टॉल करें।",
+    "WinArch": "यह PC 32-बिट या ARM प्रोसेसर पर Windows चलाता है। प्राइवेट AI के लिए Intel या AMD प्रोसेसर पर 64-बिट Windows चाहिए।",
+    "WinArchDevice": "यह PC 32-बिट या ARM प्रोसेसर पर Windows चलाता है। डिवाइस पर AI के लिए Intel या AMD प्रोसेसर पर 64-बिट Windows चाहिए।",
+    "WinMemory": "इस PC में {{have}} GB मेमोरी है। प्राइवेट AI के लिए {{need}} GB चाहिए।",
+    "WinMemoryDevice": "इस PC में {{have}} GB मेमोरी है। डिवाइस पर AI के लिए {{need}} GB चाहिए।",
+    "SummaryMemory": "प्राइवेट ट्रांसक्रिप्ट यहाँ काम करते हैं; सारांश और पूछें के लिए {{need}} GB चाहिए।",
+    "CloudWorksHere": "क्लाउड AI इस कंप्यूटर पर काम करता है।",
+    "LearnMore": "और जानें"
   }
 }

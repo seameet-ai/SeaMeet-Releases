@@ -1112,8 +1112,7 @@
     },
     "Nudge": {
       "CTA": "Войти и подписаться",
-      "Sync": "Создавайте резервные копии заметок в приватном репозитории GitHub с BYOK Pro",
-      "SyncProNudge": "Создавайте резервные копии заметок в приватном репозитории GitHub с Sync Pro"
+      "Sync": "Создавайте резервные копии заметок в приватном репозитории GitHub с BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2096,7 +2095,6 @@
     "ExportSuccess_other": "Экспортировано {{count}} файлов",
     "Selected_one": "Выбрано: {{count}}",
     "Selected_other": "Выбрано: {{count}}",
-    "ImportTooltip": "Импортировать медиафайлы · {{shortcut}} вставляет изображение",
     "Section": {
       "ThisWeek": "На этой неделе",
       "EarlierThisMonth": "Ранее в этом месяце",
@@ -3032,7 +3030,7 @@
     "PartlyRead": "Прочитано частично: часть текста может отсутствовать. Прочитайте ещё раз, чтобы получить остальное.",
     "ReadingText": "Читаем текст на этом компьютере…",
     "NoTextFound": "В этом снимке экрана текст не найден.",
-    "NoTextYet": "Текст считывается на этом компьютере. Пока ничего не найдено.",
+    "NoTextFoundYet": "Текст пока не найден.",
     "SetupRequiredSyncPro": "Войдите с подпиской Sync Pro, чтобы обработать изображение.",
     "WrittenByCloud": "Написано облачным ИИ.",
     "NotTurnedOn": "Не включено.",
@@ -3126,7 +3124,12 @@
     "Placeholder": "Поиск… (⌘K)",
     "Results": {
       "Aria": "Результаты поиска"
-    }
+    },
+    "SettingsPlaceholder": "Поиск по настройкам… (⌘K)",
+    "SettingsAria": "Поиск по настройкам",
+    "SettingsNoResults": "Нет подходящих настроек",
+    "SettingsResults": "Настройки",
+    "SettingsSection": "Раздел настроек"
   },
   "Settings": {
     "About": {
@@ -3199,7 +3202,9 @@
       "PathCopied": "Путь скопирован в буфер обмена",
       "PermissionHeader": "Разрешения приложения",
       "Title": "Разрешения приложения",
-      "RemoveApp": "Удалить {{app}} из списка"
+      "RemoveApp": "Удалить {{app}} из списка",
+      "PermissionFor": "Разрешение приложения для {{app}}",
+      "ModeFor": "Тип записи по умолчанию для {{app}}"
     },
     "Back": "Назад",
     "GroupTitle": {
@@ -3314,13 +3319,7 @@
     },
     "LanguageFailed": "Не удалось изменить язык.",
     "Memory": {
-      "MemoryLink": "Память встреч: включение и источники",
-      "MemoryHint": "В разделе ИИ.",
-      "WorkspacesLink": "Рабочие пространства",
-      "WorkspacesHint": "На боковой панели заметок.",
-      "GitHubLink": "Резервное копирование заметок в GitHub",
-      "GitHubHint": "В разделе «Синхронизация и резервное копирование».",
-      "MemoryLinkLegacy": "Создание Памяти из ваших заметок и записей"
+      "GitHubLink": "Резервное копирование заметок в GitHub"
     }
   },
   "SettingsModal": {
@@ -3584,7 +3583,8 @@
     "RecordingPaused": "Запись приостановлена",
     "ResumeRecording": "Возобновить запись",
     "StopRecording": "Остановить запись",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Настройки…"
   },
   "Types": {
     "Audio": "Аудио",
@@ -4427,6 +4427,7 @@
     "Agent": "Ассистент",
     "Meetings": "Связанные встречи",
     "NewRecording": "Новая запись",
+    "Record": "Записать",
     "Recording": "Идёт запись",
     "ReturnToRecording": "Вернуться к записи",
     "Starting": "Запуск…",
@@ -4725,7 +4726,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Простой",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "Приватный ИИ · {{stt}} + {{llm}}",
     "Offline": "Движок ИИ на устройстве не запущен",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Он перезапускается сам; если остаётся не в сети, перезапустите SeaMeet.",
@@ -4744,8 +4745,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "Приватный ИИ · {{model}}",
+    "Badge": "Приватный ИИ",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5273,10 +5274,11 @@
       "Reassurance": "Это уже у вас есть. Sync Pro сразу и навсегда откроет это.",
       "ReassuranceUpdatePayment": "Это уже у вас есть. Обновите оплату, чтобы открыть это.",
       "ReassuranceAskOwner": "Это уже у вас есть. Владелец команды может обновить оплату, чтобы открыть это."
-    }
+    },
+    "SignInWhy": "Ваш аккаунт SeaMeet хранит ваш тариф и библиотеку на всех устройствах."
   },
   "AiRuns": {
-    "Device": "ИИ на устройстве",
+    "Device": "Приватный ИИ",
     "Cloud": "Облачный ИИ",
     "CloudTrial": "Облачный ИИ · бесплатный пробный период",
     "CloudOwnKeys": "Облачный ИИ · ваши собственные ключи",
@@ -5320,6 +5322,7 @@
     "ActionDetails": "Подробности",
     "ActionTestAgain": "Проверить снова",
     "ActionCheckForUpdates": "Проверить обновления",
+    "ActionGetAppleSilicon": "Скачать версию для Apple silicon",
     "ActionUpdatePayment": "Обновить способ оплаты",
     "ActionGetSyncPro": "Подключить Sync Pro",
     "ActionGetSyncProLower": "подключите Sync Pro",
@@ -5477,7 +5480,8 @@
     "CardSynced": "Синхронизировано · библиотека актуальна",
     "CardSyncing": "Синхронизация · загрузка в вашу библиотеку",
     "CloudTag": "Облако",
-    "AllServicesWorking": "Все сервисы работают"
+    "AllServicesWorking": "Все сервисы работают",
+    "UnavailableOpensDetails": "Активируйте, чтобы узнать причину и как это получить."
   },
   "AiSettings": {
     "FreeHoursLeft": "Осталось {{left}} бесплатной облачной расшифровки. Первые 15 минут каждой записи доступны для чтения.",
@@ -5593,7 +5597,8 @@
     "SpeakToSeeLevel": "Говорите, чтобы увидеть уровень",
     "MicLevelOk": "Уровень микрофона в норме",
     "MicLevelSilent": "Микрофон молчит",
-    "SystemSoundOnly": "Только системный звук"
+    "SystemSoundOnly": "Только системный звук",
+    "StartKeysHint": "Нажмите <enter>Enter</enter> или <space>Пробел</space>, чтобы начать"
   },
   "MicPermission": {
     "Title": "Разрешите доступ к микрофону",
@@ -5615,6 +5620,7 @@
     "Capturing": "Захват…",
     "CopyText": "Копировать текст после снимка",
     "CopyTextSub": "Распознаётся на этом компьютере",
+    "CopyTextSubCloud": "Распознаётся на этом компьютере или облачным ИИ, если текст не найден",
     "CtaArea": "Захватить область",
     "CtaScreen": "Захватить весь экран",
     "CtaWindow": "Захватить окно",
@@ -5630,10 +5636,13 @@
     "ShortcutHeading": "Сочетание клавиш",
     "ShortcutLabel": "Сделать снимок экрана",
     "TextBadge": "Текст распознаётся на этом компьютере",
+    "BadgePrivate": "Приватный ИИ распознаёт его на этом компьютере",
+    "BadgeCloud": "Облачный ИИ распознаёт и описывает его",
     "TextHeading": "Текст на снимках экрана",
     "Title": "Новый снимок экрана",
     "WindowHint": "Окно выбирается при захвате.",
-    "ModeScreenSubOne": "Весь экран"
+    "ModeScreenSubOne": "Весь экран",
+    "StartKeysHint": "Нажмите <enter>Enter</enter> или <space>Пробел</space>, чтобы сделать снимок"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Идёт запись в эту заметку"
@@ -5668,5 +5677,17 @@
       "ReleaseNotes": "Примечания к этой версии",
       "ReleaseNotesDesc": "Что нового в SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "На этом Mac процессор Intel. Приватному ИИ нужен Mac на Apple silicon (M1 или новее).",
+    "IntelMacDevice": "На этом Mac процессор Intel. ИИ на устройстве нужен Mac на Apple silicon (M1 или новее).",
+    "MacRosetta": "Эта копия SeaMeet предназначена для Mac на Intel. Чтобы пользоваться этим, установите версию для Apple silicon с seameet.ai.",
+    "WinArch": "На этом ПК Windows работает на 32-битном или ARM-процессоре. Приватному ИИ нужна 64-битная Windows на процессоре Intel или AMD.",
+    "WinArchDevice": "На этом ПК Windows работает на 32-битном или ARM-процессоре. ИИ на устройстве нужна 64-битная Windows на процессоре Intel или AMD.",
+    "WinMemory": "На этом ПК {{have}} ГБ памяти. Приватному ИИ нужно {{need}} ГБ.",
+    "WinMemoryDevice": "На этом ПК {{have}} ГБ памяти. ИИ на устройстве нужно {{need}} ГБ.",
+    "SummaryMemory": "Приватные расшифровки работают здесь; для сводок и «Спросить» нужно {{need}} ГБ.",
+    "CloudWorksHere": "Облачный ИИ работает на этом компьютере.",
+    "LearnMore": "Подробнее"
   }
 }

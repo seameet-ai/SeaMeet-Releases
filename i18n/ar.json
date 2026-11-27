@@ -1118,8 +1118,7 @@
     },
     "Nudge": {
       "CTA": "تسجيل الدخول والاشتراك",
-      "Sync": "احتفظ بنسخة احتياطية من ملاحظاتك في مستودع GitHub خاص باستخدام BYOK Pro",
-      "SyncProNudge": "احتفظ بنسخة احتياطية من ملاحظاتك في مستودع GitHub خاص باستخدام Sync Pro"
+      "Sync": "احتفظ بنسخة احتياطية من ملاحظاتك في مستودع GitHub خاص باستخدام BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2102,7 +2101,6 @@
     "ExportSuccess_other": "تم تصدير {{count}} ملفات",
     "Selected_one": "{{count}} محدد",
     "Selected_other": "{{count}} محدد",
-    "ImportTooltip": "استيراد وسائط · {{shortcut}} للصق صورة",
     "Section": {
       "ThisWeek": "هذا الأسبوع",
       "EarlierThisMonth": "في وقت سابق من هذا الشهر",
@@ -3046,7 +3044,7 @@
     "PartlyRead": "قُرئت جزئيًا: قد يكون بعض النص مفقودًا. اقرأها مرة أخرى لمحاولة الحصول على الباقي.",
     "ReadingText": "جارٍ قراءة النص على هذا الكمبيوتر…",
     "NoTextFound": "لم يُعثر على نص في لقطة الشاشة هذه.",
-    "NoTextYet": "تتم قراءة النص على هذا الكمبيوتر. لم يتم العثور على أي نص بعد.",
+    "NoTextFoundYet": "لم يُعثر على نص بعد.",
     "SetupRequiredSyncPro": "قم بتسجيل الدخول باشتراك Sync Pro لمعالجة الصورة.",
     "WrittenByCloud": "كتبها الذكاء الاصطناعي السحابي.",
     "NotTurnedOn": "غير مفعّل.",
@@ -3140,7 +3138,12 @@
     "Placeholder": "بحث… (⌘K)",
     "Results": {
       "Aria": "نتائج البحث"
-    }
+    },
+    "SettingsPlaceholder": "ابحث في الإعدادات… (⌘K)",
+    "SettingsAria": "البحث في الإعدادات",
+    "SettingsNoResults": "لا توجد إعدادات مطابقة",
+    "SettingsResults": "الإعدادات",
+    "SettingsSection": "قسم الإعدادات"
   },
   "Settings": {
     "About": {
@@ -3213,7 +3216,9 @@
       "PathCopied": "تم نسخ المسار إلى الحافظة",
       "PermissionHeader": "أذونات التطبيق",
       "Title": "أذونات التطبيق",
-      "RemoveApp": "إزالة {{app}} من القائمة"
+      "RemoveApp": "إزالة {{app}} من القائمة",
+      "PermissionFor": "إذن التطبيق لـ {{app}}",
+      "ModeFor": "وضع التسجيل الافتراضي لـ {{app}}"
     },
     "Back": "السابق",
     "GroupTitle": {
@@ -3328,13 +3333,7 @@
     },
     "LanguageFailed": "تعذّر تغيير اللغة.",
     "Memory": {
-      "MemoryLink": "تشغيل ذاكرة الاجتماعات أو إيقافها، ومصادر بنائها",
-      "MemoryHint": "في قسم الذكاء الاصطناعي.",
-      "WorkspacesLink": "مساحات العمل",
-      "WorkspacesHint": "في الشريط الجانبي للملاحظات.",
-      "GitHubLink": "نسخ الملاحظات احتياطيًا إلى GitHub",
-      "GitHubHint": "في المزامنة والنسخ الاحتياطي.",
-      "MemoryLinkLegacy": "بناء الذاكرة من ملاحظاتك وتسجيلاتك"
+      "GitHubLink": "نسخ الملاحظات احتياطيًا إلى GitHub"
     }
   },
   "SettingsModal": {
@@ -3598,7 +3597,8 @@
     "RecordingPaused": "التسجيل متوقف مؤقتًا",
     "ResumeRecording": "استئناف التسجيل",
     "StopRecording": "إيقاف التسجيل",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "الإعدادات…"
   },
   "Types": {
     "Audio": "صوت",
@@ -4453,6 +4453,7 @@
     "Agent": "المساعد",
     "Meetings": "الاجتماعات المتصلة",
     "NewRecording": "تسجيل جديد",
+    "Record": "سجّل",
     "Recording": "جارٍ التسجيل",
     "ReturnToRecording": "العودة إلى التسجيل",
     "Starting": "جارٍ البدء…",
@@ -4753,7 +4754,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "خامل",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "الذكاء الاصطناعي الخاص · {{stt}} + {{llm}}",
     "Offline": "محرك الذكاء الاصطناعي على الجهاز لا يعمل",
     "PanelLabel": "Local model resources",
     "OfflineHint": "يعيد التشغيل تلقائيًا؛ إذا بقي غير متصل، أعد تشغيل SeaMeet.",
@@ -4772,8 +4773,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "الذكاء الاصطناعي الخاص · {{model}}",
+    "Badge": "الذكاء الاصطناعي الخاص",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5347,10 +5348,11 @@
       "Reassurance": "إنه لديك بالفعل. يكشفه Sync Pro فورًا وإلى الأبد.",
       "ReassuranceUpdatePayment": "إنه لديك بالفعل. حدّث بيانات الدفع لكشفه.",
       "ReassuranceAskOwner": "إنه لديك بالفعل. يمكن لمالك فريقك تحديث الدفع لكشفه."
-    }
+    },
+    "SignInWhy": "يحفظ حسابك في SeaMeet خطتك ومكتبتك على كل أجهزتك."
   },
   "AiRuns": {
-    "Device": "الذكاء الاصطناعي على الجهاز",
+    "Device": "الذكاء الاصطناعي الخاص",
     "Cloud": "الذكاء الاصطناعي السحابي",
     "CloudTrial": "الذكاء الاصطناعي السحابي · تجربة مجانية",
     "CloudOwnKeys": "الذكاء الاصطناعي السحابي · مفاتيحك الخاصة",
@@ -5394,6 +5396,7 @@
     "ActionDetails": "التفاصيل",
     "ActionTestAgain": "اختبر مرة أخرى",
     "ActionCheckForUpdates": "التحقق من التحديثات",
+    "ActionGetAppleSilicon": "تنزيل إصدار شريحة Apple",
     "ActionUpdatePayment": "تحديث الدفع",
     "ActionGetSyncPro": "احصل على Sync Pro",
     "ActionGetSyncProLower": "احصل على Sync Pro",
@@ -5553,7 +5556,8 @@
     "CardSynced": "متزامن · المكتبة محدّثة",
     "CardSyncing": "جارٍ المزامنة · الرفع إلى مكتبتك",
     "CloudTag": "السحابة",
-    "AllServicesWorking": "جميع الخدمات تعمل"
+    "AllServicesWorking": "جميع الخدمات تعمل",
+    "UnavailableOpensDetails": "فعّله لمعرفة السبب وكيفية الحصول عليه."
   },
   "AiSettings": {
     "FreeHoursLeft": "المتبقي {{left}} من النسخ السحابي المجاني. أول 15 دقيقة من كل تسجيل قابلة للقراءة.",
@@ -5673,7 +5677,8 @@
     "SpeakToSeeLevel": "تحدّث لرؤية المستوى",
     "MicLevelOk": "مستوى الميكروفون جيد",
     "MicLevelSilent": "الميكروفون صامت",
-    "SystemSoundOnly": "صوت النظام فقط"
+    "SystemSoundOnly": "صوت النظام فقط",
+    "StartKeysHint": "اضغط <enter>Enter</enter> أو <space>مسافة</space> للبدء"
   },
   "MicPermission": {
     "Title": "اسمح باستخدام الميكروفون",
@@ -5695,6 +5700,7 @@
     "Capturing": "جارٍ الالتقاط…",
     "CopyText": "نسخ النص بعد لقطة الشاشة",
     "CopyTextSub": "يُقرأ على هذا الكمبيوتر",
+    "CopyTextSubCloud": "يُقرأ على هذا الكمبيوتر، أو بالذكاء الاصطناعي السحابي إذا لم يُعثر على شيء",
     "CtaArea": "التقاط منطقة",
     "CtaScreen": "التقاط الشاشة بالكامل",
     "CtaWindow": "التقاط نافذة",
@@ -5710,10 +5716,13 @@
     "ShortcutHeading": "الاختصار",
     "ShortcutLabel": "التقاط لقطة شاشة",
     "TextBadge": "يُقرأ النص على هذا الكمبيوتر",
+    "BadgePrivate": "يقرؤها الذكاء الاصطناعي الخاص على هذا الكمبيوتر",
+    "BadgeCloud": "يقرؤها الذكاء الاصطناعي السحابي ويصفها",
     "TextHeading": "النص في لقطات الشاشة",
     "Title": "لقطة شاشة جديدة",
     "WindowHint": "تختار النافذة عند الالتقاط.",
-    "ModeScreenSubOne": "شاشة كاملة"
+    "ModeScreenSubOne": "شاشة كاملة",
+    "StartKeysHint": "اضغط <enter>Enter</enter> أو <space>مسافة</space> للالتقاط"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "يتم التسجيل في هذه الملاحظة"
@@ -5748,5 +5757,17 @@
       "ReleaseNotes": "ملاحظات الإصدار لهذا الإصدار",
       "ReleaseNotesDesc": "الجديد في SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "يحتوي جهاز Mac هذا على معالج Intel. يحتاج الذكاء الاصطناعي الخاص إلى جهاز Mac بشريحة Apple (M1 أو أحدث).",
+    "IntelMacDevice": "يحتوي جهاز Mac هذا على معالج Intel. يحتاج الذكاء الاصطناعي على الجهاز إلى جهاز Mac بشريحة Apple (M1 أو أحدث).",
+    "MacRosetta": "هذه النسخة من SeaMeet مخصصة لأجهزة Mac بمعالج Intel. ثبّت إصدار شريحة Apple من seameet.ai لاستخدامه.",
+    "WinArch": "يعمل Windows على هذا الكمبيوتر بمعالج 32 بت أو ARM. يحتاج الذكاء الاصطناعي الخاص إلى Windows 64 بت بمعالج Intel أو AMD.",
+    "WinArchDevice": "يعمل Windows على هذا الكمبيوتر بمعالج 32 بت أو ARM. يحتاج الذكاء الاصطناعي على الجهاز إلى Windows 64 بت بمعالج Intel أو AMD.",
+    "WinMemory": "يحتوي هذا الكمبيوتر على {{have}} غيغابايت من الذاكرة. يحتاج الذكاء الاصطناعي الخاص إلى {{need}} غيغابايت.",
+    "WinMemoryDevice": "يحتوي هذا الكمبيوتر على {{have}} غيغابايت من الذاكرة. يحتاج الذكاء الاصطناعي على الجهاز إلى {{need}} غيغابايت.",
+    "SummaryMemory": "تعمل النصوص الخاصة هنا؛ تحتاج الملخصات و«اسأل» إلى {{need}} غيغابايت.",
+    "CloudWorksHere": "يعمل الذكاء الاصطناعي السحابي على هذا الكمبيوتر.",
+    "LearnMore": "اعرف المزيد"
   }
 }

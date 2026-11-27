@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "Đăng nhập và đăng ký",
-      "Sync": "Sao lưu ghi chú của bạn vào kho lưu trữ GitHub riêng tư với BYOK Pro",
-      "SyncProNudge": "Sao lưu ghi chú của bạn vào kho lưu trữ GitHub riêng tư với Sync Pro"
+      "Sync": "Sao lưu ghi chú của bạn vào kho lưu trữ GitHub riêng tư với BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "Đã xuất {{count}} tệp",
     "Selected_one": "Đã chọn {{count}}",
     "Selected_other": "Đã chọn {{count}}",
-    "ImportTooltip": "Nhập phương tiện · {{shortcut}} để dán hình ảnh",
     "Section": {
       "ThisWeek": "Tuần này",
       "EarlierThisMonth": "Trước đó trong tháng này",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "Đọc được một phần: có thể thiếu một số chữ. Đọc lại để thử lấy phần còn lại.",
     "ReadingText": "Đang đọc văn bản trên máy tính này…",
     "NoTextFound": "Không tìm thấy văn bản trong ảnh chụp màn hình này.",
-    "NoTextYet": "Văn bản được đọc ngay trên máy tính này. Chưa tìm thấy văn bản nào.",
+    "NoTextFoundYet": "Chưa tìm thấy văn bản.",
     "SetupRequiredSyncPro": "Đăng nhập bằng gói đăng ký Sync Pro để xử lý hình ảnh.",
     "WrittenByCloud": "Do AI trên đám mây viết.",
     "NotTurnedOn": "Chưa bật.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "Tìm kiếm… (⌘K)",
     "Results": {
       "Aria": "Kết quả tìm kiếm"
-    }
+    },
+    "SettingsPlaceholder": "Tìm trong cài đặt… (⌘K)",
+    "SettingsAria": "Tìm trong cài đặt",
+    "SettingsNoResults": "Không có cài đặt nào phù hợp",
+    "SettingsResults": "Cài đặt",
+    "SettingsSection": "Mục cài đặt"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "Đường dẫn đã sao chép vào clipboard",
       "PermissionHeader": "Quyền của ứng dụng",
       "Title": "Quyền của ứng dụng",
-      "RemoveApp": "Xóa {{app}} khỏi danh sách"
+      "RemoveApp": "Xóa {{app}} khỏi danh sách",
+      "PermissionFor": "Quyền ứng dụng cho {{app}}",
+      "ModeFor": "Chế độ ghi mặc định cho {{app}}"
     },
     "Back": "Quay lại",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "Không thể thay đổi ngôn ngữ.",
     "Memory": {
-      "MemoryLink": "Bật hoặc tắt Bộ nhớ cuộc họp, và nguồn tạo ra nó",
-      "MemoryHint": "Trong mục AI.",
-      "WorkspacesLink": "Không gian làm việc",
-      "WorkspacesHint": "Trong thanh bên Ghi chú.",
-      "GitHubLink": "Sao lưu ghi chú lên GitHub",
-      "GitHubHint": "Trong Đồng bộ và sao lưu.",
-      "MemoryLinkLegacy": "Tạo Bộ nhớ từ ghi chú và bản ghi của bạn"
+      "GitHubLink": "Sao lưu ghi chú lên GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "Ghi âm tạm dừng",
     "ResumeRecording": "Tiếp tục ghi âm",
     "StopRecording": "Dừng ghi âm",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Cài đặt…"
   },
   "Types": {
     "Audio": "Âm thanh",
@@ -4401,6 +4401,7 @@
     "Agent": "Trợ lý",
     "Meetings": "Cuộc họp đã kết nối",
     "NewRecording": "Ghi âm mới",
+    "Record": "Ghi",
     "Recording": "Đang ghi",
     "ReturnToRecording": "Quay lại bản ghi",
     "Starting": "Đang bắt đầu…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Rảnh",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "AI riêng tư · {{stt}} + {{llm}}",
     "Offline": "Công cụ AI trên thiết bị không chạy",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Công cụ tự khởi động lại; nếu vẫn ngoại tuyến, hãy khởi động lại SeaMeet.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "AI riêng tư · {{model}}",
+    "Badge": "AI riêng tư",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "Bạn đã có nó. Sync Pro hiển thị ngay lập tức, mãi mãi.",
       "ReassuranceUpdatePayment": "Bạn đã có nó. Cập nhật thanh toán để xem.",
       "ReassuranceAskOwner": "Bạn đã có nó. Chủ sở hữu nhóm của bạn có thể cập nhật thanh toán để hiển thị."
-    }
+    },
+    "SignInWhy": "Tài khoản SeaMeet giữ gói và thư viện của bạn trên mọi thiết bị."
   },
   "AiRuns": {
-    "Device": "AI trên thiết bị",
+    "Device": "AI riêng tư",
     "Cloud": "AI trên đám mây",
     "CloudTrial": "AI trên đám mây · dùng thử miễn phí",
     "CloudOwnKeys": "AI trên đám mây · khóa của riêng bạn",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "Chi tiết",
     "ActionTestAgain": "Kiểm tra lại",
     "ActionCheckForUpdates": "Kiểm tra cập nhật",
+    "ActionGetAppleSilicon": "Tải phiên bản Apple silicon",
     "ActionUpdatePayment": "Cập nhật thanh toán",
     "ActionGetSyncPro": "Dùng Sync Pro",
     "ActionGetSyncProLower": "hãy dùng Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "Đã đồng bộ · thư viện đã cập nhật",
     "CardSyncing": "Đang đồng bộ · đang tải lên thư viện của bạn",
     "CloudTag": "Đám mây",
-    "AllServicesWorking": "Mọi dịch vụ đều hoạt động"
+    "AllServicesWorking": "Mọi dịch vụ đều hoạt động",
+    "UnavailableOpensDetails": "Kích hoạt để xem lý do và cách có được tính năng này."
   },
   "AiSettings": {
     "FreeHoursLeft": "Còn {{left}} chép lời đám mây miễn phí. 15 phút đầu của mỗi bản ghi có thể đọc được.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "Nói để xem mức âm lượng",
     "MicLevelOk": "Mức âm lượng micrô ổn",
     "MicLevelSilent": "Micrô không có tiếng",
-    "SystemSoundOnly": "Chỉ âm thanh hệ thống"
+    "SystemSoundOnly": "Chỉ âm thanh hệ thống",
+    "StartKeysHint": "Nhấn <enter>Enter</enter> hoặc <space>Space</space> để bắt đầu"
   },
   "MicPermission": {
     "Title": "Cho phép micrô của bạn",
@@ -5535,6 +5540,7 @@
     "Capturing": "Đang chụp…",
     "CopyText": "Sao chép văn bản sau khi chụp",
     "CopyTextSub": "Đọc ngay trên máy tính này",
+    "CopyTextSubCloud": "Đọc ngay trên máy tính này, hoặc bằng AI trên đám mây khi không tìm thấy",
     "CtaArea": "Chụp một vùng",
     "CtaScreen": "Chụp toàn bộ màn hình",
     "CtaWindow": "Chụp một cửa sổ",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "Phím tắt",
     "ShortcutLabel": "Chụp màn hình",
     "TextBadge": "Văn bản được đọc ngay trên máy tính này",
+    "BadgePrivate": "AI riêng tư đọc ảnh ngay trên máy tính này",
+    "BadgeCloud": "AI trên đám mây đọc và mô tả ảnh",
     "TextHeading": "Văn bản trong ảnh chụp",
     "Title": "Ảnh chụp màn hình mới",
     "WindowHint": "Bạn chọn cửa sổ khi chụp.",
-    "ModeScreenSubOne": "Toàn bộ màn hình"
+    "ModeScreenSubOne": "Toàn bộ màn hình",
+    "StartKeysHint": "Nhấn <enter>Enter</enter> hoặc <space>Space</space> để chụp"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Đang ghi âm vào ghi chú này"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "Ghi chú phát hành của phiên bản này",
       "ReleaseNotesDesc": "Có gì mới trong SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Máy Mac này dùng bộ xử lý Intel. AI riêng tư cần máy Mac dùng Apple silicon (M1 trở lên).",
+    "IntelMacDevice": "Máy Mac này dùng bộ xử lý Intel. AI trên thiết bị cần máy Mac dùng Apple silicon (M1 trở lên).",
+    "MacRosetta": "Bản SeaMeet này dành cho máy Mac dùng Intel. Hãy cài phiên bản Apple silicon từ seameet.ai để sử dụng.",
+    "WinArch": "Máy tính này chạy Windows trên bộ xử lý 32 bit hoặc ARM. AI riêng tư cần Windows 64 bit trên bộ xử lý Intel hoặc AMD.",
+    "WinArchDevice": "Máy tính này chạy Windows trên bộ xử lý 32 bit hoặc ARM. AI trên thiết bị cần Windows 64 bit trên bộ xử lý Intel hoặc AMD.",
+    "WinMemory": "Máy tính này có {{have}} GB bộ nhớ. AI riêng tư cần {{need}} GB.",
+    "WinMemoryDevice": "Máy tính này có {{have}} GB bộ nhớ. AI trên thiết bị cần {{need}} GB.",
+    "SummaryMemory": "Bản ghi lời riêng tư hoạt động ở đây; tóm tắt và Hỏi cần {{need}} GB.",
+    "CloudWorksHere": "AI trên đám mây hoạt động trên máy tính này.",
+    "LearnMore": "Tìm hiểu thêm"
   }
 }

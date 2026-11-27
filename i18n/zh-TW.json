@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "登入並訂閱",
-      "Sync": "使用 BYOK Pro 將筆記備份到您的私有 GitHub 儲存庫",
-      "SyncProNudge": "使用 Sync Pro 將筆記備份到您的私有 GitHub 儲存庫"
+      "Sync": "使用 BYOK Pro 將筆記備份到您的私有 GitHub 儲存庫"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "已匯出 {{count}} 個檔案",
     "Selected_one": "已選取 {{count}} 個",
     "Selected_other": "已選取 {{count}} 個",
-    "ImportTooltip": "匯入媒體 · {{shortcut}} 貼上圖片",
     "Section": {
       "ThisWeek": "本週",
       "EarlierThisMonth": "本月稍早",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "部分讀取：可能缺少部分文字。再讀一次以取得其餘內容。",
     "ReadingText": "正在這台電腦上讀取文字…",
     "NoTextFound": "這張截圖中沒有找到文字。",
-    "NoTextYet": "文字在這台電腦上讀取。目前尚未找到文字。",
+    "NoTextFoundYet": "還沒有找到文字。",
     "SetupRequiredSyncPro": "使用 Sync Pro 訂閱登入來處理影像。",
     "WrittenByCloud": "由雲端 AI 撰寫。",
     "NotTurnedOn": "未開啟。",
@@ -3112,7 +3110,12 @@
     "Placeholder": "搜尋… (⌘K)",
     "Results": {
       "Aria": "搜尋結果"
-    }
+    },
+    "SettingsPlaceholder": "搜尋設定… (⌘K)",
+    "SettingsAria": "搜尋設定",
+    "SettingsNoResults": "沒有符合的設定",
+    "SettingsResults": "設定",
+    "SettingsSection": "設定分區"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "路徑已複製到剪貼簿",
       "PermissionHeader": "應用程式權限",
       "Title": "應用程式權限",
-      "RemoveApp": "從清單中移除 {{app}}"
+      "RemoveApp": "從清單中移除 {{app}}",
+      "PermissionFor": "{{app}} 的應用程式權限",
+      "ModeFor": "{{app}} 的預設錄音模式"
     },
     "Back": "返回",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "無法變更語言。",
     "Memory": {
-      "MemoryLink": "開啟或關閉會議記憶，以及它的來源",
-      "MemoryHint": "在 AI 區段。",
-      "WorkspacesLink": "工作區",
-      "WorkspacesHint": "在筆記側邊欄中。",
-      "GitHubLink": "將筆記備份到 GitHub",
-      "GitHubHint": "在同步與備份中。",
-      "MemoryLinkLegacy": "從你的筆記和錄製內容建立記憶"
+      "GitHubLink": "將筆記備份到 GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "錄製已暫停",
     "ResumeRecording": "繼續錄製",
     "StopRecording": "停止錄製",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "設定…"
   },
   "Types": {
     "Audio": "音訊",
@@ -4401,6 +4401,7 @@
     "Agent": "智慧助理",
     "Meetings": "已連結的會議",
     "NewRecording": "新增錄製",
+    "Record": "錄製",
     "Recording": "錄製中",
     "ReturnToRecording": "返回錄製",
     "Starting": "正在開始…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "閒置",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "私有 AI · {{stt}} + {{llm}}",
     "Offline": "裝置端 AI 引擎未執行",
     "PanelLabel": "Local model resources",
     "OfflineHint": "它會自動重新啟動；如果一直離線，請重新啟動 SeaMeet。",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "私有 AI · {{model}}",
+    "Badge": "私有 AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "內容已經儲存。Sync Pro 可立即永久顯示。",
       "ReassuranceUpdatePayment": "內容已經儲存。更新付款資訊即可顯示。",
       "ReassuranceAskOwner": "內容已經儲存。你的團隊擁有者更新付款後即可顯示。"
-    }
+    },
+    "SignInWhy": "你的 SeaMeet 帳戶會在所有裝置上保留你的方案和資料庫。"
   },
   "AiRuns": {
-    "Device": "裝置端 AI",
+    "Device": "私有 AI",
     "Cloud": "雲端 AI",
     "CloudTrial": "雲端 AI · 免費試用",
     "CloudOwnKeys": "雲端 AI · 你自己的金鑰",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "詳細資料",
     "ActionTestAgain": "重新測試",
     "ActionCheckForUpdates": "檢查更新",
+    "ActionGetAppleSilicon": "下載 Apple 晶片版本",
     "ActionUpdatePayment": "更新付款方式",
     "ActionGetSyncPro": "取得 Sync Pro",
     "ActionGetSyncProLower": "取得 Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "已同步 · 資料庫已是最新",
     "CardSyncing": "正在同步 · 正在上傳到你的資料庫",
     "CloudTag": "雲端",
-    "AllServicesWorking": "所有服務正常"
+    "AllServicesWorking": "所有服務正常",
+    "UnavailableOpensDetails": "啟用即可查看原因及取得方式。"
   },
   "AiSettings": {
     "FreeHoursLeft": "免費雲端轉寫還剩 {{left}}。每段錄音的前 15 分鐘可閱讀。",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "說話以查看音量",
     "MicLevelOk": "麥克風音量正常",
     "MicLevelSilent": "麥克風沒有聲音",
-    "SystemSoundOnly": "僅系統音訊"
+    "SystemSoundOnly": "僅系統音訊",
+    "StartKeysHint": "按 <enter>Enter</enter> 或 <space>空白鍵</space> 開始"
   },
   "MicPermission": {
     "Title": "允許使用您的麥克風",
@@ -5535,6 +5540,7 @@
     "Capturing": "擷取中…",
     "CopyText": "截圖後複製文字",
     "CopyTextSub": "在這台電腦上讀取",
+    "CopyTextSubCloud": "在這台電腦上讀取，找不到時由雲端 AI 讀取",
     "CtaArea": "擷取範圍",
     "CtaScreen": "擷取全螢幕",
     "CtaWindow": "擷取視窗",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "快速鍵",
     "ShortcutLabel": "擷取螢幕截圖",
     "TextBadge": "文字在這台電腦上讀取",
+    "BadgePrivate": "私有 AI 在這台電腦上讀取",
+    "BadgeCloud": "雲端 AI 讀取並描述截圖",
     "TextHeading": "螢幕截圖中的文字",
     "Title": "新增螢幕截圖",
     "WindowHint": "擷取時再選擇視窗。",
-    "ModeScreenSubOne": "整個螢幕"
+    "ModeScreenSubOne": "整個螢幕",
+    "StartKeysHint": "按 <enter>Enter</enter> 或 <space>空白鍵</space> 擷取"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "正在錄製到此筆記"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "此版本的發行說明",
       "ReleaseNotesDesc": "SeaMeet {{version}} 的新內容。"
     }
+  },
+  "AiReason": {
+    "IntelMac": "這台 Mac 使用 Intel 處理器。私有 AI 需要搭載 Apple 晶片（M1 或更新）的 Mac。",
+    "IntelMacDevice": "這台 Mac 使用 Intel 處理器。裝置端 AI 需要搭載 Apple 晶片（M1 或更新）的 Mac。",
+    "MacRosetta": "此 SeaMeet 版本適用於 Intel Mac。請從 seameet.ai 安裝 Apple 晶片版本以使用此功能。",
+    "WinArch": "這台電腦在 32 位元或 ARM 處理器上執行 Windows。私有 AI 需要 Intel 或 AMD 處理器上的 64 位元 Windows。",
+    "WinArchDevice": "這台電腦在 32 位元或 ARM 處理器上執行 Windows。裝置端 AI 需要 Intel 或 AMD 處理器上的 64 位元 Windows。",
+    "WinMemory": "這台電腦有 {{have}} GB 記憶體。私有 AI 需要 {{need}} GB。",
+    "WinMemoryDevice": "這台電腦有 {{have}} GB 記憶體。裝置端 AI 需要 {{need}} GB。",
+    "SummaryMemory": "私密逐字稿可在此使用；摘要和提問需要 {{need}} GB。",
+    "CloudWorksHere": "雲端 AI 可在這台電腦上使用。",
+    "LearnMore": "了解更多"
   }
 }

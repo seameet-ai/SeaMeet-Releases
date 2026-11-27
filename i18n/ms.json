@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "Log masuk dan langgan",
-      "Sync": "Sandarkan nota anda ke repo GitHub peribadi dengan BYOK Pro",
-      "SyncProNudge": "Sandarkan nota anda ke repo GitHub peribadi dengan Sync Pro"
+      "Sync": "Sandarkan nota anda ke repo GitHub peribadi dengan BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}} fail dieksport",
     "Selected_one": "{{count}} dipilih",
     "Selected_other": "{{count}} dipilih",
-    "ImportTooltip": "Import media · {{shortcut}} menampal imej",
     "Section": {
       "ThisWeek": "Minggu ini",
       "EarlierThisMonth": "Lebih awal bulan ini",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "Dibaca sebahagian: sesetengah teks mungkin tiada. Baca semula untuk cuba mendapatkan bakinya.",
     "ReadingText": "Membaca teks pada komputer ini…",
     "NoTextFound": "Tiada teks ditemui dalam tangkapan skrin ini.",
-    "NoTextYet": "Teks dibaca pada komputer ini. Belum ada yang ditemui.",
+    "NoTextFoundYet": "Belum ada teks ditemui.",
     "SetupRequiredSyncPro": "Log masuk dengan langganan Sync Pro untuk memproses imej.",
     "WrittenByCloud": "Ditulis oleh AI Awan.",
     "NotTurnedOn": "Tidak dihidupkan.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "Cari… (⌘K)",
     "Results": {
       "Aria": "Hasil carian"
-    }
+    },
+    "SettingsPlaceholder": "Cari tetapan… (⌘K)",
+    "SettingsAria": "Cari tetapan",
+    "SettingsNoResults": "Tiada tetapan yang sepadan",
+    "SettingsResults": "Tetapan",
+    "SettingsSection": "Bahagian tetapan"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "Pautan jalan pintas telah disalin ke papan klip",
       "PermissionHeader": "Kebenaran Aplikasi",
       "Title": "Kebenaran Aplikasi",
-      "RemoveApp": "Alih keluar {{app}} daripada senarai"
+      "RemoveApp": "Alih keluar {{app}} daripada senarai",
+      "PermissionFor": "Kebenaran aplikasi untuk {{app}}",
+      "ModeFor": "Mod rakaman lalai untuk {{app}}"
     },
     "Back": "Kembali",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "Tidak dapat menukar bahasa.",
     "Memory": {
-      "MemoryLink": "Memori Mesyuarat hidup atau mati, dan sumber binaannya",
-      "MemoryHint": "Dalam bahagian AI.",
-      "WorkspacesLink": "Ruang kerja",
-      "WorkspacesHint": "Dalam bar sisi Nota.",
-      "GitHubLink": "Sandarkan nota ke GitHub",
-      "GitHubHint": "Dalam Penyelarasan dan sandaran.",
-      "MemoryLinkLegacy": "Membina Memori daripada nota dan rakaman anda"
+      "GitHubLink": "Sandarkan nota ke GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "Rakaman dijeda",
     "ResumeRecording": "Sambung Rakaman",
     "StopRecording": "Hentikan Rakaman",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Tetapan…"
   },
   "Types": {
     "Audio": "Audio",
@@ -4401,6 +4401,7 @@
     "Agent": "Ejen",
     "Meetings": "Mesyuarat Terhubung",
     "NewRecording": "Rakaman baharu",
+    "Record": "Rakam",
     "Recording": "Merakam",
     "ReturnToRecording": "Kembali ke rakaman",
     "Starting": "Memulakan…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Melahu",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "AI Peribadi · {{stt}} + {{llm}}",
     "Offline": "Enjin AI pada peranti tidak berjalan",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Ia dimulakan semula sendiri; jika kekal luar talian, mulakan semula SeaMeet.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "AI Peribadi · {{model}}",
+    "Badge": "AI Peribadi",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "Anda sudah memilikinya. Sync Pro memaparkannya serta-merta, selama-lamanya.",
       "ReassuranceUpdatePayment": "Anda sudah memilikinya. Kemas kini pembayaran anda untuk memaparkannya.",
       "ReassuranceAskOwner": "Anda sudah memilikinya. Pemilik pasukan anda boleh mengemas kini pembayaran untuk memaparkannya."
-    }
+    },
+    "SignInWhy": "Akaun SeaMeet anda menyimpan pelan dan pustaka anda pada setiap peranti."
   },
   "AiRuns": {
-    "Device": "AI pada peranti",
+    "Device": "AI Peribadi",
     "Cloud": "AI Awan",
     "CloudTrial": "AI Awan · percubaan percuma",
     "CloudOwnKeys": "AI Awan · kunci anda sendiri",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "Butiran",
     "ActionTestAgain": "Uji sekali lagi",
     "ActionCheckForUpdates": "Semak kemas kini",
+    "ActionGetAppleSilicon": "Muat turun versi Apple silicon",
     "ActionUpdatePayment": "Kemas kini pembayaran",
     "ActionGetSyncPro": "Dapatkan Sync Pro",
     "ActionGetSyncProLower": "dapatkan Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "Disegerakkan · pustaka terkini",
     "CardSyncing": "Menyegerakkan · memuat naik ke pustaka anda",
     "CloudTag": "Awan",
-    "AllServicesWorking": "Semua perkhidmatan berfungsi"
+    "AllServicesWorking": "Semua perkhidmatan berfungsi",
+    "UnavailableOpensDetails": "Aktifkan untuk melihat sebabnya dan cara mendapatkannya."
   },
   "AiSettings": {
     "FreeHoursLeft": "Baki {{left}} transkripsi awan percuma. 15 minit pertama setiap rakaman boleh dibaca.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "Bercakap untuk melihat aras",
     "MicLevelOk": "Aras mikrofon baik",
     "MicLevelSilent": "Mikrofon senyap",
-    "SystemSoundOnly": "Hanya bunyi sistem"
+    "SystemSoundOnly": "Hanya bunyi sistem",
+    "StartKeysHint": "Tekan <enter>Enter</enter> atau <space>Space</space> untuk mula"
   },
   "MicPermission": {
     "Title": "Benarkan mikrofon anda",
@@ -5535,6 +5540,7 @@
     "Capturing": "Sedang merakam…",
     "CopyText": "Salin teks selepas tangkapan skrin",
     "CopyTextSub": "Dibaca pada komputer ini",
+    "CopyTextSubCloud": "Dibaca pada komputer ini, atau oleh AI Awan jika tiada yang ditemui",
     "CtaArea": "Rakam kawasan",
     "CtaScreen": "Rakam seluruh skrin",
     "CtaWindow": "Rakam tetingkap",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "Pintasan",
     "ShortcutLabel": "Ambil tangkapan skrin",
     "TextBadge": "Teks dibaca pada komputer ini",
+    "BadgePrivate": "AI Peribadi membacanya pada komputer ini",
+    "BadgeCloud": "AI Awan membaca dan menerangkannya",
     "TextHeading": "Teks dalam tangkapan skrin",
     "Title": "Tangkapan skrin baharu",
     "WindowHint": "Anda pilih tetingkap semasa merakam.",
-    "ModeScreenSubOne": "Seluruh paparan"
+    "ModeScreenSubOne": "Seluruh paparan",
+    "StartKeysHint": "Tekan <enter>Enter</enter> atau <space>Space</space> untuk menangkap"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Merakam ke dalam nota ini"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "Nota keluaran versi ini",
       "ReleaseNotesDesc": "Apa yang baharu dalam SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Mac ini menggunakan pemproses Intel. AI Peribadi memerlukan Mac dengan Apple silicon (M1 atau lebih baharu).",
+    "IntelMacDevice": "Mac ini menggunakan pemproses Intel. AI pada peranti memerlukan Mac dengan Apple silicon (M1 atau lebih baharu).",
+    "MacRosetta": "Salinan SeaMeet ini untuk Mac Intel. Pasang versi Apple silicon daripada seameet.ai untuk menggunakannya.",
+    "WinArch": "PC ini menjalankan Windows pada pemproses 32-bit atau ARM. AI Peribadi memerlukan Windows 64-bit pada pemproses Intel atau AMD.",
+    "WinArchDevice": "PC ini menjalankan Windows pada pemproses 32-bit atau ARM. AI pada peranti memerlukan Windows 64-bit pada pemproses Intel atau AMD.",
+    "WinMemory": "PC ini mempunyai memori {{have}} GB. AI Peribadi memerlukan {{need}} GB.",
+    "WinMemoryDevice": "PC ini mempunyai memori {{have}} GB. AI pada peranti memerlukan {{need}} GB.",
+    "SummaryMemory": "Transkrip peribadi berfungsi di sini; ringkasan dan Tanya memerlukan {{need}} GB.",
+    "CloudWorksHere": "AI awan berfungsi pada komputer ini.",
+    "LearnMore": "Ketahui lebih lanjut"
   }
 }

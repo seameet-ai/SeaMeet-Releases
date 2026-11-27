@@ -883,8 +883,7 @@
     },
     "Nudge": {
       "Sync": "Back up your notes to a private GitHub repo with BYOK Pro",
-      "CTA": "Sign in & subscribe",
-      "SyncProNudge": "Back up your notes to a private GitHub repo with Sync Pro"
+      "CTA": "Sign in & subscribe"
     },
     "Explainer": {
       "Title": "How SeaMeet AI Works",
@@ -2806,7 +2805,7 @@
     "PartlyRead": "Partly read: some text may be missing. Read it again to try for the rest.",
     "ReadingText": "Reading the text on this computer…",
     "NoTextFound": "No text found in this screenshot.",
-    "NoTextYet": "Text is read on this computer. None was found yet.",
+    "NoTextFoundYet": "No text found yet.",
     "SetupRequiredSyncPro": "Sign in with a Sync Pro subscription to process the image.",
     "WrittenByCloud": "Written by cloud AI.",
     "NotTurnedOn": "Not turned on.",
@@ -2849,7 +2848,12 @@
     },
     "Loading": "Searching…",
     "NoResults": "No results for \"{{query}}\"",
-    "AgentHint": "Try the AI agent for semantic queries."
+    "AgentHint": "Try the AI agent for semantic queries.",
+    "SettingsPlaceholder": "Search settings… (⌘K)",
+    "SettingsAria": "Search settings",
+    "SettingsNoResults": "No settings match",
+    "SettingsResults": "Settings",
+    "SettingsSection": "Settings section"
   },
   "Settings": {
     "About": {
@@ -2922,7 +2926,9 @@
       "PathCopied": "Path copied to clipboard",
       "PermissionHeader": "App Permissions",
       "Title": "App Permissions",
-      "RemoveApp": "Remove {{app}} from list"
+      "RemoveApp": "Remove {{app}} from list",
+      "PermissionFor": "App permission for {{app}}",
+      "ModeFor": "Default recording mode for {{app}}"
     },
     "Back": "Back",
     "GroupTitle": {
@@ -3037,13 +3043,7 @@
     },
     "LanguageFailed": "Could not change the language.",
     "Memory": {
-      "MemoryLink": "Meeting Memory on or off, and what it is built from",
-      "MemoryHint": "In the AI section.",
-      "WorkspacesLink": "Workspaces",
-      "WorkspacesHint": "In the Notes sidebar.",
-      "GitHubLink": "Back up notes to GitHub",
-      "GitHubHint": "In Sync and backup.",
-      "MemoryLinkLegacy": "Building Memory from your notes and recordings"
+      "GitHubLink": "Back up notes to GitHub"
     }
   },
   "Shortcuts": {
@@ -3114,7 +3114,8 @@
     "PauseRecording": "Pause Recording",
     "ResumeRecording": "Resume Recording",
     "MarkEvent": "Mark Event",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Settings…"
   },
   "Types": {
     "Both": "Both (Mixed)",
@@ -4065,7 +4066,6 @@
     "ExportSuccess_other": "Exported {{count}} files",
     "Selected_one": "{{count}} selected",
     "Selected_other": "{{count}} selected",
-    "ImportTooltip": "Import media · {{shortcut}} pastes an image",
     "Section": {
       "ThisWeek": "This week",
       "EarlierThisMonth": "Earlier this month",
@@ -4401,6 +4401,7 @@
     "Agent": "Agent",
     "Meetings": "Connected Meetings",
     "NewRecording": "New recording",
+    "Record": "Record",
     "Recording": "Recording",
     "ReturnToRecording": "Return to the recording",
     "Starting": "Starting…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Idle",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "Private AI · {{stt}} + {{llm}}",
     "Offline": "The on-device AI engine is not running",
     "PanelLabel": "Local model resources",
     "OfflineHint": "It restarts by itself; if it stays offline, restart SeaMeet.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "Private AI · {{model}}",
+    "Badge": "Private AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "You already have it. Sync Pro reveals it instantly, forever.",
       "ReassuranceUpdatePayment": "You already have it. Update your payment to reveal it.",
       "ReassuranceAskOwner": "You already have it. Your team owner can update the payment to reveal it."
-    }
+    },
+    "SignInWhy": "Your SeaMeet account keeps your plan and your library on every device."
   },
   "AiRuns": {
-    "Device": "On-device AI",
+    "Device": "Private AI",
     "Cloud": "Cloud AI",
     "CloudTrial": "Cloud AI · free trial",
     "CloudOwnKeys": "Cloud AI · your own keys",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "Details",
     "ActionTestAgain": "Test again",
     "ActionCheckForUpdates": "Check for updates",
+    "ActionGetAppleSilicon": "Download the Apple silicon version",
     "ActionUpdatePayment": "Update payment",
     "ActionGetSyncPro": "Get Sync Pro",
     "ActionGetSyncProLower": "get Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "Synced · library up to date",
     "CardSyncing": "Syncing · uploading to your library",
     "CloudTag": "Cloud",
-    "AllServicesWorking": "All services working"
+    "AllServicesWorking": "All services working",
+    "UnavailableOpensDetails": "Activate to see why and how to get it."
   },
   "AiSettings": {
     "FreeHoursLeft": "{{left}} of free cloud transcription left. The first 15 minutes of each recording are readable.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "Speak to see the level",
     "MicLevelOk": "Microphone level ok",
     "MicLevelSilent": "Microphone is silent",
-    "SystemSoundOnly": "System sound only"
+    "SystemSoundOnly": "System sound only",
+    "StartKeysHint": "Press <enter>Enter</enter> or <space>Space</space> to start"
   },
   "MicPermission": {
     "Title": "Allow your microphone",
@@ -5535,6 +5540,7 @@
     "Capturing": "Capturing…",
     "CopyText": "Copy the text after a screenshot",
     "CopyTextSub": "Read on this computer",
+    "CopyTextSubCloud": "Read on this computer, or by Cloud AI when none is found",
     "CtaArea": "Capture an area",
     "CtaScreen": "Capture the full screen",
     "CtaWindow": "Capture a window",
@@ -5551,9 +5557,12 @@
     "ShortcutHeading": "Shortcut",
     "ShortcutLabel": "Take a screenshot",
     "TextBadge": "Text is read on this computer",
+    "BadgePrivate": "Private AI reads it on this computer",
+    "BadgeCloud": "Cloud AI reads and describes it",
     "TextHeading": "Text in screenshots",
     "Title": "New screenshot",
-    "WindowHint": "You pick the window when you capture."
+    "WindowHint": "You pick the window when you capture.",
+    "StartKeysHint": "Press <enter>Enter</enter> or <space>Space</space> to capture"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Recording into this note"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "Release notes for this version",
       "ReleaseNotesDesc": "What is new in SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "This Mac has an Intel processor. Private AI needs a Mac with Apple silicon (M1 or later).",
+    "IntelMacDevice": "This Mac has an Intel processor. On-device AI needs a Mac with Apple silicon (M1 or later).",
+    "MacRosetta": "This copy of SeaMeet is for Intel Macs. Install the Apple silicon version from seameet.ai to use it.",
+    "WinArch": "This PC runs Windows on a 32-bit or ARM processor. Private AI needs 64-bit Windows on an Intel or AMD processor.",
+    "WinArchDevice": "This PC runs Windows on a 32-bit or ARM processor. On-device AI needs 64-bit Windows on an Intel or AMD processor.",
+    "WinMemory": "This PC has {{have}} GB of memory. Private AI needs {{need}} GB.",
+    "WinMemoryDevice": "This PC has {{have}} GB of memory. On-device AI needs {{need}} GB.",
+    "SummaryMemory": "Private transcripts work here; summaries and Ask need {{need}} GB.",
+    "CloudWorksHere": "Cloud AI works on this computer.",
+    "LearnMore": "Learn more"
   }
 }

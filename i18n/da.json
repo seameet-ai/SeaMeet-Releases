@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "Log ind og abonnér",
-      "Sync": "Sikkerhedskopiér dine noter til et privat GitHub-repo med BYOK Pro",
-      "SyncProNudge": "Sikkerhedskopiér dine noter til et privat GitHub-repo med Sync Pro"
+      "Sync": "Sikkerhedskopiér dine noter til et privat GitHub-repo med BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}} filer eksporteret",
     "Selected_one": "{{count}} valgt",
     "Selected_other": "{{count}} valgt",
-    "ImportTooltip": "Importér medier · {{shortcut}} indsætter et billede",
     "Section": {
       "ThisWeek": "Denne uge",
       "EarlierThisMonth": "Tidligere på måneden",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "Delvist læst: noget tekst mangler måske. Læs igen for at prøve at få resten.",
     "ReadingText": "Læser teksten på denne computer…",
     "NoTextFound": "Der blev ikke fundet tekst i dette skærmbillede.",
-    "NoTextYet": "Tekst læses på denne computer. Der er ikke fundet nogen endnu.",
+    "NoTextFoundYet": "Der er ikke fundet tekst endnu.",
     "SetupRequiredSyncPro": "Log ind med et Sync Pro-abonnement for at behandle billedet.",
     "WrittenByCloud": "Skrevet af cloud-AI.",
     "NotTurnedOn": "Ikke slået til.",
@@ -3112,7 +3110,12 @@
     "Placeholder": "Søg… (⌘K)",
     "Results": {
       "Aria": "Søgeresultater"
-    }
+    },
+    "SettingsPlaceholder": "Søg i indstillinger… (⌘K)",
+    "SettingsAria": "Søg i indstillinger",
+    "SettingsNoResults": "Ingen indstillinger matcher",
+    "SettingsResults": "Indstillinger",
+    "SettingsSection": "Indstillingssektion"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "Sti kopieret til udklipsholder",
       "PermissionHeader": "App-tilladelser",
       "Title": "App-tilladelser",
-      "RemoveApp": "Fjern {{app}} fra listen"
+      "RemoveApp": "Fjern {{app}} fra listen",
+      "PermissionFor": "App-tilladelse for {{app}}",
+      "ModeFor": "Standard optagelsestilstand for {{app}}"
     },
     "Back": "Tilbage",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "Kunne ikke ændre sproget.",
     "Memory": {
-      "MemoryLink": "Mødehukommelse til eller fra, og hvad den bygges af",
-      "MemoryHint": "I sektionen AI.",
-      "WorkspacesLink": "Arbejdsområder",
-      "WorkspacesHint": "I sidepanelet Noter.",
-      "GitHubLink": "Sikkerhedskopiér noter til GitHub",
-      "GitHubHint": "I Synk og backup.",
-      "MemoryLinkLegacy": "Opbygning af Minder fra dine noter og optagelser"
+      "GitHubLink": "Sikkerhedskopiér noter til GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "Optagelse sat på pause",
     "ResumeRecording": "Genoptag optagelse",
     "StopRecording": "Stop optagelse",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Indstillinger…"
   },
   "Types": {
     "Audio": "Lyd",
@@ -4401,6 +4401,7 @@
     "Agent": "Assistent",
     "Meetings": "Forbundne møder",
     "NewRecording": "Ny optagelse",
+    "Record": "Optag",
     "Recording": "Optager",
     "ReturnToRecording": "Tilbage til optagelsen",
     "Starting": "Starter…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Inaktiv",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "Privat AI · {{stt}} + {{llm}}",
     "Offline": "AI-motoren på enheden kører ikke",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Den genstarter af sig selv; hvis den forbliver offline, så genstart SeaMeet.",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "Privat AI · {{model}}",
+    "Badge": "Privat AI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "Du har det allerede. Sync Pro viser det med det samme, for altid.",
       "ReassuranceUpdatePayment": "Du har det allerede. Opdater din betaling for at vise det.",
       "ReassuranceAskOwner": "Du har det allerede. Din teamejer kan opdatere betalingen for at vise det."
-    }
+    },
+    "SignInWhy": "Din SeaMeet-konto holder din plan og dit bibliotek på alle dine enheder."
   },
   "AiRuns": {
-    "Device": "AI på enheden",
+    "Device": "Privat AI",
     "Cloud": "Cloud-AI",
     "CloudTrial": "Cloud-AI · gratis prøve",
     "CloudOwnKeys": "Cloud-AI · dine egne nøgler",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "Detaljer",
     "ActionTestAgain": "Test igen",
     "ActionCheckForUpdates": "Søg efter opdateringer",
+    "ActionGetAppleSilicon": "Download Apple silicon-versionen",
     "ActionUpdatePayment": "Opdater betaling",
     "ActionGetSyncPro": "Få Sync Pro",
     "ActionGetSyncProLower": "få Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "Synkroniseret · biblioteket er opdateret",
     "CardSyncing": "Synkroniserer · uploader til dit bibliotek",
     "CloudTag": "Sky",
-    "AllServicesWorking": "Alle tjenester virker"
+    "AllServicesWorking": "Alle tjenester virker",
+    "UnavailableOpensDetails": "Aktivér for at se hvorfor, og hvordan du får det."
   },
   "AiSettings": {
     "FreeHoursLeft": "{{left}} gratis cloud-transskription tilbage. De første 15 minutter af hver optagelse kan læses.",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "Tal for at se niveauet",
     "MicLevelOk": "Mikrofonniveau ok",
     "MicLevelSilent": "Mikrofonen er stille",
-    "SystemSoundOnly": "Kun systemlyd"
+    "SystemSoundOnly": "Kun systemlyd",
+    "StartKeysHint": "Tryk på <enter>Enter</enter> eller <space>Mellemrum</space> for at starte"
   },
   "MicPermission": {
     "Title": "Tillad din mikrofon",
@@ -5535,6 +5540,7 @@
     "Capturing": "Tager billede…",
     "CopyText": "Kopiér teksten efter et skærmbillede",
     "CopyTextSub": "Læses på denne computer",
+    "CopyTextSubCloud": "Læses på denne computer, eller af Cloud-AI, hvis der ikke findes noget",
     "CtaArea": "Tag billede af et område",
     "CtaScreen": "Tag billede af hele skærmen",
     "CtaWindow": "Tag billede af et vindue",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "Genvej",
     "ShortcutLabel": "Tag et skærmbillede",
     "TextBadge": "Teksten læses på denne computer",
+    "BadgePrivate": "Privat AI læser det på denne computer",
+    "BadgeCloud": "Cloud-AI læser og beskriver det",
     "TextHeading": "Tekst i skærmbilleder",
     "Title": "Nyt skærmbillede",
     "WindowHint": "Du vælger vinduet, når du tager billede.",
-    "ModeScreenSubOne": "En hel skærm"
+    "ModeScreenSubOne": "En hel skærm",
+    "StartKeysHint": "Tryk på <enter>Enter</enter> eller <space>Mellemrum</space> for at tage billedet"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Optager i denne note"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "Udgivelsesnoter for denne version",
       "ReleaseNotesDesc": "Nyt i SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Denne Mac har en Intel-processor. Privat AI kræver en Mac med Apple silicon (M1 eller nyere).",
+    "IntelMacDevice": "Denne Mac har en Intel-processor. AI på enheden kræver en Mac med Apple silicon (M1 eller nyere).",
+    "MacRosetta": "Denne kopi af SeaMeet er til Intel-Mac'er. Installer Apple silicon-versionen fra seameet.ai for at bruge det.",
+    "WinArch": "Denne pc kører Windows på en 32-bit- eller ARM-processor. Privat AI kræver 64-bit Windows på en Intel- eller AMD-processor.",
+    "WinArchDevice": "Denne pc kører Windows på en 32-bit- eller ARM-processor. AI på enheden kræver 64-bit Windows på en Intel- eller AMD-processor.",
+    "WinMemory": "Denne pc har {{have}} GB hukommelse. Privat AI kræver {{need}} GB.",
+    "WinMemoryDevice": "Denne pc har {{have}} GB hukommelse. AI på enheden kræver {{need}} GB.",
+    "SummaryMemory": "Private transskriptioner virker her; resuméer og Spørg kræver {{need}} GB.",
+    "CloudWorksHere": "Cloud-AI virker på denne computer.",
+    "LearnMore": "Få mere at vide"
   }
 }

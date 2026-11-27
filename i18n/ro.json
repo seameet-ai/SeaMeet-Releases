@@ -1109,8 +1109,7 @@
     },
     "Nudge": {
       "CTA": "Conectați-vă și abonați-vă",
-      "Sync": "Faceți backup pentru notițele dvs. într-un repository GitHub privat cu BYOK Pro",
-      "SyncProNudge": "Faceți backup pentru notițele dvs. într-un repository GitHub privat cu Sync Pro"
+      "Sync": "Faceți backup pentru notițele dvs. într-un repository GitHub privat cu BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2093,7 +2092,6 @@
     "ExportSuccess_other": "{{count}} fișiere exportate",
     "Selected_one": "{{count}} selectate",
     "Selected_other": "{{count}} selectate",
-    "ImportTooltip": "Importă media · {{shortcut}} lipește o imagine",
     "Section": {
       "ThisWeek": "Săptămâna aceasta",
       "EarlierThisMonth": "Mai devreme în această lună",
@@ -3025,7 +3023,7 @@
     "PartlyRead": "Citit parțial: poate lipsi text. Citiți din nou pentru a încerca să obțineți restul.",
     "ReadingText": "Se citește textul pe acest computer…",
     "NoTextFound": "Nu s-a găsit text în această captură.",
-    "NoTextYet": "Textul este citit pe acest computer. Încă nu s-a găsit niciunul.",
+    "NoTextFoundYet": "Nu s-a găsit încă niciun text.",
     "SetupRequiredSyncPro": "Conectați-vă cu un abonament Sync Pro pentru a procesa imaginea.",
     "WrittenByCloud": "Scrisă de AI în cloud.",
     "NotTurnedOn": "Neactivat.",
@@ -3119,7 +3117,12 @@
     "Placeholder": "Caută… (⌘K)",
     "Results": {
       "Aria": "Rezultatele căutării"
-    }
+    },
+    "SettingsPlaceholder": "Caută în setări… (⌘K)",
+    "SettingsAria": "Caută în setări",
+    "SettingsNoResults": "Nicio setare nu se potrivește",
+    "SettingsResults": "Setări",
+    "SettingsSection": "Secțiune de setări"
   },
   "Settings": {
     "About": {
@@ -3186,13 +3189,15 @@
       "UpdateReady": "Versiunea {{version}} este gata pentru instalare"
     },
     "AppPermissions": {
-      "DefaultRecordingMode": "modul de înregistrare implicit",
+      "DefaultRecordingMode": "Modul de înregistrare implicit",
       "DeleteTooltip": "Elimină din listă (reinițializează la „Întreabă de fiecare dată”)",
       "EmptyState": "Nici o aplicație detectată încă. Când SeaMeet detectează o aplicație care folosește microfonul tău, va apărea aici.",
       "PathCopied": "Calea a fost copiată în clipboard",
       "PermissionHeader": "Permisiuni ale aplicației",
       "Title": "Permisiuni pentru aplicații",
-      "RemoveApp": "Elimină {{app}} din listă"
+      "RemoveApp": "Elimină {{app}} din listă",
+      "PermissionFor": "Permisiunea aplicației pentru {{app}}",
+      "ModeFor": "Modul de înregistrare implicit pentru {{app}}"
     },
     "Back": "Întoarcere",
     "GroupTitle": {
@@ -3307,13 +3312,7 @@
     },
     "LanguageFailed": "Nu s-a putut schimba limba.",
     "Memory": {
-      "MemoryLink": "Memoria întâlnirilor pornită sau oprită, și din ce se construiește",
-      "MemoryHint": "În secțiunea AI.",
-      "WorkspacesLink": "Spații de lucru",
-      "WorkspacesHint": "În bara laterală Notițe.",
-      "GitHubLink": "Fă backup notițelor pe GitHub",
-      "GitHubHint": "În Sincronizare și backup.",
-      "MemoryLinkLegacy": "Construirea Memoriei din notițele și înregistrările tale"
+      "GitHubLink": "Fă backup notițelor pe GitHub"
     }
   },
   "SettingsModal": {
@@ -3577,7 +3576,8 @@
     "RecordingPaused": "Înregistrare în pauză",
     "ResumeRecording": "Reia înregistrarea",
     "StopRecording": "Oprește înregistrarea",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Setări…"
   },
   "Types": {
     "Audio": "Audio",
@@ -4414,6 +4414,7 @@
     "Agent": "Agent",
     "Meetings": "Întâlniri conectate",
     "NewRecording": "Înregistrare nouă",
+    "Record": "Înregistrează",
     "Recording": "Se înregistrează",
     "ReturnToRecording": "Înapoi la înregistrare",
     "Starting": "Se pornește…",
@@ -4711,7 +4712,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Inactiv",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "AI privat · {{stt}} + {{llm}}",
     "Offline": "Motorul AI de pe dispozitiv nu rulează",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Repornește singur; dacă rămâne offline, reporniți SeaMeet.",
@@ -4730,8 +4731,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "AI privat · {{model}}",
+    "Badge": "AI privat",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5236,10 +5237,11 @@
       "Reassurance": "Îl ai deja. Sync Pro îl afișează imediat, pentru totdeauna.",
       "ReassuranceUpdatePayment": "Îl ai deja. Actualizează plata pentru a-l vedea.",
       "ReassuranceAskOwner": "Îl ai deja. Proprietarul echipei poate actualiza plata pentru a-l afișa."
-    }
+    },
+    "SignInWhy": "Contul tău SeaMeet îți păstrează planul și biblioteca pe fiecare dispozitiv."
   },
   "AiRuns": {
-    "Device": "AI pe dispozitiv",
+    "Device": "AI privat",
     "Cloud": "AI în cloud",
     "CloudTrial": "AI în cloud · probă gratuită",
     "CloudOwnKeys": "AI în cloud · propriile tale chei",
@@ -5283,6 +5285,7 @@
     "ActionDetails": "Detalii",
     "ActionTestAgain": "Testează din nou",
     "ActionCheckForUpdates": "Caută actualizări",
+    "ActionGetAppleSilicon": "Descarcă versiunea pentru Apple silicon",
     "ActionUpdatePayment": "Actualizează plata",
     "ActionGetSyncPro": "Ia Sync Pro",
     "ActionGetSyncProLower": "ia Sync Pro",
@@ -5439,7 +5442,8 @@
     "CardSynced": "Sincronizat · biblioteca este la zi",
     "CardSyncing": "Se sincronizează · se încarcă în biblioteca ta",
     "CloudTag": "Cloud",
-    "AllServicesWorking": "Toate serviciile funcționează"
+    "AllServicesWorking": "Toate serviciile funcționează",
+    "UnavailableOpensDetails": "Activează pentru a vedea de ce și cum îl poți obține."
   },
   "AiSettings": {
     "FreeHoursLeft": "Au rămas {{left}} de transcriere gratuită în cloud. Primele 15 minute ale fiecărei înregistrări sunt lizibile.",
@@ -5553,7 +5557,8 @@
     "SpeakToSeeLevel": "Vorbește pentru a vedea nivelul",
     "MicLevelOk": "Nivelul microfonului este OK",
     "MicLevelSilent": "Microfonul nu captează nimic",
-    "SystemSoundOnly": "Doar sunet de sistem"
+    "SystemSoundOnly": "Doar sunet de sistem",
+    "StartKeysHint": "Apasă <enter>Enter</enter> sau <space>Spațiu</space> pentru a începe"
   },
   "MicPermission": {
     "Title": "Permite accesul la microfon",
@@ -5575,6 +5580,7 @@
     "Capturing": "Se capturează…",
     "CopyText": "Copiază textul după captură",
     "CopyTextSub": "Citit pe acest calculator",
+    "CopyTextSubCloud": "Citit pe acest calculator sau de AI-ul în cloud când nu se găsește nimic",
     "CtaArea": "Capturează o zonă",
     "CtaScreen": "Capturează tot ecranul",
     "CtaWindow": "Capturează o fereastră",
@@ -5590,10 +5596,13 @@
     "ShortcutHeading": "Comandă rapidă",
     "ShortcutLabel": "Fă o captură de ecran",
     "TextBadge": "Textul este citit pe acest calculator",
+    "BadgePrivate": "AI-ul privat o citește pe acest calculator",
+    "BadgeCloud": "AI-ul în cloud o citește și o descrie",
     "TextHeading": "Textul din capturi de ecran",
     "Title": "Captură de ecran nouă",
     "WindowHint": "Alegi fereastra în momentul capturii.",
-    "ModeScreenSubOne": "Un ecran întreg"
+    "ModeScreenSubOne": "Un ecran întreg",
+    "StartKeysHint": "Apasă <enter>Enter</enter> sau <space>Spațiu</space> pentru a captura"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Se înregistrează în această notă"
@@ -5628,5 +5637,17 @@
       "ReleaseNotes": "Notele acestei versiuni",
       "ReleaseNotesDesc": "Ce este nou în SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Acest Mac are un procesor Intel. AI privat necesită un Mac cu Apple silicon (M1 sau mai nou).",
+    "IntelMacDevice": "Acest Mac are un procesor Intel. AI pe dispozitiv necesită un Mac cu Apple silicon (M1 sau mai nou).",
+    "MacRosetta": "Această copie SeaMeet este pentru Mac-uri cu Intel. Instalează versiunea pentru Apple silicon de pe seameet.ai ca să îl folosești.",
+    "WinArch": "Acest PC rulează Windows pe un procesor pe 32 de biți sau ARM. AI privat necesită Windows pe 64 de biți pe un procesor Intel sau AMD.",
+    "WinArchDevice": "Acest PC rulează Windows pe un procesor pe 32 de biți sau ARM. AI pe dispozitiv necesită Windows pe 64 de biți pe un procesor Intel sau AMD.",
+    "WinMemory": "Acest PC are {{have}} GB de memorie. AI privat necesită {{need}} GB.",
+    "WinMemoryDevice": "Acest PC are {{have}} GB de memorie. AI pe dispozitiv necesită {{need}} GB.",
+    "SummaryMemory": "Transcrierile private funcționează aici; rezumatele și Întreabă necesită {{need}} GB.",
+    "CloudWorksHere": "AI în cloud funcționează pe acest computer.",
+    "LearnMore": "Află mai multe"
   }
 }

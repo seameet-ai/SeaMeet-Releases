@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "ログインしてサブスクライブ",
-      "Sync": "BYOK Pro でノートをプライベート GitHub リポジトリにバックアップ",
-      "SyncProNudge": "Sync Pro でノートをプライベート GitHub リポジトリにバックアップ"
+      "Sync": "BYOK Pro でノートをプライベート GitHub リポジトリにバックアップ"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "{{count}}件のファイルをエクスポートしました",
     "Selected_one": "{{count}}件選択中",
     "Selected_other": "{{count}}件選択中",
-    "ImportTooltip": "メディアをインポート · {{shortcut}} で画像を貼り付け",
     "Section": {
       "ThisWeek": "今週",
       "EarlierThisMonth": "今月のこれまで",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "一部のみ読み取り：一部のテキストが欠けている可能性があります。もう一度読み取ると残りを取得できる場合があります。",
     "ReadingText": "このコンピューターでテキストを読み取っています…",
     "NoTextFound": "このスクリーンショットにテキストは見つかりませんでした。",
-    "NoTextYet": "テキストはこのコンピューター上で読み取られます。まだ見つかっていません。",
+    "NoTextFoundYet": "まだテキストは見つかっていません。",
     "SetupRequiredSyncPro": "画像を処理するには、Sync Pro のサブスクリプションでサインインします。",
     "WrittenByCloud": "クラウドAIが作成しました。",
     "NotTurnedOn": "オンになっていません。",
@@ -3112,7 +3110,12 @@
     "Placeholder": "検索… (⌘K)",
     "Results": {
       "Aria": "検索結果"
-    }
+    },
+    "SettingsPlaceholder": "設定を検索… (⌘K)",
+    "SettingsAria": "設定を検索",
+    "SettingsNoResults": "一致する設定はありません",
+    "SettingsResults": "設定",
+    "SettingsSection": "設定のセクション"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "パスをクリップボードにコピーしました",
       "PermissionHeader": "アプリ権限",
       "Title": "アプリ権限",
-      "RemoveApp": "{{app}} をリストから削除"
+      "RemoveApp": "{{app}} をリストから削除",
+      "PermissionFor": "{{app}} のアプリ権限",
+      "ModeFor": "{{app}} のデフォルト録音モード"
     },
     "Back": "戻る",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "言語を変更できませんでした。",
     "Memory": {
-      "MemoryLink": "会議メモリーのオン／オフと、その作成元",
-      "MemoryHint": "AI セクションにあります。",
-      "WorkspacesLink": "ワークスペース",
-      "WorkspacesHint": "ノートのサイドバーにあります。",
-      "GitHubLink": "ノートを GitHub にバックアップ",
-      "GitHubHint": "同期とバックアップにあります。",
-      "MemoryLinkLegacy": "メモとレコーディングからメモリーを作成"
+      "GitHubLink": "ノートを GitHub にバックアップ"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "録音一時停止中",
     "ResumeRecording": "録音を再開",
     "StopRecording": "録音を停止",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "設定…"
   },
   "Types": {
     "Audio": "音声",
@@ -4401,6 +4401,7 @@
     "Agent": "エージェント",
     "Meetings": "接続した会議",
     "NewRecording": "新規録音",
+    "Record": "録音",
     "Recording": "録音中",
     "ReturnToRecording": "録音に戻る",
     "Starting": "開始中…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "アイドル",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "プライベートAI · {{stt}} + {{llm}}",
     "Offline": "オンデバイスAIエンジンが動作していません",
     "PanelLabel": "Local model resources",
     "OfflineHint": "自動で再起動します。オフラインのままなら SeaMeet を再起動してください。",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "プライベートAI · {{model}}",
+    "Badge": "プライベートAI",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "すでに保存されています。Sync Pro ならすぐに、ずっと表示できます。",
       "ReassuranceUpdatePayment": "すでに保存されています。お支払い情報を更新すると表示されます。",
       "ReassuranceAskOwner": "すでに保存されています。チームのオーナーがお支払いを更新すると表示されます。"
-    }
+    },
+    "SignInWhy": "SeaMeet アカウントで、プランとライブラリをすべてのデバイスで使えます。"
   },
   "AiRuns": {
-    "Device": "オンデバイスAI",
+    "Device": "プライベートAI",
     "Cloud": "クラウドAI",
     "CloudTrial": "クラウドAI · 無料トライアル",
     "CloudOwnKeys": "クラウドAI · ご自身のキー",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "詳細",
     "ActionTestAgain": "もう一度テスト",
     "ActionCheckForUpdates": "アップデートを確認",
+    "ActionGetAppleSilicon": "Appleシリコン版をダウンロード",
     "ActionUpdatePayment": "お支払い情報を更新",
     "ActionGetSyncPro": "Sync Pro を入手",
     "ActionGetSyncProLower": "Sync Pro を入手",
@@ -5401,7 +5404,8 @@
     "CardSynced": "同期済み · ライブラリは最新です",
     "CardSyncing": "同期中 · ライブラリにアップロードしています",
     "CloudTag": "クラウド",
-    "AllServicesWorking": "すべてのサービスが正常です"
+    "AllServicesWorking": "すべてのサービスが正常です",
+    "UnavailableOpensDetails": "選択すると、理由と利用する方法が表示されます。"
   },
   "AiSettings": {
     "FreeHoursLeft": "無料のクラウド文字起こしは残り{{left}}です。各録音の最初の 15 分は読めます。",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "話すとレベルが表示されます",
     "MicLevelOk": "マイクロフォンのレベルは良好です",
     "MicLevelSilent": "マイクロフォンに音が入っていません",
-    "SystemSoundOnly": "システム音のみ"
+    "SystemSoundOnly": "システム音のみ",
+    "StartKeysHint": "<enter>Enter</enter> または <space>Space</space> キーで開始"
   },
   "MicPermission": {
     "Title": "マイクロフォンを許可してください",
@@ -5535,6 +5540,7 @@
     "Capturing": "キャプチャ中…",
     "CopyText": "スクリーンショット後にテキストをコピー",
     "CopyTextSub": "このコンピューター上で読み取り",
+    "CopyTextSubCloud": "このコンピューター上で読み取り、見つからない場合はクラウドAIが読み取ります",
     "CtaArea": "範囲をキャプチャ",
     "CtaScreen": "全画面をキャプチャ",
     "CtaWindow": "ウィンドウをキャプチャ",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "ショートカット",
     "ShortcutLabel": "スクリーンショットを撮る",
     "TextBadge": "テキストはこのコンピューター上で読み取り",
+    "BadgePrivate": "プライベートAIがこのコンピューター上で読み取ります",
+    "BadgeCloud": "クラウドAIが読み取り、内容を説明します",
     "TextHeading": "スクリーンショット内のテキスト",
     "Title": "新規スクリーンショット",
     "WindowHint": "キャプチャ時にウィンドウを選択します。",
-    "ModeScreenSubOne": "ディスプレイ全体"
+    "ModeScreenSubOne": "ディスプレイ全体",
+    "StartKeysHint": "<enter>Enter</enter> または <space>Space</space> キーで撮影"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "このノートに録音中"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "このバージョンのリリースノート",
       "ReleaseNotesDesc": "SeaMeet {{version}} の新機能。"
     }
+  },
+  "AiReason": {
+    "IntelMac": "このMacはIntelプロセッサを搭載しています。プライベートAIにはAppleシリコン(M1以降)搭載のMacが必要です。",
+    "IntelMacDevice": "このMacはIntelプロセッサを搭載しています。オンデバイスAIにはAppleシリコン(M1以降)搭載のMacが必要です。",
+    "MacRosetta": "このSeaMeetはIntel Mac用です。使うには、seameet.aiからAppleシリコン版をインストールしてください。",
+    "WinArch": "このPCは32ビットまたはARMプロセッサでWindowsを実行しています。プライベートAIにはIntelまたはAMDプロセッサの64ビットWindowsが必要です。",
+    "WinArchDevice": "このPCは32ビットまたはARMプロセッサでWindowsを実行しています。オンデバイスAIにはIntelまたはAMDプロセッサの64ビットWindowsが必要です。",
+    "WinMemory": "このPCのメモリは{{have}} GBです。プライベートAIには{{need}} GBが必要です。",
+    "WinMemoryDevice": "このPCのメモリは{{have}} GBです。オンデバイスAIには{{need}} GBが必要です。",
+    "SummaryMemory": "プライベートな文字起こしはここで使えます。要約と質問には{{need}} GBが必要です。",
+    "CloudWorksHere": "クラウドAIはこのコンピューターで使えます。",
+    "LearnMore": "詳しく見る"
   }
 }

@@ -1108,8 +1108,7 @@
     },
     "Nudge": {
       "CTA": "Se connecter et s'abonner",
-      "Sync": "Sauvegardez vos notes dans un dépôt GitHub privé avec BYOK Pro",
-      "SyncProNudge": "Sauvegardez vos notes dans un dépôt GitHub privé avec Sync Pro"
+      "Sync": "Sauvegardez vos notes dans un dépôt GitHub privé avec BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2092,7 +2091,6 @@
     "ExportSuccess_other": "{{count}} fichiers exportés",
     "Selected_one": "{{count}} sélectionné",
     "Selected_other": "{{count}} sélectionnés",
-    "ImportTooltip": "Importer des médias · {{shortcut}} colle une image",
     "Section": {
       "ThisWeek": "Cette semaine",
       "EarlierThisMonth": "Plus tôt ce mois-ci",
@@ -3023,7 +3021,7 @@
     "PartlyRead": "Lu en partie : du texte peut manquer. Relancez la lecture pour obtenir le reste.",
     "ReadingText": "Lecture du texte sur cet ordinateur…",
     "NoTextFound": "Aucun texte trouvé dans cette capture.",
-    "NoTextYet": "Le texte est lu sur cet ordinateur. Aucun n'a encore été trouvé.",
+    "NoTextFoundYet": "Aucun texte trouvé pour l'instant.",
     "SetupRequiredSyncPro": "Connectez-vous avec un abonnement Sync Pro pour traiter l'image.",
     "WrittenByCloud": "Écrite par l’IA dans le cloud.",
     "NotTurnedOn": "Non activé.",
@@ -3117,7 +3115,12 @@
     "Placeholder": "Rechercher… (⌘K)",
     "Results": {
       "Aria": "Résultats de recherche"
-    }
+    },
+    "SettingsPlaceholder": "Rechercher dans les paramètres… (⌘K)",
+    "SettingsAria": "Rechercher dans les paramètres",
+    "SettingsNoResults": "Aucun paramètre ne correspond",
+    "SettingsResults": "Paramètres",
+    "SettingsSection": "Section des paramètres"
   },
   "Settings": {
     "About": {
@@ -3184,13 +3187,15 @@
       "UpdateReady": "La version {{version}} est prête à l'installation"
     },
     "AppPermissions": {
-      "DefaultRecordingMode": "\"Mode d'enregistrement par défaut\" — OK",
-      "DeleteTooltip": "\"Supprimer de la liste (réinitialise à « Demander à chaque fois »)\" — Vérifiez si « Demander à chaque fois » doit être en majuscules ou en minuscules selon le style, puis harmonisez.",
-      "EmptyState": "\"Aucune application détectée pour le moment. Lorsqu'une application utilisant votre microphone sera détectée, elle apparaîtra ici.\" — Améliorer la fluidité : « Aucune application détectée pour le moment. Lorsqu’une application utilisant votre microphone sera détectée, elle apparaîtra ici. »",
-      "PathCopied": "\"Chemin copié dans le presse-papiers\" — OK",
-      "PermissionHeader": "\"Permissions de l’app\" — Privilégier « Permissions de l’app » ou « Permissions de l’application » selon le contexte, pour la cohérence stylistique.",
-      "Title": "\"Permissions de l’app\" — Même remarque pour la cohérence stylistique avec l’apostrophe typographique française.",
-      "RemoveApp": "Retirer {{app}} de la liste"
+      "DefaultRecordingMode": "Mode d’enregistrement par défaut",
+      "DeleteTooltip": "Supprimer de la liste (revient à « Demander à chaque fois »)",
+      "EmptyState": "Aucune application détectée pour le moment. Lorsque SeaMeet détectera une application qui utilise votre microphone, elle apparaîtra ici.",
+      "PathCopied": "Chemin copié dans le presse-papiers",
+      "PermissionHeader": "Autorisations de l’app",
+      "Title": "Autorisations de l’app",
+      "RemoveApp": "Retirer {{app}} de la liste",
+      "PermissionFor": "Autorisation de l’app pour {{app}}",
+      "ModeFor": "Mode d’enregistrement par défaut pour {{app}}"
     },
     "Back": "Retour",
     "GroupTitle": {
@@ -3230,7 +3235,7 @@
       "Label": "Niveau de quota Gemini",
       "Paid": "Niveau payant"
     },
-    "SettingsFileLocation": "— OK",
+    "SettingsFileLocation": "Emplacement du fichier de paramètres",
     "Storage": {
       "Browse": "Parcourir...",
       "DefaultPathLabel": "Dossier de sauvegarde par défaut",
@@ -3253,23 +3258,23 @@
       "CyberCobalt": "Cobalt Cyber",
       "CyberCobaltDesc": "Mode sombre cyan néon",
       "Dark": "Sombre",
-      "DarkDesc": "\"Mode sombre\" — OK",
-      "Device": "\"Appareil\" — OK",
-      "DeviceDesc": "\"Suivre les paramètres du système\" — OK",
-      "Light": "\"Clair\" — OK",
+      "DarkDesc": "Mode sombre",
+      "Device": "Appareil",
+      "DeviceDesc": "Suivre les paramètres du système",
+      "Light": "Clair",
       "LightDesc": "Mode clair",
-      "LightPink": "\"Rose clair\" — OK",
-      "LightPinkDesc": "\"Mode rose clair\" — OK",
+      "LightPink": "Rose clair",
+      "LightPinkDesc": "Mode rose clair",
       "MidnightBlue": "Bleu Nuit",
       "MidnightBlueDesc": "Mode sombre bleu profond",
       "Pink": "Rose sombre",
-      "PinkDesc": "\"Mode rose sombre\" — OK",
+      "PinkDesc": "Mode rose sombre",
       "SynthwaveLight": "Synthwave Clair",
       "SynthwaveLightDesc": "Mode clair synthwave vibrant",
       "WarmPaper": "Papier Chaud",
       "WarmPaperDesc": "Mode clair aux tons papier chaud"
     },
-    "Title": "\"Paramètres\" — OK",
+    "Title": "Paramètres",
     "ManagedByPlan": "Inclus dans votre forfait Sync Pro — l'IA fonctionne sur des fournisseurs gérés par SeaMeet. Aucune clé API requise.",
     "AppMode": {
       "Title": "Mode de l'application",
@@ -3305,13 +3310,7 @@
     },
     "LanguageFailed": "Impossible de changer la langue.",
     "Memory": {
-      "MemoryLink": "Mémoire des réunions activée ou non, et ce à partir de quoi elle se construit",
-      "MemoryHint": "Dans la section IA.",
-      "WorkspacesLink": "Espaces de travail",
-      "WorkspacesHint": "Dans la barre latérale de Notes.",
-      "GitHubLink": "Sauvegarder les notes sur GitHub",
-      "GitHubHint": "Dans Synchronisation et sauvegarde.",
-      "MemoryLinkLegacy": "Construire la Mémoire à partir de vos notes et enregistrements"
+      "GitHubLink": "Sauvegarder les notes sur GitHub"
     }
   },
   "SettingsModal": {
@@ -3575,7 +3574,8 @@
     "RecordingPaused": "Enregistrement en pause",
     "ResumeRecording": "Reprendre l'enregistrement",
     "StopRecording": "Arrêter l'enregistrement",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "Paramètres…"
   },
   "Types": {
     "Audio": "Audio",
@@ -4411,6 +4411,7 @@
     "Agent": "Agent",
     "Meetings": "Réunions connectées",
     "NewRecording": "Enregistrer",
+    "Record": "Enregistrer",
     "Recording": "En cours",
     "ReturnToRecording": "Revenir à l’enregistrement",
     "Starting": "Démarrage…",
@@ -4708,7 +4709,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "Au repos",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "IA privée · {{stt}} + {{llm}}",
     "Offline": "Le moteur d'IA sur l'appareil ne fonctionne pas",
     "PanelLabel": "Local model resources",
     "OfflineHint": "Il redémarre tout seul ; s'il reste hors ligne, redémarrez SeaMeet.",
@@ -4727,8 +4728,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "IA privée · {{model}}",
+    "Badge": "IA privée",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5233,10 +5234,11 @@
       "Reassurance": "Vous l'avez déjà. Sync Pro l'affiche instantanément, pour toujours.",
       "ReassuranceUpdatePayment": "Vous l'avez déjà. Mettez à jour votre paiement pour l'afficher.",
       "ReassuranceAskOwner": "Vous l'avez déjà. Le propriétaire de votre équipe peut mettre à jour le paiement pour l'afficher."
-    }
+    },
+    "SignInWhy": "Votre compte SeaMeet garde votre forfait et votre bibliothèque sur tous vos appareils."
   },
   "AiRuns": {
-    "Device": "IA sur l'appareil",
+    "Device": "IA privée",
     "Cloud": "IA dans le cloud",
     "CloudTrial": "IA dans le cloud · essai gratuit",
     "CloudOwnKeys": "IA dans le cloud · vos propres clés",
@@ -5280,6 +5282,7 @@
     "ActionDetails": "Détails",
     "ActionTestAgain": "Tester à nouveau",
     "ActionCheckForUpdates": "Rechercher des mises à jour",
+    "ActionGetAppleSilicon": "Télécharger la version pour puce Apple",
     "ActionUpdatePayment": "Mettre à jour le paiement",
     "ActionGetSyncPro": "Obtenir Sync Pro",
     "ActionGetSyncProLower": "obtenez Sync Pro",
@@ -5436,7 +5439,8 @@
     "CardSynced": "Synchronisé · bibliothèque à jour",
     "CardSyncing": "Synchronisation · envoi vers votre bibliothèque",
     "CloudTag": "Cloud",
-    "AllServicesWorking": "Tous les services fonctionnent"
+    "AllServicesWorking": "Tous les services fonctionnent",
+    "UnavailableOpensDetails": "Activez pour savoir pourquoi et comment l’obtenir."
   },
   "AiSettings": {
     "FreeHoursLeft": "Il reste {{left}} de transcription gratuite dans le cloud. Les 15 premières minutes de chaque enregistrement sont lisibles.",
@@ -5550,7 +5554,8 @@
     "SpeakToSeeLevel": "Parlez pour voir le niveau",
     "MicLevelOk": "Niveau du microphone correct",
     "MicLevelSilent": "Le microphone est silencieux",
-    "SystemSoundOnly": "Son système uniquement"
+    "SystemSoundOnly": "Son système uniquement",
+    "StartKeysHint": "Appuyez sur <enter>Entrée</enter> ou <space>Espace</space> pour commencer"
   },
   "MicPermission": {
     "Title": "Autorisez votre microphone",
@@ -5572,6 +5577,7 @@
     "Capturing": "Capture en cours…",
     "CopyText": "Copier le texte après une capture",
     "CopyTextSub": "Lu sur cet ordinateur",
+    "CopyTextSubCloud": "Lu sur cet ordinateur, ou par l'IA dans le cloud si aucun n'est trouvé",
     "CtaArea": "Capturer une zone",
     "CtaScreen": "Capturer tout l'écran",
     "CtaWindow": "Capturer une fenêtre",
@@ -5587,10 +5593,13 @@
     "ShortcutHeading": "Raccourci",
     "ShortcutLabel": "Prendre une capture d'écran",
     "TextBadge": "Le texte est lu sur cet ordinateur",
+    "BadgePrivate": "L'IA privée la lit sur cet ordinateur",
+    "BadgeCloud": "L'IA dans le cloud la lit et la décrit",
     "TextHeading": "Texte dans les captures d'écran",
     "Title": "Nouvelle capture d'écran",
     "WindowHint": "Vous choisissez la fenêtre au moment de la capture.",
-    "ModeScreenSubOne": "Un écran entier"
+    "ModeScreenSubOne": "Un écran entier",
+    "StartKeysHint": "Appuyez sur <enter>Entrée</enter> ou <space>Espace</space> pour capturer"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "Enregistrement dans cette note"
@@ -5625,5 +5634,17 @@
       "ReleaseNotes": "Notes de version de cette version",
       "ReleaseNotesDesc": "Nouveautés de SeaMeet {{version}}."
     }
+  },
+  "AiReason": {
+    "IntelMac": "Ce Mac a un processeur Intel. L’IA privée nécessite un Mac avec puce Apple (M1 ou plus récent).",
+    "IntelMacDevice": "Ce Mac a un processeur Intel. L’IA sur l’appareil nécessite un Mac avec puce Apple (M1 ou plus récent).",
+    "MacRosetta": "Cette copie de SeaMeet est destinée aux Mac Intel. Installez la version pour puce Apple depuis seameet.ai pour l’utiliser.",
+    "WinArch": "Ce PC exécute Windows sur un processeur 32 bits ou ARM. L’IA privée nécessite Windows 64 bits sur un processeur Intel ou AMD.",
+    "WinArchDevice": "Ce PC exécute Windows sur un processeur 32 bits ou ARM. L’IA sur l’appareil nécessite Windows 64 bits sur un processeur Intel ou AMD.",
+    "WinMemory": "Ce PC a {{have}} Go de mémoire. L’IA privée nécessite {{need}} Go.",
+    "WinMemoryDevice": "Ce PC a {{have}} Go de mémoire. L’IA sur l’appareil nécessite {{need}} Go.",
+    "SummaryMemory": "Les transcriptions privées fonctionnent ici ; les résumés et Demander nécessitent {{need}} Go.",
+    "CloudWorksHere": "L’IA dans le cloud fonctionne sur cet ordinateur.",
+    "LearnMore": "En savoir plus"
   }
 }

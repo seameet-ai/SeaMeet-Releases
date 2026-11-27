@@ -1106,8 +1106,7 @@
     },
     "Nudge": {
       "CTA": "เข้าสู่ระบบและสมัครสมาชิก",
-      "Sync": "สำรองข้อมูลโน้ตของคุณไปยัง GitHub repo ส่วนตัวด้วย BYOK Pro",
-      "SyncProNudge": "สำรองข้อมูลโน้ตของคุณไปยัง GitHub repo ส่วนตัวด้วย Sync Pro"
+      "Sync": "สำรองข้อมูลโน้ตของคุณไปยัง GitHub repo ส่วนตัวด้วย BYOK Pro"
     },
     "Plans": {
       "BYOK": {
@@ -2090,7 +2089,6 @@
     "ExportSuccess_other": "ส่งออก {{count}} ไฟล์แล้ว",
     "Selected_one": "เลือก {{count}} รายการ",
     "Selected_other": "เลือก {{count}} รายการ",
-    "ImportTooltip": "นำเข้าสื่อ · {{shortcut}} เพื่อวางรูปภาพ",
     "Section": {
       "ThisWeek": "สัปดาห์นี้",
       "EarlierThisMonth": "ก่อนหน้านี้ในเดือนนี้",
@@ -3018,7 +3016,7 @@
     "PartlyRead": "อ่านได้บางส่วน: ข้อความบางส่วนอาจขาดหายไป อ่านอีกครั้งเพื่อลองรับส่วนที่เหลือ",
     "ReadingText": "กำลังอ่านข้อความบนคอมพิวเตอร์เครื่องนี้…",
     "NoTextFound": "ไม่พบข้อความในภาพหน้าจอนี้",
-    "NoTextYet": "ข้อความถูกอ่านบนคอมพิวเตอร์เครื่องนี้ ยังไม่พบข้อความ",
+    "NoTextFoundYet": "ยังไม่พบข้อความ",
     "SetupRequiredSyncPro": "ลงชื่อเข้าใช้ด้วยการสมัครสมาชิก Sync Pro เพื่อประมวลผลภาพ",
     "WrittenByCloud": "เขียนโดย AI บนคลาวด์",
     "NotTurnedOn": "ยังไม่ได้เปิด",
@@ -3112,7 +3110,12 @@
     "Placeholder": "ค้นหา… (⌘K)",
     "Results": {
       "Aria": "ผลการค้นหา"
-    }
+    },
+    "SettingsPlaceholder": "ค้นหาการตั้งค่า… (⌘K)",
+    "SettingsAria": "ค้นหาการตั้งค่า",
+    "SettingsNoResults": "ไม่มีการตั้งค่าที่ตรงกัน",
+    "SettingsResults": "การตั้งค่า",
+    "SettingsSection": "ส่วนการตั้งค่า"
   },
   "Settings": {
     "About": {
@@ -3185,7 +3188,9 @@
       "PathCopied": "สำเนาเส้นทางไปยังคลิปบอร์ด",
       "PermissionHeader": "การอนุญาตแอป",
       "Title": "การอนุญาตแอป",
-      "RemoveApp": "นำ {{app}} ออกจากรายการ"
+      "RemoveApp": "นำ {{app}} ออกจากรายการ",
+      "PermissionFor": "การอนุญาตแอปสำหรับ {{app}}",
+      "ModeFor": "โหมดการบันทึกเริ่มต้นสำหรับ {{app}}"
     },
     "Back": "กลับ",
     "GroupTitle": {
@@ -3300,13 +3305,7 @@
     },
     "LanguageFailed": "ไม่สามารถเปลี่ยนภาษาได้",
     "Memory": {
-      "MemoryLink": "เปิดหรือปิดความทรงจำการประชุม และแหล่งที่ใช้สร้าง",
-      "MemoryHint": "ในส่วน AI",
-      "WorkspacesLink": "พื้นที่ทำงาน",
-      "WorkspacesHint": "ในแถบด้านข้างของโน้ต",
-      "GitHubLink": "สำรองโน้ตไปยัง GitHub",
-      "GitHubHint": "ในซิงค์และสำรองข้อมูล",
-      "MemoryLinkLegacy": "สร้างความทรงจำจากโน้ตและการบันทึกของคุณ"
+      "GitHubLink": "สำรองโน้ตไปยัง GitHub"
     }
   },
   "SettingsModal": {
@@ -3570,7 +3569,8 @@
     "RecordingPaused": "หยุดบันทึกชั่วคราว",
     "ResumeRecording": "บันทึกต่อ",
     "StopRecording": "หยุดบันทึก",
-    "WorkspacePrefix": "Workspace"
+    "WorkspacePrefix": "Workspace",
+    "AppMenuSettings": "การตั้งค่า…"
   },
   "Types": {
     "Audio": "เสียง",
@@ -4401,6 +4401,7 @@
     "Agent": "ผู้ช่วย",
     "Meetings": "การประชุม",
     "NewRecording": "บันทึกใหม่",
+    "Record": "บันทึก",
     "Recording": "กำลังบันทึก",
     "ReturnToRecording": "กลับไปที่การบันทึก",
     "Starting": "กำลังเริ่ม…",
@@ -4697,7 +4698,7 @@
     "DoingAsk": "Answering on-device",
     "Idle": "ว่าง",
     "WholeMachine": "whole machine",
-    "Chip": "Local · on-device · {{stt}} + {{llm}}",
+    "Chip": "AI ส่วนตัว · {{stt}} + {{llm}}",
     "Offline": "เอนจิน AI บนอุปกรณ์ไม่ได้ทำงาน",
     "PanelLabel": "Local model resources",
     "OfflineHint": "เอนจินจะรีสตาร์ทเอง หากยังออฟไลน์ ให้รีสตาร์ท SeaMeet",
@@ -4716,8 +4717,8 @@
     "GpuBusy": "GPU busy",
     "GpuMemScoped": "GPU memory ({{scope}})",
     "GpuMem": "GPU memory",
-    "BadgeWithModel": "Local · on-device · {{model}}",
-    "Badge": "Local · on-device",
+    "BadgeWithModel": "AI ส่วนตัว · {{model}}",
+    "Badge": "AI ส่วนตัว",
     "Collapse": "Collapse to the chip",
     "ChipTitleCollapse": "Local models: click to collapse the resource panel",
     "ChipTitleExpand": "Local models: click to show the resource panel",
@@ -5199,10 +5200,11 @@
       "Reassurance": "คุณมีอยู่แล้ว Sync Pro จะแสดงให้เห็นทันทีตลอดไป",
       "ReassuranceUpdatePayment": "คุณมีอยู่แล้ว อัปเดตการชำระเงินเพื่อดู",
       "ReassuranceAskOwner": "คุณมีอยู่แล้ว เจ้าของทีมของคุณอัปเดตการชำระเงินเพื่อแสดงได้"
-    }
+    },
+    "SignInWhy": "บัญชี SeaMeet เก็บแพ็กเกจและคลังของคุณไว้บนทุกอุปกรณ์"
   },
   "AiRuns": {
-    "Device": "AI บนอุปกรณ์",
+    "Device": "AI ส่วนตัว",
     "Cloud": "AI บนคลาวด์",
     "CloudTrial": "AI บนคลาวด์ · ทดลองใช้ฟรี",
     "CloudOwnKeys": "AI บนคลาวด์ · คีย์ของคุณเอง",
@@ -5246,6 +5248,7 @@
     "ActionDetails": "รายละเอียด",
     "ActionTestAgain": "ทดสอบอีกครั้ง",
     "ActionCheckForUpdates": "ตรวจสอบการอัปเดต",
+    "ActionGetAppleSilicon": "ดาวน์โหลดเวอร์ชัน Apple silicon",
     "ActionUpdatePayment": "อัปเดตการชำระเงิน",
     "ActionGetSyncPro": "รับ Sync Pro",
     "ActionGetSyncProLower": "รับ Sync Pro",
@@ -5401,7 +5404,8 @@
     "CardSynced": "ซิงค์แล้ว · คลังเป็นปัจจุบัน",
     "CardSyncing": "กำลังซิงค์ · กำลังอัปโหลดไปยังคลังของคุณ",
     "CloudTag": "คลาวด์",
-    "AllServicesWorking": "ทุกบริการทำงานปกติ"
+    "AllServicesWorking": "ทุกบริการทำงานปกติ",
+    "UnavailableOpensDetails": "เปิดใช้เพื่อดูเหตุผลและวิธีรับใช้งาน"
   },
   "AiSettings": {
     "FreeHoursLeft": "เหลือการถอดความบนคลาวด์ฟรี {{left}} อ่านได้ 15 นาทีแรกของการบันทึกแต่ละครั้ง",
@@ -5513,7 +5517,8 @@
     "SpeakToSeeLevel": "พูดเพื่อดูระดับเสียง",
     "MicLevelOk": "ระดับเสียงไมโครโฟนปกติ",
     "MicLevelSilent": "ไมโครโฟนไม่มีเสียง",
-    "SystemSoundOnly": "เฉพาะเสียงระบบ"
+    "SystemSoundOnly": "เฉพาะเสียงระบบ",
+    "StartKeysHint": "กด <enter>Enter</enter> หรือ <space>Space</space> เพื่อเริ่ม"
   },
   "MicPermission": {
     "Title": "อนุญาตให้ใช้ไมโครโฟนของคุณ",
@@ -5535,6 +5540,7 @@
     "Capturing": "กำลังจับภาพ…",
     "CopyText": "คัดลอกข้อความหลังจับภาพ",
     "CopyTextSub": "อ่านบนเครื่องนี้",
+    "CopyTextSubCloud": "อ่านบนเครื่องนี้ หรือใช้ AI บนคลาวด์เมื่อไม่พบข้อความ",
     "CtaArea": "จับภาพพื้นที่",
     "CtaScreen": "จับภาพทั้งหน้าจอ",
     "CtaWindow": "จับภาพหน้าต่าง",
@@ -5550,10 +5556,13 @@
     "ShortcutHeading": "ปุ่มลัด",
     "ShortcutLabel": "จับภาพหน้าจอ",
     "TextBadge": "อ่านข้อความบนเครื่องนี้",
+    "BadgePrivate": "AI ส่วนตัวอ่านบนเครื่องนี้",
+    "BadgeCloud": "AI บนคลาวด์อ่านและอธิบายภาพ",
     "TextHeading": "ข้อความในภาพหน้าจอ",
     "Title": "ภาพหน้าจอใหม่",
     "WindowHint": "คุณจะเลือกหน้าต่างตอนจับภาพ",
-    "ModeScreenSubOne": "หน้าจอทั้งหมด"
+    "ModeScreenSubOne": "หน้าจอทั้งหมด",
+    "StartKeysHint": "กด <enter>Enter</enter> หรือ <space>Space</space> เพื่อจับภาพ"
   },
   "NoteRecordingBar": {
     "IntoThisNote": "กำลังบันทึกลงในโน้ตนี้"
@@ -5588,5 +5597,17 @@
       "ReleaseNotes": "บันทึกประจำรุ่นนี้",
       "ReleaseNotesDesc": "มีอะไรใหม่ใน SeaMeet {{version}}"
     }
+  },
+  "AiReason": {
+    "IntelMac": "Mac เครื่องนี้ใช้โปรเซสเซอร์ Intel AI ส่วนตัวต้องใช้ Mac ที่มี Apple silicon (M1 หรือใหม่กว่า)",
+    "IntelMacDevice": "Mac เครื่องนี้ใช้โปรเซสเซอร์ Intel AI บนอุปกรณ์ต้องใช้ Mac ที่มี Apple silicon (M1 หรือใหม่กว่า)",
+    "MacRosetta": "SeaMeet ชุดนี้สำหรับ Mac ที่ใช้ Intel ติดตั้งเวอร์ชัน Apple silicon จาก seameet.ai เพื่อใช้งาน",
+    "WinArch": "พีซีเครื่องนี้ใช้ Windows บนโปรเซสเซอร์ 32 บิตหรือ ARM AI ส่วนตัวต้องใช้ Windows 64 บิตบนโปรเซสเซอร์ Intel หรือ AMD",
+    "WinArchDevice": "พีซีเครื่องนี้ใช้ Windows บนโปรเซสเซอร์ 32 บิตหรือ ARM AI บนอุปกรณ์ต้องใช้ Windows 64 บิตบนโปรเซสเซอร์ Intel หรือ AMD",
+    "WinMemory": "พีซีเครื่องนี้มีหน่วยความจำ {{have}} GB AI ส่วนตัวต้องใช้ {{need}} GB",
+    "WinMemoryDevice": "พีซีเครื่องนี้มีหน่วยความจำ {{have}} GB AI บนอุปกรณ์ต้องใช้ {{need}} GB",
+    "SummaryMemory": "ทรานสคริปต์ส่วนตัวใช้งานได้ที่นี่ สรุปและถามต้องใช้ {{need}} GB",
+    "CloudWorksHere": "AI บนคลาวด์ใช้งานได้บนคอมพิวเตอร์เครื่องนี้",
+    "LearnMore": "ดูข้อมูลเพิ่มเติม"
   }
 }
